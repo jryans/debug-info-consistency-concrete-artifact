@@ -1,3 +1,4 @@
+~*
 *.aux
 *.bbl
 *.blg
@@ -5,6 +6,7 @@
 *.fdb_latexmk
 *.fls
 *.log
+*.o
 *.out
 *.pdf
 !figures/*.pdf
