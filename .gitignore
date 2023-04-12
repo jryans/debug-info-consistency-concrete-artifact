@@ -3,6 +3,7 @@
 *.bbl
 *.blg
 *.cut
+*.eps
 *.fdb_latexmk
 *.fls
 *.log
