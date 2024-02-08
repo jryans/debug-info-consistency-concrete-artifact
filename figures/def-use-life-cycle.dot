@@ -3,14 +3,16 @@ digraph DefUse
 
 InScopeUndefined -> LiveDef      [label="initialize"];
 
-LiveDef -> DefNoLongerUsed      [label="last use of def"];
+InScopeUndefined -> DefNoLongerUsed [label="unused\ninitialization"];
 
-DefNoLongerUsed -> LiveDef      [label="new def"];
+LiveDef -> DefNoLongerUsed      [label="last use\nof def"];
 
-DefNoLongerUsed -> DefNoLongerUsed  [label="unused assignment"];
+DefNoLongerUsed -> LiveDef      [label=" new def"];
+
+DefNoLongerUsed -> DefNoLongerUsed  [label="unused\nassignment"];
 
 DefNoLongerUsed -> OutOfScope      [label="end of scope"];
 
-InScopeUndefined -> OutOfScope     [label="unused var"];
+InScopeUndefined -> OutOfScope     [label=" unused\nvar"];
 
 }
