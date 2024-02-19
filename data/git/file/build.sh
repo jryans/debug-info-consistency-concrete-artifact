@@ -1,45 +1,89 @@
+#!/usr/bin/env bash
 set -eux
 
+# Expects to run from program source directory
 if [ "${PWD##*/}" != "git" ]; then
   echo "Does not appear to be the expected directory, abort!"
   exit
 fi
 
-CC_COMMON_OPTS="-isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -g -fno-inline -fno-discard-value-names -Xclang -disable-O0-optnone"
-CC_O0_OPTS=""
-CC_O1_OPTS="-O1"
-CC_O2_OPTS="-O2"
-CC_O3_OPTS="-O3"
+SCRIPT_DIR=$(dirname "${BASH_SOURCE[0]}")
+source "${SCRIPT_DIR}/../../vars.sh"
 
-export LLVM_COMPILER=clang
-export LLVM_COMPILER_PATH=/Users/jryans/Projects/LLVM/llvm/build-release-clang-lldb-14.0.0/bin
+export LLVM_COMPILER="clang"
+export LLVM_COMPILER_PATH="$(llvm release-clang-lldb-13.0.0)/bin"
+
+TARGET_NAME="git.o"
+TARGET_PATH="${TARGET_NAME}"
+
+# Clang O0
+
+level="O0"
+version="13"
+echo "## Building \`${TARGET_NAME}\` (Clang ${version}, ${level})"
 
 make clean
 git clean -f
 
-# Build for O0
-# make V=1 CC=wllvm CFLAGS="${CC_COMMON_OPTS} ${CC_O0_OPTS}"
+## Build for O0
+make \
+  CC=wllvm \
+  CFLAGS="${CC_COMMON_OPTS} ${CC_CLANG_OPTS} ${CC_O0_OPTS}"
 
-# Build for O1 (12)
-# make V=1 CC=/Users/jryans/Projects/LLVM/llvm/build-release-clang-lldb-12.0.0/bin/clang CFLAGS="${CC_COMMON_OPTS} ${CC_O1_OPTS}"
+## Extract bitcode for O0
+extract-bc ${TARGET_PATH}
+mkdir -p "${SCRIPT_DIR}/clang/${version}/${level}"
+cp \
+  ${TARGET_PATH}.bc \
+  "${SCRIPT_DIR}/clang/${version}/${level}/${TARGET_NAME}.bc"
 
-# Build for O1 (13)
-# make V=1 CC=/Users/jryans/Projects/LLVM/llvm/build-release-clang-lldb-13.0.0/bin/clang CFLAGS="${CC_COMMON_OPTS} ${CC_O1_OPTS}"
+## Disassemble O0 bitcode for debugging
+$(llvm release-clang-lldb-${version}.0.0 llvm-dis) \
+  "${SCRIPT_DIR}/clang/${version}/${level}/${TARGET_NAME}.bc"
 
-# Build for O1 (14)
-# make V=1 CC=/Users/jryans/Projects/LLVM/llvm/build-release-clang-lldb-14.0.0/bin/clang CFLAGS="${CC_COMMON_OPTS} ${CC_O1_OPTS}"
+## Apply mem2reg only
+mkdir -p "${SCRIPT_DIR}/clang/${version}/${level}-mem2reg"
+$(llvm release-clang-lldb-${version}.0.0 opt) \
+  -o "${SCRIPT_DIR}/clang/${version}/${level}-mem2reg/${TARGET_NAME}.bc" \
+  --mem2reg \
+  "${SCRIPT_DIR}/clang/${version}/${level}/${TARGET_NAME}.bc"
 
-# Build for O2 (14)
-# make V=1 CC=/Users/jryans/Projects/LLVM/llvm/build-release-clang-lldb-14.0.0/bin/clang CFLAGS="${CC_COMMON_OPTS} ${CC_O2_OPTS}"
+## Disassemble O0 plus mem2reg bitcode for debugging
+$(llvm release-clang-lldb-${version}.0.0 llvm-dis) \
+  "${SCRIPT_DIR}/clang/${version}/${level}-mem2reg/${TARGET_NAME}.bc"
 
-# Build for O3 (14)
-make V=1 CC=/Users/jryans/Projects/LLVM/llvm/build-release-clang-lldb-14.0.0/bin/clang CFLAGS="${CC_COMMON_OPTS} ${CC_O3_OPTS}"
+# Clang O1+
 
-# Extract bitcode
-# extract-bc git.o
+  levels=(O1 O2)
+versions=(13 13)
 
-# Apply mem2reg only
-# llvm release-clang-lldb-13.0.0 opt -o O0-13-plus-mem2reg/git.o.bc --mem2reg O0-13/git.o.bc
+for i in ${!levels[*]}; do
+  level=${levels[$i]}
+  version=${versions[$i]}
+  echo "## Building \`${TARGET_NAME}\` (Clang ${version}, ${level})"
 
-# Compile bitcode to object file
-# llvm release-clang-lldb-13.0.0 llc -O0 -o git.o --filetype obj git.o.bc
+  make clean
+  git clean -f
+
+  ## Build
+  cc_level_opts="CC_${level}_OPTS"
+  make \
+    CC=wllvm \
+    CFLAGS="${CC_COMMON_OPTS} ${CC_CLANG_OPTS} ${!cc_level_opts}"
+
+  ## Extract bitcode
+  extract-bc ${TARGET_PATH}
+  mkdir -p "${SCRIPT_DIR}/clang/${version}/${level}"
+  cp \
+    ${TARGET_PATH}.bc \
+    "${SCRIPT_DIR}/clang/${version}/${level}/${TARGET_NAME}.bc"
+
+  ## Disassemble bitcode for debugging
+  $(llvm release-clang-lldb-${version}.0.0 llvm-dis) \
+    "${SCRIPT_DIR}/clang/${version}/${level}/${TARGET_NAME}.bc"
+done
+
+# Cleanup
+echo "## Cleanup"
+make clean
+git clean -f
