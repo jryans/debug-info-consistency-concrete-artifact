@@ -10,6 +10,17 @@ llvm() {
   echo "${HOME}/Projects/LLVM/llvm/builds/${build}/bin/${program}"
 }
 
+klee() {
+  local build=$1
+  local program=$2
+  local program=${2:-}
+  if [ -z "${program}" ]; then
+    echo "${HOME}/Projects/klee/build-${build}"
+    return
+  fi
+  echo "${HOME}/Projects/klee/build-${build}/bin/${program}"
+}
+
 CC_SYSROOT_OPTS="--sysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk"
 CC_COMMON_OPTS="${CC_SYSROOT_OPTS} -g"
 CC_CLANG_OPTS="-fno-discard-value-names -Xclang -disable-O0-optnone"
@@ -20,3 +31,6 @@ CC_O2_OPTS="-O2"
 CC_O3_OPTS="-O3"
 CC_Og_OPTS="-Og"
 CC_LV_OPTS="${CC_Og_OPTS} -gvariable-location-views"
+
+CHECK=$(klee debug check-debug-info)
+CHECK_OPTS="--debug-only=check-debug-info,independent-function,values-collector,variable --debug-execution-trace --max-forks=4 --tsv"
