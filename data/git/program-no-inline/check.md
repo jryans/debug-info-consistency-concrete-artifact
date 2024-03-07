@@ -23,12 +23,12 @@
 +++ '[' -z check-debug-info ']'
 +++ echo /Users/jryans/Projects/klee/build-release-debug/bin/check-debug-info
 ++ CHECK=/Users/jryans/Projects/klee/build-release-debug/bin/check-debug-info
-++ CHECK_OPTS='--debug-only=check-debug-info,values-collector,variable --debug-execution-trace --max-functions=10 --max-forks=4 --search=random-path --tsv'
+++ CHECK_OPTS='--debug-only=check-debug-info,values-collector,variable --debug-execution-trace --max-functions=10 --max-forks=4 --max-time=10s --search=random-path --tsv'
 + level=O0-mem2reg
 + version=13
 + echo '## Checking debug consistency of `git` (Clang 13, O0-mem2reg)'
 ## Checking debug consistency of `git` (Clang 13, O0-mem2reg)
-+ /Users/jryans/Projects/klee/build-release-debug/bin/check-debug-info clang/13/O0/git.bc clang/13/O0-mem2reg/git.bc --debug-only=check-debug-info,values-collector,variable --debug-execution-trace --max-functions=10 --max-forks=4 --search=random-path --tsv
++ /Users/jryans/Projects/klee/build-release-debug/bin/check-debug-info clang/13/O0/git.bc clang/13/O0-mem2reg/git.bc --debug-only=check-debug-info,values-collector,variable --debug-execution-trace --max-functions=10 --max-forks=4 --max-time=10s --search=random-path --tsv
 Checking clang/13/O0/git.bc and clang/13/O0-mem2reg/git.bc for debug info consistency…
 
 ## Functions
@@ -420,7 +420,7 @@ Collected value for `i`
   (w32 0x0)
 Collected value for `p`
   Concrete pointer resolves to commands, offset (w64 0x0)
-  Created deref expr (w64 0x13D5A69D0)
+  Created deref expr (w64 0x1381456D8)
   Replaced concrete pointer with hash (w64 0xBB8485E41BDF13D5)
   %add.ptr = getelementptr inbounds %struct.cmd_struct, %struct.cmd_struct* getelementptr inbounds ([141 x %struct.cmd_struct], [141 x %struct.cmd_struct]* @commands, i64 0, i64 0), i64 %idx.ext, l639 c35
   (w64 0xBB8485E41BDF13D5)
@@ -451,7 +451,7 @@ Collected value for `i`
   (w32 0x0)
 Collected value for `p`
   Concrete pointer resolves to commands, offset (w64 0x0)
-  Created deref expr (w64 0x13D2E29C0)
+  Created deref expr (w64 0x1380C49D8)
   Replaced concrete pointer with hash (w64 0xBB8485E41BDF13D5)
   %add.ptr = getelementptr inbounds %struct.cmd_struct.0, %struct.cmd_struct.0* getelementptr inbounds ([141 x %struct.cmd_struct.0], [141 x %struct.cmd_struct.0]* @commands, i64 0, i64 0), i64 %idx.ext, l639 c35
   (w64 0xBB8485E41BDF13D5)
@@ -754,25 +754,574 @@ Collected value for `cmds`
 Collected value for `i`
   i32 0
   (w32 0x0)
-Assertion failed: (!f->isVarArg() && "Function to skip has variable number of arguments"), function executeCall, file Executor.cpp, line 1813.
+[0;1;31mKLEE: ERROR: git.c:674: reached "unreachable" instruction
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0mCollected value for `i`
+  %inc = add nsw i32 %9, 1, l676 c41
+  (w32 0x1)
+KLEE: HaltTimer invoked
+[0mKLEE: halting execution, dumping remaining states
+[0m
+🔔 Unable to execute all before program states
+
+🔔 Unable to execute all before instructions
+
+#### After values
+
+[0;35mKLEE: WARNING: Unable to load symbol(kCFRunLoopDefaultMode) while initializing globals
+[0mCollected value for `prefix`
+  Concrete pointer resolves to prefix.deref, offset (w64 0x0)
+  Created deref expr (ReadLSB w64 (w32 0x0) prefix.deref)
+  Replaced concrete pointer with hash (w64 0x3E8C4480EDC2A01A)
+  i8* %prefix
+  (w64 0x3E8C4480EDC2A01A)
+Collected value for `cmds`
+  Concrete pointer resolves to cmds.deref, offset (w64 0x0)
+  Created deref expr (ReadLSB w64 (w32 0x0) cmds.deref)
+  Replaced concrete pointer with hash (w64 0xEDF10C495303ABE5)
+  %struct.cmdnames.214* %cmds
+  (w64 0xEDF10C495303ABE5)
+[0;1;31mKLEE: ERROR: git.c:674: reached "unreachable" instruction
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0mCollected value for `i`
+  %i.0 = phi i32 [ %inc, %for.inc ], [ 0, %entry ]
+  Block: 1
+  (w32 0x0)
+Collected value for `i`
+  %inc = add nsw i32 %i.0, 1, l676 c41
+  (w32 0x1)
+KLEE: HaltTimer invoked
+[0mKLEE: halting execution, dumping remaining states
+[0m
+🔔 Unable to execute all after program states
+
+🔔 Unable to execute all after instructions
+
+### Assignments
+
+Filtering redundant before assignments: `i` (decl src ln 665)
+
+Checking equivalence of `i` (decl src ln 665) from
+  assn asm ln 25628, prod ln 676.41, live ln 677, enc 1
+  %inc = add nsw i32 %9, 1, l676 c41
+  (w32 0x1)
+and
+  assn asm ln 25596, prod ln 676.9, live ln 677, enc 0
+  i32 0
+  (w32 0x0)
+
+Filtering redundant after assignments: `i` (decl src ln 665)
+
+Checking equivalence of `i` (decl src ln 665) from
+  assn asm ln 25585, prod ln 676.41, live ln 677, enc 1
+  %inc = add nsw i32 %i.0, 1, l676 c41
+  (w32 0x1)
+and
+  assn asm ln 25560, prod ln 676.41, live ln 677, enc 0
+  %i.0 = phi i32 [ %inc, %for.inc ], [ 0, %entry ]
+  (w32 0x0)
+
+Collating encountered before assignments: `prefix` (decl src ln 662)
+  asm ln 25579, prod ln 662.0, live ln 673, enc 0
+Collating encountered before assignments: `cmds` (decl src ln 662)
+  asm ln 25581, prod ln 662.0, live ln 673, enc 0
+Collating encountered before assignments: `i` (decl src ln 665)
+  asm ln 25596, prod ln 676.9, live ln 677, enc 0
+  asm ln 25628, prod ln 676.41, live ln 677, enc 1
+
+Collating encountered after assignments: `prefix` (decl src ln 662)
+  asm ln 25544, prod ln 662.0, live ln 673, enc 0
+Collating encountered after assignments: `cmds` (decl src ln 662)
+  asm ln 25546, prod ln 662.0, live ln 673, enc 0
+Collating encountered after assignments: `i` (decl src ln 665)
+  asm ln 25560, prod ln 676.41, live ln 677, enc 0
+  asm ln 25585, prod ln 676.41, live ln 677, enc 1
+
+#### Check before using after as reference
+
+Checking equivalence of `cmds` (decl src ln 662) from
+  assn asm ln 25581, prod ln 662.0, live ln 673, enc 0
+  %struct.cmdnames* %cmds
+  (w64 0xEDF10C495303ABE5)
+and
+  assn asm ln 25546, prod ln 662.0, live ln 673, enc 0
+  %struct.cmdnames.214* %cmds
+  (w64 0xEDF10C495303ABE5)
+✅ After `cmds` (decl src ln 662) assn asm ln 25546, prod ln 662.0, live ln 673, enc 0 symbolic value matches before assn asm ln 25581, prod ln 662.0, live ln 673, enc 0
+
+✅ Before `cmds` assns checked using after as reference
+Variable:            cmds
+  Assignments:       1
+  Matching Coords:   1
+  Matching Value:    1
+Errors:
+  Mismatched Coords: 0
+  Mismatched Value:  0
+  Not Encountered:   0
+  Missing:           0
+Warnings:
+  Unused:            0
+  Unreachable:       0
+  Removable:         0
+
+Checking equivalence of `i` (decl src ln 665) from
+  assn asm ln 25596, prod ln 676.9, live ln 677, enc 0
+  i32 0
+  (w32 0x0)
+and
+  assn asm ln 25560, prod ln 676.41, live ln 677, enc 0
+  %i.0 = phi i32 [ %inc, %for.inc ], [ 0, %entry ]
+  (w32 0x0)
+✅ After `i` (decl src ln 665) assn asm ln 25560, prod ln 676.41, live ln 677, enc 0 symbolic value matches before assn asm ln 25596, prod ln 676.9, live ln 677, enc 0
+
+Checking equivalence of `i` (decl src ln 665) from
+  assn asm ln 25628, prod ln 676.41, live ln 677, enc 1
+  %inc = add nsw i32 %9, 1, l676 c41
+  (w32 0x1)
+and
+  assn asm ln 25585, prod ln 676.41, live ln 677, enc 1
+  %inc = add nsw i32 %i.0, 1, l676 c41
+  (w32 0x1)
+✅ After `i` (decl src ln 665) assn asm ln 25585, prod ln 676.41, live ln 677, enc 1 symbolic value matches before assn asm ln 25628, prod ln 676.41, live ln 677, enc 1
+
+✅ Before `i` assns checked using after as reference
+Variable:            i
+  Assignments:       2
+  Matching Coords:   2
+  Matching Value:    2
+Errors:
+  Mismatched Coords: 0
+  Mismatched Value:  0
+  Not Encountered:   0
+  Missing:           0
+Warnings:
+  Unused:            0
+  Unreachable:       0
+  Removable:         0
+
+✅ Before `name` assns checked using after as reference
+Variable:            name
+  Assignments:       0
+  Matching Coords:   0
+  Matching Value:    0
+Errors:
+  Mismatched Coords: 0
+  Mismatched Value:  0
+  Not Encountered:   0
+  Missing:           0
+Warnings:
+  Unused:            0
+  Unreachable:       0
+  Removable:         0
+
+Checking equivalence of `prefix` (decl src ln 662) from
+  assn asm ln 25579, prod ln 662.0, live ln 673, enc 0
+  i8* %prefix
+  (w64 0x3E8C4480EDC2A01A)
+and
+  assn asm ln 25544, prod ln 662.0, live ln 673, enc 0
+  i8* %prefix
+  (w64 0x3E8C4480EDC2A01A)
+✅ After `prefix` (decl src ln 662) assn asm ln 25544, prod ln 662.0, live ln 673, enc 0 symbolic value matches before assn asm ln 25579, prod ln 662.0, live ln 673, enc 0
+
+✅ Before `prefix` assns checked using after as reference
+Variable:            prefix
+  Assignments:       1
+  Matching Coords:   1
+  Matching Value:    1
+Errors:
+  Mismatched Coords: 0
+  Mismatched Value:  0
+  Not Encountered:   0
+  Missing:           0
+Warnings:
+  Unused:            0
+  Unreachable:       0
+  Removable:         0
+
+#### Check after using before as reference
+
+Checking equivalence of `cmds` (decl src ln 662) from
+  assn asm ln 25546, prod ln 662.0, live ln 673, enc 0
+  %struct.cmdnames.214* %cmds
+  (w64 0xEDF10C495303ABE5)
+and
+  assn asm ln 25581, prod ln 662.0, live ln 673, enc 0
+  %struct.cmdnames* %cmds
+  (w64 0xEDF10C495303ABE5)
+✅ Before `cmds` (decl src ln 662) assn asm ln 25581, prod ln 662.0, live ln 673, enc 0 symbolic value matches after assn asm ln 25546, prod ln 662.0, live ln 673, enc 0
+
+✅ After `cmds` assns checked using before as reference
+Variable:            cmds
+  Assignments:       1
+  Matching Coords:   1
+  Matching Value:    1
+Errors:
+  Mismatched Coords: 0
+  Mismatched Value:  0
+  Not Encountered:   0
+  Missing:           0
+Warnings:
+  Unused:            0
+  Unreachable:       0
+  Removable:         0
+
+Checking equivalence of `i` (decl src ln 665) from
+  assn asm ln 25560, prod ln 676.41, live ln 677, enc 0
+  %i.0 = phi i32 [ %inc, %for.inc ], [ 0, %entry ]
+  (w32 0x0)
+and
+  assn asm ln 25596, prod ln 676.9, live ln 677, enc 0
+  i32 0
+  (w32 0x0)
+✅ Before `i` (decl src ln 665) assn asm ln 25596, prod ln 676.9, live ln 677, enc 0 symbolic value matches after assn asm ln 25560, prod ln 676.41, live ln 677, enc 0
+
+Checking equivalence of `i` (decl src ln 665) from
+  assn asm ln 25585, prod ln 676.41, live ln 677, enc 1
+  %inc = add nsw i32 %i.0, 1, l676 c41
+  (w32 0x1)
+and
+  assn asm ln 25628, prod ln 676.41, live ln 677, enc 1
+  %inc = add nsw i32 %9, 1, l676 c41
+  (w32 0x1)
+✅ Before `i` (decl src ln 665) assn asm ln 25628, prod ln 676.41, live ln 677, enc 1 symbolic value matches after assn asm ln 25585, prod ln 676.41, live ln 677, enc 1
+
+✅ After `i` assns checked using before as reference
+Variable:            i
+  Assignments:       2
+  Matching Coords:   2
+  Matching Value:    2
+Errors:
+  Mismatched Coords: 0
+  Mismatched Value:  0
+  Not Encountered:   0
+  Missing:           0
+Warnings:
+  Unused:            0
+  Unreachable:       0
+  Removable:         0
+
+✅ After `name` assns checked using before as reference
+Variable:            name
+  Assignments:       0
+  Matching Coords:   0
+  Matching Value:    0
+Errors:
+  Mismatched Coords: 0
+  Mismatched Value:  0
+  Not Encountered:   0
+  Missing:           0
+Warnings:
+  Unused:            0
+  Unreachable:       0
+  Removable:         0
+
+Checking equivalence of `prefix` (decl src ln 662) from
+  assn asm ln 25544, prod ln 662.0, live ln 673, enc 0
+  i8* %prefix
+  (w64 0x3E8C4480EDC2A01A)
+and
+  assn asm ln 25579, prod ln 662.0, live ln 673, enc 0
+  i8* %prefix
+  (w64 0x3E8C4480EDC2A01A)
+✅ Before `prefix` (decl src ln 662) assn asm ln 25579, prod ln 662.0, live ln 673, enc 0 symbolic value matches after assn asm ln 25544, prod ln 662.0, live ln 673, enc 0
+
+✅ After `prefix` assns checked using before as reference
+Variable:            prefix
+  Assignments:       1
+  Matching Coords:   1
+  Matching Value:    1
+Errors:
+  Mismatched Coords: 0
+  Mismatched Value:  0
+  Not Encountered:   0
+  Missing:           0
+Warnings:
+  Unused:            0
+  Unreachable:       0
+  Removable:         0
+
+## Function `skip_prefix`
+
+✅ Before and after function names match
+
+### Variables
+
+Before variable `str` (decl src ln 674)
+Store to declared address of `str` (decl src ln 674), asm ln 25666
+  %incdec.ptr = getelementptr inbounds i8, i8* %4, i32 1, l682 c15, asm ln 25665
+🔔 Store to declared address of `str` (decl src ln 674): live ln too early, using produced ln + 1
+  Added assignment asm ln 25666, prod ln 682.15, live ln 683, enc None
+Store to declared address of `str` (decl src ln 674), asm ln 25642
+  arg 0
+  Added assignment asm ln 25642, prod ln 674.0, live ln 677, enc None
+Before variable `prefix` (decl src ln 674)
+Store to declared address of `prefix` (decl src ln 674), asm ln 25671
+  %incdec.ptr1 = getelementptr inbounds i8, i8* %6, i32 1, l682 c28, asm ln 25670
+🔔 Store to declared address of `prefix` (decl src ln 674): live ln too early, using produced ln + 1
+  Added assignment asm ln 25671, prod ln 682.28, live ln 683, enc None
+Store to declared address of `prefix` (decl src ln 674), asm ln 25644
+  arg 1
+  Added assignment asm ln 25644, prod ln 674.0, live ln 677, enc None
+Before variable `out` (decl src ln 675)
+Store to declared address of `out` (decl src ln 675), asm ln 25646
+  arg 2
+  Added assignment asm ln 25646, prod ln 675.0, live ln 677, enc None
+
+After variable `str` (decl src ln 674)
+Value produced for `str` (decl src ln 674), asm ln 25595
+  arg 0
+  Added assignment asm ln 25595, prod ln 674.0, live ln 677, enc None
+After variable `prefix` (decl src ln 674)
+Value produced for `prefix` (decl src ln 674), asm ln 25596
+  arg 1
+  Added assignment asm ln 25596, prod ln 674.0, live ln 677, enc None
+After variable `out` (decl src ln 675)
+Value produced for `out` (decl src ln 675), asm ln 25597
+  arg 2
+  Added assignment asm ln 25597, prod ln 675.0, live ln 677, enc None
+After variable `str` (decl src ln 674)
+Value produced for `str` (decl src ln 674), asm ln 25615
+  %incdec.ptr = getelementptr inbounds i8, i8* %str.addr.0, i32 1, l682 c15, asm ln 25614
+🔔 Value produced for `str` (decl src ln 674): live ln too early, using produced ln + 1
+  Added assignment asm ln 25615, prod ln 682.15, live ln 683, enc None
+After variable `prefix` (decl src ln 674)
+Value produced for `prefix` (decl src ln 674), asm ln 25619
+  %incdec.ptr1 = getelementptr inbounds i8, i8* %prefix.addr.0, i32 1, l682 c28, asm ln 25618
+🔔 Value produced for `prefix` (decl src ln 674): live ln too early, using produced ln + 1
+  Added assignment asm ln 25619, prod ln 682.28, live ln 683, enc None
+After variable `str` (decl src ln 674)
+Value produced for `str` (decl src ln 674), asm ln 25603
+  %str.addr.0 = phi i8* [ %str, %entry ], [ %incdec.ptr, %do.cond ], asm ln 25602
+🔔 Value produced for `str` (decl src ln 674): live ln too early, using produced ln + 1
+  Added assignment asm ln 25603, prod ln 682.15, live ln 683, enc None
+After variable `prefix` (decl src ln 674)
+Value produced for `prefix` (decl src ln 674), asm ln 25604
+  %prefix.addr.0 = phi i8* [ %prefix, %entry ], [ %incdec.ptr1, %do.cond ], asm ln 25601
+🔔 Value produced for `prefix` (decl src ln 674): live ln too early, using produced ln + 1
+  Added assignment asm ln 25604, prod ln 682.28, live ln 683, enc None
+
+✅ 3 before variables found, 3 after variables found, 0 mismatched
+
+### Symbolic values
+
+#### Before values
+
+[0;35mKLEE: WARNING: Unable to load symbol(kCFRunLoopDefaultMode) while initializing globals
+[0mKLEE: halting execution, dumping remaining states
+[0m
+🔔 Unable to execute all before program states
+
+🔔 Unable to execute all before instructions
+
+#### After values
+
+[0;35mKLEE: WARNING: Unable to load symbol(kCFRunLoopDefaultMode) while initializing globals
+[0mKLEE: halting execution, dumping remaining states
+[0m
+🔔 Unable to execute all after program states
+
+🔔 Unable to execute all after instructions
+
+### Assignments
+
+Filtering redundant before assignments: `str` (decl src ln 674)
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+❌ Before `str` (decl src ln 674) assn asm ln 25642, prod ln 674.0, live ln 677, enc None has no symbolic value from i8* %str
+
+Filtering redundant before assignments: `prefix` (decl src ln 674)
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+❌ Before `prefix` (decl src ln 674) assn asm ln 25644, prod ln 674.0, live ln 677, enc None has no symbolic value from i8* %prefix
+
+Filtering redundant after assignments: `str` (decl src ln 674)
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+❌ After `str` (decl src ln 674) assn asm ln 25615, prod ln 682.15, live ln 683, enc None has no symbolic value from %incdec.ptr = getelementptr inbounds i8, i8* %str.addr.0, i32 1, l682 c15
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+❌ After `str` (decl src ln 674) assn asm ln 25603, prod ln 682.15, live ln 683, enc None has no symbolic value from %str.addr.0 = phi i8* [ %str, %entry ], [ %incdec.ptr, %do.cond ]
+
+Filtering redundant after assignments: `prefix` (decl src ln 674)
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+❌ After `prefix` (decl src ln 674) assn asm ln 25619, prod ln 682.28, live ln 683, enc None has no symbolic value from %incdec.ptr1 = getelementptr inbounds i8, i8* %prefix.addr.0, i32 1, l682 c28
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+❌ After `prefix` (decl src ln 674) assn asm ln 25604, prod ln 682.28, live ln 683, enc None has no symbolic value from %prefix.addr.0 = phi i8* [ %prefix, %entry ], [ %incdec.ptr1, %do.cond ]
+
+Collating encountered before assignments: `str` (decl src ln 674)
+❌ Assignment asm ln 25666, prod ln 682.15, live ln 683, enc None for `str` (decl src ln 674) was not encountered during execution
+❌ Assignment asm ln 25642, prod ln 674.0, live ln 677, enc None for `str` (decl src ln 674) was not encountered during execution
+Collating encountered before assignments: `prefix` (decl src ln 674)
+❌ Assignment asm ln 25671, prod ln 682.28, live ln 683, enc None for `prefix` (decl src ln 674) was not encountered during execution
+❌ Assignment asm ln 25644, prod ln 674.0, live ln 677, enc None for `prefix` (decl src ln 674) was not encountered during execution
+Collating encountered before assignments: `out` (decl src ln 675)
+❌ Assignment asm ln 25646, prod ln 675.0, live ln 677, enc None for `out` (decl src ln 675) was not encountered during execution
+
+Collating encountered after assignments: `str` (decl src ln 674)
+❌ Assignment asm ln 25595, prod ln 674.0, live ln 677, enc None for `str` (decl src ln 674) was not encountered during execution
+❌ Assignment asm ln 25615, prod ln 682.15, live ln 683, enc None for `str` (decl src ln 674) was not encountered during execution
+❌ Assignment asm ln 25603, prod ln 682.15, live ln 683, enc None for `str` (decl src ln 674) was not encountered during execution
+Collating encountered after assignments: `prefix` (decl src ln 674)
+❌ Assignment asm ln 25596, prod ln 674.0, live ln 677, enc None for `prefix` (decl src ln 674) was not encountered during execution
+❌ Assignment asm ln 25619, prod ln 682.28, live ln 683, enc None for `prefix` (decl src ln 674) was not encountered during execution
+❌ Assignment asm ln 25604, prod ln 682.28, live ln 683, enc None for `prefix` (decl src ln 674) was not encountered during execution
+Collating encountered after assignments: `out` (decl src ln 675)
+❌ Assignment asm ln 25597, prod ln 675.0, live ln 677, enc None for `out` (decl src ln 675) was not encountered during execution
+
+#### Check before using after as reference
+
+❌ Before assn asm ln 25646, prod ln 675.0, live ln 677, enc None for `out` (decl src ln 675) was not encountered during execution
+
+❌ Before `out` assns checked using after as reference
+Variable:            out
+  Assignments:       1
+  Matching Coords:   0
+  Matching Value:    0
+Errors:
+  Mismatched Coords: 0
+  Mismatched Value:  0
+  Not Encountered:   1
+  Missing:           0
+Warnings:
+  Unused:            0
+  Unreachable:       0
+  Removable:         0
+
+❌ Before assn asm ln 25671, prod ln 682.28, live ln 683, enc None for `prefix` (decl src ln 674) was not encountered during execution
+
+❌ Before assn asm ln 25644, prod ln 674.0, live ln 677, enc None for `prefix` (decl src ln 674) was not encountered during execution
+
+❌ Before `prefix` assns checked using after as reference
+Variable:            prefix
+  Assignments:       2
+  Matching Coords:   0
+  Matching Value:    0
+Errors:
+  Mismatched Coords: 0
+  Mismatched Value:  0
+  Not Encountered:   2
+  Missing:           0
+Warnings:
+  Unused:            0
+  Unreachable:       0
+  Removable:         0
+
+❌ Before assn asm ln 25666, prod ln 682.15, live ln 683, enc None for `str` (decl src ln 674) was not encountered during execution
+
+❌ Before assn asm ln 25642, prod ln 674.0, live ln 677, enc None for `str` (decl src ln 674) was not encountered during execution
+
+❌ Before `str` assns checked using after as reference
+Variable:            str
+  Assignments:       2
+  Matching Coords:   0
+  Matching Value:    0
+Errors:
+  Mismatched Coords: 0
+  Mismatched Value:  0
+  Not Encountered:   2
+  Missing:           0
+Warnings:
+  Unused:            0
+  Unreachable:       0
+  Removable:         0
+
+#### Check after using before as reference
+
+❌ After assn asm ln 25597, prod ln 675.0, live ln 677, enc None for `out` (decl src ln 675) was not encountered during execution
+
+❌ After `out` assns checked using before as reference
+Variable:            out
+  Assignments:       1
+  Matching Coords:   0
+  Matching Value:    0
+Errors:
+  Mismatched Coords: 0
+  Mismatched Value:  0
+  Not Encountered:   1
+  Missing:           0
+Warnings:
+  Unused:            0
+  Unreachable:       0
+  Removable:         0
+
+❌ After assn asm ln 25596, prod ln 674.0, live ln 677, enc None for `prefix` (decl src ln 674) was not encountered during execution
+
+❌ After assn asm ln 25619, prod ln 682.28, live ln 683, enc None for `prefix` (decl src ln 674) was not encountered during execution
+
+❌ After assn asm ln 25604, prod ln 682.28, live ln 683, enc None for `prefix` (decl src ln 674) was not encountered during execution
+
+❌ After `prefix` assns checked using before as reference
+Variable:            prefix
+  Assignments:       3
+  Matching Coords:   0
+  Matching Value:    0
+Errors:
+  Mismatched Coords: 0
+  Mismatched Value:  0
+  Not Encountered:   3
+  Missing:           0
+Warnings:
+  Unused:            0
+  Unreachable:       0
+  Removable:         0
+
+❌ After assn asm ln 25595, prod ln 674.0, live ln 677, enc None for `str` (decl src ln 674) was not encountered during execution
+
+❌ After assn asm ln 25615, prod ln 682.15, live ln 683, enc None for `str` (decl src ln 674) was not encountered during execution
+
+❌ After assn asm ln 25603, prod ln 682.15, live ln 683, enc None for `str` (decl src ln 674) was not encountered during execution
+
+❌ After `str` assns checked using before as reference
+Variable:            str
+  Assignments:       3
+  Matching Coords:   0
+  Matching Value:    0
+Errors:
+  Mismatched Coords: 0
+  Mismatched Value:  0
+  Not Encountered:   3
+  Missing:           0
+Warnings:
+  Unused:            0
+  Unreachable:       0
+  Removable:         0
+
+## Function `cmd_main`
+
+✅ Before and after function names match
+
+### Variables
+
+Before variable `argc` (decl src ln 864)
+Store to declared address of `argc` (decl src ln 864), asm ln 25758
+  %dec = add nsw i32 %14, -1, l898 c6, asm ln 25757
+Unexpected address user
+UNREACHABLE executed at /Users/jryans/Projects/klee/tools/check-debug-info/main.cpp:153!
 PLEASE submit a bug report to https://bugs.llvm.org/ and include the crash backtrace.
 Stack dump:
-0.	Program arguments: /Users/jryans/Projects/klee/build-release-debug/bin/check-debug-info clang/13/O0/git.bc clang/13/O0-mem2reg/git.bc --debug-only=check-debug-info,values-collector,variable --debug-execution-trace --max-functions=10 --max-forks=4 --search=random-path --tsv
+0.	Program arguments: /Users/jryans/Projects/klee/build-release-debug/bin/check-debug-info clang/13/O0/git.bc clang/13/O0-mem2reg/git.bc --debug-only=check-debug-info,values-collector,variable --debug-execution-trace --max-functions=10 --max-forks=4 --max-time=10s --search=random-path --tsv
 Stack dump without symbol names (ensure you have llvm-symbolizer in your PATH or set the environment var `LLVM_SYMBOLIZER_PATH` to point to it):
-0  check-debug-info         0x0000000108dbdd07 llvm::sys::PrintStackTrace(llvm::raw_ostream&, int) + 39
-1  check-debug-info         0x0000000108dbcb48 llvm::sys::RunSignalHandlers() + 248
-2  check-debug-info         0x0000000108dbe350 SignalHandler(int) + 288
+0  check-debug-info         0x000000010273ad27 llvm::sys::PrintStackTrace(llvm::raw_ostream&, int) + 39
+1  check-debug-info         0x0000000102739b68 llvm::sys::RunSignalHandlers() + 248
+2  check-debug-info         0x000000010273b370 SignalHandler(int) + 288
 3  libsystem_platform.dylib 0x00007ff80904b5ed _sigtramp + 29
-4  libsystem_platform.dylib 0x000000013dfe6a98 _sigtramp + 18446603375764681928
+4  libsystem_platform.dylib 0x0000000100000000 _sigtramp + 18446603374724598320
 5  libsystem_c.dylib        0x00007ff808f44b45 abort + 123
-6  libsystem_c.dylib        0x00007ff808f43e5e err + 0
-7  check-debug-info         0x0000000108ddd523 klee::Executor::executeCall(klee::ExecutionState&, klee::KInstruction*, llvm::Function*, std::__1::vector<klee::ref<klee::Expr>, std::__1::allocator<klee::ref<klee::Expr> > >&) (.cold.25) + 35
-8  check-debug-info         0x000000010756dc0c klee::Executor::executeCall(klee::ExecutionState&, klee::KInstruction*, llvm::Function*, std::__1::vector<klee::ref<klee::Expr>, std::__1::allocator<klee::ref<klee::Expr> > >&) + 11788
-9  check-debug-info         0x0000000107574a8a klee::Executor::executeInstruction(klee::ExecutionState&, klee::KInstruction*) + 14778
-10 check-debug-info         0x000000010757b21e klee::Executor::run(klee::ExecutionState&) + 2142
-11 check-debug-info         0x000000010757fa48 klee::Executor::runFunction(llvm::Function*) + 376
-12 check-debug-info         0x0000000107550900 ValuesCollector::collect(llvm::StringRef, llvm::StringRef, llvm::SmallVector<std::__1::pair<Variable, Assignment*>, 1u>*) + 224
-13 check-debug-info         0x0000000107544040 checkFunction(llvm::SmallVector<ValuesCollector, 2u>&, llvm::StringRef, std::__1::vector<clang::tooling::Diagnostic, std::__1::allocator<clang::tooling::Diagnostic> > const&) + 3216
-14 check-debug-info         0x00000001075459bb main + 2811
-15 dyld                     0x00007ff808cc441f start + 1903
-./check.sh: line 23: 12536 Abort trap: 6           ${CHECK} clang/${version}/O0/${TARGET_NAME}.bc clang/${version}/${level}/${TARGET_NAME}.bc ${CHECK_OPTS} "$@"
+6  check-debug-info         0x0000000102682bd3 llvm::llvm_unreachable_internal(char const*, char const*, unsigned int) + 467
+7  check-debug-info         0x0000000100eb78e9 checkStaticRemovability(Assignment const&) + 1161
+8  check-debug-info         0x0000000100eb8c3a addAssignment(llvm::StringRef, klee::InstructionInfoTable const&, llvm::DbgVariableIntrinsic const*, Variable const&, llvm::StringRef, llvm::Instruction const*, llvm::SmallVector<llvm::Value const*, 2u> const&&, std::__1::map<Variable, llvm::SmallVector<Assignment, 1u>, std::__1::less<Variable>, std::__1::allocator<std::__1::pair<Variable const, llvm::SmallVector<Assignment, 1u> > > >&) + 4842
+9  check-debug-info         0x0000000100eb9f68 gatherAssignments(llvm::StringRef, llvm::Instruction const&, klee::InstructionInfoTable const&, std::__1::vector<clang::tooling::Diagnostic, std::__1::allocator<clang::tooling::Diagnostic> > const&, llvm::SmallSet<Variable, 8u, std::__1::less<Variable> >&, std::__1::map<Variable, llvm::SmallVector<Assignment, 1u>, std::__1::less<Variable>, std::__1::allocator<std::__1::pair<Variable const, llvm::SmallVector<Assignment, 1u> > > >&) + 2024
+10 check-debug-info         0x0000000100eba8d0 gatherAssignments(llvm::StringRef, llvm::Function const&, klee::InstructionInfoTable const&, std::__1::vector<clang::tooling::Diagnostic, std::__1::allocator<clang::tooling::Diagnostic> > const&, llvm::SmallSet<Variable, 8u, std::__1::less<Variable> >&, std::__1::map<Variable, llvm::SmallVector<Assignment, 1u>, std::__1::less<Variable>, std::__1::allocator<std::__1::pair<Variable const, llvm::SmallVector<Assignment, 1u> > > >&) + 528
+11 check-debug-info         0x0000000100ec087e checkFunction(llvm::SmallVector<ValuesCollector, 2u>&, llvm::StringRef, std::__1::vector<clang::tooling::Diagnostic, std::__1::allocator<clang::tooling::Diagnostic> > const&) + 1374
+12 check-debug-info         0x0000000100ec292b main + 2811
+13 dyld                     0x00007ff808cc441f start + 1903
+./check.sh: line 23: 13138 Abort trap: 6           ${CHECK} clang/${version}/O0/${TARGET_NAME}.bc clang/${version}/${level}/${TARGET_NAME}.bc ${CHECK_OPTS} "$@"

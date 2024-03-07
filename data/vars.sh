@@ -33,4 +33,4 @@ CC_Og_OPTS="-Og"
 CC_LV_OPTS="${CC_Og_OPTS} -gvariable-location-views"
 
 CHECK=$(klee release-debug check-debug-info)
-CHECK_OPTS="--debug-only=check-debug-info,values-collector,variable --debug-execution-trace --max-functions=10 --max-forks=4 --search=random-path --tsv"
+CHECK_OPTS="--debug-only=check-debug-info,values-collector,variable --debug-execution-trace --max-functions=10 --max-forks=4 --max-time=10s --search=random-path --tsv"
