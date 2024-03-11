@@ -1708,26 +1708,19 @@ Collected value for `prefix`
   %0 = load i8*, i8** %prefix.addr, l678 c9
   (w64 0x3E8C4480EDC2A01A)
 Collected value for `str`
-  Assignment asm ln 25664, prod ln 682.15, live ln 683, enc 1
-  Concrete pointer resolves to str.deref, offset (w64 0x0)
-  Created deref expr (ReadLSB w64 (w32 0x0) str.deref)
-  Replaced concrete pointer with hash (w64 0x473349C03BCB525)
-  %4 = load i8*, i8** %str.addr, l682 c15
-  (w64 0x473349C03BCB525)
-Collected value for `str`
-  Assignment asm ln 25657, prod ln 679.11, live ln 680, enc 2
+  Assignment asm ln 25657, prod ln 679.11, live ln 680, enc 1
   Concrete pointer resolves to str.deref, offset (w64 0x0)
   Created deref expr (ReadLSB w64 (w32 0x0) str.deref)
   Replaced concrete pointer with hash (w64 0x473349C03BCB525)
   %2 = load i8*, i8** %str.addr, l679 c11
   (w64 0x473349C03BCB525)
 Collected value for `str`
-  Assignment asm ln 25666, prod ln 682.15, live ln 683, enc 3
-  Concrete pointer resolves to str.deref, offset (w64 0x1)
-  Created deref expr (ReadLSB w64 (w32 0x1) str.deref)
-  Replaced concrete pointer with hash (w64 0xA7A9575A47B2C678)
-  %incdec.ptr = getelementptr inbounds i8, i8* %4, i32 1, l682 c15
-  (w64 0xA7A9575A47B2C678)
+  Assignment asm ln 25664, prod ln 682.15, live ln 683, enc 2
+  Concrete pointer resolves to str.deref, offset (w64 0x0)
+  Created deref expr (ReadLSB w64 (w32 0x0) str.deref)
+  Replaced concrete pointer with hash (w64 0x473349C03BCB525)
+  %4 = load i8*, i8** %str.addr, l682 c15
+  (w64 0x473349C03BCB525)
 Collected value for `out`
   Assignment asm ln 25658, prod ln 679.5, live ln 680, enc 1
   Concrete pointer resolves to out.deref, offset (w64 0x0)
@@ -1735,6 +1728,13 @@ Collected value for `out`
   Replaced concrete pointer with hash (w64 0xCA95B3753B239CC3)
   %3 = load i8**, i8*** %out.addr, l679 c5
   (w64 0xCA95B3753B239CC3)
+Collected value for `str`
+  Assignment asm ln 25666, prod ln 682.15, live ln 683, enc 3
+  Concrete pointer resolves to str.deref, offset (w64 0x1)
+  Created deref expr (ReadLSB w64 (w32 0x1) str.deref)
+  Replaced concrete pointer with hash (w64 0xA7A9575A47B2C678)
+  %incdec.ptr = getelementptr inbounds i8, i8* %4, i32 1, l682 c15
+  (w64 0xA7A9575A47B2C678)
 Collected value for `prefix`
   Assignment asm ln 25669, prod ln 682.28, live ln 683, enc 2
   Concrete pointer resolves to prefix.deref, offset (w64 0x0)
@@ -1816,24 +1816,24 @@ Collected value for `prefix`
 Filtering redundant before assignments: `str` (decl src ln 674)
 
 Checking equivalence of `str` (decl src ln 674) from
-  assn asm ln 25664, prod ln 682.15, live ln 683, enc 1
-  %4 = load i8*, i8** %str.addr, l682 c15
-  (w64 0x473349C03BCB525)
-and
-  assn asm ln 25642, prod ln 674.0, live ln 677, enc 0
-  i8* %str
-  (w64 0x473349C03BCB525)
-🔔 Removing: asm ln 25664, prod ln 682.15, live ln 683, enc 1
-
-Checking equivalence of `str` (decl src ln 674) from
-  assn asm ln 25657, prod ln 679.11, live ln 680, enc 2
+  assn asm ln 25657, prod ln 679.11, live ln 680, enc 1
   %2 = load i8*, i8** %str.addr, l679 c11
   (w64 0x473349C03BCB525)
 and
   assn asm ln 25642, prod ln 674.0, live ln 677, enc 0
   i8* %str
   (w64 0x473349C03BCB525)
-🔔 Removing: asm ln 25657, prod ln 679.11, live ln 680, enc 2
+🔔 Removing: asm ln 25657, prod ln 679.11, live ln 680, enc 1
+
+Checking equivalence of `str` (decl src ln 674) from
+  assn asm ln 25664, prod ln 682.15, live ln 683, enc 2
+  %4 = load i8*, i8** %str.addr, l682 c15
+  (w64 0x473349C03BCB525)
+and
+  assn asm ln 25642, prod ln 674.0, live ln 677, enc 0
+  i8* %str
+  (w64 0x473349C03BCB525)
+🔔 Removing: asm ln 25664, prod ln 682.15, live ln 683, enc 2
 
 Checking equivalence of `str` (decl src ln 674) from
   assn asm ln 25666, prod ln 682.15, live ln 683, enc 3
@@ -2561,41 +2561,41 @@ Collected value for `cmd`
   %8 = load i8*, i8** %cmd, l891 c13
   (w64 0x8467E337196AF796)
 Collected value for `argv`
-  Assignment asm ln 25741, prod ln 891.3, live ln 892, enc 3
-  Concrete pointer resolves to argv.deref, offset (w64 0x0)
-  Created deref expr <concrete pointer>
-  Replaced concrete pointer with hash (w64 0x339B17540BD60D2)
-  %9 = load i8**, i8*** %argv.addr, l891 c3
-  (w64 0x339B17540BD60D2)
-Collected value for `argv`
-  Assignment asm ln 25753, prod ln 897.6, live ln 898, enc 4
+  Assignment asm ln 25753, prod ln 897.6, live ln 898, enc 3
   Concrete pointer resolves to argv.deref, offset (w64 0x0)
   Created deref expr <concrete pointer>
   Replaced concrete pointer with hash (w64 0x339B17540BD60D2)
   %13 = load i8**, i8*** %argv.addr, l897 c6
   (w64 0x339B17540BD60D2)
-Collected value for `argc`
-  Assignment asm ln 25744, prod ln 892.18, live ln 893, enc 1
-  %10 = load i32, i32* %argc.addr, l892 c18
-  (ReadLSB w32 (w32 0x0) argc)
 Collected value for `argv`
-  Assignment asm ln 25745, prod ln 892.24, live ln 893, enc 5
-  Concrete pointer resolves to argv.deref, offset (w64 0x0)
-  Created deref expr <concrete pointer>
-  Replaced concrete pointer with hash (w64 0x339B17540BD60D2)
-  %11 = load i8**, i8*** %argv.addr, l892 c24
-  (w64 0x339B17540BD60D2)
-Collected value for `argv`
-  Assignment asm ln 25755, prod ln 897.6, live ln 898, enc 6
+  Assignment asm ln 25755, prod ln 897.6, live ln 898, enc 4
   Concrete pointer resolves to argv.deref, offset (w64 0x8)
   Created deref expr (ReadLSB w64 (w32 0x8) argv.deref)
   Replaced concrete pointer with hash (w64 0xC9FFF2DD106BE5EA)
   %incdec.ptr = getelementptr inbounds i8*, i8** %13, i32 1, l897 c6
   (w64 0xC9FFF2DD106BE5EA)
+Collected value for `argv`
+  Assignment asm ln 25741, prod ln 891.3, live ln 892, enc 5
+  Concrete pointer resolves to argv.deref, offset (w64 0x0)
+  Created deref expr <concrete pointer>
+  Replaced concrete pointer with hash (w64 0x339B17540BD60D2)
+  %9 = load i8**, i8*** %argv.addr, l891 c3
+  (w64 0x339B17540BD60D2)
 Collected value for `argc`
-  Assignment asm ln 25756, prod ln 898.6, live ln 899, enc 2
+  Assignment asm ln 25756, prod ln 898.6, live ln 899, enc 1
   %14 = load i32, i32* %argc.addr, l898 c6
   (ReadLSB w32 (w32 0x0) argc)
+Collected value for `argc`
+  Assignment asm ln 25744, prod ln 892.18, live ln 893, enc 2
+  %10 = load i32, i32* %argc.addr, l892 c18
+  (ReadLSB w32 (w32 0x0) argc)
+Collected value for `argv`
+  Assignment asm ln 25745, prod ln 892.24, live ln 893, enc 6
+  Concrete pointer resolves to argv.deref, offset (w64 0x0)
+  Created deref expr <concrete pointer>
+  Replaced concrete pointer with hash (w64 0x339B17540BD60D2)
+  %11 = load i8**, i8*** %argv.addr, l892 c24
+  (w64 0x339B17540BD60D2)
 Collected value for `argc`
   Assignment asm ln 25758, prod ln 898.6, live ln 899, enc 3
   %dec = add nsw i32 %14, -1, l898 c6
@@ -2621,19 +2621,21 @@ Collected value for `cmd`
   Replaced concrete pointer with hash (w64 0x2CBE786E7EDBF201)
   %16 = load i8**, i8*** %argv.addr, l910 c27
   (w64 0x2CBE786E7EDBF201)
-Collected value for `argv`
-  Assignment asm ln 25784, prod ln 910.53, live ln 911, enc 8
-  Concrete pointer resolves to handle_options.argv.deref.deref, offset (w64 0x0)
-  Created deref expr <concrete pointer>
-  Replaced concrete pointer with hash (w64 0x2CBE786E7EDBF201)
-  %18 = load i8**, i8*** %argv.addr, l910 c53
-  (w64 0x2CBE786E7EDBF201)
-Collected value for `argv`
-  Assignment asm ln 25792, prod ln 911.3, live ln 912, enc 9
+[0;1;31mKLEE: ERROR: git.c:907: reached "unreachable" instruction
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0mCollected value for `argv`
+  Assignment asm ln 25792, prod ln 911.3, live ln 912, enc 8
   Concrete pointer resolves to handle_options.argv.deref.deref, offset (w64 0x0)
   Created deref expr <concrete pointer>
   Replaced concrete pointer with hash (w64 0x2CBE786E7EDBF201)
   %20 = load i8**, i8*** %argv.addr, l911 c3
+  (w64 0x2CBE786E7EDBF201)
+Collected value for `argv`
+  Assignment asm ln 25784, prod ln 910.53, live ln 911, enc 9
+  Concrete pointer resolves to handle_options.argv.deref.deref, offset (w64 0x0)
+  Created deref expr <concrete pointer>
+  Replaced concrete pointer with hash (w64 0x2CBE786E7EDBF201)
+  %18 = load i8**, i8*** %argv.addr, l910 c53
   (w64 0x2CBE786E7EDBF201)
 Collected value for `argv`
   Assignment asm ln 25820, prod ln 915.8, live ln 916, enc 10
@@ -2642,15 +2644,6 @@ Collected value for `argv`
   Replaced concrete pointer with hash (w64 0x2CBE786E7EDBF201)
   %26 = load i8**, i8*** %argv.addr, l915 c8
   (w64 0x2CBE786E7EDBF201)
-[0;1;31mKLEE: ERROR: git.c:907: reached "unreachable" instruction
-[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
-[0mCollected value for `argv`
-  Assignment asm ln 25798, prod ln 912.29, live ln 913, enc 11
-  Concrete pointer resolves to handle_options.argv.deref.deref, offset (w64 0x0)
-  Created deref expr <concrete pointer>
-  Replaced concrete pointer with hash (w64 0x2CBE786E7EDBF201)
-  %21 = load i8**, i8*** %argv.addr, l912 c29
-  (w64 0x2CBE786E7EDBF201)
 Collected value for `cmd`
   Assignment asm ln 25823, prod ln 915.8, live ln 923, enc 7
   Concrete pointer resolves to .str.9, offset (w64 0x0)
@@ -2658,17 +2651,31 @@ Collected value for `cmd`
   Replaced concrete pointer with hash (w64 0xB003E4C9E55B68A4)
   %27 = load i8*, i8** %arrayidx39, l915 c8
   (w64 0xB003E4C9E55B68A4)
+Collected value for `argv`
+  Assignment asm ln 25798, prod ln 912.29, live ln 913, enc 11
+  Concrete pointer resolves to handle_options.argv.deref.deref, offset (w64 0x0)
+  Created deref expr <concrete pointer>
+  Replaced concrete pointer with hash (w64 0x2CBE786E7EDBF201)
+  %21 = load i8**, i8*** %argv.addr, l912 c29
+  (w64 0x2CBE786E7EDBF201)
 Collected value for `was_alias`
   Assignment asm ln 25830, prod ln 926.19, live ln 927, enc 0
   %call40 = call i32 @run_argv(i32* %argc.addr, i8*** %argv.addr), l926 c19
   (ReadLSB w32 (w32 0x0) run_argv.return)
 Collected value for `argv`
-  Assignment asm ln 25814, prod ln 913.3, live ln 914, enc 12
+  Assignment asm ln 25806, prod ln 912.55, live ln 913, enc 12
   Concrete pointer resolves to handle_options.argv.deref.deref, offset (w64 0x0)
   Created deref expr <concrete pointer>
   Replaced concrete pointer with hash (w64 0x2CBE786E7EDBF201)
-  %25 = load i8**, i8*** %argv.addr, l913 c3
+  %23 = load i8**, i8*** %argv.addr, l912 c55
   (w64 0x2CBE786E7EDBF201)
+Collected value for `cmd`
+  Assignment asm ln 25871, prod ln 943.3, live ln 944, enc 8
+  Concrete pointer resolves to .str.9, offset (w64 0x0)
+  Created deref expr <concrete pointer>
+  Replaced concrete pointer with hash (w64 0xB003E4C9E55B68A4)
+  %38 = load i8*, i8** %cmd, l943 c3
+  (w64 0xB003E4C9E55B68A4)
 Collected value for `was_alias`
   Assignment asm ln 25837, prod ln 929.7, live ln 930, enc 1
   %29 = load i32, i32* %was_alias, l929 c7
@@ -2678,7 +2685,7 @@ Collected value for `done_help`
   %34 = load i32, i32* %done_help, l935 c8
   (w32 0x0)
 Collected value for `cmd`
-  Assignment asm ln 25859, prod ln 936.37, live ln 937, enc 8
+  Assignment asm ln 25859, prod ln 936.37, live ln 937, enc 9
   Concrete pointer resolves to .str.9, offset (w64 0x0)
   Created deref expr <concrete pointer>
   Replaced concrete pointer with hash (w64 0xB003E4C9E55B68A4)
@@ -2692,7 +2699,7 @@ Collected value for `argv`
   %36 = load i8**, i8*** %argv.addr, l936 c10
   (w64 0xAACFA374FFB4242E)
 Collected value for `cmd`
-  Assignment asm ln 25864, prod ln 936.20, live ln 937, enc 9
+  Assignment asm ln 25864, prod ln 936.20, live ln 937, enc 10
   Concrete pointer resolves to help_unknown_cmd.return.deref, offset (w64 0x0)
   Created deref expr (ReadLSB w64 (w32 0x0) help_unknown_cmd.return.deref)
   Replaced concrete pointer with hash (w64 0xBBAED580D38F1CDC)
@@ -2703,19 +2710,12 @@ Collected value for `done_help`
   i32 1
   (w32 0x1)
 Collected value for `cmd`
-  Assignment asm ln 25871, prod ln 943.3, live ln 944, enc 10
-  Concrete pointer resolves to help_unknown_cmd.return.deref, offset (w64 0x0)
-  Created deref expr (ReadLSB w64 (w32 0x0) help_unknown_cmd.return.deref)
-  Replaced concrete pointer with hash (w64 0xBBAED580D38F1CDC)
-  %38 = load i8*, i8** %cmd, l943 c3
-  (w64 0xBBAED580D38F1CDC)
-Collected value for `cmd`
   Assignment asm ln 25844, prod ln 932.5, live ln 933, enc 11
-  Concrete pointer resolves to .str.12, offset (w64 0x0)
-  Created deref expr <concrete pointer>
-  Replaced concrete pointer with hash (w64 0x3072604F191E67AB)
+  Concrete pointer resolves to handle_options.argv.deref.deref.deref, offset (w64 0x0)
+  Created deref expr (ReadLSB w64 (w32 0x0) strcmp.arg1.deref_3)
+  Replaced concrete pointer with hash (w64 0x4F7C6ABE8B28A82)
   %31 = load i8*, i8** %cmd, l932 c5
-  (w64 0x3072604F191E67AB)
+  (w64 0x4F7C6ABE8B28A82)
 Collected value for `argv`
   Assignment asm ln 25845, prod ln 932.10, live ln 933, enc 14
   Concrete pointer resolves to run_argv.argv.deref.deref, offset (w64 0x0)
@@ -2812,23 +2812,19 @@ Collected value for `cmd`
   %6 = load i8*, i8** %cmd, l891 c13
   (w64 0x8467E337196AF796)
 Collected value for `argv`
-  Assignment asm ln 25678, prod ln 891.3, live ln 892, enc 3
-  Concrete pointer resolves to argv.deref, offset (w64 0x0)
-  Created deref expr <concrete pointer>
-  Replaced concrete pointer with hash (w64 0x339B17540BD60D2)
-  %7 = load i8**, i8*** %argv.addr, l891 c3
-  (w64 0x339B17540BD60D2)
-Collected value for `argv`
-  Assignment asm ln 25690, prod ln 897.6, live ln 898, enc 4
+  Assignment asm ln 25690, prod ln 897.6, live ln 898, enc 3
   Concrete pointer resolves to argv.deref, offset (w64 0x0)
   Created deref expr <concrete pointer>
   Replaced concrete pointer with hash (w64 0x339B17540BD60D2)
   %11 = load i8**, i8*** %argv.addr, l897 c6
   (w64 0x339B17540BD60D2)
-Collected value for `argc`
-  Assignment asm ln 25681, prod ln 892.18, live ln 893, enc 1
-  %8 = load i32, i32* %argc.addr, l892 c18
-  (ReadLSB w32 (w32 0x0) argc)
+Collected value for `argv`
+  Assignment asm ln 25678, prod ln 891.3, live ln 892, enc 4
+  Concrete pointer resolves to argv.deref, offset (w64 0x0)
+  Created deref expr <concrete pointer>
+  Replaced concrete pointer with hash (w64 0x339B17540BD60D2)
+  %7 = load i8**, i8*** %argv.addr, l891 c3
+  (w64 0x339B17540BD60D2)
 Collected value for `argv`
   Assignment asm ln 25692, prod ln 897.6, live ln 898, enc 5
   Concrete pointer resolves to argv.deref, offset (w64 0x8)
@@ -2836,6 +2832,14 @@ Collected value for `argv`
   Replaced concrete pointer with hash (w64 0xC9FFF2DD106BE5EA)
   %incdec.ptr = getelementptr inbounds i8*, i8** %11, i32 1, l897 c6
   (w64 0xC9FFF2DD106BE5EA)
+Collected value for `argc`
+  Assignment asm ln 25693, prod ln 898.6, live ln 899, enc 1
+  %12 = load i32, i32* %argc.addr, l898 c6
+  (ReadLSB w32 (w32 0x0) argc)
+Collected value for `argc`
+  Assignment asm ln 25681, prod ln 892.18, live ln 893, enc 2
+  %8 = load i32, i32* %argc.addr, l892 c18
+  (ReadLSB w32 (w32 0x0) argc)
 Collected value for `argv`
   Assignment asm ln 25682, prod ln 892.24, live ln 893, enc 6
   Concrete pointer resolves to argv.deref, offset (w64 0x0)
@@ -2843,10 +2847,6 @@ Collected value for `argv`
   Replaced concrete pointer with hash (w64 0x339B17540BD60D2)
   %9 = load i8**, i8*** %argv.addr, l892 c24
   (w64 0x339B17540BD60D2)
-Collected value for `argc`
-  Assignment asm ln 25693, prod ln 898.6, live ln 899, enc 2
-  %12 = load i32, i32* %argc.addr, l898 c6
-  (ReadLSB w32 (w32 0x0) argc)
 Collected value for `argc`
   Assignment asm ln 25695, prod ln 898.6, live ln 899, enc 3
   %dec = add nsw i32 %12, -1, l898 c6
@@ -2859,55 +2859,48 @@ Collected value for `cmd`
   Replaced concrete pointer with hash (w64 0x8467E337196AF796)
   %10 = load i8*, i8** %cmd, l893 c43
   (w64 0x8467E337196AF796)
-[0;1;31mKLEE: ERROR: git.c:893: reached "unreachable" instruction
-[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
-[0mCollected value for `argc`
+Collected value for `argc`
   Assignment asm ln 25697, prod ln 901.7, live ln 902, enc 4
   %13 = load i32, i32* %argc.addr, l901 c7
   (ReadLSB w32 (w32 0x0) handle_options.argc.deref)
-Collected value for `argv`
+[0;1;31mKLEE: ERROR: git.c:893: reached "unreachable" instruction
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0mCollected value for `argv`
   Assignment asm ln 25713, prod ln 910.27, live ln 911, enc 7
   Concrete pointer resolves to handle_options.argv.deref.deref, offset (w64 0x0)
   Created deref expr <concrete pointer>
   Replaced concrete pointer with hash (w64 0x2CBE786E7EDBF201)
   %14 = load i8**, i8*** %argv.addr, l910 c27
   (w64 0x2CBE786E7EDBF201)
-[0;1;31mKLEE: ERROR: git.c:907: reached "unreachable" instruction
-[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
-[0mCollected value for `argv`
-  Assignment asm ln 25721, prod ln 910.53, live ln 911, enc 8
-  Concrete pointer resolves to handle_options.argv.deref.deref, offset (w64 0x0)
-  Created deref expr <concrete pointer>
-  Replaced concrete pointer with hash (w64 0x2CBE786E7EDBF201)
-  %16 = load i8**, i8*** %argv.addr, l910 c53
-  (w64 0x2CBE786E7EDBF201)
 Collected value for `argv`
-  Assignment asm ln 25729, prod ln 911.3, live ln 912, enc 9
+  Assignment asm ln 25729, prod ln 911.3, live ln 912, enc 8
   Concrete pointer resolves to handle_options.argv.deref.deref, offset (w64 0x0)
   Created deref expr <concrete pointer>
   Replaced concrete pointer with hash (w64 0x2CBE786E7EDBF201)
   %18 = load i8**, i8*** %argv.addr, l911 c3
   (w64 0x2CBE786E7EDBF201)
 Collected value for `argv`
-  Assignment asm ln 25735, prod ln 912.29, live ln 913, enc 10
+  Assignment asm ln 25721, prod ln 910.53, live ln 911, enc 9
   Concrete pointer resolves to handle_options.argv.deref.deref, offset (w64 0x0)
   Created deref expr <concrete pointer>
   Replaced concrete pointer with hash (w64 0x2CBE786E7EDBF201)
-  %19 = load i8**, i8*** %argv.addr, l912 c29
+  %16 = load i8**, i8*** %argv.addr, l910 c53
   (w64 0x2CBE786E7EDBF201)
 Collected value for `argv`
-  Assignment asm ln 25751, prod ln 913.3, live ln 914, enc 11
-  Concrete pointer resolves to handle_options.argv.deref.deref, offset (w64 0x0)
-  Created deref expr <concrete pointer>
-  Replaced concrete pointer with hash (w64 0x2CBE786E7EDBF201)
-  %23 = load i8**, i8*** %argv.addr, l913 c3
-  (w64 0x2CBE786E7EDBF201)
-Collected value for `argv`
-  Assignment asm ln 25757, prod ln 915.8, live ln 916, enc 12
+  Assignment asm ln 25757, prod ln 915.8, live ln 916, enc 10
   Concrete pointer resolves to handle_options.argv.deref.deref, offset (w64 0x0)
   Created deref expr <concrete pointer>
   Replaced concrete pointer with hash (w64 0x2CBE786E7EDBF201)
   %24 = load i8**, i8*** %argv.addr, l915 c8
+  (w64 0x2CBE786E7EDBF201)
+[0;1;31mKLEE: ERROR: git.c:907: reached "unreachable" instruction
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0mCollected value for `argv`
+  Assignment asm ln 25735, prod ln 912.29, live ln 913, enc 11
+  Concrete pointer resolves to handle_options.argv.deref.deref, offset (w64 0x0)
+  Created deref expr <concrete pointer>
+  Replaced concrete pointer with hash (w64 0x2CBE786E7EDBF201)
+  %19 = load i8**, i8*** %argv.addr, l912 c29
   (w64 0x2CBE786E7EDBF201)
 Collected value for `cmd`
   Assignment asm ln 25760, prod ln 915.8, live ln 923, enc 7
@@ -2925,6 +2918,13 @@ Collected value for `was_alias`
   Assignment asm ln 25768, prod ln 926.19, live ln 927, enc 0
   %call40 = call i32 @run_argv(i32* %argc.addr, i8*** %argv.addr), l926 c19
   (ReadLSB w32 (w32 0x0) run_argv.return)
+Collected value for `argv`
+  Assignment asm ln 25743, prod ln 912.55, live ln 913, enc 12
+  Concrete pointer resolves to handle_options.argv.deref.deref, offset (w64 0x0)
+  Created deref expr <concrete pointer>
+  Replaced concrete pointer with hash (w64 0x2CBE786E7EDBF201)
+  %21 = load i8**, i8*** %argv.addr, l912 c55
+  (w64 0x2CBE786E7EDBF201)
 Collected value for `cmd`
   Assignment asm ln 25795, prod ln 936.37, live ln 937, enc 8
   Concrete pointer resolves to .str.9, offset (w64 0x0)
@@ -2940,14 +2940,7 @@ Collected value for `argv`
   %32 = load i8**, i8*** %argv.addr, l936 c10
   (w64 0xAACFA374FFB4242E)
 Collected value for `cmd`
-  Assignment asm ln 25807, prod ln 943.3, live ln 944, enc 9
-  Concrete pointer resolves to .str.9, offset (w64 0x0)
-  Created deref expr <concrete pointer>
-  Replaced concrete pointer with hash (w64 0xB003E4C9E55B68A4)
-  %34 = load i8*, i8** %cmd, l943 c3
-  (w64 0xB003E4C9E55B68A4)
-Collected value for `cmd`
-  Assignment asm ln 25800, prod ln 936.20, live ln 937, enc 10
+  Assignment asm ln 25800, prod ln 936.20, live ln 937, enc 9
   Concrete pointer resolves to help_unknown_cmd.return.deref, offset (w64 0x0)
   Created deref expr (ReadLSB w64 (w32 0x0) help_unknown_cmd.return.deref)
   Replaced concrete pointer with hash (w64 0xBBAED580D38F1CDC)
@@ -2957,6 +2950,36 @@ Collected value for `done_help`
   Assignment asm ln 25801, prod ln 867.0, live ln 925, enc 2
   i32 1
   (w32 0x1)
+Collected value for `cmd`
+  Assignment asm ln 25781, prod ln 932.5, live ln 933, enc 10
+  Concrete pointer resolves to .str.9, offset (w64 0x0)
+  Created deref expr <concrete pointer>
+  Replaced concrete pointer with hash (w64 0xB003E4C9E55B68A4)
+  %28 = load i8*, i8** %cmd, l932 c5
+  (w64 0xB003E4C9E55B68A4)
+Collected value for `argv`
+  Assignment asm ln 25751, prod ln 913.3, live ln 914, enc 14
+  Concrete pointer resolves to handle_options.argv.deref.deref, offset (w64 0x0)
+  Created deref expr <concrete pointer>
+  Replaced concrete pointer with hash (w64 0x2CBE786E7EDBF201)
+  %23 = load i8**, i8*** %argv.addr, l913 c3
+  (w64 0x2CBE786E7EDBF201)
+Collected value for `argv`
+  Assignment asm ln 25782, prod ln 932.10, live ln 933, enc 15
+  Concrete pointer resolves to run_argv.argv.deref.deref, offset (w64 0x0)
+  Created deref expr <concrete pointer>
+  Replaced concrete pointer with hash (w64 0xAACFA374FFB4242E)
+  %29 = load i8**, i8*** %argv.addr, l932 c10
+  (w64 0xAACFA374FFB4242E)
+[0;1;31mKLEE: ERROR: git.c:933: reached "unreachable" instruction
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0mCollected value for `cmd`
+  Assignment asm ln 25807, prod ln 943.3, live ln 944, enc 11
+  Concrete pointer resolves to help_unknown_cmd.return.deref, offset (w64 0x0)
+  Created deref expr (ReadLSB w64 (w32 0x0) help_unknown_cmd.return.deref)
+  Replaced concrete pointer with hash (w64 0xBBAED580D38F1CDC)
+  %34 = load i8*, i8** %cmd, l943 c3
+  (w64 0xBBAED580D38F1CDC)
 
 🔔 Unable to execute all after program states
 
@@ -2969,25 +2992,7 @@ Collected value for `done_help`
 Filtering redundant before assignments: `argc` (decl src ln 864)
 
 Checking equivalence of `argc` (decl src ln 864) from
-  assn asm ln 25744, prod ln 892.18, live ln 893, enc 1
-  %10 = load i32, i32* %argc.addr, l892 c18
-  (ReadLSB w32 (w32 0x0) argc)
-and
-  assn asm ln 25697, prod ln 864.0, live ln 867, enc 0
-  i32 %argc
-  (ReadLSB w32 (w32 0x0) argc)
-Query to parse
-array argc[4] : w32 -> w8 = symbolic
-array argc[4] : w32 -> w8 = symbolic
-(query [] (Eq N0:(ReadLSB w32 (w32 0x0) argc)
-     N0))
-Parsed query
-(Eq N0:(ReadLSB w32 (w32 0x0) argc)
-     N0)
-🔔 Removing: asm ln 25744, prod ln 892.18, live ln 893, enc 1
-
-Checking equivalence of `argc` (decl src ln 864) from
-  assn asm ln 25756, prod ln 898.6, live ln 899, enc 2
+  assn asm ln 25756, prod ln 898.6, live ln 899, enc 1
   %14 = load i32, i32* %argc.addr, l898 c6
   (ReadLSB w32 (w32 0x0) argc)
 and
@@ -3002,7 +3007,25 @@ array argc[4] : w32 -> w8 = symbolic
 Parsed query
 (Eq N0:(ReadLSB w32 (w32 0x0) argc)
      N0)
-🔔 Removing: asm ln 25756, prod ln 898.6, live ln 899, enc 2
+🔔 Removing: asm ln 25756, prod ln 898.6, live ln 899, enc 1
+
+Checking equivalence of `argc` (decl src ln 864) from
+  assn asm ln 25744, prod ln 892.18, live ln 893, enc 2
+  %10 = load i32, i32* %argc.addr, l892 c18
+  (ReadLSB w32 (w32 0x0) argc)
+and
+  assn asm ln 25697, prod ln 864.0, live ln 867, enc 0
+  i32 %argc
+  (ReadLSB w32 (w32 0x0) argc)
+Query to parse
+array argc[4] : w32 -> w8 = symbolic
+array argc[4] : w32 -> w8 = symbolic
+(query [] (Eq N0:(ReadLSB w32 (w32 0x0) argc)
+     N0))
+Parsed query
+(Eq N0:(ReadLSB w32 (w32 0x0) argc)
+     N0)
+🔔 Removing: asm ln 25744, prod ln 892.18, live ln 893, enc 2
 
 Checking equivalence of `argc` (decl src ln 864) from
   assn asm ln 25758, prod ln 898.6, live ln 899, enc 3
@@ -3047,7 +3070,7 @@ Parsed query
 Filtering redundant before assignments: `argv` (decl src ln 864)
 
 Expected 1 symbolic value(s), got 0
-❌ Before `argv` (decl src ln 864) assn asm ln 25806, prod ln 912.55, live ln 913, enc None has no symbolic value from %23 = load i8**, i8*** %argv.addr, l912 c55
+❌ Before `argv` (decl src ln 864) assn asm ln 25814, prod ln 913.3, live ln 914, enc None has no symbolic value from %25 = load i8**, i8*** %argv.addr, l913 c3
 
 Checking equivalence of `argv` (decl src ln 864) from
   assn asm ln 25704, prod ln 869.8, live ln 870, enc 1
@@ -3070,72 +3093,71 @@ and
 🔔 Removing: asm ln 25732, prod ln 878.28, live ln 879, enc 2
 
 Checking equivalence of `argv` (decl src ln 864) from
-  assn asm ln 25741, prod ln 891.3, live ln 892, enc 3
-  %9 = load i8**, i8*** %argv.addr, l891 c3
-  (w64 0x339B17540BD60D2)
-and
-  assn asm ln 25699, prod ln 864.0, live ln 867, enc 0
-  i8** %argv
-  (w64 0x339B17540BD60D2)
-🔔 Removing: asm ln 25741, prod ln 891.3, live ln 892, enc 3
-
-Checking equivalence of `argv` (decl src ln 864) from
-  assn asm ln 25753, prod ln 897.6, live ln 898, enc 4
+  assn asm ln 25753, prod ln 897.6, live ln 898, enc 3
   %13 = load i8**, i8*** %argv.addr, l897 c6
   (w64 0x339B17540BD60D2)
 and
   assn asm ln 25699, prod ln 864.0, live ln 867, enc 0
   i8** %argv
   (w64 0x339B17540BD60D2)
-🔔 Removing: asm ln 25753, prod ln 897.6, live ln 898, enc 4
+🔔 Removing: asm ln 25753, prod ln 897.6, live ln 898, enc 3
 
 Checking equivalence of `argv` (decl src ln 864) from
-  assn asm ln 25745, prod ln 892.24, live ln 893, enc 5
+  assn asm ln 25755, prod ln 897.6, live ln 898, enc 4
+  %incdec.ptr = getelementptr inbounds i8*, i8** %13, i32 1, l897 c6
+  (w64 0xC9FFF2DD106BE5EA)
+and
+  assn asm ln 25699, prod ln 864.0, live ln 867, enc 0
+  i8** %argv
+  (w64 0x339B17540BD60D2)
+
+Checking equivalence of `argv` (decl src ln 864) from
+  assn asm ln 25741, prod ln 891.3, live ln 892, enc 5
+  %9 = load i8**, i8*** %argv.addr, l891 c3
+  (w64 0x339B17540BD60D2)
+and
+  assn asm ln 25755, prod ln 897.6, live ln 898, enc 4
+  %incdec.ptr = getelementptr inbounds i8*, i8** %13, i32 1, l897 c6
+  (w64 0xC9FFF2DD106BE5EA)
+
+Checking equivalence of `argv` (decl src ln 864) from
+  assn asm ln 25745, prod ln 892.24, live ln 893, enc 6
   %11 = load i8**, i8*** %argv.addr, l892 c24
   (w64 0x339B17540BD60D2)
 and
-  assn asm ln 25699, prod ln 864.0, live ln 867, enc 0
-  i8** %argv
+  assn asm ln 25741, prod ln 891.3, live ln 892, enc 5
+  %9 = load i8**, i8*** %argv.addr, l891 c3
   (w64 0x339B17540BD60D2)
-🔔 Removing: asm ln 25745, prod ln 892.24, live ln 893, enc 5
-
-Checking equivalence of `argv` (decl src ln 864) from
-  assn asm ln 25755, prod ln 897.6, live ln 898, enc 6
-  %incdec.ptr = getelementptr inbounds i8*, i8** %13, i32 1, l897 c6
-  (w64 0xC9FFF2DD106BE5EA)
-and
-  assn asm ln 25699, prod ln 864.0, live ln 867, enc 0
-  i8** %argv
-  (w64 0x339B17540BD60D2)
+🔔 Removing: asm ln 25745, prod ln 892.24, live ln 893, enc 6
 
 Checking equivalence of `argv` (decl src ln 864) from
   assn asm ln 25776, prod ln 910.27, live ln 911, enc 7
   %16 = load i8**, i8*** %argv.addr, l910 c27
   (w64 0x2CBE786E7EDBF201)
 and
-  assn asm ln 25755, prod ln 897.6, live ln 898, enc 6
-  %incdec.ptr = getelementptr inbounds i8*, i8** %13, i32 1, l897 c6
-  (w64 0xC9FFF2DD106BE5EA)
+  assn asm ln 25741, prod ln 891.3, live ln 892, enc 5
+  %9 = load i8**, i8*** %argv.addr, l891 c3
+  (w64 0x339B17540BD60D2)
 
 Checking equivalence of `argv` (decl src ln 864) from
-  assn asm ln 25784, prod ln 910.53, live ln 911, enc 8
-  %18 = load i8**, i8*** %argv.addr, l910 c53
-  (w64 0x2CBE786E7EDBF201)
-and
-  assn asm ln 25776, prod ln 910.27, live ln 911, enc 7
-  %16 = load i8**, i8*** %argv.addr, l910 c27
-  (w64 0x2CBE786E7EDBF201)
-🔔 Removing: asm ln 25784, prod ln 910.53, live ln 911, enc 8
-
-Checking equivalence of `argv` (decl src ln 864) from
-  assn asm ln 25792, prod ln 911.3, live ln 912, enc 9
+  assn asm ln 25792, prod ln 911.3, live ln 912, enc 8
   %20 = load i8**, i8*** %argv.addr, l911 c3
   (w64 0x2CBE786E7EDBF201)
 and
   assn asm ln 25776, prod ln 910.27, live ln 911, enc 7
   %16 = load i8**, i8*** %argv.addr, l910 c27
   (w64 0x2CBE786E7EDBF201)
-🔔 Removing: asm ln 25792, prod ln 911.3, live ln 912, enc 9
+🔔 Removing: asm ln 25792, prod ln 911.3, live ln 912, enc 8
+
+Checking equivalence of `argv` (decl src ln 864) from
+  assn asm ln 25784, prod ln 910.53, live ln 911, enc 9
+  %18 = load i8**, i8*** %argv.addr, l910 c53
+  (w64 0x2CBE786E7EDBF201)
+and
+  assn asm ln 25776, prod ln 910.27, live ln 911, enc 7
+  %16 = load i8**, i8*** %argv.addr, l910 c27
+  (w64 0x2CBE786E7EDBF201)
+🔔 Removing: asm ln 25784, prod ln 910.53, live ln 911, enc 9
 
 Checking equivalence of `argv` (decl src ln 864) from
   assn asm ln 25820, prod ln 915.8, live ln 916, enc 10
@@ -3158,14 +3180,14 @@ and
 🔔 Removing: asm ln 25798, prod ln 912.29, live ln 913, enc 11
 
 Checking equivalence of `argv` (decl src ln 864) from
-  assn asm ln 25814, prod ln 913.3, live ln 914, enc 12
-  %25 = load i8**, i8*** %argv.addr, l913 c3
+  assn asm ln 25806, prod ln 912.55, live ln 913, enc 12
+  %23 = load i8**, i8*** %argv.addr, l912 c55
   (w64 0x2CBE786E7EDBF201)
 and
   assn asm ln 25776, prod ln 910.27, live ln 911, enc 7
   %16 = load i8**, i8*** %argv.addr, l910 c27
   (w64 0x2CBE786E7EDBF201)
-🔔 Removing: asm ln 25814, prod ln 913.3, live ln 914, enc 12
+🔔 Removing: asm ln 25806, prod ln 912.55, live ln 913, enc 12
 
 Checking equivalence of `argv` (decl src ln 864) from
   assn asm ln 25861, prod ln 936.10, live ln 937, enc 13
@@ -3259,17 +3281,27 @@ and
   (w64 0x8467E337196AF796)
 
 Checking equivalence of `cmd` (decl src ln 866) from
-  assn asm ln 25859, prod ln 936.37, live ln 937, enc 8
+  assn asm ln 25871, prod ln 943.3, live ln 944, enc 8
+  %38 = load i8*, i8** %cmd, l943 c3
+  (w64 0xB003E4C9E55B68A4)
+and
+  assn asm ln 25823, prod ln 915.8, live ln 923, enc 7
+  %27 = load i8*, i8** %arrayidx39, l915 c8
+  (w64 0xB003E4C9E55B68A4)
+🔔 Removing: asm ln 25871, prod ln 943.3, live ln 944, enc 8
+
+Checking equivalence of `cmd` (decl src ln 866) from
+  assn asm ln 25859, prod ln 936.37, live ln 937, enc 9
   %35 = load i8*, i8** %cmd, l936 c37
   (w64 0xB003E4C9E55B68A4)
 and
   assn asm ln 25823, prod ln 915.8, live ln 923, enc 7
   %27 = load i8*, i8** %arrayidx39, l915 c8
   (w64 0xB003E4C9E55B68A4)
-🔔 Removing: asm ln 25859, prod ln 936.37, live ln 937, enc 8
+🔔 Removing: asm ln 25859, prod ln 936.37, live ln 937, enc 9
 
 Checking equivalence of `cmd` (decl src ln 866) from
-  assn asm ln 25864, prod ln 936.20, live ln 937, enc 9
+  assn asm ln 25864, prod ln 936.20, live ln 937, enc 10
   %call53 = call i8* @help_unknown_cmd(i8* %35), l936 c20
   (w64 0xBBAED580D38F1CDC)
 and
@@ -3278,21 +3310,11 @@ and
   (w64 0xB003E4C9E55B68A4)
 
 Checking equivalence of `cmd` (decl src ln 866) from
-  assn asm ln 25871, prod ln 943.3, live ln 944, enc 10
-  %38 = load i8*, i8** %cmd, l943 c3
-  (w64 0xBBAED580D38F1CDC)
-and
-  assn asm ln 25864, prod ln 936.20, live ln 937, enc 9
-  %call53 = call i8* @help_unknown_cmd(i8* %35), l936 c20
-  (w64 0xBBAED580D38F1CDC)
-🔔 Removing: asm ln 25871, prod ln 943.3, live ln 944, enc 10
-
-Checking equivalence of `cmd` (decl src ln 866) from
   assn asm ln 25844, prod ln 932.5, live ln 933, enc 11
   %31 = load i8*, i8** %cmd, l932 c5
-  (w64 0x3072604F191E67AB)
+  (w64 0x4F7C6ABE8B28A82)
 and
-  assn asm ln 25864, prod ln 936.20, live ln 937, enc 9
+  assn asm ln 25864, prod ln 936.20, live ln 937, enc 10
   %call53 = call i8* @help_unknown_cmd(i8* %35), l936 c20
   (w64 0xBBAED580D38F1CDC)
 
@@ -3362,25 +3384,7 @@ Parsed query
 Filtering redundant after assignments: `argc` (decl src ln 864)
 
 Checking equivalence of `argc` (decl src ln 864) from
-  assn asm ln 25681, prod ln 892.18, live ln 893, enc 1
-  %8 = load i32, i32* %argc.addr, l892 c18
-  (ReadLSB w32 (w32 0x0) argc)
-and
-  assn asm ln 25638, prod ln 864.0, live ln 869, enc 0
-  i32 %argc
-  (ReadLSB w32 (w32 0x0) argc)
-Query to parse
-array argc[4] : w32 -> w8 = symbolic
-array argc[4] : w32 -> w8 = symbolic
-(query [] (Eq N0:(ReadLSB w32 (w32 0x0) argc)
-     N0))
-Parsed query
-(Eq N0:(ReadLSB w32 (w32 0x0) argc)
-     N0)
-🔔 Removing: asm ln 25681, prod ln 892.18, live ln 893, enc 1
-
-Checking equivalence of `argc` (decl src ln 864) from
-  assn asm ln 25693, prod ln 898.6, live ln 899, enc 2
+  assn asm ln 25693, prod ln 898.6, live ln 899, enc 1
   %12 = load i32, i32* %argc.addr, l898 c6
   (ReadLSB w32 (w32 0x0) argc)
 and
@@ -3395,7 +3399,25 @@ array argc[4] : w32 -> w8 = symbolic
 Parsed query
 (Eq N0:(ReadLSB w32 (w32 0x0) argc)
      N0)
-🔔 Removing: asm ln 25693, prod ln 898.6, live ln 899, enc 2
+🔔 Removing: asm ln 25693, prod ln 898.6, live ln 899, enc 1
+
+Checking equivalence of `argc` (decl src ln 864) from
+  assn asm ln 25681, prod ln 892.18, live ln 893, enc 2
+  %8 = load i32, i32* %argc.addr, l892 c18
+  (ReadLSB w32 (w32 0x0) argc)
+and
+  assn asm ln 25638, prod ln 864.0, live ln 869, enc 0
+  i32 %argc
+  (ReadLSB w32 (w32 0x0) argc)
+Query to parse
+array argc[4] : w32 -> w8 = symbolic
+array argc[4] : w32 -> w8 = symbolic
+(query [] (Eq N0:(ReadLSB w32 (w32 0x0) argc)
+     N0))
+Parsed query
+(Eq N0:(ReadLSB w32 (w32 0x0) argc)
+     N0)
+🔔 Removing: asm ln 25681, prod ln 892.18, live ln 893, enc 2
 
 Checking equivalence of `argc` (decl src ln 864) from
   assn asm ln 25695, prod ln 898.6, live ln 899, enc 3
@@ -3439,13 +3461,6 @@ Parsed query
 
 Filtering redundant after assignments: `argv` (decl src ln 864)
 
-Expected 1 symbolic value(s), got 0
-Expected 1 symbolic value(s), got 0
-❌ After `argv` (decl src ln 864) assn asm ln 25782, prod ln 932.10, live ln 933, enc None has no symbolic value from %29 = load i8**, i8*** %argv.addr, l932 c10
-
-Expected 1 symbolic value(s), got 0
-❌ After `argv` (decl src ln 864) assn asm ln 25782, prod ln 932.10, live ln 933, enc None has no symbolic value from %29 = load i8**, i8*** %argv.addr, l932 c10
-
 Checking equivalence of `argv` (decl src ln 864) from
   assn asm ln 25644, prod ln 869.8, live ln 870, enc 1
   %0 = load i8**, i8*** %argv.addr, l869 c8
@@ -3467,24 +3482,24 @@ and
 🔔 Removing: asm ln 25669, prod ln 878.28, live ln 879, enc 2
 
 Checking equivalence of `argv` (decl src ln 864) from
-  assn asm ln 25678, prod ln 891.3, live ln 892, enc 3
-  %7 = load i8**, i8*** %argv.addr, l891 c3
-  (w64 0x339B17540BD60D2)
-and
-  assn asm ln 25640, prod ln 864.0, live ln 869, enc 0
-  i8** %argv
-  (w64 0x339B17540BD60D2)
-🔔 Removing: asm ln 25678, prod ln 891.3, live ln 892, enc 3
-
-Checking equivalence of `argv` (decl src ln 864) from
-  assn asm ln 25690, prod ln 897.6, live ln 898, enc 4
+  assn asm ln 25690, prod ln 897.6, live ln 898, enc 3
   %11 = load i8**, i8*** %argv.addr, l897 c6
   (w64 0x339B17540BD60D2)
 and
   assn asm ln 25640, prod ln 864.0, live ln 869, enc 0
   i8** %argv
   (w64 0x339B17540BD60D2)
-🔔 Removing: asm ln 25690, prod ln 897.6, live ln 898, enc 4
+🔔 Removing: asm ln 25690, prod ln 897.6, live ln 898, enc 3
+
+Checking equivalence of `argv` (decl src ln 864) from
+  assn asm ln 25678, prod ln 891.3, live ln 892, enc 4
+  %7 = load i8**, i8*** %argv.addr, l891 c3
+  (w64 0x339B17540BD60D2)
+and
+  assn asm ln 25640, prod ln 864.0, live ln 869, enc 0
+  i8** %argv
+  (w64 0x339B17540BD60D2)
+🔔 Removing: asm ln 25678, prod ln 891.3, live ln 892, enc 4
 
 Checking equivalence of `argv` (decl src ln 864) from
   assn asm ln 25692, prod ln 897.6, live ln 898, enc 5
@@ -3514,54 +3529,54 @@ and
   (w64 0x339B17540BD60D2)
 
 Checking equivalence of `argv` (decl src ln 864) from
-  assn asm ln 25721, prod ln 910.53, live ln 911, enc 8
-  %16 = load i8**, i8*** %argv.addr, l910 c53
-  (w64 0x2CBE786E7EDBF201)
-and
-  assn asm ln 25713, prod ln 910.27, live ln 911, enc 7
-  %14 = load i8**, i8*** %argv.addr, l910 c27
-  (w64 0x2CBE786E7EDBF201)
-🔔 Removing: asm ln 25721, prod ln 910.53, live ln 911, enc 8
-
-Checking equivalence of `argv` (decl src ln 864) from
-  assn asm ln 25729, prod ln 911.3, live ln 912, enc 9
+  assn asm ln 25729, prod ln 911.3, live ln 912, enc 8
   %18 = load i8**, i8*** %argv.addr, l911 c3
   (w64 0x2CBE786E7EDBF201)
 and
   assn asm ln 25713, prod ln 910.27, live ln 911, enc 7
   %14 = load i8**, i8*** %argv.addr, l910 c27
   (w64 0x2CBE786E7EDBF201)
-🔔 Removing: asm ln 25729, prod ln 911.3, live ln 912, enc 9
+🔔 Removing: asm ln 25729, prod ln 911.3, live ln 912, enc 8
 
 Checking equivalence of `argv` (decl src ln 864) from
-  assn asm ln 25735, prod ln 912.29, live ln 913, enc 10
-  %19 = load i8**, i8*** %argv.addr, l912 c29
+  assn asm ln 25721, prod ln 910.53, live ln 911, enc 9
+  %16 = load i8**, i8*** %argv.addr, l910 c53
   (w64 0x2CBE786E7EDBF201)
 and
   assn asm ln 25713, prod ln 910.27, live ln 911, enc 7
   %14 = load i8**, i8*** %argv.addr, l910 c27
   (w64 0x2CBE786E7EDBF201)
-🔔 Removing: asm ln 25735, prod ln 912.29, live ln 913, enc 10
+🔔 Removing: asm ln 25721, prod ln 910.53, live ln 911, enc 9
 
 Checking equivalence of `argv` (decl src ln 864) from
-  assn asm ln 25751, prod ln 913.3, live ln 914, enc 11
-  %23 = load i8**, i8*** %argv.addr, l913 c3
-  (w64 0x2CBE786E7EDBF201)
-and
-  assn asm ln 25713, prod ln 910.27, live ln 911, enc 7
-  %14 = load i8**, i8*** %argv.addr, l910 c27
-  (w64 0x2CBE786E7EDBF201)
-🔔 Removing: asm ln 25751, prod ln 913.3, live ln 914, enc 11
-
-Checking equivalence of `argv` (decl src ln 864) from
-  assn asm ln 25757, prod ln 915.8, live ln 916, enc 12
+  assn asm ln 25757, prod ln 915.8, live ln 916, enc 10
   %24 = load i8**, i8*** %argv.addr, l915 c8
   (w64 0x2CBE786E7EDBF201)
 and
   assn asm ln 25713, prod ln 910.27, live ln 911, enc 7
   %14 = load i8**, i8*** %argv.addr, l910 c27
   (w64 0x2CBE786E7EDBF201)
-🔔 Removing: asm ln 25757, prod ln 915.8, live ln 916, enc 12
+🔔 Removing: asm ln 25757, prod ln 915.8, live ln 916, enc 10
+
+Checking equivalence of `argv` (decl src ln 864) from
+  assn asm ln 25735, prod ln 912.29, live ln 913, enc 11
+  %19 = load i8**, i8*** %argv.addr, l912 c29
+  (w64 0x2CBE786E7EDBF201)
+and
+  assn asm ln 25713, prod ln 910.27, live ln 911, enc 7
+  %14 = load i8**, i8*** %argv.addr, l910 c27
+  (w64 0x2CBE786E7EDBF201)
+🔔 Removing: asm ln 25735, prod ln 912.29, live ln 913, enc 11
+
+Checking equivalence of `argv` (decl src ln 864) from
+  assn asm ln 25743, prod ln 912.55, live ln 913, enc 12
+  %21 = load i8**, i8*** %argv.addr, l912 c55
+  (w64 0x2CBE786E7EDBF201)
+and
+  assn asm ln 25713, prod ln 910.27, live ln 911, enc 7
+  %14 = load i8**, i8*** %argv.addr, l910 c27
+  (w64 0x2CBE786E7EDBF201)
+🔔 Removing: asm ln 25743, prod ln 912.55, live ln 913, enc 12
 
 Checking equivalence of `argv` (decl src ln 864) from
   assn asm ln 25797, prod ln 936.10, live ln 937, enc 13
@@ -3572,11 +3587,25 @@ and
   %14 = load i8**, i8*** %argv.addr, l910 c27
   (w64 0x2CBE786E7EDBF201)
 
-Filtering redundant after assignments: `cmd` (decl src ln 866)
+Checking equivalence of `argv` (decl src ln 864) from
+  assn asm ln 25751, prod ln 913.3, live ln 914, enc 14
+  %23 = load i8**, i8*** %argv.addr, l913 c3
+  (w64 0x2CBE786E7EDBF201)
+and
+  assn asm ln 25797, prod ln 936.10, live ln 937, enc 13
+  %32 = load i8**, i8*** %argv.addr, l936 c10
+  (w64 0xAACFA374FFB4242E)
 
-Expected 1 symbolic value(s), got 0
-Expected 1 symbolic value(s), got 0
-❌ After `cmd` (decl src ln 866) assn asm ln 25653, prod ln 871.7, live ln 872, enc None has no symbolic value from i8* getelementptr inbounds ([9 x i8], [9 x i8]* @.str.3, i64 0, i64 0)
+Checking equivalence of `argv` (decl src ln 864) from
+  assn asm ln 25782, prod ln 932.10, live ln 933, enc 15
+  %29 = load i8**, i8*** %argv.addr, l932 c10
+  (w64 0xAACFA374FFB4242E)
+and
+  assn asm ln 25751, prod ln 913.3, live ln 914, enc 14
+  %23 = load i8**, i8*** %argv.addr, l913 c3
+  (w64 0x2CBE786E7EDBF201)
+
+Filtering redundant after assignments: `cmd` (decl src ln 866)
 
 Expected 1 symbolic value(s), got 0
 ❌ After `cmd` (decl src ln 866) assn asm ln 25653, prod ln 871.7, live ln 872, enc None has no symbolic value from i8* getelementptr inbounds ([9 x i8], [9 x i8]* @.str.3, i64 0, i64 0)
@@ -3659,22 +3688,30 @@ and
 🔔 Removing: asm ln 25795, prod ln 936.37, live ln 937, enc 8
 
 Checking equivalence of `cmd` (decl src ln 866) from
-  assn asm ln 25807, prod ln 943.3, live ln 944, enc 9
-  %34 = load i8*, i8** %cmd, l943 c3
-  (w64 0xB003E4C9E55B68A4)
-and
-  assn asm ln 25760, prod ln 915.8, live ln 923, enc 7
-  %25 = load i8*, i8** %arrayidx39, l915 c8
-  (w64 0xB003E4C9E55B68A4)
-🔔 Removing: asm ln 25807, prod ln 943.3, live ln 944, enc 9
-
-Checking equivalence of `cmd` (decl src ln 866) from
-  assn asm ln 25800, prod ln 936.20, live ln 937, enc 10
+  assn asm ln 25800, prod ln 936.20, live ln 937, enc 9
   %call53 = call i8* @help_unknown_cmd(i8* %31), l936 c20
   (w64 0xBBAED580D38F1CDC)
 and
   assn asm ln 25760, prod ln 915.8, live ln 923, enc 7
   %25 = load i8*, i8** %arrayidx39, l915 c8
+  (w64 0xB003E4C9E55B68A4)
+
+Checking equivalence of `cmd` (decl src ln 866) from
+  assn asm ln 25781, prod ln 932.5, live ln 933, enc 10
+  %28 = load i8*, i8** %cmd, l932 c5
+  (w64 0xB003E4C9E55B68A4)
+and
+  assn asm ln 25800, prod ln 936.20, live ln 937, enc 9
+  %call53 = call i8* @help_unknown_cmd(i8* %31), l936 c20
+  (w64 0xBBAED580D38F1CDC)
+
+Checking equivalence of `cmd` (decl src ln 866) from
+  assn asm ln 25807, prod ln 943.3, live ln 944, enc 11
+  %34 = load i8*, i8** %cmd, l943 c3
+  (w64 0xBBAED580D38F1CDC)
+and
+  assn asm ln 25781, prod ln 932.5, live ln 933, enc 10
+  %28 = load i8*, i8** %cmd, l932 c5
   (w64 0xB003E4C9E55B68A4)
 
 Filtering redundant after assignments: `done_help` (decl src ln 867)
@@ -3703,11 +3740,12 @@ Collating encountered before assignments: `argc` (decl src ln 864)
   asm ln 25758, prod ln 898.6, live ln 899, enc 1
   asm ln 25760, prod ln 901.7, live ln 902, enc 2
 Collating encountered before assignments: `argv` (decl src ln 864)
-❌ Assignment asm ln 25806, prod ln 912.55, live ln 913, enc None for `argv` (decl src ln 864) was not encountered during execution
+❌ Assignment asm ln 25814, prod ln 913.3, live ln 914, enc None for `argv` (decl src ln 864) was not encountered during execution
   asm ln 25699, prod ln 864.0, live ln 867, enc 0
   asm ln 25755, prod ln 897.6, live ln 898, enc 1
-  asm ln 25776, prod ln 910.27, live ln 911, enc 2
-  asm ln 25861, prod ln 936.10, live ln 937, enc 3
+  asm ln 25741, prod ln 891.3, live ln 892, enc 2
+  asm ln 25776, prod ln 910.27, live ln 911, enc 3
+  asm ln 25861, prod ln 936.10, live ln 937, enc 4
 Collating encountered before assignments: `cmd` (decl src ln 866)
 ❌ Assignment asm ln 25713, prod ln 871.7, live ln 872, enc None for `cmd` (decl src ln 866) was not encountered during execution
   asm ln 25707, prod ln 869.8, live ln 870, enc 0
@@ -3729,21 +3767,22 @@ Collating encountered after assignments: `argc` (decl src ln 864)
   asm ln 25695, prod ln 898.6, live ln 899, enc 1
   asm ln 25697, prod ln 901.7, live ln 902, enc 2
 Collating encountered after assignments: `argv` (decl src ln 864)
-❌ Assignment asm ln 25743, prod ln 912.55, live ln 913, enc None for `argv` (decl src ln 864) was not encountered during execution
-❌ Assignment asm ln 25782, prod ln 932.10, live ln 933, enc None for `argv` (decl src ln 864) was not encountered during execution
   asm ln 25640, prod ln 864.0, live ln 869, enc 0
   asm ln 25692, prod ln 897.6, live ln 898, enc 1
   asm ln 25682, prod ln 892.24, live ln 893, enc 2
   asm ln 25713, prod ln 910.27, live ln 911, enc 3
   asm ln 25797, prod ln 936.10, live ln 937, enc 4
+  asm ln 25751, prod ln 913.3, live ln 914, enc 5
+  asm ln 25782, prod ln 932.10, live ln 933, enc 6
 Collating encountered after assignments: `cmd` (decl src ln 866)
-❌ Assignment asm ln 25781, prod ln 932.5, live ln 933, enc None for `cmd` (decl src ln 866) was not encountered during execution
 ❌ Assignment asm ln 25653, prod ln 871.7, live ln 872, enc None for `cmd` (decl src ln 866) was not encountered during execution
   asm ln 25647, prod ln 869.8, live ln 870, enc 0
   asm ln 25665, prod ln 875.16, live ln 876, enc 1
   asm ln 25677, prod ln 891.13, live ln 892, enc 2
   asm ln 25760, prod ln 915.8, live ln 923, enc 3
   asm ln 25800, prod ln 936.20, live ln 937, enc 4
+  asm ln 25781, prod ln 932.5, live ln 933, enc 5
+  asm ln 25807, prod ln 943.3, live ln 944, enc 6
 Collating encountered after assignments: `done_help` (decl src ln 867)
   asm ln 25643, prod ln 867.0, live ln 869, enc 0
   asm ln 25801, prod ln 867.0, live ln 925, enc 1
@@ -3829,7 +3868,7 @@ Warnings:
   Unreachable:       0
   Removable:         0
 
-❌ Before assn asm ln 25806, prod ln 912.55, live ln 913, enc None for `argv` (decl src ln 864) was not encountered during execution
+❌ Before assn asm ln 25814, prod ln 913.3, live ln 914, enc None for `argv` (decl src ln 864) was not encountered during execution
 
 ❌ After `argv` (decl src ln 864) assn asm ln 25640, prod ln 864.0, live ln 869, enc 0 coordinates don't match before assn asm ln 25699, prod ln 864.0, live ln 867, enc 0
 Checking equivalence of `argv` (decl src ln 864) from
@@ -3852,36 +3891,45 @@ and
   (w64 0xC9FFF2DD106BE5EA)
 ✅ After `argv` (decl src ln 864) assn asm ln 25692, prod ln 897.6, live ln 898, enc 1 symbolic value matches before assn asm ln 25755, prod ln 897.6, live ln 898, enc 1
 
-❌ After `argv` (decl src ln 864) assn asm ln 25682, prod ln 892.24, live ln 893, enc 2 coordinates don't match before assn asm ln 25776, prod ln 910.27, live ln 911, enc 2
+❌ After `argv` (decl src ln 864) assn asm ln 25682, prod ln 892.24, live ln 893, enc 2 coordinates don't match before assn asm ln 25741, prod ln 891.3, live ln 892, enc 2
 Checking equivalence of `argv` (decl src ln 864) from
-  assn asm ln 25776, prod ln 910.27, live ln 911, enc 2
-  %16 = load i8**, i8*** %argv.addr, l910 c27
-  (w64 0x2CBE786E7EDBF201)
+  assn asm ln 25741, prod ln 891.3, live ln 892, enc 2
+  %9 = load i8**, i8*** %argv.addr, l891 c3
+  (w64 0x339B17540BD60D2)
 and
   assn asm ln 25682, prod ln 892.24, live ln 893, enc 2
   %9 = load i8**, i8*** %argv.addr, l892 c24
   (w64 0x339B17540BD60D2)
-❌ After `argv` (decl src ln 864) assn asm ln 25682, prod ln 892.24, live ln 893, enc 2 symbolic value doesn't match before assn asm ln 25776, prod ln 910.27, live ln 911, enc 2
+✅ After `argv` (decl src ln 864) assn asm ln 25682, prod ln 892.24, live ln 893, enc 2 symbolic value matches before assn asm ln 25741, prod ln 891.3, live ln 892, enc 2
 
-❌ After `argv` (decl src ln 864) assn asm ln 25713, prod ln 910.27, live ln 911, enc 3 coordinates don't match before assn asm ln 25861, prod ln 936.10, live ln 937, enc 3
 Checking equivalence of `argv` (decl src ln 864) from
-  assn asm ln 25861, prod ln 936.10, live ln 937, enc 3
-  %36 = load i8**, i8*** %argv.addr, l936 c10
-  (w64 0xAACFA374FFB4242E)
+  assn asm ln 25776, prod ln 910.27, live ln 911, enc 3
+  %16 = load i8**, i8*** %argv.addr, l910 c27
+  (w64 0x2CBE786E7EDBF201)
 and
   assn asm ln 25713, prod ln 910.27, live ln 911, enc 3
   %14 = load i8**, i8*** %argv.addr, l910 c27
   (w64 0x2CBE786E7EDBF201)
-❌ After `argv` (decl src ln 864) assn asm ln 25713, prod ln 910.27, live ln 911, enc 3 symbolic value doesn't match before assn asm ln 25861, prod ln 936.10, live ln 937, enc 3
+✅ After `argv` (decl src ln 864) assn asm ln 25713, prod ln 910.27, live ln 911, enc 3 symbolic value matches before assn asm ln 25776, prod ln 910.27, live ln 911, enc 3
+
+Checking equivalence of `argv` (decl src ln 864) from
+  assn asm ln 25861, prod ln 936.10, live ln 937, enc 4
+  %36 = load i8**, i8*** %argv.addr, l936 c10
+  (w64 0xAACFA374FFB4242E)
+and
+  assn asm ln 25797, prod ln 936.10, live ln 937, enc 4
+  %32 = load i8**, i8*** %argv.addr, l936 c10
+  (w64 0xAACFA374FFB4242E)
+✅ After `argv` (decl src ln 864) assn asm ln 25797, prod ln 936.10, live ln 937, enc 4 symbolic value matches before assn asm ln 25861, prod ln 936.10, live ln 937, enc 4
 
 ❌ Before `argv` assns checked using after as reference
 Variable:            argv
-  Assignments:       5
-  Matching Coords:   1
-  Matching Value:    2
+  Assignments:       6
+  Matching Coords:   3
+  Matching Value:    5
 Errors:
-  Mismatched Coords: 3
-  Mismatched Value:  2
+  Mismatched Coords: 2
+  Mismatched Value:  0
   Not Encountered:   1
   Missing:           0
 Warnings:
@@ -3941,18 +3989,26 @@ and
   (w64 0xBBAED580D38F1CDC)
 ✅ After `cmd` (decl src ln 866) assn asm ln 25800, prod ln 936.20, live ln 937, enc 4 symbolic value matches before assn asm ln 25864, prod ln 936.20, live ln 937, enc 4
 
-❌ After encountered assn for `cmd` (decl src ln 866) at asm ln 25844, prod ln 932.5, live ln 933, enc 5 not found
+Checking equivalence of `cmd` (decl src ln 866) from
+  assn asm ln 25844, prod ln 932.5, live ln 933, enc 5
+  %31 = load i8*, i8** %cmd, l932 c5
+  (w64 0x4F7C6ABE8B28A82)
+and
+  assn asm ln 25781, prod ln 932.5, live ln 933, enc 5
+  %28 = load i8*, i8** %cmd, l932 c5
+  (w64 0xB003E4C9E55B68A4)
+❌ After `cmd` (decl src ln 866) assn asm ln 25781, prod ln 932.5, live ln 933, enc 5 symbolic value doesn't match before assn asm ln 25844, prod ln 932.5, live ln 933, enc 5
 
 ❌ Before `cmd` assns checked using after as reference
 Variable:            cmd
   Assignments:       7
-  Matching Coords:   5
+  Matching Coords:   6
   Matching Value:    5
 Errors:
   Mismatched Coords: 0
-  Mismatched Value:  0
+  Mismatched Value:  1
   Not Encountered:   1
-  Missing:           1
+  Missing:           0
 Warnings:
   Unused:            0
   Unreachable:       0
@@ -4129,10 +4185,6 @@ Warnings:
   Unreachable:       0
   Removable:         0
 
-❌ After assn asm ln 25743, prod ln 912.55, live ln 913, enc None for `argv` (decl src ln 864) was not encountered during execution
-
-❌ After assn asm ln 25782, prod ln 932.10, live ln 933, enc None for `argv` (decl src ln 864) was not encountered during execution
-
 ❌ Before `argv` (decl src ln 864) assn asm ln 25699, prod ln 864.0, live ln 867, enc 0 coordinates don't match after assn asm ln 25640, prod ln 864.0, live ln 869, enc 0
 Checking equivalence of `argv` (decl src ln 864) from
   assn asm ln 25640, prod ln 864.0, live ln 869, enc 0
@@ -4154,46 +4206,55 @@ and
   (w64 0xC9FFF2DD106BE5EA)
 ✅ Before `argv` (decl src ln 864) assn asm ln 25755, prod ln 897.6, live ln 898, enc 1 symbolic value matches after assn asm ln 25692, prod ln 897.6, live ln 898, enc 1
 
-❌ Before `argv` (decl src ln 864) assn asm ln 25776, prod ln 910.27, live ln 911, enc 2 coordinates don't match after assn asm ln 25682, prod ln 892.24, live ln 893, enc 2
+❌ Before `argv` (decl src ln 864) assn asm ln 25741, prod ln 891.3, live ln 892, enc 2 coordinates don't match after assn asm ln 25682, prod ln 892.24, live ln 893, enc 2
 Checking equivalence of `argv` (decl src ln 864) from
   assn asm ln 25682, prod ln 892.24, live ln 893, enc 2
   %9 = load i8**, i8*** %argv.addr, l892 c24
   (w64 0x339B17540BD60D2)
 and
-  assn asm ln 25776, prod ln 910.27, live ln 911, enc 2
-  %16 = load i8**, i8*** %argv.addr, l910 c27
-  (w64 0x2CBE786E7EDBF201)
-❌ Before `argv` (decl src ln 864) assn asm ln 25776, prod ln 910.27, live ln 911, enc 2 symbolic value doesn't match after assn asm ln 25682, prod ln 892.24, live ln 893, enc 2
+  assn asm ln 25741, prod ln 891.3, live ln 892, enc 2
+  %9 = load i8**, i8*** %argv.addr, l891 c3
+  (w64 0x339B17540BD60D2)
+✅ Before `argv` (decl src ln 864) assn asm ln 25741, prod ln 891.3, live ln 892, enc 2 symbolic value matches after assn asm ln 25682, prod ln 892.24, live ln 893, enc 2
 
-❌ Before `argv` (decl src ln 864) assn asm ln 25861, prod ln 936.10, live ln 937, enc 3 coordinates don't match after assn asm ln 25713, prod ln 910.27, live ln 911, enc 3
 Checking equivalence of `argv` (decl src ln 864) from
   assn asm ln 25713, prod ln 910.27, live ln 911, enc 3
   %14 = load i8**, i8*** %argv.addr, l910 c27
   (w64 0x2CBE786E7EDBF201)
 and
-  assn asm ln 25861, prod ln 936.10, live ln 937, enc 3
+  assn asm ln 25776, prod ln 910.27, live ln 911, enc 3
+  %16 = load i8**, i8*** %argv.addr, l910 c27
+  (w64 0x2CBE786E7EDBF201)
+✅ Before `argv` (decl src ln 864) assn asm ln 25776, prod ln 910.27, live ln 911, enc 3 symbolic value matches after assn asm ln 25713, prod ln 910.27, live ln 911, enc 3
+
+Checking equivalence of `argv` (decl src ln 864) from
+  assn asm ln 25797, prod ln 936.10, live ln 937, enc 4
+  %32 = load i8**, i8*** %argv.addr, l936 c10
+  (w64 0xAACFA374FFB4242E)
+and
+  assn asm ln 25861, prod ln 936.10, live ln 937, enc 4
   %36 = load i8**, i8*** %argv.addr, l936 c10
   (w64 0xAACFA374FFB4242E)
-❌ Before `argv` (decl src ln 864) assn asm ln 25861, prod ln 936.10, live ln 937, enc 3 symbolic value doesn't match after assn asm ln 25713, prod ln 910.27, live ln 911, enc 3
+✅ Before `argv` (decl src ln 864) assn asm ln 25861, prod ln 936.10, live ln 937, enc 4 symbolic value matches after assn asm ln 25797, prod ln 936.10, live ln 937, enc 4
 
-❌ Before encountered assn for `argv` (decl src ln 864) at asm ln 25797, prod ln 936.10, live ln 937, enc 4 not found
+❌ Before encountered assn for `argv` (decl src ln 864) at asm ln 25751, prod ln 913.3, live ln 914, enc 5 not found
+
+❌ Before encountered assn for `argv` (decl src ln 864) at asm ln 25782, prod ln 932.10, live ln 933, enc 6 not found
 
 ❌ After `argv` assns checked using before as reference
 Variable:            argv
   Assignments:       7
-  Matching Coords:   1
-  Matching Value:    2
+  Matching Coords:   3
+  Matching Value:    5
 Errors:
-  Mismatched Coords: 3
-  Mismatched Value:  2
-  Not Encountered:   2
-  Missing:           1
+  Mismatched Coords: 2
+  Mismatched Value:  0
+  Not Encountered:   0
+  Missing:           2
 Warnings:
   Unused:            0
   Unreachable:       0
   Removable:         0
-
-❌ After assn asm ln 25781, prod ln 932.5, live ln 933, enc None for `cmd` (decl src ln 866) was not encountered during execution
 
 ❌ After assn asm ln 25653, prod ln 871.7, live ln 872, enc None for `cmd` (decl src ln 866) was not encountered during execution
 
@@ -4247,16 +4308,28 @@ and
   (w64 0xBBAED580D38F1CDC)
 ✅ Before `cmd` (decl src ln 866) assn asm ln 25864, prod ln 936.20, live ln 937, enc 4 symbolic value matches after assn asm ln 25800, prod ln 936.20, live ln 937, enc 4
 
+Checking equivalence of `cmd` (decl src ln 866) from
+  assn asm ln 25781, prod ln 932.5, live ln 933, enc 5
+  %28 = load i8*, i8** %cmd, l932 c5
+  (w64 0xB003E4C9E55B68A4)
+and
+  assn asm ln 25844, prod ln 932.5, live ln 933, enc 5
+  %31 = load i8*, i8** %cmd, l932 c5
+  (w64 0x4F7C6ABE8B28A82)
+❌ Before `cmd` (decl src ln 866) assn asm ln 25844, prod ln 932.5, live ln 933, enc 5 symbolic value doesn't match after assn asm ln 25781, prod ln 932.5, live ln 933, enc 5
+
+❌ Before encountered assn for `cmd` (decl src ln 866) at asm ln 25807, prod ln 943.3, live ln 944, enc 6 not found
+
 ❌ After `cmd` assns checked using before as reference
 Variable:            cmd
-  Assignments:       7
-  Matching Coords:   5
+  Assignments:       8
+  Matching Coords:   6
   Matching Value:    5
 Errors:
   Mismatched Coords: 0
-  Mismatched Value:  0
-  Not Encountered:   2
-  Missing:           0
+  Mismatched Value:  1
+  Not Encountered:   1
+  Missing:           1
 Warnings:
   Unused:            0
   Unreachable:       0
@@ -4717,25 +4790,1034 @@ Collected value for `builtin`
   Replaced concrete pointer with hash (w64 0xAB74567C9EA20284)
   %21 = load %struct.cmd_struct*, %struct.cmd_struct** %builtin, l720 c6
   (w64 0xAB74567C9EA20284)
-Assertion failed: (address && "Pointer argument has symbolic address"), function executeCall, file Executor.cpp, line 1856.
-PLEASE submit a bug report to https://bugs.llvm.org/ and include the crash backtrace.
-Stack dump:
-0.	Program arguments: /Users/jryans/Projects/klee/build-release-debug/bin/check-debug-info clang/13/O0/git.bc clang/13/O0-mem2reg/git.bc --debug-only=check-debug-info,values-collector,variable --debug-execution-trace --max-functions=10 --max-forks=4 --max-time=10s --search=random-path --tsv
-Stack dump without symbol names (ensure you have llvm-symbolizer in your PATH or set the environment var `LLVM_SYMBOLIZER_PATH` to point to it):
-0  check-debug-info         0x0000000111134957 llvm::sys::PrintStackTrace(llvm::raw_ostream&, int) + 39
-1  check-debug-info         0x0000000111133798 llvm::sys::RunSignalHandlers() + 248
-2  check-debug-info         0x0000000111134fa0 SignalHandler(int) + 288
-3  libsystem_platform.dylib 0x00007ff800bb3fdd _sigtramp + 29
-4  check-debug-info         0x00000001110c0971 void write_unsigned_impl<unsigned int>(llvm::raw_ostream&, unsigned int, unsigned long, llvm::IntegerStyle, bool) + 337
-5  libsystem_c.dylib        0x00007ff800aaaa39 abort + 126
-6  libsystem_c.dylib        0x00007ff800aa9d1c err + 0
-7  check-debug-info         0x00000001111543e3 klee::Executor::executeCall(klee::ExecutionState&, klee::KInstruction*, llvm::Function*, std::__1::vector<klee::ref<klee::Expr>, std::__1::allocator<klee::ref<klee::Expr> > >&) (.cold.28) + 35
-8  check-debug-info         0x000000010f8e4a6d klee::Executor::executeCall(klee::ExecutionState&, klee::KInstruction*, llvm::Function*, std::__1::vector<klee::ref<klee::Expr>, std::__1::allocator<klee::ref<klee::Expr> > >&) + 11901
-9  check-debug-info         0x000000010f8eb5da klee::Executor::executeInstruction(klee::ExecutionState&, klee::KInstruction*) + 14778
-10 check-debug-info         0x000000010f8f1d6e klee::Executor::run(klee::ExecutionState&) + 2142
-11 check-debug-info         0x000000010f8f66e8 klee::Executor::runFunction(llvm::Function*) + 376
-12 check-debug-info         0x000000010f8c7700 ValuesCollector::collect(llvm::StringRef, llvm::StringRef, llvm::SmallVector<std::__1::pair<Variable, Assignment*>, 1u>*) + 224
-13 check-debug-info         0x000000010f8babf0 checkFunction(llvm::SmallVector<ValuesCollector, 2u>&, llvm::StringRef, std::__1::vector<clang::tooling::Diagnostic, std::__1::allocator<clang::tooling::Diagnostic> > const&) + 3424
-14 check-debug-info         0x000000010f8bc59b main + 2811
-15 dyld                     0x00007ff8007f9366 start + 1942
-./check.sh: line 23: 81662 Abort trap: 6           ${CHECK} clang/${version}/O0/${TARGET_NAME}.bc clang/${version}/${level}/${TARGET_NAME}.bc ${CHECK_OPTS} "$@"
+Collected value for `argv`
+  Assignment asm ln 25926, prod ln 706.13, live ln 707, enc 3
+  Concrete pointer resolves to argv.deref, offset (w64 0x0)
+  Created deref expr <concrete pointer>
+  Replaced concrete pointer with hash (w64 0x339B17540BD60D2)
+  %7 = load i8**, i8*** %argv.addr, l706 c13
+  (w64 0x339B17540BD60D2)
+Collected value for `builtin`
+  Assignment asm ln 25984, prod ln 721.3, live ln 722, enc 2
+  Concrete pointer resolves to get_builtin.return.deref, offset (w64 0x0)
+  Created deref expr <concrete pointer>
+  Replaced concrete pointer with hash (w64 0xAB74567C9EA20284)
+  %22 = load %struct.cmd_struct*, %struct.cmd_struct** %builtin, l721 c3
+  (w64 0xAB74567C9EA20284)
+Collected value for `argc`
+  Assignment asm ln 25985, prod ln 721.3, live ln 722, enc 2
+  %23 = load i32, i32* %argc.addr, l721 c3
+  (ReadLSB w32 (w32 0x0) argc)
+Collected value for `argv`
+  Assignment asm ln 25929, prod ln 706.3, live ln 707, enc 4
+  Concrete pointer resolves to argv.deref, offset (w64 0x0)
+  Created deref expr <concrete pointer>
+  Replaced concrete pointer with hash (w64 0x339B17540BD60D2)
+  %9 = load i8**, i8*** %argv.addr, l706 c3
+  (w64 0x339B17540BD60D2)
+Collected value for `argv`
+  Assignment asm ln 25986, prod ln 721.3, live ln 722, enc 5
+  Concrete pointer resolves to argv.deref, offset (w64 0x0)
+  Created deref expr <concrete pointer>
+  Replaced concrete pointer with hash (w64 0x339B17540BD60D2)
+  %24 = load i8**, i8*** %argv.addr, l721 c3
+  (w64 0x339B17540BD60D2)
+[0;1;31mKLEE: ERROR: git.c:721: reached "unreachable" instruction
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0mCollected value for `cmd`
+  Assignment asm ln 25932, prod ln 707.17, live ln 708, enc 2
+  Concrete pointer resolves to .str.12, offset (w64 0x0)
+  Created deref expr <concrete pointer>
+  Replaced concrete pointer with hash (w64 0x3072604F191E67AB)
+  i8* getelementptr inbounds ([5 x i8], [5 x i8]* @.str.12, i64 0, i64 0)
+  (w64 0x3072604F191E67AB)
+Collected value for `argv`
+  Assignment asm ln 25933, prod ln 707.3, live ln 708, enc 6
+  Concrete pointer resolves to argv.deref, offset (w64 0x0)
+  Created deref expr <concrete pointer>
+  Replaced concrete pointer with hash (w64 0x339B17540BD60D2)
+  %10 = load i8**, i8*** %argv.addr, l707 c3
+  (w64 0x339B17540BD60D2)
+Collected value for `i`
+  Assignment asm ln 25936, prod ln 709.10, live ln 710, enc 0
+  i32 0
+  (w32 0x0)
+Collected value for `i`
+  Assignment asm ln 25940, prod ln 709.15, live ln 710, enc 1
+  %11 = load i32, i32* %i, l709 c15
+  (w32 0x0)
+Collected value for `argc`
+  Assignment asm ln 25941, prod ln 709.19, live ln 710, enc 3
+  %12 = load i32, i32* %argc.addr, l709 c19
+  (ReadLSB w32 (w32 0x0) argc)
+Collected value for `argv`
+  Assignment asm ln 25946, prod ln 710.23, live ln 711, enc 7
+  Concrete pointer resolves to argv.deref, offset (w64 0x0)
+  Created deref expr <concrete pointer>
+  Replaced concrete pointer with hash (w64 0x339B17540BD60D2)
+  %13 = load i8**, i8*** %argv.addr, l710 c23
+  (w64 0x339B17540BD60D2)
+Collected value for `i`
+  Assignment asm ln 25947, prod ln 710.28, live ln 711, enc 2
+  %14 = load i32, i32* %i, l710 c28
+  (w32 0x0)
+Collected value for `i`
+  Assignment asm ln 25952, prod ln 711.9, live ln 712, enc 3
+  %16 = load i32, i32* %i, l711 c9
+  (w32 0x0)
+Collected value for `i`
+  Assignment asm ln 25961, prod ln 709.26, live ln 710, enc 4
+  %17 = load i32, i32* %i, l709 c26
+  (w32 0x0)
+Collected value for `i`
+  Assignment asm ln 25963, prod ln 709.26, live ln 710, enc 5
+  %inc = add nsw i32 %17, 1, l709 c26
+  (w32 0x1)
+[0;1;31mKLEE: ERROR: git.c:710: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0m
+🔔 Unable to execute all before program states
+
+🔔 Unable to execute all before instructions
+
+#### After values
+
+[0;35mKLEE: WARNING: Unable to load symbol(kCFRunLoopDefaultMode) while initializing globals
+[0mCollected value for `argc`
+  Assignment asm ln 25827, prod ln 693.0, live ln 695, enc 0
+  i32 %argc
+  (ReadLSB w32 (w32 0x0) argc)
+Collected value for `argv`
+  Assignment asm ln 25828, prod ln 693.0, live ln 695, enc 0
+  Concrete pointer resolves to argv.deref, offset (w64 0x0)
+  Created deref expr <concrete pointer>
+  Replaced concrete pointer with hash (w64 0x339B17540BD60D2)
+  i8** %argv
+  (w64 0x339B17540BD60D2)
+Collected value for `cmd`
+  Assignment asm ln 25834, prod ln 700.8, live ln 703, enc 0
+  Concrete pointer resolves to argv.deref.deref, offset (w64 0x0)
+  Created deref expr (ReadLSB w64 (w32 0x0) argv.deref.deref)
+  Replaced concrete pointer with hash (w64 0x2902E02AEFAE7010)
+  %2 = load i8*, i8** %arrayidx, l700 c8
+  (w64 0x2902E02AEFAE7010)
+Collected value for `argc`
+  Assignment asm ln 25891, prod ln 715.7, live ln 719, enc 1
+  %argc.addr.0 = phi i32 [ %argc, %land.lhs.true ], [ %inc11, %for.end ], [ %argc, %entry ]
+  Block: 2
+  (ReadLSB w32 (w32 0x0) argc)
+Collected value for `argv`
+  Assignment asm ln 25892, prod ln 716.15, live ln 719, enc 1
+  Concrete pointer resolves to argv.deref, offset (w64 0x0)
+  Created deref expr <concrete pointer>
+  Replaced concrete pointer with hash (w64 0x339B17540BD60D2)
+  %argv.addr.0 = phi i8** [ %argv, %land.lhs.true ], [ %6, %for.end ], [ %argv, %entry ]
+  Block: 2
+  (w64 0x339B17540BD60D2)
+Collected value for `cmd`
+  Assignment asm ln 25893, prod ln 700.8, live ln 719, enc 1
+  Concrete pointer resolves to argv.deref.deref, offset (w64 0x0)
+  Created deref expr (ReadLSB w64 (w32 0x0) argv.deref.deref)
+  Replaced concrete pointer with hash (w64 0x2902E02AEFAE7010)
+  %cmd.0 = phi i8* [ %2, %land.lhs.true ], [ getelementptr inbounds ([5 x i8], [5 x i8]* @.str.12, i64 0, i64 0), %for.end ], [ %2, %entry ]
+  Block: 2
+  (w64 0x2902E02AEFAE7010)
+Collected value for `builtin`
+  Assignment asm ln 25895, prod ln 719.12, live ln 720, enc 0
+  Concrete pointer resolves to get_builtin.return.deref, offset (w64 0x0)
+  Created deref expr <concrete pointer>
+  Replaced concrete pointer with hash (w64 0xAB74567C9EA20284)
+  %call13 = call %struct.cmd_struct.0* @get_builtin(i8* %cmd.0), l719 c12
+  (w64 0xAB74567C9EA20284)
+Collected value for `cmd`
+  Assignment asm ln 25850, prod ln 696.0, live ln 707, enc 2
+  Concrete pointer resolves to .str.12, offset (w64 0x0)
+  Created deref expr <concrete pointer>
+  Replaced concrete pointer with hash (w64 0x3072604F191E67AB)
+  i8* getelementptr inbounds ([5 x i8], [5 x i8]* @.str.12, i64 0, i64 0)
+  (w64 0x3072604F191E67AB)
+Collected value for `i`
+  Assignment asm ln 25853, prod ln 704.0, live ln 709, enc 0
+  i32 0
+  (w32 0x0)
+[0;1;31mKLEE: ERROR: git.c:721: reached "unreachable" instruction
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0mCollected value for `i`
+  Assignment asm ln 25858, prod ln 709.26, live ln 710, enc 1
+  %i.0 = phi i32 [ 0, %if.then ], [ %inc, %for.inc ]
+  Block: 0
+  (w32 0x0)
+Collected value for `i`
+  Assignment asm ln 25876, prod ln 709.26, live ln 710, enc 2
+  %inc = add nsw i32 %i.0, 1, l709 c26
+  (w32 0x1)
+[0;1;31mKLEE: ERROR: git.c:710: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0m
+🔔 Unable to execute all after program states
+
+🔔 Unable to execute all after instructions
+
+### Assignments
+
+#### Collation
+
+Filtering redundant before assignments: `argc` (decl src ln 693)
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+❌ Before `argc` (decl src ln 693) assn asm ln 25967, prod ln 715.7, live ln 716, enc None has no symbolic value from %18 = load i32, i32* %argc.addr, l715 c7
+
+Expected 1 symbolic value(s), got 0
+❌ Before `argc` (decl src ln 693) assn asm ln 25967, prod ln 715.7, live ln 716, enc None has no symbolic value from %18 = load i32, i32* %argc.addr, l715 c7
+
+Checking equivalence of `argc` (decl src ln 693) from
+  assn asm ln 25912, prod ln 703.6, live ln 704, enc 1
+  %4 = load i32, i32* %argc.addr, l703 c6
+  (ReadLSB w32 (w32 0x0) argc)
+and
+  assn asm ln 25899, prod ln 693.0, live ln 695, enc 0
+  i32 %argc
+  (ReadLSB w32 (w32 0x0) argc)
+Query to parse
+array argc[4] : w32 -> w8 = symbolic
+array argc[4] : w32 -> w8 = symbolic
+(query [] (Eq N0:(ReadLSB w32 (w32 0x0) argc)
+     N0))
+Parsed query
+(Eq N0:(ReadLSB w32 (w32 0x0) argc)
+     N0)
+🔔 Removing: asm ln 25912, prod ln 703.6, live ln 704, enc 1
+
+Checking equivalence of `argc` (decl src ln 693) from
+  assn asm ln 25985, prod ln 721.3, live ln 722, enc 2
+  %23 = load i32, i32* %argc.addr, l721 c3
+  (ReadLSB w32 (w32 0x0) argc)
+and
+  assn asm ln 25899, prod ln 693.0, live ln 695, enc 0
+  i32 %argc
+  (ReadLSB w32 (w32 0x0) argc)
+Query to parse
+array argc[4] : w32 -> w8 = symbolic
+array argc[4] : w32 -> w8 = symbolic
+(query [] (Eq N0:(ReadLSB w32 (w32 0x0) argc)
+     N0))
+Parsed query
+(Eq N0:(ReadLSB w32 (w32 0x0) argc)
+     N0)
+🔔 Removing: asm ln 25985, prod ln 721.3, live ln 722, enc 2
+
+Checking equivalence of `argc` (decl src ln 693) from
+  assn asm ln 25941, prod ln 709.19, live ln 710, enc 3
+  %12 = load i32, i32* %argc.addr, l709 c19
+  (ReadLSB w32 (w32 0x0) argc)
+and
+  assn asm ln 25899, prod ln 693.0, live ln 695, enc 0
+  i32 %argc
+  (ReadLSB w32 (w32 0x0) argc)
+Query to parse
+array argc[4] : w32 -> w8 = symbolic
+array argc[4] : w32 -> w8 = symbolic
+(query [] (Eq N0:(ReadLSB w32 (w32 0x0) argc)
+     N0))
+Parsed query
+(Eq N0:(ReadLSB w32 (w32 0x0) argc)
+     N0)
+🔔 Removing: asm ln 25941, prod ln 709.19, live ln 710, enc 3
+
+Filtering redundant before assignments: `argv` (decl src ln 693)
+
+Expected 1 symbolic value(s), got 0
+❌ Before `argv` (decl src ln 693) assn asm ln 25972, prod ln 716.15, live ln 717, enc None has no symbolic value from %19 = load i8**, i8*** %v, l716 c15
+
+Checking equivalence of `argv` (decl src ln 693) from
+  assn asm ln 25908, prod ln 700.8, live ln 701, enc 1
+  %2 = load i8**, i8*** %argv.addr, l700 c8
+  (w64 0x339B17540BD60D2)
+and
+  assn asm ln 25901, prod ln 693.0, live ln 695, enc 0
+  i8** %argv
+  (w64 0x339B17540BD60D2)
+🔔 Removing: asm ln 25908, prod ln 700.8, live ln 701, enc 1
+
+Checking equivalence of `argv` (decl src ln 693) from
+  assn asm ln 25917, prod ln 703.26, live ln 704, enc 2
+  %5 = load i8**, i8*** %argv.addr, l703 c26
+  (w64 0x339B17540BD60D2)
+and
+  assn asm ln 25901, prod ln 693.0, live ln 695, enc 0
+  i8** %argv
+  (w64 0x339B17540BD60D2)
+🔔 Removing: asm ln 25917, prod ln 703.26, live ln 704, enc 2
+
+Checking equivalence of `argv` (decl src ln 693) from
+  assn asm ln 25926, prod ln 706.13, live ln 707, enc 3
+  %7 = load i8**, i8*** %argv.addr, l706 c13
+  (w64 0x339B17540BD60D2)
+and
+  assn asm ln 25901, prod ln 693.0, live ln 695, enc 0
+  i8** %argv
+  (w64 0x339B17540BD60D2)
+🔔 Removing: asm ln 25926, prod ln 706.13, live ln 707, enc 3
+
+Checking equivalence of `argv` (decl src ln 693) from
+  assn asm ln 25929, prod ln 706.3, live ln 707, enc 4
+  %9 = load i8**, i8*** %argv.addr, l706 c3
+  (w64 0x339B17540BD60D2)
+and
+  assn asm ln 25901, prod ln 693.0, live ln 695, enc 0
+  i8** %argv
+  (w64 0x339B17540BD60D2)
+🔔 Removing: asm ln 25929, prod ln 706.3, live ln 707, enc 4
+
+Checking equivalence of `argv` (decl src ln 693) from
+  assn asm ln 25986, prod ln 721.3, live ln 722, enc 5
+  %24 = load i8**, i8*** %argv.addr, l721 c3
+  (w64 0x339B17540BD60D2)
+and
+  assn asm ln 25901, prod ln 693.0, live ln 695, enc 0
+  i8** %argv
+  (w64 0x339B17540BD60D2)
+🔔 Removing: asm ln 25986, prod ln 721.3, live ln 722, enc 5
+
+Checking equivalence of `argv` (decl src ln 693) from
+  assn asm ln 25933, prod ln 707.3, live ln 708, enc 6
+  %10 = load i8**, i8*** %argv.addr, l707 c3
+  (w64 0x339B17540BD60D2)
+and
+  assn asm ln 25901, prod ln 693.0, live ln 695, enc 0
+  i8** %argv
+  (w64 0x339B17540BD60D2)
+🔔 Removing: asm ln 25933, prod ln 707.3, live ln 708, enc 6
+
+Checking equivalence of `argv` (decl src ln 693) from
+  assn asm ln 25946, prod ln 710.23, live ln 711, enc 7
+  %13 = load i8**, i8*** %argv.addr, l710 c23
+  (w64 0x339B17540BD60D2)
+and
+  assn asm ln 25901, prod ln 693.0, live ln 695, enc 0
+  i8** %argv
+  (w64 0x339B17540BD60D2)
+🔔 Removing: asm ln 25946, prod ln 710.23, live ln 711, enc 7
+
+Filtering redundant before assignments: `cmd` (decl src ln 696)
+
+Checking equivalence of `cmd` (decl src ln 696) from
+  assn asm ln 25976, prod ln 719.24, live ln 720, enc 1
+  %20 = load i8*, i8** %cmd, l719 c24
+  (w64 0x2902E02AEFAE7010)
+and
+  assn asm ln 25911, prod ln 700.8, live ln 703, enc 0
+  %3 = load i8*, i8** %arrayidx, l700 c8
+  (w64 0x2902E02AEFAE7010)
+🔔 Removing: asm ln 25976, prod ln 719.24, live ln 720, enc 1
+
+Checking equivalence of `cmd` (decl src ln 696) from
+  assn asm ln 25932, prod ln 707.17, live ln 708, enc 2
+  i8* getelementptr inbounds ([5 x i8], [5 x i8]* @.str.12, i64 0, i64 0)
+  (w64 0x3072604F191E67AB)
+and
+  assn asm ln 25911, prod ln 700.8, live ln 703, enc 0
+  %3 = load i8*, i8** %arrayidx, l700 c8
+  (w64 0x2902E02AEFAE7010)
+
+Filtering redundant before assignments: `builtin` (decl src ln 697)
+
+Checking equivalence of `builtin` (decl src ln 697) from
+  assn asm ln 25979, prod ln 720.6, live ln 721, enc 1
+  %21 = load %struct.cmd_struct*, %struct.cmd_struct** %builtin, l720 c6
+  (w64 0xAB74567C9EA20284)
+and
+  assn asm ln 25978, prod ln 719.12, live ln 720, enc 0
+  %call13 = call %struct.cmd_struct* @get_builtin(i8* %20), l719 c12
+  (w64 0xAB74567C9EA20284)
+🔔 Removing: asm ln 25979, prod ln 720.6, live ln 721, enc 1
+
+Checking equivalence of `builtin` (decl src ln 697) from
+  assn asm ln 25984, prod ln 721.3, live ln 722, enc 2
+  %22 = load %struct.cmd_struct*, %struct.cmd_struct** %builtin, l721 c3
+  (w64 0xAB74567C9EA20284)
+and
+  assn asm ln 25978, prod ln 719.12, live ln 720, enc 0
+  %call13 = call %struct.cmd_struct* @get_builtin(i8* %20), l719 c12
+  (w64 0xAB74567C9EA20284)
+🔔 Removing: asm ln 25984, prod ln 721.3, live ln 722, enc 2
+
+Filtering redundant before assignments: `i` (decl src ln 704)
+
+Checking equivalence of `i` (decl src ln 704) from
+  assn asm ln 25940, prod ln 709.15, live ln 710, enc 1
+  %11 = load i32, i32* %i, l709 c15
+  (w32 0x0)
+and
+  assn asm ln 25936, prod ln 709.10, live ln 710, enc 0
+  i32 0
+  (w32 0x0)
+🔔 Removing: asm ln 25940, prod ln 709.15, live ln 710, enc 1
+
+Checking equivalence of `i` (decl src ln 704) from
+  assn asm ln 25947, prod ln 710.28, live ln 711, enc 2
+  %14 = load i32, i32* %i, l710 c28
+  (w32 0x0)
+and
+  assn asm ln 25936, prod ln 709.10, live ln 710, enc 0
+  i32 0
+  (w32 0x0)
+🔔 Removing: asm ln 25947, prod ln 710.28, live ln 711, enc 2
+
+Checking equivalence of `i` (decl src ln 704) from
+  assn asm ln 25952, prod ln 711.9, live ln 712, enc 3
+  %16 = load i32, i32* %i, l711 c9
+  (w32 0x0)
+and
+  assn asm ln 25936, prod ln 709.10, live ln 710, enc 0
+  i32 0
+  (w32 0x0)
+🔔 Removing: asm ln 25952, prod ln 711.9, live ln 712, enc 3
+
+Checking equivalence of `i` (decl src ln 704) from
+  assn asm ln 25961, prod ln 709.26, live ln 710, enc 4
+  %17 = load i32, i32* %i, l709 c26
+  (w32 0x0)
+and
+  assn asm ln 25936, prod ln 709.10, live ln 710, enc 0
+  i32 0
+  (w32 0x0)
+🔔 Removing: asm ln 25961, prod ln 709.26, live ln 710, enc 4
+
+Checking equivalence of `i` (decl src ln 704) from
+  assn asm ln 25963, prod ln 709.26, live ln 710, enc 5
+  %inc = add nsw i32 %17, 1, l709 c26
+  (w32 0x1)
+and
+  assn asm ln 25936, prod ln 709.10, live ln 710, enc 0
+  i32 0
+  (w32 0x0)
+
+Filtering redundant after assignments: `argc` (decl src ln 693)
+
+Expected 1 symbolic value(s), got 0
+❌ After `argc` (decl src ln 693) assn asm ln 25881, prod ln 715.7, live ln 716, enc None has no symbolic value from %inc11 = add nsw i32 %argc, 1, l715 c7
+
+Checking equivalence of `argc` (decl src ln 693) from
+  assn asm ln 25891, prod ln 715.7, live ln 719, enc 1
+  %argc.addr.0 = phi i32 [ %argc, %land.lhs.true ], [ %inc11, %for.end ], [ %argc, %entry ]
+  (ReadLSB w32 (w32 0x0) argc)
+and
+  assn asm ln 25827, prod ln 693.0, live ln 695, enc 0
+  i32 %argc
+  (ReadLSB w32 (w32 0x0) argc)
+Query to parse
+array argc[4] : w32 -> w8 = symbolic
+array argc[4] : w32 -> w8 = symbolic
+(query [] (Eq N0:(ReadLSB w32 (w32 0x0) argc)
+     N0))
+Parsed query
+(Eq N0:(ReadLSB w32 (w32 0x0) argc)
+     N0)
+🔔 Removing: asm ln 25891, prod ln 715.7, live ln 719, enc 1
+
+Filtering redundant after assignments: `argv` (decl src ln 693)
+
+Expected 1 symbolic value(s), got 0
+❌ After `argv` (decl src ln 693) assn asm ln 25884, prod ln 716.15, live ln 717, enc None has no symbolic value from %6 = load i8**, i8*** %v, l716 c15
+
+Checking equivalence of `argv` (decl src ln 693) from
+  assn asm ln 25892, prod ln 716.15, live ln 719, enc 1
+  %argv.addr.0 = phi i8** [ %argv, %land.lhs.true ], [ %6, %for.end ], [ %argv, %entry ]
+  (w64 0x339B17540BD60D2)
+and
+  assn asm ln 25828, prod ln 693.0, live ln 695, enc 0
+  i8** %argv
+  (w64 0x339B17540BD60D2)
+🔔 Removing: asm ln 25892, prod ln 716.15, live ln 719, enc 1
+
+Filtering redundant after assignments: `cmd` (decl src ln 696)
+
+Checking equivalence of `cmd` (decl src ln 696) from
+  assn asm ln 25893, prod ln 700.8, live ln 719, enc 1
+  %cmd.0 = phi i8* [ %2, %land.lhs.true ], [ getelementptr inbounds ([5 x i8], [5 x i8]* @.str.12, i64 0, i64 0), %for.end ], [ %2, %entry ]
+  (w64 0x2902E02AEFAE7010)
+and
+  assn asm ln 25834, prod ln 700.8, live ln 703, enc 0
+  %2 = load i8*, i8** %arrayidx, l700 c8
+  (w64 0x2902E02AEFAE7010)
+🔔 Removing: asm ln 25893, prod ln 700.8, live ln 719, enc 1
+
+Checking equivalence of `cmd` (decl src ln 696) from
+  assn asm ln 25850, prod ln 696.0, live ln 707, enc 2
+  i8* getelementptr inbounds ([5 x i8], [5 x i8]* @.str.12, i64 0, i64 0)
+  (w64 0x3072604F191E67AB)
+and
+  assn asm ln 25834, prod ln 700.8, live ln 703, enc 0
+  %2 = load i8*, i8** %arrayidx, l700 c8
+  (w64 0x2902E02AEFAE7010)
+
+Filtering redundant after assignments: `i` (decl src ln 704)
+
+Checking equivalence of `i` (decl src ln 704) from
+  assn asm ln 25858, prod ln 709.26, live ln 710, enc 1
+  %i.0 = phi i32 [ 0, %if.then ], [ %inc, %for.inc ]
+  (w32 0x0)
+and
+  assn asm ln 25853, prod ln 704.0, live ln 709, enc 0
+  i32 0
+  (w32 0x0)
+🔔 Removing: asm ln 25858, prod ln 709.26, live ln 710, enc 1
+
+Checking equivalence of `i` (decl src ln 704) from
+  assn asm ln 25876, prod ln 709.26, live ln 710, enc 2
+  %inc = add nsw i32 %i.0, 1, l709 c26
+  (w32 0x1)
+and
+  assn asm ln 25853, prod ln 704.0, live ln 709, enc 0
+  i32 0
+  (w32 0x0)
+
+Collating encountered before assignments: `argc` (decl src ln 693)
+❌ Assignment asm ln 25969, prod ln 715.7, live ln 716, enc None for `argc` (decl src ln 693) was not encountered during execution
+❌ Assignment asm ln 25967, prod ln 715.7, live ln 716, enc None for `argc` (decl src ln 693) was not encountered during execution
+  asm ln 25899, prod ln 693.0, live ln 695, enc 0
+Collating encountered before assignments: `argv` (decl src ln 693)
+❌ Assignment asm ln 25972, prod ln 716.15, live ln 717, enc None for `argv` (decl src ln 693) was not encountered during execution
+  asm ln 25901, prod ln 693.0, live ln 695, enc 0
+Collating encountered before assignments: `cmd` (decl src ln 696)
+  asm ln 25911, prod ln 700.8, live ln 703, enc 0
+  asm ln 25932, prod ln 707.17, live ln 708, enc 1
+Collating encountered before assignments: `builtin` (decl src ln 697)
+  asm ln 25978, prod ln 719.12, live ln 720, enc 0
+Collating encountered before assignments: `i` (decl src ln 704)
+  asm ln 25936, prod ln 709.10, live ln 710, enc 0
+  asm ln 25963, prod ln 709.26, live ln 710, enc 1
+
+Collating encountered after assignments: `argc` (decl src ln 693)
+❌ Assignment asm ln 25881, prod ln 715.7, live ln 716, enc None for `argc` (decl src ln 693) was not encountered during execution
+  asm ln 25827, prod ln 693.0, live ln 695, enc 0
+Collating encountered after assignments: `argv` (decl src ln 693)
+❌ Assignment asm ln 25884, prod ln 716.15, live ln 717, enc None for `argv` (decl src ln 693) was not encountered during execution
+  asm ln 25828, prod ln 693.0, live ln 695, enc 0
+Collating encountered after assignments: `cmd` (decl src ln 696)
+  asm ln 25834, prod ln 700.8, live ln 703, enc 0
+  asm ln 25850, prod ln 696.0, live ln 707, enc 1
+Collating encountered after assignments: `i` (decl src ln 704)
+  asm ln 25853, prod ln 704.0, live ln 709, enc 0
+  asm ln 25876, prod ln 709.26, live ln 710, enc 1
+Collating encountered after assignments: `builtin` (decl src ln 697)
+  asm ln 25895, prod ln 719.12, live ln 720, enc 0
+
+#### Check before using after as reference
+
+❌ Before assn asm ln 25969, prod ln 715.7, live ln 716, enc None for `argc` (decl src ln 693) was not encountered during execution
+
+❌ Before assn asm ln 25967, prod ln 715.7, live ln 716, enc None for `argc` (decl src ln 693) was not encountered during execution
+
+Checking equivalence of `argc` (decl src ln 693) from
+  assn asm ln 25899, prod ln 693.0, live ln 695, enc 0
+  i32 %argc
+  (ReadLSB w32 (w32 0x0) argc)
+and
+  assn asm ln 25827, prod ln 693.0, live ln 695, enc 0
+  i32 %argc
+  (ReadLSB w32 (w32 0x0) argc)
+Query to parse
+array argc[4] : w32 -> w8 = symbolic
+array argc[4] : w32 -> w8 = symbolic
+(query [] (Eq (ReadLSB w32 (w32 0x0) argc)
+     (ReadLSB w32 (w32 0x0) argc)))
+Parsed query
+(Eq N0:(ReadLSB w32 (w32 0x0) argc)
+     N0)
+✅ After `argc` (decl src ln 693) assn asm ln 25827, prod ln 693.0, live ln 695, enc 0 symbolic value matches before assn asm ln 25899, prod ln 693.0, live ln 695, enc 0
+
+❌ Before `argc` assns checked using after as reference
+Variable:            argc
+  Assignments:       3
+  Matching Coords:   1
+  Matching Value:    1
+Errors:
+  Mismatched Coords: 0
+  Mismatched Value:  0
+  Not Encountered:   2
+  Missing:           0
+Warnings:
+  Unused:            0
+  Unreachable:       0
+  Removable:         0
+
+✅ Before `args` assns checked using after as reference
+Variable:            args
+  Assignments:       0
+  Matching Coords:   0
+  Matching Value:    0
+Errors:
+  Mismatched Coords: 0
+  Mismatched Value:  0
+  Not Encountered:   0
+  Missing:           0
+Warnings:
+  Unused:            0
+  Unreachable:       0
+  Removable:         0
+
+❌ Before assn asm ln 25972, prod ln 716.15, live ln 717, enc None for `argv` (decl src ln 693) was not encountered during execution
+
+Checking equivalence of `argv` (decl src ln 693) from
+  assn asm ln 25901, prod ln 693.0, live ln 695, enc 0
+  i8** %argv
+  (w64 0x339B17540BD60D2)
+and
+  assn asm ln 25828, prod ln 693.0, live ln 695, enc 0
+  i8** %argv
+  (w64 0x339B17540BD60D2)
+✅ After `argv` (decl src ln 693) assn asm ln 25828, prod ln 693.0, live ln 695, enc 0 symbolic value matches before assn asm ln 25901, prod ln 693.0, live ln 695, enc 0
+
+❌ Before `argv` assns checked using after as reference
+Variable:            argv
+  Assignments:       2
+  Matching Coords:   1
+  Matching Value:    1
+Errors:
+  Mismatched Coords: 0
+  Mismatched Value:  0
+  Not Encountered:   1
+  Missing:           0
+Warnings:
+  Unused:            0
+  Unreachable:       0
+  Removable:         0
+
+Checking equivalence of `builtin` (decl src ln 697) from
+  assn asm ln 25978, prod ln 719.12, live ln 720, enc 0
+  %call13 = call %struct.cmd_struct* @get_builtin(i8* %20), l719 c12
+  (w64 0xAB74567C9EA20284)
+and
+  assn asm ln 25895, prod ln 719.12, live ln 720, enc 0
+  %call13 = call %struct.cmd_struct.0* @get_builtin(i8* %cmd.0), l719 c12
+  (w64 0xAB74567C9EA20284)
+✅ After `builtin` (decl src ln 697) assn asm ln 25895, prod ln 719.12, live ln 720, enc 0 symbolic value matches before assn asm ln 25978, prod ln 719.12, live ln 720, enc 0
+
+✅ Before `builtin` assns checked using after as reference
+Variable:            builtin
+  Assignments:       1
+  Matching Coords:   1
+  Matching Value:    1
+Errors:
+  Mismatched Coords: 0
+  Mismatched Value:  0
+  Not Encountered:   0
+  Missing:           0
+Warnings:
+  Unused:            0
+  Unreachable:       0
+  Removable:         0
+
+Checking equivalence of `cmd` (decl src ln 696) from
+  assn asm ln 25911, prod ln 700.8, live ln 703, enc 0
+  %3 = load i8*, i8** %arrayidx, l700 c8
+  (w64 0x2902E02AEFAE7010)
+and
+  assn asm ln 25834, prod ln 700.8, live ln 703, enc 0
+  %2 = load i8*, i8** %arrayidx, l700 c8
+  (w64 0x2902E02AEFAE7010)
+✅ After `cmd` (decl src ln 696) assn asm ln 25834, prod ln 700.8, live ln 703, enc 0 symbolic value matches before assn asm ln 25911, prod ln 700.8, live ln 703, enc 0
+
+❌ After `cmd` (decl src ln 696) assn asm ln 25850, prod ln 696.0, live ln 707, enc 1 coordinates don't match before assn asm ln 25932, prod ln 707.17, live ln 708, enc 1
+Checking equivalence of `cmd` (decl src ln 696) from
+  assn asm ln 25932, prod ln 707.17, live ln 708, enc 1
+  i8* getelementptr inbounds ([5 x i8], [5 x i8]* @.str.12, i64 0, i64 0)
+  (w64 0x3072604F191E67AB)
+and
+  assn asm ln 25850, prod ln 696.0, live ln 707, enc 1
+  i8* getelementptr inbounds ([5 x i8], [5 x i8]* @.str.12, i64 0, i64 0)
+  (w64 0x3072604F191E67AB)
+✅ After `cmd` (decl src ln 696) assn asm ln 25850, prod ln 696.0, live ln 707, enc 1 symbolic value matches before assn asm ln 25932, prod ln 707.17, live ln 708, enc 1
+
+❌ Before `cmd` assns checked using after as reference
+Variable:            cmd
+  Assignments:       2
+  Matching Coords:   1
+  Matching Value:    2
+Errors:
+  Mismatched Coords: 1
+  Mismatched Value:  0
+  Not Encountered:   0
+  Missing:           0
+Warnings:
+  Unused:            0
+  Unreachable:       0
+  Removable:         0
+
+❌ After `i` (decl src ln 704) assn asm ln 25853, prod ln 704.0, live ln 709, enc 0 coordinates don't match before assn asm ln 25936, prod ln 709.10, live ln 710, enc 0
+Checking equivalence of `i` (decl src ln 704) from
+  assn asm ln 25936, prod ln 709.10, live ln 710, enc 0
+  i32 0
+  (w32 0x0)
+and
+  assn asm ln 25853, prod ln 704.0, live ln 709, enc 0
+  i32 0
+  (w32 0x0)
+✅ After `i` (decl src ln 704) assn asm ln 25853, prod ln 704.0, live ln 709, enc 0 symbolic value matches before assn asm ln 25936, prod ln 709.10, live ln 710, enc 0
+
+Checking equivalence of `i` (decl src ln 704) from
+  assn asm ln 25963, prod ln 709.26, live ln 710, enc 1
+  %inc = add nsw i32 %17, 1, l709 c26
+  (w32 0x1)
+and
+  assn asm ln 25876, prod ln 709.26, live ln 710, enc 1
+  %inc = add nsw i32 %i.0, 1, l709 c26
+  (w32 0x1)
+✅ After `i` (decl src ln 704) assn asm ln 25876, prod ln 709.26, live ln 710, enc 1 symbolic value matches before assn asm ln 25963, prod ln 709.26, live ln 710, enc 1
+
+❌ Before `i` assns checked using after as reference
+Variable:            i
+  Assignments:       2
+  Matching Coords:   1
+  Matching Value:    2
+Errors:
+  Mismatched Coords: 1
+  Mismatched Value:  0
+  Not Encountered:   0
+  Missing:           0
+Warnings:
+  Unused:            0
+  Unreachable:       0
+  Removable:         0
+
+#### Check after using before as reference
+
+❌ After assn asm ln 25881, prod ln 715.7, live ln 716, enc None for `argc` (decl src ln 693) was not encountered during execution
+
+Checking equivalence of `argc` (decl src ln 693) from
+  assn asm ln 25827, prod ln 693.0, live ln 695, enc 0
+  i32 %argc
+  (ReadLSB w32 (w32 0x0) argc)
+and
+  assn asm ln 25899, prod ln 693.0, live ln 695, enc 0
+  i32 %argc
+  (ReadLSB w32 (w32 0x0) argc)
+Query to parse
+array argc[4] : w32 -> w8 = symbolic
+array argc[4] : w32 -> w8 = symbolic
+(query [] (Eq (ReadLSB w32 (w32 0x0) argc)
+     (ReadLSB w32 (w32 0x0) argc)))
+Parsed query
+(Eq N0:(ReadLSB w32 (w32 0x0) argc)
+     N0)
+✅ Before `argc` (decl src ln 693) assn asm ln 25899, prod ln 693.0, live ln 695, enc 0 symbolic value matches after assn asm ln 25827, prod ln 693.0, live ln 695, enc 0
+
+❌ After `argc` assns checked using before as reference
+Variable:            argc
+  Assignments:       2
+  Matching Coords:   1
+  Matching Value:    1
+Errors:
+  Mismatched Coords: 0
+  Mismatched Value:  0
+  Not Encountered:   1
+  Missing:           0
+Warnings:
+  Unused:            0
+  Unreachable:       0
+  Removable:         0
+
+✅ After `args` assns checked using before as reference
+Variable:            args
+  Assignments:       0
+  Matching Coords:   0
+  Matching Value:    0
+Errors:
+  Mismatched Coords: 0
+  Mismatched Value:  0
+  Not Encountered:   0
+  Missing:           0
+Warnings:
+  Unused:            0
+  Unreachable:       0
+  Removable:         0
+
+❌ After assn asm ln 25884, prod ln 716.15, live ln 717, enc None for `argv` (decl src ln 693) was not encountered during execution
+
+Checking equivalence of `argv` (decl src ln 693) from
+  assn asm ln 25828, prod ln 693.0, live ln 695, enc 0
+  i8** %argv
+  (w64 0x339B17540BD60D2)
+and
+  assn asm ln 25901, prod ln 693.0, live ln 695, enc 0
+  i8** %argv
+  (w64 0x339B17540BD60D2)
+✅ Before `argv` (decl src ln 693) assn asm ln 25901, prod ln 693.0, live ln 695, enc 0 symbolic value matches after assn asm ln 25828, prod ln 693.0, live ln 695, enc 0
+
+❌ After `argv` assns checked using before as reference
+Variable:            argv
+  Assignments:       2
+  Matching Coords:   1
+  Matching Value:    1
+Errors:
+  Mismatched Coords: 0
+  Mismatched Value:  0
+  Not Encountered:   1
+  Missing:           0
+Warnings:
+  Unused:            0
+  Unreachable:       0
+  Removable:         0
+
+Checking equivalence of `builtin` (decl src ln 697) from
+  assn asm ln 25895, prod ln 719.12, live ln 720, enc 0
+  %call13 = call %struct.cmd_struct.0* @get_builtin(i8* %cmd.0), l719 c12
+  (w64 0xAB74567C9EA20284)
+and
+  assn asm ln 25978, prod ln 719.12, live ln 720, enc 0
+  %call13 = call %struct.cmd_struct* @get_builtin(i8* %20), l719 c12
+  (w64 0xAB74567C9EA20284)
+✅ Before `builtin` (decl src ln 697) assn asm ln 25978, prod ln 719.12, live ln 720, enc 0 symbolic value matches after assn asm ln 25895, prod ln 719.12, live ln 720, enc 0
+
+✅ After `builtin` assns checked using before as reference
+Variable:            builtin
+  Assignments:       1
+  Matching Coords:   1
+  Matching Value:    1
+Errors:
+  Mismatched Coords: 0
+  Mismatched Value:  0
+  Not Encountered:   0
+  Missing:           0
+Warnings:
+  Unused:            0
+  Unreachable:       0
+  Removable:         0
+
+Checking equivalence of `cmd` (decl src ln 696) from
+  assn asm ln 25834, prod ln 700.8, live ln 703, enc 0
+  %2 = load i8*, i8** %arrayidx, l700 c8
+  (w64 0x2902E02AEFAE7010)
+and
+  assn asm ln 25911, prod ln 700.8, live ln 703, enc 0
+  %3 = load i8*, i8** %arrayidx, l700 c8
+  (w64 0x2902E02AEFAE7010)
+✅ Before `cmd` (decl src ln 696) assn asm ln 25911, prod ln 700.8, live ln 703, enc 0 symbolic value matches after assn asm ln 25834, prod ln 700.8, live ln 703, enc 0
+
+❌ Before `cmd` (decl src ln 696) assn asm ln 25932, prod ln 707.17, live ln 708, enc 1 coordinates don't match after assn asm ln 25850, prod ln 696.0, live ln 707, enc 1
+Checking equivalence of `cmd` (decl src ln 696) from
+  assn asm ln 25850, prod ln 696.0, live ln 707, enc 1
+  i8* getelementptr inbounds ([5 x i8], [5 x i8]* @.str.12, i64 0, i64 0)
+  (w64 0x3072604F191E67AB)
+and
+  assn asm ln 25932, prod ln 707.17, live ln 708, enc 1
+  i8* getelementptr inbounds ([5 x i8], [5 x i8]* @.str.12, i64 0, i64 0)
+  (w64 0x3072604F191E67AB)
+✅ Before `cmd` (decl src ln 696) assn asm ln 25932, prod ln 707.17, live ln 708, enc 1 symbolic value matches after assn asm ln 25850, prod ln 696.0, live ln 707, enc 1
+
+❌ After `cmd` assns checked using before as reference
+Variable:            cmd
+  Assignments:       2
+  Matching Coords:   1
+  Matching Value:    2
+Errors:
+  Mismatched Coords: 1
+  Mismatched Value:  0
+  Not Encountered:   0
+  Missing:           0
+Warnings:
+  Unused:            0
+  Unreachable:       0
+  Removable:         0
+
+❌ Before `i` (decl src ln 704) assn asm ln 25936, prod ln 709.10, live ln 710, enc 0 coordinates don't match after assn asm ln 25853, prod ln 704.0, live ln 709, enc 0
+Checking equivalence of `i` (decl src ln 704) from
+  assn asm ln 25853, prod ln 704.0, live ln 709, enc 0
+  i32 0
+  (w32 0x0)
+and
+  assn asm ln 25936, prod ln 709.10, live ln 710, enc 0
+  i32 0
+  (w32 0x0)
+✅ Before `i` (decl src ln 704) assn asm ln 25936, prod ln 709.10, live ln 710, enc 0 symbolic value matches after assn asm ln 25853, prod ln 704.0, live ln 709, enc 0
+
+Checking equivalence of `i` (decl src ln 704) from
+  assn asm ln 25876, prod ln 709.26, live ln 710, enc 1
+  %inc = add nsw i32 %i.0, 1, l709 c26
+  (w32 0x1)
+and
+  assn asm ln 25963, prod ln 709.26, live ln 710, enc 1
+  %inc = add nsw i32 %17, 1, l709 c26
+  (w32 0x1)
+✅ Before `i` (decl src ln 704) assn asm ln 25963, prod ln 709.26, live ln 710, enc 1 symbolic value matches after assn asm ln 25876, prod ln 709.26, live ln 710, enc 1
+
+❌ After `i` assns checked using before as reference
+Variable:            i
+  Assignments:       2
+  Matching Coords:   1
+  Matching Value:    2
+Errors:
+  Mismatched Coords: 1
+  Mismatched Value:  0
+  Not Encountered:   0
+  Missing:           0
+Warnings:
+  Unused:            0
+  Unreachable:       0
+  Removable:         0
+
+## Function `_`
+
+✅ Before and after function names match
+
+### Variable events
+
+#### Before variables
+
+Load from declared address of `msgid` (decl src ln 44), asm ln 26014
+  %2 = load i8*, i8** %msgid.addr, l48 c17, asm ln 26014
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 26014, prod ln 48.17, live ln 49, enc None
+Load from declared address of `msgid` (decl src ln 44), asm ln 26004
+  %0 = load i8*, i8** %msgid.addr, l46 c8, asm ln 26004
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 26004, prod ln 46.8, live ln 47, enc None
+Store to declared address of `msgid` (decl src ln 44), asm ln 26002
+  arg 0
+  Added assignment asm ln 26002, prod ln 44.0, live ln 46, enc None
+
+#### After variables
+
+Value produced for `msgid` (decl src ln 44), asm ln 25913
+  arg 0
+  Added assignment asm ln 25913, prod ln 44.0, live ln 46, enc None
+
+#### Summary
+
+✅ 1 before variables found, 1 after variables found, 0 mismatched
+
+### Symbolic values
+
+#### Before values
+
+[0;35mKLEE: WARNING: Unable to load symbol(kCFRunLoopDefaultMode) while initializing globals
+[0m[0;35mKLEE: WARNING: Unable to load source file `./gettext.h`
+[0mCollected value for `msgid`
+  Assignment asm ln 26002, prod ln 44.0, live ln 46, enc 0
+  Concrete pointer resolves to msgid.deref, offset (w64 0x0)
+  Created deref expr (ReadLSB w64 (w32 0x0) msgid.deref)
+  Replaced concrete pointer with hash (w64 0x2FD8373E455B8AD2)
+  i8* %msgid
+  (w64 0x2FD8373E455B8AD2)
+Collected value for `msgid`
+  Assignment asm ln 26004, prod ln 46.8, live ln 47, enc 1
+  Concrete pointer resolves to msgid.deref, offset (w64 0x0)
+  Created deref expr (ReadLSB w64 (w32 0x0) msgid.deref)
+  Replaced concrete pointer with hash (w64 0x2FD8373E455B8AD2)
+  %0 = load i8*, i8** %msgid.addr, l46 c8
+  (w64 0x2FD8373E455B8AD2)
+Collected value for `msgid`
+  Assignment asm ln 26014, prod ln 48.17, live ln 49, enc 2
+  Concrete pointer resolves to msgid.deref, offset (w64 0x0)
+  Created deref expr (ReadLSB w64 (w32 0x0) msgid.deref)
+  Replaced concrete pointer with hash (w64 0x2FD8373E455B8AD2)
+  %2 = load i8*, i8** %msgid.addr, l48 c17
+  (w64 0x2FD8373E455B8AD2)
+
+🔔 Unable to execute all before program states
+
+#### After values
+
+[0;35mKLEE: WARNING: Unable to load symbol(kCFRunLoopDefaultMode) while initializing globals
+[0mCollected value for `msgid`
+  Assignment asm ln 25913, prod ln 44.0, live ln 46, enc 0
+  Concrete pointer resolves to msgid.deref, offset (w64 0x0)
+  Created deref expr (ReadLSB w64 (w32 0x0) msgid.deref)
+  Replaced concrete pointer with hash (w64 0x2FD8373E455B8AD2)
+  i8* %msgid
+  (w64 0x2FD8373E455B8AD2)
+
+🔔 Unable to execute all after program states
+
+### Assignments
+
+#### Collation
+
+Filtering redundant before assignments: `msgid` (decl src ln 44)
+
+Checking equivalence of `msgid` (decl src ln 44) from
+  assn asm ln 26004, prod ln 46.8, live ln 47, enc 1
+  %0 = load i8*, i8** %msgid.addr, l46 c8
+  (w64 0x2FD8373E455B8AD2)
+and
+  assn asm ln 26002, prod ln 44.0, live ln 46, enc 0
+  i8* %msgid
+  (w64 0x2FD8373E455B8AD2)
+🔔 Removing: asm ln 26004, prod ln 46.8, live ln 47, enc 1
+
+Checking equivalence of `msgid` (decl src ln 44) from
+  assn asm ln 26014, prod ln 48.17, live ln 49, enc 2
+  %2 = load i8*, i8** %msgid.addr, l48 c17
+  (w64 0x2FD8373E455B8AD2)
+and
+  assn asm ln 26002, prod ln 44.0, live ln 46, enc 0
+  i8* %msgid
+  (w64 0x2FD8373E455B8AD2)
+🔔 Removing: asm ln 26014, prod ln 48.17, live ln 49, enc 2
+
+Collating encountered before assignments: `msgid` (decl src ln 44)
+  asm ln 26002, prod ln 44.0, live ln 46, enc 0
+
+Collating encountered after assignments: `msgid` (decl src ln 44)
+  asm ln 25913, prod ln 44.0, live ln 46, enc 0
+
+#### Check before using after as reference
+
+Checking equivalence of `msgid` (decl src ln 44) from
+  assn asm ln 26002, prod ln 44.0, live ln 46, enc 0
+  i8* %msgid
+  (w64 0x2FD8373E455B8AD2)
+and
+  assn asm ln 25913, prod ln 44.0, live ln 46, enc 0
+  i8* %msgid
+  (w64 0x2FD8373E455B8AD2)
+✅ After `msgid` (decl src ln 44) assn asm ln 25913, prod ln 44.0, live ln 46, enc 0 symbolic value matches before assn asm ln 26002, prod ln 44.0, live ln 46, enc 0
+
+✅ Before `msgid` assns checked using after as reference
+Variable:            msgid
+  Assignments:       1
+  Matching Coords:   1
+  Matching Value:    1
+Errors:
+  Mismatched Coords: 0
+  Mismatched Value:  0
+  Not Encountered:   0
+  Missing:           0
+Warnings:
+  Unused:            0
+  Unreachable:       0
+  Removable:         0
+
+#### Check after using before as reference
+
+Checking equivalence of `msgid` (decl src ln 44) from
+  assn asm ln 25913, prod ln 44.0, live ln 46, enc 0
+  i8* %msgid
+  (w64 0x2FD8373E455B8AD2)
+and
+  assn asm ln 26002, prod ln 44.0, live ln 46, enc 0
+  i8* %msgid
+  (w64 0x2FD8373E455B8AD2)
+✅ Before `msgid` (decl src ln 44) assn asm ln 26002, prod ln 44.0, live ln 46, enc 0 symbolic value matches after assn asm ln 25913, prod ln 44.0, live ln 46, enc 0
+
+✅ After `msgid` assns checked using before as reference
+Variable:            msgid
+  Assignments:       1
+  Matching Coords:   1
+  Matching Value:    1
+Errors:
+  Mismatched Coords: 0
+  Mismatched Value:  0
+  Not Encountered:   0
+  Missing:           0
+Warnings:
+  Unused:            0
+  Unreachable:       0
+  Removable:         0
+
+## Summary
+
+❌ Some consistency checks failed
