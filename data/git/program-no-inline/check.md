@@ -188,6 +188,11 @@ Warnings:
   Unused:            0
   Unreachable:       0
   Removable:         0
+Execution:
+  Function Covered:  true
+  Complete:          true
+  Within Time Limit: true
+  Within Fork Limit: true
 
 Checking equivalence of `def` (decl src ln 125) from
   assn asm ln 25444, prod ln 125.0, live ln 127, enc 0
@@ -221,6 +226,11 @@ Warnings:
   Unused:            0
   Unreachable:       0
   Removable:         0
+Execution:
+  Function Covered:  true
+  Complete:          true
+  Within Time Limit: true
+  Within Fork Limit: true
 
 #### Check after using before as reference
 
@@ -248,6 +258,11 @@ Warnings:
   Unused:            0
   Unreachable:       0
   Removable:         0
+Execution:
+  Function Covered:  true
+  Complete:          true
+  Within Time Limit: true
+  Within Fork Limit: true
 
 Checking equivalence of `def` (decl src ln 125) from
   assn asm ln 25441, prod ln 125.0, live ln 127, enc 0
@@ -281,6 +296,11 @@ Warnings:
   Unused:            0
   Unreachable:       0
   Removable:         0
+Execution:
+  Function Covered:  true
+  Complete:          true
+  Within Time Limit: true
+  Within Fork Limit: true
 
 ## Function `commit_pager_choice`
 
@@ -425,6 +445,11 @@ Warnings:
   Unused:            0
   Unreachable:       0
   Removable:         0
+Execution:
+  Function Covered:  true
+  Complete:          true
+  Within Time Limit: true
+  Within Fork Limit: true
 
 #### Check after using before as reference
 
@@ -452,6 +477,11 @@ Warnings:
   Unused:            0
   Unreachable:       0
   Removable:         0
+Execution:
+  Function Covered:  true
+  Complete:          true
+  Within Time Limit: true
+  Within Fork Limit: true
 
 ## Function `get_builtin`
 
@@ -586,9 +616,9 @@ Collected value for `i`
   (w32 0x1)
 [0;1;35mKLEE: WARNING ONCE: skipping fork (max-forks reached)
 [0m
-🔔 Unable to execute all before program states
-
 🔔 Unable to execute all before instructions
+
+🔔 Unable to execute all before program states
 
 #### After values
 
@@ -776,6 +806,11 @@ Warnings:
   Unused:            0
   Unreachable:       0
   Removable:         0
+Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
 
 Checking equivalence of `p` (decl src ln 639) from
   assn asm ln 25541, prod ln 639.35, live ln 640, enc 0
@@ -801,6 +836,11 @@ Warnings:
   Unused:            0
   Unreachable:       0
   Removable:         0
+Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
 
 Checking equivalence of `s` (decl src ln 635) from
   assn asm ln 25524, prod ln 635.0, live ln 638, enc 0
@@ -826,6 +866,11 @@ Warnings:
   Unused:            0
   Unreachable:       0
   Removable:         0
+Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
 
 #### Check after using before as reference
 
@@ -864,6 +909,11 @@ Warnings:
   Unused:            0
   Unreachable:       0
   Removable:         0
+Execution:
+  Function Covered:  true
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
 
 Checking equivalence of `p` (decl src ln 639) from
   assn asm ln 25520, prod ln 639.35, live ln 640, enc 0
@@ -889,6 +939,11 @@ Warnings:
   Unused:            0
   Unreachable:       0
   Removable:         0
+Execution:
+  Function Covered:  true
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
 
 Checking equivalence of `s` (decl src ln 635) from
   assn asm ln 25506, prod ln 635.0, live ln 638, enc 0
@@ -914,6 +969,11 @@ Warnings:
   Unused:            0
   Unreachable:       0
   Removable:         0
+Execution:
+  Function Covered:  true
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
 
 ## Function `load_builtin_commands`
 
@@ -1101,9 +1161,9 @@ Collected value for `name`
 KLEE: HaltTimer invoked
 [0mKLEE: halting execution, dumping remaining states
 [0m
-🔔 Unable to execute all before program states
-
 🔔 Unable to execute all before instructions
+
+🔔 Unable to execute all before program states
 
 #### After values
 
@@ -1171,9 +1231,9 @@ Collected value for `name`
 KLEE: HaltTimer invoked
 [0mKLEE: halting execution, dumping remaining states
 [0m
-🔔 Unable to execute all after program states
-
 🔔 Unable to execute all after instructions
+
+🔔 Unable to execute all after program states
 
 ### Assignments
 
@@ -1377,6 +1437,11 @@ Warnings:
   Unused:            0
   Unreachable:       0
   Removable:         0
+Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: false
+  Within Fork Limit: true
 
 Checking equivalence of `i` (decl src ln 665) from
   assn asm ln 25596, prod ln 676.9, live ln 677, enc 0
@@ -1412,6 +1477,11 @@ Warnings:
   Unused:            0
   Unreachable:       0
   Removable:         0
+Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: false
+  Within Fork Limit: true
 
 Checking equivalence of `name` (decl src ln 664) from
   assn asm ln 25618, prod ln 678.22, live ln 679, enc 0
@@ -1437,6 +1507,11 @@ Warnings:
   Unused:            0
   Unreachable:       0
   Removable:         0
+Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: false
+  Within Fork Limit: true
 
 Checking equivalence of `prefix` (decl src ln 662) from
   assn asm ln 25579, prod ln 662.0, live ln 673, enc 0
@@ -1472,6 +1547,11 @@ Warnings:
   Unused:            0
   Unreachable:       0
   Removable:         0
+Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: false
+  Within Fork Limit: true
 
 #### Check after using before as reference
 
@@ -1499,6 +1579,11 @@ Warnings:
   Unused:            0
   Unreachable:       0
   Removable:         0
+Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: false
+  Within Fork Limit: true
 
 Checking equivalence of `i` (decl src ln 665) from
   assn asm ln 25560, prod ln 676.41, live ln 677, enc 0
@@ -1534,6 +1619,11 @@ Warnings:
   Unused:            0
   Unreachable:       0
   Removable:         0
+Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: false
+  Within Fork Limit: true
 
 Checking equivalence of `name` (decl src ln 664) from
   assn asm ln 25576, prod ln 678.22, live ln 679, enc 0
@@ -1559,6 +1649,11 @@ Warnings:
   Unused:            0
   Unreachable:       0
   Removable:         0
+Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: false
+  Within Fork Limit: true
 
 Checking equivalence of `prefix` (decl src ln 662) from
   assn asm ln 25544, prod ln 662.0, live ln 673, enc 0
@@ -1594,6 +1689,11 @@ Warnings:
   Unused:            0
   Unreachable:       0
   Removable:         0
+Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: false
+  Within Fork Limit: true
 
 ## Function `skip_prefix`
 
@@ -1973,6 +2073,11 @@ Warnings:
   Unused:            0
   Unreachable:       0
   Removable:         0
+Execution:
+  Function Covered:  true
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
 
 Checking equivalence of `prefix` (decl src ln 674) from
   assn asm ln 25644, prod ln 674.0, live ln 677, enc 0
@@ -2008,6 +2113,11 @@ Warnings:
   Unused:            0
   Unreachable:       0
   Removable:         0
+Execution:
+  Function Covered:  true
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
 
 Checking equivalence of `str` (decl src ln 674) from
   assn asm ln 25642, prod ln 674.0, live ln 677, enc 0
@@ -2043,6 +2153,11 @@ Warnings:
   Unused:            0
   Unreachable:       0
   Removable:         0
+Execution:
+  Function Covered:  true
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
 
 #### Check after using before as reference
 
@@ -2070,6 +2185,11 @@ Warnings:
   Unused:            0
   Unreachable:       0
   Removable:         0
+Execution:
+  Function Covered:  true
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
 
 Checking equivalence of `prefix` (decl src ln 674) from
   assn asm ln 25596, prod ln 674.0, live ln 677, enc 0
@@ -2105,6 +2225,11 @@ Warnings:
   Unused:            0
   Unreachable:       0
   Removable:         0
+Execution:
+  Function Covered:  true
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
 
 Checking equivalence of `str` (decl src ln 674) from
   assn asm ln 25595, prod ln 674.0, live ln 677, enc 0
@@ -2140,6 +2265,11 @@ Warnings:
   Unused:            0
   Unreachable:       0
   Removable:         0
+Execution:
+  Function Covered:  true
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
 
 ## Function `cmd_main`
 
@@ -2710,9 +2840,9 @@ Collected value for `done_help`
   i32 1
   (w32 0x1)
 
-🔔 Unable to execute all before program states
-
 🔔 Unable to execute all before instructions
+
+🔔 Unable to execute all before program states
 
 #### After values
 
@@ -2949,9 +3079,9 @@ Collected value for `done_help`
   i32 1
   (w32 0x1)
 
-🔔 Unable to execute all after program states
-
 🔔 Unable to execute all after instructions
+
+🔔 Unable to execute all after program states
 
 ### Assignments
 
@@ -3828,6 +3958,11 @@ Warnings:
   Unused:            0
   Unreachable:       0
   Removable:         0
+Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
 
 ❌ Before assn asm ln 25845, prod ln 932.10, live ln 933, enc None for `argv` (decl src ln 864) was not encountered during execution
 
@@ -3898,6 +4033,11 @@ Warnings:
   Unused:            0
   Unreachable:       0
   Removable:         0
+Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
 
 ❌ Before assn asm ln 25844, prod ln 932.5, live ln 933, enc None for `cmd` (decl src ln 866) was not encountered during execution
 
@@ -3967,6 +4107,11 @@ Warnings:
   Unused:            0
   Unreachable:       0
   Removable:         0
+Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
 
 Checking equivalence of `done_help` (decl src ln 867) from
   assn asm ln 25703, prod ln 867.6, live ln 869, enc 0
@@ -4003,6 +4148,11 @@ Warnings:
   Unused:            0
   Unreachable:       0
   Removable:         0
+Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
 
 Checking equivalence of `slash` (decl src ln 873) from
   assn asm ln 25720, prod ln 873.23, live ln 874, enc 0
@@ -4028,6 +4178,11 @@ Warnings:
   Unused:            0
   Unreachable:       0
   Removable:         0
+Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
 
 Checking equivalence of `was_alias` (decl src ln 926) from
   assn asm ln 25830, prod ln 926.19, live ln 927, enc 0
@@ -4061,6 +4216,11 @@ Warnings:
   Unused:            0
   Unreachable:       0
   Removable:         0
+Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
 
 #### Check after using before as reference
 
@@ -4156,6 +4316,11 @@ Warnings:
   Unused:            0
   Unreachable:       0
   Removable:         0
+Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
 
 ❌ After assn asm ln 25782, prod ln 932.10, live ln 933, enc None for `argv` (decl src ln 864) was not encountered during execution
 
@@ -4224,6 +4389,11 @@ Warnings:
   Unused:            0
   Unreachable:       0
   Removable:         0
+Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
 
 ❌ After assn asm ln 25781, prod ln 932.5, live ln 933, enc None for `cmd` (decl src ln 866) was not encountered during execution
 
@@ -4293,6 +4463,11 @@ Warnings:
   Unused:            0
   Unreachable:       0
   Removable:         0
+Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
 
 Checking equivalence of `done_help` (decl src ln 867) from
   assn asm ln 25643, prod ln 867.0, live ln 869, enc 0
@@ -4329,6 +4504,11 @@ Warnings:
   Unused:            0
   Unreachable:       0
   Removable:         0
+Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
 
 Checking equivalence of `slash` (decl src ln 873) from
   assn asm ln 25659, prod ln 873.23, live ln 874, enc 0
@@ -4354,6 +4534,11 @@ Warnings:
   Unused:            0
   Unreachable:       0
   Removable:         0
+Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
 
 Checking equivalence of `was_alias` (decl src ln 926) from
   assn asm ln 25768, prod ln 926.19, live ln 927, enc 0
@@ -4387,6 +4572,11 @@ Warnings:
   Unused:            0
   Unreachable:       0
   Removable:         0
+Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
 
 ## Function `git_find_last_dir_sep`
 
@@ -4494,6 +4684,11 @@ Warnings:
   Unused:            0
   Unreachable:       0
   Removable:         0
+Execution:
+  Function Covered:  true
+  Complete:          true
+  Within Time Limit: true
+  Within Fork Limit: true
 
 #### Check after using before as reference
 
@@ -4521,6 +4716,11 @@ Warnings:
   Unused:            0
   Unreachable:       0
   Removable:         0
+Execution:
+  Function Covered:  true
+  Complete:          true
+  Within Time Limit: true
+  Within Fork Limit: true
 
 ## Function `handle_builtin`
 
@@ -4831,9 +5031,9 @@ Collected value for `i`
 [0;1;31mKLEE: ERROR: git.c:710: memory error: out of bound pointer
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0m
-🔔 Unable to execute all before program states
-
 🔔 Unable to execute all before instructions
+
+🔔 Unable to execute all before program states
 
 #### After values
 
@@ -4909,9 +5109,9 @@ Collected value for `i`
 [0;1;31mKLEE: ERROR: git.c:710: memory error: out of bound pointer
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0m
-🔔 Unable to execute all after program states
-
 🔔 Unable to execute all after instructions
+
+🔔 Unable to execute all after program states
 
 ### Assignments
 
@@ -5298,6 +5498,11 @@ Warnings:
   Unused:            0
   Unreachable:       0
   Removable:         0
+Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
 
 ✅ Before `args` assns checked using after as reference
 Variable:            args
@@ -5313,6 +5518,11 @@ Warnings:
   Unused:            0
   Unreachable:       0
   Removable:         0
+Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
 
 ❌ Before assn asm ln 25972, prod ln 716.15, live ln 717, enc None for `argv` (decl src ln 693) was not encountered during execution
 
@@ -5340,6 +5550,11 @@ Warnings:
   Unused:            0
   Unreachable:       0
   Removable:         0
+Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
 
 Checking equivalence of `builtin` (decl src ln 697) from
   assn asm ln 25978, prod ln 719.12, live ln 720, enc 0
@@ -5365,6 +5580,11 @@ Warnings:
   Unused:            0
   Unreachable:       0
   Removable:         0
+Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
 
 Checking equivalence of `cmd` (decl src ln 696) from
   assn asm ln 25911, prod ln 700.8, live ln 703, enc 0
@@ -5401,6 +5621,11 @@ Warnings:
   Unused:            0
   Unreachable:       0
   Removable:         0
+Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
 
 ❌ After `i` (decl src ln 704) assn asm ln 25853, prod ln 704.0, live ln 709, enc 0 coordinates don't match before assn asm ln 25936, prod ln 709.10, live ln 710, enc 0
 Checking equivalence of `i` (decl src ln 704) from
@@ -5437,6 +5662,11 @@ Warnings:
   Unused:            0
   Unreachable:       0
   Removable:         0
+Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
 
 #### Check after using before as reference
 
@@ -5474,6 +5704,11 @@ Warnings:
   Unused:            0
   Unreachable:       0
   Removable:         0
+Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
 
 ✅ After `args` assns checked using before as reference
 Variable:            args
@@ -5489,6 +5724,11 @@ Warnings:
   Unused:            0
   Unreachable:       0
   Removable:         0
+Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
 
 ❌ After assn asm ln 25884, prod ln 716.15, live ln 717, enc None for `argv` (decl src ln 693) was not encountered during execution
 
@@ -5516,6 +5756,11 @@ Warnings:
   Unused:            0
   Unreachable:       0
   Removable:         0
+Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
 
 Checking equivalence of `builtin` (decl src ln 697) from
   assn asm ln 25895, prod ln 719.12, live ln 720, enc 0
@@ -5541,6 +5786,11 @@ Warnings:
   Unused:            0
   Unreachable:       0
   Removable:         0
+Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
 
 Checking equivalence of `cmd` (decl src ln 696) from
   assn asm ln 25834, prod ln 700.8, live ln 703, enc 0
@@ -5577,6 +5827,11 @@ Warnings:
   Unused:            0
   Unreachable:       0
   Removable:         0
+Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
 
 ❌ Before `i` (decl src ln 704) assn asm ln 25936, prod ln 709.10, live ln 710, enc 0 coordinates don't match after assn asm ln 25853, prod ln 704.0, live ln 709, enc 0
 Checking equivalence of `i` (decl src ln 704) from
@@ -5613,6 +5868,11 @@ Warnings:
   Unused:            0
   Unreachable:       0
   Removable:         0
+Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
 
 ## Function `_`
 
@@ -5741,6 +6001,11 @@ Warnings:
   Unused:            0
   Unreachable:       0
   Removable:         0
+Execution:
+  Function Covered:  true
+  Complete:          true
+  Within Time Limit: true
+  Within Fork Limit: true
 
 #### Check after using before as reference
 
@@ -5768,7 +6033,30 @@ Warnings:
   Unused:            0
   Unreachable:       0
   Removable:         0
+Execution:
+  Function Covered:  true
+  Complete:          true
+  Within Time Limit: true
+  Within Fork Limit: true
 
 ## Summary
+
+Assignments:         102
+  Matching Coords:   78
+  Matching Value:    90
+Errors:
+  Mismatched Coords: 12
+  Mismatched Value:  0
+  Not Encountered:   12
+  Missing:           0
+Warnings:
+  Unused:            0
+  Unreachable:       0
+  Removable:         0
+Execution:
+  Function Covered:  24
+  Complete:          10
+  Within Time Limit: 90
+  Within Fork Limit: 102
 
 ❌ Some consistency checks failed
