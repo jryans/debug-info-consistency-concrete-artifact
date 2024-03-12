@@ -6041,22 +6041,22 @@ Execution:
 
 ## Summary
 
-Assignments:         102
-  Matching Coords:   78
-  Matching Value:    90
+Assignments:               102
+  Matching Coords:          78 ( 76.47%)
+  Matching Value:           90 ( 88.24%)
 Errors:
-  Mismatched Coords: 12
-  Mismatched Value:  0
-  Not Encountered:   12
-  Missing:           0
+  Mismatched Coords:        12 ( 11.76%)
+  Mismatched Value:          0 (  0.00%)
+  Not Encountered:          12 ( 11.76%)
+  Missing:                   0 (  0.00%)
 Warnings:
-  Unused:            0
-  Unreachable:       0
-  Removable:         0
+  Unused:                    0 (  0.00%)
+  Unreachable:               0 (  0.00%)
+  Removable:                 0 (  0.00%)
 Execution:
-  Function Covered:  24
-  Complete:          10
-  Within Time Limit: 90
-  Within Fork Limit: 29
+  Function Covered:         24 ( 23.53%)
+  Complete:                 10 (  9.80%)
+  Within Time Limit:        90 ( 88.24%)
+  Within Fork Limit:        29 ( 28.43%)
 
 ❌ Some consistency checks failed
