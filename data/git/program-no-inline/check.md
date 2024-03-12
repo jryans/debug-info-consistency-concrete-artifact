@@ -810,7 +810,7 @@ Execution:
   Function Covered:  false
   Complete:          false
   Within Time Limit: true
-  Within Fork Limit: true
+  Within Fork Limit: false
 
 Checking equivalence of `p` (decl src ln 639) from
   assn asm ln 25541, prod ln 639.35, live ln 640, enc 0
@@ -840,7 +840,7 @@ Execution:
   Function Covered:  false
   Complete:          false
   Within Time Limit: true
-  Within Fork Limit: true
+  Within Fork Limit: false
 
 Checking equivalence of `s` (decl src ln 635) from
   assn asm ln 25524, prod ln 635.0, live ln 638, enc 0
@@ -870,7 +870,7 @@ Execution:
   Function Covered:  false
   Complete:          false
   Within Time Limit: true
-  Within Fork Limit: true
+  Within Fork Limit: false
 
 #### Check after using before as reference
 
@@ -913,7 +913,7 @@ Execution:
   Function Covered:  true
   Complete:          false
   Within Time Limit: true
-  Within Fork Limit: true
+  Within Fork Limit: false
 
 Checking equivalence of `p` (decl src ln 639) from
   assn asm ln 25520, prod ln 639.35, live ln 640, enc 0
@@ -943,7 +943,7 @@ Execution:
   Function Covered:  true
   Complete:          false
   Within Time Limit: true
-  Within Fork Limit: true
+  Within Fork Limit: false
 
 Checking equivalence of `s` (decl src ln 635) from
   assn asm ln 25506, prod ln 635.0, live ln 638, enc 0
@@ -973,7 +973,7 @@ Execution:
   Function Covered:  true
   Complete:          false
   Within Time Limit: true
-  Within Fork Limit: true
+  Within Fork Limit: false
 
 ## Function `load_builtin_commands`
 
@@ -1441,7 +1441,7 @@ Execution:
   Function Covered:  false
   Complete:          false
   Within Time Limit: false
-  Within Fork Limit: true
+  Within Fork Limit: false
 
 Checking equivalence of `i` (decl src ln 665) from
   assn asm ln 25596, prod ln 676.9, live ln 677, enc 0
@@ -1481,7 +1481,7 @@ Execution:
   Function Covered:  false
   Complete:          false
   Within Time Limit: false
-  Within Fork Limit: true
+  Within Fork Limit: false
 
 Checking equivalence of `name` (decl src ln 664) from
   assn asm ln 25618, prod ln 678.22, live ln 679, enc 0
@@ -1511,7 +1511,7 @@ Execution:
   Function Covered:  false
   Complete:          false
   Within Time Limit: false
-  Within Fork Limit: true
+  Within Fork Limit: false
 
 Checking equivalence of `prefix` (decl src ln 662) from
   assn asm ln 25579, prod ln 662.0, live ln 673, enc 0
@@ -1551,7 +1551,7 @@ Execution:
   Function Covered:  false
   Complete:          false
   Within Time Limit: false
-  Within Fork Limit: true
+  Within Fork Limit: false
 
 #### Check after using before as reference
 
@@ -1583,7 +1583,7 @@ Execution:
   Function Covered:  false
   Complete:          false
   Within Time Limit: false
-  Within Fork Limit: true
+  Within Fork Limit: false
 
 Checking equivalence of `i` (decl src ln 665) from
   assn asm ln 25560, prod ln 676.41, live ln 677, enc 0
@@ -1623,7 +1623,7 @@ Execution:
   Function Covered:  false
   Complete:          false
   Within Time Limit: false
-  Within Fork Limit: true
+  Within Fork Limit: false
 
 Checking equivalence of `name` (decl src ln 664) from
   assn asm ln 25576, prod ln 678.22, live ln 679, enc 0
@@ -1653,7 +1653,7 @@ Execution:
   Function Covered:  false
   Complete:          false
   Within Time Limit: false
-  Within Fork Limit: true
+  Within Fork Limit: false
 
 Checking equivalence of `prefix` (decl src ln 662) from
   assn asm ln 25544, prod ln 662.0, live ln 673, enc 0
@@ -1693,7 +1693,7 @@ Execution:
   Function Covered:  false
   Complete:          false
   Within Time Limit: false
-  Within Fork Limit: true
+  Within Fork Limit: false
 
 ## Function `skip_prefix`
 
@@ -2077,7 +2077,7 @@ Execution:
   Function Covered:  true
   Complete:          false
   Within Time Limit: true
-  Within Fork Limit: true
+  Within Fork Limit: false
 
 Checking equivalence of `prefix` (decl src ln 674) from
   assn asm ln 25644, prod ln 674.0, live ln 677, enc 0
@@ -2117,7 +2117,7 @@ Execution:
   Function Covered:  true
   Complete:          false
   Within Time Limit: true
-  Within Fork Limit: true
+  Within Fork Limit: false
 
 Checking equivalence of `str` (decl src ln 674) from
   assn asm ln 25642, prod ln 674.0, live ln 677, enc 0
@@ -2157,7 +2157,7 @@ Execution:
   Function Covered:  true
   Complete:          false
   Within Time Limit: true
-  Within Fork Limit: true
+  Within Fork Limit: false
 
 #### Check after using before as reference
 
@@ -2189,7 +2189,7 @@ Execution:
   Function Covered:  true
   Complete:          false
   Within Time Limit: true
-  Within Fork Limit: true
+  Within Fork Limit: false
 
 Checking equivalence of `prefix` (decl src ln 674) from
   assn asm ln 25596, prod ln 674.0, live ln 677, enc 0
@@ -2229,7 +2229,7 @@ Execution:
   Function Covered:  true
   Complete:          false
   Within Time Limit: true
-  Within Fork Limit: true
+  Within Fork Limit: false
 
 Checking equivalence of `str` (decl src ln 674) from
   assn asm ln 25595, prod ln 674.0, live ln 677, enc 0
@@ -2269,7 +2269,7 @@ Execution:
   Function Covered:  true
   Complete:          false
   Within Time Limit: true
-  Within Fork Limit: true
+  Within Fork Limit: false
 
 ## Function `cmd_main`
 
@@ -3962,7 +3962,7 @@ Execution:
   Function Covered:  false
   Complete:          false
   Within Time Limit: true
-  Within Fork Limit: true
+  Within Fork Limit: false
 
 ❌ Before assn asm ln 25845, prod ln 932.10, live ln 933, enc None for `argv` (decl src ln 864) was not encountered during execution
 
@@ -4037,7 +4037,7 @@ Execution:
   Function Covered:  false
   Complete:          false
   Within Time Limit: true
-  Within Fork Limit: true
+  Within Fork Limit: false
 
 ❌ Before assn asm ln 25844, prod ln 932.5, live ln 933, enc None for `cmd` (decl src ln 866) was not encountered during execution
 
@@ -4111,7 +4111,7 @@ Execution:
   Function Covered:  false
   Complete:          false
   Within Time Limit: true
-  Within Fork Limit: true
+  Within Fork Limit: false
 
 Checking equivalence of `done_help` (decl src ln 867) from
   assn asm ln 25703, prod ln 867.6, live ln 869, enc 0
@@ -4152,7 +4152,7 @@ Execution:
   Function Covered:  false
   Complete:          false
   Within Time Limit: true
-  Within Fork Limit: true
+  Within Fork Limit: false
 
 Checking equivalence of `slash` (decl src ln 873) from
   assn asm ln 25720, prod ln 873.23, live ln 874, enc 0
@@ -4182,7 +4182,7 @@ Execution:
   Function Covered:  false
   Complete:          false
   Within Time Limit: true
-  Within Fork Limit: true
+  Within Fork Limit: false
 
 Checking equivalence of `was_alias` (decl src ln 926) from
   assn asm ln 25830, prod ln 926.19, live ln 927, enc 0
@@ -4220,7 +4220,7 @@ Execution:
   Function Covered:  false
   Complete:          false
   Within Time Limit: true
-  Within Fork Limit: true
+  Within Fork Limit: false
 
 #### Check after using before as reference
 
@@ -4320,7 +4320,7 @@ Execution:
   Function Covered:  false
   Complete:          false
   Within Time Limit: true
-  Within Fork Limit: true
+  Within Fork Limit: false
 
 ❌ After assn asm ln 25782, prod ln 932.10, live ln 933, enc None for `argv` (decl src ln 864) was not encountered during execution
 
@@ -4393,7 +4393,7 @@ Execution:
   Function Covered:  false
   Complete:          false
   Within Time Limit: true
-  Within Fork Limit: true
+  Within Fork Limit: false
 
 ❌ After assn asm ln 25781, prod ln 932.5, live ln 933, enc None for `cmd` (decl src ln 866) was not encountered during execution
 
@@ -4467,7 +4467,7 @@ Execution:
   Function Covered:  false
   Complete:          false
   Within Time Limit: true
-  Within Fork Limit: true
+  Within Fork Limit: false
 
 Checking equivalence of `done_help` (decl src ln 867) from
   assn asm ln 25643, prod ln 867.0, live ln 869, enc 0
@@ -4508,7 +4508,7 @@ Execution:
   Function Covered:  false
   Complete:          false
   Within Time Limit: true
-  Within Fork Limit: true
+  Within Fork Limit: false
 
 Checking equivalence of `slash` (decl src ln 873) from
   assn asm ln 25659, prod ln 873.23, live ln 874, enc 0
@@ -4538,7 +4538,7 @@ Execution:
   Function Covered:  false
   Complete:          false
   Within Time Limit: true
-  Within Fork Limit: true
+  Within Fork Limit: false
 
 Checking equivalence of `was_alias` (decl src ln 926) from
   assn asm ln 25768, prod ln 926.19, live ln 927, enc 0
@@ -4576,7 +4576,7 @@ Execution:
   Function Covered:  false
   Complete:          false
   Within Time Limit: true
-  Within Fork Limit: true
+  Within Fork Limit: false
 
 ## Function `git_find_last_dir_sep`
 
@@ -6057,6 +6057,6 @@ Execution:
   Function Covered:  24
   Complete:          10
   Within Time Limit: 90
-  Within Fork Limit: 102
+  Within Fork Limit: 29
 
 ❌ Some consistency checks failed
