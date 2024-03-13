@@ -200,3 +200,29 @@ def variables_with_matching_values_by_optimisation_level(df):
     ylabel="Normalised events with matching values",
     ybound=(0, 1.004),
   )
+
+def status_by_optimisation_level(df):
+  df = df.copy()
+  df = df.drop(columns=["Name"])
+  df = df.groupby(level=[0,1,2,3]).sum()
+  df = df.melt(
+    var_name="Status",
+    value_name="Count",
+    ignore_index=False,
+  )
+  # Copy index to column to help `catplot`
+  df["Level"] = df.index.get_level_values("Level")
+  g = sns.catplot(
+    df,
+    x="Level",
+    y="Count",
+    hue="Status",
+    orient="v",
+    kind="bar",
+    height=3.5,
+  )
+  g.set(
+    title=f"Status by optimisation level ({friendly_name})",
+    xlabel="Optimisation level",
+    ylabel="Assignment events",
+  )
