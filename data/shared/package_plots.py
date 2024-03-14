@@ -61,7 +61,6 @@ def load_data():
     df.variant = variant
     dfs.append(df)
 
-  read_run("clang/13/O0", ("Clang", "13", "O0"))
   read_run("clang/13/O0-mem2reg", ("Clang", "13", "O0-mem2reg"))
 
   # Check names present in each compilation for differences
@@ -143,9 +142,8 @@ def normalise(df):
   # 0)["Assignments"]
 
   # Normalise assignment count columns
-  # TODO: Filter out rows where assignments == 0...?
-  df["Matching Value"] = df["Matching Value"] / df["Assignments"].replace(0, 1)
-  df["Matching Coords"] = df["Matching Coords"] / df["Assignments"].replace(0, 1)
+  df["Matching Value"] = df["Matching Value"] / df["Reference"].replace(0, 1)
+  df["Matching Coords"] = df["Matching Coords"] / df["Reference"].replace(0, 1)
 
 def variables_with_matching_coords_by_optimisation_level(df):
   df = df.copy()
