@@ -199,11 +199,23 @@ def variables_with_matching_values_by_optimisation_level(df):
     ybound=(0, 1.004),
   )
 
-def status_by_optimisation_level(df):
+def reference_status_by_optimisation_level(df):
   df = df.copy()
   df = df.drop(columns=["Name"])
   df = df.groupby(level=[0,1,2,3]).sum()
+  df = df.div(df["Reference"].replace(0, 1), axis="index")
   df = df.melt(
+    value_vars=[
+      "Ref Not Encountered",
+      "Ref Not in Test",
+      "Unused",
+      "Removable",
+      "Unreachable",
+      "Ref Function Covered",
+      "Ref Execution Complete",
+      "Ref Within Time Limit",
+      "Ref Within Fork Limit",
+    ],
     var_name="Status",
     value_name="Count",
     ignore_index=False,
@@ -220,7 +232,44 @@ def status_by_optimisation_level(df):
     height=3.5,
   )
   g.set(
-    title=f"Status by optimisation level ({friendly_name})",
+    title=f"Reference status by optimisation level ({friendly_name})",
     xlabel="Optimisation level",
-    ylabel="Assignment events",
+    ylabel="Normalised events",
+    ybound=(0, 1.004),
+  )
+
+def test_status_by_optimisation_level(df):
+  df = df.copy()
+  df = df.drop(columns=["Name"])
+  df = df.groupby(level=[0,1,2,3]).sum()
+  df = df.div(df["Test"].replace(0, 1), axis="index")
+  df = df.melt(
+    value_vars=[
+      "Test Not Encountered",
+      "Test Not in Ref",
+      "Test Function Covered",
+      "Test Execution Complete",
+      "Test Within Time Limit",
+      "Test Within Fork Limit",
+    ],
+    var_name="Status",
+    value_name="Count",
+    ignore_index=False,
+  )
+  # Copy index to column to help `catplot`
+  df["Level"] = df.index.get_level_values("Level")
+  g = sns.catplot(
+    df,
+    x="Level",
+    y="Count",
+    hue="Status",
+    orient="v",
+    kind="bar",
+    height=3.5,
+  )
+  g.set(
+    title=f"Test status by optimisation level ({friendly_name})",
+    xlabel="Optimisation level",
+    ylabel="Normalised events",
+    ybound=(0, 1.004),
   )
