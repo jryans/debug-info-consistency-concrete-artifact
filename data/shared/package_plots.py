@@ -145,6 +145,10 @@ def normalise(df):
   df["Matching Value"] = df["Matching Value"] / df["Reference"].replace(0, 1)
   df["Matching Coords"] = df["Matching Coords"] / df["Reference"].replace(0, 1)
 
+  # Invert negative columns
+  df["Ref Encountered"] = df["Reference"] - df["Ref Not Encountered"]
+  df["Test Encountered"] = df["Test"] - df["Test Not Encountered"]
+
 def variables_with_matching_coords_by_optimisation_level(df):
   df = df.copy()
   df["Order"] = df.sort_values(by="Matching Coords", ascending=False).groupby("Variant").cumcount()
@@ -206,15 +210,15 @@ def reference_status_by_optimisation_level(df):
   df = df.div(df["Reference"].replace(0, 1), axis="index")
   df = df.melt(
     value_vars=[
-      "Ref Not Encountered",
-      "Ref Not in Test",
-      "Unused",
-      "Removable",
-      "Unreachable",
+      "Ref Encountered",
       "Ref Function Covered",
       "Ref Execution Complete",
       "Ref Within Time Limit",
       "Ref Within Fork Limit",
+      "Ref Not in Test",
+      "Unused",
+      "Removable",
+      "Unreachable",
     ],
     var_name="Status",
     value_name="Count",
@@ -245,12 +249,12 @@ def test_status_by_optimisation_level(df):
   df = df.div(df["Test"].replace(0, 1), axis="index")
   df = df.melt(
     value_vars=[
-      "Test Not Encountered",
-      "Test Not in Ref",
+      "Test Encountered",
       "Test Function Covered",
       "Test Execution Complete",
       "Test Within Time Limit",
       "Test Within Fork Limit",
+      "Test Not in Ref",
     ],
     var_name="Status",
     value_name="Count",
