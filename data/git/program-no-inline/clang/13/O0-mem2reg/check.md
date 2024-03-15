@@ -1,10 +1,10 @@
 +++ dirname ./check.sh
 ++ cd .
 ++ pwd
-+ SCRIPT_DIR=/Users/jryans/Research/Papers/debug-info-consistency/data/git/program-no-inline
-+ '[' /Users/jryans/Research/Papers/debug-info-consistency/data/git/program-no-inline '!=' /Users/jryans/Research/Papers/debug-info-consistency/data/git/program-no-inline ']'
++ SCRIPT_DIR=/Users/jryans/Research/Papers/debug-info-consistency/data/git/program-no-inline/clang/13/O0-mem2reg
++ '[' /Users/jryans/Research/Papers/debug-info-consistency/data/git/program-no-inline/clang/13/O0-mem2reg '!=' /Users/jryans/Research/Papers/debug-info-consistency/data/git/program-no-inline/clang/13/O0-mem2reg ']'
 + TARGET_NAME=git
-+ source /Users/jryans/Research/Papers/debug-info-consistency/data/git/program-no-inline/../../vars.sh
++ source /Users/jryans/Research/Papers/debug-info-consistency/data/git/program-no-inline/clang/13/O0-mem2reg/../../../../../vars.sh
 ++ set -eux
 ++ CC_SYSROOT_OPTS='--sysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk'
 ++ CC_COMMON_OPTS='--sysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -g'
@@ -28,8 +28,8 @@
 + version=13
 + echo '## Checking debug consistency of `git` (Clang 13, O0-mem2reg)'
 ## Checking debug consistency of `git` (Clang 13, O0-mem2reg)
-+ /Users/jryans/Projects/klee/build-release-debug/bin/check-debug-info clang/13/O0/git.bc clang/13/O0-mem2reg/git.bc --debug-only=check-debug-info,values-collector,variable --debug-execution-trace --max-functions=10 --max-forks=4 --max-time=10s --search=random-path --tsv
-Checking clang/13/O0/git.bc and clang/13/O0-mem2reg/git.bc for debug info consistency…
++ /Users/jryans/Projects/klee/build-release-debug/bin/check-debug-info ../O0/git.bc git.bc --debug-only=check-debug-info,values-collector,variable --debug-execution-trace --max-functions=10 --max-forks=4 --max-time=10s --search=random-path --tsv
+Checking ../O0/git.bc and git.bc for debug info consistency…
 
 ## Functions
 
@@ -540,7 +540,7 @@ Collected value for `i`
   Assignment asm ln 25558, prod ln 638.41, live ln 639, enc 4
   %inc = add nsw i32 %6, 1, l638 c41
   (w32 0x1)
-[0;1;35mKLEE: WARNING ONCE: skipping fork (max-forks reached)
+[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m
 🔔 Unable to execute all before instructions
 
@@ -576,7 +576,8 @@ Collected value for `i`
   Assignment asm ln 25529, prod ln 638.41, live ln 639, enc 2
   %inc = add nsw i32 %i.0, 1, l638 c41
   (w32 0x1)
-
+[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m
 🔔 Unable to execute all after program states
 
 ### Assignments
@@ -1011,7 +1012,26 @@ Collected value for `name`
   Replaced concrete pointer with hash (w64 0x8467E337196AF796)
   %8 = load i8*, i8** %name, l678 c35
   (w64 0x8467E337196AF796)
-KLEE: HaltTimer invoked
+[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0mKLEE: HaltTimer invoked
 [0mKLEE: halting execution, dumping remaining states
 [0m
 🔔 Unable to execute all before instructions
@@ -1081,7 +1101,15 @@ Collected value for `name`
   Replaced concrete pointer with hash (w64 0x8467E337196AF796)
   %5 = load i8*, i8** %name, l678 c35
   (w64 0x8467E337196AF796)
-KLEE: HaltTimer invoked
+[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0mKLEE: HaltTimer invoked
 [0mKLEE: halting execution, dumping remaining states
 [0m
 🔔 Unable to execute all after instructions
@@ -1600,7 +1628,10 @@ Collected value for `prefix`
   Replaced concrete pointer with hash (w64 0xD547FB517EBA830D)
   %incdec.ptr1 = getelementptr inbounds i8, i8* %6, i32 1, l682 c28
   (w64 0xD547FB517EBA830D)
-
+[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m
 🔔 Unable to execute all before program states
 
 #### After values
@@ -1657,7 +1688,9 @@ Collected value for `prefix`
   Replaced concrete pointer with hash (w64 0xD547FB517EBA830D)
   %incdec.ptr1 = getelementptr inbounds i8, i8* %prefix.addr.0, i32 1, l682 c28
   (w64 0xD547FB517EBA830D)
-
+[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m
 🔔 Unable to execute all after program states
 
 ### Assignments
@@ -2461,29 +2494,35 @@ Collected value for `argv`
   Replaced concrete pointer with hash (w64 0x2CBE786E7EDBF201)
   %21 = load i8**, i8*** %argv.addr, l912 c29
   (w64 0x2CBE786E7EDBF201)
-Collected value for `cmd`
+[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0mCollected value for `cmd`
   Assignment asm ln 25871, prod ln 943.3, live ln 944, enc 8
   Concrete pointer resolves to .str.9, offset (w64 0x0)
   Created deref expr <concrete pointer>
   Replaced concrete pointer with hash (w64 0xB003E4C9E55B68A4)
   %38 = load i8*, i8** %cmd, l943 c3
   (w64 0xB003E4C9E55B68A4)
-Collected value for `argv`
+[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0mCollected value for `argv`
   Assignment asm ln 25806, prod ln 912.55, live ln 913, enc 12
   Concrete pointer resolves to handle_options.argv.deref.deref, offset (w64 0x0)
   Created deref expr <concrete pointer>
   Replaced concrete pointer with hash (w64 0x2CBE786E7EDBF201)
   %23 = load i8**, i8*** %argv.addr, l912 c55
   (w64 0x2CBE786E7EDBF201)
-Collected value for `was_alias`
+[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0mCollected value for `was_alias`
   Assignment asm ln 25837, prod ln 929.7, live ln 930, enc 1
   %29 = load i32, i32* %was_alias, l929 c7
   (ReadLSB w32 (w32 0x0) run_argv.return)
-Collected value for `done_help`
+[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0mCollected value for `done_help`
   Assignment asm ln 25854, prod ln 935.8, live ln 936, enc 1
   %34 = load i32, i32* %done_help, l935 c8
   (w32 0x0)
-Collected value for `cmd`
+[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0mCollected value for `cmd`
   Assignment asm ln 25859, prod ln 936.37, live ln 937, enc 9
   Concrete pointer resolves to .str.9, offset (w64 0x0)
   Created deref expr <concrete pointer>
@@ -2508,7 +2547,9 @@ Collected value for `done_help`
   Assignment asm ln 25865, prod ln 937.14, live ln 938, enc 2
   i32 1
   (w32 0x1)
-
+[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m
 🔔 Unable to execute all before instructions
 
 🔔 Unable to execute all before program states
@@ -2701,28 +2742,33 @@ Collected value for `argv`
   Replaced concrete pointer with hash (w64 0x2CBE786E7EDBF201)
   %19 = load i8**, i8*** %argv.addr, l912 c29
   (w64 0x2CBE786E7EDBF201)
-Collected value for `cmd`
+[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0mCollected value for `cmd`
   Assignment asm ln 25807, prod ln 943.3, live ln 944, enc 8
   Concrete pointer resolves to .str.9, offset (w64 0x0)
   Created deref expr <concrete pointer>
   Replaced concrete pointer with hash (w64 0xB003E4C9E55B68A4)
   %34 = load i8*, i8** %cmd, l943 c3
   (w64 0xB003E4C9E55B68A4)
-Collected value for `argv`
+[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0mCollected value for `argv`
   Assignment asm ln 25743, prod ln 912.55, live ln 913, enc 12
   Concrete pointer resolves to handle_options.argv.deref.deref, offset (w64 0x0)
   Created deref expr <concrete pointer>
   Replaced concrete pointer with hash (w64 0x2CBE786E7EDBF201)
   %21 = load i8**, i8*** %argv.addr, l912 c55
   (w64 0x2CBE786E7EDBF201)
-Collected value for `argv`
+[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0mCollected value for `argv`
   Assignment asm ln 25751, prod ln 913.3, live ln 914, enc 13
   Concrete pointer resolves to handle_options.argv.deref.deref, offset (w64 0x0)
   Created deref expr <concrete pointer>
   Replaced concrete pointer with hash (w64 0x2CBE786E7EDBF201)
   %23 = load i8**, i8*** %argv.addr, l913 c3
   (w64 0x2CBE786E7EDBF201)
-Collected value for `cmd`
+[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0mCollected value for `cmd`
   Assignment asm ln 25795, prod ln 936.37, live ln 937, enc 9
   Concrete pointer resolves to .str.9, offset (w64 0x0)
   Created deref expr <concrete pointer>
@@ -2747,7 +2793,10 @@ Collected value for `done_help`
   Assignment asm ln 25801, prod ln 867.0, live ln 925, enc 2
   i32 1
   (w32 0x1)
-
+[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m
 🔔 Unable to execute all after instructions
 
 🔔 Unable to execute all after program states
