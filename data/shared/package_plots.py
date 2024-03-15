@@ -138,8 +138,14 @@ def load_data():
 
 def normalise(df):
   # Convert boolean columns to assignment counts
-  # df["Function Covered Assns"] = df.where(df["Function Covered"],
-  # 0)["Assignments"]
+  df["Ref Function Covered"] = df.where(df["Ref Function Covered"], 0)["Reference"]
+  df["Ref Execution Complete"] = df.where(df["Ref Execution Complete"], 0)["Reference"]
+  df["Ref Within Time Limit"] = df.where(df["Ref Within Time Limit"], 0)["Reference"]
+  df["Ref Within Fork Limit"] = df.where(df["Ref Within Fork Limit"], 0)["Reference"]
+  df["Test Function Covered"] = df.where(df["Test Function Covered"], 0)["Test"]
+  df["Test Execution Complete"] = df.where(df["Test Execution Complete"], 0)["Test"]
+  df["Test Within Time Limit"] = df.where(df["Test Within Time Limit"], 0)["Test"]
+  df["Test Within Fork Limit"] = df.where(df["Test Within Fork Limit"], 0)["Test"]
 
   # Normalise assignment count columns
   df["Matching Value"] = df["Matching Value"] / df["Reference"].replace(0, 1)
