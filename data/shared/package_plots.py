@@ -215,6 +215,8 @@ def reference_status_by_optimisation_level(df):
   df = df.drop(columns=["Name"])
   df = df.groupby(level=[0,1,2,3]).sum()
   df = df.div(df["Reference"].replace(0, 1), axis="index")
+  # Only need a single row for reference status
+  df = df.head(1)
   df = df.melt(
     value_vars=[
       "Ref Encountered",
@@ -222,7 +224,6 @@ def reference_status_by_optimisation_level(df):
       "Ref Execution Complete",
       "Ref Within Time Limit",
       "Ref Within Fork Limit",
-      "Ref Not in Test",
       "Unused",
       "Removable",
       "Unreachable",
@@ -243,7 +244,7 @@ def reference_status_by_optimisation_level(df):
     height=3.5,
   )
   g.set(
-    title=f"Reference status by optimisation level ({friendly_name})",
+    title=f"Reference status ({friendly_name})",
     xlabel="Optimisation level",
     ylabel="Normalised events",
     ybound=(0, 1.004),
@@ -262,6 +263,7 @@ def test_status_by_optimisation_level(df):
       "Test Within Time Limit",
       "Test Within Fork Limit",
       "Test Not in Ref",
+      "Ref Not in Test",
     ],
     var_name="Status",
     value_name="Count",
