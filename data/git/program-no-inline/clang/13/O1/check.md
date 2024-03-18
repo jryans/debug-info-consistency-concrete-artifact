@@ -23,12 +23,12 @@
 +++ '[' -z check-debug-info ']'
 +++ echo /Users/jryans/Projects/klee/build-release-debug/bin/check-debug-info
 ++ CHECK=/Users/jryans/Projects/klee/build-release-debug/bin/check-debug-info
-++ CHECK_OPTS='--debug-only=check-debug-info,values-collector,variable --debug-execution-trace --disable-verify --max-functions=10 --max-forks=4 --max-time=10s --search=random-path --tsv'
+++ CHECK_OPTS='--debug-only=check-debug-info,values-collector,variable --debug-execution-trace --disable-verify --max-functions=10 --max-forks=32 --max-time=5s --search=random-path --tsv'
 + level=O1
 + version=13
 + echo '## Checking debug consistency of `git` (Clang 13, O1)'
 ## Checking debug consistency of `git` (Clang 13, O1)
-+ /Users/jryans/Projects/klee/build-release-debug/bin/check-debug-info ../O0/git.bc git.bc --debug-only=check-debug-info,values-collector,variable --debug-execution-trace --disable-verify --max-functions=10 --max-forks=4 --max-time=10s --search=random-path --tsv
++ /Users/jryans/Projects/klee/build-release-debug/bin/check-debug-info ../O0/git.bc git.bc --debug-only=check-debug-info,values-collector,variable --debug-execution-trace --disable-verify --max-functions=10 --max-forks=32 --max-time=5s --search=random-path --tsv
 Checking ../O0/git.bc and git.bc for debug info consistency…
 
 ## Functions
@@ -548,7 +548,8 @@ Collected value for `i`
   Assignment asm ln 25558, prod ln 638.41, live ln 639, enc 4
   %inc = add nsw i32 %6, 1, l638 c41
   (w32 0x1)
-[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+KLEE: HaltTimer invoked
+[0mKLEE: halting execution, dumping remaining states
 [0m
 🔔 Unable to execute all before instructions
 
@@ -594,8 +595,8 @@ Collected value for `i`
   %indvars.iv = phi i64 [ 0, %entry ], [ %indvars.iv.next, %for.cond ]
   Block: 0
   (w64 0x0)
-[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+KLEE: HaltTimer invoked
+[0mKLEE: halting execution, dumping remaining states
 [0m
 🔔 Unable to execute all after program states
 
@@ -810,13 +811,13 @@ Warnings:
 Reference Execution:
   Function Covered:  false
   Complete:          false
-  Within Time Limit: true
-  Within Fork Limit: false
+  Within Time Limit: false
+  Within Fork Limit: true
 Test Execution:
   Function Covered:  true
   Complete:          false
-  Within Time Limit: true
-  Within Fork Limit: false
+  Within Time Limit: false
+  Within Fork Limit: true
 
 Checking equivalence of `p` (decl src ln 639) from
   assn asm ln 24079, prod ln 639.35, live ln 640, enc 0
@@ -850,13 +851,13 @@ Warnings:
 Reference Execution:
   Function Covered:  false
   Complete:          false
-  Within Time Limit: true
-  Within Fork Limit: false
+  Within Time Limit: false
+  Within Fork Limit: true
 Test Execution:
   Function Covered:  true
   Complete:          false
-  Within Time Limit: true
-  Within Fork Limit: false
+  Within Time Limit: false
+  Within Fork Limit: true
 
 Checking equivalence of `s` (decl src ln 635) from
   assn asm ln 24063, prod ln 635.0, live ln 638, enc 0
@@ -890,13 +891,13 @@ Warnings:
 Reference Execution:
   Function Covered:  false
   Complete:          false
-  Within Time Limit: true
-  Within Fork Limit: false
+  Within Time Limit: false
+  Within Fork Limit: true
 Test Execution:
   Function Covered:  true
   Complete:          false
-  Within Time Limit: true
-  Within Fork Limit: false
+  Within Time Limit: false
+  Within Fork Limit: true
 
 ## Function `load_builtin_commands`
 
@@ -1083,26 +1084,7 @@ Collected value for `name`
   Replaced concrete pointer with hash (w64 0x8467E337196AF796)
   %8 = load i8*, i8** %name, l678 c35
   (w64 0x8467E337196AF796)
-[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0mKLEE: HaltTimer invoked
+KLEE: HaltTimer invoked
 [0mKLEE: halting execution, dumping remaining states
 [0m
 🔔 Unable to execute all before instructions
@@ -1172,11 +1154,7 @@ Collected value for `name`
   Replaced concrete pointer with hash (w64 0x8467E337196AF796)
   %3 = load i8*, i8** %name, !tbaa !97223, l678 c22
   (w64 0x8467E337196AF796)
-[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0mKLEE: HaltTimer invoked
+KLEE: HaltTimer invoked
 [0mKLEE: halting execution, dumping remaining states
 [0m
 🔔 Unable to execute all after instructions
@@ -1318,7 +1296,15 @@ and
 
 Filtering after assignments: `name` (decl src ln 664)
 
-🔔 After `name` (decl src ln 664) assn asm ln 24128, prod ln 678.22, live ln 679, enc 0 not debug meaningful, removing
+Checking equivalence of `name` (decl src ln 664) from
+  assn asm ln 24129, prod ln 678.22, live ln 679, enc 1
+  %3 = load i8*, i8** %name, !tbaa !97223, l678 c22
+  (w64 0x8467E337196AF796)
+and
+  assn asm ln 24128, prod ln 678.22, live ln 679, enc 0
+  %3 = load i8*, i8** %name, !tbaa !97223, l678 c22
+  (w64 0x8467E337196AF796)
+🔔 Removing: asm ln 24129, prod ln 678.22, live ln 679, enc 1
 
 Filtering after assignments: `i` (decl src ln 665)
 
@@ -1348,7 +1334,7 @@ Collating encountered after assignments: `prefix` (decl src ln 662)
 Collating encountered after assignments: `cmds` (decl src ln 662)
   asm ln 24103, prod ln 662.0, live ln 664, enc 0
 Collating encountered after assignments: `name` (decl src ln 664)
-  asm ln 24129, prod ln 678.22, live ln 679, enc 0
+  asm ln 24128, prod ln 678.22, live ln 679, enc 0
 Collating encountered after assignments: `i` (decl src ln 665)
   asm ln 24118, prod ln 676.41, live ln 677, enc 0
   asm ln 24137, prod ln 676.41, live ln 677, enc 1
@@ -1389,12 +1375,12 @@ Reference Execution:
   Function Covered:  false
   Complete:          false
   Within Time Limit: false
-  Within Fork Limit: false
+  Within Fork Limit: true
 Test Execution:
   Function Covered:  false
   Complete:          false
   Within Time Limit: false
-  Within Fork Limit: false
+  Within Fork Limit: true
 
 Checking equivalence of `i` (decl src ln 665) from
   assn asm ln 24118, prod ln 676.41, live ln 677, enc 0
@@ -1439,22 +1425,22 @@ Reference Execution:
   Function Covered:  false
   Complete:          false
   Within Time Limit: false
-  Within Fork Limit: false
+  Within Fork Limit: true
 Test Execution:
   Function Covered:  false
   Complete:          false
   Within Time Limit: false
-  Within Fork Limit: false
+  Within Fork Limit: true
 
 Checking equivalence of `name` (decl src ln 664) from
-  assn asm ln 24129, prod ln 678.22, live ln 679, enc 0
+  assn asm ln 24128, prod ln 678.22, live ln 679, enc 0
   %3 = load i8*, i8** %name, !tbaa !97223, l678 c22
   (w64 0x8467E337196AF796)
 and
   assn asm ln 25618, prod ln 678.22, live ln 679, enc 0
   %7 = load i8*, i8** %name, l678 c22
   (w64 0x8467E337196AF796)
-✅ Before `name` (decl src ln 664) assn asm ln 25618, prod ln 678.22, live ln 679, enc 0 symbolic value matches after assn asm ln 24129, prod ln 678.22, live ln 679, enc 0
+✅ Before `name` (decl src ln 664) assn asm ln 25618, prod ln 678.22, live ln 679, enc 0 symbolic value matches after assn asm ln 24128, prod ln 678.22, live ln 679, enc 0
 
 ✅ After `name` assns checked using before as reference
 Assignments:         name
@@ -1479,12 +1465,12 @@ Reference Execution:
   Function Covered:  false
   Complete:          false
   Within Time Limit: false
-  Within Fork Limit: false
+  Within Fork Limit: true
 Test Execution:
   Function Covered:  false
   Complete:          false
   Within Time Limit: false
-  Within Fork Limit: false
+  Within Fork Limit: true
 
 ❌ Before `prefix` (decl src ln 662) assn asm ln 25579, prod ln 662.0, live ln 673, enc 0 coordinates don't match after assn asm ln 24101, prod ln 662.0, live ln 664, enc 0
 Checking equivalence of `prefix` (decl src ln 662) from
@@ -1531,12 +1517,12 @@ Reference Execution:
   Function Covered:  false
   Complete:          false
   Within Time Limit: false
-  Within Fork Limit: false
+  Within Fork Limit: true
 Test Execution:
   Function Covered:  false
   Complete:          false
   Within Time Limit: false
-  Within Fork Limit: false
+  Within Fork Limit: true
 
 ## Function `skip_prefix`
 
@@ -1692,9 +1678,8 @@ Collected value for `prefix`
   Replaced concrete pointer with hash (w64 0xD547FB517EBA830D)
   %incdec.ptr1 = getelementptr inbounds i8, i8* %6, i32 1, l682 c28
   (w64 0xD547FB517EBA830D)
-[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+KLEE: HaltTimer invoked
+[0mKLEE: halting execution, dumping remaining states
 [0m
 🔔 Unable to execute all before program states
 
@@ -1752,12 +1737,8 @@ Collected value for `prefix`
   Replaced concrete pointer with hash (w64 0xD547FB517EBA830D)
   %incdec.ptr1 = getelementptr inbounds i8, i8* %prefix.addr.0, i64 1, l682 c28
   (w64 0xD547FB517EBA830D)
-[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+KLEE: HaltTimer invoked
+[0mKLEE: halting execution, dumping remaining states
 [0m
 🔔 Unable to execute all after program states
 
@@ -1933,13 +1914,13 @@ Warnings:
 Reference Execution:
   Function Covered:  true
   Complete:          false
-  Within Time Limit: true
-  Within Fork Limit: false
+  Within Time Limit: false
+  Within Fork Limit: true
 Test Execution:
   Function Covered:  true
   Complete:          false
-  Within Time Limit: true
-  Within Fork Limit: false
+  Within Time Limit: false
+  Within Fork Limit: true
 
 Checking equivalence of `prefix` (decl src ln 674) from
   assn asm ln 24152, prod ln 674.0, live ln 677, enc 0
@@ -1983,13 +1964,13 @@ Warnings:
 Reference Execution:
   Function Covered:  true
   Complete:          false
-  Within Time Limit: true
-  Within Fork Limit: false
+  Within Time Limit: false
+  Within Fork Limit: true
 Test Execution:
   Function Covered:  true
   Complete:          false
-  Within Time Limit: true
-  Within Fork Limit: false
+  Within Time Limit: false
+  Within Fork Limit: true
 
 Checking equivalence of `str` (decl src ln 674) from
   assn asm ln 24151, prod ln 674.0, live ln 677, enc 0
@@ -2033,13 +2014,13 @@ Warnings:
 Reference Execution:
   Function Covered:  true
   Complete:          false
-  Within Time Limit: true
-  Within Fork Limit: false
+  Within Time Limit: false
+  Within Fork Limit: true
 Test Execution:
   Function Covered:  true
   Complete:          false
-  Within Time Limit: true
-  Within Fork Limit: false
+  Within Time Limit: false
+  Within Fork Limit: true
 
 ## Function `cmd_main`
 
@@ -2613,50 +2594,67 @@ Collected value for `argv`
   Replaced concrete pointer with hash (w64 0x2CBE786E7EDBF201)
   %21 = load i8**, i8*** %argv.addr, l912 c29
   (w64 0x2CBE786E7EDBF201)
-[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0mCollected value for `cmd`
-  Assignment asm ln 25871, prod ln 943.3, live ln 944, enc 8
-  Concrete pointer resolves to .str.9, offset (w64 0x0)
+Collected value for `was_alias`
+  Assignment asm ln 25837, prod ln 929.7, live ln 930, enc 1
+  %29 = load i32, i32* %was_alias, l929 c7
+  (ReadLSB w32 (w32 0x0) run_argv.return)
+Collected value for `argv`
+  Assignment asm ln 25814, prod ln 913.3, live ln 914, enc 12
+  Concrete pointer resolves to handle_options.argv.deref.deref, offset (w64 0x0)
   Created deref expr <concrete pointer>
-  Replaced concrete pointer with hash (w64 0xB003E4C9E55B68A4)
-  %38 = load i8*, i8** %cmd, l943 c3
-  (w64 0xB003E4C9E55B68A4)
-[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0mCollected value for `argv`
-  Assignment asm ln 25806, prod ln 912.55, live ln 913, enc 12
+  Replaced concrete pointer with hash (w64 0x2CBE786E7EDBF201)
+  %25 = load i8**, i8*** %argv.addr, l913 c3
+  (w64 0x2CBE786E7EDBF201)
+Collected value for `done_help`
+  Assignment asm ln 25854, prod ln 935.8, live ln 936, enc 1
+  %34 = load i32, i32* %done_help, l935 c8
+  (w32 0x0)
+Collected value for `argv`
+  Assignment asm ln 25806, prod ln 912.55, live ln 913, enc 13
   Concrete pointer resolves to handle_options.argv.deref.deref, offset (w64 0x0)
   Created deref expr <concrete pointer>
   Replaced concrete pointer with hash (w64 0x2CBE786E7EDBF201)
   %23 = load i8**, i8*** %argv.addr, l912 c55
   (w64 0x2CBE786E7EDBF201)
-[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0mCollected value for `was_alias`
-  Assignment asm ln 25837, prod ln 929.7, live ln 930, enc 1
-  %29 = load i32, i32* %was_alias, l929 c7
-  (ReadLSB w32 (w32 0x0) run_argv.return)
-[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0mCollected value for `done_help`
-  Assignment asm ln 25854, prod ln 935.8, live ln 936, enc 1
-  %34 = load i32, i32* %done_help, l935 c8
-  (w32 0x0)
-[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0mCollected value for `cmd`
-  Assignment asm ln 25859, prod ln 936.37, live ln 937, enc 9
+Collected value for `cmd`
+  Assignment asm ln 25844, prod ln 932.5, live ln 933, enc 8
+  Concrete pointer resolves to .str.9, offset (w64 0x0)
+  Created deref expr <concrete pointer>
+  Replaced concrete pointer with hash (w64 0xB003E4C9E55B68A4)
+  %31 = load i8*, i8** %cmd, l932 c5
+  (w64 0xB003E4C9E55B68A4)
+Collected value for `argv`
+  Assignment asm ln 25845, prod ln 932.10, live ln 933, enc 14
+  Concrete pointer resolves to run_argv.argv.deref.deref, offset (w64 0x0)
+  Created deref expr <concrete pointer>
+  Replaced concrete pointer with hash (w64 0xAACFA374FFB4242E)
+  %32 = load i8**, i8*** %argv.addr, l932 c10
+  (w64 0xAACFA374FFB4242E)
+Collected value for `cmd`
+  Assignment asm ln 25871, prod ln 943.3, live ln 944, enc 9
+  Concrete pointer resolves to .str.9, offset (w64 0x0)
+  Created deref expr <concrete pointer>
+  Replaced concrete pointer with hash (w64 0xB003E4C9E55B68A4)
+  %38 = load i8*, i8** %cmd, l943 c3
+  (w64 0xB003E4C9E55B68A4)
+Collected value for `cmd`
+  Assignment asm ln 25859, prod ln 936.37, live ln 937, enc 10
   Concrete pointer resolves to .str.9, offset (w64 0x0)
   Created deref expr <concrete pointer>
   Replaced concrete pointer with hash (w64 0xB003E4C9E55B68A4)
   %35 = load i8*, i8** %cmd, l936 c37
   (w64 0xB003E4C9E55B68A4)
-Collected value for `argv`
-  Assignment asm ln 25861, prod ln 936.10, live ln 937, enc 13
+[0;1;31mKLEE: ERROR: git.c:933: reached "unreachable" instruction
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0mCollected value for `argv`
+  Assignment asm ln 25861, prod ln 936.10, live ln 937, enc 15
   Concrete pointer resolves to run_argv.argv.deref.deref, offset (w64 0x0)
   Created deref expr <concrete pointer>
   Replaced concrete pointer with hash (w64 0xAACFA374FFB4242E)
   %36 = load i8**, i8*** %argv.addr, l936 c10
   (w64 0xAACFA374FFB4242E)
 Collected value for `cmd`
-  Assignment asm ln 25864, prod ln 936.20, live ln 937, enc 10
+  Assignment asm ln 25864, prod ln 936.20, live ln 937, enc 11
   Concrete pointer resolves to help_unknown_cmd.return.deref, offset (w64 0x0)
   Created deref expr (ReadLSB w64 (w32 0x0) help_unknown_cmd.return.deref)
   Replaced concrete pointer with hash (w64 0xBBAED580D38F1CDC)
@@ -2666,8 +2664,8 @@ Collected value for `done_help`
   Assignment asm ln 25865, prod ln 937.14, live ln 938, enc 2
   i32 1
   (w32 0x1)
-[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+KLEE: HaltTimer invoked
+[0mKLEE: halting execution, dumping remaining states
 [0m
 🔔 Unable to execute all before instructions
 
@@ -2798,66 +2796,7 @@ Collected value for `argc`
   Assignment asm ln 24265, prod ln 901.7, live ln 902, enc 5
   %9 = load i32, i32* %argc.addr, !tbaa !97216, l901 c7
   (ReadLSB w32 (w32 0x0) handle_options.argc.deref)
-Collected value for `argv`
-  Assignment asm ln 24281, prod ln 910.27, live ln 911, enc 7
-  Concrete pointer resolves to handle_options.argv.deref.deref, offset (w64 0x0)
-  Created deref expr <concrete pointer>
-  Replaced concrete pointer with hash (w64 0x2CBE786E7EDBF201)
-  %10 = load i8**, i8*** %argv.addr, !tbaa !97220, l910 c27
-  (w64 0x2CBE786E7EDBF201)
-Collected value for `argv`
-  Assignment asm ln 24282, prod ln 910.27, live ln 911, enc 8
-  Concrete pointer resolves to handle_options.argv.deref.deref, offset (w64 0x0)
-  Created deref expr <concrete pointer>
-  Replaced concrete pointer with hash (w64 0x2CBE786E7EDBF201)
-  %10 = load i8**, i8*** %argv.addr, !tbaa !97220, l910 c27
-  (w64 0x2CBE786E7EDBF201)
-[0;1;31mKLEE: ERROR: git.c:907: reached "unreachable" instruction
-[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
-[0mCollected value for `argv`
-  Assignment asm ln 24310, prod ln 915.8, live ln 916, enc 9
-  Concrete pointer resolves to handle_options.argv.deref.deref, offset (w64 0x0)
-  Created deref expr <concrete pointer>
-  Replaced concrete pointer with hash (w64 0x2CBE786E7EDBF201)
-  %12 = load i8**, i8*** %argv.addr, !tbaa !97220, l915 c8
-  (w64 0x2CBE786E7EDBF201)
-[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0mCollected value for `cmd`
-  Assignment asm ln 24312, prod ln 915.8, live ln 916, enc 5
-  Concrete pointer resolves to .str.9, offset (w64 0x0)
-  Created deref expr <concrete pointer>
-  Replaced concrete pointer with hash (w64 0xB003E4C9E55B68A4)
-  %13 = load i8*, i8** %12, !tbaa !97220, l915 c8
-  (w64 0xB003E4C9E55B68A4)
-Collected value for `done_help`
-  Assignment asm ln 24320, prod ln 867.0, live ln 926, enc 1
-  %done_help.0 = phi i32 [ 0, %if.end38 ], [ %done_help.1, %cleanup ], l867 c6
-  Block: 0
-  (w32 0x0)
-Collected value for `was_alias`
-  Assignment asm ln 24324, prod ln 926.19, live ln 927, enc 0
-  %call40 = call fastcc i32 @run_argv(i32* nonnull %argc.addr, i8*** nonnull %argv.addr), l926 c19
-  (ReadLSB w32 (w32 0x0) run_argv.return)
-[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0mCollected value for `cmd`
-  Assignment asm ln 24338, prod ln 915.8, live ln 932, enc 6
-  Concrete pointer resolves to .str.9, offset (w64 0x0)
-  Created deref expr <concrete pointer>
-  Replaced concrete pointer with hash (w64 0xB003E4C9E55B68A4)
-  %call5369 = phi i8* [ %13, %if.end38 ], [ %call5368, %cleanup ]
-  Block: 0
-  (w64 0xB003E4C9E55B68A4)
-Collected value for `argv`
-  Assignment asm ln 24340, prod ln 932.10, live ln 933, enc 10
-  Concrete pointer resolves to run_argv.argv.deref.deref, offset (w64 0x0)
-  Created deref expr <concrete pointer>
-  Replaced concrete pointer with hash (w64 0xAACFA374FFB4242E)
-  %16 = load i8**, i8*** %argv.addr, !tbaa !97220, l932 c10
-  (w64 0xAACFA374FFB4242E)
-[0;1;31mKLEE: ERROR: git.c:933: reached "unreachable" instruction
-[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
-[0mKLEE: HaltTimer invoked
+KLEE: HaltTimer invoked
 [0mKLEE: halting execution, dumping remaining states
 [0m
 🔔 Unable to execute all after instructions
@@ -2944,13 +2883,6 @@ Parsed query
      (ReadLSB w32 (w32 0x0) cmd_main.argc))
 
 Filtering before assignments: `argv` (decl src ln 864)
-
-Expected 1 symbolic value(s), got 0
-Expected 1 symbolic value(s), got 0
-❌ Before `argv` (decl src ln 864) assn asm ln 25814, prod ln 913.3, live ln 914, enc None has no symbolic value from %25 = load i8**, i8*** %argv.addr, l913 c3
-
-Expected 1 symbolic value(s), got 0
-❌ Before `argv` (decl src ln 864) assn asm ln 25814, prod ln 913.3, live ln 914, enc None has no symbolic value from %25 = load i8**, i8*** %argv.addr, l913 c3
 
 Checking equivalence of `argv` (decl src ln 864) from
   assn asm ln 25704, prod ln 869.8, live ln 870, enc 1
@@ -3060,29 +2992,45 @@ and
 🔔 Removing: asm ln 25798, prod ln 912.29, live ln 913, enc 11
 
 Checking equivalence of `argv` (decl src ln 864) from
-  assn asm ln 25806, prod ln 912.55, live ln 913, enc 12
+  assn asm ln 25814, prod ln 913.3, live ln 914, enc 12
+  %25 = load i8**, i8*** %argv.addr, l913 c3
+  (w64 0x2CBE786E7EDBF201)
+and
+  assn asm ln 25776, prod ln 910.27, live ln 911, enc 7
+  %16 = load i8**, i8*** %argv.addr, l910 c27
+  (w64 0x2CBE786E7EDBF201)
+🔔 Removing: asm ln 25814, prod ln 913.3, live ln 914, enc 12
+
+Checking equivalence of `argv` (decl src ln 864) from
+  assn asm ln 25806, prod ln 912.55, live ln 913, enc 13
   %23 = load i8**, i8*** %argv.addr, l912 c55
   (w64 0x2CBE786E7EDBF201)
 and
   assn asm ln 25776, prod ln 910.27, live ln 911, enc 7
   %16 = load i8**, i8*** %argv.addr, l910 c27
   (w64 0x2CBE786E7EDBF201)
-🔔 Removing: asm ln 25806, prod ln 912.55, live ln 913, enc 12
+🔔 Removing: asm ln 25806, prod ln 912.55, live ln 913, enc 13
 
 Checking equivalence of `argv` (decl src ln 864) from
-  assn asm ln 25861, prod ln 936.10, live ln 937, enc 13
-  %36 = load i8**, i8*** %argv.addr, l936 c10
+  assn asm ln 25845, prod ln 932.10, live ln 933, enc 14
+  %32 = load i8**, i8*** %argv.addr, l932 c10
   (w64 0xAACFA374FFB4242E)
 and
   assn asm ln 25776, prod ln 910.27, live ln 911, enc 7
   %16 = load i8**, i8*** %argv.addr, l910 c27
   (w64 0x2CBE786E7EDBF201)
 
-Filtering before assignments: `cmd` (decl src ln 866)
+Checking equivalence of `argv` (decl src ln 864) from
+  assn asm ln 25861, prod ln 936.10, live ln 937, enc 15
+  %36 = load i8**, i8*** %argv.addr, l936 c10
+  (w64 0xAACFA374FFB4242E)
+and
+  assn asm ln 25845, prod ln 932.10, live ln 933, enc 14
+  %32 = load i8**, i8*** %argv.addr, l932 c10
+  (w64 0xAACFA374FFB4242E)
+🔔 Removing: asm ln 25861, prod ln 936.10, live ln 937, enc 15
 
-Expected 1 symbolic value(s), got 0
-Expected 1 symbolic value(s), got 0
-❌ Before `cmd` (decl src ln 866) assn asm ln 25713, prod ln 871.7, live ln 872, enc None has no symbolic value from i8* getelementptr inbounds ([9 x i8], [9 x i8]* @.str.3, i64 0, i64 0)
+Filtering before assignments: `cmd` (decl src ln 866)
 
 Expected 1 symbolic value(s), got 0
 ❌ Before `cmd` (decl src ln 866) assn asm ln 25713, prod ln 871.7, live ln 872, enc None has no symbolic value from i8* getelementptr inbounds ([9 x i8], [9 x i8]* @.str.3, i64 0, i64 0)
@@ -3155,27 +3103,37 @@ and
   (w64 0x8467E337196AF796)
 
 Checking equivalence of `cmd` (decl src ln 866) from
-  assn asm ln 25871, prod ln 943.3, live ln 944, enc 8
+  assn asm ln 25844, prod ln 932.5, live ln 933, enc 8
+  %31 = load i8*, i8** %cmd, l932 c5
+  (w64 0xB003E4C9E55B68A4)
+and
+  assn asm ln 25823, prod ln 915.8, live ln 923, enc 7
+  %27 = load i8*, i8** %arrayidx39, l915 c8
+  (w64 0xB003E4C9E55B68A4)
+🔔 Removing: asm ln 25844, prod ln 932.5, live ln 933, enc 8
+
+Checking equivalence of `cmd` (decl src ln 866) from
+  assn asm ln 25871, prod ln 943.3, live ln 944, enc 9
   %38 = load i8*, i8** %cmd, l943 c3
   (w64 0xB003E4C9E55B68A4)
 and
   assn asm ln 25823, prod ln 915.8, live ln 923, enc 7
   %27 = load i8*, i8** %arrayidx39, l915 c8
   (w64 0xB003E4C9E55B68A4)
-🔔 Removing: asm ln 25871, prod ln 943.3, live ln 944, enc 8
+🔔 Removing: asm ln 25871, prod ln 943.3, live ln 944, enc 9
 
 Checking equivalence of `cmd` (decl src ln 866) from
-  assn asm ln 25859, prod ln 936.37, live ln 937, enc 9
+  assn asm ln 25859, prod ln 936.37, live ln 937, enc 10
   %35 = load i8*, i8** %cmd, l936 c37
   (w64 0xB003E4C9E55B68A4)
 and
   assn asm ln 25823, prod ln 915.8, live ln 923, enc 7
   %27 = load i8*, i8** %arrayidx39, l915 c8
   (w64 0xB003E4C9E55B68A4)
-🔔 Removing: asm ln 25859, prod ln 936.37, live ln 937, enc 9
+🔔 Removing: asm ln 25859, prod ln 936.37, live ln 937, enc 10
 
 Checking equivalence of `cmd` (decl src ln 866) from
-  assn asm ln 25864, prod ln 936.20, live ln 937, enc 10
+  assn asm ln 25864, prod ln 936.20, live ln 937, enc 11
   %call53 = call i8* @help_unknown_cmd(i8* %35), l936 c20
   (w64 0xBBAED580D38F1CDC)
 and
@@ -3358,20 +3316,40 @@ Filtering after assignments: `argv` (decl src ln 864)
 
 🔔 After `argv` (decl src ln 864) assn asm ln 24242, prod ln 892.24, live ln 893, enc None not debug meaningful, removing
 
-🔔 After `argv` (decl src ln 864) assn asm ln 24251, prod ln 897.6, live ln 898, enc None not debug meaningful, removing
-
 🔔 After `argv` (decl src ln 864) assn asm ln 24255, prod ln 897.6, live ln 898, enc None not debug meaningful, removing
 
-🔔 After `argv` (decl src ln 864) assn asm ln 24309, prod ln 915.8, live ln 916, enc None not debug meaningful, removing
+🔔 After `argv` (decl src ln 864) assn asm ln 24251, prod ln 897.6, live ln 898, enc None not debug meaningful, removing
 
-🔔 After `argv` (decl src ln 864) assn asm ln 24339, prod ln 932.10, live ln 933, enc None not debug meaningful, removing
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+❌ After `argv` (decl src ln 864) assn asm ln 24340, prod ln 932.10, live ln 933, enc None has no symbolic value from %16 = load i8**, i8*** %argv.addr, !tbaa !97220, l932 c10
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+❌ After `argv` (decl src ln 864) assn asm ln 24310, prod ln 915.8, live ln 916, enc None has no symbolic value from %12 = load i8**, i8*** %argv.addr, !tbaa !97220, l915 c8
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+❌ After `argv` (decl src ln 864) assn asm ln 24282, prod ln 910.27, live ln 911, enc None has no symbolic value from %10 = load i8**, i8*** %argv.addr, !tbaa !97220, l910 c27
 
 Expected 1 symbolic value(s), got 0
 Expected 1 symbolic value(s), got 0
 ❌ After `argv` (decl src ln 864) assn asm ln 24354, prod ln 936.10, live ln 937, enc None has no symbolic value from %18 = load i8**, i8*** %argv.addr, !tbaa !97220, l936 c10
 
 Expected 1 symbolic value(s), got 0
-❌ After `argv` (decl src ln 864) assn asm ln 24354, prod ln 936.10, live ln 937, enc None has no symbolic value from %18 = load i8**, i8*** %argv.addr, !tbaa !97220, l936 c10
+Expected 1 symbolic value(s), got 0
+❌ After `argv` (decl src ln 864) assn asm ln 24339, prod ln 932.10, live ln 933, enc None has no symbolic value from %16 = load i8**, i8*** %argv.addr, !tbaa !97220, l932 c10
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+❌ After `argv` (decl src ln 864) assn asm ln 24309, prod ln 915.8, live ln 916, enc None has no symbolic value from %12 = load i8**, i8*** %argv.addr, !tbaa !97220, l915 c8
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+❌ After `argv` (decl src ln 864) assn asm ln 24355, prod ln 936.10, live ln 937, enc None has no symbolic value from %18 = load i8**, i8*** %argv.addr, !tbaa !97220, l936 c10
+
+Expected 1 symbolic value(s), got 0
+❌ After `argv` (decl src ln 864) assn asm ln 24355, prod ln 936.10, live ln 937, enc None has no symbolic value from %18 = load i8**, i8*** %argv.addr, !tbaa !97220, l936 c10
 
 Checking equivalence of `argv` (decl src ln 864) from
   assn asm ln 24201, prod ln 864.0, live ln 869, enc 1
@@ -3431,68 +3409,20 @@ and
   %incdec.ptr = getelementptr inbounds i8*, i8** %7, i64 1, l897 c6
   (w64 0x14B219BE57D389F1)
 
-Checking equivalence of `argv` (decl src ln 864) from
-  assn asm ln 24281, prod ln 910.27, live ln 911, enc 7
-  %10 = load i8**, i8*** %argv.addr, !tbaa !97220, l910 c27
-  (w64 0x2CBE786E7EDBF201)
-and
-  assn asm ln 24243, prod ln 892.24, live ln 893, enc 6
-  %6 = load i8**, i8*** %argv.addr, !tbaa !97220, l892 c24
-  (w64 0x92BA4A64DEC532FD)
-
-Checking equivalence of `argv` (decl src ln 864) from
-  assn asm ln 24282, prod ln 910.27, live ln 911, enc 8
-  %10 = load i8**, i8*** %argv.addr, !tbaa !97220, l910 c27
-  (w64 0x2CBE786E7EDBF201)
-and
-  assn asm ln 24281, prod ln 910.27, live ln 911, enc 7
-  %10 = load i8**, i8*** %argv.addr, !tbaa !97220, l910 c27
-  (w64 0x2CBE786E7EDBF201)
-🔔 Removing: asm ln 24282, prod ln 910.27, live ln 911, enc 8
-
-Checking equivalence of `argv` (decl src ln 864) from
-  assn asm ln 24310, prod ln 915.8, live ln 916, enc 9
-  %12 = load i8**, i8*** %argv.addr, !tbaa !97220, l915 c8
-  (w64 0x2CBE786E7EDBF201)
-and
-  assn asm ln 24281, prod ln 910.27, live ln 911, enc 7
-  %10 = load i8**, i8*** %argv.addr, !tbaa !97220, l910 c27
-  (w64 0x2CBE786E7EDBF201)
-🔔 Removing: asm ln 24310, prod ln 915.8, live ln 916, enc 9
-
-Checking equivalence of `argv` (decl src ln 864) from
-  assn asm ln 24340, prod ln 932.10, live ln 933, enc 10
-  %16 = load i8**, i8*** %argv.addr, !tbaa !97220, l932 c10
-  (w64 0xAACFA374FFB4242E)
-and
-  assn asm ln 24281, prod ln 910.27, live ln 911, enc 7
-  %10 = load i8**, i8*** %argv.addr, !tbaa !97220, l910 c27
-  (w64 0x2CBE786E7EDBF201)
-
 Filtering after assignments: `done_help` (decl src ln 867)
 
 Expected 1 symbolic value(s), got 0
 Expected 1 symbolic value(s), got 0
+❌ After `done_help` (decl src ln 867) assn asm ln 24320, prod ln 867.0, live ln 926, enc None has no symbolic value from %done_help.0 = phi i32 [ 0, %if.end38 ], [ %done_help.1, %cleanup ], l867 c6
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
 ❌ After `done_help` (decl src ln 867) assn asm ln 24365, prod ln 867.6, live ln 868, enc None has no symbolic value from %done_help.1 = phi i32 [ 1, %if.then52 ], [ %done_help.0, %while.cond ], [ 1, %if.end50 ]
 
 Expected 1 symbolic value(s), got 0
 ❌ After `done_help` (decl src ln 867) assn asm ln 24365, prod ln 867.6, live ln 868, enc None has no symbolic value from %done_help.1 = phi i32 [ 1, %if.then52 ], [ %done_help.0, %while.cond ], [ 1, %if.end50 ]
 
-Checking equivalence of `done_help` (decl src ln 867) from
-  assn asm ln 24320, prod ln 867.0, live ln 926, enc 1
-  %done_help.0 = phi i32 [ 0, %if.end38 ], [ %done_help.1, %cleanup ], l867 c6
-  (w32 0x0)
-and
-  assn asm ln 24200, prod ln 867.0, live ln 869, enc 0
-  i32 0
-  (w32 0x0)
-🔔 Removing: asm ln 24320, prod ln 867.0, live ln 926, enc 1
-
 Filtering after assignments: `cmd` (decl src ln 866)
-
-🔔 After `cmd` (decl src ln 866) assn asm ln 24335, prod ln 915.8, live ln 930, enc None not debug meaningful, removing
-
-🔔 After `cmd` (decl src ln 866) assn asm ln 24313, prod ln 915.8, live ln 923, enc None not debug meaningful, removing
 
 🔔 After `cmd` (decl src ln 866) assn asm ln 24228, prod ln 890.18, live ln 891, enc None not debug meaningful, removing
 
@@ -3514,14 +3444,30 @@ Expected 1 symbolic value(s), got 0
 
 Expected 1 symbolic value(s), got 0
 Expected 1 symbolic value(s), got 0
+❌ After `cmd` (decl src ln 866) assn asm ln 24335, prod ln 915.8, live ln 930, enc None has no symbolic value from %call5369 = phi i8* [ %13, %if.end38 ], [ %call5368, %cleanup ]
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+❌ After `cmd` (decl src ln 866) assn asm ln 24313, prod ln 915.8, live ln 923, enc None has no symbolic value from %13 = load i8*, i8** %12, !tbaa !97220, l915 c8
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+❌ After `cmd` (decl src ln 866) assn asm ln 24338, prod ln 915.8, live ln 932, enc None has no symbolic value from %call5369 = phi i8* [ %13, %if.end38 ], [ %call5368, %cleanup ]
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+❌ After `cmd` (decl src ln 866) assn asm ln 24372, prod ln 936.20, live ln 943, enc None has no symbolic value from %call5368 = phi i8* [ %call53, %if.then52 ], [ %call5369, %while.cond ], [ %call5369, %if.end50 ]
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
 ❌ After `cmd` (decl src ln 866) assn asm ln 24357, prod ln 936.20, live ln 940, enc None has no symbolic value from %call53 = call i8* @help_unknown_cmd(i8* %call5369) #46, l936 c20
 
 Expected 1 symbolic value(s), got 0
 Expected 1 symbolic value(s), got 0
-❌ After `cmd` (decl src ln 866) assn asm ln 24372, prod ln 936.20, live ln 943, enc None has no symbolic value from %call5368 = phi i8* [ %call53, %if.then52 ], [ %call5369, %while.cond ], [ %call5369, %if.end50 ]
+❌ After `cmd` (decl src ln 866) assn asm ln 24312, prod ln 915.8, live ln 916, enc None has no symbolic value from %13 = load i8*, i8** %12, !tbaa !97220, l915 c8
 
 Expected 1 symbolic value(s), got 0
-❌ After `cmd` (decl src ln 866) assn asm ln 24372, prod ln 936.20, live ln 943, enc None has no symbolic value from %call5368 = phi i8* [ %call53, %if.then52 ], [ %call5369, %while.cond ], [ %call5369, %if.end50 ]
+❌ After `cmd` (decl src ln 866) assn asm ln 24312, prod ln 915.8, live ln 916, enc None has no symbolic value from %13 = load i8*, i8** %12, !tbaa !97220, l915 c8
 
 Checking equivalence of `cmd` (decl src ln 866) from
   assn asm ln 24221, prod ln 875.16, live ln 876, enc 1
@@ -3561,40 +3507,18 @@ and
   (w64 0x8467E337196AF796)
 🔔 Removing: asm ln 24246, prod ln 891.13, live ln 893, enc 4
 
-Checking equivalence of `cmd` (decl src ln 866) from
-  assn asm ln 24312, prod ln 915.8, live ln 916, enc 5
-  %13 = load i8*, i8** %12, !tbaa !97220, l915 c8
-  (w64 0xB003E4C9E55B68A4)
-and
-  assn asm ln 24235, prod ln 891.13, live ln 892, enc 2
-  %3 = load i8*, i8** %cmd, !tbaa !97220, l891 c13
-  (w64 0x8467E337196AF796)
-
-Checking equivalence of `cmd` (decl src ln 866) from
-  assn asm ln 24338, prod ln 915.8, live ln 932, enc 6
-  %call5369 = phi i8* [ %13, %if.end38 ], [ %call5368, %cleanup ]
-  (w64 0xB003E4C9E55B68A4)
-and
-  assn asm ln 24312, prod ln 915.8, live ln 916, enc 5
-  %13 = load i8*, i8** %12, !tbaa !97220, l915 c8
-  (w64 0xB003E4C9E55B68A4)
-🔔 Removing: asm ln 24338, prod ln 915.8, live ln 932, enc 6
-
 Collating encountered before assignments: `argc` (decl src ln 864)
   asm ln 25697, prod ln 864.0, live ln 867, enc 0
   asm ln 25758, prod ln 898.6, live ln 899, enc 1
   asm ln 25744, prod ln 892.18, live ln 893, enc 2
   asm ln 25760, prod ln 901.7, live ln 902, enc 3
 Collating encountered before assignments: `argv` (decl src ln 864)
-❌ Assignment asm ln 25845, prod ln 932.10, live ln 933, enc None for `argv` (decl src ln 864) was not encountered during execution
-❌ Assignment asm ln 25814, prod ln 913.3, live ln 914, enc None for `argv` (decl src ln 864) was not encountered during execution
   asm ln 25699, prod ln 864.0, live ln 867, enc 0
   asm ln 25755, prod ln 897.6, live ln 898, enc 1
   asm ln 25741, prod ln 891.3, live ln 892, enc 2
   asm ln 25776, prod ln 910.27, live ln 911, enc 3
-  asm ln 25861, prod ln 936.10, live ln 937, enc 4
+  asm ln 25845, prod ln 932.10, live ln 933, enc 4
 Collating encountered before assignments: `cmd` (decl src ln 866)
-❌ Assignment asm ln 25844, prod ln 932.5, live ln 933, enc None for `cmd` (decl src ln 866) was not encountered during execution
 ❌ Assignment asm ln 25713, prod ln 871.7, live ln 872, enc None for `cmd` (decl src ln 866) was not encountered during execution
   asm ln 25707, prod ln 869.8, live ln 870, enc 0
   asm ln 25728, prod ln 875.16, live ln 876, enc 1
@@ -3614,15 +3538,20 @@ Collating encountered after assignments: `argc` (decl src ln 864)
   asm ln 24259, prod ln 898.6, live ln 899, enc 1
   asm ln 24264, prod ln 901.7, live ln 902, enc 2
 Collating encountered after assignments: `argv` (decl src ln 864)
-❌ Assignment asm ln 24355, prod ln 936.10, live ln 937, enc None for `argv` (decl src ln 864) was not encountered during execution
+❌ Assignment asm ln 24281, prod ln 910.27, live ln 911, enc None for `argv` (decl src ln 864) was not encountered during execution
+❌ Assignment asm ln 24340, prod ln 932.10, live ln 933, enc None for `argv` (decl src ln 864) was not encountered during execution
+❌ Assignment asm ln 24310, prod ln 915.8, live ln 916, enc None for `argv` (decl src ln 864) was not encountered during execution
+❌ Assignment asm ln 24282, prod ln 910.27, live ln 911, enc None for `argv` (decl src ln 864) was not encountered during execution
 ❌ Assignment asm ln 24354, prod ln 936.10, live ln 937, enc None for `argv` (decl src ln 864) was not encountered during execution
+❌ Assignment asm ln 24339, prod ln 932.10, live ln 933, enc None for `argv` (decl src ln 864) was not encountered during execution
+❌ Assignment asm ln 24309, prod ln 915.8, live ln 916, enc None for `argv` (decl src ln 864) was not encountered during execution
+❌ Assignment asm ln 24355, prod ln 936.10, live ln 937, enc None for `argv` (decl src ln 864) was not encountered during execution
   asm ln 24197, prod ln 864.0, live ln 866, enc 0
   asm ln 24254, prod ln 897.6, live ln 898, enc 1
   asm ln 24243, prod ln 892.24, live ln 893, enc 2
-  asm ln 24281, prod ln 910.27, live ln 911, enc 3
-  asm ln 24340, prod ln 932.10, live ln 933, enc 4
 Collating encountered after assignments: `done_help` (decl src ln 867)
 ❌ Assignment asm ln 24358, prod ln 867.0, live ln 940, enc None for `done_help` (decl src ln 867) was not encountered during execution
+❌ Assignment asm ln 24320, prod ln 867.0, live ln 926, enc None for `done_help` (decl src ln 867) was not encountered during execution
 ❌ Assignment asm ln 24365, prod ln 867.6, live ln 868, enc None for `done_help` (decl src ln 867) was not encountered during execution
   asm ln 24200, prod ln 867.0, live ln 869, enc 0
 Collating encountered after assignments: `cmd` (decl src ln 866)
@@ -3630,16 +3559,19 @@ Collating encountered after assignments: `cmd` (decl src ln 866)
 ❌ Assignment asm ln 24209, prod ln 866.0, live ln 871, enc None for `cmd` (decl src ln 866) was not encountered during execution
 ❌ Assignment asm ln 24352, prod ln 915.8, live ln 936, enc None for `cmd` (decl src ln 866) was not encountered during execution
 ❌ Assignment asm ln 24369, prod ln 936.20, live ln 942, enc None for `cmd` (decl src ln 866) was not encountered during execution
-❌ Assignment asm ln 24357, prod ln 936.20, live ln 940, enc None for `cmd` (decl src ln 866) was not encountered during execution
+❌ Assignment asm ln 24335, prod ln 915.8, live ln 930, enc None for `cmd` (decl src ln 866) was not encountered during execution
+❌ Assignment asm ln 24313, prod ln 915.8, live ln 923, enc None for `cmd` (decl src ln 866) was not encountered during execution
+❌ Assignment asm ln 24338, prod ln 915.8, live ln 932, enc None for `cmd` (decl src ln 866) was not encountered during execution
 ❌ Assignment asm ln 24372, prod ln 936.20, live ln 943, enc None for `cmd` (decl src ln 866) was not encountered during execution
+❌ Assignment asm ln 24357, prod ln 936.20, live ln 940, enc None for `cmd` (decl src ln 866) was not encountered during execution
+❌ Assignment asm ln 24312, prod ln 915.8, live ln 916, enc None for `cmd` (decl src ln 866) was not encountered during execution
   asm ln 24203, prod ln 869.8, live ln 870, enc 0
   asm ln 24221, prod ln 875.16, live ln 876, enc 1
   asm ln 24235, prod ln 891.13, live ln 892, enc 2
-  asm ln 24312, prod ln 915.8, live ln 916, enc 3
 Collating encountered after assignments: `slash` (decl src ln 873)
   asm ln 24215, prod ln 873.23, live ln 874, enc 0
 Collating encountered after assignments: `was_alias` (decl src ln 926)
-  asm ln 24324, prod ln 926.19, live ln 927, enc 0
+❌ Assignment asm ln 24324, prod ln 926.19, live ln 927, enc None for `was_alias` (decl src ln 926) was not encountered during execution
 
 #### Check after using before as reference
 
@@ -3728,21 +3660,33 @@ Warnings:
 Reference Execution:
   Function Covered:  false
   Complete:          false
-  Within Time Limit: true
-  Within Fork Limit: false
+  Within Time Limit: false
+  Within Fork Limit: true
 Test Execution:
   Function Covered:  false
   Complete:          false
   Within Time Limit: false
-  Within Fork Limit: false
+  Within Fork Limit: true
 
-❌ Before assn asm ln 25845, prod ln 932.10, live ln 933, enc None for `argv` (decl src ln 864) was not encountered during execution
+❌ Before encountered assn for `argv` (decl src ln 864) at asm ln 25776, prod ln 910.27, live ln 911, enc 3 not found in after
 
-❌ Before assn asm ln 25814, prod ln 913.3, live ln 914, enc None for `argv` (decl src ln 864) was not encountered during execution
+❌ Before encountered assn for `argv` (decl src ln 864) at asm ln 25845, prod ln 932.10, live ln 933, enc 4 not found in after
 
-❌ After assn asm ln 24355, prod ln 936.10, live ln 937, enc None for `argv` (decl src ln 864) was not encountered during execution
+❌ After assn asm ln 24281, prod ln 910.27, live ln 911, enc None for `argv` (decl src ln 864) was not encountered during execution
+
+❌ After assn asm ln 24340, prod ln 932.10, live ln 933, enc None for `argv` (decl src ln 864) was not encountered during execution
+
+❌ After assn asm ln 24310, prod ln 915.8, live ln 916, enc None for `argv` (decl src ln 864) was not encountered during execution
+
+❌ After assn asm ln 24282, prod ln 910.27, live ln 911, enc None for `argv` (decl src ln 864) was not encountered during execution
 
 ❌ After assn asm ln 24354, prod ln 936.10, live ln 937, enc None for `argv` (decl src ln 864) was not encountered during execution
+
+❌ After assn asm ln 24339, prod ln 932.10, live ln 933, enc None for `argv` (decl src ln 864) was not encountered during execution
+
+❌ After assn asm ln 24309, prod ln 915.8, live ln 916, enc None for `argv` (decl src ln 864) was not encountered during execution
+
+❌ After assn asm ln 24355, prod ln 936.10, live ln 937, enc None for `argv` (decl src ln 864) was not encountered during execution
 
 ❌ Before `argv` (decl src ln 864) assn asm ln 25699, prod ln 864.0, live ln 867, enc 0 coordinates don't match after assn asm ln 24197, prod ln 864.0, live ln 866, enc 0
 Checking equivalence of `argv` (decl src ln 864) from
@@ -3776,41 +3720,20 @@ and
   (w64 0x92BA4A64DEC532FD)
 ✅ Before `argv` (decl src ln 864) assn asm ln 25741, prod ln 891.3, live ln 892, enc 2 symbolic value matches after assn asm ln 24243, prod ln 892.24, live ln 893, enc 2
 
-Checking equivalence of `argv` (decl src ln 864) from
-  assn asm ln 24281, prod ln 910.27, live ln 911, enc 3
-  %10 = load i8**, i8*** %argv.addr, !tbaa !97220, l910 c27
-  (w64 0x2CBE786E7EDBF201)
-and
-  assn asm ln 25776, prod ln 910.27, live ln 911, enc 3
-  %16 = load i8**, i8*** %argv.addr, l910 c27
-  (w64 0x2CBE786E7EDBF201)
-✅ Before `argv` (decl src ln 864) assn asm ln 25776, prod ln 910.27, live ln 911, enc 3 symbolic value matches after assn asm ln 24281, prod ln 910.27, live ln 911, enc 3
-
-❌ Before `argv` (decl src ln 864) assn asm ln 25861, prod ln 936.10, live ln 937, enc 4 coordinates don't match after assn asm ln 24340, prod ln 932.10, live ln 933, enc 4
-Checking equivalence of `argv` (decl src ln 864) from
-  assn asm ln 24340, prod ln 932.10, live ln 933, enc 4
-  %16 = load i8**, i8*** %argv.addr, !tbaa !97220, l932 c10
-  (w64 0xAACFA374FFB4242E)
-and
-  assn asm ln 25861, prod ln 936.10, live ln 937, enc 4
-  %36 = load i8**, i8*** %argv.addr, l936 c10
-  (w64 0xAACFA374FFB4242E)
-✅ Before `argv` (decl src ln 864) assn asm ln 25861, prod ln 936.10, live ln 937, enc 4 symbolic value matches after assn asm ln 24340, prod ln 932.10, live ln 933, enc 4
-
 ❌ After `argv` assns checked using before as reference
 Assignments:         argv
-  Reference:         7
-  Test:              7
+  Reference:         5
+  Test:              11
 Matching:
-  Matching Coords:   2
-  Matching Value:    5
+  Matching Coords:   1
+  Matching Value:    3
 Consistency Errors:
-  Mismatched Coords: 3
+  Mismatched Coords: 2
   Mismatched Value:  0
 Availability Errors:
-  Ref Not Encount.:  2
-  Ref Not in Test:   0
-  Test Not Encount.: 2
+  Ref Not Encount.:  0
+  Ref Not in Test:   2
+  Test Not Encount.: 8
   Test Not in Ref:   0
 Warnings:
   Unused:            0
@@ -3819,17 +3742,17 @@ Warnings:
 Reference Execution:
   Function Covered:  false
   Complete:          false
-  Within Time Limit: true
-  Within Fork Limit: false
+  Within Time Limit: false
+  Within Fork Limit: true
 Test Execution:
   Function Covered:  false
   Complete:          false
   Within Time Limit: false
-  Within Fork Limit: false
-
-❌ Before assn asm ln 25844, prod ln 932.5, live ln 933, enc None for `cmd` (decl src ln 866) was not encountered during execution
+  Within Fork Limit: true
 
 ❌ Before assn asm ln 25713, prod ln 871.7, live ln 872, enc None for `cmd` (decl src ln 866) was not encountered during execution
+
+❌ Before encountered assn for `cmd` (decl src ln 866) at asm ln 25823, prod ln 915.8, live ln 923, enc 3 not found in after
 
 ❌ Before encountered assn for `cmd` (decl src ln 866) at asm ln 25864, prod ln 936.20, live ln 937, enc 4 not found in after
 
@@ -3841,9 +3764,17 @@ Test Execution:
 
 ❌ After assn asm ln 24369, prod ln 936.20, live ln 942, enc None for `cmd` (decl src ln 866) was not encountered during execution
 
-❌ After assn asm ln 24357, prod ln 936.20, live ln 940, enc None for `cmd` (decl src ln 866) was not encountered during execution
+❌ After assn asm ln 24335, prod ln 915.8, live ln 930, enc None for `cmd` (decl src ln 866) was not encountered during execution
+
+❌ After assn asm ln 24313, prod ln 915.8, live ln 923, enc None for `cmd` (decl src ln 866) was not encountered during execution
+
+❌ After assn asm ln 24338, prod ln 915.8, live ln 932, enc None for `cmd` (decl src ln 866) was not encountered during execution
 
 ❌ After assn asm ln 24372, prod ln 936.20, live ln 943, enc None for `cmd` (decl src ln 866) was not encountered during execution
+
+❌ After assn asm ln 24357, prod ln 936.20, live ln 940, enc None for `cmd` (decl src ln 866) was not encountered during execution
+
+❌ After assn asm ln 24312, prod ln 915.8, live ln 916, enc None for `cmd` (decl src ln 866) was not encountered during execution
 
 Checking equivalence of `cmd` (decl src ln 866) from
   assn asm ln 24203, prod ln 869.8, live ln 870, enc 0
@@ -3875,31 +3806,20 @@ and
   (w64 0x8467E337196AF796)
 ✅ Before `cmd` (decl src ln 866) assn asm ln 25740, prod ln 891.13, live ln 892, enc 2 symbolic value matches after assn asm ln 24235, prod ln 891.13, live ln 892, enc 2
 
-❌ Before `cmd` (decl src ln 866) assn asm ln 25823, prod ln 915.8, live ln 923, enc 3 coordinates don't match after assn asm ln 24312, prod ln 915.8, live ln 916, enc 3
-Checking equivalence of `cmd` (decl src ln 866) from
-  assn asm ln 24312, prod ln 915.8, live ln 916, enc 3
-  %13 = load i8*, i8** %12, !tbaa !97220, l915 c8
-  (w64 0xB003E4C9E55B68A4)
-and
-  assn asm ln 25823, prod ln 915.8, live ln 923, enc 3
-  %27 = load i8*, i8** %arrayidx39, l915 c8
-  (w64 0xB003E4C9E55B68A4)
-✅ Before `cmd` (decl src ln 866) assn asm ln 25823, prod ln 915.8, live ln 923, enc 3 symbolic value matches after assn asm ln 24312, prod ln 915.8, live ln 916, enc 3
-
 ❌ After `cmd` assns checked using before as reference
 Assignments:         cmd
-  Reference:         7
-  Test:              10
+  Reference:         6
+  Test:              13
 Matching:
   Matching Coords:   3
-  Matching Value:    4
+  Matching Value:    3
 Consistency Errors:
-  Mismatched Coords: 1
+  Mismatched Coords: 0
   Mismatched Value:  0
 Availability Errors:
-  Ref Not Encount.:  2
-  Ref Not in Test:   1
-  Test Not Encount.: 6
+  Ref Not Encount.:  1
+  Ref Not in Test:   2
+  Test Not Encount.: 10
   Test Not in Ref:   0
 Warnings:
   Unused:            0
@@ -3908,17 +3828,19 @@ Warnings:
 Reference Execution:
   Function Covered:  false
   Complete:          false
-  Within Time Limit: true
-  Within Fork Limit: false
+  Within Time Limit: false
+  Within Fork Limit: true
 Test Execution:
   Function Covered:  false
   Complete:          false
   Within Time Limit: false
-  Within Fork Limit: false
+  Within Fork Limit: true
 
 ❌ Before encountered assn for `done_help` (decl src ln 867) at asm ln 25865, prod ln 937.14, live ln 938, enc 1 not found in after
 
 ❌ After assn asm ln 24358, prod ln 867.0, live ln 940, enc None for `done_help` (decl src ln 867) was not encountered during execution
+
+❌ After assn asm ln 24320, prod ln 867.0, live ln 926, enc None for `done_help` (decl src ln 867) was not encountered during execution
 
 ❌ After assn asm ln 24365, prod ln 867.6, live ln 868, enc None for `done_help` (decl src ln 867) was not encountered during execution
 
@@ -3935,7 +3857,7 @@ and
 ❌ After `done_help` assns checked using before as reference
 Assignments:         done_help
   Reference:         2
-  Test:              3
+  Test:              4
 Matching:
   Matching Coords:   1
   Matching Value:    1
@@ -3945,7 +3867,7 @@ Consistency Errors:
 Availability Errors:
   Ref Not Encount.:  0
   Ref Not in Test:   1
-  Test Not Encount.: 2
+  Test Not Encount.: 3
   Test Not in Ref:   0
 Warnings:
   Unused:            0
@@ -3954,13 +3876,13 @@ Warnings:
 Reference Execution:
   Function Covered:  false
   Complete:          false
-  Within Time Limit: true
-  Within Fork Limit: false
+  Within Time Limit: false
+  Within Fork Limit: true
 Test Execution:
   Function Covered:  false
   Complete:          false
   Within Time Limit: false
-  Within Fork Limit: false
+  Within Fork Limit: true
 
 Checking equivalence of `slash` (decl src ln 873) from
   assn asm ln 24215, prod ln 873.23, live ln 874, enc 0
@@ -3994,46 +3916,32 @@ Warnings:
 Reference Execution:
   Function Covered:  false
   Complete:          false
-  Within Time Limit: true
-  Within Fork Limit: false
+  Within Time Limit: false
+  Within Fork Limit: true
 Test Execution:
   Function Covered:  false
   Complete:          false
   Within Time Limit: false
-  Within Fork Limit: false
+  Within Fork Limit: true
 
-Checking equivalence of `was_alias` (decl src ln 926) from
-  assn asm ln 24324, prod ln 926.19, live ln 927, enc 0
-  %call40 = call fastcc i32 @run_argv(i32* nonnull %argc.addr, i8*** nonnull %argv.addr), l926 c19
-  (ReadLSB w32 (w32 0x0) run_argv.return)
-and
-  assn asm ln 25830, prod ln 926.19, live ln 927, enc 0
-  %call40 = call i32 @run_argv(i32* %argc.addr, i8*** %argv.addr), l926 c19
-  (ReadLSB w32 (w32 0x0) run_argv.return)
-Query to parse
-array run_argv.return[4] : w32 -> w8 = symbolic
-array run_argv.return[4] : w32 -> w8 = symbolic
-(query [] (Eq (ReadLSB w32 (w32 0x0) run_argv.return)
-     (ReadLSB w32 (w32 0x0) run_argv.return)))
-Parsed query
-(Eq N0:(ReadLSB w32 (w32 0x0) run_argv.return)
-     N0)
-✅ Before `was_alias` (decl src ln 926) assn asm ln 25830, prod ln 926.19, live ln 927, enc 0 symbolic value matches after assn asm ln 24324, prod ln 926.19, live ln 927, enc 0
+❌ Before encountered assn for `was_alias` (decl src ln 926) at asm ln 25830, prod ln 926.19, live ln 927, enc 0 not found in after
 
-✅ After `was_alias` assns checked using before as reference
+❌ After assn asm ln 24324, prod ln 926.19, live ln 927, enc None for `was_alias` (decl src ln 926) was not encountered during execution
+
+❌ After `was_alias` assns checked using before as reference
 Assignments:         was_alias
   Reference:         1
   Test:              1
 Matching:
-  Matching Coords:   1
-  Matching Value:    1
+  Matching Coords:   0
+  Matching Value:    0
 Consistency Errors:
   Mismatched Coords: 0
   Mismatched Value:  0
 Availability Errors:
   Ref Not Encount.:  0
-  Ref Not in Test:   0
-  Test Not Encount.: 0
+  Ref Not in Test:   1
+  Test Not Encount.: 1
   Test Not in Ref:   0
 Warnings:
   Unused:            0
@@ -4042,13 +3950,13 @@ Warnings:
 Reference Execution:
   Function Covered:  false
   Complete:          false
-  Within Time Limit: true
-  Within Fork Limit: false
+  Within Time Limit: false
+  Within Fork Limit: true
 Test Execution:
   Function Covered:  false
   Complete:          false
   Within Time Limit: false
-  Within Fork Limit: false
+  Within Fork Limit: true
 
 ## Function `git_find_last_dir_sep`
 
@@ -5327,32 +5235,32 @@ Test Execution:
 ## Summary
 
 Assignments:
-  Reference:                52
-  Test:                     54 (103.85% of ref )
+  Reference:                49
+  Test:                     62 (126.53% of ref )
 Matching:
-  Matching Coords:          30 ( 57.69% of ref )
-  Matching Value:           41 ( 78.85% of ref )
+  Matching Coords:          28 ( 57.14% of ref )
+  Matching Value:           37 ( 75.51% of ref )
 Consistency Errors:
-  Mismatched Coords:        12 ( 23.08% of ref )
-  Mismatched Value:          1 (  1.92% of ref )
+  Mismatched Coords:        10 ( 20.41% of ref )
+  Mismatched Value:          1 (  2.04% of ref )
 Availability Errors:
-  Ref Not Encount.:          7 ( 13.46% of ref )
-  Ref Not in Test:           3 (  5.77% of ref )
-  Test Not Encount.:        12 ( 22.22% of test)
+  Ref Not Encount.:          4 (  8.16% of ref )
+  Ref Not in Test:           7 ( 14.29% of ref )
+  Test Not Encount.:        24 ( 38.71% of test)
   Test Not in Ref:           0 (  0.00% of test)
 Warnings:
   Unused:                    0 (  0.00% of ref )
   Removable:                 0 (  0.00% of ref )
   Unreachable:               0 (  0.00% of ref )
 Reference Execution:
-  Function Covered:         10 ( 19.23% of ref )
-  Complete:                  5 (  9.62% of ref )
-  Within Time Limit:        46 ( 88.46% of ref )
-  Within Fork Limit:        15 ( 28.85% of ref )
+  Function Covered:         10 ( 20.41% of ref )
+  Complete:                  5 ( 10.20% of ref )
+  Within Time Limit:        15 ( 30.61% of ref )
+  Within Fork Limit:        49 (100.00% of ref )
 Test Execution:
-  Function Covered:         14 ( 25.93% of test)
-  Complete:                  5 (  9.26% of test)
-  Within Time Limit:        23 ( 42.59% of test)
-  Within Fork Limit:        14 ( 25.93% of test)
+  Function Covered:         14 ( 22.58% of test)
+  Complete:                  5 (  8.06% of test)
+  Within Time Limit:        14 ( 22.58% of test)
+  Within Fork Limit:        62 (100.00% of test)
 
 ❌ Some consistency checks failed
