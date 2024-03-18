@@ -62,6 +62,7 @@ def load_data():
     dfs.append(df)
 
   read_run("clang/13/O0-mem2reg", ("Clang", "13", "O0-mem2reg"))
+  read_run("clang/13/O1", ("Clang", "13", "O1"))
 
   # Check names present in each compilation for differences
   print("# Names")
