@@ -1,0 +1,60 @@
+#!/usr/bin/env bash
+set -eux
+
+# Expects to run from program source directory
+if [ "${PWD##*/}" != "build_base_mytest.0000" ]; then
+  echo "Does not appear to be the expected directory, abort!"
+  exit
+fi
+
+SCRIPT_DIR=$(dirname "${BASH_SOURCE[0]}")
+source "${SCRIPT_DIR}/../../vars.sh"
+
+export LLVM_COMPILER="clang"
+export LLVM_COMPILER_PATH="$(llvm release-clang-lldb-13.0.0)/bin"
+
+# Expected by SPEC build system
+export SPEC="${HOME}/Projects/Benchmarks/spec-cpu-2017"
+
+TARGET_NAME="mcf_r"
+TARGET_PATH="${TARGET_NAME}"
+
+# Clang O0
+
+level="O0"
+version="13"
+echo "## Building \`${TARGET_NAME}\` (Clang ${version}, ${level})"
+
+make clean
+
+## Build for O0
+make \
+  CC="wllvm -std=c99" \
+  EXTRA_CFLAGS="${CC_COMMON_OPTS} ${CC_CLANG_OPTS} ${CC_O0_OPTS} -fno-inline" \
+  EXTRA_LDFLAGS="${CC_SYSROOT_OPTS}"
+
+## Extract bitcode for O0
+extract-bc ${TARGET_PATH}
+mkdir -p "${SCRIPT_DIR}/clang/${version}/${level}"
+cp \
+  ${TARGET_PATH}.bc \
+  "${SCRIPT_DIR}/clang/${version}/${level}/${TARGET_NAME}.bc"
+
+## Disassemble O0 bitcode for debugging
+$(llvm release-clang-lldb-${version}.0.0 llvm-dis) \
+  "${SCRIPT_DIR}/clang/${version}/${level}/${TARGET_NAME}.bc"
+
+## Apply mem2reg only
+mkdir -p "${SCRIPT_DIR}/clang/${version}/${level}-mem2reg"
+$(llvm release-clang-lldb-${version}.0.0 opt) \
+  -o "${SCRIPT_DIR}/clang/${version}/${level}-mem2reg/${TARGET_NAME}.bc" \
+  --mem2reg \
+  "${SCRIPT_DIR}/clang/${version}/${level}/${TARGET_NAME}.bc"
+
+## Disassemble O0 plus mem2reg bitcode for debugging
+$(llvm release-clang-lldb-${version}.0.0 llvm-dis) \
+  "${SCRIPT_DIR}/clang/${version}/${level}-mem2reg/${TARGET_NAME}.bc"
+
+# Cleanup
+echo "## Cleanup"
+make clean
