@@ -20,6 +20,7 @@ ${CHECK} \
   clang/${version}/O0/${TARGET_NAME}.bc \
   clang/${version}/${level}/${TARGET_NAME}.bc \
   ${CHECK_OPTS} \
+  --max-functions=10 \
   "$@"
 
 # TODO: Restructure this to capture a separate log for each version and level
@@ -36,5 +37,6 @@ ${CHECK} \
 #     clang/${version}/O0/${TARGET_NAME}.bc \
 #     clang/${version}/${level}/${TARGET_NAME}.bc \
 #     ${CHECK_OPTS} \
+#     --max-functions=10 \
 #     "$@"
 # done

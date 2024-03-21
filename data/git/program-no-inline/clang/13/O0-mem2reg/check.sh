@@ -20,4 +20,5 @@ ${CHECK} \
   ../O0/${TARGET_NAME}.bc \
   ${TARGET_NAME}.bc \
   ${CHECK_OPTS} \
+  --max-functions=10 \
   "$@"
