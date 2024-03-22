@@ -55,6 +55,37 @@ $(llvm release-clang-lldb-${version}.0.0 opt) \
 $(llvm release-clang-lldb-${version}.0.0 llvm-dis) \
   "${SCRIPT_DIR}/clang/${version}/${level}-mem2reg/${TARGET_NAME}.bc"
 
+# Clang O1+
+
+  levels=(O1 O2 O3)
+versions=(13 13 13)
+
+for i in ${!levels[*]}; do
+  level=${levels[$i]}
+  version=${versions[$i]}
+  echo "## Building \`${TARGET_NAME}\` (Clang ${version}, ${level})"
+
+  make clean
+
+  ## Build
+  cc_level_opts="CC_${level}_OPTS"
+  make \
+    CC="wllvm -std=c99" \
+    EXTRA_CFLAGS="${CC_COMMON_OPTS} ${CC_CLANG_OPTS} ${!cc_level_opts} -fno-inline" \
+    EXTRA_LDFLAGS="${CC_SYSROOT_OPTS}"
+
+  ## Extract bitcode
+  extract-bc ${TARGET_PATH}
+  mkdir -p "${SCRIPT_DIR}/clang/${version}/${level}"
+  cp \
+    ${TARGET_PATH}.bc \
+    "${SCRIPT_DIR}/clang/${version}/${level}/${TARGET_NAME}.bc"
+
+  ## Disassemble bitcode for debugging
+  $(llvm release-clang-lldb-${version}.0.0 llvm-dis) \
+    "${SCRIPT_DIR}/clang/${version}/${level}/${TARGET_NAME}.bc"
+done
+
 # Cleanup
 echo "## Cleanup"
 make clean
