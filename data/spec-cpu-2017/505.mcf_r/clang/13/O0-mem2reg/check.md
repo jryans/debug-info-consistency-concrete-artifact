@@ -23,12 +23,12 @@
 +++ '[' -z check-debug-info ']'
 +++ echo /Users/jryans/Projects/klee/build-release-debug/bin/check-debug-info
 ++ CHECK=/Users/jryans/Projects/klee/build-release-debug/bin/check-debug-info
-++ CHECK_OPTS='--debug-only=check-debug-info,values-collector,variable --debug-execution-trace --disable-verify --max-forks=32 --max-time=5s --search=random-path --tsv'
+++ CHECK_OPTS='--debug-only=check-debug-info,values-collector,variable --debug-execution-trace --disable-verify --output-stats=false --max-forks=32 --max-time=5s --search=random-path --tsv'
 + level=O0-mem2reg
 + version=13
 + echo '## Checking debug consistency of `mcf_r` (Clang 13, O0-mem2reg)'
 ## Checking debug consistency of `mcf_r` (Clang 13, O0-mem2reg)
-+ /Users/jryans/Projects/klee/build-release-debug/bin/check-debug-info ../O0/mcf_r.bc mcf_r.bc --debug-only=check-debug-info,values-collector,variable --debug-execution-trace --disable-verify --max-forks=32 --max-time=5s --search=random-path --tsv
++ /Users/jryans/Projects/klee/build-release-debug/bin/check-debug-info ../O0/mcf_r.bc mcf_r.bc --debug-only=check-debug-info,values-collector,variable --debug-execution-trace --disable-verify --output-stats=false --max-forks=32 --max-time=5s --search=random-path --tsv
 Checking ../O0/mcf_r.bc and mcf_r.bc for debug info consistency…
 
 ## Functions
@@ -23158,34 +23158,12 @@ Collected value for `num_threads`
   (SRem w64 (Add w64 (w64 0x1)
                     (SExt w64 (ReadLSB w32 (w32 0x0) switch_arcs.thread)))
            (ReadLSB w64 (w32 0x0) switch_arcs.num_threads))
-[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `implicit.c`
+[0;1;31mKLEE: ERROR: implicit.c:425: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `implicit.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `implicit.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `implicit.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `implicit.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `implicit.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `implicit.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `implicit.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `implicit.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `implicit.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `implicit.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `implicit.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `implicit.c`
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0mKLEE: HaltTimer invoked
 [0mKLEE: halting execution, dumping remaining states
 [0m
@@ -23389,7 +23367,7 @@ Reference Execution:
   Function Covered:  false
   Complete:          false
   Within Time Limit: false
-  Within Fork Limit: false
+  Within Fork Limit: true
 Test Execution:
   Function Covered:  false
   Complete:          false
@@ -24189,7 +24167,7 @@ Reference Execution:
   Function Covered:  false
   Complete:          false
   Within Time Limit: false
-  Within Fork Limit: false
+  Within Fork Limit: true
 Test Execution:
   Function Covered:  false
   Complete:          false
@@ -24219,7 +24197,7 @@ Reference Execution:
   Function Covered:  false
   Complete:          false
   Within Time Limit: false
-  Within Fork Limit: false
+  Within Fork Limit: true
 Test Execution:
   Function Covered:  false
   Complete:          false
@@ -24263,7 +24241,7 @@ Reference Execution:
   Function Covered:  false
   Complete:          false
   Within Time Limit: false
-  Within Fork Limit: false
+  Within Fork Limit: true
 Test Execution:
   Function Covered:  false
   Complete:          false
@@ -24304,7 +24282,7 @@ Reference Execution:
   Function Covered:  false
   Complete:          false
   Within Time Limit: false
-  Within Fork Limit: false
+  Within Fork Limit: true
 Test Execution:
   Function Covered:  false
   Complete:          false
@@ -24349,7 +24327,7 @@ Reference Execution:
   Function Covered:  false
   Complete:          false
   Within Time Limit: false
-  Within Fork Limit: false
+  Within Fork Limit: true
 Test Execution:
   Function Covered:  false
   Complete:          false
@@ -24400,7 +24378,7 @@ Reference Execution:
   Function Covered:  false
   Complete:          false
   Within Time Limit: false
-  Within Fork Limit: false
+  Within Fork Limit: true
 Test Execution:
   Function Covered:  false
   Complete:          false
@@ -24478,7 +24456,7 @@ Reference Execution:
   Function Covered:  false
   Complete:          false
   Within Time Limit: false
-  Within Fork Limit: false
+  Within Fork Limit: true
 Test Execution:
   Function Covered:  false
   Complete:          false
@@ -24529,7 +24507,7 @@ Reference Execution:
   Function Covered:  false
   Complete:          false
   Within Time Limit: false
-  Within Fork Limit: false
+  Within Fork Limit: true
 Test Execution:
   Function Covered:  false
   Complete:          false
@@ -24570,7 +24548,7 @@ Reference Execution:
   Function Covered:  false
   Complete:          false
   Within Time Limit: false
-  Within Fork Limit: false
+  Within Fork Limit: true
 Test Execution:
   Function Covered:  false
   Complete:          false
@@ -24611,7 +24589,7 @@ Reference Execution:
   Function Covered:  false
   Complete:          false
   Within Time Limit: false
-  Within Fork Limit: false
+  Within Fork Limit: true
 Test Execution:
   Function Covered:  false
   Complete:          false
@@ -24660,7 +24638,7 @@ Reference Execution:
   Function Covered:  false
   Complete:          false
   Within Time Limit: false
-  Within Fork Limit: false
+  Within Fork Limit: true
 Test Execution:
   Function Covered:  false
   Complete:          false
@@ -24708,7 +24686,7 @@ Reference Execution:
   Function Covered:  false
   Complete:          false
   Within Time Limit: false
-  Within Fork Limit: false
+  Within Fork Limit: true
 Test Execution:
   Function Covered:  false
   Complete:          false
@@ -24757,7 +24735,7 @@ Reference Execution:
   Function Covered:  false
   Complete:          false
   Within Time Limit: false
-  Within Fork Limit: false
+  Within Fork Limit: true
 Test Execution:
   Function Covered:  false
   Complete:          false
@@ -24909,7 +24887,7 @@ Reference Execution:
   Function Covered:  false
   Complete:          false
   Within Time Limit: false
-  Within Fork Limit: false
+  Within Fork Limit: true
 Test Execution:
   Function Covered:  false
   Complete:          false
@@ -24958,7 +24936,7 @@ Reference Execution:
   Function Covered:  false
   Complete:          false
   Within Time Limit: false
-  Within Fork Limit: false
+  Within Fork Limit: true
 Test Execution:
   Function Covered:  false
   Complete:          false
@@ -46130,9 +46108,9 @@ Collected value for `thread`
   Assignment asm ln 6437, prod ln 103.16, live ln 104, enc 1
   %10 = load i32, i32* %thread.addr, l103 c16
   (ReadLSB w32 (w32 0x0) worker.thread)
-[0;1;35mKLEE: WARNING ONCE: flushing 32488 bytes on read, may be slow and/or crash: MO30565[32488] allocated at worker():  %perm = alloca [4061 x %struct.basket*], align 16
-[0m[0;1;31mKLEE: ERROR: psimplex.c:103: memory error: object read only
+[0;1;31mKLEE: ERROR: psimplex.c:103: memory error: object read only
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0m[0;1;35mKLEE: WARNING ONCE: flushing 32488 bytes on read, may be slow and/or crash: MO29072[32488] allocated at worker():  %perm = alloca [4061 x %struct.basket*], align 16
 [0m[0;1;31mKLEE: ERROR: psimplex.c:103: memory error: out of bound pointer
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0mCollected value for `thread`
@@ -46152,10 +46130,12 @@ Collected value for `num_threads`
 [0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
 [0m[0;1;31mKLEE: ERROR: psimplex.c:104: divide by zero
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
@@ -46175,23 +46155,15 @@ Collected value for `i`
   Assignment asm ln 6453, prod ln 104.56, live ln 105, enc 0
   i64 1
   (w64 0x1)
-[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0mCollected value for `i`
+Collected value for `i`
   Assignment asm ln 6457, prod ln 104.60, live ln 105, enc 1
   %13 = load i64, i64* %i, l104 c60
   (w64 0x1)
-[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0mCollected value for `num_threads`
+Collected value for `num_threads`
   Assignment asm ln 6458, prod ln 104.66, live ln 105, enc 2
   %14 = load i32, i32* %num_threads.addr, l104 c66
   (ReadLSB w32 (w32 0x0) worker.num_threads)
 [0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
@@ -46211,9 +46183,7 @@ Collected value for `m`
   Assignment asm ln 6490, prod ln 108.42, live ln 109, enc 1
   %21 = load i64, i64* %m, l108 c42
   (ReadLSB w64 (w32 0x1A8) worker.net.deref)
-[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0mCollected value for `arcs`
+Collected value for `arcs`
   Assignment asm ln 6491, prod ln 108.45, live ln 109, enc 1
   %22 = load %struct.arc*, %struct.arc** %arcs, l108 c45
   (w64 0x0)
@@ -46276,7 +46246,47 @@ Collected value for `thread`
 Collected value for `iterations`
   Assignment asm ln 6496, prod ln 108.102, live ln 109, enc 1
   Concrete pointer resolves to worker.net.deref, offset (w64 0x260)
-  Created deref expr (ReadLSB w64 (w32 0x260) worker.net.deref)
+  Created deref expr (ReadLSB w64 (w32 0x260) U0:[(Add w32 (w32 0x7)
+                                       N0:(Extract w32 0 (Add w64 (w64 0xFFFFFFFEF4F2A000)
+                                                                  (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 N1:(Mul w64 (w64 0x8)
+                                                                                                                                                                                                                                                                                                                                                   (SExt w64 (ReadLSB w32 (w32 0x0) worker.thread)))
+                                                                                                                                                                                                                                                                                                                                       N1)
+                                                                                                                                                                                                                                                                                                                              N1)
+                                                                                                                                                                                                                                                                                                                     N1)
+                                                                                                                                                                                                                                                                                                            N1)
+                                                                                                                                                                                                                                                                                                   N1)
+                                                                                                                                                                                                                                                                                          N1)
+                                                                                                                                                                                                                                                                                 N1)
+                                                                                                                                                                                                                                                                        N1)
+                                                                                                                                                                                                                                                               N1)
+                                                                                                                                                                                                                                                      N1)
+                                                                                                                                                                                                                                             N1)
+                                                                                                                                                                                                                                    N1)
+                                                                                                                                                                                                                           N1)
+                                                                                                                                                                                                                  N1)
+                                                                                                                                                                                                         N1)
+                                                                                                                                                                                                N1)
+                                                                                                                                                                                       N1)
+                                                                                                                                                                              N1)
+                                                                                                                                                                     N1)
+                                                                                                                                                            N1)
+                                                                                                                                                   N1)
+                                                                                                                                          N1)
+                                                                                                                                 N1)
+                                                                                                                        N1)
+                                                                                                               N1)
+                                                                                                      N1)
+                                                                                             N1)
+                                                                                    N1)
+                                                                           N1))))=(w8 0x0),
+                              (Add w32 (w32 0x6) N0)=(w8 0x0),
+                              (Add w32 (w32 0x5) N0)=(w8 0x0),
+                              (Add w32 (w32 0x4) N0)=(w8 0x0),
+                              (Add w32 (w32 0x3) N0)=(w8 0x0),
+                              (Add w32 (w32 0x2) N0)=(w8 0x0),
+                              (Add w32 (w32 0x1) N0)=(w8 0x0),
+                              N0=(w8 0x0),
+                              (w32 0x25F)=(w8 0x0), (w32 0x25E)=(w8 0x0), (w32 0x25D)=(w8 0x0), (w32 0x25C)=(w8 0x0), (w32 0x25B)=(w8 0x0), (w32 0x25A)=(w8 0x0), (w32 0x259)=(w8 0x0), (w32 0x258)=(w8 0x0), (w32 0x257)=(w8 0x0), (w32 0x256)=(w8 0x0), (w32 0x255)=(w8 0x0), (w32 0x254)=(w8 0x0), (w32 0x253)=(w8 0x0), (w32 0x252)=(w8 0x0), (w32 0x251)=(w8 0x0), (w32 0x250)=(w8 0x0), (w32 0x24F)=(w8 0x0), (w32 0x24E)=(w8 0x0), (w32 0x24D)=(w8 0x0), (w32 0x24C)=(w8 0x0), (w32 0x24B)=(w8 0x0), (w32 0x24A)=(w8 0x0), (w32 0x249)=(w8 0x0), (w32 0x248)=(w8 0x0), (w32 0x247)=(w8 0x0), (w32 0x246)=(w8 0x0), (w32 0x245)=(w8 0x0), (w32 0x244)=(w8 0x0), (w32 0x243)=(w8 0x0), (w32 0x242)=(w8 0x0), (w32 0x241)=(w8 0x0), (w32 0x240)=(w8 0x0), (w32 0x23F)=(w8 0x0), (w32 0x23E)=(w8 0x0), (w32 0x23D)=(w8 0x0), (w32 0x23C)=(w8 0x0), (w32 0x23B)=(w8 0x0), (w32 0x23A)=(w8 0x0), (w32 0x239)=(w8 0x0), (w32 0x238)=(w8 0x0), (w32 0x237)=(w8 0x0), (w32 0x236)=(w8 0x0), (w32 0x235)=(w8 0x0), (w32 0x234)=(w8 0x0), (w32 0x233)=(w8 0x0), (w32 0x232)=(w8 0x0), (w32 0x231)=(w8 0x0), (w32 0x230)=(w8 0x0), (w32 0x22F)=(w8 0x0), (w32 0x22E)=(w8 0x0), (w32 0x22D)=(w8 0x0), (w32 0x22C)=(w8 0x0), (w32 0x22B)=(w8 0x0), (w32 0x22A)=(w8 0x0), (w32 0x229)=(w8 0x0), (w32 0x228)=(w8 0x0)] @ worker.net.deref)
   Replaced concrete pointer with hash (w64 0x81E7CC725839738A)
   %26 = load i64*, i64** %iterations, l108 c102
   (w64 0x81E7CC725839738A)
@@ -46307,13 +46317,13 @@ Collected value for `thread`
   Assignment asm ln 6498, prod ln 108.115, live ln 109, enc 4
   %28 = load i32, i32* %thread.addr, l108 c115
   (ReadLSB w32 (w32 0x0) worker.thread)
-Collected value for `num_threads`
+[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0mCollected value for `num_threads`
   Assignment asm ln 6501, prod ln 108.125, live ln 109, enc 3
   %29 = load i32, i32* %num_threads.addr, l108 c125
   (ReadLSB w32 (w32 0x0) worker.num_threads)
 [0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
@@ -46336,7 +46346,47 @@ Collected value for `num_threads`
 Collected value for `net`
   Assignment asm ln 6507, prod ln 108.151, live ln 109, enc 6
   Concrete pointer resolves to worker.net.deref, offset (w64 0x0)
-  Created deref expr (ReadLSB w64 (w32 0x0) worker.net.deref)
+  Created deref expr (ReadLSB w64 (w32 0x0) U0:[(Add w32 (w32 0x7)
+                                     N0:(Extract w32 0 (Add w64 (w64 0xFFFFFFFEF4F2A000)
+                                                                (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 N1:(Mul w64 (w64 0x8)
+                                                                                                                                                                                                                                                                                                                                                 (SExt w64 (ReadLSB w32 (w32 0x0) worker.thread)))
+                                                                                                                                                                                                                                                                                                                                     N1)
+                                                                                                                                                                                                                                                                                                                            N1)
+                                                                                                                                                                                                                                                                                                                   N1)
+                                                                                                                                                                                                                                                                                                          N1)
+                                                                                                                                                                                                                                                                                                 N1)
+                                                                                                                                                                                                                                                                                        N1)
+                                                                                                                                                                                                                                                                               N1)
+                                                                                                                                                                                                                                                                      N1)
+                                                                                                                                                                                                                                                             N1)
+                                                                                                                                                                                                                                                    N1)
+                                                                                                                                                                                                                                           N1)
+                                                                                                                                                                                                                                  N1)
+                                                                                                                                                                                                                         N1)
+                                                                                                                                                                                                                N1)
+                                                                                                                                                                                                       N1)
+                                                                                                                                                                                              N1)
+                                                                                                                                                                                     N1)
+                                                                                                                                                                            N1)
+                                                                                                                                                                   N1)
+                                                                                                                                                          N1)
+                                                                                                                                                 N1)
+                                                                                                                                        N1)
+                                                                                                                               N1)
+                                                                                                                      N1)
+                                                                                                             N1)
+                                                                                                    N1)
+                                                                                           N1)
+                                                                                  N1)
+                                                                         N1))))=(w8 0x0),
+                            (Add w32 (w32 0x6) N0)=(w8 0x0),
+                            (Add w32 (w32 0x5) N0)=(w8 0x0),
+                            (Add w32 (w32 0x4) N0)=(w8 0x0),
+                            (Add w32 (w32 0x3) N0)=(w8 0x0),
+                            (Add w32 (w32 0x2) N0)=(w8 0x0),
+                            (Add w32 (w32 0x1) N0)=(w8 0x0),
+                            N0=(w8 0x0),
+                            (w32 0x25F)=(w8 0x0), (w32 0x25E)=(w8 0x0), (w32 0x25D)=(w8 0x0), (w32 0x25C)=(w8 0x0), (w32 0x25B)=(w8 0x0), (w32 0x25A)=(w8 0x0), (w32 0x259)=(w8 0x0), (w32 0x258)=(w8 0x0), (w32 0x257)=(w8 0x0), (w32 0x256)=(w8 0x0), (w32 0x255)=(w8 0x0), (w32 0x254)=(w8 0x0), (w32 0x253)=(w8 0x0), (w32 0x252)=(w8 0x0), (w32 0x251)=(w8 0x0), (w32 0x250)=(w8 0x0), (w32 0x24F)=(w8 0x0), (w32 0x24E)=(w8 0x0), (w32 0x24D)=(w8 0x0), (w32 0x24C)=(w8 0x0), (w32 0x24B)=(w8 0x0), (w32 0x24A)=(w8 0x0), (w32 0x249)=(w8 0x0), (w32 0x248)=(w8 0x0), (w32 0x247)=(w8 0x0), (w32 0x246)=(w8 0x0), (w32 0x245)=(w8 0x0), (w32 0x244)=(w8 0x0), (w32 0x243)=(w8 0x0), (w32 0x242)=(w8 0x0), (w32 0x241)=(w8 0x0), (w32 0x240)=(w8 0x0), (w32 0x23F)=(w8 0x0), (w32 0x23E)=(w8 0x0), (w32 0x23D)=(w8 0x0), (w32 0x23C)=(w8 0x0), (w32 0x23B)=(w8 0x0), (w32 0x23A)=(w8 0x0), (w32 0x239)=(w8 0x0), (w32 0x238)=(w8 0x0), (w32 0x237)=(w8 0x0), (w32 0x236)=(w8 0x0), (w32 0x235)=(w8 0x0), (w32 0x234)=(w8 0x0), (w32 0x233)=(w8 0x0), (w32 0x232)=(w8 0x0), (w32 0x231)=(w8 0x0), (w32 0x230)=(w8 0x0), (w32 0x22F)=(w8 0x0), (w32 0x22E)=(w8 0x0), (w32 0x22D)=(w8 0x0), (w32 0x22C)=(w8 0x0), (w32 0x22B)=(w8 0x0), (w32 0x22A)=(w8 0x0), (w32 0x229)=(w8 0x0), (w32 0x228)=(w8 0x0)] @ worker.net.deref)
   Replaced concrete pointer with hash (w64 0xD3933E70E7A0E11E)
   %31 = load %struct.network*, %struct.network** %net.addr, l108 c151
   (w64 0xD3933E70E7A0E11E)
@@ -46350,523 +46400,15 @@ Collected value for `net`
   (ReadLSB w32 (w32 0x0) worker.thread)
 [0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
 [0mCollected value for `thread`
   Assignment asm ln 6519, prod ln 109.12, live ln 110, enc 6
   %36 = load i32, i32* %thread.addr, l109 c12
   (ReadLSB w32 (w32 0x0) worker.thread)
-[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0mCollected value for `thread`
+Collected value for `thread`
   Assignment asm ln 6523, prod ln 113.9, live ln 114, enc 7
   %37 = load i32, i32* %thread.addr, l113 c9
   (ReadLSB w32 (w32 0x0) worker.thread)
 [0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
@@ -47797,888 +47339,6 @@ Collected value for `i`
                                                (SDiv w32 (w32 0xFA0)
                                                          (ReadLSB w32 (w32 0x0) worker.num_threads)))))))
 [0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
@@ -51239,5 +49899,10184 @@ Collected value for `end_arc`
 
 #### After values
 
-[0;1;31mKLEE: ERROR: Can't set options for database: unable to open database file
+Collected value for `net`
+  Assignment asm ln 4882, prod ln 124.0, live ln 143, enc 0
+  Concrete pointer resolves to master.net.deref, offset (w64 0x0)
+  Created deref expr (ReadLSB w64 (w32 0x0) master.net.deref)
+  Replaced concrete pointer with hash (w64 0xCFEDA4A9735FEB51)
+  %struct.network.2* %net
+  (w64 0xCFEDA4A9735FEB51)
+Collected value for `num_threads`
+  Assignment asm ln 4883, prod ln 124.0, live ln 143, enc 0
+  i32 %num_threads
+  (ReadLSB w32 (w32 0x0) master.num_threads)
+Collected value for `arcs`
+  Assignment asm ln 4889, prod ln 143.39, live ln 144, enc 0
+  %0 = load %struct.arc.0*, %struct.arc.0** %arcs1, l143 c39
+  (w64 0x0)
+Collected value for `stop_arcs`
+  Assignment asm ln 4892, prod ln 144.39, live ln 146, enc 0
+  %1 = load %struct.arc.0*, %struct.arc.0** %stop_arcs2, l144 c39
+  (w64 0x0)
+Collected value for `m`
+  Assignment asm ln 4895, prod ln 146.26, live ln 149, enc 0
+  %2 = load i64, i64* %m3, l146 c26
+  (ReadLSB w64 (w32 0x1A8) master.net.deref)
+Collected value for `iterations`
+  Assignment asm ln 4897, prod ln 149.38, live ln 150, enc 0
+  Concrete pointer resolves to master.net.deref, offset (w64 0x260)
+  Created deref expr (ReadLSB w64 (w32 0x260) master.net.deref)
+  Replaced concrete pointer with hash (w64 0xEE8BF5712A34418F)
+  %iterations4 = getelementptr inbounds %struct.network.2, %struct.network.2* %net, i32 0, i32 28, l149 c38
+  (w64 0xEE8BF5712A34418F)
+Collected value for `bound_exchanges`
+  Assignment asm ln 4899, prod ln 150.43, live ln 153, enc 0
+  Concrete pointer resolves to master.net.deref, offset (w64 0x268)
+  Created deref expr (ReadLSB w64 (w32 0x268) master.net.deref)
+  Replaced concrete pointer with hash (w64 0xAE41FA8E3229C789)
+  %bound_exchanges5 = getelementptr inbounds %struct.network.2, %struct.network.2* %net, i32 0, i32 29, l150 c43
+  (w64 0xAE41FA8E3229C789)
+Collected value for `end_arc`
+  Assignment asm ln 4905, prod ln 153.33, live ln 162, enc 0
+  %3 = load %struct.arc.0*, %struct.arc.0** %arcs6, l153 c33
+  (w64 0x0)
+[0;1;31mKLEE: ERROR: psimplex.c:162: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0m
+🔔 Unable to execute all after instructions
+
+🔔 Unable to execute all after program states
+
+### Assignments
+
+#### Variables with single memory location
+
+✅ Variable `delta` uses only a single memory location (via `dbg.declare`), skipping further checks
+Assignments:         delta
+  Reference:         1
+  Test:              1
+Matching:
+  Matching Coords:   1
+  Matching Value:    1
+Consistency Errors:
+  Mismatched Coords: 0
+  Mismatched Value:  0
+Availability Errors:
+  Ref Not Encount.:  0
+  Ref Not in Test:   0
+  Test Not Encount.: 0
+  Test Not in Ref:   0
+Warnings:
+  Unused:            0
+  Removable:         0
+  Unreachable:       0
+Reference Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
+Test Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
+
+✅ Variable `max_basket` uses only a single memory location (via `dbg.declare`), skipping further checks
+Assignments:         max_basket
+  Reference:         1
+  Test:              1
+Matching:
+  Matching Coords:   1
+  Matching Value:    1
+Consistency Errors:
+  Mismatched Coords: 0
+  Mismatched Value:  0
+Availability Errors:
+  Ref Not Encount.:  0
+  Ref Not in Test:   0
+  Test Not Encount.: 0
+  Test Not in Ref:   0
+Warnings:
+  Unused:            0
+  Removable:         0
+  Unreachable:       0
+Reference Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
+Test Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
+
+✅ Variable `perm` uses only a single memory location (via `dbg.declare`), skipping further checks
+Assignments:         perm
+  Reference:         1
+  Test:              1
+Matching:
+  Matching Coords:   1
+  Matching Value:    1
+Consistency Errors:
+  Mismatched Coords: 0
+  Mismatched Value:  0
+Availability Errors:
+  Ref Not Encount.:  0
+  Ref Not in Test:   0
+  Test Not Encount.: 0
+  Test Not in Ref:   0
+Warnings:
+  Unused:            0
+  Removable:         0
+  Unreachable:       0
+Reference Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
+Test Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
+
+✅ Variable `w` uses only a single memory location (via `dbg.declare`), skipping further checks
+Assignments:         w
+  Reference:         1
+  Test:              1
+Matching:
+  Matching Coords:   1
+  Matching Value:    1
+Consistency Errors:
+  Mismatched Coords: 0
+  Mismatched Value:  0
+Availability Errors:
+  Ref Not Encount.:  0
+  Ref Not in Test:   0
+  Test Not Encount.: 0
+  Test Not in Ref:   0
+Warnings:
+  Unused:            0
+  Removable:         0
+  Unreachable:       0
+Reference Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
+Test Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
+
+#### Collation
+
+Filtering before assignments: `arcs` (decl src ln 143)
+
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `arcs` (decl src ln 143) from
+  assn asm ln 6588, prod ln 143.39, live ln 144, enc 0
+  %1 = load %struct.arc*, %struct.arc** %arcs1, l143 c39
+and
+  assn asm ln 6661, prod ln 176.40, live ln 177, enc None
+  %20 = load %struct.arc*, %struct.arc** %arcs, l176 c40
+
+Filtering before assignments: `bea` (decl src ln 141)
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `bea` (decl src ln 141) from
+  assn asm ln 6934, prod ln 273.24, live ln 274, enc None
+  %104 = load %struct.arc*, %struct.arc** %bea, l273 c24
+and
+  assn asm ln 6940, prod ln 276.9, live ln 277, enc None
+  %108 = load %struct.arc*, %struct.arc** %bea, l276 c9
+🔔 Removing: asm ln 6934, prod ln 273.24, live ln 274, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `bea` (decl src ln 141) from
+  assn asm ln 6905, prod ln 266.13, live ln 267, enc None
+  %92 = load %struct.arc*, %struct.arc** %bea, l266 c13
+and
+  assn asm ln 6940, prod ln 276.9, live ln 277, enc None
+  %108 = load %struct.arc*, %struct.arc** %bea, l276 c9
+🔔 Removing: asm ln 6905, prod ln 266.13, live ln 267, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `bea` (decl src ln 141) from
+  assn asm ln 6832, prod ln 238.11, live ln 239, enc None
+  %73 = load %struct.arc*, %struct.arc** %bea, l238 c11
+and
+  assn asm ln 6940, prod ln 276.9, live ln 277, enc None
+  %108 = load %struct.arc*, %struct.arc** %bea, l276 c9
+🔔 Removing: asm ln 6832, prod ln 238.11, live ln 239, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `bea` (decl src ln 141) from
+  assn asm ln 6826, prod ln 236.11, live ln 237, enc None
+  %72 = load %struct.arc*, %struct.arc** %bea, l236 c11
+and
+  assn asm ln 6940, prod ln 276.9, live ln 277, enc None
+  %108 = load %struct.arc*, %struct.arc** %bea, l276 c9
+🔔 Removing: asm ln 6826, prod ln 236.11, live ln 237, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `bea` (decl src ln 141) from
+  assn asm ln 6818, prod ln 235.13, live ln 236, enc None
+  %70 = load %struct.arc*, %struct.arc** %bea, l235 c13
+and
+  assn asm ln 6940, prod ln 276.9, live ln 277, enc None
+  %108 = load %struct.arc*, %struct.arc** %bea, l276 c9
+🔔 Removing: asm ln 6818, prod ln 235.13, live ln 236, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `bea` (decl src ln 141) from
+  assn asm ln 6797, prod ln 224.17, live ln 225, enc None
+  %63 = load %struct.arc*, %struct.arc** %bea, l224 c17
+and
+  assn asm ln 6940, prod ln 276.9, live ln 277, enc None
+  %108 = load %struct.arc*, %struct.arc** %bea, l276 c9
+🔔 Removing: asm ln 6797, prod ln 224.17, live ln 225, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `bea` (decl src ln 141) from
+  assn asm ln 6793, prod ln 223.17, live ln 224, enc None
+  %61 = load %struct.arc*, %struct.arc** %bea, l223 c17
+and
+  assn asm ln 6940, prod ln 276.9, live ln 277, enc None
+  %108 = load %struct.arc*, %struct.arc** %bea, l276 c9
+🔔 Removing: asm ln 6793, prod ln 223.17, live ln 224, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `bea` (decl src ln 141) from
+  assn asm ln 6786, prod ln 219.17, live ln 220, enc None
+  %59 = load %struct.arc*, %struct.arc** %bea, l219 c17
+and
+  assn asm ln 6940, prod ln 276.9, live ln 277, enc None
+  %108 = load %struct.arc*, %struct.arc** %bea, l276 c9
+🔔 Removing: asm ln 6786, prod ln 219.17, live ln 220, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `bea` (decl src ln 141) from
+  assn asm ln 6782, prod ln 218.17, live ln 219, enc None
+  %57 = load %struct.arc*, %struct.arc** %bea, l218 c17
+and
+  assn asm ln 6940, prod ln 276.9, live ln 277, enc None
+  %108 = load %struct.arc*, %struct.arc** %bea, l276 c9
+🔔 Removing: asm ln 6782, prod ln 218.17, live ln 219, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `bea` (decl src ln 141) from
+  assn asm ln 6756, prod ln 199.25, live ln 201, enc None
+  %50 = load %struct.arc*, %struct.arc** %a, l199 c25
+and
+  assn asm ln 6940, prod ln 276.9, live ln 277, enc None
+  %108 = load %struct.arc*, %struct.arc** %bea, l276 c9
+🔔 Removing: asm ln 6756, prod ln 199.25, live ln 201, enc None
+
+Filtering before assignments: `bla` (decl src ln 142)
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `bla` (decl src ln 142) from
+  assn asm ln 6871, prod ln 254.23, live ln 256, enc None
+  %85 = load %struct.arc*, %struct.arc** %basic_arc, l254 c23
+and
+  assn asm ln 6945, prod ln 277.9, live ln 278, enc None
+  %110 = load %struct.arc*, %struct.arc** %bla, l277 c9
+🔔 Removing: asm ln 6871, prod ln 254.23, live ln 256, enc None
+
+Filtering before assignments: `bound_exchanges` (decl src ln 150)
+
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `bound_exchanges` (decl src ln 150) from
+  assn asm ln 6609, prod ln 150.43, live ln 153, enc 0
+  %bound_exchanges5 = getelementptr inbounds %struct.network, %struct.network* %7, i32 0, i32 29, l150 c43
+and
+  assn asm ln 6814, prod ln 233.11, live ln 234, enc None
+  %68 = load i64*, i64** %bound_exchanges, l233 c11
+
+Filtering before assignments: `i` (decl src ln 154)
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `i` (decl src ln 154) from
+  assn asm ln 6734, prod ln 188.34, live ln 189, enc None
+  %45 = load i64, i64* %i, l188 c34
+and
+  assn asm ln 6736, prod ln 188.34, live ln 189, enc None
+  %inc34 = add nsw i64 %45, 1, l188 c34
+🔔 Removing: asm ln 6734, prod ln 188.34, live ln 189, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `i` (decl src ln 154) from
+  assn asm ln 6727, prod ln 190.33, live ln 191, enc None
+  %43 = load i64, i64* %i, l190 c33
+and
+  assn asm ln 6736, prod ln 188.34, live ln 189, enc None
+  %inc34 = add nsw i64 %45, 1, l188 c34
+🔔 Removing: asm ln 6727, prod ln 190.33, live ln 191, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `i` (decl src ln 154) from
+  assn asm ln 6719, prod ln 189.88, live ln 190, enc None
+  %41 = load i64, i64* %i, l189 c88
+and
+  assn asm ln 6736, prod ln 188.34, live ln 189, enc None
+  %inc34 = add nsw i64 %45, 1, l188 c34
+🔔 Removing: asm ln 6719, prod ln 189.88, live ln 190, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `i` (decl src ln 154) from
+  assn asm ln 6711, prod ln 189.57, live ln 190, enc None
+  %38 = load i64, i64* %i, l189 c57
+and
+  assn asm ln 6736, prod ln 188.34, live ln 189, enc None
+  %inc34 = add nsw i64 %45, 1, l188 c34
+🔔 Removing: asm ln 6711, prod ln 189.57, live ln 190, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `i` (decl src ln 154) from
+  assn asm ln 6703, prod ln 189.38, live ln 190, enc None
+  %35 = load i64, i64* %i, l189 c38
+and
+  assn asm ln 6736, prod ln 188.34, live ln 189, enc None
+  %inc34 = add nsw i64 %45, 1, l188 c34
+🔔 Removing: asm ln 6703, prod ln 189.38, live ln 190, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `i` (decl src ln 154) from
+  assn asm ln 6690, prod ln 188.17, live ln 189, enc None
+  %31 = load i64, i64* %i, l188 c17
+and
+  assn asm ln 6736, prod ln 188.34, live ln 189, enc None
+  %inc34 = add nsw i64 %45, 1, l188 c34
+🔔 Removing: asm ln 6690, prod ln 188.17, live ln 189, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `i` (decl src ln 154) from
+  assn asm ln 6686, prod ln 188.12, live ln 189, enc None
+  i64 0
+and
+  assn asm ln 6736, prod ln 188.34, live ln 189, enc None
+  %inc34 = add nsw i64 %45, 1, l188 c34
+🔔 Removing: asm ln 6686, prod ln 188.12, live ln 189, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `i` (decl src ln 154) from
+  assn asm ln 6647, prod ln 163.44, live ln 164, enc None
+  %inc = add nsw i64 %16, 1, l163 c44
+and
+  assn asm ln 6736, prod ln 188.34, live ln 189, enc None
+  %inc34 = add nsw i64 %45, 1, l188 c34
+🔔 Removing: asm ln 6647, prod ln 163.44, live ln 164, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `i` (decl src ln 154) from
+  assn asm ln 6645, prod ln 163.44, live ln 164, enc None
+  %16 = load i64, i64* %i, l163 c44
+and
+  assn asm ln 6736, prod ln 188.34, live ln 189, enc None
+  %inc34 = add nsw i64 %45, 1, l188 c34
+🔔 Removing: asm ln 6645, prod ln 163.44, live ln 164, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `i` (decl src ln 154) from
+  assn asm ln 6642, prod ln 164.10, live ln 165, enc None
+  %15 = load i64, i64* %i, l164 c10
+and
+  assn asm ln 6736, prod ln 188.34, live ln 189, enc None
+  %inc34 = add nsw i64 %45, 1, l188 c34
+🔔 Removing: asm ln 6642, prod ln 164.10, live ln 165, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `i` (decl src ln 154) from
+  assn asm ln 6627, prod ln 163.20, live ln 164, enc None
+  %11 = load i64, i64* %i, l163 c20
+and
+  assn asm ln 6736, prod ln 188.34, live ln 189, enc None
+  %inc34 = add nsw i64 %45, 1, l188 c34
+🔔 Removing: asm ln 6627, prod ln 163.20, live ln 164, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `i` (decl src ln 154) from
+  assn asm ln 6623, prod ln 163.16, live ln 164, enc None
+  i64 1
+and
+  assn asm ln 6736, prod ln 188.34, live ln 189, enc None
+  %inc34 = add nsw i64 %45, 1, l188 c34
+🔔 Removing: asm ln 6623, prod ln 163.16, live ln 164, enc None
+
+Filtering before assignments: `iminus` (decl src ln 138)
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `iminus` (decl src ln 138) from
+  assn asm ln 6873, prod ln 256.24, live ln 257, enc None
+  %87 = load %struct.node*, %struct.node** %iminus, l256 c24
+and
+  assn asm ln 6931, prod ln 272.44, live ln 273, enc None
+  %101 = load %struct.node*, %struct.node** %iminus, l272 c44
+🔔 Removing: asm ln 6873, prod ln 256.24, live ln 257, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `iminus` (decl src ln 138) from
+  assn asm ln 6868, prod ln 254.15, live ln 255, enc None
+  %84 = load %struct.node*, %struct.node** %iminus, l254 c15
+and
+  assn asm ln 6931, prod ln 272.44, live ln 273, enc None
+  %101 = load %struct.node*, %struct.node** %iminus, l272 c44
+🔔 Removing: asm ln 6868, prod ln 254.15, live ln 255, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `iminus` (decl src ln 138) from
+  assn asm ln 6864, prod ln 252.18, live ln 253, enc None
+  %82 = load %struct.node*, %struct.node** %iminus, l252 c18
+and
+  assn asm ln 6931, prod ln 272.44, live ln 273, enc None
+  %101 = load %struct.node*, %struct.node** %iminus, l272 c44
+🔔 Removing: asm ln 6864, prod ln 252.18, live ln 253, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `iminus` (decl src ln 138) from
+  assn asm ln 6809, prod ln 231.12, live ln 232, enc None
+  %67 = load %struct.node*, %struct.node** %iminus, l231 c12
+and
+  assn asm ln 6931, prod ln 272.44, live ln 273, enc None
+  %101 = load %struct.node*, %struct.node** %iminus, l272 c44
+🔔 Removing: asm ln 6809, prod ln 231.12, live ln 232, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `iminus` (decl src ln 138) from
+  assn asm ln 6808, prod ln 228.16, live ln 231, enc None
+  %call55 = call %struct.node* @primal_iminus(i64* %delta, i64* %xchange, %struct.node* %65, %struct.node* %66, %struct.node** %w), l228 c16
+and
+  assn asm ln 6931, prod ln 272.44, live ln 273, enc None
+  %101 = load %struct.node*, %struct.node** %iminus, l272 c44
+🔔 Removing: asm ln 6808, prod ln 228.16, live ln 231, enc None
+
+Filtering before assignments: `iplus` (decl src ln 136)
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `iplus` (decl src ln 136) from
+  assn asm ln 6908, prod ln 266.26, live ln 267, enc None
+  %94 = load %struct.node*, %struct.node** %iplus, l266 c26
+and
+  assn asm ln 6929, prod ln 272.30, live ln 273, enc None
+  %99 = load %struct.node*, %struct.node** %iplus, l272 c30
+🔔 Removing: asm ln 6908, prod ln 266.26, live ln 267, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `iplus` (decl src ln 136) from
+  assn asm ln 6860, prod ln 249.19, live ln 250, enc None
+  %81 = load %struct.node*, %struct.node** %temp, l249 c19
+and
+  assn asm ln 6929, prod ln 272.30, live ln 273, enc None
+  %99 = load %struct.node*, %struct.node** %iplus, l272 c30
+🔔 Removing: asm ln 6860, prod ln 249.19, live ln 250, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `iplus` (decl src ln 136) from
+  assn asm ln 6857, prod ln 248.19, live ln 249, enc None
+  %80 = load %struct.node*, %struct.node** %iplus, l248 c19
+and
+  assn asm ln 6929, prod ln 272.30, live ln 273, enc None
+  %99 = load %struct.node*, %struct.node** %iplus, l272 c30
+🔔 Removing: asm ln 6857, prod ln 248.19, live ln 249, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `iplus` (decl src ln 136) from
+  assn asm ln 6843, prod ln 241.31, live ln 242, enc None
+  %75 = load %struct.node*, %struct.node** %iplus, l241 c31
+and
+  assn asm ln 6929, prod ln 272.30, live ln 273, enc None
+  %99 = load %struct.node*, %struct.node** %iplus, l272 c30
+🔔 Removing: asm ln 6843, prod ln 241.31, live ln 242, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `iplus` (decl src ln 136) from
+  assn asm ln 6805, prod ln 228.49, live ln 229, enc None
+  %65 = load %struct.node*, %struct.node** %iplus, l228 c49
+and
+  assn asm ln 6929, prod ln 272.30, live ln 273, enc None
+  %99 = load %struct.node*, %struct.node** %iplus, l272 c30
+🔔 Removing: asm ln 6805, prod ln 228.49, live ln 229, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `iplus` (decl src ln 136) from
+  assn asm ln 6796, prod ln 223.22, live ln 224, enc None
+  %62 = load %struct.node*, %struct.node** %tail52, l223 c22
+and
+  assn asm ln 6929, prod ln 272.30, live ln 273, enc None
+  %99 = load %struct.node*, %struct.node** %iplus, l272 c30
+🔔 Removing: asm ln 6796, prod ln 223.22, live ln 224, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `iplus` (decl src ln 136) from
+  assn asm ln 6785, prod ln 218.22, live ln 219, enc None
+  %58 = load %struct.node*, %struct.node** %head, l218 c22
+and
+  assn asm ln 6929, prod ln 272.30, live ln 273, enc None
+  %99 = load %struct.node*, %struct.node** %iplus, l272 c30
+🔔 Removing: asm ln 6785, prod ln 218.22, live ln 219, enc None
+
+Filtering before assignments: `iterations` (decl src ln 149)
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `iterations` (decl src ln 149) from
+  assn asm ln 6665, prod ln 176.92, live ln 177, enc None
+  %23 = load i64*, i64** %iterations, l176 c92
+and
+  assn asm ln 6773, prod ln 208.9, live ln 209, enc None
+  %54 = load i64*, i64** %iterations, l208 c9
+🔔 Removing: asm ln 6665, prod ln 176.92, live ln 177, enc None
+
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `iterations` (decl src ln 149) from
+  assn asm ln 6605, prod ln 149.38, live ln 150, enc 0
+  %iterations4 = getelementptr inbounds %struct.network, %struct.network* %6, i32 0, i32 28, l149 c38
+and
+  assn asm ln 6773, prod ln 208.9, live ln 209, enc None
+  %54 = load i64*, i64** %iterations, l208 c9
+
+Filtering before assignments: `j` (decl src ln 154)
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `j` (decl src ln 154) from
+  assn asm ln 6648, prod ln 163.50, live ln 164, enc None
+  %17 = load i64, i64* %j, l163 c50
+and
+  assn asm ln 6650, prod ln 163.50, live ln 164, enc None
+  %inc11 = add nsw i64 %17, 1, l163 c50
+🔔 Removing: asm ln 6648, prod ln 163.50, live ln 164, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `j` (decl src ln 154) from
+  assn asm ln 6640, prod ln 164.24, live ln 165, enc None
+  %14 = load i64, i64* %j, l164 c24
+and
+  assn asm ln 6650, prod ln 163.50, live ln 164, enc None
+  %inc11 = add nsw i64 %17, 1, l163 c50
+🔔 Removing: asm ln 6640, prod ln 164.24, live ln 165, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `j` (decl src ln 154) from
+  assn asm ln 6622, prod ln 163.10, live ln 164, enc None
+  i64 1
+and
+  assn asm ln 6650, prod ln 163.50, live ln 164, enc None
+  %inc11 = add nsw i64 %17, 1, l163 c50
+🔔 Removing: asm ln 6622, prod ln 163.10, live ln 164, enc None
+
+Filtering before assignments: `jminus` (decl src ln 139)
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `jminus` (decl src ln 139) from
+  assn asm ln 6867, prod ln 252.26, live ln 254, enc None
+  %83 = load %struct.node*, %struct.node** %pred, l252 c26
+and
+  assn asm ln 6932, prod ln 273.13, live ln 274, enc None
+  %102 = load %struct.node*, %struct.node** %jminus, l273 c13
+🔔 Removing: asm ln 6867, prod ln 252.26, live ln 254, enc None
+
+Filtering before assignments: `jplus` (decl src ln 137)
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `jplus` (decl src ln 137) from
+  assn asm ln 6858, prod ln 248.19, live ln 249, enc None
+  %80 = load %struct.node*, %struct.node** %iplus, l248 c19
+and
+  assn asm ln 6930, prod ln 272.37, live ln 273, enc None
+  %100 = load %struct.node*, %struct.node** %jplus, l272 c37
+🔔 Removing: asm ln 6858, prod ln 248.19, live ln 249, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `jplus` (decl src ln 137) from
+  assn asm ln 6855, prod ln 247.18, live ln 248, enc None
+  %79 = load %struct.node*, %struct.node** %jplus, l247 c18
+and
+  assn asm ln 6930, prod ln 272.37, live ln 273, enc None
+  %100 = load %struct.node*, %struct.node** %jplus, l272 c37
+🔔 Removing: asm ln 6855, prod ln 247.18, live ln 248, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `jplus` (decl src ln 137) from
+  assn asm ln 6844, prod ln 241.38, live ln 242, enc None
+  %76 = load %struct.node*, %struct.node** %jplus, l241 c38
+and
+  assn asm ln 6930, prod ln 272.37, live ln 273, enc None
+  %100 = load %struct.node*, %struct.node** %jplus, l272 c37
+🔔 Removing: asm ln 6844, prod ln 241.38, live ln 242, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `jplus` (decl src ln 137) from
+  assn asm ln 6806, prod ln 229.11, live ln 230, enc None
+  %66 = load %struct.node*, %struct.node** %jplus, l229 c11
+and
+  assn asm ln 6930, prod ln 272.37, live ln 273, enc None
+  %100 = load %struct.node*, %struct.node** %jplus, l272 c37
+🔔 Removing: asm ln 6806, prod ln 229.11, live ln 230, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `jplus` (decl src ln 137) from
+  assn asm ln 6800, prod ln 224.22, live ln 225, enc None
+  %64 = load %struct.node*, %struct.node** %head53, l224 c22
+and
+  assn asm ln 6930, prod ln 272.37, live ln 273, enc None
+  %100 = load %struct.node*, %struct.node** %jplus, l272 c37
+🔔 Removing: asm ln 6800, prod ln 224.22, live ln 225, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `jplus` (decl src ln 137) from
+  assn asm ln 6789, prod ln 219.22, live ln 220, enc None
+  %60 = load %struct.node*, %struct.node** %tail, l219 c22
+and
+  assn asm ln 6930, prod ln 272.37, live ln 273, enc None
+  %100 = load %struct.node*, %struct.node** %jplus, l272 c37
+🔔 Removing: asm ln 6789, prod ln 219.22, live ln 220, enc None
+
+Filtering before assignments: `m` (decl src ln 146)
+
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `m` (decl src ln 146) from
+  assn asm ln 6599, prod ln 146.26, live ln 149, enc 0
+  %5 = load i64, i64* %m3, l146 c26
+and
+  assn asm ln 6660, prod ln 176.37, live ln 177, enc None
+  %19 = load i64, i64* %m, l176 c37
+
+Filtering before assignments: `net` (decl src ln 124)
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `net` (decl src ln 124) from
+  assn asm ln 6673, prod ln 176.132, live ln 177, enc None
+  %27 = load %struct.network*, %struct.network** %net.addr, l176 c132
+and
+  assn asm ln 6936, prod ln 274.21, live ln 275, enc None
+  %106 = load %struct.network*, %struct.network** %net.addr, l274 c21
+🔔 Removing: asm ln 6673, prod ln 176.132, live ln 177, enc None
+
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `net` (decl src ln 124) from
+  assn asm ln 6569, prod ln 124.0, live ln 143, enc 0
+  %struct.network* %net
+and
+  assn asm ln 6936, prod ln 274.21, live ln 275, enc None
+  %106 = load %struct.network*, %struct.network** %net.addr, l274 c21
+
+Checking equivalence of `net` (decl src ln 124) from
+  assn asm ln 6585, prod ln 143.34, live ln 144, enc 1
+  %0 = load %struct.network*, %struct.network** %net.addr, l143 c34
+  (w64 0xCFEDA4A9735FEB51)
+and
+  assn asm ln 6569, prod ln 124.0, live ln 143, enc 0
+  %struct.network* %net
+  (w64 0xCFEDA4A9735FEB51)
+🔔 Removing: asm ln 6585, prod ln 143.34, live ln 144, enc 1
+
+Checking equivalence of `net` (decl src ln 124) from
+  assn asm ln 6590, prod ln 144.34, live ln 145, enc 2
+  %2 = load %struct.network*, %struct.network** %net.addr, l144 c34
+  (w64 0xCFEDA4A9735FEB51)
+and
+  assn asm ln 6569, prod ln 124.0, live ln 143, enc 0
+  %struct.network* %net
+  (w64 0xCFEDA4A9735FEB51)
+🔔 Removing: asm ln 6590, prod ln 144.34, live ln 145, enc 2
+
+Checking equivalence of `net` (decl src ln 124) from
+  assn asm ln 6596, prod ln 146.21, live ln 147, enc 3
+  %4 = load %struct.network*, %struct.network** %net.addr, l146 c21
+  (w64 0xCFEDA4A9735FEB51)
+and
+  assn asm ln 6569, prod ln 124.0, live ln 143, enc 0
+  %struct.network* %net
+  (w64 0xCFEDA4A9735FEB51)
+🔔 Removing: asm ln 6596, prod ln 146.21, live ln 147, enc 3
+
+Checking equivalence of `net` (decl src ln 124) from
+  assn asm ln 6603, prod ln 149.33, live ln 150, enc 4
+  %6 = load %struct.network*, %struct.network** %net.addr, l149 c33
+  (w64 0xCFEDA4A9735FEB51)
+and
+  assn asm ln 6569, prod ln 124.0, live ln 143, enc 0
+  %struct.network* %net
+  (w64 0xCFEDA4A9735FEB51)
+🔔 Removing: asm ln 6603, prod ln 149.33, live ln 150, enc 4
+
+Checking equivalence of `net` (decl src ln 124) from
+  assn asm ln 6607, prod ln 150.38, live ln 151, enc 5
+  %7 = load %struct.network*, %struct.network** %net.addr, l150 c38
+  (w64 0xCFEDA4A9735FEB51)
+and
+  assn asm ln 6569, prod ln 124.0, live ln 143, enc 0
+  %struct.network* %net
+  (w64 0xCFEDA4A9735FEB51)
+🔔 Removing: asm ln 6607, prod ln 150.38, live ln 151, enc 5
+
+Checking equivalence of `net` (decl src ln 124) from
+  assn asm ln 6613, prod ln 153.28, live ln 154, enc 6
+  %8 = load %struct.network*, %struct.network** %net.addr, l153 c28
+  (w64 0xCFEDA4A9735FEB51)
+and
+  assn asm ln 6569, prod ln 124.0, live ln 143, enc 0
+  %struct.network* %net
+  (w64 0xCFEDA4A9735FEB51)
+🔔 Removing: asm ln 6613, prod ln 153.28, live ln 154, enc 6
+
+Filtering before assignments: `new_flow` (decl src ln 133)
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `new_flow` (decl src ln 133) from
+  assn asm ln 6901, prod ln 264.22, live ln 265, enc None
+  %91 = load i64, i64* %delta, l264 c22
+and
+  assn asm ln 6928, prod ln 272.20, live ln 273, enc None
+  %98 = load i64, i64* %new_flow, l272 c20
+🔔 Removing: asm ln 6901, prod ln 264.22, live ln 265, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `new_flow` (decl src ln 133) from
+  assn asm ln 6896, prod ln 262.32, live ln 263, enc None
+  %sub = sub nsw i64 1, %90, l262 c32
+and
+  assn asm ln 6928, prod ln 272.20, live ln 273, enc None
+  %98 = load i64, i64* %new_flow, l272 c20
+🔔 Removing: asm ln 6896, prod ln 262.32, live ln 263, enc None
+
+Filtering before assignments: `new_orientation` (decl src ln 135)
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `new_orientation` (decl src ln 135) from
+  assn asm ln 6917, prod ln 269.27, live ln 270, enc None
+  i64 0
+and
+  assn asm ln 6926, prod ln 271.32, live ln 272, enc None
+  %96 = load i64, i64* %new_orientation, l271 c32
+🔔 Removing: asm ln 6917, prod ln 269.27, live ln 270, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `new_orientation` (decl src ln 135) from
+  assn asm ln 6913, prod ln 267.27, live ln 268, enc None
+  i64 1
+and
+  assn asm ln 6926, prod ln 271.32, live ln 272, enc None
+  %96 = load i64, i64* %new_orientation, l271 c32
+🔔 Removing: asm ln 6913, prod ln 267.27, live ln 268, enc None
+
+Filtering before assignments: `new_set` (decl src ln 147)
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `new_set` (decl src ln 147) from
+  assn asm ln 6885, prod ln 259.19, live ln 260, enc None
+  i64 2
+and
+  assn asm ln 6943, prod ln 277.22, live ln 278, enc None
+  %109 = load i64, i64* %new_set, l277 c22
+🔔 Removing: asm ln 6885, prod ln 259.19, live ln 260, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `new_set` (decl src ln 147) from
+  assn asm ln 6881, prod ln 257.19, live ln 258, enc None
+  i64 1
+and
+  assn asm ln 6943, prod ln 277.22, live ln 278, enc None
+  %109 = load i64, i64* %new_set, l277 c22
+🔔 Removing: asm ln 6881, prod ln 257.19, live ln 258, enc None
+
+Filtering before assignments: `num_threads` (decl src ln 124)
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `num_threads` (decl src ln 124) from
+  assn asm ln 6757, prod ln 201.11, live ln 202, enc None
+  %51 = load i32, i32* %num_threads.addr, l201 c11
+and
+  assn asm ln 6762, prod ln 202.23, live ln 203, enc None
+  %52 = load i32, i32* %num_threads.addr, l202 c23
+🔔 Removing: asm ln 6757, prod ln 201.11, live ln 202, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `num_threads` (decl src ln 124) from
+  assn asm ln 6691, prod ln 188.20, live ln 189, enc None
+  %32 = load i32, i32* %num_threads.addr, l188 c20
+and
+  assn asm ln 6762, prod ln 202.23, live ln 203, enc None
+  %52 = load i32, i32* %num_threads.addr, l202 c23
+🔔 Removing: asm ln 6691, prod ln 188.20, live ln 189, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `num_threads` (decl src ln 124) from
+  assn asm ln 6671, prod ln 176.119, live ln 177, enc None
+  %26 = load i32, i32* %num_threads.addr, l176 c119
+and
+  assn asm ln 6762, prod ln 202.23, live ln 203, enc None
+  %52 = load i32, i32* %num_threads.addr, l202 c23
+🔔 Removing: asm ln 6671, prod ln 176.119, live ln 177, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `num_threads` (decl src ln 124) from
+  assn asm ln 6667, prod ln 176.106, live ln 177, enc None
+  %25 = load i32, i32* %num_threads.addr, l176 c106
+and
+  assn asm ln 6762, prod ln 202.23, live ln 203, enc None
+  %52 = load i32, i32* %num_threads.addr, l202 c23
+🔔 Removing: asm ln 6667, prod ln 176.106, live ln 177, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `num_threads` (decl src ln 124) from
+  assn asm ln 6628, prod ln 163.26, live ln 164, enc None
+  %12 = load i32, i32* %num_threads.addr, l163 c26
+and
+  assn asm ln 6762, prod ln 202.23, live ln 203, enc None
+  %52 = load i32, i32* %num_threads.addr, l202 c23
+🔔 Removing: asm ln 6628, prod ln 163.26, live ln 164, enc None
+
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `num_threads` (decl src ln 124) from
+  assn asm ln 6571, prod ln 124.0, live ln 143, enc 0
+  i32 %num_threads
+and
+  assn asm ln 6762, prod ln 202.23, live ln 203, enc None
+  %52 = load i32, i32* %num_threads.addr, l202 c23
+
+Filtering before assignments: `red_cost_of_bea` (decl src ln 148)
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `red_cost_of_bea` (decl src ln 148) from
+  assn asm ln 6889, prod ln 261.13, live ln 262, enc None
+  %89 = load i64, i64* %red_cost_of_bea, l261 c13
+and
+  assn asm ln 6935, prod ln 273.29, live ln 274, enc None
+  %105 = load i64, i64* %red_cost_of_bea, l273 c29
+🔔 Removing: asm ln 6889, prod ln 261.13, live ln 262, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `red_cost_of_bea` (decl src ln 148) from
+  assn asm ln 6777, prod ln 216.11, live ln 217, enc None
+  %56 = load i64, i64* %red_cost_of_bea, l216 c11
+and
+  assn asm ln 6935, prod ln 273.29, live ln 274, enc None
+  %105 = load i64, i64* %red_cost_of_bea, l273 c29
+🔔 Removing: asm ln 6777, prod ln 216.11, live ln 217, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `red_cost_of_bea` (decl src ln 148) from
+  assn asm ln 6768, prod ln 206.9, live ln 207, enc None
+  %53 = load i64, i64* %red_cost_of_bea, l206 c9
+and
+  assn asm ln 6935, prod ln 273.29, live ln 274, enc None
+  %105 = load i64, i64* %red_cost_of_bea, l273 c29
+🔔 Removing: asm ln 6768, prod ln 206.9, live ln 207, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `red_cost_of_bea` (decl src ln 148) from
+  assn asm ln 6752, prod ln 198.37, live ln 199, enc None
+  %48 = load i64, i64* %cost, l198 c37
+and
+  assn asm ln 6935, prod ln 273.29, live ln 274, enc None
+  %105 = load i64, i64* %red_cost_of_bea, l273 c29
+🔔 Removing: asm ln 6752, prod ln 198.37, live ln 199, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `red_cost_of_bea` (decl src ln 148) from
+  assn asm ln 6745, prod ln 195.23, live ln 196, enc None
+  i64 0
+and
+  assn asm ln 6935, prod ln 273.29, live ln 274, enc None
+  %105 = load i64, i64* %red_cost_of_bea, l273 c29
+🔔 Removing: asm ln 6745, prod ln 195.23, live ln 196, enc None
+
+Filtering before assignments: `stop_arcs` (decl src ln 144)
+
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `stop_arcs` (decl src ln 144) from
+  assn asm ln 6593, prod ln 144.39, live ln 146, enc 0
+  %3 = load %struct.arc*, %struct.arc** %stop_arcs2, l144 c39
+and
+  assn asm ln 6662, prod ln 176.46, live ln 177, enc None
+  %21 = load %struct.arc*, %struct.arc** %stop_arcs, l176 c46
+
+Filtering before assignments: `temp` (decl src ln 145)
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `temp` (decl src ln 145) from
+  assn asm ln 6856, prod ln 247.18, live ln 248, enc None
+  %79 = load %struct.node*, %struct.node** %jplus, l247 c18
+and
+  assn asm ln 6859, prod ln 249.19, live ln 250, enc None
+  %81 = load %struct.node*, %struct.node** %temp, l249 c19
+🔔 Removing: asm ln 6856, prod ln 247.18, live ln 248, enc None
+
+Filtering before assignments: `xchange` (decl src ln 134)
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `xchange` (decl src ln 134) from
+  assn asm ln 6872, prod ln 256.13, live ln 257, enc None
+  %86 = load i64, i64* %xchange, l256 c13
+and
+  assn asm ln 6921, prod ln 271.23, live ln 272, enc None
+  %95 = load i64, i64* %xchange, l271 c23
+🔔 Removing: asm ln 6872, prod ln 256.13, live ln 257, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `xchange` (decl src ln 134) from
+  assn asm ln 6850, prod ln 245.13, live ln 246, enc None
+  %78 = load i64, i64* %xchange, l245 c13
+and
+  assn asm ln 6921, prod ln 271.23, live ln 272, enc None
+  %95 = load i64, i64* %xchange, l271 c23
+🔔 Removing: asm ln 6850, prod ln 245.13, live ln 246, enc None
+
+Filtering after assignments: `bea` (decl src ln 141)
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `bea` (decl src ln 141) from
+  assn asm ln 4940, prod ln 141.0, live ln 169, enc None
+  %bea.0 = phi %struct.arc.0* [ %bea.1, %if.end99 ], [ undef, %for.cond ]
+and
+  assn asm ln 5027, prod ln 199.25, live ln 201, enc None
+  %24 = load %struct.arc.0*, %struct.arc.0** %a, l199 c25
+🔔 Removing: asm ln 4940, prod ln 141.0, live ln 169, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `bea` (decl src ln 141) from
+  assn asm ln 5040, prod ln 199.25, live ln 206, enc None
+  %bea.1 = phi %struct.arc.0* [ %bea.0, %for.end35 ], [ %24, %if.then40 ], [ %24, %if.else ]
+and
+  assn asm ln 5027, prod ln 199.25, live ln 201, enc None
+  %24 = load %struct.arc.0*, %struct.arc.0** %a, l199 c25
+🔔 Removing: asm ln 5040, prod ln 199.25, live ln 206, enc None
+
+Filtering after assignments: `i` (decl src ln 154)
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `i` (decl src ln 154) from
+  assn asm ln 4933, prod ln 163.44, live ln 164, enc None
+  %inc = add nsw i64 %i.0, 1, l163 c44
+and
+  assn asm ln 4910, prod ln 154.0, live ln 163, enc None
+  i64 1
+🔔 Removing: asm ln 4933, prod ln 163.44, live ln 164, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `i` (decl src ln 154) from
+  assn asm ln 4966, prod ln 154.0, live ln 188, enc None
+  i64 0
+and
+  assn asm ln 4910, prod ln 154.0, live ln 163, enc None
+  i64 1
+🔔 Removing: asm ln 4966, prod ln 154.0, live ln 188, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `i` (decl src ln 154) from
+  assn asm ln 5011, prod ln 188.34, live ln 189, enc None
+  %inc34 = add nsw i64 %i.1, 1, l188 c34
+and
+  assn asm ln 4910, prod ln 154.0, live ln 163, enc None
+  i64 1
+🔔 Removing: asm ln 5011, prod ln 188.34, live ln 189, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `i` (decl src ln 154) from
+  assn asm ln 4917, prod ln 163.44, live ln 164, enc None
+  %i.0 = phi i64 [ 1, %entry ], [ %inc, %for.body ]
+and
+  assn asm ln 4910, prod ln 154.0, live ln 163, enc None
+  i64 1
+🔔 Removing: asm ln 4917, prod ln 163.44, live ln 164, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `i` (decl src ln 154) from
+  assn asm ln 4971, prod ln 188.34, live ln 189, enc None
+  %i.1 = phi i64 [ 0, %while.body ], [ %inc34, %for.inc33 ]
+and
+  assn asm ln 4910, prod ln 154.0, live ln 163, enc None
+  i64 1
+🔔 Removing: asm ln 4971, prod ln 188.34, live ln 189, enc None
+
+Filtering after assignments: `iplus` (decl src ln 136)
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `iplus` (decl src ln 136) from
+  assn asm ln 5063, prod ln 223.22, live ln 224, enc None
+  %28 = load %struct.node.1*, %struct.node.1** %tail52, l223 c22
+and
+  assn asm ln 5054, prod ln 218.22, live ln 219, enc None
+  %26 = load %struct.node.1*, %struct.node.1** %head, l218 c22
+🔔 Removing: asm ln 5063, prod ln 223.22, live ln 224, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `iplus` (decl src ln 136) from
+  assn asm ln 5115, prod ln 245.13, live ln 252, enc None
+  %spec.select1 = select i1 %tobool71, %struct.node.1* %jplus.0, %struct.node.1* %iplus.0, l245 c13
+and
+  assn asm ln 5054, prod ln 218.22, live ln 219, enc None
+  %26 = load %struct.node.1*, %struct.node.1** %head, l218 c22
+🔔 Removing: asm ln 5115, prod ln 245.13, live ln 252, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `iplus` (decl src ln 136) from
+  assn asm ln 5072, prod ln 223.22, live ln 227, enc None
+  %iplus.0 = phi %struct.node.1* [ %26, %if.then50 ], [ %28, %if.else51 ]
+and
+  assn asm ln 5054, prod ln 218.22, live ln 219, enc None
+  %26 = load %struct.node.1*, %struct.node.1** %head, l218 c22
+🔔 Removing: asm ln 5072, prod ln 223.22, live ln 227, enc None
+
+Filtering after assignments: `j` (decl src ln 154)
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `j` (decl src ln 154) from
+  assn asm ln 4935, prod ln 163.50, live ln 164, enc None
+  %inc11 = add nsw i64 %j.0, 1, l163 c50
+and
+  assn asm ln 4909, prod ln 154.0, live ln 163, enc None
+  i64 1
+🔔 Removing: asm ln 4935, prod ln 163.50, live ln 164, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `j` (decl src ln 154) from
+  assn asm ln 4916, prod ln 163.50, live ln 164, enc None
+  %j.0 = phi i64 [ 1, %entry ], [ %inc11, %for.body ]
+and
+  assn asm ln 4909, prod ln 154.0, live ln 163, enc None
+  i64 1
+🔔 Removing: asm ln 4916, prod ln 163.50, live ln 164, enc None
+
+Filtering after assignments: `jplus` (decl src ln 137)
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `jplus` (decl src ln 137) from
+  assn asm ln 5066, prod ln 224.22, live ln 225, enc None
+  %29 = load %struct.node.1*, %struct.node.1** %head53, l224 c22
+and
+  assn asm ln 5057, prod ln 219.22, live ln 220, enc None
+  %27 = load %struct.node.1*, %struct.node.1** %tail, l219 c22
+🔔 Removing: asm ln 5066, prod ln 224.22, live ln 225, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `jplus` (decl src ln 137) from
+  assn asm ln 5116, prod ln 245.13, live ln 252, enc None
+  %spec.select = select i1 %tobool71, %struct.node.1* %iplus.0, %struct.node.1* %jplus.0, l245 c13
+and
+  assn asm ln 5057, prod ln 219.22, live ln 220, enc None
+  %27 = load %struct.node.1*, %struct.node.1** %tail, l219 c22
+🔔 Removing: asm ln 5116, prod ln 245.13, live ln 252, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `jplus` (decl src ln 137) from
+  assn asm ln 5073, prod ln 224.22, live ln 227, enc None
+  %jplus.0 = phi %struct.node.1* [ %27, %if.then50 ], [ %29, %if.else51 ]
+and
+  assn asm ln 5057, prod ln 219.22, live ln 220, enc None
+  %27 = load %struct.node.1*, %struct.node.1** %tail, l219 c22
+🔔 Removing: asm ln 5073, prod ln 224.22, live ln 227, enc None
+
+Filtering after assignments: `red_cost_of_bea` (decl src ln 148)
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `red_cost_of_bea` (decl src ln 148) from
+  assn asm ln 5039, prod ln 198.37, live ln 206, enc None
+  %red_cost_of_bea.0 = phi i64 [ 0, %for.end35 ], [ %22, %if.then40 ], [ %22, %if.else ]
+and
+  assn asm ln 5023, prod ln 198.37, live ln 199, enc None
+  %22 = load i64, i64* %cost, l198 c37
+🔔 Removing: asm ln 5039, prod ln 198.37, live ln 206, enc None
+
+Filtering after assignments: `xchange` (decl src ln 134)
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `xchange` (decl src ln 134) from
+  assn asm ln 5123, prod ln 256.13, live ln 257, enc None
+  %37 = load i64, i64* %xchange, l256 c13
+and
+  assn asm ln 5141, prod ln 271.23, live ln 272, enc None
+  %42 = load i64, i64* %xchange, l271 c23
+🔔 Removing: asm ln 5123, prod ln 256.13, live ln 257, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `xchange` (decl src ln 134) from
+  assn asm ln 5111, prod ln 245.13, live ln 246, enc None
+  %34 = load i64, i64* %xchange, l245 c13
+and
+  assn asm ln 5141, prod ln 271.23, live ln 272, enc None
+  %42 = load i64, i64* %xchange, l271 c23
+🔔 Removing: asm ln 5111, prod ln 245.13, live ln 246, enc None
+
+Collating encountered before assignments: `arcs` (decl src ln 143)
+❌ Assignment asm ln 6661, prod ln 176.40, live ln 177, enc None for `arcs` (decl src ln 143) was not encountered during execution
+  asm ln 6588, prod ln 143.39, live ln 144, enc 0
+Collating encountered before assignments: `bea` (decl src ln 141)
+❌ Assignment asm ln 6940, prod ln 276.9, live ln 277, enc None for `bea` (decl src ln 141) was not encountered during execution
+Collating encountered before assignments: `bla` (decl src ln 142)
+❌ Assignment asm ln 6945, prod ln 277.9, live ln 278, enc None for `bla` (decl src ln 142) was not encountered during execution
+Collating encountered before assignments: `bound_exchanges` (decl src ln 150)
+❌ Assignment asm ln 6814, prod ln 233.11, live ln 234, enc None for `bound_exchanges` (decl src ln 150) was not encountered during execution
+  asm ln 6609, prod ln 150.43, live ln 153, enc 0
+Collating encountered before assignments: `end_arc` (decl src ln 153)
+  asm ln 6616, prod ln 153.33, live ln 162, enc 0
+Collating encountered before assignments: `i` (decl src ln 154)
+❌ Assignment asm ln 6736, prod ln 188.34, live ln 189, enc None for `i` (decl src ln 154) was not encountered during execution
+Collating encountered before assignments: `iminus` (decl src ln 138)
+❌ Assignment asm ln 6931, prod ln 272.44, live ln 273, enc None for `iminus` (decl src ln 138) was not encountered during execution
+Collating encountered before assignments: `iplus` (decl src ln 136)
+❌ Assignment asm ln 6929, prod ln 272.30, live ln 273, enc None for `iplus` (decl src ln 136) was not encountered during execution
+Collating encountered before assignments: `iterations` (decl src ln 149)
+❌ Assignment asm ln 6773, prod ln 208.9, live ln 209, enc None for `iterations` (decl src ln 149) was not encountered during execution
+  asm ln 6605, prod ln 149.38, live ln 150, enc 0
+Collating encountered before assignments: `j` (decl src ln 154)
+❌ Assignment asm ln 6650, prod ln 163.50, live ln 164, enc None for `j` (decl src ln 154) was not encountered during execution
+Collating encountered before assignments: `jminus` (decl src ln 139)
+❌ Assignment asm ln 6932, prod ln 273.13, live ln 274, enc None for `jminus` (decl src ln 139) was not encountered during execution
+Collating encountered before assignments: `jplus` (decl src ln 137)
+❌ Assignment asm ln 6930, prod ln 272.37, live ln 273, enc None for `jplus` (decl src ln 137) was not encountered during execution
+Collating encountered before assignments: `m` (decl src ln 146)
+❌ Assignment asm ln 6660, prod ln 176.37, live ln 177, enc None for `m` (decl src ln 146) was not encountered during execution
+  asm ln 6599, prod ln 146.26, live ln 149, enc 0
+Collating encountered before assignments: `net` (decl src ln 124)
+❌ Assignment asm ln 6936, prod ln 274.21, live ln 275, enc None for `net` (decl src ln 124) was not encountered during execution
+  asm ln 6569, prod ln 124.0, live ln 143, enc 0
+Collating encountered before assignments: `new_flow` (decl src ln 133)
+❌ Assignment asm ln 6928, prod ln 272.20, live ln 273, enc None for `new_flow` (decl src ln 133) was not encountered during execution
+Collating encountered before assignments: `new_orientation` (decl src ln 135)
+❌ Assignment asm ln 6926, prod ln 271.32, live ln 272, enc None for `new_orientation` (decl src ln 135) was not encountered during execution
+Collating encountered before assignments: `new_set` (decl src ln 147)
+❌ Assignment asm ln 6943, prod ln 277.22, live ln 278, enc None for `new_set` (decl src ln 147) was not encountered during execution
+Collating encountered before assignments: `num_threads` (decl src ln 124)
+❌ Assignment asm ln 6762, prod ln 202.23, live ln 203, enc None for `num_threads` (decl src ln 124) was not encountered during execution
+  asm ln 6571, prod ln 124.0, live ln 143, enc 0
+Collating encountered before assignments: `red_cost_of_bea` (decl src ln 148)
+❌ Assignment asm ln 6935, prod ln 273.29, live ln 274, enc None for `red_cost_of_bea` (decl src ln 148) was not encountered during execution
+Collating encountered before assignments: `stop_arcs` (decl src ln 144)
+❌ Assignment asm ln 6662, prod ln 176.46, live ln 177, enc None for `stop_arcs` (decl src ln 144) was not encountered during execution
+  asm ln 6593, prod ln 144.39, live ln 146, enc 0
+Collating encountered before assignments: `temp` (decl src ln 145)
+❌ Assignment asm ln 6859, prod ln 249.19, live ln 250, enc None for `temp` (decl src ln 145) was not encountered during execution
+Collating encountered before assignments: `xchange` (decl src ln 134)
+❌ Assignment asm ln 6921, prod ln 271.23, live ln 272, enc None for `xchange` (decl src ln 134) was not encountered during execution
+
+Collating encountered after assignments: `arcs` (decl src ln 143)
+  asm ln 4889, prod ln 143.39, live ln 144, enc 0
+Collating encountered after assignments: `bea` (decl src ln 141)
+❌ Assignment asm ln 5027, prod ln 199.25, live ln 201, enc None for `bea` (decl src ln 141) was not encountered during execution
+Collating encountered after assignments: `bla` (decl src ln 142)
+❌ Assignment asm ln 5122, prod ln 254.23, live ln 256, enc None for `bla` (decl src ln 142) was not encountered during execution
+Collating encountered after assignments: `bound_exchanges` (decl src ln 150)
+  asm ln 4899, prod ln 150.43, live ln 153, enc 0
+Collating encountered after assignments: `end_arc` (decl src ln 153)
+  asm ln 4905, prod ln 153.33, live ln 162, enc 0
+Collating encountered after assignments: `i` (decl src ln 154)
+❌ Assignment asm ln 4910, prod ln 154.0, live ln 163, enc None for `i` (decl src ln 154) was not encountered during execution
+Collating encountered after assignments: `iminus` (decl src ln 138)
+❌ Assignment asm ln 5076, prod ln 228.16, live ln 231, enc None for `iminus` (decl src ln 138) was not encountered during execution
+Collating encountered after assignments: `iplus` (decl src ln 136)
+❌ Assignment asm ln 5054, prod ln 218.22, live ln 219, enc None for `iplus` (decl src ln 136) was not encountered during execution
+Collating encountered after assignments: `iterations` (decl src ln 149)
+  asm ln 4897, prod ln 149.38, live ln 150, enc 0
+Collating encountered after assignments: `j` (decl src ln 154)
+❌ Assignment asm ln 4909, prod ln 154.0, live ln 163, enc None for `j` (decl src ln 154) was not encountered during execution
+Collating encountered after assignments: `jminus` (decl src ln 139)
+❌ Assignment asm ln 5119, prod ln 252.26, live ln 254, enc None for `jminus` (decl src ln 139) was not encountered during execution
+Collating encountered after assignments: `jplus` (decl src ln 137)
+❌ Assignment asm ln 5057, prod ln 219.22, live ln 220, enc None for `jplus` (decl src ln 137) was not encountered during execution
+Collating encountered after assignments: `m` (decl src ln 146)
+  asm ln 4895, prod ln 146.26, live ln 149, enc 0
+Collating encountered after assignments: `net` (decl src ln 124)
+  asm ln 4882, prod ln 124.0, live ln 143, enc 0
+Collating encountered after assignments: `new_flow` (decl src ln 133)
+❌ Assignment asm ln 5135, prod ln 261.13, live ln 266, enc None for `new_flow` (decl src ln 133) was not encountered during execution
+Collating encountered after assignments: `new_orientation` (decl src ln 135)
+❌ Assignment asm ln 5140, prod ln 135.0, live ln 271, enc None for `new_orientation` (decl src ln 135) was not encountered during execution
+Collating encountered after assignments: `new_set` (decl src ln 147)
+❌ Assignment asm ln 5129, prod ln 256.13, live ln 261, enc None for `new_set` (decl src ln 147) was not encountered during execution
+Collating encountered after assignments: `num_threads` (decl src ln 124)
+  asm ln 4883, prod ln 124.0, live ln 143, enc 0
+Collating encountered after assignments: `red_cost_of_bea` (decl src ln 148)
+❌ Assignment asm ln 5023, prod ln 198.37, live ln 199, enc None for `red_cost_of_bea` (decl src ln 148) was not encountered during execution
+Collating encountered after assignments: `stop_arcs` (decl src ln 144)
+  asm ln 4892, prod ln 144.39, live ln 146, enc 0
+Collating encountered after assignments: `xchange` (decl src ln 134)
+❌ Assignment asm ln 5141, prod ln 271.23, live ln 272, enc None for `xchange` (decl src ln 134) was not encountered during execution
+
+#### Check after using before as reference
+
+❌ Before encountered assns for `temp` (decl src ln 145) not found in after
+Assignments:         temp
+  Reference:         1
+  Test:              0
+Matching:
+  Matching Coords:   0
+  Matching Value:    0
+Consistency Errors:
+  Mismatched Coords: 0
+  Mismatched Value:  0
+Availability Errors:
+  Ref Not Encount.:  0
+  Ref Not in Test:   1
+  Test Not Encount.: 0
+  Test Not in Ref:   0
+Warnings:
+  Unused:            0
+  Removable:         0
+  Unreachable:       0
+Reference Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
+Test Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
+
+❌ Before assn asm ln 6661, prod ln 176.40, live ln 177, enc None for `arcs` (decl src ln 143) was not encountered during execution
+
+Checking equivalence of `arcs` (decl src ln 143) from
+  assn asm ln 4889, prod ln 143.39, live ln 144, enc 0
+  %0 = load %struct.arc.0*, %struct.arc.0** %arcs1, l143 c39
+  (w64 0x0)
+and
+  assn asm ln 6588, prod ln 143.39, live ln 144, enc 0
+  %1 = load %struct.arc*, %struct.arc** %arcs1, l143 c39
+  (w64 0x0)
+✅ Before `arcs` (decl src ln 143) assn asm ln 6588, prod ln 143.39, live ln 144, enc 0 symbolic value matches after assn asm ln 4889, prod ln 143.39, live ln 144, enc 0
+
+❌ After `arcs` assns checked using before as reference
+Assignments:         arcs
+  Reference:         2
+  Test:              1
+Matching:
+  Matching Coords:   1
+  Matching Value:    1
+Consistency Errors:
+  Mismatched Coords: 0
+  Mismatched Value:  0
+Availability Errors:
+  Ref Not Encount.:  1
+  Ref Not in Test:   0
+  Test Not Encount.: 0
+  Test Not in Ref:   0
+Warnings:
+  Unused:            0
+  Removable:         0
+  Unreachable:       0
+Reference Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
+Test Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
+
+❌ Before assn asm ln 6940, prod ln 276.9, live ln 277, enc None for `bea` (decl src ln 141) was not encountered during execution
+
+❌ After assn asm ln 5027, prod ln 199.25, live ln 201, enc None for `bea` (decl src ln 141) was not encountered during execution
+
+❌ After `bea` assns checked using before as reference
+Assignments:         bea
+  Reference:         1
+  Test:              1
+Matching:
+  Matching Coords:   0
+  Matching Value:    0
+Consistency Errors:
+  Mismatched Coords: 0
+  Mismatched Value:  0
+Availability Errors:
+  Ref Not Encount.:  1
+  Ref Not in Test:   0
+  Test Not Encount.: 1
+  Test Not in Ref:   0
+Warnings:
+  Unused:            0
+  Removable:         0
+  Unreachable:       0
+Reference Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
+Test Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
+
+❌ Before assn asm ln 6945, prod ln 277.9, live ln 278, enc None for `bla` (decl src ln 142) was not encountered during execution
+
+❌ After assn asm ln 5122, prod ln 254.23, live ln 256, enc None for `bla` (decl src ln 142) was not encountered during execution
+
+❌ After `bla` assns checked using before as reference
+Assignments:         bla
+  Reference:         1
+  Test:              1
+Matching:
+  Matching Coords:   0
+  Matching Value:    0
+Consistency Errors:
+  Mismatched Coords: 0
+  Mismatched Value:  0
+Availability Errors:
+  Ref Not Encount.:  1
+  Ref Not in Test:   0
+  Test Not Encount.: 1
+  Test Not in Ref:   0
+Warnings:
+  Unused:            0
+  Removable:         0
+  Unreachable:       0
+Reference Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
+Test Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
+
+❌ Before assn asm ln 6814, prod ln 233.11, live ln 234, enc None for `bound_exchanges` (decl src ln 150) was not encountered during execution
+
+Checking equivalence of `bound_exchanges` (decl src ln 150) from
+  assn asm ln 4899, prod ln 150.43, live ln 153, enc 0
+  %bound_exchanges5 = getelementptr inbounds %struct.network.2, %struct.network.2* %net, i32 0, i32 29, l150 c43
+  (w64 0xAE41FA8E3229C789)
+and
+  assn asm ln 6609, prod ln 150.43, live ln 153, enc 0
+  %bound_exchanges5 = getelementptr inbounds %struct.network, %struct.network* %7, i32 0, i32 29, l150 c43
+  (w64 0xAE41FA8E3229C789)
+✅ Before `bound_exchanges` (decl src ln 150) assn asm ln 6609, prod ln 150.43, live ln 153, enc 0 symbolic value matches after assn asm ln 4899, prod ln 150.43, live ln 153, enc 0
+
+❌ After `bound_exchanges` assns checked using before as reference
+Assignments:         bound_exchanges
+  Reference:         2
+  Test:              1
+Matching:
+  Matching Coords:   1
+  Matching Value:    1
+Consistency Errors:
+  Mismatched Coords: 0
+  Mismatched Value:  0
+Availability Errors:
+  Ref Not Encount.:  1
+  Ref Not in Test:   0
+  Test Not Encount.: 0
+  Test Not in Ref:   0
+Warnings:
+  Unused:            0
+  Removable:         0
+  Unreachable:       0
+Reference Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
+Test Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
+
+✅ After `delta` assns checked using before as reference
+Assignments:         delta
+  Reference:         0
+  Test:              0
+Matching:
+  Matching Coords:   0
+  Matching Value:    0
+Consistency Errors:
+  Mismatched Coords: 0
+  Mismatched Value:  0
+Availability Errors:
+  Ref Not Encount.:  0
+  Ref Not in Test:   0
+  Test Not Encount.: 0
+  Test Not in Ref:   0
+Warnings:
+  Unused:            0
+  Removable:         0
+  Unreachable:       0
+Reference Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
+Test Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
+
+Checking equivalence of `end_arc` (decl src ln 153) from
+  assn asm ln 4905, prod ln 153.33, live ln 162, enc 0
+  %3 = load %struct.arc.0*, %struct.arc.0** %arcs6, l153 c33
+  (w64 0x0)
+and
+  assn asm ln 6616, prod ln 153.33, live ln 162, enc 0
+  %9 = load %struct.arc*, %struct.arc** %arcs6, l153 c33
+  (w64 0x0)
+✅ Before `end_arc` (decl src ln 153) assn asm ln 6616, prod ln 153.33, live ln 162, enc 0 symbolic value matches after assn asm ln 4905, prod ln 153.33, live ln 162, enc 0
+
+✅ After `end_arc` assns checked using before as reference
+Assignments:         end_arc
+  Reference:         1
+  Test:              1
+Matching:
+  Matching Coords:   1
+  Matching Value:    1
+Consistency Errors:
+  Mismatched Coords: 0
+  Mismatched Value:  0
+Availability Errors:
+  Ref Not Encount.:  0
+  Ref Not in Test:   0
+  Test Not Encount.: 0
+  Test Not in Ref:   0
+Warnings:
+  Unused:            0
+  Removable:         0
+  Unreachable:       0
+Reference Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
+Test Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
+
+❌ Before assn asm ln 6736, prod ln 188.34, live ln 189, enc None for `i` (decl src ln 154) was not encountered during execution
+
+❌ After assn asm ln 4910, prod ln 154.0, live ln 163, enc None for `i` (decl src ln 154) was not encountered during execution
+
+❌ After `i` assns checked using before as reference
+Assignments:         i
+  Reference:         1
+  Test:              1
+Matching:
+  Matching Coords:   0
+  Matching Value:    0
+Consistency Errors:
+  Mismatched Coords: 0
+  Mismatched Value:  0
+Availability Errors:
+  Ref Not Encount.:  1
+  Ref Not in Test:   0
+  Test Not Encount.: 1
+  Test Not in Ref:   0
+Warnings:
+  Unused:            0
+  Removable:         0
+  Unreachable:       0
+Reference Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
+Test Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
+
+❌ Before assn asm ln 6931, prod ln 272.44, live ln 273, enc None for `iminus` (decl src ln 138) was not encountered during execution
+
+❌ After assn asm ln 5076, prod ln 228.16, live ln 231, enc None for `iminus` (decl src ln 138) was not encountered during execution
+
+❌ After `iminus` assns checked using before as reference
+Assignments:         iminus
+  Reference:         1
+  Test:              1
+Matching:
+  Matching Coords:   0
+  Matching Value:    0
+Consistency Errors:
+  Mismatched Coords: 0
+  Mismatched Value:  0
+Availability Errors:
+  Ref Not Encount.:  1
+  Ref Not in Test:   0
+  Test Not Encount.: 1
+  Test Not in Ref:   0
+Warnings:
+  Unused:            0
+  Removable:         0
+  Unreachable:       0
+Reference Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
+Test Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
+
+❌ Before assn asm ln 6929, prod ln 272.30, live ln 273, enc None for `iplus` (decl src ln 136) was not encountered during execution
+
+❌ After assn asm ln 5054, prod ln 218.22, live ln 219, enc None for `iplus` (decl src ln 136) was not encountered during execution
+
+❌ After `iplus` assns checked using before as reference
+Assignments:         iplus
+  Reference:         1
+  Test:              1
+Matching:
+  Matching Coords:   0
+  Matching Value:    0
+Consistency Errors:
+  Mismatched Coords: 0
+  Mismatched Value:  0
+Availability Errors:
+  Ref Not Encount.:  1
+  Ref Not in Test:   0
+  Test Not Encount.: 1
+  Test Not in Ref:   0
+Warnings:
+  Unused:            0
+  Removable:         0
+  Unreachable:       0
+Reference Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
+Test Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
+
+❌ Before assn asm ln 6773, prod ln 208.9, live ln 209, enc None for `iterations` (decl src ln 149) was not encountered during execution
+
+Checking equivalence of `iterations` (decl src ln 149) from
+  assn asm ln 4897, prod ln 149.38, live ln 150, enc 0
+  %iterations4 = getelementptr inbounds %struct.network.2, %struct.network.2* %net, i32 0, i32 28, l149 c38
+  (w64 0xEE8BF5712A34418F)
+and
+  assn asm ln 6605, prod ln 149.38, live ln 150, enc 0
+  %iterations4 = getelementptr inbounds %struct.network, %struct.network* %6, i32 0, i32 28, l149 c38
+  (w64 0xEE8BF5712A34418F)
+✅ Before `iterations` (decl src ln 149) assn asm ln 6605, prod ln 149.38, live ln 150, enc 0 symbolic value matches after assn asm ln 4897, prod ln 149.38, live ln 150, enc 0
+
+❌ After `iterations` assns checked using before as reference
+Assignments:         iterations
+  Reference:         2
+  Test:              1
+Matching:
+  Matching Coords:   1
+  Matching Value:    1
+Consistency Errors:
+  Mismatched Coords: 0
+  Mismatched Value:  0
+Availability Errors:
+  Ref Not Encount.:  1
+  Ref Not in Test:   0
+  Test Not Encount.: 0
+  Test Not in Ref:   0
+Warnings:
+  Unused:            0
+  Removable:         0
+  Unreachable:       0
+Reference Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
+Test Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
+
+❌ Before assn asm ln 6650, prod ln 163.50, live ln 164, enc None for `j` (decl src ln 154) was not encountered during execution
+
+❌ After assn asm ln 4909, prod ln 154.0, live ln 163, enc None for `j` (decl src ln 154) was not encountered during execution
+
+❌ After `j` assns checked using before as reference
+Assignments:         j
+  Reference:         1
+  Test:              1
+Matching:
+  Matching Coords:   0
+  Matching Value:    0
+Consistency Errors:
+  Mismatched Coords: 0
+  Mismatched Value:  0
+Availability Errors:
+  Ref Not Encount.:  1
+  Ref Not in Test:   0
+  Test Not Encount.: 1
+  Test Not in Ref:   0
+Warnings:
+  Unused:            0
+  Removable:         0
+  Unreachable:       0
+Reference Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
+Test Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
+
+❌ Before assn asm ln 6932, prod ln 273.13, live ln 274, enc None for `jminus` (decl src ln 139) was not encountered during execution
+
+❌ After assn asm ln 5119, prod ln 252.26, live ln 254, enc None for `jminus` (decl src ln 139) was not encountered during execution
+
+❌ After `jminus` assns checked using before as reference
+Assignments:         jminus
+  Reference:         1
+  Test:              1
+Matching:
+  Matching Coords:   0
+  Matching Value:    0
+Consistency Errors:
+  Mismatched Coords: 0
+  Mismatched Value:  0
+Availability Errors:
+  Ref Not Encount.:  1
+  Ref Not in Test:   0
+  Test Not Encount.: 1
+  Test Not in Ref:   0
+Warnings:
+  Unused:            0
+  Removable:         0
+  Unreachable:       0
+Reference Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
+Test Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
+
+❌ Before assn asm ln 6930, prod ln 272.37, live ln 273, enc None for `jplus` (decl src ln 137) was not encountered during execution
+
+❌ After assn asm ln 5057, prod ln 219.22, live ln 220, enc None for `jplus` (decl src ln 137) was not encountered during execution
+
+❌ After `jplus` assns checked using before as reference
+Assignments:         jplus
+  Reference:         1
+  Test:              1
+Matching:
+  Matching Coords:   0
+  Matching Value:    0
+Consistency Errors:
+  Mismatched Coords: 0
+  Mismatched Value:  0
+Availability Errors:
+  Ref Not Encount.:  1
+  Ref Not in Test:   0
+  Test Not Encount.: 1
+  Test Not in Ref:   0
+Warnings:
+  Unused:            0
+  Removable:         0
+  Unreachable:       0
+Reference Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
+Test Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
+
+❌ Before assn asm ln 6660, prod ln 176.37, live ln 177, enc None for `m` (decl src ln 146) was not encountered during execution
+
+Checking equivalence of `m` (decl src ln 146) from
+  assn asm ln 4895, prod ln 146.26, live ln 149, enc 0
+  %2 = load i64, i64* %m3, l146 c26
+  (ReadLSB w64 (w32 0x1A8) master.net.deref)
+and
+  assn asm ln 6599, prod ln 146.26, live ln 149, enc 0
+  %5 = load i64, i64* %m3, l146 c26
+  (ReadLSB w64 (w32 0x1A8) master.net.deref)
+Query to parse
+array master.net.deref[1296] : w32 -> w8 = symbolic
+array master.net.deref[1296] : w32 -> w8 = symbolic
+(query [] (Eq (ReadLSB w64 (w32 0x1A8) master.net.deref)
+     (ReadLSB w64 (w32 0x1A8) master.net.deref)))
+Parsed query
+(Eq N0:(ReadLSB w64 (w32 0x1A8) master.net.deref)
+     N0)
+✅ Before `m` (decl src ln 146) assn asm ln 6599, prod ln 146.26, live ln 149, enc 0 symbolic value matches after assn asm ln 4895, prod ln 146.26, live ln 149, enc 0
+
+❌ After `m` assns checked using before as reference
+Assignments:         m
+  Reference:         2
+  Test:              1
+Matching:
+  Matching Coords:   1
+  Matching Value:    1
+Consistency Errors:
+  Mismatched Coords: 0
+  Mismatched Value:  0
+Availability Errors:
+  Ref Not Encount.:  1
+  Ref Not in Test:   0
+  Test Not Encount.: 0
+  Test Not in Ref:   0
+Warnings:
+  Unused:            0
+  Removable:         0
+  Unreachable:       0
+Reference Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
+Test Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
+
+✅ After `max_basket` assns checked using before as reference
+Assignments:         max_basket
+  Reference:         0
+  Test:              0
+Matching:
+  Matching Coords:   0
+  Matching Value:    0
+Consistency Errors:
+  Mismatched Coords: 0
+  Mismatched Value:  0
+Availability Errors:
+  Ref Not Encount.:  0
+  Ref Not in Test:   0
+  Test Not Encount.: 0
+  Test Not in Ref:   0
+Warnings:
+  Unused:            0
+  Removable:         0
+  Unreachable:       0
+Reference Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
+Test Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
+
+❌ Before assn asm ln 6936, prod ln 274.21, live ln 275, enc None for `net` (decl src ln 124) was not encountered during execution
+
+Checking equivalence of `net` (decl src ln 124) from
+  assn asm ln 4882, prod ln 124.0, live ln 143, enc 0
+  %struct.network.2* %net
+  (w64 0xCFEDA4A9735FEB51)
+and
+  assn asm ln 6569, prod ln 124.0, live ln 143, enc 0
+  %struct.network* %net
+  (w64 0xCFEDA4A9735FEB51)
+✅ Before `net` (decl src ln 124) assn asm ln 6569, prod ln 124.0, live ln 143, enc 0 symbolic value matches after assn asm ln 4882, prod ln 124.0, live ln 143, enc 0
+
+❌ After `net` assns checked using before as reference
+Assignments:         net
+  Reference:         2
+  Test:              1
+Matching:
+  Matching Coords:   1
+  Matching Value:    1
+Consistency Errors:
+  Mismatched Coords: 0
+  Mismatched Value:  0
+Availability Errors:
+  Ref Not Encount.:  1
+  Ref Not in Test:   0
+  Test Not Encount.: 0
+  Test Not in Ref:   0
+Warnings:
+  Unused:            0
+  Removable:         0
+  Unreachable:       0
+Reference Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
+Test Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
+
+❌ Before assn asm ln 6928, prod ln 272.20, live ln 273, enc None for `new_flow` (decl src ln 133) was not encountered during execution
+
+❌ After assn asm ln 5135, prod ln 261.13, live ln 266, enc None for `new_flow` (decl src ln 133) was not encountered during execution
+
+❌ After `new_flow` assns checked using before as reference
+Assignments:         new_flow
+  Reference:         1
+  Test:              1
+Matching:
+  Matching Coords:   0
+  Matching Value:    0
+Consistency Errors:
+  Mismatched Coords: 0
+  Mismatched Value:  0
+Availability Errors:
+  Ref Not Encount.:  1
+  Ref Not in Test:   0
+  Test Not Encount.: 1
+  Test Not in Ref:   0
+Warnings:
+  Unused:            0
+  Removable:         0
+  Unreachable:       0
+Reference Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
+Test Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
+
+❌ Before assn asm ln 6926, prod ln 271.32, live ln 272, enc None for `new_orientation` (decl src ln 135) was not encountered during execution
+
+❌ After assn asm ln 5140, prod ln 135.0, live ln 271, enc None for `new_orientation` (decl src ln 135) was not encountered during execution
+
+❌ After `new_orientation` assns checked using before as reference
+Assignments:         new_orientation
+  Reference:         1
+  Test:              1
+Matching:
+  Matching Coords:   0
+  Matching Value:    0
+Consistency Errors:
+  Mismatched Coords: 0
+  Mismatched Value:  0
+Availability Errors:
+  Ref Not Encount.:  1
+  Ref Not in Test:   0
+  Test Not Encount.: 1
+  Test Not in Ref:   0
+Warnings:
+  Unused:            0
+  Removable:         0
+  Unreachable:       0
+Reference Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
+Test Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
+
+❌ Before assn asm ln 6943, prod ln 277.22, live ln 278, enc None for `new_set` (decl src ln 147) was not encountered during execution
+
+❌ After assn asm ln 5129, prod ln 256.13, live ln 261, enc None for `new_set` (decl src ln 147) was not encountered during execution
+
+❌ After `new_set` assns checked using before as reference
+Assignments:         new_set
+  Reference:         1
+  Test:              1
+Matching:
+  Matching Coords:   0
+  Matching Value:    0
+Consistency Errors:
+  Mismatched Coords: 0
+  Mismatched Value:  0
+Availability Errors:
+  Ref Not Encount.:  1
+  Ref Not in Test:   0
+  Test Not Encount.: 1
+  Test Not in Ref:   0
+Warnings:
+  Unused:            0
+  Removable:         0
+  Unreachable:       0
+Reference Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
+Test Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
+
+❌ Before assn asm ln 6762, prod ln 202.23, live ln 203, enc None for `num_threads` (decl src ln 124) was not encountered during execution
+
+Checking equivalence of `num_threads` (decl src ln 124) from
+  assn asm ln 4883, prod ln 124.0, live ln 143, enc 0
+  i32 %num_threads
+  (ReadLSB w32 (w32 0x0) master.num_threads)
+and
+  assn asm ln 6571, prod ln 124.0, live ln 143, enc 0
+  i32 %num_threads
+  (ReadLSB w32 (w32 0x0) master.num_threads)
+Query to parse
+array master.num_threads[4] : w32 -> w8 = symbolic
+array master.num_threads[4] : w32 -> w8 = symbolic
+(query [] (Eq (ReadLSB w32 (w32 0x0) master.num_threads)
+     (ReadLSB w32 (w32 0x0) master.num_threads)))
+Parsed query
+(Eq N0:(ReadLSB w32 (w32 0x0) master.num_threads)
+     N0)
+✅ Before `num_threads` (decl src ln 124) assn asm ln 6571, prod ln 124.0, live ln 143, enc 0 symbolic value matches after assn asm ln 4883, prod ln 124.0, live ln 143, enc 0
+
+❌ After `num_threads` assns checked using before as reference
+Assignments:         num_threads
+  Reference:         2
+  Test:              1
+Matching:
+  Matching Coords:   1
+  Matching Value:    1
+Consistency Errors:
+  Mismatched Coords: 0
+  Mismatched Value:  0
+Availability Errors:
+  Ref Not Encount.:  1
+  Ref Not in Test:   0
+  Test Not Encount.: 0
+  Test Not in Ref:   0
+Warnings:
+  Unused:            0
+  Removable:         0
+  Unreachable:       0
+Reference Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
+Test Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
+
+✅ After `perm` assns checked using before as reference
+Assignments:         perm
+  Reference:         0
+  Test:              0
+Matching:
+  Matching Coords:   0
+  Matching Value:    0
+Consistency Errors:
+  Mismatched Coords: 0
+  Mismatched Value:  0
+Availability Errors:
+  Ref Not Encount.:  0
+  Ref Not in Test:   0
+  Test Not Encount.: 0
+  Test Not in Ref:   0
+Warnings:
+  Unused:            0
+  Removable:         0
+  Unreachable:       0
+Reference Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
+Test Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
+
+❌ Before assn asm ln 6935, prod ln 273.29, live ln 274, enc None for `red_cost_of_bea` (decl src ln 148) was not encountered during execution
+
+❌ After assn asm ln 5023, prod ln 198.37, live ln 199, enc None for `red_cost_of_bea` (decl src ln 148) was not encountered during execution
+
+❌ After `red_cost_of_bea` assns checked using before as reference
+Assignments:         red_cost_of_bea
+  Reference:         1
+  Test:              1
+Matching:
+  Matching Coords:   0
+  Matching Value:    0
+Consistency Errors:
+  Mismatched Coords: 0
+  Mismatched Value:  0
+Availability Errors:
+  Ref Not Encount.:  1
+  Ref Not in Test:   0
+  Test Not Encount.: 1
+  Test Not in Ref:   0
+Warnings:
+  Unused:            0
+  Removable:         0
+  Unreachable:       0
+Reference Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
+Test Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
+
+❌ Before assn asm ln 6662, prod ln 176.46, live ln 177, enc None for `stop_arcs` (decl src ln 144) was not encountered during execution
+
+Checking equivalence of `stop_arcs` (decl src ln 144) from
+  assn asm ln 4892, prod ln 144.39, live ln 146, enc 0
+  %1 = load %struct.arc.0*, %struct.arc.0** %stop_arcs2, l144 c39
+  (w64 0x0)
+and
+  assn asm ln 6593, prod ln 144.39, live ln 146, enc 0
+  %3 = load %struct.arc*, %struct.arc** %stop_arcs2, l144 c39
+  (w64 0x0)
+✅ Before `stop_arcs` (decl src ln 144) assn asm ln 6593, prod ln 144.39, live ln 146, enc 0 symbolic value matches after assn asm ln 4892, prod ln 144.39, live ln 146, enc 0
+
+❌ After `stop_arcs` assns checked using before as reference
+Assignments:         stop_arcs
+  Reference:         2
+  Test:              1
+Matching:
+  Matching Coords:   1
+  Matching Value:    1
+Consistency Errors:
+  Mismatched Coords: 0
+  Mismatched Value:  0
+Availability Errors:
+  Ref Not Encount.:  1
+  Ref Not in Test:   0
+  Test Not Encount.: 0
+  Test Not in Ref:   0
+Warnings:
+  Unused:            0
+  Removable:         0
+  Unreachable:       0
+Reference Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
+Test Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
+
+✅ After `w` assns checked using before as reference
+Assignments:         w
+  Reference:         0
+  Test:              0
+Matching:
+  Matching Coords:   0
+  Matching Value:    0
+Consistency Errors:
+  Mismatched Coords: 0
+  Mismatched Value:  0
+Availability Errors:
+  Ref Not Encount.:  0
+  Ref Not in Test:   0
+  Test Not Encount.: 0
+  Test Not in Ref:   0
+Warnings:
+  Unused:            0
+  Removable:         0
+  Unreachable:       0
+Reference Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
+Test Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
+
+❌ Before assn asm ln 6921, prod ln 271.23, live ln 272, enc None for `xchange` (decl src ln 134) was not encountered during execution
+
+❌ After assn asm ln 5141, prod ln 271.23, live ln 272, enc None for `xchange` (decl src ln 134) was not encountered during execution
+
+❌ After `xchange` assns checked using before as reference
+Assignments:         xchange
+  Reference:         1
+  Test:              1
+Matching:
+  Matching Coords:   0
+  Matching Value:    0
+Consistency Errors:
+  Mismatched Coords: 0
+  Mismatched Value:  0
+Availability Errors:
+  Ref Not Encount.:  1
+  Ref Not in Test:   0
+  Test Not Encount.: 1
+  Test Not in Ref:   0
+Warnings:
+  Unused:            0
+  Removable:         0
+  Unreachable:       0
+Reference Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
+Test Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
+
+## Function `primal_net_simplex`
+
+✅ Before and after function names match
+
+### Variable events
+
+#### Before variables
+
+Load from declared address of `net` (decl src ln 300), asm ln 7026
+  %19 = load %struct.network*, %struct.network** %net.addr, l338 c20, asm ln 7026
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7026, prod ln 338.20, live ln 339, enc None
+Load from declared address of `net` (decl src ln 300), asm ln 7024
+  %18 = load %struct.network*, %struct.network** %net.addr, l337 c22, asm ln 7024
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7024, prod ln 337.22, live ln 338, enc None
+Load from declared address of `net` (decl src ln 300), asm ln 7017
+  %15 = load %struct.network*, %struct.network** %net.addr, l334 c16, asm ln 7017
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7017, prod ln 334.16, live ln 335, enc None
+Load from declared address of `net` (decl src ln 300), asm ln 7011
+  %13 = load %struct.network*, %struct.network** %net.addr, l332 c16, asm ln 7011
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7011, prod ln 332.16, live ln 333, enc None
+Load from declared address of `net` (decl src ln 300), asm ln 7001
+  %10 = load %struct.network*, %struct.network** %net.addr, l318 c24, asm ln 7001
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7001, prod ln 318.24, live ln 319, enc None
+Load from declared address of `net` (decl src ln 300), asm ln 7000
+  %9 = load %struct.network*, %struct.network** %net.addr, l318 c19, asm ln 7000
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7000, prod ln 318.19, live ln 319, enc None
+Store to declared address of `net` (decl src ln 300), asm ln 6967
+  arg 0
+  Added assignment asm ln 6967, prod ln 300.0, live ln 311, enc None
+Load from declared address of `thread` (decl src ln 307), asm ln 7018
+  %16 = load i32, i32* %thread, l334 c21, asm ln 7018
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7018, prod ln 334.21, live ln 335, enc None
+Load from declared address of `thread` (decl src ln 307), asm ln 7006
+  %12 = load i32, i32* %thread, l331 c11, asm ln 7006
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7006, prod ln 331.11, live ln 332, enc None
+Store to declared address of `thread` (decl src ln 307), asm ln 7005
+  const i32 0
+  Added assignment asm ln 7005, prod ln 329.10, live ln 331, enc None
+Load from declared address of `num_threads` (decl src ln 311), asm ln 7019
+  %17 = load i32, i32* %num_threads, l334 c29, asm ln 7019
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7019, prod ln 334.29, live ln 335, enc None
+Load from declared address of `num_threads` (decl src ln 311), asm ln 7012
+  %14 = load i32, i32* %num_threads, l332 c21, asm ln 7012
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7012, prod ln 332.21, live ln 333, enc None
+Load from declared address of `num_threads` (decl src ln 311), asm ln 6988
+  %7 = load i32, i32* %num_threads, l316 c48, asm ln 6988
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 6988, prod ln 316.48, live ln 317, enc None
+Load from declared address of `num_threads` (decl src ln 311), asm ln 6987
+  %6 = load i32, i32* %num_threads, l316 c31, asm ln 6987
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 6987, prod ln 316.31, live ln 317, enc None
+Load from declared address of `num_threads` (decl src ln 311), asm ln 6982
+  %4 = load i32, i32* %num_threads, l315 c35, asm ln 6982
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 6982, prod ln 315.35, live ln 316, enc None
+Load from declared address of `num_threads` (decl src ln 311), asm ln 6977
+  %2 = load i32, i32* %num_threads, l314 c36, asm ln 6977
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 6977, prod ln 314.36, live ln 315, enc None
+Load from declared address of `num_threads` (decl src ln 311), asm ln 6972
+  %0 = load i32, i32* %num_threads, l313 c35, asm ln 6972
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 6972, prod ln 313.35, live ln 314, enc None
+Store to declared address of `num_threads` (decl src ln 311), asm ln 6971
+  const i32 1
+  Added assignment asm ln 6971, prod ln 311.7, live ln 313, enc None
+
+#### After variables
+
+Value produced for `net` (decl src ln 300), asm ln 5172
+  arg 0
+  Added assignment asm ln 5172, prod ln 300.0, live ln 313, enc None
+Value produced for `num_threads` (decl src ln 311), asm ln 5173
+  const i32 1
+  Added assignment asm ln 5173, prod ln 311.0, live ln 313, enc None
+Value produced for `thread` (decl src ln 307), asm ln 5198
+  const i32 0
+  Added assignment asm ln 5198, prod ln 307.0, live ln 331, enc None
+
+#### Summary
+
+✅ 3 before variables found, 3 after variables found, 0 mismatched
+
+### Symbolic values
+
+#### Before values
+
+Collected value for `net`
+  Assignment asm ln 6967, prod ln 300.0, live ln 311, enc 0
+  Concrete pointer resolves to primal_net_simplex.net.deref, offset (w64 0x0)
+  Created deref expr (ReadLSB w64 (w32 0x0) primal_net_simplex.net.deref)
+  Replaced concrete pointer with hash (w64 0x1B42F099517722E6)
+  %struct.network* %net
+  (w64 0x1B42F099517722E6)
+Collected value for `num_threads`
+  Assignment asm ln 6971, prod ln 311.7, live ln 313, enc 0
+  i32 1
+  (w32 0x1)
+Collected value for `num_threads`
+  Assignment asm ln 6972, prod ln 313.35, live ln 314, enc 1
+  %0 = load i32, i32* %num_threads, l313 c35
+  (w32 0x1)
+Collected value for `num_threads`
+  Assignment asm ln 6977, prod ln 314.36, live ln 315, enc 2
+  %2 = load i32, i32* %num_threads, l314 c36
+  (w32 0x1)
+Collected value for `num_threads`
+  Assignment asm ln 6982, prod ln 315.35, live ln 316, enc 3
+  %4 = load i32, i32* %num_threads, l315 c35
+  (w32 0x1)
+Collected value for `num_threads`
+  Assignment asm ln 6987, prod ln 316.31, live ln 317, enc 4
+  %6 = load i32, i32* %num_threads, l316 c31
+  (w32 0x1)
+Collected value for `num_threads`
+  Assignment asm ln 6988, prod ln 316.48, live ln 317, enc 5
+  %7 = load i32, i32* %num_threads, l316 c48
+  (w32 0x1)
+[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0mCollected value for `net`
+  Assignment asm ln 7000, prod ln 318.19, live ln 319, enc 1
+  Concrete pointer resolves to primal_net_simplex.net.deref, offset (w64 0x0)
+  Created deref expr (ReadLSB w64 (w32 0x0) primal_net_simplex.net.deref)
+  Replaced concrete pointer with hash (w64 0x1B42F099517722E6)
+  %9 = load %struct.network*, %struct.network** %net.addr, l318 c19
+  (w64 0x1B42F099517722E6)
+Collected value for `net`
+  Assignment asm ln 7001, prod ln 318.24, live ln 319, enc 2
+  Concrete pointer resolves to primal_net_simplex.net.deref, offset (w64 0x0)
+  Created deref expr (ReadLSB w64 (w32 0x0) primal_net_simplex.net.deref)
+  Replaced concrete pointer with hash (w64 0x1B42F099517722E6)
+  %10 = load %struct.network*, %struct.network** %net.addr, l318 c24
+  (w64 0x1B42F099517722E6)
+Collected value for `thread`
+  Assignment asm ln 7005, prod ln 329.10, live ln 331, enc 0
+  i32 0
+  (w32 0x0)
+Collected value for `thread`
+  Assignment asm ln 7006, prod ln 331.11, live ln 332, enc 1
+  %12 = load i32, i32* %thread, l331 c11
+  (w32 0x0)
+Collected value for `net`
+  Assignment asm ln 7011, prod ln 332.16, live ln 333, enc 3
+  Concrete pointer resolves to primal_net_simplex.net.deref, offset (w64 0x0)
+  Created deref expr (ReadLSB w64 (w32 0x0) set_static_vars.net.deref)
+  Replaced concrete pointer with hash (w64 0x1B42F099517722E6)
+  %13 = load %struct.network*, %struct.network** %net.addr, l332 c16
+  (w64 0x1B42F099517722E6)
+Collected value for `num_threads`
+  Assignment asm ln 7012, prod ln 332.21, live ln 333, enc 6
+  %14 = load i32, i32* %num_threads, l332 c21
+  (w32 0x1)
+Collected value for `net`
+  Assignment asm ln 7024, prod ln 337.22, live ln 338, enc 4
+  Concrete pointer resolves to primal_net_simplex.net.deref, offset (w64 0x0)
+  Created deref expr (ReadLSB w64 (w32 0x0) master.net.deref)
+  Replaced concrete pointer with hash (w64 0x1B42F099517722E6)
+  %18 = load %struct.network*, %struct.network** %net.addr, l337 c22
+  (w64 0x1B42F099517722E6)
+Collected value for `net`
+  Assignment asm ln 7026, prod ln 338.20, live ln 339, enc 5
+  Concrete pointer resolves to primal_net_simplex.net.deref, offset (w64 0x0)
+  Created deref expr (ReadLSB w64 (w32 0x0) primal_feasible.net.deref)
+  Replaced concrete pointer with hash (w64 0x1B42F099517722E6)
+  %19 = load %struct.network*, %struct.network** %net.addr, l338 c20
+  (w64 0x1B42F099517722E6)
+
+🔔 Unable to execute all before instructions
+
+#### After values
+
+Collected value for `net`
+  Assignment asm ln 5172, prod ln 300.0, live ln 313, enc 0
+  Concrete pointer resolves to primal_net_simplex.net.deref, offset (w64 0x0)
+  Created deref expr (ReadLSB w64 (w32 0x0) primal_net_simplex.net.deref)
+  Replaced concrete pointer with hash (w64 0x1B42F099517722E6)
+  %struct.network.2* %net
+  (w64 0x1B42F099517722E6)
+Collected value for `num_threads`
+  Assignment asm ln 5173, prod ln 311.0, live ln 313, enc 0
+  i32 1
+  (w32 0x1)
+Collected value for `thread`
+  Assignment asm ln 5198, prod ln 307.0, live ln 331, enc 0
+  i32 0
+  (w32 0x0)
+
+🔔 Unable to execute all after instructions
+
+### Assignments
+
+#### Variables with single memory location
+
+#### Collation
+
+Filtering before assignments: `net` (decl src ln 300)
+
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `net` (decl src ln 300) from
+  assn asm ln 6967, prod ln 300.0, live ln 311, enc 0
+  %struct.network* %net
+and
+  assn asm ln 7017, prod ln 334.16, live ln 335, enc None
+  %15 = load %struct.network*, %struct.network** %net.addr, l334 c16
+
+Checking equivalence of `net` (decl src ln 300) from
+  assn asm ln 7000, prod ln 318.19, live ln 319, enc 1
+  %9 = load %struct.network*, %struct.network** %net.addr, l318 c19
+  (w64 0x1B42F099517722E6)
+and
+  assn asm ln 6967, prod ln 300.0, live ln 311, enc 0
+  %struct.network* %net
+  (w64 0x1B42F099517722E6)
+🔔 Removing: asm ln 7000, prod ln 318.19, live ln 319, enc 1
+
+Checking equivalence of `net` (decl src ln 300) from
+  assn asm ln 7001, prod ln 318.24, live ln 319, enc 2
+  %10 = load %struct.network*, %struct.network** %net.addr, l318 c24
+  (w64 0x1B42F099517722E6)
+and
+  assn asm ln 6967, prod ln 300.0, live ln 311, enc 0
+  %struct.network* %net
+  (w64 0x1B42F099517722E6)
+🔔 Removing: asm ln 7001, prod ln 318.24, live ln 319, enc 2
+
+Checking equivalence of `net` (decl src ln 300) from
+  assn asm ln 7011, prod ln 332.16, live ln 333, enc 3
+  %13 = load %struct.network*, %struct.network** %net.addr, l332 c16
+  (w64 0x1B42F099517722E6)
+and
+  assn asm ln 6967, prod ln 300.0, live ln 311, enc 0
+  %struct.network* %net
+  (w64 0x1B42F099517722E6)
+🔔 Removing: asm ln 7011, prod ln 332.16, live ln 333, enc 3
+
+Checking equivalence of `net` (decl src ln 300) from
+  assn asm ln 7024, prod ln 337.22, live ln 338, enc 4
+  %18 = load %struct.network*, %struct.network** %net.addr, l337 c22
+  (w64 0x1B42F099517722E6)
+and
+  assn asm ln 6967, prod ln 300.0, live ln 311, enc 0
+  %struct.network* %net
+  (w64 0x1B42F099517722E6)
+🔔 Removing: asm ln 7024, prod ln 337.22, live ln 338, enc 4
+
+Checking equivalence of `net` (decl src ln 300) from
+  assn asm ln 7026, prod ln 338.20, live ln 339, enc 5
+  %19 = load %struct.network*, %struct.network** %net.addr, l338 c20
+  (w64 0x1B42F099517722E6)
+and
+  assn asm ln 6967, prod ln 300.0, live ln 311, enc 0
+  %struct.network* %net
+  (w64 0x1B42F099517722E6)
+🔔 Removing: asm ln 7026, prod ln 338.20, live ln 339, enc 5
+
+Filtering before assignments: `thread` (decl src ln 307)
+
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `thread` (decl src ln 307) from
+  assn asm ln 7005, prod ln 329.10, live ln 331, enc 0
+  i32 0
+and
+  assn asm ln 7018, prod ln 334.21, live ln 335, enc None
+  %16 = load i32, i32* %thread, l334 c21
+
+Checking equivalence of `thread` (decl src ln 307) from
+  assn asm ln 7006, prod ln 331.11, live ln 332, enc 1
+  %12 = load i32, i32* %thread, l331 c11
+  (w32 0x0)
+and
+  assn asm ln 7005, prod ln 329.10, live ln 331, enc 0
+  i32 0
+  (w32 0x0)
+🔔 Removing: asm ln 7006, prod ln 331.11, live ln 332, enc 1
+
+Filtering before assignments: `num_threads` (decl src ln 311)
+
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `num_threads` (decl src ln 311) from
+  assn asm ln 6971, prod ln 311.7, live ln 313, enc 0
+  i32 1
+and
+  assn asm ln 7019, prod ln 334.29, live ln 335, enc None
+  %17 = load i32, i32* %num_threads, l334 c29
+
+Checking equivalence of `num_threads` (decl src ln 311) from
+  assn asm ln 6972, prod ln 313.35, live ln 314, enc 1
+  %0 = load i32, i32* %num_threads, l313 c35
+  (w32 0x1)
+and
+  assn asm ln 6971, prod ln 311.7, live ln 313, enc 0
+  i32 1
+  (w32 0x1)
+🔔 Removing: asm ln 6972, prod ln 313.35, live ln 314, enc 1
+
+Checking equivalence of `num_threads` (decl src ln 311) from
+  assn asm ln 6977, prod ln 314.36, live ln 315, enc 2
+  %2 = load i32, i32* %num_threads, l314 c36
+  (w32 0x1)
+and
+  assn asm ln 6971, prod ln 311.7, live ln 313, enc 0
+  i32 1
+  (w32 0x1)
+🔔 Removing: asm ln 6977, prod ln 314.36, live ln 315, enc 2
+
+Checking equivalence of `num_threads` (decl src ln 311) from
+  assn asm ln 6982, prod ln 315.35, live ln 316, enc 3
+  %4 = load i32, i32* %num_threads, l315 c35
+  (w32 0x1)
+and
+  assn asm ln 6971, prod ln 311.7, live ln 313, enc 0
+  i32 1
+  (w32 0x1)
+🔔 Removing: asm ln 6982, prod ln 315.35, live ln 316, enc 3
+
+Checking equivalence of `num_threads` (decl src ln 311) from
+  assn asm ln 6987, prod ln 316.31, live ln 317, enc 4
+  %6 = load i32, i32* %num_threads, l316 c31
+  (w32 0x1)
+and
+  assn asm ln 6971, prod ln 311.7, live ln 313, enc 0
+  i32 1
+  (w32 0x1)
+🔔 Removing: asm ln 6987, prod ln 316.31, live ln 317, enc 4
+
+Checking equivalence of `num_threads` (decl src ln 311) from
+  assn asm ln 6988, prod ln 316.48, live ln 317, enc 5
+  %7 = load i32, i32* %num_threads, l316 c48
+  (w32 0x1)
+and
+  assn asm ln 6971, prod ln 311.7, live ln 313, enc 0
+  i32 1
+  (w32 0x1)
+🔔 Removing: asm ln 6988, prod ln 316.48, live ln 317, enc 5
+
+Checking equivalence of `num_threads` (decl src ln 311) from
+  assn asm ln 7012, prod ln 332.21, live ln 333, enc 6
+  %14 = load i32, i32* %num_threads, l332 c21
+  (w32 0x1)
+and
+  assn asm ln 6971, prod ln 311.7, live ln 313, enc 0
+  i32 1
+  (w32 0x1)
+🔔 Removing: asm ln 7012, prod ln 332.21, live ln 333, enc 6
+
+Collating encountered before assignments: `net` (decl src ln 300)
+❌ Assignment asm ln 7017, prod ln 334.16, live ln 335, enc None for `net` (decl src ln 300) was not encountered during execution
+  asm ln 6967, prod ln 300.0, live ln 311, enc 0
+Collating encountered before assignments: `thread` (decl src ln 307)
+❌ Assignment asm ln 7018, prod ln 334.21, live ln 335, enc None for `thread` (decl src ln 307) was not encountered during execution
+  asm ln 7005, prod ln 329.10, live ln 331, enc 0
+Collating encountered before assignments: `num_threads` (decl src ln 311)
+❌ Assignment asm ln 7019, prod ln 334.29, live ln 335, enc None for `num_threads` (decl src ln 311) was not encountered during execution
+  asm ln 6971, prod ln 311.7, live ln 313, enc 0
+
+Collating encountered after assignments: `net` (decl src ln 300)
+  asm ln 5172, prod ln 300.0, live ln 313, enc 0
+Collating encountered after assignments: `num_threads` (decl src ln 311)
+  asm ln 5173, prod ln 311.0, live ln 313, enc 0
+Collating encountered after assignments: `thread` (decl src ln 307)
+  asm ln 5198, prod ln 307.0, live ln 331, enc 0
+
+#### Check after using before as reference
+
+🔔 Before assn asm ln 7017, prod ln 334.16, live ln 335, enc None for `net` (decl src ln 300) has no symbolic value (likely unreachable) from %15 = load %struct.network*, %struct.network** %net.addr, l334 c16
+
+❌ Before `net` (decl src ln 300) assn asm ln 6967, prod ln 300.0, live ln 311, enc 0 coordinates don't match after assn asm ln 5172, prod ln 300.0, live ln 313, enc 0
+Checking equivalence of `net` (decl src ln 300) from
+  assn asm ln 5172, prod ln 300.0, live ln 313, enc 0
+  %struct.network.2* %net
+  (w64 0x1B42F099517722E6)
+and
+  assn asm ln 6967, prod ln 300.0, live ln 311, enc 0
+  %struct.network* %net
+  (w64 0x1B42F099517722E6)
+✅ Before `net` (decl src ln 300) assn asm ln 6967, prod ln 300.0, live ln 311, enc 0 symbolic value matches after assn asm ln 5172, prod ln 300.0, live ln 313, enc 0
+
+❌ After `net` assns checked using before as reference
+Assignments:         net
+  Reference:         2
+  Test:              1
+Matching:
+  Matching Coords:   0
+  Matching Value:    1
+Consistency Errors:
+  Mismatched Coords: 1
+  Mismatched Value:  0
+Availability Errors:
+  Ref Not Encount.:  0
+  Ref Not in Test:   0
+  Test Not Encount.: 0
+  Test Not in Ref:   0
+Warnings:
+  Unused:            0
+  Removable:         0
+  Unreachable:       1
+Reference Execution:
+  Function Covered:  false
+  Complete:          true
+  Within Time Limit: true
+  Within Fork Limit: true
+Test Execution:
+  Function Covered:  false
+  Complete:          true
+  Within Time Limit: true
+  Within Fork Limit: true
+
+🔔 Before assn asm ln 7019, prod ln 334.29, live ln 335, enc None for `num_threads` (decl src ln 311) has no symbolic value (likely unreachable) from %17 = load i32, i32* %num_threads, l334 c29
+
+Checking equivalence of `num_threads` (decl src ln 311) from
+  assn asm ln 5173, prod ln 311.0, live ln 313, enc 0
+  i32 1
+  (w32 0x1)
+and
+  assn asm ln 6971, prod ln 311.7, live ln 313, enc 0
+  i32 1
+  (w32 0x1)
+✅ Before `num_threads` (decl src ln 311) assn asm ln 6971, prod ln 311.7, live ln 313, enc 0 symbolic value matches after assn asm ln 5173, prod ln 311.0, live ln 313, enc 0
+
+✅ After `num_threads` assns checked using before as reference
+Assignments:         num_threads
+  Reference:         2
+  Test:              1
+Matching:
+  Matching Coords:   1
+  Matching Value:    1
+Consistency Errors:
+  Mismatched Coords: 0
+  Mismatched Value:  0
+Availability Errors:
+  Ref Not Encount.:  0
+  Ref Not in Test:   0
+  Test Not Encount.: 0
+  Test Not in Ref:   0
+Warnings:
+  Unused:            0
+  Removable:         0
+  Unreachable:       1
+Reference Execution:
+  Function Covered:  false
+  Complete:          true
+  Within Time Limit: true
+  Within Fork Limit: true
+Test Execution:
+  Function Covered:  false
+  Complete:          true
+  Within Time Limit: true
+  Within Fork Limit: true
+
+🔔 Before assn asm ln 7018, prod ln 334.21, live ln 335, enc None for `thread` (decl src ln 307) has no symbolic value (likely unreachable) from %16 = load i32, i32* %thread, l334 c21
+
+Checking equivalence of `thread` (decl src ln 307) from
+  assn asm ln 5198, prod ln 307.0, live ln 331, enc 0
+  i32 0
+  (w32 0x0)
+and
+  assn asm ln 7005, prod ln 329.10, live ln 331, enc 0
+  i32 0
+  (w32 0x0)
+✅ Before `thread` (decl src ln 307) assn asm ln 7005, prod ln 329.10, live ln 331, enc 0 symbolic value matches after assn asm ln 5198, prod ln 307.0, live ln 331, enc 0
+
+✅ After `thread` assns checked using before as reference
+Assignments:         thread
+  Reference:         2
+  Test:              1
+Matching:
+  Matching Coords:   1
+  Matching Value:    1
+Consistency Errors:
+  Mismatched Coords: 0
+  Mismatched Value:  0
+Availability Errors:
+  Ref Not Encount.:  0
+  Ref Not in Test:   0
+  Test Not Encount.: 0
+  Test Not in Ref:   0
+Warnings:
+  Unused:            0
+  Removable:         0
+  Unreachable:       1
+Reference Execution:
+  Function Covered:  false
+  Complete:          true
+  Within Time Limit: true
+  Within Fork Limit: true
+Test Execution:
+  Function Covered:  false
+  Complete:          true
+  Within Time Limit: true
+  Within Fork Limit: true
+
+## Function `set_static_vars`
+
+✅ Before and after function names match
+
+### Variable events
+
+#### Before variables
+
+Load from declared address of `net` (decl src ln 33), asm ln 7057
+  %3 = load %struct.network*, %struct.network** %net.addr, l40 c50, asm ln 7057
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7057, prod ln 40.50, live ln 41, enc None
+Load from declared address of `net` (decl src ln 33), asm ln 7054
+  %1 = load %struct.network*, %struct.network** %net.addr, l40 c31, asm ln 7054
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7054, prod ln 40.31, live ln 41, enc None
+Store to declared address of `net` (decl src ln 33), asm ln 7049
+  arg 0
+  Added assignment asm ln 7049, prod ln 33.0, live ln 40, enc None
+Load from declared address of `arcs` (decl src ln 33), asm ln 7053
+  %0 = load %struct.arc*, %struct.arc** %arcs.addr, l40 c24, asm ln 7053
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7053, prod ln 40.24, live ln 41, enc None
+Store to declared address of `arcs` (decl src ln 33), asm ln 7051
+  arg 1
+  Added assignment asm ln 7051, prod ln 33.0, live ln 40, enc None
+
+#### After variables
+
+Value produced for `net` (decl src ln 33), asm ln 5232
+  arg 0
+  Added assignment asm ln 5232, prod ln 33.0, live ln 40, enc None
+Value produced for `arcs` (decl src ln 33), asm ln 5233
+  arg 1
+  Added assignment asm ln 5233, prod ln 33.0, live ln 40, enc None
+
+#### Summary
+
+✅ 2 before variables found, 2 after variables found, 0 mismatched
+
+### Symbolic values
+
+#### Before values
+
+[0;35mKLEE: WARNING: Unable to load source file `pbeampp.c`
+[0mCollected value for `net`
+  Assignment asm ln 7049, prod ln 33.0, live ln 40, enc 0
+  Concrete pointer resolves to set_static_vars.net.deref, offset (w64 0x0)
+  Created deref expr (ReadLSB w64 (w32 0x0) set_static_vars.net.deref)
+  Replaced concrete pointer with hash (w64 0x54531C4CDCDE84DA)
+  %struct.network* %net
+  (w64 0x54531C4CDCDE84DA)
+Collected value for `arcs`
+  Assignment asm ln 7051, prod ln 33.0, live ln 40, enc 0
+  Concrete pointer resolves to set_static_vars.arcs.deref, offset (w64 0x0)
+  Created deref expr (ReadLSB w64 (w32 0x0) set_static_vars.arcs.deref)
+  Replaced concrete pointer with hash (w64 0x697F15DCBBB25B17)
+  %struct.arc* %arcs
+  (w64 0x697F15DCBBB25B17)
+Collected value for `arcs`
+  Assignment asm ln 7053, prod ln 40.24, live ln 41, enc 1
+  Concrete pointer resolves to set_static_vars.arcs.deref, offset (w64 0x0)
+  Created deref expr (ReadLSB w64 (w32 0x0) set_static_vars.arcs.deref)
+  Replaced concrete pointer with hash (w64 0x697F15DCBBB25B17)
+  %0 = load %struct.arc*, %struct.arc** %arcs.addr, l40 c24
+  (w64 0x697F15DCBBB25B17)
+Collected value for `net`
+  Assignment asm ln 7054, prod ln 40.31, live ln 41, enc 1
+  Concrete pointer resolves to set_static_vars.net.deref, offset (w64 0x0)
+  Created deref expr (ReadLSB w64 (w32 0x0) set_static_vars.net.deref)
+  Replaced concrete pointer with hash (w64 0x54531C4CDCDE84DA)
+  %1 = load %struct.network*, %struct.network** %net.addr, l40 c31
+  (w64 0x54531C4CDCDE84DA)
+Collected value for `net`
+  Assignment asm ln 7057, prod ln 40.50, live ln 41, enc 2
+  Concrete pointer resolves to set_static_vars.net.deref, offset (w64 0x0)
+  Created deref expr (ReadLSB w64 (w32 0x0) set_static_vars.net.deref)
+  Replaced concrete pointer with hash (w64 0x54531C4CDCDE84DA)
+  %3 = load %struct.network*, %struct.network** %net.addr, l40 c50
+  (w64 0x54531C4CDCDE84DA)
+
+#### After values
+
+Collected value for `net`
+  Assignment asm ln 5232, prod ln 33.0, live ln 40, enc 0
+  Concrete pointer resolves to set_static_vars.net.deref, offset (w64 0x0)
+  Created deref expr (ReadLSB w64 (w32 0x0) set_static_vars.net.deref)
+  Replaced concrete pointer with hash (w64 0x54531C4CDCDE84DA)
+  %struct.network.2* %net
+  (w64 0x54531C4CDCDE84DA)
+Collected value for `arcs`
+  Assignment asm ln 5233, prod ln 33.0, live ln 40, enc 0
+  Concrete pointer resolves to set_static_vars.arcs.deref, offset (w64 0x0)
+  Created deref expr (ReadLSB w64 (w32 0x0) set_static_vars.arcs.deref)
+  Replaced concrete pointer with hash (w64 0x697F15DCBBB25B17)
+  %struct.arc.0* %arcs
+  (w64 0x697F15DCBBB25B17)
+
+### Assignments
+
+#### Variables with single memory location
+
+#### Collation
+
+Filtering before assignments: `net` (decl src ln 33)
+
+Checking equivalence of `net` (decl src ln 33) from
+  assn asm ln 7054, prod ln 40.31, live ln 41, enc 1
+  %1 = load %struct.network*, %struct.network** %net.addr, l40 c31
+  (w64 0x54531C4CDCDE84DA)
+and
+  assn asm ln 7049, prod ln 33.0, live ln 40, enc 0
+  %struct.network* %net
+  (w64 0x54531C4CDCDE84DA)
+🔔 Removing: asm ln 7054, prod ln 40.31, live ln 41, enc 1
+
+Checking equivalence of `net` (decl src ln 33) from
+  assn asm ln 7057, prod ln 40.50, live ln 41, enc 2
+  %3 = load %struct.network*, %struct.network** %net.addr, l40 c50
+  (w64 0x54531C4CDCDE84DA)
+and
+  assn asm ln 7049, prod ln 33.0, live ln 40, enc 0
+  %struct.network* %net
+  (w64 0x54531C4CDCDE84DA)
+🔔 Removing: asm ln 7057, prod ln 40.50, live ln 41, enc 2
+
+Filtering before assignments: `arcs` (decl src ln 33)
+
+Checking equivalence of `arcs` (decl src ln 33) from
+  assn asm ln 7053, prod ln 40.24, live ln 41, enc 1
+  %0 = load %struct.arc*, %struct.arc** %arcs.addr, l40 c24
+  (w64 0x697F15DCBBB25B17)
+and
+  assn asm ln 7051, prod ln 33.0, live ln 40, enc 0
+  %struct.arc* %arcs
+  (w64 0x697F15DCBBB25B17)
+🔔 Removing: asm ln 7053, prod ln 40.24, live ln 41, enc 1
+
+Collating encountered before assignments: `net` (decl src ln 33)
+  asm ln 7049, prod ln 33.0, live ln 40, enc 0
+Collating encountered before assignments: `arcs` (decl src ln 33)
+  asm ln 7051, prod ln 33.0, live ln 40, enc 0
+
+Collating encountered after assignments: `net` (decl src ln 33)
+  asm ln 5232, prod ln 33.0, live ln 40, enc 0
+Collating encountered after assignments: `arcs` (decl src ln 33)
+  asm ln 5233, prod ln 33.0, live ln 40, enc 0
+
+#### Check after using before as reference
+
+Checking equivalence of `arcs` (decl src ln 33) from
+  assn asm ln 5233, prod ln 33.0, live ln 40, enc 0
+  %struct.arc.0* %arcs
+  (w64 0x697F15DCBBB25B17)
+and
+  assn asm ln 7051, prod ln 33.0, live ln 40, enc 0
+  %struct.arc* %arcs
+  (w64 0x697F15DCBBB25B17)
+✅ Before `arcs` (decl src ln 33) assn asm ln 7051, prod ln 33.0, live ln 40, enc 0 symbolic value matches after assn asm ln 5233, prod ln 33.0, live ln 40, enc 0
+
+✅ After `arcs` assns checked using before as reference
+Assignments:         arcs
+  Reference:         1
+  Test:              1
+Matching:
+  Matching Coords:   1
+  Matching Value:    1
+Consistency Errors:
+  Mismatched Coords: 0
+  Mismatched Value:  0
+Availability Errors:
+  Ref Not Encount.:  0
+  Ref Not in Test:   0
+  Test Not Encount.: 0
+  Test Not in Ref:   0
+Warnings:
+  Unused:            0
+  Removable:         0
+  Unreachable:       0
+Reference Execution:
+  Function Covered:  true
+  Complete:          true
+  Within Time Limit: true
+  Within Fork Limit: true
+Test Execution:
+  Function Covered:  true
+  Complete:          true
+  Within Time Limit: true
+  Within Fork Limit: true
+
+Checking equivalence of `net` (decl src ln 33) from
+  assn asm ln 5232, prod ln 33.0, live ln 40, enc 0
+  %struct.network.2* %net
+  (w64 0x54531C4CDCDE84DA)
+and
+  assn asm ln 7049, prod ln 33.0, live ln 40, enc 0
+  %struct.network* %net
+  (w64 0x54531C4CDCDE84DA)
+✅ Before `net` (decl src ln 33) assn asm ln 7049, prod ln 33.0, live ln 40, enc 0 symbolic value matches after assn asm ln 5232, prod ln 33.0, live ln 40, enc 0
+
+✅ After `net` assns checked using before as reference
+Assignments:         net
+  Reference:         1
+  Test:              1
+Matching:
+  Matching Coords:   1
+  Matching Value:    1
+Consistency Errors:
+  Mismatched Coords: 0
+  Mismatched Value:  0
+Availability Errors:
+  Ref Not Encount.:  0
+  Ref Not in Test:   0
+  Test Not Encount.: 0
+  Test Not in Ref:   0
+Warnings:
+  Unused:            0
+  Removable:         0
+  Unreachable:       0
+Reference Execution:
+  Function Covered:  true
+  Complete:          true
+  Within Time Limit: true
+  Within Fork Limit: true
+Test Execution:
+  Function Covered:  true
+  Complete:          true
+  Within Time Limit: true
+  Within Fork Limit: true
+
+## Function `bea_is_dual_infeasible`
+
+✅ Before and after function names match
+
+### Variable events
+
+#### Before variables
+
+Load from declared address of `arc` (decl src ln 46), asm ln 7093
+  %4 = load %struct.arc*, %struct.arc** %arc.addr, l54 c33, asm ln 7093
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7093, prod ln 54.33, live ln 55, enc None
+Load from declared address of `arc` (decl src ln 46), asm ln 7080
+  %1 = load %struct.arc*, %struct.arc** %arc.addr, l53 c33, asm ln 7080
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7080, prod ln 53.33, live ln 54, enc None
+Store to declared address of `arc` (decl src ln 46), asm ln 7071
+  arg 0
+  Added assignment asm ln 7071, prod ln 46.0, live ln 53, enc None
+Load from declared address of `red_cost` (decl src ln 46), asm ln 7088
+  %3 = load i64, i64* %red_cost.addr, l54 c17, asm ln 7088
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7088, prod ln 54.17, live ln 55, enc None
+Load from declared address of `red_cost` (decl src ln 46), asm ln 7075
+  %0 = load i64, i64* %red_cost.addr, l53 c17, asm ln 7075
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7075, prod ln 53.17, live ln 54, enc None
+Store to declared address of `red_cost` (decl src ln 46), asm ln 7073
+  arg 1
+  Added assignment asm ln 7073, prod ln 46.0, live ln 53, enc None
+
+#### After variables
+
+Value produced for `arc` (decl src ln 46), asm ln 5247
+  arg 0
+  Added assignment asm ln 5247, prod ln 46.0, live ln 53, enc None
+Value produced for `red_cost` (decl src ln 46), asm ln 5248
+  arg 1
+  Added assignment asm ln 5248, prod ln 46.0, live ln 53, enc None
+
+#### Summary
+
+✅ 2 before variables found, 2 after variables found, 0 mismatched
+
+### Symbolic values
+
+#### Before values
+
+Collected value for `arc`
+  Assignment asm ln 7071, prod ln 46.0, live ln 53, enc 0
+  Concrete pointer resolves to bea_is_dual_infeasible.arc.deref, offset (w64 0x0)
+  Created deref expr (ReadLSB w64 (w32 0x0) bea_is_dual_infeasible.arc.deref)
+  Replaced concrete pointer with hash (w64 0xF067ADCF48583976)
+  %struct.arc* %arc
+  (w64 0xF067ADCF48583976)
+Collected value for `red_cost`
+  Assignment asm ln 7073, prod ln 46.0, live ln 53, enc 0
+  i64 %red_cost
+  (ReadLSB w64 (w32 0x0) bea_is_dual_infeasible.red_cost)
+Collected value for `red_cost`
+  Assignment asm ln 7075, prod ln 53.17, live ln 54, enc 1
+  %0 = load i64, i64* %red_cost.addr, l53 c17
+  (ReadLSB w64 (w32 0x0) bea_is_dual_infeasible.red_cost)
+Collected value for `red_cost`
+  Assignment asm ln 7088, prod ln 54.17, live ln 55, enc 2
+  %3 = load i64, i64* %red_cost.addr, l54 c17
+  (ReadLSB w64 (w32 0x0) bea_is_dual_infeasible.red_cost)
+Collected value for `arc`
+  Assignment asm ln 7080, prod ln 53.33, live ln 54, enc 1
+  Concrete pointer resolves to bea_is_dual_infeasible.arc.deref, offset (w64 0x0)
+  Created deref expr (ReadLSB w64 (w32 0x0) bea_is_dual_infeasible.arc.deref)
+  Replaced concrete pointer with hash (w64 0xF067ADCF48583976)
+  %1 = load %struct.arc*, %struct.arc** %arc.addr, l53 c33
+  (w64 0xF067ADCF48583976)
+Collected value for `arc`
+  Assignment asm ln 7093, prod ln 54.33, live ln 55, enc 2
+  Concrete pointer resolves to bea_is_dual_infeasible.arc.deref, offset (w64 0x0)
+  Created deref expr (ReadLSB w64 (w32 0x0) bea_is_dual_infeasible.arc.deref)
+  Replaced concrete pointer with hash (w64 0xF067ADCF48583976)
+  %4 = load %struct.arc*, %struct.arc** %arc.addr, l54 c33
+  (w64 0xF067ADCF48583976)
+
+#### After values
+
+Collected value for `arc`
+  Assignment asm ln 5247, prod ln 46.0, live ln 53, enc 0
+  Concrete pointer resolves to bea_is_dual_infeasible.arc.deref, offset (w64 0x0)
+  Created deref expr (ReadLSB w64 (w32 0x0) bea_is_dual_infeasible.arc.deref)
+  Replaced concrete pointer with hash (w64 0xF067ADCF48583976)
+  %struct.arc.0* %arc
+  (w64 0xF067ADCF48583976)
+Collected value for `red_cost`
+  Assignment asm ln 5248, prod ln 46.0, live ln 53, enc 0
+  i64 %red_cost
+  (ReadLSB w64 (w32 0x0) bea_is_dual_infeasible.red_cost)
+
+### Assignments
+
+#### Variables with single memory location
+
+#### Collation
+
+Filtering before assignments: `arc` (decl src ln 46)
+
+Checking equivalence of `arc` (decl src ln 46) from
+  assn asm ln 7080, prod ln 53.33, live ln 54, enc 1
+  %1 = load %struct.arc*, %struct.arc** %arc.addr, l53 c33
+  (w64 0xF067ADCF48583976)
+and
+  assn asm ln 7071, prod ln 46.0, live ln 53, enc 0
+  %struct.arc* %arc
+  (w64 0xF067ADCF48583976)
+🔔 Removing: asm ln 7080, prod ln 53.33, live ln 54, enc 1
+
+Checking equivalence of `arc` (decl src ln 46) from
+  assn asm ln 7093, prod ln 54.33, live ln 55, enc 2
+  %4 = load %struct.arc*, %struct.arc** %arc.addr, l54 c33
+  (w64 0xF067ADCF48583976)
+and
+  assn asm ln 7071, prod ln 46.0, live ln 53, enc 0
+  %struct.arc* %arc
+  (w64 0xF067ADCF48583976)
+🔔 Removing: asm ln 7093, prod ln 54.33, live ln 55, enc 2
+
+Filtering before assignments: `red_cost` (decl src ln 46)
+
+Checking equivalence of `red_cost` (decl src ln 46) from
+  assn asm ln 7075, prod ln 53.17, live ln 54, enc 1
+  %0 = load i64, i64* %red_cost.addr, l53 c17
+  (ReadLSB w64 (w32 0x0) bea_is_dual_infeasible.red_cost)
+and
+  assn asm ln 7073, prod ln 46.0, live ln 53, enc 0
+  i64 %red_cost
+  (ReadLSB w64 (w32 0x0) bea_is_dual_infeasible.red_cost)
+Query to parse
+array bea_is_dual_infeasible.red_cost[8] : w32 -> w8 = symbolic
+array bea_is_dual_infeasible.red_cost[8] : w32 -> w8 = symbolic
+(query [] (Eq N0:(ReadLSB w64 (w32 0x0) bea_is_dual_infeasible.red_cost)
+     N0))
+Parsed query
+(Eq N0:(ReadLSB w64 (w32 0x0) bea_is_dual_infeasible.red_cost)
+     N0)
+🔔 Removing: asm ln 7075, prod ln 53.17, live ln 54, enc 1
+
+Checking equivalence of `red_cost` (decl src ln 46) from
+  assn asm ln 7088, prod ln 54.17, live ln 55, enc 2
+  %3 = load i64, i64* %red_cost.addr, l54 c17
+  (ReadLSB w64 (w32 0x0) bea_is_dual_infeasible.red_cost)
+and
+  assn asm ln 7073, prod ln 46.0, live ln 53, enc 0
+  i64 %red_cost
+  (ReadLSB w64 (w32 0x0) bea_is_dual_infeasible.red_cost)
+Query to parse
+array bea_is_dual_infeasible.red_cost[8] : w32 -> w8 = symbolic
+array bea_is_dual_infeasible.red_cost[8] : w32 -> w8 = symbolic
+(query [] (Eq N0:(ReadLSB w64 (w32 0x0) bea_is_dual_infeasible.red_cost)
+     N0))
+Parsed query
+(Eq N0:(ReadLSB w64 (w32 0x0) bea_is_dual_infeasible.red_cost)
+     N0)
+🔔 Removing: asm ln 7088, prod ln 54.17, live ln 55, enc 2
+
+Collating encountered before assignments: `arc` (decl src ln 46)
+  asm ln 7071, prod ln 46.0, live ln 53, enc 0
+Collating encountered before assignments: `red_cost` (decl src ln 46)
+  asm ln 7073, prod ln 46.0, live ln 53, enc 0
+
+Collating encountered after assignments: `arc` (decl src ln 46)
+  asm ln 5247, prod ln 46.0, live ln 53, enc 0
+Collating encountered after assignments: `red_cost` (decl src ln 46)
+  asm ln 5248, prod ln 46.0, live ln 53, enc 0
+
+#### Check after using before as reference
+
+Checking equivalence of `arc` (decl src ln 46) from
+  assn asm ln 5247, prod ln 46.0, live ln 53, enc 0
+  %struct.arc.0* %arc
+  (w64 0xF067ADCF48583976)
+and
+  assn asm ln 7071, prod ln 46.0, live ln 53, enc 0
+  %struct.arc* %arc
+  (w64 0xF067ADCF48583976)
+✅ Before `arc` (decl src ln 46) assn asm ln 7071, prod ln 46.0, live ln 53, enc 0 symbolic value matches after assn asm ln 5247, prod ln 46.0, live ln 53, enc 0
+
+✅ After `arc` assns checked using before as reference
+Assignments:         arc
+  Reference:         1
+  Test:              1
+Matching:
+  Matching Coords:   1
+  Matching Value:    1
+Consistency Errors:
+  Mismatched Coords: 0
+  Mismatched Value:  0
+Availability Errors:
+  Ref Not Encount.:  0
+  Ref Not in Test:   0
+  Test Not Encount.: 0
+  Test Not in Ref:   0
+Warnings:
+  Unused:            0
+  Removable:         0
+  Unreachable:       0
+Reference Execution:
+  Function Covered:  true
+  Complete:          true
+  Within Time Limit: true
+  Within Fork Limit: true
+Test Execution:
+  Function Covered:  true
+  Complete:          true
+  Within Time Limit: true
+  Within Fork Limit: true
+
+Checking equivalence of `red_cost` (decl src ln 46) from
+  assn asm ln 5248, prod ln 46.0, live ln 53, enc 0
+  i64 %red_cost
+  (ReadLSB w64 (w32 0x0) bea_is_dual_infeasible.red_cost)
+and
+  assn asm ln 7073, prod ln 46.0, live ln 53, enc 0
+  i64 %red_cost
+  (ReadLSB w64 (w32 0x0) bea_is_dual_infeasible.red_cost)
+Query to parse
+array bea_is_dual_infeasible.red_cost[8] : w32 -> w8 = symbolic
+array bea_is_dual_infeasible.red_cost[8] : w32 -> w8 = symbolic
+(query [] (Eq (ReadLSB w64 (w32 0x0) bea_is_dual_infeasible.red_cost)
+     (ReadLSB w64 (w32 0x0) bea_is_dual_infeasible.red_cost)))
+Parsed query
+(Eq N0:(ReadLSB w64 (w32 0x0) bea_is_dual_infeasible.red_cost)
+     N0)
+✅ Before `red_cost` (decl src ln 46) assn asm ln 7073, prod ln 46.0, live ln 53, enc 0 symbolic value matches after assn asm ln 5248, prod ln 46.0, live ln 53, enc 0
+
+✅ After `red_cost` assns checked using before as reference
+Assignments:         red_cost
+  Reference:         1
+  Test:              1
+Matching:
+  Matching Coords:   1
+  Matching Value:    1
+Consistency Errors:
+  Mismatched Coords: 0
+  Mismatched Value:  0
+Availability Errors:
+  Ref Not Encount.:  0
+  Ref Not in Test:   0
+  Test Not Encount.: 0
+  Test Not in Ref:   0
+Warnings:
+  Unused:            0
+  Removable:         0
+  Unreachable:       0
+Reference Execution:
+  Function Covered:  true
+  Complete:          true
+  Within Time Limit: true
+  Within Fork Limit: true
+Test Execution:
+  Function Covered:  true
+  Complete:          true
+  Within Time Limit: true
+  Within Fork Limit: true
+
+## Function `cost_compare`
+
+✅ Before and after function names match
+
+### Variable events
+
+#### Before variables
+
+Load from declared address of `b1` (decl src ln 61), asm ln 7148
+  %12 = load %struct.basket**, %struct.basket*** %b1.addr, l72 c9, asm ln 7148
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7148, prod ln 72.9, live ln 73, enc None
+Load from declared address of `b1` (decl src ln 61), asm ln 7132
+  %6 = load %struct.basket**, %struct.basket*** %b1.addr, l70 c9, asm ln 7132
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7132, prod ln 70.9, live ln 71, enc None
+Load from declared address of `b1` (decl src ln 61), asm ln 7116
+  %0 = load %struct.basket**, %struct.basket*** %b1.addr, l68 c9, asm ln 7116
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7116, prod ln 68.9, live ln 69, enc None
+Store to declared address of `b1` (decl src ln 61), asm ln 7112
+  arg 0
+  Added assignment asm ln 7112, prod ln 61.0, live ln 68, enc None
+Load from declared address of `b2` (decl src ln 61), asm ln 7154
+  %16 = load %struct.basket**, %struct.basket*** %b2.addr, l72 c24, asm ln 7154
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7154, prod ln 72.24, live ln 73, enc None
+Load from declared address of `b2` (decl src ln 61), asm ln 7136
+  %9 = load %struct.basket**, %struct.basket*** %b2.addr, l70 c27, asm ln 7136
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7136, prod ln 70.27, live ln 71, enc None
+Load from declared address of `b2` (decl src ln 61), asm ln 7120
+  %3 = load %struct.basket**, %struct.basket*** %b2.addr, l68 c27, asm ln 7120
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7120, prod ln 68.27, live ln 69, enc None
+Store to declared address of `b2` (decl src ln 61), asm ln 7114
+  arg 1
+  Added assignment asm ln 7114, prod ln 61.0, live ln 68, enc None
+
+#### After variables
+
+Value produced for `b1` (decl src ln 61), asm ln 5279
+  arg 0
+  Added assignment asm ln 5279, prod ln 61.0, live ln 68, enc None
+Value produced for `b2` (decl src ln 61), asm ln 5280
+  arg 1
+  Added assignment asm ln 5280, prod ln 61.0, live ln 68, enc None
+
+#### Summary
+
+✅ 2 before variables found, 2 after variables found, 0 mismatched
+
+### Symbolic values
+
+#### Before values
+
+Collected value for `b1`
+  Assignment asm ln 7112, prod ln 61.0, live ln 68, enc 0
+  Concrete pointer resolves to cost_compare.b1.deref, offset (w64 0x0)
+  Created deref expr <concrete pointer>
+  Replaced concrete pointer with hash (w64 0x8086DB4C784317B4)
+  %struct.basket** %b1
+  (w64 0x8086DB4C784317B4)
+Collected value for `b2`
+  Assignment asm ln 7114, prod ln 61.0, live ln 68, enc 0
+  Concrete pointer resolves to cost_compare.b2.deref, offset (w64 0x0)
+  Created deref expr <concrete pointer>
+  Replaced concrete pointer with hash (w64 0x5EB744A06FA5317)
+  %struct.basket** %b2
+  (w64 0x5EB744A06FA5317)
+Collected value for `b1`
+  Assignment asm ln 7116, prod ln 68.9, live ln 69, enc 1
+  Concrete pointer resolves to cost_compare.b1.deref, offset (w64 0x0)
+  Created deref expr <concrete pointer>
+  Replaced concrete pointer with hash (w64 0x8086DB4C784317B4)
+  %0 = load %struct.basket**, %struct.basket*** %b1.addr, l68 c9
+  (w64 0x8086DB4C784317B4)
+[0;1;31mKLEE: ERROR: pbeampp.c:68: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0m
+🔔 Unable to execute all before instructions
+
+🔔 Unable to execute all before program states
+
+#### After values
+
+Collected value for `b1`
+  Assignment asm ln 5279, prod ln 61.0, live ln 68, enc 0
+  Concrete pointer resolves to cost_compare.b1.deref, offset (w64 0x0)
+  Created deref expr <concrete pointer>
+  Replaced concrete pointer with hash (w64 0x8086DB4C784317B4)
+  %struct.basket.6** %b1
+  (w64 0x8086DB4C784317B4)
+Collected value for `b2`
+  Assignment asm ln 5280, prod ln 61.0, live ln 68, enc 0
+  Concrete pointer resolves to cost_compare.b2.deref, offset (w64 0x0)
+  Created deref expr <concrete pointer>
+  Replaced concrete pointer with hash (w64 0x5EB744A06FA5317)
+  %struct.basket.6** %b2
+  (w64 0x5EB744A06FA5317)
+[0;1;31mKLEE: ERROR: pbeampp.c:68: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0m
+🔔 Unable to execute all after instructions
+
+🔔 Unable to execute all after program states
+
+### Assignments
+
+#### Variables with single memory location
+
+#### Collation
+
+Filtering before assignments: `b1` (decl src ln 61)
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `b1` (decl src ln 61) from
+  assn asm ln 7132, prod ln 70.9, live ln 71, enc None
+  %6 = load %struct.basket**, %struct.basket*** %b1.addr, l70 c9
+and
+  assn asm ln 7148, prod ln 72.9, live ln 73, enc None
+  %12 = load %struct.basket**, %struct.basket*** %b1.addr, l72 c9
+🔔 Removing: asm ln 7132, prod ln 70.9, live ln 71, enc None
+
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `b1` (decl src ln 61) from
+  assn asm ln 7112, prod ln 61.0, live ln 68, enc 0
+  %struct.basket** %b1
+and
+  assn asm ln 7148, prod ln 72.9, live ln 73, enc None
+  %12 = load %struct.basket**, %struct.basket*** %b1.addr, l72 c9
+
+Checking equivalence of `b1` (decl src ln 61) from
+  assn asm ln 7116, prod ln 68.9, live ln 69, enc 1
+  %0 = load %struct.basket**, %struct.basket*** %b1.addr, l68 c9
+  (w64 0x8086DB4C784317B4)
+and
+  assn asm ln 7112, prod ln 61.0, live ln 68, enc 0
+  %struct.basket** %b1
+  (w64 0x8086DB4C784317B4)
+🔔 Removing: asm ln 7116, prod ln 68.9, live ln 69, enc 1
+
+Filtering before assignments: `b2` (decl src ln 61)
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `b2` (decl src ln 61) from
+  assn asm ln 7136, prod ln 70.27, live ln 71, enc None
+  %9 = load %struct.basket**, %struct.basket*** %b2.addr, l70 c27
+and
+  assn asm ln 7154, prod ln 72.24, live ln 73, enc None
+  %16 = load %struct.basket**, %struct.basket*** %b2.addr, l72 c24
+🔔 Removing: asm ln 7136, prod ln 70.27, live ln 71, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `b2` (decl src ln 61) from
+  assn asm ln 7120, prod ln 68.27, live ln 69, enc None
+  %3 = load %struct.basket**, %struct.basket*** %b2.addr, l68 c27
+and
+  assn asm ln 7154, prod ln 72.24, live ln 73, enc None
+  %16 = load %struct.basket**, %struct.basket*** %b2.addr, l72 c24
+🔔 Removing: asm ln 7120, prod ln 68.27, live ln 69, enc None
+
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `b2` (decl src ln 61) from
+  assn asm ln 7114, prod ln 61.0, live ln 68, enc 0
+  %struct.basket** %b2
+and
+  assn asm ln 7154, prod ln 72.24, live ln 73, enc None
+  %16 = load %struct.basket**, %struct.basket*** %b2.addr, l72 c24
+
+Collating encountered before assignments: `b1` (decl src ln 61)
+❌ Assignment asm ln 7148, prod ln 72.9, live ln 73, enc None for `b1` (decl src ln 61) was not encountered during execution
+  asm ln 7112, prod ln 61.0, live ln 68, enc 0
+Collating encountered before assignments: `b2` (decl src ln 61)
+❌ Assignment asm ln 7154, prod ln 72.24, live ln 73, enc None for `b2` (decl src ln 61) was not encountered during execution
+  asm ln 7114, prod ln 61.0, live ln 68, enc 0
+
+Collating encountered after assignments: `b1` (decl src ln 61)
+  asm ln 5279, prod ln 61.0, live ln 68, enc 0
+Collating encountered after assignments: `b2` (decl src ln 61)
+  asm ln 5280, prod ln 61.0, live ln 68, enc 0
+
+#### Check after using before as reference
+
+❌ Before assn asm ln 7148, prod ln 72.9, live ln 73, enc None for `b1` (decl src ln 61) was not encountered during execution
+
+Checking equivalence of `b1` (decl src ln 61) from
+  assn asm ln 5279, prod ln 61.0, live ln 68, enc 0
+  %struct.basket.6** %b1
+  (w64 0x8086DB4C784317B4)
+and
+  assn asm ln 7112, prod ln 61.0, live ln 68, enc 0
+  %struct.basket** %b1
+  (w64 0x8086DB4C784317B4)
+✅ Before `b1` (decl src ln 61) assn asm ln 7112, prod ln 61.0, live ln 68, enc 0 symbolic value matches after assn asm ln 5279, prod ln 61.0, live ln 68, enc 0
+
+❌ After `b1` assns checked using before as reference
+Assignments:         b1
+  Reference:         2
+  Test:              1
+Matching:
+  Matching Coords:   1
+  Matching Value:    1
+Consistency Errors:
+  Mismatched Coords: 0
+  Mismatched Value:  0
+Availability Errors:
+  Ref Not Encount.:  1
+  Ref Not in Test:   0
+  Test Not Encount.: 0
+  Test Not in Ref:   0
+Warnings:
+  Unused:            0
+  Removable:         0
+  Unreachable:       0
+Reference Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
+Test Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
+
+❌ Before assn asm ln 7154, prod ln 72.24, live ln 73, enc None for `b2` (decl src ln 61) was not encountered during execution
+
+Checking equivalence of `b2` (decl src ln 61) from
+  assn asm ln 5280, prod ln 61.0, live ln 68, enc 0
+  %struct.basket.6** %b2
+  (w64 0x5EB744A06FA5317)
+and
+  assn asm ln 7114, prod ln 61.0, live ln 68, enc 0
+  %struct.basket** %b2
+  (w64 0x5EB744A06FA5317)
+✅ Before `b2` (decl src ln 61) assn asm ln 7114, prod ln 61.0, live ln 68, enc 0 symbolic value matches after assn asm ln 5280, prod ln 61.0, live ln 68, enc 0
+
+❌ After `b2` assns checked using before as reference
+Assignments:         b2
+  Reference:         2
+  Test:              1
+Matching:
+  Matching Coords:   1
+  Matching Value:    1
+Consistency Errors:
+  Mismatched Coords: 0
+  Mismatched Value:  0
+Availability Errors:
+  Ref Not Encount.:  1
+  Ref Not in Test:   0
+  Test Not Encount.: 0
+  Test Not in Ref:   0
+Warnings:
+  Unused:            0
+  Removable:         0
+  Unreachable:       0
+Reference Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
+Test Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
+
+## Function `primal_bea_mpp`
+
+✅ Before and after function names match
+
+### Variable events
+
+#### Before variables
+
+Store to declared address of `m` (decl src ln 80), asm ln 7198
+  arg 0
+  @dbg.declare without read users, removable
+  Added assignment asm ln 7198, prod ln 80.0, live ln 100, enc None
+Load from declared address of `arcs` (decl src ln 80), asm ln 7508
+  %114 = load %struct.arc*, %struct.arc** %arcs.addr, l148 c23, asm ln 7508
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7508, prod ln 148.23, live ln 149, enc None
+Store to declared address of `arcs` (decl src ln 80), asm ln 7200
+  arg 1
+  Added assignment asm ln 7200, prod ln 80.0, live ln 100, enc None
+Load from declared address of `stop_arcs` (decl src ln 80), asm ln 7503
+  %113 = load %struct.arc*, %struct.arc** %stop_arcs.addr, l147 c24, asm ln 7503
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7503, prod ln 147.24, live ln 148, enc None
+Store to declared address of `stop_arcs` (decl src ln 80), asm ln 7202
+  arg 2
+  Added assignment asm ln 7202, prod ln 80.0, live ln 100, enc None
+Load from declared address of `basket_sizes` (decl src ln 81), asm ln 7578
+  %137 = load i64*, i64** %basket_sizes.addr, l179 c26, asm ln 7578
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7578, prod ln 179.26, live ln 180, enc None
+Load from declared address of `basket_sizes` (decl src ln 81), asm ln 7562
+  %132 = load i64*, i64** %basket_sizes.addr, l174 c9, asm ln 7562
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7562, prod ln 174.9, live ln 175, enc None
+Load from declared address of `basket_sizes` (decl src ln 81), asm ln 7552
+  %128 = load i64*, i64** %basket_sizes.addr, l172 c9, asm ln 7552
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7552, prod ln 172.9, live ln 173, enc None
+Load from declared address of `basket_sizes` (decl src ln 81), asm ln 7532
+  %121 = load i64*, i64** %basket_sizes.addr, l159 c29, asm ln 7532
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7532, prod ln 159.29, live ln 160, enc None
+Load from declared address of `basket_sizes` (decl src ln 81), asm ln 7482
+  %105 = load i64*, i64** %basket_sizes.addr, l142 c16, asm ln 7482
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7482, prod ln 142.16, live ln 143, enc None
+Load from declared address of `basket_sizes` (decl src ln 81), asm ln 7472
+  %100 = load i64*, i64** %basket_sizes.addr, l141 c16, asm ln 7472
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7472, prod ln 141.16, live ln 142, enc None
+Load from declared address of `basket_sizes` (decl src ln 81), asm ln 7456
+  %92 = load i64*, i64** %basket_sizes.addr, l140 c16, asm ln 7456
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7456, prod ln 140.16, live ln 141, enc None
+Load from declared address of `basket_sizes` (decl src ln 81), asm ln 7445
+  %86 = load i64*, i64** %basket_sizes.addr, l139 c16, asm ln 7445
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7445, prod ln 139.16, live ln 140, enc None
+Load from declared address of `basket_sizes` (decl src ln 81), asm ln 7436
+  %81 = load i64*, i64** %basket_sizes.addr, l138 c11, asm ln 7436
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7436, prod ln 138.11, live ln 139, enc None
+Load from declared address of `basket_sizes` (decl src ln 81), asm ln 7352
+  %48 = load i64*, i64** %basket_sizes.addr, l116 c9, asm ln 7352
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7352, prod ln 116.9, live ln 117, enc None
+Load from declared address of `basket_sizes` (decl src ln 81), asm ln 7237
+  %2 = load i64*, i64** %basket_sizes.addr, l100 c45, asm ln 7237
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7237, prod ln 100.45, live ln 101, enc None
+Store to declared address of `basket_sizes` (decl src ln 81), asm ln 7204
+  arg 3
+  Added assignment asm ln 7204, prod ln 81.0, live ln 100, enc None
+Load from declared address of `perm` (decl src ln 81), asm ln 7584
+  %140 = load %struct.basket**, %struct.basket*** %perm.addr, l186 c12, asm ln 7584
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7584, prod ln 186.12, live ln 187, enc None
+Load from declared address of `perm` (decl src ln 81), asm ln 7575
+  %135 = load %struct.basket**, %struct.basket*** %perm.addr, l179 c16, asm ln 7575
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7575, prod ln 179.16, live ln 180, enc None
+Load from declared address of `perm` (decl src ln 81), asm ln 7551
+  %127 = load %struct.basket**, %struct.basket*** %perm.addr, l172 c4, asm ln 7551
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7551, prod ln 172.4, live ln 173, enc None
+Load from declared address of `perm` (decl src ln 81), asm ln 7481
+  %104 = load %struct.basket**, %struct.basket*** %perm.addr, l142 c11, asm ln 7481
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7481, prod ln 142.11, live ln 143, enc None
+Load from declared address of `perm` (decl src ln 81), asm ln 7471
+  %99 = load %struct.basket**, %struct.basket*** %perm.addr, l141 c11, asm ln 7471
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7471, prod ln 141.11, live ln 142, enc None
+Load from declared address of `perm` (decl src ln 81), asm ln 7455
+  %91 = load %struct.basket**, %struct.basket*** %perm.addr, l140 c11, asm ln 7455
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7455, prod ln 140.11, live ln 141, enc None
+Load from declared address of `perm` (decl src ln 81), asm ln 7444
+  %85 = load %struct.basket**, %struct.basket*** %perm.addr, l139 c11, asm ln 7444
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7444, prod ln 139.11, live ln 140, enc None
+Load from declared address of `perm` (decl src ln 81), asm ln 7336
+  %43 = load %struct.basket**, %struct.basket*** %perm.addr, l112 c16, asm ln 7336
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7336, prod ln 112.16, live ln 113, enc None
+Load from declared address of `perm` (decl src ln 81), asm ln 7330
+  %40 = load %struct.basket**, %struct.basket*** %perm.addr, l111 c16, asm ln 7330
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7330, prod ln 111.16, live ln 112, enc None
+Load from declared address of `perm` (decl src ln 81), asm ln 7318
+  %34 = load %struct.basket**, %struct.basket*** %perm.addr, l110 c16, asm ln 7318
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7318, prod ln 110.16, live ln 111, enc None
+Load from declared address of `perm` (decl src ln 81), asm ln 7311
+  %30 = load %struct.basket**, %struct.basket*** %perm.addr, l109 c16, asm ln 7311
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7311, prod ln 109.16, live ln 110, enc None
+Load from declared address of `perm` (decl src ln 81), asm ln 7253
+  %9 = load %struct.basket**, %struct.basket*** %perm.addr, l103 c20, asm ln 7253
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7253, prod ln 103.20, live ln 104, enc None
+Load from declared address of `perm` (decl src ln 81), asm ln 7246
+  %5 = load %struct.basket**, %struct.basket*** %perm.addr, l102 c18, asm ln 7246
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7246, prod ln 102.18, live ln 103, enc None
+Store to declared address of `perm` (decl src ln 81), asm ln 7206
+  arg 4
+  Added assignment asm ln 7206, prod ln 81.0, live ln 100, enc None
+Load from declared address of `thread` (decl src ln 81), asm ln 7579
+  %138 = load i32, i32* %thread.addr, l179 c39, asm ln 7579
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7579, prod ln 179.39, live ln 180, enc None
+Load from declared address of `thread` (decl src ln 81), asm ln 7563
+  %133 = load i32, i32* %thread.addr, l174 c22, asm ln 7563
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7563, prod ln 174.22, live ln 175, enc None
+Load from declared address of `thread` (decl src ln 81), asm ln 7553
+  %129 = load i32, i32* %thread.addr, l172 c22, asm ln 7553
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7553, prod ln 172.22, live ln 173, enc None
+Load from declared address of `thread` (decl src ln 81), asm ln 7483
+  %106 = load i32, i32* %thread.addr, l142 c29, asm ln 7483
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7483, prod ln 142.29, live ln 143, enc None
+Load from declared address of `thread` (decl src ln 81), asm ln 7473
+  %101 = load i32, i32* %thread.addr, l141 c29, asm ln 7473
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7473, prod ln 141.29, live ln 142, enc None
+Load from declared address of `thread` (decl src ln 81), asm ln 7457
+  %93 = load i32, i32* %thread.addr, l140 c29, asm ln 7457
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7457, prod ln 140.29, live ln 141, enc None
+Load from declared address of `thread` (decl src ln 81), asm ln 7446
+  %87 = load i32, i32* %thread.addr, l139 c29, asm ln 7446
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7446, prod ln 139.29, live ln 140, enc None
+Load from declared address of `thread` (decl src ln 81), asm ln 7437
+  %82 = load i32, i32* %thread.addr, l138 c24, asm ln 7437
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7437, prod ln 138.24, live ln 139, enc None
+Load from declared address of `thread` (decl src ln 81), asm ln 7353
+  %49 = load i32, i32* %thread.addr, l116 c22, asm ln 7353
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7353, prod ln 116.22, live ln 117, enc None
+Load from declared address of `thread` (decl src ln 81), asm ln 7238
+  %3 = load i32, i32* %thread.addr, l100 c58, asm ln 7238
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7238, prod ln 100.58, live ln 101, enc None
+Store to declared address of `thread` (decl src ln 81), asm ln 7208
+  arg 5
+  Added assignment asm ln 7208, prod ln 81.0, live ln 100, enc None
+Load from declared address of `end_arc` (decl src ln 81), asm ln 7514
+  %116 = load %struct.arc**, %struct.arc*** %end_arc.addr, l152 c10, asm ln 7514
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7514, prod ln 152.10, live ln 153, enc None
+Load from declared address of `end_arc` (decl src ln 81), asm ln 7509
+  %115 = load %struct.arc**, %struct.arc*** %end_arc.addr, l148 c13, asm ln 7509
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7509, prod ln 148.13, live ln 149, enc None
+Load from declared address of `end_arc` (decl src ln 81), asm ln 7501
+  %111 = load %struct.arc**, %struct.arc*** %end_arc.addr, l147 c13, asm ln 7501
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7501, prod ln 147.13, live ln 148, enc None
+Load from declared address of `end_arc` (decl src ln 81), asm ln 7399
+  %67 = load %struct.arc**, %struct.arc*** %end_arc.addr, l131 c23, asm ln 7399
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7399, prod ln 131.23, live ln 132, enc None
+Load from declared address of `end_arc` (decl src ln 81), asm ln 7390
+  %65 = load %struct.arc**, %struct.arc*** %end_arc.addr, l128 c8, asm ln 7390
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7390, prod ln 128.8, live ln 129, enc None
+Load from declared address of `end_arc` (decl src ln 81), asm ln 7386
+  %62 = load %struct.arc**, %struct.arc*** %end_arc.addr, l128 c19, asm ln 7386
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7386, prod ln 128.19, live ln 129, enc None
+Load from declared address of `end_arc` (decl src ln 81), asm ln 7381
+  %61 = load %struct.arc**, %struct.arc*** %end_arc.addr, l126 c8, asm ln 7381
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7381, prod ln 126.8, live ln 127, enc None
+Load from declared address of `end_arc` (decl src ln 81), asm ln 7376
+  %58 = load %struct.arc**, %struct.arc*** %end_arc.addr, l126 c19, asm ln 7376
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7376, prod ln 126.19, live ln 127, enc None
+Load from declared address of `end_arc` (decl src ln 81), asm ln 7369
+  %55 = load %struct.arc**, %struct.arc*** %end_arc.addr, l125 c10, asm ln 7369
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7369, prod ln 125.10, live ln 126, enc None
+Load from declared address of `end_arc` (decl src ln 81), asm ln 7364
+  %52 = load %struct.arc**, %struct.arc*** %end_arc.addr, l123 c12, asm ln 7364
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7364, prod ln 123.12, live ln 124, enc None
+Load from declared address of `end_arc` (decl src ln 81), asm ln 7357
+  %50 = load %struct.arc**, %struct.arc*** %end_arc.addr, l118 c24, asm ln 7357
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7357, prod ln 118.24, live ln 119, enc None
+Store to declared address of `end_arc` (decl src ln 81), asm ln 7210
+  arg 6
+  Added assignment asm ln 7210, prod ln 81.0, live ln 100, enc None
+Load from declared address of `step` (decl src ln 81), asm ln 7366
+  %54 = load i64, i64* %step.addr, l123 c22, asm ln 7366
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7366, prod ln 123.22, live ln 124, enc None
+Store to declared address of `step` (decl src ln 81), asm ln 7212
+  arg 7
+  Added assignment asm ln 7212, prod ln 81.0, live ln 100, enc None
+Load from declared address of `num_threads` (decl src ln 81), asm ln 7527
+  %120 = load i64, i64* %num_threads.addr, l158 c23, asm ln 7527
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7527, prod ln 158.23, live ln 159, enc None
+Load from declared address of `num_threads` (decl src ln 81), asm ln 7494
+  %109 = load i64, i64* %num_threads.addr, l131 c39, asm ln 7494
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7494, prod ln 131.39, live ln 132, enc None
+Store to declared address of `num_threads` (decl src ln 81), asm ln 7214
+  arg 8
+  Added assignment asm ln 7214, prod ln 81.0, live ln 100, enc None
+Load from declared address of `max_elems` (decl src ln 81), asm ln 7388
+  %64 = load i64, i64* %max_elems.addr, l128 c29, asm ln 7388
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7388, prod ln 128.29, live ln 129, enc None
+Load from declared address of `max_elems` (decl src ln 81), asm ln 7378
+  %60 = load i64, i64* %max_elems.addr, l126 c29, asm ln 7378
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7378, prod ln 126.29, live ln 127, enc None
+Store to declared address of `max_elems` (decl src ln 81), asm ln 7216
+  arg 9
+  Added assignment asm ln 7216, prod ln 81.0, live ln 100, enc None
+Store to declared address of `i` (decl src ln 96), asm ln 7347
+  %inc27 = add nsw i64 %46, 1, l100 c68, asm ln 7346
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7347, prod ln 100.68, live ln 101, enc None
+Load from declared address of `i` (decl src ln 96), asm ln 7345
+  %46 = load i64, i64* %i, l100 c68, asm ln 7345
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7345, prod ln 100.68, live ln 101, enc None
+Load from declared address of `i` (decl src ln 96), asm ln 7254
+  %10 = load i64, i64* %i, l103 c25, asm ln 7254
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7254, prod ln 103.25, live ln 104, enc None
+Load from declared address of `i` (decl src ln 96), asm ln 7247
+  %6 = load i64, i64* %i, l102 c23, asm ln 7247
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7247, prod ln 102.23, live ln 103, enc None
+Load from declared address of `i` (decl src ln 96), asm ln 7236
+  %1 = load i64, i64* %i, l100 c40, asm ln 7236
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7236, prod ln 100.40, live ln 101, enc None
+Load from declared address of `i` (decl src ln 96), asm ln 7231
+  %0 = load i64, i64* %i, l100 c30, asm ln 7231
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7231, prod ln 100.30, live ln 101, enc None
+Store to declared address of `i` (decl src ln 96), asm ln 7226
+  const i64 1
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7226, prod ln 100.15, live ln 101, enc None
+Store to declared address of `j` (decl src ln 96), asm ln 7541
+  %inc99 = add nsw i64 %125, 1, l158 c37, asm ln 7540
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7541, prod ln 158.37, live ln 159, enc None
+Load from declared address of `j` (decl src ln 96), asm ln 7539
+  %125 = load i64, i64* %j, l158 c37, asm ln 7539
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7539, prod ln 158.37, live ln 159, enc None
+Load from declared address of `j` (decl src ln 96), asm ln 7533
+  %122 = load i64, i64* %j, l159 c42, asm ln 7533
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7533, prod ln 159.42, live ln 160, enc None
+Load from declared address of `j` (decl src ln 96), asm ln 7526
+  %119 = load i64, i64* %j, l158 c19, asm ln 7526
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7526, prod ln 158.19, live ln 159, enc None
+Store to declared address of `j` (decl src ln 96), asm ln 7522
+  const i64 0
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7522, prod ln 158.14, live ln 159, enc None
+Load from declared address of `count` (decl src ln 96), asm ln 7276
+  %21 = load i64, i64* %count, l105 c16, asm ln 7276
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7276, prod ln 105.16, live ln 106, enc None
+Store to declared address of `count` (decl src ln 96), asm ln 7259
+  %12 = load i64, i64* %number, l103 c29, asm ln 7258
+  Added assignment asm ln 7259, prod ln 103.29, live ln 104, enc None
+Load from declared address of `global_basket_size` (decl src ln 96), asm ln 7545
+  %126 = load i64, i64* %global_basket_size, l161 c12, asm ln 7545
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7545, prod ln 161.12, live ln 162, enc None
+Store to declared address of `global_basket_size` (decl src ln 96), asm ln 7538
+  %add97 = add nsw i64 %124, %123, l159 c27, asm ln 7537
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7538, prod ln 159.27, live ln 160, enc None
+Load from declared address of `global_basket_size` (decl src ln 96), asm ln 7536
+  %124 = load i64, i64* %global_basket_size, l159 c27, asm ln 7536
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7536, prod ln 159.27, live ln 160, enc None
+Store to declared address of `global_basket_size` (decl src ln 96), asm ln 7521
+  const i64 0
+  Added assignment asm ln 7521, prod ln 157.26, live ln 158, enc None
+Load from declared address of `next` (decl src ln 96), asm ln 7351
+  %47 = load i64, i64* %next, l116 c32, asm ln 7351
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7351, prod ln 116.32, live ln 117, enc None
+Load from declared address of `next` (decl src ln 96), asm ln 7337
+  %44 = load i64, i64* %next, l112 c21, asm ln 7337
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7337, prod ln 112.21, live ln 113, enc None
+Load from declared address of `next` (decl src ln 96), asm ln 7331
+  %41 = load i64, i64* %next, l111 c21, asm ln 7331
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7331, prod ln 111.21, live ln 112, enc None
+Load from declared address of `next` (decl src ln 96), asm ln 7319
+  %35 = load i64, i64* %next, l110 c21, asm ln 7319
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7319, prod ln 110.21, live ln 111, enc None
+Load from declared address of `next` (decl src ln 96), asm ln 7312
+  %31 = load i64, i64* %next, l109 c21, asm ln 7312
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7312, prod ln 109.21, live ln 110, enc None
+Store to declared address of `next` (decl src ln 96), asm ln 7309
+  %inc = add nsw i64 %28, 1, l108 c20, asm ln 7308
+  Added assignment asm ln 7309, prod ln 108.20, live ln 109, enc None
+Load from declared address of `next` (decl src ln 96), asm ln 7307
+  %28 = load i64, i64* %next, l108 c20, asm ln 7307
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7307, prod ln 108.20, live ln 109, enc None
+Store to declared address of `next` (decl src ln 96), asm ln 7227
+  const i64 0
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7227, prod ln 100.25, live ln 101, enc None
+Store to declared address of `arc` (decl src ln 97), asm ln 7497
+  %add.ptr83 = getelementptr inbounds %struct.arc, %struct.arc* %110, i64 %109, l131 c36, asm ln 7496
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7497, prod ln 131.36, live ln 132, enc None
+Load from declared address of `arc` (decl src ln 97), asm ln 7495
+  %110 = load %struct.arc*, %struct.arc** %arc, l131 c36, asm ln 7495
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7495, prod ln 131.36, live ln 132, enc None
+Load from declared address of `arc` (decl src ln 97), asm ln 7443
+  %84 = load %struct.arc*, %struct.arc** %arc, l139 c43, asm ln 7443
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7443, prod ln 139.43, live ln 140, enc None
+Load from declared address of `arc` (decl src ln 97), asm ln 7429
+  %79 = load %struct.arc*, %struct.arc** %arc, l136 c37, asm ln 7429
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7429, prod ln 136.37, live ln 137, enc None
+Load from declared address of `arc` (decl src ln 97), asm ln 7422
+  %76 = load %struct.arc*, %struct.arc** %arc, l135 c55, asm ln 7422
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7422, prod ln 135.55, live ln 136, enc None
+Load from declared address of `arc` (decl src ln 97), asm ln 7416
+  %73 = load %struct.arc*, %struct.arc** %arc, l135 c32, asm ln 7416
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7416, prod ln 135.32, live ln 136, enc None
+Load from declared address of `arc` (decl src ln 97), asm ln 7413
+  %71 = load %struct.arc*, %struct.arc** %arc, l135 c20, asm ln 7413
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7413, prod ln 135.20, live ln 136, enc None
+Load from declared address of `arc` (decl src ln 97), asm ln 7405
+  %69 = load %struct.arc*, %struct.arc** %arc, l132 c11, asm ln 7405
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7405, prod ln 132.11, live ln 133, enc None
+Load from declared address of `arc` (decl src ln 97), asm ln 7398
+  %66 = load %struct.arc*, %struct.arc** %arc, l131 c16, asm ln 7398
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7398, prod ln 131.16, live ln 132, enc None
+Store to declared address of `arc` (decl src ln 97), asm ln 7368
+  %add.ptr = getelementptr inbounds %struct.arc, %struct.arc* %53, i64 %54, l123 c20, asm ln 7367
+  Added assignment asm ln 7368, prod ln 123.20, live ln 125, enc None
+Load from declared address of `arc` (decl src ln 97), asm ln 7310
+  %29 = load %struct.arc*, %struct.arc** %arc, l109 c32, asm ln 7310
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7310, prod ln 109.32, live ln 110, enc None
+Load from declared address of `arc` (decl src ln 97), asm ln 7299
+  %26 = load %struct.arc*, %struct.arc** %arc, l106 c36, asm ln 7299
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7299, prod ln 106.36, live ln 107, enc None
+Load from declared address of `arc` (decl src ln 97), asm ln 7286
+  %23 = load %struct.arc*, %struct.arc** %arc, l105 c47, asm ln 7286
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7286, prod ln 105.47, live ln 106, enc None
+Load from declared address of `arc` (decl src ln 97), asm ln 7269
+  %18 = load %struct.arc*, %struct.arc** %arc, l104 c58, asm ln 7269
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7269, prod ln 104.58, live ln 105, enc None
+Load from declared address of `arc` (decl src ln 97), asm ln 7263
+  %15 = load %struct.arc*, %struct.arc** %arc, l104 c35, asm ln 7263
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7263, prod ln 104.35, live ln 105, enc None
+Load from declared address of `arc` (decl src ln 97), asm ln 7260
+  %13 = load %struct.arc*, %struct.arc** %arc, l104 c23, asm ln 7260
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7260, prod ln 104.23, live ln 105, enc None
+Store to declared address of `arc` (decl src ln 97), asm ln 7252
+  %8 = load %struct.arc*, %struct.arc** %a, l102 c27, asm ln 7251
+  Added assignment asm ln 7252, prod ln 102.27, live ln 103, enc None
+Load from declared address of `old_end_arc` (decl src ln 97), asm ln 7516
+  %118 = load %struct.arc*, %struct.arc** %old_end_arc, l152 c21, asm ln 7516
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7516, prod ln 152.21, live ln 153, enc None
+Store to declared address of `old_end_arc` (decl src ln 97), asm ln 7359
+  %51 = load %struct.arc*, %struct.arc** %50, l118 c23, asm ln 7358
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7359, prod ln 118.23, live ln 119, enc None
+Load from declared address of `red_cost` (decl src ln 98), asm ln 7468
+  %98 = load i64, i64* %red_cost, l141 c50, asm ln 7468
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7468, prod ln 141.50, live ln 142, enc None
+Load from declared address of `red_cost` (decl src ln 98), asm ln 7467
+  %97 = load i64, i64* %red_cost, l141 c50, asm ln 7467
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7467, prod ln 141.50, live ln 142, enc None
+Load from declared address of `red_cost` (decl src ln 98), asm ln 7465
+  %96 = load i64, i64* %red_cost, l141 c50, asm ln 7465
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7465, prod ln 141.50, live ln 142, enc None
+Load from declared address of `red_cost` (decl src ln 98), asm ln 7454
+  %90 = load i64, i64* %red_cost, l140 c46, asm ln 7454
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7454, prod ln 140.46, live ln 141, enc None
+Load from declared address of `red_cost` (decl src ln 98), asm ln 7430
+  %80 = load i64, i64* %red_cost, l136 c42, asm ln 7430
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7430, prod ln 136.42, live ln 137, enc None
+Store to declared address of `red_cost` (decl src ln 98), asm ln 7428
+  %add52 = add nsw i64 %sub49, %78, l135 c53, asm ln 7427
+  Added assignment asm ln 7428, prod ln 135.53, live ln 136, enc None
+Load from declared address of `red_cost` (decl src ln 98), asm ln 7327
+  %39 = load i64, i64* %red_cost, l111 c39, asm ln 7327
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7327, prod ln 111.39, live ln 112, enc None
+Load from declared address of `red_cost` (decl src ln 98), asm ln 7326
+  %38 = load i64, i64* %red_cost, l111 c39, asm ln 7326
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7326, prod ln 111.39, live ln 112, enc None
+Load from declared address of `red_cost` (decl src ln 98), asm ln 7324
+  %37 = load i64, i64* %red_cost, l111 c39, asm ln 7324
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7324, prod ln 111.39, live ln 112, enc None
+Load from declared address of `red_cost` (decl src ln 98), asm ln 7317
+  %33 = load i64, i64* %red_cost, l110 c35, asm ln 7317
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7317, prod ln 110.35, live ln 111, enc None
+Load from declared address of `red_cost` (decl src ln 98), asm ln 7294
+  %25 = load i64, i64* %red_cost, l106 c20, asm ln 7294
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7294, prod ln 106.20, live ln 107, enc None
+Load from declared address of `red_cost` (decl src ln 98), asm ln 7281
+  %22 = load i64, i64* %red_cost, l105 c31, asm ln 7281
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7281, prod ln 105.31, live ln 106, enc None
+Store to declared address of `red_cost` (decl src ln 98), asm ln 7275
+  %add = add nsw i64 %sub, %20, l104 c56, asm ln 7274
+  Added assignment asm ln 7275, prod ln 104.56, live ln 105, enc None
+
+#### After variables
+
+Value produced for `m` (decl src ln 80), asm ln 5323
+  arg 0
+  Added assignment asm ln 5323, prod ln 80.0, live ln 100, enc None
+Value produced for `arcs` (decl src ln 80), asm ln 5324
+  arg 1
+  Added assignment asm ln 5324, prod ln 80.0, live ln 100, enc None
+Value produced for `stop_arcs` (decl src ln 80), asm ln 5325
+  arg 2
+  Added assignment asm ln 5325, prod ln 80.0, live ln 100, enc None
+Value produced for `basket_sizes` (decl src ln 81), asm ln 5326
+  arg 3
+  Added assignment asm ln 5326, prod ln 81.0, live ln 100, enc None
+Value produced for `perm` (decl src ln 81), asm ln 5327
+  arg 4
+  Added assignment asm ln 5327, prod ln 81.0, live ln 100, enc None
+Value produced for `thread` (decl src ln 81), asm ln 5328
+  arg 5
+  Added assignment asm ln 5328, prod ln 81.0, live ln 100, enc None
+Value produced for `end_arc` (decl src ln 81), asm ln 5329
+  arg 6
+  Added assignment asm ln 5329, prod ln 81.0, live ln 100, enc None
+Value produced for `step` (decl src ln 81), asm ln 5330
+  arg 7
+  Added assignment asm ln 5330, prod ln 81.0, live ln 100, enc None
+Value produced for `num_threads` (decl src ln 81), asm ln 5331
+  arg 8
+  Added assignment asm ln 5331, prod ln 81.0, live ln 100, enc None
+Value produced for `max_elems` (decl src ln 81), asm ln 5332
+  arg 9
+  Added assignment asm ln 5332, prod ln 81.0, live ln 100, enc None
+Value produced for `i` (decl src ln 96), asm ln 5333
+  const i64 1
+  Added assignment asm ln 5333, prod ln 96.0, live ln 100, enc None
+Value produced for `next` (decl src ln 96), asm ln 5334
+  const i64 0
+  Added assignment asm ln 5334, prod ln 96.0, live ln 100, enc None
+Value produced for `arc` (decl src ln 97), asm ln 5357
+  %2 = load %struct.arc.0*, %struct.arc.0** %a, l102 c27, asm ln 5356
+  Added assignment asm ln 5357, prod ln 102.27, live ln 103, enc None
+Value produced for `count` (decl src ln 96), asm ln 5362
+  %4 = load i64, i64* %number, l103 c29, asm ln 5361
+  Added assignment asm ln 5362, prod ln 103.29, live ln 104, enc None
+Value produced for `red_cost` (decl src ln 98), asm ln 5375
+  %add = add nsw i64 %sub, %9, l104 c56, asm ln 5374
+  Added assignment asm ln 5375, prod ln 104.56, live ln 105, enc None
+Value produced for `next` (decl src ln 96), asm ln 5403
+  %inc = add nsw i64 %next.0, 1, l108 c20, asm ln 5402
+  Added assignment asm ln 5403, prod ln 108.20, live ln 109, enc None
+Value produced for `i` (decl src ln 96), asm ln 5429
+  %inc27 = add nsw i64 %i.0, 1, l100 c68, asm ln 5428
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 5429, prod ln 100.68, live ln 101, enc None
+Value produced for `old_end_arc` (decl src ln 97), asm ln 5437
+  %16 = load %struct.arc.0*, %struct.arc.0** %end_arc, l118 c23, asm ln 5436
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 5437, prod ln 118.23, live ln 119, enc None
+Value produced for `arc` (decl src ln 97), asm ln 5444
+  %add.ptr = getelementptr inbounds %struct.arc.0, %struct.arc.0* %17, i64 %step, l123 c20, asm ln 5443
+  Added assignment asm ln 5444, prod ln 123.20, live ln 125, enc None
+Value produced for `red_cost` (decl src ln 98), asm ln 5493
+  %add52 = add nsw i64 %sub49, %28, l135 c53, asm ln 5492
+  Added assignment asm ln 5493, prod ln 135.53, live ln 136, enc None
+Value produced for `arc` (decl src ln 97), asm ln 5539
+  %add.ptr83 = getelementptr inbounds %struct.arc.0, %struct.arc.0* %arc.0, i64 %num_threads, l131 c36, asm ln 5538
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 5539, prod ln 131.36, live ln 132, enc None
+Value produced for `global_basket_size` (decl src ln 96), asm ln 5568
+  %add97 = add nsw i64 %global_basket_size.0, %40, l159 c27, asm ln 5567
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 5568, prod ln 159.27, live ln 160, enc None
+Value produced for `j` (decl src ln 96), asm ln 5570
+  %inc99 = add nsw i64 %j.0, 1, l158 c37, asm ln 5569
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 5570, prod ln 158.37, live ln 159, enc None
+Value produced for `next` (decl src ln 96), asm ln 5340
+  %next.0 = phi i64 [ 0, %entry ], [ %next.1, %for.inc ], asm ln 5339
+  🔔 Missing produced ln, using decl ln
+  Added assignment asm ln 5340, prod ln 96.0, live ln 100, enc None
+Value produced for `i` (decl src ln 96), asm ln 5341
+  %i.0 = phi i64 [ 1, %entry ], [ %inc27, %for.inc ], asm ln 5338
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 5341, prod ln 100.68, live ln 101, enc None
+Value produced for `next` (decl src ln 96), asm ln 5427
+  %next.1 = phi i64 [ %inc, %if.then ], [ %next.0, %land.lhs.true12 ], [ %next.0, %lor.lhs.false ], [ %next.0, %for.body ], asm ln 5426
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 5427, prod ln 108.20, live ln 109, enc None
+Value produced for `arc` (decl src ln 97), asm ln 5468
+  %arc.0 = phi %struct.arc.0* [ %add.ptr, %if.end36 ], [ %add.ptr83, %for.inc82 ], asm ln 5467
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 5468, prod ln 131.36, live ln 132, enc None
+Value produced for `global_basket_size` (decl src ln 96), asm ln 5559
+  %global_basket_size.0 = phi i64 [ %add97, %for.body95 ], [ 0, %if.end88 ], asm ln 5558
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 5559, prod ln 159.27, live ln 160, enc None
+Value produced for `j` (decl src ln 96), asm ln 5560
+  %j.0 = phi i64 [ %inc99, %for.body95 ], [ 0, %if.end88 ], asm ln 5557
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 5560, prod ln 158.37, live ln 159, enc None
+
+#### Summary
+
+✅ 18 before variables found, 18 after variables found, 0 mismatched
+
+### Symbolic values
+
+#### Before values
+
+Collected value for `m`
+  Assignment asm ln 7198, prod ln 80.0, live ln 100, enc 0
+  i64 %m
+  (ReadLSB w64 (w32 0x0) primal_bea_mpp.m)
+Collected value for `arcs`
+  Assignment asm ln 7200, prod ln 80.0, live ln 100, enc 0
+  Concrete pointer resolves to primal_bea_mpp.arcs.deref, offset (w64 0x0)
+  Created deref expr (ReadLSB w64 (w32 0x0) primal_bea_mpp.arcs.deref)
+  Replaced concrete pointer with hash (w64 0xEE80AAECA0EC48E1)
+  %struct.arc* %arcs
+  (w64 0xEE80AAECA0EC48E1)
+Collected value for `stop_arcs`
+  Assignment asm ln 7202, prod ln 80.0, live ln 100, enc 0
+  Concrete pointer resolves to primal_bea_mpp.stop_arcs.deref, offset (w64 0x0)
+  Created deref expr (ReadLSB w64 (w32 0x0) primal_bea_mpp.stop_arcs.deref)
+  Replaced concrete pointer with hash (w64 0x2D7AA9072607630A)
+  %struct.arc* %stop_arcs
+  (w64 0x2D7AA9072607630A)
+Collected value for `basket_sizes`
+  Assignment asm ln 7204, prod ln 81.0, live ln 100, enc 0
+  Concrete pointer resolves to primal_bea_mpp.basket_sizes.deref, offset (w64 0x0)
+  Created deref expr (ReadLSB w64 (w32 0x0) primal_bea_mpp.basket_sizes.deref)
+  Replaced concrete pointer with hash (w64 0xDB573077229DB7EE)
+  i64* %basket_sizes
+  (w64 0xDB573077229DB7EE)
+Collected value for `perm`
+  Assignment asm ln 7206, prod ln 81.0, live ln 100, enc 0
+  Concrete pointer resolves to primal_bea_mpp.perm.deref, offset (w64 0x0)
+  Created deref expr <concrete pointer>
+  Replaced concrete pointer with hash (w64 0x85018994A51789F0)
+  %struct.basket** %perm
+  (w64 0x85018994A51789F0)
+Collected value for `thread`
+  Assignment asm ln 7208, prod ln 81.0, live ln 100, enc 0
+  i32 %thread
+  (ReadLSB w32 (w32 0x0) primal_bea_mpp.thread)
+Collected value for `end_arc`
+  Assignment asm ln 7210, prod ln 81.0, live ln 100, enc 0
+  Concrete pointer resolves to primal_bea_mpp.end_arc.deref, offset (w64 0x0)
+  Created deref expr <concrete pointer>
+  Replaced concrete pointer with hash (w64 0xA3FB20F83CB71C49)
+  %struct.arc** %end_arc
+  (w64 0xA3FB20F83CB71C49)
+Collected value for `step`
+  Assignment asm ln 7212, prod ln 81.0, live ln 100, enc 0
+  i64 %step
+  (ReadLSB w64 (w32 0x0) primal_bea_mpp.step)
+Collected value for `num_threads`
+  Assignment asm ln 7214, prod ln 81.0, live ln 100, enc 0
+  i64 %num_threads
+  (ReadLSB w64 (w32 0x0) primal_bea_mpp.num_threads)
+Collected value for `max_elems`
+  Assignment asm ln 7216, prod ln 81.0, live ln 100, enc 0
+  i64 %max_elems
+  (ReadLSB w64 (w32 0x0) primal_bea_mpp.max_elems)
+Collected value for `i`
+  Assignment asm ln 7226, prod ln 100.15, live ln 101, enc 0
+  i64 1
+  (w64 0x1)
+Collected value for `next`
+  Assignment asm ln 7227, prod ln 100.25, live ln 101, enc 0
+  i64 0
+  (w64 0x0)
+Collected value for `i`
+  Assignment asm ln 7231, prod ln 100.30, live ln 101, enc 1
+  %0 = load i64, i64* %i, l100 c30
+  (w64 0x1)
+Collected value for `i`
+  Assignment asm ln 7236, prod ln 100.40, live ln 101, enc 2
+  %1 = load i64, i64* %i, l100 c40
+  (w64 0x1)
+Collected value for `basket_sizes`
+  Assignment asm ln 7237, prod ln 100.45, live ln 101, enc 1
+  Concrete pointer resolves to primal_bea_mpp.basket_sizes.deref, offset (w64 0x0)
+  Created deref expr (ReadLSB w64 (w32 0x0) primal_bea_mpp.basket_sizes.deref)
+  Replaced concrete pointer with hash (w64 0xDB573077229DB7EE)
+  %2 = load i64*, i64** %basket_sizes.addr, l100 c45
+  (w64 0xDB573077229DB7EE)
+Collected value for `thread`
+  Assignment asm ln 7238, prod ln 100.58, live ln 101, enc 1
+  %3 = load i32, i32* %thread.addr, l100 c58
+  (ReadLSB w32 (w32 0x0) primal_bea_mpp.thread)
+[0;1;31mKLEE: ERROR: pbeampp.c:100: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0mCollected value for `perm`
+  Assignment asm ln 7246, prod ln 102.18, live ln 103, enc 1
+  Concrete pointer resolves to primal_bea_mpp.perm.deref, offset (w64 0x0)
+  Created deref expr <concrete pointer>
+  Replaced concrete pointer with hash (w64 0x85018994A51789F0)
+  %5 = load %struct.basket**, %struct.basket*** %perm.addr, l102 c18
+  (w64 0x85018994A51789F0)
+Collected value for `next`
+  Assignment asm ln 7351, prod ln 116.32, live ln 117, enc 1
+  %47 = load i64, i64* %next, l116 c32
+  (w64 0x0)
+Collected value for `i`
+  Assignment asm ln 7247, prod ln 102.23, live ln 103, enc 3
+  %6 = load i64, i64* %i, l102 c23
+  (w64 0x1)
+Collected value for `basket_sizes`
+  Assignment asm ln 7352, prod ln 116.9, live ln 117, enc 2
+  Concrete pointer resolves to primal_bea_mpp.basket_sizes.deref, offset (w64 0x0)
+  Created deref expr (ReadLSB w64 (w32 0x0) primal_bea_mpp.basket_sizes.deref)
+  Replaced concrete pointer with hash (w64 0xDB573077229DB7EE)
+  %48 = load i64*, i64** %basket_sizes.addr, l116 c9
+  (w64 0xDB573077229DB7EE)
+[0;1;31mKLEE: ERROR: pbeampp.c:102: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0mCollected value for `thread`
+  Assignment asm ln 7353, prod ln 116.22, live ln 117, enc 2
+  %49 = load i32, i32* %thread.addr, l116 c22
+  (ReadLSB w32 (w32 0x0) primal_bea_mpp.thread)
+Collected value for `end_arc`
+  Assignment asm ln 7357, prod ln 118.24, live ln 119, enc 1
+  Concrete pointer resolves to primal_bea_mpp.end_arc.deref, offset (w64 0x0)
+  Created deref expr <concrete pointer>
+  Replaced concrete pointer with hash (w64 0xA3FB20F83CB71C49)
+  %50 = load %struct.arc**, %struct.arc*** %end_arc.addr, l118 c24
+  (w64 0xA3FB20F83CB71C49)
+Collected value for `old_end_arc`
+  Assignment asm ln 7359, prod ln 118.23, live ln 119, enc 0
+  %51 = load %struct.arc*, %struct.arc** %50, l118 c23
+  (w64 0x0)
+Collected value for `end_arc`
+  Assignment asm ln 7364, prod ln 123.12, live ln 124, enc 2
+  Concrete pointer resolves to primal_bea_mpp.end_arc.deref, offset (w64 0x0)
+  Created deref expr <concrete pointer>
+  Replaced concrete pointer with hash (w64 0xA3FB20F83CB71C49)
+  %52 = load %struct.arc**, %struct.arc*** %end_arc.addr, l123 c12
+  (w64 0xA3FB20F83CB71C49)
+Collected value for `step`
+  Assignment asm ln 7366, prod ln 123.22, live ln 124, enc 1
+  %54 = load i64, i64* %step.addr, l123 c22
+  (ReadLSB w64 (w32 0x0) primal_bea_mpp.step)
+Collected value for `arc`
+  Assignment asm ln 7368, prod ln 123.20, live ln 125, enc 0
+  %add.ptr = getelementptr inbounds %struct.arc, %struct.arc* %53, i64 %54, l123 c20
+  (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 N0:(Mul w64 (w64 0x48)
+                                                                                                                                                                                                                                                                                                                                        (ReadLSB w64 (w32 0x0) primal_bea_mpp.step))
+                                                                                                                                                                                                                                                                                                                            N0)
+                                                                                                                                                                                                                                                                                                                   N0)
+                                                                                                                                                                                                                                                                                                          N0)
+                                                                                                                                                                                                                                                                                                 N0)
+                                                                                                                                                                                                                                                                                        N0)
+                                                                                                                                                                                                                                                                               N0)
+                                                                                                                                                                                                                                                                      N0)
+                                                                                                                                                                                                                                                             N0)
+                                                                                                                                                                                                                                                    N0)
+                                                                                                                                                                                                                                           N0)
+                                                                                                                                                                                                                                  N0)
+                                                                                                                                                                                                                         N0)
+                                                                                                                                                                                                                N0)
+                                                                                                                                                                                                       N0)
+                                                                                                                                                                                              N0)
+                                                                                                                                                                                     N0)
+                                                                                                                                                                            N0)
+                                                                                                                                                                   N0)
+                                                                                                                                                          N0)
+                                                                                                                                                 N0)
+                                                                                                                                        N0)
+                                                                                                                               N0)
+                                                                                                                      N0)
+                                                                                                             N0)
+                                                                                                    N0)
+                                                                                           N0)
+                                                                                  N0)
+                                                                         N0)
+                                                                N0)
+                                                       N0)
+                                              N0)
+                                     N0)
+                            N0)
+                   N0)
+          N0)
+Collected value for `end_arc`
+  Assignment asm ln 7369, prod ln 125.10, live ln 126, enc 3
+  Concrete pointer resolves to primal_bea_mpp.end_arc.deref, offset (w64 0x0)
+  Created deref expr <concrete pointer>
+  Replaced concrete pointer with hash (w64 0xA3FB20F83CB71C49)
+  %55 = load %struct.arc**, %struct.arc*** %end_arc.addr, l125 c10
+  (w64 0xA3FB20F83CB71C49)
+Collected value for `end_arc`
+  Assignment asm ln 7376, prod ln 126.19, live ln 127, enc 4
+  Concrete pointer resolves to primal_bea_mpp.end_arc.deref, offset (w64 0x0)
+  Created deref expr <concrete pointer>
+  Replaced concrete pointer with hash (w64 0xA3FB20F83CB71C49)
+  %58 = load %struct.arc**, %struct.arc*** %end_arc.addr, l126 c19
+  (w64 0xA3FB20F83CB71C49)
+Collected value for `max_elems`
+  Assignment asm ln 7378, prod ln 126.29, live ln 127, enc 1
+  %60 = load i64, i64* %max_elems.addr, l126 c29
+  (ReadLSB w64 (w32 0x0) primal_bea_mpp.max_elems)
+Collected value for `end_arc`
+  Assignment asm ln 7381, prod ln 126.8, live ln 127, enc 5
+  Concrete pointer resolves to primal_bea_mpp.end_arc.deref, offset (w64 0x0)
+  Created deref expr <concrete pointer>
+  Replaced concrete pointer with hash (w64 0xA3FB20F83CB71C49)
+  %61 = load %struct.arc**, %struct.arc*** %end_arc.addr, l126 c8
+  (w64 0xA3FB20F83CB71C49)
+Collected value for `arc`
+  Assignment asm ln 7398, prod ln 131.16, live ln 132, enc 1
+  %66 = load %struct.arc*, %struct.arc** %arc, l131 c16
+  (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 N0:(Mul w64 (w64 0x48)
+                                                                                                                                                                                                                                                                                                                                        (ReadLSB w64 (w32 0x0) primal_bea_mpp.step))
+                                                                                                                                                                                                                                                                                                                            N0)
+                                                                                                                                                                                                                                                                                                                   N0)
+                                                                                                                                                                                                                                                                                                          N0)
+                                                                                                                                                                                                                                                                                                 N0)
+                                                                                                                                                                                                                                                                                        N0)
+                                                                                                                                                                                                                                                                               N0)
+                                                                                                                                                                                                                                                                      N0)
+                                                                                                                                                                                                                                                             N0)
+                                                                                                                                                                                                                                                    N0)
+                                                                                                                                                                                                                                           N0)
+                                                                                                                                                                                                                                  N0)
+                                                                                                                                                                                                                         N0)
+                                                                                                                                                                                                                N0)
+                                                                                                                                                                                                       N0)
+                                                                                                                                                                                              N0)
+                                                                                                                                                                                     N0)
+                                                                                                                                                                            N0)
+                                                                                                                                                                   N0)
+                                                                                                                                                          N0)
+                                                                                                                                                 N0)
+                                                                                                                                        N0)
+                                                                                                                               N0)
+                                                                                                                      N0)
+                                                                                                             N0)
+                                                                                                    N0)
+                                                                                           N0)
+                                                                                  N0)
+                                                                         N0)
+                                                                N0)
+                                                       N0)
+                                              N0)
+                                     N0)
+                            N0)
+                   N0)
+          N0)
+Collected value for `end_arc`
+  Assignment asm ln 7399, prod ln 131.23, live ln 132, enc 6
+  Concrete pointer resolves to primal_bea_mpp.end_arc.deref, offset (w64 0x0)
+  Created deref expr (Add w64 (w64 0xFFFFFFFFFFFFFFB8)
+          (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 N0:(Mul w64 (w64 0x48)
+                                                                                                                                                                                                                                                                                                                                                 (ReadLSB w64 (w32 0x0) primal_bea_mpp.max_elems))
+                                                                                                                                                                                                                                                                                                                                     N0)
+                                                                                                                                                                                                                                                                                                                            N0)
+                                                                                                                                                                                                                                                                                                                   N0)
+                                                                                                                                                                                                                                                                                                          N0)
+                                                                                                                                                                                                                                                                                                 N0)
+                                                                                                                                                                                                                                                                                        N0)
+                                                                                                                                                                                                                                                                               N0)
+                                                                                                                                                                                                                                                                      N0)
+                                                                                                                                                                                                                                                             N0)
+                                                                                                                                                                                                                                                    N0)
+                                                                                                                                                                                                                                           N0)
+                                                                                                                                                                                                                                  N0)
+                                                                                                                                                                                                                         N0)
+                                                                                                                                                                                                                N0)
+                                                                                                                                                                                                       N0)
+                                                                                                                                                                                              N0)
+                                                                                                                                                                                     N0)
+                                                                                                                                                                            N0)
+                                                                                                                                                                   N0)
+                                                                                                                                                          N0)
+                                                                                                                                                 N0)
+                                                                                                                                        N0)
+                                                                                                                               N0)
+                                                                                                                      N0)
+                                                                                                             N0)
+                                                                                                    N0)
+                                                                                           N0)
+                                                                                  N0)
+                                                                         N0)
+                                                                N0)
+                                                       N0)
+                                              N0)
+                                     N0)
+                            N0)
+                   N0))
+  Replaced concrete pointer with hash (w64 0xA3FB20F83CB71C49)
+  %67 = load %struct.arc**, %struct.arc*** %end_arc.addr, l131 c23
+  (w64 0xA3FB20F83CB71C49)
+Collected value for `arc`
+  Assignment asm ln 7405, prod ln 132.11, live ln 133, enc 2
+  %69 = load %struct.arc*, %struct.arc** %arc, l132 c11
+  (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 N0:(Mul w64 (w64 0x48)
+                                                                                                                                                                                                                                                                                                                                        (ReadLSB w64 (w32 0x0) primal_bea_mpp.step))
+                                                                                                                                                                                                                                                                                                                            N0)
+                                                                                                                                                                                                                                                                                                                   N0)
+                                                                                                                                                                                                                                                                                                          N0)
+                                                                                                                                                                                                                                                                                                 N0)
+                                                                                                                                                                                                                                                                                        N0)
+                                                                                                                                                                                                                                                                               N0)
+                                                                                                                                                                                                                                                                      N0)
+                                                                                                                                                                                                                                                             N0)
+                                                                                                                                                                                                                                                    N0)
+                                                                                                                                                                                                                                           N0)
+                                                                                                                                                                                                                                  N0)
+                                                                                                                                                                                                                         N0)
+                                                                                                                                                                                                                N0)
+                                                                                                                                                                                                       N0)
+                                                                                                                                                                                              N0)
+                                                                                                                                                                                     N0)
+                                                                                                                                                                            N0)
+                                                                                                                                                                   N0)
+                                                                                                                                                          N0)
+                                                                                                                                                 N0)
+                                                                                                                                        N0)
+                                                                                                                               N0)
+                                                                                                                      N0)
+                                                                                                             N0)
+                                                                                                    N0)
+                                                                                           N0)
+                                                                                  N0)
+                                                                         N0)
+                                                                N0)
+                                                       N0)
+                                              N0)
+                                     N0)
+                            N0)
+                   N0)
+          N0)
+Collected value for `end_arc`
+  Assignment asm ln 7501, prod ln 147.13, live ln 148, enc 7
+  Concrete pointer resolves to primal_bea_mpp.end_arc.deref, offset (w64 0x0)
+  Created deref expr (Add w64 (w64 0xFFFFFFFFFFFFFFB8)
+          (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 N0:(Mul w64 (w64 0x48)
+                                                                                                                                                                                                                                                                                                                                                 (ReadLSB w64 (w32 0x0) primal_bea_mpp.max_elems))
+                                                                                                                                                                                                                                                                                                                                     N0)
+                                                                                                                                                                                                                                                                                                                            N0)
+                                                                                                                                                                                                                                                                                                                   N0)
+                                                                                                                                                                                                                                                                                                          N0)
+                                                                                                                                                                                                                                                                                                 N0)
+                                                                                                                                                                                                                                                                                        N0)
+                                                                                                                                                                                                                                                                               N0)
+                                                                                                                                                                                                                                                                      N0)
+                                                                                                                                                                                                                                                             N0)
+                                                                                                                                                                                                                                                    N0)
+                                                                                                                                                                                                                                           N0)
+                                                                                                                                                                                                                                  N0)
+                                                                                                                                                                                                                         N0)
+                                                                                                                                                                                                                N0)
+                                                                                                                                                                                                       N0)
+                                                                                                                                                                                              N0)
+                                                                                                                                                                                     N0)
+                                                                                                                                                                            N0)
+                                                                                                                                                                   N0)
+                                                                                                                                                          N0)
+                                                                                                                                                 N0)
+                                                                                                                                        N0)
+                                                                                                                               N0)
+                                                                                                                      N0)
+                                                                                                             N0)
+                                                                                                    N0)
+                                                                                           N0)
+                                                                                  N0)
+                                                                         N0)
+                                                                N0)
+                                                       N0)
+                                              N0)
+                                     N0)
+                            N0)
+                   N0))
+  Replaced concrete pointer with hash (w64 0xA3FB20F83CB71C49)
+  %111 = load %struct.arc**, %struct.arc*** %end_arc.addr, l147 c13
+  (w64 0xA3FB20F83CB71C49)
+Collected value for `stop_arcs`
+  Assignment asm ln 7503, prod ln 147.24, live ln 148, enc 1
+  Concrete pointer resolves to primal_bea_mpp.stop_arcs.deref, offset (w64 0x0)
+  Created deref expr (ReadLSB w64 (w32 0x0) primal_bea_mpp.stop_arcs.deref)
+  Replaced concrete pointer with hash (w64 0x2D7AA9072607630A)
+  %113 = load %struct.arc*, %struct.arc** %stop_arcs.addr, l147 c24
+  (w64 0x2D7AA9072607630A)
+Collected value for `arcs`
+  Assignment asm ln 7508, prod ln 148.23, live ln 149, enc 1
+  Concrete pointer resolves to primal_bea_mpp.arcs.deref, offset (w64 0x0)
+  Created deref expr (ReadLSB w64 (w32 0x0) primal_bea_mpp.arcs.deref)
+  Replaced concrete pointer with hash (w64 0xEE80AAECA0EC48E1)
+  %114 = load %struct.arc*, %struct.arc** %arcs.addr, l148 c23
+  (w64 0xEE80AAECA0EC48E1)
+[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0mKLEE: HaltTimer invoked
+[0mKLEE: halting execution, dumping remaining states
+[0m
+🔔 Unable to execute all before instructions
+
+🔔 Unable to execute all before program states
+
+#### After values
+
+Collected value for `m`
+  Assignment asm ln 5323, prod ln 80.0, live ln 100, enc 0
+  i64 %m
+  (ReadLSB w64 (w32 0x0) primal_bea_mpp.m)
+Collected value for `arcs`
+  Assignment asm ln 5324, prod ln 80.0, live ln 100, enc 0
+  Concrete pointer resolves to primal_bea_mpp.arcs.deref, offset (w64 0x0)
+  Created deref expr (ReadLSB w64 (w32 0x0) primal_bea_mpp.arcs.deref)
+  Replaced concrete pointer with hash (w64 0xEE80AAECA0EC48E1)
+  %struct.arc.0* %arcs
+  (w64 0xEE80AAECA0EC48E1)
+Collected value for `stop_arcs`
+  Assignment asm ln 5325, prod ln 80.0, live ln 100, enc 0
+  Concrete pointer resolves to primal_bea_mpp.stop_arcs.deref, offset (w64 0x0)
+  Created deref expr (ReadLSB w64 (w32 0x0) primal_bea_mpp.stop_arcs.deref)
+  Replaced concrete pointer with hash (w64 0x2D7AA9072607630A)
+  %struct.arc.0* %stop_arcs
+  (w64 0x2D7AA9072607630A)
+Collected value for `basket_sizes`
+  Assignment asm ln 5326, prod ln 81.0, live ln 100, enc 0
+  Concrete pointer resolves to primal_bea_mpp.basket_sizes.deref, offset (w64 0x0)
+  Created deref expr (ReadLSB w64 (w32 0x0) primal_bea_mpp.basket_sizes.deref)
+  Replaced concrete pointer with hash (w64 0xDB573077229DB7EE)
+  i64* %basket_sizes
+  (w64 0xDB573077229DB7EE)
+Collected value for `perm`
+  Assignment asm ln 5327, prod ln 81.0, live ln 100, enc 0
+  Concrete pointer resolves to primal_bea_mpp.perm.deref, offset (w64 0x0)
+  Created deref expr <concrete pointer>
+  Replaced concrete pointer with hash (w64 0x85018994A51789F0)
+  %struct.basket.6** %perm
+  (w64 0x85018994A51789F0)
+Collected value for `thread`
+  Assignment asm ln 5328, prod ln 81.0, live ln 100, enc 0
+  i32 %thread
+  (ReadLSB w32 (w32 0x0) primal_bea_mpp.thread)
+Collected value for `end_arc`
+  Assignment asm ln 5329, prod ln 81.0, live ln 100, enc 0
+  Concrete pointer resolves to primal_bea_mpp.end_arc.deref, offset (w64 0x0)
+  Created deref expr <concrete pointer>
+  Replaced concrete pointer with hash (w64 0xA3FB20F83CB71C49)
+  %struct.arc.0** %end_arc
+  (w64 0xA3FB20F83CB71C49)
+Collected value for `step`
+  Assignment asm ln 5330, prod ln 81.0, live ln 100, enc 0
+  i64 %step
+  (ReadLSB w64 (w32 0x0) primal_bea_mpp.step)
+Collected value for `num_threads`
+  Assignment asm ln 5331, prod ln 81.0, live ln 100, enc 0
+  i64 %num_threads
+  (ReadLSB w64 (w32 0x0) primal_bea_mpp.num_threads)
+Collected value for `max_elems`
+  Assignment asm ln 5332, prod ln 81.0, live ln 100, enc 0
+  i64 %max_elems
+  (ReadLSB w64 (w32 0x0) primal_bea_mpp.max_elems)
+Collected value for `i`
+  Assignment asm ln 5333, prod ln 96.0, live ln 100, enc 0
+  i64 1
+  (w64 0x1)
+Collected value for `next`
+  Assignment asm ln 5334, prod ln 96.0, live ln 100, enc 0
+  i64 0
+  (w64 0x0)
+Collected value for `next`
+  Assignment asm ln 5340, prod ln 96.0, live ln 100, enc 1
+  %next.0 = phi i64 [ 0, %entry ], [ %next.1, %for.inc ]
+  Block: 0
+  (w64 0x0)
+Collected value for `i`
+  Assignment asm ln 5341, prod ln 100.68, live ln 101, enc 1
+  %i.0 = phi i64 [ 1, %entry ], [ %inc27, %for.inc ]
+  Block: 0
+  (w64 0x1)
+[0;1;31mKLEE: ERROR: pbeampp.c:100: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0m[0;1;31mKLEE: ERROR: pbeampp.c:102: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0mCollected value for `old_end_arc`
+  Assignment asm ln 5437, prod ln 118.23, live ln 119, enc 0
+  %16 = load %struct.arc.0*, %struct.arc.0** %end_arc, l118 c23
+  (w64 0x0)
+Collected value for `arc`
+  Assignment asm ln 5444, prod ln 123.20, live ln 125, enc 0
+  %add.ptr = getelementptr inbounds %struct.arc.0, %struct.arc.0* %17, i64 %step, l123 c20
+  (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 N0:(Mul w64 (w64 0x48)
+                                                                                                                                                                                                                                                                                                                                        (ReadLSB w64 (w32 0x0) primal_bea_mpp.step))
+                                                                                                                                                                                                                                                                                                                            N0)
+                                                                                                                                                                                                                                                                                                                   N0)
+                                                                                                                                                                                                                                                                                                          N0)
+                                                                                                                                                                                                                                                                                                 N0)
+                                                                                                                                                                                                                                                                                        N0)
+                                                                                                                                                                                                                                                                               N0)
+                                                                                                                                                                                                                                                                      N0)
+                                                                                                                                                                                                                                                             N0)
+                                                                                                                                                                                                                                                    N0)
+                                                                                                                                                                                                                                           N0)
+                                                                                                                                                                                                                                  N0)
+                                                                                                                                                                                                                         N0)
+                                                                                                                                                                                                                N0)
+                                                                                                                                                                                                       N0)
+                                                                                                                                                                                              N0)
+                                                                                                                                                                                     N0)
+                                                                                                                                                                            N0)
+                                                                                                                                                                   N0)
+                                                                                                                                                          N0)
+                                                                                                                                                 N0)
+                                                                                                                                        N0)
+                                                                                                                               N0)
+                                                                                                                      N0)
+                                                                                                             N0)
+                                                                                                    N0)
+                                                                                           N0)
+                                                                                  N0)
+                                                                         N0)
+                                                                N0)
+                                                       N0)
+                                              N0)
+                                     N0)
+                            N0)
+                   N0)
+          N0)
+Collected value for `arc`
+  Assignment asm ln 5468, prod ln 131.36, live ln 132, enc 1
+  %arc.0 = phi %struct.arc.0* [ %add.ptr, %if.end36 ], [ %add.ptr83, %for.inc82 ]
+  Block: 0
+  (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 N0:(Mul w64 (w64 0x48)
+                                                                                                                                                                                                                                                                                                                                        (ReadLSB w64 (w32 0x0) primal_bea_mpp.step))
+                                                                                                                                                                                                                                                                                                                            N0)
+                                                                                                                                                                                                                                                                                                                   N0)
+                                                                                                                                                                                                                                                                                                          N0)
+                                                                                                                                                                                                                                                                                                 N0)
+                                                                                                                                                                                                                                                                                        N0)
+                                                                                                                                                                                                                                                                               N0)
+                                                                                                                                                                                                                                                                      N0)
+                                                                                                                                                                                                                                                             N0)
+                                                                                                                                                                                                                                                    N0)
+                                                                                                                                                                                                                                           N0)
+                                                                                                                                                                                                                                  N0)
+                                                                                                                                                                                                                         N0)
+                                                                                                                                                                                                                N0)
+                                                                                                                                                                                                       N0)
+                                                                                                                                                                                              N0)
+                                                                                                                                                                                     N0)
+                                                                                                                                                                            N0)
+                                                                                                                                                                   N0)
+                                                                                                                                                          N0)
+                                                                                                                                                 N0)
+                                                                                                                                        N0)
+                                                                                                                               N0)
+                                                                                                                      N0)
+                                                                                                             N0)
+                                                                                                    N0)
+                                                                                           N0)
+                                                                                  N0)
+                                                                         N0)
+                                                                N0)
+                                                       N0)
+                                              N0)
+                                     N0)
+                            N0)
+                   N0)
+          N0)
+[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0mKLEE: HaltTimer invoked
+[0mKLEE: halting execution, dumping remaining states
+[0m
+🔔 Unable to execute all after instructions
+
+🔔 Unable to execute all after program states
+
+### Assignments
+
+#### Variables with single memory location
+
+#### Collation
+
+Filtering before assignments: `arc` (decl src ln 97)
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `arc` (decl src ln 97) from
+  assn asm ln 7495, prod ln 131.36, live ln 132, enc None
+  %110 = load %struct.arc*, %struct.arc** %arc, l131 c36
+and
+  assn asm ln 7497, prod ln 131.36, live ln 132, enc None
+  %add.ptr83 = getelementptr inbounds %struct.arc, %struct.arc* %110, i64 %109, l131 c36
+🔔 Removing: asm ln 7495, prod ln 131.36, live ln 132, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `arc` (decl src ln 97) from
+  assn asm ln 7443, prod ln 139.43, live ln 140, enc None
+  %84 = load %struct.arc*, %struct.arc** %arc, l139 c43
+and
+  assn asm ln 7497, prod ln 131.36, live ln 132, enc None
+  %add.ptr83 = getelementptr inbounds %struct.arc, %struct.arc* %110, i64 %109, l131 c36
+🔔 Removing: asm ln 7443, prod ln 139.43, live ln 140, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `arc` (decl src ln 97) from
+  assn asm ln 7429, prod ln 136.37, live ln 137, enc None
+  %79 = load %struct.arc*, %struct.arc** %arc, l136 c37
+and
+  assn asm ln 7497, prod ln 131.36, live ln 132, enc None
+  %add.ptr83 = getelementptr inbounds %struct.arc, %struct.arc* %110, i64 %109, l131 c36
+🔔 Removing: asm ln 7429, prod ln 136.37, live ln 137, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `arc` (decl src ln 97) from
+  assn asm ln 7422, prod ln 135.55, live ln 136, enc None
+  %76 = load %struct.arc*, %struct.arc** %arc, l135 c55
+and
+  assn asm ln 7497, prod ln 131.36, live ln 132, enc None
+  %add.ptr83 = getelementptr inbounds %struct.arc, %struct.arc* %110, i64 %109, l131 c36
+🔔 Removing: asm ln 7422, prod ln 135.55, live ln 136, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `arc` (decl src ln 97) from
+  assn asm ln 7416, prod ln 135.32, live ln 136, enc None
+  %73 = load %struct.arc*, %struct.arc** %arc, l135 c32
+and
+  assn asm ln 7497, prod ln 131.36, live ln 132, enc None
+  %add.ptr83 = getelementptr inbounds %struct.arc, %struct.arc* %110, i64 %109, l131 c36
+🔔 Removing: asm ln 7416, prod ln 135.32, live ln 136, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `arc` (decl src ln 97) from
+  assn asm ln 7413, prod ln 135.20, live ln 136, enc None
+  %71 = load %struct.arc*, %struct.arc** %arc, l135 c20
+and
+  assn asm ln 7497, prod ln 131.36, live ln 132, enc None
+  %add.ptr83 = getelementptr inbounds %struct.arc, %struct.arc* %110, i64 %109, l131 c36
+🔔 Removing: asm ln 7413, prod ln 135.20, live ln 136, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `arc` (decl src ln 97) from
+  assn asm ln 7260, prod ln 104.23, live ln 105, enc None
+  %13 = load %struct.arc*, %struct.arc** %arc, l104 c23
+and
+  assn asm ln 7497, prod ln 131.36, live ln 132, enc None
+  %add.ptr83 = getelementptr inbounds %struct.arc, %struct.arc* %110, i64 %109, l131 c36
+🔔 Removing: asm ln 7260, prod ln 104.23, live ln 105, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `arc` (decl src ln 97) from
+  assn asm ln 7252, prod ln 102.27, live ln 103, enc None
+  %8 = load %struct.arc*, %struct.arc** %a, l102 c27
+and
+  assn asm ln 7497, prod ln 131.36, live ln 132, enc None
+  %add.ptr83 = getelementptr inbounds %struct.arc, %struct.arc* %110, i64 %109, l131 c36
+🔔 Removing: asm ln 7252, prod ln 102.27, live ln 103, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `arc` (decl src ln 97) from
+  assn asm ln 7263, prod ln 104.35, live ln 105, enc None
+  %15 = load %struct.arc*, %struct.arc** %arc, l104 c35
+and
+  assn asm ln 7497, prod ln 131.36, live ln 132, enc None
+  %add.ptr83 = getelementptr inbounds %struct.arc, %struct.arc* %110, i64 %109, l131 c36
+🔔 Removing: asm ln 7263, prod ln 104.35, live ln 105, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `arc` (decl src ln 97) from
+  assn asm ln 7310, prod ln 109.32, live ln 110, enc None
+  %29 = load %struct.arc*, %struct.arc** %arc, l109 c32
+and
+  assn asm ln 7497, prod ln 131.36, live ln 132, enc None
+  %add.ptr83 = getelementptr inbounds %struct.arc, %struct.arc* %110, i64 %109, l131 c36
+🔔 Removing: asm ln 7310, prod ln 109.32, live ln 110, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `arc` (decl src ln 97) from
+  assn asm ln 7299, prod ln 106.36, live ln 107, enc None
+  %26 = load %struct.arc*, %struct.arc** %arc, l106 c36
+and
+  assn asm ln 7497, prod ln 131.36, live ln 132, enc None
+  %add.ptr83 = getelementptr inbounds %struct.arc, %struct.arc* %110, i64 %109, l131 c36
+🔔 Removing: asm ln 7299, prod ln 106.36, live ln 107, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `arc` (decl src ln 97) from
+  assn asm ln 7286, prod ln 105.47, live ln 106, enc None
+  %23 = load %struct.arc*, %struct.arc** %arc, l105 c47
+and
+  assn asm ln 7497, prod ln 131.36, live ln 132, enc None
+  %add.ptr83 = getelementptr inbounds %struct.arc, %struct.arc* %110, i64 %109, l131 c36
+🔔 Removing: asm ln 7286, prod ln 105.47, live ln 106, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `arc` (decl src ln 97) from
+  assn asm ln 7269, prod ln 104.58, live ln 105, enc None
+  %18 = load %struct.arc*, %struct.arc** %arc, l104 c58
+and
+  assn asm ln 7497, prod ln 131.36, live ln 132, enc None
+  %add.ptr83 = getelementptr inbounds %struct.arc, %struct.arc* %110, i64 %109, l131 c36
+🔔 Removing: asm ln 7269, prod ln 104.58, live ln 105, enc None
+
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `arc` (decl src ln 97) from
+  assn asm ln 7368, prod ln 123.20, live ln 125, enc 0
+  %add.ptr = getelementptr inbounds %struct.arc, %struct.arc* %53, i64 %54, l123 c20
+and
+  assn asm ln 7497, prod ln 131.36, live ln 132, enc None
+  %add.ptr83 = getelementptr inbounds %struct.arc, %struct.arc* %110, i64 %109, l131 c36
+
+Checking equivalence of `arc` (decl src ln 97) from
+  assn asm ln 7398, prod ln 131.16, live ln 132, enc 1
+  %66 = load %struct.arc*, %struct.arc** %arc, l131 c16
+  (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 N0:(Mul w64 (w64 0x48)
+                                                                                                                                                                                                                                                                                                                                        (ReadLSB w64 (w32 0x0) primal_bea_mpp.step))
+                                                                                                                                                                                                                                                                                                                            N0)
+                                                                                                                                                                                                                                                                                                                   N0)
+                                                                                                                                                                                                                                                                                                          N0)
+                                                                                                                                                                                                                                                                                                 N0)
+                                                                                                                                                                                                                                                                                        N0)
+                                                                                                                                                                                                                                                                               N0)
+                                                                                                                                                                                                                                                                      N0)
+                                                                                                                                                                                                                                                             N0)
+                                                                                                                                                                                                                                                    N0)
+                                                                                                                                                                                                                                           N0)
+                                                                                                                                                                                                                                  N0)
+                                                                                                                                                                                                                         N0)
+                                                                                                                                                                                                                N0)
+                                                                                                                                                                                                       N0)
+                                                                                                                                                                                              N0)
+                                                                                                                                                                                     N0)
+                                                                                                                                                                            N0)
+                                                                                                                                                                   N0)
+                                                                                                                                                          N0)
+                                                                                                                                                 N0)
+                                                                                                                                        N0)
+                                                                                                                               N0)
+                                                                                                                      N0)
+                                                                                                             N0)
+                                                                                                    N0)
+                                                                                           N0)
+                                                                                  N0)
+                                                                         N0)
+                                                                N0)
+                                                       N0)
+                                              N0)
+                                     N0)
+                            N0)
+                   N0)
+          N0)
+and
+  assn asm ln 7368, prod ln 123.20, live ln 125, enc 0
+  %add.ptr = getelementptr inbounds %struct.arc, %struct.arc* %53, i64 %54, l123 c20
+  (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 N0:(Mul w64 (w64 0x48)
+                                                                                                                                                                                                                                                                                                                                        (ReadLSB w64 (w32 0x0) primal_bea_mpp.step))
+                                                                                                                                                                                                                                                                                                                            N0)
+                                                                                                                                                                                                                                                                                                                   N0)
+                                                                                                                                                                                                                                                                                                          N0)
+                                                                                                                                                                                                                                                                                                 N0)
+                                                                                                                                                                                                                                                                                        N0)
+                                                                                                                                                                                                                                                                               N0)
+                                                                                                                                                                                                                                                                      N0)
+                                                                                                                                                                                                                                                             N0)
+                                                                                                                                                                                                                                                    N0)
+                                                                                                                                                                                                                                           N0)
+                                                                                                                                                                                                                                  N0)
+                                                                                                                                                                                                                         N0)
+                                                                                                                                                                                                                N0)
+                                                                                                                                                                                                       N0)
+                                                                                                                                                                                              N0)
+                                                                                                                                                                                     N0)
+                                                                                                                                                                            N0)
+                                                                                                                                                                   N0)
+                                                                                                                                                          N0)
+                                                                                                                                                 N0)
+                                                                                                                                        N0)
+                                                                                                                               N0)
+                                                                                                                      N0)
+                                                                                                             N0)
+                                                                                                    N0)
+                                                                                           N0)
+                                                                                  N0)
+                                                                         N0)
+                                                                N0)
+                                                       N0)
+                                              N0)
+                                     N0)
+                            N0)
+                   N0)
+          N0)
+Query to parse
+array primal_bea_mpp.step[8] : w32 -> w8 = symbolic
+array primal_bea_mpp.step[8] : w32 -> w8 = symbolic
+(query [] (Eq N0:(Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 N1:(Mul w64 (w64 0x48)
+                                                                                                                                                                                                                                                                                                                                               (ReadLSB w64 (w32 0x0) primal_bea_mpp.step))
+                                                                                                                                                                                                                                                                                                                                   N1)
+                                                                                                                                                                                                                                                                                                                          N1)
+                                                                                                                                                                                                                                                                                                                 N1)
+                                                                                                                                                                                                                                                                                                        N1)
+                                                                                                                                                                                                                                                                                               N1)
+                                                                                                                                                                                                                                                                                      N1)
+                                                                                                                                                                                                                                                                             N1)
+                                                                                                                                                                                                                                                                    N1)
+                                                                                                                                                                                                                                                           N1)
+                                                                                                                                                                                                                                                  N1)
+                                                                                                                                                                                                                                         N1)
+                                                                                                                                                                                                                                N1)
+                                                                                                                                                                                                                       N1)
+                                                                                                                                                                                                              N1)
+                                                                                                                                                                                                     N1)
+                                                                                                                                                                                            N1)
+                                                                                                                                                                                   N1)
+                                                                                                                                                                          N1)
+                                                                                                                                                                 N1)
+                                                                                                                                                        N1)
+                                                                                                                                               N1)
+                                                                                                                                      N1)
+                                                                                                                             N1)
+                                                                                                                    N1)
+                                                                                                           N1)
+                                                                                                  N1)
+                                                                                         N1)
+                                                                                N1)
+                                                                       N1)
+                                                              N1)
+                                                     N1)
+                                            N1)
+                                   N1)
+                          N1)
+                 N1)
+     N0))
+Parsed query
+(Eq N0:(Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 N1:(Mul w64 (w64 0x48)
+                                                                                                                                                                                                                                                                                                                                               (ReadLSB w64 (w32 0x0) primal_bea_mpp.step))
+                                                                                                                                                                                                                                                                                                                                   N1)
+                                                                                                                                                                                                                                                                                                                          N1)
+                                                                                                                                                                                                                                                                                                                 N1)
+                                                                                                                                                                                                                                                                                                        N1)
+                                                                                                                                                                                                                                                                                               N1)
+                                                                                                                                                                                                                                                                                      N1)
+                                                                                                                                                                                                                                                                             N1)
+                                                                                                                                                                                                                                                                    N1)
+                                                                                                                                                                                                                                                           N1)
+                                                                                                                                                                                                                                                  N1)
+                                                                                                                                                                                                                                         N1)
+                                                                                                                                                                                                                                N1)
+                                                                                                                                                                                                                       N1)
+                                                                                                                                                                                                              N1)
+                                                                                                                                                                                                     N1)
+                                                                                                                                                                                            N1)
+                                                                                                                                                                                   N1)
+                                                                                                                                                                          N1)
+                                                                                                                                                                 N1)
+                                                                                                                                                        N1)
+                                                                                                                                               N1)
+                                                                                                                                      N1)
+                                                                                                                             N1)
+                                                                                                                    N1)
+                                                                                                           N1)
+                                                                                                  N1)
+                                                                                         N1)
+                                                                                N1)
+                                                                       N1)
+                                                              N1)
+                                                     N1)
+                                            N1)
+                                   N1)
+                          N1)
+                 N1)
+     N0)
+🔔 Removing: asm ln 7398, prod ln 131.16, live ln 132, enc 1
+
+Checking equivalence of `arc` (decl src ln 97) from
+  assn asm ln 7405, prod ln 132.11, live ln 133, enc 2
+  %69 = load %struct.arc*, %struct.arc** %arc, l132 c11
+  (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 N0:(Mul w64 (w64 0x48)
+                                                                                                                                                                                                                                                                                                                                        (ReadLSB w64 (w32 0x0) primal_bea_mpp.step))
+                                                                                                                                                                                                                                                                                                                            N0)
+                                                                                                                                                                                                                                                                                                                   N0)
+                                                                                                                                                                                                                                                                                                          N0)
+                                                                                                                                                                                                                                                                                                 N0)
+                                                                                                                                                                                                                                                                                        N0)
+                                                                                                                                                                                                                                                                               N0)
+                                                                                                                                                                                                                                                                      N0)
+                                                                                                                                                                                                                                                             N0)
+                                                                                                                                                                                                                                                    N0)
+                                                                                                                                                                                                                                           N0)
+                                                                                                                                                                                                                                  N0)
+                                                                                                                                                                                                                         N0)
+                                                                                                                                                                                                                N0)
+                                                                                                                                                                                                       N0)
+                                                                                                                                                                                              N0)
+                                                                                                                                                                                     N0)
+                                                                                                                                                                            N0)
+                                                                                                                                                                   N0)
+                                                                                                                                                          N0)
+                                                                                                                                                 N0)
+                                                                                                                                        N0)
+                                                                                                                               N0)
+                                                                                                                      N0)
+                                                                                                             N0)
+                                                                                                    N0)
+                                                                                           N0)
+                                                                                  N0)
+                                                                         N0)
+                                                                N0)
+                                                       N0)
+                                              N0)
+                                     N0)
+                            N0)
+                   N0)
+          N0)
+and
+  assn asm ln 7368, prod ln 123.20, live ln 125, enc 0
+  %add.ptr = getelementptr inbounds %struct.arc, %struct.arc* %53, i64 %54, l123 c20
+  (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 N0:(Mul w64 (w64 0x48)
+                                                                                                                                                                                                                                                                                                                                        (ReadLSB w64 (w32 0x0) primal_bea_mpp.step))
+                                                                                                                                                                                                                                                                                                                            N0)
+                                                                                                                                                                                                                                                                                                                   N0)
+                                                                                                                                                                                                                                                                                                          N0)
+                                                                                                                                                                                                                                                                                                 N0)
+                                                                                                                                                                                                                                                                                        N0)
+                                                                                                                                                                                                                                                                               N0)
+                                                                                                                                                                                                                                                                      N0)
+                                                                                                                                                                                                                                                             N0)
+                                                                                                                                                                                                                                                    N0)
+                                                                                                                                                                                                                                           N0)
+                                                                                                                                                                                                                                  N0)
+                                                                                                                                                                                                                         N0)
+                                                                                                                                                                                                                N0)
+                                                                                                                                                                                                       N0)
+                                                                                                                                                                                              N0)
+                                                                                                                                                                                     N0)
+                                                                                                                                                                            N0)
+                                                                                                                                                                   N0)
+                                                                                                                                                          N0)
+                                                                                                                                                 N0)
+                                                                                                                                        N0)
+                                                                                                                               N0)
+                                                                                                                      N0)
+                                                                                                             N0)
+                                                                                                    N0)
+                                                                                           N0)
+                                                                                  N0)
+                                                                         N0)
+                                                                N0)
+                                                       N0)
+                                              N0)
+                                     N0)
+                            N0)
+                   N0)
+          N0)
+Query to parse
+array primal_bea_mpp.step[8] : w32 -> w8 = symbolic
+array primal_bea_mpp.step[8] : w32 -> w8 = symbolic
+(query [] (Eq N0:(Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 N1:(Mul w64 (w64 0x48)
+                                                                                                                                                                                                                                                                                                                                               (ReadLSB w64 (w32 0x0) primal_bea_mpp.step))
+                                                                                                                                                                                                                                                                                                                                   N1)
+                                                                                                                                                                                                                                                                                                                          N1)
+                                                                                                                                                                                                                                                                                                                 N1)
+                                                                                                                                                                                                                                                                                                        N1)
+                                                                                                                                                                                                                                                                                               N1)
+                                                                                                                                                                                                                                                                                      N1)
+                                                                                                                                                                                                                                                                             N1)
+                                                                                                                                                                                                                                                                    N1)
+                                                                                                                                                                                                                                                           N1)
+                                                                                                                                                                                                                                                  N1)
+                                                                                                                                                                                                                                         N1)
+                                                                                                                                                                                                                                N1)
+                                                                                                                                                                                                                       N1)
+                                                                                                                                                                                                              N1)
+                                                                                                                                                                                                     N1)
+                                                                                                                                                                                            N1)
+                                                                                                                                                                                   N1)
+                                                                                                                                                                          N1)
+                                                                                                                                                                 N1)
+                                                                                                                                                        N1)
+                                                                                                                                               N1)
+                                                                                                                                      N1)
+                                                                                                                             N1)
+                                                                                                                    N1)
+                                                                                                           N1)
+                                                                                                  N1)
+                                                                                         N1)
+                                                                                N1)
+                                                                       N1)
+                                                              N1)
+                                                     N1)
+                                            N1)
+                                   N1)
+                          N1)
+                 N1)
+     N0))
+Parsed query
+(Eq N0:(Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 N1:(Mul w64 (w64 0x48)
+                                                                                                                                                                                                                                                                                                                                               (ReadLSB w64 (w32 0x0) primal_bea_mpp.step))
+                                                                                                                                                                                                                                                                                                                                   N1)
+                                                                                                                                                                                                                                                                                                                          N1)
+                                                                                                                                                                                                                                                                                                                 N1)
+                                                                                                                                                                                                                                                                                                        N1)
+                                                                                                                                                                                                                                                                                               N1)
+                                                                                                                                                                                                                                                                                      N1)
+                                                                                                                                                                                                                                                                             N1)
+                                                                                                                                                                                                                                                                    N1)
+                                                                                                                                                                                                                                                           N1)
+                                                                                                                                                                                                                                                  N1)
+                                                                                                                                                                                                                                         N1)
+                                                                                                                                                                                                                                N1)
+                                                                                                                                                                                                                       N1)
+                                                                                                                                                                                                              N1)
+                                                                                                                                                                                                     N1)
+                                                                                                                                                                                            N1)
+                                                                                                                                                                                   N1)
+                                                                                                                                                                          N1)
+                                                                                                                                                                 N1)
+                                                                                                                                                        N1)
+                                                                                                                                               N1)
+                                                                                                                                      N1)
+                                                                                                                             N1)
+                                                                                                                    N1)
+                                                                                                           N1)
+                                                                                                  N1)
+                                                                                         N1)
+                                                                                N1)
+                                                                       N1)
+                                                              N1)
+                                                     N1)
+                                            N1)
+                                   N1)
+                          N1)
+                 N1)
+     N0)
+🔔 Removing: asm ln 7405, prod ln 132.11, live ln 133, enc 2
+
+Filtering before assignments: `arcs` (decl src ln 80)
+
+Checking equivalence of `arcs` (decl src ln 80) from
+  assn asm ln 7508, prod ln 148.23, live ln 149, enc 1
+  %114 = load %struct.arc*, %struct.arc** %arcs.addr, l148 c23
+  (w64 0xEE80AAECA0EC48E1)
+and
+  assn asm ln 7200, prod ln 80.0, live ln 100, enc 0
+  %struct.arc* %arcs
+  (w64 0xEE80AAECA0EC48E1)
+🔔 Removing: asm ln 7508, prod ln 148.23, live ln 149, enc 1
+
+Filtering before assignments: `basket_sizes` (decl src ln 81)
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `basket_sizes` (decl src ln 81) from
+  assn asm ln 7562, prod ln 174.9, live ln 175, enc None
+  %132 = load i64*, i64** %basket_sizes.addr, l174 c9
+and
+  assn asm ln 7578, prod ln 179.26, live ln 180, enc None
+  %137 = load i64*, i64** %basket_sizes.addr, l179 c26
+🔔 Removing: asm ln 7562, prod ln 174.9, live ln 175, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `basket_sizes` (decl src ln 81) from
+  assn asm ln 7552, prod ln 172.9, live ln 173, enc None
+  %128 = load i64*, i64** %basket_sizes.addr, l172 c9
+and
+  assn asm ln 7578, prod ln 179.26, live ln 180, enc None
+  %137 = load i64*, i64** %basket_sizes.addr, l179 c26
+🔔 Removing: asm ln 7552, prod ln 172.9, live ln 173, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `basket_sizes` (decl src ln 81) from
+  assn asm ln 7532, prod ln 159.29, live ln 160, enc None
+  %121 = load i64*, i64** %basket_sizes.addr, l159 c29
+and
+  assn asm ln 7578, prod ln 179.26, live ln 180, enc None
+  %137 = load i64*, i64** %basket_sizes.addr, l179 c26
+🔔 Removing: asm ln 7532, prod ln 159.29, live ln 160, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `basket_sizes` (decl src ln 81) from
+  assn asm ln 7482, prod ln 142.16, live ln 143, enc None
+  %105 = load i64*, i64** %basket_sizes.addr, l142 c16
+and
+  assn asm ln 7578, prod ln 179.26, live ln 180, enc None
+  %137 = load i64*, i64** %basket_sizes.addr, l179 c26
+🔔 Removing: asm ln 7482, prod ln 142.16, live ln 143, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `basket_sizes` (decl src ln 81) from
+  assn asm ln 7472, prod ln 141.16, live ln 142, enc None
+  %100 = load i64*, i64** %basket_sizes.addr, l141 c16
+and
+  assn asm ln 7578, prod ln 179.26, live ln 180, enc None
+  %137 = load i64*, i64** %basket_sizes.addr, l179 c26
+🔔 Removing: asm ln 7472, prod ln 141.16, live ln 142, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `basket_sizes` (decl src ln 81) from
+  assn asm ln 7456, prod ln 140.16, live ln 141, enc None
+  %92 = load i64*, i64** %basket_sizes.addr, l140 c16
+and
+  assn asm ln 7578, prod ln 179.26, live ln 180, enc None
+  %137 = load i64*, i64** %basket_sizes.addr, l179 c26
+🔔 Removing: asm ln 7456, prod ln 140.16, live ln 141, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `basket_sizes` (decl src ln 81) from
+  assn asm ln 7445, prod ln 139.16, live ln 140, enc None
+  %86 = load i64*, i64** %basket_sizes.addr, l139 c16
+and
+  assn asm ln 7578, prod ln 179.26, live ln 180, enc None
+  %137 = load i64*, i64** %basket_sizes.addr, l179 c26
+🔔 Removing: asm ln 7445, prod ln 139.16, live ln 140, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `basket_sizes` (decl src ln 81) from
+  assn asm ln 7436, prod ln 138.11, live ln 139, enc None
+  %81 = load i64*, i64** %basket_sizes.addr, l138 c11
+and
+  assn asm ln 7578, prod ln 179.26, live ln 180, enc None
+  %137 = load i64*, i64** %basket_sizes.addr, l179 c26
+🔔 Removing: asm ln 7436, prod ln 138.11, live ln 139, enc None
+
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `basket_sizes` (decl src ln 81) from
+  assn asm ln 7204, prod ln 81.0, live ln 100, enc 0
+  i64* %basket_sizes
+and
+  assn asm ln 7578, prod ln 179.26, live ln 180, enc None
+  %137 = load i64*, i64** %basket_sizes.addr, l179 c26
+
+Checking equivalence of `basket_sizes` (decl src ln 81) from
+  assn asm ln 7237, prod ln 100.45, live ln 101, enc 1
+  %2 = load i64*, i64** %basket_sizes.addr, l100 c45
+  (w64 0xDB573077229DB7EE)
+and
+  assn asm ln 7204, prod ln 81.0, live ln 100, enc 0
+  i64* %basket_sizes
+  (w64 0xDB573077229DB7EE)
+🔔 Removing: asm ln 7237, prod ln 100.45, live ln 101, enc 1
+
+Checking equivalence of `basket_sizes` (decl src ln 81) from
+  assn asm ln 7352, prod ln 116.9, live ln 117, enc 2
+  %48 = load i64*, i64** %basket_sizes.addr, l116 c9
+  (w64 0xDB573077229DB7EE)
+and
+  assn asm ln 7204, prod ln 81.0, live ln 100, enc 0
+  i64* %basket_sizes
+  (w64 0xDB573077229DB7EE)
+🔔 Removing: asm ln 7352, prod ln 116.9, live ln 117, enc 2
+
+Filtering before assignments: `count` (decl src ln 96)
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `count` (decl src ln 96) from
+  assn asm ln 7259, prod ln 103.29, live ln 104, enc None
+  %12 = load i64, i64* %number, l103 c29
+and
+  assn asm ln 7276, prod ln 105.16, live ln 106, enc None
+  %21 = load i64, i64* %count, l105 c16
+🔔 Removing: asm ln 7259, prod ln 103.29, live ln 104, enc None
+
+Filtering before assignments: `end_arc` (decl src ln 81)
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `end_arc` (decl src ln 81) from
+  assn asm ln 7509, prod ln 148.13, live ln 149, enc None
+  %115 = load %struct.arc**, %struct.arc*** %end_arc.addr, l148 c13
+and
+  assn asm ln 7514, prod ln 152.10, live ln 153, enc None
+  %116 = load %struct.arc**, %struct.arc*** %end_arc.addr, l152 c10
+🔔 Removing: asm ln 7509, prod ln 148.13, live ln 149, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `end_arc` (decl src ln 81) from
+  assn asm ln 7386, prod ln 128.19, live ln 129, enc None
+  %62 = load %struct.arc**, %struct.arc*** %end_arc.addr, l128 c19
+and
+  assn asm ln 7514, prod ln 152.10, live ln 153, enc None
+  %116 = load %struct.arc**, %struct.arc*** %end_arc.addr, l152 c10
+🔔 Removing: asm ln 7386, prod ln 128.19, live ln 129, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `end_arc` (decl src ln 81) from
+  assn asm ln 7390, prod ln 128.8, live ln 129, enc None
+  %65 = load %struct.arc**, %struct.arc*** %end_arc.addr, l128 c8
+and
+  assn asm ln 7514, prod ln 152.10, live ln 153, enc None
+  %116 = load %struct.arc**, %struct.arc*** %end_arc.addr, l152 c10
+🔔 Removing: asm ln 7390, prod ln 128.8, live ln 129, enc None
+
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `end_arc` (decl src ln 81) from
+  assn asm ln 7210, prod ln 81.0, live ln 100, enc 0
+  %struct.arc** %end_arc
+and
+  assn asm ln 7514, prod ln 152.10, live ln 153, enc None
+  %116 = load %struct.arc**, %struct.arc*** %end_arc.addr, l152 c10
+
+Checking equivalence of `end_arc` (decl src ln 81) from
+  assn asm ln 7357, prod ln 118.24, live ln 119, enc 1
+  %50 = load %struct.arc**, %struct.arc*** %end_arc.addr, l118 c24
+  (w64 0xA3FB20F83CB71C49)
+and
+  assn asm ln 7210, prod ln 81.0, live ln 100, enc 0
+  %struct.arc** %end_arc
+  (w64 0xA3FB20F83CB71C49)
+🔔 Removing: asm ln 7357, prod ln 118.24, live ln 119, enc 1
+
+Checking equivalence of `end_arc` (decl src ln 81) from
+  assn asm ln 7364, prod ln 123.12, live ln 124, enc 2
+  %52 = load %struct.arc**, %struct.arc*** %end_arc.addr, l123 c12
+  (w64 0xA3FB20F83CB71C49)
+and
+  assn asm ln 7210, prod ln 81.0, live ln 100, enc 0
+  %struct.arc** %end_arc
+  (w64 0xA3FB20F83CB71C49)
+🔔 Removing: asm ln 7364, prod ln 123.12, live ln 124, enc 2
+
+Checking equivalence of `end_arc` (decl src ln 81) from
+  assn asm ln 7369, prod ln 125.10, live ln 126, enc 3
+  %55 = load %struct.arc**, %struct.arc*** %end_arc.addr, l125 c10
+  (w64 0xA3FB20F83CB71C49)
+and
+  assn asm ln 7210, prod ln 81.0, live ln 100, enc 0
+  %struct.arc** %end_arc
+  (w64 0xA3FB20F83CB71C49)
+🔔 Removing: asm ln 7369, prod ln 125.10, live ln 126, enc 3
+
+Checking equivalence of `end_arc` (decl src ln 81) from
+  assn asm ln 7376, prod ln 126.19, live ln 127, enc 4
+  %58 = load %struct.arc**, %struct.arc*** %end_arc.addr, l126 c19
+  (w64 0xA3FB20F83CB71C49)
+and
+  assn asm ln 7210, prod ln 81.0, live ln 100, enc 0
+  %struct.arc** %end_arc
+  (w64 0xA3FB20F83CB71C49)
+🔔 Removing: asm ln 7376, prod ln 126.19, live ln 127, enc 4
+
+Checking equivalence of `end_arc` (decl src ln 81) from
+  assn asm ln 7381, prod ln 126.8, live ln 127, enc 5
+  %61 = load %struct.arc**, %struct.arc*** %end_arc.addr, l126 c8
+  (w64 0xA3FB20F83CB71C49)
+and
+  assn asm ln 7210, prod ln 81.0, live ln 100, enc 0
+  %struct.arc** %end_arc
+  (w64 0xA3FB20F83CB71C49)
+🔔 Removing: asm ln 7381, prod ln 126.8, live ln 127, enc 5
+
+Checking equivalence of `end_arc` (decl src ln 81) from
+  assn asm ln 7399, prod ln 131.23, live ln 132, enc 6
+  %67 = load %struct.arc**, %struct.arc*** %end_arc.addr, l131 c23
+  (w64 0xA3FB20F83CB71C49)
+and
+  assn asm ln 7210, prod ln 81.0, live ln 100, enc 0
+  %struct.arc** %end_arc
+  (w64 0xA3FB20F83CB71C49)
+🔔 Removing: asm ln 7399, prod ln 131.23, live ln 132, enc 6
+
+Checking equivalence of `end_arc` (decl src ln 81) from
+  assn asm ln 7501, prod ln 147.13, live ln 148, enc 7
+  %111 = load %struct.arc**, %struct.arc*** %end_arc.addr, l147 c13
+  (w64 0xA3FB20F83CB71C49)
+and
+  assn asm ln 7210, prod ln 81.0, live ln 100, enc 0
+  %struct.arc** %end_arc
+  (w64 0xA3FB20F83CB71C49)
+🔔 Removing: asm ln 7501, prod ln 147.13, live ln 148, enc 7
+
+Filtering before assignments: `global_basket_size` (decl src ln 96)
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `global_basket_size` (decl src ln 96) from
+  assn asm ln 7538, prod ln 159.27, live ln 160, enc None
+  %add97 = add nsw i64 %124, %123, l159 c27
+and
+  assn asm ln 7545, prod ln 161.12, live ln 162, enc None
+  %126 = load i64, i64* %global_basket_size, l161 c12
+🔔 Removing: asm ln 7538, prod ln 159.27, live ln 160, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `global_basket_size` (decl src ln 96) from
+  assn asm ln 7536, prod ln 159.27, live ln 160, enc None
+  %124 = load i64, i64* %global_basket_size, l159 c27
+and
+  assn asm ln 7545, prod ln 161.12, live ln 162, enc None
+  %126 = load i64, i64* %global_basket_size, l161 c12
+🔔 Removing: asm ln 7536, prod ln 159.27, live ln 160, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `global_basket_size` (decl src ln 96) from
+  assn asm ln 7521, prod ln 157.26, live ln 158, enc None
+  i64 0
+and
+  assn asm ln 7545, prod ln 161.12, live ln 162, enc None
+  %126 = load i64, i64* %global_basket_size, l161 c12
+🔔 Removing: asm ln 7521, prod ln 157.26, live ln 158, enc None
+
+Filtering before assignments: `i` (decl src ln 96)
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `i` (decl src ln 96) from
+  assn asm ln 7345, prod ln 100.68, live ln 101, enc None
+  %46 = load i64, i64* %i, l100 c68
+and
+  assn asm ln 7347, prod ln 100.68, live ln 101, enc None
+  %inc27 = add nsw i64 %46, 1, l100 c68
+🔔 Removing: asm ln 7345, prod ln 100.68, live ln 101, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `i` (decl src ln 96) from
+  assn asm ln 7254, prod ln 103.25, live ln 104, enc None
+  %10 = load i64, i64* %i, l103 c25
+and
+  assn asm ln 7347, prod ln 100.68, live ln 101, enc None
+  %inc27 = add nsw i64 %46, 1, l100 c68
+🔔 Removing: asm ln 7254, prod ln 103.25, live ln 104, enc None
+
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `i` (decl src ln 96) from
+  assn asm ln 7226, prod ln 100.15, live ln 101, enc 0
+  i64 1
+and
+  assn asm ln 7347, prod ln 100.68, live ln 101, enc None
+  %inc27 = add nsw i64 %46, 1, l100 c68
+
+Checking equivalence of `i` (decl src ln 96) from
+  assn asm ln 7231, prod ln 100.30, live ln 101, enc 1
+  %0 = load i64, i64* %i, l100 c30
+  (w64 0x1)
+and
+  assn asm ln 7226, prod ln 100.15, live ln 101, enc 0
+  i64 1
+  (w64 0x1)
+🔔 Removing: asm ln 7231, prod ln 100.30, live ln 101, enc 1
+
+Checking equivalence of `i` (decl src ln 96) from
+  assn asm ln 7236, prod ln 100.40, live ln 101, enc 2
+  %1 = load i64, i64* %i, l100 c40
+  (w64 0x1)
+and
+  assn asm ln 7226, prod ln 100.15, live ln 101, enc 0
+  i64 1
+  (w64 0x1)
+🔔 Removing: asm ln 7236, prod ln 100.40, live ln 101, enc 2
+
+Checking equivalence of `i` (decl src ln 96) from
+  assn asm ln 7247, prod ln 102.23, live ln 103, enc 3
+  %6 = load i64, i64* %i, l102 c23
+  (w64 0x1)
+and
+  assn asm ln 7226, prod ln 100.15, live ln 101, enc 0
+  i64 1
+  (w64 0x1)
+🔔 Removing: asm ln 7247, prod ln 102.23, live ln 103, enc 3
+
+Filtering before assignments: `j` (decl src ln 96)
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `j` (decl src ln 96) from
+  assn asm ln 7539, prod ln 158.37, live ln 159, enc None
+  %125 = load i64, i64* %j, l158 c37
+and
+  assn asm ln 7541, prod ln 158.37, live ln 159, enc None
+  %inc99 = add nsw i64 %125, 1, l158 c37
+🔔 Removing: asm ln 7539, prod ln 158.37, live ln 159, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `j` (decl src ln 96) from
+  assn asm ln 7533, prod ln 159.42, live ln 160, enc None
+  %122 = load i64, i64* %j, l159 c42
+and
+  assn asm ln 7541, prod ln 158.37, live ln 159, enc None
+  %inc99 = add nsw i64 %125, 1, l158 c37
+🔔 Removing: asm ln 7533, prod ln 159.42, live ln 160, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `j` (decl src ln 96) from
+  assn asm ln 7526, prod ln 158.19, live ln 159, enc None
+  %119 = load i64, i64* %j, l158 c19
+and
+  assn asm ln 7541, prod ln 158.37, live ln 159, enc None
+  %inc99 = add nsw i64 %125, 1, l158 c37
+🔔 Removing: asm ln 7526, prod ln 158.19, live ln 159, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `j` (decl src ln 96) from
+  assn asm ln 7522, prod ln 158.14, live ln 159, enc None
+  i64 0
+and
+  assn asm ln 7541, prod ln 158.37, live ln 159, enc None
+  %inc99 = add nsw i64 %125, 1, l158 c37
+🔔 Removing: asm ln 7522, prod ln 158.14, live ln 159, enc None
+
+Filtering before assignments: `max_elems` (decl src ln 81)
+
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `max_elems` (decl src ln 81) from
+  assn asm ln 7216, prod ln 81.0, live ln 100, enc 0
+  i64 %max_elems
+and
+  assn asm ln 7388, prod ln 128.29, live ln 129, enc None
+  %64 = load i64, i64* %max_elems.addr, l128 c29
+
+Checking equivalence of `max_elems` (decl src ln 81) from
+  assn asm ln 7378, prod ln 126.29, live ln 127, enc 1
+  %60 = load i64, i64* %max_elems.addr, l126 c29
+  (ReadLSB w64 (w32 0x0) primal_bea_mpp.max_elems)
+and
+  assn asm ln 7216, prod ln 81.0, live ln 100, enc 0
+  i64 %max_elems
+  (ReadLSB w64 (w32 0x0) primal_bea_mpp.max_elems)
+Query to parse
+array primal_bea_mpp.max_elems[8] : w32 -> w8 = symbolic
+array primal_bea_mpp.max_elems[8] : w32 -> w8 = symbolic
+(query [] (Eq N0:(ReadLSB w64 (w32 0x0) primal_bea_mpp.max_elems)
+     N0))
+Parsed query
+(Eq N0:(ReadLSB w64 (w32 0x0) primal_bea_mpp.max_elems)
+     N0)
+🔔 Removing: asm ln 7378, prod ln 126.29, live ln 127, enc 1
+
+Filtering before assignments: `next` (decl src ln 96)
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `next` (decl src ln 96) from
+  assn asm ln 7337, prod ln 112.21, live ln 113, enc None
+  %44 = load i64, i64* %next, l112 c21
+and
+  assn asm ln 7312, prod ln 109.21, live ln 110, enc None
+  %31 = load i64, i64* %next, l109 c21
+🔔 Removing: asm ln 7337, prod ln 112.21, live ln 113, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `next` (decl src ln 96) from
+  assn asm ln 7331, prod ln 111.21, live ln 112, enc None
+  %41 = load i64, i64* %next, l111 c21
+and
+  assn asm ln 7312, prod ln 109.21, live ln 110, enc None
+  %31 = load i64, i64* %next, l109 c21
+🔔 Removing: asm ln 7331, prod ln 111.21, live ln 112, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `next` (decl src ln 96) from
+  assn asm ln 7319, prod ln 110.21, live ln 111, enc None
+  %35 = load i64, i64* %next, l110 c21
+and
+  assn asm ln 7312, prod ln 109.21, live ln 110, enc None
+  %31 = load i64, i64* %next, l109 c21
+🔔 Removing: asm ln 7319, prod ln 110.21, live ln 111, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `next` (decl src ln 96) from
+  assn asm ln 7307, prod ln 108.20, live ln 109, enc None
+  %28 = load i64, i64* %next, l108 c20
+and
+  assn asm ln 7312, prod ln 109.21, live ln 110, enc None
+  %31 = load i64, i64* %next, l109 c21
+🔔 Removing: asm ln 7307, prod ln 108.20, live ln 109, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `next` (decl src ln 96) from
+  assn asm ln 7309, prod ln 108.20, live ln 109, enc None
+  %inc = add nsw i64 %28, 1, l108 c20
+and
+  assn asm ln 7312, prod ln 109.21, live ln 110, enc None
+  %31 = load i64, i64* %next, l109 c21
+🔔 Removing: asm ln 7309, prod ln 108.20, live ln 109, enc None
+
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `next` (decl src ln 96) from
+  assn asm ln 7227, prod ln 100.25, live ln 101, enc 0
+  i64 0
+and
+  assn asm ln 7312, prod ln 109.21, live ln 110, enc None
+  %31 = load i64, i64* %next, l109 c21
+
+Checking equivalence of `next` (decl src ln 96) from
+  assn asm ln 7351, prod ln 116.32, live ln 117, enc 1
+  %47 = load i64, i64* %next, l116 c32
+  (w64 0x0)
+and
+  assn asm ln 7227, prod ln 100.25, live ln 101, enc 0
+  i64 0
+  (w64 0x0)
+🔔 Removing: asm ln 7351, prod ln 116.32, live ln 117, enc 1
+
+Filtering before assignments: `num_threads` (decl src ln 81)
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `num_threads` (decl src ln 81) from
+  assn asm ln 7494, prod ln 131.39, live ln 132, enc None
+  %109 = load i64, i64* %num_threads.addr, l131 c39
+and
+  assn asm ln 7527, prod ln 158.23, live ln 159, enc None
+  %120 = load i64, i64* %num_threads.addr, l158 c23
+🔔 Removing: asm ln 7494, prod ln 131.39, live ln 132, enc None
+
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `num_threads` (decl src ln 81) from
+  assn asm ln 7214, prod ln 81.0, live ln 100, enc 0
+  i64 %num_threads
+and
+  assn asm ln 7527, prod ln 158.23, live ln 159, enc None
+  %120 = load i64, i64* %num_threads.addr, l158 c23
+
+Filtering before assignments: `old_end_arc` (decl src ln 97)
+
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `old_end_arc` (decl src ln 97) from
+  assn asm ln 7359, prod ln 118.23, live ln 119, enc 0
+  %51 = load %struct.arc*, %struct.arc** %50, l118 c23
+and
+  assn asm ln 7516, prod ln 152.21, live ln 153, enc None
+  %118 = load %struct.arc*, %struct.arc** %old_end_arc, l152 c21
+
+Filtering before assignments: `perm` (decl src ln 81)
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `perm` (decl src ln 81) from
+  assn asm ln 7575, prod ln 179.16, live ln 180, enc None
+  %135 = load %struct.basket**, %struct.basket*** %perm.addr, l179 c16
+and
+  assn asm ln 7584, prod ln 186.12, live ln 187, enc None
+  %140 = load %struct.basket**, %struct.basket*** %perm.addr, l186 c12
+🔔 Removing: asm ln 7575, prod ln 179.16, live ln 180, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `perm` (decl src ln 81) from
+  assn asm ln 7551, prod ln 172.4, live ln 173, enc None
+  %127 = load %struct.basket**, %struct.basket*** %perm.addr, l172 c4
+and
+  assn asm ln 7584, prod ln 186.12, live ln 187, enc None
+  %140 = load %struct.basket**, %struct.basket*** %perm.addr, l186 c12
+🔔 Removing: asm ln 7551, prod ln 172.4, live ln 173, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `perm` (decl src ln 81) from
+  assn asm ln 7481, prod ln 142.11, live ln 143, enc None
+  %104 = load %struct.basket**, %struct.basket*** %perm.addr, l142 c11
+and
+  assn asm ln 7584, prod ln 186.12, live ln 187, enc None
+  %140 = load %struct.basket**, %struct.basket*** %perm.addr, l186 c12
+🔔 Removing: asm ln 7481, prod ln 142.11, live ln 143, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `perm` (decl src ln 81) from
+  assn asm ln 7471, prod ln 141.11, live ln 142, enc None
+  %99 = load %struct.basket**, %struct.basket*** %perm.addr, l141 c11
+and
+  assn asm ln 7584, prod ln 186.12, live ln 187, enc None
+  %140 = load %struct.basket**, %struct.basket*** %perm.addr, l186 c12
+🔔 Removing: asm ln 7471, prod ln 141.11, live ln 142, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `perm` (decl src ln 81) from
+  assn asm ln 7455, prod ln 140.11, live ln 141, enc None
+  %91 = load %struct.basket**, %struct.basket*** %perm.addr, l140 c11
+and
+  assn asm ln 7584, prod ln 186.12, live ln 187, enc None
+  %140 = load %struct.basket**, %struct.basket*** %perm.addr, l186 c12
+🔔 Removing: asm ln 7455, prod ln 140.11, live ln 141, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `perm` (decl src ln 81) from
+  assn asm ln 7444, prod ln 139.11, live ln 140, enc None
+  %85 = load %struct.basket**, %struct.basket*** %perm.addr, l139 c11
+and
+  assn asm ln 7584, prod ln 186.12, live ln 187, enc None
+  %140 = load %struct.basket**, %struct.basket*** %perm.addr, l186 c12
+🔔 Removing: asm ln 7444, prod ln 139.11, live ln 140, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `perm` (decl src ln 81) from
+  assn asm ln 7336, prod ln 112.16, live ln 113, enc None
+  %43 = load %struct.basket**, %struct.basket*** %perm.addr, l112 c16
+and
+  assn asm ln 7584, prod ln 186.12, live ln 187, enc None
+  %140 = load %struct.basket**, %struct.basket*** %perm.addr, l186 c12
+🔔 Removing: asm ln 7336, prod ln 112.16, live ln 113, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `perm` (decl src ln 81) from
+  assn asm ln 7330, prod ln 111.16, live ln 112, enc None
+  %40 = load %struct.basket**, %struct.basket*** %perm.addr, l111 c16
+and
+  assn asm ln 7584, prod ln 186.12, live ln 187, enc None
+  %140 = load %struct.basket**, %struct.basket*** %perm.addr, l186 c12
+🔔 Removing: asm ln 7330, prod ln 111.16, live ln 112, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `perm` (decl src ln 81) from
+  assn asm ln 7318, prod ln 110.16, live ln 111, enc None
+  %34 = load %struct.basket**, %struct.basket*** %perm.addr, l110 c16
+and
+  assn asm ln 7584, prod ln 186.12, live ln 187, enc None
+  %140 = load %struct.basket**, %struct.basket*** %perm.addr, l186 c12
+🔔 Removing: asm ln 7318, prod ln 110.16, live ln 111, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `perm` (decl src ln 81) from
+  assn asm ln 7311, prod ln 109.16, live ln 110, enc None
+  %30 = load %struct.basket**, %struct.basket*** %perm.addr, l109 c16
+and
+  assn asm ln 7584, prod ln 186.12, live ln 187, enc None
+  %140 = load %struct.basket**, %struct.basket*** %perm.addr, l186 c12
+🔔 Removing: asm ln 7311, prod ln 109.16, live ln 110, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `perm` (decl src ln 81) from
+  assn asm ln 7253, prod ln 103.20, live ln 104, enc None
+  %9 = load %struct.basket**, %struct.basket*** %perm.addr, l103 c20
+and
+  assn asm ln 7584, prod ln 186.12, live ln 187, enc None
+  %140 = load %struct.basket**, %struct.basket*** %perm.addr, l186 c12
+🔔 Removing: asm ln 7253, prod ln 103.20, live ln 104, enc None
+
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `perm` (decl src ln 81) from
+  assn asm ln 7206, prod ln 81.0, live ln 100, enc 0
+  %struct.basket** %perm
+and
+  assn asm ln 7584, prod ln 186.12, live ln 187, enc None
+  %140 = load %struct.basket**, %struct.basket*** %perm.addr, l186 c12
+
+Checking equivalence of `perm` (decl src ln 81) from
+  assn asm ln 7246, prod ln 102.18, live ln 103, enc 1
+  %5 = load %struct.basket**, %struct.basket*** %perm.addr, l102 c18
+  (w64 0x85018994A51789F0)
+and
+  assn asm ln 7206, prod ln 81.0, live ln 100, enc 0
+  %struct.basket** %perm
+  (w64 0x85018994A51789F0)
+🔔 Removing: asm ln 7246, prod ln 102.18, live ln 103, enc 1
+
+Filtering before assignments: `red_cost` (decl src ln 98)
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `red_cost` (decl src ln 98) from
+  assn asm ln 7467, prod ln 141.50, live ln 142, enc None
+  %97 = load i64, i64* %red_cost, l141 c50
+and
+  assn asm ln 7468, prod ln 141.50, live ln 142, enc None
+  %98 = load i64, i64* %red_cost, l141 c50
+🔔 Removing: asm ln 7467, prod ln 141.50, live ln 142, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `red_cost` (decl src ln 98) from
+  assn asm ln 7465, prod ln 141.50, live ln 142, enc None
+  %96 = load i64, i64* %red_cost, l141 c50
+and
+  assn asm ln 7468, prod ln 141.50, live ln 142, enc None
+  %98 = load i64, i64* %red_cost, l141 c50
+🔔 Removing: asm ln 7465, prod ln 141.50, live ln 142, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `red_cost` (decl src ln 98) from
+  assn asm ln 7454, prod ln 140.46, live ln 141, enc None
+  %90 = load i64, i64* %red_cost, l140 c46
+and
+  assn asm ln 7468, prod ln 141.50, live ln 142, enc None
+  %98 = load i64, i64* %red_cost, l141 c50
+🔔 Removing: asm ln 7454, prod ln 140.46, live ln 141, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `red_cost` (decl src ln 98) from
+  assn asm ln 7430, prod ln 136.42, live ln 137, enc None
+  %80 = load i64, i64* %red_cost, l136 c42
+and
+  assn asm ln 7468, prod ln 141.50, live ln 142, enc None
+  %98 = load i64, i64* %red_cost, l141 c50
+🔔 Removing: asm ln 7430, prod ln 136.42, live ln 137, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `red_cost` (decl src ln 98) from
+  assn asm ln 7428, prod ln 135.53, live ln 136, enc None
+  %add52 = add nsw i64 %sub49, %78, l135 c53
+and
+  assn asm ln 7468, prod ln 141.50, live ln 142, enc None
+  %98 = load i64, i64* %red_cost, l141 c50
+🔔 Removing: asm ln 7428, prod ln 135.53, live ln 136, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `red_cost` (decl src ln 98) from
+  assn asm ln 7327, prod ln 111.39, live ln 112, enc None
+  %39 = load i64, i64* %red_cost, l111 c39
+and
+  assn asm ln 7468, prod ln 141.50, live ln 142, enc None
+  %98 = load i64, i64* %red_cost, l141 c50
+🔔 Removing: asm ln 7327, prod ln 111.39, live ln 112, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `red_cost` (decl src ln 98) from
+  assn asm ln 7326, prod ln 111.39, live ln 112, enc None
+  %38 = load i64, i64* %red_cost, l111 c39
+and
+  assn asm ln 7468, prod ln 141.50, live ln 142, enc None
+  %98 = load i64, i64* %red_cost, l141 c50
+🔔 Removing: asm ln 7326, prod ln 111.39, live ln 112, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `red_cost` (decl src ln 98) from
+  assn asm ln 7324, prod ln 111.39, live ln 112, enc None
+  %37 = load i64, i64* %red_cost, l111 c39
+and
+  assn asm ln 7468, prod ln 141.50, live ln 142, enc None
+  %98 = load i64, i64* %red_cost, l141 c50
+🔔 Removing: asm ln 7324, prod ln 111.39, live ln 112, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `red_cost` (decl src ln 98) from
+  assn asm ln 7317, prod ln 110.35, live ln 111, enc None
+  %33 = load i64, i64* %red_cost, l110 c35
+and
+  assn asm ln 7468, prod ln 141.50, live ln 142, enc None
+  %98 = load i64, i64* %red_cost, l141 c50
+🔔 Removing: asm ln 7317, prod ln 110.35, live ln 111, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `red_cost` (decl src ln 98) from
+  assn asm ln 7294, prod ln 106.20, live ln 107, enc None
+  %25 = load i64, i64* %red_cost, l106 c20
+and
+  assn asm ln 7468, prod ln 141.50, live ln 142, enc None
+  %98 = load i64, i64* %red_cost, l141 c50
+🔔 Removing: asm ln 7294, prod ln 106.20, live ln 107, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `red_cost` (decl src ln 98) from
+  assn asm ln 7281, prod ln 105.31, live ln 106, enc None
+  %22 = load i64, i64* %red_cost, l105 c31
+and
+  assn asm ln 7468, prod ln 141.50, live ln 142, enc None
+  %98 = load i64, i64* %red_cost, l141 c50
+🔔 Removing: asm ln 7281, prod ln 105.31, live ln 106, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `red_cost` (decl src ln 98) from
+  assn asm ln 7275, prod ln 104.56, live ln 105, enc None
+  %add = add nsw i64 %sub, %20, l104 c56
+and
+  assn asm ln 7468, prod ln 141.50, live ln 142, enc None
+  %98 = load i64, i64* %red_cost, l141 c50
+🔔 Removing: asm ln 7275, prod ln 104.56, live ln 105, enc None
+
+Filtering before assignments: `step` (decl src ln 81)
+
+Checking equivalence of `step` (decl src ln 81) from
+  assn asm ln 7366, prod ln 123.22, live ln 124, enc 1
+  %54 = load i64, i64* %step.addr, l123 c22
+  (ReadLSB w64 (w32 0x0) primal_bea_mpp.step)
+and
+  assn asm ln 7212, prod ln 81.0, live ln 100, enc 0
+  i64 %step
+  (ReadLSB w64 (w32 0x0) primal_bea_mpp.step)
+Query to parse
+array primal_bea_mpp.step[8] : w32 -> w8 = symbolic
+array primal_bea_mpp.step[8] : w32 -> w8 = symbolic
+(query [] (Eq N0:(ReadLSB w64 (w32 0x0) primal_bea_mpp.step)
+     N0))
+Parsed query
+(Eq N0:(ReadLSB w64 (w32 0x0) primal_bea_mpp.step)
+     N0)
+🔔 Removing: asm ln 7366, prod ln 123.22, live ln 124, enc 1
+
+Filtering before assignments: `stop_arcs` (decl src ln 80)
+
+Checking equivalence of `stop_arcs` (decl src ln 80) from
+  assn asm ln 7503, prod ln 147.24, live ln 148, enc 1
+  %113 = load %struct.arc*, %struct.arc** %stop_arcs.addr, l147 c24
+  (w64 0x2D7AA9072607630A)
+and
+  assn asm ln 7202, prod ln 80.0, live ln 100, enc 0
+  %struct.arc* %stop_arcs
+  (w64 0x2D7AA9072607630A)
+🔔 Removing: asm ln 7503, prod ln 147.24, live ln 148, enc 1
+
+Filtering before assignments: `thread` (decl src ln 81)
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `thread` (decl src ln 81) from
+  assn asm ln 7563, prod ln 174.22, live ln 175, enc None
+  %133 = load i32, i32* %thread.addr, l174 c22
+and
+  assn asm ln 7579, prod ln 179.39, live ln 180, enc None
+  %138 = load i32, i32* %thread.addr, l179 c39
+🔔 Removing: asm ln 7563, prod ln 174.22, live ln 175, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `thread` (decl src ln 81) from
+  assn asm ln 7553, prod ln 172.22, live ln 173, enc None
+  %129 = load i32, i32* %thread.addr, l172 c22
+and
+  assn asm ln 7579, prod ln 179.39, live ln 180, enc None
+  %138 = load i32, i32* %thread.addr, l179 c39
+🔔 Removing: asm ln 7553, prod ln 172.22, live ln 173, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `thread` (decl src ln 81) from
+  assn asm ln 7483, prod ln 142.29, live ln 143, enc None
+  %106 = load i32, i32* %thread.addr, l142 c29
+and
+  assn asm ln 7579, prod ln 179.39, live ln 180, enc None
+  %138 = load i32, i32* %thread.addr, l179 c39
+🔔 Removing: asm ln 7483, prod ln 142.29, live ln 143, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `thread` (decl src ln 81) from
+  assn asm ln 7473, prod ln 141.29, live ln 142, enc None
+  %101 = load i32, i32* %thread.addr, l141 c29
+and
+  assn asm ln 7579, prod ln 179.39, live ln 180, enc None
+  %138 = load i32, i32* %thread.addr, l179 c39
+🔔 Removing: asm ln 7473, prod ln 141.29, live ln 142, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `thread` (decl src ln 81) from
+  assn asm ln 7457, prod ln 140.29, live ln 141, enc None
+  %93 = load i32, i32* %thread.addr, l140 c29
+and
+  assn asm ln 7579, prod ln 179.39, live ln 180, enc None
+  %138 = load i32, i32* %thread.addr, l179 c39
+🔔 Removing: asm ln 7457, prod ln 140.29, live ln 141, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `thread` (decl src ln 81) from
+  assn asm ln 7446, prod ln 139.29, live ln 140, enc None
+  %87 = load i32, i32* %thread.addr, l139 c29
+and
+  assn asm ln 7579, prod ln 179.39, live ln 180, enc None
+  %138 = load i32, i32* %thread.addr, l179 c39
+🔔 Removing: asm ln 7446, prod ln 139.29, live ln 140, enc None
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `thread` (decl src ln 81) from
+  assn asm ln 7437, prod ln 138.24, live ln 139, enc None
+  %82 = load i32, i32* %thread.addr, l138 c24
+and
+  assn asm ln 7579, prod ln 179.39, live ln 180, enc None
+  %138 = load i32, i32* %thread.addr, l179 c39
+🔔 Removing: asm ln 7437, prod ln 138.24, live ln 139, enc None
+
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `thread` (decl src ln 81) from
+  assn asm ln 7208, prod ln 81.0, live ln 100, enc 0
+  i32 %thread
+and
+  assn asm ln 7579, prod ln 179.39, live ln 180, enc None
+  %138 = load i32, i32* %thread.addr, l179 c39
+
+Checking equivalence of `thread` (decl src ln 81) from
+  assn asm ln 7238, prod ln 100.58, live ln 101, enc 1
+  %3 = load i32, i32* %thread.addr, l100 c58
+  (ReadLSB w32 (w32 0x0) primal_bea_mpp.thread)
+and
+  assn asm ln 7208, prod ln 81.0, live ln 100, enc 0
+  i32 %thread
+  (ReadLSB w32 (w32 0x0) primal_bea_mpp.thread)
+Query to parse
+array primal_bea_mpp.thread[4] : w32 -> w8 = symbolic
+array primal_bea_mpp.thread[4] : w32 -> w8 = symbolic
+(query [] (Eq N0:(ReadLSB w32 (w32 0x0) primal_bea_mpp.thread)
+     N0))
+Parsed query
+(Eq N0:(ReadLSB w32 (w32 0x0) primal_bea_mpp.thread)
+     N0)
+🔔 Removing: asm ln 7238, prod ln 100.58, live ln 101, enc 1
+
+Checking equivalence of `thread` (decl src ln 81) from
+  assn asm ln 7353, prod ln 116.22, live ln 117, enc 2
+  %49 = load i32, i32* %thread.addr, l116 c22
+  (ReadLSB w32 (w32 0x0) primal_bea_mpp.thread)
+and
+  assn asm ln 7208, prod ln 81.0, live ln 100, enc 0
+  i32 %thread
+  (ReadLSB w32 (w32 0x0) primal_bea_mpp.thread)
+Query to parse
+array primal_bea_mpp.thread[4] : w32 -> w8 = symbolic
+array primal_bea_mpp.thread[4] : w32 -> w8 = symbolic
+(query [] (Eq N0:(ReadLSB w32 (w32 0x0) primal_bea_mpp.thread)
+     N0))
+Parsed query
+(Eq N0:(ReadLSB w32 (w32 0x0) primal_bea_mpp.thread)
+     N0)
+🔔 Removing: asm ln 7353, prod ln 116.22, live ln 117, enc 2
+
+Filtering after assignments: `arc` (decl src ln 97)
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `arc` (decl src ln 97) from
+  assn asm ln 5539, prod ln 131.36, live ln 132, enc None
+  %add.ptr83 = getelementptr inbounds %struct.arc.0, %struct.arc.0* %arc.0, i64 %num_threads, l131 c36
+and
+  assn asm ln 5357, prod ln 102.27, live ln 103, enc None
+  %2 = load %struct.arc.0*, %struct.arc.0** %a, l102 c27
+🔔 Removing: asm ln 5539, prod ln 131.36, live ln 132, enc None
+
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `arc` (decl src ln 97) from
+  assn asm ln 5444, prod ln 123.20, live ln 125, enc 0
+  %add.ptr = getelementptr inbounds %struct.arc.0, %struct.arc.0* %17, i64 %step, l123 c20
+and
+  assn asm ln 5357, prod ln 102.27, live ln 103, enc None
+  %2 = load %struct.arc.0*, %struct.arc.0** %a, l102 c27
+
+Checking equivalence of `arc` (decl src ln 97) from
+  assn asm ln 5468, prod ln 131.36, live ln 132, enc 1
+  %arc.0 = phi %struct.arc.0* [ %add.ptr, %if.end36 ], [ %add.ptr83, %for.inc82 ]
+  (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 N0:(Mul w64 (w64 0x48)
+                                                                                                                                                                                                                                                                                                                                        (ReadLSB w64 (w32 0x0) primal_bea_mpp.step))
+                                                                                                                                                                                                                                                                                                                            N0)
+                                                                                                                                                                                                                                                                                                                   N0)
+                                                                                                                                                                                                                                                                                                          N0)
+                                                                                                                                                                                                                                                                                                 N0)
+                                                                                                                                                                                                                                                                                        N0)
+                                                                                                                                                                                                                                                                               N0)
+                                                                                                                                                                                                                                                                      N0)
+                                                                                                                                                                                                                                                             N0)
+                                                                                                                                                                                                                                                    N0)
+                                                                                                                                                                                                                                           N0)
+                                                                                                                                                                                                                                  N0)
+                                                                                                                                                                                                                         N0)
+                                                                                                                                                                                                                N0)
+                                                                                                                                                                                                       N0)
+                                                                                                                                                                                              N0)
+                                                                                                                                                                                     N0)
+                                                                                                                                                                            N0)
+                                                                                                                                                                   N0)
+                                                                                                                                                          N0)
+                                                                                                                                                 N0)
+                                                                                                                                        N0)
+                                                                                                                               N0)
+                                                                                                                      N0)
+                                                                                                             N0)
+                                                                                                    N0)
+                                                                                           N0)
+                                                                                  N0)
+                                                                         N0)
+                                                                N0)
+                                                       N0)
+                                              N0)
+                                     N0)
+                            N0)
+                   N0)
+          N0)
+and
+  assn asm ln 5444, prod ln 123.20, live ln 125, enc 0
+  %add.ptr = getelementptr inbounds %struct.arc.0, %struct.arc.0* %17, i64 %step, l123 c20
+  (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 N0:(Mul w64 (w64 0x48)
+                                                                                                                                                                                                                                                                                                                                        (ReadLSB w64 (w32 0x0) primal_bea_mpp.step))
+                                                                                                                                                                                                                                                                                                                            N0)
+                                                                                                                                                                                                                                                                                                                   N0)
+                                                                                                                                                                                                                                                                                                          N0)
+                                                                                                                                                                                                                                                                                                 N0)
+                                                                                                                                                                                                                                                                                        N0)
+                                                                                                                                                                                                                                                                               N0)
+                                                                                                                                                                                                                                                                      N0)
+                                                                                                                                                                                                                                                             N0)
+                                                                                                                                                                                                                                                    N0)
+                                                                                                                                                                                                                                           N0)
+                                                                                                                                                                                                                                  N0)
+                                                                                                                                                                                                                         N0)
+                                                                                                                                                                                                                N0)
+                                                                                                                                                                                                       N0)
+                                                                                                                                                                                              N0)
+                                                                                                                                                                                     N0)
+                                                                                                                                                                            N0)
+                                                                                                                                                                   N0)
+                                                                                                                                                          N0)
+                                                                                                                                                 N0)
+                                                                                                                                        N0)
+                                                                                                                               N0)
+                                                                                                                      N0)
+                                                                                                             N0)
+                                                                                                    N0)
+                                                                                           N0)
+                                                                                  N0)
+                                                                         N0)
+                                                                N0)
+                                                       N0)
+                                              N0)
+                                     N0)
+                            N0)
+                   N0)
+          N0)
+Query to parse
+array primal_bea_mpp.step[8] : w32 -> w8 = symbolic
+array primal_bea_mpp.step[8] : w32 -> w8 = symbolic
+(query [] (Eq N0:(Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 N1:(Mul w64 (w64 0x48)
+                                                                                                                                                                                                                                                                                                                                               (ReadLSB w64 (w32 0x0) primal_bea_mpp.step))
+                                                                                                                                                                                                                                                                                                                                   N1)
+                                                                                                                                                                                                                                                                                                                          N1)
+                                                                                                                                                                                                                                                                                                                 N1)
+                                                                                                                                                                                                                                                                                                        N1)
+                                                                                                                                                                                                                                                                                               N1)
+                                                                                                                                                                                                                                                                                      N1)
+                                                                                                                                                                                                                                                                             N1)
+                                                                                                                                                                                                                                                                    N1)
+                                                                                                                                                                                                                                                           N1)
+                                                                                                                                                                                                                                                  N1)
+                                                                                                                                                                                                                                         N1)
+                                                                                                                                                                                                                                N1)
+                                                                                                                                                                                                                       N1)
+                                                                                                                                                                                                              N1)
+                                                                                                                                                                                                     N1)
+                                                                                                                                                                                            N1)
+                                                                                                                                                                                   N1)
+                                                                                                                                                                          N1)
+                                                                                                                                                                 N1)
+                                                                                                                                                        N1)
+                                                                                                                                               N1)
+                                                                                                                                      N1)
+                                                                                                                             N1)
+                                                                                                                    N1)
+                                                                                                           N1)
+                                                                                                  N1)
+                                                                                         N1)
+                                                                                N1)
+                                                                       N1)
+                                                              N1)
+                                                     N1)
+                                            N1)
+                                   N1)
+                          N1)
+                 N1)
+     N0))
+Parsed query
+(Eq N0:(Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 N1:(Mul w64 (w64 0x48)
+                                                                                                                                                                                                                                                                                                                                               (ReadLSB w64 (w32 0x0) primal_bea_mpp.step))
+                                                                                                                                                                                                                                                                                                                                   N1)
+                                                                                                                                                                                                                                                                                                                          N1)
+                                                                                                                                                                                                                                                                                                                 N1)
+                                                                                                                                                                                                                                                                                                        N1)
+                                                                                                                                                                                                                                                                                               N1)
+                                                                                                                                                                                                                                                                                      N1)
+                                                                                                                                                                                                                                                                             N1)
+                                                                                                                                                                                                                                                                    N1)
+                                                                                                                                                                                                                                                           N1)
+                                                                                                                                                                                                                                                  N1)
+                                                                                                                                                                                                                                         N1)
+                                                                                                                                                                                                                                N1)
+                                                                                                                                                                                                                       N1)
+                                                                                                                                                                                                              N1)
+                                                                                                                                                                                                     N1)
+                                                                                                                                                                                            N1)
+                                                                                                                                                                                   N1)
+                                                                                                                                                                          N1)
+                                                                                                                                                                 N1)
+                                                                                                                                                        N1)
+                                                                                                                                               N1)
+                                                                                                                                      N1)
+                                                                                                                             N1)
+                                                                                                                    N1)
+                                                                                                           N1)
+                                                                                                  N1)
+                                                                                         N1)
+                                                                                N1)
+                                                                       N1)
+                                                              N1)
+                                                     N1)
+                                            N1)
+                                   N1)
+                          N1)
+                 N1)
+     N0)
+🔔 Removing: asm ln 5468, prod ln 131.36, live ln 132, enc 1
+
+Filtering after assignments: `global_basket_size` (decl src ln 96)
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `global_basket_size` (decl src ln 96) from
+  assn asm ln 5559, prod ln 159.27, live ln 160, enc None
+  %global_basket_size.0 = phi i64 [ %add97, %for.body95 ], [ 0, %if.end88 ]
+and
+  assn asm ln 5568, prod ln 159.27, live ln 160, enc None
+  %add97 = add nsw i64 %global_basket_size.0, %40, l159 c27
+🔔 Removing: asm ln 5559, prod ln 159.27, live ln 160, enc None
+
+Filtering after assignments: `i` (decl src ln 96)
+
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `i` (decl src ln 96) from
+  assn asm ln 5333, prod ln 96.0, live ln 100, enc 0
+  i64 1
+and
+  assn asm ln 5429, prod ln 100.68, live ln 101, enc None
+  %inc27 = add nsw i64 %i.0, 1, l100 c68
+
+Checking equivalence of `i` (decl src ln 96) from
+  assn asm ln 5341, prod ln 100.68, live ln 101, enc 1
+  %i.0 = phi i64 [ 1, %entry ], [ %inc27, %for.inc ]
+  (w64 0x1)
+and
+  assn asm ln 5333, prod ln 96.0, live ln 100, enc 0
+  i64 1
+  (w64 0x1)
+🔔 Removing: asm ln 5341, prod ln 100.68, live ln 101, enc 1
+
+Filtering after assignments: `j` (decl src ln 96)
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `j` (decl src ln 96) from
+  assn asm ln 5560, prod ln 158.37, live ln 159, enc None
+  %j.0 = phi i64 [ %inc99, %for.body95 ], [ 0, %if.end88 ]
+and
+  assn asm ln 5570, prod ln 158.37, live ln 159, enc None
+  %inc99 = add nsw i64 %j.0, 1, l158 c37
+🔔 Removing: asm ln 5560, prod ln 158.37, live ln 159, enc None
+
+Filtering after assignments: `next` (decl src ln 96)
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `next` (decl src ln 96) from
+  assn asm ln 5427, prod ln 108.20, live ln 109, enc None
+  %next.1 = phi i64 [ %inc, %if.then ], [ %next.0, %land.lhs.true12 ], [ %next.0, %lor.lhs.false ], [ %next.0, %for.body ]
+and
+  assn asm ln 5403, prod ln 108.20, live ln 109, enc None
+  %inc = add nsw i64 %next.0, 1, l108 c20
+🔔 Removing: asm ln 5427, prod ln 108.20, live ln 109, enc None
+
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `next` (decl src ln 96) from
+  assn asm ln 5334, prod ln 96.0, live ln 100, enc 0
+  i64 0
+and
+  assn asm ln 5403, prod ln 108.20, live ln 109, enc None
+  %inc = add nsw i64 %next.0, 1, l108 c20
+
+Checking equivalence of `next` (decl src ln 96) from
+  assn asm ln 5340, prod ln 96.0, live ln 100, enc 1
+  %next.0 = phi i64 [ 0, %entry ], [ %next.1, %for.inc ]
+  (w64 0x0)
+and
+  assn asm ln 5334, prod ln 96.0, live ln 100, enc 0
+  i64 0
+  (w64 0x0)
+🔔 Removing: asm ln 5340, prod ln 96.0, live ln 100, enc 1
+
+Filtering after assignments: `red_cost` (decl src ln 98)
+
+Expected 1 symbolic value(s), got 0
+Expected 1 symbolic value(s), got 0
+Checking equivalence of `red_cost` (decl src ln 98) from
+  assn asm ln 5493, prod ln 135.53, live ln 136, enc None
+  %add52 = add nsw i64 %sub49, %28, l135 c53
+and
+  assn asm ln 5375, prod ln 104.56, live ln 105, enc None
+  %add = add nsw i64 %sub, %9, l104 c56
+🔔 Removing: asm ln 5493, prod ln 135.53, live ln 136, enc None
+
+Collating encountered before assignments: `arc` (decl src ln 97)
+❌ Assignment asm ln 7497, prod ln 131.36, live ln 132, enc None for `arc` (decl src ln 97) was not encountered during execution
+  asm ln 7368, prod ln 123.20, live ln 125, enc 0
+Collating encountered before assignments: `arcs` (decl src ln 80)
+  asm ln 7200, prod ln 80.0, live ln 100, enc 0
+Collating encountered before assignments: `basket_sizes` (decl src ln 81)
+❌ Assignment asm ln 7578, prod ln 179.26, live ln 180, enc None for `basket_sizes` (decl src ln 81) was not encountered during execution
+  asm ln 7204, prod ln 81.0, live ln 100, enc 0
+Collating encountered before assignments: `count` (decl src ln 96)
+❌ Assignment asm ln 7276, prod ln 105.16, live ln 106, enc None for `count` (decl src ln 96) was not encountered during execution
+Collating encountered before assignments: `end_arc` (decl src ln 81)
+❌ Assignment asm ln 7514, prod ln 152.10, live ln 153, enc None for `end_arc` (decl src ln 81) was not encountered during execution
+  asm ln 7210, prod ln 81.0, live ln 100, enc 0
+Collating encountered before assignments: `global_basket_size` (decl src ln 96)
+❌ Assignment asm ln 7545, prod ln 161.12, live ln 162, enc None for `global_basket_size` (decl src ln 96) was not encountered during execution
+Collating encountered before assignments: `i` (decl src ln 96)
+❌ Assignment asm ln 7347, prod ln 100.68, live ln 101, enc None for `i` (decl src ln 96) was not encountered during execution
+  asm ln 7226, prod ln 100.15, live ln 101, enc 0
+Collating encountered before assignments: `j` (decl src ln 96)
+❌ Assignment asm ln 7541, prod ln 158.37, live ln 159, enc None for `j` (decl src ln 96) was not encountered during execution
+Collating encountered before assignments: `m` (decl src ln 80)
+  asm ln 7198, prod ln 80.0, live ln 100, enc 0
+Collating encountered before assignments: `max_elems` (decl src ln 81)
+❌ Assignment asm ln 7388, prod ln 128.29, live ln 129, enc None for `max_elems` (decl src ln 81) was not encountered during execution
+  asm ln 7216, prod ln 81.0, live ln 100, enc 0
+Collating encountered before assignments: `next` (decl src ln 96)
+❌ Assignment asm ln 7312, prod ln 109.21, live ln 110, enc None for `next` (decl src ln 96) was not encountered during execution
+  asm ln 7227, prod ln 100.25, live ln 101, enc 0
+Collating encountered before assignments: `num_threads` (decl src ln 81)
+❌ Assignment asm ln 7527, prod ln 158.23, live ln 159, enc None for `num_threads` (decl src ln 81) was not encountered during execution
+  asm ln 7214, prod ln 81.0, live ln 100, enc 0
+Collating encountered before assignments: `old_end_arc` (decl src ln 97)
+❌ Assignment asm ln 7516, prod ln 152.21, live ln 153, enc None for `old_end_arc` (decl src ln 97) was not encountered during execution
+  asm ln 7359, prod ln 118.23, live ln 119, enc 0
+Collating encountered before assignments: `perm` (decl src ln 81)
+❌ Assignment asm ln 7584, prod ln 186.12, live ln 187, enc None for `perm` (decl src ln 81) was not encountered during execution
+  asm ln 7206, prod ln 81.0, live ln 100, enc 0
+Collating encountered before assignments: `red_cost` (decl src ln 98)
+❌ Assignment asm ln 7468, prod ln 141.50, live ln 142, enc None for `red_cost` (decl src ln 98) was not encountered during execution
+Collating encountered before assignments: `step` (decl src ln 81)
+  asm ln 7212, prod ln 81.0, live ln 100, enc 0
+Collating encountered before assignments: `stop_arcs` (decl src ln 80)
+  asm ln 7202, prod ln 80.0, live ln 100, enc 0
+Collating encountered before assignments: `thread` (decl src ln 81)
+❌ Assignment asm ln 7579, prod ln 179.39, live ln 180, enc None for `thread` (decl src ln 81) was not encountered during execution
+  asm ln 7208, prod ln 81.0, live ln 100, enc 0
+
+Collating encountered after assignments: `arc` (decl src ln 97)
+❌ Assignment asm ln 5357, prod ln 102.27, live ln 103, enc None for `arc` (decl src ln 97) was not encountered during execution
+  asm ln 5444, prod ln 123.20, live ln 125, enc 0
+Collating encountered after assignments: `arcs` (decl src ln 80)
+  asm ln 5324, prod ln 80.0, live ln 100, enc 0
+Collating encountered after assignments: `basket_sizes` (decl src ln 81)
+  asm ln 5326, prod ln 81.0, live ln 100, enc 0
+Collating encountered after assignments: `count` (decl src ln 96)
+❌ Assignment asm ln 5362, prod ln 103.29, live ln 104, enc None for `count` (decl src ln 96) was not encountered during execution
+Collating encountered after assignments: `end_arc` (decl src ln 81)
+  asm ln 5329, prod ln 81.0, live ln 100, enc 0
+Collating encountered after assignments: `global_basket_size` (decl src ln 96)
+❌ Assignment asm ln 5568, prod ln 159.27, live ln 160, enc None for `global_basket_size` (decl src ln 96) was not encountered during execution
+Collating encountered after assignments: `i` (decl src ln 96)
+❌ Assignment asm ln 5429, prod ln 100.68, live ln 101, enc None for `i` (decl src ln 96) was not encountered during execution
+  asm ln 5333, prod ln 96.0, live ln 100, enc 0
+Collating encountered after assignments: `j` (decl src ln 96)
+❌ Assignment asm ln 5570, prod ln 158.37, live ln 159, enc None for `j` (decl src ln 96) was not encountered during execution
+Collating encountered after assignments: `m` (decl src ln 80)
+  asm ln 5323, prod ln 80.0, live ln 100, enc 0
+Collating encountered after assignments: `max_elems` (decl src ln 81)
+  asm ln 5332, prod ln 81.0, live ln 100, enc 0
+Collating encountered after assignments: `next` (decl src ln 96)
+❌ Assignment asm ln 5403, prod ln 108.20, live ln 109, enc None for `next` (decl src ln 96) was not encountered during execution
+  asm ln 5334, prod ln 96.0, live ln 100, enc 0
+Collating encountered after assignments: `num_threads` (decl src ln 81)
+  asm ln 5331, prod ln 81.0, live ln 100, enc 0
+Collating encountered after assignments: `old_end_arc` (decl src ln 97)
+  asm ln 5437, prod ln 118.23, live ln 119, enc 0
+Collating encountered after assignments: `perm` (decl src ln 81)
+  asm ln 5327, prod ln 81.0, live ln 100, enc 0
+Collating encountered after assignments: `red_cost` (decl src ln 98)
+❌ Assignment asm ln 5375, prod ln 104.56, live ln 105, enc None for `red_cost` (decl src ln 98) was not encountered during execution
+Collating encountered after assignments: `step` (decl src ln 81)
+  asm ln 5330, prod ln 81.0, live ln 100, enc 0
+Collating encountered after assignments: `stop_arcs` (decl src ln 80)
+  asm ln 5325, prod ln 80.0, live ln 100, enc 0
+Collating encountered after assignments: `thread` (decl src ln 81)
+  asm ln 5328, prod ln 81.0, live ln 100, enc 0
+
+#### Check after using before as reference
+
+❌ Before assn asm ln 7497, prod ln 131.36, live ln 132, enc None for `arc` (decl src ln 97) was not encountered during execution
+
+❌ After assn asm ln 5357, prod ln 102.27, live ln 103, enc None for `arc` (decl src ln 97) was not encountered during execution
+
+Checking equivalence of `arc` (decl src ln 97) from
+  assn asm ln 5444, prod ln 123.20, live ln 125, enc 0
+  %add.ptr = getelementptr inbounds %struct.arc.0, %struct.arc.0* %17, i64 %step, l123 c20
+  (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 N0:(Mul w64 (w64 0x48)
+                                                                                                                                                                                                                                                                                                                                        (ReadLSB w64 (w32 0x0) primal_bea_mpp.step))
+                                                                                                                                                                                                                                                                                                                            N0)
+                                                                                                                                                                                                                                                                                                                   N0)
+                                                                                                                                                                                                                                                                                                          N0)
+                                                                                                                                                                                                                                                                                                 N0)
+                                                                                                                                                                                                                                                                                        N0)
+                                                                                                                                                                                                                                                                               N0)
+                                                                                                                                                                                                                                                                      N0)
+                                                                                                                                                                                                                                                             N0)
+                                                                                                                                                                                                                                                    N0)
+                                                                                                                                                                                                                                           N0)
+                                                                                                                                                                                                                                  N0)
+                                                                                                                                                                                                                         N0)
+                                                                                                                                                                                                                N0)
+                                                                                                                                                                                                       N0)
+                                                                                                                                                                                              N0)
+                                                                                                                                                                                     N0)
+                                                                                                                                                                            N0)
+                                                                                                                                                                   N0)
+                                                                                                                                                          N0)
+                                                                                                                                                 N0)
+                                                                                                                                        N0)
+                                                                                                                               N0)
+                                                                                                                      N0)
+                                                                                                             N0)
+                                                                                                    N0)
+                                                                                           N0)
+                                                                                  N0)
+                                                                         N0)
+                                                                N0)
+                                                       N0)
+                                              N0)
+                                     N0)
+                            N0)
+                   N0)
+          N0)
+and
+  assn asm ln 7368, prod ln 123.20, live ln 125, enc 0
+  %add.ptr = getelementptr inbounds %struct.arc, %struct.arc* %53, i64 %54, l123 c20
+  (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 N0:(Mul w64 (w64 0x48)
+                                                                                                                                                                                                                                                                                                                                        (ReadLSB w64 (w32 0x0) primal_bea_mpp.step))
+                                                                                                                                                                                                                                                                                                                            N0)
+                                                                                                                                                                                                                                                                                                                   N0)
+                                                                                                                                                                                                                                                                                                          N0)
+                                                                                                                                                                                                                                                                                                 N0)
+                                                                                                                                                                                                                                                                                        N0)
+                                                                                                                                                                                                                                                                               N0)
+                                                                                                                                                                                                                                                                      N0)
+                                                                                                                                                                                                                                                             N0)
+                                                                                                                                                                                                                                                    N0)
+                                                                                                                                                                                                                                           N0)
+                                                                                                                                                                                                                                  N0)
+                                                                                                                                                                                                                         N0)
+                                                                                                                                                                                                                N0)
+                                                                                                                                                                                                       N0)
+                                                                                                                                                                                              N0)
+                                                                                                                                                                                     N0)
+                                                                                                                                                                            N0)
+                                                                                                                                                                   N0)
+                                                                                                                                                          N0)
+                                                                                                                                                 N0)
+                                                                                                                                        N0)
+                                                                                                                               N0)
+                                                                                                                      N0)
+                                                                                                             N0)
+                                                                                                    N0)
+                                                                                           N0)
+                                                                                  N0)
+                                                                         N0)
+                                                                N0)
+                                                       N0)
+                                              N0)
+                                     N0)
+                            N0)
+                   N0)
+          N0)
+Query to parse
+array primal_bea_mpp.step[8] : w32 -> w8 = symbolic
+array primal_bea_mpp.step[8] : w32 -> w8 = symbolic
+(query [] (Eq (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 N0:(Mul w64 (w64 0x48)
+                                                                                                                                                                                                                                                                                                                                            (ReadLSB w64 (w32 0x0) primal_bea_mpp.step))
+                                                                                                                                                                                                                                                                                                                                N0)
+                                                                                                                                                                                                                                                                                                                       N0)
+                                                                                                                                                                                                                                                                                                              N0)
+                                                                                                                                                                                                                                                                                                     N0)
+                                                                                                                                                                                                                                                                                            N0)
+                                                                                                                                                                                                                                                                                   N0)
+                                                                                                                                                                                                                                                                          N0)
+                                                                                                                                                                                                                                                                 N0)
+                                                                                                                                                                                                                                                        N0)
+                                                                                                                                                                                                                                               N0)
+                                                                                                                                                                                                                                      N0)
+                                                                                                                                                                                                                             N0)
+                                                                                                                                                                                                                    N0)
+                                                                                                                                                                                                           N0)
+                                                                                                                                                                                                  N0)
+                                                                                                                                                                                         N0)
+                                                                                                                                                                                N0)
+                                                                                                                                                                       N0)
+                                                                                                                                                              N0)
+                                                                                                                                                     N0)
+                                                                                                                                            N0)
+                                                                                                                                   N0)
+                                                                                                                          N0)
+                                                                                                                 N0)
+                                                                                                        N0)
+                                                                                               N0)
+                                                                                      N0)
+                                                                             N0)
+                                                                    N0)
+                                                           N0)
+                                                  N0)
+                                         N0)
+                                N0)
+                       N0)
+              N0)
+     (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 N1:(Mul w64 (w64 0x48)
+                                                                                                                                                                                                                                                                                                                                            (ReadLSB w64 (w32 0x0) primal_bea_mpp.step))
+                                                                                                                                                                                                                                                                                                                                N1)
+                                                                                                                                                                                                                                                                                                                       N1)
+                                                                                                                                                                                                                                                                                                              N1)
+                                                                                                                                                                                                                                                                                                     N1)
+                                                                                                                                                                                                                                                                                            N1)
+                                                                                                                                                                                                                                                                                   N1)
+                                                                                                                                                                                                                                                                          N1)
+                                                                                                                                                                                                                                                                 N1)
+                                                                                                                                                                                                                                                        N1)
+                                                                                                                                                                                                                                               N1)
+                                                                                                                                                                                                                                      N1)
+                                                                                                                                                                                                                             N1)
+                                                                                                                                                                                                                    N1)
+                                                                                                                                                                                                           N1)
+                                                                                                                                                                                                  N1)
+                                                                                                                                                                                         N1)
+                                                                                                                                                                                N1)
+                                                                                                                                                                       N1)
+                                                                                                                                                              N1)
+                                                                                                                                                     N1)
+                                                                                                                                            N1)
+                                                                                                                                   N1)
+                                                                                                                          N1)
+                                                                                                                 N1)
+                                                                                                        N1)
+                                                                                               N1)
+                                                                                      N1)
+                                                                             N1)
+                                                                    N1)
+                                                           N1)
+                                                  N1)
+                                         N1)
+                                N1)
+                       N1)
+              N1)))
+Parsed query
+(Eq N0:(Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 N1:(Mul w64 (w64 0x48)
+                                                                                                                                                                                                                                                                                                                                               (ReadLSB w64 (w32 0x0) primal_bea_mpp.step))
+                                                                                                                                                                                                                                                                                                                                   N1)
+                                                                                                                                                                                                                                                                                                                          N1)
+                                                                                                                                                                                                                                                                                                                 N1)
+                                                                                                                                                                                                                                                                                                        N1)
+                                                                                                                                                                                                                                                                                               N1)
+                                                                                                                                                                                                                                                                                      N1)
+                                                                                                                                                                                                                                                                             N1)
+                                                                                                                                                                                                                                                                    N1)
+                                                                                                                                                                                                                                                           N1)
+                                                                                                                                                                                                                                                  N1)
+                                                                                                                                                                                                                                         N1)
+                                                                                                                                                                                                                                N1)
+                                                                                                                                                                                                                       N1)
+                                                                                                                                                                                                              N1)
+                                                                                                                                                                                                     N1)
+                                                                                                                                                                                            N1)
+                                                                                                                                                                                   N1)
+                                                                                                                                                                          N1)
+                                                                                                                                                                 N1)
+                                                                                                                                                        N1)
+                                                                                                                                               N1)
+                                                                                                                                      N1)
+                                                                                                                             N1)
+                                                                                                                    N1)
+                                                                                                           N1)
+                                                                                                  N1)
+                                                                                         N1)
+                                                                                N1)
+                                                                       N1)
+                                                              N1)
+                                                     N1)
+                                            N1)
+                                   N1)
+                          N1)
+                 N1)
+     N0)
+✅ Before `arc` (decl src ln 97) assn asm ln 7368, prod ln 123.20, live ln 125, enc 0 symbolic value matches after assn asm ln 5444, prod ln 123.20, live ln 125, enc 0
+
+❌ After `arc` assns checked using before as reference
+Assignments:         arc
+  Reference:         2
+  Test:              2
+Matching:
+  Matching Coords:   1
+  Matching Value:    1
+Consistency Errors:
+  Mismatched Coords: 0
+  Mismatched Value:  0
+Availability Errors:
+  Ref Not Encount.:  1
+  Ref Not in Test:   0
+  Test Not Encount.: 1
+  Test Not in Ref:   0
+Warnings:
+  Unused:            0
+  Removable:         0
+  Unreachable:       0
+Reference Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: false
+  Within Fork Limit: false
+Test Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: false
+  Within Fork Limit: false
+
+Checking equivalence of `arcs` (decl src ln 80) from
+  assn asm ln 5324, prod ln 80.0, live ln 100, enc 0
+  %struct.arc.0* %arcs
+  (w64 0xEE80AAECA0EC48E1)
+and
+  assn asm ln 7200, prod ln 80.0, live ln 100, enc 0
+  %struct.arc* %arcs
+  (w64 0xEE80AAECA0EC48E1)
+✅ Before `arcs` (decl src ln 80) assn asm ln 7200, prod ln 80.0, live ln 100, enc 0 symbolic value matches after assn asm ln 5324, prod ln 80.0, live ln 100, enc 0
+
+✅ After `arcs` assns checked using before as reference
+Assignments:         arcs
+  Reference:         1
+  Test:              1
+Matching:
+  Matching Coords:   1
+  Matching Value:    1
+Consistency Errors:
+  Mismatched Coords: 0
+  Mismatched Value:  0
+Availability Errors:
+  Ref Not Encount.:  0
+  Ref Not in Test:   0
+  Test Not Encount.: 0
+  Test Not in Ref:   0
+Warnings:
+  Unused:            0
+  Removable:         0
+  Unreachable:       0
+Reference Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: false
+  Within Fork Limit: false
+Test Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: false
+  Within Fork Limit: false
+
+❌ Before assn asm ln 7578, prod ln 179.26, live ln 180, enc None for `basket_sizes` (decl src ln 81) was not encountered during execution
+
+Checking equivalence of `basket_sizes` (decl src ln 81) from
+  assn asm ln 5326, prod ln 81.0, live ln 100, enc 0
+  i64* %basket_sizes
+  (w64 0xDB573077229DB7EE)
+and
+  assn asm ln 7204, prod ln 81.0, live ln 100, enc 0
+  i64* %basket_sizes
+  (w64 0xDB573077229DB7EE)
+✅ Before `basket_sizes` (decl src ln 81) assn asm ln 7204, prod ln 81.0, live ln 100, enc 0 symbolic value matches after assn asm ln 5326, prod ln 81.0, live ln 100, enc 0
+
+❌ After `basket_sizes` assns checked using before as reference
+Assignments:         basket_sizes
+  Reference:         2
+  Test:              1
+Matching:
+  Matching Coords:   1
+  Matching Value:    1
+Consistency Errors:
+  Mismatched Coords: 0
+  Mismatched Value:  0
+Availability Errors:
+  Ref Not Encount.:  1
+  Ref Not in Test:   0
+  Test Not Encount.: 0
+  Test Not in Ref:   0
+Warnings:
+  Unused:            0
+  Removable:         0
+  Unreachable:       0
+Reference Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: false
+  Within Fork Limit: false
+Test Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: false
+  Within Fork Limit: false
+
+❌ Before assn asm ln 7276, prod ln 105.16, live ln 106, enc None for `count` (decl src ln 96) was not encountered during execution
+
+❌ After assn asm ln 5362, prod ln 103.29, live ln 104, enc None for `count` (decl src ln 96) was not encountered during execution
+
+❌ After `count` assns checked using before as reference
+Assignments:         count
+  Reference:         1
+  Test:              1
+Matching:
+  Matching Coords:   0
+  Matching Value:    0
+Consistency Errors:
+  Mismatched Coords: 0
+  Mismatched Value:  0
+Availability Errors:
+  Ref Not Encount.:  1
+  Ref Not in Test:   0
+  Test Not Encount.: 1
+  Test Not in Ref:   0
+Warnings:
+  Unused:            0
+  Removable:         0
+  Unreachable:       0
+Reference Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: false
+  Within Fork Limit: false
+Test Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: false
+  Within Fork Limit: false
+
+❌ Before assn asm ln 7514, prod ln 152.10, live ln 153, enc None for `end_arc` (decl src ln 81) was not encountered during execution
+
+Checking equivalence of `end_arc` (decl src ln 81) from
+  assn asm ln 5329, prod ln 81.0, live ln 100, enc 0
+  %struct.arc.0** %end_arc
+  (w64 0xA3FB20F83CB71C49)
+and
+  assn asm ln 7210, prod ln 81.0, live ln 100, enc 0
+  %struct.arc** %end_arc
+  (w64 0xA3FB20F83CB71C49)
+✅ Before `end_arc` (decl src ln 81) assn asm ln 7210, prod ln 81.0, live ln 100, enc 0 symbolic value matches after assn asm ln 5329, prod ln 81.0, live ln 100, enc 0
+
+❌ After `end_arc` assns checked using before as reference
+Assignments:         end_arc
+  Reference:         2
+  Test:              1
+Matching:
+  Matching Coords:   1
+  Matching Value:    1
+Consistency Errors:
+  Mismatched Coords: 0
+  Mismatched Value:  0
+Availability Errors:
+  Ref Not Encount.:  1
+  Ref Not in Test:   0
+  Test Not Encount.: 0
+  Test Not in Ref:   0
+Warnings:
+  Unused:            0
+  Removable:         0
+  Unreachable:       0
+Reference Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: false
+  Within Fork Limit: false
+Test Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: false
+  Within Fork Limit: false
+
+❌ Before assn asm ln 7545, prod ln 161.12, live ln 162, enc None for `global_basket_size` (decl src ln 96) was not encountered during execution
+
+❌ After assn asm ln 5568, prod ln 159.27, live ln 160, enc None for `global_basket_size` (decl src ln 96) was not encountered during execution
+
+❌ After `global_basket_size` assns checked using before as reference
+Assignments:         global_basket_size
+  Reference:         1
+  Test:              1
+Matching:
+  Matching Coords:   0
+  Matching Value:    0
+Consistency Errors:
+  Mismatched Coords: 0
+  Mismatched Value:  0
+Availability Errors:
+  Ref Not Encount.:  1
+  Ref Not in Test:   0
+  Test Not Encount.: 1
+  Test Not in Ref:   0
+Warnings:
+  Unused:            0
+  Removable:         0
+  Unreachable:       0
+Reference Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: false
+  Within Fork Limit: false
+Test Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: false
+  Within Fork Limit: false
+
+❌ Before assn asm ln 7347, prod ln 100.68, live ln 101, enc None for `i` (decl src ln 96) was not encountered during execution
+
+❌ After assn asm ln 5429, prod ln 100.68, live ln 101, enc None for `i` (decl src ln 96) was not encountered during execution
+
+❌ Before `i` (decl src ln 96) assn asm ln 7226, prod ln 100.15, live ln 101, enc 0 coordinates don't match after assn asm ln 5333, prod ln 96.0, live ln 100, enc 0
+Checking equivalence of `i` (decl src ln 96) from
+  assn asm ln 5333, prod ln 96.0, live ln 100, enc 0
+  i64 1
+  (w64 0x1)
+and
+  assn asm ln 7226, prod ln 100.15, live ln 101, enc 0
+  i64 1
+  (w64 0x1)
+✅ Before `i` (decl src ln 96) assn asm ln 7226, prod ln 100.15, live ln 101, enc 0 symbolic value matches after assn asm ln 5333, prod ln 96.0, live ln 100, enc 0
+
+❌ After `i` assns checked using before as reference
+Assignments:         i
+  Reference:         2
+  Test:              2
+Matching:
+  Matching Coords:   0
+  Matching Value:    1
+Consistency Errors:
+  Mismatched Coords: 1
+  Mismatched Value:  0
+Availability Errors:
+  Ref Not Encount.:  1
+  Ref Not in Test:   0
+  Test Not Encount.: 1
+  Test Not in Ref:   0
+Warnings:
+  Unused:            0
+  Removable:         0
+  Unreachable:       0
+Reference Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: false
+  Within Fork Limit: false
+Test Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: false
+  Within Fork Limit: false
+
+❌ Before assn asm ln 7541, prod ln 158.37, live ln 159, enc None for `j` (decl src ln 96) was not encountered during execution
+
+❌ After assn asm ln 5570, prod ln 158.37, live ln 159, enc None for `j` (decl src ln 96) was not encountered during execution
+
+❌ After `j` assns checked using before as reference
+Assignments:         j
+  Reference:         1
+  Test:              1
+Matching:
+  Matching Coords:   0
+  Matching Value:    0
+Consistency Errors:
+  Mismatched Coords: 0
+  Mismatched Value:  0
+Availability Errors:
+  Ref Not Encount.:  1
+  Ref Not in Test:   0
+  Test Not Encount.: 1
+  Test Not in Ref:   0
+Warnings:
+  Unused:            0
+  Removable:         0
+  Unreachable:       0
+Reference Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: false
+  Within Fork Limit: false
+Test Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: false
+  Within Fork Limit: false
+
+Checking equivalence of `m` (decl src ln 80) from
+  assn asm ln 5323, prod ln 80.0, live ln 100, enc 0
+  i64 %m
+  (ReadLSB w64 (w32 0x0) primal_bea_mpp.m)
+and
+  assn asm ln 7198, prod ln 80.0, live ln 100, enc 0
+  i64 %m
+  (ReadLSB w64 (w32 0x0) primal_bea_mpp.m)
+Query to parse
+array primal_bea_mpp.m[8] : w32 -> w8 = symbolic
+array primal_bea_mpp.m[8] : w32 -> w8 = symbolic
+(query [] (Eq (ReadLSB w64 (w32 0x0) primal_bea_mpp.m)
+     (ReadLSB w64 (w32 0x0) primal_bea_mpp.m)))
+Parsed query
+(Eq N0:(ReadLSB w64 (w32 0x0) primal_bea_mpp.m)
+     N0)
+✅ Before `m` (decl src ln 80) assn asm ln 7198, prod ln 80.0, live ln 100, enc 0 symbolic value matches after assn asm ln 5323, prod ln 80.0, live ln 100, enc 0
+
+✅ After `m` assns checked using before as reference
+Assignments:         m
+  Reference:         1
+  Test:              1
+Matching:
+  Matching Coords:   1
+  Matching Value:    1
+Consistency Errors:
+  Mismatched Coords: 0
+  Mismatched Value:  0
+Availability Errors:
+  Ref Not Encount.:  0
+  Ref Not in Test:   0
+  Test Not Encount.: 0
+  Test Not in Ref:   0
+Warnings:
+  Unused:            0
+  Removable:         0
+  Unreachable:       0
+Reference Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: false
+  Within Fork Limit: false
+Test Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: false
+  Within Fork Limit: false
+
+❌ Before assn asm ln 7388, prod ln 128.29, live ln 129, enc None for `max_elems` (decl src ln 81) was not encountered during execution
+
+Checking equivalence of `max_elems` (decl src ln 81) from
+  assn asm ln 5332, prod ln 81.0, live ln 100, enc 0
+  i64 %max_elems
+  (ReadLSB w64 (w32 0x0) primal_bea_mpp.max_elems)
+and
+  assn asm ln 7216, prod ln 81.0, live ln 100, enc 0
+  i64 %max_elems
+  (ReadLSB w64 (w32 0x0) primal_bea_mpp.max_elems)
+Query to parse
+array primal_bea_mpp.max_elems[8] : w32 -> w8 = symbolic
+array primal_bea_mpp.max_elems[8] : w32 -> w8 = symbolic
+(query [] (Eq (ReadLSB w64 (w32 0x0) primal_bea_mpp.max_elems)
+     (ReadLSB w64 (w32 0x0) primal_bea_mpp.max_elems)))
+Parsed query
+(Eq N0:(ReadLSB w64 (w32 0x0) primal_bea_mpp.max_elems)
+     N0)
+✅ Before `max_elems` (decl src ln 81) assn asm ln 7216, prod ln 81.0, live ln 100, enc 0 symbolic value matches after assn asm ln 5332, prod ln 81.0, live ln 100, enc 0
+
+❌ After `max_elems` assns checked using before as reference
+Assignments:         max_elems
+  Reference:         2
+  Test:              1
+Matching:
+  Matching Coords:   1
+  Matching Value:    1
+Consistency Errors:
+  Mismatched Coords: 0
+  Mismatched Value:  0
+Availability Errors:
+  Ref Not Encount.:  1
+  Ref Not in Test:   0
+  Test Not Encount.: 0
+  Test Not in Ref:   0
+Warnings:
+  Unused:            0
+  Removable:         0
+  Unreachable:       0
+Reference Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: false
+  Within Fork Limit: false
+Test Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: false
+  Within Fork Limit: false
+
+❌ Before assn asm ln 7312, prod ln 109.21, live ln 110, enc None for `next` (decl src ln 96) was not encountered during execution
+
+❌ After assn asm ln 5403, prod ln 108.20, live ln 109, enc None for `next` (decl src ln 96) was not encountered during execution
+
+❌ Before `next` (decl src ln 96) assn asm ln 7227, prod ln 100.25, live ln 101, enc 0 coordinates don't match after assn asm ln 5334, prod ln 96.0, live ln 100, enc 0
+Checking equivalence of `next` (decl src ln 96) from
+  assn asm ln 5334, prod ln 96.0, live ln 100, enc 0
+  i64 0
+  (w64 0x0)
+and
+  assn asm ln 7227, prod ln 100.25, live ln 101, enc 0
+  i64 0
+  (w64 0x0)
+✅ Before `next` (decl src ln 96) assn asm ln 7227, prod ln 100.25, live ln 101, enc 0 symbolic value matches after assn asm ln 5334, prod ln 96.0, live ln 100, enc 0
+
+❌ After `next` assns checked using before as reference
+Assignments:         next
+  Reference:         2
+  Test:              2
+Matching:
+  Matching Coords:   0
+  Matching Value:    1
+Consistency Errors:
+  Mismatched Coords: 1
+  Mismatched Value:  0
+Availability Errors:
+  Ref Not Encount.:  1
+  Ref Not in Test:   0
+  Test Not Encount.: 1
+  Test Not in Ref:   0
+Warnings:
+  Unused:            0
+  Removable:         0
+  Unreachable:       0
+Reference Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: false
+  Within Fork Limit: false
+Test Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: false
+  Within Fork Limit: false
+
+❌ Before assn asm ln 7527, prod ln 158.23, live ln 159, enc None for `num_threads` (decl src ln 81) was not encountered during execution
+
+Checking equivalence of `num_threads` (decl src ln 81) from
+  assn asm ln 5331, prod ln 81.0, live ln 100, enc 0
+  i64 %num_threads
+  (ReadLSB w64 (w32 0x0) primal_bea_mpp.num_threads)
+and
+  assn asm ln 7214, prod ln 81.0, live ln 100, enc 0
+  i64 %num_threads
+  (ReadLSB w64 (w32 0x0) primal_bea_mpp.num_threads)
+Query to parse
+array primal_bea_mpp.num_threads[8] : w32 -> w8 = symbolic
+array primal_bea_mpp.num_threads[8] : w32 -> w8 = symbolic
+(query [] (Eq (ReadLSB w64 (w32 0x0) primal_bea_mpp.num_threads)
+     (ReadLSB w64 (w32 0x0) primal_bea_mpp.num_threads)))
+Parsed query
+(Eq N0:(ReadLSB w64 (w32 0x0) primal_bea_mpp.num_threads)
+     N0)
+✅ Before `num_threads` (decl src ln 81) assn asm ln 7214, prod ln 81.0, live ln 100, enc 0 symbolic value matches after assn asm ln 5331, prod ln 81.0, live ln 100, enc 0
+
+❌ After `num_threads` assns checked using before as reference
+Assignments:         num_threads
+  Reference:         2
+  Test:              1
+Matching:
+  Matching Coords:   1
+  Matching Value:    1
+Consistency Errors:
+  Mismatched Coords: 0
+  Mismatched Value:  0
+Availability Errors:
+  Ref Not Encount.:  1
+  Ref Not in Test:   0
+  Test Not Encount.: 0
+  Test Not in Ref:   0
+Warnings:
+  Unused:            0
+  Removable:         0
+  Unreachable:       0
+Reference Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: false
+  Within Fork Limit: false
+Test Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: false
+  Within Fork Limit: false
+
+❌ Before assn asm ln 7516, prod ln 152.21, live ln 153, enc None for `old_end_arc` (decl src ln 97) was not encountered during execution
+
+Checking equivalence of `old_end_arc` (decl src ln 97) from
+  assn asm ln 5437, prod ln 118.23, live ln 119, enc 0
+  %16 = load %struct.arc.0*, %struct.arc.0** %end_arc, l118 c23
+  (w64 0x0)
+and
+  assn asm ln 7359, prod ln 118.23, live ln 119, enc 0
+  %51 = load %struct.arc*, %struct.arc** %50, l118 c23
+  (w64 0x0)
+✅ Before `old_end_arc` (decl src ln 97) assn asm ln 7359, prod ln 118.23, live ln 119, enc 0 symbolic value matches after assn asm ln 5437, prod ln 118.23, live ln 119, enc 0
+
+❌ After `old_end_arc` assns checked using before as reference
+Assignments:         old_end_arc
+  Reference:         2
+  Test:              1
+Matching:
+  Matching Coords:   1
+  Matching Value:    1
+Consistency Errors:
+  Mismatched Coords: 0
+  Mismatched Value:  0
+Availability Errors:
+  Ref Not Encount.:  1
+  Ref Not in Test:   0
+  Test Not Encount.: 0
+  Test Not in Ref:   0
+Warnings:
+  Unused:            0
+  Removable:         0
+  Unreachable:       0
+Reference Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: false
+  Within Fork Limit: false
+Test Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: false
+  Within Fork Limit: false
+
+❌ Before assn asm ln 7584, prod ln 186.12, live ln 187, enc None for `perm` (decl src ln 81) was not encountered during execution
+
+Checking equivalence of `perm` (decl src ln 81) from
+  assn asm ln 5327, prod ln 81.0, live ln 100, enc 0
+  %struct.basket.6** %perm
+  (w64 0x85018994A51789F0)
+and
+  assn asm ln 7206, prod ln 81.0, live ln 100, enc 0
+  %struct.basket** %perm
+  (w64 0x85018994A51789F0)
+✅ Before `perm` (decl src ln 81) assn asm ln 7206, prod ln 81.0, live ln 100, enc 0 symbolic value matches after assn asm ln 5327, prod ln 81.0, live ln 100, enc 0
+
+❌ After `perm` assns checked using before as reference
+Assignments:         perm
+  Reference:         2
+  Test:              1
+Matching:
+  Matching Coords:   1
+  Matching Value:    1
+Consistency Errors:
+  Mismatched Coords: 0
+  Mismatched Value:  0
+Availability Errors:
+  Ref Not Encount.:  1
+  Ref Not in Test:   0
+  Test Not Encount.: 0
+  Test Not in Ref:   0
+Warnings:
+  Unused:            0
+  Removable:         0
+  Unreachable:       0
+Reference Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: false
+  Within Fork Limit: false
+Test Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: false
+  Within Fork Limit: false
+
+❌ Before assn asm ln 7468, prod ln 141.50, live ln 142, enc None for `red_cost` (decl src ln 98) was not encountered during execution
+
+❌ After assn asm ln 5375, prod ln 104.56, live ln 105, enc None for `red_cost` (decl src ln 98) was not encountered during execution
+
+❌ After `red_cost` assns checked using before as reference
+Assignments:         red_cost
+  Reference:         1
+  Test:              1
+Matching:
+  Matching Coords:   0
+  Matching Value:    0
+Consistency Errors:
+  Mismatched Coords: 0
+  Mismatched Value:  0
+Availability Errors:
+  Ref Not Encount.:  1
+  Ref Not in Test:   0
+  Test Not Encount.: 1
+  Test Not in Ref:   0
+Warnings:
+  Unused:            0
+  Removable:         0
+  Unreachable:       0
+Reference Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: false
+  Within Fork Limit: false
+Test Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: false
+  Within Fork Limit: false
+
+Checking equivalence of `step` (decl src ln 81) from
+  assn asm ln 5330, prod ln 81.0, live ln 100, enc 0
+  i64 %step
+  (ReadLSB w64 (w32 0x0) primal_bea_mpp.step)
+and
+  assn asm ln 7212, prod ln 81.0, live ln 100, enc 0
+  i64 %step
+  (ReadLSB w64 (w32 0x0) primal_bea_mpp.step)
+Query to parse
+array primal_bea_mpp.step[8] : w32 -> w8 = symbolic
+array primal_bea_mpp.step[8] : w32 -> w8 = symbolic
+(query [] (Eq (ReadLSB w64 (w32 0x0) primal_bea_mpp.step)
+     (ReadLSB w64 (w32 0x0) primal_bea_mpp.step)))
+Parsed query
+(Eq N0:(ReadLSB w64 (w32 0x0) primal_bea_mpp.step)
+     N0)
+✅ Before `step` (decl src ln 81) assn asm ln 7212, prod ln 81.0, live ln 100, enc 0 symbolic value matches after assn asm ln 5330, prod ln 81.0, live ln 100, enc 0
+
+✅ After `step` assns checked using before as reference
+Assignments:         step
+  Reference:         1
+  Test:              1
+Matching:
+  Matching Coords:   1
+  Matching Value:    1
+Consistency Errors:
+  Mismatched Coords: 0
+  Mismatched Value:  0
+Availability Errors:
+  Ref Not Encount.:  0
+  Ref Not in Test:   0
+  Test Not Encount.: 0
+  Test Not in Ref:   0
+Warnings:
+  Unused:            0
+  Removable:         0
+  Unreachable:       0
+Reference Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: false
+  Within Fork Limit: false
+Test Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: false
+  Within Fork Limit: false
+
+Checking equivalence of `stop_arcs` (decl src ln 80) from
+  assn asm ln 5325, prod ln 80.0, live ln 100, enc 0
+  %struct.arc.0* %stop_arcs
+  (w64 0x2D7AA9072607630A)
+and
+  assn asm ln 7202, prod ln 80.0, live ln 100, enc 0
+  %struct.arc* %stop_arcs
+  (w64 0x2D7AA9072607630A)
+✅ Before `stop_arcs` (decl src ln 80) assn asm ln 7202, prod ln 80.0, live ln 100, enc 0 symbolic value matches after assn asm ln 5325, prod ln 80.0, live ln 100, enc 0
+
+✅ After `stop_arcs` assns checked using before as reference
+Assignments:         stop_arcs
+  Reference:         1
+  Test:              1
+Matching:
+  Matching Coords:   1
+  Matching Value:    1
+Consistency Errors:
+  Mismatched Coords: 0
+  Mismatched Value:  0
+Availability Errors:
+  Ref Not Encount.:  0
+  Ref Not in Test:   0
+  Test Not Encount.: 0
+  Test Not in Ref:   0
+Warnings:
+  Unused:            0
+  Removable:         0
+  Unreachable:       0
+Reference Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: false
+  Within Fork Limit: false
+Test Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: false
+  Within Fork Limit: false
+
+❌ Before assn asm ln 7579, prod ln 179.39, live ln 180, enc None for `thread` (decl src ln 81) was not encountered during execution
+
+Checking equivalence of `thread` (decl src ln 81) from
+  assn asm ln 5328, prod ln 81.0, live ln 100, enc 0
+  i32 %thread
+  (ReadLSB w32 (w32 0x0) primal_bea_mpp.thread)
+and
+  assn asm ln 7208, prod ln 81.0, live ln 100, enc 0
+  i32 %thread
+  (ReadLSB w32 (w32 0x0) primal_bea_mpp.thread)
+Query to parse
+array primal_bea_mpp.thread[4] : w32 -> w8 = symbolic
+array primal_bea_mpp.thread[4] : w32 -> w8 = symbolic
+(query [] (Eq (ReadLSB w32 (w32 0x0) primal_bea_mpp.thread)
+     (ReadLSB w32 (w32 0x0) primal_bea_mpp.thread)))
+Parsed query
+(Eq N0:(ReadLSB w32 (w32 0x0) primal_bea_mpp.thread)
+     N0)
+✅ Before `thread` (decl src ln 81) assn asm ln 7208, prod ln 81.0, live ln 100, enc 0 symbolic value matches after assn asm ln 5328, prod ln 81.0, live ln 100, enc 0
+
+❌ After `thread` assns checked using before as reference
+Assignments:         thread
+  Reference:         2
+  Test:              1
+Matching:
+  Matching Coords:   1
+  Matching Value:    1
+Consistency Errors:
+  Mismatched Coords: 0
+  Mismatched Value:  0
+Availability Errors:
+  Ref Not Encount.:  1
+  Ref Not in Test:   0
+  Test Not Encount.: 0
+  Test Not in Ref:   0
+Warnings:
+  Unused:            0
+  Removable:         0
+  Unreachable:       0
+Reference Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: false
+  Within Fork Limit: false
+Test Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: false
+  Within Fork Limit: false
+
+## Function `spec_qsort`
+
+✅ Before and after function names match
+
+### Variable events
+
+#### Before variables
+
+Store to declared address of `a` (decl src ln 115), asm ln 8521
+  %add.ptr294 = getelementptr inbounds i8, i8* %338, i64 %idx.neg293, l191 c24, asm ln 8520
+  Added assignment asm ln 8521, prod ln 191.24, live ln 192, enc None
+Load from declared address of `a` (decl src ln 115), asm ln 8495
+  %330 = load i8*, i8** %a.addr, l188 c28, asm ln 8495
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8495, prod ln 188.28, live ln 189, enc None
+Load from declared address of `a` (decl src ln 115), asm ln 8417
+  %304 = load i8*, i8** %a.addr, l184 c9, asm ln 8417
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8417, prod ln 184.9, live ln 185, enc None
+Load from declared address of `a` (decl src ln 115), asm ln 8395
+  %300 = load i8*, i8** %a.addr, l183 c13, asm ln 8395
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8395, prod ln 183.13, live ln 184, enc None
+Load from declared address of `a` (decl src ln 115), asm ln 8381
+  %296 = load i8*, i8** %a.addr, l183 c13, asm ln 8381
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8381, prod ln 183.13, live ln 184, enc None
+Load from declared address of `a` (decl src ln 115), asm ln 8374
+  %292 = load i8*, i8** %a.addr, l182 c22, asm ln 8374
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8374, prod ln 182.22, live ln 183, enc None
+Load from declared address of `a` (decl src ln 115), asm ln 8272
+  %249 = load i8*, i8** %a.addr, l176 c43, asm ln 8272
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8272, prod ln 176.43, live ln 177, enc None
+Load from declared address of `a` (decl src ln 115), asm ln 8257
+  %244 = load i8*, i8** %a.addr, l174 c56, asm ln 8257
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8257, prod ln 174.56, live ln 175, enc None
+Load from declared address of `a` (decl src ln 115), asm ln 8249
+  %241 = load i8*, i8** %a.addr, l174 c35, asm ln 8249
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8249, prod ln 174.35, live ln 175, enc None
+Load from declared address of `a` (decl src ln 115), asm ln 8084
+  %170 = load i8*, i8** %a.addr, l158 c58, asm ln 8084
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8084, prod ln 158.58, live ln 159, enc None
+Load from declared address of `a` (decl src ln 115), asm ln 7990
+  %131 = load i8*, i8** %a.addr, l150 c58, asm ln 7990
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7990, prod ln 150.58, live ln 151, enc None
+Load from declared address of `a` (decl src ln 115), asm ln 7968
+  %124 = load i8*, i8** %a.addr, l148 c27, asm ln 7968
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7968, prod ln 148.27, live ln 149, enc None
+Load from declared address of `a` (decl src ln 115), asm ln 7963
+  %122 = load i8*, i8** %a.addr, l146 c27, asm ln 7963
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7963, prod ln 146.27, live ln 147, enc None
+Load from declared address of `a` (decl src ln 115), asm ln 7953
+  %117 = load i8*, i8** %a.addr, l145 c9, asm ln 7953
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7953, prod ln 145.9, live ln 146, enc None
+Load from declared address of `a` (decl src ln 115), asm ln 7943
+  %112 = load i8*, i8** %a.addr, l145 c9, asm ln 7943
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7943, prod ln 145.9, live ln 146, enc None
+Load from declared address of `a` (decl src ln 115), asm ln 7936
+  %106 = load i8*, i8** %a.addr, l145 c9, asm ln 7936
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7936, prod ln 145.9, live ln 146, enc None
+Load from declared address of `a` (decl src ln 115), asm ln 7920
+  %100 = load i8*, i8** %a.addr, l145 c9, asm ln 7920
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7920, prod ln 145.9, live ln 146, enc None
+Load from declared address of `a` (decl src ln 115), asm ln 7913
+  %94 = load i8*, i8** %a.addr, l145 c9, asm ln 7913
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7913, prod ln 145.9, live ln 146, enc None
+Load from declared address of `a` (decl src ln 115), asm ln 7843
+  %65 = load i8*, i8** %a.addr, l136 c30, asm ln 7843
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7843, prod ln 136.30, live ln 137, enc None
+Load from declared address of `a` (decl src ln 115), asm ln 7841
+  %64 = load i8*, i8** %a.addr, l135 c30, asm ln 7841
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7841, prod ln 135.30, live ln 136, enc None
+Load from declared address of `a` (decl src ln 115), asm ln 7829
+  %60 = load i8*, i8** %a.addr, l133 c22, asm ln 7829
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7829, prod ln 133.22, live ln 134, enc None
+Load from declared address of `a` (decl src ln 115), asm ln 7727
+  %17 = load i8*, i8** %a.addr, l128 c43, asm ln 7727
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7727, prod ln 128.43, live ln 129, enc None
+Load from declared address of `a` (decl src ln 115), asm ln 7712
+  %12 = load i8*, i8** %a.addr, l126 c56, asm ln 7712
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7712, prod ln 126.56, live ln 127, enc None
+Load from declared address of `a` (decl src ln 115), asm ln 7704
+  %9 = load i8*, i8** %a.addr, l126 c35, asm ln 7704
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7704, prod ln 126.35, live ln 127, enc None
+Load from declared address of `a` (decl src ln 115), asm ln 7675
+  %4 = load i8*, i8** %a.addr, l123 c9, asm ln 7675
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7675, prod ln 123.9, live ln 124, enc None
+Load from declared address of `a` (decl src ln 115), asm ln 7652
+  %0 = load i8*, i8** %a.addr, l122 c9, asm ln 7652
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7652, prod ln 122.9, live ln 123, enc None
+Store to declared address of `a` (decl src ln 115), asm ln 7627
+  arg 0
+  Added assignment asm ln 7627, prod ln 115.0, live ln 120, enc None
+Store to declared address of `n` (decl src ln 115), asm ln 8526
+  %div295 = udiv i64 %340, %341, !klee.check.div !736, l192 c23, asm ln 8525
+  Added assignment asm ln 8526, prod ln 192.23, live ln 193, enc None
+Load from declared address of `n` (decl src ln 115), asm ln 8375
+  %293 = load i64, i64* %n.addr, l182 c26, asm ln 8375
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8375, prod ln 182.26, live ln 183, enc None
+Load from declared address of `n` (decl src ln 115), asm ln 8258
+  %245 = load i64, i64* %n.addr, l174 c60, asm ln 8258
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8258, prod ln 174.60, live ln 175, enc None
+Load from declared address of `n` (decl src ln 115), asm ln 7969
+  %125 = load i64, i64* %n.addr, l148 c32, asm ln 7969
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7969, prod ln 148.32, live ln 149, enc None
+Load from declared address of `n` (decl src ln 115), asm ln 7855
+  %69 = load i64, i64* %n.addr, l138 c30, asm ln 7855
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7855, prod ln 138.30, live ln 139, enc None
+Load from declared address of `n` (decl src ln 115), asm ln 7850
+  %68 = load i64, i64* %n.addr, l137 c21, asm ln 7850
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7850, prod ln 137.21, live ln 138, enc None
+Load from declared address of `n` (decl src ln 115), asm ln 7844
+  %66 = load i64, i64* %n.addr, l136 c35, asm ln 7844
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7844, prod ln 136.35, live ln 137, enc None
+Load from declared address of `n` (decl src ln 115), asm ln 7836
+  %63 = load i64, i64* %n.addr, l134 c13, asm ln 7836
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7836, prod ln 134.13, live ln 135, enc None
+Load from declared address of `n` (decl src ln 115), asm ln 7830
+  %61 = load i64, i64* %n.addr, l133 c27, asm ln 7830
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7830, prod ln 133.27, live ln 134, enc None
+Load from declared address of `n` (decl src ln 115), asm ln 7713
+  %13 = load i64, i64* %n.addr, l126 c60, asm ln 7713
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7713, prod ln 126.60, live ln 127, enc None
+Load from declared address of `n` (decl src ln 115), asm ln 7699
+  %8 = load i64, i64* %n.addr, l125 c13, asm ln 7699
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7699, prod ln 125.13, live ln 126, enc None
+Store to declared address of `n` (decl src ln 115), asm ln 7629
+  arg 1
+  Added assignment asm ln 7629, prod ln 115.0, live ln 120, enc None
+Load from declared address of `es` (decl src ln 115), asm ln 8523
+  %341 = load i64, i64* %es.addr, l192 c25, asm ln 8523
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8523, prod ln 192.25, live ln 193, enc None
+Load from declared address of `es` (decl src ln 115), asm ln 8512
+  %337 = load i64, i64* %es.addr, l189 c29, asm ln 8512
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8512, prod ln 189.29, live ln 190, enc None
+Load from declared address of `es` (decl src ln 115), asm ln 8500
+  %333 = load i64, i64* %es.addr, l188 c39, asm ln 8500
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8500, prod ln 188.39, live ln 189, enc None
+Load from declared address of `es` (decl src ln 115), asm ln 8497
+  %332 = load i64, i64* %es.addr, l188 c35, asm ln 8497
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8497, prod ln 188.35, live ln 189, enc None
+Load from declared address of `es` (decl src ln 115), asm ln 8490
+  %329 = load i64, i64* %es.addr, l187 c29, asm ln 8490
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8490, prod ln 187.29, live ln 188, enc None
+Load from declared address of `es` (decl src ln 115), asm ln 8459
+  %319 = load i64, i64* %es.addr, l185 c13, asm ln 8459
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8459, prod ln 185.13, live ln 186, enc None
+Load from declared address of `es` (decl src ln 115), asm ln 8440
+  %314 = load i64, i64* %es.addr, l185 c13, asm ln 8440
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8440, prod ln 185.13, live ln 186, enc None
+Load from declared address of `es` (decl src ln 115), asm ln 8376
+  %294 = load i64, i64* %es.addr, l182 c30, asm ln 8376
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8376, prod ln 182.30, live ln 183, enc None
+Load from declared address of `es` (decl src ln 115), asm ln 8367
+  %290 = load i64, i64* %es.addr, l174 c74, asm ln 8367
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8367, prod ln 174.74, live ln 175, enc None
+Load from declared address of `es` (decl src ln 115), asm ln 8359
+  %288 = load i64, i64* %es.addr, l177 c36, asm ln 8359
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8359, prod ln 177.36, live ln 178, enc None
+Load from declared address of `es` (decl src ln 115), asm ln 8351
+  %285 = load i64, i64* %es.addr, l178 c33, asm ln 8351
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8351, prod ln 178.33, live ln 179, enc None
+Load from declared address of `es` (decl src ln 115), asm ln 8348
+  %284 = load i64, i64* %es.addr, l178 c33, asm ln 8348
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8348, prod ln 178.33, live ln 179, enc None
+Load from declared address of `es` (decl src ln 115), asm ln 8338
+  %280 = load i64, i64* %es.addr, l178 c33, asm ln 8338
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8338, prod ln 178.33, live ln 179, enc None
+Load from declared address of `es` (decl src ln 115), asm ln 8328
+  %273 = load i64, i64* %es.addr, l178 c33, asm ln 8328
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8328, prod ln 178.33, live ln 179, enc None
+Load from declared address of `es` (decl src ln 115), asm ln 8309
+  %266 = load i64, i64* %es.addr, l178 c33, asm ln 8309
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8309, prod ln 178.33, live ln 179, enc None
+Load from declared address of `es` (decl src ln 115), asm ln 8299
+  %259 = load i64, i64* %es.addr, l178 c33, asm ln 8299
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8299, prod ln 178.33, live ln 179, enc None
+Load from declared address of `es` (decl src ln 115), asm ln 8279
+  %252 = load i64, i64* %es.addr, l176 c57, asm ln 8279
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8279, prod ln 176.57, live ln 177, enc None
+Load from declared address of `es` (decl src ln 115), asm ln 8259
+  %246 = load i64, i64* %es.addr, l174 c64, asm ln 8259
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8259, prod ln 174.64, live ln 175, enc None
+Load from declared address of `es` (decl src ln 115), asm ln 8250
+  %242 = load i64, i64* %es.addr, l174 c39, asm ln 8250
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8250, prod ln 174.39, live ln 175, enc None
+Load from declared address of `es` (decl src ln 115), asm ln 8236
+  %238 = load i64, i64* %es.addr, l171 c23, asm ln 8236
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8236, prod ln 171.23, live ln 172, enc None
+Load from declared address of `es` (decl src ln 115), asm ln 8232
+  %236 = load i64, i64* %es.addr, l170 c23, asm ln 8232
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8232, prod ln 170.23, live ln 171, enc None
+Load from declared address of `es` (decl src ln 115), asm ln 8223
+  %233 = load i64, i64* %es.addr, l168 c17, asm ln 8223
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8223, prod ln 168.17, live ln 169, enc None
+Load from declared address of `es` (decl src ln 115), asm ln 8161
+  %203 = load i64, i64* %es.addr, l164 c31, asm ln 8161
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8161, prod ln 164.31, live ln 165, enc None
+Load from declared address of `es` (decl src ln 115), asm ln 8153
+  %201 = load i64, i64* %es.addr, l162 c39, asm ln 8153
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8153, prod ln 162.39, live ln 163, enc None
+Load from declared address of `es` (decl src ln 115), asm ln 8145
+  %198 = load i64, i64* %es.addr, l161 c33, asm ln 8145
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8145, prod ln 161.33, live ln 162, enc None
+Load from declared address of `es` (decl src ln 115), asm ln 8066
+  %164 = load i64, i64* %es.addr, l156 c31, asm ln 8066
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8066, prod ln 156.31, live ln 157, enc None
+Load from declared address of `es` (decl src ln 115), asm ln 8059
+  %162 = load i64, i64* %es.addr, l154 c39, asm ln 8059
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8059, prod ln 154.39, live ln 155, enc None
+Load from declared address of `es` (decl src ln 115), asm ln 8051
+  %159 = load i64, i64* %es.addr, l153 c33, asm ln 8051
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8051, prod ln 153.33, live ln 154, enc None
+Load from declared address of `es` (decl src ln 115), asm ln 7971
+  %126 = load i64, i64* %es.addr, l148 c41, asm ln 7971
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7971, prod ln 148.41, live ln 149, enc None
+Load from declared address of `es` (decl src ln 115), asm ln 7964
+  %123 = load i64, i64* %es.addr, l146 c31, asm ln 7964
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7964, prod ln 146.31, live ln 147, enc None
+Load from declared address of `es` (decl src ln 115), asm ln 7955
+  %119 = load i64, i64* %es.addr, l145 c9, asm ln 7955
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7955, prod ln 145.9, live ln 146, enc None
+Load from declared address of `es` (decl src ln 115), asm ln 7857
+  %70 = load i64, i64* %es.addr, l138 c39, asm ln 7857
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7857, prod ln 138.39, live ln 139, enc None
+Load from declared address of `es` (decl src ln 115), asm ln 7846
+  %67 = load i64, i64* %es.addr, l136 c44, asm ln 7846
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7846, prod ln 136.44, live ln 137, enc None
+Load from declared address of `es` (decl src ln 115), asm ln 7832
+  %62 = load i64, i64* %es.addr, l133 c36, asm ln 7832
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7832, prod ln 133.36, live ln 134, enc None
+Load from declared address of `es` (decl src ln 115), asm ln 7822
+  %58 = load i64, i64* %es.addr, l126 c74, asm ln 7822
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7822, prod ln 126.74, live ln 127, enc None
+Load from declared address of `es` (decl src ln 115), asm ln 7814
+  %56 = load i64, i64* %es.addr, l129 c36, asm ln 7814
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7814, prod ln 129.36, live ln 130, enc None
+Load from declared address of `es` (decl src ln 115), asm ln 7806
+  %53 = load i64, i64* %es.addr, l130 c33, asm ln 7806
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7806, prod ln 130.33, live ln 131, enc None
+Load from declared address of `es` (decl src ln 115), asm ln 7803
+  %52 = load i64, i64* %es.addr, l130 c33, asm ln 7803
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7803, prod ln 130.33, live ln 131, enc None
+Load from declared address of `es` (decl src ln 115), asm ln 7793
+  %48 = load i64, i64* %es.addr, l130 c33, asm ln 7793
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7793, prod ln 130.33, live ln 131, enc None
+Load from declared address of `es` (decl src ln 115), asm ln 7783
+  %41 = load i64, i64* %es.addr, l130 c33, asm ln 7783
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7783, prod ln 130.33, live ln 131, enc None
+Load from declared address of `es` (decl src ln 115), asm ln 7764
+  %34 = load i64, i64* %es.addr, l130 c33, asm ln 7764
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7764, prod ln 130.33, live ln 131, enc None
+Load from declared address of `es` (decl src ln 115), asm ln 7754
+  %27 = load i64, i64* %es.addr, l130 c33, asm ln 7754
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7754, prod ln 130.33, live ln 131, enc None
+Load from declared address of `es` (decl src ln 115), asm ln 7734
+  %20 = load i64, i64* %es.addr, l128 c57, asm ln 7734
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7734, prod ln 128.57, live ln 129, enc None
+Load from declared address of `es` (decl src ln 115), asm ln 7714
+  %14 = load i64, i64* %es.addr, l126 c64, asm ln 7714
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7714, prod ln 126.64, live ln 127, enc None
+Load from declared address of `es` (decl src ln 115), asm ln 7705
+  %10 = load i64, i64* %es.addr, l126 c39, asm ln 7705
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7705, prod ln 126.39, live ln 127, enc None
+Load from declared address of `es` (decl src ln 115), asm ln 7689
+  %6 = load i64, i64* %es.addr, l123 c9, asm ln 7689
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7689, prod ln 123.9, live ln 124, enc None
+Load from declared address of `es` (decl src ln 115), asm ln 7683
+  %5 = load i64, i64* %es.addr, l123 c9, asm ln 7683
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7683, prod ln 123.9, live ln 124, enc None
+Load from declared address of `es` (decl src ln 115), asm ln 7666
+  %2 = load i64, i64* %es.addr, l122 c9, asm ln 7666
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7666, prod ln 122.9, live ln 123, enc None
+Load from declared address of `es` (decl src ln 115), asm ln 7660
+  %1 = load i64, i64* %es.addr, l122 c9, asm ln 7660
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7660, prod ln 122.9, live ln 123, enc None
+Store to declared address of `es` (decl src ln 115), asm ln 7631
+  arg 2
+  Added assignment asm ln 7631, prod ln 115.0, live ln 120, enc None
+Load from declared address of `cmp` (decl src ln 115), asm ln 8501
+  %334 = load i32 (i8*, i8*)*, i32 (i8*, i8*)** %cmp.addr, l188 c43, asm ln 8501
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8501, prod ln 188.43, live ln 189, enc None
+Load from declared address of `cmp` (decl src ln 115), asm ln 8277
+  %250 = load i32 (i8*, i8*)*, i32 (i8*, i8*)** %cmp.addr, l176 c48, asm ln 8277
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8277, prod ln 176.48, live ln 177, enc None
+Load from declared address of `cmp` (decl src ln 115), asm ln 8082
+  %168 = load i32 (i8*, i8*)*, i32 (i8*, i8*)** %cmp.addr, l158 c50, asm ln 8082
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8082, prod ln 158.50, live ln 159, enc None
+Load from declared address of `cmp` (decl src ln 115), asm ln 7988
+  %129 = load i32 (i8*, i8*)*, i32 (i8*, i8*)** %cmp.addr, l150 c50, asm ln 7988
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7988, prod ln 150.50, live ln 151, enc None
+Load from declared address of `cmp` (decl src ln 115), asm ln 7901
+  %92 = load i32 (i8*, i8*)*, i32 (i8*, i8*)** %cmp.addr, l143 c39, asm ln 7901
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7901, prod ln 143.39, live ln 144, enc None
+Load from declared address of `cmp` (decl src ln 115), asm ln 7892
+  %88 = load i32 (i8*, i8*)*, i32 (i8*, i8*)** %cmp.addr, l141 c59, asm ln 7892
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7892, prod ln 141.59, live ln 142, enc None
+Load from declared address of `cmp` (decl src ln 115), asm ln 7879
+  %82 = load i32 (i8*, i8*)*, i32 (i8*, i8*)** %cmp.addr, l140 c55, asm ln 7879
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7879, prod ln 140.55, live ln 141, enc None
+Load from declared address of `cmp` (decl src ln 115), asm ln 7868
+  %76 = load i32 (i8*, i8*)*, i32 (i8*, i8*)** %cmp.addr, l139 c59, asm ln 7868
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7868, prod ln 139.59, live ln 140, enc None
+Load from declared address of `cmp` (decl src ln 115), asm ln 7732
+  %18 = load i32 (i8*, i8*)*, i32 (i8*, i8*)** %cmp.addr, l128 c48, asm ln 7732
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7732, prod ln 128.48, live ln 129, enc None
+Store to declared address of `cmp` (decl src ln 115), asm ln 7633
+  arg 3
+  Added assignment asm ln 7633, prod ln 115.0, live ln 120, enc None
+Load from declared address of `pa` (decl src ln 117), asm ln 8485
+  %328 = load i8*, i8** %pa, l187 c23, asm ln 8485
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8485, prod ln 187.23, live ln 188, enc None
+Load from declared address of `pa` (decl src ln 117), asm ln 8403
+  %302 = load i8*, i8** %pa, l183 c13, asm ln 8403
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8403, prod ln 183.13, live ln 184, enc None
+Load from declared address of `pa` (decl src ln 117), asm ln 8394
+  %299 = load i8*, i8** %pa, l183 c13, asm ln 8394
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8394, prod ln 183.13, live ln 184, enc None
+Load from declared address of `pa` (decl src ln 117), asm ln 8386
+  %298 = load i8*, i8** %pa, l183 c13, asm ln 8386
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8386, prod ln 183.13, live ln 184, enc None
+Load from declared address of `pa` (decl src ln 117), asm ln 8380
+  %295 = load i8*, i8** %pa, l183 c13, asm ln 8380
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8380, prod ln 183.13, live ln 184, enc None
+Store to declared address of `pa` (decl src ln 117), asm ln 8062
+  %add.ptr119 = getelementptr inbounds i8, i8* %163, i64 %162, l154 c36, asm ln 8061
+  Added assignment asm ln 8062, prod ln 154.36, live ln 155, enc None
+Load from declared address of `pa` (decl src ln 117), asm ln 8060
+  %163 = load i8*, i8** %pa, l154 c36, asm ln 8060
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8060, prod ln 154.36, live ln 155, enc None
+Load from declared address of `pa` (decl src ln 117), asm ln 8049
+  %157 = load i8*, i8** %pa, l153 c33, asm ln 8049
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8049, prod ln 153.33, live ln 154, enc None
+Load from declared address of `pa` (decl src ln 117), asm ln 8039
+  %152 = load i8*, i8** %pa, l153 c33, asm ln 8039
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8039, prod ln 153.33, live ln 154, enc None
+Load from declared address of `pa` (decl src ln 117), asm ln 8032
+  %146 = load i8*, i8** %pa, l153 c33, asm ln 8032
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8032, prod ln 153.33, live ln 154, enc None
+Load from declared address of `pa` (decl src ln 117), asm ln 8016
+  %140 = load i8*, i8** %pa, l153 c33, asm ln 8016
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8016, prod ln 153.33, live ln 154, enc None
+Load from declared address of `pa` (decl src ln 117), asm ln 8009
+  %134 = load i8*, i8** %pa, l153 c33, asm ln 8009
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8009, prod ln 153.33, live ln 154, enc None
+Store to declared address of `pa` (decl src ln 117), asm ln 7967
+  %add.ptr91 = getelementptr inbounds i8, i8* %122, i64 %123, l146 c29, asm ln 7965
+  Added assignment asm ln 7967, prod ln 146.29, live ln 148, enc None
+Load from declared address of `pb` (decl src ln 117), asm ln 8484
+  %327 = load i8*, i8** %pb, l187 c18, asm ln 8484
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8484, prod ln 187.18, live ln 188, enc None
+Load from declared address of `pb` (decl src ln 117), asm ln 8471
+  %321 = load i8*, i8** %pb, l186 c9, asm ln 8471
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8471, prod ln 186.9, live ln 187, enc None
+Load from declared address of `pb` (decl src ln 117), asm ln 8418
+  %305 = load i8*, i8** %pb, l184 c9, asm ln 8418
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8418, prod ln 184.9, live ln 185, enc None
+Load from declared address of `pb` (decl src ln 117), asm ln 8402
+  %301 = load i8*, i8** %pb, l183 c13, asm ln 8402
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8402, prod ln 183.13, live ln 184, enc None
+Load from declared address of `pb` (decl src ln 117), asm ln 8385
+  %297 = load i8*, i8** %pb, l183 c13, asm ln 8385
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8385, prod ln 183.13, live ln 184, enc None
+Store to declared address of `pb` (decl src ln 117), asm ln 8235
+  %add.ptr170 = getelementptr inbounds i8, i8* %237, i64 %236, l170 c20, asm ln 8234
+  Added assignment asm ln 8235, prod ln 170.20, live ln 171, enc None
+Load from declared address of `pb` (decl src ln 117), asm ln 8233
+  %237 = load i8*, i8** %pb, l170 c20, asm ln 8233
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8233, prod ln 170.20, live ln 171, enc None
+Load from declared address of `pb` (decl src ln 117), asm ln 8221
+  %231 = load i8*, i8** %pb, l168 c17, asm ln 8221
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8221, prod ln 168.17, live ln 169, enc None
+Load from declared address of `pb` (decl src ln 117), asm ln 8211
+  %226 = load i8*, i8** %pb, l168 c17, asm ln 8211
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8211, prod ln 168.17, live ln 169, enc None
+Load from declared address of `pb` (decl src ln 117), asm ln 8204
+  %220 = load i8*, i8** %pb, l168 c17, asm ln 8204
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8204, prod ln 168.17, live ln 169, enc None
+Load from declared address of `pb` (decl src ln 117), asm ln 8188
+  %214 = load i8*, i8** %pb, l168 c17, asm ln 8188
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8188, prod ln 168.17, live ln 169, enc None
+Load from declared address of `pb` (decl src ln 117), asm ln 8181
+  %208 = load i8*, i8** %pb, l168 c17, asm ln 8181
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8181, prod ln 168.17, live ln 169, enc None
+Load from declared address of `pb` (decl src ln 117), asm ln 8169
+  %205 = load i8*, i8** %pb, l166 c21, asm ln 8169
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8169, prod ln 166.21, live ln 167, enc None
+Load from declared address of `pb` (decl src ln 117), asm ln 8076
+  %166 = load i8*, i8** %pb, l158 c24, asm ln 8076
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8076, prod ln 158.24, live ln 159, enc None
+Store to declared address of `pb` (decl src ln 117), asm ln 8069
+  %add.ptr121 = getelementptr inbounds i8, i8* %165, i64 %164, l156 c28, asm ln 8068
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8069, prod ln 156.28, live ln 157, enc None
+Load from declared address of `pb` (decl src ln 117), asm ln 8067
+  %165 = load i8*, i8** %pb, l156 c28, asm ln 8067
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8067, prod ln 156.28, live ln 157, enc None
+Load from declared address of `pb` (decl src ln 117), asm ln 8050
+  %158 = load i8*, i8** %pb, l153 c33, asm ln 8050
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8050, prod ln 153.33, live ln 154, enc None
+Load from declared address of `pb` (decl src ln 117), asm ln 8043
+  %155 = load i8*, i8** %pb, l153 c33, asm ln 8043
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8043, prod ln 153.33, live ln 154, enc None
+Load from declared address of `pb` (decl src ln 117), asm ln 8036
+  %149 = load i8*, i8** %pb, l153 c33, asm ln 8036
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8036, prod ln 153.33, live ln 154, enc None
+Load from declared address of `pb` (decl src ln 117), asm ln 8020
+  %143 = load i8*, i8** %pb, l153 c33, asm ln 8020
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8020, prod ln 153.33, live ln 154, enc None
+Load from declared address of `pb` (decl src ln 117), asm ln 8013
+  %137 = load i8*, i8** %pb, l153 c33, asm ln 8013
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8013, prod ln 153.33, live ln 154, enc None
+Load from declared address of `pb` (decl src ln 117), asm ln 7989
+  %130 = load i8*, i8** %pb, l150 c54, asm ln 7989
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7989, prod ln 150.54, live ln 151, enc None
+Load from declared address of `pb` (decl src ln 117), asm ln 7982
+  %127 = load i8*, i8** %pb, l150 c24, asm ln 7982
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7982, prod ln 150.24, live ln 151, enc None
+Store to declared address of `pb` (decl src ln 117), asm ln 7966
+  %add.ptr91 = getelementptr inbounds i8, i8* %122, i64 %123, l146 c29, asm ln 7965
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7966, prod ln 146.29, live ln 147, enc None
+Load from declared address of `pc` (decl src ln 117), asm ln 8507
+  %336 = load i8*, i8** %pc, l189 c23, asm ln 8507
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8507, prod ln 189.23, live ln 190, enc None
+Load from declared address of `pc` (decl src ln 117), asm ln 8447
+  %316 = load i8*, i8** %pc, l185 c13, asm ln 8447
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8447, prod ln 185.13, live ln 186, enc None
+Load from declared address of `pc` (decl src ln 117), asm ln 8431
+  %311 = load i8*, i8** %pc, l185 c13, asm ln 8431
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8431, prod ln 185.13, live ln 186, enc None
+Store to declared address of `pc` (decl src ln 117), asm ln 8240
+  %add.ptr172 = getelementptr inbounds i8, i8* %239, i64 %idx.neg171, l171 c20, asm ln 8239
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8240, prod ln 171.20, live ln 172, enc None
+Load from declared address of `pc` (decl src ln 117), asm ln 8237
+  %239 = load i8*, i8** %pc, l171 c20, asm ln 8237
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8237, prod ln 171.20, live ln 172, enc None
+Load from declared address of `pc` (decl src ln 117), asm ln 8222
+  %232 = load i8*, i8** %pc, l168 c17, asm ln 8222
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8222, prod ln 168.17, live ln 169, enc None
+Load from declared address of `pc` (decl src ln 117), asm ln 8215
+  %229 = load i8*, i8** %pc, l168 c17, asm ln 8215
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8215, prod ln 168.17, live ln 169, enc None
+Load from declared address of `pc` (decl src ln 117), asm ln 8208
+  %223 = load i8*, i8** %pc, l168 c17, asm ln 8208
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8208, prod ln 168.17, live ln 169, enc None
+Load from declared address of `pc` (decl src ln 117), asm ln 8192
+  %217 = load i8*, i8** %pc, l168 c17, asm ln 8192
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8192, prod ln 168.17, live ln 169, enc None
+Load from declared address of `pc` (decl src ln 117), asm ln 8185
+  %211 = load i8*, i8** %pc, l168 c17, asm ln 8185
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8185, prod ln 168.17, live ln 169, enc None
+Load from declared address of `pc` (decl src ln 117), asm ln 8170
+  %206 = load i8*, i8** %pc, l166 c26, asm ln 8170
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8170, prod ln 166.26, live ln 167, enc None
+Store to declared address of `pc` (decl src ln 117), asm ln 8165
+  %add.ptr151 = getelementptr inbounds i8, i8* %204, i64 %idx.neg150, l164 c28, asm ln 8164
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8165, prod ln 164.28, live ln 165, enc None
+Load from declared address of `pc` (decl src ln 117), asm ln 8162
+  %204 = load i8*, i8** %pc, l164 c28, asm ln 8162
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8162, prod ln 164.28, live ln 165, enc None
+Load from declared address of `pc` (decl src ln 117), asm ln 8143
+  %196 = load i8*, i8** %pc, l161 c33, asm ln 8143
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8143, prod ln 161.33, live ln 162, enc None
+Load from declared address of `pc` (decl src ln 117), asm ln 8133
+  %191 = load i8*, i8** %pc, l161 c33, asm ln 8133
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8133, prod ln 161.33, live ln 162, enc None
+Load from declared address of `pc` (decl src ln 117), asm ln 8126
+  %185 = load i8*, i8** %pc, l161 c33, asm ln 8126
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8126, prod ln 161.33, live ln 162, enc None
+Load from declared address of `pc` (decl src ln 117), asm ln 8110
+  %179 = load i8*, i8** %pc, l161 c33, asm ln 8110
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8110, prod ln 161.33, live ln 162, enc None
+Load from declared address of `pc` (decl src ln 117), asm ln 8103
+  %173 = load i8*, i8** %pc, l161 c33, asm ln 8103
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8103, prod ln 161.33, live ln 162, enc None
+Load from declared address of `pc` (decl src ln 117), asm ln 8083
+  %169 = load i8*, i8** %pc, l158 c54, asm ln 8083
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8083, prod ln 158.54, live ln 159, enc None
+Load from declared address of `pc` (decl src ln 117), asm ln 8077
+  %167 = load i8*, i8** %pc, l158 c30, asm ln 8077
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8077, prod ln 158.30, live ln 159, enc None
+Load from declared address of `pc` (decl src ln 117), asm ln 7983
+  %128 = load i8*, i8** %pc, l150 c30, asm ln 7983
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7983, prod ln 150.30, live ln 151, enc None
+Store to declared address of `pc` (decl src ln 117), asm ln 7975
+  %add.ptr94 = getelementptr inbounds i8, i8* %124, i64 %mul93, l148 c29, asm ln 7973
+  Added assignment asm ln 7975, prod ln 148.29, live ln 149, enc None
+Load from declared address of `pd` (decl src ln 117), asm ln 8506
+  %335 = load i8*, i8** %pd, l189 c18, asm ln 8506
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8506, prod ln 189.18, live ln 190, enc None
+Load from declared address of `pd` (decl src ln 117), asm ln 8455
+  %318 = load i8*, i8** %pd, l185 c13, asm ln 8455
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8455, prod ln 185.13, live ln 186, enc None
+Load from declared address of `pd` (decl src ln 117), asm ln 8446
+  %315 = load i8*, i8** %pd, l185 c13, asm ln 8446
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8446, prod ln 185.13, live ln 186, enc None
+Load from declared address of `pd` (decl src ln 117), asm ln 8436
+  %313 = load i8*, i8** %pd, l185 c13, asm ln 8436
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8436, prod ln 185.13, live ln 186, enc None
+Load from declared address of `pd` (decl src ln 117), asm ln 8430
+  %310 = load i8*, i8** %pd, l185 c13, asm ln 8430
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8430, prod ln 185.13, live ln 186, enc None
+Store to declared address of `pd` (decl src ln 117), asm ln 8157
+  %add.ptr148 = getelementptr inbounds i8, i8* %202, i64 %idx.neg147, l162 c36, asm ln 8156
+  Added assignment asm ln 8157, prod ln 162.36, live ln 163, enc None
+Load from declared address of `pd` (decl src ln 117), asm ln 8154
+  %202 = load i8*, i8** %pd, l162 c36, asm ln 8154
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8154, prod ln 162.36, live ln 163, enc None
+Load from declared address of `pd` (decl src ln 117), asm ln 8144
+  %197 = load i8*, i8** %pd, l161 c33, asm ln 8144
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8144, prod ln 161.33, live ln 162, enc None
+Load from declared address of `pd` (decl src ln 117), asm ln 8137
+  %194 = load i8*, i8** %pd, l161 c33, asm ln 8137
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8137, prod ln 161.33, live ln 162, enc None
+Load from declared address of `pd` (decl src ln 117), asm ln 8130
+  %188 = load i8*, i8** %pd, l161 c33, asm ln 8130
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8130, prod ln 161.33, live ln 162, enc None
+Load from declared address of `pd` (decl src ln 117), asm ln 8114
+  %182 = load i8*, i8** %pd, l161 c33, asm ln 8114
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8114, prod ln 161.33, live ln 162, enc None
+Load from declared address of `pd` (decl src ln 117), asm ln 8107
+  %176 = load i8*, i8** %pd, l161 c33, asm ln 8107
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8107, prod ln 161.33, live ln 162, enc None
+Store to declared address of `pd` (decl src ln 117), asm ln 7974
+  %add.ptr94 = getelementptr inbounds i8, i8* %124, i64 %mul93, l148 c29, asm ln 7973
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7974, prod ln 148.29, live ln 149, enc None
+Store to declared address of `pl` (decl src ln 117), asm ln 8363
+  %add.ptr220 = getelementptr inbounds i8, i8* %289, i64 %idx.neg219, l177 c33, asm ln 8362
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8363, prod ln 177.33, live ln 178, enc None
+Load from declared address of `pl` (decl src ln 117), asm ln 8360
+  %289 = load i8*, i8** %pl, l177 c33, asm ln 8360
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8360, prod ln 177.33, live ln 178, enc None
+Load from declared address of `pl` (decl src ln 117), asm ln 8347
+  %283 = load i8*, i8** %pl, l178 c33, asm ln 8347
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8347, prod ln 178.33, live ln 179, enc None
+Load from declared address of `pl` (decl src ln 117), asm ln 8346
+  %282 = load i8*, i8** %pl, l178 c33, asm ln 8346
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8346, prod ln 178.33, live ln 179, enc None
+Load from declared address of `pl` (decl src ln 117), asm ln 8337
+  %279 = load i8*, i8** %pl, l178 c33, asm ln 8337
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8337, prod ln 178.33, live ln 179, enc None
+Load from declared address of `pl` (decl src ln 117), asm ln 8333
+  %276 = load i8*, i8** %pl, l178 c33, asm ln 8333
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8333, prod ln 178.33, live ln 179, enc None
+Load from declared address of `pl` (decl src ln 117), asm ln 8327
+  %272 = load i8*, i8** %pl, l178 c33, asm ln 8327
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8327, prod ln 178.33, live ln 179, enc None
+Load from declared address of `pl` (decl src ln 117), asm ln 8323
+  %269 = load i8*, i8** %pl, l178 c33, asm ln 8323
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8323, prod ln 178.33, live ln 179, enc None
+Load from declared address of `pl` (decl src ln 117), asm ln 8308
+  %265 = load i8*, i8** %pl, l178 c33, asm ln 8308
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8308, prod ln 178.33, live ln 179, enc None
+Load from declared address of `pl` (decl src ln 117), asm ln 8304
+  %262 = load i8*, i8** %pl, l178 c33, asm ln 8304
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8304, prod ln 178.33, live ln 179, enc None
+Load from declared address of `pl` (decl src ln 117), asm ln 8298
+  %258 = load i8*, i8** %pl, l178 c33, asm ln 8298
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8298, prod ln 178.33, live ln 179, enc None
+Load from declared address of `pl` (decl src ln 117), asm ln 8294
+  %255 = load i8*, i8** %pl, l178 c33, asm ln 8294
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8294, prod ln 178.33, live ln 179, enc None
+Load from declared address of `pl` (decl src ln 117), asm ln 8282
+  %253 = load i8*, i8** %pl, l176 c61, asm ln 8282
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8282, prod ln 176.61, live ln 177, enc None
+Load from declared address of `pl` (decl src ln 117), asm ln 8278
+  %251 = load i8*, i8** %pl, l176 c52, asm ln 8278
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8278, prod ln 176.52, live ln 177, enc None
+Load from declared address of `pl` (decl src ln 117), asm ln 8271
+  %248 = load i8*, i8** %pl, l176 c30, asm ln 8271
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8271, prod ln 176.30, live ln 177, enc None
+Store to declared address of `pl` (decl src ln 117), asm ln 8267
+  %247 = load i8*, i8** %pm, l175 c35, asm ln 8266
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8267, prod ln 175.35, live ln 176, enc None
+Load from declared address of `pl` (decl src ln 117), asm ln 7898
+  %89 = load i8*, i8** %pl, l143 c27, asm ln 7898
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7898, prod ln 143.27, live ln 144, enc None
+Store to declared address of `pl` (decl src ln 117), asm ln 7870
+  %call64 = call i8* @med3(i8* %71, i8* %add.ptr61, i8* %add.ptr63, i32 (i8*, i8*)* %76), l139 c30, asm ln 7869
+  Added assignment asm ln 7870, prod ln 139.30, live ln 140, enc None
+Load from declared address of `pl` (decl src ln 117), asm ln 7864
+  %74 = load i8*, i8** %pl, l139 c47, asm ln 7864
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7864, prod ln 139.47, live ln 140, enc None
+Load from declared address of `pl` (decl src ln 117), asm ln 7861
+  %72 = load i8*, i8** %pl, l139 c39, asm ln 7861
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7861, prod ln 139.39, live ln 140, enc None
+Load from declared address of `pl` (decl src ln 117), asm ln 7860
+  %71 = load i8*, i8** %pl, l139 c35, asm ln 7860
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7860, prod ln 139.35, live ln 140, enc None
+Store to declared address of `pl` (decl src ln 117), asm ln 7842
+  %64 = load i8*, i8** %a.addr, l135 c30, asm ln 7841
+  Added assignment asm ln 7842, prod ln 135.30, live ln 136, enc None
+Store to declared address of `pl` (decl src ln 117), asm ln 7818
+  %add.ptr44 = getelementptr inbounds i8, i8* %57, i64 %idx.neg43, l129 c33, asm ln 7817
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7818, prod ln 129.33, live ln 130, enc None
+Load from declared address of `pl` (decl src ln 117), asm ln 7815
+  %57 = load i8*, i8** %pl, l129 c33, asm ln 7815
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7815, prod ln 129.33, live ln 130, enc None
+Load from declared address of `pl` (decl src ln 117), asm ln 7802
+  %51 = load i8*, i8** %pl, l130 c33, asm ln 7802
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7802, prod ln 130.33, live ln 131, enc None
+Load from declared address of `pl` (decl src ln 117), asm ln 7801
+  %50 = load i8*, i8** %pl, l130 c33, asm ln 7801
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7801, prod ln 130.33, live ln 131, enc None
+Load from declared address of `pl` (decl src ln 117), asm ln 7792
+  %47 = load i8*, i8** %pl, l130 c33, asm ln 7792
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7792, prod ln 130.33, live ln 131, enc None
+Load from declared address of `pl` (decl src ln 117), asm ln 7788
+  %44 = load i8*, i8** %pl, l130 c33, asm ln 7788
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7788, prod ln 130.33, live ln 131, enc None
+Load from declared address of `pl` (decl src ln 117), asm ln 7782
+  %40 = load i8*, i8** %pl, l130 c33, asm ln 7782
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7782, prod ln 130.33, live ln 131, enc None
+Load from declared address of `pl` (decl src ln 117), asm ln 7778
+  %37 = load i8*, i8** %pl, l130 c33, asm ln 7778
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7778, prod ln 130.33, live ln 131, enc None
+Load from declared address of `pl` (decl src ln 117), asm ln 7763
+  %33 = load i8*, i8** %pl, l130 c33, asm ln 7763
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7763, prod ln 130.33, live ln 131, enc None
+Load from declared address of `pl` (decl src ln 117), asm ln 7759
+  %30 = load i8*, i8** %pl, l130 c33, asm ln 7759
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7759, prod ln 130.33, live ln 131, enc None
+Load from declared address of `pl` (decl src ln 117), asm ln 7753
+  %26 = load i8*, i8** %pl, l130 c33, asm ln 7753
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7753, prod ln 130.33, live ln 131, enc None
+Load from declared address of `pl` (decl src ln 117), asm ln 7749
+  %23 = load i8*, i8** %pl, l130 c33, asm ln 7749
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7749, prod ln 130.33, live ln 131, enc None
+Load from declared address of `pl` (decl src ln 117), asm ln 7737
+  %21 = load i8*, i8** %pl, l128 c61, asm ln 7737
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7737, prod ln 128.61, live ln 129, enc None
+Load from declared address of `pl` (decl src ln 117), asm ln 7733
+  %19 = load i8*, i8** %pl, l128 c52, asm ln 7733
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7733, prod ln 128.52, live ln 129, enc None
+Load from declared address of `pl` (decl src ln 117), asm ln 7726
+  %16 = load i8*, i8** %pl, l128 c30, asm ln 7726
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7726, prod ln 128.30, live ln 129, enc None
+Store to declared address of `pl` (decl src ln 117), asm ln 7722
+  %15 = load i8*, i8** %pm, l127 c35, asm ln 7721
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7722, prod ln 127.35, live ln 128, enc None
+Store to declared address of `pm` (decl src ln 117), asm ln 8370
+  %add.ptr223 = getelementptr inbounds i8, i8* %291, i64 %290, l174 c71, asm ln 8369
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8370, prod ln 174.71, live ln 175, enc None
+Load from declared address of `pm` (decl src ln 117), asm ln 8368
+  %291 = load i8*, i8** %pm, l174 c71, asm ln 8368
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8368, prod ln 174.71, live ln 175, enc None
+Load from declared address of `pm` (decl src ln 117), asm ln 8266
+  %247 = load i8*, i8** %pm, l175 c35, asm ln 8266
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8266, prod ln 175.35, live ln 176, enc None
+Load from declared address of `pm` (decl src ln 117), asm ln 8256
+  %243 = load i8*, i8** %pm, l174 c43, asm ln 8256
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8256, prod ln 174.43, live ln 175, enc None
+Store to declared address of `pm` (decl src ln 117), asm ln 8252
+  %add.ptr177 = getelementptr inbounds i8, i8* %241, i64 %242, l174 c37, asm ln 8251
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8252, prod ln 174.37, live ln 175, enc None
+Load from declared address of `pm` (decl src ln 117), asm ln 7954
+  %118 = load i8*, i8** %pm, l145 c9, asm ln 7954
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7954, prod ln 145.9, live ln 146, enc None
+Load from declared address of `pm` (decl src ln 117), asm ln 7947
+  %115 = load i8*, i8** %pm, l145 c9, asm ln 7947
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7947, prod ln 145.9, live ln 146, enc None
+Load from declared address of `pm` (decl src ln 117), asm ln 7940
+  %109 = load i8*, i8** %pm, l145 c9, asm ln 7940
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7940, prod ln 145.9, live ln 146, enc None
+Load from declared address of `pm` (decl src ln 117), asm ln 7924
+  %103 = load i8*, i8** %pm, l145 c9, asm ln 7924
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7924, prod ln 145.9, live ln 146, enc None
+Load from declared address of `pm` (decl src ln 117), asm ln 7917
+  %97 = load i8*, i8** %pm, l145 c9, asm ln 7917
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7917, prod ln 145.9, live ln 146, enc None
+Store to declared address of `pm` (decl src ln 117), asm ln 7903
+  %call76 = call i8* @med3(i8* %89, i8* %90, i8* %91, i32 (i8*, i8*)* %92), l143 c22, asm ln 7902
+  Added assignment asm ln 7903, prod ln 143.22, live ln 144, enc None
+Load from declared address of `pm` (decl src ln 117), asm ln 7899
+  %90 = load i8*, i8** %pm, l143 c31, asm ln 7899
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7899, prod ln 143.31, live ln 144, enc None
+Store to declared address of `pm` (decl src ln 117), asm ln 7881
+  %call68 = call i8* @med3(i8* %add.ptr66, i8* %79, i8* %add.ptr67, i32 (i8*, i8*)* %82), l140 c30, asm ln 7880
+  Added assignment asm ln 7881, prod ln 140.30, live ln 141, enc None
+Load from declared address of `pm` (decl src ln 117), asm ln 7876
+  %80 = load i8*, i8** %pm, l140 c47, asm ln 7876
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7876, prod ln 140.47, live ln 141, enc None
+Load from declared address of `pm` (decl src ln 117), asm ln 7875
+  %79 = load i8*, i8** %pm, l140 c43, asm ln 7875
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7875, prod ln 140.43, live ln 141, enc None
+Load from declared address of `pm` (decl src ln 117), asm ln 7871
+  %77 = load i8*, i8** %pm, l140 c35, asm ln 7871
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7871, prod ln 140.35, live ln 141, enc None
+Store to declared address of `pm` (decl src ln 117), asm ln 7835
+  %add.ptr50 = getelementptr inbounds i8, i8* %60, i64 %mul49, l133 c24, asm ln 7834
+  Added assignment asm ln 7835, prod ln 133.24, live ln 134, enc None
+Store to declared address of `pm` (decl src ln 117), asm ln 7825
+  %add.ptr46 = getelementptr inbounds i8, i8* %59, i64 %58, l126 c71, asm ln 7824
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7825, prod ln 126.71, live ln 127, enc None
+Load from declared address of `pm` (decl src ln 117), asm ln 7823
+  %59 = load i8*, i8** %pm, l126 c71, asm ln 7823
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7823, prod ln 126.71, live ln 127, enc None
+Load from declared address of `pm` (decl src ln 117), asm ln 7721
+  %15 = load i8*, i8** %pm, l127 c35, asm ln 7721
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7721, prod ln 127.35, live ln 128, enc None
+Load from declared address of `pm` (decl src ln 117), asm ln 7711
+  %11 = load i8*, i8** %pm, l126 c43, asm ln 7711
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7711, prod ln 126.43, live ln 127, enc None
+Store to declared address of `pm` (decl src ln 117), asm ln 7707
+  %add.ptr = getelementptr inbounds i8, i8* %9, i64 %10, l126 c37, asm ln 7706
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7707, prod ln 126.37, live ln 127, enc None
+Load from declared address of `pn` (decl src ln 117), asm ln 8517
+  %338 = load i8*, i8** %pn, l191 c21, asm ln 8517
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8517, prod ln 191.21, live ln 192, enc None
+Load from declared address of `pn` (decl src ln 117), asm ln 8472
+  %322 = load i8*, i8** %pn, l186 c9, asm ln 8472
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8472, prod ln 186.9, live ln 187, enc None
+Load from declared address of `pn` (decl src ln 117), asm ln 8454
+  %317 = load i8*, i8** %pn, l185 c13, asm ln 8454
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8454, prod ln 185.13, live ln 186, enc None
+Load from declared address of `pn` (decl src ln 117), asm ln 8435
+  %312 = load i8*, i8** %pn, l185 c13, asm ln 8435
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8435, prod ln 185.13, live ln 186, enc None
+Store to declared address of `pn` (decl src ln 117), asm ln 8379
+  %add.ptr227 = getelementptr inbounds i8, i8* %292, i64 %mul226, l182 c24, asm ln 8378
+  Added assignment asm ln 8379, prod ln 182.24, live ln 183, enc None
+Load from declared address of `pn` (decl src ln 117), asm ln 7900
+  %91 = load i8*, i8** %pn, l143 c35, asm ln 7900
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7900, prod ln 143.35, live ln 144, enc None
+Store to declared address of `pn` (decl src ln 117), asm ln 7894
+  %call74 = call i8* @med3(i8* %add.ptr71, i8* %add.ptr73, i8* %87, i32 (i8*, i8*)* %88), l141 c30, asm ln 7893
+  Added assignment asm ln 7894, prod ln 141.30, live ln 142, enc None
+Load from declared address of `pn` (decl src ln 117), asm ln 7891
+  %87 = load i8*, i8** %pn, l141 c55, asm ln 7891
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7891, prod ln 141.55, live ln 142, enc None
+Load from declared address of `pn` (decl src ln 117), asm ln 7887
+  %85 = load i8*, i8** %pn, l141 c47, asm ln 7887
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7887, prod ln 141.47, live ln 142, enc None
+Load from declared address of `pn` (decl src ln 117), asm ln 7882
+  %83 = load i8*, i8** %pn, l141 c35, asm ln 7882
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7882, prod ln 141.35, live ln 142, enc None
+Store to declared address of `pn` (decl src ln 117), asm ln 7849
+  %add.ptr55 = getelementptr inbounds i8, i8* %65, i64 %mul54, l136 c32, asm ln 7848
+  Added assignment asm ln 7849, prod ln 136.32, live ln 137, enc None
+Load from declared address of `d` (decl src ln 118), asm ln 7888
+  %86 = load i64, i64* %d, l141 c52, asm ln 7888
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7888, prod ln 141.52, live ln 142, enc None
+Load from declared address of `d` (decl src ln 118), asm ln 7883
+  %84 = load i64, i64* %d, l141 c44, asm ln 7883
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7883, prod ln 141.44, live ln 142, enc None
+Load from declared address of `d` (decl src ln 118), asm ln 7877
+  %81 = load i64, i64* %d, l140 c52, asm ln 7877
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7877, prod ln 140.52, live ln 141, enc None
+Load from declared address of `d` (decl src ln 118), asm ln 7872
+  %78 = load i64, i64* %d, l140 c40, asm ln 7872
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7872, prod ln 140.40, live ln 141, enc None
+Load from declared address of `d` (decl src ln 118), asm ln 7865
+  %75 = load i64, i64* %d, l139 c56, asm ln 7865
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7865, prod ln 139.56, live ln 140, enc None
+Load from declared address of `d` (decl src ln 118), asm ln 7862
+  %73 = load i64, i64* %d, l139 c44, asm ln 7862
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7862, prod ln 139.44, live ln 140, enc None
+Store to declared address of `d` (decl src ln 118), asm ln 7859
+  %mul60 = mul i64 %div59, %70, l138 c37, asm ln 7858
+  Added assignment asm ln 7859, prod ln 138.37, live ln 139, enc None
+Load from declared address of `r` (decl src ln 118), asm ln 8522
+  %340 = load i64, i64* %r, l192 c21, asm ln 8522
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8522, prod ln 192.21, live ln 193, enc None
+Load from declared address of `r` (decl src ln 118), asm ln 8518
+  %339 = load i64, i64* %r, l191 c26, asm ln 8518
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8518, prod ln 191.26, live ln 192, enc None
+Store to declared address of `r` (decl src ln 118), asm ln 8511
+  %sub.ptr.sub289 = sub i64 %sub.ptr.lhs.cast287, %sub.ptr.rhs.cast288, l189 c21, asm ln 8510
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8511, prod ln 189.21, live ln 190, enc None
+Load from declared address of `r` (decl src ln 118), asm ln 8496
+  %331 = load i64, i64* %r, l188 c31, asm ln 8496
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8496, prod ln 188.31, live ln 189, enc None
+Store to declared address of `r` (decl src ln 118), asm ln 8489
+  %sub.ptr.sub281 = sub i64 %sub.ptr.lhs.cast279, %sub.ptr.rhs.cast280, l187 c21, asm ln 8488
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8489, prod ln 187.21, live ln 188, enc None
+Load from declared address of `r` (decl src ln 118), asm ln 8476
+  %324 = load i64, i64* %r, l186 c9, asm ln 8476
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8476, prod ln 186.9, live ln 187, enc None
+Load from declared address of `r` (decl src ln 118), asm ln 8473
+  %323 = load i64, i64* %r, l186 c9, asm ln 8473
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8473, prod ln 186.9, live ln 187, enc None
+Load from declared address of `r` (decl src ln 118), asm ln 8466
+  %320 = load i64, i64* %r, l186 c9, asm ln 8466
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8466, prod ln 186.9, live ln 187, enc None
+Store to declared address of `r` (decl src ln 118), asm ln 8465
+  %cond271 = phi i64 [ %sub.ptr.sub264, %cond.true261 ], [ %sub269, %cond.false265 ], l185 c13, asm ln 8464
+  Added assignment asm ln 8465, prod ln 185.13, live ln 186, enc None
+Load from declared address of `r` (decl src ln 118), asm ln 8422
+  %307 = load i64, i64* %r, l184 c9, asm ln 8422
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8422, prod ln 184.9, live ln 185, enc None
+Load from declared address of `r` (decl src ln 118), asm ln 8419
+  %306 = load i64, i64* %r, l184 c9, asm ln 8419
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8419, prod ln 184.9, live ln 185, enc None
+Load from declared address of `r` (decl src ln 118), asm ln 8412
+  %303 = load i64, i64* %r, l184 c9, asm ln 8412
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8412, prod ln 184.9, live ln 185, enc None
+Store to declared address of `r` (decl src ln 118), asm ln 8411
+  %cond244 = phi i64 [ %sub.ptr.sub238, %cond.true235 ], [ %sub.ptr.sub242, %cond.false239 ], l183 c13, asm ln 8410
+  Added assignment asm ln 8411, prod ln 183.13, live ln 184, enc None
+Load from declared address of `cmp_result` (decl src ln 119), asm ln 8091
+  %171 = load i32, i32* %cmp_result, l159 c29, asm ln 8091
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8091, prod ln 159.29, live ln 160, enc None
+Store to declared address of `cmp_result` (decl src ln 119), asm ln 8086
+  %call126 = call i32 %168(i8* %169, i8* %170), l158 c50, asm ln 8085
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8086, prod ln 158.50, live ln 159, enc None
+Load from declared address of `cmp_result` (decl src ln 119), asm ln 7997
+  %132 = load i32, i32* %cmp_result, l151 c29, asm ln 7997
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7997, prod ln 151.29, live ln 152, enc None
+Store to declared address of `cmp_result` (decl src ln 119), asm ln 7992
+  %call99 = call i32 %129(i8* %130, i8* %131), l150 c50, asm ln 7991
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7992, prod ln 150.50, live ln 151, enc None
+Load from declared address of `swaptype_long` (decl src ln 120), asm ln 8478
+  %325 = load i32, i32* %swaptype_long, l186 c9, asm ln 8478
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8478, prod ln 186.9, live ln 187, enc None
+Load from declared address of `swaptype_long` (decl src ln 120), asm ln 8424
+  %308 = load i32, i32* %swaptype_long, l184 c9, asm ln 8424
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8424, prod ln 184.9, live ln 185, enc None
+Load from declared address of `swaptype_long` (decl src ln 120), asm ln 8353
+  %286 = load i32, i32* %swaptype_long, l178 c33, asm ln 8353
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8353, prod ln 178.33, live ln 179, enc None
+Load from declared address of `swaptype_long` (decl src ln 120), asm ln 8288
+  %254 = load i32, i32* %swaptype_long, l178 c33, asm ln 8288
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8288, prod ln 178.33, live ln 179, enc None
+Load from declared address of `swaptype_long` (decl src ln 120), asm ln 8225
+  %234 = load i32, i32* %swaptype_long, l168 c17, asm ln 8225
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8225, prod ln 168.17, live ln 169, enc None
+Load from declared address of `swaptype_long` (decl src ln 120), asm ln 8175
+  %207 = load i32, i32* %swaptype_long, l168 c17, asm ln 8175
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8175, prod ln 168.17, live ln 169, enc None
+Load from declared address of `swaptype_long` (decl src ln 120), asm ln 8147
+  %199 = load i32, i32* %swaptype_long, l161 c33, asm ln 8147
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8147, prod ln 161.33, live ln 162, enc None
+Load from declared address of `swaptype_long` (decl src ln 120), asm ln 8097
+  %172 = load i32, i32* %swaptype_long, l161 c33, asm ln 8097
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8097, prod ln 161.33, live ln 162, enc None
+Load from declared address of `swaptype_long` (decl src ln 120), asm ln 8053
+  %160 = load i32, i32* %swaptype_long, l153 c33, asm ln 8053
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8053, prod ln 153.33, live ln 154, enc None
+Load from declared address of `swaptype_long` (decl src ln 120), asm ln 8003
+  %133 = load i32, i32* %swaptype_long, l153 c33, asm ln 8003
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8003, prod ln 153.33, live ln 154, enc None
+Load from declared address of `swaptype_long` (decl src ln 120), asm ln 7957
+  %120 = load i32, i32* %swaptype_long, l145 c9, asm ln 7957
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7957, prod ln 145.9, live ln 146, enc None
+Load from declared address of `swaptype_long` (decl src ln 120), asm ln 7907
+  %93 = load i32, i32* %swaptype_long, l145 c9, asm ln 7907
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7907, prod ln 145.9, live ln 146, enc None
+Load from declared address of `swaptype_long` (decl src ln 120), asm ln 7808
+  %54 = load i32, i32* %swaptype_long, l130 c33, asm ln 7808
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7808, prod ln 130.33, live ln 131, enc None
+Load from declared address of `swaptype_long` (decl src ln 120), asm ln 7743
+  %22 = load i32, i32* %swaptype_long, l130 c33, asm ln 7743
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7743, prod ln 130.33, live ln 131, enc None
+Store to declared address of `swaptype_long` (decl src ln 120), asm ln 7674
+  %cond4 = phi i32 [ %cond, %cond.false ], [ 2, %lor.lhs.false ], [ 2, %loop ], l122 c9, asm ln 7673
+  Added assignment asm ln 7674, prod ln 122.9, live ln 123, enc None
+Load from declared address of `swaptype_int` (decl src ln 120), asm ln 8479
+  %326 = load i32, i32* %swaptype_int, l186 c9, asm ln 8479
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8479, prod ln 186.9, live ln 187, enc None
+Load from declared address of `swaptype_int` (decl src ln 120), asm ln 8425
+  %309 = load i32, i32* %swaptype_int, l184 c9, asm ln 8425
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8425, prod ln 184.9, live ln 185, enc None
+Load from declared address of `swaptype_int` (decl src ln 120), asm ln 8354
+  %287 = load i32, i32* %swaptype_int, l178 c33, asm ln 8354
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8354, prod ln 178.33, live ln 179, enc None
+Load from declared address of `swaptype_int` (decl src ln 120), asm ln 8317
+  %268 = load i32, i32* %swaptype_int, l178 c33, asm ln 8317
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8317, prod ln 178.33, live ln 179, enc None
+Load from declared address of `swaptype_int` (decl src ln 120), asm ln 8226
+  %235 = load i32, i32* %swaptype_int, l168 c17, asm ln 8226
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8226, prod ln 168.17, live ln 169, enc None
+Load from declared address of `swaptype_int` (decl src ln 120), asm ln 8198
+  %219 = load i32, i32* %swaptype_int, l168 c17, asm ln 8198
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8198, prod ln 168.17, live ln 169, enc None
+Load from declared address of `swaptype_int` (decl src ln 120), asm ln 8148
+  %200 = load i32, i32* %swaptype_int, l161 c33, asm ln 8148
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8148, prod ln 161.33, live ln 162, enc None
+Load from declared address of `swaptype_int` (decl src ln 120), asm ln 8120
+  %184 = load i32, i32* %swaptype_int, l161 c33, asm ln 8120
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8120, prod ln 161.33, live ln 162, enc None
+Load from declared address of `swaptype_int` (decl src ln 120), asm ln 8054
+  %161 = load i32, i32* %swaptype_int, l153 c33, asm ln 8054
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8054, prod ln 153.33, live ln 154, enc None
+Load from declared address of `swaptype_int` (decl src ln 120), asm ln 8026
+  %145 = load i32, i32* %swaptype_int, l153 c33, asm ln 8026
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8026, prod ln 153.33, live ln 154, enc None
+Load from declared address of `swaptype_int` (decl src ln 120), asm ln 7958
+  %121 = load i32, i32* %swaptype_int, l145 c9, asm ln 7958
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7958, prod ln 145.9, live ln 146, enc None
+Load from declared address of `swaptype_int` (decl src ln 120), asm ln 7930
+  %105 = load i32, i32* %swaptype_int, l145 c9, asm ln 7930
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7930, prod ln 145.9, live ln 146, enc None
+Load from declared address of `swaptype_int` (decl src ln 120), asm ln 7809
+  %55 = load i32, i32* %swaptype_int, l130 c33, asm ln 7809
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7809, prod ln 130.33, live ln 131, enc None
+Load from declared address of `swaptype_int` (decl src ln 120), asm ln 7772
+  %36 = load i32, i32* %swaptype_int, l130 c33, asm ln 7772
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7772, prod ln 130.33, live ln 131, enc None
+Store to declared address of `swaptype_int` (decl src ln 120), asm ln 7697
+  %cond17 = phi i32 [ %cond15, %cond.false13 ], [ 2, %lor.lhs.false9 ], [ 2, %cond.end ], l123 c9, asm ln 7696
+  Added assignment asm ln 7697, prod ln 123.9, live ln 124, enc None
+Load from declared address of `swap_cnt` (decl src ln 120), asm ln 8244
+  %240 = load i32, i32* %swap_cnt, l173 c13, asm ln 8244
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8244, prod ln 173.13, live ln 174, enc None
+Store to declared address of `swap_cnt` (decl src ln 120), asm ln 8231
+  const i32 1
+  Added assignment asm ln 8231, prod ln 169.26, live ln 170, enc None
+Store to declared address of `swap_cnt` (decl src ln 120), asm ln 8096
+  const i32 1
+  Added assignment asm ln 8096, prod ln 160.42, live ln 161, enc None
+Store to declared address of `swap_cnt` (decl src ln 120), asm ln 8002
+  const i32 1
+  Added assignment asm ln 8002, prod ln 152.42, live ln 153, enc None
+Store to declared address of `swap_cnt` (decl src ln 120), asm ln 7698
+  const i32 0
+  Added assignment asm ln 7698, prod ln 124.18, live ln 125, enc None
+Load from declared address of `t` (decl src ln 130), asm ln 7762
+  %32 = load i64, i64* %t, l130 c33, asm ln 7762
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7762, prod ln 130.33, live ln 131, enc None
+Store to declared address of `t` (decl src ln 130), asm ln 7752
+  %25 = load i64, i64* %24, l130 c33, asm ln 7751
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7752, prod ln 130.33, live ln 131, enc None
+Load from declared address of `t` (decl src ln 130), asm ln 7791
+  %46 = load i32, i32* %t34, l130 c33, asm ln 7791
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7791, prod ln 130.33, live ln 131, enc None
+Store to declared address of `t` (decl src ln 130), asm ln 7781
+  %39 = load i32, i32* %38, l130 c33, asm ln 7780
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7781, prod ln 130.33, live ln 131, enc None
+Load from declared address of `t` (decl src ln 145), asm ln 7923
+  %102 = load i64, i64* %t81, l145 c9, asm ln 7923
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7923, prod ln 145.9, live ln 146, enc None
+Store to declared address of `t` (decl src ln 145), asm ln 7916
+  %96 = load i64, i64* %95, l145 c9, asm ln 7915
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7916, prod ln 145.9, live ln 146, enc None
+Load from declared address of `t` (decl src ln 145), asm ln 7946
+  %114 = load i32, i32* %t86, l145 c9, asm ln 7946
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7946, prod ln 145.9, live ln 146, enc None
+Store to declared address of `t` (decl src ln 145), asm ln 7939
+  %108 = load i32, i32* %107, l145 c9, asm ln 7938
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 7939, prod ln 145.9, live ln 146, enc None
+Load from declared address of `t` (decl src ln 153), asm ln 8019
+  %142 = load i64, i64* %t109, l153 c33, asm ln 8019
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8019, prod ln 153.33, live ln 154, enc None
+Store to declared address of `t` (decl src ln 153), asm ln 8012
+  %136 = load i64, i64* %135, l153 c33, asm ln 8011
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8012, prod ln 153.33, live ln 154, enc None
+Load from declared address of `t` (decl src ln 153), asm ln 8042
+  %154 = load i32, i32* %t114, l153 c33, asm ln 8042
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8042, prod ln 153.33, live ln 154, enc None
+Store to declared address of `t` (decl src ln 153), asm ln 8035
+  %148 = load i32, i32* %147, l153 c33, asm ln 8034
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8035, prod ln 153.33, live ln 154, enc None
+Load from declared address of `t` (decl src ln 161), asm ln 8113
+  %181 = load i64, i64* %t137, l161 c33, asm ln 8113
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8113, prod ln 161.33, live ln 162, enc None
+Store to declared address of `t` (decl src ln 161), asm ln 8106
+  %175 = load i64, i64* %174, l161 c33, asm ln 8105
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8106, prod ln 161.33, live ln 162, enc None
+Load from declared address of `t` (decl src ln 161), asm ln 8136
+  %193 = load i32, i32* %t142, l161 c33, asm ln 8136
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8136, prod ln 161.33, live ln 162, enc None
+Store to declared address of `t` (decl src ln 161), asm ln 8129
+  %187 = load i32, i32* %186, l161 c33, asm ln 8128
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8129, prod ln 161.33, live ln 162, enc None
+Load from declared address of `t` (decl src ln 168), asm ln 8191
+  %216 = load i64, i64* %t160, l168 c17, asm ln 8191
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8191, prod ln 168.17, live ln 169, enc None
+Store to declared address of `t` (decl src ln 168), asm ln 8184
+  %210 = load i64, i64* %209, l168 c17, asm ln 8183
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8184, prod ln 168.17, live ln 169, enc None
+Load from declared address of `t` (decl src ln 168), asm ln 8214
+  %228 = load i32, i32* %t165, l168 c17, asm ln 8214
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8214, prod ln 168.17, live ln 169, enc None
+Store to declared address of `t` (decl src ln 168), asm ln 8207
+  %222 = load i32, i32* %221, l168 c17, asm ln 8206
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8207, prod ln 168.17, live ln 169, enc None
+Load from declared address of `t` (decl src ln 178), asm ln 8307
+  %264 = load i64, i64* %t198, l178 c33, asm ln 8307
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8307, prod ln 178.33, live ln 179, enc None
+Store to declared address of `t` (decl src ln 178), asm ln 8297
+  %257 = load i64, i64* %256, l178 c33, asm ln 8296
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8297, prod ln 178.33, live ln 179, enc None
+Load from declared address of `t` (decl src ln 178), asm ln 8336
+  %278 = load i32, i32* %t207, l178 c33, asm ln 8336
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8336, prod ln 178.33, live ln 179, enc None
+Store to declared address of `t` (decl src ln 178), asm ln 8326
+  %271 = load i32, i32* %270, l178 c33, asm ln 8325
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 8326, prod ln 178.33, live ln 179, enc None
+
+#### After variables
+
+Value produced for `a` (decl src ln 115), asm ln 5612
+  arg 0
+  Added assignment asm ln 5612, prod ln 115.0, live ln 120, enc None
+Value produced for `n` (decl src ln 115), asm ln 5613
+  arg 1
+  Added assignment asm ln 5613, prod ln 115.0, live ln 120, enc None
+Value produced for `es` (decl src ln 115), asm ln 5614
+  arg 2
+  Added assignment asm ln 5614, prod ln 115.0, live ln 120, enc None
+Value produced for `cmp` (decl src ln 115), asm ln 5615
+  arg 3
+  Added assignment asm ln 5615, prod ln 115.0, live ln 120, enc None
+Value produced for `swap_cnt` (decl src ln 120), asm ln 5662
+  const i32 0
+  Added assignment asm ln 5662, prod ln 120.0, live ln 125, enc None
+Value produced for `pm` (decl src ln 117), asm ln 5668
+  %add.ptr = getelementptr inbounds i8, i8* %a.addr.0, i64 %es, l126 c37, asm ln 5667
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 5668, prod ln 126.37, live ln 127, enc None
+Value produced for `t` (decl src ln 130), asm ln 5699
+  %3 = load i64, i64* %2, l130 c33, asm ln 5698
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 5699, prod ln 130.33, live ln 131, enc None
+Value produced for `t` (decl src ln 130), asm ln 5719
+  %9 = load i32, i32* %8, l130 c33, asm ln 5718
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 5719, prod ln 130.33, live ln 131, enc None
+Value produced for `pl` (decl src ln 117), asm ln 5742
+  %add.ptr44 = getelementptr inbounds i8, i8* %pl.0, i64 %idx.neg43, l129 c33, asm ln 5741
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 5742, prod ln 129.33, live ln 130, enc None
+Value produced for `pm` (decl src ln 117), asm ln 5747
+  %add.ptr46 = getelementptr inbounds i8, i8* %pm.0, i64 %es, l126 c71, asm ln 5746
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 5747, prod ln 126.71, live ln 127, enc None
+Value produced for `pm` (decl src ln 117), asm ln 5754
+  %add.ptr50 = getelementptr inbounds i8, i8* %a.addr.0, i64 %mul49, l133 c24, asm ln 5753
+  Added assignment asm ln 5754, prod ln 133.24, live ln 134, enc None
+Value produced for `pn` (decl src ln 117), asm ln 5763
+  %add.ptr55 = getelementptr inbounds i8, i8* %a.addr.0, i64 %mul54, l136 c32, asm ln 5762
+  Added assignment asm ln 5763, prod ln 136.32, live ln 137, enc None
+Value produced for `d` (decl src ln 118), asm ln 5770
+  %mul60 = mul i64 %div59, %es, l138 c37, asm ln 5769
+  Added assignment asm ln 5770, prod ln 138.37, live ln 139, enc None
+Value produced for `pl` (decl src ln 117), asm ln 5775
+  %call64 = call i8* @med3(i8* %a.addr.0, i8* %add.ptr61, i8* %add.ptr63, i32 (i8*, i8*)* %cmp), l139 c30, asm ln 5774
+  Added assignment asm ln 5775, prod ln 139.30, live ln 140, enc None
+Value produced for `pm` (decl src ln 117), asm ln 5780
+  %call68 = call i8* @med3(i8* %add.ptr66, i8* %add.ptr50, i8* %add.ptr67, i32 (i8*, i8*)* %cmp), l140 c30, asm ln 5779
+  Added assignment asm ln 5780, prod ln 140.30, live ln 141, enc None
+Value produced for `pn` (decl src ln 117), asm ln 5787
+  %call74 = call i8* @med3(i8* %add.ptr71, i8* %add.ptr73, i8* %add.ptr55, i32 (i8*, i8*)* %cmp), l141 c30, asm ln 5786
+  Added assignment asm ln 5787, prod ln 141.30, live ln 142, enc None
+Value produced for `pm` (decl src ln 117), asm ln 5798
+  %call76 = call i8* @med3(i8* %pl.1, i8* %pm.1, i8* %pn.0, i32 (i8*, i8*)* %cmp), l143 c22, asm ln 5797
+  Added assignment asm ln 5798, prod ln 143.22, live ln 144, enc None
+Value produced for `t` (decl src ln 145), asm ln 5810
+  %15 = load i64, i64* %14, l145 c9, asm ln 5809
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 5810, prod ln 145.9, live ln 146, enc None
+Value produced for `t` (decl src ln 145), asm ln 5826
+  %21 = load i32, i32* %20, l145 c9, asm ln 5825
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 5826, prod ln 145.9, live ln 146, enc None
+Value produced for `pb` (decl src ln 117), asm ln 5842
+  %add.ptr91 = getelementptr inbounds i8, i8* %a.addr.0, i64 %es, l146 c29, asm ln 5841
+  Added assignment asm ln 5842, prod ln 146.29, live ln 148, enc None
+Value produced for `pa` (decl src ln 117), asm ln 5843
+  %add.ptr91 = getelementptr inbounds i8, i8* %a.addr.0, i64 %es, l146 c29, asm ln 5841
+  Added assignment asm ln 5843, prod ln 146.29, live ln 148, enc None
+Value produced for `pd` (decl src ln 117), asm ln 5847
+  %add.ptr94 = getelementptr inbounds i8, i8* %a.addr.0, i64 %mul93, l148 c29, asm ln 5846
+  Added assignment asm ln 5847, prod ln 148.29, live ln 149, enc None
+Value produced for `pc` (decl src ln 117), asm ln 5848
+  %add.ptr94 = getelementptr inbounds i8, i8* %a.addr.0, i64 %mul93, l148 c29, asm ln 5846
+  Added assignment asm ln 5848, prod ln 148.29, live ln 149, enc None
+Value produced for `cmp_result` (decl src ln 119), asm ln 5880
+  %call99 = call i32 %cmp(i8* %pb.1, i8* %a.addr.0), l150 c50, asm ln 5879
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 5880, prod ln 150.50, live ln 151, enc None
+Value produced for `swap_cnt` (decl src ln 120), asm ln 5895
+  const i32 1
+  🔔 Missing produced ln, using decl ln
+  Added assignment asm ln 5895, prod ln 120.0, live ln 153, enc None
+Value produced for `t` (decl src ln 153), asm ln 5902
+  %28 = load i64, i64* %27, l153 c33, asm ln 5901
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 5902, prod ln 153.33, live ln 154, enc None
+Value produced for `t` (decl src ln 153), asm ln 5918
+  %34 = load i32, i32* %33, l153 c33, asm ln 5917
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 5918, prod ln 153.33, live ln 154, enc None
+Value produced for `pa` (decl src ln 117), asm ln 5934
+  %add.ptr119 = getelementptr inbounds i8, i8* %pa.1, i64 %es, l154 c36, asm ln 5933
+  Added assignment asm ln 5934, prod ln 154.36, live ln 155, enc None
+Value produced for `pb` (decl src ln 117), asm ln 5943
+  %add.ptr121 = getelementptr inbounds i8, i8* %pb.1, i64 %es, l156 c28, asm ln 5942
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 5943, prod ln 156.28, live ln 157, enc None
+Value produced for `cmp_result` (decl src ln 119), asm ln 5960
+  %call126 = call i32 %cmp(i8* %pc.1, i8* %a.addr.0), l158 c50, asm ln 5959
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 5960, prod ln 158.50, live ln 159, enc None
+Value produced for `swap_cnt` (decl src ln 120), asm ln 5975
+  const i32 1
+  🔔 Missing produced ln, using decl ln
+  Added assignment asm ln 5975, prod ln 120.0, live ln 161, enc None
+Value produced for `t` (decl src ln 161), asm ln 5982
+  %41 = load i64, i64* %40, l161 c33, asm ln 5981
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 5982, prod ln 161.33, live ln 162, enc None
+Value produced for `t` (decl src ln 161), asm ln 5998
+  %47 = load i32, i32* %46, l161 c33, asm ln 5997
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 5998, prod ln 161.33, live ln 162, enc None
+Value produced for `pd` (decl src ln 117), asm ln 6015
+  %add.ptr148 = getelementptr inbounds i8, i8* %pd.1, i64 %idx.neg147, l162 c36, asm ln 6014
+  Added assignment asm ln 6015, prod ln 162.36, live ln 163, enc None
+Value produced for `pc` (decl src ln 117), asm ln 6025
+  %add.ptr151 = getelementptr inbounds i8, i8* %pc.1, i64 %idx.neg150, l164 c28, asm ln 6024
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 6025, prod ln 164.28, live ln 165, enc None
+Value produced for `t` (decl src ln 168), asm ln 6039
+  %53 = load i64, i64* %52, l168 c17, asm ln 6038
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 6039, prod ln 168.17, live ln 169, enc None
+Value produced for `t` (decl src ln 168), asm ln 6055
+  %59 = load i32, i32* %58, l168 c17, asm ln 6054
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 6055, prod ln 168.17, live ln 169, enc None
+Value produced for `swap_cnt` (decl src ln 120), asm ln 6070
+  const i32 1
+  🔔 Missing produced ln, using decl ln
+  Added assignment asm ln 6070, prod ln 120.0, live ln 170, enc None
+Value produced for `pb` (decl src ln 117), asm ln 6072
+  %add.ptr170 = getelementptr inbounds i8, i8* %pb.1, i64 %es, l170 c20, asm ln 6071
+  Added assignment asm ln 6072, prod ln 170.20, live ln 171, enc None
+Value produced for `pc` (decl src ln 117), asm ln 6075
+  %add.ptr172 = getelementptr inbounds i8, i8* %pc.1, i64 %idx.neg171, l171 c20, asm ln 6074
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 6075, prod ln 171.20, live ln 172, enc None
+Value produced for `pm` (decl src ln 117), asm ln 6084
+  %add.ptr177 = getelementptr inbounds i8, i8* %a.addr.0, i64 %es, l174 c37, asm ln 6083
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 6084, prod ln 174.37, live ln 175, enc None
+Value produced for `t` (decl src ln 178), asm ln 6115
+  %65 = load i64, i64* %64, l178 c33, asm ln 6114
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 6115, prod ln 178.33, live ln 179, enc None
+Value produced for `t` (decl src ln 178), asm ln 6135
+  %71 = load i32, i32* %70, l178 c33, asm ln 6134
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 6135, prod ln 178.33, live ln 179, enc None
+Value produced for `pl` (decl src ln 117), asm ln 6158
+  %add.ptr220 = getelementptr inbounds i8, i8* %pl.2, i64 %idx.neg219, l177 c33, asm ln 6157
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 6158, prod ln 177.33, live ln 178, enc None
+Value produced for `pm` (decl src ln 117), asm ln 6163
+  %add.ptr223 = getelementptr inbounds i8, i8* %pm.3, i64 %es, l174 c71, asm ln 6162
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 6163, prod ln 174.71, live ln 175, enc None
+Value produced for `pn` (decl src ln 117), asm ln 6169
+  %add.ptr227 = getelementptr inbounds i8, i8* %a.addr.0, i64 %mul226, l182 c24, asm ln 6168
+  Added assignment asm ln 6169, prod ln 182.24, live ln 183, enc None
+Value produced for `r` (decl src ln 118), asm ln 6184
+  %cond244 = select i1 %cmp233, i64 %sub.ptr.sub238, i64 %sub.ptr.sub242, l183 c13, asm ln 6183
+  Added assignment asm ln 6184, prod ln 183.13, live ln 184, enc None
+Value produced for `r` (decl src ln 118), asm ln 6212
+  %cond271 = select i1 %cmp259, i64 %sub.ptr.sub264, i64 %sub269, l185 c13, asm ln 6211
+  Added assignment asm ln 6212, prod ln 185.13, live ln 186, enc None
+Value produced for `r` (decl src ln 118), asm ln 6227
+  %sub.ptr.sub281 = sub i64 %sub.ptr.lhs.cast279, %sub.ptr.rhs.cast280, l187 c21, asm ln 6226
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 6227, prod ln 187.21, live ln 188, enc None
+Value produced for `r` (decl src ln 118), asm ln 6241
+  %sub.ptr.sub289 = sub i64 %sub.ptr.lhs.cast287, %sub.ptr.rhs.cast288, l189 c21, asm ln 6240
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 6241, prod ln 189.21, live ln 190, enc None
+Value produced for `a` (decl src ln 115), asm ln 6248
+  %add.ptr294 = getelementptr inbounds i8, i8* %add.ptr227, i64 %idx.neg293, l191 c24, asm ln 6247
+  Added assignment asm ln 6248, prod ln 191.24, live ln 192, enc None
+Value produced for `n` (decl src ln 115), asm ln 6251
+  %div295 = udiv i64 %sub.ptr.sub289, %es, !klee.check.div !617, l192 c23, asm ln 6250
+  Added assignment asm ln 6251, prod ln 192.23, live ln 193, enc None
+Value produced for `a` (decl src ln 115), asm ln 5622
+  %a.addr.0 = phi i8* [ %a, %entry ], [ %add.ptr294, %if.then292 ], asm ln 5621
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 5622, prod ln 191.24, live ln 192, enc None
+Value produced for `n` (decl src ln 115), asm ln 5623
+  %n.addr.0 = phi i64 [ %n, %entry ], [ %div295, %if.then292 ], asm ln 5620
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 5623, prod ln 192.23, live ln 193, enc None
+Value produced for `cmp_result` (decl src ln 119), asm ln 5624
+  %cmp_result.0 = phi i32 [ undef, %entry ], [ %cmp_result.5, %if.then292 ], asm ln 5619
+  🔔 Missing produced ln, using decl ln
+  Added assignment asm ln 5624, prod ln 119.0, live ln 122, enc None
+Value produced for `swaptype_long` (decl src ln 120), asm ln 5643
+  %cond4 = phi i32 [ %cond, %cond.false ], [ 2, %loop ], l122 c9, asm ln 5642
+  Added assignment asm ln 5643, prod ln 122.9, live ln 123, enc None
+Value produced for `swaptype_int` (decl src ln 120), asm ln 5661
+  %cond17 = phi i32 [ %cond15, %cond.false13 ], [ 2, %cond.end ], l123 c9, asm ln 5660
+  Added assignment asm ln 5661, prod ln 123.9, live ln 125, enc None
+Value produced for `pm` (decl src ln 117), asm ln 5673
+  %pm.0 = phi i8* [ %add.ptr, %if.then ], [ %add.ptr46, %for.inc45 ], asm ln 5672
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 5673, prod ln 126.71, live ln 127, enc None
+Value produced for `pl` (decl src ln 117), asm ln 5681
+  %pl.0 = phi i8* [ %add.ptr44, %for.inc ], [ %pm.0, %for.cond ], asm ln 5680
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 5681, prod ln 129.33, live ln 130, enc None
+Value produced for `pl` (decl src ln 117), asm ln 5759
+  %a.addr.0 = phi i8* [ %a, %entry ], [ %add.ptr294, %if.then292 ], asm ln 5621
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 5759, prod ln 191.24, live ln 192, enc None
+Value produced for `pl` (decl src ln 117), asm ln 5794
+  %pl.1 = phi i8* [ %call64, %if.then58 ], [ %a.addr.0, %if.then53 ], asm ln 5793
+  Added assignment asm ln 5794, prod ln 139.30, live ln 143, enc None
+Value produced for `pm` (decl src ln 117), asm ln 5795
+  %pm.1 = phi i8* [ %call68, %if.then58 ], [ %add.ptr50, %if.then53 ], asm ln 5792
+  Added assignment asm ln 5795, prod ln 140.30, live ln 143, enc None
+Value produced for `pn` (decl src ln 117), asm ln 5796
+  %pn.0 = phi i8* [ %call74, %if.then58 ], [ %add.ptr55, %if.then53 ], asm ln 5791
+  Added assignment asm ln 5796, prod ln 141.32, live ln 143, enc None
+Value produced for `pm` (decl src ln 117), asm ln 5803
+  %pm.2 = phi i8* [ %call76, %if.end75 ], [ %add.ptr50, %if.end48 ], asm ln 5802
+  Added assignment asm ln 5803, prod ln 143.24, live ln 145, enc None
+Value produced for `swap_cnt` (decl src ln 120), asm ln 5858
+  %swap_cnt.0 = phi i32 [ 0, %if.end90 ], [ 1, %if.end169 ], asm ln 5857
+  🔔 Missing produced ln, using decl ln
+  Added assignment asm ln 5858, prod ln 120.0, live ln 150, enc None
+Value produced for `cmp_result` (decl src ln 119), asm ln 5859
+  %cmp_result.1 = phi i32 [ %cmp_result.0, %if.end90 ], [ %cmp_result.5, %if.end169 ], asm ln 5856
+  🔔 Missing produced ln, using decl ln
+  Added assignment asm ln 5859, prod ln 119.0, live ln 150, enc None
+Value produced for `pa` (decl src ln 117), asm ln 5860
+  %pa.0 = phi i8* [ %add.ptr91, %if.end90 ], [ %pa.1, %if.end169 ], l146 c12, asm ln 5855
+  Added assignment asm ln 5860, prod ln 146.29, live ln 150, enc None
+Value produced for `pb` (decl src ln 117), asm ln 5861
+  %pb.0 = phi i8* [ %add.ptr91, %if.end90 ], [ %add.ptr170, %if.end169 ], asm ln 5854
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 5861, prod ln 170.29, live ln 171, enc None
+Value produced for `pc` (decl src ln 117), asm ln 5862
+  %pc.0 = phi i8* [ %add.ptr94, %if.end90 ], [ %add.ptr172, %if.end169 ], asm ln 5853
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 5862, prod ln 171.29, live ln 172, enc None
+Value produced for `pd` (decl src ln 117), asm ln 5863
+  %pd.0 = phi i8* [ %add.ptr94, %if.end90 ], [ %pd.1, %if.end169 ], l148 c17, asm ln 5852
+  Added assignment asm ln 5863, prod ln 148.29, live ln 150, enc None
+Value produced for `swap_cnt` (decl src ln 120), asm ln 5871
+  %swap_cnt.1 = phi i32 [ %swap_cnt.0, %for.cond95 ], [ %swap_cnt.2, %if.end120 ], asm ln 5870
+  🔔 Missing produced ln, using decl ln
+  Added assignment asm ln 5871, prod ln 120.0, live ln 150, enc None
+Value produced for `cmp_result` (decl src ln 119), asm ln 5872
+  %cmp_result.2 = phi i32 [ %cmp_result.1, %for.cond95 ], [ %cmp_result.3, %if.end120 ], asm ln 5869
+  🔔 Missing produced ln, using decl ln
+  Added assignment asm ln 5872, prod ln 119.0, live ln 150, enc None
+Value produced for `pa` (decl src ln 117), asm ln 5873
+  %pa.1 = phi i8* [ %pa.0, %for.cond95 ], [ %pa.2, %if.end120 ], asm ln 5868
+  Added assignment asm ln 5873, prod ln 146.12, live ln 150, enc None
+Value produced for `pb` (decl src ln 117), asm ln 5874
+  %pb.1 = phi i8* [ %pb.0, %for.cond95 ], [ %add.ptr121, %if.end120 ], asm ln 5867
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 5874, prod ln 156.28, live ln 157, enc None
+Value produced for `cmp_result` (decl src ln 119), asm ln 5887
+  %cmp_result.3 = phi i32 [ %call99, %land.rhs98 ], [ %cmp_result.2, %while.cond ], asm ln 5885
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 5887, prod ln 150.50, live ln 151, enc None
+Value produced for `swap_cnt` (decl src ln 120), asm ln 5940
+  %swap_cnt.2 = phi i32 [ 1, %if.end118 ], [ %swap_cnt.1, %while.body ], asm ln 5939
+  🔔 Missing produced ln, using decl ln
+  Added assignment asm ln 5940, prod ln 120.0, live ln 156, enc None
+Value produced for `pa` (decl src ln 117), asm ln 5941
+  %pa.2 = phi i8* [ %add.ptr119, %if.end118 ], [ %pa.1, %while.body ], asm ln 5938
+  Added assignment asm ln 5941, prod ln 154.36, live ln 156, enc None
+Value produced for `swap_cnt` (decl src ln 120), asm ln 5951
+  %swap_cnt.3 = phi i32 [ %swap_cnt.4, %if.end149 ], [ %swap_cnt.1, %land.end102 ], asm ln 5950
+  🔔 Missing produced ln, using decl ln
+  Added assignment asm ln 5951, prod ln 120.0, live ln 158, enc None
+Value produced for `cmp_result` (decl src ln 119), asm ln 5952
+  %cmp_result.4 = phi i32 [ %cmp_result.5, %if.end149 ], [ %cmp_result.3, %land.end102 ], asm ln 5949
+  🔔 Missing produced ln, using decl ln
+  Added assignment asm ln 5952, prod ln 119.0, live ln 158, enc None
+Value produced for `pc` (decl src ln 117), asm ln 5953
+  %pc.1 = phi i8* [ %add.ptr151, %if.end149 ], [ %pc.0, %land.end102 ], asm ln 5948
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 5953, prod ln 164.28, live ln 165, enc None
+Value produced for `pd` (decl src ln 117), asm ln 5954
+  %pd.1 = phi i8* [ %pd.2, %if.end149 ], [ %pd.0, %land.end102 ], asm ln 5947
+  Added assignment asm ln 5954, prod ln 148.17, live ln 158, enc None
+Value produced for `cmp_result` (decl src ln 119), asm ln 5967
+  %cmp_result.5 = phi i32 [ %call126, %land.rhs125 ], [ %cmp_result.4, %while.cond122 ], asm ln 5965
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 5967, prod ln 158.50, live ln 159, enc None
+Value produced for `swap_cnt` (decl src ln 120), asm ln 6021
+  %swap_cnt.4 = phi i32 [ 1, %if.end146 ], [ %swap_cnt.3, %while.body130 ], asm ln 6020
+  🔔 Missing produced ln, using decl ln
+  Added assignment asm ln 6021, prod ln 120.0, live ln 164, enc None
+Value produced for `pd` (decl src ln 117), asm ln 6022
+  %pd.2 = phi i8* [ %add.ptr148, %if.end146 ], [ %pd.1, %while.body130 ], asm ln 6019
+  Added assignment asm ln 6022, prod ln 162.36, live ln 164, enc None
+Value produced for `pm` (decl src ln 117), asm ln 6089
+  %pm.3 = phi i8* [ %add.ptr177, %if.then176 ], [ %add.ptr223, %for.inc222 ], asm ln 6088
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 6089, prod ln 174.71, live ln 175, enc None
+Value produced for `pl` (decl src ln 117), asm ln 6097
+  %pl.2 = phi i8* [ %add.ptr220, %for.inc218 ], [ %pm.3, %for.cond178 ], asm ln 6096
+  🔔 Live ln too early, using produced ln + 1
+  Added assignment asm ln 6097, prod ln 177.33, live ln 178, enc None
+
+#### Summary
+
+✅ 23 before variables found, 23 after variables found, 0 mismatched
+
+### Symbolic values
+
+#### Before values
+
+[0;35mKLEE: WARNING: Unable to load source file `spec_qsort/spec_qsort.c`
+[0mCollected value for `a`
+  Assignment asm ln 7627, prod ln 115.0, live ln 120, enc 0
+  Concrete pointer resolves to spec_qsort.a.deref, offset (w64 0x0)
+  Created deref expr (ReadLSB w64 (w32 0x0) spec_qsort.a.deref)
+  Replaced concrete pointer with hash (w64 0x442D1AC5CA848F62)
+  i8* %a
+  (w64 0x442D1AC5CA848F62)
+Collected value for `n`
+  Assignment asm ln 7629, prod ln 115.0, live ln 120, enc 0
+  i64 %n
+  (ReadLSB w64 (w32 0x0) spec_qsort.n)
+Collected value for `es`
+  Assignment asm ln 7631, prod ln 115.0, live ln 120, enc 0
+  i64 %es
+  (ReadLSB w64 (w32 0x0) spec_qsort.es)
+Collected value for `cmp`
+  Assignment asm ln 7633, prod ln 115.0, live ln 120, enc 0
+  Concrete pointer resolves to spec_qsort.cmp.deref, offset (w64 0x0)
+  Created deref expr (ReadLSB w64 (w32 0x0) spec_qsort.cmp.deref)
+  Replaced concrete pointer with hash (w64 0xC4E95E1D6B8E1D6E)
+  i32 (i8*, i8*)* %cmp
+  (w64 0xC4E95E1D6B8E1D6E)
+Collected value for `a`
+  Assignment asm ln 7652, prod ln 122.9, live ln 123, enc 1
+  Concrete pointer resolves to spec_qsort.a.deref, offset (w64 0x0)
+  Created deref expr (ReadLSB w64 (w32 0x0) spec_qsort.a.deref)
+  Replaced concrete pointer with hash (w64 0x442D1AC5CA848F62)
+  %0 = load i8*, i8** %a.addr, l122 c9
+  (w64 0x442D1AC5CA848F62)
+Collected value for `es`
+  Assignment asm ln 7660, prod ln 122.9, live ln 123, enc 1
+  %1 = load i64, i64* %es.addr, l122 c9
+  (ReadLSB w64 (w32 0x0) spec_qsort.es)
+Collected value for `es`
+  Assignment asm ln 7666, prod ln 122.9, live ln 123, enc 2
+  %2 = load i64, i64* %es.addr, l122 c9
+  (ReadLSB w64 (w32 0x0) spec_qsort.es)
+Collected value for `swaptype_long`
+  Assignment asm ln 7674, prod ln 122.9, live ln 123, enc 0
+  %cond4 = phi i32 [ %cond, %cond.false ], [ 2, %lor.lhs.false ], [ 2, %loop ], l122 c9
+  Block: 1
+  (w32 0x2)
+Collected value for `a`
+  Assignment asm ln 7675, prod ln 123.9, live ln 124, enc 2
+  Concrete pointer resolves to spec_qsort.a.deref, offset (w64 0x0)
+  Created deref expr (ReadLSB w64 (w32 0x0) spec_qsort.a.deref)
+  Replaced concrete pointer with hash (w64 0x442D1AC5CA848F62)
+  %4 = load i8*, i8** %a.addr, l123 c9
+  (w64 0x442D1AC5CA848F62)
+Collected value for `es`
+  Assignment asm ln 7683, prod ln 123.9, live ln 124, enc 3
+  %5 = load i64, i64* %es.addr, l123 c9
+  (ReadLSB w64 (w32 0x0) spec_qsort.es)
+Collected value for `es`
+  Assignment asm ln 7689, prod ln 123.9, live ln 124, enc 4
+  %6 = load i64, i64* %es.addr, l123 c9
+  (ReadLSB w64 (w32 0x0) spec_qsort.es)
+Collected value for `swaptype_int`
+  Assignment asm ln 7697, prod ln 123.9, live ln 124, enc 0
+  %cond17 = phi i32 [ %cond15, %cond.false13 ], [ 2, %lor.lhs.false9 ], [ 2, %cond.end ], l123 c9
+  Block: 1
+  (w32 0x2)
+Collected value for `swap_cnt`
+  Assignment asm ln 7698, prod ln 124.18, live ln 125, enc 0
+  i32 0
+  (w32 0x0)
+Collected value for `n`
+  Assignment asm ln 7699, prod ln 125.13, live ln 126, enc 1
+  %8 = load i64, i64* %n.addr, l125 c13
+  (ReadLSB w64 (w32 0x0) spec_qsort.n)
+Collected value for `a`
+  Assignment asm ln 7829, prod ln 133.22, live ln 134, enc 3
+  Concrete pointer resolves to spec_qsort.a.deref, offset (w64 0x0)
+  Created deref expr (ReadLSB w64 (w32 0x0) spec_qsort.a.deref)
+  Replaced concrete pointer with hash (w64 0x442D1AC5CA848F62)
+  %60 = load i8*, i8** %a.addr, l133 c22
+  (w64 0x442D1AC5CA848F62)
+Collected value for `a`
+  Assignment asm ln 7704, prod ln 126.35, live ln 127, enc 4
+  Concrete pointer resolves to spec_qsort.a.deref, offset (w64 0x0)
+  Created deref expr (ReadLSB w64 (w32 0x0) spec_qsort.a.deref)
+  Replaced concrete pointer with hash (w64 0x442D1AC5CA848F62)
+  %9 = load i8*, i8** %a.addr, l126 c35
+  (w64 0x442D1AC5CA848F62)
+Collected value for `es`
+  Assignment asm ln 7705, prod ln 126.39, live ln 127, enc 5
+  %10 = load i64, i64* %es.addr, l126 c39
+  (ReadLSB w64 (w32 0x0) spec_qsort.es)
+Collected value for `n`
+  Assignment asm ln 7830, prod ln 133.27, live ln 134, enc 2
+  %61 = load i64, i64* %n.addr, l133 c27
+  (ReadLSB w64 (w32 0x0) spec_qsort.n)
+Collected value for `pm`
+  Assignment asm ln 7707, prod ln 126.37, live ln 127, enc 0
+  %add.ptr = getelementptr inbounds i8, i8* %9, i64 %10, l126 c37
+  (Add w64 (w64 0x10CF592E0)
+          (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 N0:(ReadLSB w64 (w32 0x0) spec_qsort.es)
+                                                                                                                                                                                                                                                                                                                                              N0)
+                                                                                                                                                                                                                                                                                                                                     N0)
+                                                                                                                                                                                                                                                                                                                            N0)
+                                                                                                                                                                                                                                                                                                                   N0)
+                                                                                                                                                                                                                                                                                                          N0)
+                                                                                                                                                                                                                                                                                                 N0)
+                                                                                                                                                                                                                                                                                        N0)
+                                                                                                                                                                                                                                                                               N0)
+                                                                                                                                                                                                                                                                      N0)
+                                                                                                                                                                                                                                                             N0)
+                                                                                                                                                                                                                                                    N0)
+                                                                                                                                                                                                                                           N0)
+                                                                                                                                                                                                                                  N0)
+                                                                                                                                                                                                                         N0)
+                                                                                                                                                                                                                N0)
+                                                                                                                                                                                                       N0)
+                                                                                                                                                                                              N0)
+                                                                                                                                                                                     N0)
+                                                                                                                                                                            N0)
+                                                                                                                                                                   N0)
+                                                                                                                                                          N0)
+                                                                                                                                                 N0)
+                                                                                                                                        N0)
+                                                                                                                               N0)
+                                                                                                                      N0)
+                                                                                                             N0)
+                                                                                                    N0)
+                                                                                           N0)
+                                                                                  N0)
+                                                                         N0)
+                                                                N0)
+                                                       N0)
+                                              N0)
+                                     N0)
+                            N0)
+                   N0))
+Collected value for `pm`
+  Assignment asm ln 7711, prod ln 126.43, live ln 127, enc 1
+  %11 = load i8*, i8** %pm, l126 c43
+  (Add w64 (w64 0x10CF592E0)
+          (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 N0:(ReadLSB w64 (w32 0x0) spec_qsort.es)
+                                                                                                                                                                                                                                                                                                                                              N0)
+                                                                                                                                                                                                                                                                                                                                     N0)
+                                                                                                                                                                                                                                                                                                                            N0)
+                                                                                                                                                                                                                                                                                                                   N0)
+                                                                                                                                                                                                                                                                                                          N0)
+                                                                                                                                                                                                                                                                                                 N0)
+                                                                                                                                                                                                                                                                                        N0)
+                                                                                                                                                                                                                                                                               N0)
+                                                                                                                                                                                                                                                                      N0)
+                                                                                                                                                                                                                                                             N0)
+                                                                                                                                                                                                                                                    N0)
+                                                                                                                                                                                                                                           N0)
+                                                                                                                                                                                                                                  N0)
+                                                                                                                                                                                                                         N0)
+                                                                                                                                                                                                                N0)
+                                                                                                                                                                                                       N0)
+                                                                                                                                                                                              N0)
+                                                                                                                                                                                     N0)
+                                                                                                                                                                            N0)
+                                                                                                                                                                   N0)
+                                                                                                                                                          N0)
+                                                                                                                                                 N0)
+                                                                                                                                        N0)
+                                                                                                                               N0)
+                                                                                                                      N0)
+                                                                                                             N0)
+                                                                                                    N0)
+                                                                                           N0)
+                                                                                  N0)
+                                                                         N0)
+                                                                N0)
+                                                       N0)
+                                              N0)
+                                     N0)
+                            N0)
+                   N0))
+Collected value for `es`
+  Assignment asm ln 7832, prod ln 133.36, live ln 134, enc 6
+  %62 = load i64, i64* %es.addr, l133 c36
+  (ReadLSB w64 (w32 0x0) spec_qsort.es)
+Collected value for `pm`
+  Assignment asm ln 7835, prod ln 133.24, live ln 134, enc 2
+  %add.ptr50 = getelementptr inbounds i8, i8* %60, i64 %mul49, l133 c24
+  (Add w64 (w64 0x10CF592E0)
+          (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 N0:(Mul w64 (UDiv w64 (ReadLSB w64 (w32 0x0) spec_qsort.n)
+                                                                                                                                                                                                                                                                                                                                                                    (w64 0x2))
+                                                                                                                                                                                                                                                                                                                                                          (ReadLSB w64 (w32 0x0) spec_qsort.es))
+                                                                                                                                                                                                                                                                                                                                              N0)
+                                                                                                                                                                                                                                                                                                                                     N0)
+                                                                                                                                                                                                                                                                                                                            N0)
+                                                                                                                                                                                                                                                                                                                   N0)
+                                                                                                                                                                                                                                                                                                          N0)
+                                                                                                                                                                                                                                                                                                 N0)
+                                                                                                                                                                                                                                                                                        N0)
+                                                                                                                                                                                                                                                                               N0)
+                                                                                                                                                                                                                                                                      N0)
+                                                                                                                                                                                                                                                             N0)
+                                                                                                                                                                                                                                                    N0)
+                                                                                                                                                                                                                                           N0)
+                                                                                                                                                                                                                                  N0)
+                                                                                                                                                                                                                         N0)
+                                                                                                                                                                                                                N0)
+                                                                                                                                                                                                       N0)
+                                                                                                                                                                                              N0)
+                                                                                                                                                                                     N0)
+                                                                                                                                                                            N0)
+                                                                                                                                                                   N0)
+                                                                                                                                                          N0)
+                                                                                                                                                 N0)
+                                                                                                                                        N0)
+                                                                                                                               N0)
+                                                                                                                      N0)
+                                                                                                             N0)
+                                                                                                    N0)
+                                                                                           N0)
+                                                                                  N0)
+                                                                         N0)
+                                                                N0)
+                                                       N0)
+                                              N0)
+                                     N0)
+                            N0)
+                   N0))
+Collected value for `a`
+  Assignment asm ln 7712, prod ln 126.56, live ln 127, enc 5
+  Concrete pointer resolves to spec_qsort.a.deref, offset (w64 0x0)
+  Created deref expr (ReadLSB w64 (w32 0x0) spec_qsort.a.deref)
+  Replaced concrete pointer with hash (w64 0x442D1AC5CA848F62)
+  %12 = load i8*, i8** %a.addr, l126 c56
+  (w64 0x442D1AC5CA848F62)
+Collected value for `n`
+  Assignment asm ln 7836, prod ln 134.13, live ln 135, enc 3
+  %63 = load i64, i64* %n.addr, l134 c13
+  (ReadLSB w64 (w32 0x0) spec_qsort.n)
+Collected value for `n`
+  Assignment asm ln 7713, prod ln 126.60, live ln 127, enc 4
+  %13 = load i64, i64* %n.addr, l126 c60
+  (ReadLSB w64 (w32 0x0) spec_qsort.n)
+Collected value for `a`
+  Assignment asm ln 7841, prod ln 135.30, live ln 136, enc 6
+  Concrete pointer resolves to spec_qsort.a.deref, offset (w64 0x0)
+  Created deref expr (ReadLSB w64 (w32 0x0) spec_qsort.a.deref)
+  Replaced concrete pointer with hash (w64 0x442D1AC5CA848F62)
+  %64 = load i8*, i8** %a.addr, l135 c30
+  (w64 0x442D1AC5CA848F62)
+Collected value for `es`
+  Assignment asm ln 7714, prod ln 126.64, live ln 127, enc 7
+  %14 = load i64, i64* %es.addr, l126 c64
+  (ReadLSB w64 (w32 0x0) spec_qsort.es)
+Collected value for `pl`
+  Assignment asm ln 7842, prod ln 135.30, live ln 136, enc 0
+  Concrete pointer resolves to spec_qsort.a.deref, offset (w64 0x0)
+  Created deref expr (ReadLSB w64 (w32 0x0) spec_qsort.a.deref)
+  Replaced concrete pointer with hash (w64 0x442D1AC5CA848F62)
+  %64 = load i8*, i8** %a.addr, l135 c30
+  (w64 0x442D1AC5CA848F62)
+Collected value for `swaptype_long`
+  Assignment asm ln 7907, prod ln 145.9, live ln 146, enc 1
+  %93 = load i32, i32* %swaptype_long, l145 c9
+  (Select w32 (Eq (w64 0x8)
+                 (ReadLSB w64 (w32 0x0) spec_qsort.es))
+             (w32 0x0)
+             (w32 0x1))
+Collected value for `a`
+  Assignment asm ln 7843, prod ln 136.30, live ln 137, enc 7
+  Concrete pointer resolves to spec_qsort.a.deref, offset (w64 0x0)
+  Created deref expr (ReadLSB w64 (w32 0x0) spec_qsort.a.deref)
+  Replaced concrete pointer with hash (w64 0x442D1AC5CA848F62)
+  %65 = load i8*, i8** %a.addr, l136 c30
+  (w64 0x442D1AC5CA848F62)
+Collected value for `n`
+  Assignment asm ln 7844, prod ln 136.35, live ln 137, enc 5
+  %66 = load i64, i64* %n.addr, l136 c35
+  (ReadLSB w64 (w32 0x0) spec_qsort.n)
+Collected value for `pm`
+  Assignment asm ln 7721, prod ln 127.35, live ln 128, enc 3
+  %15 = load i8*, i8** %pm, l127 c35
+  (Add w64 (w64 0x10CF592E0)
+          (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 N0:(ReadLSB w64 (w32 0x0) spec_qsort.es)
+                                                                                                                                                                                                                                                                                                                                              N0)
+                                                                                                                                                                                                                                                                                                                                     N0)
+                                                                                                                                                                                                                                                                                                                            N0)
+                                                                                                                                                                                                                                                                                                                   N0)
+                                                                                                                                                                                                                                                                                                          N0)
+                                                                                                                                                                                                                                                                                                 N0)
+                                                                                                                                                                                                                                                                                        N0)
+                                                                                                                                                                                                                                                                               N0)
+                                                                                                                                                                                                                                                                      N0)
+                                                                                                                                                                                                                                                             N0)
+                                                                                                                                                                                                                                                    N0)
+                                                                                                                                                                                                                                           N0)
+                                                                                                                                                                                                                                  N0)
+                                                                                                                                                                                                                         N0)
+                                                                                                                                                                                                                N0)
+                                                                                                                                                                                                       N0)
+                                                                                                                                                                                              N0)
+                                                                                                                                                                                     N0)
+                                                                                                                                                                            N0)
+                                                                                                                                                                   N0)
+                                                                                                                                                          N0)
+                                                                                                                                                 N0)
+                                                                                                                                        N0)
+                                                                                                                               N0)
+                                                                                                                      N0)
+                                                                                                             N0)
+                                                                                                    N0)
+                                                                                           N0)
+                                                                                  N0)
+                                                                         N0)
+                                                                N0)
+                                                       N0)
+                                              N0)
+                                     N0)
+                            N0)
+                   N0))
+Collected value for `pl`
+  Assignment asm ln 7722, prod ln 127.35, live ln 128, enc 1
+  %15 = load i8*, i8** %pm, l127 c35
+  (Add w64 (w64 0x10CF592E0)
+          (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 N0:(ReadLSB w64 (w32 0x0) spec_qsort.es)
+                                                                                                                                                                                                                                                                                                                                              N0)
+                                                                                                                                                                                                                                                                                                                                     N0)
+                                                                                                                                                                                                                                                                                                                            N0)
+                                                                                                                                                                                                                                                                                                                   N0)
+                                                                                                                                                                                                                                                                                                          N0)
+                                                                                                                                                                                                                                                                                                 N0)
+                                                                                                                                                                                                                                                                                        N0)
+                                                                                                                                                                                                                                                                               N0)
+                                                                                                                                                                                                                                                                      N0)
+                                                                                                                                                                                                                                                             N0)
+                                                                                                                                                                                                                                                    N0)
+                                                                                                                                                                                                                                           N0)
+                                                                                                                                                                                                                                  N0)
+                                                                                                                                                                                                                         N0)
+                                                                                                                                                                                                                N0)
+                                                                                                                                                                                                       N0)
+                                                                                                                                                                                              N0)
+                                                                                                                                                                                     N0)
+                                                                                                                                                                            N0)
+                                                                                                                                                                   N0)
+                                                                                                                                                          N0)
+                                                                                                                                                 N0)
+                                                                                                                                        N0)
+                                                                                                                               N0)
+                                                                                                                      N0)
+                                                                                                             N0)
+                                                                                                    N0)
+                                                                                           N0)
+                                                                                  N0)
+                                                                         N0)
+                                                                N0)
+                                                       N0)
+                                              N0)
+                                     N0)
+                            N0)
+                   N0))
+Collected value for `es`
+  Assignment asm ln 7846, prod ln 136.44, live ln 137, enc 8
+  %67 = load i64, i64* %es.addr, l136 c44
+  (ReadLSB w64 (w32 0x0) spec_qsort.es)
+Collected value for `pn`
+  Assignment asm ln 7849, prod ln 136.32, live ln 137, enc 0
+  %add.ptr55 = getelementptr inbounds i8, i8* %65, i64 %mul54, l136 c32
+  (Add w64 (w64 0x10CF592E0)
+          (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 N0:(Mul w64 (Add w64 (w64 0xFFFFFFFFFFFFFFFF)
+                                                                                                                                                                                                                                                                                                                                                                   (ReadLSB w64 (w32 0x0) spec_qsort.n))
+                                                                                                                                                                                                                                                                                                                                                          (ReadLSB w64 (w32 0x0) spec_qsort.es))
+                                                                                                                                                                                                                                                                                                                                              N0)
+                                                                                                                                                                                                                                                                                                                                     N0)
+                                                                                                                                                                                                                                                                                                                            N0)
+                                                                                                                                                                                                                                                                                                                   N0)
+                                                                                                                                                                                                                                                                                                          N0)
+                                                                                                                                                                                                                                                                                                 N0)
+                                                                                                                                                                                                                                                                                        N0)
+                                                                                                                                                                                                                                                                               N0)
+                                                                                                                                                                                                                                                                      N0)
+                                                                                                                                                                                                                                                             N0)
+                                                                                                                                                                                                                                                    N0)
+                                                                                                                                                                                                                                           N0)
+                                                                                                                                                                                                                                  N0)
+                                                                                                                                                                                                                         N0)
+                                                                                                                                                                                                                N0)
+                                                                                                                                                                                                       N0)
+                                                                                                                                                                                              N0)
+                                                                                                                                                                                     N0)
+                                                                                                                                                                            N0)
+                                                                                                                                                                   N0)
+                                                                                                                                                          N0)
+                                                                                                                                                 N0)
+                                                                                                                                        N0)
+                                                                                                                               N0)
+                                                                                                                      N0)
+                                                                                                             N0)
+                                                                                                    N0)
+                                                                                           N0)
+                                                                                  N0)
+                                                                         N0)
+                                                                N0)
+                                                       N0)
+                                              N0)
+                                     N0)
+                            N0)
+                   N0))
+Collected value for `pl`
+  Assignment asm ln 7726, prod ln 128.30, live ln 129, enc 2
+  %16 = load i8*, i8** %pl, l128 c30
+  (Add w64 (w64 0x10CF592E0)
+          (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 N0:(ReadLSB w64 (w32 0x0) spec_qsort.es)
+                                                                                                                                                                                                                                                                                                                                              N0)
+                                                                                                                                                                                                                                                                                                                                     N0)
+                                                                                                                                                                                                                                                                                                                            N0)
+                                                                                                                                                                                                                                                                                                                   N0)
+                                                                                                                                                                                                                                                                                                          N0)
+                                                                                                                                                                                                                                                                                                 N0)
+                                                                                                                                                                                                                                                                                        N0)
+                                                                                                                                                                                                                                                                               N0)
+                                                                                                                                                                                                                                                                      N0)
+                                                                                                                                                                                                                                                             N0)
+                                                                                                                                                                                                                                                    N0)
+                                                                                                                                                                                                                                           N0)
+                                                                                                                                                                                                                                  N0)
+                                                                                                                                                                                                                         N0)
+                                                                                                                                                                                                                N0)
+                                                                                                                                                                                                       N0)
+                                                                                                                                                                                              N0)
+                                                                                                                                                                                     N0)
+                                                                                                                                                                            N0)
+                                                                                                                                                                   N0)
+                                                                                                                                                          N0)
+                                                                                                                                                 N0)
+                                                                                                                                        N0)
+                                                                                                                               N0)
+                                                                                                                      N0)
+                                                                                                             N0)
+                                                                                                    N0)
+                                                                                           N0)
+                                                                                  N0)
+                                                                         N0)
+                                                                N0)
+                                                       N0)
+                                              N0)
+                                     N0)
+                            N0)
+                   N0))
+Collected value for `swaptype_int`
+  Assignment asm ln 7930, prod ln 145.9, live ln 146, enc 1
+  %105 = load i32, i32* %swaptype_int, l145 c9
+  (Select w32 (Eq (w64 0x4)
+                 (ReadLSB w64 (w32 0x0) spec_qsort.es))
+             (w32 0x0)
+             (w32 0x1))
+Collected value for `a`
+  Assignment asm ln 7727, prod ln 128.43, live ln 129, enc 8
+  Concrete pointer resolves to spec_qsort.a.deref, offset (w64 0x0)
+  Created deref expr (ReadLSB w64 (w32 0x0) spec_qsort.a.deref)
+  Replaced concrete pointer with hash (w64 0x442D1AC5CA848F62)
+  %17 = load i8*, i8** %a.addr, l128 c43
+  (w64 0x442D1AC5CA848F62)
+Collected value for `n`
+  Assignment asm ln 7850, prod ln 137.21, live ln 138, enc 6
+  %68 = load i64, i64* %n.addr, l137 c21
+  (ReadLSB w64 (w32 0x0) spec_qsort.n)
+Collected value for `pl`
+  Assignment asm ln 7898, prod ln 143.27, live ln 144, enc 3
+  Concrete pointer resolves to spec_qsort.a.deref, offset (w64 0x0)
+  Created deref expr (ReadLSB w64 (w32 0x0) spec_qsort.a.deref)
+  Replaced concrete pointer with hash (w64 0x442D1AC5CA848F62)
+  %89 = load i8*, i8** %pl, l143 c27
+  (w64 0x442D1AC5CA848F62)
+Collected value for `a`
+  Assignment asm ln 7913, prod ln 145.9, live ln 146, enc 9
+  Concrete pointer resolves to spec_qsort.a.deref, offset (w64 0x0)
+  Created deref expr (ReadLSB w64 (w32 0x0) spec_qsort.a.deref)
+  Replaced concrete pointer with hash (w64 0x442D1AC5CA848F62)
+  %94 = load i8*, i8** %a.addr, l145 c9
+  (w64 0x442D1AC5CA848F62)
+Collected value for `pm`
+  Assignment asm ln 7899, prod ln 143.31, live ln 144, enc 4
+  %90 = load i8*, i8** %pm, l143 c31
+  (Add w64 (w64 0x10CF592E0)
+          (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 N0:(Mul w64 (UDiv w64 (ReadLSB w64 (w32 0x0) spec_qsort.n)
+                                                                                                                                                                                                                                                                                                                                                                    (w64 0x2))
+                                                                                                                                                                                                                                                                                                                                                          (ReadLSB w64 (w32 0x0) spec_qsort.es))
+                                                                                                                                                                                                                                                                                                                                              N0)
+                                                                                                                                                                                                                                                                                                                                     N0)
+                                                                                                                                                                                                                                                                                                                            N0)
+                                                                                                                                                                                                                                                                                                                   N0)
+                                                                                                                                                                                                                                                                                                          N0)
+                                                                                                                                                                                                                                                                                                 N0)
+                                                                                                                                                                                                                                                                                        N0)
+                                                                                                                                                                                                                                                                               N0)
+                                                                                                                                                                                                                                                                      N0)
+                                                                                                                                                                                                                                                             N0)
+                                                                                                                                                                                                                                                    N0)
+                                                                                                                                                                                                                                           N0)
+                                                                                                                                                                                                                                  N0)
+                                                                                                                                                                                                                         N0)
+                                                                                                                                                                                                                N0)
+                                                                                                                                                                                                       N0)
+                                                                                                                                                                                              N0)
+                                                                                                                                                                                     N0)
+                                                                                                                                                                            N0)
+                                                                                                                                                                   N0)
+                                                                                                                                                          N0)
+                                                                                                                                                 N0)
+                                                                                                                                        N0)
+                                                                                                                               N0)
+                                                                                                                      N0)
+                                                                                                             N0)
+                                                                                                    N0)
+                                                                                           N0)
+                                                                                  N0)
+                                                                         N0)
+                                                                N0)
+                                                       N0)
+                                              N0)
+                                     N0)
+                            N0)
+                   N0))
+Collected value for `a`
+  Assignment asm ln 7953, prod ln 145.9, live ln 146, enc 10
+  Concrete pointer resolves to spec_qsort.a.deref, offset (w64 0x0)
+  Created deref expr (ReadLSB w64 (w32 0x0) spec_qsort.a.deref)
+  Replaced concrete pointer with hash (w64 0x442D1AC5CA848F62)
+  %117 = load i8*, i8** %a.addr, l145 c9
+  (w64 0x442D1AC5CA848F62)
+Collected value for `cmp`
+  Assignment asm ln 7732, prod ln 128.48, live ln 129, enc 1
+  Concrete pointer resolves to spec_qsort.cmp.deref, offset (w64 0x0)
+  Created deref expr (ReadLSB w64 (w32 0x0) spec_qsort.cmp.deref)
+  Replaced concrete pointer with hash (w64 0xC4E95E1D6B8E1D6E)
+  %18 = load i32 (i8*, i8*)*, i32 (i8*, i8*)** %cmp.addr, l128 c48
+  (w64 0xC4E95E1D6B8E1D6E)
+Collected value for `n`
+  Assignment asm ln 7855, prod ln 138.30, live ln 139, enc 7
+  %69 = load i64, i64* %n.addr, l138 c30
+  (ReadLSB w64 (w32 0x0) spec_qsort.n)
+Collected value for `pm`
+  Assignment asm ln 7954, prod ln 145.9, live ln 146, enc 5
+  %118 = load i8*, i8** %pm, l145 c9
+  (Add w64 (w64 0x10CF592E0)
+          (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 N0:(Mul w64 (UDiv w64 (ReadLSB w64 (w32 0x0) spec_qsort.n)
+                                                                                                                                                                                                                                                                                                                                                                    (w64 0x2))
+                                                                                                                                                                                                                                                                                                                                                          (ReadLSB w64 (w32 0x0) spec_qsort.es))
+                                                                                                                                                                                                                                                                                                                                              N0)
+                                                                                                                                                                                                                                                                                                                                     N0)
+                                                                                                                                                                                                                                                                                                                            N0)
+                                                                                                                                                                                                                                                                                                                   N0)
+                                                                                                                                                                                                                                                                                                          N0)
+                                                                                                                                                                                                                                                                                                 N0)
+                                                                                                                                                                                                                                                                                        N0)
+                                                                                                                                                                                                                                                                               N0)
+                                                                                                                                                                                                                                                                      N0)
+                                                                                                                                                                                                                                                             N0)
+                                                                                                                                                                                                                                                    N0)
+                                                                                                                                                                                                                                           N0)
+                                                                                                                                                                                                                                  N0)
+                                                                                                                                                                                                                         N0)
+                                                                                                                                                                                                                N0)
+                                                                                                                                                                                                       N0)
+                                                                                                                                                                                              N0)
+                                                                                                                                                                                     N0)
+                                                                                                                                                                            N0)
+                                                                                                                                                                   N0)
+                                                                                                                                                          N0)
+                                                                                                                                                 N0)
+                                                                                                                                        N0)
+                                                                                                                               N0)
+                                                                                                                      N0)
+                                                                                                             N0)
+                                                                                                    N0)
+                                                                                           N0)
+                                                                                  N0)
+                                                                         N0)
+                                                                N0)
+                                                       N0)
+                                              N0)
+                                     N0)
+                            N0)
+                   N0))
+Collected value for `pn`
+  Assignment asm ln 7900, prod ln 143.35, live ln 144, enc 1
+  %91 = load i8*, i8** %pn, l143 c35
+  (Add w64 (w64 0x10CF592E0)
+          (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 N0:(Mul w64 (Add w64 (w64 0xFFFFFFFFFFFFFFFF)
+                                                                                                                                                                                                                                                                                                                                                                   (ReadLSB w64 (w32 0x0) spec_qsort.n))
+                                                                                                                                                                                                                                                                                                                                                          (ReadLSB w64 (w32 0x0) spec_qsort.es))
+                                                                                                                                                                                                                                                                                                                                              N0)
+                                                                                                                                                                                                                                                                                                                                     N0)
+                                                                                                                                                                                                                                                                                                                            N0)
+                                                                                                                                                                                                                                                                                                                   N0)
+                                                                                                                                                                                                                                                                                                          N0)
+                                                                                                                                                                                                                                                                                                 N0)
+                                                                                                                                                                                                                                                                                        N0)
+                                                                                                                                                                                                                                                                               N0)
+                                                                                                                                                                                                                                                                      N0)
+                                                                                                                                                                                                                                                             N0)
+                                                                                                                                                                                                                                                    N0)
+                                                                                                                                                                                                                                           N0)
+                                                                                                                                                                                                                                  N0)
+                                                                                                                                                                                                                         N0)
+                                                                                                                                                                                                                N0)
+                                                                                                                                                                                                       N0)
+                                                                                                                                                                                              N0)
+                                                                                                                                                                                     N0)
+                                                                                                                                                                            N0)
+                                                                                                                                                                   N0)
+                                                                                                                                                          N0)
+                                                                                                                                                 N0)
+                                                                                                                                        N0)
+                                                                                                                               N0)
+                                                                                                                      N0)
+                                                                                                             N0)
+                                                                                                    N0)
+                                                                                           N0)
+                                                                                  N0)
+                                                                         N0)
+                                                                N0)
+                                                       N0)
+                                              N0)
+                                     N0)
+                            N0)
+                   N0))
+Collected value for `pl`
+  Assignment asm ln 7733, prod ln 128.52, live ln 129, enc 4
+  %19 = load i8*, i8** %pl, l128 c52
+  (Add w64 (w64 0x10CF592E0)
+          (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 N0:(ReadLSB w64 (w32 0x0) spec_qsort.es)
+                                                                                                                                                                                                                                                                                                                                              N0)
+                                                                                                                                                                                                                                                                                                                                     N0)
+                                                                                                                                                                                                                                                                                                                            N0)
+                                                                                                                                                                                                                                                                                                                   N0)
+                                                                                                                                                                                                                                                                                                          N0)
+                                                                                                                                                                                                                                                                                                 N0)
+                                                                                                                                                                                                                                                                                        N0)
+                                                                                                                                                                                                                                                                               N0)
+                                                                                                                                                                                                                                                                      N0)
+                                                                                                                                                                                                                                                             N0)
+                                                                                                                                                                                                                                                    N0)
+                                                                                                                                                                                                                                           N0)
+                                                                                                                                                                                                                                  N0)
+                                                                                                                                                                                                                         N0)
+                                                                                                                                                                                                                N0)
+                                                                                                                                                                                                       N0)
+                                                                                                                                                                                              N0)
+                                                                                                                                                                                     N0)
+                                                                                                                                                                            N0)
+                                                                                                                                                                   N0)
+                                                                                                                                                          N0)
+                                                                                                                                                 N0)
+                                                                                                                                        N0)
+                                                                                                                               N0)
+                                                                                                                      N0)
+                                                                                                             N0)
+                                                                                                    N0)
+                                                                                           N0)
+                                                                                  N0)
+                                                                         N0)
+                                                                N0)
+                                                       N0)
+                                              N0)
+                                     N0)
+                            N0)
+                   N0))
+Collected value for `es`
+  Assignment asm ln 7734, prod ln 128.57, live ln 129, enc 9
+  %20 = load i64, i64* %es.addr, l128 c57
+  (ReadLSB w64 (w32 0x0) spec_qsort.es)
+Collected value for `es`
+  Assignment asm ln 7822, prod ln 126.74, live ln 127, enc 10
+  %58 = load i64, i64* %es.addr, l126 c74
+  (ReadLSB w64 (w32 0x0) spec_qsort.es)
+Collected value for `pm`
+  Assignment asm ln 7823, prod ln 126.71, live ln 127, enc 6
+  %59 = load i8*, i8** %pm, l126 c71
+  (Add w64 (w64 0x10CF592E0)
+          (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 N0:(ReadLSB w64 (w32 0x0) spec_qsort.es)
+                                                                                                                                                                                                                                                                                                                                              N0)
+                                                                                                                                                                                                                                                                                                                                     N0)
+                                                                                                                                                                                                                                                                                                                            N0)
+                                                                                                                                                                                                                                                                                                                   N0)
+                                                                                                                                                                                                                                                                                                          N0)
+                                                                                                                                                                                                                                                                                                 N0)
+                                                                                                                                                                                                                                                                                        N0)
+                                                                                                                                                                                                                                                                               N0)
+                                                                                                                                                                                                                                                                      N0)
+                                                                                                                                                                                                                                                             N0)
+                                                                                                                                                                                                                                                    N0)
+                                                                                                                                                                                                                                           N0)
+                                                                                                                                                                                                                                  N0)
+                                                                                                                                                                                                                         N0)
+                                                                                                                                                                                                                N0)
+                                                                                                                                                                                                       N0)
+                                                                                                                                                                                              N0)
+                                                                                                                                                                                     N0)
+                                                                                                                                                                            N0)
+                                                                                                                                                                   N0)
+                                                                                                                                                          N0)
+                                                                                                                                                 N0)
+                                                                                                                                        N0)
+                                                                                                                               N0)
+                                                                                                                      N0)
+                                                                                                             N0)
+                                                                                                    N0)
+                                                                                           N0)
+                                                                                  N0)
+                                                                         N0)
+                                                                N0)
+                                                       N0)
+                                              N0)
+                                     N0)
+                            N0)
+                   N0))
+Collected value for `es`
+  Assignment asm ln 7857, prod ln 138.39, live ln 139, enc 11
+  %70 = load i64, i64* %es.addr, l138 c39
+  (ReadLSB w64 (w32 0x0) spec_qsort.es)
+Collected value for `pl`
+  Assignment asm ln 7737, prod ln 128.61, live ln 129, enc 5
+  %21 = load i8*, i8** %pl, l128 c61
+  (Add w64 (w64 0x10CF592E0)
+          (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 N0:(ReadLSB w64 (w32 0x0) spec_qsort.es)
+                                                                                                                                                                                                                                                                                                                                              N0)
+                                                                                                                                                                                                                                                                                                                                     N0)
+                                                                                                                                                                                                                                                                                                                            N0)
+                                                                                                                                                                                                                                                                                                                   N0)
+                                                                                                                                                                                                                                                                                                          N0)
+                                                                                                                                                                                                                                                                                                 N0)
+                                                                                                                                                                                                                                                                                        N0)
+                                                                                                                                                                                                                                                                               N0)
+                                                                                                                                                                                                                                                                      N0)
+                                                                                                                                                                                                                                                             N0)
+                                                                                                                                                                                                                                                    N0)
+                                                                                                                                                                                                                                           N0)
+                                                                                                                                                                                                                                  N0)
+                                                                                                                                                                                                                         N0)
+                                                                                                                                                                                                                N0)
+                                                                                                                                                                                                       N0)
+                                                                                                                                                                                              N0)
+                                                                                                                                                                                     N0)
+                                                                                                                                                                            N0)
+                                                                                                                                                                   N0)
+                                                                                                                                                          N0)
+                                                                                                                                                 N0)
+                                                                                                                                        N0)
+                                                                                                                               N0)
+                                                                                                                      N0)
+                                                                                                             N0)
+                                                                                                    N0)
+                                                                                           N0)
+                                                                                  N0)
+                                                                         N0)
+                                                                N0)
+                                                       N0)
+                                              N0)
+                                     N0)
+                            N0)
+                   N0))
+Collected value for `d`
+  Assignment asm ln 7859, prod ln 138.37, live ln 139, enc 0
+  %mul60 = mul i64 %div59, %70, l138 c37
+  (Mul w64 (UDiv w64 (ReadLSB w64 (w32 0x0) spec_qsort.n)
+                    (w64 0x8))
+          (ReadLSB w64 (w32 0x0) spec_qsort.es))
+Collected value for `t`
+  Assignment asm ln 7916, prod ln 145.9, live ln 146, enc 0
+  %96 = load i64, i64* %95, l145 c9
+  (ReadLSB w64 (w32 0x0) spec_qsort.a.deref)
+Collected value for `es`
+  Assignment asm ln 7955, prod ln 145.9, live ln 146, enc 12
+  %119 = load i64, i64* %es.addr, l145 c9
+  (ReadLSB w64 (w32 0x0) spec_qsort.es)
+Collected value for `pm`
+  Assignment asm ln 7825, prod ln 126.71, live ln 127, enc 7
+  %add.ptr46 = getelementptr inbounds i8, i8* %59, i64 %58, l126 c71
+  (Add w64 (w64 0x10CF592E0)
+          (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 N0:(ReadLSB w64 (w32 0x0) spec_qsort.es)
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           N0)
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  N0)
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         N0)
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                N0)
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       N0)
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              N0)
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     N0)
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            N0)
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   N0)
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          N0)
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 N0)
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        N0)
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               N0)
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      N0)
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             N0)
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    N0)
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           N0)
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  N0)
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         N0)
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                N0)
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       N0)
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              N0)
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     N0)
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                            N0)
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                   N0)
+                                                                                                                                                                                                                                                                                                                                                                                                                                                          N0)
+                                                                                                                                                                                                                                                                                                                                                                                                                                                 N0)
+                                                                                                                                                                                                                                                                                                                                                                                                                                        N0)
+                                                                                                                                                                                                                                                                                                                                                                                                                               N0)
+                                                                                                                                                                                                                                                                                                                                                                                                                      N0)
+                                                                                                                                                                                                                                                                                                                                                                                                             N0)
+                                                                                                                                                                                                                                                                                                                                                                                                    N0)
+                                                                                                                                                                                                                                                                                                                                                                                           N0)
+                                                                                                                                                                                                                                                                                                                                                                                  N0)
+                                                                                                                                                                                                                                                                                                                                                                         N0)
+                                                                                                                                                                                                                                                                                                                                                                N0)
+                                                                                                                                                                                                                                                                                                                                                       N0)
+                                                                                                                                                                                                                                                                                                                                              N0)
+                                                                                                                                                                                                                                                                                                                                     N0)
+                                                                                                                                                                                                                                                                                                                            N0)
+                                                                                                                                                                                                                                                                                                                   N0)
+                                                                                                                                                                                                                                                                                                          N0)
+                                                                                                                                                                                                                                                                                                 N0)
+                                                                                                                                                                                                                                                                                        N0)
+                                                                                                                                                                                                                                                                               N0)
+                                                                                                                                                                                                                                                                      N0)
+                                                                                                                                                                                                                                                             N0)
+                                                                                                                                                                                                                                                    N0)
+                                                                                                                                                                                                                                           N0)
+                                                                                                                                                                                                                                  N0)
+                                                                                                                                                                                                                         N0)
+                                                                                                                                                                                                                N0)
+                                                                                                                                                                                                       N0)
+                                                                                                                                                                                              N0)
+                                                                                                                                                                                     N0)
+                                                                                                                                                                            N0)
+                                                                                                                                                                   N0)
+                                                                                                                                                          N0)
+                                                                                                                                                 N0)
+                                                                                                                                        N0)
+                                                                                                                               N0)
+                                                                                                                      N0)
+                                                                                                             N0)
+                                                                                                    N0)
+                                                                                           N0)
+                                                                                  N0)
+                                                                         N0)
+                                                                N0)
+                                                       N0)
+                                              N0)
+                                     N0)
+                            N0)
+                   N0))
+Collected value for `pm`
+  Assignment asm ln 7917, prod ln 145.9, live ln 146, enc 8
+  %97 = load i8*, i8** %pm, l145 c9
+  (Add w64 (w64 0x10CF592E0)
+          (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 N0:(Mul w64 (UDiv w64 (ReadLSB w64 (w32 0x0) spec_qsort.n)
+                                                                                                                                                                                                                                                                                                                                                                    (w64 0x2))
+                                                                                                                                                                                                                                                                                                                                                          (ReadLSB w64 (w32 0x0) spec_qsort.es))
+                                                                                                                                                                                                                                                                                                                                              N0)
+                                                                                                                                                                                                                                                                                                                                     N0)
+                                                                                                                                                                                                                                                                                                                            N0)
+                                                                                                                                                                                                                                                                                                                   N0)
+                                                                                                                                                                                                                                                                                                          N0)
+                                                                                                                                                                                                                                                                                                 N0)
+                                                                                                                                                                                                                                                                                        N0)
+                                                                                                                                                                                                                                                                               N0)
+                                                                                                                                                                                                                                                                      N0)
+                                                                                                                                                                                                                                                             N0)
+                                                                                                                                                                                                                                                    N0)
+                                                                                                                                                                                                                                           N0)
+                                                                                                                                                                                                                                  N0)
+                                                                                                                                                                                                                         N0)
+                                                                                                                                                                                                                N0)
+                                                                                                                                                                                                       N0)
+                                                                                                                                                                                              N0)
+                                                                                                                                                                                     N0)
+                                                                                                                                                                            N0)
+                                                                                                                                                                   N0)
+                                                                                                                                                          N0)
+                                                                                                                                                 N0)
+                                                                                                                                        N0)
+                                                                                                                               N0)
+                                                                                                                      N0)
+                                                                                                             N0)
+                                                                                                    N0)
+                                                                                           N0)
+                                                                                  N0)
+                                                                         N0)
+                                                                N0)
+                                                       N0)
+                                              N0)
+                                     N0)
+                            N0)
+                   N0))
+Collected value for `pl`
+  Assignment asm ln 7860, prod ln 139.35, live ln 140, enc 6
+  Concrete pointer resolves to spec_qsort.a.deref, offset (w64 0x0)
+  Created deref expr (ReadLSB w64 (w32 0x0) spec_qsort.a.deref)
+  Replaced concrete pointer with hash (w64 0x442D1AC5CA848F62)
+  %71 = load i8*, i8** %pl, l139 c35
+  (w64 0x442D1AC5CA848F62)
+Collected value for `cmp`
+  Assignment asm ln 7901, prod ln 143.39, live ln 144, enc 2
+  Concrete pointer resolves to spec_qsort.cmp.deref, offset (w64 0x0)
+  Created deref expr (ReadLSB w64 (w32 0x0) spec_qsort.cmp.deref)
+  Replaced concrete pointer with hash (w64 0xC4E95E1D6B8E1D6E)
+  %92 = load i32 (i8*, i8*)*, i32 (i8*, i8*)** %cmp.addr, l143 c39
+  (w64 0xC4E95E1D6B8E1D6E)
+Collected value for `swaptype_long`
+  Assignment asm ln 7743, prod ln 130.33, live ln 131, enc 2
+  %22 = load i32, i32* %swaptype_long, l130 c33
+  (Select w32 (Eq (w64 0x8)
+                 (ReadLSB w64 (w32 0x0) spec_qsort.es))
+             (w32 0x0)
+             (w32 0x1))
+[0;1;31mKLEE: ERROR: spec_qsort/spec_qsort.c:145: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0mCollected value for `swaptype_int`
+  Assignment asm ln 7772, prod ln 130.33, live ln 131, enc 2
+  %36 = load i32, i32* %swaptype_int, l130 c33
+  (Select w32 (Eq (w64 0x4)
+                 (ReadLSB w64 (w32 0x0) spec_qsort.es))
+             (w32 0x0)
+             (w32 0x1))
+Collected value for `swaptype_long`
+  Assignment asm ln 7957, prod ln 145.9, live ln 146, enc 3
+  %120 = load i32, i32* %swaptype_long, l145 c9
+  (Select w32 (Eq (w64 0x8)
+                 (ReadLSB w64 (w32 0x0) spec_qsort.es))
+             (w32 0x0)
+             (w32 0x1))
+Collected value for `pm`
+  Assignment asm ln 7903, prod ln 143.22, live ln 144, enc 9
+  Concrete pointer resolves to med3.return.deref, offset (w64 0x0)
+  Created deref expr (ReadLSB w64 (w32 0x0) med3.return.deref)
+  Replaced concrete pointer with hash (w64 0x89762A00A1015CB6)
+  %call76 = call i8* @med3(i8* %89, i8* %90, i8* %91, i32 (i8*, i8*)* %92), l143 c22
+  (w64 0x89762A00A1015CB6)
+Collected value for `swaptype_int`
+  Assignment asm ln 7958, prod ln 145.9, live ln 146, enc 3
+  %121 = load i32, i32* %swaptype_int, l145 c9
+  (Select w32 (Eq (w64 0x4)
+                 (ReadLSB w64 (w32 0x0) spec_qsort.es))
+             (w32 0x0)
+             (w32 0x1))
+Collected value for `pl`
+  Assignment asm ln 7861, prod ln 139.39, live ln 140, enc 7
+  Concrete pointer resolves to spec_qsort.a.deref, offset (w64 0x0)
+  Created deref expr (ReadLSB w64 (w32 0x0) spec_qsort.a.deref)
+  Replaced concrete pointer with hash (w64 0x442D1AC5CA848F62)
+  %72 = load i8*, i8** %pl, l139 c39
+  (w64 0x442D1AC5CA848F62)
+Collected value for `d`
+  Assignment asm ln 7862, prod ln 139.44, live ln 140, enc 1
+  %73 = load i64, i64* %d, l139 c44
+  (Mul w64 (UDiv w64 (ReadLSB w64 (w32 0x0) spec_qsort.n)
+                    (w64 0x8))
+          (ReadLSB w64 (w32 0x0) spec_qsort.es))
+Collected value for `a`
+  Assignment asm ln 7963, prod ln 146.27, live ln 147, enc 11
+  Concrete pointer resolves to spec_qsort.a.deref, offset (w64 0x0)
+  Created deref expr (ReadLSB w64 (w32 0x0) swapfunc.a.deref)
+  Replaced concrete pointer with hash (w64 0x442D1AC5CA848F62)
+  %122 = load i8*, i8** %a.addr, l146 c27
+  (w64 0x442D1AC5CA848F62)
+Collected value for `es`
+  Assignment asm ln 7964, prod ln 146.31, live ln 147, enc 13
+  %123 = load i64, i64* %es.addr, l146 c31
+  (ReadLSB w64 (w32 0x0) spec_qsort.es)
+Collected value for `pl`
+  Assignment asm ln 7801, prod ln 130.33, live ln 131, enc 8
+  %50 = load i8*, i8** %pl, l130 c33
+  (Add w64 (w64 0x10CF592E0)
+          (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 N0:(ReadLSB w64 (w32 0x0) spec_qsort.es)
+                                                                                                                                                                                                                                                                                                                                              N0)
+                                                                                                                                                                                                                                                                                                                                     N0)
+                                                                                                                                                                                                                                                                                                                            N0)
+                                                                                                                                                                                                                                                                                                                   N0)
+                                                                                                                                                                                                                                                                                                          N0)
+                                                                                                                                                                                                                                                                                                 N0)
+                                                                                                                                                                                                                                                                                        N0)
+                                                                                                                                                                                                                                                                               N0)
+                                                                                                                                                                                                                                                                      N0)
+                                                                                                                                                                                                                                                             N0)
+                                                                                                                                                                                                                                                    N0)
+                                                                                                                                                                                                                                           N0)
+                                                                                                                                                                                                                                  N0)
+                                                                                                                                                                                                                         N0)
+                                                                                                                                                                                                                N0)
+                                                                                                                                                                                                       N0)
+                                                                                                                                                                                              N0)
+                                                                                                                                                                                     N0)
+                                                                                                                                                                            N0)
+                                                                                                                                                                   N0)
+                                                                                                                                                          N0)
+                                                                                                                                                 N0)
+                                                                                                                                        N0)
+                                                                                                                               N0)
+                                                                                                                      N0)
+                                                                                                             N0)
+                                                                                                    N0)
+                                                                                           N0)
+                                                                                  N0)
+                                                                         N0)
+                                                                N0)
+                                                       N0)
+                                              N0)
+                                     N0)
+                            N0)
+                   N0))
+Collected value for `pl`
+  Assignment asm ln 7802, prod ln 130.33, live ln 131, enc 9
+  %51 = load i8*, i8** %pl, l130 c33
+  (Add w64 (w64 0x10CF592E0)
+          (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 N0:(ReadLSB w64 (w32 0x0) spec_qsort.es)
+                                                                                                                                                                                                                                                                                                                                              N0)
+                                                                                                                                                                                                                                                                                                                                     N0)
+                                                                                                                                                                                                                                                                                                                            N0)
+                                                                                                                                                                                                                                                                                                                   N0)
+                                                                                                                                                                                                                                                                                                          N0)
+                                                                                                                                                                                                                                                                                                 N0)
+                                                                                                                                                                                                                                                                                        N0)
+                                                                                                                                                                                                                                                                               N0)
+                                                                                                                                                                                                                                                                      N0)
+                                                                                                                                                                                                                                                             N0)
+                                                                                                                                                                                                                                                    N0)
+                                                                                                                                                                                                                                           N0)
+                                                                                                                                                                                                                                  N0)
+                                                                                                                                                                                                                         N0)
+                                                                                                                                                                                                                N0)
+                                                                                                                                                                                                       N0)
+                                                                                                                                                                                              N0)
+                                                                                                                                                                                     N0)
+                                                                                                                                                                            N0)
+                                                                                                                                                                   N0)
+                                                                                                                                                          N0)
+                                                                                                                                                 N0)
+                                                                                                                                        N0)
+                                                                                                                               N0)
+                                                                                                                      N0)
+                                                                                                             N0)
+                                                                                                    N0)
+                                                                                           N0)
+                                                                                  N0)
+                                                                         N0)
+                                                                N0)
+                                                       N0)
+                                              N0)
+                                     N0)
+                            N0)
+                   N0))
+Collected value for `a`
+  Assignment asm ln 7936, prod ln 145.9, live ln 146, enc 12
+  Concrete pointer resolves to spec_qsort.a.deref, offset (w64 0x0)
+  Created deref expr (ReadLSB w64 (w32 0x0) spec_qsort.a.deref)
+  Replaced concrete pointer with hash (w64 0x442D1AC5CA848F62)
+  %106 = load i8*, i8** %a.addr, l145 c9
+  (w64 0x442D1AC5CA848F62)
+Collected value for `pl`
+  Assignment asm ln 7749, prod ln 130.33, live ln 131, enc 10
+  %23 = load i8*, i8** %pl, l130 c33
+  (Add w64 (w64 0x10CF592E0)
+          (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 N0:(ReadLSB w64 (w32 0x0) spec_qsort.es)
+                                                                                                                                                                                                                                                                                                                                              N0)
+                                                                                                                                                                                                                                                                                                                                     N0)
+                                                                                                                                                                                                                                                                                                                            N0)
+                                                                                                                                                                                                                                                                                                                   N0)
+                                                                                                                                                                                                                                                                                                          N0)
+                                                                                                                                                                                                                                                                                                 N0)
+                                                                                                                                                                                                                                                                                        N0)
+                                                                                                                                                                                                                                                                               N0)
+                                                                                                                                                                                                                                                                      N0)
+                                                                                                                                                                                                                                                             N0)
+                                                                                                                                                                                                                                                    N0)
+                                                                                                                                                                                                                                           N0)
+                                                                                                                                                                                                                                  N0)
+                                                                                                                                                                                                                         N0)
+                                                                                                                                                                                                                N0)
+                                                                                                                                                                                                       N0)
+                                                                                                                                                                                              N0)
+                                                                                                                                                                                     N0)
+                                                                                                                                                                            N0)
+                                                                                                                                                                   N0)
+                                                                                                                                                          N0)
+                                                                                                                                                 N0)
+                                                                                                                                        N0)
+                                                                                                                               N0)
+                                                                                                                      N0)
+                                                                                                             N0)
+                                                                                                    N0)
+                                                                                           N0)
+                                                                                  N0)
+                                                                         N0)
+                                                                N0)
+                                                       N0)
+                                              N0)
+                                     N0)
+                            N0)
+                   N0))
+Collected value for `pl`
+  Assignment asm ln 7864, prod ln 139.47, live ln 140, enc 11
+  Concrete pointer resolves to spec_qsort.a.deref, offset (w64 0x0)
+  Created deref expr (ReadLSB w64 (w32 0x0) spec_qsort.a.deref)
+  Replaced concrete pointer with hash (w64 0x442D1AC5CA848F62)
+  %74 = load i8*, i8** %pl, l139 c47
+  (w64 0x442D1AC5CA848F62)
+Collected value for `pb`
+  Assignment asm ln 7966, prod ln 146.29, live ln 147, enc 0
+  %add.ptr91 = getelementptr inbounds i8, i8* %122, i64 %123, l146 c29
+  (Add w64 (w64 0x10CF592E0)
+          (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 N0:(ReadLSB w64 (w32 0x0) spec_qsort.es)
+                                                                                                                                                                                                                                                                                                                                              N0)
+                                                                                                                                                                                                                                                                                                                                     N0)
+                                                                                                                                                                                                                                                                                                                            N0)
+                                                                                                                                                                                                                                                                                                                   N0)
+                                                                                                                                                                                                                                                                                                          N0)
+                                                                                                                                                                                                                                                                                                 N0)
+                                                                                                                                                                                                                                                                                        N0)
+                                                                                                                                                                                                                                                                               N0)
+                                                                                                                                                                                                                                                                      N0)
+                                                                                                                                                                                                                                                             N0)
+                                                                                                                                                                                                                                                    N0)
+                                                                                                                                                                                                                                           N0)
+                                                                                                                                                                                                                                  N0)
+                                                                                                                                                                                                                         N0)
+                                                                                                                                                                                                                N0)
+                                                                                                                                                                                                       N0)
+                                                                                                                                                                                              N0)
+                                                                                                                                                                                     N0)
+                                                                                                                                                                            N0)
+                                                                                                                                                                   N0)
+                                                                                                                                                          N0)
+                                                                                                                                                 N0)
+                                                                                                                                        N0)
+                                                                                                                               N0)
+                                                                                                                      N0)
+                                                                                                             N0)
+                                                                                                    N0)
+                                                                                           N0)
+                                                                                  N0)
+                                                                         N0)
+                                                                N0)
+                                                       N0)
+                                              N0)
+                                     N0)
+                            N0)
+                   N0))
+Collected value for `pa`
+  Assignment asm ln 7967, prod ln 146.29, live ln 148, enc 0
+  %add.ptr91 = getelementptr inbounds i8, i8* %122, i64 %123, l146 c29
+  (Add w64 (w64 0x10CF592E0)
+          (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 N0:(ReadLSB w64 (w32 0x0) spec_qsort.es)
+                                                                                                                                                                                                                                                                                                                                              N0)
+                                                                                                                                                                                                                                                                                                                                     N0)
+                                                                                                                                                                                                                                                                                                                            N0)
+                                                                                                                                                                                                                                                                                                                   N0)
+                                                                                                                                                                                                                                                                                                          N0)
+                                                                                                                                                                                                                                                                                                 N0)
+                                                                                                                                                                                                                                                                                        N0)
+                                                                                                                                                                                                                                                                               N0)
+                                                                                                                                                                                                                                                                      N0)
+                                                                                                                                                                                                                                                             N0)
+                                                                                                                                                                                                                                                    N0)
+                                                                                                                                                                                                                                           N0)
+                                                                                                                                                                                                                                  N0)
+                                                                                                                                                                                                                         N0)
+                                                                                                                                                                                                                N0)
+                                                                                                                                                                                                       N0)
+                                                                                                                                                                                              N0)
+                                                                                                                                                                                     N0)
+                                                                                                                                                                            N0)
+                                                                                                                                                                   N0)
+                                                                                                                                                          N0)
+                                                                                                                                                 N0)
+                                                                                                                                        N0)
+                                                                                                                               N0)
+                                                                                                                      N0)
+                                                                                                             N0)
+                                                                                                    N0)
+                                                                                           N0)
+                                                                                  N0)
+                                                                         N0)
+                                                                N0)
+                                                       N0)
+                                              N0)
+                                     N0)
+                            N0)
+                   N0))
+Collected value for `es`
+  Assignment asm ln 7803, prod ln 130.33, live ln 131, enc 14
+  %52 = load i64, i64* %es.addr, l130 c33
+  (ReadLSB w64 (w32 0x0) spec_qsort.es)
+Collected value for `a`
+  Assignment asm ln 7968, prod ln 148.27, live ln 149, enc 13
+  Concrete pointer resolves to spec_qsort.a.deref, offset (w64 0x0)
+  Created deref expr (ReadLSB w64 (w32 0x0) swapfunc.a.deref)
+  Replaced concrete pointer with hash (w64 0x442D1AC5CA848F62)
+  %124 = load i8*, i8** %a.addr, l148 c27
+  (w64 0x442D1AC5CA848F62)
+Collected value for `n`
+  Assignment asm ln 7969, prod ln 148.32, live ln 149, enc 8
+  %125 = load i64, i64* %n.addr, l148 c32
+  (ReadLSB w64 (w32 0x0) spec_qsort.n)
+Collected value for `d`
+  Assignment asm ln 7865, prod ln 139.56, live ln 140, enc 2
+  %75 = load i64, i64* %d, l139 c56
+  (Mul w64 (UDiv w64 (ReadLSB w64 (w32 0x0) spec_qsort.n)
+                    (w64 0x8))
+          (ReadLSB w64 (w32 0x0) spec_qsort.es))
+Collected value for `es`
+  Assignment asm ln 7971, prod ln 148.41, live ln 149, enc 15
+  %126 = load i64, i64* %es.addr, l148 c41
+  (ReadLSB w64 (w32 0x0) spec_qsort.es)
+Collected value for `pd`
+  Assignment asm ln 7974, prod ln 148.29, live ln 149, enc 0
+  %add.ptr94 = getelementptr inbounds i8, i8* %124, i64 %mul93, l148 c29
+  (Add w64 (w64 0x10CF592E0)
+          (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 N0:(Mul w64 (Add w64 (w64 0xFFFFFFFFFFFFFFFF)
+                                                                                                                                                                                                                                                                                                                                                                   (ReadLSB w64 (w32 0x0) spec_qsort.n))
+                                                                                                                                                                                                                                                                                                                                                          (ReadLSB w64 (w32 0x0) spec_qsort.es))
+                                                                                                                                                                                                                                                                                                                                              N0)
+                                                                                                                                                                                                                                                                                                                                     N0)
+                                                                                                                                                                                                                                                                                                                            N0)
+                                                                                                                                                                                                                                                                                                                   N0)
+                                                                                                                                                                                                                                                                                                          N0)
+                                                                                                                                                                                                                                                                                                 N0)
+                                                                                                                                                                                                                                                                                        N0)
+                                                                                                                                                                                                                                                                               N0)
+                                                                                                                                                                                                                                                                      N0)
+                                                                                                                                                                                                                                                             N0)
+                                                                                                                                                                                                                                                    N0)
+                                                                                                                                                                                                                                           N0)
+                                                                                                                                                                                                                                  N0)
+                                                                                                                                                                                                                         N0)
+                                                                                                                                                                                                                N0)
+                                                                                                                                                                                                       N0)
+                                                                                                                                                                                              N0)
+                                                                                                                                                                                     N0)
+                                                                                                                                                                            N0)
+                                                                                                                                                                   N0)
+                                                                                                                                                          N0)
+                                                                                                                                                 N0)
+                                                                                                                                        N0)
+                                                                                                                               N0)
+                                                                                                                      N0)
+                                                                                                             N0)
+                                                                                                    N0)
+                                                                                           N0)
+                                                                                  N0)
+                                                                         N0)
+                                                                N0)
+                                                       N0)
+                                              N0)
+                                     N0)
+                            N0)
+                   N0))
+Collected value for `cmp`
+  Assignment asm ln 7868, prod ln 139.59, live ln 140, enc 3
+  Concrete pointer resolves to spec_qsort.cmp.deref, offset (w64 0x0)
+  Created deref expr (ReadLSB w64 (w32 0x0) spec_qsort.cmp.deref)
+  Replaced concrete pointer with hash (w64 0xC4E95E1D6B8E1D6E)
+  %76 = load i32 (i8*, i8*)*, i32 (i8*, i8*)** %cmp.addr, l139 c59
+  (w64 0xC4E95E1D6B8E1D6E)
+^C
