@@ -28,7 +28,7 @@
 + version=13
 + echo '## Checking debug consistency of `mcf_r` (Clang 13, O0-mem2reg)'
 ## Checking debug consistency of `mcf_r` (Clang 13, O0-mem2reg)
-+ /Users/jryans/Projects/klee/build-release-debug/bin/check-debug-info ../O0/mcf_r.bc mcf_r.bc --debug-only=check-debug-info,values-collector,variable --debug-execution-trace --disable-verify --output-stats=false --max-forks=32 --max-solver-time=5s --max-time=5s --search=random-path --tsv --exclude-function=spec_qsort
++ /Users/jryans/Projects/klee/build-release-debug/bin/check-debug-info ../O0/mcf_r.bc mcf_r.bc --debug-only=check-debug-info,values-collector,variable --debug-execution-trace --disable-verify --output-stats=false --max-forks=32 --max-solver-time=5s --max-time=5s --search=random-path --tsv --output-source --exclude-function=spec_qsort
 Checking ../O0/mcf_r.bc and mcf_r.bc for debug info consistency…
 
 ## Functions
@@ -23166,6 +23166,28 @@ Collected value for `num_threads`
 [0m[0;35mKLEE: WARNING: Unable to load source file `implicit.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `implicit.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `implicit.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `implicit.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `implicit.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `implicit.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `implicit.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `implicit.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `implicit.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `implicit.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `implicit.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `implicit.c`
+[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0mKLEE: HaltTimer invoked
 [0mKLEE: halting execution, dumping remaining states
 [0m
@@ -23299,8 +23321,8 @@ Collected value for `test_arc`
 [0m[0;35mKLEE: WARNING: Unable to load source file `implicit.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `implicit.c`
-[0m[0;1;31mKLEE: ERROR: implicit.c:425: memory error: out of bound pointer
-[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `implicit.c`
 [0m[0;1;31mKLEE: ERROR: implicit.c:428: memory error: out of bound pointer
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
@@ -23318,6 +23340,12 @@ Collected value for `test_arc`
                     (SExt w64 (ReadLSB w32 (w32 0x0) switch_arcs.thread)))
            (ReadLSB w64 (w32 0x0) switch_arcs.num_threads))
 [0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `implicit.c`
+[0m[0;1;31mKLEE: ERROR: implicit.c:425: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `implicit.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `implicit.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `implicit.c`
@@ -23369,7 +23397,7 @@ Reference Execution:
   Function Covered:  false
   Complete:          false
   Within Time Limit: false
-  Within Fork Limit: true
+  Within Fork Limit: false
 Test Execution:
   Function Covered:  false
   Complete:          false
@@ -24169,7 +24197,7 @@ Reference Execution:
   Function Covered:  false
   Complete:          false
   Within Time Limit: false
-  Within Fork Limit: true
+  Within Fork Limit: false
 Test Execution:
   Function Covered:  false
   Complete:          false
@@ -24199,7 +24227,7 @@ Reference Execution:
   Function Covered:  false
   Complete:          false
   Within Time Limit: false
-  Within Fork Limit: true
+  Within Fork Limit: false
 Test Execution:
   Function Covered:  false
   Complete:          false
@@ -24243,7 +24271,7 @@ Reference Execution:
   Function Covered:  false
   Complete:          false
   Within Time Limit: false
-  Within Fork Limit: true
+  Within Fork Limit: false
 Test Execution:
   Function Covered:  false
   Complete:          false
@@ -24284,7 +24312,7 @@ Reference Execution:
   Function Covered:  false
   Complete:          false
   Within Time Limit: false
-  Within Fork Limit: true
+  Within Fork Limit: false
 Test Execution:
   Function Covered:  false
   Complete:          false
@@ -24329,7 +24357,7 @@ Reference Execution:
   Function Covered:  false
   Complete:          false
   Within Time Limit: false
-  Within Fork Limit: true
+  Within Fork Limit: false
 Test Execution:
   Function Covered:  false
   Complete:          false
@@ -24380,7 +24408,7 @@ Reference Execution:
   Function Covered:  false
   Complete:          false
   Within Time Limit: false
-  Within Fork Limit: true
+  Within Fork Limit: false
 Test Execution:
   Function Covered:  false
   Complete:          false
@@ -24458,7 +24486,7 @@ Reference Execution:
   Function Covered:  false
   Complete:          false
   Within Time Limit: false
-  Within Fork Limit: true
+  Within Fork Limit: false
 Test Execution:
   Function Covered:  false
   Complete:          false
@@ -24509,7 +24537,7 @@ Reference Execution:
   Function Covered:  false
   Complete:          false
   Within Time Limit: false
-  Within Fork Limit: true
+  Within Fork Limit: false
 Test Execution:
   Function Covered:  false
   Complete:          false
@@ -24550,7 +24578,7 @@ Reference Execution:
   Function Covered:  false
   Complete:          false
   Within Time Limit: false
-  Within Fork Limit: true
+  Within Fork Limit: false
 Test Execution:
   Function Covered:  false
   Complete:          false
@@ -24591,7 +24619,7 @@ Reference Execution:
   Function Covered:  false
   Complete:          false
   Within Time Limit: false
-  Within Fork Limit: true
+  Within Fork Limit: false
 Test Execution:
   Function Covered:  false
   Complete:          false
@@ -24640,7 +24668,7 @@ Reference Execution:
   Function Covered:  false
   Complete:          false
   Within Time Limit: false
-  Within Fork Limit: true
+  Within Fork Limit: false
 Test Execution:
   Function Covered:  false
   Complete:          false
@@ -24688,7 +24716,7 @@ Reference Execution:
   Function Covered:  false
   Complete:          false
   Within Time Limit: false
-  Within Fork Limit: true
+  Within Fork Limit: false
 Test Execution:
   Function Covered:  false
   Complete:          false
@@ -24737,7 +24765,7 @@ Reference Execution:
   Function Covered:  false
   Complete:          false
   Within Time Limit: false
-  Within Fork Limit: true
+  Within Fork Limit: false
 Test Execution:
   Function Covered:  false
   Complete:          false
@@ -24889,7 +24917,7 @@ Reference Execution:
   Function Covered:  false
   Complete:          false
   Within Time Limit: false
-  Within Fork Limit: true
+  Within Fork Limit: false
 Test Execution:
   Function Covered:  false
   Complete:          false
@@ -24938,7 +24966,7 @@ Reference Execution:
   Function Covered:  false
   Complete:          false
   Within Time Limit: false
-  Within Fork Limit: true
+  Within Fork Limit: false
 Test Execution:
   Function Covered:  false
   Complete:          false
@@ -46110,9 +46138,9 @@ Collected value for `thread`
   Assignment asm ln 6437, prod ln 103.16, live ln 104, enc 1
   %10 = load i32, i32* %thread.addr, l103 c16
   (ReadLSB w32 (w32 0x0) worker.thread)
-[0;1;31mKLEE: ERROR: psimplex.c:103: memory error: object read only
+[0;1;35mKLEE: WARNING ONCE: flushing 32488 bytes on read, may be slow and/or crash: MO31391[32488] allocated at worker():  %perm = alloca [4061 x %struct.basket*], align 16
+[0m[0;1;31mKLEE: ERROR: psimplex.c:103: memory error: object read only
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
-[0m[0;1;35mKLEE: WARNING ONCE: flushing 32488 bytes on read, may be slow and/or crash: MO29941[32488] allocated at worker():  %perm = alloca [4061 x %struct.basket*], align 16
 [0m[0;1;31mKLEE: ERROR: psimplex.c:103: memory error: out of bound pointer
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0mCollected value for `thread`
@@ -46132,10 +46160,12 @@ Collected value for `num_threads`
 [0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
 [0m[0;1;31mKLEE: ERROR: psimplex.c:104: divide by zero
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
@@ -46155,23 +46185,15 @@ Collected value for `i`
   Assignment asm ln 6453, prod ln 104.56, live ln 105, enc 0
   i64 1
   (w64 0x1)
-[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0mCollected value for `i`
+Collected value for `i`
   Assignment asm ln 6457, prod ln 104.60, live ln 105, enc 1
   %13 = load i64, i64* %i, l104 c60
   (w64 0x1)
-[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0mCollected value for `num_threads`
+Collected value for `num_threads`
   Assignment asm ln 6458, prod ln 104.66, live ln 105, enc 2
   %14 = load i32, i32* %num_threads.addr, l104 c66
   (ReadLSB w32 (w32 0x0) worker.num_threads)
 [0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
@@ -46191,9 +46213,7 @@ Collected value for `m`
   Assignment asm ln 6490, prod ln 108.42, live ln 109, enc 1
   %21 = load i64, i64* %m, l108 c42
   (ReadLSB w64 (w32 0x1A8) worker.net.deref)
-[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0mCollected value for `arcs`
+Collected value for `arcs`
   Assignment asm ln 6491, prod ln 108.45, live ln 109, enc 1
   %22 = load %struct.arc*, %struct.arc** %arcs, l108 c45
   (w64 0x0)
@@ -46256,47 +46276,7 @@ Collected value for `thread`
 Collected value for `iterations`
   Assignment asm ln 6496, prod ln 108.102, live ln 109, enc 1
   Concrete pointer resolves to worker.net.deref, offset (w64 0x260)
-  Created deref expr (ReadLSB w64 (w32 0x260) U0:[(Add w32 (w32 0x7)
-                                       N0:(Extract w32 0 (Add w64 (w64 0xFFFFFFFEEBAB8000)
-                                                                  (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 N1:(Mul w64 (w64 0x8)
-                                                                                                                                                                                                                                                                                                                                                   (SExt w64 (ReadLSB w32 (w32 0x0) worker.thread)))
-                                                                                                                                                                                                                                                                                                                                       N1)
-                                                                                                                                                                                                                                                                                                                              N1)
-                                                                                                                                                                                                                                                                                                                     N1)
-                                                                                                                                                                                                                                                                                                            N1)
-                                                                                                                                                                                                                                                                                                   N1)
-                                                                                                                                                                                                                                                                                          N1)
-                                                                                                                                                                                                                                                                                 N1)
-                                                                                                                                                                                                                                                                        N1)
-                                                                                                                                                                                                                                                               N1)
-                                                                                                                                                                                                                                                      N1)
-                                                                                                                                                                                                                                             N1)
-                                                                                                                                                                                                                                    N1)
-                                                                                                                                                                                                                           N1)
-                                                                                                                                                                                                                  N1)
-                                                                                                                                                                                                         N1)
-                                                                                                                                                                                                N1)
-                                                                                                                                                                                       N1)
-                                                                                                                                                                              N1)
-                                                                                                                                                                     N1)
-                                                                                                                                                            N1)
-                                                                                                                                                   N1)
-                                                                                                                                          N1)
-                                                                                                                                 N1)
-                                                                                                                        N1)
-                                                                                                               N1)
-                                                                                                      N1)
-                                                                                             N1)
-                                                                                    N1)
-                                                                           N1))))=(w8 0x0),
-                              (Add w32 (w32 0x6) N0)=(w8 0x0),
-                              (Add w32 (w32 0x5) N0)=(w8 0x0),
-                              (Add w32 (w32 0x4) N0)=(w8 0x0),
-                              (Add w32 (w32 0x3) N0)=(w8 0x0),
-                              (Add w32 (w32 0x2) N0)=(w8 0x0),
-                              (Add w32 (w32 0x1) N0)=(w8 0x0),
-                              N0=(w8 0x0),
-                              (w32 0x25F)=(w8 0x0), (w32 0x25E)=(w8 0x0), (w32 0x25D)=(w8 0x0), (w32 0x25C)=(w8 0x0), (w32 0x25B)=(w8 0x0), (w32 0x25A)=(w8 0x0), (w32 0x259)=(w8 0x0), (w32 0x258)=(w8 0x0), (w32 0x257)=(w8 0x0), (w32 0x256)=(w8 0x0), (w32 0x255)=(w8 0x0), (w32 0x254)=(w8 0x0), (w32 0x253)=(w8 0x0), (w32 0x252)=(w8 0x0), (w32 0x251)=(w8 0x0), (w32 0x250)=(w8 0x0), (w32 0x24F)=(w8 0x0), (w32 0x24E)=(w8 0x0), (w32 0x24D)=(w8 0x0), (w32 0x24C)=(w8 0x0), (w32 0x24B)=(w8 0x0), (w32 0x24A)=(w8 0x0), (w32 0x249)=(w8 0x0), (w32 0x248)=(w8 0x0), (w32 0x247)=(w8 0x0), (w32 0x246)=(w8 0x0), (w32 0x245)=(w8 0x0), (w32 0x244)=(w8 0x0), (w32 0x243)=(w8 0x0), (w32 0x242)=(w8 0x0), (w32 0x241)=(w8 0x0), (w32 0x240)=(w8 0x0), (w32 0x23F)=(w8 0x0), (w32 0x23E)=(w8 0x0), (w32 0x23D)=(w8 0x0), (w32 0x23C)=(w8 0x0), (w32 0x23B)=(w8 0x0), (w32 0x23A)=(w8 0x0), (w32 0x239)=(w8 0x0), (w32 0x238)=(w8 0x0), (w32 0x237)=(w8 0x0), (w32 0x236)=(w8 0x0), (w32 0x235)=(w8 0x0), (w32 0x234)=(w8 0x0), (w32 0x233)=(w8 0x0), (w32 0x232)=(w8 0x0), (w32 0x231)=(w8 0x0), (w32 0x230)=(w8 0x0), (w32 0x22F)=(w8 0x0), (w32 0x22E)=(w8 0x0), (w32 0x22D)=(w8 0x0), (w32 0x22C)=(w8 0x0), (w32 0x22B)=(w8 0x0), (w32 0x22A)=(w8 0x0), (w32 0x229)=(w8 0x0), (w32 0x228)=(w8 0x0)] @ worker.net.deref)
+  Created deref expr (ReadLSB w64 (w32 0x260) worker.net.deref)
   Replaced concrete pointer with hash (w64 0x81E7CC725839738A)
   %26 = load i64*, i64** %iterations, l108 c102
   (w64 0x81E7CC725839738A)
@@ -46327,13 +46307,13 @@ Collected value for `thread`
   Assignment asm ln 6498, prod ln 108.115, live ln 109, enc 4
   %28 = load i32, i32* %thread.addr, l108 c115
   (ReadLSB w32 (w32 0x0) worker.thread)
-Collected value for `num_threads`
+[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0mCollected value for `num_threads`
   Assignment asm ln 6501, prod ln 108.125, live ln 109, enc 3
   %29 = load i32, i32* %num_threads.addr, l108 c125
   (ReadLSB w32 (w32 0x0) worker.num_threads)
 [0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
@@ -46356,47 +46336,7 @@ Collected value for `num_threads`
 Collected value for `net`
   Assignment asm ln 6507, prod ln 108.151, live ln 109, enc 6
   Concrete pointer resolves to worker.net.deref, offset (w64 0x0)
-  Created deref expr (ReadLSB w64 (w32 0x0) U0:[(Add w32 (w32 0x7)
-                                     N0:(Extract w32 0 (Add w64 (w64 0xFFFFFFFEEBAB8000)
-                                                                (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 (Add w64 N1:(Mul w64 (w64 0x8)
-                                                                                                                                                                                                                                                                                                                                                 (SExt w64 (ReadLSB w32 (w32 0x0) worker.thread)))
-                                                                                                                                                                                                                                                                                                                                     N1)
-                                                                                                                                                                                                                                                                                                                            N1)
-                                                                                                                                                                                                                                                                                                                   N1)
-                                                                                                                                                                                                                                                                                                          N1)
-                                                                                                                                                                                                                                                                                                 N1)
-                                                                                                                                                                                                                                                                                        N1)
-                                                                                                                                                                                                                                                                               N1)
-                                                                                                                                                                                                                                                                      N1)
-                                                                                                                                                                                                                                                             N1)
-                                                                                                                                                                                                                                                    N1)
-                                                                                                                                                                                                                                           N1)
-                                                                                                                                                                                                                                  N1)
-                                                                                                                                                                                                                         N1)
-                                                                                                                                                                                                                N1)
-                                                                                                                                                                                                       N1)
-                                                                                                                                                                                              N1)
-                                                                                                                                                                                     N1)
-                                                                                                                                                                            N1)
-                                                                                                                                                                   N1)
-                                                                                                                                                          N1)
-                                                                                                                                                 N1)
-                                                                                                                                        N1)
-                                                                                                                               N1)
-                                                                                                                      N1)
-                                                                                                             N1)
-                                                                                                    N1)
-                                                                                           N1)
-                                                                                  N1)
-                                                                         N1))))=(w8 0x0),
-                            (Add w32 (w32 0x6) N0)=(w8 0x0),
-                            (Add w32 (w32 0x5) N0)=(w8 0x0),
-                            (Add w32 (w32 0x4) N0)=(w8 0x0),
-                            (Add w32 (w32 0x3) N0)=(w8 0x0),
-                            (Add w32 (w32 0x2) N0)=(w8 0x0),
-                            (Add w32 (w32 0x1) N0)=(w8 0x0),
-                            N0=(w8 0x0),
-                            (w32 0x25F)=(w8 0x0), (w32 0x25E)=(w8 0x0), (w32 0x25D)=(w8 0x0), (w32 0x25C)=(w8 0x0), (w32 0x25B)=(w8 0x0), (w32 0x25A)=(w8 0x0), (w32 0x259)=(w8 0x0), (w32 0x258)=(w8 0x0), (w32 0x257)=(w8 0x0), (w32 0x256)=(w8 0x0), (w32 0x255)=(w8 0x0), (w32 0x254)=(w8 0x0), (w32 0x253)=(w8 0x0), (w32 0x252)=(w8 0x0), (w32 0x251)=(w8 0x0), (w32 0x250)=(w8 0x0), (w32 0x24F)=(w8 0x0), (w32 0x24E)=(w8 0x0), (w32 0x24D)=(w8 0x0), (w32 0x24C)=(w8 0x0), (w32 0x24B)=(w8 0x0), (w32 0x24A)=(w8 0x0), (w32 0x249)=(w8 0x0), (w32 0x248)=(w8 0x0), (w32 0x247)=(w8 0x0), (w32 0x246)=(w8 0x0), (w32 0x245)=(w8 0x0), (w32 0x244)=(w8 0x0), (w32 0x243)=(w8 0x0), (w32 0x242)=(w8 0x0), (w32 0x241)=(w8 0x0), (w32 0x240)=(w8 0x0), (w32 0x23F)=(w8 0x0), (w32 0x23E)=(w8 0x0), (w32 0x23D)=(w8 0x0), (w32 0x23C)=(w8 0x0), (w32 0x23B)=(w8 0x0), (w32 0x23A)=(w8 0x0), (w32 0x239)=(w8 0x0), (w32 0x238)=(w8 0x0), (w32 0x237)=(w8 0x0), (w32 0x236)=(w8 0x0), (w32 0x235)=(w8 0x0), (w32 0x234)=(w8 0x0), (w32 0x233)=(w8 0x0), (w32 0x232)=(w8 0x0), (w32 0x231)=(w8 0x0), (w32 0x230)=(w8 0x0), (w32 0x22F)=(w8 0x0), (w32 0x22E)=(w8 0x0), (w32 0x22D)=(w8 0x0), (w32 0x22C)=(w8 0x0), (w32 0x22B)=(w8 0x0), (w32 0x22A)=(w8 0x0), (w32 0x229)=(w8 0x0), (w32 0x228)=(w8 0x0)] @ worker.net.deref)
+  Created deref expr (ReadLSB w64 (w32 0x0) worker.net.deref)
   Replaced concrete pointer with hash (w64 0xD3933E70E7A0E11E)
   %31 = load %struct.network*, %struct.network** %net.addr, l108 c151
   (w64 0xD3933E70E7A0E11E)
@@ -46410,23 +46350,515 @@ Collected value for `net`
   (ReadLSB w32 (w32 0x0) worker.thread)
 [0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
 [0mCollected value for `thread`
   Assignment asm ln 6519, prod ln 109.12, live ln 110, enc 6
   %36 = load i32, i32* %thread.addr, l109 c12
   (ReadLSB w32 (w32 0x0) worker.thread)
-[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0mCollected value for `thread`
+Collected value for `thread`
   Assignment asm ln 6523, prod ln 113.9, live ln 114, enc 7
   %37 = load i32, i32* %thread.addr, l113 c9
   (ReadLSB w32 (w32 0x0) worker.thread)
 [0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
@@ -47356,15 +47788,14 @@ Collected value for `end_arc`
 [0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
 [0m[0;1;31mKLEE: ERROR: psimplex.c:104: divide by zero
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
 [0mCollected value for `j`
   Assignment asm ln 4800, prod ln 104.12, live ln 105, enc 0
   %conv = sext i32 %add8 to i64, l104 c12
@@ -47373,13 +47804,13 @@ Collected value for `end_arc`
                              (Add w32 (w32 0x105)
                                       (SDiv w32 (w32 0xFA0)
                                                 (ReadLSB w32 (w32 0x0) worker.num_threads))))))
-Collected value for `i`
+[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0mCollected value for `i`
   Assignment asm ln 4801, prod ln 101.0, live ln 104, enc 0
   i64 1
   (w64 0x1)
-[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
 [0mCollected value for `j`
   Assignment asm ln 4807, prod ln 104.89, live ln 105, enc 1
   %j.0 = phi i64 [ %conv, %entry ], [ %inc16, %for.body ]
@@ -47389,21 +47820,12 @@ Collected value for `i`
                              (Add w32 (w32 0x105)
                                       (SDiv w32 (w32 0xFA0)
                                                 (ReadLSB w32 (w32 0x0) worker.num_threads))))))
-[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0mCollected value for `i`
+Collected value for `i`
   Assignment asm ln 4808, prod ln 104.84, live ln 105, enc 1
   %i.0 = phi i64 [ 1, %entry ], [ %inc, %for.body ]
   Block: 0
   (w64 0x1)
 [0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
@@ -47463,6 +47885,498 @@ Collected value for `i`
                                                (SDiv w32 (w32 0xFA0)
                                                          (ReadLSB w32 (w32 0x0) worker.num_threads)))))))
 [0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
@@ -50409,6 +51323,36 @@ Test Execution:
   Within Time Limit: true
   Within Fork Limit: true
 
+✅ Variable `end_arc` uses only a single memory location (via `dbg.declare`), skipping further checks
+Assignments:         end_arc
+  Reference:         1
+  Test:              1
+Matching:
+  Matching Coords:   1
+  Matching Value:    1
+Consistency Errors:
+  Mismatched Coords: 0
+  Mismatched Value:  0
+Availability Errors:
+  Ref Not Encount.:  0
+  Ref Not in Test:   0
+  Test Not Encount.: 0
+  Test Not in Ref:   0
+Warnings:
+  Unused:            0
+  Removable:         0
+  Unreachable:       0
+Reference Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
+Test Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
+
 ✅ Variable `max_basket` uses only a single memory location (via `dbg.declare`), skipping further checks
 Assignments:         max_basket
   Reference:         1
@@ -50471,6 +51415,36 @@ Test Execution:
 
 ✅ Variable `w` uses only a single memory location (via `dbg.declare`), skipping further checks
 Assignments:         w
+  Reference:         1
+  Test:              1
+Matching:
+  Matching Coords:   1
+  Matching Value:    1
+Consistency Errors:
+  Mismatched Coords: 0
+  Mismatched Value:  0
+Availability Errors:
+  Ref Not Encount.:  0
+  Ref Not in Test:   0
+  Test Not Encount.: 0
+  Test Not in Ref:   0
+Warnings:
+  Unused:            0
+  Removable:         0
+  Unreachable:       0
+Reference Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
+Test Execution:
+  Function Covered:  false
+  Complete:          false
+  Within Time Limit: true
+  Within Fork Limit: true
+
+✅ Variable `xchange` uses only a single memory location (via `dbg.declare`), skipping further checks
+Assignments:         xchange
   Reference:         1
   Test:              1
 Matching:
@@ -51297,28 +52271,6 @@ and
   %81 = load %struct.node*, %struct.node** %temp, l249 c19
 🔔 Removing: asm ln 6856, prod ln 247.18, live ln 248, enc None
 
-Filtering before assignments: `xchange` (decl src ln 134)
-
-Expected 1 symbolic value(s), got 0
-Expected 1 symbolic value(s), got 0
-Checking equivalence of `xchange` (decl src ln 134) from
-  assn asm ln 6872, prod ln 256.13, live ln 257, enc None
-  %86 = load i64, i64* %xchange, l256 c13
-and
-  assn asm ln 6921, prod ln 271.23, live ln 272, enc None
-  %95 = load i64, i64* %xchange, l271 c23
-🔔 Removing: asm ln 6872, prod ln 256.13, live ln 257, enc None
-
-Expected 1 symbolic value(s), got 0
-Expected 1 symbolic value(s), got 0
-Checking equivalence of `xchange` (decl src ln 134) from
-  assn asm ln 6850, prod ln 245.13, live ln 246, enc None
-  %78 = load i64, i64* %xchange, l245 c13
-and
-  assn asm ln 6921, prod ln 271.23, live ln 272, enc None
-  %95 = load i64, i64* %xchange, l271 c23
-🔔 Removing: asm ln 6850, prod ln 245.13, live ln 246, enc None
-
 Filtering after assignments: `bea` (decl src ln 141)
 
 Expected 1 symbolic value(s), got 0
@@ -51491,28 +52443,6 @@ and
   %22 = load i64, i64* %cost, l198 c37
 🔔 Removing: asm ln 5039, prod ln 198.37, live ln 206, enc None
 
-Filtering after assignments: `xchange` (decl src ln 134)
-
-Expected 1 symbolic value(s), got 0
-Expected 1 symbolic value(s), got 0
-Checking equivalence of `xchange` (decl src ln 134) from
-  assn asm ln 5123, prod ln 256.13, live ln 257, enc None
-  %37 = load i64, i64* %xchange, l256 c13
-and
-  assn asm ln 5141, prod ln 271.23, live ln 272, enc None
-  %42 = load i64, i64* %xchange, l271 c23
-🔔 Removing: asm ln 5123, prod ln 256.13, live ln 257, enc None
-
-Expected 1 symbolic value(s), got 0
-Expected 1 symbolic value(s), got 0
-Checking equivalence of `xchange` (decl src ln 134) from
-  assn asm ln 5111, prod ln 245.13, live ln 246, enc None
-  %34 = load i64, i64* %xchange, l245 c13
-and
-  assn asm ln 5141, prod ln 271.23, live ln 272, enc None
-  %42 = load i64, i64* %xchange, l271 c23
-🔔 Removing: asm ln 5111, prod ln 245.13, live ln 246, enc None
-
 Collating encountered before assignments: `arcs` (decl src ln 143)
 ❌ Assignment asm ln 6661, prod ln 176.40, live ln 177, enc None for `arcs` (decl src ln 143) was not encountered during execution
   asm ln 6588, prod ln 143.39, live ln 144, enc 0
@@ -51523,8 +52453,6 @@ Collating encountered before assignments: `bla` (decl src ln 142)
 Collating encountered before assignments: `bound_exchanges` (decl src ln 150)
 ❌ Assignment asm ln 6814, prod ln 233.11, live ln 234, enc None for `bound_exchanges` (decl src ln 150) was not encountered during execution
   asm ln 6609, prod ln 150.43, live ln 153, enc 0
-Collating encountered before assignments: `end_arc` (decl src ln 153)
-  asm ln 6616, prod ln 153.33, live ln 162, enc 0
 Collating encountered before assignments: `i` (decl src ln 154)
 ❌ Assignment asm ln 6736, prod ln 188.34, live ln 189, enc None for `i` (decl src ln 154) was not encountered during execution
 Collating encountered before assignments: `iminus` (decl src ln 138)
@@ -51562,8 +52490,6 @@ Collating encountered before assignments: `stop_arcs` (decl src ln 144)
   asm ln 6593, prod ln 144.39, live ln 146, enc 0
 Collating encountered before assignments: `temp` (decl src ln 145)
 ❌ Assignment asm ln 6859, prod ln 249.19, live ln 250, enc None for `temp` (decl src ln 145) was not encountered during execution
-Collating encountered before assignments: `xchange` (decl src ln 134)
-❌ Assignment asm ln 6921, prod ln 271.23, live ln 272, enc None for `xchange` (decl src ln 134) was not encountered during execution
 
 Collating encountered after assignments: `arcs` (decl src ln 143)
   asm ln 4889, prod ln 143.39, live ln 144, enc 0
@@ -51573,8 +52499,6 @@ Collating encountered after assignments: `bla` (decl src ln 142)
 ❌ Assignment asm ln 5122, prod ln 254.23, live ln 256, enc None for `bla` (decl src ln 142) was not encountered during execution
 Collating encountered after assignments: `bound_exchanges` (decl src ln 150)
   asm ln 4899, prod ln 150.43, live ln 153, enc 0
-Collating encountered after assignments: `end_arc` (decl src ln 153)
-  asm ln 4905, prod ln 153.33, live ln 162, enc 0
 Collating encountered after assignments: `i` (decl src ln 154)
 ❌ Assignment asm ln 4910, prod ln 154.0, live ln 163, enc None for `i` (decl src ln 154) was not encountered during execution
 Collating encountered after assignments: `iminus` (decl src ln 138)
@@ -51605,8 +52529,6 @@ Collating encountered after assignments: `red_cost_of_bea` (decl src ln 148)
 ❌ Assignment asm ln 5023, prod ln 198.37, live ln 199, enc None for `red_cost_of_bea` (decl src ln 148) was not encountered during execution
 Collating encountered after assignments: `stop_arcs` (decl src ln 144)
   asm ln 4892, prod ln 144.39, live ln 146, enc 0
-Collating encountered after assignments: `xchange` (decl src ln 134)
-❌ Assignment asm ln 5141, prod ln 271.23, live ln 272, enc None for `xchange` (decl src ln 134) was not encountered during execution
 
 #### Check after using before as reference
 
@@ -51822,23 +52744,13 @@ Test Execution:
   Within Time Limit: true
   Within Fork Limit: true
 
-Checking equivalence of `end_arc` (decl src ln 153) from
-  assn asm ln 4905, prod ln 153.33, live ln 162, enc 0
-  %3 = load %struct.arc.0*, %struct.arc.0** %arcs6, l153 c33
-  (w64 0x0)
-and
-  assn asm ln 6616, prod ln 153.33, live ln 162, enc 0
-  %9 = load %struct.arc*, %struct.arc** %arcs6, l153 c33
-  (w64 0x0)
-✅ Before `end_arc` (decl src ln 153) assn asm ln 6616, prod ln 153.33, live ln 162, enc 0 symbolic value matches after assn asm ln 4905, prod ln 153.33, live ln 162, enc 0
-
 ✅ After `end_arc` assns checked using before as reference
 Assignments:         end_arc
-  Reference:         1
-  Test:              1
+  Reference:         0
+  Test:              0
 Matching:
-  Matching Coords:   1
-  Matching Value:    1
+  Matching Coords:   0
+  Matching Value:    0
 Consistency Errors:
   Mismatched Coords: 0
   Mismatched Value:  0
@@ -52518,14 +53430,10 @@ Test Execution:
   Within Time Limit: true
   Within Fork Limit: true
 
-❌ Before assn asm ln 6921, prod ln 271.23, live ln 272, enc None for `xchange` (decl src ln 134) was not encountered during execution
-
-❌ After assn asm ln 5141, prod ln 271.23, live ln 272, enc None for `xchange` (decl src ln 134) was not encountered during execution
-
-❌ After `xchange` assns checked using before as reference
+✅ After `xchange` assns checked using before as reference
 Assignments:         xchange
-  Reference:         1
-  Test:              1
+  Reference:         0
+  Test:              0
 Matching:
   Matching Coords:   0
   Matching Value:    0
@@ -52533,9 +53441,9 @@ Consistency Errors:
   Mismatched Coords: 0
   Mismatched Value:  0
 Availability Errors:
-  Ref Not Encount.:  1
+  Ref Not Encount.:  0
   Ref Not in Test:   0
-  Test Not Encount.: 1
+  Test Not Encount.: 0
   Test Not in Ref:   0
 Warnings:
   Unused:            0
@@ -61149,1044 +62057,35 @@ Test Execution:
   Within Time Limit: true
   Within Fork Limit: true
 
-## Function `memcpy`
+## Summary
 
-✅ Before and after function names match
-
-### Variable events
-
-#### Before variables
-
-Load from declared address of `destaddr` (decl src ln 12), asm ln 8802
-  %6 = load i8*, i8** %destaddr.addr, l18 c10, asm ln 8802
-  🔔 Live ln too early, using produced ln + 1
-  Added assignment asm ln 8802, prod ln 18.10, live ln 19, enc None
-Load from declared address of `destaddr` (decl src ln 12), asm ln 8776
-  %0 = load i8*, i8** %destaddr.addr, l13 c16, asm ln 8776
-  🔔 Live ln too early, using produced ln + 1
-  Added assignment asm ln 8776, prod ln 13.16, live ln 14, enc None
-Store to declared address of `destaddr` (decl src ln 12), asm ln 8769
-  arg 0
-  Added assignment asm ln 8769, prod ln 12.0, live ln 13, enc None
-Load from declared address of `srcaddr` (decl src ln 12), asm ln 8779
-  %1 = load i8*, i8** %srcaddr.addr, l14 c21, asm ln 8779
-  🔔 Live ln too early, using produced ln + 1
-  Added assignment asm ln 8779, prod ln 14.21, live ln 15, enc None
-Store to declared address of `srcaddr` (decl src ln 12), asm ln 8771
-  arg 1
-  Added assignment asm ln 8771, prod ln 12.0, live ln 13, enc None
-Store to declared address of `len` (decl src ln 12), asm ln 8786
-  %dec = add i64 %2, -1, l16 c13, asm ln 8785
-  🔔 Live ln too early, using produced ln + 1
-  Added assignment asm ln 8786, prod ln 16.13, live ln 17, enc None
-Load from declared address of `len` (decl src ln 12), asm ln 8784
-  %2 = load i64, i64* %len.addr, l16 c13, asm ln 8784
-  🔔 Live ln too early, using produced ln + 1
-  Added assignment asm ln 8784, prod ln 16.13, live ln 17, enc None
-Store to declared address of `len` (decl src ln 12), asm ln 8773
-  arg 2
-  Added assignment asm ln 8773, prod ln 12.0, live ln 13, enc None
-Store to declared address of `dest` (decl src ln 13), asm ln 8797
-  %incdec.ptr1 = getelementptr inbounds i8, i8* %5, i32 1, l17 c10, asm ln 8796
-  🔔 Live ln too early, using produced ln + 1
-  Added assignment asm ln 8797, prod ln 17.10, live ln 18, enc None
-Load from declared address of `dest` (decl src ln 13), asm ln 8795
-  %5 = load i8*, i8** %dest, l17 c10, asm ln 8795
-  🔔 Live ln too early, using produced ln + 1
-  Added assignment asm ln 8795, prod ln 17.10, live ln 18, enc None
-Store to declared address of `dest` (decl src ln 13), asm ln 8777
-  %0 = load i8*, i8** %destaddr.addr, l13 c16, asm ln 8776
-  Added assignment asm ln 8777, prod ln 13.16, live ln 14, enc None
-Store to declared address of `src` (decl src ln 14), asm ln 8793
-  %incdec.ptr = getelementptr inbounds i8, i8* %3, i32 1, l17 c19, asm ln 8792
-  🔔 Live ln too early, using produced ln + 1
-  Added assignment asm ln 8793, prod ln 17.19, live ln 18, enc None
-Load from declared address of `src` (decl src ln 14), asm ln 8791
-  %3 = load i8*, i8** %src, l17 c19, asm ln 8791
-  🔔 Live ln too early, using produced ln + 1
-  Added assignment asm ln 8791, prod ln 17.19, live ln 18, enc None
-Store to declared address of `src` (decl src ln 14), asm ln 8780
-  %1 = load i8*, i8** %srcaddr.addr, l14 c21, asm ln 8779
-  Added assignment asm ln 8780, prod ln 14.21, live ln 16, enc None
-
-#### After variables
-
-Load from declared address of `destaddr` (decl src ln 12), asm ln 6450
-  %6 = load i8*, i8** %destaddr.addr, l18 c10, asm ln 6450
-  🔔 Live ln too early, using produced ln + 1
-  Added assignment asm ln 6450, prod ln 18.10, live ln 19, enc None
-Load from declared address of `destaddr` (decl src ln 12), asm ln 6424
-  %0 = load i8*, i8** %destaddr.addr, l13 c16, asm ln 6424
-  🔔 Live ln too early, using produced ln + 1
-  Added assignment asm ln 6424, prod ln 13.16, live ln 14, enc None
-Store to declared address of `destaddr` (decl src ln 12), asm ln 6417
-  arg 0
-  Added assignment asm ln 6417, prod ln 12.0, live ln 13, enc None
-Load from declared address of `srcaddr` (decl src ln 12), asm ln 6427
-  %1 = load i8*, i8** %srcaddr.addr, l14 c21, asm ln 6427
-  🔔 Live ln too early, using produced ln + 1
-  Added assignment asm ln 6427, prod ln 14.21, live ln 15, enc None
-Store to declared address of `srcaddr` (decl src ln 12), asm ln 6419
-  arg 1
-  Added assignment asm ln 6419, prod ln 12.0, live ln 13, enc None
-Store to declared address of `len` (decl src ln 12), asm ln 6434
-  %dec = add i64 %2, -1, l16 c13, asm ln 6433
-  🔔 Live ln too early, using produced ln + 1
-  Added assignment asm ln 6434, prod ln 16.13, live ln 17, enc None
-Load from declared address of `len` (decl src ln 12), asm ln 6432
-  %2 = load i64, i64* %len.addr, l16 c13, asm ln 6432
-  🔔 Live ln too early, using produced ln + 1
-  Added assignment asm ln 6432, prod ln 16.13, live ln 17, enc None
-Store to declared address of `len` (decl src ln 12), asm ln 6421
-  arg 2
-  Added assignment asm ln 6421, prod ln 12.0, live ln 13, enc None
-Store to declared address of `dest` (decl src ln 13), asm ln 6445
-  %incdec.ptr1 = getelementptr inbounds i8, i8* %5, i32 1, l17 c10, asm ln 6444
-  🔔 Live ln too early, using produced ln + 1
-  Added assignment asm ln 6445, prod ln 17.10, live ln 18, enc None
-Load from declared address of `dest` (decl src ln 13), asm ln 6443
-  %5 = load i8*, i8** %dest, l17 c10, asm ln 6443
-  🔔 Live ln too early, using produced ln + 1
-  Added assignment asm ln 6443, prod ln 17.10, live ln 18, enc None
-Store to declared address of `dest` (decl src ln 13), asm ln 6425
-  %0 = load i8*, i8** %destaddr.addr, l13 c16, asm ln 6424
-  Added assignment asm ln 6425, prod ln 13.16, live ln 14, enc None
-Store to declared address of `src` (decl src ln 14), asm ln 6441
-  %incdec.ptr = getelementptr inbounds i8, i8* %3, i32 1, l17 c19, asm ln 6440
-  🔔 Live ln too early, using produced ln + 1
-  Added assignment asm ln 6441, prod ln 17.19, live ln 18, enc None
-Load from declared address of `src` (decl src ln 14), asm ln 6439
-  %3 = load i8*, i8** %src, l17 c19, asm ln 6439
-  🔔 Live ln too early, using produced ln + 1
-  Added assignment asm ln 6439, prod ln 17.19, live ln 18, enc None
-Store to declared address of `src` (decl src ln 14), asm ln 6428
-  %1 = load i8*, i8** %srcaddr.addr, l14 c21, asm ln 6427
-  Added assignment asm ln 6428, prod ln 14.21, live ln 16, enc None
-
-#### Summary
-
-✅ 5 before variables found, 5 after variables found, 0 mismatched
-
-### Symbolic values
-
-#### Before values
-
-[0;35mKLEE: WARNING: Unable to load source file `runtime/Freestanding/memcpy.c`
-[0mCollected value for `destaddr`
-  Assignment asm ln 8769, prod ln 12.0, live ln 13, enc 0
-  Concrete pointer resolves to memcpy.destaddr.deref, offset (w64 0x0)
-  Created deref expr (ReadLSB w64 (w32 0x0) memcpy.destaddr.deref)
-  Replaced concrete pointer with hash (w64 0x7FC22D8B9A750CD6)
-  i8* %destaddr
-  (w64 0x7FC22D8B9A750CD6)
-Collected value for `srcaddr`
-  Assignment asm ln 8771, prod ln 12.0, live ln 13, enc 0
-  Concrete pointer resolves to memcpy.srcaddr.deref, offset (w64 0x0)
-  Created deref expr (ReadLSB w64 (w32 0x0) memcpy.srcaddr.deref)
-  Replaced concrete pointer with hash (w64 0x5E3323D2F45AA419)
-  i8* %srcaddr
-  (w64 0x5E3323D2F45AA419)
-Collected value for `len`
-  Assignment asm ln 8773, prod ln 12.0, live ln 13, enc 0
-  i64 %len
-  (ReadLSB w64 (w32 0x0) memcpy.len)
-Collected value for `destaddr`
-  Assignment asm ln 8776, prod ln 13.16, live ln 14, enc 1
-  Concrete pointer resolves to memcpy.destaddr.deref, offset (w64 0x0)
-  Created deref expr (ReadLSB w64 (w32 0x0) memcpy.destaddr.deref)
-  Replaced concrete pointer with hash (w64 0x7FC22D8B9A750CD6)
-  %0 = load i8*, i8** %destaddr.addr, l13 c16
-  (w64 0x7FC22D8B9A750CD6)
-Collected value for `dest`
-  Assignment asm ln 8777, prod ln 13.16, live ln 14, enc 0
-  Concrete pointer resolves to memcpy.destaddr.deref, offset (w64 0x0)
-  Created deref expr (ReadLSB w64 (w32 0x0) memcpy.destaddr.deref)
-  Replaced concrete pointer with hash (w64 0x7FC22D8B9A750CD6)
-  %0 = load i8*, i8** %destaddr.addr, l13 c16
-  (w64 0x7FC22D8B9A750CD6)
-Collected value for `srcaddr`
-  Assignment asm ln 8779, prod ln 14.21, live ln 15, enc 1
-  Concrete pointer resolves to memcpy.srcaddr.deref, offset (w64 0x0)
-  Created deref expr (ReadLSB w64 (w32 0x0) memcpy.srcaddr.deref)
-  Replaced concrete pointer with hash (w64 0x5E3323D2F45AA419)
-  %1 = load i8*, i8** %srcaddr.addr, l14 c21
-  (w64 0x5E3323D2F45AA419)
-Collected value for `src`
-  Assignment asm ln 8780, prod ln 14.21, live ln 16, enc 0
-  Concrete pointer resolves to memcpy.srcaddr.deref, offset (w64 0x0)
-  Created deref expr (ReadLSB w64 (w32 0x0) memcpy.srcaddr.deref)
-  Replaced concrete pointer with hash (w64 0x5E3323D2F45AA419)
-  %1 = load i8*, i8** %srcaddr.addr, l14 c21
-  (w64 0x5E3323D2F45AA419)
-Collected value for `len`
-  Assignment asm ln 8784, prod ln 16.13, live ln 17, enc 1
-  %2 = load i64, i64* %len.addr, l16 c13
-  (ReadLSB w64 (w32 0x0) memcpy.len)
-Collected value for `len`
-  Assignment asm ln 8786, prod ln 16.13, live ln 17, enc 2
-  %dec = add i64 %2, -1, l16 c13
-  (Add w64 (w64 0xFFFFFFFFFFFFFFFF)
-          (ReadLSB w64 (w32 0x0) memcpy.len))
-Collected value for `destaddr`
-  Assignment asm ln 8802, prod ln 18.10, live ln 19, enc 2
-  Concrete pointer resolves to memcpy.destaddr.deref, offset (w64 0x0)
-  Created deref expr (ReadLSB w64 (w32 0x0) memcpy.destaddr.deref)
-  Replaced concrete pointer with hash (w64 0x7FC22D8B9A750CD6)
-  %6 = load i8*, i8** %destaddr.addr, l18 c10
-  (w64 0x7FC22D8B9A750CD6)
-Collected value for `src`
-  Assignment asm ln 8791, prod ln 17.19, live ln 18, enc 1
-  Concrete pointer resolves to memcpy.srcaddr.deref, offset (w64 0x0)
-  Created deref expr (ReadLSB w64 (w32 0x0) memcpy.srcaddr.deref)
-  Replaced concrete pointer with hash (w64 0x5E3323D2F45AA419)
-  %3 = load i8*, i8** %src, l17 c19
-  (w64 0x5E3323D2F45AA419)
-Collected value for `src`
-  Assignment asm ln 8793, prod ln 17.19, live ln 18, enc 2
-  Concrete pointer resolves to memcpy.srcaddr.deref, offset (w64 0x1)
-  Created deref expr (ReadLSB w64 (w32 0x1) memcpy.srcaddr.deref)
-  Replaced concrete pointer with hash (w64 0x4570F25F0268EBE0)
-  %incdec.ptr = getelementptr inbounds i8, i8* %3, i32 1, l17 c19
-  (w64 0x4570F25F0268EBE0)
-Collected value for `dest`
-  Assignment asm ln 8795, prod ln 17.10, live ln 18, enc 1
-  Concrete pointer resolves to memcpy.destaddr.deref, offset (w64 0x0)
-  Created deref expr (ReadLSB w64 (w32 0x0) memcpy.destaddr.deref)
-  Replaced concrete pointer with hash (w64 0x7FC22D8B9A750CD6)
-  %5 = load i8*, i8** %dest, l17 c10
-  (w64 0x7FC22D8B9A750CD6)
-Collected value for `dest`
-  Assignment asm ln 8797, prod ln 17.10, live ln 18, enc 2
-  Concrete pointer resolves to memcpy.destaddr.deref, offset (w64 0x1)
-  Created deref expr (ReadLSB w64 (w32 0x1) memcpy.destaddr.deref)
-  Replaced concrete pointer with hash (w64 0x5870C7D2416A9BDE)
-  %incdec.ptr1 = getelementptr inbounds i8, i8* %5, i32 1, l17 c10
-  (w64 0x5870C7D2416A9BDE)
-[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;1;31mKLEE: ERROR: runtime/Freestanding/memcpy.c:17: memory error: out of bound pointer
-[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
-[0m
-🔔 Unable to execute all before program states
-
-#### After values
-
-Collected value for `destaddr`
-  Assignment asm ln 6417, prod ln 12.0, live ln 13, enc 0
-  Concrete pointer resolves to memcpy.destaddr.deref, offset (w64 0x0)
-  Created deref expr (ReadLSB w64 (w32 0x0) memcpy.destaddr.deref)
-  Replaced concrete pointer with hash (w64 0x7FC22D8B9A750CD6)
-  i8* %destaddr
-  (w64 0x7FC22D8B9A750CD6)
-Collected value for `srcaddr`
-  Assignment asm ln 6419, prod ln 12.0, live ln 13, enc 0
-  Concrete pointer resolves to memcpy.srcaddr.deref, offset (w64 0x0)
-  Created deref expr (ReadLSB w64 (w32 0x0) memcpy.srcaddr.deref)
-  Replaced concrete pointer with hash (w64 0x5E3323D2F45AA419)
-  i8* %srcaddr
-  (w64 0x5E3323D2F45AA419)
-Collected value for `len`
-  Assignment asm ln 6421, prod ln 12.0, live ln 13, enc 0
-  i64 %len
-  (ReadLSB w64 (w32 0x0) memcpy.len)
-Collected value for `destaddr`
-  Assignment asm ln 6424, prod ln 13.16, live ln 14, enc 1
-  Concrete pointer resolves to memcpy.destaddr.deref, offset (w64 0x0)
-  Created deref expr (ReadLSB w64 (w32 0x0) memcpy.destaddr.deref)
-  Replaced concrete pointer with hash (w64 0x7FC22D8B9A750CD6)
-  %0 = load i8*, i8** %destaddr.addr, l13 c16
-  (w64 0x7FC22D8B9A750CD6)
-Collected value for `dest`
-  Assignment asm ln 6425, prod ln 13.16, live ln 14, enc 0
-  Concrete pointer resolves to memcpy.destaddr.deref, offset (w64 0x0)
-  Created deref expr (ReadLSB w64 (w32 0x0) memcpy.destaddr.deref)
-  Replaced concrete pointer with hash (w64 0x7FC22D8B9A750CD6)
-  %0 = load i8*, i8** %destaddr.addr, l13 c16
-  (w64 0x7FC22D8B9A750CD6)
-Collected value for `srcaddr`
-  Assignment asm ln 6427, prod ln 14.21, live ln 15, enc 1
-  Concrete pointer resolves to memcpy.srcaddr.deref, offset (w64 0x0)
-  Created deref expr (ReadLSB w64 (w32 0x0) memcpy.srcaddr.deref)
-  Replaced concrete pointer with hash (w64 0x5E3323D2F45AA419)
-  %1 = load i8*, i8** %srcaddr.addr, l14 c21
-  (w64 0x5E3323D2F45AA419)
-Collected value for `src`
-  Assignment asm ln 6428, prod ln 14.21, live ln 16, enc 0
-  Concrete pointer resolves to memcpy.srcaddr.deref, offset (w64 0x0)
-  Created deref expr (ReadLSB w64 (w32 0x0) memcpy.srcaddr.deref)
-  Replaced concrete pointer with hash (w64 0x5E3323D2F45AA419)
-  %1 = load i8*, i8** %srcaddr.addr, l14 c21
-  (w64 0x5E3323D2F45AA419)
-Collected value for `len`
-  Assignment asm ln 6432, prod ln 16.13, live ln 17, enc 1
-  %2 = load i64, i64* %len.addr, l16 c13
-  (ReadLSB w64 (w32 0x0) memcpy.len)
-Collected value for `len`
-  Assignment asm ln 6434, prod ln 16.13, live ln 17, enc 2
-  %dec = add i64 %2, -1, l16 c13
-  (Add w64 (w64 0xFFFFFFFFFFFFFFFF)
-          (ReadLSB w64 (w32 0x0) memcpy.len))
-Collected value for `destaddr`
-  Assignment asm ln 6450, prod ln 18.10, live ln 19, enc 2
-  Concrete pointer resolves to memcpy.destaddr.deref, offset (w64 0x0)
-  Created deref expr (ReadLSB w64 (w32 0x0) memcpy.destaddr.deref)
-  Replaced concrete pointer with hash (w64 0x7FC22D8B9A750CD6)
-  %6 = load i8*, i8** %destaddr.addr, l18 c10
-  (w64 0x7FC22D8B9A750CD6)
-Collected value for `src`
-  Assignment asm ln 6439, prod ln 17.19, live ln 18, enc 1
-  Concrete pointer resolves to memcpy.srcaddr.deref, offset (w64 0x0)
-  Created deref expr (ReadLSB w64 (w32 0x0) memcpy.srcaddr.deref)
-  Replaced concrete pointer with hash (w64 0x5E3323D2F45AA419)
-  %3 = load i8*, i8** %src, l17 c19
-  (w64 0x5E3323D2F45AA419)
-Collected value for `src`
-  Assignment asm ln 6441, prod ln 17.19, live ln 18, enc 2
-  Concrete pointer resolves to memcpy.srcaddr.deref, offset (w64 0x1)
-  Created deref expr (ReadLSB w64 (w32 0x1) memcpy.srcaddr.deref)
-  Replaced concrete pointer with hash (w64 0x4570F25F0268EBE0)
-  %incdec.ptr = getelementptr inbounds i8, i8* %3, i32 1, l17 c19
-  (w64 0x4570F25F0268EBE0)
-Collected value for `dest`
-  Assignment asm ln 6443, prod ln 17.10, live ln 18, enc 1
-  Concrete pointer resolves to memcpy.destaddr.deref, offset (w64 0x0)
-  Created deref expr (ReadLSB w64 (w32 0x0) memcpy.destaddr.deref)
-  Replaced concrete pointer with hash (w64 0x7FC22D8B9A750CD6)
-  %5 = load i8*, i8** %dest, l17 c10
-  (w64 0x7FC22D8B9A750CD6)
-Collected value for `dest`
-  Assignment asm ln 6445, prod ln 17.10, live ln 18, enc 2
-  Concrete pointer resolves to memcpy.destaddr.deref, offset (w64 0x1)
-  Created deref expr (ReadLSB w64 (w32 0x1) memcpy.destaddr.deref)
-  Replaced concrete pointer with hash (w64 0x5870C7D2416A9BDE)
-  %incdec.ptr1 = getelementptr inbounds i8, i8* %5, i32 1, l17 c10
-  (w64 0x5870C7D2416A9BDE)
-[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;1;31mKLEE: ERROR: runtime/Freestanding/memcpy.c:17: memory error: out of bound pointer
-[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
-[0m
-🔔 Unable to execute all after program states
-
-### Assignments
-
-#### Variables with single memory location
-
-✅ Variable `dest` uses only a single memory location (via `dbg.declare`), skipping further checks
-Assignments:         dest
-  Reference:         1
-  Test:              1
+Assignments:
+  Reference:               512
+  Test:                    399 ( 77.93% of ref )
 Matching:
-  Matching Coords:   1
-  Matching Value:    1
+  Matching Coords:         231 ( 45.12% of ref )
+  Matching Value:          297 ( 58.01% of ref )
 Consistency Errors:
-  Mismatched Coords: 0
-  Mismatched Value:  0
+  Mismatched Coords:        69 ( 13.48% of ref )
+  Mismatched Value:          3 (  0.59% of ref )
 Availability Errors:
-  Ref Not Encount.:  0
-  Ref Not in Test:   0
-  Test Not Encount.: 0
-  Test Not in Ref:   0
+  Ref Not Encount.:        181 ( 35.35% of ref )
+  Ref Not in Test:          12 (  2.34% of ref )
+  Test Not Encount.:        97 ( 24.31% of test)
+  Test Not in Ref:           2 (  0.50% of test)
 Warnings:
-  Unused:            0
-  Removable:         0
-  Unreachable:       0
+  Unused:                    0 (  0.00% of ref )
+  Removable:                 0 (  0.00% of ref )
+  Unreachable:              19 (  3.71% of ref )
 Reference Execution:
-  Function Covered:  true
-  Complete:          false
-  Within Time Limit: true
-  Within Fork Limit: false
+  Function Covered:         59 ( 11.52% of ref )
+  Complete:                 54 ( 10.55% of ref )
+  Within Time Limit:       366 ( 71.48% of ref )
+  Within Fork Limit:       396 ( 77.34% of ref )
 Test Execution:
-  Function Covered:  true
-  Complete:          false
-  Within Time Limit: true
-  Within Fork Limit: false
+  Function Covered:         58 ( 14.54% of test)
+  Complete:                 43 ( 10.78% of test)
+  Within Time Limit:       282 ( 70.68% of test)
+  Within Fork Limit:       323 ( 80.95% of test)
 
-✅ Variable `len` uses only a single memory location (via `dbg.declare`), skipping further checks
-Assignments:         len
-  Reference:         1
-  Test:              1
-Matching:
-  Matching Coords:   1
-  Matching Value:    1
-Consistency Errors:
-  Mismatched Coords: 0
-  Mismatched Value:  0
-Availability Errors:
-  Ref Not Encount.:  0
-  Ref Not in Test:   0
-  Test Not Encount.: 0
-  Test Not in Ref:   0
-Warnings:
-  Unused:            0
-  Removable:         0
-  Unreachable:       0
-Reference Execution:
-  Function Covered:  true
-  Complete:          false
-  Within Time Limit: true
-  Within Fork Limit: false
-Test Execution:
-  Function Covered:  true
-  Complete:          false
-  Within Time Limit: true
-  Within Fork Limit: false
-
-✅ Variable `srcaddr` uses only a single memory location (via `dbg.declare`), skipping further checks
-Assignments:         srcaddr
-  Reference:         1
-  Test:              1
-Matching:
-  Matching Coords:   1
-  Matching Value:    1
-Consistency Errors:
-  Mismatched Coords: 0
-  Mismatched Value:  0
-Availability Errors:
-  Ref Not Encount.:  0
-  Ref Not in Test:   0
-  Test Not Encount.: 0
-  Test Not in Ref:   0
-Warnings:
-  Unused:            0
-  Removable:         0
-  Unreachable:       0
-Reference Execution:
-  Function Covered:  true
-  Complete:          false
-  Within Time Limit: true
-  Within Fork Limit: false
-Test Execution:
-  Function Covered:  true
-  Complete:          false
-  Within Time Limit: true
-  Within Fork Limit: false
-
-#### Collation
-
-Filtering before assignments: `destaddr` (decl src ln 12)
-
-Checking equivalence of `destaddr` (decl src ln 12) from
-  assn asm ln 8776, prod ln 13.16, live ln 14, enc 1
-  %0 = load i8*, i8** %destaddr.addr, l13 c16
-  (w64 0x7FC22D8B9A750CD6)
-and
-  assn asm ln 8769, prod ln 12.0, live ln 13, enc 0
-  i8* %destaddr
-  (w64 0x7FC22D8B9A750CD6)
-🔔 Removing: asm ln 8776, prod ln 13.16, live ln 14, enc 1
-
-Checking equivalence of `destaddr` (decl src ln 12) from
-  assn asm ln 8802, prod ln 18.10, live ln 19, enc 2
-  %6 = load i8*, i8** %destaddr.addr, l18 c10
-  (w64 0x7FC22D8B9A750CD6)
-and
-  assn asm ln 8769, prod ln 12.0, live ln 13, enc 0
-  i8* %destaddr
-  (w64 0x7FC22D8B9A750CD6)
-🔔 Removing: asm ln 8802, prod ln 18.10, live ln 19, enc 2
-
-Filtering before assignments: `src` (decl src ln 14)
-
-Checking equivalence of `src` (decl src ln 14) from
-  assn asm ln 8791, prod ln 17.19, live ln 18, enc 1
-  %3 = load i8*, i8** %src, l17 c19
-  (w64 0x5E3323D2F45AA419)
-and
-  assn asm ln 8780, prod ln 14.21, live ln 16, enc 0
-  %1 = load i8*, i8** %srcaddr.addr, l14 c21
-  (w64 0x5E3323D2F45AA419)
-🔔 Removing: asm ln 8791, prod ln 17.19, live ln 18, enc 1
-
-Checking equivalence of `src` (decl src ln 14) from
-  assn asm ln 8793, prod ln 17.19, live ln 18, enc 2
-  %incdec.ptr = getelementptr inbounds i8, i8* %3, i32 1, l17 c19
-  (w64 0x4570F25F0268EBE0)
-and
-  assn asm ln 8780, prod ln 14.21, live ln 16, enc 0
-  %1 = load i8*, i8** %srcaddr.addr, l14 c21
-  (w64 0x5E3323D2F45AA419)
-
-Filtering after assignments: `destaddr` (decl src ln 12)
-
-Checking equivalence of `destaddr` (decl src ln 12) from
-  assn asm ln 6424, prod ln 13.16, live ln 14, enc 1
-  %0 = load i8*, i8** %destaddr.addr, l13 c16
-  (w64 0x7FC22D8B9A750CD6)
-and
-  assn asm ln 6417, prod ln 12.0, live ln 13, enc 0
-  i8* %destaddr
-  (w64 0x7FC22D8B9A750CD6)
-🔔 Removing: asm ln 6424, prod ln 13.16, live ln 14, enc 1
-
-Checking equivalence of `destaddr` (decl src ln 12) from
-  assn asm ln 6450, prod ln 18.10, live ln 19, enc 2
-  %6 = load i8*, i8** %destaddr.addr, l18 c10
-  (w64 0x7FC22D8B9A750CD6)
-and
-  assn asm ln 6417, prod ln 12.0, live ln 13, enc 0
-  i8* %destaddr
-  (w64 0x7FC22D8B9A750CD6)
-🔔 Removing: asm ln 6450, prod ln 18.10, live ln 19, enc 2
-
-Filtering after assignments: `src` (decl src ln 14)
-
-Checking equivalence of `src` (decl src ln 14) from
-  assn asm ln 6439, prod ln 17.19, live ln 18, enc 1
-  %3 = load i8*, i8** %src, l17 c19
-  (w64 0x5E3323D2F45AA419)
-and
-  assn asm ln 6428, prod ln 14.21, live ln 16, enc 0
-  %1 = load i8*, i8** %srcaddr.addr, l14 c21
-  (w64 0x5E3323D2F45AA419)
-🔔 Removing: asm ln 6439, prod ln 17.19, live ln 18, enc 1
-
-Checking equivalence of `src` (decl src ln 14) from
-  assn asm ln 6441, prod ln 17.19, live ln 18, enc 2
-  %incdec.ptr = getelementptr inbounds i8, i8* %3, i32 1, l17 c19
-  (w64 0x4570F25F0268EBE0)
-and
-  assn asm ln 6428, prod ln 14.21, live ln 16, enc 0
-  %1 = load i8*, i8** %srcaddr.addr, l14 c21
-  (w64 0x5E3323D2F45AA419)
-
-Collating encountered before assignments: `destaddr` (decl src ln 12)
-  asm ln 8769, prod ln 12.0, live ln 13, enc 0
-Collating encountered before assignments: `src` (decl src ln 14)
-  asm ln 8780, prod ln 14.21, live ln 16, enc 0
-  asm ln 8793, prod ln 17.19, live ln 18, enc 1
-
-Collating encountered after assignments: `destaddr` (decl src ln 12)
-  asm ln 6417, prod ln 12.0, live ln 13, enc 0
-Collating encountered after assignments: `src` (decl src ln 14)
-  asm ln 6428, prod ln 14.21, live ln 16, enc 0
-  asm ln 6441, prod ln 17.19, live ln 18, enc 1
-
-#### Check after using before as reference
-
-✅ After `dest` assns checked using before as reference
-Assignments:         dest
-  Reference:         0
-  Test:              0
-Matching:
-  Matching Coords:   0
-  Matching Value:    0
-Consistency Errors:
-  Mismatched Coords: 0
-  Mismatched Value:  0
-Availability Errors:
-  Ref Not Encount.:  0
-  Ref Not in Test:   0
-  Test Not Encount.: 0
-  Test Not in Ref:   0
-Warnings:
-  Unused:            0
-  Removable:         0
-  Unreachable:       0
-Reference Execution:
-  Function Covered:  true
-  Complete:          false
-  Within Time Limit: true
-  Within Fork Limit: false
-Test Execution:
-  Function Covered:  true
-  Complete:          false
-  Within Time Limit: true
-  Within Fork Limit: false
-
-Checking equivalence of `destaddr` (decl src ln 12) from
-  assn asm ln 6417, prod ln 12.0, live ln 13, enc 0
-  i8* %destaddr
-  (w64 0x7FC22D8B9A750CD6)
-and
-  assn asm ln 8769, prod ln 12.0, live ln 13, enc 0
-  i8* %destaddr
-  (w64 0x7FC22D8B9A750CD6)
-✅ Before `destaddr` (decl src ln 12) assn asm ln 8769, prod ln 12.0, live ln 13, enc 0 symbolic value matches after assn asm ln 6417, prod ln 12.0, live ln 13, enc 0
-
-✅ After `destaddr` assns checked using before as reference
-Assignments:         destaddr
-  Reference:         1
-  Test:              1
-Matching:
-  Matching Coords:   1
-  Matching Value:    1
-Consistency Errors:
-  Mismatched Coords: 0
-  Mismatched Value:  0
-Availability Errors:
-  Ref Not Encount.:  0
-  Ref Not in Test:   0
-  Test Not Encount.: 0
-  Test Not in Ref:   0
-Warnings:
-  Unused:            0
-  Removable:         0
-  Unreachable:       0
-Reference Execution:
-  Function Covered:  true
-  Complete:          false
-  Within Time Limit: true
-  Within Fork Limit: false
-Test Execution:
-  Function Covered:  true
-  Complete:          false
-  Within Time Limit: true
-  Within Fork Limit: false
-
-✅ After `len` assns checked using before as reference
-Assignments:         len
-  Reference:         0
-  Test:              0
-Matching:
-  Matching Coords:   0
-  Matching Value:    0
-Consistency Errors:
-  Mismatched Coords: 0
-  Mismatched Value:  0
-Availability Errors:
-  Ref Not Encount.:  0
-  Ref Not in Test:   0
-  Test Not Encount.: 0
-  Test Not in Ref:   0
-Warnings:
-  Unused:            0
-  Removable:         0
-  Unreachable:       0
-Reference Execution:
-  Function Covered:  true
-  Complete:          false
-  Within Time Limit: true
-  Within Fork Limit: false
-Test Execution:
-  Function Covered:  true
-  Complete:          false
-  Within Time Limit: true
-  Within Fork Limit: false
-
-Checking equivalence of `src` (decl src ln 14) from
-  assn asm ln 6428, prod ln 14.21, live ln 16, enc 0
-  %1 = load i8*, i8** %srcaddr.addr, l14 c21
-  (w64 0x5E3323D2F45AA419)
-and
-  assn asm ln 8780, prod ln 14.21, live ln 16, enc 0
-  %1 = load i8*, i8** %srcaddr.addr, l14 c21
-  (w64 0x5E3323D2F45AA419)
-✅ Before `src` (decl src ln 14) assn asm ln 8780, prod ln 14.21, live ln 16, enc 0 symbolic value matches after assn asm ln 6428, prod ln 14.21, live ln 16, enc 0
-
-Checking equivalence of `src` (decl src ln 14) from
-  assn asm ln 6441, prod ln 17.19, live ln 18, enc 1
-  %incdec.ptr = getelementptr inbounds i8, i8* %3, i32 1, l17 c19
-  (w64 0x4570F25F0268EBE0)
-and
-  assn asm ln 8793, prod ln 17.19, live ln 18, enc 1
-  %incdec.ptr = getelementptr inbounds i8, i8* %3, i32 1, l17 c19
-  (w64 0x4570F25F0268EBE0)
-✅ Before `src` (decl src ln 14) assn asm ln 8793, prod ln 17.19, live ln 18, enc 1 symbolic value matches after assn asm ln 6441, prod ln 17.19, live ln 18, enc 1
-
-✅ After `src` assns checked using before as reference
-Assignments:         src
-  Reference:         2
-  Test:              2
-Matching:
-  Matching Coords:   2
-  Matching Value:    2
-Consistency Errors:
-  Mismatched Coords: 0
-  Mismatched Value:  0
-Availability Errors:
-  Ref Not Encount.:  0
-  Ref Not in Test:   0
-  Test Not Encount.: 0
-  Test Not in Ref:   0
-Warnings:
-  Unused:            0
-  Removable:         0
-  Unreachable:       0
-Reference Execution:
-  Function Covered:  true
-  Complete:          false
-  Within Time Limit: true
-  Within Fork Limit: false
-Test Execution:
-  Function Covered:  true
-  Complete:          false
-  Within Time Limit: true
-  Within Fork Limit: false
-
-✅ After `srcaddr` assns checked using before as reference
-Assignments:         srcaddr
-  Reference:         0
-  Test:              0
-Matching:
-  Matching Coords:   0
-  Matching Value:    0
-Consistency Errors:
-  Mismatched Coords: 0
-  Mismatched Value:  0
-Availability Errors:
-  Ref Not Encount.:  0
-  Ref Not in Test:   0
-  Test Not Encount.: 0
-  Test Not in Ref:   0
-Warnings:
-  Unused:            0
-  Removable:         0
-  Unreachable:       0
-Reference Execution:
-  Function Covered:  true
-  Complete:          false
-  Within Time Limit: true
-  Within Fork Limit: false
-Test Execution:
-  Function Covered:  true
-  Complete:          false
-  Within Time Limit: true
-  Within Fork Limit: false
-
-## Function `memset`
-
-✅ Before and after function names match
-
-### Variable events
-
-#### Before variables
-
-Load from declared address of `dst` (decl src ln 12), asm ln 8841
-  %4 = load i8*, i8** %dst.addr, l16 c10, asm ln 8841
-  🔔 Live ln too early, using produced ln + 1
-  Added assignment asm ln 8841, prod ln 16.10, live ln 17, enc None
-Load from declared address of `dst` (decl src ln 12), asm ln 8820
-  %0 = load i8*, i8** %dst.addr, l13 c13, asm ln 8820
-  🔔 Live ln too early, using produced ln + 1
-  Added assignment asm ln 8820, prod ln 13.13, live ln 14, enc None
-Store to declared address of `dst` (decl src ln 12), asm ln 8813
-  arg 0
-  Added assignment asm ln 8813, prod ln 12.0, live ln 13, enc None
-Load from declared address of `s` (decl src ln 12), asm ln 8832
-  %2 = load i32, i32* %s.addr, l15 c12, asm ln 8832
-  🔔 Live ln too early, using produced ln + 1
-  Added assignment asm ln 8832, prod ln 15.12, live ln 16, enc None
-Store to declared address of `s` (decl src ln 12), asm ln 8815
-  arg 1
-  Added assignment asm ln 8815, prod ln 12.0, live ln 13, enc None
-Store to declared address of `count` (decl src ln 12), asm ln 8827
-  %dec = add i64 %1, -1, l14 c15, asm ln 8826
-  🔔 Live ln too early, using produced ln + 1
-  Added assignment asm ln 8827, prod ln 14.15, live ln 15, enc None
-Load from declared address of `count` (decl src ln 12), asm ln 8825
-  %1 = load i64, i64* %count.addr, l14 c15, asm ln 8825
-  🔔 Live ln too early, using produced ln + 1
-  Added assignment asm ln 8825, prod ln 14.15, live ln 15, enc None
-Store to declared address of `count` (decl src ln 12), asm ln 8817
-  arg 2
-  Added assignment asm ln 8817, prod ln 12.0, live ln 13, enc None
-Store to declared address of `a` (decl src ln 13), asm ln 8836
-  %incdec.ptr = getelementptr inbounds i8, i8* %3, i32 1, l15 c7, asm ln 8835
-  🔔 Live ln too early, using produced ln + 1
-  Added assignment asm ln 8836, prod ln 15.7, live ln 16, enc None
-Load from declared address of `a` (decl src ln 13), asm ln 8834
-  %3 = load i8*, i8** %a, l15 c7, asm ln 8834
-  🔔 Live ln too early, using produced ln + 1
-  Added assignment asm ln 8834, prod ln 15.7, live ln 16, enc None
-Store to declared address of `a` (decl src ln 13), asm ln 8821
-  %0 = load i8*, i8** %dst.addr, l13 c13, asm ln 8820
-  Added assignment asm ln 8821, prod ln 13.13, live ln 14, enc None
-
-#### After variables
-
-Load from declared address of `dst` (decl src ln 12), asm ln 6489
-  %4 = load i8*, i8** %dst.addr, l16 c10, asm ln 6489
-  🔔 Live ln too early, using produced ln + 1
-  Added assignment asm ln 6489, prod ln 16.10, live ln 17, enc None
-Load from declared address of `dst` (decl src ln 12), asm ln 6468
-  %0 = load i8*, i8** %dst.addr, l13 c13, asm ln 6468
-  🔔 Live ln too early, using produced ln + 1
-  Added assignment asm ln 6468, prod ln 13.13, live ln 14, enc None
-Store to declared address of `dst` (decl src ln 12), asm ln 6461
-  arg 0
-  Added assignment asm ln 6461, prod ln 12.0, live ln 13, enc None
-Load from declared address of `s` (decl src ln 12), asm ln 6480
-  %2 = load i32, i32* %s.addr, l15 c12, asm ln 6480
-  🔔 Live ln too early, using produced ln + 1
-  Added assignment asm ln 6480, prod ln 15.12, live ln 16, enc None
-Store to declared address of `s` (decl src ln 12), asm ln 6463
-  arg 1
-  Added assignment asm ln 6463, prod ln 12.0, live ln 13, enc None
-Store to declared address of `count` (decl src ln 12), asm ln 6475
-  %dec = add i64 %1, -1, l14 c15, asm ln 6474
-  🔔 Live ln too early, using produced ln + 1
-  Added assignment asm ln 6475, prod ln 14.15, live ln 15, enc None
-Load from declared address of `count` (decl src ln 12), asm ln 6473
-  %1 = load i64, i64* %count.addr, l14 c15, asm ln 6473
-  🔔 Live ln too early, using produced ln + 1
-  Added assignment asm ln 6473, prod ln 14.15, live ln 15, enc None
-Store to declared address of `count` (decl src ln 12), asm ln 6465
-  arg 2
-  Added assignment asm ln 6465, prod ln 12.0, live ln 13, enc None
-Store to declared address of `a` (decl src ln 13), asm ln 6484
-  %incdec.ptr = getelementptr inbounds i8, i8* %3, i32 1, l15 c7, asm ln 6483
-  🔔 Live ln too early, using produced ln + 1
-  Added assignment asm ln 6484, prod ln 15.7, live ln 16, enc None
-Load from declared address of `a` (decl src ln 13), asm ln 6482
-  %3 = load i8*, i8** %a, l15 c7, asm ln 6482
-  🔔 Live ln too early, using produced ln + 1
-  Added assignment asm ln 6482, prod ln 15.7, live ln 16, enc None
-Store to declared address of `a` (decl src ln 13), asm ln 6469
-  %0 = load i8*, i8** %dst.addr, l13 c13, asm ln 6468
-  Added assignment asm ln 6469, prod ln 13.13, live ln 14, enc None
-
-#### Summary
-
-✅ 4 before variables found, 4 after variables found, 0 mismatched
-
-### Symbolic values
-
-#### Before values
-
-[0;35mKLEE: WARNING: Unable to load source file `runtime/Freestanding/memset.c`
-[0mCollected value for `dst`
-  Assignment asm ln 8813, prod ln 12.0, live ln 13, enc 0
-  Concrete pointer resolves to memset.dst.deref, offset (w64 0x0)
-  Created deref expr (ReadLSB w64 (w32 0x0) memset.dst.deref)
-  Replaced concrete pointer with hash (w64 0x81E3D7BD4621BBAC)
-  i8* %dst
-  (w64 0x81E3D7BD4621BBAC)
-Collected value for `s`
-  Assignment asm ln 8815, prod ln 12.0, live ln 13, enc 0
-  i32 %s
-  (ReadLSB w32 (w32 0x0) memset.s)
-Collected value for `count`
-  Assignment asm ln 8817, prod ln 12.0, live ln 13, enc 0
-  i64 %count
-  (ReadLSB w64 (w32 0x0) memset.count)
-Collected value for `dst`
-  Assignment asm ln 8820, prod ln 13.13, live ln 14, enc 1
-  Concrete pointer resolves to memset.dst.deref, offset (w64 0x0)
-  Created deref expr (ReadLSB w64 (w32 0x0) memset.dst.deref)
-  Replaced concrete pointer with hash (w64 0x81E3D7BD4621BBAC)
-  %0 = load i8*, i8** %dst.addr, l13 c13
-  (w64 0x81E3D7BD4621BBAC)
-Collected value for `a`
-  Assignment asm ln 8821, prod ln 13.13, live ln 14, enc 0
-  Concrete pointer resolves to memset.dst.deref, offset (w64 0x0)
-  Created deref expr (ReadLSB w64 (w32 0x0) memset.dst.deref)
-  Replaced concrete pointer with hash (w64 0x81E3D7BD4621BBAC)
-  %0 = load i8*, i8** %dst.addr, l13 c13
-  (w64 0x81E3D7BD4621BBAC)
-Collected value for `count`
-  Assignment asm ln 8825, prod ln 14.15, live ln 15, enc 1
-  %1 = load i64, i64* %count.addr, l14 c15
-  (ReadLSB w64 (w32 0x0) memset.count)
-Collected value for `count`
-  Assignment asm ln 8827, prod ln 14.15, live ln 15, enc 2
-  %dec = add i64 %1, -1, l14 c15
-  (Add w64 (w64 0xFFFFFFFFFFFFFFFF)
-          (ReadLSB w64 (w32 0x0) memset.count))
-Collected value for `dst`
-  Assignment asm ln 8841, prod ln 16.10, live ln 17, enc 2
-  Concrete pointer resolves to memset.dst.deref, offset (w64 0x0)
-  Created deref expr (ReadLSB w64 (w32 0x0) memset.dst.deref)
-  Replaced concrete pointer with hash (w64 0x81E3D7BD4621BBAC)
-  %4 = load i8*, i8** %dst.addr, l16 c10
-  (w64 0x81E3D7BD4621BBAC)
-Collected value for `s`
-  Assignment asm ln 8832, prod ln 15.12, live ln 16, enc 1
-  %2 = load i32, i32* %s.addr, l15 c12
-  (ReadLSB w32 (w32 0x0) memset.s)
-Collected value for `a`
-  Assignment asm ln 8834, prod ln 15.7, live ln 16, enc 1
-  Concrete pointer resolves to memset.dst.deref, offset (w64 0x0)
-  Created deref expr (ReadLSB w64 (w32 0x0) memset.dst.deref)
-  Replaced concrete pointer with hash (w64 0x81E3D7BD4621BBAC)
-  %3 = load i8*, i8** %a, l15 c7
-  (w64 0x81E3D7BD4621BBAC)
-Collected value for `a`
-  Assignment asm ln 8836, prod ln 15.7, live ln 16, enc 2
-  Concrete pointer resolves to memset.dst.deref, offset (w64 0x1)
-  Created deref expr (ReadLSB w64 (w32 0x1) memset.dst.deref)
-  Replaced concrete pointer with hash (w64 0x6AC9DD0D98FEBCE6)
-  %incdec.ptr = getelementptr inbounds i8, i8* %3, i32 1, l15 c7
-  (w64 0x6AC9DD0D98FEBCE6)
-[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;1;31mKLEE: ERROR: runtime/Freestanding/memset.c:15: memory error: out of bound pointer
-[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
-[0m
-🔔 Unable to execute all before program states
-
-#### After values
-
-Collected value for `dst`
-  Assignment asm ln 6461, prod ln 12.0, live ln 13, enc 0
-  Concrete pointer resolves to memset.dst.deref, offset (w64 0x0)
-  Created deref expr (ReadLSB w64 (w32 0x0) memset.dst.deref)
-  Replaced concrete pointer with hash (w64 0x81E3D7BD4621BBAC)
-  i8* %dst
-  (w64 0x81E3D7BD4621BBAC)
-Collected value for `s`
-  Assignment asm ln 6463, prod ln 12.0, live ln 13, enc 0
-  i32 %s
-  (ReadLSB w32 (w32 0x0) memset.s)
-Collected value for `count`
-  Assignment asm ln 6465, prod ln 12.0, live ln 13, enc 0
-  i64 %count
-  (ReadLSB w64 (w32 0x0) memset.count)
-Collected value for `dst`
-  Assignment asm ln 6468, prod ln 13.13, live ln 14, enc 1
-  Concrete pointer resolves to memset.dst.deref, offset (w64 0x0)
-  Created deref expr (ReadLSB w64 (w32 0x0) memset.dst.deref)
-  Replaced concrete pointer with hash (w64 0x81E3D7BD4621BBAC)
-  %0 = load i8*, i8** %dst.addr, l13 c13
-  (w64 0x81E3D7BD4621BBAC)
-Collected value for `a`
-  Assignment asm ln 6469, prod ln 13.13, live ln 14, enc 0
-  Concrete pointer resolves to memset.dst.deref, offset (w64 0x0)
-  Created deref expr (ReadLSB w64 (w32 0x0) memset.dst.deref)
-  Replaced concrete pointer with hash (w64 0x81E3D7BD4621BBAC)
-  %0 = load i8*, i8** %dst.addr, l13 c13
-  (w64 0x81E3D7BD4621BBAC)
-Collected value for `count`
-  Assignment asm ln 6473, prod ln 14.15, live ln 15, enc 1
-  %1 = load i64, i64* %count.addr, l14 c15
-  (ReadLSB w64 (w32 0x0) memset.count)
-Collected value for `count`
-  Assignment asm ln 6475, prod ln 14.15, live ln 15, enc 2
-  %dec = add i64 %1, -1, l14 c15
-  (Add w64 (w64 0xFFFFFFFFFFFFFFFF)
-          (ReadLSB w64 (w32 0x0) memset.count))
-Collected value for `dst`
-  Assignment asm ln 6489, prod ln 16.10, live ln 17, enc 2
-  Concrete pointer resolves to memset.dst.deref, offset (w64 0x0)
-  Created deref expr (ReadLSB w64 (w32 0x0) memset.dst.deref)
-  Replaced concrete pointer with hash (w64 0x81E3D7BD4621BBAC)
-  %4 = load i8*, i8** %dst.addr, l16 c10
-  (w64 0x81E3D7BD4621BBAC)
-Collected value for `s`
-  Assignment asm ln 6480, prod ln 15.12, live ln 16, enc 1
-  %2 = load i32, i32* %s.addr, l15 c12
-  (ReadLSB w32 (w32 0x0) memset.s)
-Collected value for `a`
-  Assignment asm ln 6482, prod ln 15.7, live ln 16, enc 1
-  Concrete pointer resolves to memset.dst.deref, offset (w64 0x0)
-  Created deref expr (ReadLSB w64 (w32 0x0) memset.dst.deref)
-  Replaced concrete pointer with hash (w64 0x81E3D7BD4621BBAC)
-  %3 = load i8*, i8** %a, l15 c7
-  (w64 0x81E3D7BD4621BBAC)
-Collected value for `a`
-  Assignment asm ln 6484, prod ln 15.7, live ln 16, enc 2
-  Concrete pointer resolves to memset.dst.deref, offset (w64 0x1)
-  Created deref expr (ReadLSB w64 (w32 0x1) memset.dst.deref)
-  Replaced concrete pointer with hash (w64 0x6AC9DD0D98FEBCE6)
-  %incdec.ptr = getelementptr inbounds i8, i8* %3, i32 1, l15 c7
-  (w64 0x6AC9DD0D98FEBCE6)
-[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;1;31mKLEE: ERROR: runtime/Freestanding/memset.c:15: memory error: out of bound pointer
-[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
-[0m
-🔔 Unable to execute all after program states
-
-### Assignments
-
-#### Variables with single memory location
-
-✅ Variable `a` uses only a single memory location (via `dbg.declare`), skipping further checks
-Assignments:         a
-  Reference:         1
-  Test:              1
-Matching:
-  Matching Coords:   1
-  Matching Value:    1
-Consistency Errors:
-  Mismatched Coords: 0
-  Mismatched Value:  0
-Availability Errors:
-  Ref Not Encount.:  0
-  Ref Not in Test:   0
-  Test Not Encount.: 0
-  Test Not in Ref:   0
-Warnings:
-  Unused:            0
-  Removable:         0
-  Unreachable:       0
-Reference Execution:
-  Function Covered:  true
-  Complete:          false
-  Within Time Limit: true
-  Within Fork Limit: false
-Test Execution:
-  Function Covered:  true
-  Complete:          false
-  Within Time Limit: true
-  Within Fork Limit: false
-
-✅ Variable `dst` uses only a single memory location (via `dbg.declare`), skipping further checks
-Assignments:         dst
-  Reference:         1
-  Test:              1
-Matching:
-  Matching Coords:   1
-  Matching Value:    1
-Consistency Errors:
-  Mismatched Coords: 0
-  Mismatched Value:  0
-Availability Errors:
-  Ref Not Encount.:  0
-  Ref Not in Test:   0
-  Test Not Encount.: 0
-  Test Not in Ref:   0
-Warnings:
-  Unused:            0
-  Removable:         0
-  Unreachable:       0
-Reference Execution:
-  Function Covered:  true
-  Complete:          false
-  Within Time Limit: true
-  Within Fork Limit: false
-Test Execution:
-  Function Covered:  true
-  Complete:          false
-  Within Time Limit: true
-  Within Fork Limit: false
-
-✅ Variable `s` uses only a single memory location (via `dbg.declare`), skipping further checks
-Assignments:         s
-  Reference:         1
-  Test:              1
-Matching:
-  Matching Coords:   1
-  Matching Value:    1
-Consistency Errors:
-  Mismatched Coords: 0
-  Mismatched Value:  0
-Availability Errors:
-  Ref Not Encount.:  0
-  Ref Not in Test:   0
-  Test Not Encount.: 0
-  Test Not in Ref:   0
-Warnings:
-  Unused:            0
-  Removable:         0
-  Unreachable:       0
-Reference Execution:
-  Function Covered:  true
-  Complete:          false
-  Within Time Limit: true
-  Within Fork Limit: false
-Test Execution:
-  Function Covered:  true
-  Complete:          false
-  Within Time Limit: true
-  Within Fork Limit: false
-
-PLEASE submit a bug report to https://bugs.llvm.org/ and include the crash backtrace.
-Stack dump:
-0.	Program arguments: /Users/jryans/Projects/klee/build-release-debug/bin/check-debug-info ../O0/mcf_r.bc mcf_r.bc --debug-only=check-debug-info,values-collector,variable --debug-execution-trace --disable-verify --output-stats=false --max-forks=32 --max-solver-time=5s --max-time=5s --search=random-path --tsv --exclude-function=spec_qsort
-Stack dump without symbol names (ensure you have llvm-symbolizer in your PATH or set the environment var `LLVM_SYMBOLIZER_PATH` to point to it):
-0  check-debug-info         0x00000001106243a7 llvm::sys::PrintStackTrace(llvm::raw_ostream&, int) + 39
-1  check-debug-info         0x00000001106231e8 llvm::sys::RunSignalHandlers() + 248
-2  check-debug-info         0x00000001106249f0 SignalHandler(int) + 288
-3  libsystem_platform.dylib 0x00007ff800bb3fdd _sigtramp + 29
-4  libsystem_platform.dylib 0x00007ff7b1169800 _sigtramp + 18446744072373360704
-5  check-debug-info         0x000000010eda7b63 checkFunction(llvm::SmallVector<ValuesCollector, 2u>&, llvm::StringRef, std::__1::vector<clang::tooling::Diagnostic, std::__1::allocator<clang::tooling::Diagnostic> > const&, AssignmentStats&) + 4467
-6  check-debug-info         0x000000010eda917e main + 3614
-7  dyld                     0x00007ff8007f9366 start + 1942
-./check.sh: line 24:  4161 Segmentation fault: 11  ${CHECK} ../O0/${TARGET_NAME}.bc ${TARGET_NAME}.bc ${CHECK_OPTS} --exclude-function=spec_qsort "$@"
+❌ Some consistency checks failed
