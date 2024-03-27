@@ -230,7 +230,7 @@ Collected value for `residual_nb_it`
 [0m
 🔔 Unable to execute all after program states
 
-### Assignments
+### Assignment consistency
 
 #### Variables with single memory location
 
@@ -720,7 +720,7 @@ Collected value for `arc`
 
 🔔 Unable to execute all after program states
 
-### Assignments
+### Assignment consistency
 
 #### Variables with single memory location
 
@@ -1378,7 +1378,7 @@ Collected value for `fleet`
 
 🔔 Unable to execute all after program states
 
-### Assignments
+### Assignment consistency
 
 #### Variables with single memory location
 
@@ -1898,7 +1898,7 @@ Test Execution:
 #### After values
 
 
-### Assignments
+### Assignment consistency
 
 #### Variables with single memory location
 
@@ -2111,7 +2111,7 @@ Collected value for `result`
 
 🔔 Unable to execute all after program states
 
-### Assignments
+### Assignment consistency
 
 #### Variables with single memory location
 
@@ -2596,7 +2596,7 @@ Collected value for `actArc`
   i64 %actArc
   (ReadLSB w64 (w32 0x0) getOriginalArcPosition.actArc)
 
-### Assignments
+### Assignment consistency
 
 #### Variables with single memory location
 
@@ -3024,7 +3024,7 @@ Collected value for `i`
 
 🔔 Unable to execute all after program states
 
-### Assignments
+### Assignment consistency
 
 #### Variables with single memory location
 
@@ -3663,7 +3663,7 @@ Collected value for `node`
 
 🔔 Unable to execute all after instructions
 
-### Assignments
+### Assignment consistency
 
 #### Variables with single memory location
 
@@ -4206,7 +4206,7 @@ Collected value for `arc`
 
 🔔 Unable to execute all after instructions
 
-### Assignments
+### Assignment consistency
 
 #### Variables with single memory location
 
@@ -4572,7 +4572,7 @@ Collected value for `net`
 
 🔔 Unable to execute all after instructions
 
-### Assignments
+### Assignment consistency
 
 #### Variables with single memory location
 
@@ -5078,7 +5078,7 @@ KLEE: HaltTimer invoked
 
 🔔 Unable to execute all after program states
 
-### Assignments
+### Assignment consistency
 
 #### Variables with single memory location
 
@@ -5928,7 +5928,7 @@ Collected value for `node`
 
 🔔 Unable to execute all after program states
 
-### Assignments
+### Assignment consistency
 
 #### Variables with single memory location
 
@@ -6419,7 +6419,7 @@ Collected value for `position`
 [0m
 🔔 Unable to execute all after program states
 
-### Assignments
+### Assignment consistency
 
 #### Variables with single memory location
 
@@ -7351,7 +7351,7 @@ Collected value for `i`
 
 🔔 Unable to execute all after program states
 
-### Assignments
+### Assignment consistency
 
 #### Variables with single memory location
 
@@ -8396,7 +8396,7 @@ Collected value for `a2`
 
 🔔 Unable to execute all after program states
 
-### Assignments
+### Assignment consistency
 
 #### Variables with single memory location
 
@@ -8724,7 +8724,7 @@ Collected value for `arc`
 
 🔔 Unable to execute all after instructions
 
-### Assignments
+### Assignment consistency
 
 #### Variables with single memory location
 
@@ -9356,7 +9356,7 @@ Collected value for `number`
 
 🔔 Unable to execute all after program states
 
-### Assignments
+### Assignment consistency
 
 #### Variables with single memory location
 
@@ -10066,7 +10066,7 @@ Collected value for `pos`
 
 🔔 Unable to execute all after program states
 
-### Assignments
+### Assignment consistency
 
 #### Variables with single memory location
 
@@ -10716,7 +10716,7 @@ Collected value for `i`
 
 🔔 Unable to execute all after program states
 
-### Assignments
+### Assignment consistency
 
 #### Variables with single memory location
 
@@ -11524,7 +11524,7 @@ Collected value for `test_arc`
 
 🔔 Unable to execute all after program states
 
-### Assignments
+### Assignment consistency
 
 #### Variables with single memory location
 
@@ -13820,7 +13820,7 @@ Collected value for `first_list_elem`
 
 🔔 Unable to execute all after program states
 
-### Assignments
+### Assignment consistency
 
 #### Variables with single memory location
 
@@ -16445,7 +16445,7 @@ Collected value for `arc`
 
 🔔 Unable to execute all after program states
 
-### Assignments
+### Assignment consistency
 
 #### Variables with single memory location
 
@@ -17355,7 +17355,7 @@ Collected value for `node`
 
 🔔 Unable to execute all after program states
 
-### Assignments
+### Assignment consistency
 
 #### Variables with single memory location
 
@@ -17945,7 +17945,7 @@ Collected value for `out`
 
 🔔 Unable to execute all after program states
 
-### Assignments
+### Assignment consistency
 
 #### Variables with single memory location
 
@@ -18595,7 +18595,7 @@ Collected value for `out`
   %call = call %struct.__sFILE.5* @"\01_fopen"(i8* %outfile, i8* getelementptr inbounds ([2 x i8], [2 x i8]* @.str.41, i64 0, i64 0)), l106 c14
   (w64 0x9297D9A77A217663)
 
-### Assignments
+### Assignment consistency
 
 #### Variables with single memory location
 
@@ -19558,7 +19558,7 @@ Collected value for `new_basic_arc`
 
 🔔 Unable to execute all after program states
 
-### Assignments
+### Assignment consistency
 
 #### Variables with single memory location
 
@@ -21425,7 +21425,7 @@ Collected value for `iplus`
 
 🔔 Unable to execute all after program states
 
-### Assignments
+### Assignment consistency
 
 #### Variables with single memory location
 
@@ -22106,7 +22106,7 @@ Collected value for `iplus`
 
 🔔 Unable to execute all after program states
 
-### Assignments
+### Assignment consistency
 
 #### Variables with single memory location
 
@@ -22543,7 +22543,7 @@ Collected value for `i`
 
 🔔 Unable to execute all after program states
 
-### Assignments
+### Assignment consistency
 
 #### Variables with single memory location
 
@@ -23426,7 +23426,7 @@ Collected value for `end_arc`
 
 🔔 Unable to execute all after program states
 
-### Assignments
+### Assignment consistency
 
 #### Variables with single memory location
 
@@ -24835,7 +24835,7 @@ Collected value for `thread`
 
 🔔 Unable to execute all after instructions
 
-### Assignments
+### Assignment consistency
 
 #### Variables with single memory location
 
@@ -25078,7 +25078,7 @@ Collected value for `arcs`
   %struct.arc.0* %arcs
   (w64 0x697F15DCBBB25B17)
 
-### Assignments
+### Assignment consistency
 
 #### Variables with single memory location
 
@@ -25269,7 +25269,7 @@ Collected value for `red_cost`
   i64 %red_cost
   (ReadLSB w64 (w32 0x0) bea_is_dual_infeasible.red_cost)
 
-### Assignments
+### Assignment consistency
 
 #### Variables with single memory location
 
@@ -25486,7 +25486,7 @@ Collected value for `b2`
 
 🔔 Unable to execute all after program states
 
-### Assignments
+### Assignment consistency
 
 #### Variables with single memory location
 
@@ -26142,7 +26142,7 @@ Collected value for `arc`
 
 🔔 Unable to execute all after program states
 
-### Assignments
+### Assignment consistency
 
 #### Variables with single memory location
 
@@ -28083,7 +28083,7 @@ Collected value for `i`
 [0m
 🔔 Unable to execute all after program states
 
-### Assignments
+### Assignment consistency
 
 #### Variables with single memory location
 
@@ -29645,7 +29645,7 @@ Collected value for `cmp`
   i32 (i8*, i8*)* %cmp
   (w64 0xDF154A9890D7AE0D)
 
-### Assignments
+### Assignment consistency
 
 #### Variables with single memory location
 
