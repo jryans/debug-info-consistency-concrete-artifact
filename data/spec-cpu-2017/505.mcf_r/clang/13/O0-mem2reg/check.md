@@ -47,78 +47,86 @@ Checking ../O0/mcf_r.bc and mcf_r.bc for debug info consistency…
 
 Load from declared address of `new_arcs` (decl src ln 42), asm ln 132
   %10 = load i64, i64* %new_arcs, l97 c9, asm ln 132
-  🔔 Live ln too early, using produced ln + 1
+  %10 = load i64, i64* %new_arcs, l97 c9, asm ln 132
   Added assignment asm ln 132, prod ln 97.9, live ln 98, enc None
 Load from declared address of `new_arcs` (decl src ln 42), asm ln 127
   %9 = load i64, i64* %new_arcs, l94 c61, asm ln 127
-  🔔 Live ln too early, using produced ln + 1
+  %9 = load i64, i64* %new_arcs, l94 c61, asm ln 127
   Added assignment asm ln 127, prod ln 94.61, live ln 95, enc None
 Load from declared address of `new_arcs` (decl src ln 42), asm ln 122
   %8 = load i64, i64* %new_arcs, l93 c9, asm ln 122
-  🔔 Live ln too early, using produced ln + 1
+  %8 = load i64, i64* %new_arcs, l93 c9, asm ln 122
   Added assignment asm ln 122, prod ln 93.9, live ln 94, enc None
 Store to declared address of `new_arcs` (decl src ln 42), asm ln 121
   %call15 = call i64 @price_out_impl(%struct.network* @net), l90 c16, asm ln 120
+  store i64 %call15, i64* %new_arcs, l90 c14, asm ln 121
   Added assignment asm ln 121, prod ln 90.16, live ln 93, enc None
 Load from declared address of `new_arcs` (decl src ln 42), asm ln 110
   %6 = load i64, i64* %new_arcs, l81 c63, asm ln 110
-  🔔 Live ln too early, using produced ln + 1
+  %6 = load i64, i64* %new_arcs, l81 c63, asm ln 110
   Added assignment asm ln 110, prod ln 81.63, live ln 82, enc None
 Load from declared address of `new_arcs` (decl src ln 42), asm ln 105
   %5 = load i64, i64* %new_arcs, l80 c11, asm ln 105
-  🔔 Live ln too early, using produced ln + 1
+  %5 = load i64, i64* %new_arcs, l80 c11, asm ln 105
   Added assignment asm ln 105, prod ln 80.11, live ln 81, enc None
 Load from declared address of `new_arcs` (decl src ln 42), asm ln 95
   %4 = load i64, i64* %new_arcs, l71 c12, asm ln 95
-  🔔 Live ln too early, using produced ln + 1
+  %4 = load i64, i64* %new_arcs, l71 c12, asm ln 95
   Added assignment asm ln 95, prod ln 71.12, live ln 72, enc None
 Store to declared address of `new_arcs` (decl src ln 42), asm ln 94
   %call6 = call i64 @suspend_impl(%struct.network* @net, i64 -1, i64 0), l69 c18, asm ln 93
+  store i64 %call6, i64* %new_arcs, l69 c16, asm ln 94
   Added assignment asm ln 94, prod ln 69.18, live ln 71, enc None
 Load from declared address of `new_arcs` (decl src ln 42), asm ln 76
   %0 = load i64, i64* %new_arcs, l48 c10, asm ln 76
-  🔔 Live ln too early, using produced ln + 1
+  %0 = load i64, i64* %new_arcs, l48 c10, asm ln 76
   Added assignment asm ln 76, prod ln 48.10, live ln 49, enc None
 Store to declared address of `new_arcs` (decl src ln 42), asm ln 72
   const i64 -1
+  store i64 -1, i64* %new_arcs, l46 c12, asm ln 72
   Added assignment asm ln 72, prod ln 46.12, live ln 48, enc None
 Store to declared address of `residual_nb_it` (decl src ln 43), asm ln 144
   %inc = add nsw i64 %11, 1, l110 c19, asm ln 143
-  🔔 Live ln too early, using produced ln + 1
+  store i64 %inc, i64* %residual_nb_it, l110 c19, asm ln 144
   Added assignment asm ln 144, prod ln 110.19, live ln 111, enc None
 Load from declared address of `residual_nb_it` (decl src ln 43), asm ln 142
   %11 = load i64, i64* %residual_nb_it, l110 c19, asm ln 142
-  🔔 Live ln too early, using produced ln + 1
+  %11 = load i64, i64* %residual_nb_it, l110 c19, asm ln 142
   Added assignment asm ln 142, prod ln 110.19, live ln 111, enc None
 Store to declared address of `residual_nb_it` (decl src ln 43), asm ln 71
   const i64 1
+  store i64 1, i64* %residual_nb_it, l43 c8, asm ln 71
   Added assignment asm ln 71, prod ln 43.8, live ln 46, enc None
 
 #### After variables
 
 Value produced for `residual_nb_it` (decl src ln 43), asm ln 67
   const i64 1
+  @dbg.value(i64 1, !353), asm ln 67
   Added assignment asm ln 67, prod ln 43.0, live ln 48, enc None
 Value produced for `new_arcs` (decl src ln 42), asm ln 68
   const i64 -1
+  @dbg.value(i64 -1, !355), asm ln 68
   Added assignment asm ln 68, prod ln 42.0, live ln 48, enc None
 Value produced for `new_arcs` (decl src ln 42), asm ln 93
   %call6 = call i64 @suspend_impl(%struct.network.2* @net, i64 -1, i64 0), l69 c18, asm ln 92
+  @dbg.value(i64 %call6, !355), asm ln 93
   Added assignment asm ln 93, prod ln 69.18, live ln 71, enc None
 Value produced for `new_arcs` (decl src ln 42), asm ln 117
   %call15 = call i64 @price_out_impl(%struct.network.2* @net), l90 c16, asm ln 116
+  @dbg.value(i64 %call15, !355), asm ln 117
   Added assignment asm ln 117, prod ln 90.16, live ln 93, enc None
 Value produced for `residual_nb_it` (decl src ln 43), asm ln 136
   %inc = add nsw i64 %residual_nb_it.0, 1, l110 c19, asm ln 135
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %inc, !353), asm ln 136
   Added assignment asm ln 136, prod ln 110.19, live ln 111, enc None
 Value produced for `new_arcs` (decl src ln 42), asm ln 74
   %new_arcs.0 = phi i64 [ -1, %entry ], [ %call15, %if.end23 ], asm ln 73
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %new_arcs.0, !355), asm ln 74
   Added assignment asm ln 74, prod ln 90.16, live ln 91, enc None
 Value produced for `residual_nb_it` (decl src ln 43), asm ln 75
   %residual_nb_it.0 = phi i64 [ 1, %entry ], [ %inc, %if.end23 ], asm ln 72
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %residual_nb_it.0, !353), asm ln 75
   Added assignment asm ln 75, prod ln 110.19, live ln 111, enc None
 
 #### Summary
@@ -727,173 +735,182 @@ Test Execution:
 
 Load from declared address of `net` (decl src ln 27), asm ln 366
   %34 = load %struct.network*, %struct.network** %net.addr, l48 c58, asm ln 366
-  🔔 Live ln too early, using produced ln + 1
+  %34 = load %struct.network*, %struct.network** %net.addr, l48 c58, asm ln 366
   Added assignment asm ln 366, prod ln 48.58, live ln 49, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 362
   %31 = load %struct.network*, %struct.network** %net.addr, l48 c41, asm ln 362
-  🔔 Live ln too early, using produced ln + 1
+  %31 = load %struct.network*, %struct.network** %net.addr, l48 c41, asm ln 362
   Added assignment asm ln 362, prod ln 48.41, live ln 49, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 324
   %14 = load %struct.network*, %struct.network** %net.addr, l48 c21, asm ln 324
-  🔔 Live ln too early, using produced ln + 1
+  %14 = load %struct.network*, %struct.network** %net.addr, l48 c21, asm ln 324
   Added assignment asm ln 324, prod ln 48.21, live ln 49, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 314
   %11 = load %struct.network*, %struct.network** %net.addr, l47 c11, asm ln 314
-  🔔 Live ln too early, using produced ln + 1
+  %11 = load %struct.network*, %struct.network** %net.addr, l47 c11, asm ln 314
   Added assignment asm ln 314, prod ln 47.11, live ln 48, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 287
   %2 = load %struct.network*, %struct.network** %net.addr, l40 c25, asm ln 287
-  🔔 Live ln too early, using produced ln + 1
+  %2 = load %struct.network*, %struct.network** %net.addr, l40 c25, asm ln 287
   Added assignment asm ln 287, prod ln 40.25, live ln 41, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 283
   %0 = load %struct.network*, %struct.network** %net.addr, l39 c12, asm ln 283
-  🔔 Live ln too early, using produced ln + 1
+  %0 = load %struct.network*, %struct.network** %net.addr, l39 c12, asm ln 283
   Added assignment asm ln 283, prod ln 39.12, live ln 40, enc None
 Store to declared address of `net` (decl src ln 27), asm ln 275
   arg 0
+  store %struct.network* %net, %struct.network** %net.addr, asm ln 275
   Added assignment asm ln 275, prod ln 27.0, live ln 39, enc None
 Load from declared address of `getPos` (decl src ln 27), asm ln 365
   %33 = load i64 (%struct.network*, i64)*, i64 (%struct.network*, i64)** %getPos.addr, l48 c51, asm ln 365
-  🔔 Live ln too early, using produced ln + 1
+  %33 = load i64 (%struct.network*, i64)*, i64 (%struct.network*, i64)** %getPos.addr, l48 c51, asm ln 365
   Added assignment asm ln 365, prod ln 48.51, live ln 49, enc None
 Store to declared address of `getPos` (decl src ln 27), asm ln 277
   arg 1
+  store i64 (%struct.network*, i64)* %getPos, i64 (%struct.network*, i64)** %getPos.addr, asm ln 277
   Added assignment asm ln 277, prod ln 27.0, live ln 39, enc None
 Store to declared address of `node` (decl src ln 33), asm ln 310
   %incdec.ptr = getelementptr inbounds %struct.node, %struct.node* %10, i32 1, l40 c69, asm ln 309
-  🔔 Live ln too early, using produced ln + 1
+  store %struct.node* %incdec.ptr, %struct.node** %node, l40 c69, asm ln 310
   Added assignment asm ln 310, prod ln 40.69, live ln 41, enc None
 Load from declared address of `node` (decl src ln 33), asm ln 308
   %10 = load %struct.node*, %struct.node** %node, l40 c69, asm ln 308
-  🔔 Live ln too early, using produced ln + 1
+  %10 = load %struct.node*, %struct.node** %node, l40 c69, asm ln 308
   Added assignment asm ln 308, prod ln 40.69, live ln 41, enc None
 Load from declared address of `node` (decl src ln 33), asm ln 305
   %9 = load %struct.node*, %struct.node** %node, l43 c9, asm ln 305
-  🔔 Live ln too early, using produced ln + 1
+  %9 = load %struct.node*, %struct.node** %node, l43 c9, asm ln 305
   Added assignment asm ln 305, prod ln 43.9, live ln 44, enc None
 Load from declared address of `node` (decl src ln 33), asm ln 302
   %8 = load %struct.node*, %struct.node** %node, l42 c9, asm ln 302
-  🔔 Live ln too early, using produced ln + 1
+  %8 = load %struct.node*, %struct.node** %node, l42 c9, asm ln 302
   Added assignment asm ln 302, prod ln 42.9, live ln 43, enc None
 Load from declared address of `node` (decl src ln 33), asm ln 295
   %5 = load %struct.node*, %struct.node** %node, l40 c42, asm ln 295
-  🔔 Live ln too early, using produced ln + 1
+  %5 = load %struct.node*, %struct.node** %node, l40 c42, asm ln 295
   Added assignment asm ln 295, prod ln 40.42, live ln 41, enc None
 Store to declared address of `node` (decl src ln 33), asm ln 286
   %1 = load %struct.node*, %struct.node** %nodes, l39 c17, asm ln 285
+  store %struct.node* %1, %struct.node** %node, l39 c10, asm ln 286
   Added assignment asm ln 286, prod ln 39.17, live ln 40, enc None
 Store to declared address of `arc` (decl src ln 34), asm ln 371
   %arrayidx = getelementptr inbounds %struct.arc, %struct.arc* %32, i64 %call, l48 c41, asm ln 370
-  🔔 Live ln too early, using produced ln + 1
+  store %struct.arc* %arrayidx, %struct.arc** %arc, l48 c38, asm ln 371
   Added assignment asm ln 371, prod ln 48.41, live ln 49, enc None
 Load from declared address of `arc` (decl src ln 34), asm ln 354
   %28 = load %struct.arc*, %struct.arc** %arc, l53 c9, asm ln 354
-  🔔 Live ln too early, using produced ln + 1
+  %28 = load %struct.arc*, %struct.arc** %arc, l53 c9, asm ln 354
   Added assignment asm ln 354, prod ln 53.9, live ln 54, enc None
 Load from declared address of `arc` (decl src ln 34), asm ln 353
   %27 = load %struct.arc*, %struct.arc** %arc, l53 c30, asm ln 353
-  🔔 Live ln too early, using produced ln + 1
+  %27 = load %struct.arc*, %struct.arc** %arc, l53 c30, asm ln 353
   Added assignment asm ln 353, prod ln 53.30, live ln 54, enc None
 Load from declared address of `arc` (decl src ln 34), asm ln 350
   %26 = load %struct.arc*, %struct.arc** %arc, l52 c9, asm ln 350
-  🔔 Live ln too early, using produced ln + 1
+  %26 = load %struct.arc*, %struct.arc** %arc, l52 c9, asm ln 350
   Added assignment asm ln 350, prod ln 52.9, live ln 53, enc None
 Load from declared address of `arc` (decl src ln 34), asm ln 345
   %23 = load %struct.arc*, %struct.arc** %arc, l52 c23, asm ln 345
-  🔔 Live ln too early, using produced ln + 1
+  %23 = load %struct.arc*, %struct.arc** %arc, l52 c23, asm ln 345
   Added assignment asm ln 345, prod ln 52.23, live ln 53, enc None
 Load from declared address of `arc` (decl src ln 34), asm ln 340
   %21 = load %struct.arc*, %struct.arc** %arc, l51 c9, asm ln 340
-  🔔 Live ln too early, using produced ln + 1
+  %21 = load %struct.arc*, %struct.arc** %arc, l51 c9, asm ln 340
   Added assignment asm ln 340, prod ln 51.9, live ln 52, enc None
 Load from declared address of `arc` (decl src ln 34), asm ln 339
   %20 = load %struct.arc*, %struct.arc** %arc, l51 c31, asm ln 339
-  🔔 Live ln too early, using produced ln + 1
+  %20 = load %struct.arc*, %struct.arc** %arc, l51 c31, asm ln 339
   Added assignment asm ln 339, prod ln 51.31, live ln 52, enc None
 Load from declared address of `arc` (decl src ln 34), asm ln 336
   %19 = load %struct.arc*, %struct.arc** %arc, l50 c9, asm ln 336
-  🔔 Live ln too early, using produced ln + 1
+  %19 = load %struct.arc*, %struct.arc** %arc, l50 c9, asm ln 336
   Added assignment asm ln 336, prod ln 50.9, live ln 51, enc None
 Load from declared address of `arc` (decl src ln 34), asm ln 331
   %16 = load %struct.arc*, %struct.arc** %arc, l50 c24, asm ln 331
-  🔔 Live ln too early, using produced ln + 1
+  %16 = load %struct.arc*, %struct.arc** %arc, l50 c24, asm ln 331
   Added assignment asm ln 331, prod ln 50.24, live ln 51, enc None
 Store to declared address of `arc` (decl src ln 34), asm ln 317
   %12 = load %struct.arc*, %struct.arc** %arcs, l47 c16, asm ln 316
+  store %struct.arc* %12, %struct.arc** %arc, l47 c9, asm ln 317
   Added assignment asm ln 317, prod ln 47.16, live ln 48, enc None
 Load from declared address of `stop` (decl src ln 35), asm ln 296
   %6 = load i8*, i8** %stop, l40 c59, asm ln 296
-  🔔 Live ln too early, using produced ln + 1
+  %6 = load i8*, i8** %stop, l40 c59, asm ln 296
   Added assignment asm ln 296, prod ln 40.59, live ln 41, enc None
 Store to declared address of `stop` (decl src ln 35), asm ln 291
   %4 = bitcast %struct.node* %3 to i8*, l40 c17, asm ln 290
-  🔔 Live ln too early, using produced ln + 1
+  store i8* %4, i8** %stop, l40 c15, asm ln 291
   Added assignment asm ln 291, prod ln 40.17, live ln 41, enc None
 Load from declared address of `i` (decl src ln 36), asm ln 367
   %35 = load i32, i32* %i, l48 c63, asm ln 367
-  🔔 Live ln too early, using produced ln + 1
+  %35 = load i32, i32* %i, l48 c63, asm ln 367
   Added assignment asm ln 367, prod ln 48.63, live ln 49, enc None
 Store to declared address of `i` (decl src ln 36), asm ln 361
   %inc = add nsw i32 %30, 1, l48 c30, asm ln 360
-  🔔 Live ln too early, using produced ln + 1
+  store i32 %inc, i32* %i, l48 c30, asm ln 361
   Added assignment asm ln 361, prod ln 48.30, live ln 49, enc None
 Load from declared address of `i` (decl src ln 36), asm ln 359
   %30 = load i32, i32* %i, l48 c30, asm ln 359
-  🔔 Live ln too early, using produced ln + 1
+  %30 = load i32, i32* %i, l48 c30, asm ln 359
   Added assignment asm ln 359, prod ln 48.30, live ln 49, enc None
 Load from declared address of `i` (decl src ln 36), asm ln 322
   %13 = load i32, i32* %i, l48 c17, asm ln 322
-  🔔 Live ln too early, using produced ln + 1
+  %13 = load i32, i32* %i, l48 c17, asm ln 322
   Added assignment asm ln 322, prod ln 48.17, live ln 49, enc None
 Store to declared address of `i` (decl src ln 36), asm ln 318
   const i32 0
-  🔔 Live ln too early, using produced ln + 1
+  store i32 0, i32* %i, l48 c12, asm ln 318
   Added assignment asm ln 318, prod ln 48.12, live ln 49, enc None
 
 #### After variables
 
 Value produced for `net` (decl src ln 27), asm ln 241
   arg 0
+  @dbg.value(%struct.network.2* %net, !503), asm ln 241
   Added assignment asm ln 241, prod ln 27.0, live ln 39, enc None
 Value produced for `getPos` (decl src ln 27), asm ln 242
   arg 1
+  @dbg.value(i64 (%struct.network.2*, i64)* %getPos, !505), asm ln 242
   Added assignment asm ln 242, prod ln 27.0, live ln 39, enc None
 Value produced for `node` (decl src ln 33), asm ln 245
   %0 = load %struct.node.1*, %struct.node.1** %nodes, l39 c17, asm ln 244
+  @dbg.value(%struct.node.1* %0, !507), asm ln 245
   Added assignment asm ln 245, prod ln 39.17, live ln 40, enc None
 Value produced for `stop` (decl src ln 35), asm ln 249
   %2 = bitcast %struct.node.1* %1 to i8*, l40 c17, asm ln 248
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i8* %2, !511), asm ln 249
   Added assignment asm ln 249, prod ln 40.17, live ln 41, enc None
 Value produced for `node` (decl src ln 33), asm ln 265
   %incdec.ptr = getelementptr inbounds %struct.node.1, %struct.node.1* %node.0, i32 1, l40 c69, asm ln 264
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(%struct.node.1* %incdec.ptr, !507), asm ln 265
   Added assignment asm ln 265, prod ln 40.69, live ln 41, enc None
 Value produced for `arc` (decl src ln 34), asm ln 271
   %4 = load %struct.arc.0*, %struct.arc.0** %arcs, l47 c16, asm ln 270
+  @dbg.value(%struct.arc.0* %4, !527), asm ln 271
   Added assignment asm ln 271, prod ln 47.16, live ln 48, enc None
 Value produced for `i` (decl src ln 36), asm ln 272
   const i32 0
+  @dbg.value(i32 0, !528), asm ln 272
   Added assignment asm ln 272, prod ln 36.0, live ln 48, enc None
 Value produced for `i` (decl src ln 36), asm ln 308
   %inc = add nsw i32 %i.0, 1, l48 c30, asm ln 307
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i32 %inc, !528), asm ln 308
   Added assignment asm ln 308, prod ln 48.30, live ln 49, enc None
 Value produced for `arc` (decl src ln 34), asm ln 314
   %arrayidx = getelementptr inbounds %struct.arc.0, %struct.arc.0* %12, i64 %call, l48 c41, asm ln 313
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(%struct.arc.0* %arrayidx, !527), asm ln 314
   Added assignment asm ln 314, prod ln 48.41, live ln 49, enc None
 Value produced for `node` (decl src ln 33), asm ln 254
   %node.0 = phi %struct.node.1* [ %0, %entry ], [ %incdec.ptr, %for.body ], asm ln 253
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(%struct.node.1* %node.0, !507), asm ln 254
   Added assignment asm ln 254, prod ln 40.69, live ln 41, enc None
 Value produced for `i` (decl src ln 36), asm ln 278
   %i.0 = phi i32 [ 0, %for.end ], [ %inc, %for.body4 ], asm ln 277
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i32 %i.0, !528), asm ln 278
   Added assignment asm ln 278, prod ln 48.30, live ln 49, enc None
 Value produced for `arc` (decl src ln 34), asm ln 279
   %arc.0 = phi %struct.arc.0* [ %4, %for.end ], [ %arrayidx, %for.body4 ], asm ln 276
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(%struct.arc.0* %arc.0, !527), asm ln 279
   Added assignment asm ln 279, prod ln 48.41, live ln 49, enc None
 
 #### Summary
@@ -1547,299 +1564,318 @@ Test Execution:
 
 Load from declared address of `net` (decl src ln 61), asm ln 587
   %58 = load %struct.network*, %struct.network** %net.addr, l118 c36, asm ln 587
-  🔔 Live ln too early, using produced ln + 1
+  %58 = load %struct.network*, %struct.network** %net.addr, l118 c36, asm ln 587
   Added assignment asm ln 587, prod ln 118.36, live ln 119, enc None
 Load from declared address of `net` (decl src ln 61), asm ln 554
   %48 = load %struct.network*, %struct.network** %net.addr, l108 c56, asm ln 554
-  🔔 Live ln too early, using produced ln + 1
+  %48 = load %struct.network*, %struct.network** %net.addr, l108 c56, asm ln 554
   Added assignment asm ln 554, prod ln 108.56, live ln 109, enc None
 Load from declared address of `net` (decl src ln 61), asm ln 495
   %28 = load %struct.network*, %struct.network** %net.addr, l100 c21, asm ln 495
-  🔔 Live ln too early, using produced ln + 1
+  %28 = load %struct.network*, %struct.network** %net.addr, l100 c21, asm ln 495
   Added assignment asm ln 495, prod ln 100.21, live ln 101, enc None
 Load from declared address of `net` (decl src ln 61), asm ln 485
   %25 = load %struct.network*, %struct.network** %net.addr, l96 c11, asm ln 485
-  🔔 Live ln too early, using produced ln + 1
+  %25 = load %struct.network*, %struct.network** %net.addr, l96 c11, asm ln 485
   Added assignment asm ln 485, prod ln 96.11, live ln 97, enc None
 Load from declared address of `net` (decl src ln 61), asm ln 458
   %16 = load %struct.network*, %struct.network** %net.addr, l92 c22, asm ln 458
-  🔔 Live ln too early, using produced ln + 1
+  %16 = load %struct.network*, %struct.network** %net.addr, l92 c22, asm ln 458
   Added assignment asm ln 458, prod ln 92.22, live ln 93, enc None
 Load from declared address of `net` (decl src ln 61), asm ln 448
   %13 = load %struct.network*, %struct.network** %net.addr, l87 c12, asm ln 448
-  🔔 Live ln too early, using produced ln + 1
+  %13 = load %struct.network*, %struct.network** %net.addr, l87 c12, asm ln 448
   Added assignment asm ln 448, prod ln 87.12, live ln 88, enc None
 Load from declared address of `net` (decl src ln 61), asm ln 406
   %3 = load %struct.network*, %struct.network** %net.addr, l79 c21, asm ln 406
-  🔔 Live ln too early, using produced ln + 1
+  %3 = load %struct.network*, %struct.network** %net.addr, l79 c21, asm ln 406
   Added assignment asm ln 406, prod ln 79.21, live ln 80, enc None
 Load from declared address of `net` (decl src ln 61), asm ln 396
   %0 = load %struct.network*, %struct.network** %net.addr, l75 c11, asm ln 396
-  🔔 Live ln too early, using produced ln + 1
+  %0 = load %struct.network*, %struct.network** %net.addr, l75 c11, asm ln 396
   Added assignment asm ln 396, prod ln 75.11, live ln 76, enc None
 Store to declared address of `net` (decl src ln 61), asm ln 387
   arg 0
+  store %struct.network* %net, %struct.network** %net.addr, asm ln 387
   Added assignment asm ln 387, prod ln 61.0, live ln 70, enc None
 Load from declared address of `arc` (decl src ln 67), asm ln 567
   %52 = load %struct.arc*, %struct.arc** %arc, l112 c41, asm ln 567
-  🔔 Live ln too early, using produced ln + 1
+  %52 = load %struct.arc*, %struct.arc** %arc, l112 c41, asm ln 567
   Added assignment asm ln 567, prod ln 112.41, live ln 113, enc None
 Load from declared address of `arc` (decl src ln 67), asm ln 548
   %45 = load %struct.arc*, %struct.arc** %arc, l108 c42, asm ln 548
-  🔔 Live ln too early, using produced ln + 1
+  %45 = load %struct.arc*, %struct.arc** %arc, l108 c42, asm ln 548
   Added assignment asm ln 548, prod ln 108.42, live ln 109, enc None
 Load from declared address of `arc` (decl src ln 67), asm ln 536
   %41 = load %struct.arc*, %struct.arc** %arc, l106 c22, asm ln 536
-  🔔 Live ln too early, using produced ln + 1
+  %41 = load %struct.arc*, %struct.arc** %arc, l106 c22, asm ln 536
   Added assignment asm ln 536, prod ln 106.22, live ln 107, enc None
 Load from declared address of `arc` (decl src ln 67), asm ln 524
   %37 = load %struct.arc*, %struct.arc** %arc, l104 c46, asm ln 524
-  🔔 Live ln too early, using produced ln + 1
+  %37 = load %struct.arc*, %struct.arc** %arc, l104 c46, asm ln 524
   Added assignment asm ln 524, prod ln 104.46, live ln 105, enc None
 Load from declared address of `arc` (decl src ln 67), asm ln 512
   %33 = load %struct.arc*, %struct.arc** %arc, l104 c19, asm ln 512
-  🔔 Live ln too early, using produced ln + 1
+  %33 = load %struct.arc*, %struct.arc** %arc, l104 c19, asm ln 512
   Added assignment asm ln 512, prod ln 104.19, live ln 105, enc None
 Load from declared address of `arc` (decl src ln 67), asm ln 502
   %30 = load %struct.arc*, %struct.arc** %arc, l102 c13, asm ln 502
-  🔔 Live ln too early, using produced ln + 1
+  %30 = load %struct.arc*, %struct.arc** %arc, l102 c13, asm ln 502
   Added assignment asm ln 502, prod ln 102.13, live ln 103, enc None
 Store to declared address of `arc` (decl src ln 67), asm ln 488
   %26 = load %struct.arc*, %struct.arc** %arcs24, l96 c16, asm ln 487
+  store %struct.arc* %26, %struct.arc** %arc, l96 c9, asm ln 488
   Added assignment asm ln 488, prod ln 96.16, live ln 100, enc None
 Load from declared address of `arc` (decl src ln 67), asm ln 433
   %10 = load %struct.arc*, %struct.arc** %arc, l84 c13, asm ln 433
-  🔔 Live ln too early, using produced ln + 1
+  %10 = load %struct.arc*, %struct.arc** %arc, l84 c13, asm ln 433
   Added assignment asm ln 433, prod ln 84.13, live ln 85, enc None
 Load from declared address of `arc` (decl src ln 67), asm ln 424
   %8 = load %struct.arc*, %struct.arc** %arc, l82 c13, asm ln 424
-  🔔 Live ln too early, using produced ln + 1
+  %8 = load %struct.arc*, %struct.arc** %arc, l82 c13, asm ln 424
   Added assignment asm ln 424, prod ln 82.13, live ln 83, enc None
 Load from declared address of `arc` (decl src ln 67), asm ln 413
   %5 = load %struct.arc*, %struct.arc** %arc, l81 c13, asm ln 413
-  🔔 Live ln too early, using produced ln + 1
+  %5 = load %struct.arc*, %struct.arc** %arc, l81 c13, asm ln 413
   Added assignment asm ln 413, prod ln 81.13, live ln 82, enc None
 Store to declared address of `arc` (decl src ln 67), asm ln 399
   %1 = load %struct.arc*, %struct.arc** %arcs, l75 c16, asm ln 398
+  store %struct.arc* %1, %struct.arc** %arc, l75 c9, asm ln 399
   Added assignment asm ln 399, prod ln 75.16, live ln 79, enc None
 Load from declared address of `node` (decl src ln 68), asm ln 471
   %21 = load %struct.node*, %struct.node** %node, l93 c9, asm ln 471
-  🔔 Live ln too early, using produced ln + 1
+  %21 = load %struct.node*, %struct.node** %node, l93 c9, asm ln 471
   Added assignment asm ln 471, prod ln 93.9, live ln 94, enc None
 Load from declared address of `node` (decl src ln 68), asm ln 465
   %18 = load %struct.node*, %struct.node** %node, l93 c35, asm ln 465
-  🔔 Live ln too early, using produced ln + 1
+  %18 = load %struct.node*, %struct.node** %node, l93 c35, asm ln 465
   Added assignment asm ln 465, prod ln 93.35, live ln 94, enc None
 Store to declared address of `node` (decl src ln 68), asm ln 451
   %14 = load %struct.node*, %struct.node** %nodes, l87 c17, asm ln 450
+  store %struct.node* %14, %struct.node** %node, l87 c10, asm ln 451
   Added assignment asm ln 451, prod ln 87.17, live ln 92, enc None
 Load from declared address of `fleet` (decl src ln 70), asm ln 585
   %57 = load i64, i64* %fleet, l118 c20, asm ln 585
-  🔔 Live ln too early, using produced ln + 1
+  %57 = load i64, i64* %fleet, l118 c20, asm ln 585
   Added assignment asm ln 585, prod ln 118.20, live ln 119, enc None
 Store to declared address of `fleet` (decl src ln 70), asm ln 563
   %inc53 = add nsw i64 %51, 1, l109 c26, asm ln 562
+  store i64 %inc53, i64* %fleet, l109 c26, asm ln 563
   Added assignment asm ln 563, prod ln 109.26, live ln 110, enc None
 Load from declared address of `fleet` (decl src ln 70), asm ln 561
   %51 = load i64, i64* %fleet, l109 c26, asm ln 561
-  🔔 Live ln too early, using produced ln + 1
+  %51 = load i64, i64* %fleet, l109 c26, asm ln 561
   Added assignment asm ln 561, prod ln 109.26, live ln 110, enc None
 Store to declared address of `fleet` (decl src ln 70), asm ln 392
   const i64 0
+  store i64 0, i64* %fleet, l70 c10, asm ln 392
   Added assignment asm ln 392, prod ln 70.10, live ln 72, enc None
 Store to declared address of `i` (decl src ln 71), asm ln 581
   %inc63 = add nsw i32 %56, 1, l100 c30, asm ln 580
-  🔔 Live ln too early, using produced ln + 1
+  store i32 %inc63, i32* %i, l100 c30, asm ln 581
   Added assignment asm ln 581, prod ln 100.30, live ln 101, enc None
 Load from declared address of `i` (decl src ln 71), asm ln 579
   %56 = load i32, i32* %i, l100 c30, asm ln 579
-  🔔 Live ln too early, using produced ln + 1
+  %56 = load i32, i32* %i, l100 c30, asm ln 579
   Added assignment asm ln 579, prod ln 100.30, live ln 101, enc None
 Load from declared address of `i` (decl src ln 71), asm ln 568
   %53 = load i32, i32* %i, l112 c45, asm ln 568
-  🔔 Live ln too early, using produced ln + 1
+  %53 = load i32, i32* %i, l112 c45, asm ln 568
   Added assignment asm ln 568, prod ln 112.45, live ln 113, enc None
 Load from declared address of `i` (decl src ln 71), asm ln 549
   %46 = load i32, i32* %i, l108 c46, asm ln 549
-  🔔 Live ln too early, using produced ln + 1
+  %46 = load i32, i32* %i, l108 c46, asm ln 549
   Added assignment asm ln 549, prod ln 108.46, live ln 109, enc None
 Load from declared address of `i` (decl src ln 71), asm ln 537
   %42 = load i32, i32* %i, l106 c26, asm ln 537
-  🔔 Live ln too early, using produced ln + 1
+  %42 = load i32, i32* %i, l106 c26, asm ln 537
   Added assignment asm ln 537, prod ln 106.26, live ln 107, enc None
 Load from declared address of `i` (decl src ln 71), asm ln 525
   %38 = load i32, i32* %i, l104 c50, asm ln 525
-  🔔 Live ln too early, using produced ln + 1
+  %38 = load i32, i32* %i, l104 c50, asm ln 525
   Added assignment asm ln 525, prod ln 104.50, live ln 105, enc None
 Load from declared address of `i` (decl src ln 71), asm ln 513
   %34 = load i32, i32* %i, l104 c23, asm ln 513
-  🔔 Live ln too early, using produced ln + 1
+  %34 = load i32, i32* %i, l104 c23, asm ln 513
   Added assignment asm ln 513, prod ln 104.23, live ln 105, enc None
 Load from declared address of `i` (decl src ln 71), asm ln 503
   %31 = load i32, i32* %i, l102 c17, asm ln 503
-  🔔 Live ln too early, using produced ln + 1
+  %31 = load i32, i32* %i, l102 c17, asm ln 503
   Added assignment asm ln 503, prod ln 102.17, live ln 103, enc None
 Load from declared address of `i` (decl src ln 71), asm ln 493
   %27 = load i32, i32* %i, l100 c17, asm ln 493
-  🔔 Live ln too early, using produced ln + 1
+  %27 = load i32, i32* %i, l100 c17, asm ln 493
   Added assignment asm ln 493, prod ln 100.17, live ln 101, enc None
 Store to declared address of `i` (decl src ln 71), asm ln 489
   const i32 0
-  🔔 Live ln too early, using produced ln + 1
+  store i32 0, i32* %i, l100 c12, asm ln 489
   Added assignment asm ln 489, prod ln 100.12, live ln 101, enc None
 Store to declared address of `i` (decl src ln 71), asm ln 481
   %inc22 = add nsw i32 %24, 1, l92 c31, asm ln 480
-  🔔 Live ln too early, using produced ln + 1
+  store i32 %inc22, i32* %i, l92 c31, asm ln 481
   Added assignment asm ln 481, prod ln 92.31, live ln 93, enc None
 Load from declared address of `i` (decl src ln 71), asm ln 479
   %24 = load i32, i32* %i, l92 c31, asm ln 479
-  🔔 Live ln too early, using produced ln + 1
+  %24 = load i32, i32* %i, l92 c31, asm ln 479
   Added assignment asm ln 479, prod ln 92.31, live ln 93, enc None
 Load from declared address of `i` (decl src ln 71), asm ln 472
   %22 = load i32, i32* %i, l93 c14, asm ln 472
-  🔔 Live ln too early, using produced ln + 1
+  %22 = load i32, i32* %i, l93 c14, asm ln 472
   Added assignment asm ln 472, prod ln 93.14, live ln 94, enc None
 Load from declared address of `i` (decl src ln 71), asm ln 466
   %19 = load i32, i32* %i, l93 c40, asm ln 466
-  🔔 Live ln too early, using produced ln + 1
+  %19 = load i32, i32* %i, l93 c40, asm ln 466
   Added assignment asm ln 466, prod ln 93.40, live ln 94, enc None
 Load from declared address of `i` (decl src ln 71), asm ln 456
   %15 = load i32, i32* %i, l92 c17, asm ln 456
-  🔔 Live ln too early, using produced ln + 1
+  %15 = load i32, i32* %i, l92 c17, asm ln 456
   Added assignment asm ln 456, prod ln 92.17, live ln 93, enc None
 Store to declared address of `i` (decl src ln 71), asm ln 452
   const i32 1
-  🔔 Live ln too early, using produced ln + 1
+  store i32 1, i32* %i, l92 c12, asm ln 452
   Added assignment asm ln 452, prod ln 92.12, live ln 93, enc None
 Store to declared address of `i` (decl src ln 71), asm ln 444
   %inc = add nsw i32 %12, 1, l79 c31, asm ln 443
-  🔔 Live ln too early, using produced ln + 1
+  store i32 %inc, i32* %i, l79 c31, asm ln 444
   Added assignment asm ln 444, prod ln 79.31, live ln 80, enc None
 Load from declared address of `i` (decl src ln 71), asm ln 442
   %12 = load i32, i32* %i, l79 c31, asm ln 442
-  🔔 Live ln too early, using produced ln + 1
+  %12 = load i32, i32* %i, l79 c31, asm ln 442
   Added assignment asm ln 442, prod ln 79.31, live ln 80, enc None
 Load from declared address of `i` (decl src ln 71), asm ln 434
   %11 = load i32, i32* %i, l84 c17, asm ln 434
-  🔔 Live ln too early, using produced ln + 1
+  %11 = load i32, i32* %i, l84 c17, asm ln 434
   Added assignment asm ln 434, prod ln 84.17, live ln 85, enc None
 Load from declared address of `i` (decl src ln 71), asm ln 425
   %9 = load i32, i32* %i, l82 c17, asm ln 425
-  🔔 Live ln too early, using produced ln + 1
+  %9 = load i32, i32* %i, l82 c17, asm ln 425
   Added assignment asm ln 425, prod ln 82.17, live ln 83, enc None
 Load from declared address of `i` (decl src ln 71), asm ln 414
   %6 = load i32, i32* %i, l81 c17, asm ln 414
-  🔔 Live ln too early, using produced ln + 1
+  %6 = load i32, i32* %i, l81 c17, asm ln 414
   Added assignment asm ln 414, prod ln 81.17, live ln 82, enc None
 Load from declared address of `i` (decl src ln 71), asm ln 404
   %2 = load i32, i32* %i, l79 c17, asm ln 404
-  🔔 Live ln too early, using produced ln + 1
+  %2 = load i32, i32* %i, l79 c17, asm ln 404
   Added assignment asm ln 404, prod ln 79.17, live ln 80, enc None
 Store to declared address of `i` (decl src ln 71), asm ln 400
   const i32 0
-  🔔 Live ln too early, using produced ln + 1
+  store i32 0, i32* %i, l79 c12, asm ln 400
   Added assignment asm ln 400, prod ln 79.12, live ln 80, enc None
 Load from declared address of `operational_cost` (decl src ln 72), asm ln 592
   %60 = load i64, i64* %operational_cost, l118 c56, asm ln 592
-  🔔 Live ln too early, using produced ln + 1
+  %60 = load i64, i64* %operational_cost, l118 c56, asm ln 592
   Added assignment asm ln 592, prod ln 118.56, live ln 119, enc None
 Store to declared address of `operational_cost` (decl src ln 72), asm ln 575
   %add58 = add nsw i64 %55, %54, l112 c38, asm ln 574
-  🔔 Missing live ln, using produced ln + 1
+  store i64 %add58, i64* %operational_cost, l112 c38, asm ln 575
   Added assignment asm ln 575, prod ln 112.38, live ln 113, enc None
 Load from declared address of `operational_cost` (decl src ln 72), asm ln 573
   %55 = load i64, i64* %operational_cost, l112 c38, asm ln 573
-  🔔 Live ln too early, using produced ln + 1
+  %55 = load i64, i64* %operational_cost, l112 c38, asm ln 573
   Added assignment asm ln 573, prod ln 112.38, live ln 113, enc None
 Store to declared address of `operational_cost` (decl src ln 72), asm ln 560
   %add = add nsw i64 %50, %sub, l108 c38, asm ln 559
+  store i64 %add, i64* %operational_cost, l108 c38, asm ln 560
   Added assignment asm ln 560, prod ln 108.38, live ln 109, enc None
 Load from declared address of `operational_cost` (decl src ln 72), asm ln 558
   %50 = load i64, i64* %operational_cost, l108 c38, asm ln 558
-  🔔 Live ln too early, using produced ln + 1
+  %50 = load i64, i64* %operational_cost, l108 c38, asm ln 558
   Added assignment asm ln 558, prod ln 108.38, live ln 109, enc None
 Store to declared address of `operational_cost` (decl src ln 72), asm ln 395
   const i64 0
+  store i64 0, i64* %operational_cost, l72 c12, asm ln 395
   Added assignment asm ln 395, prod ln 72.12, live ln 75, enc None
 
 #### After variables
 
 Value produced for `net` (decl src ln 61), asm ln 324
   arg 0
+  @dbg.value(%struct.network.2* %net, !564), asm ln 324
   Added assignment asm ln 324, prod ln 61.0, live ln 75, enc None
 Value produced for `fleet` (decl src ln 70), asm ln 325
   const i64 0
+  @dbg.value(i64 0, !566), asm ln 325
   Added assignment asm ln 325, prod ln 70.0, live ln 75, enc None
 Value produced for `operational_cost` (decl src ln 72), asm ln 326
   const i64 0
+  @dbg.value(i64 0, !567), asm ln 326
   Added assignment asm ln 326, prod ln 72.0, live ln 75, enc None
 Value produced for `arc` (decl src ln 67), asm ln 329
   %0 = load %struct.arc.0*, %struct.arc.0** %arcs, l75 c16, asm ln 328
+  @dbg.value(%struct.arc.0* %0, !569), asm ln 329
   Added assignment asm ln 329, prod ln 75.16, live ln 79, enc None
 Value produced for `i` (decl src ln 71), asm ln 330
   const i32 0
+  @dbg.value(i32 0, !570), asm ln 330
   Added assignment asm ln 330, prod ln 71.0, live ln 79, enc None
 Value produced for `i` (decl src ln 71), asm ln 367
   %inc = add nsw i32 %i.0, 1, l79 c31, asm ln 366
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i32 %inc, !570), asm ln 367
   Added assignment asm ln 367, prod ln 79.31, live ln 80, enc None
 Value produced for `node` (decl src ln 68), asm ln 373
   %3 = load %struct.node.1*, %struct.node.1** %nodes, l87 c17, asm ln 372
+  @dbg.value(%struct.node.1* %3, !596), asm ln 373
   Added assignment asm ln 373, prod ln 87.17, live ln 92, enc None
 Value produced for `i` (decl src ln 71), asm ln 374
   const i32 1
-  🔔 Missing produced ln, using decl ln
+  @dbg.value(i32 1, !570), asm ln 374
   Added assignment asm ln 374, prod ln 71.0, live ln 92, enc None
 Value produced for `i` (decl src ln 71), asm ln 398
   %inc22 = add nsw i32 %i.1, 1, l92 c31, asm ln 397
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i32 %inc22, !570), asm ln 398
   Added assignment asm ln 398, prod ln 92.31, live ln 93, enc None
 Value produced for `arc` (decl src ln 67), asm ln 404
   %7 = load %struct.arc.0*, %struct.arc.0** %arcs24, l96 c16, asm ln 403
+  @dbg.value(%struct.arc.0* %7, !569), asm ln 404
   Added assignment asm ln 404, prod ln 96.16, live ln 100, enc None
 Value produced for `i` (decl src ln 71), asm ln 405
   const i32 0
-  🔔 Missing produced ln, using decl ln
+  @dbg.value(i32 0, !570), asm ln 405
   Added assignment asm ln 405, prod ln 71.0, live ln 100, enc None
 Value produced for `operational_cost` (decl src ln 72), asm ln 468
   %add = add nsw i64 %operational_cost.0, %sub, l108 c38, asm ln 467
+  @dbg.value(i64 %add, !567), asm ln 468
   Added assignment asm ln 468, prod ln 108.38, live ln 109, enc None
 Value produced for `fleet` (decl src ln 70), asm ln 470
   %inc53 = add nsw i64 %fleet.0, 1, l109 c26, asm ln 469
+  @dbg.value(i64 %inc53, !566), asm ln 470
   Added assignment asm ln 470, prod ln 109.26, live ln 110, enc None
 Value produced for `operational_cost` (decl src ln 72), asm ln 479
   %add58 = add nsw i64 %operational_cost.0, %18, l112 c38, asm ln 478
-  🔔 Missing live ln, using produced ln + 1
+  @dbg.value(i64 %add58, !567), asm ln 479
   Added assignment asm ln 479, prod ln 112.38, live ln 113, enc None
 Value produced for `i` (decl src ln 71), asm ln 488
   %inc63 = add nsw i32 %i.2, 1, l100 c30, asm ln 487
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i32 %inc63, !570), asm ln 488
   Added assignment asm ln 488, prod ln 100.30, live ln 101, enc None
 Value produced for `i` (decl src ln 71), asm ln 335
   %i.0 = phi i32 [ 0, %entry ], [ %inc, %for.inc ], asm ln 334
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i32 %i.0, !570), asm ln 335
   Added assignment asm ln 335, prod ln 79.31, live ln 80, enc None
 Value produced for `i` (decl src ln 71), asm ln 379
   %i.1 = phi i32 [ 1, %for.end ], [ %inc22, %for.body14 ], asm ln 378
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i32 %i.1, !570), asm ln 379
   Added assignment asm ln 379, prod ln 92.31, live ln 93, enc None
 Value produced for `operational_cost` (decl src ln 72), asm ln 412
   %operational_cost.0 = phi i64 [ 0, %for.end23 ], [ %operational_cost.3, %for.inc62 ], l72 c12, asm ln 411
+  @dbg.value(i64 %operational_cost.0, !567), asm ln 412
   Added assignment asm ln 412, prod ln 72.12, live ln 100, enc None
 Value produced for `i` (decl src ln 71), asm ln 413
   %i.2 = phi i32 [ 0, %for.end23 ], [ %inc63, %for.inc62 ], asm ln 410
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i32 %i.2, !570), asm ln 413
   Added assignment asm ln 413, prod ln 100.30, live ln 101, enc None
 Value produced for `fleet` (decl src ln 70), asm ln 414
   %fleet.0 = phi i64 [ 0, %for.end23 ], [ %fleet.3, %for.inc62 ], l70 c10, asm ln 409
+  @dbg.value(i64 %fleet.0, !566), asm ln 414
   Added assignment asm ln 414, prod ln 70.10, live ln 100, enc None
 Value produced for `operational_cost` (decl src ln 72), asm ln 485
   %operational_cost.3 = phi i64 [ %operational_cost.0, %for.body30 ], [ %operational_cost.0, %land.lhs.true ], [ %add58, %if.else54 ], [ %add, %if.then50 ], l72 c12, asm ln 484
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %operational_cost.3, !567), asm ln 485
   Added assignment asm ln 485, prod ln 112.38, live ln 113, enc None
 Value produced for `fleet` (decl src ln 70), asm ln 486
   %fleet.3 = phi i64 [ %fleet.0, %for.body30 ], [ %fleet.0, %land.lhs.true ], [ %fleet.0, %if.else54 ], [ %inc53, %if.then50 ], l70 c10, asm ln 483
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %fleet.3, !566), asm ln 486
   Added assignment asm ln 486, prod ln 109.26, live ln 110, enc None
 
 #### Summary
@@ -2873,105 +2909,114 @@ Test Execution:
 
 Load from declared address of `net` (decl src ln 137), asm ln 670
   %22 = load %struct.network*, %struct.network** %net.addr, l150 c54, asm ln 670
-  🔔 Live ln too early, using produced ln + 1
+  %22 = load %struct.network*, %struct.network** %net.addr, l150 c54, asm ln 670
   Added assignment asm ln 670, prod ln 150.54, live ln 151, enc None
 Load from declared address of `net` (decl src ln 137), asm ln 664
   %19 = load %struct.network*, %struct.network** %net.addr, l150 c24, asm ln 664
-  🔔 Live ln too early, using produced ln + 1
+  %19 = load %struct.network*, %struct.network** %net.addr, l150 c24, asm ln 664
   Added assignment asm ln 664, prod ln 150.24, live ln 151, enc None
 Load from declared address of `net` (decl src ln 137), asm ln 652
   %16 = load %struct.network*, %struct.network** %net.addr, l147 c112, asm ln 652
-  🔔 Live ln too early, using produced ln + 1
+  %16 = load %struct.network*, %struct.network** %net.addr, l147 c112, asm ln 652
   Added assignment asm ln 652, prod ln 147.112, live ln 148, enc None
 Load from declared address of `net` (decl src ln 137), asm ln 648
   %14 = load %struct.network*, %struct.network** %net.addr, l147 c91, asm ln 648
-  🔔 Live ln too early, using produced ln + 1
+  %14 = load %struct.network*, %struct.network** %net.addr, l147 c91, asm ln 648
   Added assignment asm ln 648, prod ln 147.91, live ln 148, enc None
 Load from declared address of `net` (decl src ln 137), asm ln 643
   %11 = load %struct.network*, %struct.network** %net.addr, l147 c61, asm ln 643
-  🔔 Live ln too early, using produced ln + 1
+  %11 = load %struct.network*, %struct.network** %net.addr, l147 c61, asm ln 643
   Added assignment asm ln 643, prod ln 147.61, live ln 148, enc None
 Load from declared address of `net` (decl src ln 137), asm ln 640
   %9 = load %struct.network*, %struct.network** %net.addr, l147 c42, asm ln 640
-  🔔 Live ln too early, using produced ln + 1
+  %9 = load %struct.network*, %struct.network** %net.addr, l147 c42, asm ln 640
   Added assignment asm ln 640, prod ln 147.42, live ln 148, enc None
 Load from declared address of `net` (decl src ln 137), asm ln 635
   %7 = load %struct.network*, %struct.network** %net.addr, l147 c24, asm ln 635
-  🔔 Live ln too early, using produced ln + 1
+  %7 = load %struct.network*, %struct.network** %net.addr, l147 c24, asm ln 635
   Added assignment asm ln 635, prod ln 147.24, live ln 148, enc None
 Load from declared address of `net` (decl src ln 137), asm ln 627
   %4 = load %struct.network*, %struct.network** %net.addr, l146 c19, asm ln 627
-  🔔 Live ln too early, using produced ln + 1
+  %4 = load %struct.network*, %struct.network** %net.addr, l146 c19, asm ln 627
   Added assignment asm ln 627, prod ln 146.19, live ln 147, enc None
 Load from declared address of `net` (decl src ln 137), asm ln 620
   %1 = load %struct.network*, %struct.network** %net.addr, l145 c24, asm ln 620
-  🔔 Live ln too early, using produced ln + 1
+  %1 = load %struct.network*, %struct.network** %net.addr, l145 c24, asm ln 620
   Added assignment asm ln 620, prod ln 145.24, live ln 146, enc None
 Store to declared address of `net` (decl src ln 137), asm ln 613
   arg 0
+  store %struct.network* %net, %struct.network** %net.addr, asm ln 613
   Added assignment asm ln 613, prod ln 137.0, live ln 145, enc None
 Load from declared address of `actArc` (decl src ln 137), asm ln 663
   %18 = load i64, i64* %actArc.addr, l150 c15, asm ln 663
-  🔔 Live ln too early, using produced ln + 1
+  %18 = load i64, i64* %actArc.addr, l150 c15, asm ln 663
   Added assignment asm ln 663, prod ln 150.15, live ln 151, enc None
 Load from declared address of `actArc` (decl src ln 137), asm ln 634
   %6 = load i64, i64* %actArc.addr, l147 c15, asm ln 634
-  🔔 Live ln too early, using produced ln + 1
+  %6 = load i64, i64* %actArc.addr, l147 c15, asm ln 634
   Added assignment asm ln 634, prod ln 147.15, live ln 148, enc None
 Load from declared address of `actArc` (decl src ln 137), asm ln 619
   %0 = load i64, i64* %actArc.addr, l145 c15, asm ln 619
-  🔔 Live ln too early, using produced ln + 1
+  %0 = load i64, i64* %actArc.addr, l145 c15, asm ln 619
   Added assignment asm ln 619, prod ln 145.15, live ln 146, enc None
 Store to declared address of `actArc` (decl src ln 137), asm ln 615
   arg 1
+  store i64 %actArc, i64* %actArc.addr, asm ln 615
   Added assignment asm ln 615, prod ln 137.0, live ln 145, enc None
 Load from declared address of `result` (decl src ln 144), asm ln 679
   %24 = load i64, i64* %result, l152 c12, asm ln 679
-  🔔 Live ln too early, using produced ln + 1
+  %24 = load i64, i64* %result, l152 c12, asm ln 679
   Added assignment asm ln 679, prod ln 152.12, live ln 153, enc None
 Store to declared address of `result` (decl src ln 144), asm ln 675
   %add12 = add nsw i64 %div9, %mul11, l150 c39, asm ln 674
-  🔔 Missing live ln, using produced ln + 1
+  store i64 %add12, i64* %result, l150 c12, asm ln 675
   Added assignment asm ln 675, prod ln 150.39, live ln 151, enc None
 Store to declared address of `result` (decl src ln 144), asm ln 659
   %add7 = add nsw i64 %div, %add, l147 c39, asm ln 658
+  store i64 %add7, i64* %result, l147 c12, asm ln 659
   Added assignment asm ln 659, prod ln 147.39, live ln 148, enc None
 Load from declared address of `akt_group` (decl src ln 144), asm ln 669
   %21 = load i64, i64* %akt_group, l150 c42, asm ln 669
-  🔔 Live ln too early, using produced ln + 1
+  %21 = load i64, i64* %akt_group, l150 c42, asm ln 669
   Added assignment asm ln 669, prod ln 150.42, live ln 151, enc None
 Load from declared address of `akt_group` (decl src ln 144), asm ln 647
   %13 = load i64, i64* %akt_group, l147 c79, asm ln 647
-  🔔 Live ln too early, using produced ln + 1
+  %13 = load i64, i64* %akt_group, l147 c79, asm ln 647
   Added assignment asm ln 647, prod ln 147.79, live ln 148, enc None
 Load from declared address of `akt_group` (decl src ln 144), asm ln 626
   %3 = load i64, i64* %akt_group, l146 c7, asm ln 626
-  🔔 Live ln too early, using produced ln + 1
+  %3 = load i64, i64* %akt_group, l146 c7, asm ln 626
   Added assignment asm ln 626, prod ln 146.7, live ln 147, enc None
 Store to declared address of `akt_group` (decl src ln 144), asm ln 625
   %rem = srem i64 %0, %2, !klee.check.div !402, l145 c22, asm ln 624
+  store i64 %rem, i64* %akt_group, l145 c13, asm ln 625
   Added assignment asm ln 625, prod ln 145.22, live ln 146, enc None
 
 #### After variables
 
 Value produced for `net` (decl src ln 137), asm ln 513
   arg 0
+  @dbg.value(%struct.network.2* %net, !677), asm ln 513
   Added assignment asm ln 513, prod ln 137.0, live ln 145, enc None
 Value produced for `actArc` (decl src ln 137), asm ln 514
   arg 1
+  @dbg.value(i64 %actArc, !679), asm ln 514
   Added assignment asm ln 514, prod ln 137.0, live ln 145, enc None
 Value produced for `akt_group` (decl src ln 144), asm ln 519
   %rem = srem i64 %actArc, %0, !klee.check.div !395, l145 c22, asm ln 518
+  @dbg.value(i64 %rem, !683), asm ln 519
   Added assignment asm ln 519, prod ln 145.22, live ln 146, enc None
 Value produced for `result` (decl src ln 144), asm ln 544
   %add7 = add nsw i64 %div, %add, l147 c39, asm ln 543
+  @dbg.value(i64 %add7, !701), asm ln 544
   Added assignment asm ln 544, prod ln 147.39, live ln 148, enc None
 Value produced for `result` (decl src ln 144), asm ln 556
   %add12 = add nsw i64 %div9, %mul11, l150 c39, asm ln 555
-  🔔 Missing live ln, using produced ln + 1
+  @dbg.value(i64 %add12, !701), asm ln 556
   Added assignment asm ln 556, prod ln 150.39, live ln 151, enc None
 Value produced for `result` (decl src ln 144), asm ln 561
   %result.0 = phi i64 [ %add7, %if.then ], [ %add12, %if.else ], asm ln 560
+  @dbg.value(i64 %result.0, !701), asm ln 561
   Added assignment asm ln 561, prod ln 150.39, live ln 152, enc None
 
 #### Summary
@@ -3873,23 +3918,27 @@ Test Execution:
 
 Store to declared address of `net` (decl src ln 156), asm ln 688
   arg 0
+  store %struct.network* %net, %struct.network** %net.addr, asm ln 688
   @dbg.declare without read users, removable
   Added assignment asm ln 688, prod ln 156.0, live ln 163, enc None
 Load from declared address of `actArc` (decl src ln 156), asm ln 692
   %0 = load i64, i64* %actArc.addr, l163 c10, asm ln 692
-  🔔 Live ln too early, using produced ln + 1
+  %0 = load i64, i64* %actArc.addr, l163 c10, asm ln 692
   Added assignment asm ln 692, prod ln 163.10, live ln 164, enc None
 Store to declared address of `actArc` (decl src ln 156), asm ln 690
   arg 1
+  store i64 %actArc, i64* %actArc.addr, asm ln 690
   Added assignment asm ln 690, prod ln 156.0, live ln 163, enc None
 
 #### After variables
 
 Value produced for `net` (decl src ln 156), asm ln 568
   arg 0
+  @dbg.value(%struct.network.2* %net, !712), asm ln 568
   Added assignment asm ln 568, prod ln 156.0, live ln 163, enc None
 Value produced for `actArc` (decl src ln 156), asm ln 569
   arg 1
+  @dbg.value(i64 %actArc, !714), asm ln 569
   Added assignment asm ln 569, prod ln 156.0, live ln 163, enc None
 
 #### Summary
@@ -4097,311 +4146,330 @@ Test Execution:
 
 Load from declared address of `net` (decl src ln 171), asm ln 916
   %62 = load %struct.network*, %struct.network** %net.addr, l222 c36, asm ln 916
-  🔔 Live ln too early, using produced ln + 1
+  %62 = load %struct.network*, %struct.network** %net.addr, l222 c36, asm ln 916
   Added assignment asm ln 916, prod ln 222.36, live ln 223, enc None
 Load from declared address of `net` (decl src ln 171), asm ln 905
   %58 = load %struct.network*, %struct.network** %net.addr, l221 c48, asm ln 905
-  🔔 Live ln too early, using produced ln + 1
+  %58 = load %struct.network*, %struct.network** %net.addr, l221 c48, asm ln 905
   Added assignment asm ln 905, prod ln 221.48, live ln 222, enc None
 Load from declared address of `net` (decl src ln 171), asm ln 872
   %48 = load %struct.network*, %struct.network** %net.addr, l212 c60, asm ln 872
-  🔔 Live ln too early, using produced ln + 1
+  %48 = load %struct.network*, %struct.network** %net.addr, l212 c60, asm ln 872
   Added assignment asm ln 872, prod ln 212.60, live ln 213, enc None
 Load from declared address of `net` (decl src ln 171), asm ln 813
   %28 = load %struct.network*, %struct.network** %net.addr, l204 c21, asm ln 813
-  🔔 Live ln too early, using produced ln + 1
+  %28 = load %struct.network*, %struct.network** %net.addr, l204 c21, asm ln 813
   Added assignment asm ln 813, prod ln 204.21, live ln 205, enc None
 Load from declared address of `net` (decl src ln 171), asm ln 803
   %25 = load %struct.network*, %struct.network** %net.addr, l203 c11, asm ln 803
-  🔔 Live ln too early, using produced ln + 1
+  %25 = load %struct.network*, %struct.network** %net.addr, l203 c11, asm ln 803
   Added assignment asm ln 803, prod ln 203.11, live ln 204, enc None
 Load from declared address of `net` (decl src ln 171), asm ln 776
   %16 = load %struct.network*, %struct.network** %net.addr, l200 c21, asm ln 776
-  🔔 Live ln too early, using produced ln + 1
+  %16 = load %struct.network*, %struct.network** %net.addr, l200 c21, asm ln 776
   Added assignment asm ln 776, prod ln 200.21, live ln 201, enc None
 Load from declared address of `net` (decl src ln 171), asm ln 766
   %13 = load %struct.network*, %struct.network** %net.addr, l196 c12, asm ln 766
-  🔔 Live ln too early, using produced ln + 1
+  %13 = load %struct.network*, %struct.network** %net.addr, l196 c12, asm ln 766
   Added assignment asm ln 766, prod ln 196.12, live ln 197, enc None
 Load from declared address of `net` (decl src ln 171), asm ln 724
   %3 = load %struct.network*, %struct.network** %net.addr, l188 c21, asm ln 724
-  🔔 Live ln too early, using produced ln + 1
+  %3 = load %struct.network*, %struct.network** %net.addr, l188 c21, asm ln 724
   Added assignment asm ln 724, prod ln 188.21, live ln 189, enc None
 Load from declared address of `net` (decl src ln 171), asm ln 714
   %0 = load %struct.network*, %struct.network** %net.addr, l184 c11, asm ln 714
-  🔔 Live ln too early, using produced ln + 1
+  %0 = load %struct.network*, %struct.network** %net.addr, l184 c11, asm ln 714
   Added assignment asm ln 714, prod ln 184.11, live ln 185, enc None
 Store to declared address of `net` (decl src ln 171), asm ln 705
   arg 0
+  store %struct.network* %net, %struct.network** %net.addr, asm ln 705
   Added assignment asm ln 705, prod ln 171.0, live ln 181, enc None
 Load from declared address of `arc` (decl src ln 177), asm ln 885
   %52 = load %struct.arc*, %struct.arc** %arc, l216 c41, asm ln 885
-  🔔 Live ln too early, using produced ln + 1
+  %52 = load %struct.arc*, %struct.arc** %arc, l216 c41, asm ln 885
   Added assignment asm ln 885, prod ln 216.41, live ln 217, enc None
 Load from declared address of `arc` (decl src ln 177), asm ln 866
   %45 = load %struct.arc*, %struct.arc** %arc, l212 c42, asm ln 866
-  🔔 Live ln too early, using produced ln + 1
+  %45 = load %struct.arc*, %struct.arc** %arc, l212 c42, asm ln 866
   Added assignment asm ln 866, prod ln 212.42, live ln 213, enc None
 Load from declared address of `arc` (decl src ln 177), asm ln 854
   %41 = load %struct.arc*, %struct.arc** %arc, l210 c22, asm ln 854
-  🔔 Live ln too early, using produced ln + 1
+  %41 = load %struct.arc*, %struct.arc** %arc, l210 c22, asm ln 854
   Added assignment asm ln 854, prod ln 210.22, live ln 211, enc None
 Load from declared address of `arc` (decl src ln 177), asm ln 842
   %37 = load %struct.arc*, %struct.arc** %arc, l208 c46, asm ln 842
-  🔔 Live ln too early, using produced ln + 1
+  %37 = load %struct.arc*, %struct.arc** %arc, l208 c46, asm ln 842
   Added assignment asm ln 842, prod ln 208.46, live ln 209, enc None
 Load from declared address of `arc` (decl src ln 177), asm ln 830
   %33 = load %struct.arc*, %struct.arc** %arc, l208 c19, asm ln 830
-  🔔 Live ln too early, using produced ln + 1
+  %33 = load %struct.arc*, %struct.arc** %arc, l208 c19, asm ln 830
   Added assignment asm ln 830, prod ln 208.19, live ln 209, enc None
 Load from declared address of `arc` (decl src ln 177), asm ln 820
   %30 = load %struct.arc*, %struct.arc** %arc, l206 c13, asm ln 820
-  🔔 Live ln too early, using produced ln + 1
+  %30 = load %struct.arc*, %struct.arc** %arc, l206 c13, asm ln 820
   Added assignment asm ln 820, prod ln 206.13, live ln 207, enc None
 Store to declared address of `arc` (decl src ln 177), asm ln 806
   %26 = load %struct.arc*, %struct.arc** %arcs24, l203 c16, asm ln 805
+  store %struct.arc* %26, %struct.arc** %arc, l203 c9, asm ln 806
   Added assignment asm ln 806, prod ln 203.16, live ln 204, enc None
 Load from declared address of `arc` (decl src ln 177), asm ln 751
   %10 = load %struct.arc*, %struct.arc** %arc, l193 c13, asm ln 751
-  🔔 Live ln too early, using produced ln + 1
+  %10 = load %struct.arc*, %struct.arc** %arc, l193 c13, asm ln 751
   Added assignment asm ln 751, prod ln 193.13, live ln 194, enc None
 Load from declared address of `arc` (decl src ln 177), asm ln 742
   %8 = load %struct.arc*, %struct.arc** %arc, l191 c13, asm ln 742
-  🔔 Live ln too early, using produced ln + 1
+  %8 = load %struct.arc*, %struct.arc** %arc, l191 c13, asm ln 742
   Added assignment asm ln 742, prod ln 191.13, live ln 192, enc None
 Load from declared address of `arc` (decl src ln 177), asm ln 731
   %5 = load %struct.arc*, %struct.arc** %arc, l190 c13, asm ln 731
-  🔔 Live ln too early, using produced ln + 1
+  %5 = load %struct.arc*, %struct.arc** %arc, l190 c13, asm ln 731
   Added assignment asm ln 731, prod ln 190.13, live ln 191, enc None
 Store to declared address of `arc` (decl src ln 177), asm ln 717
   %1 = load %struct.arc*, %struct.arc** %arcs, l184 c16, asm ln 716
+  store %struct.arc* %1, %struct.arc** %arc, l184 c9, asm ln 717
   Added assignment asm ln 717, prod ln 184.16, live ln 188, enc None
 Load from declared address of `node` (decl src ln 178), asm ln 789
   %21 = load %struct.node*, %struct.node** %node, l201 c9, asm ln 789
-  🔔 Live ln too early, using produced ln + 1
+  %21 = load %struct.node*, %struct.node** %node, l201 c9, asm ln 789
   Added assignment asm ln 789, prod ln 201.9, live ln 202, enc None
 Load from declared address of `node` (decl src ln 178), asm ln 783
   %18 = load %struct.node*, %struct.node** %node, l201 c35, asm ln 783
-  🔔 Live ln too early, using produced ln + 1
+  %18 = load %struct.node*, %struct.node** %node, l201 c35, asm ln 783
   Added assignment asm ln 783, prod ln 201.35, live ln 202, enc None
 Store to declared address of `node` (decl src ln 178), asm ln 769
   %14 = load %struct.node*, %struct.node** %nodes, l196 c17, asm ln 768
+  store %struct.node* %14, %struct.node** %node, l196 c10, asm ln 769
   Added assignment asm ln 769, prod ln 196.17, live ln 200, enc None
 Store to declared address of `i` (decl src ln 179), asm ln 899
   %inc63 = add nsw i32 %56, 1, l204 c30, asm ln 898
-  🔔 Live ln too early, using produced ln + 1
+  store i32 %inc63, i32* %i, l204 c30, asm ln 899
   Added assignment asm ln 899, prod ln 204.30, live ln 205, enc None
 Load from declared address of `i` (decl src ln 179), asm ln 897
   %56 = load i32, i32* %i, l204 c30, asm ln 897
-  🔔 Live ln too early, using produced ln + 1
+  %56 = load i32, i32* %i, l204 c30, asm ln 897
   Added assignment asm ln 897, prod ln 204.30, live ln 205, enc None
 Load from declared address of `i` (decl src ln 179), asm ln 886
   %53 = load i32, i32* %i, l216 c45, asm ln 886
-  🔔 Live ln too early, using produced ln + 1
+  %53 = load i32, i32* %i, l216 c45, asm ln 886
   Added assignment asm ln 886, prod ln 216.45, live ln 217, enc None
 Load from declared address of `i` (decl src ln 179), asm ln 867
   %46 = load i32, i32* %i, l212 c46, asm ln 867
-  🔔 Live ln too early, using produced ln + 1
+  %46 = load i32, i32* %i, l212 c46, asm ln 867
   Added assignment asm ln 867, prod ln 212.46, live ln 213, enc None
 Load from declared address of `i` (decl src ln 179), asm ln 855
   %42 = load i32, i32* %i, l210 c26, asm ln 855
-  🔔 Live ln too early, using produced ln + 1
+  %42 = load i32, i32* %i, l210 c26, asm ln 855
   Added assignment asm ln 855, prod ln 210.26, live ln 211, enc None
 Load from declared address of `i` (decl src ln 179), asm ln 843
   %38 = load i32, i32* %i, l208 c50, asm ln 843
-  🔔 Live ln too early, using produced ln + 1
+  %38 = load i32, i32* %i, l208 c50, asm ln 843
   Added assignment asm ln 843, prod ln 208.50, live ln 209, enc None
 Load from declared address of `i` (decl src ln 179), asm ln 831
   %34 = load i32, i32* %i, l208 c23, asm ln 831
-  🔔 Live ln too early, using produced ln + 1
+  %34 = load i32, i32* %i, l208 c23, asm ln 831
   Added assignment asm ln 831, prod ln 208.23, live ln 209, enc None
 Load from declared address of `i` (decl src ln 179), asm ln 821
   %31 = load i32, i32* %i, l206 c17, asm ln 821
-  🔔 Live ln too early, using produced ln + 1
+  %31 = load i32, i32* %i, l206 c17, asm ln 821
   Added assignment asm ln 821, prod ln 206.17, live ln 207, enc None
 Load from declared address of `i` (decl src ln 179), asm ln 811
   %27 = load i32, i32* %i, l204 c17, asm ln 811
-  🔔 Live ln too early, using produced ln + 1
+  %27 = load i32, i32* %i, l204 c17, asm ln 811
   Added assignment asm ln 811, prod ln 204.17, live ln 205, enc None
 Store to declared address of `i` (decl src ln 179), asm ln 807
   const i32 0
-  🔔 Live ln too early, using produced ln + 1
+  store i32 0, i32* %i, l204 c12, asm ln 807
   Added assignment asm ln 807, prod ln 204.12, live ln 205, enc None
 Store to declared address of `i` (decl src ln 179), asm ln 799
   %inc22 = add nsw i32 %24, 1, l200 c30, asm ln 798
-  🔔 Live ln too early, using produced ln + 1
+  store i32 %inc22, i32* %i, l200 c30, asm ln 799
   Added assignment asm ln 799, prod ln 200.30, live ln 201, enc None
 Load from declared address of `i` (decl src ln 179), asm ln 797
   %24 = load i32, i32* %i, l200 c30, asm ln 797
-  🔔 Live ln too early, using produced ln + 1
+  %24 = load i32, i32* %i, l200 c30, asm ln 797
   Added assignment asm ln 797, prod ln 200.30, live ln 201, enc None
 Load from declared address of `i` (decl src ln 179), asm ln 790
   %22 = load i32, i32* %i, l201 c14, asm ln 790
-  🔔 Live ln too early, using produced ln + 1
+  %22 = load i32, i32* %i, l201 c14, asm ln 790
   Added assignment asm ln 790, prod ln 201.14, live ln 202, enc None
 Load from declared address of `i` (decl src ln 179), asm ln 784
   %19 = load i32, i32* %i, l201 c40, asm ln 784
-  🔔 Live ln too early, using produced ln + 1
+  %19 = load i32, i32* %i, l201 c40, asm ln 784
   Added assignment asm ln 784, prod ln 201.40, live ln 202, enc None
 Load from declared address of `i` (decl src ln 179), asm ln 774
   %15 = load i32, i32* %i, l200 c17, asm ln 774
-  🔔 Live ln too early, using produced ln + 1
+  %15 = load i32, i32* %i, l200 c17, asm ln 774
   Added assignment asm ln 774, prod ln 200.17, live ln 201, enc None
 Store to declared address of `i` (decl src ln 179), asm ln 770
   const i32 0
-  🔔 Live ln too early, using produced ln + 1
+  store i32 0, i32* %i, l200 c12, asm ln 770
   Added assignment asm ln 770, prod ln 200.12, live ln 201, enc None
 Store to declared address of `i` (decl src ln 179), asm ln 762
   %inc = add nsw i32 %12, 1, l188 c30, asm ln 761
-  🔔 Live ln too early, using produced ln + 1
+  store i32 %inc, i32* %i, l188 c30, asm ln 762
   Added assignment asm ln 762, prod ln 188.30, live ln 189, enc None
 Load from declared address of `i` (decl src ln 179), asm ln 760
   %12 = load i32, i32* %i, l188 c30, asm ln 760
-  🔔 Live ln too early, using produced ln + 1
+  %12 = load i32, i32* %i, l188 c30, asm ln 760
   Added assignment asm ln 760, prod ln 188.30, live ln 189, enc None
 Load from declared address of `i` (decl src ln 179), asm ln 752
   %11 = load i32, i32* %i, l193 c17, asm ln 752
-  🔔 Live ln too early, using produced ln + 1
+  %11 = load i32, i32* %i, l193 c17, asm ln 752
   Added assignment asm ln 752, prod ln 193.17, live ln 194, enc None
 Load from declared address of `i` (decl src ln 179), asm ln 743
   %9 = load i32, i32* %i, l191 c17, asm ln 743
-  🔔 Live ln too early, using produced ln + 1
+  %9 = load i32, i32* %i, l191 c17, asm ln 743
   Added assignment asm ln 743, prod ln 191.17, live ln 192, enc None
 Load from declared address of `i` (decl src ln 179), asm ln 732
   %6 = load i32, i32* %i, l190 c17, asm ln 732
-  🔔 Live ln too early, using produced ln + 1
+  %6 = load i32, i32* %i, l190 c17, asm ln 732
   Added assignment asm ln 732, prod ln 190.17, live ln 191, enc None
 Load from declared address of `i` (decl src ln 179), asm ln 722
   %2 = load i32, i32* %i, l188 c17, asm ln 722
-  🔔 Live ln too early, using produced ln + 1
+  %2 = load i32, i32* %i, l188 c17, asm ln 722
   Added assignment asm ln 722, prod ln 188.17, live ln 189, enc None
 Store to declared address of `i` (decl src ln 179), asm ln 718
   const i32 0
-  🔔 Live ln too early, using produced ln + 1
+  store i32 0, i32* %i, l188 c12, asm ln 718
   Added assignment asm ln 718, prod ln 188.12, live ln 189, enc None
 Load from declared address of `fleet` (decl src ln 181), asm ln 914
   %61 = load i64, i64* %fleet, l222 c20, asm ln 914
-  🔔 Live ln too early, using produced ln + 1
+  %61 = load i64, i64* %fleet, l222 c20, asm ln 914
   Added assignment asm ln 914, prod ln 222.20, live ln 223, enc None
 Load from declared address of `fleet` (decl src ln 181), asm ln 903
   %57 = load i64, i64* %fleet, l221 c32, asm ln 903
-  🔔 Live ln too early, using produced ln + 1
+  %57 = load i64, i64* %fleet, l221 c32, asm ln 903
   Added assignment asm ln 903, prod ln 221.32, live ln 222, enc None
 Store to declared address of `fleet` (decl src ln 181), asm ln 881
   %inc53 = add nsw i64 %51, 1, l213 c26, asm ln 880
+  store i64 %inc53, i64* %fleet, l213 c26, asm ln 881
   Added assignment asm ln 881, prod ln 213.26, live ln 214, enc None
 Load from declared address of `fleet` (decl src ln 181), asm ln 879
   %51 = load i64, i64* %fleet, l213 c26, asm ln 879
-  🔔 Live ln too early, using produced ln + 1
+  %51 = load i64, i64* %fleet, l213 c26, asm ln 879
   Added assignment asm ln 879, prod ln 213.26, live ln 214, enc None
 Store to declared address of `fleet` (decl src ln 181), asm ln 711
   const i64 0
+  store i64 0, i64* %fleet, l181 c10, asm ln 711
   Added assignment asm ln 711, prod ln 181.10, live ln 182, enc None
 Load from declared address of `operational_cost` (decl src ln 182), asm ln 921
   %64 = load i64, i64* %operational_cost, l222 c56, asm ln 921
-  🔔 Live ln too early, using produced ln + 1
+  %64 = load i64, i64* %operational_cost, l222 c56, asm ln 921
   Added assignment asm ln 921, prod ln 222.56, live ln 223, enc None
 Load from declared address of `operational_cost` (decl src ln 182), asm ln 910
   %60 = load i64, i64* %operational_cost, l221 c68, asm ln 910
-  🔔 Live ln too early, using produced ln + 1
+  %60 = load i64, i64* %operational_cost, l221 c68, asm ln 910
   Added assignment asm ln 910, prod ln 221.68, live ln 222, enc None
 Store to declared address of `operational_cost` (decl src ln 182), asm ln 893
   %add58 = add nsw i64 %55, %54, l216 c38, asm ln 892
-  🔔 Missing live ln, using produced ln + 1
+  store i64 %add58, i64* %operational_cost, l216 c38, asm ln 893
   Added assignment asm ln 893, prod ln 216.38, live ln 217, enc None
 Load from declared address of `operational_cost` (decl src ln 182), asm ln 891
   %55 = load i64, i64* %operational_cost, l216 c38, asm ln 891
-  🔔 Live ln too early, using produced ln + 1
+  %55 = load i64, i64* %operational_cost, l216 c38, asm ln 891
   Added assignment asm ln 891, prod ln 216.38, live ln 217, enc None
 Store to declared address of `operational_cost` (decl src ln 182), asm ln 878
   %add = add nsw i64 %50, %sub, l212 c38, asm ln 877
+  store i64 %add, i64* %operational_cost, l212 c38, asm ln 878
   Added assignment asm ln 878, prod ln 212.38, live ln 213, enc None
 Load from declared address of `operational_cost` (decl src ln 182), asm ln 876
   %50 = load i64, i64* %operational_cost, l212 c38, asm ln 876
-  🔔 Live ln too early, using produced ln + 1
+  %50 = load i64, i64* %operational_cost, l212 c38, asm ln 876
   Added assignment asm ln 876, prod ln 212.38, live ln 213, enc None
 Store to declared address of `operational_cost` (decl src ln 182), asm ln 713
   const i64 0
+  store i64 0, i64* %operational_cost, l182 c12, asm ln 713
   Added assignment asm ln 713, prod ln 182.12, live ln 184, enc None
 
 #### After variables
 
 Value produced for `net` (decl src ln 171), asm ln 576
   arg 0
+  @dbg.value(%struct.network.2* %net, !717), asm ln 576
   Added assignment asm ln 576, prod ln 171.0, live ln 184, enc None
 Value produced for `fleet` (decl src ln 181), asm ln 577
   const i64 0
+  @dbg.value(i64 0, !719), asm ln 577
   Added assignment asm ln 577, prod ln 181.0, live ln 184, enc None
 Value produced for `operational_cost` (decl src ln 182), asm ln 578
   const i64 0
+  @dbg.value(i64 0, !720), asm ln 578
   Added assignment asm ln 578, prod ln 182.0, live ln 184, enc None
 Value produced for `arc` (decl src ln 177), asm ln 581
   %0 = load %struct.arc.0*, %struct.arc.0** %arcs, l184 c16, asm ln 580
+  @dbg.value(%struct.arc.0* %0, !722), asm ln 581
   Added assignment asm ln 581, prod ln 184.16, live ln 188, enc None
 Value produced for `i` (decl src ln 179), asm ln 582
   const i32 0
+  @dbg.value(i32 0, !723), asm ln 582
   Added assignment asm ln 582, prod ln 179.0, live ln 188, enc None
 Value produced for `i` (decl src ln 179), asm ln 619
   %inc = add nsw i32 %i.0, 1, l188 c30, asm ln 618
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i32 %inc, !723), asm ln 619
   Added assignment asm ln 619, prod ln 188.30, live ln 189, enc None
 Value produced for `node` (decl src ln 178), asm ln 625
   %3 = load %struct.node.1*, %struct.node.1** %nodes, l196 c17, asm ln 624
+  @dbg.value(%struct.node.1* %3, !749), asm ln 625
   Added assignment asm ln 625, prod ln 196.17, live ln 200, enc None
 Value produced for `i` (decl src ln 179), asm ln 626
   const i32 0
-  🔔 Missing produced ln, using decl ln
+  @dbg.value(i32 0, !723), asm ln 626
   Added assignment asm ln 626, prod ln 179.0, live ln 200, enc None
 Value produced for `i` (decl src ln 179), asm ln 650
   %inc22 = add nsw i32 %i.1, 1, l200 c30, asm ln 649
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i32 %inc22, !723), asm ln 650
   Added assignment asm ln 650, prod ln 200.30, live ln 201, enc None
 Value produced for `arc` (decl src ln 177), asm ln 656
   %7 = load %struct.arc.0*, %struct.arc.0** %arcs24, l203 c16, asm ln 655
+  @dbg.value(%struct.arc.0* %7, !722), asm ln 656
   Added assignment asm ln 656, prod ln 203.16, live ln 204, enc None
 Value produced for `i` (decl src ln 179), asm ln 657
   const i32 0
-  🔔 Missing produced ln, using decl ln
+  @dbg.value(i32 0, !723), asm ln 657
   Added assignment asm ln 657, prod ln 179.0, live ln 204, enc None
 Value produced for `operational_cost` (decl src ln 182), asm ln 720
   %add = add nsw i64 %operational_cost.0, %sub, l212 c38, asm ln 719
+  @dbg.value(i64 %add, !720), asm ln 720
   Added assignment asm ln 720, prod ln 212.38, live ln 213, enc None
 Value produced for `fleet` (decl src ln 181), asm ln 722
   %inc53 = add nsw i64 %fleet.0, 1, l213 c26, asm ln 721
+  @dbg.value(i64 %inc53, !719), asm ln 722
   Added assignment asm ln 722, prod ln 213.26, live ln 214, enc None
 Value produced for `operational_cost` (decl src ln 182), asm ln 731
   %add58 = add nsw i64 %operational_cost.0, %18, l216 c38, asm ln 730
-  🔔 Missing live ln, using produced ln + 1
+  @dbg.value(i64 %add58, !720), asm ln 731
   Added assignment asm ln 731, prod ln 216.38, live ln 217, enc None
 Value produced for `i` (decl src ln 179), asm ln 740
   %inc63 = add nsw i32 %i.2, 1, l204 c30, asm ln 739
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i32 %inc63, !723), asm ln 740
   Added assignment asm ln 740, prod ln 204.30, live ln 205, enc None
 Value produced for `i` (decl src ln 179), asm ln 587
   %i.0 = phi i32 [ 0, %entry ], [ %inc, %for.inc ], asm ln 586
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i32 %i.0, !723), asm ln 587
   Added assignment asm ln 587, prod ln 188.30, live ln 189, enc None
 Value produced for `i` (decl src ln 179), asm ln 631
   %i.1 = phi i32 [ 0, %for.end ], [ %inc22, %for.body14 ], asm ln 630
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i32 %i.1, !723), asm ln 631
   Added assignment asm ln 631, prod ln 200.30, live ln 201, enc None
 Value produced for `operational_cost` (decl src ln 182), asm ln 664
   %operational_cost.0 = phi i64 [ 0, %for.end23 ], [ %operational_cost.3, %for.inc62 ], l182 c12, asm ln 663
+  @dbg.value(i64 %operational_cost.0, !720), asm ln 664
   Added assignment asm ln 664, prod ln 182.12, live ln 204, enc None
 Value produced for `fleet` (decl src ln 181), asm ln 665
   %fleet.0 = phi i64 [ 0, %for.end23 ], [ %fleet.3, %for.inc62 ], l181 c10, asm ln 662
+  @dbg.value(i64 %fleet.0, !719), asm ln 665
   Added assignment asm ln 665, prod ln 181.10, live ln 204, enc None
 Value produced for `i` (decl src ln 179), asm ln 666
   %i.2 = phi i32 [ 0, %for.end23 ], [ %inc63, %for.inc62 ], asm ln 661
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i32 %i.2, !723), asm ln 666
   Added assignment asm ln 666, prod ln 204.30, live ln 205, enc None
 Value produced for `operational_cost` (decl src ln 182), asm ln 737
   %operational_cost.3 = phi i64 [ %operational_cost.0, %for.body30 ], [ %operational_cost.0, %land.lhs.true ], [ %add58, %if.else54 ], [ %add, %if.then50 ], l182 c12, asm ln 736
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %operational_cost.3, !720), asm ln 737
   Added assignment asm ln 737, prod ln 216.38, live ln 217, enc None
 Value produced for `fleet` (decl src ln 181), asm ln 738
   %fleet.3 = phi i64 [ %fleet.0, %for.body30 ], [ %fleet.0, %land.lhs.true ], [ %fleet.0, %if.else54 ], [ %inc53, %if.then50 ], l181 c10, asm ln 735
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %fleet.3, !719), asm ln 738
   Added assignment asm ln 738, prod ln 213.26, live ln 214, enc None
 
 #### Summary
@@ -5390,176 +5458,190 @@ Test Execution:
 
 Load from declared address of `net` (decl src ln 235), asm ln 1052
   %38 = load %struct.network*, %struct.network** %net.addr, l278 c5, asm ln 1052
-  🔔 Live ln too early, using produced ln + 1
+  %38 = load %struct.network*, %struct.network** %net.addr, l278 c5, asm ln 1052
   Added assignment asm ln 1052, prod ln 278.5, live ln 279, enc None
 Load from declared address of `net` (decl src ln 235), asm ln 1039
   %36 = load %struct.network*, %struct.network** %net.addr, l272 c17, asm ln 1039
-  🔔 Live ln too early, using produced ln + 1
+  %36 = load %struct.network*, %struct.network** %net.addr, l272 c17, asm ln 1039
   Added assignment asm ln 1039, prod ln 272.17, live ln 273, enc None
 Load from declared address of `net` (decl src ln 235), asm ln 1029
   %33 = load %struct.network*, %struct.network** %net.addr, l268 c46, asm ln 1029
-  🔔 Live ln too early, using produced ln + 1
+  %33 = load %struct.network*, %struct.network** %net.addr, l268 c46, asm ln 1029
   Added assignment asm ln 1029, prod ln 268.46, live ln 269, enc None
 Load from declared address of `net` (decl src ln 235), asm ln 1019
   %30 = load %struct.network*, %struct.network** %net.addr, l267 c34, asm ln 1019
-  🔔 Live ln too early, using produced ln + 1
+  %30 = load %struct.network*, %struct.network** %net.addr, l267 c34, asm ln 1019
   Added assignment asm ln 1019, prod ln 267.34, live ln 268, enc None
 Load from declared address of `net` (decl src ln 235), asm ln 1002
   %24 = load %struct.network*, %struct.network** %net.addr, l258 c37, asm ln 1002
-  🔔 Live ln too early, using produced ln + 1
+  %24 = load %struct.network*, %struct.network** %net.addr, l258 c37, asm ln 1002
   Added assignment asm ln 1002, prod ln 258.37, live ln 259, enc None
 Load from declared address of `net` (decl src ln 235), asm ln 958
   %6 = load %struct.network*, %struct.network** %net.addr, l250 c20, asm ln 958
-  🔔 Live ln too early, using produced ln + 1
+  %6 = load %struct.network*, %struct.network** %net.addr, l250 c20, asm ln 958
   Added assignment asm ln 958, prod ln 250.20, live ln 251, enc None
 Load from declared address of `net` (decl src ln 235), asm ln 954
   %4 = load %struct.network*, %struct.network** %net.addr, l249 c12, asm ln 954
-  🔔 Live ln too early, using produced ln + 1
+  %4 = load %struct.network*, %struct.network** %net.addr, l249 c12, asm ln 954
   Added assignment asm ln 954, prod ln 249.12, live ln 250, enc None
 Load from declared address of `net` (decl src ln 235), asm ln 948
   %2 = load %struct.network*, %struct.network** %net.addr, l244 c25, asm ln 948
-  🔔 Live ln too early, using produced ln + 1
+  %2 = load %struct.network*, %struct.network** %net.addr, l244 c25, asm ln 948
   Added assignment asm ln 948, prod ln 244.25, live ln 245, enc None
 Load from declared address of `net` (decl src ln 235), asm ln 943
   %0 = load %struct.network*, %struct.network** %net.addr, l243 c20, asm ln 943
-  🔔 Live ln too early, using produced ln + 1
+  %0 = load %struct.network*, %struct.network** %net.addr, l243 c20, asm ln 943
   Added assignment asm ln 943, prod ln 243.20, live ln 244, enc None
 Store to declared address of `net` (decl src ln 235), asm ln 938
   arg 0
+  store %struct.network* %net, %struct.network** %net.addr, asm ln 938
   Added assignment asm ln 938, prod ln 235.0, live ln 243, enc None
 Load from declared address of `stop` (decl src ln 241), asm ln 970
   %11 = load i8*, i8** %stop, l252 c35, asm ln 970
-  🔔 Live ln too early, using produced ln + 1
+  %11 = load i8*, i8** %stop, l252 c35, asm ln 970
   Added assignment asm ln 970, prod ln 252.35, live ln 253, enc None
 Store to declared address of `stop` (decl src ln 241), asm ln 962
   %8 = bitcast %struct.node* %7 to i8*, l250 c12, asm ln 961
+  store i8* %8, i8** %stop, l250 c10, asm ln 962
   Added assignment asm ln 962, prod ln 250.12, live ln 252, enc None
 Store to declared address of `node` (decl src ln 242), asm ln 1048
   %incdec.ptr20 = getelementptr inbounds %struct.node, %struct.node* %37, i32 1, l252 c45, asm ln 1047
-  🔔 Live ln too early, using produced ln + 1
+  store %struct.node* %incdec.ptr20, %struct.node** %node, l252 c45, asm ln 1048
   Added assignment asm ln 1048, prod ln 252.45, live ln 253, enc None
 Load from declared address of `node` (decl src ln 242), asm ln 1046
   %37 = load %struct.node*, %struct.node** %node, l252 c45, asm ln 1046
-  🔔 Live ln too early, using produced ln + 1
+  %37 = load %struct.node*, %struct.node** %node, l252 c45, asm ln 1046
   Added assignment asm ln 1046, prod ln 252.45, live ln 253, enc None
 Load from declared address of `node` (decl src ln 242), asm ln 1010
   %26 = load %struct.node*, %struct.node** %node, l262 c25, asm ln 1010
-  🔔 Live ln too early, using produced ln + 1
+  %26 = load %struct.node*, %struct.node** %node, l262 c25, asm ln 1010
   Added assignment asm ln 1010, prod ln 262.25, live ln 263, enc None
 Load from declared address of `node` (decl src ln 242), asm ln 980
   %15 = load %struct.node*, %struct.node** %node, l255 c16, asm ln 980
-  🔔 Live ln too early, using produced ln + 1
+  %15 = load %struct.node*, %struct.node** %node, l255 c16, asm ln 980
   Added assignment asm ln 980, prod ln 255.16, live ln 256, enc None
 Load from declared address of `node` (decl src ln 242), asm ln 976
   %13 = load %struct.node*, %struct.node** %node, l254 c15, asm ln 976
-  🔔 Live ln too early, using produced ln + 1
+  %13 = load %struct.node*, %struct.node** %node, l254 c15, asm ln 976
   Added assignment asm ln 976, prod ln 254.15, live ln 255, enc None
 Load from declared address of `node` (decl src ln 242), asm ln 969
   %10 = load %struct.node*, %struct.node** %node, l252 c18, asm ln 969
-  🔔 Live ln too early, using produced ln + 1
+  %10 = load %struct.node*, %struct.node** %node, l252 c18, asm ln 969
   Added assignment asm ln 969, prod ln 252.18, live ln 253, enc None
 Store to declared address of `node` (decl src ln 242), asm ln 965
   %incdec.ptr = getelementptr inbounds %struct.node, %struct.node* %9, i32 1, l252 c14, asm ln 964
-  🔔 Live ln too early, using produced ln + 1
+  store %struct.node* %incdec.ptr, %struct.node** %node, l252 c14, asm ln 965
   Added assignment asm ln 965, prod ln 252.14, live ln 253, enc None
 Load from declared address of `node` (decl src ln 242), asm ln 963
   %9 = load %struct.node*, %struct.node** %node, l252 c14, asm ln 963
-  🔔 Live ln too early, using produced ln + 1
+  %9 = load %struct.node*, %struct.node** %node, l252 c14, asm ln 963
   Added assignment asm ln 963, prod ln 252.14, live ln 253, enc None
 Store to declared address of `node` (decl src ln 242), asm ln 957
   %5 = load %struct.node*, %struct.node** %nodes, l249 c17, asm ln 956
+  store %struct.node* %5, %struct.node** %node, l249 c10, asm ln 957
   Added assignment asm ln 957, prod ln 249.17, live ln 250, enc None
 Load from declared address of `dummy` (decl src ln 243), asm ln 985
   %18 = load %struct.arc*, %struct.arc** %dummy, l256 c20, asm ln 985
-  🔔 Live ln too early, using produced ln + 1
+  %18 = load %struct.arc*, %struct.arc** %dummy, l256 c20, asm ln 985
   Added assignment asm ln 985, prod ln 256.20, live ln 257, enc None
 Store to declared address of `dummy` (decl src ln 243), asm ln 946
   %1 = load %struct.arc*, %struct.arc** %dummy_arcs, l243 c25, asm ln 945
+  store %struct.arc* %1, %struct.arc** %dummy, l243 c12, asm ln 946
   Added assignment asm ln 946, prod ln 243.25, live ln 244, enc None
 Load from declared address of `stop_dummy` (decl src ln 244), asm ln 991
   %20 = load %struct.arc*, %struct.arc** %stop_dummy, l256 c35, asm ln 991
-  🔔 Live ln too early, using produced ln + 1
+  %20 = load %struct.arc*, %struct.arc** %stop_dummy, l256 c35, asm ln 991
   Added assignment asm ln 991, prod ln 256.35, live ln 257, enc None
 Store to declared address of `stop_dummy` (decl src ln 244), asm ln 951
   %3 = load %struct.arc*, %struct.arc** %stop_dummy1, l244 c30, asm ln 950
+  store %struct.arc* %3, %struct.arc** %stop_dummy, l244 c12, asm ln 951
   Added assignment asm ln 951, prod ln 244.30, live ln 249, enc None
 Load from declared address of `arc` (decl src ln 245), asm ln 990
   %19 = load %struct.arc*, %struct.arc** %arc, l256 c29, asm ln 990
-  🔔 Live ln too early, using produced ln + 1
+  %19 = load %struct.arc*, %struct.arc** %arc, l256 c29, asm ln 990
   Added assignment asm ln 990, prod ln 256.29, live ln 257, enc None
 Load from declared address of `arc` (decl src ln 245), asm ln 984
   %17 = load %struct.arc*, %struct.arc** %arc, l256 c13, asm ln 984
-  🔔 Live ln too early, using produced ln + 1
+  %17 = load %struct.arc*, %struct.arc** %arc, l256 c13, asm ln 984
   Added assignment asm ln 984, prod ln 256.13, live ln 257, enc None
 Store to declared address of `arc` (decl src ln 245), asm ln 979
   %14 = load %struct.arc*, %struct.arc** %basic_arc, l254 c21, asm ln 978
+  store %struct.arc* %14, %struct.arc** %arc, l254 c13, asm ln 979
   Added assignment asm ln 979, prod ln 254.21, live ln 255, enc None
 Load from declared address of `flow` (decl src ln 246), asm ln 1037
   %35 = load i64, i64* %flow, l271 c68, asm ln 1037
-  🔔 Live ln too early, using produced ln + 1
+  %35 = load i64, i64* %flow, l271 c68, asm ln 1037
   Added assignment asm ln 1037, prod ln 271.68, live ln 272, enc None
 Load from declared address of `flow` (decl src ln 246), asm ln 1027
   %32 = load i64, i64* %flow, l268 c19, asm ln 1027
-  🔔 Live ln too early, using produced ln + 1
+  %32 = load i64, i64* %flow, l268 c19, asm ln 1027
   Added assignment asm ln 1027, prod ln 268.19, live ln 269, enc None
 Load from declared address of `flow` (decl src ln 246), asm ln 1018
   %29 = load i64, i64* %flow, l267 c17, asm ln 1018
-  🔔 Live ln too early, using produced ln + 1
+  %29 = load i64, i64* %flow, l267 c17, asm ln 1018
   Added assignment asm ln 1018, prod ln 267.17, live ln 268, enc None
 Load from declared address of `flow` (decl src ln 246), asm ln 1013
   %28 = load i64, i64* %flow, l262 c39, asm ln 1013
-  🔔 Live ln too early, using produced ln + 1
+  %28 = load i64, i64* %flow, l262 c39, asm ln 1013
   Added assignment asm ln 1013, prod ln 262.39, live ln 263, enc None
 Load from declared address of `flow` (decl src ln 246), asm ln 999
   %23 = load i64, i64* %flow, l258 c17, asm ln 999
-  🔔 Live ln too early, using produced ln + 1
+  %23 = load i64, i64* %flow, l258 c17, asm ln 999
   Added assignment asm ln 999, prod ln 258.17, live ln 259, enc None
 Load from declared address of `flow` (decl src ln 246), asm ln 998
   %22 = load i64, i64* %flow, l258 c17, asm ln 998
-  🔔 Live ln too early, using produced ln + 1
+  %22 = load i64, i64* %flow, l258 c17, asm ln 998
   Added assignment asm ln 998, prod ln 258.17, live ln 259, enc None
 Load from declared address of `flow` (decl src ln 246), asm ln 996
   %21 = load i64, i64* %flow, l258 c17, asm ln 996
-  🔔 Live ln too early, using produced ln + 1
+  %21 = load i64, i64* %flow, l258 c17, asm ln 996
   Added assignment asm ln 996, prod ln 258.17, live ln 259, enc None
 Store to declared address of `flow` (decl src ln 246), asm ln 983
   %16 = load i64, i64* %flow2, l255 c22, asm ln 982
+  store i64 %16, i64* %flow, l255 c14, asm ln 983
   Added assignment asm ln 983, prod ln 255.22, live ln 256, enc None
 
 #### After variables
 
 Value produced for `net` (decl src ln 235), asm ln 765
   arg 0
+  @dbg.value(%struct.network.2* %net, !834), asm ln 765
   Added assignment asm ln 765, prod ln 235.0, live ln 243, enc None
 Value produced for `dummy` (decl src ln 243), asm ln 768
   %0 = load %struct.arc.0*, %struct.arc.0** %dummy_arcs, l243 c25, asm ln 767
+  @dbg.value(%struct.arc.0* %0, !837), asm ln 768
   Added assignment asm ln 768, prod ln 243.25, live ln 244, enc None
 Value produced for `stop_dummy` (decl src ln 244), asm ln 771
   %1 = load %struct.arc.0*, %struct.arc.0** %stop_dummy1, l244 c30, asm ln 770
+  @dbg.value(%struct.arc.0* %1, !839), asm ln 771
   Added assignment asm ln 771, prod ln 244.30, live ln 249, enc None
 Value produced for `node` (decl src ln 242), asm ln 774
   %2 = load %struct.node.1*, %struct.node.1** %nodes, l249 c17, asm ln 773
+  @dbg.value(%struct.node.1* %2, !841), asm ln 774
   Added assignment asm ln 774, prod ln 249.17, live ln 250, enc None
 Value produced for `stop` (decl src ln 241), asm ln 778
   %4 = bitcast %struct.node.1* %3 to i8*, l250 c12, asm ln 777
+  @dbg.value(i8* %4, !844), asm ln 778
   Added assignment asm ln 778, prod ln 250.12, live ln 252, enc None
 Value produced for `node` (decl src ln 242), asm ln 780
   %incdec.ptr = getelementptr inbounds %struct.node.1, %struct.node.1* %2, i32 1, l252 c14, asm ln 779
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(%struct.node.1* %incdec.ptr, !841), asm ln 780
   Added assignment asm ln 780, prod ln 252.14, live ln 253, enc None
 Value produced for `arc` (decl src ln 245), asm ln 793
   %6 = load %struct.arc.0*, %struct.arc.0** %basic_arc, l254 c21, asm ln 792
+  @dbg.value(%struct.arc.0* %6, !855), asm ln 793
   Added assignment asm ln 793, prod ln 254.21, live ln 255, enc None
 Value produced for `flow` (decl src ln 246), asm ln 796
   %7 = load i64, i64* %flow2, l255 c22, asm ln 795
+  @dbg.value(i64 %7, !857), asm ln 796
   Added assignment asm ln 796, prod ln 255.22, live ln 256, enc None
 Value produced for `node` (decl src ln 242), asm ln 841
   %incdec.ptr20 = getelementptr inbounds %struct.node.1, %struct.node.1* %node.0, i32 1, l252 c45, asm ln 840
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(%struct.node.1* %incdec.ptr20, !841), asm ln 841
   Added assignment asm ln 841, prod ln 252.45, live ln 253, enc None
 Value produced for `node` (decl src ln 242), asm ln 785
   %node.0 = phi %struct.node.1* [ %incdec.ptr, %entry ], [ %incdec.ptr20, %for.inc ], asm ln 784
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(%struct.node.1* %node.0, !841), asm ln 785
   Added assignment asm ln 785, prod ln 252.45, live ln 253, enc None
 
 #### Summary
@@ -6230,126 +6312,134 @@ Test Execution:
 
 Load from declared address of `net` (decl src ln 293), asm ln 1134
   %20 = load %struct.network*, %struct.network** %net.addr, l336 c36, asm ln 1134
-  🔔 Live ln too early, using produced ln + 1
+  %20 = load %struct.network*, %struct.network** %net.addr, l336 c36, asm ln 1134
   Added assignment asm ln 1134, prod ln 336.36, live ln 337, enc None
 Load from declared address of `net` (decl src ln 293), asm ln 1125
   %17 = load %struct.network*, %struct.network** %net.addr, l326 c37, asm ln 1125
-  🔔 Live ln too early, using produced ln + 1
+  %17 = load %struct.network*, %struct.network** %net.addr, l326 c37, asm ln 1125
   Added assignment asm ln 1125, prod ln 326.37, live ln 327, enc None
 Load from declared address of `net` (decl src ln 293), asm ln 1084
   %2 = load %struct.network*, %struct.network** %net.addr, l306 c22, asm ln 1084
-  🔔 Live ln too early, using produced ln + 1
+  %2 = load %struct.network*, %struct.network** %net.addr, l306 c22, asm ln 1084
   Added assignment asm ln 1084, prod ln 306.22, live ln 307, enc None
 Load from declared address of `net` (decl src ln 293), asm ln 1076
   %0 = load %struct.network*, %struct.network** %net.addr, l300 c31, asm ln 1076
-  🔔 Live ln too early, using produced ln + 1
+  %0 = load %struct.network*, %struct.network** %net.addr, l300 c31, asm ln 1076
   Added assignment asm ln 1076, prod ln 300.31, live ln 301, enc None
 Store to declared address of `net` (decl src ln 293), asm ln 1072
   arg 0
+  store %struct.network* %net, %struct.network** %net.addr, asm ln 1072
   Added assignment asm ln 1072, prod ln 293.0, live ln 300, enc None
 Store to declared address of `arc` (decl src ln 299), asm ln 1143
   %incdec.ptr = getelementptr inbounds %struct.arc, %struct.arc* %22, i32 1, l306 c48, asm ln 1142
-  🔔 Live ln too early, using produced ln + 1
+  store %struct.arc* %incdec.ptr, %struct.arc** %arc, l306 c48, asm ln 1143
   Added assignment asm ln 1143, prod ln 306.48, live ln 307, enc None
 Load from declared address of `arc` (decl src ln 299), asm ln 1141
   %22 = load %struct.arc*, %struct.arc** %arc, l306 c48, asm ln 1141
-  🔔 Live ln too early, using produced ln + 1
+  %22 = load %struct.arc*, %struct.arc** %arc, l306 c48, asm ln 1141
   Added assignment asm ln 1141, prod ln 306.48, live ln 307, enc None
 Load from declared address of `arc` (decl src ln 299), asm ln 1113
   %14 = load %struct.arc*, %struct.arc** %arc, l310 c17, asm ln 1113
-  🔔 Live ln too early, using produced ln + 1
+  %14 = load %struct.arc*, %struct.arc** %arc, l310 c17, asm ln 1113
   Added assignment asm ln 1113, prod ln 310.17, live ln 311, enc None
 Load from declared address of `arc` (decl src ln 299), asm ln 1106
   %11 = load %struct.arc*, %struct.arc** %arc, l309 c15, asm ln 1106
-  🔔 Live ln too early, using produced ln + 1
+  %11 = load %struct.arc*, %struct.arc** %arc, l309 c15, asm ln 1106
   Added assignment asm ln 1106, prod ln 309.15, live ln 310, enc None
 Load from declared address of `arc` (decl src ln 299), asm ln 1100
   %8 = load %struct.arc*, %struct.arc** %arc, l308 c32, asm ln 1100
-  🔔 Live ln too early, using produced ln + 1
+  %8 = load %struct.arc*, %struct.arc** %arc, l308 c32, asm ln 1100
   Added assignment asm ln 1100, prod ln 308.32, live ln 309, enc None
 Load from declared address of `arc` (decl src ln 299), asm ln 1097
   %6 = load %struct.arc*, %struct.arc** %arc, l308 c20, asm ln 1097
-  🔔 Live ln too early, using produced ln + 1
+  %6 = load %struct.arc*, %struct.arc** %arc, l308 c20, asm ln 1097
   Added assignment asm ln 1097, prod ln 308.20, live ln 309, enc None
 Load from declared address of `arc` (decl src ln 299), asm ln 1091
   %4 = load %struct.arc*, %struct.arc** %arc, l306 c33, asm ln 1091
-  🔔 Live ln too early, using produced ln + 1
+  %4 = load %struct.arc*, %struct.arc** %arc, l306 c33, asm ln 1091
   Added assignment asm ln 1091, prod ln 306.33, live ln 307, enc None
 Store to declared address of `arc` (decl src ln 299), asm ln 1087
   %3 = load %struct.arc*, %struct.arc** %arcs, l306 c27, asm ln 1086
-  🔔 Live ln too early, using produced ln + 1
+  store %struct.arc* %3, %struct.arc** %arc, l306 c20, asm ln 1087
   Added assignment asm ln 1087, prod ln 306.27, live ln 307, enc None
 Load from declared address of `stop` (decl src ln 300), asm ln 1092
   %5 = load %struct.arc*, %struct.arc** %stop, l306 c39, asm ln 1092
-  🔔 Live ln too early, using produced ln + 1
+  %5 = load %struct.arc*, %struct.arc** %stop, l306 c39, asm ln 1092
   Added assignment asm ln 1092, prod ln 306.39, live ln 307, enc None
 Store to declared address of `stop` (decl src ln 300), asm ln 1079
   %1 = load %struct.arc*, %struct.arc** %stop_arcs, l300 c36, asm ln 1078
+  store %struct.arc* %1, %struct.arc** %stop, l300 c20, asm ln 1079
   Added assignment asm ln 1079, prod ln 300.36, live ln 303, enc None
 Load from declared address of `red_cost` (decl src ln 301), asm ln 1133
   %19 = load i64, i64* %red_cost, l336 c17, asm ln 1133
-  🔔 Live ln too early, using produced ln + 1
+  %19 = load i64, i64* %red_cost, l336 c17, asm ln 1133
   Added assignment asm ln 1133, prod ln 336.17, live ln 337, enc None
 Load from declared address of `red_cost` (decl src ln 301), asm ln 1124
   %16 = load i64, i64* %red_cost, l326 c17, asm ln 1124
-  🔔 Live ln too early, using produced ln + 1
+  %16 = load i64, i64* %red_cost, l326 c17, asm ln 1124
   Added assignment asm ln 1124, prod ln 326.17, live ln 327, enc None
 Store to declared address of `red_cost` (decl src ln 301), asm ln 1112
   %add = add nsw i64 %sub, %13, l309 c13, asm ln 1111
+  store i64 %add, i64* %red_cost, l308 c18, asm ln 1112
   Added assignment asm ln 1112, prod ln 309.18, live ln 310, enc None
 Store to declared address of `i` (decl src ln 303), asm ln 1146
   %inc = add nsw i64 %23, 1, l306 c53, asm ln 1145
-  🔔 Live ln too early, using produced ln + 1
+  store i64 %inc, i64* %i, l306 c53, asm ln 1146
   Added assignment asm ln 1146, prod ln 306.53, live ln 307, enc None
 Load from declared address of `i` (decl src ln 303), asm ln 1144
   %23 = load i64, i64* %i, l306 c53, asm ln 1144
-  🔔 Live ln too early, using produced ln + 1
+  %23 = load i64, i64* %i, l306 c53, asm ln 1144
   Added assignment asm ln 1144, prod ln 306.53, live ln 307, enc None
 Store to declared address of `i` (decl src ln 303), asm ln 1083
   const i64 0
-  🔔 Live ln too early, using produced ln + 1
+  store i64 0, i64* %i, l306 c11, asm ln 1083
   Added assignment asm ln 1083, prod ln 306.11, live ln 307, enc None
 Store to declared address of `i` (decl src ln 303), asm ln 1082
   const i64 0
+  store i64 0, i64* %i, l303 c10, asm ln 1082
   Added assignment asm ln 1082, prod ln 303.10, live ln 306, enc None
 
 #### After variables
 
 Value produced for `net` (decl src ln 293), asm ln 857
   arg 0
+  @dbg.value(%struct.network.2* %net, !897), asm ln 857
   Added assignment asm ln 857, prod ln 293.0, live ln 300, enc None
 Value produced for `stop` (decl src ln 300), asm ln 860
   %0 = load %struct.arc.0*, %struct.arc.0** %stop_arcs, l300 c36, asm ln 859
+  @dbg.value(%struct.arc.0* %0, !900), asm ln 860
   Added assignment asm ln 860, prod ln 300.36, live ln 306, enc None
 Value produced for `i` (decl src ln 303), asm ln 861
   const i64 0
+  @dbg.value(i64 0, !901), asm ln 861
   Added assignment asm ln 861, prod ln 303.0, live ln 306, enc None
 Value produced for `i` (decl src ln 303), asm ln 862
   const i64 0
-  🔔 Missing produced ln, using decl ln
+  @dbg.value(i64 0, !901), asm ln 862
   Added assignment asm ln 862, prod ln 303.0, live ln 306, enc None
 Value produced for `arc` (decl src ln 299), asm ln 865
   %1 = load %struct.arc.0*, %struct.arc.0** %arcs, l306 c27, asm ln 864
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(%struct.arc.0* %1, !904), asm ln 865
   Added assignment asm ln 865, prod ln 306.27, live ln 307, enc None
 Value produced for `red_cost` (decl src ln 301), asm ln 889
   %add = add nsw i64 %sub, %6, l309 c13, asm ln 888
+  @dbg.value(i64 %add, !918), asm ln 889
   Added assignment asm ln 889, prod ln 309.13, live ln 310, enc None
 Value produced for `arc` (decl src ln 299), asm ln 914
   %incdec.ptr = getelementptr inbounds %struct.arc.0, %struct.arc.0* %arc.0, i32 1, l306 c48, asm ln 913
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(%struct.arc.0* %incdec.ptr, !904), asm ln 914
   Added assignment asm ln 914, prod ln 306.48, live ln 307, enc None
 Value produced for `i` (decl src ln 303), asm ln 916
   %inc = add nsw i64 %i.0, 1, l306 c53, asm ln 915
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %inc, !901), asm ln 916
   Added assignment asm ln 916, prod ln 306.53, live ln 307, enc None
 Value produced for `i` (decl src ln 303), asm ln 871
   %i.0 = phi i64 [ 0, %entry ], [ %inc, %for.inc ], asm ln 870
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %i.0, !901), asm ln 871
   Added assignment asm ln 871, prod ln 306.53, live ln 307, enc None
 Value produced for `arc` (decl src ln 299), asm ln 872
   %arc.0 = phi %struct.arc.0* [ %1, %entry ], [ %incdec.ptr, %for.inc ], asm ln 869
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(%struct.arc.0* %arc.0, !904), asm ln 872
   Added assignment asm ln 872, prod ln 306.48, live ln 307, enc None
 
 #### Summary
@@ -6848,72 +6938,74 @@ Test Execution:
 
 Load from declared address of `net` (decl src ln 367), asm ln 1256
   %26 = load %struct.network*, %struct.network** %net.addr, l381 c5, asm ln 1256
-  🔔 Live ln too early, using produced ln + 1
+  %26 = load %struct.network*, %struct.network** %net.addr, l381 c5, asm ln 1256
   Added assignment asm ln 1256, prod ln 381.5, live ln 382, enc None
 Load from declared address of `net` (decl src ln 367), asm ln 1253
   %25 = load %struct.network*, %struct.network** %net.addr, l380 c5, asm ln 1253
-  🔔 Live ln too early, using produced ln + 1
+  %25 = load %struct.network*, %struct.network** %net.addr, l380 c5, asm ln 1253
   Added assignment asm ln 1253, prod ln 380.5, live ln 381, enc None
 Load from declared address of `net` (decl src ln 367), asm ln 1250
   %24 = load %struct.network*, %struct.network** %net.addr, l380 c23, asm ln 1250
-  🔔 Live ln too early, using produced ln + 1
+  %24 = load %struct.network*, %struct.network** %net.addr, l380 c23, asm ln 1250
   Added assignment asm ln 1250, prod ln 380.23, live ln 381, enc None
 Load from declared address of `net` (decl src ln 367), asm ln 1247
   %23 = load %struct.network*, %struct.network** %net.addr, l379 c5, asm ln 1247
-  🔔 Live ln too early, using produced ln + 1
+  %23 = load %struct.network*, %struct.network** %net.addr, l379 c5, asm ln 1247
   Added assignment asm ln 1247, prod ln 379.5, live ln 380, enc None
 Load from declared address of `net` (decl src ln 367), asm ln 1244
   %22 = load %struct.network*, %struct.network** %net.addr, l379 c17, asm ln 1244
-  🔔 Live ln too early, using produced ln + 1
+  %22 = load %struct.network*, %struct.network** %net.addr, l379 c17, asm ln 1244
   Added assignment asm ln 1244, prod ln 379.17, live ln 380, enc None
 Load from declared address of `net` (decl src ln 367), asm ln 1241
   %21 = load %struct.network*, %struct.network** %net.addr, l378 c5, asm ln 1241
-  🔔 Live ln too early, using produced ln + 1
+  %21 = load %struct.network*, %struct.network** %net.addr, l378 c5, asm ln 1241
   Added assignment asm ln 1241, prod ln 378.5, live ln 379, enc None
 Load from declared address of `net` (decl src ln 367), asm ln 1238
   %20 = load %struct.network*, %struct.network** %net.addr, l378 c18, asm ln 1238
-  🔔 Live ln too early, using produced ln + 1
+  %20 = load %struct.network*, %struct.network** %net.addr, l378 c18, asm ln 1238
   Added assignment asm ln 1238, prod ln 378.18, live ln 379, enc None
 Load from declared address of `net` (decl src ln 367), asm ln 1230
   %17 = load %struct.network*, %struct.network** %net.addr, l377 c5, asm ln 1230
-  🔔 Live ln too early, using produced ln + 1
+  %17 = load %struct.network*, %struct.network** %net.addr, l377 c5, asm ln 1230
   Added assignment asm ln 1230, prod ln 377.5, live ln 378, enc None
 Load from declared address of `net` (decl src ln 367), asm ln 1223
   %15 = load %struct.network*, %struct.network** %net.addr, l377 c5, asm ln 1223
-  🔔 Live ln too early, using produced ln + 1
+  %15 = load %struct.network*, %struct.network** %net.addr, l377 c5, asm ln 1223
   Added assignment asm ln 1223, prod ln 377.5, live ln 378, enc None
 Load from declared address of `net` (decl src ln 367), asm ln 1215
   %12 = load %struct.network*, %struct.network** %net.addr, l376 c5, asm ln 1215
-  🔔 Live ln too early, using produced ln + 1
+  %12 = load %struct.network*, %struct.network** %net.addr, l376 c5, asm ln 1215
   Added assignment asm ln 1215, prod ln 376.5, live ln 377, enc None
 Load from declared address of `net` (decl src ln 367), asm ln 1208
   %10 = load %struct.network*, %struct.network** %net.addr, l376 c5, asm ln 1208
-  🔔 Live ln too early, using produced ln + 1
+  %10 = load %struct.network*, %struct.network** %net.addr, l376 c5, asm ln 1208
   Added assignment asm ln 1208, prod ln 376.5, live ln 377, enc None
 Load from declared address of `net` (decl src ln 367), asm ln 1200
   %7 = load %struct.network*, %struct.network** %net.addr, l375 c5, asm ln 1200
-  🔔 Live ln too early, using produced ln + 1
+  %7 = load %struct.network*, %struct.network** %net.addr, l375 c5, asm ln 1200
   Added assignment asm ln 1200, prod ln 375.5, live ln 376, enc None
 Load from declared address of `net` (decl src ln 367), asm ln 1193
   %5 = load %struct.network*, %struct.network** %net.addr, l375 c5, asm ln 1193
-  🔔 Live ln too early, using produced ln + 1
+  %5 = load %struct.network*, %struct.network** %net.addr, l375 c5, asm ln 1193
   Added assignment asm ln 1193, prod ln 375.5, live ln 376, enc None
 Load from declared address of `net` (decl src ln 367), asm ln 1185
   %2 = load %struct.network*, %struct.network** %net.addr, l374 c5, asm ln 1185
-  🔔 Live ln too early, using produced ln + 1
+  %2 = load %struct.network*, %struct.network** %net.addr, l374 c5, asm ln 1185
   Added assignment asm ln 1185, prod ln 374.5, live ln 375, enc None
 Load from declared address of `net` (decl src ln 367), asm ln 1178
   %0 = load %struct.network*, %struct.network** %net.addr, l374 c5, asm ln 1178
-  🔔 Live ln too early, using produced ln + 1
+  %0 = load %struct.network*, %struct.network** %net.addr, l374 c5, asm ln 1178
   Added assignment asm ln 1178, prod ln 374.5, live ln 375, enc None
 Store to declared address of `net` (decl src ln 367), asm ln 1176
   arg 0
+  store %struct.network* %net, %struct.network** %net.addr, asm ln 1176
   Added assignment asm ln 1176, prod ln 367.0, live ln 374, enc None
 
 #### After variables
 
 Value produced for `net` (decl src ln 367), asm ln 940
   arg 0
+  @dbg.value(%struct.network.2* %net, !946), asm ln 940
   Added assignment asm ln 940, prod ln 367.0, live ln 374, enc None
 
 #### Summary
@@ -7242,1129 +7334,1150 @@ Test Execution:
 
 Load from declared address of `net` (decl src ln 27), asm ln 2116
   %302 = load %struct.network*, %struct.network** %net.addr, l232 c32, asm ln 2116
-  🔔 Live ln too early, using produced ln + 1
+  %302 = load %struct.network*, %struct.network** %net.addr, l232 c32, asm ln 2116
   Added assignment asm ln 2116, prod ln 232.32, live ln 233, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 2109
   %300 = load %struct.network*, %struct.network** %net.addr, l232 c32, asm ln 2109
-  🔔 Live ln too early, using produced ln + 1
+  %300 = load %struct.network*, %struct.network** %net.addr, l232 c32, asm ln 2109
   Added assignment asm ln 2109, prod ln 232.32, live ln 233, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 2098
   %297 = load %struct.network*, %struct.network** %net.addr, l230 c31, asm ln 2098
-  🔔 Live ln too early, using produced ln + 1
+  %297 = load %struct.network*, %struct.network** %net.addr, l230 c31, asm ln 2098
   Added assignment asm ln 2098, prod ln 230.31, live ln 231, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 2091
   %295 = load %struct.network*, %struct.network** %net.addr, l230 c31, asm ln 2091
-  🔔 Live ln too early, using produced ln + 1
+  %295 = load %struct.network*, %struct.network** %net.addr, l230 c31, asm ln 2091
   Added assignment asm ln 2091, prod ln 230.31, live ln 231, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 2084
   %293 = load %struct.network*, %struct.network** %net.addr, l228 c40, asm ln 2084
-  🔔 Live ln too early, using produced ln + 1
+  %293 = load %struct.network*, %struct.network** %net.addr, l228 c40, asm ln 2084
   Added assignment asm ln 2084, prod ln 228.40, live ln 229, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 2081
   %291 = load %struct.network*, %struct.network** %net.addr, l228 c13, asm ln 2081
-  🔔 Live ln too early, using produced ln + 1
+  %291 = load %struct.network*, %struct.network** %net.addr, l228 c13, asm ln 2081
   Added assignment asm ln 2081, prod ln 228.13, live ln 229, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 2074
   %289 = load %struct.network*, %struct.network** %net.addr, l226 c22, asm ln 2074
-  🔔 Live ln too early, using produced ln + 1
+  %289 = load %struct.network*, %struct.network** %net.addr, l226 c22, asm ln 2074
   Added assignment asm ln 2074, prod ln 226.22, live ln 227, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 2065
   %287 = load %struct.network*, %struct.network** %net.addr, l225 c5, asm ln 2065
-  🔔 Live ln too early, using produced ln + 1
+  %287 = load %struct.network*, %struct.network** %net.addr, l225 c5, asm ln 2065
   Added assignment asm ln 2065, prod ln 225.5, live ln 226, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 2057
   %285 = load %struct.network*, %struct.network** %net.addr, l210 c9, asm ln 2057
-  🔔 Live ln too early, using produced ln + 1
+  %285 = load %struct.network*, %struct.network** %net.addr, l210 c9, asm ln 2057
   Added assignment asm ln 2057, prod ln 210.9, live ln 211, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 2054
   %283 = load %struct.network*, %struct.network** %net.addr, l210 c22, asm ln 2054
-  🔔 Live ln too early, using produced ln + 1
+  %283 = load %struct.network*, %struct.network** %net.addr, l210 c22, asm ln 2054
   Added assignment asm ln 2054, prod ln 210.22, live ln 211, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 2043
   %280 = load %struct.network*, %struct.network** %net.addr, l209 c14, asm ln 2043
-  🔔 Live ln too early, using produced ln + 1
+  %280 = load %struct.network*, %struct.network** %net.addr, l209 c14, asm ln 2043
   Added assignment asm ln 2043, prod ln 209.14, live ln 210, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 2036
   %278 = load %struct.network*, %struct.network** %net.addr, l208 c32, asm ln 2036
-  🔔 Live ln too early, using produced ln + 1
+  %278 = load %struct.network*, %struct.network** %net.addr, l208 c32, asm ln 2036
   Added assignment asm ln 2036, prod ln 208.32, live ln 209, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 2029
   %276 = load %struct.network*, %struct.network** %net.addr, l208 c14, asm ln 2029
-  🔔 Live ln too early, using produced ln + 1
+  %276 = load %struct.network*, %struct.network** %net.addr, l208 c14, asm ln 2029
   Added assignment asm ln 2029, prod ln 208.14, live ln 209, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 2025
   %274 = load %struct.network*, %struct.network** %net.addr, l207 c15, asm ln 2025
-  🔔 Live ln too early, using produced ln + 1
+  %274 = load %struct.network*, %struct.network** %net.addr, l207 c15, asm ln 2025
   Added assignment asm ln 2025, prod ln 207.15, live ln 208, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 2022
   %273 = load %struct.network*, %struct.network** %net.addr, l206 c9, asm ln 2022
-  🔔 Live ln too early, using produced ln + 1
+  %273 = load %struct.network*, %struct.network** %net.addr, l206 c9, asm ln 2022
   Added assignment asm ln 2022, prod ln 206.9, live ln 207, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 2013
   %269 = load %struct.network*, %struct.network** %net.addr, l204 c9, asm ln 2013
-  🔔 Live ln too early, using produced ln + 1
+  %269 = load %struct.network*, %struct.network** %net.addr, l204 c9, asm ln 2013
   Added assignment asm ln 2013, prod ln 204.9, live ln 205, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 2009
   %267 = load %struct.network*, %struct.network** %net.addr, l202 c11, asm ln 2009
-  🔔 Live ln too early, using produced ln + 1
+  %267 = load %struct.network*, %struct.network** %net.addr, l202 c11, asm ln 2009
   Added assignment asm ln 2009, prod ln 202.11, live ln 203, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 1999
   %265 = load %struct.network*, %struct.network** %net.addr, l181 c71, asm ln 1999
-  🔔 Live ln too early, using produced ln + 1
+  %265 = load %struct.network*, %struct.network** %net.addr, l181 c71, asm ln 1999
   Added assignment asm ln 1999, prod ln 181.71, live ln 182, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 1996
   %263 = load %struct.network*, %struct.network** %net.addr, l181 c44, asm ln 1996
-  🔔 Live ln too early, using produced ln + 1
+  %263 = load %struct.network*, %struct.network** %net.addr, l181 c44, asm ln 1996
   Added assignment asm ln 1996, prod ln 181.44, live ln 182, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 1943
   %238 = load %struct.network*, %struct.network** %net.addr, l193 c30, asm ln 1943
-  🔔 Live ln too early, using produced ln + 1
+  %238 = load %struct.network*, %struct.network** %net.addr, l193 c30, asm ln 1943
   Added assignment asm ln 1943, prod ln 193.30, live ln 194, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 1916
   %231 = load %struct.network*, %struct.network** %net.addr, l181 c21, asm ln 1916
-  🔔 Live ln too early, using produced ln + 1
+  %231 = load %struct.network*, %struct.network** %net.addr, l181 c21, asm ln 1916
   Added assignment asm ln 1916, prod ln 181.21, live ln 182, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 1899
   %228 = load %struct.network*, %struct.network** %net.addr, l177 c14, asm ln 1899
-  🔔 Live ln too early, using produced ln + 1
+  %228 = load %struct.network*, %struct.network** %net.addr, l177 c14, asm ln 1899
   Added assignment asm ln 1899, prod ln 177.14, live ln 178, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 1885
   %224 = load %struct.network*, %struct.network** %net.addr, l174 c42, asm ln 1885
-  🔔 Live ln too early, using produced ln + 1
+  %224 = load %struct.network*, %struct.network** %net.addr, l174 c42, asm ln 1885
   Added assignment asm ln 1885, prod ln 174.42, live ln 175, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 1882
   %222 = load %struct.network*, %struct.network** %net.addr, l174 c15, asm ln 1882
-  🔔 Live ln too early, using produced ln + 1
+  %222 = load %struct.network*, %struct.network** %net.addr, l174 c15, asm ln 1882
   Added assignment asm ln 1882, prod ln 174.15, live ln 175, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 1840
   %204 = load %struct.network*, %struct.network** %net.addr, l169 c48, asm ln 1840
-  🔔 Live ln too early, using produced ln + 1
+  %204 = load %struct.network*, %struct.network** %net.addr, l169 c48, asm ln 1840
   Added assignment asm ln 1840, prod ln 169.48, live ln 170, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 1833
   %202 = load %struct.network*, %struct.network** %net.addr, l169 c48, asm ln 1833
-  🔔 Live ln too early, using produced ln + 1
+  %202 = load %struct.network*, %struct.network** %net.addr, l169 c48, asm ln 1833
   Added assignment asm ln 1833, prod ln 169.48, live ln 170, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 1825
   %199 = load %struct.network*, %struct.network** %net.addr, l168 c30, asm ln 1825
-  🔔 Live ln too early, using produced ln + 1
+  %199 = load %struct.network*, %struct.network** %net.addr, l168 c30, asm ln 1825
   Added assignment asm ln 1825, prod ln 168.30, live ln 169, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 1805
   %190 = load %struct.network*, %struct.network** %net.addr, l164 c42, asm ln 1805
-  🔔 Live ln too early, using produced ln + 1
+  %190 = load %struct.network*, %struct.network** %net.addr, l164 c42, asm ln 1805
   Added assignment asm ln 1805, prod ln 164.42, live ln 165, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 1802
   %188 = load %struct.network*, %struct.network** %net.addr, l164 c15, asm ln 1802
-  🔔 Live ln too early, using produced ln + 1
+  %188 = load %struct.network*, %struct.network** %net.addr, l164 c15, asm ln 1802
   Added assignment asm ln 1802, prod ln 164.15, live ln 165, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 1761
   %169 = load %struct.network*, %struct.network** %net.addr, l158 c28, asm ln 1761
-  🔔 Live ln too early, using produced ln + 1
+  %169 = load %struct.network*, %struct.network** %net.addr, l158 c28, asm ln 1761
   Added assignment asm ln 1761, prod ln 158.28, live ln 159, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 1752
   %165 = load %struct.network*, %struct.network** %net.addr, l157 c30, asm ln 1752
-  🔔 Live ln too early, using produced ln + 1
+  %165 = load %struct.network*, %struct.network** %net.addr, l157 c30, asm ln 1752
   Added assignment asm ln 1752, prod ln 157.30, live ln 158, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 1738
   %159 = load %struct.network*, %struct.network** %net.addr, l154 c42, asm ln 1738
-  🔔 Live ln too early, using produced ln + 1
+  %159 = load %struct.network*, %struct.network** %net.addr, l154 c42, asm ln 1738
   Added assignment asm ln 1738, prod ln 154.42, live ln 155, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 1735
   %157 = load %struct.network*, %struct.network** %net.addr, l154 c15, asm ln 1735
-  🔔 Live ln too early, using produced ln + 1
+  %157 = load %struct.network*, %struct.network** %net.addr, l154 c15, asm ln 1735
   Added assignment asm ln 1735, prod ln 154.15, live ln 155, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 1697
   %139 = load %struct.network*, %struct.network** %net.addr, l149 c46, asm ln 1697
-  🔔 Live ln too early, using produced ln + 1
+  %139 = load %struct.network*, %struct.network** %net.addr, l149 c46, asm ln 1697
   Added assignment asm ln 1697, prod ln 149.46, live ln 150, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 1684
   %133 = load %struct.network*, %struct.network** %net.addr, l147 c28, asm ln 1684
-  🔔 Live ln too early, using produced ln + 1
+  %133 = load %struct.network*, %struct.network** %net.addr, l147 c28, asm ln 1684
   Added assignment asm ln 1684, prod ln 147.28, live ln 148, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 1671
   %128 = load %struct.network*, %struct.network** %net.addr, l144 c16, asm ln 1671
-  🔔 Live ln too early, using produced ln + 1
+  %128 = load %struct.network*, %struct.network** %net.addr, l144 c16, asm ln 1671
   Added assignment asm ln 1671, prod ln 144.16, live ln 145, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 1653
   %120 = load %struct.network*, %struct.network** %net.addr, l141 c16, asm ln 1653
-  🔔 Live ln too early, using produced ln + 1
+  %120 = load %struct.network*, %struct.network** %net.addr, l141 c16, asm ln 1653
   Added assignment asm ln 1653, prod ln 141.16, live ln 142, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 1644
   %116 = load %struct.network*, %struct.network** %net.addr, l140 c16, asm ln 1644
-  🔔 Live ln too early, using produced ln + 1
+  %116 = load %struct.network*, %struct.network** %net.addr, l140 c16, asm ln 1644
   Added assignment asm ln 1644, prod ln 140.16, live ln 141, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 1601
   %103 = load %struct.network*, %struct.network** %net.addr, l127 c22, asm ln 1601
-  🔔 Live ln too early, using produced ln + 1
+  %103 = load %struct.network*, %struct.network** %net.addr, l127 c22, asm ln 1601
   Added assignment asm ln 1601, prod ln 127.22, live ln 128, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 1592
   %100 = load %struct.network*, %struct.network** %net.addr, l125 c11, asm ln 1592
-  🔔 Live ln too early, using produced ln + 1
+  %100 = load %struct.network*, %struct.network** %net.addr, l125 c11, asm ln 1592
   Added assignment asm ln 1592, prod ln 125.11, live ln 126, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 1588
   %98 = load %struct.network*, %struct.network** %net.addr, l124 c12, asm ln 1588
-  🔔 Live ln too early, using produced ln + 1
+  %98 = load %struct.network*, %struct.network** %net.addr, l124 c12, asm ln 1588
   Added assignment asm ln 1588, prod ln 124.12, live ln 125, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 1585
   %97 = load %struct.network*, %struct.network** %net.addr, l120 c5, asm ln 1585
-  🔔 Live ln too early, using produced ln + 1
+  %97 = load %struct.network*, %struct.network** %net.addr, l120 c5, asm ln 1585
   Added assignment asm ln 1585, prod ln 120.5, live ln 121, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 1581
   %95 = load %struct.network*, %struct.network** %net.addr, l120 c41, asm ln 1581
-  🔔 Live ln too early, using produced ln + 1
+  %95 = load %struct.network*, %struct.network** %net.addr, l120 c41, asm ln 1581
   Added assignment asm ln 1581, prod ln 120.41, live ln 121, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 1578
   %93 = load %struct.network*, %struct.network** %net.addr, l120 c23, asm ln 1578
-  🔔 Live ln too early, using produced ln + 1
+  %93 = load %struct.network*, %struct.network** %net.addr, l120 c23, asm ln 1578
   Added assignment asm ln 1578, prod ln 120.23, live ln 121, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 1575
   %92 = load %struct.network*, %struct.network** %net.addr, l119 c5, asm ln 1575
-  🔔 Live ln too early, using produced ln + 1
+  %92 = load %struct.network*, %struct.network** %net.addr, l119 c5, asm ln 1575
   Added assignment asm ln 1575, prod ln 119.5, live ln 120, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 1571
   %90 = load %struct.network*, %struct.network** %net.addr, l119 c35, asm ln 1571
-  🔔 Live ln too early, using produced ln + 1
+  %90 = load %struct.network*, %struct.network** %net.addr, l119 c35, asm ln 1571
   Added assignment asm ln 1571, prod ln 119.35, live ln 120, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 1568
   %88 = load %struct.network*, %struct.network** %net.addr, l119 c23, asm ln 1568
-  🔔 Live ln too early, using produced ln + 1
+  %88 = load %struct.network*, %struct.network** %net.addr, l119 c23, asm ln 1568
   Added assignment asm ln 1568, prod ln 119.23, live ln 120, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 1565
   %87 = load %struct.network*, %struct.network** %net.addr, l118 c5, asm ln 1565
-  🔔 Live ln too early, using produced ln + 1
+  %87 = load %struct.network*, %struct.network** %net.addr, l118 c5, asm ln 1565
   Added assignment asm ln 1565, prod ln 118.5, live ln 119, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 1560
   %85 = load %struct.network*, %struct.network** %net.addr, l118 c36, asm ln 1560
-  🔔 Live ln too early, using produced ln + 1
+  %85 = load %struct.network*, %struct.network** %net.addr, l118 c36, asm ln 1560
   Added assignment asm ln 1560, prod ln 118.36, live ln 119, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 1557
   %83 = load %struct.network*, %struct.network** %net.addr, l118 c23, asm ln 1557
-  🔔 Live ln too early, using produced ln + 1
+  %83 = load %struct.network*, %struct.network** %net.addr, l118 c23, asm ln 1557
   Added assignment asm ln 1557, prod ln 118.23, live ln 119, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 1551
   %82 = load %struct.network*, %struct.network** %net.addr, l95 c16, asm ln 1551
-  🔔 Live ln too early, using produced ln + 1
+  %82 = load %struct.network*, %struct.network** %net.addr, l95 c16, asm ln 1551
   Added assignment asm ln 1551, prod ln 95.16, live ln 96, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 1543
   %80 = load %struct.network*, %struct.network** %net.addr, l92 c58, asm ln 1543
-  🔔 Live ln too early, using produced ln + 1
+  %80 = load %struct.network*, %struct.network** %net.addr, l92 c58, asm ln 1543
   Added assignment asm ln 1543, prod ln 92.58, live ln 93, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 1536
   %78 = load %struct.network*, %struct.network** %net.addr, l92 c39, asm ln 1536
-  🔔 Live ln too early, using produced ln + 1
+  %78 = load %struct.network*, %struct.network** %net.addr, l92 c39, asm ln 1536
   Added assignment asm ln 1536, prod ln 92.39, live ln 93, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 1529
   %76 = load %struct.network*, %struct.network** %net.addr, l92 c26, asm ln 1529
-  🔔 Live ln too early, using produced ln + 1
+  %76 = load %struct.network*, %struct.network** %net.addr, l92 c26, asm ln 1529
   Added assignment asm ln 1529, prod ln 92.26, live ln 93, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 1522
   %74 = load %struct.network*, %struct.network** %net.addr, l92 c12, asm ln 1522
-  🔔 Live ln too early, using produced ln + 1
+  %74 = load %struct.network*, %struct.network** %net.addr, l92 c12, asm ln 1522
   Added assignment asm ln 1522, prod ln 92.12, live ln 93, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 1519
   %73 = load %struct.network*, %struct.network** %net.addr, l90 c5, asm ln 1519
-  🔔 Live ln too early, using produced ln + 1
+  %73 = load %struct.network*, %struct.network** %net.addr, l90 c5, asm ln 1519
   Added assignment asm ln 1519, prod ln 90.5, live ln 91, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 1514
   %70 = load %struct.network*, %struct.network** %net.addr, l90 c42, asm ln 1514
-  🔔 Live ln too early, using produced ln + 1
+  %70 = load %struct.network*, %struct.network** %net.addr, l90 c42, asm ln 1514
   Added assignment asm ln 1514, prod ln 90.42, live ln 91, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 1511
   %69 = load %struct.network*, %struct.network** %net.addr, l89 c5, asm ln 1511
-  🔔 Live ln too early, using produced ln + 1
+  %69 = load %struct.network*, %struct.network** %net.addr, l89 c5, asm ln 1511
   Added assignment asm ln 1511, prod ln 89.5, live ln 90, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 1506
   %66 = load %struct.network*, %struct.network** %net.addr, l89 c44, asm ln 1506
-  🔔 Live ln too early, using produced ln + 1
+  %66 = load %struct.network*, %struct.network** %net.addr, l89 c44, asm ln 1506
   Added assignment asm ln 1506, prod ln 89.44, live ln 90, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 1503
   %65 = load %struct.network*, %struct.network** %net.addr, l88 c5, asm ln 1503
-  🔔 Live ln too early, using produced ln + 1
+  %65 = load %struct.network*, %struct.network** %net.addr, l88 c5, asm ln 1503
   Added assignment asm ln 1503, prod ln 88.5, live ln 89, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 1498
   %62 = load %struct.network*, %struct.network** %net.addr, l88 c42, asm ln 1498
-  🔔 Live ln too early, using produced ln + 1
+  %62 = load %struct.network*, %struct.network** %net.addr, l88 c42, asm ln 1498
   Added assignment asm ln 1498, prod ln 88.42, live ln 89, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 1495
   %61 = load %struct.network*, %struct.network** %net.addr, l87 c5, asm ln 1495
-  🔔 Live ln too early, using produced ln + 1
+  %61 = load %struct.network*, %struct.network** %net.addr, l87 c5, asm ln 1495
   Added assignment asm ln 1495, prod ln 87.5, live ln 88, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 1489
   %58 = load %struct.network*, %struct.network** %net.addr, l87 c42, asm ln 1489
-  🔔 Live ln too early, using produced ln + 1
+  %58 = load %struct.network*, %struct.network** %net.addr, l87 c42, asm ln 1489
   Added assignment asm ln 1489, prod ln 87.42, live ln 88, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 1483
   %57 = load %struct.network*, %struct.network** %net.addr, l79 c7, asm ln 1483
-  🔔 Live ln too early, using produced ln + 1
+  %57 = load %struct.network*, %struct.network** %net.addr, l79 c7, asm ln 1483
   Added assignment asm ln 1483, prod ln 79.7, live ln 80, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 1480
   %56 = load %struct.network*, %struct.network** %net.addr, l78 c7, asm ln 1480
-  🔔 Live ln too early, using produced ln + 1
+  %56 = load %struct.network*, %struct.network** %net.addr, l78 c7, asm ln 1480
   Added assignment asm ln 1480, prod ln 78.7, live ln 79, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 1467
   %54 = load %struct.network*, %struct.network** %net.addr, l78 c20, asm ln 1467
-  🔔 Live ln too early, using produced ln + 1
+  %54 = load %struct.network*, %struct.network** %net.addr, l78 c20, asm ln 1467
   Added assignment asm ln 1467, prod ln 78.20, live ln 79, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 1460
   %52 = load %struct.network*, %struct.network** %net.addr, l78 c20, asm ln 1460
-  🔔 Live ln too early, using produced ln + 1
+  %52 = load %struct.network*, %struct.network** %net.addr, l78 c20, asm ln 1460
   Added assignment asm ln 1460, prod ln 78.20, live ln 79, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 1447
   %50 = load %struct.network*, %struct.network** %net.addr, l78 c20, asm ln 1447
-  🔔 Live ln too early, using produced ln + 1
+  %50 = load %struct.network*, %struct.network** %net.addr, l78 c20, asm ln 1447
   Added assignment asm ln 1447, prod ln 78.20, live ln 79, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 1443
   %48 = load %struct.network*, %struct.network** %net.addr, l78 c20, asm ln 1443
-  🔔 Live ln too early, using produced ln + 1
+  %48 = load %struct.network*, %struct.network** %net.addr, l78 c20, asm ln 1443
   Added assignment asm ln 1443, prod ln 78.20, live ln 79, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 1437
   %47 = load %struct.network*, %struct.network** %net.addr, l73 c7, asm ln 1437
-  🔔 Live ln too early, using produced ln + 1
+  %47 = load %struct.network*, %struct.network** %net.addr, l73 c7, asm ln 1437
   Added assignment asm ln 1437, prod ln 73.7, live ln 74, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 1433
   %45 = load %struct.network*, %struct.network** %net.addr, l73 c46, asm ln 1433
-  🔔 Live ln too early, using produced ln + 1
+  %45 = load %struct.network*, %struct.network** %net.addr, l73 c46, asm ln 1433
   Added assignment asm ln 1433, prod ln 73.46, live ln 74, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 1430
   %43 = load %struct.network*, %struct.network** %net.addr, l73 c33, asm ln 1430
-  🔔 Live ln too early, using produced ln + 1
+  %43 = load %struct.network*, %struct.network** %net.addr, l73 c33, asm ln 1430
   Added assignment asm ln 1430, prod ln 73.33, live ln 74, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 1427
   %42 = load %struct.network*, %struct.network** %net.addr, l72 c7, asm ln 1427
-  🔔 Live ln too early, using produced ln + 1
+  %42 = load %struct.network*, %struct.network** %net.addr, l72 c7, asm ln 1427
   Added assignment asm ln 1427, prod ln 72.7, live ln 73, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 1424
   %41 = load %struct.network*, %struct.network** %net.addr, l71 c7, asm ln 1424
-  🔔 Live ln too early, using produced ln + 1
+  %41 = load %struct.network*, %struct.network** %net.addr, l71 c7, asm ln 1424
   Added assignment asm ln 1424, prod ln 71.7, live ln 72, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 1421
   %39 = load %struct.network*, %struct.network** %net.addr, l71 c20, asm ln 1421
-  🔔 Live ln too early, using produced ln + 1
+  %39 = load %struct.network*, %struct.network** %net.addr, l71 c20, asm ln 1421
   Added assignment asm ln 1421, prod ln 71.20, live ln 72, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 1414
   %37 = load %struct.network*, %struct.network** %net.addr, l69 c9, asm ln 1414
-  🔔 Live ln too early, using produced ln + 1
+  %37 = load %struct.network*, %struct.network** %net.addr, l69 c9, asm ln 1414
   Added assignment asm ln 1414, prod ln 69.9, live ln 70, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 1406
   %35 = load %struct.network*, %struct.network** %net.addr, l66 c5, asm ln 1406
-  🔔 Live ln too early, using produced ln + 1
+  %35 = load %struct.network*, %struct.network** %net.addr, l66 c5, asm ln 1406
   Added assignment asm ln 1406, prod ln 66.5, live ln 67, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 1403
   %34 = load %struct.network*, %struct.network** %net.addr, l65 c5, asm ln 1403
-  🔔 Live ln too early, using produced ln + 1
+  %34 = load %struct.network*, %struct.network** %net.addr, l65 c5, asm ln 1403
   Added assignment asm ln 1403, prod ln 65.5, live ln 66, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 1399
   %32 = load %struct.network*, %struct.network** %net.addr, l65 c40, asm ln 1399
-  🔔 Live ln too early, using produced ln + 1
+  %32 = load %struct.network*, %struct.network** %net.addr, l65 c40, asm ln 1399
   Added assignment asm ln 1399, prod ln 65.40, live ln 66, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 1396
   %30 = load %struct.network*, %struct.network** %net.addr, l65 c24, asm ln 1396
-  🔔 Live ln too early, using produced ln + 1
+  %30 = load %struct.network*, %struct.network** %net.addr, l65 c24, asm ln 1396
   Added assignment asm ln 1396, prod ln 65.24, live ln 66, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 1389
   %28 = load %struct.network*, %struct.network** %net.addr, l64 c10, asm ln 1389
-  🔔 Live ln too early, using produced ln + 1
+  %28 = load %struct.network*, %struct.network** %net.addr, l64 c10, asm ln 1389
   Added assignment asm ln 1389, prod ln 64.10, live ln 65, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 1380
   %27 = load %struct.network*, %struct.network** %net.addr, l63 c6, asm ln 1380
-  🔔 Live ln too early, using produced ln + 1
+  %27 = load %struct.network*, %struct.network** %net.addr, l63 c6, asm ln 1380
   Added assignment asm ln 1380, prod ln 63.6, live ln 64, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 1377
   %25 = load %struct.network*, %struct.network** %net.addr, l63 c25, asm ln 1377
-  🔔 Live ln too early, using produced ln + 1
+  %25 = load %struct.network*, %struct.network** %net.addr, l63 c25, asm ln 1377
   Added assignment asm ln 1377, prod ln 63.25, live ln 64, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 1371
   %24 = load %struct.network*, %struct.network** %net.addr, l61 c9, asm ln 1371
-  🔔 Live ln too early, using produced ln + 1
+  %24 = load %struct.network*, %struct.network** %net.addr, l61 c9, asm ln 1371
   Added assignment asm ln 1371, prod ln 61.9, live ln 62, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 1365
   %22 = load %struct.network*, %struct.network** %net.addr, l61 c50, asm ln 1365
-  🔔 Live ln too early, using produced ln + 1
+  %22 = load %struct.network*, %struct.network** %net.addr, l61 c50, asm ln 1365
   Added assignment asm ln 1365, prod ln 61.50, live ln 62, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 1362
   %20 = load %struct.network*, %struct.network** %net.addr, l61 c28, asm ln 1362
-  🔔 Live ln too early, using produced ln + 1
+  %20 = load %struct.network*, %struct.network** %net.addr, l61 c28, asm ln 1362
   Added assignment asm ln 1362, prod ln 61.28, live ln 62, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 1354
   %18 = load %struct.network*, %struct.network** %net.addr, l60 c9, asm ln 1354
-  🔔 Live ln too early, using produced ln + 1
+  %18 = load %struct.network*, %struct.network** %net.addr, l60 c9, asm ln 1354
   Added assignment asm ln 1354, prod ln 60.9, live ln 61, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 1351
   %17 = load %struct.network*, %struct.network** %net.addr, l59 c5, asm ln 1351
-  🔔 Live ln too early, using produced ln + 1
+  %17 = load %struct.network*, %struct.network** %net.addr, l59 c5, asm ln 1351
   Added assignment asm ln 1351, prod ln 59.5, live ln 60, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 1345
   %15 = load %struct.network*, %struct.network** %net.addr, l59 c24, asm ln 1345
-  🔔 Live ln too early, using produced ln + 1
+  %15 = load %struct.network*, %struct.network** %net.addr, l59 c24, asm ln 1345
   Added assignment asm ln 1345, prod ln 59.24, live ln 60, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 1342
   %14 = load %struct.network*, %struct.network** %net.addr, l58 c5, asm ln 1342
-  🔔 Live ln too early, using produced ln + 1
+  %14 = load %struct.network*, %struct.network** %net.addr, l58 c5, asm ln 1342
   Added assignment asm ln 1342, prod ln 58.5, live ln 59, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 1339
   %13 = load %struct.network*, %struct.network** %net.addr, l56 c5, asm ln 1339
-  🔔 Live ln too early, using produced ln + 1
+  %13 = load %struct.network*, %struct.network** %net.addr, l56 c5, asm ln 1339
   Added assignment asm ln 1339, prod ln 56.5, live ln 57, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 1329
   %8 = load %struct.network*, %struct.network** %net.addr, l55 c5, asm ln 1329
-  🔔 Live ln too early, using produced ln + 1
+  %8 = load %struct.network*, %struct.network** %net.addr, l55 c5, asm ln 1329
   Added assignment asm ln 1329, prod ln 55.5, live ln 56, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 1322
   %5 = load %struct.network*, %struct.network** %net.addr, l54 c5, asm ln 1322
-  🔔 Live ln too early, using produced ln + 1
+  %5 = load %struct.network*, %struct.network** %net.addr, l54 c5, asm ln 1322
   Added assignment asm ln 1322, prod ln 54.5, live ln 55, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 1318
   %3 = load %struct.network*, %struct.network** %net.addr, l53 c5, asm ln 1318
-  🔔 Live ln too early, using produced ln + 1
+  %3 = load %struct.network*, %struct.network** %net.addr, l53 c5, asm ln 1318
   Added assignment asm ln 1318, prod ln 53.5, live ln 54, enc None
 Load from declared address of `net` (decl src ln 27), asm ln 1291
   %0 = load %struct.network*, %struct.network** %net.addr, l41 c22, asm ln 1291
-  🔔 Live ln too early, using produced ln + 1
+  %0 = load %struct.network*, %struct.network** %net.addr, l41 c22, asm ln 1291
   Added assignment asm ln 1291, prod ln 41.22, live ln 42, enc None
 Store to declared address of `net` (decl src ln 27), asm ln 1278
   arg 0
+  store %struct.network* %net, %struct.network** %net.addr, asm ln 1278
   Added assignment asm ln 1278, prod ln 27.0, live ln 33, enc None
 Load from declared address of `in` (decl src ln 33), asm ln 2063
   %286 = load %struct.__sFILE*, %struct.__sFILE** %in, l213 c13, asm ln 2063
-  🔔 Live ln too early, using produced ln + 1
+  %286 = load %struct.__sFILE*, %struct.__sFILE** %in, l213 c13, asm ln 2063
   Added assignment asm ln 2063, prod ln 213.13, live ln 214, enc None
 Load from declared address of `in` (decl src ln 33), asm ln 1924
   %233 = load %struct.__sFILE*, %struct.__sFILE** %in, l183 c31, asm ln 1924
-  🔔 Live ln too early, using produced ln + 1
+  %233 = load %struct.__sFILE*, %struct.__sFILE** %in, l183 c31, asm ln 1924
   Added assignment asm ln 1924, prod ln 183.31, live ln 184, enc None
 Load from declared address of `in` (decl src ln 33), asm ln 1609
   %105 = load %struct.__sFILE*, %struct.__sFILE** %in, l129 c31, asm ln 1609
-  🔔 Live ln too early, using produced ln + 1
+  %105 = load %struct.__sFILE*, %struct.__sFILE** %in, l129 c31, asm ln 1609
   Added assignment asm ln 1609, prod ln 129.31, live ln 130, enc None
 Load from declared address of `in` (decl src ln 33), asm ln 1305
   %1 = load %struct.__sFILE*, %struct.__sFILE** %in, l44 c27, asm ln 1305
-  🔔 Live ln too early, using produced ln + 1
+  %1 = load %struct.__sFILE*, %struct.__sFILE** %in, l44 c27, asm ln 1305
   Added assignment asm ln 1305, prod ln 44.27, live ln 45, enc None
 Store to declared address of `in` (decl src ln 33), asm ln 1295
   %call = call %struct.__sFILE* @"\01_fopen"(i8* %arraydecay, i8* getelementptr inbounds ([2 x i8], [2 x i8]* @.str.28, i64 0, i64 0)), l41 c15, asm ln 1294
-  🔔 Live ln too early, using produced ln + 1
+  store %struct.__sFILE* %call, %struct.__sFILE** %in, l41 c13, asm ln 1295
   Added assignment asm ln 1295, prod ln 41.15, live ln 42, enc None
 Store to declared address of `in` (decl src ln 33), asm ln 1281
   const %struct.__sFILE* null
+  store %struct.__sFILE* null, %struct.__sFILE** %in, l33 c11, asm ln 1281
   Added assignment asm ln 1281, prod ln 33.11, live ln 36, enc None
 Load from declared address of `t` (decl src ln 35), asm ln 1942
   %237 = load i64, i64* %t, l193 c28, asm ln 1942
-  🔔 Live ln too early, using produced ln + 1
+  %237 = load i64, i64* %t, l193 c28, asm ln 1942
   Added assignment asm ln 1942, prod ln 193.28, live ln 194, enc None
 Load from declared address of `t` (decl src ln 35), asm ln 1660
   %122 = load i64, i64* %t, l143 c24, asm ln 1660
-  🔔 Live ln too early, using produced ln + 1
+  %122 = load i64, i64* %t, l143 c24, asm ln 1660
   Added assignment asm ln 1660, prod ln 143.24, live ln 144, enc None
 Load from declared address of `t` (decl src ln 35), asm ln 1617
   %106 = load i64, i64* %t, l131 c73, asm ln 1617
-  🔔 Live ln too early, using produced ln + 1
+  %106 = load i64, i64* %t, l131 c73, asm ln 1617
   Added assignment asm ln 1617, prod ln 131.73, live ln 132, enc None
 Load from declared address of `t` (decl src ln 35), asm ln 1335
   %11 = load i64, i64* %t, l56 c19, asm ln 1335
-  🔔 Live ln too early, using produced ln + 1
+  %11 = load i64, i64* %t, l56 c19, asm ln 1335
   Added assignment asm ln 1335, prod ln 56.19, live ln 57, enc None
 Load from declared address of `t` (decl src ln 35), asm ln 1333
   %10 = load i64, i64* %t, l56 c17, asm ln 1333
-  🔔 Live ln too early, using produced ln + 1
+  %10 = load i64, i64* %t, l56 c17, asm ln 1333
   Added assignment asm ln 1333, prod ln 56.17, live ln 57, enc None
 Load from declared address of `t` (decl src ln 35), asm ln 1332
   %9 = load i64, i64* %t, l56 c15, asm ln 1332
-  🔔 Live ln too early, using produced ln + 1
+  %9 = load i64, i64* %t, l56 c15, asm ln 1332
   Added assignment asm ln 1332, prod ln 56.15, live ln 57, enc None
 Load from declared address of `t` (decl src ln 35), asm ln 1326
   %7 = load i64, i64* %t, l55 c17, asm ln 1326
-  🔔 Live ln too early, using produced ln + 1
+  %7 = load i64, i64* %t, l55 c17, asm ln 1326
   Added assignment asm ln 1326, prod ln 55.17, live ln 56, enc None
 Load from declared address of `t` (decl src ln 35), asm ln 1325
   %6 = load i64, i64* %t, l55 c15, asm ln 1325
-  🔔 Live ln too early, using produced ln + 1
+  %6 = load i64, i64* %t, l55 c15, asm ln 1325
   Added assignment asm ln 1325, prod ln 55.15, live ln 56, enc None
 Load from declared address of `t` (decl src ln 35), asm ln 1317
   %2 = load i64, i64* %t, l53 c20, asm ln 1317
-  🔔 Live ln too early, using produced ln + 1
+  %2 = load i64, i64* %t, l53 c20, asm ln 1317
   Added assignment asm ln 1317, prod ln 53.20, live ln 54, enc None
 Load from declared address of `h` (decl src ln 35), asm ln 1952
   %242 = load i64, i64* %h, l194 c28, asm ln 1952
-  🔔 Live ln too early, using produced ln + 1
+  %242 = load i64, i64* %h, l194 c28, asm ln 1952
   Added assignment asm ln 1952, prod ln 194.28, live ln 195, enc None
 Load from declared address of `h` (decl src ln 35), asm ln 1667
   %125 = load i64, i64* %h, l144 c37, asm ln 1667
-  🔔 Live ln too early, using produced ln + 1
+  %125 = load i64, i64* %h, l144 c37, asm ln 1667
   Added assignment asm ln 1667, prod ln 144.37, live ln 145, enc None
 Load from declared address of `h` (decl src ln 35), asm ln 1618
   %107 = load i64, i64* %h, l131 c77, asm ln 1618
-  🔔 Live ln too early, using produced ln + 1
+  %107 = load i64, i64* %h, l131 c77, asm ln 1618
   Added assignment asm ln 1618, prod ln 131.77, live ln 132, enc None
 Load from declared address of `h` (decl src ln 35), asm ln 1337
   %12 = load i64, i64* %h, l56 c21, asm ln 1337
-  🔔 Live ln too early, using produced ln + 1
+  %12 = load i64, i64* %h, l56 c21, asm ln 1337
   Added assignment asm ln 1337, prod ln 56.21, live ln 57, enc None
 Load from declared address of `h` (decl src ln 35), asm ln 1321
   %4 = load i64, i64* %h, l54 c18, asm ln 1321
-  🔔 Live ln too early, using produced ln + 1
+  %4 = load i64, i64* %h, l54 c18, asm ln 1321
   Added assignment asm ln 1321, prod ln 54.18, live ln 55, enc None
 Load from declared address of `c` (decl src ln 35), asm ln 1961
   %246 = load i64, i64* %c, l196 c29, asm ln 1961
-  🔔 Live ln too early, using produced ln + 1
+  %246 = load i64, i64* %c, l196 c29, asm ln 1961
   Added assignment asm ln 1961, prod ln 196.29, live ln 197, enc None
 Load from declared address of `c` (decl src ln 35), asm ln 1957
   %244 = load i64, i64* %c, l195 c33, asm ln 1957
-  🔔 Live ln too early, using produced ln + 1
+  %244 = load i64, i64* %c, l195 c33, asm ln 1957
   Added assignment asm ln 1957, prod ln 195.33, live ln 196, enc None
 Store to declared address of `i` (decl src ln 36), asm ln 2129
   %inc298 = add nsw i64 %305, 1, l226 c37, asm ln 2128
-  🔔 Live ln too early, using produced ln + 1
+  store i64 %inc298, i64* %i, l226 c37, asm ln 2129
   Added assignment asm ln 2129, prod ln 226.37, live ln 227, enc None
 Load from declared address of `i` (decl src ln 36), asm ln 2127
   %305 = load i64, i64* %i, l226 c37, asm ln 2127
-  🔔 Live ln too early, using produced ln + 1
+  %305 = load i64, i64* %i, l226 c37, asm ln 2127
   Added assignment asm ln 2127, prod ln 226.37, live ln 227, enc None
 Load from declared address of `i` (decl src ln 36), asm ln 2085
   %294 = load i64, i64* %i, l228 c49, asm ln 2085
-  🔔 Live ln too early, using produced ln + 1
+  %294 = load i64, i64* %i, l228 c49, asm ln 2085
   Added assignment asm ln 2085, prod ln 228.49, live ln 229, enc None
 Load from declared address of `i` (decl src ln 36), asm ln 2073
   %288 = load i64, i64* %i, l226 c17, asm ln 2073
-  🔔 Live ln too early, using produced ln + 1
+  %288 = load i64, i64* %i, l226 c17, asm ln 2073
   Added assignment asm ln 2073, prod ln 226.17, live ln 227, enc None
 Store to declared address of `i` (decl src ln 36), asm ln 2069
   const i64 1
-  🔔 Live ln too early, using produced ln + 1
+  store i64 1, i64* %i, l226 c12, asm ln 2069
   Added assignment asm ln 2069, prod ln 226.12, live ln 227, enc None
 Store to declared address of `i` (decl src ln 36), asm ln 1995
   %inc239 = add nsw i64 %262, 1, l181 c34, asm ln 1994
-  🔔 Live ln too early, using produced ln + 1
+  store i64 %inc239, i64* %i, l181 c34, asm ln 1995
   Added assignment asm ln 1995, prod ln 181.34, live ln 182, enc None
 Load from declared address of `i` (decl src ln 36), asm ln 1993
   %262 = load i64, i64* %i, l181 c34, asm ln 1993
-  🔔 Live ln too early, using produced ln + 1
+  %262 = load i64, i64* %i, l181 c34, asm ln 1993
   Added assignment asm ln 1993, prod ln 181.34, live ln 182, enc None
 Load from declared address of `i` (decl src ln 36), asm ln 1915
   %230 = load i64, i64* %i, l181 c17, asm ln 1915
-  🔔 Live ln too early, using produced ln + 1
+  %230 = load i64, i64* %i, l181 c17, asm ln 1915
   Added assignment asm ln 1915, prod ln 181.17, live ln 182, enc None
 Store to declared address of `i` (decl src ln 36), asm ln 1911
   const i64 0
-  🔔 Live ln too early, using produced ln + 1
+  store i64 0, i64* %i, l181 c12, asm ln 1911
   Added assignment asm ln 1911, prod ln 181.12, live ln 182, enc None
 Load from declared address of `i` (decl src ln 36), asm ln 1898
   %227 = load i64, i64* %i, l177 c9, asm ln 1898
-  🔔 Live ln too early, using produced ln + 1
+  %227 = load i64, i64* %i, l177 c9, asm ln 1898
   Added assignment asm ln 1898, prod ln 177.9, live ln 178, enc None
 Store to declared address of `i` (decl src ln 36), asm ln 1894
   %inc198 = add nsw i64 %226, 1, l127 c37, asm ln 1893
-  🔔 Live ln too early, using produced ln + 1
+  store i64 %inc198, i64* %i, l127 c37, asm ln 1894
   Added assignment asm ln 1894, prod ln 127.37, live ln 128, enc None
 Load from declared address of `i` (decl src ln 36), asm ln 1892
   %226 = load i64, i64* %i, l127 c37, asm ln 1892
-  🔔 Live ln too early, using produced ln + 1
+  %226 = load i64, i64* %i, l127 c37, asm ln 1892
   Added assignment asm ln 1892, prod ln 127.37, live ln 128, enc None
 Load from declared address of `i` (decl src ln 36), asm ln 1824
   %198 = load i64, i64* %i, l168 c28, asm ln 1824
-  🔔 Live ln too early, using produced ln + 1
+  %198 = load i64, i64* %i, l168 c28, asm ln 1824
   Added assignment asm ln 1824, prod ln 168.28, live ln 169, enc None
 Load from declared address of `i` (decl src ln 36), asm ln 1818
   %195 = load i64, i64* %i, l167 c28, asm ln 1818
-  🔔 Live ln too early, using produced ln + 1
+  %195 = load i64, i64* %i, l167 c28, asm ln 1818
   Added assignment asm ln 1818, prod ln 167.28, live ln 168, enc None
 Load from declared address of `i` (decl src ln 36), asm ln 1751
   %164 = load i64, i64* %i, l157 c28, asm ln 1751
-  🔔 Live ln too early, using produced ln + 1
+  %164 = load i64, i64* %i, l157 c28, asm ln 1751
   Added assignment asm ln 1751, prod ln 157.28, live ln 158, enc None
 Load from declared address of `i` (decl src ln 36), asm ln 1692
   %137 = load i64, i64* %i, l148 c28, asm ln 1692
-  🔔 Live ln too early, using produced ln + 1
+  %137 = load i64, i64* %i, l148 c28, asm ln 1692
   Added assignment asm ln 1692, prod ln 148.28, live ln 149, enc None
 Load from declared address of `i` (decl src ln 36), asm ln 1670
   %127 = load i64, i64* %i, l144 c14, asm ln 1670
-  🔔 Live ln too early, using produced ln + 1
+  %127 = load i64, i64* %i, l144 c14, asm ln 1670
   Added assignment asm ln 1670, prod ln 144.14, live ln 145, enc None
 Load from declared address of `i` (decl src ln 36), asm ln 1663
   %124 = load i64, i64* %i, l143 c14, asm ln 1663
-  🔔 Live ln too early, using produced ln + 1
+  %124 = load i64, i64* %i, l143 c14, asm ln 1663
   Added assignment asm ln 1663, prod ln 143.14, live ln 144, enc None
 Load from declared address of `i` (decl src ln 36), asm ln 1652
   %119 = load i64, i64* %i, l141 c14, asm ln 1652
-  🔔 Live ln too early, using produced ln + 1
+  %119 = load i64, i64* %i, l141 c14, asm ln 1652
   Added assignment asm ln 1652, prod ln 141.14, live ln 142, enc None
 Load from declared address of `i` (decl src ln 36), asm ln 1643
   %115 = load i64, i64* %i, l140 c14, asm ln 1643
-  🔔 Live ln too early, using produced ln + 1
+  %115 = load i64, i64* %i, l140 c14, asm ln 1643
   Added assignment asm ln 1643, prod ln 140.14, live ln 141, enc None
 Load from declared address of `i` (decl src ln 36), asm ln 1640
   %113 = load i64, i64* %i, l140 c39, asm ln 1640
-  🔔 Live ln too early, using produced ln + 1
+  %113 = load i64, i64* %i, l140 c39, asm ln 1640
   Added assignment asm ln 1640, prod ln 140.39, live ln 141, enc None
 Load from declared address of `i` (decl src ln 36), asm ln 1636
   %112 = load i64, i64* %i, l138 c14, asm ln 1636
-  🔔 Live ln too early, using produced ln + 1
+  %112 = load i64, i64* %i, l138 c14, asm ln 1636
   Added assignment asm ln 1636, prod ln 138.14, live ln 139, enc None
 Load from declared address of `i` (decl src ln 36), asm ln 1631
   %110 = load i64, i64* %i, l137 c14, asm ln 1631
-  🔔 Live ln too early, using produced ln + 1
+  %110 = load i64, i64* %i, l137 c14, asm ln 1631
   Added assignment asm ln 1631, prod ln 137.14, live ln 138, enc None
 Load from declared address of `i` (decl src ln 36), asm ln 1627
   %108 = load i64, i64* %i, l137 c27, asm ln 1627
-  🔔 Live ln too early, using produced ln + 1
+  %108 = load i64, i64* %i, l137 c27, asm ln 1627
   Added assignment asm ln 1627, prod ln 137.27, live ln 138, enc None
 Load from declared address of `i` (decl src ln 36), asm ln 1600
   %102 = load i64, i64* %i, l127 c17, asm ln 1600
-  🔔 Live ln too early, using produced ln + 1
+  %102 = load i64, i64* %i, l127 c17, asm ln 1600
   Added assignment asm ln 1600, prod ln 127.17, live ln 128, enc None
 Store to declared address of `i` (decl src ln 36), asm ln 1596
   const i64 1
-  🔔 Live ln too early, using produced ln + 1
+  store i64 1, i64* %i, l127 c12, asm ln 1596
   Added assignment asm ln 1596, prod ln 127.12, live ln 128, enc None
 Store to declared address of `actArc` (decl src ln 36), asm ln 2002
   %inc241 = add nsw i64 %266, 1, l181 c76, asm ln 2001
-  🔔 Live ln too early, using produced ln + 1
+  store i64 %inc241, i64* %actArc, l181 c76, asm ln 2002
   Added assignment asm ln 2002, prod ln 181.76, live ln 182, enc None
 Load from declared address of `actArc` (decl src ln 36), asm ln 2000
   %266 = load i64, i64* %actArc, l181 c76, asm ln 2000
-  🔔 Live ln too early, using produced ln + 1
+  %266 = load i64, i64* %actArc, l181 c76, asm ln 2000
   Added assignment asm ln 2000, prod ln 181.76, live ln 182, enc None
 Load from declared address of `actArc` (decl src ln 36), asm ln 1936
   %234 = load i64, i64* %actArc, l192 c19, asm ln 1936
-  🔔 Live ln too early, using produced ln + 1
+  %234 = load i64, i64* %actArc, l192 c19, asm ln 1936
   Added assignment asm ln 1936, prod ln 192.19, live ln 193, enc None
 Store to declared address of `actArc` (decl src ln 36), asm ln 1888
   %inc195 = add nsw i64 %225, 1, l174 c47, asm ln 1887
-  🔔 Live ln too early, using produced ln + 1
+  store i64 %inc195, i64* %actArc, l174 c47, asm ln 1888
   Added assignment asm ln 1888, prod ln 174.47, live ln 175, enc None
 Load from declared address of `actArc` (decl src ln 36), asm ln 1886
   %225 = load i64, i64* %actArc, l174 c47, asm ln 1886
-  🔔 Live ln too early, using produced ln + 1
+  %225 = load i64, i64* %actArc, l174 c47, asm ln 1886
   Added assignment asm ln 1886, prod ln 174.47, live ln 175, enc None
 Load from declared address of `actArc` (decl src ln 36), asm ln 1812
   %192 = load i64, i64* %actArc, l166 c19, asm ln 1812
-  🔔 Live ln too early, using produced ln + 1
+  %192 = load i64, i64* %actArc, l166 c19, asm ln 1812
   Added assignment asm ln 1812, prod ln 166.19, live ln 167, enc None
 Store to declared address of `actArc` (decl src ln 36), asm ln 1808
   %inc162 = add nsw i64 %191, 1, l164 c47, asm ln 1807
-  🔔 Live ln too early, using produced ln + 1
+  store i64 %inc162, i64* %actArc, l164 c47, asm ln 1808
   Added assignment asm ln 1808, prod ln 164.47, live ln 165, enc None
 Load from declared address of `actArc` (decl src ln 36), asm ln 1806
   %191 = load i64, i64* %actArc, l164 c47, asm ln 1806
-  🔔 Live ln too early, using produced ln + 1
+  %191 = load i64, i64* %actArc, l164 c47, asm ln 1806
   Added assignment asm ln 1806, prod ln 164.47, live ln 165, enc None
 Load from declared address of `actArc` (decl src ln 36), asm ln 1745
   %161 = load i64, i64* %actArc, l156 c19, asm ln 1745
-  🔔 Live ln too early, using produced ln + 1
+  %161 = load i64, i64* %actArc, l156 c19, asm ln 1745
   Added assignment asm ln 1745, prod ln 156.19, live ln 157, enc None
 Store to declared address of `actArc` (decl src ln 36), asm ln 1741
   %inc = add nsw i64 %160, 1, l154 c47, asm ln 1740
-  🔔 Live ln too early, using produced ln + 1
+  store i64 %inc, i64* %actArc, l154 c47, asm ln 1741
   Added assignment asm ln 1741, prod ln 154.47, live ln 155, enc None
 Load from declared address of `actArc` (decl src ln 36), asm ln 1739
   %160 = load i64, i64* %actArc, l154 c47, asm ln 1739
-  🔔 Live ln too early, using produced ln + 1
+  %160 = load i64, i64* %actArc, l154 c47, asm ln 1739
   Added assignment asm ln 1739, prod ln 154.47, live ln 155, enc None
 Load from declared address of `actArc` (decl src ln 36), asm ln 1678
   %130 = load i64, i64* %actArc, l146 c19, asm ln 1678
-  🔔 Live ln too early, using produced ln + 1
+  %130 = load i64, i64* %actArc, l146 c19, asm ln 1678
   Added assignment asm ln 1678, prod ln 146.19, live ln 147, enc None
 Store to declared address of `actArc` (decl src ln 36), asm ln 1288
   const i64 0
+  store i64 0, i64* %actArc, l36 c13, asm ln 1288
   Added assignment asm ln 1288, prod ln 36.13, live ln 41, enc None
 Load from declared address of `arc` (decl src ln 37), asm ln 2124
   %304 = load %struct.arc*, %struct.arc** %arc, l231 c7, asm ln 2124
-  🔔 Live ln too early, using produced ln + 1
+  %304 = load %struct.arc*, %struct.arc** %arc, l231 c7, asm ln 2124
   Added assignment asm ln 2124, prod ln 231.7, live ln 232, enc None
 Load from declared address of `arc` (decl src ln 37), asm ln 2106
   %299 = load %struct.arc*, %struct.arc** %arc, l229 c7, asm ln 2106
-  🔔 Live ln too early, using produced ln + 1
+  %299 = load %struct.arc*, %struct.arc** %arc, l229 c7, asm ln 2106
   Added assignment asm ln 2106, prod ln 229.7, live ln 230, enc None
 Store to declared address of `arc` (decl src ln 37), asm ln 2090
   %add.ptr276 = getelementptr inbounds %struct.arc, %struct.arc* %292, i64 %call275, l228 c23, asm ln 2089
+  store %struct.arc* %add.ptr276, %struct.arc** %arc, l228 c11, asm ln 2090
   Added assignment asm ln 2090, prod ln 228.23, live ln 230, enc None
 Store to declared address of `arc` (decl src ln 37), asm ln 2050
   %incdec.ptr = getelementptr inbounds %struct.arc, %struct.arc* %282, i32 1, l208 c51, asm ln 2049
-  🔔 Live ln too early, using produced ln + 1
+  store %struct.arc* %incdec.ptr, %struct.arc** %arc, l208 c51, asm ln 2050
   Added assignment asm ln 2050, prod ln 208.51, live ln 209, enc None
 Load from declared address of `arc` (decl src ln 37), asm ln 2048
   %282 = load %struct.arc*, %struct.arc** %arc, l208 c51, asm ln 2048
-  🔔 Live ln too early, using produced ln + 1
+  %282 = load %struct.arc*, %struct.arc** %arc, l208 c51, asm ln 2048
   Added assignment asm ln 2048, prod ln 208.51, live ln 209, enc None
 Load from declared address of `arc` (decl src ln 37), asm ln 2035
   %277 = load %struct.arc*, %struct.arc** %arc, l208 c26, asm ln 2035
-  🔔 Live ln too early, using produced ln + 1
+  %277 = load %struct.arc*, %struct.arc** %arc, l208 c26, asm ln 2035
   Added assignment asm ln 2035, prod ln 208.26, live ln 209, enc None
 Store to declared address of `arc` (decl src ln 37), asm ln 2028
   %275 = load %struct.arc*, %struct.arc** %arcs251, l207 c20, asm ln 2027
+  store %struct.arc* %275, %struct.arc** %arc, l207 c13, asm ln 2028
   Added assignment asm ln 2028, prod ln 207.20, live ln 208, enc None
 Load from declared address of `arc` (decl src ln 37), asm ln 2021
   %272 = load %struct.arc*, %struct.arc** %arc, l206 c26, asm ln 2021
-  🔔 Live ln too early, using produced ln + 1
+  %272 = load %struct.arc*, %struct.arc** %arc, l206 c26, asm ln 2021
   Added assignment asm ln 2021, prod ln 206.26, live ln 207, enc None
 Load from declared address of `arc` (decl src ln 37), asm ln 2016
   %271 = load %struct.arc*, %struct.arc** %arc, l204 c27, asm ln 2016
-  🔔 Live ln too early, using produced ln + 1
+  %271 = load %struct.arc*, %struct.arc** %arc, l204 c27, asm ln 2016
   Added assignment asm ln 2016, prod ln 204.27, live ln 205, enc None
 Store to declared address of `arc` (decl src ln 37), asm ln 2012
   %268 = load %struct.arc*, %struct.arc** %stop_arcs245, l202 c16, asm ln 2011
+  store %struct.arc* %268, %struct.arc** %arc, l202 c9, asm ln 2012
   Added assignment asm ln 2012, prod ln 202.16, live ln 204, enc None
 Store to declared address of `arc` (decl src ln 37), asm ln 2005
   %add.ptr243 = getelementptr inbounds %struct.arc, %struct.arc* %264, i64 %call242, l181 c54, asm ln 2004
-  🔔 Live ln too early, using produced ln + 1
+  store %struct.arc* %add.ptr243, %struct.arc** %arc, l181 c42, asm ln 2005
   Added assignment asm ln 2005, prod ln 181.54, live ln 182, enc None
 Load from declared address of `arc` (decl src ln 37), asm ln 1988
   %260 = load %struct.arc*, %struct.arc** %arc, l200 c9, asm ln 1988
-  🔔 Live ln too early, using produced ln + 1
+  %260 = load %struct.arc*, %struct.arc** %arc, l200 c9, asm ln 1988
   Added assignment asm ln 1988, prod ln 200.9, live ln 201, enc None
 Load from declared address of `arc` (decl src ln 37), asm ln 1987
   %259 = load %struct.arc*, %struct.arc** %arc, l200 c30, asm ln 1987
-  🔔 Live ln too early, using produced ln + 1
+  %259 = load %struct.arc*, %struct.arc** %arc, l200 c30, asm ln 1987
   Added assignment asm ln 1987, prod ln 200.30, live ln 201, enc None
 Load from declared address of `arc` (decl src ln 37), asm ln 1984
   %258 = load %struct.arc*, %struct.arc** %arc, l199 c9, asm ln 1984
-  🔔 Live ln too early, using produced ln + 1
+  %258 = load %struct.arc*, %struct.arc** %arc, l199 c9, asm ln 1984
   Added assignment asm ln 1984, prod ln 199.9, live ln 200, enc None
 Load from declared address of `arc` (decl src ln 37), asm ln 1979
   %255 = load %struct.arc*, %struct.arc** %arc, l199 c23, asm ln 1979
-  🔔 Live ln too early, using produced ln + 1
+  %255 = load %struct.arc*, %struct.arc** %arc, l199 c23, asm ln 1979
   Added assignment asm ln 1979, prod ln 199.23, live ln 200, enc None
 Load from declared address of `arc` (decl src ln 37), asm ln 1974
   %253 = load %struct.arc*, %struct.arc** %arc, l198 c9, asm ln 1974
-  🔔 Live ln too early, using produced ln + 1
+  %253 = load %struct.arc*, %struct.arc** %arc, l198 c9, asm ln 1974
   Added assignment asm ln 1974, prod ln 198.9, live ln 199, enc None
 Load from declared address of `arc` (decl src ln 37), asm ln 1973
   %252 = load %struct.arc*, %struct.arc** %arc, l198 c31, asm ln 1973
-  🔔 Live ln too early, using produced ln + 1
+  %252 = load %struct.arc*, %struct.arc** %arc, l198 c31, asm ln 1973
   Added assignment asm ln 1973, prod ln 198.31, live ln 199, enc None
 Load from declared address of `arc` (decl src ln 37), asm ln 1970
   %251 = load %struct.arc*, %struct.arc** %arc, l197 c9, asm ln 1970
-  🔔 Live ln too early, using produced ln + 1
+  %251 = load %struct.arc*, %struct.arc** %arc, l197 c9, asm ln 1970
   Added assignment asm ln 1970, prod ln 197.9, live ln 198, enc None
 Load from declared address of `arc` (decl src ln 37), asm ln 1965
   %248 = load %struct.arc*, %struct.arc** %arc, l197 c24, asm ln 1965
-  🔔 Live ln too early, using produced ln + 1
+  %248 = load %struct.arc*, %struct.arc** %arc, l197 c24, asm ln 1965
   Added assignment asm ln 1965, prod ln 197.24, live ln 198, enc None
 Load from declared address of `arc` (decl src ln 37), asm ln 1962
   %247 = load %struct.arc*, %struct.arc** %arc, l196 c9, asm ln 1962
-  🔔 Live ln too early, using produced ln + 1
+  %247 = load %struct.arc*, %struct.arc** %arc, l196 c9, asm ln 1962
   Added assignment asm ln 1962, prod ln 196.9, live ln 197, enc None
 Load from declared address of `arc` (decl src ln 37), asm ln 1958
   %245 = load %struct.arc*, %struct.arc** %arc, l195 c9, asm ln 1958
-  🔔 Live ln too early, using produced ln + 1
+  %245 = load %struct.arc*, %struct.arc** %arc, l195 c9, asm ln 1958
   Added assignment asm ln 1958, prod ln 195.9, live ln 196, enc None
 Load from declared address of `arc` (decl src ln 37), asm ln 1954
   %243 = load %struct.arc*, %struct.arc** %arc, l194 c9, asm ln 1954
-  🔔 Live ln too early, using produced ln + 1
+  %243 = load %struct.arc*, %struct.arc** %arc, l194 c9, asm ln 1954
   Added assignment asm ln 1954, prod ln 194.9, live ln 195, enc None
 Load from declared address of `arc` (decl src ln 37), asm ln 1948
   %240 = load %struct.arc*, %struct.arc** %arc, l193 c9, asm ln 1948
-  🔔 Live ln too early, using produced ln + 1
+  %240 = load %struct.arc*, %struct.arc** %arc, l193 c9, asm ln 1948
   Added assignment asm ln 1948, prod ln 193.9, live ln 194, enc None
 Load from declared address of `arc` (decl src ln 37), asm ln 1938
   %235 = load %struct.arc*, %struct.arc** %arc, l192 c9, asm ln 1938
-  🔔 Live ln too early, using produced ln + 1
+  %235 = load %struct.arc*, %struct.arc** %arc, l192 c9, asm ln 1938
   Added assignment asm ln 1938, prod ln 192.9, live ln 193, enc None
 Store to declared address of `arc` (decl src ln 37), asm ln 1891
   %add.ptr197 = getelementptr inbounds %struct.arc, %struct.arc* %223, i64 %call196, l174 c25, asm ln 1890
-  🔔 Live ln too early, using produced ln + 1
+  store %struct.arc* %add.ptr197, %struct.arc** %arc, l174 c13, asm ln 1891
   Added assignment asm ln 1891, prod ln 174.25, live ln 175, enc None
 Load from declared address of `arc` (decl src ln 37), asm ln 1877
   %220 = load %struct.arc*, %struct.arc** %arc, l173 c9, asm ln 1877
-  🔔 Live ln too early, using produced ln + 1
+  %220 = load %struct.arc*, %struct.arc** %arc, l173 c9, asm ln 1877
   Added assignment asm ln 1877, prod ln 173.9, live ln 174, enc None
 Load from declared address of `arc` (decl src ln 37), asm ln 1876
   %219 = load %struct.arc*, %struct.arc** %arc, l173 c30, asm ln 1876
-  🔔 Live ln too early, using produced ln + 1
+  %219 = load %struct.arc*, %struct.arc** %arc, l173 c30, asm ln 1876
   Added assignment asm ln 1876, prod ln 173.30, live ln 174, enc None
 Load from declared address of `arc` (decl src ln 37), asm ln 1873
   %218 = load %struct.arc*, %struct.arc** %arc, l172 c9, asm ln 1873
-  🔔 Live ln too early, using produced ln + 1
+  %218 = load %struct.arc*, %struct.arc** %arc, l172 c9, asm ln 1873
   Added assignment asm ln 1873, prod ln 172.9, live ln 173, enc None
 Load from declared address of `arc` (decl src ln 37), asm ln 1868
   %215 = load %struct.arc*, %struct.arc** %arc, l172 c23, asm ln 1868
-  🔔 Live ln too early, using produced ln + 1
+  %215 = load %struct.arc*, %struct.arc** %arc, l172 c23, asm ln 1868
   Added assignment asm ln 1868, prod ln 172.23, live ln 173, enc None
 Load from declared address of `arc` (decl src ln 37), asm ln 1863
   %213 = load %struct.arc*, %struct.arc** %arc, l171 c9, asm ln 1863
-  🔔 Live ln too early, using produced ln + 1
+  %213 = load %struct.arc*, %struct.arc** %arc, l171 c9, asm ln 1863
   Added assignment asm ln 1863, prod ln 171.9, live ln 172, enc None
 Load from declared address of `arc` (decl src ln 37), asm ln 1862
   %212 = load %struct.arc*, %struct.arc** %arc, l171 c31, asm ln 1862
-  🔔 Live ln too early, using produced ln + 1
+  %212 = load %struct.arc*, %struct.arc** %arc, l171 c31, asm ln 1862
   Added assignment asm ln 1862, prod ln 171.31, live ln 172, enc None
 Load from declared address of `arc` (decl src ln 37), asm ln 1859
   %211 = load %struct.arc*, %struct.arc** %arc, l170 c9, asm ln 1859
-  🔔 Live ln too early, using produced ln + 1
+  %211 = load %struct.arc*, %struct.arc** %arc, l170 c9, asm ln 1859
   Added assignment asm ln 1859, prod ln 170.9, live ln 171, enc None
 Load from declared address of `arc` (decl src ln 37), asm ln 1854
   %208 = load %struct.arc*, %struct.arc** %arc, l170 c24, asm ln 1854
-  🔔 Live ln too early, using produced ln + 1
+  %208 = load %struct.arc*, %struct.arc** %arc, l170 c24, asm ln 1854
   Added assignment asm ln 1854, prod ln 170.24, live ln 171, enc None
 Load from declared address of `arc` (decl src ln 37), asm ln 1851
   %207 = load %struct.arc*, %struct.arc** %arc, l169 c9, asm ln 1851
-  🔔 Live ln too early, using produced ln + 1
+  %207 = load %struct.arc*, %struct.arc** %arc, l169 c9, asm ln 1851
   Added assignment asm ln 1851, prod ln 169.9, live ln 170, enc None
 Load from declared address of `arc` (decl src ln 37), asm ln 1848
   %206 = load %struct.arc*, %struct.arc** %arc, l169 c25, asm ln 1848
-  🔔 Live ln too early, using produced ln + 1
+  %206 = load %struct.arc*, %struct.arc** %arc, l169 c25, asm ln 1848
   Added assignment asm ln 1848, prod ln 169.25, live ln 170, enc None
 Load from declared address of `arc` (decl src ln 37), asm ln 1830
   %201 = load %struct.arc*, %struct.arc** %arc, l168 c9, asm ln 1830
-  🔔 Live ln too early, using produced ln + 1
+  %201 = load %struct.arc*, %struct.arc** %arc, l168 c9, asm ln 1830
   Added assignment asm ln 1830, prod ln 168.9, live ln 169, enc None
 Load from declared address of `arc` (decl src ln 37), asm ln 1820
   %196 = load %struct.arc*, %struct.arc** %arc, l167 c9, asm ln 1820
-  🔔 Live ln too early, using produced ln + 1
+  %196 = load %struct.arc*, %struct.arc** %arc, l167 c9, asm ln 1820
   Added assignment asm ln 1820, prod ln 167.9, live ln 168, enc None
 Load from declared address of `arc` (decl src ln 37), asm ln 1814
   %193 = load %struct.arc*, %struct.arc** %arc, l166 c9, asm ln 1814
-  🔔 Live ln too early, using produced ln + 1
+  %193 = load %struct.arc*, %struct.arc** %arc, l166 c9, asm ln 1814
   Added assignment asm ln 1814, prod ln 166.9, live ln 167, enc None
 Store to declared address of `arc` (decl src ln 37), asm ln 1811
   %add.ptr164 = getelementptr inbounds %struct.arc, %struct.arc* %189, i64 %call163, l164 c25, asm ln 1810
+  store %struct.arc* %add.ptr164, %struct.arc** %arc, l164 c13, asm ln 1811
   Added assignment asm ln 1811, prod ln 164.25, live ln 166, enc None
 Load from declared address of `arc` (decl src ln 37), asm ln 1797
   %186 = load %struct.arc*, %struct.arc** %arc, l163 c9, asm ln 1797
-  🔔 Live ln too early, using produced ln + 1
+  %186 = load %struct.arc*, %struct.arc** %arc, l163 c9, asm ln 1797
   Added assignment asm ln 1797, prod ln 163.9, live ln 164, enc None
 Load from declared address of `arc` (decl src ln 37), asm ln 1796
   %185 = load %struct.arc*, %struct.arc** %arc, l163 c30, asm ln 1796
-  🔔 Live ln too early, using produced ln + 1
+  %185 = load %struct.arc*, %struct.arc** %arc, l163 c30, asm ln 1796
   Added assignment asm ln 1796, prod ln 163.30, live ln 164, enc None
 Load from declared address of `arc` (decl src ln 37), asm ln 1793
   %184 = load %struct.arc*, %struct.arc** %arc, l162 c9, asm ln 1793
-  🔔 Live ln too early, using produced ln + 1
+  %184 = load %struct.arc*, %struct.arc** %arc, l162 c9, asm ln 1793
   Added assignment asm ln 1793, prod ln 162.9, live ln 163, enc None
 Load from declared address of `arc` (decl src ln 37), asm ln 1788
   %181 = load %struct.arc*, %struct.arc** %arc, l162 c23, asm ln 1788
-  🔔 Live ln too early, using produced ln + 1
+  %181 = load %struct.arc*, %struct.arc** %arc, l162 c23, asm ln 1788
   Added assignment asm ln 1788, prod ln 162.23, live ln 163, enc None
 Load from declared address of `arc` (decl src ln 37), asm ln 1783
   %179 = load %struct.arc*, %struct.arc** %arc, l161 c9, asm ln 1783
-  🔔 Live ln too early, using produced ln + 1
+  %179 = load %struct.arc*, %struct.arc** %arc, l161 c9, asm ln 1783
   Added assignment asm ln 1783, prod ln 161.9, live ln 162, enc None
 Load from declared address of `arc` (decl src ln 37), asm ln 1782
   %178 = load %struct.arc*, %struct.arc** %arc, l161 c31, asm ln 1782
-  🔔 Live ln too early, using produced ln + 1
+  %178 = load %struct.arc*, %struct.arc** %arc, l161 c31, asm ln 1782
   Added assignment asm ln 1782, prod ln 161.31, live ln 162, enc None
 Load from declared address of `arc` (decl src ln 37), asm ln 1779
   %177 = load %struct.arc*, %struct.arc** %arc, l160 c9, asm ln 1779
-  🔔 Live ln too early, using produced ln + 1
+  %177 = load %struct.arc*, %struct.arc** %arc, l160 c9, asm ln 1779
   Added assignment asm ln 1779, prod ln 160.9, live ln 161, enc None
 Load from declared address of `arc` (decl src ln 37), asm ln 1774
   %174 = load %struct.arc*, %struct.arc** %arc, l160 c24, asm ln 1774
-  🔔 Live ln too early, using produced ln + 1
+  %174 = load %struct.arc*, %struct.arc** %arc, l160 c24, asm ln 1774
   Added assignment asm ln 1774, prod ln 160.24, live ln 161, enc None
 Load from declared address of `arc` (decl src ln 37), asm ln 1771
   %173 = load %struct.arc*, %struct.arc** %arc, l159 c9, asm ln 1771
-  🔔 Live ln too early, using produced ln + 1
+  %173 = load %struct.arc*, %struct.arc** %arc, l159 c9, asm ln 1771
   Added assignment asm ln 1771, prod ln 159.9, live ln 160, enc None
 Load from declared address of `arc` (decl src ln 37), asm ln 1768
   %172 = load %struct.arc*, %struct.arc** %arc, l159 c25, asm ln 1768
-  🔔 Live ln too early, using produced ln + 1
+  %172 = load %struct.arc*, %struct.arc** %arc, l159 c25, asm ln 1768
   Added assignment asm ln 1768, prod ln 159.25, live ln 160, enc None
 Load from declared address of `arc` (decl src ln 37), asm ln 1765
   %171 = load %struct.arc*, %struct.arc** %arc, l158 c9, asm ln 1765
-  🔔 Live ln too early, using produced ln + 1
+  %171 = load %struct.arc*, %struct.arc** %arc, l158 c9, asm ln 1765
   Added assignment asm ln 1765, prod ln 158.9, live ln 159, enc None
 Load from declared address of `arc` (decl src ln 37), asm ln 1757
   %167 = load %struct.arc*, %struct.arc** %arc, l157 c9, asm ln 1757
-  🔔 Live ln too early, using produced ln + 1
+  %167 = load %struct.arc*, %struct.arc** %arc, l157 c9, asm ln 1757
   Added assignment asm ln 1757, prod ln 157.9, live ln 158, enc None
 Load from declared address of `arc` (decl src ln 37), asm ln 1747
   %162 = load %struct.arc*, %struct.arc** %arc, l156 c9, asm ln 1747
-  🔔 Live ln too early, using produced ln + 1
+  %162 = load %struct.arc*, %struct.arc** %arc, l156 c9, asm ln 1747
   Added assignment asm ln 1747, prod ln 156.9, live ln 157, enc None
 Store to declared address of `arc` (decl src ln 37), asm ln 1744
   %add.ptr139 = getelementptr inbounds %struct.arc, %struct.arc* %158, i64 %call138, l154 c25, asm ln 1743
+  store %struct.arc* %add.ptr139, %struct.arc** %arc, l154 c13, asm ln 1744
   Added assignment asm ln 1744, prod ln 154.25, live ln 156, enc None
 Load from declared address of `arc` (decl src ln 37), asm ln 1730
   %155 = load %struct.arc*, %struct.arc** %arc, l153 c9, asm ln 1730
-  🔔 Live ln too early, using produced ln + 1
+  %155 = load %struct.arc*, %struct.arc** %arc, l153 c9, asm ln 1730
   Added assignment asm ln 1730, prod ln 153.9, live ln 154, enc None
 Load from declared address of `arc` (decl src ln 37), asm ln 1729
   %154 = load %struct.arc*, %struct.arc** %arc, l153 c30, asm ln 1729
-  🔔 Live ln too early, using produced ln + 1
+  %154 = load %struct.arc*, %struct.arc** %arc, l153 c30, asm ln 1729
   Added assignment asm ln 1729, prod ln 153.30, live ln 154, enc None
 Load from declared address of `arc` (decl src ln 37), asm ln 1726
   %153 = load %struct.arc*, %struct.arc** %arc, l152 c9, asm ln 1726
-  🔔 Live ln too early, using produced ln + 1
+  %153 = load %struct.arc*, %struct.arc** %arc, l152 c9, asm ln 1726
   Added assignment asm ln 1726, prod ln 152.9, live ln 153, enc None
 Load from declared address of `arc` (decl src ln 37), asm ln 1721
   %150 = load %struct.arc*, %struct.arc** %arc, l152 c23, asm ln 1721
-  🔔 Live ln too early, using produced ln + 1
+  %150 = load %struct.arc*, %struct.arc** %arc, l152 c23, asm ln 1721
   Added assignment asm ln 1721, prod ln 152.23, live ln 153, enc None
 Load from declared address of `arc` (decl src ln 37), asm ln 1716
   %148 = load %struct.arc*, %struct.arc** %arc, l151 c9, asm ln 1716
-  🔔 Live ln too early, using produced ln + 1
+  %148 = load %struct.arc*, %struct.arc** %arc, l151 c9, asm ln 1716
   Added assignment asm ln 1716, prod ln 151.9, live ln 152, enc None
 Load from declared address of `arc` (decl src ln 37), asm ln 1715
   %147 = load %struct.arc*, %struct.arc** %arc, l151 c31, asm ln 1715
-  🔔 Live ln too early, using produced ln + 1
+  %147 = load %struct.arc*, %struct.arc** %arc, l151 c31, asm ln 1715
   Added assignment asm ln 1715, prod ln 151.31, live ln 152, enc None
 Load from declared address of `arc` (decl src ln 37), asm ln 1712
   %146 = load %struct.arc*, %struct.arc** %arc, l150 c9, asm ln 1712
-  🔔 Live ln too early, using produced ln + 1
+  %146 = load %struct.arc*, %struct.arc** %arc, l150 c9, asm ln 1712
   Added assignment asm ln 1712, prod ln 150.9, live ln 151, enc None
 Load from declared address of `arc` (decl src ln 37), asm ln 1707
   %143 = load %struct.arc*, %struct.arc** %arc, l150 c24, asm ln 1707
-  🔔 Live ln too early, using produced ln + 1
+  %143 = load %struct.arc*, %struct.arc** %arc, l150 c24, asm ln 1707
   Added assignment asm ln 1707, prod ln 150.24, live ln 151, enc None
 Load from declared address of `arc` (decl src ln 37), asm ln 1704
   %142 = load %struct.arc*, %struct.arc** %arc, l149 c9, asm ln 1704
-  🔔 Live ln too early, using produced ln + 1
+  %142 = load %struct.arc*, %struct.arc** %arc, l149 c9, asm ln 1704
   Added assignment asm ln 1704, prod ln 149.9, live ln 150, enc None
 Load from declared address of `arc` (decl src ln 37), asm ln 1701
   %141 = load %struct.arc*, %struct.arc** %arc, l149 c25, asm ln 1701
-  🔔 Live ln too early, using produced ln + 1
+  %141 = load %struct.arc*, %struct.arc** %arc, l149 c25, asm ln 1701
   Added assignment asm ln 1701, prod ln 149.25, live ln 150, enc None
 Load from declared address of `arc` (decl src ln 37), asm ln 1694
   %138 = load %struct.arc*, %struct.arc** %arc, l148 c9, asm ln 1694
-  🔔 Live ln too early, using produced ln + 1
+  %138 = load %struct.arc*, %struct.arc** %arc, l148 c9, asm ln 1694
   Added assignment asm ln 1694, prod ln 148.9, live ln 149, enc None
 Load from declared address of `arc` (decl src ln 37), asm ln 1688
   %135 = load %struct.arc*, %struct.arc** %arc, l147 c9, asm ln 1688
-  🔔 Live ln too early, using produced ln + 1
+  %135 = load %struct.arc*, %struct.arc** %arc, l147 c9, asm ln 1688
   Added assignment asm ln 1688, prod ln 147.9, live ln 148, enc None
 Load from declared address of `arc` (decl src ln 37), asm ln 1680
   %131 = load %struct.arc*, %struct.arc** %arc, l146 c9, asm ln 1680
-  🔔 Live ln too early, using produced ln + 1
+  %131 = load %struct.arc*, %struct.arc** %arc, l146 c9, asm ln 1680
   Added assignment asm ln 1680, prod ln 146.9, live ln 147, enc None
 Store to declared address of `arc` (decl src ln 37), asm ln 1595
   %101 = load %struct.arc*, %struct.arc** %arcs93, l125 c16, asm ln 1594
+  store %struct.arc* %101, %struct.arc** %arc, l125 c9, asm ln 1595
   Added assignment asm ln 1595, prod ln 125.16, live ln 127, enc None
 Load from declared address of `node` (decl src ln 38), asm ln 1951
   %241 = load %struct.node*, %struct.node** %node, l194 c23, asm ln 1951
-  🔔 Live ln too early, using produced ln + 1
+  %241 = load %struct.node*, %struct.node** %node, l194 c23, asm ln 1951
   Added assignment asm ln 1951, prod ln 194.23, live ln 195, enc None
 Load from declared address of `node` (decl src ln 38), asm ln 1941
   %236 = load %struct.node*, %struct.node** %node, l193 c23, asm ln 1941
-  🔔 Live ln too early, using produced ln + 1
+  %236 = load %struct.node*, %struct.node** %node, l193 c23, asm ln 1941
   Added assignment asm ln 1941, prod ln 193.23, live ln 194, enc None
 Load from declared address of `node` (decl src ln 38), asm ln 1823
   %197 = load %struct.node*, %struct.node** %node, l168 c23, asm ln 1823
-  🔔 Live ln too early, using produced ln + 1
+  %197 = load %struct.node*, %struct.node** %node, l168 c23, asm ln 1823
   Added assignment asm ln 1823, prod ln 168.23, live ln 169, enc None
 Load from declared address of `node` (decl src ln 38), asm ln 1817
   %194 = load %struct.node*, %struct.node** %node, l167 c23, asm ln 1817
-  🔔 Live ln too early, using produced ln + 1
+  %194 = load %struct.node*, %struct.node** %node, l167 c23, asm ln 1817
   Added assignment asm ln 1817, prod ln 167.23, live ln 168, enc None
 Load from declared address of `node` (decl src ln 38), asm ln 1760
   %168 = load %struct.node*, %struct.node** %node, l158 c23, asm ln 1760
-  🔔 Live ln too early, using produced ln + 1
+  %168 = load %struct.node*, %struct.node** %node, l158 c23, asm ln 1760
   Added assignment asm ln 1760, prod ln 158.23, live ln 159, enc None
 Load from declared address of `node` (decl src ln 38), asm ln 1750
   %163 = load %struct.node*, %struct.node** %node, l157 c23, asm ln 1750
-  🔔 Live ln too early, using produced ln + 1
+  %163 = load %struct.node*, %struct.node** %node, l157 c23, asm ln 1750
   Added assignment asm ln 1750, prod ln 157.23, live ln 158, enc None
 Load from declared address of `node` (decl src ln 38), asm ln 1691
   %136 = load %struct.node*, %struct.node** %node, l148 c23, asm ln 1691
-  🔔 Live ln too early, using produced ln + 1
+  %136 = load %struct.node*, %struct.node** %node, l148 c23, asm ln 1691
   Added assignment asm ln 1691, prod ln 148.23, live ln 149, enc None
 Load from declared address of `node` (decl src ln 38), asm ln 1683
   %132 = load %struct.node*, %struct.node** %node, l147 c23, asm ln 1683
-  🔔 Live ln too early, using produced ln + 1
+  %132 = load %struct.node*, %struct.node** %node, l147 c23, asm ln 1683
   Added assignment asm ln 1683, prod ln 147.23, live ln 148, enc None
 Load from declared address of `node` (decl src ln 38), asm ln 1669
   %126 = load %struct.node*, %struct.node** %node, l144 c9, asm ln 1669
-  🔔 Live ln too early, using produced ln + 1
+  %126 = load %struct.node*, %struct.node** %node, l144 c9, asm ln 1669
   Added assignment asm ln 1669, prod ln 144.9, live ln 145, enc None
 Load from declared address of `node` (decl src ln 38), asm ln 1662
   %123 = load %struct.node*, %struct.node** %node, l143 c9, asm ln 1662
-  🔔 Live ln too early, using produced ln + 1
+  %123 = load %struct.node*, %struct.node** %node, l143 c9, asm ln 1662
   Added assignment asm ln 1662, prod ln 143.9, live ln 144, enc None
 Load from declared address of `node` (decl src ln 38), asm ln 1651
   %118 = load %struct.node*, %struct.node** %node, l141 c9, asm ln 1651
-  🔔 Live ln too early, using produced ln + 1
+  %118 = load %struct.node*, %struct.node** %node, l141 c9, asm ln 1651
   Added assignment asm ln 1651, prod ln 141.9, live ln 142, enc None
 Load from declared address of `node` (decl src ln 38), asm ln 1642
   %114 = load %struct.node*, %struct.node** %node, l140 c9, asm ln 1642
-  🔔 Live ln too early, using produced ln + 1
+  %114 = load %struct.node*, %struct.node** %node, l140 c9, asm ln 1642
   Added assignment asm ln 1642, prod ln 140.9, live ln 141, enc None
 Load from declared address of `node` (decl src ln 38), asm ln 1635
   %111 = load %struct.node*, %struct.node** %node, l138 c9, asm ln 1635
-  🔔 Live ln too early, using produced ln + 1
+  %111 = load %struct.node*, %struct.node** %node, l138 c9, asm ln 1635
   Added assignment asm ln 1635, prod ln 138.9, live ln 139, enc None
 Load from declared address of `node` (decl src ln 38), asm ln 1630
   %109 = load %struct.node*, %struct.node** %node, l137 c9, asm ln 1630
-  🔔 Live ln too early, using produced ln + 1
+  %109 = load %struct.node*, %struct.node** %node, l137 c9, asm ln 1630
   Added assignment asm ln 1630, prod ln 137.9, live ln 138, enc None
 Store to declared address of `node` (decl src ln 38), asm ln 1591
   %99 = load %struct.node*, %struct.node** %nodes92, l124 c17, asm ln 1590
+  store %struct.node* %99, %struct.node** %node, l124 c10, asm ln 1591
   Added assignment asm ln 1591, prod ln 124.17, live ln 125, enc None
 
 #### After variables
 
 Value produced for `net` (decl src ln 27), asm ln 1019
   arg 0
+  @dbg.value(%struct.network.2* %net, !1015), asm ln 1019
   Added assignment asm ln 1019, prod ln 27.0, live ln 41, enc None
 Value produced for `in` (decl src ln 33), asm ln 1020
   const %struct.__sFILE.5* null
+  @dbg.value(%struct.__sFILE.5* null, !1017), asm ln 1020
   Added assignment asm ln 1020, prod ln 33.0, live ln 41, enc None
 Load from declared address of `t` (decl src ln 35), asm ln 1510
   %83 = load i64, i64* %t, l193 c28, asm ln 1510
-  🔔 Live ln too early, using produced ln + 1
+  %83 = load i64, i64* %t, l193 c28, asm ln 1510
   Added assignment asm ln 1510, prod ln 193.28, live ln 194, enc None
 Load from declared address of `t` (decl src ln 35), asm ln 1316
   %50 = load i64, i64* %t, l143 c24, asm ln 1316
-  🔔 Live ln too early, using produced ln + 1
+  %50 = load i64, i64* %t, l143 c24, asm ln 1316
   Added assignment asm ln 1316, prod ln 143.24, live ln 144, enc None
 Load from declared address of `t` (decl src ln 35), asm ln 1289
   %46 = load i64, i64* %t, l131 c73, asm ln 1289
-  🔔 Live ln too early, using produced ln + 1
+  %46 = load i64, i64* %t, l131 c73, asm ln 1289
   Added assignment asm ln 1289, prod ln 131.73, live ln 132, enc None
 Load from declared address of `t` (decl src ln 35), asm ln 1057
   %6 = load i64, i64* %t, l56 c19, asm ln 1057
-  🔔 Live ln too early, using produced ln + 1
+  %6 = load i64, i64* %t, l56 c19, asm ln 1057
   Added assignment asm ln 1057, prod ln 56.19, live ln 57, enc None
 Load from declared address of `t` (decl src ln 35), asm ln 1055
   %5 = load i64, i64* %t, l56 c17, asm ln 1055
-  🔔 Live ln too early, using produced ln + 1
+  %5 = load i64, i64* %t, l56 c17, asm ln 1055
   Added assignment asm ln 1055, prod ln 56.17, live ln 57, enc None
 Load from declared address of `t` (decl src ln 35), asm ln 1054
   %4 = load i64, i64* %t, l56 c15, asm ln 1054
-  🔔 Live ln too early, using produced ln + 1
+  %4 = load i64, i64* %t, l56 c15, asm ln 1054
   Added assignment asm ln 1054, prod ln 56.15, live ln 57, enc None
 Load from declared address of `t` (decl src ln 35), asm ln 1049
   %3 = load i64, i64* %t, l55 c17, asm ln 1049
-  🔔 Live ln too early, using produced ln + 1
+  %3 = load i64, i64* %t, l55 c17, asm ln 1049
   Added assignment asm ln 1049, prod ln 55.17, live ln 56, enc None
 Load from declared address of `t` (decl src ln 35), asm ln 1048
   %2 = load i64, i64* %t, l55 c15, asm ln 1048
-  🔔 Live ln too early, using produced ln + 1
+  %2 = load i64, i64* %t, l55 c15, asm ln 1048
   Added assignment asm ln 1048, prod ln 55.15, live ln 56, enc None
 Load from declared address of `t` (decl src ln 35), asm ln 1042
   %0 = load i64, i64* %t, l53 c20, asm ln 1042
-  🔔 Live ln too early, using produced ln + 1
+  %0 = load i64, i64* %t, l53 c20, asm ln 1042
   Added assignment asm ln 1042, prod ln 53.20, live ln 54, enc None
 Load from declared address of `h` (decl src ln 35), asm ln 1517
   %85 = load i64, i64* %h, l194 c28, asm ln 1517
-  🔔 Live ln too early, using produced ln + 1
+  %85 = load i64, i64* %h, l194 c28, asm ln 1517
   Added assignment asm ln 1517, prod ln 194.28, live ln 195, enc None
 Load from declared address of `h` (decl src ln 35), asm ln 1321
   %51 = load i64, i64* %h, l144 c37, asm ln 1321
-  🔔 Live ln too early, using produced ln + 1
+  %51 = load i64, i64* %h, l144 c37, asm ln 1321
   Added assignment asm ln 1321, prod ln 144.37, live ln 145, enc None
 Load from declared address of `h` (decl src ln 35), asm ln 1290
   %47 = load i64, i64* %h, l131 c77, asm ln 1290
-  🔔 Live ln too early, using produced ln + 1
+  %47 = load i64, i64* %h, l131 c77, asm ln 1290
   Added assignment asm ln 1290, prod ln 131.77, live ln 132, enc None
 Load from declared address of `h` (decl src ln 35), asm ln 1059
   %7 = load i64, i64* %h, l56 c21, asm ln 1059
-  🔔 Live ln too early, using produced ln + 1
+  %7 = load i64, i64* %h, l56 c21, asm ln 1059
   Added assignment asm ln 1059, prod ln 56.21, live ln 57, enc None
 Load from declared address of `h` (decl src ln 35), asm ln 1045
   %1 = load i64, i64* %h, l54 c18, asm ln 1045
-  🔔 Live ln too early, using produced ln + 1
+  %1 = load i64, i64* %h, l54 c18, asm ln 1045
   Added assignment asm ln 1045, prod ln 54.18, live ln 55, enc None
 Load from declared address of `c` (decl src ln 35), asm ln 1524
   %87 = load i64, i64* %c, l196 c29, asm ln 1524
-  🔔 Live ln too early, using produced ln + 1
+  %87 = load i64, i64* %c, l196 c29, asm ln 1524
   Added assignment asm ln 1524, prod ln 196.29, live ln 197, enc None
 Load from declared address of `c` (decl src ln 35), asm ln 1521
   %86 = load i64, i64* %c, l195 c33, asm ln 1521
-  🔔 Live ln too early, using produced ln + 1
+  %86 = load i64, i64* %c, l195 c33, asm ln 1521
   Added assignment asm ln 1521, prod ln 195.33, live ln 196, enc None
 Value produced for `actArc` (decl src ln 36), asm ln 1025
   const i64 0
+  @dbg.value(i64 0, !1087), asm ln 1025
   Added assignment asm ln 1025, prod ln 36.0, live ln 41, enc None
 Value produced for `in` (decl src ln 33), asm ln 1029
   %call = call %struct.__sFILE.5* @"\01_fopen"(i8* %arraydecay, i8* getelementptr inbounds ([2 x i8], [2 x i8]* @.str.28, i64 0, i64 0)), l41 c15, asm ln 1028
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(%struct.__sFILE.5* %call, !1017), asm ln 1029
   Added assignment asm ln 1029, prod ln 41.15, live ln 42, enc None
 Value produced for `node` (decl src ln 38), asm ln 1261
   %43 = load %struct.node.1*, %struct.node.1** %nodes92, l124 c17, asm ln 1260
+  @dbg.value(%struct.node.1* %43, !1236), asm ln 1261
   Added assignment asm ln 1261, prod ln 124.17, live ln 125, enc None
 Value produced for `arc` (decl src ln 37), asm ln 1264
   %44 = load %struct.arc.0*, %struct.arc.0** %arcs93, l125 c16, asm ln 1263
+  @dbg.value(%struct.arc.0* %44, !1238), asm ln 1264
   Added assignment asm ln 1264, prod ln 125.16, live ln 127, enc None
 Value produced for `i` (decl src ln 36), asm ln 1265
   const i64 1
+  @dbg.value(i64 1, !1239), asm ln 1265
   Added assignment asm ln 1265, prod ln 36.0, live ln 127, enc None
 Value produced for `actArc` (decl src ln 36), asm ln 1370
   %inc = add nsw i64 %actArc.0, 1, l154 c47, asm ln 1369
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %inc, !1087), asm ln 1370
   Added assignment asm ln 1370, prod ln 154.47, live ln 155, enc None
 Value produced for `arc` (decl src ln 37), asm ln 1373
   %add.ptr139 = getelementptr inbounds %struct.arc.0, %struct.arc.0* %61, i64 %call138, l154 c25, asm ln 1372
+  @dbg.value(%struct.arc.0* %add.ptr139, !1238), asm ln 1373
   Added assignment asm ln 1373, prod ln 154.25, live ln 156, enc None
 Value produced for `actArc` (decl src ln 36), asm ln 1415
   %inc162 = add nsw i64 %inc, 1, l164 c47, asm ln 1414
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %inc162, !1087), asm ln 1415
   Added assignment asm ln 1415, prod ln 164.47, live ln 165, enc None
 Value produced for `arc` (decl src ln 37), asm ln 1418
   %add.ptr164 = getelementptr inbounds %struct.arc.0, %struct.arc.0* %70, i64 %call163, l164 c25, asm ln 1417
+  @dbg.value(%struct.arc.0* %add.ptr164, !1238), asm ln 1418
   Added assignment asm ln 1418, prod ln 164.25, live ln 166, enc None
 Value produced for `actArc` (decl src ln 36), asm ln 1471
   %inc195 = add nsw i64 %inc162, 1, l174 c47, asm ln 1470
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %inc195, !1087), asm ln 1471
   Added assignment asm ln 1471, prod ln 174.47, live ln 175, enc None
 Value produced for `arc` (decl src ln 37), asm ln 1474
   %add.ptr197 = getelementptr inbounds %struct.arc.0, %struct.arc.0* %80, i64 %call196, l174 c25, asm ln 1473
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(%struct.arc.0* %add.ptr197, !1238), asm ln 1474
   Added assignment asm ln 1474, prod ln 174.25, live ln 175, enc None
 Value produced for `i` (decl src ln 36), asm ln 1476
   %inc198 = add nsw i64 %i.0, 1, l127 c37, asm ln 1475
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %inc198, !1239), asm ln 1476
   Added assignment asm ln 1476, prod ln 127.37, live ln 128, enc None
 Value produced for `i` (decl src ln 36), asm ln 1548
   %inc239 = add nsw i64 %i.1, 1, l181 c34, asm ln 1547
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %inc239, !1239), asm ln 1548
   Added assignment asm ln 1548, prod ln 181.34, live ln 182, enc None
 Value produced for `actArc` (decl src ln 36), asm ln 1552
   %inc241 = add nsw i64 %actArc.1, 1, l181 c76, asm ln 1551
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %inc241, !1087), asm ln 1552
   Added assignment asm ln 1552, prod ln 181.76, live ln 182, enc None
 Value produced for `arc` (decl src ln 37), asm ln 1555
   %add.ptr243 = getelementptr inbounds %struct.arc.0, %struct.arc.0* %94, i64 %call242, l181 c54, asm ln 1554
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(%struct.arc.0* %add.ptr243, !1238), asm ln 1555
   Added assignment asm ln 1555, prod ln 181.54, live ln 182, enc None
 Value produced for `arc` (decl src ln 37), asm ln 1561
   %95 = load %struct.arc.0*, %struct.arc.0** %stop_arcs245, l202 c16, asm ln 1560
+  @dbg.value(%struct.arc.0* %95, !1238), asm ln 1561
   Added assignment asm ln 1561, prod ln 202.16, live ln 204, enc None
 Value produced for `arc` (decl src ln 37), asm ln 1572
   %97 = load %struct.arc.0*, %struct.arc.0** %arcs251, l207 c20, asm ln 1571
+  @dbg.value(%struct.arc.0* %97, !1238), asm ln 1572
   Added assignment asm ln 1572, prod ln 207.20, live ln 208, enc None
 Value produced for `arc` (decl src ln 37), asm ln 1591
   %incdec.ptr = getelementptr inbounds %struct.arc.0, %struct.arc.0* %arc.2, i32 1, l208 c51, asm ln 1590
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(%struct.arc.0* %incdec.ptr, !1238), asm ln 1591
   Added assignment asm ln 1591, prod ln 208.51, live ln 209, enc None
 Value produced for `i` (decl src ln 36), asm ln 1606
   const i64 1
-  🔔 Missing produced ln, using decl ln
+  @dbg.value(i64 1, !1239), asm ln 1606
   Added assignment asm ln 1606, prod ln 36.0, live ln 226, enc None
 Value produced for `arc` (decl src ln 37), asm ln 1624
   %add.ptr276 = getelementptr inbounds %struct.arc.0, %struct.arc.0* %102, i64 %call275, l228 c23, asm ln 1623
+  @dbg.value(%struct.arc.0* %add.ptr276, !1238), asm ln 1624
   Added assignment asm ln 1624, prod ln 228.23, live ln 230, enc None
 Value produced for `i` (decl src ln 36), asm ln 1656
   %inc298 = add nsw i64 %i.2, 1, l226 c37, asm ln 1655
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %inc298, !1239), asm ln 1656
   Added assignment asm ln 1656, prod ln 226.37, live ln 227, enc None
 Value produced for `arc` (decl src ln 37), asm ln 1272
   %arc.0 = phi %struct.arc.0* [ %44, %if.end82 ], [ %add.ptr197, %cond.end179 ], asm ln 1271
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(%struct.arc.0* %arc.0, !1238), asm ln 1272
   Added assignment asm ln 1272, prod ln 174.25, live ln 175, enc None
 Value produced for `i` (decl src ln 36), asm ln 1273
   %i.0 = phi i64 [ 1, %if.end82 ], [ %inc198, %cond.end179 ], asm ln 1270
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %i.0, !1239), asm ln 1273
   Added assignment asm ln 1273, prod ln 127.37, live ln 128, enc None
 Value produced for `actArc` (decl src ln 36), asm ln 1274
   %actArc.0 = phi i64 [ 0, %if.end82 ], [ %inc195, %cond.end179 ], asm ln 1269
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %actArc.0, !1087), asm ln 1274
   Added assignment asm ln 1274, prod ln 174.47, live ln 175, enc None
 Value produced for `arc` (decl src ln 37), asm ln 1490
   %arc.1 = phi %struct.arc.0* [ %add.ptr243, %if.end217 ], [ %arc.0, %for.end ], asm ln 1489
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(%struct.arc.0* %arc.1, !1238), asm ln 1490
   Added assignment asm ln 1490, prod ln 181.54, live ln 182, enc None
 Value produced for `i` (decl src ln 36), asm ln 1491
   %i.1 = phi i64 [ %inc239, %if.end217 ], [ 0, %for.end ], asm ln 1488
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %i.1, !1239), asm ln 1491
   Added assignment asm ln 1491, prod ln 181.34, live ln 182, enc None
 Value produced for `actArc` (decl src ln 36), asm ln 1492
   %actArc.1 = phi i64 [ %inc241, %if.end217 ], [ %actArc.0, %for.end ], asm ln 1487
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %actArc.1, !1087), asm ln 1492
   Added assignment asm ln 1492, prod ln 181.76, live ln 182, enc None
 Value produced for `arc` (decl src ln 37), asm ln 1579
   %arc.2 = phi %struct.arc.0* [ %97, %if.then249 ], [ %incdec.ptr, %for.body257 ], asm ln 1578
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(%struct.arc.0* %arc.2, !1238), asm ln 1579
   Added assignment asm ln 1579, prod ln 208.51, live ln 209, enc None
 Value produced for `i` (decl src ln 36), asm ln 1611
   %i.2 = phi i64 [ 1, %if.end264 ], [ %inc298, %cond.end293 ], asm ln 1610
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %i.2, !1239), asm ln 1611
   Added assignment asm ln 1611, prod ln 226.37, live ln 227, enc None
 
 #### Summary
@@ -10031,153 +10144,162 @@ Test Execution:
 
 Load from declared address of `net` (decl src ln 48), asm ln 2270
   %37 = load %struct.network*, %struct.network** %net.addr, l69 c49, asm ln 2270
-  🔔 Live ln too early, using produced ln + 1
+  %37 = load %struct.network*, %struct.network** %net.addr, l69 c49, asm ln 2270
   Added assignment asm ln 2270, prod ln 69.49, live ln 70, enc None
 Load from declared address of `net` (decl src ln 48), asm ln 2237
   %25 = load %struct.network*, %struct.network** %net.addr, l67 c48, asm ln 2237
-  🔔 Live ln too early, using produced ln + 1
+  %25 = load %struct.network*, %struct.network** %net.addr, l67 c48, asm ln 2237
   Added assignment asm ln 2237, prod ln 67.48, live ln 68, enc None
 Load from declared address of `net` (decl src ln 48), asm ln 2204
   %13 = load %struct.network*, %struct.network** %net.addr, l65 c50, asm ln 2204
-  🔔 Live ln too early, using produced ln + 1
+  %13 = load %struct.network*, %struct.network** %net.addr, l65 c50, asm ln 2204
   Added assignment asm ln 2204, prod ln 65.50, live ln 66, enc None
 Load from declared address of `net` (decl src ln 48), asm ln 2180
   %3 = load %struct.network*, %struct.network** %net.addr, l63 c14, asm ln 2180
-  🔔 Live ln too early, using produced ln + 1
+  %3 = load %struct.network*, %struct.network** %net.addr, l63 c14, asm ln 2180
   Added assignment asm ln 2180, prod ln 63.14, live ln 64, enc None
 Load from declared address of `net` (decl src ln 48), asm ln 2173
   %1 = load %struct.network*, %struct.network** %net.addr, l62 c22, asm ln 2173
-  🔔 Live ln too early, using produced ln + 1
+  %1 = load %struct.network*, %struct.network** %net.addr, l62 c22, asm ln 2173
   Added assignment asm ln 2173, prod ln 62.22, live ln 63, enc None
 Store to declared address of `net` (decl src ln 48), asm ln 2160
   arg 0
+  store %struct.network* %net, %struct.network** %net.addr, asm ln 2160
   Added assignment asm ln 2160, prod ln 48.0, live ln 62, enc None
 Load from declared address of `getPos` (decl src ln 48), asm ln 2269
   %36 = load i64 (%struct.network*, i64)*, i64 (%struct.network*, i64)** %getPos.addr, l69 c42, asm ln 2269
-  🔔 Live ln too early, using produced ln + 1
+  %36 = load i64 (%struct.network*, i64)*, i64 (%struct.network*, i64)** %getPos.addr, l69 c42, asm ln 2269
   Added assignment asm ln 2269, prod ln 69.42, live ln 70, enc None
 Load from declared address of `getPos` (decl src ln 48), asm ln 2236
   %24 = load i64 (%struct.network*, i64)*, i64 (%struct.network*, i64)** %getPos.addr, l67 c41, asm ln 2236
-  🔔 Live ln too early, using produced ln + 1
+  %24 = load i64 (%struct.network*, i64)*, i64 (%struct.network*, i64)** %getPos.addr, l67 c41, asm ln 2236
   Added assignment asm ln 2236, prod ln 67.41, live ln 68, enc None
 Load from declared address of `getPos` (decl src ln 48), asm ln 2203
   %12 = load i64 (%struct.network*, i64)*, i64 (%struct.network*, i64)** %getPos.addr, l65 c43, asm ln 2203
-  🔔 Live ln too early, using produced ln + 1
+  %12 = load i64 (%struct.network*, i64)*, i64 (%struct.network*, i64)** %getPos.addr, l65 c43, asm ln 2203
   Added assignment asm ln 2203, prod ln 65.43, live ln 66, enc None
 Store to declared address of `getPos` (decl src ln 48), asm ln 2162
   arg 1
+  store i64 (%struct.network*, i64)* %getPos, i64 (%struct.network*, i64)** %getPos.addr, asm ln 2162
   Added assignment asm ln 2162, prod ln 48.0, live ln 62, enc None
 Load from declared address of `sorted_array` (decl src ln 48), asm ln 2268
   %35 = load %struct.arc*, %struct.arc** %sorted_array.addr, l69 c29, asm ln 2268
-  🔔 Live ln too early, using produced ln + 1
+  %35 = load %struct.arc*, %struct.arc** %sorted_array.addr, l69 c29, asm ln 2268
   Added assignment asm ln 2268, prod ln 69.29, live ln 70, enc None
 Load from declared address of `sorted_array` (decl src ln 48), asm ln 2235
   %23 = load %struct.arc*, %struct.arc** %sorted_array.addr, l67 c28, asm ln 2235
-  🔔 Live ln too early, using produced ln + 1
+  %23 = load %struct.arc*, %struct.arc** %sorted_array.addr, l67 c28, asm ln 2235
   Added assignment asm ln 2235, prod ln 67.28, live ln 68, enc None
 Load from declared address of `sorted_array` (decl src ln 48), asm ln 2202
   %11 = load %struct.arc*, %struct.arc** %sorted_array.addr, l65 c30, asm ln 2202
-  🔔 Live ln too early, using produced ln + 1
+  %11 = load %struct.arc*, %struct.arc** %sorted_array.addr, l65 c30, asm ln 2202
   Added assignment asm ln 2202, prod ln 65.30, live ln 66, enc None
 Store to declared address of `sorted_array` (decl src ln 48), asm ln 2164
   arg 2
+  store %struct.arc* %sorted_array, %struct.arc** %sorted_array.addr, asm ln 2164
   Added assignment asm ln 2164, prod ln 48.0, live ln 62, enc None
 Load from declared address of `node` (decl src ln 56), asm ln 2279
   %41 = load %struct.node*, %struct.node** %node, l69 c11, asm ln 2279
-  🔔 Live ln too early, using produced ln + 1
+  %41 = load %struct.node*, %struct.node** %node, l69 c11, asm ln 2279
   Added assignment asm ln 2279, prod ln 69.11, live ln 70, enc None
 Load from declared address of `node` (decl src ln 56), asm ln 2271
   %38 = load %struct.node*, %struct.node** %node, l69 c54, asm ln 2271
-  🔔 Live ln too early, using produced ln + 1
+  %38 = load %struct.node*, %struct.node** %node, l69 c54, asm ln 2271
   Added assignment asm ln 2271, prod ln 69.54, live ln 70, enc None
 Load from declared address of `node` (decl src ln 56), asm ln 2259
   %32 = load %struct.node*, %struct.node** %node, l68 c29, asm ln 2259
-  🔔 Live ln too early, using produced ln + 1
+  %32 = load %struct.node*, %struct.node** %node, l68 c29, asm ln 2259
   Added assignment asm ln 2259, prod ln 68.29, live ln 69, enc None
 Load from declared address of `node` (decl src ln 56), asm ln 2252
   %30 = load %struct.node*, %struct.node** %node, l68 c11, asm ln 2252
-  🔔 Live ln too early, using produced ln + 1
+  %30 = load %struct.node*, %struct.node** %node, l68 c11, asm ln 2252
   Added assignment asm ln 2252, prod ln 68.11, live ln 69, enc None
 Load from declared address of `node` (decl src ln 56), asm ln 2246
   %29 = load %struct.node*, %struct.node** %node, l67 c11, asm ln 2246
-  🔔 Live ln too early, using produced ln + 1
+  %29 = load %struct.node*, %struct.node** %node, l67 c11, asm ln 2246
   Added assignment asm ln 2246, prod ln 67.11, live ln 68, enc None
 Load from declared address of `node` (decl src ln 56), asm ln 2238
   %26 = load %struct.node*, %struct.node** %node, l67 c53, asm ln 2238
-  🔔 Live ln too early, using produced ln + 1
+  %26 = load %struct.node*, %struct.node** %node, l67 c53, asm ln 2238
   Added assignment asm ln 2238, prod ln 67.53, live ln 68, enc None
 Load from declared address of `node` (decl src ln 56), asm ln 2226
   %20 = load %struct.node*, %struct.node** %node, l66 c28, asm ln 2226
-  🔔 Live ln too early, using produced ln + 1
+  %20 = load %struct.node*, %struct.node** %node, l66 c28, asm ln 2226
   Added assignment asm ln 2226, prod ln 66.28, live ln 67, enc None
 Load from declared address of `node` (decl src ln 56), asm ln 2219
   %18 = load %struct.node*, %struct.node** %node, l66 c11, asm ln 2219
-  🔔 Live ln too early, using produced ln + 1
+  %18 = load %struct.node*, %struct.node** %node, l66 c11, asm ln 2219
   Added assignment asm ln 2219, prod ln 66.11, live ln 67, enc None
 Load from declared address of `node` (decl src ln 56), asm ln 2213
   %17 = load %struct.node*, %struct.node** %node, l65 c11, asm ln 2213
-  🔔 Live ln too early, using produced ln + 1
+  %17 = load %struct.node*, %struct.node** %node, l65 c11, asm ln 2213
   Added assignment asm ln 2213, prod ln 65.11, live ln 66, enc None
 Load from declared address of `node` (decl src ln 56), asm ln 2205
   %14 = load %struct.node*, %struct.node** %node, l65 c55, asm ln 2205
-  🔔 Live ln too early, using produced ln + 1
+  %14 = load %struct.node*, %struct.node** %node, l65 c55, asm ln 2205
   Added assignment asm ln 2205, prod ln 65.55, live ln 66, enc None
 Load from declared address of `node` (decl src ln 56), asm ln 2193
   %8 = load %struct.node*, %struct.node** %node, l64 c30, asm ln 2193
-  🔔 Live ln too early, using produced ln + 1
+  %8 = load %struct.node*, %struct.node** %node, l64 c30, asm ln 2193
   Added assignment asm ln 2193, prod ln 64.30, live ln 65, enc None
 Load from declared address of `node` (decl src ln 56), asm ln 2186
   %6 = load %struct.node*, %struct.node** %node, l64 c11, asm ln 2186
-  🔔 Live ln too early, using produced ln + 1
+  %6 = load %struct.node*, %struct.node** %node, l64 c11, asm ln 2186
   Added assignment asm ln 2186, prod ln 64.11, live ln 65, enc None
 Store to declared address of `node` (decl src ln 56), asm ln 2185
   %add.ptr = getelementptr inbounds %struct.node, %struct.node* %4, i64 %5, l63 c25, asm ln 2184
+  store %struct.node* %add.ptr, %struct.node** %node, l63 c12, asm ln 2185
   Added assignment asm ln 2185, prod ln 63.25, live ln 64, enc None
 Store to declared address of `i` (decl src ln 57), asm ln 2287
   %inc = add nsw i64 %42, 1, l62 c31, asm ln 2286
-  🔔 Live ln too early, using produced ln + 1
+  store i64 %inc, i64* %i, l62 c31, asm ln 2287
   Added assignment asm ln 2287, prod ln 62.31, live ln 63, enc None
 Load from declared address of `i` (decl src ln 57), asm ln 2285
   %42 = load i64, i64* %i, l62 c31, asm ln 2285
-  🔔 Live ln too early, using produced ln + 1
+  %42 = load i64, i64* %i, l62 c31, asm ln 2285
   Added assignment asm ln 2285, prod ln 62.31, live ln 63, enc None
 Load from declared address of `i` (decl src ln 57), asm ln 2183
   %5 = load i64, i64* %i, l63 c27, asm ln 2183
-  🔔 Live ln too early, using produced ln + 1
+  %5 = load i64, i64* %i, l63 c27, asm ln 2183
   Added assignment asm ln 2183, prod ln 63.27, live ln 64, enc None
 Load from declared address of `i` (decl src ln 57), asm ln 2172
   %0 = load i64, i64* %i, l62 c17, asm ln 2172
-  🔔 Live ln too early, using produced ln + 1
+  %0 = load i64, i64* %i, l62 c17, asm ln 2172
   Added assignment asm ln 2172, prod ln 62.17, live ln 63, enc None
 Store to declared address of `i` (decl src ln 57), asm ln 2168
   const i64 0
-  🔔 Live ln too early, using produced ln + 1
+  store i64 0, i64* %i, l62 c12, asm ln 2168
   Added assignment asm ln 2168, prod ln 62.12, live ln 63, enc None
 
 #### After variables
 
 Value produced for `net` (decl src ln 48), asm ln 1678
   arg 0
+  @dbg.value(%struct.network.2* %net, !1555), asm ln 1678
   Added assignment asm ln 1678, prod ln 48.0, live ln 62, enc None
 Value produced for `getPos` (decl src ln 48), asm ln 1679
   arg 1
+  @dbg.value(i64 (%struct.network.2*, i64)* %getPos, !1557), asm ln 1679
   Added assignment asm ln 1679, prod ln 48.0, live ln 62, enc None
 Value produced for `sorted_array` (decl src ln 48), asm ln 1680
   arg 2
+  @dbg.value(%struct.arc.0* %sorted_array, !1558), asm ln 1680
   Added assignment asm ln 1680, prod ln 48.0, live ln 62, enc None
 Value produced for `i` (decl src ln 57), asm ln 1681
   const i64 0
+  @dbg.value(i64 0, !1559), asm ln 1681
   Added assignment asm ln 1681, prod ln 57.0, live ln 62, enc None
 Value produced for `node` (decl src ln 56), asm ln 1696
   %add.ptr = getelementptr inbounds %struct.node.1, %struct.node.1* %1, i64 %i.0, l63 c25, asm ln 1695
+  @dbg.value(%struct.node.1* %add.ptr, !1570), asm ln 1696
   Added assignment asm ln 1696, prod ln 63.25, live ln 64, enc None
 Value produced for `i` (decl src ln 57), asm ln 1776
   %inc = add nsw i64 %i.0, 1, l62 c31, asm ln 1775
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %inc, !1559), asm ln 1776
   Added assignment asm ln 1776, prod ln 62.31, live ln 63, enc None
 Value produced for `i` (decl src ln 57), asm ln 1686
   %i.0 = phi i64 [ 0, %entry ], [ %inc, %for.inc ], asm ln 1685
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %i.0, !1559), asm ln 1686
   Added assignment asm ln 1686, prod ln 62.31, live ln 63, enc None
 
 #### Summary
@@ -10707,163 +10829,178 @@ Test Execution:
 
 Load from declared address of `net` (decl src ln 77), asm ln 2384
   %31 = load %struct.network*, %struct.network** %net.addr, l105 c3, asm ln 2384
-  🔔 Live ln too early, using produced ln + 1
+  %31 = load %struct.network*, %struct.network** %net.addr, l105 c3, asm ln 2384
   Added assignment asm ln 2384, prod ln 105.3, live ln 106, enc None
 Load from declared address of `net` (decl src ln 77), asm ln 2378
   %28 = load %struct.network*, %struct.network** %net.addr, l104 c3, asm ln 2378
-  🔔 Live ln too early, using produced ln + 1
+  %28 = load %struct.network*, %struct.network** %net.addr, l104 c3, asm ln 2378
   Added assignment asm ln 2378, prod ln 104.3, live ln 105, enc None
 Load from declared address of `net` (decl src ln 77), asm ln 2374
   %26 = load %struct.network*, %struct.network** %net.addr, l103 c3, asm ln 2374
-  🔔 Live ln too early, using produced ln + 1
+  %26 = load %struct.network*, %struct.network** %net.addr, l103 c3, asm ln 2374
   Added assignment asm ln 2374, prod ln 103.3, live ln 104, enc None
 Load from declared address of `net` (decl src ln 77), asm ln 2369
   %23 = load %struct.network*, %struct.network** %net.addr, l102 c9, asm ln 2369
-  🔔 Live ln too early, using produced ln + 1
+  %23 = load %struct.network*, %struct.network** %net.addr, l102 c9, asm ln 2369
   Added assignment asm ln 2369, prod ln 102.9, live ln 103, enc None
 Load from declared address of `net` (decl src ln 77), asm ln 2346
   %13 = load %struct.network*, %struct.network** %net.addr, l98 c27, asm ln 2346
-  🔔 Live ln too early, using produced ln + 1
+  %13 = load %struct.network*, %struct.network** %net.addr, l98 c27, asm ln 2346
   Added assignment asm ln 2346, prod ln 98.27, live ln 99, enc None
 Load from declared address of `net` (decl src ln 77), asm ln 2332
   %7 = load %struct.network*, %struct.network** %net.addr, l95 c11, asm ln 2332
-  🔔 Live ln too early, using produced ln + 1
+  %7 = load %struct.network*, %struct.network** %net.addr, l95 c11, asm ln 2332
   Added assignment asm ln 2332, prod ln 95.11, live ln 96, enc None
 Load from declared address of `net` (decl src ln 77), asm ln 2318
   %2 = load %struct.network*, %struct.network** %net.addr, l89 c24, asm ln 2318
-  🔔 Live ln too early, using produced ln + 1
+  %2 = load %struct.network*, %struct.network** %net.addr, l89 c24, asm ln 2318
   Added assignment asm ln 2318, prod ln 89.24, live ln 90, enc None
 Load from declared address of `net` (decl src ln 77), asm ln 2314
   %0 = load %struct.network*, %struct.network** %net.addr, l88 c20, asm ln 2314
-  🔔 Live ln too early, using produced ln + 1
+  %0 = load %struct.network*, %struct.network** %net.addr, l88 c20, asm ln 2314
   Added assignment asm ln 2314, prod ln 88.20, live ln 89, enc None
 Store to declared address of `net` (decl src ln 77), asm ln 2304
   arg 0
+  store %struct.network* %net, %struct.network** %net.addr, asm ln 2304
   Added assignment asm ln 2304, prod ln 77.0, live ln 88, enc None
 Load from declared address of `getPos` (decl src ln 77), asm ln 2345
   %12 = load i64 (%struct.network*, i64)*, i64 (%struct.network*, i64)** %getPos.addr, l98 c20, asm ln 2345
-  🔔 Live ln too early, using produced ln + 1
+  %12 = load i64 (%struct.network*, i64)*, i64 (%struct.network*, i64)** %getPos.addr, l98 c20, asm ln 2345
   Added assignment asm ln 2345, prod ln 98.20, live ln 99, enc None
 Load from declared address of `getPos` (decl src ln 77), asm ln 2319
   %3 = load i64 (%struct.network*, i64)*, i64 (%struct.network*, i64)** %getPos.addr, l89 c29, asm ln 2319
-  🔔 Live ln too early, using produced ln + 1
+  %3 = load i64 (%struct.network*, i64)*, i64 (%struct.network*, i64)** %getPos.addr, l89 c29, asm ln 2319
   Added assignment asm ln 2319, prod ln 89.29, live ln 90, enc None
 Store to declared address of `getPos` (decl src ln 77), asm ln 2306
   arg 1
+  store i64 (%struct.network*, i64)* %getPos, i64 (%struct.network*, i64)** %getPos.addr, asm ln 2306
   Added assignment asm ln 2306, prod ln 77.0, live ln 88, enc None
 Load from declared address of `new_m` (decl src ln 77), asm ln 2382
   %30 = load i64, i64* %new_m.addr, l105 c35, asm ln 2382
-  🔔 Live ln too early, using produced ln + 1
+  %30 = load i64, i64* %new_m.addr, l105 c35, asm ln 2382
   Added assignment asm ln 2382, prod ln 105.35, live ln 106, enc None
 Load from declared address of `new_m` (decl src ln 77), asm ln 2327
   %6 = load i64, i64* %new_m.addr, l94 c33, asm ln 2327
-  🔔 Live ln too early, using produced ln + 1
+  %6 = load i64, i64* %new_m.addr, l94 c33, asm ln 2327
   Added assignment asm ln 2327, prod ln 94.33, live ln 95, enc None
 Store to declared address of `new_m` (decl src ln 77), asm ln 2308
   arg 2
+  store i64 %new_m, i64* %new_m.addr, asm ln 2308
   Added assignment asm ln 2308, prod ln 77.0, live ln 88, enc None
 Load from declared address of `arc` (decl src ln 85), asm ln 2377
   %27 = load %struct.arc*, %struct.arc** %arc, l104 c22, asm ln 2377
-  🔔 Live ln too early, using produced ln + 1
+  %27 = load %struct.arc*, %struct.arc** %arc, l104 c22, asm ln 2377
   Added assignment asm ln 2377, prod ln 104.22, live ln 105, enc None
 Store to declared address of `arc` (decl src ln 85), asm ln 2372
   %24 = load %struct.arc*, %struct.arc** %arcs4, l102 c14, asm ln 2371
+  store %struct.arc* %24, %struct.arc** %arc, l102 c7, asm ln 2372
   Added assignment asm ln 2372, prod ln 102.14, live ln 103, enc None
 Load from declared address of `arc` (decl src ln 85), asm ln 2356
   %18 = load %struct.arc*, %struct.arc** %arc, l99 c35, asm ln 2356
-  🔔 Live ln too early, using produced ln + 1
+  %18 = load %struct.arc*, %struct.arc** %arc, l99 c35, asm ln 2356
   Added assignment asm ln 2356, prod ln 99.35, live ln 100, enc None
 Load from declared address of `arc` (decl src ln 85), asm ln 2347
   %14 = load %struct.arc*, %struct.arc** %arc, l98 c32, asm ln 2347
-  🔔 Live ln too early, using produced ln + 1
+  %14 = load %struct.arc*, %struct.arc** %arc, l98 c32, asm ln 2347
   Added assignment asm ln 2347, prod ln 98.32, live ln 99, enc None
 Load from declared address of `arc` (decl src ln 85), asm ln 2338
   %10 = load %struct.arc*, %struct.arc** %arc, l96 c8, asm ln 2338
-  🔔 Live ln too early, using produced ln + 1
+  %10 = load %struct.arc*, %struct.arc** %arc, l96 c8, asm ln 2338
   Added assignment asm ln 2338, prod ln 96.8, live ln 97, enc None
 Store to declared address of `arc` (decl src ln 85), asm ln 2337
   %add.ptr = getelementptr inbounds %struct.arc, %struct.arc* %8, i64 %9, l95 c21, asm ln 2336
+  store %struct.arc* %add.ptr, %struct.arc** %arc, l95 c9, asm ln 2337
   Added assignment asm ln 2337, prod ln 95.21, live ln 96, enc None
 Load from declared address of `sorted_array` (decl src ln 85), asm ln 2381
   %29 = load %struct.arc*, %struct.arc** %sorted_array, l105 c20, asm ln 2381
-  🔔 Live ln too early, using produced ln + 1
+  %29 = load %struct.arc*, %struct.arc** %sorted_array, l105 c20, asm ln 2381
   Added assignment asm ln 2381, prod ln 105.20, live ln 106, enc None
 Load from declared address of `sorted_array` (decl src ln 85), asm ln 2373
   %25 = load %struct.arc*, %struct.arc** %sorted_array, l103 c15, asm ln 2373
-  🔔 Live ln too early, using produced ln + 1
+  %25 = load %struct.arc*, %struct.arc** %sorted_array, l103 c15, asm ln 2373
   Added assignment asm ln 2373, prod ln 103.15, live ln 104, enc None
 Load from declared address of `sorted_array` (decl src ln 85), asm ln 2353
   %16 = load %struct.arc*, %struct.arc** %sorted_array, l99 c5, asm ln 2353
-  🔔 Live ln too early, using produced ln + 1
+  %16 = load %struct.arc*, %struct.arc** %sorted_array, l99 c5, asm ln 2353
   Added assignment asm ln 2353, prod ln 99.5, live ln 100, enc None
 Load from declared address of `sorted_array` (decl src ln 85), asm ln 2320
   %4 = load %struct.arc*, %struct.arc** %sorted_array, l89 c37, asm ln 2320
-  🔔 Live ln too early, using produced ln + 1
+  %4 = load %struct.arc*, %struct.arc** %sorted_array, l89 c37, asm ln 2320
   Added assignment asm ln 2320, prod ln 89.37, live ln 90, enc None
 Store to declared address of `sorted_array` (decl src ln 85), asm ln 2317
   %1 = load %struct.arc*, %struct.arc** %sorted_arcs, l88 c25, asm ln 2316
+  store %struct.arc* %1, %struct.arc** %sorted_array, l88 c18, asm ln 2317
   Added assignment asm ln 2317, prod ln 88.25, live ln 89, enc None
 Store to declared address of `position` (decl src ln 86), asm ln 2365
   %inc = add nsw i64 %22, 1, l94 c48, asm ln 2364
-  🔔 Live ln too early, using produced ln + 1
+  store i64 %inc, i64* %position, l94 c48, asm ln 2365
   Added assignment asm ln 2365, prod ln 94.48, live ln 95, enc None
 Load from declared address of `position` (decl src ln 86), asm ln 2363
   %22 = load i64, i64* %position, l94 c48, asm ln 2363
-  🔔 Live ln too early, using produced ln + 1
+  %22 = load i64, i64* %position, l94 c48, asm ln 2363
   Added assignment asm ln 2363, prod ln 94.48, live ln 95, enc None
 Load from declared address of `position` (decl src ln 86), asm ln 2335
   %9 = load i64, i64* %position, l95 c23, asm ln 2335
-  🔔 Live ln too early, using produced ln + 1
+  %9 = load i64, i64* %position, l95 c23, asm ln 2335
   Added assignment asm ln 2335, prod ln 95.23, live ln 96, enc None
 Load from declared address of `position` (decl src ln 86), asm ln 2326
   %5 = load i64, i64* %position, l94 c22, asm ln 2326
-  🔔 Live ln too early, using produced ln + 1
+  %5 = load i64, i64* %position, l94 c22, asm ln 2326
   Added assignment asm ln 2326, prod ln 94.22, live ln 95, enc None
 Store to declared address of `position` (decl src ln 86), asm ln 2322
   const i64 0
-  🔔 Live ln too early, using produced ln + 1
+  store i64 0, i64* %position, l94 c17, asm ln 2322
   Added assignment asm ln 2322, prod ln 94.17, live ln 95, enc None
 Load from declared address of `new_position` (decl src ln 86), asm ln 2354
   %17 = load i64, i64* %new_position, l99 c18, asm ln 2354
-  🔔 Live ln too early, using produced ln + 1
+  %17 = load i64, i64* %new_position, l99 c18, asm ln 2354
   Added assignment asm ln 2354, prod ln 99.18, live ln 100, enc None
 Store to declared address of `new_position` (decl src ln 86), asm ln 2352
   %call3 = call i64 %12(%struct.network* %13, i64 %conv), l98 c20, asm ln 2351
+  store i64 %call3, i64* %new_position, l98 c18, asm ln 2352
   Added assignment asm ln 2352, prod ln 98.20, live ln 99, enc None
 
 #### After variables
 
 Value produced for `net` (decl src ln 77), asm ln 1786
   arg 0
+  @dbg.value(%struct.network.2* %net, !1627), asm ln 1786
   Added assignment asm ln 1786, prod ln 77.0, live ln 88, enc None
 Value produced for `getPos` (decl src ln 77), asm ln 1787
   arg 1
+  @dbg.value(i64 (%struct.network.2*, i64)* %getPos, !1629), asm ln 1787
   Added assignment asm ln 1787, prod ln 77.0, live ln 88, enc None
 Value produced for `new_m` (decl src ln 77), asm ln 1788
   arg 2
+  @dbg.value(i64 %new_m, !1630), asm ln 1788
   Added assignment asm ln 1788, prod ln 77.0, live ln 88, enc None
 Value produced for `sorted_array` (decl src ln 85), asm ln 1791
   %0 = load %struct.arc.0*, %struct.arc.0** %sorted_arcs, l88 c25, asm ln 1790
+  @dbg.value(%struct.arc.0* %0, !1632), asm ln 1791
   Added assignment asm ln 1791, prod ln 88.25, live ln 89, enc None
 Value produced for `position` (decl src ln 86), asm ln 1793
   const i64 0
+  @dbg.value(i64 0, !1634), asm ln 1793
   Added assignment asm ln 1793, prod ln 86.0, live ln 94, enc None
 Value produced for `arc` (decl src ln 85), asm ln 1806
   %add.ptr = getelementptr inbounds %struct.arc.0, %struct.arc.0* %1, i64 %position.0, l95 c21, asm ln 1805
+  @dbg.value(%struct.arc.0* %add.ptr, !1644), asm ln 1806
   Added assignment asm ln 1806, prod ln 95.21, live ln 96, enc None
 Value produced for `new_position` (decl src ln 86), asm ln 1817
   %call3 = call i64 %getPos(%struct.network.2* %net, i64 %conv), l98 c20, asm ln 1816
+  @dbg.value(i64 %call3, !1652), asm ln 1817
   Added assignment asm ln 1817, prod ln 98.20, live ln 99, enc None
 Value produced for `position` (decl src ln 86), asm ln 1826
   %inc = add nsw i64 %position.0, 1, l94 c48, asm ln 1825
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %inc, !1634), asm ln 1826
   Added assignment asm ln 1826, prod ln 94.48, live ln 95, enc None
 Value produced for `arc` (decl src ln 85), asm ln 1832
   %7 = load %struct.arc.0*, %struct.arc.0** %arcs4, l102 c14, asm ln 1831
+  @dbg.value(%struct.arc.0* %7, !1644), asm ln 1832
   Added assignment asm ln 1832, prod ln 102.14, live ln 103, enc None
 Value produced for `position` (decl src ln 86), asm ln 1798
   %position.0 = phi i64 [ 0, %entry ], [ %inc, %for.inc ], asm ln 1797
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %position.0, !1634), asm ln 1798
   Added assignment asm ln 1798, prod ln 94.48, live ln 95, enc None
 
 #### Summary
@@ -11843,519 +11980,550 @@ Test Execution:
 
 Load from declared address of `net` (decl src ln 111), asm ln 2721
   %105 = load %struct.network*, %struct.network** %net.addr, l195 c5, asm ln 2721
-  🔔 Live ln too early, using produced ln + 1
+  %105 = load %struct.network*, %struct.network** %net.addr, l195 c5, asm ln 2721
   Added assignment asm ln 2721, prod ln 195.5, live ln 196, enc None
 Load from declared address of `net` (decl src ln 111), asm ln 2718
   %104 = load %struct.network*, %struct.network** %net.addr, l194 c5, asm ln 2718
-  🔔 Live ln too early, using produced ln + 1
+  %104 = load %struct.network*, %struct.network** %net.addr, l194 c5, asm ln 2718
   Added assignment asm ln 2718, prod ln 194.5, live ln 195, enc None
 Load from declared address of `net` (decl src ln 111), asm ln 2714
   %102 = load %struct.network*, %struct.network** %net.addr, l194 c40, asm ln 2714
-  🔔 Live ln too early, using produced ln + 1
+  %102 = load %struct.network*, %struct.network** %net.addr, l194 c40, asm ln 2714
   Added assignment asm ln 2714, prod ln 194.40, live ln 195, enc None
 Load from declared address of `net` (decl src ln 111), asm ln 2711
   %100 = load %struct.network*, %struct.network** %net.addr, l194 c24, asm ln 2711
-  🔔 Live ln too early, using produced ln + 1
+  %100 = load %struct.network*, %struct.network** %net.addr, l194 c24, asm ln 2711
   Added assignment asm ln 2711, prod ln 194.24, live ln 195, enc None
 Load from declared address of `net` (decl src ln 111), asm ln 2704
   %98 = load %struct.network*, %struct.network** %net.addr, l193 c10, asm ln 2704
-  🔔 Live ln too early, using produced ln + 1
+  %98 = load %struct.network*, %struct.network** %net.addr, l193 c10, asm ln 2704
   Added assignment asm ln 2704, prod ln 193.10, live ln 194, enc None
 Load from declared address of `net` (decl src ln 111), asm ln 2695
   %97 = load %struct.network*, %struct.network** %net.addr, l192 c7, asm ln 2695
-  🔔 Live ln too early, using produced ln + 1
+  %97 = load %struct.network*, %struct.network** %net.addr, l192 c7, asm ln 2695
   Added assignment asm ln 2695, prod ln 192.7, live ln 193, enc None
 Load from declared address of `net` (decl src ln 111), asm ln 2692
   %95 = load %struct.network*, %struct.network** %net.addr, l192 c26, asm ln 2692
-  🔔 Live ln too early, using produced ln + 1
+  %95 = load %struct.network*, %struct.network** %net.addr, l192 c26, asm ln 2692
   Added assignment asm ln 2692, prod ln 192.26, live ln 193, enc None
 Load from declared address of `net` (decl src ln 111), asm ln 2686
   %94 = load %struct.network*, %struct.network** %net.addr, l190 c7, asm ln 2686
-  🔔 Live ln too early, using produced ln + 1
+  %94 = load %struct.network*, %struct.network** %net.addr, l190 c7, asm ln 2686
   Added assignment asm ln 2686, prod ln 190.7, live ln 191, enc None
 Load from declared address of `net` (decl src ln 111), asm ln 2679
   %92 = load %struct.network*, %struct.network** %net.addr, l190 c61, asm ln 2679
-  🔔 Live ln too early, using produced ln + 1
+  %92 = load %struct.network*, %struct.network** %net.addr, l190 c61, asm ln 2679
   Added assignment asm ln 2679, prod ln 190.61, live ln 191, enc None
 Load from declared address of `net` (decl src ln 111), asm ln 2674
   %88 = load %struct.network*, %struct.network** %net.addr, l190 c26, asm ln 2674
-  🔔 Live ln too early, using produced ln + 1
+  %88 = load %struct.network*, %struct.network** %net.addr, l190 c26, asm ln 2674
   Added assignment asm ln 2674, prod ln 190.26, live ln 191, enc None
 Load from declared address of `net` (decl src ln 111), asm ln 2665
   %86 = load %struct.network*, %struct.network** %net.addr, l189 c20, asm ln 2665
-  🔔 Live ln too early, using produced ln + 1
+  %86 = load %struct.network*, %struct.network** %net.addr, l189 c20, asm ln 2665
   Added assignment asm ln 2665, prod ln 189.20, live ln 190, enc None
 Load from declared address of `net` (decl src ln 111), asm ln 2660
   %83 = load %struct.network*, %struct.network** %net.addr, l188 c3, asm ln 2660
-  🔔 Live ln too early, using produced ln + 1
+  %83 = load %struct.network*, %struct.network** %net.addr, l188 c3, asm ln 2660
   Added assignment asm ln 2660, prod ln 188.3, live ln 189, enc None
 Load from declared address of `net` (decl src ln 111), asm ln 2653
   %81 = load %struct.network*, %struct.network** %net.addr, l188 c34, asm ln 2653
-  🔔 Live ln too early, using produced ln + 1
+  %81 = load %struct.network*, %struct.network** %net.addr, l188 c34, asm ln 2653
   Added assignment asm ln 2653, prod ln 188.34, live ln 189, enc None
 Load from declared address of `net` (decl src ln 111), asm ln 2648
   %78 = load %struct.network*, %struct.network** %net.addr, l187 c3, asm ln 2648
-  🔔 Live ln too early, using produced ln + 1
+  %78 = load %struct.network*, %struct.network** %net.addr, l187 c3, asm ln 2648
   Added assignment asm ln 2648, prod ln 187.3, live ln 188, enc None
 Load from declared address of `net` (decl src ln 111), asm ln 2500
   %26 = load %struct.network*, %struct.network** %net.addr, l153 c14, asm ln 2500
-  🔔 Live ln too early, using produced ln + 1
+  %26 = load %struct.network*, %struct.network** %net.addr, l153 c14, asm ln 2500
   Added assignment asm ln 2500, prod ln 153.14, live ln 154, enc None
 Load from declared address of `net` (decl src ln 111), asm ln 2454
   %8 = load %struct.network*, %struct.network** %net.addr, l141 c20, asm ln 2454
-  🔔 Live ln too early, using produced ln + 1
+  %8 = load %struct.network*, %struct.network** %net.addr, l141 c20, asm ln 2454
   Added assignment asm ln 2454, prod ln 141.20, live ln 142, enc None
 Load from declared address of `net` (decl src ln 111), asm ln 2446
   %6 = load %struct.network*, %struct.network** %net.addr, l139 c20, asm ln 2446
-  🔔 Live ln too early, using produced ln + 1
+  %6 = load %struct.network*, %struct.network** %net.addr, l139 c20, asm ln 2446
   Added assignment asm ln 2446, prod ln 139.20, live ln 140, enc None
 Load from declared address of `net` (decl src ln 111), asm ln 2439
   %4 = load %struct.network*, %struct.network** %net.addr, l138 c7, asm ln 2439
-  🔔 Live ln too early, using produced ln + 1
+  %4 = load %struct.network*, %struct.network** %net.addr, l138 c7, asm ln 2439
   Added assignment asm ln 2439, prod ln 138.7, live ln 139, enc None
 Store to declared address of `net` (decl src ln 111), asm ln 2409
   arg 0
+  store %struct.network* %net, %struct.network** %net.addr, asm ln 2409
   Added assignment asm ln 2409, prod ln 111.0, live ln 124, enc None
 Load from declared address of `new_arcs` (decl src ln 111), asm ln 2677
   %90 = load i64*, i64** %new_arcs.addr, l190 c50, asm ln 2677
-  🔔 Live ln too early, using produced ln + 1
+  %90 = load i64*, i64** %new_arcs.addr, l190 c50, asm ln 2677
   Added assignment asm ln 2677, prod ln 190.50, live ln 191, enc None
 Load from declared address of `new_arcs` (decl src ln 111), asm ln 2663
   %84 = load i64*, i64** %new_arcs.addr, l189 c9, asm ln 2663
-  🔔 Live ln too early, using produced ln + 1
+  %84 = load i64*, i64** %new_arcs.addr, l189 c9, asm ln 2663
   Added assignment asm ln 2663, prod ln 189.9, live ln 190, enc None
 Load from declared address of `new_arcs` (decl src ln 111), asm ln 2651
   %79 = load i64*, i64** %new_arcs.addr, l188 c23, asm ln 2651
-  🔔 Live ln too early, using produced ln + 1
+  %79 = load i64*, i64** %new_arcs.addr, l188 c23, asm ln 2651
   Added assignment asm ln 2651, prod ln 188.23, live ln 189, enc None
 Load from declared address of `new_arcs` (decl src ln 111), asm ln 2638
   %75 = load i64*, i64** %new_arcs.addr, l185 c6, asm ln 2638
-  🔔 Live ln too early, using produced ln + 1
+  %75 = load i64*, i64** %new_arcs.addr, l185 c6, asm ln 2638
   Added assignment asm ln 2638, prod ln 185.6, live ln 186, enc None
 Load from declared address of `new_arcs` (decl src ln 111), asm ln 2622
   %69 = load i64*, i64** %new_arcs.addr, l183 c4, asm ln 2622
-  🔔 Live ln too early, using produced ln + 1
+  %69 = load i64*, i64** %new_arcs.addr, l183 c4, asm ln 2622
   Added assignment asm ln 2622, prod ln 183.4, live ln 184, enc None
 Load from declared address of `new_arcs` (decl src ln 111), asm ln 2508
   %29 = load i64*, i64** %new_arcs.addr, l154 c23, asm ln 2508
-  🔔 Live ln too early, using produced ln + 1
+  %29 = load i64*, i64** %new_arcs.addr, l154 c23, asm ln 2508
   Added assignment asm ln 2508, prod ln 154.23, live ln 155, enc None
 Load from declared address of `new_arcs` (decl src ln 111), asm ln 2478
   %16 = load i64*, i64** %new_arcs.addr, l147 c6, asm ln 2478
-  🔔 Live ln too early, using produced ln + 1
+  %16 = load i64*, i64** %new_arcs.addr, l147 c6, asm ln 2478
   Added assignment asm ln 2478, prod ln 147.6, live ln 148, enc None
 Load from declared address of `new_arcs` (decl src ln 111), asm ln 2462
   %10 = load i64*, i64** %new_arcs.addr, l143 c4, asm ln 2462
-  🔔 Live ln too early, using produced ln + 1
+  %10 = load i64*, i64** %new_arcs.addr, l143 c4, asm ln 2462
   Added assignment asm ln 2462, prod ln 143.4, live ln 144, enc None
 Store to declared address of `new_arcs` (decl src ln 111), asm ln 2411
   arg 1
+  store i64* %new_arcs, i64** %new_arcs.addr, asm ln 2411
   Added assignment asm ln 2411, prod ln 111.0, live ln 124, enc None
 Load from declared address of `new_arcs_array` (decl src ln 111), asm ln 2555
   %46 = load i64*, i64** %new_arcs_array.addr, l163 c30, asm ln 2555
-  🔔 Live ln too early, using produced ln + 1
+  %46 = load i64*, i64** %new_arcs_array.addr, l163 c30, asm ln 2555
   Added assignment asm ln 2555, prod ln 163.30, live ln 164, enc None
 Load from declared address of `new_arcs_array` (decl src ln 111), asm ln 2521
   %36 = load i64*, i64** %new_arcs_array.addr, l155 c21, asm ln 2521
-  🔔 Live ln too early, using produced ln + 1
+  %36 = load i64*, i64** %new_arcs_array.addr, l155 c21, asm ln 2521
   Added assignment asm ln 2521, prod ln 155.21, live ln 156, enc None
 Load from declared address of `new_arcs_array` (decl src ln 111), asm ln 2474
   %13 = load i64*, i64** %new_arcs_array.addr, l147 c18, asm ln 2474
-  🔔 Live ln too early, using produced ln + 1
+  %13 = load i64*, i64** %new_arcs_array.addr, l147 c18, asm ln 2474
   Added assignment asm ln 2474, prod ln 147.18, live ln 148, enc None
 Store to declared address of `new_arcs_array` (decl src ln 111), asm ln 2413
   arg 2
+  store i64* %new_arcs_array, i64** %new_arcs_array.addr, asm ln 2413
   Added assignment asm ln 2413, prod ln 111.0, live ln 124, enc None
 Load from declared address of `arcs_pointer_sorted` (decl src ln 111), asm ln 2482
   %18 = load %struct.arc***, %struct.arc**** %arcs_pointer_sorted.addr, l148 c20, asm ln 2482
-  🔔 Live ln too early, using produced ln + 1
+  %18 = load %struct.arc***, %struct.arc**** %arcs_pointer_sorted.addr, l148 c20, asm ln 2482
   Added assignment asm ln 2482, prod ln 148.20, live ln 149, enc None
 Store to declared address of `arcs_pointer_sorted` (decl src ln 111), asm ln 2415
   arg 3
+  store %struct.arc*** %arcs_pointer_sorted, %struct.arc**** %arcs_pointer_sorted.addr, asm ln 2415
   Added assignment asm ln 2415, prod ln 111.0, live ln 124, enc None
 Load from declared address of `max_new_arcs` (decl src ln 121), asm ln 2512
   %32 = load i64, i64* %max_new_arcs, l154 c32, asm ln 2512
-  🔔 Live ln too early, using produced ln + 1
+  %32 = load i64, i64* %max_new_arcs, l154 c32, asm ln 2512
   Added assignment asm ln 2512, prod ln 154.32, live ln 155, enc None
 Store to declared address of `max_new_arcs` (decl src ln 121), asm ln 2458
   %sub4 = sub nsw i64 %9, 4000000, l141 c44, asm ln 2457
-  🔔 Missing live ln, using produced ln + 1
+  store i64 %sub4, i64* %max_new_arcs, l141 c18, asm ln 2458
   Added assignment asm ln 2458, prod ln 141.44, live ln 142, enc None
 Store to declared address of `max_new_arcs` (decl src ln 121), asm ln 2450
   %sub = sub nsw i64 %7, 1000000, l139 c44, asm ln 2449
-  🔔 Live ln too early, using produced ln + 1
+  store i64 %sub, i64* %max_new_arcs, l139 c18, asm ln 2450
   Added assignment asm ln 2450, prod ln 139.44, live ln 140, enc None
 Load from declared address of `positions` (decl src ln 122), asm ln 2729
   %107 = load %struct.arc***, %struct.arc**** %positions, l198 c10, asm ln 2729
-  🔔 Live ln too early, using produced ln + 1
+  %107 = load %struct.arc***, %struct.arc**** %positions, l198 c10, asm ln 2729
   Added assignment asm ln 2729, prod ln 198.10, live ln 199, enc None
 Load from declared address of `positions` (decl src ln 122), asm ln 2607
   %63 = load %struct.arc***, %struct.arc**** %positions, l173 c9, asm ln 2607
-  🔔 Live ln too early, using produced ln + 1
+  %63 = load %struct.arc***, %struct.arc**** %positions, l173 c9, asm ln 2607
   Added assignment asm ln 2607, prod ln 173.9, live ln 174, enc None
 Load from declared address of `positions` (decl src ln 122), asm ln 2577
   %53 = load %struct.arc***, %struct.arc**** %positions, l164 c24, asm ln 2577
-  🔔 Live ln too early, using produced ln + 1
+  %53 = load %struct.arc***, %struct.arc**** %positions, l164 c24, asm ln 2577
   Added assignment asm ln 2577, prod ln 164.24, live ln 165, enc None
 Load from declared address of `positions` (decl src ln 122), asm ln 2568
   %50 = load %struct.arc***, %struct.arc**** %positions, l163 c75, asm ln 2568
-  🔔 Live ln too early, using produced ln + 1
+  %50 = load %struct.arc***, %struct.arc**** %positions, l163 c75, asm ln 2568
   Added assignment asm ln 2568, prod ln 163.75, live ln 164, enc None
 Load from declared address of `positions` (decl src ln 122), asm ln 2528
   %38 = load %struct.arc***, %struct.arc**** %positions, l156 c20, asm ln 2528
-  🔔 Live ln too early, using produced ln + 1
+  %38 = load %struct.arc***, %struct.arc**** %positions, l156 c20, asm ln 2528
   Added assignment asm ln 2528, prod ln 156.20, live ln 157, enc None
 Load from declared address of `positions` (decl src ln 122), asm ln 2486
   %21 = load %struct.arc***, %struct.arc**** %positions, l148 c5, asm ln 2486
-  🔔 Live ln too early, using produced ln + 1
+  %21 = load %struct.arc***, %struct.arc**** %positions, l148 c5, asm ln 2486
   Added assignment asm ln 2486, prod ln 148.5, live ln 149, enc None
 Store to declared address of `positions` (decl src ln 122), asm ln 2433
   %1 = bitcast i8* %call to %struct.arc***, l135 c15, asm ln 2432
+  store %struct.arc*** %1, %struct.arc**** %positions, l135 c13, asm ln 2433
   Added assignment asm ln 2433, prod ln 135.15, live ln 136, enc None
 Load from declared address of `values` (decl src ln 123), asm ln 2732
   %109 = load i64*, i64** %values, l199 c10, asm ln 2732
-  🔔 Live ln too early, using produced ln + 1
+  %109 = load i64*, i64** %values, l199 c10, asm ln 2732
   Added assignment asm ln 2732, prod ln 199.10, live ln 200, enc None
 Load from declared address of `values` (decl src ln 123), asm ln 2634
   %72 = load i64*, i64** %values, l185 c18, asm ln 2634
-  🔔 Live ln too early, using produced ln + 1
+  %72 = load i64*, i64** %values, l185 c18, asm ln 2634
   Added assignment asm ln 2634, prod ln 185.18, live ln 186, enc None
 Load from declared address of `values` (decl src ln 123), asm ln 2613
   %66 = load i64*, i64** %values, l174 c9, asm ln 2613
-  🔔 Live ln too early, using produced ln + 1
+  %66 = load i64*, i64** %values, l174 c9, asm ln 2613
   Added assignment asm ln 2613, prod ln 174.9, live ln 175, enc None
 Load from declared address of `values` (decl src ln 123), asm ln 2551
   %43 = load i64*, i64** %values, l163 c18, asm ln 2551
-  🔔 Live ln too early, using produced ln + 1
+  %43 = load i64*, i64** %values, l163 c18, asm ln 2551
   Added assignment asm ln 2551, prod ln 163.18, live ln 164, enc None
 Load from declared address of `values` (decl src ln 123), asm ln 2518
   %34 = load i64*, i64** %values, l155 c9, asm ln 2518
-  🔔 Live ln too early, using produced ln + 1
+  %34 = load i64*, i64** %values, l155 c9, asm ln 2518
   Added assignment asm ln 2518, prod ln 155.9, live ln 156, enc None
 Load from declared address of `values` (decl src ln 123), asm ln 2490
   %23 = load i64*, i64** %values, l149 c5, asm ln 2490
-  🔔 Live ln too early, using produced ln + 1
+  %23 = load i64*, i64** %values, l149 c5, asm ln 2490
   Added assignment asm ln 2490, prod ln 149.5, live ln 150, enc None
 Store to declared address of `values` (decl src ln 123), asm ln 2438
   %3 = bitcast i8* %call2 to i64*, l136 c12, asm ln 2437
+  store i64* %3, i64** %values, l136 c10, asm ln 2438
   Added assignment asm ln 2438, prod ln 136.12, live ln 138, enc None
 Store to declared address of `global_new` (decl src ln 124), asm ln 2606
   %inc34 = add nsw i64 %62, 1, l172 c19, asm ln 2605
+  store i64 %inc34, i64* %global_new, l172 c19, asm ln 2606
   Added assignment asm ln 2606, prod ln 172.19, live ln 173, enc None
 Load from declared address of `global_new` (decl src ln 124), asm ln 2604
   %62 = load i64, i64* %global_new, l172 c19, asm ln 2604
-  🔔 Live ln too early, using produced ln + 1
+  %62 = load i64, i64* %global_new, l172 c19, asm ln 2604
   Added assignment asm ln 2604, prod ln 172.19, live ln 173, enc None
 Load from declared address of `global_new` (decl src ln 124), asm ln 2511
   %31 = load i64, i64* %global_new, l154 c32, asm ln 2511
-  🔔 Live ln too early, using produced ln + 1
+  %31 = load i64, i64* %global_new, l154 c32, asm ln 2511
   Added assignment asm ln 2511, prod ln 154.32, live ln 155, enc None
 Load from declared address of `global_new` (decl src ln 124), asm ln 2507
   %28 = load i64, i64* %global_new, l154 c9, asm ln 2507
-  🔔 Live ln too early, using produced ln + 1
+  %28 = load i64, i64* %global_new, l154 c9, asm ln 2507
   Added assignment asm ln 2507, prod ln 154.9, live ln 155, enc None
 Store to declared address of `global_new` (decl src ln 124), asm ln 2421
   const i64 0
+  store i64 0, i64* %global_new, l124 c8, asm ln 2421
   Added assignment asm ln 2421, prod ln 124.8, live ln 125, enc None
 Load from declared address of `best_pos` (decl src ln 125), asm ln 2614
   %67 = load i64, i64* %best_pos, l174 c16, asm ln 2614
-  🔔 Live ln too early, using produced ln + 1
+  %67 = load i64, i64* %best_pos, l174 c16, asm ln 2614
   Added assignment asm ln 2614, prod ln 174.16, live ln 175, enc None
 Load from declared address of `best_pos` (decl src ln 125), asm ln 2608
   %64 = load i64, i64* %best_pos, l173 c19, asm ln 2608
-  🔔 Live ln too early, using produced ln + 1
+  %64 = load i64, i64* %best_pos, l173 c19, asm ln 2608
   Added assignment asm ln 2608, prod ln 173.19, live ln 174, enc None
 Store to declared address of `best_pos` (decl src ln 125), asm ln 2584
   %57 = load i64, i64* %i, l165 c28, asm ln 2583
+  store i64 %57, i64* %best_pos, l165 c26, asm ln 2584
   Added assignment asm ln 2584, prod ln 165.28, live ln 166, enc None
 Store to declared address of `best_pos` (decl src ln 125), asm ln 2533
   const i64 0
+  store i64 0, i64* %best_pos, l157 c22, asm ln 2533
   Added assignment asm ln 2533, prod ln 157.22, live ln 158, enc None
 Store to declared address of `best_pos` (decl src ln 125), asm ln 2423
   const i64 0
+  store i64 0, i64* %best_pos, l125 c8, asm ln 2423
   Added assignment asm ln 2423, prod ln 125.8, live ln 132, enc None
 Store to declared address of `start_id` (decl src ln 126), asm ln 2596
   %inc33 = add nsw i64 %59, 1, l170 c27, asm ln 2595
-  🔔 Live ln too early, using produced ln + 1
+  store i64 %inc33, i64* %start_id, l170 c27, asm ln 2596
   Added assignment asm ln 2596, prod ln 170.27, live ln 171, enc None
 Load from declared address of `start_id` (decl src ln 126), asm ln 2594
   %59 = load i64, i64* %start_id, l170 c27, asm ln 2594
-  🔔 Live ln too early, using produced ln + 1
+  %59 = load i64, i64* %start_id, l170 c27, asm ln 2594
   Added assignment asm ln 2594, prod ln 170.27, live ln 171, enc None
 Store to declared address of `start_id` (decl src ln 126), asm ln 2503
   %27 = load i64, i64* %m, l153 c19, asm ln 2502
+  store i64 %27, i64* %start_id, l153 c12, asm ln 2503
   Added assignment asm ln 2503, prod ln 153.19, live ln 154, enc None
 Store to declared address of `i` (decl src ln 126), asm ln 2644
   %inc45 = add nsw i64 %77, 1, l184 c32, asm ln 2643
-  🔔 Live ln too early, using produced ln + 1
+  store i64 %inc45, i64* %i, l184 c32, asm ln 2644
   Added assignment asm ln 2644, prod ln 184.32, live ln 185, enc None
 Load from declared address of `i` (decl src ln 126), asm ln 2642
   %77 = load i64, i64* %i, l184 c32, asm ln 2642
-  🔔 Live ln too early, using produced ln + 1
+  %77 = load i64, i64* %i, l184 c32, asm ln 2642
   Added assignment asm ln 2642, prod ln 184.32, live ln 185, enc None
 Load from declared address of `i` (decl src ln 126), asm ln 2635
   %73 = load i64, i64* %i, l185 c25, asm ln 2635
-  🔔 Live ln too early, using produced ln + 1
+  %73 = load i64, i64* %i, l185 c25, asm ln 2635
   Added assignment asm ln 2635, prod ln 185.25, live ln 186, enc None
 Load from declared address of `i` (decl src ln 126), asm ln 2628
   %70 = load i64, i64* %i, l184 c15, asm ln 2628
-  🔔 Live ln too early, using produced ln + 1
+  %70 = load i64, i64* %i, l184 c15, asm ln 2628
   Added assignment asm ln 2628, prod ln 184.15, live ln 185, enc None
 Store to declared address of `i` (decl src ln 126), asm ln 2624
   const i64 0
-  🔔 Live ln too early, using produced ln + 1
+  store i64 0, i64* %i, l184 c10, asm ln 2624
   Added assignment asm ln 2624, prod ln 184.10, live ln 185, enc None
 Store to declared address of `i` (decl src ln 126), asm ln 2590
   %inc31 = add nsw i64 %58, 1, l162 c39, asm ln 2589
-  🔔 Live ln too early, using produced ln + 1
+  store i64 %inc31, i64* %i, l162 c39, asm ln 2590
   Added assignment asm ln 2590, prod ln 162.39, live ln 163, enc None
 Load from declared address of `i` (decl src ln 126), asm ln 2588
   %58 = load i64, i64* %i, l162 c39, asm ln 2588
-  🔔 Live ln too early, using produced ln + 1
+  %58 = load i64, i64* %i, l162 c39, asm ln 2588
   Added assignment asm ln 2588, prod ln 162.39, live ln 163, enc None
 Load from declared address of `i` (decl src ln 126), asm ln 2583
   %57 = load i64, i64* %i, l165 c28, asm ln 2583
-  🔔 Live ln too early, using produced ln + 1
+  %57 = load i64, i64* %i, l165 c28, asm ln 2583
   Added assignment asm ln 2583, prod ln 165.28, live ln 166, enc None
 Load from declared address of `i` (decl src ln 126), asm ln 2578
   %54 = load i64, i64* %i, l164 c34, asm ln 2578
-  🔔 Live ln too early, using produced ln + 1
+  %54 = load i64, i64* %i, l164 c34, asm ln 2578
   Added assignment asm ln 2578, prod ln 164.34, live ln 165, enc None
 Load from declared address of `i` (decl src ln 126), asm ln 2569
   %51 = load i64, i64* %i, l163 c85, asm ln 2569
-  🔔 Live ln too early, using produced ln + 1
+  %51 = load i64, i64* %i, l163 c85, asm ln 2569
   Added assignment asm ln 2569, prod ln 163.85, live ln 164, enc None
 Load from declared address of `i` (decl src ln 126), asm ln 2556
   %47 = load i64, i64* %i, l163 c45, asm ln 2556
-  🔔 Live ln too early, using produced ln + 1
+  %47 = load i64, i64* %i, l163 c45, asm ln 2556
   Added assignment asm ln 2556, prod ln 163.45, live ln 164, enc None
 Load from declared address of `i` (decl src ln 126), asm ln 2552
   %44 = load i64, i64* %i, l163 c25, asm ln 2552
-  🔔 Live ln too early, using produced ln + 1
+  %44 = load i64, i64* %i, l163 c25, asm ln 2552
   Added assignment asm ln 2552, prod ln 163.25, live ln 164, enc None
 Load from declared address of `i` (decl src ln 126), asm ln 2545
   %41 = load i64, i64* %i, l162 c21, asm ln 2545
-  🔔 Live ln too early, using produced ln + 1
+  %41 = load i64, i64* %i, l162 c21, asm ln 2545
   Added assignment asm ln 2545, prod ln 162.21, live ln 163, enc None
 Store to declared address of `i` (decl src ln 126), asm ln 2541
   const i64 1
-  🔔 Live ln too early, using produced ln + 1
+  store i64 1, i64* %i, l162 c16, asm ln 2541
   Added assignment asm ln 2541, prod ln 162.16, live ln 163, enc None
 Store to declared address of `i` (decl src ln 126), asm ln 2496
   %inc = add nsw i64 %25, 1, l146 c31, asm ln 2495
-  🔔 Live ln too early, using produced ln + 1
+  store i64 %inc, i64* %i, l146 c31, asm ln 2496
   Added assignment asm ln 2496, prod ln 146.31, live ln 147, enc None
 Load from declared address of `i` (decl src ln 126), asm ln 2494
   %25 = load i64, i64* %i, l146 c31, asm ln 2494
-  🔔 Live ln too early, using produced ln + 1
+  %25 = load i64, i64* %i, l146 c31, asm ln 2494
   Added assignment asm ln 2494, prod ln 146.31, live ln 147, enc None
 Load from declared address of `i` (decl src ln 126), asm ln 2491
   %24 = load i64, i64* %i, l149 c12, asm ln 2491
-  🔔 Live ln too early, using produced ln + 1
+  %24 = load i64, i64* %i, l149 c12, asm ln 2491
   Added assignment asm ln 2491, prod ln 149.12, live ln 150, enc None
 Load from declared address of `i` (decl src ln 126), asm ln 2487
   %22 = load i64, i64* %i, l148 c15, asm ln 2487
-  🔔 Live ln too early, using produced ln + 1
+  %22 = load i64, i64* %i, l148 c15, asm ln 2487
   Added assignment asm ln 2487, prod ln 148.15, live ln 149, enc None
 Load from declared address of `i` (decl src ln 126), asm ln 2483
   %19 = load i64, i64* %i, l148 c40, asm ln 2483
-  🔔 Live ln too early, using produced ln + 1
+  %19 = load i64, i64* %i, l148 c40, asm ln 2483
   Added assignment asm ln 2483, prod ln 148.40, live ln 149, enc None
 Load from declared address of `i` (decl src ln 126), asm ln 2475
   %14 = load i64, i64* %i, l147 c33, asm ln 2475
-  🔔 Live ln too early, using produced ln + 1
+  %14 = load i64, i64* %i, l147 c33, asm ln 2475
   Added assignment asm ln 2475, prod ln 147.33, live ln 148, enc None
 Load from declared address of `i` (decl src ln 126), asm ln 2468
   %11 = load i64, i64* %i, l146 c14, asm ln 2468
-  🔔 Live ln too early, using produced ln + 1
+  %11 = load i64, i64* %i, l146 c14, asm ln 2468
   Added assignment asm ln 2468, prod ln 146.14, live ln 147, enc None
 Store to declared address of `i` (decl src ln 126), asm ln 2464
   const i64 0
-  🔔 Live ln too early, using produced ln + 1
+  store i64 0, i64* %i, l146 c9, asm ln 2464
   Added assignment asm ln 2464, prod ln 146.9, live ln 147, enc None
 Load from declared address of `arc` (decl src ln 127), asm ln 2601
   %61 = load %struct.arc*, %struct.arc** %arc, l171 c9, asm ln 2601
-  🔔 Live ln too early, using produced ln + 1
+  %61 = load %struct.arc*, %struct.arc** %arc, l171 c9, asm ln 2601
   Added assignment asm ln 2601, prod ln 171.9, live ln 172, enc None
 Load from declared address of `arc` (decl src ln 127), asm ln 2598
   %60 = load %struct.arc*, %struct.arc** %arc, l170 c9, asm ln 2598
-  🔔 Live ln too early, using produced ln + 1
+  %60 = load %struct.arc*, %struct.arc** %arc, l170 c9, asm ln 2598
   Added assignment asm ln 2598, prod ln 170.9, live ln 171, enc None
 Store to declared address of `arc` (decl src ln 127), asm ln 2582
   %56 = load %struct.arc*, %struct.arc** %55, l164 c23, asm ln 2581
+  store %struct.arc* %56, %struct.arc** %arc, l164 c21, asm ln 2582
   Added assignment asm ln 2582, prod ln 164.23, live ln 165, enc None
 Load from declared address of `arc` (decl src ln 127), asm ln 2563
   %49 = load %struct.arc*, %struct.arc** %arc, l163 c55, asm ln 2563
-  🔔 Live ln too early, using produced ln + 1
+  %49 = load %struct.arc*, %struct.arc** %arc, l163 c55, asm ln 2563
   Added assignment asm ln 2563, prod ln 163.55, live ln 164, enc None
 Store to declared address of `arc` (decl src ln 127), asm ln 2537
   const %struct.arc* null
-  🔔 Missing live ln, using produced ln + 1
+  store %struct.arc* null, %struct.arc** %arc, l160 c11, asm ln 2537
   Added assignment asm ln 2537, prod ln 160.11, live ln 161, enc None
 Store to declared address of `arc` (decl src ln 127), asm ln 2532
   %40 = load %struct.arc*, %struct.arc** %39, l156 c19, asm ln 2531
+  store %struct.arc* %40, %struct.arc** %arc, l156 c17, asm ln 2532
   Added assignment asm ln 2532, prod ln 156.19, live ln 157, enc None
 Load from declared address of `num_threads` (decl src ln 132), asm ln 2629
   %71 = load i64, i64* %num_threads, l184 c18, asm ln 2629
-  🔔 Live ln too early, using produced ln + 1
+  %71 = load i64, i64* %num_threads, l184 c18, asm ln 2629
   Added assignment asm ln 2629, prod ln 184.18, live ln 185, enc None
 Load from declared address of `num_threads` (decl src ln 132), asm ln 2546
   %42 = load i64, i64* %num_threads, l162 c25, asm ln 2546
-  🔔 Live ln too early, using produced ln + 1
+  %42 = load i64, i64* %num_threads, l162 c25, asm ln 2546
   Added assignment asm ln 2546, prod ln 162.25, live ln 163, enc None
 Load from declared address of `num_threads` (decl src ln 132), asm ln 2469
   %12 = load i64, i64* %num_threads, l146 c17, asm ln 2469
-  🔔 Live ln too early, using produced ln + 1
+  %12 = load i64, i64* %num_threads, l146 c17, asm ln 2469
   Added assignment asm ln 2469, prod ln 146.17, live ln 147, enc None
 Load from declared address of `num_threads` (decl src ln 132), asm ln 2434
   %2 = load i64, i64* %num_threads, l136 c27, asm ln 2434
-  🔔 Live ln too early, using produced ln + 1
+  %2 = load i64, i64* %num_threads, l136 c27, asm ln 2434
   Added assignment asm ln 2434, prod ln 136.27, live ln 137, enc None
 Load from declared address of `num_threads` (decl src ln 132), asm ln 2429
   %0 = load i64, i64* %num_threads, l135 c32, asm ln 2429
-  🔔 Live ln too early, using produced ln + 1
+  %0 = load i64, i64* %num_threads, l135 c32, asm ln 2429
   Added assignment asm ln 2429, prod ln 135.32, live ln 136, enc None
 Store to declared address of `num_threads` (decl src ln 132), asm ln 2428
   const i64 1
+  store i64 1, i64* %num_threads, l132 c8, asm ln 2428
   Added assignment asm ln 2428, prod ln 132.8, live ln 135, enc None
 
 #### After variables
 
 Value produced for `net` (decl src ln 111), asm ln 1850
   arg 0
+  @dbg.value(%struct.network.2* %net, !1672), asm ln 1850
   Added assignment asm ln 1850, prod ln 111.0, live ln 135, enc None
 Value produced for `new_arcs` (decl src ln 111), asm ln 1851
   arg 1
+  @dbg.value(i64* %new_arcs, !1674), asm ln 1851
   Added assignment asm ln 1851, prod ln 111.0, live ln 135, enc None
 Value produced for `new_arcs_array` (decl src ln 111), asm ln 1852
   arg 2
+  @dbg.value(i64* %new_arcs_array, !1675), asm ln 1852
   Added assignment asm ln 1852, prod ln 111.0, live ln 135, enc None
 Value produced for `arcs_pointer_sorted` (decl src ln 111), asm ln 1853
   arg 3
+  @dbg.value(%struct.arc.0*** %arcs_pointer_sorted, !1676), asm ln 1853
   Added assignment asm ln 1853, prod ln 111.0, live ln 135, enc None
 Value produced for `global_new` (decl src ln 124), asm ln 1854
   const i64 0
+  @dbg.value(i64 0, !1677), asm ln 1854
   Added assignment asm ln 1854, prod ln 124.0, live ln 135, enc None
 Value produced for `best_pos` (decl src ln 125), asm ln 1855
   const i64 0
+  @dbg.value(i64 0, !1678), asm ln 1855
   Added assignment asm ln 1855, prod ln 125.0, live ln 135, enc None
 Load from declared address of `arc` (decl src ln 127), asm ln 2009
   %21 = load %struct.arc.0*, %struct.arc.0** %arc, l171 c9, asm ln 2009
-  🔔 Live ln too early, using produced ln + 1
+  %21 = load %struct.arc.0*, %struct.arc.0** %arc, l171 c9, asm ln 2009
   Added assignment asm ln 2009, prod ln 171.9, live ln 172, enc None
 Load from declared address of `arc` (decl src ln 127), asm ln 2006
   %20 = load %struct.arc.0*, %struct.arc.0** %arc, l170 c9, asm ln 2006
-  🔔 Live ln too early, using produced ln + 1
+  %20 = load %struct.arc.0*, %struct.arc.0** %arc, l170 c9, asm ln 2006
   Added assignment asm ln 2006, prod ln 170.9, live ln 171, enc None
 Store to declared address of `arc` (decl src ln 127), asm ln 1991
   %19 = load %struct.arc.0*, %struct.arc.0** %18, l164 c23, asm ln 1990
+  store %struct.arc.0* %19, %struct.arc.0** %arc, l164 c21, asm ln 1991
   Added assignment asm ln 1991, prod ln 164.23, live ln 166, enc None
 Load from declared address of `arc` (decl src ln 127), asm ln 1976
   %16 = load %struct.arc.0*, %struct.arc.0** %arc, l163 c55, asm ln 1976
-  🔔 Live ln too early, using produced ln + 1
+  %16 = load %struct.arc.0*, %struct.arc.0** %arc, l163 c55, asm ln 1976
   Added assignment asm ln 1976, prod ln 163.55, live ln 164, enc None
 Store to declared address of `arc` (decl src ln 127), asm ln 1950
   const %struct.arc.0* null
-  🔔 Missing live ln, using produced ln + 1
+  store %struct.arc.0* null, %struct.arc.0** %arc, l160 c11, asm ln 1950
   Added assignment asm ln 1950, prod ln 160.11, live ln 161, enc None
 Store to declared address of `arc` (decl src ln 127), asm ln 1945
   %13 = load %struct.arc.0*, %struct.arc.0** %12, l156 c19, asm ln 1944
+  store %struct.arc.0* %13, %struct.arc.0** %arc, l156 c17, asm ln 1945
   Added assignment asm ln 1945, prod ln 156.19, live ln 158, enc None
 Value produced for `num_threads` (decl src ln 132), asm ln 1857
   const i64 1
+  @dbg.value(i64 1, !1681), asm ln 1857
   Added assignment asm ln 1857, prod ln 132.0, live ln 135, enc None
 Value produced for `positions` (decl src ln 122), asm ln 1861
   %0 = bitcast i8* %call to %struct.arc.0***, l135 c15, asm ln 1860
+  @dbg.value(%struct.arc.0*** %0, !1685), asm ln 1861
   Added assignment asm ln 1861, prod ln 135.15, live ln 136, enc None
 Value produced for `values` (decl src ln 123), asm ln 1865
   %1 = bitcast i8* %call2 to i64*, l136 c12, asm ln 1864
+  @dbg.value(i64* %1, !1689), asm ln 1865
   Added assignment asm ln 1865, prod ln 136.12, live ln 138, enc None
 Value produced for `max_new_arcs` (decl src ln 121), asm ln 1875
   %sub = sub nsw i64 %3, 1000000, l139 c44, asm ln 1874
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %sub, !1696), asm ln 1875
   Added assignment asm ln 1875, prod ln 139.44, live ln 140, enc None
 Value produced for `max_new_arcs` (decl src ln 121), asm ln 1882
   %sub4 = sub nsw i64 %4, 4000000, l141 c44, asm ln 1881
-  🔔 Missing live ln, using produced ln + 1
+  @dbg.value(i64 %sub4, !1696), asm ln 1882
   Added assignment asm ln 1882, prod ln 141.44, live ln 142, enc None
 Value produced for `i` (decl src ln 126), asm ln 1889
   const i64 0
+  @dbg.value(i64 0, !1702), asm ln 1889
   Added assignment asm ln 1889, prod ln 126.0, live ln 146, enc None
 Value produced for `i` (decl src ln 126), asm ln 1911
   %inc = add nsw i64 %i.0, 1, l146 c31, asm ln 1910
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %inc, !1702), asm ln 1911
   Added assignment asm ln 1911, prod ln 146.31, live ln 147, enc None
 Value produced for `start_id` (decl src ln 126), asm ln 1917
   %8 = load i64, i64* %m, l153 c19, asm ln 1916
+  @dbg.value(i64 %8, !1722), asm ln 1917
   Added assignment asm ln 1917, prod ln 153.19, live ln 154, enc None
 Value produced for `best_pos` (decl src ln 125), asm ln 1946
   const i64 0
-  🔔 Missing produced ln, using decl ln
+  @dbg.value(i64 0, !1678), asm ln 1946
   Added assignment asm ln 1946, prod ln 125.0, live ln 158, enc None
 Value produced for `i` (decl src ln 126), asm ln 1956
   const i64 1
-  🔔 Missing produced ln, using decl ln
+  @dbg.value(i64 1, !1702), asm ln 1956
   Added assignment asm ln 1956, prod ln 126.0, live ln 162, enc None
 Value produced for `i` (decl src ln 126), asm ln 1999
   %inc31 = add nsw i64 %i.1, 1, l162 c39, asm ln 1998
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %inc31, !1702), asm ln 1999
   Added assignment asm ln 1999, prod ln 162.39, live ln 163, enc None
 Value produced for `start_id` (decl src ln 126), asm ln 2004
   %inc33 = add nsw i64 %start_id.0, 1, l170 c27, asm ln 2003
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %inc33, !1722), asm ln 2004
   Added assignment asm ln 2004, prod ln 170.27, live ln 171, enc None
 Value produced for `global_new` (decl src ln 124), asm ln 2013
   %inc34 = add nsw i64 %global_new.0, 1, l172 c19, asm ln 2012
+  @dbg.value(i64 %inc34, !1677), asm ln 2013
   Added assignment asm ln 2013, prod ln 172.19, live ln 173, enc None
 Value produced for `i` (decl src ln 126), asm ln 2026
   const i64 0
-  🔔 Missing produced ln, using decl ln
+  @dbg.value(i64 0, !1702), asm ln 2026
   Added assignment asm ln 2026, prod ln 126.0, live ln 184, enc None
 Value produced for `i` (decl src ln 126), asm ln 2042
   %inc45 = add nsw i64 %i.2, 1, l184 c32, asm ln 2041
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %inc45, !1702), asm ln 2042
   Added assignment asm ln 2042, prod ln 184.32, live ln 185, enc None
 Value produced for `max_new_arcs` (decl src ln 121), asm ln 1887
   %max_new_arcs.0 = phi i64 [ %sub, %if.then ], [ %sub4, %if.else ], asm ln 1886
+  @dbg.value(i64 %max_new_arcs.0, !1696), asm ln 1887
   Added assignment asm ln 1887, prod ln 141.44, live ln 143, enc None
 Value produced for `i` (decl src ln 126), asm ln 1894
   %i.0 = phi i64 [ 0, %if.end ], [ %inc, %for.body ], asm ln 1893
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %i.0, !1702), asm ln 1894
   Added assignment asm ln 1894, prod ln 146.31, live ln 147, enc None
 Value produced for `start_id` (decl src ln 126), asm ln 1924
   %start_id.0 = phi i64 [ %8, %for.end ], [ %inc33, %for.end32 ], asm ln 1923
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %start_id.0, !1722), asm ln 1924
   Added assignment asm ln 1924, prod ln 170.27, live ln 171, enc None
 Value produced for `best_pos` (decl src ln 125), asm ln 1925
   %best_pos.0 = phi i64 [ 0, %for.end ], [ %best_pos.2, %for.end32 ], asm ln 1922
-  🔔 Missing produced ln, using decl ln
+  @dbg.value(i64 %best_pos.0, !1678), asm ln 1925
   Added assignment asm ln 1925, prod ln 125.0, live ln 154, enc None
 Value produced for `global_new` (decl src ln 124), asm ln 1926
   %global_new.0 = phi i64 [ 0, %for.end ], [ %inc34, %for.end32 ], asm ln 1921
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %global_new.0, !1677), asm ln 1926
   Added assignment asm ln 1926, prod ln 172.19, live ln 173, enc None
 Value produced for `best_pos` (decl src ln 125), asm ln 1955
   %best_pos.1 = phi i64 [ 0, %if.then14 ], [ %best_pos.0, %if.else16 ], asm ln 1954
-  🔔 Missing produced ln, using decl ln
+  @dbg.value(i64 %best_pos.1, !1678), asm ln 1955
   Added assignment asm ln 1955, prod ln 125.0, live ln 162, enc None
 Value produced for `i` (decl src ln 126), asm ln 1962
   %i.1 = phi i64 [ 1, %if.end17 ], [ %inc31, %for.inc30 ], asm ln 1961
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %i.1, !1702), asm ln 1962
   Added assignment asm ln 1962, prod ln 162.39, live ln 163, enc None
 Value produced for `best_pos` (decl src ln 125), asm ln 1963
   %best_pos.2 = phi i64 [ %best_pos.1, %if.end17 ], [ %best_pos.3, %for.inc30 ], asm ln 1960
-  🔔 Missing produced ln, using decl ln
+  @dbg.value(i64 %best_pos.2, !1678), asm ln 1963
   Added assignment asm ln 1963, prod ln 125.0, live ln 162, enc None
 Value produced for `best_pos` (decl src ln 125), asm ln 1992
   %i.1 = phi i64 [ 1, %if.end17 ], [ %inc31, %for.inc30 ], asm ln 1961
+  @dbg.value(i64 %i.1, !1678), asm ln 1992
   Added assignment asm ln 1992, prod ln 162.39, live ln 166, enc None
 Value produced for `best_pos` (decl src ln 125), asm ln 1997
   %best_pos.3 = phi i64 [ %i.1, %if.then27 ], [ %best_pos.2, %lor.lhs.false ], [ %best_pos.2, %for.body20 ], asm ln 1996
-  🔔 Missing produced ln, using decl ln
+  @dbg.value(i64 %best_pos.3, !1678), asm ln 1997
   Added assignment asm ln 1997, prod ln 125.0, live ln 162, enc None
 Value produced for `i` (decl src ln 126), asm ln 2031
   %i.2 = phi i64 [ 0, %while.end ], [ %inc45, %for.body41 ], asm ln 2030
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %i.2, !1702), asm ln 2031
   Added assignment asm ln 2031, prod ln 184.32, live ln 185, enc None
 
 #### Summary
@@ -14510,42 +14678,46 @@ Test Execution:
 
 Load from declared address of `a1` (decl src ln 30), asm ln 2783
   %12 = load %struct.arc**, %struct.arc*** %a1.addr, l41 c9, asm ln 2783
-  🔔 Live ln too early, using produced ln + 1
+  %12 = load %struct.arc**, %struct.arc*** %a1.addr, l41 c9, asm ln 2783
   Added assignment asm ln 2783, prod ln 41.9, live ln 42, enc None
 Load from declared address of `a1` (decl src ln 30), asm ln 2767
   %6 = load %struct.arc**, %struct.arc*** %a1.addr, l39 c9, asm ln 2767
-  🔔 Live ln too early, using produced ln + 1
+  %6 = load %struct.arc**, %struct.arc*** %a1.addr, l39 c9, asm ln 2767
   Added assignment asm ln 2767, prod ln 39.9, live ln 40, enc None
 Load from declared address of `a1` (decl src ln 30), asm ln 2751
   %0 = load %struct.arc**, %struct.arc*** %a1.addr, l37 c9, asm ln 2751
-  🔔 Live ln too early, using produced ln + 1
+  %0 = load %struct.arc**, %struct.arc*** %a1.addr, l37 c9, asm ln 2751
   Added assignment asm ln 2751, prod ln 37.9, live ln 38, enc None
 Store to declared address of `a1` (decl src ln 30), asm ln 2747
   arg 0
+  store %struct.arc** %a1, %struct.arc*** %a1.addr, asm ln 2747
   Added assignment asm ln 2747, prod ln 30.0, live ln 37, enc None
 Load from declared address of `a2` (decl src ln 30), asm ln 2787
   %15 = load %struct.arc**, %struct.arc*** %a2.addr, l41 c21, asm ln 2787
-  🔔 Live ln too early, using produced ln + 1
+  %15 = load %struct.arc**, %struct.arc*** %a2.addr, l41 c21, asm ln 2787
   Added assignment asm ln 2787, prod ln 41.21, live ln 42, enc None
 Load from declared address of `a2` (decl src ln 30), asm ln 2771
   %9 = load %struct.arc**, %struct.arc*** %a2.addr, l39 c23, asm ln 2771
-  🔔 Live ln too early, using produced ln + 1
+  %9 = load %struct.arc**, %struct.arc*** %a2.addr, l39 c23, asm ln 2771
   Added assignment asm ln 2771, prod ln 39.23, live ln 40, enc None
 Load from declared address of `a2` (decl src ln 30), asm ln 2755
   %3 = load %struct.arc**, %struct.arc*** %a2.addr, l37 c23, asm ln 2755
-  🔔 Live ln too early, using produced ln + 1
+  %3 = load %struct.arc**, %struct.arc*** %a2.addr, l37 c23, asm ln 2755
   Added assignment asm ln 2755, prod ln 37.23, live ln 38, enc None
 Store to declared address of `a2` (decl src ln 30), asm ln 2749
   arg 1
+  store %struct.arc** %a2, %struct.arc*** %a2.addr, asm ln 2749
   Added assignment asm ln 2749, prod ln 30.0, live ln 37, enc None
 
 #### After variables
 
 Value produced for `a1` (decl src ln 30), asm ln 2123
   arg 0
+  @dbg.value(%struct.arc.0** %a1, !1849), asm ln 2123
   Added assignment asm ln 2123, prod ln 30.0, live ln 37, enc None
 Value produced for `a2` (decl src ln 30), asm ln 2124
   arg 1
+  @dbg.value(%struct.arc.0** %a2, !1851), asm ln 2124
   Added assignment asm ln 2124, prod ln 30.0, live ln 37, enc None
 
 #### Summary
@@ -14775,205 +14947,218 @@ Test Execution:
 
 Load from declared address of `net` (decl src ln 203), asm ln 2958
   %52 = load %struct.network*, %struct.network** %net.addr, l251 c5, asm ln 2958
-  🔔 Live ln too early, using produced ln + 1
+  %52 = load %struct.network*, %struct.network** %net.addr, l251 c5, asm ln 2958
   Added assignment asm ln 2958, prod ln 251.5, live ln 252, enc None
 Load from declared address of `net` (decl src ln 203), asm ln 2950
   %48 = load %struct.network*, %struct.network** %net.addr, l250 c48, asm ln 2950
-  🔔 Live ln too early, using produced ln + 1
+  %48 = load %struct.network*, %struct.network** %net.addr, l250 c48, asm ln 2950
   Added assignment asm ln 2950, prod ln 250.48, live ln 251, enc None
 Load from declared address of `net` (decl src ln 203), asm ln 2946
   %45 = load %struct.network*, %struct.network** %net.addr, l250 c30, asm ln 2946
-  🔔 Live ln too early, using produced ln + 1
+  %45 = load %struct.network*, %struct.network** %net.addr, l250 c30, asm ln 2946
   Added assignment asm ln 2946, prod ln 250.30, live ln 251, enc None
 Load from declared address of `net` (decl src ln 203), asm ln 2929
   %40 = load %struct.network*, %struct.network** %net.addr, l246 c41, asm ln 2929
-  🔔 Live ln too early, using produced ln + 1
+  %40 = load %struct.network*, %struct.network** %net.addr, l246 c41, asm ln 2929
   Added assignment asm ln 2929, prod ln 246.41, live ln 247, enc None
 Load from declared address of `net` (decl src ln 203), asm ln 2892
   %28 = load %struct.network*, %struct.network** %net.addr, l243 c24, asm ln 2892
-  🔔 Live ln too early, using produced ln + 1
+  %28 = load %struct.network*, %struct.network** %net.addr, l243 c24, asm ln 2892
   Added assignment asm ln 2892, prod ln 243.24, live ln 244, enc None
 Load from declared address of `net` (decl src ln 203), asm ln 2884
   %25 = load %struct.network*, %struct.network** %net.addr, l242 c19, asm ln 2884
-  🔔 Live ln too early, using produced ln + 1
+  %25 = load %struct.network*, %struct.network** %net.addr, l242 c19, asm ln 2884
   Added assignment asm ln 2884, prod ln 242.19, live ln 243, enc None
 Load from declared address of `net` (decl src ln 203), asm ln 2881
   %24 = load %struct.network*, %struct.network** %net.addr, l240 c5, asm ln 2881
-  🔔 Live ln too early, using produced ln + 1
+  %24 = load %struct.network*, %struct.network** %net.addr, l240 c5, asm ln 2881
   Added assignment asm ln 2881, prod ln 240.5, live ln 241, enc None
 Load from declared address of `net` (decl src ln 203), asm ln 2877
   %22 = load %struct.network*, %struct.network** %net.addr, l240 c28, asm ln 2877
-  🔔 Live ln too early, using produced ln + 1
+  %22 = load %struct.network*, %struct.network** %net.addr, l240 c28, asm ln 2877
   Added assignment asm ln 2877, prod ln 240.28, live ln 241, enc None
 Load from declared address of `net` (decl src ln 203), asm ln 2873
   %20 = load %struct.network*, %struct.network** %net.addr, l239 c5, asm ln 2873
-  🔔 Live ln too early, using produced ln + 1
+  %20 = load %struct.network*, %struct.network** %net.addr, l239 c5, asm ln 2873
   Added assignment asm ln 2873, prod ln 239.5, live ln 240, enc None
 Load from declared address of `net` (decl src ln 203), asm ln 2868
   %17 = load %struct.network*, %struct.network** %net.addr, l237 c16, asm ln 2868
-  🔔 Live ln too early, using produced ln + 1
+  %17 = load %struct.network*, %struct.network** %net.addr, l237 c16, asm ln 2868
   Added assignment asm ln 2868, prod ln 237.16, live ln 238, enc None
 Load from declared address of `net` (decl src ln 203), asm ln 2858
   %15 = load %struct.network*, %struct.network** %net.addr, l232 c52, asm ln 2858
-  🔔 Live ln too early, using produced ln + 1
+  %15 = load %struct.network*, %struct.network** %net.addr, l232 c52, asm ln 2858
   Added assignment asm ln 2858, prod ln 232.52, live ln 233, enc None
 Load from declared address of `net` (decl src ln 203), asm ln 2846
   %11 = load %struct.network*, %struct.network** %net.addr, l229 c41, asm ln 2846
-  🔔 Live ln too early, using produced ln + 1
+  %11 = load %struct.network*, %struct.network** %net.addr, l229 c41, asm ln 2846
   Added assignment asm ln 2846, prod ln 229.41, live ln 230, enc None
 Load from declared address of `net` (decl src ln 203), asm ln 2842
   %8 = load %struct.network*, %struct.network** %net.addr, l229 c30, asm ln 2842
-  🔔 Live ln too early, using produced ln + 1
+  %8 = load %struct.network*, %struct.network** %net.addr, l229 c30, asm ln 2842
   Added assignment asm ln 2842, prod ln 229.30, live ln 230, enc None
 Load from declared address of `net` (decl src ln 203), asm ln 2837
   %6 = load %struct.network*, %struct.network** %net.addr, l218 c5, asm ln 2837
-  🔔 Live ln too early, using produced ln + 1
+  %6 = load %struct.network*, %struct.network** %net.addr, l218 c5, asm ln 2837
   Added assignment asm ln 2837, prod ln 218.5, live ln 219, enc None
 Load from declared address of `net` (decl src ln 203), asm ln 2834
   %4 = load %struct.network*, %struct.network** %net.addr, l218 c32, asm ln 2834
-  🔔 Live ln too early, using produced ln + 1
+  %4 = load %struct.network*, %struct.network** %net.addr, l218 c32, asm ln 2834
   Added assignment asm ln 2834, prod ln 218.32, live ln 219, enc None
 Load from declared address of `net` (decl src ln 203), asm ln 2829
   %2 = load %struct.network*, %struct.network** %net.addr, l217 c5, asm ln 2829
-  🔔 Live ln too early, using produced ln + 1
+  %2 = load %struct.network*, %struct.network** %net.addr, l217 c5, asm ln 2829
   Added assignment asm ln 2829, prod ln 217.5, live ln 218, enc None
 Load from declared address of `net` (decl src ln 203), asm ln 2826
   %0 = load %struct.network*, %struct.network** %net.addr, l217 c19, asm ln 2826
-  🔔 Live ln too early, using produced ln + 1
+  %0 = load %struct.network*, %struct.network** %net.addr, l217 c19, asm ln 2826
   Added assignment asm ln 2826, prod ln 217.19, live ln 218, enc None
 Store to declared address of `net` (decl src ln 203), asm ln 2818
   arg 0
+  store %struct.network* %net, %struct.network** %net.addr, asm ln 2818
   Added assignment asm ln 2818, prod ln 203.0, live ln 217, enc None
 Load from declared address of `arc` (decl src ln 209), asm ln 2957
   %51 = load %struct.arc*, %struct.arc** %arc, l251 c24, asm ln 2957
-  🔔 Live ln too early, using produced ln + 1
+  %51 = load %struct.arc*, %struct.arc** %arc, l251 c24, asm ln 2957
   Added assignment asm ln 2957, prod ln 251.24, live ln 252, enc None
 Store to declared address of `arc` (decl src ln 209), asm ln 2956
   %50 = bitcast i8* %call19 to %struct.arc*, l250 c11, asm ln 2955
+  store %struct.arc* %50, %struct.arc** %arc, l250 c9, asm ln 2956
   Added assignment asm ln 2956, prod ln 250.11, live ln 251, enc None
 Load from declared address of `arc` (decl src ln 209), asm ln 2876
   %21 = load %struct.arc*, %struct.arc** %arc, l240 c22, asm ln 2876
-  🔔 Live ln too early, using produced ln + 1
+  %21 = load %struct.arc*, %struct.arc** %arc, l240 c22, asm ln 2876
   Added assignment asm ln 2876, prod ln 240.22, live ln 241, enc None
 Load from declared address of `arc` (decl src ln 209), asm ln 2872
   %19 = load %struct.arc*, %struct.arc** %arc, l239 c17, asm ln 2872
-  🔔 Live ln too early, using produced ln + 1
+  %19 = load %struct.arc*, %struct.arc** %arc, l239 c17, asm ln 2872
   Added assignment asm ln 2872, prod ln 239.17, live ln 240, enc None
 Load from declared address of `arc` (decl src ln 209), asm ln 2853
   %14 = load %struct.arc*, %struct.arc** %arc, l230 c10, asm ln 2853
-  🔔 Live ln too early, using produced ln + 1
+  %14 = load %struct.arc*, %struct.arc** %arc, l230 c10, asm ln 2853
   Added assignment asm ln 2853, prod ln 230.10, live ln 231, enc None
 Store to declared address of `arc` (decl src ln 209), asm ln 2852
   %13 = bitcast i8* %call to %struct.arc*, l229 c11, asm ln 2851
+  store %struct.arc* %13, %struct.arc** %arc, l229 c9, asm ln 2852
   Added assignment asm ln 2852, prod ln 229.11, live ln 230, enc None
 Load from declared address of `old_arcs` (decl src ln 209), asm ln 2923
   %39 = load %struct.arc*, %struct.arc** %old_arcs, l245 c35, asm ln 2923
-  🔔 Live ln too early, using produced ln + 1
+  %39 = load %struct.arc*, %struct.arc** %old_arcs, l245 c35, asm ln 2923
   Added assignment asm ln 2923, prod ln 245.35, live ln 246, enc None
 Store to declared address of `old_arcs` (decl src ln 209), asm ln 2871
   %18 = load %struct.arc*, %struct.arc** %arcs6, l237 c21, asm ln 2870
+  store %struct.arc* %18, %struct.arc** %old_arcs, l237 c14, asm ln 2871
   Added assignment asm ln 2871, prod ln 237.21, live ln 239, enc None
 Store to declared address of `node` (decl src ln 210), asm ln 2942
   %incdec.ptr16 = getelementptr inbounds %struct.node, %struct.node* %44, i32 1, l243 c58, asm ln 2941
-  🔔 Live ln too early, using produced ln + 1
+  store %struct.node* %incdec.ptr16, %struct.node** %node, l243 c58, asm ln 2942
   Added assignment asm ln 2942, prod ln 243.58, live ln 244, enc None
 Load from declared address of `node` (decl src ln 210), asm ln 2940
   %44 = load %struct.node*, %struct.node** %node, l243 c58, asm ln 2940
-  🔔 Live ln too early, using produced ln + 1
+  %44 = load %struct.node*, %struct.node** %node, l243 c58, asm ln 2940
   Added assignment asm ln 2940, prod ln 243.58, live ln 244, enc None
 Load from declared address of `node` (decl src ln 210), asm ln 2934
   %43 = load %struct.node*, %struct.node** %node, l246 c13, asm ln 2934
-  🔔 Live ln too early, using produced ln + 1
+  %43 = load %struct.node*, %struct.node** %node, l246 c13, asm ln 2934
   Added assignment asm ln 2934, prod ln 246.13, live ln 247, enc None
 Load from declared address of `node` (decl src ln 210), asm ln 2920
   %37 = load %struct.node*, %struct.node** %node, l245 c17, asm ln 2920
-  🔔 Live ln too early, using produced ln + 1
+  %37 = load %struct.node*, %struct.node** %node, l245 c17, asm ln 2920
   Added assignment asm ln 2920, prod ln 245.17, live ln 246, enc None
 Load from declared address of `node` (decl src ln 210), asm ln 2912
   %34 = load %struct.node*, %struct.node** %node, l244 c31, asm ln 2912
-  🔔 Live ln too early, using produced ln + 1
+  %34 = load %struct.node*, %struct.node** %node, l244 c31, asm ln 2912
   Added assignment asm ln 2912, prod ln 244.31, live ln 245, enc None
 Load from declared address of `node` (decl src ln 210), asm ln 2905
   %32 = load %struct.node*, %struct.node** %node, l244 c12, asm ln 2905
-  🔔 Live ln too early, using produced ln + 1
+  %32 = load %struct.node*, %struct.node** %node, l244 c12, asm ln 2905
   Added assignment asm ln 2905, prod ln 244.12, live ln 245, enc None
 Load from declared address of `node` (decl src ln 210), asm ln 2899
   %30 = load %struct.node*, %struct.node** %node, l243 c41, asm ln 2899
-  🔔 Live ln too early, using produced ln + 1
+  %30 = load %struct.node*, %struct.node** %node, l243 c41, asm ln 2899
   Added assignment asm ln 2899, prod ln 243.41, live ln 244, enc None
 Store to declared address of `node` (decl src ln 210), asm ln 2891
   %incdec.ptr = getelementptr inbounds %struct.node, %struct.node* %27, i32 1, l243 c13, asm ln 2890
-  🔔 Live ln too early, using produced ln + 1
+  store %struct.node* %incdec.ptr, %struct.node** %node, l243 c13, asm ln 2891
   Added assignment asm ln 2891, prod ln 243.13, live ln 244, enc None
 Load from declared address of `node` (decl src ln 210), asm ln 2889
   %27 = load %struct.node*, %struct.node** %node, l243 c13, asm ln 2889
-  🔔 Live ln too early, using produced ln + 1
+  %27 = load %struct.node*, %struct.node** %node, l243 c13, asm ln 2889
   Added assignment asm ln 2889, prod ln 243.13, live ln 244, enc None
 Store to declared address of `node` (decl src ln 210), asm ln 2887
   %26 = load %struct.node*, %struct.node** %nodes, l242 c24, asm ln 2886
-  🔔 Live ln too early, using produced ln + 1
+  store %struct.node* %26, %struct.node** %node, l242 c17, asm ln 2887
   Added assignment asm ln 2887, prod ln 242.24, live ln 243, enc None
 Load from declared address of `stop` (decl src ln 210), asm ln 2900
   %31 = load %struct.node*, %struct.node** %stop, l243 c48, asm ln 2900
-  🔔 Live ln too early, using produced ln + 1
+  %31 = load %struct.node*, %struct.node** %stop, l243 c48, asm ln 2900
   Added assignment asm ln 2900, prod ln 243.48, live ln 244, enc None
 Store to declared address of `stop` (decl src ln 210), asm ln 2895
   %29 = load %struct.node*, %struct.node** %stop_nodes, l243 c29, asm ln 2894
-  🔔 Live ln too early, using produced ln + 1
+  store %struct.node* %29, %struct.node** %stop, l243 c22, asm ln 2895
   Added assignment asm ln 2895, prod ln 243.29, live ln 244, enc None
 Load from declared address of `root` (decl src ln 210), asm ln 2915
   %36 = load %struct.node*, %struct.node** %root, l244 c45, asm ln 2915
-  🔔 Live ln too early, using produced ln + 1
+  %36 = load %struct.node*, %struct.node** %root, l244 c45, asm ln 2915
   Added assignment asm ln 2915, prod ln 244.45, live ln 245, enc None
 Store to declared address of `root` (decl src ln 210), asm ln 2888
   %26 = load %struct.node*, %struct.node** %nodes, l242 c24, asm ln 2886
+  store %struct.node* %26, %struct.node** %root, l242 c10, asm ln 2888
   Added assignment asm ln 2888, prod ln 242.24, live ln 243, enc None
 Load from declared address of `off` (decl src ln 211), asm ln 2932
   %42 = load i64, i64* %off, l246 c53, asm ln 2932
-  🔔 Live ln too early, using produced ln + 1
+  %42 = load i64, i64* %off, l246 c53, asm ln 2932
   Added assignment asm ln 2932, prod ln 246.53, live ln 247, enc None
 Store to declared address of `off` (decl src ln 211), asm ln 2928
   %sub.ptr.div = sdiv exact i64 %sub.ptr.sub, 72, l245 c33, asm ln 2927
+  store i64 %sub.ptr.div, i64* %off, l245 c15, asm ln 2928
   Added assignment asm ln 2928, prod ln 245.33, live ln 246, enc None
 
 #### After variables
 
 Value produced for `net` (decl src ln 203), asm ln 2163
   arg 0
+  @dbg.value(%struct.network.2* %net, !1876), asm ln 2163
   Added assignment asm ln 2163, prod ln 203.0, live ln 217, enc None
 Value produced for `arc` (decl src ln 209), asm ln 2184
   %7 = bitcast i8* %call to %struct.arc.0*, l229 c11, asm ln 2183
+  @dbg.value(%struct.arc.0* %7, !1890), asm ln 2184
   Added assignment asm ln 2184, prod ln 229.11, live ln 230, enc None
 Value produced for `old_arcs` (decl src ln 209), asm ln 2199
   %9 = load %struct.arc.0*, %struct.arc.0** %arcs6, l237 c21, asm ln 2198
+  @dbg.value(%struct.arc.0* %9, !1902), asm ln 2199
   Added assignment asm ln 2199, prod ln 237.21, live ln 239, enc None
 Value produced for `node` (decl src ln 210), asm ln 2209
   %11 = load %struct.node.1*, %struct.node.1** %nodes, l242 c24, asm ln 2208
+  @dbg.value(%struct.node.1* %11, !1910), asm ln 2209
   Added assignment asm ln 2209, prod ln 242.24, live ln 243, enc None
 Value produced for `root` (decl src ln 210), asm ln 2210
   %11 = load %struct.node.1*, %struct.node.1** %nodes, l242 c24, asm ln 2208
+  @dbg.value(%struct.node.1* %11, !1913), asm ln 2210
   Added assignment asm ln 2210, prod ln 242.24, live ln 243, enc None
 Value produced for `node` (decl src ln 210), asm ln 2212
   %incdec.ptr = getelementptr inbounds %struct.node.1, %struct.node.1* %11, i32 1, l243 c13, asm ln 2211
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(%struct.node.1* %incdec.ptr, !1910), asm ln 2212
   Added assignment asm ln 2212, prod ln 243.13, live ln 244, enc None
 Value produced for `stop` (decl src ln 210), asm ln 2215
   %12 = load %struct.node.1*, %struct.node.1** %stop_nodes, l243 c29, asm ln 2214
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(%struct.node.1* %12, !1917), asm ln 2215
   Added assignment asm ln 2215, prod ln 243.29, live ln 244, enc None
 Value produced for `off` (decl src ln 211), asm ln 2243
   %sub.ptr.div = sdiv exact i64 %sub.ptr.sub, 72, l245 c33, asm ln 2242
+  @dbg.value(i64 %sub.ptr.div, !1934), asm ln 2243
   Added assignment asm ln 2243, prod ln 245.33, live ln 246, enc None
 Value produced for `node` (decl src ln 210), asm ln 2253
   %incdec.ptr16 = getelementptr inbounds %struct.node.1, %struct.node.1* %node.0, i32 1, l243 c58, asm ln 2252
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(%struct.node.1* %incdec.ptr16, !1910), asm ln 2253
   Added assignment asm ln 2253, prod ln 243.58, live ln 244, enc None
 Value produced for `arc` (decl src ln 209), asm ln 2265
   %20 = bitcast i8* %call19 to %struct.arc.0*, l250 c11, asm ln 2264
+  @dbg.value(%struct.arc.0* %20, !1890), asm ln 2265
   Added assignment asm ln 2265, prod ln 250.11, live ln 251, enc None
 Value produced for `node` (decl src ln 210), asm ln 2220
   %node.0 = phi %struct.node.1* [ %incdec.ptr, %if.end ], [ %incdec.ptr16, %for.inc ], asm ln 2219
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(%struct.node.1* %node.0, !1910), asm ln 2220
   Added assignment asm ln 2220, prod ln 243.58, live ln 244, enc None
 
 #### Summary
@@ -15911,335 +16096,355 @@ Test Execution:
 
 Load from declared address of `newarc` (decl src ln 263), asm ln 3182
   %71 = load %struct.arc*, %struct.arc** %newarc.addr, l302 c9, asm ln 3182
-  🔔 Live ln too early, using produced ln + 1
+  %71 = load %struct.arc*, %struct.arc** %newarc.addr, l302 c9, asm ln 3182
   Added assignment asm ln 3182, prod ln 302.9, live ln 303, enc None
 Load from declared address of `newarc` (decl src ln 263), asm ln 3174
   %68 = load %struct.arc*, %struct.arc** %newarc.addr, l301 c9, asm ln 3174
-  🔔 Live ln too early, using produced ln + 1
+  %68 = load %struct.arc*, %struct.arc** %newarc.addr, l301 c9, asm ln 3174
   Added assignment asm ln 3174, prod ln 301.9, live ln 302, enc None
 Load from declared address of `newarc` (decl src ln 263), asm ln 3167
   %65 = load %struct.arc*, %struct.arc** %newarc.addr, l300 c9, asm ln 3167
-  🔔 Live ln too early, using produced ln + 1
+  %65 = load %struct.arc*, %struct.arc** %newarc.addr, l300 c9, asm ln 3167
   Added assignment asm ln 3167, prod ln 300.9, live ln 301, enc None
 Load from declared address of `newarc` (decl src ln 263), asm ln 3160
   %62 = load %struct.arc*, %struct.arc** %newarc.addr, l299 c9, asm ln 3160
-  🔔 Live ln too early, using produced ln + 1
+  %62 = load %struct.arc*, %struct.arc** %newarc.addr, l299 c9, asm ln 3160
   Added assignment asm ln 3160, prod ln 299.9, live ln 300, enc None
 Load from declared address of `newarc` (decl src ln 263), asm ln 3153
   %59 = load %struct.arc*, %struct.arc** %newarc.addr, l298 c9, asm ln 3153
-  🔔 Live ln too early, using produced ln + 1
+  %59 = load %struct.arc*, %struct.arc** %newarc.addr, l298 c9, asm ln 3153
   Added assignment asm ln 3153, prod ln 298.9, live ln 299, enc None
 Load from declared address of `newarc` (decl src ln 263), asm ln 3146
   %56 = load %struct.arc*, %struct.arc** %newarc.addr, l297 c9, asm ln 3146
-  🔔 Live ln too early, using produced ln + 1
+  %56 = load %struct.arc*, %struct.arc** %newarc.addr, l297 c9, asm ln 3146
   Added assignment asm ln 3146, prod ln 297.9, live ln 298, enc None
 Load from declared address of `newarc` (decl src ln 263), asm ln 3136
   %52 = load %struct.arc*, %struct.arc** %newarc.addr, l294 c9, asm ln 3136
-  🔔 Live ln too early, using produced ln + 1
+  %52 = load %struct.arc*, %struct.arc** %newarc.addr, l294 c9, asm ln 3136
   Added assignment asm ln 3136, prod ln 294.9, live ln 295, enc None
 Load from declared address of `newarc` (decl src ln 263), asm ln 3129
   %49 = load %struct.arc*, %struct.arc** %newarc.addr, l294 c34, asm ln 3129
-  🔔 Live ln too early, using produced ln + 1
+  %49 = load %struct.arc*, %struct.arc** %newarc.addr, l294 c34, asm ln 3129
   Added assignment asm ln 3129, prod ln 294.34, live ln 295, enc None
 Load from declared address of `newarc` (decl src ln 263), asm ln 3123
   %47 = load %struct.arc*, %struct.arc** %newarc.addr, l293 c9, asm ln 3123
-  🔔 Live ln too early, using produced ln + 1
+  %47 = load %struct.arc*, %struct.arc** %newarc.addr, l293 c9, asm ln 3123
   Added assignment asm ln 3123, prod ln 293.9, live ln 294, enc None
 Load from declared address of `newarc` (decl src ln 263), asm ln 3116
   %44 = load %struct.arc*, %struct.arc** %newarc.addr, l293 c34, asm ln 3116
-  🔔 Live ln too early, using produced ln + 1
+  %44 = load %struct.arc*, %struct.arc** %newarc.addr, l293 c34, asm ln 3116
   Added assignment asm ln 3116, prod ln 293.34, live ln 294, enc None
 Load from declared address of `newarc` (decl src ln 263), asm ln 3110
   %42 = load %struct.arc*, %struct.arc** %newarc.addr, l292 c9, asm ln 3110
-  🔔 Live ln too early, using produced ln + 1
+  %42 = load %struct.arc*, %struct.arc** %newarc.addr, l292 c9, asm ln 3110
   Added assignment asm ln 3110, prod ln 292.9, live ln 293, enc None
 Load from declared address of `newarc` (decl src ln 263), asm ln 3103
   %39 = load %struct.arc*, %struct.arc** %newarc.addr, l292 c34, asm ln 3103
-  🔔 Live ln too early, using produced ln + 1
+  %39 = load %struct.arc*, %struct.arc** %newarc.addr, l292 c34, asm ln 3103
   Added assignment asm ln 3103, prod ln 292.34, live ln 293, enc None
 Load from declared address of `newarc` (decl src ln 263), asm ln 3097
   %37 = load %struct.arc*, %struct.arc** %newarc.addr, l291 c9, asm ln 3097
-  🔔 Live ln too early, using produced ln + 1
+  %37 = load %struct.arc*, %struct.arc** %newarc.addr, l291 c9, asm ln 3097
   Added assignment asm ln 3097, prod ln 291.9, live ln 292, enc None
 Load from declared address of `newarc` (decl src ln 263), asm ln 3090
   %34 = load %struct.arc*, %struct.arc** %newarc.addr, l291 c34, asm ln 3090
-  🔔 Live ln too early, using produced ln + 1
+  %34 = load %struct.arc*, %struct.arc** %newarc.addr, l291 c34, asm ln 3090
   Added assignment asm ln 3090, prod ln 291.34, live ln 292, enc None
 Load from declared address of `newarc` (decl src ln 263), asm ln 3084
   %32 = load %struct.arc*, %struct.arc** %newarc.addr, l290 c9, asm ln 3084
-  🔔 Live ln too early, using produced ln + 1
+  %32 = load %struct.arc*, %struct.arc** %newarc.addr, l290 c9, asm ln 3084
   Added assignment asm ln 3084, prod ln 290.9, live ln 291, enc None
 Load from declared address of `newarc` (decl src ln 263), asm ln 3077
   %29 = load %struct.arc*, %struct.arc** %newarc.addr, l290 c34, asm ln 3077
-  🔔 Live ln too early, using produced ln + 1
+  %29 = load %struct.arc*, %struct.arc** %newarc.addr, l290 c34, asm ln 3077
   Added assignment asm ln 3077, prod ln 290.34, live ln 291, enc None
 Load from declared address of `newarc` (decl src ln 263), asm ln 3071
   %27 = load %struct.arc*, %struct.arc** %newarc.addr, l289 c9, asm ln 3071
-  🔔 Live ln too early, using produced ln + 1
+  %27 = load %struct.arc*, %struct.arc** %newarc.addr, l289 c9, asm ln 3071
   Added assignment asm ln 3071, prod ln 289.9, live ln 290, enc None
 Load from declared address of `newarc` (decl src ln 263), asm ln 3064
   %24 = load %struct.arc*, %struct.arc** %newarc.addr, l289 c34, asm ln 3064
-  🔔 Live ln too early, using produced ln + 1
+  %24 = load %struct.arc*, %struct.arc** %newarc.addr, l289 c34, asm ln 3064
   Added assignment asm ln 3064, prod ln 289.34, live ln 290, enc None
 Load from declared address of `newarc` (decl src ln 263), asm ln 3053
   %21 = load %struct.arc*, %struct.arc** %newarc.addr, l287 c40, asm ln 3053
-  🔔 Live ln too early, using produced ln + 1
+  %21 = load %struct.arc*, %struct.arc** %newarc.addr, l287 c40, asm ln 3053
   Added assignment asm ln 3053, prod ln 287.40, live ln 288, enc None
 Load from declared address of `newarc` (decl src ln 263), asm ln 3035
   %16 = load %struct.arc*, %struct.arc** %newarc.addr, l284 c5, asm ln 3035
-  🔔 Live ln too early, using produced ln + 1
+  %16 = load %struct.arc*, %struct.arc** %newarc.addr, l284 c5, asm ln 3035
   Added assignment asm ln 3035, prod ln 284.5, live ln 285, enc None
 Load from declared address of `newarc` (decl src ln 263), asm ln 3028
   %13 = load %struct.arc*, %struct.arc** %newarc.addr, l283 c5, asm ln 3028
-  🔔 Live ln too early, using produced ln + 1
+  %13 = load %struct.arc*, %struct.arc** %newarc.addr, l283 c5, asm ln 3028
   Added assignment asm ln 3028, prod ln 283.5, live ln 284, enc None
 Load from declared address of `newarc` (decl src ln 263), asm ln 3022
   %10 = load %struct.arc*, %struct.arc** %newarc.addr, l282 c5, asm ln 3022
-  🔔 Live ln too early, using produced ln + 1
+  %10 = load %struct.arc*, %struct.arc** %newarc.addr, l282 c5, asm ln 3022
   Added assignment asm ln 3022, prod ln 282.5, live ln 283, enc None
 Load from declared address of `newarc` (decl src ln 263), asm ln 3016
   %7 = load %struct.arc*, %struct.arc** %newarc.addr, l281 c5, asm ln 3016
-  🔔 Live ln too early, using produced ln + 1
+  %7 = load %struct.arc*, %struct.arc** %newarc.addr, l281 c5, asm ln 3016
   Added assignment asm ln 3016, prod ln 281.5, live ln 282, enc None
 Load from declared address of `newarc` (decl src ln 263), asm ln 3010
   %4 = load %struct.arc*, %struct.arc** %newarc.addr, l280 c5, asm ln 3010
-  🔔 Live ln too early, using produced ln + 1
+  %4 = load %struct.arc*, %struct.arc** %newarc.addr, l280 c5, asm ln 3010
   Added assignment asm ln 3010, prod ln 280.5, live ln 281, enc None
 Load from declared address of `newarc` (decl src ln 263), asm ln 3004
   %1 = load %struct.arc*, %struct.arc** %newarc.addr, l279 c5, asm ln 3004
-  🔔 Live ln too early, using produced ln + 1
+  %1 = load %struct.arc*, %struct.arc** %newarc.addr, l279 c5, asm ln 3004
   Added assignment asm ln 3004, prod ln 279.5, live ln 280, enc None
 Store to declared address of `newarc` (decl src ln 263), asm ln 2986
   arg 0
+  store %struct.arc* %newarc, %struct.arc** %newarc.addr, asm ln 2986
   Added assignment asm ln 2986, prod ln 263.0, live ln 279, enc None
 Load from declared address of `newpos` (decl src ln 263), asm ln 3040
   %18 = load i64, i64* %newpos.addr, l286 c11, asm ln 3040
-  🔔 Live ln too early, using produced ln + 1
+  %18 = load i64, i64* %newpos.addr, l286 c11, asm ln 3040
   Added assignment asm ln 3040, prod ln 286.11, live ln 287, enc None
 Load from declared address of `newpos` (decl src ln 263), asm ln 3036
   %17 = load i64, i64* %newpos.addr, l284 c12, asm ln 3036
-  🔔 Live ln too early, using produced ln + 1
+  %17 = load i64, i64* %newpos.addr, l284 c12, asm ln 3036
   Added assignment asm ln 3036, prod ln 284.12, live ln 285, enc None
 Load from declared address of `newpos` (decl src ln 263), asm ln 3029
   %14 = load i64, i64* %newpos.addr, l283 c12, asm ln 3029
-  🔔 Live ln too early, using produced ln + 1
+  %14 = load i64, i64* %newpos.addr, l283 c12, asm ln 3029
   Added assignment asm ln 3029, prod ln 283.12, live ln 284, enc None
 Load from declared address of `newpos` (decl src ln 263), asm ln 3023
   %11 = load i64, i64* %newpos.addr, l282 c12, asm ln 3023
-  🔔 Live ln too early, using produced ln + 1
+  %11 = load i64, i64* %newpos.addr, l282 c12, asm ln 3023
   Added assignment asm ln 3023, prod ln 282.12, live ln 283, enc None
 Load from declared address of `newpos` (decl src ln 263), asm ln 3017
   %8 = load i64, i64* %newpos.addr, l281 c12, asm ln 3017
-  🔔 Live ln too early, using produced ln + 1
+  %8 = load i64, i64* %newpos.addr, l281 c12, asm ln 3017
   Added assignment asm ln 3017, prod ln 281.12, live ln 282, enc None
 Load from declared address of `newpos` (decl src ln 263), asm ln 3011
   %5 = load i64, i64* %newpos.addr, l280 c12, asm ln 3011
-  🔔 Live ln too early, using produced ln + 1
+  %5 = load i64, i64* %newpos.addr, l280 c12, asm ln 3011
   Added assignment asm ln 3011, prod ln 280.12, live ln 281, enc None
 Load from declared address of `newpos` (decl src ln 263), asm ln 3005
   %2 = load i64, i64* %newpos.addr, l279 c12, asm ln 3005
-  🔔 Live ln too early, using produced ln + 1
+  %2 = load i64, i64* %newpos.addr, l279 c12, asm ln 3005
   Added assignment asm ln 3005, prod ln 279.12, live ln 280, enc None
 Store to declared address of `newpos` (decl src ln 263), asm ln 2988
   arg 1
+  store i64 %newpos, i64* %newpos.addr, asm ln 2988
   Added assignment asm ln 2988, prod ln 263.0, live ln 279, enc None
 Load from declared address of `tail` (decl src ln 263), asm ln 3145
   %55 = load %struct.node*, %struct.node** %tail.addr, l297 c34, asm ln 3145
-  🔔 Live ln too early, using produced ln + 1
+  %55 = load %struct.node*, %struct.node** %tail.addr, l297 c34, asm ln 3145
   Added assignment asm ln 3145, prod ln 297.34, live ln 298, enc None
 Load from declared address of `tail` (decl src ln 263), asm ln 3003
   %0 = load %struct.node*, %struct.node** %tail.addr, l279 c32, asm ln 3003
-  🔔 Live ln too early, using produced ln + 1
+  %0 = load %struct.node*, %struct.node** %tail.addr, l279 c32, asm ln 3003
   Added assignment asm ln 3003, prod ln 279.32, live ln 280, enc None
 Store to declared address of `tail` (decl src ln 263), asm ln 2990
   arg 2
+  store %struct.node* %tail, %struct.node** %tail.addr, asm ln 2990
   Added assignment asm ln 2990, prod ln 263.0, live ln 279, enc None
 Load from declared address of `head` (decl src ln 263), asm ln 3152
   %58 = load %struct.node*, %struct.node** %head.addr, l298 c34, asm ln 3152
-  🔔 Live ln too early, using produced ln + 1
+  %58 = load %struct.node*, %struct.node** %head.addr, l298 c34, asm ln 3152
   Added assignment asm ln 3152, prod ln 298.34, live ln 299, enc None
 Load from declared address of `head` (decl src ln 263), asm ln 3009
   %3 = load %struct.node*, %struct.node** %head.addr, l280 c32, asm ln 3009
-  🔔 Live ln too early, using produced ln + 1
+  %3 = load %struct.node*, %struct.node** %head.addr, l280 c32, asm ln 3009
   Added assignment asm ln 3009, prod ln 280.32, live ln 281, enc None
 Store to declared address of `head` (decl src ln 263), asm ln 2992
   arg 3
+  store %struct.node* %head, %struct.node** %head.addr, asm ln 2992
   Added assignment asm ln 2992, prod ln 263.0, live ln 279, enc None
 Load from declared address of `cost` (decl src ln 264), asm ln 3166
   %64 = load i64, i64* %cost.addr, l300 c34, asm ln 3166
-  🔔 Live ln too early, using produced ln + 1
+  %64 = load i64, i64* %cost.addr, l300 c34, asm ln 3166
   Added assignment asm ln 3166, prod ln 300.34, live ln 301, enc None
 Load from declared address of `cost` (decl src ln 264), asm ln 3159
   %61 = load i64, i64* %cost.addr, l299 c34, asm ln 3159
-  🔔 Live ln too early, using produced ln + 1
+  %61 = load i64, i64* %cost.addr, l299 c34, asm ln 3159
   Added assignment asm ln 3159, prod ln 299.34, live ln 300, enc None
 Load from declared address of `cost` (decl src ln 264), asm ln 3021
   %9 = load i64, i64* %cost.addr, l282 c32, asm ln 3021
-  🔔 Live ln too early, using produced ln + 1
+  %9 = load i64, i64* %cost.addr, l282 c32, asm ln 3021
   Added assignment asm ln 3021, prod ln 282.32, live ln 283, enc None
 Load from declared address of `cost` (decl src ln 264), asm ln 3015
   %6 = load i64, i64* %cost.addr, l281 c32, asm ln 3015
-  🔔 Live ln too early, using produced ln + 1
+  %6 = load i64, i64* %cost.addr, l281 c32, asm ln 3015
   Added assignment asm ln 3015, prod ln 281.32, live ln 282, enc None
 Store to declared address of `cost` (decl src ln 264), asm ln 2994
   arg 4
+  store i64 %cost, i64* %cost.addr, asm ln 2994
   Added assignment asm ln 2994, prod ln 264.0, live ln 279, enc None
 Load from declared address of `red_cost` (decl src ln 264), asm ln 3173
   %67 = load i64, i64* %red_cost.addr, l301 c42, asm ln 3173
-  🔔 Live ln too early, using produced ln + 1
+  %67 = load i64, i64* %red_cost.addr, l301 c42, asm ln 3173
   Added assignment asm ln 3173, prod ln 301.42, live ln 302, enc None
 Load from declared address of `red_cost` (decl src ln 264), asm ln 3052
   %20 = load i64, i64* %red_cost.addr, l287 c21, asm ln 3052
-  🔔 Live ln too early, using produced ln + 1
+  %20 = load i64, i64* %red_cost.addr, l287 c21, asm ln 3052
   Added assignment asm ln 3052, prod ln 287.21, live ln 288, enc None
 Load from declared address of `red_cost` (decl src ln 264), asm ln 3027
   %12 = load i64, i64* %red_cost.addr, l283 c40, asm ln 3027
-  🔔 Live ln too early, using produced ln + 1
+  %12 = load i64, i64* %red_cost.addr, l283 c40, asm ln 3027
   Added assignment asm ln 3027, prod ln 283.40, live ln 284, enc None
 Store to declared address of `red_cost` (decl src ln 264), asm ln 2996
   arg 5
+  store i64 %red_cost, i64* %red_cost.addr, asm ln 2996
   Added assignment asm ln 2996, prod ln 264.0, live ln 279, enc None
 Store to declared address of `m` (decl src ln 264), asm ln 2998
   arg 6
+  store i64 %m, i64* %m.addr, asm ln 2998
   @dbg.declare without read users, removable
   Added assignment asm ln 2998, prod ln 264.0, live ln 279, enc None
 Load from declared address of `number` (decl src ln 264), asm ln 3180
   %70 = load i64, i64* %number.addr, l302 c34, asm ln 3180
-  🔔 Live ln too early, using produced ln + 1
+  %70 = load i64, i64* %number.addr, l302 c34, asm ln 3180
   Added assignment asm ln 3180, prod ln 302.34, live ln 303, enc None
 Load from declared address of `number` (decl src ln 264), asm ln 3033
   %15 = load i64, i64* %number.addr, l284 c32, asm ln 3033
-  🔔 Live ln too early, using produced ln + 1
+  %15 = load i64, i64* %number.addr, l284 c32, asm ln 3033
   Added assignment asm ln 3033, prod ln 284.32, live ln 285, enc None
 Store to declared address of `number` (decl src ln 264), asm ln 3000
   arg 7
+  store i64 %number, i64* %number.addr, asm ln 3000
   Added assignment asm ln 3000, prod ln 264.0, live ln 279, enc None
 Load from declared address of `pos` (decl src ln 277), asm ln 3183
   %72 = load i64, i64* %pos, l302 c16, asm ln 3183
-  🔔 Live ln too early, using produced ln + 1
+  %72 = load i64, i64* %pos, l302 c16, asm ln 3183
   Added assignment asm ln 3183, prod ln 302.16, live ln 303, enc None
 Load from declared address of `pos` (decl src ln 277), asm ln 3175
   %69 = load i64, i64* %pos, l301 c16, asm ln 3175
-  🔔 Live ln too early, using produced ln + 1
+  %69 = load i64, i64* %pos, l301 c16, asm ln 3175
   Added assignment asm ln 3175, prod ln 301.16, live ln 302, enc None
 Load from declared address of `pos` (decl src ln 277), asm ln 3168
   %66 = load i64, i64* %pos, l300 c16, asm ln 3168
-  🔔 Live ln too early, using produced ln + 1
+  %66 = load i64, i64* %pos, l300 c16, asm ln 3168
   Added assignment asm ln 3168, prod ln 300.16, live ln 301, enc None
 Load from declared address of `pos` (decl src ln 277), asm ln 3161
   %63 = load i64, i64* %pos, l299 c16, asm ln 3161
-  🔔 Live ln too early, using produced ln + 1
+  %63 = load i64, i64* %pos, l299 c16, asm ln 3161
   Added assignment asm ln 3161, prod ln 299.16, live ln 300, enc None
 Load from declared address of `pos` (decl src ln 277), asm ln 3154
   %60 = load i64, i64* %pos, l298 c16, asm ln 3154
-  🔔 Live ln too early, using produced ln + 1
+  %60 = load i64, i64* %pos, l298 c16, asm ln 3154
   Added assignment asm ln 3154, prod ln 298.16, live ln 299, enc None
 Load from declared address of `pos` (decl src ln 277), asm ln 3147
   %57 = load i64, i64* %pos, l297 c16, asm ln 3147
-  🔔 Live ln too early, using produced ln + 1
+  %57 = load i64, i64* %pos, l297 c16, asm ln 3147
   Added assignment asm ln 3147, prod ln 297.16, live ln 298, enc None
 Store to declared address of `pos` (decl src ln 277), asm ln 3144
   %div55 = sdiv i64 %54, 2, l296 c18, asm ln 3143
+  store i64 %div55, i64* %pos, l296 c13, asm ln 3144
   Added assignment asm ln 3144, prod ln 296.18, live ln 297, enc None
 Load from declared address of `pos` (decl src ln 277), asm ln 3142
   %54 = load i64, i64* %pos, l296 c15, asm ln 3142
-  🔔 Live ln too early, using produced ln + 1
+  %54 = load i64, i64* %pos, l296 c15, asm ln 3142
   Added assignment asm ln 3142, prod ln 296.15, live ln 297, enc None
 Load from declared address of `pos` (decl src ln 277), asm ln 3137
   %53 = load i64, i64* %pos, l294 c16, asm ln 3137
-  🔔 Live ln too early, using produced ln + 1
+  %53 = load i64, i64* %pos, l294 c16, asm ln 3137
   Added assignment asm ln 3137, prod ln 294.16, live ln 295, enc None
 Load from declared address of `pos` (decl src ln 277), asm ln 3130
   %50 = load i64, i64* %pos, l294 c41, asm ln 3130
-  🔔 Live ln too early, using produced ln + 1
+  %50 = load i64, i64* %pos, l294 c41, asm ln 3130
   Added assignment asm ln 3130, prod ln 294.41, live ln 295, enc None
 Load from declared address of `pos` (decl src ln 277), asm ln 3124
   %48 = load i64, i64* %pos, l293 c16, asm ln 3124
-  🔔 Live ln too early, using produced ln + 1
+  %48 = load i64, i64* %pos, l293 c16, asm ln 3124
   Added assignment asm ln 3124, prod ln 293.16, live ln 294, enc None
 Load from declared address of `pos` (decl src ln 277), asm ln 3117
   %45 = load i64, i64* %pos, l293 c41, asm ln 3117
-  🔔 Live ln too early, using produced ln + 1
+  %45 = load i64, i64* %pos, l293 c41, asm ln 3117
   Added assignment asm ln 3117, prod ln 293.41, live ln 294, enc None
 Load from declared address of `pos` (decl src ln 277), asm ln 3111
   %43 = load i64, i64* %pos, l292 c16, asm ln 3111
-  🔔 Live ln too early, using produced ln + 1
+  %43 = load i64, i64* %pos, l292 c16, asm ln 3111
   Added assignment asm ln 3111, prod ln 292.16, live ln 293, enc None
 Load from declared address of `pos` (decl src ln 277), asm ln 3104
   %40 = load i64, i64* %pos, l292 c41, asm ln 3104
-  🔔 Live ln too early, using produced ln + 1
+  %40 = load i64, i64* %pos, l292 c41, asm ln 3104
   Added assignment asm ln 3104, prod ln 292.41, live ln 293, enc None
 Load from declared address of `pos` (decl src ln 277), asm ln 3098
   %38 = load i64, i64* %pos, l291 c16, asm ln 3098
-  🔔 Live ln too early, using produced ln + 1
+  %38 = load i64, i64* %pos, l291 c16, asm ln 3098
   Added assignment asm ln 3098, prod ln 291.16, live ln 292, enc None
 Load from declared address of `pos` (decl src ln 277), asm ln 3091
   %35 = load i64, i64* %pos, l291 c41, asm ln 3091
-  🔔 Live ln too early, using produced ln + 1
+  %35 = load i64, i64* %pos, l291 c41, asm ln 3091
   Added assignment asm ln 3091, prod ln 291.41, live ln 292, enc None
 Load from declared address of `pos` (decl src ln 277), asm ln 3085
   %33 = load i64, i64* %pos, l290 c16, asm ln 3085
-  🔔 Live ln too early, using produced ln + 1
+  %33 = load i64, i64* %pos, l290 c16, asm ln 3085
   Added assignment asm ln 3085, prod ln 290.16, live ln 291, enc None
 Load from declared address of `pos` (decl src ln 277), asm ln 3078
   %30 = load i64, i64* %pos, l290 c41, asm ln 3078
-  🔔 Live ln too early, using produced ln + 1
+  %30 = load i64, i64* %pos, l290 c41, asm ln 3078
   Added assignment asm ln 3078, prod ln 290.41, live ln 291, enc None
 Load from declared address of `pos` (decl src ln 277), asm ln 3072
   %28 = load i64, i64* %pos, l289 c16, asm ln 3072
-  🔔 Live ln too early, using produced ln + 1
+  %28 = load i64, i64* %pos, l289 c16, asm ln 3072
   Added assignment asm ln 3072, prod ln 289.16, live ln 290, enc None
 Load from declared address of `pos` (decl src ln 277), asm ln 3065
   %25 = load i64, i64* %pos, l289 c41, asm ln 3065
-  🔔 Live ln too early, using produced ln + 1
+  %25 = load i64, i64* %pos, l289 c41, asm ln 3065
   Added assignment asm ln 3065, prod ln 289.41, live ln 290, enc None
 Load from declared address of `pos` (decl src ln 277), asm ln 3054
   %22 = load i64, i64* %pos, l287 c47, asm ln 3054
-  🔔 Live ln too early, using produced ln + 1
+  %22 = load i64, i64* %pos, l287 c47, asm ln 3054
   Added assignment asm ln 3054, prod ln 287.47, live ln 288, enc None
 Load from declared address of `pos` (decl src ln 277), asm ln 3046
   %19 = load i64, i64* %pos, l287 c12, asm ln 3046
-  🔔 Live ln too early, using produced ln + 1
+  %19 = load i64, i64* %pos, l287 c12, asm ln 3046
   Added assignment asm ln 3046, prod ln 287.12, live ln 288, enc None
 Store to declared address of `pos` (decl src ln 277), asm ln 3042
   %add = add nsw i64 %18, 1, l286 c17, asm ln 3041
+  store i64 %add, i64* %pos, l286 c9, asm ln 3042
   Added assignment asm ln 3042, prod ln 286.17, live ln 287, enc None
 
 #### After variables
 
 Value produced for `newarc` (decl src ln 263), asm ln 2283
   arg 0
+  @dbg.value(%struct.arc.0* %newarc, !1960), asm ln 2283
   Added assignment asm ln 2283, prod ln 263.0, live ln 279, enc None
 Value produced for `newpos` (decl src ln 263), asm ln 2284
   arg 1
+  @dbg.value(i64 %newpos, !1962), asm ln 2284
   Added assignment asm ln 2284, prod ln 263.0, live ln 279, enc None
 Value produced for `tail` (decl src ln 263), asm ln 2285
   arg 2
+  @dbg.value(%struct.node.1* %tail, !1963), asm ln 2285
   Added assignment asm ln 2285, prod ln 263.0, live ln 279, enc None
 Value produced for `head` (decl src ln 263), asm ln 2286
   arg 3
+  @dbg.value(%struct.node.1* %head, !1964), asm ln 2286
   Added assignment asm ln 2286, prod ln 263.0, live ln 279, enc None
 Value produced for `cost` (decl src ln 264), asm ln 2287
   arg 4
+  @dbg.value(i64 %cost, !1965), asm ln 2287
   Added assignment asm ln 2287, prod ln 264.0, live ln 279, enc None
 Value produced for `red_cost` (decl src ln 264), asm ln 2288
   arg 5
+  @dbg.value(i64 %red_cost, !1966), asm ln 2288
   Added assignment asm ln 2288, prod ln 264.0, live ln 279, enc None
 Value produced for `m` (decl src ln 264), asm ln 2289
   arg 6
+  @dbg.value(i64 %m, !1967), asm ln 2289
   Added assignment asm ln 2289, prod ln 264.0, live ln 279, enc None
 Value produced for `number` (decl src ln 264), asm ln 2290
   arg 7
+  @dbg.value(i64 %number, !1968), asm ln 2290
   Added assignment asm ln 2290, prod ln 264.0, live ln 279, enc None
 Value produced for `pos` (decl src ln 277), asm ln 2311
   %add = add nsw i64 %newpos, 1, l286 c17, asm ln 2310
+  @dbg.value(i64 %add, !1989), asm ln 2311
   Added assignment asm ln 2311, prod ln 286.17, live ln 287, enc None
 Value produced for `pos` (decl src ln 277), asm ln 2386
   %div55 = sdiv i64 %pos.0, 2, l296 c18, asm ln 2385
+  @dbg.value(i64 %div55, !1989), asm ln 2386
   Added assignment asm ln 2386, prod ln 296.18, live ln 297, enc None
 Value produced for `pos` (decl src ln 277), asm ln 2316
   %pos.0 = phi i64 [ %add, %entry ], [ %div55, %while.body ], asm ln 2315
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %pos.0, !1989), asm ln 2316
   Added assignment asm ln 2316, prod ln 296.18, live ln 297, enc None
 
 #### Summary
@@ -16313,8 +16518,8 @@ Collected value for `newpos`
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;1;31mKLEE: ERROR: implicit.c:279: Query timed out (resolve).
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0mKLEE: HaltTimer invoked
 [0mKLEE: halting execution, dumping remaining states
 [0m
@@ -17113,371 +17318,394 @@ Test Execution:
 
 Load from declared address of `newarc` (decl src ln 314), asm ln 3420
   %78 = load %struct.arc*, %struct.arc** %newarc.addr, l358 c38, asm ln 3420
-  🔔 Live ln too early, using produced ln + 1
+  %78 = load %struct.arc*, %struct.arc** %newarc.addr, l358 c38, asm ln 3420
   Added assignment asm ln 3420, prod ln 358.38, live ln 359, enc None
 Load from declared address of `newarc` (decl src ln 314), asm ln 3414
   %75 = load %struct.arc*, %struct.arc** %newarc.addr, l358 c17, asm ln 3414
-  🔔 Live ln too early, using produced ln + 1
+  %75 = load %struct.arc*, %struct.arc** %newarc.addr, l358 c17, asm ln 3414
   Added assignment asm ln 3414, prod ln 358.17, live ln 359, enc None
 Load from declared address of `newarc` (decl src ln 314), asm ln 3396
   %69 = load %struct.arc*, %struct.arc** %newarc.addr, l354 c9, asm ln 3396
-  🔔 Live ln too early, using produced ln + 1
+  %69 = load %struct.arc*, %struct.arc** %newarc.addr, l354 c9, asm ln 3396
   Added assignment asm ln 3396, prod ln 354.9, live ln 355, enc None
 Load from declared address of `newarc` (decl src ln 314), asm ln 3388
   %66 = load %struct.arc*, %struct.arc** %newarc.addr, l353 c9, asm ln 3388
-  🔔 Live ln too early, using produced ln + 1
+  %66 = load %struct.arc*, %struct.arc** %newarc.addr, l353 c9, asm ln 3388
   Added assignment asm ln 3388, prod ln 353.9, live ln 354, enc None
 Load from declared address of `newarc` (decl src ln 314), asm ln 3381
   %63 = load %struct.arc*, %struct.arc** %newarc.addr, l352 c9, asm ln 3381
-  🔔 Live ln too early, using produced ln + 1
+  %63 = load %struct.arc*, %struct.arc** %newarc.addr, l352 c9, asm ln 3381
   Added assignment asm ln 3381, prod ln 352.9, live ln 353, enc None
 Load from declared address of `newarc` (decl src ln 314), asm ln 3374
   %60 = load %struct.arc*, %struct.arc** %newarc.addr, l351 c9, asm ln 3374
-  🔔 Live ln too early, using produced ln + 1
+  %60 = load %struct.arc*, %struct.arc** %newarc.addr, l351 c9, asm ln 3374
   Added assignment asm ln 3374, prod ln 351.9, live ln 352, enc None
 Load from declared address of `newarc` (decl src ln 314), asm ln 3367
   %57 = load %struct.arc*, %struct.arc** %newarc.addr, l350 c9, asm ln 3367
-  🔔 Live ln too early, using produced ln + 1
+  %57 = load %struct.arc*, %struct.arc** %newarc.addr, l350 c9, asm ln 3367
   Added assignment asm ln 3367, prod ln 350.9, live ln 351, enc None
 Load from declared address of `newarc` (decl src ln 314), asm ln 3360
   %54 = load %struct.arc*, %struct.arc** %newarc.addr, l349 c9, asm ln 3360
-  🔔 Live ln too early, using produced ln + 1
+  %54 = load %struct.arc*, %struct.arc** %newarc.addr, l349 c9, asm ln 3360
   Added assignment asm ln 3360, prod ln 349.9, live ln 350, enc None
 Load from declared address of `newarc` (decl src ln 314), asm ln 3353
   %51 = load %struct.arc*, %struct.arc** %newarc.addr, l347 c9, asm ln 3353
-  🔔 Live ln too early, using produced ln + 1
+  %51 = load %struct.arc*, %struct.arc** %newarc.addr, l347 c9, asm ln 3353
   Added assignment asm ln 3353, prod ln 347.9, live ln 348, enc None
 Load from declared address of `newarc` (decl src ln 314), asm ln 3347
   %48 = load %struct.arc*, %struct.arc** %newarc.addr, l347 c30, asm ln 3347
-  🔔 Live ln too early, using produced ln + 1
+  %48 = load %struct.arc*, %struct.arc** %newarc.addr, l347 c30, asm ln 3347
   Added assignment asm ln 3347, prod ln 347.30, live ln 348, enc None
 Load from declared address of `newarc` (decl src ln 314), asm ln 3341
   %46 = load %struct.arc*, %struct.arc** %newarc.addr, l346 c9, asm ln 3341
-  🔔 Live ln too early, using produced ln + 1
+  %46 = load %struct.arc*, %struct.arc** %newarc.addr, l346 c9, asm ln 3341
   Added assignment asm ln 3341, prod ln 346.9, live ln 347, enc None
 Load from declared address of `newarc` (decl src ln 314), asm ln 3335
   %43 = load %struct.arc*, %struct.arc** %newarc.addr, l346 c30, asm ln 3335
-  🔔 Live ln too early, using produced ln + 1
+  %43 = load %struct.arc*, %struct.arc** %newarc.addr, l346 c30, asm ln 3335
   Added assignment asm ln 3335, prod ln 346.30, live ln 347, enc None
 Load from declared address of `newarc` (decl src ln 314), asm ln 3329
   %41 = load %struct.arc*, %struct.arc** %newarc.addr, l345 c9, asm ln 3329
-  🔔 Live ln too early, using produced ln + 1
+  %41 = load %struct.arc*, %struct.arc** %newarc.addr, l345 c9, asm ln 3329
   Added assignment asm ln 3329, prod ln 345.9, live ln 346, enc None
 Load from declared address of `newarc` (decl src ln 314), asm ln 3323
   %38 = load %struct.arc*, %struct.arc** %newarc.addr, l345 c34, asm ln 3323
-  🔔 Live ln too early, using produced ln + 1
+  %38 = load %struct.arc*, %struct.arc** %newarc.addr, l345 c34, asm ln 3323
   Added assignment asm ln 3323, prod ln 345.34, live ln 346, enc None
 Load from declared address of `newarc` (decl src ln 314), asm ln 3317
   %36 = load %struct.arc*, %struct.arc** %newarc.addr, l344 c9, asm ln 3317
-  🔔 Live ln too early, using produced ln + 1
+  %36 = load %struct.arc*, %struct.arc** %newarc.addr, l344 c9, asm ln 3317
   Added assignment asm ln 3317, prod ln 344.9, live ln 345, enc None
 Load from declared address of `newarc` (decl src ln 314), asm ln 3311
   %33 = load %struct.arc*, %struct.arc** %newarc.addr, l344 c30, asm ln 3311
-  🔔 Live ln too early, using produced ln + 1
+  %33 = load %struct.arc*, %struct.arc** %newarc.addr, l344 c30, asm ln 3311
   Added assignment asm ln 3311, prod ln 344.30, live ln 345, enc None
 Load from declared address of `newarc` (decl src ln 314), asm ln 3305
   %31 = load %struct.arc*, %struct.arc** %newarc.addr, l343 c9, asm ln 3305
-  🔔 Live ln too early, using produced ln + 1
+  %31 = load %struct.arc*, %struct.arc** %newarc.addr, l343 c9, asm ln 3305
   Added assignment asm ln 3305, prod ln 343.9, live ln 344, enc None
 Load from declared address of `newarc` (decl src ln 314), asm ln 3299
   %28 = load %struct.arc*, %struct.arc** %newarc.addr, l343 c30, asm ln 3299
-  🔔 Live ln too early, using produced ln + 1
+  %28 = load %struct.arc*, %struct.arc** %newarc.addr, l343 c30, asm ln 3299
   Added assignment asm ln 3299, prod ln 343.30, live ln 344, enc None
 Load from declared address of `newarc` (decl src ln 314), asm ln 3293
   %26 = load %struct.arc*, %struct.arc** %newarc.addr, l342 c9, asm ln 3293
-  🔔 Live ln too early, using produced ln + 1
+  %26 = load %struct.arc*, %struct.arc** %newarc.addr, l342 c9, asm ln 3293
   Added assignment asm ln 3293, prod ln 342.9, live ln 343, enc None
 Load from declared address of `newarc` (decl src ln 314), asm ln 3287
   %23 = load %struct.arc*, %struct.arc** %newarc.addr, l342 c30, asm ln 3287
-  🔔 Live ln too early, using produced ln + 1
+  %23 = load %struct.arc*, %struct.arc** %newarc.addr, l342 c30, asm ln 3287
   Added assignment asm ln 3287, prod ln 342.30, live ln 343, enc None
 Load from declared address of `newarc` (decl src ln 314), asm ln 3277
   %20 = load %struct.arc*, %struct.arc** %newarc.addr, l340 c63, asm ln 3277
-  🔔 Live ln too early, using produced ln + 1
+  %20 = load %struct.arc*, %struct.arc** %newarc.addr, l340 c63, asm ln 3277
   Added assignment asm ln 3277, prod ln 340.63, live ln 341, enc None
 Load from declared address of `newarc` (decl src ln 314), asm ln 3258
   %14 = load %struct.arc*, %struct.arc** %newarc.addr, l339 c29, asm ln 3258
-  🔔 Live ln too early, using produced ln + 1
+  %14 = load %struct.arc*, %struct.arc** %newarc.addr, l339 c29, asm ln 3258
   Added assignment asm ln 3258, prod ln 339.29, live ln 340, enc None
 Load from declared address of `newarc` (decl src ln 314), asm ln 3254
   %12 = load %struct.arc*, %struct.arc** %newarc.addr, l339 c12, asm ln 3254
-  🔔 Live ln too early, using produced ln + 1
+  %12 = load %struct.arc*, %struct.arc** %newarc.addr, l339 c12, asm ln 3254
   Added assignment asm ln 3254, prod ln 339.12, live ln 340, enc None
 Load from declared address of `newarc` (decl src ln 314), asm ln 3249
   %11 = load %struct.arc*, %struct.arc** %newarc.addr, l336 c5, asm ln 3249
-  🔔 Live ln too early, using produced ln + 1
+  %11 = load %struct.arc*, %struct.arc** %newarc.addr, l336 c5, asm ln 3249
   Added assignment asm ln 3249, prod ln 336.5, live ln 337, enc None
 Load from declared address of `newarc` (decl src ln 314), asm ln 3243
   %9 = load %struct.arc*, %struct.arc** %newarc.addr, l335 c5, asm ln 3243
-  🔔 Live ln too early, using produced ln + 1
+  %9 = load %struct.arc*, %struct.arc** %newarc.addr, l335 c5, asm ln 3243
   Added assignment asm ln 3243, prod ln 335.5, live ln 336, enc None
 Load from declared address of `newarc` (decl src ln 314), asm ln 3238
   %7 = load %struct.arc*, %struct.arc** %newarc.addr, l334 c5, asm ln 3238
-  🔔 Live ln too early, using produced ln + 1
+  %7 = load %struct.arc*, %struct.arc** %newarc.addr, l334 c5, asm ln 3238
   Added assignment asm ln 3238, prod ln 334.5, live ln 335, enc None
 Load from declared address of `newarc` (decl src ln 314), asm ln 3233
   %5 = load %struct.arc*, %struct.arc** %newarc.addr, l333 c5, asm ln 3233
-  🔔 Live ln too early, using produced ln + 1
+  %5 = load %struct.arc*, %struct.arc** %newarc.addr, l333 c5, asm ln 3233
   Added assignment asm ln 3233, prod ln 333.5, live ln 334, enc None
 Load from declared address of `newarc` (decl src ln 314), asm ln 3228
   %3 = load %struct.arc*, %struct.arc** %newarc.addr, l332 c5, asm ln 3228
-  🔔 Live ln too early, using produced ln + 1
+  %3 = load %struct.arc*, %struct.arc** %newarc.addr, l332 c5, asm ln 3228
   Added assignment asm ln 3228, prod ln 332.5, live ln 333, enc None
 Load from declared address of `newarc` (decl src ln 314), asm ln 3223
   %1 = load %struct.arc*, %struct.arc** %newarc.addr, l331 c5, asm ln 3223
-  🔔 Live ln too early, using produced ln + 1
+  %1 = load %struct.arc*, %struct.arc** %newarc.addr, l331 c5, asm ln 3223
   Added assignment asm ln 3223, prod ln 331.5, live ln 332, enc None
 Store to declared address of `newarc` (decl src ln 314), asm ln 3206
   arg 0
+  store %struct.arc* %newarc, %struct.arc** %newarc.addr, asm ln 3206
   Added assignment asm ln 3206, prod ln 314.0, live ln 331, enc None
 Load from declared address of `tail` (decl src ln 314), asm ln 3359
   %53 = load %struct.node*, %struct.node** %tail.addr, l349 c30, asm ln 3359
-  🔔 Live ln too early, using produced ln + 1
+  %53 = load %struct.node*, %struct.node** %tail.addr, l349 c30, asm ln 3359
   Added assignment asm ln 3359, prod ln 349.30, live ln 350, enc None
 Load from declared address of `tail` (decl src ln 314), asm ln 3222
   %0 = load %struct.node*, %struct.node** %tail.addr, l331 c26, asm ln 3222
-  🔔 Live ln too early, using produced ln + 1
+  %0 = load %struct.node*, %struct.node** %tail.addr, l331 c26, asm ln 3222
   Added assignment asm ln 3222, prod ln 331.26, live ln 332, enc None
 Store to declared address of `tail` (decl src ln 314), asm ln 3208
   arg 1
+  store %struct.node* %tail, %struct.node** %tail.addr, asm ln 3208
   Added assignment asm ln 3208, prod ln 314.0, live ln 331, enc None
 Load from declared address of `head` (decl src ln 314), asm ln 3366
   %56 = load %struct.node*, %struct.node** %head.addr, l350 c30, asm ln 3366
-  🔔 Live ln too early, using produced ln + 1
+  %56 = load %struct.node*, %struct.node** %head.addr, l350 c30, asm ln 3366
   Added assignment asm ln 3366, prod ln 350.30, live ln 351, enc None
 Load from declared address of `head` (decl src ln 314), asm ln 3227
   %2 = load %struct.node*, %struct.node** %head.addr, l332 c26, asm ln 3227
-  🔔 Live ln too early, using produced ln + 1
+  %2 = load %struct.node*, %struct.node** %head.addr, l332 c26, asm ln 3227
   Added assignment asm ln 3227, prod ln 332.26, live ln 333, enc None
 Store to declared address of `head` (decl src ln 314), asm ln 3210
   arg 2
+  store %struct.node* %head, %struct.node** %head.addr, asm ln 3210
   Added assignment asm ln 3210, prod ln 314.0, live ln 331, enc None
 Load from declared address of `cost` (decl src ln 315), asm ln 3380
   %62 = load i64, i64* %cost.addr, l352 c34, asm ln 3380
-  🔔 Live ln too early, using produced ln + 1
+  %62 = load i64, i64* %cost.addr, l352 c34, asm ln 3380
   Added assignment asm ln 3380, prod ln 352.34, live ln 353, enc None
 Load from declared address of `cost` (decl src ln 315), asm ln 3373
   %59 = load i64, i64* %cost.addr, l351 c30, asm ln 3373
-  🔔 Live ln too early, using produced ln + 1
+  %59 = load i64, i64* %cost.addr, l351 c30, asm ln 3373
   Added assignment asm ln 3373, prod ln 351.30, live ln 352, enc None
 Load from declared address of `cost` (decl src ln 315), asm ln 3237
   %6 = load i64, i64* %cost.addr, l334 c26, asm ln 3237
-  🔔 Live ln too early, using produced ln + 1
+  %6 = load i64, i64* %cost.addr, l334 c26, asm ln 3237
   Added assignment asm ln 3237, prod ln 334.26, live ln 335, enc None
 Load from declared address of `cost` (decl src ln 315), asm ln 3232
   %4 = load i64, i64* %cost.addr, l333 c26, asm ln 3232
-  🔔 Live ln too early, using produced ln + 1
+  %4 = load i64, i64* %cost.addr, l333 c26, asm ln 3232
   Added assignment asm ln 3232, prod ln 333.26, live ln 334, enc None
 Store to declared address of `cost` (decl src ln 315), asm ln 3212
   arg 3
+  store i64 %cost, i64* %cost.addr, asm ln 3212
   Added assignment asm ln 3212, prod ln 315.0, live ln 331, enc None
 Load from declared address of `red_cost` (decl src ln 315), asm ln 3387
   %65 = load i64, i64* %red_cost.addr, l353 c38, asm ln 3387
-  🔔 Live ln too early, using produced ln + 1
+  %65 = load i64, i64* %red_cost.addr, l353 c38, asm ln 3387
   Added assignment asm ln 3387, prod ln 353.38, live ln 354, enc None
 Load from declared address of `red_cost` (decl src ln 315), asm ln 3276
   %19 = load i64, i64* %red_cost.addr, l340 c52, asm ln 3276
-  🔔 Live ln too early, using produced ln + 1
+  %19 = load i64, i64* %red_cost.addr, l340 c52, asm ln 3276
   Added assignment asm ln 3276, prod ln 340.52, live ln 341, enc None
 Load from declared address of `red_cost` (decl src ln 315), asm ln 3242
   %8 = load i64, i64* %red_cost.addr, l335 c34, asm ln 3242
-  🔔 Live ln too early, using produced ln + 1
+  %8 = load i64, i64* %red_cost.addr, l335 c34, asm ln 3242
   Added assignment asm ln 3242, prod ln 335.34, live ln 336, enc None
 Store to declared address of `red_cost` (decl src ln 315), asm ln 3214
   arg 4
+  store i64 %red_cost, i64* %red_cost.addr, asm ln 3214
   Added assignment asm ln 3214, prod ln 315.0, live ln 331, enc None
 Load from declared address of `max_new_par_residual_new_arcs` (decl src ln 315), asm ln 3409
   %74 = load i64, i64* %max_new_par_residual_new_arcs.addr, l357 c24, asm ln 3409
-  🔔 Live ln too early, using produced ln + 1
+  %74 = load i64, i64* %max_new_par_residual_new_arcs.addr, l357 c24, asm ln 3409
   Added assignment asm ln 3409, prod ln 357.24, live ln 358, enc None
 Load from declared address of `max_new_par_residual_new_arcs` (decl src ln 315), asm ln 3271
   %18 = load i64, i64* %max_new_par_residual_new_arcs.addr, l340 c19, asm ln 3271
-  🔔 Live ln too early, using produced ln + 1
+  %18 = load i64, i64* %max_new_par_residual_new_arcs.addr, l340 c19, asm ln 3271
   Added assignment asm ln 3271, prod ln 340.19, live ln 341, enc None
 Store to declared address of `max_new_par_residual_new_arcs` (decl src ln 315), asm ln 3216
   arg 5
+  store i64 %max_new_par_residual_new_arcs, i64* %max_new_par_residual_new_arcs.addr, asm ln 3216
   Added assignment asm ln 3216, prod ln 315.0, live ln 331, enc None
 Load from declared address of `number` (decl src ln 315), asm ln 3394
   %68 = load i64, i64* %number.addr, l354 c30, asm ln 3394
-  🔔 Live ln too early, using produced ln + 1
+  %68 = load i64, i64* %number.addr, l354 c30, asm ln 3394
   Added assignment asm ln 3394, prod ln 354.30, live ln 355, enc None
 Load from declared address of `number` (decl src ln 315), asm ln 3247
   %10 = load i64, i64* %number.addr, l336 c26, asm ln 3247
-  🔔 Live ln too early, using produced ln + 1
+  %10 = load i64, i64* %number.addr, l336 c26, asm ln 3247
   Added assignment asm ln 3247, prod ln 336.26, live ln 337, enc None
 Store to declared address of `number` (decl src ln 315), asm ln 3218
   arg 6
+  store i64 %number, i64* %number.addr, asm ln 3218
   Added assignment asm ln 3218, prod ln 315.0, live ln 331, enc None
 Store to declared address of `pos` (decl src ln 328), asm ln 3403
   %71 = load i64, i64* %cmp, l355 c15, asm ln 3402
+  store i64 %71, i64* %pos, l355 c13, asm ln 3403
   Added assignment asm ln 3403, prod ln 355.15, live ln 356, enc None
 Load from declared address of `pos` (decl src ln 328), asm ln 3354
   %52 = load i64, i64* %pos, l347 c16, asm ln 3354
-  🔔 Live ln too early, using produced ln + 1
+  %52 = load i64, i64* %pos, l347 c16, asm ln 3354
   Added assignment asm ln 3354, prod ln 347.16, live ln 348, enc None
 Load from declared address of `pos` (decl src ln 328), asm ln 3342
   %47 = load i64, i64* %pos, l346 c16, asm ln 3342
-  🔔 Live ln too early, using produced ln + 1
+  %47 = load i64, i64* %pos, l346 c16, asm ln 3342
   Added assignment asm ln 3342, prod ln 346.16, live ln 347, enc None
 Load from declared address of `pos` (decl src ln 328), asm ln 3330
   %42 = load i64, i64* %pos, l345 c16, asm ln 3330
-  🔔 Live ln too early, using produced ln + 1
+  %42 = load i64, i64* %pos, l345 c16, asm ln 3330
   Added assignment asm ln 3330, prod ln 345.16, live ln 346, enc None
 Load from declared address of `pos` (decl src ln 328), asm ln 3318
   %37 = load i64, i64* %pos, l344 c16, asm ln 3318
-  🔔 Live ln too early, using produced ln + 1
+  %37 = load i64, i64* %pos, l344 c16, asm ln 3318
   Added assignment asm ln 3318, prod ln 344.16, live ln 345, enc None
 Load from declared address of `pos` (decl src ln 328), asm ln 3306
   %32 = load i64, i64* %pos, l343 c16, asm ln 3306
-  🔔 Live ln too early, using produced ln + 1
+  %32 = load i64, i64* %pos, l343 c16, asm ln 3306
   Added assignment asm ln 3306, prod ln 343.16, live ln 344, enc None
 Load from declared address of `pos` (decl src ln 328), asm ln 3294
   %27 = load i64, i64* %pos, l342 c16, asm ln 3294
-  🔔 Live ln too early, using produced ln + 1
+  %27 = load i64, i64* %pos, l342 c16, asm ln 3294
   Added assignment asm ln 3294, prod ln 342.16, live ln 343, enc None
 Store to declared address of `pos` (decl src ln 328), asm ln 3253
   const i64 1
+  store i64 1, i64* %pos, l338 c9, asm ln 3253
   Added assignment asm ln 3253, prod ln 338.9, live ln 339, enc None
 Store to declared address of `cmp` (decl src ln 329), asm ln 3431
   %inc = add nsw i64 %81, 1, l359 c20, asm ln 3430
-  🔔 Live ln too early, using produced ln + 1
+  store i64 %inc, i64* %cmp, l359 c20, asm ln 3431
   Added assignment asm ln 3431, prod ln 359.20, live ln 360, enc None
 Load from declared address of `cmp` (decl src ln 329), asm ln 3429
   %81 = load i64, i64* %cmp, l359 c20, asm ln 3429
-  🔔 Live ln too early, using produced ln + 1
+  %81 = load i64, i64* %cmp, l359 c20, asm ln 3429
   Added assignment asm ln 3429, prod ln 359.20, live ln 360, enc None
 Load from declared address of `cmp` (decl src ln 329), asm ln 3421
   %79 = load i64, i64* %cmp, l358 c45, asm ln 3421
-  🔔 Live ln too early, using produced ln + 1
+  %79 = load i64, i64* %cmp, l358 c45, asm ln 3421
   Added assignment asm ln 3421, prod ln 358.45, live ln 359, enc None
 Load from declared address of `cmp` (decl src ln 329), asm ln 3415
   %76 = load i64, i64* %cmp, l358 c24, asm ln 3415
-  🔔 Live ln too early, using produced ln + 1
+  %76 = load i64, i64* %cmp, l358 c24, asm ln 3415
   Added assignment asm ln 3415, prod ln 358.24, live ln 359, enc None
 Load from declared address of `cmp` (decl src ln 329), asm ln 3407
   %73 = load i64, i64* %cmp, l357 c13, asm ln 3407
-  🔔 Live ln too early, using produced ln + 1
+  %73 = load i64, i64* %cmp, l357 c13, asm ln 3407
   Added assignment asm ln 3407, prod ln 357.13, live ln 358, enc None
 Store to declared address of `cmp` (decl src ln 329), asm ln 3406
   %mul = mul nsw i64 %72, 2, l356 c13, asm ln 3405
+  store i64 %mul, i64* %cmp, l356 c13, asm ln 3406
   Added assignment asm ln 3406, prod ln 356.13, live ln 357, enc None
 Load from declared address of `cmp` (decl src ln 329), asm ln 3404
   %72 = load i64, i64* %cmp, l356 c13, asm ln 3404
-  🔔 Live ln too early, using produced ln + 1
+  %72 = load i64, i64* %cmp, l356 c13, asm ln 3404
   Added assignment asm ln 3404, prod ln 356.13, live ln 357, enc None
 Load from declared address of `cmp` (decl src ln 329), asm ln 3402
   %71 = load i64, i64* %cmp, l355 c15, asm ln 3402
-  🔔 Live ln too early, using produced ln + 1
+  %71 = load i64, i64* %cmp, l355 c15, asm ln 3402
   Added assignment asm ln 3402, prod ln 355.15, live ln 356, enc None
 Load from declared address of `cmp` (decl src ln 329), asm ln 3397
   %70 = load i64, i64* %cmp, l354 c16, asm ln 3397
-  🔔 Live ln too early, using produced ln + 1
+  %70 = load i64, i64* %cmp, l354 c16, asm ln 3397
   Added assignment asm ln 3397, prod ln 354.16, live ln 355, enc None
 Load from declared address of `cmp` (decl src ln 329), asm ln 3389
   %67 = load i64, i64* %cmp, l353 c16, asm ln 3389
-  🔔 Live ln too early, using produced ln + 1
+  %67 = load i64, i64* %cmp, l353 c16, asm ln 3389
   Added assignment asm ln 3389, prod ln 353.16, live ln 354, enc None
 Load from declared address of `cmp` (decl src ln 329), asm ln 3382
   %64 = load i64, i64* %cmp, l352 c16, asm ln 3382
-  🔔 Live ln too early, using produced ln + 1
+  %64 = load i64, i64* %cmp, l352 c16, asm ln 3382
   Added assignment asm ln 3382, prod ln 352.16, live ln 353, enc None
 Load from declared address of `cmp` (decl src ln 329), asm ln 3375
   %61 = load i64, i64* %cmp, l351 c16, asm ln 3375
-  🔔 Live ln too early, using produced ln + 1
+  %61 = load i64, i64* %cmp, l351 c16, asm ln 3375
   Added assignment asm ln 3375, prod ln 351.16, live ln 352, enc None
 Load from declared address of `cmp` (decl src ln 329), asm ln 3368
   %58 = load i64, i64* %cmp, l350 c16, asm ln 3368
-  🔔 Live ln too early, using produced ln + 1
+  %58 = load i64, i64* %cmp, l350 c16, asm ln 3368
   Added assignment asm ln 3368, prod ln 350.16, live ln 351, enc None
 Load from declared address of `cmp` (decl src ln 329), asm ln 3361
   %55 = load i64, i64* %cmp, l349 c16, asm ln 3361
-  🔔 Live ln too early, using produced ln + 1
+  %55 = load i64, i64* %cmp, l349 c16, asm ln 3361
   Added assignment asm ln 3361, prod ln 349.16, live ln 350, enc None
 Load from declared address of `cmp` (decl src ln 329), asm ln 3348
   %49 = load i64, i64* %cmp, l347 c37, asm ln 3348
-  🔔 Live ln too early, using produced ln + 1
+  %49 = load i64, i64* %cmp, l347 c37, asm ln 3348
   Added assignment asm ln 3348, prod ln 347.37, live ln 348, enc None
 Load from declared address of `cmp` (decl src ln 329), asm ln 3336
   %44 = load i64, i64* %cmp, l346 c37, asm ln 3336
-  🔔 Live ln too early, using produced ln + 1
+  %44 = load i64, i64* %cmp, l346 c37, asm ln 3336
   Added assignment asm ln 3336, prod ln 346.37, live ln 347, enc None
 Load from declared address of `cmp` (decl src ln 329), asm ln 3324
   %39 = load i64, i64* %cmp, l345 c41, asm ln 3324
-  🔔 Live ln too early, using produced ln + 1
+  %39 = load i64, i64* %cmp, l345 c41, asm ln 3324
   Added assignment asm ln 3324, prod ln 345.41, live ln 346, enc None
 Load from declared address of `cmp` (decl src ln 329), asm ln 3312
   %34 = load i64, i64* %cmp, l344 c37, asm ln 3312
-  🔔 Live ln too early, using produced ln + 1
+  %34 = load i64, i64* %cmp, l344 c37, asm ln 3312
   Added assignment asm ln 3312, prod ln 344.37, live ln 345, enc None
 Load from declared address of `cmp` (decl src ln 329), asm ln 3300
   %29 = load i64, i64* %cmp, l343 c37, asm ln 3300
-  🔔 Live ln too early, using produced ln + 1
+  %29 = load i64, i64* %cmp, l343 c37, asm ln 3300
   Added assignment asm ln 3300, prod ln 343.37, live ln 344, enc None
 Load from declared address of `cmp` (decl src ln 329), asm ln 3288
   %24 = load i64, i64* %cmp, l342 c37, asm ln 3288
-  🔔 Live ln too early, using produced ln + 1
+  %24 = load i64, i64* %cmp, l342 c37, asm ln 3288
   Added assignment asm ln 3288, prod ln 342.37, live ln 343, enc None
 Load from declared address of `cmp` (decl src ln 329), asm ln 3278
   %21 = load i64, i64* %cmp, l340 c70, asm ln 3278
-  🔔 Live ln too early, using produced ln + 1
+  %21 = load i64, i64* %cmp, l340 c70, asm ln 3278
   Added assignment asm ln 3278, prod ln 340.70, live ln 341, enc None
 Load from declared address of `cmp` (decl src ln 329), asm ln 3270
   %17 = load i64, i64* %cmp, l340 c12, asm ln 3270
-  🔔 Live ln too early, using produced ln + 1
+  %17 = load i64, i64* %cmp, l340 c12, asm ln 3270
   Added assignment asm ln 3270, prod ln 340.12, live ln 341, enc None
 Store to declared address of `cmp` (decl src ln 329), asm ln 3266
   %conv15 = sext i32 %cond to i64, l339 c11, asm ln 3265
+  store i64 %conv15, i64* %cmp, l339 c9, asm ln 3266
   Added assignment asm ln 3266, prod ln 339.11, live ln 340, enc None
 
 #### After variables
 
 Value produced for `newarc` (decl src ln 314), asm ln 2421
   arg 0
+  @dbg.value(%struct.arc.0* %newarc, !2079), asm ln 2421
   Added assignment asm ln 2421, prod ln 314.0, live ln 331, enc None
 Value produced for `tail` (decl src ln 314), asm ln 2422
   arg 1
+  @dbg.value(%struct.node.1* %tail, !2081), asm ln 2422
   Added assignment asm ln 2422, prod ln 314.0, live ln 331, enc None
 Value produced for `head` (decl src ln 314), asm ln 2423
   arg 2
+  @dbg.value(%struct.node.1* %head, !2082), asm ln 2423
   Added assignment asm ln 2423, prod ln 314.0, live ln 331, enc None
 Value produced for `cost` (decl src ln 315), asm ln 2424
   arg 3
+  @dbg.value(i64 %cost, !2083), asm ln 2424
   Added assignment asm ln 2424, prod ln 315.0, live ln 331, enc None
 Value produced for `red_cost` (decl src ln 315), asm ln 2425
   arg 4
+  @dbg.value(i64 %red_cost, !2084), asm ln 2425
   Added assignment asm ln 2425, prod ln 315.0, live ln 331, enc None
 Value produced for `max_new_par_residual_new_arcs` (decl src ln 315), asm ln 2426
   arg 5
+  @dbg.value(i64 %max_new_par_residual_new_arcs, !2085), asm ln 2426
   Added assignment asm ln 2426, prod ln 315.0, live ln 331, enc None
 Value produced for `number` (decl src ln 315), asm ln 2427
   arg 6
+  @dbg.value(i64 %number, !2086), asm ln 2427
   Added assignment asm ln 2427, prod ln 315.0, live ln 331, enc None
 Value produced for `pos` (decl src ln 328), asm ln 2447
   const i64 1
+  @dbg.value(i64 1, !2106), asm ln 2447
   Added assignment asm ln 2447, prod ln 328.0, live ln 339, enc None
 Value produced for `cmp` (decl src ln 329), asm ln 2458
   %conv15 = sext i32 %cond to i64, l339 c11, asm ln 2457
+  @dbg.value(i64 %conv15, !2113), asm ln 2458
   Added assignment asm ln 2458, prod ln 339.11, live ln 340, enc None
 Value produced for `cmp` (decl src ln 329), asm ln 2553
   %mul = mul nsw i64 %cmp.0, 2, l356 c13, asm ln 2552
+  @dbg.value(i64 %mul, !2113), asm ln 2553
   Added assignment asm ln 2553, prod ln 356.13, live ln 357, enc None
 Value produced for `cmp` (decl src ln 329), asm ln 2569
   %spec.select = select i1 %cmp84, i64 %inc, i64 %mul, l358 c17, asm ln 2568
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %spec.select, !2113), asm ln 2569
   Added assignment asm ln 2569, prod ln 358.17, live ln 359, enc None
 Value produced for `cmp` (decl src ln 329), asm ln 2464
   %cmp.0 = phi i64 [ %conv15, %entry ], [ %cmp.2, %if.end87 ], asm ln 2463
+  @dbg.value(i64 %cmp.0, !2113), asm ln 2464
   Added assignment asm ln 2464, prod ln 339.11, live ln 340, enc None
 Value produced for `pos` (decl src ln 328), asm ln 2465
   %pos.0 = phi i64 [ 1, %entry ], [ %cmp.0, %if.end87 ], asm ln 2462
-  🔔 Missing produced ln, using decl ln
+  @dbg.value(i64 %pos.0, !2106), asm ln 2465
   Added assignment asm ln 2465, prod ln 328.0, live ln 340, enc None
 Value produced for `pos` (decl src ln 328), asm ln 2551
   %cmp.0 = phi i64 [ %conv15, %entry ], [ %cmp.2, %if.end87 ], asm ln 2463
+  @dbg.value(i64 %cmp.0, !2106), asm ln 2551
   Added assignment asm ln 2551, prod ln 339.11, live ln 356, enc None
 Value produced for `cmp` (decl src ln 329), asm ln 2574
   %cmp.2 = phi i64 [ %spec.select, %if.then ], [ %mul, %while.body ], asm ln 2573
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %cmp.2, !2113), asm ln 2574
   Added assignment asm ln 2574, prod ln 358.17, live ln 359, enc None
 
 #### Summary
@@ -18534,90 +18762,99 @@ Test Execution:
 
 Store to declared address of `net` (decl src ln 383), asm ln 3449
   arg 0
+  store %struct.network* %net, %struct.network** %net.addr, asm ln 3449
   @dbg.declare without read users, removable
   Added assignment asm ln 3449, prod ln 383.0, live ln 392, enc None
 Load from declared address of `max_redcost` (decl src ln 383), asm ln 3492
   %15 = load i64*, i64** %max_redcost.addr, l396 c8, asm ln 3492
-  🔔 Live ln too early, using produced ln + 1
+  %15 = load i64*, i64** %max_redcost.addr, l396 c8, asm ln 3492
   Added assignment asm ln 3492, prod ln 396.8, live ln 397, enc None
 Load from declared address of `max_redcost` (decl src ln 383), asm ln 3478
   %8 = load i64*, i64** %max_redcost.addr, l395 c44, asm ln 3478
-  🔔 Live ln too early, using produced ln + 1
+  %8 = load i64*, i64** %max_redcost.addr, l395 c44, asm ln 3478
   Added assignment asm ln 3478, prod ln 395.44, live ln 396, enc None
 Load from declared address of `max_redcost` (decl src ln 383), asm ln 3458
   %0 = load i64*, i64** %max_redcost.addr, l392 c4, asm ln 3458
-  🔔 Live ln too early, using produced ln + 1
+  %0 = load i64*, i64** %max_redcost.addr, l392 c4, asm ln 3458
   Added assignment asm ln 3458, prod ln 392.4, live ln 393, enc None
 Store to declared address of `max_redcost` (decl src ln 383), asm ln 3451
   arg 1
+  store i64* %max_redcost, i64** %max_redcost.addr, asm ln 3451
   Added assignment asm ln 3451, prod ln 383.0, live ln 392, enc None
 Load from declared address of `arcs_pointer_sorted` (decl src ln 383), asm ln 3484
   %10 = load %struct.arc***, %struct.arc**** %arcs_pointer_sorted.addr, l396 c22, asm ln 3484
-  🔔 Live ln too early, using produced ln + 1
+  %10 = load %struct.arc***, %struct.arc**** %arcs_pointer_sorted.addr, l396 c22, asm ln 3484
   Added assignment asm ln 3484, prod ln 396.22, live ln 397, enc None
 Load from declared address of `arcs_pointer_sorted` (decl src ln 383), asm ln 3470
   %3 = load %struct.arc***, %struct.arc**** %arcs_pointer_sorted.addr, l395 c9, asm ln 3470
-  🔔 Live ln too early, using produced ln + 1
+  %3 = load %struct.arc***, %struct.arc**** %arcs_pointer_sorted.addr, l395 c9, asm ln 3470
   Added assignment asm ln 3470, prod ln 395.9, live ln 396, enc None
 Store to declared address of `arcs_pointer_sorted` (decl src ln 383), asm ln 3453
   arg 2
+  store %struct.arc*** %arcs_pointer_sorted, %struct.arc**** %arcs_pointer_sorted.addr, asm ln 3453
   Added assignment asm ln 3453, prod ln 383.0, live ln 392, enc None
 Load from declared address of `num_threads` (decl src ln 383), asm ln 3465
   %2 = load i64, i64* %num_threads.addr, l393 c19, asm ln 3465
-  🔔 Live ln too early, using produced ln + 1
+  %2 = load i64, i64* %num_threads.addr, l393 c19, asm ln 3465
   Added assignment asm ln 3465, prod ln 393.19, live ln 394, enc None
 Store to declared address of `num_threads` (decl src ln 383), asm ln 3455
   arg 3
+  store i64 %num_threads, i64* %num_threads.addr, asm ln 3455
   Added assignment asm ln 3455, prod ln 383.0, live ln 392, enc None
 Store to declared address of `i` (decl src ln 391), asm ln 3499
   %inc = add nsw i64 %16, 1, l393 c33, asm ln 3498
-  🔔 Live ln too early, using produced ln + 1
+  store i64 %inc, i64* %i, l393 c33, asm ln 3499
   Added assignment asm ln 3499, prod ln 393.33, live ln 394, enc None
 Load from declared address of `i` (decl src ln 391), asm ln 3497
   %16 = load i64, i64* %i, l393 c33, asm ln 3497
-  🔔 Live ln too early, using produced ln + 1
+  %16 = load i64, i64* %i, l393 c33, asm ln 3497
   Added assignment asm ln 3497, prod ln 393.33, live ln 394, enc None
 Load from declared address of `i` (decl src ln 391), asm ln 3485
   %11 = load i64, i64* %i, l396 c42, asm ln 3485
-  🔔 Live ln too early, using produced ln + 1
+  %11 = load i64, i64* %i, l396 c42, asm ln 3485
   Added assignment asm ln 3485, prod ln 396.42, live ln 397, enc None
 Load from declared address of `i` (decl src ln 391), asm ln 3471
   %4 = load i64, i64* %i, l395 c29, asm ln 3471
-  🔔 Live ln too early, using produced ln + 1
+  %4 = load i64, i64* %i, l395 c29, asm ln 3471
   Added assignment asm ln 3471, prod ln 395.29, live ln 396, enc None
 Load from declared address of `i` (decl src ln 391), asm ln 3464
   %1 = load i64, i64* %i, l393 c15, asm ln 3464
-  🔔 Live ln too early, using produced ln + 1
+  %1 = load i64, i64* %i, l393 c15, asm ln 3464
   Added assignment asm ln 3464, prod ln 393.15, live ln 394, enc None
 Store to declared address of `i` (decl src ln 391), asm ln 3460
   const i64 0
-  🔔 Live ln too early, using produced ln + 1
+  store i64 0, i64* %i, l393 c10, asm ln 3460
   Added assignment asm ln 3460, prod ln 393.10, live ln 394, enc None
 
 #### After variables
 
 Value produced for `net` (decl src ln 383), asm ln 2584
   arg 0
+  @dbg.value(%struct.network.2* %net, !2210), asm ln 2584
   Added assignment asm ln 2584, prod ln 383.0, live ln 392, enc None
 Value produced for `max_redcost` (decl src ln 383), asm ln 2585
   arg 1
+  @dbg.value(i64* %max_redcost, !2212), asm ln 2585
   Added assignment asm ln 2585, prod ln 383.0, live ln 392, enc None
 Value produced for `arcs_pointer_sorted` (decl src ln 383), asm ln 2586
   arg 2
+  @dbg.value(%struct.arc.0*** %arcs_pointer_sorted, !2213), asm ln 2586
   Added assignment asm ln 2586, prod ln 383.0, live ln 392, enc None
 Value produced for `num_threads` (decl src ln 383), asm ln 2587
   arg 3
+  @dbg.value(i64 %num_threads, !2214), asm ln 2587
   Added assignment asm ln 2587, prod ln 383.0, live ln 392, enc None
 Value produced for `i` (decl src ln 391), asm ln 2589
   const i64 0
+  @dbg.value(i64 0, !2216), asm ln 2589
   Added assignment asm ln 2589, prod ln 391.0, live ln 393, enc None
 Value produced for `i` (decl src ln 391), asm ln 2621
   %inc = add nsw i64 %i.0, 1, l393 c33, asm ln 2620
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %inc, !2216), asm ln 2621
   Added assignment asm ln 2621, prod ln 393.33, live ln 394, enc None
 Value produced for `i` (decl src ln 391), asm ln 2594
   %i.0 = phi i64 [ 0, %entry ], [ %inc, %for.inc ], asm ln 2593
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %i.0, !2216), asm ln 2594
   Added assignment asm ln 2594, prod ln 393.33, live ln 394, enc None
 
 #### Summary
@@ -19112,315 +19349,343 @@ Test Execution:
 
 Store to declared address of `net` (decl src ln 401), asm ln 3524
   arg 0
+  store %struct.network* %net, %struct.network** %net.addr, asm ln 3524
   @dbg.declare without read users, removable
   Added assignment asm ln 3524, prod ln 401.0, live ln 414, enc None
 Load from declared address of `num_del_arcs` (decl src ln 401), asm ln 3570
   %7 = load i64*, i64** %num_del_arcs.addr, l422 c54, asm ln 3570
-  🔔 Live ln too early, using produced ln + 1
+  %7 = load i64*, i64** %num_del_arcs.addr, l422 c54, asm ln 3570
   Added assignment asm ln 3570, prod ln 422.54, live ln 423, enc None
 Load from declared address of `num_del_arcs` (decl src ln 401), asm ln 3561
   %3 = load i64*, i64** %num_del_arcs.addr, l422 c24, asm ln 3561
-  🔔 Live ln too early, using produced ln + 1
+  %3 = load i64*, i64** %num_del_arcs.addr, l422 c24, asm ln 3561
   Added assignment asm ln 3561, prod ln 422.24, live ln 423, enc None
 Store to declared address of `num_del_arcs` (decl src ln 401), asm ln 3526
   arg 1
+  store i64* %num_del_arcs, i64** %num_del_arcs.addr, asm ln 3526
   Added assignment asm ln 3526, prod ln 401.0, live ln 414, enc None
 Load from declared address of `deleted_arcs` (decl src ln 401), asm ln 3593
   %13 = load %struct.arc**, %struct.arc*** %deleted_arcs.addr, l425 c20, asm ln 3593
-  🔔 Live ln too early, using produced ln + 1
+  %13 = load %struct.arc**, %struct.arc*** %deleted_arcs.addr, l425 c20, asm ln 3593
   Added assignment asm ln 3593, prod ln 425.20, live ln 426, enc None
 Store to declared address of `deleted_arcs` (decl src ln 401), asm ln 3528
   arg 2
+  store %struct.arc** %deleted_arcs, %struct.arc*** %deleted_arcs.addr, asm ln 3528
   Added assignment asm ln 3528, prod ln 401.0, live ln 414, enc None
 Load from declared address of `arcnew` (decl src ln 401), asm ln 3653
   %41 = load %struct.arc*, %struct.arc** %arcnew.addr, l434 c30, asm ln 3653
-  🔔 Live ln too early, using produced ln + 1
+  %41 = load %struct.arc*, %struct.arc** %arcnew.addr, l434 c30, asm ln 3653
   Added assignment asm ln 3653, prod ln 434.30, live ln 435, enc None
 Load from declared address of `arcnew` (decl src ln 401), asm ln 3648
   %37 = load %struct.arc*, %struct.arc** %arcnew.addr, l433 c22, asm ln 3648
-  🔔 Live ln too early, using produced ln + 1
+  %37 = load %struct.arc*, %struct.arc** %arcnew.addr, l433 c22, asm ln 3648
   Added assignment asm ln 3648, prod ln 433.22, live ln 434, enc None
 Load from declared address of `arcnew` (decl src ln 401), asm ln 3632
   %29 = load %struct.arc*, %struct.arc** %arcnew.addr, l429 c27, asm ln 3632
-  🔔 Live ln too early, using produced ln + 1
+  %29 = load %struct.arc*, %struct.arc** %arcnew.addr, l429 c27, asm ln 3632
   Added assignment asm ln 3632, prod ln 429.27, live ln 430, enc None
 Load from declared address of `arcnew` (decl src ln 401), asm ln 3621
   %25 = load %struct.arc*, %struct.arc** %arcnew.addr, l428 c89, asm ln 3621
-  🔔 Live ln too early, using produced ln + 1
+  %25 = load %struct.arc*, %struct.arc** %arcnew.addr, l428 c89, asm ln 3621
   Added assignment asm ln 3621, prod ln 428.89, live ln 429, enc None
 Load from declared address of `arcnew` (decl src ln 401), asm ln 3610
   %21 = load %struct.arc*, %struct.arc** %arcnew.addr, l428 c51, asm ln 3610
-  🔔 Live ln too early, using produced ln + 1
+  %21 = load %struct.arc*, %struct.arc** %arcnew.addr, l428 c51, asm ln 3610
   Added assignment asm ln 3610, prod ln 428.51, live ln 429, enc None
 Store to declared address of `arcnew` (decl src ln 401), asm ln 3530
   arg 3
+  store %struct.arc* %arcnew, %struct.arc** %arcnew.addr, asm ln 3530
   Added assignment asm ln 3530, prod ln 401.0, live ln 414, enc None
 Load from declared address of `thread` (decl src ln 401), asm ln 3549
   %0 = load i32, i32* %thread.addr, l417 c20, asm ln 3549
-  🔔 Live ln too early, using produced ln + 1
+  %0 = load i32, i32* %thread.addr, l417 c20, asm ln 3549
   Added assignment asm ln 3549, prod ln 417.20, live ln 418, enc None
 Store to declared address of `thread` (decl src ln 401), asm ln 3532
   arg 4
+  store i32 %thread, i32* %thread.addr, asm ln 3532
   Added assignment asm ln 3532, prod ln 401.0, live ln 414, enc None
 Load from declared address of `max_new_par_residual_new_arcs` (decl src ln 401), asm ln 3662
   %46 = load i64, i64* %max_new_par_residual_new_arcs.addr, l434 c82, asm ln 3662
-  🔔 Live ln too early, using produced ln + 1
+  %46 = load i64, i64* %max_new_par_residual_new_arcs.addr, l434 c82, asm ln 3662
   Added assignment asm ln 3662, prod ln 434.82, live ln 435, enc None
 Store to declared address of `max_new_par_residual_new_arcs` (decl src ln 401), asm ln 3534
   arg 5
+  store i64 %max_new_par_residual_new_arcs, i64* %max_new_par_residual_new_arcs.addr, asm ln 3534
   Added assignment asm ln 3534, prod ln 401.0, live ln 414, enc None
 Load from declared address of `size_del` (decl src ln 401), asm ln 3577
   %10 = load i64, i64* %size_del.addr, l422 c72, asm ln 3577
-  🔔 Live ln too early, using produced ln + 1
+  %10 = load i64, i64* %size_del.addr, l422 c72, asm ln 3577
   Added assignment asm ln 3577, prod ln 422.72, live ln 423, enc None
 Load from declared address of `size_del` (decl src ln 401), asm ln 3565
   %6 = load i64, i64* %size_del.addr, l422 c42, asm ln 3565
-  🔔 Live ln too early, using produced ln + 1
+  %6 = load i64, i64* %size_del.addr, l422 c42, asm ln 3565
   Added assignment asm ln 3565, prod ln 422.42, live ln 423, enc None
 Store to declared address of `size_del` (decl src ln 401), asm ln 3536
   arg 6
+  store i64 %size_del, i64* %size_del.addr, asm ln 3536
   Added assignment asm ln 3536, prod ln 401.0, live ln 414, enc None
 Load from declared address of `num_threads` (decl src ln 401), asm ln 3681
   %51 = load i64, i64* %num_threads.addr, l417 c64, asm ln 3681
-  🔔 Live ln too early, using produced ln + 1
+  %51 = load i64, i64* %num_threads.addr, l417 c64, asm ln 3681
   Added assignment asm ln 3681, prod ln 417.64, live ln 418, enc None
 Load from declared address of `num_threads` (decl src ln 401), asm ln 3556
   %2 = load i64, i64* %num_threads.addr, l417 c32, asm ln 3556
-  🔔 Live ln too early, using produced ln + 1
+  %2 = load i64, i64* %num_threads.addr, l417 c32, asm ln 3556
   Added assignment asm ln 3556, prod ln 417.32, live ln 418, enc None
 Store to declared address of `num_threads` (decl src ln 401), asm ln 3538
   arg 7
+  store i64 %num_threads, i64* %num_threads.addr, asm ln 3538
   Added assignment asm ln 3538, prod ln 401.0, live ln 414, enc None
 Store to declared address of `i` (decl src ln 414), asm ln 3678
   %inc31 = add nsw i64 %49, 1, l417 c46, asm ln 3677
-  🔔 Live ln too early, using produced ln + 1
+  store i64 %inc31, i64* %i, l417 c46, asm ln 3678
   Added assignment asm ln 3678, prod ln 417.46, live ln 418, enc None
 Load from declared address of `i` (decl src ln 414), asm ln 3676
   %49 = load i64, i64* %i, l417 c46, asm ln 3676
-  🔔 Live ln too early, using produced ln + 1
+  %49 = load i64, i64* %i, l417 c46, asm ln 3676
   Added assignment asm ln 3676, prod ln 417.46, live ln 418, enc None
 Load from declared address of `i` (decl src ln 414), asm ln 3555
   %1 = load i64, i64* %i, l417 c28, asm ln 3555
-  🔔 Live ln too early, using produced ln + 1
+  %1 = load i64, i64* %i, l417 c28, asm ln 3555
   Added assignment asm ln 3555, prod ln 417.28, live ln 418, enc None
 Store to declared address of `i` (decl src ln 414), asm ln 3548
   const i64 0
-  🔔 Live ln too early, using produced ln + 1
+  store i64 0, i64* %i, l417 c11, asm ln 3548
   Added assignment asm ln 3548, prod ln 417.11, live ln 418, enc None
 Store to declared address of `j` (decl src ln 414), asm ln 3684
   %rem = srem i64 %add, %51, !klee.check.div !501, l417 c62, asm ln 3683
-  🔔 Live ln too early, using produced ln + 1
+  store i64 %rem, i64* %j, l417 c52, asm ln 3684
   Added assignment asm ln 3684, prod ln 417.62, live ln 418, enc None
 Load from declared address of `j` (decl src ln 414), asm ln 3679
   %50 = load i64, i64* %j, l417 c55, asm ln 3679
-  🔔 Live ln too early, using produced ln + 1
+  %50 = load i64, i64* %j, l417 c55, asm ln 3679
   Added assignment asm ln 3679, prod ln 417.55, live ln 418, enc None
 Load from declared address of `j` (decl src ln 414), asm ln 3594
   %14 = load i64, i64* %j, l425 c33, asm ln 3594
-  🔔 Live ln too early, using produced ln + 1
+  %14 = load i64, i64* %j, l425 c33, asm ln 3594
   Added assignment asm ln 3594, prod ln 425.33, live ln 426, enc None
 Load from declared address of `j` (decl src ln 414), asm ln 3571
   %8 = load i64, i64* %j, l422 c67, asm ln 3571
-  🔔 Live ln too early, using produced ln + 1
+  %8 = load i64, i64* %j, l422 c67, asm ln 3571
   Added assignment asm ln 3571, prod ln 422.67, live ln 423, enc None
 Load from declared address of `j` (decl src ln 414), asm ln 3562
   %4 = load i64, i64* %j, l422 c37, asm ln 3562
-  🔔 Live ln too early, using produced ln + 1
+  %4 = load i64, i64* %j, l422 c37, asm ln 3562
   Added assignment asm ln 3562, prod ln 422.37, live ln 423, enc None
 Store to declared address of `j` (decl src ln 414), asm ln 3551
   %conv = sext i32 %0 to i64, l417 c20, asm ln 3550
-  🔔 Live ln too early, using produced ln + 1
+  store i64 %conv, i64* %j, l417 c18, asm ln 3551
   Added assignment asm ln 3551, prod ln 417.20, live ln 418, enc None
 Store to declared address of `h` (decl src ln 414), asm ln 3672
   %inc29 = add nsw i64 %48, 1, l423 c39, asm ln 3671
-  🔔 Live ln too early, using produced ln + 1
+  store i64 %inc29, i64* %h, l423 c39, asm ln 3672
   Added assignment asm ln 3672, prod ln 423.39, live ln 424, enc None
 Load from declared address of `h` (decl src ln 414), asm ln 3670
   %48 = load i64, i64* %h, l423 c39, asm ln 3670
-  🔔 Live ln too early, using produced ln + 1
+  %48 = load i64, i64* %h, l423 c39, asm ln 3670
   Added assignment asm ln 3670, prod ln 423.39, live ln 424, enc None
 Load from declared address of `h` (decl src ln 414), asm ln 3597
   %16 = load i64, i64* %h, l425 c36, asm ln 3597
-  🔔 Live ln too early, using produced ln + 1
+  %16 = load i64, i64* %h, l425 c36, asm ln 3597
   Added assignment asm ln 3597, prod ln 425.36, live ln 426, enc None
 Load from declared address of `h` (decl src ln 414), asm ln 3587
   %11 = load i64, i64* %h, l423 c18, asm ln 3587
-  🔔 Live ln too early, using produced ln + 1
+  %11 = load i64, i64* %h, l423 c18, asm ln 3587
   Added assignment asm ln 3587, prod ln 423.18, live ln 424, enc None
 Store to declared address of `h` (decl src ln 414), asm ln 3583
   const i64 0
-  🔔 Live ln too early, using produced ln + 1
+  store i64 0, i64* %h, l423 c13, asm ln 3583
   Added assignment asm ln 3583, prod ln 423.13, live ln 424, enc None
 Load from declared address of `number_of_arcs` (decl src ln 414), asm ln 3588
   %12 = load i64, i64* %number_of_arcs, l423 c22, asm ln 3588
-  🔔 Live ln too early, using produced ln + 1
+  %12 = load i64, i64* %number_of_arcs, l423 c22, asm ln 3588
   Added assignment asm ln 3588, prod ln 423.22, live ln 424, enc None
 Store to declared address of `number_of_arcs` (decl src ln 414), asm ln 3582
   %cond = phi i64 [ %9, %cond.true ], [ %10, %cond.false ], l422 c23, asm ln 3581
+  store i64 %cond, i64* %number_of_arcs, l422 c21, asm ln 3582
   Added assignment asm ln 3582, prod ln 422.72, live ln 423, enc None
 Load from declared address of `count` (decl src ln 414), asm ln 3688
   %52 = load i64, i64* %count, l440 c11, asm ln 3688
-  🔔 Live ln too early, using produced ln + 1
+  %52 = load i64, i64* %count, l440 c11, asm ln 3688
   Added assignment asm ln 3688, prod ln 440.11, live ln 441, enc None
 Store to declared address of `count` (decl src ln 414), asm ln 3646
   %inc = add nsw i64 %35, 1, l432 c15, asm ln 3645
+  store i64 %inc, i64* %count, l432 c15, asm ln 3646
   Added assignment asm ln 3646, prod ln 432.15, live ln 433, enc None
 Load from declared address of `count` (decl src ln 414), asm ln 3644
   %35 = load i64, i64* %count, l432 c15, asm ln 3644
-  🔔 Live ln too early, using produced ln + 1
+  %35 = load i64, i64* %count, l432 c15, asm ln 3644
   Added assignment asm ln 3644, prod ln 432.15, live ln 433, enc None
 Store to declared address of `count` (decl src ln 414), asm ln 3545
   const i64 0
+  store i64 0, i64* %count, l414 c35, asm ln 3545
   Added assignment asm ln 3545, prod ln 414.35, live ln 417, enc None
 Load from declared address of `test_arc` (decl src ln 415), asm ln 3647
   %36 = load %struct.arc*, %struct.arc** %test_arc, l433 c11, asm ln 3647
-  🔔 Live ln too early, using produced ln + 1
+  %36 = load %struct.arc*, %struct.arc** %test_arc, l433 c11, asm ln 3647
   Added assignment asm ln 3647, prod ln 433.11, live ln 434, enc None
 Load from declared address of `test_arc` (decl src ln 415), asm ln 3640
   %31 = load %struct.arc*, %struct.arc** %test_arc, l431 c18, asm ln 3640
-  🔔 Live ln too early, using produced ln + 1
+  %31 = load %struct.arc*, %struct.arc** %test_arc, l431 c18, asm ln 3640
   Added assignment asm ln 3640, prod ln 431.18, live ln 432, enc None
 Load from declared address of `test_arc` (decl src ln 415), asm ln 3629
   %27 = load %struct.arc*, %struct.arc** %test_arc, l429 c12, asm ln 3629
-  🔔 Live ln too early, using produced ln + 1
+  %27 = load %struct.arc*, %struct.arc** %test_arc, l429 c12, asm ln 3629
   Added assignment asm ln 3629, prod ln 429.12, live ln 430, enc None
 Load from declared address of `test_arc` (decl src ln 415), asm ln 3618
   %23 = load %struct.arc*, %struct.arc** %test_arc, l428 c71, asm ln 3618
-  🔔 Live ln too early, using produced ln + 1
+  %23 = load %struct.arc*, %struct.arc** %test_arc, l428 c71, asm ln 3618
   Added assignment asm ln 3618, prod ln 428.71, live ln 429, enc None
 Load from declared address of `test_arc` (decl src ln 415), asm ln 3607
   %19 = load %struct.arc*, %struct.arc** %test_arc, l428 c34, asm ln 3607
-  🔔 Live ln too early, using produced ln + 1
+  %19 = load %struct.arc*, %struct.arc** %test_arc, l428 c34, asm ln 3607
   Added assignment asm ln 3607, prod ln 428.34, live ln 429, enc None
 Load from declared address of `test_arc` (decl src ln 415), asm ln 3600
   %17 = load %struct.arc*, %struct.arc** %test_arc, l428 c13, asm ln 3600
-  🔔 Live ln too early, using produced ln + 1
+  %17 = load %struct.arc*, %struct.arc** %test_arc, l428 c13, asm ln 3600
   Added assignment asm ln 3600, prod ln 428.13, live ln 429, enc None
 Store to declared address of `test_arc` (decl src ln 415), asm ln 3599
   %arrayidx10 = getelementptr inbounds %struct.arc, %struct.arc* %15, i64 %16, l425 c20, asm ln 3598
+  store %struct.arc* %arrayidx10, %struct.arc** %test_arc, l425 c17, asm ln 3599
   Added assignment asm ln 3599, prod ln 425.20, live ln 428, enc None
 Load from declared address of `copy` (decl src ln 415), asm ln 3655
   %42 = load %struct.node*, %struct.node** %tail, l434 c43, asm ln 3655
-  🔔 Live ln too early, using produced ln + 1
+  %42 = load %struct.node*, %struct.node** %tail, l434 c43, asm ln 3655
   Added assignment asm ln 3655, prod ln 434.43, live ln 435, enc None
 Load from declared address of `copy` (decl src ln 415), asm ln 3657
   %43 = load %struct.node*, %struct.node** %head, l434 c54, asm ln 3657
-  🔔 Live ln too early, using produced ln + 1
+  %43 = load %struct.node*, %struct.node** %head, l434 c54, asm ln 3657
   Added assignment asm ln 3657, prod ln 434.54, live ln 435, enc None
 Load from declared address of `copy` (decl src ln 415), asm ln 3659
   %44 = load i64, i64* %cost, l434 c65, asm ln 3659
-  🔔 Live ln too early, using produced ln + 1
+  %44 = load i64, i64* %cost, l434 c65, asm ln 3659
   Added assignment asm ln 3659, prod ln 434.65, live ln 435, enc None
 Load from declared address of `copy` (decl src ln 415), asm ln 3661
   %45 = load i64, i64* %flow26, l434 c76, asm ln 3661
-  🔔 Live ln too early, using produced ln + 1
+  %45 = load i64, i64* %flow26, l434 c76, asm ln 3661
   Added assignment asm ln 3661, prod ln 434.76, live ln 435, enc None
 Load from declared address of `copy` (decl src ln 415), asm ln 3664
   %47 = load i32, i32* %id27, l434 c118, asm ln 3664
-  🔔 Live ln too early, using produced ln + 1
+  %47 = load i32, i32* %id27, l434 c118, asm ln 3664
   Added assignment asm ln 3664, prod ln 434.118, live ln 435, enc None
 
 #### After variables
 
 Value produced for `net` (decl src ln 401), asm ln 2632
   arg 0
+  @dbg.value(%struct.network.2* %net, !2242), asm ln 2632
   Added assignment asm ln 2632, prod ln 401.0, live ln 417, enc None
 Value produced for `num_del_arcs` (decl src ln 401), asm ln 2633
   arg 1
+  @dbg.value(i64* %num_del_arcs, !2244), asm ln 2633
   Added assignment asm ln 2633, prod ln 401.0, live ln 417, enc None
 Value produced for `deleted_arcs` (decl src ln 401), asm ln 2634
   arg 2
+  @dbg.value(%struct.arc.0** %deleted_arcs, !2245), asm ln 2634
   Added assignment asm ln 2634, prod ln 401.0, live ln 417, enc None
 Value produced for `arcnew` (decl src ln 401), asm ln 2635
   arg 3
+  @dbg.value(%struct.arc.0* %arcnew, !2246), asm ln 2635
   Added assignment asm ln 2635, prod ln 401.0, live ln 417, enc None
 Value produced for `thread` (decl src ln 401), asm ln 2636
   arg 4
+  @dbg.value(i32 %thread, !2247), asm ln 2636
   Added assignment asm ln 2636, prod ln 401.0, live ln 417, enc None
 Value produced for `max_new_par_residual_new_arcs` (decl src ln 401), asm ln 2637
   arg 5
+  @dbg.value(i64 %max_new_par_residual_new_arcs, !2248), asm ln 2637
   Added assignment asm ln 2637, prod ln 401.0, live ln 417, enc None
 Value produced for `size_del` (decl src ln 401), asm ln 2638
   arg 6
+  @dbg.value(i64 %size_del, !2249), asm ln 2638
   Added assignment asm ln 2638, prod ln 401.0, live ln 417, enc None
 Value produced for `num_threads` (decl src ln 401), asm ln 2639
   arg 7
+  @dbg.value(i64 %num_threads, !2250), asm ln 2639
   Added assignment asm ln 2639, prod ln 401.0, live ln 417, enc None
 Value produced for `count` (decl src ln 414), asm ln 2640
   const i64 0
+  @dbg.value(i64 0, !2251), asm ln 2640
   Added assignment asm ln 2640, prod ln 414.0, live ln 417, enc None
 Load from declared address of `copy` (decl src ln 415), asm ln 2730
   %16 = load %struct.node.1*, %struct.node.1** %tail, l434 c43, asm ln 2730
-  🔔 Live ln too early, using produced ln + 1
+  %16 = load %struct.node.1*, %struct.node.1** %tail, l434 c43, asm ln 2730
   Added assignment asm ln 2730, prod ln 434.43, live ln 435, enc None
 Load from declared address of `copy` (decl src ln 415), asm ln 2732
   %17 = load %struct.node.1*, %struct.node.1** %head, l434 c54, asm ln 2732
-  🔔 Live ln too early, using produced ln + 1
+  %17 = load %struct.node.1*, %struct.node.1** %head, l434 c54, asm ln 2732
   Added assignment asm ln 2732, prod ln 434.54, live ln 435, enc None
 Load from declared address of `copy` (decl src ln 415), asm ln 2734
   %18 = load i64, i64* %cost, l434 c65, asm ln 2734
-  🔔 Live ln too early, using produced ln + 1
+  %18 = load i64, i64* %cost, l434 c65, asm ln 2734
   Added assignment asm ln 2734, prod ln 434.65, live ln 435, enc None
 Load from declared address of `copy` (decl src ln 415), asm ln 2736
   %19 = load i64, i64* %flow26, l434 c76, asm ln 2736
-  🔔 Live ln too early, using produced ln + 1
+  %19 = load i64, i64* %flow26, l434 c76, asm ln 2736
   Added assignment asm ln 2736, prod ln 434.76, live ln 435, enc None
 Load from declared address of `copy` (decl src ln 415), asm ln 2738
   %20 = load i32, i32* %id27, l434 c118, asm ln 2738
-  🔔 Live ln too early, using produced ln + 1
+  %20 = load i32, i32* %id27, l434 c118, asm ln 2738
   Added assignment asm ln 2738, prod ln 434.118, live ln 435, enc None
 Value produced for `i` (decl src ln 414), asm ln 2642
   const i64 0
+  @dbg.value(i64 0, !2254), asm ln 2642
   Added assignment asm ln 2642, prod ln 414.0, live ln 417, enc None
 Value produced for `j` (decl src ln 414), asm ln 2644
   %conv = sext i32 %thread to i64, l417 c20, asm ln 2643
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %conv, !2257), asm ln 2644
   Added assignment asm ln 2644, prod ln 417.20, live ln 418, enc None
 Value produced for `h` (decl src ln 414), asm ln 2671
   const i64 0
+  @dbg.value(i64 0, !2270), asm ln 2671
   Added assignment asm ln 2671, prod ln 414.0, live ln 423, enc None
 Value produced for `test_arc` (decl src ln 415), asm ln 2686
   %arrayidx10 = getelementptr inbounds %struct.arc.0, %struct.arc.0* %2, i64 %h.0, l425 c20, asm ln 2685
+  @dbg.value(%struct.arc.0* %arrayidx10, !2279), asm ln 2686
   Added assignment asm ln 2686, prod ln 425.20, live ln 428, enc None
 Value produced for `count` (decl src ln 414), asm ln 2724
   %inc = add nsw i64 %count.1, 1, l432 c15, asm ln 2723
+  @dbg.value(i64 %inc, !2251), asm ln 2724
   Added assignment asm ln 2724, prod ln 432.15, live ln 433, enc None
 Value produced for `h` (decl src ln 414), asm ln 2747
   %inc29 = add nsw i64 %h.0, 1, l423 c39, asm ln 2746
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %inc29, !2270), asm ln 2747
   Added assignment asm ln 2747, prod ln 423.39, live ln 424, enc None
 Value produced for `i` (decl src ln 414), asm ln 2752
   %inc31 = add nsw i64 %i.0, 1, l417 c46, asm ln 2751
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %inc31, !2254), asm ln 2752
   Added assignment asm ln 2752, prod ln 417.46, live ln 418, enc None
 Value produced for `j` (decl src ln 414), asm ln 2756
   %rem = srem i64 %add, %num_threads, !klee.check.div !467, l417 c62, asm ln 2755
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %rem, !2257), asm ln 2756
   Added assignment asm ln 2756, prod ln 417.62, live ln 418, enc None
 Value produced for `count` (decl src ln 414), asm ln 2651
   %count.0 = phi i64 [ 0, %entry ], [ %count.1, %for.inc30 ], l414 c35, asm ln 2650
+  @dbg.value(i64 %count.0, !2251), asm ln 2651
   Added assignment asm ln 2651, prod ln 414.35, live ln 417, enc None
 Value produced for `j` (decl src ln 414), asm ln 2652
   %j.0 = phi i64 [ %conv, %entry ], [ %rem, %for.inc30 ], asm ln 2649
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %j.0, !2257), asm ln 2652
   Added assignment asm ln 2652, prod ln 417.62, live ln 418, enc None
 Value produced for `i` (decl src ln 414), asm ln 2653
   %i.0 = phi i64 [ 0, %entry ], [ %inc31, %for.inc30 ], asm ln 2648
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %i.0, !2254), asm ln 2653
   Added assignment asm ln 2653, prod ln 417.46, live ln 418, enc None
 Value produced for `number_of_arcs` (decl src ln 414), asm ln 2670
   %cond = phi i64 [ %1, %cond.true ], [ %size_del, %for.body ], l422 c23, asm ln 2669
+  @dbg.value(i64 %cond, !2269), asm ln 2670
   Added assignment asm ln 2670, prod ln 422.54, live ln 423, enc None
 Value produced for `count` (decl src ln 414), asm ln 2677
   %count.1 = phi i64 [ %count.0, %cond.end ], [ %count.2, %for.inc ], l414 c35, asm ln 2676
+  @dbg.value(i64 %count.1, !2251), asm ln 2677
   Added assignment asm ln 2677, prod ln 414.35, live ln 423, enc None
 Value produced for `h` (decl src ln 414), asm ln 2678
   %h.0 = phi i64 [ 0, %cond.end ], [ %inc29, %for.inc ], asm ln 2675
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %h.0, !2270), asm ln 2678
   Added assignment asm ln 2678, prod ln 423.39, live ln 424, enc None
 Value produced for `count` (decl src ln 414), asm ln 2745
   %count.2 = phi i64 [ %count.1, %for.body8 ], [ %inc, %if.then ], [ %count.1, %land.lhs.true20 ], [ %count.1, %lor.lhs.false ], asm ln 2744
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %count.2, !2251), asm ln 2745
   Added assignment asm ln 2745, prod ln 432.35, live ln 433, enc None
 
 #### Summary
@@ -19665,26 +19930,6 @@ Collected value for `num_threads`
 [0m[0;35mKLEE: WARNING: Unable to load source file `implicit.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `implicit.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `implicit.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `implicit.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `implicit.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `implicit.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `implicit.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `implicit.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `implicit.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `implicit.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `implicit.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `implicit.c`
 [0mKLEE: HaltTimer invoked
 [0mKLEE: halting execution, dumping remaining states
 [0m
@@ -19818,8 +20063,8 @@ Collected value for `test_arc`
 [0m[0;35mKLEE: WARNING: Unable to load source file `implicit.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `implicit.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `implicit.c`
+[0m[0;1;31mKLEE: ERROR: implicit.c:425: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0m[0;1;31mKLEE: ERROR: implicit.c:428: memory error: out of bound pointer
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
@@ -19837,12 +20082,6 @@ Collected value for `test_arc`
                     (SExt w64 (ReadLSB w32 (w32 0x0) switch_arcs.thread)))
            (ReadLSB w64 (w32 0x0) switch_arcs.num_threads))
 [0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `implicit.c`
-[0m[0;1;31mKLEE: ERROR: implicit.c:425: memory error: out of bound pointer
-[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `implicit.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `implicit.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `implicit.c`
@@ -19894,7 +20133,7 @@ Reference Execution:
   Function Covered:  false
   Complete:          false
   Within Time Limit: false
-  Within Fork Limit: false
+  Within Fork Limit: true
 Test Execution:
   Function Covered:  false
   Complete:          false
@@ -20547,7 +20786,7 @@ Reference Execution:
   Function Covered:  false
   Complete:          false
   Within Time Limit: false
-  Within Fork Limit: false
+  Within Fork Limit: true
 Test Execution:
   Function Covered:  false
   Complete:          false
@@ -20577,7 +20816,7 @@ Reference Execution:
   Function Covered:  false
   Complete:          false
   Within Time Limit: false
-  Within Fork Limit: false
+  Within Fork Limit: true
 Test Execution:
   Function Covered:  false
   Complete:          false
@@ -20625,7 +20864,7 @@ Reference Execution:
   Function Covered:  false
   Complete:          false
   Within Time Limit: false
-  Within Fork Limit: false
+  Within Fork Limit: true
 Test Execution:
   Function Covered:  false
   Complete:          false
@@ -20666,7 +20905,7 @@ Reference Execution:
   Function Covered:  false
   Complete:          false
   Within Time Limit: false
-  Within Fork Limit: false
+  Within Fork Limit: true
 Test Execution:
   Function Covered:  false
   Complete:          false
@@ -20713,7 +20952,7 @@ Reference Execution:
   Function Covered:  false
   Complete:          false
   Within Time Limit: false
-  Within Fork Limit: false
+  Within Fork Limit: true
 Test Execution:
   Function Covered:  false
   Complete:          false
@@ -20764,7 +21003,7 @@ Reference Execution:
   Function Covered:  false
   Complete:          false
   Within Time Limit: false
-  Within Fork Limit: false
+  Within Fork Limit: true
 Test Execution:
   Function Covered:  false
   Complete:          false
@@ -20842,7 +21081,7 @@ Reference Execution:
   Function Covered:  false
   Complete:          false
   Within Time Limit: false
-  Within Fork Limit: false
+  Within Fork Limit: true
 Test Execution:
   Function Covered:  false
   Complete:          false
@@ -20893,7 +21132,7 @@ Reference Execution:
   Function Covered:  false
   Complete:          false
   Within Time Limit: false
-  Within Fork Limit: false
+  Within Fork Limit: true
 Test Execution:
   Function Covered:  false
   Complete:          false
@@ -20934,7 +21173,7 @@ Reference Execution:
   Function Covered:  false
   Complete:          false
   Within Time Limit: false
-  Within Fork Limit: false
+  Within Fork Limit: true
 Test Execution:
   Function Covered:  false
   Complete:          false
@@ -20975,7 +21214,7 @@ Reference Execution:
   Function Covered:  false
   Complete:          false
   Within Time Limit: false
-  Within Fork Limit: false
+  Within Fork Limit: true
 Test Execution:
   Function Covered:  false
   Complete:          false
@@ -21024,7 +21263,7 @@ Reference Execution:
   Function Covered:  false
   Complete:          false
   Within Time Limit: false
-  Within Fork Limit: false
+  Within Fork Limit: true
 Test Execution:
   Function Covered:  false
   Complete:          false
@@ -21072,7 +21311,7 @@ Reference Execution:
   Function Covered:  false
   Complete:          false
   Within Time Limit: false
-  Within Fork Limit: false
+  Within Fork Limit: true
 Test Execution:
   Function Covered:  false
   Complete:          false
@@ -21121,7 +21360,7 @@ Reference Execution:
   Function Covered:  false
   Complete:          false
   Within Time Limit: false
-  Within Fork Limit: false
+  Within Fork Limit: true
 Test Execution:
   Function Covered:  false
   Complete:          false
@@ -21281,7 +21520,7 @@ Reference Execution:
   Function Covered:  false
   Complete:          false
   Within Time Limit: false
-  Within Fork Limit: false
+  Within Fork Limit: true
 Test Execution:
   Function Covered:  false
   Complete:          false
@@ -21330,7 +21569,7 @@ Reference Execution:
   Function Covered:  false
   Complete:          false
   Within Time Limit: false
-  Within Fork Limit: false
+  Within Fork Limit: true
 Test Execution:
   Function Covered:  false
   Complete:          false
@@ -21361,7 +21600,7 @@ Reference Execution:
   Function Covered:          0 (  0.00% of ref )
   Complete:                  0 (  0.00% of ref )
   Within Time Limit:         0 (  0.00% of ref )
-  Within Fork Limit:         0 (  0.00% of ref )
+  Within Fork Limit:        32 (100.00% of ref )
 Test Execution:
   Function Covered:          0 (  0.00% of test)
   Complete:                  0 (  0.00% of test)
@@ -21378,1625 +21617,1751 @@ Test Execution:
 
 Load from declared address of `net` (decl src ln 444), asm ln 4690
   %348 = load %struct.network*, %struct.network** %net.addr, l759 c9, asm ln 4690
-  🔔 Live ln too early, using produced ln + 1
+  %348 = load %struct.network*, %struct.network** %net.addr, l759 c9, asm ln 4690
   Added assignment asm ln 4690, prod ln 759.9, live ln 760, enc None
 Load from declared address of `net` (decl src ln 444), asm ln 4686
   %346 = load %struct.network*, %struct.network** %net.addr, l759 c38, asm ln 4686
-  🔔 Live ln too early, using produced ln + 1
+  %346 = load %struct.network*, %struct.network** %net.addr, l759 c38, asm ln 4686
   Added assignment asm ln 4686, prod ln 759.38, live ln 760, enc None
 Load from declared address of `net` (decl src ln 444), asm ln 4683
   %344 = load %struct.network*, %struct.network** %net.addr, l759 c26, asm ln 4683
-  🔔 Live ln too early, using produced ln + 1
+  %344 = load %struct.network*, %struct.network** %net.addr, l759 c26, asm ln 4683
   Added assignment asm ln 4683, prod ln 759.26, live ln 760, enc None
 Load from declared address of `net` (decl src ln 444), asm ln 4680
   %343 = load %struct.network*, %struct.network** %net.addr, l758 c9, asm ln 4680
-  🔔 Live ln too early, using produced ln + 1
+  %343 = load %struct.network*, %struct.network** %net.addr, l758 c9, asm ln 4680
   Added assignment asm ln 4680, prod ln 758.9, live ln 759, enc None
 Load from declared address of `net` (decl src ln 444), asm ln 4675
   %340 = load %struct.network*, %struct.network** %net.addr, l758 c18, asm ln 4675
-  🔔 Live ln too early, using produced ln + 1
+  %340 = load %struct.network*, %struct.network** %net.addr, l758 c18, asm ln 4675
   Added assignment asm ln 4675, prod ln 758.18, live ln 759, enc None
 Load from declared address of `net` (decl src ln 444), asm ln 4671
   %338 = load %struct.network*, %struct.network** %net.addr, l757 c48, asm ln 4671
-  🔔 Live ln too early, using produced ln + 1
+  %338 = load %struct.network*, %struct.network** %net.addr, l757 c48, asm ln 4671
   Added assignment asm ln 4671, prod ln 757.48, live ln 758, enc None
 Load from declared address of `net` (decl src ln 444), asm ln 4670
   %337 = load %struct.network*, %struct.network** %net.addr, l757 c26, asm ln 4670
-  🔔 Live ln too early, using produced ln + 1
+  %337 = load %struct.network*, %struct.network** %net.addr, l757 c26, asm ln 4670
   Added assignment asm ln 4670, prod ln 757.26, live ln 758, enc None
 Load from declared address of `net` (decl src ln 444), asm ln 4665
   %335 = load %struct.network*, %struct.network** %net.addr, l756 c9, asm ln 4665
-  🔔 Live ln too early, using produced ln + 1
+  %335 = load %struct.network*, %struct.network** %net.addr, l756 c9, asm ln 4665
   Added assignment asm ln 4665, prod ln 756.9, live ln 757, enc None
 Load from declared address of `net` (decl src ln 444), asm ln 4659
   %332 = load %struct.network*, %struct.network** %net.addr, l755 c9, asm ln 4659
-  🔔 Live ln too early, using produced ln + 1
+  %332 = load %struct.network*, %struct.network** %net.addr, l755 c9, asm ln 4659
   Added assignment asm ln 4659, prod ln 755.9, live ln 756, enc None
 Load from declared address of `net` (decl src ln 444), asm ln 4638
   %323 = load %struct.network*, %struct.network** %net.addr, l748 c43, asm ln 4638
-  🔔 Live ln too early, using produced ln + 1
+  %323 = load %struct.network*, %struct.network** %net.addr, l748 c43, asm ln 4638
   Added assignment asm ln 4638, prod ln 748.43, live ln 749, enc None
 Load from declared address of `net` (decl src ln 444), asm ln 4570
   %294 = load %struct.network*, %struct.network** %net.addr, l730 c38, asm ln 4570
-  🔔 Live ln too early, using produced ln + 1
+  %294 = load %struct.network*, %struct.network** %net.addr, l730 c38, asm ln 4570
   Added assignment asm ln 4570, prod ln 730.38, live ln 731, enc None
 Load from declared address of `net` (decl src ln 444), asm ln 4528
   %278 = load %struct.network*, %struct.network** %net.addr, l718 c18, asm ln 4528
-  🔔 Live ln too early, using produced ln + 1
+  %278 = load %struct.network*, %struct.network** %net.addr, l718 c18, asm ln 4528
   Added assignment asm ln 4528, prod ln 718.18, live ln 719, enc None
 Load from declared address of `net` (decl src ln 444), asm ln 4508
   %268 = load %struct.network*, %struct.network** %net.addr, l709 c21, asm ln 4508
-  🔔 Live ln too early, using produced ln + 1
+  %268 = load %struct.network*, %struct.network** %net.addr, l709 c21, asm ln 4508
   Added assignment asm ln 4508, prod ln 709.21, live ln 710, enc None
 Load from declared address of `net` (decl src ln 444), asm ln 4452
   %243 = load %struct.network*, %struct.network** %net.addr, l680 c31, asm ln 4452
-  🔔 Live ln too early, using produced ln + 1
+  %243 = load %struct.network*, %struct.network** %net.addr, l680 c31, asm ln 4452
   Added assignment asm ln 4452, prod ln 680.31, live ln 681, enc None
 Load from declared address of `net` (decl src ln 444), asm ln 4277
   %176 = load %struct.network*, %struct.network** %net.addr, l637 c39, asm ln 4277
-  🔔 Live ln too early, using produced ln + 1
+  %176 = load %struct.network*, %struct.network** %net.addr, l637 c39, asm ln 4277
   Added assignment asm ln 4277, prod ln 637.39, live ln 638, enc None
 Load from declared address of `net` (decl src ln 444), asm ln 4108
   %108 = load %struct.network*, %struct.network** %net.addr, l588 c27, asm ln 4108
-  🔔 Live ln too early, using produced ln + 1
+  %108 = load %struct.network*, %struct.network** %net.addr, l588 c27, asm ln 4108
   Added assignment asm ln 4108, prod ln 588.27, live ln 589, enc None
 Load from declared address of `net` (decl src ln 444), asm ln 4093
   %101 = load %struct.network*, %struct.network** %net.addr, l584 c35, asm ln 4093
-  🔔 Live ln too early, using produced ln + 1
+  %101 = load %struct.network*, %struct.network** %net.addr, l584 c35, asm ln 4093
   Added assignment asm ln 4093, prod ln 584.35, live ln 585, enc None
 Load from declared address of `net` (decl src ln 444), asm ln 4078
   %96 = load %struct.network*, %struct.network** %net.addr, l577 c35, asm ln 4078
-  🔔 Live ln too early, using produced ln + 1
+  %96 = load %struct.network*, %struct.network** %net.addr, l577 c35, asm ln 4078
   Added assignment asm ln 4078, prod ln 577.35, live ln 578, enc None
 Load from declared address of `net` (decl src ln 444), asm ln 4031
   %85 = load %struct.network*, %struct.network** %net.addr, l570 c16, asm ln 4031
-  🔔 Live ln too early, using produced ln + 1
+  %85 = load %struct.network*, %struct.network** %net.addr, l570 c16, asm ln 4031
   Added assignment asm ln 4031, prod ln 570.16, live ln 571, enc None
 Load from declared address of `net` (decl src ln 444), asm ln 3990
   %70 = load %struct.network*, %struct.network** %net.addr, l560 c15, asm ln 3990
-  🔔 Live ln too early, using produced ln + 1
+  %70 = load %struct.network*, %struct.network** %net.addr, l560 c15, asm ln 3990
   Added assignment asm ln 3990, prod ln 560.15, live ln 561, enc None
 Load from declared address of `net` (decl src ln 444), asm ln 3981
   %66 = load %struct.network*, %struct.network** %net.addr, l559 c16, asm ln 3981
-  🔔 Live ln too early, using produced ln + 1
+  %66 = load %struct.network*, %struct.network** %net.addr, l559 c16, asm ln 3981
   Added assignment asm ln 3981, prod ln 559.16, live ln 560, enc None
 Load from declared address of `net` (decl src ln 444), asm ln 3949
   %54 = load %struct.network*, %struct.network** %net.addr, l540 c16, asm ln 3949
-  🔔 Live ln too early, using produced ln + 1
+  %54 = load %struct.network*, %struct.network** %net.addr, l540 c16, asm ln 3949
   Added assignment asm ln 3949, prod ln 540.16, live ln 541, enc None
 Load from declared address of `net` (decl src ln 444), asm ln 3941
   %51 = load %struct.network*, %struct.network** %net.addr, l538 c37, asm ln 3941
-  🔔 Live ln too early, using produced ln + 1
+  %51 = load %struct.network*, %struct.network** %net.addr, l538 c37, asm ln 3941
   Added assignment asm ln 3941, prod ln 538.37, live ln 539, enc None
 Load from declared address of `net` (decl src ln 444), asm ln 3928
   %48 = load %struct.network*, %struct.network** %net.addr, l535 c20, asm ln 3928
-  🔔 Live ln too early, using produced ln + 1
+  %48 = load %struct.network*, %struct.network** %net.addr, l535 c20, asm ln 3928
   Added assignment asm ln 3928, prod ln 535.20, live ln 536, enc None
 Load from declared address of `net` (decl src ln 444), asm ln 3913
   %46 = load %struct.network*, %struct.network** %net.addr, l530 c9, asm ln 3913
-  🔔 Live ln too early, using produced ln + 1
+  %46 = load %struct.network*, %struct.network** %net.addr, l530 c9, asm ln 3913
   Added assignment asm ln 3913, prod ln 530.9, live ln 531, enc None
 Load from declared address of `net` (decl src ln 444), asm ln 3908
   %45 = load %struct.network*, %struct.network** %net.addr, l526 c34, asm ln 3908
-  🔔 Live ln too early, using produced ln + 1
+  %45 = load %struct.network*, %struct.network** %net.addr, l526 c34, asm ln 3908
   Added assignment asm ln 3908, prod ln 526.34, live ln 527, enc None
 Load from declared address of `net` (decl src ln 444), asm ln 3898
   %44 = load %struct.network*, %struct.network** %net.addr, l523 c26, asm ln 3898
-  🔔 Live ln too early, using produced ln + 1
+  %44 = load %struct.network*, %struct.network** %net.addr, l523 c26, asm ln 3898
   Added assignment asm ln 3898, prod ln 523.26, live ln 524, enc None
 Load from declared address of `net` (decl src ln 444), asm ln 3890
   %42 = load %struct.network*, %struct.network** %net.addr, l519 c52, asm ln 3890
-  🔔 Live ln too early, using produced ln + 1
+  %42 = load %struct.network*, %struct.network** %net.addr, l519 c52, asm ln 3890
   Added assignment asm ln 3890, prod ln 519.52, live ln 520, enc None
 Load from declared address of `net` (decl src ln 444), asm ln 3886
   %40 = load %struct.network*, %struct.network** %net.addr, l519 c43, asm ln 3886
-  🔔 Live ln too early, using produced ln + 1
+  %40 = load %struct.network*, %struct.network** %net.addr, l519 c43, asm ln 3886
   Added assignment asm ln 3886, prod ln 519.43, live ln 520, enc None
 Load from declared address of `net` (decl src ln 444), asm ln 3881
   %38 = load %struct.network*, %struct.network** %net.addr, l519 c25, asm ln 3881
-  🔔 Live ln too early, using produced ln + 1
+  %38 = load %struct.network*, %struct.network** %net.addr, l519 c25, asm ln 3881
   Added assignment asm ln 3881, prod ln 519.25, live ln 520, enc None
 Load from declared address of `net` (decl src ln 444), asm ln 3878
   %36 = load %struct.network*, %struct.network** %net.addr, l519 c12, asm ln 3878
-  🔔 Live ln too early, using produced ln + 1
+  %36 = load %struct.network*, %struct.network** %net.addr, l519 c12, asm ln 3878
   Added assignment asm ln 3878, prod ln 519.12, live ln 520, enc None
 Load from declared address of `net` (decl src ln 444), asm ln 3871
   %34 = load %struct.network*, %struct.network** %net.addr, l517 c37, asm ln 3871
-  🔔 Live ln too early, using produced ln + 1
+  %34 = load %struct.network*, %struct.network** %net.addr, l517 c37, asm ln 3871
   Added assignment asm ln 3871, prod ln 517.37, live ln 518, enc None
 Load from declared address of `net` (decl src ln 444), asm ln 3867
   %32 = load %struct.network*, %struct.network** %net.addr, l517 c20, asm ln 3867
-  🔔 Live ln too early, using produced ln + 1
+  %32 = load %struct.network*, %struct.network** %net.addr, l517 c20, asm ln 3867
   Added assignment asm ln 3867, prod ln 517.20, live ln 518, enc None
 Load from declared address of `net` (decl src ln 444), asm ln 3864
   %30 = load %struct.network*, %struct.network** %net.addr, l517 c11, asm ln 3864
-  🔔 Live ln too early, using produced ln + 1
+  %30 = load %struct.network*, %struct.network** %net.addr, l517 c11, asm ln 3864
   Added assignment asm ln 3864, prod ln 517.11, live ln 518, enc None
 Load from declared address of `net` (decl src ln 444), asm ln 3859
   %29 = load %struct.network*, %struct.network** %net.addr, l512 c34, asm ln 3859
-  🔔 Live ln too early, using produced ln + 1
+  %29 = load %struct.network*, %struct.network** %net.addr, l512 c34, asm ln 3859
   Added assignment asm ln 3859, prod ln 512.34, live ln 513, enc None
 Load from declared address of `net` (decl src ln 444), asm ln 3849
   %28 = load %struct.network*, %struct.network** %net.addr, l509 c26, asm ln 3849
-  🔔 Live ln too early, using produced ln + 1
+  %28 = load %struct.network*, %struct.network** %net.addr, l509 c26, asm ln 3849
   Added assignment asm ln 3849, prod ln 509.26, live ln 510, enc None
 Load from declared address of `net` (decl src ln 444), asm ln 3841
   %26 = load %struct.network*, %struct.network** %net.addr, l505 c52, asm ln 3841
-  🔔 Live ln too early, using produced ln + 1
+  %26 = load %struct.network*, %struct.network** %net.addr, l505 c52, asm ln 3841
   Added assignment asm ln 3841, prod ln 505.52, live ln 506, enc None
 Load from declared address of `net` (decl src ln 444), asm ln 3837
   %24 = load %struct.network*, %struct.network** %net.addr, l505 c43, asm ln 3837
-  🔔 Live ln too early, using produced ln + 1
+  %24 = load %struct.network*, %struct.network** %net.addr, l505 c43, asm ln 3837
   Added assignment asm ln 3837, prod ln 505.43, live ln 506, enc None
 Load from declared address of `net` (decl src ln 444), asm ln 3832
   %22 = load %struct.network*, %struct.network** %net.addr, l505 c25, asm ln 3832
-  🔔 Live ln too early, using produced ln + 1
+  %22 = load %struct.network*, %struct.network** %net.addr, l505 c25, asm ln 3832
   Added assignment asm ln 3832, prod ln 505.25, live ln 506, enc None
 Load from declared address of `net` (decl src ln 444), asm ln 3829
   %20 = load %struct.network*, %struct.network** %net.addr, l505 c12, asm ln 3829
-  🔔 Live ln too early, using produced ln + 1
+  %20 = load %struct.network*, %struct.network** %net.addr, l505 c12, asm ln 3829
   Added assignment asm ln 3829, prod ln 505.12, live ln 506, enc None
 Load from declared address of `net` (decl src ln 444), asm ln 3822
   %18 = load %struct.network*, %struct.network** %net.addr, l503 c37, asm ln 3822
-  🔔 Live ln too early, using produced ln + 1
+  %18 = load %struct.network*, %struct.network** %net.addr, l503 c37, asm ln 3822
   Added assignment asm ln 3822, prod ln 503.37, live ln 504, enc None
 Load from declared address of `net` (decl src ln 444), asm ln 3818
   %16 = load %struct.network*, %struct.network** %net.addr, l503 c20, asm ln 3818
-  🔔 Live ln too early, using produced ln + 1
+  %16 = load %struct.network*, %struct.network** %net.addr, l503 c20, asm ln 3818
   Added assignment asm ln 3818, prod ln 503.20, live ln 504, enc None
 Load from declared address of `net` (decl src ln 444), asm ln 3815
   %14 = load %struct.network*, %struct.network** %net.addr, l503 c11, asm ln 3815
-  🔔 Live ln too early, using produced ln + 1
+  %14 = load %struct.network*, %struct.network** %net.addr, l503 c11, asm ln 3815
   Added assignment asm ln 3815, prod ln 503.11, live ln 504, enc None
 Load from declared address of `net` (decl src ln 444), asm ln 3808
   %12 = load %struct.network*, %struct.network** %net.addr, l501 c9, asm ln 3808
-  🔔 Live ln too early, using produced ln + 1
+  %12 = load %struct.network*, %struct.network** %net.addr, l501 c9, asm ln 3808
   Added assignment asm ln 3808, prod ln 501.9, live ln 502, enc None
 Load from declared address of `net` (decl src ln 444), asm ln 3765
   %0 = load %struct.network*, %struct.network** %net.addr, l471 c28, asm ln 3765
-  🔔 Live ln too early, using produced ln + 1
+  %0 = load %struct.network*, %struct.network** %net.addr, l471 c28, asm ln 3765
   Added assignment asm ln 3765, prod ln 471.28, live ln 472, enc None
 Store to declared address of `net` (decl src ln 444), asm ln 3734
   arg 0
+  store %struct.network* %net, %struct.network** %net.addr, asm ln 3734
   Added assignment asm ln 3734, prod ln 444.0, live ln 452, enc None
 Store to declared address of `i` (decl src ln 450), asm ln 4429
   %inc209 = add nsw i64 %237, 1, l574 c26, asm ln 4428
-  🔔 Live ln too early, using produced ln + 1
+  store i64 %inc209, i64* %i, l574 c26, asm ln 4429
   Added assignment asm ln 4429, prod ln 574.26, live ln 575, enc None
 Load from declared address of `i` (decl src ln 450), asm ln 4427
   %237 = load i64, i64* %i, l574 c26, asm ln 4427
-  🔔 Live ln too early, using produced ln + 1
+  %237 = load i64, i64* %i, l574 c26, asm ln 4427
   Added assignment asm ln 4427, prod ln 574.26, live ln 575, enc None
 Load from declared address of `i` (decl src ln 450), asm ln 4163
   %129 = load i64, i64* %i, l603 c39, asm ln 4163
-  🔔 Live ln too early, using produced ln + 1
+  %129 = load i64, i64* %i, l603 c39, asm ln 4163
   Added assignment asm ln 4163, prod ln 603.39, live ln 604, enc None
 Load from declared address of `i` (decl src ln 450), asm ln 4085
   %99 = load i64, i64* %i, l580 c14, asm ln 4085
-  🔔 Live ln too early, using produced ln + 1
+  %99 = load i64, i64* %i, l580 c14, asm ln 4085
   Added assignment asm ln 4085, prod ln 580.14, live ln 581, enc None
 Load from declared address of `i` (decl src ln 450), asm ln 4067
   %93 = load i64, i64* %i, l574 c14, asm ln 4067
-  🔔 Live ln too early, using produced ln + 1
+  %93 = load i64, i64* %i, l574 c14, asm ln 4067
   Added assignment asm ln 4067, prod ln 574.14, live ln 575, enc None
 Store to declared address of `i` (decl src ln 450), asm ln 4056
   %inc79 = add nsw i64 %91, 1, l571 c59, asm ln 4055
-  🔔 Live ln too early, using produced ln + 1
+  store i64 %inc79, i64* %i, l571 c59, asm ln 4056
   Added assignment asm ln 4056, prod ln 571.59, live ln 572, enc None
 Load from declared address of `i` (decl src ln 450), asm ln 4054
   %91 = load i64, i64* %i, l571 c59, asm ln 4054
-  🔔 Live ln too early, using produced ln + 1
+  %91 = load i64, i64* %i, l571 c59, asm ln 4054
   Added assignment asm ln 4054, prod ln 571.59, live ln 572, enc None
 Load from declared address of `i` (decl src ln 450), asm ln 4039
   %87 = load i64, i64* %i, l571 c19, asm ln 4039
-  🔔 Live ln too early, using produced ln + 1
+  %87 = load i64, i64* %i, l571 c19, asm ln 4039
   Added assignment asm ln 4039, prod ln 571.19, live ln 572, enc None
 Store to declared address of `i` (decl src ln 450), asm ln 4035
   const i64 0
-  🔔 Live ln too early, using produced ln + 1
+  store i64 0, i64* %i, l571 c14, asm ln 4035
   Added assignment asm ln 4035, prod ln 571.14, live ln 572, enc None
 Store to declared address of `i` (decl src ln 450), asm ln 4027
   %inc = add nsw i64 %84, 1, l566 c55, asm ln 4026
-  🔔 Live ln too early, using produced ln + 1
+  store i64 %inc, i64* %i, l566 c55, asm ln 4027
   Added assignment asm ln 4027, prod ln 566.55, live ln 567, enc None
 Load from declared address of `i` (decl src ln 450), asm ln 4025
   %84 = load i64, i64* %i, l566 c55, asm ln 4025
-  🔔 Live ln too early, using produced ln + 1
+  %84 = load i64, i64* %i, l566 c55, asm ln 4025
   Added assignment asm ln 4025, prod ln 566.55, live ln 567, enc None
 Load from declared address of `i` (decl src ln 450), asm ln 4022
   %83 = load i64, i64* %i, l567 c37, asm ln 4022
-  🔔 Live ln too early, using produced ln + 1
+  %83 = load i64, i64* %i, l567 c37, asm ln 4022
   Added assignment asm ln 4022, prod ln 567.37, live ln 568, enc None
 Load from declared address of `i` (decl src ln 450), asm ln 4015
   %79 = load i64, i64* %i, l567 c50, asm ln 4015
-  🔔 Live ln too early, using produced ln + 1
+  %79 = load i64, i64* %i, l567 c50, asm ln 4015
   Added assignment asm ln 4015, prod ln 567.50, live ln 568, enc None
 Load from declared address of `i` (decl src ln 450), asm ln 4008
   %76 = load i64, i64* %i, l566 c19, asm ln 4008
-  🔔 Live ln too early, using produced ln + 1
+  %76 = load i64, i64* %i, l566 c19, asm ln 4008
   Added assignment asm ln 4008, prod ln 566.19, live ln 567, enc None
 Store to declared address of `i` (decl src ln 450), asm ln 4004
   const i64 0
-  🔔 Live ln too early, using produced ln + 1
+  store i64 0, i64* %i, l566 c14, asm ln 4004
   Added assignment asm ln 4004, prod ln 566.14, live ln 567, enc None
 Load from declared address of `trips` (decl src ln 451), asm ln 4068
   %94 = load i64, i64* %trips, l574 c18, asm ln 4068
-  🔔 Live ln too early, using produced ln + 1
+  %94 = load i64, i64* %trips, l574 c18, asm ln 4068
   Added assignment asm ln 4068, prod ln 574.18, live ln 575, enc None
 Load from declared address of `trips` (decl src ln 451), asm ln 4040
   %88 = load i64, i64* %trips, l571 c23, asm ln 4040
-  🔔 Live ln too early, using produced ln + 1
+  %88 = load i64, i64* %trips, l571 c23, asm ln 4040
   Added assignment asm ln 4040, prod ln 571.23, live ln 572, enc None
 Store to declared address of `trips` (decl src ln 451), asm ln 3993
   %71 = load i64, i64* %n_trips60, l560 c20, asm ln 3992
+  store i64 %71, i64* %trips, l560 c13, asm ln 3993
   Added assignment asm ln 3993, prod ln 560.20, live ln 561, enc None
 Load from declared address of `new_arcs` (decl src ln 452), asm ln 4705
   %357 = load i64, i64* %new_arcs, l780 c12, asm ln 4705
-  🔔 Live ln too early, using produced ln + 1
+  %357 = load i64, i64* %new_arcs, l780 c12, asm ln 4705
   Added assignment asm ln 4705, prod ln 780.12, live ln 781, enc None
 Load from declared address of `new_arcs` (decl src ln 452), asm ln 4678
   %342 = load i64, i64* %new_arcs, l758 c27, asm ln 4678
-  🔔 Live ln too early, using produced ln + 1
+  %342 = load i64, i64* %new_arcs, l758 c27, asm ln 4678
   Added assignment asm ln 4678, prod ln 758.27, live ln 759, enc None
 Load from declared address of `new_arcs` (decl src ln 452), asm ln 4664
   %334 = load i64, i64* %new_arcs, l756 c36, asm ln 4664
-  🔔 Live ln too early, using produced ln + 1
+  %334 = load i64, i64* %new_arcs, l756 c36, asm ln 4664
   Added assignment asm ln 4664, prod ln 756.36, live ln 757, enc None
 Load from declared address of `new_arcs` (decl src ln 452), asm ln 4658
   %331 = load i64, i64* %new_arcs, l755 c24, asm ln 4658
-  🔔 Live ln too early, using produced ln + 1
+  %331 = load i64, i64* %new_arcs, l755 c24, asm ln 4658
   Added assignment asm ln 4658, prod ln 755.24, live ln 756, enc None
 Store to declared address of `new_arcs` (decl src ln 452), asm ln 3739
   const i64 0
+  store i64 0, i64* %new_arcs, l452 c10, asm ln 3739
   Added assignment asm ln 3739, prod ln 452.10, live ln 453, enc None
 Load from declared address of `resized` (decl src ln 453), asm ln 4545
   %286 = load i64, i64* %resized, l720 c13, asm ln 4545
-  🔔 Live ln too early, using produced ln + 1
+  %286 = load i64, i64* %resized, l720 c13, asm ln 4545
   Added assignment asm ln 4545, prod ln 720.13, live ln 721, enc None
 Store to declared address of `resized` (decl src ln 453), asm ln 3897
   const i64 1
+  store i64 1, i64* %resized, l522 c17, asm ln 3897
   Added assignment asm ln 3897, prod ln 522.17, live ln 523, enc None
 Store to declared address of `resized` (decl src ln 453), asm ln 3848
   const i64 1
+  store i64 1, i64* %resized, l508 c17, asm ln 3848
   Added assignment asm ln 3848, prod ln 508.17, live ln 509, enc None
 Store to declared address of `resized` (decl src ln 453), asm ln 3741
   const i64 0
+  store i64 0, i64* %resized, l453 c10, asm ln 3741
   Added assignment asm ln 3741, prod ln 453.10, live ln 455, enc None
 Load from declared address of `latest` (decl src ln 454), asm ln 4227
   %154 = load i64, i64* %latest, l622 c46, asm ln 4227
-  🔔 Live ln too early, using produced ln + 1
+  %154 = load i64, i64* %latest, l622 c46, asm ln 4227
   Added assignment asm ln 4227, prod ln 622.46, live ln 623, enc None
 Store to declared address of `latest` (decl src ln 454), asm ln 4194
   %add126 = add nsw i64 %sub125, %140, l611 c13, asm ln 4193
+  store i64 %add126, i64* %latest, l610 c16, asm ln 4194
   Added assignment asm ln 4194, prod ln 611.16, live ln 613, enc None
 Load from declared address of `min_impl_duration` (decl src ln 455), asm ln 3805
   %11 = load i64, i64* %min_impl_duration, l497 c51, asm ln 3805
-  🔔 Live ln too early, using produced ln + 1
+  %11 = load i64, i64* %min_impl_duration, l497 c51, asm ln 3805
   Added assignment asm ln 3805, prod ln 497.51, live ln 498, enc None
 Store to declared address of `min_impl_duration` (decl src ln 455), asm ln 3744
   const i64 15
+  store i64 15, i64* %min_impl_duration, l455 c10, asm ln 3744
   Added assignment asm ln 3744, prod ln 455.10, live ln 462, enc None
 Load from declared address of `max_new_par_residual_new_arcs` (decl src ln 456), asm ln 4533
   %281 = load i64, i64* %max_new_par_residual_new_arcs, l718 c44, asm ln 4533
-  🔔 Live ln too early, using produced ln + 1
+  %281 = load i64, i64* %max_new_par_residual_new_arcs, l718 c44, asm ln 4533
   Added assignment asm ln 4533, prod ln 718.44, live ln 719, enc None
 Load from declared address of `max_new_par_residual_new_arcs` (decl src ln 456), asm ln 4457
   %248 = load i64, i64* %max_new_par_residual_new_arcs, l680 c80, asm ln 4457
-  🔔 Live ln too early, using produced ln + 1
+  %248 = load i64, i64* %max_new_par_residual_new_arcs, l680 c80, asm ln 4457
   Added assignment asm ln 4457, prod ln 680.80, live ln 681, enc None
 Load from declared address of `max_new_par_residual_new_arcs` (decl src ln 456), asm ln 4342
   %205 = load i64, i64* %max_new_par_residual_new_arcs, l649 c75, asm ln 4342
-  🔔 Live ln too early, using produced ln + 1
+  %205 = load i64, i64* %max_new_par_residual_new_arcs, l649 c75, asm ln 4342
   Added assignment asm ln 4342, prod ln 649.75, live ln 650, enc None
 Load from declared address of `max_new_par_residual_new_arcs` (decl src ln 456), asm ln 4262
   %167 = load i64, i64* %max_new_par_residual_new_arcs, l634 c42, asm ln 4262
-  🔔 Live ln too early, using produced ln + 1
+  %167 = load i64, i64* %max_new_par_residual_new_arcs, l634 c42, asm ln 4262
   Added assignment asm ln 4262, prod ln 634.42, live ln 635, enc None
 Load from declared address of `max_new_par_residual_new_arcs` (decl src ln 456), asm ln 4113
   %113 = load i64, i64* %max_new_par_residual_new_arcs, l588 c76, asm ln 4113
-  🔔 Live ln too early, using produced ln + 1
+  %113 = load i64, i64* %max_new_par_residual_new_arcs, l588 c76, asm ln 4113
   Added assignment asm ln 4113, prod ln 588.76, live ln 589, enc None
 Load from declared address of `max_new_par_residual_new_arcs` (decl src ln 456), asm ln 4009
   %77 = load i64, i64* %max_new_par_residual_new_arcs, l566 c23, asm ln 4009
-  🔔 Live ln too early, using produced ln + 1
+  %77 = load i64, i64* %max_new_par_residual_new_arcs, l566 c23, asm ln 4009
   Added assignment asm ln 4009, prod ln 566.23, live ln 567, enc None
 Load from declared address of `max_new_par_residual_new_arcs` (decl src ln 456), asm ln 3996
   %72 = load i64, i64* %max_new_par_residual_new_arcs, l563 c54, asm ln 3996
-  🔔 Live ln too early, using produced ln + 1
+  %72 = load i64, i64* %max_new_par_residual_new_arcs, l563 c54, asm ln 3996
   Added assignment asm ln 3996, prod ln 563.54, live ln 564, enc None
 Load from declared address of `max_new_par_residual_new_arcs` (decl src ln 456), asm ln 3986
   %69 = load i64, i64* %max_new_par_residual_new_arcs, l559 c42, asm ln 3986
-  🔔 Live ln too early, using produced ln + 1
+  %69 = load i64, i64* %max_new_par_residual_new_arcs, l559 c42, asm ln 3986
   Added assignment asm ln 3986, prod ln 559.42, live ln 560, enc None
 Store to declared address of `max_new_par_residual_new_arcs` (decl src ln 456), asm ln 3947
   %div49 = sdiv i64 %52, %53, !klee.check.div !586, l538 c61, asm ln 3946
+  store i64 %div49, i64* %max_new_par_residual_new_arcs, l538 c35, asm ln 3947
   Added assignment asm ln 3947, prod ln 538.61, live ln 539, enc None
 Load from declared address of `thread` (decl src ln 457), asm ln 4539
   %284 = load i32, i32* %thread, l719 c40, asm ln 4539
-  🔔 Live ln too early, using produced ln + 1
+  %284 = load i32, i32* %thread, l719 c40, asm ln 4539
   Added assignment asm ln 4539, prod ln 719.40, live ln 720, enc None
 Load from declared address of `thread` (decl src ln 457), asm ln 4531
   %280 = load i32, i32* %thread, l718 c35, asm ln 4531
-  🔔 Live ln too early, using produced ln + 1
+  %280 = load i32, i32* %thread, l718 c35, asm ln 4531
   Added assignment asm ln 4531, prod ln 718.35, live ln 719, enc None
 Load from declared address of `thread` (decl src ln 457), asm ln 4520
   %276 = load i32, i32* %thread, l716 c26, asm ln 4520
-  🔔 Live ln too early, using produced ln + 1
+  %276 = load i32, i32* %thread, l716 c26, asm ln 4520
   Added assignment asm ln 4520, prod ln 716.26, live ln 717, enc None
 Load from declared address of `thread` (decl src ln 457), asm ln 4513
   %272 = load i32, i32* %thread, l715 c28, asm ln 4513
-  🔔 Live ln too early, using produced ln + 1
+  %272 = load i32, i32* %thread, l715 c28, asm ln 4513
   Added assignment asm ln 4513, prod ln 715.28, live ln 716, enc None
 Load from declared address of `thread` (decl src ln 457), asm ln 4503
   %266 = load i32, i32* %thread, l697 c64, asm ln 4503
-  🔔 Live ln too early, using produced ln + 1
+  %266 = load i32, i32* %thread, l697 c64, asm ln 4503
   Added assignment asm ln 4503, prod ln 697.64, live ln 698, enc None
 Load from declared address of `thread` (decl src ln 457), asm ln 4497
   %262 = load i32, i32* %thread, l697 c40, asm ln 4497
-  🔔 Live ln too early, using produced ln + 1
+  %262 = load i32, i32* %thread, l697 c40, asm ln 4497
   Added assignment asm ln 4497, prod ln 697.40, live ln 698, enc None
 Load from declared address of `thread` (decl src ln 457), asm ln 4456
   %247 = load i32, i32* %thread, l680 c72, asm ln 4456
-  🔔 Live ln too early, using produced ln + 1
+  %247 = load i32, i32* %thread, l680 c72, asm ln 4456
   Added assignment asm ln 4456, prod ln 680.72, live ln 681, enc None
 Load from declared address of `thread` (decl src ln 457), asm ln 4438
   %241 = load i32, i32* %thread, l673 c20, asm ln 4438
-  🔔 Live ln too early, using produced ln + 1
+  %241 = load i32, i32* %thread, l673 c20, asm ln 4438
   Added assignment asm ln 4438, prod ln 673.20, live ln 674, enc None
 Load from declared address of `thread` (decl src ln 457), asm ln 4410
   %233 = load i32, i32* %thread, l663 c28, asm ln 4410
-  🔔 Live ln too early, using produced ln + 1
+  %233 = load i32, i32* %thread, l663 c28, asm ln 4410
   Added assignment asm ln 4410, prod ln 663.28, live ln 664, enc None
 Load from declared address of `thread` (decl src ln 457), asm ln 4400
   %229 = load i32, i32* %thread, l661 c30, asm ln 4400
-  🔔 Live ln too early, using produced ln + 1
+  %229 = load i32, i32* %thread, l661 c30, asm ln 4400
   Added assignment asm ln 4400, prod ln 661.30, live ln 662, enc None
 Load from declared address of `thread` (decl src ln 457), asm ln 4360
   %213 = load i32, i32* %thread, l652 c56, asm ln 4360
-  🔔 Live ln too early, using produced ln + 1
+  %213 = load i32, i32* %thread, l652 c56, asm ln 4360
   Added assignment asm ln 4360, prod ln 652.56, live ln 653, enc None
 Load from declared address of `thread` (decl src ln 457), asm ln 4355
   %210 = load i32, i32* %thread, l652 c35, asm ln 4355
-  🔔 Live ln too early, using produced ln + 1
+  %210 = load i32, i32* %thread, l652 c35, asm ln 4355
   Added assignment asm ln 4355, prod ln 652.35, live ln 653, enc None
 Load from declared address of `thread` (decl src ln 457), asm ln 4328
   %197 = load i32, i32* %thread, l647 c28, asm ln 4328
-  🔔 Live ln too early, using produced ln + 1
+  %197 = load i32, i32* %thread, l647 c28, asm ln 4328
   Added assignment asm ln 4328, prod ln 647.28, live ln 648, enc None
 Load from declared address of `thread` (decl src ln 457), asm ln 4317
   %190 = load i32, i32* %thread, l646 c49, asm ln 4317
-  🔔 Live ln too early, using produced ln + 1
+  %190 = load i32, i32* %thread, l646 c49, asm ln 4317
   Added assignment asm ln 4317, prod ln 646.49, live ln 647, enc None
 Load from declared address of `thread` (decl src ln 457), asm ln 4312
   %187 = load i32, i32* %thread, l646 c28, asm ln 4312
-  🔔 Live ln too early, using produced ln + 1
+  %187 = load i32, i32* %thread, l646 c28, asm ln 4312
   Added assignment asm ln 4312, prod ln 646.28, live ln 647, enc None
 Load from declared address of `thread` (decl src ln 457), asm ln 4283
   %180 = load i32, i32* %thread, l638 c30, asm ln 4283
-  🔔 Live ln too early, using produced ln + 1
+  %180 = load i32, i32* %thread, l638 c30, asm ln 4283
   Added assignment asm ln 4283, prod ln 638.30, live ln 639, enc None
 Load from declared address of `thread` (decl src ln 457), asm ln 4269
   %170 = load i32, i32* %thread, l636 c54, asm ln 4269
-  🔔 Live ln too early, using produced ln + 1
+  %170 = load i32, i32* %thread, l636 c54, asm ln 4269
   Added assignment asm ln 4269, prod ln 636.54, live ln 637, enc None
 Load from declared address of `thread` (decl src ln 457), asm ln 4258
   %165 = load i32, i32* %thread, l634 c32, asm ln 4258
-  🔔 Live ln too early, using produced ln + 1
+  %165 = load i32, i32* %thread, l634 c32, asm ln 4258
   Added assignment asm ln 4258, prod ln 634.32, live ln 635, enc None
 Load from declared address of `thread` (decl src ln 457), asm ln 4167
   %131 = load i32, i32* %thread, l603 c58, asm ln 4167
-  🔔 Live ln too early, using produced ln + 1
+  %131 = load i32, i32* %thread, l603 c58, asm ln 4167
   Added assignment asm ln 4167, prod ln 603.58, live ln 604, enc None
 Load from declared address of `thread` (decl src ln 457), asm ln 4119
   %117 = load i32, i32* %thread, l590 c28, asm ln 4119
-  🔔 Live ln too early, using produced ln + 1
+  %117 = load i32, i32* %thread, l590 c28, asm ln 4119
   Added assignment asm ln 4119, prod ln 590.28, live ln 591, enc None
 Load from declared address of `thread` (decl src ln 457), asm ln 4112
   %112 = load i32, i32* %thread, l588 c68, asm ln 4112
-  🔔 Live ln too early, using produced ln + 1
+  %112 = load i32, i32* %thread, l588 c68, asm ln 4112
   Added assignment asm ln 4112, prod ln 588.68, live ln 589, enc None
 Load from declared address of `thread` (decl src ln 457), asm ln 4104
   %107 = load i32, i32* %thread, l587 c28, asm ln 4104
-  🔔 Live ln too early, using produced ln + 1
+  %107 = load i32, i32* %thread, l587 c28, asm ln 4104
   Added assignment asm ln 4104, prod ln 587.28, live ln 588, enc None
 Load from declared address of `thread` (decl src ln 457), asm ln 4018
   %81 = load i32, i32* %thread, l567 c29, asm ln 4018
-  🔔 Live ln too early, using produced ln + 1
+  %81 = load i32, i32* %thread, l567 c29, asm ln 4018
   Added assignment asm ln 4018, prod ln 567.29, live ln 568, enc None
 Load from declared address of `thread` (decl src ln 457), asm ln 4000
   %75 = load i32, i32* %thread, l563 c27, asm ln 4000
-  🔔 Live ln too early, using produced ln + 1
+  %75 = load i32, i32* %thread, l563 c27, asm ln 4000
   Added assignment asm ln 4000, prod ln 563.27, live ln 564, enc None
 Load from declared address of `thread` (decl src ln 457), asm ln 3984
   %68 = load i32, i32* %thread, l559 c33, asm ln 3984
-  🔔 Live ln too early, using produced ln + 1
+  %68 = load i32, i32* %thread, l559 c33, asm ln 3984
   Added assignment asm ln 3984, prod ln 559.33, live ln 560, enc None
 Load from declared address of `thread` (decl src ln 457), asm ln 3977
   %65 = load i32, i32* %thread, l558 c24, asm ln 3977
-  🔔 Live ln too early, using produced ln + 1
+  %65 = load i32, i32* %thread, l558 c24, asm ln 3977
   Added assignment asm ln 3977, prod ln 558.24, live ln 559, enc None
 Load from declared address of `thread` (decl src ln 457), asm ln 3972
   %63 = load i32, i32* %thread, l557 c20, asm ln 3972
-  🔔 Live ln too early, using produced ln + 1
+  %63 = load i32, i32* %thread, l557 c20, asm ln 3972
   Added assignment asm ln 3972, prod ln 557.20, live ln 558, enc None
 Load from declared address of `thread` (decl src ln 457), asm ln 3967
   %61 = load i32, i32* %thread, l556 c20, asm ln 3967
-  🔔 Live ln too early, using produced ln + 1
+  %61 = load i32, i32* %thread, l556 c20, asm ln 3967
   Added assignment asm ln 3967, prod ln 556.20, live ln 557, enc None
 Load from declared address of `thread` (decl src ln 457), asm ln 3962
   %59 = load i32, i32* %thread, l556 c55, asm ln 3962
-  🔔 Live ln too early, using produced ln + 1
+  %59 = load i32, i32* %thread, l556 c55, asm ln 3962
   Added assignment asm ln 3962, prod ln 556.55, live ln 557, enc None
 Store to declared address of `thread` (decl src ln 457), asm ln 3959
   const i32 0
+  store i32 0, i32* %thread, l553 c10, asm ln 3959
   Added assignment asm ln 3959, prod ln 553.10, live ln 556, enc None
 Load from declared address of `new_arcs_array` (decl src ln 458), asm ln 4693
   %349 = load i64*, i64** %new_arcs_array, l775 c10, asm ln 4693
-  🔔 Live ln too early, using produced ln + 1
+  %349 = load i64*, i64** %new_arcs_array, l775 c10, asm ln 4693
   Added assignment asm ln 4693, prod ln 775.10, live ln 776, enc None
 Load from declared address of `new_arcs_array` (decl src ln 458), asm ln 4538
   %283 = load i64*, i64** %new_arcs_array, l719 c25, asm ln 4538
-  🔔 Live ln too early, using produced ln + 1
+  %283 = load i64*, i64** %new_arcs_array, l719 c25, asm ln 4538
   Added assignment asm ln 4538, prod ln 719.25, live ln 720, enc None
 Load from declared address of `new_arcs_array` (decl src ln 458), asm ln 4519
   %275 = load i64*, i64** %new_arcs_array, l716 c11, asm ln 4519
-  🔔 Live ln too early, using produced ln + 1
+  %275 = load i64*, i64** %new_arcs_array, l716 c11, asm ln 4519
   Added assignment asm ln 4519, prod ln 716.11, live ln 717, enc None
 Load from declared address of `new_arcs_array` (decl src ln 458), asm ln 4509
   %269 = load i64*, i64** %new_arcs_array, l709 c37, asm ln 4509
-  🔔 Live ln too early, using produced ln + 1
+  %269 = load i64*, i64** %new_arcs_array, l709 c37, asm ln 4509
   Added assignment asm ln 4509, prod ln 709.37, live ln 710, enc None
 Load from declared address of `new_arcs_array` (decl src ln 458), asm ln 4502
   %265 = load i64*, i64** %new_arcs_array, l697 c49, asm ln 4502
-  🔔 Live ln too early, using produced ln + 1
+  %265 = load i64*, i64** %new_arcs_array, l697 c49, asm ln 4502
   Added assignment asm ln 4502, prod ln 697.49, live ln 698, enc None
 Load from declared address of `new_arcs_array` (decl src ln 458), asm ln 4282
   %179 = load i64*, i64** %new_arcs_array, l638 c15, asm ln 4282
-  🔔 Live ln too early, using produced ln + 1
+  %179 = load i64*, i64** %new_arcs_array, l638 c15, asm ln 4282
   Added assignment asm ln 4282, prod ln 638.15, live ln 639, enc None
 Load from declared address of `new_arcs_array` (decl src ln 458), asm ln 4268
   %169 = load i64*, i64** %new_arcs_array, l636 c39, asm ln 4268
-  🔔 Live ln too early, using produced ln + 1
+  %169 = load i64*, i64** %new_arcs_array, l636 c39, asm ln 4268
   Added assignment asm ln 4268, prod ln 636.39, live ln 637, enc None
 Load from declared address of `new_arcs_array` (decl src ln 458), asm ln 4257
   %164 = load i64*, i64** %new_arcs_array, l634 c17, asm ln 4257
-  🔔 Live ln too early, using produced ln + 1
+  %164 = load i64*, i64** %new_arcs_array, l634 c17, asm ln 4257
   Added assignment asm ln 4257, prod ln 634.17, live ln 635, enc None
 Load from declared address of `new_arcs_array` (decl src ln 458), asm ln 3976
   %64 = load i64*, i64** %new_arcs_array, l558 c9, asm ln 3976
-  🔔 Live ln too early, using produced ln + 1
+  %64 = load i64*, i64** %new_arcs_array, l558 c9, asm ln 3976
   Added assignment asm ln 3976, prod ln 558.9, live ln 559, enc None
 Store to declared address of `new_arcs_array` (decl src ln 458), asm ln 3788
   %3 = bitcast i8* %call to i64*, l487 c22, asm ln 3787
+  store i64* %3, i64** %new_arcs_array, l487 c20, asm ln 3788
   Added assignment asm ln 3788, prod ln 487.22, live ln 488, enc None
 Store to declared address of `id` (decl src ln 459), asm ln 4423
   %inc207 = add nsw i64 %236, 1, l668 c13, asm ln 4422
-  🔔 Live ln too early, using produced ln + 1
+  store i64 %inc207, i64* %id, l668 c13, asm ln 4423
   Added assignment asm ln 4423, prod ln 668.13, live ln 669, enc None
 Load from declared address of `id` (decl src ln 459), asm ln 4421
   %236 = load i64, i64* %id, l668 c13, asm ln 4421
-  🔔 Live ln too early, using produced ln + 1
+  %236 = load i64, i64* %id, l668 c13, asm ln 4421
   Added assignment asm ln 4421, prod ln 668.13, live ln 669, enc None
 Load from declared address of `id` (decl src ln 459), asm ln 4388
   %225 = load i64, i64* %id, l658 c31, asm ln 4388
-  🔔 Live ln too early, using produced ln + 1
+  %225 = load i64, i64* %id, l658 c31, asm ln 4388
   Added assignment asm ln 4388, prod ln 658.31, live ln 659, enc None
 Load from declared address of `id` (decl src ln 459), asm ln 4343
   %206 = load i64, i64* %id, l649 c106, asm ln 4343
-  🔔 Live ln too early, using produced ln + 1
+  %206 = load i64, i64* %id, l649 c106, asm ln 4343
   Added assignment asm ln 4343, prod ln 649.106, live ln 650, enc None
 Load from declared address of `id` (decl src ln 459), asm ln 4280
   %178 = load i64, i64* %id, l637 c47, asm ln 4280
-  🔔 Live ln too early, using produced ln + 1
+  %178 = load i64, i64* %id, l637 c47, asm ln 4280
   Added assignment asm ln 4280, prod ln 637.47, live ln 638, enc None
 Store to declared address of `id` (decl src ln 459), asm ln 4238
   %inc139 = add nsw i64 %157, 1, l625 c15, asm ln 4237
+  store i64 %inc139, i64* %id, l625 c15, asm ln 4238
   Added assignment asm ln 4238, prod ln 625.15, live ln 626, enc None
 Load from declared address of `id` (decl src ln 459), asm ln 4236
   %157 = load i64, i64* %id, l625 c15, asm ln 4236
-  🔔 Live ln too early, using produced ln + 1
+  %157 = load i64, i64* %id, l625 c15, asm ln 4236
   Added assignment asm ln 4236, prod ln 625.15, live ln 626, enc None
 Store to declared address of `id` (decl src ln 459), asm ln 4176
   %add121 = add nsw i64 %133, %132, l605 c14, asm ln 4175
+  store i64 %add121, i64* %id, l605 c14, asm ln 4176
   Added assignment asm ln 4176, prod ln 605.14, live ln 606, enc None
 Load from declared address of `id` (decl src ln 459), asm ln 4174
   %133 = load i64, i64* %id, l605 c14, asm ln 4174
-  🔔 Live ln too early, using produced ln + 1
+  %133 = load i64, i64* %id, l605 c14, asm ln 4174
   Added assignment asm ln 4174, prod ln 605.14, live ln 606, enc None
 Store to declared address of `id` (decl src ln 459), asm ln 3994
   const i64 0
+  store i64 0, i64* %id, l561 c10, asm ln 3994
   Added assignment asm ln 3994, prod ln 561.10, live ln 562, enc None
 Load from declared address of `list_size` (decl src ln 459), asm ln 4173
   %132 = load i64, i64* %list_size, l605 c17, asm ln 4173
-  🔔 Live ln too early, using produced ln + 1
+  %132 = load i64, i64* %list_size, l605 c17, asm ln 4173
   Added assignment asm ln 4173, prod ln 605.17, live ln 606, enc None
 Store to declared address of `list_size` (decl src ln 459), asm ln 4151
   %inc110 = add nsw i64 %126, 1, l600 c20, asm ln 4150
+  store i64 %inc110, i64* %list_size, l600 c20, asm ln 4151
   Added assignment asm ln 4151, prod ln 600.20, live ln 601, enc None
 Load from declared address of `list_size` (decl src ln 459), asm ln 4149
   %126 = load i64, i64* %list_size, l600 c20, asm ln 4149
-  🔔 Live ln too early, using produced ln + 1
+  %126 = load i64, i64* %list_size, l600 c20, asm ln 4149
   Added assignment asm ln 4149, prod ln 600.20, live ln 601, enc None
 Store to declared address of `list_size` (decl src ln 459), asm ln 3995
   const i64 -1
+  store i64 -1, i64* %list_size, l562 c17, asm ln 3995
   Added assignment asm ln 3995, prod ln 562.17, live ln 563, enc None
 Load from declared address of `num_del_arcs` (decl src ln 459), asm ln 4696
   %351 = load i64*, i64** %num_del_arcs, l776 c10, asm ln 4696
-  🔔 Live ln too early, using produced ln + 1
+  %351 = load i64*, i64** %num_del_arcs, l776 c10, asm ln 4696
   Added assignment asm ln 4696, prod ln 776.10, live ln 777, enc None
 Load from declared address of `num_del_arcs` (decl src ln 459), asm ln 4453
   %244 = load i64*, i64** %num_del_arcs, l680 c36, asm ln 4453
-  🔔 Live ln too early, using produced ln + 1
+  %244 = load i64*, i64** %num_del_arcs, l680 c36, asm ln 4453
   Added assignment asm ln 4453, prod ln 680.36, live ln 681, enc None
 Load from declared address of `num_del_arcs` (decl src ln 459), asm ln 4437
   %240 = load i64*, i64** %num_del_arcs, l673 c7, asm ln 4437
-  🔔 Live ln too early, using produced ln + 1
+  %240 = load i64*, i64** %num_del_arcs, l673 c7, asm ln 4437
   Added assignment asm ln 4437, prod ln 673.7, live ln 674, enc None
 Load from declared address of `num_del_arcs` (decl src ln 459), asm ln 4409
   %232 = load i64*, i64** %num_del_arcs, l663 c15, asm ln 4409
-  🔔 Live ln too early, using produced ln + 1
+  %232 = load i64*, i64** %num_del_arcs, l663 c15, asm ln 4409
   Added assignment asm ln 4409, prod ln 663.15, live ln 664, enc None
 Load from declared address of `num_del_arcs` (decl src ln 459), asm ln 4399
   %228 = load i64*, i64** %num_del_arcs, l661 c17, asm ln 4399
-  🔔 Live ln too early, using produced ln + 1
+  %228 = load i64*, i64** %num_del_arcs, l661 c17, asm ln 4399
   Added assignment asm ln 4399, prod ln 661.17, live ln 662, enc None
 Load from declared address of `num_del_arcs` (decl src ln 459), asm ln 4359
   %212 = load i64*, i64** %num_del_arcs, l652 c43, asm ln 4359
-  🔔 Live ln too early, using produced ln + 1
+  %212 = load i64*, i64** %num_del_arcs, l652 c43, asm ln 4359
   Added assignment asm ln 4359, prod ln 652.43, live ln 653, enc None
 Load from declared address of `num_del_arcs` (decl src ln 459), asm ln 4327
   %196 = load i64*, i64** %num_del_arcs, l647 c15, asm ln 4327
-  🔔 Live ln too early, using produced ln + 1
+  %196 = load i64*, i64** %num_del_arcs, l647 c15, asm ln 4327
   Added assignment asm ln 4327, prod ln 647.15, live ln 648, enc None
 Load from declared address of `num_del_arcs` (decl src ln 459), asm ln 4316
   %189 = load i64*, i64** %num_del_arcs, l646 c36, asm ln 4316
-  🔔 Live ln too early, using produced ln + 1
+  %189 = load i64*, i64** %num_del_arcs, l646 c36, asm ln 4316
   Added assignment asm ln 4316, prod ln 646.36, live ln 647, enc None
 Load from declared address of `num_del_arcs` (decl src ln 459), asm ln 4118
   %116 = load i64*, i64** %num_del_arcs, l590 c15, asm ln 4118
-  🔔 Live ln too early, using produced ln + 1
+  %116 = load i64*, i64** %num_del_arcs, l590 c15, asm ln 4118
   Added assignment asm ln 4118, prod ln 590.15, live ln 591, enc None
 Load from declared address of `num_del_arcs` (decl src ln 459), asm ln 4109
   %109 = load i64*, i64** %num_del_arcs, l588 c32, asm ln 4109
-  🔔 Live ln too early, using produced ln + 1
+  %109 = load i64*, i64** %num_del_arcs, l588 c32, asm ln 4109
   Added assignment asm ln 4109, prod ln 588.32, live ln 589, enc None
 Load from declared address of `num_del_arcs` (decl src ln 459), asm ln 4103
   %106 = load i64*, i64** %num_del_arcs, l587 c15, asm ln 4103
-  🔔 Live ln too early, using produced ln + 1
+  %106 = load i64*, i64** %num_del_arcs, l587 c15, asm ln 4103
   Added assignment asm ln 4103, prod ln 587.15, live ln 588, enc None
 Load from declared address of `num_del_arcs` (decl src ln 459), asm ln 3971
   %62 = load i64*, i64** %num_del_arcs, l557 c7, asm ln 3971
-  🔔 Live ln too early, using produced ln + 1
+  %62 = load i64*, i64** %num_del_arcs, l557 c7, asm ln 3971
   Added assignment asm ln 3971, prod ln 557.7, live ln 558, enc None
 Store to declared address of `num_del_arcs` (decl src ln 459), asm ln 3793
   %5 = bitcast i8* %call3 to i64*, l488 c20, asm ln 3792
+  store i64* %5, i64** %num_del_arcs, l488 c18, asm ln 3793
   Added assignment asm ln 3793, prod ln 488.20, live ln 489, enc None
 Load from declared address of `arcs_pointer_sorted` (decl src ln 460), asm ln 4699
   %353 = load %struct.arc***, %struct.arc**** %arcs_pointer_sorted, l777 c10, asm ln 4699
-  🔔 Live ln too early, using produced ln + 1
+  %353 = load %struct.arc***, %struct.arc**** %arcs_pointer_sorted, l777 c10, asm ln 4699
   Added assignment asm ln 4699, prod ln 777.10, live ln 778, enc None
 Load from declared address of `arcs_pointer_sorted` (decl src ln 460), asm ln 4512
   %271 = load %struct.arc***, %struct.arc**** %arcs_pointer_sorted, l715 c8, asm ln 4512
-  🔔 Live ln too early, using produced ln + 1
+  %271 = load %struct.arc***, %struct.arc**** %arcs_pointer_sorted, l715 c8, asm ln 4512
   Added assignment asm ln 4512, prod ln 715.8, live ln 716, enc None
 Load from declared address of `arcs_pointer_sorted` (decl src ln 460), asm ln 4510
   %270 = load %struct.arc***, %struct.arc**** %arcs_pointer_sorted, l709 c53, asm ln 4510
-  🔔 Live ln too early, using produced ln + 1
+  %270 = load %struct.arc***, %struct.arc**** %arcs_pointer_sorted, l709 c53, asm ln 4510
   Added assignment asm ln 4510, prod ln 709.53, live ln 710, enc None
 Load from declared address of `arcs_pointer_sorted` (decl src ln 460), asm ln 4496
   %261 = load %struct.arc***, %struct.arc**** %arcs_pointer_sorted, l697 c20, asm ln 4496
-  🔔 Live ln too early, using produced ln + 1
+  %261 = load %struct.arc***, %struct.arc**** %arcs_pointer_sorted, l697 c20, asm ln 4496
   Added assignment asm ln 4496, prod ln 697.20, live ln 698, enc None
 Load from declared address of `arcs_pointer_sorted` (decl src ln 460), asm ln 4094
   %102 = load %struct.arc***, %struct.arc**** %arcs_pointer_sorted, l584 c54, asm ln 4094
-  🔔 Live ln too early, using produced ln + 1
+  %102 = load %struct.arc***, %struct.arc**** %arcs_pointer_sorted, l584 c54, asm ln 4094
   Added assignment asm ln 4094, prod ln 584.54, live ln 585, enc None
 Load from declared address of `arcs_pointer_sorted` (decl src ln 460), asm ln 4079
   %97 = load %struct.arc***, %struct.arc**** %arcs_pointer_sorted, l577 c54, asm ln 4079
-  🔔 Live ln too early, using produced ln + 1
+  %97 = load %struct.arc***, %struct.arc**** %arcs_pointer_sorted, l577 c54, asm ln 4079
   Added assignment asm ln 4079, prod ln 577.54, live ln 578, enc None
 Load from declared address of `arcs_pointer_sorted` (decl src ln 460), asm ln 4017
   %80 = load %struct.arc***, %struct.arc**** %arcs_pointer_sorted, l567 c9, asm ln 4017
-  🔔 Live ln too early, using produced ln + 1
+  %80 = load %struct.arc***, %struct.arc**** %arcs_pointer_sorted, l567 c9, asm ln 4017
   Added assignment asm ln 4017, prod ln 567.9, live ln 568, enc None
 Load from declared address of `arcs_pointer_sorted` (decl src ln 460), asm ln 3999
   %74 = load %struct.arc***, %struct.arc**** %arcs_pointer_sorted, l563 c7, asm ln 3999
-  🔔 Live ln too early, using produced ln + 1
+  %74 = load %struct.arc***, %struct.arc**** %arcs_pointer_sorted, l563 c7, asm ln 3999
   Added assignment asm ln 3999, prod ln 563.7, live ln 564, enc None
 Store to declared address of `arcs_pointer_sorted` (decl src ln 460), asm ln 3798
   %7 = bitcast i8* %call5 to %struct.arc***, l489 c27, asm ln 3797
+  store %struct.arc*** %7, %struct.arc**** %arcs_pointer_sorted, l489 c25, asm ln 3798
   Added assignment asm ln 3798, prod ln 489.27, live ln 490, enc None
 Load from declared address of `deleted_arcs` (decl src ln 460), asm ln 4702
   %355 = load %struct.arc**, %struct.arc*** %deleted_arcs, l778 c10, asm ln 4702
-  🔔 Live ln too early, using produced ln + 1
+  %355 = load %struct.arc**, %struct.arc*** %deleted_arcs, l778 c10, asm ln 4702
   Added assignment asm ln 4702, prod ln 778.10, live ln 779, enc None
 Load from declared address of `deleted_arcs` (decl src ln 460), asm ln 4454
   %245 = load %struct.arc**, %struct.arc*** %deleted_arcs, l680 c50, asm ln 4454
-  🔔 Live ln too early, using produced ln + 1
+  %245 = load %struct.arc**, %struct.arc*** %deleted_arcs, l680 c50, asm ln 4454
   Added assignment asm ln 4454, prod ln 680.50, live ln 681, enc None
 Load from declared address of `deleted_arcs` (decl src ln 460), asm ln 4354
   %209 = load %struct.arc**, %struct.arc*** %deleted_arcs, l652 c22, asm ln 4354
-  🔔 Live ln too early, using produced ln + 1
+  %209 = load %struct.arc**, %struct.arc*** %deleted_arcs, l652 c22, asm ln 4354
   Added assignment asm ln 4354, prod ln 652.22, live ln 653, enc None
 Load from declared address of `deleted_arcs` (decl src ln 460), asm ln 4311
   %186 = load %struct.arc**, %struct.arc*** %deleted_arcs, l646 c15, asm ln 4311
-  🔔 Live ln too early, using produced ln + 1
+  %186 = load %struct.arc**, %struct.arc*** %deleted_arcs, l646 c15, asm ln 4311
   Added assignment asm ln 4311, prod ln 646.15, live ln 647, enc None
 Load from declared address of `deleted_arcs` (decl src ln 460), asm ln 4110
   %110 = load %struct.arc**, %struct.arc*** %deleted_arcs, l588 c46, asm ln 4110
-  🔔 Live ln too early, using produced ln + 1
+  %110 = load %struct.arc**, %struct.arc*** %deleted_arcs, l588 c46, asm ln 4110
   Added assignment asm ln 4110, prod ln 588.46, live ln 589, enc None
 Load from declared address of `deleted_arcs` (decl src ln 460), asm ln 3966
   %60 = load %struct.arc**, %struct.arc*** %deleted_arcs, l556 c7, asm ln 3966
-  🔔 Live ln too early, using produced ln + 1
+  %60 = load %struct.arc**, %struct.arc*** %deleted_arcs, l556 c7, asm ln 3966
   Added assignment asm ln 3966, prod ln 556.7, live ln 557, enc None
 Store to declared address of `deleted_arcs` (decl src ln 460), asm ln 3803
   %9 = bitcast i8* %call7 to %struct.arc**, l490 c20, asm ln 3802
+  store %struct.arc** %9, %struct.arc*** %deleted_arcs, l490 c18, asm ln 3803
   Added assignment asm ln 3803, prod ln 490.20, live ln 497, enc None
 Load from declared address of `max_redcost` (decl src ln 461), asm ln 4349
   %208 = load i64, i64* %max_redcost, l651 c33, asm ln 4349
-  🔔 Live ln too early, using produced ln + 1
+  %208 = load i64, i64* %max_redcost, l651 c33, asm ln 4349
   Added assignment asm ln 4349, prod ln 651.33, live ln 652, enc None
 Store to declared address of `max_redcost` (decl src ln 461), asm ln 3957
   const i64 0
+  store i64 0, i64* %max_redcost, l547 c19, asm ln 3957
   Added assignment asm ln 3957, prod ln 547.19, live ln 548, enc None
 Store to declared address of `first_replace` (decl src ln 462), asm ln 4467
   const i16 0
-  🔔 Live ln too early, using produced ln + 1
+  store i16 0, i16* %first_replace, l683 c27, asm ln 4467
   Added assignment asm ln 4467, prod ln 683.27, live ln 684, enc None
 Store to declared address of `first_replace` (decl src ln 462), asm ln 4451
   const i16 1
+  store i16 1, i16* %first_replace, l678 c23, asm ln 4451
   Added assignment asm ln 4451, prod ln 678.23, live ln 680, enc None
 Load from declared address of `first_replace` (decl src ln 462), asm ln 4445
   %242 = load i16, i16* %first_replace, l674 c15, asm ln 4445
-  🔔 Live ln too early, using produced ln + 1
+  %242 = load i16, i16* %first_replace, l674 c15, asm ln 4445
   Added assignment asm ln 4445, prod ln 674.15, live ln 675, enc None
 Store to declared address of `first_replace` (decl src ln 462), asm ln 4306
   const i16 0
+  store i16 0, i16* %first_replace, l642 c31, asm ln 4306
   Added assignment asm ln 4306, prod ln 642.31, live ln 643, enc None
 Load from declared address of `first_replace` (decl src ln 462), asm ln 4097
   %104 = load i16, i16* %first_replace, l585 c18, asm ln 4097
-  🔔 Live ln too early, using produced ln + 1
+  %104 = load i16, i16* %first_replace, l585 c18, asm ln 4097
   Added assignment asm ln 4097, prod ln 585.18, live ln 586, enc None
 Load from declared address of `first_replace` (decl src ln 462), asm ln 4073
   %95 = load i16, i16* %first_replace, l576 c14, asm ln 4073
-  🔔 Live ln too early, using produced ln + 1
+  %95 = load i16, i16* %first_replace, l576 c14, asm ln 4073
   Added assignment asm ln 4073, prod ln 576.14, live ln 577, enc None
 Store to declared address of `first_replace` (decl src ln 462), asm ln 3948
   const i16 1
+  store i16 1, i16* %first_replace, l539 c17, asm ln 3948
   Added assignment asm ln 3948, prod ln 539.17, live ln 540, enc None
 Store to declared address of `first_replace` (decl src ln 462), asm ln 3755
   const i16 1
+  store i16 1, i16* %first_replace, l462 c11, asm ln 3755
   Added assignment asm ln 3755, prod ln 462.11, live ln 463, enc None
 Store to declared address of `local_first_replace` (decl src ln 462), asm ln 4307
   const i16 0
+  store i16 0, i16* %local_first_replace, l643 c37, asm ln 4307
   Added assignment asm ln 4307, prod ln 643.37, live ln 644, enc None
 Load from declared address of `local_first_replace` (decl src ln 462), asm ln 4301
   %185 = load i16, i16* %local_first_replace, l641 c19, asm ln 4301
-  🔔 Live ln too early, using produced ln + 1
+  %185 = load i16, i16* %local_first_replace, l641 c19, asm ln 4301
   Added assignment asm ln 4301, prod ln 641.19, live ln 642, enc None
 Store to declared address of `local_first_replace` (decl src ln 462), asm ln 3956
   const i16 1
+  store i16 1, i16* %local_first_replace, l546 c27, asm ln 3956
   Added assignment asm ln 3956, prod ln 546.27, live ln 547, enc None
 Load from declared address of `count` (decl src ln 463), asm ln 4462
   %251 = load i64, i64* %count, l682 c15, asm ln 4462
-  🔔 Live ln too early, using produced ln + 1
+  %251 = load i64, i64* %count, l682 c15, asm ln 4462
   Added assignment asm ln 4462, prod ln 682.15, live ln 683, enc None
 Store to declared address of `count` (decl src ln 463), asm ln 4461
   %call217 = call i64 @switch_arcs(%struct.network* %243, i64* %244, %struct.arc** %245, %struct.arc* %246, i32 %247, i64 %248, i64 %249, i64 %250), l680 c19, asm ln 4460
+  store i64 %call217, i64* %count, l680 c17, asm ln 4461
   Added assignment asm ln 4461, prod ln 680.19, live ln 682, enc None
 Load from declared address of `count` (decl src ln 463), asm ln 4436
   %239 = load i64, i64* %count, l673 c30, asm ln 4436
-  🔔 Live ln too early, using produced ln + 1
+  %239 = load i64, i64* %count, l673 c30, asm ln 4436
   Added assignment asm ln 4436, prod ln 673.30, live ln 674, enc None
 Store to declared address of `count` (decl src ln 463), asm ln 4395
   %inc193 = add nsw i64 %227, 1, l659 c20, asm ln 4394
+  store i64 %inc193, i64* %count, l659 c20, asm ln 4395
   Added assignment asm ln 4395, prod ln 659.20, live ln 660, enc None
 Load from declared address of `count` (decl src ln 463), asm ln 4393
   %227 = load i64, i64* %count, l659 c20, asm ln 4393
-  🔔 Live ln too early, using produced ln + 1
+  %227 = load i64, i64* %count, l659 c20, asm ln 4393
   Added assignment asm ln 4393, prod ln 659.20, live ln 660, enc None
 Store to declared address of `count` (decl src ln 463), asm ln 4336
   %inc176 = add nsw i64 %199, 1, l648 c20, asm ln 4335
+  store i64 %inc176, i64* %count, l648 c20, asm ln 4336
   Added assignment asm ln 4336, prod ln 648.20, live ln 649, enc None
 Load from declared address of `count` (decl src ln 463), asm ln 4334
   %199 = load i64, i64* %count, l648 c20, asm ln 4334
-  🔔 Live ln too early, using produced ln + 1
+  %199 = load i64, i64* %count, l648 c20, asm ln 4334
   Added assignment asm ln 4334, prod ln 648.20, live ln 649, enc None
 Store to declared address of `count` (decl src ln 463), asm ln 4117
   const i64 0
+  store i64 0, i64* %count, l589 c21, asm ln 4117
   Added assignment asm ln 4117, prod ln 589.21, live ln 590, enc None
 Load from declared address of `count` (decl src ln 463), asm ln 4102
   %105 = load i64, i64* %count, l587 c38, asm ln 4102
-  🔔 Live ln too early, using produced ln + 1
+  %105 = load i64, i64* %count, l587 c38, asm ln 4102
   Added assignment asm ln 4102, prod ln 587.38, live ln 588, enc None
 Store to declared address of `count` (decl src ln 463), asm ln 3958
   const i64 0
+  store i64 0, i64* %count, l548 c13, asm ln 3958
   Added assignment asm ln 3958, prod ln 548.13, live ln 553, enc None
 Store to declared address of `count` (decl src ln 463), asm ln 3758
   const i64 0
+  store i64 0, i64* %count, l463 c10, asm ln 3758
   Added assignment asm ln 3758, prod ln 463.10, live ln 471, enc None
 Load from declared address of `num_switch_iterations` (decl src ln 464), asm ln 4086
   %100 = load i64, i64* %num_switch_iterations, l580 c18, asm ln 4086
-  🔔 Live ln too early, using produced ln + 1
+  %100 = load i64, i64* %num_switch_iterations, l580 c18, asm ln 4086
   Added assignment asm ln 4086, prod ln 580.18, live ln 581, enc None
 Store to declared address of `num_switch_iterations` (decl src ln 464), asm ln 3924
   const i64 2000
-  🔔 Missing live ln, using produced ln + 1
+  store i64 2000, i64* %num_switch_iterations, l533 c31, asm ln 3924
   Added assignment asm ln 3924, prod ln 533.31, live ln 534, enc None
 Store to declared address of `num_switch_iterations` (decl src ln 464), asm ln 3920
   const i64 1000
-  🔔 Live ln too early, using produced ln + 1
+  store i64 1000, i64* %num_switch_iterations, l531 c31, asm ln 3920
   Added assignment asm ln 3920, prod ln 531.31, live ln 532, enc None
 Load from declared address of `size_del` (decl src ln 465), asm ln 4458
   %249 = load i64, i64* %size_del, l680 c111, asm ln 4458
-  🔔 Live ln too early, using produced ln + 1
+  %249 = load i64, i64* %size_del, l680 c111, asm ln 4458
   Added assignment asm ln 4458, prod ln 680.111, live ln 681, enc None
 Load from declared address of `size_del` (decl src ln 465), asm ln 4404
   %231 = load i64, i64* %size_del, l661 c41, asm ln 4404
-  🔔 Live ln too early, using produced ln + 1
+  %231 = load i64, i64* %size_del, l661 c41, asm ln 4404
   Added assignment asm ln 4404, prod ln 661.41, live ln 662, enc None
 Load from declared address of `size_del` (decl src ln 465), asm ln 4114
   %114 = load i64, i64* %size_del, l588 c107, asm ln 4114
-  🔔 Live ln too early, using produced ln + 1
+  %114 = load i64, i64* %size_del, l588 c107, asm ln 4114
   Added assignment asm ln 4114, prod ln 588.107, live ln 589, enc None
 Load from declared address of `size_del` (decl src ln 465), asm ln 3961
   %58 = load i64, i64* %size_del, l556 c44, asm ln 3961
-  🔔 Live ln too early, using produced ln + 1
+  %58 = load i64, i64* %size_del, l556 c44, asm ln 3961
   Added assignment asm ln 3961, prod ln 556.44, live ln 557, enc None
 Store to declared address of `size_del` (decl src ln 465), asm ln 3955
   %div51 = sdiv i64 %55, %56, !klee.check.div !586, l540 c26, asm ln 3954
+  store i64 %div51, i64* %size_del, l540 c14, asm ln 3955
   Added assignment asm ln 3955, prod ln 540.26, live ln 546, enc None
 Load from declared address of `first_list_elem` (decl src ln 467), asm ln 4493
   %259 = load %struct.list_elem*, %struct.list_elem** %first_list_elem, l694 c12, asm ln 4493
-  🔔 Live ln too early, using produced ln + 1
+  %259 = load %struct.list_elem*, %struct.list_elem** %first_list_elem, l694 c12, asm ln 4493
   Added assignment asm ln 4493, prod ln 694.12, live ln 695, enc None
 Store to declared address of `first_list_elem` (decl src ln 467), asm ln 4486
   %256 = load %struct.list_elem*, %struct.list_elem** %next226, l691 c44, asm ln 4485
+  store %struct.list_elem* %256, %struct.list_elem** %first_list_elem, l691 c25, asm ln 4486
   Added assignment asm ln 4486, prod ln 691.44, live ln 692, enc None
 Load from declared address of `first_list_elem` (decl src ln 467), asm ln 4483
   %255 = load %struct.list_elem*, %struct.list_elem** %first_list_elem, l691 c27, asm ln 4483
-  🔔 Live ln too early, using produced ln + 1
+  %255 = load %struct.list_elem*, %struct.list_elem** %first_list_elem, l691 c27, asm ln 4483
   Added assignment asm ln 4483, prod ln 691.27, live ln 692, enc None
 Load from declared address of `first_list_elem` (decl src ln 467), asm ln 4481
   %254 = load %struct.list_elem*, %struct.list_elem** %first_list_elem, l690 c25, asm ln 4481
-  🔔 Live ln too early, using produced ln + 1
+  %254 = load %struct.list_elem*, %struct.list_elem** %first_list_elem, l690 c25, asm ln 4481
   Added assignment asm ln 4481, prod ln 690.25, live ln 691, enc None
 Load from declared address of `first_list_elem` (decl src ln 467), asm ln 4474
   %252 = load %struct.list_elem*, %struct.list_elem** %first_list_elem, l689 c14, asm ln 4474
-  🔔 Live ln too early, using produced ln + 1
+  %252 = load %struct.list_elem*, %struct.list_elem** %first_list_elem, l689 c14, asm ln 4474
   Added assignment asm ln 4474, prod ln 689.14, live ln 690, enc None
 Load from declared address of `first_list_elem` (decl src ln 467), asm ln 4199
   %143 = load %struct.list_elem*, %struct.list_elem** %first_list_elem, l615 c20, asm ln 4199
-  🔔 Live ln too early, using produced ln + 1
+  %143 = load %struct.list_elem*, %struct.list_elem** %first_list_elem, l615 c20, asm ln 4199
   Added assignment asm ln 4199, prod ln 615.20, live ln 616, enc None
 Store to declared address of `first_list_elem` (decl src ln 467), asm ln 4148
   %125 = load %struct.list_elem*, %struct.list_elem** %new_list_elem, l599 c29, asm ln 4147
+  store %struct.list_elem* %125, %struct.list_elem** %first_list_elem, l599 c27, asm ln 4148
   Added assignment asm ln 4148, prod ln 599.29, live ln 600, enc None
 Load from declared address of `first_list_elem` (decl src ln 467), asm ln 4138
   %121 = load %struct.list_elem*, %struct.list_elem** %first_list_elem, l597 c33, asm ln 4138
-  🔔 Live ln too early, using produced ln + 1
+  %121 = load %struct.list_elem*, %struct.list_elem** %first_list_elem, l597 c33, asm ln 4138
   Added assignment asm ln 4138, prod ln 597.33, live ln 598, enc None
 Store to declared address of `first_list_elem` (decl src ln 467), asm ln 4063
   const %struct.list_elem* null
+  store %struct.list_elem* null, %struct.list_elem** %first_list_elem, l573 c23, asm ln 4063
   Added assignment asm ln 4063, prod ln 573.23, live ln 574, enc None
 Load from declared address of `new_list_elem` (decl src ln 468), asm ln 4487
   %257 = load %struct.list_elem*, %struct.list_elem** %new_list_elem, l692 c14, asm ln 4487
-  🔔 Live ln too early, using produced ln + 1
+  %257 = load %struct.list_elem*, %struct.list_elem** %new_list_elem, l692 c14, asm ln 4487
   Added assignment asm ln 4487, prod ln 692.14, live ln 693, enc None
 Store to declared address of `new_list_elem` (decl src ln 468), asm ln 4482
   %254 = load %struct.list_elem*, %struct.list_elem** %first_list_elem, l690 c25, asm ln 4481
+  store %struct.list_elem* %254, %struct.list_elem** %new_list_elem, l690 c23, asm ln 4482
   Added assignment asm ln 4482, prod ln 690.25, live ln 691, enc None
 Load from declared address of `new_list_elem` (decl src ln 468), asm ln 4147
   %125 = load %struct.list_elem*, %struct.list_elem** %new_list_elem, l599 c29, asm ln 4147
-  🔔 Live ln too early, using produced ln + 1
+  %125 = load %struct.list_elem*, %struct.list_elem** %new_list_elem, l599 c29, asm ln 4147
   Added assignment asm ln 4147, prod ln 599.29, live ln 600, enc None
 Load from declared address of `new_list_elem` (decl src ln 468), asm ln 4144
   %124 = load %struct.list_elem*, %struct.list_elem** %new_list_elem, l598 c11, asm ln 4144
-  🔔 Live ln too early, using produced ln + 1
+  %124 = load %struct.list_elem*, %struct.list_elem** %new_list_elem, l598 c11, asm ln 4144
   Added assignment asm ln 4144, prod ln 598.11, live ln 599, enc None
 Load from declared address of `new_list_elem` (decl src ln 468), asm ln 4139
   %122 = load %struct.list_elem*, %struct.list_elem** %new_list_elem, l597 c11, asm ln 4139
-  🔔 Live ln too early, using produced ln + 1
+  %122 = load %struct.list_elem*, %struct.list_elem** %new_list_elem, l597 c11, asm ln 4139
   Added assignment asm ln 4139, prod ln 597.11, live ln 598, enc None
 Store to declared address of `new_list_elem` (decl src ln 468), asm ln 4137
   %120 = bitcast i8* %call107 to %struct.list_elem*, l596 c27, asm ln 4136
+  store %struct.list_elem* %120, %struct.list_elem** %new_list_elem, l596 c25, asm ln 4137
   Added assignment asm ln 4137, prod ln 596.27, live ln 597, enc None
 Store to declared address of `iterator` (decl src ln 469), asm ln 4420
   %235 = load %struct.list_elem*, %struct.list_elem** %next206, l667 c32, asm ln 4419
+  store %struct.list_elem* %235, %struct.list_elem** %iterator, l667 c20, asm ln 4420
   Added assignment asm ln 4420, prod ln 667.32, live ln 668, enc None
 Load from declared address of `iterator` (decl src ln 469), asm ln 4417
   %234 = load %struct.list_elem*, %struct.list_elem** %iterator, l667 c22, asm ln 4417
-  🔔 Live ln too early, using produced ln + 1
+  %234 = load %struct.list_elem*, %struct.list_elem** %iterator, l667 c22, asm ln 4417
   Added assignment asm ln 4417, prod ln 667.22, live ln 668, enc None
 Store to declared address of `iterator` (decl src ln 469), asm ln 4235
   %156 = load %struct.list_elem*, %struct.list_elem** %next138, l624 c34, asm ln 4234
+  store %struct.list_elem* %156, %struct.list_elem** %iterator, l624 c22, asm ln 4235
   Added assignment asm ln 4235, prod ln 624.34, live ln 625, enc None
 Load from declared address of `iterator` (decl src ln 469), asm ln 4232
   %155 = load %struct.list_elem*, %struct.list_elem** %iterator, l624 c24, asm ln 4232
-  🔔 Live ln too early, using produced ln + 1
+  %155 = load %struct.list_elem*, %struct.list_elem** %iterator, l624 c24, asm ln 4232
   Added assignment asm ln 4232, prod ln 624.24, live ln 625, enc None
 Load from declared address of `iterator` (decl src ln 469), asm ln 4211
   %146 = load %struct.list_elem*, %struct.list_elem** %iterator, l619 c19, asm ln 4211
-  🔔 Live ln too early, using produced ln + 1
+  %146 = load %struct.list_elem*, %struct.list_elem** %iterator, l619 c19, asm ln 4211
   Added assignment asm ln 4211, prod ln 619.19, live ln 620, enc None
 Load from declared address of `iterator` (decl src ln 469), asm ln 4206
   %145 = load %struct.list_elem*, %struct.list_elem** %iterator, l616 c16, asm ln 4206
-  🔔 Live ln too early, using produced ln + 1
+  %145 = load %struct.list_elem*, %struct.list_elem** %iterator, l616 c16, asm ln 4206
   Added assignment asm ln 4206, prod ln 616.16, live ln 617, enc None
 Store to declared address of `iterator` (decl src ln 469), asm ln 4202
   %144 = load %struct.list_elem*, %struct.list_elem** %next127, l615 c37, asm ln 4201
+  store %struct.list_elem* %144, %struct.list_elem** %iterator, l615 c18, asm ln 4202
   Added assignment asm ln 4202, prod ln 615.37, live ln 616, enc None
 Load from declared address of `bigM` (decl src ln 471), asm ln 3804
   %10 = load i64, i64* %bigM, l497 c44, asm ln 3804
-  🔔 Live ln too early, using produced ln + 1
+  %10 = load i64, i64* %bigM, l497 c44, asm ln 3804
   Added assignment asm ln 3804, prod ln 497.44, live ln 498, enc None
 Store to declared address of `bigM` (decl src ln 471), asm ln 3768
   %1 = load i64, i64* %bigM1, l471 c33, asm ln 3767
+  store i64 %1, i64* %bigM, l471 c21, asm ln 3768
   Added assignment asm ln 3768, prod ln 471.33, live ln 473, enc None
 Store to declared address of `head_potential` (decl src ln 472), asm ln 4198
   %142 = load i64, i64* %potential, l613 c32, asm ln 4197
+  store i64 %142, i64* %head_potential, l613 c24, asm ln 4198
   @dbg.declare without read users, removable
   Added assignment asm ln 4198, prod ln 613.32, live ln 615, enc None
 Load from declared address of `arc_cost` (decl src ln 473), asm ln 4380
   %221 = load i64, i64* %arc_cost, l656 c31, asm ln 4380
-  🔔 Live ln too early, using produced ln + 1
+  %221 = load i64, i64* %arc_cost, l656 c31, asm ln 4380
   Added assignment asm ln 4380, prod ln 656.31, live ln 657, enc None
 Load from declared address of `arc_cost` (decl src ln 473), asm ln 4376
   %219 = load i64, i64* %arc_cost, l655 c31, asm ln 4376
-  🔔 Live ln too early, using produced ln + 1
+  %219 = load i64, i64* %arc_cost, l655 c31, asm ln 4376
   Added assignment asm ln 4376, prod ln 655.31, live ln 656, enc None
 Load from declared address of `arc_cost` (decl src ln 473), asm ln 4340
   %203 = load i64, i64* %arc_cost, l649 c55, asm ln 4340
-  🔔 Live ln too early, using produced ln + 1
+  %203 = load i64, i64* %arc_cost, l649 c55, asm ln 4340
   Added assignment asm ln 4340, prod ln 649.55, live ln 650, enc None
 Load from declared address of `arc_cost` (decl src ln 473), asm ln 4275
   %174 = load i64, i64* %arc_cost, l637 c19, asm ln 4275
-  🔔 Live ln too early, using produced ln + 1
+  %174 = load i64, i64* %arc_cost, l637 c19, asm ln 4275
   Added assignment asm ln 4275, prod ln 637.19, live ln 638, enc None
 Load from declared address of `arc_cost` (decl src ln 473), asm ln 4242
   %158 = load i64, i64* %arc_cost, l629 c22, asm ln 4242
-  🔔 Live ln too early, using produced ln + 1
+  %158 = load i64, i64* %arc_cost, l629 c22, asm ln 4242
   Added assignment asm ln 4242, prod ln 629.22, live ln 630, enc None
 Store to declared address of `arc_cost` (decl src ln 473), asm ln 3771
   const i64 30
+  store i64 30, i64* %arc_cost, l473 c21, asm ln 3771
   Added assignment asm ln 3771, prod ln 473.21, live ln 483, enc None
 Load from declared address of `red_cost` (decl src ln 474), asm ln 4384
   %223 = load i64, i64* %red_cost, l657 c39, asm ln 4384
-  🔔 Live ln too early, using produced ln + 1
+  %223 = load i64, i64* %red_cost, l657 c39, asm ln 4384
   Added assignment asm ln 4384, prod ln 657.39, live ln 658, enc None
 Load from declared address of `red_cost` (decl src ln 474), asm ln 4348
   %207 = load i64, i64* %red_cost, l651 c22, asm ln 4348
-  🔔 Live ln too early, using produced ln + 1
+  %207 = load i64, i64* %red_cost, l651 c22, asm ln 4348
   Added assignment asm ln 4348, prod ln 651.22, live ln 652, enc None
 Load from declared address of `red_cost` (decl src ln 474), asm ln 4341
   %204 = load i64, i64* %red_cost, l649 c65, asm ln 4341
-  🔔 Live ln too early, using produced ln + 1
+  %204 = load i64, i64* %red_cost, l649 c65, asm ln 4341
   Added assignment asm ln 4341, prod ln 649.65, live ln 650, enc None
 Load from declared address of `red_cost` (decl src ln 474), asm ln 4296
   %184 = load i64, i64* %red_cost, l640 c47, asm ln 4296
-  🔔 Live ln too early, using produced ln + 1
+  %184 = load i64, i64* %red_cost, l640 c47, asm ln 4296
   Added assignment asm ln 4296, prod ln 640.47, live ln 641, enc None
 Load from declared address of `red_cost` (decl src ln 474), asm ln 4276
   %175 = load i64, i64* %red_cost, l637 c29, asm ln 4276
-  🔔 Live ln too early, using produced ln + 1
+  %175 = load i64, i64* %red_cost, l637 c29, asm ln 4276
   Added assignment asm ln 4276, prod ln 637.29, live ln 638, enc None
 Load from declared address of `red_cost` (decl src ln 474), asm ln 4252
   %163 = load i64, i64* %red_cost, l631 c15, asm ln 4252
-  🔔 Live ln too early, using produced ln + 1
+  %163 = load i64, i64* %red_cost, l631 c15, asm ln 4252
   Added assignment asm ln 4252, prod ln 631.15, live ln 632, enc None
 Store to declared address of `red_cost` (decl src ln 474), asm ln 4251
   %add144 = add nsw i64 %sub142, %162, l629 c49, asm ln 4250
+  store i64 %add144, i64* %red_cost, l629 c20, asm ln 4251
   Added assignment asm ln 4251, prod ln 629.49, live ln 631, enc None
 Load from declared address of `bigM_minus_min_impl_duration` (decl src ln 475), asm ln 4192
   %140 = load i64, i64* %bigM_minus_min_impl_duration, l611 c21, asm ln 4192
-  🔔 Live ln too early, using produced ln + 1
+  %140 = load i64, i64* %bigM_minus_min_impl_duration, l611 c21, asm ln 4192
   Added assignment asm ln 4192, prod ln 611.21, live ln 612, enc None
 Store to declared address of `bigM_minus_min_impl_duration` (decl src ln 475), asm ln 3807
   %sub = sub nsw i64 %10, %11, l497 c49, asm ln 3806
+  store i64 %sub, i64* %bigM_minus_min_impl_duration, l497 c34, asm ln 3807
   Added assignment asm ln 3807, prod ln 497.49, live ln 501, enc None
 Store to declared address of `arcout` (decl src ln 477), asm ln 4432
   %add.ptr210 = getelementptr inbounds %struct.arc, %struct.arc* %238, i64 3, l574 c37, asm ln 4431
-  🔔 Live ln too early, using produced ln + 1
+  store %struct.arc* %add.ptr210, %struct.arc** %arcout, l574 c37, asm ln 4432
   Added assignment asm ln 4432, prod ln 574.37, live ln 575, enc None
 Load from declared address of `arcout` (decl src ln 477), asm ln 4430
   %238 = load %struct.arc*, %struct.arc** %arcout, l574 c37, asm ln 4430
-  🔔 Live ln too early, using produced ln + 1
+  %238 = load %struct.arc*, %struct.arc** %arcout, l574 c37, asm ln 4430
   Added assignment asm ln 4430, prod ln 574.37, live ln 575, enc None
 Load from declared address of `arcout` (decl src ln 477), asm ln 4188
   %138 = load %struct.arc*, %struct.arc** %arcout, l610 c31, asm ln 4188
-  🔔 Live ln too early, using produced ln + 1
+  %138 = load %struct.arc*, %struct.arc** %arcout, l610 c31, asm ln 4188
   Added assignment asm ln 4188, prod ln 610.31, live ln 611, enc None
 Load from declared address of `arcout` (decl src ln 477), asm ln 4180
   %134 = load %struct.arc*, %struct.arc** %arcout, l609 c16, asm ln 4180
-  🔔 Live ln too early, using produced ln + 1
+  %134 = load %struct.arc*, %struct.arc** %arcout, l609 c16, asm ln 4180
   Added assignment asm ln 4180, prod ln 609.16, live ln 610, enc None
 Load from declared address of `arcout` (decl src ln 477), asm ln 4155
   %127 = load %struct.arc*, %struct.arc** %arcout, l603 c13, asm ln 4155
-  🔔 Live ln too early, using produced ln + 1
+  %127 = load %struct.arc*, %struct.arc** %arcout, l603 c13, asm ln 4155
   Added assignment asm ln 4155, prod ln 603.13, live ln 604, enc None
 Load from declared address of `arcout` (decl src ln 477), asm ln 4142
   %123 = load %struct.arc*, %struct.arc** %arcout, l598 c32, asm ln 4142
-  🔔 Live ln too early, using produced ln + 1
+  %123 = load %struct.arc*, %struct.arc** %arcout, l598 c32, asm ln 4142
   Added assignment asm ln 4142, prod ln 598.32, live ln 599, enc None
 Load from declared address of `arcout` (decl src ln 477), asm ln 4126
   %118 = load %struct.arc*, %struct.arc** %arcout, l594 c13, asm ln 4126
-  🔔 Live ln too early, using produced ln + 1
+  %118 = load %struct.arc*, %struct.arc** %arcout, l594 c13, asm ln 4126
   Added assignment asm ln 4126, prod ln 594.13, live ln 595, enc None
 Store to declared address of `arcout` (decl src ln 477), asm ln 4059
   %add.ptr80 = getelementptr inbounds %struct.arc, %struct.arc* %92, i64 3, l571 c70, asm ln 4058
-  🔔 Live ln too early, using produced ln + 1
+  store %struct.arc* %add.ptr80, %struct.arc** %arcout, l571 c70, asm ln 4059
   Added assignment asm ln 4059, prod ln 571.70, live ln 572, enc None
 Load from declared address of `arcout` (decl src ln 477), asm ln 4057
   %92 = load %struct.arc*, %struct.arc** %arcout, l571 c70, asm ln 4057
-  🔔 Live ln too early, using produced ln + 1
+  %92 = load %struct.arc*, %struct.arc** %arcout, l571 c70, asm ln 4057
   Added assignment asm ln 4057, prod ln 571.70, live ln 572, enc None
 Load from declared address of `arcout` (decl src ln 477), asm ln 4045
   %89 = load %struct.arc*, %struct.arc** %arcout, l571 c32, asm ln 4045
-  🔔 Live ln too early, using produced ln + 1
+  %89 = load %struct.arc*, %struct.arc** %arcout, l571 c32, asm ln 4045
   Added assignment asm ln 4045, prod ln 571.32, live ln 572, enc None
 Store to declared address of `arcout` (decl src ln 477), asm ln 4034
   %86 = load %struct.arc*, %struct.arc** %arcs, l570 c21, asm ln 4033
+  store %struct.arc* %86, %struct.arc** %arcout, l570 c14, asm ln 4034
   Added assignment asm ln 4034, prod ln 570.21, live ln 571, enc None
 Load from declared address of `arcin` (decl src ln 477), asm ln 4223
   %152 = load %struct.arc*, %struct.arc** %arcin, l622 c28, asm ln 4223
-  🔔 Live ln too early, using produced ln + 1
+  %152 = load %struct.arc*, %struct.arc** %arcin, l622 c28, asm ln 4223
   Added assignment asm ln 4223, prod ln 622.28, live ln 623, enc None
 Load from declared address of `arcin` (decl src ln 477), asm ln 4215
   %148 = load %struct.arc*, %struct.arc** %arcin, l620 c18, asm ln 4215
-  🔔 Live ln too early, using produced ln + 1
+  %148 = load %struct.arc*, %struct.arc** %arcin, l620 c18, asm ln 4215
   Added assignment asm ln 4215, prod ln 620.18, live ln 621, enc None
 Store to declared address of `arcin` (decl src ln 477), asm ln 4214
   %147 = load %struct.arc*, %struct.arc** %arc129, l619 c29, asm ln 4213
+  store %struct.arc* %147, %struct.arc** %arcin, l619 c17, asm ln 4214
   Added assignment asm ln 4214, prod ln 619.29, live ln 620, enc None
 Store to declared address of `arcnew` (decl src ln 477), asm ln 4654
   %incdec.ptr287 = getelementptr inbounds %struct.arc, %struct.arc* %330, i32 1, l736 c40, asm ln 4653
-  🔔 Live ln too early, using produced ln + 1
+  store %struct.arc* %incdec.ptr287, %struct.arc** %arcnew, l736 c40, asm ln 4654
   Added assignment asm ln 4654, prod ln 736.40, live ln 737, enc None
 Load from declared address of `arcnew` (decl src ln 477), asm ln 4652
   %330 = load %struct.arc*, %struct.arc** %arcnew, l736 c40, asm ln 4652
-  🔔 Live ln too early, using produced ln + 1
+  %330 = load %struct.arc*, %struct.arc** %arcnew, l736 c40, asm ln 4652
   Added assignment asm ln 4652, prod ln 736.40, live ln 737, enc None
 Load from declared address of `arcnew` (decl src ln 477), asm ln 4645
   %326 = load %struct.arc*, %struct.arc** %arcnew, l748 c64, asm ln 4645
-  🔔 Live ln too early, using produced ln + 1
+  %326 = load %struct.arc*, %struct.arc** %arcnew, l748 c64, asm ln 4645
   Added assignment asm ln 4645, prod ln 748.64, live ln 749, enc None
 Load from declared address of `arcnew` (decl src ln 477), asm ln 4639
   %324 = load %struct.arc*, %struct.arc** %arcnew, l748 c48, asm ln 4639
-  🔔 Live ln too early, using produced ln + 1
+  %324 = load %struct.arc*, %struct.arc** %arcnew, l748 c48, asm ln 4639
   Added assignment asm ln 4639, prod ln 748.48, live ln 749, enc None
 Load from declared address of `arcnew` (decl src ln 477), asm ln 4632
   %320 = load %struct.arc*, %struct.arc** %arcnew, l744 c15, asm ln 4632
-  🔔 Live ln too early, using produced ln + 1
+  %320 = load %struct.arc*, %struct.arc** %arcnew, l744 c15, asm ln 4632
   Added assignment asm ln 4632, prod ln 744.15, live ln 745, enc None
 Load from declared address of `arcnew` (decl src ln 477), asm ln 4631
   %319 = load %struct.arc*, %struct.arc** %arcnew, l744 c39, asm ln 4631
-  🔔 Live ln too early, using produced ln + 1
+  %319 = load %struct.arc*, %struct.arc** %arcnew, l744 c39, asm ln 4631
   Added assignment asm ln 4631, prod ln 744.39, live ln 745, enc None
 Load from declared address of `arcnew` (decl src ln 477), asm ln 4628
   %318 = load %struct.arc*, %struct.arc** %arcnew, l743 c15, asm ln 4628
-  🔔 Live ln too early, using produced ln + 1
+  %318 = load %struct.arc*, %struct.arc** %arcnew, l743 c15, asm ln 4628
   Added assignment asm ln 4628, prod ln 743.15, live ln 744, enc None
 Load from declared address of `arcnew` (decl src ln 477), asm ln 4623
   %315 = load %struct.arc*, %struct.arc** %arcnew, l743 c32, asm ln 4623
-  🔔 Live ln too early, using produced ln + 1
+  %315 = load %struct.arc*, %struct.arc** %arcnew, l743 c32, asm ln 4623
   Added assignment asm ln 4623, prod ln 743.32, live ln 744, enc None
 Load from declared address of `arcnew` (decl src ln 477), asm ln 4618
   %313 = load %struct.arc*, %struct.arc** %arcnew, l742 c15, asm ln 4618
-  🔔 Live ln too early, using produced ln + 1
+  %313 = load %struct.arc*, %struct.arc** %arcnew, l742 c15, asm ln 4618
   Added assignment asm ln 4618, prod ln 742.15, live ln 743, enc None
 Load from declared address of `arcnew` (decl src ln 477), asm ln 4617
   %312 = load %struct.arc*, %struct.arc** %arcnew, l742 c40, asm ln 4617
-  🔔 Live ln too early, using produced ln + 1
+  %312 = load %struct.arc*, %struct.arc** %arcnew, l742 c40, asm ln 4617
   Added assignment asm ln 4617, prod ln 742.40, live ln 743, enc None
 Load from declared address of `arcnew` (decl src ln 477), asm ln 4614
   %311 = load %struct.arc*, %struct.arc** %arcnew, l741 c15, asm ln 4614
-  🔔 Live ln too early, using produced ln + 1
+  %311 = load %struct.arc*, %struct.arc** %arcnew, l741 c15, asm ln 4614
   Added assignment asm ln 4614, prod ln 741.15, live ln 742, enc None
 Load from declared address of `arcnew` (decl src ln 477), asm ln 4609
   %308 = load %struct.arc*, %struct.arc** %arcnew, l741 c33, asm ln 4609
-  🔔 Live ln too early, using produced ln + 1
+  %308 = load %struct.arc*, %struct.arc** %arcnew, l741 c33, asm ln 4609
   Added assignment asm ln 4609, prod ln 741.33, live ln 742, enc None
 Load from declared address of `arcnew` (decl src ln 477), asm ln 4606
   %307 = load %struct.arc*, %struct.arc** %arcnew, l740 c15, asm ln 4606
-  🔔 Live ln too early, using produced ln + 1
+  %307 = load %struct.arc*, %struct.arc** %arcnew, l740 c15, asm ln 4606
   Added assignment asm ln 4606, prod ln 740.15, live ln 741, enc None
 Load from declared address of `arcnew` (decl src ln 477), asm ln 4603
   %306 = load %struct.arc*, %struct.arc** %arcnew, l739 c15, asm ln 4603
-  🔔 Live ln too early, using produced ln + 1
+  %306 = load %struct.arc*, %struct.arc** %arcnew, l739 c15, asm ln 4603
   Added assignment asm ln 4603, prod ln 739.15, live ln 740, enc None
 Load from declared address of `arcnew` (decl src ln 477), asm ln 4596
   %304 = load %struct.arc*, %struct.arc** %arcnew, l738 c17, asm ln 4596
-  🔔 Live ln too early, using produced ln + 1
+  %304 = load %struct.arc*, %struct.arc** %arcnew, l738 c17, asm ln 4596
   Added assignment asm ln 4596, prod ln 738.17, live ln 739, enc None
 Load from declared address of `arcnew` (decl src ln 477), asm ln 4590
   %302 = load %struct.arc*, %struct.arc** %arcnew, l736 c18, asm ln 4590
-  🔔 Live ln too early, using produced ln + 1
+  %302 = load %struct.arc*, %struct.arc** %arcnew, l736 c18, asm ln 4590
   Added assignment asm ln 4590, prod ln 736.18, live ln 737, enc None
 Store to declared address of `arcnew` (decl src ln 477), asm ln 4586
   %incdec.ptr = getelementptr inbounds %struct.arc, %struct.arc* %301, i32 1, l722 c40, asm ln 4585
-  🔔 Live ln too early, using produced ln + 1
+  store %struct.arc* %incdec.ptr, %struct.arc** %arcnew, l722 c40, asm ln 4586
   Added assignment asm ln 4586, prod ln 722.40, live ln 723, enc None
 Load from declared address of `arcnew` (decl src ln 477), asm ln 4584
   %301 = load %struct.arc*, %struct.arc** %arcnew, l722 c40, asm ln 4584
-  🔔 Live ln too early, using produced ln + 1
+  %301 = load %struct.arc*, %struct.arc** %arcnew, l722 c40, asm ln 4584
   Added assignment asm ln 4584, prod ln 722.40, live ln 723, enc None
 Load from declared address of `arcnew` (decl src ln 477), asm ln 4577
   %297 = load %struct.arc*, %struct.arc** %arcnew, l730 c59, asm ln 4577
-  🔔 Live ln too early, using produced ln + 1
+  %297 = load %struct.arc*, %struct.arc** %arcnew, l730 c59, asm ln 4577
   Added assignment asm ln 4577, prod ln 730.59, live ln 731, enc None
 Load from declared address of `arcnew` (decl src ln 477), asm ln 4571
   %295 = load %struct.arc*, %struct.arc** %arcnew, l730 c43, asm ln 4571
-  🔔 Live ln too early, using produced ln + 1
+  %295 = load %struct.arc*, %struct.arc** %arcnew, l730 c43, asm ln 4571
   Added assignment asm ln 4571, prod ln 730.43, live ln 731, enc None
 Load from declared address of `arcnew` (decl src ln 477), asm ln 4566
   %292 = load %struct.arc*, %struct.arc** %arcnew, l726 c17, asm ln 4566
-  🔔 Live ln too early, using produced ln + 1
+  %292 = load %struct.arc*, %struct.arc** %arcnew, l726 c17, asm ln 4566
   Added assignment asm ln 4566, prod ln 726.17, live ln 727, enc None
 Load from declared address of `arcnew` (decl src ln 477), asm ln 4563
   %291 = load %struct.arc*, %struct.arc** %arcnew, l725 c17, asm ln 4563
-  🔔 Live ln too early, using produced ln + 1
+  %291 = load %struct.arc*, %struct.arc** %arcnew, l725 c17, asm ln 4563
   Added assignment asm ln 4563, prod ln 725.17, live ln 726, enc None
 Load from declared address of `arcnew` (decl src ln 477), asm ln 4556
   %289 = load %struct.arc*, %struct.arc** %arcnew, l724 c17, asm ln 4556
-  🔔 Live ln too early, using produced ln + 1
+  %289 = load %struct.arc*, %struct.arc** %arcnew, l724 c17, asm ln 4556
   Added assignment asm ln 4556, prod ln 724.17, live ln 725, enc None
 Load from declared address of `arcnew` (decl src ln 477), asm ln 4550
   %287 = load %struct.arc*, %struct.arc** %arcnew, l722 c18, asm ln 4550
-  🔔 Live ln too early, using produced ln + 1
+  %287 = load %struct.arc*, %struct.arc** %arcnew, l722 c18, asm ln 4550
   Added assignment asm ln 4550, prod ln 722.18, live ln 723, enc None
 Load from declared address of `arcnew` (decl src ln 477), asm ln 4537
   %282 = load %struct.arc*, %struct.arc** %arcnew, l719 c16, asm ln 4537
-  🔔 Live ln too early, using produced ln + 1
+  %282 = load %struct.arc*, %struct.arc** %arcnew, l719 c16, asm ln 4537
   Added assignment asm ln 4537, prod ln 719.16, live ln 720, enc None
 Store to declared address of `arcnew` (decl src ln 477), asm ln 4536
   %add.ptr241 = getelementptr inbounds %struct.arc, %struct.arc* %279, i64 %mul240, l718 c33, asm ln 4535
+  store %struct.arc* %add.ptr241, %struct.arc** %arcnew, l718 c16, asm ln 4536
   Added assignment asm ln 4536, prod ln 718.33, live ln 719, enc None
 Load from declared address of `arcnew` (decl src ln 477), asm ln 4455
   %246 = load %struct.arc*, %struct.arc** %arcnew, l680 c64, asm ln 4455
-  🔔 Live ln too early, using produced ln + 1
+  %246 = load %struct.arc*, %struct.arc** %arcnew, l680 c64, asm ln 4455
   Added assignment asm ln 4455, prod ln 680.64, live ln 681, enc None
 Load from declared address of `arcnew` (decl src ln 477), asm ln 4337
   %200 = load %struct.arc*, %struct.arc** %arcnew, l649 c35, asm ln 4337
-  🔔 Live ln too early, using produced ln + 1
+  %200 = load %struct.arc*, %struct.arc** %arcnew, l649 c35, asm ln 4337
   Added assignment asm ln 4337, prod ln 649.35, live ln 650, enc None
 Load from declared address of `arcnew` (decl src ln 477), asm ln 4322
   %192 = load %struct.arc*, %struct.arc** %arcnew, l646 c60, asm ln 4322
-  🔔 Live ln too early, using produced ln + 1
+  %192 = load %struct.arc*, %struct.arc** %arcnew, l646 c60, asm ln 4322
   Added assignment asm ln 4322, prod ln 646.60, live ln 647, enc None
 Load from declared address of `arcnew` (decl src ln 477), asm ln 4292
   %182 = load %struct.arc*, %struct.arc** %arcnew, l640 c30, asm ln 4292
-  🔔 Live ln too early, using produced ln + 1
+  %182 = load %struct.arc*, %struct.arc** %arcnew, l640 c30, asm ln 4292
   Added assignment asm ln 4292, prod ln 640.30, live ln 641, enc None
 Load from declared address of `arcnew` (decl src ln 477), asm ln 4267
   %168 = load %struct.arc*, %struct.arc** %arcnew, l636 c31, asm ln 4267
-  🔔 Live ln too early, using produced ln + 1
+  %168 = load %struct.arc*, %struct.arc** %arcnew, l636 c31, asm ln 4267
   Added assignment asm ln 4267, prod ln 636.31, live ln 637, enc None
 Load from declared address of `arcnew` (decl src ln 477), asm ln 4111
   %111 = load %struct.arc*, %struct.arc** %arcnew, l588 c60, asm ln 4111
-  🔔 Live ln too early, using produced ln + 1
+  %111 = load %struct.arc*, %struct.arc** %arcnew, l588 c60, asm ln 4111
   Added assignment asm ln 4111, prod ln 588.60, live ln 589, enc None
 Load from declared address of `arcnew` (decl src ln 477), asm ln 4014
   %78 = load %struct.arc*, %struct.arc** %arcnew, l567 c43, asm ln 4014
-  🔔 Live ln too early, using produced ln + 1
+  %78 = load %struct.arc*, %struct.arc** %arcnew, l567 c43, asm ln 4014
   Added assignment asm ln 4014, prod ln 567.43, live ln 568, enc None
 Store to declared address of `arcnew` (decl src ln 477), asm ln 3989
   %add.ptr = getelementptr inbounds %struct.arc, %struct.arc* %67, i64 %mul59, l559 c31, asm ln 3988
+  store %struct.arc* %add.ptr, %struct.arc** %arcnew, l559 c14, asm ln 3989
   Added assignment asm ln 3989, prod ln 559.31, live ln 560, enc None
 Load from declared address of `stop` (decl src ln 477), asm ln 4591
   %303 = load %struct.arc*, %struct.arc** %stop, l736 c28, asm ln 4591
-  🔔 Live ln too early, using produced ln + 1
+  %303 = load %struct.arc*, %struct.arc** %stop, l736 c28, asm ln 4591
   Added assignment asm ln 4591, prod ln 736.28, live ln 737, enc None
 Load from declared address of `stop` (decl src ln 477), asm ln 4551
   %288 = load %struct.arc*, %struct.arc** %stop, l722 c28, asm ln 4551
-  🔔 Live ln too early, using produced ln + 1
+  %288 = load %struct.arc*, %struct.arc** %stop, l722 c28, asm ln 4551
   Added assignment asm ln 4551, prod ln 722.28, live ln 723, enc None
 Store to declared address of `stop` (decl src ln 477), asm ln 4544
   %add.ptr244 = getelementptr inbounds %struct.arc, %struct.arc* %282, i64 %285, l719 c23, asm ln 4543
+  store %struct.arc* %add.ptr244, %struct.arc** %stop, l719 c14, asm ln 4544
   Added assignment asm ln 4544, prod ln 719.23, live ln 720, enc None
 Load from declared address of `sorted_array` (decl src ln 477), asm ln 4637
   %322 = load %struct.arc*, %struct.arc** %sorted_array, l748 c15, asm ln 4637
-  🔔 Live ln too early, using produced ln + 1
+  %322 = load %struct.arc*, %struct.arc** %sorted_array, l748 c15, asm ln 4637
   Added assignment asm ln 4637, prod ln 748.15, live ln 749, enc None
 Load from declared address of `sorted_array` (decl src ln 477), asm ln 4569
   %293 = load %struct.arc*, %struct.arc** %sorted_array, l730 c10, asm ln 4569
-  🔔 Live ln too early, using produced ln + 1
+  %293 = load %struct.arc*, %struct.arc** %sorted_array, l730 c10, asm ln 4569
   Added assignment asm ln 4569, prod ln 730.10, live ln 731, enc None
 Load from declared address of `sorted_array` (decl src ln 477), asm ln 3960
   %57 = load %struct.arc*, %struct.arc** %sorted_array, l556 c31, asm ln 3960
-  🔔 Live ln too early, using produced ln + 1
+  %57 = load %struct.arc*, %struct.arc** %sorted_array, l556 c31, asm ln 3960
   Added assignment asm ln 3960, prod ln 556.31, live ln 557, enc None
 Load from declared address of `sorted_array` (decl src ln 477), asm ln 3932
   %50 = load %struct.arc*, %struct.arc** %sorted_array, l536 c10, asm ln 3932
-  🔔 Live ln too early, using produced ln + 1
+  %50 = load %struct.arc*, %struct.arc** %sorted_array, l536 c10, asm ln 3932
   Added assignment asm ln 3932, prod ln 536.10, live ln 537, enc None
 Store to declared address of `sorted_array` (decl src ln 477), asm ln 3931
   %49 = load %struct.arc*, %struct.arc** %sorted_arcs, l535 c25, asm ln 3930
+  store %struct.arc* %49, %struct.arc** %sorted_array, l535 c18, asm ln 3931
   Added assignment asm ln 3931, prod ln 535.25, live ln 536, enc None
 Load from declared address of `arc` (decl src ln 477), asm ln 4390
   %226 = load %struct.arc*, %struct.arc** %arc, l658 c15, asm ln 4390
-  🔔 Live ln too early, using produced ln + 1
+  %226 = load %struct.arc*, %struct.arc** %arc, l658 c15, asm ln 4390
   Added assignment asm ln 4390, prod ln 658.15, live ln 659, enc None
 Load from declared address of `arc` (decl src ln 477), asm ln 4385
   %224 = load %struct.arc*, %struct.arc** %arc, l657 c15, asm ln 4385
-  🔔 Live ln too early, using produced ln + 1
+  %224 = load %struct.arc*, %struct.arc** %arc, l657 c15, asm ln 4385
   Added assignment asm ln 4385, prod ln 657.15, live ln 658, enc None
 Load from declared address of `arc` (decl src ln 477), asm ln 4381
   %222 = load %struct.arc*, %struct.arc** %arc, l656 c15, asm ln 4381
-  🔔 Live ln too early, using produced ln + 1
+  %222 = load %struct.arc*, %struct.arc** %arc, l656 c15, asm ln 4381
   Added assignment asm ln 4381, prod ln 656.15, live ln 657, enc None
 Load from declared address of `arc` (decl src ln 477), asm ln 4377
   %220 = load %struct.arc*, %struct.arc** %arc, l655 c15, asm ln 4377
-  🔔 Live ln too early, using produced ln + 1
+  %220 = load %struct.arc*, %struct.arc** %arc, l655 c15, asm ln 4377
   Added assignment asm ln 4377, prod ln 655.15, live ln 656, enc None
 Load from declared address of `arc` (decl src ln 477), asm ln 4373
   %218 = load %struct.arc*, %struct.arc** %arc, l654 c15, asm ln 4373
-  🔔 Live ln too early, using produced ln + 1
+  %218 = load %struct.arc*, %struct.arc** %arc, l654 c15, asm ln 4373
   Added assignment asm ln 4373, prod ln 654.15, live ln 655, enc None
 Load from declared address of `arc` (decl src ln 477), asm ln 4369
   %216 = load %struct.arc*, %struct.arc** %arc, l653 c15, asm ln 4369
-  🔔 Live ln too early, using produced ln + 1
+  %216 = load %struct.arc*, %struct.arc** %arc, l653 c15, asm ln 4369
   Added assignment asm ln 4369, prod ln 653.15, live ln 654, enc None
 Store to declared address of `arc` (decl src ln 477), asm ln 4367
   %arrayidx186 = getelementptr inbounds %struct.arc, %struct.arc* %211, i64 %214, l652 c22, asm ln 4366
+  store %struct.arc* %arrayidx186, %struct.arc** %arc, l652 c19, asm ln 4367
   Added assignment asm ln 4367, prod ln 652.22, live ln 653, enc None
 Load from declared address of `tail` (decl src ln 478), asm ln 4368
   %215 = load %struct.node*, %struct.node** %tail, l653 c31, asm ln 4368
-  🔔 Live ln too early, using produced ln + 1
+  %215 = load %struct.node*, %struct.node** %tail, l653 c31, asm ln 4368
   Added assignment asm ln 4368, prod ln 653.31, live ln 654, enc None
 Load from declared address of `tail` (decl src ln 478), asm ln 4338
   %201 = load %struct.node*, %struct.node** %tail, l649 c43, asm ln 4338
-  🔔 Live ln too early, using produced ln + 1
+  %201 = load %struct.node*, %struct.node** %tail, l649 c43, asm ln 4338
   Added assignment asm ln 4338, prod ln 649.43, live ln 650, enc None
 Load from declared address of `tail` (decl src ln 478), asm ln 4273
   %172 = load %struct.node*, %struct.node** %tail, l636 c63, asm ln 4273
-  🔔 Live ln too early, using produced ln + 1
+  %172 = load %struct.node*, %struct.node** %tail, l636 c63, asm ln 4273
   Added assignment asm ln 4273, prod ln 636.63, live ln 637, enc None
 Load from declared address of `tail` (decl src ln 478), asm ln 4243
   %159 = load %struct.node*, %struct.node** %tail, l629 c33, asm ln 4243
-  🔔 Live ln too early, using produced ln + 1
+  %159 = load %struct.node*, %struct.node** %tail, l629 c33, asm ln 4243
   Added assignment asm ln 4243, prod ln 629.33, live ln 630, enc None
 Load from declared address of `tail` (decl src ln 478), asm ln 4219
   %150 = load %struct.node*, %struct.node** %tail, l622 c15, asm ln 4219
-  🔔 Live ln too early, using produced ln + 1
+  %150 = load %struct.node*, %struct.node** %tail, l622 c15, asm ln 4219
   Added assignment asm ln 4219, prod ln 622.15, live ln 623, enc None
 Store to declared address of `tail` (decl src ln 478), asm ln 4218
   %149 = load %struct.node*, %struct.node** %tail130, l620 c25, asm ln 4217
+  store %struct.node* %149, %struct.node** %tail, l620 c16, asm ln 4218
   Added assignment asm ln 4218, prod ln 620.25, live ln 622, enc None
 Load from declared address of `head` (decl src ln 478), asm ln 4372
   %217 = load %struct.node*, %struct.node** %head, l654 c31, asm ln 4372
-  🔔 Live ln too early, using produced ln + 1
+  %217 = load %struct.node*, %struct.node** %head, l654 c31, asm ln 4372
   Added assignment asm ln 4372, prod ln 654.31, live ln 655, enc None
 Load from declared address of `head` (decl src ln 478), asm ln 4339
   %202 = load %struct.node*, %struct.node** %head, l649 c49, asm ln 4339
-  🔔 Live ln too early, using produced ln + 1
+  %202 = load %struct.node*, %struct.node** %head, l649 c49, asm ln 4339
   Added assignment asm ln 4339, prod ln 649.49, live ln 650, enc None
 Load from declared address of `head` (decl src ln 478), asm ln 4274
+  %173 = load %struct.node*, %struct.node** %head, l636 c69, asm ln 4274
   %173 = load %struct.node*, %struct.node** %head, l636 c69, asm ln 4274
   Added assignment asm ln 4274, prod ln 636.69, live ln 637, enc None
 Load from declared address of `head` (decl src ln 478), asm ln 4247
   %161 = load %struct.node*, %struct.node** %head, l629 c51, asm ln 4247
-  🔔 Live ln too early, using produced ln + 1
+  %161 = load %struct.node*, %struct.node** %head, l629 c51, asm ln 4247
   Added assignment asm ln 4247, prod ln 629.51, live ln 630, enc None
 Load from declared address of `head` (decl src ln 478), asm ln 4195
   %141 = load %struct.node*, %struct.node** %head, l613 c26, asm ln 4195
-  🔔 Live ln too early, using produced ln + 1
+  %141 = load %struct.node*, %struct.node** %head, l613 c26, asm ln 4195
   Added assignment asm ln 4195, prod ln 613.26, live ln 614, enc None
 Load from declared address of `head` (decl src ln 478), asm ln 4184
   %136 = load %struct.node*, %struct.node** %head, l610 c18, asm ln 4184
-  🔔 Live ln too early, using produced ln + 1
+  %136 = load %struct.node*, %struct.node** %head, l610 c18, asm ln 4184
   Added assignment asm ln 4184, prod ln 610.18, live ln 611, enc None
 Store to declared address of `head` (decl src ln 478), asm ln 4183
   %135 = load %struct.node*, %struct.node** %head123, l609 c24, asm ln 4182
+  store %struct.node* %135, %struct.node** %head, l609 c14, asm ln 4183
   Added assignment asm ln 4183, prod ln 609.24, live ln 610, enc None
 Load from declared address of `num_threads` (decl src ln 483), asm ln 4459
   %250 = load i64, i64* %num_threads, l680 c121, asm ln 4459
-  🔔 Live ln too early, using produced ln + 1
+  %250 = load i64, i64* %num_threads, l680 c121, asm ln 4459
   Added assignment asm ln 4459, prod ln 680.121, live ln 681, enc None
 Load from declared address of `num_threads` (decl src ln 483), asm ln 4164
   %130 = load i64, i64* %num_threads, l603 c43, asm ln 4164
-  🔔 Live ln too early, using produced ln + 1
+  %130 = load i64, i64* %num_threads, l603 c43, asm ln 4164
   Added assignment asm ln 4164, prod ln 603.43, live ln 604, enc None
 Load from declared address of `num_threads` (decl src ln 483), asm ln 4115
   %115 = load i64, i64* %num_threads, l588 c117, asm ln 4115
-  🔔 Live ln too early, using produced ln + 1
+  %115 = load i64, i64* %num_threads, l588 c117, asm ln 4115
   Added assignment asm ln 4115, prod ln 588.117, live ln 589, enc None
 Load from declared address of `num_threads` (decl src ln 483), asm ln 4095
   %103 = load i64, i64* %num_threads, l584 c75, asm ln 4095
-  🔔 Live ln too early, using produced ln + 1
+  %103 = load i64, i64* %num_threads, l584 c75, asm ln 4095
   Added assignment asm ln 4095, prod ln 584.75, live ln 585, enc None
 Load from declared address of `num_threads` (decl src ln 483), asm ln 4080
   %98 = load i64, i64* %num_threads, l577 c75, asm ln 4080
-  🔔 Live ln too early, using produced ln + 1
+  %98 = load i64, i64* %num_threads, l577 c75, asm ln 4080
   Added assignment asm ln 4080, prod ln 577.75, live ln 578, enc None
 Load from declared address of `num_threads` (decl src ln 483), asm ln 3952
   %56 = load i64, i64* %num_threads, l540 c27, asm ln 3952
-  🔔 Live ln too early, using produced ln + 1
+  %56 = load i64, i64* %num_threads, l540 c27, asm ln 3952
   Added assignment asm ln 3952, prod ln 540.27, live ln 541, enc None
 Load from declared address of `num_threads` (decl src ln 483), asm ln 3944
   %53 = load i64, i64* %num_threads, l538 c63, asm ln 3944
-  🔔 Live ln too early, using produced ln + 1
+  %53 = load i64, i64* %num_threads, l538 c63, asm ln 3944
   Added assignment asm ln 3944, prod ln 538.63, live ln 539, enc None
 Load from declared address of `num_threads` (decl src ln 483), asm ln 3799
   %8 = load i64, i64* %num_threads, l490 c36, asm ln 3799
-  🔔 Live ln too early, using produced ln + 1
+  %8 = load i64, i64* %num_threads, l490 c36, asm ln 3799
   Added assignment asm ln 3799, prod ln 490.36, live ln 491, enc None
 Load from declared address of `num_threads` (decl src ln 483), asm ln 3794
   %6 = load i64, i64* %num_threads, l489 c44, asm ln 3794
-  🔔 Live ln too early, using produced ln + 1
+  %6 = load i64, i64* %num_threads, l489 c44, asm ln 3794
   Added assignment asm ln 3794, prod ln 489.44, live ln 490, enc None
 Load from declared address of `num_threads` (decl src ln 483), asm ln 3789
   %4 = load i64, i64* %num_threads, l488 c35, asm ln 3789
-  🔔 Live ln too early, using produced ln + 1
+  %4 = load i64, i64* %num_threads, l488 c35, asm ln 3789
   Added assignment asm ln 3789, prod ln 488.35, live ln 489, enc None
 Load from declared address of `num_threads` (decl src ln 483), asm ln 3784
   %2 = load i64, i64* %num_threads, l487 c37, asm ln 3784
-  🔔 Live ln too early, using produced ln + 1
+  %2 = load i64, i64* %num_threads, l487 c37, asm ln 3784
   Added assignment asm ln 3784, prod ln 487.37, live ln 488, enc None
 Store to declared address of `num_threads` (decl src ln 483), asm ln 3783
   const i64 1
+  store i64 1, i64* %num_threads, l483 c10, asm ln 3783
   Added assignment asm ln 3783, prod ln 483.10, live ln 487, enc None
 
 #### After variables
 
 Value produced for `net` (decl src ln 444), asm ln 2768
   arg 0
+  @dbg.value(%struct.network.2* %net, !2323), asm ln 2768
   Added assignment asm ln 2768, prod ln 444.0, live ln 452, enc None
 Load from declared address of `new_arcs` (decl src ln 452), asm ln 3483
   %102 = load i64, i64* %new_arcs, l780 c12, asm ln 3483
-  🔔 Live ln too early, using produced ln + 1
+  %102 = load i64, i64* %new_arcs, l780 c12, asm ln 3483
   Added assignment asm ln 3483, prod ln 780.12, live ln 781, enc None
 Load from declared address of `new_arcs` (decl src ln 452), asm ln 3464
   %95 = load i64, i64* %new_arcs, l758 c27, asm ln 3464
-  🔔 Live ln too early, using produced ln + 1
+  %95 = load i64, i64* %new_arcs, l758 c27, asm ln 3464
   Added assignment asm ln 3464, prod ln 758.27, live ln 759, enc None
 Load from declared address of `new_arcs` (decl src ln 452), asm ln 3454
   %91 = load i64, i64* %new_arcs, l756 c36, asm ln 3454
-  🔔 Live ln too early, using produced ln + 1
+  %91 = load i64, i64* %new_arcs, l756 c36, asm ln 3454
   Added assignment asm ln 3454, prod ln 756.36, live ln 757, enc None
 Load from declared address of `new_arcs` (decl src ln 452), asm ln 3449
   %89 = load i64, i64* %new_arcs, l755 c24, asm ln 3449
-  🔔 Live ln too early, using produced ln + 1
+  %89 = load i64, i64* %new_arcs, l755 c24, asm ln 3449
   Added assignment asm ln 3449, prod ln 755.24, live ln 756, enc None
 Store to declared address of `new_arcs` (decl src ln 452), asm ln 2770
   const i64 0
+  store i64 0, i64* %new_arcs, l452 c10, asm ln 2770
   Added assignment asm ln 2770, prod ln 452.10, live ln 471, enc None
 Value produced for `resized` (decl src ln 453), asm ln 2771
   const i64 0
+  @dbg.value(i64 0, !2327), asm ln 2771
   Added assignment asm ln 2771, prod ln 453.0, live ln 471, enc None
 Value produced for `min_impl_duration` (decl src ln 455), asm ln 2772
   const i64 15
+  @dbg.value(i64 15, !2328), asm ln 2772
   Added assignment asm ln 2772, prod ln 455.0, live ln 471, enc None
 Load from declared address of `max_redcost` (decl src ln 461), asm ln 3207
   %56 = load i64, i64* %max_redcost, l651 c33, asm ln 3207
-  🔔 Live ln too early, using produced ln + 1
+  %56 = load i64, i64* %max_redcost, l651 c33, asm ln 3207
   Added assignment asm ln 3207, prod ln 651.33, live ln 652, enc None
 Store to declared address of `max_redcost` (decl src ln 461), asm ln 2901
   const i64 0
+  store i64 0, i64* %max_redcost, l547 c19, asm ln 2901
   Added assignment asm ln 2901, prod ln 547.19, live ln 556, enc None
 Value produced for `first_replace` (decl src ln 462), asm ln 2774
   const i16 1
+  @dbg.value(i16 1, !2331), asm ln 2774
   Added assignment asm ln 2774, prod ln 462.0, live ln 471, enc None
 Value produced for `count` (decl src ln 463), asm ln 2775
   const i64 0
+  @dbg.value(i64 0, !2332), asm ln 2775
   Added assignment asm ln 2775, prod ln 463.0, live ln 471, enc None
 Value produced for `bigM` (decl src ln 471), asm ln 2778
   %0 = load i64, i64* %bigM1, l471 c33, asm ln 2777
+  @dbg.value(i64 %0, !2334), asm ln 2778
   Added assignment asm ln 2778, prod ln 471.33, live ln 487, enc None
 Value produced for `arc_cost` (decl src ln 473), asm ln 2779
   const i64 30
+  @dbg.value(i64 30, !2335), asm ln 2779
   Added assignment asm ln 2779, prod ln 473.0, live ln 487, enc None
 Value produced for `num_threads` (decl src ln 483), asm ln 2780
   const i64 1
+  @dbg.value(i64 1, !2336), asm ln 2780
   Added assignment asm ln 2780, prod ln 483.0, live ln 487, enc None
 Value produced for `new_arcs_array` (decl src ln 458), asm ln 2784
   %1 = bitcast i8* %call to i64*, l487 c22, asm ln 2783
+  @dbg.value(i64* %1, !2340), asm ln 2784
   Added assignment asm ln 2784, prod ln 487.22, live ln 488, enc None
 Value produced for `num_del_arcs` (decl src ln 459), asm ln 2788
   %2 = bitcast i8* %call3 to i64*, l488 c20, asm ln 2787
+  @dbg.value(i64* %2, !2344), asm ln 2788
   Added assignment asm ln 2788, prod ln 488.20, live ln 489, enc None
 Value produced for `arcs_pointer_sorted` (decl src ln 460), asm ln 2792
   %3 = bitcast i8* %call5 to %struct.arc.0***, l489 c27, asm ln 2791
+  @dbg.value(%struct.arc.0*** %3, !2348), asm ln 2792
   Added assignment asm ln 2792, prod ln 489.27, live ln 490, enc None
 Value produced for `deleted_arcs` (decl src ln 460), asm ln 2796
   %4 = bitcast i8* %call7 to %struct.arc.0**, l490 c20, asm ln 2795
+  @dbg.value(%struct.arc.0** %4, !2352), asm ln 2796
   Added assignment asm ln 2796, prod ln 490.20, live ln 497, enc None
 Value produced for `bigM_minus_min_impl_duration` (decl src ln 475), asm ln 2798
   %sub = sub nsw i64 %0, 15, l497 c49, asm ln 2797
+  @dbg.value(i64 %sub, !2354), asm ln 2798
   Added assignment asm ln 2798, prod ln 497.49, live ln 501, enc None
 Value produced for `resized` (decl src ln 453), asm ln 2831
   const i64 1
-  🔔 Missing produced ln, using decl ln
+  @dbg.value(i64 1, !2327), asm ln 2831
   Added assignment asm ln 2831, prod ln 453.0, live ln 509, enc None
 Value produced for `resized` (decl src ln 453), asm ln 2867
   const i64 1
-  🔔 Missing produced ln, using decl ln
+  @dbg.value(i64 1, !2327), asm ln 2867
   Added assignment asm ln 2867, prod ln 453.0, live ln 523, enc None
 Value produced for `num_switch_iterations` (decl src ln 464), asm ln 2883
   %. = select i1 %cmp42, i64 1000, i64 2000, asm ln 2882
+  @dbg.value(i64 %., !2409), asm ln 2883
   Added assignment asm ln 2883, prod ln 464.0, live ln 535, enc None
 Value produced for `sorted_array` (decl src ln 477), asm ln 2886
   %21 = load %struct.arc.0*, %struct.arc.0** %sorted_arcs, l535 c25, asm ln 2885
+  @dbg.value(%struct.arc.0* %21, !2411), asm ln 2886
   Added assignment asm ln 2886, prod ln 535.25, live ln 536, enc None
 Value produced for `max_new_par_residual_new_arcs` (decl src ln 456), asm ln 2894
   %div49 = sdiv i64 %22, 1, l538 c61, asm ln 2893
+  @dbg.value(i64 %div49, !2417), asm ln 2894
   Added assignment asm ln 2894, prod ln 538.61, live ln 540, enc None
 Value produced for `first_replace` (decl src ln 462), asm ln 2895
   const i16 1
-  🔔 Missing produced ln, using decl ln
+  @dbg.value(i16 1, !2331), asm ln 2895
   Added assignment asm ln 2895, prod ln 462.0, live ln 540, enc None
 Value produced for `size_del` (decl src ln 465), asm ln 2899
   %div51 = sdiv i64 %23, 1, l540 c26, asm ln 2898
+  @dbg.value(i64 %div51, !2420), asm ln 2899
   Added assignment asm ln 2899, prod ln 540.26, live ln 547, enc None
 Value produced for `local_first_replace` (decl src ln 462), asm ln 2900
   const i16 1
+  @dbg.value(i16 1, !2421), asm ln 2900
   Added assignment asm ln 2900, prod ln 462.0, live ln 547, enc None
 Value produced for `count` (decl src ln 463), asm ln 2902
   const i64 0
-  🔔 Missing produced ln, using decl ln
+  @dbg.value(i64 0, !2332), asm ln 2902
   Added assignment asm ln 2902, prod ln 463.0, live ln 556, enc None
 Value produced for `thread` (decl src ln 457), asm ln 2903
   const i32 0
+  @dbg.value(i32 0, !2424), asm ln 2903
   Added assignment asm ln 2903, prod ln 457.0, live ln 556, enc None
 Value produced for `arcnew` (decl src ln 477), asm ln 2921
   %add.ptr = getelementptr inbounds %struct.arc.0, %struct.arc.0* %24, i64 %mul59, l559 c31, asm ln 2920
+  @dbg.value(%struct.arc.0* %add.ptr, !2438), asm ln 2921
   Added assignment asm ln 2921, prod ln 559.31, live ln 560, enc None
 Value produced for `trips` (decl src ln 451), asm ln 2924
   %25 = load i64, i64* %n_trips60, l560 c20, asm ln 2923
+  @dbg.value(i64 %25, !2440), asm ln 2924
   Added assignment asm ln 2924, prod ln 560.20, live ln 563, enc None
 Value produced for `id` (decl src ln 459), asm ln 2925
   const i64 0
+  @dbg.value(i64 0, !2441), asm ln 2925
   Added assignment asm ln 2925, prod ln 459.0, live ln 563, enc None
 Value produced for `list_size` (decl src ln 459), asm ln 2926
   const i64 -1
+  @dbg.value(i64 -1, !2442), asm ln 2926
   Added assignment asm ln 2926, prod ln 459.0, live ln 563, enc None
 Value produced for `i` (decl src ln 450), asm ln 2932
   const i64 0
+  @dbg.value(i64 0, !2447), asm ln 2932
   Added assignment asm ln 2932, prod ln 450.0, live ln 566, enc None
 Value produced for `i` (decl src ln 450), asm ln 2949
   %inc = add nsw i64 %i.0, 1, l566 c55, asm ln 2948
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %inc, !2447), asm ln 2949
   Added assignment asm ln 2949, prod ln 566.55, live ln 567, enc None
 Value produced for `arcout` (decl src ln 477), asm ln 2955
   %28 = load %struct.arc.0*, %struct.arc.0** %arcs, l570 c21, asm ln 2954
+  @dbg.value(%struct.arc.0* %28, !2463), asm ln 2955
   Added assignment asm ln 2955, prod ln 570.21, live ln 571, enc None
 Value produced for `i` (decl src ln 450), asm ln 2956
   const i64 0
-  🔔 Missing produced ln, using decl ln
+  @dbg.value(i64 0, !2447), asm ln 2956
   Added assignment asm ln 2956, prod ln 450.0, live ln 571, enc None
 Value produced for `i` (decl src ln 450), asm ln 2977
   %inc79 = add nsw i64 %i.1, 1, l571 c59, asm ln 2976
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %inc79, !2447), asm ln 2977
   Added assignment asm ln 2977, prod ln 571.59, live ln 572, enc None
 Value produced for `arcout` (decl src ln 477), asm ln 2979
   %add.ptr80 = getelementptr inbounds %struct.arc.0, %struct.arc.0* %arcout.0, i64 3, l571 c70, asm ln 2978
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(%struct.arc.0* %add.ptr80, !2463), asm ln 2979
   Added assignment asm ln 2979, prod ln 571.70, live ln 572, enc None
 Value produced for `first_list_elem` (decl src ln 467), asm ln 2983
   const %struct.list_elem.7* null
+  @dbg.value(%struct.list_elem.7* null, !2480), asm ln 2983
   Added assignment asm ln 2983, prod ln 467.0, live ln 574, enc None
 Value produced for `count` (decl src ln 463), asm ln 3030
   const i64 0
-  🔔 Missing produced ln, using decl ln
+  @dbg.value(i64 0, !2332), asm ln 3030
   Added assignment asm ln 3030, prod ln 463.0, live ln 590, enc None
 Value produced for `new_list_elem` (decl src ln 468), asm ln 3049
   %31 = bitcast i8* %call107 to %struct.list_elem.7*, l596 c27, asm ln 3048
+  @dbg.value(%struct.list_elem.7* %31, !2520), asm ln 3049
   Added assignment asm ln 3049, prod ln 596.27, live ln 597, enc None
 Value produced for `first_list_elem` (decl src ln 467), asm ln 3055
   %31 = bitcast i8* %call107 to %struct.list_elem.7*, l596 c27, asm ln 3048
+  @dbg.value(%struct.list_elem.7* %31, !2480), asm ln 3055
   Added assignment asm ln 3055, prod ln 596.27, live ln 600, enc None
 Value produced for `list_size` (decl src ln 459), asm ln 3057
   %inc110 = add nsw i64 %list_size.0, 1, l600 c20, asm ln 3056
+  @dbg.value(i64 %inc110, !2442), asm ln 3057
   Added assignment asm ln 3057, prod ln 600.20, live ln 601, enc None
 Value produced for `id` (decl src ln 459), asm ln 3079
   %add121 = add nsw i64 %id.0, %list_size.1, l605 c14, asm ln 3078
+  @dbg.value(i64 %add121, !2441), asm ln 3079
   Added assignment asm ln 3079, prod ln 605.14, live ln 606, enc None
 Value produced for `head` (decl src ln 478), asm ln 3085
   %33 = load %struct.node.1*, %struct.node.1** %head123, l609 c24, asm ln 3084
+  @dbg.value(%struct.node.1* %33, !2541), asm ln 3085
   Added assignment asm ln 3085, prod ln 609.24, live ln 610, enc None
 Value produced for `latest` (decl src ln 454), asm ln 3093
   %add126 = add nsw i64 %sub125, %sub, l611 c13, asm ln 3092
+  @dbg.value(i64 %add126, !2547), asm ln 3093
   Added assignment asm ln 3093, prod ln 611.13, live ln 613, enc None
 Value produced for `head_potential` (decl src ln 472), asm ln 3096
   %36 = load i64, i64* %potential, l613 c32, asm ln 3095
+  @dbg.value(i64 %36, !2549), asm ln 3096
   Added assignment asm ln 3096, prod ln 613.32, live ln 615, enc None
 Value produced for `iterator` (decl src ln 469), asm ln 3099
   %37 = load %struct.list_elem.7*, %struct.list_elem.7** %next127, l615 c37, asm ln 3098
+  @dbg.value(%struct.list_elem.7* %37, !2551), asm ln 3099
   Added assignment asm ln 3099, prod ln 615.37, live ln 616, enc None
 Value produced for `arcin` (decl src ln 477), asm ln 3119
   %38 = load %struct.arc.0*, %struct.arc.0** %arc129, l619 c29, asm ln 3118
+  @dbg.value(%struct.arc.0* %38, !2556), asm ln 3119
   Added assignment asm ln 3119, prod ln 619.29, live ln 620, enc None
 Value produced for `tail` (decl src ln 478), asm ln 3122
   %39 = load %struct.node.1*, %struct.node.1** %tail130, l620 c25, asm ln 3121
+  @dbg.value(%struct.node.1* %39, !2558), asm ln 3122
   Added assignment asm ln 3122, prod ln 620.25, live ln 622, enc None
 Value produced for `iterator` (decl src ln 469), asm ln 3135
   %42 = load %struct.list_elem.7*, %struct.list_elem.7** %next138, l624 c34, asm ln 3134
+  @dbg.value(%struct.list_elem.7* %42, !2551), asm ln 3135
   Added assignment asm ln 3135, prod ln 624.34, live ln 625, enc None
 Value produced for `id` (decl src ln 459), asm ln 3137
   %inc139 = add nsw i64 %id.1, 1, l625 c15, asm ln 3136
+  @dbg.value(i64 %inc139, !2441), asm ln 3137
   Added assignment asm ln 3137, prod ln 625.15, live ln 626, enc None
 Value produced for `red_cost` (decl src ln 474), asm ln 3147
   %add144 = add nsw i64 %sub142, %44, l629 c49, asm ln 3146
+  @dbg.value(i64 %add144, !2576), asm ln 3147
   Added assignment asm ln 3147, prod ln 629.49, live ln 631, enc None
 Value produced for `local_first_replace` (decl src ln 462), asm ln 3183
   %spec.select1 = select i1 %tobool164, i16 0, i16 %local_first_replace.1, l641 c19, asm ln 3182
+  @dbg.value(i16 %spec.select1, !2421), asm ln 3183
   Added assignment asm ln 3183, prod ln 641.19, live ln 646, enc None
 Value produced for `first_replace` (decl src ln 462), asm ln 3184
   %spec.select = select i1 %tobool164, i16 0, i16 %first_replace.1, l641 c19, asm ln 3181
+  @dbg.value(i16 %spec.select, !2331), asm ln 3184
   Added assignment asm ln 3184, prod ln 641.19, live ln 646, enc None
 Value produced for `count` (decl src ln 463), asm ln 3202
   %inc176 = add nsw i64 %count.3, 1, l648 c20, asm ln 3201
+  @dbg.value(i64 %inc176, !2332), asm ln 3202
   Added assignment asm ln 3202, prod ln 648.20, live ln 649, enc None
 Value produced for `arc` (decl src ln 477), asm ln 3221
   %arrayidx186 = getelementptr inbounds %struct.arc.0, %struct.arc.0* %57, i64 %58, l652 c22, asm ln 3220
+  @dbg.value(%struct.arc.0* %arrayidx186, !2617), asm ln 3221
   Added assignment asm ln 3221, prod ln 652.22, live ln 653, enc None
 Value produced for `count` (decl src ln 463), asm ln 3236
   %inc193 = add nsw i64 %count.3, 1, l659 c20, asm ln 3235
+  @dbg.value(i64 %inc193, !2332), asm ln 3236
   Added assignment asm ln 3236, prod ln 659.20, live ln 660, enc None
 Value produced for `iterator` (decl src ln 469), asm ln 3267
   %60 = load %struct.list_elem.7*, %struct.list_elem.7** %next206, l667 c32, asm ln 3266
+  @dbg.value(%struct.list_elem.7* %60, !2551), asm ln 3267
   Added assignment asm ln 3267, prod ln 667.32, live ln 668, enc None
 Value produced for `id` (decl src ln 459), asm ln 3269
   %inc207 = add nsw i64 %id.1, 1, l668 c13, asm ln 3268
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %inc207, !2441), asm ln 3269
   Added assignment asm ln 3269, prod ln 668.13, live ln 669, enc None
 Value produced for `i` (decl src ln 450), asm ln 3282
   %inc209 = add nsw i64 %i.2, 1, l574 c26, asm ln 3281
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %inc209, !2447), asm ln 3282
   Added assignment asm ln 3282, prod ln 574.26, live ln 575, enc None
 Value produced for `arcout` (decl src ln 477), asm ln 3284
   %add.ptr210 = getelementptr inbounds %struct.arc.0, %struct.arc.0* %arcout.1, i64 3, l574 c37, asm ln 3283
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(%struct.arc.0* %add.ptr210, !2463), asm ln 3284
   Added assignment asm ln 3284, prod ln 574.37, live ln 575, enc None
 Value produced for `first_replace` (decl src ln 462), asm ln 3301
   const i16 1
-  🔔 Missing produced ln, using decl ln
+  @dbg.value(i16 1, !2331), asm ln 3301
   Added assignment asm ln 3301, prod ln 462.0, live ln 680, enc None
 Value produced for `count` (decl src ln 463), asm ln 3303
   %call217 = call i64 @switch_arcs(%struct.network.2* %net, i64* %2, %struct.arc.0** %4, %struct.arc.0* %add.ptr, i32 0, i64 %div49, i64 %div51, i64 1), l680 c19, asm ln 3302
+  @dbg.value(i64 %call217, !2332), asm ln 3303
   Added assignment asm ln 3303, prod ln 680.19, live ln 682, enc None
 Value produced for `first_replace` (decl src ln 462), asm ln 3306
   %spec.select2 = select i1 %tobool218, i16 0, i16 1, l682 c15, asm ln 3305
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i16 %spec.select2, !2331), asm ln 3306
   Added assignment asm ln 3306, prod ln 682.15, live ln 683, enc None
 Value produced for `first_list_elem` (decl src ln 467), asm ln 3321
   %62 = load %struct.list_elem.7*, %struct.list_elem.7** %next226, l691 c44, asm ln 3320
+  @dbg.value(%struct.list_elem.7* %62, !2480), asm ln 3321
   Added assignment asm ln 3321, prod ln 691.44, live ln 692, enc None
 Value produced for `arcnew` (decl src ln 477), asm ln 3355
   %add.ptr241 = getelementptr inbounds %struct.arc.0, %struct.arc.0* %71, i64 %mul240, l718 c33, asm ln 3354
+  @dbg.value(%struct.arc.0* %add.ptr241, !2438), asm ln 3355
   Added assignment asm ln 3355, prod ln 718.33, live ln 719, enc None
 Value produced for `stop` (decl src ln 477), asm ln 3360
   %add.ptr244 = getelementptr inbounds %struct.arc.0, %struct.arc.0* %add.ptr241, i64 %72, l719 c23, asm ln 3359
+  @dbg.value(%struct.arc.0* %add.ptr244, !2686), asm ln 3360
   Added assignment asm ln 3360, prod ln 719.23, live ln 720, enc None
 Value produced for `arcnew` (decl src ln 477), asm ln 3393
   %incdec.ptr = getelementptr inbounds %struct.arc.0, %struct.arc.0* %arcnew.0, i32 1, l722 c40, asm ln 3392
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(%struct.arc.0* %incdec.ptr, !2438), asm ln 3393
   Added assignment asm ln 3393, prod ln 722.40, live ln 723, enc None
 Value produced for `arcnew` (decl src ln 477), asm ln 3445
   %incdec.ptr287 = getelementptr inbounds %struct.arc.0, %struct.arc.0* %arcnew.1, i32 1, l736 c40, asm ln 3444
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(%struct.arc.0* %incdec.ptr287, !2438), asm ln 3445
   Added assignment asm ln 3445, prod ln 736.40, live ln 737, enc None
 Value produced for `resized` (decl src ln 453), asm ln 2878
   %resized.2 = phi i64 [ 1, %if.end ], [ 0, %land.lhs.true ], [ 0, %if.then ], [ 1, %if.end38 ], [ 0, %land.lhs.true25 ], [ 0, %if.else ], asm ln 2877
-  🔔 Missing produced ln, using decl ln
+  @dbg.value(i64 %resized.2, !2327), asm ln 2878
   Added assignment asm ln 2878, prod ln 453.0, live ln 530, enc None
 Value produced for `i` (decl src ln 450), asm ln 2937
   %i.0 = phi i64 [ 0, %if.end48 ], [ %inc, %for.body ], asm ln 2936
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %i.0, !2447), asm ln 2937
   Added assignment asm ln 2937, prod ln 566.55, live ln 567, enc None
 Value produced for `i` (decl src ln 450), asm ln 2962
   %i.1 = phi i64 [ 0, %for.end ], [ %inc79, %for.inc78 ], asm ln 2961
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %i.1, !2447), asm ln 2962
   Added assignment asm ln 2962, prod ln 571.59, live ln 572, enc None
 Value produced for `arcout` (decl src ln 477), asm ln 2963
   %arcout.0 = phi %struct.arc.0* [ %28, %for.end ], [ %add.ptr80, %for.inc78 ], asm ln 2960
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(%struct.arc.0* %arcout.0, !2463), asm ln 2963
   Added assignment asm ln 2963, prod ln 571.70, live ln 572, enc None
 Value produced for `i` (decl src ln 450), asm ln 2995
   %i.2 = phi i64 [ %i.1, %for.end81 ], [ %inc209, %for.inc208 ], asm ln 2994
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %i.2, !2447), asm ln 2995
   Added assignment asm ln 2995, prod ln 574.26, live ln 575, enc None
 Value produced for `arcout` (decl src ln 477), asm ln 2996
   %arcout.1 = phi %struct.arc.0* [ %arcout.0, %for.end81 ], [ %add.ptr210, %for.inc208 ], asm ln 2993
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(%struct.arc.0* %arcout.1, !2463), asm ln 2996
   Added assignment asm ln 2996, prod ln 574.37, live ln 575, enc None
 Value produced for `first_list_elem` (decl src ln 467), asm ln 2997
   %first_list_elem.0 = phi %struct.list_elem.7* [ null, %for.end81 ], [ %first_list_elem.1, %for.inc208 ], asm ln 2992
-  🔔 Missing produced ln, using decl ln
+  @dbg.value(%struct.list_elem.7* %first_list_elem.0, !2480), asm ln 2997
   Added assignment asm ln 2997, prod ln 467.0, live ln 574, enc None
 Value produced for `count` (decl src ln 463), asm ln 2998
   %count.0 = phi i64 [ 0, %for.end81 ], [ %count.8, %for.inc208 ], l548 c13, asm ln 2991
+  @dbg.value(i64 %count.0, !2332), asm ln 2998
   Added assignment asm ln 2998, prod ln 548.13, live ln 574, enc None
 Value produced for `id` (decl src ln 459), asm ln 2999
   %id.0 = phi i64 [ 0, %for.end81 ], [ %id.2, %for.inc208 ], asm ln 2990
-  🔔 Missing produced ln, using decl ln
+  @dbg.value(i64 %id.0, !2441), asm ln 2999
   Added assignment asm ln 2999, prod ln 459.0, live ln 574, enc None
 Value produced for `list_size` (decl src ln 459), asm ln 3000
   %list_size.0 = phi i64 [ -1, %for.end81 ], [ %list_size.1, %for.inc208 ], asm ln 2989
-  🔔 Missing produced ln, using decl ln
+  @dbg.value(i64 %list_size.0, !2442), asm ln 3000
   Added assignment asm ln 3000, prod ln 459.0, live ln 574, enc None
 Value produced for `local_first_replace` (decl src ln 462), asm ln 3001
   %local_first_replace.0 = phi i16 [ 1, %for.end81 ], [ %local_first_replace.6, %for.inc208 ], l546 c27, asm ln 2988
+  @dbg.value(i16 %local_first_replace.0, !2421), asm ln 3001
   Added assignment asm ln 3001, prod ln 546.27, live ln 574, enc None
 Value produced for `first_replace` (decl src ln 462), asm ln 3002
   %first_replace.0 = phi i16 [ 1, %for.end81 ], [ %first_replace.6, %for.inc208 ], l539 c17, asm ln 2987
+  @dbg.value(i16 %first_replace.0, !2331), asm ln 3002
   Added assignment asm ln 3002, prod ln 539.17, live ln 574, enc None
 Value produced for `count` (decl src ln 463), asm ln 3038
   %count.2 = phi i64 [ %count.0, %if.end88 ], [ %count.0, %if.then91 ], [ 0, %if.then93 ], l548 c13, asm ln 3037
+  @dbg.value(i64 %count.2, !2332), asm ln 3038
   Added assignment asm ln 3038, prod ln 548.13, live ln 594, enc None
 Value produced for `first_list_elem` (decl src ln 467), asm ln 3063
   %first_list_elem.1 = phi %struct.list_elem.7* [ %31, %if.then106 ], [ %first_list_elem.0, %if.end100 ], asm ln 3062
+  @dbg.value(%struct.list_elem.7* %first_list_elem.1, !2480), asm ln 3063
   Added assignment asm ln 3063, prod ln 596.27, live ln 603, enc None
 Value produced for `list_size` (decl src ln 459), asm ln 3064
   %list_size.1 = phi i64 [ %inc110, %if.then106 ], [ %list_size.0, %if.end100 ], asm ln 3061
+  @dbg.value(i64 %list_size.1, !2442), asm ln 3064
   Added assignment asm ln 3064, prod ln 600.20, live ln 603, enc None
 Value produced for `iterator` (decl src ln 469), asm ln 3108
   %iterator.0 = phi %struct.list_elem.7* [ %37, %if.end122 ], [ %42, %if.then137 ], [ %60, %if.end205 ], asm ln 3107
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(%struct.list_elem.7* %iterator.0, !2551), asm ln 3108
   Added assignment asm ln 3108, prod ln 667.37, live ln 668, enc None
 Value produced for `count` (decl src ln 463), asm ln 3109
   %count.3 = phi i64 [ %count.2, %if.end122 ], [ %count.3, %if.then137 ], [ %count.7, %if.end205 ], l548 c13, asm ln 3106
+  @dbg.value(i64 %count.3, !2332), asm ln 3109
   Added assignment asm ln 3109, prod ln 548.13, live ln 616, enc None
 Value produced for `id` (decl src ln 459), asm ln 3110
   %id.1 = phi i64 [ %id.0, %if.end122 ], [ %inc139, %if.then137 ], [ %inc207, %if.end205 ], asm ln 3105
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %id.1, !2441), asm ln 3110
   Added assignment asm ln 3110, prod ln 668.15, live ln 669, enc None
 Value produced for `local_first_replace` (decl src ln 462), asm ln 3111
   %local_first_replace.1 = phi i16 [ %local_first_replace.0, %if.end122 ], [ %local_first_replace.1, %if.then137 ], [ %local_first_replace.5, %if.end205 ], l546 c27, asm ln 3104
+  @dbg.value(i16 %local_first_replace.1, !2421), asm ln 3111
   Added assignment asm ln 3111, prod ln 546.27, live ln 616, enc None
 Value produced for `first_replace` (decl src ln 462), asm ln 3112
   %first_replace.1 = phi i16 [ %first_replace.0, %if.end122 ], [ %first_replace.1, %if.then137 ], [ %first_replace.5, %if.end205 ], l539 c17, asm ln 3103
+  @dbg.value(i16 %first_replace.1, !2331), asm ln 3112
   Added assignment asm ln 3112, prod ln 539.17, live ln 616, enc None
 Value produced for `count` (decl src ln 463), asm ln 3243
   %count.6 = phi i64 [ %count.3, %if.then152 ], [ %inc176, %if.then163 ], [ %inc193, %if.then180 ], [ %count.3, %if.else177 ], asm ln 3242
+  @dbg.value(i64 %count.6, !2332), asm ln 3243
   Added assignment asm ln 3243, prod ln 659.20, live ln 661, enc None
 Value produced for `local_first_replace` (decl src ln 462), asm ln 3244
   %local_first_replace.4 = phi i16 [ %local_first_replace.1, %if.then152 ], [ %spec.select1, %if.then163 ], [ %local_first_replace.1, %if.then180 ], [ %local_first_replace.1, %if.else177 ], asm ln 3241
+  @dbg.value(i16 %local_first_replace.4, !2421), asm ln 3244
   Added assignment asm ln 3244, prod ln 641.27, live ln 661, enc None
 Value produced for `first_replace` (decl src ln 462), asm ln 3245
   %first_replace.4 = phi i16 [ %first_replace.1, %if.then152 ], [ %spec.select, %if.then163 ], [ %first_replace.1, %if.then180 ], [ %first_replace.1, %if.else177 ], asm ln 3240
+  @dbg.value(i16 %first_replace.4, !2331), asm ln 3245
   Added assignment asm ln 3245, prod ln 641.19, live ln 661, enc None
 Value produced for `count` (decl src ln 463), asm ln 3262
   %count.7 = phi i64 [ %count.3, %if.end140 ], [ %count.6, %if.then201 ], [ %count.6, %if.end196 ], l548 c13, asm ln 3261
+  @dbg.value(i64 %count.7, !2332), asm ln 3262
   Added assignment asm ln 3262, prod ln 548.13, live ln 667, enc None
 Value produced for `local_first_replace` (decl src ln 462), asm ln 3263
   %local_first_replace.5 = phi i16 [ %local_first_replace.1, %if.end140 ], [ %local_first_replace.4, %if.then201 ], [ %local_first_replace.4, %if.end196 ], l546 c27, asm ln 3260
+  @dbg.value(i16 %local_first_replace.5, !2421), asm ln 3263
   Added assignment asm ln 3263, prod ln 546.27, live ln 667, enc None
 Value produced for `first_replace` (decl src ln 462), asm ln 3264
   %first_replace.5 = phi i16 [ %first_replace.1, %if.end140 ], [ %first_replace.4, %if.then201 ], [ %first_replace.4, %if.end196 ], l539 c17, asm ln 3259
+  @dbg.value(i16 %first_replace.5, !2331), asm ln 3264
   Added assignment asm ln 3264, prod ln 539.17, live ln 667, enc None
 Value produced for `count` (decl src ln 463), asm ln 3277
   %count.8 = phi i64 [ %count.2, %if.then120 ], [ %count.3, %while.cond ], l548 c13, asm ln 3276
+  @dbg.value(i64 %count.8, !2332), asm ln 3277
   Added assignment asm ln 3277, prod ln 548.13, live ln 574, enc None
 Value produced for `id` (decl src ln 459), asm ln 3278
   %id.2 = phi i64 [ %add121, %if.then120 ], [ %id.1, %while.cond ], asm ln 3275
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %id.2, !2441), asm ln 3278
   Added assignment asm ln 3278, prod ln 605.14, live ln 606, enc None
 Value produced for `local_first_replace` (decl src ln 462), asm ln 3279
   %local_first_replace.6 = phi i16 [ %local_first_replace.0, %if.then120 ], [ %local_first_replace.1, %while.cond ], l546 c27, asm ln 3274
+  @dbg.value(i16 %local_first_replace.6, !2421), asm ln 3279
   Added assignment asm ln 3279, prod ln 546.27, live ln 574, enc None
 Value produced for `first_replace` (decl src ln 462), asm ln 3280
   %first_replace.6 = phi i16 [ %first_replace.0, %if.then120 ], [ %first_replace.1, %while.cond ], l539 c17, asm ln 3273
+  @dbg.value(i16 %first_replace.6, !2331), asm ln 3280
   Added assignment asm ln 3280, prod ln 539.17, live ln 574, enc None
 Value produced for `first_replace` (decl src ln 462), asm ln 3295
   %first_replace.7 = phi i16 [ %first_replace.0, %for.end211 ], [ %spec.select2, %while.body216 ], asm ln 3294
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i16 %first_replace.7, !2331), asm ln 3295
   Added assignment asm ln 3295, prod ln 682.17, live ln 683, enc None
 Value produced for `first_list_elem` (decl src ln 467), asm ln 3311
   %first_list_elem.2 = phi %struct.list_elem.7* [ %62, %while.body225 ], [ %first_list_elem.0, %while.cond214 ], asm ln 3310
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(%struct.list_elem.7* %first_list_elem.2, !2480), asm ln 3311
   Added assignment asm ln 3311, prod ln 691.44, live ln 692, enc None
 Value produced for `new_list_elem` (decl src ln 468), asm ln 3318
   %first_list_elem.2 = phi %struct.list_elem.7* [ %62, %while.body225 ], [ %first_list_elem.0, %while.cond214 ], asm ln 3310
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(%struct.list_elem.7* %first_list_elem.2, !2520), asm ln 3318
   Added assignment asm ln 3318, prod ln 691.44, live ln 692, enc None
 Value produced for `arcnew` (decl src ln 477), asm ln 3366
   %arcnew.0 = phi %struct.arc.0* [ %incdec.ptr, %for.inc262 ], [ %add.ptr241, %if.then237 ], asm ln 3365
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(%struct.arc.0* %arcnew.0, !2438), asm ln 3366
   Added assignment asm ln 3366, prod ln 722.40, live ln 723, enc None
 Value produced for `arcnew` (decl src ln 477), asm ln 3398
   %arcnew.1 = phi %struct.arc.0* [ %incdec.ptr287, %for.inc286 ], [ %add.ptr241, %if.then237 ], asm ln 3397
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(%struct.arc.0* %arcnew.1, !2438), asm ln 3398
   Added assignment asm ln 3398, prod ln 736.40, live ln 737, enc None
 
 #### Summary
@@ -27567,396 +27932,414 @@ Test Execution:
 
 Load from declared address of `net` (decl src ln 787), asm ln 5036
   %105 = load %struct.network*, %struct.network** %net.addr, l869 c34, asm ln 5036
-  🔔 Live ln too early, using produced ln + 1
+  %105 = load %struct.network*, %struct.network** %net.addr, l869 c34, asm ln 5036
   Added assignment asm ln 5036, prod ln 869.34, live ln 870, enc None
 Load from declared address of `net` (decl src ln 787), asm ln 5030
   %103 = load %struct.network*, %struct.network** %net.addr, l868 c9, asm ln 5030
-  🔔 Live ln too early, using produced ln + 1
+  %103 = load %struct.network*, %struct.network** %net.addr, l868 c9, asm ln 5030
   Added assignment asm ln 5030, prod ln 868.9, live ln 869, enc None
 Load from declared address of `net` (decl src ln 787), asm ln 5024
   %100 = load %struct.network*, %struct.network** %net.addr, l867 c7, asm ln 5024
-  🔔 Live ln too early, using produced ln + 1
+  %100 = load %struct.network*, %struct.network** %net.addr, l867 c7, asm ln 5024
   Added assignment asm ln 5024, prod ln 867.7, live ln 868, enc None
 Load from declared address of `net` (decl src ln 787), asm ln 5019
   %97 = load %struct.network*, %struct.network** %net.addr, l866 c56, asm ln 5019
-  🔔 Live ln too early, using produced ln + 1
+  %97 = load %struct.network*, %struct.network** %net.addr, l866 c56, asm ln 5019
   Added assignment asm ln 5019, prod ln 866.56, live ln 867, enc None
 Load from declared address of `net` (decl src ln 787), asm ln 5018
   %96 = load %struct.network*, %struct.network** %net.addr, l866 c26, asm ln 5018
-  🔔 Live ln too early, using produced ln + 1
+  %96 = load %struct.network*, %struct.network** %net.addr, l866 c26, asm ln 5018
   Added assignment asm ln 5018, prod ln 866.26, live ln 867, enc None
 Load from declared address of `net` (decl src ln 787), asm ln 5010
   %94 = load %struct.network*, %struct.network** %net.addr, l864 c9, asm ln 5010
-  🔔 Live ln too early, using produced ln + 1
+  %94 = load %struct.network*, %struct.network** %net.addr, l864 c9, asm ln 5010
   Added assignment asm ln 5010, prod ln 864.9, live ln 865, enc None
 Load from declared address of `net` (decl src ln 787), asm ln 5007
   %93 = load %struct.network*, %struct.network** %net.addr, l863 c9, asm ln 5007
-  🔔 Live ln too early, using produced ln + 1
+  %93 = load %struct.network*, %struct.network** %net.addr, l863 c9, asm ln 5007
   Added assignment asm ln 5007, prod ln 863.9, live ln 864, enc None
 Load from declared address of `net` (decl src ln 787), asm ln 5003
   %91 = load %struct.network*, %struct.network** %net.addr, l863 c44, asm ln 5003
-  🔔 Live ln too early, using produced ln + 1
+  %91 = load %struct.network*, %struct.network** %net.addr, l863 c44, asm ln 5003
   Added assignment asm ln 5003, prod ln 863.44, live ln 864, enc None
 Load from declared address of `net` (decl src ln 787), asm ln 5000
   %89 = load %struct.network*, %struct.network** %net.addr, l863 c28, asm ln 5000
-  🔔 Live ln too early, using produced ln + 1
+  %89 = load %struct.network*, %struct.network** %net.addr, l863 c28, asm ln 5000
   Added assignment asm ln 5000, prod ln 863.28, live ln 864, enc None
 Load from declared address of `net` (decl src ln 787), asm ln 4993
   %87 = load %struct.network*, %struct.network** %net.addr, l862 c14, asm ln 4993
-  🔔 Live ln too early, using produced ln + 1
+  %87 = load %struct.network*, %struct.network** %net.addr, l862 c14, asm ln 4993
   Added assignment asm ln 4993, prod ln 862.14, live ln 863, enc None
 Load from declared address of `net` (decl src ln 787), asm ln 4984
   %86 = load %struct.network*, %struct.network** %net.addr, l861 c12, asm ln 4984
-  🔔 Live ln too early, using produced ln + 1
+  %86 = load %struct.network*, %struct.network** %net.addr, l861 c12, asm ln 4984
   Added assignment asm ln 4984, prod ln 861.12, live ln 862, enc None
 Load from declared address of `net` (decl src ln 787), asm ln 4981
   %84 = load %struct.network*, %struct.network** %net.addr, l861 c31, asm ln 4981
-  🔔 Live ln too early, using produced ln + 1
+  %84 = load %struct.network*, %struct.network** %net.addr, l861 c31, asm ln 4981
   Added assignment asm ln 4981, prod ln 861.31, live ln 862, enc None
 Load from declared address of `net` (decl src ln 787), asm ln 4975
   %83 = load %struct.network*, %struct.network** %net.addr, l859 c12, asm ln 4975
-  🔔 Live ln too early, using produced ln + 1
+  %83 = load %struct.network*, %struct.network** %net.addr, l859 c12, asm ln 4975
   Added assignment asm ln 4975, prod ln 859.12, live ln 860, enc None
 Load from declared address of `net` (decl src ln 787), asm ln 4967
   %80 = load %struct.network*, %struct.network** %net.addr, l859 c54, asm ln 4967
-  🔔 Live ln too early, using produced ln + 1
+  %80 = load %struct.network*, %struct.network** %net.addr, l859 c54, asm ln 4967
   Added assignment asm ln 4967, prod ln 859.54, live ln 860, enc None
 Load from declared address of `net` (decl src ln 787), asm ln 4964
   %78 = load %struct.network*, %struct.network** %net.addr, l859 c31, asm ln 4964
-  🔔 Live ln too early, using produced ln + 1
+  %78 = load %struct.network*, %struct.network** %net.addr, l859 c31, asm ln 4964
   Added assignment asm ln 4964, prod ln 859.31, live ln 860, enc None
 Load from declared address of `net` (decl src ln 787), asm ln 4954
   %75 = load %struct.network*, %struct.network** %net.addr, l858 c14, asm ln 4954
-  🔔 Live ln too early, using produced ln + 1
+  %75 = load %struct.network*, %struct.network** %net.addr, l858 c14, asm ln 4954
   Added assignment asm ln 4954, prod ln 858.14, live ln 859, enc None
 Load from declared address of `net` (decl src ln 787), asm ln 4951
   %74 = load %struct.network*, %struct.network** %net.addr, l857 c9, asm ln 4951
-  🔔 Live ln too early, using produced ln + 1
+  %74 = load %struct.network*, %struct.network** %net.addr, l857 c9, asm ln 4951
   Added assignment asm ln 4951, prod ln 857.9, live ln 858, enc None
 Load from declared address of `net` (decl src ln 787), asm ln 4943
   %71 = load %struct.network*, %struct.network** %net.addr, l857 c28, asm ln 4943
-  🔔 Live ln too early, using produced ln + 1
+  %71 = load %struct.network*, %struct.network** %net.addr, l857 c28, asm ln 4943
   Added assignment asm ln 4943, prod ln 857.28, live ln 858, enc None
 Load from declared address of `net` (decl src ln 787), asm ln 4940
   %70 = load %struct.network*, %struct.network** %net.addr, l856 c9, asm ln 4940
-  🔔 Live ln too early, using produced ln + 1
+  %70 = load %struct.network*, %struct.network** %net.addr, l856 c9, asm ln 4940
   Added assignment asm ln 4940, prod ln 856.9, live ln 857, enc None
 Load from declared address of `net` (decl src ln 787), asm ln 4935
   %68 = load %struct.network*, %struct.network** %net.addr, l854 c9, asm ln 4935
-  🔔 Live ln too early, using produced ln + 1
+  %68 = load %struct.network*, %struct.network** %net.addr, l854 c9, asm ln 4935
   Added assignment asm ln 4935, prod ln 854.9, live ln 855, enc None
 Load from declared address of `net` (decl src ln 787), asm ln 4929
   %65 = load %struct.network*, %struct.network** %net.addr, l853 c9, asm ln 4929
-  🔔 Live ln too early, using produced ln + 1
+  %65 = load %struct.network*, %struct.network** %net.addr, l853 c9, asm ln 4929
   Added assignment asm ln 4929, prod ln 853.9, live ln 854, enc None
 Load from declared address of `net` (decl src ln 787), asm ln 4831
   %34 = load %struct.network*, %struct.network** %net.addr, l818 c44, asm ln 4831
-  🔔 Live ln too early, using produced ln + 1
+  %34 = load %struct.network*, %struct.network** %net.addr, l818 c44, asm ln 4831
   Added assignment asm ln 4831, prod ln 818.44, live ln 819, enc None
 Load from declared address of `net` (decl src ln 787), asm ln 4828
   %32 = load %struct.network*, %struct.network** %net.addr, l818 c17, asm ln 4828
-  🔔 Live ln too early, using produced ln + 1
+  %32 = load %struct.network*, %struct.network** %net.addr, l818 c17, asm ln 4828
   Added assignment asm ln 4828, prod ln 818.17, live ln 819, enc None
 Load from declared address of `net` (decl src ln 787), asm ln 4821
   %30 = load %struct.network*, %struct.network** %net.addr, l816 c60, asm ln 4821
-  🔔 Live ln too early, using produced ln + 1
+  %30 = load %struct.network*, %struct.network** %net.addr, l816 c60, asm ln 4821
   Added assignment asm ln 4821, prod ln 816.60, live ln 817, enc None
 Load from declared address of `net` (decl src ln 787), asm ln 4811
   %27 = load %struct.network*, %struct.network** %net.addr, l816 c30, asm ln 4811
-  🔔 Live ln too early, using produced ln + 1
+  %27 = load %struct.network*, %struct.network** %net.addr, l816 c30, asm ln 4811
   Added assignment asm ln 4811, prod ln 816.30, live ln 817, enc None
 Load from declared address of `net` (decl src ln 787), asm ln 4808
   %25 = load %struct.network*, %struct.network** %net.addr, l816 c21, asm ln 4808
-  🔔 Live ln too early, using produced ln + 1
+  %25 = load %struct.network*, %struct.network** %net.addr, l816 c21, asm ln 4808
   Added assignment asm ln 4808, prod ln 816.21, live ln 817, enc None
 Load from declared address of `net` (decl src ln 787), asm ln 4803
   %23 = load %struct.network*, %struct.network** %net.addr, l815 c28, asm ln 4803
-  🔔 Live ln too early, using produced ln + 1
+  %23 = load %struct.network*, %struct.network** %net.addr, l815 c28, asm ln 4803
   Added assignment asm ln 4803, prod ln 815.28, live ln 816, enc None
 Load from declared address of `net` (decl src ln 787), asm ln 4800
   %21 = load %struct.network*, %struct.network** %net.addr, l815 c19, asm ln 4800
-  🔔 Live ln too early, using produced ln + 1
+  %21 = load %struct.network*, %struct.network** %net.addr, l815 c19, asm ln 4800
   Added assignment asm ln 4800, prod ln 815.19, live ln 816, enc None
 Load from declared address of `net` (decl src ln 787), asm ln 4793
   %19 = load %struct.network*, %struct.network** %net.addr, l810 c16, asm ln 4793
-  🔔 Live ln too early, using produced ln + 1
+  %19 = load %struct.network*, %struct.network** %net.addr, l810 c16, asm ln 4793
   Added assignment asm ln 4793, prod ln 810.16, live ln 811, enc None
 Load from declared address of `net` (decl src ln 787), asm ln 4780
   %16 = load %struct.network*, %struct.network** %net.addr, l806 c5, asm ln 4780
-  🔔 Live ln too early, using produced ln + 1
+  %16 = load %struct.network*, %struct.network** %net.addr, l806 c5, asm ln 4780
   Added assignment asm ln 4780, prod ln 806.5, live ln 807, enc None
 Load from declared address of `net` (decl src ln 787), asm ln 4777
   %15 = load %struct.network*, %struct.network** %net.addr, l805 c5, asm ln 4777
-  🔔 Live ln too early, using produced ln + 1
+  %15 = load %struct.network*, %struct.network** %net.addr, l805 c5, asm ln 4777
   Added assignment asm ln 4777, prod ln 805.5, live ln 806, enc None
 Load from declared address of `net` (decl src ln 787), asm ln 4773
   %13 = load %struct.network*, %struct.network** %net.addr, l805 c40, asm ln 4773
-  🔔 Live ln too early, using produced ln + 1
+  %13 = load %struct.network*, %struct.network** %net.addr, l805 c40, asm ln 4773
   Added assignment asm ln 4773, prod ln 805.40, live ln 806, enc None
 Load from declared address of `net` (decl src ln 787), asm ln 4770
   %11 = load %struct.network*, %struct.network** %net.addr, l805 c24, asm ln 4770
-  🔔 Live ln too early, using produced ln + 1
+  %11 = load %struct.network*, %struct.network** %net.addr, l805 c24, asm ln 4770
   Added assignment asm ln 4770, prod ln 805.24, live ln 806, enc None
 Load from declared address of `net` (decl src ln 787), asm ln 4763
   %9 = load %struct.network*, %struct.network** %net.addr, l804 c10, asm ln 4763
-  🔔 Live ln too early, using produced ln + 1
+  %9 = load %struct.network*, %struct.network** %net.addr, l804 c10, asm ln 4763
   Added assignment asm ln 4763, prod ln 804.10, live ln 805, enc None
 Load from declared address of `net` (decl src ln 787), asm ln 4757
   %8 = load %struct.network*, %struct.network** %net.addr, l803 c5, asm ln 4757
-  🔔 Live ln too early, using produced ln + 1
+  %8 = load %struct.network*, %struct.network** %net.addr, l803 c5, asm ln 4757
   Added assignment asm ln 4757, prod ln 803.5, live ln 804, enc None
 Load from declared address of `net` (decl src ln 787), asm ln 4751
   %6 = load %struct.network*, %struct.network** %net.addr, l803 c46, asm ln 4751
-  🔔 Live ln too early, using produced ln + 1
+  %6 = load %struct.network*, %struct.network** %net.addr, l803 c46, asm ln 4751
   Added assignment asm ln 4751, prod ln 803.46, live ln 804, enc None
 Load from declared address of `net` (decl src ln 787), asm ln 4748
   %4 = load %struct.network*, %struct.network** %net.addr, l803 c24, asm ln 4748
-  🔔 Live ln too early, using produced ln + 1
+  %4 = load %struct.network*, %struct.network** %net.addr, l803 c24, asm ln 4748
   Added assignment asm ln 4748, prod ln 803.24, live ln 804, enc None
 Load from declared address of `net` (decl src ln 787), asm ln 4745
   %3 = load %struct.network*, %struct.network** %net.addr, l802 c5, asm ln 4745
-  🔔 Live ln too early, using produced ln + 1
+  %3 = load %struct.network*, %struct.network** %net.addr, l802 c5, asm ln 4745
   Added assignment asm ln 4745, prod ln 802.5, live ln 803, enc None
 Load from declared address of `net` (decl src ln 787), asm ln 4739
   %1 = load %struct.network*, %struct.network** %net.addr, l802 c24, asm ln 4739
-  🔔 Live ln too early, using produced ln + 1
+  %1 = load %struct.network*, %struct.network** %net.addr, l802 c24, asm ln 4739
   Added assignment asm ln 4739, prod ln 802.24, live ln 803, enc None
 Load from declared address of `net` (decl src ln 787), asm ln 4736
   %0 = load %struct.network*, %struct.network** %net.addr, l801 c5, asm ln 4736
-  🔔 Live ln too early, using produced ln + 1
+  %0 = load %struct.network*, %struct.network** %net.addr, l801 c5, asm ln 4736
   Added assignment asm ln 4736, prod ln 801.5, live ln 802, enc None
 Store to declared address of `net` (decl src ln 787), asm ln 4725
   arg 0
+  store %struct.network* %net, %struct.network** %net.addr, asm ln 4725
   Added assignment asm ln 4725, prod ln 787.0, live ln 801, enc None
 Load from declared address of `threshold` (decl src ln 787), asm ln 4892
   %56 = load i64, i64* %threshold.addr, l833 c28, asm ln 4892
-  🔔 Live ln too early, using produced ln + 1
+  %56 = load i64, i64* %threshold.addr, l833 c28, asm ln 4892
   Added assignment asm ln 4892, prod ln 833.28, live ln 834, enc None
 Store to declared address of `threshold` (decl src ln 787), asm ln 4727
   arg 1
+  store i64 %threshold, i64* %threshold.addr, asm ln 4727
   Added assignment asm ln 4727, prod ln 787.0, live ln 801, enc None
 Load from declared address of `all` (decl src ln 787), asm ln 4788
   %18 = load i64, i64* %all.addr, l809 c9, asm ln 4788
-  🔔 Live ln too early, using produced ln + 1
+  %18 = load i64, i64* %all.addr, l809 c9, asm ln 4788
   Added assignment asm ln 4788, prod ln 809.9, live ln 810, enc None
 Store to declared address of `all` (decl src ln 787), asm ln 4729
   arg 2
+  store i64 %all, i64* %all.addr, asm ln 4729
   Added assignment asm ln 4729, prod ln 787.0, live ln 801, enc None
 Load from declared address of `susp` (decl src ln 795), asm ln 5041
   %106 = load i64, i64* %susp, l872 c12, asm ln 5041
-  🔔 Live ln too early, using produced ln + 1
+  %106 = load i64, i64* %susp, l872 c12, asm ln 5041
   Added assignment asm ln 5041, prod ln 872.12, live ln 873, enc None
 Load from declared address of `susp` (decl src ln 795), asm ln 5029
   %102 = load i64, i64* %susp, l868 c27, asm ln 5029
-  🔔 Live ln too early, using produced ln + 1
+  %102 = load i64, i64* %susp, l868 c27, asm ln 5029
   Added assignment asm ln 5029, prod ln 868.27, live ln 869, enc None
 Load from declared address of `susp` (decl src ln 795), asm ln 5023
   %99 = load i64, i64* %susp, l867 c17, asm ln 5023
-  🔔 Live ln too early, using produced ln + 1
+  %99 = load i64, i64* %susp, l867 c17, asm ln 5023
   Added assignment asm ln 5023, prod ln 867.17, live ln 868, enc None
 Load from declared address of `susp` (decl src ln 795), asm ln 4970
   %82 = load i64, i64* %susp, l859 c63, asm ln 4970
-  🔔 Live ln too early, using produced ln + 1
+  %82 = load i64, i64* %susp, l859 c63, asm ln 4970
   Added assignment asm ln 4970, prod ln 859.63, live ln 860, enc None
 Load from declared address of `susp` (decl src ln 795), asm ln 4957
   %77 = load i64, i64* %susp, l858 c23, asm ln 4957
-  🔔 Live ln too early, using produced ln + 1
+  %77 = load i64, i64* %susp, l858 c23, asm ln 4957
   Added assignment asm ln 4957, prod ln 858.23, live ln 859, enc None
 Load from declared address of `susp` (decl src ln 795), asm ln 4946
   %73 = load i64, i64* %susp, l857 c37, asm ln 4946
-  🔔 Live ln too early, using produced ln + 1
+  %73 = load i64, i64* %susp, l857 c37, asm ln 4946
   Added assignment asm ln 4946, prod ln 857.37, live ln 858, enc None
 Load from declared address of `susp` (decl src ln 795), asm ln 4934
   %67 = load i64, i64* %susp, l854 c36, asm ln 4934
-  🔔 Live ln too early, using produced ln + 1
+  %67 = load i64, i64* %susp, l854 c36, asm ln 4934
   Added assignment asm ln 4934, prod ln 854.36, live ln 855, enc None
 Load from declared address of `susp` (decl src ln 795), asm ln 4928
   %64 = load i64, i64* %susp, l853 c24, asm ln 4928
-  🔔 Live ln too early, using produced ln + 1
+  %64 = load i64, i64* %susp, l853 c24, asm ln 4928
   Added assignment asm ln 4928, prod ln 853.24, live ln 854, enc None
 Load from declared address of `susp` (decl src ln 795), asm ln 4923
   %63 = load i64, i64* %susp, l851 c9, asm ln 4923
-  🔔 Live ln too early, using produced ln + 1
+  %63 = load i64, i64* %susp, l851 c9, asm ln 4923
   Added assignment asm ln 4923, prod ln 851.9, live ln 852, enc None
 Store to declared address of `susp` (decl src ln 795), asm ln 4899
   %inc = add nsw i64 %57, 1, l834 c21, asm ln 4898
+  store i64 %inc, i64* %susp, l834 c21, asm ln 4899
   Added assignment asm ln 4899, prod ln 834.21, live ln 835, enc None
 Load from declared address of `susp` (decl src ln 795), asm ln 4897
   %57 = load i64, i64* %susp, l834 c21, asm ln 4897
-  🔔 Live ln too early, using produced ln + 1
+  %57 = load i64, i64* %susp, l834 c21, asm ln 4897
   Added assignment asm ln 4897, prod ln 834.21, live ln 835, enc None
 Store to declared address of `susp` (decl src ln 795), asm ln 4816
   const i64 0
-  🔔 Live ln too early, using produced ln + 1
+  store i64 0, i64* %susp, l816 c48, asm ln 4816
   Added assignment asm ln 4816, prod ln 816.48, live ln 817, enc None
 Store to declared address of `susp` (decl src ln 795), asm ln 4796
   %20 = load i64, i64* %m_impl, l810 c21, asm ln 4795
+  store i64 %20, i64* %susp, l810 c14, asm ln 4796
   Added assignment asm ln 4796, prod ln 810.21, live ln 811, enc None
 Load from declared address of `red_cost` (decl src ln 797), asm ln 4891
   %55 = load i64, i64* %red_cost, l833 c17, asm ln 4891
-  🔔 Live ln too early, using produced ln + 1
+  %55 = load i64, i64* %red_cost, l833 c17, asm ln 4891
   Added assignment asm ln 4891, prod ln 833.17, live ln 834, enc None
 Store to declared address of `red_cost` (decl src ln 797), asm ln 4863
   const i64 -2
+  store i64 -2, i64* %red_cost, l824 c26, asm ln 4863
   Added assignment asm ln 4863, prod ln 824.26, live ln 826, enc None
 Store to declared address of `red_cost` (decl src ln 797), asm ln 4859
   %add24 = add nsw i64 %sub22, %45, l821 c25, asm ln 4858
-  🔔 Live ln too early, using produced ln + 1
+  store i64 %add24, i64* %red_cost, l820 c26, asm ln 4859
   Added assignment asm ln 4859, prod ln 821.26, live ln 822, enc None
 Load from declared address of `arc` (decl src ln 798), asm ln 4908
   %60 = load %struct.arc*, %struct.arc** %arc, l839 c15, asm ln 4908
-  🔔 Live ln too early, using produced ln + 1
+  %60 = load %struct.arc*, %struct.arc** %arc, l839 c15, asm ln 4908
   Added assignment asm ln 4908, prod ln 839.15, live ln 840, enc None
 Load from declared address of `arc` (decl src ln 798), asm ln 4900
   %58 = load %struct.arc*, %struct.arc** %arc, l835 c17, asm ln 4900
-  🔔 Live ln too early, using produced ln + 1
+  %58 = load %struct.arc*, %struct.arc** %arc, l835 c17, asm ln 4900
   Added assignment asm ln 4900, prod ln 835.17, live ln 836, enc None
 Load from declared address of `arc` (decl src ln 798), asm ln 4883
   %53 = load %struct.arc*, %struct.arc** %arc, l829 c23, asm ln 4883
-  🔔 Live ln too early, using produced ln + 1
+  %53 = load %struct.arc*, %struct.arc** %arc, l829 c23, asm ln 4883
   Added assignment asm ln 4883, prod ln 829.23, live ln 830, enc None
 Load from declared address of `arc` (decl src ln 798), asm ln 4882
   %52 = load %struct.arc*, %struct.arc** %arc, l829 c46, asm ln 4882
-  🔔 Live ln too early, using produced ln + 1
+  %52 = load %struct.arc*, %struct.arc** %arc, l829 c46, asm ln 4882
   Added assignment asm ln 4882, prod ln 829.46, live ln 830, enc None
 Load from declared address of `arc` (decl src ln 798), asm ln 4877
   %51 = load %struct.arc*, %struct.arc** %arc, l828 c51, asm ln 4877
-  🔔 Live ln too early, using produced ln + 1
+  %51 = load %struct.arc*, %struct.arc** %arc, l828 c51, asm ln 4877
   Added assignment asm ln 4877, prod ln 828.51, live ln 829, enc None
 Load from declared address of `arc` (decl src ln 798), asm ln 4872
   %48 = load %struct.arc*, %struct.arc** %arc, l828 c27, asm ln 4872
-  🔔 Live ln too early, using produced ln + 1
+  %48 = load %struct.arc*, %struct.arc** %arc, l828 c27, asm ln 4872
   Added assignment asm ln 4872, prod ln 828.27, live ln 829, enc None
 Load from declared address of `arc` (decl src ln 798), asm ln 4864
   %46 = load %struct.arc*, %struct.arc** %arc, l826 c21, asm ln 4864
-  🔔 Live ln too early, using produced ln + 1
+  %46 = load %struct.arc*, %struct.arc** %arc, l826 c21, asm ln 4864
   Added assignment asm ln 4864, prod ln 826.21, live ln 827, enc None
 Load from declared address of `arc` (decl src ln 798), asm ln 4853
   %43 = load %struct.arc*, %struct.arc** %arc, l821 c27, asm ln 4853
-  🔔 Live ln too early, using produced ln + 1
+  %43 = load %struct.arc*, %struct.arc** %arc, l821 c27, asm ln 4853
   Added assignment asm ln 4853, prod ln 821.27, live ln 822, enc None
 Load from declared address of `arc` (decl src ln 798), asm ln 4847
   %40 = load %struct.arc*, %struct.arc** %arc, l820 c40, asm ln 4847
-  🔔 Live ln too early, using produced ln + 1
+  %40 = load %struct.arc*, %struct.arc** %arc, l820 c40, asm ln 4847
   Added assignment asm ln 4847, prod ln 820.40, live ln 821, enc None
 Load from declared address of `arc` (decl src ln 798), asm ln 4844
   %38 = load %struct.arc*, %struct.arc** %arc, l820 c28, asm ln 4844
-  🔔 Live ln too early, using produced ln + 1
+  %38 = load %struct.arc*, %struct.arc** %arc, l820 c28, asm ln 4844
   Added assignment asm ln 4844, prod ln 820.28, live ln 821, enc None
 Load from declared address of `arc` (decl src ln 798), asm ln 4836
   %36 = load %struct.arc*, %struct.arc** %arc, l819 c17, asm ln 4836
-  🔔 Live ln too early, using produced ln + 1
+  %36 = load %struct.arc*, %struct.arc** %arc, l819 c17, asm ln 4836
   Added assignment asm ln 4836, prod ln 819.17, live ln 820, enc None
 Store to declared address of `arc` (decl src ln 798), asm ln 4835
   %add.ptr = getelementptr inbounds %struct.arc, %struct.arc* %33, i64 %call, l818 c27, asm ln 4834
+  store %struct.arc* %add.ptr, %struct.arc** %arc, l818 c15, asm ln 4835
   Added assignment asm ln 4835, prod ln 818.27, live ln 819, enc None
 Store to declared address of `stop` (decl src ln 799), asm ln 4919
   %inc47 = add nsw i64 %62, 1, l816 c73, asm ln 4918
-  🔔 Live ln too early, using produced ln + 1
+  store i64 %inc47, i64* %stop, l816 c73, asm ln 4919
   Added assignment asm ln 4919, prod ln 816.73, live ln 817, enc None
 Load from declared address of `stop` (decl src ln 799), asm ln 4917
   %62 = load i64, i64* %stop, l816 c73, asm ln 4917
-  🔔 Live ln too early, using produced ln + 1
+  %62 = load i64, i64* %stop, l816 c73, asm ln 4917
   Added assignment asm ln 4917, prod ln 816.73, live ln 817, enc None
 Load from declared address of `stop` (decl src ln 799), asm ln 4832
   %35 = load i64, i64* %stop, l818 c49, asm ln 4832
-  🔔 Live ln too early, using produced ln + 1
+  %35 = load i64, i64* %stop, l818 c49, asm ln 4832
   Added assignment asm ln 4832, prod ln 818.49, live ln 819, enc None
 Load from declared address of `stop` (decl src ln 799), asm ln 4820
   %29 = load i64, i64* %stop, l816 c53, asm ln 4820
-  🔔 Live ln too early, using produced ln + 1
+  %29 = load i64, i64* %stop, l816 c53, asm ln 4820
   Added assignment asm ln 4820, prod ln 816.53, live ln 817, enc None
 Store to declared address of `stop` (decl src ln 799), asm ln 4815
   %sub16 = sub nsw i64 %26, %28, l816 c28, asm ln 4814
-  🔔 Live ln too early, using produced ln + 1
+  store i64 %sub16, i64* %stop, l816 c19, asm ln 4815
   Added assignment asm ln 4815, prod ln 816.28, live ln 817, enc None
 Store to declared address of `startid` (decl src ln 799), asm ln 4913
   %inc45 = add nsw i64 %61, 1, l840 c24, asm ln 4912
-  🔔 Missing live ln, using produced ln + 1
+  store i64 %inc45, i64* %startid, l840 c24, asm ln 4913
   Added assignment asm ln 4913, prod ln 840.24, live ln 841, enc None
 Load from declared address of `startid` (decl src ln 799), asm ln 4911
   %61 = load i64, i64* %startid, l840 c24, asm ln 4911
-  🔔 Live ln too early, using produced ln + 1
+  %61 = load i64, i64* %startid, l840 c24, asm ln 4911
   Added assignment asm ln 4911, prod ln 840.24, live ln 841, enc None
 Load from declared address of `startid` (decl src ln 799), asm ln 4906
   %59 = load i64, i64* %startid, l839 c25, asm ln 4906
-  🔔 Live ln too early, using produced ln + 1
+  %59 = load i64, i64* %startid, l839 c25, asm ln 4906
   Added assignment asm ln 4906, prod ln 839.25, live ln 840, enc None
 Store to declared address of `startid` (decl src ln 799), asm ln 4807
   %sub13 = sub nsw i64 %22, %24, l815 c26, asm ln 4806
+  store i64 %sub13, i64* %startid, l815 c17, asm ln 4807
   Added assignment asm ln 4807, prod ln 815.26, live ln 816, enc None
 
 #### After variables
 
 Value produced for `net` (decl src ln 787), asm ln 3494
   arg 0
+  @dbg.value(%struct.network.2* %net, !2787), asm ln 3494
   Added assignment asm ln 3494, prod ln 787.0, live ln 801, enc None
 Value produced for `threshold` (decl src ln 787), asm ln 3495
   arg 1
+  @dbg.value(i64 %threshold, !2789), asm ln 3495
   Added assignment asm ln 3495, prod ln 787.0, live ln 801, enc None
 Value produced for `all` (decl src ln 787), asm ln 3496
   arg 2
+  @dbg.value(i64 %all, !2790), asm ln 3496
   Added assignment asm ln 3496, prod ln 787.0, live ln 801, enc None
 Value produced for `susp` (decl src ln 795), asm ln 3544
   %7 = load i64, i64* %m_impl, l810 c21, asm ln 3543
+  @dbg.value(i64 %7, !2824), asm ln 3544
   Added assignment asm ln 3544, prod ln 810.21, live ln 811, enc None
 Value produced for `startid` (decl src ln 799), asm ln 3553
   %sub13 = sub nsw i64 %8, %9, l815 c26, asm ln 3552
+  @dbg.value(i64 %sub13, !2830), asm ln 3553
   Added assignment asm ln 3553, prod ln 815.26, live ln 816, enc None
 Value produced for `stop` (decl src ln 799), asm ln 3559
   %sub16 = sub nsw i64 %10, %11, l816 c28, asm ln 3558
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %sub16, !2835), asm ln 3559
   Added assignment asm ln 3559, prod ln 816.28, live ln 817, enc None
 Value produced for `susp` (decl src ln 795), asm ln 3560
   const i64 0
-  🔔 Missing produced ln, using decl ln
+  @dbg.value(i64 0, !2824), asm ln 3560
   Added assignment asm ln 3560, prod ln 795.0, live ln 816, enc None
 Value produced for `arc` (decl src ln 798), asm ln 3580
   %add.ptr = getelementptr inbounds %struct.arc.0, %struct.arc.0* %13, i64 %call, l818 c27, asm ln 3579
+  @dbg.value(%struct.arc.0* %add.ptr, !2847), asm ln 3580
   Added assignment asm ln 3580, prod ln 818.27, live ln 819, enc None
 Value produced for `red_cost` (decl src ln 797), asm ln 3600
   %add24 = add nsw i64 %sub22, %19, l821 c25, asm ln 3599
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %add24, !2860), asm ln 3600
   Added assignment asm ln 3600, prod ln 821.25, live ln 822, enc None
 Value produced for `red_cost` (decl src ln 797), asm ln 3604
   const i64 -2
-  🔔 Missing produced ln, using decl ln
+  @dbg.value(i64 -2, !2860), asm ln 3604
   Added assignment asm ln 3604, prod ln 797.0, live ln 826, enc None
 Value produced for `susp` (decl src ln 795), asm ln 3634
   %inc = add nsw i64 %susp.0, 1, l834 c21, asm ln 3633
+  @dbg.value(i64 %inc, !2824), asm ln 3634
   Added assignment asm ln 3634, prod ln 834.21, live ln 835, enc None
 Value produced for `startid` (decl src ln 799), asm ln 3644
   %inc45 = add nsw i64 %startid.0, 1, l840 c24, asm ln 3643
-  🔔 Missing live ln, using produced ln + 1
+  @dbg.value(i64 %inc45, !2830), asm ln 3644
   Added assignment asm ln 3644, prod ln 840.24, live ln 841, enc None
 Value produced for `stop` (decl src ln 799), asm ln 3653
   %inc47 = add nsw i64 %stop.0, 1, l816 c73, asm ln 3652
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %inc47, !2835), asm ln 3653
   Added assignment asm ln 3653, prod ln 816.73, live ln 817, enc None
 Value produced for `startid` (decl src ln 799), asm ln 3567
   %startid.0 = phi i64 [ %sub13, %if.else ], [ %startid.1, %for.inc ], l815 c17, asm ln 3566
+  @dbg.value(i64 %startid.0, !2830), asm ln 3567
   Added assignment asm ln 3567, prod ln 815.26, live ln 816, enc None
 Value produced for `stop` (decl src ln 799), asm ln 3568
   %stop.0 = phi i64 [ %sub16, %if.else ], [ %inc47, %for.inc ], asm ln 3565
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %stop.0, !2835), asm ln 3568
   Added assignment asm ln 3568, prod ln 816.73, live ln 817, enc None
 Value produced for `susp` (decl src ln 795), asm ln 3569
   %susp.0 = phi i64 [ 0, %if.else ], [ %susp.1, %for.inc ], asm ln 3564
-  🔔 Missing produced ln, using decl ln
+  @dbg.value(i64 %susp.0, !2824), asm ln 3569
   Added assignment asm ln 3569, prod ln 795.0, live ln 816, enc None
 Value produced for `red_cost` (decl src ln 797), asm ln 3628
   %red_cost.0 = phi i64 [ %add24, %if.then21 ], [ -2, %if.then30 ], [ -2, %if.then34 ], [ -2, %if.else25 ], asm ln 3627
+  @dbg.value(i64 %red_cost.0, !2860), asm ln 3628
   Added assignment asm ln 3628, prod ln 821.25, live ln 833, enc None
 Value produced for `startid` (decl src ln 799), asm ln 3650
   %startid.1 = phi i64 [ %startid.0, %if.then41 ], [ %inc45, %if.else42 ], asm ln 3649
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %startid.1, !2830), asm ln 3650
   Added assignment asm ln 3650, prod ln 840.24, live ln 841, enc None
 Value produced for `susp` (decl src ln 795), asm ln 3651
   %susp.1 = phi i64 [ %inc, %if.then41 ], [ %susp.0, %if.else42 ], asm ln 3648
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %susp.1, !2824), asm ln 3651
   Added assignment asm ln 3651, prod ln 834.21, live ln 835, enc None
 Value produced for `susp` (decl src ln 795), asm ln 3658
   %susp.2 = phi i64 [ %7, %if.then ], [ %susp.0, %for.cond ], asm ln 3657
+  @dbg.value(i64 %susp.2, !2824), asm ln 3658
   Added assignment asm ln 3658, prod ln 810.21, live ln 851, enc None
 
 #### Summary
@@ -29677,369 +30060,382 @@ Test Execution:
 
 Load from declared address of `net` (decl src ln 30), asm ln 5276
   %73 = load %struct.network*, %struct.network** %net.addr, l87 c10, asm ln 5276
-  🔔 Live ln too early, using produced ln + 1
+  %73 = load %struct.network*, %struct.network** %net.addr, l87 c10, asm ln 5276
   Added assignment asm ln 5276, prod ln 87.10, live ln 88, enc None
 Load from declared address of `net` (decl src ln 30), asm ln 5152
   %29 = load %struct.network*, %struct.network** %net.addr, l63 c22, asm ln 5152
-  🔔 Live ln too early, using produced ln + 1
+  %29 = load %struct.network*, %struct.network** %net.addr, l63 c22, asm ln 5152
   Added assignment asm ln 5152, prod ln 63.22, live ln 64, enc None
 Load from declared address of `net` (decl src ln 30), asm ln 5142
   %26 = load %struct.network*, %struct.network** %net.addr, l59 c11, asm ln 5142
-  🔔 Live ln too early, using produced ln + 1
+  %26 = load %struct.network*, %struct.network** %net.addr, l59 c11, asm ln 5142
   Added assignment asm ln 5142, prod ln 59.11, live ln 60, enc None
 Load from declared address of `net` (decl src ln 30), asm ln 5109
   %18 = load %struct.network*, %struct.network** %net.addr, l55 c21, asm ln 5109
-  🔔 Live ln too early, using produced ln + 1
+  %18 = load %struct.network*, %struct.network** %net.addr, l55 c21, asm ln 5109
   Added assignment asm ln 5109, prod ln 55.21, live ln 56, enc None
 Load from declared address of `net` (decl src ln 30), asm ln 5099
   %15 = load %struct.network*, %struct.network** %net.addr, l51 c11, asm ln 5099
-  🔔 Live ln too early, using produced ln + 1
+  %15 = load %struct.network*, %struct.network** %net.addr, l51 c11, asm ln 5099
   Added assignment asm ln 5099, prod ln 51.11, live ln 52, enc None
 Load from declared address of `net` (decl src ln 30), asm ln 5083
   %9 = load %struct.network*, %struct.network** %net.addr, l46 c20, asm ln 5083
-  🔔 Live ln too early, using produced ln + 1
+  %9 = load %struct.network*, %struct.network** %net.addr, l46 c20, asm ln 5083
   Added assignment asm ln 5083, prod ln 46.20, live ln 47, enc None
 Load from declared address of `net` (decl src ln 30), asm ln 5059
   %0 = load %struct.network*, %struct.network** %net.addr, l40 c19, asm ln 5059
-  🔔 Live ln too early, using produced ln + 1
+  %0 = load %struct.network*, %struct.network** %net.addr, l40 c19, asm ln 5059
   Added assignment asm ln 5059, prod ln 40.19, live ln 41, enc None
 Store to declared address of `net` (decl src ln 30), asm ln 5053
   arg 0
+  store %struct.network* %net, %struct.network** %net.addr, asm ln 5053
   Added assignment asm ln 5053, prod ln 30.0, live ln 40, enc None
 Load from declared address of `node` (decl src ln 36), asm ln 5275
   %72 = load %struct.node*, %struct.node** %node, l87 c5, asm ln 5275
-  🔔 Live ln too early, using produced ln + 1
+  %72 = load %struct.node*, %struct.node** %node, l87 c5, asm ln 5275
   Added assignment asm ln 5275, prod ln 87.5, live ln 88, enc None
 Store to declared address of `node` (decl src ln 36), asm ln 5271
   %incdec.ptr64 = getelementptr inbounds %struct.node, %struct.node* %70, i32 -1, l85 c9, asm ln 5270
+  store %struct.node* %incdec.ptr64, %struct.node** %node, l85 c9, asm ln 5271
   Added assignment asm ln 5271, prod ln 85.9, live ln 86, enc None
 Load from declared address of `node` (decl src ln 36), asm ln 5269
   %70 = load %struct.node*, %struct.node** %node, l85 c9, asm ln 5269
-  🔔 Live ln too early, using produced ln + 1
+  %70 = load %struct.node*, %struct.node** %node, l85 c9, asm ln 5269
   Added assignment asm ln 5269, prod ln 85.9, live ln 86, enc None
 Load from declared address of `node` (decl src ln 36), asm ln 5257
   %67 = load %struct.node*, %struct.node** %node, l81 c9, asm ln 5257
-  🔔 Live ln too early, using produced ln + 1
+  %67 = load %struct.node*, %struct.node** %node, l81 c9, asm ln 5257
   Added assignment asm ln 5257, prod ln 81.9, live ln 82, enc None
 Load from declared address of `node` (decl src ln 36), asm ln 5234
   %58 = load %struct.node*, %struct.node** %node, l78 c24, asm ln 5234
-  🔔 Live ln too early, using produced ln + 1
+  %58 = load %struct.node*, %struct.node** %node, l78 c24, asm ln 5234
   Added assignment asm ln 5234, prod ln 78.24, live ln 79, enc None
 Load from declared address of `node` (decl src ln 36), asm ln 5228
   %56 = load %struct.node*, %struct.node** %node, l77 c9, asm ln 5228
-  🔔 Live ln too early, using produced ln + 1
+  %56 = load %struct.node*, %struct.node** %node, l77 c9, asm ln 5228
   Added assignment asm ln 5228, prod ln 77.9, live ln 78, enc None
 Load from declared address of `node` (decl src ln 36), asm ln 5222
   %54 = load %struct.node*, %struct.node** %node, l76 c9, asm ln 5222
-  🔔 Live ln too early, using produced ln + 1
+  %54 = load %struct.node*, %struct.node** %node, l76 c9, asm ln 5222
   Added assignment asm ln 5222, prod ln 76.9, live ln 77, enc None
 Load from declared address of `node` (decl src ln 36), asm ln 5204
   %48 = load %struct.node*, %struct.node** %node, l71 c9, asm ln 5204
-  🔔 Live ln too early, using produced ln + 1
+  %48 = load %struct.node*, %struct.node** %node, l71 c9, asm ln 5204
   Added assignment asm ln 5204, prod ln 71.9, live ln 72, enc None
 Load from declared address of `node` (decl src ln 36), asm ln 5198
   %46 = load %struct.node*, %struct.node** %node, l70 c9, asm ln 5198
-  🔔 Live ln too early, using produced ln + 1
+  %46 = load %struct.node*, %struct.node** %node, l70 c9, asm ln 5198
   Added assignment asm ln 5198, prod ln 70.9, live ln 71, enc None
 Load from declared address of `node` (decl src ln 36), asm ln 5193
   %44 = load %struct.node*, %struct.node** %node, l70 c33, asm ln 5193
-  🔔 Live ln too early, using produced ln + 1
+  %44 = load %struct.node*, %struct.node** %node, l70 c33, asm ln 5193
   Added assignment asm ln 5193, prod ln 70.33, live ln 71, enc None
 Load from declared address of `node` (decl src ln 36), asm ln 5187
   %42 = load %struct.node*, %struct.node** %node, l69 c9, asm ln 5187
-  🔔 Live ln too early, using produced ln + 1
+  %42 = load %struct.node*, %struct.node** %node, l69 c9, asm ln 5187
   Added assignment asm ln 5187, prod ln 69.9, live ln 70, enc None
 Load from declared address of `node` (decl src ln 36), asm ln 5182
   %40 = load %struct.node*, %struct.node** %node, l69 c28, asm ln 5182
-  🔔 Live ln too early, using produced ln + 1
+  %40 = load %struct.node*, %struct.node** %node, l69 c28, asm ln 5182
   Added assignment asm ln 5182, prod ln 69.28, live ln 70, enc None
 Load from declared address of `node` (decl src ln 36), asm ln 5176
   %38 = load %struct.node*, %struct.node** %node, l68 c9, asm ln 5176
-  🔔 Live ln too early, using produced ln + 1
+  %38 = load %struct.node*, %struct.node** %node, l68 c9, asm ln 5176
   Added assignment asm ln 5176, prod ln 68.9, live ln 69, enc None
 Load from declared address of `node` (decl src ln 36), asm ln 5170
   %36 = load %struct.node*, %struct.node** %node, l67 c9, asm ln 5170
-  🔔 Live ln too early, using produced ln + 1
+  %36 = load %struct.node*, %struct.node** %node, l67 c9, asm ln 5170
   Added assignment asm ln 5170, prod ln 67.9, live ln 68, enc None
 Load from declared address of `node` (decl src ln 36), asm ln 5163
   %33 = load %struct.node*, %struct.node** %node, l66 c9, asm ln 5163
-  🔔 Live ln too early, using produced ln + 1
+  %33 = load %struct.node*, %struct.node** %node, l66 c9, asm ln 5163
   Added assignment asm ln 5163, prod ln 66.9, live ln 67, enc None
 Load from declared address of `node` (decl src ln 36), asm ln 5073
   %5 = load %struct.node*, %struct.node** %node, l43 c19, asm ln 5073
-  🔔 Live ln too early, using produced ln + 1
+  %5 = load %struct.node*, %struct.node** %node, l43 c19, asm ln 5073
   Added assignment asm ln 5073, prod ln 43.19, live ln 44, enc None
 Store to declared address of `node` (decl src ln 36), asm ln 5066
   %incdec.ptr = getelementptr inbounds %struct.node, %struct.node* %2, i32 1, l40 c35, asm ln 5065
+  store %struct.node* %incdec.ptr, %struct.node** %node, l40 c35, asm ln 5066
   Added assignment asm ln 5066, prod ln 40.35, live ln 41, enc None
 Load from declared address of `node` (decl src ln 36), asm ln 5064
   %2 = load %struct.node*, %struct.node** %node, l40 c35, asm ln 5064
-  🔔 Live ln too early, using produced ln + 1
+  %2 = load %struct.node*, %struct.node** %node, l40 c35, asm ln 5064
   Added assignment asm ln 5064, prod ln 40.35, live ln 41, enc None
 Store to declared address of `node` (decl src ln 36), asm ln 5062
   %1 = load %struct.node*, %struct.node** %nodes, l40 c24, asm ln 5061
-  🔔 Live ln too early, using produced ln + 1
+  store %struct.node* %1, %struct.node** %node, l40 c17, asm ln 5062
   Added assignment asm ln 5062, prod ln 40.24, live ln 41, enc None
 Load from declared address of `root` (decl src ln 36), asm ln 5282
   %75 = load %struct.node*, %struct.node** %root, l88 c5, asm ln 5282
-  🔔 Live ln too early, using produced ln + 1
+  %75 = load %struct.node*, %struct.node** %root, l88 c5, asm ln 5282
   Added assignment asm ln 5282, prod ln 88.5, live ln 89, enc None
 Store to declared address of `root` (decl src ln 36), asm ln 5274
   %incdec.ptr65 = getelementptr inbounds %struct.node, %struct.node* %71, i32 1, l86 c9, asm ln 5273
+  store %struct.node* %incdec.ptr65, %struct.node** %root, l86 c9, asm ln 5274
   Added assignment asm ln 5274, prod ln 86.9, live ln 87, enc None
 Load from declared address of `root` (decl src ln 36), asm ln 5272
   %71 = load %struct.node*, %struct.node** %root, l86 c9, asm ln 5272
-  🔔 Live ln too early, using produced ln + 1
+  %71 = load %struct.node*, %struct.node** %root, l86 c9, asm ln 5272
   Added assignment asm ln 5272, prod ln 86.9, live ln 87, enc None
 Load from declared address of `root` (decl src ln 36), asm ln 5244
   %62 = load %struct.node*, %struct.node** %root, l79 c23, asm ln 5244
-  🔔 Live ln too early, using produced ln + 1
+  %62 = load %struct.node*, %struct.node** %root, l79 c23, asm ln 5244
   Added assignment asm ln 5244, prod ln 79.23, live ln 80, enc None
 Load from declared address of `root` (decl src ln 36), asm ln 5169
   %35 = load %struct.node*, %struct.node** %root, l67 c24, asm ln 5169
-  🔔 Live ln too early, using produced ln + 1
+  %35 = load %struct.node*, %struct.node** %root, l67 c24, asm ln 5169
   Added assignment asm ln 5169, prod ln 67.24, live ln 68, enc None
 Load from declared address of `root` (decl src ln 36), asm ln 5096
   %14 = load %struct.node*, %struct.node** %root, l49 c5, asm ln 5096
-  🔔 Live ln too early, using produced ln + 1
+  %14 = load %struct.node*, %struct.node** %root, l49 c5, asm ln 5096
   Added assignment asm ln 5096, prod ln 49.5, live ln 50, enc None
 Load from declared address of `root` (decl src ln 36), asm ln 5093
   %13 = load %struct.node*, %struct.node** %root, l48 c5, asm ln 5093
-  🔔 Live ln too early, using produced ln + 1
+  %13 = load %struct.node*, %struct.node** %root, l48 c5, asm ln 5093
   Added assignment asm ln 5093, prod ln 48.5, live ln 49, enc None
 Load from declared address of `root` (decl src ln 36), asm ln 5090
   %12 = load %struct.node*, %struct.node** %root, l47 c5, asm ln 5090
-  🔔 Live ln too early, using produced ln + 1
+  %12 = load %struct.node*, %struct.node** %root, l47 c5, asm ln 5090
   Added assignment asm ln 5090, prod ln 47.5, live ln 48, enc None
 Load from declared address of `root` (decl src ln 36), asm ln 5087
   %11 = load %struct.node*, %struct.node** %root, l46 c5, asm ln 5087
-  🔔 Live ln too early, using produced ln + 1
+  %11 = load %struct.node*, %struct.node** %root, l46 c5, asm ln 5087
   Added assignment asm ln 5087, prod ln 46.5, live ln 47, enc None
 Load from declared address of `root` (decl src ln 36), asm ln 5080
   %8 = load %struct.node*, %struct.node** %root, l45 c5, asm ln 5080
-  🔔 Live ln too early, using produced ln + 1
+  %8 = load %struct.node*, %struct.node** %root, l45 c5, asm ln 5080
   Added assignment asm ln 5080, prod ln 45.5, live ln 46, enc None
 Load from declared address of `root` (decl src ln 36), asm ln 5077
   %7 = load %struct.node*, %struct.node** %root, l44 c5, asm ln 5077
-  🔔 Live ln too early, using produced ln + 1
+  %7 = load %struct.node*, %struct.node** %root, l44 c5, asm ln 5077
   Added assignment asm ln 5077, prod ln 44.5, live ln 45, enc None
 Load from declared address of `root` (decl src ln 36), asm ln 5074
   %6 = load %struct.node*, %struct.node** %root, l43 c5, asm ln 5074
-  🔔 Live ln too early, using produced ln + 1
+  %6 = load %struct.node*, %struct.node** %root, l43 c5, asm ln 5074
   Added assignment asm ln 5074, prod ln 43.5, live ln 44, enc None
 Load from declared address of `root` (decl src ln 36), asm ln 5070
   %4 = load %struct.node*, %struct.node** %root, l42 c5, asm ln 5070
-  🔔 Live ln too early, using produced ln + 1
+  %4 = load %struct.node*, %struct.node** %root, l42 c5, asm ln 5070
   Added assignment asm ln 5070, prod ln 42.5, live ln 43, enc None
 Load from declared address of `root` (decl src ln 36), asm ln 5067
   %3 = load %struct.node*, %struct.node** %root, l41 c5, asm ln 5067
-  🔔 Live ln too early, using produced ln + 1
+  %3 = load %struct.node*, %struct.node** %root, l41 c5, asm ln 5067
   Added assignment asm ln 5067, prod ln 41.5, live ln 42, enc None
 Store to declared address of `root` (decl src ln 36), asm ln 5063
   %1 = load %struct.node*, %struct.node** %nodes, l40 c24, asm ln 5061
-  🔔 Live ln too early, using produced ln + 1
+  store %struct.node* %1, %struct.node** %root, l40 c10, asm ln 5063
   Added assignment asm ln 5063, prod ln 40.24, live ln 41, enc None
 Load from declared address of `arc` (decl src ln 37), asm ln 5251
   %65 = load %struct.arc*, %struct.arc** %arc, l80 c9, asm ln 5251
-  🔔 Live ln too early, using produced ln + 1
+  %65 = load %struct.arc*, %struct.arc** %arc, l80 c9, asm ln 5251
   Added assignment asm ln 5251, prod ln 80.9, live ln 81, enc None
 Load from declared address of `arc` (decl src ln 37), asm ln 5245
   %63 = load %struct.arc*, %struct.arc** %arc, l79 c9, asm ln 5245
-  🔔 Live ln too early, using produced ln + 1
+  %63 = load %struct.arc*, %struct.arc** %arc, l79 c9, asm ln 5245
   Added assignment asm ln 5245, prod ln 79.9, live ln 80, enc None
 Load from declared address of `arc` (decl src ln 37), asm ln 5238
   %60 = load %struct.arc*, %struct.arc** %arc, l78 c9, asm ln 5238
-  🔔 Live ln too early, using produced ln + 1
+  %60 = load %struct.arc*, %struct.arc** %arc, l78 c9, asm ln 5238
   Added assignment asm ln 5238, prod ln 78.9, live ln 79, enc None
 Load from declared address of `arc` (decl src ln 37), asm ln 5216
   %52 = load %struct.arc*, %struct.arc** %arc, l74 c9, asm ln 5216
-  🔔 Live ln too early, using produced ln + 1
+  %52 = load %struct.arc*, %struct.arc** %arc, l74 c9, asm ln 5216
   Added assignment asm ln 5216, prod ln 74.9, live ln 75, enc None
 Load from declared address of `arc` (decl src ln 37), asm ln 5210
   %50 = load %struct.arc*, %struct.arc** %arc, l73 c9, asm ln 5210
-  🔔 Live ln too early, using produced ln + 1
+  %50 = load %struct.arc*, %struct.arc** %arc, l73 c9, asm ln 5210
   Added assignment asm ln 5210, prod ln 73.9, live ln 74, enc None
 Load from declared address of `arc` (decl src ln 37), asm ln 5159
   %31 = load %struct.arc*, %struct.arc** %arc, l66 c30, asm ln 5159
-  🔔 Live ln too early, using produced ln + 1
+  %31 = load %struct.arc*, %struct.arc** %arc, l66 c30, asm ln 5159
   Added assignment asm ln 5159, prod ln 66.30, live ln 67, enc None
 Store to declared address of `arc` (decl src ln 37), asm ln 5145
   %27 = load %struct.arc*, %struct.arc** %dummy_arcs, l59 c16, asm ln 5144
+  store %struct.arc* %27, %struct.arc** %arc, l59 c9, asm ln 5145
   Added assignment asm ln 5145, prod ln 59.16, live ln 63, enc None
 Load from declared address of `arc` (decl src ln 37), asm ln 5127
   %23 = load %struct.arc*, %struct.arc** %arc, l57 c13, asm ln 5127
-  🔔 Live ln too early, using produced ln + 1
+  %23 = load %struct.arc*, %struct.arc** %arc, l57 c13, asm ln 5127
   Added assignment asm ln 5127, prod ln 57.13, live ln 58, enc None
 Load from declared address of `arc` (decl src ln 37), asm ln 5116
   %20 = load %struct.arc*, %struct.arc** %arc, l56 c13, asm ln 5116
-  🔔 Live ln too early, using produced ln + 1
+  %20 = load %struct.arc*, %struct.arc** %arc, l56 c13, asm ln 5116
   Added assignment asm ln 5116, prod ln 56.13, live ln 57, enc None
 Store to declared address of `arc` (decl src ln 37), asm ln 5102
   %16 = load %struct.arc*, %struct.arc** %arcs, l51 c16, asm ln 5101
+  store %struct.arc* %16, %struct.arc** %arc, l51 c9, asm ln 5102
   Added assignment asm ln 5102, prod ln 51.16, live ln 55, enc None
 Store to declared address of `i` (decl src ln 38), asm ln 5265
   %inc62 = add nsw i32 %69, 1, l63 c32, asm ln 5264
-  🔔 Live ln too early, using produced ln + 1
+  store i32 %inc62, i32* %i, l63 c32, asm ln 5265
   Added assignment asm ln 5265, prod ln 63.32, live ln 64, enc None
 Load from declared address of `i` (decl src ln 38), asm ln 5263
   %69 = load i32, i32* %i, l63 c32, asm ln 5263
-  🔔 Live ln too early, using produced ln + 1
+  %69 = load i32, i32* %i, l63 c32, asm ln 5263
   Added assignment asm ln 5263, prod ln 63.32, live ln 64, enc None
 Load from declared address of `i` (decl src ln 38), asm ln 5258
   %68 = load i32, i32* %i, l81 c14, asm ln 5258
-  🔔 Live ln too early, using produced ln + 1
+  %68 = load i32, i32* %i, l81 c14, asm ln 5258
   Added assignment asm ln 5258, prod ln 81.14, live ln 82, enc None
 Load from declared address of `i` (decl src ln 38), asm ln 5252
   %66 = load i32, i32* %i, l80 c13, asm ln 5252
-  🔔 Live ln too early, using produced ln + 1
+  %66 = load i32, i32* %i, l80 c13, asm ln 5252
   Added assignment asm ln 5252, prod ln 80.13, live ln 81, enc None
 Load from declared address of `i` (decl src ln 38), asm ln 5246
   %64 = load i32, i32* %i, l79 c13, asm ln 5246
-  🔔 Live ln too early, using produced ln + 1
+  %64 = load i32, i32* %i, l79 c13, asm ln 5246
   Added assignment asm ln 5246, prod ln 79.13, live ln 80, enc None
 Load from declared address of `i` (decl src ln 38), asm ln 5239
   %61 = load i32, i32* %i, l78 c13, asm ln 5239
-  🔔 Live ln too early, using produced ln + 1
+  %61 = load i32, i32* %i, l78 c13, asm ln 5239
   Added assignment asm ln 5239, prod ln 78.13, live ln 79, enc None
 Load from declared address of `i` (decl src ln 38), asm ln 5235
   %59 = load i32, i32* %i, l78 c29, asm ln 5235
-  🔔 Live ln too early, using produced ln + 1
+  %59 = load i32, i32* %i, l78 c29, asm ln 5235
   Added assignment asm ln 5235, prod ln 78.29, live ln 79, enc None
 Load from declared address of `i` (decl src ln 38), asm ln 5229
   %57 = load i32, i32* %i, l77 c14, asm ln 5229
-  🔔 Live ln too early, using produced ln + 1
+  %57 = load i32, i32* %i, l77 c14, asm ln 5229
   Added assignment asm ln 5229, prod ln 77.14, live ln 78, enc None
 Load from declared address of `i` (decl src ln 38), asm ln 5223
   %55 = load i32, i32* %i, l76 c14, asm ln 5223
-  🔔 Live ln too early, using produced ln + 1
+  %55 = load i32, i32* %i, l76 c14, asm ln 5223
   Added assignment asm ln 5223, prod ln 76.14, live ln 77, enc None
 Load from declared address of `i` (decl src ln 38), asm ln 5217
   %53 = load i32, i32* %i, l74 c13, asm ln 5217
-  🔔 Live ln too early, using produced ln + 1
+  %53 = load i32, i32* %i, l74 c13, asm ln 5217
   Added assignment asm ln 5217, prod ln 74.13, live ln 75, enc None
 Load from declared address of `i` (decl src ln 38), asm ln 5211
   %51 = load i32, i32* %i, l73 c13, asm ln 5211
-  🔔 Live ln too early, using produced ln + 1
+  %51 = load i32, i32* %i, l73 c13, asm ln 5211
   Added assignment asm ln 5211, prod ln 73.13, live ln 74, enc None
 Load from declared address of `i` (decl src ln 38), asm ln 5205
   %49 = load i32, i32* %i, l71 c14, asm ln 5205
-  🔔 Live ln too early, using produced ln + 1
+  %49 = load i32, i32* %i, l71 c14, asm ln 5205
   Added assignment asm ln 5205, prod ln 71.14, live ln 72, enc None
 Load from declared address of `i` (decl src ln 38), asm ln 5199
   %47 = load i32, i32* %i, l70 c14, asm ln 5199
-  🔔 Live ln too early, using produced ln + 1
+  %47 = load i32, i32* %i, l70 c14, asm ln 5199
   Added assignment asm ln 5199, prod ln 70.14, live ln 71, enc None
 Load from declared address of `i` (decl src ln 38), asm ln 5194
   %45 = load i32, i32* %i, l70 c38, asm ln 5194
-  🔔 Live ln too early, using produced ln + 1
+  %45 = load i32, i32* %i, l70 c38, asm ln 5194
   Added assignment asm ln 5194, prod ln 70.38, live ln 71, enc None
 Load from declared address of `i` (decl src ln 38), asm ln 5188
   %43 = load i32, i32* %i, l69 c14, asm ln 5188
-  🔔 Live ln too early, using produced ln + 1
+  %43 = load i32, i32* %i, l69 c14, asm ln 5188
   Added assignment asm ln 5188, prod ln 69.14, live ln 70, enc None
 Load from declared address of `i` (decl src ln 38), asm ln 5183
   %41 = load i32, i32* %i, l69 c33, asm ln 5183
-  🔔 Live ln too early, using produced ln + 1
+  %41 = load i32, i32* %i, l69 c33, asm ln 5183
   Added assignment asm ln 5183, prod ln 69.33, live ln 70, enc None
 Load from declared address of `i` (decl src ln 38), asm ln 5177
   %39 = load i32, i32* %i, l68 c14, asm ln 5177
-  🔔 Live ln too early, using produced ln + 1
+  %39 = load i32, i32* %i, l68 c14, asm ln 5177
   Added assignment asm ln 5177, prod ln 68.14, live ln 69, enc None
 Load from declared address of `i` (decl src ln 38), asm ln 5171
   %37 = load i32, i32* %i, l67 c14, asm ln 5171
-  🔔 Live ln too early, using produced ln + 1
+  %37 = load i32, i32* %i, l67 c14, asm ln 5171
   Added assignment asm ln 5171, prod ln 67.14, live ln 68, enc None
 Load from declared address of `i` (decl src ln 38), asm ln 5164
   %34 = load i32, i32* %i, l66 c14, asm ln 5164
-  🔔 Live ln too early, using produced ln + 1
+  %34 = load i32, i32* %i, l66 c14, asm ln 5164
   Added assignment asm ln 5164, prod ln 66.14, live ln 67, enc None
 Load from declared address of `i` (decl src ln 38), asm ln 5160
   %32 = load i32, i32* %i, l66 c34, asm ln 5160
-  🔔 Live ln too early, using produced ln + 1
+  %32 = load i32, i32* %i, l66 c34, asm ln 5160
   Added assignment asm ln 5160, prod ln 66.34, live ln 67, enc None
 Load from declared address of `i` (decl src ln 38), asm ln 5150
   %28 = load i32, i32* %i, l63 c18, asm ln 5150
-  🔔 Live ln too early, using produced ln + 1
+  %28 = load i32, i32* %i, l63 c18, asm ln 5150
   Added assignment asm ln 5150, prod ln 63.18, live ln 64, enc None
 Store to declared address of `i` (decl src ln 38), asm ln 5146
   const i32 0
-  🔔 Live ln too early, using produced ln + 1
+  store i32 0, i32* %i, l63 c13, asm ln 5146
   Added assignment asm ln 5146, prod ln 63.13, live ln 64, enc None
 Store to declared address of `i` (decl src ln 38), asm ln 5138
   %inc = add nsw i32 %25, 1, l55 c30, asm ln 5137
-  🔔 Live ln too early, using produced ln + 1
+  store i32 %inc, i32* %i, l55 c30, asm ln 5138
   Added assignment asm ln 5138, prod ln 55.30, live ln 56, enc None
 Load from declared address of `i` (decl src ln 38), asm ln 5136
   %25 = load i32, i32* %i, l55 c30, asm ln 5136
-  🔔 Live ln too early, using produced ln + 1
+  %25 = load i32, i32* %i, l55 c30, asm ln 5136
   Added assignment asm ln 5136, prod ln 55.30, live ln 56, enc None
 Load from declared address of `i` (decl src ln 38), asm ln 5128
   %24 = load i32, i32* %i, l57 c17, asm ln 5128
-  🔔 Live ln too early, using produced ln + 1
+  %24 = load i32, i32* %i, l57 c17, asm ln 5128
   Added assignment asm ln 5128, prod ln 57.17, live ln 58, enc None
 Load from declared address of `i` (decl src ln 38), asm ln 5117
   %21 = load i32, i32* %i, l56 c17, asm ln 5117
-  🔔 Live ln too early, using produced ln + 1
+  %21 = load i32, i32* %i, l56 c17, asm ln 5117
   Added assignment asm ln 5117, prod ln 56.17, live ln 57, enc None
 Load from declared address of `i` (decl src ln 38), asm ln 5107
   %17 = load i32, i32* %i, l55 c17, asm ln 5107
-  🔔 Live ln too early, using produced ln + 1
+  %17 = load i32, i32* %i, l55 c17, asm ln 5107
   Added assignment asm ln 5107, prod ln 55.17, live ln 56, enc None
 Store to declared address of `i` (decl src ln 38), asm ln 5103
   const i32 0
-  🔔 Live ln too early, using produced ln + 1
+  store i32 0, i32* %i, l55 c12, asm ln 5103
   Added assignment asm ln 5103, prod ln 55.12, live ln 56, enc None
 
 #### After variables
 
 Value produced for `net` (decl src ln 30), asm ln 3754
   arg 0
+  @dbg.value(%struct.network.2* %net, !3026), asm ln 3754
   Added assignment asm ln 3754, prod ln 30.0, live ln 40, enc None
 Value produced for `node` (decl src ln 36), asm ln 3757
   %0 = load %struct.node.1*, %struct.node.1** %nodes, l40 c24, asm ln 3756
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(%struct.node.1* %0, !3029), asm ln 3757
   Added assignment asm ln 3757, prod ln 40.24, live ln 41, enc None
 Value produced for `root` (decl src ln 36), asm ln 3758
   %0 = load %struct.node.1*, %struct.node.1** %nodes, l40 c24, asm ln 3756
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(%struct.node.1* %0, !3032), asm ln 3758
   Added assignment asm ln 3758, prod ln 40.24, live ln 41, enc None
 Value produced for `node` (decl src ln 36), asm ln 3760
   %incdec.ptr = getelementptr inbounds %struct.node.1, %struct.node.1* %0, i32 1, l40 c35, asm ln 3759
+  @dbg.value(%struct.node.1* %incdec.ptr, !3029), asm ln 3760
   Added assignment asm ln 3760, prod ln 40.35, live ln 41, enc None
 Value produced for `arc` (decl src ln 37), asm ln 3784
   %2 = load %struct.arc.0*, %struct.arc.0** %arcs, l51 c16, asm ln 3783
+  @dbg.value(%struct.arc.0* %2, !3055), asm ln 3784
   Added assignment asm ln 3784, prod ln 51.16, live ln 55, enc None
 Value produced for `i` (decl src ln 38), asm ln 3785
   const i32 0
+  @dbg.value(i32 0, !3058), asm ln 3785
   Added assignment asm ln 3785, prod ln 38.0, live ln 55, enc None
 Value produced for `i` (decl src ln 38), asm ln 3815
   %inc = add nsw i32 %i.0, 1, l55 c30, asm ln 3814
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i32 %inc, !3058), asm ln 3815
   Added assignment asm ln 3815, prod ln 55.30, live ln 56, enc None
 Value produced for `arc` (decl src ln 37), asm ln 3821
   %5 = load %struct.arc.0*, %struct.arc.0** %dummy_arcs, l59 c16, asm ln 3820
+  @dbg.value(%struct.arc.0* %5, !3055), asm ln 3821
   Added assignment asm ln 3821, prod ln 59.16, live ln 63, enc None
 Value produced for `i` (decl src ln 38), asm ln 3822
   const i32 0
-  🔔 Missing produced ln, using decl ln
+  @dbg.value(i32 0, !3058), asm ln 3822
   Added assignment asm ln 3822, prod ln 38.0, live ln 63, enc None
 Value produced for `i` (decl src ln 38), asm ln 3902
   %inc62 = add nsw i32 %i.1, 1, l63 c32, asm ln 3901
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i32 %inc62, !3058), asm ln 3902
   Added assignment asm ln 3902, prod ln 63.32, live ln 64, enc None
 Value produced for `node` (decl src ln 36), asm ln 3907
   %incdec.ptr64 = getelementptr inbounds %struct.node.1, %struct.node.1* %incdec.ptr, i32 -1, l85 c9, asm ln 3906
+  @dbg.value(%struct.node.1* %incdec.ptr64, !3029), asm ln 3907
   Added assignment asm ln 3907, prod ln 85.9, live ln 86, enc None
 Value produced for `root` (decl src ln 36), asm ln 3909
   %incdec.ptr65 = getelementptr inbounds %struct.node.1, %struct.node.1* %0, i32 1, l86 c9, asm ln 3908
+  @dbg.value(%struct.node.1* %incdec.ptr65, !3032), asm ln 3909
   Added assignment asm ln 3909, prod ln 86.9, live ln 87, enc None
 Value produced for `i` (decl src ln 38), asm ln 3790
   %i.0 = phi i32 [ 0, %entry ], [ %inc, %for.inc ], asm ln 3789
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i32 %i.0, !3058), asm ln 3790
   Added assignment asm ln 3790, prod ln 55.30, live ln 56, enc None
 Value produced for `i` (decl src ln 38), asm ln 3827
   %i.1 = phi i32 [ 0, %for.end ], [ %inc62, %for.body13 ], asm ln 3826
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i32 %i.1, !3058), asm ln 3827
   Added assignment asm ln 3827, prod ln 63.32, live ln 64, enc None
 
 #### Summary
@@ -30694,205 +31090,218 @@ Test Execution:
 
 Load from declared address of `outfile` (decl src ln 32), asm ln 5318
   %4 = load i8*, i8** %outfile.addr, l47 c21, asm ln 5318
-  🔔 Live ln too early, using produced ln + 1
+  %4 = load i8*, i8** %outfile.addr, l47 c21, asm ln 5318
   Added assignment asm ln 5318, prod ln 47.21, live ln 48, enc None
 Store to declared address of `outfile` (decl src ln 32), asm ln 5299
   arg 0
+  store i8* %outfile, i8** %outfile.addr, asm ln 5299
   Added assignment asm ln 5299, prod ln 32.0, live ln 41, enc None
 Load from declared address of `net` (decl src ln 33), asm ln 5390
   %26 = load %struct.network*, %struct.network** %net.addr, l65 c26, asm ln 5390
-  🔔 Live ln too early, using produced ln + 1
+  %26 = load %struct.network*, %struct.network** %net.addr, l65 c26, asm ln 5390
   Added assignment asm ln 5390, prod ln 65.26, live ln 66, enc None
 Load from declared address of `net` (decl src ln 33), asm ln 5334
   %8 = load %struct.network*, %struct.network** %net.addr, l52 c27, asm ln 5334
-  🔔 Live ln too early, using produced ln + 1
+  %8 = load %struct.network*, %struct.network** %net.addr, l52 c27, asm ln 5334
   Added assignment asm ln 5334, prod ln 52.27, live ln 53, enc None
 Load from declared address of `net` (decl src ln 33), asm ln 5331
   %6 = load %struct.network*, %struct.network** %net.addr, l52 c16, asm ln 5331
-  🔔 Live ln too early, using produced ln + 1
+  %6 = load %struct.network*, %struct.network** %net.addr, l52 c16, asm ln 5331
   Added assignment asm ln 5331, prod ln 52.16, live ln 53, enc None
 Load from declared address of `net` (decl src ln 33), asm ln 5329
   %5 = load %struct.network*, %struct.network** %net.addr, l50 c28, asm ln 5329
-  🔔 Live ln too early, using produced ln + 1
+  %5 = load %struct.network*, %struct.network** %net.addr, l50 c28, asm ln 5329
   Added assignment asm ln 5329, prod ln 50.28, live ln 51, enc None
 Load from declared address of `net` (decl src ln 33), asm ln 5312
   %2 = load %struct.network*, %struct.network** %net.addr, l45 c40, asm ln 5312
-  🔔 Live ln too early, using produced ln + 1
+  %2 = load %struct.network*, %struct.network** %net.addr, l45 c40, asm ln 5312
   Added assignment asm ln 5312, prod ln 45.40, live ln 46, enc None
 Load from declared address of `net` (decl src ln 33), asm ln 5309
   %0 = load %struct.network*, %struct.network** %net.addr, l45 c23, asm ln 5309
-  🔔 Live ln too early, using produced ln + 1
+  %0 = load %struct.network*, %struct.network** %net.addr, l45 c23, asm ln 5309
   Added assignment asm ln 5309, prod ln 45.23, live ln 46, enc None
 Store to declared address of `net` (decl src ln 33), asm ln 5301
   arg 1
+  store %struct.network* %net, %struct.network** %net.addr, asm ln 5301
   Added assignment asm ln 5301, prod ln 33.0, live ln 41, enc None
 Load from declared address of `out` (decl src ln 41), asm ln 5458
   %42 = load %struct.__sFILE*, %struct.__sFILE** %out, l84 c10, asm ln 5458
-  🔔 Live ln too early, using produced ln + 1
+  %42 = load %struct.__sFILE*, %struct.__sFILE** %out, l84 c10, asm ln 5458
   Added assignment asm ln 5458, prod ln 84.10, live ln 85, enc None
 Load from declared address of `out` (decl src ln 41), asm ln 5424
   %35 = load %struct.__sFILE*, %struct.__sFILE** %out, l71 c19, asm ln 5424
-  🔔 Live ln too early, using produced ln + 1
+  %35 = load %struct.__sFILE*, %struct.__sFILE** %out, l71 c19, asm ln 5424
   Added assignment asm ln 5424, prod ln 71.19, live ln 72, enc None
 Load from declared address of `out` (decl src ln 41), asm ln 5379
   %20 = load %struct.__sFILE*, %struct.__sFILE** %out, l64 c18, asm ln 5379
-  🔔 Live ln too early, using produced ln + 1
+  %20 = load %struct.__sFILE*, %struct.__sFILE** %out, l64 c18, asm ln 5379
   Added assignment asm ln 5379, prod ln 64.18, live ln 65, enc None
 Load from declared address of `out` (decl src ln 41), asm ln 5374
   %19 = load %struct.__sFILE*, %struct.__sFILE** %out, l62 c20, asm ln 5374
-  🔔 Live ln too early, using produced ln + 1
+  %19 = load %struct.__sFILE*, %struct.__sFILE** %out, l62 c20, asm ln 5374
   Added assignment asm ln 5374, prod ln 62.20, live ln 63, enc None
 Load from declared address of `out` (decl src ln 41), asm ln 5356
   %14 = load %struct.__sFILE*, %struct.__sFILE** %out, l56 c16, asm ln 5356
-  🔔 Live ln too early, using produced ln + 1
+  %14 = load %struct.__sFILE*, %struct.__sFILE** %out, l56 c16, asm ln 5356
   Added assignment asm ln 5356, prod ln 56.16, live ln 57, enc None
 Store to declared address of `out` (decl src ln 41), asm ln 5320
   %call = call %struct.__sFILE* @"\01_fopen"(i8* %4, i8* getelementptr inbounds ([2 x i8], [2 x i8]* @.str.41, i64 0, i64 0)), l47 c14, asm ln 5319
-  🔔 Live ln too early, using produced ln + 1
+  store %struct.__sFILE* %call, %struct.__sFILE** %out, l47 c12, asm ln 5320
   Added assignment asm ln 5320, prod ln 47.14, live ln 48, enc None
 Store to declared address of `out` (decl src ln 41), asm ln 5304
   const %struct.__sFILE* null
+  store %struct.__sFILE* null, %struct.__sFILE** %out, l41 c9, asm ln 5304
   Added assignment asm ln 5304, prod ln 41.9, live ln 45, enc None
 Store to declared address of `block` (decl src ln 42), asm ln 5454
   %41 = load %struct.arc*, %struct.arc** %nextout31, l52 c67, asm ln 5453
-  🔔 Live ln too early, using produced ln + 1
+  store %struct.arc* %41, %struct.arc** %block, l52 c58, asm ln 5454
   Added assignment asm ln 5454, prod ln 52.67, live ln 53, enc None
 Load from declared address of `block` (decl src ln 42), asm ln 5451
   %40 = load %struct.arc*, %struct.arc** %block, l52 c60, asm ln 5451
-  🔔 Live ln too early, using produced ln + 1
+  %40 = load %struct.arc*, %struct.arc** %block, l52 c60, asm ln 5451
   Added assignment asm ln 5451, prod ln 52.60, live ln 53, enc None
 Load from declared address of `block` (decl src ln 42), asm ln 5358
   %15 = load %struct.arc*, %struct.arc** %block, l58 c13, asm ln 5358
-  🔔 Live ln too early, using produced ln + 1
+  %15 = load %struct.arc*, %struct.arc** %block, l58 c13, asm ln 5358
   Added assignment asm ln 5358, prod ln 58.13, live ln 59, enc None
 Load from declared address of `block` (decl src ln 42), asm ln 5349
   %12 = load %struct.arc*, %struct.arc** %block, l54 c9, asm ln 5349
-  🔔 Live ln too early, using produced ln + 1
+  %12 = load %struct.arc*, %struct.arc** %block, l54 c9, asm ln 5349
   Added assignment asm ln 5349, prod ln 54.9, live ln 55, enc None
 Load from declared address of `block` (decl src ln 42), asm ln 5344
   %11 = load %struct.arc*, %struct.arc** %block, l52 c45, asm ln 5344
-  🔔 Live ln too early, using produced ln + 1
+  %11 = load %struct.arc*, %struct.arc** %block, l52 c45, asm ln 5344
   Added assignment asm ln 5344, prod ln 52.45, live ln 53, enc None
 Store to declared address of `block` (decl src ln 42), asm ln 5340
   %10 = load %struct.arc*, %struct.arc** %firstout, l52 c35, asm ln 5339
-  🔔 Live ln too early, using produced ln + 1
+  store %struct.arc* %10, %struct.arc** %block, l52 c14, asm ln 5340
   Added assignment asm ln 5340, prod ln 52.35, live ln 53, enc None
 Store to declared address of `arc` (decl src ln 43), asm ln 5444
   const %struct.arc* null
-  🔔 Missing live ln, using produced ln + 1
+  store %struct.arc* null, %struct.arc** %arc, l78 c15, asm ln 5444
   Added assignment asm ln 5444, prod ln 78.15, live ln 79, enc None
 Store to declared address of `arc` (decl src ln 43), asm ln 5440
   %39 = load %struct.arc*, %struct.arc** %arc2, l76 c17, asm ln 5439
-  🔔 Live ln too early, using produced ln + 1
+  store %struct.arc* %39, %struct.arc** %arc, l76 c15, asm ln 5440
   Added assignment asm ln 5440, prod ln 76.17, live ln 77, enc None
 Load from declared address of `arc` (decl src ln 43), asm ln 5387
   %24 = load %struct.arc*, %struct.arc** %arc, l65 c16, asm ln 5387
-  🔔 Live ln too early, using produced ln + 1
+  %24 = load %struct.arc*, %struct.arc** %arc, l65 c16, asm ln 5387
   Added assignment asm ln 5387, prod ln 65.16, live ln 66, enc None
 Load from declared address of `arc` (decl src ln 43), asm ln 5380
   %21 = load %struct.arc*, %struct.arc** %arc, l64 c33, asm ln 5380
-  🔔 Live ln too early, using produced ln + 1
+  %21 = load %struct.arc*, %struct.arc** %arc, l64 c33, asm ln 5380
   Added assignment asm ln 5380, prod ln 64.33, live ln 65, enc None
 Load from declared address of `arc` (decl src ln 43), asm ln 5368
   %17 = load %struct.arc*, %struct.arc** %arc, l61 c13, asm ln 5368
-  🔔 Live ln too early, using produced ln + 1
+  %17 = load %struct.arc*, %struct.arc** %arc, l61 c13, asm ln 5368
   Added assignment asm ln 5368, prod ln 61.13, live ln 62, enc None
 Load from declared address of `arc` (decl src ln 43), asm ln 5363
   %16 = load %struct.arc*, %struct.arc** %arc, l59 c14, asm ln 5363
-  🔔 Live ln too early, using produced ln + 1
+  %16 = load %struct.arc*, %struct.arc** %arc, l59 c14, asm ln 5363
   Added assignment asm ln 5363, prod ln 59.14, live ln 60, enc None
 Store to declared address of `arc` (decl src ln 43), asm ln 5359
   %15 = load %struct.arc*, %struct.arc** %block, l58 c13, asm ln 5358
+  store %struct.arc* %15, %struct.arc** %arc, l58 c11, asm ln 5359
   Added assignment asm ln 5359, prod ln 58.13, live ln 59, enc None
 Load from declared address of `arc2` (decl src ln 44), asm ln 5439
   %39 = load %struct.arc*, %struct.arc** %arc2, l76 c17, asm ln 5439
-  🔔 Live ln too early, using produced ln + 1
+  %39 = load %struct.arc*, %struct.arc** %arc2, l76 c17, asm ln 5439
   Added assignment asm ln 5439, prod ln 76.17, live ln 77, enc None
 Load from declared address of `arc2` (decl src ln 44), asm ln 5430
   %36 = load %struct.arc*, %struct.arc** %arc2, l75 c13, asm ln 5430
-  🔔 Live ln too early, using produced ln + 1
+  %36 = load %struct.arc*, %struct.arc** %arc2, l75 c13, asm ln 5430
   Added assignment asm ln 5430, prod ln 75.13, live ln 76, enc None
 Load from declared address of `arc2` (decl src ln 44), asm ln 5419
   %34 = load %struct.arc*, %struct.arc** %arc2, l69 c14, asm ln 5419
-  🔔 Live ln too early, using produced ln + 1
+  %34 = load %struct.arc*, %struct.arc** %arc2, l69 c14, asm ln 5419
   Added assignment asm ln 5419, prod ln 69.14, live ln 70, enc None
 Store to declared address of `arc2` (decl src ln 44), asm ln 5415
   %33 = load %struct.arc*, %struct.arc** %nextout, l66 c35, asm ln 5414
-  🔔 Live ln too early, using produced ln + 1
+  store %struct.arc* %33, %struct.arc** %arc2, l66 c27, asm ln 5415
   Added assignment asm ln 5415, prod ln 66.35, live ln 67, enc None
 Load from declared address of `arc2` (decl src ln 44), asm ln 5412
   %32 = load %struct.arc*, %struct.arc** %arc2, l66 c29, asm ln 5412
-  🔔 Live ln too early, using produced ln + 1
+  %32 = load %struct.arc*, %struct.arc** %arc2, l66 c29, asm ln 5412
   Added assignment asm ln 5412, prod ln 66.29, live ln 67, enc None
 Load from declared address of `arc2` (decl src ln 44), asm ln 5405
   %30 = load %struct.arc*, %struct.arc** %arc2, l67 c15, asm ln 5405
-  🔔 Live ln too early, using produced ln + 1
+  %30 = load %struct.arc*, %struct.arc** %arc2, l67 c15, asm ln 5405
   Added assignment asm ln 5405, prod ln 67.15, live ln 68, enc None
 Load from declared address of `arc2` (decl src ln 44), asm ln 5400
   %29 = load %struct.arc*, %struct.arc** %arc2, l66 c16, asm ln 5400
-  🔔 Live ln too early, using produced ln + 1
+  %29 = load %struct.arc*, %struct.arc** %arc2, l66 c16, asm ln 5400
   Added assignment asm ln 5400, prod ln 66.16, live ln 67, enc None
 Store to declared address of `arc2` (decl src ln 44), asm ln 5396
   %28 = load %struct.arc*, %struct.arc** %firstout12, l65 c40, asm ln 5395
+  store %struct.arc* %28, %struct.arc** %arc2, l65 c14, asm ln 5396
   Added assignment asm ln 5396, prod ln 65.40, live ln 66, enc None
 Load from declared address of `first_impl` (decl src ln 45), asm ln 5369
   %18 = load %struct.arc*, %struct.arc** %first_impl, l61 c20, asm ln 5369
-  🔔 Live ln too early, using produced ln + 1
+  %18 = load %struct.arc*, %struct.arc** %first_impl, l61 c20, asm ln 5369
   Added assignment asm ln 5369, prod ln 61.20, live ln 62, enc None
 Store to declared address of `first_impl` (decl src ln 45), asm ln 5317
   %add.ptr = getelementptr inbounds %struct.arc, %struct.arc* %1, i64 %idx.neg, l45 c38, asm ln 5316
+  store %struct.arc* %add.ptr, %struct.arc** %first_impl, l45 c10, asm ln 5317
   Added assignment asm ln 5317, prod ln 45.38, live ln 47, enc None
 
 #### After variables
 
 Value produced for `outfile` (decl src ln 32), asm ln 3923
   arg 0
+  @dbg.value(i8* %outfile, !3221), asm ln 3923
   Added assignment asm ln 3923, prod ln 32.0, live ln 45, enc None
 Value produced for `net` (decl src ln 33), asm ln 3924
   arg 1
+  @dbg.value(%struct.network.2* %net, !3223), asm ln 3924
   Added assignment asm ln 3924, prod ln 33.0, live ln 45, enc None
 Value produced for `out` (decl src ln 41), asm ln 3925
   const %struct.__sFILE.5* null
+  @dbg.value(%struct.__sFILE.5* null, !3224), asm ln 3925
   Added assignment asm ln 3925, prod ln 41.0, live ln 45, enc None
 Value produced for `first_impl` (decl src ln 45), asm ln 3932
   %add.ptr = getelementptr inbounds %struct.arc.0, %struct.arc.0* %0, i64 %idx.neg, l45 c38, asm ln 3931
+  @dbg.value(%struct.arc.0* %add.ptr, !3256), asm ln 3932
   Added assignment asm ln 3932, prod ln 45.38, live ln 47, enc None
 Value produced for `out` (decl src ln 41), asm ln 3934
   %call = call %struct.__sFILE.5* @"\01_fopen"(i8* %outfile, i8* getelementptr inbounds ([2 x i8], [2 x i8]* @.str.41, i64 0, i64 0)), l47 c14, asm ln 3933
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(%struct.__sFILE.5* %call, !3224), asm ln 3934
   Added assignment asm ln 3934, prod ln 47.14, live ln 48, enc None
 Value produced for `block` (decl src ln 42), asm ln 3947
   %4 = load %struct.arc.0*, %struct.arc.0** %firstout, l52 c35, asm ln 3946
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(%struct.arc.0* %4, !3269), asm ln 3947
   Added assignment asm ln 3947, prod ln 52.35, live ln 53, enc None
 Value produced for `arc2` (decl src ln 44), asm ln 3995
   %10 = load %struct.arc.0*, %struct.arc.0** %firstout12, l65 c40, asm ln 3994
+  @dbg.value(%struct.arc.0* %10, !3297), asm ln 3995
   Added assignment asm ln 3995, prod ln 65.40, live ln 66, enc None
 Value produced for `arc2` (decl src ln 44), asm ln 4014
   %12 = load %struct.arc.0*, %struct.arc.0** %nextout, l66 c35, asm ln 4013
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(%struct.arc.0* %12, !3297), asm ln 4014
   Added assignment asm ln 4014, prod ln 66.35, live ln 67, enc None
 Value produced for `arc` (decl src ln 43), asm ln 4032
   %arc2.0. = select i1 %tobool26, %struct.arc.0* %arc2.0, %struct.arc.0* null, asm ln 4031
+  @dbg.value(%struct.arc.0* %arc2.0., !3281), asm ln 4032
   Added assignment asm ln 4032, prod ln 43.0, live ln 59, enc None
 Value produced for `block` (decl src ln 42), asm ln 4038
   %15 = load %struct.arc.0*, %struct.arc.0** %nextout31, l52 c67, asm ln 4037
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(%struct.arc.0* %15, !3269), asm ln 4038
   Added assignment asm ln 4038, prod ln 52.67, live ln 53, enc None
 Value produced for `block` (decl src ln 42), asm ln 3952
   %block.0 = phi %struct.arc.0* [ %4, %if.end ], [ %15, %for.inc30 ], asm ln 3951
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(%struct.arc.0* %block.0, !3269), asm ln 3952
   Added assignment asm ln 3952, prod ln 52.67, live ln 53, enc None
 Value produced for `arc` (decl src ln 43), asm ln 3964
   %block.0 = phi %struct.arc.0* [ %4, %if.end ], [ %15, %for.inc30 ], asm ln 3951
+  @dbg.value(%struct.arc.0* %block.0, !3281), asm ln 3964
   Added assignment asm ln 3964, prod ln 52.67, live ln 59, enc None
 Value produced for `arc` (decl src ln 43), asm ln 3969
   %arc.0 = phi %struct.arc.0* [ %block.0, %if.then2 ], [ %arc2.0., %if.end23 ], asm ln 3968
-  🔔 Missing produced ln, using decl ln
+  @dbg.value(%struct.arc.0* %arc.0, !3281), asm ln 3969
   Added assignment asm ln 3969, prod ln 43.0, live ln 59, enc None
 Value produced for `arc2` (decl src ln 44), asm ln 4000
   %arc2.0 = phi %struct.arc.0* [ %10, %if.end8 ], [ %12, %for.inc ], asm ln 3999
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(%struct.arc.0* %arc2.0, !3297), asm ln 4000
   Added assignment asm ln 4000, prod ln 66.40, live ln 67, enc None
 
 #### Summary
@@ -31755,48 +32164,54 @@ Test Execution:
 
 Load from declared address of `outfile` (decl src ln 95), asm ln 5481
   %0 = load i8*, i8** %outfile.addr, l106 c21, asm ln 5481
-  🔔 Live ln too early, using produced ln + 1
+  %0 = load i8*, i8** %outfile.addr, l106 c21, asm ln 5481
   Added assignment asm ln 5481, prod ln 106.21, live ln 107, enc None
 Store to declared address of `outfile` (decl src ln 95), asm ln 5475
   arg 0
+  store i8* %outfile, i8** %outfile.addr, asm ln 5475
   Added assignment asm ln 5475, prod ln 95.0, live ln 104, enc None
 Load from declared address of `net` (decl src ln 96), asm ln 5493
   %2 = load %struct.network*, %struct.network** %net.addr, l109 c37, asm ln 5493
-  🔔 Live ln too early, using produced ln + 1
+  %2 = load %struct.network*, %struct.network** %net.addr, l109 c37, asm ln 5493
   Added assignment asm ln 5493, prod ln 109.37, live ln 110, enc None
 Store to declared address of `net` (decl src ln 96), asm ln 5477
   arg 1
+  store %struct.network* %net, %struct.network** %net.addr, asm ln 5477
   Added assignment asm ln 5477, prod ln 96.0, live ln 104, enc None
 Load from declared address of `out` (decl src ln 104), asm ln 5496
   %3 = load %struct.__sFILE*, %struct.__sFILE** %out, l111 c10, asm ln 5496
-  🔔 Live ln too early, using produced ln + 1
+  %3 = load %struct.__sFILE*, %struct.__sFILE** %out, l111 c10, asm ln 5496
   Added assignment asm ln 5496, prod ln 111.10, live ln 112, enc None
 Load from declared address of `out` (decl src ln 104), asm ln 5492
   %1 = load %struct.__sFILE*, %struct.__sFILE** %out, l109 c12, asm ln 5492
-  🔔 Live ln too early, using produced ln + 1
+  %1 = load %struct.__sFILE*, %struct.__sFILE** %out, l109 c12, asm ln 5492
   Added assignment asm ln 5492, prod ln 109.12, live ln 110, enc None
 Store to declared address of `out` (decl src ln 104), asm ln 5483
   %call = call %struct.__sFILE* @"\01_fopen"(i8* %0, i8* getelementptr inbounds ([2 x i8], [2 x i8]* @.str.41, i64 0, i64 0)), l106 c14, asm ln 5482
-  🔔 Live ln too early, using produced ln + 1
+  store %struct.__sFILE* %call, %struct.__sFILE** %out, l106 c12, asm ln 5483
   Added assignment asm ln 5483, prod ln 106.14, live ln 107, enc None
 Store to declared address of `out` (decl src ln 104), asm ln 5480
   const %struct.__sFILE* null
+  store %struct.__sFILE* null, %struct.__sFILE** %out, l104 c9, asm ln 5480
   Added assignment asm ln 5480, prod ln 104.9, live ln 106, enc None
 
 #### After variables
 
 Value produced for `outfile` (decl src ln 95), asm ln 4053
   arg 0
+  @dbg.value(i8* %outfile, !3331), asm ln 4053
   Added assignment asm ln 4053, prod ln 95.0, live ln 106, enc None
 Value produced for `net` (decl src ln 96), asm ln 4054
   arg 1
+  @dbg.value(%struct.network.2* %net, !3333), asm ln 4054
   Added assignment asm ln 4054, prod ln 96.0, live ln 106, enc None
 Value produced for `out` (decl src ln 104), asm ln 4055
   const %struct.__sFILE.5* null
+  @dbg.value(%struct.__sFILE.5* null, !3334), asm ln 4055
   Added assignment asm ln 4055, prod ln 104.0, live ln 106, enc None
 Value produced for `out` (decl src ln 104), asm ln 4057
   %call = call %struct.__sFILE.5* @"\01_fopen"(i8* %outfile, i8* getelementptr inbounds ([2 x i8], [2 x i8]* @.str.41, i64 0, i64 0)), l106 c14, asm ln 4056
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(%struct.__sFILE.5* %call, !3334), asm ln 4057
   Added assignment asm ln 4057, prod ln 106.14, live ln 107, enc None
 
 #### Summary
@@ -32154,799 +32569,862 @@ Test Execution:
 
 Load from declared address of `cycle_ori` (decl src ln 31), asm ln 5923
   %127 = load i64, i64* %cycle_ori.addr, l158 c38, asm ln 5923
-  🔔 Live ln too early, using produced ln + 1
+  %127 = load i64, i64* %cycle_ori.addr, l158 c38, asm ln 5923
   Added assignment asm ln 5923, prod ln 158.38, live ln 159, enc None
 Load from declared address of `cycle_ori` (decl src ln 31), asm ln 5872
   %110 = load i64, i64* %cycle_ori.addr, l150 c38, asm ln 5872
-  🔔 Live ln too early, using produced ln + 1
+  %110 = load i64, i64* %cycle_ori.addr, l150 c38, asm ln 5872
   Added assignment asm ln 5872, prod ln 150.38, live ln 151, enc None
 Load from declared address of `cycle_ori` (decl src ln 31), asm ln 5776
   %72 = load i64, i64* %cycle_ori.addr, l124 c33, asm ln 5776
-  🔔 Live ln too early, using produced ln + 1
+  %72 = load i64, i64* %cycle_ori.addr, l124 c33, asm ln 5776
   Added assignment asm ln 5776, prod ln 124.33, live ln 125, enc None
 Store to declared address of `cycle_ori` (decl src ln 31), asm ln 5531
   arg 0
+  store i64 %cycle_ori, i64* %cycle_ori.addr, asm ln 5531
   Added assignment asm ln 5531, prod ln 31.0, live ln 72, enc None
 Store to declared address of `new_orientation` (decl src ln 32), asm ln 5827
   %92 = load i64, i64* %orientation_temp, l137 c27, asm ln 5826
+  store i64 %92, i64* %new_orientation.addr, l137 c25, asm ln 5827
   Added assignment asm ln 5827, prod ln 137.27, live ln 138, enc None
 Load from declared address of `new_orientation` (decl src ln 32), asm ln 5807
   %83 = load i64, i64* %new_orientation.addr, l131 c29, asm ln 5807
-  🔔 Live ln too early, using produced ln + 1
+  %83 = load i64, i64* %new_orientation.addr, l131 c29, asm ln 5807
   Added assignment asm ln 5807, prod ln 131.29, live ln 132, enc None
 Store to declared address of `new_orientation` (decl src ln 32), asm ln 5533
   arg 1
+  store i64 %new_orientation, i64* %new_orientation.addr, asm ln 5533
   Added assignment asm ln 5533, prod ln 32.0, live ln 72, enc None
 Load from declared address of `delta` (decl src ln 33), asm ln 5937
   %131 = load i64, i64* %delta.addr, l161 c31, asm ln 5937
-  🔔 Live ln too early, using produced ln + 1
+  %131 = load i64, i64* %delta.addr, l161 c31, asm ln 5937
   Added assignment asm ln 5937, prod ln 161.31, live ln 162, enc None
 Load from declared address of `delta` (decl src ln 33), asm ln 5928
   %128 = load i64, i64* %delta.addr, l159 c31, asm ln 5928
-  🔔 Live ln too early, using produced ln + 1
+  %128 = load i64, i64* %delta.addr, l159 c31, asm ln 5928
   Added assignment asm ln 5928, prod ln 159.31, live ln 160, enc None
 Load from declared address of `delta` (decl src ln 33), asm ln 5886
   %114 = load i64, i64* %delta.addr, l153 c31, asm ln 5886
-  🔔 Live ln too early, using produced ln + 1
+  %114 = load i64, i64* %delta.addr, l153 c31, asm ln 5886
   Added assignment asm ln 5886, prod ln 153.31, live ln 154, enc None
 Load from declared address of `delta` (decl src ln 33), asm ln 5877
   %111 = load i64, i64* %delta.addr, l151 c31, asm ln 5877
-  🔔 Live ln too early, using produced ln + 1
+  %111 = load i64, i64* %delta.addr, l151 c31, asm ln 5877
   Added assignment asm ln 5877, prod ln 151.31, live ln 152, enc None
 Load from declared address of `delta` (decl src ln 33), asm ln 5845
   %100 = load i64, i64* %delta.addr, l145 c9, asm ln 5845
-  🔔 Live ln too early, using produced ln + 1
+  %100 = load i64, i64* %delta.addr, l145 c9, asm ln 5845
   Added assignment asm ln 5845, prod ln 145.9, live ln 146, enc None
 Load from declared address of `delta` (decl src ln 33), asm ln 5793
   %78 = load i64, i64* %delta.addr, l127 c38, asm ln 5793
-  🔔 Live ln too early, using produced ln + 1
+  %78 = load i64, i64* %delta.addr, l127 c38, asm ln 5793
   Added assignment asm ln 5793, prod ln 127.38, live ln 128, enc None
 Load from declared address of `delta` (decl src ln 33), asm ln 5784
   %75 = load i64, i64* %delta.addr, l125 c38, asm ln 5784
-  🔔 Live ln too early, using produced ln + 1
+  %75 = load i64, i64* %delta.addr, l125 c38, asm ln 5784
   Added assignment asm ln 5784, prod ln 125.38, live ln 126, enc None
 Store to declared address of `delta` (decl src ln 33), asm ln 5535
   arg 2
+  store i64 %delta, i64* %delta.addr, asm ln 5535
   Added assignment asm ln 5535, prod ln 33.0, live ln 72, enc None
 Store to declared address of `new_flow` (decl src ln 34), asm ln 5829
   %93 = load i64, i64* %flow_temp, l138 c20, asm ln 5828
+  store i64 %93, i64* %new_flow.addr, l138 c18, asm ln 5829
   Added assignment asm ln 5829, prod ln 138.20, live ln 139, enc None
 Load from declared address of `new_flow` (decl src ln 34), asm ln 5812
   %85 = load i64, i64* %new_flow.addr, l132 c22, asm ln 5812
-  🔔 Live ln too early, using produced ln + 1
+  %85 = load i64, i64* %new_flow.addr, l132 c22, asm ln 5812
   Added assignment asm ln 5812, prod ln 132.22, live ln 133, enc None
 Store to declared address of `new_flow` (decl src ln 34), asm ln 5537
   arg 3
+  store i64 %new_flow, i64* %new_flow.addr, asm ln 5537
   Added assignment asm ln 5537, prod ln 34.0, live ln 72, enc None
 Load from declared address of `iplus` (decl src ln 35), asm ln 5665
   %32 = load %struct.node*, %struct.node** %iplus.addr, l102 c12, asm ln 5665
-  🔔 Live ln too early, using produced ln + 1
+  %32 = load %struct.node*, %struct.node** %iplus.addr, l102 c12, asm ln 5665
   Added assignment asm ln 5665, prod ln 102.12, live ln 103, enc None
 Load from declared address of `iplus` (decl src ln 35), asm ln 5579
   %6 = load %struct.node*, %struct.node** %iplus.addr, l73 c23, asm ln 5579
-  🔔 Live ln too early, using produced ln + 1
+  %6 = load %struct.node*, %struct.node** %iplus.addr, l73 c23, asm ln 5579
   Added assignment asm ln 5579, prod ln 73.23, live ln 74, enc None
 Store to declared address of `iplus` (decl src ln 35), asm ln 5539
   arg 4
+  store %struct.node* %iplus, %struct.node** %iplus.addr, asm ln 5539
   Added assignment asm ln 5539, prod ln 35.0, live ln 72, enc None
 Load from declared address of `jplus` (decl src ln 36), asm ln 5977
   %144 = load %struct.node*, %struct.node** %jplus.addr, l168 c21, asm ln 5977
-  🔔 Live ln too early, using produced ln + 1
+  %144 = load %struct.node*, %struct.node** %jplus.addr, l168 c21, asm ln 5977
   Added assignment asm ln 5977, prod ln 168.21, live ln 169, enc None
 Load from declared address of `jplus` (decl src ln 36), asm ln 5902
   %119 = load %struct.node*, %struct.node** %jplus.addr, l155 c21, asm ln 5902
-  🔔 Live ln too early, using produced ln + 1
+  %119 = load %struct.node*, %struct.node** %jplus.addr, l155 c21, asm ln 5902
   Added assignment asm ln 5902, prod ln 155.21, live ln 156, enc None
 Load from declared address of `jplus` (decl src ln 36), asm ln 5676
   %37 = load %struct.node*, %struct.node** %jplus.addr, l105 c16, asm ln 5676
-  🔔 Live ln too early, using produced ln + 1
+  %37 = load %struct.node*, %struct.node** %jplus.addr, l105 c16, asm ln 5676
   Added assignment asm ln 5676, prod ln 105.16, live ln 106, enc None
 Load from declared address of `jplus` (decl src ln 36), asm ln 5568
   %2 = load %struct.node*, %struct.node** %jplus.addr, l72 c23, asm ln 5568
-  🔔 Live ln too early, using produced ln + 1
+  %2 = load %struct.node*, %struct.node** %jplus.addr, l72 c23, asm ln 5568
   Added assignment asm ln 5568, prod ln 72.23, live ln 73, enc None
 Store to declared address of `jplus` (decl src ln 36), asm ln 5541
   arg 5
+  store %struct.node* %jplus, %struct.node** %jplus.addr, asm ln 5541
   Added assignment asm ln 5541, prod ln 36.0, live ln 72, enc None
 Load from declared address of `iminus` (decl src ln 37), asm ln 5671
   %35 = load %struct.node*, %struct.node** %iminus.addr, l104 c32, asm ln 5671
-  🔔 Live ln too early, using produced ln + 1
+  %35 = load %struct.node*, %struct.node** %iminus.addr, l104 c32, asm ln 5671
   Added assignment asm ln 5671, prod ln 104.32, live ln 105, enc None
 Load from declared address of `iminus` (decl src ln 37), asm ln 5643
   %26 = load %struct.node*, %struct.node** %iminus.addr, l90 c19, asm ln 5643
-  🔔 Live ln too early, using produced ln + 1
+  %26 = load %struct.node*, %struct.node** %iminus.addr, l90 c19, asm ln 5643
   Added assignment asm ln 5643, prod ln 90.19, live ln 91, enc None
 Load from declared address of `iminus` (decl src ln 37), asm ln 5608
   %14 = load %struct.node*, %struct.node** %iminus.addr, l78 c14, asm ln 5608
-  🔔 Live ln too early, using produced ln + 1
+  %14 = load %struct.node*, %struct.node** %iminus.addr, l78 c14, asm ln 5608
   Added assignment asm ln 5608, prod ln 78.14, live ln 79, enc None
 Store to declared address of `iminus` (decl src ln 37), asm ln 5543
   arg 6
+  store %struct.node* %iminus, %struct.node** %iminus.addr, asm ln 5543
   Added assignment asm ln 5543, prod ln 37.0, live ln 72, enc None
 Load from declared address of `jminus` (decl src ln 38), asm ln 5953
   %136 = load %struct.node*, %struct.node** %jminus.addr, l166 c21, asm ln 5953
-  🔔 Live ln too early, using produced ln + 1
+  %136 = load %struct.node*, %struct.node** %jminus.addr, l166 c21, asm ln 5953
   Added assignment asm ln 5953, prod ln 166.21, live ln 167, enc None
 Load from declared address of `jminus` (decl src ln 38), asm ln 5851
   %102 = load %struct.node*, %struct.node** %jminus.addr, l147 c21, asm ln 5851
-  🔔 Live ln too early, using produced ln + 1
+  %102 = load %struct.node*, %struct.node** %jminus.addr, l147 c21, asm ln 5851
   Added assignment asm ln 5851, prod ln 147.21, live ln 148, enc None
 Load from declared address of `jminus` (decl src ln 38), asm ln 5684
   %40 = load %struct.node*, %struct.node** %jminus.addr, l107 c20, asm ln 5684
-  🔔 Live ln too early, using produced ln + 1
+  %40 = load %struct.node*, %struct.node** %jminus.addr, l107 c20, asm ln 5684
   Added assignment asm ln 5684, prod ln 107.20, live ln 108, enc None
 Store to declared address of `jminus` (decl src ln 38), asm ln 5545
   arg 7
+  store %struct.node* %jminus, %struct.node** %jminus.addr, asm ln 5545
   Added assignment asm ln 5545, prod ln 38.0, live ln 72, enc None
 Load from declared address of `w` (decl src ln 39), asm ln 5983
   %146 = load %struct.node*, %struct.node** %w.addr, l168 c36, asm ln 5983
-  🔔 Live ln too early, using produced ln + 1
+  %146 = load %struct.node*, %struct.node** %w.addr, l168 c36, asm ln 5983
   Added assignment asm ln 5983, prod ln 168.36, live ln 169, enc None
 Load from declared address of `w` (decl src ln 39), asm ln 5959
   %138 = load %struct.node*, %struct.node** %w.addr, l166 c37, asm ln 5959
-  🔔 Live ln too early, using produced ln + 1
+  %138 = load %struct.node*, %struct.node** %w.addr, l166 c37, asm ln 5959
   Added assignment asm ln 5959, prod ln 166.37, live ln 167, enc None
 Load from declared address of `w` (decl src ln 39), asm ln 5908
   %121 = load %struct.node*, %struct.node** %w.addr, l155 c36, asm ln 5908
-  🔔 Live ln too early, using produced ln + 1
+  %121 = load %struct.node*, %struct.node** %w.addr, l155 c36, asm ln 5908
   Added assignment asm ln 5908, prod ln 155.36, live ln 156, enc None
 Load from declared address of `w` (decl src ln 39), asm ln 5857
   %104 = load %struct.node*, %struct.node** %w.addr, l147 c37, asm ln 5857
-  🔔 Live ln too early, using produced ln + 1
+  %104 = load %struct.node*, %struct.node** %w.addr, l147 c37, asm ln 5857
   Added assignment asm ln 5857, prod ln 147.37, live ln 148, enc None
 Store to declared address of `w` (decl src ln 39), asm ln 5547
   arg 8
+  store %struct.node* %w, %struct.node** %w.addr, asm ln 5547
   Added assignment asm ln 5547, prod ln 39.0, live ln 72, enc None
 Load from declared address of `bea` (decl src ln 40), asm ln 5678
   %38 = load %struct.arc*, %struct.arc** %bea.addr, l106 c21, asm ln 5678
-  🔔 Live ln too early, using produced ln + 1
+  %38 = load %struct.arc*, %struct.arc** %bea.addr, l106 c21, asm ln 5678
   Added assignment asm ln 5678, prod ln 106.21, live ln 107, enc None
 Load from declared address of `bea` (decl src ln 40), asm ln 5576
   %4 = load %struct.arc*, %struct.arc** %bea.addr, l73 c10, asm ln 5576
-  🔔 Live ln too early, using produced ln + 1
+  %4 = load %struct.arc*, %struct.arc** %bea.addr, l73 c10, asm ln 5576
   Added assignment asm ln 5576, prod ln 73.10, live ln 74, enc None
 Load from declared address of `bea` (decl src ln 40), asm ln 5565
   %0 = load %struct.arc*, %struct.arc** %bea.addr, l72 c10, asm ln 5565
-  🔔 Live ln too early, using produced ln + 1
+  %0 = load %struct.arc*, %struct.arc** %bea.addr, l72 c10, asm ln 5565
   Added assignment asm ln 5565, prod ln 72.10, live ln 73, enc None
 Store to declared address of `bea` (decl src ln 40), asm ln 5549
   arg 9
+  store %struct.arc* %bea, %struct.arc** %bea.addr, asm ln 5549
   Added assignment asm ln 5549, prod ln 40.0, live ln 72, enc None
 Load from declared address of `sigma` (decl src ln 41), asm ln 5581
+  %7 = load i64, i64* %sigma.addr, asm ln 5581
   %7 = load i64, i64* %sigma.addr, asm ln 5581
   Added assignment asm ln 5581, prod ln 41.0, live ln 73, enc None
 Load from declared address of `sigma` (decl src ln 41), asm ln 5570
   %3 = load i64, i64* %sigma.addr, asm ln 5570
-  🔔 Missing produced ln, using decl ln
+  %3 = load i64, i64* %sigma.addr, asm ln 5570
   Added assignment asm ln 5570, prod ln 41.0, live ln 72, enc None
 Load from declared address of `sigma` (decl src ln 41), asm ln 5630
   %21 = load i64, i64* %sigma.addr, l85 c28, asm ln 5630
-  🔔 Live ln too early, using produced ln + 1
+  %21 = load i64, i64* %sigma.addr, l85 c28, asm ln 5630
   Added assignment asm ln 5630, prod ln 85.28, live ln 86, enc None
 Load from declared address of `sigma` (decl src ln 41), asm ln 5610
   %15 = load i64, i64* %sigma.addr, l79 c26, asm ln 5610
-  🔔 Live ln too early, using produced ln + 1
+  %15 = load i64, i64* %sigma.addr, l79 c26, asm ln 5610
   Added assignment asm ln 5610, prod ln 79.26, live ln 80, enc None
 Store to declared address of `sigma` (decl src ln 41), asm ln 5604
   %sub13 = sub nsw i64 0, %cond12, l76 c17, asm ln 5603
-  🔔 Missing live ln, using produced ln + 1
+  store i64 %sub13, i64* %sigma.addr, l76 c15, asm ln 5604
   Added assignment asm ln 5604, prod ln 76.17, live ln 77, enc None
 Load from declared address of `sigma` (decl src ln 41), asm ln 5600
   %13 = load i64, i64* %sigma.addr, l76 c19, asm ln 5600
-  🔔 Live ln too early, using produced ln + 1
+  %13 = load i64, i64* %sigma.addr, l76 c19, asm ln 5600
   Added assignment asm ln 5600, prod ln 76.19, live ln 77, enc None
 Load from declared address of `sigma` (decl src ln 41), asm ln 5599
   %12 = load i64, i64* %sigma.addr, l76 c19, asm ln 5599
-  🔔 Live ln too early, using produced ln + 1
+  %12 = load i64, i64* %sigma.addr, l76 c19, asm ln 5599
   Added assignment asm ln 5599, prod ln 76.19, live ln 77, enc None
 Load from declared address of `sigma` (decl src ln 41), asm ln 5597
   %11 = load i64, i64* %sigma.addr, l76 c19, asm ln 5597
-  🔔 Live ln too early, using produced ln + 1
+  %11 = load i64, i64* %sigma.addr, l76 c19, asm ln 5597
   Added assignment asm ln 5597, prod ln 76.19, live ln 77, enc None
 Store to declared address of `sigma` (decl src ln 41), asm ln 5593
   %cond = select i1 %cmp6, i64 %9, i64 %sub, l74 c17, asm ln 5592
-  🔔 Live ln too early, using produced ln + 1
+  store i64 %cond, i64* %sigma.addr, l74 c15, asm ln 5593
   Added assignment asm ln 5593, prod ln 74.17, live ln 75, enc None
 Load from declared address of `sigma` (decl src ln 41), asm ln 5590
   %10 = load i64, i64* %sigma.addr, l74 c17, asm ln 5590
-  🔔 Live ln too early, using produced ln + 1
+  %10 = load i64, i64* %sigma.addr, l74 c17, asm ln 5590
   Added assignment asm ln 5590, prod ln 74.17, live ln 75, enc None
 Load from declared address of `sigma` (decl src ln 41), asm ln 5589
   %9 = load i64, i64* %sigma.addr, l74 c17, asm ln 5589
-  🔔 Live ln too early, using produced ln + 1
+  %9 = load i64, i64* %sigma.addr, l74 c17, asm ln 5589
   Added assignment asm ln 5589, prod ln 74.17, live ln 75, enc None
 Load from declared address of `sigma` (decl src ln 41), asm ln 5587
   %8 = load i64, i64* %sigma.addr, l74 c17, asm ln 5587
-  🔔 Live ln too early, using produced ln + 1
+  %8 = load i64, i64* %sigma.addr, l74 c17, asm ln 5587
   Added assignment asm ln 5587, prod ln 74.17, live ln 75, enc None
 Store to declared address of `sigma` (decl src ln 41), asm ln 5551
   arg 10
+  store i64 %sigma, i64* %sigma.addr, asm ln 5551
   Added assignment asm ln 5551, prod ln 41.0, live ln 72, enc None
 Load from declared address of `feas_tol` (decl src ln 42), asm ln 5846
   %101 = load i64, i64* %feas_tol.addr, l145 c17, asm ln 5846
-  🔔 Live ln too early, using produced ln + 1
+  %101 = load i64, i64* %feas_tol.addr, l145 c17, asm ln 5846
   Added assignment asm ln 5846, prod ln 145.17, live ln 146, enc None
 Store to declared address of `feas_tol` (decl src ln 42), asm ln 5553
   arg 11
+  store i64 %feas_tol, i64* %feas_tol.addr, asm ln 5553
   Added assignment asm ln 5553, prod ln 42.0, live ln 72, enc None
 Load from declared address of `basic_arc_temp` (decl src ln 59), asm ln 5830
   %94 = load %struct.arc*, %struct.arc** %basic_arc_temp, l139 c25, asm ln 5830
-  🔔 Live ln too early, using produced ln + 1
+  %94 = load %struct.arc*, %struct.arc** %basic_arc_temp, l139 c25, asm ln 5830
   Added assignment asm ln 5830, prod ln 139.25, live ln 140, enc None
 Store to declared address of `basic_arc_temp` (decl src ln 59), asm ln 5802
   %80 = load %struct.arc*, %struct.arc** %basic_arc, l128 c32, asm ln 5801
+  store %struct.arc* %80, %struct.arc** %basic_arc_temp, l128 c24, asm ln 5802
   Added assignment asm ln 5802, prod ln 128.32, live ln 129, enc None
 Store to declared address of `new_basic_arc` (decl src ln 60), asm ln 5831
   %94 = load %struct.arc*, %struct.arc** %basic_arc_temp, l139 c25, asm ln 5830
+  store %struct.arc* %94, %struct.arc** %new_basic_arc, l139 c23, asm ln 5831
   Added assignment asm ln 5831, prod ln 139.25, live ln 140, enc None
 Load from declared address of `new_basic_arc` (decl src ln 60), asm ln 5816
   %87 = load %struct.arc*, %struct.arc** %new_basic_arc, l133 c27, asm ln 5816
-  🔔 Live ln too early, using produced ln + 1
+  %87 = load %struct.arc*, %struct.arc** %new_basic_arc, l133 c27, asm ln 5816
   Added assignment asm ln 5816, prod ln 133.27, live ln 134, enc None
 Store to declared address of `new_basic_arc` (decl src ln 60), asm ln 5679
   %38 = load %struct.arc*, %struct.arc** %bea.addr, l106 c21, asm ln 5678
+  store %struct.arc* %38, %struct.arc** %new_basic_arc, l106 c19, asm ln 5679
   Added assignment asm ln 5679, prod ln 106.21, live ln 107, enc None
 Store to declared address of `father` (decl src ln 61), asm ln 5841
   %99 = load %struct.node*, %struct.node** %pred69, l142 c24, asm ln 5840
-  🔔 Live ln too early, using produced ln + 1
+  store %struct.node* %99, %struct.node** %father, l142 c16, asm ln 5841
   Added assignment asm ln 5841, prod ln 142.24, live ln 143, enc None
 Load from declared address of `father` (decl src ln 61), asm ln 5836
   %97 = load %struct.node*, %struct.node** %father, l141 c16, asm ln 5836
-  🔔 Live ln too early, using produced ln + 1
+  %97 = load %struct.node*, %struct.node** %father, l141 c16, asm ln 5836
   Added assignment asm ln 5836, prod ln 141.16, live ln 142, enc None
 Load from declared address of `father` (decl src ln 61), asm ln 5728
   %55 = load %struct.node*, %struct.node** %father, l113 c14, asm ln 5728
-  🔔 Live ln too early, using produced ln + 1
+  %55 = load %struct.node*, %struct.node** %father, l113 c14, asm ln 5728
   Added assignment asm ln 5728, prod ln 113.14, live ln 114, enc None
 Store to declared address of `father` (decl src ln 61), asm ln 5670
   %34 = load %struct.node*, %struct.node** %pred24, l103 c20, asm ln 5669
+  store %struct.node* %34, %struct.node** %father, l103 c12, asm ln 5670
   Added assignment asm ln 5670, prod ln 103.20, live ln 104, enc None
 Store to declared address of `father` (decl src ln 61), asm ln 5660
   %31 = load %struct.node*, %struct.node** %pred, l95 c22, asm ln 5659
+  store %struct.node* %31, %struct.node** %father, l95 c12, asm ln 5660
   Added assignment asm ln 5660, prod ln 95.22, live ln 96, enc None
 Load from declared address of `father` (decl src ln 61), asm ln 5657
   %30 = load %struct.node*, %struct.node** %father, l95 c14, asm ln 5657
-  🔔 Live ln too early, using produced ln + 1
+  %30 = load %struct.node*, %struct.node** %father, l95 c14, asm ln 5657
   Added assignment asm ln 5657, prod ln 95.14, live ln 96, enc None
 Load from declared address of `father` (decl src ln 61), asm ln 5648
   %27 = load %struct.node*, %struct.node** %father, l92 c12, asm ln 5648
-  🔔 Live ln too early, using produced ln + 1
+  %27 = load %struct.node*, %struct.node** %father, l92 c12, asm ln 5648
   Added assignment asm ln 5648, prod ln 92.12, live ln 93, enc None
 Load from declared address of `father` (decl src ln 61), asm ln 5642
   %25 = load %struct.node*, %struct.node** %father, l90 c9, asm ln 5642
-  🔔 Live ln too early, using produced ln + 1
+  %25 = load %struct.node*, %struct.node** %father, l90 c9, asm ln 5642
   Added assignment asm ln 5642, prod ln 90.9, live ln 91, enc None
 Store to declared address of `father` (decl src ln 61), asm ln 5637
   %24 = load %struct.node*, %struct.node** %temp, l86 c18, asm ln 5636
+  store %struct.node* %24, %struct.node** %father, l86 c16, asm ln 5637
   Added assignment asm ln 5637, prod ln 86.18, live ln 87, enc None
 Load from declared address of `father` (decl src ln 61), asm ln 5620
   %18 = load %struct.node*, %struct.node** %father, l81 c12, asm ln 5620
-  🔔 Live ln too early, using produced ln + 1
+  %18 = load %struct.node*, %struct.node** %father, l81 c12, asm ln 5620
   Added assignment asm ln 5620, prod ln 81.12, live ln 82, enc None
 Load from declared address of `father` (decl src ln 61), asm ln 5611
   %16 = load %struct.node*, %struct.node** %father, l79 c5, asm ln 5611
-  🔔 Live ln too early, using produced ln + 1
+  %16 = load %struct.node*, %struct.node** %father, l79 c5, asm ln 5611
   Added assignment asm ln 5611, prod ln 79.5, live ln 80, enc None
 Store to declared address of `father` (decl src ln 61), asm ln 5609
   %14 = load %struct.node*, %struct.node** %iminus.addr, l78 c14, asm ln 5608
+  store %struct.node* %14, %struct.node** %father, l78 c12, asm ln 5609
   Added assignment asm ln 5609, prod ln 78.14, live ln 79, enc None
 Store to declared address of `temp` (decl src ln 62), asm ln 5997
   %151 = load %struct.node*, %struct.node** %pred126, l168 c52, asm ln 5996
-  🔔 Live ln too early, using produced ln + 1
+  store %struct.node* %151, %struct.node** %temp, l168 c44, asm ln 5997
   Added assignment asm ln 5997, prod ln 168.52, live ln 169, enc None
 Load from declared address of `temp` (decl src ln 62), asm ln 5994
   %150 = load %struct.node*, %struct.node** %temp, l168 c46, asm ln 5994
-  🔔 Live ln too early, using produced ln + 1
+  %150 = load %struct.node*, %struct.node** %temp, l168 c46, asm ln 5994
   Added assignment asm ln 5994, prod ln 168.46, live ln 169, enc None
 Load from declared address of `temp` (decl src ln 62), asm ln 5989
   %148 = load %struct.node*, %struct.node** %temp, l169 c13, asm ln 5989
-  🔔 Live ln too early, using produced ln + 1
+  %148 = load %struct.node*, %struct.node** %temp, l169 c13, asm ln 5989
   Added assignment asm ln 5989, prod ln 169.13, live ln 170, enc None
 Load from declared address of `temp` (decl src ln 62), asm ln 5982
   %145 = load %struct.node*, %struct.node** %temp, l168 c28, asm ln 5982
-  🔔 Live ln too early, using produced ln + 1
+  %145 = load %struct.node*, %struct.node** %temp, l168 c28, asm ln 5982
   Added assignment asm ln 5982, prod ln 168.28, live ln 169, enc None
 Store to declared address of `temp` (decl src ln 62), asm ln 5978
   %144 = load %struct.node*, %struct.node** %jplus.addr, l168 c21, asm ln 5977
-  🔔 Live ln too early, using produced ln + 1
+  store %struct.node* %144, %struct.node** %temp, l168 c19, asm ln 5978
   Added assignment asm ln 5978, prod ln 168.21, live ln 169, enc None
 Store to declared address of `temp` (decl src ln 62), asm ln 5973
   %143 = load %struct.node*, %struct.node** %pred117, l166 c53, asm ln 5972
-  🔔 Live ln too early, using produced ln + 1
+  store %struct.node* %143, %struct.node** %temp, l166 c45, asm ln 5973
   Added assignment asm ln 5973, prod ln 166.53, live ln 167, enc None
 Load from declared address of `temp` (decl src ln 62), asm ln 5970
   %142 = load %struct.node*, %struct.node** %temp, l166 c47, asm ln 5970
-  🔔 Live ln too early, using produced ln + 1
+  %142 = load %struct.node*, %struct.node** %temp, l166 c47, asm ln 5970
   Added assignment asm ln 5970, prod ln 166.47, live ln 167, enc None
 Load from declared address of `temp` (decl src ln 62), asm ln 5965
   %140 = load %struct.node*, %struct.node** %temp, l167 c13, asm ln 5965
-  🔔 Live ln too early, using produced ln + 1
+  %140 = load %struct.node*, %struct.node** %temp, l167 c13, asm ln 5965
   Added assignment asm ln 5965, prod ln 167.13, live ln 168, enc None
 Load from declared address of `temp` (decl src ln 62), asm ln 5958
   %137 = load %struct.node*, %struct.node** %temp, l166 c29, asm ln 5958
-  🔔 Live ln too early, using produced ln + 1
+  %137 = load %struct.node*, %struct.node** %temp, l166 c29, asm ln 5958
   Added assignment asm ln 5958, prod ln 166.29, live ln 167, enc None
 Store to declared address of `temp` (decl src ln 62), asm ln 5954
   %136 = load %struct.node*, %struct.node** %jminus.addr, l166 c21, asm ln 5953
-  🔔 Live ln too early, using produced ln + 1
+  store %struct.node* %136, %struct.node** %temp, l166 c19, asm ln 5954
   Added assignment asm ln 5954, prod ln 166.21, live ln 167, enc None
 Store to declared address of `temp` (decl src ln 62), asm ln 5949
   %135 = load %struct.node*, %struct.node** %pred107, l155 c52, asm ln 5948
-  🔔 Live ln too early, using produced ln + 1
+  store %struct.node* %135, %struct.node** %temp, l155 c44, asm ln 5949
   Added assignment asm ln 5949, prod ln 155.52, live ln 156, enc None
 Load from declared address of `temp` (decl src ln 62), asm ln 5946
   %134 = load %struct.node*, %struct.node** %temp, l155 c46, asm ln 5946
-  🔔 Live ln too early, using produced ln + 1
+  %134 = load %struct.node*, %struct.node** %temp, l155 c46, asm ln 5946
   Added assignment asm ln 5946, prod ln 155.46, live ln 156, enc None
 Load from declared address of `temp` (decl src ln 62), asm ln 5938
   %132 = load %struct.node*, %struct.node** %temp, l161 c17, asm ln 5938
-  🔔 Live ln too early, using produced ln + 1
+  %132 = load %struct.node*, %struct.node** %temp, l161 c17, asm ln 5938
   Added assignment asm ln 5938, prod ln 161.17, live ln 162, enc None
 Load from declared address of `temp` (decl src ln 62), asm ln 5929
   %129 = load %struct.node*, %struct.node** %temp, l159 c17, asm ln 5929
-  🔔 Live ln too early, using produced ln + 1
+  %129 = load %struct.node*, %struct.node** %temp, l159 c17, asm ln 5929
   Added assignment asm ln 5929, prod ln 159.17, live ln 160, enc None
 Load from declared address of `temp` (decl src ln 62), asm ln 5919
   %125 = load %struct.node*, %struct.node** %temp, l158 c17, asm ln 5919
-  🔔 Live ln too early, using produced ln + 1
+  %125 = load %struct.node*, %struct.node** %temp, l158 c17, asm ln 5919
   Added assignment asm ln 5919, prod ln 158.17, live ln 159, enc None
 Load from declared address of `temp` (decl src ln 62), asm ln 5914
   %123 = load %struct.node*, %struct.node** %temp, l157 c13, asm ln 5914
-  🔔 Live ln too early, using produced ln + 1
+  %123 = load %struct.node*, %struct.node** %temp, l157 c13, asm ln 5914
   Added assignment asm ln 5914, prod ln 157.13, live ln 158, enc None
 Load from declared address of `temp` (decl src ln 62), asm ln 5907
   %120 = load %struct.node*, %struct.node** %temp, l155 c28, asm ln 5907
-  🔔 Live ln too early, using produced ln + 1
+  %120 = load %struct.node*, %struct.node** %temp, l155 c28, asm ln 5907
   Added assignment asm ln 5907, prod ln 155.28, live ln 156, enc None
 Store to declared address of `temp` (decl src ln 62), asm ln 5903
   %119 = load %struct.node*, %struct.node** %jplus.addr, l155 c21, asm ln 5902
-  🔔 Live ln too early, using produced ln + 1
+  store %struct.node* %119, %struct.node** %temp, l155 c19, asm ln 5903
   Added assignment asm ln 5903, prod ln 155.21, live ln 156, enc None
 Store to declared address of `temp` (decl src ln 62), asm ln 5898
   %118 = load %struct.node*, %struct.node** %pred88, l147 c53, asm ln 5897
-  🔔 Live ln too early, using produced ln + 1
+  store %struct.node* %118, %struct.node** %temp, l147 c45, asm ln 5898
   Added assignment asm ln 5898, prod ln 147.53, live ln 148, enc None
 Load from declared address of `temp` (decl src ln 62), asm ln 5895
   %117 = load %struct.node*, %struct.node** %temp, l147 c47, asm ln 5895
-  🔔 Live ln too early, using produced ln + 1
+  %117 = load %struct.node*, %struct.node** %temp, l147 c47, asm ln 5895
   Added assignment asm ln 5895, prod ln 147.47, live ln 148, enc None
 Load from declared address of `temp` (decl src ln 62), asm ln 5887
   %115 = load %struct.node*, %struct.node** %temp, l153 c17, asm ln 5887
-  🔔 Live ln too early, using produced ln + 1
+  %115 = load %struct.node*, %struct.node** %temp, l153 c17, asm ln 5887
   Added assignment asm ln 5887, prod ln 153.17, live ln 154, enc None
 Load from declared address of `temp` (decl src ln 62), asm ln 5878
   %112 = load %struct.node*, %struct.node** %temp, l151 c17, asm ln 5878
-  🔔 Live ln too early, using produced ln + 1
+  %112 = load %struct.node*, %struct.node** %temp, l151 c17, asm ln 5878
   Added assignment asm ln 5878, prod ln 151.17, live ln 152, enc None
 Load from declared address of `temp` (decl src ln 62), asm ln 5868
   %108 = load %struct.node*, %struct.node** %temp, l150 c17, asm ln 5868
-  🔔 Live ln too early, using produced ln + 1
+  %108 = load %struct.node*, %struct.node** %temp, l150 c17, asm ln 5868
   Added assignment asm ln 5868, prod ln 150.17, live ln 151, enc None
 Load from declared address of `temp` (decl src ln 62), asm ln 5863
   %106 = load %struct.node*, %struct.node** %temp, l149 c13, asm ln 5863
-  🔔 Live ln too early, using produced ln + 1
+  %106 = load %struct.node*, %struct.node** %temp, l149 c13, asm ln 5863
   Added assignment asm ln 5863, prod ln 149.13, live ln 150, enc None
 Load from declared address of `temp` (decl src ln 62), asm ln 5856
   %103 = load %struct.node*, %struct.node** %temp, l147 c29, asm ln 5856
-  🔔 Live ln too early, using produced ln + 1
+  %103 = load %struct.node*, %struct.node** %temp, l147 c29, asm ln 5856
   Added assignment asm ln 5856, prod ln 147.29, live ln 148, enc None
 Store to declared address of `temp` (decl src ln 62), asm ln 5852
   %102 = load %struct.node*, %struct.node** %jminus.addr, l147 c21, asm ln 5851
-  🔔 Live ln too early, using produced ln + 1
+  store %struct.node* %102, %struct.node** %temp, l147 c19, asm ln 5852
   Added assignment asm ln 5852, prod ln 147.21, live ln 148, enc None
 Load from declared address of `temp` (decl src ln 62), asm ln 5838
   %98 = load %struct.node*, %struct.node** %temp, l142 c18, asm ln 5838
-  🔔 Live ln too early, using produced ln + 1
+  %98 = load %struct.node*, %struct.node** %temp, l142 c18, asm ln 5838
   Added assignment asm ln 5838, prod ln 142.18, live ln 143, enc None
 Store to declared address of `temp` (decl src ln 62), asm ln 5837
   %97 = load %struct.node*, %struct.node** %father, l141 c16, asm ln 5836
+  store %struct.node* %97, %struct.node** %temp, l141 c14, asm ln 5837
   Added assignment asm ln 5837, prod ln 141.16, live ln 142, enc None
 Load from declared address of `temp` (decl src ln 62), asm ln 5824
   %91 = load %struct.node*, %struct.node** %temp, l136 c20, asm ln 5824
-  🔔 Live ln too early, using produced ln + 1
+  %91 = load %struct.node*, %struct.node** %temp, l136 c20, asm ln 5824
   Added assignment asm ln 5824, prod ln 136.20, live ln 137, enc None
 Load from declared address of `temp` (decl src ln 62), asm ln 5821
   %90 = load %struct.node*, %struct.node** %temp, l134 c9, asm ln 5821
-  🔔 Live ln too early, using produced ln + 1
+  %90 = load %struct.node*, %struct.node** %temp, l134 c9, asm ln 5821
   Added assignment asm ln 5821, prod ln 134.9, live ln 135, enc None
 Load from declared address of `temp` (decl src ln 62), asm ln 5817
   %88 = load %struct.node*, %struct.node** %temp, l133 c9, asm ln 5817
-  🔔 Live ln too early, using produced ln + 1
+  %88 = load %struct.node*, %struct.node** %temp, l133 c9, asm ln 5817
   Added assignment asm ln 5817, prod ln 133.9, live ln 134, enc None
 Load from declared address of `temp` (decl src ln 62), asm ln 5813
   %86 = load %struct.node*, %struct.node** %temp, l132 c9, asm ln 5813
-  🔔 Live ln too early, using produced ln + 1
+  %86 = load %struct.node*, %struct.node** %temp, l132 c9, asm ln 5813
   Added assignment asm ln 5813, prod ln 132.9, live ln 133, enc None
 Load from declared address of `temp` (decl src ln 62), asm ln 5809
   %84 = load %struct.node*, %struct.node** %temp, l131 c9, asm ln 5809
-  🔔 Live ln too early, using produced ln + 1
+  %84 = load %struct.node*, %struct.node** %temp, l131 c9, asm ln 5809
   Added assignment asm ln 5809, prod ln 131.9, live ln 132, enc None
 Load from declared address of `temp` (decl src ln 62), asm ln 5803
   %81 = load %struct.node*, %struct.node** %temp, l129 c22, asm ln 5803
-  🔔 Live ln too early, using produced ln + 1
+  %81 = load %struct.node*, %struct.node** %temp, l129 c22, asm ln 5803
   Added assignment asm ln 5803, prod ln 129.22, live ln 130, enc None
 Load from declared address of `temp` (decl src ln 62), asm ln 5799
   %79 = load %struct.node*, %struct.node** %temp, l128 c26, asm ln 5799
-  🔔 Live ln too early, using produced ln + 1
+  %79 = load %struct.node*, %struct.node** %temp, l128 c26, asm ln 5799
   Added assignment asm ln 5799, prod ln 128.26, live ln 129, enc None
 Load from declared address of `temp` (decl src ln 62), asm ln 5790
   %76 = load %struct.node*, %struct.node** %temp, l127 c25, asm ln 5790
-  🔔 Live ln too early, using produced ln + 1
+  %76 = load %struct.node*, %struct.node** %temp, l127 c25, asm ln 5790
   Added assignment asm ln 5790, prod ln 127.25, live ln 128, enc None
 Load from declared address of `temp` (decl src ln 62), asm ln 5781
   %73 = load %struct.node*, %struct.node** %temp, l125 c25, asm ln 5781
-  🔔 Live ln too early, using produced ln + 1
+  %73 = load %struct.node*, %struct.node** %temp, l125 c25, asm ln 5781
   Added assignment asm ln 5781, prod ln 125.25, live ln 126, enc None
 Load from declared address of `temp` (decl src ln 62), asm ln 5767
   %69 = load %struct.node*, %struct.node** %temp, l123 c30, asm ln 5767
-  🔔 Live ln too early, using produced ln + 1
+  %69 = load %struct.node*, %struct.node** %temp, l123 c30, asm ln 5767
   Added assignment asm ln 5767, prod ln 123.30, live ln 124, enc None
 Load from declared address of `temp` (decl src ln 62), asm ln 5764
   %68 = load %struct.node*, %struct.node** %temp, l121 c9, asm ln 5764
-  🔔 Live ln too early, using produced ln + 1
+  %68 = load %struct.node*, %struct.node** %temp, l121 c9, asm ln 5764
   Added assignment asm ln 5764, prod ln 121.9, live ln 122, enc None
 Load from declared address of `temp` (decl src ln 62), asm ln 5760
   %66 = load %struct.node*, %struct.node** %temp, l120 c27, asm ln 5760
-  🔔 Live ln too early, using produced ln + 1
+  %66 = load %struct.node*, %struct.node** %temp, l120 c27, asm ln 5760
   Added assignment asm ln 5760, prod ln 120.27, live ln 121, enc None
 Load from declared address of `temp` (decl src ln 62), asm ln 5752
   %64 = load %struct.node*, %struct.node** %temp, l119 c13, asm ln 5752
-  🔔 Live ln too early, using produced ln + 1
+  %64 = load %struct.node*, %struct.node** %temp, l119 c13, asm ln 5752
   Added assignment asm ln 5752, prod ln 119.13, live ln 120, enc None
 Load from declared address of `temp` (decl src ln 62), asm ln 5751
   %63 = load %struct.node*, %struct.node** %temp, l119 c43, asm ln 5751
-  🔔 Live ln too early, using produced ln + 1
+  %63 = load %struct.node*, %struct.node** %temp, l119 c43, asm ln 5751
   Added assignment asm ln 5751, prod ln 119.43, live ln 120, enc None
 Load from declared address of `temp` (decl src ln 62), asm ln 5744
   %61 = load %struct.node*, %struct.node** %temp, l118 c13, asm ln 5744
-  🔔 Live ln too early, using produced ln + 1
+  %61 = load %struct.node*, %struct.node** %temp, l118 c13, asm ln 5744
   Added assignment asm ln 5744, prod ln 118.13, live ln 119, enc None
 Load from declared address of `temp` (decl src ln 62), asm ln 5741
   %60 = load %struct.node*, %struct.node** %temp, l117 c9, asm ln 5741
-  🔔 Live ln too early, using produced ln + 1
+  %60 = load %struct.node*, %struct.node** %temp, l117 c9, asm ln 5741
   Added assignment asm ln 5741, prod ln 117.9, live ln 118, enc None
 Load from declared address of `temp` (decl src ln 62), asm ln 5735
   %57 = load %struct.node*, %struct.node** %temp, l116 c9, asm ln 5735
-  🔔 Live ln too early, using produced ln + 1
+  %57 = load %struct.node*, %struct.node** %temp, l116 c9, asm ln 5735
   Added assignment asm ln 5735, prod ln 116.9, live ln 117, enc None
 Load from declared address of `temp` (decl src ln 62), asm ln 5725
   %53 = load %struct.node*, %struct.node** %temp, l113 c30, asm ln 5725
-  🔔 Live ln too early, using produced ln + 1
+  %53 = load %struct.node*, %struct.node** %temp, l113 c30, asm ln 5725
   Added assignment asm ln 5725, prod ln 113.30, live ln 114, enc None
 Load from declared address of `temp` (decl src ln 62), asm ln 5717
   %51 = load %struct.node*, %struct.node** %temp, l112 c13, asm ln 5717
-  🔔 Live ln too early, using produced ln + 1
+  %51 = load %struct.node*, %struct.node** %temp, l112 c13, asm ln 5717
   Added assignment asm ln 5717, prod ln 112.13, live ln 113, enc None
 Load from declared address of `temp` (decl src ln 62), asm ln 5714
   %49 = load %struct.node*, %struct.node** %temp, l112 c43, asm ln 5714
-  🔔 Live ln too early, using produced ln + 1
+  %49 = load %struct.node*, %struct.node** %temp, l112 c43, asm ln 5714
   Added assignment asm ln 5714, prod ln 112.43, live ln 113, enc None
 Load from declared address of `temp` (decl src ln 62), asm ln 5707
   %47 = load %struct.node*, %struct.node** %temp, l111 c13, asm ln 5707
-  🔔 Live ln too early, using produced ln + 1
+  %47 = load %struct.node*, %struct.node** %temp, l111 c13, asm ln 5707
   Added assignment asm ln 5707, prod ln 111.13, live ln 112, enc None
 Load from declared address of `temp` (decl src ln 62), asm ln 5699
   %45 = load %struct.node*, %struct.node** %temp, l110 c13, asm ln 5699
-  🔔 Live ln too early, using produced ln + 1
+  %45 = load %struct.node*, %struct.node** %temp, l110 c13, asm ln 5699
   Added assignment asm ln 5699, prod ln 110.13, live ln 111, enc None
 Load from declared address of `temp` (decl src ln 62), asm ln 5696
   %43 = load %struct.node*, %struct.node** %temp, l110 c43, asm ln 5696
-  🔔 Live ln too early, using produced ln + 1
+  %43 = load %struct.node*, %struct.node** %temp, l110 c43, asm ln 5696
   Added assignment asm ln 5696, prod ln 110.43, live ln 111, enc None
 Load from declared address of `temp` (decl src ln 62), asm ln 5689
   %41 = load %struct.node*, %struct.node** %temp, l109 c13, asm ln 5689
-  🔔 Live ln too early, using produced ln + 1
+  %41 = load %struct.node*, %struct.node** %temp, l109 c13, asm ln 5689
   Added assignment asm ln 5689, prod ln 109.13, live ln 110, enc None
 Load from declared address of `temp` (decl src ln 62), asm ln 5683
   %39 = load %struct.node*, %struct.node** %temp, l107 c12, asm ln 5683
-  🔔 Live ln too early, using produced ln + 1
+  %39 = load %struct.node*, %struct.node** %temp, l107 c12, asm ln 5683
   Added assignment asm ln 5683, prod ln 107.12, live ln 108, enc None
 Load from declared address of `temp` (decl src ln 62), asm ln 5667
   %33 = load %struct.node*, %struct.node** %temp, l103 c14, asm ln 5667
-  🔔 Live ln too early, using produced ln + 1
+  %33 = load %struct.node*, %struct.node** %temp, l103 c14, asm ln 5667
   Added assignment asm ln 5667, prod ln 103.14, live ln 104, enc None
 Store to declared address of `temp` (decl src ln 62), asm ln 5666
   %32 = load %struct.node*, %struct.node** %iplus.addr, l102 c12, asm ln 5665
+  store %struct.node* %32, %struct.node** %temp, l102 c10, asm ln 5666
   Added assignment asm ln 5666, prod ln 102.12, live ln 103, enc None
 Load from declared address of `temp` (decl src ln 62), asm ln 5652
   %29 = load %struct.node*, %struct.node** %temp, l93 c9, asm ln 5652
-  🔔 Live ln too early, using produced ln + 1
+  %29 = load %struct.node*, %struct.node** %temp, l93 c9, asm ln 5652
   Added assignment asm ln 5652, prod ln 93.9, live ln 94, enc None
 Store to declared address of `temp` (decl src ln 62), asm ln 5651
   %28 = load %struct.node*, %struct.node** %sibling, l92 c20, asm ln 5650
+  store %struct.node* %28, %struct.node** %temp, l92 c10, asm ln 5651
   Added assignment asm ln 5651, prod ln 92.20, live ln 93, enc None
 Load from declared address of `temp` (decl src ln 62), asm ln 5636
   %24 = load %struct.node*, %struct.node** %temp, l86 c18, asm ln 5636
-  🔔 Live ln too early, using produced ln + 1
+  %24 = load %struct.node*, %struct.node** %temp, l86 c18, asm ln 5636
   Added assignment asm ln 5636, prod ln 86.18, live ln 87, enc None
 Load from declared address of `temp` (decl src ln 62), asm ln 5631
   %22 = load %struct.node*, %struct.node** %temp, l85 c9, asm ln 5631
-  🔔 Live ln too early, using produced ln + 1
+  %22 = load %struct.node*, %struct.node** %temp, l85 c9, asm ln 5631
   Added assignment asm ln 5631, prod ln 85.9, live ln 86, enc None
 Load from declared address of `temp` (decl src ln 62), asm ln 5624
   %20 = load %struct.node*, %struct.node** %temp, l82 c9, asm ln 5624
-  🔔 Live ln too early, using produced ln + 1
+  %20 = load %struct.node*, %struct.node** %temp, l82 c9, asm ln 5624
   Added assignment asm ln 5624, prod ln 82.9, live ln 83, enc None
 Store to declared address of `temp` (decl src ln 62), asm ln 5623
   %19 = load %struct.node*, %struct.node** %child, l81 c20, asm ln 5622
+  store %struct.node* %19, %struct.node** %temp, l81 c10, asm ln 5623
   Added assignment asm ln 5623, prod ln 81.20, live ln 82, enc None
 Store to declared address of `new_pred` (decl src ln 63), asm ln 5825
   %91 = load %struct.node*, %struct.node** %temp, l136 c20, asm ln 5824
+  store %struct.node* %91, %struct.node** %new_pred, l136 c18, asm ln 5825
   Added assignment asm ln 5825, prod ln 136.20, live ln 137, enc None
 Load from declared address of `new_pred` (decl src ln 63), asm ln 5761
   %67 = load %struct.node*, %struct.node** %new_pred, l120 c9, asm ln 5761
-  🔔 Live ln too early, using produced ln + 1
+  %67 = load %struct.node*, %struct.node** %new_pred, l120 c9, asm ln 5761
   Added assignment asm ln 5761, prod ln 120.9, live ln 121, enc None
 Load from declared address of `new_pred` (decl src ln 63), asm ln 5738
   %58 = load %struct.node*, %struct.node** %new_pred, l117 c25, asm ln 5738
-  🔔 Live ln too early, using produced ln + 1
+  %58 = load %struct.node*, %struct.node** %new_pred, l117 c25, asm ln 5738
   Added assignment asm ln 5738, prod ln 117.25, live ln 118, enc None
 Load from declared address of `new_pred` (decl src ln 63), asm ln 5734
   %56 = load %struct.node*, %struct.node** %new_pred, l116 c22, asm ln 5734
-  🔔 Live ln too early, using produced ln + 1
+  %56 = load %struct.node*, %struct.node** %new_pred, l116 c22, asm ln 5734
   Added assignment asm ln 5734, prod ln 116.22, live ln 117, enc None
 Store to declared address of `new_pred` (decl src ln 63), asm ln 5677
   %37 = load %struct.node*, %struct.node** %jplus.addr, l105 c16, asm ln 5676
+  store %struct.node* %37, %struct.node** %new_pred, l105 c14, asm ln 5677
   Added assignment asm ln 5677, prod ln 105.16, live ln 106, enc None
 Load from declared address of `orientation_temp` (decl src ln 64), asm ln 5826
   %92 = load i64, i64* %orientation_temp, l137 c27, asm ln 5826
-  🔔 Live ln too early, using produced ln + 1
+  %92 = load i64, i64* %orientation_temp, l137 c27, asm ln 5826
   Added assignment asm ln 5826, prod ln 137.27, live ln 138, enc None
 Load from declared address of `orientation_temp` (decl src ln 64), asm ln 5775
   %71 = load i64, i64* %orientation_temp, l124 c13, asm ln 5775
-  🔔 Live ln too early, using produced ln + 1
+  %71 = load i64, i64* %orientation_temp, l124 c13, asm ln 5775
   Added assignment asm ln 5775, prod ln 124.13, live ln 125, enc None
 Store to declared address of `orientation_temp` (decl src ln 64), asm ln 5774
   %conv = sext i32 %lnot.ext to i64, l123 c28, asm ln 5773
+  store i64 %conv, i64* %orientation_temp, l123 c26, asm ln 5774
   Added assignment asm ln 5774, prod ln 123.28, live ln 124, enc None
 Load from declared address of `depth_temp` (decl src ln 65), asm ln 5833
   %96 = load i64, i64* %depth_temp, l140 c36, asm ln 5833
-  🔔 Live ln too early, using produced ln + 1
+  %96 = load i64, i64* %depth_temp, l140 c36, asm ln 5833
   Added assignment asm ln 5833, prod ln 140.36, live ln 141, enc None
 Store to declared address of `depth_temp` (decl src ln 65), asm ln 5806
   %82 = load i64, i64* %depth62, l129 c28, asm ln 5805
+  store i64 %82, i64* %depth_temp, l129 c20, asm ln 5806
   Added assignment asm ln 5806, prod ln 129.28, live ln 131, enc None
 Load from declared address of `depth_iminus` (decl src ln 66), asm ln 5988
   %147 = load i64, i64* %depth_iminus, l169 c28, asm ln 5988
-  🔔 Live ln too early, using produced ln + 1
+  %147 = load i64, i64* %depth_iminus, l169 c28, asm ln 5988
   Added assignment asm ln 5988, prod ln 169.28, live ln 170, enc None
 Load from declared address of `depth_iminus` (decl src ln 66), asm ln 5964
   %139 = load i64, i64* %depth_iminus, l167 c28, asm ln 5964
-  🔔 Live ln too early, using produced ln + 1
+  %139 = load i64, i64* %depth_iminus, l167 c28, asm ln 5964
   Added assignment asm ln 5964, prod ln 167.28, live ln 168, enc None
 Load from declared address of `depth_iminus` (decl src ln 66), asm ln 5913
   %122 = load i64, i64* %depth_iminus, l157 c28, asm ln 5913
-  🔔 Live ln too early, using produced ln + 1
+  %122 = load i64, i64* %depth_iminus, l157 c28, asm ln 5913
   Added assignment asm ln 5913, prod ln 157.28, live ln 158, enc None
 Load from declared address of `depth_iminus` (decl src ln 66), asm ln 5862
   %105 = load i64, i64* %depth_iminus, l149 c28, asm ln 5862
-  🔔 Live ln too early, using produced ln + 1
+  %105 = load i64, i64* %depth_iminus, l149 c28, asm ln 5862
   Added assignment asm ln 5862, prod ln 149.28, live ln 150, enc None
 Load from declared address of `depth_iminus` (decl src ln 66), asm ln 5832
   %95 = load i64, i64* %depth_iminus, l140 c21, asm ln 5832
-  🔔 Live ln too early, using produced ln + 1
+  %95 = load i64, i64* %depth_iminus, l140 c21, asm ln 5832
   Added assignment asm ln 5832, prod ln 140.21, live ln 141, enc None
 Store to declared address of `depth_iminus` (decl src ln 66), asm ln 5674
   %36 = load i64, i64* %depth, l104 c40, asm ln 5673
-  🔔 Live ln too early, using produced ln + 1
+  store i64 %36, i64* %depth_iminus, l104 c30, asm ln 5674
   Added assignment asm ln 5674, prod ln 104.40, live ln 105, enc None
 Store to declared address of `new_depth` (decl src ln 67), asm ln 5835
   %sub68 = sub nsw i64 %95, %96, l140 c34, asm ln 5834
+  store i64 %sub68, i64* %new_depth, l140 c19, asm ln 5835
   Added assignment asm ln 5835, prod ln 140.34, live ln 141, enc None
 Load from declared address of `new_depth` (decl src ln 67), asm ln 5820
   %89 = load i64, i64* %new_depth, l134 c23, asm ln 5820
-  🔔 Live ln too early, using produced ln + 1
+  %89 = load i64, i64* %new_depth, l134 c23, asm ln 5820
   Added assignment asm ln 5820, prod ln 134.23, live ln 135, enc None
 Store to declared address of `new_depth` (decl src ln 67), asm ln 5675
   %36 = load i64, i64* %depth, l104 c40, asm ln 5673
+  store i64 %36, i64* %new_depth, l104 c15, asm ln 5675
   Added assignment asm ln 5675, prod ln 104.40, live ln 105, enc None
 Load from declared address of `flow_temp` (decl src ln 68), asm ln 5828
   %93 = load i64, i64* %flow_temp, l138 c20, asm ln 5828
-  🔔 Live ln too early, using produced ln + 1
+  %93 = load i64, i64* %flow_temp, l138 c20, asm ln 5828
   Added assignment asm ln 5828, prod ln 138.20, live ln 139, enc None
 Store to declared address of `flow_temp` (decl src ln 68), asm ln 5795
   %sub60 = sub nsw i64 %77, %78, l127 c36, asm ln 5794
-  🔔 Missing live ln, using produced ln + 1
+  store i64 %sub60, i64* %flow_temp, l127 c23, asm ln 5795
   Added assignment asm ln 5795, prod ln 127.36, live ln 128, enc None
 Store to declared address of `flow_temp` (decl src ln 68), asm ln 5786
   %add57 = add nsw i64 %74, %75, l125 c36, asm ln 5785
-  🔔 Live ln too early, using produced ln + 1
+  store i64 %add57, i64* %flow_temp, l125 c23, asm ln 5786
   Added assignment asm ln 5786, prod ln 125.36, live ln 126, enc None
 
 #### After variables
 
 Value produced for `cycle_ori` (decl src ln 31), asm ln 4075
   arg 0
+  @dbg.value(i64 %cycle_ori, !3382), asm ln 4075
   Added assignment asm ln 4075, prod ln 31.0, live ln 72, enc None
 Value produced for `new_orientation` (decl src ln 32), asm ln 4076
   arg 1
+  @dbg.value(i64 %new_orientation, !3384), asm ln 4076
   Added assignment asm ln 4076, prod ln 32.0, live ln 72, enc None
 Value produced for `delta` (decl src ln 33), asm ln 4077
   arg 2
+  @dbg.value(i64 %delta, !3385), asm ln 4077
   Added assignment asm ln 4077, prod ln 33.0, live ln 72, enc None
 Value produced for `new_flow` (decl src ln 34), asm ln 4078
   arg 3
+  @dbg.value(i64 %new_flow, !3386), asm ln 4078
   Added assignment asm ln 4078, prod ln 34.0, live ln 72, enc None
 Value produced for `iplus` (decl src ln 35), asm ln 4079
   arg 4
+  @dbg.value(%struct.node.1* %iplus, !3387), asm ln 4079
   Added assignment asm ln 4079, prod ln 35.0, live ln 72, enc None
 Value produced for `jplus` (decl src ln 36), asm ln 4080
   arg 5
+  @dbg.value(%struct.node.1* %jplus, !3388), asm ln 4080
   Added assignment asm ln 4080, prod ln 36.0, live ln 72, enc None
 Value produced for `iminus` (decl src ln 37), asm ln 4081
   arg 6
+  @dbg.value(%struct.node.1* %iminus, !3389), asm ln 4081
   Added assignment asm ln 4081, prod ln 37.0, live ln 72, enc None
 Value produced for `jminus` (decl src ln 38), asm ln 4082
   arg 7
+  @dbg.value(%struct.node.1* %jminus, !3390), asm ln 4082
   Added assignment asm ln 4082, prod ln 38.0, live ln 72, enc None
 Value produced for `w` (decl src ln 39), asm ln 4083
   arg 8
+  @dbg.value(%struct.node.1* %w, !3391), asm ln 4083
   Added assignment asm ln 4083, prod ln 39.0, live ln 72, enc None
 Value produced for `bea` (decl src ln 40), asm ln 4084
   arg 9
+  @dbg.value(%struct.arc.0* %bea, !3392), asm ln 4084
   Added assignment asm ln 4084, prod ln 40.0, live ln 72, enc None
 Value produced for `sigma` (decl src ln 41), asm ln 4085
   arg 10
+  @dbg.value(i64 %sigma, !3393), asm ln 4085
   Added assignment asm ln 4085, prod ln 41.0, live ln 72, enc None
 Value produced for `feas_tol` (decl src ln 42), asm ln 4086
   arg 11
+  @dbg.value(i64 %feas_tol, !3394), asm ln 4086
   Added assignment asm ln 4086, prod ln 42.0, live ln 72, enc None
 Value produced for `sigma` (decl src ln 41), asm ln 4113
   %sub13 = sub nsw i64 0, %cond12, l76 c17, asm ln 4112
-  🔔 Missing live ln, using produced ln + 1
+  @dbg.value(i64 %sub13, !3393), asm ln 4113
   Added assignment asm ln 4113, prod ln 76.17, live ln 77, enc None
 Value produced for `father` (decl src ln 61), asm ln 4119
   arg 6
+  @dbg.value(%struct.node.1* %iminus, !3406), asm ln 4119
   Added assignment asm ln 4119, prod ln 61.0, live ln 79, enc None
 Value produced for `temp` (decl src ln 62), asm ln 4132
   %3 = load %struct.node.1*, %struct.node.1** %child, l81 c20, asm ln 4131
+  @dbg.value(%struct.node.1* %3, !3413), asm ln 4132
   Added assignment asm ln 4132, prod ln 81.20, live ln 82, enc None
 Value produced for `temp` (decl src ln 62), asm ln 4157
   %5 = load %struct.node.1*, %struct.node.1** %sibling, l92 c20, asm ln 4156
+  @dbg.value(%struct.node.1* %5, !3413), asm ln 4157
   Added assignment asm ln 4157, prod ln 92.20, live ln 93, enc None
 Value produced for `father` (decl src ln 61), asm ln 4164
   %6 = load %struct.node.1*, %struct.node.1** %pred, l95 c22, asm ln 4163
+  @dbg.value(%struct.node.1* %6, !3406), asm ln 4164
   Added assignment asm ln 4164, prod ln 95.22, live ln 96, enc None
 Value produced for `temp` (decl src ln 62), asm ln 4169
   arg 4
+  @dbg.value(%struct.node.1* %iplus, !3413), asm ln 4169
   Added assignment asm ln 4169, prod ln 62.0, live ln 103, enc None
 Value produced for `father` (decl src ln 61), asm ln 4172
   %7 = load %struct.node.1*, %struct.node.1** %pred24, l103 c20, asm ln 4171
+  @dbg.value(%struct.node.1* %7, !3406), asm ln 4172
   Added assignment asm ln 4172, prod ln 103.20, live ln 104, enc None
 Value produced for `depth_iminus` (decl src ln 66), asm ln 4175
   %8 = load i64, i64* %depth, l104 c40, asm ln 4174
+  @dbg.value(i64 %8, !3438), asm ln 4175
   Added assignment asm ln 4175, prod ln 104.40, live ln 107, enc None
 Value produced for `new_depth` (decl src ln 67), asm ln 4176
   %8 = load i64, i64* %depth, l104 c40, asm ln 4174
+  @dbg.value(i64 %8, !3439), asm ln 4176
   Added assignment asm ln 4176, prod ln 104.40, live ln 107, enc None
 Value produced for `new_pred` (decl src ln 63), asm ln 4177
   arg 5
+  @dbg.value(%struct.node.1* %jplus, !3440), asm ln 4177
   Added assignment asm ln 4177, prod ln 63.0, live ln 107, enc None
 Value produced for `new_basic_arc` (decl src ln 60), asm ln 4178
   arg 9
+  @dbg.value(%struct.arc.0* %bea, !3441), asm ln 4178
   Added assignment asm ln 4178, prod ln 60.0, live ln 107, enc None
 Value produced for `orientation_temp` (decl src ln 64), asm ln 4266
   %conv = sext i32 %lnot.ext to i64, l123 c28, asm ln 4265
+  @dbg.value(i64 %conv, !3485), asm ln 4266
   Added assignment asm ln 4266, prod ln 123.28, live ln 124, enc None
 Value produced for `flow_temp` (decl src ln 68), asm ln 4274
   %add57 = add nsw i64 %20, %delta, l125 c36, asm ln 4273
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %add57, !3491), asm ln 4274
   Added assignment asm ln 4274, prod ln 125.36, live ln 126, enc None
 Value produced for `flow_temp` (decl src ln 68), asm ln 4281
   %sub60 = sub nsw i64 %21, %delta, l127 c36, asm ln 4280
-  🔔 Missing live ln, using produced ln + 1
+  @dbg.value(i64 %sub60, !3491), asm ln 4281
   Added assignment asm ln 4281, prod ln 127.36, live ln 128, enc None
 Value produced for `basic_arc_temp` (decl src ln 59), asm ln 4289
   %22 = load %struct.arc.0*, %struct.arc.0** %basic_arc, l128 c32, asm ln 4288
+  @dbg.value(%struct.arc.0* %22, !3497), asm ln 4289
   Added assignment asm ln 4289, prod ln 128.32, live ln 129, enc None
 Value produced for `depth_temp` (decl src ln 65), asm ln 4292
   %23 = load i64, i64* %depth62, l129 c28, asm ln 4291
+  @dbg.value(i64 %23, !3499), asm ln 4292
   Added assignment asm ln 4292, prod ln 129.28, live ln 131, enc None
 Value produced for `new_orientation` (decl src ln 32), asm ln 4303
   %conv = sext i32 %lnot.ext to i64, l123 c28, asm ln 4265
+  @dbg.value(i64 %conv, !3384), asm ln 4303
   Added assignment asm ln 4303, prod ln 123.28, live ln 140, enc None
 Value produced for `new_basic_arc` (decl src ln 60), asm ln 4305
   %22 = load %struct.arc.0*, %struct.arc.0** %basic_arc, l128 c32, asm ln 4288
+  @dbg.value(%struct.arc.0* %22, !3441), asm ln 4305
   Added assignment asm ln 4305, prod ln 128.32, live ln 140, enc None
 Value produced for `new_depth` (decl src ln 67), asm ln 4307
   %sub68 = sub nsw i64 %8, %23, l140 c34, asm ln 4306
+  @dbg.value(i64 %sub68, !3439), asm ln 4307
   Added assignment asm ln 4307, prod ln 140.34, live ln 142, enc None
 Value produced for `father` (decl src ln 61), asm ln 4311
   %24 = load %struct.node.1*, %struct.node.1** %pred69, l142 c24, asm ln 4310
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(%struct.node.1* %24, !3406), asm ln 4311
   Added assignment asm ln 4311, prod ln 142.24, live ln 143, enc None
 Value produced for `temp` (decl src ln 62), asm ln 4354
   %29 = load %struct.node.1*, %struct.node.1** %pred88, l147 c53, asm ln 4353
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(%struct.node.1* %29, !3413), asm ln 4354
   Added assignment asm ln 4354, prod ln 147.53, live ln 148, enc None
 Value produced for `temp` (decl src ln 62), asm ln 4391
   %34 = load %struct.node.1*, %struct.node.1** %pred107, l155 c52, asm ln 4390
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(%struct.node.1* %34, !3413), asm ln 4391
   Added assignment asm ln 4391, prod ln 155.52, live ln 156, enc None
 Value produced for `temp` (decl src ln 62), asm ln 4407
   %36 = load %struct.node.1*, %struct.node.1** %pred117, l166 c53, asm ln 4406
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(%struct.node.1* %36, !3413), asm ln 4407
   Added assignment asm ln 4407, prod ln 166.53, live ln 167, enc None
 Value produced for `temp` (decl src ln 62), asm ln 4423
   %38 = load %struct.node.1*, %struct.node.1** %pred126, l168 c52, asm ln 4422
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(%struct.node.1* %38, !3413), asm ln 4423
   Added assignment asm ln 4423, prod ln 168.52, live ln 169, enc None
 Value produced for `sigma` (decl src ln 41), asm ln 4118
   %sigma.addr.0 = phi i64 [ %sub13, %if.else ], [ %cond, %if.then ], asm ln 4117
+  @dbg.value(i64 %sigma.addr.0, !3393), asm ln 4118
   Added assignment asm ln 4118, prod ln 76.17, live ln 79, enc None
 Value produced for `father` (decl src ln 61), asm ln 4128
   %father.0 = phi %struct.node.1* [ %iminus, %if.end ], [ %temp.0, %ITERATION ], asm ln 4127
-  🔔 Missing produced ln, using decl ln
+  @dbg.value(%struct.node.1* %father.0, !3406), asm ln 4128
   Added assignment asm ln 4128, prod ln 61.0, live ln 81, enc None
 Value produced for `temp` (decl src ln 62), asm ln 4138
   %temp.0 = phi %struct.node.1* [ %3, %RECURSION ], [ %5, %if.end20 ], asm ln 4137
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(%struct.node.1* %temp.0, !3413), asm ln 4138
   Added assignment asm ln 4138, prod ln 92.20, live ln 93, enc None
 Value produced for `father` (decl src ln 61), asm ln 4144
   %temp.0 = phi %struct.node.1* [ %3, %RECURSION ], [ %5, %if.end20 ], asm ln 4137
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(%struct.node.1* %temp.0, !3406), asm ln 4144
   Added assignment asm ln 4144, prod ln 92.20, live ln 93, enc None
 Value produced for `father` (decl src ln 61), asm ln 4149
   %father.1 = phi %struct.node.1* [ %6, %if.end23 ], [ %father.0, %RECURSION ], asm ln 4148
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(%struct.node.1* %father.1, !3406), asm ln 4149
   Added assignment asm ln 4149, prod ln 95.22, live ln 96, enc None
 Value produced for `new_orientation` (decl src ln 32), asm ln 4189
   %new_orientation.addr.0 = phi i64 [ %new_orientation, %CONTINUE ], [ %conv, %if.end61 ], asm ln 4188
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %new_orientation.addr.0, !3384), asm ln 4189
   Added assignment asm ln 4189, prod ln 123.28, live ln 124, enc None
 Value produced for `new_depth` (decl src ln 67), asm ln 4190
   %new_depth.0 = phi i64 [ %8, %CONTINUE ], [ %sub68, %if.end61 ], asm ln 4187
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %new_depth.0, !3439), asm ln 4190
   Added assignment asm ln 4190, prod ln 140.40, live ln 141, enc None
 Value produced for `new_flow` (decl src ln 34), asm ln 4191
   %new_flow.addr.0 = phi i64 [ %new_flow, %CONTINUE ], [ %flow_temp.0, %if.end61 ], asm ln 4186
-  🔔 Missing produced ln, using decl ln
+  @dbg.value(i64 %new_flow.addr.0, !3386), asm ln 4191
   Added assignment asm ln 4191, prod ln 34.0, live ln 107, enc None
 Value produced for `new_pred` (decl src ln 63), asm ln 4192
   %new_pred.0 = phi %struct.node.1* [ %jplus, %CONTINUE ], [ %temp.1.phiclean, %if.end61 ], asm ln 4185
-  🔔 Missing produced ln, using decl ln
+  @dbg.value(%struct.node.1* %new_pred.0, !3440), asm ln 4192
   Added assignment asm ln 4192, prod ln 63.0, live ln 107, enc None
 Value produced for `temp` (decl src ln 62), asm ln 4193
   %temp.1 = phi %struct.node.1* [ %iplus, %CONTINUE ], [ %father.2.phiclean, %if.end61 ], asm ln 4184
-  🔔 Missing produced ln, using decl ln
+  @dbg.value(%struct.node.1* %temp.1, !3413), asm ln 4193
   Added assignment asm ln 4193, prod ln 62.0, live ln 107, enc None
 Value produced for `father` (decl src ln 61), asm ln 4194
   %father.2 = phi %struct.node.1* [ %7, %CONTINUE ], [ %24, %if.end61 ], asm ln 4183
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(%struct.node.1* %father.2, !3406), asm ln 4194
   Added assignment asm ln 4194, prod ln 142.24, live ln 143, enc None
 Value produced for `new_basic_arc` (decl src ln 60), asm ln 4195
   %new_basic_arc.0 = phi %struct.arc.0* [ %bea, %CONTINUE ], [ %22, %if.end61 ], asm ln 4182
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(%struct.arc.0* %new_basic_arc.0, !3441), asm ln 4195
   Added assignment asm ln 4195, prod ln 128.32, live ln 129, enc None
 Value produced for `flow_temp` (decl src ln 68), asm ln 4286
   %flow_temp.0 = phi i64 [ %add57, %if.then56 ], [ %sub60, %if.else58 ], asm ln 4285
+  @dbg.value(i64 %flow_temp.0, !3491), asm ln 4286
   Added assignment asm ln 4286, prod ln 127.36, live ln 128, enc None
 Value produced for `new_pred` (decl src ln 63), asm ln 4302
   %temp.1 = phi %struct.node.1* [ %iplus, %CONTINUE ], [ %father.2.phiclean, %if.end61 ], asm ln 4184
-  🔔 Missing produced ln, using decl ln
+  @dbg.value(%struct.node.1* %temp.1, !3440), asm ln 4302
   Added assignment asm ln 4302, prod ln 63.0, live ln 140, enc None
 Value produced for `new_flow` (decl src ln 34), asm ln 4304
   %flow_temp.0 = phi i64 [ %add57, %if.then56 ], [ %sub60, %if.else58 ], asm ln 4285
+  @dbg.value(i64 %flow_temp.0, !3386), asm ln 4304
   Added assignment asm ln 4304, prod ln 127.36, live ln 140, enc None
 Value produced for `temp` (decl src ln 62), asm ln 4308
   %father.2 = phi %struct.node.1* [ %7, %CONTINUE ], [ %24, %if.end61 ], asm ln 4183
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(%struct.node.1* %father.2, !3413), asm ln 4308
   Added assignment asm ln 4308, prod ln 142.24, live ln 143, enc None
 Value produced for `temp` (decl src ln 62), asm ln 4322
   %temp.2 = phi %struct.node.1* [ %29, %for.inc ], [ %jminus, %while.end ], asm ln 4321
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(%struct.node.1* %temp.2, !3413), asm ln 4322
   Added assignment asm ln 4322, prod ln 147.53, live ln 148, enc None
 Value produced for `temp` (decl src ln 62), asm ln 4359
   %temp.3 = phi %struct.node.1* [ %34, %for.inc106 ], [ %jplus, %for.cond ], asm ln 4358
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(%struct.node.1* %temp.3, !3413), asm ln 4359
   Added assignment asm ln 4359, prod ln 155.52, live ln 156, enc None
 Value produced for `temp` (decl src ln 62), asm ln 4396
   %temp.4 = phi %struct.node.1* [ %36, %for.body113 ], [ %jminus, %while.end ], asm ln 4395
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(%struct.node.1* %temp.4, !3413), asm ln 4396
   Added assignment asm ln 4396, prod ln 166.53, live ln 167, enc None
 Value produced for `temp` (decl src ln 62), asm ln 4412
   %temp.5 = phi %struct.node.1* [ %38, %for.body122 ], [ %jplus, %for.cond110 ], asm ln 4411
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(%struct.node.1* %temp.5, !3413), asm ln 4412
   Added assignment asm ln 4412, prod ln 168.52, live ln 169, enc None
 
 #### Summary
@@ -35617,268 +36095,282 @@ Test Execution:
 
 Load from declared address of `delta` (decl src ln 41), asm ln 6164
   %52 = load i64*, i64** %delta.addr, l73 c17, asm ln 6164
-  🔔 Live ln too early, using produced ln + 1
+  %52 = load i64*, i64** %delta.addr, l73 c17, asm ln 6164
   Added assignment asm ln 6164, prod ln 73.17, live ln 74, enc None
 Load from declared address of `delta` (decl src ln 41), asm ln 6148
   %45 = load i64*, i64** %delta.addr, l73 c17, asm ln 6148
-  🔔 Live ln too early, using produced ln + 1
+  %45 = load i64*, i64** %delta.addr, l73 c17, asm ln 6148
   Added assignment asm ln 6148, prod ln 73.17, live ln 74, enc None
 Load from declared address of `delta` (decl src ln 41), asm ln 6132
   %40 = load i64*, i64** %delta.addr, l71 c17, asm ln 6132
-  🔔 Live ln too early, using produced ln + 1
+  %40 = load i64*, i64** %delta.addr, l71 c17, asm ln 6132
   Added assignment asm ln 6132, prod ln 71.17, live ln 72, enc None
 Load from declared address of `delta` (decl src ln 41), asm ln 6118
   %33 = load i64*, i64** %delta.addr, l71 c17, asm ln 6118
-  🔔 Live ln too early, using produced ln + 1
+  %33 = load i64*, i64** %delta.addr, l71 c17, asm ln 6118
   Added assignment asm ln 6118, prod ln 71.17, live ln 72, enc None
 Load from declared address of `delta` (decl src ln 41), asm ln 6097
   %27 = load i64*, i64** %delta.addr, l65 c17, asm ln 6097
-  🔔 Live ln too early, using produced ln + 1
+  %27 = load i64*, i64** %delta.addr, l65 c17, asm ln 6097
   Added assignment asm ln 6097, prod ln 65.17, live ln 66, enc None
 Load from declared address of `delta` (decl src ln 41), asm ln 6081
   %20 = load i64*, i64** %delta.addr, l65 c17, asm ln 6081
-  🔔 Live ln too early, using produced ln + 1
+  %20 = load i64*, i64** %delta.addr, l65 c17, asm ln 6081
   Added assignment asm ln 6081, prod ln 65.17, live ln 66, enc None
 Load from declared address of `delta` (decl src ln 41), asm ln 6065
   %15 = load i64*, i64** %delta.addr, l63 c17, asm ln 6065
-  🔔 Live ln too early, using produced ln + 1
+  %15 = load i64*, i64** %delta.addr, l63 c17, asm ln 6065
   Added assignment asm ln 6065, prod ln 63.17, live ln 64, enc None
 Load from declared address of `delta` (decl src ln 41), asm ln 6051
   %8 = load i64*, i64** %delta.addr, l63 c17, asm ln 6051
-  🔔 Live ln too early, using produced ln + 1
+  %8 = load i64*, i64** %delta.addr, l63 c17, asm ln 6051
   Added assignment asm ln 6051, prod ln 63.17, live ln 64, enc None
 Store to declared address of `delta` (decl src ln 41), asm ln 6013
   arg 0
+  store i64* %delta, i64** %delta.addr, asm ln 6013
   Added assignment asm ln 6013, prod ln 41.0, live ln 55, enc None
 Load from declared address of `xchange` (decl src ln 42), asm ln 6166
   %53 = load i64*, i64** %xchange.addr, l73 c17, asm ln 6166
-  🔔 Live ln too early, using produced ln + 1
+  %53 = load i64*, i64** %xchange.addr, l73 c17, asm ln 6166
   Added assignment asm ln 6166, prod ln 73.17, live ln 74, enc None
 Load from declared address of `xchange` (decl src ln 42), asm ln 6134
   %41 = load i64*, i64** %xchange.addr, l71 c17, asm ln 6134
-  🔔 Live ln too early, using produced ln + 1
+  %41 = load i64*, i64** %xchange.addr, l71 c17, asm ln 6134
   Added assignment asm ln 6134, prod ln 71.17, live ln 72, enc None
 Load from declared address of `xchange` (decl src ln 42), asm ln 6099
   %28 = load i64*, i64** %xchange.addr, l65 c17, asm ln 6099
-  🔔 Live ln too early, using produced ln + 1
+  %28 = load i64*, i64** %xchange.addr, l65 c17, asm ln 6099
   Added assignment asm ln 6099, prod ln 65.17, live ln 66, enc None
 Load from declared address of `xchange` (decl src ln 42), asm ln 6067
   %16 = load i64*, i64** %xchange.addr, l63 c17, asm ln 6067
-  🔔 Live ln too early, using produced ln + 1
+  %16 = load i64*, i64** %xchange.addr, l63 c17, asm ln 6067
   Added assignment asm ln 6067, prod ln 63.17, live ln 64, enc None
 Store to declared address of `xchange` (decl src ln 42), asm ln 6015
   arg 1
+  store i64* %xchange, i64** %xchange.addr, asm ln 6015
   Added assignment asm ln 6015, prod ln 42.0, live ln 55, enc None
 Load from declared address of `iplus` (decl src ln 43), asm ln 6181
   %56 = load %struct.node*, %struct.node** %iplus.addr, l78 c10, asm ln 6181
-  🔔 Live ln too early, using produced ln + 1
+  %56 = load %struct.node*, %struct.node** %iplus.addr, l78 c10, asm ln 6181
   Added assignment asm ln 6181, prod ln 78.10, live ln 79, enc None
 Store to declared address of `iplus` (decl src ln 43), asm ln 6107
   %30 = load %struct.node*, %struct.node** %pred18, l66 c28, asm ln 6106
+  store %struct.node* %30, %struct.node** %iplus.addr, l66 c19, asm ln 6107
   Added assignment asm ln 6107, prod ln 66.28, live ln 67, enc None
 Load from declared address of `iplus` (decl src ln 43), asm ln 6104
   %29 = load %struct.node*, %struct.node** %iplus.addr, l66 c21, asm ln 6104
-  🔔 Live ln too early, using produced ln + 1
+  %29 = load %struct.node*, %struct.node** %iplus.addr, l66 c21, asm ln 6104
   Added assignment asm ln 6104, prod ln 66.21, live ln 67, enc None
 Load from declared address of `iplus` (decl src ln 43), asm ln 6093
   %25 = load %struct.node*, %struct.node** %iplus.addr, l65 c17, asm ln 6093
-  🔔 Live ln too early, using produced ln + 1
+  %25 = load %struct.node*, %struct.node** %iplus.addr, l65 c17, asm ln 6093
   Added assignment asm ln 6093, prod ln 65.17, live ln 66, enc None
 Load from declared address of `iplus` (decl src ln 43), asm ln 6091
   %24 = load %struct.node*, %struct.node** %iplus.addr, l65 c17, asm ln 6091
-  🔔 Live ln too early, using produced ln + 1
+  %24 = load %struct.node*, %struct.node** %iplus.addr, l65 c17, asm ln 6091
   Added assignment asm ln 6091, prod ln 65.17, live ln 66, enc None
 Load from declared address of `iplus` (decl src ln 43), asm ln 6083
   %22 = load %struct.node*, %struct.node** %iplus.addr, l65 c17, asm ln 6083
-  🔔 Live ln too early, using produced ln + 1
+  %22 = load %struct.node*, %struct.node** %iplus.addr, l65 c17, asm ln 6083
   Added assignment asm ln 6083, prod ln 65.17, live ln 66, enc None
 Load from declared address of `iplus` (decl src ln 43), asm ln 6072
   %17 = load %struct.node*, %struct.node** %iplus.addr, l64 c22, asm ln 6072
-  🔔 Live ln too early, using produced ln + 1
+  %17 = load %struct.node*, %struct.node** %iplus.addr, l64 c22, asm ln 6072
   Added assignment asm ln 6072, prod ln 64.22, live ln 65, enc None
 Load from declared address of `iplus` (decl src ln 43), asm ln 6062
   %13 = load %struct.node*, %struct.node** %iplus.addr, l63 c17, asm ln 6062
-  🔔 Live ln too early, using produced ln + 1
+  %13 = load %struct.node*, %struct.node** %iplus.addr, l63 c17, asm ln 6062
   Added assignment asm ln 6062, prod ln 63.17, live ln 64, enc None
 Load from declared address of `iplus` (decl src ln 43), asm ln 6060
   %12 = load %struct.node*, %struct.node** %iplus.addr, l63 c17, asm ln 6060
-  🔔 Live ln too early, using produced ln + 1
+  %12 = load %struct.node*, %struct.node** %iplus.addr, l63 c17, asm ln 6060
   Added assignment asm ln 6060, prod ln 63.17, live ln 64, enc None
 Load from declared address of `iplus` (decl src ln 43), asm ln 6053
   %10 = load %struct.node*, %struct.node** %iplus.addr, l63 c17, asm ln 6053
-  🔔 Live ln too early, using produced ln + 1
+  %10 = load %struct.node*, %struct.node** %iplus.addr, l63 c17, asm ln 6053
   Added assignment asm ln 6053, prod ln 63.17, live ln 64, enc None
 Load from declared address of `iplus` (decl src ln 43), asm ln 6044
   %6 = load %struct.node*, %struct.node** %iplus.addr, l62 c17, asm ln 6044
-  🔔 Live ln too early, using produced ln + 1
+  %6 = load %struct.node*, %struct.node** %iplus.addr, l62 c17, asm ln 6044
   Added assignment asm ln 6044, prod ln 62.17, live ln 63, enc None
 Load from declared address of `iplus` (decl src ln 43), asm ln 6034
   %2 = load %struct.node*, %struct.node** %iplus.addr, l60 c13, asm ln 6034
-  🔔 Live ln too early, using produced ln + 1
+  %2 = load %struct.node*, %struct.node** %iplus.addr, l60 c13, asm ln 6034
   Added assignment asm ln 6034, prod ln 60.13, live ln 61, enc None
 Load from declared address of `iplus` (decl src ln 43), asm ln 6028
   %0 = load %struct.node*, %struct.node** %iplus.addr, l58 c12, asm ln 6028
-  🔔 Live ln too early, using produced ln + 1
+  %0 = load %struct.node*, %struct.node** %iplus.addr, l58 c12, asm ln 6028
   Added assignment asm ln 6028, prod ln 58.12, live ln 59, enc None
 Store to declared address of `iplus` (decl src ln 43), asm ln 6017
   arg 2
+  store %struct.node* %iplus, %struct.node** %iplus.addr, asm ln 6017
   Added assignment asm ln 6017, prod ln 43.0, live ln 55, enc None
 Store to declared address of `jplus` (decl src ln 44), asm ln 6174
   %55 = load %struct.node*, %struct.node** %pred42, l74 c28, asm ln 6173
-  🔔 Missing live ln, using produced ln + 1
+  store %struct.node* %55, %struct.node** %jplus.addr, l74 c19, asm ln 6174
   Added assignment asm ln 6174, prod ln 74.28, live ln 75, enc None
 Load from declared address of `jplus` (decl src ln 44), asm ln 6171
   %54 = load %struct.node*, %struct.node** %jplus.addr, l74 c21, asm ln 6171
-  🔔 Live ln too early, using produced ln + 1
+  %54 = load %struct.node*, %struct.node** %jplus.addr, l74 c21, asm ln 6171
   Added assignment asm ln 6171, prod ln 74.21, live ln 75, enc None
 Load from declared address of `jplus` (decl src ln 44), asm ln 6160
   %50 = load %struct.node*, %struct.node** %jplus.addr, l73 c17, asm ln 6160
-  🔔 Live ln too early, using produced ln + 1
+  %50 = load %struct.node*, %struct.node** %jplus.addr, l73 c17, asm ln 6160
   Added assignment asm ln 6160, prod ln 73.17, live ln 74, enc None
 Load from declared address of `jplus` (decl src ln 44), asm ln 6158
   %49 = load %struct.node*, %struct.node** %jplus.addr, l73 c17, asm ln 6158
-  🔔 Live ln too early, using produced ln + 1
+  %49 = load %struct.node*, %struct.node** %jplus.addr, l73 c17, asm ln 6158
   Added assignment asm ln 6158, prod ln 73.17, live ln 74, enc None
 Load from declared address of `jplus` (decl src ln 44), asm ln 6150
   %47 = load %struct.node*, %struct.node** %jplus.addr, l73 c17, asm ln 6150
-  🔔 Live ln too early, using produced ln + 1
+  %47 = load %struct.node*, %struct.node** %jplus.addr, l73 c17, asm ln 6150
   Added assignment asm ln 6150, prod ln 73.17, live ln 74, enc None
 Load from declared address of `jplus` (decl src ln 44), asm ln 6139
   %42 = load %struct.node*, %struct.node** %jplus.addr, l72 c22, asm ln 6139
-  🔔 Live ln too early, using produced ln + 1
+  %42 = load %struct.node*, %struct.node** %jplus.addr, l72 c22, asm ln 6139
   Added assignment asm ln 6139, prod ln 72.22, live ln 73, enc None
 Load from declared address of `jplus` (decl src ln 44), asm ln 6129
   %38 = load %struct.node*, %struct.node** %jplus.addr, l71 c17, asm ln 6129
-  🔔 Live ln too early, using produced ln + 1
+  %38 = load %struct.node*, %struct.node** %jplus.addr, l71 c17, asm ln 6129
   Added assignment asm ln 6129, prod ln 71.17, live ln 72, enc None
 Load from declared address of `jplus` (decl src ln 44), asm ln 6127
   %37 = load %struct.node*, %struct.node** %jplus.addr, l71 c17, asm ln 6127
-  🔔 Live ln too early, using produced ln + 1
+  %37 = load %struct.node*, %struct.node** %jplus.addr, l71 c17, asm ln 6127
   Added assignment asm ln 6127, prod ln 71.17, live ln 72, enc None
 Load from declared address of `jplus` (decl src ln 44), asm ln 6120
   %35 = load %struct.node*, %struct.node** %jplus.addr, l71 c17, asm ln 6120
-  🔔 Live ln too early, using produced ln + 1
+  %35 = load %struct.node*, %struct.node** %jplus.addr, l71 c17, asm ln 6120
   Added assignment asm ln 6120, prod ln 71.17, live ln 72, enc None
 Load from declared address of `jplus` (decl src ln 44), asm ln 6111
   %31 = load %struct.node*, %struct.node** %jplus.addr, l70 c18, asm ln 6111
-  🔔 Live ln too early, using produced ln + 1
+  %31 = load %struct.node*, %struct.node** %jplus.addr, l70 c18, asm ln 6111
   Added assignment asm ln 6111, prod ln 70.18, live ln 71, enc None
 Load from declared address of `jplus` (decl src ln 44), asm ln 6037
   %4 = load %struct.node*, %struct.node** %jplus.addr, l60 c28, asm ln 6037
-  🔔 Live ln too early, using produced ln + 1
+  %4 = load %struct.node*, %struct.node** %jplus.addr, l60 c28, asm ln 6037
   Added assignment asm ln 6037, prod ln 60.28, live ln 61, enc None
 Load from declared address of `jplus` (decl src ln 44), asm ln 6029
   %1 = load %struct.node*, %struct.node** %jplus.addr, l58 c21, asm ln 6029
-  🔔 Live ln too early, using produced ln + 1
+  %1 = load %struct.node*, %struct.node** %jplus.addr, l58 c21, asm ln 6029
   Added assignment asm ln 6029, prod ln 58.21, live ln 59, enc None
 Store to declared address of `jplus` (decl src ln 44), asm ln 6019
   arg 3
+  store %struct.node* %jplus, %struct.node** %jplus.addr, asm ln 6019
   Added assignment asm ln 6019, prod ln 44.0, live ln 55, enc None
 Load from declared address of `w` (decl src ln 45), asm ln 6182
   %57 = load %struct.node**, %struct.node*** %w.addr, l78 c6, asm ln 6182
-  🔔 Live ln too early, using produced ln + 1
+  %57 = load %struct.node**, %struct.node*** %w.addr, l78 c6, asm ln 6182
   Added assignment asm ln 6182, prod ln 78.6, live ln 79, enc None
 Store to declared address of `w` (decl src ln 45), asm ln 6021
   arg 4
+  store %struct.node** %w, %struct.node*** %w.addr, asm ln 6021
   Added assignment asm ln 6021, prod ln 45.0, live ln 55, enc None
 Load from declared address of `iminus` (decl src ln 55), asm ln 6184
   %58 = load %struct.node*, %struct.node** %iminus, l80 c12, asm ln 6184
-  🔔 Live ln too early, using produced ln + 1
+  %58 = load %struct.node*, %struct.node** %iminus, l80 c12, asm ln 6184
   Added assignment asm ln 6184, prod ln 80.12, live ln 81, enc None
 Store to declared address of `iminus` (decl src ln 55), asm ln 6159
   %49 = load %struct.node*, %struct.node** %jplus.addr, l73 c17, asm ln 6158
-  🔔 Live ln too early, using produced ln + 1
+  store %struct.node* %49, %struct.node** %iminus, l73 c17, asm ln 6159
   Added assignment asm ln 6159, prod ln 73.17, live ln 74, enc None
 Store to declared address of `iminus` (decl src ln 55), asm ln 6128
   %37 = load %struct.node*, %struct.node** %jplus.addr, l71 c17, asm ln 6127
-  🔔 Live ln too early, using produced ln + 1
+  store %struct.node* %37, %struct.node** %iminus, l71 c17, asm ln 6128
   Added assignment asm ln 6128, prod ln 71.17, live ln 72, enc None
 Store to declared address of `iminus` (decl src ln 55), asm ln 6092
   %24 = load %struct.node*, %struct.node** %iplus.addr, l65 c17, asm ln 6091
-  🔔 Live ln too early, using produced ln + 1
+  store %struct.node* %24, %struct.node** %iminus, l65 c17, asm ln 6092
   Added assignment asm ln 6092, prod ln 65.17, live ln 66, enc None
 Store to declared address of `iminus` (decl src ln 55), asm ln 6061
   %12 = load %struct.node*, %struct.node** %iplus.addr, l63 c17, asm ln 6060
-  🔔 Live ln too early, using produced ln + 1
+  store %struct.node* %12, %struct.node** %iminus, l63 c17, asm ln 6061
   Added assignment asm ln 6061, prod ln 63.17, live ln 64, enc None
 Store to declared address of `iminus` (decl src ln 55), asm ln 6024
   const %struct.node* null
+  store %struct.node* null, %struct.node** %iminus, l55 c13, asm ln 6024
   Added assignment asm ln 6024, prod ln 55.13, live ln 58, enc None
 
 #### After variables
 
 Value produced for `delta` (decl src ln 41), asm ln 4433
   arg 0
+  @dbg.value(i64* %delta, !3623), asm ln 4433
   Added assignment asm ln 4433, prod ln 41.0, live ln 58, enc None
 Value produced for `xchange` (decl src ln 42), asm ln 4434
   arg 1
+  @dbg.value(i64* %xchange, !3625), asm ln 4434
   Added assignment asm ln 4434, prod ln 42.0, live ln 58, enc None
 Value produced for `iplus` (decl src ln 43), asm ln 4435
   arg 2
+  @dbg.value(%struct.node.1* %iplus, !3626), asm ln 4435
   Added assignment asm ln 4435, prod ln 43.0, live ln 58, enc None
 Value produced for `jplus` (decl src ln 44), asm ln 4436
   arg 3
+  @dbg.value(%struct.node.1* %jplus, !3627), asm ln 4436
   Added assignment asm ln 4436, prod ln 44.0, live ln 58, enc None
 Value produced for `w` (decl src ln 45), asm ln 4437
   arg 4
+  @dbg.value(%struct.node.1** %w, !3628), asm ln 4437
   Added assignment asm ln 4437, prod ln 45.0, live ln 58, enc None
 Value produced for `iminus` (decl src ln 55), asm ln 4438
   const %struct.node.1* null
+  @dbg.value(%struct.node.1* null, !3629), asm ln 4438
   Added assignment asm ln 4438, prod ln 55.0, live ln 58, enc None
 Value produced for `iplus` (decl src ln 43), asm ln 4510
   %11 = load %struct.node.1*, %struct.node.1** %pred18, l66 c28, asm ln 4509
+  @dbg.value(%struct.node.1* %11, !3626), asm ln 4510
   Added assignment asm ln 4510, prod ln 66.28, live ln 67, enc None
 Value produced for `jplus` (decl src ln 44), asm ln 4564
   %21 = load %struct.node.1*, %struct.node.1** %pred42, l74 c28, asm ln 4563
-  🔔 Missing live ln, using produced ln + 1
+  @dbg.value(%struct.node.1* %21, !3627), asm ln 4564
   Added assignment asm ln 4564, prod ln 74.28, live ln 75, enc None
 Value produced for `iminus` (decl src ln 55), asm ln 4445
   %iminus.0 = phi %struct.node.1* [ null, %entry ], [ %iminus.9, %if.end43 ], asm ln 4444
-  🔔 Missing produced ln, using decl ln
+  @dbg.value(%struct.node.1* %iminus.0, !3629), asm ln 4445
   Added assignment asm ln 4445, prod ln 55.0, live ln 58, enc None
 Value produced for `jplus` (decl src ln 44), asm ln 4446
   %jplus.addr.0 = phi %struct.node.1* [ %jplus, %entry ], [ %jplus.addr.1, %if.end43 ], asm ln 4443
-  🔔 Missing produced ln, using decl ln
+  @dbg.value(%struct.node.1* %jplus.addr.0, !3627), asm ln 4446
   Added assignment asm ln 4446, prod ln 44.0, live ln 58, enc None
 Value produced for `iplus` (decl src ln 43), asm ln 4447
   %iplus.addr.0 = phi %struct.node.1* [ %iplus, %entry ], [ %iplus.addr.1, %if.end43 ], asm ln 4442
-  🔔 Missing produced ln, using decl ln
+  @dbg.value(%struct.node.1* %iplus.addr.0, !3626), asm ln 4447
   Added assignment asm ln 4447, prod ln 43.0, live ln 58, enc None
 Value produced for `iminus` (decl src ln 55), asm ln 4473
   %iplus.addr.0 = phi %struct.node.1* [ %iplus, %entry ], [ %iplus.addr.1, %if.end43 ], asm ln 4442
-  🔔 Missing produced ln, using decl ln
+  @dbg.value(%struct.node.1* %iplus.addr.0, !3629), asm ln 4473
   Added assignment asm ln 4473, prod ln 55.0, live ln 63, enc None
 Value produced for `iminus` (decl src ln 55), asm ln 4497
   %iplus.addr.0 = phi %struct.node.1* [ %iplus, %entry ], [ %iplus.addr.1, %if.end43 ], asm ln 4442
-  🔔 Missing produced ln, using decl ln
+  @dbg.value(%struct.node.1* %iplus.addr.0, !3629), asm ln 4497
   Added assignment asm ln 4497, prod ln 55.0, live ln 65, enc None
 Value produced for `iminus` (decl src ln 55), asm ln 4507
   %iminus.4 = phi %struct.node.1* [ %iplus.addr.0, %if.then5 ], [ %iminus.0, %if.then3 ], [ %iminus.0, %if.else ], [ %iplus.addr.0, %if.then12 ], [ %iminus.0, %if.then9 ], asm ln 4506
-  🔔 Missing produced ln, using decl ln
+  @dbg.value(%struct.node.1* %iminus.4, !3629), asm ln 4507
   Added assignment asm ln 4507, prod ln 55.0, live ln 66, enc None
 Value produced for `iminus` (decl src ln 55), asm ln 4527
   %jplus.addr.0 = phi %struct.node.1* [ %jplus, %entry ], [ %jplus.addr.1, %if.end43 ], asm ln 4443
-  🔔 Missing produced ln, using decl ln
+  @dbg.value(%struct.node.1* %jplus.addr.0, !3629), asm ln 4527
   Added assignment asm ln 4527, prod ln 55.0, live ln 71, enc None
 Value produced for `iminus` (decl src ln 55), asm ln 4551
   %jplus.addr.0 = phi %struct.node.1* [ %jplus, %entry ], [ %jplus.addr.1, %if.end43 ], asm ln 4443
-  🔔 Missing produced ln, using decl ln
+  @dbg.value(%struct.node.1* %jplus.addr.0, !3629), asm ln 4551
   Added assignment asm ln 4551, prod ln 55.0, live ln 73, enc None
 Value produced for `iminus` (decl src ln 55), asm ln 4561
   %iminus.8 = phi %struct.node.1* [ %jplus.addr.0, %if.then25 ], [ %iminus.0, %if.then22 ], [ %iminus.0, %if.else28 ], [ %jplus.addr.0, %if.then36 ], [ %iminus.0, %if.then32 ], asm ln 4560
-  🔔 Missing produced ln, using decl ln
+  @dbg.value(%struct.node.1* %iminus.8, !3629), asm ln 4561
   Added assignment asm ln 4561, prod ln 55.0, live ln 74, enc None
 Value produced for `iminus` (decl src ln 55), asm ln 4571
   %iminus.9 = phi %struct.node.1* [ %iminus.4, %if.end17 ], [ %iminus.8, %if.end41 ], asm ln 4570
-  🔔 Missing produced ln, using decl ln
+  @dbg.value(%struct.node.1* %iminus.9, !3629), asm ln 4571
   Added assignment asm ln 4571, prod ln 55.0, live ln 58, enc None
 Value produced for `jplus` (decl src ln 44), asm ln 4572
   %jplus.addr.1 = phi %struct.node.1* [ %jplus.addr.0, %if.end17 ], [ %21, %if.end41 ], asm ln 4569
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(%struct.node.1* %jplus.addr.1, !3627), asm ln 4572
   Added assignment asm ln 4572, prod ln 74.28, live ln 75, enc None
 Value produced for `iplus` (decl src ln 43), asm ln 4573
   %iplus.addr.1 = phi %struct.node.1* [ %11, %if.end17 ], [ %iplus.addr.0, %if.end41 ], asm ln 4568
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(%struct.node.1* %iplus.addr.1, !3626), asm ln 4573
   Added assignment asm ln 4573, prod ln 66.28, live ln 67, enc None
 
 #### Summary
@@ -37068,96 +37560,102 @@ Test Execution:
 
 Store to declared address of `iplus` (decl src ln 31), asm ln 6231
   %7 = load %struct.node*, %struct.node** %pred, l41 c39, asm ln 6230
-  🔔 Live ln too early, using produced ln + 1
+  store %struct.node* %7, %struct.node** %iplus.addr, l41 c30, asm ln 6231
   Added assignment asm ln 6231, prod ln 41.39, live ln 42, enc None
 Load from declared address of `iplus` (decl src ln 31), asm ln 6228
   %6 = load %struct.node*, %struct.node** %iplus.addr, l41 c32, asm ln 6228
-  🔔 Live ln too early, using produced ln + 1
+  %6 = load %struct.node*, %struct.node** %iplus.addr, l41 c32, asm ln 6228
   Added assignment asm ln 6228, prod ln 41.32, live ln 42, enc None
 Load from declared address of `iplus` (decl src ln 31), asm ln 6222
   %5 = load %struct.node*, %struct.node** %iplus.addr, l46 c13, asm ln 6222
-  🔔 Live ln too early, using produced ln + 1
+  %5 = load %struct.node*, %struct.node** %iplus.addr, l46 c13, asm ln 6222
   Added assignment asm ln 6222, prod ln 46.13, live ln 47, enc None
 Load from declared address of `iplus` (decl src ln 31), asm ln 6216
   %4 = load %struct.node*, %struct.node** %iplus.addr, l44 c13, asm ln 6216
-  🔔 Live ln too early, using produced ln + 1
+  %4 = load %struct.node*, %struct.node** %iplus.addr, l44 c13, asm ln 6216
   Added assignment asm ln 6216, prod ln 44.13, live ln 45, enc None
 Load from declared address of `iplus` (decl src ln 31), asm ln 6209
   %2 = load %struct.node*, %struct.node** %iplus.addr, l43 c13, asm ln 6209
-  🔔 Live ln too early, using produced ln + 1
+  %2 = load %struct.node*, %struct.node** %iplus.addr, l43 c13, asm ln 6209
   Added assignment asm ln 6209, prod ln 43.13, live ln 44, enc None
 Load from declared address of `iplus` (decl src ln 31), asm ln 6203
   %0 = load %struct.node*, %struct.node** %iplus.addr, l41 c12, asm ln 6203
-  🔔 Live ln too early, using produced ln + 1
+  %0 = load %struct.node*, %struct.node** %iplus.addr, l41 c12, asm ln 6203
   Added assignment asm ln 6203, prod ln 41.12, live ln 42, enc None
 Store to declared address of `iplus` (decl src ln 31), asm ln 6194
   arg 0
+  store %struct.node* %iplus, %struct.node** %iplus.addr, asm ln 6194
   Added assignment asm ln 6194, prod ln 31.0, live ln 41, enc None
 Store to declared address of `jplus` (decl src ln 32), asm ln 6263
   %15 = load %struct.node*, %struct.node** %pred13, l49 c39, asm ln 6262
-  🔔 Live ln too early, using produced ln + 1
+  store %struct.node* %15, %struct.node** %jplus.addr, l49 c30, asm ln 6263
   Added assignment asm ln 6263, prod ln 49.39, live ln 50, enc None
 Load from declared address of `jplus` (decl src ln 32), asm ln 6260
   %14 = load %struct.node*, %struct.node** %jplus.addr, l49 c32, asm ln 6260
-  🔔 Live ln too early, using produced ln + 1
+  %14 = load %struct.node*, %struct.node** %jplus.addr, l49 c32, asm ln 6260
   Added assignment asm ln 6260, prod ln 49.32, live ln 50, enc None
 Load from declared address of `jplus` (decl src ln 32), asm ln 6254
   %13 = load %struct.node*, %struct.node** %jplus.addr, l54 c13, asm ln 6254
-  🔔 Live ln too early, using produced ln + 1
+  %13 = load %struct.node*, %struct.node** %jplus.addr, l54 c13, asm ln 6254
   Added assignment asm ln 6254, prod ln 54.13, live ln 55, enc None
 Load from declared address of `jplus` (decl src ln 32), asm ln 6248
   %12 = load %struct.node*, %struct.node** %jplus.addr, l52 c13, asm ln 6248
-  🔔 Live ln too early, using produced ln + 1
+  %12 = load %struct.node*, %struct.node** %jplus.addr, l52 c13, asm ln 6248
   Added assignment asm ln 6248, prod ln 52.13, live ln 53, enc None
 Load from declared address of `jplus` (decl src ln 32), asm ln 6241
   %10 = load %struct.node*, %struct.node** %jplus.addr, l51 c13, asm ln 6241
-  🔔 Live ln too early, using produced ln + 1
+  %10 = load %struct.node*, %struct.node** %jplus.addr, l51 c13, asm ln 6241
   Added assignment asm ln 6241, prod ln 51.13, live ln 52, enc None
 Load from declared address of `jplus` (decl src ln 32), asm ln 6235
   %8 = load %struct.node*, %struct.node** %jplus.addr, l49 c12, asm ln 6235
-  🔔 Live ln too early, using produced ln + 1
+  %8 = load %struct.node*, %struct.node** %jplus.addr, l49 c12, asm ln 6235
   Added assignment asm ln 6235, prod ln 49.12, live ln 50, enc None
 Store to declared address of `jplus` (decl src ln 32), asm ln 6196
   arg 1
+  store %struct.node* %jplus, %struct.node** %jplus.addr, asm ln 6196
   Added assignment asm ln 6196, prod ln 32.0, live ln 41, enc None
 Load from declared address of `w` (decl src ln 33), asm ln 6236
   %9 = load %struct.node*, %struct.node** %w.addr, l49 c21, asm ln 6236
-  🔔 Live ln too early, using produced ln + 1
+  %9 = load %struct.node*, %struct.node** %w.addr, l49 c21, asm ln 6236
   Added assignment asm ln 6236, prod ln 49.21, live ln 50, enc None
 Load from declared address of `w` (decl src ln 33), asm ln 6204
   %1 = load %struct.node*, %struct.node** %w.addr, l41 c21, asm ln 6204
-  🔔 Live ln too early, using produced ln + 1
+  %1 = load %struct.node*, %struct.node** %w.addr, l41 c21, asm ln 6204
   Added assignment asm ln 6204, prod ln 41.21, live ln 42, enc None
 Store to declared address of `w` (decl src ln 33), asm ln 6198
   arg 2
+  store %struct.node* %w, %struct.node** %w.addr, asm ln 6198
   Added assignment asm ln 6198, prod ln 33.0, live ln 41, enc None
 
 #### After variables
 
 Value produced for `iplus` (decl src ln 31), asm ln 4584
   arg 0
+  @dbg.value(%struct.node.1* %iplus, !3728), asm ln 4584
   Added assignment asm ln 4584, prod ln 31.0, live ln 41, enc None
 Value produced for `jplus` (decl src ln 32), asm ln 4585
   arg 1
+  @dbg.value(%struct.node.1* %jplus, !3730), asm ln 4585
   Added assignment asm ln 4585, prod ln 32.0, live ln 41, enc None
 Value produced for `w` (decl src ln 33), asm ln 4586
   arg 2
+  @dbg.value(%struct.node.1* %w, !3731), asm ln 4586
   Added assignment asm ln 4586, prod ln 33.0, live ln 41, enc None
 Value produced for `iplus` (decl src ln 31), asm ln 4614
   %1 = load %struct.node.1*, %struct.node.1** %pred, l41 c39, asm ln 4613
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(%struct.node.1* %1, !3728), asm ln 4614
   Added assignment asm ln 4614, prod ln 41.39, live ln 42, enc None
 Value produced for `jplus` (decl src ln 32), asm ln 4642
   %3 = load %struct.node.1*, %struct.node.1** %pred13, l49 c39, asm ln 4641
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(%struct.node.1* %3, !3730), asm ln 4642
   Added assignment asm ln 4642, prod ln 49.39, live ln 50, enc None
 Value produced for `iplus` (decl src ln 31), asm ln 4591
   %iplus.addr.0 = phi %struct.node.1* [ %iplus, %entry ], [ %1, %for.inc ], asm ln 4590
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(%struct.node.1* %iplus.addr.0, !3728), asm ln 4591
   Added assignment asm ln 4591, prod ln 41.39, live ln 42, enc None
 Value produced for `jplus` (decl src ln 32), asm ln 4619
   %jplus.addr.0 = phi %struct.node.1* [ %3, %for.inc12 ], [ %jplus, %for.cond ], asm ln 4618
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(%struct.node.1* %jplus.addr.0, !3730), asm ln 4619
   Added assignment asm ln 4619, prod ln 49.39, live ln 50, enc None
 
 #### Summary
@@ -37605,187 +38103,202 @@ Test Execution:
 
 Load from declared address of `num_threads` (decl src ln 36), asm ln 6324
   %9 = load i64, i64* %num_threads.addr, l53 c25, asm ln 6324
-  🔔 Live ln too early, using produced ln + 1
+  %9 = load i64, i64* %num_threads.addr, l53 c25, asm ln 6324
   Added assignment asm ln 6324, prod ln 53.25, live ln 54, enc None
 Store to declared address of `num_threads` (decl src ln 36), asm ln 6279
   arg 0
+  store i64 %num_threads, i64* %num_threads.addr, asm ln 6279
   Added assignment asm ln 6279, prod ln 36.0, live ln 42, enc None
 Store to declared address of `i` (decl src ln 42), asm ln 6382
   %inc20 = add nsw i64 %26, 1, l45 c23, asm ln 6381
-  🔔 Live ln too early, using produced ln + 1
+  store i64 %inc20, i64* %i, l45 c23, asm ln 6382
   Added assignment asm ln 6382, prod ln 45.23, live ln 46, enc None
 Load from declared address of `i` (decl src ln 42), asm ln 6380
   %26 = load i64, i64* %i, l45 c23, asm ln 6380
-  🔔 Live ln too early, using produced ln + 1
+  %26 = load i64, i64* %i, l45 c23, asm ln 6380
   Added assignment asm ln 6380, prod ln 45.23, live ln 46, enc None
 Load from declared address of `i` (decl src ln 42), asm ln 6370
   %21 = load i64, i64* %i, l67 c23, asm ln 6370
-  🔔 Live ln too early, using produced ln + 1
+  %21 = load i64, i64* %i, l67 c23, asm ln 6370
   Added assignment asm ln 6370, prod ln 67.23, live ln 68, enc None
 Load from declared address of `i` (decl src ln 42), asm ln 6291
   %0 = load i64, i64* %i, l45 c16, asm ln 6291
-  🔔 Live ln too early, using produced ln + 1
+  %0 = load i64, i64* %i, l45 c16, asm ln 6291
   Added assignment asm ln 6291, prod ln 45.16, live ln 46, enc None
 Store to declared address of `i` (decl src ln 42), asm ln 6287
   const i64 1
-  🔔 Live ln too early, using produced ln + 1
+  store i64 1, i64* %i, l45 c12, asm ln 6287
   Added assignment asm ln 6287, prod ln 45.12, live ln 46, enc None
 Store to declared address of `j` (decl src ln 42), asm ln 6361
   %inc = add nsw i64 %19, 1, l53 c39, asm ln 6360
-  🔔 Live ln too early, using produced ln + 1
+  store i64 %inc, i64* %j, l53 c39, asm ln 6361
   Added assignment asm ln 6361, prod ln 53.39, live ln 54, enc None
 Load from declared address of `j` (decl src ln 42), asm ln 6359
   %19 = load i64, i64* %j, l53 c39, asm ln 6359
-  🔔 Live ln too early, using produced ln + 1
+  %19 = load i64, i64* %j, l53 c39, asm ln 6359
   Added assignment asm ln 6359, prod ln 53.39, live ln 54, enc None
 Load from declared address of `j` (decl src ln 42), asm ln 6354
   %18 = load i64, i64* %j, l58 c31, asm ln 6354
-  🔔 Live ln too early, using produced ln + 1
+  %18 = load i64, i64* %j, l58 c31, asm ln 6354
   Added assignment asm ln 6354, prod ln 58.31, live ln 59, enc None
 Load from declared address of `j` (decl src ln 42), asm ln 6330
   %11 = load i64, i64* %j, l54 c25, asm ln 6330
-  🔔 Live ln too early, using produced ln + 1
+  %11 = load i64, i64* %j, l54 c25, asm ln 6330
   Added assignment asm ln 6330, prod ln 54.25, live ln 55, enc None
 Load from declared address of `j` (decl src ln 42), asm ln 6323
   %8 = load i64, i64* %j, l53 c21, asm ln 6323
-  🔔 Live ln too early, using produced ln + 1
+  %8 = load i64, i64* %j, l53 c21, asm ln 6323
   Added assignment asm ln 6323, prod ln 53.21, live ln 54, enc None
 Store to declared address of `j` (decl src ln 42), asm ln 6319
   const i64 1
-  🔔 Live ln too early, using produced ln + 1
+  store i64 1, i64* %j, l53 c16, asm ln 6319
   Added assignment asm ln 6319, prod ln 53.16, live ln 54, enc None
 Load from declared address of `max_pos` (decl src ln 42), asm ln 6375
   %24 = load i64, i64* %max_pos, l68 c17, asm ln 6375
-  🔔 Live ln too early, using produced ln + 1
+  %24 = load i64, i64* %max_pos, l68 c17, asm ln 6375
   Added assignment asm ln 6375, prod ln 68.17, live ln 69, enc None
 Store to declared address of `max_pos` (decl src ln 42), asm ln 6355
   %18 = load i64, i64* %j, l58 c31, asm ln 6354
+  store i64 %18, i64* %max_pos, l58 c29, asm ln 6355
   Added assignment asm ln 6355, prod ln 58.31, live ln 59, enc None
 Store to declared address of `max_pos` (decl src ln 42), asm ln 6311
   const i64 0
+  store i64 0, i64* %max_pos, l48 c19, asm ln 6311
   Added assignment asm ln 6311, prod ln 48.19, live ln 49, enc None
 Store to declared address of `max_pos` (decl src ln 42), asm ln 6284
   const i64 0
+  store i64 0, i64* %max_pos, l42 c17, asm ln 6284
   Added assignment asm ln 6284, prod ln 42.17, live ln 45, enc None
 Load from declared address of `max` (decl src ln 43), asm ln 6371
   %22 = load %struct.basket*, %struct.basket** %max, l67 c9, asm ln 6371
-  🔔 Live ln too early, using produced ln + 1
+  %22 = load %struct.basket*, %struct.basket** %max, l67 c9, asm ln 6371
   Added assignment asm ln 6371, prod ln 67.9, live ln 68, enc None
 Load from declared address of `max` (decl src ln 43), asm ln 6365
   %20 = load %struct.basket*, %struct.basket** %max, l63 c12, asm ln 6365
-  🔔 Live ln too early, using produced ln + 1
+  %20 = load %struct.basket*, %struct.basket** %max, l63 c12, asm ln 6365
   Added assignment asm ln 6365, prod ln 63.12, live ln 64, enc None
 Store to declared address of `max` (decl src ln 43), asm ln 6353
   %17 = load %struct.basket*, %struct.basket** %act, l57 c27, asm ln 6352
+  store %struct.basket* %17, %struct.basket** %max, l57 c25, asm ln 6353
   Added assignment asm ln 6353, prod ln 57.27, live ln 58, enc None
 Load from declared address of `max` (decl src ln 43), asm ln 6342
   %16 = load %struct.basket*, %struct.basket** %max, l56 c22, asm ln 6342
-  🔔 Live ln too early, using produced ln + 1
+  %16 = load %struct.basket*, %struct.basket** %max, l56 c22, asm ln 6342
   Added assignment asm ln 6342, prod ln 56.22, live ln 57, enc None
 Store to declared address of `max` (decl src ln 43), asm ln 6315
   const %struct.basket* null
-  🔔 Missing live ln, using produced ln + 1
+  store %struct.basket* null, %struct.basket** %max, l51 c13, asm ln 6315
   Added assignment asm ln 6315, prod ln 51.13, live ln 52, enc None
 Store to declared address of `max` (decl src ln 43), asm ln 6310
   %7 = load %struct.basket*, %struct.basket** %6, l47 c18, asm ln 6309
+  store %struct.basket* %7, %struct.basket** %max, l47 c15, asm ln 6310
   Added assignment asm ln 6310, prod ln 47.18, live ln 48, enc None
 Load from declared address of `act` (decl src ln 43), asm ln 6352
   %17 = load %struct.basket*, %struct.basket** %act, l57 c27, asm ln 6352
-  🔔 Live ln too early, using produced ln + 1
+  %17 = load %struct.basket*, %struct.basket** %act, l57 c27, asm ln 6352
   Added assignment asm ln 6352, prod ln 57.27, live ln 58, enc None
 Load from declared address of `act` (decl src ln 43), asm ln 6335
   %14 = load %struct.basket*, %struct.basket** %act, l55 c15, asm ln 6335
-  🔔 Live ln too early, using produced ln + 1
+  %14 = load %struct.basket*, %struct.basket** %act, l55 c15, asm ln 6335
   Added assignment asm ln 6335, prod ln 55.15, live ln 56, enc None
 Store to declared address of `act` (decl src ln 43), asm ln 6334
   %13 = load %struct.basket*, %struct.basket** %12, l54 c17, asm ln 6333
+  store %struct.basket* %13, %struct.basket** %act, l54 c15, asm ln 6334
   Added assignment asm ln 6334, prod ln 54.17, live ln 55, enc None
 
 #### After variables
 
 Value produced for `num_threads` (decl src ln 36), asm ln 4654
   arg 0
+  @dbg.value(i64 %num_threads, !3773), asm ln 4654
   Added assignment asm ln 4654, prod ln 36.0, live ln 45, enc None
 Value produced for `max_pos` (decl src ln 42), asm ln 4655
   const i64 0
+  @dbg.value(i64 0, !3775), asm ln 4655
   Added assignment asm ln 4655, prod ln 42.0, live ln 45, enc None
 Load from declared address of `max` (decl src ln 43), asm ln 4747
   %15 = load %struct.basket.6*, %struct.basket.6** %max, l67 c9, asm ln 4747
-  🔔 Live ln too early, using produced ln + 1
+  %15 = load %struct.basket.6*, %struct.basket.6** %max, l67 c9, asm ln 4747
   Added assignment asm ln 4747, prod ln 67.9, live ln 68, enc None
 Load from declared address of `max` (decl src ln 43), asm ln 4742
   %14 = load %struct.basket.6*, %struct.basket.6** %max, l63 c12, asm ln 4742
-  🔔 Live ln too early, using produced ln + 1
+  %14 = load %struct.basket.6*, %struct.basket.6** %max, l63 c12, asm ln 4742
   Added assignment asm ln 4742, prod ln 63.12, live ln 64, enc None
 Store to declared address of `max` (decl src ln 43), asm ln 4730
   %13 = load %struct.basket.6*, %struct.basket.6** %act, l57 c27, asm ln 4729
+  store %struct.basket.6* %13, %struct.basket.6** %max, l57 c25, asm ln 4730
   Added assignment asm ln 4730, prod ln 57.27, live ln 59, enc None
 Load from declared address of `max` (decl src ln 43), asm ln 4719
   %12 = load %struct.basket.6*, %struct.basket.6** %max, l56 c22, asm ln 4719
-  🔔 Live ln too early, using produced ln + 1
+  %12 = load %struct.basket.6*, %struct.basket.6** %max, l56 c22, asm ln 4719
   Added assignment asm ln 4719, prod ln 56.22, live ln 57, enc None
 Store to declared address of `max` (decl src ln 43), asm ln 4689
   const %struct.basket.6* null
-  🔔 Missing live ln, using produced ln + 1
+  store %struct.basket.6* null, %struct.basket.6** %max, l51 c13, asm ln 4689
   Added assignment asm ln 4689, prod ln 51.13, live ln 52, enc None
 Store to declared address of `max` (decl src ln 43), asm ln 4684
   %6 = load %struct.basket.6*, %struct.basket.6** %5, l47 c18, asm ln 4683
+  store %struct.basket.6* %6, %struct.basket.6** %max, l47 c15, asm ln 4684
   Added assignment asm ln 4684, prod ln 47.18, live ln 49, enc None
 Load from declared address of `act` (decl src ln 43), asm ln 4729
   %13 = load %struct.basket.6*, %struct.basket.6** %act, l57 c27, asm ln 4729
-  🔔 Live ln too early, using produced ln + 1
+  %13 = load %struct.basket.6*, %struct.basket.6** %act, l57 c27, asm ln 4729
   Added assignment asm ln 4729, prod ln 57.27, live ln 58, enc None
 Load from declared address of `act` (decl src ln 43), asm ln 4712
   %10 = load %struct.basket.6*, %struct.basket.6** %act, l55 c15, asm ln 4712
-  🔔 Live ln too early, using produced ln + 1
+  %10 = load %struct.basket.6*, %struct.basket.6** %act, l55 c15, asm ln 4712
   Added assignment asm ln 4712, prod ln 55.15, live ln 56, enc None
 Store to declared address of `act` (decl src ln 43), asm ln 4711
   %9 = load %struct.basket.6*, %struct.basket.6** %8, l54 c17, asm ln 4710
+  store %struct.basket.6* %9, %struct.basket.6** %act, l54 c15, asm ln 4711
   Added assignment asm ln 4711, prod ln 54.17, live ln 55, enc None
 Value produced for `i` (decl src ln 42), asm ln 4658
   const i64 1
+  @dbg.value(i64 1, !3780), asm ln 4658
   Added assignment asm ln 4658, prod ln 42.0, live ln 45, enc None
 Value produced for `max_pos` (decl src ln 42), asm ln 4685
   const i64 0
-  🔔 Missing produced ln, using decl ln
+  @dbg.value(i64 0, !3775), asm ln 4685
   Added assignment asm ln 4685, prod ln 42.0, live ln 49, enc None
 Value produced for `j` (decl src ln 42), asm ln 4695
   const i64 1
+  @dbg.value(i64 1, !3801), asm ln 4695
   Added assignment asm ln 4695, prod ln 42.0, live ln 53, enc None
 Value produced for `j` (decl src ln 42), asm ln 4738
   %inc = add nsw i64 %j.0, 1, l53 c39, asm ln 4737
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %inc, !3801), asm ln 4738
   Added assignment asm ln 4738, prod ln 53.39, live ln 54, enc None
 Value produced for `i` (decl src ln 42), asm ln 4756
   %inc20 = add nsw i64 %i.0, 1, l45 c23, asm ln 4755
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %inc20, !3780), asm ln 4756
   Added assignment asm ln 4756, prod ln 45.23, live ln 46, enc None
 Value produced for `max_pos` (decl src ln 42), asm ln 4664
   %max_pos.0 = phi i64 [ 0, %entry ], [ %max_pos.2, %if.end16 ], asm ln 4663
-  🔔 Missing produced ln, using decl ln
+  @dbg.value(i64 %max_pos.0, !3775), asm ln 4664
   Added assignment asm ln 4664, prod ln 42.0, live ln 45, enc None
 Value produced for `i` (decl src ln 42), asm ln 4665
   %i.0 = phi i64 [ 1, %entry ], [ %inc20, %if.end16 ], asm ln 4662
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %i.0, !3780), asm ln 4665
   Added assignment asm ln 4665, prod ln 45.23, live ln 46, enc None
 Value produced for `max_pos` (decl src ln 42), asm ln 4694
   %max_pos.1 = phi i64 [ 0, %if.then ], [ %max_pos.0, %if.else ], asm ln 4693
-  🔔 Missing produced ln, using decl ln
+  @dbg.value(i64 %max_pos.1, !3775), asm ln 4694
   Added assignment asm ln 4694, prod ln 42.0, live ln 53, enc None
 Value produced for `max_pos` (decl src ln 42), asm ln 4701
   %max_pos.2 = phi i64 [ %max_pos.1, %if.end ], [ %max_pos.4, %for.inc ], asm ln 4700
-  🔔 Missing produced ln, using decl ln
+  @dbg.value(i64 %max_pos.2, !3775), asm ln 4701
   Added assignment asm ln 4701, prod ln 42.0, live ln 53, enc None
 Value produced for `j` (decl src ln 42), asm ln 4702
   %j.0 = phi i64 [ 1, %if.end ], [ %inc, %for.inc ], asm ln 4699
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %j.0, !3801), asm ln 4702
   Added assignment asm ln 4702, prod ln 53.39, live ln 54, enc None
 Value produced for `max_pos` (decl src ln 42), asm ln 4731
   %j.0 = phi i64 [ 1, %if.end ], [ %inc, %for.inc ], asm ln 4699
+  @dbg.value(i64 %j.0, !3775), asm ln 4731
   Added assignment asm ln 4731, prod ln 53.39, live ln 59, enc None
 Value produced for `max_pos` (decl src ln 42), asm ln 4736
   %max_pos.4 = phi i64 [ %max_pos.2, %for.body5 ], [ %j.0, %if.then11 ], [ %max_pos.2, %lor.lhs.false ], asm ln 4735
-  🔔 Missing produced ln, using decl ln
+  @dbg.value(i64 %max_pos.4, !3775), asm ln 4736
   Added assignment asm ln 4736, prod ln 42.0, live ln 53, enc None
 
 #### Summary
@@ -38306,209 +38819,226 @@ Test Execution:
 
 Load from declared address of `net` (decl src ln 87), asm ln 6507
   %31 = load %struct.network*, %struct.network** %net.addr, l108 c151, asm ln 6507
-  🔔 Live ln too early, using produced ln + 1
+  %31 = load %struct.network*, %struct.network** %net.addr, l108 c151, asm ln 6507
   Added assignment asm ln 6507, prod ln 108.151, live ln 109, enc None
 Load from declared address of `net` (decl src ln 87), asm ln 6430
   %7 = load %struct.network*, %struct.network** %net.addr, l100 c28, asm ln 6430
-  🔔 Live ln too early, using produced ln + 1
+  %7 = load %struct.network*, %struct.network** %net.addr, l100 c28, asm ln 6430
   Added assignment asm ln 6430, prod ln 100.28, live ln 101, enc None
 Load from declared address of `net` (decl src ln 87), asm ln 6425
   %6 = load %struct.network*, %struct.network** %net.addr, l98 c33, asm ln 6425
-  🔔 Live ln too early, using produced ln + 1
+  %6 = load %struct.network*, %struct.network** %net.addr, l98 c33, asm ln 6425
   Added assignment asm ln 6425, prod ln 98.33, live ln 99, enc None
 Load from declared address of `net` (decl src ln 87), asm ln 6420
   %4 = load %struct.network*, %struct.network** %net.addr, l97 c21, asm ln 6420
-  🔔 Live ln too early, using produced ln + 1
+  %4 = load %struct.network*, %struct.network** %net.addr, l97 c21, asm ln 6420
   Added assignment asm ln 6420, prod ln 97.21, live ln 98, enc None
 Load from declared address of `net` (decl src ln 87), asm ln 6415
   %2 = load %struct.network*, %struct.network** %net.addr, l96 c34, asm ln 6415
-  🔔 Live ln too early, using produced ln + 1
+  %2 = load %struct.network*, %struct.network** %net.addr, l96 c34, asm ln 6415
   Added assignment asm ln 6415, prod ln 96.34, live ln 97, enc None
 Load from declared address of `net` (decl src ln 87), asm ln 6410
   %0 = load %struct.network*, %struct.network** %net.addr, l95 c34, asm ln 6410
-  🔔 Live ln too early, using produced ln + 1
+  %0 = load %struct.network*, %struct.network** %net.addr, l95 c34, asm ln 6410
   Added assignment asm ln 6410, prod ln 95.34, live ln 96, enc None
 Store to declared address of `net` (decl src ln 87), asm ln 6403
   arg 0
+  store %struct.network* %net, %struct.network** %net.addr, asm ln 6403
   Added assignment asm ln 6403, prod ln 87.0, live ln 95, enc None
 Load from declared address of `thread` (decl src ln 87), asm ln 6523
   %37 = load i32, i32* %thread.addr, l113 c9, asm ln 6523
-  🔔 Live ln too early, using produced ln + 1
+  %37 = load i32, i32* %thread.addr, l113 c9, asm ln 6523
   Added assignment asm ln 6523, prod ln 113.9, live ln 114, enc None
 Load from declared address of `thread` (decl src ln 87), asm ln 6519
   %36 = load i32, i32* %thread.addr, l109 c12, asm ln 6519
-  🔔 Live ln too early, using produced ln + 1
+  %36 = load i32, i32* %thread.addr, l109 c12, asm ln 6519
   Added assignment asm ln 6519, prod ln 109.12, live ln 110, enc None
 Load from declared address of `thread` (decl src ln 87), asm ln 6512
   %34 = load i32, i32* %thread.addr, l108 c16, asm ln 6512
-  🔔 Live ln too early, using produced ln + 1
+  %34 = load i32, i32* %thread.addr, l108 c16, asm ln 6512
   Added assignment asm ln 6512, prod ln 108.16, live ln 109, enc None
 Load from declared address of `thread` (decl src ln 87), asm ln 6498
   %28 = load i32, i32* %thread.addr, l108 c115, asm ln 6498
-  🔔 Live ln too early, using produced ln + 1
+  %28 = load i32, i32* %thread.addr, l108 c115, asm ln 6498
   Added assignment asm ln 6498, prod ln 108.115, live ln 109, enc None
 Load from declared address of `thread` (decl src ln 87), asm ln 6495
   %25 = load i32, i32* %thread.addr, l108 c82, asm ln 6495
-  🔔 Live ln too early, using produced ln + 1
+  %25 = load i32, i32* %thread.addr, l108 c82, asm ln 6495
   Added assignment asm ln 6495, prod ln 108.82, live ln 109, enc None
 Load from declared address of `thread` (decl src ln 87), asm ln 6441
   %11 = load i32, i32* %thread.addr, l104 c12, asm ln 6441
-  🔔 Live ln too early, using produced ln + 1
+  %11 = load i32, i32* %thread.addr, l104 c12, asm ln 6441
   Added assignment asm ln 6441, prod ln 104.12, live ln 105, enc None
 Load from declared address of `thread` (decl src ln 87), asm ln 6437
   %10 = load i32, i32* %thread.addr, l103 c16, asm ln 6437
-  🔔 Live ln too early, using produced ln + 1
+  %10 = load i32, i32* %thread.addr, l103 c16, asm ln 6437
   Added assignment asm ln 6437, prod ln 103.16, live ln 104, enc None
 Store to declared address of `thread` (decl src ln 87), asm ln 6405
   arg 1
+  store i32 %thread, i32* %thread.addr, asm ln 6405
   Added assignment asm ln 6405, prod ln 87.0, live ln 95, enc None
 Load from declared address of `num_threads` (decl src ln 87), asm ln 6528
   %38 = load i32, i32* %num_threads.addr, l114 c19, asm ln 6528
-  🔔 Live ln too early, using produced ln + 1
+  %38 = load i32, i32* %num_threads.addr, l114 c19, asm ln 6528
   Added assignment asm ln 6528, prod ln 114.19, live ln 115, enc None
 Load from declared address of `num_threads` (decl src ln 87), asm ln 6505
   %30 = load i32, i32* %num_threads.addr, l108 c138, asm ln 6505
-  🔔 Live ln too early, using produced ln + 1
+  %30 = load i32, i32* %num_threads.addr, l108 c138, asm ln 6505
   Added assignment asm ln 6505, prod ln 108.138, live ln 109, enc None
 Load from declared address of `num_threads` (decl src ln 87), asm ln 6501
   %29 = load i32, i32* %num_threads.addr, l108 c125, asm ln 6501
-  🔔 Live ln too early, using produced ln + 1
+  %29 = load i32, i32* %num_threads.addr, l108 c125, asm ln 6501
   Added assignment asm ln 6501, prod ln 108.125, live ln 109, enc None
 Load from declared address of `num_threads` (decl src ln 87), asm ln 6458
   %14 = load i32, i32* %num_threads.addr, l104 c66, asm ln 6458
-  🔔 Live ln too early, using produced ln + 1
+  %14 = load i32, i32* %num_threads.addr, l104 c66, asm ln 6458
   Added assignment asm ln 6458, prod ln 104.66, live ln 105, enc None
 Load from declared address of `num_threads` (decl src ln 87), asm ln 6442
   %12 = load i32, i32* %num_threads.addr, l104 c24, asm ln 6442
-  🔔 Live ln too early, using produced ln + 1
+  %12 = load i32, i32* %num_threads.addr, l104 c24, asm ln 6442
   Added assignment asm ln 6442, prod ln 104.24, live ln 105, enc None
 Store to declared address of `num_threads` (decl src ln 87), asm ln 6407
   arg 2
+  store i32 %num_threads, i32* %num_threads.addr, asm ln 6407
   Added assignment asm ln 6407, prod ln 87.0, live ln 95, enc None
 Load from declared address of `arcs` (decl src ln 95), asm ln 6491
   %22 = load %struct.arc*, %struct.arc** %arcs, l108 c45, asm ln 6491
-  🔔 Live ln too early, using produced ln + 1
+  %22 = load %struct.arc*, %struct.arc** %arcs, l108 c45, asm ln 6491
   Added assignment asm ln 6491, prod ln 108.45, live ln 109, enc None
 Store to declared address of `arcs` (decl src ln 95), asm ln 6413
   %1 = load %struct.arc*, %struct.arc** %arcs1, l95 c39, asm ln 6412
+  store %struct.arc* %1, %struct.arc** %arcs, l95 c18, asm ln 6413
   Added assignment asm ln 6413, prod ln 95.39, live ln 96, enc None
 Load from declared address of `stop_arcs` (decl src ln 96), asm ln 6492
   %23 = load %struct.arc*, %struct.arc** %stop_arcs, l108 c51, asm ln 6492
-  🔔 Live ln too early, using produced ln + 1
+  %23 = load %struct.arc*, %struct.arc** %stop_arcs, l108 c51, asm ln 6492
   Added assignment asm ln 6492, prod ln 108.51, live ln 109, enc None
 Store to declared address of `stop_arcs` (decl src ln 96), asm ln 6418
   %3 = load %struct.arc*, %struct.arc** %stop_arcs2, l96 c39, asm ln 6417
+  store %struct.arc* %3, %struct.arc** %stop_arcs, l96 c18, asm ln 6418
   Added assignment asm ln 6418, prod ln 96.39, live ln 97, enc None
 Load from declared address of `m` (decl src ln 97), asm ln 6490
   %21 = load i64, i64* %m, l108 c42, asm ln 6490
-  🔔 Live ln too early, using produced ln + 1
+  %21 = load i64, i64* %m, l108 c42, asm ln 6490
   Added assignment asm ln 6490, prod ln 108.42, live ln 109, enc None
 Store to declared address of `m` (decl src ln 97), asm ln 6423
   %5 = load i64, i64* %m3, l97 c26, asm ln 6422
+  store i64 %5, i64* %m, l97 c17, asm ln 6423
   Added assignment asm ln 6423, prod ln 97.26, live ln 98, enc None
 Load from declared address of `iterations` (decl src ln 98), asm ln 6496
   %26 = load i64*, i64** %iterations, l108 c102, asm ln 6496
-  🔔 Live ln too early, using produced ln + 1
+  %26 = load i64*, i64** %iterations, l108 c102, asm ln 6496
   Added assignment asm ln 6496, prod ln 108.102, live ln 109, enc None
 Store to declared address of `iterations` (decl src ln 98), asm ln 6427
   %iterations4 = getelementptr inbounds %struct.network, %struct.network* %6, i32 0, i32 28, l98 c38, asm ln 6426
+  store i64* %iterations4, i64** %iterations, l98 c18, asm ln 6427
   Added assignment asm ln 6427, prod ln 98.38, live ln 100, enc None
 Store to declared address of `perm` (decl src ln 99), asm ln 6474
   %arrayidx14 = getelementptr inbounds %struct.basket, %struct.basket* %15, i64 %16, l105 c17, asm ln 6471
-  🔔 Live ln too early, using produced ln + 1
+  store %struct.basket* %arrayidx14, %struct.basket** %arrayidx15, l105 c13, asm ln 6474
   Added assignment asm ln 6474, prod ln 105.17, live ln 106, enc None
 Store to declared address of `end_arc` (decl src ln 100), asm ln 6433
   %8 = load %struct.arc*, %struct.arc** %arcs5, l100 c33, asm ln 6432
+  store %struct.arc* %8, %struct.arc** %end_arc, l100 c18, asm ln 6433
   Added assignment asm ln 6433, prod ln 100.33, live ln 103, enc None
 Store to declared address of `i` (decl src ln 101), asm ln 6477
   %inc = add nsw i64 %18, 1, l104 c84, asm ln 6476
-  🔔 Live ln too early, using produced ln + 1
+  store i64 %inc, i64* %i, l104 c84, asm ln 6477
   Added assignment asm ln 6477, prod ln 104.84, live ln 105, enc None
 Load from declared address of `i` (decl src ln 101), asm ln 6475
   %18 = load i64, i64* %i, l104 c84, asm ln 6475
-  🔔 Live ln too early, using produced ln + 1
+  %18 = load i64, i64* %i, l104 c84, asm ln 6475
   Added assignment asm ln 6475, prod ln 104.84, live ln 105, enc None
 Load from declared address of `i` (decl src ln 101), asm ln 6472
   %17 = load i64, i64* %i, l105 c10, asm ln 6472
-  🔔 Live ln too early, using produced ln + 1
+  %17 = load i64, i64* %i, l105 c10, asm ln 6472
   Added assignment asm ln 6472, prod ln 105.10, live ln 106, enc None
 Load from declared address of `i` (decl src ln 101), asm ln 6457
   %13 = load i64, i64* %i, l104 c60, asm ln 6457
-  🔔 Live ln too early, using produced ln + 1
+  %13 = load i64, i64* %i, l104 c60, asm ln 6457
   Added assignment asm ln 6457, prod ln 104.60, live ln 105, enc None
 Store to declared address of `i` (decl src ln 101), asm ln 6453
   const i64 1
-  🔔 Live ln too early, using produced ln + 1
+  store i64 1, i64* %i, l104 c56, asm ln 6453
   Added assignment asm ln 6453, prod ln 104.56, live ln 105, enc None
 Store to declared address of `j` (decl src ln 101), asm ln 6480
   %inc16 = add nsw i64 %19, 1, l104 c89, asm ln 6479
-  🔔 Live ln too early, using produced ln + 1
+  store i64 %inc16, i64* %j, l104 c89, asm ln 6480
   Added assignment asm ln 6480, prod ln 104.89, live ln 105, enc None
 Load from declared address of `j` (decl src ln 101), asm ln 6478
   %19 = load i64, i64* %j, l104 c89, asm ln 6478
-  🔔 Live ln too early, using produced ln + 1
+  %19 = load i64, i64* %j, l104 c89, asm ln 6478
   Added assignment asm ln 6478, prod ln 104.89, live ln 105, enc None
 Load from declared address of `j` (decl src ln 101), asm ln 6470
   %16 = load i64, i64* %j, l105 c24, asm ln 6470
-  🔔 Live ln too early, using produced ln + 1
+  %16 = load i64, i64* %j, l105 c24, asm ln 6470
   Added assignment asm ln 6470, prod ln 105.24, live ln 106, enc None
 Store to declared address of `j` (decl src ln 101), asm ln 6452
   %conv = sext i32 %add8 to i64, l104 c12, asm ln 6451
-  🔔 Live ln too early, using produced ln + 1
+  store i64 %conv, i64* %j, l104 c10, asm ln 6452
   Added assignment asm ln 6452, prod ln 104.12, live ln 105, enc None
 
 #### After variables
 
 Value produced for `net` (decl src ln 87), asm ln 4768
   arg 0
+  @dbg.value(%struct.network.2* %net, !3886), asm ln 4768
   Added assignment asm ln 4768, prod ln 87.0, live ln 95, enc None
 Value produced for `thread` (decl src ln 87), asm ln 4769
   arg 1
+  @dbg.value(i32 %thread, !3888), asm ln 4769
   Added assignment asm ln 4769, prod ln 87.0, live ln 95, enc None
 Value produced for `num_threads` (decl src ln 87), asm ln 4770
   arg 2
+  @dbg.value(i32 %num_threads, !3889), asm ln 4770
   Added assignment asm ln 4770, prod ln 87.0, live ln 95, enc None
 Value produced for `arcs` (decl src ln 95), asm ln 4773
   %0 = load %struct.arc.0*, %struct.arc.0** %arcs1, l95 c39, asm ln 4772
+  @dbg.value(%struct.arc.0* %0, !3891), asm ln 4773
   Added assignment asm ln 4773, prod ln 95.39, live ln 96, enc None
 Value produced for `stop_arcs` (decl src ln 96), asm ln 4776
   %1 = load %struct.arc.0*, %struct.arc.0** %stop_arcs2, l96 c39, asm ln 4775
+  @dbg.value(%struct.arc.0* %1, !3893), asm ln 4776
   Added assignment asm ln 4776, prod ln 96.39, live ln 97, enc None
 Value produced for `m` (decl src ln 97), asm ln 4779
   %2 = load i64, i64* %m3, l97 c26, asm ln 4778
+  @dbg.value(i64 %2, !3895), asm ln 4779
   Added assignment asm ln 4779, prod ln 97.26, live ln 98, enc None
 Value produced for `iterations` (decl src ln 98), asm ln 4781
   %iterations4 = getelementptr inbounds %struct.network.2, %struct.network.2* %net, i32 0, i32 28, l98 c38, asm ln 4780
+  @dbg.value(i64* %iterations4, !3897), asm ln 4781
   Added assignment asm ln 4781, prod ln 98.38, live ln 100, enc None
 Store to declared address of `perm` (decl src ln 99), asm ln 4822
   %arrayidx14 = getelementptr inbounds %struct.basket.6, %struct.basket.6* %5, i64 %j.0, l105 c17, asm ln 4820
-  🔔 Live ln too early, using produced ln + 1
+  store %struct.basket.6* %arrayidx14, %struct.basket.6** %arrayidx15, l105 c13, asm ln 4822
   Added assignment asm ln 4822, prod ln 105.17, live ln 106, enc None
 Store to declared address of `end_arc` (decl src ln 100), asm ln 4786
   %3 = load %struct.arc.0*, %struct.arc.0** %arcs5, l100 c33, asm ln 4785
+  store %struct.arc.0* %3, %struct.arc.0** %end_arc, l100 c18, asm ln 4786
   Added assignment asm ln 4786, prod ln 100.33, live ln 103, enc None
 Value produced for `j` (decl src ln 101), asm ln 4800
   %conv = sext i32 %add8 to i64, l104 c12, asm ln 4799
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %conv, !3916), asm ln 4800
   Added assignment asm ln 4800, prod ln 104.12, live ln 105, enc None
 Value produced for `i` (decl src ln 101), asm ln 4801
   const i64 1
+  @dbg.value(i64 1, !3917), asm ln 4801
   Added assignment asm ln 4801, prod ln 101.0, live ln 104, enc None
 Value produced for `i` (decl src ln 101), asm ln 4824
   %inc = add nsw i64 %i.0, 1, l104 c84, asm ln 4823
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %inc, !3917), asm ln 4824
   Added assignment asm ln 4824, prod ln 104.84, live ln 105, enc None
 Value produced for `j` (decl src ln 101), asm ln 4826
   %inc16 = add nsw i64 %j.0, 1, l104 c89, asm ln 4825
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %inc16, !3916), asm ln 4826
   Added assignment asm ln 4826, prod ln 104.89, live ln 105, enc None
 Value produced for `j` (decl src ln 101), asm ln 4807
   %j.0 = phi i64 [ %conv, %entry ], [ %inc16, %for.body ], asm ln 4806
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %j.0, !3916), asm ln 4807
   Added assignment asm ln 4807, prod ln 104.89, live ln 105, enc None
 Value produced for `i` (decl src ln 101), asm ln 4808
   %i.0 = phi i64 [ 1, %entry ], [ %inc, %for.body ], asm ln 4805
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %i.0, !3917), asm ln 4808
   Added assignment asm ln 4808, prod ln 104.84, live ln 105, enc None
 
 #### Summary
@@ -38596,7 +39126,7 @@ Collected value for `thread`
   Assignment asm ln 6437, prod ln 103.16, live ln 104, enc 1
   %10 = load i32, i32* %thread.addr, l103 c16
   (ReadLSB w32 (w32 0x0) worker.thread)
-[0;1;35mKLEE: WARNING ONCE: flushing 32488 bytes on read, may be slow and/or crash: MO32222[32488] allocated at worker():  %perm = alloca [4061 x %struct.basket*], align 16
+[0;1;35mKLEE: WARNING ONCE: flushing 32488 bytes on read, may be slow and/or crash: MO24960[32488] allocated at worker():  %perm = alloca [4061 x %struct.basket*], align 16
 [0m[0;1;31mKLEE: ERROR: psimplex.c:103: memory error: object read only
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0m[0;1;31mKLEE: ERROR: psimplex.c:103: memory error: out of bound pointer
@@ -38833,292 +39363,6 @@ Collected value for `net`
   %37 = load i32, i32* %thread.addr, l113 c9
   (ReadLSB w32 (w32 0x0) worker.thread)
 [0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
@@ -40462,1110 +40706,8 @@ Collected value for `i`
 [0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;1;31mKLEE: ERROR: psimplex.c:108: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
@@ -43201,619 +42343,678 @@ Test Execution:
 
 Load from declared address of `net` (decl src ln 124), asm ln 6936
   %106 = load %struct.network*, %struct.network** %net.addr, l274 c21, asm ln 6936
-  🔔 Live ln too early, using produced ln + 1
+  %106 = load %struct.network*, %struct.network** %net.addr, l274 c21, asm ln 6936
   Added assignment asm ln 6936, prod ln 274.21, live ln 275, enc None
 Load from declared address of `net` (decl src ln 124), asm ln 6673
   %27 = load %struct.network*, %struct.network** %net.addr, l176 c132, asm ln 6673
-  🔔 Live ln too early, using produced ln + 1
+  %27 = load %struct.network*, %struct.network** %net.addr, l176 c132, asm ln 6673
   Added assignment asm ln 6673, prod ln 176.132, live ln 177, enc None
 Load from declared address of `net` (decl src ln 124), asm ln 6613
   %8 = load %struct.network*, %struct.network** %net.addr, l153 c28, asm ln 6613
-  🔔 Live ln too early, using produced ln + 1
+  %8 = load %struct.network*, %struct.network** %net.addr, l153 c28, asm ln 6613
   Added assignment asm ln 6613, prod ln 153.28, live ln 154, enc None
 Load from declared address of `net` (decl src ln 124), asm ln 6607
   %7 = load %struct.network*, %struct.network** %net.addr, l150 c38, asm ln 6607
-  🔔 Live ln too early, using produced ln + 1
+  %7 = load %struct.network*, %struct.network** %net.addr, l150 c38, asm ln 6607
   Added assignment asm ln 6607, prod ln 150.38, live ln 151, enc None
 Load from declared address of `net` (decl src ln 124), asm ln 6603
   %6 = load %struct.network*, %struct.network** %net.addr, l149 c33, asm ln 6603
-  🔔 Live ln too early, using produced ln + 1
+  %6 = load %struct.network*, %struct.network** %net.addr, l149 c33, asm ln 6603
   Added assignment asm ln 6603, prod ln 149.33, live ln 150, enc None
 Load from declared address of `net` (decl src ln 124), asm ln 6596
   %4 = load %struct.network*, %struct.network** %net.addr, l146 c21, asm ln 6596
-  🔔 Live ln too early, using produced ln + 1
+  %4 = load %struct.network*, %struct.network** %net.addr, l146 c21, asm ln 6596
   Added assignment asm ln 6596, prod ln 146.21, live ln 147, enc None
 Load from declared address of `net` (decl src ln 124), asm ln 6590
   %2 = load %struct.network*, %struct.network** %net.addr, l144 c34, asm ln 6590
-  🔔 Live ln too early, using produced ln + 1
+  %2 = load %struct.network*, %struct.network** %net.addr, l144 c34, asm ln 6590
   Added assignment asm ln 6590, prod ln 144.34, live ln 145, enc None
 Load from declared address of `net` (decl src ln 124), asm ln 6585
   %0 = load %struct.network*, %struct.network** %net.addr, l143 c34, asm ln 6585
-  🔔 Live ln too early, using produced ln + 1
+  %0 = load %struct.network*, %struct.network** %net.addr, l143 c34, asm ln 6585
   Added assignment asm ln 6585, prod ln 143.34, live ln 144, enc None
 Store to declared address of `net` (decl src ln 124), asm ln 6569
   arg 0
+  store %struct.network* %net, %struct.network** %net.addr, asm ln 6569
   Added assignment asm ln 6569, prod ln 124.0, live ln 143, enc None
 Load from declared address of `num_threads` (decl src ln 124), asm ln 6762
   %52 = load i32, i32* %num_threads.addr, l202 c23, asm ln 6762
-  🔔 Live ln too early, using produced ln + 1
+  %52 = load i32, i32* %num_threads.addr, l202 c23, asm ln 6762
   Added assignment asm ln 6762, prod ln 202.23, live ln 203, enc None
 Load from declared address of `num_threads` (decl src ln 124), asm ln 6757
   %51 = load i32, i32* %num_threads.addr, l201 c11, asm ln 6757
-  🔔 Live ln too early, using produced ln + 1
+  %51 = load i32, i32* %num_threads.addr, l201 c11, asm ln 6757
   Added assignment asm ln 6757, prod ln 201.11, live ln 202, enc None
 Load from declared address of `num_threads` (decl src ln 124), asm ln 6691
   %32 = load i32, i32* %num_threads.addr, l188 c20, asm ln 6691
-  🔔 Live ln too early, using produced ln + 1
+  %32 = load i32, i32* %num_threads.addr, l188 c20, asm ln 6691
   Added assignment asm ln 6691, prod ln 188.20, live ln 189, enc None
 Load from declared address of `num_threads` (decl src ln 124), asm ln 6671
   %26 = load i32, i32* %num_threads.addr, l176 c119, asm ln 6671
-  🔔 Live ln too early, using produced ln + 1
+  %26 = load i32, i32* %num_threads.addr, l176 c119, asm ln 6671
   Added assignment asm ln 6671, prod ln 176.119, live ln 177, enc None
 Load from declared address of `num_threads` (decl src ln 124), asm ln 6667
   %25 = load i32, i32* %num_threads.addr, l176 c106, asm ln 6667
-  🔔 Live ln too early, using produced ln + 1
+  %25 = load i32, i32* %num_threads.addr, l176 c106, asm ln 6667
   Added assignment asm ln 6667, prod ln 176.106, live ln 177, enc None
 Load from declared address of `num_threads` (decl src ln 124), asm ln 6628
   %12 = load i32, i32* %num_threads.addr, l163 c26, asm ln 6628
-  🔔 Live ln too early, using produced ln + 1
+  %12 = load i32, i32* %num_threads.addr, l163 c26, asm ln 6628
   Added assignment asm ln 6628, prod ln 163.26, live ln 164, enc None
 Store to declared address of `num_threads` (decl src ln 124), asm ln 6571
   arg 1
+  store i32 %num_threads, i32* %num_threads.addr, asm ln 6571
   Added assignment asm ln 6571, prod ln 124.0, live ln 143, enc None
 Load from declared address of `delta` (decl src ln 132), asm ln 6927
   %97 = load i64, i64* %delta, l272 c13, asm ln 6927
-  🔔 Live ln too early, using produced ln + 1
+  %97 = load i64, i64* %delta, l272 c13, asm ln 6927
   Added assignment asm ln 6927, prod ln 272.13, live ln 273, enc None
 Load from declared address of `delta` (decl src ln 132), asm ln 6900
   %91 = load i64, i64* %delta, l264 c22, asm ln 6900
-  🔔 Live ln too early, using produced ln + 1
+  %91 = load i64, i64* %delta, l264 c22, asm ln 6900
   Added assignment asm ln 6900, prod ln 264.22, live ln 265, enc None
 Load from declared address of `delta` (decl src ln 132), asm ln 6894
   %90 = load i64, i64* %delta, l262 c34, asm ln 6894
-  🔔 Live ln too early, using produced ln + 1
+  %90 = load i64, i64* %delta, l262 c34, asm ln 6894
   Added assignment asm ln 6894, prod ln 262.34, live ln 263, enc None
 Load from declared address of `delta` (decl src ln 132), asm ln 6838
   %74 = load i64, i64* %delta, l240 c13, asm ln 6838
-  🔔 Live ln too early, using produced ln + 1
+  %74 = load i64, i64* %delta, l240 c13, asm ln 6838
   Added assignment asm ln 6838, prod ln 240.13, live ln 241, enc None
 Store to declared address of `delta` (decl src ln 132), asm ln 6804
   const i64 1
+  store i64 1, i64* %delta, l227 c13, asm ln 6804
   Added assignment asm ln 6804, prod ln 227.13, live ln 228, enc None
 Load from declared address of `new_flow` (decl src ln 133), asm ln 6928
   %98 = load i64, i64* %new_flow, l272 c20, asm ln 6928
-  🔔 Live ln too early, using produced ln + 1
+  %98 = load i64, i64* %new_flow, l272 c20, asm ln 6928
   Added assignment asm ln 6928, prod ln 272.20, live ln 273, enc None
 Store to declared address of `new_flow` (decl src ln 133), asm ln 6901
   %91 = load i64, i64* %delta, l264 c22, asm ln 6900
-  🔔 Missing live ln, using produced ln + 1
+  store i64 %91, i64* %new_flow, l264 c20, asm ln 6901
   Added assignment asm ln 6901, prod ln 264.22, live ln 265, enc None
 Store to declared address of `new_flow` (decl src ln 133), asm ln 6896
   %sub = sub nsw i64 1, %90, l262 c32, asm ln 6895
-  🔔 Live ln too early, using produced ln + 1
+  store i64 %sub, i64* %new_flow, l262 c20, asm ln 6896
   Added assignment asm ln 6896, prod ln 262.32, live ln 263, enc None
 Load from declared address of `xchange` (decl src ln 134), asm ln 6921
   %95 = load i64, i64* %xchange, l271 c23, asm ln 6921
-  🔔 Live ln too early, using produced ln + 1
+  %95 = load i64, i64* %xchange, l271 c23, asm ln 6921
   Added assignment asm ln 6921, prod ln 271.23, live ln 272, enc None
 Load from declared address of `xchange` (decl src ln 134), asm ln 6872
   %86 = load i64, i64* %xchange, l256 c13, asm ln 6872
-  🔔 Live ln too early, using produced ln + 1
+  %86 = load i64, i64* %xchange, l256 c13, asm ln 6872
   Added assignment asm ln 6872, prod ln 256.13, live ln 257, enc None
 Load from declared address of `xchange` (decl src ln 134), asm ln 6850
   %78 = load i64, i64* %xchange, l245 c13, asm ln 6850
-  🔔 Live ln too early, using produced ln + 1
+  %78 = load i64, i64* %xchange, l245 c13, asm ln 6850
   Added assignment asm ln 6850, prod ln 245.13, live ln 246, enc None
 Load from declared address of `new_orientation` (decl src ln 135), asm ln 6926
+  %96 = load i64, i64* %new_orientation, l271 c32, asm ln 6926
   %96 = load i64, i64* %new_orientation, l271 c32, asm ln 6926
   Added assignment asm ln 6926, prod ln 271.32, live ln 272, enc None
 Store to declared address of `new_orientation` (decl src ln 135), asm ln 6917
   const i64 0
-  🔔 Missing live ln, using produced ln + 1
+  store i64 0, i64* %new_orientation, l269 c27, asm ln 6917
   Added assignment asm ln 6917, prod ln 269.27, live ln 270, enc None
 Store to declared address of `new_orientation` (decl src ln 135), asm ln 6913
   const i64 1
-  🔔 Live ln too early, using produced ln + 1
+  store i64 1, i64* %new_orientation, l267 c27, asm ln 6913
   Added assignment asm ln 6913, prod ln 267.27, live ln 268, enc None
 Load from declared address of `iplus` (decl src ln 136), asm ln 6929
   %99 = load %struct.node*, %struct.node** %iplus, l272 c30, asm ln 6929
-  🔔 Live ln too early, using produced ln + 1
+  %99 = load %struct.node*, %struct.node** %iplus, l272 c30, asm ln 6929
   Added assignment asm ln 6929, prod ln 272.30, live ln 273, enc None
 Load from declared address of `iplus` (decl src ln 136), asm ln 6908
   %94 = load %struct.node*, %struct.node** %iplus, l266 c26, asm ln 6908
-  🔔 Live ln too early, using produced ln + 1
+  %94 = load %struct.node*, %struct.node** %iplus, l266 c26, asm ln 6908
   Added assignment asm ln 6908, prod ln 266.26, live ln 267, enc None
 Store to declared address of `iplus` (decl src ln 136), asm ln 6860
   %81 = load %struct.node*, %struct.node** %temp, l249 c19, asm ln 6859
+  store %struct.node* %81, %struct.node** %iplus, l249 c17, asm ln 6860
   Added assignment asm ln 6860, prod ln 249.19, live ln 250, enc None
 Load from declared address of `iplus` (decl src ln 136), asm ln 6857
   %80 = load %struct.node*, %struct.node** %iplus, l248 c19, asm ln 6857
-  🔔 Live ln too early, using produced ln + 1
+  %80 = load %struct.node*, %struct.node** %iplus, l248 c19, asm ln 6857
   Added assignment asm ln 6857, prod ln 248.19, live ln 249, enc None
 Load from declared address of `iplus` (decl src ln 136), asm ln 6843
   %75 = load %struct.node*, %struct.node** %iplus, l241 c31, asm ln 6843
-  🔔 Live ln too early, using produced ln + 1
+  %75 = load %struct.node*, %struct.node** %iplus, l241 c31, asm ln 6843
   Added assignment asm ln 6843, prod ln 241.31, live ln 242, enc None
 Load from declared address of `iplus` (decl src ln 136), asm ln 6805
+  %65 = load %struct.node*, %struct.node** %iplus, l228 c49, asm ln 6805
   %65 = load %struct.node*, %struct.node** %iplus, l228 c49, asm ln 6805
   Added assignment asm ln 6805, prod ln 228.49, live ln 229, enc None
 Store to declared address of `iplus` (decl src ln 136), asm ln 6796
   %62 = load %struct.node*, %struct.node** %tail52, l223 c22, asm ln 6795
+  store %struct.node* %62, %struct.node** %iplus, l223 c15, asm ln 6796
   Added assignment asm ln 6796, prod ln 223.22, live ln 224, enc None
 Store to declared address of `iplus` (decl src ln 136), asm ln 6785
   %58 = load %struct.node*, %struct.node** %head, l218 c22, asm ln 6784
+  store %struct.node* %58, %struct.node** %iplus, l218 c15, asm ln 6785
   Added assignment asm ln 6785, prod ln 218.22, live ln 219, enc None
 Load from declared address of `jplus` (decl src ln 137), asm ln 6930
   %100 = load %struct.node*, %struct.node** %jplus, l272 c37, asm ln 6930
-  🔔 Live ln too early, using produced ln + 1
+  %100 = load %struct.node*, %struct.node** %jplus, l272 c37, asm ln 6930
   Added assignment asm ln 6930, prod ln 272.37, live ln 273, enc None
 Store to declared address of `jplus` (decl src ln 137), asm ln 6858
   %80 = load %struct.node*, %struct.node** %iplus, l248 c19, asm ln 6857
+  store %struct.node* %80, %struct.node** %jplus, l248 c17, asm ln 6858
   Added assignment asm ln 6858, prod ln 248.19, live ln 249, enc None
 Load from declared address of `jplus` (decl src ln 137), asm ln 6855
   %79 = load %struct.node*, %struct.node** %jplus, l247 c18, asm ln 6855
-  🔔 Live ln too early, using produced ln + 1
+  %79 = load %struct.node*, %struct.node** %jplus, l247 c18, asm ln 6855
   Added assignment asm ln 6855, prod ln 247.18, live ln 248, enc None
 Load from declared address of `jplus` (decl src ln 137), asm ln 6844
   %76 = load %struct.node*, %struct.node** %jplus, l241 c38, asm ln 6844
-  🔔 Live ln too early, using produced ln + 1
+  %76 = load %struct.node*, %struct.node** %jplus, l241 c38, asm ln 6844
   Added assignment asm ln 6844, prod ln 241.38, live ln 242, enc None
 Load from declared address of `jplus` (decl src ln 137), asm ln 6806
   %66 = load %struct.node*, %struct.node** %jplus, l229 c11, asm ln 6806
-  🔔 Live ln too early, using produced ln + 1
+  %66 = load %struct.node*, %struct.node** %jplus, l229 c11, asm ln 6806
   Added assignment asm ln 6806, prod ln 229.11, live ln 230, enc None
 Store to declared address of `jplus` (decl src ln 137), asm ln 6800
   %64 = load %struct.node*, %struct.node** %head53, l224 c22, asm ln 6799
-  🔔 Missing live ln, using produced ln + 1
+  store %struct.node* %64, %struct.node** %jplus, l224 c15, asm ln 6800
   Added assignment asm ln 6800, prod ln 224.22, live ln 225, enc None
 Store to declared address of `jplus` (decl src ln 137), asm ln 6789
   %60 = load %struct.node*, %struct.node** %tail, l219 c22, asm ln 6788
+  store %struct.node* %60, %struct.node** %jplus, l219 c15, asm ln 6789
   Added assignment asm ln 6789, prod ln 219.22, live ln 220, enc None
 Load from declared address of `iminus` (decl src ln 138), asm ln 6931
+  %101 = load %struct.node*, %struct.node** %iminus, l272 c44, asm ln 6931
   %101 = load %struct.node*, %struct.node** %iminus, l272 c44, asm ln 6931
   Added assignment asm ln 6931, prod ln 272.44, live ln 273, enc None
 Load from declared address of `iminus` (decl src ln 138), asm ln 6873
   %87 = load %struct.node*, %struct.node** %iminus, l256 c24, asm ln 6873
-  🔔 Live ln too early, using produced ln + 1
+  %87 = load %struct.node*, %struct.node** %iminus, l256 c24, asm ln 6873
   Added assignment asm ln 6873, prod ln 256.24, live ln 257, enc None
 Load from declared address of `iminus` (decl src ln 138), asm ln 6868
   %84 = load %struct.node*, %struct.node** %iminus, l254 c15, asm ln 6868
-  🔔 Live ln too early, using produced ln + 1
+  %84 = load %struct.node*, %struct.node** %iminus, l254 c15, asm ln 6868
   Added assignment asm ln 6868, prod ln 254.15, live ln 255, enc None
 Load from declared address of `iminus` (decl src ln 138), asm ln 6864
   %82 = load %struct.node*, %struct.node** %iminus, l252 c18, asm ln 6864
-  🔔 Live ln too early, using produced ln + 1
+  %82 = load %struct.node*, %struct.node** %iminus, l252 c18, asm ln 6864
   Added assignment asm ln 6864, prod ln 252.18, live ln 253, enc None
 Load from declared address of `iminus` (decl src ln 138), asm ln 6809
   %67 = load %struct.node*, %struct.node** %iminus, l231 c12, asm ln 6809
-  🔔 Live ln too early, using produced ln + 1
+  %67 = load %struct.node*, %struct.node** %iminus, l231 c12, asm ln 6809
   Added assignment asm ln 6809, prod ln 231.12, live ln 232, enc None
 Store to declared address of `iminus` (decl src ln 138), asm ln 6808
   %call55 = call %struct.node* @primal_iminus(i64* %delta, i64* %xchange, %struct.node* %65, %struct.node* %66, %struct.node** %w), l228 c16, asm ln 6807
+  store %struct.node* %call55, %struct.node** %iminus, l228 c14, asm ln 6808
   Added assignment asm ln 6808, prod ln 228.16, live ln 231, enc None
 Load from declared address of `jminus` (decl src ln 139), asm ln 6932
   %102 = load %struct.node*, %struct.node** %jminus, l273 c13, asm ln 6932
-  🔔 Live ln too early, using produced ln + 1
+  %102 = load %struct.node*, %struct.node** %jminus, l273 c13, asm ln 6932
   Added assignment asm ln 6932, prod ln 273.13, live ln 274, enc None
 Store to declared address of `jminus` (decl src ln 139), asm ln 6867
   %83 = load %struct.node*, %struct.node** %pred, l252 c26, asm ln 6866
+  store %struct.node* %83, %struct.node** %jminus, l252 c16, asm ln 6867
   Added assignment asm ln 6867, prod ln 252.26, live ln 254, enc None
 Load from declared address of `w` (decl src ln 140), asm ln 6933
   %103 = load %struct.node*, %struct.node** %w, l273 c21, asm ln 6933
-  🔔 Live ln too early, using produced ln + 1
+  %103 = load %struct.node*, %struct.node** %w, l273 c21, asm ln 6933
   Added assignment asm ln 6933, prod ln 273.21, live ln 274, enc None
 Load from declared address of `w` (decl src ln 140), asm ln 6845
   %77 = load %struct.node*, %struct.node** %w, l241 c45, asm ln 6845
-  🔔 Live ln too early, using produced ln + 1
+  %77 = load %struct.node*, %struct.node** %w, l241 c45, asm ln 6845
   Added assignment asm ln 6845, prod ln 241.45, live ln 242, enc None
 Load from declared address of `bea` (decl src ln 141), asm ln 6940
   %108 = load %struct.arc*, %struct.arc** %bea, l276 c9, asm ln 6940
-  🔔 Live ln too early, using produced ln + 1
+  %108 = load %struct.arc*, %struct.arc** %bea, l276 c9, asm ln 6940
   Added assignment asm ln 6940, prod ln 276.9, live ln 277, enc None
 Load from declared address of `bea` (decl src ln 141), asm ln 6934
   %104 = load %struct.arc*, %struct.arc** %bea, l273 c24, asm ln 6934
-  🔔 Live ln too early, using produced ln + 1
+  %104 = load %struct.arc*, %struct.arc** %bea, l273 c24, asm ln 6934
   Added assignment asm ln 6934, prod ln 273.24, live ln 274, enc None
 Load from declared address of `bea` (decl src ln 141), asm ln 6905
   %92 = load %struct.arc*, %struct.arc** %bea, l266 c13, asm ln 6905
-  🔔 Live ln too early, using produced ln + 1
+  %92 = load %struct.arc*, %struct.arc** %bea, l266 c13, asm ln 6905
   Added assignment asm ln 6905, prod ln 266.13, live ln 267, enc None
 Load from declared address of `bea` (decl src ln 141), asm ln 6832
   %73 = load %struct.arc*, %struct.arc** %bea, l238 c11, asm ln 6832
-  🔔 Live ln too early, using produced ln + 1
+  %73 = load %struct.arc*, %struct.arc** %bea, l238 c11, asm ln 6832
   Added assignment asm ln 6832, prod ln 238.11, live ln 239, enc None
 Load from declared address of `bea` (decl src ln 141), asm ln 6826
   %72 = load %struct.arc*, %struct.arc** %bea, l236 c11, asm ln 6826
-  🔔 Live ln too early, using produced ln + 1
+  %72 = load %struct.arc*, %struct.arc** %bea, l236 c11, asm ln 6826
   Added assignment asm ln 6826, prod ln 236.11, live ln 237, enc None
 Load from declared address of `bea` (decl src ln 141), asm ln 6818
   %70 = load %struct.arc*, %struct.arc** %bea, l235 c13, asm ln 6818
-  🔔 Live ln too early, using produced ln + 1
+  %70 = load %struct.arc*, %struct.arc** %bea, l235 c13, asm ln 6818
   Added assignment asm ln 6818, prod ln 235.13, live ln 236, enc None
 Load from declared address of `bea` (decl src ln 141), asm ln 6797
   %63 = load %struct.arc*, %struct.arc** %bea, l224 c17, asm ln 6797
-  🔔 Live ln too early, using produced ln + 1
+  %63 = load %struct.arc*, %struct.arc** %bea, l224 c17, asm ln 6797
   Added assignment asm ln 6797, prod ln 224.17, live ln 225, enc None
 Load from declared address of `bea` (decl src ln 141), asm ln 6793
   %61 = load %struct.arc*, %struct.arc** %bea, l223 c17, asm ln 6793
-  🔔 Live ln too early, using produced ln + 1
+  %61 = load %struct.arc*, %struct.arc** %bea, l223 c17, asm ln 6793
   Added assignment asm ln 6793, prod ln 223.17, live ln 224, enc None
 Load from declared address of `bea` (decl src ln 141), asm ln 6786
   %59 = load %struct.arc*, %struct.arc** %bea, l219 c17, asm ln 6786
-  🔔 Live ln too early, using produced ln + 1
+  %59 = load %struct.arc*, %struct.arc** %bea, l219 c17, asm ln 6786
   Added assignment asm ln 6786, prod ln 219.17, live ln 220, enc None
 Load from declared address of `bea` (decl src ln 141), asm ln 6782
   %57 = load %struct.arc*, %struct.arc** %bea, l218 c17, asm ln 6782
-  🔔 Live ln too early, using produced ln + 1
+  %57 = load %struct.arc*, %struct.arc** %bea, l218 c17, asm ln 6782
   Added assignment asm ln 6782, prod ln 218.17, live ln 219, enc None
 Store to declared address of `bea` (decl src ln 141), asm ln 6756
   %50 = load %struct.arc*, %struct.arc** %a, l199 c25, asm ln 6755
+  store %struct.arc* %50, %struct.arc** %bea, l199 c11, asm ln 6756
   Added assignment asm ln 6756, prod ln 199.25, live ln 201, enc None
 Load from declared address of `bla` (decl src ln 142), asm ln 6945
   %110 = load %struct.arc*, %struct.arc** %bla, l277 c9, asm ln 6945
-  🔔 Live ln too early, using produced ln + 1
+  %110 = load %struct.arc*, %struct.arc** %bla, l277 c9, asm ln 6945
   Added assignment asm ln 6945, prod ln 277.9, live ln 278, enc None
 Store to declared address of `bla` (decl src ln 142), asm ln 6871
   %85 = load %struct.arc*, %struct.arc** %basic_arc, l254 c23, asm ln 6870
+  store %struct.arc* %85, %struct.arc** %bla, l254 c13, asm ln 6871
   Added assignment asm ln 6871, prod ln 254.23, live ln 256, enc None
 Load from declared address of `arcs` (decl src ln 143), asm ln 6661
   %20 = load %struct.arc*, %struct.arc** %arcs, l176 c40, asm ln 6661
-  🔔 Live ln too early, using produced ln + 1
+  %20 = load %struct.arc*, %struct.arc** %arcs, l176 c40, asm ln 6661
   Added assignment asm ln 6661, prod ln 176.40, live ln 177, enc None
 Store to declared address of `arcs` (decl src ln 143), asm ln 6588
   %1 = load %struct.arc*, %struct.arc** %arcs1, l143 c39, asm ln 6587
+  store %struct.arc* %1, %struct.arc** %arcs, l143 c18, asm ln 6588
   Added assignment asm ln 6588, prod ln 143.39, live ln 144, enc None
 Load from declared address of `stop_arcs` (decl src ln 144), asm ln 6662
   %21 = load %struct.arc*, %struct.arc** %stop_arcs, l176 c46, asm ln 6662
-  🔔 Live ln too early, using produced ln + 1
+  %21 = load %struct.arc*, %struct.arc** %stop_arcs, l176 c46, asm ln 6662
   Added assignment asm ln 6662, prod ln 176.46, live ln 177, enc None
 Store to declared address of `stop_arcs` (decl src ln 144), asm ln 6593
   %3 = load %struct.arc*, %struct.arc** %stop_arcs2, l144 c39, asm ln 6592
+  store %struct.arc* %3, %struct.arc** %stop_arcs, l144 c18, asm ln 6593
   Added assignment asm ln 6593, prod ln 144.39, live ln 146, enc None
 Load from declared address of `temp` (decl src ln 145), asm ln 6859
   %81 = load %struct.node*, %struct.node** %temp, l249 c19, asm ln 6859
-  🔔 Live ln too early, using produced ln + 1
+  %81 = load %struct.node*, %struct.node** %temp, l249 c19, asm ln 6859
   Added assignment asm ln 6859, prod ln 249.19, live ln 250, enc None
 Store to declared address of `temp` (decl src ln 145), asm ln 6856
   %79 = load %struct.node*, %struct.node** %jplus, l247 c18, asm ln 6855
+  store %struct.node* %79, %struct.node** %temp, l247 c16, asm ln 6856
   Added assignment asm ln 6856, prod ln 247.18, live ln 248, enc None
 Load from declared address of `m` (decl src ln 146), asm ln 6660
   %19 = load i64, i64* %m, l176 c37, asm ln 6660
-  🔔 Live ln too early, using produced ln + 1
+  %19 = load i64, i64* %m, l176 c37, asm ln 6660
   Added assignment asm ln 6660, prod ln 176.37, live ln 177, enc None
 Store to declared address of `m` (decl src ln 146), asm ln 6599
   %5 = load i64, i64* %m3, l146 c26, asm ln 6598
+  store i64 %5, i64* %m, l146 c17, asm ln 6599
   Added assignment asm ln 6599, prod ln 146.26, live ln 149, enc None
 Load from declared address of `new_set` (decl src ln 147), asm ln 6943
   %109 = load i64, i64* %new_set, l277 c22, asm ln 6943
-  🔔 Live ln too early, using produced ln + 1
+  %109 = load i64, i64* %new_set, l277 c22, asm ln 6943
   Added assignment asm ln 6943, prod ln 277.22, live ln 278, enc None
 Store to declared address of `new_set` (decl src ln 147), asm ln 6885
   const i64 2
-  🔔 Missing live ln, using produced ln + 1
+  store i64 2, i64* %new_set, l259 c19, asm ln 6885
   Added assignment asm ln 6885, prod ln 259.19, live ln 260, enc None
 Store to declared address of `new_set` (decl src ln 147), asm ln 6881
   const i64 1
-  🔔 Live ln too early, using produced ln + 1
+  store i64 1, i64* %new_set, l257 c19, asm ln 6881
   Added assignment asm ln 6881, prod ln 257.19, live ln 258, enc None
 Load from declared address of `red_cost_of_bea` (decl src ln 148), asm ln 6935
+  %105 = load i64, i64* %red_cost_of_bea, l273 c29, asm ln 6935
   %105 = load i64, i64* %red_cost_of_bea, l273 c29, asm ln 6935
   Added assignment asm ln 6935, prod ln 273.29, live ln 274, enc None
 Load from declared address of `red_cost_of_bea` (decl src ln 148), asm ln 6889
   %89 = load i64, i64* %red_cost_of_bea, l261 c13, asm ln 6889
-  🔔 Live ln too early, using produced ln + 1
+  %89 = load i64, i64* %red_cost_of_bea, l261 c13, asm ln 6889
   Added assignment asm ln 6889, prod ln 261.13, live ln 262, enc None
 Load from declared address of `red_cost_of_bea` (decl src ln 148), asm ln 6777
   %56 = load i64, i64* %red_cost_of_bea, l216 c11, asm ln 6777
-  🔔 Live ln too early, using produced ln + 1
+  %56 = load i64, i64* %red_cost_of_bea, l216 c11, asm ln 6777
   Added assignment asm ln 6777, prod ln 216.11, live ln 217, enc None
 Load from declared address of `red_cost_of_bea` (decl src ln 148), asm ln 6768
   %53 = load i64, i64* %red_cost_of_bea, l206 c9, asm ln 6768
-  🔔 Live ln too early, using produced ln + 1
+  %53 = load i64, i64* %red_cost_of_bea, l206 c9, asm ln 6768
   Added assignment asm ln 6768, prod ln 206.9, live ln 207, enc None
 Store to declared address of `red_cost_of_bea` (decl src ln 148), asm ln 6752
   %48 = load i64, i64* %cost, l198 c37, asm ln 6751
+  store i64 %48, i64* %red_cost_of_bea, l198 c23, asm ln 6752
   Added assignment asm ln 6752, prod ln 198.37, live ln 199, enc None
 Store to declared address of `red_cost_of_bea` (decl src ln 148), asm ln 6745
   const i64 0
+  store i64 0, i64* %red_cost_of_bea, l195 c23, asm ln 6745
   Added assignment asm ln 6745, prod ln 195.23, live ln 196, enc None
 Load from declared address of `iterations` (decl src ln 149), asm ln 6773
   %54 = load i64*, i64** %iterations, l208 c9, asm ln 6773
-  🔔 Live ln too early, using produced ln + 1
+  %54 = load i64*, i64** %iterations, l208 c9, asm ln 6773
   Added assignment asm ln 6773, prod ln 208.9, live ln 209, enc None
 Load from declared address of `iterations` (decl src ln 149), asm ln 6665
   %23 = load i64*, i64** %iterations, l176 c92, asm ln 6665
-  🔔 Live ln too early, using produced ln + 1
+  %23 = load i64*, i64** %iterations, l176 c92, asm ln 6665
   Added assignment asm ln 6665, prod ln 176.92, live ln 177, enc None
 Store to declared address of `iterations` (decl src ln 149), asm ln 6605
   %iterations4 = getelementptr inbounds %struct.network, %struct.network* %6, i32 0, i32 28, l149 c38, asm ln 6604
+  store i64* %iterations4, i64** %iterations, l149 c18, asm ln 6605
   Added assignment asm ln 6605, prod ln 149.38, live ln 150, enc None
 Load from declared address of `bound_exchanges` (decl src ln 150), asm ln 6814
   %68 = load i64*, i64** %bound_exchanges, l233 c11, asm ln 6814
-  🔔 Live ln too early, using produced ln + 1
+  %68 = load i64*, i64** %bound_exchanges, l233 c11, asm ln 6814
   Added assignment asm ln 6814, prod ln 233.11, live ln 234, enc None
 Store to declared address of `bound_exchanges` (decl src ln 150), asm ln 6609
   %bound_exchanges5 = getelementptr inbounds %struct.network, %struct.network* %7, i32 0, i32 29, l150 c43, asm ln 6608
+  store i64* %bound_exchanges5, i64** %bound_exchanges, l150 c18, asm ln 6609
   Added assignment asm ln 6609, prod ln 150.43, live ln 153, enc None
 Load from declared address of `max_basket` (decl src ln 151), asm ln 6753
   %49 = load %struct.basket*, %struct.basket** %max_basket, l199 c13, asm ln 6753
-  🔔 Live ln too early, using produced ln + 1
+  %49 = load %struct.basket*, %struct.basket** %max_basket, l199 c13, asm ln 6753
   Added assignment asm ln 6753, prod ln 199.13, live ln 200, enc None
 Load from declared address of `max_basket` (decl src ln 151), asm ln 6749
   %47 = load %struct.basket*, %struct.basket** %max_basket, l198 c25, asm ln 6749
-  🔔 Live ln too early, using produced ln + 1
+  %47 = load %struct.basket*, %struct.basket** %max_basket, l198 c25, asm ln 6749
   Added assignment asm ln 6749, prod ln 198.25, live ln 199, enc None
 Load from declared address of `max_basket` (decl src ln 151), asm ln 6740
   %46 = load %struct.basket*, %struct.basket** %max_basket, l193 c10, asm ln 6740
-  🔔 Live ln too early, using produced ln + 1
+  %46 = load %struct.basket*, %struct.basket** %max_basket, l193 c10, asm ln 6740
   Added assignment asm ln 6740, prod ln 193.10, live ln 194, enc None
 Store to declared address of `max_basket` (decl src ln 151), asm ln 6730
   %44 = load %struct.basket*, %struct.basket** %arrayidx32, l190 c22, asm ln 6729
+  store %struct.basket* %44, %struct.basket** %max_basket, l190 c20, asm ln 6730
   Added assignment asm ln 6730, prod ln 190.22, live ln 191, enc None
 Load from declared address of `max_basket` (decl src ln 151), asm ln 6697
   %33 = load %struct.basket*, %struct.basket** %max_basket, l189 c13, asm ln 6697
-  🔔 Live ln too early, using produced ln + 1
+  %33 = load %struct.basket*, %struct.basket** %max_basket, l189 c13, asm ln 6697
   Added assignment asm ln 6697, prod ln 189.13, live ln 190, enc None
 Store to declared address of `max_basket` (decl src ln 151), asm ln 6685
   const %struct.basket* null
+  store %struct.basket* null, %struct.basket** %max_basket, l187 c16, asm ln 6685
   Added assignment asm ln 6685, prod ln 187.16, live ln 188, enc None
 Store to declared address of `perm` (decl src ln 152), asm ln 6644
   %arrayidx9 = getelementptr inbounds %struct.basket, %struct.basket* %13, i64 %14, l164 c17, asm ln 6641
-  🔔 Live ln too early, using produced ln + 1
+  store %struct.basket* %arrayidx9, %struct.basket** %arrayidx10, l164 c13, asm ln 6644
   Added assignment asm ln 6644, prod ln 164.17, live ln 165, enc None
 Store to declared address of `end_arc` (decl src ln 153), asm ln 6616
   %9 = load %struct.arc*, %struct.arc** %arcs6, l153 c33, asm ln 6615
+  store %struct.arc* %9, %struct.arc** %end_arc, l153 c18, asm ln 6616
   Added assignment asm ln 6616, prod ln 153.33, live ln 162, enc None
 Store to declared address of `i` (decl src ln 154), asm ln 6736
   %inc34 = add nsw i64 %45, 1, l188 c34, asm ln 6735
-  🔔 Live ln too early, using produced ln + 1
+  store i64 %inc34, i64* %i, l188 c34, asm ln 6736
   Added assignment asm ln 6736, prod ln 188.34, live ln 189, enc None
 Load from declared address of `i` (decl src ln 154), asm ln 6734
   %45 = load i64, i64* %i, l188 c34, asm ln 6734
-  🔔 Live ln too early, using produced ln + 1
+  %45 = load i64, i64* %i, l188 c34, asm ln 6734
   Added assignment asm ln 6734, prod ln 188.34, live ln 189, enc None
 Load from declared address of `i` (decl src ln 154), asm ln 6727
   %43 = load i64, i64* %i, l190 c33, asm ln 6727
-  🔔 Live ln too early, using produced ln + 1
+  %43 = load i64, i64* %i, l190 c33, asm ln 6727
   Added assignment asm ln 6727, prod ln 190.33, live ln 191, enc None
 Load from declared address of `i` (decl src ln 154), asm ln 6719
   %41 = load i64, i64* %i, l189 c88, asm ln 6719
-  🔔 Live ln too early, using produced ln + 1
+  %41 = load i64, i64* %i, l189 c88, asm ln 6719
   Added assignment asm ln 6719, prod ln 189.88, live ln 190, enc None
 Load from declared address of `i` (decl src ln 154), asm ln 6711
   %38 = load i64, i64* %i, l189 c57, asm ln 6711
-  🔔 Live ln too early, using produced ln + 1
+  %38 = load i64, i64* %i, l189 c57, asm ln 6711
   Added assignment asm ln 6711, prod ln 189.57, live ln 190, enc None
 Load from declared address of `i` (decl src ln 154), asm ln 6703
   %35 = load i64, i64* %i, l189 c38, asm ln 6703
-  🔔 Live ln too early, using produced ln + 1
+  %35 = load i64, i64* %i, l189 c38, asm ln 6703
   Added assignment asm ln 6703, prod ln 189.38, live ln 190, enc None
 Load from declared address of `i` (decl src ln 154), asm ln 6690
   %31 = load i64, i64* %i, l188 c17, asm ln 6690
-  🔔 Live ln too early, using produced ln + 1
+  %31 = load i64, i64* %i, l188 c17, asm ln 6690
   Added assignment asm ln 6690, prod ln 188.17, live ln 189, enc None
 Store to declared address of `i` (decl src ln 154), asm ln 6686
   const i64 0
-  🔔 Live ln too early, using produced ln + 1
+  store i64 0, i64* %i, l188 c12, asm ln 6686
   Added assignment asm ln 6686, prod ln 188.12, live ln 189, enc None
 Store to declared address of `i` (decl src ln 154), asm ln 6647
   %inc = add nsw i64 %16, 1, l163 c44, asm ln 6646
-  🔔 Live ln too early, using produced ln + 1
+  store i64 %inc, i64* %i, l163 c44, asm ln 6647
   Added assignment asm ln 6647, prod ln 163.44, live ln 164, enc None
 Load from declared address of `i` (decl src ln 154), asm ln 6645
   %16 = load i64, i64* %i, l163 c44, asm ln 6645
-  🔔 Live ln too early, using produced ln + 1
+  %16 = load i64, i64* %i, l163 c44, asm ln 6645
   Added assignment asm ln 6645, prod ln 163.44, live ln 164, enc None
 Load from declared address of `i` (decl src ln 154), asm ln 6642
   %15 = load i64, i64* %i, l164 c10, asm ln 6642
-  🔔 Live ln too early, using produced ln + 1
+  %15 = load i64, i64* %i, l164 c10, asm ln 6642
   Added assignment asm ln 6642, prod ln 164.10, live ln 165, enc None
 Load from declared address of `i` (decl src ln 154), asm ln 6627
   %11 = load i64, i64* %i, l163 c20, asm ln 6627
-  🔔 Live ln too early, using produced ln + 1
+  %11 = load i64, i64* %i, l163 c20, asm ln 6627
   Added assignment asm ln 6627, prod ln 163.20, live ln 164, enc None
 Store to declared address of `i` (decl src ln 154), asm ln 6623
   const i64 1
-  🔔 Live ln too early, using produced ln + 1
+  store i64 1, i64* %i, l163 c16, asm ln 6623
   Added assignment asm ln 6623, prod ln 163.16, live ln 164, enc None
 Store to declared address of `j` (decl src ln 154), asm ln 6650
   %inc11 = add nsw i64 %17, 1, l163 c50, asm ln 6649
-  🔔 Live ln too early, using produced ln + 1
+  store i64 %inc11, i64* %j, l163 c50, asm ln 6650
   Added assignment asm ln 6650, prod ln 163.50, live ln 164, enc None
 Load from declared address of `j` (decl src ln 154), asm ln 6648
   %17 = load i64, i64* %j, l163 c50, asm ln 6648
-  🔔 Live ln too early, using produced ln + 1
+  %17 = load i64, i64* %j, l163 c50, asm ln 6648
   Added assignment asm ln 6648, prod ln 163.50, live ln 164, enc None
 Load from declared address of `j` (decl src ln 154), asm ln 6640
   %14 = load i64, i64* %j, l164 c24, asm ln 6640
-  🔔 Live ln too early, using produced ln + 1
+  %14 = load i64, i64* %j, l164 c24, asm ln 6640
   Added assignment asm ln 6640, prod ln 164.24, live ln 165, enc None
 Store to declared address of `j` (decl src ln 154), asm ln 6622
   const i64 1
-  🔔 Live ln too early, using produced ln + 1
+  store i64 1, i64* %j, l163 c10, asm ln 6622
   Added assignment asm ln 6622, prod ln 163.10, live ln 164, enc None
 
 #### After variables
 
 Value produced for `net` (decl src ln 124), asm ln 4882
   arg 0
+  @dbg.value(%struct.network.2* %net, !3966), asm ln 4882
   Added assignment asm ln 4882, prod ln 124.0, live ln 143, enc None
 Value produced for `num_threads` (decl src ln 124), asm ln 4883
   arg 1
+  @dbg.value(i32 %num_threads, !3968), asm ln 4883
   Added assignment asm ln 4883, prod ln 124.0, live ln 143, enc None
 Load from declared address of `delta` (decl src ln 132), asm ln 5146
+  %43 = load i64, i64* %delta, l272 c13, asm ln 5146
   %43 = load i64, i64* %delta, l272 c13, asm ln 5146
   Added assignment asm ln 5146, prod ln 272.13, live ln 273, enc None
 Load from declared address of `delta` (decl src ln 132), asm ln 5133
   %40 = load i64, i64* %delta, l261 c13, asm ln 5133
-  🔔 Live ln too early, using produced ln + 1
+  %40 = load i64, i64* %delta, l261 c13, asm ln 5133
   Added assignment asm ln 5133, prod ln 261.13, live ln 262, enc None
 Load from declared address of `delta` (decl src ln 132), asm ln 5131
   %39 = load i64, i64* %delta, l261 c13, asm ln 5131
-  🔔 Live ln too early, using produced ln + 1
+  %39 = load i64, i64* %delta, l261 c13, asm ln 5131
   Added assignment asm ln 5131, prod ln 261.13, live ln 262, enc None
 Load from declared address of `delta` (decl src ln 132), asm ln 5101
   %32 = load i64, i64* %delta, l240 c13, asm ln 5101
-  🔔 Live ln too early, using produced ln + 1
+  %32 = load i64, i64* %delta, l240 c13, asm ln 5101
   Added assignment asm ln 5101, prod ln 240.13, live ln 241, enc None
 Store to declared address of `delta` (decl src ln 132), asm ln 5074
   const i64 1
+  store i64 1, i64* %delta, l227 c13, asm ln 5074
   Added assignment asm ln 5074, prod ln 227.13, live ln 228, enc None
 Load from declared address of `xchange` (decl src ln 134), asm ln 5141
   %42 = load i64, i64* %xchange, l271 c23, asm ln 5141
-  🔔 Live ln too early, using produced ln + 1
+  %42 = load i64, i64* %xchange, l271 c23, asm ln 5141
   Added assignment asm ln 5141, prod ln 271.23, live ln 272, enc None
 Load from declared address of `xchange` (decl src ln 134), asm ln 5123
   %37 = load i64, i64* %xchange, l256 c13, asm ln 5123
-  🔔 Live ln too early, using produced ln + 1
+  %37 = load i64, i64* %xchange, l256 c13, asm ln 5123
   Added assignment asm ln 5123, prod ln 256.13, live ln 257, enc None
 Load from declared address of `xchange` (decl src ln 134), asm ln 5111
   %34 = load i64, i64* %xchange, l245 c13, asm ln 5111
-  🔔 Live ln too early, using produced ln + 1
+  %34 = load i64, i64* %xchange, l245 c13, asm ln 5111
   Added assignment asm ln 5111, prod ln 245.13, live ln 246, enc None
 Load from declared address of `w` (decl src ln 140), asm ln 5147
+  %44 = load %struct.node.1*, %struct.node.1** %w, l273 c21, asm ln 5147
   %44 = load %struct.node.1*, %struct.node.1** %w, l273 c21, asm ln 5147
   Added assignment asm ln 5147, prod ln 273.21, live ln 274, enc None
 Load from declared address of `w` (decl src ln 140), asm ln 5106
   %33 = load %struct.node.1*, %struct.node.1** %w, l241 c45, asm ln 5106
-  🔔 Live ln too early, using produced ln + 1
+  %33 = load %struct.node.1*, %struct.node.1** %w, l241 c45, asm ln 5106
   Added assignment asm ln 5106, prod ln 241.45, live ln 242, enc None
 Value produced for `arcs` (decl src ln 143), asm ln 4889
   %0 = load %struct.arc.0*, %struct.arc.0** %arcs1, l143 c39, asm ln 4888
+  @dbg.value(%struct.arc.0* %0, !3978), asm ln 4889
   Added assignment asm ln 4889, prod ln 143.39, live ln 144, enc None
 Value produced for `stop_arcs` (decl src ln 144), asm ln 4892
   %1 = load %struct.arc.0*, %struct.arc.0** %stop_arcs2, l144 c39, asm ln 4891
+  @dbg.value(%struct.arc.0* %1, !3980), asm ln 4892
   Added assignment asm ln 4892, prod ln 144.39, live ln 146, enc None
 Value produced for `m` (decl src ln 146), asm ln 4895
   %2 = load i64, i64* %m3, l146 c26, asm ln 4894
+  @dbg.value(i64 %2, !3982), asm ln 4895
   Added assignment asm ln 4895, prod ln 146.26, live ln 149, enc None
 Value produced for `iterations` (decl src ln 149), asm ln 4897
   %iterations4 = getelementptr inbounds %struct.network.2, %struct.network.2* %net, i32 0, i32 28, l149 c38, asm ln 4896
+  @dbg.value(i64* %iterations4, !3984), asm ln 4897
   Added assignment asm ln 4897, prod ln 149.38, live ln 150, enc None
 Value produced for `bound_exchanges` (decl src ln 150), asm ln 4899
   %bound_exchanges5 = getelementptr inbounds %struct.network.2, %struct.network.2* %net, i32 0, i32 29, l150 c43, asm ln 4898
+  @dbg.value(i64* %bound_exchanges5, !3986), asm ln 4899
   Added assignment asm ln 4899, prod ln 150.43, live ln 153, enc None
 Load from declared address of `max_basket` (decl src ln 151), asm ln 5024
   %23 = load %struct.basket.6*, %struct.basket.6** %max_basket, l199 c13, asm ln 5024
-  🔔 Live ln too early, using produced ln + 1
+  %23 = load %struct.basket.6*, %struct.basket.6** %max_basket, l199 c13, asm ln 5024
   Added assignment asm ln 5024, prod ln 199.13, live ln 200, enc None
 Load from declared address of `max_basket` (decl src ln 151), asm ln 5020
   %21 = load %struct.basket.6*, %struct.basket.6** %max_basket, l198 c25, asm ln 5020
-  🔔 Live ln too early, using produced ln + 1
+  %21 = load %struct.basket.6*, %struct.basket.6** %max_basket, l198 c25, asm ln 5020
   Added assignment asm ln 5020, prod ln 198.25, live ln 199, enc None
 Load from declared address of `max_basket` (decl src ln 151), asm ln 5015
   %20 = load %struct.basket.6*, %struct.basket.6** %max_basket, l193 c10, asm ln 5015
-  🔔 Live ln too early, using produced ln + 1
+  %20 = load %struct.basket.6*, %struct.basket.6** %max_basket, l193 c10, asm ln 5015
   Added assignment asm ln 5015, prod ln 193.10, live ln 194, enc None
 Store to declared address of `max_basket` (decl src ln 151), asm ln 5006
   %19 = load %struct.basket.6*, %struct.basket.6** %arrayidx32, l190 c22, asm ln 5005
+  store %struct.basket.6* %19, %struct.basket.6** %max_basket, l190 c20, asm ln 5006
   Added assignment asm ln 5006, prod ln 190.22, live ln 191, enc None
 Load from declared address of `max_basket` (decl src ln 151), asm ln 4977
   %12 = load %struct.basket.6*, %struct.basket.6** %max_basket, l189 c13, asm ln 4977
-  🔔 Live ln too early, using produced ln + 1
+  %12 = load %struct.basket.6*, %struct.basket.6** %max_basket, l189 c13, asm ln 4977
   Added assignment asm ln 4977, prod ln 189.13, live ln 190, enc None
 Store to declared address of `max_basket` (decl src ln 151), asm ln 4965
   const %struct.basket.6* null
+  store %struct.basket.6* null, %struct.basket.6** %max_basket, l187 c16, asm ln 4965
   Added assignment asm ln 4965, prod ln 187.16, live ln 188, enc None
 Store to declared address of `perm` (decl src ln 152), asm ln 4931
   %arrayidx9 = getelementptr inbounds %struct.basket.6, %struct.basket.6* %5, i64 %j.0, l164 c17, asm ln 4929
-  🔔 Live ln too early, using produced ln + 1
+  store %struct.basket.6* %arrayidx9, %struct.basket.6** %arrayidx10, l164 c13, asm ln 4931
   Added assignment asm ln 4931, prod ln 164.17, live ln 165, enc None
 Store to declared address of `end_arc` (decl src ln 153), asm ln 4905
   %3 = load %struct.arc.0*, %struct.arc.0** %arcs6, l153 c33, asm ln 4904
+  store %struct.arc.0* %3, %struct.arc.0** %end_arc, l153 c18, asm ln 4905
   Added assignment asm ln 4905, prod ln 153.33, live ln 162, enc None
 Value produced for `j` (decl src ln 154), asm ln 4909
   const i64 1
+  @dbg.value(i64 1, !3996), asm ln 4909
   Added assignment asm ln 4909, prod ln 154.0, live ln 163, enc None
 Value produced for `i` (decl src ln 154), asm ln 4910
   const i64 1
+  @dbg.value(i64 1, !3997), asm ln 4910
   Added assignment asm ln 4910, prod ln 154.0, live ln 163, enc None
 Value produced for `i` (decl src ln 154), asm ln 4933
   %inc = add nsw i64 %i.0, 1, l163 c44, asm ln 4932
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %inc, !3997), asm ln 4933
   Added assignment asm ln 4933, prod ln 163.44, live ln 164, enc None
 Value produced for `j` (decl src ln 154), asm ln 4935
   %inc11 = add nsw i64 %j.0, 1, l163 c50, asm ln 4934
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %inc11, !3996), asm ln 4935
   Added assignment asm ln 4935, prod ln 163.50, live ln 164, enc None
 Value produced for `i` (decl src ln 154), asm ln 4966
   const i64 0
-  🔔 Missing produced ln, using decl ln
+  @dbg.value(i64 0, !3997), asm ln 4966
   Added assignment asm ln 4966, prod ln 154.0, live ln 188, enc None
 Value produced for `i` (decl src ln 154), asm ln 5011
   %inc34 = add nsw i64 %i.1, 1, l188 c34, asm ln 5010
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %inc34, !3997), asm ln 5011
   Added assignment asm ln 5011, prod ln 188.34, live ln 189, enc None
 Value produced for `red_cost_of_bea` (decl src ln 148), asm ln 5023
   %22 = load i64, i64* %cost, l198 c37, asm ln 5022
+  @dbg.value(i64 %22, !4069), asm ln 5023
   Added assignment asm ln 5023, prod ln 198.37, live ln 199, enc None
 Value produced for `bea` (decl src ln 141), asm ln 5027
   %24 = load %struct.arc.0*, %struct.arc.0** %a, l199 c25, asm ln 5026
+  @dbg.value(%struct.arc.0* %24, !4016), asm ln 5027
   Added assignment asm ln 5027, prod ln 199.25, live ln 201, enc None
 Value produced for `iplus` (decl src ln 136), asm ln 5054
   %26 = load %struct.node.1*, %struct.node.1** %head, l218 c22, asm ln 5053
+  @dbg.value(%struct.node.1* %26, !4088), asm ln 5054
   Added assignment asm ln 5054, prod ln 218.22, live ln 219, enc None
 Value produced for `jplus` (decl src ln 137), asm ln 5057
   %27 = load %struct.node.1*, %struct.node.1** %tail, l219 c22, asm ln 5056
+  @dbg.value(%struct.node.1* %27, !4090), asm ln 5057
   Added assignment asm ln 5057, prod ln 219.22, live ln 220, enc None
 Value produced for `iplus` (decl src ln 136), asm ln 5063
   %28 = load %struct.node.1*, %struct.node.1** %tail52, l223 c22, asm ln 5062
+  @dbg.value(%struct.node.1* %28, !4088), asm ln 5063
   Added assignment asm ln 5063, prod ln 223.22, live ln 224, enc None
 Value produced for `jplus` (decl src ln 137), asm ln 5066
   %29 = load %struct.node.1*, %struct.node.1** %head53, l224 c22, asm ln 5065
-  🔔 Missing live ln, using produced ln + 1
+  @dbg.value(%struct.node.1* %29, !4090), asm ln 5066
   Added assignment asm ln 5066, prod ln 224.22, live ln 225, enc None
 Value produced for `iminus` (decl src ln 138), asm ln 5076
   %call55 = call %struct.node.1* @primal_iminus(i64* %delta, i64* %xchange, %struct.node.1* %iplus.0, %struct.node.1* %jplus.0, %struct.node.1** %w), l228 c16, asm ln 5075
+  @dbg.value(%struct.node.1* %call55, !4098), asm ln 5076
   Added assignment asm ln 5076, prod ln 228.16, live ln 231, enc None
 Value produced for `iplus` (decl src ln 136), asm ln 5115
   %spec.select1 = select i1 %tobool71, %struct.node.1* %jplus.0, %struct.node.1* %iplus.0, l245 c13, asm ln 5114
+  @dbg.value(%struct.node.1* %spec.select1, !4088), asm ln 5115
   Added assignment asm ln 5115, prod ln 245.13, live ln 252, enc None
 Value produced for `jplus` (decl src ln 137), asm ln 5116
   %spec.select = select i1 %tobool71, %struct.node.1* %iplus.0, %struct.node.1* %jplus.0, l245 c13, asm ln 5113
+  @dbg.value(%struct.node.1* %spec.select, !4090), asm ln 5116
   Added assignment asm ln 5116, prod ln 245.13, live ln 252, enc None
 Value produced for `jminus` (decl src ln 139), asm ln 5119
   %35 = load %struct.node.1*, %struct.node.1** %pred, l252 c26, asm ln 5118
+  @dbg.value(%struct.node.1* %35, !4124), asm ln 5119
   Added assignment asm ln 5119, prod ln 252.26, live ln 254, enc None
 Value produced for `bla` (decl src ln 142), asm ln 5122
   %36 = load %struct.arc.0*, %struct.arc.0** %basic_arc, l254 c23, asm ln 5121
+  @dbg.value(%struct.arc.0* %36, !4126), asm ln 5122
   Added assignment asm ln 5122, prod ln 254.23, live ln 256, enc None
 Value produced for `new_set` (decl src ln 147), asm ln 5129
   %new_set.0 = select i1 %cmp75, i64 1, i64 2, l256 c13, asm ln 5128
+  @dbg.value(i64 %new_set.0, !4133), asm ln 5129
   Added assignment asm ln 5129, prod ln 256.13, live ln 261, enc None
 Value produced for `new_flow` (decl src ln 133), asm ln 5135
   %new_flow.0 = select i1 %cmp80, i64 %sub, i64 %40, l261 c13, asm ln 5134
+  @dbg.value(i64 %new_flow.0, !4137), asm ln 5135
   Added assignment asm ln 5135, prod ln 261.13, live ln 266, enc None
 Value produced for `new_orientation` (decl src ln 135), asm ln 5140
   %. = select i1 %cmp86, i64 1, i64 0, asm ln 5139
+  @dbg.value(i64 %., !4141), asm ln 5140
   Added assignment asm ln 5140, prod ln 135.0, live ln 271, enc None
 Value produced for `j` (decl src ln 154), asm ln 4916
   %j.0 = phi i64 [ 1, %entry ], [ %inc11, %for.body ], asm ln 4915
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %j.0, !3996), asm ln 4916
   Added assignment asm ln 4916, prod ln 163.50, live ln 164, enc None
 Value produced for `i` (decl src ln 154), asm ln 4917
   %i.0 = phi i64 [ 1, %entry ], [ %inc, %for.body ], asm ln 4914
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %i.0, !3997), asm ln 4917
   Added assignment asm ln 4917, prod ln 163.44, live ln 164, enc None
 Value produced for `bea` (decl src ln 141), asm ln 4940
   %bea.0 = phi %struct.arc.0* [ %bea.1, %if.end99 ], [ undef, %for.cond ], asm ln 4939
-  🔔 Missing produced ln, using decl ln
+  @dbg.value(%struct.arc.0* %bea.0, !4016), asm ln 4940
   Added assignment asm ln 4940, prod ln 141.0, live ln 169, enc None
 Value produced for `i` (decl src ln 154), asm ln 4971
   %i.1 = phi i64 [ 0, %while.body ], [ %inc34, %for.inc33 ], asm ln 4970
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %i.1, !3997), asm ln 4971
   Added assignment asm ln 4971, prod ln 188.34, live ln 189, enc None
 Value produced for `red_cost_of_bea` (decl src ln 148), asm ln 5039
   %red_cost_of_bea.0 = phi i64 [ 0, %for.end35 ], [ %22, %if.then40 ], [ %22, %if.else ], asm ln 5038
+  @dbg.value(i64 %red_cost_of_bea.0, !4069), asm ln 5039
   Added assignment asm ln 5039, prod ln 198.37, live ln 206, enc None
 Value produced for `bea` (decl src ln 141), asm ln 5040
   %bea.1 = phi %struct.arc.0* [ %bea.0, %for.end35 ], [ %24, %if.then40 ], [ %24, %if.else ], asm ln 5037
+  @dbg.value(%struct.arc.0* %bea.1, !4016), asm ln 5040
   Added assignment asm ln 5040, prod ln 199.25, live ln 206, enc None
 Value produced for `iplus` (decl src ln 136), asm ln 5072
   %iplus.0 = phi %struct.node.1* [ %26, %if.then50 ], [ %28, %if.else51 ], asm ln 5071
+  @dbg.value(%struct.node.1* %iplus.0, !4088), asm ln 5072
   Added assignment asm ln 5072, prod ln 223.22, live ln 227, enc None
 Value produced for `jplus` (decl src ln 137), asm ln 5073
   %jplus.0 = phi %struct.node.1* [ %27, %if.then50 ], [ %29, %if.else51 ], asm ln 5070
+  @dbg.value(%struct.node.1* %jplus.0, !4090), asm ln 5073
   Added assignment asm ln 5073, prod ln 224.22, live ln 227, enc None
 
 #### Summary
@@ -45558,84 +44759,90 @@ Test Execution:
 
 Load from declared address of `net` (decl src ln 300), asm ln 7026
   %19 = load %struct.network*, %struct.network** %net.addr, l338 c20, asm ln 7026
-  🔔 Live ln too early, using produced ln + 1
+  %19 = load %struct.network*, %struct.network** %net.addr, l338 c20, asm ln 7026
   Added assignment asm ln 7026, prod ln 338.20, live ln 339, enc None
 Load from declared address of `net` (decl src ln 300), asm ln 7024
   %18 = load %struct.network*, %struct.network** %net.addr, l337 c22, asm ln 7024
-  🔔 Live ln too early, using produced ln + 1
+  %18 = load %struct.network*, %struct.network** %net.addr, l337 c22, asm ln 7024
   Added assignment asm ln 7024, prod ln 337.22, live ln 338, enc None
 Load from declared address of `net` (decl src ln 300), asm ln 7017
   %15 = load %struct.network*, %struct.network** %net.addr, l334 c16, asm ln 7017
-  🔔 Live ln too early, using produced ln + 1
+  %15 = load %struct.network*, %struct.network** %net.addr, l334 c16, asm ln 7017
   Added assignment asm ln 7017, prod ln 334.16, live ln 335, enc None
 Load from declared address of `net` (decl src ln 300), asm ln 7011
   %13 = load %struct.network*, %struct.network** %net.addr, l332 c16, asm ln 7011
-  🔔 Live ln too early, using produced ln + 1
+  %13 = load %struct.network*, %struct.network** %net.addr, l332 c16, asm ln 7011
   Added assignment asm ln 7011, prod ln 332.16, live ln 333, enc None
 Load from declared address of `net` (decl src ln 300), asm ln 7001
   %10 = load %struct.network*, %struct.network** %net.addr, l318 c24, asm ln 7001
-  🔔 Live ln too early, using produced ln + 1
+  %10 = load %struct.network*, %struct.network** %net.addr, l318 c24, asm ln 7001
   Added assignment asm ln 7001, prod ln 318.24, live ln 319, enc None
 Load from declared address of `net` (decl src ln 300), asm ln 7000
   %9 = load %struct.network*, %struct.network** %net.addr, l318 c19, asm ln 7000
-  🔔 Live ln too early, using produced ln + 1
+  %9 = load %struct.network*, %struct.network** %net.addr, l318 c19, asm ln 7000
   Added assignment asm ln 7000, prod ln 318.19, live ln 319, enc None
 Store to declared address of `net` (decl src ln 300), asm ln 6967
   arg 0
+  store %struct.network* %net, %struct.network** %net.addr, asm ln 6967
   Added assignment asm ln 6967, prod ln 300.0, live ln 311, enc None
 Load from declared address of `thread` (decl src ln 307), asm ln 7018
   %16 = load i32, i32* %thread, l334 c21, asm ln 7018
-  🔔 Live ln too early, using produced ln + 1
+  %16 = load i32, i32* %thread, l334 c21, asm ln 7018
   Added assignment asm ln 7018, prod ln 334.21, live ln 335, enc None
 Load from declared address of `thread` (decl src ln 307), asm ln 7006
   %12 = load i32, i32* %thread, l331 c11, asm ln 7006
-  🔔 Live ln too early, using produced ln + 1
+  %12 = load i32, i32* %thread, l331 c11, asm ln 7006
   Added assignment asm ln 7006, prod ln 331.11, live ln 332, enc None
 Store to declared address of `thread` (decl src ln 307), asm ln 7005
   const i32 0
+  store i32 0, i32* %thread, l329 c10, asm ln 7005
   Added assignment asm ln 7005, prod ln 329.10, live ln 331, enc None
 Load from declared address of `num_threads` (decl src ln 311), asm ln 7019
   %17 = load i32, i32* %num_threads, l334 c29, asm ln 7019
-  🔔 Live ln too early, using produced ln + 1
+  %17 = load i32, i32* %num_threads, l334 c29, asm ln 7019
   Added assignment asm ln 7019, prod ln 334.29, live ln 335, enc None
 Load from declared address of `num_threads` (decl src ln 311), asm ln 7012
   %14 = load i32, i32* %num_threads, l332 c21, asm ln 7012
-  🔔 Live ln too early, using produced ln + 1
+  %14 = load i32, i32* %num_threads, l332 c21, asm ln 7012
   Added assignment asm ln 7012, prod ln 332.21, live ln 333, enc None
 Load from declared address of `num_threads` (decl src ln 311), asm ln 6988
   %7 = load i32, i32* %num_threads, l316 c48, asm ln 6988
-  🔔 Live ln too early, using produced ln + 1
+  %7 = load i32, i32* %num_threads, l316 c48, asm ln 6988
   Added assignment asm ln 6988, prod ln 316.48, live ln 317, enc None
 Load from declared address of `num_threads` (decl src ln 311), asm ln 6987
   %6 = load i32, i32* %num_threads, l316 c31, asm ln 6987
-  🔔 Live ln too early, using produced ln + 1
+  %6 = load i32, i32* %num_threads, l316 c31, asm ln 6987
   Added assignment asm ln 6987, prod ln 316.31, live ln 317, enc None
 Load from declared address of `num_threads` (decl src ln 311), asm ln 6982
   %4 = load i32, i32* %num_threads, l315 c35, asm ln 6982
-  🔔 Live ln too early, using produced ln + 1
+  %4 = load i32, i32* %num_threads, l315 c35, asm ln 6982
   Added assignment asm ln 6982, prod ln 315.35, live ln 316, enc None
 Load from declared address of `num_threads` (decl src ln 311), asm ln 6977
   %2 = load i32, i32* %num_threads, l314 c36, asm ln 6977
-  🔔 Live ln too early, using produced ln + 1
+  %2 = load i32, i32* %num_threads, l314 c36, asm ln 6977
   Added assignment asm ln 6977, prod ln 314.36, live ln 315, enc None
 Load from declared address of `num_threads` (decl src ln 311), asm ln 6972
   %0 = load i32, i32* %num_threads, l313 c35, asm ln 6972
-  🔔 Live ln too early, using produced ln + 1
+  %0 = load i32, i32* %num_threads, l313 c35, asm ln 6972
   Added assignment asm ln 6972, prod ln 313.35, live ln 314, enc None
 Store to declared address of `num_threads` (decl src ln 311), asm ln 6971
   const i32 1
+  store i32 1, i32* %num_threads, l311 c7, asm ln 6971
   Added assignment asm ln 6971, prod ln 311.7, live ln 313, enc None
 
 #### After variables
 
 Value produced for `net` (decl src ln 300), asm ln 5172
   arg 0
+  @dbg.value(%struct.network.2* %net, !4160), asm ln 5172
   Added assignment asm ln 5172, prod ln 300.0, live ln 313, enc None
 Value produced for `num_threads` (decl src ln 311), asm ln 5173
   const i32 1
+  @dbg.value(i32 1, !4162), asm ln 5173
   Added assignment asm ln 5173, prod ln 311.0, live ln 313, enc None
 Value produced for `thread` (decl src ln 307), asm ln 5198
   const i32 0
+  @dbg.value(i32 0, !4186), asm ln 5198
   Added assignment asm ln 5198, prod ln 307.0, live ln 331, enc None
 
 #### Summary
@@ -46068,30 +45275,34 @@ Test Execution:
 
 Load from declared address of `net` (decl src ln 33), asm ln 7057
   %3 = load %struct.network*, %struct.network** %net.addr, l40 c50, asm ln 7057
-  🔔 Live ln too early, using produced ln + 1
+  %3 = load %struct.network*, %struct.network** %net.addr, l40 c50, asm ln 7057
   Added assignment asm ln 7057, prod ln 40.50, live ln 41, enc None
 Load from declared address of `net` (decl src ln 33), asm ln 7054
   %1 = load %struct.network*, %struct.network** %net.addr, l40 c31, asm ln 7054
-  🔔 Live ln too early, using produced ln + 1
+  %1 = load %struct.network*, %struct.network** %net.addr, l40 c31, asm ln 7054
   Added assignment asm ln 7054, prod ln 40.31, live ln 41, enc None
 Store to declared address of `net` (decl src ln 33), asm ln 7049
   arg 0
+  store %struct.network* %net, %struct.network** %net.addr, asm ln 7049
   Added assignment asm ln 7049, prod ln 33.0, live ln 40, enc None
 Load from declared address of `arcs` (decl src ln 33), asm ln 7053
   %0 = load %struct.arc*, %struct.arc** %arcs.addr, l40 c24, asm ln 7053
-  🔔 Live ln too early, using produced ln + 1
+  %0 = load %struct.arc*, %struct.arc** %arcs.addr, l40 c24, asm ln 7053
   Added assignment asm ln 7053, prod ln 40.24, live ln 41, enc None
 Store to declared address of `arcs` (decl src ln 33), asm ln 7051
   arg 1
+  store %struct.arc* %arcs, %struct.arc** %arcs.addr, asm ln 7051
   Added assignment asm ln 7051, prod ln 33.0, live ln 40, enc None
 
 #### After variables
 
 Value produced for `net` (decl src ln 33), asm ln 5232
   arg 0
+  @dbg.value(%struct.network.2* %net, !4245), asm ln 5232
   Added assignment asm ln 5232, prod ln 33.0, live ln 40, enc None
 Value produced for `arcs` (decl src ln 33), asm ln 5233
   arg 1
+  @dbg.value(%struct.arc.0* %arcs, !4247), asm ln 5233
   Added assignment asm ln 5233, prod ln 33.0, live ln 40, enc None
 
 #### Summary
@@ -46329,34 +45540,38 @@ Test Execution:
 
 Load from declared address of `arc` (decl src ln 46), asm ln 7093
   %4 = load %struct.arc*, %struct.arc** %arc.addr, l54 c33, asm ln 7093
-  🔔 Live ln too early, using produced ln + 1
+  %4 = load %struct.arc*, %struct.arc** %arc.addr, l54 c33, asm ln 7093
   Added assignment asm ln 7093, prod ln 54.33, live ln 55, enc None
 Load from declared address of `arc` (decl src ln 46), asm ln 7080
   %1 = load %struct.arc*, %struct.arc** %arc.addr, l53 c33, asm ln 7080
-  🔔 Live ln too early, using produced ln + 1
+  %1 = load %struct.arc*, %struct.arc** %arc.addr, l53 c33, asm ln 7080
   Added assignment asm ln 7080, prod ln 53.33, live ln 54, enc None
 Store to declared address of `arc` (decl src ln 46), asm ln 7071
   arg 0
+  store %struct.arc* %arc, %struct.arc** %arc.addr, asm ln 7071
   Added assignment asm ln 7071, prod ln 46.0, live ln 53, enc None
 Load from declared address of `red_cost` (decl src ln 46), asm ln 7088
   %3 = load i64, i64* %red_cost.addr, l54 c17, asm ln 7088
-  🔔 Live ln too early, using produced ln + 1
+  %3 = load i64, i64* %red_cost.addr, l54 c17, asm ln 7088
   Added assignment asm ln 7088, prod ln 54.17, live ln 55, enc None
 Load from declared address of `red_cost` (decl src ln 46), asm ln 7075
   %0 = load i64, i64* %red_cost.addr, l53 c17, asm ln 7075
-  🔔 Live ln too early, using produced ln + 1
+  %0 = load i64, i64* %red_cost.addr, l53 c17, asm ln 7075
   Added assignment asm ln 7075, prod ln 53.17, live ln 54, enc None
 Store to declared address of `red_cost` (decl src ln 46), asm ln 7073
   arg 1
+  store i64 %red_cost, i64* %red_cost.addr, asm ln 7073
   Added assignment asm ln 7073, prod ln 46.0, live ln 53, enc None
 
 #### After variables
 
 Value produced for `arc` (decl src ln 46), asm ln 5247
   arg 0
+  @dbg.value(%struct.arc.0* %arc, !4257), asm ln 5247
   Added assignment asm ln 5247, prod ln 46.0, live ln 53, enc None
 Value produced for `red_cost` (decl src ln 46), asm ln 5248
   arg 1
+  @dbg.value(i64 %red_cost, !4259), asm ln 5248
   Added assignment asm ln 5248, prod ln 46.0, live ln 53, enc None
 
 #### Summary
@@ -46622,42 +45837,46 @@ Test Execution:
 
 Load from declared address of `b1` (decl src ln 61), asm ln 7148
   %12 = load %struct.basket**, %struct.basket*** %b1.addr, l72 c9, asm ln 7148
-  🔔 Live ln too early, using produced ln + 1
+  %12 = load %struct.basket**, %struct.basket*** %b1.addr, l72 c9, asm ln 7148
   Added assignment asm ln 7148, prod ln 72.9, live ln 73, enc None
 Load from declared address of `b1` (decl src ln 61), asm ln 7132
   %6 = load %struct.basket**, %struct.basket*** %b1.addr, l70 c9, asm ln 7132
-  🔔 Live ln too early, using produced ln + 1
+  %6 = load %struct.basket**, %struct.basket*** %b1.addr, l70 c9, asm ln 7132
   Added assignment asm ln 7132, prod ln 70.9, live ln 71, enc None
 Load from declared address of `b1` (decl src ln 61), asm ln 7116
   %0 = load %struct.basket**, %struct.basket*** %b1.addr, l68 c9, asm ln 7116
-  🔔 Live ln too early, using produced ln + 1
+  %0 = load %struct.basket**, %struct.basket*** %b1.addr, l68 c9, asm ln 7116
   Added assignment asm ln 7116, prod ln 68.9, live ln 69, enc None
 Store to declared address of `b1` (decl src ln 61), asm ln 7112
   arg 0
+  store %struct.basket** %b1, %struct.basket*** %b1.addr, asm ln 7112
   Added assignment asm ln 7112, prod ln 61.0, live ln 68, enc None
 Load from declared address of `b2` (decl src ln 61), asm ln 7154
   %16 = load %struct.basket**, %struct.basket*** %b2.addr, l72 c24, asm ln 7154
-  🔔 Live ln too early, using produced ln + 1
+  %16 = load %struct.basket**, %struct.basket*** %b2.addr, l72 c24, asm ln 7154
   Added assignment asm ln 7154, prod ln 72.24, live ln 73, enc None
 Load from declared address of `b2` (decl src ln 61), asm ln 7136
   %9 = load %struct.basket**, %struct.basket*** %b2.addr, l70 c27, asm ln 7136
-  🔔 Live ln too early, using produced ln + 1
+  %9 = load %struct.basket**, %struct.basket*** %b2.addr, l70 c27, asm ln 7136
   Added assignment asm ln 7136, prod ln 70.27, live ln 71, enc None
 Load from declared address of `b2` (decl src ln 61), asm ln 7120
   %3 = load %struct.basket**, %struct.basket*** %b2.addr, l68 c27, asm ln 7120
-  🔔 Live ln too early, using produced ln + 1
+  %3 = load %struct.basket**, %struct.basket*** %b2.addr, l68 c27, asm ln 7120
   Added assignment asm ln 7120, prod ln 68.27, live ln 69, enc None
 Store to declared address of `b2` (decl src ln 61), asm ln 7114
   arg 1
+  store %struct.basket** %b2, %struct.basket*** %b2.addr, asm ln 7114
   Added assignment asm ln 7114, prod ln 61.0, live ln 68, enc None
 
 #### After variables
 
 Value produced for `b1` (decl src ln 61), asm ln 5279
   arg 0
+  @dbg.value(%struct.basket.6** %b1, !4284), asm ln 5279
   Added assignment asm ln 5279, prod ln 61.0, live ln 68, enc None
 Value produced for `b2` (decl src ln 61), asm ln 5280
   arg 1
+  @dbg.value(%struct.basket.6** %b2, !4286), asm ln 5280
   Added assignment asm ln 5280, prod ln 61.0, live ln 68, enc None
 
 #### Summary
@@ -46887,568 +46106,603 @@ Test Execution:
 
 Store to declared address of `m` (decl src ln 80), asm ln 7198
   arg 0
+  store i64 %m, i64* %m.addr, asm ln 7198
   @dbg.declare without read users, removable
   Added assignment asm ln 7198, prod ln 80.0, live ln 100, enc None
 Load from declared address of `arcs` (decl src ln 80), asm ln 7508
   %114 = load %struct.arc*, %struct.arc** %arcs.addr, l148 c23, asm ln 7508
-  🔔 Live ln too early, using produced ln + 1
+  %114 = load %struct.arc*, %struct.arc** %arcs.addr, l148 c23, asm ln 7508
   Added assignment asm ln 7508, prod ln 148.23, live ln 149, enc None
 Store to declared address of `arcs` (decl src ln 80), asm ln 7200
   arg 1
+  store %struct.arc* %arcs, %struct.arc** %arcs.addr, asm ln 7200
   Added assignment asm ln 7200, prod ln 80.0, live ln 100, enc None
 Load from declared address of `stop_arcs` (decl src ln 80), asm ln 7503
   %113 = load %struct.arc*, %struct.arc** %stop_arcs.addr, l147 c24, asm ln 7503
-  🔔 Live ln too early, using produced ln + 1
+  %113 = load %struct.arc*, %struct.arc** %stop_arcs.addr, l147 c24, asm ln 7503
   Added assignment asm ln 7503, prod ln 147.24, live ln 148, enc None
 Store to declared address of `stop_arcs` (decl src ln 80), asm ln 7202
   arg 2
+  store %struct.arc* %stop_arcs, %struct.arc** %stop_arcs.addr, asm ln 7202
   Added assignment asm ln 7202, prod ln 80.0, live ln 100, enc None
 Load from declared address of `basket_sizes` (decl src ln 81), asm ln 7578
   %137 = load i64*, i64** %basket_sizes.addr, l179 c26, asm ln 7578
-  🔔 Live ln too early, using produced ln + 1
+  %137 = load i64*, i64** %basket_sizes.addr, l179 c26, asm ln 7578
   Added assignment asm ln 7578, prod ln 179.26, live ln 180, enc None
 Load from declared address of `basket_sizes` (decl src ln 81), asm ln 7562
   %132 = load i64*, i64** %basket_sizes.addr, l174 c9, asm ln 7562
-  🔔 Live ln too early, using produced ln + 1
+  %132 = load i64*, i64** %basket_sizes.addr, l174 c9, asm ln 7562
   Added assignment asm ln 7562, prod ln 174.9, live ln 175, enc None
 Load from declared address of `basket_sizes` (decl src ln 81), asm ln 7552
   %128 = load i64*, i64** %basket_sizes.addr, l172 c9, asm ln 7552
-  🔔 Live ln too early, using produced ln + 1
+  %128 = load i64*, i64** %basket_sizes.addr, l172 c9, asm ln 7552
   Added assignment asm ln 7552, prod ln 172.9, live ln 173, enc None
 Load from declared address of `basket_sizes` (decl src ln 81), asm ln 7532
   %121 = load i64*, i64** %basket_sizes.addr, l159 c29, asm ln 7532
-  🔔 Live ln too early, using produced ln + 1
+  %121 = load i64*, i64** %basket_sizes.addr, l159 c29, asm ln 7532
   Added assignment asm ln 7532, prod ln 159.29, live ln 160, enc None
 Load from declared address of `basket_sizes` (decl src ln 81), asm ln 7482
   %105 = load i64*, i64** %basket_sizes.addr, l142 c16, asm ln 7482
-  🔔 Live ln too early, using produced ln + 1
+  %105 = load i64*, i64** %basket_sizes.addr, l142 c16, asm ln 7482
   Added assignment asm ln 7482, prod ln 142.16, live ln 143, enc None
 Load from declared address of `basket_sizes` (decl src ln 81), asm ln 7472
   %100 = load i64*, i64** %basket_sizes.addr, l141 c16, asm ln 7472
-  🔔 Live ln too early, using produced ln + 1
+  %100 = load i64*, i64** %basket_sizes.addr, l141 c16, asm ln 7472
   Added assignment asm ln 7472, prod ln 141.16, live ln 142, enc None
 Load from declared address of `basket_sizes` (decl src ln 81), asm ln 7456
   %92 = load i64*, i64** %basket_sizes.addr, l140 c16, asm ln 7456
-  🔔 Live ln too early, using produced ln + 1
+  %92 = load i64*, i64** %basket_sizes.addr, l140 c16, asm ln 7456
   Added assignment asm ln 7456, prod ln 140.16, live ln 141, enc None
 Load from declared address of `basket_sizes` (decl src ln 81), asm ln 7445
   %86 = load i64*, i64** %basket_sizes.addr, l139 c16, asm ln 7445
-  🔔 Live ln too early, using produced ln + 1
+  %86 = load i64*, i64** %basket_sizes.addr, l139 c16, asm ln 7445
   Added assignment asm ln 7445, prod ln 139.16, live ln 140, enc None
 Load from declared address of `basket_sizes` (decl src ln 81), asm ln 7436
   %81 = load i64*, i64** %basket_sizes.addr, l138 c11, asm ln 7436
-  🔔 Live ln too early, using produced ln + 1
+  %81 = load i64*, i64** %basket_sizes.addr, l138 c11, asm ln 7436
   Added assignment asm ln 7436, prod ln 138.11, live ln 139, enc None
 Load from declared address of `basket_sizes` (decl src ln 81), asm ln 7352
   %48 = load i64*, i64** %basket_sizes.addr, l116 c9, asm ln 7352
-  🔔 Live ln too early, using produced ln + 1
+  %48 = load i64*, i64** %basket_sizes.addr, l116 c9, asm ln 7352
   Added assignment asm ln 7352, prod ln 116.9, live ln 117, enc None
 Load from declared address of `basket_sizes` (decl src ln 81), asm ln 7237
   %2 = load i64*, i64** %basket_sizes.addr, l100 c45, asm ln 7237
-  🔔 Live ln too early, using produced ln + 1
+  %2 = load i64*, i64** %basket_sizes.addr, l100 c45, asm ln 7237
   Added assignment asm ln 7237, prod ln 100.45, live ln 101, enc None
 Store to declared address of `basket_sizes` (decl src ln 81), asm ln 7204
   arg 3
+  store i64* %basket_sizes, i64** %basket_sizes.addr, asm ln 7204
   Added assignment asm ln 7204, prod ln 81.0, live ln 100, enc None
 Load from declared address of `perm` (decl src ln 81), asm ln 7584
   %140 = load %struct.basket**, %struct.basket*** %perm.addr, l186 c12, asm ln 7584
-  🔔 Live ln too early, using produced ln + 1
+  %140 = load %struct.basket**, %struct.basket*** %perm.addr, l186 c12, asm ln 7584
   Added assignment asm ln 7584, prod ln 186.12, live ln 187, enc None
 Load from declared address of `perm` (decl src ln 81), asm ln 7575
   %135 = load %struct.basket**, %struct.basket*** %perm.addr, l179 c16, asm ln 7575
-  🔔 Live ln too early, using produced ln + 1
+  %135 = load %struct.basket**, %struct.basket*** %perm.addr, l179 c16, asm ln 7575
   Added assignment asm ln 7575, prod ln 179.16, live ln 180, enc None
 Load from declared address of `perm` (decl src ln 81), asm ln 7551
   %127 = load %struct.basket**, %struct.basket*** %perm.addr, l172 c4, asm ln 7551
-  🔔 Live ln too early, using produced ln + 1
+  %127 = load %struct.basket**, %struct.basket*** %perm.addr, l172 c4, asm ln 7551
   Added assignment asm ln 7551, prod ln 172.4, live ln 173, enc None
 Load from declared address of `perm` (decl src ln 81), asm ln 7481
   %104 = load %struct.basket**, %struct.basket*** %perm.addr, l142 c11, asm ln 7481
-  🔔 Live ln too early, using produced ln + 1
+  %104 = load %struct.basket**, %struct.basket*** %perm.addr, l142 c11, asm ln 7481
   Added assignment asm ln 7481, prod ln 142.11, live ln 143, enc None
 Load from declared address of `perm` (decl src ln 81), asm ln 7471
   %99 = load %struct.basket**, %struct.basket*** %perm.addr, l141 c11, asm ln 7471
-  🔔 Live ln too early, using produced ln + 1
+  %99 = load %struct.basket**, %struct.basket*** %perm.addr, l141 c11, asm ln 7471
   Added assignment asm ln 7471, prod ln 141.11, live ln 142, enc None
 Load from declared address of `perm` (decl src ln 81), asm ln 7455
   %91 = load %struct.basket**, %struct.basket*** %perm.addr, l140 c11, asm ln 7455
-  🔔 Live ln too early, using produced ln + 1
+  %91 = load %struct.basket**, %struct.basket*** %perm.addr, l140 c11, asm ln 7455
   Added assignment asm ln 7455, prod ln 140.11, live ln 141, enc None
 Load from declared address of `perm` (decl src ln 81), asm ln 7444
   %85 = load %struct.basket**, %struct.basket*** %perm.addr, l139 c11, asm ln 7444
-  🔔 Live ln too early, using produced ln + 1
+  %85 = load %struct.basket**, %struct.basket*** %perm.addr, l139 c11, asm ln 7444
   Added assignment asm ln 7444, prod ln 139.11, live ln 140, enc None
 Load from declared address of `perm` (decl src ln 81), asm ln 7336
   %43 = load %struct.basket**, %struct.basket*** %perm.addr, l112 c16, asm ln 7336
-  🔔 Live ln too early, using produced ln + 1
+  %43 = load %struct.basket**, %struct.basket*** %perm.addr, l112 c16, asm ln 7336
   Added assignment asm ln 7336, prod ln 112.16, live ln 113, enc None
 Load from declared address of `perm` (decl src ln 81), asm ln 7330
   %40 = load %struct.basket**, %struct.basket*** %perm.addr, l111 c16, asm ln 7330
-  🔔 Live ln too early, using produced ln + 1
+  %40 = load %struct.basket**, %struct.basket*** %perm.addr, l111 c16, asm ln 7330
   Added assignment asm ln 7330, prod ln 111.16, live ln 112, enc None
 Load from declared address of `perm` (decl src ln 81), asm ln 7318
   %34 = load %struct.basket**, %struct.basket*** %perm.addr, l110 c16, asm ln 7318
-  🔔 Live ln too early, using produced ln + 1
+  %34 = load %struct.basket**, %struct.basket*** %perm.addr, l110 c16, asm ln 7318
   Added assignment asm ln 7318, prod ln 110.16, live ln 111, enc None
 Load from declared address of `perm` (decl src ln 81), asm ln 7311
   %30 = load %struct.basket**, %struct.basket*** %perm.addr, l109 c16, asm ln 7311
-  🔔 Live ln too early, using produced ln + 1
+  %30 = load %struct.basket**, %struct.basket*** %perm.addr, l109 c16, asm ln 7311
   Added assignment asm ln 7311, prod ln 109.16, live ln 110, enc None
 Load from declared address of `perm` (decl src ln 81), asm ln 7253
   %9 = load %struct.basket**, %struct.basket*** %perm.addr, l103 c20, asm ln 7253
-  🔔 Live ln too early, using produced ln + 1
+  %9 = load %struct.basket**, %struct.basket*** %perm.addr, l103 c20, asm ln 7253
   Added assignment asm ln 7253, prod ln 103.20, live ln 104, enc None
 Load from declared address of `perm` (decl src ln 81), asm ln 7246
   %5 = load %struct.basket**, %struct.basket*** %perm.addr, l102 c18, asm ln 7246
-  🔔 Live ln too early, using produced ln + 1
+  %5 = load %struct.basket**, %struct.basket*** %perm.addr, l102 c18, asm ln 7246
   Added assignment asm ln 7246, prod ln 102.18, live ln 103, enc None
 Store to declared address of `perm` (decl src ln 81), asm ln 7206
   arg 4
+  store %struct.basket** %perm, %struct.basket*** %perm.addr, asm ln 7206
   Added assignment asm ln 7206, prod ln 81.0, live ln 100, enc None
 Load from declared address of `thread` (decl src ln 81), asm ln 7579
   %138 = load i32, i32* %thread.addr, l179 c39, asm ln 7579
-  🔔 Live ln too early, using produced ln + 1
+  %138 = load i32, i32* %thread.addr, l179 c39, asm ln 7579
   Added assignment asm ln 7579, prod ln 179.39, live ln 180, enc None
 Load from declared address of `thread` (decl src ln 81), asm ln 7563
   %133 = load i32, i32* %thread.addr, l174 c22, asm ln 7563
-  🔔 Live ln too early, using produced ln + 1
+  %133 = load i32, i32* %thread.addr, l174 c22, asm ln 7563
   Added assignment asm ln 7563, prod ln 174.22, live ln 175, enc None
 Load from declared address of `thread` (decl src ln 81), asm ln 7553
   %129 = load i32, i32* %thread.addr, l172 c22, asm ln 7553
-  🔔 Live ln too early, using produced ln + 1
+  %129 = load i32, i32* %thread.addr, l172 c22, asm ln 7553
   Added assignment asm ln 7553, prod ln 172.22, live ln 173, enc None
 Load from declared address of `thread` (decl src ln 81), asm ln 7483
   %106 = load i32, i32* %thread.addr, l142 c29, asm ln 7483
-  🔔 Live ln too early, using produced ln + 1
+  %106 = load i32, i32* %thread.addr, l142 c29, asm ln 7483
   Added assignment asm ln 7483, prod ln 142.29, live ln 143, enc None
 Load from declared address of `thread` (decl src ln 81), asm ln 7473
   %101 = load i32, i32* %thread.addr, l141 c29, asm ln 7473
-  🔔 Live ln too early, using produced ln + 1
+  %101 = load i32, i32* %thread.addr, l141 c29, asm ln 7473
   Added assignment asm ln 7473, prod ln 141.29, live ln 142, enc None
 Load from declared address of `thread` (decl src ln 81), asm ln 7457
   %93 = load i32, i32* %thread.addr, l140 c29, asm ln 7457
-  🔔 Live ln too early, using produced ln + 1
+  %93 = load i32, i32* %thread.addr, l140 c29, asm ln 7457
   Added assignment asm ln 7457, prod ln 140.29, live ln 141, enc None
 Load from declared address of `thread` (decl src ln 81), asm ln 7446
   %87 = load i32, i32* %thread.addr, l139 c29, asm ln 7446
-  🔔 Live ln too early, using produced ln + 1
+  %87 = load i32, i32* %thread.addr, l139 c29, asm ln 7446
   Added assignment asm ln 7446, prod ln 139.29, live ln 140, enc None
 Load from declared address of `thread` (decl src ln 81), asm ln 7437
   %82 = load i32, i32* %thread.addr, l138 c24, asm ln 7437
-  🔔 Live ln too early, using produced ln + 1
+  %82 = load i32, i32* %thread.addr, l138 c24, asm ln 7437
   Added assignment asm ln 7437, prod ln 138.24, live ln 139, enc None
 Load from declared address of `thread` (decl src ln 81), asm ln 7353
   %49 = load i32, i32* %thread.addr, l116 c22, asm ln 7353
-  🔔 Live ln too early, using produced ln + 1
+  %49 = load i32, i32* %thread.addr, l116 c22, asm ln 7353
   Added assignment asm ln 7353, prod ln 116.22, live ln 117, enc None
 Load from declared address of `thread` (decl src ln 81), asm ln 7238
   %3 = load i32, i32* %thread.addr, l100 c58, asm ln 7238
-  🔔 Live ln too early, using produced ln + 1
+  %3 = load i32, i32* %thread.addr, l100 c58, asm ln 7238
   Added assignment asm ln 7238, prod ln 100.58, live ln 101, enc None
 Store to declared address of `thread` (decl src ln 81), asm ln 7208
   arg 5
+  store i32 %thread, i32* %thread.addr, asm ln 7208
   Added assignment asm ln 7208, prod ln 81.0, live ln 100, enc None
 Load from declared address of `end_arc` (decl src ln 81), asm ln 7514
   %116 = load %struct.arc**, %struct.arc*** %end_arc.addr, l152 c10, asm ln 7514
-  🔔 Live ln too early, using produced ln + 1
+  %116 = load %struct.arc**, %struct.arc*** %end_arc.addr, l152 c10, asm ln 7514
   Added assignment asm ln 7514, prod ln 152.10, live ln 153, enc None
 Load from declared address of `end_arc` (decl src ln 81), asm ln 7509
   %115 = load %struct.arc**, %struct.arc*** %end_arc.addr, l148 c13, asm ln 7509
-  🔔 Live ln too early, using produced ln + 1
+  %115 = load %struct.arc**, %struct.arc*** %end_arc.addr, l148 c13, asm ln 7509
   Added assignment asm ln 7509, prod ln 148.13, live ln 149, enc None
 Load from declared address of `end_arc` (decl src ln 81), asm ln 7501
   %111 = load %struct.arc**, %struct.arc*** %end_arc.addr, l147 c13, asm ln 7501
-  🔔 Live ln too early, using produced ln + 1
+  %111 = load %struct.arc**, %struct.arc*** %end_arc.addr, l147 c13, asm ln 7501
   Added assignment asm ln 7501, prod ln 147.13, live ln 148, enc None
 Load from declared address of `end_arc` (decl src ln 81), asm ln 7399
   %67 = load %struct.arc**, %struct.arc*** %end_arc.addr, l131 c23, asm ln 7399
-  🔔 Live ln too early, using produced ln + 1
+  %67 = load %struct.arc**, %struct.arc*** %end_arc.addr, l131 c23, asm ln 7399
   Added assignment asm ln 7399, prod ln 131.23, live ln 132, enc None
 Load from declared address of `end_arc` (decl src ln 81), asm ln 7390
   %65 = load %struct.arc**, %struct.arc*** %end_arc.addr, l128 c8, asm ln 7390
-  🔔 Live ln too early, using produced ln + 1
+  %65 = load %struct.arc**, %struct.arc*** %end_arc.addr, l128 c8, asm ln 7390
   Added assignment asm ln 7390, prod ln 128.8, live ln 129, enc None
 Load from declared address of `end_arc` (decl src ln 81), asm ln 7386
   %62 = load %struct.arc**, %struct.arc*** %end_arc.addr, l128 c19, asm ln 7386
-  🔔 Live ln too early, using produced ln + 1
+  %62 = load %struct.arc**, %struct.arc*** %end_arc.addr, l128 c19, asm ln 7386
   Added assignment asm ln 7386, prod ln 128.19, live ln 129, enc None
 Load from declared address of `end_arc` (decl src ln 81), asm ln 7381
   %61 = load %struct.arc**, %struct.arc*** %end_arc.addr, l126 c8, asm ln 7381
-  🔔 Live ln too early, using produced ln + 1
+  %61 = load %struct.arc**, %struct.arc*** %end_arc.addr, l126 c8, asm ln 7381
   Added assignment asm ln 7381, prod ln 126.8, live ln 127, enc None
 Load from declared address of `end_arc` (decl src ln 81), asm ln 7376
   %58 = load %struct.arc**, %struct.arc*** %end_arc.addr, l126 c19, asm ln 7376
-  🔔 Live ln too early, using produced ln + 1
+  %58 = load %struct.arc**, %struct.arc*** %end_arc.addr, l126 c19, asm ln 7376
   Added assignment asm ln 7376, prod ln 126.19, live ln 127, enc None
 Load from declared address of `end_arc` (decl src ln 81), asm ln 7369
   %55 = load %struct.arc**, %struct.arc*** %end_arc.addr, l125 c10, asm ln 7369
-  🔔 Live ln too early, using produced ln + 1
+  %55 = load %struct.arc**, %struct.arc*** %end_arc.addr, l125 c10, asm ln 7369
   Added assignment asm ln 7369, prod ln 125.10, live ln 126, enc None
 Load from declared address of `end_arc` (decl src ln 81), asm ln 7364
   %52 = load %struct.arc**, %struct.arc*** %end_arc.addr, l123 c12, asm ln 7364
-  🔔 Live ln too early, using produced ln + 1
+  %52 = load %struct.arc**, %struct.arc*** %end_arc.addr, l123 c12, asm ln 7364
   Added assignment asm ln 7364, prod ln 123.12, live ln 124, enc None
 Load from declared address of `end_arc` (decl src ln 81), asm ln 7357
   %50 = load %struct.arc**, %struct.arc*** %end_arc.addr, l118 c24, asm ln 7357
-  🔔 Live ln too early, using produced ln + 1
+  %50 = load %struct.arc**, %struct.arc*** %end_arc.addr, l118 c24, asm ln 7357
   Added assignment asm ln 7357, prod ln 118.24, live ln 119, enc None
 Store to declared address of `end_arc` (decl src ln 81), asm ln 7210
   arg 6
+  store %struct.arc** %end_arc, %struct.arc*** %end_arc.addr, asm ln 7210
   Added assignment asm ln 7210, prod ln 81.0, live ln 100, enc None
 Load from declared address of `step` (decl src ln 81), asm ln 7366
   %54 = load i64, i64* %step.addr, l123 c22, asm ln 7366
-  🔔 Live ln too early, using produced ln + 1
+  %54 = load i64, i64* %step.addr, l123 c22, asm ln 7366
   Added assignment asm ln 7366, prod ln 123.22, live ln 124, enc None
 Store to declared address of `step` (decl src ln 81), asm ln 7212
   arg 7
+  store i64 %step, i64* %step.addr, asm ln 7212
   Added assignment asm ln 7212, prod ln 81.0, live ln 100, enc None
 Load from declared address of `num_threads` (decl src ln 81), asm ln 7527
   %120 = load i64, i64* %num_threads.addr, l158 c23, asm ln 7527
-  🔔 Live ln too early, using produced ln + 1
+  %120 = load i64, i64* %num_threads.addr, l158 c23, asm ln 7527
   Added assignment asm ln 7527, prod ln 158.23, live ln 159, enc None
 Load from declared address of `num_threads` (decl src ln 81), asm ln 7494
   %109 = load i64, i64* %num_threads.addr, l131 c39, asm ln 7494
-  🔔 Live ln too early, using produced ln + 1
+  %109 = load i64, i64* %num_threads.addr, l131 c39, asm ln 7494
   Added assignment asm ln 7494, prod ln 131.39, live ln 132, enc None
 Store to declared address of `num_threads` (decl src ln 81), asm ln 7214
   arg 8
+  store i64 %num_threads, i64* %num_threads.addr, asm ln 7214
   Added assignment asm ln 7214, prod ln 81.0, live ln 100, enc None
 Load from declared address of `max_elems` (decl src ln 81), asm ln 7388
   %64 = load i64, i64* %max_elems.addr, l128 c29, asm ln 7388
-  🔔 Live ln too early, using produced ln + 1
+  %64 = load i64, i64* %max_elems.addr, l128 c29, asm ln 7388
   Added assignment asm ln 7388, prod ln 128.29, live ln 129, enc None
 Load from declared address of `max_elems` (decl src ln 81), asm ln 7378
   %60 = load i64, i64* %max_elems.addr, l126 c29, asm ln 7378
-  🔔 Live ln too early, using produced ln + 1
+  %60 = load i64, i64* %max_elems.addr, l126 c29, asm ln 7378
   Added assignment asm ln 7378, prod ln 126.29, live ln 127, enc None
 Store to declared address of `max_elems` (decl src ln 81), asm ln 7216
   arg 9
+  store i64 %max_elems, i64* %max_elems.addr, asm ln 7216
   Added assignment asm ln 7216, prod ln 81.0, live ln 100, enc None
 Store to declared address of `i` (decl src ln 96), asm ln 7347
   %inc27 = add nsw i64 %46, 1, l100 c68, asm ln 7346
-  🔔 Live ln too early, using produced ln + 1
+  store i64 %inc27, i64* %i, l100 c68, asm ln 7347
   Added assignment asm ln 7347, prod ln 100.68, live ln 101, enc None
 Load from declared address of `i` (decl src ln 96), asm ln 7345
   %46 = load i64, i64* %i, l100 c68, asm ln 7345
-  🔔 Live ln too early, using produced ln + 1
+  %46 = load i64, i64* %i, l100 c68, asm ln 7345
   Added assignment asm ln 7345, prod ln 100.68, live ln 101, enc None
 Load from declared address of `i` (decl src ln 96), asm ln 7254
   %10 = load i64, i64* %i, l103 c25, asm ln 7254
-  🔔 Live ln too early, using produced ln + 1
+  %10 = load i64, i64* %i, l103 c25, asm ln 7254
   Added assignment asm ln 7254, prod ln 103.25, live ln 104, enc None
 Load from declared address of `i` (decl src ln 96), asm ln 7247
   %6 = load i64, i64* %i, l102 c23, asm ln 7247
-  🔔 Live ln too early, using produced ln + 1
+  %6 = load i64, i64* %i, l102 c23, asm ln 7247
   Added assignment asm ln 7247, prod ln 102.23, live ln 103, enc None
 Load from declared address of `i` (decl src ln 96), asm ln 7236
   %1 = load i64, i64* %i, l100 c40, asm ln 7236
-  🔔 Live ln too early, using produced ln + 1
+  %1 = load i64, i64* %i, l100 c40, asm ln 7236
   Added assignment asm ln 7236, prod ln 100.40, live ln 101, enc None
 Load from declared address of `i` (decl src ln 96), asm ln 7231
   %0 = load i64, i64* %i, l100 c30, asm ln 7231
-  🔔 Live ln too early, using produced ln + 1
+  %0 = load i64, i64* %i, l100 c30, asm ln 7231
   Added assignment asm ln 7231, prod ln 100.30, live ln 101, enc None
 Store to declared address of `i` (decl src ln 96), asm ln 7226
   const i64 1
-  🔔 Live ln too early, using produced ln + 1
+  store i64 1, i64* %i, l100 c15, asm ln 7226
   Added assignment asm ln 7226, prod ln 100.15, live ln 101, enc None
 Store to declared address of `j` (decl src ln 96), asm ln 7541
   %inc99 = add nsw i64 %125, 1, l158 c37, asm ln 7540
-  🔔 Live ln too early, using produced ln + 1
+  store i64 %inc99, i64* %j, l158 c37, asm ln 7541
   Added assignment asm ln 7541, prod ln 158.37, live ln 159, enc None
 Load from declared address of `j` (decl src ln 96), asm ln 7539
   %125 = load i64, i64* %j, l158 c37, asm ln 7539
-  🔔 Live ln too early, using produced ln + 1
+  %125 = load i64, i64* %j, l158 c37, asm ln 7539
   Added assignment asm ln 7539, prod ln 158.37, live ln 159, enc None
 Load from declared address of `j` (decl src ln 96), asm ln 7533
   %122 = load i64, i64* %j, l159 c42, asm ln 7533
-  🔔 Live ln too early, using produced ln + 1
+  %122 = load i64, i64* %j, l159 c42, asm ln 7533
   Added assignment asm ln 7533, prod ln 159.42, live ln 160, enc None
 Load from declared address of `j` (decl src ln 96), asm ln 7526
   %119 = load i64, i64* %j, l158 c19, asm ln 7526
-  🔔 Live ln too early, using produced ln + 1
+  %119 = load i64, i64* %j, l158 c19, asm ln 7526
   Added assignment asm ln 7526, prod ln 158.19, live ln 159, enc None
 Store to declared address of `j` (decl src ln 96), asm ln 7522
   const i64 0
-  🔔 Live ln too early, using produced ln + 1
+  store i64 0, i64* %j, l158 c14, asm ln 7522
   Added assignment asm ln 7522, prod ln 158.14, live ln 159, enc None
 Load from declared address of `count` (decl src ln 96), asm ln 7276
   %21 = load i64, i64* %count, l105 c16, asm ln 7276
-  🔔 Live ln too early, using produced ln + 1
+  %21 = load i64, i64* %count, l105 c16, asm ln 7276
   Added assignment asm ln 7276, prod ln 105.16, live ln 106, enc None
 Store to declared address of `count` (decl src ln 96), asm ln 7259
   %12 = load i64, i64* %number, l103 c29, asm ln 7258
+  store i64 %12, i64* %count, l103 c18, asm ln 7259
   Added assignment asm ln 7259, prod ln 103.29, live ln 104, enc None
 Load from declared address of `global_basket_size` (decl src ln 96), asm ln 7545
   %126 = load i64, i64* %global_basket_size, l161 c12, asm ln 7545
-  🔔 Live ln too early, using produced ln + 1
+  %126 = load i64, i64* %global_basket_size, l161 c12, asm ln 7545
   Added assignment asm ln 7545, prod ln 161.12, live ln 162, enc None
 Store to declared address of `global_basket_size` (decl src ln 96), asm ln 7538
   %add97 = add nsw i64 %124, %123, l159 c27, asm ln 7537
-  🔔 Live ln too early, using produced ln + 1
+  store i64 %add97, i64* %global_basket_size, l159 c27, asm ln 7538
   Added assignment asm ln 7538, prod ln 159.27, live ln 160, enc None
 Load from declared address of `global_basket_size` (decl src ln 96), asm ln 7536
   %124 = load i64, i64* %global_basket_size, l159 c27, asm ln 7536
-  🔔 Live ln too early, using produced ln + 1
+  %124 = load i64, i64* %global_basket_size, l159 c27, asm ln 7536
   Added assignment asm ln 7536, prod ln 159.27, live ln 160, enc None
 Store to declared address of `global_basket_size` (decl src ln 96), asm ln 7521
   const i64 0
+  store i64 0, i64* %global_basket_size, l157 c26, asm ln 7521
   Added assignment asm ln 7521, prod ln 157.26, live ln 158, enc None
 Load from declared address of `next` (decl src ln 96), asm ln 7351
   %47 = load i64, i64* %next, l116 c32, asm ln 7351
-  🔔 Live ln too early, using produced ln + 1
+  %47 = load i64, i64* %next, l116 c32, asm ln 7351
   Added assignment asm ln 7351, prod ln 116.32, live ln 117, enc None
 Load from declared address of `next` (decl src ln 96), asm ln 7337
   %44 = load i64, i64* %next, l112 c21, asm ln 7337
-  🔔 Live ln too early, using produced ln + 1
+  %44 = load i64, i64* %next, l112 c21, asm ln 7337
   Added assignment asm ln 7337, prod ln 112.21, live ln 113, enc None
 Load from declared address of `next` (decl src ln 96), asm ln 7331
   %41 = load i64, i64* %next, l111 c21, asm ln 7331
-  🔔 Live ln too early, using produced ln + 1
+  %41 = load i64, i64* %next, l111 c21, asm ln 7331
   Added assignment asm ln 7331, prod ln 111.21, live ln 112, enc None
 Load from declared address of `next` (decl src ln 96), asm ln 7319
   %35 = load i64, i64* %next, l110 c21, asm ln 7319
-  🔔 Live ln too early, using produced ln + 1
+  %35 = load i64, i64* %next, l110 c21, asm ln 7319
   Added assignment asm ln 7319, prod ln 110.21, live ln 111, enc None
 Load from declared address of `next` (decl src ln 96), asm ln 7312
   %31 = load i64, i64* %next, l109 c21, asm ln 7312
-  🔔 Live ln too early, using produced ln + 1
+  %31 = load i64, i64* %next, l109 c21, asm ln 7312
   Added assignment asm ln 7312, prod ln 109.21, live ln 110, enc None
 Store to declared address of `next` (decl src ln 96), asm ln 7309
   %inc = add nsw i64 %28, 1, l108 c20, asm ln 7308
+  store i64 %inc, i64* %next, l108 c20, asm ln 7309
   Added assignment asm ln 7309, prod ln 108.20, live ln 109, enc None
 Load from declared address of `next` (decl src ln 96), asm ln 7307
   %28 = load i64, i64* %next, l108 c20, asm ln 7307
-  🔔 Live ln too early, using produced ln + 1
+  %28 = load i64, i64* %next, l108 c20, asm ln 7307
   Added assignment asm ln 7307, prod ln 108.20, live ln 109, enc None
 Store to declared address of `next` (decl src ln 96), asm ln 7227
   const i64 0
-  🔔 Live ln too early, using produced ln + 1
+  store i64 0, i64* %next, l100 c25, asm ln 7227
   Added assignment asm ln 7227, prod ln 100.25, live ln 101, enc None
 Store to declared address of `arc` (decl src ln 97), asm ln 7497
   %add.ptr83 = getelementptr inbounds %struct.arc, %struct.arc* %110, i64 %109, l131 c36, asm ln 7496
-  🔔 Live ln too early, using produced ln + 1
+  store %struct.arc* %add.ptr83, %struct.arc** %arc, l131 c36, asm ln 7497
   Added assignment asm ln 7497, prod ln 131.36, live ln 132, enc None
 Load from declared address of `arc` (decl src ln 97), asm ln 7495
   %110 = load %struct.arc*, %struct.arc** %arc, l131 c36, asm ln 7495
-  🔔 Live ln too early, using produced ln + 1
+  %110 = load %struct.arc*, %struct.arc** %arc, l131 c36, asm ln 7495
   Added assignment asm ln 7495, prod ln 131.36, live ln 132, enc None
 Load from declared address of `arc` (decl src ln 97), asm ln 7443
   %84 = load %struct.arc*, %struct.arc** %arc, l139 c43, asm ln 7443
-  🔔 Live ln too early, using produced ln + 1
+  %84 = load %struct.arc*, %struct.arc** %arc, l139 c43, asm ln 7443
   Added assignment asm ln 7443, prod ln 139.43, live ln 140, enc None
 Load from declared address of `arc` (decl src ln 97), asm ln 7429
   %79 = load %struct.arc*, %struct.arc** %arc, l136 c37, asm ln 7429
-  🔔 Live ln too early, using produced ln + 1
+  %79 = load %struct.arc*, %struct.arc** %arc, l136 c37, asm ln 7429
   Added assignment asm ln 7429, prod ln 136.37, live ln 137, enc None
 Load from declared address of `arc` (decl src ln 97), asm ln 7422
   %76 = load %struct.arc*, %struct.arc** %arc, l135 c55, asm ln 7422
-  🔔 Live ln too early, using produced ln + 1
+  %76 = load %struct.arc*, %struct.arc** %arc, l135 c55, asm ln 7422
   Added assignment asm ln 7422, prod ln 135.55, live ln 136, enc None
 Load from declared address of `arc` (decl src ln 97), asm ln 7416
   %73 = load %struct.arc*, %struct.arc** %arc, l135 c32, asm ln 7416
-  🔔 Live ln too early, using produced ln + 1
+  %73 = load %struct.arc*, %struct.arc** %arc, l135 c32, asm ln 7416
   Added assignment asm ln 7416, prod ln 135.32, live ln 136, enc None
 Load from declared address of `arc` (decl src ln 97), asm ln 7413
   %71 = load %struct.arc*, %struct.arc** %arc, l135 c20, asm ln 7413
-  🔔 Live ln too early, using produced ln + 1
+  %71 = load %struct.arc*, %struct.arc** %arc, l135 c20, asm ln 7413
   Added assignment asm ln 7413, prod ln 135.20, live ln 136, enc None
 Load from declared address of `arc` (decl src ln 97), asm ln 7405
   %69 = load %struct.arc*, %struct.arc** %arc, l132 c11, asm ln 7405
-  🔔 Live ln too early, using produced ln + 1
+  %69 = load %struct.arc*, %struct.arc** %arc, l132 c11, asm ln 7405
   Added assignment asm ln 7405, prod ln 132.11, live ln 133, enc None
 Load from declared address of `arc` (decl src ln 97), asm ln 7398
   %66 = load %struct.arc*, %struct.arc** %arc, l131 c16, asm ln 7398
-  🔔 Live ln too early, using produced ln + 1
+  %66 = load %struct.arc*, %struct.arc** %arc, l131 c16, asm ln 7398
   Added assignment asm ln 7398, prod ln 131.16, live ln 132, enc None
 Store to declared address of `arc` (decl src ln 97), asm ln 7368
   %add.ptr = getelementptr inbounds %struct.arc, %struct.arc* %53, i64 %54, l123 c20, asm ln 7367
+  store %struct.arc* %add.ptr, %struct.arc** %arc, l123 c9, asm ln 7368
   Added assignment asm ln 7368, prod ln 123.20, live ln 125, enc None
 Load from declared address of `arc` (decl src ln 97), asm ln 7310
   %29 = load %struct.arc*, %struct.arc** %arc, l109 c32, asm ln 7310
-  🔔 Live ln too early, using produced ln + 1
+  %29 = load %struct.arc*, %struct.arc** %arc, l109 c32, asm ln 7310
   Added assignment asm ln 7310, prod ln 109.32, live ln 110, enc None
 Load from declared address of `arc` (decl src ln 97), asm ln 7299
   %26 = load %struct.arc*, %struct.arc** %arc, l106 c36, asm ln 7299
-  🔔 Live ln too early, using produced ln + 1
+  %26 = load %struct.arc*, %struct.arc** %arc, l106 c36, asm ln 7299
   Added assignment asm ln 7299, prod ln 106.36, live ln 107, enc None
 Load from declared address of `arc` (decl src ln 97), asm ln 7286
   %23 = load %struct.arc*, %struct.arc** %arc, l105 c47, asm ln 7286
-  🔔 Live ln too early, using produced ln + 1
+  %23 = load %struct.arc*, %struct.arc** %arc, l105 c47, asm ln 7286
   Added assignment asm ln 7286, prod ln 105.47, live ln 106, enc None
 Load from declared address of `arc` (decl src ln 97), asm ln 7269
   %18 = load %struct.arc*, %struct.arc** %arc, l104 c58, asm ln 7269
-  🔔 Live ln too early, using produced ln + 1
+  %18 = load %struct.arc*, %struct.arc** %arc, l104 c58, asm ln 7269
   Added assignment asm ln 7269, prod ln 104.58, live ln 105, enc None
 Load from declared address of `arc` (decl src ln 97), asm ln 7263
   %15 = load %struct.arc*, %struct.arc** %arc, l104 c35, asm ln 7263
-  🔔 Live ln too early, using produced ln + 1
+  %15 = load %struct.arc*, %struct.arc** %arc, l104 c35, asm ln 7263
   Added assignment asm ln 7263, prod ln 104.35, live ln 105, enc None
 Load from declared address of `arc` (decl src ln 97), asm ln 7260
   %13 = load %struct.arc*, %struct.arc** %arc, l104 c23, asm ln 7260
-  🔔 Live ln too early, using produced ln + 1
+  %13 = load %struct.arc*, %struct.arc** %arc, l104 c23, asm ln 7260
   Added assignment asm ln 7260, prod ln 104.23, live ln 105, enc None
 Store to declared address of `arc` (decl src ln 97), asm ln 7252
   %8 = load %struct.arc*, %struct.arc** %a, l102 c27, asm ln 7251
+  store %struct.arc* %8, %struct.arc** %arc, l102 c16, asm ln 7252
   Added assignment asm ln 7252, prod ln 102.27, live ln 103, enc None
 Load from declared address of `old_end_arc` (decl src ln 97), asm ln 7516
   %118 = load %struct.arc*, %struct.arc** %old_end_arc, l152 c21, asm ln 7516
-  🔔 Live ln too early, using produced ln + 1
+  %118 = load %struct.arc*, %struct.arc** %old_end_arc, l152 c21, asm ln 7516
   Added assignment asm ln 7516, prod ln 152.21, live ln 153, enc None
 Store to declared address of `old_end_arc` (decl src ln 97), asm ln 7359
   %51 = load %struct.arc*, %struct.arc** %50, l118 c23, asm ln 7358
-  🔔 Live ln too early, using produced ln + 1
+  store %struct.arc* %51, %struct.arc** %old_end_arc, l118 c21, asm ln 7359
   Added assignment asm ln 7359, prod ln 118.23, live ln 119, enc None
 Load from declared address of `red_cost` (decl src ln 98), asm ln 7468
   %98 = load i64, i64* %red_cost, l141 c50, asm ln 7468
-  🔔 Live ln too early, using produced ln + 1
+  %98 = load i64, i64* %red_cost, l141 c50, asm ln 7468
   Added assignment asm ln 7468, prod ln 141.50, live ln 142, enc None
 Load from declared address of `red_cost` (decl src ln 98), asm ln 7467
   %97 = load i64, i64* %red_cost, l141 c50, asm ln 7467
-  🔔 Live ln too early, using produced ln + 1
+  %97 = load i64, i64* %red_cost, l141 c50, asm ln 7467
   Added assignment asm ln 7467, prod ln 141.50, live ln 142, enc None
 Load from declared address of `red_cost` (decl src ln 98), asm ln 7465
   %96 = load i64, i64* %red_cost, l141 c50, asm ln 7465
-  🔔 Live ln too early, using produced ln + 1
+  %96 = load i64, i64* %red_cost, l141 c50, asm ln 7465
   Added assignment asm ln 7465, prod ln 141.50, live ln 142, enc None
 Load from declared address of `red_cost` (decl src ln 98), asm ln 7454
   %90 = load i64, i64* %red_cost, l140 c46, asm ln 7454
-  🔔 Live ln too early, using produced ln + 1
+  %90 = load i64, i64* %red_cost, l140 c46, asm ln 7454
   Added assignment asm ln 7454, prod ln 140.46, live ln 141, enc None
 Load from declared address of `red_cost` (decl src ln 98), asm ln 7430
   %80 = load i64, i64* %red_cost, l136 c42, asm ln 7430
-  🔔 Live ln too early, using produced ln + 1
+  %80 = load i64, i64* %red_cost, l136 c42, asm ln 7430
   Added assignment asm ln 7430, prod ln 136.42, live ln 137, enc None
 Store to declared address of `red_cost` (decl src ln 98), asm ln 7428
   %add52 = add nsw i64 %sub49, %78, l135 c53, asm ln 7427
+  store i64 %add52, i64* %red_cost, l135 c18, asm ln 7428
   Added assignment asm ln 7428, prod ln 135.53, live ln 136, enc None
 Load from declared address of `red_cost` (decl src ln 98), asm ln 7327
   %39 = load i64, i64* %red_cost, l111 c39, asm ln 7327
-  🔔 Live ln too early, using produced ln + 1
+  %39 = load i64, i64* %red_cost, l111 c39, asm ln 7327
   Added assignment asm ln 7327, prod ln 111.39, live ln 112, enc None
 Load from declared address of `red_cost` (decl src ln 98), asm ln 7326
   %38 = load i64, i64* %red_cost, l111 c39, asm ln 7326
-  🔔 Live ln too early, using produced ln + 1
+  %38 = load i64, i64* %red_cost, l111 c39, asm ln 7326
   Added assignment asm ln 7326, prod ln 111.39, live ln 112, enc None
 Load from declared address of `red_cost` (decl src ln 98), asm ln 7324
   %37 = load i64, i64* %red_cost, l111 c39, asm ln 7324
-  🔔 Live ln too early, using produced ln + 1
+  %37 = load i64, i64* %red_cost, l111 c39, asm ln 7324
   Added assignment asm ln 7324, prod ln 111.39, live ln 112, enc None
 Load from declared address of `red_cost` (decl src ln 98), asm ln 7317
   %33 = load i64, i64* %red_cost, l110 c35, asm ln 7317
-  🔔 Live ln too early, using produced ln + 1
+  %33 = load i64, i64* %red_cost, l110 c35, asm ln 7317
   Added assignment asm ln 7317, prod ln 110.35, live ln 111, enc None
 Load from declared address of `red_cost` (decl src ln 98), asm ln 7294
   %25 = load i64, i64* %red_cost, l106 c20, asm ln 7294
-  🔔 Live ln too early, using produced ln + 1
+  %25 = load i64, i64* %red_cost, l106 c20, asm ln 7294
   Added assignment asm ln 7294, prod ln 106.20, live ln 107, enc None
 Load from declared address of `red_cost` (decl src ln 98), asm ln 7281
   %22 = load i64, i64* %red_cost, l105 c31, asm ln 7281
-  🔔 Live ln too early, using produced ln + 1
+  %22 = load i64, i64* %red_cost, l105 c31, asm ln 7281
   Added assignment asm ln 7281, prod ln 105.31, live ln 106, enc None
 Store to declared address of `red_cost` (decl src ln 98), asm ln 7275
   %add = add nsw i64 %sub, %20, l104 c56, asm ln 7274
+  store i64 %add, i64* %red_cost, l104 c21, asm ln 7275
   Added assignment asm ln 7275, prod ln 104.56, live ln 105, enc None
 
 #### After variables
 
 Value produced for `m` (decl src ln 80), asm ln 5323
   arg 0
+  @dbg.value(i64 %m, !4315), asm ln 5323
   Added assignment asm ln 5323, prod ln 80.0, live ln 100, enc None
 Value produced for `arcs` (decl src ln 80), asm ln 5324
   arg 1
+  @dbg.value(%struct.arc.0* %arcs, !4317), asm ln 5324
   Added assignment asm ln 5324, prod ln 80.0, live ln 100, enc None
 Value produced for `stop_arcs` (decl src ln 80), asm ln 5325
   arg 2
+  @dbg.value(%struct.arc.0* %stop_arcs, !4318), asm ln 5325
   Added assignment asm ln 5325, prod ln 80.0, live ln 100, enc None
 Value produced for `basket_sizes` (decl src ln 81), asm ln 5326
   arg 3
+  @dbg.value(i64* %basket_sizes, !4319), asm ln 5326
   Added assignment asm ln 5326, prod ln 81.0, live ln 100, enc None
 Value produced for `perm` (decl src ln 81), asm ln 5327
   arg 4
+  @dbg.value(%struct.basket.6** %perm, !4320), asm ln 5327
   Added assignment asm ln 5327, prod ln 81.0, live ln 100, enc None
 Value produced for `thread` (decl src ln 81), asm ln 5328
   arg 5
+  @dbg.value(i32 %thread, !4321), asm ln 5328
   Added assignment asm ln 5328, prod ln 81.0, live ln 100, enc None
 Value produced for `end_arc` (decl src ln 81), asm ln 5329
   arg 6
+  @dbg.value(%struct.arc.0** %end_arc, !4322), asm ln 5329
   Added assignment asm ln 5329, prod ln 81.0, live ln 100, enc None
 Value produced for `step` (decl src ln 81), asm ln 5330
   arg 7
+  @dbg.value(i64 %step, !4323), asm ln 5330
   Added assignment asm ln 5330, prod ln 81.0, live ln 100, enc None
 Value produced for `num_threads` (decl src ln 81), asm ln 5331
   arg 8
+  @dbg.value(i64 %num_threads, !4324), asm ln 5331
   Added assignment asm ln 5331, prod ln 81.0, live ln 100, enc None
 Value produced for `max_elems` (decl src ln 81), asm ln 5332
   arg 9
+  @dbg.value(i64 %max_elems, !4325), asm ln 5332
   Added assignment asm ln 5332, prod ln 81.0, live ln 100, enc None
 Value produced for `i` (decl src ln 96), asm ln 5333
   const i64 1
+  @dbg.value(i64 1, !4326), asm ln 5333
   Added assignment asm ln 5333, prod ln 96.0, live ln 100, enc None
 Value produced for `next` (decl src ln 96), asm ln 5334
   const i64 0
+  @dbg.value(i64 0, !4327), asm ln 5334
   Added assignment asm ln 5334, prod ln 96.0, live ln 100, enc None
 Value produced for `arc` (decl src ln 97), asm ln 5357
   %2 = load %struct.arc.0*, %struct.arc.0** %a, l102 c27, asm ln 5356
+  @dbg.value(%struct.arc.0* %2, !4340), asm ln 5357
   Added assignment asm ln 5357, prod ln 102.27, live ln 103, enc None
 Value produced for `count` (decl src ln 96), asm ln 5362
   %4 = load i64, i64* %number, l103 c29, asm ln 5361
+  @dbg.value(i64 %4, !4343), asm ln 5362
   Added assignment asm ln 5362, prod ln 103.29, live ln 104, enc None
 Value produced for `red_cost` (decl src ln 98), asm ln 5375
   %add = add nsw i64 %sub, %9, l104 c56, asm ln 5374
+  @dbg.value(i64 %add, !4351), asm ln 5375
   Added assignment asm ln 5375, prod ln 104.56, live ln 105, enc None
 Value produced for `next` (decl src ln 96), asm ln 5403
   %inc = add nsw i64 %next.0, 1, l108 c20, asm ln 5402
+  @dbg.value(i64 %inc, !4327), asm ln 5403
   Added assignment asm ln 5403, prod ln 108.20, live ln 109, enc None
 Value produced for `i` (decl src ln 96), asm ln 5429
   %inc27 = add nsw i64 %i.0, 1, l100 c68, asm ln 5428
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %inc27, !4326), asm ln 5429
   Added assignment asm ln 5429, prod ln 100.68, live ln 101, enc None
 Value produced for `old_end_arc` (decl src ln 97), asm ln 5437
   %16 = load %struct.arc.0*, %struct.arc.0** %end_arc, l118 c23, asm ln 5436
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(%struct.arc.0* %16, !4390), asm ln 5437
   Added assignment asm ln 5437, prod ln 118.23, live ln 119, enc None
 Value produced for `arc` (decl src ln 97), asm ln 5444
   %add.ptr = getelementptr inbounds %struct.arc.0, %struct.arc.0* %17, i64 %step, l123 c20, asm ln 5443
+  @dbg.value(%struct.arc.0* %add.ptr, !4340), asm ln 5444
   Added assignment asm ln 5444, prod ln 123.20, live ln 125, enc None
 Value produced for `red_cost` (decl src ln 98), asm ln 5493
   %add52 = add nsw i64 %sub49, %28, l135 c53, asm ln 5492
+  @dbg.value(i64 %add52, !4351), asm ln 5493
   Added assignment asm ln 5493, prod ln 135.53, live ln 136, enc None
 Value produced for `arc` (decl src ln 97), asm ln 5539
   %add.ptr83 = getelementptr inbounds %struct.arc.0, %struct.arc.0* %arc.0, i64 %num_threads, l131 c36, asm ln 5538
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(%struct.arc.0* %add.ptr83, !4340), asm ln 5539
   Added assignment asm ln 5539, prod ln 131.36, live ln 132, enc None
 Value produced for `global_basket_size` (decl src ln 96), asm ln 5568
   %add97 = add nsw i64 %global_basket_size.0, %40, l159 c27, asm ln 5567
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %add97, !4472), asm ln 5568
   Added assignment asm ln 5568, prod ln 159.27, live ln 160, enc None
 Value produced for `j` (decl src ln 96), asm ln 5570
   %inc99 = add nsw i64 %j.0, 1, l158 c37, asm ln 5569
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %inc99, !4473), asm ln 5570
   Added assignment asm ln 5570, prod ln 158.37, live ln 159, enc None
 Value produced for `next` (decl src ln 96), asm ln 5340
   %next.0 = phi i64 [ 0, %entry ], [ %next.1, %for.inc ], asm ln 5339
-  🔔 Missing produced ln, using decl ln
+  @dbg.value(i64 %next.0, !4327), asm ln 5340
   Added assignment asm ln 5340, prod ln 96.0, live ln 100, enc None
 Value produced for `i` (decl src ln 96), asm ln 5341
   %i.0 = phi i64 [ 1, %entry ], [ %inc27, %for.inc ], asm ln 5338
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %i.0, !4326), asm ln 5341
   Added assignment asm ln 5341, prod ln 100.68, live ln 101, enc None
 Value produced for `next` (decl src ln 96), asm ln 5427
   %next.1 = phi i64 [ %inc, %if.then ], [ %next.0, %land.lhs.true12 ], [ %next.0, %lor.lhs.false ], [ %next.0, %for.body ], asm ln 5426
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %next.1, !4327), asm ln 5427
   Added assignment asm ln 5427, prod ln 108.20, live ln 109, enc None
 Value produced for `arc` (decl src ln 97), asm ln 5468
   %arc.0 = phi %struct.arc.0* [ %add.ptr, %if.end36 ], [ %add.ptr83, %for.inc82 ], asm ln 5467
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(%struct.arc.0* %arc.0, !4340), asm ln 5468
   Added assignment asm ln 5468, prod ln 131.36, live ln 132, enc None
 Value produced for `global_basket_size` (decl src ln 96), asm ln 5559
   %global_basket_size.0 = phi i64 [ %add97, %for.body95 ], [ 0, %if.end88 ], asm ln 5558
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %global_basket_size.0, !4472), asm ln 5559
   Added assignment asm ln 5559, prod ln 159.27, live ln 160, enc None
 Value produced for `j` (decl src ln 96), asm ln 5560
   %j.0 = phi i64 [ %inc99, %for.body95 ], [ 0, %if.end88 ], asm ln 5557
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %j.0, !4473), asm ln 5560
   Added assignment asm ln 5560, prod ln 158.37, live ln 159, enc None
 
 #### Summary
@@ -50119,356 +49373,366 @@ Test Execution:
 
 Load from declared address of `a` (decl src ln 81), asm ln 8655
   %29 = load i8*, i8** %a.addr, l88 c17, asm ln 8655
-  🔔 Live ln too early, using produced ln + 1
+  %29 = load i8*, i8** %a.addr, l88 c17, asm ln 8655
   Added assignment asm ln 8655, prod ln 88.17, live ln 89, enc None
 Load from declared address of `a` (decl src ln 81), asm ln 8617
   %16 = load i8*, i8** %a.addr, l86 c17, asm ln 8617
-  🔔 Live ln too early, using produced ln + 1
+  %16 = load i8*, i8** %a.addr, l86 c17, asm ln 8617
   Added assignment asm ln 8617, prod ln 86.17, live ln 87, enc None
 Load from declared address of `a` (decl src ln 81), asm ln 8574
   %2 = load i8*, i8** %a.addr, l84 c17, asm ln 8574
-  🔔 Live ln too early, using produced ln + 1
+  %2 = load i8*, i8** %a.addr, l84 c17, asm ln 8574
   Added assignment asm ln 8574, prod ln 84.17, live ln 85, enc None
 Store to declared address of `a` (decl src ln 81), asm ln 8553
   arg 0
+  store i8* %a, i8** %a.addr, asm ln 8553
   Added assignment asm ln 8553, prod ln 81.0, live ln 83, enc None
 Load from declared address of `b` (decl src ln 81), asm ln 8658
   %30 = load i8*, i8** %b.addr, l88 c17, asm ln 8658
-  🔔 Live ln too early, using produced ln + 1
+  %30 = load i8*, i8** %b.addr, l88 c17, asm ln 8658
   Added assignment asm ln 8658, prod ln 88.17, live ln 89, enc None
 Load from declared address of `b` (decl src ln 81), asm ln 8621
   %18 = load i8*, i8** %b.addr, l86 c17, asm ln 8621
-  🔔 Live ln too early, using produced ln + 1
+  %18 = load i8*, i8** %b.addr, l86 c17, asm ln 8621
   Added assignment asm ln 8621, prod ln 86.17, live ln 87, enc None
 Load from declared address of `b` (decl src ln 81), asm ln 8578
   %4 = load i8*, i8** %b.addr, l84 c17, asm ln 8578
-  🔔 Live ln too early, using produced ln + 1
+  %4 = load i8*, i8** %b.addr, l84 c17, asm ln 8578
   Added assignment asm ln 8578, prod ln 84.17, live ln 85, enc None
 Store to declared address of `b` (decl src ln 81), asm ln 8555
   arg 1
+  store i8* %b, i8** %b.addr, asm ln 8555
   Added assignment asm ln 8555, prod ln 81.0, live ln 83, enc None
 Load from declared address of `n` (decl src ln 81), asm ln 8650
   %28 = load i32, i32* %n.addr, l88 c17, asm ln 8650
-  🔔 Live ln too early, using produced ln + 1
+  %28 = load i32, i32* %n.addr, l88 c17, asm ln 8650
   Added assignment asm ln 8650, prod ln 88.17, live ln 89, enc None
 Load from declared address of `n` (decl src ln 81), asm ln 8612
   %15 = load i32, i32* %n.addr, l86 c17, asm ln 8612
-  🔔 Live ln too early, using produced ln + 1
+  %15 = load i32, i32* %n.addr, l86 c17, asm ln 8612
   Added assignment asm ln 8612, prod ln 86.17, live ln 87, enc None
 Load from declared address of `n` (decl src ln 81), asm ln 8569
   %1 = load i32, i32* %n.addr, l84 c17, asm ln 8569
-  🔔 Live ln too early, using produced ln + 1
+  %1 = load i32, i32* %n.addr, l84 c17, asm ln 8569
   Added assignment asm ln 8569, prod ln 84.17, live ln 85, enc None
 Store to declared address of `n` (decl src ln 81), asm ln 8557
   arg 2
+  store i32 %n, i32* %n.addr, asm ln 8557
   Added assignment asm ln 8557, prod ln 81.0, live ln 83, enc None
 Load from declared address of `swaptype_long` (decl src ln 81), asm ln 8563
   %0 = load i32, i32* %swaptype_long.addr, l83 c13, asm ln 8563
-  🔔 Live ln too early, using produced ln + 1
+  %0 = load i32, i32* %swaptype_long.addr, l83 c13, asm ln 8563
   Added assignment asm ln 8563, prod ln 83.13, live ln 84, enc None
 Store to declared address of `swaptype_long` (decl src ln 81), asm ln 8559
   arg 3
+  store i32 %swaptype_long, i32* %swaptype_long.addr, asm ln 8559
   Added assignment asm ln 8559, prod ln 81.0, live ln 83, enc None
 Load from declared address of `swaptype_int` (decl src ln 81), asm ln 8606
   %14 = load i32, i32* %swaptype_int.addr, l85 c18, asm ln 8606
-  🔔 Live ln too early, using produced ln + 1
+  %14 = load i32, i32* %swaptype_int.addr, l85 c18, asm ln 8606
   Added assignment asm ln 8606, prod ln 85.18, live ln 86, enc None
 Store to declared address of `swaptype_int` (decl src ln 81), asm ln 8561
   arg 4
+  store i32 %swaptype_int, i32* %swaptype_int.addr, asm ln 8561
   Added assignment asm ln 8561, prod ln 81.0, live ln 83, enc None
 Store to declared address of `i` (decl src ln 84), asm ln 8601
   %dec = add nsw i64 %13, -1, l84 c17, asm ln 8600
-  🔔 Live ln too early, using produced ln + 1
+  store i64 %dec, i64* %i, l84 c17, asm ln 8601
   Added assignment asm ln 8601, prod ln 84.17, live ln 85, enc None
 Load from declared address of `i` (decl src ln 84), asm ln 8599
   %13 = load i64, i64* %i, l84 c17, asm ln 8599
-  🔔 Live ln too early, using produced ln + 1
+  %13 = load i64, i64* %i, l84 c17, asm ln 8599
   Added assignment asm ln 8599, prod ln 84.17, live ln 85, enc None
 Store to declared address of `i` (decl src ln 84), asm ln 8572
   %div = udiv i64 %conv, 8, l84 c17, asm ln 8571
-  🔔 Live ln too early, using produced ln + 1
+  store i64 %div, i64* %i, l84 c17, asm ln 8572
   Added assignment asm ln 8572, prod ln 84.17, live ln 85, enc None
 Store to declared address of `pi` (decl src ln 84), asm ln 8592
   %incdec.ptr = getelementptr inbounds i64, i64* %10, i32 1, l84 c17, asm ln 8591
-  🔔 Live ln too early, using produced ln + 1
+  store i64* %incdec.ptr, i64** %pi, l84 c17, asm ln 8592
   Added assignment asm ln 8592, prod ln 84.17, live ln 85, enc None
 Load from declared address of `pi` (decl src ln 84), asm ln 8590
   %10 = load i64*, i64** %pi, l84 c17, asm ln 8590
-  🔔 Live ln too early, using produced ln + 1
+  %10 = load i64*, i64** %pi, l84 c17, asm ln 8590
   Added assignment asm ln 8590, prod ln 84.17, live ln 85, enc None
 Load from declared address of `pi` (decl src ln 84), asm ln 8585
   %6 = load i64*, i64** %pi, l84 c17, asm ln 8585
-  🔔 Live ln too early, using produced ln + 1
+  %6 = load i64*, i64** %pi, l84 c17, asm ln 8585
   Added assignment asm ln 8585, prod ln 84.17, live ln 85, enc None
 Store to declared address of `pi` (decl src ln 84), asm ln 8576
   %3 = bitcast i8* %2 to i64*, l84 c17, asm ln 8575
-  🔔 Live ln too early, using produced ln + 1
+  store i64* %3, i64** %pi, l84 c17, asm ln 8576
   Added assignment asm ln 8576, prod ln 84.17, live ln 85, enc None
 Store to declared address of `pj` (decl src ln 84), asm ln 8597
   %incdec.ptr1 = getelementptr inbounds i64, i64* %12, i32 1, l84 c17, asm ln 8596
-  🔔 Live ln too early, using produced ln + 1
+  store i64* %incdec.ptr1, i64** %pj, l84 c17, asm ln 8597
   Added assignment asm ln 8597, prod ln 84.17, live ln 85, enc None
 Load from declared address of `pj` (decl src ln 84), asm ln 8595
   %12 = load i64*, i64** %pj, l84 c17, asm ln 8595
-  🔔 Live ln too early, using produced ln + 1
+  %12 = load i64*, i64** %pj, l84 c17, asm ln 8595
   Added assignment asm ln 8595, prod ln 84.17, live ln 85, enc None
 Load from declared address of `pj` (decl src ln 84), asm ln 8588
   %8 = load i64*, i64** %pj, l84 c17, asm ln 8588
-  🔔 Live ln too early, using produced ln + 1
+  %8 = load i64*, i64** %pj, l84 c17, asm ln 8588
   Added assignment asm ln 8588, prod ln 84.17, live ln 85, enc None
 Store to declared address of `pj` (decl src ln 84), asm ln 8580
   %5 = bitcast i8* %4 to i64*, l84 c17, asm ln 8579
-  🔔 Live ln too early, using produced ln + 1
+  store i64* %5, i64** %pj, l84 c17, asm ln 8580
   Added assignment asm ln 8580, prod ln 84.17, live ln 85, enc None
 Load from declared address of `t` (decl src ln 84), asm ln 8594
   %11 = load i64, i64* %t, l84 c17, asm ln 8594
-  🔔 Live ln too early, using produced ln + 1
+  %11 = load i64, i64* %t, l84 c17, asm ln 8594
   Added assignment asm ln 8594, prod ln 84.17, live ln 85, enc None
 Store to declared address of `t` (decl src ln 84), asm ln 8587
   %7 = load i64, i64* %6, l84 c17, asm ln 8586
-  🔔 Live ln too early, using produced ln + 1
+  store i64 %7, i64* %t, l84 c17, asm ln 8587
   Added assignment asm ln 8587, prod ln 84.17, live ln 85, enc None
 Store to declared address of `i` (decl src ln 86), asm ln 8644
   %dec17 = add nsw i64 %27, -1, l86 c17, asm ln 8643
-  🔔 Live ln too early, using produced ln + 1
+  store i64 %dec17, i64* %i7, l86 c17, asm ln 8644
   Added assignment asm ln 8644, prod ln 86.17, live ln 87, enc None
 Load from declared address of `i` (decl src ln 86), asm ln 8642
   %27 = load i64, i64* %i7, l86 c17, asm ln 8642
-  🔔 Live ln too early, using produced ln + 1
+  %27 = load i64, i64* %i7, l86 c17, asm ln 8642
   Added assignment asm ln 8642, prod ln 86.17, live ln 87, enc None
 Store to declared address of `i` (decl src ln 86), asm ln 8615
   %div9 = udiv i64 %conv8, 4, l86 c17, asm ln 8614
-  🔔 Live ln too early, using produced ln + 1
+  store i64 %div9, i64* %i7, l86 c17, asm ln 8615
   Added assignment asm ln 8615, prod ln 86.17, live ln 87, enc None
 Store to declared address of `pi` (decl src ln 86), asm ln 8635
   %incdec.ptr14 = getelementptr inbounds i32, i32* %24, i32 1, l86 c17, asm ln 8634
-  🔔 Live ln too early, using produced ln + 1
+  store i32* %incdec.ptr14, i32** %pi10, l86 c17, asm ln 8635
   Added assignment asm ln 8635, prod ln 86.17, live ln 87, enc None
 Load from declared address of `pi` (decl src ln 86), asm ln 8633
   %24 = load i32*, i32** %pi10, l86 c17, asm ln 8633
-  🔔 Live ln too early, using produced ln + 1
+  %24 = load i32*, i32** %pi10, l86 c17, asm ln 8633
   Added assignment asm ln 8633, prod ln 86.17, live ln 87, enc None
 Load from declared address of `pi` (decl src ln 86), asm ln 8628
   %20 = load i32*, i32** %pi10, l86 c17, asm ln 8628
-  🔔 Live ln too early, using produced ln + 1
+  %20 = load i32*, i32** %pi10, l86 c17, asm ln 8628
   Added assignment asm ln 8628, prod ln 86.17, live ln 87, enc None
 Store to declared address of `pi` (decl src ln 86), asm ln 8619
   %17 = bitcast i8* %16 to i32*, l86 c17, asm ln 8618
-  🔔 Live ln too early, using produced ln + 1
+  store i32* %17, i32** %pi10, l86 c17, asm ln 8619
   Added assignment asm ln 8619, prod ln 86.17, live ln 87, enc None
 Store to declared address of `pj` (decl src ln 86), asm ln 8640
   %incdec.ptr15 = getelementptr inbounds i32, i32* %26, i32 1, l86 c17, asm ln 8639
-  🔔 Live ln too early, using produced ln + 1
+  store i32* %incdec.ptr15, i32** %pj11, l86 c17, asm ln 8640
   Added assignment asm ln 8640, prod ln 86.17, live ln 87, enc None
 Load from declared address of `pj` (decl src ln 86), asm ln 8638
   %26 = load i32*, i32** %pj11, l86 c17, asm ln 8638
-  🔔 Live ln too early, using produced ln + 1
+  %26 = load i32*, i32** %pj11, l86 c17, asm ln 8638
   Added assignment asm ln 8638, prod ln 86.17, live ln 87, enc None
 Load from declared address of `pj` (decl src ln 86), asm ln 8631
   %22 = load i32*, i32** %pj11, l86 c17, asm ln 8631
-  🔔 Live ln too early, using produced ln + 1
+  %22 = load i32*, i32** %pj11, l86 c17, asm ln 8631
   Added assignment asm ln 8631, prod ln 86.17, live ln 87, enc None
 Store to declared address of `pj` (decl src ln 86), asm ln 8623
   %19 = bitcast i8* %18 to i32*, l86 c17, asm ln 8622
-  🔔 Live ln too early, using produced ln + 1
+  store i32* %19, i32** %pj11, l86 c17, asm ln 8623
   Added assignment asm ln 8623, prod ln 86.17, live ln 87, enc None
 Load from declared address of `t` (decl src ln 86), asm ln 8637
   %25 = load i32, i32* %t13, l86 c17, asm ln 8637
-  🔔 Live ln too early, using produced ln + 1
+  %25 = load i32, i32* %t13, l86 c17, asm ln 8637
   Added assignment asm ln 8637, prod ln 86.17, live ln 87, enc None
 Store to declared address of `t` (decl src ln 86), asm ln 8630
   %21 = load i32, i32* %20, l86 c17, asm ln 8629
-  🔔 Live ln too early, using produced ln + 1
+  store i32 %21, i32* %t13, l86 c17, asm ln 8630
   Added assignment asm ln 8630, prod ln 86.17, live ln 87, enc None
 Store to declared address of `i` (decl src ln 88), asm ln 8680
   %dec32 = add nsw i64 %38, -1, l88 c17, asm ln 8679
-  🔔 Live ln too early, using produced ln + 1
+  store i64 %dec32, i64* %i22, l88 c17, asm ln 8680
   Added assignment asm ln 8680, prod ln 88.17, live ln 89, enc None
 Load from declared address of `i` (decl src ln 88), asm ln 8678
   %38 = load i64, i64* %i22, l88 c17, asm ln 8678
-  🔔 Live ln too early, using produced ln + 1
+  %38 = load i64, i64* %i22, l88 c17, asm ln 8678
   Added assignment asm ln 8678, prod ln 88.17, live ln 89, enc None
 Store to declared address of `i` (decl src ln 88), asm ln 8653
   %div24 = udiv i64 %conv23, 1, l88 c17, asm ln 8652
-  🔔 Live ln too early, using produced ln + 1
+  store i64 %div24, i64* %i22, l88 c17, asm ln 8653
   Added assignment asm ln 8653, prod ln 88.17, live ln 89, enc None
 Store to declared address of `pi` (decl src ln 88), asm ln 8671
   %incdec.ptr29 = getelementptr inbounds i8, i8* %35, i32 1, l88 c17, asm ln 8670
-  🔔 Live ln too early, using produced ln + 1
+  store i8* %incdec.ptr29, i8** %pi25, l88 c17, asm ln 8671
   Added assignment asm ln 8671, prod ln 88.17, live ln 89, enc None
 Load from declared address of `pi` (decl src ln 88), asm ln 8669
   %35 = load i8*, i8** %pi25, l88 c17, asm ln 8669
-  🔔 Live ln too early, using produced ln + 1
+  %35 = load i8*, i8** %pi25, l88 c17, asm ln 8669
   Added assignment asm ln 8669, prod ln 88.17, live ln 89, enc None
 Load from declared address of `pi` (decl src ln 88), asm ln 8664
   %31 = load i8*, i8** %pi25, l88 c17, asm ln 8664
-  🔔 Live ln too early, using produced ln + 1
+  %31 = load i8*, i8** %pi25, l88 c17, asm ln 8664
   Added assignment asm ln 8664, prod ln 88.17, live ln 89, enc None
 Store to declared address of `pi` (decl src ln 88), asm ln 8656
   %29 = load i8*, i8** %a.addr, l88 c17, asm ln 8655
-  🔔 Live ln too early, using produced ln + 1
+  store i8* %29, i8** %pi25, l88 c17, asm ln 8656
   Added assignment asm ln 8656, prod ln 88.17, live ln 89, enc None
 Store to declared address of `pj` (decl src ln 88), asm ln 8676
   %incdec.ptr30 = getelementptr inbounds i8, i8* %37, i32 1, l88 c17, asm ln 8675
-  🔔 Live ln too early, using produced ln + 1
+  store i8* %incdec.ptr30, i8** %pj26, l88 c17, asm ln 8676
   Added assignment asm ln 8676, prod ln 88.17, live ln 89, enc None
 Load from declared address of `pj` (decl src ln 88), asm ln 8674
   %37 = load i8*, i8** %pj26, l88 c17, asm ln 8674
-  🔔 Live ln too early, using produced ln + 1
+  %37 = load i8*, i8** %pj26, l88 c17, asm ln 8674
   Added assignment asm ln 8674, prod ln 88.17, live ln 89, enc None
 Load from declared address of `pj` (decl src ln 88), asm ln 8667
   %33 = load i8*, i8** %pj26, l88 c17, asm ln 8667
-  🔔 Live ln too early, using produced ln + 1
+  %33 = load i8*, i8** %pj26, l88 c17, asm ln 8667
   Added assignment asm ln 8667, prod ln 88.17, live ln 89, enc None
 Store to declared address of `pj` (decl src ln 88), asm ln 8659
   %30 = load i8*, i8** %b.addr, l88 c17, asm ln 8658
-  🔔 Live ln too early, using produced ln + 1
+  store i8* %30, i8** %pj26, l88 c17, asm ln 8659
   Added assignment asm ln 8659, prod ln 88.17, live ln 89, enc None
 Load from declared address of `t` (decl src ln 88), asm ln 8673
   %36 = load i8, i8* %t28, l88 c17, asm ln 8673
-  🔔 Live ln too early, using produced ln + 1
+  %36 = load i8, i8* %t28, l88 c17, asm ln 8673
   Added assignment asm ln 8673, prod ln 88.17, live ln 89, enc None
 Store to declared address of `t` (decl src ln 88), asm ln 8666
   %32 = load i8, i8* %31, l88 c17, asm ln 8665
-  🔔 Live ln too early, using produced ln + 1
+  store i8 %32, i8* %t28, l88 c17, asm ln 8666
   Added assignment asm ln 8666, prod ln 88.17, live ln 89, enc None
 
 #### After variables
 
 Value produced for `a` (decl src ln 81), asm ln 6261
   arg 0
+  @dbg.value(i8* %a, !4783), asm ln 6261
   Added assignment asm ln 6261, prod ln 81.0, live ln 83, enc None
 Value produced for `b` (decl src ln 81), asm ln 6262
   arg 1
+  @dbg.value(i8* %b, !4785), asm ln 6262
   Added assignment asm ln 6262, prod ln 81.0, live ln 83, enc None
 Value produced for `n` (decl src ln 81), asm ln 6263
   arg 2
+  @dbg.value(i32 %n, !4786), asm ln 6263
   Added assignment asm ln 6263, prod ln 81.0, live ln 83, enc None
 Value produced for `swaptype_long` (decl src ln 81), asm ln 6264
   arg 3
+  @dbg.value(i32 %swaptype_long, !4787), asm ln 6264
   Added assignment asm ln 6264, prod ln 81.0, live ln 83, enc None
 Value produced for `swaptype_int` (decl src ln 81), asm ln 6265
   arg 4
+  @dbg.value(i32 %swaptype_int, !4788), asm ln 6265
   Added assignment asm ln 6265, prod ln 81.0, live ln 83, enc None
 Value produced for `i` (decl src ln 84), asm ln 6272
   %div = udiv i64 %conv, 8, l84 c17, asm ln 6271
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %div, !4794), asm ln 6272
   Added assignment asm ln 6272, prod ln 84.17, live ln 85, enc None
 Value produced for `pi` (decl src ln 84), asm ln 6274
   %0 = bitcast i8* %a to i64*, l84 c17, asm ln 6273
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64* %0, !4796), asm ln 6274
   Added assignment asm ln 6274, prod ln 84.17, live ln 85, enc None
 Value produced for `pj` (decl src ln 84), asm ln 6276
   %1 = bitcast i8* %b to i64*, l84 c17, asm ln 6275
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64* %1, !4797), asm ln 6276
   Added assignment asm ln 6276, prod ln 84.17, live ln 85, enc None
 Value produced for `t` (decl src ln 84), asm ln 6287
   %2 = load i64, i64* %pi.0, l84 c17, asm ln 6286
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %2, !4800), asm ln 6287
   Added assignment asm ln 6287, prod ln 84.17, live ln 85, enc None
 Value produced for `pi` (decl src ln 84), asm ln 6290
   %incdec.ptr = getelementptr inbounds i64, i64* %pi.0, i32 1, l84 c17, asm ln 6289
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64* %incdec.ptr, !4796), asm ln 6290
   Added assignment asm ln 6290, prod ln 84.17, live ln 85, enc None
 Value produced for `pj` (decl src ln 84), asm ln 6293
   %incdec.ptr1 = getelementptr inbounds i64, i64* %pj.0, i32 1, l84 c17, asm ln 6292
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64* %incdec.ptr1, !4797), asm ln 6293
   Added assignment asm ln 6293, prod ln 84.17, live ln 85, enc None
 Value produced for `i` (decl src ln 84), asm ln 6296
   %dec = add nsw i64 %i.0, -1, l84 c17, asm ln 6295
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %dec, !4794), asm ln 6296
   Added assignment asm ln 6296, prod ln 84.17, live ln 85, enc None
 Value produced for `i` (decl src ln 86), asm ln 6307
   %div9 = udiv i64 %conv8, 4, l86 c17, asm ln 6306
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %div9, !4808), asm ln 6307
   Added assignment asm ln 6307, prod ln 86.17, live ln 87, enc None
 Value produced for `pi` (decl src ln 86), asm ln 6309
   %4 = bitcast i8* %a to i32*, l86 c17, asm ln 6308
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i32* %4, !4810), asm ln 6309
   Added assignment asm ln 6309, prod ln 86.17, live ln 87, enc None
 Value produced for `pj` (decl src ln 86), asm ln 6311
   %5 = bitcast i8* %b to i32*, l86 c17, asm ln 6310
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i32* %5, !4811), asm ln 6311
   Added assignment asm ln 6311, prod ln 86.17, live ln 87, enc None
 Value produced for `t` (decl src ln 86), asm ln 6322
   %6 = load i32, i32* %pi10.0, l86 c17, asm ln 6321
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i32 %6, !4814), asm ln 6322
   Added assignment asm ln 6322, prod ln 86.17, live ln 87, enc None
 Value produced for `pi` (decl src ln 86), asm ln 6325
   %incdec.ptr14 = getelementptr inbounds i32, i32* %pi10.0, i32 1, l86 c17, asm ln 6324
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i32* %incdec.ptr14, !4810), asm ln 6325
   Added assignment asm ln 6325, prod ln 86.17, live ln 87, enc None
 Value produced for `pj` (decl src ln 86), asm ln 6328
   %incdec.ptr15 = getelementptr inbounds i32, i32* %pj11.0, i32 1, l86 c17, asm ln 6327
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i32* %incdec.ptr15, !4811), asm ln 6328
   Added assignment asm ln 6328, prod ln 86.17, live ln 87, enc None
 Value produced for `i` (decl src ln 86), asm ln 6331
   %dec17 = add nsw i64 %i7.0, -1, l86 c17, asm ln 6330
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %dec17, !4808), asm ln 6331
   Added assignment asm ln 6331, prod ln 86.17, live ln 87, enc None
 Value produced for `i` (decl src ln 88), asm ln 6338
   %div24 = udiv i64 %conv23, 1, l88 c17, asm ln 6337
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %div24, !4819), asm ln 6338
   Added assignment asm ln 6338, prod ln 88.17, live ln 89, enc None
 Value produced for `pi` (decl src ln 88), asm ln 6339
   arg 0
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i8* %a, !4821), asm ln 6339
   Added assignment asm ln 6339, prod ln 88.0, live ln 89, enc None
 Value produced for `pj` (decl src ln 88), asm ln 6340
   arg 1
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i8* %b, !4822), asm ln 6340
   Added assignment asm ln 6340, prod ln 88.0, live ln 89, enc None
 Value produced for `t` (decl src ln 88), asm ln 6351
   %8 = load i8, i8* %pi25.0, l88 c17, asm ln 6350
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i8 %8, !4825), asm ln 6351
   Added assignment asm ln 6351, prod ln 88.17, live ln 89, enc None
 Value produced for `pi` (decl src ln 88), asm ln 6354
   %incdec.ptr29 = getelementptr inbounds i8, i8* %pi25.0, i32 1, l88 c17, asm ln 6353
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i8* %incdec.ptr29, !4821), asm ln 6354
   Added assignment asm ln 6354, prod ln 88.17, live ln 89, enc None
 Value produced for `pj` (decl src ln 88), asm ln 6357
   %incdec.ptr30 = getelementptr inbounds i8, i8* %pj26.0, i32 1, l88 c17, asm ln 6356
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i8* %incdec.ptr30, !4822), asm ln 6357
   Added assignment asm ln 6357, prod ln 88.17, live ln 89, enc None
 Value produced for `i` (decl src ln 88), asm ln 6360
   %dec32 = add nsw i64 %i22.0, -1, l88 c17, asm ln 6359
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %dec32, !4819), asm ln 6360
   Added assignment asm ln 6360, prod ln 88.17, live ln 89, enc None
 Value produced for `i` (decl src ln 84), asm ln 6283
   %i.0 = phi i64 [ %div, %if.then ], [ %dec, %do.body ], l84 c17, asm ln 6282
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %i.0, !4794), asm ln 6283
   Added assignment asm ln 6283, prod ln 84.17, live ln 85, enc None
 Value produced for `pi` (decl src ln 84), asm ln 6284
   %pi.0 = phi i64* [ %0, %if.then ], [ %incdec.ptr, %do.body ], asm ln 6281
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64* %pi.0, !4796), asm ln 6284
   Added assignment asm ln 6284, prod ln 84.17, live ln 85, enc None
 Value produced for `pj` (decl src ln 84), asm ln 6285
   %pj.0 = phi i64* [ %1, %if.then ], [ %incdec.ptr1, %do.body ], asm ln 6280
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64* %pj.0, !4797), asm ln 6285
   Added assignment asm ln 6285, prod ln 84.17, live ln 85, enc None
 Value produced for `pj` (decl src ln 86), asm ln 6318
   %pj11.0 = phi i32* [ %5, %if.then6 ], [ %incdec.ptr15, %do.body12 ], asm ln 6317
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i32* %pj11.0, !4811), asm ln 6318
   Added assignment asm ln 6318, prod ln 86.17, live ln 87, enc None
 Value produced for `pi` (decl src ln 86), asm ln 6319
   %pi10.0 = phi i32* [ %4, %if.then6 ], [ %incdec.ptr14, %do.body12 ], asm ln 6316
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i32* %pi10.0, !4810), asm ln 6319
   Added assignment asm ln 6319, prod ln 86.17, live ln 87, enc None
 Value produced for `i` (decl src ln 86), asm ln 6320
   %i7.0 = phi i64 [ %div9, %if.then6 ], [ %dec17, %do.body12 ], l86 c17, asm ln 6315
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %i7.0, !4808), asm ln 6320
   Added assignment asm ln 6320, prod ln 86.17, live ln 87, enc None
 Value produced for `pj` (decl src ln 88), asm ln 6347
   %pj26.0 = phi i8* [ %b, %if.else21 ], [ %incdec.ptr30, %do.body27 ], asm ln 6346
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i8* %pj26.0, !4822), asm ln 6347
   Added assignment asm ln 6347, prod ln 88.17, live ln 89, enc None
 Value produced for `pi` (decl src ln 88), asm ln 6348
   %pi25.0 = phi i8* [ %a, %if.else21 ], [ %incdec.ptr29, %do.body27 ], asm ln 6345
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i8* %pi25.0, !4821), asm ln 6348
   Added assignment asm ln 6348, prod ln 88.17, live ln 89, enc None
 Value produced for `i` (decl src ln 88), asm ln 6349
   %i22.0 = phi i64 [ %div24, %if.else21 ], [ %dec32, %do.body27 ], l88 c17, asm ln 6344
-  🔔 Live ln too early, using produced ln + 1
+  @dbg.value(i64 %i22.0, !4819), asm ln 6349
   Added assignment asm ln 6349, prod ln 88.17, live ln 89, enc None
 
 #### Summary
@@ -52912,114 +52176,122 @@ Test Execution:
 
 Load from declared address of `a` (decl src ln 107), asm ln 8751
   %19 = load i8*, i8** %a.addr, l111 c38, asm ln 8751
-  🔔 Live ln too early, using produced ln + 1
+  %19 = load i8*, i8** %a.addr, l111 c38, asm ln 8751
   Added assignment asm ln 8751, prod ln 111.38, live ln 112, enc None
 Load from declared address of `a` (decl src ln 107), asm ln 8747
   %17 = load i8*, i8** %a.addr, l111 c42, asm ln 8747
-  🔔 Live ln too early, using produced ln + 1
+  %17 = load i8*, i8** %a.addr, l111 c42, asm ln 8747
   Added assignment asm ln 8747, prod ln 111.42, live ln 112, enc None
 Load from declared address of `a` (decl src ln 107), asm ln 8729
   %11 = load i8*, i8** %a.addr, l110 c38, asm ln 8729
-  🔔 Live ln too early, using produced ln + 1
+  %11 = load i8*, i8** %a.addr, l110 c38, asm ln 8729
   Added assignment asm ln 8729, prod ln 110.38, live ln 111, enc None
 Load from declared address of `a` (decl src ln 107), asm ln 8724
   %8 = load i8*, i8** %a.addr, l110 c42, asm ln 8724
-  🔔 Live ln too early, using produced ln + 1
+  %8 = load i8*, i8** %a.addr, l110 c42, asm ln 8724
   Added assignment asm ln 8724, prod ln 110.42, live ln 111, enc None
 Load from declared address of `a` (decl src ln 107), asm ln 8704
   %1 = load i8*, i8** %a.addr, l109 c20, asm ln 8704
-  🔔 Live ln too early, using produced ln + 1
+  %1 = load i8*, i8** %a.addr, l109 c20, asm ln 8704
   Added assignment asm ln 8704, prod ln 109.20, live ln 110, enc None
 Store to declared address of `a` (decl src ln 107), asm ln 8695
   arg 0
+  store i8* %a, i8** %a.addr, asm ln 8695
   Added assignment asm ln 8695, prod ln 107.0, live ln 109, enc None
 Load from declared address of `b` (decl src ln 107), asm ln 8742
   %15 = load i8*, i8** %b.addr, l111 c33, asm ln 8742
-  🔔 Live ln too early, using produced ln + 1
+  %15 = load i8*, i8** %b.addr, l111 c33, asm ln 8742
   Added assignment asm ln 8742, prod ln 111.33, live ln 112, enc None
 Load from declared address of `b` (decl src ln 107), asm ln 8735
   %13 = load i8*, i8** %b.addr, l111 c21, asm ln 8735
-  🔔 Live ln too early, using produced ln + 1
+  %13 = load i8*, i8** %b.addr, l111 c21, asm ln 8735
   Added assignment asm ln 8735, prod ln 111.21, live ln 112, enc None
 Load from declared address of `b` (decl src ln 107), asm ln 8719
   %6 = load i8*, i8** %b.addr, l110 c33, asm ln 8719
-  🔔 Live ln too early, using produced ln + 1
+  %6 = load i8*, i8** %b.addr, l110 c33, asm ln 8719
   Added assignment asm ln 8719, prod ln 110.33, live ln 111, enc None
 Load from declared address of `b` (decl src ln 107), asm ln 8712
   %4 = load i8*, i8** %b.addr, l110 c21, asm ln 8712
-  🔔 Live ln too early, using produced ln + 1
+  %4 = load i8*, i8** %b.addr, l110 c21, asm ln 8712
   Added assignment asm ln 8712, prod ln 110.21, live ln 111, enc None
 Load from declared address of `b` (decl src ln 107), asm ln 8705
   %2 = load i8*, i8** %b.addr, l109 c23, asm ln 8705
-  🔔 Live ln too early, using produced ln + 1
+  %2 = load i8*, i8** %b.addr, l109 c23, asm ln 8705
   Added assignment asm ln 8705, prod ln 109.23, live ln 110, enc None
 Store to declared address of `b` (decl src ln 107), asm ln 8697
   arg 1
+  store i8* %b, i8** %b.addr, asm ln 8697
   Added assignment asm ln 8697, prod ln 107.0, live ln 109, enc None
 Load from declared address of `c` (decl src ln 107), asm ln 8752
   %20 = load i8*, i8** %c.addr, l111 c38, asm ln 8752
-  🔔 Live ln too early, using produced ln + 1
+  %20 = load i8*, i8** %c.addr, l111 c38, asm ln 8752
   Added assignment asm ln 8752, prod ln 111.38, live ln 112, enc None
 Load from declared address of `c` (decl src ln 107), asm ln 8748
   %18 = load i8*, i8** %c.addr, l111 c45, asm ln 8748
-  🔔 Live ln too early, using produced ln + 1
+  %18 = load i8*, i8** %c.addr, l111 c45, asm ln 8748
   Added assignment asm ln 8748, prod ln 111.45, live ln 112, enc None
 Load from declared address of `c` (decl src ln 107), asm ln 8736
   %14 = load i8*, i8** %c.addr, l111 c24, asm ln 8736
-  🔔 Live ln too early, using produced ln + 1
+  %14 = load i8*, i8** %c.addr, l111 c24, asm ln 8736
   Added assignment asm ln 8736, prod ln 111.24, live ln 112, enc None
 Load from declared address of `c` (decl src ln 107), asm ln 8728
   %10 = load i8*, i8** %c.addr, l110 c38, asm ln 8728
-  🔔 Live ln too early, using produced ln + 1
+  %10 = load i8*, i8** %c.addr, l110 c38, asm ln 8728
   Added assignment asm ln 8728, prod ln 110.38, live ln 111, enc None
 Load from declared address of `c` (decl src ln 107), asm ln 8725
   %9 = load i8*, i8** %c.addr, l110 c45, asm ln 8725
-  🔔 Live ln too early, using produced ln + 1
+  %9 = load i8*, i8** %c.addr, l110 c45, asm ln 8725
   Added assignment asm ln 8725, prod ln 110.45, live ln 111, enc None
 Load from declared address of `c` (decl src ln 107), asm ln 8713
   %5 = load i8*, i8** %c.addr, l110 c24, asm ln 8713
-  🔔 Live ln too early, using produced ln + 1
+  %5 = load i8*, i8** %c.addr, l110 c24, asm ln 8713
   Added assignment asm ln 8713, prod ln 110.24, live ln 111, enc None
 Store to declared address of `c` (decl src ln 107), asm ln 8699
   arg 2
+  store i8* %c, i8** %c.addr, asm ln 8699
   Added assignment asm ln 8699, prod ln 107.0, live ln 109, enc None
 Load from declared address of `cmp` (decl src ln 107), asm ln 8746
   %16 = load i32 (i8*, i8*)*, i32 (i8*, i8*)** %cmp.addr, l111 c38, asm ln 8746
-  🔔 Live ln too early, using produced ln + 1
+  %16 = load i32 (i8*, i8*)*, i32 (i8*, i8*)** %cmp.addr, l111 c38, asm ln 8746
   Added assignment asm ln 8746, prod ln 111.38, live ln 112, enc None
 Load from declared address of `cmp` (decl src ln 107), asm ln 8734
   %12 = load i32 (i8*, i8*)*, i32 (i8*, i8*)** %cmp.addr, l111 c17, asm ln 8734
-  🔔 Live ln too early, using produced ln + 1
+  %12 = load i32 (i8*, i8*)*, i32 (i8*, i8*)** %cmp.addr, l111 c17, asm ln 8734
   Added assignment asm ln 8734, prod ln 111.17, live ln 112, enc None
 Load from declared address of `cmp` (decl src ln 107), asm ln 8723
   %7 = load i32 (i8*, i8*)*, i32 (i8*, i8*)** %cmp.addr, l110 c38, asm ln 8723
-  🔔 Live ln too early, using produced ln + 1
+  %7 = load i32 (i8*, i8*)*, i32 (i8*, i8*)** %cmp.addr, l110 c38, asm ln 8723
   Added assignment asm ln 8723, prod ln 110.38, live ln 111, enc None
 Load from declared address of `cmp` (decl src ln 107), asm ln 8711
   %3 = load i32 (i8*, i8*)*, i32 (i8*, i8*)** %cmp.addr, l110 c17, asm ln 8711
-  🔔 Live ln too early, using produced ln + 1
+  %3 = load i32 (i8*, i8*)*, i32 (i8*, i8*)** %cmp.addr, l110 c17, asm ln 8711
   Added assignment asm ln 8711, prod ln 110.17, live ln 111, enc None
 Load from declared address of `cmp` (decl src ln 107), asm ln 8703
   %0 = load i32 (i8*, i8*)*, i32 (i8*, i8*)** %cmp.addr, l109 c16, asm ln 8703
-  🔔 Live ln too early, using produced ln + 1
+  %0 = load i32 (i8*, i8*)*, i32 (i8*, i8*)** %cmp.addr, l109 c16, asm ln 8703
   Added assignment asm ln 8703, prod ln 109.16, live ln 110, enc None
 Store to declared address of `cmp` (decl src ln 107), asm ln 8701
   arg 3
+  store i32 (i8*, i8*)* %cmp, i32 (i8*, i8*)** %cmp.addr, asm ln 8701
   Added assignment asm ln 8701, prod ln 107.0, live ln 109, enc None
 
 #### After variables
 
 Value produced for `a` (decl src ln 107), asm ln 6371
   arg 0
+  @dbg.value(i8* %a, !4832), asm ln 6371
   Added assignment asm ln 6371, prod ln 107.0, live ln 109, enc None
 Value produced for `b` (decl src ln 107), asm ln 6372
   arg 1
+  @dbg.value(i8* %b, !4834), asm ln 6372
   Added assignment asm ln 6372, prod ln 107.0, live ln 109, enc None
 Value produced for `c` (decl src ln 107), asm ln 6373
   arg 2
+  @dbg.value(i8* %c, !4835), asm ln 6373
   Added assignment asm ln 6373, prod ln 107.0, live ln 109, enc None
 Value produced for `cmp` (decl src ln 107), asm ln 6374
   arg 3
+  @dbg.value(i32 (i8*, i8*)* %cmp, !4836), asm ln 6374
   Added assignment asm ln 6374, prod ln 107.0, live ln 109, enc None
 
 #### Summary
@@ -53696,7 +52968,7 @@ Reference Execution:
   Function Covered:         59 (  3.86% of ref )
   Complete:                 89 (  5.82% of ref )
   Within Time Limit:       977 ( 63.86% of ref )
-  Within Fork Limit:      1294 ( 84.58% of ref )
+  Within Fork Limit:      1326 ( 86.67% of ref )
 Test Execution:
   Function Covered:         58 ( 10.74% of test)
   Complete:                 43 (  7.96% of test)
