@@ -42,7 +42,7 @@ Checking ../O0/mcf_r.bc and mcf_r.bc for debug info consistency…
 
 ✅ Before and after function names match
 
-### Variable events
+### Variable assignments
 
 #### Before variables
 
@@ -528,7 +528,7 @@ Test Execution:
 
 ✅ Before and after function names match
 
-### Variable events
+### Variable assignments
 
 #### Before variables
 
@@ -1090,7 +1090,7 @@ Test Execution:
 
 ✅ Before and after function names match
 
-### Variable events
+### Variable assignments
 
 #### Before variables
 
@@ -1880,7 +1880,7 @@ Test Execution:
 
 ✅ Before and after function names match
 
-### Variable events
+### Variable assignments
 
 #### Before variables
 
@@ -1943,7 +1943,7 @@ Test Execution:
 
 ✅ Before and after function names match
 
-### Variable events
+### Variable assignments
 
 #### Before variables
 
@@ -2537,7 +2537,7 @@ Test Execution:
 
 ✅ Before and after function names match
 
-### Variable events
+### Variable assignments
 
 #### Before variables
 
@@ -2737,7 +2737,7 @@ Test Execution:
 
 ✅ Before and after function names match
 
-### Variable events
+### Variable assignments
 
 #### Before variables
 
@@ -3504,7 +3504,7 @@ Test Execution:
 
 ✅ Before and after function names match
 
-### Variable events
+### Variable assignments
 
 #### Before variables
 
@@ -4054,7 +4054,7 @@ Test Execution:
 
 ✅ Before and after function names match
 
-### Variable events
+### Variable assignments
 
 #### Before variables
 
@@ -4526,7 +4526,7 @@ Test Execution:
 
 ✅ Before and after function names match
 
-### Variable events
+### Variable assignments
 
 #### Before variables
 
@@ -4661,7 +4661,7 @@ Test Execution:
 
 ✅ Before and after function names match
 
-### Variable events
+### Variable assignments
 
 #### Before variables
 
@@ -5780,7 +5780,7 @@ Test Execution:
 
 ✅ Before and after function names match
 
-### Variable events
+### Variable assignments
 
 #### Before variables
 
@@ -6214,7 +6214,7 @@ Test Execution:
 
 ✅ Before and after function names match
 
-### Variable events
+### Variable assignments
 
 #### Before variables
 
@@ -6857,7 +6857,7 @@ Test Execution:
 
 ✅ Before and after function names match
 
-### Variable events
+### Variable assignments
 
 #### Before variables
 
@@ -8320,7 +8320,7 @@ Test Execution:
 
 ✅ Before and after function names match
 
-### Variable events
+### Variable assignments
 
 #### Before variables
 
@@ -8529,7 +8529,7 @@ Test Execution:
 
 ✅ Before and after function names match
 
-### Variable events
+### Variable assignments
 
 #### Before variables
 
@@ -9145,7 +9145,7 @@ Test Execution:
 
 ✅ Before and after function names match
 
-### Variable events
+### Variable assignments
 
 #### Before variables
 
@@ -9844,7 +9844,7 @@ Test Execution:
 
 ✅ Before and after function names match
 
-### Variable events
+### Variable assignments
 
 #### Before variables
 
@@ -10568,7 +10568,7 @@ Test Execution:
 
 ✅ Before and after function names match
 
-### Variable events
+### Variable assignments
 
 #### Before variables
 
@@ -11010,7 +11010,7 @@ Test Execution:
 
 ✅ Before and after function names match
 
-### Variable events
+### Variable assignments
 
 #### Before variables
 
@@ -11276,8 +11276,8 @@ Collected value for `i`
   (w64 0x1)
 [0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `implicit.c`
-[0m[0;1;31mKLEE: ERROR: implicit.c:425: memory error: out of bound pointer
-[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `implicit.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `implicit.c`
 [0mCollected value for `test_arc`
@@ -11334,6 +11334,8 @@ Collected value for `i`
 [0m[0;35mKLEE: WARNING: Unable to load source file `implicit.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `implicit.c`
+[0m[0;1;31mKLEE: ERROR: implicit.c:425: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `implicit.c`
 [0mKLEE: HaltTimer invoked
@@ -11489,8 +11491,24 @@ Collected value for `test_arc`
            (ReadLSB w64 (w32 0x0) switch_arcs.num_threads))
 [0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `implicit.c`
-[0m[0;1;31mKLEE: ERROR: implicit.c:425: memory error: out of bound pointer
-[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `implicit.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `implicit.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `implicit.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `implicit.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `implicit.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `implicit.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `implicit.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `implicit.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `implicit.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `implicit.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
@@ -12594,7 +12612,7 @@ Test Execution:
 
 ✅ Before and after function names match
 
-### Variable events
+### Variable assignments
 
 #### Before variables
 
@@ -16121,7 +16139,7 @@ Test Execution:
 
 ✅ Before and after function names match
 
-### Variable events
+### Variable assignments
 
 #### Before variables
 
@@ -16419,7 +16437,7 @@ Collected value for `arc`
                             N0)
                    N0)
           N0)
-  [0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0mKLEE: HaltTimer invoked
 [0mKLEE: halting execution, dumping remaining states
 [0m
@@ -17162,7 +17180,7 @@ Test Execution:
 
 ✅ Before and after function names match
 
-### Variable events
+### Variable assignments
 
 #### Before variables
 
@@ -17678,7 +17696,7 @@ Test Execution:
 
 ✅ Before and after function names match
 
-### Variable events
+### Variable assignments
 
 #### Before variables
 
@@ -18473,7 +18491,7 @@ Test Execution:
 
 ✅ Before and after function names match
 
-### Variable events
+### Variable assignments
 
 #### Before variables
 
@@ -18790,7 +18808,7 @@ Test Execution:
 
 ✅ Before and after function names match
 
-### Variable events
+### Variable assignments
 
 #### Before variables
 
@@ -21061,7 +21079,7 @@ Test Execution:
 
 ✅ Before and after function names match
 
-### Variable events
+### Variable assignments
 
 #### Before variables
 
@@ -21949,7 +21967,7 @@ Test Execution:
 
 ✅ Before and after function names match
 
-### Variable events
+### Variable assignments
 
 #### Before variables
 
@@ -22322,7 +22340,7 @@ Test Execution:
 
 ✅ Before and after function names match
 
-### Variable events
+### Variable assignments
 
 #### Before variables
 
@@ -22938,7 +22956,7 @@ Test Execution:
 
 ✅ Before and after function names match
 
-### Variable events
+### Variable assignments
 
 #### Before variables
 
@@ -24737,7 +24755,7 @@ Test Execution:
 
 ✅ Before and after function names match
 
-### Variable events
+### Variable assignments
 
 #### Before variables
 
@@ -24995,7 +25013,7 @@ Test Execution:
 
 ✅ Before and after function names match
 
-### Variable events
+### Variable assignments
 
 #### Before variables
 
@@ -25193,7 +25211,7 @@ Test Execution:
 
 ✅ Before and after function names match
 
-### Variable events
+### Variable assignments
 
 #### Before variables
 
@@ -25392,7 +25410,7 @@ Test Execution:
 
 ✅ Before and after function names match
 
-### Variable events
+### Variable assignments
 
 #### Before variables
 
@@ -25601,7 +25619,7 @@ Test Execution:
 
 ✅ Before and after function names match
 
-### Variable events
+### Variable assignments
 
 #### Before variables
 
@@ -27409,7 +27427,7 @@ Test Execution:
 
 ✅ Before and after function names match
 
-### Variable events
+### Variable assignments
 
 #### Before variables
 
@@ -28060,6 +28078,7 @@ Collected value for `i`
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0m[0;1;31mKLEE: ERROR: spec_qsort/spec_qsort.c:86: memory error: out of bound pointer
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m
 🔔 Unable to execute all after program states
@@ -29518,7 +29537,7 @@ Test Execution:
 
 ✅ Before and after function names match
 
-### Variable events
+### Variable assignments
 
 #### Before variables
 
