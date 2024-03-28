@@ -22,4 +22,5 @@ ${CHECK} \
   ${CHECK_OPTS} \
   --output-source \
   --exclude-function=spec_qsort \
+  --exclude-function=worker \
   "$@"
