@@ -184,6 +184,7 @@ if __name__ == "__main__":
     parser.add_argument("--test", action="store_true")
     parser.add_argument("--count", action="store_true")
     parser.add_argument("--split", type=int)
+    parser.add_argument("--last", type=int)
 
     args = parser.parse_args()
 
@@ -197,6 +198,10 @@ if __name__ == "__main__":
         print(count(pipeline))
     elif args.split is not None:
         print(toStr(prune(split(pipeline, args.split)[0])))
+    elif args.last is not None:
+        after_split = prune(split(pipeline, args.last)[0])
+        count = count(after_split)
+        print(toStr(split(after_split, count - 2)[1]))
     else:
         print("Unknown action")
         exit(1)
