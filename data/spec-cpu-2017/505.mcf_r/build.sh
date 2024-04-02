@@ -10,6 +10,8 @@ fi
 SCRIPT_DIR=$(dirname "${BASH_SOURCE[0]}")
 source "${SCRIPT_DIR}/../../vars.sh"
 
+PIPELINE_UTILS_PATH="${SCRIPT_DIR}/../../shared/pipeline.py"
+
 export LLVM_COMPILER="clang"
 export LLVM_COMPILER_PATH="$(llvm release-clang-lldb-13.0.0)/bin"
 
@@ -84,6 +86,37 @@ for i in ${!levels[*]}; do
   ## Disassemble bitcode for debugging
   $(llvm release-clang-lldb-${version}.0.0 llvm-dis) \
     "${SCRIPT_DIR}/clang/${version}/${level}/${TARGET_NAME}.bc"
+done
+
+# Clang O1 pipeline, pass by pass
+
+level="O1"
+version="13"
+echo "## Building \`${TARGET_NAME}\` (Clang ${version}, ${level} pipeline, pass by pass)"
+
+# `--print-pipeline-passes` first added in LLVM 14
+pipeline=$($(llvm release-clang-lldb-14.0.0 opt) \
+           --passes="default<${level}>" \
+           --print-pipeline-passes \
+           < /dev/null)
+passes_count=$(python3 ${PIPELINE_UTILS_PATH} ${pipeline} --count)
+
+for i in $(seq 0 8); do
+  printf -v li "%03u" ${i}
+  portion=$(python3 ${PIPELINE_UTILS_PATH} ${pipeline} --split ${i})
+  name=$(python3 ${PIPELINE_UTILS_PATH} ${pipeline} --last ${i})
+  echo "### Building \`${TARGET_NAME}\` (Clang ${version}, ${level} pipeline, pass ${i}: ${name})"
+
+  ## Apply only the portion of pipeline up to this pass
+  mkdir -p "${SCRIPT_DIR}/clang/${version}/${level}-passes/${li}-${name}"
+  $(llvm release-clang-lldb-${version}.0.0 opt) \
+    -o "${SCRIPT_DIR}/clang/${version}/${level}-passes/${li}-${name}/${TARGET_NAME}.bc" \
+    --passes="${portion}" \
+    "${SCRIPT_DIR}/clang/${version}/O0/${TARGET_NAME}.bc"
+
+  ## Disassemble bitcode for debugging
+  $(llvm release-clang-lldb-${version}.0.0 llvm-dis) \
+    "${SCRIPT_DIR}/clang/${version}/${level}-passes/${li}-${name}/${TARGET_NAME}.bc"
 done
 
 # Cleanup
