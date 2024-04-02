@@ -140,7 +140,7 @@ def prune(srcPipeObj):
     return dstPipeObj
 
 
-if __name__ == "__main__":
+def test():
     import unittest
 
     class Test(unittest.TestCase):
@@ -174,3 +174,29 @@ if __name__ == "__main__":
 
     unittest.main()
     exit(0)
+
+
+if __name__ == "__main__":
+    import argparse
+
+    parser = argparse.ArgumentParser()
+    parser.add_argument("pipeline")
+    parser.add_argument("--test", action="store_true")
+    parser.add_argument("--count", action="store_true")
+    parser.add_argument("--split", type=int)
+
+    args = parser.parse_args()
+
+    if args.test:
+        import sys
+        sys.argv = sys.argv[:1]
+        test()
+
+    pipeline = fromStr(args.pipeline)
+    if args.count:
+        print(count(pipeline))
+    elif args.split is not None:
+        print(toStr(prune(split(pipeline, args.split)[0])))
+    else:
+        print("Unknown action")
+        exit(1)
