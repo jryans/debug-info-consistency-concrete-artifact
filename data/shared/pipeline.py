@@ -140,6 +140,33 @@ def prune(srcPipeObj):
     return dstPipeObj
 
 
+def tweak(srcPipeObj):
+    """Remove various bits of pipeline syntax that is not supported by LLVM 13"""
+
+    def tweakInt(dst, src):
+        for p in src:
+            if p[0]:
+                children = []
+                tweakInt(children, p[1])
+                if p[0].startswith("function<"):
+                    # Remove args like `eager-inv` from `function` pass manager
+                    dst.append(["function", children])
+                else:
+                    dst.append(p[0], children)
+            elif "no-switch-range-to-icmp;" in p[1]:
+                # Remove `switch-range-to-icmp` arg from `simplifycfg` pass
+                dst.append([None, p[1].replace("no-switch-range-to-icmp;", "")])
+            elif p[1].startswith("early-cse<"):
+                # Remove args from `early-cse` pass
+                dst.append([None, "early-cse"])
+            else:
+                dst.append(p)
+
+    dstPipeObj = []
+    tweakInt(dstPipeObj, srcPipeObj)
+    return dstPipeObj
+
+
 def test():
     import unittest
 
@@ -197,9 +224,9 @@ if __name__ == "__main__":
     if args.count:
         print(count(pipeline))
     elif args.split is not None:
-        print(toStr(prune(split(pipeline, args.split)[0])))
+        print(toStr(tweak(prune(split(pipeline, args.split)[0]))))
     elif args.last is not None:
-        after_split = prune(split(pipeline, args.last)[0])
+        after_split = tweak(prune(split(pipeline, args.last)[0]))
         count = count(after_split)
         print(toStr(split(after_split, count - 2)[1]))
     else:
