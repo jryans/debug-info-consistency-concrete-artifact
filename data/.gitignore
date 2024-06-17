@@ -1,5 +1,6 @@
 __pycache__
 debug-info-values
+symbolic-trace
 testcases
 
 *.bc
