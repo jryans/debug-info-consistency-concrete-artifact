@@ -24,8 +24,4 @@ KLEE_TRACE_OPTS="--independent-functions --output-dir=symbolic-trace --write-no-
 ${KLEE} ${KLEE_COMMON_OPTS} ${KLEE_TRACE_OPTS} "$@" ${TARGET_NAME}.bc
 
 # Check whether each function is fully covered
-for i in ./symbolic-trace/*
-do
-  [ -d "$i" ] || continue
-  ./check-coverage.js $i
-done
+./check-coverage.js ./symbolic-trace
