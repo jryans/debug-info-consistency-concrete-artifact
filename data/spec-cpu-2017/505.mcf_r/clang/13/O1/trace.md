@@ -38,8 +38,8 @@
 + xargs rm -rf
 + echo '## Build symbolic traces for `mcf_r` (Clang 13, O1)'
 ## Build symbolic traces for `mcf_r` (Clang 13, O1)
-+ KLEE_TRACE_OPTS='--independent-functions --output-dir=symbolic-trace --write-no-tests --max-forks=32 --max-time=8s'
-+ /Users/jryans/Projects/klee/build-release-debug/bin/klee --debug-execution-trace --disable-verify --output-source --search=random-path --independent-functions --output-dir=symbolic-trace --write-no-tests --max-forks=32 --max-time=8s mcf_r.bc
++ KLEE_TRACE_OPTS='--independent-functions --output-dir=symbolic-trace --write-no-tests --max-time=8s'
++ /Users/jryans/Projects/klee/build-release-debug/bin/klee --debug-execution-trace --disable-verify --output-source --search=random-path --independent-functions --output-dir=symbolic-trace --write-no-tests --max-time=8s mcf_r.bc
 [0;35mKLEE: WARNING: Module and host target triples do not match: 'x86_64-apple-macosx14.0.0' != 'x86_64-apple-darwin23.5.0'
 This may cause unexpected crashes or assertion violations.
 [0mKLEE: output directory is "/Users/jryans/Research/Papers/debug-info-consistency/data/spec-cpu-2017/505.mcf_r/clang/13/O1/symbolic-trace"
@@ -67,91 +67,47 @@ warning: ignoring invalid debug info in <string>
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0m[0;1;31mKLEE: ERROR: mcf.c:103: reached "unreachable" instruction
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0mKLEE: HaltTimer invoked
+[0mKLEE: halting execution, dumping remaining states
 [0m[0;1;32m
-KLEE: done: total instructions = 609
-KLEE: done: completed paths = 15
-KLEE: done: partially completed paths = 18
+KLEE: done: total instructions = 7741
+KLEE: done: completed paths = 141
+KLEE: done: partially completed paths = 594
 KLEE: done: generated tests = 0
 [0mKLEE: Running `refresh_neighbour_lists` in independent function mode
 [0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;1;35mKLEE: WARNING ONCE: flushing 20736 bytes on read, may be slow and/or crash: MO426[20736] allocated at value: %struct.network* %net
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;1;35mKLEE: WARNING ONCE: flushing 20736 bytes on read, may be slow and/or crash: MO4031[20736] allocated at value: %struct.network* %net
+[0m[0;1;31mKLEE: ERROR: mcfutil.c:39: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0m[0;1;31mKLEE: ERROR: mcfutil.c:40: memory error: out of bound pointer
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;1;31mKLEE: ERROR: mcfutil.c:48: memory error: out of bound pointer
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0mKLEE: HaltTimer invoked
 [0mKLEE: halting execution, dumping remaining states
 [0m[0;1;32m
-KLEE: done: total instructions = 117
-KLEE: done: completed paths = 0
-KLEE: done: partially completed paths = 33
+KLEE: done: total instructions = 60
+KLEE: done: completed paths = 1
+KLEE: done: partially completed paths = 45
 KLEE: done: generated tests = 0
 [0mKLEE: Running `flow_cost` in independent function mode
-[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0;1;31mKLEE: ERROR: mcfutil.c:75: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0m[0;1;31mKLEE: ERROR: mcfutil.c:61: memory error: out of bound pointer
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;1;31mKLEE: ERROR: mcfutil.c:61: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0m[0;1;35mKLEE: WARNING ONCE: silently concretizing (reason: floating point) expression (ReadLSB w64 N0:(Extract w32 0 (Add w64 0x210
                                          (Sub w64 (ReadLSB w64 0x0 flow_cost.net)
-                                                  0x10B786DC0))) const_arr29) to value 0x0 (mcfutil.c:118)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+                                                  0x109F10DC0))) const_arr37) to value 0x0 (mcfutil.c:118)
+[0m[0;1;31mKLEE: ERROR: mcfutil.c:81: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0mKLEE: HaltTimer invoked
 [0mKLEE: halting execution, dumping remaining states
 [0m[0;1;32m
-KLEE: done: total instructions = 128
+KLEE: done: total instructions = 91
 KLEE: done: completed paths = 1
-KLEE: done: partially completed paths = 32
+KLEE: done: partially completed paths = 91
 KLEE: done: generated tests = 0
 [0mKLEE: Running `start` in independent function mode
 [0;1;32m
@@ -160,10 +116,10 @@ KLEE: done: completed paths = 1
 KLEE: done: partially completed paths = 0
 KLEE: done: generated tests = 0
 [0mKLEE: Running `getArcPosition` in independent function mode
-[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0;1;31mKLEE: ERROR: mcfutil.c:145: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
@@ -176,6 +132,24 @@ KLEE: done: generated tests = 0
 [0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;1;31mKLEE: ERROR: mcfutil.c:146: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
 [0m[0;1;31mKLEE: ERROR: mcfutil.c:146: memory error: out of bound pointer
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
@@ -188,14 +162,11 @@ KLEE: done: generated tests = 0
 [0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;1;31mKLEE: ERROR: mcfutil.c:146: memory error: out of bound pointer
-[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
@@ -211,7 +182,6 @@ KLEE: done: generated tests = 0
 [0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
@@ -224,9 +194,7 @@ KLEE: done: generated tests = 0
 [0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
@@ -238,8 +206,6 @@ KLEE: done: generated tests = 0
 [0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
@@ -249,498 +215,295 @@ KLEE: done: generated tests = 0
 [0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0mKLEE: HaltTimer invoked
 [0mKLEE: halting execution, dumping remaining states
 [0m[0;1;32m
-KLEE: done: total instructions = 434
-KLEE: done: completed paths = 1
-KLEE: done: partially completed paths = 32
+KLEE: done: total instructions = 289
+KLEE: done: completed paths = 6
+KLEE: done: partially completed paths = 44
 KLEE: done: generated tests = 0
 [0mKLEE: Running `getOriginalArcPosition` in independent function mode
-[0;1;32m
+[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;1;32m
 KLEE: done: total instructions = 3
 KLEE: done: completed paths = 1
 KLEE: done: partially completed paths = 0
 KLEE: done: generated tests = 0
 [0mKLEE: Running `flow_org_cost` in independent function mode
-[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0;1;31mKLEE: ERROR: mcfutil.c:184: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0m[0;1;31mKLEE: ERROR: mcfutil.c:171: memory error: out of bound pointer
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;1;31mKLEE: ERROR: mcfutil.c:171: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0m[0;1;31mKLEE: ERROR: mcfutil.c:190: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0mKLEE: HaltTimer invoked
 [0mKLEE: halting execution, dumping remaining states
 [0m[0;1;32m
-KLEE: done: total instructions = 111
+KLEE: done: total instructions = 94
 KLEE: done: completed paths = 1
-KLEE: done: partially completed paths = 32
+KLEE: done: partially completed paths = 90
 KLEE: done: generated tests = 0
 [0mKLEE: Running `primal_feasible` in independent function mode
-[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0;1;31mKLEE: ERROR: mcfutil.c:243: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0m[0;1;31mKLEE: ERROR: mcfutil.c:244: memory error: out of bound pointer
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;1;31mKLEE: ERROR: mcfutil.c:254: memory error: out of bound pointer
+[0m[0;1;31mKLEE: ERROR: mcfutil.c:249: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0m[0;1;31mKLEE: ERROR: mcfutil.c:0: memory error: out of bound pointer
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0mKLEE: HaltTimer invoked
 [0mKLEE: halting execution, dumping remaining states
 [0m[0;1;32m
-KLEE: done: total instructions = 74
-KLEE: done: completed paths = 0
-KLEE: done: partially completed paths = 33
+KLEE: done: total instructions = 64
+KLEE: done: completed paths = 1
+KLEE: done: partially completed paths = 48
 KLEE: done: generated tests = 0
 [0mKLEE: Running `dual_feasible` in independent function mode
-[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0;1;31mKLEE: ERROR: mcfutil.c:300: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0m[0;1;31mKLEE: ERROR: mcfutil.c:306: memory error: out of bound pointer
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;1;31mKLEE: ERROR: mcfutil.c:308: memory error: out of bound pointer
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0mKLEE: HaltTimer invoked
 [0mKLEE: halting execution, dumping remaining states
 [0m[0;1;32m
-KLEE: done: total instructions = 182
-KLEE: done: completed paths = 4
-KLEE: done: partially completed paths = 29
+KLEE: done: total instructions = 68
+KLEE: done: completed paths = 2
+KLEE: done: partially completed paths = 45
 KLEE: done: generated tests = 0
 [0mKLEE: Running `getfree` in independent function mode
-[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;1;31mKLEE: ERROR: mcfutil.c:376: memory error: out of bound pointer
+[0;1;31mKLEE: ERROR: mcfutil.c:374: memory error: out of bound pointer
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0m[0;1;31mKLEE: ERROR: mcfutil.c:375: memory error: out of bound pointer
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;1;31mKLEE: ERROR: mcfutil.c:376: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0mKLEE: HaltTimer invoked
 [0mKLEE: halting execution, dumping remaining states
 [0m[0;1;32m
-KLEE: done: total instructions = 111
-KLEE: done: completed paths = 0
-KLEE: done: partially completed paths = 33
+KLEE: done: total instructions = 57
+KLEE: done: completed paths = 1
+KLEE: done: partially completed paths = 45
 KLEE: done: generated tests = 0
 [0mKLEE: Running `read_min` in independent function mode
 [0;35mKLEE: WARNING: Unable to load source file `readmin.c`
 [0m[0;1;31mKLEE: ERROR: readmin.c:53: memory error: object read only
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;1;31mKLEE: ERROR: readmin.c:53: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0m[0;1;31mKLEE: ERROR: readmin.c:54: memory error: out of bound pointer
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;1;31mKLEE: ERROR: readmin.c:58: memory error: out of bound pointer
-[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;1;31mKLEE: ERROR: readmin.c:55: memory error: out of bound pointer
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0m[0;1;31mKLEE: ERROR: readmin.c:58: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0mKLEE: HaltTimer invoked
+[0mKLEE: halting execution, dumping remaining states
 [0m[0;1;32m
-KLEE: done: total instructions = 118
+KLEE: done: total instructions = 176
 KLEE: done: completed paths = 2
-KLEE: done: partially completed paths = 31
+KLEE: done: partially completed paths = 51
 KLEE: done: generated tests = 0
 [0mKLEE: Running `refreshArcPointers` in independent function mode
 [0;35mKLEE: WARNING: Unable to load source file `implicit.c`
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;1;31mKLEE: ERROR: implicit.c:62: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0m[0;1;31mKLEE: ERROR: implicit.c:63: memory error: out of bound pointer
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;1;31mKLEE: ERROR: implicit.c:64: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0mKLEE: HaltTimer invoked
 [0mKLEE: halting execution, dumping remaining states
 [0m[0;1;32m
-KLEE: done: total instructions = 131
-KLEE: done: completed paths = 3
-KLEE: done: partially completed paths = 30
+KLEE: done: total instructions = 29
+KLEE: done: completed paths = 0
+KLEE: done: partially completed paths = 44
 KLEE: done: generated tests = 0
 [0mKLEE: Running `refreshPositions` in independent function mode
-[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0;1;31mKLEE: ERROR: implicit.c:88: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0m[0;1;31mKLEE: ERROR: implicit.c:102: memory error: out of bound pointer
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;1;31mKLEE: ERROR: implicit.c:95: memory error: out of bound pointer
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;1;31mKLEE: ERROR: implicit.c:96: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0mKLEE: HaltTimer invoked
 [0mKLEE: halting execution, dumping remaining states
 [0m[0;1;32m
-KLEE: done: total instructions = 71
+KLEE: done: total instructions = 51
 KLEE: done: completed paths = 0
-KLEE: done: partially completed paths = 33
+KLEE: done: partially completed paths = 48
 KLEE: done: generated tests = 0
 [0mKLEE: Running `marc_arcs` in independent function mode
-[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0;1;31mKLEE: ERROR: implicit.c:138: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0m[0;1;31mKLEE: ERROR: implicit.c:138: memory error: out of bound pointer
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;1;31mKLEE: ERROR: implicit.c:143: memory error: object read only
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0m[0;1;31mKLEE: ERROR: implicit.c:143: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0m[0;1;31mKLEE: ERROR: implicit.c:147: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0m[0;1;31mKLEE: ERROR: implicit.c:148: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0mKLEE: HaltTimer invoked
 [0mKLEE: halting execution, dumping remaining states
 [0m[0;1;32m
-KLEE: done: total instructions = 102
+KLEE: done: total instructions = 49
 KLEE: done: completed paths = 0
-KLEE: done: partially completed paths = 33
+KLEE: done: partially completed paths = 189
 KLEE: done: generated tests = 0
 [0mKLEE: Running `resize_prob` in independent function mode
-[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0;1;31mKLEE: ERROR: implicit.c:217: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0m[0;1;31mKLEE: ERROR: implicit.c:217: memory error: out of bound pointer
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;1;31mKLEE: ERROR: implicit.c:218: memory error: out of bound pointer
+[0m[0;1;31mKLEE: ERROR: implicit.c:229: memory error: out of bound pointer
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;1;31mKLEE: ERROR: implicit.c:217: memory error: object read only
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0mKLEE: HaltTimer invoked
 [0mKLEE: halting execution, dumping remaining states
 [0m[0;1;32m
-KLEE: done: total instructions = 62
-KLEE: done: completed paths = 0
-KLEE: done: partially completed paths = 33
+KLEE: done: total instructions = 75
+KLEE: done: completed paths = 1
+KLEE: done: partially completed paths = 43
 KLEE: done: generated tests = 0
 [0mKLEE: Running `insert_new_arc` in independent function mode
 [0;1;31mKLEE: ERROR: implicit.c:279: memory error: object read only
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;1;31mKLEE: ERROR: implicit.c:280: memory error: out of bound pointer
+[0m[0;1;31mKLEE: ERROR: implicit.c:279: memory error: out of bound pointer
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0mKLEE: HaltTimer invoked
 [0mKLEE: halting execution, dumping remaining states
 [0m[0;1;32m
-KLEE: done: total instructions = 14
+KLEE: done: total instructions = 10
 KLEE: done: completed paths = 0
-KLEE: done: partially completed paths = 33
+KLEE: done: partially completed paths = 48
 KLEE: done: generated tests = 0
 [0mKLEE: Running `replace_weaker_arc` in independent function mode
 [0;1;31mKLEE: ERROR: implicit.c:331: memory error: object read only
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;1;31mKLEE: ERROR: implicit.c:331: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0m[0;1;31mKLEE: ERROR: implicit.c:332: memory error: out of bound pointer
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;1;31mKLEE: ERROR: implicit.c:333: memory error: out of bound pointer
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;1;31mKLEE: ERROR: implicit.c:334: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0m[0;1;31mKLEE: ERROR: implicit.c:336: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0m[0;1;31mKLEE: ERROR: implicit.c:339: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0mKLEE: HaltTimer invoked
+[0mKLEE: halting execution, dumping remaining states
 [0m[0;1;32m
-KLEE: done: total instructions = 47
+KLEE: done: total instructions = 44
 KLEE: done: completed paths = 0
-KLEE: done: partially completed paths = 33
+KLEE: done: partially completed paths = 57
 KLEE: done: generated tests = 0
 [0mKLEE: Running `calculate_max_redcost` in independent function mode
 [0;1;31mKLEE: ERROR: implicit.c:392: memory error: object read only
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;1;31mKLEE: ERROR: implicit.c:392: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0m[0;1;31mKLEE: ERROR: implicit.c:395: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0m[0;1;31mKLEE: ERROR: implicit.c:395: memory error: out of bound pointer
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0mKLEE: HaltTimer invoked
 [0mKLEE: halting execution, dumping remaining states
 [0m[0;1;32m
-KLEE: done: total instructions = 48
-KLEE: done: completed paths = 6
-KLEE: done: partially completed paths = 27
+KLEE: done: total instructions = 31
+KLEE: done: completed paths = 3
+KLEE: done: partially completed paths = 89
 KLEE: done: generated tests = 0
 [0mKLEE: Running `switch_arcs` in independent function mode
-[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `implicit.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `implicit.c`
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `implicit.c`
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0;1;31mKLEE: ERROR: implicit.c:422: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0mKLEE: HaltTimer invoked
 [0mKLEE: halting execution, dumping remaining states
 [0m[0;1;32m
-KLEE: done: total instructions = 95
-KLEE: done: completed paths = 2
-KLEE: done: partially completed paths = 31
+KLEE: done: total instructions = 32
+KLEE: done: completed paths = 1
+KLEE: done: partially completed paths = 48
 KLEE: done: generated tests = 0
 [0mKLEE: Running `price_out_impl` in independent function mode
-[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;1;31mKLEE: ERROR: implicit.c:535: memory error: out of bound pointer
+[0;1;31mKLEE: ERROR: implicit.c:471: memory error: out of bound pointer
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;1;31mKLEE: ERROR: implicit.c:501: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0m[0;1;31mKLEE: ERROR: implicit.c:535: memory error: out of bound pointer
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0mKLEE: HaltTimer invoked
 [0mKLEE: halting execution, dumping remaining states
 [0m[0;1;32m
-KLEE: done: total instructions = 267
+KLEE: done: total instructions = 99
 KLEE: done: completed paths = 0
-KLEE: done: partially completed paths = 33
+KLEE: done: partially completed paths = 43
 KLEE: done: generated tests = 0
 [0mKLEE: Running `arc_compare` in independent function mode
-[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0;1;31mKLEE: ERROR: implicit.c:37: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0m[0;1;31mKLEE: ERROR: implicit.c:37: memory error: out of bound pointer
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0mKLEE: HaltTimer invoked
 [0mKLEE: halting execution, dumping remaining states
 [0m[0;1;32m
-KLEE: done: total instructions = 7
+KLEE: done: total instructions = 8
 KLEE: done: completed paths = 0
-KLEE: done: partially completed paths = 33
+KLEE: done: partially completed paths = 42
 KLEE: done: generated tests = 0
 [0mKLEE: Running `suspend_impl` in independent function mode
 [0;1;31mKLEE: ERROR: implicit.c:801: memory error: object read only
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;1;31mKLEE: ERROR: implicit.c:801: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0m[0;1;31mKLEE: ERROR: implicit.c:802: memory error: out of bound pointer
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0mKLEE: HaltTimer invoked
+[0mKLEE: halting execution, dumping remaining states
 [0m[0;1;32m
-KLEE: done: total instructions = 50
-KLEE: done: completed paths = 1
-KLEE: done: partially completed paths = 32
+KLEE: done: total instructions = 61
+KLEE: done: completed paths = 0
+KLEE: done: partially completed paths = 44
 KLEE: done: generated tests = 0
 [0mKLEE: Running `primal_start_artificial` in independent function mode
 [0;35mKLEE: WARNING: Unable to load source file `pstart.c`
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;1;31mKLEE: ERROR: pstart.c:40: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0m[0;1;31mKLEE: ERROR: pstart.c:41: memory error: out of bound pointer
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0mKLEE: HaltTimer invoked
 [0mKLEE: halting execution, dumping remaining states
 [0m[0;1;32m
-KLEE: done: total instructions = 13
+KLEE: done: total instructions = 16
 KLEE: done: completed paths = 0
-KLEE: done: partially completed paths = 33
+KLEE: done: partially completed paths = 40
 KLEE: done: generated tests = 0
 [0mKLEE: Running `write_circulations` in independent function mode
 [0;35mKLEE: WARNING: Unable to load source file `output.c`
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;1;31mKLEE: ERROR: output.c:45: memory error: out of bound pointer
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;1;31mKLEE: ERROR: output.c:45: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0m[0;1;31mKLEE: ERROR: output.c:52: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0m[0;1;31mKLEE: ERROR: output.c:52: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0mKLEE: HaltTimer invoked
 [0mKLEE: halting execution, dumping remaining states
 [0m[0;1;32m
-KLEE: done: total instructions = 76
-KLEE: done: completed paths = 2
-KLEE: done: partially completed paths = 31
+KLEE: done: total instructions = 59
+KLEE: done: completed paths = 1
+KLEE: done: partially completed paths = 46
 KLEE: done: generated tests = 0
 [0mKLEE: Running `write_objective_value` in independent function mode
 [0;1;32m
@@ -750,91 +513,54 @@ KLEE: done: partially completed paths = 0
 KLEE: done: generated tests = 0
 [0mKLEE: Running `update_tree` in independent function mode
 [0;35mKLEE: WARNING: Unable to load source file `treeup.c`
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;1;31mKLEE: ERROR: treeup.c:104: memory error: out of bound pointer
+[0m[0;1;31mKLEE: ERROR: treeup.c:72: memory error: out of bound pointer
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;1;31mKLEE: ERROR: treeup.c:0: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0m[0;1;31mKLEE: ERROR: treeup.c:0: memory error: object read only
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;1;31mKLEE: ERROR: treeup.c:81: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0mKLEE: HaltTimer invoked
 [0mKLEE: halting execution, dumping remaining states
 [0m[0;1;32m
-KLEE: done: total instructions = 140
+KLEE: done: total instructions = 134
 KLEE: done: completed paths = 0
-KLEE: done: partially completed paths = 33
+KLEE: done: partially completed paths = 230
 KLEE: done: generated tests = 0
 [0mKLEE: Running `primal_iminus` in independent function mode
 [0;35mKLEE: WARNING: Unable to load source file `pbla.c`
 [0m[0;1;31mKLEE: ERROR: pbla.c:78: memory error: object read only
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;1;31mKLEE: ERROR: pbla.c:78: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0m[0;1;31mKLEE: ERROR: pbla.c:60: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0m[0;1;31mKLEE: ERROR: pbla.c:60: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0mKLEE: HaltTimer invoked
 [0mKLEE: halting execution, dumping remaining states
 [0m[0;1;32m
-KLEE: done: total instructions = 38
-KLEE: done: completed paths = 7
-KLEE: done: partially completed paths = 26
+KLEE: done: total instructions = 27
+KLEE: done: completed paths = 4
+KLEE: done: partially completed paths = 136
 KLEE: done: generated tests = 0
 [0mKLEE: Running `primal_update_flow` in independent function mode
 [0;35mKLEE: WARNING: Unable to load source file `pflowup.c`
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;1;31mKLEE: ERROR: pflowup.c:43: memory error: out of bound pointer
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;1;31mKLEE: ERROR: pflowup.c:51: memory error: out of bound pointer
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;1;31mKLEE: ERROR: pflowup.c:43: memory error: object read only
+[0m[0;1;31mKLEE: ERROR: pflowup.c:43: memory error: out of bound pointer
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;1;31mKLEE: ERROR: pflowup.c:51: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0mKLEE: HaltTimer invoked
 [0mKLEE: halting execution, dumping remaining states
 [0m[0;1;32m
-KLEE: done: total instructions = 87
-KLEE: done: completed paths = 0
-KLEE: done: partially completed paths = 33
+KLEE: done: total instructions = 53
+KLEE: done: completed paths = 1
+KLEE: done: partially completed paths = 97
 KLEE: done: generated tests = 0
 [0mKLEE: Running `markBaskets` in independent function mode
 [0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
@@ -846,242 +572,140 @@ KLEE: done: completed paths = 0
 KLEE: done: partially completed paths = 1
 KLEE: done: generated tests = 0
 [0mKLEE: Running `worker` in independent function mode
-[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0;1;31mKLEE: ERROR: psimplex.c:95: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0m[0;1;31mKLEE: ERROR: psimplex.c:96: memory error: out of bound pointer
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;1;31mKLEE: ERROR: psimplex.c:97: memory error: out of bound pointer
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;1;31mKLEE: ERROR: psimplex.c:103: memory error: object read only
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0m[0;1;31mKLEE: ERROR: psimplex.c:103: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;1;31mKLEE: ERROR: psimplex.c:104: divide by zero
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
 [0mKLEE: HaltTimer invoked
 [0mKLEE: halting execution, dumping remaining states
 [0m[0;1;32m
-KLEE: done: total instructions = 78
+KLEE: done: total instructions = 106
 KLEE: done: completed paths = 0
-KLEE: done: partially completed paths = 33
+KLEE: done: partially completed paths = 67
 KLEE: done: generated tests = 0
 [0mKLEE: Running `master` in independent function mode
-[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0;1;31mKLEE: ERROR: psimplex.c:143: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0m[0;1;31mKLEE: ERROR: psimplex.c:144: memory error: out of bound pointer
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;1;31mKLEE: ERROR: psimplex.c:146: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0m[0;1;31mKLEE: ERROR: psimplex.c:162: memory error: out of bound pointer
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0mKLEE: HaltTimer invoked
 [0mKLEE: halting execution, dumping remaining states
 [0m[0;1;32m
-KLEE: done: total instructions = 78
+KLEE: done: total instructions = 82
 KLEE: done: completed paths = 0
-KLEE: done: partially completed paths = 33
+KLEE: done: partially completed paths = 49
 KLEE: done: generated tests = 0
 [0mKLEE: Running `primal_net_simplex` in independent function mode
-[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0;1;31mKLEE: ERROR: psimplex.c:318: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0m[0;1;32m
-KLEE: done: total instructions = 507
-KLEE: done: completed paths = 33
-KLEE: done: partially completed paths = 0
+KLEE: done: total instructions = 657
+KLEE: done: completed paths = 43
+KLEE: done: partially completed paths = 1
 KLEE: done: generated tests = 0
 [0mKLEE: Running `set_static_vars` in independent function mode
 [0;35mKLEE: WARNING: Unable to load source file `pbeampp.c`
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;1;31mKLEE: ERROR: pbeampp.c:40: memory error: out of bound pointer
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;1;31mKLEE: ERROR: pbeampp.c:40: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0mKLEE: HaltTimer invoked
 [0mKLEE: halting execution, dumping remaining states
 [0m[0;1;32m
-KLEE: done: total instructions = 78
-KLEE: done: completed paths = 6
-KLEE: done: partially completed paths = 27
+KLEE: done: total instructions = 69
+KLEE: done: completed paths = 7
+KLEE: done: partially completed paths = 42
 KLEE: done: generated tests = 0
 [0mKLEE: Running `bea_is_dual_infeasible` in independent function mode
-[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0;1;31mKLEE: ERROR: pbeampp.c:53: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0m[0;1;31mKLEE: ERROR: pbeampp.c:54: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0m[0;1;32m
-KLEE: done: total instructions = 197
-KLEE: done: completed paths = 33
-KLEE: done: partially completed paths = 0
+KLEE: done: total instructions = 524
+KLEE: done: completed paths = 96
+KLEE: done: partially completed paths = 2
 KLEE: done: generated tests = 0
 [0mKLEE: Running `cost_compare` in independent function mode
-[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0;1;31mKLEE: ERROR: pbeampp.c:68: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0m[0;1;31mKLEE: ERROR: pbeampp.c:68: memory error: out of bound pointer
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0mKLEE: HaltTimer invoked
 [0mKLEE: halting execution, dumping remaining states
 [0m[0;1;32m
-KLEE: done: total instructions = 10
+KLEE: done: total instructions = 8
 KLEE: done: completed paths = 0
-KLEE: done: partially completed paths = 33
+KLEE: done: partially completed paths = 42
 KLEE: done: generated tests = 0
 [0mKLEE: Running `primal_bea_mpp` in independent function mode
-[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0;1;31mKLEE: ERROR: pbeampp.c:100: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0mKLEE: HaltTimer invoked
 [0mKLEE: halting execution, dumping remaining states
 [0m[0;1;32m
 KLEE: done: total instructions = 22
 KLEE: done: completed paths = 0
-KLEE: done: partially completed paths = 33
+KLEE: done: partially completed paths = 51
 KLEE: done: generated tests = 0
 [0mKLEE: Running `spec_qsort` in independent function mode
 [0;35mKLEE: WARNING: Unable to load source file `spec_qsort/spec_qsort.c`
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;1;31mKLEE: ERROR: spec_qsort/spec_qsort.c:145: memory error: out of bound pointer
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;1;31mKLEE: ERROR: spec_qsort/spec_qsort.c:145: memory error: out of bound pointer
+[0m[0;1;31mKLEE: ERROR: spec_qsort/spec_qsort.c:130: memory error: out of bound pointer
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0mKLEE: HaltTimer invoked
 [0mKLEE: halting execution, dumping remaining states
 [0m[0;1;32m
-KLEE: done: total instructions = 164
+KLEE: done: total instructions = 125
 KLEE: done: completed paths = 2
-KLEE: done: partially completed paths = 31
+KLEE: done: partially completed paths = 98
 KLEE: done: generated tests = 0
 [0mKLEE: Running `swapfunc` in independent function mode
-[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;1;31mKLEE: ERROR: spec_qsort/spec_qsort.c:88: memory error: object read only
+[0;1;31mKLEE: ERROR: spec_qsort/spec_qsort.c:88: memory error: out of bound pointer
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;1;31mKLEE: ERROR: spec_qsort/spec_qsort.c:84: memory error: object read only
-[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;1;31mKLEE: ERROR: spec_qsort/spec_qsort.c:86: memory error: object read only
-[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;1;31mKLEE: ERROR: spec_qsort/spec_qsort.c:88: memory error: out of bound pointer
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
-[0m[0;1;31mKLEE: ERROR: spec_qsort/spec_qsort.c:88: memory error: object read only
+[0m[0;1;31mKLEE: ERROR: spec_qsort/spec_qsort.c:84: memory error: out of bound pointer
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0mKLEE: HaltTimer invoked
+[0mKLEE: halting execution, dumping remaining states
 [0m[0;1;32m
-KLEE: done: total instructions = 288
-KLEE: done: completed paths = 2
-KLEE: done: partially completed paths = 31
+KLEE: done: total instructions = 41
+KLEE: done: completed paths = 0
+KLEE: done: partially completed paths = 196
 KLEE: done: generated tests = 0
 [0mKLEE: Running `med3` in independent function mode
 [0;1;32m
@@ -1093,9 +717,6 @@ KLEE: done: generated tests = 0
 ## Coverage for refreshArcPointers
 
 Warnings present, coverage may be invalid!
-Asm line 1336, src line 0 not covered
-Asm line 1337, src line 64 not covered
-Asm line 1338, src line 64 not covered
 Asm line 1339, src line 64 not covered
 Asm line 1340, src line 64 not covered
 Asm line 1343, src line 64 not covered
@@ -1138,11 +759,14 @@ Asm line 1395, src line 0 not covered
 Asm line 1396, src line 62 not covered
 Asm line 1397, src line 62 not covered
 Asm line 1398, src line 62 not covered
-14 / 59 (23.728813559322035%) asm lines covered
+Asm line 1401, src line 72 not covered
+16 / 59 (27.11864406779661%) asm lines covered
 
 ## Coverage for primal_iminus
 
 Warnings present, coverage may be invalid!
+Asm line 3491, src line 60 not covered
+Asm line 3492, src line 60 not covered
 Asm line 3495, src line 62 not covered
 Asm line 3496, src line 62 not covered
 Asm line 3497, src line 62 not covered
@@ -1174,11 +798,19 @@ Asm line 3532, src line 66 not covered
 Asm line 3533, src line 66 not covered
 Asm line 3534, src line 0 not covered
 Asm line 3535, src line 67 not covered
+Asm line 3538, src line 70 not covered
+Asm line 3539, src line 70 not covered
+Asm line 3540, src line 70 not covered
+Asm line 3541, src line 70 not covered
 Asm line 3544, src line 71 not covered
 Asm line 3545, src line 71 not covered
 Asm line 3546, src line 71 not covered
 Asm line 3547, src line 71 not covered
 Asm line 3548, src line 71 not covered
+Asm line 3551, src line 72 not covered
+Asm line 3552, src line 72 not covered
+Asm line 3553, src line 72 not covered
+Asm line 3554, src line 72 not covered
 Asm line 3555, src line 72 not covered
 Asm line 3556, src line 72 not covered
 Asm line 3559, src line 73 not covered
@@ -1205,15 +837,18 @@ Asm line 3585, src line 0 not covered
 Asm line 3586, src line 0 not covered
 Asm line 3587, src line 58 not covered
 Asm line 3588, src line 58 not covered
-32 / 94 (34.04255319148936%) asm lines covered
+22 / 94 (23.404255319148938%) asm lines covered
 
 ## Coverage for spec_qsort
 
 Warnings present, coverage may be invalid!
+Asm line 4561, src line 130 not covered
+Asm line 4562, src line 130 not covered
 Asm line 4563, src line 130 not covered
 Asm line 4564, src line 130 not covered
 Asm line 4565, src line 130 not covered
 Asm line 4566, src line 130 not covered
+Asm line 4569, src line 130 not covered
 Asm line 4572, src line 130 not covered
 Asm line 4573, src line 130 not covered
 Asm line 4574, src line 130 not covered
@@ -1227,14 +862,37 @@ Asm line 4583, src line 115 not covered
 Asm line 4586, src line 0 not covered
 Asm line 4587, src line 128 not covered
 Asm line 4588, src line 128 not covered
+Asm line 4632, src line 140 not covered
+Asm line 4633, src line 140 not covered
+Asm line 4634, src line 0 not covered
+Asm line 4635, src line 141 not covered
+Asm line 4636, src line 141 not covered
+Asm line 4637, src line 141 not covered
+Asm line 4638, src line 141 not covered
 Asm line 4639, src line 0 not covered
 Asm line 4640, src line 142 not covered
+Asm line 4648, src line 0 not covered
+Asm line 4649, src line 143 not covered
+Asm line 4650, src line 0 not covered
+Asm line 4651, src line 144 not covered
+Asm line 4660, src line 145 not covered
+Asm line 4661, src line 145 not covered
+Asm line 4662, src line 145 not covered
+Asm line 4663, src line 145 not covered
+Asm line 4664, src line 145 not covered
 Asm line 4665, src line 145 not covered
 Asm line 4666, src line 145 not covered
 Asm line 4667, src line 145 not covered
+Asm line 4676, src line 145 not covered
+Asm line 4677, src line 145 not covered
+Asm line 4678, src line 145 not covered
 Asm line 4679, src line 145 not covered
 Asm line 4680, src line 145 not covered
 Asm line 4681, src line 145 not covered
+Asm line 4690, src line 0 not covered
+Asm line 4691, src line 148 not covered
+Asm line 4692, src line 148 not covered
+Asm line 4693, src line 148 not covered
 Asm line 4694, src line 0 not covered
 Asm line 4695, src line 0 not covered
 Asm line 4696, src line 115 not covered
@@ -1507,11 +1165,15 @@ Asm line 5056, src line 0 not covered
 Asm line 5057, src line 0 not covered
 Asm line 5058, src line 125 not covered
 Asm line 5059, src line 125 not covered
-144 / 441 (32.6530612244898%) asm lines covered
+118 / 441 (26.75736961451247%) asm lines covered
 
 ## Coverage for swapfunc
 
-Warnings present, coverage may be invalid!
+Asm line 5094, src line 84 not covered
+Asm line 5095, src line 84 not covered
+Asm line 5096, src line 84 not covered
+Asm line 5097, src line 84 not covered
+Asm line 5098, src line 84 not covered
 Asm line 5099, src line 84 not covered
 Asm line 5100, src line 84 not covered
 Asm line 5101, src line 84 not covered
@@ -1519,6 +1181,21 @@ Asm line 5102, src line 84 not covered
 Asm line 5103, src line 84 not covered
 Asm line 5104, src line 84 not covered
 Asm line 5105, src line 84 not covered
+Asm line 5117, src line 86 not covered
+Asm line 5118, src line 86 not covered
+Asm line 5119, src line 86 not covered
+Asm line 5122, src line 86 not covered
+Asm line 5123, src line 86 not covered
+Asm line 5124, src line 86 not covered
+Asm line 5125, src line 86 not covered
+Asm line 5126, src line 86 not covered
+Asm line 5127, src line 86 not covered
+Asm line 5128, src line 86 not covered
+Asm line 5129, src line 86 not covered
+Asm line 5130, src line 86 not covered
+Asm line 5131, src line 86 not covered
+Asm line 5132, src line 86 not covered
+Asm line 5133, src line 86 not covered
 Asm line 5134, src line 86 not covered
 Asm line 5135, src line 86 not covered
 Asm line 5136, src line 86 not covered
@@ -1526,11 +1203,21 @@ Asm line 5137, src line 86 not covered
 Asm line 5138, src line 86 not covered
 Asm line 5139, src line 86 not covered
 Asm line 5140, src line 86 not covered
-69 / 83 (83.13253012048193%) asm lines covered
+Asm line 5152, src line 88 not covered
+Asm line 5153, src line 88 not covered
+Asm line 5154, src line 88 not covered
+Asm line 5155, src line 88 not covered
+Asm line 5156, src line 88 not covered
+Asm line 5157, src line 88 not covered
+Asm line 5158, src line 88 not covered
+Asm line 5159, src line 88 not covered
+Asm line 5160, src line 88 not covered
+Asm line 5161, src line 88 not covered
+Asm line 5164, src line 89 not covered
+38 / 83 (45.78313253012048%) asm lines covered
 
 ## Coverage for price_out_impl
 
-Warnings present, coverage may be invalid!
 Asm line 2111, src line 505 not covered
 Asm line 2112, src line 505 not covered
 Asm line 2113, src line 505 not covered
@@ -1552,9 +1239,6 @@ Asm line 2136, src line 523 not covered
 Asm line 2137, src line 523 not covered
 Asm line 2140, src line 501 not covered
 Asm line 2141, src line 530 not covered
-Asm line 2152, src line 0 not covered
-Asm line 2153, src line 536 not covered
-Asm line 2154, src line 536 not covered
 Asm line 2157, src line 538 not covered
 Asm line 2158, src line 538 not covered
 Asm line 2159, src line 0 not covered
@@ -1983,7 +1667,7 @@ Asm line 2669, src line 0 not covered
 Asm line 2670, src line 780 not covered
 Asm line 2673, src line 0 not covered
 Asm line 2674, src line 781 not covered
-50 / 502 (9.9601593625498%) asm lines covered
+53 / 502 (10.557768924302788%) asm lines covered
 
 ## Coverage for med3
 
@@ -1991,26 +1675,15 @@ Asm line 2674, src line 781 not covered
 
 ## Coverage for getfree
 
-Warnings present, coverage may be invalid!
-Asm line 829, src line 375 not covered
 Asm line 830, src line 375 not covered
 Asm line 831, src line 375 not covered
-Asm line 836, src line 376 not covered
-Asm line 837, src line 376 not covered
 Asm line 840, src line 376 not covered
 Asm line 841, src line 376 not covered
 Asm line 842, src line 376 not covered
-Asm line 845, src line 377 not covered
-Asm line 846, src line 377 not covered
-Asm line 847, src line 377 not covered
-Asm line 848, src line 377 not covered
 Asm line 851, src line 377 not covered
 Asm line 852, src line 377 not covered
 Asm line 853, src line 377 not covered
-Asm line 856, src line 383 not covered
-Asm line 857, src line 378 not covered
-Asm line 858, src line 383 not covered
-14 / 32 (43.75%) asm lines covered
+24 / 32 (75%) asm lines covered
 
 ## Coverage for global_opt
 
@@ -2020,6 +1693,12 @@ Warnings present, coverage may be invalid!
 ## Coverage for update_tree
 
 Warnings present, coverage may be invalid!
+Asm line 3231, src line 30 not covered
+Asm line 3232, src line 0 not covered
+Asm line 3235, src line 0 not covered
+Asm line 3236, src line 89 not covered
+Asm line 3237, src line 90 not covered
+Asm line 3238, src line 90 not covered
 Asm line 3241, src line 30 not covered
 Asm line 3242, src line 0 not covered
 Asm line 3243, src line 92 not covered
@@ -2033,6 +1712,11 @@ Asm line 3252, src line 0 not covered
 Asm line 3253, src line 89 not covered
 Asm line 3254, src line 90 not covered
 Asm line 3255, src line 90 not covered
+Asm line 3258, src line 98 not covered
+Asm line 3259, src line 0 not covered
+Asm line 3260, src line 0 not covered
+Asm line 3261, src line 104 not covered
+Asm line 3262, src line 104 not covered
 Asm line 3263, src line 0 not covered
 Asm line 3264, src line 0 not covered
 Asm line 3265, src line 0 not covered
@@ -2200,11 +1884,28 @@ Asm line 3460, src line 0 not covered
 Asm line 3461, src line 168 not covered
 Asm line 3462, src line 168 not covered
 Asm line 3465, src line 172 not covered
-56 / 236 (23.728813559322035%) asm lines covered
+45 / 236 (19.06779661016949%) asm lines covered
 
 ## Coverage for marc_arcs
 
-Warnings present, coverage may be invalid!
+Asm line 1492, src line 148 not covered
+Asm line 1493, src line 149 not covered
+Asm line 1494, src line 0 not covered
+Asm line 1495, src line 0 not covered
+Asm line 1496, src line 153 not covered
+Asm line 1497, src line 0 not covered
+Asm line 1498, src line 0 not covered
+Asm line 1499, src line 0 not covered
+Asm line 1500, src line 154 not covered
+Asm line 1501, src line 154 not covered
+Asm line 1502, src line 154 not covered
+Asm line 1503, src line 154 not covered
+Asm line 1506, src line 153 not covered
+Asm line 1507, src line 0 not covered
+Asm line 1508, src line 111 not covered
+Asm line 1509, src line 111 not covered
+Asm line 1510, src line 154 not covered
+Asm line 1513, src line 0 not covered
 Asm line 1514, src line 0 not covered
 Asm line 1515, src line 111 not covered
 Asm line 1516, src line 111 not covered
@@ -2275,15 +1976,11 @@ Asm line 1590, src line 193 not covered
 Asm line 1593, src line 198 not covered
 Asm line 1594, src line 199 not covered
 Asm line 1595, src line 201 not covered
-45 / 115 (39.130434782608695%) asm lines covered
+27 / 115 (23.47826086956522%) asm lines covered
 
 ## Coverage for flow_cost
 
 Warnings present, coverage may be invalid!
-Asm line 332, src line 61 not covered
-Asm line 333, src line 0 not covered
-Asm line 334, src line 81 not covered
-Asm line 335, src line 81 not covered
 Asm line 336, src line 81 not covered
 Asm line 337, src line 81 not covered
 Asm line 338, src line 61 not covered
@@ -2348,11 +2045,10 @@ Asm line 431, src line 100 not covered
 Asm line 432, src line 0 not covered
 Asm line 433, src line 100 not covered
 Asm line 434, src line 100 not covered
-37 / 105 (35.23809523809524%) asm lines covered
+41 / 105 (39.04761904761905%) asm lines covered
 
 ## Coverage for dual_feasible
 
-Warnings present, coverage may be invalid!
 Asm line 751, src line 308 not covered
 Asm line 752, src line 308 not covered
 Asm line 753, src line 308 not covered
@@ -2393,25 +2089,30 @@ Asm line 795, src line 356 not covered
 Warnings present, coverage may be invalid!
 Asm line cfl=runtime/Intrinsic/klee_div_zero_check.c, src line undefined not covered
 Asm line cfn=klee_div_zero_check, src line undefined not covered
-Asm line calls=31, src line 5288 not covered
+Asm line calls=20, src line 5288 not covered
 Asm line 462, src line 145 not covered
 Asm line cfl=runtime/Intrinsic/klee_div_zero_check.c, src line undefined not covered
 Asm line cfn=klee_div_zero_check, src line undefined not covered
-Asm line calls=9, src line 5288 not covered
+Asm line calls=3, src line 5288 not covered
 Asm line 468, src line 146 not covered
-Asm line 475, src line 147 not covered
-Asm line 476, src line 147 not covered
-Asm line 477, src line 147 not covered
-Asm line 478, src line 147 not covered
-Asm line 479, src line 147 not covered
-Asm line 480, src line 147 not covered
-Asm line 481, src line 0 not covered
-Asm line 482, src line 148 not covered
-22 / 38 (57.89473684210527%) asm lines covered
+30 / 38 (78.94736842105263%) asm lines covered
 
 ## Coverage for switch_arcs
 
-Warnings present, coverage may be invalid!
+Asm line 1972, src line 422 not covered
+Asm line 1973, src line 422 not covered
+Asm line 1974, src line 0 not covered
+Asm line 1975, src line 0 not covered
+Asm line 1976, src line 401 not covered
+Asm line 1977, src line 0 not covered
+Asm line 1978, src line 0 not covered
+Asm line 1979, src line 423 not covered
+Asm line 1980, src line 423 not covered
+Asm line 1983, src line 401 not covered
+Asm line 1984, src line 401 not covered
+Asm line 1985, src line 0 not covered
+Asm line 1986, src line 0 not covered
+Asm line 1987, src line 425 not covered
 Asm line 1988, src line 425 not covered
 Asm line 1989, src line 0 not covered
 Asm line 1990, src line 428 not covered
@@ -2458,11 +2159,17 @@ Asm line 2040, src line 423 not covered
 Asm line 2041, src line 0 not covered
 Asm line 2042, src line 423 not covered
 Asm line 2043, src line 423 not covered
-Asm line cfl=runtime/Intrinsic/klee_div_zero_check.c, src line undefined not covered
-Asm line cfn=klee_div_zero_check, src line undefined not covered
-Asm line calls=1, src line 5288 not covered
+Asm line 2046, src line 414 not covered
+Asm line 2047, src line 417 not covered
+Asm line 2048, src line 0 not covered
+Asm line 2049, src line 417 not covered
 Asm line 2050, src line 417 not covered
-56 / 106 (52.83018867924528%) asm lines covered
+Asm line 2051, src line 417 not covered
+Asm line 2052, src line 0 not covered
+Asm line 2053, src line 0 not covered
+Asm line 2054, src line 417 not covered
+Asm line 2055, src line 417 not covered
+32 / 102 (31.372549019607842%) asm lines covered
 
 ## Coverage for start
 
@@ -2471,15 +2178,6 @@ Asm line 2050, src line 417 not covered
 ## Coverage for write_circulations
 
 Warnings present, coverage may be invalid!
-Asm line 3050, src line 50 not covered
-Asm line 3051, src line 52 not covered
-Asm line 3052, src line 52 not covered
-Asm line 3053, src line 52 not covered
-Asm line 3054, src line 52 not covered
-Asm line 3055, src line 52 not covered
-Asm line 3056, src line 0 not covered
-Asm line 3057, src line 31 not covered
-Asm line 3058, src line 52 not covered
 Asm line 3059, src line 0 not covered
 Asm line 3060, src line 52 not covered
 Asm line 3061, src line 52 not covered
@@ -2541,22 +2239,17 @@ Asm line 3134, src line 52 not covered
 Asm line 3137, src line 31 not covered
 Asm line 3138, src line 0 not covered
 Asm line 3139, src line 87 not covered
-16 / 86 (18.6046511627907%) asm lines covered
+25 / 86 (29.069767441860467%) asm lines covered
 
 ## Coverage for suspend_impl
 
-Warnings present, coverage may be invalid!
-Asm line 2733, src line 787 not covered
-Asm line 2734, src line 804 not covered
-Asm line 2737, src line 805 not covered
-Asm line 2738, src line 787 not covered
-Asm line 2739, src line 805 not covered
-Asm line 2740, src line 806 not covered
-Asm line 2741, src line 804 not covered
-Asm line 2742, src line 804 not covered
 Asm line 2745, src line 0 not covered
 Asm line 2746, src line 806 not covered
 Asm line 2747, src line 804 not covered
+Asm line 2750, src line 809 not covered
+Asm line 2751, src line 809 not covered
+Asm line 2752, src line 809 not covered
+Asm line 2753, src line 809 not covered
 Asm line 2756, src line 815 not covered
 Asm line 2757, src line 0 not covered
 Asm line 2758, src line 0 not covered
@@ -2630,6 +2323,10 @@ Asm line 2844, src line 0 not covered
 Asm line 2845, src line 816 not covered
 Asm line 2846, src line 816 not covered
 Asm line 2847, src line 816 not covered
+Asm line 2850, src line 809 not covered
+Asm line 2851, src line 0 not covered
+Asm line 2852, src line 851 not covered
+Asm line 2853, src line 851 not covered
 Asm line 2856, src line 853 not covered
 Asm line 2857, src line 853 not covered
 Asm line 2858, src line 853 not covered
@@ -2676,11 +2373,11 @@ Asm line 2906, src line 868 not covered
 Asm line 2907, src line 868 not covered
 Asm line 2908, src line 869 not covered
 Asm line 2909, src line 870 not covered
-28 / 158 (17.72151898734177%) asm lines covered
+Asm line 2912, src line 872 not covered
+27 / 158 (17.088607594936708%) asm lines covered
 
 ## Coverage for cost_compare
 
-Warnings present, coverage may be invalid!
 Asm line 4205, src line 68 not covered
 Asm line 4206, src line 68 not covered
 Asm line 4207, src line 68 not covered
@@ -2709,7 +2406,6 @@ Asm line 4230, src line 76 not covered
 
 ## Coverage for refreshPositions
 
-Warnings present, coverage may be invalid!
 Asm line 1428, src line 96 not covered
 Asm line 1429, src line 96 not covered
 Asm line 1432, src line 98 not covered
@@ -2724,41 +2420,15 @@ Asm line 1442, src line 94 not covered
 Asm line 1443, src line 0 not covered
 Asm line 1444, src line 94 not covered
 Asm line 1445, src line 94 not covered
-Asm line 1450, src line 0 not covered
-Asm line 1451, src line 103 not covered
 Asm line 1452, src line 104 not covered
 Asm line 1453, src line 105 not covered
 Asm line 1454, src line 105 not covered
 Asm line 1455, src line 105 not covered
 Asm line 1456, src line 107 not covered
-21 / 42 (50%) asm lines covered
+23 / 42 (54.761904761904766%) asm lines covered
 
 ## Coverage for resize_prob
 
-Warnings present, coverage may be invalid!
-Asm line 1613, src line 218 not covered
-Asm line 1614, src line 218 not covered
-Asm line 1615, src line 229 not covered
-Asm line 1616, src line 229 not covered
-Asm line 1617, src line 229 not covered
-Asm line 1618, src line 229 not covered
-Asm line 1619, src line 229 not covered
-Asm line 1620, src line 0 not covered
-Asm line 1621, src line 230 not covered
-Asm line 1622, src line 230 not covered
-Asm line 1625, src line 232 not covered
-Asm line 1626, src line 232 not covered
-Asm line 1627, src line 233 not covered
-Asm line 1628, src line 233 not covered
-Asm line 1629, src line 234 not covered
-Asm line 1632, src line 229 not covered
-Asm line 1633, src line 0 not covered
-Asm line 1634, src line 237 not covered
-Asm line 1635, src line 0 not covered
-Asm line 1636, src line 239 not covered
-Asm line 1637, src line 240 not covered
-Asm line 1638, src line 240 not covered
-Asm line 1639, src line 240 not covered
 Asm line 1640, src line 240 not covered
 Asm line 1641, src line 240 not covered
 Asm line 1642, src line 242 not covered
@@ -2807,31 +2477,14 @@ Asm line 1694, src line 250 not covered
 Asm line 1695, src line 0 not covered
 Asm line 1696, src line 251 not covered
 Asm line 1697, src line 253 not covered
-Asm line 1700, src line 0 not covered
-Asm line 1701, src line 254 not covered
-9 / 82 (10.975609756097562%) asm lines covered
+34 / 82 (41.46341463414634%) asm lines covered
 
 ## Coverage for primal_net_simplex
 
-Warnings present, coverage may be invalid!
 27 / 27 (100%) asm lines covered
 
 ## Coverage for master
 
-Warnings present, coverage may be invalid!
-Asm line 3879, src line 0 not covered
-Asm line 3880, src line 149 not covered
-Asm line 3881, src line 0 not covered
-Asm line 3882, src line 150 not covered
-Asm line 3883, src line 0 not covered
-Asm line 3884, src line 151 not covered
-Asm line 3885, src line 152 not covered
-Asm line 3886, src line 152 not covered
-Asm line 3887, src line 153 not covered
-Asm line 3888, src line 0 not covered
-Asm line 3889, src line 153 not covered
-Asm line 3890, src line 162 not covered
-Asm line 3891, src line 162 not covered
 Asm line 3892, src line 0 not covered
 Asm line 3893, src line 0 not covered
 Asm line 3894, src line 124 not covered
@@ -3016,15 +2669,15 @@ Asm line 4112, src line 0 not covered
 Asm line 4113, src line 169 not covered
 Asm line 4114, src line 169 not covered
 Asm line 4117, src line 297 not covered
-19 / 216 (8.796296296296296%) asm lines covered
+32 / 216 (14.814814814814813%) asm lines covered
 
 ## Coverage for getOriginalArcPosition
 
+Warnings present, coverage may be invalid!
 3 / 3 (100%) asm lines covered
 
 ## Coverage for bea_is_dual_infeasible
 
-Warnings present, coverage may be invalid!
 17 / 17 (100%) asm lines covered
 
 ## Coverage for set_static_vars
@@ -3129,7 +2782,10 @@ Asm line 3028, src line 90 not covered
 
 ## Coverage for primal_feasible
 
-Warnings present, coverage may be invalid!
+Asm line 668, src line 235 not covered
+Asm line 669, src line 235 not covered
+Asm line 670, src line 254 not covered
+Asm line 671, src line 254 not covered
 Asm line 672, src line 0 not covered
 Asm line 673, src line 255 not covered
 Asm line 674, src line 255 not covered
@@ -3163,12 +2819,7 @@ Asm line 711, src line 0 not covered
 Asm line 712, src line 252 not covered
 Asm line 713, src line 235 not covered
 Asm line 714, src line 252 not covered
-Asm line 717, src line 235 not covered
-Asm line 718, src line 0 not covered
-Asm line 719, src line 0 not covered
-Asm line 720, src line 0 not covered
-Asm line 721, src line 281 not covered
-24 / 62 (38.70967741935484%) asm lines covered
+25 / 62 (40.32258064516129%) asm lines covered
 
 ## Coverage for refresh_neighbour_lists
 
@@ -3182,8 +2833,6 @@ Asm line 261, src line 40 not covered
 Asm line 262, src line 40 not covered
 Asm line 263, src line 43 not covered
 Asm line 264, src line 40 not covered
-Asm line 274, src line 48 not covered
-Asm line 275, src line 48 not covered
 Asm line 278, src line 47 not covered
 Asm line 279, src line 0 not covered
 Asm line 280, src line 48 not covered
@@ -3214,12 +2863,10 @@ Asm line 306, src line 0 not covered
 Asm line 307, src line 48 not covered
 Asm line 308, src line 48 not covered
 Asm line 309, src line 48 not covered
-Asm line 312, src line 57 not covered
-18 / 60 (30%) asm lines covered
+21 / 60 (35%) asm lines covered
 
 ## Coverage for calculate_max_redcost
 
-Warnings present, coverage may be invalid!
 Asm line 1915, src line 395 not covered
 Asm line 1916, src line 395 not covered
 Asm line 1917, src line 395 not covered
@@ -3235,18 +2882,6 @@ Asm line 1929, src line 393 not covered
 
 ## Coverage for replace_weaker_arc
 
-Warnings present, coverage may be invalid!
-Asm line 1808, src line 334 not covered
-Asm line 1809, src line 334 not covered
-Asm line 1810, src line 335 not covered
-Asm line 1811, src line 335 not covered
-Asm line 1812, src line 336 not covered
-Asm line 1813, src line 336 not covered
-Asm line 1814, src line 336 not covered
-Asm line 1815, src line 0 not covered
-Asm line 1816, src line 339 not covered
-Asm line 1817, src line 339 not covered
-Asm line 1818, src line 339 not covered
 Asm line 1819, src line 339 not covered
 Asm line 1820, src line 339 not covered
 Asm line 1821, src line 339 not covered
@@ -3313,28 +2948,15 @@ Asm line 1889, src line 340 not covered
 Asm line 1890, src line 314 not covered
 Asm line 1891, src line 340 not covered
 Asm line 1894, src line 363 not covered
-13 / 90 (14.444444444444443%) asm lines covered
+24 / 90 (26.666666666666668%) asm lines covered
 
 ## Coverage for worker
 
 Warnings present, coverage may be invalid!
-Asm line 3764, src line 0 not covered
-Asm line 3765, src line 98 not covered
-Asm line 3766, src line 0 not covered
-Asm line 3767, src line 99 not covered
-Asm line 3768, src line 99 not covered
-Asm line 3769, src line 100 not covered
-Asm line 3770, src line 0 not covered
-Asm line 3771, src line 100 not covered
-Asm line 3772, src line 103 not covered
-Asm line 3773, src line 103 not covered
-Asm line 3774, src line 103 not covered
-Asm line 3775, src line 103 not covered
-Asm line 3776, src line 104 not covered
+Asm line cfl=runtime/Intrinsic/klee_div_zero_check.c, src line undefined not covered
+Asm line cfn=klee_div_zero_check, src line undefined not covered
+Asm line calls=5, src line 5288 not covered
 Asm line 3777, src line 104 not covered
-Asm line 3778, src line 104 not covered
-Asm line 3779, src line 0 not covered
-Asm line 3780, src line 0 not covered
 Asm line 3781, src line 87 not covered
 Asm line 3782, src line 0 not covered
 Asm line 3783, src line 0 not covered
@@ -3392,11 +3014,12 @@ Asm line 3844, src line 114 not covered
 Asm line 3847, src line 107 not covered
 Asm line 3848, src line 107 not covered
 Asm line 3851, src line 121 not covered
-13 / 87 (14.942528735632186%) asm lines covered
+30 / 91 (32.967032967032964%) asm lines covered
 
 ## Coverage for insert_new_arc
 
-Warnings present, coverage may be invalid!
+Asm line 1723, src line 280 not covered
+Asm line 1724, src line 280 not covered
 Asm line 1725, src line 281 not covered
 Asm line 1726, src line 281 not covered
 Asm line 1727, src line 282 not covered
@@ -3454,7 +3077,7 @@ Asm line 1784, src line 287 not covered
 Asm line 1785, src line 287 not covered
 Asm line 1786, src line 287 not covered
 Asm line 1789, src line 306 not covered
-12 / 69 (17.391304347826086%) asm lines covered
+10 / 69 (14.492753623188406%) asm lines covered
 
 ## Coverage for markBaskets
 
@@ -3526,7 +3149,6 @@ Asm line 3745, src line 70 not covered
 
 ## Coverage for arc_compare
 
-Warnings present, coverage may be invalid!
 Asm line 2685, src line 37 not covered
 Asm line 2686, src line 37 not covered
 Asm line 2687, src line 37 not covered
@@ -3547,7 +3169,6 @@ Asm line 2706, src line 45 not covered
 
 ## Coverage for flow_org_cost
 
-Warnings present, coverage may be invalid!
 Asm line 525, src line 190 not covered
 Asm line 526, src line 190 not covered
 Asm line 527, src line 171 not covered
@@ -3617,29 +3238,6 @@ Asm line 623, src line 204 not covered
 ## Coverage for read_min
 
 Warnings present, coverage may be invalid!
-Asm line 915, src line 59 not covered
-Asm line 916, src line 59 not covered
-Asm line 917, src line 59 not covered
-Asm line 918, src line 59 not covered
-Asm line 919, src line 59 not covered
-Asm line 920, src line 60 not covered
-Asm line 921, src line 60 not covered
-Asm line 922, src line 60 not covered
-Asm line 923, src line 60 not covered
-Asm line 924, src line 60 not covered
-Asm line 925, src line 60 not covered
-Asm line 926, src line 60 not covered
-Asm line 927, src line 27 not covered
-Asm line 928, src line 64 not covered
-Asm line 929, src line 64 not covered
-Asm line 932, src line 27 not covered
-Asm line 933, src line 64 not covered
-Asm line 936, src line 65 not covered
-Asm line 937, src line 27 not covered
-Asm line 938, src line 65 not covered
-Asm line 939, src line 66 not covered
-Asm line 940, src line 64 not covered
-Asm line 941, src line 64 not covered
 Asm line 944, src line 0 not covered
 Asm line 945, src line 66 not covered
 Asm line 946, src line 64 not covered
@@ -3960,11 +3558,10 @@ Asm line 1294, src line 0 not covered
 Asm line 1295, src line 226 not covered
 Asm line 1296, src line 226 not covered
 Asm line 1297, src line 226 not covered
-46 / 389 (11.825192802056556%) asm lines covered
+69 / 389 (17.737789203084834%) asm lines covered
 
 ## Coverage for primal_bea_mpp
 
-Warnings present, coverage may be invalid!
 Asm line 4260, src line 100 not covered
 Asm line 4261, src line 100 not covered
 Asm line 4264, src line 102 not covered
@@ -4148,14 +3745,11 @@ Asm line 3621, src line 41 not covered
 Asm line 3622, src line 0 not covered
 Asm line 3623, src line 41 not covered
 Asm line 3624, src line 41 not covered
-Asm line 3635, src line 49 not covered
-Asm line 3636, src line 49 not covered
 Asm line 3637, src line 0 not covered
 Asm line 3638, src line 49 not covered
 Asm line 3639, src line 49 not covered
-Asm line 3642, src line 56 not covered
-24 / 35 (68.57142857142857%) asm lines covered
+27 / 35 (77.14285714285715%) asm lines covered
 
 ## Summary
 
-1061 / 3936 (26.956300813008134%) asm lines covered
+1072 / 3936 (27.235772357723576%) asm lines covered
