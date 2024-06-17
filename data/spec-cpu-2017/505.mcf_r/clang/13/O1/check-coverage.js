@@ -49,6 +49,8 @@ function checkFunctionCoverage(functionPath) {
   const percent = sectionLinesCovered / sectionLines * 100;
   console.log(`${sectionLinesCovered} / ${sectionLines} (${percent}%) asm lines covered`);
   console.log();
+
+  return { sectionLines, sectionLinesCovered };
 }
 
 const baseDirPath = process.argv[2];
@@ -57,9 +59,21 @@ if (!baseDirPath) {
   throw new Error("Directory required");
 }
 
+let totalLines = 0;
+let totalLinesCovered = 0;
+
 const baseDir = fs.opendirSync(baseDirPath);
 for (let dir = baseDir.readSync(); dir; dir = baseDir.readSync()) {
   if (!dir.isDirectory()) continue;
   const functionPath = path.join(baseDirPath, dir.name);
-  checkFunctionCoverage(functionPath);
+  const { sectionLines, sectionLinesCovered } =
+    checkFunctionCoverage(functionPath);
+  totalLines += sectionLines;
+  totalLinesCovered += sectionLinesCovered;
 }
+
+console.log("## Summary")
+console.log()
+
+const percent = totalLinesCovered / totalLines * 100;
+console.log(`${totalLinesCovered} / ${totalLines} (${percent}%) asm lines covered`);
