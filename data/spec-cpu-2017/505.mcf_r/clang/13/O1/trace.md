@@ -114,11 +114,10 @@ KLEE: done: generated tests = 0
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;1;31mKLEE: ERROR: mcfutil.c:48: memory error: out of bound pointer
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
@@ -129,7 +128,7 @@ KLEE: done: generated tests = 0
 [0mKLEE: HaltTimer invoked
 [0mKLEE: halting execution, dumping remaining states
 [0m[0;1;32m
-KLEE: done: total instructions = 162
+KLEE: done: total instructions = 117
 KLEE: done: completed paths = 0
 KLEE: done: partially completed paths = 33
 KLEE: done: generated tests = 0
@@ -144,12 +143,13 @@ KLEE: done: generated tests = 0
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;1;35mKLEE: WARNING ONCE: silently concretizing (reason: floating point) expression (ReadLSB w64 N0:(Extract w32 0 (Add w64 0x210
                                          (Sub w64 (ReadLSB w64 0x0 flow_cost.net)
-                                                  0x104EECDC0))) const_arr29) to value 0x0 (mcfutil.c:118)
+                                                  0x10B786DC0))) const_arr29) to value 0x0 (mcfutil.c:118)
+[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0mKLEE: HaltTimer invoked
 [0mKLEE: halting execution, dumping remaining states
 [0m[0;1;32m
-KLEE: done: total instructions = 121
+KLEE: done: total instructions = 128
 KLEE: done: completed paths = 1
 KLEE: done: partially completed paths = 32
 KLEE: done: generated tests = 0
@@ -176,62 +176,68 @@ KLEE: done: generated tests = 0
 [0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;1;31mKLEE: ERROR: mcfutil.c:146: memory error: out of bound pointer
-[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;1;31mKLEE: ERROR: mcfutil.c:146: memory error: out of bound pointer
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;1;31mKLEE: ERROR: mcfutil.c:146: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
@@ -268,31 +274,13 @@ KLEE: done: generated tests = 0
 [0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
@@ -312,16 +300,52 @@ KLEE: done: generated tests = 0
 [0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0mKLEE: HaltTimer invoked
 [0mKLEE: halting execution, dumping remaining states
 [0m[0;1;32m
-KLEE: done: total instructions = 388
+KLEE: done: total instructions = 434
 KLEE: done: completed paths = 1
 KLEE: done: partially completed paths = 32
 KLEE: done: generated tests = 0
 [0mKLEE: Running `getOriginalArcPosition` in independent function mode
-[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;1;32m
+[0;1;32m
 KLEE: done: total instructions = 3
 KLEE: done: completed paths = 1
 KLEE: done: partially completed paths = 0
@@ -360,11 +384,12 @@ KLEE: done: generated tests = 0
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;1;31mKLEE: ERROR: mcfutil.c:254: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0mKLEE: HaltTimer invoked
 [0mKLEE: halting execution, dumping remaining states
 [0m[0;1;32m
-KLEE: done: total instructions = 71
+KLEE: done: total instructions = 74
 KLEE: done: completed paths = 0
 KLEE: done: partially completed paths = 33
 KLEE: done: generated tests = 0
@@ -383,19 +408,25 @@ KLEE: done: generated tests = 0
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;1;31mKLEE: ERROR: mcfutil.c:308: memory error: out of bound pointer
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0mKLEE: HaltTimer invoked
 [0mKLEE: halting execution, dumping remaining states
 [0m[0;1;32m
-KLEE: done: total instructions = 129
-KLEE: done: completed paths = 2
-KLEE: done: partially completed paths = 31
+KLEE: done: total instructions = 182
+KLEE: done: completed paths = 4
+KLEE: done: partially completed paths = 29
 KLEE: done: generated tests = 0
 [0mKLEE: Running `getfree` in independent function mode
 [0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
@@ -409,10 +440,13 @@ KLEE: done: generated tests = 0
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0mKLEE: HaltTimer invoked
 [0mKLEE: halting execution, dumping remaining states
 [0m[0;1;32m
-KLEE: done: total instructions = 81
+KLEE: done: total instructions = 111
 KLEE: done: completed paths = 0
 KLEE: done: partially completed paths = 33
 KLEE: done: generated tests = 0
@@ -426,10 +460,14 @@ KLEE: done: generated tests = 0
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;1;31mKLEE: ERROR: readmin.c:56: memory error: out of bound pointer
+[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;1;31mKLEE: ERROR: readmin.c:58: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;1;31mKLEE: ERROR: readmin.c:55: memory error: out of bound pointer
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0m[0;1;32m
-KLEE: done: total instructions = 106
+KLEE: done: total instructions = 118
 KLEE: done: completed paths = 2
 KLEE: done: partially completed paths = 31
 KLEE: done: generated tests = 0
@@ -446,13 +484,12 @@ KLEE: done: generated tests = 0
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0mKLEE: HaltTimer invoked
 [0mKLEE: halting execution, dumping remaining states
 [0m[0;1;32m
-KLEE: done: total instructions = 55
-KLEE: done: completed paths = 2
-KLEE: done: partially completed paths = 31
+KLEE: done: total instructions = 131
+KLEE: done: completed paths = 3
+KLEE: done: partially completed paths = 30
 KLEE: done: generated tests = 0
 [0mKLEE: Running `refreshPositions` in independent function mode
 [0;35mKLEE: WARNING: Skipping fork (max-forks reached)
@@ -472,28 +509,12 @@ KLEE: done: generated tests = 0
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0mKLEE: HaltTimer invoked
 [0mKLEE: halting execution, dumping remaining states
 [0m[0;1;32m
-KLEE: done: total instructions = 211
-KLEE: done: completed paths = 1
-KLEE: done: partially completed paths = 32
+KLEE: done: total instructions = 71
+KLEE: done: completed paths = 0
+KLEE: done: partially completed paths = 33
 KLEE: done: generated tests = 0
 [0mKLEE: Running `marc_arcs` in independent function mode
 [0;35mKLEE: WARNING: Skipping fork (max-forks reached)
@@ -517,19 +538,10 @@ KLEE: done: generated tests = 0
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0mKLEE: HaltTimer invoked
 [0mKLEE: halting execution, dumping remaining states
 [0m[0;1;32m
-KLEE: done: total instructions = 150
+KLEE: done: total instructions = 102
 KLEE: done: completed paths = 0
 KLEE: done: partially completed paths = 33
 KLEE: done: generated tests = 0
@@ -542,19 +554,18 @@ KLEE: done: generated tests = 0
 [0m[0;1;31mKLEE: ERROR: implicit.c:217: memory error: out of bound pointer
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;1;31mKLEE: ERROR: implicit.c:218: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;1;31mKLEE: ERROR: implicit.c:217: memory error: object read only
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;1;31mKLEE: ERROR: implicit.c:218: memory error: out of bound pointer
-[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0mKLEE: HaltTimer invoked
 [0mKLEE: halting execution, dumping remaining states
 [0m[0;1;32m
-KLEE: done: total instructions = 72
+KLEE: done: total instructions = 62
 KLEE: done: completed paths = 0
 KLEE: done: partially completed paths = 33
 KLEE: done: generated tests = 0
@@ -587,20 +598,20 @@ KLEE: done: generated tests = 0
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;1;31mKLEE: ERROR: implicit.c:333: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;1;32m
-KLEE: done: total instructions = 114
-KLEE: done: completed paths = 1
-KLEE: done: partially completed paths = 32
+KLEE: done: total instructions = 47
+KLEE: done: completed paths = 0
+KLEE: done: partially completed paths = 33
 KLEE: done: generated tests = 0
 [0mKLEE: Running `calculate_max_redcost` in independent function mode
 [0;1;31mKLEE: ERROR: implicit.c:392: memory error: object read only
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
@@ -659,7 +670,7 @@ KLEE: done: generated tests = 0
 [0mKLEE: HaltTimer invoked
 [0mKLEE: halting execution, dumping remaining states
 [0m[0;1;32m
-KLEE: done: total instructions = 355
+KLEE: done: total instructions = 267
 KLEE: done: completed paths = 0
 KLEE: done: partially completed paths = 33
 KLEE: done: generated tests = 0
@@ -689,17 +700,12 @@ KLEE: done: generated tests = 0
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;1;31mKLEE: ERROR: implicit.c:802: memory error: out of bound pointer
-[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0mKLEE: HaltTimer invoked
-[0mKLEE: halting execution, dumping remaining states
 [0m[0;1;32m
-KLEE: done: total instructions = 73
-KLEE: done: completed paths = 0
-KLEE: done: partially completed paths = 33
+KLEE: done: total instructions = 50
+KLEE: done: completed paths = 1
+KLEE: done: partially completed paths = 32
 KLEE: done: generated tests = 0
 [0mKLEE: Running `primal_start_artificial` in independent function mode
 [0;35mKLEE: WARNING: Unable to load source file `pstart.c`
@@ -732,7 +738,7 @@ KLEE: done: generated tests = 0
 [0mKLEE: HaltTimer invoked
 [0mKLEE: halting execution, dumping remaining states
 [0m[0;1;32m
-KLEE: done: total instructions = 82
+KLEE: done: total instructions = 76
 KLEE: done: completed paths = 2
 KLEE: done: partially completed paths = 31
 KLEE: done: generated tests = 0
@@ -765,40 +771,8 @@ KLEE: done: generated tests = 0
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;1;31mKLEE: ERROR: treeup.c:0: memory error: object read only
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;1;31mKLEE: ERROR: treeup.c:81: memory error: out of bound pointer
-[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
@@ -809,7 +783,7 @@ KLEE: done: generated tests = 0
 [0mKLEE: HaltTimer invoked
 [0mKLEE: halting execution, dumping remaining states
 [0m[0;1;32m
-KLEE: done: total instructions = 262
+KLEE: done: total instructions = 140
 KLEE: done: completed paths = 0
 KLEE: done: partially completed paths = 33
 KLEE: done: generated tests = 0
@@ -826,12 +800,16 @@ KLEE: done: generated tests = 0
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;1;31mKLEE: ERROR: pbla.c:70: memory error: out of bound pointer
-[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0mKLEE: HaltTimer invoked
+[0mKLEE: halting execution, dumping remaining states
 [0m[0;1;32m
-KLEE: done: total instructions = 41
-KLEE: done: completed paths = 16
-KLEE: done: partially completed paths = 17
+KLEE: done: total instructions = 38
+KLEE: done: completed paths = 7
+KLEE: done: partially completed paths = 26
 KLEE: done: generated tests = 0
 [0mKLEE: Running `primal_update_flow` in independent function mode
 [0;35mKLEE: WARNING: Unable to load source file `pflowup.c`
@@ -843,27 +821,18 @@ KLEE: done: generated tests = 0
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;1;31mKLEE: ERROR: pflowup.c:51: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;1;31mKLEE: ERROR: pflowup.c:43: memory error: object read only
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0mKLEE: HaltTimer invoked
 [0mKLEE: halting execution, dumping remaining states
 [0m[0;1;32m
-KLEE: done: total instructions = 79
+KLEE: done: total instructions = 87
 KLEE: done: completed paths = 0
 KLEE: done: partially completed paths = 33
 KLEE: done: generated tests = 0
@@ -889,15 +858,14 @@ KLEE: done: generated tests = 0
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;1;31mKLEE: ERROR: psimplex.c:97: memory error: out of bound pointer
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0mKLEE: HaltTimer invoked
 [0mKLEE: halting execution, dumping remaining states
 [0m[0;1;32m
-KLEE: done: total instructions = 85
+KLEE: done: total instructions = 78
 KLEE: done: completed paths = 0
 KLEE: done: partially completed paths = 33
 KLEE: done: generated tests = 0
@@ -914,14 +882,12 @@ KLEE: done: generated tests = 0
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;1;31mKLEE: ERROR: psimplex.c:146: memory error: out of bound pointer
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0mKLEE: HaltTimer invoked
 [0mKLEE: halting execution, dumping remaining states
 [0m[0;1;32m
-KLEE: done: total instructions = 84
+KLEE: done: total instructions = 78
 KLEE: done: completed paths = 0
 KLEE: done: partially completed paths = 33
 KLEE: done: generated tests = 0
@@ -955,10 +921,11 @@ KLEE: done: generated tests = 0
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0mKLEE: HaltTimer invoked
 [0mKLEE: halting execution, dumping remaining states
 [0m[0;1;32m
-KLEE: done: total instructions = 82
+KLEE: done: total instructions = 78
 KLEE: done: completed paths = 6
 KLEE: done: partially completed paths = 27
 KLEE: done: generated tests = 0
@@ -970,11 +937,8 @@ KLEE: done: generated tests = 0
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;1;32m
-KLEE: done: total instructions = 201
+KLEE: done: total instructions = 197
 KLEE: done: completed paths = 33
 KLEE: done: partially completed paths = 0
 KLEE: done: generated tests = 0
@@ -988,7 +952,7 @@ KLEE: done: generated tests = 0
 [0mKLEE: HaltTimer invoked
 [0mKLEE: halting execution, dumping remaining states
 [0m[0;1;32m
-KLEE: done: total instructions = 7
+KLEE: done: total instructions = 10
 KLEE: done: completed paths = 0
 KLEE: done: partially completed paths = 33
 KLEE: done: generated tests = 0
@@ -1018,15 +982,12 @@ KLEE: done: generated tests = 0
 [0m[0;1;31mKLEE: ERROR: spec_qsort/spec_qsort.c:145: memory error: out of bound pointer
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0mKLEE: HaltTimer invoked
 [0mKLEE: halting execution, dumping remaining states
 [0m[0;1;32m
-KLEE: done: total instructions = 175
-KLEE: done: completed paths = 3
-KLEE: done: partially completed paths = 30
+KLEE: done: total instructions = 164
+KLEE: done: completed paths = 2
+KLEE: done: partially completed paths = 31
 KLEE: done: generated tests = 0
 [0mKLEE: Running `swapfunc` in independent function mode
 [0;35mKLEE: WARNING: Skipping fork (max-forks reached)
@@ -1038,16 +999,13 @@ KLEE: done: generated tests = 0
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;1;31mKLEE: ERROR: spec_qsort/spec_qsort.c:88: memory error: object read only
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;1;31mKLEE: ERROR: spec_qsort/spec_qsort.c:84: memory error: object read only
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;1;31mKLEE: ERROR: spec_qsort/spec_qsort.c:88: memory error: object read only
-[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
@@ -1059,22 +1017,18 @@ KLEE: done: generated tests = 0
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
+[0m[0;1;31mKLEE: ERROR: spec_qsort/spec_qsort.c:88: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0m[0;1;31mKLEE: ERROR: spec_qsort/spec_qsort.c:88: memory error: object read only
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
-[0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
@@ -1125,9 +1079,9 @@ KLEE: done: generated tests = 0
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;35mKLEE: WARNING: Skipping fork (max-forks reached)
 [0m[0;1;32m
-KLEE: done: total instructions = 298
-KLEE: done: completed paths = 4
-KLEE: done: partially completed paths = 29
+KLEE: done: total instructions = 288
+KLEE: done: completed paths = 2
+KLEE: done: partially completed paths = 31
 KLEE: done: generated tests = 0
 [0mKLEE: Running `med3` in independent function mode
 [0;1;32m
@@ -1135,736 +1089,447 @@ KLEE: done: total instructions = 28
 KLEE: done: completed paths = 4
 KLEE: done: partially completed paths = 0
 KLEE: done: generated tests = 0
-[0m+ for i in ./symbolic-trace/*
-+ '[' -d ./symbolic-trace/arc_compare ']'
-+ ./check-coverage.js ./symbolic-trace/arc_compare
-./symbolic-trace/arc_compare
-Coverage for arc_compare
+[0m+ ./check-coverage.js ./symbolic-trace
+## Coverage for refreshArcPointers
+
 Warnings present, coverage may be invalid!
-Asm line 2685, src line 37 not covered
-Asm line 2686, src line 37 not covered
-Asm line 2687, src line 37 not covered
-Asm line 2688, src line 37 not covered
-Asm line 2689, src line 37 not covered
-Asm line 2692, src line 39 not covered
-Asm line 2693, src line 39 not covered
-Asm line 2696, src line 41 not covered
-Asm line 2697, src line 41 not covered
-Asm line 2698, src line 41 not covered
-Asm line 2699, src line 41 not covered
-Asm line 2700, src line 41 not covered
-Asm line 2701, src line 0 not covered
-Asm line 2702, src line 0 not covered
-Asm line 2705, src line 0 not covered
-Asm line 2706, src line 45 not covered
-5 / 21 (23.809523809523807%) asm lines covered
-+ for i in ./symbolic-trace/*
-+ '[' -d ./symbolic-trace/assembly.ll ']'
-+ continue
-+ for i in ./symbolic-trace/*
-+ '[' -d ./symbolic-trace/bea_is_dual_infeasible ']'
-+ ./check-coverage.js ./symbolic-trace/bea_is_dual_infeasible
-./symbolic-trace/bea_is_dual_infeasible
-Coverage for bea_is_dual_infeasible
+Asm line 1336, src line 0 not covered
+Asm line 1337, src line 64 not covered
+Asm line 1338, src line 64 not covered
+Asm line 1339, src line 64 not covered
+Asm line 1340, src line 64 not covered
+Asm line 1343, src line 64 not covered
+Asm line 1344, src line 64 not covered
+Asm line 1345, src line 64 not covered
+Asm line 1346, src line 64 not covered
+Asm line 1349, src line 65 not covered
+Asm line 1350, src line 65 not covered
+Asm line 1351, src line 65 not covered
+Asm line 1352, src line 65 not covered
+Asm line 1353, src line 65 not covered
+Asm line 1356, src line 66 not covered
+Asm line 1357, src line 66 not covered
+Asm line 1358, src line 66 not covered
+Asm line 1359, src line 66 not covered
+Asm line 1362, src line 66 not covered
+Asm line 1363, src line 66 not covered
+Asm line 1364, src line 66 not covered
+Asm line 1365, src line 66 not covered
+Asm line 1368, src line 67 not covered
+Asm line 1369, src line 67 not covered
+Asm line 1370, src line 67 not covered
+Asm line 1371, src line 67 not covered
+Asm line 1372, src line 67 not covered
+Asm line 1375, src line 68 not covered
+Asm line 1376, src line 68 not covered
+Asm line 1377, src line 68 not covered
+Asm line 1378, src line 68 not covered
+Asm line 1381, src line 68 not covered
+Asm line 1382, src line 68 not covered
+Asm line 1383, src line 68 not covered
+Asm line 1384, src line 68 not covered
+Asm line 1387, src line 69 not covered
+Asm line 1388, src line 69 not covered
+Asm line 1389, src line 69 not covered
+Asm line 1390, src line 69 not covered
+Asm line 1391, src line 69 not covered
+Asm line 1394, src line 62 not covered
+Asm line 1395, src line 0 not covered
+Asm line 1396, src line 62 not covered
+Asm line 1397, src line 62 not covered
+Asm line 1398, src line 62 not covered
+14 / 59 (23.728813559322035%) asm lines covered
+
+## Coverage for primal_iminus
+
 Warnings present, coverage may be invalid!
-17 / 17 (100%) asm lines covered
-+ for i in ./symbolic-trace/*
-+ '[' -d ./symbolic-trace/calculate_max_redcost ']'
-+ ./check-coverage.js ./symbolic-trace/calculate_max_redcost
-./symbolic-trace/calculate_max_redcost
-Coverage for calculate_max_redcost
+Asm line 3495, src line 62 not covered
+Asm line 3496, src line 62 not covered
+Asm line 3497, src line 62 not covered
+Asm line 3498, src line 62 not covered
+Asm line 3501, src line 63 not covered
+Asm line 3502, src line 63 not covered
+Asm line 3503, src line 63 not covered
+Asm line 3504, src line 63 not covered
+Asm line 3505, src line 63 not covered
+Asm line 3508, src line 64 not covered
+Asm line 3509, src line 64 not covered
+Asm line 3510, src line 64 not covered
+Asm line 3511, src line 64 not covered
+Asm line 3512, src line 64 not covered
+Asm line 3513, src line 64 not covered
+Asm line 3516, src line 65 not covered
+Asm line 3517, src line 65 not covered
+Asm line 3518, src line 65 not covered
+Asm line 3519, src line 65 not covered
+Asm line 3520, src line 65 not covered
+Asm line 3521, src line 65 not covered
+Asm line 3524, src line 40 not covered
+Asm line 3525, src line 62 not covered
+Asm line 3526, src line 62 not covered
+Asm line 3527, src line 66 not covered
+Asm line 3530, src line 0 not covered
+Asm line 3531, src line 0 not covered
+Asm line 3532, src line 66 not covered
+Asm line 3533, src line 66 not covered
+Asm line 3534, src line 0 not covered
+Asm line 3535, src line 67 not covered
+Asm line 3544, src line 71 not covered
+Asm line 3545, src line 71 not covered
+Asm line 3546, src line 71 not covered
+Asm line 3547, src line 71 not covered
+Asm line 3548, src line 71 not covered
+Asm line 3555, src line 72 not covered
+Asm line 3556, src line 72 not covered
+Asm line 3559, src line 73 not covered
+Asm line 3560, src line 73 not covered
+Asm line 3561, src line 73 not covered
+Asm line 3562, src line 73 not covered
+Asm line 3563, src line 73 not covered
+Asm line 3564, src line 73 not covered
+Asm line 3567, src line 40 not covered
+Asm line 3568, src line 70 not covered
+Asm line 3569, src line 70 not covered
+Asm line 3570, src line 74 not covered
+Asm line 3573, src line 0 not covered
+Asm line 3574, src line 0 not covered
+Asm line 3575, src line 74 not covered
+Asm line 3576, src line 74 not covered
+Asm line 3577, src line 0 not covered
+Asm line 3578, src line 40 not covered
+Asm line 3581, src line 40 not covered
+Asm line 3582, src line 40 not covered
+Asm line 3583, src line 60 not covered
+Asm line 3584, src line 0 not covered
+Asm line 3585, src line 0 not covered
+Asm line 3586, src line 0 not covered
+Asm line 3587, src line 58 not covered
+Asm line 3588, src line 58 not covered
+32 / 94 (34.04255319148936%) asm lines covered
+
+## Coverage for spec_qsort
+
 Warnings present, coverage may be invalid!
-Asm line 1915, src line 395 not covered
-Asm line 1916, src line 395 not covered
-Asm line 1917, src line 395 not covered
-Asm line 1918, src line 395 not covered
-Asm line 1919, src line 395 not covered
-Asm line 1922, src line 396 not covered
-Asm line 1923, src line 396 not covered
-Asm line 1926, src line 393 not covered
-Asm line 1927, src line 0 not covered
-Asm line 1928, src line 393 not covered
-Asm line 1929, src line 393 not covered
-14 / 25 (56.00000000000001%) asm lines covered
-+ for i in ./symbolic-trace/*
-+ '[' -d ./symbolic-trace/cost_compare ']'
-+ ./check-coverage.js ./symbolic-trace/cost_compare
-./symbolic-trace/cost_compare
-Coverage for cost_compare
+Asm line 4563, src line 130 not covered
+Asm line 4564, src line 130 not covered
+Asm line 4565, src line 130 not covered
+Asm line 4566, src line 130 not covered
+Asm line 4572, src line 130 not covered
+Asm line 4573, src line 130 not covered
+Asm line 4574, src line 130 not covered
+Asm line 4575, src line 130 not covered
+Asm line 4576, src line 130 not covered
+Asm line 4577, src line 130 not covered
+Asm line 4578, src line 130 not covered
+Asm line 4579, src line 130 not covered
+Asm line 4582, src line 130 not covered
+Asm line 4583, src line 115 not covered
+Asm line 4586, src line 0 not covered
+Asm line 4587, src line 128 not covered
+Asm line 4588, src line 128 not covered
+Asm line 4639, src line 0 not covered
+Asm line 4640, src line 142 not covered
+Asm line 4665, src line 145 not covered
+Asm line 4666, src line 145 not covered
+Asm line 4667, src line 145 not covered
+Asm line 4679, src line 145 not covered
+Asm line 4680, src line 145 not covered
+Asm line 4681, src line 145 not covered
+Asm line 4694, src line 0 not covered
+Asm line 4695, src line 0 not covered
+Asm line 4696, src line 115 not covered
+Asm line 4697, src line 115 not covered
+Asm line 4698, src line 115 not covered
+Asm line 4699, src line 149 not covered
+Asm line 4702, src line 0 not covered
+Asm line 4703, src line 148 not covered
+Asm line 4704, src line 0 not covered
+Asm line 4705, src line 0 not covered
+Asm line 4706, src line 146 not covered
+Asm line 4707, src line 0 not covered
+Asm line 4708, src line 0 not covered
+Asm line 4709, src line 0 not covered
+Asm line 4710, src line 0 not covered
+Asm line 4711, src line 0 not covered
+Asm line 4712, src line 0 not covered
+Asm line 4713, src line 0 not covered
+Asm line 4714, src line 0 not covered
+Asm line 4715, src line 150 not covered
+Asm line 4716, src line 150 not covered
+Asm line 4719, src line 115 not covered
+Asm line 4720, src line 115 not covered
+Asm line 4721, src line 115 not covered
+Asm line 4722, src line 0 not covered
+Asm line 4723, src line 0 not covered
+Asm line 4724, src line 0 not covered
+Asm line 4725, src line 150 not covered
+Asm line 4726, src line 0 not covered
+Asm line 4727, src line 150 not covered
+Asm line 4728, src line 150 not covered
+Asm line 4731, src line 151 not covered
+Asm line 4732, src line 151 not covered
+Asm line 4735, src line 0 not covered
+Asm line 4736, src line 153 not covered
+Asm line 4739, src line 153 not covered
+Asm line 4740, src line 153 not covered
+Asm line 4741, src line 153 not covered
+Asm line 4742, src line 153 not covered
+Asm line 4743, src line 153 not covered
+Asm line 4744, src line 153 not covered
+Asm line 4745, src line 153 not covered
+Asm line 4746, src line 153 not covered
+Asm line 4749, src line 153 not covered
+Asm line 4752, src line 153 not covered
+Asm line 4753, src line 153 not covered
+Asm line 4754, src line 153 not covered
+Asm line 4755, src line 153 not covered
+Asm line 4756, src line 153 not covered
+Asm line 4757, src line 153 not covered
+Asm line 4758, src line 153 not covered
+Asm line 4759, src line 153 not covered
+Asm line 4762, src line 153 not covered
+Asm line 4763, src line 115 not covered
+Asm line 4766, src line 154 not covered
+Asm line 4767, src line 0 not covered
+Asm line 4768, src line 155 not covered
+Asm line 4771, src line 0 not covered
+Asm line 4772, src line 0 not covered
+Asm line 4773, src line 0 not covered
+Asm line 4774, src line 0 not covered
+Asm line 4775, src line 156 not covered
+Asm line 4776, src line 0 not covered
+Asm line 4777, src line 150 not covered
+Asm line 4778, src line 150 not covered
+Asm line 4781, src line 0 not covered
+Asm line 4782, src line 0 not covered
+Asm line 4783, src line 0 not covered
+Asm line 4784, src line 0 not covered
+Asm line 4785, src line 0 not covered
+Asm line 4786, src line 0 not covered
+Asm line 4787, src line 158 not covered
+Asm line 4788, src line 158 not covered
+Asm line 4791, src line 0 not covered
+Asm line 4792, src line 0 not covered
+Asm line 4793, src line 0 not covered
+Asm line 4794, src line 158 not covered
+Asm line 4795, src line 0 not covered
+Asm line 4796, src line 158 not covered
+Asm line 4797, src line 158 not covered
+Asm line 4800, src line 0 not covered
+Asm line 4801, src line 0 not covered
+Asm line 4802, src line 0 not covered
+Asm line 4803, src line 158 not covered
+Asm line 4804, src line 0 not covered
+Asm line 4805, src line 158 not covered
+Asm line 4806, src line 158 not covered
+Asm line 4809, src line 115 not covered
+Asm line 4810, src line 115 not covered
+Asm line 4811, src line 115 not covered
+Asm line 4812, src line 115 not covered
+Asm line 4813, src line 0 not covered
+Asm line 4814, src line 0 not covered
+Asm line 4815, src line 0 not covered
+Asm line 4816, src line 159 not covered
+Asm line 4817, src line 159 not covered
+Asm line 4820, src line 0 not covered
+Asm line 4821, src line 161 not covered
+Asm line 4824, src line 161 not covered
+Asm line 4825, src line 161 not covered
+Asm line 4826, src line 161 not covered
+Asm line 4827, src line 161 not covered
+Asm line 4828, src line 161 not covered
+Asm line 4829, src line 161 not covered
+Asm line 4830, src line 161 not covered
+Asm line 4831, src line 161 not covered
+Asm line 4834, src line 161 not covered
+Asm line 4837, src line 161 not covered
+Asm line 4838, src line 161 not covered
+Asm line 4839, src line 161 not covered
+Asm line 4840, src line 161 not covered
+Asm line 4841, src line 161 not covered
+Asm line 4842, src line 161 not covered
+Asm line 4843, src line 161 not covered
+Asm line 4844, src line 161 not covered
+Asm line 4847, src line 161 not covered
+Asm line 4848, src line 115 not covered
+Asm line 4851, src line 162 not covered
+Asm line 4852, src line 0 not covered
+Asm line 4853, src line 163 not covered
+Asm line 4856, src line 0 not covered
+Asm line 4857, src line 0 not covered
+Asm line 4858, src line 0 not covered
+Asm line 4859, src line 0 not covered
+Asm line 4860, src line 164 not covered
+Asm line 4861, src line 0 not covered
+Asm line 4862, src line 158 not covered
+Asm line 4863, src line 158 not covered
+Asm line 4866, src line 115 not covered
+Asm line 4867, src line 115 not covered
+Asm line 4868, src line 115 not covered
+Asm line 4869, src line 115 not covered
+Asm line 4870, src line 166 not covered
+Asm line 4873, src line 168 not covered
+Asm line 4876, src line 168 not covered
+Asm line 4877, src line 168 not covered
+Asm line 4878, src line 168 not covered
+Asm line 4879, src line 168 not covered
+Asm line 4880, src line 168 not covered
+Asm line 4881, src line 168 not covered
+Asm line 4882, src line 168 not covered
+Asm line 4883, src line 168 not covered
+Asm line 4886, src line 168 not covered
+Asm line 4889, src line 168 not covered
+Asm line 4890, src line 168 not covered
+Asm line 4891, src line 168 not covered
+Asm line 4892, src line 168 not covered
+Asm line 4893, src line 168 not covered
+Asm line 4894, src line 168 not covered
+Asm line 4895, src line 168 not covered
+Asm line 4896, src line 168 not covered
+Asm line 4899, src line 168 not covered
+Asm line 4900, src line 115 not covered
+Asm line 4903, src line 0 not covered
+Asm line 4904, src line 170 not covered
+Asm line 4905, src line 0 not covered
+Asm line 4906, src line 171 not covered
+Asm line 4907, src line 0 not covered
+Asm line 4908, src line 149 not covered
+Asm line 4911, src line 115 not covered
+Asm line 4912, src line 115 not covered
+Asm line 4913, src line 115 not covered
+Asm line 4914, src line 173 not covered
+Asm line 4915, src line 115 not covered
+Asm line 4916, src line 115 not covered
+Asm line 4917, src line 173 not covered
+Asm line 4920, src line 115 not covered
+Asm line 4921, src line 115 not covered
+Asm line 4922, src line 115 not covered
+Asm line 4923, src line 0 not covered
+Asm line 4924, src line 174 not covered
+Asm line 4925, src line 174 not covered
+Asm line 4928, src line 115 not covered
+Asm line 4929, src line 0 not covered
+Asm line 4930, src line 0 not covered
+Asm line 4931, src line 176 not covered
+Asm line 4932, src line 176 not covered
+Asm line 4935, src line 115 not covered
+Asm line 4936, src line 0 not covered
+Asm line 4937, src line 176 not covered
+Asm line 4938, src line 176 not covered
+Asm line 4939, src line 176 not covered
+Asm line 4940, src line 175 not covered
+Asm line 4943, src line 178 not covered
+Asm line 4946, src line 178 not covered
+Asm line 4947, src line 178 not covered
+Asm line 4948, src line 178 not covered
+Asm line 4949, src line 178 not covered
+Asm line 4950, src line 178 not covered
+Asm line 4951, src line 178 not covered
+Asm line 4952, src line 178 not covered
+Asm line 4953, src line 178 not covered
+Asm line 4956, src line 178 not covered
+Asm line 4959, src line 178 not covered
+Asm line 4960, src line 178 not covered
+Asm line 4961, src line 178 not covered
+Asm line 4962, src line 178 not covered
+Asm line 4963, src line 178 not covered
+Asm line 4964, src line 178 not covered
+Asm line 4965, src line 178 not covered
+Asm line 4966, src line 178 not covered
+Asm line 4969, src line 178 not covered
+Asm line 4970, src line 115 not covered
+Asm line 4973, src line 0 not covered
+Asm line 4974, src line 176 not covered
+Asm line 4975, src line 176 not covered
+Asm line 4978, src line 174 not covered
+Asm line 4979, src line 0 not covered
+Asm line 4980, src line 174 not covered
+Asm line 4981, src line 174 not covered
+Asm line 4984, src line 0 not covered
+Asm line 4985, src line 183 not covered
+Asm line 4986, src line 183 not covered
+Asm line 4987, src line 183 not covered
+Asm line 4988, src line 183 not covered
+Asm line 4989, src line 183 not covered
+Asm line 4990, src line 183 not covered
+Asm line 4991, src line 0 not covered
+Asm line 4992, src line 184 not covered
+Asm line 4993, src line 184 not covered
+Asm line 4996, src line 184 not covered
+Asm line 4997, src line 184 not covered
+Asm line 4998, src line 184 not covered
+Asm line 4999, src line 184 not covered
+Asm line 5000, src line 184 not covered
+Asm line 5003, src line 185 not covered
+Asm line 5004, src line 185 not covered
+Asm line 5005, src line 185 not covered
+Asm line 5006, src line 185 not covered
+Asm line 5007, src line 185 not covered
+Asm line 5008, src line 185 not covered
+Asm line 5009, src line 185 not covered
+Asm line 5010, src line 185 not covered
+Asm line 5011, src line 0 not covered
+Asm line 5012, src line 186 not covered
+Asm line 5013, src line 186 not covered
+Asm line 5016, src line 186 not covered
+Asm line 5017, src line 186 not covered
+Asm line 5018, src line 186 not covered
+Asm line 5019, src line 186 not covered
+Asm line 5020, src line 186 not covered
+Asm line 5023, src line 0 not covered
+Asm line 5024, src line 187 not covered
+Asm line 5025, src line 187 not covered
+Asm line 5028, src line 188 not covered
+Asm line 5029, src line 188 not covered
+Asm line 5030, src line 188 not covered
+Asm line 5031, src line 188 not covered
+Asm line 5034, src line 0 not covered
+Asm line 5035, src line 189 not covered
+Asm line 5036, src line 189 not covered
+Asm line 5039, src line 191 not covered
+Asm line 5040, src line 191 not covered
+Asm line 5041, src line 0 not covered
+Asm line 5042, src line 192 not covered
+Asm line 5043, src line 192 not covered
+Asm line 5044, src line 0 not covered
+Asm line 5045, src line 122 not covered
+Asm line 5046, src line 122 not covered
+Asm line 5047, src line 122 not covered
+Asm line 5048, src line 122 not covered
+Asm line 5049, src line 122 not covered
+Asm line 5050, src line 122 not covered
+Asm line 5051, src line 0 not covered
+Asm line 5052, src line 123 not covered
+Asm line 5053, src line 123 not covered
+Asm line 5054, src line 123 not covered
+Asm line 5055, src line 123 not covered
+Asm line 5056, src line 0 not covered
+Asm line 5057, src line 0 not covered
+Asm line 5058, src line 125 not covered
+Asm line 5059, src line 125 not covered
+144 / 441 (32.6530612244898%) asm lines covered
+
+## Coverage for swapfunc
+
 Warnings present, coverage may be invalid!
-Asm line 4205, src line 68 not covered
-Asm line 4206, src line 68 not covered
-Asm line 4207, src line 68 not covered
-Asm line 4208, src line 68 not covered
-Asm line 4209, src line 68 not covered
-Asm line 4212, src line 70 not covered
-Asm line 4213, src line 70 not covered
-Asm line 4216, src line 72 not covered
-Asm line 4217, src line 72 not covered
-Asm line 4218, src line 72 not covered
-Asm line 4219, src line 72 not covered
-Asm line 4220, src line 72 not covered
-Asm line 4221, src line 72 not covered
-Asm line 4222, src line 72 not covered
-Asm line 4223, src line 72 not covered
-Asm line 4224, src line 72 not covered
-Asm line 4225, src line 72 not covered
-Asm line 4226, src line 72 not covered
-Asm line 4229, src line 0 not covered
-Asm line 4230, src line 76 not covered
-5 / 25 (20%) asm lines covered
-+ for i in ./symbolic-trace/*
-+ '[' -d ./symbolic-trace/dual_feasible ']'
-+ ./check-coverage.js ./symbolic-trace/dual_feasible
-./symbolic-trace/dual_feasible
-Coverage for dual_feasible
-Warnings present, coverage may be invalid!
-Asm line 751, src line 308 not covered
-Asm line 752, src line 308 not covered
-Asm line 753, src line 308 not covered
-Asm line 754, src line 308 not covered
-Asm line 755, src line 308 not covered
-Asm line 756, src line 309 not covered
-Asm line 757, src line 309 not covered
-Asm line 758, src line 309 not covered
-Asm line 759, src line 309 not covered
-Asm line 760, src line 309 not covered
-Asm line 761, src line 0 not covered
-Asm line 762, src line 310 not covered
-Asm line 763, src line 310 not covered
-Asm line 764, src line 310 not covered
-Asm line 765, src line 310 not covered
-Asm line 772, src line 326 not covered
-Asm line 773, src line 326 not covered
-Asm line 774, src line 326 not covered
-Asm line 775, src line 326 not covered
-Asm line 778, src line 336 not covered
-Asm line 779, src line 336 not covered
-Asm line 780, src line 336 not covered
-Asm line 783, src line 306 not covered
-Asm line 784, src line 0 not covered
-Asm line 785, src line 0 not covered
-Asm line 786, src line 306 not covered
-Asm line 787, src line 306 not covered
-Asm line 790, src line 353 not covered
-Asm line 791, src line 354 not covered
-Asm line 792, src line 354 not covered
-Asm line 793, src line 355 not covered
-Asm line 794, src line 355 not covered
-Asm line 795, src line 356 not covered
-21 / 54 (38.88888888888889%) asm lines covered
-+ for i in ./symbolic-trace/*
-+ '[' -d ./symbolic-trace/flow_cost ']'
-+ ./check-coverage.js ./symbolic-trace/flow_cost
-./symbolic-trace/flow_cost
-Coverage for flow_cost
-Warnings present, coverage may be invalid!
-Asm line 332, src line 61 not covered
-Asm line 333, src line 0 not covered
-Asm line 334, src line 81 not covered
-Asm line 335, src line 81 not covered
-Asm line 336, src line 81 not covered
-Asm line 337, src line 81 not covered
-Asm line 338, src line 61 not covered
-Asm line 339, src line 81 not covered
-Asm line 340, src line 79 not covered
-Asm line 341, src line 0 not covered
-Asm line 342, src line 79 not covered
-Asm line 343, src line 79 not covered
-Asm line 365, src line 61 not covered
-Asm line 366, src line 0 not covered
-Asm line 367, src line 93 not covered
-Asm line 368, src line 93 not covered
-Asm line 369, src line 93 not covered
-Asm line 370, src line 93 not covered
-Asm line 371, src line 93 not covered
-Asm line 372, src line 93 not covered
-Asm line 373, src line 92 not covered
-Asm line 374, src line 0 not covered
-Asm line 375, src line 92 not covered
-Asm line 376, src line 92 not covered
-Asm line 379, src line 61 not covered
-Asm line 380, src line 61 not covered
-Asm line 381, src line 61 not covered
-Asm line 382, src line 0 not covered
-Asm line 383, src line 0 not covered
-Asm line 384, src line 0 not covered
-Asm line 385, src line 102 not covered
-Asm line 386, src line 102 not covered
-Asm line 387, src line 102 not covered
-Asm line 388, src line 102 not covered
-Asm line 391, src line 104 not covered
-Asm line 392, src line 104 not covered
-Asm line 393, src line 104 not covered
-Asm line 394, src line 104 not covered
-Asm line 395, src line 104 not covered
-Asm line 396, src line 104 not covered
-Asm line 399, src line 104 not covered
-Asm line 400, src line 104 not covered
-Asm line 401, src line 104 not covered
-Asm line 402, src line 104 not covered
-Asm line 403, src line 104 not covered
-Asm line 404, src line 104 not covered
-Asm line 407, src line 106 not covered
-Asm line 408, src line 106 not covered
-Asm line 409, src line 106 not covered
-Asm line 410, src line 106 not covered
-Asm line 413, src line 108 not covered
-Asm line 414, src line 108 not covered
-Asm line 415, src line 108 not covered
-Asm line 416, src line 0 not covered
-Asm line 417, src line 109 not covered
-Asm line 418, src line 0 not covered
-Asm line 419, src line 110 not covered
-Asm line 422, src line 112 not covered
-Asm line 423, src line 0 not covered
-Asm line 424, src line 61 not covered
-Asm line 427, src line 0 not covered
-Asm line 428, src line 0 not covered
-Asm line 429, src line 0 not covered
-Asm line 430, src line 0 not covered
-Asm line 431, src line 100 not covered
-Asm line 432, src line 0 not covered
-Asm line 433, src line 100 not covered
-Asm line 434, src line 100 not covered
-37 / 105 (35.23809523809524%) asm lines covered
-+ for i in ./symbolic-trace/*
-+ '[' -d ./symbolic-trace/flow_org_cost ']'
-+ ./check-coverage.js ./symbolic-trace/flow_org_cost
-./symbolic-trace/flow_org_cost
-Coverage for flow_org_cost
-Warnings present, coverage may be invalid!
-Asm line 525, src line 190 not covered
-Asm line 526, src line 190 not covered
-Asm line 527, src line 171 not covered
-Asm line 528, src line 190 not covered
-Asm line 529, src line 188 not covered
-Asm line 530, src line 0 not covered
-Asm line 531, src line 188 not covered
-Asm line 532, src line 188 not covered
-Asm line 554, src line 171 not covered
-Asm line 555, src line 0 not covered
-Asm line 556, src line 201 not covered
-Asm line 557, src line 201 not covered
-Asm line 558, src line 201 not covered
-Asm line 559, src line 201 not covered
-Asm line 560, src line 201 not covered
-Asm line 561, src line 201 not covered
-Asm line 562, src line 200 not covered
-Asm line 563, src line 0 not covered
-Asm line 564, src line 200 not covered
-Asm line 565, src line 200 not covered
-Asm line 568, src line 171 not covered
-Asm line 569, src line 171 not covered
-Asm line 570, src line 171 not covered
-Asm line 571, src line 0 not covered
-Asm line 572, src line 0 not covered
-Asm line 573, src line 0 not covered
-Asm line 574, src line 206 not covered
-Asm line 575, src line 206 not covered
-Asm line 576, src line 206 not covered
-Asm line 577, src line 206 not covered
-Asm line 580, src line 208 not covered
-Asm line 581, src line 208 not covered
-Asm line 582, src line 208 not covered
-Asm line 583, src line 208 not covered
-Asm line 584, src line 208 not covered
-Asm line 585, src line 208 not covered
-Asm line 588, src line 208 not covered
-Asm line 589, src line 208 not covered
-Asm line 590, src line 208 not covered
-Asm line 591, src line 208 not covered
-Asm line 592, src line 208 not covered
-Asm line 593, src line 208 not covered
-Asm line 596, src line 210 not covered
-Asm line 597, src line 210 not covered
-Asm line 598, src line 210 not covered
-Asm line 599, src line 210 not covered
-Asm line 602, src line 212 not covered
-Asm line 603, src line 212 not covered
-Asm line 604, src line 212 not covered
-Asm line 605, src line 0 not covered
-Asm line 606, src line 213 not covered
-Asm line 607, src line 0 not covered
-Asm line 608, src line 214 not covered
-Asm line 611, src line 216 not covered
-Asm line 612, src line 0 not covered
-Asm line 613, src line 171 not covered
-Asm line 616, src line 0 not covered
-Asm line 617, src line 0 not covered
-Asm line 618, src line 0 not covered
-Asm line 619, src line 0 not covered
-Asm line 620, src line 204 not covered
-Asm line 621, src line 0 not covered
-Asm line 622, src line 204 not covered
-Asm line 623, src line 204 not covered
-46 / 110 (41.81818181818181%) asm lines covered
-+ for i in ./symbolic-trace/*
-+ '[' -d ./symbolic-trace/getArcPosition ']'
-+ ./check-coverage.js ./symbolic-trace/getArcPosition
-./symbolic-trace/getArcPosition
-Coverage for getArcPosition
-Warnings present, coverage may be invalid!
-Asm line cfl=runtime/Intrinsic/klee_div_zero_check.c, src line undefined not covered
-Asm line cfn=klee_div_zero_check, src line undefined not covered
-Asm line calls=29, src line 5288 not covered
-Asm line 462, src line 145 not covered
-Asm line cfl=runtime/Intrinsic/klee_div_zero_check.c, src line undefined not covered
-Asm line cfn=klee_div_zero_check, src line undefined not covered
-Asm line calls=6, src line 5288 not covered
-Asm line 468, src line 146 not covered
-Asm line 475, src line 147 not covered
-Asm line 476, src line 147 not covered
-Asm line 477, src line 147 not covered
-Asm line 478, src line 147 not covered
-Asm line 479, src line 147 not covered
-Asm line 480, src line 147 not covered
-Asm line 481, src line 0 not covered
-Asm line 482, src line 148 not covered
-22 / 38 (57.89473684210527%) asm lines covered
-+ for i in ./symbolic-trace/*
-+ '[' -d ./symbolic-trace/getOriginalArcPosition ']'
-+ ./check-coverage.js ./symbolic-trace/getOriginalArcPosition
-./symbolic-trace/getOriginalArcPosition
-Coverage for getOriginalArcPosition
-Warnings present, coverage may be invalid!
-3 / 3 (100%) asm lines covered
-+ for i in ./symbolic-trace/*
-+ '[' -d ./symbolic-trace/getfree ']'
-+ ./check-coverage.js ./symbolic-trace/getfree
-./symbolic-trace/getfree
-Coverage for getfree
-Warnings present, coverage may be invalid!
-Asm line 836, src line 376 not covered
-Asm line 837, src line 376 not covered
-Asm line 840, src line 376 not covered
-Asm line 841, src line 376 not covered
-Asm line 842, src line 376 not covered
-Asm line 845, src line 377 not covered
-Asm line 846, src line 377 not covered
-Asm line 847, src line 377 not covered
-Asm line 848, src line 377 not covered
-Asm line 851, src line 377 not covered
-Asm line 852, src line 377 not covered
-Asm line 853, src line 377 not covered
-Asm line 856, src line 383 not covered
-Asm line 857, src line 378 not covered
-Asm line 858, src line 383 not covered
-17 / 32 (53.125%) asm lines covered
-+ for i in ./symbolic-trace/*
-+ '[' -d ./symbolic-trace/global_opt ']'
-+ ./check-coverage.js ./symbolic-trace/global_opt
-./symbolic-trace/global_opt
-Coverage for global_opt
-Warnings present, coverage may be invalid!
-47 / 47 (100%) asm lines covered
-+ for i in ./symbolic-trace/*
-+ '[' -d ./symbolic-trace/info ']'
-+ continue
-+ for i in ./symbolic-trace/*
-+ '[' -d ./symbolic-trace/insert_new_arc ']'
-+ ./check-coverage.js ./symbolic-trace/insert_new_arc
-./symbolic-trace/insert_new_arc
-Coverage for insert_new_arc
-Warnings present, coverage may be invalid!
-Asm line 1725, src line 281 not covered
-Asm line 1726, src line 281 not covered
-Asm line 1727, src line 282 not covered
-Asm line 1728, src line 282 not covered
-Asm line 1729, src line 283 not covered
-Asm line 1730, src line 283 not covered
-Asm line 1731, src line 284 not covered
-Asm line 1732, src line 284 not covered
-Asm line 1733, src line 284 not covered
-Asm line 1734, src line 0 not covered
-Asm line 1735, src line 287 not covered
-Asm line 1736, src line 287 not covered
-Asm line 1739, src line 286 not covered
-Asm line 1740, src line 0 not covered
-Asm line 1741, src line 287 not covered
-Asm line 1744, src line 263 not covered
-Asm line 1745, src line 263 not covered
-Asm line 1746, src line 0 not covered
-Asm line 1747, src line 287 not covered
-Asm line 1748, src line 287 not covered
-Asm line 1749, src line 287 not covered
-Asm line 1750, src line 287 not covered
-Asm line 1751, src line 287 not covered
-Asm line 1752, src line 287 not covered
-Asm line 1755, src line 289 not covered
-Asm line 1756, src line 289 not covered
-Asm line 1757, src line 289 not covered
-Asm line 1758, src line 289 not covered
-Asm line 1759, src line 290 not covered
-Asm line 1760, src line 290 not covered
-Asm line 1761, src line 290 not covered
-Asm line 1762, src line 290 not covered
-Asm line 1763, src line 291 not covered
-Asm line 1764, src line 291 not covered
-Asm line 1765, src line 291 not covered
-Asm line 1766, src line 291 not covered
-Asm line 1767, src line 292 not covered
-Asm line 1768, src line 292 not covered
-Asm line 1769, src line 292 not covered
-Asm line 1770, src line 293 not covered
-Asm line 1771, src line 293 not covered
-Asm line 1772, src line 294 not covered
-Asm line 1773, src line 294 not covered
-Asm line 1774, src line 294 not covered
-Asm line 1775, src line 294 not covered
-Asm line 1776, src line 0 not covered
-Asm line 1777, src line 297 not covered
-Asm line 1778, src line 298 not covered
-Asm line 1779, src line 299 not covered
-Asm line 1780, src line 300 not covered
-Asm line 1781, src line 300 not covered
-Asm line 1782, src line 301 not covered
-Asm line 1783, src line 302 not covered
-Asm line 1784, src line 287 not covered
-Asm line 1785, src line 287 not covered
-Asm line 1786, src line 287 not covered
-Asm line 1789, src line 306 not covered
-12 / 69 (17.391304347826086%) asm lines covered
-+ for i in ./symbolic-trace/*
-+ '[' -d ./symbolic-trace/marc_arcs ']'
-+ ./check-coverage.js ./symbolic-trace/marc_arcs
-./symbolic-trace/marc_arcs
-Coverage for marc_arcs
-Warnings present, coverage may be invalid!
-Asm line 1506, src line 153 not covered
-Asm line 1507, src line 0 not covered
-Asm line 1508, src line 111 not covered
-Asm line 1509, src line 111 not covered
-Asm line 1510, src line 154 not covered
-Asm line 1513, src line 0 not covered
-Asm line 1514, src line 0 not covered
-Asm line 1515, src line 111 not covered
-Asm line 1516, src line 111 not covered
-Asm line 1517, src line 0 not covered
-Asm line 1518, src line 0 not covered
-Asm line 1519, src line 156 not covered
-Asm line 1520, src line 0 not covered
-Asm line 1521, src line 0 not covered
-Asm line 1522, src line 0 not covered
-Asm line 1523, src line 170 not covered
-Asm line 1524, src line 0 not covered
-Asm line 1525, src line 170 not covered
-Asm line 1526, src line 170 not covered
-Asm line 1527, src line 170 not covered
-Asm line 1528, src line 171 not covered
-Asm line 1529, src line 171 not covered
-Asm line 1530, src line 172 not covered
-Asm line 1531, src line 0 not covered
-Asm line 1532, src line 173 not covered
-Asm line 1533, src line 174 not covered
-Asm line 1534, src line 154 not covered
-Asm line 1535, src line 154 not covered
-Asm line 1536, src line 154 not covered
-Asm line 1537, src line 154 not covered
-Asm line 1538, src line 154 not covered
-Asm line 1541, src line 154 not covered
-Asm line 1542, src line 154 not covered
-Asm line 1543, src line 154 not covered
-Asm line 1581, src line 111 not covered
-Asm line 1582, src line 194 not covered
-Asm line 1583, src line 195 not covered
-Asm line 1584, src line 193 not covered
-Asm line 1585, src line 193 not covered
-Asm line 1588, src line 0 not covered
-Asm line 1589, src line 195 not covered
-Asm line 1590, src line 193 not covered
-Asm line 1593, src line 198 not covered
-Asm line 1594, src line 199 not covered
-Asm line 1595, src line 201 not covered
-70 / 115 (60.86956521739131%) asm lines covered
-+ for i in ./symbolic-trace/*
-+ '[' -d ./symbolic-trace/markBaskets ']'
-+ ./check-coverage.js ./symbolic-trace/markBaskets
-./symbolic-trace/markBaskets
-Coverage for markBaskets
-Warnings present, coverage may be invalid!
-Asm line 3667, src line 46 not covered
-Asm line 3668, src line 46 not covered
-Asm line 3669, src line 46 not covered
-Asm line 3670, src line 46 not covered
-Asm line 3671, src line 36 not covered
-Asm line 3672, src line 36 not covered
-Asm line 3673, src line 46 not covered
-Asm line 3674, src line 0 not covered
-Asm line 3675, src line 0 not covered
-Asm line 3676, src line 53 not covered
-Asm line 3679, src line 36 not covered
-Asm line 3680, src line 36 not covered
-Asm line 3681, src line 0 not covered
-Asm line 3682, src line 0 not covered
-Asm line 3683, src line 54 not covered
-Asm line 3684, src line 54 not covered
-Asm line 3685, src line 54 not covered
-Asm line 3686, src line 54 not covered
-Asm line 3687, src line 0 not covered
-Asm line 3688, src line 54 not covered
-Asm line 3689, src line 55 not covered
-Asm line 3690, src line 55 not covered
-Asm line 3691, src line 55 not covered
-Asm line 3692, src line 55 not covered
-Asm line 3695, src line 56 not covered
-Asm line 3696, src line 0 not covered
-Asm line 3697, src line 56 not covered
-Asm line 3698, src line 56 not covered
-Asm line 3701, src line 0 not covered
-Asm line 3702, src line 0 not covered
-Asm line 3703, src line 56 not covered
-Asm line 3704, src line 56 not covered
-Asm line 3705, src line 56 not covered
-Asm line 3708, src line 57 not covered
-Asm line 3709, src line 0 not covered
-Asm line 3710, src line 0 not covered
-Asm line 3711, src line 57 not covered
-Asm line 3712, src line 0 not covered
-Asm line 3713, src line 59 not covered
-Asm line 3716, src line 45 not covered
-Asm line 3717, src line 0 not covered
-Asm line 3718, src line 53 not covered
-Asm line 3719, src line 0 not covered
-Asm line 3720, src line 53 not covered
-Asm line 3721, src line 53 not covered
-Asm line 3724, src line 45 not covered
-Asm line 3725, src line 63 not covered
-Asm line 3726, src line 0 not covered
-Asm line 3727, src line 63 not covered
-Asm line 3728, src line 63 not covered
-Asm line 3731, src line 67 not covered
-Asm line 3732, src line 67 not covered
-Asm line 3733, src line 68 not covered
-Asm line 3734, src line 68 not covered
-Asm line 3735, src line 68 not covered
-Asm line 3736, src line 68 not covered
-Asm line 3737, src line 68 not covered
-Asm line 3738, src line 45 not covered
-Asm line 3739, src line 0 not covered
-Asm line 3740, src line 0 not covered
-Asm line 3741, src line 45 not covered
-Asm line 3742, src line 45 not covered
-Asm line 3745, src line 70 not covered
-17 / 80 (21.25%) asm lines covered
-+ for i in ./symbolic-trace/*
-+ '[' -d ./symbolic-trace/master ']'
-+ ./check-coverage.js ./symbolic-trace/master
-./symbolic-trace/master
-Coverage for master
-Warnings present, coverage may be invalid!
-Asm line 3879, src line 0 not covered
-Asm line 3880, src line 149 not covered
-Asm line 3881, src line 0 not covered
-Asm line 3882, src line 150 not covered
-Asm line 3883, src line 0 not covered
-Asm line 3884, src line 151 not covered
-Asm line 3885, src line 152 not covered
-Asm line 3886, src line 152 not covered
-Asm line 3887, src line 153 not covered
-Asm line 3888, src line 0 not covered
-Asm line 3889, src line 153 not covered
-Asm line 3890, src line 162 not covered
-Asm line 3891, src line 162 not covered
-Asm line 3892, src line 0 not covered
-Asm line 3893, src line 0 not covered
-Asm line 3894, src line 124 not covered
-Asm line 3895, src line 124 not covered
-Asm line 3896, src line 124 not covered
-Asm line 3897, src line 124 not covered
-Asm line 3898, src line 0 not covered
-Asm line 3899, src line 0 not covered
-Asm line 3900, src line 163 not covered
-Asm line 3901, src line 163 not covered
-Asm line 3904, src line 124 not covered
-Asm line 3905, src line 163 not covered
-Asm line 3906, src line 163 not covered
-Asm line 3907, src line 163 not covered
-Asm line 3910, src line 124 not covered
-Asm line 3911, src line 124 not covered
-Asm line 3912, src line 124 not covered
-Asm line 3913, src line 124 not covered
-Asm line 3914, src line 124 not covered
-Asm line 3915, src line 124 not covered
-Asm line 3916, src line 124 not covered
-Asm line 3917, src line 0 not covered
-Asm line 3918, src line 169 not covered
-Asm line 3919, src line 169 not covered
-Asm line 3922, src line 124 not covered
-Asm line 3923, src line 0 not covered
-Asm line 3924, src line 0 not covered
-Asm line 3925, src line 164 not covered
-Asm line 3926, src line 164 not covered
-Asm line 3927, src line 164 not covered
-Asm line 3928, src line 163 not covered
-Asm line 3929, src line 0 not covered
-Asm line 3930, src line 0 not covered
-Asm line 3931, src line 163 not covered
-Asm line 3932, src line 163 not covered
-Asm line 3935, src line 124 not covered
-Asm line 3936, src line 0 not covered
-Asm line 3937, src line 176 not covered
-Asm line 3938, src line 176 not covered
-Asm line 3939, src line 176 not covered
-Asm line 3940, src line 176 not covered
-Asm line 3941, src line 176 not covered
-Asm line 3942, src line 0 not covered
-Asm line 3943, src line 176 not covered
-Asm line 3944, src line 176 not covered
-Asm line 3945, src line 176 not covered
-Asm line 3946, src line 182 not covered
-Asm line 3947, src line 182 not covered
-Asm line 3948, src line 0 not covered
-Asm line 3949, src line 187 not covered
-Asm line 3950, src line 0 not covered
-Asm line 3951, src line 188 not covered
-Asm line 3954, src line 124 not covered
-Asm line 3955, src line 0 not covered
-Asm line 3956, src line 189 not covered
-Asm line 3957, src line 0 not covered
-Asm line 3958, src line 189 not covered
-Asm line 3959, src line 189 not covered
-Asm line 3962, src line 189 not covered
-Asm line 3963, src line 189 not covered
-Asm line 3964, src line 189 not covered
-Asm line 3965, src line 189 not covered
-Asm line 3966, src line 189 not covered
-Asm line 3969, src line 189 not covered
-Asm line 3970, src line 189 not covered
-Asm line 3971, src line 189 not covered
-Asm line 3972, src line 189 not covered
-Asm line 3973, src line 189 not covered
-Asm line 3976, src line 0 not covered
-Asm line 3977, src line 189 not covered
-Asm line 3978, src line 189 not covered
-Asm line 3979, src line 189 not covered
-Asm line 3982, src line 190 not covered
-Asm line 3983, src line 190 not covered
-Asm line 3984, src line 190 not covered
-Asm line 3985, src line 0 not covered
-Asm line 3986, src line 190 not covered
-Asm line 3987, src line 191 not covered
-Asm line 3990, src line 188 not covered
-Asm line 3991, src line 0 not covered
-Asm line 3992, src line 188 not covered
-Asm line 3993, src line 188 not covered
-Asm line 3996, src line 193 not covered
-Asm line 3997, src line 0 not covered
-Asm line 3998, src line 193 not covered
-Asm line 3999, src line 193 not covered
-Asm line 4002, src line 198 not covered
-Asm line 4003, src line 198 not covered
-Asm line 4004, src line 0 not covered
-Asm line 4005, src line 199 not covered
-Asm line 4006, src line 199 not covered
-Asm line 4007, src line 0 not covered
-Asm line 4008, src line 201 not covered
-Asm line 4011, src line 202 not covered
-Asm line 4012, src line 202 not covered
-Asm line 4015, src line 124 not covered
-Asm line 4016, src line 193 not covered
-Asm line 4017, src line 0 not covered
-Asm line 4018, src line 0 not covered
-Asm line 4019, src line 206 not covered
-Asm line 4020, src line 206 not covered
-Asm line 4023, src line 208 not covered
-Asm line 4024, src line 208 not covered
-Asm line 4025, src line 208 not covered
-Asm line 4026, src line 216 not covered
-Asm line 4027, src line 216 not covered
-Asm line 4028, src line 216 not covered
-Asm line 4029, src line 216 not covered
-Asm line 4030, src line 216 not covered
-Asm line 4031, src line 216 not covered
-Asm line 4032, src line 216 not covered
-Asm line 4033, src line 0 not covered
-Asm line 4034, src line 0 not covered
-Asm line 4035, src line 0 not covered
-Asm line 4036, src line 227 not covered
-Asm line 4037, src line 0 not covered
-Asm line 4038, src line 0 not covered
-Asm line 4039, src line 0 not covered
-Asm line 4040, src line 228 not covered
-Asm line 4041, src line 0 not covered
-Asm line 4042, src line 231 not covered
-Asm line 4043, src line 231 not covered
-Asm line 4046, src line 233 not covered
-Asm line 4047, src line 233 not covered
-Asm line 4048, src line 233 not covered
-Asm line 4049, src line 235 not covered
-Asm line 4050, src line 235 not covered
-Asm line 4051, src line 235 not covered
-Asm line 4052, src line 124 not covered
-Asm line 4053, src line 235 not covered
-Asm line 4054, src line 240 not covered
-Asm line 4055, src line 0 not covered
-Asm line 4056, src line 240 not covered
-Asm line 4057, src line 240 not covered
-Asm line 4060, src line 241 not covered
-Asm line 4061, src line 0 not covered
-Asm line 4062, src line 241 not covered
-Asm line 4063, src line 241 not covered
-Asm line 4066, src line 245 not covered
-Asm line 4067, src line 0 not covered
-Asm line 4068, src line 245 not covered
-Asm line 4069, src line 245 not covered
-Asm line 4070, src line 245 not covered
-Asm line 4071, src line 0 not covered
-Asm line 4072, src line 0 not covered
-Asm line 4073, src line 252 not covered
-Asm line 4074, src line 252 not covered
-Asm line 4075, src line 0 not covered
-Asm line 4076, src line 254 not covered
-Asm line 4077, src line 254 not covered
-Asm line 4078, src line 0 not covered
-Asm line 4079, src line 0 not covered
-Asm line 4080, src line 256 not covered
-Asm line 4081, src line 256 not covered
-Asm line 4082, src line 256 not covered
-Asm line 4083, src line 256 not covered
-Asm line 4084, src line 256 not covered
-Asm line 4085, src line 0 not covered
-Asm line 4086, src line 261 not covered
-Asm line 4087, src line 261 not covered
-Asm line 4088, src line 261 not covered
-Asm line 4089, src line 0 not covered
-Asm line 4090, src line 266 not covered
-Asm line 4091, src line 266 not covered
-Asm line 4092, src line 124 not covered
-Asm line 4093, src line 0 not covered
-Asm line 4094, src line 0 not covered
-Asm line 4095, src line 271 not covered
-Asm line 4096, src line 0 not covered
-Asm line 4097, src line 273 not covered
-Asm line 4098, src line 0 not covered
-Asm line 4099, src line 274 not covered
-Asm line 4100, src line 271 not covered
-Asm line 4101, src line 276 not covered
-Asm line 4102, src line 276 not covered
-Asm line 4103, src line 277 not covered
-Asm line 4104, src line 277 not covered
-Asm line 4105, src line 124 not covered
-Asm line 4108, src line 281 not covered
-Asm line 4109, src line 124 not covered
-Asm line 4112, src line 0 not covered
-Asm line 4113, src line 169 not covered
-Asm line 4114, src line 169 not covered
-Asm line 4117, src line 297 not covered
-19 / 216 (8.796296296296296%) asm lines covered
-+ for i in ./symbolic-trace/*
-+ '[' -d ./symbolic-trace/med3 ']'
-+ ./check-coverage.js ./symbolic-trace/med3
-./symbolic-trace/med3
-Coverage for med3
-22 / 22 (100%) asm lines covered
-+ for i in ./symbolic-trace/*
-+ '[' -d ./symbolic-trace/messages.txt ']'
-+ continue
-+ for i in ./symbolic-trace/*
-+ '[' -d ./symbolic-trace/price_out_impl ']'
-+ ./check-coverage.js ./symbolic-trace/price_out_impl
-./symbolic-trace/price_out_impl
-Coverage for price_out_impl
+Asm line 5099, src line 84 not covered
+Asm line 5100, src line 84 not covered
+Asm line 5101, src line 84 not covered
+Asm line 5102, src line 84 not covered
+Asm line 5103, src line 84 not covered
+Asm line 5104, src line 84 not covered
+Asm line 5105, src line 84 not covered
+Asm line 5134, src line 86 not covered
+Asm line 5135, src line 86 not covered
+Asm line 5136, src line 86 not covered
+Asm line 5137, src line 86 not covered
+Asm line 5138, src line 86 not covered
+Asm line 5139, src line 86 not covered
+Asm line 5140, src line 86 not covered
+69 / 83 (83.13253012048193%) asm lines covered
+
+## Coverage for price_out_impl
+
 Warnings present, coverage may be invalid!
 Asm line 2111, src line 505 not covered
 Asm line 2112, src line 505 not covered
@@ -2319,318 +1984,1056 @@ Asm line 2670, src line 780 not covered
 Asm line 2673, src line 0 not covered
 Asm line 2674, src line 781 not covered
 50 / 502 (9.9601593625498%) asm lines covered
-+ for i in ./symbolic-trace/*
-+ '[' -d ./symbolic-trace/primal_bea_mpp ']'
-+ ./check-coverage.js ./symbolic-trace/primal_bea_mpp
-./symbolic-trace/primal_bea_mpp
-Coverage for primal_bea_mpp
+
+## Coverage for med3
+
+22 / 22 (100%) asm lines covered
+
+## Coverage for getfree
+
 Warnings present, coverage may be invalid!
-Asm line 4260, src line 100 not covered
-Asm line 4261, src line 100 not covered
-Asm line 4264, src line 102 not covered
-Asm line 4265, src line 102 not covered
-Asm line 4266, src line 102 not covered
-Asm line 4267, src line 102 not covered
-Asm line 4268, src line 0 not covered
-Asm line 4269, src line 103 not covered
-Asm line 4270, src line 103 not covered
-Asm line 4271, src line 0 not covered
-Asm line 4272, src line 104 not covered
-Asm line 4273, src line 104 not covered
-Asm line 4274, src line 104 not covered
-Asm line 4275, src line 104 not covered
-Asm line 4276, src line 104 not covered
-Asm line 4277, src line 104 not covered
-Asm line 4278, src line 104 not covered
-Asm line 4279, src line 104 not covered
-Asm line 4280, src line 104 not covered
-Asm line 4281, src line 104 not covered
-Asm line 4282, src line 104 not covered
-Asm line 4283, src line 104 not covered
-Asm line 4284, src line 0 not covered
-Asm line 4285, src line 105 not covered
-Asm line 4286, src line 105 not covered
-Asm line 4289, src line 105 not covered
-Asm line 4290, src line 105 not covered
-Asm line 4293, src line 105 not covered
-Asm line 4294, src line 105 not covered
-Asm line 4295, src line 105 not covered
-Asm line 4296, src line 106 not covered
-Asm line 4299, src line 106 not covered
-Asm line 4300, src line 106 not covered
-Asm line 4303, src line 106 not covered
-Asm line 4304, src line 106 not covered
-Asm line 4305, src line 106 not covered
-Asm line 4306, src line 105 not covered
-Asm line 4309, src line 108 not covered
-Asm line 4310, src line 0 not covered
-Asm line 4311, src line 109 not covered
-Asm line 4312, src line 109 not covered
-Asm line 4313, src line 109 not covered
-Asm line 4314, src line 109 not covered
-Asm line 4315, src line 110 not covered
-Asm line 4316, src line 110 not covered
-Asm line 4317, src line 110 not covered
-Asm line 4318, src line 111 not covered
-Asm line 4319, src line 111 not covered
-Asm line 4320, src line 111 not covered
-Asm line 4321, src line 112 not covered
-Asm line 4322, src line 112 not covered
-Asm line 4323, src line 113 not covered
-Asm line 4326, src line 100 not covered
-Asm line 4327, src line 0 not covered
-Asm line 4328, src line 100 not covered
-Asm line 4329, src line 0 not covered
-Asm line 4330, src line 100 not covered
-Asm line 4331, src line 100 not covered
-Asm line 4334, src line 100 not covered
-Asm line 4335, src line 116 not covered
-Asm line 4336, src line 116 not covered
-Asm line 4337, src line 116 not covered
-Asm line 4338, src line 118 not covered
-Asm line 4339, src line 0 not covered
-Asm line 4340, src line 80 not covered
-Asm line 4341, src line 80 not covered
-Asm line 4342, src line 118 not covered
-Asm line 4345, src line 120 not covered
-Asm line 4346, src line 123 not covered
-Asm line 4347, src line 0 not covered
-Asm line 4348, src line 125 not covered
-Asm line 4349, src line 125 not covered
-Asm line 4350, src line 125 not covered
-Asm line 4351, src line 125 not covered
-Asm line 4352, src line 125 not covered
-Asm line 4353, src line 0 not covered
-Asm line 4354, src line 131 not covered
-Asm line 4355, src line 131 not covered
-Asm line 4358, src line 123 not covered
-Asm line 4359, src line 0 not covered
-Asm line 4360, src line 131 not covered
-Asm line 4363, src line 80 not covered
-Asm line 4364, src line 0 not covered
-Asm line 4365, src line 132 not covered
-Asm line 4366, src line 132 not covered
-Asm line 4367, src line 132 not covered
-Asm line 4368, src line 132 not covered
-Asm line 4371, src line 135 not covered
-Asm line 4372, src line 135 not covered
-Asm line 4373, src line 135 not covered
-Asm line 4374, src line 135 not covered
-Asm line 4375, src line 135 not covered
-Asm line 4376, src line 135 not covered
-Asm line 4377, src line 135 not covered
-Asm line 4378, src line 135 not covered
-Asm line 4379, src line 135 not covered
-Asm line 4380, src line 135 not covered
-Asm line 4381, src line 135 not covered
-Asm line 4382, src line 135 not covered
-Asm line 4383, src line 0 not covered
-Asm line 4384, src line 136 not covered
-Asm line 4385, src line 136 not covered
-Asm line 4386, src line 136 not covered
-Asm line 4389, src line 138 not covered
-Asm line 4390, src line 138 not covered
-Asm line 4391, src line 138 not covered
-Asm line 4392, src line 139 not covered
-Asm line 4393, src line 139 not covered
-Asm line 4394, src line 139 not covered
-Asm line 4395, src line 139 not covered
-Asm line 4396, src line 140 not covered
-Asm line 4397, src line 140 not covered
-Asm line 4398, src line 140 not covered
-Asm line 4399, src line 141 not covered
-Asm line 4400, src line 141 not covered
-Asm line 4401, src line 141 not covered
-Asm line 4402, src line 141 not covered
-Asm line 4403, src line 141 not covered
-Asm line 4404, src line 141 not covered
-Asm line 4405, src line 142 not covered
-Asm line 4406, src line 142 not covered
-Asm line 4407, src line 142 not covered
-Asm line 4408, src line 142 not covered
-Asm line 4409, src line 142 not covered
-Asm line 4410, src line 143 not covered
-Asm line 4413, src line 131 not covered
-Asm line 4414, src line 0 not covered
-Asm line 4415, src line 131 not covered
-Asm line 4416, src line 131 not covered
-Asm line 4417, src line 131 not covered
-Asm line 4420, src line 131 not covered
-Asm line 4421, src line 147 not covered
-Asm line 4422, src line 147 not covered
-Asm line 4425, src line 148 not covered
-Asm line 4426, src line 149 not covered
-Asm line 4429, src line 152 not covered
-Asm line 4430, src line 152 not covered
-Asm line 4431, src line 152 not covered
-Asm line 4434, src line 0 not covered
-Asm line 4435, src line 0 not covered
-Asm line 4436, src line 158 not covered
-Asm line 4439, src line 80 not covered
-Asm line 4440, src line 80 not covered
-Asm line 4441, src line 0 not covered
-Asm line 4442, src line 0 not covered
-Asm line 4443, src line 159 not covered
-Asm line 4444, src line 159 not covered
-Asm line 4445, src line 159 not covered
-Asm line 4446, src line 0 not covered
-Asm line 4447, src line 158 not covered
-Asm line 4448, src line 0 not covered
-Asm line 4449, src line 158 not covered
-Asm line 4450, src line 158 not covered
-Asm line 4453, src line 152 not covered
-Asm line 4454, src line 161 not covered
-Asm line 4455, src line 161 not covered
-Asm line 4458, src line 170 not covered
-Asm line 4459, src line 172 not covered
-Asm line 4460, src line 172 not covered
-Asm line 4461, src line 172 not covered
-Asm line 4462, src line 172 not covered
-Asm line 4463, src line 172 not covered
-Asm line 4464, src line 172 not covered
-Asm line 4465, src line 174 not covered
-Asm line 4466, src line 174 not covered
-Asm line 4467, src line 174 not covered
-Asm line 4470, src line 179 not covered
-Asm line 4471, src line 179 not covered
-Asm line 4472, src line 179 not covered
-Asm line 4473, src line 186 not covered
-Asm line 4474, src line 186 not covered
-Asm line 4477, src line 0 not covered
-Asm line 4478, src line 188 not covered
-22 / 195 (11.282051282051283%) asm lines covered
-+ for i in ./symbolic-trace/*
-+ '[' -d ./symbolic-trace/primal_feasible ']'
-+ ./check-coverage.js ./symbolic-trace/primal_feasible
-./symbolic-trace/primal_feasible
-Coverage for primal_feasible
+Asm line 829, src line 375 not covered
+Asm line 830, src line 375 not covered
+Asm line 831, src line 375 not covered
+Asm line 836, src line 376 not covered
+Asm line 837, src line 376 not covered
+Asm line 840, src line 376 not covered
+Asm line 841, src line 376 not covered
+Asm line 842, src line 376 not covered
+Asm line 845, src line 377 not covered
+Asm line 846, src line 377 not covered
+Asm line 847, src line 377 not covered
+Asm line 848, src line 377 not covered
+Asm line 851, src line 377 not covered
+Asm line 852, src line 377 not covered
+Asm line 853, src line 377 not covered
+Asm line 856, src line 383 not covered
+Asm line 857, src line 378 not covered
+Asm line 858, src line 383 not covered
+14 / 32 (43.75%) asm lines covered
+
+## Coverage for global_opt
+
 Warnings present, coverage may be invalid!
-Asm line 672, src line 0 not covered
-Asm line 673, src line 255 not covered
-Asm line 674, src line 255 not covered
-Asm line 675, src line 0 not covered
-Asm line 676, src line 256 not covered
-Asm line 677, src line 235 not covered
-Asm line 678, src line 256 not covered
-Asm line 679, src line 256 not covered
-Asm line 682, src line 258 not covered
-Asm line 683, src line 258 not covered
-Asm line 684, src line 258 not covered
-Asm line 685, src line 258 not covered
-Asm line 688, src line 260 not covered
-Asm line 689, src line 262 not covered
-Asm line 690, src line 262 not covered
-Asm line 691, src line 261 not covered
-Asm line 692, src line 263 not covered
-Asm line 695, src line 267 not covered
-Asm line 696, src line 267 not covered
-Asm line 697, src line 267 not covered
-Asm line 698, src line 235 not covered
-Asm line 699, src line 235 not covered
-Asm line 700, src line 268 not covered
-Asm line 701, src line 268 not covered
-Asm line 704, src line 270 not covered
-Asm line 705, src line 271 not covered
-Asm line 706, src line 273 not covered
-Asm line 709, src line 0 not covered
-Asm line 710, src line 252 not covered
-Asm line 711, src line 0 not covered
-Asm line 712, src line 252 not covered
-Asm line 713, src line 235 not covered
-Asm line 714, src line 252 not covered
-Asm line 717, src line 235 not covered
-Asm line 718, src line 0 not covered
-Asm line 719, src line 0 not covered
-Asm line 720, src line 0 not covered
-Asm line 721, src line 281 not covered
-24 / 62 (38.70967741935484%) asm lines covered
-+ for i in ./symbolic-trace/*
-+ '[' -d ./symbolic-trace/primal_iminus ']'
-+ ./check-coverage.js ./symbolic-trace/primal_iminus
-./symbolic-trace/primal_iminus
-Coverage for primal_iminus
+47 / 47 (100%) asm lines covered
+
+## Coverage for update_tree
+
 Warnings present, coverage may be invalid!
-Asm line 3495, src line 62 not covered
-Asm line 3496, src line 62 not covered
-Asm line 3497, src line 62 not covered
-Asm line 3498, src line 62 not covered
-Asm line 3501, src line 63 not covered
-Asm line 3502, src line 63 not covered
-Asm line 3503, src line 63 not covered
-Asm line 3504, src line 63 not covered
-Asm line 3505, src line 63 not covered
-Asm line 3508, src line 64 not covered
-Asm line 3509, src line 64 not covered
-Asm line 3510, src line 64 not covered
-Asm line 3511, src line 64 not covered
-Asm line 3512, src line 64 not covered
-Asm line 3513, src line 64 not covered
-Asm line 3516, src line 65 not covered
-Asm line 3517, src line 65 not covered
-Asm line 3518, src line 65 not covered
-Asm line 3519, src line 65 not covered
-Asm line 3520, src line 65 not covered
-Asm line 3521, src line 65 not covered
-Asm line 3524, src line 40 not covered
-Asm line 3525, src line 62 not covered
-Asm line 3526, src line 62 not covered
-Asm line 3527, src line 66 not covered
-Asm line 3530, src line 0 not covered
-Asm line 3531, src line 0 not covered
-Asm line 3532, src line 66 not covered
-Asm line 3533, src line 66 not covered
-Asm line 3534, src line 0 not covered
-Asm line 3535, src line 67 not covered
-Asm line 3540, src line 70 not covered
-Asm line 3541, src line 70 not covered
-Asm line 3544, src line 71 not covered
-Asm line 3545, src line 71 not covered
-Asm line 3546, src line 71 not covered
-Asm line 3547, src line 71 not covered
-Asm line 3548, src line 71 not covered
-Asm line 3551, src line 72 not covered
-Asm line 3552, src line 72 not covered
-Asm line 3553, src line 72 not covered
-Asm line 3554, src line 72 not covered
-Asm line 3555, src line 72 not covered
-Asm line 3556, src line 72 not covered
-Asm line 3559, src line 73 not covered
-Asm line 3560, src line 73 not covered
-Asm line 3561, src line 73 not covered
-Asm line 3562, src line 73 not covered
-Asm line 3563, src line 73 not covered
-Asm line 3564, src line 73 not covered
-Asm line 3567, src line 40 not covered
-Asm line 3568, src line 70 not covered
-Asm line 3569, src line 70 not covered
-Asm line 3570, src line 74 not covered
-Asm line 3573, src line 0 not covered
-Asm line 3574, src line 0 not covered
-Asm line 3575, src line 74 not covered
-Asm line 3576, src line 74 not covered
-Asm line 3577, src line 0 not covered
-Asm line 3578, src line 40 not covered
-Asm line 3581, src line 40 not covered
-Asm line 3582, src line 40 not covered
-Asm line 3583, src line 60 not covered
-Asm line 3584, src line 0 not covered
-Asm line 3585, src line 0 not covered
-Asm line 3586, src line 0 not covered
-Asm line 3587, src line 58 not covered
-Asm line 3588, src line 58 not covered
-26 / 94 (27.659574468085108%) asm lines covered
-+ for i in ./symbolic-trace/*
-+ '[' -d ./symbolic-trace/primal_net_simplex ']'
-+ ./check-coverage.js ./symbolic-trace/primal_net_simplex
-./symbolic-trace/primal_net_simplex
-Coverage for primal_net_simplex
+Asm line 3241, src line 30 not covered
+Asm line 3242, src line 0 not covered
+Asm line 3243, src line 92 not covered
+Asm line 3244, src line 92 not covered
+Asm line 3245, src line 0 not covered
+Asm line 3246, src line 93 not covered
+Asm line 3247, src line 93 not covered
+Asm line 3250, src line 95 not covered
+Asm line 3251, src line 95 not covered
+Asm line 3252, src line 0 not covered
+Asm line 3253, src line 89 not covered
+Asm line 3254, src line 90 not covered
+Asm line 3255, src line 90 not covered
+Asm line 3263, src line 0 not covered
+Asm line 3264, src line 0 not covered
+Asm line 3265, src line 0 not covered
+Asm line 3266, src line 0 not covered
+Asm line 3267, src line 0 not covered
+Asm line 3268, src line 0 not covered
+Asm line 3269, src line 0 not covered
+Asm line 3270, src line 0 not covered
+Asm line 3271, src line 107 not covered
+Asm line 3272, src line 107 not covered
+Asm line 3275, src line 30 not covered
+Asm line 3276, src line 107 not covered
+Asm line 3279, src line 30 not covered
+Asm line 3280, src line 30 not covered
+Asm line 3281, src line 30 not covered
+Asm line 3282, src line 30 not covered
+Asm line 3283, src line 30 not covered
+Asm line 3284, src line 30 not covered
+Asm line 3285, src line 0 not covered
+Asm line 3286, src line 0 not covered
+Asm line 3287, src line 0 not covered
+Asm line 3288, src line 0 not covered
+Asm line 3289, src line 0 not covered
+Asm line 3290, src line 0 not covered
+Asm line 3291, src line 0 not covered
+Asm line 3292, src line 0 not covered
+Asm line 3293, src line 109 not covered
+Asm line 3294, src line 109 not covered
+Asm line 3295, src line 109 not covered
+Asm line 3296, src line 109 not covered
+Asm line 3299, src line 110 not covered
+Asm line 3300, src line 110 not covered
+Asm line 3301, src line 110 not covered
+Asm line 3302, src line 110 not covered
+Asm line 3303, src line 110 not covered
+Asm line 3306, src line 111 not covered
+Asm line 3307, src line 111 not covered
+Asm line 3308, src line 111 not covered
+Asm line 3309, src line 111 not covered
+Asm line 3310, src line 111 not covered
+Asm line 3311, src line 111 not covered
+Asm line 3312, src line 111 not covered
+Asm line 3313, src line 116 not covered
+Asm line 3314, src line 117 not covered
+Asm line 3315, src line 117 not covered
+Asm line 3316, src line 117 not covered
+Asm line 3317, src line 118 not covered
+Asm line 3318, src line 118 not covered
+Asm line 3321, src line 119 not covered
+Asm line 3322, src line 119 not covered
+Asm line 3323, src line 119 not covered
+Asm line 3326, src line 120 not covered
+Asm line 3327, src line 121 not covered
+Asm line 3328, src line 123 not covered
+Asm line 3329, src line 123 not covered
+Asm line 3330, src line 123 not covered
+Asm line 3331, src line 123 not covered
+Asm line 3332, src line 0 not covered
+Asm line 3333, src line 124 not covered
+Asm line 3334, src line 124 not covered
+Asm line 3335, src line 124 not covered
+Asm line 3336, src line 124 not covered
+Asm line 3337, src line 124 not covered
+Asm line 3338, src line 0 not covered
+Asm line 3339, src line 128 not covered
+Asm line 3340, src line 128 not covered
+Asm line 3341, src line 0 not covered
+Asm line 3342, src line 129 not covered
+Asm line 3343, src line 129 not covered
+Asm line 3344, src line 0 not covered
+Asm line 3345, src line 131 not covered
+Asm line 3346, src line 131 not covered
+Asm line 3347, src line 132 not covered
+Asm line 3348, src line 132 not covered
+Asm line 3349, src line 133 not covered
+Asm line 3350, src line 134 not covered
+Asm line 3351, src line 0 not covered
+Asm line 3352, src line 0 not covered
+Asm line 3353, src line 0 not covered
+Asm line 3354, src line 0 not covered
+Asm line 3355, src line 140 not covered
+Asm line 3356, src line 0 not covered
+Asm line 3357, src line 0 not covered
+Asm line 3358, src line 0 not covered
+Asm line 3359, src line 0 not covered
+Asm line 3360, src line 107 not covered
+Asm line 3361, src line 107 not covered
+Asm line 3364, src line 145 not covered
+Asm line 3365, src line 0 not covered
+Asm line 3366, src line 0 not covered
+Asm line 3367, src line 145 not covered
+Asm line 3368, src line 145 not covered
+Asm line 3371, src line 166 not covered
+Asm line 3374, src line 147 not covered
+Asm line 3377, src line 30 not covered
+Asm line 3378, src line 147 not covered
+Asm line 3381, src line 0 not covered
+Asm line 3382, src line 155 not covered
+Asm line 3383, src line 155 not covered
+Asm line 3386, src line 30 not covered
+Asm line 3387, src line 155 not covered
+Asm line 3390, src line 30 not covered
+Asm line 3391, src line 0 not covered
+Asm line 3392, src line 149 not covered
+Asm line 3393, src line 149 not covered
+Asm line 3394, src line 149 not covered
+Asm line 3395, src line 149 not covered
+Asm line 3396, src line 150 not covered
+Asm line 3397, src line 150 not covered
+Asm line 3398, src line 150 not covered
+Asm line 3399, src line 150 not covered
+Asm line 3400, src line 150 not covered
+Asm line 3401, src line 150 not covered
+Asm line 3402, src line 150 not covered
+Asm line 3403, src line 150 not covered
+Asm line 3404, src line 150 not covered
+Asm line 3405, src line 147 not covered
+Asm line 3406, src line 147 not covered
+Asm line 3407, src line 0 not covered
+Asm line 3408, src line 147 not covered
+Asm line 3409, src line 147 not covered
+Asm line 3412, src line 30 not covered
+Asm line 3413, src line 0 not covered
+Asm line 3414, src line 157 not covered
+Asm line 3415, src line 157 not covered
+Asm line 3416, src line 157 not covered
+Asm line 3417, src line 157 not covered
+Asm line 3418, src line 158 not covered
+Asm line 3419, src line 158 not covered
+Asm line 3420, src line 158 not covered
+Asm line 3421, src line 158 not covered
+Asm line 3422, src line 158 not covered
+Asm line 3423, src line 158 not covered
+Asm line 3424, src line 158 not covered
+Asm line 3425, src line 158 not covered
+Asm line 3426, src line 158 not covered
+Asm line 3427, src line 155 not covered
+Asm line 3428, src line 155 not covered
+Asm line 3429, src line 0 not covered
+Asm line 3430, src line 155 not covered
+Asm line 3431, src line 155 not covered
+Asm line 3434, src line 0 not covered
+Asm line 3435, src line 168 not covered
+Asm line 3436, src line 168 not covered
+Asm line 3439, src line 30 not covered
+Asm line 3440, src line 0 not covered
+Asm line 3441, src line 167 not covered
+Asm line 3442, src line 167 not covered
+Asm line 3443, src line 167 not covered
+Asm line 3444, src line 167 not covered
+Asm line 3445, src line 166 not covered
+Asm line 3446, src line 166 not covered
+Asm line 3447, src line 0 not covered
+Asm line 3448, src line 166 not covered
+Asm line 3449, src line 166 not covered
+Asm line 3452, src line 30 not covered
+Asm line 3453, src line 0 not covered
+Asm line 3454, src line 169 not covered
+Asm line 3455, src line 169 not covered
+Asm line 3456, src line 169 not covered
+Asm line 3457, src line 169 not covered
+Asm line 3458, src line 168 not covered
+Asm line 3459, src line 168 not covered
+Asm line 3460, src line 0 not covered
+Asm line 3461, src line 168 not covered
+Asm line 3462, src line 168 not covered
+Asm line 3465, src line 172 not covered
+56 / 236 (23.728813559322035%) asm lines covered
+
+## Coverage for marc_arcs
+
+Warnings present, coverage may be invalid!
+Asm line 1514, src line 0 not covered
+Asm line 1515, src line 111 not covered
+Asm line 1516, src line 111 not covered
+Asm line 1517, src line 0 not covered
+Asm line 1518, src line 0 not covered
+Asm line 1519, src line 156 not covered
+Asm line 1520, src line 0 not covered
+Asm line 1521, src line 0 not covered
+Asm line 1522, src line 0 not covered
+Asm line 1523, src line 170 not covered
+Asm line 1524, src line 0 not covered
+Asm line 1525, src line 170 not covered
+Asm line 1526, src line 170 not covered
+Asm line 1527, src line 170 not covered
+Asm line 1528, src line 171 not covered
+Asm line 1529, src line 171 not covered
+Asm line 1530, src line 172 not covered
+Asm line 1531, src line 0 not covered
+Asm line 1532, src line 173 not covered
+Asm line 1533, src line 174 not covered
+Asm line 1534, src line 154 not covered
+Asm line 1535, src line 154 not covered
+Asm line 1536, src line 154 not covered
+Asm line 1537, src line 154 not covered
+Asm line 1538, src line 154 not covered
+Asm line 1541, src line 154 not covered
+Asm line 1542, src line 154 not covered
+Asm line 1543, src line 154 not covered
+Asm line 1546, src line 0 not covered
+Asm line 1547, src line 0 not covered
+Asm line 1548, src line 185 not covered
+Asm line 1549, src line 0 not covered
+Asm line 1550, src line 0 not covered
+Asm line 1551, src line 0 not covered
+Asm line 1552, src line 187 not covered
+Asm line 1553, src line 187 not covered
+Asm line 1554, src line 188 not covered
+Asm line 1555, src line 188 not covered
+Asm line 1556, src line 188 not covered
+Asm line 1557, src line 188 not covered
+Asm line 1558, src line 188 not covered
+Asm line 1559, src line 188 not covered
+Asm line 1560, src line 188 not covered
+Asm line 1561, src line 188 not covered
+Asm line 1562, src line 189 not covered
+Asm line 1563, src line 189 not covered
+Asm line 1564, src line 189 not covered
+Asm line 1565, src line 189 not covered
+Asm line 1566, src line 189 not covered
+Asm line 1567, src line 189 not covered
+Asm line 1568, src line 189 not covered
+Asm line 1569, src line 189 not covered
+Asm line 1570, src line 189 not covered
+Asm line 1571, src line 111 not covered
+Asm line 1572, src line 193 not covered
+Asm line 1573, src line 193 not covered
+Asm line 1576, src line 111 not covered
+Asm line 1577, src line 193 not covered
+Asm line 1580, src line 194 not covered
+Asm line 1581, src line 111 not covered
+Asm line 1582, src line 194 not covered
+Asm line 1583, src line 195 not covered
+Asm line 1584, src line 193 not covered
+Asm line 1585, src line 193 not covered
+Asm line 1588, src line 0 not covered
+Asm line 1589, src line 195 not covered
+Asm line 1590, src line 193 not covered
+Asm line 1593, src line 198 not covered
+Asm line 1594, src line 199 not covered
+Asm line 1595, src line 201 not covered
+45 / 115 (39.130434782608695%) asm lines covered
+
+## Coverage for flow_cost
+
+Warnings present, coverage may be invalid!
+Asm line 332, src line 61 not covered
+Asm line 333, src line 0 not covered
+Asm line 334, src line 81 not covered
+Asm line 335, src line 81 not covered
+Asm line 336, src line 81 not covered
+Asm line 337, src line 81 not covered
+Asm line 338, src line 61 not covered
+Asm line 339, src line 81 not covered
+Asm line 340, src line 79 not covered
+Asm line 341, src line 0 not covered
+Asm line 342, src line 79 not covered
+Asm line 343, src line 79 not covered
+Asm line 365, src line 61 not covered
+Asm line 366, src line 0 not covered
+Asm line 367, src line 93 not covered
+Asm line 368, src line 93 not covered
+Asm line 369, src line 93 not covered
+Asm line 370, src line 93 not covered
+Asm line 371, src line 93 not covered
+Asm line 372, src line 93 not covered
+Asm line 373, src line 92 not covered
+Asm line 374, src line 0 not covered
+Asm line 375, src line 92 not covered
+Asm line 376, src line 92 not covered
+Asm line 379, src line 61 not covered
+Asm line 380, src line 61 not covered
+Asm line 381, src line 61 not covered
+Asm line 382, src line 0 not covered
+Asm line 383, src line 0 not covered
+Asm line 384, src line 0 not covered
+Asm line 385, src line 102 not covered
+Asm line 386, src line 102 not covered
+Asm line 387, src line 102 not covered
+Asm line 388, src line 102 not covered
+Asm line 391, src line 104 not covered
+Asm line 392, src line 104 not covered
+Asm line 393, src line 104 not covered
+Asm line 394, src line 104 not covered
+Asm line 395, src line 104 not covered
+Asm line 396, src line 104 not covered
+Asm line 399, src line 104 not covered
+Asm line 400, src line 104 not covered
+Asm line 401, src line 104 not covered
+Asm line 402, src line 104 not covered
+Asm line 403, src line 104 not covered
+Asm line 404, src line 104 not covered
+Asm line 407, src line 106 not covered
+Asm line 408, src line 106 not covered
+Asm line 409, src line 106 not covered
+Asm line 410, src line 106 not covered
+Asm line 413, src line 108 not covered
+Asm line 414, src line 108 not covered
+Asm line 415, src line 108 not covered
+Asm line 416, src line 0 not covered
+Asm line 417, src line 109 not covered
+Asm line 418, src line 0 not covered
+Asm line 419, src line 110 not covered
+Asm line 422, src line 112 not covered
+Asm line 423, src line 0 not covered
+Asm line 424, src line 61 not covered
+Asm line 427, src line 0 not covered
+Asm line 428, src line 0 not covered
+Asm line 429, src line 0 not covered
+Asm line 430, src line 0 not covered
+Asm line 431, src line 100 not covered
+Asm line 432, src line 0 not covered
+Asm line 433, src line 100 not covered
+Asm line 434, src line 100 not covered
+37 / 105 (35.23809523809524%) asm lines covered
+
+## Coverage for dual_feasible
+
+Warnings present, coverage may be invalid!
+Asm line 751, src line 308 not covered
+Asm line 752, src line 308 not covered
+Asm line 753, src line 308 not covered
+Asm line 754, src line 308 not covered
+Asm line 755, src line 308 not covered
+Asm line 756, src line 309 not covered
+Asm line 757, src line 309 not covered
+Asm line 758, src line 309 not covered
+Asm line 759, src line 309 not covered
+Asm line 760, src line 309 not covered
+Asm line 761, src line 0 not covered
+Asm line 762, src line 310 not covered
+Asm line 763, src line 310 not covered
+Asm line 764, src line 310 not covered
+Asm line 765, src line 310 not covered
+Asm line 772, src line 326 not covered
+Asm line 773, src line 326 not covered
+Asm line 774, src line 326 not covered
+Asm line 775, src line 326 not covered
+Asm line 778, src line 336 not covered
+Asm line 779, src line 336 not covered
+Asm line 780, src line 336 not covered
+Asm line 783, src line 306 not covered
+Asm line 784, src line 0 not covered
+Asm line 785, src line 0 not covered
+Asm line 786, src line 306 not covered
+Asm line 787, src line 306 not covered
+Asm line 790, src line 353 not covered
+Asm line 791, src line 354 not covered
+Asm line 792, src line 354 not covered
+Asm line 793, src line 355 not covered
+Asm line 794, src line 355 not covered
+Asm line 795, src line 356 not covered
+21 / 54 (38.88888888888889%) asm lines covered
+
+## Coverage for getArcPosition
+
+Warnings present, coverage may be invalid!
+Asm line cfl=runtime/Intrinsic/klee_div_zero_check.c, src line undefined not covered
+Asm line cfn=klee_div_zero_check, src line undefined not covered
+Asm line calls=31, src line 5288 not covered
+Asm line 462, src line 145 not covered
+Asm line cfl=runtime/Intrinsic/klee_div_zero_check.c, src line undefined not covered
+Asm line cfn=klee_div_zero_check, src line undefined not covered
+Asm line calls=9, src line 5288 not covered
+Asm line 468, src line 146 not covered
+Asm line 475, src line 147 not covered
+Asm line 476, src line 147 not covered
+Asm line 477, src line 147 not covered
+Asm line 478, src line 147 not covered
+Asm line 479, src line 147 not covered
+Asm line 480, src line 147 not covered
+Asm line 481, src line 0 not covered
+Asm line 482, src line 148 not covered
+22 / 38 (57.89473684210527%) asm lines covered
+
+## Coverage for switch_arcs
+
+Warnings present, coverage may be invalid!
+Asm line 1988, src line 425 not covered
+Asm line 1989, src line 0 not covered
+Asm line 1990, src line 428 not covered
+Asm line 1991, src line 428 not covered
+Asm line 1992, src line 428 not covered
+Asm line 1993, src line 428 not covered
+Asm line 1996, src line 428 not covered
+Asm line 1997, src line 428 not covered
+Asm line 1998, src line 428 not covered
+Asm line 1999, src line 428 not covered
+Asm line 2000, src line 428 not covered
+Asm line 2003, src line 428 not covered
+Asm line 2004, src line 428 not covered
+Asm line 2007, src line 429 not covered
+Asm line 2008, src line 429 not covered
+Asm line 2009, src line 429 not covered
+Asm line 2010, src line 429 not covered
+Asm line 2011, src line 428 not covered
+Asm line 2014, src line 431 not covered
+Asm line 2015, src line 431 not covered
+Asm line 2016, src line 431 not covered
+Asm line 2017, src line 0 not covered
+Asm line 2018, src line 0 not covered
+Asm line 2019, src line 431 not covered
+Asm line 2020, src line 431 not covered
+Asm line 2021, src line 0 not covered
+Asm line 2022, src line 431 not covered
+Asm line 2023, src line 431 not covered
+Asm line 2024, src line 0 not covered
+Asm line 2025, src line 431 not covered
+Asm line 2026, src line 431 not covered
+Asm line 2027, src line 0 not covered
+Asm line 2028, src line 0 not covered
+Asm line 2029, src line 0 not covered
+Asm line 2030, src line 432 not covered
+Asm line 2031, src line 0 not covered
+Asm line 2032, src line 433 not covered
+Asm line 2033, src line 434 not covered
+Asm line 2034, src line 434 not covered
+Asm line 2035, src line 435 not covered
+Asm line 2038, src line 0 not covered
+Asm line 2039, src line 0 not covered
+Asm line 2040, src line 423 not covered
+Asm line 2041, src line 0 not covered
+Asm line 2042, src line 423 not covered
+Asm line 2043, src line 423 not covered
+Asm line cfl=runtime/Intrinsic/klee_div_zero_check.c, src line undefined not covered
+Asm line cfn=klee_div_zero_check, src line undefined not covered
+Asm line calls=1, src line 5288 not covered
+Asm line 2050, src line 417 not covered
+56 / 106 (52.83018867924528%) asm lines covered
+
+## Coverage for start
+
+1 / 1 (100%) asm lines covered
+
+## Coverage for write_circulations
+
+Warnings present, coverage may be invalid!
+Asm line 3050, src line 50 not covered
+Asm line 3051, src line 52 not covered
+Asm line 3052, src line 52 not covered
+Asm line 3053, src line 52 not covered
+Asm line 3054, src line 52 not covered
+Asm line 3055, src line 52 not covered
+Asm line 3056, src line 0 not covered
+Asm line 3057, src line 31 not covered
+Asm line 3058, src line 52 not covered
+Asm line 3059, src line 0 not covered
+Asm line 3060, src line 52 not covered
+Asm line 3061, src line 52 not covered
+Asm line 3064, src line 31 not covered
+Asm line 3065, src line 54 not covered
+Asm line 3066, src line 54 not covered
+Asm line 3067, src line 54 not covered
+Asm line 3068, src line 54 not covered
+Asm line 3071, src line 56 not covered
+Asm line 3072, src line 0 not covered
+Asm line 3073, src line 0 not covered
+Asm line 3074, src line 59 not covered
+Asm line 3077, src line 31 not covered
+Asm line 3078, src line 0 not covered
+Asm line 3079, src line 61 not covered
+Asm line 3080, src line 61 not covered
+Asm line 3083, src line 62 not covered
+Asm line 3084, src line 62 not covered
+Asm line 3087, src line 64 not covered
+Asm line 3088, src line 64 not covered
+Asm line 3089, src line 64 not covered
+Asm line 3090, src line 64 not covered
+Asm line 3091, src line 64 not covered
+Asm line 3092, src line 64 not covered
+Asm line 3093, src line 65 not covered
+Asm line 3094, src line 65 not covered
+Asm line 3095, src line 65 not covered
+Asm line 3096, src line 0 not covered
+Asm line 3097, src line 60 not covered
+Asm line 3098, src line 0 not covered
+Asm line 3099, src line 66 not covered
+Asm line 3100, src line 66 not covered
+Asm line 3103, src line 31 not covered
+Asm line 3104, src line 67 not covered
+Asm line 3105, src line 67 not covered
+Asm line 3106, src line 67 not covered
+Asm line 3107, src line 67 not covered
+Asm line 3110, src line 66 not covered
+Asm line 3111, src line 0 not covered
+Asm line 3112, src line 60 not covered
+Asm line 3113, src line 0 not covered
+Asm line 3114, src line 66 not covered
+Asm line 3115, src line 66 not covered
+Asm line 3118, src line 75 not covered
+Asm line 3119, src line 75 not covered
+Asm line 3120, src line 75 not covered
+Asm line 3121, src line 75 not covered
+Asm line 3122, src line 75 not covered
+Asm line 3123, src line 31 not covered
+Asm line 3124, src line 0 not covered
+Asm line 3125, src line 59 not covered
+Asm line 3126, src line 59 not covered
+Asm line 3129, src line 52 not covered
+Asm line 3130, src line 0 not covered
+Asm line 3131, src line 52 not covered
+Asm line 3132, src line 0 not covered
+Asm line 3133, src line 52 not covered
+Asm line 3134, src line 52 not covered
+Asm line 3137, src line 31 not covered
+Asm line 3138, src line 0 not covered
+Asm line 3139, src line 87 not covered
+16 / 86 (18.6046511627907%) asm lines covered
+
+## Coverage for suspend_impl
+
+Warnings present, coverage may be invalid!
+Asm line 2733, src line 787 not covered
+Asm line 2734, src line 804 not covered
+Asm line 2737, src line 805 not covered
+Asm line 2738, src line 787 not covered
+Asm line 2739, src line 805 not covered
+Asm line 2740, src line 806 not covered
+Asm line 2741, src line 804 not covered
+Asm line 2742, src line 804 not covered
+Asm line 2745, src line 0 not covered
+Asm line 2746, src line 806 not covered
+Asm line 2747, src line 804 not covered
+Asm line 2756, src line 815 not covered
+Asm line 2757, src line 0 not covered
+Asm line 2758, src line 0 not covered
+Asm line 2759, src line 0 not covered
+Asm line 2760, src line 787 not covered
+Asm line 2761, src line 0 not covered
+Asm line 2762, src line 0 not covered
+Asm line 2763, src line 0 not covered
+Asm line 2764, src line 816 not covered
+Asm line 2765, src line 816 not covered
+Asm line 2766, src line 816 not covered
+Asm line 2769, src line 787 not covered
+Asm line 2770, src line 787 not covered
+Asm line 2771, src line 787 not covered
+Asm line 2772, src line 0 not covered
+Asm line 2773, src line 0 not covered
+Asm line 2774, src line 0 not covered
+Asm line 2775, src line 818 not covered
+Asm line 2776, src line 818 not covered
+Asm line 2777, src line 818 not covered
+Asm line 2778, src line 0 not covered
+Asm line 2779, src line 819 not covered
+Asm line 2780, src line 819 not covered
+Asm line 2781, src line 819 not covered
+Asm line 2787, src line 820 not covered
+Asm line 2788, src line 820 not covered
+Asm line 2789, src line 820 not covered
+Asm line 2790, src line 820 not covered
+Asm line 2791, src line 820 not covered
+Asm line 2792, src line 820 not covered
+Asm line 2793, src line 820 not covered
+Asm line 2794, src line 821 not covered
+Asm line 2795, src line 821 not covered
+Asm line 2796, src line 821 not covered
+Asm line 2797, src line 821 not covered
+Asm line 2798, src line 821 not covered
+Asm line 2799, src line 0 not covered
+Asm line 2800, src line 820 not covered
+Asm line 2803, src line 828 not covered
+Asm line 2804, src line 828 not covered
+Asm line 2805, src line 828 not covered
+Asm line 2806, src line 828 not covered
+Asm line 2807, src line 828 not covered
+Asm line 2808, src line 828 not covered
+Asm line 2811, src line 829 not covered
+Asm line 2812, src line 829 not covered
+Asm line 2813, src line 829 not covered
+Asm line 2814, src line 829 not covered
+Asm line 2815, src line 829 not covered
+Asm line 2818, src line 819 not covered
+Asm line 2819, src line 0 not covered
+Asm line 2820, src line 833 not covered
+Asm line 2821, src line 833 not covered
+Asm line 2824, src line 834 not covered
+Asm line 2825, src line 0 not covered
+Asm line 2826, src line 835 not covered
+Asm line 2827, src line 835 not covered
+Asm line 2828, src line 836 not covered
+Asm line 2831, src line 839 not covered
+Asm line 2832, src line 839 not covered
+Asm line 2833, src line 839 not covered
+Asm line 2834, src line 840 not covered
+Asm line 2835, src line 0 not covered
+Asm line 2836, src line 787 not covered
+Asm line 2839, src line 816 not covered
+Asm line 2840, src line 813 not covered
+Asm line 2841, src line 0 not covered
+Asm line 2842, src line 0 not covered
+Asm line 2843, src line 816 not covered
+Asm line 2844, src line 0 not covered
+Asm line 2845, src line 816 not covered
+Asm line 2846, src line 816 not covered
+Asm line 2847, src line 816 not covered
+Asm line 2856, src line 853 not covered
+Asm line 2857, src line 853 not covered
+Asm line 2858, src line 853 not covered
+Asm line 2859, src line 853 not covered
+Asm line 2860, src line 854 not covered
+Asm line 2861, src line 854 not covered
+Asm line 2862, src line 854 not covered
+Asm line 2863, src line 854 not covered
+Asm line 2864, src line 856 not covered
+Asm line 2865, src line 857 not covered
+Asm line 2866, src line 857 not covered
+Asm line 2867, src line 857 not covered
+Asm line 2868, src line 857 not covered
+Asm line 2869, src line 857 not covered
+Asm line 2870, src line 857 not covered
+Asm line 2871, src line 858 not covered
+Asm line 2872, src line 858 not covered
+Asm line 2873, src line 858 not covered
+Asm line 2874, src line 858 not covered
+Asm line 2875, src line 858 not covered
+Asm line 2876, src line 858 not covered
+Asm line 2877, src line 858 not covered
+Asm line 2878, src line 862 not covered
+Asm line 2879, src line 862 not covered
+Asm line 2882, src line 787 not covered
+Asm line 2883, src line 862 not covered
+Asm line 2886, src line 863 not covered
+Asm line 2887, src line 787 not covered
+Asm line 2888, src line 863 not covered
+Asm line 2889, src line 864 not covered
+Asm line 2890, src line 862 not covered
+Asm line 2891, src line 862 not covered
+Asm line 2894, src line 852 not covered
+Asm line 2895, src line 864 not covered
+Asm line 2896, src line 862 not covered
+Asm line 2899, src line 866 not covered
+Asm line 2900, src line 867 not covered
+Asm line 2901, src line 867 not covered
+Asm line 2902, src line 867 not covered
+Asm line 2903, src line 868 not covered
+Asm line 2904, src line 868 not covered
+Asm line 2905, src line 868 not covered
+Asm line 2906, src line 868 not covered
+Asm line 2907, src line 868 not covered
+Asm line 2908, src line 869 not covered
+Asm line 2909, src line 870 not covered
+28 / 158 (17.72151898734177%) asm lines covered
+
+## Coverage for cost_compare
+
+Warnings present, coverage may be invalid!
+Asm line 4205, src line 68 not covered
+Asm line 4206, src line 68 not covered
+Asm line 4207, src line 68 not covered
+Asm line 4208, src line 68 not covered
+Asm line 4209, src line 68 not covered
+Asm line 4212, src line 70 not covered
+Asm line 4213, src line 70 not covered
+Asm line 4216, src line 72 not covered
+Asm line 4217, src line 72 not covered
+Asm line 4218, src line 72 not covered
+Asm line 4219, src line 72 not covered
+Asm line 4220, src line 72 not covered
+Asm line 4221, src line 72 not covered
+Asm line 4222, src line 72 not covered
+Asm line 4223, src line 72 not covered
+Asm line 4224, src line 72 not covered
+Asm line 4225, src line 72 not covered
+Asm line 4226, src line 72 not covered
+Asm line 4229, src line 0 not covered
+Asm line 4230, src line 76 not covered
+5 / 25 (20%) asm lines covered
+
+## Coverage for write_objective_value
+
+13 / 13 (100%) asm lines covered
+
+## Coverage for refreshPositions
+
+Warnings present, coverage may be invalid!
+Asm line 1428, src line 96 not covered
+Asm line 1429, src line 96 not covered
+Asm line 1432, src line 98 not covered
+Asm line 1433, src line 98 not covered
+Asm line 1434, src line 0 not covered
+Asm line 1435, src line 99 not covered
+Asm line 1436, src line 99 not covered
+Asm line 1437, src line 99 not covered
+Asm line 1438, src line 99 not covered
+Asm line 1439, src line 100 not covered
+Asm line 1442, src line 94 not covered
+Asm line 1443, src line 0 not covered
+Asm line 1444, src line 94 not covered
+Asm line 1445, src line 94 not covered
+Asm line 1450, src line 0 not covered
+Asm line 1451, src line 103 not covered
+Asm line 1452, src line 104 not covered
+Asm line 1453, src line 105 not covered
+Asm line 1454, src line 105 not covered
+Asm line 1455, src line 105 not covered
+Asm line 1456, src line 107 not covered
+21 / 42 (50%) asm lines covered
+
+## Coverage for resize_prob
+
+Warnings present, coverage may be invalid!
+Asm line 1613, src line 218 not covered
+Asm line 1614, src line 218 not covered
+Asm line 1615, src line 229 not covered
+Asm line 1616, src line 229 not covered
+Asm line 1617, src line 229 not covered
+Asm line 1618, src line 229 not covered
+Asm line 1619, src line 229 not covered
+Asm line 1620, src line 0 not covered
+Asm line 1621, src line 230 not covered
+Asm line 1622, src line 230 not covered
+Asm line 1625, src line 232 not covered
+Asm line 1626, src line 232 not covered
+Asm line 1627, src line 233 not covered
+Asm line 1628, src line 233 not covered
+Asm line 1629, src line 234 not covered
+Asm line 1632, src line 229 not covered
+Asm line 1633, src line 0 not covered
+Asm line 1634, src line 237 not covered
+Asm line 1635, src line 0 not covered
+Asm line 1636, src line 239 not covered
+Asm line 1637, src line 240 not covered
+Asm line 1638, src line 240 not covered
+Asm line 1639, src line 240 not covered
+Asm line 1640, src line 240 not covered
+Asm line 1641, src line 240 not covered
+Asm line 1642, src line 242 not covered
+Asm line 1643, src line 242 not covered
+Asm line 1644, src line 0 not covered
+Asm line 1645, src line 0 not covered
+Asm line 1646, src line 0 not covered
+Asm line 1647, src line 243 not covered
+Asm line 1648, src line 243 not covered
+Asm line 1649, src line 0 not covered
+Asm line 1650, src line 203 not covered
+Asm line 1651, src line 243 not covered
+Asm line 1652, src line 0 not covered
+Asm line 1653, src line 243 not covered
+Asm line 1654, src line 243 not covered
+Asm line 1657, src line 203 not covered
+Asm line 1658, src line 203 not covered
+Asm line 1659, src line 244 not covered
+Asm line 1660, src line 244 not covered
+Asm line 1661, src line 244 not covered
+Asm line 1662, src line 244 not covered
+Asm line 1665, src line 244 not covered
+Asm line 1666, src line 244 not covered
+Asm line 1667, src line 244 not covered
+Asm line 1668, src line 244 not covered
+Asm line 1671, src line 245 not covered
+Asm line 1672, src line 245 not covered
+Asm line 1673, src line 245 not covered
+Asm line 1674, src line 0 not covered
+Asm line 1675, src line 246 not covered
+Asm line 1676, src line 246 not covered
+Asm line 1677, src line 246 not covered
+Asm line 1678, src line 247 not covered
+Asm line 1681, src line 0 not covered
+Asm line 1682, src line 243 not covered
+Asm line 1683, src line 0 not covered
+Asm line 1684, src line 243 not covered
+Asm line 1685, src line 203 not covered
+Asm line 1686, src line 243 not covered
+Asm line 1689, src line 250 not covered
+Asm line 1690, src line 250 not covered
+Asm line 1691, src line 250 not covered
+Asm line 1692, src line 250 not covered
+Asm line 1693, src line 250 not covered
+Asm line 1694, src line 250 not covered
+Asm line 1695, src line 0 not covered
+Asm line 1696, src line 251 not covered
+Asm line 1697, src line 253 not covered
+Asm line 1700, src line 0 not covered
+Asm line 1701, src line 254 not covered
+9 / 82 (10.975609756097562%) asm lines covered
+
+## Coverage for primal_net_simplex
+
 Warnings present, coverage may be invalid!
 27 / 27 (100%) asm lines covered
-+ for i in ./symbolic-trace/*
-+ '[' -d ./symbolic-trace/primal_start_artificial ']'
-+ ./check-coverage.js ./symbolic-trace/primal_start_artificial
-./symbolic-trace/primal_start_artificial
-Coverage for primal_start_artificial
+
+## Coverage for master
+
+Warnings present, coverage may be invalid!
+Asm line 3879, src line 0 not covered
+Asm line 3880, src line 149 not covered
+Asm line 3881, src line 0 not covered
+Asm line 3882, src line 150 not covered
+Asm line 3883, src line 0 not covered
+Asm line 3884, src line 151 not covered
+Asm line 3885, src line 152 not covered
+Asm line 3886, src line 152 not covered
+Asm line 3887, src line 153 not covered
+Asm line 3888, src line 0 not covered
+Asm line 3889, src line 153 not covered
+Asm line 3890, src line 162 not covered
+Asm line 3891, src line 162 not covered
+Asm line 3892, src line 0 not covered
+Asm line 3893, src line 0 not covered
+Asm line 3894, src line 124 not covered
+Asm line 3895, src line 124 not covered
+Asm line 3896, src line 124 not covered
+Asm line 3897, src line 124 not covered
+Asm line 3898, src line 0 not covered
+Asm line 3899, src line 0 not covered
+Asm line 3900, src line 163 not covered
+Asm line 3901, src line 163 not covered
+Asm line 3904, src line 124 not covered
+Asm line 3905, src line 163 not covered
+Asm line 3906, src line 163 not covered
+Asm line 3907, src line 163 not covered
+Asm line 3910, src line 124 not covered
+Asm line 3911, src line 124 not covered
+Asm line 3912, src line 124 not covered
+Asm line 3913, src line 124 not covered
+Asm line 3914, src line 124 not covered
+Asm line 3915, src line 124 not covered
+Asm line 3916, src line 124 not covered
+Asm line 3917, src line 0 not covered
+Asm line 3918, src line 169 not covered
+Asm line 3919, src line 169 not covered
+Asm line 3922, src line 124 not covered
+Asm line 3923, src line 0 not covered
+Asm line 3924, src line 0 not covered
+Asm line 3925, src line 164 not covered
+Asm line 3926, src line 164 not covered
+Asm line 3927, src line 164 not covered
+Asm line 3928, src line 163 not covered
+Asm line 3929, src line 0 not covered
+Asm line 3930, src line 0 not covered
+Asm line 3931, src line 163 not covered
+Asm line 3932, src line 163 not covered
+Asm line 3935, src line 124 not covered
+Asm line 3936, src line 0 not covered
+Asm line 3937, src line 176 not covered
+Asm line 3938, src line 176 not covered
+Asm line 3939, src line 176 not covered
+Asm line 3940, src line 176 not covered
+Asm line 3941, src line 176 not covered
+Asm line 3942, src line 0 not covered
+Asm line 3943, src line 176 not covered
+Asm line 3944, src line 176 not covered
+Asm line 3945, src line 176 not covered
+Asm line 3946, src line 182 not covered
+Asm line 3947, src line 182 not covered
+Asm line 3948, src line 0 not covered
+Asm line 3949, src line 187 not covered
+Asm line 3950, src line 0 not covered
+Asm line 3951, src line 188 not covered
+Asm line 3954, src line 124 not covered
+Asm line 3955, src line 0 not covered
+Asm line 3956, src line 189 not covered
+Asm line 3957, src line 0 not covered
+Asm line 3958, src line 189 not covered
+Asm line 3959, src line 189 not covered
+Asm line 3962, src line 189 not covered
+Asm line 3963, src line 189 not covered
+Asm line 3964, src line 189 not covered
+Asm line 3965, src line 189 not covered
+Asm line 3966, src line 189 not covered
+Asm line 3969, src line 189 not covered
+Asm line 3970, src line 189 not covered
+Asm line 3971, src line 189 not covered
+Asm line 3972, src line 189 not covered
+Asm line 3973, src line 189 not covered
+Asm line 3976, src line 0 not covered
+Asm line 3977, src line 189 not covered
+Asm line 3978, src line 189 not covered
+Asm line 3979, src line 189 not covered
+Asm line 3982, src line 190 not covered
+Asm line 3983, src line 190 not covered
+Asm line 3984, src line 190 not covered
+Asm line 3985, src line 0 not covered
+Asm line 3986, src line 190 not covered
+Asm line 3987, src line 191 not covered
+Asm line 3990, src line 188 not covered
+Asm line 3991, src line 0 not covered
+Asm line 3992, src line 188 not covered
+Asm line 3993, src line 188 not covered
+Asm line 3996, src line 193 not covered
+Asm line 3997, src line 0 not covered
+Asm line 3998, src line 193 not covered
+Asm line 3999, src line 193 not covered
+Asm line 4002, src line 198 not covered
+Asm line 4003, src line 198 not covered
+Asm line 4004, src line 0 not covered
+Asm line 4005, src line 199 not covered
+Asm line 4006, src line 199 not covered
+Asm line 4007, src line 0 not covered
+Asm line 4008, src line 201 not covered
+Asm line 4011, src line 202 not covered
+Asm line 4012, src line 202 not covered
+Asm line 4015, src line 124 not covered
+Asm line 4016, src line 193 not covered
+Asm line 4017, src line 0 not covered
+Asm line 4018, src line 0 not covered
+Asm line 4019, src line 206 not covered
+Asm line 4020, src line 206 not covered
+Asm line 4023, src line 208 not covered
+Asm line 4024, src line 208 not covered
+Asm line 4025, src line 208 not covered
+Asm line 4026, src line 216 not covered
+Asm line 4027, src line 216 not covered
+Asm line 4028, src line 216 not covered
+Asm line 4029, src line 216 not covered
+Asm line 4030, src line 216 not covered
+Asm line 4031, src line 216 not covered
+Asm line 4032, src line 216 not covered
+Asm line 4033, src line 0 not covered
+Asm line 4034, src line 0 not covered
+Asm line 4035, src line 0 not covered
+Asm line 4036, src line 227 not covered
+Asm line 4037, src line 0 not covered
+Asm line 4038, src line 0 not covered
+Asm line 4039, src line 0 not covered
+Asm line 4040, src line 228 not covered
+Asm line 4041, src line 0 not covered
+Asm line 4042, src line 231 not covered
+Asm line 4043, src line 231 not covered
+Asm line 4046, src line 233 not covered
+Asm line 4047, src line 233 not covered
+Asm line 4048, src line 233 not covered
+Asm line 4049, src line 235 not covered
+Asm line 4050, src line 235 not covered
+Asm line 4051, src line 235 not covered
+Asm line 4052, src line 124 not covered
+Asm line 4053, src line 235 not covered
+Asm line 4054, src line 240 not covered
+Asm line 4055, src line 0 not covered
+Asm line 4056, src line 240 not covered
+Asm line 4057, src line 240 not covered
+Asm line 4060, src line 241 not covered
+Asm line 4061, src line 0 not covered
+Asm line 4062, src line 241 not covered
+Asm line 4063, src line 241 not covered
+Asm line 4066, src line 245 not covered
+Asm line 4067, src line 0 not covered
+Asm line 4068, src line 245 not covered
+Asm line 4069, src line 245 not covered
+Asm line 4070, src line 245 not covered
+Asm line 4071, src line 0 not covered
+Asm line 4072, src line 0 not covered
+Asm line 4073, src line 252 not covered
+Asm line 4074, src line 252 not covered
+Asm line 4075, src line 0 not covered
+Asm line 4076, src line 254 not covered
+Asm line 4077, src line 254 not covered
+Asm line 4078, src line 0 not covered
+Asm line 4079, src line 0 not covered
+Asm line 4080, src line 256 not covered
+Asm line 4081, src line 256 not covered
+Asm line 4082, src line 256 not covered
+Asm line 4083, src line 256 not covered
+Asm line 4084, src line 256 not covered
+Asm line 4085, src line 0 not covered
+Asm line 4086, src line 261 not covered
+Asm line 4087, src line 261 not covered
+Asm line 4088, src line 261 not covered
+Asm line 4089, src line 0 not covered
+Asm line 4090, src line 266 not covered
+Asm line 4091, src line 266 not covered
+Asm line 4092, src line 124 not covered
+Asm line 4093, src line 0 not covered
+Asm line 4094, src line 0 not covered
+Asm line 4095, src line 271 not covered
+Asm line 4096, src line 0 not covered
+Asm line 4097, src line 273 not covered
+Asm line 4098, src line 0 not covered
+Asm line 4099, src line 274 not covered
+Asm line 4100, src line 271 not covered
+Asm line 4101, src line 276 not covered
+Asm line 4102, src line 276 not covered
+Asm line 4103, src line 277 not covered
+Asm line 4104, src line 277 not covered
+Asm line 4105, src line 124 not covered
+Asm line 4108, src line 281 not covered
+Asm line 4109, src line 124 not covered
+Asm line 4112, src line 0 not covered
+Asm line 4113, src line 169 not covered
+Asm line 4114, src line 169 not covered
+Asm line 4117, src line 297 not covered
+19 / 216 (8.796296296296296%) asm lines covered
+
+## Coverage for getOriginalArcPosition
+
+3 / 3 (100%) asm lines covered
+
+## Coverage for bea_is_dual_infeasible
+
+Warnings present, coverage may be invalid!
+17 / 17 (100%) asm lines covered
+
+## Coverage for set_static_vars
+
+Warnings present, coverage may be invalid!
+10 / 10 (100%) asm lines covered
+
+## Coverage for primal_start_artificial
+
 Warnings present, coverage may be invalid!
 Asm line 2927, src line 42 not covered
 Asm line 2928, src line 42 not covered
@@ -2723,27 +3126,497 @@ Asm line 3026, src line 88 not covered
 Asm line 3027, src line 88 not covered
 Asm line 3028, src line 90 not covered
 9 / 99 (9.090909090909092%) asm lines covered
-+ for i in ./symbolic-trace/*
-+ '[' -d ./symbolic-trace/primal_update_flow ']'
-+ ./check-coverage.js ./symbolic-trace/primal_update_flow
-./symbolic-trace/primal_update_flow
-Coverage for primal_update_flow
+
+## Coverage for primal_feasible
+
 Warnings present, coverage may be invalid!
-Asm line 3620, src line 41 not covered
-Asm line 3621, src line 41 not covered
-Asm line 3622, src line 0 not covered
-Asm line 3623, src line 41 not covered
-Asm line 3624, src line 41 not covered
-Asm line 3642, src line 56 not covered
-29 / 35 (82.85714285714286%) asm lines covered
-+ for i in ./symbolic-trace/*
-+ '[' -d ./symbolic-trace/read_min ']'
-+ ./check-coverage.js ./symbolic-trace/read_min
-./symbolic-trace/read_min
-Coverage for read_min
+Asm line 672, src line 0 not covered
+Asm line 673, src line 255 not covered
+Asm line 674, src line 255 not covered
+Asm line 675, src line 0 not covered
+Asm line 676, src line 256 not covered
+Asm line 677, src line 235 not covered
+Asm line 678, src line 256 not covered
+Asm line 679, src line 256 not covered
+Asm line 682, src line 258 not covered
+Asm line 683, src line 258 not covered
+Asm line 684, src line 258 not covered
+Asm line 685, src line 258 not covered
+Asm line 688, src line 260 not covered
+Asm line 689, src line 262 not covered
+Asm line 690, src line 262 not covered
+Asm line 691, src line 261 not covered
+Asm line 692, src line 263 not covered
+Asm line 695, src line 267 not covered
+Asm line 696, src line 267 not covered
+Asm line 697, src line 267 not covered
+Asm line 698, src line 235 not covered
+Asm line 699, src line 235 not covered
+Asm line 700, src line 268 not covered
+Asm line 701, src line 268 not covered
+Asm line 704, src line 270 not covered
+Asm line 705, src line 271 not covered
+Asm line 706, src line 273 not covered
+Asm line 709, src line 0 not covered
+Asm line 710, src line 252 not covered
+Asm line 711, src line 0 not covered
+Asm line 712, src line 252 not covered
+Asm line 713, src line 235 not covered
+Asm line 714, src line 252 not covered
+Asm line 717, src line 235 not covered
+Asm line 718, src line 0 not covered
+Asm line 719, src line 0 not covered
+Asm line 720, src line 0 not covered
+Asm line 721, src line 281 not covered
+24 / 62 (38.70967741935484%) asm lines covered
+
+## Coverage for refresh_neighbour_lists
+
 Warnings present, coverage may be invalid!
-Asm line 913, src line 58 not covered
-Asm line 914, src line 58 not covered
+Asm line 256, src line 27 not covered
+Asm line 257, src line 0 not covered
+Asm line 258, src line 43 not covered
+Asm line 259, src line 40 not covered
+Asm line 260, src line 0 not covered
+Asm line 261, src line 40 not covered
+Asm line 262, src line 40 not covered
+Asm line 263, src line 43 not covered
+Asm line 264, src line 40 not covered
+Asm line 274, src line 48 not covered
+Asm line 275, src line 48 not covered
+Asm line 278, src line 47 not covered
+Asm line 279, src line 0 not covered
+Asm line 280, src line 48 not covered
+Asm line 283, src line 27 not covered
+Asm line 284, src line 27 not covered
+Asm line 285, src line 0 not covered
+Asm line 286, src line 0 not covered
+Asm line 287, src line 50 not covered
+Asm line 288, src line 50 not covered
+Asm line 289, src line 50 not covered
+Asm line 290, src line 50 not covered
+Asm line 291, src line 50 not covered
+Asm line 292, src line 50 not covered
+Asm line 293, src line 51 not covered
+Asm line 294, src line 52 not covered
+Asm line 295, src line 52 not covered
+Asm line 296, src line 52 not covered
+Asm line 297, src line 52 not covered
+Asm line 298, src line 52 not covered
+Asm line 299, src line 52 not covered
+Asm line 300, src line 53 not covered
+Asm line 301, src line 48 not covered
+Asm line 302, src line 0 not covered
+Asm line 303, src line 48 not covered
+Asm line 304, src line 48 not covered
+Asm line 305, src line 48 not covered
+Asm line 306, src line 0 not covered
+Asm line 307, src line 48 not covered
+Asm line 308, src line 48 not covered
+Asm line 309, src line 48 not covered
+Asm line 312, src line 57 not covered
+18 / 60 (30%) asm lines covered
+
+## Coverage for calculate_max_redcost
+
+Warnings present, coverage may be invalid!
+Asm line 1915, src line 395 not covered
+Asm line 1916, src line 395 not covered
+Asm line 1917, src line 395 not covered
+Asm line 1918, src line 395 not covered
+Asm line 1919, src line 395 not covered
+Asm line 1922, src line 396 not covered
+Asm line 1923, src line 396 not covered
+Asm line 1926, src line 393 not covered
+Asm line 1927, src line 0 not covered
+Asm line 1928, src line 393 not covered
+Asm line 1929, src line 393 not covered
+14 / 25 (56.00000000000001%) asm lines covered
+
+## Coverage for replace_weaker_arc
+
+Warnings present, coverage may be invalid!
+Asm line 1808, src line 334 not covered
+Asm line 1809, src line 334 not covered
+Asm line 1810, src line 335 not covered
+Asm line 1811, src line 335 not covered
+Asm line 1812, src line 336 not covered
+Asm line 1813, src line 336 not covered
+Asm line 1814, src line 336 not covered
+Asm line 1815, src line 0 not covered
+Asm line 1816, src line 339 not covered
+Asm line 1817, src line 339 not covered
+Asm line 1818, src line 339 not covered
+Asm line 1819, src line 339 not covered
+Asm line 1820, src line 339 not covered
+Asm line 1821, src line 339 not covered
+Asm line 1822, src line 0 not covered
+Asm line 1823, src line 0 not covered
+Asm line 1824, src line 340 not covered
+Asm line 1825, src line 340 not covered
+Asm line 1828, src line 314 not covered
+Asm line 1829, src line 314 not covered
+Asm line 1830, src line 0 not covered
+Asm line 1831, src line 0 not covered
+Asm line 1832, src line 340 not covered
+Asm line 1833, src line 340 not covered
+Asm line 1834, src line 340 not covered
+Asm line 1835, src line 340 not covered
+Asm line 1836, src line 340 not covered
+Asm line 1839, src line 342 not covered
+Asm line 1840, src line 342 not covered
+Asm line 1841, src line 342 not covered
+Asm line 1842, src line 342 not covered
+Asm line 1843, src line 342 not covered
+Asm line 1844, src line 343 not covered
+Asm line 1845, src line 343 not covered
+Asm line 1846, src line 343 not covered
+Asm line 1847, src line 343 not covered
+Asm line 1848, src line 344 not covered
+Asm line 1849, src line 344 not covered
+Asm line 1850, src line 344 not covered
+Asm line 1851, src line 344 not covered
+Asm line 1852, src line 345 not covered
+Asm line 1853, src line 345 not covered
+Asm line 1854, src line 345 not covered
+Asm line 1855, src line 346 not covered
+Asm line 1856, src line 346 not covered
+Asm line 1857, src line 347 not covered
+Asm line 1858, src line 347 not covered
+Asm line 1859, src line 347 not covered
+Asm line 1860, src line 347 not covered
+Asm line 1861, src line 349 not covered
+Asm line 1862, src line 350 not covered
+Asm line 1863, src line 351 not covered
+Asm line 1864, src line 352 not covered
+Asm line 1865, src line 352 not covered
+Asm line 1866, src line 353 not covered
+Asm line 1867, src line 354 not covered
+Asm line 1868, src line 0 not covered
+Asm line 1869, src line 356 not covered
+Asm line 1870, src line 0 not covered
+Asm line 1871, src line 357 not covered
+Asm line 1872, src line 357 not covered
+Asm line 1873, src line 357 not covered
+Asm line 1876, src line 358 not covered
+Asm line 1877, src line 358 not covered
+Asm line 1878, src line 358 not covered
+Asm line 1879, src line 358 not covered
+Asm line 1880, src line 358 not covered
+Asm line 1881, src line 358 not covered
+Asm line 1882, src line 358 not covered
+Asm line 1883, src line 358 not covered
+Asm line 1886, src line 341 not covered
+Asm line 1887, src line 0 not covered
+Asm line 1888, src line 0 not covered
+Asm line 1889, src line 340 not covered
+Asm line 1890, src line 314 not covered
+Asm line 1891, src line 340 not covered
+Asm line 1894, src line 363 not covered
+13 / 90 (14.444444444444443%) asm lines covered
+
+## Coverage for worker
+
+Warnings present, coverage may be invalid!
+Asm line 3764, src line 0 not covered
+Asm line 3765, src line 98 not covered
+Asm line 3766, src line 0 not covered
+Asm line 3767, src line 99 not covered
+Asm line 3768, src line 99 not covered
+Asm line 3769, src line 100 not covered
+Asm line 3770, src line 0 not covered
+Asm line 3771, src line 100 not covered
+Asm line 3772, src line 103 not covered
+Asm line 3773, src line 103 not covered
+Asm line 3774, src line 103 not covered
+Asm line 3775, src line 103 not covered
+Asm line 3776, src line 104 not covered
+Asm line 3777, src line 104 not covered
+Asm line 3778, src line 104 not covered
+Asm line 3779, src line 0 not covered
+Asm line 3780, src line 0 not covered
+Asm line 3781, src line 87 not covered
+Asm line 3782, src line 0 not covered
+Asm line 3783, src line 0 not covered
+Asm line 3784, src line 104 not covered
+Asm line 3785, src line 104 not covered
+Asm line 3788, src line 104 not covered
+Asm line 3789, src line 104 not covered
+Asm line 3790, src line 0 not covered
+Asm line 3791, src line 104 not covered
+Asm line 3792, src line 0 not covered
+Asm line 3793, src line 104 not covered
+Asm line 3794, src line 0 not covered
+Asm line 3795, src line 104 not covered
+Asm line 3796, src line 0 not covered
+Asm line 3797, src line 104 not covered
+Asm line 3798, src line 104 not covered
+Asm line 3799, src line 104 not covered
+Asm line 3802, src line 87 not covered
+Asm line 3803, src line 87 not covered
+Asm line 3804, src line 87 not covered
+Asm line 3805, src line 87 not covered
+Asm line 3806, src line 87 not covered
+Asm line 3807, src line 107 not covered
+Asm line 3808, src line 107 not covered
+Asm line 3811, src line 87 not covered
+Asm line 3812, src line 87 not covered
+Asm line 3813, src line 0 not covered
+Asm line 3814, src line 0 not covered
+Asm line 3815, src line 105 not covered
+Asm line 3816, src line 105 not covered
+Asm line 3817, src line 105 not covered
+Asm line 3818, src line 104 not covered
+Asm line 3819, src line 0 not covered
+Asm line 3820, src line 104 not covered
+Asm line 3821, src line 0 not covered
+Asm line 3822, src line 104 not covered
+Asm line 3823, src line 104 not covered
+Asm line 3826, src line 108 not covered
+Asm line 3827, src line 108 not covered
+Asm line 3828, src line 108 not covered
+Asm line 3829, src line 108 not covered
+Asm line 3830, src line 108 not covered
+Asm line 3831, src line 108 not covered
+Asm line 3832, src line 0 not covered
+Asm line 3833, src line 108 not covered
+Asm line 3834, src line 108 not covered
+Asm line 3835, src line 108 not covered
+Asm line 3836, src line 108 not covered
+Asm line 3837, src line 109 not covered
+Asm line 3838, src line 109 not covered
+Asm line 3839, src line 109 not covered
+Asm line 3840, src line 113 not covered
+Asm line 3843, src line 114 not covered
+Asm line 3844, src line 114 not covered
+Asm line 3847, src line 107 not covered
+Asm line 3848, src line 107 not covered
+Asm line 3851, src line 121 not covered
+13 / 87 (14.942528735632186%) asm lines covered
+
+## Coverage for insert_new_arc
+
+Warnings present, coverage may be invalid!
+Asm line 1725, src line 281 not covered
+Asm line 1726, src line 281 not covered
+Asm line 1727, src line 282 not covered
+Asm line 1728, src line 282 not covered
+Asm line 1729, src line 283 not covered
+Asm line 1730, src line 283 not covered
+Asm line 1731, src line 284 not covered
+Asm line 1732, src line 284 not covered
+Asm line 1733, src line 284 not covered
+Asm line 1734, src line 0 not covered
+Asm line 1735, src line 287 not covered
+Asm line 1736, src line 287 not covered
+Asm line 1739, src line 286 not covered
+Asm line 1740, src line 0 not covered
+Asm line 1741, src line 287 not covered
+Asm line 1744, src line 263 not covered
+Asm line 1745, src line 263 not covered
+Asm line 1746, src line 0 not covered
+Asm line 1747, src line 287 not covered
+Asm line 1748, src line 287 not covered
+Asm line 1749, src line 287 not covered
+Asm line 1750, src line 287 not covered
+Asm line 1751, src line 287 not covered
+Asm line 1752, src line 287 not covered
+Asm line 1755, src line 289 not covered
+Asm line 1756, src line 289 not covered
+Asm line 1757, src line 289 not covered
+Asm line 1758, src line 289 not covered
+Asm line 1759, src line 290 not covered
+Asm line 1760, src line 290 not covered
+Asm line 1761, src line 290 not covered
+Asm line 1762, src line 290 not covered
+Asm line 1763, src line 291 not covered
+Asm line 1764, src line 291 not covered
+Asm line 1765, src line 291 not covered
+Asm line 1766, src line 291 not covered
+Asm line 1767, src line 292 not covered
+Asm line 1768, src line 292 not covered
+Asm line 1769, src line 292 not covered
+Asm line 1770, src line 293 not covered
+Asm line 1771, src line 293 not covered
+Asm line 1772, src line 294 not covered
+Asm line 1773, src line 294 not covered
+Asm line 1774, src line 294 not covered
+Asm line 1775, src line 294 not covered
+Asm line 1776, src line 0 not covered
+Asm line 1777, src line 297 not covered
+Asm line 1778, src line 298 not covered
+Asm line 1779, src line 299 not covered
+Asm line 1780, src line 300 not covered
+Asm line 1781, src line 300 not covered
+Asm line 1782, src line 301 not covered
+Asm line 1783, src line 302 not covered
+Asm line 1784, src line 287 not covered
+Asm line 1785, src line 287 not covered
+Asm line 1786, src line 287 not covered
+Asm line 1789, src line 306 not covered
+12 / 69 (17.391304347826086%) asm lines covered
+
+## Coverage for markBaskets
+
+Warnings present, coverage may be invalid!
+Asm line 3667, src line 46 not covered
+Asm line 3668, src line 46 not covered
+Asm line 3669, src line 46 not covered
+Asm line 3670, src line 46 not covered
+Asm line 3671, src line 36 not covered
+Asm line 3672, src line 36 not covered
+Asm line 3673, src line 46 not covered
+Asm line 3674, src line 0 not covered
+Asm line 3675, src line 0 not covered
+Asm line 3676, src line 53 not covered
+Asm line 3679, src line 36 not covered
+Asm line 3680, src line 36 not covered
+Asm line 3681, src line 0 not covered
+Asm line 3682, src line 0 not covered
+Asm line 3683, src line 54 not covered
+Asm line 3684, src line 54 not covered
+Asm line 3685, src line 54 not covered
+Asm line 3686, src line 54 not covered
+Asm line 3687, src line 0 not covered
+Asm line 3688, src line 54 not covered
+Asm line 3689, src line 55 not covered
+Asm line 3690, src line 55 not covered
+Asm line 3691, src line 55 not covered
+Asm line 3692, src line 55 not covered
+Asm line 3695, src line 56 not covered
+Asm line 3696, src line 0 not covered
+Asm line 3697, src line 56 not covered
+Asm line 3698, src line 56 not covered
+Asm line 3701, src line 0 not covered
+Asm line 3702, src line 0 not covered
+Asm line 3703, src line 56 not covered
+Asm line 3704, src line 56 not covered
+Asm line 3705, src line 56 not covered
+Asm line 3708, src line 57 not covered
+Asm line 3709, src line 0 not covered
+Asm line 3710, src line 0 not covered
+Asm line 3711, src line 57 not covered
+Asm line 3712, src line 0 not covered
+Asm line 3713, src line 59 not covered
+Asm line 3716, src line 45 not covered
+Asm line 3717, src line 0 not covered
+Asm line 3718, src line 53 not covered
+Asm line 3719, src line 0 not covered
+Asm line 3720, src line 53 not covered
+Asm line 3721, src line 53 not covered
+Asm line 3724, src line 45 not covered
+Asm line 3725, src line 63 not covered
+Asm line 3726, src line 0 not covered
+Asm line 3727, src line 63 not covered
+Asm line 3728, src line 63 not covered
+Asm line 3731, src line 67 not covered
+Asm line 3732, src line 67 not covered
+Asm line 3733, src line 68 not covered
+Asm line 3734, src line 68 not covered
+Asm line 3735, src line 68 not covered
+Asm line 3736, src line 68 not covered
+Asm line 3737, src line 68 not covered
+Asm line 3738, src line 45 not covered
+Asm line 3739, src line 0 not covered
+Asm line 3740, src line 0 not covered
+Asm line 3741, src line 45 not covered
+Asm line 3742, src line 45 not covered
+Asm line 3745, src line 70 not covered
+17 / 80 (21.25%) asm lines covered
+
+## Coverage for arc_compare
+
+Warnings present, coverage may be invalid!
+Asm line 2685, src line 37 not covered
+Asm line 2686, src line 37 not covered
+Asm line 2687, src line 37 not covered
+Asm line 2688, src line 37 not covered
+Asm line 2689, src line 37 not covered
+Asm line 2692, src line 39 not covered
+Asm line 2693, src line 39 not covered
+Asm line 2696, src line 41 not covered
+Asm line 2697, src line 41 not covered
+Asm line 2698, src line 41 not covered
+Asm line 2699, src line 41 not covered
+Asm line 2700, src line 41 not covered
+Asm line 2701, src line 0 not covered
+Asm line 2702, src line 0 not covered
+Asm line 2705, src line 0 not covered
+Asm line 2706, src line 45 not covered
+5 / 21 (23.809523809523807%) asm lines covered
+
+## Coverage for flow_org_cost
+
+Warnings present, coverage may be invalid!
+Asm line 525, src line 190 not covered
+Asm line 526, src line 190 not covered
+Asm line 527, src line 171 not covered
+Asm line 528, src line 190 not covered
+Asm line 529, src line 188 not covered
+Asm line 530, src line 0 not covered
+Asm line 531, src line 188 not covered
+Asm line 532, src line 188 not covered
+Asm line 554, src line 171 not covered
+Asm line 555, src line 0 not covered
+Asm line 556, src line 201 not covered
+Asm line 557, src line 201 not covered
+Asm line 558, src line 201 not covered
+Asm line 559, src line 201 not covered
+Asm line 560, src line 201 not covered
+Asm line 561, src line 201 not covered
+Asm line 562, src line 200 not covered
+Asm line 563, src line 0 not covered
+Asm line 564, src line 200 not covered
+Asm line 565, src line 200 not covered
+Asm line 568, src line 171 not covered
+Asm line 569, src line 171 not covered
+Asm line 570, src line 171 not covered
+Asm line 571, src line 0 not covered
+Asm line 572, src line 0 not covered
+Asm line 573, src line 0 not covered
+Asm line 574, src line 206 not covered
+Asm line 575, src line 206 not covered
+Asm line 576, src line 206 not covered
+Asm line 577, src line 206 not covered
+Asm line 580, src line 208 not covered
+Asm line 581, src line 208 not covered
+Asm line 582, src line 208 not covered
+Asm line 583, src line 208 not covered
+Asm line 584, src line 208 not covered
+Asm line 585, src line 208 not covered
+Asm line 588, src line 208 not covered
+Asm line 589, src line 208 not covered
+Asm line 590, src line 208 not covered
+Asm line 591, src line 208 not covered
+Asm line 592, src line 208 not covered
+Asm line 593, src line 208 not covered
+Asm line 596, src line 210 not covered
+Asm line 597, src line 210 not covered
+Asm line 598, src line 210 not covered
+Asm line 599, src line 210 not covered
+Asm line 602, src line 212 not covered
+Asm line 603, src line 212 not covered
+Asm line 604, src line 212 not covered
+Asm line 605, src line 0 not covered
+Asm line 606, src line 213 not covered
+Asm line 607, src line 0 not covered
+Asm line 608, src line 214 not covered
+Asm line 611, src line 216 not covered
+Asm line 612, src line 0 not covered
+Asm line 613, src line 171 not covered
+Asm line 616, src line 0 not covered
+Asm line 617, src line 0 not covered
+Asm line 618, src line 0 not covered
+Asm line 619, src line 0 not covered
+Asm line 620, src line 204 not covered
+Asm line 621, src line 0 not covered
+Asm line 622, src line 204 not covered
+Asm line 623, src line 204 not covered
+46 / 110 (41.81818181818181%) asm lines covered
+
+## Coverage for read_min
+
+Warnings present, coverage may be invalid!
 Asm line 915, src line 59 not covered
 Asm line 916, src line 59 not covered
 Asm line 917, src line 59 not covered
@@ -3087,1059 +3960,202 @@ Asm line 1294, src line 0 not covered
 Asm line 1295, src line 226 not covered
 Asm line 1296, src line 226 not covered
 Asm line 1297, src line 226 not covered
-44 / 389 (11.311053984575835%) asm lines covered
-+ for i in ./symbolic-trace/*
-+ '[' -d ./symbolic-trace/refreshArcPointers ']'
-+ ./check-coverage.js ./symbolic-trace/refreshArcPointers
-./symbolic-trace/refreshArcPointers
-Coverage for refreshArcPointers
+46 / 389 (11.825192802056556%) asm lines covered
+
+## Coverage for primal_bea_mpp
+
 Warnings present, coverage may be invalid!
-Asm line 1339, src line 64 not covered
-Asm line 1340, src line 64 not covered
-Asm line 1343, src line 64 not covered
-Asm line 1344, src line 64 not covered
-Asm line 1345, src line 64 not covered
-Asm line 1346, src line 64 not covered
-Asm line 1349, src line 65 not covered
-Asm line 1350, src line 65 not covered
-Asm line 1351, src line 65 not covered
-Asm line 1352, src line 65 not covered
-Asm line 1353, src line 65 not covered
-Asm line 1356, src line 66 not covered
-Asm line 1357, src line 66 not covered
-Asm line 1358, src line 66 not covered
-Asm line 1359, src line 66 not covered
-Asm line 1362, src line 66 not covered
-Asm line 1363, src line 66 not covered
-Asm line 1364, src line 66 not covered
-Asm line 1365, src line 66 not covered
-Asm line 1368, src line 67 not covered
-Asm line 1369, src line 67 not covered
-Asm line 1370, src line 67 not covered
-Asm line 1371, src line 67 not covered
-Asm line 1372, src line 67 not covered
-Asm line 1375, src line 68 not covered
-Asm line 1376, src line 68 not covered
-Asm line 1377, src line 68 not covered
-Asm line 1378, src line 68 not covered
-Asm line 1381, src line 68 not covered
-Asm line 1382, src line 68 not covered
-Asm line 1383, src line 68 not covered
-Asm line 1384, src line 68 not covered
-Asm line 1387, src line 69 not covered
-Asm line 1388, src line 69 not covered
-Asm line 1389, src line 69 not covered
-Asm line 1390, src line 69 not covered
-Asm line 1391, src line 69 not covered
-Asm line 1394, src line 62 not covered
-Asm line 1395, src line 0 not covered
-Asm line 1396, src line 62 not covered
-Asm line 1397, src line 62 not covered
-Asm line 1398, src line 62 not covered
-17 / 59 (28.8135593220339%) asm lines covered
-+ for i in ./symbolic-trace/*
-+ '[' -d ./symbolic-trace/refreshPositions ']'
-+ ./check-coverage.js ./symbolic-trace/refreshPositions
-./symbolic-trace/refreshPositions
-Coverage for refreshPositions
+Asm line 4260, src line 100 not covered
+Asm line 4261, src line 100 not covered
+Asm line 4264, src line 102 not covered
+Asm line 4265, src line 102 not covered
+Asm line 4266, src line 102 not covered
+Asm line 4267, src line 102 not covered
+Asm line 4268, src line 0 not covered
+Asm line 4269, src line 103 not covered
+Asm line 4270, src line 103 not covered
+Asm line 4271, src line 0 not covered
+Asm line 4272, src line 104 not covered
+Asm line 4273, src line 104 not covered
+Asm line 4274, src line 104 not covered
+Asm line 4275, src line 104 not covered
+Asm line 4276, src line 104 not covered
+Asm line 4277, src line 104 not covered
+Asm line 4278, src line 104 not covered
+Asm line 4279, src line 104 not covered
+Asm line 4280, src line 104 not covered
+Asm line 4281, src line 104 not covered
+Asm line 4282, src line 104 not covered
+Asm line 4283, src line 104 not covered
+Asm line 4284, src line 0 not covered
+Asm line 4285, src line 105 not covered
+Asm line 4286, src line 105 not covered
+Asm line 4289, src line 105 not covered
+Asm line 4290, src line 105 not covered
+Asm line 4293, src line 105 not covered
+Asm line 4294, src line 105 not covered
+Asm line 4295, src line 105 not covered
+Asm line 4296, src line 106 not covered
+Asm line 4299, src line 106 not covered
+Asm line 4300, src line 106 not covered
+Asm line 4303, src line 106 not covered
+Asm line 4304, src line 106 not covered
+Asm line 4305, src line 106 not covered
+Asm line 4306, src line 105 not covered
+Asm line 4309, src line 108 not covered
+Asm line 4310, src line 0 not covered
+Asm line 4311, src line 109 not covered
+Asm line 4312, src line 109 not covered
+Asm line 4313, src line 109 not covered
+Asm line 4314, src line 109 not covered
+Asm line 4315, src line 110 not covered
+Asm line 4316, src line 110 not covered
+Asm line 4317, src line 110 not covered
+Asm line 4318, src line 111 not covered
+Asm line 4319, src line 111 not covered
+Asm line 4320, src line 111 not covered
+Asm line 4321, src line 112 not covered
+Asm line 4322, src line 112 not covered
+Asm line 4323, src line 113 not covered
+Asm line 4326, src line 100 not covered
+Asm line 4327, src line 0 not covered
+Asm line 4328, src line 100 not covered
+Asm line 4329, src line 0 not covered
+Asm line 4330, src line 100 not covered
+Asm line 4331, src line 100 not covered
+Asm line 4334, src line 100 not covered
+Asm line 4335, src line 116 not covered
+Asm line 4336, src line 116 not covered
+Asm line 4337, src line 116 not covered
+Asm line 4338, src line 118 not covered
+Asm line 4339, src line 0 not covered
+Asm line 4340, src line 80 not covered
+Asm line 4341, src line 80 not covered
+Asm line 4342, src line 118 not covered
+Asm line 4345, src line 120 not covered
+Asm line 4346, src line 123 not covered
+Asm line 4347, src line 0 not covered
+Asm line 4348, src line 125 not covered
+Asm line 4349, src line 125 not covered
+Asm line 4350, src line 125 not covered
+Asm line 4351, src line 125 not covered
+Asm line 4352, src line 125 not covered
+Asm line 4353, src line 0 not covered
+Asm line 4354, src line 131 not covered
+Asm line 4355, src line 131 not covered
+Asm line 4358, src line 123 not covered
+Asm line 4359, src line 0 not covered
+Asm line 4360, src line 131 not covered
+Asm line 4363, src line 80 not covered
+Asm line 4364, src line 0 not covered
+Asm line 4365, src line 132 not covered
+Asm line 4366, src line 132 not covered
+Asm line 4367, src line 132 not covered
+Asm line 4368, src line 132 not covered
+Asm line 4371, src line 135 not covered
+Asm line 4372, src line 135 not covered
+Asm line 4373, src line 135 not covered
+Asm line 4374, src line 135 not covered
+Asm line 4375, src line 135 not covered
+Asm line 4376, src line 135 not covered
+Asm line 4377, src line 135 not covered
+Asm line 4378, src line 135 not covered
+Asm line 4379, src line 135 not covered
+Asm line 4380, src line 135 not covered
+Asm line 4381, src line 135 not covered
+Asm line 4382, src line 135 not covered
+Asm line 4383, src line 0 not covered
+Asm line 4384, src line 136 not covered
+Asm line 4385, src line 136 not covered
+Asm line 4386, src line 136 not covered
+Asm line 4389, src line 138 not covered
+Asm line 4390, src line 138 not covered
+Asm line 4391, src line 138 not covered
+Asm line 4392, src line 139 not covered
+Asm line 4393, src line 139 not covered
+Asm line 4394, src line 139 not covered
+Asm line 4395, src line 139 not covered
+Asm line 4396, src line 140 not covered
+Asm line 4397, src line 140 not covered
+Asm line 4398, src line 140 not covered
+Asm line 4399, src line 141 not covered
+Asm line 4400, src line 141 not covered
+Asm line 4401, src line 141 not covered
+Asm line 4402, src line 141 not covered
+Asm line 4403, src line 141 not covered
+Asm line 4404, src line 141 not covered
+Asm line 4405, src line 142 not covered
+Asm line 4406, src line 142 not covered
+Asm line 4407, src line 142 not covered
+Asm line 4408, src line 142 not covered
+Asm line 4409, src line 142 not covered
+Asm line 4410, src line 143 not covered
+Asm line 4413, src line 131 not covered
+Asm line 4414, src line 0 not covered
+Asm line 4415, src line 131 not covered
+Asm line 4416, src line 131 not covered
+Asm line 4417, src line 131 not covered
+Asm line 4420, src line 131 not covered
+Asm line 4421, src line 147 not covered
+Asm line 4422, src line 147 not covered
+Asm line 4425, src line 148 not covered
+Asm line 4426, src line 149 not covered
+Asm line 4429, src line 152 not covered
+Asm line 4430, src line 152 not covered
+Asm line 4431, src line 152 not covered
+Asm line 4434, src line 0 not covered
+Asm line 4435, src line 0 not covered
+Asm line 4436, src line 158 not covered
+Asm line 4439, src line 80 not covered
+Asm line 4440, src line 80 not covered
+Asm line 4441, src line 0 not covered
+Asm line 4442, src line 0 not covered
+Asm line 4443, src line 159 not covered
+Asm line 4444, src line 159 not covered
+Asm line 4445, src line 159 not covered
+Asm line 4446, src line 0 not covered
+Asm line 4447, src line 158 not covered
+Asm line 4448, src line 0 not covered
+Asm line 4449, src line 158 not covered
+Asm line 4450, src line 158 not covered
+Asm line 4453, src line 152 not covered
+Asm line 4454, src line 161 not covered
+Asm line 4455, src line 161 not covered
+Asm line 4458, src line 170 not covered
+Asm line 4459, src line 172 not covered
+Asm line 4460, src line 172 not covered
+Asm line 4461, src line 172 not covered
+Asm line 4462, src line 172 not covered
+Asm line 4463, src line 172 not covered
+Asm line 4464, src line 172 not covered
+Asm line 4465, src line 174 not covered
+Asm line 4466, src line 174 not covered
+Asm line 4467, src line 174 not covered
+Asm line 4470, src line 179 not covered
+Asm line 4471, src line 179 not covered
+Asm line 4472, src line 179 not covered
+Asm line 4473, src line 186 not covered
+Asm line 4474, src line 186 not covered
+Asm line 4477, src line 0 not covered
+Asm line 4478, src line 188 not covered
+22 / 195 (11.282051282051283%) asm lines covered
+
+## Coverage for primal_update_flow
+
 Warnings present, coverage may be invalid!
-42 / 42 (100%) asm lines covered
-+ for i in ./symbolic-trace/*
-+ '[' -d ./symbolic-trace/refresh_neighbour_lists ']'
-+ ./check-coverage.js ./symbolic-trace/refresh_neighbour_lists
-./symbolic-trace/refresh_neighbour_lists
-Coverage for refresh_neighbour_lists
-Warnings present, coverage may be invalid!
-Asm line 274, src line 48 not covered
-Asm line 275, src line 48 not covered
-Asm line 278, src line 47 not covered
-Asm line 279, src line 0 not covered
-Asm line 280, src line 48 not covered
-Asm line 283, src line 27 not covered
-Asm line 284, src line 27 not covered
-Asm line 285, src line 0 not covered
-Asm line 286, src line 0 not covered
-Asm line 287, src line 50 not covered
-Asm line 288, src line 50 not covered
-Asm line 289, src line 50 not covered
-Asm line 290, src line 50 not covered
-Asm line 291, src line 50 not covered
-Asm line 292, src line 50 not covered
-Asm line 293, src line 51 not covered
-Asm line 294, src line 52 not covered
-Asm line 295, src line 52 not covered
-Asm line 296, src line 52 not covered
-Asm line 297, src line 52 not covered
-Asm line 298, src line 52 not covered
-Asm line 299, src line 52 not covered
-Asm line 300, src line 53 not covered
-Asm line 301, src line 48 not covered
-Asm line 302, src line 0 not covered
-Asm line 303, src line 48 not covered
-Asm line 304, src line 48 not covered
-Asm line 305, src line 48 not covered
-Asm line 306, src line 0 not covered
-Asm line 307, src line 48 not covered
-Asm line 308, src line 48 not covered
-Asm line 309, src line 48 not covered
-Asm line 312, src line 57 not covered
-27 / 60 (45%) asm lines covered
-+ for i in ./symbolic-trace/*
-+ '[' -d ./symbolic-trace/replace_weaker_arc ']'
-+ ./check-coverage.js ./symbolic-trace/replace_weaker_arc
-./symbolic-trace/replace_weaker_arc
-Coverage for replace_weaker_arc
-Warnings present, coverage may be invalid!
-Asm line 1876, src line 358 not covered
-Asm line 1877, src line 358 not covered
-Asm line 1878, src line 358 not covered
-Asm line 1879, src line 358 not covered
-Asm line 1880, src line 358 not covered
-Asm line 1881, src line 358 not covered
-Asm line 1882, src line 358 not covered
-Asm line 1883, src line 358 not covered
-82 / 90 (91.11111111111111%) asm lines covered
-+ for i in ./symbolic-trace/*
-+ '[' -d ./symbolic-trace/resize_prob ']'
-+ ./check-coverage.js ./symbolic-trace/resize_prob
-./symbolic-trace/resize_prob
-Coverage for resize_prob
-Warnings present, coverage may be invalid!
-Asm line 1613, src line 218 not covered
-Asm line 1614, src line 218 not covered
-Asm line 1615, src line 229 not covered
-Asm line 1616, src line 229 not covered
-Asm line 1617, src line 229 not covered
-Asm line 1618, src line 229 not covered
-Asm line 1619, src line 229 not covered
-Asm line 1620, src line 0 not covered
-Asm line 1621, src line 230 not covered
-Asm line 1622, src line 230 not covered
-Asm line 1625, src line 232 not covered
-Asm line 1626, src line 232 not covered
-Asm line 1627, src line 233 not covered
-Asm line 1628, src line 233 not covered
-Asm line 1629, src line 234 not covered
-Asm line 1632, src line 229 not covered
-Asm line 1633, src line 0 not covered
-Asm line 1634, src line 237 not covered
-Asm line 1635, src line 0 not covered
-Asm line 1636, src line 239 not covered
-Asm line 1637, src line 240 not covered
-Asm line 1638, src line 240 not covered
-Asm line 1639, src line 240 not covered
-Asm line 1640, src line 240 not covered
-Asm line 1641, src line 240 not covered
-Asm line 1642, src line 242 not covered
-Asm line 1643, src line 242 not covered
-Asm line 1644, src line 0 not covered
-Asm line 1645, src line 0 not covered
-Asm line 1646, src line 0 not covered
-Asm line 1647, src line 243 not covered
-Asm line 1648, src line 243 not covered
-Asm line 1649, src line 0 not covered
-Asm line 1650, src line 203 not covered
-Asm line 1651, src line 243 not covered
-Asm line 1652, src line 0 not covered
-Asm line 1653, src line 243 not covered
-Asm line 1654, src line 243 not covered
-Asm line 1657, src line 203 not covered
-Asm line 1658, src line 203 not covered
-Asm line 1659, src line 244 not covered
-Asm line 1660, src line 244 not covered
-Asm line 1661, src line 244 not covered
-Asm line 1662, src line 244 not covered
-Asm line 1665, src line 244 not covered
-Asm line 1666, src line 244 not covered
-Asm line 1667, src line 244 not covered
-Asm line 1668, src line 244 not covered
-Asm line 1671, src line 245 not covered
-Asm line 1672, src line 245 not covered
-Asm line 1673, src line 245 not covered
-Asm line 1674, src line 0 not covered
-Asm line 1675, src line 246 not covered
-Asm line 1676, src line 246 not covered
-Asm line 1677, src line 246 not covered
-Asm line 1678, src line 247 not covered
-Asm line 1681, src line 0 not covered
-Asm line 1682, src line 243 not covered
-Asm line 1683, src line 0 not covered
-Asm line 1684, src line 243 not covered
-Asm line 1685, src line 203 not covered
-Asm line 1686, src line 243 not covered
-Asm line 1689, src line 250 not covered
-Asm line 1690, src line 250 not covered
-Asm line 1691, src line 250 not covered
-Asm line 1692, src line 250 not covered
-Asm line 1693, src line 250 not covered
-Asm line 1694, src line 250 not covered
-Asm line 1695, src line 0 not covered
-Asm line 1696, src line 251 not covered
-Asm line 1697, src line 253 not covered
-Asm line 1700, src line 0 not covered
-Asm line 1701, src line 254 not covered
-9 / 82 (10.975609756097562%) asm lines covered
-+ for i in ./symbolic-trace/*
-+ '[' -d ./symbolic-trace/set_static_vars ']'
-+ ./check-coverage.js ./symbolic-trace/set_static_vars
-./symbolic-trace/set_static_vars
-Coverage for set_static_vars
-Warnings present, coverage may be invalid!
-10 / 10 (100%) asm lines covered
-+ for i in ./symbolic-trace/*
-+ '[' -d ./symbolic-trace/spec_qsort ']'
-+ ./check-coverage.js ./symbolic-trace/spec_qsort
-./symbolic-trace/spec_qsort
-Coverage for spec_qsort
-Warnings present, coverage may be invalid!
-Asm line 4563, src line 130 not covered
-Asm line 4564, src line 130 not covered
-Asm line 4565, src line 130 not covered
-Asm line 4566, src line 130 not covered
-Asm line 4574, src line 130 not covered
-Asm line 4575, src line 130 not covered
-Asm line 4576, src line 130 not covered
-Asm line 4577, src line 130 not covered
-Asm line 4578, src line 130 not covered
-Asm line 4579, src line 130 not covered
-Asm line 4582, src line 130 not covered
-Asm line 4583, src line 115 not covered
-Asm line 4586, src line 0 not covered
-Asm line 4587, src line 128 not covered
-Asm line 4588, src line 128 not covered
-Asm line 4665, src line 145 not covered
-Asm line 4666, src line 145 not covered
-Asm line 4667, src line 145 not covered
-Asm line 4679, src line 145 not covered
-Asm line 4680, src line 145 not covered
-Asm line 4681, src line 145 not covered
-Asm line 4694, src line 0 not covered
-Asm line 4695, src line 0 not covered
-Asm line 4696, src line 115 not covered
-Asm line 4697, src line 115 not covered
-Asm line 4698, src line 115 not covered
-Asm line 4699, src line 149 not covered
-Asm line 4702, src line 0 not covered
-Asm line 4703, src line 148 not covered
-Asm line 4704, src line 0 not covered
-Asm line 4705, src line 0 not covered
-Asm line 4706, src line 146 not covered
-Asm line 4707, src line 0 not covered
-Asm line 4708, src line 0 not covered
-Asm line 4709, src line 0 not covered
-Asm line 4710, src line 0 not covered
-Asm line 4711, src line 0 not covered
-Asm line 4712, src line 0 not covered
-Asm line 4713, src line 0 not covered
-Asm line 4714, src line 0 not covered
-Asm line 4715, src line 150 not covered
-Asm line 4716, src line 150 not covered
-Asm line 4719, src line 115 not covered
-Asm line 4720, src line 115 not covered
-Asm line 4721, src line 115 not covered
-Asm line 4722, src line 0 not covered
-Asm line 4723, src line 0 not covered
-Asm line 4724, src line 0 not covered
-Asm line 4725, src line 150 not covered
-Asm line 4726, src line 0 not covered
-Asm line 4727, src line 150 not covered
-Asm line 4728, src line 150 not covered
-Asm line 4731, src line 151 not covered
-Asm line 4732, src line 151 not covered
-Asm line 4735, src line 0 not covered
-Asm line 4736, src line 153 not covered
-Asm line 4739, src line 153 not covered
-Asm line 4740, src line 153 not covered
-Asm line 4741, src line 153 not covered
-Asm line 4742, src line 153 not covered
-Asm line 4743, src line 153 not covered
-Asm line 4744, src line 153 not covered
-Asm line 4745, src line 153 not covered
-Asm line 4746, src line 153 not covered
-Asm line 4749, src line 153 not covered
-Asm line 4752, src line 153 not covered
-Asm line 4753, src line 153 not covered
-Asm line 4754, src line 153 not covered
-Asm line 4755, src line 153 not covered
-Asm line 4756, src line 153 not covered
-Asm line 4757, src line 153 not covered
-Asm line 4758, src line 153 not covered
-Asm line 4759, src line 153 not covered
-Asm line 4762, src line 153 not covered
-Asm line 4763, src line 115 not covered
-Asm line 4766, src line 154 not covered
-Asm line 4767, src line 0 not covered
-Asm line 4768, src line 155 not covered
-Asm line 4771, src line 0 not covered
-Asm line 4772, src line 0 not covered
-Asm line 4773, src line 0 not covered
-Asm line 4774, src line 0 not covered
-Asm line 4775, src line 156 not covered
-Asm line 4776, src line 0 not covered
-Asm line 4777, src line 150 not covered
-Asm line 4778, src line 150 not covered
-Asm line 4781, src line 0 not covered
-Asm line 4782, src line 0 not covered
-Asm line 4783, src line 0 not covered
-Asm line 4784, src line 0 not covered
-Asm line 4785, src line 0 not covered
-Asm line 4786, src line 0 not covered
-Asm line 4787, src line 158 not covered
-Asm line 4788, src line 158 not covered
-Asm line 4791, src line 0 not covered
-Asm line 4792, src line 0 not covered
-Asm line 4793, src line 0 not covered
-Asm line 4794, src line 158 not covered
-Asm line 4795, src line 0 not covered
-Asm line 4796, src line 158 not covered
-Asm line 4797, src line 158 not covered
-Asm line 4800, src line 0 not covered
-Asm line 4801, src line 0 not covered
-Asm line 4802, src line 0 not covered
-Asm line 4803, src line 158 not covered
-Asm line 4804, src line 0 not covered
-Asm line 4805, src line 158 not covered
-Asm line 4806, src line 158 not covered
-Asm line 4809, src line 115 not covered
-Asm line 4810, src line 115 not covered
-Asm line 4811, src line 115 not covered
-Asm line 4812, src line 115 not covered
-Asm line 4813, src line 0 not covered
-Asm line 4814, src line 0 not covered
-Asm line 4815, src line 0 not covered
-Asm line 4816, src line 159 not covered
-Asm line 4817, src line 159 not covered
-Asm line 4820, src line 0 not covered
-Asm line 4821, src line 161 not covered
-Asm line 4824, src line 161 not covered
-Asm line 4825, src line 161 not covered
-Asm line 4826, src line 161 not covered
-Asm line 4827, src line 161 not covered
-Asm line 4828, src line 161 not covered
-Asm line 4829, src line 161 not covered
-Asm line 4830, src line 161 not covered
-Asm line 4831, src line 161 not covered
-Asm line 4834, src line 161 not covered
-Asm line 4837, src line 161 not covered
-Asm line 4838, src line 161 not covered
-Asm line 4839, src line 161 not covered
-Asm line 4840, src line 161 not covered
-Asm line 4841, src line 161 not covered
-Asm line 4842, src line 161 not covered
-Asm line 4843, src line 161 not covered
-Asm line 4844, src line 161 not covered
-Asm line 4847, src line 161 not covered
-Asm line 4848, src line 115 not covered
-Asm line 4851, src line 162 not covered
-Asm line 4852, src line 0 not covered
-Asm line 4853, src line 163 not covered
-Asm line 4856, src line 0 not covered
-Asm line 4857, src line 0 not covered
-Asm line 4858, src line 0 not covered
-Asm line 4859, src line 0 not covered
-Asm line 4860, src line 164 not covered
-Asm line 4861, src line 0 not covered
-Asm line 4862, src line 158 not covered
-Asm line 4863, src line 158 not covered
-Asm line 4866, src line 115 not covered
-Asm line 4867, src line 115 not covered
-Asm line 4868, src line 115 not covered
-Asm line 4869, src line 115 not covered
-Asm line 4870, src line 166 not covered
-Asm line 4873, src line 168 not covered
-Asm line 4876, src line 168 not covered
-Asm line 4877, src line 168 not covered
-Asm line 4878, src line 168 not covered
-Asm line 4879, src line 168 not covered
-Asm line 4880, src line 168 not covered
-Asm line 4881, src line 168 not covered
-Asm line 4882, src line 168 not covered
-Asm line 4883, src line 168 not covered
-Asm line 4886, src line 168 not covered
-Asm line 4889, src line 168 not covered
-Asm line 4890, src line 168 not covered
-Asm line 4891, src line 168 not covered
-Asm line 4892, src line 168 not covered
-Asm line 4893, src line 168 not covered
-Asm line 4894, src line 168 not covered
-Asm line 4895, src line 168 not covered
-Asm line 4896, src line 168 not covered
-Asm line 4899, src line 168 not covered
-Asm line 4900, src line 115 not covered
-Asm line 4903, src line 0 not covered
-Asm line 4904, src line 170 not covered
-Asm line 4905, src line 0 not covered
-Asm line 4906, src line 171 not covered
-Asm line 4907, src line 0 not covered
-Asm line 4908, src line 149 not covered
-Asm line 4911, src line 115 not covered
-Asm line 4912, src line 115 not covered
-Asm line 4913, src line 115 not covered
-Asm line 4914, src line 173 not covered
-Asm line 4915, src line 115 not covered
-Asm line 4916, src line 115 not covered
-Asm line 4917, src line 173 not covered
-Asm line 4920, src line 115 not covered
-Asm line 4921, src line 115 not covered
-Asm line 4922, src line 115 not covered
-Asm line 4923, src line 0 not covered
-Asm line 4924, src line 174 not covered
-Asm line 4925, src line 174 not covered
-Asm line 4928, src line 115 not covered
-Asm line 4929, src line 0 not covered
-Asm line 4930, src line 0 not covered
-Asm line 4931, src line 176 not covered
-Asm line 4932, src line 176 not covered
-Asm line 4935, src line 115 not covered
-Asm line 4936, src line 0 not covered
-Asm line 4937, src line 176 not covered
-Asm line 4938, src line 176 not covered
-Asm line 4939, src line 176 not covered
-Asm line 4940, src line 175 not covered
-Asm line 4943, src line 178 not covered
-Asm line 4946, src line 178 not covered
-Asm line 4947, src line 178 not covered
-Asm line 4948, src line 178 not covered
-Asm line 4949, src line 178 not covered
-Asm line 4950, src line 178 not covered
-Asm line 4951, src line 178 not covered
-Asm line 4952, src line 178 not covered
-Asm line 4953, src line 178 not covered
-Asm line 4956, src line 178 not covered
-Asm line 4959, src line 178 not covered
-Asm line 4960, src line 178 not covered
-Asm line 4961, src line 178 not covered
-Asm line 4962, src line 178 not covered
-Asm line 4963, src line 178 not covered
-Asm line 4964, src line 178 not covered
-Asm line 4965, src line 178 not covered
-Asm line 4966, src line 178 not covered
-Asm line 4969, src line 178 not covered
-Asm line 4970, src line 115 not covered
-Asm line 4973, src line 0 not covered
-Asm line 4974, src line 176 not covered
-Asm line 4975, src line 176 not covered
-Asm line 4978, src line 174 not covered
-Asm line 4979, src line 0 not covered
-Asm line 4980, src line 174 not covered
-Asm line 4981, src line 174 not covered
-Asm line 4984, src line 0 not covered
-Asm line 4985, src line 183 not covered
-Asm line 4986, src line 183 not covered
-Asm line 4987, src line 183 not covered
-Asm line 4988, src line 183 not covered
-Asm line 4989, src line 183 not covered
-Asm line 4990, src line 183 not covered
-Asm line 4991, src line 0 not covered
-Asm line 4992, src line 184 not covered
-Asm line 4993, src line 184 not covered
-Asm line 4996, src line 184 not covered
-Asm line 4997, src line 184 not covered
-Asm line 4998, src line 184 not covered
-Asm line 4999, src line 184 not covered
-Asm line 5000, src line 184 not covered
-Asm line 5003, src line 185 not covered
-Asm line 5004, src line 185 not covered
-Asm line 5005, src line 185 not covered
-Asm line 5006, src line 185 not covered
-Asm line 5007, src line 185 not covered
-Asm line 5008, src line 185 not covered
-Asm line 5009, src line 185 not covered
-Asm line 5010, src line 185 not covered
-Asm line 5011, src line 0 not covered
-Asm line 5012, src line 186 not covered
-Asm line 5013, src line 186 not covered
-Asm line 5016, src line 186 not covered
-Asm line 5017, src line 186 not covered
-Asm line 5018, src line 186 not covered
-Asm line 5019, src line 186 not covered
-Asm line 5020, src line 186 not covered
-Asm line 5023, src line 0 not covered
-Asm line 5024, src line 187 not covered
-Asm line 5025, src line 187 not covered
-Asm line 5028, src line 188 not covered
-Asm line 5029, src line 188 not covered
-Asm line 5030, src line 188 not covered
-Asm line 5031, src line 188 not covered
-Asm line 5034, src line 0 not covered
-Asm line 5035, src line 189 not covered
-Asm line 5036, src line 189 not covered
-Asm line 5039, src line 191 not covered
-Asm line 5040, src line 191 not covered
-Asm line 5041, src line 0 not covered
-Asm line 5042, src line 192 not covered
-Asm line 5043, src line 192 not covered
-Asm line 5044, src line 0 not covered
-Asm line 5045, src line 122 not covered
-Asm line 5046, src line 122 not covered
-Asm line 5047, src line 122 not covered
-Asm line 5048, src line 122 not covered
-Asm line 5049, src line 122 not covered
-Asm line 5050, src line 122 not covered
-Asm line 5051, src line 0 not covered
-Asm line 5052, src line 123 not covered
-Asm line 5053, src line 123 not covered
-Asm line 5054, src line 123 not covered
-Asm line 5055, src line 123 not covered
-Asm line 5056, src line 0 not covered
-Asm line 5057, src line 0 not covered
-Asm line 5058, src line 125 not covered
-Asm line 5059, src line 125 not covered
-148 / 441 (33.560090702947846%) asm lines covered
-+ for i in ./symbolic-trace/*
-+ '[' -d ./symbolic-trace/start ']'
-+ ./check-coverage.js ./symbolic-trace/start
-./symbolic-trace/start
-Coverage for start
-1 / 1 (100%) asm lines covered
-+ for i in ./symbolic-trace/*
-+ '[' -d ./symbolic-trace/suspend_impl ']'
-+ ./check-coverage.js ./symbolic-trace/suspend_impl
-./symbolic-trace/suspend_impl
-Coverage for suspend_impl
-Warnings present, coverage may be invalid!
-Asm line 2733, src line 787 not covered
-Asm line 2734, src line 804 not covered
-Asm line 2737, src line 805 not covered
-Asm line 2738, src line 787 not covered
-Asm line 2739, src line 805 not covered
-Asm line 2740, src line 806 not covered
-Asm line 2741, src line 804 not covered
-Asm line 2742, src line 804 not covered
-Asm line 2745, src line 0 not covered
-Asm line 2746, src line 806 not covered
-Asm line 2747, src line 804 not covered
-Asm line 2781, src line 819 not covered
-Asm line 2787, src line 820 not covered
-Asm line 2788, src line 820 not covered
-Asm line 2789, src line 820 not covered
-Asm line 2790, src line 820 not covered
-Asm line 2791, src line 820 not covered
-Asm line 2792, src line 820 not covered
-Asm line 2793, src line 820 not covered
-Asm line 2794, src line 821 not covered
-Asm line 2795, src line 821 not covered
-Asm line 2796, src line 821 not covered
-Asm line 2797, src line 821 not covered
-Asm line 2798, src line 821 not covered
-Asm line 2799, src line 0 not covered
-Asm line 2800, src line 820 not covered
-Asm line 2803, src line 828 not covered
-Asm line 2804, src line 828 not covered
-Asm line 2805, src line 828 not covered
-Asm line 2806, src line 828 not covered
-Asm line 2807, src line 828 not covered
-Asm line 2808, src line 828 not covered
-Asm line 2811, src line 829 not covered
-Asm line 2812, src line 829 not covered
-Asm line 2813, src line 829 not covered
-Asm line 2814, src line 829 not covered
-Asm line 2815, src line 829 not covered
-Asm line 2818, src line 819 not covered
-Asm line 2819, src line 0 not covered
-Asm line 2820, src line 833 not covered
-Asm line 2821, src line 833 not covered
-Asm line 2824, src line 834 not covered
-Asm line 2825, src line 0 not covered
-Asm line 2826, src line 835 not covered
-Asm line 2827, src line 835 not covered
-Asm line 2828, src line 836 not covered
-Asm line 2831, src line 839 not covered
-Asm line 2832, src line 839 not covered
-Asm line 2833, src line 839 not covered
-Asm line 2834, src line 840 not covered
-Asm line 2835, src line 0 not covered
-Asm line 2836, src line 787 not covered
-Asm line 2839, src line 816 not covered
-Asm line 2840, src line 813 not covered
-Asm line 2841, src line 0 not covered
-Asm line 2842, src line 0 not covered
-Asm line 2843, src line 816 not covered
-Asm line 2844, src line 0 not covered
-Asm line 2845, src line 816 not covered
-Asm line 2846, src line 816 not covered
-Asm line 2847, src line 816 not covered
-Asm line 2850, src line 809 not covered
-Asm line 2851, src line 0 not covered
-Asm line 2852, src line 851 not covered
-Asm line 2853, src line 851 not covered
-Asm line 2856, src line 853 not covered
-Asm line 2857, src line 853 not covered
-Asm line 2858, src line 853 not covered
-Asm line 2859, src line 853 not covered
-Asm line 2860, src line 854 not covered
-Asm line 2861, src line 854 not covered
-Asm line 2862, src line 854 not covered
-Asm line 2863, src line 854 not covered
-Asm line 2864, src line 856 not covered
-Asm line 2865, src line 857 not covered
-Asm line 2866, src line 857 not covered
-Asm line 2867, src line 857 not covered
-Asm line 2868, src line 857 not covered
-Asm line 2869, src line 857 not covered
-Asm line 2870, src line 857 not covered
-Asm line 2871, src line 858 not covered
-Asm line 2872, src line 858 not covered
-Asm line 2873, src line 858 not covered
-Asm line 2874, src line 858 not covered
-Asm line 2875, src line 858 not covered
-Asm line 2876, src line 858 not covered
-Asm line 2877, src line 858 not covered
-Asm line 2878, src line 862 not covered
-Asm line 2879, src line 862 not covered
-Asm line 2882, src line 787 not covered
-Asm line 2883, src line 862 not covered
-Asm line 2886, src line 863 not covered
-Asm line 2887, src line 787 not covered
-Asm line 2888, src line 863 not covered
-Asm line 2889, src line 864 not covered
-Asm line 2890, src line 862 not covered
-Asm line 2891, src line 862 not covered
-Asm line 2894, src line 852 not covered
-Asm line 2895, src line 864 not covered
-Asm line 2896, src line 862 not covered
-Asm line 2899, src line 866 not covered
-Asm line 2900, src line 867 not covered
-Asm line 2901, src line 867 not covered
-Asm line 2902, src line 867 not covered
-Asm line 2903, src line 868 not covered
-Asm line 2904, src line 868 not covered
-Asm line 2905, src line 868 not covered
-Asm line 2906, src line 868 not covered
-Asm line 2907, src line 868 not covered
-Asm line 2908, src line 869 not covered
-Asm line 2909, src line 870 not covered
-Asm line 2912, src line 872 not covered
-46 / 158 (29.11392405063291%) asm lines covered
-+ for i in ./symbolic-trace/*
-+ '[' -d ./symbolic-trace/swapfunc ']'
-+ ./check-coverage.js ./symbolic-trace/swapfunc
-./symbolic-trace/swapfunc
-Coverage for swapfunc
-Warnings present, coverage may be invalid!
-Asm line 5099, src line 84 not covered
-Asm line 5100, src line 84 not covered
-Asm line 5101, src line 84 not covered
-Asm line 5102, src line 84 not covered
-Asm line 5103, src line 84 not covered
-Asm line 5104, src line 84 not covered
-Asm line 5105, src line 84 not covered
-Asm line 5134, src line 86 not covered
-Asm line 5135, src line 86 not covered
-Asm line 5136, src line 86 not covered
-Asm line 5137, src line 86 not covered
-Asm line 5138, src line 86 not covered
-Asm line 5139, src line 86 not covered
-Asm line 5140, src line 86 not covered
-69 / 83 (83.13253012048193%) asm lines covered
-+ for i in ./symbolic-trace/*
-+ '[' -d ./symbolic-trace/switch_arcs ']'
-+ ./check-coverage.js ./symbolic-trace/switch_arcs
-./symbolic-trace/switch_arcs
-Coverage for switch_arcs
-Warnings present, coverage may be invalid!
-Asm line 1988, src line 425 not covered
-Asm line 1989, src line 0 not covered
-Asm line 1990, src line 428 not covered
-Asm line 1991, src line 428 not covered
-Asm line 1992, src line 428 not covered
-Asm line 1993, src line 428 not covered
-Asm line 1996, src line 428 not covered
-Asm line 1997, src line 428 not covered
-Asm line 1998, src line 428 not covered
-Asm line 1999, src line 428 not covered
-Asm line 2000, src line 428 not covered
-Asm line 2003, src line 428 not covered
-Asm line 2004, src line 428 not covered
-Asm line 2007, src line 429 not covered
-Asm line 2008, src line 429 not covered
-Asm line 2009, src line 429 not covered
-Asm line 2010, src line 429 not covered
-Asm line 2011, src line 428 not covered
-Asm line 2014, src line 431 not covered
-Asm line 2015, src line 431 not covered
-Asm line 2016, src line 431 not covered
-Asm line 2017, src line 0 not covered
-Asm line 2018, src line 0 not covered
-Asm line 2019, src line 431 not covered
-Asm line 2020, src line 431 not covered
-Asm line 2021, src line 0 not covered
-Asm line 2022, src line 431 not covered
-Asm line 2023, src line 431 not covered
-Asm line 2024, src line 0 not covered
-Asm line 2025, src line 431 not covered
-Asm line 2026, src line 431 not covered
-Asm line 2027, src line 0 not covered
-Asm line 2028, src line 0 not covered
-Asm line 2029, src line 0 not covered
-Asm line 2030, src line 432 not covered
-Asm line 2031, src line 0 not covered
-Asm line 2032, src line 433 not covered
-Asm line 2033, src line 434 not covered
-Asm line 2034, src line 434 not covered
-Asm line 2035, src line 435 not covered
-Asm line 2038, src line 0 not covered
-Asm line 2039, src line 0 not covered
-Asm line 2040, src line 423 not covered
-Asm line 2041, src line 0 not covered
-Asm line 2042, src line 423 not covered
-Asm line 2043, src line 423 not covered
-Asm line cfl=runtime/Intrinsic/klee_div_zero_check.c, src line undefined not covered
-Asm line cfn=klee_div_zero_check, src line undefined not covered
-Asm line calls=1, src line 5288 not covered
-Asm line 2050, src line 417 not covered
-56 / 106 (52.83018867924528%) asm lines covered
-+ for i in ./symbolic-trace/*
-+ '[' -d ./symbolic-trace/update_tree ']'
-+ ./check-coverage.js ./symbolic-trace/update_tree
-./symbolic-trace/update_tree
-Coverage for update_tree
-Warnings present, coverage may be invalid!
-Asm line 3241, src line 30 not covered
-Asm line 3242, src line 0 not covered
-Asm line 3243, src line 92 not covered
-Asm line 3244, src line 92 not covered
-Asm line 3245, src line 0 not covered
-Asm line 3246, src line 93 not covered
-Asm line 3247, src line 93 not covered
-Asm line 3250, src line 95 not covered
-Asm line 3251, src line 95 not covered
-Asm line 3252, src line 0 not covered
-Asm line 3253, src line 89 not covered
-Asm line 3254, src line 90 not covered
-Asm line 3255, src line 90 not covered
-Asm line 3263, src line 0 not covered
-Asm line 3264, src line 0 not covered
-Asm line 3265, src line 0 not covered
-Asm line 3266, src line 0 not covered
-Asm line 3267, src line 0 not covered
-Asm line 3268, src line 0 not covered
-Asm line 3269, src line 0 not covered
-Asm line 3270, src line 0 not covered
-Asm line 3271, src line 107 not covered
-Asm line 3272, src line 107 not covered
-Asm line 3275, src line 30 not covered
-Asm line 3276, src line 107 not covered
-Asm line 3279, src line 30 not covered
-Asm line 3280, src line 30 not covered
-Asm line 3281, src line 30 not covered
-Asm line 3282, src line 30 not covered
-Asm line 3283, src line 30 not covered
-Asm line 3284, src line 30 not covered
-Asm line 3285, src line 0 not covered
-Asm line 3286, src line 0 not covered
-Asm line 3287, src line 0 not covered
-Asm line 3288, src line 0 not covered
-Asm line 3289, src line 0 not covered
-Asm line 3290, src line 0 not covered
-Asm line 3291, src line 0 not covered
-Asm line 3292, src line 0 not covered
-Asm line 3293, src line 109 not covered
-Asm line 3294, src line 109 not covered
-Asm line 3295, src line 109 not covered
-Asm line 3296, src line 109 not covered
-Asm line 3299, src line 110 not covered
-Asm line 3300, src line 110 not covered
-Asm line 3301, src line 110 not covered
-Asm line 3302, src line 110 not covered
-Asm line 3303, src line 110 not covered
-Asm line 3306, src line 111 not covered
-Asm line 3307, src line 111 not covered
-Asm line 3308, src line 111 not covered
-Asm line 3309, src line 111 not covered
-Asm line 3310, src line 111 not covered
-Asm line 3311, src line 111 not covered
-Asm line 3312, src line 111 not covered
-Asm line 3313, src line 116 not covered
-Asm line 3314, src line 117 not covered
-Asm line 3315, src line 117 not covered
-Asm line 3316, src line 117 not covered
-Asm line 3317, src line 118 not covered
-Asm line 3318, src line 118 not covered
-Asm line 3321, src line 119 not covered
-Asm line 3322, src line 119 not covered
-Asm line 3323, src line 119 not covered
-Asm line 3326, src line 120 not covered
-Asm line 3327, src line 121 not covered
-Asm line 3328, src line 123 not covered
-Asm line 3329, src line 123 not covered
-Asm line 3330, src line 123 not covered
-Asm line 3331, src line 123 not covered
-Asm line 3332, src line 0 not covered
-Asm line 3333, src line 124 not covered
-Asm line 3334, src line 124 not covered
-Asm line 3335, src line 124 not covered
-Asm line 3336, src line 124 not covered
-Asm line 3337, src line 124 not covered
-Asm line 3338, src line 0 not covered
-Asm line 3339, src line 128 not covered
-Asm line 3340, src line 128 not covered
-Asm line 3341, src line 0 not covered
-Asm line 3342, src line 129 not covered
-Asm line 3343, src line 129 not covered
-Asm line 3344, src line 0 not covered
-Asm line 3345, src line 131 not covered
-Asm line 3346, src line 131 not covered
-Asm line 3347, src line 132 not covered
-Asm line 3348, src line 132 not covered
-Asm line 3349, src line 133 not covered
-Asm line 3350, src line 134 not covered
-Asm line 3351, src line 0 not covered
-Asm line 3352, src line 0 not covered
-Asm line 3353, src line 0 not covered
-Asm line 3354, src line 0 not covered
-Asm line 3355, src line 140 not covered
-Asm line 3356, src line 0 not covered
-Asm line 3357, src line 0 not covered
-Asm line 3358, src line 0 not covered
-Asm line 3359, src line 0 not covered
-Asm line 3360, src line 107 not covered
-Asm line 3361, src line 107 not covered
-Asm line 3364, src line 145 not covered
-Asm line 3365, src line 0 not covered
-Asm line 3366, src line 0 not covered
-Asm line 3367, src line 145 not covered
-Asm line 3368, src line 145 not covered
-Asm line 3371, src line 166 not covered
-Asm line 3374, src line 147 not covered
-Asm line 3377, src line 30 not covered
-Asm line 3378, src line 147 not covered
-Asm line 3381, src line 0 not covered
-Asm line 3382, src line 155 not covered
-Asm line 3383, src line 155 not covered
-Asm line 3386, src line 30 not covered
-Asm line 3387, src line 155 not covered
-Asm line 3390, src line 30 not covered
-Asm line 3391, src line 0 not covered
-Asm line 3392, src line 149 not covered
-Asm line 3393, src line 149 not covered
-Asm line 3394, src line 149 not covered
-Asm line 3395, src line 149 not covered
-Asm line 3396, src line 150 not covered
-Asm line 3397, src line 150 not covered
-Asm line 3398, src line 150 not covered
-Asm line 3399, src line 150 not covered
-Asm line 3400, src line 150 not covered
-Asm line 3401, src line 150 not covered
-Asm line 3402, src line 150 not covered
-Asm line 3403, src line 150 not covered
-Asm line 3404, src line 150 not covered
-Asm line 3405, src line 147 not covered
-Asm line 3406, src line 147 not covered
-Asm line 3407, src line 0 not covered
-Asm line 3408, src line 147 not covered
-Asm line 3409, src line 147 not covered
-Asm line 3412, src line 30 not covered
-Asm line 3413, src line 0 not covered
-Asm line 3414, src line 157 not covered
-Asm line 3415, src line 157 not covered
-Asm line 3416, src line 157 not covered
-Asm line 3417, src line 157 not covered
-Asm line 3418, src line 158 not covered
-Asm line 3419, src line 158 not covered
-Asm line 3420, src line 158 not covered
-Asm line 3421, src line 158 not covered
-Asm line 3422, src line 158 not covered
-Asm line 3423, src line 158 not covered
-Asm line 3424, src line 158 not covered
-Asm line 3425, src line 158 not covered
-Asm line 3426, src line 158 not covered
-Asm line 3427, src line 155 not covered
-Asm line 3428, src line 155 not covered
-Asm line 3429, src line 0 not covered
-Asm line 3430, src line 155 not covered
-Asm line 3431, src line 155 not covered
-Asm line 3434, src line 0 not covered
-Asm line 3435, src line 168 not covered
-Asm line 3436, src line 168 not covered
-Asm line 3439, src line 30 not covered
-Asm line 3440, src line 0 not covered
-Asm line 3441, src line 167 not covered
-Asm line 3442, src line 167 not covered
-Asm line 3443, src line 167 not covered
-Asm line 3444, src line 167 not covered
-Asm line 3445, src line 166 not covered
-Asm line 3446, src line 166 not covered
-Asm line 3447, src line 0 not covered
-Asm line 3448, src line 166 not covered
-Asm line 3449, src line 166 not covered
-Asm line 3452, src line 30 not covered
-Asm line 3453, src line 0 not covered
-Asm line 3454, src line 169 not covered
-Asm line 3455, src line 169 not covered
-Asm line 3456, src line 169 not covered
-Asm line 3457, src line 169 not covered
-Asm line 3458, src line 168 not covered
-Asm line 3459, src line 168 not covered
-Asm line 3460, src line 0 not covered
-Asm line 3461, src line 168 not covered
-Asm line 3462, src line 168 not covered
-Asm line 3465, src line 172 not covered
-56 / 236 (23.728813559322035%) asm lines covered
-+ for i in ./symbolic-trace/*
-+ '[' -d ./symbolic-trace/warnings.txt ']'
-+ continue
-+ for i in ./symbolic-trace/*
-+ '[' -d ./symbolic-trace/worker ']'
-+ ./check-coverage.js ./symbolic-trace/worker
-./symbolic-trace/worker
-Coverage for worker
-Warnings present, coverage may be invalid!
-Asm line 3764, src line 0 not covered
-Asm line 3765, src line 98 not covered
-Asm line 3766, src line 0 not covered
-Asm line 3767, src line 99 not covered
-Asm line 3768, src line 99 not covered
-Asm line 3769, src line 100 not covered
-Asm line 3770, src line 0 not covered
-Asm line 3771, src line 100 not covered
-Asm line 3772, src line 103 not covered
-Asm line 3773, src line 103 not covered
-Asm line 3774, src line 103 not covered
-Asm line 3775, src line 103 not covered
-Asm line 3776, src line 104 not covered
-Asm line 3777, src line 104 not covered
-Asm line 3778, src line 104 not covered
-Asm line 3779, src line 0 not covered
-Asm line 3780, src line 0 not covered
-Asm line 3781, src line 87 not covered
-Asm line 3782, src line 0 not covered
-Asm line 3783, src line 0 not covered
-Asm line 3784, src line 104 not covered
-Asm line 3785, src line 104 not covered
-Asm line 3788, src line 104 not covered
-Asm line 3789, src line 104 not covered
-Asm line 3790, src line 0 not covered
-Asm line 3791, src line 104 not covered
-Asm line 3792, src line 0 not covered
-Asm line 3793, src line 104 not covered
-Asm line 3794, src line 0 not covered
-Asm line 3795, src line 104 not covered
-Asm line 3796, src line 0 not covered
-Asm line 3797, src line 104 not covered
-Asm line 3798, src line 104 not covered
-Asm line 3799, src line 104 not covered
-Asm line 3802, src line 87 not covered
-Asm line 3803, src line 87 not covered
-Asm line 3804, src line 87 not covered
-Asm line 3805, src line 87 not covered
-Asm line 3806, src line 87 not covered
-Asm line 3807, src line 107 not covered
-Asm line 3808, src line 107 not covered
-Asm line 3811, src line 87 not covered
-Asm line 3812, src line 87 not covered
-Asm line 3813, src line 0 not covered
-Asm line 3814, src line 0 not covered
-Asm line 3815, src line 105 not covered
-Asm line 3816, src line 105 not covered
-Asm line 3817, src line 105 not covered
-Asm line 3818, src line 104 not covered
-Asm line 3819, src line 0 not covered
-Asm line 3820, src line 104 not covered
-Asm line 3821, src line 0 not covered
-Asm line 3822, src line 104 not covered
-Asm line 3823, src line 104 not covered
-Asm line 3826, src line 108 not covered
-Asm line 3827, src line 108 not covered
-Asm line 3828, src line 108 not covered
-Asm line 3829, src line 108 not covered
-Asm line 3830, src line 108 not covered
-Asm line 3831, src line 108 not covered
-Asm line 3832, src line 0 not covered
-Asm line 3833, src line 108 not covered
-Asm line 3834, src line 108 not covered
-Asm line 3835, src line 108 not covered
-Asm line 3836, src line 108 not covered
-Asm line 3837, src line 109 not covered
-Asm line 3838, src line 109 not covered
-Asm line 3839, src line 109 not covered
-Asm line 3840, src line 113 not covered
-Asm line 3843, src line 114 not covered
-Asm line 3844, src line 114 not covered
-Asm line 3847, src line 107 not covered
-Asm line 3848, src line 107 not covered
-Asm line 3851, src line 121 not covered
-13 / 87 (14.942528735632186%) asm lines covered
-+ for i in ./symbolic-trace/*
-+ '[' -d ./symbolic-trace/write_circulations ']'
-+ ./check-coverage.js ./symbolic-trace/write_circulations
-./symbolic-trace/write_circulations
-Coverage for write_circulations
-Warnings present, coverage may be invalid!
-Asm line 3050, src line 50 not covered
-Asm line 3051, src line 52 not covered
-Asm line 3052, src line 52 not covered
-Asm line 3053, src line 52 not covered
-Asm line 3054, src line 52 not covered
-Asm line 3055, src line 52 not covered
-Asm line 3056, src line 0 not covered
-Asm line 3057, src line 31 not covered
-Asm line 3058, src line 52 not covered
-Asm line 3059, src line 0 not covered
-Asm line 3060, src line 52 not covered
-Asm line 3061, src line 52 not covered
-Asm line 3064, src line 31 not covered
-Asm line 3065, src line 54 not covered
-Asm line 3066, src line 54 not covered
-Asm line 3067, src line 54 not covered
-Asm line 3068, src line 54 not covered
-Asm line 3071, src line 56 not covered
-Asm line 3072, src line 0 not covered
-Asm line 3073, src line 0 not covered
-Asm line 3074, src line 59 not covered
-Asm line 3077, src line 31 not covered
-Asm line 3078, src line 0 not covered
-Asm line 3079, src line 61 not covered
-Asm line 3080, src line 61 not covered
-Asm line 3083, src line 62 not covered
-Asm line 3084, src line 62 not covered
-Asm line 3087, src line 64 not covered
-Asm line 3088, src line 64 not covered
-Asm line 3089, src line 64 not covered
-Asm line 3090, src line 64 not covered
-Asm line 3091, src line 64 not covered
-Asm line 3092, src line 64 not covered
-Asm line 3093, src line 65 not covered
-Asm line 3094, src line 65 not covered
-Asm line 3095, src line 65 not covered
-Asm line 3096, src line 0 not covered
-Asm line 3097, src line 60 not covered
-Asm line 3098, src line 0 not covered
-Asm line 3099, src line 66 not covered
-Asm line 3100, src line 66 not covered
-Asm line 3103, src line 31 not covered
-Asm line 3104, src line 67 not covered
-Asm line 3105, src line 67 not covered
-Asm line 3106, src line 67 not covered
-Asm line 3107, src line 67 not covered
-Asm line 3110, src line 66 not covered
-Asm line 3111, src line 0 not covered
-Asm line 3112, src line 60 not covered
-Asm line 3113, src line 0 not covered
-Asm line 3114, src line 66 not covered
-Asm line 3115, src line 66 not covered
-Asm line 3118, src line 75 not covered
-Asm line 3119, src line 75 not covered
-Asm line 3120, src line 75 not covered
-Asm line 3121, src line 75 not covered
-Asm line 3122, src line 75 not covered
-Asm line 3123, src line 31 not covered
-Asm line 3124, src line 0 not covered
-Asm line 3125, src line 59 not covered
-Asm line 3126, src line 59 not covered
-Asm line 3129, src line 52 not covered
-Asm line 3130, src line 0 not covered
-Asm line 3131, src line 52 not covered
-Asm line 3132, src line 0 not covered
-Asm line 3133, src line 52 not covered
-Asm line 3134, src line 52 not covered
-Asm line 3137, src line 31 not covered
-Asm line 3138, src line 0 not covered
-Asm line 3139, src line 87 not covered
-16 / 86 (18.6046511627907%) asm lines covered
-+ for i in ./symbolic-trace/*
-+ '[' -d ./symbolic-trace/write_objective_value ']'
-+ ./check-coverage.js ./symbolic-trace/write_objective_value
-./symbolic-trace/write_objective_value
-Coverage for write_objective_value
-13 / 13 (100%) asm lines covered
+Asm line 3620, src line 41 not covered
+Asm line 3621, src line 41 not covered
+Asm line 3622, src line 0 not covered
+Asm line 3623, src line 41 not covered
+Asm line 3624, src line 41 not covered
+Asm line 3635, src line 49 not covered
+Asm line 3636, src line 49 not covered
+Asm line 3637, src line 0 not covered
+Asm line 3638, src line 49 not covered
+Asm line 3639, src line 49 not covered
+Asm line 3642, src line 56 not covered
+24 / 35 (68.57142857142857%) asm lines covered
+
+## Summary
+
+1061 / 3936 (26.956300813008134%) asm lines covered
