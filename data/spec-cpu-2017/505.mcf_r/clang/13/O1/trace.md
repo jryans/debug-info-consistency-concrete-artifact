@@ -38,8 +38,8 @@
 + xargs rm -rf
 + echo '## Build symbolic traces for `mcf_r` (Clang 13, O1)'
 ## Build symbolic traces for `mcf_r` (Clang 13, O1)
-+ KLEE_TRACE_OPTS='--independent-functions --output-dir=symbolic-trace --write-no-tests --max-time=8s'
-+ /Users/jryans/Projects/klee/build-release-debug/bin/klee --debug-execution-trace --disable-verify --output-source --search=random-path --independent-functions --output-dir=symbolic-trace --write-no-tests --max-time=8s mcf_r.bc
++ KLEE_TRACE_OPTS='--independent-functions --output-dir=symbolic-trace --write-no-tests --max-solver-time=30s --max-time=30s'
++ /Users/jryans/Projects/klee/build-release-debug/bin/klee --debug-execution-trace --disable-verify --output-source --search=random-path --independent-functions --output-dir=symbolic-trace --write-no-tests --max-solver-time=30s --max-time=30s mcf_r.bc
 [0;35mKLEE: WARNING: Module and host target triples do not match: 'x86_64-apple-macosx14.0.0' != 'x86_64-apple-darwin23.5.0'
 This may cause unexpected crashes or assertion violations.
 [0mKLEE: output directory is "/Users/jryans/Research/Papers/debug-info-consistency/data/spec-cpu-2017/505.mcf_r/clang/13/O1/symbolic-trace"
@@ -70,44 +70,49 @@ warning: ignoring invalid debug info in <string>
 [0mKLEE: HaltTimer invoked
 [0mKLEE: halting execution, dumping remaining states
 [0m[0;1;32m
-KLEE: done: total instructions = 7741
-KLEE: done: completed paths = 141
-KLEE: done: partially completed paths = 594
+KLEE: done: total instructions = 27155
+KLEE: done: completed paths = 487
+KLEE: done: partially completed paths = 2131
 KLEE: done: generated tests = 0
 [0mKLEE: Running `refresh_neighbour_lists` in independent function mode
 [0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;1;35mKLEE: WARNING ONCE: flushing 20736 bytes on read, may be slow and/or crash: MO4031[20736] allocated at value: %struct.network* %net
+[0m[0;1;35mKLEE: WARNING ONCE: flushing 20736 bytes on read, may be slow and/or crash: MO13629[20736] allocated at value: %struct.network* %net
 [0m[0;1;31mKLEE: ERROR: mcfutil.c:39: memory error: out of bound pointer
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0m[0;1;31mKLEE: ERROR: mcfutil.c:40: memory error: out of bound pointer
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0m[0;1;31mKLEE: ERROR: mcfutil.c:48: memory error: out of bound pointer
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0m[0;1;31mKLEE: ERROR: mcfutil.c:47: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0m[0;1;31mKLEE: ERROR: mcfutil.c:50: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0m[0;1;31mKLEE: ERROR: mcfutil.c:50: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0m[0;1;31mKLEE: ERROR: mcfutil.c:50: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0mKLEE: HaltTimer invoked
 [0mKLEE: halting execution, dumping remaining states
 [0m[0;1;32m
-KLEE: done: total instructions = 60
-KLEE: done: completed paths = 1
-KLEE: done: partially completed paths = 45
+KLEE: done: total instructions = 154
+KLEE: done: completed paths = 2
+KLEE: done: partially completed paths = 102
 KLEE: done: generated tests = 0
 [0mKLEE: Running `flow_cost` in independent function mode
 [0;1;31mKLEE: ERROR: mcfutil.c:75: memory error: out of bound pointer
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0m[0;1;31mKLEE: ERROR: mcfutil.c:61: memory error: out of bound pointer
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
-[0m[0;1;31mKLEE: ERROR: mcfutil.c:61: memory error: out of bound pointer
-[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
-[0m[0;1;35mKLEE: WARNING ONCE: silently concretizing (reason: floating point) expression (ReadLSB w64 N0:(Extract w32 0 (Add w64 0x210
-                                         (Sub w64 (ReadLSB w64 0x0 flow_cost.net)
-                                                  0x109F10DC0))) const_arr37) to value 0x0 (mcfutil.c:118)
 [0m[0;1;31mKLEE: ERROR: mcfutil.c:81: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0m[0;1;31mKLEE: ERROR: mcfutil.c:61: memory error: out of bound pointer
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0mKLEE: HaltTimer invoked
 [0mKLEE: halting execution, dumping remaining states
 [0m[0;1;32m
-KLEE: done: total instructions = 91
-KLEE: done: completed paths = 1
-KLEE: done: partially completed paths = 91
+KLEE: done: total instructions = 196
+KLEE: done: completed paths = 0
+KLEE: done: partially completed paths = 94
 KLEE: done: generated tests = 0
 [0mKLEE: Running `start` in independent function mode
 [0;1;32m
@@ -125,6 +130,304 @@ KLEE: done: generated tests = 0
 [0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;1;31mKLEE: ERROR: mcfutil.c:146: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;1;31mKLEE: ERROR: mcfutil.c:146: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
 [0m[0;1;31mKLEE: ERROR: mcfutil.c:145: divide by zero
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
@@ -134,24 +437,6 @@ KLEE: done: generated tests = 0
 [0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;1;31mKLEE: ERROR: mcfutil.c:146: memory error: out of bound pointer
-[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;1;31mKLEE: ERROR: mcfutil.c:146: memory error: out of bound pointer
-[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
@@ -180,51 +465,15 @@ KLEE: done: generated tests = 0
 [0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
 [0mKLEE: HaltTimer invoked
 [0mKLEE: halting execution, dumping remaining states
 [0m[0;1;32m
-KLEE: done: total instructions = 289
-KLEE: done: completed paths = 6
-KLEE: done: partially completed paths = 44
+KLEE: done: total instructions = 996
+KLEE: done: completed paths = 34
+KLEE: done: partially completed paths = 65
 KLEE: done: generated tests = 0
 [0mKLEE: Running `getOriginalArcPosition` in independent function mode
-[0;35mKLEE: WARNING: Unable to load source file `mcfutil.c`
-[0m[0;1;32m
+[0;1;32m
 KLEE: done: total instructions = 3
 KLEE: done: completed paths = 1
 KLEE: done: partially completed paths = 0
@@ -241,9 +490,9 @@ KLEE: done: generated tests = 0
 [0mKLEE: HaltTimer invoked
 [0mKLEE: halting execution, dumping remaining states
 [0m[0;1;32m
-KLEE: done: total instructions = 94
-KLEE: done: completed paths = 1
-KLEE: done: partially completed paths = 90
+KLEE: done: total instructions = 183
+KLEE: done: completed paths = 0
+KLEE: done: partially completed paths = 91
 KLEE: done: generated tests = 0
 [0mKLEE: Running `primal_feasible` in independent function mode
 [0;1;31mKLEE: ERROR: mcfutil.c:243: memory error: out of bound pointer
@@ -252,14 +501,16 @@ KLEE: done: generated tests = 0
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0m[0;1;31mKLEE: ERROR: mcfutil.c:249: memory error: out of bound pointer
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0m[0;1;31mKLEE: ERROR: mcfutil.c:254: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0m[0;1;31mKLEE: ERROR: mcfutil.c:0: memory error: out of bound pointer
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0mKLEE: HaltTimer invoked
 [0mKLEE: halting execution, dumping remaining states
 [0m[0;1;32m
-KLEE: done: total instructions = 64
-KLEE: done: completed paths = 1
-KLEE: done: partially completed paths = 48
+KLEE: done: total instructions = 154
+KLEE: done: completed paths = 0
+KLEE: done: partially completed paths = 62
 KLEE: done: generated tests = 0
 [0mKLEE: Running `dual_feasible` in independent function mode
 [0;1;31mKLEE: ERROR: mcfutil.c:300: memory error: out of bound pointer
@@ -271,9 +522,9 @@ KLEE: done: generated tests = 0
 [0mKLEE: HaltTimer invoked
 [0mKLEE: halting execution, dumping remaining states
 [0m[0;1;32m
-KLEE: done: total instructions = 68
-KLEE: done: completed paths = 2
-KLEE: done: partially completed paths = 45
+KLEE: done: total instructions = 95
+KLEE: done: completed paths = 3
+KLEE: done: partially completed paths = 43
 KLEE: done: generated tests = 0
 [0mKLEE: Running `getfree` in independent function mode
 [0;1;31mKLEE: ERROR: mcfutil.c:374: memory error: out of bound pointer
@@ -285,9 +536,9 @@ KLEE: done: generated tests = 0
 [0mKLEE: HaltTimer invoked
 [0mKLEE: halting execution, dumping remaining states
 [0m[0;1;32m
-KLEE: done: total instructions = 57
-KLEE: done: completed paths = 1
-KLEE: done: partially completed paths = 45
+KLEE: done: total instructions = 487
+KLEE: done: completed paths = 19
+KLEE: done: partially completed paths = 69
 KLEE: done: generated tests = 0
 [0mKLEE: Running `read_min` in independent function mode
 [0;35mKLEE: WARNING: Unable to load source file `readmin.c`
@@ -304,9 +555,9 @@ KLEE: done: generated tests = 0
 [0mKLEE: HaltTimer invoked
 [0mKLEE: halting execution, dumping remaining states
 [0m[0;1;32m
-KLEE: done: total instructions = 176
+KLEE: done: total instructions = 23555
 KLEE: done: completed paths = 2
-KLEE: done: partially completed paths = 51
+KLEE: done: partially completed paths = 53
 KLEE: done: generated tests = 0
 [0mKLEE: Running `refreshArcPointers` in independent function mode
 [0;35mKLEE: WARNING: Unable to load source file `implicit.c`
@@ -316,12 +567,14 @@ KLEE: done: generated tests = 0
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0m[0;1;31mKLEE: ERROR: implicit.c:64: memory error: out of bound pointer
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0m[0;1;31mKLEE: ERROR: implicit.c:64: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0mKLEE: HaltTimer invoked
 [0mKLEE: halting execution, dumping remaining states
 [0m[0;1;32m
-KLEE: done: total instructions = 29
-KLEE: done: completed paths = 0
-KLEE: done: partially completed paths = 44
+KLEE: done: total instructions = 112
+KLEE: done: completed paths = 1
+KLEE: done: partially completed paths = 89
 KLEE: done: generated tests = 0
 [0mKLEE: Running `refreshPositions` in independent function mode
 [0;1;31mKLEE: ERROR: implicit.c:88: memory error: out of bound pointer
@@ -332,12 +585,14 @@ KLEE: done: generated tests = 0
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0m[0;1;31mKLEE: ERROR: implicit.c:96: memory error: out of bound pointer
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0m[0;1;31mKLEE: ERROR: implicit.c:103: memory error: object read only
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0mKLEE: HaltTimer invoked
 [0mKLEE: halting execution, dumping remaining states
 [0m[0;1;32m
-KLEE: done: total instructions = 51
-KLEE: done: completed paths = 0
-KLEE: done: partially completed paths = 48
+KLEE: done: total instructions = 383
+KLEE: done: completed paths = 4
+KLEE: done: partially completed paths = 121
 KLEE: done: generated tests = 0
 [0mKLEE: Running `marc_arcs` in independent function mode
 [0;1;31mKLEE: ERROR: implicit.c:138: memory error: out of bound pointer
@@ -352,38 +607,54 @@ KLEE: done: generated tests = 0
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0m[0;1;31mKLEE: ERROR: implicit.c:148: memory error: out of bound pointer
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0m[0;1;31mKLEE: ERROR: implicit.c:148: memory error: object read only
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0m[0;1;31mKLEE: ERROR: implicit.c:148: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0m[0;1;31mKLEE: ERROR: implicit.c:149: memory error: object read only
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0m[0;1;31mKLEE: ERROR: implicit.c:149: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0mKLEE: HaltTimer invoked
 [0mKLEE: halting execution, dumping remaining states
 [0m[0;1;32m
-KLEE: done: total instructions = 49
+KLEE: done: total instructions = 130
 KLEE: done: completed paths = 0
-KLEE: done: partially completed paths = 189
+KLEE: done: partially completed paths = 841
 KLEE: done: generated tests = 0
 [0mKLEE: Running `resize_prob` in independent function mode
 [0;1;31mKLEE: ERROR: implicit.c:217: memory error: out of bound pointer
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0m[0;1;31mKLEE: ERROR: implicit.c:217: memory error: out of bound pointer
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0m[0;1;31mKLEE: ERROR: implicit.c:217: memory error: object read only
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0m[0;1;31mKLEE: ERROR: implicit.c:229: memory error: out of bound pointer
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
-[0m[0;1;31mKLEE: ERROR: implicit.c:217: memory error: object read only
+[0m[0;1;31mKLEE: ERROR: implicit.c:240: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0m[0;1;31mKLEE: ERROR: implicit.c:250: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0m[0;1;31mKLEE: ERROR: implicit.c:244: memory error: out of bound pointer
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0mKLEE: HaltTimer invoked
 [0mKLEE: halting execution, dumping remaining states
 [0m[0;1;32m
-KLEE: done: total instructions = 75
-KLEE: done: completed paths = 1
-KLEE: done: partially completed paths = 43
+KLEE: done: total instructions = 186
+KLEE: done: completed paths = 2
+KLEE: done: partially completed paths = 95
 KLEE: done: generated tests = 0
 [0mKLEE: Running `insert_new_arc` in independent function mode
 [0;1;31mKLEE: ERROR: implicit.c:279: memory error: object read only
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0m[0;1;31mKLEE: ERROR: implicit.c:279: memory error: out of bound pointer
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0m[0;1;31mKLEE: ERROR: implicit.c:280: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0mKLEE: HaltTimer invoked
 [0mKLEE: halting execution, dumping remaining states
 [0m[0;1;32m
-KLEE: done: total instructions = 10
+KLEE: done: total instructions = 19
 KLEE: done: completed paths = 0
 KLEE: done: partially completed paths = 48
 KLEE: done: generated tests = 0
@@ -402,12 +673,16 @@ KLEE: done: generated tests = 0
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0m[0;1;31mKLEE: ERROR: implicit.c:339: memory error: out of bound pointer
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0m[0;1;31mKLEE: ERROR: implicit.c:339: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0m[0;1;31mKLEE: ERROR: implicit.c:340: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0mKLEE: HaltTimer invoked
 [0mKLEE: halting execution, dumping remaining states
 [0m[0;1;32m
-KLEE: done: total instructions = 44
-KLEE: done: completed paths = 0
-KLEE: done: partially completed paths = 57
+KLEE: done: total instructions = 92
+KLEE: done: completed paths = 1
+KLEE: done: partially completed paths = 63
 KLEE: done: generated tests = 0
 [0mKLEE: Running `calculate_max_redcost` in independent function mode
 [0;1;31mKLEE: ERROR: implicit.c:392: memory error: object read only
@@ -421,19 +696,21 @@ KLEE: done: generated tests = 0
 [0mKLEE: HaltTimer invoked
 [0mKLEE: halting execution, dumping remaining states
 [0m[0;1;32m
-KLEE: done: total instructions = 31
-KLEE: done: completed paths = 3
-KLEE: done: partially completed paths = 89
+KLEE: done: total instructions = 60
+KLEE: done: completed paths = 5
+KLEE: done: partially completed paths = 222
 KLEE: done: generated tests = 0
 [0mKLEE: Running `switch_arcs` in independent function mode
 [0;1;31mKLEE: ERROR: implicit.c:422: memory error: out of bound pointer
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0m[0;1;31mKLEE: ERROR: implicit.c:425: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0mKLEE: HaltTimer invoked
 [0mKLEE: halting execution, dumping remaining states
 [0m[0;1;32m
-KLEE: done: total instructions = 32
+KLEE: done: total instructions = 75
 KLEE: done: completed paths = 1
-KLEE: done: partially completed paths = 48
+KLEE: done: partially completed paths = 97
 KLEE: done: generated tests = 0
 [0mKLEE: Running `price_out_impl` in independent function mode
 [0;1;31mKLEE: ERROR: implicit.c:471: memory error: out of bound pointer
@@ -442,12 +719,20 @@ KLEE: done: generated tests = 0
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0m[0;1;31mKLEE: ERROR: implicit.c:535: memory error: out of bound pointer
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0m[0;1;31mKLEE: ERROR: implicit.c:556: memory error: object read only
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0m[0;1;31mKLEE: ERROR: implicit.c:556: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0m[0;1;31mKLEE: ERROR: implicit.c:557: memory error: object read only
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0m[0;1;31mKLEE: ERROR: implicit.c:557: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0mKLEE: HaltTimer invoked
 [0mKLEE: halting execution, dumping remaining states
 [0m[0;1;32m
-KLEE: done: total instructions = 99
-KLEE: done: completed paths = 0
-KLEE: done: partially completed paths = 43
+KLEE: done: total instructions = 453
+KLEE: done: completed paths = 3
+KLEE: done: partially completed paths = 186
 KLEE: done: generated tests = 0
 [0mKLEE: Running `arc_compare` in independent function mode
 [0;1;31mKLEE: ERROR: implicit.c:37: memory error: out of bound pointer
@@ -457,9 +742,9 @@ KLEE: done: generated tests = 0
 [0mKLEE: HaltTimer invoked
 [0mKLEE: halting execution, dumping remaining states
 [0m[0;1;32m
-KLEE: done: total instructions = 8
+KLEE: done: total instructions = 26
 KLEE: done: completed paths = 0
-KLEE: done: partially completed paths = 42
+KLEE: done: partially completed paths = 83
 KLEE: done: generated tests = 0
 [0mKLEE: Running `suspend_impl` in independent function mode
 [0;1;31mKLEE: ERROR: implicit.c:801: memory error: object read only
@@ -471,9 +756,9 @@ KLEE: done: generated tests = 0
 [0mKLEE: HaltTimer invoked
 [0mKLEE: halting execution, dumping remaining states
 [0m[0;1;32m
-KLEE: done: total instructions = 61
-KLEE: done: completed paths = 0
-KLEE: done: partially completed paths = 44
+KLEE: done: total instructions = 229
+KLEE: done: completed paths = 1
+KLEE: done: partially completed paths = 50
 KLEE: done: generated tests = 0
 [0mKLEE: Running `primal_start_artificial` in independent function mode
 [0;35mKLEE: WARNING: Unable to load source file `pstart.c`
@@ -484,7 +769,7 @@ KLEE: done: generated tests = 0
 [0mKLEE: HaltTimer invoked
 [0mKLEE: halting execution, dumping remaining states
 [0m[0;1;32m
-KLEE: done: total instructions = 16
+KLEE: done: total instructions = 61
 KLEE: done: completed paths = 0
 KLEE: done: partially completed paths = 40
 KLEE: done: generated tests = 0
@@ -501,9 +786,9 @@ KLEE: done: generated tests = 0
 [0mKLEE: HaltTimer invoked
 [0mKLEE: halting execution, dumping remaining states
 [0m[0;1;32m
-KLEE: done: total instructions = 59
+KLEE: done: total instructions = 74
 KLEE: done: completed paths = 1
-KLEE: done: partially completed paths = 46
+KLEE: done: partially completed paths = 91
 KLEE: done: generated tests = 0
 [0mKLEE: Running `write_objective_value` in independent function mode
 [0;1;32m
@@ -517,16 +802,18 @@ KLEE: done: generated tests = 0
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0m[0;1;31mKLEE: ERROR: treeup.c:0: memory error: out of bound pointer
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0m[0;1;31mKLEE: ERROR: treeup.c:81: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0m[0;1;31mKLEE: ERROR: treeup.c:0: memory error: object read only
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
-[0m[0;1;31mKLEE: ERROR: treeup.c:81: memory error: out of bound pointer
+[0m[0;1;31mKLEE: ERROR: treeup.c:104: memory error: out of bound pointer
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0mKLEE: HaltTimer invoked
 [0mKLEE: halting execution, dumping remaining states
 [0m[0;1;32m
-KLEE: done: total instructions = 134
+KLEE: done: total instructions = 421
 KLEE: done: completed paths = 0
-KLEE: done: partially completed paths = 230
+KLEE: done: partially completed paths = 630
 KLEE: done: generated tests = 0
 [0mKLEE: Running `primal_iminus` in independent function mode
 [0;35mKLEE: WARNING: Unable to load source file `pbla.c`
@@ -538,12 +825,18 @@ KLEE: done: generated tests = 0
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0m[0;1;31mKLEE: ERROR: pbla.c:60: memory error: out of bound pointer
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0m[0;1;31mKLEE: ERROR: pbla.c:70: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0m[0;1;31mKLEE: ERROR: pbla.c:62: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0m[0;1;31mKLEE: ERROR: pbla.c:71: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0mKLEE: HaltTimer invoked
 [0mKLEE: halting execution, dumping remaining states
 [0m[0;1;32m
-KLEE: done: total instructions = 27
-KLEE: done: completed paths = 4
-KLEE: done: partially completed paths = 136
+KLEE: done: total instructions = 97
+KLEE: done: completed paths = 18
+KLEE: done: partially completed paths = 413
 KLEE: done: generated tests = 0
 [0mKLEE: Running `primal_update_flow` in independent function mode
 [0;35mKLEE: WARNING: Unable to load source file `pflowup.c`
@@ -558,9 +851,9 @@ KLEE: done: generated tests = 0
 [0mKLEE: HaltTimer invoked
 [0mKLEE: halting execution, dumping remaining states
 [0m[0;1;32m
-KLEE: done: total instructions = 53
-KLEE: done: completed paths = 1
-KLEE: done: partially completed paths = 97
+KLEE: done: total instructions = 184
+KLEE: done: completed paths = 3
+KLEE: done: partially completed paths = 196
 KLEE: done: generated tests = 0
 [0mKLEE: Running `markBaskets` in independent function mode
 [0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
@@ -578,12 +871,8 @@ KLEE: done: generated tests = 0
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0m[0;1;31mKLEE: ERROR: psimplex.c:97: memory error: out of bound pointer
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
-[0m[0;1;31mKLEE: ERROR: psimplex.c:103: memory error: object read only
-[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0m[0;1;31mKLEE: ERROR: psimplex.c:103: memory error: out of bound pointer
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
-[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
@@ -604,12 +893,268 @@ KLEE: done: generated tests = 0
 [0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
 [0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;1;31mKLEE: ERROR: psimplex.c:108: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;1;31mKLEE: ERROR: psimplex.c:108: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+[0m[0;35mKLEE: WARNING: Unable to load source file `psimplex.c`
 [0mKLEE: HaltTimer invoked
 [0mKLEE: halting execution, dumping remaining states
 [0m[0;1;32m
-KLEE: done: total instructions = 106
+KLEE: done: total instructions = 869
 KLEE: done: completed paths = 0
-KLEE: done: partially completed paths = 67
+KLEE: done: partially completed paths = 127
 KLEE: done: generated tests = 0
 [0mKLEE: Running `master` in independent function mode
 [0;1;31mKLEE: ERROR: psimplex.c:143: memory error: out of bound pointer
@@ -623,9 +1168,9 @@ KLEE: done: generated tests = 0
 [0mKLEE: HaltTimer invoked
 [0mKLEE: halting execution, dumping remaining states
 [0m[0;1;32m
-KLEE: done: total instructions = 82
+KLEE: done: total instructions = 214
 KLEE: done: completed paths = 0
-KLEE: done: partially completed paths = 49
+KLEE: done: partially completed paths = 65
 KLEE: done: generated tests = 0
 [0mKLEE: Running `primal_net_simplex` in independent function mode
 [0;1;31mKLEE: ERROR: psimplex.c:318: memory error: out of bound pointer
@@ -641,12 +1186,10 @@ KLEE: done: generated tests = 0
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0m[0;1;31mKLEE: ERROR: pbeampp.c:40: memory error: out of bound pointer
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
-[0mKLEE: HaltTimer invoked
-[0mKLEE: halting execution, dumping remaining states
 [0m[0;1;32m
-KLEE: done: total instructions = 69
-KLEE: done: completed paths = 7
-KLEE: done: partially completed paths = 42
+KLEE: done: total instructions = 184
+KLEE: done: completed paths = 25
+KLEE: done: partially completed paths = 41
 KLEE: done: generated tests = 0
 [0mKLEE: Running `bea_is_dual_infeasible` in independent function mode
 [0;1;31mKLEE: ERROR: pbeampp.c:53: memory error: out of bound pointer
@@ -666,7 +1209,7 @@ KLEE: done: generated tests = 0
 [0mKLEE: HaltTimer invoked
 [0mKLEE: halting execution, dumping remaining states
 [0m[0;1;32m
-KLEE: done: total instructions = 8
+KLEE: done: total instructions = 16
 KLEE: done: completed paths = 0
 KLEE: done: partially completed paths = 42
 KLEE: done: generated tests = 0
@@ -686,12 +1229,22 @@ KLEE: done: generated tests = 0
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0m[0;1;31mKLEE: ERROR: spec_qsort/spec_qsort.c:130: memory error: out of bound pointer
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0m[0;1;31mKLEE: ERROR: spec_qsort/spec_qsort.c:145: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0m[0;1;31mKLEE: ERROR: spec_qsort/spec_qsort.c:145: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0m[0;1;31mKLEE: ERROR: spec_qsort/spec_qsort.c:130: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0m[0;1;31mKLEE: ERROR: spec_qsort/spec_qsort.c:145: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0m[0;1;31mKLEE: ERROR: spec_qsort/spec_qsort.c:130: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0mKLEE: HaltTimer invoked
 [0mKLEE: halting execution, dumping remaining states
 [0m[0;1;32m
-KLEE: done: total instructions = 125
-KLEE: done: completed paths = 2
-KLEE: done: partially completed paths = 98
+KLEE: done: total instructions = 218
+KLEE: done: completed paths = 4
+KLEE: done: partially completed paths = 238
 KLEE: done: generated tests = 0
 [0mKLEE: Running `swapfunc` in independent function mode
 [0;1;31mKLEE: ERROR: spec_qsort/spec_qsort.c:88: memory error: out of bound pointer
@@ -700,12 +1253,26 @@ KLEE: done: generated tests = 0
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0m[0;1;31mKLEE: ERROR: spec_qsort/spec_qsort.c:84: memory error: out of bound pointer
 [0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0m[0;1;31mKLEE: ERROR: spec_qsort/spec_qsort.c:84: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0m[0;1;31mKLEE: ERROR: spec_qsort/spec_qsort.c:88: memory error: object read only
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0m[0;1;31mKLEE: ERROR: spec_qsort/spec_qsort.c:84: memory error: object read only
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0m[0;1;31mKLEE: ERROR: spec_qsort/spec_qsort.c:86: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0m[0;1;31mKLEE: ERROR: spec_qsort/spec_qsort.c:86: memory error: out of bound pointer
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0m[0;1;31mKLEE: ERROR: spec_qsort/spec_qsort.c:86: memory error: object read only
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
+[0m[0;1;31mKLEE: ERROR: spec_qsort/spec_qsort.c:84: memory error: object read only
+[0m[0;1;37mKLEE: NOTE: now ignoring this error at this location
 [0mKLEE: HaltTimer invoked
 [0mKLEE: halting execution, dumping remaining states
 [0m[0;1;32m
-KLEE: done: total instructions = 41
-KLEE: done: completed paths = 0
-KLEE: done: partially completed paths = 196
+KLEE: done: total instructions = 1769
+KLEE: done: completed paths = 12
+KLEE: done: partially completed paths = 1424
 KLEE: done: generated tests = 0
 [0mKLEE: Running `med3` in independent function mode
 [0;1;32m
@@ -717,10 +1284,6 @@ KLEE: done: generated tests = 0
 ## Coverage for refreshArcPointers
 
 Warnings present, coverage may be invalid!
-Asm line 1339, src line 64 not covered
-Asm line 1340, src line 64 not covered
-Asm line 1343, src line 64 not covered
-Asm line 1344, src line 64 not covered
 Asm line 1345, src line 64 not covered
 Asm line 1346, src line 64 not covered
 Asm line 1349, src line 65 not covered
@@ -759,25 +1322,16 @@ Asm line 1395, src line 0 not covered
 Asm line 1396, src line 62 not covered
 Asm line 1397, src line 62 not covered
 Asm line 1398, src line 62 not covered
-Asm line 1401, src line 72 not covered
-16 / 59 (27.11864406779661%) asm lines covered
+21 / 59 (35.59322033898305%) asm lines covered
 
 ## Coverage for primal_iminus
 
 Warnings present, coverage may be invalid!
-Asm line 3491, src line 60 not covered
-Asm line 3492, src line 60 not covered
-Asm line 3495, src line 62 not covered
-Asm line 3496, src line 62 not covered
-Asm line 3497, src line 62 not covered
-Asm line 3498, src line 62 not covered
 Asm line 3501, src line 63 not covered
 Asm line 3502, src line 63 not covered
 Asm line 3503, src line 63 not covered
 Asm line 3504, src line 63 not covered
 Asm line 3505, src line 63 not covered
-Asm line 3508, src line 64 not covered
-Asm line 3509, src line 64 not covered
 Asm line 3510, src line 64 not covered
 Asm line 3511, src line 64 not covered
 Asm line 3512, src line 64 not covered
@@ -798,16 +1352,10 @@ Asm line 3532, src line 66 not covered
 Asm line 3533, src line 66 not covered
 Asm line 3534, src line 0 not covered
 Asm line 3535, src line 67 not covered
-Asm line 3538, src line 70 not covered
-Asm line 3539, src line 70 not covered
-Asm line 3540, src line 70 not covered
-Asm line 3541, src line 70 not covered
-Asm line 3544, src line 71 not covered
 Asm line 3545, src line 71 not covered
 Asm line 3546, src line 71 not covered
 Asm line 3547, src line 71 not covered
 Asm line 3548, src line 71 not covered
-Asm line 3551, src line 72 not covered
 Asm line 3552, src line 72 not covered
 Asm line 3553, src line 72 not covered
 Asm line 3554, src line 72 not covered
@@ -837,64 +1385,30 @@ Asm line 3585, src line 0 not covered
 Asm line 3586, src line 0 not covered
 Asm line 3587, src line 58 not covered
 Asm line 3588, src line 58 not covered
-22 / 94 (23.404255319148938%) asm lines covered
+36 / 94 (38.297872340425535%) asm lines covered
 
 ## Coverage for spec_qsort
 
 Warnings present, coverage may be invalid!
-Asm line 4561, src line 130 not covered
-Asm line 4562, src line 130 not covered
-Asm line 4563, src line 130 not covered
 Asm line 4564, src line 130 not covered
 Asm line 4565, src line 130 not covered
 Asm line 4566, src line 130 not covered
-Asm line 4569, src line 130 not covered
-Asm line 4572, src line 130 not covered
-Asm line 4573, src line 130 not covered
 Asm line 4574, src line 130 not covered
 Asm line 4575, src line 130 not covered
 Asm line 4576, src line 130 not covered
 Asm line 4577, src line 130 not covered
 Asm line 4578, src line 130 not covered
 Asm line 4579, src line 130 not covered
-Asm line 4582, src line 130 not covered
 Asm line 4583, src line 115 not covered
 Asm line 4586, src line 0 not covered
 Asm line 4587, src line 128 not covered
 Asm line 4588, src line 128 not covered
-Asm line 4632, src line 140 not covered
-Asm line 4633, src line 140 not covered
-Asm line 4634, src line 0 not covered
-Asm line 4635, src line 141 not covered
-Asm line 4636, src line 141 not covered
-Asm line 4637, src line 141 not covered
-Asm line 4638, src line 141 not covered
-Asm line 4639, src line 0 not covered
-Asm line 4640, src line 142 not covered
-Asm line 4648, src line 0 not covered
-Asm line 4649, src line 143 not covered
-Asm line 4650, src line 0 not covered
-Asm line 4651, src line 144 not covered
-Asm line 4660, src line 145 not covered
-Asm line 4661, src line 145 not covered
-Asm line 4662, src line 145 not covered
-Asm line 4663, src line 145 not covered
-Asm line 4664, src line 145 not covered
 Asm line 4665, src line 145 not covered
 Asm line 4666, src line 145 not covered
 Asm line 4667, src line 145 not covered
-Asm line 4676, src line 145 not covered
-Asm line 4677, src line 145 not covered
-Asm line 4678, src line 145 not covered
 Asm line 4679, src line 145 not covered
 Asm line 4680, src line 145 not covered
 Asm line 4681, src line 145 not covered
-Asm line 4690, src line 0 not covered
-Asm line 4691, src line 148 not covered
-Asm line 4692, src line 148 not covered
-Asm line 4693, src line 148 not covered
-Asm line 4694, src line 0 not covered
-Asm line 4695, src line 0 not covered
 Asm line 4696, src line 115 not covered
 Asm line 4697, src line 115 not covered
 Asm line 4698, src line 115 not covered
@@ -1165,94 +1679,24 @@ Asm line 5056, src line 0 not covered
 Asm line 5057, src line 0 not covered
 Asm line 5058, src line 125 not covered
 Asm line 5059, src line 125 not covered
-118 / 441 (26.75736961451247%) asm lines covered
+152 / 441 (34.467120181405896%) asm lines covered
 
 ## Coverage for swapfunc
 
-Asm line 5094, src line 84 not covered
-Asm line 5095, src line 84 not covered
-Asm line 5096, src line 84 not covered
-Asm line 5097, src line 84 not covered
-Asm line 5098, src line 84 not covered
-Asm line 5099, src line 84 not covered
-Asm line 5100, src line 84 not covered
-Asm line 5101, src line 84 not covered
-Asm line 5102, src line 84 not covered
-Asm line 5103, src line 84 not covered
-Asm line 5104, src line 84 not covered
-Asm line 5105, src line 84 not covered
-Asm line 5117, src line 86 not covered
-Asm line 5118, src line 86 not covered
-Asm line 5119, src line 86 not covered
-Asm line 5122, src line 86 not covered
-Asm line 5123, src line 86 not covered
-Asm line 5124, src line 86 not covered
-Asm line 5125, src line 86 not covered
-Asm line 5126, src line 86 not covered
-Asm line 5127, src line 86 not covered
-Asm line 5128, src line 86 not covered
-Asm line 5129, src line 86 not covered
-Asm line 5130, src line 86 not covered
-Asm line 5131, src line 86 not covered
-Asm line 5132, src line 86 not covered
-Asm line 5133, src line 86 not covered
-Asm line 5134, src line 86 not covered
-Asm line 5135, src line 86 not covered
 Asm line 5136, src line 86 not covered
 Asm line 5137, src line 86 not covered
 Asm line 5138, src line 86 not covered
 Asm line 5139, src line 86 not covered
 Asm line 5140, src line 86 not covered
-Asm line 5152, src line 88 not covered
-Asm line 5153, src line 88 not covered
-Asm line 5154, src line 88 not covered
-Asm line 5155, src line 88 not covered
-Asm line 5156, src line 88 not covered
 Asm line 5157, src line 88 not covered
 Asm line 5158, src line 88 not covered
 Asm line 5159, src line 88 not covered
 Asm line 5160, src line 88 not covered
 Asm line 5161, src line 88 not covered
-Asm line 5164, src line 89 not covered
-38 / 83 (45.78313253012048%) asm lines covered
+73 / 83 (87.95180722891565%) asm lines covered
 
 ## Coverage for price_out_impl
 
-Asm line 2111, src line 505 not covered
-Asm line 2112, src line 505 not covered
-Asm line 2113, src line 505 not covered
-Asm line 2114, src line 505 not covered
-Asm line 2115, src line 503 not covered
-Asm line 2118, src line 0 not covered
-Asm line 2119, src line 509 not covered
-Asm line 2120, src line 509 not covered
-Asm line 2121, src line 509 not covered
-Asm line 2124, src line 518 not covered
-Asm line 2127, src line 519 not covered
-Asm line 2128, src line 519 not covered
-Asm line 2129, src line 519 not covered
-Asm line 2130, src line 519 not covered
-Asm line 2131, src line 517 not covered
-Asm line 2134, src line 0 not covered
-Asm line 2135, src line 523 not covered
-Asm line 2136, src line 523 not covered
-Asm line 2137, src line 523 not covered
-Asm line 2140, src line 501 not covered
-Asm line 2141, src line 530 not covered
-Asm line 2157, src line 538 not covered
-Asm line 2158, src line 538 not covered
-Asm line 2159, src line 0 not covered
-Asm line 2160, src line 0 not covered
-Asm line 2161, src line 540 not covered
-Asm line 2162, src line 540 not covered
-Asm line 2163, src line 0 not covered
-Asm line 2164, src line 0 not covered
-Asm line 2165, src line 0 not covered
-Asm line 2166, src line 547 not covered
-Asm line 2167, src line 0 not covered
-Asm line 2168, src line 0 not covered
-Asm line 2169, src line 556 not covered
-Asm line 2170, src line 557 not covered
 Asm line 2171, src line 558 not covered
 Asm line 2172, src line 559 not covered
 Asm line 2173, src line 559 not covered
@@ -1665,9 +2109,7 @@ Asm line 2667, src line 777 not covered
 Asm line 2668, src line 778 not covered
 Asm line 2669, src line 0 not covered
 Asm line 2670, src line 780 not covered
-Asm line 2673, src line 0 not covered
-Asm line 2674, src line 781 not covered
-53 / 502 (10.557768924302788%) asm lines covered
+90 / 502 (17.928286852589643%) asm lines covered
 
 ## Coverage for med3
 
@@ -1675,15 +2117,7 @@ Asm line 2674, src line 781 not covered
 
 ## Coverage for getfree
 
-Asm line 830, src line 375 not covered
-Asm line 831, src line 375 not covered
-Asm line 840, src line 376 not covered
-Asm line 841, src line 376 not covered
-Asm line 842, src line 376 not covered
-Asm line 851, src line 377 not covered
-Asm line 852, src line 377 not covered
-Asm line 853, src line 377 not covered
-24 / 32 (75%) asm lines covered
+32 / 32 (100%) asm lines covered
 
 ## Coverage for global_opt
 
@@ -1693,12 +2127,6 @@ Warnings present, coverage may be invalid!
 ## Coverage for update_tree
 
 Warnings present, coverage may be invalid!
-Asm line 3231, src line 30 not covered
-Asm line 3232, src line 0 not covered
-Asm line 3235, src line 0 not covered
-Asm line 3236, src line 89 not covered
-Asm line 3237, src line 90 not covered
-Asm line 3238, src line 90 not covered
 Asm line 3241, src line 30 not covered
 Asm line 3242, src line 0 not covered
 Asm line 3243, src line 92 not covered
@@ -1712,16 +2140,6 @@ Asm line 3252, src line 0 not covered
 Asm line 3253, src line 89 not covered
 Asm line 3254, src line 90 not covered
 Asm line 3255, src line 90 not covered
-Asm line 3258, src line 98 not covered
-Asm line 3259, src line 0 not covered
-Asm line 3260, src line 0 not covered
-Asm line 3261, src line 104 not covered
-Asm line 3262, src line 104 not covered
-Asm line 3263, src line 0 not covered
-Asm line 3264, src line 0 not covered
-Asm line 3265, src line 0 not covered
-Asm line 3266, src line 0 not covered
-Asm line 3267, src line 0 not covered
 Asm line 3268, src line 0 not covered
 Asm line 3269, src line 0 not covered
 Asm line 3270, src line 0 not covered
@@ -1884,12 +2302,10 @@ Asm line 3460, src line 0 not covered
 Asm line 3461, src line 168 not covered
 Asm line 3462, src line 168 not covered
 Asm line 3465, src line 172 not covered
-45 / 236 (19.06779661016949%) asm lines covered
+61 / 236 (25.847457627118644%) asm lines covered
 
 ## Coverage for marc_arcs
 
-Asm line 1492, src line 148 not covered
-Asm line 1493, src line 149 not covered
 Asm line 1494, src line 0 not covered
 Asm line 1495, src line 0 not covered
 Asm line 1496, src line 153 not covered
@@ -1976,11 +2392,10 @@ Asm line 1590, src line 193 not covered
 Asm line 1593, src line 198 not covered
 Asm line 1594, src line 199 not covered
 Asm line 1595, src line 201 not covered
-27 / 115 (23.47826086956522%) asm lines covered
+29 / 115 (25.217391304347824%) asm lines covered
 
 ## Coverage for flow_cost
 
-Warnings present, coverage may be invalid!
 Asm line 336, src line 81 not covered
 Asm line 337, src line 81 not covered
 Asm line 338, src line 61 not covered
@@ -1989,6 +2404,15 @@ Asm line 340, src line 79 not covered
 Asm line 341, src line 0 not covered
 Asm line 342, src line 79 not covered
 Asm line 343, src line 79 not covered
+Asm line 352, src line 0 not covered
+Asm line 353, src line 92 not covered
+Asm line 354, src line 92 not covered
+Asm line 357, src line 61 not covered
+Asm line 358, src line 0 not covered
+Asm line 359, src line 0 not covered
+Asm line 360, src line 0 not covered
+Asm line 361, src line 100 not covered
+Asm line 362, src line 100 not covered
 Asm line 365, src line 61 not covered
 Asm line 366, src line 0 not covered
 Asm line 367, src line 93 not covered
@@ -2045,7 +2469,17 @@ Asm line 431, src line 100 not covered
 Asm line 432, src line 0 not covered
 Asm line 433, src line 100 not covered
 Asm line 434, src line 100 not covered
-41 / 105 (39.04761904761905%) asm lines covered
+Asm line 437, src line 70 not covered
+Asm line 438, src line 72 not covered
+Asm line 439, src line 118 not covered
+Asm line 440, src line 118 not covered
+Asm line 441, src line 118 not covered
+Asm line 442, src line 118 not covered
+Asm line 443, src line 118 not covered
+Asm line 444, src line 118 not covered
+Asm line 445, src line 118 not covered
+Asm line 446, src line 118 not covered
+22 / 105 (20.952380952380953%) asm lines covered
 
 ## Coverage for dual_feasible
 
@@ -2089,30 +2523,16 @@ Asm line 795, src line 356 not covered
 Warnings present, coverage may be invalid!
 Asm line cfl=runtime/Intrinsic/klee_div_zero_check.c, src line undefined not covered
 Asm line cfn=klee_div_zero_check, src line undefined not covered
-Asm line calls=20, src line 5288 not covered
+Asm line calls=39, src line 5288 not covered
 Asm line 462, src line 145 not covered
 Asm line cfl=runtime/Intrinsic/klee_div_zero_check.c, src line undefined not covered
 Asm line cfn=klee_div_zero_check, src line undefined not covered
-Asm line calls=3, src line 5288 not covered
+Asm line calls=22, src line 5288 not covered
 Asm line 468, src line 146 not covered
 30 / 38 (78.94736842105263%) asm lines covered
 
 ## Coverage for switch_arcs
 
-Asm line 1972, src line 422 not covered
-Asm line 1973, src line 422 not covered
-Asm line 1974, src line 0 not covered
-Asm line 1975, src line 0 not covered
-Asm line 1976, src line 401 not covered
-Asm line 1977, src line 0 not covered
-Asm line 1978, src line 0 not covered
-Asm line 1979, src line 423 not covered
-Asm line 1980, src line 423 not covered
-Asm line 1983, src line 401 not covered
-Asm line 1984, src line 401 not covered
-Asm line 1985, src line 0 not covered
-Asm line 1986, src line 0 not covered
-Asm line 1987, src line 425 not covered
 Asm line 1988, src line 425 not covered
 Asm line 1989, src line 0 not covered
 Asm line 1990, src line 428 not covered
@@ -2159,9 +2579,6 @@ Asm line 2040, src line 423 not covered
 Asm line 2041, src line 0 not covered
 Asm line 2042, src line 423 not covered
 Asm line 2043, src line 423 not covered
-Asm line 2046, src line 414 not covered
-Asm line 2047, src line 417 not covered
-Asm line 2048, src line 0 not covered
 Asm line 2049, src line 417 not covered
 Asm line 2050, src line 417 not covered
 Asm line 2051, src line 417 not covered
@@ -2169,7 +2586,7 @@ Asm line 2052, src line 0 not covered
 Asm line 2053, src line 0 not covered
 Asm line 2054, src line 417 not covered
 Asm line 2055, src line 417 not covered
-32 / 102 (31.372549019607842%) asm lines covered
+49 / 102 (48.03921568627451%) asm lines covered
 
 ## Coverage for start
 
@@ -2243,26 +2660,6 @@ Asm line 3139, src line 87 not covered
 
 ## Coverage for suspend_impl
 
-Asm line 2745, src line 0 not covered
-Asm line 2746, src line 806 not covered
-Asm line 2747, src line 804 not covered
-Asm line 2750, src line 809 not covered
-Asm line 2751, src line 809 not covered
-Asm line 2752, src line 809 not covered
-Asm line 2753, src line 809 not covered
-Asm line 2756, src line 815 not covered
-Asm line 2757, src line 0 not covered
-Asm line 2758, src line 0 not covered
-Asm line 2759, src line 0 not covered
-Asm line 2760, src line 787 not covered
-Asm line 2761, src line 0 not covered
-Asm line 2762, src line 0 not covered
-Asm line 2763, src line 0 not covered
-Asm line 2764, src line 816 not covered
-Asm line 2765, src line 816 not covered
-Asm line 2766, src line 816 not covered
-Asm line 2769, src line 787 not covered
-Asm line 2770, src line 787 not covered
 Asm line 2771, src line 787 not covered
 Asm line 2772, src line 0 not covered
 Asm line 2773, src line 0 not covered
@@ -2323,27 +2720,6 @@ Asm line 2844, src line 0 not covered
 Asm line 2845, src line 816 not covered
 Asm line 2846, src line 816 not covered
 Asm line 2847, src line 816 not covered
-Asm line 2850, src line 809 not covered
-Asm line 2851, src line 0 not covered
-Asm line 2852, src line 851 not covered
-Asm line 2853, src line 851 not covered
-Asm line 2856, src line 853 not covered
-Asm line 2857, src line 853 not covered
-Asm line 2858, src line 853 not covered
-Asm line 2859, src line 853 not covered
-Asm line 2860, src line 854 not covered
-Asm line 2861, src line 854 not covered
-Asm line 2862, src line 854 not covered
-Asm line 2863, src line 854 not covered
-Asm line 2864, src line 856 not covered
-Asm line 2865, src line 857 not covered
-Asm line 2866, src line 857 not covered
-Asm line 2867, src line 857 not covered
-Asm line 2868, src line 857 not covered
-Asm line 2869, src line 857 not covered
-Asm line 2870, src line 857 not covered
-Asm line 2871, src line 858 not covered
-Asm line 2872, src line 858 not covered
 Asm line 2873, src line 858 not covered
 Asm line 2874, src line 858 not covered
 Asm line 2875, src line 858 not covered
@@ -2373,8 +2749,7 @@ Asm line 2906, src line 868 not covered
 Asm line 2907, src line 868 not covered
 Asm line 2908, src line 869 not covered
 Asm line 2909, src line 870 not covered
-Asm line 2912, src line 872 not covered
-27 / 158 (17.088607594936708%) asm lines covered
+69 / 158 (43.67088607594937%) asm lines covered
 
 ## Coverage for cost_compare
 
@@ -2406,48 +2781,10 @@ Asm line 4230, src line 76 not covered
 
 ## Coverage for refreshPositions
 
-Asm line 1428, src line 96 not covered
-Asm line 1429, src line 96 not covered
-Asm line 1432, src line 98 not covered
-Asm line 1433, src line 98 not covered
-Asm line 1434, src line 0 not covered
-Asm line 1435, src line 99 not covered
-Asm line 1436, src line 99 not covered
-Asm line 1437, src line 99 not covered
-Asm line 1438, src line 99 not covered
-Asm line 1439, src line 100 not covered
-Asm line 1442, src line 94 not covered
-Asm line 1443, src line 0 not covered
-Asm line 1444, src line 94 not covered
-Asm line 1445, src line 94 not covered
-Asm line 1452, src line 104 not covered
-Asm line 1453, src line 105 not covered
-Asm line 1454, src line 105 not covered
-Asm line 1455, src line 105 not covered
-Asm line 1456, src line 107 not covered
-23 / 42 (54.761904761904766%) asm lines covered
+42 / 42 (100%) asm lines covered
 
 ## Coverage for resize_prob
 
-Asm line 1640, src line 240 not covered
-Asm line 1641, src line 240 not covered
-Asm line 1642, src line 242 not covered
-Asm line 1643, src line 242 not covered
-Asm line 1644, src line 0 not covered
-Asm line 1645, src line 0 not covered
-Asm line 1646, src line 0 not covered
-Asm line 1647, src line 243 not covered
-Asm line 1648, src line 243 not covered
-Asm line 1649, src line 0 not covered
-Asm line 1650, src line 203 not covered
-Asm line 1651, src line 243 not covered
-Asm line 1652, src line 0 not covered
-Asm line 1653, src line 243 not covered
-Asm line 1654, src line 243 not covered
-Asm line 1657, src line 203 not covered
-Asm line 1658, src line 203 not covered
-Asm line 1659, src line 244 not covered
-Asm line 1660, src line 244 not covered
 Asm line 1661, src line 244 not covered
 Asm line 1662, src line 244 not covered
 Asm line 1665, src line 244 not covered
@@ -2468,16 +2805,10 @@ Asm line 1683, src line 0 not covered
 Asm line 1684, src line 243 not covered
 Asm line 1685, src line 203 not covered
 Asm line 1686, src line 243 not covered
-Asm line 1689, src line 250 not covered
-Asm line 1690, src line 250 not covered
-Asm line 1691, src line 250 not covered
-Asm line 1692, src line 250 not covered
-Asm line 1693, src line 250 not covered
-Asm line 1694, src line 250 not covered
 Asm line 1695, src line 0 not covered
 Asm line 1696, src line 251 not covered
 Asm line 1697, src line 253 not covered
-34 / 82 (41.46341463414634%) asm lines covered
+59 / 82 (71.95121951219512%) asm lines covered
 
 ## Coverage for primal_net_simplex
 
@@ -2673,7 +3004,6 @@ Asm line 4117, src line 297 not covered
 
 ## Coverage for getOriginalArcPosition
 
-Warnings present, coverage may be invalid!
 3 / 3 (100%) asm lines covered
 
 ## Coverage for bea_is_dual_infeasible
@@ -2782,10 +3112,6 @@ Asm line 3028, src line 90 not covered
 
 ## Coverage for primal_feasible
 
-Asm line 668, src line 235 not covered
-Asm line 669, src line 235 not covered
-Asm line 670, src line 254 not covered
-Asm line 671, src line 254 not covered
 Asm line 672, src line 0 not covered
 Asm line 673, src line 255 not covered
 Asm line 674, src line 255 not covered
@@ -2819,33 +3145,12 @@ Asm line 711, src line 0 not covered
 Asm line 712, src line 252 not covered
 Asm line 713, src line 235 not covered
 Asm line 714, src line 252 not covered
-25 / 62 (40.32258064516129%) asm lines covered
+Asm line 721, src line 281 not covered
+28 / 62 (45.16129032258064%) asm lines covered
 
 ## Coverage for refresh_neighbour_lists
 
 Warnings present, coverage may be invalid!
-Asm line 256, src line 27 not covered
-Asm line 257, src line 0 not covered
-Asm line 258, src line 43 not covered
-Asm line 259, src line 40 not covered
-Asm line 260, src line 0 not covered
-Asm line 261, src line 40 not covered
-Asm line 262, src line 40 not covered
-Asm line 263, src line 43 not covered
-Asm line 264, src line 40 not covered
-Asm line 278, src line 47 not covered
-Asm line 279, src line 0 not covered
-Asm line 280, src line 48 not covered
-Asm line 283, src line 27 not covered
-Asm line 284, src line 27 not covered
-Asm line 285, src line 0 not covered
-Asm line 286, src line 0 not covered
-Asm line 287, src line 50 not covered
-Asm line 288, src line 50 not covered
-Asm line 289, src line 50 not covered
-Asm line 290, src line 50 not covered
-Asm line 291, src line 50 not covered
-Asm line 292, src line 50 not covered
 Asm line 293, src line 51 not covered
 Asm line 294, src line 52 not covered
 Asm line 295, src line 52 not covered
@@ -2863,7 +3168,7 @@ Asm line 306, src line 0 not covered
 Asm line 307, src line 48 not covered
 Asm line 308, src line 48 not covered
 Asm line 309, src line 48 not covered
-21 / 60 (35%) asm lines covered
+43 / 60 (71.66666666666667%) asm lines covered
 
 ## Coverage for calculate_max_redcost
 
@@ -2882,20 +3187,6 @@ Asm line 1929, src line 393 not covered
 
 ## Coverage for replace_weaker_arc
 
-Asm line 1819, src line 339 not covered
-Asm line 1820, src line 339 not covered
-Asm line 1821, src line 339 not covered
-Asm line 1822, src line 0 not covered
-Asm line 1823, src line 0 not covered
-Asm line 1824, src line 340 not covered
-Asm line 1825, src line 340 not covered
-Asm line 1828, src line 314 not covered
-Asm line 1829, src line 314 not covered
-Asm line 1830, src line 0 not covered
-Asm line 1831, src line 0 not covered
-Asm line 1832, src line 340 not covered
-Asm line 1833, src line 340 not covered
-Asm line 1834, src line 340 not covered
 Asm line 1835, src line 340 not covered
 Asm line 1836, src line 340 not covered
 Asm line 1839, src line 342 not covered
@@ -2947,79 +3238,26 @@ Asm line 1888, src line 0 not covered
 Asm line 1889, src line 340 not covered
 Asm line 1890, src line 314 not covered
 Asm line 1891, src line 340 not covered
-Asm line 1894, src line 363 not covered
-24 / 90 (26.666666666666668%) asm lines covered
+39 / 90 (43.333333333333336%) asm lines covered
 
 ## Coverage for worker
 
 Warnings present, coverage may be invalid!
 Asm line cfl=runtime/Intrinsic/klee_div_zero_check.c, src line undefined not covered
 Asm line cfn=klee_div_zero_check, src line undefined not covered
-Asm line calls=5, src line 5288 not covered
+Asm line calls=21, src line 5288 not covered
 Asm line 3777, src line 104 not covered
-Asm line 3781, src line 87 not covered
-Asm line 3782, src line 0 not covered
-Asm line 3783, src line 0 not covered
-Asm line 3784, src line 104 not covered
-Asm line 3785, src line 104 not covered
-Asm line 3788, src line 104 not covered
-Asm line 3789, src line 104 not covered
-Asm line 3790, src line 0 not covered
-Asm line 3791, src line 104 not covered
-Asm line 3792, src line 0 not covered
-Asm line 3793, src line 104 not covered
-Asm line 3794, src line 0 not covered
-Asm line 3795, src line 104 not covered
-Asm line 3796, src line 0 not covered
-Asm line 3797, src line 104 not covered
-Asm line 3798, src line 104 not covered
-Asm line 3799, src line 104 not covered
-Asm line 3802, src line 87 not covered
-Asm line 3803, src line 87 not covered
-Asm line 3804, src line 87 not covered
-Asm line 3805, src line 87 not covered
-Asm line 3806, src line 87 not covered
-Asm line 3807, src line 107 not covered
-Asm line 3808, src line 107 not covered
-Asm line 3811, src line 87 not covered
-Asm line 3812, src line 87 not covered
-Asm line 3813, src line 0 not covered
-Asm line 3814, src line 0 not covered
-Asm line 3815, src line 105 not covered
-Asm line 3816, src line 105 not covered
-Asm line 3817, src line 105 not covered
-Asm line 3818, src line 104 not covered
-Asm line 3819, src line 0 not covered
-Asm line 3820, src line 104 not covered
-Asm line 3821, src line 0 not covered
-Asm line 3822, src line 104 not covered
-Asm line 3823, src line 104 not covered
-Asm line 3826, src line 108 not covered
-Asm line 3827, src line 108 not covered
-Asm line 3828, src line 108 not covered
+Asm line cfl=runtime/Intrinsic/klee_div_zero_check.c, src line undefined not covered
+Asm line cfn=klee_div_zero_check, src line undefined not covered
+Asm line calls=12, src line 5288 not covered
 Asm line 3829, src line 108 not covered
-Asm line 3830, src line 108 not covered
-Asm line 3831, src line 108 not covered
-Asm line 3832, src line 0 not covered
-Asm line 3833, src line 108 not covered
-Asm line 3834, src line 108 not covered
-Asm line 3835, src line 108 not covered
-Asm line 3836, src line 108 not covered
-Asm line 3837, src line 109 not covered
-Asm line 3838, src line 109 not covered
-Asm line 3839, src line 109 not covered
-Asm line 3840, src line 113 not covered
 Asm line 3843, src line 114 not covered
 Asm line 3844, src line 114 not covered
-Asm line 3847, src line 107 not covered
-Asm line 3848, src line 107 not covered
 Asm line 3851, src line 121 not covered
-30 / 91 (32.967032967032964%) asm lines covered
+84 / 95 (88.42105263157895%) asm lines covered
 
 ## Coverage for insert_new_arc
 
-Asm line 1723, src line 280 not covered
-Asm line 1724, src line 280 not covered
 Asm line 1725, src line 281 not covered
 Asm line 1726, src line 281 not covered
 Asm line 1727, src line 282 not covered
@@ -3077,7 +3315,7 @@ Asm line 1784, src line 287 not covered
 Asm line 1785, src line 287 not covered
 Asm line 1786, src line 287 not covered
 Asm line 1789, src line 306 not covered
-10 / 69 (14.492753623188406%) asm lines covered
+12 / 69 (17.391304347826086%) asm lines covered
 
 ## Coverage for markBaskets
 
@@ -3177,6 +3415,14 @@ Asm line 529, src line 188 not covered
 Asm line 530, src line 0 not covered
 Asm line 531, src line 188 not covered
 Asm line 532, src line 188 not covered
+Asm line 542, src line 200 not covered
+Asm line 543, src line 200 not covered
+Asm line 546, src line 171 not covered
+Asm line 547, src line 0 not covered
+Asm line 548, src line 0 not covered
+Asm line 549, src line 0 not covered
+Asm line 550, src line 204 not covered
+Asm line 551, src line 204 not covered
 Asm line 554, src line 171 not covered
 Asm line 555, src line 0 not covered
 Asm line 556, src line 201 not covered
@@ -3233,7 +3479,22 @@ Asm line 620, src line 204 not covered
 Asm line 621, src line 0 not covered
 Asm line 622, src line 204 not covered
 Asm line 623, src line 204 not covered
-46 / 110 (41.81818181818181%) asm lines covered
+Asm line 626, src line 181 not covered
+Asm line 627, src line 182 not covered
+Asm line 628, src line 221 not covered
+Asm line 629, src line 221 not covered
+Asm line 630, src line 221 not covered
+Asm line 631, src line 221 not covered
+Asm line 632, src line 221 not covered
+Asm line 633, src line 221 not covered
+Asm line 634, src line 221 not covered
+Asm line 635, src line 221 not covered
+Asm line 636, src line 222 not covered
+Asm line 637, src line 222 not covered
+Asm line 638, src line 222 not covered
+Asm line 639, src line 222 not covered
+Asm line 640, src line 222 not covered
+23 / 110 (20.909090909090907%) asm lines covered
 
 ## Coverage for read_min
 
@@ -3740,16 +4001,13 @@ Asm line 4478, src line 188 not covered
 ## Coverage for primal_update_flow
 
 Warnings present, coverage may be invalid!
-Asm line 3620, src line 41 not covered
-Asm line 3621, src line 41 not covered
-Asm line 3622, src line 0 not covered
-Asm line 3623, src line 41 not covered
-Asm line 3624, src line 41 not covered
+Asm line 3635, src line 49 not covered
+Asm line 3636, src line 49 not covered
 Asm line 3637, src line 0 not covered
 Asm line 3638, src line 49 not covered
 Asm line 3639, src line 49 not covered
-27 / 35 (77.14285714285715%) asm lines covered
+30 / 35 (85.71428571428571%) asm lines covered
 
 ## Summary
 
-1072 / 3936 (27.235772357723576%) asm lines covered
+1383 / 3940 (35.101522842639596%) asm lines covered
