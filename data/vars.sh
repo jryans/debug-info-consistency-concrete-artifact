@@ -33,7 +33,7 @@ CC_Og_OPTS="-Og"
 CC_LV_OPTS="${CC_Og_OPTS} -gvariable-location-views"
 
 KLEE=$(klee release-debug klee)
-KLEE_COMMON_OPTS="--debug-execution-trace --disable-verify --output-source --search=random-path"
+KLEE_COMMON_OPTS="--use-color=false --debug-execution-trace --disable-verify --output-source --search=random-path"
 
 CHECK=$(klee release-debug check-debug-info)
 CHECK_OPTS="--debug-only=check-debug-info,values-collector,variable --debug-execution-trace --disable-verify --output-stats=false --max-forks=32 --max-solver-time=5s --max-time=5s --search=random-path --tsv"
