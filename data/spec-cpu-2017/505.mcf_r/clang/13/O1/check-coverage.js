@@ -5,7 +5,7 @@ const path = require("path");
 
 function checkFunctionCoverage(functionPath) {
   const section = path.basename(functionPath);
-  console.log(`## Coverage for ${section}`);
+  console.log(`## Coverage for \`${section}\``);
   console.log();
 
   const warningsSize = fs.statSync(path.join(functionPath, "warnings.txt")).size;

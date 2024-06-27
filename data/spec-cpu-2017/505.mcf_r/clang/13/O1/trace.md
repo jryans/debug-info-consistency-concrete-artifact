@@ -1435,7 +1435,7 @@ KLEE: done: partially completed paths = 0
 KLEE: done: generated tests = 0
 
 + ./check-coverage.js ./symbolic-trace
-## Coverage for refreshArcPointers
+## Coverage for `refreshArcPointers`
 
 Warnings present, coverage may be invalid!
 Asm line 1345, src line 64 not covered
@@ -1476,7 +1476,7 @@ Asm line 1397, src line 62 not covered
 Asm line 1398, src line 62 not covered
 23 / 59 (38.983050847457626%) asm lines covered
 
-## Coverage for primal_iminus
+## Coverage for `primal_iminus`
 
 Warnings present, coverage may be invalid!
 Asm line 3497, src line 62 not covered
@@ -1547,7 +1547,7 @@ Asm line 3587, src line 58 not covered
 Asm line 3588, src line 58 not covered
 28 / 94 (29.78723404255319%) asm lines covered
 
-## Coverage for spec_qsort
+## Coverage for `spec_qsort`
 
 Warnings present, coverage may be invalid!
 Asm line 4564, src line 130 not covered
@@ -1840,11 +1840,11 @@ Asm line 5058, src line 125 not covered
 Asm line 5059, src line 125 not covered
 153 / 441 (34.69387755102041%) asm lines covered
 
-## Coverage for swapfunc
+## Coverage for `swapfunc`
 
 83 / 83 (100%) asm lines covered
 
-## Coverage for price_out_impl
+## Coverage for `price_out_impl`
 
 Asm line 2171, src line 558 not covered
 Asm line 2172, src line 559 not covered
@@ -2260,20 +2260,20 @@ Asm line 2669, src line 0 not covered
 Asm line 2670, src line 780 not covered
 90 / 502 (17.928286852589643%) asm lines covered
 
-## Coverage for med3
+## Coverage for `med3`
 
 22 / 22 (100%) asm lines covered
 
-## Coverage for getfree
+## Coverage for `getfree`
 
 32 / 32 (100%) asm lines covered
 
-## Coverage for global_opt
+## Coverage for `global_opt`
 
 Warnings present, coverage may be invalid!
 47 / 47 (100%) asm lines covered
 
-## Coverage for update_tree
+## Coverage for `update_tree`
 
 Warnings present, coverage may be invalid!
 Asm line 3241, src line 30 not covered
@@ -2458,7 +2458,7 @@ Asm line 3462, src line 168 not covered
 Asm line 3465, src line 172 not covered
 56 / 236 (23.728813559322035%) asm lines covered
 
-## Coverage for marc_arcs
+## Coverage for `marc_arcs`
 
 Asm line 1495, src line 0 not covered
 Asm line 1496, src line 153 not covered
@@ -2547,7 +2547,7 @@ Asm line 1594, src line 199 not covered
 Asm line 1595, src line 201 not covered
 30 / 115 (26.08695652173913%) asm lines covered
 
-## Coverage for flow_cost
+## Coverage for `flow_cost`
 
 Warnings present, coverage may be invalid!
 Asm line 339, src line 81 not covered
@@ -2612,7 +2612,7 @@ Asm line 433, src line 100 not covered
 Asm line 434, src line 100 not covered
 45 / 105 (42.857142857142854%) asm lines covered
 
-## Coverage for dual_feasible
+## Coverage for `dual_feasible`
 
 Asm line 751, src line 308 not covered
 Asm line 752, src line 308 not covered
@@ -2649,7 +2649,7 @@ Asm line 794, src line 355 not covered
 Asm line 795, src line 356 not covered
 21 / 54 (38.88888888888889%) asm lines covered
 
-## Coverage for getArcPosition
+## Coverage for `getArcPosition`
 
 Warnings present, coverage may be invalid!
 Asm line cfl=runtime/Intrinsic/klee_div_zero_check.c, src line undefined not covered
@@ -2662,7 +2662,7 @@ Asm line calls=23, src line 5288 not covered
 Asm line 468, src line 146 not covered
 30 / 38 (78.94736842105263%) asm lines covered
 
-## Coverage for switch_arcs
+## Coverage for `switch_arcs`
 
 Asm line 1988, src line 425 not covered
 Asm line 1989, src line 0 not covered
@@ -2719,11 +2719,11 @@ Asm line 2054, src line 417 not covered
 Asm line 2055, src line 417 not covered
 49 / 102 (48.03921568627451%) asm lines covered
 
-## Coverage for start
+## Coverage for `start`
 
 1 / 1 (100%) asm lines covered
 
-## Coverage for write_circulations
+## Coverage for `write_circulations`
 
 Warnings present, coverage may be invalid!
 Asm line 3059, src line 0 not covered
@@ -2789,7 +2789,7 @@ Asm line 3138, src line 0 not covered
 Asm line 3139, src line 87 not covered
 25 / 86 (29.069767441860467%) asm lines covered
 
-## Coverage for suspend_impl
+## Coverage for `suspend_impl`
 
 Asm line 2780, src line 819 not covered
 Asm line 2781, src line 819 not covered
@@ -2878,7 +2878,7 @@ Asm line 2908, src line 869 not covered
 Asm line 2909, src line 870 not covered
 73 / 158 (46.20253164556962%) asm lines covered
 
-## Coverage for cost_compare
+## Coverage for `cost_compare`
 
 Asm line 4205, src line 68 not covered
 Asm line 4206, src line 68 not covered
@@ -2902,11 +2902,11 @@ Asm line 4229, src line 0 not covered
 Asm line 4230, src line 76 not covered
 5 / 25 (20%) asm lines covered
 
-## Coverage for write_objective_value
+## Coverage for `write_objective_value`
 
 13 / 13 (100%) asm lines covered
 
-## Coverage for refreshPositions
+## Coverage for `refreshPositions`
 
 Asm line 1428, src line 96 not covered
 Asm line 1429, src line 96 not covered
@@ -2924,7 +2924,7 @@ Asm line 1444, src line 94 not covered
 Asm line 1445, src line 94 not covered
 28 / 42 (66.66666666666666%) asm lines covered
 
-## Coverage for resize_prob
+## Coverage for `resize_prob`
 
 Asm line 1659, src line 244 not covered
 Asm line 1660, src line 244 not covered
@@ -2950,11 +2950,11 @@ Asm line 1685, src line 203 not covered
 Asm line 1686, src line 243 not covered
 60 / 82 (73.17073170731707%) asm lines covered
 
-## Coverage for primal_net_simplex
+## Coverage for `primal_net_simplex`
 
 27 / 27 (100%) asm lines covered
 
-## Coverage for master
+## Coverage for `master`
 
 Asm line 3892, src line 0 not covered
 Asm line 3893, src line 0 not covered
@@ -3142,20 +3142,20 @@ Asm line 4114, src line 169 not covered
 Asm line 4117, src line 297 not covered
 32 / 216 (14.814814814814813%) asm lines covered
 
-## Coverage for getOriginalArcPosition
+## Coverage for `getOriginalArcPosition`
 
 3 / 3 (100%) asm lines covered
 
-## Coverage for bea_is_dual_infeasible
+## Coverage for `bea_is_dual_infeasible`
 
 17 / 17 (100%) asm lines covered
 
-## Coverage for set_static_vars
+## Coverage for `set_static_vars`
 
 Warnings present, coverage may be invalid!
 10 / 10 (100%) asm lines covered
 
-## Coverage for primal_start_artificial
+## Coverage for `primal_start_artificial`
 
 Warnings present, coverage may be invalid!
 Asm line 2927, src line 42 not covered
@@ -3250,7 +3250,7 @@ Asm line 3027, src line 88 not covered
 Asm line 3028, src line 90 not covered
 9 / 99 (9.090909090909092%) asm lines covered
 
-## Coverage for primal_feasible
+## Coverage for `primal_feasible`
 
 Asm line 672, src line 0 not covered
 Asm line 673, src line 255 not covered
@@ -3287,7 +3287,7 @@ Asm line 713, src line 235 not covered
 Asm line 714, src line 252 not covered
 29 / 62 (46.774193548387096%) asm lines covered
 
-## Coverage for refresh_neighbour_lists
+## Coverage for `refresh_neighbour_lists`
 
 Warnings present, coverage may be invalid!
 Asm line 292, src line 50 not covered
@@ -3310,7 +3310,7 @@ Asm line 308, src line 48 not covered
 Asm line 309, src line 48 not covered
 42 / 60 (70%) asm lines covered
 
-## Coverage for calculate_max_redcost
+## Coverage for `calculate_max_redcost`
 
 Asm line 1916, src line 395 not covered
 Asm line 1917, src line 395 not covered
@@ -3324,7 +3324,7 @@ Asm line 1928, src line 393 not covered
 Asm line 1929, src line 393 not covered
 15 / 25 (60%) asm lines covered
 
-## Coverage for replace_weaker_arc
+## Coverage for `replace_weaker_arc`
 
 Asm line 1835, src line 340 not covered
 Asm line 1836, src line 340 not covered
@@ -3379,7 +3379,7 @@ Asm line 1890, src line 314 not covered
 Asm line 1891, src line 340 not covered
 39 / 90 (43.333333333333336%) asm lines covered
 
-## Coverage for worker
+## Coverage for `worker`
 
 Warnings present, coverage may be invalid!
 Asm line cfl=runtime/Intrinsic/klee_div_zero_check.c, src line undefined not covered
@@ -3395,7 +3395,7 @@ Asm line 3844, src line 114 not covered
 Asm line 3851, src line 121 not covered
 84 / 95 (88.42105263157895%) asm lines covered
 
-## Coverage for insert_new_arc
+## Coverage for `insert_new_arc`
 
 Asm line 1726, src line 281 not covered
 Asm line 1727, src line 282 not covered
@@ -3455,7 +3455,7 @@ Asm line 1786, src line 287 not covered
 Asm line 1789, src line 306 not covered
 13 / 69 (18.84057971014493%) asm lines covered
 
-## Coverage for markBaskets
+## Coverage for `markBaskets`
 
 Warnings present, coverage may be invalid!
 Asm line 3667, src line 46 not covered
@@ -3523,7 +3523,7 @@ Asm line 3742, src line 45 not covered
 Asm line 3745, src line 70 not covered
 17 / 80 (21.25%) asm lines covered
 
-## Coverage for arc_compare
+## Coverage for `arc_compare`
 
 Asm line 2686, src line 37 not covered
 Asm line 2687, src line 37 not covered
@@ -3542,7 +3542,7 @@ Asm line 2705, src line 0 not covered
 Asm line 2706, src line 45 not covered
 6 / 21 (28.57142857142857%) asm lines covered
 
-## Coverage for flow_org_cost
+## Coverage for `flow_org_cost`
 
 Asm line 527, src line 171 not covered
 Asm line 528, src line 190 not covered
@@ -3603,7 +3603,7 @@ Asm line 622, src line 204 not covered
 Asm line 623, src line 204 not covered
 53 / 110 (48.18181818181818%) asm lines covered
 
-## Coverage for read_min
+## Coverage for `read_min`
 
 Warnings present, coverage may be invalid!
 Asm line 944, src line 0 not covered
@@ -3928,7 +3928,7 @@ Asm line 1296, src line 226 not covered
 Asm line 1297, src line 226 not covered
 69 / 389 (17.737789203084834%) asm lines covered
 
-## Coverage for primal_bea_mpp
+## Coverage for `primal_bea_mpp`
 
 Asm line 4266, src line 102 not covered
 Asm line 4267, src line 102 not covered
@@ -4101,7 +4101,7 @@ Asm line 4477, src line 0 not covered
 Asm line 4478, src line 188 not covered
 26 / 195 (13.333333333333334%) asm lines covered
 
-## Coverage for primal_update_flow
+## Coverage for `primal_update_flow`
 
 Warnings present, coverage may be invalid!
 Asm line 3635, src line 49 not covered
