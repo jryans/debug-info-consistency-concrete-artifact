@@ -20,7 +20,7 @@ find ./symbolic-trace -type d | xargs rm -rf
 
 # Explore all functions to build symbolic traces
 echo "## Build symbolic traces for \`${TARGET_NAME}\` (Clang ${version}, ${level})"
-KLEE_TRACE_OPTS="--independent-functions --output-dir=symbolic-trace --write-no-tests --max-solver-time=30s --max-time=30s"
+KLEE_TRACE_OPTS="--independent-functions --output-dir=symbolic-trace --write-no-tests --exit-on-function-coverage --max-solver-time=30s --max-time=30s"
 ${KLEE} ${KLEE_COMMON_OPTS} ${KLEE_TRACE_OPTS} "$@" ${TARGET_NAME}.bc
 
 # Check whether each function is fully covered
