@@ -26,6 +26,9 @@ function checkFunctionCoverage(functionPath) {
       if (line.startsWith("fn=") || line.startsWith("fl=") || line == "") {
         break;
       }
+      if (line.includes("=")) {
+        throw new Error("Unexpected line: " + line);
+      }
       // Examine cells of interest
       const [asmLine, srcLine, coveredStr] = line.split(" ");
       const covered = coveredStr == "1";
