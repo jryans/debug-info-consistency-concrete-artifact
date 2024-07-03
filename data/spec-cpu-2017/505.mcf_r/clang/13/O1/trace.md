@@ -108,17 +108,21 @@ KLEE: ERROR: mcfutil.c:61: memory error: out of bound pointer
 KLEE: NOTE: now ignoring this error at this location
 KLEE: WARNING ONCE: silently concretizing (reason: floating point) expression (ReadLSB w64 N0:(Extract w32 0 (Add w64 0x210
                                          (Sub w64 (ReadLSB w64 0x0 flow_cost.net)
-                                                  0x1089878C0))) const_arr37) to value 0x0 (mcfutil.c:118)
+                                                  0x10E2898C0))) const_arr37) to value 0x0 (mcfutil.c:118)
+KLEE: ERROR: mcfutil.c:87: memory error: out of bound pointer
+KLEE: NOTE: now ignoring this error at this location
 KLEE: ERROR: mcfutil.c:81: memory error: out of bound pointer
 KLEE: NOTE: now ignoring this error at this location
 KLEE: ERROR: mcfutil.c:81: memory error: out of bound pointer
+KLEE: NOTE: now ignoring this error at this location
+KLEE: ERROR: mcfutil.c:93: memory error: out of bound pointer
 KLEE: NOTE: now ignoring this error at this location
 KLEE: HaltTimer invoked
 KLEE: halting execution, dumping remaining states
 
-KLEE: done: total instructions = 175
+KLEE: done: total instructions = 179
 KLEE: done: completed paths = 1
-KLEE: done: partially completed paths = 142
+KLEE: done: partially completed paths = 181
 KLEE: done: generated tests = 0
 
 ## Running `start` in independent function mode
@@ -160,48 +164,8 @@ KLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check
 KLEE: WARNING: Unable to load source file `mcfutil.c`
 KLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
 KLEE: WARNING: Unable to load source file `mcfutil.c`
-KLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-KLEE: WARNING: Unable to load source file `mcfutil.c`
-KLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-KLEE: WARNING: Unable to load source file `mcfutil.c`
-KLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-KLEE: WARNING: Unable to load source file `mcfutil.c`
-KLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-KLEE: WARNING: Unable to load source file `mcfutil.c`
-KLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-KLEE: WARNING: Unable to load source file `mcfutil.c`
-KLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-KLEE: WARNING: Unable to load source file `mcfutil.c`
-KLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-KLEE: WARNING: Unable to load source file `mcfutil.c`
-KLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-KLEE: WARNING: Unable to load source file `mcfutil.c`
-KLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-KLEE: WARNING: Unable to load source file `mcfutil.c`
-KLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-KLEE: WARNING: Unable to load source file `mcfutil.c`
-KLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-KLEE: WARNING: Unable to load source file `mcfutil.c`
-KLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-KLEE: WARNING: Unable to load source file `mcfutil.c`
-KLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-KLEE: WARNING: Unable to load source file `mcfutil.c`
 KLEE: ERROR: mcfutil.c:146: memory error: out of bound pointer
 KLEE: NOTE: now ignoring this error at this location
-KLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-KLEE: WARNING: Unable to load source file `mcfutil.c`
-KLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-KLEE: WARNING: Unable to load source file `mcfutil.c`
-KLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-KLEE: WARNING: Unable to load source file `mcfutil.c`
-KLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-KLEE: WARNING: Unable to load source file `mcfutil.c`
-KLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-KLEE: WARNING: Unable to load source file `mcfutil.c`
-KLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-KLEE: WARNING: Unable to load source file `mcfutil.c`
-KLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
-KLEE: WARNING: Unable to load source file `mcfutil.c`
 KLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
 KLEE: WARNING: Unable to load source file `mcfutil.c`
 KLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
@@ -211,9 +175,9 @@ KLEE: WARNING: Unable to load source file `mcfutil.c`
 KLEE: Function covered, halting execution
 KLEE: halting execution, dumping remaining states
 
-KLEE: done: total instructions = 192
+KLEE: done: total instructions = 96
 KLEE: done: completed paths = 1
-KLEE: done: partially completed paths = 45
+KLEE: done: partially completed paths = 44
 KLEE: done: generated tests = 0
 
 ## Running `getOriginalArcPosition` in independent function mode
@@ -233,16 +197,12 @@ KLEE: ERROR: mcfutil.c:171: memory error: out of bound pointer
 KLEE: NOTE: now ignoring this error at this location
 KLEE: ERROR: mcfutil.c:190: memory error: out of bound pointer
 KLEE: NOTE: now ignoring this error at this location
-KLEE: ERROR: mcfutil.c:190: memory error: out of bound pointer
-KLEE: NOTE: now ignoring this error at this location
-KLEE: ERROR: mcfutil.c:201: memory error: out of bound pointer
-KLEE: NOTE: now ignoring this error at this location
 KLEE: HaltTimer invoked
 KLEE: halting execution, dumping remaining states
 
-KLEE: done: total instructions = 144
+KLEE: done: total instructions = 137
 KLEE: done: completed paths = 1
-KLEE: done: partially completed paths = 179
+KLEE: done: partially completed paths = 139
 KLEE: done: generated tests = 0
 
 ## Running `primal_feasible` in independent function mode
@@ -254,15 +214,15 @@ KLEE: ERROR: mcfutil.c:249: memory error: out of bound pointer
 KLEE: NOTE: now ignoring this error at this location
 KLEE: ERROR: mcfutil.c:0: memory error: out of bound pointer
 KLEE: NOTE: now ignoring this error at this location
-KLEE: ERROR: mcfutil.c:250: memory error: out of bound pointer
-KLEE: NOTE: now ignoring this error at this location
 KLEE: ERROR: mcfutil.c:254: memory error: out of bound pointer
+KLEE: NOTE: now ignoring this error at this location
+KLEE: ERROR: mcfutil.c:255: memory error: out of bound pointer
 KLEE: NOTE: now ignoring this error at this location
 KLEE: HaltTimer invoked
 KLEE: halting execution, dumping remaining states
 
 KLEE: done: total instructions = 135
-KLEE: done: completed paths = 3
+KLEE: done: completed paths = 2
 KLEE: done: partially completed paths = 139
 KLEE: done: generated tests = 0
 
@@ -273,14 +233,12 @@ KLEE: ERROR: mcfutil.c:306: memory error: out of bound pointer
 KLEE: NOTE: now ignoring this error at this location
 KLEE: ERROR: mcfutil.c:308: memory error: out of bound pointer
 KLEE: NOTE: now ignoring this error at this location
-KLEE: ERROR: mcfutil.c:308: memory error: out of bound pointer
-KLEE: NOTE: now ignoring this error at this location
 KLEE: HaltTimer invoked
 KLEE: halting execution, dumping remaining states
 
-KLEE: done: total instructions = 102
-KLEE: done: completed paths = 4
-KLEE: done: partially completed paths = 165
+KLEE: done: total instructions = 133
+KLEE: done: completed paths = 6
+KLEE: done: partially completed paths = 47
 KLEE: done: generated tests = 0
 
 ## Running `getfree` in independent function mode
@@ -293,9 +251,9 @@ KLEE: NOTE: now ignoring this error at this location
 KLEE: Function covered, halting execution
 KLEE: halting execution, dumping remaining states
 
-KLEE: done: total instructions = 258
-KLEE: done: completed paths = 4
-KLEE: done: partially completed paths = 74
+KLEE: done: total instructions = 178
+KLEE: done: completed paths = 1
+KLEE: done: partially completed paths = 68
 KLEE: done: generated tests = 0
 
 ## Running `read_min` in independent function mode
@@ -310,12 +268,16 @@ KLEE: ERROR: readmin.c:55: memory error: out of bound pointer
 KLEE: NOTE: now ignoring this error at this location
 KLEE: ERROR: readmin.c:58: memory error: out of bound pointer
 KLEE: NOTE: now ignoring this error at this location
+KLEE: ERROR: readmin.c:137: memory error: object read only
+KLEE: NOTE: now ignoring this error at this location
+KLEE: ERROR: readmin.c:137: memory error: out of bound pointer
+KLEE: NOTE: now ignoring this error at this location
 KLEE: HaltTimer invoked
 KLEE: halting execution, dumping remaining states
 
-KLEE: done: total instructions = 35882
-KLEE: done: completed paths = 2
-KLEE: done: partially completed paths = 53
+KLEE: done: total instructions = 825
+KLEE: done: completed paths = 17
+KLEE: done: partially completed paths = 144
 KLEE: done: generated tests = 0
 
 ## Running `refreshArcPointers` in independent function mode
@@ -329,9 +291,9 @@ KLEE: NOTE: now ignoring this error at this location
 KLEE: HaltTimer invoked
 KLEE: halting execution, dumping remaining states
 
-KLEE: done: total instructions = 62
+KLEE: done: total instructions = 61
 KLEE: done: completed paths = 3
-KLEE: done: partially completed paths = 134
+KLEE: done: partially completed paths = 90
 KLEE: done: generated tests = 0
 
 ## Running `refreshPositions` in independent function mode
@@ -346,9 +308,9 @@ KLEE: NOTE: now ignoring this error at this location
 KLEE: Function covered, halting execution
 KLEE: halting execution, dumping remaining states
 
-KLEE: done: total instructions = 151
+KLEE: done: total instructions = 148
 KLEE: done: completed paths = 3
-KLEE: done: partially completed paths = 105
+KLEE: done: partially completed paths = 104
 KLEE: done: generated tests = 0
 
 ## Running `marc_arcs` in independent function mode
@@ -375,9 +337,9 @@ KLEE: NOTE: now ignoring this error at this location
 KLEE: HaltTimer invoked
 KLEE: halting execution, dumping remaining states
 
-KLEE: done: total instructions = 127
+KLEE: done: total instructions = 116
 KLEE: done: completed paths = 0
-KLEE: done: partially completed paths = 1545
+KLEE: done: partially completed paths = 1214
 KLEE: done: generated tests = 0
 
 ## Running `resize_prob` in independent function mode
@@ -385,9 +347,9 @@ KLEE: ERROR: implicit.c:217: memory error: out of bound pointer
 KLEE: NOTE: now ignoring this error at this location
 KLEE: ERROR: implicit.c:217: memory error: out of bound pointer
 KLEE: NOTE: now ignoring this error at this location
-KLEE: ERROR: implicit.c:217: memory error: object read only
-KLEE: NOTE: now ignoring this error at this location
 KLEE: ERROR: implicit.c:229: memory error: out of bound pointer
+KLEE: NOTE: now ignoring this error at this location
+KLEE: ERROR: implicit.c:217: memory error: object read only
 KLEE: NOTE: now ignoring this error at this location
 KLEE: ERROR: implicit.c:240: memory error: out of bound pointer
 KLEE: NOTE: now ignoring this error at this location
@@ -398,7 +360,7 @@ KLEE: NOTE: now ignoring this error at this location
 KLEE: HaltTimer invoked
 KLEE: halting execution, dumping remaining states
 
-KLEE: done: total instructions = 195
+KLEE: done: total instructions = 194
 KLEE: done: completed paths = 3
 KLEE: done: partially completed paths = 95
 KLEE: done: generated tests = 0
@@ -412,12 +374,14 @@ KLEE: ERROR: implicit.c:280: memory error: out of bound pointer
 KLEE: NOTE: now ignoring this error at this location
 KLEE: ERROR: implicit.c:281: memory error: out of bound pointer
 KLEE: NOTE: now ignoring this error at this location
+KLEE: ERROR: implicit.c:282: memory error: out of bound pointer
+KLEE: NOTE: now ignoring this error at this location
 KLEE: HaltTimer invoked
 KLEE: halting execution, dumping remaining states
 
-KLEE: done: total instructions = 22
+KLEE: done: total instructions = 25
 KLEE: done: completed paths = 0
-KLEE: done: partially completed paths = 52
+KLEE: done: partially completed paths = 51
 KLEE: done: generated tests = 0
 
 ## Running `replace_weaker_arc` in independent function mode
@@ -442,9 +406,9 @@ KLEE: NOTE: now ignoring this error at this location
 KLEE: HaltTimer invoked
 KLEE: halting execution, dumping remaining states
 
-KLEE: done: total instructions = 103
-KLEE: done: completed paths = 2
-KLEE: done: partially completed paths = 67
+KLEE: done: total instructions = 77
+KLEE: done: completed paths = 1
+KLEE: done: partially completed paths = 61
 KLEE: done: generated tests = 0
 
 ## Running `calculate_max_redcost` in independent function mode
@@ -520,7 +484,7 @@ KLEE: halting execution, dumping remaining states
 
 KLEE: done: total instructions = 22
 KLEE: done: completed paths = 0
-KLEE: done: partially completed paths = 292
+KLEE: done: partially completed paths = 167
 KLEE: done: generated tests = 0
 
 ## Running `suspend_impl` in independent function mode
@@ -530,12 +494,14 @@ KLEE: ERROR: implicit.c:801: memory error: out of bound pointer
 KLEE: NOTE: now ignoring this error at this location
 KLEE: ERROR: implicit.c:802: memory error: out of bound pointer
 KLEE: NOTE: now ignoring this error at this location
+KLEE: ERROR: implicit.c:819: memory error: out of bound pointer
+KLEE: NOTE: now ignoring this error at this location
 KLEE: HaltTimer invoked
 KLEE: halting execution, dumping remaining states
 
-KLEE: done: total instructions = 250
+KLEE: done: total instructions = 252
 KLEE: done: completed paths = 2
-KLEE: done: partially completed paths = 51
+KLEE: done: partially completed paths = 100
 KLEE: done: generated tests = 0
 
 ## Running `primal_start_artificial` in independent function mode
@@ -544,16 +510,12 @@ KLEE: ERROR: pstart.c:40: memory error: out of bound pointer
 KLEE: NOTE: now ignoring this error at this location
 KLEE: ERROR: pstart.c:41: memory error: out of bound pointer
 KLEE: NOTE: now ignoring this error at this location
-KLEE: ERROR: pstart.c:41: memory error: object read only
-KLEE: NOTE: now ignoring this error at this location
-KLEE: ERROR: pstart.c:42: memory error: out of bound pointer
-KLEE: NOTE: now ignoring this error at this location
 KLEE: HaltTimer invoked
 KLEE: halting execution, dumping remaining states
 
-KLEE: done: total instructions = 44
+KLEE: done: total instructions = 61
 KLEE: done: completed paths = 0
-KLEE: done: partially completed paths = 80
+KLEE: done: partially completed paths = 40
 KLEE: done: generated tests = 0
 
 ## Running `write_circulations` in independent function mode
@@ -569,9 +531,9 @@ KLEE: NOTE: now ignoring this error at this location
 KLEE: HaltTimer invoked
 KLEE: halting execution, dumping remaining states
 
-KLEE: done: total instructions = 72
-KLEE: done: completed paths = 2
-KLEE: done: partially completed paths = 92
+KLEE: done: total instructions = 59
+KLEE: done: completed paths = 1
+KLEE: done: partially completed paths = 91
 KLEE: done: generated tests = 0
 
 ## Running `write_objective_value` in independent function mode
@@ -589,20 +551,18 @@ KLEE: ERROR: treeup.c:72: memory error: out of bound pointer
 KLEE: NOTE: now ignoring this error at this location
 KLEE: ERROR: treeup.c:0: memory error: out of bound pointer
 KLEE: NOTE: now ignoring this error at this location
-KLEE: ERROR: treeup.c:81: memory error: out of bound pointer
-KLEE: NOTE: now ignoring this error at this location
 KLEE: ERROR: treeup.c:0: memory error: object read only
 KLEE: NOTE: now ignoring this error at this location
-KLEE: ERROR: treeup.c:104: memory error: out of bound pointer
+KLEE: ERROR: treeup.c:81: memory error: out of bound pointer
 KLEE: NOTE: now ignoring this error at this location
-KLEE: ERROR: treeup.c:0: memory error: out of bound pointer
+KLEE: ERROR: treeup.c:104: memory error: out of bound pointer
 KLEE: NOTE: now ignoring this error at this location
 KLEE: HaltTimer invoked
 KLEE: halting execution, dumping remaining states
 
-KLEE: done: total instructions = 506
+KLEE: done: total instructions = 385
 KLEE: done: completed paths = 0
-KLEE: done: partially completed paths = 703
+KLEE: done: partially completed paths = 689
 KLEE: done: generated tests = 0
 
 ## Running `primal_iminus` in independent function mode
@@ -624,7 +584,7 @@ KLEE: halting execution, dumping remaining states
 
 KLEE: done: total instructions = 78
 KLEE: done: completed paths = 18
-KLEE: done: partially completed paths = 359
+KLEE: done: partially completed paths = 358
 KLEE: done: generated tests = 0
 
 ## Running `primal_update_flow` in independent function mode
@@ -637,12 +597,14 @@ KLEE: ERROR: pflowup.c:43: memory error: out of bound pointer
 KLEE: NOTE: now ignoring this error at this location
 KLEE: ERROR: pflowup.c:51: memory error: out of bound pointer
 KLEE: NOTE: now ignoring this error at this location
-KLEE: Function covered, halting execution
+KLEE: ERROR: pflowup.c:43: memory error: object read only
+KLEE: NOTE: now ignoring this error at this location
+KLEE: HaltTimer invoked
 KLEE: halting execution, dumping remaining states
 
-KLEE: done: total instructions = 113
+KLEE: done: total instructions = 183
 KLEE: done: completed paths = 2
-KLEE: done: partially completed paths = 99
+KLEE: done: partially completed paths = 150
 KLEE: done: generated tests = 0
 
 ## Running `markBaskets` in independent function mode
@@ -712,6 +674,54 @@ KLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check
 KLEE: WARNING: Unable to load source file `psimplex.c`
 KLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
 KLEE: WARNING: Unable to load source file `psimplex.c`
+KLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+KLEE: WARNING: Unable to load source file `psimplex.c`
+KLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+KLEE: WARNING: Unable to load source file `psimplex.c`
+KLEE: ERROR: psimplex.c:108: memory error: out of bound pointer
+KLEE: NOTE: now ignoring this error at this location
+KLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+KLEE: WARNING: Unable to load source file `psimplex.c`
+KLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+KLEE: WARNING: Unable to load source file `psimplex.c`
+KLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+KLEE: WARNING: Unable to load source file `psimplex.c`
+KLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+KLEE: WARNING: Unable to load source file `psimplex.c`
+KLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+KLEE: WARNING: Unable to load source file `psimplex.c`
+KLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+KLEE: WARNING: Unable to load source file `psimplex.c`
+KLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+KLEE: WARNING: Unable to load source file `psimplex.c`
+KLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+KLEE: WARNING: Unable to load source file `psimplex.c`
+KLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+KLEE: WARNING: Unable to load source file `psimplex.c`
+KLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+KLEE: WARNING: Unable to load source file `psimplex.c`
+KLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+KLEE: WARNING: Unable to load source file `psimplex.c`
+KLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+KLEE: WARNING: Unable to load source file `psimplex.c`
+KLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+KLEE: WARNING: Unable to load source file `psimplex.c`
+KLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+KLEE: WARNING: Unable to load source file `psimplex.c`
+KLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+KLEE: WARNING: Unable to load source file `psimplex.c`
+KLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+KLEE: WARNING: Unable to load source file `psimplex.c`
+KLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+KLEE: WARNING: Unable to load source file `psimplex.c`
+KLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+KLEE: WARNING: Unable to load source file `psimplex.c`
+KLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+KLEE: WARNING: Unable to load source file `psimplex.c`
+KLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+KLEE: WARNING: Unable to load source file `psimplex.c`
+KLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+KLEE: WARNING: Unable to load source file `psimplex.c`
 KLEE: ERROR: psimplex.c:108: memory error: out of bound pointer
 KLEE: NOTE: now ignoring this error at this location
 KLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
@@ -756,8 +766,10 @@ KLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check
 KLEE: WARNING: Unable to load source file `psimplex.c`
 KLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
 KLEE: WARNING: Unable to load source file `psimplex.c`
-KLEE: ERROR: psimplex.c:108: memory error: out of bound pointer
-KLEE: NOTE: now ignoring this error at this location
+KLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+KLEE: WARNING: Unable to load source file `psimplex.c`
+KLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
+KLEE: WARNING: Unable to load source file `psimplex.c`
 KLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
 KLEE: WARNING: Unable to load source file `psimplex.c`
 KLEE: WARNING: Unable to load source file `runtime/Intrinsic/klee_div_zero_check.c`
@@ -913,9 +925,9 @@ KLEE: WARNING: Unable to load source file `psimplex.c`
 KLEE: HaltTimer invoked
 KLEE: halting execution, dumping remaining states
 
-KLEE: done: total instructions = 706
+KLEE: done: total instructions = 907
 KLEE: done: completed paths = 0
-KLEE: done: partially completed paths = 122
+KLEE: done: partially completed paths = 137
 KLEE: done: generated tests = 0
 
 ## Running `master` in independent function mode
@@ -930,9 +942,9 @@ KLEE: NOTE: now ignoring this error at this location
 KLEE: HaltTimer invoked
 KLEE: halting execution, dumping remaining states
 
-KLEE: done: total instructions = 225
+KLEE: done: total instructions = 224
 KLEE: done: completed paths = 0
-KLEE: done: partially completed paths = 67
+KLEE: done: partially completed paths = 68
 KLEE: done: generated tests = 0
 
 ## Running `primal_net_simplex` in independent function mode
@@ -970,7 +982,7 @@ KLEE: halting execution, dumping remaining states
 
 KLEE: done: total instructions = 24
 KLEE: done: completed paths = 1
-KLEE: done: partially completed paths = 95
+KLEE: done: partially completed paths = 94
 KLEE: done: generated tests = 0
 
 ## Running `cost_compare` in independent function mode
@@ -978,14 +990,12 @@ KLEE: ERROR: pbeampp.c:68: memory error: out of bound pointer
 KLEE: NOTE: now ignoring this error at this location
 KLEE: ERROR: pbeampp.c:68: memory error: out of bound pointer
 KLEE: NOTE: now ignoring this error at this location
-KLEE: ERROR: pbeampp.c:68: memory error: out of bound pointer
-KLEE: NOTE: now ignoring this error at this location
 KLEE: HaltTimer invoked
 KLEE: halting execution, dumping remaining states
 
-KLEE: done: total instructions = 22
+KLEE: done: total instructions = 16
 KLEE: done: completed paths = 0
-KLEE: done: partially completed paths = 166
+KLEE: done: partially completed paths = 83
 KLEE: done: generated tests = 0
 
 ## Running `primal_bea_mpp` in independent function mode
@@ -993,12 +1003,10 @@ KLEE: ERROR: pbeampp.c:100: memory error: out of bound pointer
 KLEE: NOTE: now ignoring this error at this location
 KLEE: ERROR: pbeampp.c:102: memory error: out of bound pointer
 KLEE: NOTE: now ignoring this error at this location
-KLEE: ERROR: pbeampp.c:102: memory error: out of bound pointer
-KLEE: NOTE: now ignoring this error at this location
 KLEE: HaltTimer invoked
 KLEE: halting execution, dumping remaining states
 
-KLEE: done: total instructions = 36
+KLEE: done: total instructions = 32
 KLEE: done: completed paths = 0
 KLEE: done: partially completed paths = 102
 KLEE: done: generated tests = 0
@@ -1051,12 +1059,16 @@ KLEE: ERROR: spec_qsort/spec_qsort.c:86: memory error: object read only
 KLEE: NOTE: now ignoring this error at this location
 KLEE: ERROR: spec_qsort/spec_qsort.c:84: memory error: object read only
 KLEE: NOTE: now ignoring this error at this location
+KLEE: ERROR: spec_qsort/spec_qsort.c:88: memory error: object read only
+KLEE: NOTE: now ignoring this error at this location
+KLEE: ERROR: spec_qsort/spec_qsort.c:86: memory error: object read only
+KLEE: NOTE: now ignoring this error at this location
 KLEE: HaltTimer invoked
 KLEE: halting execution, dumping remaining states
 
-KLEE: done: total instructions = 3613
-KLEE: done: completed paths = 18
-KLEE: done: partially completed paths = 1986
+KLEE: done: total instructions = 2904
+KLEE: done: completed paths = 17
+KLEE: done: partially completed paths = 1766
 KLEE: done: generated tests = 0
 
 ## Running `med3` in independent function mode
@@ -1072,6 +1084,7 @@ KLEE: done: generated tests = 0
 ## Coverage for `refreshArcPointers`
 
 Warnings present, coverage may be invalid!
+Asm line 1339, src line 64 not covered
 Asm line 1340, src line 64 not covered
 Asm line 1343, src line 64 not covered
 Asm line 1344, src line 64 not covered
@@ -1113,11 +1126,12 @@ Asm line 1395, src line 0 not covered
 Asm line 1396, src line 62 not covered
 Asm line 1397, src line 62 not covered
 Asm line 1398, src line 62 not covered
-18 / 59 (30.508474576271187%) asm lines covered
+17 / 59 (28.8135593220339%) asm lines covered
 
 ## Coverage for `primal_iminus`
 
 Warnings present, coverage may be invalid!
+Asm line 3497, src line 62 not covered
 Asm line 3498, src line 62 not covered
 Asm line 3501, src line 63 not covered
 Asm line 3502, src line 63 not covered
@@ -1183,7 +1197,7 @@ Asm line 3585, src line 0 not covered
 Asm line 3586, src line 0 not covered
 Asm line 3587, src line 58 not covered
 Asm line 3588, src line 58 not covered
-29 / 94 (30.851063829787233%) asm lines covered
+28 / 94 (29.78723404255319%) asm lines covered
 
 ## Coverage for `spec_qsort`
 
@@ -1480,20 +1494,15 @@ Asm line 5059, src line 125 not covered
 
 ## Coverage for `swapfunc`
 
-Asm line 5134, src line 86 not covered
-Asm line 5135, src line 86 not covered
-Asm line 5136, src line 86 not covered
 Asm line 5137, src line 86 not covered
 Asm line 5138, src line 86 not covered
 Asm line 5139, src line 86 not covered
 Asm line 5140, src line 86 not covered
-Asm line 5156, src line 88 not covered
-Asm line 5157, src line 88 not covered
 Asm line 5158, src line 88 not covered
 Asm line 5159, src line 88 not covered
 Asm line 5160, src line 88 not covered
 Asm line 5161, src line 88 not covered
-70 / 83 (84.33734939759037%) asm lines covered
+75 / 83 (90.36144578313254%) asm lines covered
 
 ## Coverage for `price_out_impl`
 
@@ -1940,6 +1949,20 @@ Asm line 3252, src line 0 not covered
 Asm line 3253, src line 89 not covered
 Asm line 3254, src line 90 not covered
 Asm line 3255, src line 90 not covered
+Asm line 3269, src line 0 not covered
+Asm line 3270, src line 0 not covered
+Asm line 3271, src line 107 not covered
+Asm line 3272, src line 107 not covered
+Asm line 3275, src line 30 not covered
+Asm line 3276, src line 107 not covered
+Asm line 3279, src line 30 not covered
+Asm line 3280, src line 30 not covered
+Asm line 3281, src line 30 not covered
+Asm line 3282, src line 30 not covered
+Asm line 3283, src line 30 not covered
+Asm line 3284, src line 30 not covered
+Asm line 3285, src line 0 not covered
+Asm line 3286, src line 0 not covered
 Asm line 3287, src line 0 not covered
 Asm line 3288, src line 0 not covered
 Asm line 3289, src line 0 not covered
@@ -2007,11 +2030,21 @@ Asm line 3358, src line 0 not covered
 Asm line 3359, src line 0 not covered
 Asm line 3360, src line 107 not covered
 Asm line 3361, src line 107 not covered
+Asm line 3364, src line 145 not covered
+Asm line 3365, src line 0 not covered
+Asm line 3366, src line 0 not covered
+Asm line 3367, src line 145 not covered
+Asm line 3368, src line 145 not covered
+Asm line 3371, src line 166 not covered
+Asm line 3374, src line 147 not covered
+Asm line 3377, src line 30 not covered
+Asm line 3378, src line 147 not covered
 Asm line 3381, src line 0 not covered
 Asm line 3382, src line 155 not covered
 Asm line 3383, src line 155 not covered
 Asm line 3386, src line 30 not covered
 Asm line 3387, src line 155 not covered
+Asm line 3390, src line 30 not covered
 Asm line 3391, src line 0 not covered
 Asm line 3392, src line 149 not covered
 Asm line 3393, src line 149 not covered
@@ -2051,6 +2084,7 @@ Asm line 3428, src line 155 not covered
 Asm line 3429, src line 0 not covered
 Asm line 3430, src line 155 not covered
 Asm line 3431, src line 155 not covered
+Asm line 3434, src line 0 not covered
 Asm line 3435, src line 168 not covered
 Asm line 3436, src line 168 not covered
 Asm line 3439, src line 30 not covered
@@ -2076,7 +2110,7 @@ Asm line 3460, src line 0 not covered
 Asm line 3461, src line 168 not covered
 Asm line 3462, src line 168 not covered
 Asm line 3465, src line 172 not covered
-87 / 236 (36.86440677966102%) asm lines covered
+62 / 236 (26.27118644067797%) asm lines covered
 
 ## Coverage for `marc_arcs`
 
@@ -2169,10 +2203,10 @@ Asm line 1595, src line 201 not covered
 ## Coverage for `flow_cost`
 
 Warnings present, coverage may be invalid!
+Asm line 340, src line 79 not covered
 Asm line 341, src line 0 not covered
 Asm line 342, src line 79 not covered
 Asm line 343, src line 79 not covered
-Asm line 368, src line 93 not covered
 Asm line 369, src line 93 not covered
 Asm line 370, src line 93 not covered
 Asm line 371, src line 93 not covered
@@ -2229,6 +2263,8 @@ Asm line 434, src line 100 not covered
 
 ## Coverage for `dual_feasible`
 
+Asm line 751, src line 308 not covered
+Asm line 752, src line 308 not covered
 Asm line 753, src line 308 not covered
 Asm line 754, src line 308 not covered
 Asm line 755, src line 308 not covered
@@ -2260,7 +2296,7 @@ Asm line 792, src line 354 not covered
 Asm line 793, src line 355 not covered
 Asm line 794, src line 355 not covered
 Asm line 795, src line 356 not covered
-23 / 54 (42.592592592592595%) asm lines covered
+21 / 54 (38.88888888888889%) asm lines covered
 
 ## Coverage for `getArcPosition`
 
@@ -2394,7 +2430,6 @@ Asm line 3139, src line 87 not covered
 
 ## Coverage for `suspend_impl`
 
-Asm line 2780, src line 819 not covered
 Asm line 2781, src line 819 not covered
 Asm line 2787, src line 820 not covered
 Asm line 2788, src line 820 not covered
@@ -2474,10 +2509,11 @@ Asm line 2906, src line 868 not covered
 Asm line 2907, src line 868 not covered
 Asm line 2908, src line 869 not covered
 Asm line 2909, src line 870 not covered
-78 / 158 (49.36708860759494%) asm lines covered
+79 / 158 (50%) asm lines covered
 
 ## Coverage for `cost_compare`
 
+Asm line 4205, src line 68 not covered
 Asm line 4206, src line 68 not covered
 Asm line 4207, src line 68 not covered
 Asm line 4208, src line 68 not covered
@@ -2497,7 +2533,7 @@ Asm line 4225, src line 72 not covered
 Asm line 4226, src line 72 not covered
 Asm line 4229, src line 0 not covered
 Asm line 4230, src line 76 not covered
-6 / 25 (24%) asm lines covered
+5 / 25 (20%) asm lines covered
 
 ## Coverage for `write_objective_value`
 
@@ -2739,6 +2775,9 @@ Warnings present, coverage may be invalid!
 ## Coverage for `primal_start_artificial`
 
 Warnings present, coverage may be invalid!
+Asm line 2927, src line 42 not covered
+Asm line 2928, src line 42 not covered
+Asm line 2929, src line 43 not covered
 Asm line 2930, src line 43 not covered
 Asm line 2931, src line 44 not covered
 Asm line 2932, src line 46 not covered
@@ -2826,16 +2865,10 @@ Asm line 3025, src line 87 not covered
 Asm line 3026, src line 88 not covered
 Asm line 3027, src line 88 not covered
 Asm line 3028, src line 90 not covered
-12 / 99 (12.121212121212121%) asm lines covered
+9 / 99 (9.090909090909092%) asm lines covered
 
 ## Coverage for `primal_feasible`
 
-Asm line 674, src line 255 not covered
-Asm line 675, src line 0 not covered
-Asm line 676, src line 256 not covered
-Asm line 677, src line 235 not covered
-Asm line 678, src line 256 not covered
-Asm line 679, src line 256 not covered
 Asm line 682, src line 258 not covered
 Asm line 683, src line 258 not covered
 Asm line 684, src line 258 not covered
@@ -2861,7 +2894,7 @@ Asm line 711, src line 0 not covered
 Asm line 712, src line 252 not covered
 Asm line 713, src line 235 not covered
 Asm line 714, src line 252 not covered
-31 / 62 (50%) asm lines covered
+37 / 62 (59.67741935483871%) asm lines covered
 
 ## Coverage for `refresh_neighbour_lists`
 
@@ -2967,8 +3000,6 @@ Asm line 3851, src line 121 not covered
 
 ## Coverage for `insert_new_arc`
 
-Asm line 1728, src line 282 not covered
-Asm line 1729, src line 283 not covered
 Asm line 1730, src line 283 not covered
 Asm line 1731, src line 284 not covered
 Asm line 1732, src line 284 not covered
@@ -3021,7 +3052,7 @@ Asm line 1784, src line 287 not covered
 Asm line 1785, src line 287 not covered
 Asm line 1786, src line 287 not covered
 Asm line 1789, src line 306 not covered
-15 / 69 (21.73913043478261%) asm lines covered
+17 / 69 (24.637681159420293%) asm lines covered
 
 ## Coverage for `markBaskets`
 
@@ -3111,10 +3142,16 @@ Asm line 2706, src line 45 not covered
 
 ## Coverage for `flow_org_cost`
 
+Asm line 526, src line 190 not covered
+Asm line 527, src line 171 not covered
+Asm line 528, src line 190 not covered
 Asm line 529, src line 188 not covered
 Asm line 530, src line 0 not covered
 Asm line 531, src line 188 not covered
 Asm line 532, src line 188 not covered
+Asm line 555, src line 0 not covered
+Asm line 556, src line 201 not covered
+Asm line 557, src line 201 not covered
 Asm line 558, src line 201 not covered
 Asm line 559, src line 201 not covered
 Asm line 560, src line 201 not covered
@@ -3167,113 +3204,11 @@ Asm line 620, src line 204 not covered
 Asm line 621, src line 0 not covered
 Asm line 622, src line 204 not covered
 Asm line 623, src line 204 not covered
-54 / 110 (49.09090909090909%) asm lines covered
+48 / 110 (43.63636363636363%) asm lines covered
 
 ## Coverage for `read_min`
 
 Warnings present, coverage may be invalid!
-Asm line 944, src line 0 not covered
-Asm line 945, src line 66 not covered
-Asm line 946, src line 64 not covered
-Asm line 949, src line 69 not covered
-Asm line 950, src line 69 not covered
-Asm line 953, src line 71 not covered
-Asm line 954, src line 71 not covered
-Asm line 955, src line 72 not covered
-Asm line 956, src line 72 not covered
-Asm line 957, src line 73 not covered
-Asm line 958, src line 73 not covered
-Asm line 959, src line 75 not covered
-Asm line 962, src line 78 not covered
-Asm line 963, src line 78 not covered
-Asm line 964, src line 78 not covered
-Asm line 965, src line 78 not covered
-Asm line 966, src line 78 not covered
-Asm line 967, src line 78 not covered
-Asm line 968, src line 78 not covered
-Asm line 969, src line 78 not covered
-Asm line 970, src line 78 not covered
-Asm line 971, src line 78 not covered
-Asm line 972, src line 78 not covered
-Asm line 973, src line 79 not covered
-Asm line 974, src line 79 not covered
-Asm line 975, src line 27 not covered
-Asm line 978, src line 87 not covered
-Asm line 979, src line 87 not covered
-Asm line 980, src line 87 not covered
-Asm line 981, src line 87 not covered
-Asm line 982, src line 87 not covered
-Asm line 983, src line 88 not covered
-Asm line 984, src line 88 not covered
-Asm line 985, src line 88 not covered
-Asm line 986, src line 88 not covered
-Asm line 987, src line 89 not covered
-Asm line 988, src line 89 not covered
-Asm line 989, src line 89 not covered
-Asm line 990, src line 89 not covered
-Asm line 991, src line 89 not covered
-Asm line 992, src line 89 not covered
-Asm line 993, src line 90 not covered
-Asm line 994, src line 90 not covered
-Asm line 995, src line 90 not covered
-Asm line 996, src line 90 not covered
-Asm line 997, src line 92 not covered
-Asm line 998, src line 92 not covered
-Asm line 999, src line 27 not covered
-Asm line 1000, src line 92 not covered
-Asm line 1001, src line 92 not covered
-Asm line 1004, src line 92 not covered
-Asm line 1005, src line 92 not covered
-Asm line 1006, src line 92 not covered
-Asm line 1009, src line 92 not covered
-Asm line 1010, src line 92 not covered
-Asm line 1011, src line 92 not covered
-Asm line 1014, src line 94 not covered
-Asm line 1015, src line 95 not covered
-Asm line 1016, src line 96 not covered
-Asm line 1019, src line 118 not covered
-Asm line 1020, src line 118 not covered
-Asm line 1021, src line 118 not covered
-Asm line 1022, src line 119 not covered
-Asm line 1023, src line 119 not covered
-Asm line 1024, src line 119 not covered
-Asm line 1025, src line 119 not covered
-Asm line 1026, src line 120 not covered
-Asm line 1027, src line 120 not covered
-Asm line 1028, src line 120 not covered
-Asm line 1029, src line 0 not covered
-Asm line 1030, src line 0 not covered
-Asm line 1031, src line 0 not covered
-Asm line 1032, src line 27 not covered
-Asm line 1033, src line 0 not covered
-Asm line 1034, src line 0 not covered
-Asm line 1035, src line 0 not covered
-Asm line 1036, src line 127 not covered
-Asm line 1037, src line 127 not covered
-Asm line 1038, src line 127 not covered
-Asm line 1041, src line 27 not covered
-Asm line 1042, src line 27 not covered
-Asm line 1043, src line 27 not covered
-Asm line 1044, src line 0 not covered
-Asm line 1045, src line 0 not covered
-Asm line 1046, src line 0 not covered
-Asm line 1047, src line 129 not covered
-Asm line 1048, src line 0 not covered
-Asm line 1049, src line 0 not covered
-Asm line 1050, src line 131 not covered
-Asm line 1051, src line 131 not covered
-Asm line 1052, src line 131 not covered
-Asm line 1055, src line 131 not covered
-Asm line 1056, src line 0 not covered
-Asm line 1057, src line 131 not covered
-Asm line 1058, src line 0 not covered
-Asm line 1059, src line 131 not covered
-Asm line 1060, src line 131 not covered
-Asm line 1063, src line 137 not covered
-Asm line 1064, src line 137 not covered
-Asm line 1065, src line 137 not covered
-Asm line 1066, src line 137 not covered
-Asm line 1067, src line 137 not covered
 Asm line 1068, src line 138 not covered
 Asm line 1069, src line 138 not covered
 Asm line 1070, src line 140 not covered
@@ -3394,15 +3329,6 @@ Asm line 1184, src line 0 not covered
 Asm line 1185, src line 127 not covered
 Asm line 1186, src line 127 not covered
 Asm line 1187, src line 127 not covered
-Asm line 1190, src line 127 not covered
-Asm line 1191, src line 0 not covered
-Asm line 1192, src line 0 not covered
-Asm line 1193, src line 127 not covered
-Asm line 1194, src line 177 not covered
-Asm line 1195, src line 177 not covered
-Asm line 1196, src line 177 not covered
-Asm line 1199, src line 0 not covered
-Asm line 1200, src line 0 not covered
 Asm line 1201, src line 0 not covered
 Asm line 1202, src line 181 not covered
 Asm line 1203, src line 181 not covered
@@ -3492,10 +3418,12 @@ Asm line 1294, src line 0 not covered
 Asm line 1295, src line 226 not covered
 Asm line 1296, src line 226 not covered
 Asm line 1297, src line 226 not covered
-69 / 389 (17.737789203084834%) asm lines covered
+180 / 389 (46.27249357326478%) asm lines covered
 
 ## Coverage for `primal_bea_mpp`
 
+Asm line 4266, src line 102 not covered
+Asm line 4267, src line 102 not covered
 Asm line 4268, src line 0 not covered
 Asm line 4269, src line 103 not covered
 Asm line 4270, src line 103 not covered
@@ -3663,13 +3591,18 @@ Asm line 4473, src line 186 not covered
 Asm line 4474, src line 186 not covered
 Asm line 4477, src line 0 not covered
 Asm line 4478, src line 188 not covered
-28 / 195 (14.358974358974358%) asm lines covered
+26 / 195 (13.333333333333334%) asm lines covered
 
 ## Coverage for `primal_update_flow`
 
 Warnings present, coverage may be invalid!
-35 / 35 (100%) asm lines covered
+Asm line 3620, src line 41 not covered
+Asm line 3621, src line 41 not covered
+Asm line 3622, src line 0 not covered
+Asm line 3623, src line 41 not covered
+Asm line 3624, src line 41 not covered
+30 / 35 (85.71428571428571%) asm lines covered
 
 ## Summary
 
-1495 / 3924 (38.098878695208974%) asm lines covered
+1574 / 3924 (40.11213047910296%) asm lines covered
