@@ -24,12 +24,12 @@ versions=(13 13 13)
 for i in ${!levels[*]}; do
   level=${levels[$i]}
   version=${versions[$i]}
-  echo "## Building \`${TARGET_NAME}\` (Clang ${version}, ${level})"
+  echo "## Building \`${TARGET_NAME}\` (Clang ${version}, ${level}) for bitcode"
 
   make clean
   git clean -f
 
-  ## Build
+  ## Build via bitcode collection wrapper
   cc_level_opts="CC_${level}_OPTS"
   make \
     CC=wllvm \
@@ -45,6 +45,21 @@ for i in ${!levels[*]}; do
   ## Disassemble bitcode for debugging
   $(llvm release-clang-lldb-${version}.0.0 llvm-dis) \
     "${SCRIPT_DIR}/clang/${version}/${level}/${TARGET_NAME}.bc"
+
+  echo "## Building \`${TARGET_NAME}\` (Clang ${version}, ${level}) for binary with debug info"
+
+  make clean
+  git clean -f
+
+  # JRS: For some reason, even though the wrapped steps above do produce a
+  # linked, native binary, it does _not_ contain debug info, at least on macOS.
+  # For now, work around this by building again normally.
+
+  ## Build for binary with debug info
+  cc_level_opts="CC_${level}_OPTS"
+  make \
+    CC="$(llvm release-clang-lldb-${version}.0.0 clang)" \
+    CFLAGS="${CC_COMMON_OPTS} ${CC_CLANG_OPTS} ${!cc_level_opts}"
 
   ## Gather debug info
   dsymutil --flat "${TARGET_PATH}"
