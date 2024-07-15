@@ -22,12 +22,12 @@
 +++ local program=check-debug-info
 +++ '[' -z check-debug-info ']'
 +++ echo /Users/jryans/Projects/klee/build-debug/bin/check-debug-info
-++ CHECK=/Users/jryans/Projects/klee/build-debug/bin/check-debug-info
-++ CHECK_OPTS='--debug-only=check-debug-info,independent-function,values-collector,variable --debug-execution-trace --max-forks=4 --tsv'
+++ SYM_CHECK=/Users/jryans/Projects/klee/build-debug/bin/check-debug-info
+++ SYM_CHECK_OPTS='--debug-only=check-debug-info,independent-function,values-collector,variable --debug-execution-trace --max-forks=4 --tsv'
 + level=O0-mem2reg
 + version=13
-+ echo '## Checking debug consistency of `git.o` (Clang 13, O0-mem2reg)'
-## Checking debug consistency of `git.o` (Clang 13, O0-mem2reg)
++ echo '## Checking symbolic debug consistency of `git.o` (Clang 13, O0-mem2reg)'
+## Checking symbolic debug consistency of `git.o` (Clang 13, O0-mem2reg)
 + /Users/jryans/Projects/klee/build-debug/bin/check-debug-info clang/13/O0/git.o.bc clang/13/O0-mem2reg/git.o.bc --debug-only=check-debug-info,independent-function,values-collector,variable --debug-execution-trace --max-forks=4 --tsv
 Checking clang/13/O0/git.o.bc and clang/13/O0-mem2reg/git.o.bc for debug info consistency…
 

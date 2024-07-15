@@ -15,10 +15,10 @@ source "${SCRIPT_DIR}/../../../../../vars.sh"
 # Clang O1 checked against O0
 level="O1"
 version="18"
-echo "## Checking debug consistency of \`${TARGET_NAME}\` (Clang ${version}, ${level})"
-${CHECK} \
-  ../O0/${TARGET_NAME}.bc \
-  ${TARGET_NAME}.bc \
-  ${CHECK_OPTS} \
-  --max-functions=10 \
-  "$@"
+echo "## Checking concrete debug consistency of \`${TARGET_NAME}\` (Clang ${version}, ${level})"
+${CON_CHECK} \
+  --include-function cmd_log \
+  ../O0/${TARGET_NAME} \
+  ${TARGET_NAME} \
+  -- \
+  log

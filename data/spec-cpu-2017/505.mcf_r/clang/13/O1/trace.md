@@ -30,8 +30,8 @@
 +++ local program=check-debug-info
 +++ '[' -z check-debug-info ']'
 +++ echo /Users/jryans/Projects/klee/build-release-debug/bin/check-debug-info
-++ CHECK=/Users/jryans/Projects/klee/build-release-debug/bin/check-debug-info
-++ CHECK_OPTS='--debug-only=check-debug-info,values-collector,variable --debug-execution-trace --disable-verify --output-stats=false --max-forks=32 --max-solver-time=5s --max-time=5s --search=random-path --tsv'
+++ SYM_CHECK=/Users/jryans/Projects/klee/build-release-debug/bin/check-debug-info
+++ SYM_CHECK_OPTS='--debug-only=check-debug-info,values-collector,variable --debug-execution-trace --disable-verify --output-stats=false --max-forks=32 --max-solver-time=5s --max-time=5s --search=random-path --tsv'
 + level=O1
 + version=13
 + find ./symbolic-trace -type d

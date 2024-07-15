@@ -22,12 +22,12 @@
 +++ local program=check-debug-info
 +++ '[' -z check-debug-info ']'
 +++ echo /Users/jryans/Projects/klee/build-release-debug/bin/check-debug-info
-++ CHECK=/Users/jryans/Projects/klee/build-release-debug/bin/check-debug-info
-++ CHECK_OPTS='--debug-only=check-debug-info,values-collector,variable --debug-execution-trace --disable-verify --max-functions=10 --max-forks=32 --max-time=5s --search=random-path --tsv'
+++ SYM_CHECK=/Users/jryans/Projects/klee/build-release-debug/bin/check-debug-info
+++ SYM_CHECK_OPTS='--debug-only=check-debug-info,values-collector,variable --debug-execution-trace --disable-verify --max-functions=10 --max-forks=32 --max-time=5s --search=random-path --tsv'
 + level=O1
 + version=13
-+ echo '## Checking debug consistency of `git` (Clang 13, O1)'
-## Checking debug consistency of `git` (Clang 13, O1)
++ echo '## Checking symbolic debug consistency of `git` (Clang 13, O1)'
+## Checking symbolic debug consistency of `git` (Clang 13, O1)
 + /Users/jryans/Projects/klee/build-release-debug/bin/check-debug-info ../O0/git.bc git.bc --debug-only=check-debug-info,values-collector,variable --debug-execution-trace --disable-verify --max-functions=10 --max-forks=32 --max-time=5s --search=random-path --tsv
 Checking ../O0/git.bc and git.bc for debug info consistency…
 

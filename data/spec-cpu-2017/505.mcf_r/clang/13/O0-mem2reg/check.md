@@ -22,12 +22,12 @@
 +++ local program=check-debug-info
 +++ '[' -z check-debug-info ']'
 +++ echo /Users/jryans/Projects/klee/build-release-debug/bin/check-debug-info
-++ CHECK=/Users/jryans/Projects/klee/build-release-debug/bin/check-debug-info
-++ CHECK_OPTS='--debug-only=check-debug-info,values-collector,variable --debug-execution-trace --disable-verify --output-stats=false --max-forks=32 --max-solver-time=5s --max-time=5s --search=random-path --tsv'
+++ SYM_CHECK=/Users/jryans/Projects/klee/build-release-debug/bin/check-debug-info
+++ SYM_CHECK_OPTS='--debug-only=check-debug-info,values-collector,variable --debug-execution-trace --disable-verify --output-stats=false --max-forks=32 --max-solver-time=5s --max-time=5s --search=random-path --tsv'
 + level=O0-mem2reg
 + version=13
-+ echo '## Checking debug consistency of `mcf_r` (Clang 13, O0-mem2reg)'
-## Checking debug consistency of `mcf_r` (Clang 13, O0-mem2reg)
++ echo '## Checking symbolic debug consistency of `mcf_r` (Clang 13, O0-mem2reg)'
+## Checking symbolic debug consistency of `mcf_r` (Clang 13, O0-mem2reg)
 + /Users/jryans/Projects/klee/build-release-debug/bin/check-debug-info ../O0/mcf_r.bc mcf_r.bc --debug-only=check-debug-info,values-collector,variable --debug-execution-trace --disable-verify --output-stats=false --max-forks=32 --max-solver-time=5s --max-time=5s --search=random-path --tsv --output-source --exclude-function=spec_qsort --exclude-function=worker
 Checking ../O0/mcf_r.bc and mcf_r.bc for debug info consistency…
 

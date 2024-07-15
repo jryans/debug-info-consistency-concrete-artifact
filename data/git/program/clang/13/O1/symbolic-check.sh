@@ -12,9 +12,9 @@ fi
 TARGET_NAME="git"
 source "${SCRIPT_DIR}/../../../../../vars.sh"
 
-# Clang O0 + mem2reg checked against O0
-level="O0-mem2reg"
-version="13"
+# Clang O1 checked against O0
+level="O1"
+version="18"
 echo "## Checking symbolic debug consistency of \`${TARGET_NAME}\` (Clang ${version}, ${level})"
 ${SYM_CHECK} \
   ../O0/${TARGET_NAME}.bc \

@@ -12,11 +12,11 @@ source "${SCRIPT_DIR}/../../../../../vars.sh"
 # Clang O1 partial pipeline checked against O0
 level="O1"
 version="13"
-echo "## Checking debug consistency of \`${TARGET_NAME}\` (Clang ${version}, ${level} pipeline, pass ${PASS_NAME})"
-${CHECK} \
+echo "## Checking symbolic debug consistency of \`${TARGET_NAME}\` (Clang ${version}, ${level} pipeline, pass ${PASS_NAME})"
+${SYM_CHECK} \
   ${SCRIPT_DIR}/../O0/${TARGET_NAME}.bc \
   ${TARGET_NAME}.bc \
-  ${CHECK_OPTS} \
+  ${SYM_CHECK_OPTS} \
   --output-source \
   --exclude-function=spec_qsort \
   --exclude-function=worker \

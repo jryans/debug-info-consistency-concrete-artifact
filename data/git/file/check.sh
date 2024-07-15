@@ -15,11 +15,11 @@ source "${SCRIPT_DIR}/../../vars.sh"
 # Clang O0 + mem2reg checked against O0
 level="O0-mem2reg"
 version="13"
-echo "## Checking debug consistency of \`${TARGET_NAME}\` (Clang ${version}, ${level})"
-${CHECK} \
+echo "## Checking symbolic debug consistency of \`${TARGET_NAME}\` (Clang ${version}, ${level})"
+${SYM_CHECK} \
   clang/${version}/O0/${TARGET_NAME}.bc \
   clang/${version}/${level}/${TARGET_NAME}.bc \
-  ${CHECK_OPTS} \
+  ${SYM_CHECK_OPTS} \
   --max-functions=10 \
   "$@"
 
@@ -32,11 +32,11 @@ ${CHECK} \
 # for i in ${!levels[*]}; do
 #   level=${levels[$i]}
 #   version=${versions[$i]}
-#   echo "## Checking debug consistency of \`${TARGET_NAME}\` (Clang ${version}, ${level})"
-#   ${CHECK} \
+#   echo "## Checking symbolic debug consistency of \`${TARGET_NAME}\` (Clang ${version}, ${level})"
+#   ${SYM_CHECK} \
 #     clang/${version}/O0/${TARGET_NAME}.bc \
 #     clang/${version}/${level}/${TARGET_NAME}.bc \
-#     ${CHECK_OPTS} \
+#     ${SYM_CHECK_OPTS} \
 #     --max-functions=10 \
 #     "$@"
 # done
