@@ -46,6 +46,13 @@ for i in ${!levels[*]}; do
   $(llvm release-clang-lldb-${version}.0.0 llvm-dis) \
     "${SCRIPT_DIR}/clang/${version}/${level}/${TARGET_NAME}.bc"
 
+  ## Gather debug info
+  dsymutil --flat "${TARGET_PATH}"
+  mkdir -p "${SCRIPT_DIR}/clang/${version}/${level}"
+  cp \
+    "${TARGET_PATH}.dwarf" \
+    "${SCRIPT_DIR}/clang/${version}/${level}/${TARGET_NAME}.dwarf"
+
   # Store program binary
   cp \
     ${TARGET_PATH} \
