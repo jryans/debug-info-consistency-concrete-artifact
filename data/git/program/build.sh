@@ -52,6 +52,11 @@ $(llvm release-clang-lldb-${version}.0.0 opt) \
 $(llvm release-clang-lldb-${version}.0.0 llvm-dis) \
   "${SCRIPT_DIR}/clang/${version}/${level}-mem2reg/${TARGET_NAME}.bc"
 
+# Store program binary
+cp \
+  ${TARGET_PATH} \
+  "${SCRIPT_DIR}/clang/${version}/${level}/${TARGET_NAME}"
+
 # Clang O1+
 
   levels=(O1 O2)
@@ -81,6 +86,11 @@ for i in ${!levels[*]}; do
   ## Disassemble bitcode for debugging
   $(llvm release-clang-lldb-${version}.0.0 llvm-dis) \
     "${SCRIPT_DIR}/clang/${version}/${level}/${TARGET_NAME}.bc"
+
+  # Store program binary
+  cp \
+    ${TARGET_PATH} \
+    "${SCRIPT_DIR}/clang/${version}/${level}/${TARGET_NAME}"
 done
 
 # Cleanup
