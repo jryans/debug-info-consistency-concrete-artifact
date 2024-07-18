@@ -14,7 +14,7 @@ source "${SCRIPT_DIR}/../../../../../vars.sh"
 
 # Clang O1 checked against O0
 level="O1"
-version="18"
+version="13"
 echo "## Checking symbolic debug consistency of \`${TARGET_NAME}\` (Clang ${version}, ${level})"
 ${SYM_CHECK} \
   ../O0/${TARGET_NAME}.bc \
