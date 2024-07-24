@@ -20,4 +20,4 @@ ${CON_COLLECT} \
   --include-function cmd_log \
   ${TARGET_NAME} \
   -- \
-  log
+  log -n 10
