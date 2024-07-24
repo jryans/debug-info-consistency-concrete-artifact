@@ -38,4 +38,5 @@ KLEE_COMMON_OPTS="--use-color=false --debug-execution-trace --disable-verify --o
 SYM_CHECK=$(klee release-debug check-debug-info)
 SYM_CHECK_OPTS="--debug-only=check-debug-info,values-collector,variable --debug-execution-trace --disable-verify --output-stats=false --max-forks=32 --max-solver-time=5s --max-time=5s --search=random-path --tsv"
 
-CON_CHECK="${HOME}/Projects/debug-info-concrete-check/check.py"
+CON_COLLECT="${HOME}/Projects/debug-info-concrete-check/collect_trace.py"
+CON_CHECK="${HOME}/Projects/debug-info-concrete-check/check_traces.py"
