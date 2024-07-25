@@ -17,7 +17,6 @@ level="O1"
 version="13"
 echo "## Collecting concrete trace of \`${TARGET_NAME}\` (Clang ${version}, ${level})"
 ${CON_COLLECT} \
-  --include-function cmd_log \
   ${TARGET_NAME} \
   -- \
   log -n 10
