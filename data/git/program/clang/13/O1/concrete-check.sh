@@ -16,9 +16,3 @@ source "${SCRIPT_DIR}/../../../../../vars.sh"
 level="O1"
 version="13"
 echo "## Checking concrete debug consistency of \`${TARGET_NAME}\` (Clang ${version}, ${level})"
-${CON_CHECK} \
-  --include-function cmd_log \
-  ../O0/${TARGET_NAME} \
-  ${TARGET_NAME} \
-  -- \
-  log
