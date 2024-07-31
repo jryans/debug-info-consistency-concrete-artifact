@@ -19,5 +19,5 @@ echo "## Collecting concrete trace of \`${TARGET_NAME}\` (Clang ${version}, ${le
 # TODO: Generalise this to support Linux as well as macOS
 DYLD_INSERT_LIBRARIES=${CON_COLLECT_INSTRUMENTATION} \
   "$@" \
-  ${TARGET_NAME} \
+  ./${TARGET_NAME} \
   log -n 10
