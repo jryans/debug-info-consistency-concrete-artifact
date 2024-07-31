@@ -24,6 +24,7 @@ versions=(13 13 13)
 for i in ${!levels[*]}; do
   level=${levels[$i]}
   version=${versions[$i]}
+
   echo "## Building \`${TARGET_NAME}\` (Clang ${version}, ${level}) for bitcode"
 
   make clean
@@ -59,7 +60,8 @@ for i in ${!levels[*]}; do
   cc_level_opts="CC_${level}_OPTS"
   make \
     CC="$(llvm release-clang-lldb-${version}.0.0 clang)" \
-    CFLAGS="${CC_COMMON_OPTS} ${CC_CLANG_OPTS} ${!cc_level_opts}"
+    CFLAGS="${CC_COMMON_OPTS} ${CC_CLANG_OPTS} ${!cc_level_opts}" \
+    LDFLAGS="${LD_COMMON_OPTS}"
 
   ## Gather debug info
   dsymutil --flat "${TARGET_PATH}"

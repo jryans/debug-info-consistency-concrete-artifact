@@ -32,6 +32,8 @@ CC_O3_OPTS="-O3"
 CC_Og_OPTS="-Og"
 CC_LV_OPTS="${CC_Og_OPTS} -gvariable-location-views"
 
+LD_COMMON_OPTS="-Wl,-no_pie"
+
 KLEE=$(klee release-debug klee)
 KLEE_COMMON_OPTS="--use-color=false --debug-execution-trace --disable-verify --output-source --search=random-path"
 
