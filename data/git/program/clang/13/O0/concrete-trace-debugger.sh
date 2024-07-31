@@ -16,7 +16,9 @@ source "${SCRIPT_DIR}/../../../../../vars.sh"
 level="O0"
 version="13"
 echo "## Collecting concrete trace of \`${TARGET_NAME}\` (Clang ${version}, ${level})"
-${CON_COLLECT_DEBUGGER} \
+PYTHONPATH=${LLDB_PYTHON_MODULES} \
+  ${LLDB_PYTHON} \
+  ${CON_COLLECT_DEBUGGER} \
   "$@" \
   ${TARGET_NAME} \
   -- \

@@ -40,5 +40,8 @@ KLEE_COMMON_OPTS="--use-color=false --debug-execution-trace --disable-verify --o
 SYM_CHECK=$(klee release-debug check-debug-info)
 SYM_CHECK_OPTS="--debug-only=check-debug-info,values-collector,variable --debug-execution-trace --disable-verify --output-stats=false --max-forks=32 --max-solver-time=5s --max-time=5s --search=random-path --tsv"
 
+LLDB_PYTHON_MODULES="$(llvm release-clang-lld-lldb-17.0.6)/lib/python3.12/site-packages"
+LLDB_PYTHON="python3.12"
+
 CON_COLLECT_DEBUGGER="${HOME}/Projects/debug-info-concrete-check/debugger/collect_trace.py"
 CON_COLLECT_INSTRUMENTATION="${HOME}/Projects/debug-info-concrete-check/binary-instrumentation/build/libcollect-trace-preload.dylib"
