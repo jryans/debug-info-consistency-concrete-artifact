@@ -20,4 +20,5 @@ echo "## Collecting concrete trace of \`${TARGET_NAME}\` (Clang ${version}, ${le
 DYLD_INSERT_LIBRARIES=${CON_COLLECT_INSTRUMENTATION} \
   "$@" \
   ./${TARGET_NAME} \
-  log -n 10
+  log -n 10 \
+  > concrete-trace/stdout
