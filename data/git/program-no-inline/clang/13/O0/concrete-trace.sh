@@ -17,9 +17,12 @@ level="O0"
 version="13"
 echo "## Collecting concrete trace of \`${TARGET_NAME}\` (Clang ${version}, ${level})"
 mkdir -p concrete-trace
-# TODO: Generalise this to support Linux as well as macOS
-DYLD_INSERT_LIBRARIES=${CON_COLLECT_INSTRUMENTATION} \
-  "$@" \
-  ./${TARGET_NAME} \
-  log -n 10 \
-  > concrete-trace/stdout
+(
+  cd concrete-trace;
+  # TODO: Generalise this to support Linux as well as macOS
+  DYLD_INSERT_LIBRARIES=${CON_COLLECT_INSTRUMENTATION} \
+    "$@" \
+    ../${TARGET_NAME} \
+    log -n 10 \
+    > stdout
+)
