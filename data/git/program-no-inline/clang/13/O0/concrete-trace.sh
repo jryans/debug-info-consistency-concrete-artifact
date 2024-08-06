@@ -16,13 +16,25 @@ source "${SCRIPT_DIR}/../../../../../vars.sh"
 level="O0"
 version="13"
 echo "## Collecting concrete trace of \`${TARGET_NAME}\` (Clang ${version}, ${level})"
-mkdir -p concrete-trace
+
+mkdir -p concrete-trace/log
 (
-  cd concrete-trace;
+  cd concrete-trace/log;
   # TODO: Generalise this to support Linux as well as macOS
   DYLD_INSERT_LIBRARIES=${CON_COLLECT_INSTRUMENTATION} \
     "$@" \
-    ../${TARGET_NAME} \
+    ../../${TARGET_NAME} \
     log -n 10 \
+    > stdout
+)
+
+mkdir -p concrete-trace/show
+(
+  cd concrete-trace/show;
+  # TODO: Generalise this to support Linux as well as macOS
+  DYLD_INSERT_LIBRARIES=${CON_COLLECT_INSTRUMENTATION} \
+    "$@" \
+    ../../${TARGET_NAME} \
+    show -p \
     > stdout
 )
