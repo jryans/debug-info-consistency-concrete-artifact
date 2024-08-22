@@ -20,8 +20,8 @@ echo "## Collecting concrete trace of \`${TARGET_NAME}\` (Clang ${version}, ${le
 mkdir -p concrete-trace/log
 (
   cd concrete-trace/log;
-  # TODO: Generalise this to support Linux as well as macOS
-  DYLD_INSERT_LIBRARIES=${CON_COLLECT_INSTRUMENTATION} \
+  env \
+    ${CON_COLLECT_INSTRUMENTATION} \
     "$@" \
     ../../${TARGET_NAME} \
     log -n 10 \
@@ -31,8 +31,8 @@ mkdir -p concrete-trace/log
 mkdir -p concrete-trace/show
 (
   cd concrete-trace/show;
-  # TODO: Generalise this to support Linux as well as macOS
-  DYLD_INSERT_LIBRARIES=${CON_COLLECT_INSTRUMENTATION} \
+  env \
+    ${CON_COLLECT_INSTRUMENTATION} \
     "$@" \
     ../../${TARGET_NAME} \
     show -p \
