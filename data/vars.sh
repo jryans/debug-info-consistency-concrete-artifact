@@ -1,5 +1,3 @@
-set -eux
-
 llvm() {
   local build=${1}
   local program=${2:-}
