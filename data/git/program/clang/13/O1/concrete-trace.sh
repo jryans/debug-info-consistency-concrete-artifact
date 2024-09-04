@@ -17,24 +17,48 @@ level="O1"
 version="13"
 echo "## Collecting concrete trace of \`${TARGET_NAME}\` (Clang ${version}, ${level})"
 
-mkdir -p concrete-trace/log
+mkdir -p concrete-trace/log/default
 (
-  cd concrete-trace/log;
+  cd concrete-trace/log/default;
   env \
     ${CON_COLLECT_INSTRUMENTATION} \
     "$@" \
-    ../../${TARGET_NAME} \
+    ../../../${TARGET_NAME} \
     log -n 10 \
     > stdout
 )
 
-mkdir -p concrete-trace/show
+mkdir -p concrete-trace/log/rfln
 (
-  cd concrete-trace/show;
+  cd concrete-trace/log/rfln;
+  env \
+    CON_TRACE_RF_LOCATION=0 \
+    ${CON_COLLECT_INSTRUMENTATION} \
+    "$@" \
+    ../../../${TARGET_NAME} \
+    log -n 10 \
+    > stdout
+)
+
+mkdir -p concrete-trace/show/default
+(
+  cd concrete-trace/show/default;
   env \
     ${CON_COLLECT_INSTRUMENTATION} \
     "$@" \
-    ../../${TARGET_NAME} \
+    ../../../${TARGET_NAME} \
+    show -p \
+    > stdout
+)
+
+mkdir -p concrete-trace/show/rfln
+(
+  cd concrete-trace/show/rfln;
+  env \
+    CON_TRACE_RF_LOCATION=0 \
+    ${CON_COLLECT_INSTRUMENTATION} \
+    "$@" \
+    ../../../${TARGET_NAME} \
     show -p \
     > stdout
 )
