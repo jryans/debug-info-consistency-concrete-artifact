@@ -12,6 +12,9 @@ fi
 TARGET_NAME="git"
 source "${SCRIPT_DIR}/../../../../../vars.sh"
 
+# Analyse `git` in the context of separate repo to reduce trace noise
+REPO_PATH="${HOME}/Projects/ripgrep"
+
 # Collect trace for Clang O0
 level="O0"
 version="13"
@@ -42,6 +45,7 @@ for execution in ${executions[*]}; do
         ${CON_COLLECT_INSTRUMENTATION} \
         "$@" \
         ../../../${TARGET_NAME} \
+        -C ${REPO_PATH} \
         ${!execution_command} \
         > stdout
     )
