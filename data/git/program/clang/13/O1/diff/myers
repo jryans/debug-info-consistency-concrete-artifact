@@ -1,4 +1,5 @@
-106245	70412	{../O0/concrete-trace => concrete-trace}/log/default/trace
-75936	40094	{../O0/concrete-trace => concrete-trace}/log/rfln/trace
-69803	65256	{../O0/concrete-trace => concrete-trace}/show/default/trace
-40024	35459	{../O0/concrete-trace => concrete-trace}/show/rfln/trace
+INSERTED,DELETED,MODIFIED,UNCHANGED,FILENAME
+37514,1681,68731,77919,"log/default/trace"
+37198,1356,38738,108228,"log/rfln/trace"
+5740,1184,64063,75995,"show/default/trace"
+5999,1443,34025,105774,"show/rfln/trace"
