@@ -46,4 +46,4 @@ CON_COLLECT_DEBUGGER="${HOME}/Projects/debug-info-concrete-check/debugger/collec
 CON_COLLECT_INSTRUMENTATION="DYLD_INSERT_LIBRARIES=${HOME}/Projects/debug-info-concrete-check/binary-instrumentation/build/libcollect-trace-preload.dylib"
 
 CON_TRACE_default_OPTS=""
-CON_TRACE_rfln_OPTS="CON_TRACE_RF_LOCATION=0"
+CON_TRACE_rfld_OPTS="CON_TRACE_RF_LOCATION=0"
