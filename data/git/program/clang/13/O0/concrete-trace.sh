@@ -27,7 +27,7 @@ show_COMMAND="show -p"
 
 # Different trace variants to collect
 # These map to different trace options in `vars.sh`
-trace_variants=(default rfld)
+trace_variants=(default rfld ld)
 
 for execution in ${executions[*]}; do
   execution_command="${execution}_COMMAND"
