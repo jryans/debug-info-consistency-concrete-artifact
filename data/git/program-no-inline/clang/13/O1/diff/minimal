@@ -1,7 +1,9 @@
 INSERTED,DELETED,MODIFIED,UNCHANGED,FILENAME
 0,1600,307,146465,"log/default/trace"
+0,618,0,132546,"log/ld-extd/trace"
 0,1600,0,146748,"log/ld/trace"
 0,1600,230,146533,"log/rfld/trace"
 0,1483,386,139423,"show/default/trace"
-9,1474,0,139796,"show/ld/trace"
-0,1483,320,139480,"show/rfld/trace"
+3,651,0,125499,"show/ld-extd/trace"
+0,1474,0,139805,"show/ld/trace"
+0,1474,320,139480,"show/rfld/trace"
