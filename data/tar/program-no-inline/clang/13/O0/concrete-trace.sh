@@ -13,8 +13,9 @@ TARGET_NAME="tar"
 source "${SCRIPT_DIR}/../../../../../vars.sh"
 
 # Analyse `tar` in the context of specific archive to reduce trace noise
-ARCHIVE_NAME="git-2.39.0-rc2"
-ARCHIVE_PATH="${HOME}/Downloads/${ARCHIVE_NAME}.tar.gz"
+# `simple.tar`: https://github.com/alexcrichton/tar-rs/blob/97d5033eb80bf90c746a8b76dd31ca8a39326991/tests/archives/simple.tar
+ARCHIVE_NAME="simple"
+ARCHIVE_PATH="${HOME}/Downloads/${ARCHIVE_NAME}.tar"
 
 # Collect trace for Clang O0
 level="O0"
@@ -40,11 +41,13 @@ for execution in ${executions[*]}; do
     mkdir -p concrete-trace/${execution}/${trace_variant}
     (
       cd concrete-trace/${execution}/${trace_variant};
+      mkdir -p ${ARCHIVE_NAME};
       env \
         ${!trace_variant_opts} \
         ${CON_COLLECT_INSTRUMENTATION} \
         "$@" \
         ../../../${TARGET_NAME} \
+        -C ${ARCHIVE_NAME} \
         ${!execution_command} \
         > stdout;
       rm -rf ${ARCHIVE_NAME}
