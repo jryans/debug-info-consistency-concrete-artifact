@@ -1,0 +1,5 @@
+INSERTED,DELETED,MODIFIED,UNCHANGED,FILENAME
+0,143,10,35181,"extract/default/trace"
+0,99,0,4415,"extract/ld-eld/trace"
+0,143,0,35191,"extract/ld/trace"
+0,143,10,35181,"extract/rfld/trace"

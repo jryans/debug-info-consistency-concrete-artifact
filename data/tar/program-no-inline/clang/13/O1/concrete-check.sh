@@ -9,7 +9,7 @@ if [ "${PWD}" != "${SCRIPT_DIR}" ]; then
   exit
 fi
 
-TARGET_NAME="git"
+TARGET_NAME="tar"
 source "${SCRIPT_DIR}/../../../../../vars.sh"
 
 # Clang O1 checked against O0
