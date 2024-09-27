@@ -12,7 +12,6 @@ fi
 TARGET_NAME="ffmpeg"
 source "${SCRIPT_DIR}/../../../../../vars.sh"
 
-# Collect trace for Clang O0
 level="O0"
 version="13"
 echo "## Collecting concrete trace of \`${TARGET_NAME}\` (Clang ${version}, ${level})"

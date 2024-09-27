@@ -17,7 +17,6 @@ source "${SCRIPT_DIR}/../../../../../vars.sh"
 ARCHIVE_NAME="simple"
 ARCHIVE_PATH="${HOME}/Downloads/${ARCHIVE_NAME}.tar"
 
-# Collect trace for Clang O0
 level="O0"
 version="13"
 echo "## Collecting concrete trace of \`${TARGET_NAME}\` (Clang ${version}, ${level})"

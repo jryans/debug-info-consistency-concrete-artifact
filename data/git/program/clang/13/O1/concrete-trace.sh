@@ -15,7 +15,6 @@ source "${SCRIPT_DIR}/../../../../../vars.sh"
 # Analyse `git` in the context of separate repo to reduce trace noise
 REPO_PATH="${HOME}/Projects/ripgrep"
 
-# Collect trace for Clang O1
 level="O1"
 version="13"
 echo "## Collecting concrete trace of \`${TARGET_NAME}\` (Clang ${version}, ${level})"
