@@ -47,6 +47,22 @@ for i in ${!levels[*]}; do
   $(llvm release-clang-lldb-${version}.0.0 llvm-dis) \
     "${SCRIPT_DIR}/clang/${version}/${level}/${TARGET_NAME}.bc"
 
+  # Collect function attributes when building O0
+  if [ "${level}" = "O0" ]; then
+    echo "## Analysing \`${TARGET_NAME}\` (Clang ${version}, ${level}) function attributes"
+
+    mkdir -p "${SCRIPT_DIR}/clang/${version}/${level}-function-attrs"
+
+    $(llvm release-clang-lldb-${version}.0.0 opt) \
+      -o "${SCRIPT_DIR}/clang/${version}/${level}-function-attrs/${TARGET_NAME}.bc" \
+      -passes=function-attrs \
+      "${SCRIPT_DIR}/clang/${version}/${level}/${TARGET_NAME}.bc"
+
+    ## Disassemble bitcode for debugging
+    $(llvm release-clang-lldb-${version}.0.0 llvm-dis) \
+      "${SCRIPT_DIR}/clang/${version}/${level}-function-attrs/${TARGET_NAME}.bc"
+  fi
+
   echo "## Building \`${TARGET_NAME}\` (Clang ${version}, ${level}) for binary with debug info"
 
   make clean
