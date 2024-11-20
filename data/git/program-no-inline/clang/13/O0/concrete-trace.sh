@@ -49,4 +49,14 @@ for execution in ${executions[*]}; do
         > stdout
     )
   done
+
+  # Filter some variants using memory effect knowledge via function attributes
+  mkdir -p concrete-trace/${execution}/ld-eld-ormfd
+  (
+    cd concrete-trace/${execution}/ld-eld-ormfd;
+    ${CON_FILTER_TRACE} \
+      ../ld-eld/trace \
+      ../../../../O0-function-attrs/${TARGET_NAME}.bc \
+      > trace
+  )
 done
