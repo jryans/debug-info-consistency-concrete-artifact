@@ -54,7 +54,7 @@ for execution in ${executions[*]}; do
   mkdir -p concrete-trace/${execution}/ld-eld-ormfd
   (
     cd concrete-trace/${execution}/ld-eld-ormfd;
-    ${CON_FILTER_TRACE} \
+    ${CON_FILTER_TRACE_MEMORY_EFFECTS} \
       ../ld-eld/trace \
       ../../../../O0-function-attrs/${TARGET_NAME}.bc \
       > trace
