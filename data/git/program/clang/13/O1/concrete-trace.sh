@@ -26,14 +26,14 @@ show_COMMAND="show -p"
 
 # Different trace variants to collect
 # These map to different trace options in `vars.sh`
-trace_variants=(default rfld ld)
+trace_variants=(default rfld ld ld-eld ld-eld-ifd)
 
 for execution in ${executions[*]}; do
   execution_command="${execution}_COMMAND"
   echo "### Analysing execution of \`${TARGET_NAME} ${!execution_command}\`"
 
   for trace_variant in ${trace_variants[*]}; do
-    trace_variant_opts="CON_TRACE_${trace_variant}_OPTS"
+    trace_variant_opts="CON_TRACE_${trace_variant//-/_}_OPTS"
     echo "#### Collecting trace variant \`${trace_variant}\`: ${!trace_variant_opts}"
 
     mkdir -p concrete-trace/${execution}/${trace_variant}
@@ -49,4 +49,14 @@ for execution in ${executions[*]}; do
         > stdout
     )
   done
+
+  # Filter some variants using memory effect knowledge via function attributes
+  mkdir -p concrete-trace/${execution}/ld-eld-ormfd
+  (
+    cd concrete-trace/${execution}/ld-eld-ormfd;
+    ${CON_FILTER_TRACE_MEMORY_EFFECTS} \
+      ../ld-eld/trace \
+      ../../../../O0-function-attrs/${TARGET_NAME}.bc \
+      > trace
+  )
 done
