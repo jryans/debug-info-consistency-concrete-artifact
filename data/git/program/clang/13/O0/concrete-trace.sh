@@ -48,6 +48,20 @@ for execution in ${executions[*]}; do
         ${!execution_command} \
         > stdout
     )
+
+    mkdir -p concrete-trace-with-source/${execution}/${trace_variant}
+    (
+      cd concrete-trace-with-source/${execution}/${trace_variant};
+      env \
+        CON_TRACE_SOURCE=1 \
+        ${!trace_variant_opts} \
+        ${CON_COLLECT_INSTRUMENTATION} \
+        "$@" \
+        ../../../${TARGET_NAME} \
+        -C ${REPO_PATH} \
+        ${!execution_command} \
+        > stdout
+    )
   done
 
   # Filter some variants using memory effect knowledge via function attributes
