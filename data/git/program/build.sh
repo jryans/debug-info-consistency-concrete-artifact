@@ -92,6 +92,41 @@ for i in ${!levels[*]}; do
     "${SCRIPT_DIR}/clang/${version}/${level}/${TARGET_NAME}"
 done
 
+# GCC
+# JRS: Disabled for now, macOS GCC conflicts with SDK over `FILE` type
+
+# versions=(11 11 11 11 11)
+#   levels=(O0 Og O1 O2 O3)
+
+# for i in ${!levels[*]}; do
+#   version=${versions[$i]}
+#   level=${levels[$i]}
+
+#   echo "## Building \`${TARGET_NAME}\` (GCC ${version}, ${level}) for binary with debug info"
+
+#   make clean
+#   git clean -f
+
+#   ## Build for binary with debug info
+#   cc_level_opts="CC_${level}_OPTS"
+#   make \
+#     CC="gcc-${version}" \
+#     CFLAGS="${CC_COMMON_OPTS} ${CC_GCC_OPTS} ${!cc_level_opts}" \
+#     LDFLAGS="${LD_COMMON_OPTS}"
+
+#   ## Gather debug info
+#   dsymutil --flat "${TARGET_PATH}"
+#   mkdir -p "${SCRIPT_DIR}/gcc/${version}/${level}"
+#   cp \
+#     "${TARGET_PATH}.dwarf" \
+#     "${SCRIPT_DIR}/gcc/${version}/${level}/${TARGET_NAME}.dwarf"
+
+#   # Store program binary
+#   cp \
+#     ${TARGET_PATH} \
+#     "${SCRIPT_DIR}/gcc/${version}/${level}/${TARGET_NAME}"
+# done
+
 # Cleanup
 echo "## Cleanup"
 make clean
