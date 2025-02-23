@@ -76,12 +76,20 @@ for i in ${!levels[*]}; do
   cc_level_opts="CC_${level}_OPTS"
   make \
     CC="$(llvm release-clang-lldb-${version}.0.0 clang)" \
-    CFLAGS="${CC_COMMON_OPTS} ${CC_CLANG_OPTS} ${!cc_level_opts} -fno-inline" \
+    CFLAGS="${CC_COMMON_OPTS} ${CC_CLANG_OPTS} ${!cc_level_opts} -fno-inline -fsave-optimization-record" \
     LDFLAGS="${LD_COMMON_OPTS}"
+
+  mkdir -p "${SCRIPT_DIR}/clang/${version}/${level}"
+
+  ## Collect optimisation remarks
+  ( \
+    find . -name '*.opt.yaml' | \
+    xargs cat \
+    > "${SCRIPT_DIR}/clang/${version}/${level}/${TARGET_NAME}.opt.yaml" \
+  )
 
   ## Gather debug info
   dsymutil --flat "${TARGET_PATH}"
-  mkdir -p "${SCRIPT_DIR}/clang/${version}/${level}"
   cp \
     "${TARGET_PATH}.dwarf" \
     "${SCRIPT_DIR}/clang/${version}/${level}/${TARGET_NAME}.dwarf"

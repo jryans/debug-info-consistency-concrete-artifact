@@ -11,6 +11,7 @@ testcases
 *.i
 *.ll
 *.o
+*.opt.yaml
 *.s
 *.tsv
 
