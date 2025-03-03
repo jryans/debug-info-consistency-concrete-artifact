@@ -94,10 +94,18 @@ for i in ${!levels[*]}; do
     "${TARGET_PATH}.dwarf" \
     "${SCRIPT_DIR}/clang/${version}/${level}/${TARGET_NAME}.dwarf"
 
-  # Store program binary
+  ## Store program binary
   cp \
     ${TARGET_PATH} \
     "${SCRIPT_DIR}/clang/${version}/${level}/${TARGET_NAME}"
+
+  ## Store test suite dependencies
+  cp -R \
+    bin-wrappers GIT-BUILD-OPTIONS \
+    "${SCRIPT_DIR}/clang/${version}/${level}/"
+
+  ## TODO: Automatically modify `git` binary wrapper to add instrumentation
+  ## For now, this is done manually.
 done
 
 # Cleanup
