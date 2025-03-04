@@ -23,6 +23,14 @@ tests=(t0001-init)
 # These map to different trace options in `vars.sh`
 trace_variants=(default)
 
+# Remove dependencies from past runs
+rm -f "../${TARGET_NAME}"
+rm -f "../${TARGET_NAME}.dwarf"
+rm -f "../bin-wrappers"
+rm -f "../templates/blt"
+rm -f "../GIT-BUILD-OPTIONS"
+rm -f "../t/helper/test-tool"
+
 # Set up test dependencies
 ln -s "${SCRIPT_DIR}/${TARGET_NAME}" "../"
 ln -s "${SCRIPT_DIR}/${TARGET_NAME}.dwarf" "../"
