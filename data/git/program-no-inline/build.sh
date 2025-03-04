@@ -106,9 +106,6 @@ for i in ${!levels[*]}; do
   cp -R \
     GIT-BUILD-OPTIONS templates/blt t/helper/test-tool \
     "${SCRIPT_DIR}/clang/${version}/${level}/test-deps/"
-
-  ## TODO: Automatically modify `git` binary wrapper to add instrumentation
-  ## For now, this is done manually.
 done
 
 # Cleanup
