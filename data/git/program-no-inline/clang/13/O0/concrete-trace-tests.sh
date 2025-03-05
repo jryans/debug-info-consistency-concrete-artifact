@@ -54,6 +54,9 @@ for test in ${tests[*]}; do
     trace_variant_opts="CON_TRACE_${trace_variant//-/_}_OPTS"
     echo "#### Collecting trace variant \`${trace_variant}\`: ${!trace_variant_opts}"
 
+    # Remove temporary trace collection from past runs
+    rm -rf traces
+
     mkdir -p ${SCRIPT_DIR}/concrete-trace/${test}/${trace_variant}
     env \
       "./${test}.sh" \
@@ -62,9 +65,11 @@ for test in ${tests[*]}; do
     # Collect traces from all test processes
     # Sorted by file creation time from oldest to newest
     (
-      cd "./trash directory.${test}";
-      find . -name 'trace-*' | \
-        xargs ls -tUr | \
+      mkdir traces;
+      find . -name 'trace-*' -print0 | \
+        xargs -J % -0 mv % traces;
+      cd traces;
+      ls -tUr | \
         xargs cat \
         > ${SCRIPT_DIR}/concrete-trace/${test}/${trace_variant}/trace
     )
