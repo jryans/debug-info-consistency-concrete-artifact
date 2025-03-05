@@ -34,7 +34,8 @@ for i in ${!levels[*]}; do
   cc_level_opts="CC_${level}_OPTS"
   make \
     CC=wllvm \
-    CFLAGS="${CC_COMMON_OPTS} ${CC_CLANG_OPTS} ${!cc_level_opts} -fno-inline"
+    CFLAGS="${CC_COMMON_OPTS} ${CC_CLANG_OPTS} ${!cc_level_opts} -fno-inline" \
+    NO_PTHREADS=1
 
   ## Extract bitcode
   extract-bc ${TARGET_PATH}
@@ -77,7 +78,8 @@ for i in ${!levels[*]}; do
   make \
     CC="$(llvm release-clang-lldb-${version}.0.0 clang)" \
     CFLAGS="${CC_COMMON_OPTS} ${CC_CLANG_OPTS} ${!cc_level_opts} -fno-inline -fsave-optimization-record" \
-    LDFLAGS="${LD_COMMON_OPTS}"
+    LDFLAGS="${LD_COMMON_OPTS}" \
+    NO_PTHREADS=1
 
   mkdir -p "${SCRIPT_DIR}/clang/${version}/${level}"
 
