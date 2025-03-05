@@ -52,3 +52,5 @@ CON_TRACE_ld_eld_OPTS="CON_TRACE_LOCATION=0 CON_TRACE_EXTERNAL_LIBRARY=0"
 CON_TRACE_ld_eld_ifd_OPTS="CON_TRACE_LOCATION=0 CON_TRACE_EXTERNAL_LIBRARY=0 CON_TRACE_INTERNAL_FUNCTION=0"
 
 CON_FILTER_TRACE_MEMORY_EFFECTS="${HOME}/Projects/debug-info-concrete-check/filter-trace/build/filter-trace-memory-effects"
+
+CON_COMPARE="${HOME}/Projects/debug-info-concrete-check/compare-traces/target/release/debug-info-concrete-compare-traces"
