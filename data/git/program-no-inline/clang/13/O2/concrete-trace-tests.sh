@@ -21,7 +21,7 @@ tests=(t0001-init)
 
 # Different trace variants to collect
 # These map to different trace options in `vars.sh`
-trace_variants=(default)
+tests=(t0001-init t1007-hash-object)
 
 # Remove dependencies from past runs
 rm -f "../${TARGET_NAME}"
