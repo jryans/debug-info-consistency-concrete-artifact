@@ -45,7 +45,6 @@ ln -s "${SCRIPT_DIR}/test-deps/test-tool" "../t/helper/"
 # DYLD_INSERT_LIBRARIES=<path from `CON_COLLECT_INSTRUMENTATION`>
 # export DYLD_INSERT_LIBRARIES
 # ```
-# Trace variant options would similarly need to find their way there too.
 
 for test in ${tests[*]}; do
   echo "### Analysing execution of \`${TARGET_NAME}\` test \`${test}\`"
@@ -53,6 +52,11 @@ for test in ${tests[*]}; do
   for trace_variant in ${trace_variants[*]}; do
     trace_variant_opts="CON_TRACE_${trace_variant//-/_}_OPTS"
     echo "#### Collecting trace variant \`${trace_variant}\`: ${!trace_variant_opts}"
+
+    # Setup `git` binary wrapper for this variant
+    ln -s \
+      "${SCRIPT_DIR}/test-deps/bin-wrappers/${trace_variant}/git" \
+      "${SCRIPT_DIR}/test-deps/bin-wrappers/git"
 
     # Remove temporary trace collection from past runs
     rm -rf traces
@@ -73,5 +77,8 @@ for test in ${tests[*]}; do
         xargs cat \
         > ${SCRIPT_DIR}/concrete-trace/${test}/${trace_variant}/trace
     )
+
+    # Remove link to this variant's binary wrapper
+    rm -f "${SCRIPT_DIR}/test-deps/bin-wrappers/git"
   done
 done
