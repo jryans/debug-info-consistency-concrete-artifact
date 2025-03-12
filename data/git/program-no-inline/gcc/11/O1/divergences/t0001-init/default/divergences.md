@@ -5,2403 +5,4785 @@ Divergence analysis complete!
 ## Divergences by source coordinates
 
 CoordinatesChanged
-  Coordinates: git_atexit at run-command.c:1098:2
+  Events:
+    CF: git_atexit at run-command.c:1098:2
+    CF: git_atexit at run-command.c:1101:7
   Occurrences: 1
 
 CoordinatesChanged
-  Coordinates: mark_child_for_cleanup at run-command.c:91:29
+  Events:
+    CF: mark_child_for_cleanup at run-command.c:91:29
+    CF: mark_child_for_cleanup at run-command.c:98:3
   Occurrences: 1
 
 CoordinatesChanged
-  Coordinates: mem_pool_init at mem-pool.c:60:2
+  Events:
+    CF: mem_pool_init at mem-pool.c:60:2
+    RF: mem_pool_init at mem-pool.c:63:5
   Occurrences: 16
 
 CoordinatesChanged
-  Coordinates: set_cloexec at run-command.c:537:3
+  Events:
+    CF: set_cloexec at run-command.c:537:3
+    RF: set_cloexec at run-command.c:538:1
   Occurrences: 1
 
 CoordinatesChanged
-  Coordinates: sigchain_push at sigchain.c:24:2
+  Events:
+    CF: sigchain_push at sigchain.c:24:2
+    CF: sigchain_push at sigchain.c:25:17
   Occurrences: 1
 
 CoordinatesChanged
-  Coordinates: start_command at run-command.c:775:3
+  Events:
+    CF: start_command at run-command.c:775:3
+    CF: start_command at run-command.c:776:3
   Occurrences: 1
 
 CoordinatesChanged
-  Coordinates: start_command at run-command.c:776:3
+  Events:
+    CF: start_command at run-command.c:776:3
+    CF: start_command at run-command.c:777:3
   Occurrences: 1
 
 CoordinatesChanged
-  Coordinates: _ at gettext.h:45:1
+  Events:
+    CT: _ at gettext.h:45:1
+    CT: _ at gettext.h:47:10
   Occurrences: 146
 
 CoordinatesChanged
-  Coordinates: _OSSwapInt16 at _OSByteOrder.h:53:1
+  Events:
+    CT: _OSSwapInt16 at _OSByteOrder.h:53:1
+    CT: _OSSwapInt16 at _OSByteOrder.h:54:9
   Occurrences: 9
 
 CoordinatesChanged
-  Coordinates: __volatile_list_del at list.h:183:1
+  Events:
+    CT: __volatile_list_del at list.h:183:1
+    CT: __volatile_list_del at list.h:184:13
   Occurrences: 414
 
 CoordinatesChanged
-  Coordinates: acquire_snapshot at packed-backend.c:158:1
+  Events:
+    CT: acquire_snapshot at packed-backend.c:158:1
+    CT: acquire_snapshot at packed-backend.c:159:21
   Occurrences: 75
 
 CoordinatesChanged
-  Coordinates: add_name_hash at name-hash.c:630:1
+  Events:
+    CT: add_name_hash at name-hash.c:630:1
+    CT: add_name_hash at name-hash.c:631:5
   Occurrences: 9
 
 CoordinatesChanged
-  Coordinates: add_path at exec-cmd.c:297:1
+  Events:
+    CT: add_path at exec-cmd.c:297:1
+    CT: add_path at exec-cmd.c:298:5
   Occurrences: 153
 
 CoordinatesChanged
-  Coordinates: add_untracked at dir.c:2364:1
+  Events:
+    CT: add_untracked at dir.c:2364:1
+    CT: add_untracked at dir.c:2365:5
   Occurrences: 4
 
 CoordinatesChanged
-  Coordinates: advice_enabled at advice.c:116:1
+  Events:
+    CT: advice_enabled at advice.c:116:1
+    CT: advice_enabled at advice.c:117:2
   Occurrences: 4
 
 CoordinatesChanged
-  Coordinates: alias_all_urls at remote.c:478:1
+  Events:
+    CT: alias_all_urls at remote.c:478:1
+    CT: alias_all_urls at remote.c:480:16
   Occurrences: 2
 
 CoordinatesChanged
-  Coordinates: alloc_commit_index at alloc.c:106:1
+  Events:
+    CT: alloc_commit_index at alloc.c:106:1
+    CT: alloc_commit_index at alloc.c:108:29
   Occurrences: 13
 
 CoordinatesChanged
-  Coordinates: ambiguous_path at object-name.c:830:1
+  Events:
+    CT: ambiguous_path at object-name.c:830:1
+    CT: ambiguous_path at object-name.c:834:20
   Occurrences: 22
 
 CoordinatesChanged
-  Coordinates: attr_hash_entry_cmp at attr.c:64:1
+  Events:
+    CT: attr_hash_entry_cmp at attr.c:64:1
+    CT: attr_hash_entry_cmp at attr.c:69:11
   Occurrences: 29
 
 CoordinatesChanged
-  Coordinates: attr_name_valid at attr.c:176:1
+  Events:
+    CT: attr_name_valid at attr.c:176:1
+    CT: attr_name_valid at attr.c:182:10
   Occurrences: 162
 
 CoordinatesChanged
-  Coordinates: author_date_is_interesting at commit.c:676:1
+  Events:
+    CT: author_date_is_interesting at commit.c:676:1
+    CT: author_date_is_interesting at commit.c:677:24
   Occurrences: 4
 
 CoordinatesChanged
-  Coordinates: base_ref_iterator_init at iterator.c:30:1
+  Events:
+    CT: base_ref_iterator_init at iterator.c:30:1
+    CT: base_ref_iterator_init at iterator.c:31:15
   Occurrences: 114
 
 CoordinatesChanged
-  Coordinates: batch_fsync_enabled at cache.h:1781:1
+  Events:
+    CT: batch_fsync_enabled at cache.h:1781:1
+    CT: batch_fsync_enabled at cache.h:1782:27
   Occurrences: 24
 
 CoordinatesChanged
-  Coordinates: begin_odb_transaction at bulk-checkin.c:361:1
+  Events:
+    CT: begin_odb_transaction at bulk-checkin.c:361:1
+    CT: begin_odb_transaction at bulk-checkin.c:362:26
   Occurrences: 16
 
 CoordinatesChanged
-  Coordinates: bootstrap_attr_stack at attr.c:843:1
+  Events:
+    CT: bootstrap_attr_stack at attr.c:843:1
+    CT: bootstrap_attr_stack at attr.c:847:5
   Occurrences: 21
 
 CoordinatesChanged
-  Coordinates: bucket at hashmap.c:106:1
+  Events:
+    CT: bucket at hashmap.c:106:1
+    CT: bucket at hashmap.c:107:37
   Occurrences: 2574
 
 CoordinatesChanged
-  Coordinates: cache_tree_fully_valid at cache-tree.c:228:1
+  Events:
+    CT: cache_tree_fully_valid at cache-tree.c:228:1
+    CT: cache_tree_fully_valid at cache-tree.c:230:5
   Occurrences: 4
 
 CoordinatesChanged
-  Coordinates: canon_mode at cache.h:286:1
+  Events:
+    CT: canon_mode at cache.h:286:1
+    CT: canon_mode at cache.h:287:6
   Occurrences: 10
 
 CoordinatesChanged
-  Coordinates: cb_each at cbtree.c:112:1
+  Events:
+    CT: cb_each at cbtree.c:112:1
+    CT: cb_each at cbtree.c:113:18
   Occurrences: 11
 
 CoordinatesChanged
-  Coordinates: cb_init at cbtree.h:43:1
+  Events:
+    CT: cb_init at cbtree.h:43:1
+    CT: cb_init at cbtree.h:45:2
   Occurrences: 11
 
 CoordinatesChanged
-  Coordinates: check_bug_if_BUG at common-main.c:64:1
+  Events:
+    CT: check_bug_if_BUG at common-main.c:64:1
+    CT: check_bug_if_BUG at common-main.c:65:6
   Occurrences: 153
 
 CoordinatesChanged
-  Coordinates: check_ce_order at read-cache.c:1989:1
+  Events:
+    CT: check_ce_order at read-cache.c:1989:1
+    CT: check_ce_order at read-cache.c:1992:5
   Occurrences: 10
 
 CoordinatesChanged
-  Coordinates: check_common at path.c:351:1
+  Events:
+    CT: check_common at path.c:351:1
+    CT: check_common at path.c:354:5
   Occurrences: 14
 
 CoordinatesChanged
-  Coordinates: check_file_directory_conflict at read-cache.c:1330:1
+  Events:
+    CT: check_file_directory_conflict at read-cache.c:1330:1
+    CT: check_file_directory_conflict at read-cache.c:1337:10
   Occurrences: 5
 
 CoordinatesChanged
-  Coordinates: check_old_oid at files-backend.c:2439:1
+  Events:
+    CT: check_old_oid at files-backend.c:2439:1
+    CT: check_old_oid at files-backend.c:2442:10
   Occurrences: 11
 
 CoordinatesChanged
-  Coordinates: check_pair_status at diff.c:6068:1
+  Events:
+    CT: check_pair_status at diff.c:6068:1
+    CT: check_pair_status at diff.c:6069:11
   Occurrences: 4
 
 CoordinatesChanged
-  Coordinates: check_signum at sigchain.c:14:1
+  Events:
+    CT: check_signum at sigchain.c:14:1
+    CT: check_signum at sigchain.c:15:14
   Occurrences: 501
 
 CoordinatesChanged
-  Coordinates: classify_conv_attrs at convert.c:2021:1
+  Events:
+    CT: classify_conv_attrs at convert.c:2021:1
+    CT: classify_conv_attrs at convert.c:2022:8
   Occurrences: 1
 
 CoordinatesChanged
-  Coordinates: clone_checkout_metadata at convert.c:2014:1
+  Events:
+    CT: clone_checkout_metadata at convert.c:2014:1
+    CT: clone_checkout_metadata at convert.c:2015:2
   Occurrences: 2
 
 CoordinatesChanged
-  Coordinates: close_commit_graph_one at commit-graph.c:708:1
+  Events:
+    CT: close_commit_graph_one at commit-graph.c:708:1
+    CT: close_commit_graph_one at commit-graph.c:709:5
   Occurrences: 4
 
 CoordinatesChanged
-  Coordinates: close_deflated_stream at streaming.c:69:1
+  Events:
+    CT: close_deflated_stream at streaming.c:69:1
+    CT: close_deflated_stream at streaming.c:70:5
   Occurrences: 1
 
 CoordinatesChanged
-  Coordinates: cmit_fmt_is_mail at pretty.h:65:1
+  Events:
+    CT: cmit_fmt_is_mail at pretty.h:65:1
+    CT: cmit_fmt_is_mail at pretty.h:66:32
   Occurrences: 11
 
 CoordinatesChanged
-  Coordinates: cmp_icase at dir.c:3049:1
+  Events:
+    CT: cmp_icase at dir.c:3049:1
+    CT: cmp_icase at dir.c:3051:10
   Occurrences: 3612
 
 CoordinatesChanged
-  Coordinates: commit_format_is_empty at pretty.c:33:1
+  Events:
+    CT: commit_format_is_empty at pretty.c:33:1
+    CT: commit_format_is_empty at pretty.c:34:36
   Occurrences: 4
 
 CoordinatesChanged
-  Coordinates: commit_graph_compatible at commit-graph.c:206:1
+  Events:
+    CT: commit_graph_compatible at commit-graph.c:206:1
+    CT: commit_graph_compatible at commit-graph.c:207:5
   Occurrences: 13
 
 CoordinatesChanged
-  Coordinates: commit_list_count at commit.c:605:1
+  Events:
+    CT: commit_list_count at commit.c:605:1
+    CT: commit_list_count at commit.c:607:9
   Occurrences: 1
 
 CoordinatesChanged
-  Coordinates: compute_diffstat at diff.c:6910:1
+  Events:
+    CT: compute_diffstat at diff.c:6910:1
+    CT: compute_diffstat at diff.c:6913:2
   Occurrences: 4
 
 CoordinatesChanged
-  Coordinates: config_file_fgetc at config.c:96:1
+  Events:
+    CT: config_file_fgetc at config.c:96:1
+    CT: config_file_fgetc at config.c:97:9
   Occurrences: 60453
 
 CoordinatesChanged
-  Coordinates: configset_iter at config.c:2223:1
+  Events:
+    CT: configset_iter at config.c:2223:1
+    CT: configset_iter at config.c:2229:16
   Occurrences: 202
 
 CoordinatesChanged
-  Coordinates: container_of_or_null_offset at git-compat-util.h:1580:1
+  Events:
+    CT: container_of_or_null_offset at git-compat-util.h:1580:1
+    CT: container_of_or_null_offset at git-compat-util.h:1581:36
   Occurrences: 2306
 
 CoordinatesChanged
-  Coordinates: convert_to_sparse at sparse-index.c:176:1
+  Events:
+    CT: convert_to_sparse at sparse-index.c:176:1
+    CT: convert_to_sparse at sparse-index.c:181:5
   Occurrences: 9
 
 CoordinatesChanged
-  Coordinates: copy_array at git-compat-util.h:1097:1
+  Events:
+    CT: copy_array at git-compat-util.h:1097:1
+    CT: copy_array at git-compat-util.h:1098:5
   Occurrences: 12
 
 CoordinatesChanged
-  Coordinates: cq_must_quote at quote.c:232:1
+  Events:
+    CT: cq_must_quote at quote.c:232:1
+    CT: cq_must_quote at quote.c:233:18
   Occurrences: 32
 
 CoordinatesChanged
-  Coordinates: create_ce_flags at cache.h:236:1
+  Events:
+    CT: create_ce_flags at cache.h:236:1
+    CT: create_ce_flags at cache.h:237:16
   Occurrences: 1
 
 CoordinatesChanged
-  Coordinates: create_ce_mode at cache.h:250:1
+  Events:
+    CT: create_ce_mode at cache.h:250:1
+    CT: create_ce_mode at cache.h:251:6
   Occurrences: 5
 
 CoordinatesChanged
-  Coordinates: current_config_scope at config.c:3828:1
+  Events:
+    CT: current_config_scope at config.c:3828:1
+    CT: current_config_scope at config.c:3829:6
   Occurrences: 1
 
 CoordinatesChanged
-  Coordinates: date_mode_from_type at date.c:208:1
+  Events:
+    CT: date_mode_from_type at date.c:208:1
+    CT: date_mode_from_type at date.c:210:5
   Occurrences: 4
 
 CoordinatesChanged
-  Coordinates: date_overflows at date.c:1364:1
+  Events:
+    CT: date_overflows at date.c:1364:1
+    CT: date_overflows at date.c:1369:10
   Occurrences: 4
 
 CoordinatesChanged
-  Coordinates: determine_macros at attr.c:1056:1
+  Events:
+    CT: determine_macros at attr.c:1056:1
+    CT: determine_macros at attr.c:1057:9
   Occurrences: 21
 
 CoordinatesChanged
-  Coordinates: die_in_unpopulated_submodule at submodule.c:326:1
+  Events:
+    CT: die_in_unpopulated_submodule at submodule.c:326:1
+    CT: die_in_unpopulated_submodule at submodule.c:329:5
   Occurrences: 4
 
 CoordinatesChanged
-  Coordinates: die_is_recursing_builtin at usage.c:92:1
+  Events:
+    CT: die_is_recursing_builtin at usage.c:92:1
+    CT: die_is_recursing_builtin at usage.c:102:7
   Occurrences: 13
 
 CoordinatesChanged
-  Coordinates: diff_can_quit_early at diff.c:6883:1
+  Events:
+    CT: diff_can_quit_early at diff.c:6883:1
+    CT: diff_can_quit_early at diff.c:6885:16
   Occurrences: 8
 
 CoordinatesChanged
-  Coordinates: diff_free at diff.c:6509:1
+  Events:
+    CT: diff_free at diff.c:6509:1
+    CT: diff_free at diff.c:6510:5
   Occurrences: 20
 
 CoordinatesChanged
-  Coordinates: diff_free_file at diff.c:6492:1
+  Events:
+    CT: diff_free_file at diff.c:6492:1
+    CT: diff_free_file at diff.c:6493:5
   Occurrences: 16
 
 CoordinatesChanged
-  Coordinates: diff_free_filespec_data at diff.c:4175:1
+  Events:
+    CT: diff_free_filespec_data at diff.c:4175:1
+    CT: diff_free_filespec_data at diff.c:4176:5
   Occurrences: 16
 
 CoordinatesChanged
-  Coordinates: diff_line_prefix at diff.c:2259:1
+  Events:
+    CT: diff_line_prefix at diff.c:2259:1
+    CT: diff_line_prefix at diff.c:2261:10
   Occurrences: 8
 
 CoordinatesChanged
-  Coordinates: diff_merges_setup_revs at diff-merges.c:174:1
+  Events:
+    CT: diff_merges_setup_revs at diff-merges.c:174:1
+    CT: diff_merges_setup_revs at diff-merges.c:175:27
   Occurrences: 8
 
 CoordinatesChanged
-  Coordinates: diff_resolve_rename_copy at diff.c:6008:1
+  Events:
+    CT: diff_resolve_rename_copy at diff.c:6008:1
+    CT: diff_resolve_rename_copy at diff.c:6015:16
   Occurrences: 8
 
 CoordinatesChanged
-  Coordinates: diff_set_mnemonic_prefix at diff.c:3370:1
+  Events:
+    CT: diff_set_mnemonic_prefix at diff.c:3370:1
+    CT: diff_set_mnemonic_prefix at diff.c:3371:5
   Occurrences: 4
 
 CoordinatesChanged
-  Coordinates: diff_unmodified_pair at diff.c:5867:1
+  Events:
+    CT: diff_unmodified_pair at diff.c:5867:1
+    CT: diff_unmodified_pair at diff.c:5876:10
   Occurrences: 8
 
 CoordinatesChanged
-  Coordinates: display_progress at progress.c:247:1
+  Events:
+    CT: display_progress at progress.c:247:1
+    CT: display_progress at progress.c:248:5
   Occurrences: 5
 
 CoordinatesChanged
-  Coordinates: display_throughput at progress.c:187:1
+  Events:
+    CT: display_throughput at progress.c:187:1
+    CT: display_throughput at progress.c:192:5
   Occurrences: 18
 
 CoordinatesChanged
-  Coordinates: do_event at config.c:977:1
+  Events:
+    CT: do_event at config.c:977:1
+    CT: do_event at config.c:980:11
   Occurrences: 7171
 
 CoordinatesChanged
-  Coordinates: do_invalidate_path at cache-tree.c:105:1
+  Events:
+    CT: do_invalidate_path at cache-tree.c:105:1
+    CT: do_invalidate_path at cache-tree.c:122:10
   Occurrences: 6
 
 CoordinatesChanged
-  Coordinates: drop_all_attr_stacks at attr.c:535:1
+  Events:
+    CT: drop_all_attr_stacks at attr.c:535:1
+    CT: drop_all_attr_stacks at attr.c:540:16
   Occurrences: 2
 
 CoordinatesChanged
-  Coordinates: dummy_pthread_init at thread-utils.c:101:1
+  Events:
+    CT: dummy_pthread_init at thread-utils.c:101:1
+    CT: dummy_pthread_init at thread-utils.c:112:1
   Occurrences: 459
 
 CoordinatesChanged
-  Coordinates: enable_delayed_checkout at entry.c:144:1
+  Events:
+    CT: enable_delayed_checkout at entry.c:144:1
+    CT: enable_delayed_checkout at entry.c:145:5
   Occurrences: 1
 
 CoordinatesChanged
-  Coordinates: enqueue_checkout at parallel-checkout.c:148:1
+  Events:
+    CT: enqueue_checkout at parallel-checkout.c:148:1
+    CT: enqueue_checkout at parallel-checkout.c:151:5
   Occurrences: 1
 
 CoordinatesChanged
-  Coordinates: entry_clear at tree-walk.c:105:1
+  Events:
+    CT: entry_clear at tree-walk.c:105:1
+    CT: entry_clear at tree-walk.c:106:2
   Occurrences: 1
 
 CoordinatesChanged
-  Coordinates: entry_extract at tree-walk.c:110:1
+  Events:
+    CT: entry_extract at tree-walk.c:110:1
+    CT: entry_extract at tree-walk.c:111:5
   Occurrences: 2
 
 CoordinatesChanged
-  Coordinates: estimate_cache_size at read-cache.c:2067:1
+  Events:
+    CT: estimate_cache_size at read-cache.c:2067:1
+    CT: estimate_cache_size at read-cache.c:2074:31
   Occurrences: 4
 
 CoordinatesChanged
-  Coordinates: external_diff at diff.c:506:1
+  Events:
+    CT: external_diff at diff.c:506:1
+    CT: external_diff at diff.c:510:5
   Occurrences: 12
 
 CoordinatesChanged
-  Coordinates: files_assert_main_repository at files-backend.c:109:1
+  Events:
+    CT: files_assert_main_repository at files-backend.c:109:1
+    CT: files_assert_main_repository at files-backend.c:110:5
   Occurrences: 84
 
 CoordinatesChanged
-  Coordinates: fill_filespec at diff.c:3898:1
+  Events:
+    CT: fill_filespec at diff.c:3898:1
+    CT: fill_filespec at diff.c:3899:5
   Occurrences: 4
 
 CoordinatesChanged
-  Coordinates: fill_loose_path at object-file.c:422:1
+  Events:
+    CT: fill_loose_path at object-file.c:422:1
+    CT: fill_loose_path at object-file.c:424:18
   Occurrences: 79
 
 CoordinatesChanged
-  Coordinates: fill_stat_data at read-cache.c:167:1
+  Events:
+    CT: fill_stat_data at read-cache.c:167:1
+    CT: fill_stat_data at read-cache.c:168:21
   Occurrences: 5
 
 CoordinatesChanged
-  Coordinates: finalize_colopts at column.c:211:1
+  Events:
+    CT: finalize_colopts at column.c:211:1
+    CT: finalize_colopts at column.c:212:16
   Occurrences: 7
 
 CoordinatesChanged
-  Coordinates: finalize_deferred_config at commit.c:1201:1
+  Events:
+    CT: finalize_deferred_config at commit.c:1201:1
+    CT: finalize_deferred_config at commit.c:1202:70
   Occurrences: 4
 
 CoordinatesChanged
-  Coordinates: finish_if_sparse at progress.c:313:1
+  Events:
+    CT: finish_if_sparse at progress.c:313:1
+    CT: finish_if_sparse at progress.c:314:5
   Occurrences: 2
 
 CoordinatesChanged
-  Coordinates: finish_object_disambiguation at object-name.c:192:1
+  Events:
+    CT: finish_object_disambiguation at object-name.c:192:1
+    CT: finish_object_disambiguation at object-name.c:193:6
   Occurrences: 11
 
 CoordinatesChanged
-  Coordinates: for_each_userdiff_driver_list at userdiff.c:449:1
+  Events:
+    CT: for_each_userdiff_driver_list at userdiff.c:449:1
+    CT: for_each_userdiff_driver_list at userdiff.c:452:16
   Occurrences: 16
 
 CoordinatesChanged
-  Coordinates: free_chunkfile at chunk-format.c:34:1
+  Events:
+    CT: free_chunkfile at chunk-format.c:34:1
+    CT: free_chunkfile at chunk-format.c:35:5
   Occurrences: 19
 
 CoordinatesChanged
-  Coordinates: free_filespec at diff.c:3889:1
+  Events:
+    CT: free_filespec at diff.c:3889:1
+    CT: free_filespec at diff.c:3890:7
   Occurrences: 8
 
 CoordinatesChanged
-  Coordinates: free_name_hash at name-hash.c:734:1
+  Events:
+    CT: free_name_hash at name-hash.c:734:1
+    CT: free_name_hash at name-hash.c:735:5
   Occurrences: 1
 
 CoordinatesChanged
-  Coordinates: free_preprocessed_options at parse-options.c:759:1
+  Events:
+    CT: free_preprocessed_options at parse-options.c:759:1
+    CT: free_preprocessed_options at parse-options.c:762:5
   Occurrences: 145
 
 CoordinatesChanged
-  Coordinates: fstat_checkout_output at entry.c:113:1
+  Events:
+    CT: fstat_checkout_output at entry.c:113:1
+    CT: fstat_checkout_output at entry.c:119:9
   Occurrences: 1
 
 CoordinatesChanged
-  Coordinates: fsync_component at write-or-die.c:81:1
+  Events:
+    CT: fsync_component at write-or-die.c:81:1
+    CT: fsync_component at write-or-die.c:82:23
   Occurrences: 10
 
 CoordinatesChanged
-  Coordinates: fsync_component_or_die at write-or-die.c:88:1
+  Events:
+    CT: fsync_component_or_die at write-or-die.c:88:1
+    CT: fsync_component_or_die at write-or-die.c:89:23
   Occurrences: 21
 
 CoordinatesChanged
-  Coordinates: get_be16 at bswap.h:149:1
+  Events:
+    CT: get_be16 at bswap.h:149:1
+    CT: get_be16 at bswap.h:151:9
   Occurrences: 4
 
 CoordinatesChanged
-  Coordinates: get_be32 at bswap.h:156:1
+  Events:
+    CT: get_be32 at bswap.h:156:1
+    CT: get_be32 at bswap.h:158:9
   Occurrences: 40
 
 CoordinatesChanged
-  Coordinates: get_commit_output_encoding at environment.c:377:1
+  Events:
+    CT: get_commit_output_encoding at environment.c:377:1
+    CT: get_commit_output_encoding at environment.c:378:29
   Occurrences: 13
 
 CoordinatesChanged
-  Coordinates: get_conv_flags at object-file.c:305:1
+  Events:
+    CT: get_conv_flags at object-file.c:305:1
+    CT: get_conv_flags at object-file.c:307:10
   Occurrences: 4
 
 CoordinatesChanged
-  Coordinates: get_default_delay at progress.c:273:1
+  Events:
+    CT: get_default_delay at progress.c:273:1
+    CT: get_default_delay at progress.c:276:5
   Occurrences: 2
 
 CoordinatesChanged
-  Coordinates: get_die_message_routine at usage.c:128:1
+  Events:
+    CT: get_die_message_routine at usage.c:128:1
+    CT: get_die_message_routine at usage.c:129:9
   Occurrences: 13
 
 CoordinatesChanged
-  Coordinates: get_files_ref_lock_timeout_ms at refs.c:890:1
+  Events:
+    CT: get_files_ref_lock_timeout_ms at refs.c:890:1
+    CT: get_files_ref_lock_timeout_ms at refs.c:896:5
   Occurrences: 68
 
 CoordinatesChanged
-  Coordinates: get_git_common_dir at environment.c:216:1
+  Events:
+    CT: get_git_common_dir at environment.c:216:1
+    CT: get_git_common_dir at environment.c:217:21
   Occurrences: 171
 
 CoordinatesChanged
-  Coordinates: get_git_dir at environment.c:209:1
+  Events:
+    CT: get_git_dir at environment.c:209:1
+    CT: get_git_dir at environment.c:210:21
   Occurrences: 201
 
 CoordinatesChanged
-  Coordinates: get_git_work_tree at environment.c:273:1
+  Events:
+    CT: get_git_work_tree at environment.c:273:1
+    CT: get_git_work_tree at environment.c:274:23
   Occurrences: 221
 
 CoordinatesChanged
-  Coordinates: get_glob_global at pathspec.c:238:1
+  Events:
+    CT: get_glob_global at pathspec.c:238:1
+    CT: get_glob_global at pathspec.c:241:5
   Occurrences: 8
 
 CoordinatesChanged
-  Coordinates: get_graft_file at environment.c:325:1
+  Events:
+    CT: get_graft_file at environment.c:325:1
+    CT: get_graft_file at environment.c:326:8
   Occurrences: 13
 
 CoordinatesChanged
-  Coordinates: get_hash_hex_algop at hex.c:52:1
+  Events:
+    CT: get_hash_hex_algop at hex.c:52:1
+    CT: get_hash_hex_algop at hex.c:54:16
   Occurrences: 53
 
 CoordinatesChanged
-  Coordinates: get_hex_char_from_oid at object-name.c:645:1
+  Events:
+    CT: get_hex_char_from_oid at object-name.c:645:1
+    CT: get_hex_char_from_oid at object-name.c:648:5
   Occurrences: 363
 
 CoordinatesChanged
-  Coordinates: get_home_gitattributes at attr.c:815:1
+  Events:
+    CT: get_home_gitattributes at attr.c:815:1
+    CT: get_home_gitattributes at attr.c:816:6
   Occurrences: 26
 
 CoordinatesChanged
-  Coordinates: get_icase_global at pathspec.c:258:1
+  Events:
+    CT: get_icase_global at pathspec.c:258:1
+    CT: get_icase_global at pathspec.c:261:5
   Occurrences: 4
 
 CoordinatesChanged
-  Coordinates: get_index_file at environment.c:318:1
+  Events:
+    CT: get_index_file at environment.c:318:1
+    CT: get_index_file at environment.c:319:21
   Occurrences: 12
 
 CoordinatesChanged
-  Coordinates: get_literal_global at pathspec.c:228:1
+  Events:
+    CT: get_literal_global at pathspec.c:228:1
+    CT: get_literal_global at pathspec.c:231:5
   Occurrences: 4
 
 CoordinatesChanged
-  Coordinates: get_log_output_encoding at environment.c:371:1
+  Events:
+    CT: get_log_output_encoding at environment.c:371:1
+    CT: get_log_output_encoding at environment.c:372:33
   Occurrences: 13
 
 CoordinatesChanged
-  Coordinates: get_main_ref_store at refs.c:1999:1
+  Events:
+    CT: get_main_ref_store at refs.c:1999:1
+    CT: get_main_ref_store at refs.c:2000:7
   Occurrences: 322
 
 CoordinatesChanged
-  Coordinates: get_mode at tree-walk.c:10:1
+  Events:
+    CT: get_mode at tree-walk.c:10:1
+    CT: get_mode at tree-walk.c:14:6
   Occurrences: 6
 
 CoordinatesChanged
-  Coordinates: get_noglob_global at pathspec.c:248:1
+  Events:
+    CT: get_noglob_global at pathspec.c:248:1
+    CT: get_noglob_global at pathspec.c:251:5
   Occurrences: 4
 
 CoordinatesChanged
-  Coordinates: get_object_directory at environment.c:278:1
+  Events:
+    CT: get_object_directory at environment.c:278:1
+    CT: get_object_directory at environment.c:279:21
   Occurrences: 56
 
 CoordinatesChanged
-  Coordinates: get_one_line at pretty.c:201:1
+  Events:
+    CT: get_one_line at pretty.c:201:1
+    CT: get_one_line at pretty.c:202:6
   Occurrences: 39
 
 CoordinatesChanged
-  Coordinates: get_progress at unpack-trees.c:348:1
+  Events:
+    CT: get_progress at unpack-trees.c:348:1
+    CT: get_progress at unpack-trees.c:351:5
   Occurrences: 1
 
 CoordinatesChanged
-  Coordinates: get_saved_parents at revision.c:4046:1
+  Events:
+    CT: get_saved_parents at revision.c:4046:1
+    CT: get_saved_parents at revision.c:4049:11
   Occurrences: 4
 
 CoordinatesChanged
-  Coordinates: get_shared_repository at environment.c:391:1
+  Events:
+    CT: get_shared_repository at environment.c:391:1
+    CT: get_shared_repository at environment.c:392:5
   Occurrences: 2175
 
 CoordinatesChanged
-  Coordinates: get_super_prefix at environment.c:238:1
+  Events:
+    CT: get_super_prefix at environment.c:238:1
+    CT: get_super_prefix at environment.c:240:5
   Occurrences: 156
 
 CoordinatesChanged
-  Coordinates: get_unit_factor at config.c:1146:1
+  Events:
+    CT: get_unit_factor at config.c:1146:1
+    CT: get_unit_factor at config.c:1148:10
   Occurrences: 514
 
 CoordinatesChanged
-  Coordinates: git_bswap32 at bswap.h:42:1
+  Events:
+    CT: git_bswap32 at bswap.h:42:1
+    CT: git_bswap32 at bswap.h:47:3
   Occurrences: 143
 
 CoordinatesChanged
-  Coordinates: git_config_check_init at config.c:2549:1
+  Events:
+    CT: git_config_check_init at config.c:2549:1
+    CT: git_config_check_init at config.c:2550:10
   Occurrences: 908
 
 CoordinatesChanged
-  Coordinates: git_configset_clear at config.c:2378:1
+  Events:
+    CT: git_configset_clear at config.c:2378:1
+    CT: git_configset_clear at config.c:2381:5
   Occurrences: 191
 
 CoordinatesChanged
-  Coordinates: git_default_branch_name at refs.c:689:1
+  Events:
+    CT: git_default_branch_name at refs.c:689:1
+    CT: git_default_branch_name at refs.c:692:5
   Occurrences: 49
 
 CoordinatesChanged
-  Coordinates: git_exec_path at exec-cmd.c:285:1
+  Events:
+    CT: git_exec_path at exec-cmd.c:285:1
+    CT: git_exec_path at exec-cmd.c:286:5
   Occurrences: 153
 
 CoordinatesChanged
-  Coordinates: git_has_dos_drive_prefix at git-compat-util.h:432:1
+  Events:
+    CT: git_has_dos_drive_prefix at git-compat-util.h:432:1
+    CT: git_has_dos_drive_prefix at git-compat-util.h:434:1
   Occurrences: 523
 
 CoordinatesChanged
-  Coordinates: git_is_dir_sep at git-compat-util.h:447:1
+  Events:
+    CT: git_is_dir_sep at git-compat-util.h:447:1
+    CT: git_is_dir_sep at git-compat-util.h:448:11
   Occurrences: 44816
 
 CoordinatesChanged
-  Coordinates: git_parse_maybe_bool_text at config.c:1336:1
+  Events:
+    CT: git_parse_maybe_bool_text at config.c:1336:1
+    CT: git_parse_maybe_bool_text at config.c:1337:5
   Occurrences: 924
 
 CoordinatesChanged
-  Coordinates: git_path_check_ident at convert.c:1290:1
+  Events:
+    CT: git_path_check_ident at convert.c:1290:1
+    CT: git_path_check_ident at convert.c:1293:9
   Occurrences: 17
 
 CoordinatesChanged
-  Coordinates: git_resolve_executable_dir at exec-cmd.c:256:1
+  Events:
+    CT: git_resolve_executable_dir at exec-cmd.c:256:1
+    CT: git_resolve_executable_dir at exec-cmd.c:257:1
   Occurrences: 153
 
 CoordinatesChanged
-  Coordinates: git_wcwidth at utf8.c:85:1
+  Events:
+    CT: git_wcwidth at utf8.c:85:1
+    CT: git_wcwidth at utf8.c:93:10
   Occurrences: 31
 
 CoordinatesChanged
-  Coordinates: graph_show_line_prefix at graph.c:72:1
+  Events:
+    CT: graph_show_line_prefix at graph.c:72:1
+    CT: graph_show_line_prefix at graph.c:73:5
   Occurrences: 8
 
 CoordinatesChanged
-  Coordinates: group_init at xdiffi.c:717:1
+  Events:
+    CT: group_init at xdiffi.c:717:1
+    CT: group_init at xdiffi.c:718:20
   Occurrences: 16
 
 CoordinatesChanged
-  Coordinates: group_next at xdiffi.c:728:1
+  Events:
+    CT: group_next at xdiffi.c:728:1
+    CT: group_next at xdiffi.c:729:7
   Occurrences: 16
 
 CoordinatesChanged
-  Coordinates: group_slide_down at xdiffi.c:761:1
+  Events:
+    CT: group_slide_down at xdiffi.c:761:1
+    CT: group_slide_down at xdiffi.c:762:7
   Occurrences: 4
 
 CoordinatesChanged
-  Coordinates: has_non_ascii at precompose_utf8.c:18:1
+  Events:
+    CT: has_non_ascii at precompose_utf8.c:18:1
+    CT: has_non_ascii at precompose_utf8.c:23:5
   Occurrences: 1011
 
 CoordinatesChanged
-  Coordinates: has_subcommands at parse-options.c:527:1
+  Events:
+    CT: has_subcommands at parse-options.c:527:1
+    CT: has_subcommands at parse-options.c:528:16
   Occurrences: 145
 
 CoordinatesChanged
-  Coordinates: hash_algo_by_name at object-file.c:239:1
+  Events:
+    CT: hash_algo_by_name at object-file.c:239:1
+    CT: hash_algo_by_name at object-file.c:241:5
   Occurrences: 64
 
 CoordinatesChanged
-  Coordinates: hash_algo_by_ptr at hash.h:196:1
+  Events:
+    CT: hash_algo_by_ptr at hash.h:196:1
+    CT: hash_algo_by_ptr at hash.h:197:11
   Occurrences: 171
 
 CoordinatesChanged
-  Coordinates: hash_index_entry at name-hash.c:109:1
+  Events:
+    CT: hash_index_entry at name-hash.c:109:1
+    CT: hash_index_entry at name-hash.c:110:8
   Occurrences: 4
 
 CoordinatesChanged
-  Coordinates: hashfile_total at csum-file.h:56:1
+  Events:
+    CT: hashfile_total at csum-file.h:56:1
+    CT: hashfile_total at csum-file.h:57:21
   Occurrences: 9
 
 CoordinatesChanged
-  Coordinates: hashmap_clear_ at hashmap.c:203:1
+  Events:
+    CT: hashmap_clear_ at hashmap.c:203:1
+    CT: hashmap_clear_ at hashmap.c:204:5
   Occurrences: 150
 
 CoordinatesChanged
-  Coordinates: hashmap_entry_init at hashmap.h:316:1
+  Events:
+    CT: hashmap_entry_init at hashmap.h:316:1
+    CT: hashmap_entry_init at hashmap.h:317:10
   Occurrences: 2569
 
 CoordinatesChanged
-  Coordinates: hashmap_get at hashmap.c:215:1
+  Events:
+    CT: hashmap_get at hashmap.c:215:1
+    CT: hashmap_get at hashmap.c:216:10
   Occurrences: 1904
 
 CoordinatesChanged
-  Coordinates: hashmap_get_size at hashmap.h:325:1
+  Events:
+    CT: hashmap_get_size at hashmap.h:325:1
+    CT: hashmap_get_size at hashmap.h:326:5
   Occurrences: 196
 
 CoordinatesChanged
-  Coordinates: hashmap_iter_init at hashmap.c:288:1
+  Events:
+    CT: hashmap_iter_init at hashmap.c:288:1
+    CT: hashmap_iter_init at hashmap.c:289:12
   Occurrences: 287
 
 CoordinatesChanged
-  Coordinates: hashmap_iter_next at hashmap.c:295:1
+  Events:
+    CT: hashmap_iter_next at hashmap.c:295:1
+    CT: hashmap_iter_next at hashmap.c:296:24
   Occurrences: 856
 
 CoordinatesChanged
-  Coordinates: hashwrite at csum-file.c:96:1
+  Events:
+    CT: hashwrite at csum-file.c:96:1
+    CT: hashwrite at csum-file.c:97:9
   Occurrences: 51
 
 CoordinatesChanged
-  Coordinates: have_git_dir at environment.c:203:1
+  Events:
+    CT: have_git_dir at environment.c:203:1
+    CT: have_git_dir at environment.c:204:21
   Occurrences: 30
 
 CoordinatesChanged
-  Coordinates: hex_to_bytes at hex.c:39:1
+  Events:
+    CT: hex_to_bytes at hex.c:39:1
+    CT: hex_to_bytes at hex.c:40:9
   Occurrences: 11
 
 CoordinatesChanged
-  Coordinates: hexval at cache.h:1401:1
+  Events:
+    CT: hexval at cache.h:1401:1
+    CT: hexval at cache.h:1402:21
   Occurrences: 2538
 
 CoordinatesChanged
-  Coordinates: ident_is_sufficient at ident.c:586:1
+  Events:
+    CT: ident_is_sufficient at ident.c:586:1
+    CT: ident_is_sufficient at ident.c:588:38
   Occurrences: 4
 
 CoordinatesChanged
-  Coordinates: init_common_trie at path.c:334:1
+  Events:
+    CT: init_common_trie at path.c:334:1
+    CT: init_common_trie at path.c:337:5
   Occurrences: 22
 
 CoordinatesChanged
-  Coordinates: init_diff_ui_defaults at diff.c:263:1
+  Events:
+    CT: init_diff_ui_defaults at diff.c:263:1
+    CT: init_diff_ui_defaults at diff.c:264:29
   Occurrences: 4
 
 CoordinatesChanged
-  Coordinates: init_object_disambiguation at object-name.c:321:1
+  Events:
+    CT: init_object_disambiguation at object-name.c:321:1
+    CT: init_object_disambiguation at object-name.c:324:10
   Occurrences: 33
 
 CoordinatesChanged
-  Coordinates: init_sparse_checkout_patterns at dir.c:1437:1
+  Events:
+    CT: init_sparse_checkout_patterns at dir.c:1437:1
+    CT: init_sparse_checkout_patterns at dir.c:1439:10
   Occurrences: 21
 
 CoordinatesChanged
-  Coordinates: init_tree_desc_internal at tree-walk.c:60:1
+  Events:
+    CT: init_tree_desc_internal at tree-walk.c:60:1
+    CT: init_tree_desc_internal at tree-walk.c:61:15
   Occurrences: 10
 
 CoordinatesChanged
-  Coordinates: interpret_nth_prior_checkout at object-name.c:1420:1
+  Events:
+    CT: interpret_nth_prior_checkout at object-name.c:1420:1
+    CT: interpret_nth_prior_checkout at object-name.c:1427:5
   Occurrences: 31
 
 CoordinatesChanged
-  Coordinates: invalidate_ce_path at unpack-trees.c:2255:1
+  Events:
+    CT: invalidate_ce_path at unpack-trees.c:2255:1
+    CT: invalidate_ce_path at unpack-trees.c:2256:5
   Occurrences: 1
 
 CoordinatesChanged
-  Coordinates: is_bare_repository at environment.c:197:1
+  Events:
+    CT: is_bare_repository at environment.c:197:1
+    CT: is_bare_repository at environment.c:199:9
   Occurrences: 142
 
 CoordinatesChanged
-  Coordinates: is_blank_line at pretty.c:599:1
+  Events:
+    CT: is_blank_line at pretty.c:599:1
+    CT: is_blank_line at pretty.c:600:6
   Occurrences: 22
 
 CoordinatesChanged
-  Coordinates: is_dot_or_dotdot at dir.h:456:1
+  Events:
+    CT: is_dot_or_dotdot at dir.h:456:1
+    CT: is_dot_or_dotdot at dir.h:457:25
   Occurrences: 262
 
 CoordinatesChanged
-  Coordinates: is_empty_ref_iterator at iterator.c:82:1
+  Events:
+    CT: is_empty_ref_iterator at iterator.c:82:1
+    CT: is_empty_ref_iterator at iterator.c:83:30
   Occurrences: 13
 
 CoordinatesChanged
-  Coordinates: is_encoding_utf8 at utf8.c:423:1
+  Events:
+    CT: is_encoding_utf8 at utf8.c:423:1
+    CT: is_encoding_utf8 at utf8.c:425:10
   Occurrences: 12
 
 CoordinatesChanged
-  Coordinates: is_from_cherry_pick at wt-status.h:47:1
+  Events:
+    CT: is_from_cherry_pick at wt-status.h:47:1
+    CT: is_from_cherry_pick at wt-status.h:48:43
   Occurrences: 4
 
 CoordinatesChanged
-  Coordinates: is_from_rebase at wt-status.h:53:1
+  Events:
+    CT: is_from_rebase at wt-status.h:53:1
+    CT: is_from_rebase at wt-status.h:54:16
   Occurrences: 4
 
 CoordinatesChanged
-  Coordinates: is_missing_file_error at git-compat-util.h:1514:1
+  Events:
+    CT: is_missing_file_error at git-compat-util.h:1514:1
+    CT: is_missing_file_error at git-compat-util.h:1515:17
   Occurrences: 601
 
 CoordinatesChanged
-  Coordinates: is_racy_stat at read-cache.c:362:1
+  Events:
+    CT: is_racy_stat at read-cache.c:362:1
+    CT: is_racy_stat at read-cache.c:363:27
   Occurrences: 4
 
 CoordinatesChanged
-  Coordinates: is_racy_timestamp at read-cache.c:377:1
+  Events:
+    CT: is_racy_timestamp at read-cache.c:377:1
+    CT: is_racy_timestamp at read-cache.c:378:11
   Occurrences: 4
 
 CoordinatesChanged
-  Coordinates: is_rerere_enabled at rerere.c:855:1
+  Events:
+    CT: is_rerere_enabled at rerere.c:855:1
+    CT: is_rerere_enabled at rerere.c:858:6
   Occurrences: 4
 
 CoordinatesChanged
-  Coordinates: is_summary_empty at diff.c:6348:1
+  Events:
+    CT: is_summary_empty at diff.c:6348:1
+    CT: is_summary_empty at diff.c:6351:19
   Occurrences: 4
 
 CoordinatesChanged
-  Coordinates: is_tempfile_active at tempfile.h:222:1
+  Events:
+    CT: is_tempfile_active at tempfile.h:222:1
+    CT: is_tempfile_active at tempfile.h:223:9
   Occurrences: 2544
 
 CoordinatesChanged
-  Coordinates: is_url at url.c:20:1
+  Events:
+    CT: is_url at url.c:20:1
+    CT: is_url at url.c:22:5
   Occurrences: 2
 
 CoordinatesChanged
-  Coordinates: is_urlschemechar at url.c:5:1
+  Events:
+    CT: is_urlschemechar at url.c:5:1
+    CT: is_urlschemechar at url.c:14:24
   Occurrences: 3
 
 CoordinatesChanged
-  Coordinates: iskeychar at config.c:537:1
+  Events:
+    CT: iskeychar at config.c:537:1
+    CT: iskeychar at config.c:538:9
   Occurrences: 61747
 
 CoordinatesChanged
-  Coordinates: lazy_init_name_hash at name-hash.c:580:1
+  Events:
+    CT: lazy_init_name_hash at name-hash.c:580:1
+    CT: lazy_init_name_hash at name-hash.c:582:5
   Occurrences: 16
 
 CoordinatesChanged
-  Coordinates: list_add_tail at list.h:65:1
+  Events:
+    CT: list_add_tail at list.h:65:1
+    CT: list_add_tail at list.h:66:6
   Occurrences: 290
 
 CoordinatesChanged
-  Coordinates: list_objects_filter_init at list-objects-filter-options.c:419:1
+  Events:
+    CT: list_objects_filter_init at list-objects-filter-options.c:419:1
+    CT: list_objects_filter_init at list-objects-filter-options.c:421:2
   Occurrences: 17
 
 CoordinatesChanged
-  Coordinates: list_objects_filter_release at list-objects-filter-options.c:326:1
+  Events:
+    CT: list_objects_filter_release at list-objects-filter-options.c:326:1
+    CT: list_objects_filter_release at list-objects-filter-options.c:329:5
   Occurrences: 8
 
 CoordinatesChanged
-  Coordinates: looks_like_command_line_option at path.c:1519:1
+  Events:
+    CT: looks_like_command_line_option at path.c:1519:1
+    CT: looks_like_command_line_option at path.c:1520:13
   Occurrences: 1
 
 CoordinatesChanged
-  Coordinates: lookup_fsmonitor_settings at fsmonitor-settings.c:102:1
+  Events:
+    CT: lookup_fsmonitor_settings at fsmonitor-settings.c:102:1
+    CT: lookup_fsmonitor_settings at fsmonitor-settings.c:106:5
   Occurrences: 9
 
 CoordinatesChanged
-  Coordinates: lookup_lazy_params at name-hash.c:187:1
+  Events:
+    CT: lookup_lazy_params at name-hash.c:187:1
+    CT: lookup_lazy_params at name-hash.c:190:22
   Occurrences: 4
 
 CoordinatesChanged
-  Coordinates: lookup_ref_store_map at refs.c:1965:1
+  Events:
+    CT: lookup_ref_store_map at refs.c:1965:1
+    CT: lookup_ref_store_map at refs.c:1971:10
   Occurrences: 14
 
 CoordinatesChanged
-  Coordinates: lookup_replace_object at replace-object.h:35:1
+  Events:
+    CT: lookup_replace_object at replace-object.h:35:1
+    CT: lookup_replace_object at replace-object.h:39:10
   Occurrences: 75
 
 CoordinatesChanged
-  Coordinates: mark_all_ce_unused at unpack-trees.c:611:1
+  Events:
+    CT: mark_all_ce_unused at unpack-trees.c:611:1
+    CT: mark_all_ce_unused at unpack-trees.c:613:16
   Occurrences: 2
 
 CoordinatesChanged
-  Coordinates: match_stat_data at read-cache.c:180:1
+  Events:
+    CT: match_stat_data at read-cache.c:180:1
+    CT: match_stat_data at read-cache.c:183:5
   Occurrences: 4
 
 CoordinatesChanged
-  Coordinates: mem_pool_init at mem-pool.c:59:1
+  Events:
+    CT: mem_pool_init at mem-pool.c:59:1
+    CT: mem_pool_init at mem-pool.c:60:2
   Occurrences: 20
 
 CoordinatesChanged
-  Coordinates: memhash at hashmap.c:30:1
+  Events:
+    CT: memhash at hashmap.c:30:1
+    CT: memhash at hashmap.c:33:9
   Occurrences: 679
 
 CoordinatesChanged
-  Coordinates: memihash at hashmap.c:41:1
+  Events:
+    CT: memihash at hashmap.c:41:1
+    CT: memihash at hashmap.c:44:9
   Occurrences: 16
 
 CoordinatesChanged
-  Coordinates: message_is_empty at sequencer.c:1143:1
+  Events:
+    CT: message_is_empty at sequencer.c:1143:1
+    CT: message_is_empty at sequencer.c:1144:5
   Occurrences: 4
 
 CoordinatesChanged
-  Coordinates: move_array at git-compat-util.h:1105:1
+  Events:
+    CT: move_array at git-compat-util.h:1105:1
+    CT: move_array at git-compat-util.h:1106:5
   Occurrences: 162
 
 CoordinatesChanged
-  Coordinates: move_index_extensions at read-cache.c:3580:1
+  Events:
+    CT: move_index_extensions at read-cache.c:3580:1
+    CT: move_index_extensions at read-cache.c:3581:22
   Occurrences: 1
 
 CoordinatesChanged
-  Coordinates: msb at object-name.c:628:1
+  Events:
+    CT: msb at object-name.c:628:1
+    CT: msb at object-name.c:630:9
   Occurrences: 11
 
 CoordinatesChanged
-  Coordinates: must_checkout at unpack-trees.c:404:1
+  Events:
+    CT: must_checkout at unpack-trees.c:404:1
+    CT: must_checkout at unpack-trees.c:405:22
   Occurrences: 1
 
 CoordinatesChanged
-  Coordinates: need_bs_quote at quote.c:8:1
+  Events:
+    CT: need_bs_quote at quote.c:8:1
+    CT: need_bs_quote at quote.c:9:12
   Occurrences: 5
 
 CoordinatesChanged
-  Coordinates: need_to_gc at gc.c:357:1
+  Events:
+    CT: need_to_gc at gc.c:357:1
+    CT: need_to_gc at gc.c:363:10
   Occurrences: 2
 
 CoordinatesChanged
-  Coordinates: next_cache_entry at unpack-trees.c:650:1
+  Events:
+    CT: next_cache_entry at unpack-trees.c:650:1
+    CT: next_cache_entry at unpack-trees.c:651:28
   Occurrences: 1
 
 CoordinatesChanged
-  Coordinates: nodate at date.c:632:1
+  Events:
+    CT: nodate at date.c:632:1
+    CT: nodate at date.c:633:22
   Occurrences: 23
 
 CoordinatesChanged
-  Coordinates: noop_core_config at git-compat-util.h:419:1
+  Events:
+    CT: noop_core_config at git-compat-util.h:419:1
+    CT: noop_core_config at git-compat-util.h:421:1
   Occurrences: 115
 
 CoordinatesChanged
-  Coordinates: null_filter_fn at convert.c:1555:1
+  Events:
+    CT: null_filter_fn at convert.c:1555:1
+    CT: null_filter_fn at convert.c:1558:5
   Occurrences: 3
 
 CoordinatesChanged
-  Coordinates: null_free_fn at convert.c:1572:1
+  Events:
+    CT: null_free_fn at convert.c:1572:1
+    CT: null_free_fn at convert.c:1574:1
   Occurrences: 1
 
 CoordinatesChanged
-  Coordinates: null_oid at object-file.c:222:1
+  Events:
+    CT: null_oid at object-file.c:222:1
+    CT: null_oid at object-file.c:223:9
   Occurrences: 178
 
 CoordinatesChanged
-  Coordinates: oidcpy at hash.h:267:1
+  Events:
+    CT: oidcpy at hash.h:267:1
+    CT: oidcpy at hash.h:268:2
   Occurrences: 86
 
 CoordinatesChanged
-  Coordinates: oidhash at hashmap.h:132:1
+  Events:
+    CT: oidhash at hashmap.h:132:1
+    CT: oidhash at hashmap.h:139:9
   Occurrences: 130
 
 CoordinatesChanged
-  Coordinates: oidmap_get at oidmap.c:34:1
+  Events:
+    CT: oidmap_get at oidmap.c:34:1
+    CT: oidmap_get at oidmap.c:35:5
   Occurrences: 75
 
 CoordinatesChanged
-  Coordinates: online_cpus at thread-utils.c:22:1
+  Events:
+    CT: online_cpus at thread-utils.c:22:1
+    CT: online_cpus at thread-utils.c:66:1
   Occurrences: 4
 
 CoordinatesChanged
-  Coordinates: option_parse_recurse_submodules_worktree_updater at submodule.c:229:1
+  Events:
+    CT: option_parse_recurse_submodules_worktree_updater at submodule.c:229:1
+    CT: option_parse_recurse_submodules_worktree_updater at submodule.c:230:2
   Occurrences: 1
 
 CoordinatesChanged
-  Coordinates: parse_commit_date at commit.c:92:1
+  Events:
+    CT: parse_commit_date at commit.c:92:1
+    CT: parse_commit_date at commit.c:95:10
   Occurrences: 13
 
 CoordinatesChanged
-  Coordinates: parse_loose_header at object-file.c:1368:1
+  Events:
+    CT: parse_loose_header at object-file.c:1368:1
+    CT: parse_loose_header at object-file.c:1378:8
   Occurrences: 47
 
 CoordinatesChanged
-  Coordinates: parse_nodash_opt at parse-options.c:412:1
+  Events:
+    CT: parse_nodash_opt at parse-options.c:412:1
+    CT: parse_nodash_opt at parse-options.c:415:23
   Occurrences: 120
 
 CoordinatesChanged
-  Coordinates: parse_tree_buffer at tree.c:114:1
+  Events:
+    CT: parse_tree_buffer at tree.c:114:1
+    CT: parse_tree_buffer at tree.c:115:5
   Occurrences: 1
 
 CoordinatesChanged
-  Coordinates: pc_queue_size at parallel-checkout.c:170:1
+  Events:
+    CT: pc_queue_size at parallel-checkout.c:170:1
+    CT: pc_queue_size at parallel-checkout.c:172:1
   Occurrences: 2
 
 CoordinatesChanged
-  Coordinates: pp_user_info at pretty.c:494:1
+  Events:
+    CT: pp_user_info at pretty.c:494:1
+    CT: pp_user_info at pretty.c:501:5
   Occurrences: 1
 
 CoordinatesChanged
-  Coordinates: preload_index at preload-index.c:99:1
+  Events:
+    CT: preload_index at preload-index.c:99:1
+    CT: preload_index at preload-index.c:164:1
   Occurrences: 4
 
 CoordinatesChanged
-  Coordinates: prepare_alt_odb at object-file.c:936:1
+  Events:
+    CT: prepare_alt_odb at object-file.c:936:1
+    CT: prepare_alt_odb at object-file.c:937:7
   Occurrences: 110
 
 CoordinatesChanged
-  Coordinates: prepare_commit_graft at commit.c:239:1
+  Events:
+    CT: prepare_commit_graft at commit.c:239:1
+    CT: prepare_commit_graft at commit.c:242:23
   Occurrences: 26
 
 CoordinatesChanged
-  Coordinates: prepare_commit_graph at commit-graph.c:624:1
+  Events:
+    CT: prepare_commit_graph at commit-graph.c:624:1
+    CT: prepare_commit_graph at commit-graph.c:634:5
   Occurrences: 13
 
 CoordinatesChanged
-  Coordinates: prepare_packed_git at packfile.c:988:1
+  Events:
+    CT: prepare_packed_git at packfile.c:988:1
+    CT: prepare_packed_git at packfile.c:991:6
   Occurrences: 112
 
 CoordinatesChanged
-  Coordinates: promisor_remote_init at promisor-remote.c:144:1
+  Events:
+    CT: promisor_remote_init at promisor-remote.c:144:1
+    CT: promisor_remote_init at promisor-remote.c:147:5
   Occurrences: 21
 
 CoordinatesChanged
-  Coordinates: protocol_allow_list at transport.c:947:1
+  Events:
+    CT: protocol_allow_list at transport.c:947:1
+    CT: protocol_allow_list at transport.c:951:14
   Occurrences: 1
 
 CoordinatesChanged
-  Coordinates: push_stack at attr.c:831:1
+  Events:
+    CT: push_stack at attr.c:831:1
+    CT: push_stack at attr.c:832:5
   Occurrences: 73
 
 CoordinatesChanged
-  Coordinates: read_config at remote.c:503:1
+  Events:
+    CT: read_config at remote.c:503:1
+    CT: read_config at remote.c:506:10
   Occurrences: 2
 
 CoordinatesChanged
-  Coordinates: ref_sorting_set_sort_flags_all at ref-filter.c:2563:1
+  Events:
+    CT: ref_sorting_set_sort_flags_all at ref-filter.c:2563:1
+    CT: ref_sorting_set_sort_flags_all at ref-filter.c:2564:9
   Occurrences: 4
 
 CoordinatesChanged
-  Coordinates: ref_transaction_free at refs.c:1137:1
+  Events:
+    CT: ref_transaction_free at refs.c:1137:1
+    CT: ref_transaction_free at refs.c:1140:5
   Occurrences: 11
 
 CoordinatesChanged
-  Coordinates: reflog_walk_info_release at reflog-walk.c:127:1
+  Events:
+    CT: reflog_walk_info_release at reflog-walk.c:127:1
+    CT: reflog_walk_info_release at reflog-walk.c:130:5
   Occurrences: 8
 
 CoordinatesChanged
-  Coordinates: refspec_init at refspec.c:184:1
+  Events:
+    CT: refspec_init at refspec.c:184:1
+    CT: refspec_init at refspec.c:185:2
   Occurrences: 2
 
 CoordinatesChanged
-  Coordinates: refspec_ref_prefixes at refspec.c:263:1
+  Events:
+    CT: refspec_ref_prefixes at refspec.c:263:1
+    CT: refspec_ref_prefixes at refspec.c:265:16
   Occurrences: 1
 
 CoordinatesChanged
-  Coordinates: release_revisions_mailmap at revision.c:3036:1
+  Events:
+    CT: release_revisions_mailmap at revision.c:3036:1
+    CT: release_revisions_mailmap at revision.c:3037:5
   Occurrences: 8
 
 CoordinatesChanged
-  Coordinates: release_revisions_topo_walk_info at revision.c:3574:1
+  Events:
+    CT: release_revisions_topo_walk_info at revision.c:3574:1
+    CT: release_revisions_topo_walk_info at revision.c:3575:5
   Occurrences: 8
 
 CoordinatesChanged
-  Coordinates: remove_fsmonitor at fsmonitor.c:574:1
+  Events:
+    CT: remove_fsmonitor at fsmonitor.c:574:1
+    CT: remove_fsmonitor at fsmonitor.c:575:5
   Occurrences: 10
 
 CoordinatesChanged
-  Coordinates: remove_template_directory at tempfile.c:53:1
+  Events:
+    CT: remove_template_directory at tempfile.c:53:1
+    CT: remove_template_directory at tempfile.c:54:14
   Occurrences: 8
 
 CoordinatesChanged
-  Coordinates: repair_noop at worktree.c:582:1
+  Events:
+    CT: repair_noop at worktree.c:582:1
+    CT: repair_noop at worktree.c:584:1
   Occurrences: 2
 
 CoordinatesChanged
-  Coordinates: repo_config_clear at config.c:2556:1
+  Events:
+    CT: repo_config_clear at config.c:2556:1
+    CT: repo_config_clear at config.c:2557:11
   Occurrences: 471
 
 CoordinatesChanged
-  Coordinates: repo_has_object_file_with_flags at object-file.c:2303:1
+  Events:
+    CT: repo_has_object_file_with_flags at object-file.c:2303:1
+    CT: repo_has_object_file_with_flags at object-file.c:2304:19
   Occurrences: 8
 
 CoordinatesChanged
-  Coordinates: repo_set_hash_algo at repository.c:96:1
+  Events:
+    CT: repo_set_hash_algo at repository.c:96:1
+    CT: repo_set_hash_algo at repository.c:97:20
   Occurrences: 292
 
 CoordinatesChanged
-  Coordinates: report_pack_garbage at packfile.c:778:1
+  Events:
+    CT: report_pack_garbage at packfile.c:778:1
+    CT: report_pack_garbage at packfile.c:781:5
   Occurrences: 19
 
 CoordinatesChanged
-  Coordinates: reset_shared_repository at environment.c:403:1
+  Events:
+    CT: reset_shared_repository at environment.c:403:1
+    CT: reset_shared_repository at environment.c:404:37
   Occurrences: 57
 
 CoordinatesChanged
-  Coordinates: reuse_worktree_file at diff.c:3915:1
+  Events:
+    CT: reuse_worktree_file at diff.c:3915:1
+    CT: reuse_worktree_file at diff.c:3933:5
   Occurrences: 4
 
 CoordinatesChanged
-  Coordinates: revision_opts_finish at revision.c:2641:1
+  Events:
+    CT: revision_opts_finish at revision.c:2641:1
+    CT: revision_opts_finish at revision.c:2642:5
   Occurrences: 8
 
 CoordinatesChanged
-  Coordinates: sane_iscase at git-compat-util.h:1242:1
+  Events:
+    CT: sane_iscase at git-compat-util.h:1242:1
+    CT: sane_iscase at git-compat-util.h:1243:7
   Occurrences: 1383
 
 CoordinatesChanged
-  Coordinates: sane_qsort at git-compat-util.h:1307:1
+  Events:
+    CT: sane_qsort at git-compat-util.h:1307:1
+    CT: sane_qsort at git-compat-util.h:1308:5
   Occurrences: 34
 
 CoordinatesChanged
-  Coordinates: search_ref_dir at ref-cache.c:124:1
+  Events:
+    CT: search_ref_dir at ref-cache.c:124:1
+    CT: search_ref_dir at ref-cache.c:128:5
   Occurrences: 65
 
 CoordinatesChanged
-  Coordinates: section_name_is_ok at config.c:3530:1
+  Events:
+    CT: section_name_is_ok at config.c:3530:1
+    CT: section_name_is_ok at config.c:3532:7
   Occurrences: 2
 
 CoordinatesChanged
-  Coordinates: section_name_match at config.c:3491:1
+  Events:
+    CT: section_name_match at config.c:3491:1
+    CT: section_name_match at config.c:3494:10
   Occurrences: 2
 
 CoordinatesChanged
-  Coordinates: set_commit_tree at commit.c:367:1
+  Events:
+    CT: set_commit_tree at commit.c:367:1
+    CT: set_commit_tree at commit.c:368:16
   Occurrences: 13
 
 CoordinatesChanged
-  Coordinates: set_die_routine at usage.c:123:1
+  Events:
+    CT: set_die_routine at usage.c:123:1
+    CT: set_die_routine at usage.c:124:14
   Occurrences: 11
 
 CoordinatesChanged
-  Coordinates: set_error_routine at usage.c:133:1
+  Events:
+    CT: set_error_routine at usage.c:133:1
+    CT: set_error_routine at usage.c:134:16
   Occurrences: 10
 
 CoordinatesChanged
-  Coordinates: set_progress_signal at progress.c:68:1
+  Events:
+    CT: set_progress_signal at progress.c:68:1
+    CT: set_progress_signal at progress.c:72:5
   Occurrences: 2
 
 CoordinatesChanged
-  Coordinates: set_shared_repository at environment.c:385:1
+  Events:
+    CT: set_shared_repository at environment.c:385:1
+    CT: set_shared_repository at environment.c:386:24
   Occurrences: 86
 
 CoordinatesChanged
-  Coordinates: set_warn_routine at usage.c:143:1
+  Events:
+    CT: set_warn_routine at usage.c:143:1
+    CT: set_warn_routine at usage.c:144:15
   Occurrences: 11
 
 CoordinatesChanged
-  Coordinates: setup_work_tree at setup.c:417:1
+  Events:
+    CT: setup_work_tree at setup.c:417:1
+    CT: setup_work_tree at setup.c:421:5
   Occurrences: 9
 
 CoordinatesChanged
-  Coordinates: should_update_submodules at submodule.c:749:1
+  Events:
+    CT: should_update_submodules at submodule.c:749:1
+    CT: should_update_submodules at submodule.c:750:42
   Occurrences: 2
 
 CoordinatesChanged
-  Coordinates: should_validate_cache_entries at read-cache.c:3612:1
+  Events:
+    CT: should_validate_cache_entries at read-cache.c:3612:1
+    CT: should_validate_cache_entries at read-cache.c:3615:5
   Occurrences: 287
 
 CoordinatesChanged
-  Coordinates: simplify_away at dir.c:2108:1
+  Events:
+    CT: simplify_away at dir.c:2108:1
+    CT: simplify_away at dir.c:2111:5
   Occurrences: 84
 
 CoordinatesChanged
-  Coordinates: skip_prefix at git-compat-util.h:676:1
+  Events:
+    CT: skip_prefix at git-compat-util.h:676:1
+    CT: skip_prefix at git-compat-util.h:678:8
   Occurrences: 6998
 
 CoordinatesChanged
-  Coordinates: skip_utf8_bom at utf8.c:788:1
+  Events:
+    CT: skip_utf8_bom at utf8.c:788:1
+    CT: skip_utf8_bom at utf8.c:791:10
   Occurrences: 5
 
 CoordinatesChanged
-  Coordinates: sort_ref_dir at ref-cache.c:230:1
+  Events:
+    CT: sort_ref_dir at ref-cache.c:230:1
+    CT: sort_ref_dir at ref-cache.c:238:24
   Occurrences: 65
 
 CoordinatesChanged
-  Coordinates: sq_dequote_step at quote.c:120:1
+  Events:
+    CT: sq_dequote_step at quote.c:120:1
+    CT: sq_dequote_step at quote.c:126:10
   Occurrences: 8
 
 CoordinatesChanged
-  Coordinates: st_add at git-compat-util.h:981:1
+  Events:
+    CT: st_add at git-compat-util.h:981:1
+    CT: st_add at git-compat-util.h:982:5
   Occurrences: 708
 
 CoordinatesChanged
-  Coordinates: st_mult at git-compat-util.h:991:1
+  Events:
+    CT: st_mult at git-compat-util.h:991:1
+    CT: st_mult at git-compat-util.h:992:5
   Occurrences: 17476
 
 CoordinatesChanged
-  Coordinates: starts_with at strbuf.c:8:1
+  Events:
+    CT: starts_with at strbuf.c:8:1
+    CT: starts_with at strbuf.c:10:8
   Occurrences: 2966
 
 CoordinatesChanged
-  Coordinates: strbuf_avail at strbuf.h:140:1
+  Events:
+    CT: strbuf_avail at strbuf.h:140:1
+    CT: strbuf_avail at strbuf.h:141:11
   Occurrences: 66263
 
 CoordinatesChanged
-  Coordinates: strbuf_check_tag_ref at tag.c:414:1
+  Events:
+    CT: strbuf_check_tag_ref at tag.c:414:1
+    CT: strbuf_check_tag_ref at tag.c:415:5
   Occurrences: 4
 
 CoordinatesChanged
-  Coordinates: strbuf_complete at strbuf.h:686:1
+  Events:
+    CT: strbuf_complete at strbuf.h:686:1
+    CT: strbuf_complete at strbuf.h:687:8
   Occurrences: 279
 
 CoordinatesChanged
-  Coordinates: strbuf_release at strbuf.c:63:1
+  Events:
+    CT: strbuf_release at strbuf.c:63:1
+    CT: strbuf_release at strbuf.c:64:5
   Occurrences: 8711
 
 CoordinatesChanged
-  Coordinates: strbuf_rtrim at strbuf.c:111:1
+  Events:
+    CT: strbuf_rtrim at strbuf.c:111:1
+    CT: strbuf_rtrim at strbuf.c:112:11
   Occurrences: 127
 
 CoordinatesChanged
-  Coordinates: strhash at hashmap.c:11:1
+  Events:
+    CT: strhash at hashmap.c:11:1
+    CT: strhash at hashmap.c:13:34
   Occurrences: 1715
 
 CoordinatesChanged
-  Coordinates: string_list_init_dup at string-list.c:11:1
+  Events:
+    CT: string_list_init_dup at string-list.c:11:1
+    CT: string_list_init_dup at string-list.c:12:21
   Occurrences: 484
 
 CoordinatesChanged
-  Coordinates: string_list_init_nodup at string-list.c:5:1
+  Events:
+    CT: string_list_init_nodup at string-list.c:5:1
+    CT: string_list_init_nodup at string-list.c:7:2
   Occurrences: 2
 
 CoordinatesChanged
-  Coordinates: strvec_init at strvec.c:8:1
+  Events:
+    CT: strvec_init at strvec.c:8:1
+    CT: strvec_init at strvec.c:10:2
   Occurrences: 518
 
 CoordinatesChanged
-  Coordinates: submodule_from_ce at submodule.c:754:1
+  Events:
+    CT: submodule_from_ce at submodule.c:754:1
+    CT: submodule_from_ce at submodule.c:755:7
   Occurrences: 1
 
 CoordinatesChanged
-  Coordinates: system_prefix at exec-cmd.c:247:1
+  Events:
+    CT: system_prefix at exec-cmd.c:247:1
+    CT: system_prefix at exec-cmd.c:248:9
   Occurrences: 403
 
 CoordinatesChanged
-  Coordinates: tm_to_time_t at date.c:14:1
+  Events:
+    CT: tm_to_time_t at date.c:14:1
+    CT: tm_to_time_t at date.c:18:15
   Occurrences: 23
 
 CoordinatesChanged
-  Coordinates: too_many_packs at gc.c:233:1
+  Events:
+    CT: too_many_packs at gc.c:233:1
+    CT: too_many_packs at gc.c:238:10
   Occurrences: 2
 
 CoordinatesChanged
-  Coordinates: tr2tls_start_process_clock at tr2_tls.c:21:1
+  Events:
+    CT: tr2tls_start_process_clock at tr2_tls.c:21:1
+    CT: tr2tls_start_process_clock at tr2_tls.c:22:5
   Occurrences: 153
 
 CoordinatesChanged
-  Coordinates: trace2_child_start_fl at trace2.c:405:1
+  Events:
+    CT: trace2_child_start_fl at trace2.c:405:1
+    CT: trace2_child_start_fl at trace2.c:411:5
   Occurrences: 20
 
 CoordinatesChanged
-  Coordinates: trace2_cmd_alias_fl at trace2.c:366:1
+  Events:
+    CT: trace2_cmd_alias_fl at trace2.c:366:1
+    CT: trace2_cmd_alias_fl at trace2.c:370:5
   Occurrences: 4
 
 CoordinatesChanged
-  Coordinates: trace2_cmd_error_va_fl at trace2.c:292:1
+  Events:
+    CT: trace2_cmd_error_va_fl at trace2.c:292:1
+    CT: trace2_cmd_error_va_fl at trace2.c:296:5
   Occurrences: 15
 
 CoordinatesChanged
-  Coordinates: trace2_cmd_exit_fl at trace2.c:267:1
+  Events:
+    CT: trace2_cmd_exit_fl at trace2.c:267:1
+    CT: trace2_cmd_exit_fl at trace2.c:273:5
   Occurrences: 153
 
 CoordinatesChanged
-  Coordinates: trace2_cmd_list_config_fl at trace2.c:379:1
+  Events:
+    CT: trace2_cmd_list_config_fl at trace2.c:379:1
+    CT: trace2_cmd_list_config_fl at trace2.c:380:5
   Occurrences: 153
 
 CoordinatesChanged
-  Coordinates: trace2_cmd_list_env_vars_fl at trace2.c:387:1
+  Events:
+    CT: trace2_cmd_list_env_vars_fl at trace2.c:387:1
+    CT: trace2_cmd_list_env_vars_fl at trace2.c:388:5
   Occurrences: 153
 
 CoordinatesChanged
-  Coordinates: trace2_cmd_mode_fl at trace2.c:352:1
+  Events:
+    CT: trace2_cmd_mode_fl at trace2.c:352:1
+    CT: trace2_cmd_mode_fl at trace2.c:356:5
   Occurrences: 1
 
 CoordinatesChanged
-  Coordinates: trace2_cmd_name_fl at trace2.c:335:1
+  Events:
+    CT: trace2_cmd_name_fl at trace2.c:335:1
+    CT: trace2_cmd_name_fl at trace2.c:340:5
   Occurrences: 157
 
 CoordinatesChanged
-  Coordinates: trace2_cmd_set_config_fl at trace2.c:396:1
+  Events:
+    CT: trace2_cmd_set_config_fl at trace2.c:396:1
+    CT: trace2_cmd_set_config_fl at trace2.c:397:5
   Occurrences: 315
 
 CoordinatesChanged
-  Coordinates: trace2_cmd_start_fl at trace2.c:248:1
+  Events:
+    CT: trace2_cmd_start_fl at trace2.c:248:1
+    CT: trace2_cmd_start_fl at trace2.c:254:5
   Occurrences: 153
 
 CoordinatesChanged
-  Coordinates: trace2_collect_process_info at procinfo.c:10:1
+  Events:
+    CT: trace2_collect_process_info at procinfo.c:10:1
+    CT: trace2_collect_process_info at procinfo.c:11:1
   Occurrences: 153
 
 CoordinatesChanged
-  Coordinates: trace2_def_repo_fl at trace2.c:648:1
+  Events:
+    CT: trace2_def_repo_fl at trace2.c:648:1
+    CT: trace2_def_repo_fl at trace2.c:652:5
   Occurrences: 107
 
 CoordinatesChanged
-  Coordinates: trace2_initialize_fl at trace2.c:215:1
+  Events:
+    CT: trace2_initialize_fl at trace2.c:215:1
+    CT: trace2_initialize_fl at trace2.c:219:5
   Occurrences: 153
 
 CoordinatesChanged
-  Coordinates: trace2_is_enabled at trace2.c:243:1
+  Events:
+    CT: trace2_is_enabled at trace2.c:243:1
+    CT: trace2_is_enabled at trace2.c:245:1
   Occurrences: 5
 
 CoordinatesChanged
-  Coordinates: trace_pass_fl at trace.h:274:1
+  Events:
+    CT: trace_pass_fl at trace.h:274:1
+    CT: trace_pass_fl at trace.h:275:17
   Occurrences: 213
 
 CoordinatesChanged
-  Coordinates: tree_entry at tree-walk.c:155:1
+  Events:
+    CT: tree_entry at tree-walk.c:155:1
+    CT: tree_entry at tree-walk.c:157:10
   Occurrences: 2
 
 CoordinatesChanged
-  Coordinates: tree_entry_extract at tree-walk.h:51:1
+  Events:
+    CT: tree_entry_extract at tree-walk.h:51:1
+    CT: tree_entry_extract at tree-walk.h:52:22
   Occurrences: 4
 
 CoordinatesChanged
-  Coordinates: tree_entry_len at tree-walk.h:63:1
+  Events:
+    CT: tree_entry_len at tree-walk.h:63:1
+    CT: tree_entry_len at tree-walk.h:64:11
   Occurrences: 8
 
 CoordinatesChanged
-  Coordinates: type_name at object.c:32:1
+  Events:
+    CT: type_name at object.c:32:1
+    CT: type_name at object.c:33:5
   Occurrences: 31
 
 CoordinatesChanged
-  Coordinates: untracked_cache_invalidate_path at dir.c:3853:1
+  Events:
+    CT: untracked_cache_invalidate_path at dir.c:3853:1
+    CT: untracked_cache_invalidate_path at dir.c:3854:13
   Occurrences: 6
 
 CoordinatesChanged
-  Coordinates: update_ce_after_write at entry.c:256:1
+  Events:
+    CT: update_ce_after_write at entry.c:256:1
+    CT: update_ce_after_write at entry.c:257:5
   Occurrences: 1
 
 CoordinatesChanged
-  Coordinates: valid_remote at remote.c:27:1
+  Events:
+    CT: valid_remote at remote.c:27:1
+    CT: valid_remote at remote.c:28:25
   Occurrences: 2
 
 CoordinatesChanged
-  Coordinates: validate_mixed_generation_chain at commit-graph.c:574:1
+  Events:
+    CT: validate_mixed_generation_chain at commit-graph.c:574:1
+    CT: validate_mixed_generation_chain at commit-graph.c:578:30
   Occurrences: 13
 
 CoordinatesChanged
-  Coordinates: volatile_list_add at list.h:200:1
+  Events:
+    CT: volatile_list_add at list.h:200:1
+    CT: volatile_list_add at list.h:201:6
   Occurrences: 414
 
 CoordinatesChanged
-  Coordinates: write_config at clone.c:804:1
+  Events:
+    CT: write_config at clone.c:804:1
+    CT: write_config at clone.c:807:16
   Occurrences: 1
 
 CoordinatesChanged
-  Coordinates: xdiff_outf at xdiff-interface.c:53:1
+  Events:
+    CT: xdiff_outf at xdiff-interface.c:53:1
+    CT: xdiff_outf at xdiff-interface.c:58:5
   Occurrences: 4
 
 CoordinatesChanged
-  Coordinates: xdl_bogosqrt at xutils.c:26:27
+  Events:
+    CT: xdl_bogosqrt at xutils.c:26:27
+    CT: xdl_bogosqrt at xutils.c:32:16
   Occurrences: 12
 
 CoordinatesChanged
-  Coordinates: xdl_cha_init at xutils.c:74:60
+  Events:
+    CT: xdl_cha_init at xutils.c:74:60
+    CT: xdl_cha_init at xutils.c:76:24
   Occurrences: 12
 
 CoordinatesChanged
-  Coordinates: xdl_get_hunk at xemit.c:53:1
+  Events:
+    CT: xdl_get_hunk at xemit.c:53:1
+    CT: xdl_get_hunk at xemit.c:55:29
   Occurrences: 4
 
 CoordinatesChanged
-  Coordinates: xdl_get_rec at xemit.c:25:67
+  Events:
+    CT: xdl_get_rec at xemit.c:25:67
+    CT: xdl_get_rec at xemit.c:27:18
   Occurrences: 4
 
 CoordinatesChanged
-  Coordinates: xdl_hash_record at xutils.c:297:79
+  Events:
+    CT: xdl_hash_record at xutils.c:297:79
+    CT: xdl_hash_record at xutils.c:299:14
   Occurrences: 4
 
 CoordinatesChanged
-  Coordinates: xdl_hashbits at xutils.c:313:46
+  Events:
+    CT: xdl_hashbits at xutils.c:313:46
+    CT: xdl_hashbits at xutils.c:316:20
   Occurrences: 12
 
 CoordinatesChanged
-  Coordinates: xdl_mmfile_first at xutils.c:62:1
+  Events:
+    CT: xdl_mmfile_first at xutils.c:62:1
+    CT: xdl_mmfile_first at xutils.c:63:13
   Occurrences: 16
 
 CoordinatesChanged
-  Coordinates: xdl_mmfile_size at xutils.c:69:1
+  Events:
+    CT: xdl_mmfile_size at xutils.c:69:1
+    CT: xdl_mmfile_size at xutils.c:70:12
   Occurrences: 4
 
 CoordinatesChanged
-  Coordinates: xsize_t at git-compat-util.h:1173:1
+  Events:
+    CT: xsize_t at git-compat-util.h:1173:1
+    CT: xsize_t at git-compat-util.h:1174:5
   Occurrences: 347
 
 CoordinatesChanged
-  Coordinates: xstrdup_or_null at git-compat-util.h:1168:1
+  Events:
+    CT: xstrdup_or_null at git-compat-util.h:1168:1
+    CT: xstrdup_or_null at git-compat-util.h:1169:28
   Occurrences: 1865
 
 CoordinatesChanged
-  Coordinates: zlib_buf_cap at zlib.c:33:1
+  Events:
+    CT: zlib_buf_cap at zlib.c:33:1
+    CT: zlib_buf_cap at zlib.c:34:45
   Occurrences: 452
 
 CoordinatesChanged
-  Coordinates: add_name_hash at name-hash.c:633:1
+  Events:
+    RF: add_name_hash at name-hash.c:633:1
+    RF: add_name_hash at name-hash.c:631:5
   Occurrences: 5
 
 CoordinatesChanged
-  Coordinates: attr_name_valid at attr.c:192:1
+  Events:
+    RF: attr_name_valid at attr.c:192:1
+    RF: attr_name_valid at attr.c:191:9
   Occurrences: 162
 
 CoordinatesChanged
-  Coordinates: bootstrap_attr_stack at attr.c:878:1
+  Events:
+    RF: bootstrap_attr_stack at attr.c:878:1
+    RF: bootstrap_attr_stack at attr.c:847:5
   Occurrences: 8
 
 CoordinatesChanged
-  Coordinates: canon_mode at cache.h:294:1
+  Events:
+    RF: canon_mode at cache.h:294:1
+    RF: canon_mode at cache.h:288:18
   Occurrences: 10
 
 CoordinatesChanged
-  Coordinates: check_bug_if_BUG at common-main.c:68:1
+  Events:
+    RF: check_bug_if_BUG at common-main.c:68:1
+    RF: check_bug_if_BUG at common-main.c:65:5
   Occurrences: 153
 
 CoordinatesChanged
-  Coordinates: check_common at path.c:361:1
+  Events:
+    RF: check_common at path.c:361:1
+    RF: check_common at path.c:355:13
   Occurrences: 9
 
 CoordinatesChanged
-  Coordinates: check_signum at sigchain.c:17:1
+  Events:
+    RF: check_signum at sigchain.c:17:1
+    RF: check_signum at sigchain.c:15:5
   Occurrences: 493
 
 CoordinatesChanged
-  Coordinates: close_deflated_stream at streaming.c:72:1
+  Events:
+    RF: close_deflated_stream at streaming.c:72:1
+    RF: close_deflated_stream at streaming.c:70:5
   Occurrences: 1
 
 CoordinatesChanged
-  Coordinates: configset_iter at config.c:2243:1
+  Events:
+    RF: configset_iter at config.c:2243:1
+    RF: configset_iter at config.c:2237:4
   Occurrences: 105
 
 CoordinatesChanged
-  Coordinates: copy_array at git-compat-util.h:1100:1
+  Events:
+    RF: copy_array at git-compat-util.h:1100:1
+    RF: copy_array at git-compat-util.h:1098:5
   Occurrences: 4
 
 CoordinatesChanged
-  Coordinates: create_ce_mode at cache.h:258:1
+  Events:
+    RF: create_ce_mode at cache.h:258:1
+    RF: create_ce_mode at cache.h:257:17
   Occurrences: 5
 
 CoordinatesChanged
-  Coordinates: diff_free at diff.c:6517:1
+  Events:
+    RF: diff_free at diff.c:6517:1
+    RF: diff_free at diff.c:6510:5
   Occurrences: 4
 
 CoordinatesChanged
-  Coordinates: diff_free_file at diff.c:6495:1
+  Events:
+    RF: diff_free_file at diff.c:6495:1
+    RF: diff_free_file at diff.c:6493:5
   Occurrences: 16
 
 CoordinatesChanged
-  Coordinates: diff_merges_setup_revs at diff-merges.c:187:1
+  Events:
+    RF: diff_merges_setup_revs at diff-merges.c:187:1
+    RF: diff_merges_setup_revs at diff-merges.c:185:32
   Occurrences: 8
 
 CoordinatesChanged
-  Coordinates: display_throughput at progress.c:244:1
+  Events:
+    RF: display_throughput at progress.c:244:1
+    RF: display_throughput at progress.c:243:3
   Occurrences: 18
 
 CoordinatesChanged
-  Coordinates: files_assert_main_repository at files-backend.c:114:1
+  Events:
+    RF: files_assert_main_repository at files-backend.c:114:1
+    RF: files_assert_main_repository at files-backend.c:110:5
   Occurrences: 84
 
 CoordinatesChanged
-  Coordinates: finish_if_sparse at progress.c:317:1
+  Events:
+    RF: finish_if_sparse at progress.c:317:1
+    RF: finish_if_sparse at progress.c:314:23
   Occurrences: 2
 
 CoordinatesChanged
-  Coordinates: free_name_hash at name-hash.c:741:1
+  Events:
+    RF: free_name_hash at name-hash.c:741:1
+    RF: free_name_hash at name-hash.c:735:5
   Occurrences: 1
 
 CoordinatesChanged
-  Coordinates: fsync_component_or_die at write-or-die.c:91:1
+  Events:
+    RF: fsync_component_or_die at write-or-die.c:91:1
+    RF: fsync_component_or_die at write-or-die.c:89:5
   Occurrences: 21
 
 CoordinatesChanged
-  Coordinates: get_arg at parse-options.c:60:1
+  Events:
+    RF: get_arg at parse-options.c:60:1
+    RF: get_arg at parse-options.c:59:9
   Occurrences: 16
 
 CoordinatesChanged
-  Coordinates: get_describe_name at object-name.c:1225:1
+  Events:
+    RF: get_describe_name at object-name.c:1225:1
+    RF: get_describe_name at object-name.c:1224:9
   Occurrences: 9
 
 CoordinatesChanged
-  Coordinates: get_hex_char_from_oid at object-name.c:652:1
+  Events:
+    RF: get_hex_char_from_oid at object-name.c:652:1
+    RF: get_hex_char_from_oid at object-name.c:649:13
   Occurrences: 176
 
 CoordinatesChanged
-  Coordinates: git_configset_clear at config.c:2395:1
+  Events:
+    RF: git_configset_clear at config.c:2395:1
+    RF: git_configset_clear at config.c:2381:5
   Occurrences: 59
 
 CoordinatesChanged
-  Coordinates: group_next at xdiffi.c:737:1
+  Events:
+    RF: group_next at xdiffi.c:737:1
+    RF: group_next at xdiffi.c:730:10
   Occurrences: 16
 
 CoordinatesChanged
-  Coordinates: has_subcommands at parse-options.c:532:1
+  Events:
+    RF: has_subcommands at parse-options.c:532:1
+    RF: has_subcommands at parse-options.c:528:23
   Occurrences: 140
 
 CoordinatesChanged
-  Coordinates: init_common_trie at path.c:344:1
+  Events:
+    RF: init_common_trie at path.c:344:1
+    RF: init_common_trie at path.c:343:25
   Occurrences: 20
 
 CoordinatesChanged
-  Coordinates: is_summary_empty at diff.c:6370:1
+  Events:
+    RF: is_summary_empty at diff.c:6370:1
+    RF: is_summary_empty at diff.c:6354:3
   Occurrences: 4
 
 CoordinatesChanged
-  Coordinates: lazy_init_name_hash at name-hash.c:608:1
+  Events:
+    RF: lazy_init_name_hash at name-hash.c:608:1
+    RF: lazy_init_name_hash at name-hash.c:582:5
   Occurrences: 12
 
 CoordinatesChanged
-  Coordinates: memhash at hashmap.c:38:1
+  Events:
+    RF: memhash at hashmap.c:38:1
+    RF: memhash at hashmap.c:33:9
   Occurrences: 679
 
 CoordinatesChanged
-  Coordinates: memihash at hashmap.c:51:1
+  Events:
+    RF: memihash at hashmap.c:51:1
+    RF: memihash at hashmap.c:44:9
   Occurrences: 16
 
 CoordinatesChanged
-  Coordinates: move_array at git-compat-util.h:1108:1
+  Events:
+    RF: move_array at git-compat-util.h:1108:1
+    RF: move_array at git-compat-util.h:1106:5
   Occurrences: 93
 
 CoordinatesChanged
-  Coordinates: parse_nodash_opt at parse-options.c:422:1
+  Events:
+    RF: parse_nodash_opt at parse-options.c:422:1
+    RF: parse_nodash_opt at parse-options.c:421:9
   Occurrences: 120
 
 CoordinatesChanged
-  Coordinates: pp_user_info at pretty.c:596:1
+  Events:
+    RF: pp_user_info at pretty.c:596:1
+    RF: pp_user_info at pretty.c:591:3
   Occurrences: 1
 
 CoordinatesChanged
-  Coordinates: prepare_alt_odb at object-file.c:944:1
+  Events:
+    RF: prepare_alt_odb at object-file.c:944:1
+    RF: prepare_alt_odb at object-file.c:937:5
   Occurrences: 91
 
 CoordinatesChanged
-  Coordinates: prepare_commit_graft at commit.c:252:1
+  Events:
+    RF: prepare_commit_graft at commit.c:252:1
+    RF: prepare_commit_graft at commit.c:251:43
   Occurrences: 13
 
 CoordinatesChanged
-  Coordinates: prepare_packed_git at packfile.c:1004:1
+  Events:
+    RF: prepare_packed_git at packfile.c:1004:1
+    RF: prepare_packed_git at packfile.c:991:5
   Occurrences: 93
 
 CoordinatesChanged
-  Coordinates: promisor_remote_init at promisor-remote.c:166:1
+  Events:
+    RF: promisor_remote_init at promisor-remote.c:166:1
+    RF: promisor_remote_init at promisor-remote.c:147:5
   Occurrences: 12
 
 CoordinatesChanged
-  Coordinates: prune_traversal at tree-walk.c:434:1
+  Events:
+    RF: prune_traversal at tree-walk.c:434:1
+    RF: prune_traversal at tree-walk.c:429:10
   Occurrences: 1
 
 CoordinatesChanged
-  Coordinates: remove_fsmonitor at fsmonitor.c:580:1
+  Events:
+    RF: remove_fsmonitor at fsmonitor.c:580:1
+    RF: remove_fsmonitor at fsmonitor.c:576:3
   Occurrences: 10
 
 CoordinatesChanged
-  Coordinates: repo_config_clear at config.c:2560:1
+  Events:
+    RF: repo_config_clear at config.c:2560:1
+    RF: repo_config_clear at config.c:2557:20
   Occurrences: 339
 
 CoordinatesChanged
-  Coordinates: revision_opts_finish at revision.c:2649:1
+  Events:
+    RF: revision_opts_finish at revision.c:2649:1
+    RF: revision_opts_finish at revision.c:2647:25
   Occurrences: 8
 
 CoordinatesChanged
-  Coordinates: sane_qsort at git-compat-util.h:1310:1
+  Events:
+    RF: sane_qsort at git-compat-util.h:1310:1
+    RF: sane_qsort at git-compat-util.h:1308:5
   Occurrences: 8
 
 CoordinatesChanged
-  Coordinates: skip_prefix at git-compat-util.h:684:1
+  Events:
+    RF: skip_prefix at git-compat-util.h:684:1
+    RF: skip_prefix at git-compat-util.h:680:11
   Occurrences: 423
 
 CoordinatesChanged
-  Coordinates: starts_with at strbuf.c:14:1
+  Events:
+    RF: starts_with at strbuf.c:14:1
+    RF: starts_with at strbuf.c:11:11
   Occurrences: 430
 
 CoordinatesChanged
-  Coordinates: strbuf_release at strbuf.c:68:1
+  Events:
+    RF: strbuf_release at strbuf.c:68:1
+    RF: strbuf_release at strbuf.c:64:5
   Occurrences: 2182
 
 CoordinatesChanged
-  Coordinates: strhash at hashmap.c:16:1
+  Events:
+    RF: strhash at hashmap.c:16:1
+    RF: strhash at hashmap.c:13:9
   Occurrences: 1715
 
 CoordinatesChanged
-  Coordinates: tm_to_time_t at date.c:32:1
+  Events:
+    RF: tm_to_time_t at date.c:32:1
+    RF: tm_to_time_t at date.c:31:41
   Occurrences: 23
 
 CoordinatesChanged
-  Coordinates: trace2_child_start_fl at trace2.c:424:1
+  Events:
+    RF: trace2_child_start_fl at trace2.c:424:1
+    RF: trace2_child_start_fl at trace2.c:411:5
   Occurrences: 20
 
 CoordinatesChanged
-  Coordinates: trace2_cmd_exit_fl at trace2.c:288:1
+  Events:
+    RF: trace2_cmd_exit_fl at trace2.c:288:1
+    RF: trace2_cmd_exit_fl at trace2.c:273:5
   Occurrences: 153
 
 CoordinatesChanged
-  Coordinates: trace2_cmd_list_config_fl at trace2.c:384:1
+  Events:
+    RF: trace2_cmd_list_config_fl at trace2.c:384:1
+    RF: trace2_cmd_list_config_fl at trace2.c:380:5
   Occurrences: 153
 
 CoordinatesChanged
-  Coordinates: trace2_cmd_list_env_vars_fl at trace2.c:392:1
+  Events:
+    RF: trace2_cmd_list_env_vars_fl at trace2.c:392:1
+    RF: trace2_cmd_list_env_vars_fl at trace2.c:388:5
   Occurrences: 153
 
 CoordinatesChanged
-  Coordinates: trace2_cmd_name_fl at trace2.c:349:1
+  Events:
+    RF: trace2_cmd_name_fl at trace2.c:349:1
+    RF: trace2_cmd_name_fl at trace2.c:340:5
   Occurrences: 157
 
 CoordinatesChanged
-  Coordinates: trace2_cmd_set_config_fl at trace2.c:401:1
+  Events:
+    RF: trace2_cmd_set_config_fl at trace2.c:401:1
+    RF: trace2_cmd_set_config_fl at trace2.c:397:5
   Occurrences: 315
 
 CoordinatesChanged
-  Coordinates: trace2_cmd_start_fl at trace2.c:264:1
+  Events:
+    RF: trace2_cmd_start_fl at trace2.c:264:1
+    RF: trace2_cmd_start_fl at trace2.c:254:5
   Occurrences: 153
 
 CoordinatesChanged
-  Coordinates: trace2_def_repo_fl at trace2.c:663:1
+  Events:
+    RF: trace2_def_repo_fl at trace2.c:663:1
+    RF: trace2_def_repo_fl at trace2.c:662:4
   Occurrences: 107
 
 CoordinatesChanged
-  Coordinates: type_name at object.c:36:1
+  Events:
+    RF: type_name at object.c:36:1
+    RF: type_name at object.c:35:28
   Occurrences: 31
 
 CoordinatesChanged
-  Coordinates: validate_mixed_generation_chain at commit-graph.c:592:1
+  Events:
+    RF: validate_mixed_generation_chain at commit-graph.c:592:1
+    RF: validate_mixed_generation_chain at commit-graph.c:584:10
   Occurrences: 13
 
 CoordinatesChanged
-  Coordinates: write_config at clone.c:812:1
+  Events:
+    RF: write_config at clone.c:812:1
+    RF: write_config at clone.c:810:4
   Occurrences: 1
 
 CoordinatesChanged
-  Coordinates: xdl_bogosqrt at xutils.c:36:1
+  Events:
+    RF: xdl_bogosqrt at xutils.c:36:1
+    RF: xdl_bogosqrt at xutils.c:32:16
   Occurrences: 8
 
 LibraryCallRemoved
-  Coordinates: Jump to external code
+  Events:
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
   Occurrences: 8
 
 LibraryCallRemoved
-  Coordinates: add at worktree.c:651:7
+  Events:
+    CF: add at worktree.c:651:7
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
   Occurrences: 3
 
 LibraryCallRemoved
-  Coordinates: add_pattern_list at dir.c:1189:2
+  Events:
+    CF: add_pattern_list at dir.c:1189:2
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
   Occurrences: 9
 
 LibraryCallRemoved
-  Coordinates: child_process_init at run-command.c:18:2
+  Events:
+    CF: child_process_init at run-command.c:18:2
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
   Occurrences: 1
 
 LibraryCallRemoved
-  Coordinates: clear_pattern_list at dir.c:931:2
+  Events:
+    CF: clear_pattern_list at dir.c:931:2
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
   Occurrences: 9
 
 LibraryCallRemoved
-  Coordinates: cmd_rev_parse at rev-parse.c:1038:9
+  Events:
+    CF: cmd_rev_parse at rev-parse.c:1038:9
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
   Occurrences: 4
 
 LibraryCallRemoved
-  Coordinates: config_store_data_clear at config.c:2871:2
+  Events:
+    CF: config_store_data_clear at config.c:2871:2
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
   Occurrences: 152
 
 LibraryCallRemoved
-  Coordinates: get_oid_with_context_1 at object-name.c:1916:2
+  Events:
+    CF: get_oid_with_context_1 at object-name.c:1916:2
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
   Occurrences: 16
 
 LibraryCallRemoved
-  Coordinates: git_deflate_init at zlib.c:162:2
+  Events:
+    CF: git_deflate_init at zlib.c:162:2
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
   Occurrences: 12
 
 LibraryCallRemoved
-  Coordinates: git_hash_sha1_final_oid at object-file.c:107:2
+  Events:
+    CF: git_hash_sha1_final_oid at object-file.c:107:2
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
   Occurrences: 20
 
 LibraryCallRemoved
-  Coordinates: hashmap_clear_ at hashmap.c:209:2
+  Events:
+    CF: hashmap_clear_ at hashmap.c:209:2
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
   Occurrences: 69
 
 LibraryCallRemoved
-  Coordinates: hashmap_init at hashmap.c:158:2
+  Events:
+    CF: hashmap_init at hashmap.c:158:2
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
   Occurrences: 770
 
 LibraryCallRemoved
-  Coordinates: init_checkout_metadata at convert.c:2002:2
+  Events:
+    CF: init_checkout_metadata at convert.c:2002:2
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
   Occurrences: 1
 
 LibraryCallRemoved
-  Coordinates: init_display_notes at notes.c:1054:2
+  Events:
+    CF: init_display_notes at notes.c:1054:2
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
   Occurrences: 8
 
 LibraryCallRemoved
-  Coordinates: init_ref_exclusions at revision.c:1540:2
+  Events:
+    CF: init_ref_exclusions at revision.c:1540:2
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
   Occurrences: 8
 
 LibraryCallRemoved
-  Coordinates: init_repository_format at setup.c:712:2
+  Events:
+    CF: init_repository_format at setup.c:712:2
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
   Occurrences: 509
 
 LibraryCallRemoved
-  Coordinates: load_multi_pack_index at midx.c:180:2
+  Events:
+    CF: load_multi_pack_index at midx.c:180:2
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
   Occurrences: 19
 
 LibraryCallRemoved
-  Coordinates: oidclr at hash.h:302:2
+  Events:
+    CF: oidclr at hash.h:302:2
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
   Occurrences: 93
 
 LibraryCallRemoved
-  Coordinates: oidtree_insert at oidtree.c:46:2
+  Events:
+    CF: oidtree_insert at oidtree.c:46:2
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
   Occurrences: 11
 
 LibraryCallRemoved
-  Coordinates: open_cached_dir at dir.c:2429:2
+  Events:
+    CF: open_cached_dir at dir.c:2429:2
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
   Occurrences: 4
 
 LibraryCallRemoved
-  Coordinates: packet_reader_init at pkt-line.c:576:2
+  Events:
+    CF: packet_reader_init at pkt-line.c:576:2
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
   Occurrences: 1
 
 LibraryCallRemoved
-  Coordinates: parse_pathspec at pathspec.c:563:2
+  Events:
+    CF: parse_pathspec at pathspec.c:563:2
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
   Occurrences: 9
 
 LibraryCallRemoved
-  Coordinates: parse_ref_filter_atom at ref-filter.c:738:2
+  Events:
+    CF: parse_ref_filter_atom at ref-filter.c:738:2
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
   Occurrences: 4
 
 LibraryCallRemoved
-  Coordinates: parsed_object_pool_new at object.c:503:2
+  Events:
+    CF: parsed_object_pool_new at object.c:503:2
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
   Occurrences: 153
 
 LibraryCallRemoved
-  Coordinates: raw_object_store_new at object.c:523:2
+  Events:
+    CF: raw_object_store_new at object.c:523:2
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
   Occurrences: 153
 
 LibraryCallRemoved
-  Coordinates: refspec_item_init at refspec.c:162:2
+  Events:
+    CF: refspec_item_init at refspec.c:162:2
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
   Occurrences: 2
 
 LibraryCallRemoved
-  Coordinates: remote_state_new at remote.c:2746:2
+  Events:
+    CF: remote_state_new at remote.c:2746:2
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
   Occurrences: 153
 
 LibraryCallRemoved
-  Coordinates: set_cloexec at run-command.c:537:3
+  Events:
+    CF: set_cloexec at run-command.c:537:3
+    CT: Jump to external code
   Occurrences: 2
 
 LibraryCallRemoved
-  Coordinates: setup_traverse_info at tree-walk.c:199:2
+  Events:
+    CF: setup_traverse_info at tree-walk.c:199:2
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
   Occurrences: 1
 
 LibraryCallRemoved
-  Coordinates: sigchain_push at sigchain.c:25:17
+  Events:
+    CF: sigchain_push at sigchain.c:25:17
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
   Occurrences: 1
 
 LibraryCallRemoved
-  Coordinates: split_ident_line at ident.c:279:2
+  Events:
+    CF: split_ident_line at ident.c:279:2
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
   Occurrences: 20
 
 LibraryCallRemoved
-  Coordinates: start_command at run-command.c:768:17
+  Events:
+    CF: start_command at run-command.c:768:17
+    CT: Jump to external code
   Occurrences: 10
 
 LibraryCallRemoved
-  Coordinates: start_command at run-command.c:779:3
+  Events:
+    CF: start_command at run-command.c:779:3
+    CT: Jump to external code
   Occurrences: 1
 
 LibraryCallRemoved
-  Coordinates: start_command at run-command.c:824:8
+  Events:
+    CF: start_command at run-command.c:824:8
+    CT: Jump to external code
   Occurrences: 4
 
 LibraryCallRemoved
-  Coordinates: start_command at run-command.c:824:8
+  Events:
+    CF: start_command at run-command.c:824:8
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
   Occurrences: 7
 
 LibraryCallRemoved
-  Coordinates: strbuf_init at strbuf.c:57:2
+  Events:
+    CF: strbuf_init at strbuf.c:57:2
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
   Occurrences: 12259
 
 LibraryCallRemoved
-  Coordinates: unpack_loose_header at object-file.c:1263:2
+  Events:
+    CF: unpack_loose_header at object-file.c:1263:2
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
   Occurrences: 47
 
 LibraryCallRemoved
-  Coordinates: unpack_trees at unpack-trees.c:1904:2
+  Events:
+    CF: unpack_trees at unpack-trees.c:1904:2
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
   Occurrences: 1
 
 LibraryCallRemoved
-  Coordinates: url_is_local_not_ssh at connect.c:645:22
+  Events:
+    CF: url_is_local_not_ssh at connect.c:645:22
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
   Occurrences: 2
 
 LibraryCallRemoved
-  Coordinates: xread at wrapper.c:230:8
+  Events:
+    CF: xread at wrapper.c:230:8
+    CT: Jump to external code
   Occurrences: 2
 
 LibraryCallRemoved
-  Coordinates: xrealloc at wrapper.c:136:8
+  Events:
+    CF: xrealloc at wrapper.c:136:8
+    CT: Jump to external code
   Occurrences: 1
 
 ProgramCallRemoved
-  Coordinates: all_attrs_init at attr.c:136:2
+  Events:
+    CF: all_attrs_init at attr.c:136:2
+    CT: hashmap_lock at attr.c:42:1
+    RF: hashmap_lock at attr.c:44:1
   Occurrences: 21
 
 ProgramCallRemoved
-  Coordinates: all_attrs_init at attr.c:162:2
+  Events:
+    CF: all_attrs_init at attr.c:162:2
+    CT: hashmap_unlock at attr.c:47:1
+    RF: hashmap_unlock at attr.c:49:1
   Occurrences: 21
 
 ProgramCallRemoved
-  Coordinates: check_vector_add at attr.c:500:2
+  Events:
+    CF: check_vector_add at attr.c:500:2
+    CT: vector_lock at attr.c:489:1
+    RF: vector_lock at attr.c:491:1
   Occurrences: 13
 
 ProgramCallRemoved
-  Coordinates: check_vector_add at attr.c:507:2
+  Events:
+    CF: check_vector_add at attr.c:507:2
+    CT: vector_unlock at attr.c:494:1
+    RF: vector_unlock at attr.c:496:1
   Occurrences: 13
 
 ProgramCallRemoved
-  Coordinates: do_write_index at read-cache.c:2981:11
+  Events:
+    CF: do_write_index at read-cache.c:2981:11
+    CT: hashfile_total at csum-file.h:56:1
+    RF: hashfile_total at csum-file.h:58:1
   Occurrences: 9
 
 ProgramCallRemoved
-  Coordinates: drop_all_attr_stacks at attr.c:544:2
+  Events:
+    CF: drop_all_attr_stacks at attr.c:544:2
+    CT: vector_unlock at attr.c:494:1
+    RF: vector_unlock at attr.c:496:1
   Occurrences: 1
 
 ProgramCallRemoved
-  Coordinates: get_next_component at abspath.c:43:29
+  Events:
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:1
+    RF: git_is_dir_sep at git-compat-util.h:449:1
   Occurrences: 272
 
 ProgramCallRemoved
-  Coordinates: git_attr_internal at attr.c:229:2
+  Events:
+    CF: git_attr_internal at attr.c:229:2
+    CT: hashmap_unlock at attr.c:47:1
+    RF: hashmap_unlock at attr.c:49:1
   Occurrences: 110
 
 ProgramCallRemoved
-  Coordinates: is_dir_file at path.c:85:9
+  Events:
+    CF: is_dir_file at path.c:85:9
+    CT: git_is_dir_sep at git-compat-util.h:447:1
+    RF: git_is_dir_sep at git-compat-util.h:449:1
   Occurrences: 3
 
 ProgramCallRemoved
-  Coordinates: normalize_path_copy_len at path.c:1177:7
+  Events:
+    CF: normalize_path_copy_len at path.c:1177:7
+    CT: git_is_dir_sep at git-compat-util.h:447:1
+    RF: git_is_dir_sep at git-compat-util.h:449:1
   Occurrences: 137
 
 ProgramCallRemoved
-  Coordinates: normalize_path_copy_len at path.c:1179:11
+  Events:
+    CF: normalize_path_copy_len at path.c:1179:11
+    CT: git_is_dir_sep at git-compat-util.h:447:1
+    RF: git_is_dir_sep at git-compat-util.h:449:1
   Occurrences: 194
 
 ProgramCallRemoved
-  Coordinates: oid_object_info_extended at object-file.c:1639:2
+  Events:
+    CF: oid_object_info_extended at object-file.c:1639:2
+    CT: obj_read_lock at object-store.h:381:1
+    RF: obj_read_lock at object-store.h:384:1
   Occurrences: 54
 
 ProgramCallRemoved
-  Coordinates: oid_object_info_extended at object-file.c:1641:2
+  Events:
+    CF: oid_object_info_extended at object-file.c:1641:2
+    CT: obj_read_unlock at object-store.h:387:1
+    RF: obj_read_unlock at object-store.h:390:1
   Occurrences: 54
 
 ProgramCallRemoved
-  Coordinates: parse_and_validate_options at commit.c:1309:7
+  Events:
+    CF: parse_and_validate_options at commit.c:1309:7
+    CT: is_from_cherry_pick at wt-status.h:47:1
+    RF: is_from_cherry_pick at wt-status.h:50:1
   Occurrences: 4
 
 ProgramCallRemoved
-  Coordinates: repo_read_index_preload at preload-index.c:172:2
+  Events:
+    CF: repo_read_index_preload at preload-index.c:172:2
+    CT: preload_index at preload-index.c:99:1
+    RF: preload_index at preload-index.c:164:1
   Occurrences: 8
 
 ProgramCallRemoved
-  Coordinates: restore_sigpipe_to_default at common-main.c:21:2
+  Events:
+    CF: restore_sigpipe_to_default at common-main.c:21:2
+    CT: __sigbits at signal.h:114:0
+    RF: __sigbits at signal.h:0:0
   Occurrences: 153
 
 ProgramCallRemoved
-  Coordinates: show_log at log-tree.c:831:6
+  Events:
+    CF: show_log at log-tree.c:831:6
+    CT: cmit_fmt_is_mail at pretty.h:65:1
+    RF: cmit_fmt_is_mail at pretty.h:67:1
   Occurrences: 1
 
 ProgramCallRemoved
-  Coordinates: start_command at run-command.c:775:3
+  Events:
+    CF: start_command at run-command.c:775:3
+    CT: set_die_routine at usage.c:123:1
+    RF: set_die_routine at usage.c:125:1
   Occurrences: 1
 
 ProgramCallRemoved
-  Coordinates: start_command at run-command.c:776:3
+  Events:
+    CF: start_command at run-command.c:776:3
+    CT: set_error_routine at usage.c:133:1
+    RF: set_error_routine at usage.c:135:1
   Occurrences: 4
 
 ProgramCallRemoved
-  Coordinates: start_command at run-command.c:777:3
+  Events:
+    CF: start_command at run-command.c:777:3
+    CT: set_warn_routine at usage.c:143:1
+    RF: set_warn_routine at usage.c:145:1
   Occurrences: 3
 
 ProgramCallRemoved
-  Coordinates: unpack_loose_header at object-file.c:1270:2
+  Events:
+    CF: unpack_loose_header at object-file.c:1270:2
+    CT: obj_read_unlock at object-store.h:387:1
+    RF: obj_read_unlock at object-store.h:390:1
   Occurrences: 47
 
 ProgramCallRemoved
-  Coordinates: unpack_loose_header at object-file.c:1272:2
+  Events:
+    CF: unpack_loose_header at object-file.c:1272:2
+    CT: obj_read_lock at object-store.h:381:1
+    RF: obj_read_lock at object-store.h:384:1
   Occurrences: 47
 
 ProgramCallRemoved
-  Coordinates: unpack_loose_rest at object-file.c:1343:4
+  Events:
+    CF: unpack_loose_rest at object-file.c:1343:4
+    CT: obj_read_unlock at object-store.h:387:1
+    RF: obj_read_unlock at object-store.h:390:1
   Occurrences: 24
 
 ProgramCallRemoved
-  Coordinates: unpack_loose_rest at object-file.c:1345:4
+  Events:
+    CF: unpack_loose_rest at object-file.c:1345:4
+    CT: obj_read_lock at object-store.h:381:1
+    RF: obj_read_lock at object-store.h:384:1
   Occurrences: 24
 
 Unknown
-  Coordinates: Jump to external code
+  Events:
+    CF: Jump to external code
   Occurrences: 4
 
 Unknown
-  Coordinates: Jump to external code
+  Events:
+    CF: Jump to external code
+    CT: External code
   Occurrences: 7
 
 Unknown
-  Coordinates: Jump to external code
+  Events:
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
   Occurrences: 11
 
 Unknown
-  Coordinates: Jump to external code
+  Events:
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: git_atexit at run-command.c:1098:2
+    CT: st_mult at git-compat-util.h:991:1
+    CT: st_mult at git-compat-util.h:992:5
   Occurrences: 1
 
 Unknown
-  Coordinates: Jump to external code
+  Events:
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: sigchain_push at sigchain.c:25:17
+    CT: Jump to external code
+    CF: start_command at run-command.c:828:7
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    RF: st_mult at git-compat-util.h:996:1
   Occurrences: 1
 
 Unknown
-  Coordinates: Jump to external code
+  Events:
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: start_command at run-command.c:768:17
+    CT: Jump to external code
   Occurrences: 1
 
 Unknown
-  Coordinates: Jump to external code
+  Events:
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: start_command at run-command.c:824:8
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: start_command at run-command.c:824:8
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: start_command at run-command.c:824:8
+    CT: Jump to external code
+    RF: check_signum at sigchain.c:17:1
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: start_command at run-command.c:824:8
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: start_command at run-command.c:824:8
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    RF: check_signum at sigchain.c:15:5
   Occurrences: 1
 
 Unknown
-  Coordinates: Jump to external code
+  Events:
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    RF: check_signum at sigchain.c:17:1
+    RF: check_signum at sigchain.c:15:5
   Occurrences: 1
 
 Unknown
-  Coordinates: Jump to external code
+  Events:
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    RF: xrealloc at wrapper.c:140:1
   Occurrences: 1
 
 Unknown
-  Coordinates: cb_init at cbtree.h:45:2
+  Events:
+    CF: cb_init at cbtree.h:45:2
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
   Occurrences: 11
 
 Unknown
-  Coordinates: clone_checkout_metadata at convert.c:2015:2
+  Events:
+    CF: clone_checkout_metadata at convert.c:2015:2
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
   Occurrences: 2
 
 Unknown
-  Coordinates: compute_diffstat at diff.c:6913:2
+  Events:
+    CF: compute_diffstat at diff.c:6913:2
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
   Occurrences: 4
 
 Unknown
-  Coordinates: drop_all_attr_stacks at attr.c:538:2
+  Events:
+    CF: drop_all_attr_stacks at attr.c:538:2
+    CT: vector_lock at attr.c:489:1
+    RF: vector_lock at attr.c:491:1
   Occurrences: 1
 
 Unknown
-  Coordinates: drop_all_attr_stacks at attr.c:538:2
+  Events:
+    CF: drop_all_attr_stacks at attr.c:538:2
+    CT: vector_lock at attr.c:489:1
+    RF: vector_lock at attr.c:491:1
+    CF: drop_all_attr_stacks at attr.c:544:2
+    CT: vector_unlock at attr.c:494:1
+    RF: vector_unlock at attr.c:496:1
   Occurrences: 1
 
 Unknown
-  Coordinates: entry_clear at tree-walk.c:106:2
+  Events:
+    CF: entry_clear at tree-walk.c:106:2
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
   Occurrences: 1
 
 Unknown
-  Coordinates: git_atexit at run-command.c:1098:2
+  Events:
+    CF: git_atexit at run-command.c:1098:2
   Occurrences: 1
 
 Unknown
-  Coordinates: git_atexit at run-command.c:1098:2
+  Events:
+    CF: git_atexit at run-command.c:1098:2
+    CT: st_mult at git-compat-util.h:991:1
+    RF: st_mult at git-compat-util.h:996:1
+    CF: mark_child_for_cleanup at run-command.c:98:3
+    CT: git_atexit at run-command.c:1097:1
   Occurrences: 1
 
 Unknown
-  Coordinates: git_atexit at run-command.c:1098:2
+  Events:
+    CF: git_atexit at run-command.c:1098:2
+    CT: st_mult at git-compat-util.h:992:5
   Occurrences: 1
 
 Unknown
-  Coordinates: git_atexit at run-command.c:1098:2
+  Events:
+    CF: git_atexit at run-command.c:1098:2
+    CT: xrealloc at wrapper.c:127:1
+    CF: xrealloc at wrapper.c:135:2
+    CT: memory_limit_check at wrapper.c:18:1
+    RF: memory_limit_check at wrapper.c:35:1
+    CF: xrealloc at wrapper.c:136:8
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    RF: xrealloc at wrapper.c:140:1
+    CF: git_atexit at run-command.c:1101:7
+    CT: Jump to external code
   Occurrences: 1
 
 Unknown
-  Coordinates: git_attr_internal at attr.c:216:2
+  Events:
+    CF: git_attr_internal at attr.c:216:2
+    CT: hashmap_lock at attr.c:42:1
+    RF: hashmap_lock at attr.c:44:1
   Occurrences: 110
 
 Unknown
-  Coordinates: init_object_disambiguation at object-name.c:327:2
+  Events:
+    CF: init_object_disambiguation at object-name.c:327:2
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
   Occurrences: 33
 
 Unknown
-  Coordinates: list_objects_filter_init at list-objects-filter-options.c:421:2
+  Events:
+    CF: list_objects_filter_init at list-objects-filter-options.c:421:2
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
   Occurrences: 17
 
 Unknown
-  Coordinates: mark_child_for_cleanup at run-command.c:98:3
+  Events:
+    CF: mark_child_for_cleanup at run-command.c:98:3
+    CT: git_atexit at run-command.c:1097:1
+    CF: git_atexit at run-command.c:1098:2
+    CT: xrealloc at wrapper.c:127:1
+    CF: xrealloc at wrapper.c:135:2
+    CT: memory_limit_check at wrapper.c:18:1
+    RF: memory_limit_check at wrapper.c:35:1
+    CF: xrealloc at wrapper.c:136:8
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    RF: xrealloc at wrapper.c:140:1
   Occurrences: 1
 
 Unknown
-  Coordinates: mark_child_for_cleanup at run-command.c:98:3
+  Events:
+    CF: mark_child_for_cleanup at run-command.c:98:3
+    CT: git_atexit at run-command.c:1097:1
+    RF: do_xmalloc at wrapper.c:68:1
+    RF: xmalloc at wrapper.c:73:1
   Occurrences: 1
 
 Unknown
-  Coordinates: mem_pool_init at mem-pool.c:60:2
+  Events:
+    CF: mem_pool_init at mem-pool.c:60:2
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
   Occurrences: 4
 
 Unknown
-  Coordinates: oidcpy at hash.h:268:2
+  Events:
+    CF: oidcpy at hash.h:268:2
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
   Occurrences: 86
 
 Unknown
-  Coordinates: precompose_utf8_readdir at precompose_utf8.c:131:21
+  Events:
+    CF: precompose_utf8_readdir at precompose_utf8.c:131:21
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: precompose_utf8_readdir at precompose_utf8.c:134:19
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: precompose_utf8_readdir at precompose_utf8.c:147:37
+    CT: has_non_ascii at precompose_utf8.c:23:5
+    RF: has_non_ascii at precompose_utf8.c:37:1
+    CF: precompose_utf8_readdir at precompose_utf8.c:175:4
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: precompose_utf8_readdir at precompose_utf8.c:178:3
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
   Occurrences: 1
 
 Unknown
-  Coordinates: read_directory_recursive at dir.c:2572:11
+  Events:
+    CF: read_directory_recursive at dir.c:2572:11
+    CT: treat_path at dir.c:2282:1
+    CF: treat_path at dir.c:2288:6
+    CT: is_dot_or_dotdot at dir.h:457:25
+    RF: is_dot_or_dotdot at dir.h:460:1
+    CF: treat_path at dir.c:2288:41
+    CT: fspathcmp at dir.c:77:1
+    CF: fspathcmp at dir.c:78:23
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    RF: fspathcmp at dir.c:79:1
+    CF: treat_path at dir.c:2290:2
+    CT: strbuf_setlen at strbuf.h:161:1
+    RF: strbuf_setlen at strbuf.h:169:1
+    CF: treat_path at dir.c:2291:2
+    CT: strbuf_addstr at strbuf.h:304:1
+    CF: strbuf_addstr at strbuf.h:305:2
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: strbuf_addstr at strbuf.h:305:2
+    CT: strbuf_add at strbuf.c:297:1
+    CF: strbuf_add at strbuf.c:298:2
+    CT: strbuf_grow at strbuf.c:92:1
+    RF: strbuf_grow at strbuf.c:102:1
+    CF: strbuf_add at strbuf.c:299:2
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: strbuf_add at strbuf.c:300:2
+    CT: strbuf_setlen at strbuf.h:161:1
+    RF: strbuf_setlen at strbuf.h:169:1
+    RF: strbuf_add at strbuf.c:301:1
+    RF: strbuf_addstr at strbuf.h:306:1
+    CF: treat_path at dir.c:2292:6
+    CT: simplify_away at dir.c:2111:5
+    CF: simplify_away at dir.c:2129:8
+    CT: ps_strncmp at pathspec.h:135:1
+    CF: ps_strncmp at pathspec.h:139:10
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    RF: ps_strncmp at pathspec.h:140:1
+    RF: simplify_away at dir.c:2134:1
+    RF: treat_path at dir.c:2361:1
+    CF: read_directory_recursive at dir.c:2632:3
+    CT: add_path_to_appropriate_result_list at dir.c:2502:1
+    RF: add_path_to_appropriate_result_list at dir.c:2526:1
+    CF: read_directory_recursive at dir.c:2570:10
+    CT: read_cached_dir at dir.c:2447:1
+    CF: read_cached_dir at dir.c:2451:8
+    CT: readdir_skip_dot_and_dotdot at dir.c:57:1
+    CF: readdir_skip_dot_and_dotdot at dir.c:60:14
+    CT: precompose_utf8_readdir at precompose_utf8.c:127:1
+    CF: precompose_utf8_readdir at precompose_utf8.c:129:8
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: precompose_utf8_readdir at precompose_utf8.c:131:21
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: precompose_utf8_readdir at precompose_utf8.c:134:19
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: precompose_utf8_readdir at precompose_utf8.c:147:37
+    CT: has_non_ascii at precompose_utf8.c:23:5
+    RF: has_non_ascii at precompose_utf8.c:37:1
+    CF: precompose_utf8_readdir at precompose_utf8.c:175:4
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: precompose_utf8_readdir at precompose_utf8.c:178:3
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    RF: precompose_utf8_readdir at precompose_utf8.c:182:1
+    CF: readdir_skip_dot_and_dotdot at dir.c:61:8
+    CT: is_dot_or_dotdot at dir.h:457:25
+    RF: is_dot_or_dotdot at dir.h:460:1
+    RF: readdir_skip_dot_and_dotdot at dir.c:65:1
+    RF: read_cached_dir at dir.c:2478:1
+    CF: read_directory_recursive at dir.c:2572:11
+    CT: treat_path at dir.c:2282:1
+    CF: treat_path at dir.c:2288:6
+    CT: is_dot_or_dotdot at dir.h:457:25
+    RF: is_dot_or_dotdot at dir.h:460:1
+    CF: treat_path at dir.c:2288:41
+    CT: fspathcmp at dir.c:77:1
+    CF: fspathcmp at dir.c:78:23
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    RF: fspathcmp at dir.c:79:1
+    CF: treat_path at dir.c:2290:2
+    CT: strbuf_setlen at strbuf.h:161:1
+    RF: strbuf_setlen at strbuf.h:169:1
+    CF: treat_path at dir.c:2291:2
+    CT: strbuf_addstr at strbuf.h:304:1
+    CF: strbuf_addstr at strbuf.h:305:2
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: strbuf_addstr at strbuf.h:305:2
+    CT: strbuf_add at strbuf.c:297:1
+    CF: strbuf_add at strbuf.c:298:2
+    CT: strbuf_grow at strbuf.c:92:1
+    RF: strbuf_grow at strbuf.c:102:1
+    CF: strbuf_add at strbuf.c:299:2
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: strbuf_add at strbuf.c:300:2
+    CT: strbuf_setlen at strbuf.h:161:1
+    RF: strbuf_setlen at strbuf.h:169:1
+    RF: strbuf_add at strbuf.c:301:1
+    RF: strbuf_addstr at strbuf.h:306:1
+    CF: treat_path at dir.c:2292:6
+    CT: simplify_away at dir.c:2111:5
+    CF: simplify_away at dir.c:2129:8
+    CT: ps_strncmp at pathspec.h:135:1
+    CF: ps_strncmp at pathspec.h:139:10
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    RF: ps_strncmp at pathspec.h:140:1
+    RF: simplify_away at dir.c:2134:1
+    RF: treat_path at dir.c:2361:1
+    CF: read_directory_recursive at dir.c:2632:3
+    CT: add_path_to_appropriate_result_list at dir.c:2502:1
+    RF: add_path_to_appropriate_result_list at dir.c:2526:1
+    CF: read_directory_recursive at dir.c:2570:10
+    CT: read_cached_dir at dir.c:2447:1
+    CF: read_cached_dir at dir.c:2451:8
+    CT: readdir_skip_dot_and_dotdot at dir.c:57:1
+    CF: readdir_skip_dot_and_dotdot at dir.c:60:14
+    CT: precompose_utf8_readdir at precompose_utf8.c:127:1
+    CF: precompose_utf8_readdir at precompose_utf8.c:129:8
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: precompose_utf8_readdir at precompose_utf8.c:131:21
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: precompose_utf8_readdir at precompose_utf8.c:134:19
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: precompose_utf8_readdir at precompose_utf8.c:147:37
+    CT: has_non_ascii at precompose_utf8.c:23:5
+    RF: has_non_ascii at precompose_utf8.c:37:1
+    CF: precompose_utf8_readdir at precompose_utf8.c:175:4
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: precompose_utf8_readdir at precompose_utf8.c:178:3
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    RF: precompose_utf8_readdir at precompose_utf8.c:182:1
+    CF: readdir_skip_dot_and_dotdot at dir.c:61:8
+    CT: is_dot_or_dotdot at dir.h:457:25
+    RF: is_dot_or_dotdot at dir.h:460:1
+    RF: readdir_skip_dot_and_dotdot at dir.c:65:1
+    RF: read_cached_dir at dir.c:2478:1
+    CF: read_directory_recursive at dir.c:2572:11
+    CT: treat_path at dir.c:2282:1
+    CF: treat_path at dir.c:2288:6
+    CT: is_dot_or_dotdot at dir.h:457:25
+    RF: is_dot_or_dotdot at dir.h:460:1
+    CF: treat_path at dir.c:2288:41
+    CT: fspathcmp at dir.c:77:1
+    CF: fspathcmp at dir.c:78:23
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    RF: fspathcmp at dir.c:79:1
+    CF: treat_path at dir.c:2290:2
+    CT: strbuf_setlen at strbuf.h:161:1
+    RF: strbuf_setlen at strbuf.h:169:1
+    CF: treat_path at dir.c:2291:2
+    CT: strbuf_addstr at strbuf.h:304:1
+    CF: strbuf_addstr at strbuf.h:305:2
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: strbuf_addstr at strbuf.h:305:2
+    CT: strbuf_add at strbuf.c:297:1
+    CF: strbuf_add at strbuf.c:298:2
+    CT: strbuf_grow at strbuf.c:92:1
+    RF: strbuf_grow at strbuf.c:102:1
+    CF: strbuf_add at strbuf.c:299:2
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: strbuf_add at strbuf.c:300:2
+    CT: strbuf_setlen at strbuf.h:161:1
+    RF: strbuf_setlen at strbuf.h:169:1
+    RF: strbuf_add at strbuf.c:301:1
+    RF: strbuf_addstr at strbuf.h:306:1
+    CF: treat_path at dir.c:2292:6
+    CT: simplify_away at dir.c:2111:5
+    CF: simplify_away at dir.c:2129:8
+    CT: ps_strncmp at pathspec.h:135:1
+    CF: ps_strncmp at pathspec.h:139:10
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    RF: ps_strncmp at pathspec.h:140:1
+    RF: simplify_away at dir.c:2134:1
+    RF: treat_path at dir.c:2361:1
+    CF: read_directory_recursive at dir.c:2632:3
+    CT: add_path_to_appropriate_result_list at dir.c:2502:1
+    RF: add_path_to_appropriate_result_list at dir.c:2526:1
+    CF: read_directory_recursive at dir.c:2570:10
+    CT: read_cached_dir at dir.c:2447:1
+    CF: read_cached_dir at dir.c:2451:8
+    CT: readdir_skip_dot_and_dotdot at dir.c:57:1
+    CF: readdir_skip_dot_and_dotdot at dir.c:60:14
+    CT: precompose_utf8_readdir at precompose_utf8.c:127:1
+    CF: precompose_utf8_readdir at precompose_utf8.c:129:8
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    RF: precompose_utf8_readdir at precompose_utf8.c:182:1
+    RF: readdir_skip_dot_and_dotdot at dir.c:65:1
+    RF: read_cached_dir at dir.c:2478:1
   Occurrences: 1
 
 Unknown
-  Coordinates: readdir_skip_dot_and_dotdot at dir.c:61:8
+  Events:
+    CF: readdir_skip_dot_and_dotdot at dir.c:61:8
+    CT: is_dot_or_dotdot at dir.h:457:25
+    RF: is_dot_or_dotdot at dir.h:460:1
   Occurrences: 1
 
 Unknown
-  Coordinates: refspec_init at refspec.c:185:2
+  Events:
+    CF: refspec_init at refspec.c:185:2
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
   Occurrences: 2
 
 Unknown
-  Coordinates: set_cloexec at run-command.c:535:14
+  Events:
+    CF: set_cloexec at run-command.c:535:14
+    CF: start_command at run-command.c:780:3
+    CT: set_cloexec at run-command.c:534:1
   Occurrences: 1
 
 Unknown
-  Coordinates: set_cloexec at run-command.c:535:14
+  Events:
+    CF: set_cloexec at run-command.c:535:14
+    CT: Jump to external code
   Occurrences: 1
 
 Unknown
-  Coordinates: set_cloexec at run-command.c:537:3
+  Events:
+    CF: set_cloexec at run-command.c:537:3
+    CT: Jump to external code
   Occurrences: 1
 
 Unknown
-  Coordinates: set_cloexec at run-command.c:537:3
+  Events:
+    CF: set_cloexec at run-command.c:537:3
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
   Occurrences: 1
 
 Unknown
-  Coordinates: sigchain_push at sigchain.c:22:2
+  Events:
+    CF: sigchain_push at sigchain.c:22:2
   Occurrences: 1
 
 Unknown
-  Coordinates: sigchain_push at sigchain.c:22:2
+  Events:
+    CF: sigchain_push at sigchain.c:22:2
+    CT: check_signum at sigchain.c:15:14
   Occurrences: 2
 
 Unknown
-  Coordinates: sigchain_push at sigchain.c:22:2
+  Events:
+    CF: sigchain_push at sigchain.c:22:2
+    RF: check_signum at sigchain.c:15:5
   Occurrences: 1
 
 Unknown
-  Coordinates: sigchain_push at sigchain.c:24:2
+  Events:
+    CF: sigchain_push at sigchain.c:24:2
   Occurrences: 1
 
 Unknown
-  Coordinates: sigchain_push at sigchain.c:24:2
+  Events:
+    CF: sigchain_push at sigchain.c:24:2
+    CT: st_mult at git-compat-util.h:991:1
   Occurrences: 3
 
 Unknown
-  Coordinates: sigchain_push at sigchain.c:24:2
+  Events:
+    CF: sigchain_push at sigchain.c:24:2
+    CT: st_mult at git-compat-util.h:991:1
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
   Occurrences: 1
 
 Unknown
-  Coordinates: sigchain_push at sigchain.c:24:2
+  Events:
+    CF: sigchain_push at sigchain.c:24:2
+    CT: st_mult at git-compat-util.h:992:5
   Occurrences: 5
 
 Unknown
-  Coordinates: sigchain_push at sigchain.c:24:2
+  Events:
+    CF: sigchain_push at sigchain.c:24:2
+    CT: xrealloc at wrapper.c:127:1
   Occurrences: 7
 
 Unknown
-  Coordinates: sigchain_push at sigchain.c:24:2
+  Events:
+    CF: sigchain_push at sigchain.c:24:2
+    CT: xrealloc at wrapper.c:127:1
+    CF: xrealloc at wrapper.c:135:2
+    CT: memory_limit_check at wrapper.c:18:1
+    RF: memory_limit_check at wrapper.c:35:1
+    CF: xrealloc at wrapper.c:136:8
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    RF: xrealloc at wrapper.c:140:1
+    CF: start_command at run-command.c:828:7
+    CF: start_command at run-command.c:824:8
   Occurrences: 1
 
 Unknown
-  Coordinates: sigchain_push at sigchain.c:25:17
+  Events:
+    CF: sigchain_push at sigchain.c:25:17
+    CT: Jump to external code
   Occurrences: 4
 
 Unknown
-  Coordinates: sigchain_push_common at sigchain.c:48:2
+  Events:
+    CF: sigchain_push_common at sigchain.c:48:2
+    CT: sigchain_push at sigchain.c:20:1
   Occurrences: 2
 
 Unknown
-  Coordinates: sigchain_push_common at sigchain.c:49:2
+  Events:
+    CF: sigchain_push_common at sigchain.c:49:2
+    CT: sigchain_push at sigchain.c:20:1
+    CF: sigchain_push at sigchain.c:22:2
+    CT: check_signum at sigchain.c:15:14
+    RF: check_signum at sigchain.c:15:5
   Occurrences: 1
 
 Unknown
-  Coordinates: simplify_away at dir.c:2129:8
+  Events:
+    CF: simplify_away at dir.c:2129:8
+    CT: ps_strncmp at pathspec.h:135:1
+    CF: ps_strncmp at pathspec.h:139:10
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    RF: ps_strncmp at pathspec.h:140:1
+    RF: simplify_away at dir.c:2134:1
+    RF: treat_path at dir.c:2361:1
+    CF: read_directory_recursive at dir.c:2632:3
+    CT: add_path_to_appropriate_result_list at dir.c:2502:1
+    RF: add_path_to_appropriate_result_list at dir.c:2526:1
+    CF: read_directory_recursive at dir.c:2570:10
+    CT: read_cached_dir at dir.c:2447:1
+    CF: read_cached_dir at dir.c:2451:8
+    CT: readdir_skip_dot_and_dotdot at dir.c:57:1
+    CF: readdir_skip_dot_and_dotdot at dir.c:60:14
+    CT: precompose_utf8_readdir at precompose_utf8.c:127:1
+    CF: precompose_utf8_readdir at precompose_utf8.c:129:8
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: precompose_utf8_readdir at precompose_utf8.c:131:21
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: precompose_utf8_readdir at precompose_utf8.c:134:19
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: precompose_utf8_readdir at precompose_utf8.c:147:37
+    CT: has_non_ascii at precompose_utf8.c:18:1
+    RF: has_non_ascii at precompose_utf8.c:37:1
+    CF: precompose_utf8_readdir at precompose_utf8.c:175:4
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: precompose_utf8_readdir at precompose_utf8.c:178:3
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    RF: precompose_utf8_readdir at precompose_utf8.c:182:1
+    CF: readdir_skip_dot_and_dotdot at dir.c:61:8
+    CT: is_dot_or_dotdot at dir.h:456:1
+    RF: is_dot_or_dotdot at dir.h:460:1
+    RF: readdir_skip_dot_and_dotdot at dir.c:65:1
+    RF: read_cached_dir at dir.c:2478:1
+    CF: read_directory_recursive at dir.c:2572:11
+    CT: treat_path at dir.c:2282:1
+    CF: treat_path at dir.c:2288:6
+    CT: is_dot_or_dotdot at dir.h:456:1
+    RF: is_dot_or_dotdot at dir.h:460:1
+    CF: treat_path at dir.c:2288:41
+    CT: fspathcmp at dir.c:77:1
+    CF: fspathcmp at dir.c:78:23
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    RF: fspathcmp at dir.c:79:1
+    CF: treat_path at dir.c:2290:2
+    CT: strbuf_setlen at strbuf.h:161:1
+    RF: strbuf_setlen at strbuf.h:169:1
+    CF: treat_path at dir.c:2291:2
+    CT: strbuf_addstr at strbuf.h:304:1
+    CF: strbuf_addstr at strbuf.h:305:2
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: strbuf_addstr at strbuf.h:305:2
+    CT: strbuf_add at strbuf.c:297:1
+    CF: strbuf_add at strbuf.c:298:2
+    CT: strbuf_grow at strbuf.c:92:1
+    RF: strbuf_grow at strbuf.c:102:1
+    CF: strbuf_add at strbuf.c:299:2
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: strbuf_add at strbuf.c:300:2
+    CT: strbuf_setlen at strbuf.h:161:1
+    RF: strbuf_setlen at strbuf.h:169:1
+    RF: strbuf_add at strbuf.c:301:1
+    RF: strbuf_addstr at strbuf.h:306:1
+    CF: treat_path at dir.c:2292:6
+    CT: simplify_away at dir.c:2108:1
   Occurrences: 1
 
 Unknown
-  Coordinates: simplify_away at dir.c:2129:8
+  Events:
+    CF: simplify_away at dir.c:2129:8
+    CT: ps_strncmp at pathspec.h:135:1
+    CF: ps_strncmp at pathspec.h:139:10
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    RF: ps_strncmp at pathspec.h:140:1
+    RF: simplify_away at dir.c:2134:1
+    RF: treat_path at dir.c:2361:1
+    CF: read_directory_recursive at dir.c:2632:3
+    CT: add_path_to_appropriate_result_list at dir.c:2502:1
+    RF: add_path_to_appropriate_result_list at dir.c:2526:1
+    CF: read_directory_recursive at dir.c:2570:10
+    CT: read_cached_dir at dir.c:2447:1
+    CF: read_cached_dir at dir.c:2451:8
+    CT: readdir_skip_dot_and_dotdot at dir.c:57:1
+    CF: readdir_skip_dot_and_dotdot at dir.c:60:14
+    CT: precompose_utf8_readdir at precompose_utf8.c:127:1
+    CF: precompose_utf8_readdir at precompose_utf8.c:129:8
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: precompose_utf8_readdir at precompose_utf8.c:131:21
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: precompose_utf8_readdir at precompose_utf8.c:134:19
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: precompose_utf8_readdir at precompose_utf8.c:147:37
+    CT: has_non_ascii at precompose_utf8.c:18:1
+    RF: has_non_ascii at precompose_utf8.c:37:1
+    CF: precompose_utf8_readdir at precompose_utf8.c:175:4
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: precompose_utf8_readdir at precompose_utf8.c:178:3
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    RF: precompose_utf8_readdir at precompose_utf8.c:182:1
+    CF: readdir_skip_dot_and_dotdot at dir.c:61:8
+    CT: is_dot_or_dotdot at dir.h:456:1
+    RF: is_dot_or_dotdot at dir.h:460:1
+    RF: readdir_skip_dot_and_dotdot at dir.c:65:1
+    RF: read_cached_dir at dir.c:2478:1
+    CF: read_directory_recursive at dir.c:2572:11
+    CT: treat_path at dir.c:2282:1
+    CF: treat_path at dir.c:2288:6
+    CT: is_dot_or_dotdot at dir.h:456:1
+    RF: is_dot_or_dotdot at dir.h:460:1
+    CF: treat_path at dir.c:2288:41
+    CT: fspathcmp at dir.c:77:1
+    CF: fspathcmp at dir.c:78:23
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    RF: fspathcmp at dir.c:79:1
+    CF: treat_path at dir.c:2290:2
+    CT: strbuf_setlen at strbuf.h:161:1
+    RF: strbuf_setlen at strbuf.h:169:1
+    CF: treat_path at dir.c:2291:2
+    CT: strbuf_addstr at strbuf.h:304:1
+    CF: strbuf_addstr at strbuf.h:305:2
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: strbuf_addstr at strbuf.h:305:2
+    CT: strbuf_add at strbuf.c:297:1
+    CF: strbuf_add at strbuf.c:298:2
+    CT: strbuf_grow at strbuf.c:92:1
+    RF: strbuf_grow at strbuf.c:102:1
+    CF: strbuf_add at strbuf.c:299:2
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: strbuf_add at strbuf.c:300:2
+    CT: strbuf_setlen at strbuf.h:161:1
+    RF: strbuf_setlen at strbuf.h:169:1
+    RF: strbuf_add at strbuf.c:301:1
+    RF: strbuf_addstr at strbuf.h:306:1
+    CF: treat_path at dir.c:2292:6
+    CT: simplify_away at dir.c:2108:1
+    CF: simplify_away at dir.c:2129:8
+    CT: ps_strncmp at pathspec.h:135:1
+    CF: ps_strncmp at pathspec.h:139:10
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    RF: ps_strncmp at pathspec.h:140:1
+    RF: simplify_away at dir.c:2134:1
+    RF: treat_path at dir.c:2361:1
+    CF: read_directory_recursive at dir.c:2632:3
+    CT: add_path_to_appropriate_result_list at dir.c:2502:1
+    RF: add_path_to_appropriate_result_list at dir.c:2526:1
+    CF: read_directory_recursive at dir.c:2570:10
+    CT: read_cached_dir at dir.c:2447:1
+    CF: read_cached_dir at dir.c:2451:8
+    CT: readdir_skip_dot_and_dotdot at dir.c:57:1
+    CF: readdir_skip_dot_and_dotdot at dir.c:60:14
+    CT: precompose_utf8_readdir at precompose_utf8.c:127:1
+    CF: precompose_utf8_readdir at precompose_utf8.c:129:8
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: precompose_utf8_readdir at precompose_utf8.c:131:21
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: precompose_utf8_readdir at precompose_utf8.c:134:19
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: precompose_utf8_readdir at precompose_utf8.c:147:37
+    CT: has_non_ascii at precompose_utf8.c:18:1
+    RF: has_non_ascii at precompose_utf8.c:37:1
+    CF: precompose_utf8_readdir at precompose_utf8.c:175:4
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: precompose_utf8_readdir at precompose_utf8.c:178:3
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    RF: precompose_utf8_readdir at precompose_utf8.c:182:1
+    CF: readdir_skip_dot_and_dotdot at dir.c:61:8
+    CT: is_dot_or_dotdot at dir.h:456:1
+    RF: is_dot_or_dotdot at dir.h:460:1
+    RF: readdir_skip_dot_and_dotdot at dir.c:65:1
+    RF: read_cached_dir at dir.c:2478:1
+    CF: read_directory_recursive at dir.c:2572:11
+    CT: treat_path at dir.c:2282:1
+    CF: treat_path at dir.c:2288:6
+    CT: is_dot_or_dotdot at dir.h:456:1
+    RF: is_dot_or_dotdot at dir.h:460:1
+    CF: treat_path at dir.c:2288:41
+    CT: fspathcmp at dir.c:77:1
+    CF: fspathcmp at dir.c:78:23
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    RF: fspathcmp at dir.c:79:1
+    CF: treat_path at dir.c:2290:2
+    CT: strbuf_setlen at strbuf.h:161:1
+    RF: strbuf_setlen at strbuf.h:169:1
+    CF: treat_path at dir.c:2291:2
+    CT: strbuf_addstr at strbuf.h:304:1
+    CF: strbuf_addstr at strbuf.h:305:2
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: strbuf_addstr at strbuf.h:305:2
+    CT: strbuf_add at strbuf.c:297:1
+    CF: strbuf_add at strbuf.c:298:2
+    CT: strbuf_grow at strbuf.c:92:1
+    RF: strbuf_grow at strbuf.c:102:1
+    CF: strbuf_add at strbuf.c:299:2
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: strbuf_add at strbuf.c:300:2
+    CT: strbuf_setlen at strbuf.h:161:1
+    RF: strbuf_setlen at strbuf.h:169:1
+    RF: strbuf_add at strbuf.c:301:1
+    RF: strbuf_addstr at strbuf.h:306:1
+    CF: treat_path at dir.c:2292:6
+    CT: simplify_away at dir.c:2108:1
+    CF: simplify_away at dir.c:2129:8
+    CT: ps_strncmp at pathspec.h:135:1
+    CF: ps_strncmp at pathspec.h:139:10
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    RF: ps_strncmp at pathspec.h:140:1
+    RF: simplify_away at dir.c:2134:1
+    RF: treat_path at dir.c:2361:1
+    CF: read_directory_recursive at dir.c:2632:3
+    CT: add_path_to_appropriate_result_list at dir.c:2502:1
+    RF: add_path_to_appropriate_result_list at dir.c:2526:1
+    CF: read_directory_recursive at dir.c:2570:10
+    CT: read_cached_dir at dir.c:2447:1
+    CF: read_cached_dir at dir.c:2451:8
+    CT: readdir_skip_dot_and_dotdot at dir.c:57:1
+    CF: readdir_skip_dot_and_dotdot at dir.c:60:14
+    CT: precompose_utf8_readdir at precompose_utf8.c:127:1
+    CF: precompose_utf8_readdir at precompose_utf8.c:129:8
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: precompose_utf8_readdir at precompose_utf8.c:131:21
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: precompose_utf8_readdir at precompose_utf8.c:134:19
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: precompose_utf8_readdir at precompose_utf8.c:147:37
+    CT: has_non_ascii at precompose_utf8.c:18:1
+    RF: has_non_ascii at precompose_utf8.c:37:1
+    CF: precompose_utf8_readdir at precompose_utf8.c:175:4
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: precompose_utf8_readdir at precompose_utf8.c:178:3
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    RF: precompose_utf8_readdir at precompose_utf8.c:182:1
+    CF: readdir_skip_dot_and_dotdot at dir.c:61:8
+    CT: is_dot_or_dotdot at dir.h:456:1
+    RF: is_dot_or_dotdot at dir.h:460:1
+    RF: readdir_skip_dot_and_dotdot at dir.c:65:1
+    RF: read_cached_dir at dir.c:2478:1
+    CF: read_directory_recursive at dir.c:2572:11
+    CT: treat_path at dir.c:2282:1
+    CF: treat_path at dir.c:2288:6
+    CT: is_dot_or_dotdot at dir.h:456:1
+    RF: is_dot_or_dotdot at dir.h:460:1
+    CF: treat_path at dir.c:2288:41
+    CT: fspathcmp at dir.c:77:1
+    CF: fspathcmp at dir.c:78:23
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    RF: fspathcmp at dir.c:79:1
+    CF: treat_path at dir.c:2290:2
+    CT: strbuf_setlen at strbuf.h:161:1
+    RF: strbuf_setlen at strbuf.h:169:1
+    CF: treat_path at dir.c:2291:2
+    CT: strbuf_addstr at strbuf.h:304:1
+    CF: strbuf_addstr at strbuf.h:305:2
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: strbuf_addstr at strbuf.h:305:2
+    CT: strbuf_add at strbuf.c:297:1
+    CF: strbuf_add at strbuf.c:298:2
+    CT: strbuf_grow at strbuf.c:92:1
+    RF: strbuf_grow at strbuf.c:102:1
+    CF: strbuf_add at strbuf.c:299:2
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: strbuf_add at strbuf.c:300:2
+    CT: strbuf_setlen at strbuf.h:161:1
+    RF: strbuf_setlen at strbuf.h:169:1
+    RF: strbuf_add at strbuf.c:301:1
+    RF: strbuf_addstr at strbuf.h:306:1
+    CF: treat_path at dir.c:2292:6
+    CT: simplify_away at dir.c:2108:1
   Occurrences: 1
 
 Unknown
-  Coordinates: start_command at run-command.c:768:17
+  Events:
+    CF: start_command at run-command.c:768:17
+    CT: Jump to external code
   Occurrences: 8
 
 Unknown
-  Coordinates: start_command at run-command.c:775:3
+  Events:
+    CF: start_command at run-command.c:775:3
   Occurrences: 1
 
 Unknown
-  Coordinates: start_command at run-command.c:775:3
+  Events:
+    CF: start_command at run-command.c:775:3
+    CT: set_die_routine at usage.c:123:1
   Occurrences: 1
 
 Unknown
-  Coordinates: start_command at run-command.c:775:3
+  Events:
+    CF: start_command at run-command.c:775:3
+    CT: set_die_routine at usage.c:123:1
+    CF: start_command at run-command.c:864:2
+    CT: Jump to external code
   Occurrences: 1
 
 Unknown
-  Coordinates: start_command at run-command.c:775:3
+  Events:
+    CF: start_command at run-command.c:775:3
+    CT: set_die_routine at usage.c:124:14
   Occurrences: 3
 
 Unknown
-  Coordinates: start_command at run-command.c:775:3
+  Events:
+    CF: start_command at run-command.c:775:3
+    CT: set_die_routine at usage.c:124:14
+    RF: set_die_routine at usage.c:125:1
   Occurrences: 1
 
 Unknown
-  Coordinates: start_command at run-command.c:776:3
+  Events:
+    CF: start_command at run-command.c:776:3
+    CT: set_error_routine at usage.c:133:1
   Occurrences: 1
 
 Unknown
-  Coordinates: start_command at run-command.c:776:3
+  Events:
+    CF: start_command at run-command.c:776:3
+    CT: set_error_routine at usage.c:134:16
+    CF: start_command at run-command.c:864:2
   Occurrences: 1
 
 Unknown
-  Coordinates: start_command at run-command.c:776:3
+  Events:
+    CF: start_command at run-command.c:776:3
+    CT: set_error_routine at usage.c:134:16
+    RF: set_error_routine at usage.c:135:1
   Occurrences: 1
 
 Unknown
-  Coordinates: start_command at run-command.c:777:3
+  Events:
+    CF: start_command at run-command.c:777:3
+    CT: set_warn_routine at usage.c:143:1
   Occurrences: 1
 
 Unknown
-  Coordinates: start_command at run-command.c:777:3
+  Events:
+    CF: start_command at run-command.c:777:3
+    CT: set_warn_routine at usage.c:144:15
   Occurrences: 1
 
 Unknown
-  Coordinates: start_command at run-command.c:777:3
+  Events:
+    CF: start_command at run-command.c:777:3
+    CT: set_warn_routine at usage.c:144:15
+    RF: set_warn_routine at usage.c:145:1
   Occurrences: 3
 
 Unknown
-  Coordinates: start_command at run-command.c:779:3
+  Events:
+    CF: start_command at run-command.c:779:3
+    CT: Jump to external code
   Occurrences: 2
 
 Unknown
-  Coordinates: start_command at run-command.c:780:3
+  Events:
+    CF: start_command at run-command.c:780:3
+    CT: set_cloexec at run-command.c:534:1
   Occurrences: 1
 
 Unknown
-  Coordinates: start_command at run-command.c:824:8
+  Events:
+    CF: start_command at run-command.c:824:8
   Occurrences: 2
 
 Unknown
-  Coordinates: start_command at run-command.c:824:8
+  Events:
+    CF: start_command at run-command.c:824:8
+    CT: Jump to external code
   Occurrences: 2
 
 Unknown
-  Coordinates: start_command at run-command.c:824:8
+  Events:
+    CF: start_command at run-command.c:824:8
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
   Occurrences: 5
 
 Unknown
-  Coordinates: start_command at run-command.c:828:7
+  Events:
+    CF: start_command at run-command.c:828:7
   Occurrences: 1
 
 Unknown
-  Coordinates: start_command at run-command.c:828:7
+  Events:
+    CF: start_command at run-command.c:828:7
+    CT: Jump to external code
   Occurrences: 2
 
 Unknown
-  Coordinates: start_command at run-command.c:837:3
+  Events:
+    CF: start_command at run-command.c:837:3
   Occurrences: 1
 
 Unknown
-  Coordinates: start_command at run-command.c:837:3
+  Events:
+    CF: start_command at run-command.c:837:3
+    CT: Jump to external code
   Occurrences: 3
 
 Unknown
-  Coordinates: start_command at run-command.c:837:3
+  Events:
+    CF: start_command at run-command.c:837:3
+    RF: Jump to external code
+    CT: Jump to external code
   Occurrences: 1
 
 Unknown
-  Coordinates: start_command at run-command.c:855:3
+  Events:
+    CF: start_command at run-command.c:855:3
+    CT: mark_child_for_cleanup at run-command.c:90:1
   Occurrences: 1
 
 Unknown
-  Coordinates: start_command at run-command.c:855:3
+  Events:
+    CF: start_command at run-command.c:855:3
+    CT: mark_child_for_cleanup at run-command.c:90:1
+    CF: mark_child_for_cleanup at run-command.c:91:29
+    CT: xmalloc at wrapper.c:71:1
+    CF: xmalloc at wrapper.c:72:9
+    CT: do_xmalloc at wrapper.c:46:1
+    CF: do_xmalloc at wrapper.c:49:6
+    CT: memory_limit_check at wrapper.c:18:1
+    RF: memory_limit_check at wrapper.c:35:1
+    CF: do_xmalloc at wrapper.c:51:8
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    RF: do_xmalloc at wrapper.c:68:1
+    RF: xmalloc at wrapper.c:73:1
   Occurrences: 1
 
 Unknown
-  Coordinates: start_command at run-command.c:864:2
+  Events:
+    CF: start_command at run-command.c:864:2
+    CT: Jump to external code
   Occurrences: 2
 
 Unknown
-  Coordinates: start_command at run-command.c:864:2
+  Events:
+    CF: start_command at run-command.c:864:2
+    RF: atfork_parent at run-command.c:530:1
   Occurrences: 1
 
 Unknown
-  Coordinates: start_command at run-command.c:865:6
+  Events:
+    CF: start_command at run-command.c:865:6
+    CT: xread at wrapper.c:225:1
+    CF: xread at wrapper.c:230:8
+    CT: Jump to external code
   Occurrences: 2
 
 Unknown
-  Coordinates: string_list_init_dup at string-list.c:13:2
+  Events:
+    CF: string_list_init_dup at string-list.c:13:2
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
   Occurrences: 484
 
 Unknown
-  Coordinates: string_list_init_nodup at string-list.c:7:2
+  Events:
+    CF: string_list_init_nodup at string-list.c:7:2
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
   Occurrences: 2
 
 Unknown
-  Coordinates: strvec_init at strvec.c:10:2
+  Events:
+    CF: strvec_init at strvec.c:10:2
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
   Occurrences: 518
 
 Unknown
-  Coordinates: treat_path at dir.c:2290:2
+  Events:
+    CF: treat_path at dir.c:2290:2
+    CT: strbuf_setlen at strbuf.h:161:1
+    RF: strbuf_setlen at strbuf.h:169:1
+    CF: treat_path at dir.c:2291:2
+    CT: strbuf_addstr at strbuf.h:304:1
+    CF: strbuf_addstr at strbuf.h:305:2
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: strbuf_addstr at strbuf.h:305:2
+    CT: strbuf_add at strbuf.c:297:1
+    CF: strbuf_add at strbuf.c:298:2
+    CT: strbuf_grow at strbuf.c:92:1
+    RF: strbuf_grow at strbuf.c:102:1
+    CF: strbuf_add at strbuf.c:299:2
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: strbuf_add at strbuf.c:300:2
+    CT: strbuf_setlen at strbuf.h:161:1
+    RF: strbuf_setlen at strbuf.h:169:1
+    RF: strbuf_add at strbuf.c:301:1
+    RF: strbuf_addstr at strbuf.h:306:1
+    CF: treat_path at dir.c:2292:6
+    CT: simplify_away at dir.c:2111:5
+    CF: simplify_away at dir.c:2129:8
+    CT: ps_strncmp at pathspec.h:135:1
+    CF: ps_strncmp at pathspec.h:139:10
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    RF: ps_strncmp at pathspec.h:140:1
+    RF: simplify_away at dir.c:2134:1
   Occurrences: 1
 
 Unknown
-  Coordinates: xread at wrapper.c:230:8
+  Events:
+    CF: xread at wrapper.c:230:8
   Occurrences: 1
 
 Unknown
-  Coordinates: xread at wrapper.c:230:8
+  Events:
+    CF: xread at wrapper.c:230:8
+    CT: Jump to external code
   Occurrences: 2
 
 Unknown
-  Coordinates: xrealloc at wrapper.c:135:2
+  Events:
+    CF: xrealloc at wrapper.c:135:2
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
   Occurrences: 1
 
 Unknown
-  Coordinates: xrealloc at wrapper.c:135:2
+  Events:
+    CF: xrealloc at wrapper.c:135:2
+    CT: memory_limit_check at wrapper.c:18:1
   Occurrences: 7
 
 Unknown
-  Coordinates: xrealloc at wrapper.c:135:2
+  Events:
+    CF: xrealloc at wrapper.c:135:2
+    CT: memory_limit_check at wrapper.c:18:1
+    RF: memory_limit_check at wrapper.c:35:1
+    CF: xrealloc at wrapper.c:136:8
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    RF: xrealloc at wrapper.c:140:1
+    CF: sigchain_push at sigchain.c:25:17
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    RF: sigchain_push at sigchain.c:30:1
+    CF: sigchain_push_common at sigchain.c:49:2
+    CT: sigchain_push at sigchain.c:20:1
+    CF: sigchain_push at sigchain.c:22:2
+    CT: check_signum at sigchain.c:14:1
+    RF: check_signum at sigchain.c:17:1
+    CF: sigchain_push at sigchain.c:24:2
+    CT: st_mult at git-compat-util.h:991:1
+    RF: st_mult at git-compat-util.h:996:1
+    CF: sigchain_push at sigchain.c:24:2
+    CT: xrealloc at wrapper.c:127:1
+    RF: Jump to external code
   Occurrences: 1
 
 Unknown
-  Coordinates: xrealloc at wrapper.c:136:8
+  Events:
+    CF: xrealloc at wrapper.c:136:8
   Occurrences: 2
 
 Unknown
-  Coordinates: xrealloc at wrapper.c:136:8
+  Events:
+    CF: xrealloc at wrapper.c:136:8
+    CT: Jump to external code
   Occurrences: 3
 
 Unknown
-  Coordinates: External code
+  Events:
+    CT: External code
+    RF: Jump to external code
   Occurrences: 2
 
 Unknown
-  Coordinates: External code
+  Events:
+    CT: External code
+    RF: Jump to external code
+    CF: sigchain_push at sigchain.c:25:17
+    CT: Jump to external code
+    CF: Jump to external code
+    CF: start_command at run-command.c:828:7
+    CT: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: Jump to external code
+    CF: xrealloc at wrapper.c:135:2
+    CT: memory_limit_check at wrapper.c:18:1
   Occurrences: 1
 
 Unknown
-  Coordinates: External code
+  Events:
+    CT: External code
+    RF: Jump to external code
+    CF: start_command at run-command.c:824:8
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
   Occurrences: 1
 
 Unknown
-  Coordinates: External code
+  Events:
+    CT: External code
+    RF: Jump to external code
+    CF: start_command at run-command.c:828:7
+    CT: Jump to external code
+    RF: st_mult at git-compat-util.h:996:1
+    CF: Jump to external code
+    RF: sigchain_push at sigchain.c:30:1
   Occurrences: 1
 
 Unknown
-  Coordinates: Jump to external code
+  Events:
+    CT: Jump to external code
   Occurrences: 9
 
 Unknown
-  Coordinates: Jump to external code
+  Events:
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: config_store_data_clear at config.c:2871:2
   Occurrences: 183
 
 Unknown
-  Coordinates: Jump to external code
+  Events:
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: get_oid_with_context_1 at object-name.c:1916:2
   Occurrences: 6
 
 Unknown
-  Coordinates: Jump to external code
+  Events:
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: git_hash_sha1_final_oid at object-file.c:107:2
   Occurrences: 23
 
 Unknown
-  Coordinates: Jump to external code
+  Events:
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: hashmap_clear_ at hashmap.c:209:2
   Occurrences: 73
 
 Unknown
-  Coordinates: Jump to external code
+  Events:
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: preprocess_options at parse-options.c:738:4
   Occurrences: 1
 
 Unknown
-  Coordinates: Jump to external code
+  Events:
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    RF: mem_pool_init at mem-pool.c:65:1
   Occurrences: 16
 
 Unknown
-  Coordinates: Jump to external code
+  Events:
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    RF: sigchain_push at sigchain.c:30:1
   Occurrences: 1
 
 Unknown
-  Coordinates: check_signum at sigchain.c:14:1
+  Events:
+    CT: check_signum at sigchain.c:14:1
   Occurrences: 1
 
 Unknown
-  Coordinates: check_signum at sigchain.c:15:14
+  Events:
+    CT: check_signum at sigchain.c:15:14
   Occurrences: 1
 
 Unknown
-  Coordinates: memory_limit_check at wrapper.c:18:1
+  Events:
+    CT: memory_limit_check at wrapper.c:18:1
   Occurrences: 1
 
 Unknown
-  Coordinates: set_die_routine at usage.c:123:1
+  Events:
+    CT: set_die_routine at usage.c:123:1
+    RF: set_die_routine at usage.c:125:1
+    CT: set_error_routine at usage.c:134:16
+    RF: set_error_routine at usage.c:135:1
   Occurrences: 1
 
 Unknown
-  Coordinates: set_die_routine at usage.c:124:14
+  Events:
+    CT: set_die_routine at usage.c:124:14
   Occurrences: 1
 
 Unknown
-  Coordinates: set_error_routine at usage.c:133:1
+  Events:
+    CT: set_error_routine at usage.c:133:1
+    RF: set_error_routine at usage.c:135:1
+    CT: set_warn_routine at usage.c:144:15
+    RF: set_warn_routine at usage.c:145:1
   Occurrences: 1
 
 Unknown
-  Coordinates: st_mult at git-compat-util.h:991:1
+  Events:
+    CT: st_mult at git-compat-util.h:991:1
+    CT: Jump to external code
   Occurrences: 1
 
 Unknown
-  Coordinates: st_mult at git-compat-util.h:992:5
+  Events:
+    CT: st_mult at git-compat-util.h:992:5
+    RF: st_mult at git-compat-util.h:996:1
+    CF: set_cloexec at run-command.c:537:3
+    CT: Jump to external code
+    CF: git_atexit at run-command.c:1098:2
   Occurrences: 1
 
 Unknown
-  Coordinates: xmalloc at wrapper.c:71:1
+  Events:
+    CT: xmalloc at wrapper.c:71:1
+    CF: xmalloc at wrapper.c:72:9
+    CT: do_xmalloc at wrapper.c:46:1
+    CF: do_xmalloc at wrapper.c:49:6
+    CT: memory_limit_check at wrapper.c:18:1
+    RF: memory_limit_check at wrapper.c:35:1
+    CF: do_xmalloc at wrapper.c:51:8
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    RF: do_xmalloc at wrapper.c:68:1
+    RF: xmalloc at wrapper.c:73:1
+    CT: git_atexit at run-command.c:1097:1
   Occurrences: 1
 
 Unknown
-  Coordinates: xrealloc at wrapper.c:127:1
+  Events:
+    CT: xrealloc at wrapper.c:127:1
   Occurrences: 1
 
 Unknown
-  Coordinates: Jump to external code
+  Events:
+    RF: Jump to external code
   Occurrences: 6
 
 Unknown
-  Coordinates: Jump to external code
+  Events:
+    RF: Jump to external code
+    CF: sigchain_push at sigchain.c:24:2
+    CT: xrealloc at wrapper.c:127:1
+    CF: xrealloc at wrapper.c:135:2
+    CT: memory_limit_check at wrapper.c:18:1
+    RF: memory_limit_check at wrapper.c:35:1
+    CF: xrealloc at wrapper.c:136:8
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    RF: xrealloc at wrapper.c:140:1
+    CF: start_command at run-command.c:837:3
+    CT: Jump to external code
+    CF: sigchain_push at sigchain.c:25:17
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    RF: sigchain_push at sigchain.c:30:1
   Occurrences: 1
 
 Unknown
-  Coordinates: Jump to external code
+  Events:
+    RF: Jump to external code
+    CF: start_command at run-command.c:768:17
+    CT: Jump to external code
   Occurrences: 1
 
 Unknown
-  Coordinates: Jump to external code
+  Events:
+    RF: Jump to external code
+    CF: start_command at run-command.c:824:8
+    CT: Jump to external code
   Occurrences: 1
 
 Unknown
-  Coordinates: Jump to external code
+  Events:
+    RF: Jump to external code
+    CF: start_command at run-command.c:824:8
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    CT: st_mult at git-compat-util.h:992:5
   Occurrences: 1
 
 Unknown
-  Coordinates: Jump to external code
+  Events:
+    RF: Jump to external code
+    CF: start_command at run-command.c:865:6
+    CT: xread at wrapper.c:225:1
   Occurrences: 1
 
 Unknown
-  Coordinates: Jump to external code
+  Events:
+    RF: Jump to external code
+    RF: sigchain_push at sigchain.c:30:1
+    CF: sigchain_push_common at sigchain.c:48:2
+    CT: sigchain_push at sigchain.c:20:1
+    CF: sigchain_push at sigchain.c:22:2
+    CT: check_signum at sigchain.c:14:1
+    CF: start_command at run-command.c:837:3
+    CT: Jump to external code
+    RF: check_signum at sigchain.c:17:1
+    CF: sigchain_push at sigchain.c:24:2
+    CT: st_mult at git-compat-util.h:991:1
+    RF: st_mult at git-compat-util.h:996:1
   Occurrences: 1
 
 Unknown
-  Coordinates: atfork_parent at run-command.c:530:1
+  Events:
+    RF: atfork_parent at run-command.c:530:1
   Occurrences: 4
 
 Unknown
-  Coordinates: atfork_parent at run-command.c:530:1
+  Events:
+    RF: atfork_parent at run-command.c:530:1
+    CF: start_command at run-command.c:775:3
+    CT: set_die_routine at usage.c:123:1
   Occurrences: 1
 
 Unknown
-  Coordinates: atfork_parent at run-command.c:530:1
+  Events:
+    RF: atfork_parent at run-command.c:530:1
+    CF: start_command at run-command.c:776:3
+    CT: set_error_routine at usage.c:134:16
+    RF: set_error_routine at usage.c:135:1
   Occurrences: 2
 
 Unknown
-  Coordinates: atfork_parent at run-command.c:530:1
+  Events:
+    RF: atfork_parent at run-command.c:530:1
+    CF: start_command at run-command.c:864:2
+    CT: Jump to external code
   Occurrences: 1
 
 Unknown
-  Coordinates: atfork_parent at run-command.c:530:1
+  Events:
+    RF: atfork_parent at run-command.c:530:1
+    CT: External code
+    RF: Jump to external code
+    CF: start_command at run-command.c:865:6
+    CT: xread at wrapper.c:225:1
+    CF: xread at wrapper.c:230:8
+    CT: Jump to external code
   Occurrences: 1
 
 Unknown
-  Coordinates: check_signum at sigchain.c:15:5
+  Events:
+    RF: check_signum at sigchain.c:15:5
   Occurrences: 3
 
 Unknown
-  Coordinates: check_signum at sigchain.c:17:1
+  Events:
+    RF: check_signum at sigchain.c:17:1
   Occurrences: 1
 
 Unknown
-  Coordinates: check_signum at sigchain.c:17:1
+  Events:
+    RF: check_signum at sigchain.c:17:1
+    CF: sigchain_push at sigchain.c:24:2
+    CT: st_mult at git-compat-util.h:992:5
   Occurrences: 1
 
 Unknown
-  Coordinates: check_signum at sigchain.c:17:1
+  Events:
+    RF: check_signum at sigchain.c:17:1
+    CF: start_command at run-command.c:824:8
+    CT: Jump to external code
+    RF: check_signum at sigchain.c:15:5
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: start_command at run-command.c:824:8
+    CT: Jump to external code
   Occurrences: 1
 
 Unknown
-  Coordinates: check_signum at sigchain.c:17:1
+  Events:
+    RF: check_signum at sigchain.c:17:1
+    CF: start_command at run-command.c:828:7
+    RF: check_signum at sigchain.c:15:5
+    CT: Jump to external code
   Occurrences: 1
 
 Unknown
-  Coordinates: check_signum at sigchain.c:17:1
+  Events:
+    RF: check_signum at sigchain.c:17:1
+    CT: Jump to external code
+    RF: check_signum at sigchain.c:15:5
   Occurrences: 1
 
 Unknown
-  Coordinates: check_signum at sigchain.c:17:1
+  Events:
+    RF: check_signum at sigchain.c:17:1
+    RF: Jump to external code
+    CF: start_command at run-command.c:824:8
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    RF: check_signum at sigchain.c:15:5
+    CF: start_command at run-command.c:824:8
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: start_command at run-command.c:824:8
   Occurrences: 1
 
 Unknown
-  Coordinates: check_signum at sigchain.c:17:1
+  Events:
+    RF: check_signum at sigchain.c:17:1
+    RF: Jump to external code
+    RF: check_signum at sigchain.c:15:5
   Occurrences: 1
 
 Unknown
-  Coordinates: cmit_fmt_is_mail at pretty.h:67:1
+  Events:
+    RF: cmit_fmt_is_mail at pretty.h:67:1
+    CF: show_log at log-tree.c:831:6
+    CT: cmit_fmt_is_mail at pretty.h:65:1
   Occurrences: 3
 
 Unknown
-  Coordinates: do_xmalloc at wrapper.c:68:1
+  Events:
+    RF: do_xmalloc at wrapper.c:68:1
   Occurrences: 1
 
 Unknown
-  Coordinates: do_xmalloc at wrapper.c:68:1
+  Events:
+    RF: do_xmalloc at wrapper.c:68:1
+    RF: xmalloc at wrapper.c:73:1
   Occurrences: 1
 
 Unknown
-  Coordinates: do_xmalloc at wrapper.c:68:1
+  Events:
+    RF: do_xmalloc at wrapper.c:68:1
+    RF: xmalloc at wrapper.c:73:1
+    CF: start_command at run-command.c:777:3
+    CT: set_warn_routine at usage.c:143:1
+    RF: set_warn_routine at usage.c:145:1
+    CF: start_command at run-command.c:779:3
+    CT: Jump to external code
   Occurrences: 1
 
 Unknown
-  Coordinates: git_is_dir_sep at git-compat-util.h:449:1
+  Events:
+    RF: git_is_dir_sep at git-compat-util.h:449:1
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:1
   Occurrences: 2028
 
 Unknown
-  Coordinates: git_is_dir_sep at git-compat-util.h:449:1
+  Events:
+    RF: git_is_dir_sep at git-compat-util.h:449:1
+    CF: is_dir_file at path.c:85:9
+    CT: git_is_dir_sep at git-compat-util.h:447:1
   Occurrences: 11
 
 Unknown
-  Coordinates: git_is_dir_sep at git-compat-util.h:449:1
+  Events:
+    RF: git_is_dir_sep at git-compat-util.h:449:1
+    CF: normalize_path_copy_len at path.c:1177:7
+    CT: git_is_dir_sep at git-compat-util.h:447:1
   Occurrences: 570
 
 Unknown
-  Coordinates: git_is_dir_sep at git-compat-util.h:449:1
+  Events:
+    RF: git_is_dir_sep at git-compat-util.h:449:1
+    CF: normalize_path_copy_len at path.c:1177:7
+    CT: git_is_dir_sep at git-compat-util.h:447:1
+    RF: git_is_dir_sep at git-compat-util.h:449:1
+    CF: normalize_path_copy_len at path.c:1179:11
+    CT: git_is_dir_sep at git-compat-util.h:447:1
   Occurrences: 502
 
 Unknown
-  Coordinates: git_is_dir_sep at git-compat-util.h:449:1
+  Events:
+    RF: git_is_dir_sep at git-compat-util.h:449:1
+    CF: normalize_path_copy_len at path.c:1179:11
+    CT: git_is_dir_sep at git-compat-util.h:447:1
   Occurrences: 513
 
 Unknown
-  Coordinates: has_non_ascii at precompose_utf8.c:37:1
+  Events:
+    RF: has_non_ascii at precompose_utf8.c:37:1
+    CF: precompose_utf8_readdir at precompose_utf8.c:175:4
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: precompose_utf8_readdir at precompose_utf8.c:178:3
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    RF: precompose_utf8_readdir at precompose_utf8.c:182:1
+    CF: readdir_skip_dot_and_dotdot at dir.c:61:8
+    CT: is_dot_or_dotdot at dir.h:457:25
+    RF: is_dot_or_dotdot at dir.h:460:1
+    RF: readdir_skip_dot_and_dotdot at dir.c:65:1
+    RF: read_cached_dir at dir.c:2478:1
+    CF: read_directory_recursive at dir.c:2572:11
+    CT: treat_path at dir.c:2282:1
+    CF: treat_path at dir.c:2288:6
+    CT: is_dot_or_dotdot at dir.h:457:25
+    RF: is_dot_or_dotdot at dir.h:460:1
+    CF: treat_path at dir.c:2288:41
+    CT: fspathcmp at dir.c:77:1
+    CF: fspathcmp at dir.c:78:23
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    RF: fspathcmp at dir.c:79:1
+    RF: treat_path at dir.c:2361:1
+    CF: read_directory_recursive at dir.c:2632:3
+    CT: add_path_to_appropriate_result_list at dir.c:2502:1
+    RF: add_path_to_appropriate_result_list at dir.c:2526:1
+    CF: read_directory_recursive at dir.c:2570:10
+    CT: read_cached_dir at dir.c:2447:1
+    CF: read_cached_dir at dir.c:2451:8
+    CT: readdir_skip_dot_and_dotdot at dir.c:57:1
+    CF: readdir_skip_dot_and_dotdot at dir.c:60:14
+    CT: precompose_utf8_readdir at precompose_utf8.c:127:1
+    CF: precompose_utf8_readdir at precompose_utf8.c:129:8
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: precompose_utf8_readdir at precompose_utf8.c:131:21
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: precompose_utf8_readdir at precompose_utf8.c:134:19
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: precompose_utf8_readdir at precompose_utf8.c:147:37
+    CT: has_non_ascii at precompose_utf8.c:23:5
   Occurrences: 1
 
 Unknown
-  Coordinates: memory_limit_check at wrapper.c:35:1
+  Events:
+    RF: memory_limit_check at wrapper.c:35:1
   Occurrences: 4
 
 Unknown
-  Coordinates: memory_limit_check at wrapper.c:35:1
+  Events:
+    RF: memory_limit_check at wrapper.c:35:1
+    CF: xrealloc at wrapper.c:136:8
+    CT: Jump to external code
   Occurrences: 1
 
 Unknown
-  Coordinates: memory_limit_check at wrapper.c:35:1
+  Events:
+    RF: memory_limit_check at wrapper.c:35:1
+    RF: sigchain_push at sigchain.c:30:1
   Occurrences: 1
 
 Unknown
-  Coordinates: set_cloexec at run-command.c:538:1
+  Events:
+    RF: set_cloexec at run-command.c:538:1
   Occurrences: 2
 
 Unknown
-  Coordinates: set_cloexec at run-command.c:538:1
+  Events:
+    RF: set_cloexec at run-command.c:538:1
+    CF: xrealloc at wrapper.c:135:2
+    CT: memory_limit_check at wrapper.c:18:1
   Occurrences: 1
 
 Unknown
-  Coordinates: set_die_routine at usage.c:125:1
+  Events:
+    RF: set_die_routine at usage.c:125:1
   Occurrences: 4
 
 Unknown
-  Coordinates: set_die_routine at usage.c:125:1
+  Events:
+    RF: set_die_routine at usage.c:125:1
+    CF: start_command at run-command.c:776:3
+    CT: set_error_routine at usage.c:134:16
+    RF: set_error_routine at usage.c:135:1
   Occurrences: 1
 
 Unknown
-  Coordinates: set_error_routine at usage.c:135:1
+  Events:
+    RF: set_error_routine at usage.c:135:1
   Occurrences: 4
 
 Unknown
-  Coordinates: set_warn_routine at usage.c:145:1
+  Events:
+    RF: set_warn_routine at usage.c:145:1
   Occurrences: 2
 
 Unknown
-  Coordinates: sigchain_push at sigchain.c:30:1
+  Events:
+    RF: sigchain_push at sigchain.c:30:1
   Occurrences: 1
 
 Unknown
-  Coordinates: sigchain_push at sigchain.c:30:1
+  Events:
+    RF: sigchain_push at sigchain.c:30:1
+    CF: sigchain_push_common at sigchain.c:48:2
+    CT: sigchain_push at sigchain.c:20:1
+    CF: start_command at run-command.c:837:3
+    CT: Jump to external code
+    CF: sigchain_push at sigchain.c:22:2
+    CT: check_signum at sigchain.c:14:1
+    RF: check_signum at sigchain.c:17:1
+    CF: sigchain_push at sigchain.c:24:2
+    CT: st_mult at git-compat-util.h:991:1
+    RF: st_mult at git-compat-util.h:996:1
+    CF: sigchain_push at sigchain.c:24:2
+    CT: xrealloc at wrapper.c:127:1
+    CF: xrealloc at wrapper.c:135:2
+    CT: memory_limit_check at wrapper.c:18:1
   Occurrences: 1
 
 Unknown
-  Coordinates: st_mult at git-compat-util.h:996:1
+  Events:
+    RF: st_mult at git-compat-util.h:996:1
   Occurrences: 8
 
 Unknown
-  Coordinates: st_mult at git-compat-util.h:996:1
+  Events:
+    RF: st_mult at git-compat-util.h:996:1
+    CF: Jump to external code
+    CT: External code
   Occurrences: 1
 
 Unknown
-  Coordinates: st_mult at git-compat-util.h:996:1
+  Events:
+    RF: st_mult at git-compat-util.h:996:1
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
   Occurrences: 1
 
 Unknown
-  Coordinates: st_mult at git-compat-util.h:996:1
+  Events:
+    RF: st_mult at git-compat-util.h:996:1
+    RF: memory_limit_check at wrapper.c:35:1
   Occurrences: 1
 
 Unknown
-  Coordinates: valid_remote at remote.c:29:1
+  Events:
+    RF: valid_remote at remote.c:29:1
+    CF: remotes_remote_get_1 at remote.c:680:8
+    CT: valid_remote at remote.c:27:1
   Occurrences: 1
 
 Unknown
-  Coordinates: valid_remote at remote.c:29:1
+  Events:
+    RF: valid_remote at remote.c:29:1
+    CF: remotes_remote_get_1 at remote.c:685:7
+    CT: valid_remote at remote.c:27:1
   Occurrences: 1
 
 Unknown
-  Coordinates: xmalloc at wrapper.c:73:1
+  Events:
+    RF: xmalloc at wrapper.c:73:1
   Occurrences: 1
 
 Unknown
-  Coordinates: xrealloc at wrapper.c:140:1
+  Events:
+    RF: xrealloc at wrapper.c:140:1
   Occurrences: 6
 
 ## Divergences with unique coordinates by type
