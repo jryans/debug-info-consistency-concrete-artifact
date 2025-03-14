@@ -1,0 +1,204 @@
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: add at worktree.c:651:7
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: add_pattern_list at dir.c:1189:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: child_process_init at run-command.c:18:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: clear_pattern_list at dir.c:931:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: cmd_rev_parse at rev-parse.c:1038:9
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: config_store_data_clear at config.c:2871:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+CF: config_store_data_clear at config.c:2871:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: get_oid_with_context_1 at object-name.c:1916:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+CF: get_oid_with_context_1 at object-name.c:1916:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: git_deflate_init at zlib.c:162:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: git_hash_sha1_final_oid at object-file.c:107:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+CF: git_hash_sha1_final_oid at object-file.c:107:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: hashmap_clear_ at hashmap.c:209:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+CF: hashmap_clear_ at hashmap.c:209:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: hashmap_init at hashmap.c:158:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: init_checkout_metadata at convert.c:2002:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: init_display_notes at notes.c:1054:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: init_ref_exclusions at revision.c:1540:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: init_repository_format at setup.c:712:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: load_multi_pack_index at midx.c:180:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: oidclr at hash.h:302:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: oidtree_insert at oidtree.c:46:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: open_cached_dir at dir.c:2429:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: packet_reader_init at pkt-line.c:576:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: parse_pathspec at pathspec.c:563:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: parse_ref_filter_atom at ref-filter.c:738:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: parsed_object_pool_new at object.c:503:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: preprocess_options at parse-options.c:738:4
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+CF: raw_object_store_new at object.c:523:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: refspec_item_init at refspec.c:162:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: remote_state_new at remote.c:2746:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: set_cloexec at run-command.c:537:3
+CT: Jump to external code
+CF: setup_traverse_info at tree-walk.c:199:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: sigchain_push at sigchain.c:25:17
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+CF: split_ident_line at ident.c:279:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: start_command at run-command.c:768:17
+CT: Jump to external code
+CF: start_command at run-command.c:779:3
+CT: Jump to external code
+CF: start_command at run-command.c:824:8
+CT: Jump to external code
+CF: start_command at run-command.c:824:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: strbuf_init at strbuf.c:57:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: unpack_loose_header at object-file.c:1263:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: unpack_trees at unpack-trees.c:1904:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: url_is_local_not_ssh at connect.c:645:22
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: xread at wrapper.c:230:8
+CT: Jump to external code
+CF: xrealloc at wrapper.c:136:8
+CT: Jump to external code

@@ -1,0 +1,31 @@
+CF: git_attr_internal at attr.c:216:2
+CT: hashmap_lock at attr.c:42:1
+RF: hashmap_lock at attr.c:44:1
+CF: string_list_init_dup at string-list.c:13:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: strvec_init at strvec.c:10:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: git_is_dir_sep at git-compat-util.h:449:1
+CF: get_next_component at abspath.c:43:29
+CT: git_is_dir_sep at git-compat-util.h:447:1
+RF: git_is_dir_sep at git-compat-util.h:449:1
+CF: is_dir_file at path.c:85:9
+CT: git_is_dir_sep at git-compat-util.h:447:1
+RF: git_is_dir_sep at git-compat-util.h:449:1
+CF: normalize_path_copy_len at path.c:1177:7
+CT: git_is_dir_sep at git-compat-util.h:447:1
+RF: git_is_dir_sep at git-compat-util.h:449:1
+CF: normalize_path_copy_len at path.c:1177:7
+CT: git_is_dir_sep at git-compat-util.h:447:1
+RF: git_is_dir_sep at git-compat-util.h:449:1
+CF: normalize_path_copy_len at path.c:1179:11
+CT: git_is_dir_sep at git-compat-util.h:447:1
+RF: git_is_dir_sep at git-compat-util.h:449:1
+CF: normalize_path_copy_len at path.c:1179:11
+CT: git_is_dir_sep at git-compat-util.h:447:1

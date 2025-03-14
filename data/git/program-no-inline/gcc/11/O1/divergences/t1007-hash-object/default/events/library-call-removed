@@ -1,0 +1,72 @@
+CF: config_store_data_clear at config.c:2871:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+CF: config_store_data_clear at config.c:2871:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: git_deflate_init at zlib.c:162:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: git_hash_sha1_final_oid at object-file.c:107:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+CF: git_hash_sha1_final_oid at object-file.c:107:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: hashmap_clear_ at hashmap.c:209:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+CF: hashmap_clear_ at hashmap.c:209:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: hashmap_init at hashmap.c:158:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: init_repository_format at setup.c:712:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: load_multi_pack_index at midx.c:180:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: oidclr at hash.h:302:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: parsed_object_pool_new at object.c:503:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: raw_object_store_new at object.c:523:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: remote_state_new at remote.c:2746:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: strbuf_init at strbuf.c:57:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code

@@ -17,11 +17,36 @@ level="O1"
 version="13"
 echo "## Checking concrete debug consistency of \`${TARGET_NAME}\` (Clang ${version}, ${level})"
 
+# Using `LC_ALL=C` gives ~10x performance boost
+export LC_ALL=C
+
 for test_path in concrete-trace/t*; do
   test=$(basename ${test_path})
+
+  # Collect divergence report and events by type
   mkdir -p divergences/${test}/default
+  mkdir -p divergences/${test}/default/events
   ${CON_COMPARE} \
+    --events-by-type-dir divergences/${test}/default/events \
     ../O0/concrete-trace/${test}/default/trace \
     concrete-trace/${test}/default/trace \
     > divergences/${test}/default/divergences.md
+
+  # Count unique divergence lines by type
+  mkdir -p divergences/${test}/default/counts
+  for divergence_type_path in divergences/${test}/default/events/*; do
+    divergence_type=$(basename ${divergence_type_path})
+    # These files do not include indentation
+    sort -u divergences/${test}/default/events/${divergence_type} | \
+      wc -l | \
+      awk '{print $1}' \
+      > divergences/${test}/default/counts/${divergence_type}
+  done
+
+  # Count unique lines in before trace overall
+  awk '{$1=$1};1' ../O0/concrete-trace/${test}/default/trace | \
+    sort -u | \
+    wc -l | \
+    awk '{print $1}' \
+    > divergences/${test}/default/counts/before
 done
