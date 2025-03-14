@@ -1,4 +1,5 @@
 import glob
+import os.path
 import warnings
 
 import numpy as np
@@ -43,79 +44,24 @@ def load_data():
   dfs = []
 
   def read_file(file):
-    df = pd.read_table(file)
-    # Clean up column names
-    df.columns = df.columns.str.strip()
+    df = pd.read_table(file, names=["Unique Events"])
     return df
 
   def read_run(dir, variant):
     df = None
-    for file in glob.iglob(f"{dir}/**/consistency.tsv", recursive=True):
-      df = pd.concat([df, read_file(file)])
-
-    # Sort by name to aid matching across datasets
-    df = df.sort_values("Name", ignore_index=True)
-    # Summarise across inlined call sites with arithmetic mean
-    # df = df.groupby("Name", as_index=False).mean(numeric_only=True)
-
+    for test_path in glob.iglob(f"{dir}/divergences/*"):
+      test_name = os.path.basename(test_path)
+      for count_file in glob.iglob(f"{test_path}/default/counts/*"):
+        df_segment = read_file(count_file)
+        df_segment["Test"] = test_name
+        df_divergence_type = os.path.basename(count_file)
+        df_segment["Divergence Type"] = df_divergence_type
+        df = pd.concat([df, df_segment])
     df.variant = variant
     dfs.append(df)
 
-  read_run("clang/13/O0-mem2reg", ("Clang", "13", "O0-mem2reg"))
   read_run("clang/13/O1", ("Clang", "13", "O1"))
-
-  # Check names present in each compilation for differences
-  print("# Names")
-  common_names = set(dfs[0]["Name"])
-  for df in dfs:
-    common_names = common_names & set(df["Name"])
-  print(f"Common names: {len(common_names)}")
-  all_names = set()
-  for df in dfs:
-    all_names = all_names | set(df["Name"])
-  all_names_df = pd.DataFrame({ "Name": list(all_names) })
-  print(f"All names: {len(all_names)}")
-  print()
-
-  def name_diffs(df):
-    print(f"## {df.variant}")
-    missing_all_diff = len(all_names_df[~all_names_df["Name"].isin(df["Name"])])
-    print(f"{missing_all_diff} names from other compilations missing from this compilation")
-    common_diff = len(df[~df["Name"].isin(common_names)])
-    print(f"{common_diff} names missing from one or more other compilations")
-    print()
-
-  for df in dfs:
-    name_diffs(df)
-
-  # def add_missing_rows(df):
-  #   variant = df.variant
-  #   # Create additional dataset with missing rows
-  #   missing_df = all_names_df[~all_names_df["Name"].isin(df["Name"])].copy()
-  #   missing_df["Cov (B)"] = 0
-  #   missing_df["Scope (B)"] = 1
-  #   missing_df["Cov (L)"] = 0
-  #   missing_df["Scope (L)"] = 1
-  #   missing_df["Adj Cov (L)"] = 0
-  #   missing_df["Flt Cov (L)"] = 0
-  #   missing_df["Src Scope (L)"] = 1
-  #   print(f"Adding {len(missing_df)} missing names to {variant}")
-  #   # Append to existing data and resort
-  #   df = pd.concat(
-  #     [
-  #       df,
-  #       missing_df,
-  #     ],
-  #     ignore_index=True,
-  #   )
-  #   assert len(df) == len(all_names_df), "Names still missing"
-  #   df = df.sort_values("Name", ignore_index=True)
-  #   df.variant = variant
-  #   return df
-
-  # # Add any missing rows so that all compilations contain the union of all names
-  # for (i, df) in enumerate(dfs):
-  #   dfs[i] = add_missing_rows(df)
+  read_run("gcc/11/O1", ("GCC", "11", "O1"))
 
   def df_keys(df):
     keys = df.variant
@@ -138,151 +84,35 @@ def load_data():
   return compilations_df
 
 def normalise(df):
-  # Convert boolean columns to assignment counts
-  df["Ref Function Covered"] = df.where(df["Ref Function Covered"], 0)["Reference"]
-  df["Ref Execution Complete"] = df.where(df["Ref Execution Complete"], 0)["Reference"]
-  df["Ref Within Time Limit"] = df.where(df["Ref Within Time Limit"], 0)["Reference"]
-  df["Ref Within Fork Limit"] = df.where(df["Ref Within Fork Limit"], 0)["Reference"]
-  df["Test Function Covered"] = df.where(df["Test Function Covered"], 0)["Test"]
-  df["Test Execution Complete"] = df.where(df["Test Execution Complete"], 0)["Test"]
-  df["Test Within Time Limit"] = df.where(df["Test Within Time Limit"], 0)["Test"]
-  df["Test Within Fork Limit"] = df.where(df["Test Within Fork Limit"], 0)["Test"]
+  df["Norm. Unique Events"] = df["Unique Events"] / df.groupby(["Variant", "Test"])["Unique Events"].transform("max")
 
-  # Normalise assignment count columns
-  df["Matching Value"] = df["Matching Value"] / df["Reference"].replace(0, 1)
-  df["Matching Coords"] = df["Matching Coords"] / df["Reference"].replace(0, 1)
-
-  # Invert negative columns
-  df["Ref Encountered"] = df["Reference"] - df["Ref Not Encountered"]
-  df["Test Encountered"] = df["Test"] - df["Test Not Encountered"]
-
-def variables_with_matching_coords_by_optimisation_level(df):
+def divergences_by_compiler_family(df):
   df = df.copy()
-  df["Order"] = df.sort_values(by="Matching Coords", ascending=False).groupby("Variant").cumcount()
-  g = sns.relplot(
+  df = df[df["Divergence Type"] != "before"]
+  families = df.index.get_level_values("Family")
+  versions = df.index.get_level_values("Version")
+  df["Tool"] = families + " " + versions
+  g = sns.displot(
     df,
-    x="Order",
-    y="Matching Coords",
-    hue="Level",
-    kind="line",
+    x="Tool",
+    weights="Norm. Unique Events",
+    hue="Divergence Type",
+    kind="hist",
+    multiple="stack",
     height=3.5,
   )
   sns.move_legend(
     g,
-    "lower left",
-    bbox_to_anchor=(0.165, 0.155),
+    "center right",
+    bbox_to_anchor=(1, 0.525),
     frameon=True,
     shadow=True,
     title=None,
   )
   g.set(
-    title=f"Variables with source coords matching O0 ({friendly_name})",
-    xlabel="Variable index (sorted by coverage)",
-    xbound=(0, df["Order"].max()),
-    ylabel="Normalised events with matching source coords",
-    ybound=(0, 1.004),
-  )
-
-def variables_with_matching_values_by_optimisation_level(df):
-  df = df.copy()
-  df["Order"] = df.sort_values(by="Matching Value", ascending=False).groupby("Variant").cumcount()
-  g = sns.relplot(
-    df,
-    x="Order",
-    y="Matching Value",
-    hue="Level",
-    kind="line",
-    height=3.5,
-  )
-  sns.move_legend(
-    g,
-    "lower left",
-    bbox_to_anchor=(0.165, 0.155),
-    frameon=True,
-    shadow=True,
-    title=None,
-  )
-  g.set(
-    title=f"Variables with values matching O0 ({friendly_name})",
-    xlabel="Variable index (sorted by coverage)",
-    xbound=(0, df["Order"].max()),
-    ylabel="Normalised events with matching values",
-    ybound=(0, 1.004),
-  )
-
-def reference_status_by_optimisation_level(df):
-  df = df.copy()
-  df = df.drop(columns=["Name"])
-  df = df.groupby(level=[0,1,2,3]).sum()
-  df = df.div(df["Reference"].replace(0, 1), axis="index")
-  # Only need a single row for reference status
-  df = df.head(1)
-  df = df.melt(
-    value_vars=[
-      "Ref Encountered",
-      "Ref Function Covered",
-      "Ref Execution Complete",
-      "Ref Within Time Limit",
-      "Ref Within Fork Limit",
-      "Unused",
-      "Removable",
-      "Unreachable",
-    ],
-    var_name="Status",
-    value_name="Count",
-    ignore_index=False,
-  )
-  # Copy index to column to help `catplot`
-  df["Level"] = df.index.get_level_values("Level")
-  g = sns.catplot(
-    df,
-    x="Level",
-    y="Count",
-    hue="Status",
-    orient="v",
-    kind="bar",
-    height=3.5,
-  )
-  g.set(
-    title=f"Reference status ({friendly_name})",
-    xlabel="Optimisation level",
-    ylabel="Normalised events",
-    ybound=(0, 1.004),
-  )
-
-def test_status_by_optimisation_level(df):
-  df = df.copy()
-  df = df.drop(columns=["Name"])
-  df = df.groupby(level=[0,1,2,3]).sum()
-  df = df.div(df["Test"].replace(0, 1), axis="index")
-  df = df.melt(
-    value_vars=[
-      "Test Encountered",
-      "Test Function Covered",
-      "Test Execution Complete",
-      "Test Within Time Limit",
-      "Test Within Fork Limit",
-      "Test Not in Ref",
-      "Ref Not in Test",
-    ],
-    var_name="Status",
-    value_name="Count",
-    ignore_index=False,
-  )
-  # Copy index to column to help `catplot`
-  df["Level"] = df.index.get_level_values("Level")
-  g = sns.catplot(
-    df,
-    x="Level",
-    y="Count",
-    hue="Status",
-    orient="v",
-    kind="bar",
-    height=3.5,
-  )
-  g.set(
-    title=f"Test status by optimisation level ({friendly_name})",
-    xlabel="Optimisation level",
-    ylabel="Normalised events",
-    ybound=(0, 1.004),
+    title=f"Divergences by tool ({friendly_name})",
+    xlabel="Tool",
+    # xbound=(0, df["Order"].max()),
+    ylabel="Normalised unique trace events",
+    # ybound=(0, 1.004),
   )
