@@ -343,6 +343,14 @@ LibraryCallRemoved
     CT: Jump to external code
     CF: Jump to external code
     CT: External code
+  Occurrences: 22
+
+LibraryCallRemoved
+  Events:
+    CF: config_store_data_clear at config.c:2871:2
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
     RF: Jump to external code
   Occurrences: 14
 
@@ -415,8 +423,24 @@ LibraryCallRemoved
     CT: Jump to external code
     CF: Jump to external code
     CT: External code
+  Occurrences: 5
+
+LibraryCallRemoved
+  Events:
+    CF: git_hash_sha1_final_oid at object-file.c:107:2
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
     RF: Jump to external code
   Occurrences: 2
+
+LibraryCallRemoved
+  Events:
+    CF: hashmap_clear_ at hashmap.c:209:2
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+  Occurrences: 8
 
 LibraryCallRemoved
   Events:
@@ -570,6 +594,14 @@ LibraryCallRemoved
     CT: External code
     RF: Jump to external code
   Occurrences: 18
+
+LibraryCallRemoved
+  Events:
+    CF: setup_git_directory_gently_1 at setup.c:1240:21
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+  Occurrences: 9
 
 LibraryCallRemoved
   Events:
@@ -762,42 +794,6 @@ ProgramCallRemoved
 
 Unknown
   Events:
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: config_store_data_clear at config.c:2871:2
-  Occurrences: 22
-
-Unknown
-  Events:
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: git_hash_sha1_final_oid at object-file.c:107:2
-  Occurrences: 5
-
-Unknown
-  Events:
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: hashmap_clear_ at hashmap.c:209:2
-  Occurrences: 8
-
-Unknown
-  Events:
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: setup_git_directory_gently_1 at setup.c:1240:21
-  Occurrences: 9
-
-Unknown
-  Events:
     CT: container_of_or_null_offset at git-compat-util.h:1580:0
     RF: container_of_or_null_offset at git-compat-util.h:1581:2
     CF: all_attrs_init at attr.c:155:3
@@ -812,13 +808,13 @@ CoordinatesChanged
   Unique divergence coordinates: 20
 
 LibraryCallRemoved
-  Unique divergence coordinates: 40
+  Unique divergence coordinates: 44
 
 ProgramCallRemoved
   Unique divergence coordinates: 18
 
 Unknown
-  Unique divergence coordinates: 5
+  Unique divergence coordinates: 1
 
 ## Summary
 

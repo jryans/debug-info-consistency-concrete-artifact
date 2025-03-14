@@ -2330,8 +2330,24 @@ LibraryCallRemoved
     CT: Jump to external code
     CF: Jump to external code
     CT: External code
+  Occurrences: 183
+
+LibraryCallRemoved
+  Events:
+    CF: config_store_data_clear at config.c:2871:2
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
     RF: Jump to external code
   Occurrences: 152
+
+LibraryCallRemoved
+  Events:
+    CF: get_oid_with_context_1 at object-name.c:1916:2
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+  Occurrences: 6
 
 LibraryCallRemoved
   Events:
@@ -2357,8 +2373,24 @@ LibraryCallRemoved
     CT: Jump to external code
     CF: Jump to external code
     CT: External code
+  Occurrences: 23
+
+LibraryCallRemoved
+  Events:
+    CF: git_hash_sha1_final_oid at object-file.c:107:2
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
     RF: Jump to external code
   Occurrences: 20
+
+LibraryCallRemoved
+  Events:
+    CF: hashmap_clear_ at hashmap.c:209:2
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+  Occurrences: 73
 
 LibraryCallRemoved
   Events:
@@ -2485,6 +2517,14 @@ LibraryCallRemoved
     CT: External code
     RF: Jump to external code
   Occurrences: 153
+
+LibraryCallRemoved
+  Events:
+    CF: preprocess_options at parse-options.c:738:4
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+  Occurrences: 1
 
 LibraryCallRemoved
   Events:
@@ -4216,51 +4256,6 @@ Unknown
     CF: Jump to external code
     CT: External code
     RF: Jump to external code
-    CF: config_store_data_clear at config.c:2871:2
-  Occurrences: 183
-
-Unknown
-  Events:
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: get_oid_with_context_1 at object-name.c:1916:2
-  Occurrences: 6
-
-Unknown
-  Events:
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: git_hash_sha1_final_oid at object-file.c:107:2
-  Occurrences: 23
-
-Unknown
-  Events:
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: hashmap_clear_ at hashmap.c:209:2
-  Occurrences: 73
-
-Unknown
-  Events:
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: preprocess_options at parse-options.c:738:4
-  Occurrences: 1
-
-Unknown
-  Events:
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
     RF: mem_pool_init at mem-pool.c:65:1
   Occurrences: 16
 
@@ -4792,13 +4787,13 @@ CoordinatesChanged
   Unique divergence coordinates: 378
 
 LibraryCallRemoved
-  Unique divergence coordinates: 41
+  Unique divergence coordinates: 46
 
 ProgramCallRemoved
   Unique divergence coordinates: 24
 
 Unknown
-  Unique divergence coordinates: 157
+  Unique divergence coordinates: 152
 
 ## Summary
 

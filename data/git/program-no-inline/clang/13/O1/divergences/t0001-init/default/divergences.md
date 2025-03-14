@@ -1184,6 +1184,14 @@ LibraryCallRemoved
     CT: Jump to external code
     CF: Jump to external code
     CT: External code
+  Occurrences: 3
+
+LibraryCallRemoved
+  Events:
+    CF: cmd_add at add.c:502:19
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
     RF: Jump to external code
   Occurrences: 1
 
@@ -1346,6 +1354,14 @@ LibraryCallRemoved
     CT: Jump to external code
     CF: Jump to external code
     CT: External code
+  Occurrences: 170
+
+LibraryCallRemoved
+  Events:
+    CF: config_store_data_clear at config.c:2871:2
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
     RF: Jump to external code
   Occurrences: 165
 
@@ -1420,6 +1436,14 @@ LibraryCallRemoved
     CT: External code
     RF: Jump to external code
   Occurrences: 11
+
+LibraryCallRemoved
+  Events:
+    CF: get_oid_with_context_1 at object-name.c:1916:2
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+  Occurrences: 6
 
 LibraryCallRemoved
   Events:
@@ -1521,6 +1545,14 @@ LibraryCallRemoved
     CT: Jump to external code
     CF: Jump to external code
     CT: External code
+  Occurrences: 15
+
+LibraryCallRemoved
+  Events:
+    CF: git_hash_sha1_final_oid at object-file.c:107:2
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
     RF: Jump to external code
   Occurrences: 28
 
@@ -1541,6 +1573,14 @@ LibraryCallRemoved
     CT: External code
     RF: Jump to external code
   Occurrences: 1
+
+LibraryCallRemoved
+  Events:
+    CF: hashmap_clear_ at hashmap.c:209:2
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+  Occurrences: 60
 
 LibraryCallRemoved
   Events:
@@ -2034,6 +2074,14 @@ LibraryCallRemoved
     CT: Jump to external code
     CF: Jump to external code
     CT: External code
+  Occurrences: 3
+
+LibraryCallRemoved
+  Events:
+    CF: rest_is_empty at sequencer.c:1114:7
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
     RF: Jump to external code
   Occurrences: 1
 
@@ -2117,6 +2165,14 @@ LibraryCallRemoved
     CT: External code
     RF: Jump to external code
   Occurrences: 81
+
+LibraryCallRemoved
+  Events:
+    CF: setup_git_directory_gently_1 at setup.c:1240:21
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+  Occurrences: 35
 
 LibraryCallRemoved
   Events:
@@ -3858,69 +3914,6 @@ Unknown
     CF: Jump to external code
     CT: External code
     RF: Jump to external code
-    CF: cmd_add at add.c:502:19
-  Occurrences: 3
-
-Unknown
-  Events:
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: config_store_data_clear at config.c:2871:2
-  Occurrences: 170
-
-Unknown
-  Events:
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: get_oid_with_context_1 at object-name.c:1916:2
-  Occurrences: 6
-
-Unknown
-  Events:
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: git_hash_sha1_final_oid at object-file.c:107:2
-  Occurrences: 15
-
-Unknown
-  Events:
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: hashmap_clear_ at hashmap.c:209:2
-  Occurrences: 60
-
-Unknown
-  Events:
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: rest_is_empty at sequencer.c:1114:7
-  Occurrences: 3
-
-Unknown
-  Events:
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: setup_git_directory_gently_1 at setup.c:1240:21
-  Occurrences: 35
-
-Unknown
-  Events:
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
     CF: traverse_trees at tree-walk.c:468:19
   Occurrences: 1
 
@@ -4567,13 +4560,13 @@ CoordinatesChanged
   Unique divergence coordinates: 69
 
 LibraryCallRemoved
-  Unique divergence coordinates: 170
+  Unique divergence coordinates: 177
 
 ProgramCallRemoved
   Unique divergence coordinates: 35
 
 Unknown
-  Unique divergence coordinates: 125
+  Unique divergence coordinates: 118
 
 ## Summary
 

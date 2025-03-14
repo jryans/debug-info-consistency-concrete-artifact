@@ -832,6 +832,14 @@ LibraryCallRemoved
     CT: Jump to external code
     CF: Jump to external code
     CT: External code
+  Occurrences: 20
+
+LibraryCallRemoved
+  Events:
+    CF: config_store_data_clear at config.c:2871:2
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
     RF: Jump to external code
   Occurrences: 16
 
@@ -850,8 +858,24 @@ LibraryCallRemoved
     CT: Jump to external code
     CF: Jump to external code
     CT: External code
+  Occurrences: 4
+
+LibraryCallRemoved
+  Events:
+    CF: git_hash_sha1_final_oid at object-file.c:107:2
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
     RF: Jump to external code
   Occurrences: 3
+
+LibraryCallRemoved
+  Events:
+    CF: hashmap_clear_ at hashmap.c:209:2
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+  Occurrences: 6
 
 LibraryCallRemoved
   Events:
@@ -1031,33 +1055,6 @@ Unknown
 
 Unknown
   Events:
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: config_store_data_clear at config.c:2871:2
-  Occurrences: 20
-
-Unknown
-  Events:
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: git_hash_sha1_final_oid at object-file.c:107:2
-  Occurrences: 4
-
-Unknown
-  Events:
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: hashmap_clear_ at hashmap.c:209:2
-  Occurrences: 6
-
-Unknown
-  Events:
     RF: git_is_dir_sep at git-compat-util.h:449:1
     CF: get_next_component at abspath.c:43:29
     CT: git_is_dir_sep at git-compat-util.h:447:1
@@ -1100,13 +1097,13 @@ CoordinatesChanged
   Unique divergence coordinates: 137
 
 LibraryCallRemoved
-  Unique divergence coordinates: 12
+  Unique divergence coordinates: 15
 
 ProgramCallRemoved
   Unique divergence coordinates: 10
 
 Unknown
-  Unique divergence coordinates: 11
+  Unique divergence coordinates: 8
 
 ## Summary
 
