@@ -49,14 +49,11 @@ def load_data():
 
   def read_run(dir, variant):
     df = None
-    for test_path in glob.iglob(f"{dir}/divergences/*"):
-      test_name = os.path.basename(test_path)
-      for count_file in glob.iglob(f"{test_path}/default/counts/*"):
-        df_segment = read_file(count_file)
-        df_segment["Test"] = test_name
-        df_divergence_type = os.path.basename(count_file)
-        df_segment["Divergence Type"] = df_divergence_type
-        df = pd.concat([df, df_segment])
+    for count_file in glob.iglob(f"{dir}/divergences/summary/default/counts/*"):
+      df_segment = read_file(count_file)
+      df_divergence_type = os.path.basename(count_file)
+      df_segment["Divergence Type"] = df_divergence_type
+      df = pd.concat([df, df_segment])
     df.variant = variant
     dfs.append(df)
 
@@ -84,7 +81,7 @@ def load_data():
   return compilations_df
 
 def normalise(df):
-  df["Norm. Unique Events"] = df["Unique Events"] / df.groupby(["Variant", "Test"])["Unique Events"].transform("max")
+  df["Norm. Unique Events"] = df["Unique Events"] / df.groupby(["Variant"])["Unique Events"].transform("max")
 
 def divergences_by_compiler_family(df):
   df = df.copy()
