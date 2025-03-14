@@ -107,7 +107,7 @@ def divergences_by_compiler_family(df):
     title=None,
   )
   g.set(
-    title=f"Divergences by tool ({friendly_name})",
+    title=f"Divergences between O0 to O1 by tool ({friendly_name})",
     xlabel="Tool",
     # xbound=(0, df["Order"].max()),
     ylabel="Normalised unique trace events",
