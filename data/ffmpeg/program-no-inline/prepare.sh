@@ -16,7 +16,7 @@ echo "## Preparing \`ffmpeg\`"
 # Disable documentation
 # Disable platform-specific features
 # Disable debugging and optimisation defaults
-# TODO: Disable threads...? (`ffmpeg` tool requires them though...)
+# Disable threads (Must use a commit before `760ce4bc0bd11f74f0851c0a662dd5cae888df83`)
 ./configure \
   --disable-ffplay \
   --disable-ffprobe \
@@ -32,7 +32,8 @@ echo "## Preparing \`ffmpeg\`"
   --disable-asm \
   --disable-debug \
   --disable-optimizations \
-  --disable-stripping
+  --disable-stripping \
+  --disable-pthreads
 
 # Disable dependency tracking
 replace 'DEPFLAGS=.*$' 'DEPFLAGS=' ffbuild/config.mak
