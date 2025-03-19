@@ -16,6 +16,7 @@ echo "## Preparing \`ffmpeg\`"
 # Disable documentation
 # Disable platform-specific features
 # Disable debugging and optimisation defaults
+# TODO: Disable threads...? (`ffmpeg` tool requires them though...)
 ./configure \
   --disable-ffplay \
   --disable-ffprobe \
