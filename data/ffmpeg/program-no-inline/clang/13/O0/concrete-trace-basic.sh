@@ -42,7 +42,8 @@ for execution in ${executions[*]}; do
         ../../../${TARGET_NAME} \
         ${!execution_command} \
         > stdout;
-      rm -f ${HOME}/Downloads/output.mp4
+      rm -f ${HOME}/Downloads/output.mp4;
+      mv trace-* trace
     )
   done
 done
