@@ -1,0 +1,3646 @@
+CF: Jump to external code
+CF: Jump to external code
+CT: External code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: sigchain_push at sigchain.c:24:2
+CT: st_mult at git-compat-util.h:991:0
+CF: start_command at run-command.c:824:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: start_command at run-command.c:824:8
+CT: Jump to external code
+RF: st_mult at git-compat-util.h:995:2
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: start_command at run-command.c:768:17
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: start_command at run-command.c:780:3
+CT: set_cloexec at run-command.c:534:0
+CF: git_atexit at run-command.c:1101:7
+CT: Jump to external code
+CF: set_cloexec at run-command.c:535:14
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: start_command at run-command.c:824:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: memory_limit_check at wrapper.c:35:1
+CF: xrealloc at wrapper.c:136:8
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: set_cloexec at run-command.c:538:1
+CF: start_command at run-command.c:775:3
+CT: set_die_routine at usage.c:123:0
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: sigchain_push at sigchain.c:30:1
+CF: Jump to external code
+RF: Jump to external code
+CF: start_command at run-command.c:824:8
+CF: add at worktree.c:690:24
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: add_path_to_appropriate_result_list at dir.c:2518:3
+CT: dir_add_name at dir.c:1734:0
+CF: dir_add_name at dir.c:1735:6
+CT: index_file_exists at name-hash.c:717:0
+CF: index_file_exists at name-hash.c:719:22
+CT: memihash at hashmap.c:41:0
+RF: memihash at hashmap.c:50:2
+CF: index_file_exists at name-hash.c:721:2
+CT: lazy_init_name_hash at name-hash.c:580:0
+RF: lazy_init_name_hash at name-hash.c:608:1
+CF: index_file_exists at name-hash.c:722:2
+CT: expand_to_path at sparse-index.c:542:0
+RF: expand_to_path at sparse-index.c:605:1
+CF: index_file_exists at name-hash.c:724:7
+CT: hashmap_get_from_hash at hashmap.h:376:0
+CF: hashmap_get_from_hash at hashmap.h:378:2
+CT: hashmap_entry_init at hashmap.h:316:0
+RF: hashmap_entry_init at hashmap.h:319:1
+CF: hashmap_get_from_hash at hashmap.h:379:9
+CT: hashmap_get at hashmap.c:215:0
+CF: hashmap_get at hashmap.c:218:10
+CT: find_entry_ptr at hashmap.c:137:0
+CF: find_entry_ptr at hashmap.c:139:41
+CT: bucket at hashmap.c:106:0
+RF: bucket at hashmap.c:107:2
+RF: find_entry_ptr at hashmap.c:142:2
+RF: hashmap_get at hashmap.c:219:1
+RF: hashmap_get_from_hash at hashmap.h:379:2
+CF: index_file_exists at name-hash.c:724:7
+CT: container_of_or_null_offset at git-compat-util.h:1580:0
+RF: container_of_or_null_offset at git-compat-util.h:1581:2
+RF: index_file_exists at name-hash.c:731:1
+CF: dir_add_name at dir.c:1738:2
+CT: st_mult at git-compat-util.h:991:0
+RF: st_mult at git-compat-util.h:995:2
+CF: dir_add_name at dir.c:1738:2
+CT: xrealloc at wrapper.c:127:0
+CF: xrealloc at wrapper.c:135:2
+CT: memory_limit_check at wrapper.c:18:0
+RF: memory_limit_check at wrapper.c:35:1
+CF: xrealloc at wrapper.c:136:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: xrealloc at wrapper.c:140:1
+CF: dir_add_name at dir.c:1739:35
+CT: dir_entry_new at dir.c:1723:0
+CF: dir_entry_new at dir.c:1726:2
+CT: st_add at git-compat-util.h:981:0
+RF: st_add at git-compat-util.h:985:2
+CF: dir_entry_new at dir.c:1726:2
+CT: st_add at git-compat-util.h:981:0
+RF: st_add at git-compat-util.h:985:2
+CF: dir_entry_new at dir.c:1726:2
+CT: xcalloc at wrapper.c:143:0
+CF: xcalloc at wrapper.c:149:2
+CT: memory_limit_check at wrapper.c:18:0
+RF: memory_limit_check at wrapper.c:35:1
+CF: xcalloc at wrapper.c:150:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: xcalloc at wrapper.c:155:2
+CF: dir_entry_new at dir.c:1726:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: dir_entry_new at dir.c:1728:2
+RF: dir_add_name at dir.c:1740:1
+CF: add_path_to_appropriate_result_list at dir.c:2520:4
+CT: add_untracked at dir.c:2364:0
+RF: add_untracked at dir.c:2370:1
+CF: add_to_trie at path.c:204:3
+CF: make_trie_node at path.c:172:3
+CF: add_to_trie at path.c:204:3
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: add_to_trie at path.c:215:3
+CF: make_trie_node at path.c:172:3
+CF: add_to_trie at path.c:208:22
+CT: xstrndup at wrapper.c:113:0
+CF: xstrndup at wrapper.c:114:12
+RF: make_trie_node at path.c:175:2
+RF: add_to_trie at path.c:239:1
+CF: init_common_trie at path.c:341:3
+CT: add_to_trie at path.c:183:0
+CF: add_to_trie at path.c:203:11
+CT: xmalloc at wrapper.c:71:0
+CF: xmalloc at wrapper.c:72:9
+CT: do_xmalloc at wrapper.c:46:0
+CF: do_xmalloc at wrapper.c:49:6
+CT: memory_limit_check at wrapper.c:18:0
+RF: memory_limit_check at wrapper.c:35:1
+CF: do_xmalloc at wrapper.c:51:8
+CF: add_to_trie at path.c:208:22
+CT: xstrndup at wrapper.c:113:0
+CF: xstrndup at wrapper.c:114:12
+RF: make_trie_node at path.c:175:2
+RF: add_to_trie at path.c:239:1
+CF: init_common_trie at path.c:341:3
+CT: add_to_trie at path.c:183:0
+CF: add_to_trie at path.c:203:11
+CT: xmalloc at wrapper.c:71:0
+CF: xmalloc at wrapper.c:72:9
+CT: do_xmalloc at wrapper.c:46:0
+CF: do_xmalloc at wrapper.c:49:6
+CT: memory_limit_check at wrapper.c:18:0
+RF: memory_limit_check at wrapper.c:35:1
+CF: do_xmalloc at wrapper.c:51:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: do_xmalloc at wrapper.c:68:1
+RF: xmalloc at wrapper.c:0:0
+CF: add_to_trie at path.c:204:3
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: add_to_trie at path.c:208:22
+CT: xstrndup at wrapper.c:113:0
+CF: xstrndup at wrapper.c:114:12
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: xstrndup at wrapper.c:115:9
+CT: xmemdupz at wrapper.c:108:0
+CF: xmemdupz at wrapper.c:109:9
+CT: xmallocz at wrapper.c:92:0
+CF: xmallocz at wrapper.c:93:9
+CT: do_xmallocz at wrapper.c:76:0
+CF: do_xmallocz at wrapper.c:85:8
+CT: do_xmalloc at wrapper.c:46:0
+CF: do_xmalloc at wrapper.c:49:6
+CT: memory_limit_check at wrapper.c:18:0
+RF: memory_limit_check at wrapper.c:35:1
+CF: do_xmalloc at wrapper.c:51:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: do_xmalloc at wrapper.c:68:1
+RF: do_xmallocz at wrapper.c:89:1
+RF: xmallocz at wrapper.c:0:0
+CF: Jump to external code
+CT: External code
+RF: xmemdupz at wrapper.c:0:0
+RF: xstrndup at wrapper.c:0:0
+CF: add_to_trie at path.c:215:3
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: add_to_trie at path.c:220:4
+CT: make_trie_node at path.c:167:0
+CF: make_trie_node at path.c:168:26
+CT: xcalloc at wrapper.c:143:0
+CF: xcalloc at wrapper.c:149:2
+CT: memory_limit_check at wrapper.c:18:0
+RF: memory_limit_check at wrapper.c:35:1
+CF: xcalloc at wrapper.c:150:8
+CF: add_to_trie at path.c:208:22
+CT: xstrndup at wrapper.c:113:0
+CF: xstrndup at wrapper.c:114:12
+RF: make_trie_node at path.c:175:2
+RF: add_to_trie at path.c:239:1
+CF: init_common_trie at path.c:341:3
+CT: add_to_trie at path.c:183:0
+CF: add_to_trie at path.c:230:12
+CT: make_trie_node at path.c:167:0
+CF: make_trie_node at path.c:168:26
+CT: xcalloc at wrapper.c:143:0
+CF: xcalloc at wrapper.c:149:2
+CT: memory_limit_check at wrapper.c:18:0
+RF: memory_limit_check at wrapper.c:35:1
+CF: xcalloc at wrapper.c:150:8
+CF: add_to_trie at path.c:208:22
+CT: xstrndup at wrapper.c:113:0
+CF: xstrndup at wrapper.c:114:12
+RF: xcalloc at wrapper.c:155:2
+CF: make_trie_node at path.c:169:18
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: make_trie_node at path.c:171:24
+CT: xmalloc at wrapper.c:71:0
+CF: xmalloc at wrapper.c:72:9
+CT: do_xmalloc at wrapper.c:46:0
+CF: do_xmalloc at wrapper.c:49:6
+CT: memory_limit_check at wrapper.c:18:0
+RF: memory_limit_check at wrapper.c:35:1
+CF: do_xmalloc at wrapper.c:51:8
+CF: add_to_trie at path.c:220:4
+CT: make_trie_node at path.c:167:0
+CF: make_trie_node at path.c:168:26
+CT: xcalloc at wrapper.c:143:0
+CF: xcalloc at wrapper.c:149:2
+CF: make_trie_node at path.c:171:24
+CT: xmalloc at wrapper.c:71:0
+CF: xmalloc at wrapper.c:72:9
+CT: do_xmalloc at wrapper.c:46:0
+CF: do_xmalloc at wrapper.c:49:6
+CF: add_to_trie at path.c:220:4
+CT: make_trie_node at path.c:167:0
+CF: make_trie_node at path.c:168:26
+CT: xcalloc at wrapper.c:143:0
+CF: xcalloc at wrapper.c:149:2
+CF: xstrndup at wrapper.c:115:9
+CT: xmemdupz at wrapper.c:108:0
+CF: xmemdupz at wrapper.c:109:9
+CT: xmallocz at wrapper.c:92:0
+CF: xmallocz at wrapper.c:93:9
+CT: do_xmallocz at wrapper.c:76:0
+CF: do_xmallocz at wrapper.c:85:8
+CT: do_xmalloc at wrapper.c:46:0
+CF: do_xmalloc at wrapper.c:49:6
+CT: memory_limit_check at wrapper.c:18:0
+RF: memory_limit_check at wrapper.c:35:1
+CF: do_xmalloc at wrapper.c:51:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: do_xmalloc at wrapper.c:68:1
+RF: do_xmallocz at wrapper.c:89:1
+RF: xmallocz at wrapper.c:0:0
+CF: Jump to external code
+CT: External code
+RF: xmemdupz at wrapper.c:0:0
+RF: xstrndup at wrapper.c:0:0
+CF: add_to_trie at path.c:215:3
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: add_to_trie at path.c:220:4
+CT: make_trie_node at path.c:167:0
+CF: make_trie_node at path.c:168:26
+CT: xcalloc at wrapper.c:143:0
+CF: xcalloc at wrapper.c:149:2
+CT: memory_limit_check at wrapper.c:18:0
+RF: memory_limit_check at wrapper.c:35:1
+CF: xcalloc at wrapper.c:150:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: xcalloc at wrapper.c:155:2
+CF: make_trie_node at path.c:169:18
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: make_trie_node at path.c:171:24
+CT: xmalloc at wrapper.c:71:0
+CF: xmalloc at wrapper.c:72:9
+CT: do_xmalloc at wrapper.c:46:0
+CF: do_xmalloc at wrapper.c:49:6
+CF: add_to_trie at path.c:220:4
+CT: make_trie_node at path.c:167:0
+CF: make_trie_node at path.c:168:26
+CT: xcalloc at wrapper.c:143:0
+CF: xcalloc at wrapper.c:149:2
+CT: memory_limit_check at wrapper.c:18:0
+RF: memory_limit_check at wrapper.c:35:1
+CF: xcalloc at wrapper.c:150:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: xcalloc at wrapper.c:155:2
+CF: make_trie_node at path.c:169:18
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: make_trie_node at path.c:171:24
+CT: xmalloc at wrapper.c:71:0
+CF: xmalloc at wrapper.c:72:9
+CT: do_xmalloc at wrapper.c:46:0
+CF: do_xmalloc at wrapper.c:49:6
+CT: memory_limit_check at wrapper.c:18:0
+RF: memory_limit_check at wrapper.c:35:1
+CF: do_xmalloc at wrapper.c:51:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: do_xmalloc at wrapper.c:68:1
+RF: xmalloc at wrapper.c:72:2
+CF: make_trie_node at path.c:172:3
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: make_trie_node at path.c:175:2
+RF: add_to_trie at path.c:239:1
+RF: add_to_trie at path.c:239:1
+CF: init_common_trie at path.c:341:3
+CT: add_to_trie at path.c:183:0
+CF: add_to_trie at path.c:230:12
+CF: xstrndup at wrapper.c:115:9
+CT: xmemdupz at wrapper.c:108:0
+CF: xmemdupz at wrapper.c:109:9
+CT: xmallocz at wrapper.c:92:0
+CF: xmallocz at wrapper.c:93:9
+CT: do_xmallocz at wrapper.c:76:0
+CF: do_xmallocz at wrapper.c:85:8
+CT: do_xmalloc at wrapper.c:46:0
+CF: do_xmalloc at wrapper.c:49:6
+CT: memory_limit_check at wrapper.c:18:0
+RF: memory_limit_check at wrapper.c:35:1
+CF: do_xmalloc at wrapper.c:51:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: do_xmalloc at wrapper.c:68:1
+RF: do_xmallocz at wrapper.c:89:1
+RF: xmallocz at wrapper.c:0:0
+CF: Jump to external code
+CT: External code
+RF: xmemdupz at wrapper.c:0:0
+RF: xstrndup at wrapper.c:0:0
+CF: add_to_trie at path.c:215:3
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: add_to_trie at path.c:220:4
+CF: add_to_trie at path.c:220:4
+CT: make_trie_node at path.c:167:0
+CF: make_trie_node at path.c:168:26
+CT: xcalloc at wrapper.c:143:0
+CF: xcalloc at wrapper.c:149:2
+CT: memory_limit_check at wrapper.c:18:0
+RF: memory_limit_check at wrapper.c:35:1
+CF: xcalloc at wrapper.c:150:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: xcalloc at wrapper.c:155:2
+CF: make_trie_node at path.c:169:18
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: make_trie_node at path.c:171:24
+CT: xmalloc at wrapper.c:71:0
+CF: xmalloc at wrapper.c:72:9
+RF: do_xmalloc at wrapper.c:68:1
+RF: xmalloc at wrapper.c:0:0
+CF: add_to_trie at path.c:204:3
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: add_to_trie at path.c:208:22
+CT: xstrndup at wrapper.c:113:0
+CF: xstrndup at wrapper.c:114:12
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: xstrndup at wrapper.c:115:9
+CT: xmemdupz at wrapper.c:108:0
+CF: xmemdupz at wrapper.c:109:9
+CT: xmallocz at wrapper.c:92:0
+CF: xmallocz at wrapper.c:93:9
+CT: do_xmallocz at wrapper.c:76:0
+CF: do_xmallocz at wrapper.c:85:8
+CF: add_to_trie at path.c:220:4
+CT: make_trie_node at path.c:167:0
+CF: make_trie_node at path.c:168:26
+CT: xcalloc at wrapper.c:143:0
+CF: xcalloc at wrapper.c:149:2
+CT: memory_limit_check at wrapper.c:18:0
+RF: memory_limit_check at wrapper.c:35:1
+CF: xcalloc at wrapper.c:150:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: xcalloc at wrapper.c:155:2
+CF: make_trie_node at path.c:169:18
+RF: make_trie_node at path.c:175:2
+RF: add_to_trie at path.c:239:1
+CF: init_common_trie at path.c:341:3
+CT: add_to_trie at path.c:183:0
+CF: add_to_trie at path.c:203:11
+CT: xmalloc at wrapper.c:71:0
+CF: xmalloc at wrapper.c:72:9
+CT: do_xmalloc at wrapper.c:46:0
+CF: do_xmalloc at wrapper.c:49:6
+CT: memory_limit_check at wrapper.c:18:0
+RF: memory_limit_check at wrapper.c:35:1
+CF: do_xmalloc at wrapper.c:51:8
+CF: add_worktree at worktree.c:520:24
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: all_attrs_init at attr.c:155:3
+CT: container_of_or_null_offset at git-compat-util.h:1580:0
+RF: container_of_or_null_offset at git-compat-util.h:1581:2
+CF: attr_stack_free at attr.c:468:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: attr_stack_free at attr.c:469:1
+CF: Jump to external code
+CT: External code
+RF: attr_stack_free at attr.c:0:0
+CF: base_ref_iterator_free at iterator.c:42:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: base_ref_iterator_free at iterator.c:43:1
+CF: Jump to external code
+CT: External code
+RF: base_ref_iterator_free at iterator.c:0:0
+CF: clear_child_for_cleanup at run-command.c:113:4
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: clear_child_for_cleanup at run-command.c:117:1
+CF: Jump to external code
+CT: External code
+RF: clear_child_for_cleanup at run-command.c:0:0
+CF: cmd_tag at tag.c:495:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: cmd_tag at tag.c:496:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: config_file_fgetc at config.c:97:9
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: config_file_fgetc at config.c:97:2
+CF: Jump to external code
+CT: External code
+RF: config_file_fgetc at config.c:0:0
+CF: config_set_element_cmp at config.c:2365:9
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: config_set_element_cmp at config.c:2365:2
+CF: Jump to external code
+CT: External code
+RF: config_set_element_cmp at config.c:0:0
+CF: copy_templates at init-db.c:101:27
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: copy_templates at init-db.c:113:3
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: copy_templates at init-db.c:154:1
+CF: Jump to external code
+CT: External code
+RF: copy_templates at init-db.c:0:0
+CF: create_directories at entry.c:50:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: create_directories at entry.c:51:1
+CF: Jump to external code
+CT: External code
+RF: create_directories at entry.c:0:0
+CF: date_mode_release at date.c:998:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: date_mode_release at date.c:999:1
+CF: Jump to external code
+CT: External code
+RF: date_mode_release at date.c:0:0
+CF: deactivate_tempfile at tempfile.c:127:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: deactivate_tempfile at tempfile.c:128:1
+CF: Jump to external code
+CT: External code
+RF: deactivate_tempfile at tempfile.c:0:0
+CF: diff_free_ignore_regex at diff.c:6505:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: diff_free_ignore_regex at diff.c:6506:1
+CF: Jump to external code
+CT: External code
+RF: diff_free_ignore_regex at diff.c:0:0
+CF: diff_free_queue at diff.c:5779:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: diff_free_queue at diff.c:5780:1
+CF: Jump to external code
+CT: External code
+RF: diff_free_queue at diff.c:0:0
+CF: discard_cache_entry at read-cache.c:3608:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: discard_cache_entry at read-cache.c:3609:1
+CF: Jump to external code
+CT: External code
+RF: discard_cache_entry at read-cache.c:0:0
+CF: do_xmalloc at wrapper.c:49:6
+CT: memory_limit_check at wrapper.c:18:0
+CF: do_xmalloc at wrapper.c:49:6
+CT: memory_limit_check at wrapper.c:18:0
+RF: memory_limit_check at wrapper.c:35:1
+CF: do_xmalloc at wrapper.c:51:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: do_xmalloc at wrapper.c:68:1
+RF: xmalloc at wrapper.c:72:2
+RF: atfork_parent at run-command.c:530:1
+CF: free_filespec at diff.c:3892:3
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: free_filespec at diff.c:3894:1
+CF: Jump to external code
+CT: External code
+RF: free_filespec at diff.c:0:0
+CF: free_hashfile at csum-file.c:58:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: free_hashfile at csum-file.c:59:1
+CF: Jump to external code
+CT: External code
+RF: free_hashfile at csum-file.c:0:0
+CF: free_preprocessed_options at parse-options.c:769:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: free_preprocessed_options at parse-options.c:770:1
+CF: Jump to external code
+CT: External code
+RF: free_preprocessed_options at parse-options.c:0:0
+CF: free_ref_entry at ref-cache.c:67:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: free_ref_entry at ref-cache.c:68:1
+CF: Jump to external code
+CT: External code
+RF: free_ref_entry at ref-cache.c:0:0
+CF: free_untracked_cache at dir.c:3586:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: free_untracked_cache at dir.c:3587:1
+CF: Jump to external code
+CT: External code
+RF: free_untracked_cache at dir.c:0:0
+CF: free_worktrees at worktree.c:22:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: free_worktrees at worktree.c:23:1
+CF: Jump to external code
+CT: External code
+RF: free_worktrees at worktree.c:0:0
+CF: free_worktrees at worktree.c:22:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: free_worktrees at worktree.c:23:1
+RF: die_if_checked_out at branch.c:832:1
+CF: Jump to external code
+CT: External code
+RF: free_worktrees at worktree.c:0:0
+RF: die_if_checked_out at branch.c:0:0
+CF: free_worktrees at worktree.c:22:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: free_worktrees at worktree.c:23:1
+RF: reject_rebase_or_bisect_branch at branch.c:510:1
+CF: Jump to external code
+CT: External code
+RF: free_worktrees at worktree.c:0:0
+RF: reject_rebase_or_bisect_branch at branch.c:0:0
+CF: free_worktrees at worktree.c:22:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: free_worktrees at worktree.c:23:1
+RF: repair_worktrees at worktree.c:596:1
+CF: Jump to external code
+CT: External code
+RF: free_worktrees at worktree.c:0:0
+RF: repair_worktrees at worktree.c:0:0
+CF: fspathcmp at dir.c:78:23
+CF: Jump to external code
+CT: External code
+RF: fspathcmp at dir.c:0:0
+CF: treat_path at dir.c:2290:2
+CT: strbuf_setlen at strbuf.h:161:0
+RF: strbuf_setlen at strbuf.h:169:1
+CF: treat_path at dir.c:2291:2
+CT: strbuf_addstr at strbuf.h:304:0
+CF: strbuf_addstr at strbuf.h:305:20
+CF: fspathcmp at dir.c:78:23
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: fspathcmp at dir.c:78:2
+CF: Jump to external code
+CT: External code
+RF: fspathcmp at dir.c:0:0
+CF: fspathcmp at dir.c:78:23
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: fspathcmp at dir.c:78:2
+CF: treat_path at dir.c:2290:2
+CT: strbuf_setlen at strbuf.h:161:0
+RF: strbuf_setlen at strbuf.h:169:1
+CF: treat_path at dir.c:2291:2
+CT: strbuf_addstr at strbuf.h:304:0
+CF: strbuf_addstr at strbuf.h:305:20
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: strbuf_addstr at strbuf.h:305:2
+CT: strbuf_add at strbuf.c:297:0
+CF: strbuf_add at strbuf.c:298:2
+CT: strbuf_grow at strbuf.c:92:0
+RF: strbuf_grow at strbuf.c:102:1
+CF: strbuf_add at strbuf.c:299:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: strbuf_add at strbuf.c:300:2
+CT: strbuf_setlen at strbuf.h:161:0
+RF: strbuf_setlen at strbuf.h:169:1
+RF: strbuf_add at strbuf.c:301:1
+RF: strbuf_addstr at strbuf.h:306:1
+CF: treat_path at dir.c:2292:6
+CT: simplify_away at dir.c:2108:0
+CF: simplify_away at dir.c:2129:8
+CT: ps_strncmp at pathspec.h:135:0
+CF: ps_strncmp at pathspec.h:139:10
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: ps_strncmp at pathspec.h:140:1
+RF: simplify_away at dir.c:2134:1
+CF: Jump to external code
+CT: External code
+RF: fspathcmp at dir.c:0:0
+CF: get_entry_index at string-list.c:26:17
+CT: External code
+CF: git_atexit at run-command.c:1098:2
+CT: st_mult at git-compat-util.h:991:0
+CF: git_atexit at run-command.c:1101:7
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+CF: git_config_push_parameter at config.c:506:3
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: git_config_push_parameter at config.c:510:1
+CF: Jump to external code
+CT: External code
+RF: git_config_push_parameter at config.c:0:0
+CF: git_configset_clear at config.c:2384:2
+CT: container_of_or_null_offset at git-compat-util.h:1580:0
+RF: container_of_or_null_offset at git-compat-util.h:1581:2
+CF: git_find_last_dir_sep at git-compat-util.h:538:9
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: git_find_last_dir_sep at git-compat-util.h:538:2
+CF: Jump to external code
+CT: External code
+RF: git_find_last_dir_sep at git-compat-util.h:0:0
+CF: git_fopen at fopen.c:20:10
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: git_fopen at fopen.c:37:1
+CF: Jump to external code
+CT: External code
+RF: git_fopen at fopen.c:0:0
+CF: git_setup_gettext at gettext.c:112:3
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: git_setup_gettext at gettext.c:123:1
+CF: Jump to external code
+CT: External code
+RF: git_setup_gettext at gettext.c:0:0
+CF: graph_show_strbuf at graph.c:1505:3
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: graph_show_strbuf at graph.c:1510:1
+CF: Jump to external code
+CT: External code
+RF: graph_show_strbuf at graph.c:0:0
+CF: make_trie_node at path.c:171:24
+CT: xmalloc at wrapper.c:71:0
+CF: xmalloc at wrapper.c:72:9
+CT: do_xmalloc at wrapper.c:46:0
+CF: do_xmalloc at wrapper.c:49:6
+CT: memory_limit_check at wrapper.c:18:0
+RF: memory_limit_check at wrapper.c:35:1
+CF: do_xmalloc at wrapper.c:51:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: do_xmalloc at wrapper.c:68:1
+RF: xmalloc at wrapper.c:72:2
+CF: make_trie_node at path.c:172:3
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: make_trie_node at path.c:175:2
+RF: add_to_trie at path.c:239:1
+RF: add_to_trie at path.c:239:1
+CF: init_common_trie at path.c:341:3
+CT: add_to_trie at path.c:183:0
+CF: add_to_trie at path.c:230:12
+RF: do_xmalloc at wrapper.c:68:1
+RF: xmalloc at wrapper.c:0:0
+CF: add_to_trie at path.c:204:3
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: add_to_trie at path.c:208:22
+CT: xstrndup at wrapper.c:113:0
+CF: xstrndup at wrapper.c:114:12
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: xstrndup at wrapper.c:115:9
+CT: xmemdupz at wrapper.c:108:0
+CF: xmemdupz at wrapper.c:109:9
+CT: xmallocz at wrapper.c:92:0
+CF: xmallocz at wrapper.c:93:9
+CT: do_xmallocz at wrapper.c:76:0
+CF: do_xmallocz at wrapper.c:85:8
+CT: do_xmalloc at wrapper.c:46:0
+CF: do_xmalloc at wrapper.c:49:6
+CT: memory_limit_check at wrapper.c:18:0
+RF: memory_limit_check at wrapper.c:35:1
+CF: do_xmalloc at wrapper.c:51:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: do_xmalloc at wrapper.c:68:1
+RF: do_xmallocz at wrapper.c:89:1
+RF: xmallocz at wrapper.c:0:0
+CF: Jump to external code
+CT: External code
+RF: xmemdupz at wrapper.c:0:0
+RF: xstrndup at wrapper.c:0:0
+CF: add_to_trie at path.c:215:3
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: add_to_trie at path.c:220:4
+CF: make_trie_node at path.c:171:24
+CT: xmalloc at wrapper.c:71:0
+CF: xmalloc at wrapper.c:72:9
+CT: do_xmalloc at wrapper.c:46:0
+CF: do_xmalloc at wrapper.c:49:6
+CT: memory_limit_check at wrapper.c:18:0
+RF: memory_limit_check at wrapper.c:35:1
+CF: do_xmalloc at wrapper.c:51:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: do_xmalloc at wrapper.c:68:1
+RF: xmalloc at wrapper.c:72:2
+CF: make_trie_node at path.c:172:3
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: make_trie_node at path.c:175:2
+RF: add_to_trie at path.c:239:1
+RF: add_to_trie at path.c:239:1
+CF: init_common_trie at path.c:341:3
+CT: add_to_trie at path.c:183:0
+CF: add_to_trie at path.c:230:12
+RF: do_xmalloc at wrapper.c:68:1
+RF: xmalloc at wrapper.c:0:0
+CF: add_to_trie at path.c:204:3
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: add_to_trie at path.c:215:3
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: add_to_trie at path.c:220:4
+CF: mark_child_for_cleanup at run-command.c:91:29
+CT: xmalloc at wrapper.c:71:0
+CF: mark_child_for_cleanup at run-command.c:98:3
+CT: git_atexit at run-command.c:1097:0
+CF: mark_child_for_cleanup at run-command.c:98:3
+CT: git_atexit at run-command.c:1097:0
+CF: git_atexit at run-command.c:1098:2
+CT: st_mult at git-compat-util.h:991:0
+RF: st_mult at git-compat-util.h:995:2
+CF: mark_child_for_cleanup at run-command.c:98:3
+CT: git_atexit at run-command.c:1097:0
+CF: start_command at run-command.c:780:3
+CT: set_cloexec at run-command.c:534:0
+CF: git_atexit at run-command.c:1098:2
+CT: st_mult at git-compat-util.h:991:0
+CF: mark_child_for_cleanup at run-command.c:98:3
+CT: git_atexit at run-command.c:1097:0
+RF: memory_limit_check at wrapper.c:35:1
+CF: do_xmalloc at wrapper.c:51:8
+CF: msort_with_tmp at qsort_s.c:25:2
+CT: msort_with_tmp at qsort_s.c:12:0
+RF: msort_with_tmp at qsort_s.c:46:1
+CF: msort_with_tmp at qsort_s.c:26:2
+CT: msort_with_tmp at qsort_s.c:12:0
+RF: msort_with_tmp at qsort_s.c:46:1
+CF: msort_with_tmp at qsort_s.c:31:7
+CT: cmp_items at string-list.c:234:0
+CF: cmp_items at string-list.c:238:9
+CT: External code
+RF: cmp_items at string-list.c:238:2
+CF: msort_with_tmp at qsort_s.c:37:4
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: msort_with_tmp at qsort_s.c:44:3
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: msort_with_tmp at qsort_s.c:45:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: msort_with_tmp at qsort_s.c:26:2
+CT: msort_with_tmp at qsort_s.c:12:0
+CF: msort_with_tmp at qsort_s.c:25:2
+CT: msort_with_tmp at qsort_s.c:12:0
+RF: msort_with_tmp at qsort_s.c:46:1
+CF: msort_with_tmp at qsort_s.c:26:2
+CT: msort_with_tmp at qsort_s.c:12:0
+RF: msort_with_tmp at qsort_s.c:46:1
+CF: msort_with_tmp at qsort_s.c:31:7
+CT: cmp_items at string-list.c:234:0
+CF: cmp_items at string-list.c:238:9
+CT: External code
+RF: cmp_items at string-list.c:238:2
+CF: msort_with_tmp at qsort_s.c:32:4
+CF: msort_with_tmp at qsort_s.c:31:7
+CT: cmp_items at string-list.c:234:0
+CF: cmp_items at string-list.c:238:9
+CT: External code
+CF: msort_with_tmp at qsort_s.c:31:7
+CT: cmp_items at string-list.c:234:0
+CF: cmp_items at string-list.c:238:9
+CT: External code
+RF: cmp_items at string-list.c:0:0
+CF: msort_with_tmp at qsort_s.c:32:4
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: msort_with_tmp at qsort_s.c:31:7
+CT: cmp_items at string-list.c:234:0
+CF: cmp_items at string-list.c:238:9
+CT: External code
+RF: cmp_items at string-list.c:0:0
+CF: msort_with_tmp at qsort_s.c:37:4
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: msort_with_tmp at qsort_s.c:44:3
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: msort_with_tmp at qsort_s.c:31:7
+CT: cmp_items at string-list.c:234:0
+CF: cmp_items at string-list.c:238:9
+CT: External code
+RF: cmp_items at string-list.c:238:2
+CF: msort_with_tmp at qsort_s.c:37:4
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: msort_with_tmp at qsort_s.c:31:7
+CT: cmp_items at string-list.c:234:0
+CF: cmp_items at string-list.c:238:9
+CT: External code
+RF: cmp_items at string-list.c:238:2
+CF: msort_with_tmp at qsort_s.c:37:4
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: msort_with_tmp at qsort_s.c:31:7
+CT: cmp_items at string-list.c:234:0
+CF: cmp_items at string-list.c:238:9
+CT: External code
+CF: msort_with_tmp at qsort_s.c:31:7
+CT: cmp_items at string-list.c:234:0
+CF: cmp_items at string-list.c:238:9
+CT: External code
+RF: cmp_items at string-list.c:238:2
+CF: msort_with_tmp at qsort_s.c:37:4
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: msort_with_tmp at qsort_s.c:44:3
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: msort_with_tmp at qsort_s.c:32:4
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: msort_with_tmp at qsort_s.c:31:7
+CT: cmp_items at string-list.c:234:0
+CF: cmp_items at string-list.c:238:9
+CT: External code
+RF: cmp_items at string-list.c:0:0
+CF: msort_with_tmp at qsort_s.c:32:4
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: msort_with_tmp at qsort_s.c:31:7
+CT: cmp_items at string-list.c:234:0
+CF: cmp_items at string-list.c:238:9
+CT: External code
+RF: cmp_items at string-list.c:238:2
+CF: msort_with_tmp at qsort_s.c:37:4
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: msort_with_tmp at qsort_s.c:31:7
+CT: cmp_items at string-list.c:234:0
+CF: cmp_items at string-list.c:238:9
+CT: External code
+RF: cmp_items at string-list.c:0:0
+CF: msort_with_tmp at qsort_s.c:37:4
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: msort_with_tmp at qsort_s.c:31:7
+CT: cmp_items at string-list.c:234:0
+CF: cmp_items at string-list.c:238:9
+CT: External code
+RF: cmp_items at string-list.c:238:2
+CF: msort_with_tmp at qsort_s.c:44:3
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: parse_options at parse-options.c:968:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: parsed_object_pool_new at object.c:503:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: prep_childenv at run-command.c:450:24
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: prep_childenv at run-command.c:453:4
+CT: strbuf_setlen at strbuf.h:161:0
+RF: strbuf_setlen at strbuf.h:169:1
+CF: prep_childenv at run-command.c:454:4
+CT: strbuf_add at strbuf.c:297:0
+CF: strbuf_add at strbuf.c:298:2
+CT: strbuf_grow at strbuf.c:92:0
+RF: strbuf_grow at strbuf.c:102:1
+CF: strbuf_add at strbuf.c:299:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: strbuf_add at strbuf.c:300:2
+CT: strbuf_setlen at strbuf.h:161:0
+RF: strbuf_setlen at strbuf.h:169:1
+RF: strbuf_add at strbuf.c:301:1
+CF: prep_childenv at run-command.c:455:4
+CT: string_list_append at string-list.c:218:0
+CF: string_list_append at string-list.c:221:27
+CT: xstrdup at wrapper.c:38:0
+CF: xstrdup at wrapper.c:39:14
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: xstrdup at wrapper.c:42:2
+CF: string_list_append at string-list.c:219:9
+CT: string_list_append_nodup at string-list.c:207:0
+RF: string_list_append_nodup at string-list.c:213:2
+RF: string_list_append at string-list.c:219:2
+CF: ps_strncmp at pathspec.h:139:10
+CF: Jump to external code
+CT: External code
+RF: ps_strncmp at pathspec.h:0:0
+RF: simplify_away at dir.c:2134:1
+CF: treat_path at dir.c:2295:10
+CT: resolve_dtype at dir.c:2219:0
+RF: resolve_dtype at dir.c:2236:1
+CF: treat_path at dir.c:2298:24
+CT: index_file_exists at name-hash.c:717:0
+CF: index_file_exists at name-hash.c:719:22
+CT: memihash at hashmap.c:41:0
+RF: memihash at hashmap.c:50:2
+CF: index_file_exists at name-hash.c:721:2
+CT: lazy_init_name_hash at name-hash.c:580:0
+CF: lazy_init_name_hash at name-hash.c:584:2
+CT: trace_performance_enter at trace.c:188:0
+CF: trace_performance_enter at trace.c:191:7
+CT: trace_want at trace.c:321:0
+CF: trace_want at trace.c:322:11
+CT: get_trace_fd at trace.c:33:0
+RF: get_trace_fd at trace.c:69:1
+RF: trace_want at trace.c:322:2
+RF: trace_performance_enter at trace.c:201:1
+CF: lazy_init_name_hash at name-hash.c:585:2
+CT: trace2_region_enter_fl at trace2.c:699:0
+CF: trace2_region_enter_fl at trace2.c:702:2
+CT: trace2_region_enter_printf_va_fl at trace2.c:669:0
+RF: trace2_region_enter_printf_va_fl at trace2.c:695:1
+RF: trace2_region_enter_fl at trace2.c:706:1
+CF: lazy_init_name_hash at name-hash.c:586:2
+CT: hashmap_init at hashmap.c:155:0
+CF: hashmap_init at hashmap.c:168:2
+CT: alloc_table at hashmap.c:77:0
+CF: alloc_table at hashmap.c:79:2
+CT: xcalloc at wrapper.c:143:0
+CF: xcalloc at wrapper.c:149:2
+CT: memory_limit_check at wrapper.c:18:0
+RF: memory_limit_check at wrapper.c:35:1
+CF: xcalloc at wrapper.c:150:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: xcalloc at wrapper.c:155:2
+RF: alloc_table at hashmap.c:92:1
+RF: hashmap_init at hashmap.c:175:1
+CF: lazy_init_name_hash at name-hash.c:587:2
+CT: hashmap_init at hashmap.c:155:0
+CF: hashmap_init at hashmap.c:168:2
+CT: alloc_table at hashmap.c:77:0
+CF: alloc_table at hashmap.c:79:2
+CT: xcalloc at wrapper.c:143:0
+CF: xcalloc at wrapper.c:149:2
+CT: memory_limit_check at wrapper.c:18:0
+RF: memory_limit_check at wrapper.c:35:1
+CF: xcalloc at wrapper.c:150:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: xcalloc at wrapper.c:155:2
+RF: alloc_table at hashmap.c:92:1
+RF: hashmap_init at hashmap.c:175:1
+CF: lazy_init_name_hash at name-hash.c:589:6
+CT: lookup_lazy_params at name-hash.c:187:0
+CF: lookup_lazy_params at name-hash.c:203:12
+CT: online_cpus at thread-utils.c:22:0
+RF: online_cpus at thread-utils.c:24:2
+RF: lookup_lazy_params at name-hash.c:214:1
+CF: lazy_init_name_hash at name-hash.c:606:2
+CT: trace2_region_leave_fl at trace2.c:762:0
+CF: trace2_region_leave_fl at trace2.c:765:2
+CT: trace2_region_leave_printf_va_fl at trace2.c:725:0
+RF: trace2_region_leave_printf_va_fl at trace2.c:758:1
+RF: trace2_region_leave_fl at trace2.c:768:1
+CF: lazy_init_name_hash at name-hash.c:607:2
+CT: trace_pass_fl at trace.h:274:0
+RF: trace_pass_fl at trace.h:275:2
+RF: lazy_init_name_hash at name-hash.c:608:1
+CF: index_file_exists at name-hash.c:722:2
+CT: expand_to_path at sparse-index.c:542:0
+RF: expand_to_path at sparse-index.c:605:1
+CF: index_file_exists at name-hash.c:724:7
+CT: hashmap_get_from_hash at hashmap.h:376:0
+CF: hashmap_get_from_hash at hashmap.h:378:2
+CT: hashmap_entry_init at hashmap.h:316:0
+RF: hashmap_entry_init at hashmap.h:319:1
+CF: hashmap_get_from_hash at hashmap.h:379:9
+CT: hashmap_get at hashmap.c:215:0
+CF: hashmap_get at hashmap.c:218:10
+CT: find_entry_ptr at hashmap.c:137:0
+CF: find_entry_ptr at hashmap.c:139:41
+CT: bucket at hashmap.c:106:0
+RF: bucket at hashmap.c:107:2
+RF: find_entry_ptr at hashmap.c:142:2
+RF: hashmap_get at hashmap.c:219:1
+RF: hashmap_get_from_hash at hashmap.h:379:2
+RF: index_file_exists at name-hash.c:731:1
+CF: treat_path at dir.c:2327:13
+CT: is_excluded at dir.c:1714:0
+CF: is_excluded at dir.c:1716:3
+CT: last_matching_pattern at dir.c:1693:0
+CF: last_matching_pattern at dir.c:1694:16
+CF: ps_strncmp at pathspec.h:139:10
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: ps_strncmp at pathspec.h:140:1
+CF: Jump to external code
+CT: External code
+RF: ps_strncmp at pathspec.h:0:0
+CF: raw_object_store_new at object.c:523:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: ref_store_hash_cmp at refs.c:1939:9
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: ref_store_hash_cmp at refs.c:1939:2
+CF: Jump to external code
+CT: External code
+RF: ref_store_hash_cmp at refs.c:0:0
+CF: ref_transaction_free at refs.c:1161:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: ref_transaction_free at refs.c:1162:1
+CF: Jump to external code
+CT: External code
+RF: ref_transaction_free at refs.c:0:0
+CF: release_revisions_cmdline at revision.c:3032:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: release_revisions_cmdline at revision.c:3033:1
+CF: Jump to external code
+CT: External code
+RF: release_revisions_cmdline at revision.c:0:0
+CF: remote_state_new at remote.c:2746:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: set_cloexec at run-command.c:535:14
+CF: start_command at run-command.c:779:3
+CT: Jump to external code
+CF: set_cloexec at run-command.c:535:14
+CT: Jump to external code
+CF: set_cloexec at run-command.c:537:3
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: set_cloexec at run-command.c:0:0
+CF: sigchain_push at sigchain.c:24:2
+CT: st_mult at git-compat-util.h:991:0
+RF: st_mult at git-compat-util.h:995:2
+CF: sigchain_push at sigchain.c:24:2
+CT: xrealloc at wrapper.c:127:0
+CF: xrealloc at wrapper.c:135:2
+CT: memory_limit_check at wrapper.c:18:0
+RF: memory_limit_check at wrapper.c:35:1
+CF: xrealloc at wrapper.c:136:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: xrealloc at wrapper.c:140:1
+CF: sigchain_push at sigchain.c:25:17
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: sigchain_push at sigchain.c:30:1
+CF: sigchain_push_common at sigchain.c:48:2
+CT: sigchain_push at sigchain.c:20:0
+CF: sigchain_push at sigchain.c:22:2
+CT: check_signum at sigchain.c:14:0
+RF: check_signum at sigchain.c:17:1
+CF: sigchain_push at sigchain.c:24:2
+CT: st_mult at git-compat-util.h:991:0
+RF: st_mult at git-compat-util.h:995:2
+CF: sigchain_push at sigchain.c:24:2
+CT: xrealloc at wrapper.c:127:0
+CF: sigchain_push at sigchain.c:22:2
+CF: sigchain_push at sigchain.c:22:2
+CT: check_signum at sigchain.c:14:0
+CF: sigchain_push at sigchain.c:22:2
+CT: check_signum at sigchain.c:14:0
+CF: start_command at run-command.c:824:8
+CT: Jump to external code
+CF: sigchain_push at sigchain.c:24:2
+CF: sigchain_push at sigchain.c:24:2
+CT: st_mult at git-compat-util.h:991:0
+CF: sigchain_push at sigchain.c:24:2
+CT: st_mult at git-compat-util.h:991:0
+CF: sigchain_push_common at sigchain.c:49:2
+CT: sigchain_push at sigchain.c:20:0
+CF: sigchain_push at sigchain.c:24:2
+CT: st_mult at git-compat-util.h:991:0
+RF: st_mult at git-compat-util.h:995:2
+RF: Jump to external code
+CF: start_command at run-command.c:824:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: sigchain_push at sigchain.c:24:2
+CT: xrealloc at wrapper.c:127:0
+CF: start_command at run-command.c:824:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: xrealloc at wrapper.c:135:2
+CT: memory_limit_check at wrapper.c:18:0
+CF: start_command at run-command.c:824:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+CF: sigchain_push at sigchain.c:24:2
+CT: xrealloc at wrapper.c:127:0
+CF: sigchain_push at sigchain.c:24:2
+CT: xrealloc at wrapper.c:127:0
+CF: xrealloc at wrapper.c:135:2
+CT: memory_limit_check at wrapper.c:18:0
+CF: sigchain_push at sigchain.c:24:2
+CT: xrealloc at wrapper.c:127:0
+RF: xrealloc at wrapper.c:140:1
+CF: sigchain_push at sigchain.c:25:17
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: sigchain_push at sigchain.c:25:17
+CF: sigchain_push at sigchain.c:25:17
+CT: Jump to external code
+CF: sigchain_push at sigchain.c:25:17
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: sigchain_push_common at sigchain.c:48:2
+CT: sigchain_push at sigchain.c:20:0
+CF: sigchain_push_common at sigchain.c:49:2
+CT: sigchain_push at sigchain.c:20:0
+CF: sigchain_push at sigchain.c:22:2
+CT: check_signum at sigchain.c:14:0
+RF: check_signum at sigchain.c:17:1
+CF: sigchain_push at sigchain.c:24:2
+CT: st_mult at git-compat-util.h:991:0
+RF: st_mult at git-compat-util.h:995:2
+CF: sigchain_push at sigchain.c:24:2
+CT: xrealloc at wrapper.c:127:0
+CF: xrealloc at wrapper.c:135:2
+CT: memory_limit_check at wrapper.c:18:0
+CF: start_command at run-command.c:837:3
+CT: Jump to external code
+RF: memory_limit_check at wrapper.c:35:1
+CF: xrealloc at wrapper.c:136:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: xrealloc at wrapper.c:140:1
+CF: sigchain_push_common at sigchain.c:49:2
+CT: sigchain_push at sigchain.c:20:0
+CF: sigchain_push at sigchain.c:22:2
+CT: check_signum at sigchain.c:14:0
+RF: check_signum at sigchain.c:17:1
+CF: start_command at run-command.c:828:7
+CF: start_command at run-command.c:864:2
+CF: sigchain_push_common at sigchain.c:50:2
+CT: sigchain_push at sigchain.c:20:0
+CF: sigchain_push_common at sigchain.c:50:2
+CT: sigchain_push at sigchain.c:20:0
+CF: sigchain_push at sigchain.c:22:2
+CT: check_signum at sigchain.c:14:0
+RF: check_signum at sigchain.c:17:1
+CF: sigchain_push at sigchain.c:24:2
+CT: st_mult at git-compat-util.h:991:0
+RF: st_mult at git-compat-util.h:995:2
+CF: sigchain_push at sigchain.c:24:2
+CT: xrealloc at wrapper.c:127:0
+CF: xrealloc at wrapper.c:135:2
+CT: memory_limit_check at wrapper.c:18:0
+RF: memory_limit_check at wrapper.c:35:1
+CF: xrealloc at wrapper.c:136:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: xrealloc at wrapper.c:140:1
+CF: sigchain_push at sigchain.c:25:17
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: sigchain_push at sigchain.c:30:1
+CF: sigchain_push_common at sigchain.c:51:2
+CT: sigchain_push at sigchain.c:20:0
+CF: sigchain_push at sigchain.c:22:2
+CT: check_signum at sigchain.c:14:0
+RF: check_signum at sigchain.c:17:1
+CF: sigchain_push at sigchain.c:24:2
+CT: st_mult at git-compat-util.h:991:0
+RF: st_mult at git-compat-util.h:995:2
+CF: sigchain_push at sigchain.c:24:2
+CT: xrealloc at wrapper.c:127:0
+CF: xrealloc at wrapper.c:135:2
+CT: memory_limit_check at wrapper.c:18:0
+RF: memory_limit_check at wrapper.c:35:1
+CF: xrealloc at wrapper.c:136:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: xrealloc at wrapper.c:140:1
+CF: sigchain_push at sigchain.c:25:17
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: sigchain_push at sigchain.c:30:1
+RF: sigchain_push_common at sigchain.c:52:1
+CF: sq_quote_buf at quote.c:43:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: sq_quote_buf at quote.c:44:1
+CF: Jump to external code
+CT: External code
+RF: sq_quote_buf at quote.c:0:0
+CF: start_command at run-command.c:775:3
+CT: set_die_routine at usage.c:123:0
+RF: set_die_routine at usage.c:125:1
+CF: start_command at run-command.c:775:3
+CT: set_die_routine at usage.c:123:0
+RF: set_die_routine at usage.c:125:1
+CF: start_command at run-command.c:776:3
+CT: set_error_routine at usage.c:133:0
+RF: set_error_routine at usage.c:135:1
+CF: mark_child_for_cleanup at run-command.c:98:3
+CT: git_atexit at run-command.c:1097:0
+CF: start_command at run-command.c:776:3
+CT: set_error_routine at usage.c:133:0
+CF: start_command at run-command.c:776:3
+CT: set_error_routine at usage.c:133:0
+RF: set_error_routine at usage.c:135:1
+CF: start_command at run-command.c:776:3
+CT: set_error_routine at usage.c:133:0
+RF: set_error_routine at usage.c:135:1
+CF: start_command at run-command.c:777:3
+CT: set_warn_routine at usage.c:143:0
+RF: set_warn_routine at usage.c:145:1
+CF: start_command at run-command.c:777:3
+CT: set_warn_routine at usage.c:143:0
+RF: set_warn_routine at usage.c:145:1
+CF: start_command at run-command.c:779:3
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: start_command at run-command.c:779:3
+CT: Jump to external code
+CF: start_command at run-command.c:780:3
+CT: set_cloexec at run-command.c:534:0
+CF: start_command at run-command.c:780:3
+CT: set_cloexec at run-command.c:534:0
+CF: set_cloexec at run-command.c:535:14
+CT: Jump to external code
+CF: start_command at run-command.c:824:8
+CF: start_command at run-command.c:824:8
+CF: sigchain_push at sigchain.c:25:17
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: start_command at run-command.c:828:7
+CF: start_command at run-command.c:824:8
+CT: Jump to external code
+CF: start_command at run-command.c:824:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: start_command at run-command.c:824:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: start_command at run-command.c:824:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: start_command at run-command.c:824:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: start_command at run-command.c:824:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: start_command at run-command.c:824:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: start_command at run-command.c:824:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: start_command at run-command.c:824:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: start_command at run-command.c:824:8
+CT: Jump to external code
+CF: start_command at run-command.c:824:8
+RF: sigchain_push_common at sigchain.c:0:0
+CF: start_command at run-command.c:828:7
+CF: start_command at run-command.c:828:7
+CT: Jump to external code
+CF: start_command at run-command.c:837:3
+CF: start_command at run-command.c:837:3
+CT: Jump to external code
+CF: start_command at run-command.c:851:2
+CF: start_command at run-command.c:855:3
+CT: mark_child_for_cleanup at run-command.c:90:0
+CF: mark_child_for_cleanup at run-command.c:91:29
+CT: xmalloc at wrapper.c:71:0
+CF: xmalloc at wrapper.c:72:9
+CT: do_xmalloc at wrapper.c:46:0
+CF: start_command at run-command.c:864:2
+CT: Jump to external code
+CF: stop_progress_msg at progress.c:371:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: stop_progress_msg at progress.c:372:1
+RF: stop_progress at progress.h:26:1
+CF: Jump to external code
+CT: External code
+RF: stop_progress_msg at progress.c:0:0
+RF: stop_progress at progress.h:0:0
+CF: strbuf_grow at strbuf.c:99:2
+CT: st_mult at git-compat-util.h:991:0
+RF: st_mult at git-compat-util.h:995:2
+CF: strbuf_grow at strbuf.c:99:2
+CT: xrealloc at wrapper.c:127:0
+CF: xrealloc at wrapper.c:135:2
+CT: memory_limit_check at wrapper.c:18:0
+RF: memory_limit_check at wrapper.c:35:1
+CF: xrealloc at wrapper.c:136:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: xrealloc at wrapper.c:140:1
+CF: strbuf_grow at strbuf.c:99:2
+CT: xrealloc at wrapper.c:127:0
+CF: xrealloc at wrapper.c:135:2
+CT: memory_limit_check at wrapper.c:18:0
+RF: memory_limit_check at wrapper.c:35:1
+CF: xrealloc at wrapper.c:136:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: xrealloc at wrapper.c:140:1
+CF: treat_path at dir.c:2298:24
+CT: index_file_exists at name-hash.c:717:0
+CF: index_file_exists at name-hash.c:719:22
+CT: memihash at hashmap.c:41:0
+RF: memihash at hashmap.c:50:2
+CF: index_file_exists at name-hash.c:721:2
+CT: lazy_init_name_hash at name-hash.c:580:0
+CF: lazy_init_name_hash at name-hash.c:584:2
+CT: trace_performance_enter at trace.c:188:0
+CF: trace_performance_enter at trace.c:191:7
+CT: trace_want at trace.c:321:0
+CF: trace_want at trace.c:322:11
+CT: get_trace_fd at trace.c:33:0
+RF: get_trace_fd at trace.c:69:1
+RF: trace_want at trace.c:322:2
+RF: trace_performance_enter at trace.c:201:1
+CF: lazy_init_name_hash at name-hash.c:585:2
+CT: trace2_region_enter_fl at trace2.c:699:0
+CF: trace2_region_enter_fl at trace2.c:702:2
+CT: trace2_region_enter_printf_va_fl at trace2.c:669:0
+RF: trace2_region_enter_printf_va_fl at trace2.c:695:1
+RF: trace2_region_enter_fl at trace2.c:706:1
+CF: lazy_init_name_hash at name-hash.c:586:2
+CT: hashmap_init at hashmap.c:155:0
+CF: hashmap_init at hashmap.c:158:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: hashmap_init at hashmap.c:168:2
+CT: alloc_table at hashmap.c:77:0
+CF: alloc_table at hashmap.c:79:2
+CT: xcalloc at wrapper.c:143:0
+CF: xcalloc at wrapper.c:149:2
+CT: memory_limit_check at wrapper.c:18:0
+RF: memory_limit_check at wrapper.c:35:1
+CF: xcalloc at wrapper.c:150:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: xcalloc at wrapper.c:155:2
+RF: alloc_table at hashmap.c:92:1
+RF: hashmap_init at hashmap.c:175:1
+CF: lazy_init_name_hash at name-hash.c:587:2
+CT: hashmap_init at hashmap.c:155:0
+CF: hashmap_init at hashmap.c:158:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: hashmap_init at hashmap.c:168:2
+CT: alloc_table at hashmap.c:77:0
+CF: alloc_table at hashmap.c:79:2
+CT: xcalloc at wrapper.c:143:0
+CF: xcalloc at wrapper.c:149:2
+CT: memory_limit_check at wrapper.c:18:0
+RF: memory_limit_check at wrapper.c:35:1
+CF: xcalloc at wrapper.c:150:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: xcalloc at wrapper.c:155:2
+RF: alloc_table at hashmap.c:92:1
+RF: hashmap_init at hashmap.c:175:1
+CF: lazy_init_name_hash at name-hash.c:589:6
+CT: lookup_lazy_params at name-hash.c:187:0
+CF: lookup_lazy_params at name-hash.c:203:12
+CT: online_cpus at thread-utils.c:22:0
+RF: online_cpus at thread-utils.c:24:2
+RF: lookup_lazy_params at name-hash.c:214:1
+CF: lazy_init_name_hash at name-hash.c:606:2
+CT: trace2_region_leave_fl at trace2.c:762:0
+CF: trace2_region_leave_fl at trace2.c:765:2
+CT: trace2_region_leave_printf_va_fl at trace2.c:725:0
+RF: trace2_region_leave_printf_va_fl at trace2.c:758:1
+RF: trace2_region_leave_fl at trace2.c:768:1
+CF: lazy_init_name_hash at name-hash.c:607:2
+CT: trace_pass_fl at trace.h:274:0
+RF: trace_pass_fl at trace.h:275:2
+RF: lazy_init_name_hash at name-hash.c:608:1
+CF: index_file_exists at name-hash.c:722:2
+CT: expand_to_path at sparse-index.c:542:0
+RF: expand_to_path at sparse-index.c:605:1
+CF: index_file_exists at name-hash.c:724:7
+CT: hashmap_get_from_hash at hashmap.h:376:0
+CF: hashmap_get_from_hash at hashmap.h:378:2
+CT: hashmap_entry_init at hashmap.h:316:0
+RF: hashmap_entry_init at hashmap.h:319:1
+CF: hashmap_get_from_hash at hashmap.h:379:9
+CT: hashmap_get at hashmap.c:215:0
+CF: hashmap_get at hashmap.c:218:10
+CT: find_entry_ptr at hashmap.c:137:0
+CF: find_entry_ptr at hashmap.c:139:41
+CT: bucket at hashmap.c:106:0
+RF: bucket at hashmap.c:107:2
+RF: find_entry_ptr at hashmap.c:142:2
+RF: hashmap_get at hashmap.c:219:1
+RF: hashmap_get_from_hash at hashmap.h:379:2
+CF: index_file_exists at name-hash.c:724:7
+CT: container_of_or_null_offset at git-compat-util.h:1580:0
+RF: container_of_or_null_offset at git-compat-util.h:1581:2
+RF: index_file_exists at name-hash.c:731:1
+CF: treat_path at dir.c:2327:13
+CT: is_excluded at dir.c:1714:0
+CF: is_excluded at dir.c:1716:3
+CT: last_matching_pattern at dir.c:1693:0
+CF: last_matching_pattern at dir.c:1694:16
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: last_matching_pattern at dir.c:1695:25
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: last_matching_pattern at dir.c:1698:2
+CT: prep_exclude at dir.c:1534:0
+CF: prep_exclude at dir.c:1571:3
+CT: strbuf_init at strbuf.c:55:0
+CF: strbuf_init at strbuf.c:57:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: strbuf_init at strbuf.c:59:3
+CT: strbuf_grow at strbuf.c:92:0
+CF: strbuf_grow at strbuf.c:99:2
+CT: st_mult at git-compat-util.h:991:0
+RF: st_mult at git-compat-util.h:995:2
+CF: strbuf_grow at strbuf.c:99:2
+CT: xrealloc at wrapper.c:127:0
+CF: xrealloc at wrapper.c:135:2
+CT: memory_limit_check at wrapper.c:18:0
+RF: memory_limit_check at wrapper.c:35:1
+CF: xrealloc at wrapper.c:136:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: xrealloc at wrapper.c:140:1
+RF: strbuf_grow at strbuf.c:102:1
+RF: strbuf_init at strbuf.c:60:1
+CF: prep_exclude at dir.c:1575:2
+CT: strbuf_setlen at strbuf.h:161:0
+RF: strbuf_setlen at strbuf.h:169:1
+CF: prep_exclude at dir.c:1585:3
+CT: xcalloc at wrapper.c:143:0
+CF: xcalloc at wrapper.c:149:2
+CT: memory_limit_check at wrapper.c:18:0
+RF: memory_limit_check at wrapper.c:35:1
+CF: xcalloc at wrapper.c:150:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: xcalloc at wrapper.c:155:2
+CF: prep_exclude at dir.c:1603:8
+CT: add_pattern_list at dir.c:1182:0
+CF: add_pattern_list at dir.c:1187:2
+CT: st_mult at git-compat-util.h:991:0
+RF: st_mult at git-compat-util.h:995:2
+CF: add_pattern_list at dir.c:1187:2
+CT: xrealloc at wrapper.c:127:0
+CF: xrealloc at wrapper.c:135:2
+CT: memory_limit_check at wrapper.c:18:0
+RF: memory_limit_check at wrapper.c:35:1
+CF: xrealloc at wrapper.c:136:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: xrealloc at wrapper.c:140:1
+CF: add_pattern_list at dir.c:1189:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: add_pattern_list at dir.c:1191:2
+CF: prep_exclude at dir.c:1604:3
+CT: strbuf_add at strbuf.c:297:0
+CF: strbuf_add at strbuf.c:298:2
+CT: strbuf_grow at strbuf.c:92:0
+RF: strbuf_grow at strbuf.c:102:1
+CF: strbuf_add at strbuf.c:299:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: strbuf_add at strbuf.c:300:2
+CT: strbuf_setlen at strbuf.h:161:0
+RF: strbuf_setlen at strbuf.h:169:1
+RF: strbuf_add at strbuf.c:301:1
+CF: prep_exclude at dir.c:1626:3
+CT: oidclr at hash.h:301:0
+CF: oidclr at hash.h:302:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: oidclr at hash.h:303:14
+CT: hash_algo_by_ptr at hash.h:196:0
+RF: hash_algo_by_ptr at hash.h:197:2
+RF: oidclr at hash.h:304:1
+CF: prep_exclude at dir.c:1651:4
+CT: strbuf_addbuf at strbuf.c:304:0
+CF: strbuf_addbuf at strbuf.c:305:2
+CT: strbuf_grow at strbuf.c:92:0
+CF: strbuf_grow at strbuf.c:99:2
+CT: st_mult at git-compat-util.h:991:0
+RF: st_mult at git-compat-util.h:995:2
+CF: strbuf_grow at strbuf.c:99:2
+CT: xrealloc at wrapper.c:127:0
+CF: xrealloc at wrapper.c:135:2
+CT: memory_limit_check at wrapper.c:18:0
+RF: memory_limit_check at wrapper.c:35:1
+CF: xrealloc at wrapper.c:136:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: xrealloc at wrapper.c:140:1
+RF: strbuf_grow at strbuf.c:102:1
+CF: strbuf_addbuf at strbuf.c:306:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: strbuf_addbuf at strbuf.c:307:2
+CT: strbuf_setlen at strbuf.h:161:0
+RF: strbuf_setlen at strbuf.h:169:1
+RF: strbuf_addbuf at strbuf.c:308:1
+CF: prep_exclude at dir.c:1652:4
+CT: strbuf_addstr at strbuf.h:304:0
+CF: strbuf_addstr at strbuf.h:305:20
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: strbuf_addstr at strbuf.h:305:2
+CT: strbuf_add at strbuf.c:297:0
+CF: strbuf_add at strbuf.c:298:2
+CT: strbuf_grow at strbuf.c:92:0
+RF: strbuf_grow at strbuf.c:102:1
+CF: strbuf_add at strbuf.c:299:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: strbuf_add at strbuf.c:300:2
+CT: strbuf_setlen at strbuf.h:161:0
+RF: strbuf_setlen at strbuf.h:169:1
+RF: strbuf_add at strbuf.c:301:1
+RF: strbuf_addstr at strbuf.h:306:1
+CF: prep_exclude at dir.c:1653:14
+CT: strbuf_detach at strbuf.c:71:0
+CF: strbuf_detach at strbuf.c:73:2
+CT: strbuf_grow at strbuf.c:92:0
+RF: strbuf_grow at strbuf.c:102:1
+CF: strbuf_detach at strbuf.c:77:2
+CT: strbuf_init at strbuf.c:55:0
+CF: strbuf_init at strbuf.c:57:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: strbuf_init at strbuf.c:60:1
+RF: strbuf_detach at strbuf.c:78:2
+CF: prep_exclude at dir.c:1654:4
+CT: add_patterns at dir.c:1057:0
+CF: add_patterns at dir.c:1065:8
+CT: open_nofollow at wrapper.c:751:0
+CF: open_nofollow at wrapper.c:753:9
+CT: git_open_with_retry at open.c:5:0
+CF: git_open_with_retry at open.c:21:9
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: git_open_with_retry at open.c:22:22
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: git_open_with_retry at open.c:24:2
+RF: open_nofollow at wrapper.c:753:2
+CF: add_patterns at dir.c:1071:4
+CT: warn_on_fopen_errors at wrapper.c:398:0
+CF: warn_on_fopen_errors at wrapper.c:399:6
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: warn_on_fopen_errors at wrapper.c:405:1
+CF: add_patterns at dir.c:1076:7
+CT: read_skip_worktree_file_from_index at dir.c:903:0
+CF: read_skip_worktree_file_from_index at dir.c:906:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: read_skip_worktree_file_from_index at dir.c:907:8
+CT: index_name_pos at read-cache.c:619:0
+CF: index_name_pos at read-cache.c:620:9
+CT: index_name_stage_pos at read-cache.c:577:0
+RF: index_name_stage_pos at read-cache.c:616:1
+RF: index_name_pos at read-cache.c:620:2
+RF: read_skip_worktree_file_from_index at dir.c:914:1
+RF: add_patterns at dir.c:1122:1
+CF: prep_exclude at dir.c:1680:2
+CT: strbuf_setlen at strbuf.h:161:0
+RF: strbuf_setlen at strbuf.h:169:1
+RF: prep_exclude at dir.c:1681:1
+CF: last_matching_pattern at dir.c:1703:9
+CT: last_matching_pattern_from_lists at dir.c:1510:0
+CF: last_matching_pattern_from_lists at dir.c:1517:14
+CT: last_matching_pattern_from_list at dir.c:1313:0
+RF: last_matching_pattern_from_list at dir.c:1353:1
+CF: last_matching_pattern_from_lists at dir.c:1517:14
+CT: last_matching_pattern_from_list at dir.c:1313:0
+RF: last_matching_pattern_from_list at dir.c:1353:1
+RF: last_matching_pattern_from_lists at dir.c:1525:1
+RF: last_matching_pattern at dir.c:1705:1
+RF: is_excluded at dir.c:1720:1
+CF: treat_path at dir.c:2353:8
+CT: match_pathspec at dir.c:538:0
+CF: match_pathspec at dir.c:540:9
+CT: match_pathspec_with_flags at dir.c:522:0
+CF: match_pathspec_with_flags at dir.c:524:13
+CT: do_match_pathspec at dir.c:452:0
+CF: do_match_pathspec at dir.c:494:9
+CT: match_pathspec_item at dir.c:327:0
+CF: match_pathspec_item at dir.c:373:30
+CT: ps_strncmp at pathspec.h:135:0
+CF: ps_strncmp at pathspec.h:139:10
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: ps_strncmp at pathspec.h:140:1
+RF: match_pathspec_item at dir.c:426:1
+RF: do_match_pathspec at dir.c:516:1
+RF: match_pathspec_with_flags at dir.c:532:1
+RF: match_pathspec at dir.c:540:2
+CF: unlock_ref at files-backend.c:515:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: unlock_ref at files-backend.c:516:1
+CF: Jump to external code
+CT: External code
+RF: unlock_ref at files-backend.c:0:0
+CF: unpack_loose_header at object-file.c:1270:2
+CT: obj_read_unlock at object-store.h:387:0
+RF: obj_read_unlock at object-store.h:390:1
+CF: unpack_trees at unpack-trees.c:1904:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: xcalloc at wrapper.c:150:8
+CF: do_xmalloc at wrapper.c:51:8
+CF: xmalloc at wrapper.c:72:9
+CT: do_xmalloc at wrapper.c:46:0
+CF: xmemdupz at wrapper.c:109:9
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: xmemdupz at wrapper.c:109:2
+CF: Jump to external code
+CT: External code
+RF: xmemdupz at wrapper.c:0:0
+CF: xmemdupz at wrapper.c:109:9
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: xmemdupz at wrapper.c:109:2
+CF: parse_ref_filter_atom at ref-filter.c:738:2
+CT: Jump to external code
+CF: xmemdupz at wrapper.c:109:9
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: xmemdupz at wrapper.c:109:2
+RF: xstrndup at wrapper.c:115:2
+CF: Jump to external code
+CT: External code
+RF: xmemdupz at wrapper.c:0:0
+RF: xstrndup at wrapper.c:0:0
+CF: xread at wrapper.c:230:8
+CT: Jump to external code
+CF: xrealloc at wrapper.c:135:2
+CT: memory_limit_check at wrapper.c:18:0
+CF: xrealloc at wrapper.c:135:2
+CT: memory_limit_check at wrapper.c:18:0
+RF: memory_limit_check at wrapper.c:35:1
+CF: xrealloc at wrapper.c:136:8
+CF: xrealloc at wrapper.c:136:8
+CT: Jump to external code
+CF: xrealloc at wrapper.c:136:8
+CT: Jump to external code
+CF: Jump to external code
+CF: xrealloc at wrapper.c:136:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: xrealloc at wrapper.c:140:1
+CF: sigchain_push at sigchain.c:25:17
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: xstrndup at wrapper.c:115:9
+CT: xmemdupz at wrapper.c:108:0
+CF: xmemdupz at wrapper.c:109:9
+CT: xmallocz at wrapper.c:92:0
+CF: xmallocz at wrapper.c:93:9
+CT: do_xmallocz at wrapper.c:76:0
+CF: do_xmallocz at wrapper.c:85:8
+CT: do_xmalloc at wrapper.c:46:0
+CF: do_xmalloc at wrapper.c:49:6
+CT: memory_limit_check at wrapper.c:18:0
+RF: memory_limit_check at wrapper.c:35:1
+CF: do_xmalloc at wrapper.c:51:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: do_xmalloc at wrapper.c:68:1
+RF: do_xmallocz at wrapper.c:89:1
+RF: xmallocz at wrapper.c:93:2
+CF: xmemdupz at wrapper.c:109:9
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: xmemdupz at wrapper.c:109:2
+RF: xstrndup at wrapper.c:115:2
+CF: add_to_trie at path.c:215:3
+RF: do_xmalloc at wrapper.c:68:1
+RF: xmalloc at wrapper.c:0:0
+CF: add_to_trie at path.c:204:3
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: add_to_trie at path.c:208:22
+CT: xstrndup at wrapper.c:113:0
+CF: xstrndup at wrapper.c:114:12
+CF: xstrndup at wrapper.c:115:9
+CT: xmemdupz at wrapper.c:108:0
+CF: xmemdupz at wrapper.c:109:9
+CT: xmallocz at wrapper.c:92:0
+CF: xmallocz at wrapper.c:93:9
+CT: do_xmallocz at wrapper.c:76:0
+CF: do_xmallocz at wrapper.c:85:8
+CT: do_xmalloc at wrapper.c:46:0
+CF: do_xmalloc at wrapper.c:49:6
+CT: memory_limit_check at wrapper.c:18:0
+RF: memory_limit_check at wrapper.c:35:1
+CF: do_xmalloc at wrapper.c:51:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: do_xmalloc at wrapper.c:68:1
+RF: do_xmallocz at wrapper.c:89:1
+RF: xmallocz at wrapper.c:93:2
+CF: xmemdupz at wrapper.c:109:9
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: xmemdupz at wrapper.c:109:2
+RF: xstrndup at wrapper.c:115:2
+CF: add_to_trie at path.c:215:3
+RF: do_xmalloc at wrapper.c:68:1
+RF: xmalloc at wrapper.c:0:0
+CF: make_trie_node at path.c:172:3
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: make_trie_node at path.c:175:2
+RF: add_to_trie at path.c:239:1
+CF: init_common_trie at path.c:341:3
+CT: add_to_trie at path.c:183:0
+CF: add_to_trie at path.c:203:11
+CT: xmalloc at wrapper.c:71:0
+CF: xmalloc at wrapper.c:72:9
+CT: do_xmalloc at wrapper.c:46:0
+CF: do_xmalloc at wrapper.c:49:6
+CT: memory_limit_check at wrapper.c:18:0
+RF: memory_limit_check at wrapper.c:35:1
+CF: do_xmalloc at wrapper.c:51:8
+CF: xstrndup at wrapper.c:115:9
+CT: xmemdupz at wrapper.c:108:0
+CF: xmemdupz at wrapper.c:109:9
+CT: xmallocz at wrapper.c:92:0
+CF: xmallocz at wrapper.c:93:9
+CT: do_xmallocz at wrapper.c:76:0
+CF: do_xmallocz at wrapper.c:85:8
+CT: do_xmalloc at wrapper.c:46:0
+CF: do_xmalloc at wrapper.c:49:6
+CT: memory_limit_check at wrapper.c:18:0
+RF: memory_limit_check at wrapper.c:35:1
+CF: do_xmalloc at wrapper.c:51:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: do_xmalloc at wrapper.c:68:1
+RF: do_xmallocz at wrapper.c:89:1
+RF: xmallocz at wrapper.c:93:2
+CF: xmemdupz at wrapper.c:109:9
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: xmemdupz at wrapper.c:109:2
+RF: xstrndup at wrapper.c:115:2
+CF: add_to_trie at path.c:215:3
+RF: xcalloc at wrapper.c:155:2
+CF: make_trie_node at path.c:169:18
+CT: External code
+CT: External code
+RF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: xrealloc at wrapper.c:140:1
+CT: Jump to external code
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: msort_with_tmp at qsort_s.c:31:7
+CT: cmp_items at string-list.c:234:0
+CF: cmp_items at string-list.c:238:9
+CT: External code
+RF: cmp_items at string-list.c:0:0
+CF: msort_with_tmp at qsort_s.c:37:4
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: msort_with_tmp at qsort_s.c:31:7
+CT: cmp_items at string-list.c:234:0
+CF: cmp_items at string-list.c:238:9
+CT: External code
+RF: cmp_items at string-list.c:0:0
+CF: msort_with_tmp at qsort_s.c:37:4
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: msort_with_tmp at qsort_s.c:44:3
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: msort_with_tmp at qsort_s.c:31:7
+CT: cmp_items at string-list.c:234:0
+CF: cmp_items at string-list.c:238:9
+CT: External code
+RF: cmp_items at string-list.c:238:2
+CF: msort_with_tmp at qsort_s.c:37:4
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: msort_with_tmp at qsort_s.c:31:7
+CT: cmp_items at string-list.c:234:0
+CF: cmp_items at string-list.c:238:9
+CT: External code
+RF: cmp_items at string-list.c:238:2
+CF: msort_with_tmp at qsort_s.c:37:4
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: msort_with_tmp at qsort_s.c:44:3
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: msort_with_tmp at qsort_s.c:44:3
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: msort_with_tmp at qsort_s.c:45:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: traverse_trees at tree-walk.c:468:19
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: do_xmalloc at wrapper.c:68:1
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: msort_with_tmp at qsort_s.c:46:1
+CF: msort_with_tmp at qsort_s.c:26:2
+CT: msort_with_tmp at qsort_s.c:12:0
+CF: msort_with_tmp at qsort_s.c:25:2
+CT: msort_with_tmp at qsort_s.c:12:0
+RF: msort_with_tmp at qsort_s.c:46:1
+CF: msort_with_tmp at qsort_s.c:26:2
+CT: msort_with_tmp at qsort_s.c:12:0
+RF: msort_with_tmp at qsort_s.c:46:1
+CF: msort_with_tmp at qsort_s.c:31:7
+CT: cmp_items at string-list.c:234:0
+CF: cmp_items at string-list.c:238:9
+CT: External code
+RF: cmp_items at string-list.c:238:2
+CF: msort_with_tmp at qsort_s.c:32:4
+CT: Jump to external code
+CT: check_signum at sigchain.c:14:0
+CT: add_to_trie at path.c:183:0
+CF: add_to_trie at path.c:203:11
+CT: make_trie_node at path.c:167:0
+CF: make_trie_node at path.c:168:26
+CT: xcalloc at wrapper.c:143:0
+CF: xcalloc at wrapper.c:149:2
+CT: memory_limit_check at wrapper.c:18:0
+RF: memory_limit_check at wrapper.c:35:1
+CF: xcalloc at wrapper.c:150:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: xcalloc at wrapper.c:155:2
+CF: make_trie_node at path.c:169:18
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: make_trie_node at path.c:171:24
+CT: add_to_trie at path.c:183:0
+CF: add_to_trie at path.c:228:11
+CT: add_to_trie at path.c:183:0
+CF: add_to_trie at path.c:203:11
+CT: xmalloc at wrapper.c:71:0
+CF: xmalloc at wrapper.c:72:9
+CT: do_xmalloc at wrapper.c:46:0
+CF: do_xmalloc at wrapper.c:49:6
+CT: memory_limit_check at wrapper.c:18:0
+RF: memory_limit_check at wrapper.c:35:1
+CF: do_xmalloc at wrapper.c:51:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: do_xmalloc at wrapper.c:68:1
+RF: xmalloc at wrapper.c:72:2
+CF: add_to_trie at path.c:204:3
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: add_to_trie at path.c:208:22
+CT: xstrndup at wrapper.c:113:0
+CF: xstrndup at wrapper.c:114:12
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: xstrndup at wrapper.c:115:9
+CT: xmemdupz at wrapper.c:108:0
+CF: xmemdupz at wrapper.c:109:9
+CT: xmallocz at wrapper.c:92:0
+CF: xmallocz at wrapper.c:93:9
+CT: do_xmallocz at wrapper.c:76:0
+CF: do_xmallocz at wrapper.c:85:8
+CT: do_xmalloc at wrapper.c:46:0
+CF: do_xmalloc at wrapper.c:49:6
+CT: memory_limit_check at wrapper.c:18:0
+RF: memory_limit_check at wrapper.c:35:1
+CF: do_xmalloc at wrapper.c:51:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: do_xmalloc at wrapper.c:68:1
+RF: do_xmallocz at wrapper.c:89:1
+RF: xmallocz at wrapper.c:93:2
+CF: xmemdupz at wrapper.c:109:9
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: xmemdupz at wrapper.c:109:2
+RF: xstrndup at wrapper.c:115:2
+CF: add_to_trie at path.c:215:3
+CT: xmalloc at wrapper.c:71:0
+CF: xmalloc at wrapper.c:72:9
+CT: do_xmalloc at wrapper.c:46:0
+CF: do_xmalloc at wrapper.c:49:6
+CT: memory_limit_check at wrapper.c:18:0
+RF: memory_limit_check at wrapper.c:35:1
+CF: do_xmalloc at wrapper.c:51:8
+CT: add_to_trie at path.c:183:0
+CF: add_to_trie at path.c:228:11
+CT: add_to_trie at path.c:183:0
+CF: add_to_trie at path.c:203:11
+CT: xmalloc at wrapper.c:71:0
+CF: xmalloc at wrapper.c:72:9
+CT: do_xmalloc at wrapper.c:46:0
+CF: do_xmalloc at wrapper.c:49:6
+CT: memory_limit_check at wrapper.c:18:0
+RF: memory_limit_check at wrapper.c:35:1
+CF: do_xmalloc at wrapper.c:51:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: do_xmalloc at wrapper.c:68:1
+RF: xmalloc at wrapper.c:72:2
+CF: add_to_trie at path.c:204:3
+CT: make_trie_node at path.c:167:0
+CF: make_trie_node at path.c:168:26
+CT: xcalloc at wrapper.c:143:0
+CF: xcalloc at wrapper.c:149:2
+CT: memory_limit_check at wrapper.c:18:0
+RF: memory_limit_check at wrapper.c:35:1
+CF: xcalloc at wrapper.c:150:8
+CT: add_to_trie at path.c:183:0
+CF: add_to_trie at path.c:228:11
+CT: add_to_trie at path.c:183:0
+CF: add_to_trie at path.c:228:11
+CT: add_to_trie at path.c:183:0
+CF: add_to_trie at path.c:203:11
+CT: xmalloc at wrapper.c:71:0
+CF: xmalloc at wrapper.c:72:9
+CT: xmalloc at wrapper.c:71:0
+CF: xmalloc at wrapper.c:72:9
+CT: do_xmalloc at wrapper.c:46:0
+CF: do_xmalloc at wrapper.c:49:6
+CT: memory_limit_check at wrapper.c:18:0
+RF: memory_limit_check at wrapper.c:35:1
+CF: do_xmalloc at wrapper.c:51:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: do_xmalloc at wrapper.c:68:1
+RF: xmalloc at wrapper.c:0:0
+CF: add_to_trie at path.c:204:3
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: add_to_trie at path.c:208:22
+CT: xstrndup at wrapper.c:113:0
+CF: xstrndup at wrapper.c:114:12
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: xstrndup at wrapper.c:115:9
+CT: xmemdupz at wrapper.c:108:0
+CF: xmemdupz at wrapper.c:109:9
+CT: xmallocz at wrapper.c:92:0
+CF: xmallocz at wrapper.c:93:9
+CT: do_xmallocz at wrapper.c:76:0
+CF: do_xmallocz at wrapper.c:85:8
+CT: add_to_trie at path.c:183:0
+CF: add_to_trie at path.c:230:12
+CT: make_trie_node at path.c:167:0
+CF: make_trie_node at path.c:168:26
+CT: xcalloc at wrapper.c:143:0
+CF: xcalloc at wrapper.c:149:2
+CT: make_trie_node at path.c:167:0
+CF: make_trie_node at path.c:168:26
+CT: xcalloc at wrapper.c:143:0
+CF: xcalloc at wrapper.c:149:2
+CT: memory_limit_check at wrapper.c:18:0
+RF: memory_limit_check at wrapper.c:35:1
+CF: xcalloc at wrapper.c:150:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: xcalloc at wrapper.c:155:2
+CF: make_trie_node at path.c:169:18
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: make_trie_node at path.c:171:24
+CT: xmalloc at wrapper.c:71:0
+CF: xmalloc at wrapper.c:72:9
+CT: do_xmalloc at wrapper.c:46:0
+CF: do_xmalloc at wrapper.c:49:6
+CT: check_signum at sigchain.c:14:0
+CT: check_signum at sigchain.c:14:0
+CF: start_command at run-command.c:824:8
+CT: Jump to external code
+RF: check_signum at sigchain.c:17:1
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CT: cmit_fmt_is_mail at pretty.h:65:0
+RF: cmit_fmt_is_mail at pretty.h:66:2
+CF: show_log at log-tree.c:831:6
+CT: cmp_items at string-list.c:234:0
+CF: cmp_items at string-list.c:238:9
+CT: External code
+RF: cmp_items at string-list.c:238:2
+CF: msort_with_tmp at qsort_s.c:32:4
+CT: container_of_or_null_offset at git-compat-util.h:1580:0
+RF: container_of_or_null_offset at git-compat-util.h:1581:2
+CF: all_attrs_init at attr.c:155:3
+CT: dir_add_name at dir.c:1734:0
+CF: dir_add_name at dir.c:1735:6
+CT: index_file_exists at name-hash.c:717:0
+CF: index_file_exists at name-hash.c:719:22
+CT: memihash at hashmap.c:41:0
+RF: memihash at hashmap.c:50:2
+CF: index_file_exists at name-hash.c:721:2
+CT: lazy_init_name_hash at name-hash.c:580:0
+RF: lazy_init_name_hash at name-hash.c:608:1
+CF: index_file_exists at name-hash.c:722:2
+CT: expand_to_path at sparse-index.c:542:0
+RF: expand_to_path at sparse-index.c:605:1
+CF: index_file_exists at name-hash.c:724:7
+CT: hashmap_get_from_hash at hashmap.h:376:0
+CF: hashmap_get_from_hash at hashmap.h:378:2
+CT: hashmap_entry_init at hashmap.h:316:0
+RF: hashmap_entry_init at hashmap.h:319:1
+CF: hashmap_get_from_hash at hashmap.h:379:9
+CT: hashmap_get at hashmap.c:215:0
+CF: hashmap_get at hashmap.c:218:10
+CT: find_entry_ptr at hashmap.c:137:0
+CF: find_entry_ptr at hashmap.c:139:41
+CT: bucket at hashmap.c:106:0
+RF: bucket at hashmap.c:107:2
+RF: find_entry_ptr at hashmap.c:142:2
+RF: hashmap_get at hashmap.c:219:1
+RF: hashmap_get_from_hash at hashmap.h:379:2
+RF: index_file_exists at name-hash.c:731:1
+CF: dir_add_name at dir.c:1738:2
+CT: st_mult at git-compat-util.h:991:0
+RF: st_mult at git-compat-util.h:995:2
+CF: dir_add_name at dir.c:1738:2
+CT: xrealloc at wrapper.c:127:0
+CF: xrealloc at wrapper.c:135:2
+CT: memory_limit_check at wrapper.c:18:0
+RF: memory_limit_check at wrapper.c:35:1
+CF: xrealloc at wrapper.c:136:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: xrealloc at wrapper.c:140:1
+CF: dir_add_name at dir.c:1739:35
+CT: dir_entry_new at dir.c:1723:0
+CF: dir_entry_new at dir.c:1726:2
+CT: st_add at git-compat-util.h:981:0
+RF: st_add at git-compat-util.h:985:2
+CF: dir_entry_new at dir.c:1726:2
+CT: st_add at git-compat-util.h:981:0
+RF: st_add at git-compat-util.h:985:2
+CF: dir_entry_new at dir.c:1726:2
+CT: xcalloc at wrapper.c:143:0
+CF: xcalloc at wrapper.c:149:2
+CT: memory_limit_check at wrapper.c:18:0
+RF: memory_limit_check at wrapper.c:35:1
+CF: xcalloc at wrapper.c:150:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: xcalloc at wrapper.c:155:2
+CF: dir_entry_new at dir.c:1726:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: dir_entry_new at dir.c:1728:2
+RF: dir_add_name at dir.c:1740:1
+CF: add_path_to_appropriate_result_list at dir.c:2520:4
+CT: add_untracked at dir.c:2365:7
+RF: add_untracked at dir.c:2370:1
+RF: add_path_to_appropriate_result_list at dir.c:0:0
+CT: git_is_dir_sep at git-compat-util.h:447:0
+RF: git_is_dir_sep at git-compat-util.h:448:2
+CF: normalize_path_copy_len at path.c:1177:7
+CT: obj_read_unlock at object-store.h:387:0
+RF: obj_read_unlock at object-store.h:390:1
+RF: oid_object_info_extended at object-file.c:1642:2
+CT: preload_index at preload-index.c:99:0
+RF: preload_index at preload-index.c:106:3
+RF: repo_read_index_preload at preload-index.c:173:2
+CT: st_mult at git-compat-util.h:991:0
+RF: st_mult at git-compat-util.h:995:2
+CT: st_mult at git-compat-util.h:991:0
+RF: st_mult at git-compat-util.h:995:2
+CF: git_atexit at run-command.c:1098:2
+CT: st_mult at git-compat-util.h:991:0
+RF: st_mult at git-compat-util.h:995:2
+CF: start_command at run-command.c:780:3
+CT: set_cloexec at run-command.c:534:0
+CF: git_atexit at run-command.c:1098:2
+CT: string_list_append at string-list.c:218:0
+CF: string_list_append at string-list.c:221:27
+CT: xstrdup at wrapper.c:38:0
+CF: xstrdup at wrapper.c:39:14
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: xstrdup at wrapper.c:42:2
+CF: string_list_append at string-list.c:219:9
+CT: string_list_append_nodup at string-list.c:207:0
+RF: string_list_append_nodup at string-list.c:213:2
+RF: string_list_append at string-list.c:219:2
+CF: prep_childenv at run-command.c:450:24
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: prep_childenv at run-command.c:453:4
+CT: strbuf_setlen at strbuf.h:161:0
+RF: strbuf_setlen at strbuf.h:169:1
+CF: prep_childenv at run-command.c:454:4
+CT: strbuf_add at strbuf.c:297:0
+CF: strbuf_add at strbuf.c:298:2
+CT: strbuf_grow at strbuf.c:92:0
+RF: strbuf_grow at strbuf.c:102:1
+CF: strbuf_add at strbuf.c:299:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: strbuf_add at strbuf.c:300:2
+CT: strbuf_setlen at strbuf.h:161:0
+RF: strbuf_setlen at strbuf.h:169:1
+RF: strbuf_add at strbuf.c:301:1
+CF: prep_childenv at run-command.c:455:4
+CT: xread at wrapper.c:225:0
+CT: xread at wrapper.c:225:0
+CF: xread at wrapper.c:230:8
+CT: Jump to external code
+CT: xrealloc at wrapper.c:127:0
+CT: st_mult at git-compat-util.h:991:0
+RF: Jump to external code
+RF: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: Jump to external code
+CF: msort_with_tmp at qsort_s.c:31:7
+CT: cmp_items at string-list.c:234:0
+CF: cmp_items at string-list.c:238:9
+CT: External code
+RF: cmp_items at string-list.c:238:2
+CF: msort_with_tmp at qsort_s.c:37:4
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: msort_with_tmp at qsort_s.c:44:3
+RF: cmp_items at string-list.c:0:0
+CF: msort_with_tmp at qsort_s.c:32:4
+RF: Jump to external code
+CF: msort_with_tmp at qsort_s.c:31:7
+CT: cmp_items at string-list.c:234:0
+CF: cmp_items at string-list.c:238:9
+CT: External code
+RF: cmp_items at string-list.c:238:2
+RF: cmp_items at string-list.c:0:0
+RF: Jump to external code
+CF: msort_with_tmp at qsort_s.c:44:3
+RF: cmp_items at string-list.c:0:0
+CF: msort_with_tmp at qsort_s.c:32:4
+RF: Jump to external code
+CF: start_command at run-command.c:828:7
+CT: Jump to external code
+RF: Jump to external code
+CF: start_command at run-command.c:851:2
+RF: Jump to external code
+CF: strbuf_addstr at strbuf.h:305:2
+CT: strbuf_add at strbuf.c:297:0
+CF: strbuf_add at strbuf.c:298:2
+CT: strbuf_grow at strbuf.c:92:0
+RF: strbuf_grow at strbuf.c:102:1
+CF: strbuf_add at strbuf.c:299:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: strbuf_add at strbuf.c:300:2
+CT: strbuf_setlen at strbuf.h:161:0
+RF: strbuf_setlen at strbuf.h:169:1
+RF: strbuf_add at strbuf.c:301:1
+RF: strbuf_addstr at strbuf.h:306:1
+CF: treat_path at dir.c:2292:6
+CT: simplify_away at dir.c:2108:0
+CF: simplify_away at dir.c:2129:8
+CT: ps_strncmp at pathspec.h:135:0
+CF: ps_strncmp at pathspec.h:139:10
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: ps_strncmp at pathspec.h:140:1
+RF: ps_strncmp at pathspec.h:0:0
+RF: Jump to external code
+RF: diff_free_filepair at diff.c:5773:1
+CF: diff_free_queue at diff.c:5779:2
+CT: Jump to external code
+RF: free_filespec at diff.c:0:0
+RF: Jump to external code
+RF: diff_free_queue at diff.c:5780:1
+RF: diff_free_filepair at diff.c:0:0
+CF: Jump to external code
+CT: External code
+RF: diff_free_queue at diff.c:0:0
+RF: Jump to external code
+RF: free_diffstat_info at diff.c:3153:1
+RF: free_diffstat_file at diff.c:0:0
+CF: Jump to external code
+CT: External code
+RF: free_diffstat_info at diff.c:0:0
+RF: Jump to external code
+RF: free_ref_cache at ref-cache.c:74:1
+RF: free_ref_entry at ref-cache.c:0:0
+CF: Jump to external code
+CT: External code
+RF: free_ref_cache at ref-cache.c:0:0
+RF: Jump to external code
+RF: mark_current_worktree at worktree.c:114:1
+RF: fspathcmp at dir.c:0:0
+CF: Jump to external code
+CT: External code
+RF: mark_current_worktree at worktree.c:0:0
+RF: Jump to external code
+RF: memory_limit_check at wrapper.c:35:1
+RF: Jump to external code
+RF: xmemdupz at wrapper.c:0:0
+RF: Jump to external code
+RF: xrealloc at wrapper.c:140:1
+RF: Jump to external code
+RF: xrealloc at wrapper.c:140:1
+CF: sigchain_push at sigchain.c:24:2
+CT: xrealloc at wrapper.c:127:0
+CF: xrealloc at wrapper.c:135:2
+CT: memory_limit_check at wrapper.c:18:0
+RF: add_path_to_appropriate_result_list at dir.c:0:0
+CF: read_directory_recursive at dir.c:2570:10
+CT: read_cached_dir at dir.c:2447:0
+CF: read_cached_dir at dir.c:2451:8
+CT: readdir_skip_dot_and_dotdot at dir.c:57:0
+CF: readdir_skip_dot_and_dotdot at dir.c:60:14
+CT: precompose_utf8_readdir at precompose_utf8.c:127:0
+CF: precompose_utf8_readdir at precompose_utf8.c:129:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: precompose_utf8_readdir at precompose_utf8.c:131:21
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: precompose_utf8_readdir at precompose_utf8.c:134:19
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: precompose_utf8_readdir at precompose_utf8.c:147:37
+CT: has_non_ascii at precompose_utf8.c:18:0
+RF: has_non_ascii at precompose_utf8.c:37:1
+CF: precompose_utf8_readdir at precompose_utf8.c:175:4
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: precompose_utf8_readdir at precompose_utf8.c:178:3
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: precompose_utf8_readdir at precompose_utf8.c:182:1
+CF: readdir_skip_dot_and_dotdot at dir.c:61:8
+CT: is_dot_or_dotdot at dir.h:456:0
+RF: is_dot_or_dotdot at dir.h:457:2
+RF: readdir_skip_dot_and_dotdot at dir.c:64:2
+RF: read_cached_dir at dir.c:2478:1
+CF: read_directory_recursive at dir.c:2572:11
+CT: treat_path at dir.c:2282:0
+CF: treat_path at dir.c:2288:6
+CT: is_dot_or_dotdot at dir.h:456:0
+RF: is_dot_or_dotdot at dir.h:457:2
+CF: treat_path at dir.c:2288:41
+CT: fspathcmp at dir.c:77:0
+CF: Jump to external code
+CT: External code
+RF: fspathcmp at dir.c:0:0
+RF: treat_path at dir.c:2361:1
+CF: read_directory_recursive at dir.c:2632:3
+CT: add_path_to_appropriate_result_list at dir.c:2502:0
+RF: atfork_parent at run-command.c:530:1
+RF: atfork_parent at run-command.c:530:1
+CF: start_command at run-command.c:776:3
+CT: set_error_routine at usage.c:133:0
+RF: set_error_routine at usage.c:135:1
+RF: atfork_parent at run-command.c:530:1
+CF: start_command at run-command.c:855:3
+CT: mark_child_for_cleanup at run-command.c:90:0
+RF: check_signum at sigchain.c:17:1
+RF: cmp_items at string-list.c:238:2
+CF: msort_with_tmp at qsort_s.c:32:4
+RF: cmp_items at string-list.c:238:2
+CF: msort_with_tmp at qsort_s.c:37:4
+RF: cmp_items at string-list.c:238:2
+CF: msort_with_tmp at qsort_s.c:37:4
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: msort_with_tmp at qsort_s.c:31:7
+CT: cmp_items at string-list.c:234:0
+CF: cmp_items at string-list.c:238:9
+CT: External code
+RF: cmp_items at string-list.c:238:2
+CF: msort_with_tmp at qsort_s.c:37:4
+RF: deactivate_tempfile at tempfile.c:128:1
+CF: Jump to external code
+CT: External code
+RF: deactivate_tempfile at tempfile.c:0:0
+RF: do_xmalloc at wrapper.c:68:1
+RF: do_xmalloc at wrapper.c:68:1
+RF: xmalloc at wrapper.c:0:0
+RF: free_diffstat_file at diff.c:3145:1
+CF: free_diffstat_info at diff.c:3152:2
+CT: Jump to external code
+RF: free_filespec at diff.c:3894:1
+CF: diff_free_filepair at diff.c:5772:2
+CT: Jump to external code
+RF: free_hashfile at csum-file.c:59:1
+CF: Jump to external code
+CT: External code
+RF: free_hashfile at csum-file.c:0:0
+RF: free_ref_entry at ref-cache.c:68:1
+CF: free_ref_cache at ref-cache.c:73:2
+CT: Jump to external code
+RF: free_worktrees at worktree.c:23:1
+CF: Jump to external code
+CT: External code
+RF: free_worktrees at worktree.c:0:0
+RF: fspathcmp at dir.c:78:2
+CF: mark_current_worktree at worktree.c:113:2
+CT: Jump to external code
+RF: fspathcmp at dir.c:78:2
+CF: strbuf_addstr at strbuf.h:305:2
+CT: strbuf_add at strbuf.c:297:0
+CF: strbuf_add at strbuf.c:298:2
+CT: strbuf_grow at strbuf.c:92:0
+RF: strbuf_grow at strbuf.c:102:1
+CF: strbuf_add at strbuf.c:299:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: strbuf_add at strbuf.c:300:2
+CT: strbuf_setlen at strbuf.h:161:0
+RF: strbuf_setlen at strbuf.h:169:1
+RF: strbuf_add at strbuf.c:0:0
+RF: strbuf_addstr at strbuf.h:0:0
+CF: treat_path at dir.c:2292:6
+CT: simplify_away at dir.c:2108:0
+CF: simplify_away at dir.c:2129:8
+CT: ps_strncmp at pathspec.h:135:0
+CF: Jump to external code
+CT: External code
+RF: ps_strncmp at pathspec.h:0:0
+RF: simplify_away at dir.c:2134:1
+RF: make_trie_node at path.c:175:2
+RF: add_to_trie at path.c:239:1
+RF: add_to_trie at path.c:239:1
+CF: init_common_trie at path.c:341:3
+CT: add_to_trie at path.c:183:0
+CF: add_to_trie at path.c:230:12
+RF: do_xmalloc at wrapper.c:68:1
+RF: xmalloc at wrapper.c:0:0
+CF: add_to_trie at path.c:204:3
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: add_to_trie at path.c:208:22
+CT: xstrndup at wrapper.c:113:0
+CF: xstrndup at wrapper.c:114:12
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: xstrndup at wrapper.c:115:9
+CT: xmemdupz at wrapper.c:108:0
+CF: xmemdupz at wrapper.c:109:9
+CT: xmallocz at wrapper.c:92:0
+CF: xmallocz at wrapper.c:93:9
+CT: do_xmallocz at wrapper.c:76:0
+CF: do_xmallocz at wrapper.c:85:8
+CT: do_xmalloc at wrapper.c:46:0
+CF: do_xmalloc at wrapper.c:49:6
+CT: memory_limit_check at wrapper.c:18:0
+RF: memory_limit_check at wrapper.c:35:1
+CF: do_xmalloc at wrapper.c:51:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: do_xmalloc at wrapper.c:68:1
+RF: do_xmallocz at wrapper.c:89:1
+RF: xmallocz at wrapper.c:0:0
+CF: Jump to external code
+CT: External code
+RF: xmemdupz at wrapper.c:0:0
+RF: xstrndup at wrapper.c:0:0
+CF: add_to_trie at path.c:215:3
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: add_to_trie at path.c:220:4
+RF: make_trie_node at path.c:175:2
+RF: add_to_trie at path.c:239:1
+RF: add_to_trie at path.c:239:1
+RF: do_xmalloc at wrapper.c:68:1
+RF: xmalloc at wrapper.c:0:0
+CF: make_trie_node at path.c:172:3
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: make_trie_node at path.c:175:2
+RF: mark_child_for_cleanup at run-command.c:102:1
+RF: memory_limit_check at wrapper.c:35:1
+RF: memory_limit_check at wrapper.c:35:1
+CF: xrealloc at wrapper.c:136:8
+CT: Jump to external code
+RF: memory_limit_check at wrapper.c:35:1
+CF: xrealloc at wrapper.c:136:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: memory_limit_check at wrapper.c:35:1
+CF: xrealloc at wrapper.c:136:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: xrealloc at wrapper.c:140:1
+RF: memory_limit_check at wrapper.c:35:1
+CF: xrealloc at wrapper.c:136:8
+RF: sigchain_push at sigchain.c:30:1
+RF: memory_limit_check at wrapper.c:35:1
+RF: Jump to external code
+CF: xrealloc at wrapper.c:136:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: xrealloc at wrapper.c:140:1
+RF: msort_with_tmp at qsort_s.c:46:1
+CF: msort_with_tmp at qsort_s.c:26:2
+CT: msort_with_tmp at qsort_s.c:17:8
+RF: ps_strncmp at pathspec.h:140:1
+RF: simplify_away at dir.c:2134:1
+CF: last_matching_pattern at dir.c:1695:25
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: last_matching_pattern at dir.c:1698:2
+CT: prep_exclude at dir.c:1534:0
+CF: prep_exclude at dir.c:1571:3
+CT: strbuf_init at strbuf.c:55:0
+CF: strbuf_init at strbuf.c:59:3
+CT: strbuf_grow at strbuf.c:92:0
+CF: strbuf_grow at strbuf.c:99:2
+CT: st_mult at git-compat-util.h:991:0
+RF: st_mult at git-compat-util.h:995:2
+CF: strbuf_grow at strbuf.c:99:2
+CT: xrealloc at wrapper.c:127:0
+CF: xrealloc at wrapper.c:135:2
+CT: memory_limit_check at wrapper.c:18:0
+RF: memory_limit_check at wrapper.c:35:1
+CF: xrealloc at wrapper.c:136:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: xrealloc at wrapper.c:140:1
+RF: strbuf_grow at strbuf.c:102:1
+RF: strbuf_init at strbuf.c:60:1
+CF: prep_exclude at dir.c:1575:2
+CT: strbuf_setlen at strbuf.h:161:0
+RF: strbuf_setlen at strbuf.h:169:1
+CF: prep_exclude at dir.c:1585:3
+CT: xcalloc at wrapper.c:143:0
+CF: xcalloc at wrapper.c:149:2
+CT: memory_limit_check at wrapper.c:18:0
+RF: memory_limit_check at wrapper.c:35:1
+CF: xcalloc at wrapper.c:150:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: xcalloc at wrapper.c:155:2
+CF: prep_exclude at dir.c:1603:8
+CT: add_pattern_list at dir.c:1182:0
+CF: add_pattern_list at dir.c:1187:2
+CT: st_mult at git-compat-util.h:991:0
+RF: st_mult at git-compat-util.h:995:2
+CF: add_pattern_list at dir.c:1187:2
+CT: xrealloc at wrapper.c:127:0
+CF: xrealloc at wrapper.c:135:2
+CT: memory_limit_check at wrapper.c:18:0
+RF: memory_limit_check at wrapper.c:35:1
+CF: xrealloc at wrapper.c:136:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: xrealloc at wrapper.c:140:1
+RF: add_pattern_list at dir.c:1191:2
+CF: prep_exclude at dir.c:1604:3
+CT: strbuf_add at strbuf.c:297:0
+CF: strbuf_add at strbuf.c:298:2
+CT: strbuf_grow at strbuf.c:92:0
+RF: strbuf_grow at strbuf.c:102:1
+CF: strbuf_add at strbuf.c:299:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: strbuf_add at strbuf.c:300:2
+CT: strbuf_setlen at strbuf.h:161:0
+RF: strbuf_setlen at strbuf.h:169:1
+RF: strbuf_add at strbuf.c:0:0
+CF: prep_exclude at dir.c:1626:3
+CT: oidclr at hash.h:301:0
+CF: oidclr at hash.h:303:14
+CT: hash_algo_by_ptr at hash.h:196:0
+RF: hash_algo_by_ptr at hash.h:197:2
+RF: oidclr at hash.h:304:1
+CF: prep_exclude at dir.c:1651:4
+CT: strbuf_addbuf at strbuf.c:304:0
+CF: strbuf_addbuf at strbuf.c:305:2
+CT: strbuf_grow at strbuf.c:92:0
+CF: strbuf_grow at strbuf.c:99:2
+CT: st_mult at git-compat-util.h:991:0
+RF: st_mult at git-compat-util.h:995:2
+CF: strbuf_grow at strbuf.c:99:2
+CT: xrealloc at wrapper.c:127:0
+CF: xrealloc at wrapper.c:135:2
+CT: memory_limit_check at wrapper.c:18:0
+RF: memory_limit_check at wrapper.c:35:1
+CF: xrealloc at wrapper.c:136:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: xrealloc at wrapper.c:140:1
+RF: strbuf_grow at strbuf.c:102:1
+CF: strbuf_addbuf at strbuf.c:306:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: strbuf_addbuf at strbuf.c:307:2
+CT: strbuf_setlen at strbuf.h:161:0
+RF: strbuf_setlen at strbuf.h:169:1
+RF: strbuf_addbuf at strbuf.c:0:0
+CF: prep_exclude at dir.c:1652:4
+CT: strbuf_addstr at strbuf.h:304:0
+CF: strbuf_addstr at strbuf.h:305:20
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: strbuf_addstr at strbuf.h:305:2
+CT: strbuf_add at strbuf.c:297:0
+CF: strbuf_add at strbuf.c:298:2
+CT: strbuf_grow at strbuf.c:92:0
+RF: strbuf_grow at strbuf.c:102:1
+CF: strbuf_add at strbuf.c:299:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: strbuf_add at strbuf.c:300:2
+CT: strbuf_setlen at strbuf.h:161:0
+RF: strbuf_setlen at strbuf.h:169:1
+RF: strbuf_add at strbuf.c:0:0
+RF: strbuf_addstr at strbuf.h:0:0
+CF: prep_exclude at dir.c:1653:14
+CT: strbuf_detach at strbuf.c:71:0
+CF: strbuf_detach at strbuf.c:73:2
+CT: strbuf_grow at strbuf.c:92:0
+RF: strbuf_grow at strbuf.c:102:1
+CF: strbuf_detach at strbuf.c:77:2
+CT: strbuf_init at strbuf.c:55:0
+RF: strbuf_init at strbuf.c:60:1
+RF: strbuf_detach at strbuf.c:78:2
+CF: prep_exclude at dir.c:1654:4
+CT: add_patterns at dir.c:1057:0
+CF: add_patterns at dir.c:1065:8
+CT: open_nofollow at wrapper.c:751:0
+CF: open_nofollow at wrapper.c:753:9
+CT: git_open_with_retry at open.c:5:0
+CF: git_open_with_retry at open.c:21:9
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: git_open_with_retry at open.c:22:22
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: git_open_with_retry at open.c:24:2
+RF: open_nofollow at wrapper.c:0:0
+CF: add_patterns at dir.c:1071:4
+CT: warn_on_fopen_errors at wrapper.c:398:0
+CF: warn_on_fopen_errors at wrapper.c:399:6
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: warn_on_fopen_errors at wrapper.c:405:1
+CF: add_patterns at dir.c:1076:7
+CT: read_skip_worktree_file_from_index at dir.c:903:0
+CF: read_skip_worktree_file_from_index at dir.c:906:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: read_skip_worktree_file_from_index at dir.c:907:8
+CT: index_name_pos at read-cache.c:619:0
+CF: index_name_pos at read-cache.c:620:9
+CT: index_name_stage_pos at read-cache.c:577:0
+RF: index_name_stage_pos at read-cache.c:616:1
+RF: index_name_pos at read-cache.c:0:0
+RF: read_skip_worktree_file_from_index at dir.c:914:1
+RF: add_patterns at dir.c:1122:1
+CF: prep_exclude at dir.c:1680:2
+CT: strbuf_setlen at strbuf.h:161:0
+RF: strbuf_setlen at strbuf.h:169:1
+RF: prep_exclude at dir.c:1681:1
+CF: last_matching_pattern at dir.c:1703:9
+CT: last_matching_pattern_from_lists at dir.c:1510:0
+CF: last_matching_pattern_from_lists at dir.c:1517:14
+CT: last_matching_pattern_from_list at dir.c:1313:0
+RF: last_matching_pattern_from_list at dir.c:1353:1
+CF: last_matching_pattern_from_lists at dir.c:1517:14
+CT: last_matching_pattern_from_list at dir.c:1313:0
+RF: last_matching_pattern_from_list at dir.c:1353:1
+RF: last_matching_pattern_from_lists at dir.c:1525:1
+RF: last_matching_pattern at dir.c:0:0
+RF: is_excluded at dir.c:1720:1
+CF: treat_path at dir.c:2353:8
+CT: match_pathspec at dir.c:538:0
+CF: match_pathspec at dir.c:540:9
+CT: match_pathspec_with_flags at dir.c:522:0
+CF: match_pathspec_with_flags at dir.c:524:13
+CT: do_match_pathspec at dir.c:452:0
+CF: do_match_pathspec at dir.c:494:9
+CT: match_pathspec_item at dir.c:327:0
+CF: match_pathspec_item at dir.c:373:30
+CT: ps_strncmp at pathspec.h:135:0
+CF: Jump to external code
+CT: External code
+RF: ps_strncmp at pathspec.h:0:0
+RF: match_pathspec_item at dir.c:426:1
+RF: do_match_pathspec at dir.c:516:1
+RF: match_pathspec_with_flags at dir.c:532:1
+RF: match_pathspec at dir.c:540:2
+RF: ps_strncmp at pathspec.h:140:1
+RF: simplify_away at dir.c:2134:1
+RF: treat_path at dir.c:2361:1
+CF: read_directory_recursive at dir.c:2632:3
+CT: add_path_to_appropriate_result_list at dir.c:2502:0
+RF: add_path_to_appropriate_result_list at dir.c:2526:1
+CF: read_directory_recursive at dir.c:2570:10
+CT: read_cached_dir at dir.c:2447:0
+CF: read_cached_dir at dir.c:2451:8
+CT: readdir_skip_dot_and_dotdot at dir.c:57:0
+CF: readdir_skip_dot_and_dotdot at dir.c:60:14
+CT: precompose_utf8_readdir at precompose_utf8.c:127:0
+CF: precompose_utf8_readdir at precompose_utf8.c:129:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: precompose_utf8_readdir at precompose_utf8.c:131:21
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: precompose_utf8_readdir at precompose_utf8.c:134:19
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: precompose_utf8_readdir at precompose_utf8.c:147:37
+CT: has_non_ascii at precompose_utf8.c:18:0
+RF: has_non_ascii at precompose_utf8.c:37:1
+CF: precompose_utf8_readdir at precompose_utf8.c:175:4
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: precompose_utf8_readdir at precompose_utf8.c:178:3
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: precompose_utf8_readdir at precompose_utf8.c:182:1
+CF: readdir_skip_dot_and_dotdot at dir.c:61:8
+CT: is_dot_or_dotdot at dir.h:456:0
+RF: is_dot_or_dotdot at dir.h:457:2
+RF: readdir_skip_dot_and_dotdot at dir.c:64:2
+RF: read_cached_dir at dir.c:2478:1
+CF: read_directory_recursive at dir.c:2572:11
+CT: treat_path at dir.c:2282:0
+CF: treat_path at dir.c:2288:6
+CT: is_dot_or_dotdot at dir.h:456:0
+RF: is_dot_or_dotdot at dir.h:457:2
+CF: treat_path at dir.c:2288:41
+CT: fspathcmp at dir.c:77:0
+CF: fspathcmp at dir.c:78:23
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: fspathcmp at dir.c:78:2
+CF: treat_path at dir.c:2290:2
+CT: strbuf_setlen at strbuf.h:161:0
+RF: strbuf_setlen at strbuf.h:169:1
+CF: treat_path at dir.c:2291:2
+CT: strbuf_addstr at strbuf.h:304:0
+CF: strbuf_addstr at strbuf.h:305:20
+CT: Jump to external code
+RF: set_die_routine at usage.c:125:1
+RF: set_error_routine at usage.c:135:1
+RF: set_error_routine at usage.c:135:1
+CF: start_command at run-command.c:775:3
+CT: set_die_routine at usage.c:123:0
+RF: sigchain_push at sigchain.c:30:1
+RF: sigchain_push at sigchain.c:30:1
+CT: External code
+RF: Jump to external code
+RF: st_mult at git-compat-util.h:995:2
+RF: st_mult at git-compat-util.h:995:2
+CF: sigchain_push at sigchain.c:24:2
+CT: xrealloc at wrapper.c:127:0
+RF: st_mult at git-compat-util.h:995:2
+CF: sigchain_push at sigchain.c:24:2
+CT: xrealloc at wrapper.c:127:0
+CF: xrealloc at wrapper.c:135:2
+CT: memory_limit_check at wrapper.c:18:0
+RF: memory_limit_check at wrapper.c:35:1
+CF: xrealloc at wrapper.c:136:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: xrealloc at wrapper.c:140:1
+CF: sigchain_push at sigchain.c:25:17
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: sigchain_push at sigchain.c:30:1
+RF: st_mult at git-compat-util.h:995:2
+CF: sigchain_push at sigchain.c:24:2
+CT: xrealloc at wrapper.c:127:0
+RF: Jump to external code
+RF: st_mult at git-compat-util.h:995:2
+RF: memory_limit_check at wrapper.c:35:1
+RF: unlock_ref at files-backend.c:516:1
+CF: Jump to external code
+CT: External code
+RF: unlock_ref at files-backend.c:0:0
+RF: xcalloc at wrapper.c:155:2
+CF: make_trie_node at path.c:169:18
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: make_trie_node at path.c:171:24
+CT: xmalloc at wrapper.c:71:0
+CF: xmalloc at wrapper.c:72:9
+CT: do_xmalloc at wrapper.c:46:0
+CF: do_xmalloc at wrapper.c:49:6
+CT: memory_limit_check at wrapper.c:18:0
+RF: memory_limit_check at wrapper.c:35:1
+CF: do_xmalloc at wrapper.c:51:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: do_xmalloc at wrapper.c:68:1
+RF: xmalloc at wrapper.c:72:2
+CF: make_trie_node at path.c:172:3
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: make_trie_node at path.c:175:2
+RF: add_to_trie at path.c:239:1
+RF: do_xmalloc at wrapper.c:68:1
+RF: xmalloc at wrapper.c:0:0
+CF: make_trie_node at path.c:172:3
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: make_trie_node at path.c:175:2
+RF: xcalloc at wrapper.c:155:2
+CF: make_trie_node at path.c:169:18
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: make_trie_node at path.c:171:24
+CT: xmalloc at wrapper.c:71:0
+CF: xmalloc at wrapper.c:72:9
+CT: do_xmalloc at wrapper.c:46:0
+CF: do_xmalloc at wrapper.c:49:6
+CT: memory_limit_check at wrapper.c:18:0
+RF: memory_limit_check at wrapper.c:35:1
+CF: do_xmalloc at wrapper.c:51:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: do_xmalloc at wrapper.c:68:1
+RF: xmalloc at wrapper.c:72:2
+CF: make_trie_node at path.c:172:3
+RF: do_xmalloc at wrapper.c:68:1
+RF: xmalloc at wrapper.c:0:0
+CF: make_trie_node at path.c:172:3
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: make_trie_node at path.c:175:2
+RF: add_to_trie at path.c:239:1
+CF: init_common_trie at path.c:341:3
+CT: add_to_trie at path.c:183:0
+CF: add_to_trie at path.c:203:11
+CT: xmalloc at wrapper.c:71:0
+CF: xmalloc at wrapper.c:72:9
+CT: do_xmalloc at wrapper.c:46:0
+CF: do_xmalloc at wrapper.c:49:6
+CT: memory_limit_check at wrapper.c:18:0
+RF: memory_limit_check at wrapper.c:35:1
+CF: do_xmalloc at wrapper.c:51:8
+RF: xcalloc at wrapper.c:155:2
+CF: make_trie_node at path.c:169:18
+RF: do_xmalloc at wrapper.c:68:1
+RF: xmalloc at wrapper.c:0:0
+CF: make_trie_node at path.c:172:3
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: make_trie_node at path.c:175:2
+RF: add_to_trie at path.c:239:1
+CF: init_common_trie at path.c:341:3
+CT: add_to_trie at path.c:183:0
+CF: add_to_trie at path.c:203:11
+CT: xmalloc at wrapper.c:71:0
+CF: xmalloc at wrapper.c:72:9
+CT: do_xmalloc at wrapper.c:46:0
+CF: do_xmalloc at wrapper.c:49:6
+CT: memory_limit_check at wrapper.c:18:0
+RF: memory_limit_check at wrapper.c:35:1
+CF: do_xmalloc at wrapper.c:51:8
+RF: xmalloc at wrapper.c:0:0
+RF: xmalloc at wrapper.c:72:2
+CF: add_to_trie at path.c:204:3
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: add_to_trie at path.c:208:22
+CT: xstrndup at wrapper.c:113:0
+CF: xstrndup at wrapper.c:114:12
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: xstrndup at wrapper.c:115:9
+CT: xmemdupz at wrapper.c:108:0
+CF: xmemdupz at wrapper.c:109:9
+CT: xmallocz at wrapper.c:92:0
+CF: xmallocz at wrapper.c:93:9
+CT: do_xmallocz at wrapper.c:76:0
+CF: do_xmallocz at wrapper.c:85:8
+CT: do_xmalloc at wrapper.c:46:0
+CF: do_xmalloc at wrapper.c:49:6
+CT: memory_limit_check at wrapper.c:18:0
+RF: memory_limit_check at wrapper.c:35:1
+CF: do_xmalloc at wrapper.c:51:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: do_xmalloc at wrapper.c:68:1
+RF: do_xmallocz at wrapper.c:89:1
+RF: xmallocz at wrapper.c:93:2
+CF: xmemdupz at wrapper.c:109:9
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: xmemdupz at wrapper.c:109:2
+RF: xstrndup at wrapper.c:115:2
+CF: add_to_trie at path.c:215:3
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: add_to_trie at path.c:220:4
+CT: make_trie_node at path.c:167:0
+CF: make_trie_node at path.c:168:26
+CT: xcalloc at wrapper.c:143:0
+CF: xcalloc at wrapper.c:149:2
+CT: memory_limit_check at wrapper.c:18:0
+RF: memory_limit_check at wrapper.c:35:1
+CF: xcalloc at wrapper.c:150:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: xcalloc at wrapper.c:155:2
+CF: make_trie_node at path.c:169:18
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: make_trie_node at path.c:171:24
+CT: xmalloc at wrapper.c:71:0
+CF: xmalloc at wrapper.c:72:9
+CT: do_xmalloc at wrapper.c:46:0
+CF: do_xmalloc at wrapper.c:49:6
+CT: memory_limit_check at wrapper.c:18:0
+RF: memory_limit_check at wrapper.c:35:1
+CF: do_xmalloc at wrapper.c:51:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: do_xmalloc at wrapper.c:68:1
+RF: xmalloc at wrapper.c:72:2
+CF: make_trie_node at path.c:172:3
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: make_trie_node at path.c:175:2
+RF: add_to_trie at path.c:239:1
+RF: add_to_trie at path.c:239:1
+RF: add_to_trie at path.c:239:1
+RF: add_to_trie at path.c:239:1
+CF: init_common_trie at path.c:341:3
+CT: add_to_trie at path.c:183:0
+CF: add_to_trie at path.c:228:11
+CT: add_to_trie at path.c:183:0
+CF: add_to_trie at path.c:228:11
+CT: add_to_trie at path.c:183:0
+CF: add_to_trie at path.c:228:11
+CT: add_to_trie at path.c:183:0
+CF: add_to_trie at path.c:230:12
+CT: make_trie_node at path.c:167:0
+CF: make_trie_node at path.c:168:26
+CT: xcalloc at wrapper.c:143:0
+CF: xcalloc at wrapper.c:149:2
+CT: memory_limit_check at wrapper.c:18:0
+RF: memory_limit_check at wrapper.c:35:1
+CF: xcalloc at wrapper.c:150:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: xcalloc at wrapper.c:155:2
+CF: make_trie_node at path.c:169:18
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: make_trie_node at path.c:171:24
+CT: xmalloc at wrapper.c:71:0
+CF: xmalloc at wrapper.c:72:9
+CT: do_xmalloc at wrapper.c:46:0
+CF: do_xmalloc at wrapper.c:49:6
+CT: memory_limit_check at wrapper.c:18:0
+RF: memory_limit_check at wrapper.c:35:1
+CF: do_xmalloc at wrapper.c:51:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: do_xmalloc at wrapper.c:68:1
+RF: xmalloc at wrapper.c:72:2
+CF: make_trie_node at path.c:172:3
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: make_trie_node at path.c:175:2
+RF: add_to_trie at path.c:239:1
+RF: add_to_trie at path.c:239:1
+RF: add_to_trie at path.c:239:1
+RF: add_to_trie at path.c:239:1
+CF: init_common_trie at path.c:341:3
+CT: add_to_trie at path.c:183:0
+CF: add_to_trie at path.c:228:11
+CT: add_to_trie at path.c:183:0
+CF: add_to_trie at path.c:203:11
+RF: do_xmallocz at wrapper.c:89:1
+RF: xmallocz at wrapper.c:0:0
+CF: Jump to external code
+CT: External code
+RF: xmemdupz at wrapper.c:0:0
+RF: xstrndup at wrapper.c:0:0
+CF: add_to_trie at path.c:215:3
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: add_to_trie at path.c:220:4
+CT: make_trie_node at path.c:167:0
+CF: make_trie_node at path.c:168:26
+CT: xcalloc at wrapper.c:143:0
+CF: xcalloc at wrapper.c:149:2
+CT: memory_limit_check at wrapper.c:18:0
+RF: memory_limit_check at wrapper.c:35:1
+CF: xcalloc at wrapper.c:150:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: xcalloc at wrapper.c:155:2
+CF: make_trie_node at path.c:169:18
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: make_trie_node at path.c:171:24
+RF: xmalloc at wrapper.c:72:2
+CF: make_trie_node at path.c:172:3
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: make_trie_node at path.c:175:2
+RF: add_to_trie at path.c:239:1
+RF: add_to_trie at path.c:239:1
+RF: add_to_trie at path.c:239:1
+CF: init_common_trie at path.c:341:3
+CT: add_to_trie at path.c:183:0
+CF: add_to_trie at path.c:228:11
+CT: add_to_trie at path.c:183:0
+CF: add_to_trie at path.c:228:11
+CT: add_to_trie at path.c:183:0
+CF: add_to_trie at path.c:230:12
+CT: make_trie_node at path.c:167:0
+CF: make_trie_node at path.c:168:26
+CT: xcalloc at wrapper.c:143:0
+CF: xcalloc at wrapper.c:149:2
+CT: memory_limit_check at wrapper.c:18:0
+RF: memory_limit_check at wrapper.c:35:1
+CF: xcalloc at wrapper.c:150:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: xcalloc at wrapper.c:155:2
+CF: make_trie_node at path.c:169:18
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: make_trie_node at path.c:171:24
+CT: xmalloc at wrapper.c:71:0
+CF: xmalloc at wrapper.c:72:9
+CT: do_xmalloc at wrapper.c:46:0
+CF: do_xmalloc at wrapper.c:49:6
+CT: memory_limit_check at wrapper.c:18:0
+RF: memory_limit_check at wrapper.c:35:1
+CF: do_xmalloc at wrapper.c:51:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: do_xmalloc at wrapper.c:68:1
+RF: xmalloc at wrapper.c:72:2
+CF: make_trie_node at path.c:172:3
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: make_trie_node at path.c:175:2
+RF: add_to_trie at path.c:239:1
+RF: add_to_trie at path.c:239:1
+RF: add_to_trie at path.c:239:1
+CF: init_common_trie at path.c:341:3
+CT: add_to_trie at path.c:183:0
+CF: add_to_trie at path.c:228:11
+CT: add_to_trie at path.c:183:0
+CF: add_to_trie at path.c:203:11
+RF: do_xmallocz at wrapper.c:89:1
+RF: xmallocz at wrapper.c:0:0
+CF: Jump to external code
+CT: External code
+RF: xmemdupz at wrapper.c:0:0
+RF: xstrndup at wrapper.c:0:0
+CF: add_to_trie at path.c:215:3
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: add_to_trie at path.c:220:4
+CT: make_trie_node at path.c:167:0
+CF: make_trie_node at path.c:168:26
+CT: xcalloc at wrapper.c:143:0
+CF: xcalloc at wrapper.c:149:2
+CT: memory_limit_check at wrapper.c:18:0
+RF: memory_limit_check at wrapper.c:35:1
+CF: xcalloc at wrapper.c:150:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: xcalloc at wrapper.c:155:2
+CF: make_trie_node at path.c:169:18
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: make_trie_node at path.c:171:24
+RF: xmalloc at wrapper.c:72:2
+CF: make_trie_node at path.c:172:3
+RF: do_xmallocz at wrapper.c:89:1
+RF: xmallocz at wrapper.c:0:0
+CF: Jump to external code
+CT: External code
+RF: xmemdupz at wrapper.c:0:0
+RF: xstrndup at wrapper.c:0:0
+CF: add_to_trie at path.c:215:3
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: add_to_trie at path.c:220:4
+CT: make_trie_node at path.c:167:0
+CF: make_trie_node at path.c:168:26
+CT: xcalloc at wrapper.c:143:0
+CF: xcalloc at wrapper.c:149:2
+CT: memory_limit_check at wrapper.c:18:0
+RF: memory_limit_check at wrapper.c:35:1
+CF: xcalloc at wrapper.c:150:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: xcalloc at wrapper.c:155:2
+CF: make_trie_node at path.c:169:18
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: make_trie_node at path.c:171:24
+CT: xmalloc at wrapper.c:71:0
+CF: xmalloc at wrapper.c:72:9
+CT: do_xmalloc at wrapper.c:46:0
+CF: do_xmalloc at wrapper.c:49:6
+CT: memory_limit_check at wrapper.c:18:0
+RF: memory_limit_check at wrapper.c:35:1
+CF: do_xmalloc at wrapper.c:51:8
+RF: xmalloc at wrapper.c:72:2
+CF: mark_child_for_cleanup at run-command.c:98:3
+CT: git_atexit at run-command.c:1097:0
+RF: xrealloc at wrapper.c:140:1
+RF: xrealloc at wrapper.c:140:1
+CF: Jump to external code
+CT: External code
+RF: Jump to external code

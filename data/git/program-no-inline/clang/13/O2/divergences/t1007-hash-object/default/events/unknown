@@ -1,0 +1,104 @@
+CF: all_attrs_init at attr.c:155:3
+CT: container_of_or_null_offset at git-compat-util.h:1580:0
+RF: container_of_or_null_offset at git-compat-util.h:1581:2
+CF: base_ref_iterator_free at iterator.c:42:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: base_ref_iterator_free at iterator.c:43:1
+CF: Jump to external code
+CT: External code
+RF: base_ref_iterator_free at iterator.c:0:0
+CF: config_file_fgetc at config.c:97:9
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: config_file_fgetc at config.c:97:2
+CF: Jump to external code
+CT: External code
+RF: config_file_fgetc at config.c:0:0
+CF: deactivate_tempfile at tempfile.c:127:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: deactivate_tempfile at tempfile.c:128:1
+CF: Jump to external code
+CT: External code
+RF: deactivate_tempfile at tempfile.c:0:0
+CF: git_configset_clear at config.c:2384:2
+CT: container_of_or_null_offset at git-compat-util.h:1580:0
+RF: container_of_or_null_offset at git-compat-util.h:1581:2
+CF: git_find_last_dir_sep at git-compat-util.h:538:9
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: git_find_last_dir_sep at git-compat-util.h:538:2
+CF: Jump to external code
+CT: External code
+RF: git_find_last_dir_sep at git-compat-util.h:0:0
+CF: git_setup_gettext at gettext.c:112:3
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: git_setup_gettext at gettext.c:123:1
+CF: Jump to external code
+CT: External code
+RF: git_setup_gettext at gettext.c:0:0
+CF: parse_options at parse-options.c:968:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: parsed_object_pool_new at object.c:503:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: raw_object_store_new at object.c:523:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: remote_state_new at remote.c:2746:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: unlock_ref at files-backend.c:515:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: unlock_ref at files-backend.c:516:1
+CF: Jump to external code
+CT: External code
+RF: unlock_ref at files-backend.c:0:0
+CF: usage_with_options_internal at parse-options.c:1081:22
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: xmemdupz at wrapper.c:109:9
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: xmemdupz at wrapper.c:109:2
+CF: Jump to external code
+CT: External code
+RF: xmemdupz at wrapper.c:0:0
+CT: container_of_or_null_offset at git-compat-util.h:1580:0
+RF: container_of_or_null_offset at git-compat-util.h:1581:2
+CF: all_attrs_init at attr.c:155:3
+CT: git_is_dir_sep at git-compat-util.h:447:0
+RF: git_is_dir_sep at git-compat-util.h:448:2
+CF: normalize_path_copy_len at path.c:1177:7
+RF: deactivate_tempfile at tempfile.c:128:1
+CF: Jump to external code
+CT: External code
+RF: deactivate_tempfile at tempfile.c:0:0
