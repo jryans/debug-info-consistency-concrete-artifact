@@ -109,9 +109,9 @@ def divergences_by_compiler_family(df):
   ax = g.facet_axis(0, 0)
   ax.grid(False, "major", "x")
   g.set(
-    title=f"Divergences between O0 to O1 by tool ({friendly_name})",
+    title=f"Divergent call tree trace events during {friendly_name} executions at O1",
     xlabel="Tool",
     # xbound=(0, df["Order"].max()),
-    ylabel="Normalised unique trace events",
+    ylabel="Fraction of unique trace events",
     # ybound=(0, 1.004),
   )
