@@ -81,7 +81,7 @@ for i in ${!levels[*]}; do
   make \
     CC="$(llvm release-clang-lldb-${version}.0.0 clang)" \
     ECFLAGS="${CC_COMMON_OPTS} ${CC_CLANG_OPTS} ${!cc_level_opts} -fno-inline -fsave-optimization-record" \
-    LDFLAGS="${LD_COMMON_OPTS}"
+    LDFLAGS="${LD_COMMON_OPTS} -L./libavdevice -L./libavfilter -L./libavformat -L./libavcodec -L./libswresample -L./libswscale -L./libavutil"
 
   mkdir -p "${SCRIPT_DIR}/clang/${version}/${level}"
 
@@ -124,7 +124,7 @@ for i in ${!levels[*]}; do
   make \
     CC="gcc-${version}" \
     ECFLAGS="${CC_COMMON_OPTS} ${CC_GCC_OPTS} ${!cc_level_opts} -fno-inline" \
-    LDFLAGS="${LD_COMMON_OPTS}"
+    LDFLAGS="${LD_COMMON_OPTS} -L./libavdevice -L./libavfilter -L./libavformat -L./libavcodec -L./libswresample -L./libswscale -L./libavutil"
 
   mkdir -p "${SCRIPT_DIR}/gcc/${version}/${level}"
 
