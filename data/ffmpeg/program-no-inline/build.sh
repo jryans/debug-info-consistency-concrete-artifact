@@ -29,6 +29,7 @@ for i in ${!levels[*]}; do
 
   make clean
   git clean -f
+  find . -name '*.o.*' -delete
 
   ## Build via bitcode collection wrapper
   cc_level_opts="CC_${level}_OPTS"
@@ -69,6 +70,7 @@ for i in ${!levels[*]}; do
 
   make clean
   git clean -f
+  find . -name '*.o.*' -delete
 
   # JRS: For some reason, even though the wrapped steps above do produce a
   # linked, native binary, it does _not_ contain debug info, at least on macOS.
@@ -115,6 +117,7 @@ for i in ${!levels[*]}; do
 
   make clean
   git clean -f
+  find . -name '*.o.*' -delete
 
   ## Build for binary with debug info
   cc_level_opts="CC_${level}_OPTS"
@@ -149,3 +152,4 @@ done
 echo "## Cleanup"
 make clean
 git clean -f
+find . -name '*.o.*' -delete
