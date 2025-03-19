@@ -22,7 +22,7 @@ scale_COMMAND="-i ${HOME}/Downloads/input.mp4 -vf scale=360:240 ${HOME}/Download
 
 # Different trace variants to collect
 # These map to different trace options in `vars.sh`
-trace_variants=(default rfld ld ld-eld ld-eld-ifd)
+trace_variants=(default)
 
 for execution in ${executions[*]}; do
   execution_command="${execution}_COMMAND"
