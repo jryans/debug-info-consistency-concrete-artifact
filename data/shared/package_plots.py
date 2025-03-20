@@ -145,6 +145,8 @@ def divergences_by_optimisation_level(df):
   )
   ax = g.facet_axis(0, 0)
   ax.grid(False, "major", "x")
+  for tick in ax.xaxis.get_major_ticks()[1::2]:
+    tick.set_pad(12)
   g.set(
     title=f"Divergent call tree trace events during {friendly_name} executions\nat various optimisation levels",
     xlabel="Compiler and optimisation level",
