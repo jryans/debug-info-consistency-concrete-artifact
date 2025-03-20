@@ -82,3 +82,11 @@ for test in ${tests[*]}; do
     rm -f "${SCRIPT_DIR}/test-deps/bin-wrappers/git"
   done
 done
+
+# Cleanup
+rm -f "../${TARGET_NAME}"
+rm -f "../${TARGET_NAME}.dwarf"
+rm -rf "../bin-wrappers"
+rm -rf "../templates/blt"
+rm -f "../GIT-BUILD-OPTIONS"
+rm -f "../t/helper/test-tool"
