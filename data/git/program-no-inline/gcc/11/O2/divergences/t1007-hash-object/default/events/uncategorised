@@ -1,0 +1,2244 @@
+CF: _ at gettext.h:48:9
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: _ at gettext.h:49:1
+CF: Jump to external code
+CT: External code
+RF: _ at gettext.h:0:0
+CF: _ at gettext.h:48:9
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: _ at gettext.h:49:1
+CF: decode_tree_entry at tree-walk.c:33:3
+CF: Jump to external code
+CT: External code
+RF: _ at gettext.h:0:0
+CF: decode_tree_entry at tree-walk.c:43:3
+CF: _ at gettext.h:48:9
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: _ at gettext.h:49:1
+CF: decode_tree_entry at tree-walk.c:39:3
+CF: Jump to external code
+CT: External code
+RF: _ at gettext.h:0:0
+CF: decode_tree_entry at tree-walk.c:43:3
+CF: all_attrs_init at attr.c:136:2
+CT: hashmap_lock at attr.c:42:1
+RF: hashmap_lock at attr.c:44:1
+CF: base_ref_iterator_free at iterator.c:42:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: base_ref_iterator_free at iterator.c:43:1
+CF: Jump to external code
+CT: External code
+RF: base_ref_iterator_free at iterator.c:0:0
+CF: config_file_fgetc at config.c:97:9
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: config_file_fgetc at config.c:98:1
+CF: Jump to external code
+CT: External code
+RF: config_file_fgetc at config.c:0:0
+CF: config_file_ftell at config.c:107:9
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: config_file_ftell at config.c:108:1
+CF: Jump to external code
+CT: External code
+RF: config_file_ftell at config.c:0:0
+CF: deactivate_tempfile at tempfile.c:127:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: deactivate_tempfile at tempfile.c:128:1
+CF: Jump to external code
+CT: External code
+RF: deactivate_tempfile at tempfile.c:0:0
+CF: dir_inside_of at dir.c:3068:29
+CT: cmp_icase at dir.c:3049:1
+CF: 🔔 No info for this address
+CT: cmp_icase at dir.c:3051:10
+CF: do_xmalloc at wrapper.c:51:8
+CF: xcalloc at wrapper.c:150:8
+CF: git_attr at attr.c:236:9
+CT: git_attr_internal at attr.c:210:1
+CF: git_attr_internal at attr.c:213:7
+CT: attr_name_valid at attr.c:176:1
+RF: attr_name_valid at attr.c:192:1
+CF: git_attr_internal at attr.c:216:2
+CT: hashmap_lock at attr.c:42:1
+RF: hashmap_lock at attr.c:44:1
+CF: git_attr_internal at attr.c:218:6
+CT: attr_hashmap_get at attr.c:87:1
+CF: attr_hashmap_get at attr.c:91:2
+CT: memhash at hashmap.c:30:1
+RF: memhash at hashmap.c:38:1
+CF: attr_hashmap_get at attr.c:91:2
+CT: hashmap_entry_init at hashmap.h:316:1
+RF: hashmap_entry_init at hashmap.h:319:1
+CF: attr_hashmap_get at attr.c:94:6
+CT: hashmap_get at hashmap.c:215:1
+CF: hashmap_get at hashmap.c:218:10
+CT: find_entry_ptr at hashmap.c:137:1
+CF: find_entry_ptr at hashmap.c:139:41
+CT: bucket at hashmap.c:106:1
+RF: bucket at hashmap.c:108:1
+RF: find_entry_ptr at hashmap.c:143:1
+RF: hashmap_get at hashmap.c:219:1
+CF: attr_hashmap_get at attr.c:94:6
+CT: container_of_or_null_offset at git-compat-util.h:1580:1
+RF: container_of_or_null_offset at git-compat-util.h:1582:1
+RF: attr_hashmap_get at attr.c:97:1
+CF: git_attr_internal at attr.c:221:3
+CT: st_add at git-compat-util.h:981:1
+RF: st_add at git-compat-util.h:986:1
+CF: git_attr_internal at attr.c:221:3
+CT: st_add at git-compat-util.h:981:1
+RF: st_add at git-compat-util.h:986:1
+CF: git_attr_internal at attr.c:221:3
+CT: xcalloc at wrapper.c:143:1
+CF: xcalloc at wrapper.c:149:2
+CT: memory_limit_check at wrapper.c:18:1
+RF: memory_limit_check at wrapper.c:35:1
+CF: xcalloc at wrapper.c:150:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: xcalloc at wrapper.c:156:1
+CF: git_attr_internal at attr.c:221:3
+CF: 🔔 No info for this address
+CT: attr_name_valid at attr.c:182:10
+RF: attr_name_valid at attr.c:192:1
+CF: 🔔 No info for this address
+CT: attr_hashmap_get at attr.c:85:14
+CF: attr_hashmap_get at attr.c:91:2
+CT: memhash at hashmap.c:33:9
+RF: memhash at hashmap.c:33:9
+CF: attr_hashmap_get at attr.c:91:2
+CT: hashmap_entry_init at hashmap.h:317:10
+RF: hashmap_entry_init at hashmap.h:319:1
+CF: attr_hashmap_get at attr.c:94:6
+CT: hashmap_get at hashmap.c:216:10
+CF: hashmap_get at hashmap.c:218:10
+CT: find_entry_ptr at hashmap.c:137:1
+CF: find_entry_ptr at hashmap.c:139:41
+CT: bucket at hashmap.c:107:37
+RF: bucket at hashmap.c:108:1
+RF: find_entry_ptr at hashmap.c:143:1
+RF: hashmap_get at hashmap.c:219:1
+CF: attr_hashmap_get at attr.c:94:6
+CT: container_of_or_null_offset at git-compat-util.h:1579:21
+RF: container_of_or_null_offset at git-compat-util.h:1582:1
+RF: attr_hashmap_get at attr.c:97:1
+CF: 🔔 No info for this address
+CT: st_add at git-compat-util.h:982:2
+RF: st_add at git-compat-util.h:986:1
+CF: 🔔 No info for this address
+CT: st_add at git-compat-util.h:982:2
+RF: st_add at git-compat-util.h:986:1
+CF: 🔔 No info for this address
+CT: xcalloc at wrapper.c:143:1
+CF: xcalloc at wrapper.c:149:2
+CT: memory_limit_check at wrapper.c:18:1
+RF: memory_limit_check at wrapper.c:35:1
+CF: xcalloc at wrapper.c:150:8
+CF: git_attr at attr.c:236:9
+CT: git_attr_internal at attr.c:210:1
+CF: git_attr_internal at attr.c:213:7
+CT: attr_name_valid at attr.c:176:1
+RF: attr_name_valid at attr.c:192:1
+CF: git_attr_internal at attr.c:216:2
+CT: hashmap_lock at attr.c:42:1
+RF: hashmap_lock at attr.c:44:1
+CF: git_attr_internal at attr.c:218:6
+CT: attr_hashmap_get at attr.c:87:1
+CF: attr_hashmap_get at attr.c:91:2
+CT: memhash at hashmap.c:30:1
+RF: memhash at hashmap.c:38:1
+CF: attr_hashmap_get at attr.c:91:2
+CT: hashmap_entry_init at hashmap.h:316:1
+RF: hashmap_entry_init at hashmap.h:319:1
+CF: attr_hashmap_get at attr.c:94:6
+CT: hashmap_get at hashmap.c:215:1
+RF: hashmap_get at hashmap.c:219:1
+CF: attr_hashmap_get at attr.c:94:6
+CT: container_of_or_null_offset at git-compat-util.h:1580:1
+RF: container_of_or_null_offset at git-compat-util.h:1582:1
+RF: attr_hashmap_get at attr.c:97:1
+CF: git_attr_internal at attr.c:221:3
+CT: st_add at git-compat-util.h:981:1
+RF: st_add at git-compat-util.h:986:1
+CF: git_attr_internal at attr.c:221:3
+CT: st_add at git-compat-util.h:981:1
+RF: st_add at git-compat-util.h:986:1
+CF: git_attr_internal at attr.c:221:3
+CT: xcalloc at wrapper.c:143:1
+CF: xcalloc at wrapper.c:149:2
+CT: memory_limit_check at wrapper.c:18:1
+RF: memory_limit_check at wrapper.c:35:1
+CF: xcalloc at wrapper.c:150:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: xcalloc at wrapper.c:156:1
+CF: git_attr_internal at attr.c:221:3
+CF: 🔔 No info for this address
+CT: attr_name_valid at attr.c:182:10
+RF: attr_name_valid at attr.c:192:1
+CF: 🔔 No info for this address
+CT: attr_hashmap_get at attr.c:85:14
+CF: attr_hashmap_get at attr.c:91:2
+CT: memhash at hashmap.c:33:9
+RF: memhash at hashmap.c:33:9
+CF: attr_hashmap_get at attr.c:91:2
+CT: hashmap_entry_init at hashmap.h:317:10
+RF: hashmap_entry_init at hashmap.h:319:1
+CF: attr_hashmap_get at attr.c:94:6
+CT: hashmap_get at hashmap.c:216:10
+RF: hashmap_get at hashmap.c:219:1
+CF: attr_hashmap_get at attr.c:94:6
+CT: container_of_or_null_offset at git-compat-util.h:1579:21
+RF: container_of_or_null_offset at git-compat-util.h:1582:1
+RF: attr_hashmap_get at attr.c:97:1
+CF: 🔔 No info for this address
+CT: st_add at git-compat-util.h:982:2
+RF: st_add at git-compat-util.h:986:1
+CF: 🔔 No info for this address
+CT: st_add at git-compat-util.h:982:2
+RF: st_add at git-compat-util.h:986:1
+CF: 🔔 No info for this address
+CT: xcalloc at wrapper.c:143:1
+CF: xcalloc at wrapper.c:149:2
+CT: memory_limit_check at wrapper.c:18:1
+RF: memory_limit_check at wrapper.c:35:1
+CF: xcalloc at wrapper.c:150:8
+CF: git_attr_internal at attr.c:216:2
+CT: hashmap_lock at attr.c:42:1
+RF: hashmap_lock at attr.c:44:1
+CF: git_attr_internal at attr.c:218:6
+CT: attr_hashmap_get at attr.c:87:1
+CF: 🔔 No info for this address
+CT: attr_hashmap_get at attr.c:85:14
+CF: git_attr_internal at attr.c:221:3
+CF: 🔔 No info for this address
+CF: git_attr_internal at attr.c:221:3
+CT: st_add at git-compat-util.h:981:1
+CF: 🔔 No info for this address
+CT: st_add at git-compat-util.h:982:2
+CF: git_attr_internal at attr.c:222:16
+CT: hashmap_get_size at hashmap.h:325:1
+CF: 🔔 No info for this address
+CT: hashmap_get_size at hashmap.h:326:5
+CF: git_attr_internal at attr.c:222:16
+CT: hashmap_get_size at hashmap.h:325:1
+RF: hashmap_get_size at hashmap.h:331:1
+CF: git_attr_internal at attr.c:224:3
+CT: attr_hashmap_add at attr.c:103:1
+CF: attr_hashmap_add at attr.c:106:6
+CT: xmalloc at wrapper.c:71:1
+CF: xmalloc at wrapper.c:72:9
+CT: do_xmalloc at wrapper.c:46:1
+CF: do_xmalloc at wrapper.c:49:6
+CT: memory_limit_check at wrapper.c:18:1
+RF: memory_limit_check at wrapper.c:35:1
+CF: do_xmalloc at wrapper.c:51:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: do_xmalloc at wrapper.c:68:1
+RF: xmalloc at wrapper.c:73:1
+CF: attr_hashmap_add at attr.c:107:2
+CT: memhash at hashmap.c:30:1
+RF: memhash at hashmap.c:38:1
+CF: attr_hashmap_add at attr.c:107:2
+CT: hashmap_entry_init at hashmap.h:316:1
+RF: hashmap_entry_init at hashmap.h:319:1
+CF: attr_hashmap_add at attr.c:112:2
+CT: hashmap_add at hashmap.c:232:1
+CF: hashmap_add at hashmap.c:238:6
+CT: bucket at hashmap.c:106:1
+RF: bucket at hashmap.c:108:1
+RF: hashmap_add at hashmap.c:249:1
+RF: attr_hashmap_add at attr.c:113:1
+CF: git_attr_internal at attr.c:225:3
+CT: hashmap_get_size at hashmap.h:325:1
+RF: hashmap_get_size at hashmap.h:331:1
+CF: git_attr_internal at attr.c:229:2
+CT: hashmap_unlock at attr.c:47:1
+RF: hashmap_unlock at attr.c:49:1
+RF: git_attr_internal at attr.c:232:1
+RF: git_attr at attr.c:237:1
+RF: xcalloc at wrapper.c:156:1
+CF: 🔔 No info for this address
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: 🔔 No info for this address
+CT: hashmap_get_size at hashmap.h:326:5
+RF: hashmap_get_size at hashmap.h:331:1
+CF: 🔔 No info for this address
+CT: attr_hashmap_add at attr.c:100:13
+CF: attr_hashmap_add at attr.c:106:6
+CT: xmalloc at wrapper.c:72:9
+CF: xmalloc at wrapper.c:72:9
+🔔 Tail call without info
+CT: do_xmalloc at wrapper.c:46:1
+CF: do_xmalloc at wrapper.c:49:6
+CT: memory_limit_check at wrapper.c:18:1
+RF: memory_limit_check at wrapper.c:35:1
+CF: do_xmalloc at wrapper.c:51:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: do_xmalloc at wrapper.c:68:1
+RF: xmalloc at wrapper.c:0:0
+CF: attr_hashmap_add at attr.c:107:2
+CT: memhash at hashmap.c:33:9
+RF: memhash at hashmap.c:33:9
+CF: attr_hashmap_add at attr.c:107:2
+CT: hashmap_entry_init at hashmap.h:317:10
+RF: hashmap_entry_init at hashmap.h:319:1
+CF: attr_hashmap_add at attr.c:112:2
+🔔 Tail call without info
+CT: hashmap_add at hashmap.c:232:1
+CF: hashmap_add at hashmap.c:238:6
+CT: bucket at hashmap.c:107:37
+RF: bucket at hashmap.c:108:1
+RF: hashmap_add at hashmap.c:249:1
+RF: attr_hashmap_add at attr.c:0:0
+CF: 🔔 No info for this address
+CT: hashmap_get_size at hashmap.h:326:5
+RF: hashmap_get_size at hashmap.h:331:1
+RF: 🔔 No info for this address
+CF: git_attr_internal at attr.c:222:16
+CT: hashmap_get_size at hashmap.h:325:1
+RF: hashmap_get_size at hashmap.h:331:1
+CF: git_attr_internal at attr.c:224:3
+CT: attr_hashmap_add at attr.c:103:1
+CF: attr_hashmap_add at attr.c:106:6
+CT: xmalloc at wrapper.c:71:1
+CF: xmalloc at wrapper.c:72:9
+CT: do_xmalloc at wrapper.c:46:1
+CF: do_xmalloc at wrapper.c:49:6
+RF: xcalloc at wrapper.c:156:1
+CF: 🔔 No info for this address
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: 🔔 No info for this address
+CT: hashmap_get_size at hashmap.h:326:5
+RF: hashmap_get_size at hashmap.h:331:1
+CF: 🔔 No info for this address
+CT: attr_hashmap_add at attr.c:100:13
+CF: attr_hashmap_add at attr.c:106:6
+CT: xmalloc at wrapper.c:72:9
+CF: xmalloc at wrapper.c:72:9
+🔔 Tail call without info
+CT: do_xmalloc at wrapper.c:46:1
+CF: do_xmalloc at wrapper.c:49:6
+CT: memory_limit_check at wrapper.c:18:1
+RF: memory_limit_check at wrapper.c:35:1
+CF: do_xmalloc at wrapper.c:51:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: do_xmalloc at wrapper.c:68:1
+RF: xmalloc at wrapper.c:0:0
+CF: attr_hashmap_add at attr.c:107:2
+CT: memhash at hashmap.c:33:9
+RF: memhash at hashmap.c:33:9
+CF: attr_hashmap_add at attr.c:107:2
+CT: hashmap_entry_init at hashmap.h:317:10
+RF: hashmap_entry_init at hashmap.h:319:1
+CF: attr_hashmap_add at attr.c:112:2
+🔔 Tail call without info
+CT: hashmap_add at hashmap.c:232:1
+CF: hashmap_add at hashmap.c:236:3
+CT: alloc_table at hashmap.c:77:1
+CF: alloc_table at hashmap.c:79:2
+CT: xcalloc at wrapper.c:143:1
+CF: xcalloc at wrapper.c:149:2
+CF: git_attr_internal at attr.c:224:3
+CT: attr_hashmap_add at attr.c:103:1
+CF: 🔔 No info for this address
+CT: attr_hashmap_add at attr.c:100:13
+CF: git_attr_internal at attr.c:225:3
+CT: hashmap_get_size at hashmap.h:325:1
+CF: 🔔 No info for this address
+CT: hashmap_get_size at hashmap.h:326:5
+CF: git_attr_internal at attr.c:229:2
+CT: hashmap_unlock at attr.c:47:1
+RF: hashmap_unlock at attr.c:49:1
+RF: git_attr_internal at attr.c:232:1
+RF: 🔔 No info for this address
+CF: git_find_last_dir_sep at git-compat-util.h:538:9
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: git_find_last_dir_sep at git-compat-util.h:539:1
+CF: Jump to external code
+CT: External code
+RF: git_find_last_dir_sep at git-compat-util.h:0:0
+CF: git_hash_sha1_init at object-file.c:86:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: git_hash_sha1_init at object-file.c:87:1
+CF: Jump to external code
+CT: External code
+RF: git_hash_sha1_init at object-file.c:0:0
+CF: git_set_exec_path at exec-cmd.c:280:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: git_set_exec_path at exec-cmd.c:281:1
+CF: Jump to external code
+CT: External code
+RF: git_set_exec_path at exec-cmd.c:0:0
+CF: git_setup_gettext at gettext.c:112:3
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: git_setup_gettext at gettext.c:123:1
+CF: Jump to external code
+CT: External code
+RF: git_setup_gettext at gettext.c:0:0
+CF: hashmap_init at hashmap.c:158:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: is_dir_file at path.c:82:12
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: parsed_object_pool_new at object.c:503:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: raceproof_create_file at files-backend.c:953:15
+CF: 🔔 No info for this address
+CF: raceproof_create_file at files-backend.c:987:2
+CT: strbuf_release at strbuf.c:63:1
+RF: strbuf_release at strbuf.c:68:1
+CF: raceproof_create_file at files-backend.c:988:2
+CF: 🔔 No info for this address
+CT: strbuf_release at strbuf.c:64:5
+RF: strbuf_release at strbuf.c:64:5
+CF: 🔔 No info for this address
+CF: raw_object_store_new at object.c:523:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: refs_read_raw_ref at refs.c:1781:41
+CF: 🔔 No info for this address
+CF: refs_read_raw_ref at refs.c:1786:9
+CF: Jump to external code
+🔔 Tail call without info
+CF: refs_verify_refname_available at refs.c:2353:2
+CT: strbuf_grow at strbuf.c:92:1
+CF: 🔔 No info for this address
+CT: strbuf_grow at strbuf.c:94:5
+CF: refs_verify_refname_available at refs.c:2354:15
+CF: 🔔 No info for this address
+CF: refs_verify_refname_available at refs.c:2395:2
+CF: 🔔 No info for this address
+CF: refs_verify_refname_available at refs.c:2398:9
+CF: 🔔 No info for this address
+CF: refs_verify_refname_available at refs.c:2400:15
+CT: ref_iterator_advance at iterator.c:12:1
+CF: 🔔 No info for this address
+CT: ref_iterator_advance at iterator.c:13:29
+CF: refs_verify_refname_available at refs.c:2414:18
+CT: find_descendant_ref at refs.c:1473:1
+CF: 🔔 No info for this address
+CT: find_descendant_ref at refs.c:1476:5
+CF: refs_verify_refname_available at refs.c:2422:2
+CT: strbuf_release at strbuf.c:63:1
+RF: strbuf_release at strbuf.c:68:1
+CF: refs_verify_refname_available at refs.c:2423:2
+CT: strbuf_release at strbuf.c:63:1
+CF: 🔔 No info for this address
+CT: strbuf_release at strbuf.c:64:5
+RF: strbuf_release at strbuf.c:64:5
+CF: 🔔 No info for this address
+CT: strbuf_release at strbuf.c:64:5
+CF: remote_state_new at remote.c:2746:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: repo_config_get_value at config.c:2572:9
+CT: git_configset_get_value at config.c:2410:1
+CF: git_configset_get_value at config.c:2417:11
+CT: git_configset_get_value_multi at config.c:2427:1
+CF: git_configset_get_value_multi at config.c:2428:33
+CT: configset_find_element at config.c:2293:1
+CF: configset_find_element at config.c:2301:6
+CT: git_config_parse_key at config.c:554:1
+CF: git_config_parse_key at config.c:557:25
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: git_config_parse_key at config.c:581:15
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: git_config_parse_key at config.c:581:15
+CT: xmallocz at wrapper.c:92:1
+CF: xmallocz at wrapper.c:93:9
+CT: do_xmallocz at wrapper.c:76:1
+CF: do_xmallocz at wrapper.c:85:8
+CT: do_xmalloc at wrapper.c:46:1
+CF: do_xmalloc at wrapper.c:49:6
+CT: memory_limit_check at wrapper.c:18:1
+RF: memory_limit_check at wrapper.c:35:1
+CF: do_xmalloc at wrapper.c:51:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: do_xmalloc at wrapper.c:68:1
+RF: do_xmallocz at wrapper.c:89:1
+RF: xmallocz at wrapper.c:94:1
+CF: git_config_parse_key at config.c:590:9
+CT: iskeychar at config.c:537:1
+RF: iskeychar at config.c:539:1
+CF: git_config_parse_key at config.c:595:8
+CT: sane_case at git-compat-util.h:1235:1
+RF: sane_case at git-compat-util.h:1239:1
+CF: git_config_parse_key at config.c:590:9
+CT: iskeychar at config.c:537:1
+RF: iskeychar at config.c:539:1
+CF: git_config_parse_key at config.c:595:8
+CT: sane_case at git-compat-util.h:1235:1
+RF: sane_case at git-compat-util.h:1239:1
+CF: git_config_parse_key at config.c:590:9
+CT: iskeychar at config.c:537:1
+RF: iskeychar at config.c:539:1
+CF: git_config_parse_key at config.c:595:8
+CT: sane_case at git-compat-util.h:1235:1
+RF: sane_case at git-compat-util.h:1239:1
+CF: git_config_parse_key at config.c:590:9
+CT: iskeychar at config.c:537:1
+RF: iskeychar at config.c:539:1
+CF: git_config_parse_key at config.c:595:8
+CT: sane_case at git-compat-util.h:1235:1
+RF: sane_case at git-compat-util.h:1239:1
+CF: git_config_parse_key at config.c:590:9
+CT: iskeychar at config.c:537:1
+RF: iskeychar at config.c:539:1
+CF: git_config_parse_key at config.c:595:8
+CT: sane_case at git-compat-util.h:1235:1
+RF: sane_case at git-compat-util.h:1239:1
+CF: git_config_parse_key at config.c:590:9
+CT: iskeychar at config.c:537:1
+RF: iskeychar at config.c:539:1
+CF: git_config_parse_key at config.c:595:8
+CT: sane_case at git-compat-util.h:1235:1
+RF: sane_case at git-compat-util.h:1239:1
+CF: git_config_parse_key at config.c:590:9
+CT: iskeychar at config.c:537:1
+RF: iskeychar at config.c:539:1
+CF: git_config_parse_key at config.c:595:8
+CT: sane_case at git-compat-util.h:1235:1
+RF: sane_case at git-compat-util.h:1239:1
+CF: git_config_parse_key at config.c:590:9
+CT: iskeychar at config.c:537:1
+RF: iskeychar at config.c:539:1
+CF: git_config_parse_key at config.c:595:8
+CT: sane_case at git-compat-util.h:1235:1
+RF: sane_case at git-compat-util.h:1239:1
+CF: git_config_parse_key at config.c:590:9
+CT: iskeychar at config.c:537:1
+RF: iskeychar at config.c:539:1
+CF: git_config_parse_key at config.c:595:8
+CT: sane_case at git-compat-util.h:1235:1
+RF: sane_case at git-compat-util.h:1239:1
+CF: git_config_parse_key at config.c:590:9
+CT: iskeychar at config.c:537:1
+RF: iskeychar at config.c:539:1
+CF: git_config_parse_key at config.c:595:8
+CT: sane_case at git-compat-util.h:1235:1
+RF: sane_case at git-compat-util.h:1239:1
+CF: git_config_parse_key at config.c:590:9
+CT: iskeychar at config.c:537:1
+RF: iskeychar at config.c:539:1
+CF: git_config_parse_key at config.c:595:8
+CT: sane_case at git-compat-util.h:1235:1
+RF: sane_case at git-compat-util.h:1239:1
+CF: git_config_parse_key at config.c:590:9
+CT: iskeychar at config.c:537:1
+RF: iskeychar at config.c:539:1
+CF: git_config_parse_key at config.c:595:8
+CT: sane_case at git-compat-util.h:1235:1
+RF: sane_case at git-compat-util.h:1239:1
+CF: git_config_parse_key at config.c:590:9
+CT: iskeychar at config.c:537:1
+RF: iskeychar at config.c:539:1
+CF: git_config_parse_key at config.c:595:8
+CT: sane_case at git-compat-util.h:1235:1
+RF: sane_case at git-compat-util.h:1239:1
+CF: git_config_parse_key at config.c:590:9
+CT: iskeychar at config.c:537:1
+RF: iskeychar at config.c:539:1
+CF: git_config_parse_key at config.c:595:8
+CT: sane_case at git-compat-util.h:1235:1
+RF: sane_case at git-compat-util.h:1239:1
+CF: git_config_parse_key at config.c:590:9
+CT: iskeychar at config.c:537:1
+RF: iskeychar at config.c:539:1
+CF: git_config_parse_key at config.c:595:8
+CT: sane_case at git-compat-util.h:1235:1
+RF: sane_case at git-compat-util.h:1239:1
+CF: git_config_parse_key at config.c:590:9
+CT: iskeychar at config.c:537:1
+RF: iskeychar at config.c:539:1
+CF: git_config_parse_key at config.c:595:8
+CT: sane_case at git-compat-util.h:1235:1
+RF: sane_case at git-compat-util.h:1239:1
+CF: git_config_parse_key at config.c:590:9
+CT: iskeychar at config.c:537:1
+RF: iskeychar at config.c:539:1
+CF: git_config_parse_key at config.c:595:8
+CT: sane_case at git-compat-util.h:1235:1
+RF: sane_case at git-compat-util.h:1239:1
+CF: git_config_parse_key at config.c:590:9
+CT: iskeychar at config.c:537:1
+RF: iskeychar at config.c:539:1
+CF: git_config_parse_key at config.c:595:8
+CT: sane_case at git-compat-util.h:1235:1
+RF: sane_case at git-compat-util.h:1239:1
+CF: git_config_parse_key at config.c:590:9
+CT: iskeychar at config.c:537:1
+RF: iskeychar at config.c:539:1
+CF: git_config_parse_key at config.c:595:8
+CT: sane_case at git-compat-util.h:1235:1
+RF: sane_case at git-compat-util.h:1239:1
+CF: git_config_parse_key at config.c:590:9
+CT: iskeychar at config.c:537:1
+RF: iskeychar at config.c:539:1
+CF: git_config_parse_key at config.c:595:8
+CT: sane_case at git-compat-util.h:1235:1
+RF: sane_case at git-compat-util.h:1239:1
+RF: git_config_parse_key at config.c:608:1
+CF: configset_find_element at config.c:2304:2
+CT: strhash at hashmap.c:11:1
+RF: strhash at hashmap.c:16:1
+CF: configset_find_element at config.c:2304:2
+CT: hashmap_entry_init at hashmap.h:316:1
+RF: hashmap_entry_init at hashmap.h:319:1
+CF: configset_find_element at config.c:2306:16
+CT: hashmap_get at hashmap.c:215:1
+CF: hashmap_get at hashmap.c:218:10
+CT: find_entry_ptr at hashmap.c:137:1
+CF: find_entry_ptr at hashmap.c:139:41
+CT: bucket at hashmap.c:106:1
+RF: bucket at hashmap.c:108:1
+RF: find_entry_ptr at hashmap.c:143:1
+RF: hashmap_get at hashmap.c:219:1
+CF: configset_find_element at config.c:2306:16
+CT: container_of_or_null_offset at git-compat-util.h:1580:1
+RF: container_of_or_null_offset at git-compat-util.h:1582:1
+CF: configset_find_element at config.c:2307:2
+CF: 🔔 No info for this address
+CT: git_configset_get_value_multi at config.c:2427:1
+CF: git_configset_get_value_multi at config.c:2428:33
+CT: configset_find_element at config.c:2293:1
+CF: configset_find_element at config.c:2301:6
+CT: git_config_parse_key at config.c:554:1
+CF: git_config_parse_key at config.c:557:25
+CF: repo_config_get_value at config.c:2572:9
+CT: git_configset_get_value at config.c:2410:1
+CF: git_configset_get_value at config.c:2417:11
+CT: git_configset_get_value_multi at config.c:2427:1
+CF: git_configset_get_value_multi at config.c:2428:33
+CT: configset_find_element at config.c:2293:1
+CF: configset_find_element at config.c:2301:6
+CT: git_config_parse_key at config.c:554:1
+CF: git_config_parse_key at config.c:557:25
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: git_config_parse_key at config.c:581:15
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: git_config_parse_key at config.c:581:15
+CT: xmallocz at wrapper.c:92:1
+CF: xmallocz at wrapper.c:93:9
+CT: do_xmallocz at wrapper.c:76:1
+CF: do_xmallocz at wrapper.c:85:8
+CT: do_xmalloc at wrapper.c:46:1
+CF: do_xmalloc at wrapper.c:49:6
+CT: memory_limit_check at wrapper.c:18:1
+RF: memory_limit_check at wrapper.c:35:1
+CF: do_xmalloc at wrapper.c:51:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: do_xmalloc at wrapper.c:68:1
+RF: do_xmallocz at wrapper.c:89:1
+RF: xmallocz at wrapper.c:94:1
+CF: git_config_parse_key at config.c:590:9
+CT: iskeychar at config.c:537:1
+RF: iskeychar at config.c:539:1
+CF: git_config_parse_key at config.c:595:8
+CT: sane_case at git-compat-util.h:1235:1
+RF: sane_case at git-compat-util.h:1239:1
+CF: git_config_parse_key at config.c:590:9
+CT: iskeychar at config.c:537:1
+RF: iskeychar at config.c:539:1
+CF: git_config_parse_key at config.c:595:8
+CT: sane_case at git-compat-util.h:1235:1
+RF: sane_case at git-compat-util.h:1239:1
+CF: git_config_parse_key at config.c:590:9
+CT: iskeychar at config.c:537:1
+RF: iskeychar at config.c:539:1
+CF: git_config_parse_key at config.c:595:8
+CT: sane_case at git-compat-util.h:1235:1
+RF: sane_case at git-compat-util.h:1239:1
+CF: git_config_parse_key at config.c:590:9
+CT: iskeychar at config.c:537:1
+RF: iskeychar at config.c:539:1
+CF: git_config_parse_key at config.c:595:8
+CT: sane_case at git-compat-util.h:1235:1
+RF: sane_case at git-compat-util.h:1239:1
+CF: git_config_parse_key at config.c:590:9
+CT: iskeychar at config.c:537:1
+RF: iskeychar at config.c:539:1
+CF: git_config_parse_key at config.c:595:8
+CT: sane_case at git-compat-util.h:1235:1
+RF: sane_case at git-compat-util.h:1239:1
+CF: git_config_parse_key at config.c:590:9
+CT: iskeychar at config.c:537:1
+RF: iskeychar at config.c:539:1
+CF: git_config_parse_key at config.c:595:8
+CT: sane_case at git-compat-util.h:1235:1
+RF: sane_case at git-compat-util.h:1239:1
+CF: git_config_parse_key at config.c:590:9
+CT: iskeychar at config.c:537:1
+RF: iskeychar at config.c:539:1
+CF: git_config_parse_key at config.c:595:8
+CT: sane_case at git-compat-util.h:1235:1
+RF: sane_case at git-compat-util.h:1239:1
+CF: git_config_parse_key at config.c:590:9
+CT: iskeychar at config.c:537:1
+RF: iskeychar at config.c:539:1
+CF: git_config_parse_key at config.c:595:8
+CT: sane_case at git-compat-util.h:1235:1
+RF: sane_case at git-compat-util.h:1239:1
+CF: git_config_parse_key at config.c:590:9
+CT: iskeychar at config.c:537:1
+RF: iskeychar at config.c:539:1
+CF: git_config_parse_key at config.c:595:8
+CT: sane_case at git-compat-util.h:1235:1
+RF: sane_case at git-compat-util.h:1239:1
+CF: git_config_parse_key at config.c:590:9
+CT: iskeychar at config.c:537:1
+RF: iskeychar at config.c:539:1
+CF: git_config_parse_key at config.c:595:8
+CT: sane_case at git-compat-util.h:1235:1
+RF: sane_case at git-compat-util.h:1239:1
+CF: git_config_parse_key at config.c:590:9
+CT: iskeychar at config.c:537:1
+RF: iskeychar at config.c:539:1
+CF: git_config_parse_key at config.c:595:8
+CT: sane_case at git-compat-util.h:1235:1
+RF: sane_case at git-compat-util.h:1239:1
+CF: git_config_parse_key at config.c:590:9
+CT: iskeychar at config.c:537:1
+RF: iskeychar at config.c:539:1
+CF: git_config_parse_key at config.c:595:8
+CT: sane_case at git-compat-util.h:1235:1
+RF: sane_case at git-compat-util.h:1239:1
+CF: git_config_parse_key at config.c:590:9
+CT: iskeychar at config.c:537:1
+RF: iskeychar at config.c:539:1
+CF: git_config_parse_key at config.c:595:8
+CT: sane_case at git-compat-util.h:1235:1
+RF: sane_case at git-compat-util.h:1239:1
+CF: git_config_parse_key at config.c:590:9
+CT: iskeychar at config.c:537:1
+RF: iskeychar at config.c:539:1
+CF: git_config_parse_key at config.c:595:8
+CT: sane_case at git-compat-util.h:1235:1
+RF: sane_case at git-compat-util.h:1239:1
+CF: git_config_parse_key at config.c:590:9
+CT: iskeychar at config.c:537:1
+RF: iskeychar at config.c:539:1
+CF: git_config_parse_key at config.c:595:8
+CT: sane_case at git-compat-util.h:1235:1
+RF: sane_case at git-compat-util.h:1239:1
+CF: git_config_parse_key at config.c:590:9
+CT: iskeychar at config.c:537:1
+RF: iskeychar at config.c:539:1
+CF: git_config_parse_key at config.c:595:8
+CT: sane_case at git-compat-util.h:1235:1
+RF: sane_case at git-compat-util.h:1239:1
+CF: git_config_parse_key at config.c:590:9
+CT: iskeychar at config.c:537:1
+RF: iskeychar at config.c:539:1
+CF: git_config_parse_key at config.c:595:8
+CT: sane_case at git-compat-util.h:1235:1
+RF: sane_case at git-compat-util.h:1239:1
+CF: git_config_parse_key at config.c:590:9
+CT: iskeychar at config.c:537:1
+RF: iskeychar at config.c:539:1
+CF: git_config_parse_key at config.c:595:8
+CT: sane_case at git-compat-util.h:1235:1
+RF: sane_case at git-compat-util.h:1239:1
+CF: git_config_parse_key at config.c:590:9
+CT: iskeychar at config.c:537:1
+RF: iskeychar at config.c:539:1
+CF: git_config_parse_key at config.c:595:8
+CT: sane_case at git-compat-util.h:1235:1
+RF: sane_case at git-compat-util.h:1239:1
+CF: git_config_parse_key at config.c:590:9
+CT: iskeychar at config.c:537:1
+RF: iskeychar at config.c:539:1
+CF: git_config_parse_key at config.c:595:8
+CT: sane_case at git-compat-util.h:1235:1
+RF: sane_case at git-compat-util.h:1239:1
+RF: git_config_parse_key at config.c:608:1
+CF: configset_find_element at config.c:2304:2
+CT: strhash at hashmap.c:11:1
+RF: strhash at hashmap.c:16:1
+CF: configset_find_element at config.c:2304:2
+CT: hashmap_entry_init at hashmap.h:316:1
+RF: hashmap_entry_init at hashmap.h:319:1
+CF: configset_find_element at config.c:2306:16
+CT: hashmap_get at hashmap.c:215:1
+CF: hashmap_get at hashmap.c:218:10
+CT: find_entry_ptr at hashmap.c:137:1
+CF: find_entry_ptr at hashmap.c:139:41
+CT: bucket at hashmap.c:106:1
+RF: bucket at hashmap.c:108:1
+RF: find_entry_ptr at hashmap.c:143:1
+RF: hashmap_get at hashmap.c:219:1
+CF: configset_find_element at config.c:2306:16
+CT: container_of_or_null_offset at git-compat-util.h:1580:1
+RF: container_of_or_null_offset at git-compat-util.h:1582:1
+CF: configset_find_element at config.c:2307:2
+CF: 🔔 No info for this address
+CT: git_configset_get_value_multi at config.c:2427:1
+CF: git_configset_get_value_multi at config.c:2428:33
+CT: configset_find_element at config.c:2293:1
+CF: configset_find_element at config.c:2301:6
+CT: git_config_parse_key at config.c:554:1
+CF: git_config_parse_key at config.c:557:25
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: git_config_parse_key at config.c:581:15
+CF: resolve_symlink at lockfile.c:69:2
+CT: strbuf_setlen at strbuf.h:161:1
+RF: strbuf_setlen at strbuf.h:169:1
+RF: resolve_symlink at lockfile.c:70:1
+RF: 🔔 No info for this address
+CF: run_builtin at git.c:450:2
+CT: commit_pager_choice at git.c:112:1
+RF: commit_pager_choice at git.c:123:1
+CF: run_builtin at git.c:452:15
+CT: get_super_prefix at environment.c:238:1
+CF: 🔔 No info for this address
+CT: commit_pager_choice at git.c:113:2
+RF: commit_pager_choice at git.c:118:3
+CF: 🔔 No info for this address
+CT: get_super_prefix at environment.c:240:5
+CF: run_builtin at git.c:460:2
+CF: 🔔 No info for this address
+CF: run_builtin at git.c:460:2
+CT: trace_pass_fl at trace.h:274:1
+CF: 🔔 No info for this address
+CT: trace_pass_fl at trace.h:275:17
+CF: run_builtin at git.c:461:2
+CT: trace2_cmd_name_fl at trace2.c:335:1
+RF: trace2_cmd_name_fl at trace2.c:349:1
+CF: run_builtin at git.c:462:2
+CT: trace2_cmd_list_config_fl at trace2.c:379:1
+CF: 🔔 No info for this address
+CT: trace2_cmd_name_fl at trace2.c:340:5
+RF: trace2_cmd_name_fl at trace2.c:340:5
+CF: 🔔 No info for this address
+CT: trace2_cmd_list_config_fl at trace2.c:380:5
+CF: run_builtin at git.c:463:2
+CT: trace2_cmd_list_env_vars_fl at trace2.c:387:1
+CF: 🔔 No info for this address
+CT: trace2_cmd_list_env_vars_fl at trace2.c:388:5
+CF: run_builtin at git.c:465:2
+CF: 🔔 No info for this address
+CF: run_builtin at git.c:466:11
+CF: 🔔 No info for this address
+CF: run_builtin at git.c:467:2
+CF: 🔔 No info for this address
+CF: run_builtin at git.c:473:6
+CF: 🔔 No info for this address
+CF: run_builtin at git.c:480:6
+CF: 🔔 No info for this address
+CF: run_builtin at git.c:482:6
+CF: 🔔 No info for this address
+CF: run_builtin at git.c:484:6
+CF: 🔔 No info for this address
+CF: safe_create_dir at path.c:922:7
+CF: 🔔 No info for this address
+CF: safe_create_dir at path.c:927:20
+CF: 🔔 No info for this address
+CF: sanitize_stdfds at setup.c:1676:3
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: sanitize_stdfds at setup.c:1677:1
+CF: Jump to external code
+CT: External code
+RF: sanitize_stdfds at setup.c:0:0
+CF: setup_git_directory_gently_1 at setup.c:1242:37
+CT: git_offset_1st_component at git-compat-util.h:456:1
+CF: git_offset_1st_component at git-compat-util.h:457:9
+CT: git_is_dir_sep at git-compat-util.h:447:1
+RF: git_is_dir_sep at git-compat-util.h:449:1
+RF: git_offset_1st_component at git-compat-util.h:458:1
+CF: setup_git_directory_gently_1 at setup.c:1242:37
+CT: git_offset_1st_component at git-compat-util.h:457:9
+CF: git_offset_1st_component at git-compat-util.h:457:9
+🔔 Tail call without info
+CT: git_is_dir_sep at git-compat-util.h:448:11
+RF: git_is_dir_sep at git-compat-util.h:449:1
+RF: git_offset_1st_component at git-compat-util.h:0:0
+CF: strbuf_add at strbuf.c:300:2
+CT: strbuf_setlen at strbuf.h:161:1
+RF: strbuf_setlen at strbuf.h:169:1
+RF: strbuf_add at strbuf.c:301:1
+RF: strbuf_addstr at strbuf.h:306:1
+CF: refs_verify_refname_available at refs.c:2396:2
+RF: 🔔 No info for this address
+RF: strbuf_addstr at strbuf.h:0:0
+CF: 🔔 No info for this address
+CF: strbuf_add at strbuf.c:300:2
+CT: strbuf_setlen at strbuf.h:161:1
+RF: strbuf_setlen at strbuf.h:169:1
+RF: strbuf_add at strbuf.c:301:1
+RF: strbuf_addstr at strbuf.h:306:1
+RF: strbuf_add_absolute_path at strbuf.c:918:1
+RF: 🔔 No info for this address
+RF: strbuf_addstr at strbuf.h:0:0
+RF: strbuf_add_absolute_path at strbuf.c:0:0
+CF: strbuf_add at strbuf.c:300:2
+CT: strbuf_setlen at strbuf.h:161:1
+RF: strbuf_setlen at strbuf.h:169:1
+RF: strbuf_add at strbuf.c:301:1
+RF: strbuf_addstr at strbuf.h:306:1
+RF: strbuf_worktree_gitdir at path.c:427:1
+RF: 🔔 No info for this address
+RF: strbuf_addstr at strbuf.h:0:0
+RF: strbuf_worktree_gitdir at path.c:0:0
+CF: strbuf_add at strbuf.c:300:2
+CT: strbuf_setlen at strbuf.h:161:1
+RF: strbuf_setlen at strbuf.h:169:1
+RF: strbuf_add at strbuf.c:301:1
+RF: strbuf_addstr at strbuf.h:306:1
+RF: 🔔 No info for this address
+RF: strbuf_addstr at strbuf.h:0:0
+CF: strbuf_add at strbuf.c:300:2
+CT: strbuf_setlen at strbuf.h:161:1
+RF: strbuf_setlen at strbuf.h:169:1
+RF: strbuf_add at strbuf.c:301:1
+RF: 🔔 No info for this address
+CF: strbuf_addbuf at strbuf.c:307:2
+CT: strbuf_setlen at strbuf.h:161:1
+RF: strbuf_setlen at strbuf.h:169:1
+RF: strbuf_addbuf at strbuf.c:308:1
+RF: 🔔 No info for this address
+CF: strbuf_getwholeline at strbuf.c:632:2
+CT: strbuf_setlen at strbuf.h:161:1
+RF: strbuf_setlen at strbuf.h:169:1
+CF: strbuf_getwholeline at strbuf.c:637:2
+CF: 🔔 No info for this address
+CT: 🔔 No info for this address
+RF: 🔔 No info for this address
+CF: 🔔 No info for this address
+CF: strbuf_getwholeline at strbuf.c:638:6
+CF: 🔔 No info for this address
+CF: strbuf_init at strbuf.c:57:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: strbuf_splice at strbuf.c:247:2
+CT: strbuf_setlen at strbuf.h:161:1
+RF: strbuf_setlen at strbuf.h:169:1
+RF: strbuf_splice at strbuf.c:248:1
+RF: strbuf_remove at strbuf.c:294:1
+RF: get_next_component at abspath.c:49:1
+CF: strbuf_realpath_1 at abspath.c:113:32
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: 🔔 No info for this address
+RF: strbuf_remove at strbuf.c:0:0
+RF: get_next_component at abspath.c:0:0
+CF: strbuf_splice at strbuf.c:247:2
+CT: strbuf_setlen at strbuf.h:161:1
+RF: strbuf_setlen at strbuf.h:169:1
+RF: strbuf_splice at strbuf.c:248:1
+RF: strbuf_remove at strbuf.c:294:1
+RF: get_next_component at abspath.c:49:1
+CF: strbuf_realpath_1 at abspath.c:115:32
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: 🔔 No info for this address
+RF: strbuf_remove at strbuf.c:0:0
+RF: get_next_component at abspath.c:0:0
+CF: strbuf_splice at strbuf.c:247:2
+CT: strbuf_setlen at strbuf.h:161:1
+RF: strbuf_setlen at strbuf.h:169:1
+RF: strbuf_splice at strbuf.c:248:1
+RF: strbuf_remove at strbuf.c:294:1
+RF: get_next_component at abspath.c:49:1
+RF: 🔔 No info for this address
+RF: strbuf_remove at strbuf.c:0:0
+RF: get_next_component at abspath.c:0:0
+CF: strbuf_splice at strbuf.c:247:2
+CT: strbuf_setlen at strbuf.h:161:1
+RF: strbuf_setlen at strbuf.h:169:1
+RF: strbuf_splice at strbuf.c:248:1
+RF: strbuf_remove at strbuf.c:294:1
+RF: get_root_part at abspath.c:62:1
+RF: 🔔 No info for this address
+RF: strbuf_remove at strbuf.c:0:0
+RF: get_root_part at abspath.c:0:0
+CF: string_list_init_dup at string-list.c:13:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: strip_last_component at abspath.c:24:25
+CT: git_is_dir_sep at git-compat-util.h:447:1
+RF: git_is_dir_sep at git-compat-util.h:449:1
+CF: strip_last_component at abspath.c:27:2
+CT: strbuf_setlen at strbuf.h:161:1
+RF: strbuf_setlen at strbuf.h:169:1
+RF: strip_last_component at abspath.c:28:1
+RF: 🔔 No info for this address
+CF: strip_last_component at abspath.c:27:2
+CT: strbuf_setlen at strbuf.h:161:1
+RF: strbuf_setlen at strbuf.h:169:1
+RF: strip_last_component at abspath.c:28:1
+RF: 🔔 No info for this address
+CF: unlock_ref at files-backend.c:515:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: unlock_ref at files-backend.c:516:1
+CF: Jump to external code
+CT: External code
+RF: unlock_ref at files-backend.c:0:0
+CF: xdg_config_home at path.c:1542:9
+CT: xdg_config_home_for at path.c:1524:1
+CF: xdg_config_home_for at path.c:1529:16
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: xdg_config_home_for at path.c:1533:9
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: xdg_config_home_for at path.c:1535:10
+CT: mkpathdup at path.c:504:1
+CF: mkpathdup at path.c:508:2
+CT: strbuf_vaddf at strbuf.c:390:1
+CF: strbuf_vaddf at strbuf.c:394:7
+CT: strbuf_avail at strbuf.h:140:1
+RF: strbuf_avail at strbuf.h:142:1
+CF: strbuf_vaddf at strbuf.c:395:3
+CT: strbuf_grow at strbuf.c:92:1
+CF: strbuf_grow at strbuf.c:99:2
+CT: st_mult at git-compat-util.h:991:1
+RF: st_mult at git-compat-util.h:996:1
+CF: strbuf_grow at strbuf.c:99:2
+CT: xrealloc at wrapper.c:127:1
+CF: xrealloc at wrapper.c:135:2
+CT: memory_limit_check at wrapper.c:18:1
+RF: memory_limit_check at wrapper.c:35:1
+CF: xrealloc at wrapper.c:136:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: xrealloc at wrapper.c:140:1
+RF: strbuf_grow at strbuf.c:102:1
+CF: strbuf_vaddf at strbuf.c:397:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: strbuf_vaddf at strbuf.c:401:12
+CT: strbuf_avail at strbuf.h:140:1
+RF: strbuf_avail at strbuf.h:142:1
+CF: strbuf_vaddf at strbuf.c:402:3
+CT: strbuf_grow at strbuf.c:92:1
+CF: strbuf_grow at strbuf.c:99:2
+CT: st_mult at git-compat-util.h:991:1
+RF: st_mult at git-compat-util.h:996:1
+CF: strbuf_grow at strbuf.c:99:2
+CT: xrealloc at wrapper.c:127:1
+CF: xrealloc at wrapper.c:135:2
+CT: memory_limit_check at wrapper.c:18:1
+RF: memory_limit_check at wrapper.c:35:1
+CF: xrealloc at wrapper.c:136:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: xrealloc at wrapper.c:140:1
+RF: strbuf_grow at strbuf.c:102:1
+CF: strbuf_vaddf at strbuf.c:403:9
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: strbuf_vaddf at strbuf.c:404:13
+CT: strbuf_avail at strbuf.h:140:1
+RF: strbuf_avail at strbuf.h:142:1
+CF: strbuf_vaddf at strbuf.c:407:2
+CT: strbuf_setlen at strbuf.h:161:1
+RF: strbuf_setlen at strbuf.h:169:1
+RF: strbuf_vaddf at strbuf.c:408:1
+CF: mkpathdup at path.c:510:2
+CT: strbuf_cleanup_path at path.c:51:1
+CF: strbuf_cleanup_path at path.c:52:21
+CT: cleanup_path at path.c:41:1
+CF: cleanup_path at path.c:43:6
+CT: skip_prefix at git-compat-util.h:676:1
+RF: skip_prefix at git-compat-util.h:684:1
+RF: cleanup_path at path.c:48:1
+RF: strbuf_cleanup_path at path.c:55:1
+CF: mkpathdup at path.c:511:9
+CT: strbuf_detach at strbuf.c:71:1
+CF: strbuf_detach at strbuf.c:73:2
+CT: strbuf_grow at strbuf.c:92:1
+RF: strbuf_grow at strbuf.c:102:1
+CF: strbuf_detach at strbuf.c:77:2
+CT: strbuf_init at strbuf.c:55:1
+CF: strbuf_init at strbuf.c:57:2
+CF: 🔔 No info for this address
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: 🔔 No info for this address
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: Jump to external code
+🔔 Tail call without info
+CT: mkpathdup at path.c:504:1
+CF: mkpathdup at path.c:508:2
+CT: strbuf_vaddf at strbuf.c:390:1
+CF: strbuf_vaddf at strbuf.c:394:7
+CT: strbuf_avail at strbuf.h:141:11
+RF: strbuf_avail at strbuf.h:142:1
+CF: strbuf_vaddf at strbuf.c:395:3
+CT: strbuf_grow at strbuf.c:94:5
+CF: strbuf_grow at strbuf.c:99:2
+CT: st_mult at git-compat-util.h:992:6
+RF: st_mult at git-compat-util.h:996:1
+CF: strbuf_grow at strbuf.c:99:2
+CT: xrealloc at wrapper.c:127:1
+CF: xrealloc at wrapper.c:135:2
+CT: memory_limit_check at wrapper.c:18:1
+RF: memory_limit_check at wrapper.c:35:1
+CF: xrealloc at wrapper.c:136:8
+CF: xdg_config_home at path.c:1542:9
+CT: xdg_config_home_for at path.c:1524:1
+CF: xdg_config_home_for at path.c:1529:16
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: xdg_config_home_for at path.c:1533:9
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: xdg_config_home_for at path.c:1535:10
+CT: mkpathdup at path.c:504:1
+CF: mkpathdup at path.c:508:2
+CT: strbuf_vaddf at strbuf.c:390:1
+CF: strbuf_vaddf at strbuf.c:394:7
+CT: strbuf_avail at strbuf.h:140:1
+RF: strbuf_avail at strbuf.h:142:1
+CF: strbuf_vaddf at strbuf.c:395:3
+CT: strbuf_grow at strbuf.c:92:1
+CF: strbuf_grow at strbuf.c:99:2
+CT: st_mult at git-compat-util.h:991:1
+RF: st_mult at git-compat-util.h:996:1
+CF: strbuf_grow at strbuf.c:99:2
+CT: xrealloc at wrapper.c:127:1
+CF: xrealloc at wrapper.c:135:2
+CT: memory_limit_check at wrapper.c:18:1
+RF: memory_limit_check at wrapper.c:35:1
+CF: xrealloc at wrapper.c:136:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: xrealloc at wrapper.c:140:1
+RF: strbuf_grow at strbuf.c:102:1
+CF: strbuf_vaddf at strbuf.c:397:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: strbuf_vaddf at strbuf.c:401:12
+CT: strbuf_avail at strbuf.h:140:1
+RF: strbuf_avail at strbuf.h:142:1
+CF: strbuf_vaddf at strbuf.c:402:3
+CT: strbuf_grow at strbuf.c:92:1
+CF: strbuf_grow at strbuf.c:99:2
+CT: st_mult at git-compat-util.h:991:1
+RF: st_mult at git-compat-util.h:996:1
+CF: strbuf_grow at strbuf.c:99:2
+CT: xrealloc at wrapper.c:127:1
+CF: xrealloc at wrapper.c:135:2
+CT: memory_limit_check at wrapper.c:18:1
+RF: memory_limit_check at wrapper.c:35:1
+CF: xrealloc at wrapper.c:136:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: xrealloc at wrapper.c:140:1
+RF: strbuf_grow at strbuf.c:102:1
+CF: strbuf_vaddf at strbuf.c:403:9
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: strbuf_vaddf at strbuf.c:404:13
+CT: strbuf_avail at strbuf.h:140:1
+RF: strbuf_avail at strbuf.h:142:1
+CF: strbuf_vaddf at strbuf.c:407:2
+CT: strbuf_setlen at strbuf.h:161:1
+RF: strbuf_setlen at strbuf.h:169:1
+RF: strbuf_vaddf at strbuf.c:408:1
+CF: mkpathdup at path.c:510:2
+CT: strbuf_cleanup_path at path.c:51:1
+CF: strbuf_cleanup_path at path.c:52:21
+CT: cleanup_path at path.c:41:1
+CF: cleanup_path at path.c:43:6
+CT: skip_prefix at git-compat-util.h:676:1
+RF: skip_prefix at git-compat-util.h:684:1
+RF: cleanup_path at path.c:48:1
+RF: strbuf_cleanup_path at path.c:55:1
+CF: mkpathdup at path.c:511:9
+CT: strbuf_detach at strbuf.c:71:1
+CF: strbuf_detach at strbuf.c:73:2
+CT: strbuf_grow at strbuf.c:92:1
+RF: strbuf_grow at strbuf.c:102:1
+CF: strbuf_detach at strbuf.c:77:2
+CT: strbuf_init at strbuf.c:55:1
+CF: strbuf_init at strbuf.c:57:2
+CF: 🔔 No info for this address
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: 🔔 No info for this address
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: Jump to external code
+🔔 Tail call without info
+CT: mkpathdup at path.c:504:1
+CF: mkpathdup at path.c:508:2
+CT: strbuf_vaddf at strbuf.c:390:1
+CF: strbuf_vaddf at strbuf.c:394:7
+CT: strbuf_avail at strbuf.h:141:11
+RF: strbuf_avail at strbuf.h:142:1
+CF: strbuf_vaddf at strbuf.c:395:3
+CT: strbuf_grow at strbuf.c:94:5
+CF: strbuf_grow at strbuf.c:99:2
+CT: st_mult at git-compat-util.h:992:6
+RF: st_mult at git-compat-util.h:996:1
+CF: strbuf_grow at strbuf.c:99:2
+CT: xrealloc at wrapper.c:127:1
+CF: xrealloc at wrapper.c:135:2
+CT: memory_limit_check at wrapper.c:18:1
+RF: memory_limit_check at wrapper.c:35:1
+CF: xrealloc at wrapper.c:136:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: xrealloc at wrapper.c:140:1
+RF: strbuf_grow at strbuf.c:102:1
+CF: strbuf_vaddf at strbuf.c:397:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: strbuf_vaddf at strbuf.c:401:12
+CT: strbuf_avail at strbuf.h:141:11
+RF: strbuf_avail at strbuf.h:142:1
+CF: strbuf_vaddf at strbuf.c:402:3
+CT: strbuf_grow at strbuf.c:94:5
+CF: strbuf_grow at strbuf.c:99:2
+CT: st_mult at git-compat-util.h:992:6
+RF: st_mult at git-compat-util.h:996:1
+CF: strbuf_grow at strbuf.c:99:2
+CT: xrealloc at wrapper.c:127:1
+CF: xrealloc at wrapper.c:135:2
+CT: memory_limit_check at wrapper.c:18:1
+RF: memory_limit_check at wrapper.c:35:1
+CF: xrealloc at wrapper.c:136:8
+CF: xdg_config_home at path.c:1542:9
+CT: xdg_config_home_for at path.c:1524:1
+CF: xdg_config_home_for at path.c:1529:16
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: xdg_config_home_for at path.c:1533:9
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: xdg_config_home_for at path.c:1535:10
+CT: mkpathdup at path.c:504:1
+CF: mkpathdup at path.c:508:2
+CT: strbuf_vaddf at strbuf.c:390:1
+CF: strbuf_vaddf at strbuf.c:394:7
+CT: strbuf_avail at strbuf.h:140:1
+RF: strbuf_avail at strbuf.h:142:1
+CF: strbuf_vaddf at strbuf.c:395:3
+CT: strbuf_grow at strbuf.c:92:1
+CF: strbuf_grow at strbuf.c:99:2
+CT: st_mult at git-compat-util.h:991:1
+RF: st_mult at git-compat-util.h:996:1
+CF: strbuf_grow at strbuf.c:99:2
+CT: xrealloc at wrapper.c:127:1
+CF: xrealloc at wrapper.c:135:2
+CT: memory_limit_check at wrapper.c:18:1
+RF: memory_limit_check at wrapper.c:35:1
+CF: xrealloc at wrapper.c:136:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: xrealloc at wrapper.c:140:1
+RF: strbuf_grow at strbuf.c:102:1
+CF: strbuf_vaddf at strbuf.c:397:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: strbuf_vaddf at strbuf.c:401:12
+CT: strbuf_avail at strbuf.h:140:1
+RF: strbuf_avail at strbuf.h:142:1
+CF: strbuf_vaddf at strbuf.c:407:2
+CT: strbuf_setlen at strbuf.h:161:1
+RF: strbuf_setlen at strbuf.h:169:1
+RF: strbuf_vaddf at strbuf.c:408:1
+CF: mkpathdup at path.c:510:2
+CT: strbuf_cleanup_path at path.c:51:1
+CF: strbuf_cleanup_path at path.c:52:21
+CT: cleanup_path at path.c:41:1
+CF: cleanup_path at path.c:43:6
+CT: skip_prefix at git-compat-util.h:676:1
+RF: skip_prefix at git-compat-util.h:684:1
+RF: cleanup_path at path.c:48:1
+RF: strbuf_cleanup_path at path.c:55:1
+CF: mkpathdup at path.c:511:9
+CT: strbuf_detach at strbuf.c:71:1
+CF: strbuf_detach at strbuf.c:73:2
+CT: strbuf_grow at strbuf.c:92:1
+RF: strbuf_grow at strbuf.c:102:1
+CF: strbuf_detach at strbuf.c:77:2
+CT: strbuf_init at strbuf.c:55:1
+CF: strbuf_init at strbuf.c:57:2
+CF: 🔔 No info for this address
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: 🔔 No info for this address
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: Jump to external code
+🔔 Tail call without info
+CT: mkpathdup at path.c:504:1
+CF: mkpathdup at path.c:508:2
+CT: strbuf_vaddf at strbuf.c:390:1
+CF: strbuf_vaddf at strbuf.c:394:7
+CT: strbuf_avail at strbuf.h:141:11
+RF: strbuf_avail at strbuf.h:142:1
+CF: strbuf_vaddf at strbuf.c:395:3
+CT: strbuf_grow at strbuf.c:94:5
+CF: strbuf_grow at strbuf.c:99:2
+CT: st_mult at git-compat-util.h:992:6
+RF: st_mult at git-compat-util.h:996:1
+CF: strbuf_grow at strbuf.c:99:2
+CT: xrealloc at wrapper.c:127:1
+CF: xrealloc at wrapper.c:135:2
+CT: memory_limit_check at wrapper.c:18:1
+RF: memory_limit_check at wrapper.c:35:1
+CF: xrealloc at wrapper.c:136:8
+CF: xmemdupz at wrapper.c:109:9
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: xmemdupz at wrapper.c:110:1
+CF: Jump to external code
+CT: External code
+RF: xmemdupz at wrapper.c:0:0
+CT: __volatile_list_del at list.h:183:1
+🔔 Tail call without info
+CT: __volatile_list_del at list.h:184:13
+CT: configset_iter at config.c:2223:1
+🔔 Tail call without info
+CT: configset_iter at config.c:2229:16
+CT: const_error at git-compat-util.h:638:1
+🔔 Tail call without info
+CT: const_error at git-compat-util.h:640:1
+CT: dir_inside_of at dir.c:3063:1
+CF: dir_inside_of at dir.c:3068:29
+CT: cmp_icase at dir.c:3049:1
+CT: 🔔 No info for this address
+CF: 🔔 No info for this address
+CT: cmp_icase at dir.c:3051:10
+CT: do_xmallocz at wrapper.c:76:1
+🔔 Tail call without info
+CT: do_xmallocz at wrapper.c:78:5
+CT: dummy_pthread_init at thread-utils.c:101:1
+🔔 Tail call without info
+CT: dummy_pthread_init at thread-utils.c:112:1
+CT: empty_ref_iterator_advance at iterator.c:50:1
+🔔 Tail call without info
+CT: empty_ref_iterator_advance at iterator.c:51:9
+CT: fill at attr.c:1021:1
+🔔 Tail call without info
+CT: fill at attr.c:1018:12
+CT: get_extended_base_var at config.c:917:1
+🔔 Tail call without info
+CT: get_extended_base_var at config.c:918:32
+CT: git_SHA1_Update_Chunked at sha1-chunked.c:4:1
+🔔 Tail call without info
+CT: git_SHA1_Update_Chunked at sha1-chunked.c:9:9
+CT: git_attr_internal at attr.c:210:1
+CF: git_attr_internal at attr.c:213:7
+CT: attr_name_valid at attr.c:176:1
+CT: 🔔 No info for this address
+CF: 🔔 No info for this address
+CT: attr_name_valid at attr.c:182:10
+CT: git_config_from_file_with_options at config.c:1993:1
+🔔 Tail call without info
+CT: git_config_from_file_with_options at config.c:1997:5
+CT: git_configset_clear at config.c:2378:1
+🔔 Tail call without info
+CT: git_configset_clear at config.c:2381:5
+CT: git_configset_get_value at config.c:2410:1
+CF: git_configset_get_value at config.c:2417:11
+CT: 🔔 No info for this address
+CF: 🔔 No info for this address
+CT: git_default_core_config at config.c:1493:1
+🔔 Tail call without info
+CT: git_default_core_config at config.c:1492:12
+CT: git_deflate_end_gently at zlib.c:227:1
+CF: git_deflate_end_gently at zlib.c:230:2
+CT: zlib_pre_call at zlib.c:38:1
+CF: zlib_pre_call at zlib.c:43:18
+CT: zlib_buf_cap at zlib.c:33:1
+RF: zlib_buf_cap at zlib.c:35:1
+CF: zlib_pre_call at zlib.c:44:19
+CT: zlib_buf_cap at zlib.c:33:1
+RF: zlib_buf_cap at zlib.c:35:1
+RF: zlib_pre_call at zlib.c:45:1
+CF: git_deflate_end_gently at zlib.c:231:11
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: git_deflate_end_gently at zlib.c:232:2
+CT: zlib_post_call at zlib.c:48:1
+RF: zlib_post_call at zlib.c:65:1
+RF: git_deflate_end_gently at zlib.c:234:1
+CT: Jump to external code
+CF: Jump to external code
+🔔 Tail call without info
+CT: git_deflate_abort at zlib.c:207:1
+CF: git_deflate_abort at zlib.c:210:2
+CT: zlib_pre_call at zlib.c:38:1
+CF: zlib_pre_call at zlib.c:43:18
+CT: zlib_buf_cap at zlib.c:34:45
+RF: zlib_buf_cap at zlib.c:35:1
+CF: zlib_pre_call at zlib.c:44:19
+CT: zlib_buf_cap at zlib.c:34:45
+RF: zlib_buf_cap at zlib.c:35:1
+RF: zlib_pre_call at zlib.c:45:1
+CF: git_deflate_abort at zlib.c:211:11
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: git_deflate_abort at zlib.c:212:2
+CT: zlib_post_call at zlib.c:48:1
+RF: zlib_post_call at zlib.c:65:1
+RF: git_deflate_abort at zlib.c:214:1
+RF: Jump to external code
+CT: git_is_dir_sep at git-compat-util.h:447:1
+🔔 Tail call without info
+CT: git_is_dir_sep at git-compat-util.h:448:11
+CT: git_wcwidth at utf8.c:85:1
+🔔 Tail call without info
+CT: git_wcwidth at utf8.c:93:10
+CT: hash_to_hex_algop at hex.c:150:1
+🔔 Tail call without info
+CT: hash_to_hex_algop at hex.c:153:17
+CT: hash_to_hex_algop_r at hex.c:122:1
+🔔 Tail call without info
+CT: hash_to_hex_algop_r at hex.c:131:5
+CT: hasheq_algop at hash.h:231:1
+CF: hasheq_algop at hash.h:238:10
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+🔔 Tail call without info
+CT: hasheq_algop at hash.h:236:5
+CT: hashmap_iter_next at hashmap.c:295:1
+🔔 Tail call without info
+CT: hashmap_iter_next at hashmap.c:296:24
+CT: hold_lock_file_for_update_timeout at lockfile.h:178:1
+🔔 Tail call without info
+CT: hold_lock_file_for_update_timeout at lockfile.h:179:9
+CT: is_tempfile_active at tempfile.h:222:1
+🔔 Tail call without info
+CT: is_tempfile_active at tempfile.h:223:9
+CT: list_add_tail at list.h:65:1
+🔔 Tail call without info
+CT: list_add_tail at list.h:66:6
+CT: noop_core_config at git-compat-util.h:419:1
+🔔 Tail call without info
+CT: noop_core_config at git-compat-util.h:421:1
+CT: oideq at hash.h:247:1
+🔔 Tail call without info
+CT: oideq at hash.h:249:11
+CT: push_stack at attr.c:831:1
+🔔 Tail call without info
+CT: push_stack at attr.c:832:5
+CT: raceproof_create_file at files-backend.c:925:1
+CF: raceproof_create_file at files-backend.c:952:8
+CT: 🔔 No info for this address
+CF: 🔔 No info for this address
+CT: ref_iterator_abort at iterator.c:23:1
+🔔 Tail call without info
+CT: ref_iterator_abort at iterator.c:24:29
+CT: refs_read_raw_ref at refs.c:1779:1
+CF: refs_read_raw_ref at refs.c:1781:7
+CT: 🔔 No info for this address
+CF: 🔔 No info for this address
+CT: refs_verify_refname_available at refs.c:2335:1
+CF: refs_verify_refname_available at refs.c:2353:24
+CT: 🔔 No info for this address
+CF: 🔔 No info for this address
+CT: repo_config_clear at config.c:2556:1
+🔔 Tail call without info
+CT: repo_config_clear at config.c:2557:5
+CT: repo_set_hash_algo at repository.c:96:1
+🔔 Tail call without info
+CT: repo_set_hash_algo at repository.c:97:20
+CT: run_builtin at git.c:421:1
+CF: run_builtin at git.c:427:23
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: run_builtin at git.c:441:2
+CT: precompose_argv_prefix at precompose_utf8.c:94:1
+CT: 🔔 No info for this address
+CF: 🔔 No info for this address
+CT: precompose_argv_prefix at precompose_utf8.c:97:11
+CT: run_builtin at git.c:421:1
+CF: run_builtin at git.c:441:2
+CT: precompose_argv_prefix at precompose_utf8.c:94:1
+CT: 🔔 No info for this address
+CF: 🔔 No info for this address
+CT: precompose_argv_prefix at precompose_utf8.c:97:11
+CT: safe_create_dir at path.c:920:1
+CF: safe_create_dir at path.c:921:6
+CT: 🔔 No info for this address
+CF: 🔔 No info for this address
+CT: strbuf_addch at strbuf.h:229:1
+🔔 Tail call without info
+CT: strbuf_addch at strbuf.h:228:20
+CT: strbuf_getwholeline at strbuf.c:626:1
+CF: strbuf_getwholeline at strbuf.c:629:6
+CT: 🔔 No info for this address
+CF: 🔔 No info for this address
+CT: strbuf_grow at strbuf.c:92:1
+🔔 Tail call without info
+CT: strbuf_grow at strbuf.c:94:5
+CT: strbuf_init at strbuf.c:55:1
+CF: strbuf_init at strbuf.c:57:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+🔔 Tail call without info
+CT: strbuf_init at strbuf.c:56:16
+CT: strbuf_remove at strbuf.c:292:1
+🔔 Tail call without info
+CT: strbuf_remove at strbuf.c:293:2
+CT: strbuf_setlen at strbuf.h:161:1
+RF: strbuf_setlen at strbuf.h:169:1
+CT: 🔔 No info for this address
+RF: 🔔 No info for this address
+CT: strvec_init at strvec.c:8:1
+CF: strvec_init at strvec.c:10:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+🔔 Tail call without info
+CT: strvec_init at strvec.c:10:2
+CT: tr2tls_start_process_clock at tr2_tls.c:21:1
+🔔 Tail call without info
+CT: tr2tls_start_process_clock at tr2_tls.c:22:5
+CT: trace2_cmd_set_config_fl at trace2.c:396:1
+🔔 Tail call without info
+CT: trace2_cmd_set_config_fl at trace2.c:397:5
+CT: trace2_def_repo_fl at trace2.c:648:1
+🔔 Tail call without info
+CT: trace2_def_repo_fl at trace2.c:652:5
+CT: warn_if_unremovable at wrapper.c:610:1
+🔔 Tail call without info
+CT: warn_if_unremovable at wrapper.c:612:5
+RF: configset_find_element at config.c:2309:1
+RF: git_configset_get_value_multi at config.c:2430:1
+RF: git_configset_get_value at config.c:2424:1
+RF: repo_config_get_value at config.c:2573:1
+RF: git_config_get_value at config.c:2685:1
+CF: git_config_parse_key at config.c:581:15
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: git_config_parse_key at config.c:581:15
+CT: xmallocz at wrapper.c:93:9
+CF: xmallocz at wrapper.c:93:9
+🔔 Tail call without info
+CT: do_xmallocz at wrapper.c:78:5
+CF: do_xmallocz at wrapper.c:85:8
+CT: do_xmalloc at wrapper.c:46:1
+CF: do_xmalloc at wrapper.c:49:6
+CT: memory_limit_check at wrapper.c:18:1
+RF: memory_limit_check at wrapper.c:35:1
+CF: do_xmalloc at wrapper.c:51:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: do_xmalloc at wrapper.c:68:1
+RF: do_xmallocz at wrapper.c:89:1
+RF: xmallocz at wrapper.c:0:0
+CF: git_config_parse_key at config.c:590:9
+CT: iskeychar at config.c:538:20
+RF: iskeychar at config.c:539:1
+CF: git_config_parse_key at config.c:595:8
+CT: sane_case at git-compat-util.h:1237:5
+RF: sane_case at git-compat-util.h:1239:1
+CF: git_config_parse_key at config.c:590:9
+CT: iskeychar at config.c:538:20
+RF: iskeychar at config.c:539:1
+CF: git_config_parse_key at config.c:595:8
+CT: sane_case at git-compat-util.h:1237:5
+RF: sane_case at git-compat-util.h:1239:1
+CF: git_config_parse_key at config.c:590:9
+CT: iskeychar at config.c:538:20
+RF: iskeychar at config.c:539:1
+CF: git_config_parse_key at config.c:595:8
+CT: sane_case at git-compat-util.h:1237:5
+RF: sane_case at git-compat-util.h:1239:1
+CF: git_config_parse_key at config.c:590:9
+CT: iskeychar at config.c:538:20
+RF: iskeychar at config.c:539:1
+CF: git_config_parse_key at config.c:595:8
+CT: sane_case at git-compat-util.h:1237:5
+RF: sane_case at git-compat-util.h:1239:1
+CF: git_config_parse_key at config.c:590:9
+CT: iskeychar at config.c:538:20
+RF: iskeychar at config.c:539:1
+CF: git_config_parse_key at config.c:595:8
+CT: sane_case at git-compat-util.h:1237:5
+RF: sane_case at git-compat-util.h:1239:1
+CF: git_config_parse_key at config.c:590:9
+CT: iskeychar at config.c:538:20
+RF: iskeychar at config.c:539:1
+CF: git_config_parse_key at config.c:595:8
+CT: sane_case at git-compat-util.h:1237:5
+RF: sane_case at git-compat-util.h:1239:1
+CF: git_config_parse_key at config.c:590:9
+CT: iskeychar at config.c:538:20
+RF: iskeychar at config.c:539:1
+CF: git_config_parse_key at config.c:595:8
+CT: sane_case at git-compat-util.h:1237:5
+RF: sane_case at git-compat-util.h:1239:1
+CF: git_config_parse_key at config.c:590:9
+CT: iskeychar at config.c:538:20
+RF: iskeychar at config.c:539:1
+CF: git_config_parse_key at config.c:595:8
+CT: sane_case at git-compat-util.h:1237:5
+RF: sane_case at git-compat-util.h:1239:1
+CF: git_config_parse_key at config.c:590:9
+CT: iskeychar at config.c:538:20
+RF: iskeychar at config.c:539:1
+CF: git_config_parse_key at config.c:595:8
+CT: sane_case at git-compat-util.h:1237:5
+RF: sane_case at git-compat-util.h:1239:1
+CF: git_config_parse_key at config.c:590:9
+CT: iskeychar at config.c:538:20
+RF: iskeychar at config.c:539:1
+CF: git_config_parse_key at config.c:595:8
+CT: sane_case at git-compat-util.h:1237:5
+RF: sane_case at git-compat-util.h:1239:1
+CF: git_config_parse_key at config.c:590:9
+CT: iskeychar at config.c:538:20
+RF: iskeychar at config.c:539:1
+CF: git_config_parse_key at config.c:595:8
+CT: sane_case at git-compat-util.h:1237:5
+RF: sane_case at git-compat-util.h:1239:1
+CF: git_config_parse_key at config.c:590:9
+CT: iskeychar at config.c:538:20
+RF: iskeychar at config.c:539:1
+CF: git_config_parse_key at config.c:595:8
+CT: sane_case at git-compat-util.h:1237:5
+RF: sane_case at git-compat-util.h:1239:1
+CF: git_config_parse_key at config.c:590:9
+CT: iskeychar at config.c:538:20
+RF: iskeychar at config.c:539:1
+CF: git_config_parse_key at config.c:595:8
+CT: sane_case at git-compat-util.h:1237:5
+RF: sane_case at git-compat-util.h:1239:1
+CF: git_config_parse_key at config.c:590:9
+CT: iskeychar at config.c:538:20
+RF: iskeychar at config.c:539:1
+CF: git_config_parse_key at config.c:595:8
+CT: sane_case at git-compat-util.h:1237:5
+RF: sane_case at git-compat-util.h:1239:1
+CF: git_config_parse_key at config.c:590:9
+CT: iskeychar at config.c:538:20
+RF: iskeychar at config.c:539:1
+CF: git_config_parse_key at config.c:595:8
+CT: sane_case at git-compat-util.h:1237:5
+RF: sane_case at git-compat-util.h:1239:1
+CF: git_config_parse_key at config.c:590:9
+CT: iskeychar at config.c:538:20
+RF: iskeychar at config.c:539:1
+CF: git_config_parse_key at config.c:595:8
+CT: sane_case at git-compat-util.h:1237:5
+RF: sane_case at git-compat-util.h:1239:1
+CF: git_config_parse_key at config.c:590:9
+CT: iskeychar at config.c:538:20
+RF: iskeychar at config.c:539:1
+CF: git_config_parse_key at config.c:595:8
+CT: sane_case at git-compat-util.h:1237:5
+RF: sane_case at git-compat-util.h:1239:1
+CF: git_config_parse_key at config.c:590:9
+CT: iskeychar at config.c:538:20
+RF: iskeychar at config.c:539:1
+CF: git_config_parse_key at config.c:595:8
+CT: sane_case at git-compat-util.h:1237:5
+RF: sane_case at git-compat-util.h:1239:1
+CF: git_config_parse_key at config.c:590:9
+CT: iskeychar at config.c:538:20
+RF: iskeychar at config.c:539:1
+CF: git_config_parse_key at config.c:595:8
+CT: sane_case at git-compat-util.h:1237:5
+RF: sane_case at git-compat-util.h:1239:1
+CF: git_config_parse_key at config.c:590:9
+CT: iskeychar at config.c:538:20
+RF: iskeychar at config.c:539:1
+CF: git_config_parse_key at config.c:595:8
+CT: sane_case at git-compat-util.h:1237:5
+RF: sane_case at git-compat-util.h:1239:1
+RF: git_config_parse_key at config.c:608:1
+CF: configset_find_element at config.c:2304:2
+CT: strhash at hashmap.c:13:12
+RF: strhash at hashmap.c:13:9
+CF: configset_find_element at config.c:2304:2
+CT: hashmap_entry_init at hashmap.h:317:10
+RF: hashmap_entry_init at hashmap.h:319:1
+CF: configset_find_element at config.c:2306:16
+CT: hashmap_get at hashmap.c:216:10
+CF: hashmap_get at hashmap.c:218:10
+CT: find_entry_ptr at hashmap.c:137:1
+CF: find_entry_ptr at hashmap.c:139:41
+CT: bucket at hashmap.c:107:37
+RF: bucket at hashmap.c:108:1
+RF: find_entry_ptr at hashmap.c:143:1
+RF: hashmap_get at hashmap.c:219:1
+CF: configset_find_element at config.c:2306:16
+CT: container_of_or_null_offset at git-compat-util.h:1579:21
+RF: container_of_or_null_offset at git-compat-util.h:1582:1
+CF: configset_find_element at config.c:2307:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: configset_find_element at config.c:2309:1
+RF: git_configset_get_value_multi at config.c:2430:1
+RF: 🔔 No info for this address
+RF: git_config_get_value at config.c:0:0
+RF: configset_find_element at config.c:2309:1
+RF: git_configset_get_value_multi at config.c:2430:1
+RF: git_configset_get_value at config.c:2424:1
+RF: repo_config_get_value at config.c:2573:1
+RF: git_config_get_value at config.c:2685:1
+CF: git_config_parse_key at config.c:581:15
+CT: xmallocz at wrapper.c:93:9
+CF: xmallocz at wrapper.c:93:9
+🔔 Tail call without info
+CT: do_xmallocz at wrapper.c:78:5
+CF: do_xmallocz at wrapper.c:85:8
+CT: do_xmalloc at wrapper.c:46:1
+CF: do_xmalloc at wrapper.c:49:6
+CT: memory_limit_check at wrapper.c:18:1
+RF: memory_limit_check at wrapper.c:35:1
+CF: do_xmalloc at wrapper.c:51:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: do_xmalloc at wrapper.c:68:1
+RF: do_xmallocz at wrapper.c:89:1
+RF: xmallocz at wrapper.c:0:0
+CF: git_config_parse_key at config.c:590:9
+CT: iskeychar at config.c:538:20
+RF: iskeychar at config.c:539:1
+CF: git_config_parse_key at config.c:595:8
+CT: sane_case at git-compat-util.h:1237:5
+RF: sane_case at git-compat-util.h:1239:1
+CF: git_config_parse_key at config.c:590:9
+CT: iskeychar at config.c:538:20
+RF: iskeychar at config.c:539:1
+CF: git_config_parse_key at config.c:595:8
+CT: sane_case at git-compat-util.h:1237:5
+RF: sane_case at git-compat-util.h:1239:1
+CF: git_config_parse_key at config.c:590:9
+CT: iskeychar at config.c:538:20
+RF: iskeychar at config.c:539:1
+CF: git_config_parse_key at config.c:595:8
+CT: sane_case at git-compat-util.h:1237:5
+RF: sane_case at git-compat-util.h:1239:1
+CF: git_config_parse_key at config.c:590:9
+CT: iskeychar at config.c:538:20
+RF: iskeychar at config.c:539:1
+CF: git_config_parse_key at config.c:595:8
+CT: sane_case at git-compat-util.h:1237:5
+RF: sane_case at git-compat-util.h:1239:1
+CF: git_config_parse_key at config.c:590:9
+CT: iskeychar at config.c:538:20
+RF: iskeychar at config.c:539:1
+CF: git_config_parse_key at config.c:595:8
+CT: sane_case at git-compat-util.h:1237:5
+RF: sane_case at git-compat-util.h:1239:1
+CF: git_config_parse_key at config.c:590:9
+CT: iskeychar at config.c:538:20
+RF: iskeychar at config.c:539:1
+CF: git_config_parse_key at config.c:595:8
+CT: sane_case at git-compat-util.h:1237:5
+RF: sane_case at git-compat-util.h:1239:1
+CF: git_config_parse_key at config.c:590:9
+CT: iskeychar at config.c:538:20
+RF: iskeychar at config.c:539:1
+CF: git_config_parse_key at config.c:595:8
+CT: sane_case at git-compat-util.h:1237:5
+RF: sane_case at git-compat-util.h:1239:1
+CF: git_config_parse_key at config.c:590:9
+CT: iskeychar at config.c:538:20
+RF: iskeychar at config.c:539:1
+CF: git_config_parse_key at config.c:595:8
+CT: sane_case at git-compat-util.h:1237:5
+RF: sane_case at git-compat-util.h:1239:1
+CF: git_config_parse_key at config.c:590:9
+CT: iskeychar at config.c:538:20
+RF: iskeychar at config.c:539:1
+CF: git_config_parse_key at config.c:595:8
+CT: sane_case at git-compat-util.h:1237:5
+RF: sane_case at git-compat-util.h:1239:1
+CF: git_config_parse_key at config.c:590:9
+CT: iskeychar at config.c:538:20
+RF: iskeychar at config.c:539:1
+CF: git_config_parse_key at config.c:595:8
+CT: sane_case at git-compat-util.h:1237:5
+RF: sane_case at git-compat-util.h:1239:1
+CF: git_config_parse_key at config.c:590:9
+CT: iskeychar at config.c:538:20
+RF: iskeychar at config.c:539:1
+CF: git_config_parse_key at config.c:595:8
+CT: sane_case at git-compat-util.h:1237:5
+RF: sane_case at git-compat-util.h:1239:1
+CF: git_config_parse_key at config.c:590:9
+CT: iskeychar at config.c:538:20
+RF: iskeychar at config.c:539:1
+CF: git_config_parse_key at config.c:595:8
+CT: sane_case at git-compat-util.h:1237:5
+RF: sane_case at git-compat-util.h:1239:1
+CF: git_config_parse_key at config.c:590:9
+CT: iskeychar at config.c:538:20
+RF: iskeychar at config.c:539:1
+CF: git_config_parse_key at config.c:595:8
+CT: sane_case at git-compat-util.h:1237:5
+RF: sane_case at git-compat-util.h:1239:1
+CF: git_config_parse_key at config.c:590:9
+CT: iskeychar at config.c:538:20
+RF: iskeychar at config.c:539:1
+CF: git_config_parse_key at config.c:595:8
+CT: sane_case at git-compat-util.h:1237:5
+RF: sane_case at git-compat-util.h:1239:1
+CF: git_config_parse_key at config.c:590:9
+CT: iskeychar at config.c:538:20
+RF: iskeychar at config.c:539:1
+CF: git_config_parse_key at config.c:595:8
+CT: sane_case at git-compat-util.h:1237:5
+RF: sane_case at git-compat-util.h:1239:1
+CF: git_config_parse_key at config.c:590:9
+CT: iskeychar at config.c:538:20
+RF: iskeychar at config.c:539:1
+CF: git_config_parse_key at config.c:595:8
+CT: sane_case at git-compat-util.h:1237:5
+RF: sane_case at git-compat-util.h:1239:1
+CF: git_config_parse_key at config.c:590:9
+CT: iskeychar at config.c:538:20
+RF: iskeychar at config.c:539:1
+CF: git_config_parse_key at config.c:595:8
+CT: sane_case at git-compat-util.h:1237:5
+RF: sane_case at git-compat-util.h:1239:1
+CF: git_config_parse_key at config.c:590:9
+CT: iskeychar at config.c:538:20
+RF: iskeychar at config.c:539:1
+CF: git_config_parse_key at config.c:595:8
+CT: sane_case at git-compat-util.h:1237:5
+RF: sane_case at git-compat-util.h:1239:1
+CF: git_config_parse_key at config.c:590:9
+CT: iskeychar at config.c:538:20
+RF: iskeychar at config.c:539:1
+CF: git_config_parse_key at config.c:595:8
+CT: sane_case at git-compat-util.h:1237:5
+RF: sane_case at git-compat-util.h:1239:1
+CF: git_config_parse_key at config.c:590:9
+CT: iskeychar at config.c:538:20
+RF: iskeychar at config.c:539:1
+CF: git_config_parse_key at config.c:595:8
+CT: sane_case at git-compat-util.h:1237:5
+RF: sane_case at git-compat-util.h:1239:1
+RF: git_config_parse_key at config.c:608:1
+CF: configset_find_element at config.c:2304:2
+CT: strhash at hashmap.c:13:12
+RF: strhash at hashmap.c:13:9
+CF: configset_find_element at config.c:2304:2
+CT: hashmap_entry_init at hashmap.h:317:10
+RF: hashmap_entry_init at hashmap.h:319:1
+CF: configset_find_element at config.c:2306:16
+CT: hashmap_get at hashmap.c:216:10
+CF: hashmap_get at hashmap.c:218:10
+CT: find_entry_ptr at hashmap.c:137:1
+CF: find_entry_ptr at hashmap.c:139:41
+CT: bucket at hashmap.c:107:37
+RF: bucket at hashmap.c:108:1
+RF: find_entry_ptr at hashmap.c:143:1
+RF: hashmap_get at hashmap.c:219:1
+CF: configset_find_element at config.c:2306:16
+CT: container_of_or_null_offset at git-compat-util.h:1579:21
+RF: container_of_or_null_offset at git-compat-util.h:1582:1
+CF: configset_find_element at config.c:2307:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: configset_find_element at config.c:2309:1
+RF: git_configset_get_value_multi at config.c:2430:1
+RF: 🔔 No info for this address
+RF: git_config_get_value at config.c:0:0
+RF: deactivate_tempfile at tempfile.c:128:1
+CF: Jump to external code
+CT: External code
+RF: deactivate_tempfile at tempfile.c:0:0
+RF: dir_inside_of at dir.c:3087:1
+RF: 🔔 No info for this address
+RF: do_xmalloc at wrapper.c:68:1
+RF: xmalloc at wrapper.c:73:1
+CF: attr_hashmap_add at attr.c:107:2
+CT: memhash at hashmap.c:30:1
+RF: memhash at hashmap.c:38:1
+CF: attr_hashmap_add at attr.c:107:2
+CT: hashmap_entry_init at hashmap.h:316:1
+RF: hashmap_entry_init at hashmap.h:319:1
+CF: attr_hashmap_add at attr.c:112:2
+CT: hashmap_add at hashmap.c:232:1
+CF: hashmap_add at hashmap.c:236:3
+CT: alloc_table at hashmap.c:77:1
+CF: alloc_table at hashmap.c:79:2
+CT: xcalloc at wrapper.c:143:1
+CF: xcalloc at wrapper.c:149:2
+CT: memory_limit_check at wrapper.c:18:1
+RF: memory_limit_check at wrapper.c:35:1
+CF: xcalloc at wrapper.c:150:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: xcalloc at wrapper.c:156:1
+RF: alloc_table at hashmap.c:92:1
+CF: hashmap_add at hashmap.c:238:6
+CT: bucket at hashmap.c:106:1
+RF: bucket at hashmap.c:108:1
+RF: hashmap_add at hashmap.c:249:1
+RF: attr_hashmap_add at attr.c:113:1
+CF: git_attr_internal at attr.c:225:3
+CT: hashmap_get_size at hashmap.h:325:1
+RF: hashmap_get_size at hashmap.h:331:1
+CF: git_attr_internal at attr.c:229:2
+CT: hashmap_unlock at attr.c:47:1
+RF: hashmap_unlock at attr.c:49:1
+RF: git_attr_internal at attr.c:232:1
+RF: git_attr at attr.c:237:1
+RF: xcalloc at wrapper.c:156:1
+RF: alloc_table at hashmap.c:92:1
+CF: hashmap_add at hashmap.c:238:6
+CT: bucket at hashmap.c:107:37
+RF: bucket at hashmap.c:108:1
+RF: hashmap_add at hashmap.c:249:1
+RF: attr_hashmap_add at attr.c:0:0
+CF: 🔔 No info for this address
+CT: hashmap_get_size at hashmap.h:326:5
+RF: hashmap_get_size at hashmap.h:331:1
+RF: 🔔 No info for this address
+RF: git_configset_get_value at config.c:2424:1
+RF: 🔔 No info for this address
+RF: git_is_dir_sep at git-compat-util.h:449:1
+CF: get_next_component at abspath.c:43:29
+CT: git_is_dir_sep at git-compat-util.h:447:1
+RF: git_is_dir_sep at git-compat-util.h:449:1
+CF: normalize_path_copy_len at path.c:1177:7
+CT: git_is_dir_sep at git-compat-util.h:447:1
+RF: git_is_dir_sep at git-compat-util.h:449:1
+CF: normalize_path_copy_len at path.c:1177:7
+CT: git_is_dir_sep at git-compat-util.h:447:1
+RF: git_is_dir_sep at git-compat-util.h:449:1
+CF: normalize_path_copy_len at path.c:1179:11
+CT: git_is_dir_sep at git-compat-util.h:447:1
+RF: git_is_dir_sep at git-compat-util.h:449:1
+CF: normalize_path_copy_len at path.c:1179:11
+CT: git_is_dir_sep at git-compat-util.h:447:1
+RF: git_is_dir_sep at git-compat-util.h:449:1
+CF: normalize_path_copy_len at path.c:1179:11
+CT: git_is_dir_sep at git-compat-util.h:447:1
+RF: git_is_dir_sep at git-compat-util.h:449:1
+CF: normalize_path_copy_len at path.c:1179:11
+CT: git_is_dir_sep at git-compat-util.h:447:1
+RF: git_is_dir_sep at git-compat-util.h:449:1
+CF: strip_last_component at abspath.c:24:25
+CT: git_is_dir_sep at git-compat-util.h:447:1
+RF: raceproof_create_file at files-backend.c:990:1
+RF: 🔔 No info for this address
+RF: refs_read_raw_ref at refs.c:1788:1
+RF: 🔔 No info for this address
+RF: refs_verify_refname_available at refs.c:2425:1
+RF: 🔔 No info for this address
+RF: run_builtin at git.c:487:1
+RF: 🔔 No info for this address
+RF: safe_create_dir at path.c:929:1
+RF: 🔔 No info for this address
+RF: strbuf_getwholeline at strbuf.c:670:1
+RF: 🔔 No info for this address
+RF: strbuf_init at strbuf.c:60:1
+RF: strbuf_detach at strbuf.c:79:1
+RF: mkpathdup at path.c:512:1
+RF: xdg_config_home_for at path.c:1538:1
+RF: xdg_config_home at path.c:1543:1
+RF: xrealloc at wrapper.c:140:1
+RF: strbuf_grow at strbuf.c:102:1
+CF: strbuf_vaddf at strbuf.c:397:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: strbuf_vaddf at strbuf.c:401:12
+CT: strbuf_avail at strbuf.h:141:11
+RF: strbuf_avail at strbuf.h:142:1
+CF: strbuf_vaddf at strbuf.c:402:3
+CT: strbuf_grow at strbuf.c:94:5
+CF: strbuf_grow at strbuf.c:99:2
+CT: st_mult at git-compat-util.h:992:6
+RF: st_mult at git-compat-util.h:996:1
+CF: strbuf_grow at strbuf.c:99:2
+CT: xrealloc at wrapper.c:127:1
+CF: xrealloc at wrapper.c:135:2
+CT: memory_limit_check at wrapper.c:18:1
+RF: memory_limit_check at wrapper.c:35:1
+CF: xrealloc at wrapper.c:136:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+RF: xrealloc at wrapper.c:140:1
+RF: strbuf_grow at strbuf.c:102:1
+CF: strbuf_vaddf at strbuf.c:403:9
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: strbuf_vaddf at strbuf.c:404:13
+CT: strbuf_avail at strbuf.h:141:11
+RF: strbuf_avail at strbuf.h:142:1
+CF: strbuf_vaddf at strbuf.c:407:2
+CT: 🔔 No info for this address
+RF: 🔔 No info for this address
+RF: strbuf_vaddf at strbuf.c:408:1
+CF: mkpathdup at path.c:510:2
+CT: strbuf_cleanup_path at path.c:51:1
+CF: strbuf_cleanup_path at path.c:52:21
+CT: cleanup_path at path.c:43:6
+CF: cleanup_path at path.c:43:6
+CT: skip_prefix at git-compat-util.h:678:8
+RF: skip_prefix at git-compat-util.h:684:1
+RF: cleanup_path at path.c:48:1
+RF: strbuf_cleanup_path at path.c:55:1
+CF: mkpathdup at path.c:511:9
+CT: strbuf_detach at strbuf.c:71:1
+CF: strbuf_detach at strbuf.c:73:2
+CT: strbuf_grow at strbuf.c:94:5
+RF: strbuf_grow at strbuf.c:102:1
+CF: strbuf_detach at strbuf.c:77:2
+CT: strbuf_init at strbuf.c:56:16
+RF: strbuf_init at strbuf.c:60:1
+RF: strbuf_detach at strbuf.c:79:1
+RF: mkpathdup at path.c:512:1
+RF: xdg_config_home at path.c:0:0
+RF: strbuf_init at strbuf.c:60:1
+RF: strbuf_detach at strbuf.c:79:1
+RF: mkpathdup at path.c:512:1
+RF: xdg_config_home_for at path.c:1538:1
+RF: xdg_config_home at path.c:1543:1
+RF: xrealloc at wrapper.c:140:1
+RF: strbuf_grow at strbuf.c:102:1
+CF: strbuf_vaddf at strbuf.c:397:8
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: strbuf_vaddf at strbuf.c:401:12
+CT: strbuf_avail at strbuf.h:141:11
+RF: strbuf_avail at strbuf.h:142:1
+CF: strbuf_vaddf at strbuf.c:407:2
+CT: 🔔 No info for this address
+RF: 🔔 No info for this address
+RF: strbuf_vaddf at strbuf.c:408:1
+CF: mkpathdup at path.c:510:2
+CT: strbuf_cleanup_path at path.c:51:1
+CF: strbuf_cleanup_path at path.c:52:21
+CT: cleanup_path at path.c:43:6
+CF: cleanup_path at path.c:43:6
+CT: skip_prefix at git-compat-util.h:678:8
+RF: skip_prefix at git-compat-util.h:684:1
+RF: cleanup_path at path.c:48:1
+RF: strbuf_cleanup_path at path.c:55:1
+CF: mkpathdup at path.c:511:9
+CT: strbuf_detach at strbuf.c:71:1
+CF: strbuf_detach at strbuf.c:73:2
+CT: strbuf_grow at strbuf.c:94:5
+RF: strbuf_grow at strbuf.c:102:1
+CF: strbuf_detach at strbuf.c:77:2
+CT: strbuf_init at strbuf.c:56:16
+RF: strbuf_init at strbuf.c:60:1
+RF: strbuf_detach at strbuf.c:79:1
+RF: mkpathdup at path.c:512:1
+RF: xdg_config_home at path.c:0:0
+RF: strbuf_init at strbuf.c:60:1
+RF: strbuf_detach at strbuf.c:79:1
+RF: mkpathdup at path.c:512:1
+RF: xdg_config_home_for at path.c:1538:1
+RF: xdg_config_home at path.c:1543:1
+RF: xrealloc at wrapper.c:140:1
+RF: strbuf_grow at strbuf.c:102:1
+CF: strbuf_vaddf at strbuf.c:403:9
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: strbuf_vaddf at strbuf.c:404:13
+CT: strbuf_avail at strbuf.h:141:11
+RF: strbuf_avail at strbuf.h:142:1
+CF: strbuf_vaddf at strbuf.c:407:2
+CT: 🔔 No info for this address
+RF: 🔔 No info for this address
+RF: strbuf_vaddf at strbuf.c:408:1
+CF: mkpathdup at path.c:510:2
+CT: strbuf_cleanup_path at path.c:51:1
+CF: strbuf_cleanup_path at path.c:52:21
+CT: cleanup_path at path.c:43:6
+CF: cleanup_path at path.c:43:6
+CT: skip_prefix at git-compat-util.h:678:8
+RF: skip_prefix at git-compat-util.h:684:1
+RF: cleanup_path at path.c:48:1
+RF: strbuf_cleanup_path at path.c:55:1
+CF: mkpathdup at path.c:511:9
+CT: strbuf_detach at strbuf.c:71:1
+CF: strbuf_detach at strbuf.c:73:2
+CT: strbuf_grow at strbuf.c:94:5
+RF: strbuf_grow at strbuf.c:102:1
+CF: strbuf_detach at strbuf.c:77:2
+CT: strbuf_init at strbuf.c:56:16
+RF: strbuf_init at strbuf.c:60:1
+RF: strbuf_detach at strbuf.c:79:1
+RF: mkpathdup at path.c:512:1
+RF: xdg_config_home at path.c:0:0
+🔔 Tail call without info
