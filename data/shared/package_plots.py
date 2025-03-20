@@ -111,7 +111,5 @@ def divergences_by_compiler(df):
   g.set(
     title=f"Divergent call tree trace events during {friendly_name} executions at O1",
     xlabel="Compiler",
-    # xbound=(0, df["Order"].max()),
     ylabel="Fraction of unique trace events",
-    # ybound=(0, 1.004),
   )
