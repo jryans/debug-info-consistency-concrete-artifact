@@ -83,15 +83,15 @@ def load_data():
 def normalise(df):
   df["Norm. Unique Events"] = df["Unique Events"] / df.groupby(["Variant"])["Unique Events"].transform("max")
 
-def divergences_by_compiler_family(df):
+def divergences_by_compiler(df):
   df = df.copy()
   df = df[df["Divergence Type"] != "before"]
   families = df.index.get_level_values("Family")
   versions = df.index.get_level_values("Version")
-  df["Tool"] = families + " " + versions
+  df["Compiler"] = families + " " + versions
   g = sns.displot(
     df,
-    x="Tool",
+    x="Compiler",
     weights="Norm. Unique Events",
     hue="Divergence Type",
     kind="hist",
@@ -110,7 +110,7 @@ def divergences_by_compiler_family(df):
   ax.grid(False, "major", "x")
   g.set(
     title=f"Divergent call tree trace events during {friendly_name} executions at O1",
-    xlabel="Tool",
+    xlabel="Compiler",
     # xbound=(0, df["Order"].max()),
     ylabel="Fraction of unique trace events",
     # ybound=(0, 1.004),
