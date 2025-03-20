@@ -1,8 +1,3 @@
-CF: check_or_sanitize_refname at refs.c:250:7
-CT: Jump to external code
-CF: Jump to external code
-CT: External code
-RF: Jump to external code
 CF: check_refname_component at refs.c:234:7
 CT: Jump to external code
 CF: Jump to external code
@@ -63,11 +58,6 @@ CT: Jump to external code
 CF: Jump to external code
 CT: External code
 CF: hashmap_clear_ at hashmap.c:209:2
-CT: Jump to external code
-CF: Jump to external code
-CT: External code
-RF: Jump to external code
-CF: init_repository_format at setup.c:712:2
 CT: Jump to external code
 CF: Jump to external code
 CT: External code

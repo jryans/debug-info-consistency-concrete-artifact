@@ -1,0 +1,544 @@
+CT: __volatile_list_del at list.h:183:1
+CT: __volatile_list_del at list.h:184:13 (TCWI)
+CT: add_dir_entry at name-hash.c:86:1
+CT: add_dir_entry at name-hash.c:86:1 (TCWI)
+CT: add_index_entry at read-cache.c:1418:1
+CT: add_index_entry at read-cache.c:1418:1 (TCWI)
+CT: add_name_hash at name-hash.c:630:1
+CT: add_name_hash at name-hash.c:631:5 (TCWI)
+CT: add_patterns_from_file_1 at dir.c:1199:1
+CT: add_patterns_from_file_1 at dir.c:1199:1 (TCWI)
+CT: add_untracked at dir.c:2364:1
+CT: add_untracked at dir.c:2365:5 (TCWI)
+CT: apply_save_autostash at sequencer.c:4478:1
+CT: apply_save_autostash at sequencer.c:4478:1 (TCWI)
+CT: buffer_slab_at_peek at commit.c:288:1
+CT: buffer_slab_at_peek at commit.c:288:1 (TCWI)
+CT: cache_tree_update at cache-tree.c:462:1
+CT: cache_tree_update at cache-tree.c:462:1 (TCWI)
+CT: cascade_filter at convert.c:1788:1
+CT: cascade_filter at convert.c:1788:1 (TCWI)
+CT: cb_descend at cbtree.c:99:1
+CT: cb_descend at cbtree.c:100:5 (TCWI)
+CT: chdir_notify_register at chdir-notify.c:17:1
+CT: chdir_notify_register at chdir-notify.c:17:1 (TCWI)
+CT: check_and_freshen at object-file.c:995:1
+CT: check_and_freshen at object-file.c:995:1 (TCWI)
+CT: check_and_freshen_file at object-file.c:960:1
+CT: check_and_freshen_file at object-file.c:960:1 (TCWI)
+CT: check_and_freshen_odb at object-file.c:971:1
+CT: check_and_freshen_odb at object-file.c:971:1 (TCWI)
+CT: check_or_sanitize_refname at refs.c:247:1
+CT: check_or_sanitize_refname at refs.c:247:1 (TCWI)
+CT: check_refname_format at refs.c:290:1
+CT: check_refname_format at refs.c:291:9 (TCWI)
+CT: checkout_entry_ca at entry.c:467:1
+CT: checkout_entry_ca at entry.c:467:1 (TCWI)
+CT: child_close at run-command.c:333:1
+CT: child_close at run-command.c:333:1 (TCWI)
+CT: close_commit_graph at commit-graph.c:718:1
+CT: close_commit_graph at commit-graph.c:718:1 (TCWI)
+CT: close_istream at streaming.c:441:1
+CT: close_istream at streaming.c:441:1 (TCWI)
+CT: close_tempfile_gently at tempfile.c:293:1
+CT: close_tempfile_gently at tempfile.c:293:1 (TCWI)
+CT: commit_lock_file at lockfile.c:205:1
+CT: commit_lock_file at lockfile.c:205:1 (TCWI)
+CT: configset_iter at config.c:2223:1
+CT: configset_iter at config.c:2229:16 (TCWI)
+CT: convert_to_git at convert.c:1408:1
+CT: convert_to_git at convert.c:1408:1 (TCWI)
+CT: create_file at entry.c:80:1
+CT: create_file at entry.c:81:15 (TCWI)
+CT: create_object at object.c:144:1
+CT: create_object at object.c:144:1 (TCWI)
+CT: decode_tree_entry at tree-walk.c:27:1
+CT: decode_tree_entry at tree-walk.c:27:1 (TCWI)
+CT: delete_tempfile at tempfile.c:355:1
+CT: delete_tempfile at tempfile.c:355:1 (TCWI)
+CT: diff_tree_oid at tree-diff.c:703:1
+CT: diff_tree_oid at tree-diff.c:703:1 (TCWI)
+CT: display at progress.c:108:1
+CT: display at progress.c:108:1 (TCWI)
+CT: display_throughput at progress.c:187:1
+CT: display_throughput at progress.c:192:5 (TCWI)
+CT: do_for_each_repo_ref at refs.c:1561:1
+CT: do_for_each_repo_ref at refs.c:1558:12 (TCWI)
+CT: do_for_each_repo_ref_iterator at iterator.c:412:1
+CT: do_for_each_repo_ref_iterator at iterator.c:412:1 (TCWI)
+CT: do_lookup_replace_object at replace-object.c:69:1
+CT: do_lookup_replace_object at replace-object.c:69:1 (TCWI)
+CT: do_oid_object_info_extended at object-file.c:1538:1
+CT: do_oid_object_info_extended at object-file.c:1538:1 (TCWI)
+CT: do_remove_scheduled_dirs at symlinks.c:279:1
+CT: do_remove_scheduled_dirs at symlinks.c:280:16 (TCWI)
+CT: do_xmalloc at wrapper.c:46:1
+CT: do_xmalloc at wrapper.c:46:1 (TCWI)
+CT: do_xmallocz at wrapper.c:76:1
+CT: do_xmallocz at wrapper.c:78:5 (TCWI)
+CT: dummy_pthread_init at thread-utils.c:101:1
+CT: dummy_pthread_init at thread-utils.c:112:1 (TCWI)
+CT: emit_line at diff.c:709:1
+CT: emit_line at diff.c:709:1 (TCWI)
+CT: empty_ref_iterator_abort at iterator.c:61:1
+CT: empty_ref_iterator_abort at iterator.c:61:1 (TCWI)
+CT: empty_ref_iterator_advance at iterator.c:50:1
+CT: empty_ref_iterator_advance at iterator.c:51:9 (TCWI)
+CT: empty_ref_iterator_begin at iterator.c:73:1
+CT: empty_ref_iterator_begin at iterator.c:73:1 (TCWI)
+CT: ensure_full_index at sparse-index.c:426:1
+CT: ensure_full_index at sparse-index.c:427:2 (TCWI)
+CT: expand_base_dir at repository.c:36:1
+CT: expand_base_dir at repository.c:36:1 (TCWI)
+CT: expand_index at sparse-index.c:291:1
+CT: expand_index at sparse-index.c:291:1 (TCWI)
+CT: extend_abbrev_len at object-name.c:655:1
+CT: extend_abbrev_len at object-name.c:658:15 (TCWI)
+CT: fdopen_tempfile at tempfile.c:261:1
+CT: fdopen_tempfile at tempfile.c:261:1 (TCWI)
+CT: files_init_db at files-backend.c:3257:1
+CT: files_init_db at files-backend.c:3257:1 (TCWI)
+CT: files_ref_iterator_abort at files-backend.c:802:1
+CT: files_ref_iterator_abort at files-backend.c:802:1 (TCWI)
+CT: files_ref_iterator_advance at files-backend.c:756:1
+CT: files_ref_iterator_advance at files-backend.c:756:1 (TCWI)
+CT: files_ref_store_create at files-backend.c:84:1
+CT: files_ref_store_create at files-backend.c:84:1 (TCWI)
+CT: fill at attr.c:1021:1
+CT: fill at attr.c:1018:12 (TCWI)
+CT: find_header_mem at commit.c:1659:1
+CT: find_header_mem at commit.c:1659:1 (TCWI)
+CT: finish_command at run-command.c:977:1
+CT: finish_command at run-command.c:977:1 (TCWI)
+CT: flush_bulk_checkin_packfile at bulk-checkin.c:48:1
+CT: flush_bulk_checkin_packfile at bulk-checkin.c:47:13 (TCWI)
+CT: flush_odb_transaction at bulk-checkin.c:366:1
+CT: flush_odb_transaction at bulk-checkin.c:366:1 (TCWI)
+CT: fmt_ident at ident.c:452:1
+CT: fmt_ident at ident.c:452:1 (TCWI)
+CT: for_each_userdiff_driver_list at userdiff.c:449:1
+CT: for_each_userdiff_driver_list at userdiff.c:452:16 (TCWI)
+CT: format_config at config.c:237:1
+CT: format_config at config.c:237:1 (TCWI)
+CT: format_object_header_literally at object-file.c:1060:1
+CT: format_object_header_literally at object-file.c:1060:1 (TCWI)
+CT: format_person_part at pretty.c:765:1
+CT: format_person_part at pretty.c:765:1 (TCWI)
+CT: fprintf_ln at strbuf.c:944:1
+CT: fprintf_ln at strbuf.c:944:1 (TCWI)
+CT: free_worktrees at worktree.c:11:1
+CT: free_worktrees at worktree.c:11:1 (TCWI)
+CT: get_arg at parse-options.c:48:1
+CT: get_arg at parse-options.c:48:1 (TCWI)
+CT: get_commit_output_encoding at environment.c:377:1
+CT: get_commit_output_encoding at environment.c:378:29 (TCWI)
+CT: get_common_dir_noenv at setup.c:306:1
+CT: get_common_dir_noenv at setup.c:306:1 (TCWI)
+CT: get_extended_base_var at config.c:917:1
+CT: get_extended_base_var at config.c:918:32 (TCWI)
+CT: get_git_common_dir at environment.c:216:1
+CT: get_git_common_dir at environment.c:217:21 (TCWI)
+CT: get_main_ref_store at refs.c:1999:1
+CT: get_main_ref_store at refs.c:2000:7 (TCWI)
+CT: get_oid_hex_algop at hex.c:71:1
+CT: get_oid_hex_algop at hex.c:71:1 (TCWI)
+CT: get_oid_with_context_1 at object-name.c:1910:1
+CT: get_oid_with_context_1 at object-name.c:1910:1 (TCWI)
+CT: get_short_oid at object-name.c:521:1
+CT: get_short_oid at object-name.c:521:1 (TCWI)
+CT: get_tempfile_fd at tempfile.c:279:1
+CT: get_tempfile_fd at tempfile.c:279:1 (TCWI)
+CT: get_tempfile_fp at tempfile.c:286:1
+CT: get_tempfile_fp at tempfile.c:286:1 (TCWI)
+CT: get_tempfile_path at tempfile.c:272:1
+CT: get_tempfile_path at tempfile.c:272:1 (TCWI)
+CT: get_value at config.c:316:1
+CT: get_value at config.c:316:1 (TCWI)
+CT: get_value at parse-options.c:106:1
+CT: get_value at parse-options.c:106:1 (TCWI)
+CT: gettimeofday_nanos at trace.c:376:1
+CT: gettimeofday_nanos at trace.c:376:1 (TCWI)
+CT: git_SHA1_Update_Chunked at sha1-chunked.c:4:1
+CT: git_SHA1_Update_Chunked at sha1-chunked.c:9:9 (TCWI)
+CT: git_color_default_config at color.c:429:1
+CT: git_color_default_config at color.c:429:1 (TCWI)
+CT: git_config at config.c:2673:1
+CT: git_config at config.c:2674:2 (TCWI)
+CT: git_config_bool at config.c:1448:1
+CT: git_config_bool at config.c:1448:1 (TCWI)
+CT: git_config_copy_or_rename_section_in_file at config.c:3549:1
+CT: git_config_copy_or_rename_section_in_file at config.c:3549:1 (TCWI)
+CT: git_config_from_file_with_options at config.c:1993:1
+CT: git_config_from_file_with_options at config.c:1997:5 (TCWI)
+CT: git_config_pathname at config.c:1464:1
+CT: git_config_pathname at config.c:1464:1 (TCWI)
+CT: git_config_rename_section_in_file at config.c:3701:1
+CT: git_config_rename_section_in_file at config.c:3702:9 (TCWI)
+CT: git_config_set_multivar_in_file at config.c:3452:1
+CT: git_config_set_multivar_in_file at config.c:3452:1 (TCWI)
+CT: git_config_set_multivar_in_file_gently at config.c:3204:1
+CT: git_config_set_multivar_in_file_gently at config.c:3204:1 (TCWI)
+CT: git_config_string at config.c:1456:1
+CT: git_config_string at config.c:1457:5 (TCWI)
+CT: git_configset_clear at config.c:2378:1
+CT: git_configset_clear at config.c:2381:5 (TCWI)
+CT: git_configset_get_bool at config.c:2476:1
+CT: git_configset_get_bool at config.c:2476:1 (TCWI)
+CT: git_configset_get_bool_or_int at config.c:2487:1
+CT: git_configset_get_bool_or_int at config.c:2487:1 (TCWI)
+CT: git_configset_get_int at config.c:2456:1
+CT: git_configset_get_int at config.c:2456:1 (TCWI)
+CT: git_configset_get_maybe_bool at config.c:2497:1
+CT: git_configset_get_maybe_bool at config.c:2497:1 (TCWI)
+CT: git_configset_get_ulong at config.c:2466:1
+CT: git_configset_get_ulong at config.c:2466:1 (TCWI)
+CT: git_default_advice_config at advice.c:139:1
+CT: git_default_advice_config at advice.c:139:1 (TCWI)
+CT: git_default_config at config.c:1880:1
+CT: git_default_config at config.c:1880:1 (TCWI)
+CT: git_default_core_config at config.c:1493:1
+CT: git_default_core_config at config.c:1492:12 (TCWI)
+CT: git_diff_basic_config at diff.c:433:1
+CT: git_diff_basic_config at diff.c:433:1 (TCWI)
+CT: git_diff_ui_config at diff.c:347:1
+CT: git_diff_ui_config at diff.c:347:1 (TCWI)
+CT: git_env_bool at config.c:2100:1
+CT: git_env_bool at config.c:2100:1 (TCWI)
+CT: git_hash_sha1_final_oid at object-file.c:105:1
+CT: git_hash_sha1_final_oid at object-file.c:105:1 (TCWI)
+CT: git_is_dir_sep at git-compat-util.h:447:1
+CT: git_is_dir_sep at git-compat-util.h:448:11 (TCWI)
+CT: git_mkstemp_mode at wrapper.c:503:1
+CT: git_mkstemp_mode at wrapper.c:503:1 (TCWI)
+CT: git_mkstemps_mode at wrapper.c:446:1
+CT: git_mkstemps_mode at wrapper.c:446:1 (TCWI)
+CT: git_open_with_retry at open.c:5:1
+CT: git_open_with_retry at open.c:5:1 (TCWI)
+CT: git_status_config at commit.c:1398:1
+CT: git_status_config at commit.c:1398:1 (TCWI)
+CT: git_wcwidth at utf8.c:85:1
+CT: git_wcwidth at utf8.c:93:10 (TCWI)
+CT: handshake at transport.c:305:1
+CT: handshake at transport.c:305:1 (TCWI)
+CT: hash_index_entry at name-hash.c:109:1
+CT: hash_index_entry at name-hash.c:110:8 (TCWI)
+CT: hash_object_file_literally at object-file.c:1877:1
+CT: hash_object_file_literally at object-file.c:1877:1 (TCWI)
+CT: hash_to_hex_algop at hex.c:150:1
+CT: hash_to_hex_algop at hex.c:153:17 (TCWI)
+CT: hash_to_hex_algop_r at hex.c:122:1
+CT: hash_to_hex_algop_r at hex.c:131:5 (TCWI)
+CT: hasheq_algop at hash.h:231:1
+CT: hasheq_algop at hash.h:236:5 (TCWI)
+CT: hashfd_internal at csum-file.c:147:1
+CT: hashfd_internal at csum-file.c:147:1 (TCWI)
+CT: hashmap_add at hashmap.c:232:1
+CT: hashmap_add at hashmap.c:232:1 (TCWI)
+CT: hashmap_get_from_hash at hashmap.h:376:1
+CT: hashmap_get_from_hash at hashmap.h:376:1 (TCWI)
+CT: hashmap_init at hashmap.c:155:1
+CT: hashmap_init at hashmap.c:158:2 (TCWI)
+CT: hashmap_iter_next at hashmap.c:295:1
+CT: hashmap_iter_next at hashmap.c:296:24 (TCWI)
+CT: hold_lock_file_for_update at lockfile.h:191:1
+CT: hold_lock_file_for_update at lockfile.h:192:9 (TCWI)
+CT: hold_lock_file_for_update_timeout at lockfile.h:178:1
+CT: hold_lock_file_for_update_timeout at lockfile.h:179:9 (TCWI)
+CT: hold_lock_file_for_update_timeout_mode at lockfile.c:176:1
+CT: hold_lock_file_for_update_timeout_mode at lockfile.c:176:1 (TCWI)
+CT: ident_is_sufficient at ident.c:586:1
+CT: ident_is_sufficient at ident.c:588:38 (TCWI)
+CT: index_name_stage_pos at read-cache.c:577:1
+CT: index_name_stage_pos at read-cache.c:577:1 (TCWI)
+CT: init_buffer_slab_with_stride at commit.c:288:1
+CT: init_buffer_slab_with_stride at commit.c:288:1 (TCWI)
+CT: init_ref_exclusions at revision.c:1538:1
+CT: init_ref_exclusions at revision.c:1538:1 (TCWI)
+CT: init_repository_format at setup.c:709:1
+CT: init_repository_format at setup.c:709:1 (TCWI)
+CT: is_hfs_dot_generic at utf8.c:719:1
+CT: is_hfs_dot_generic at utf8.c:719:1 (TCWI)
+CT: is_hfs_dot_str at utf8.c:756:1
+CT: is_hfs_dot_str at utf8.c:756:1 (TCWI)
+CT: is_tempfile_active at tempfile.h:222:1
+CT: is_tempfile_active at tempfile.h:223:9 (TCWI)
+CT: iter at oidtree.c:76:1
+CT: iter at oidtree.c:76:1 (TCWI)
+CT: last_matching_pattern_from_lists at dir.c:1510:1
+CT: last_matching_pattern_from_lists at dir.c:1510:1 (TCWI)
+CT: list_add_tail at list.h:65:1
+CT: list_add_tail at list.h:66:6 (TCWI)
+CT: list_objects_filter_init at list-objects-filter-options.c:419:1
+CT: list_objects_filter_init at list-objects-filter-options.c:421:2 (TCWI)
+CT: load_cache_entry_block at read-cache.c:2138:1
+CT: load_cache_entry_block at read-cache.c:2135:22 (TCWI)
+CT: lock_file at lockfile.c:75:1
+CT: lock_file at lockfile.c:75:1 (TCWI)
+CT: lookup_commit_reference_gently at commit.c:35:1
+CT: lookup_commit_reference_gently at commit.c:35:1 (TCWI)
+CT: map_loose_object_1 at object-file.c:1219:1
+CT: map_loose_object_1 at object-file.c:1219:1 (TCWI)
+CT: mark_fsmonitor_valid at fsmonitor.h:82:1
+CT: mark_fsmonitor_valid at fsmonitor.h:82:1 (TCWI)
+CT: match_pathspec_with_flags at dir.c:522:1
+CT: match_pathspec_with_flags at dir.c:522:1 (TCWI)
+CT: mem_pool__ce_calloc at read-cache.c:86:1
+CT: mem_pool__ce_calloc at read-cache.c:88:7 (TCWI)
+CT: mem_pool_alloc_block at mem-pool.c:38:1
+CT: mem_pool_alloc_block at mem-pool.c:38:1 (TCWI)
+CT: mem_pool_init at mem-pool.c:59:1
+CT: mem_pool_init at mem-pool.c:63:5 (TCWI)
+CT: memintern at hashmap.c:331:1
+CT: memintern at hashmap.c:331:1 (TCWI)
+CT: merged_entry at unpack-trees.c:2518:1
+CT: merged_entry at unpack-trees.c:2518:1 (TCWI)
+CT: noop_core_config at git-compat-util.h:419:1
+CT: noop_core_config at git-compat-util.h:421:1 (TCWI)
+CT: normalize_path_copy_len at path.c:1119:1
+CT: normalize_path_copy_len at path.c:1119:1 (TCWI)
+CT: null_filter_fn at convert.c:1555:1
+CT: null_filter_fn at convert.c:1558:5 (TCWI)
+CT: null_free_fn at convert.c:1572:1
+CT: null_free_fn at convert.c:1574:1 (TCWI)
+CT: object_as_type at object.c:161:1
+CT: object_as_type at object.c:161:1 (TCWI)
+CT: odb_loose_path at object-file.c:437:1
+CT: odb_loose_path at object-file.c:437:1 (TCWI)
+CT: oid_pos at hash-lookup.c:55:1
+CT: oid_pos at hash-lookup.c:60:5 (TCWI)
+CT: oidclr at hash.h:301:1
+CT: oidclr at hash.h:301:1 (TCWI)
+CT: oidcpy at hash.h:267:1
+CT: oidcpy at hash.h:268:2 (TCWI)
+CT: oideq at hash.h:247:1
+CT: oideq at hash.h:249:11 (TCWI)
+CT: parse_object_with_flags at object.c:270:1
+CT: parse_object_with_flags at object.c:270:1 (TCWI)
+CT: parse_oid_hex_algop at hex.c:100:1
+CT: parse_oid_hex_algop at hex.c:100:1 (TCWI)
+CT: parse_options_check at parse-options.c:458:1
+CT: parse_options_check at parse-options.c:458:1 (TCWI)
+CT: parse_refspec at refspec.c:24:1
+CT: parse_refspec at refspec.c:24:1 (TCWI)
+CT: path_in_sparse_checkout_1 at dir.c:1456:1
+CT: path_in_sparse_checkout_1 at dir.c:1456:1 (TCWI)
+CT: precompose_string_if_needed at precompose_utf8.c:64:1
+CT: precompose_string_if_needed at precompose_utf8.c:64:1 (TCWI)
+CT: prefix_ref_iterator_abort at iterator.c:368:1
+CT: prefix_ref_iterator_abort at iterator.c:368:1 (TCWI)
+CT: prefix_ref_iterator_advance at iterator.c:305:1
+CT: prefix_ref_iterator_advance at iterator.c:305:1 (TCWI)
+CT: prep_parse_options at diff.c:5423:1
+CT: prep_parse_options at diff.c:5423:1 (TCWI)
+CT: push_stack at attr.c:831:1
+CT: push_stack at attr.c:832:5 (TCWI)
+CT: quote_c_style_counted at quote.c:265:1
+CT: quote_c_style_counted at quote.c:265:1 (TCWI)
+CT: read_istream_filtered at streaming.c:89:1
+CT: read_istream_filtered at streaming.c:93:9 (TCWI)
+CT: read_istream_loose at streaming.c:171:1
+CT: read_istream_loose at streaming.c:171:1 (TCWI)
+CT: read_object_file_extended at object-file.c:1706:1
+CT: read_object_file_extended at object-file.c:1706:1 (TCWI)
+CT: read_ref_full at refs.c:379:1
+CT: read_ref_full at refs.c:379:1 (TCWI)
+CT: read_very_early_config at config.c:2280:1
+CT: read_very_early_config at config.c:2280:1 (TCWI)
+CT: read_worktree_config at setup.c:514:1
+CT: read_worktree_config at setup.c:514:1 (TCWI)
+CT: ref_exists at refs.c:400:1
+CT: ref_exists at refs.c:401:9 (TCWI)
+CT: ref_iterator_abort at iterator.c:23:1
+CT: ref_iterator_abort at iterator.c:24:29 (TCWI)
+CT: refname_atom_parser_internal at ref-filter.c:250:1
+CT: refname_atom_parser_internal at ref-filter.c:250:1 (TCWI)
+CT: refs_create_symref at refs.c:2142:1
+CT: refs_create_symref at refs.c:2142:1 (TCWI)
+CT: refs_ref_exists at refs.c:394:1
+CT: refs_ref_exists at refs.c:394:1 (TCWI)
+CT: refs_resolve_ref_unsafe at refs.c:1801:1
+CT: refs_resolve_ref_unsafe at refs.c:1801:1 (TCWI)
+CT: refs_resolve_refdup at refs.c:354:1
+CT: refs_resolve_refdup at refs.c:354:1 (TCWI)
+CT: release_revisions_topo_walk_info at revision.c:3574:1
+CT: release_revisions_topo_walk_info at revision.c:3575:5 (TCWI)
+CT: remotes_remote_get at remote.c:695:1
+CT: remotes_remote_get at remote.c:696:9 (TCWI)
+CT: remotes_remote_get_1 at remote.c:666:1
+CT: remotes_remote_get_1 at remote.c:666:1 (TCWI)
+CT: remove_fsmonitor at fsmonitor.c:574:1
+CT: remove_fsmonitor at fsmonitor.c:575:12 (TCWI)
+CT: remove_merge_branch_state at branch.c:804:1
+CT: remove_merge_branch_state at branch.c:804:1 (TCWI)
+CT: rename_tempfile at tempfile.c:331:1
+CT: rename_tempfile at tempfile.c:331:1 (TCWI)
+CT: replace_dir at path.c:91:1
+CT: replace_dir at path.c:91:1 (TCWI)
+CT: repo_config at config.c:2563:1
+CT: repo_config at config.c:2563:1 (TCWI)
+CT: repo_config_clear at config.c:2556:1
+CT: repo_config_clear at config.c:2557:5 (TCWI)
+CT: repo_config_get_bool at config.c:2620:1
+CT: repo_config_get_bool at config.c:2620:1 (TCWI)
+CT: repo_config_get_bool_or_int at config.c:2627:1
+CT: repo_config_get_bool_or_int at config.c:2627:1 (TCWI)
+CT: repo_config_get_int at config.c:2606:1
+CT: repo_config_get_int at config.c:2606:1 (TCWI)
+CT: repo_config_get_maybe_bool at config.c:2634:1
+CT: repo_config_get_maybe_bool at config.c:2634:1 (TCWI)
+CT: repo_config_get_pathname at config.c:2641:1
+CT: repo_config_get_pathname at config.c:2641:1 (TCWI)
+CT: repo_config_get_string at config.c:2584:1
+CT: repo_config_get_string at config.c:2584:1 (TCWI)
+CT: repo_config_get_string_tmp at config.c:2595:1
+CT: repo_config_get_string_tmp at config.c:2595:1 (TCWI)
+CT: repo_config_get_ulong at config.c:2613:1
+CT: repo_config_get_ulong at config.c:2613:1 (TCWI)
+CT: repo_config_get_value at config.c:2570:1
+CT: repo_config_get_value at config.c:2570:1 (TCWI)
+CT: repo_dwim_ref at refs.c:725:1
+CT: repo_dwim_ref at refs.c:725:1 (TCWI)
+CT: repo_format_commit_message at pretty.c:1859:1
+CT: repo_format_commit_message at pretty.c:1859:1 (TCWI)
+CT: repo_get_oid at object-name.c:1703:1
+CT: repo_get_oid at object-name.c:1703:1 (TCWI)
+CT: repo_has_object_file_with_flags at object-file.c:2303:1
+CT: repo_has_object_file_with_flags at object-file.c:2304:19 (TCWI)
+CT: repo_has_promisor_remote at promisor-remote.c:198:1
+CT: repo_has_promisor_remote at promisor-remote.c:198:1 (TCWI)
+CT: repo_parse_commit_gently at commit.c:541:1
+CT: repo_parse_commit_gently at commit.c:542:9 (TCWI)
+CT: repo_parse_commit_internal at commit.c:507:1
+CT: repo_parse_commit_internal at commit.c:513:5 (TCWI)
+CT: repo_peel_to_type at object-name.c:1083:1
+CT: repo_peel_to_type at object-name.c:1084:5 (TCWI)
+CT: repo_read_config at config.c:2519:1
+CT: repo_read_config at config.c:2519:1 (TCWI)
+CT: repo_read_index at repository.c:302:1
+CT: repo_read_index at repository.c:302:1 (TCWI)
+CT: repo_set_hash_algo at repository.c:96:1
+CT: repo_set_hash_algo at repository.c:97:20 (TCWI)
+CT: repo_set_worktree at repository.c:133:1
+CT: repo_set_worktree at repository.c:133:1 (TCWI)
+CT: repo_unuse_commit_buffer at commit.c:349:1
+CT: repo_unuse_commit_buffer at commit.c:349:1 (TCWI)
+CT: reset_lstat_cache at symlinks.c:42:1
+CT: reset_lstat_cache at symlinks.c:42:1 (TCWI)
+CT: rest_is_empty at sequencer.c:1102:1
+CT: rest_is_empty at sequencer.c:1102:1 (TCWI)
+CT: run_diffstat at diff.c:4570:1
+CT: run_diffstat at diff.c:4570:1 (TCWI)
+CT: safe_create_leading_directories_1 at object-file.c:345:1
+CT: safe_create_leading_directories_1 at object-file.c:345:1 (TCWI)
+CT: save_autostash at sequencer.c:4497:1
+CT: save_autostash at sequencer.c:4498:9 (TCWI)
+CT: setup_explicit_git_dir at setup.c:885:1
+CT: setup_explicit_git_dir at setup.c:881:20 (TCWI)
+CT: setup_git_directory_gently at setup.c:1428:1
+CT: setup_git_directory_gently at setup.c:1428:1 (TCWI)
+CT: setup_git_env at environment.c:163:1
+CT: setup_git_env at environment.c:163:1 (TCWI)
+CT: show_file_mode_name at diff.c:6098:1
+CT: show_file_mode_name at diff.c:6098:1 (TCWI)
+CT: sigchain_push at sigchain.c:20:1
+CT: sigchain_push at sigchain.c:20:1 (TCWI)
+CT: sort_packs at packfile.c:944:1
+CT: sort_packs at packfile.c:944:1 (TCWI)
+CT: st_add at git-compat-util.h:981:1
+CT: st_add at git-compat-util.h:982:2 (TCWI)
+CT: start_delayed_progress at progress.c:283:1
+CT: start_delayed_progress at progress.c:283:1 (TCWI)
+CT: start_progress_delay at progress.c:254:1
+CT: start_progress_delay at progress.c:254:1 (TCWI)
+CT: stop_progress_msg at progress.c:350:1
+CT: stop_progress_msg at progress.c:350:1 (TCWI)
+CT: strbuf_add at strbuf.c:297:1
+CT: strbuf_add at strbuf.c:297:1 (TCWI)
+CT: strbuf_addch at strbuf.h:229:1
+CT: strbuf_addch at strbuf.h:228:20 (TCWI)
+CT: strbuf_addch at strbuf.h:229:1
+CT: strbuf_addch at strbuf.h:229:1 (TCWI)
+CT: strbuf_addf at strbuf.c:333:1
+CT: strbuf_addf at strbuf.c:333:1 (TCWI)
+CT: strbuf_addstr at strbuf.h:304:1
+CT: strbuf_addstr at strbuf.h:304:1 (TCWI)
+CT: strbuf_cleanup_path at path.c:51:1
+CT: strbuf_cleanup_path at path.c:51:1 (TCWI)
+CT: strbuf_complete at strbuf.h:686:1
+CT: strbuf_complete at strbuf.h:687:8 (TCWI)
+CT: strbuf_grow at strbuf.c:92:1
+CT: strbuf_grow at strbuf.c:94:5 (TCWI)
+CT: strbuf_init at strbuf.c:55:1
+CT: strbuf_init at strbuf.c:56:16 (TCWI)
+CT: strbuf_realpath at abspath.c:216:1
+CT: strbuf_realpath at abspath.c:217:9 (TCWI)
+CT: strbuf_realpath_1 at abspath.c:79:1
+CT: strbuf_realpath_1 at abspath.c:79:1 (TCWI)
+CT: strbuf_remove at strbuf.c:292:1
+CT: strbuf_remove at strbuf.c:293:2 (TCWI)
+CT: strbuf_repo_add_unique_abbrev at strbuf.c:1077:1
+CT: strbuf_repo_add_unique_abbrev at strbuf.c:1077:1 (TCWI)
+CT: strbuf_rtrim at strbuf.c:111:1
+CT: strbuf_rtrim at strbuf.c:112:11 (TCWI)
+CT: strbuf_splice at strbuf.c:233:1
+CT: strbuf_splice at strbuf.c:233:1 (TCWI)
+CT: strbuf_stripspace at strbuf.c:1123:1
+CT: strbuf_stripspace at strbuf.c:1123:1 (TCWI)
+CT: string_list_append_nodup at string-list.c:207:1
+CT: string_list_append_nodup at string-list.c:207:1 (TCWI)
+CT: string_list_init_nodup at string-list.c:5:1
+CT: string_list_init_nodup at string-list.c:7:2 (TCWI)
+CT: strip_suffix_mem at git-compat-util.h:732:1
+CT: strip_suffix_mem at git-compat-util.h:734:6 (TCWI)
+CT: strvec_clear at strvec.c:89:1
+CT: strvec_clear at strvec.c:89:1 (TCWI)
+CT: strvec_init at strvec.c:8:1
+CT: strvec_init at strvec.c:10:2 (TCWI)
+CT: strvec_pushv at strvec.c:54:1
+CT: strvec_pushv at strvec.c:54:1 (TCWI)
+CT: threaded_has_dirs_only_path at symlinks.c:263:1
+CT: threaded_has_dirs_only_path at symlinks.c:262:12 (TCWI)
+CT: threaded_has_symlink_leading_path at symlinks.c:205:1
+CT: threaded_has_symlink_leading_path at symlinks.c:205:1 (TCWI)
+CT: tr2tls_start_process_clock at tr2_tls.c:21:1
+CT: tr2tls_start_process_clock at tr2_tls.c:22:5 (TCWI)
+CT: trace2_cmd_set_config_fl at trace2.c:396:1
+CT: trace2_cmd_set_config_fl at trace2.c:397:5 (TCWI)
+CT: trace2_def_repo_fl at trace2.c:648:1
+CT: trace2_def_repo_fl at trace2.c:652:5 (TCWI)
+CT: trace2_region_leave_fl at trace2.c:762:1
+CT: trace2_region_leave_fl at trace2.c:762:1 (TCWI)
+CT: tweak_fsmonitor at fsmonitor.c:583:1
+CT: tweak_fsmonitor at fsmonitor.c:583:1 (TCWI)
+CT: untracked_cache_invalidate_path at dir.c:3853:1
+CT: untracked_cache_invalidate_path at dir.c:3853:1 (TCWI)
+CT: update_common_dir at path.c:365:1
+CT: update_common_dir at path.c:365:1 (TCWI)
+CT: update_tree_entry at tree-walk.c:133:1
+CT: update_tree_entry at tree-walk.c:133:1 (TCWI)
+CT: userdiff_find_by_namelen at userdiff.c:331:1
+CT: userdiff_find_by_namelen at userdiff.c:331:1 (TCWI)
+CT: utf8_strnwidth at utf8.c:210:1
+CT: utf8_strnwidth at utf8.c:210:1 (TCWI)
+CT: verify_absent_1 at unpack-trees.c:2436:1
+CT: verify_absent_1 at unpack-trees.c:2440:5 (TCWI)
+CT: vreportf at usage.c:10:1
+CT: vreportf at usage.c:10:1 (TCWI)
+CT: warn_if_unremovable at wrapper.c:610:1
+CT: warn_if_unremovable at wrapper.c:612:5 (TCWI)
+CT: write_object_file_flags at object-file.c:2230:1
+CT: write_object_file_flags at object-file.c:2230:1 (TCWI)
+CT: xcalloc at wrapper.c:143:1
+CT: xcalloc at wrapper.c:143:1 (TCWI)
+CT: xdl_cha_free at xutils.c:86:36
+CT: xdl_cha_free at xutils.c:86:36 (TCWI)
+CT: xdl_free_ctx at xprepare.c:234:41
+CT: xdl_free_ctx at xprepare.c:234:41 (TCWI)
+CT: xmemdupz at wrapper.c:108:1
+CT: xmemdupz at wrapper.c:108:1 (TCWI)
+CT: xstrdup at wrapper.c:38:1
+CT: xstrdup at wrapper.c:38:1 (TCWI)
+CT: xstrdup_or_null at git-compat-util.h:1168:1
+CT: xstrdup_or_null at git-compat-util.h:1169:28 (TCWI)
+CT: xstrfmt at strbuf.c:987:1
+CT: xstrfmt at strbuf.c:987:1 (TCWI)

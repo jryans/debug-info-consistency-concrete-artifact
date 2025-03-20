@@ -41,6 +41,11 @@ RF: base_ref_iterator_free at iterator.c:43:1
 CF: Jump to external code
 CT: External code
 RF: base_ref_iterator_free at iterator.c:0:0
+CF: check_or_sanitize_refname at refs.c:250:7
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
 CF: config_file_fgetc at config.c:97:9
 CT: Jump to external code
 CF: Jump to external code
@@ -299,8 +304,7 @@ CT: attr_hashmap_add at attr.c:100:13
 CF: attr_hashmap_add at attr.c:106:6
 CT: xmalloc at wrapper.c:72:9
 CF: xmalloc at wrapper.c:72:9
-🔔 Tail call without info
-CT: do_xmalloc at wrapper.c:46:1
+CT: do_xmalloc at wrapper.c:46:1 (TCWI)
 CF: do_xmalloc at wrapper.c:49:6
 CT: memory_limit_check at wrapper.c:18:1
 RF: memory_limit_check at wrapper.c:35:1
@@ -318,8 +322,7 @@ CF: attr_hashmap_add at attr.c:107:2
 CT: hashmap_entry_init at hashmap.h:317:10
 RF: hashmap_entry_init at hashmap.h:319:1
 CF: attr_hashmap_add at attr.c:112:2
-🔔 Tail call without info
-CT: hashmap_add at hashmap.c:232:1
+CT: hashmap_add at hashmap.c:232:1 (TCWI)
 CF: hashmap_add at hashmap.c:238:6
 CT: bucket at hashmap.c:107:37
 RF: bucket at hashmap.c:108:1
@@ -353,8 +356,7 @@ CT: attr_hashmap_add at attr.c:100:13
 CF: attr_hashmap_add at attr.c:106:6
 CT: xmalloc at wrapper.c:72:9
 CF: xmalloc at wrapper.c:72:9
-🔔 Tail call without info
-CT: do_xmalloc at wrapper.c:46:1
+CT: do_xmalloc at wrapper.c:46:1 (TCWI)
 CF: do_xmalloc at wrapper.c:49:6
 CT: memory_limit_check at wrapper.c:18:1
 RF: memory_limit_check at wrapper.c:35:1
@@ -372,8 +374,7 @@ CF: attr_hashmap_add at attr.c:107:2
 CT: hashmap_entry_init at hashmap.h:317:10
 RF: hashmap_entry_init at hashmap.h:319:1
 CF: attr_hashmap_add at attr.c:112:2
-🔔 Tail call without info
-CT: hashmap_add at hashmap.c:232:1
+CT: hashmap_add at hashmap.c:232:1 (TCWI)
 CF: hashmap_add at hashmap.c:236:3
 CT: alloc_table at hashmap.c:77:1
 CF: alloc_table at hashmap.c:79:2
@@ -428,7 +429,17 @@ RF: git_setup_gettext at gettext.c:123:1
 CF: Jump to external code
 CT: External code
 RF: git_setup_gettext at gettext.c:0:0
+CF: hasheq_algop at hash.h:238:10
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
 CF: hashmap_init at hashmap.c:158:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
+CF: init_repository_format at setup.c:712:2
 CT: Jump to external code
 CF: Jump to external code
 CT: External code
@@ -461,8 +472,13 @@ RF: Jump to external code
 CF: refs_read_raw_ref at refs.c:1781:41
 CF: 🔔 No info for this address
 CF: refs_read_raw_ref at refs.c:1786:9
+CT: files_read_raw_ref at files-backend.c:466:1
 CF: Jump to external code
-🔔 Tail call without info
+CT: files_read_raw_ref at files-backend.c:466:1 (TCWI)
+CF: refs_read_raw_ref at refs.c:1786:9
+CT: packed_read_raw_ref at packed-backend.c:731:1
+CF: Jump to external code
+CT: packed_read_raw_ref at packed-backend.c:731:1 (TCWI)
 CF: refs_verify_refname_available at refs.c:2353:2
 CT: strbuf_grow at strbuf.c:92:1
 CF: 🔔 No info for this address
@@ -936,8 +952,7 @@ RF: git_offset_1st_component at git-compat-util.h:458:1
 CF: setup_git_directory_gently_1 at setup.c:1242:37
 CT: git_offset_1st_component at git-compat-util.h:457:9
 CF: git_offset_1st_component at git-compat-util.h:457:9
-🔔 Tail call without info
-CT: git_is_dir_sep at git-compat-util.h:448:11
+CT: git_is_dir_sep at git-compat-util.h:448:11 (TCWI)
 RF: git_is_dir_sep at git-compat-util.h:449:1
 RF: git_offset_1st_component at git-compat-util.h:0:0
 CF: strbuf_add at strbuf.c:300:2
@@ -1063,6 +1078,11 @@ CT: strbuf_setlen at strbuf.h:161:1
 RF: strbuf_setlen at strbuf.h:169:1
 RF: strip_last_component at abspath.c:28:1
 RF: 🔔 No info for this address
+CF: strvec_init at strvec.c:10:2
+CT: Jump to external code
+CF: Jump to external code
+CT: External code
+RF: Jump to external code
 CF: unlock_ref at files-backend.c:515:2
 CT: Jump to external code
 CF: Jump to external code
@@ -1173,8 +1193,7 @@ CF: Jump to external code
 CT: External code
 RF: Jump to external code
 CF: Jump to external code
-🔔 Tail call without info
-CT: mkpathdup at path.c:504:1
+CT: mkpathdup at path.c:504:1 (TCWI)
 CF: mkpathdup at path.c:508:2
 CT: strbuf_vaddf at strbuf.c:390:1
 CF: strbuf_vaddf at strbuf.c:394:7
@@ -1292,8 +1311,7 @@ CF: Jump to external code
 CT: External code
 RF: Jump to external code
 CF: Jump to external code
-🔔 Tail call without info
-CT: mkpathdup at path.c:504:1
+CT: mkpathdup at path.c:504:1 (TCWI)
 CF: mkpathdup at path.c:508:2
 CT: strbuf_vaddf at strbuf.c:390:1
 CF: strbuf_vaddf at strbuf.c:394:7
@@ -1411,8 +1429,7 @@ CF: Jump to external code
 CT: External code
 RF: Jump to external code
 CF: Jump to external code
-🔔 Tail call without info
-CT: mkpathdup at path.c:504:1
+CT: mkpathdup at path.c:504:1 (TCWI)
 CF: mkpathdup at path.c:508:2
 CT: strbuf_vaddf at strbuf.c:390:1
 CF: strbuf_vaddf at strbuf.c:394:7
@@ -1438,58 +1455,22 @@ RF: xmemdupz at wrapper.c:110:1
 CF: Jump to external code
 CT: External code
 RF: xmemdupz at wrapper.c:0:0
-CT: __volatile_list_del at list.h:183:1
-🔔 Tail call without info
-CT: __volatile_list_del at list.h:184:13
-CT: configset_iter at config.c:2223:1
-🔔 Tail call without info
-CT: configset_iter at config.c:2229:16
-CT: const_error at git-compat-util.h:638:1
-🔔 Tail call without info
-CT: const_error at git-compat-util.h:640:1
 CT: dir_inside_of at dir.c:3063:1
 CF: dir_inside_of at dir.c:3068:29
 CT: cmp_icase at dir.c:3049:1
 CT: 🔔 No info for this address
 CF: 🔔 No info for this address
 CT: cmp_icase at dir.c:3051:10
-CT: do_xmallocz at wrapper.c:76:1
-🔔 Tail call without info
-CT: do_xmallocz at wrapper.c:78:5
-CT: dummy_pthread_init at thread-utils.c:101:1
-🔔 Tail call without info
-CT: dummy_pthread_init at thread-utils.c:112:1
-CT: empty_ref_iterator_advance at iterator.c:50:1
-🔔 Tail call without info
-CT: empty_ref_iterator_advance at iterator.c:51:9
-CT: fill at attr.c:1021:1
-🔔 Tail call without info
-CT: fill at attr.c:1018:12
-CT: get_extended_base_var at config.c:917:1
-🔔 Tail call without info
-CT: get_extended_base_var at config.c:918:32
-CT: git_SHA1_Update_Chunked at sha1-chunked.c:4:1
-🔔 Tail call without info
-CT: git_SHA1_Update_Chunked at sha1-chunked.c:9:9
 CT: git_attr_internal at attr.c:210:1
 CF: git_attr_internal at attr.c:213:7
 CT: attr_name_valid at attr.c:176:1
 CT: 🔔 No info for this address
 CF: 🔔 No info for this address
 CT: attr_name_valid at attr.c:182:10
-CT: git_config_from_file_with_options at config.c:1993:1
-🔔 Tail call without info
-CT: git_config_from_file_with_options at config.c:1997:5
-CT: git_configset_clear at config.c:2378:1
-🔔 Tail call without info
-CT: git_configset_clear at config.c:2381:5
 CT: git_configset_get_value at config.c:2410:1
 CF: git_configset_get_value at config.c:2417:11
 CT: 🔔 No info for this address
 CF: 🔔 No info for this address
-CT: git_default_core_config at config.c:1493:1
-🔔 Tail call without info
-CT: git_default_core_config at config.c:1492:12
 CT: git_deflate_end_gently at zlib.c:227:1
 CF: git_deflate_end_gently at zlib.c:230:2
 CT: zlib_pre_call at zlib.c:38:1
@@ -1511,8 +1492,7 @@ RF: zlib_post_call at zlib.c:65:1
 RF: git_deflate_end_gently at zlib.c:234:1
 CT: Jump to external code
 CF: Jump to external code
-🔔 Tail call without info
-CT: git_deflate_abort at zlib.c:207:1
+CT: git_deflate_abort at zlib.c:207:1 (TCWI)
 CF: git_deflate_abort at zlib.c:210:2
 CT: zlib_pre_call at zlib.c:38:1
 CF: zlib_pre_call at zlib.c:43:18
@@ -1532,54 +1512,10 @@ CT: zlib_post_call at zlib.c:48:1
 RF: zlib_post_call at zlib.c:65:1
 RF: git_deflate_abort at zlib.c:214:1
 RF: Jump to external code
-CT: git_is_dir_sep at git-compat-util.h:447:1
-🔔 Tail call without info
-CT: git_is_dir_sep at git-compat-util.h:448:11
-CT: git_wcwidth at utf8.c:85:1
-🔔 Tail call without info
-CT: git_wcwidth at utf8.c:93:10
-CT: hash_to_hex_algop at hex.c:150:1
-🔔 Tail call without info
-CT: hash_to_hex_algop at hex.c:153:17
-CT: hash_to_hex_algop_r at hex.c:122:1
-🔔 Tail call without info
-CT: hash_to_hex_algop_r at hex.c:131:5
-CT: hasheq_algop at hash.h:231:1
-CF: hasheq_algop at hash.h:238:10
-CT: Jump to external code
-CF: Jump to external code
-CT: External code
-RF: Jump to external code
-🔔 Tail call without info
-CT: hasheq_algop at hash.h:236:5
-CT: hashmap_iter_next at hashmap.c:295:1
-🔔 Tail call without info
-CT: hashmap_iter_next at hashmap.c:296:24
-CT: hold_lock_file_for_update_timeout at lockfile.h:178:1
-🔔 Tail call without info
-CT: hold_lock_file_for_update_timeout at lockfile.h:179:9
-CT: is_tempfile_active at tempfile.h:222:1
-🔔 Tail call without info
-CT: is_tempfile_active at tempfile.h:223:9
-CT: list_add_tail at list.h:65:1
-🔔 Tail call without info
-CT: list_add_tail at list.h:66:6
-CT: noop_core_config at git-compat-util.h:419:1
-🔔 Tail call without info
-CT: noop_core_config at git-compat-util.h:421:1
-CT: oideq at hash.h:247:1
-🔔 Tail call without info
-CT: oideq at hash.h:249:11
-CT: push_stack at attr.c:831:1
-🔔 Tail call without info
-CT: push_stack at attr.c:832:5
 CT: raceproof_create_file at files-backend.c:925:1
 CF: raceproof_create_file at files-backend.c:952:8
 CT: 🔔 No info for this address
 CF: 🔔 No info for this address
-CT: ref_iterator_abort at iterator.c:23:1
-🔔 Tail call without info
-CT: ref_iterator_abort at iterator.c:24:29
 CT: refs_read_raw_ref at refs.c:1779:1
 CF: refs_read_raw_ref at refs.c:1781:7
 CT: 🔔 No info for this address
@@ -1588,12 +1524,6 @@ CT: refs_verify_refname_available at refs.c:2335:1
 CF: refs_verify_refname_available at refs.c:2353:24
 CT: 🔔 No info for this address
 CF: 🔔 No info for this address
-CT: repo_config_clear at config.c:2556:1
-🔔 Tail call without info
-CT: repo_config_clear at config.c:2557:5
-CT: repo_set_hash_algo at repository.c:96:1
-🔔 Tail call without info
-CT: repo_set_hash_algo at repository.c:97:20
 CT: run_builtin at git.c:421:1
 CF: run_builtin at git.c:427:23
 CT: Jump to external code
@@ -1615,51 +1545,14 @@ CT: safe_create_dir at path.c:920:1
 CF: safe_create_dir at path.c:921:6
 CT: 🔔 No info for this address
 CF: 🔔 No info for this address
-CT: strbuf_addch at strbuf.h:229:1
-🔔 Tail call without info
-CT: strbuf_addch at strbuf.h:228:20
 CT: strbuf_getwholeline at strbuf.c:626:1
 CF: strbuf_getwholeline at strbuf.c:629:6
 CT: 🔔 No info for this address
 CF: 🔔 No info for this address
-CT: strbuf_grow at strbuf.c:92:1
-🔔 Tail call without info
-CT: strbuf_grow at strbuf.c:94:5
-CT: strbuf_init at strbuf.c:55:1
-CF: strbuf_init at strbuf.c:57:2
-CT: Jump to external code
-CF: Jump to external code
-CT: External code
-RF: Jump to external code
-🔔 Tail call without info
-CT: strbuf_init at strbuf.c:56:16
-CT: strbuf_remove at strbuf.c:292:1
-🔔 Tail call without info
-CT: strbuf_remove at strbuf.c:293:2
 CT: strbuf_setlen at strbuf.h:161:1
 RF: strbuf_setlen at strbuf.h:169:1
 CT: 🔔 No info for this address
 RF: 🔔 No info for this address
-CT: strvec_init at strvec.c:8:1
-CF: strvec_init at strvec.c:10:2
-CT: Jump to external code
-CF: Jump to external code
-CT: External code
-RF: Jump to external code
-🔔 Tail call without info
-CT: strvec_init at strvec.c:10:2
-CT: tr2tls_start_process_clock at tr2_tls.c:21:1
-🔔 Tail call without info
-CT: tr2tls_start_process_clock at tr2_tls.c:22:5
-CT: trace2_cmd_set_config_fl at trace2.c:396:1
-🔔 Tail call without info
-CT: trace2_cmd_set_config_fl at trace2.c:397:5
-CT: trace2_def_repo_fl at trace2.c:648:1
-🔔 Tail call without info
-CT: trace2_def_repo_fl at trace2.c:652:5
-CT: warn_if_unremovable at wrapper.c:610:1
-🔔 Tail call without info
-CT: warn_if_unremovable at wrapper.c:612:5
 RF: configset_find_element at config.c:2309:1
 RF: git_configset_get_value_multi at config.c:2430:1
 RF: git_configset_get_value at config.c:2424:1
@@ -1673,8 +1566,7 @@ RF: Jump to external code
 CF: git_config_parse_key at config.c:581:15
 CT: xmallocz at wrapper.c:93:9
 CF: xmallocz at wrapper.c:93:9
-🔔 Tail call without info
-CT: do_xmallocz at wrapper.c:78:5
+CT: do_xmallocz at wrapper.c:78:5 (TCWI)
 CF: do_xmallocz at wrapper.c:85:8
 CT: do_xmalloc at wrapper.c:46:1
 CF: do_xmalloc at wrapper.c:49:6
@@ -1844,8 +1736,7 @@ RF: git_config_get_value at config.c:2685:1
 CF: git_config_parse_key at config.c:581:15
 CT: xmallocz at wrapper.c:93:9
 CF: xmallocz at wrapper.c:93:9
-🔔 Tail call without info
-CT: do_xmallocz at wrapper.c:78:5
+CT: do_xmallocz at wrapper.c:78:5 (TCWI)
 CF: do_xmallocz at wrapper.c:85:8
 CT: do_xmalloc at wrapper.c:46:1
 CF: do_xmalloc at wrapper.c:49:6
@@ -2241,4 +2132,3 @@ RF: strbuf_init at strbuf.c:60:1
 RF: strbuf_detach at strbuf.c:79:1
 RF: mkpathdup at path.c:512:1
 RF: xdg_config_home at path.c:0:0
-🔔 Tail call without info
