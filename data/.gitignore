@@ -1,6 +1,7 @@
 __pycache__
 concrete-trace
 concrete-trace-with-source
+events
 debug-info-values
 symbolic-trace
 testcases

@@ -1117,16 +1117,8 @@ LibraryCallRemoved
     CT: Jump to external code
     CF: Jump to external code
     CT: External code
-  Occurrences: 15
-
-LibraryCallRemoved
-  Events:
-    CF: config_store_data_clear at config.c:2871:2
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
     RF: Jump to external code
-  Occurrences: 21
+  Occurrences: 36
 
 LibraryCallRemoved
   Events:
@@ -1152,6 +1144,7 @@ LibraryCallRemoved
     CT: Jump to external code
     CF: Jump to external code
     CT: External code
+    RF: Jump to external code
   Occurrences: 3
 
 LibraryCallRemoved
@@ -1205,33 +1198,17 @@ LibraryCallRemoved
     CT: Jump to external code
     CF: Jump to external code
     CT: External code
-  Occurrences: 4
-
-LibraryCallRemoved
-  Events:
-    CF: git_hash_sha1_final_oid at object-file.c:107:2
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-  Occurrences: 3
-
-LibraryCallRemoved
-  Events:
-    CF: hashmap_clear_ at hashmap.c:209:2
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-  Occurrences: 5
-
-LibraryCallRemoved
-  Events:
-    CF: hashmap_clear_ at hashmap.c:209:2
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
     RF: Jump to external code
   Occurrences: 7
+
+LibraryCallRemoved
+  Events:
+    CF: hashmap_clear_ at hashmap.c:209:2
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+  Occurrences: 12
 
 LibraryCallRemoved
   Events:
@@ -1347,16 +1324,8 @@ LibraryCallRemoved
     CT: Jump to external code
     CF: Jump to external code
     CT: External code
-  Occurrences: 13
-
-LibraryCallRemoved
-  Events:
-    CF: setup_git_directory_gently_1 at setup.c:1240:21
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
     RF: Jump to external code
-  Occurrences: 5
+  Occurrences: 18
 
 LibraryCallRemoved
   Events:
@@ -1415,7 +1384,7 @@ ProgramCallRemoved
     CF: all_attrs_init at attr.c:155:3
     CT: container_of_or_null_offset at git-compat-util.h:1580:0
     RF: container_of_or_null_offset at git-compat-util.h:1581:2
-  Occurrences: 5
+  Occurrences: 9
 
 ProgramCallRemoved
   Events:
@@ -1506,7 +1475,7 @@ ProgramCallRemoved
     CF: normalize_path_copy_len at path.c:1177:7
     CT: git_is_dir_sep at git-compat-util.h:447:0
     RF: git_is_dir_sep at git-compat-util.h:448:2
-  Occurrences: 96
+  Occurrences: 168
 
 ProgramCallRemoved
   Events:
@@ -1529,14 +1498,14 @@ ProgramCallRemoved
     RF: system_prefix at exec-cmd.c:248:2
   Occurrences: 56
 
-Unknown
+Uncategorised
   Events:
     CF: all_attrs_init at attr.c:155:3
     CT: container_of_or_null_offset at git-compat-util.h:1580:0
     RF: container_of_or_null_offset at git-compat-util.h:1581:2
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     CF: base_ref_iterator_free at iterator.c:42:2
     CT: Jump to external code
@@ -1549,7 +1518,7 @@ Unknown
     RF: base_ref_iterator_free at iterator.c:0:0
   Occurrences: 6
 
-Unknown
+Uncategorised
   Events:
     CF: config_file_fgetc at config.c:97:9
     CT: Jump to external code
@@ -1562,7 +1531,7 @@ Unknown
     RF: config_file_fgetc at config.c:0:0
   Occurrences: 136
 
-Unknown
+Uncategorised
   Events:
     CF: deactivate_tempfile at tempfile.c:127:2
     CT: Jump to external code
@@ -1575,14 +1544,14 @@ Unknown
     RF: deactivate_tempfile at tempfile.c:0:0
   Occurrences: 39
 
-Unknown
+Uncategorised
   Events:
     CF: git_configset_clear at config.c:2384:2
     CT: container_of_or_null_offset at git-compat-util.h:1580:0
     RF: container_of_or_null_offset at git-compat-util.h:1581:2
   Occurrences: 12
 
-Unknown
+Uncategorised
   Events:
     CF: git_find_last_dir_sep at git-compat-util.h:538:9
     CT: Jump to external code
@@ -1595,7 +1564,7 @@ Unknown
     RF: git_find_last_dir_sep at git-compat-util.h:0:0
   Occurrences: 26
 
-Unknown
+Uncategorised
   Events:
     CF: git_setup_gettext at gettext.c:112:3
     CT: Jump to external code
@@ -1608,7 +1577,7 @@ Unknown
     RF: git_setup_gettext at gettext.c:0:0
   Occurrences: 26
 
-Unknown
+Uncategorised
   Events:
     CF: parse_options at parse-options.c:968:2
     CT: Jump to external code
@@ -1617,7 +1586,7 @@ Unknown
     RF: Jump to external code
   Occurrences: 26
 
-Unknown
+Uncategorised
   Events:
     CF: parsed_object_pool_new at object.c:503:2
     CT: Jump to external code
@@ -1626,7 +1595,7 @@ Unknown
     RF: Jump to external code
   Occurrences: 26
 
-Unknown
+Uncategorised
   Events:
     CF: raw_object_store_new at object.c:523:2
     CT: Jump to external code
@@ -1635,7 +1604,7 @@ Unknown
     RF: Jump to external code
   Occurrences: 26
 
-Unknown
+Uncategorised
   Events:
     CF: remote_state_new at remote.c:2746:2
     CT: Jump to external code
@@ -1644,7 +1613,7 @@ Unknown
     RF: Jump to external code
   Occurrences: 26
 
-Unknown
+Uncategorised
   Events:
     CF: unlock_ref at files-backend.c:515:2
     CT: Jump to external code
@@ -1657,7 +1626,7 @@ Unknown
     RF: unlock_ref at files-backend.c:0:0
   Occurrences: 6
 
-Unknown
+Uncategorised
   Events:
     CF: usage_with_options_internal at parse-options.c:1081:22
     CT: Jump to external code
@@ -1666,7 +1635,7 @@ Unknown
     RF: Jump to external code
   Occurrences: 12
 
-Unknown
+Uncategorised
   Events:
     CF: xmemdupz at wrapper.c:109:9
     CT: Jump to external code
@@ -1679,21 +1648,7 @@ Unknown
     RF: xmemdupz at wrapper.c:0:0
   Occurrences: 6
 
-Unknown
-  Events:
-    CT: container_of_or_null_offset at git-compat-util.h:1580:0
-    RF: container_of_or_null_offset at git-compat-util.h:1581:2
-    CF: all_attrs_init at attr.c:155:3
-  Occurrences: 4
-
-Unknown
-  Events:
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: normalize_path_copy_len at path.c:1177:7
-  Occurrences: 72
-
-Unknown
+Uncategorised
   Events:
     RF: deactivate_tempfile at tempfile.c:128:1
     CF: Jump to external code
@@ -1710,15 +1665,15 @@ CoordinatesChanged
   Unique divergence coordinates: 41
 
 LibraryCallRemoved
-  Unique divergence coordinates: 40
+  Unique divergence coordinates: 36
 
 ProgramCallRemoved
   Unique divergence coordinates: 18
 
-Unknown
-  Unique divergence coordinates: 17
+Uncategorised
+  Unique divergence coordinates: 15
 
 ## Summary
 
-249 unique divergence coordinates
+243 unique divergence coordinates
 12735 divergence occurrences

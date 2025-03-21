@@ -386,7 +386,7 @@ CoordinatesRemoved
   Events:
     CF: prep_childenv at run-command.c:455:4
     CF: prep_childenv at run-command.c:0:0
-  Occurrences: 1581
+  Occurrences: 1565
 
 CoordinatesRemoved
   Events:
@@ -606,6 +606,36 @@ CoordinatesChanged
 
 CoordinatesChanged
   Events:
+    CF: mark_child_for_cleanup at run-command.c:98:3
+    CF: mark_child_for_cleanup at run-command.c:91:29
+  Occurrences: 1
+
+CoordinatesChanged
+  Events:
+    CF: msort_with_tmp at qsort_s.c:31:7
+    CF: msort_with_tmp at qsort_s.c:44:3
+  Occurrences: 29
+
+CoordinatesChanged
+  Events:
+    CF: msort_with_tmp at qsort_s.c:32:4
+    CF: msort_with_tmp at qsort_s.c:37:4
+  Occurrences: 286
+
+CoordinatesChanged
+  Events:
+    CF: msort_with_tmp at qsort_s.c:37:4
+    CF: msort_with_tmp at qsort_s.c:32:4
+  Occurrences: 226
+
+CoordinatesChanged
+  Events:
+    CF: msort_with_tmp at qsort_s.c:45:2
+    CF: msort_with_tmp at qsort_s.c:44:3
+  Occurrences: 2
+
+CoordinatesChanged
+  Events:
     CF: read_istream_loose at streaming.c:202:4
     CF: read_istream_loose at streaming.c:0:24
   Occurrences: 1
@@ -615,6 +645,12 @@ CoordinatesChanged
     CF: repo_init_revisions at revision.c:1901:18
     CF: repo_init_revisions at revision.c:1901:26
   Occurrences: 8
+
+CoordinatesChanged
+  Events:
+    CF: set_cloexec at run-command.c:535:14
+    CF: set_cloexec at run-command.c:537:3
+  Occurrences: 1
 
 CoordinatesChanged
   Events:
@@ -648,14 +684,14 @@ CoordinatesChanged
 
 CoordinatesChanged
   Events:
-    CF: sigchain_push at sigchain.c:25:17
-    CF: sigchain_push at sigchain.c:24:2
+    CF: start_command at run-command.c:824:8
+    CF: start_command at run-command.c:837:3
   Occurrences: 1
 
 CoordinatesChanged
   Events:
-    CF: sigchain_push_common at sigchain.c:49:2
-    CF: sigchain_push_common at sigchain.c:48:2
+    CF: start_command at run-command.c:828:7
+    CF: start_command at run-command.c:824:8
   Occurrences: 1
 
 CoordinatesChanged
@@ -687,6 +723,12 @@ CoordinatesChanged
     CT: add_untracked at dir.c:2364:0
     CT: add_untracked at dir.c:2365:7
   Occurrences: 4
+
+CoordinatesChanged
+  Events:
+    CT: check_signum at sigchain.c:14:0
+    RF: check_signum at sigchain.c:17:1
+  Occurrences: 1
 
 CoordinatesChanged
   Events:
@@ -770,7 +812,7 @@ CoordinatesChanged
   Events:
     CT: msort_with_tmp at qsort_s.c:12:0
     CT: msort_with_tmp at qsort_s.c:17:8
-  Occurrences: 3157
+  Occurrences: 3122
 
 CoordinatesChanged
   Events:
@@ -819,6 +861,12 @@ CoordinatesChanged
     CT: xstrdup_or_null at git-compat-util.h:1168:0
     CT: xstrdup_or_null at git-compat-util.h:1169:9
   Occurrences: 1865
+
+CoordinatesChanged
+  Events:
+    RF: check_signum at sigchain.c:17:1
+    CT: check_signum at sigchain.c:14:0
+  Occurrences: 1
 
 CoordinatesChanged
   Events:
@@ -888,6 +936,12 @@ CoordinatesChanged
 
 CoordinatesChanged
   Events:
+    RF: msort_with_tmp at qsort_s.c:46:1
+    CF: msort_with_tmp at qsort_s.c:44:3
+  Occurrences: 1
+
+CoordinatesChanged
+  Events:
     RF: preload_index at preload-index.c:106:3
     RF: preload_index at preload-index.c:164:1
   Occurrences: 4
@@ -909,12 +963,6 @@ CoordinatesChanged
     RF: refs_verify_refname_available at refs.c:2424:2
     RF: refs_verify_refname_available at refs.c:2425:1
   Occurrences: 62
-
-CoordinatesChanged
-  Events:
-    RF: sigchain_push at sigchain.c:30:1
-    CF: sigchain_push at sigchain.c:24:2
-  Occurrences: 1
 
 CoordinatesChanged
   Events:
@@ -969,7 +1017,13 @@ LibraryCallRemoved
     CF: Jump to external code
     CT: External code
     RF: Jump to external code
-  Occurrences: 13
+  Occurrences: 17
+
+LibraryCallRemoved
+  Events:
+    CF: Jump to external code
+    CT: Jump to external code
+  Occurrences: 1
 
 LibraryCallRemoved
   Events:
@@ -1042,6 +1096,12 @@ LibraryCallRemoved
     CT: External code
     RF: Jump to external code
   Occurrences: 3
+
+LibraryCallRemoved
+  Events:
+    CF: atfork_parent at run-command.c:522:6
+    CT: Jump to external code
+  Occurrences: 1
 
 LibraryCallRemoved
   Events:
@@ -1184,16 +1244,8 @@ LibraryCallRemoved
     CT: Jump to external code
     CF: Jump to external code
     CT: External code
-  Occurrences: 3
-
-LibraryCallRemoved
-  Events:
-    CF: cmd_add at add.c:502:19
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
     RF: Jump to external code
-  Occurrences: 1
+  Occurrences: 4
 
 LibraryCallRemoved
   Events:
@@ -1354,16 +1406,8 @@ LibraryCallRemoved
     CT: Jump to external code
     CF: Jump to external code
     CT: External code
-  Occurrences: 170
-
-LibraryCallRemoved
-  Events:
-    CF: config_store_data_clear at config.c:2871:2
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
     RF: Jump to external code
-  Occurrences: 165
+  Occurrences: 335
 
 LibraryCallRemoved
   Events:
@@ -1439,9 +1483,7 @@ LibraryCallRemoved
 
 LibraryCallRemoved
   Events:
-    CF: get_oid_with_context_1 at object-name.c:1916:2
-    CT: Jump to external code
-    CF: Jump to external code
+    CF: get_entry_index at string-list.c:26:17
     CT: External code
   Occurrences: 6
 
@@ -1452,7 +1494,7 @@ LibraryCallRemoved
     CF: Jump to external code
     CT: External code
     RF: Jump to external code
-  Occurrences: 16
+  Occurrences: 22
 
 LibraryCallRemoved
   Events:
@@ -1467,13 +1509,6 @@ LibraryCallRemoved
   Events:
     CF: git_atexit at run-command.c:1101:7
     CT: Jump to external code
-  Occurrences: 1
-
-LibraryCallRemoved
-  Events:
-    CF: git_atexit at run-command.c:1101:7
-    CT: Jump to external code
-    CF: Jump to external code
   Occurrences: 1
 
 LibraryCallRemoved
@@ -1545,16 +1580,8 @@ LibraryCallRemoved
     CT: Jump to external code
     CF: Jump to external code
     CT: External code
-  Occurrences: 15
-
-LibraryCallRemoved
-  Events:
-    CF: git_hash_sha1_final_oid at object-file.c:107:2
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
     RF: Jump to external code
-  Occurrences: 28
+  Occurrences: 43
 
 LibraryCallRemoved
   Events:
@@ -1580,16 +1607,8 @@ LibraryCallRemoved
     CT: Jump to external code
     CF: Jump to external code
     CT: External code
-  Occurrences: 60
-
-LibraryCallRemoved
-  Events:
-    CF: hashmap_clear_ at hashmap.c:209:2
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
     RF: Jump to external code
-  Occurrences: 82
+  Occurrences: 142
 
 LibraryCallRemoved
   Events:
@@ -1743,6 +1762,33 @@ LibraryCallRemoved
     CT: External code
     RF: Jump to external code
   Occurrences: 20
+
+LibraryCallRemoved
+  Events:
+    CF: msort_with_tmp at qsort_s.c:32:4
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+  Occurrences: 16
+
+LibraryCallRemoved
+  Events:
+    CF: msort_with_tmp at qsort_s.c:37:4
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+  Occurrences: 54
+
+LibraryCallRemoved
+  Events:
+    CF: msort_with_tmp at qsort_s.c:44:3
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+  Occurrences: 18
 
 LibraryCallRemoved
   Events:
@@ -2074,16 +2120,8 @@ LibraryCallRemoved
     CT: Jump to external code
     CF: Jump to external code
     CT: External code
-  Occurrences: 3
-
-LibraryCallRemoved
-  Events:
-    CF: rest_is_empty at sequencer.c:1114:7
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
     RF: Jump to external code
-  Occurrences: 1
+  Occurrences: 4
 
 LibraryCallRemoved
   Events:
@@ -2150,6 +2188,12 @@ LibraryCallRemoved
 
 LibraryCallRemoved
   Events:
+    CF: set_cloexec at run-command.c:537:3
+    CT: Jump to external code
+  Occurrences: 2
+
+LibraryCallRemoved
+  Events:
     CF: set_progress_signal at progress.c:77:2
     CT: Jump to external code
     CF: Jump to external code
@@ -2172,16 +2216,8 @@ LibraryCallRemoved
     CT: Jump to external code
     CF: Jump to external code
     CT: External code
-  Occurrences: 35
-
-LibraryCallRemoved
-  Events:
-    CF: setup_git_directory_gently_1 at setup.c:1240:21
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
     RF: Jump to external code
-  Occurrences: 54
+  Occurrences: 89
 
 LibraryCallRemoved
   Events:
@@ -2257,6 +2293,12 @@ LibraryCallRemoved
 
 LibraryCallRemoved
   Events:
+    CF: sigchain_push at sigchain.c:25:17
+    CT: Jump to external code
+  Occurrences: 2
+
+LibraryCallRemoved
+  Events:
     CF: skip_utf8_bom at utf8.c:789:12
     CT: Jump to external code
     CF: Jump to external code
@@ -2298,34 +2340,13 @@ LibraryCallRemoved
     CF: Jump to external code
     CT: External code
     RF: Jump to external code
-  Occurrences: 2
-
-LibraryCallRemoved
-  Events:
-    CF: start_command at run-command.c:779:3
-    CT: Jump to external code
   Occurrences: 1
 
 LibraryCallRemoved
   Events:
     CF: start_command at run-command.c:824:8
     CT: Jump to external code
-  Occurrences: 6
-
-LibraryCallRemoved
-  Events:
-    CF: start_command at run-command.c:824:8
-    CT: Jump to external code
-    CF: Jump to external code
-  Occurrences: 1
-
-LibraryCallRemoved
-  Events:
-    CF: start_command at run-command.c:824:8
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-  Occurrences: 1
+  Occurrences: 8
 
 LibraryCallRemoved
   Events:
@@ -2334,13 +2355,13 @@ LibraryCallRemoved
     CF: Jump to external code
     CT: External code
     RF: Jump to external code
-  Occurrences: 8
+  Occurrences: 10
 
 LibraryCallRemoved
   Events:
     CF: start_command at run-command.c:828:7
     CT: Jump to external code
-  Occurrences: 2
+  Occurrences: 3
 
 LibraryCallRemoved
   Events:
@@ -2352,7 +2373,7 @@ LibraryCallRemoved
   Events:
     CF: start_command at run-command.c:864:2
     CT: Jump to external code
-  Occurrences: 1
+  Occurrences: 5
 
 LibraryCallRemoved
   Events:
@@ -2362,6 +2383,15 @@ LibraryCallRemoved
     CT: External code
     RF: Jump to external code
   Occurrences: 12259
+
+LibraryCallRemoved
+  Events:
+    CF: string_list_clear at string-list.c:175:5
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+  Occurrences: 16
 
 LibraryCallRemoved
   Events:
@@ -2502,7 +2532,7 @@ LibraryCallRemoved
   Events:
     CF: xread at wrapper.c:230:8
     CT: Jump to external code
-  Occurrences: 1
+  Occurrences: 2
 
 LibraryCallRemoved
   Events:
@@ -2522,7 +2552,7 @@ ProgramCallRemoved
     CF: all_attrs_init at attr.c:155:3
     CT: container_of_or_null_offset at git-compat-util.h:1580:0
     RF: container_of_or_null_offset at git-compat-util.h:1581:2
-  Occurrences: 58
+  Occurrences: 110
 
 ProgramCallRemoved
   Events:
@@ -2586,6 +2616,13 @@ ProgramCallRemoved
     CT: vector_unlock at attr.c:494:0
     RF: vector_unlock at attr.c:496:1
   Occurrences: 2
+
+ProgramCallRemoved
+  Events:
+    CF: git_atexit at run-command.c:1098:2
+    CT: st_mult at git-compat-util.h:991:0
+    RF: st_mult at git-compat-util.h:995:2
+  Occurrences: 1
 
 ProgramCallRemoved
   Events:
@@ -2694,24 +2731,17 @@ ProgramCallRemoved
 
 ProgramCallRemoved
   Events:
-    CF: sigchain_push at sigchain.c:24:2
-    CT: st_mult at git-compat-util.h:991:0
-    RF: st_mult at git-compat-util.h:995:2
-  Occurrences: 1
-
-ProgramCallRemoved
-  Events:
     CF: start_command at run-command.c:775:3
     CT: set_die_routine at usage.c:123:0
     RF: set_die_routine at usage.c:125:1
-  Occurrences: 3
+  Occurrences: 2
 
 ProgramCallRemoved
   Events:
     CF: start_command at run-command.c:776:3
     CT: set_error_routine at usage.c:133:0
     RF: set_error_routine at usage.c:135:1
-  Occurrences: 3
+  Occurrences: 2
 
 ProgramCallRemoved
   Events:
@@ -2755,25 +2785,19 @@ ProgramCallRemoved
     RF: git_has_dos_drive_prefix at git-compat-util.h:433:2
   Occurrences: 5
 
-Unknown
+Uncategorised
   Events:
     CF: Jump to external code
   Occurrences: 3
 
-Unknown
-  Events:
-    CF: Jump to external code
-    CT: External code
-  Occurrences: 5
-
-Unknown
+Uncategorised
   Events:
     CF: Jump to external code
     CT: External code
     RF: Jump to external code
-  Occurrences: 4
+  Occurrences: 15
 
-Unknown
+Uncategorised
   Events:
     CF: Jump to external code
     CT: External code
@@ -2785,13 +2809,6 @@ Unknown
     RF: Jump to external code
     CF: start_command at run-command.c:824:8
     CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-  Occurrences: 1
-
-Unknown
-  Events:
     CF: Jump to external code
     CT: External code
     RF: Jump to external code
@@ -2817,54 +2834,78 @@ Unknown
     RF: Jump to external code
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     CF: Jump to external code
     CT: External code
-    RF: Jump to external code
-    CF: start_command at run-command.c:828:7
+    RF: memory_limit_check at wrapper.c:35:1
+  Occurrences: 1
+
+Uncategorised
+  Events:
+    CF: Jump to external code
     CT: Jump to external code
   Occurrences: 1
 
-Unknown
-  Events:
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CT: Jump to external code
-  Occurrences: 1
-
-Unknown
-  Events:
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    RF: xrealloc at wrapper.c:140:1
-  Occurrences: 1
-
-Unknown
-  Events:
-    CF: Jump to external code
-    CT: External code
-    RF: st_mult at git-compat-util.h:995:2
-  Occurrences: 1
-
-Unknown
+Uncategorised
   Events:
     CF: do_xmalloc at wrapper.c:49:6
+    CT: memory_limit_check at wrapper.c:18:0
+    RF: memory_limit_check at wrapper.c:35:1
+    CF: do_xmalloc at wrapper.c:51:8
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    RF: do_xmalloc at wrapper.c:68:1
+    RF: xmalloc at wrapper.c:72:2
+    RF: atfork_parent at run-command.c:530:1
   Occurrences: 1
 
-Unknown
+Uncategorised
+  Events:
+    CF: get_entry_index at string-list.c:26:17
+    CT: External code
+  Occurrences: 4
+
+Uncategorised
   Events:
     CF: git_atexit at run-command.c:1098:2
     CT: st_mult at git-compat-util.h:991:0
-  Occurrences: 1
+  Occurrences: 2
 
-Unknown
+Uncategorised
   Events:
     CF: git_atexit at run-command.c:1098:2
     CT: st_mult at git-compat-util.h:991:0
     RF: st_mult at git-compat-util.h:995:2
+  Occurrences: 1
+
+Uncategorised
+  Events:
+    CF: git_atexit at run-command.c:1098:2
+    CT: st_mult at git-compat-util.h:991:0
+    RF: st_mult at git-compat-util.h:995:2
+    CF: mark_child_for_cleanup at run-command.c:98:3
+    CT: git_atexit at run-command.c:1097:0
+  Occurrences: 1
+
+Uncategorised
+  Events:
+    CF: git_atexit at run-command.c:1098:2
+    CT: xrealloc at wrapper.c:127:0
+  Occurrences: 1
+
+Uncategorised
+  Events:
+    CF: git_atexit at run-command.c:1098:2
+    CT: xrealloc at wrapper.c:127:0
+    CF: xrealloc at wrapper.c:135:2
+    CT: memory_limit_check at wrapper.c:18:0
+  Occurrences: 1
+
+Uncategorised
+  Events:
     CF: git_atexit at run-command.c:1098:2
     CT: xrealloc at wrapper.c:127:0
     CF: xrealloc at wrapper.c:135:2
@@ -2877,54 +2918,224 @@ Unknown
     RF: Jump to external code
   Occurrences: 1
 
-Unknown
-  Events:
-    CF: git_atexit at run-command.c:1098:2
-    CT: st_mult at git-compat-util.h:991:0
-    RF: st_mult at git-compat-util.h:995:2
-    RF: xrealloc at wrapper.c:140:1
-  Occurrences: 1
-
-Unknown
-  Events:
-    CF: git_atexit at run-command.c:1098:2
-    CT: xrealloc at wrapper.c:127:0
-  Occurrences: 1
-
-Unknown
-  Events:
-    CF: git_atexit at run-command.c:1098:2
-    CT: xrealloc at wrapper.c:127:0
-    CF: xrealloc at wrapper.c:135:2
-    CT: memory_limit_check at wrapper.c:18:0
-  Occurrences: 1
-
-Unknown
+Uncategorised
   Events:
     CF: git_atexit at run-command.c:1101:7
+    CT: Jump to external code
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     CF: mark_child_for_cleanup at run-command.c:91:29
     CT: xmalloc at wrapper.c:71:0
   Occurrences: 1
 
-Unknown
-  Events:
-    CF: mark_child_for_cleanup at run-command.c:91:29
-    CT: xmalloc at wrapper.c:71:0
-    CF: xmalloc at wrapper.c:72:9
-    CT: do_xmalloc at wrapper.c:46:0
-  Occurrences: 1
-
-Unknown
+Uncategorised
   Events:
     CF: mark_child_for_cleanup at run-command.c:98:3
     CT: git_atexit at run-command.c:1097:0
+  Occurrences: 2
+
+Uncategorised
+  Events:
+    CF: mark_child_for_cleanup at run-command.c:98:3
+    CT: git_atexit at run-command.c:1097:0
+    CF: start_command at run-command.c:780:3
+    CT: set_cloexec at run-command.c:534:0
+    CF: git_atexit at run-command.c:1098:2
+    CT: st_mult at git-compat-util.h:991:0
+  Occurrences: 1
+
+Uncategorised
+  Events:
+    CF: msort_with_tmp at qsort_s.c:25:2
+    CT: msort_with_tmp at qsort_s.c:12:0
+    RF: msort_with_tmp at qsort_s.c:46:1
+    CF: msort_with_tmp at qsort_s.c:26:2
+    CT: msort_with_tmp at qsort_s.c:12:0
+    RF: msort_with_tmp at qsort_s.c:46:1
+    CF: msort_with_tmp at qsort_s.c:31:7
+    CT: cmp_items at string-list.c:234:0
+    CF: cmp_items at string-list.c:238:9
+    CT: External code
+    RF: cmp_items at string-list.c:238:2
+    CF: msort_with_tmp at qsort_s.c:37:4
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: msort_with_tmp at qsort_s.c:44:3
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: msort_with_tmp at qsort_s.c:45:2
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+  Occurrences: 13
+
+Uncategorised
+  Events:
+    CF: msort_with_tmp at qsort_s.c:26:2
+    CT: msort_with_tmp at qsort_s.c:12:0
+    CF: msort_with_tmp at qsort_s.c:25:2
+    CT: msort_with_tmp at qsort_s.c:12:0
+    RF: msort_with_tmp at qsort_s.c:46:1
+    CF: msort_with_tmp at qsort_s.c:26:2
+    CT: msort_with_tmp at qsort_s.c:12:0
+    RF: msort_with_tmp at qsort_s.c:46:1
+    CF: msort_with_tmp at qsort_s.c:31:7
+    CT: cmp_items at string-list.c:234:0
+    CF: cmp_items at string-list.c:238:9
+    CT: External code
+    RF: cmp_items at string-list.c:238:2
+    CF: msort_with_tmp at qsort_s.c:32:4
+  Occurrences: 1
+
+Uncategorised
+  Events:
+    CF: msort_with_tmp at qsort_s.c:31:7
+    CT: cmp_items at string-list.c:234:0
+    CF: cmp_items at string-list.c:238:9
+    CT: External code
+    RF: cmp_items at string-list.c:238:2
+  Occurrences: 69
+
+Uncategorised
+  Events:
+    CF: msort_with_tmp at qsort_s.c:31:7
+    CT: cmp_items at string-list.c:234:0
+    CF: cmp_items at string-list.c:238:9
+    CT: External code
+    RF: cmp_items at string-list.c:238:2
+    CF: msort_with_tmp at qsort_s.c:32:4
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+  Occurrences: 6
+
+Uncategorised
+  Events:
+    CF: msort_with_tmp at qsort_s.c:31:7
+    CT: cmp_items at string-list.c:234:0
+    CF: cmp_items at string-list.c:238:9
+    CT: External code
+    RF: cmp_items at string-list.c:238:2
+    CF: msort_with_tmp at qsort_s.c:37:4
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+  Occurrences: 23
+
+Uncategorised
+  Events:
+    CF: msort_with_tmp at qsort_s.c:31:7
+    CT: cmp_items at string-list.c:234:0
+    CF: cmp_items at string-list.c:238:9
+    CT: External code
+    RF: cmp_items at string-list.c:238:2
+    CF: msort_with_tmp at qsort_s.c:37:4
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: msort_with_tmp at qsort_s.c:31:7
+    CT: cmp_items at string-list.c:234:0
+    CF: cmp_items at string-list.c:238:9
+    CT: External code
+    RF: cmp_items at string-list.c:238:2
+  Occurrences: 1
+
+Uncategorised
+  Events:
+    CF: msort_with_tmp at qsort_s.c:31:7
+    CT: cmp_items at string-list.c:234:0
+    CF: cmp_items at string-list.c:238:9
+    CT: External code
+    RF: cmp_items at string-list.c:238:2
+    CF: msort_with_tmp at qsort_s.c:37:4
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: msort_with_tmp at qsort_s.c:31:7
+    CT: cmp_items at string-list.c:234:0
+    CF: cmp_items at string-list.c:238:9
+    CT: External code
+    RF: cmp_items at string-list.c:238:2
+    CF: msort_with_tmp at qsort_s.c:37:4
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: msort_with_tmp at qsort_s.c:44:3
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+  Occurrences: 1
+
+Uncategorised
+  Events:
+    CF: msort_with_tmp at qsort_s.c:31:7
+    CT: cmp_items at string-list.c:234:0
+    CF: cmp_items at string-list.c:238:9
+    CT: External code
+    RF: cmp_items at string-list.c:238:2
+    CF: msort_with_tmp at qsort_s.c:37:4
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: msort_with_tmp at qsort_s.c:44:3
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+  Occurrences: 8
+
+Uncategorised
+  Events:
+    CF: msort_with_tmp at qsort_s.c:32:4
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: msort_with_tmp at qsort_s.c:31:7
+    CT: cmp_items at string-list.c:234:0
+    CF: cmp_items at string-list.c:238:9
+    CT: External code
+    RF: cmp_items at string-list.c:238:2
   Occurrences: 3
 
-Unknown
+Uncategorised
+  Events:
+    CF: msort_with_tmp at qsort_s.c:37:4
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: msort_with_tmp at qsort_s.c:31:7
+    CT: cmp_items at string-list.c:234:0
+    CF: cmp_items at string-list.c:238:9
+    CT: External code
+    RF: cmp_items at string-list.c:238:2
+  Occurrences: 9
+
+Uncategorised
+  Events:
+    CF: msort_with_tmp at qsort_s.c:44:3
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+  Occurrences: 30
+
+Uncategorised
   Events:
     CF: precompose_utf8_readdir at precompose_utf8.c:131:21
     CT: Jump to external code
@@ -2949,10 +3160,388 @@ Unknown
     CF: Jump to external code
     CT: External code
     RF: Jump to external code
+    RF: precompose_utf8_readdir at precompose_utf8.c:182:1
+    CF: readdir_skip_dot_and_dotdot at dir.c:61:8
+    CT: is_dot_or_dotdot at dir.h:456:0
+    RF: is_dot_or_dotdot at dir.h:457:2
+    RF: readdir_skip_dot_and_dotdot at dir.c:64:2
+    RF: read_cached_dir at dir.c:2478:1
+    CF: read_directory_recursive at dir.c:2572:11
+    CT: treat_path at dir.c:2282:0
+    CF: treat_path at dir.c:2288:6
+    CT: is_dot_or_dotdot at dir.h:456:0
+    RF: is_dot_or_dotdot at dir.h:457:2
+    CF: treat_path at dir.c:2288:41
+    CT: fspathcmp at dir.c:77:0
+    CF: fspathcmp at dir.c:78:23
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    RF: fspathcmp at dir.c:78:2
+    CF: treat_path at dir.c:2290:2
+    CT: strbuf_setlen at strbuf.h:161:0
+    RF: strbuf_setlen at strbuf.h:169:1
+    CF: treat_path at dir.c:2291:2
+    CT: strbuf_addstr at strbuf.h:304:0
+    CF: strbuf_addstr at strbuf.h:305:20
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: strbuf_addstr at strbuf.h:305:2
+    CT: strbuf_add at strbuf.c:297:0
+    CF: strbuf_add at strbuf.c:298:2
+    CT: strbuf_grow at strbuf.c:92:0
+    RF: strbuf_grow at strbuf.c:102:1
+    CF: strbuf_add at strbuf.c:299:2
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: strbuf_add at strbuf.c:300:2
+    CT: strbuf_setlen at strbuf.h:161:0
+    RF: strbuf_setlen at strbuf.h:169:1
+    RF: strbuf_add at strbuf.c:301:1
+    RF: strbuf_addstr at strbuf.h:306:1
+    CF: treat_path at dir.c:2292:6
+    CT: simplify_away at dir.c:2108:0
+    CF: simplify_away at dir.c:2129:8
+    CT: ps_strncmp at pathspec.h:135:0
+    CF: ps_strncmp at pathspec.h:139:10
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    RF: ps_strncmp at pathspec.h:140:1
+    RF: simplify_away at dir.c:2134:1
+    RF: treat_path at dir.c:2361:1
+    CF: read_directory_recursive at dir.c:2632:3
+    CT: add_path_to_appropriate_result_list at dir.c:2502:0
+    RF: add_path_to_appropriate_result_list at dir.c:2526:1
+    CF: read_directory_recursive at dir.c:2570:10
+    CT: read_cached_dir at dir.c:2447:0
+    CF: read_cached_dir at dir.c:2451:8
+    CT: readdir_skip_dot_and_dotdot at dir.c:57:0
+    CF: readdir_skip_dot_and_dotdot at dir.c:60:14
+    CT: precompose_utf8_readdir at precompose_utf8.c:127:0
+    CF: precompose_utf8_readdir at precompose_utf8.c:129:8
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: precompose_utf8_readdir at precompose_utf8.c:131:21
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: precompose_utf8_readdir at precompose_utf8.c:134:19
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: precompose_utf8_readdir at precompose_utf8.c:147:37
+    CT: has_non_ascii at precompose_utf8.c:18:0
+    RF: has_non_ascii at precompose_utf8.c:37:1
+    CF: precompose_utf8_readdir at precompose_utf8.c:175:4
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: precompose_utf8_readdir at precompose_utf8.c:178:3
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    RF: precompose_utf8_readdir at precompose_utf8.c:182:1
+    CF: readdir_skip_dot_and_dotdot at dir.c:61:8
+    CT: is_dot_or_dotdot at dir.h:456:0
+    RF: is_dot_or_dotdot at dir.h:457:2
+    RF: readdir_skip_dot_and_dotdot at dir.c:64:2
+    RF: read_cached_dir at dir.c:2478:1
+    CF: read_directory_recursive at dir.c:2572:11
+    CT: treat_path at dir.c:2282:0
+    CF: treat_path at dir.c:2288:6
+    CT: is_dot_or_dotdot at dir.h:456:0
+    RF: is_dot_or_dotdot at dir.h:457:2
+    CF: treat_path at dir.c:2288:41
+    CT: fspathcmp at dir.c:77:0
+    CF: fspathcmp at dir.c:78:23
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    RF: fspathcmp at dir.c:78:2
+    CF: treat_path at dir.c:2290:2
+    CT: strbuf_setlen at strbuf.h:161:0
+    RF: strbuf_setlen at strbuf.h:169:1
+    CF: treat_path at dir.c:2291:2
+    CT: strbuf_addstr at strbuf.h:304:0
+    CF: strbuf_addstr at strbuf.h:305:20
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: strbuf_addstr at strbuf.h:305:2
+    CT: strbuf_add at strbuf.c:297:0
+    CF: strbuf_add at strbuf.c:298:2
+    CT: strbuf_grow at strbuf.c:92:0
+    RF: strbuf_grow at strbuf.c:102:1
+    CF: strbuf_add at strbuf.c:299:2
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: strbuf_add at strbuf.c:300:2
+    CT: strbuf_setlen at strbuf.h:161:0
+    RF: strbuf_setlen at strbuf.h:169:1
+    RF: strbuf_add at strbuf.c:301:1
+    RF: strbuf_addstr at strbuf.h:306:1
+    CF: treat_path at dir.c:2292:6
+    CT: simplify_away at dir.c:2108:0
+    CF: simplify_away at dir.c:2129:8
+    CT: ps_strncmp at pathspec.h:135:0
+    CF: ps_strncmp at pathspec.h:139:10
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    RF: ps_strncmp at pathspec.h:140:1
+    RF: simplify_away at dir.c:2134:1
+    RF: treat_path at dir.c:2361:1
+    CF: read_directory_recursive at dir.c:2632:3
+    CT: add_path_to_appropriate_result_list at dir.c:2502:0
+    RF: add_path_to_appropriate_result_list at dir.c:2526:1
+    CF: read_directory_recursive at dir.c:2570:10
+    CT: read_cached_dir at dir.c:2447:0
+    CF: read_cached_dir at dir.c:2451:8
+    CT: readdir_skip_dot_and_dotdot at dir.c:57:0
+    CF: readdir_skip_dot_and_dotdot at dir.c:60:14
+    CT: precompose_utf8_readdir at precompose_utf8.c:127:0
+    CF: precompose_utf8_readdir at precompose_utf8.c:129:8
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: precompose_utf8_readdir at precompose_utf8.c:131:21
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: precompose_utf8_readdir at precompose_utf8.c:134:19
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: precompose_utf8_readdir at precompose_utf8.c:147:37
+    CT: has_non_ascii at precompose_utf8.c:18:0
+    RF: has_non_ascii at precompose_utf8.c:37:1
+    CF: precompose_utf8_readdir at precompose_utf8.c:175:4
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: precompose_utf8_readdir at precompose_utf8.c:178:3
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    RF: precompose_utf8_readdir at precompose_utf8.c:182:1
+    CF: readdir_skip_dot_and_dotdot at dir.c:61:8
+    CT: is_dot_or_dotdot at dir.h:456:0
+    RF: is_dot_or_dotdot at dir.h:457:2
+    RF: readdir_skip_dot_and_dotdot at dir.c:64:2
+    RF: read_cached_dir at dir.c:2478:1
+    CF: read_directory_recursive at dir.c:2572:11
+    CT: treat_path at dir.c:2282:0
+    CF: treat_path at dir.c:2288:6
+    CT: is_dot_or_dotdot at dir.h:456:0
+    RF: is_dot_or_dotdot at dir.h:457:2
+    CF: treat_path at dir.c:2288:41
+    CT: fspathcmp at dir.c:77:0
+    CF: fspathcmp at dir.c:78:23
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    RF: fspathcmp at dir.c:78:2
+    CF: treat_path at dir.c:2290:2
+    CT: strbuf_setlen at strbuf.h:161:0
+    RF: strbuf_setlen at strbuf.h:169:1
+    CF: treat_path at dir.c:2291:2
+    CT: strbuf_addstr at strbuf.h:304:0
+    CF: strbuf_addstr at strbuf.h:305:20
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: strbuf_addstr at strbuf.h:305:2
+    CT: strbuf_add at strbuf.c:297:0
+    CF: strbuf_add at strbuf.c:298:2
+    CT: strbuf_grow at strbuf.c:92:0
+    RF: strbuf_grow at strbuf.c:102:1
+    CF: strbuf_add at strbuf.c:299:2
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: strbuf_add at strbuf.c:300:2
+    CT: strbuf_setlen at strbuf.h:161:0
+    RF: strbuf_setlen at strbuf.h:169:1
+    RF: strbuf_add at strbuf.c:301:1
+    RF: strbuf_addstr at strbuf.h:306:1
+    CF: treat_path at dir.c:2292:6
+    CT: simplify_away at dir.c:2108:0
+    CF: simplify_away at dir.c:2129:8
+    CT: ps_strncmp at pathspec.h:135:0
+    CF: ps_strncmp at pathspec.h:139:10
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    RF: ps_strncmp at pathspec.h:140:1
+    RF: simplify_away at dir.c:2134:1
+    RF: treat_path at dir.c:2361:1
+    CF: read_directory_recursive at dir.c:2632:3
+    CT: add_path_to_appropriate_result_list at dir.c:2502:0
+    RF: add_path_to_appropriate_result_list at dir.c:2526:1
+    CF: read_directory_recursive at dir.c:2570:10
+    CT: read_cached_dir at dir.c:2447:0
+    CF: read_cached_dir at dir.c:2451:8
+    CT: readdir_skip_dot_and_dotdot at dir.c:57:0
+    CF: readdir_skip_dot_and_dotdot at dir.c:60:14
+    CT: precompose_utf8_readdir at precompose_utf8.c:127:0
+    CF: precompose_utf8_readdir at precompose_utf8.c:129:8
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: precompose_utf8_readdir at precompose_utf8.c:131:21
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: precompose_utf8_readdir at precompose_utf8.c:134:19
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: precompose_utf8_readdir at precompose_utf8.c:147:37
+    CT: has_non_ascii at precompose_utf8.c:18:0
+    RF: has_non_ascii at precompose_utf8.c:37:1
+    CF: precompose_utf8_readdir at precompose_utf8.c:175:4
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: precompose_utf8_readdir at precompose_utf8.c:178:3
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    RF: precompose_utf8_readdir at precompose_utf8.c:182:1
+    CF: readdir_skip_dot_and_dotdot at dir.c:61:8
+    CT: is_dot_or_dotdot at dir.h:456:0
+    RF: is_dot_or_dotdot at dir.h:457:2
+    RF: readdir_skip_dot_and_dotdot at dir.c:64:2
+    RF: read_cached_dir at dir.c:2478:1
+    CF: read_directory_recursive at dir.c:2572:11
+    CT: treat_path at dir.c:2282:0
+    CF: treat_path at dir.c:2288:6
+    CT: is_dot_or_dotdot at dir.h:456:0
+    RF: is_dot_or_dotdot at dir.h:457:2
+    CF: treat_path at dir.c:2288:41
+    CT: fspathcmp at dir.c:77:0
+    CF: fspathcmp at dir.c:78:23
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    RF: fspathcmp at dir.c:78:2
+    CF: treat_path at dir.c:2290:2
+    CT: strbuf_setlen at strbuf.h:161:0
+    RF: strbuf_setlen at strbuf.h:169:1
+    CF: treat_path at dir.c:2291:2
+    CT: strbuf_addstr at strbuf.h:304:0
+    CF: strbuf_addstr at strbuf.h:305:20
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: strbuf_addstr at strbuf.h:305:2
+    CT: strbuf_add at strbuf.c:297:0
+    CF: strbuf_add at strbuf.c:298:2
+    CT: strbuf_grow at strbuf.c:92:0
+    RF: strbuf_grow at strbuf.c:102:1
+    CF: strbuf_add at strbuf.c:299:2
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: strbuf_add at strbuf.c:300:2
+    CT: strbuf_setlen at strbuf.h:161:0
+    RF: strbuf_setlen at strbuf.h:169:1
+    RF: strbuf_add at strbuf.c:301:1
+    RF: strbuf_addstr at strbuf.h:306:1
+    CF: treat_path at dir.c:2292:6
+    CT: simplify_away at dir.c:2108:0
+    CF: simplify_away at dir.c:2129:8
+    CT: ps_strncmp at pathspec.h:135:0
+    CF: ps_strncmp at pathspec.h:139:10
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    RF: ps_strncmp at pathspec.h:140:1
+    RF: simplify_away at dir.c:2134:1
+    RF: treat_path at dir.c:2361:1
+    CF: read_directory_recursive at dir.c:2632:3
+    CT: add_path_to_appropriate_result_list at dir.c:2502:0
+    RF: add_path_to_appropriate_result_list at dir.c:2526:1
+    CF: read_directory_recursive at dir.c:2570:10
+    CT: read_cached_dir at dir.c:2447:0
+    CF: read_cached_dir at dir.c:2451:8
+    CT: readdir_skip_dot_and_dotdot at dir.c:57:0
+    CF: readdir_skip_dot_and_dotdot at dir.c:60:14
+    CT: precompose_utf8_readdir at precompose_utf8.c:127:0
+    CF: precompose_utf8_readdir at precompose_utf8.c:129:8
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
+    CF: precompose_utf8_readdir at precompose_utf8.c:131:21
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: precompose_utf8_readdir at precompose_utf8.c:134:19
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: precompose_utf8_readdir at precompose_utf8.c:147:37
+    CT: has_non_ascii at precompose_utf8.c:18:0
+    RF: has_non_ascii at precompose_utf8.c:37:1
+    CF: precompose_utf8_readdir at precompose_utf8.c:175:4
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: precompose_utf8_readdir at precompose_utf8.c:178:3
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    RF: precompose_utf8_readdir at precompose_utf8.c:182:1
+    CF: readdir_skip_dot_and_dotdot at dir.c:61:8
+    CT: is_dot_or_dotdot at dir.h:456:0
+    RF: is_dot_or_dotdot at dir.h:457:2
+    RF: readdir_skip_dot_and_dotdot at dir.c:64:2
+    RF: read_cached_dir at dir.c:2478:1
     CF: read_directory_recursive at dir.c:2572:11
     CT: treat_path at dir.c:2282:0
     CF: treat_path at dir.c:2288:6
@@ -2981,12 +3570,9 @@ Unknown
     CF: Jump to external code
     CT: External code
     RF: Jump to external code
-    RF: precompose_utf8_readdir at precompose_utf8.c:182:1
-    RF: readdir_skip_dot_and_dotdot at dir.c:64:2
-    RF: read_cached_dir at dir.c:2478:1
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     CF: readdir_skip_dot_and_dotdot at dir.c:60:14
     CT: precompose_utf8_readdir at precompose_utf8.c:127:0
@@ -3024,237 +3610,219 @@ Unknown
     RF: is_dot_or_dotdot at dir.h:457:2
   Occurrences: 1
 
-Unknown
-  Events:
-    CF: readdir_skip_dot_and_dotdot at dir.c:61:8
-    CT: is_dot_or_dotdot at dir.h:456:0
-    RF: is_dot_or_dotdot at dir.h:457:2
-  Occurrences: 1
-
-Unknown
+Uncategorised
   Events:
     CF: set_cloexec at run-command.c:535:14
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     CF: set_cloexec at run-command.c:535:14
     CT: Jump to external code
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
-    CF: sigchain_push at sigchain.c:22:2
-  Occurrences: 3
+    CF: set_cloexec at run-command.c:537:3
+    CT: Jump to external code
+  Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     CF: sigchain_push at sigchain.c:22:2
-    CT: check_signum at sigchain.c:14:0
   Occurrences: 2
 
-Unknown
+Uncategorised
   Events:
-    CF: sigchain_push at sigchain.c:24:2
-    CT: st_mult at git-compat-util.h:991:0
-  Occurrences: 7
-
-Unknown
-  Events:
-    CF: sigchain_push at sigchain.c:24:2
-    CT: st_mult at git-compat-util.h:991:0
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-  Occurrences: 1
-
-Unknown
-  Events:
-    CF: sigchain_push at sigchain.c:24:2
-    CT: xrealloc at wrapper.c:127:0
-  Occurrences: 4
-
-Unknown
-  Events:
-    CF: sigchain_push at sigchain.c:24:2
-    CT: xrealloc at wrapper.c:127:0
-    CF: xrealloc at wrapper.c:135:2
-    CT: memory_limit_check at wrapper.c:18:0
-  Occurrences: 1
-
-Unknown
-  Events:
-    CF: sigchain_push at sigchain.c:24:2
-    CT: xrealloc at wrapper.c:127:0
-    CF: xrealloc at wrapper.c:135:2
-    CT: memory_limit_check at wrapper.c:18:0
-    RF: memory_limit_check at wrapper.c:35:1
-    CF: xrealloc at wrapper.c:136:8
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    RF: xrealloc at wrapper.c:140:1
-    CF: sigchain_push at sigchain.c:25:17
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-  Occurrences: 1
-
-Unknown
-  Events:
-    CF: sigchain_push at sigchain.c:25:17
-    CT: Jump to external code
-  Occurrences: 3
-
-Unknown
-  Events:
-    CF: sigchain_push at sigchain.c:25:17
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-  Occurrences: 1
-
-Unknown
-  Events:
-    CF: sigchain_push_common at sigchain.c:48:2
-    CT: sigchain_push at sigchain.c:20:0
-    CF: sigchain_push at sigchain.c:25:17
-    CT: Jump to external code
-  Occurrences: 1
-
-Unknown
-  Events:
-    CF: sigchain_push_common at sigchain.c:48:2
-    CT: sigchain_push at sigchain.c:20:0
+    CF: sigchain_push at sigchain.c:22:2
     CT: check_signum at sigchain.c:14:0
   Occurrences: 1
 
-Unknown
+Uncategorised
+  Events:
+    CF: sigchain_push at sigchain.c:22:2
+    CT: check_signum at sigchain.c:14:0
+    RF: memory_limit_check at wrapper.c:35:1
+    CF: xrealloc at wrapper.c:136:8
+  Occurrences: 1
+
+Uncategorised
+  Events:
+    CF: sigchain_push at sigchain.c:24:2
+    CT: st_mult at git-compat-util.h:991:0
+  Occurrences: 6
+
+Uncategorised
+  Events:
+    CF: sigchain_push at sigchain.c:24:2
+    CT: st_mult at git-compat-util.h:991:0
+    RF: check_signum at sigchain.c:17:1
+  Occurrences: 1
+
+Uncategorised
+  Events:
+    CF: sigchain_push at sigchain.c:24:2
+    CT: st_mult at git-compat-util.h:991:0
+    RF: xrealloc at wrapper.c:140:1
+  Occurrences: 1
+
+Uncategorised
+  Events:
+    CF: sigchain_push at sigchain.c:24:2
+    CT: xrealloc at wrapper.c:127:0
+  Occurrences: 2
+
+Uncategorised
+  Events:
+    CF: sigchain_push at sigchain.c:25:17
+  Occurrences: 1
+
+Uncategorised
+  Events:
+    CF: sigchain_push_common at sigchain.c:48:2
+  Occurrences: 1
+
+Uncategorised
+  Events:
+    CF: sigchain_push_common at sigchain.c:48:2
+    CT: sigchain_push at sigchain.c:20:0
+  Occurrences: 1
+
+Uncategorised
+  Events:
+    CF: sigchain_push_common at sigchain.c:48:2
+    CT: sigchain_push at sigchain.c:20:0
+    CF: sigchain_push at sigchain.c:24:2
+  Occurrences: 1
+
+Uncategorised
+  Events:
+    CF: sigchain_push_common at sigchain.c:48:2
+    CT: sigchain_push at sigchain.c:20:0
+    RF: sigchain_push at sigchain.c:30:1
+  Occurrences: 1
+
+Uncategorised
   Events:
     CF: sigchain_push_common at sigchain.c:49:2
     CT: sigchain_push at sigchain.c:20:0
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
-    CF: start_command at run-command.c:768:17
-    CT: Jump to external code
-  Occurrences: 1
-
-Unknown
-  Events:
-    CF: start_command at run-command.c:768:17
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-  Occurrences: 1
-
-Unknown
-  Events:
-    CF: start_command at run-command.c:775:3
-    CT: set_die_routine at usage.c:123:0
-  Occurrences: 3
-
-Unknown
-  Events:
-    CF: start_command at run-command.c:775:3
-    CT: set_die_routine at usage.c:123:0
-    RF: set_die_routine at usage.c:125:1
-  Occurrences: 1
-
-Unknown
-  Events:
-    CF: start_command at run-command.c:775:3
-    CT: set_die_routine at usage.c:123:0
-    RF: set_die_routine at usage.c:125:1
-    CF: mark_child_for_cleanup at run-command.c:98:3
-    CT: git_atexit at run-command.c:1097:0
-    CF: start_command at run-command.c:776:3
-    CT: set_error_routine at usage.c:133:0
-    RF: set_error_routine at usage.c:135:1
-    CF: git_atexit at run-command.c:1098:2
+    CF: sigchain_push_common at sigchain.c:49:2
+    CT: sigchain_push at sigchain.c:20:0
+    CF: sigchain_push at sigchain.c:22:2
+    CT: check_signum at sigchain.c:14:0
+    RF: check_signum at sigchain.c:17:1
+    CF: sigchain_push at sigchain.c:24:2
     CT: st_mult at git-compat-util.h:991:0
+    CF: start_command at run-command.c:837:3
     RF: st_mult at git-compat-util.h:995:2
+    CT: Jump to external code
+    CF: sigchain_push at sigchain.c:24:2
+    CT: xrealloc at wrapper.c:127:0
   Occurrences: 1
 
-Unknown
+Uncategorised
+  Events:
+    CF: start_command at run-command.c:768:17
+  Occurrences: 1
+
+Uncategorised
+  Events:
+    CF: start_command at run-command.c:775:3
+    CT: set_die_routine at usage.c:123:0
+  Occurrences: 1
+
+Uncategorised
   Events:
     CF: start_command at run-command.c:775:3
     CT: set_die_routine at usage.c:123:0
     RF: set_die_routine at usage.c:125:1
-    CF: start_command at run-command.c:776:3
-    CT: set_error_routine at usage.c:133:0
-    RF: set_error_routine at usage.c:135:1
-  Occurrences: 1
-
-Unknown
-  Events:
-    CF: start_command at run-command.c:775:3
-    CT: set_die_routine at usage.c:123:0
-    RF: set_die_routine at usage.c:125:1
-    RF: Jump to external code
-  Occurrences: 1
-
-Unknown
-  Events:
-    CF: start_command at run-command.c:776:3
-    CT: set_error_routine at usage.c:133:0
-  Occurrences: 6
-
-Unknown
-  Events:
-    CF: start_command at run-command.c:776:3
-    CT: set_error_routine at usage.c:133:0
-    RF: set_error_routine at usage.c:135:1
-  Occurrences: 3
-
-Unknown
-  Events:
-    CF: start_command at run-command.c:776:3
-    CT: set_error_routine at usage.c:133:0
-    RF: set_error_routine at usage.c:135:1
-    RF: set_die_routine at usage.c:125:1
-  Occurrences: 1
-
-Unknown
-  Events:
-    CF: start_command at run-command.c:777:3
-    CT: set_warn_routine at usage.c:143:0
   Occurrences: 2
 
-Unknown
+Uncategorised
   Events:
-    CF: start_command at run-command.c:779:3
-    CT: Jump to external code
+    CF: start_command at run-command.c:775:3
+    CT: set_die_routine at usage.c:123:0
+    RF: set_die_routine at usage.c:125:1
+    CF: start_command at run-command.c:776:3
+    CT: set_error_routine at usage.c:133:0
+    RF: set_error_routine at usage.c:135:1
+    CF: mark_child_for_cleanup at run-command.c:98:3
+    CT: git_atexit at run-command.c:1097:0
+    CF: git_atexit at run-command.c:1098:2
+    CT: st_mult at git-compat-util.h:991:0
   Occurrences: 1
 
-Unknown
+Uncategorised
+  Events:
+    CF: start_command at run-command.c:776:3
+  Occurrences: 1
+
+Uncategorised
+  Events:
+    CF: start_command at run-command.c:776:3
+    CT: set_error_routine at usage.c:133:0
+  Occurrences: 3
+
+Uncategorised
+  Events:
+    CF: start_command at run-command.c:776:3
+    CT: set_error_routine at usage.c:133:0
+    RF: set_error_routine at usage.c:135:1
+  Occurrences: 4
+
+Uncategorised
+  Events:
+    CF: start_command at run-command.c:776:3
+    CT: set_error_routine at usage.c:133:0
+    RF: set_error_routine at usage.c:135:1
+    RF: set_die_routine at usage.c:125:1
+  Occurrences: 1
+
+Uncategorised
   Events:
     CF: start_command at run-command.c:780:3
     CT: set_cloexec at run-command.c:534:0
   Occurrences: 2
 
-Unknown
+Uncategorised
   Events:
-    CF: start_command at run-command.c:824:8
-  Occurrences: 2
-
-Unknown
-  Events:
-    CF: start_command at run-command.c:824:8
-    CF: sigchain_push at sigchain.c:25:17
+    CF: start_command at run-command.c:780:3
+    CT: set_cloexec at run-command.c:534:0
+    CF: set_cloexec at run-command.c:535:14
     CT: Jump to external code
   Occurrences: 1
 
-Unknown
+Uncategorised
+  Events:
+    CF: start_command at run-command.c:824:8
+  Occurrences: 5
+
+Uncategorised
+  Events:
+    CF: start_command at run-command.c:824:8
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+  Occurrences: 1
+
+Uncategorised
+  Events:
+    CF: start_command at run-command.c:824:8
+    CF: xrealloc at wrapper.c:135:2
+    CT: memory_limit_check at wrapper.c:18:0
+  Occurrences: 1
+
+Uncategorised
   Events:
     CF: start_command at run-command.c:824:8
     CT: Jump to external code
-  Occurrences: 7
+  Occurrences: 10
 
-Unknown
+Uncategorised
   Events:
     CF: start_command at run-command.c:824:8
     CT: Jump to external code
@@ -3263,7 +3831,18 @@ Unknown
     RF: Jump to external code
   Occurrences: 3
 
-Unknown
+Uncategorised
+  Events:
+    CF: start_command at run-command.c:824:8
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: start_command at run-command.c:824:8
+    CT: Jump to external code
+  Occurrences: 1
+
+Uncategorised
   Events:
     CF: start_command at run-command.c:824:8
     CT: Jump to external code
@@ -3274,101 +3853,74 @@ Unknown
     CT: Jump to external code
     CF: Jump to external code
     CT: External code
-    RF: Jump to external code
-    CF: start_command at run-command.c:824:8
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: start_command at run-command.c:824:8
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: start_command at run-command.c:824:8
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: start_command at run-command.c:824:8
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    CF: sigchain_push at sigchain.c:24:2
-    CT: st_mult at git-compat-util.h:991:0
     RF: Jump to external code
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     CF: start_command at run-command.c:824:8
     CT: Jump to external code
     CF: Jump to external code
-    CT: External code
     RF: Jump to external code
-    RF: check_signum at sigchain.c:17:1
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     CF: start_command at run-command.c:824:8
     CT: Jump to external code
-    CF: Jump to external code
+    RF: Jump to external code
+  Occurrences: 1
+
+Uncategorised
+  Events:
+    CF: start_command at run-command.c:824:8
+    CT: Jump to external code
     RF: xrealloc at wrapper.c:140:1
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
-    CF: start_command at run-command.c:824:8
-    CT: Jump to external code
-    RF: Jump to external code
-  Occurrences: 1
-
-Unknown
-  Events:
-    CF: start_command at run-command.c:824:8
-    RF: st_mult at git-compat-util.h:995:2
-    CF: sigchain_push at sigchain.c:24:2
-    CT: xrealloc at wrapper.c:127:0
-    CF: xrealloc at wrapper.c:135:2
-    CT: memory_limit_check at wrapper.c:18:0
     CF: start_command at run-command.c:828:7
   Occurrences: 1
 
-Unknown
+Uncategorised
+  Events:
+    CF: start_command at run-command.c:828:7
+    CT: Jump to external code
+  Occurrences: 3
+
+Uncategorised
   Events:
     CF: start_command at run-command.c:837:3
   Occurrences: 3
 
-Unknown
+Uncategorised
   Events:
-    CF: start_command at run-command.c:851:2
-  Occurrences: 1
-
-Unknown
-  Events:
-    CF: start_command at run-command.c:851:2
-    CT: atfork_parent at run-command.c:520:0
-  Occurrences: 1
-
-Unknown
-  Events:
-    CF: start_command at run-command.c:864:2
+    CF: start_command at run-command.c:837:3
     CT: Jump to external code
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
-    CF: start_command at run-command.c:865:6
+    CF: start_command at run-command.c:837:3
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
-    CF: start_command at run-command.c:865:6
-    CT: xread at wrapper.c:225:0
+    CF: start_command at run-command.c:855:3
   Occurrences: 1
 
-Unknown
+Uncategorised
+  Events:
+    CF: start_command at run-command.c:864:2
+    CT: Jump to external code
+  Occurrences: 6
+
+Uncategorised
   Events:
     CF: strbuf_add at strbuf.c:299:2
     CT: Jump to external code
@@ -3756,7 +4308,7 @@ Unknown
     RF: xrealloc at wrapper.c:140:1
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     CF: strbuf_grow at strbuf.c:99:2
     CT: xrealloc at wrapper.c:127:0
@@ -3771,7 +4323,7 @@ Unknown
     RF: xrealloc at wrapper.c:140:1
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     CF: treat_path at dir.c:2290:2
     CT: strbuf_setlen at strbuf.h:161:0
@@ -3809,106 +4361,183 @@ Unknown
     RF: Jump to external code
     RF: ps_strncmp at pathspec.h:140:1
     RF: simplify_away at dir.c:2134:1
-  Occurrences: 2
+  Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     CF: unpack_loose_header at object-file.c:1270:2
     CT: obj_read_unlock at object-store.h:387:0
     RF: obj_read_unlock at object-store.h:390:1
   Occurrences: 47
 
-Unknown
+Uncategorised
   Events:
     CF: xmalloc at wrapper.c:72:9
     CT: do_xmalloc at wrapper.c:46:0
-    CF: do_xmalloc at wrapper.c:49:6
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     CF: xread at wrapper.c:230:8
     CT: Jump to external code
-  Occurrences: 1
+  Occurrences: 2
 
-Unknown
+Uncategorised
   Events:
     CF: xrealloc at wrapper.c:135:2
     CT: memory_limit_check at wrapper.c:18:0
-  Occurrences: 5
-
-Unknown
-  Events:
-    CF: xrealloc at wrapper.c:135:2
-    CT: memory_limit_check at wrapper.c:18:0
-    RF: memory_limit_check at wrapper.c:35:1
-  Occurrences: 1
-
-Unknown
-  Events:
-    CF: xrealloc at wrapper.c:135:2
-    CT: memory_limit_check at wrapper.c:18:0
-    RF: memory_limit_check at wrapper.c:35:1
-    CF: xrealloc at wrapper.c:136:8
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    RF: xrealloc at wrapper.c:140:1
-    CF: sigchain_push at sigchain.c:25:17
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    RF: sigchain_push at sigchain.c:30:1
-    CF: start_command at run-command.c:837:3
-    CT: Jump to external code
-  Occurrences: 1
-
-Unknown
-  Events:
-    CF: xrealloc at wrapper.c:136:8
-  Occurrences: 1
-
-Unknown
-  Events:
-    CF: xrealloc at wrapper.c:136:8
-    CT: Jump to external code
-  Occurrences: 1
-
-Unknown
-  Events:
-    CF: xrealloc at wrapper.c:136:8
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-  Occurrences: 1
-
-Unknown
-  Events:
-    CF: xrealloc at wrapper.c:136:8
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    RF: xrealloc at wrapper.c:140:1
-    CF: git_atexit at run-command.c:1101:7
-    CT: Jump to external code
-  Occurrences: 1
-
-Unknown
-  Events:
-    CT: External code
-    RF: Jump to external code
   Occurrences: 4
 
-Unknown
+Uncategorised
+  Events:
+    CF: xrealloc at wrapper.c:135:2
+    CT: memory_limit_check at wrapper.c:18:0
+    CF: sigchain_push at sigchain.c:25:17
+    CT: Jump to external code
+  Occurrences: 1
+
+Uncategorised
+  Events:
+    CF: xrealloc at wrapper.c:135:2
+    CT: memory_limit_check at wrapper.c:18:0
+    RF: memory_limit_check at wrapper.c:35:1
+    CF: xrealloc at wrapper.c:136:8
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    RF: xrealloc at wrapper.c:140:1
+  Occurrences: 1
+
+Uncategorised
+  Events:
+    CF: xrealloc at wrapper.c:136:8
+    CT: Jump to external code
+  Occurrences: 1
+
+Uncategorised
+  Events:
+    CF: xrealloc at wrapper.c:136:8
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    RF: xrealloc at wrapper.c:140:1
+    CF: git_atexit at run-command.c:1098:2
+    CT: st_mult at git-compat-util.h:991:0
+    RF: st_mult at git-compat-util.h:995:2
+  Occurrences: 1
+
+Uncategorised
+  Events:
+    CT: External code
+  Occurrences: 1
+
+Uncategorised
+  Events:
+    CT: External code
+    RF: Jump to external code
+  Occurrences: 1
+
+Uncategorised
+  Events:
+    CT: External code
+    RF: Jump to external code
+    CF: start_command at run-command.c:824:8
+  Occurrences: 1
+
+Uncategorised
+  Events:
+    CT: External code
+    RF: Jump to external code
+    RF: Jump to external code
+    RF: xrealloc at wrapper.c:140:1
+  Occurrences: 1
+
+Uncategorised
+  Events:
+    CT: External code
+    RF: Jump to external code
+    RF: st_mult at git-compat-util.h:995:2
+    CF: sigchain_push at sigchain.c:24:2
+    CT: xrealloc at wrapper.c:127:0
+  Occurrences: 1
+
+Uncategorised
   Events:
     CT: Jump to external code
   Occurrences: 8
 
-Unknown
+Uncategorised
+  Events:
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: msort_with_tmp at qsort_s.c:31:7
+    CT: cmp_items at string-list.c:234:0
+    CF: cmp_items at string-list.c:238:9
+    CT: External code
+    RF: cmp_items at string-list.c:238:2
+    CF: msort_with_tmp at qsort_s.c:37:4
+  Occurrences: 12
+
+Uncategorised
+  Events:
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: msort_with_tmp at qsort_s.c:31:7
+    CT: cmp_items at string-list.c:234:0
+    CF: cmp_items at string-list.c:238:9
+    CT: External code
+    RF: cmp_items at string-list.c:238:2
+    CF: msort_with_tmp at qsort_s.c:37:4
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: msort_with_tmp at qsort_s.c:44:3
+  Occurrences: 43
+
+Uncategorised
+  Events:
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: msort_with_tmp at qsort_s.c:44:3
+  Occurrences: 122
+
+Uncategorised
+  Events:
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: msort_with_tmp at qsort_s.c:45:2
+  Occurrences: 1
+
+Uncategorised
+  Events:
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: start_command at run-command.c:824:8
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: start_command at run-command.c:824:8
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+  Occurrences: 1
+
+Uncategorised
   Events:
     CT: Jump to external code
     CF: Jump to external code
@@ -3917,161 +4546,248 @@ Unknown
     CF: traverse_trees at tree-walk.c:468:19
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     CT: Jump to external code
-    CF: xrealloc at wrapper.c:136:8
-  Occurrences: 1
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    RF: msort_with_tmp at qsort_s.c:46:1
+    CF: msort_with_tmp at qsort_s.c:26:2
+    CT: msort_with_tmp at qsort_s.c:12:0
+    CF: msort_with_tmp at qsort_s.c:25:2
+    CT: msort_with_tmp at qsort_s.c:12:0
+    RF: msort_with_tmp at qsort_s.c:46:1
+    CF: msort_with_tmp at qsort_s.c:26:2
+    CT: msort_with_tmp at qsort_s.c:12:0
+    RF: msort_with_tmp at qsort_s.c:46:1
+    CF: msort_with_tmp at qsort_s.c:31:7
+    CT: cmp_items at string-list.c:234:0
+    CF: cmp_items at string-list.c:238:9
+    CT: External code
+    RF: cmp_items at string-list.c:238:2
+    CF: msort_with_tmp at qsort_s.c:32:4
+  Occurrences: 2
 
-Unknown
+Uncategorised
   Events:
     CT: Jump to external code
-    CT: st_mult at git-compat-util.h:991:0
+    RF: xrealloc at wrapper.c:140:1
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     CT: atfork_parent at run-command.c:520:0
   Occurrences: 1
 
-Unknown
+Uncategorised
+  Events:
+    CT: atfork_parent at run-command.c:520:0
+    CF: atfork_parent at run-command.c:522:6
+    CT: Jump to external code
+  Occurrences: 1
+
+Uncategorised
   Events:
     CT: check_signum at sigchain.c:14:0
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
-    CT: container_of_or_null_offset at git-compat-util.h:1580:0
-    RF: container_of_or_null_offset at git-compat-util.h:1581:2
-    CF: all_attrs_init at attr.c:155:3
-  Occurrences: 52
+    CT: check_signum at sigchain.c:14:0
+    RF: check_signum at sigchain.c:17:1
+  Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
+    CT: cmp_items at string-list.c:234:0
+    CF: cmp_items at string-list.c:238:9
+    CT: External code
+    RF: cmp_items at string-list.c:238:2
+    CF: msort_with_tmp at qsort_s.c:32:4
+  Occurrences: 29
+
+Uncategorised
+  Events:
+    CT: git_atexit at run-command.c:1097:0
+    CT: xmalloc at wrapper.c:71:0
+    CF: xmalloc at wrapper.c:72:9
+    CT: do_xmalloc at wrapper.c:46:0
+    CF: do_xmalloc at wrapper.c:49:6
     CT: memory_limit_check at wrapper.c:18:0
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
-    CT: st_mult at git-compat-util.h:991:0
+    CT: mark_child_for_cleanup at run-command.c:90:0
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
-    CT: st_mult at git-compat-util.h:991:0
-    RF: st_mult at git-compat-util.h:995:2
-    CF: sigchain_push at sigchain.c:24:2
-    CT: xrealloc at wrapper.c:127:0
+    CT: set_error_routine at usage.c:133:0
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
-    CT: xread at wrapper.c:225:0
-  Occurrences: 1
-
-Unknown
-  Events:
-    CT: xrealloc at wrapper.c:127:0
-  Occurrences: 3
-
-Unknown
-  Events:
-    RF: Jump to external code
-  Occurrences: 8
-
-Unknown
-  Events:
-    RF: Jump to external code
-    CF: sigchain_push_common at sigchain.c:49:2
-    CT: sigchain_push at sigchain.c:20:0
-  Occurrences: 1
-
-Unknown
-  Events:
-    RF: Jump to external code
-    CF: xrealloc at wrapper.c:135:2
-  Occurrences: 1
-
-Unknown
-  Events:
-    RF: Jump to external code
-    RF: sigchain_push at sigchain.c:30:1
-    CF: sigchain_push_common at sigchain.c:49:2
     CT: sigchain_push at sigchain.c:20:0
     CF: sigchain_push at sigchain.c:22:2
     CT: check_signum at sigchain.c:14:0
-    CF: start_command at run-command.c:837:3
     RF: check_signum at sigchain.c:17:1
+  Occurrences: 1
+
+Uncategorised
+  Events:
+    CT: string_list_append at string-list.c:218:0
+    CF: string_list_append at string-list.c:221:27
+    CT: xstrdup at wrapper.c:38:0
+    CF: xstrdup at wrapper.c:39:14
     CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    RF: xstrdup at wrapper.c:42:2
+    CF: string_list_append at string-list.c:219:9
+    CT: string_list_append_nodup at string-list.c:207:0
+    RF: string_list_append_nodup at string-list.c:213:2
+    RF: string_list_append at string-list.c:219:2
+    CF: prep_childenv at run-command.c:450:24
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: prep_childenv at run-command.c:453:4
+    CT: strbuf_setlen at strbuf.h:161:0
+    RF: strbuf_setlen at strbuf.h:169:1
+    CF: prep_childenv at run-command.c:454:4
+    CT: strbuf_add at strbuf.c:297:0
+    CF: strbuf_add at strbuf.c:298:2
+    CT: strbuf_grow at strbuf.c:92:0
+    RF: strbuf_grow at strbuf.c:102:1
+    CF: strbuf_add at strbuf.c:299:2
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: strbuf_add at strbuf.c:300:2
+    CT: strbuf_setlen at strbuf.h:161:0
+    RF: strbuf_setlen at strbuf.h:169:1
+    RF: strbuf_add at strbuf.c:301:1
+    CF: prep_childenv at run-command.c:455:4
+  Occurrences: 16
+
+Uncategorised
+  Events:
+    CT: xrealloc at wrapper.c:127:0
+  Occurrences: 1
+
+Uncategorised
+  Events:
+    CT: xrealloc at wrapper.c:127:0
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+  Occurrences: 1
+
+Uncategorised
+  Events:
+    CT: xrealloc at wrapper.c:127:0
+    CF: xrealloc at wrapper.c:135:2
+    CT: memory_limit_check at wrapper.c:18:0
+  Occurrences: 1
+
+Uncategorised
+  Events:
+    RF: Jump to external code
+  Occurrences: 9
+
+Uncategorised
+  Events:
+    RF: Jump to external code
+    CF: Jump to external code
+    CT: External code
+  Occurrences: 1
+
+Uncategorised
+  Events:
+    RF: Jump to external code
     CF: sigchain_push at sigchain.c:24:2
     CT: st_mult at git-compat-util.h:991:0
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     RF: Jump to external code
-    RF: st_mult at git-compat-util.h:995:2
+    RF: Jump to external code
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     RF: Jump to external code
     RF: xrealloc at wrapper.c:140:1
-  Occurrences: 5
+  Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     RF: atfork_parent at run-command.c:530:1
+    CF: start_command at run-command.c:855:3
+    CT: mark_child_for_cleanup at run-command.c:90:0
   Occurrences: 1
 
-Unknown
-  Events:
-    RF: atfork_parent at run-command.c:530:1
-    CF: start_command at run-command.c:776:3
-    CT: set_error_routine at usage.c:133:0
-    RF: set_error_routine at usage.c:135:1
-  Occurrences: 1
-
-Unknown
+Uncategorised
   Events:
     RF: check_signum at sigchain.c:17:1
-  Occurrences: 5
+  Occurrences: 4
 
-Unknown
-  Events:
-    RF: check_signum at sigchain.c:17:1
-    CF: sigchain_push at sigchain.c:22:2
-    CT: check_signum at sigchain.c:14:0
-  Occurrences: 1
-
-Unknown
+Uncategorised
   Events:
     RF: check_signum at sigchain.c:17:1
     CF: start_command at run-command.c:824:8
     CT: Jump to external code
     CF: Jump to external code
+  Occurrences: 1
+
+Uncategorised
+  Events:
+    RF: check_signum at sigchain.c:17:1
+    CT: Jump to external code
+  Occurrences: 1
+
+Uncategorised
+  Events:
+    RF: do_xmalloc at wrapper.c:68:1
+    RF: xmalloc at wrapper.c:72:2
+  Occurrences: 1
+
+Uncategorised
+  Events:
+    RF: memory_limit_check at wrapper.c:35:1
+  Occurrences: 2
+
+Uncategorised
+  Events:
+    RF: memory_limit_check at wrapper.c:35:1
+    CF: do_xmalloc at wrapper.c:51:8
+    CT: Jump to external code
+    CF: Jump to external code
     CT: External code
   Occurrences: 1
 
-Unknown
-  Events:
-    RF: check_signum at sigchain.c:17:1
-    RF: st_mult at git-compat-util.h:995:2
-  Occurrences: 1
-
-Unknown
+Uncategorised
   Events:
     RF: memory_limit_check at wrapper.c:35:1
-  Occurrences: 3
+    CF: xrealloc at wrapper.c:136:8
+    CF: xrealloc at wrapper.c:135:2
+    CT: memory_limit_check at wrapper.c:18:0
+  Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     RF: memory_limit_check at wrapper.c:35:1
     CF: xrealloc at wrapper.c:136:8
     CT: Jump to external code
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     RF: memory_limit_check at wrapper.c:35:1
     CF: xrealloc at wrapper.c:136:8
@@ -4080,9 +4796,33 @@ Unknown
     CT: External code
     RF: Jump to external code
     RF: xrealloc at wrapper.c:140:1
-  Occurrences: 2
+  Occurrences: 1
 
-Unknown
+Uncategorised
+  Events:
+    RF: memory_limit_check at wrapper.c:35:1
+    CF: xrealloc at wrapper.c:136:8
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    RF: xrealloc at wrapper.c:140:1
+    CF: sigchain_push at sigchain.c:25:17
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    RF: sigchain_push at sigchain.c:30:1
+  Occurrences: 1
+
+Uncategorised
+  Events:
+    RF: msort_with_tmp at qsort_s.c:46:1
+    CF: msort_with_tmp at qsort_s.c:26:2
+    CT: msort_with_tmp at qsort_s.c:17:8
+  Occurrences: 3
+
+Uncategorised
   Events:
     RF: readdir_skip_dot_and_dotdot at dir.c:64:2
     RF: read_cached_dir at dir.c:2478:1
@@ -4145,35 +4885,34 @@ Unknown
     CT: readdir_skip_dot_and_dotdot at dir.c:57:0
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     RF: set_die_routine at usage.c:125:1
-  Occurrences: 6
+  Occurrences: 3
 
-Unknown
+Uncategorised
+  Events:
+    RF: set_die_routine at usage.c:125:1
+    CF: start_command at run-command.c:864:2
+    CT: Jump to external code
+  Occurrences: 1
+
+Uncategorised
   Events:
     RF: set_error_routine at usage.c:135:1
   Occurrences: 4
 
-Unknown
+Uncategorised
   Events:
     RF: sigchain_push at sigchain.c:30:1
   Occurrences: 8
 
-Unknown
-  Events:
-    RF: sigchain_push at sigchain.c:30:1
-    CF: sigchain_push_common at sigchain.c:48:2
-    CT: sigchain_push at sigchain.c:20:0
-    CF: sigchain_push at sigchain.c:22:2
-  Occurrences: 1
-
-Unknown
+Uncategorised
   Events:
     RF: st_mult at git-compat-util.h:995:2
-  Occurrences: 11
+  Occurrences: 8
 
-Unknown
+Uncategorised
   Events:
     RF: st_mult at git-compat-util.h:995:2
     CF: git_atexit at run-command.c:1098:2
@@ -4182,374 +4921,31 @@ Unknown
     CT: memory_limit_check at wrapper.c:18:0
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     RF: st_mult at git-compat-util.h:995:2
     CF: sigchain_push at sigchain.c:24:2
     CT: xrealloc at wrapper.c:127:0
   Occurrences: 1
 
-Unknown
-  Events:
-    RF: treat_path at dir.c:2361:1
-    CF: read_directory_recursive at dir.c:2632:3
-    CT: add_path_to_appropriate_result_list at dir.c:2502:0
-    RF: add_path_to_appropriate_result_list at dir.c:2526:1
-    CF: read_directory_recursive at dir.c:2570:10
-    CT: read_cached_dir at dir.c:2447:0
-    CF: read_cached_dir at dir.c:2451:8
-    CT: readdir_skip_dot_and_dotdot at dir.c:57:0
-    CF: readdir_skip_dot_and_dotdot at dir.c:60:14
-    CT: precompose_utf8_readdir at precompose_utf8.c:127:0
-    CF: precompose_utf8_readdir at precompose_utf8.c:129:8
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: precompose_utf8_readdir at precompose_utf8.c:131:21
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: precompose_utf8_readdir at precompose_utf8.c:134:19
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: precompose_utf8_readdir at precompose_utf8.c:147:37
-    CT: has_non_ascii at precompose_utf8.c:18:0
-    RF: has_non_ascii at precompose_utf8.c:37:1
-    CF: precompose_utf8_readdir at precompose_utf8.c:175:4
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: precompose_utf8_readdir at precompose_utf8.c:178:3
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    RF: precompose_utf8_readdir at precompose_utf8.c:182:1
-    CF: readdir_skip_dot_and_dotdot at dir.c:61:8
-    CT: is_dot_or_dotdot at dir.h:456:0
-    RF: is_dot_or_dotdot at dir.h:457:2
-    RF: readdir_skip_dot_and_dotdot at dir.c:64:2
-    RF: read_cached_dir at dir.c:2478:1
-    CF: read_directory_recursive at dir.c:2572:11
-    CT: treat_path at dir.c:2282:0
-    CF: treat_path at dir.c:2288:6
-    CT: is_dot_or_dotdot at dir.h:456:0
-    RF: is_dot_or_dotdot at dir.h:457:2
-    CF: treat_path at dir.c:2288:41
-    CT: fspathcmp at dir.c:77:0
-    CF: fspathcmp at dir.c:78:23
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    RF: fspathcmp at dir.c:78:2
-    CF: treat_path at dir.c:2290:2
-    CT: strbuf_setlen at strbuf.h:161:0
-    RF: strbuf_setlen at strbuf.h:169:1
-    CF: treat_path at dir.c:2291:2
-    CT: strbuf_addstr at strbuf.h:304:0
-    CF: strbuf_addstr at strbuf.h:305:20
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: strbuf_addstr at strbuf.h:305:2
-    CT: strbuf_add at strbuf.c:297:0
-    CF: strbuf_add at strbuf.c:298:2
-    CT: strbuf_grow at strbuf.c:92:0
-    RF: strbuf_grow at strbuf.c:102:1
-    CF: strbuf_add at strbuf.c:299:2
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: strbuf_add at strbuf.c:300:2
-    CT: strbuf_setlen at strbuf.h:161:0
-    RF: strbuf_setlen at strbuf.h:169:1
-    RF: strbuf_add at strbuf.c:301:1
-    RF: strbuf_addstr at strbuf.h:306:1
-    CF: treat_path at dir.c:2292:6
-    CT: simplify_away at dir.c:2108:0
-    CF: simplify_away at dir.c:2129:8
-    CT: ps_strncmp at pathspec.h:135:0
-    CF: ps_strncmp at pathspec.h:139:10
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    RF: ps_strncmp at pathspec.h:140:1
-    RF: simplify_away at dir.c:2134:1
-    RF: treat_path at dir.c:2361:1
-    CF: read_directory_recursive at dir.c:2632:3
-    CT: add_path_to_appropriate_result_list at dir.c:2502:0
-    RF: add_path_to_appropriate_result_list at dir.c:2526:1
-    CF: read_directory_recursive at dir.c:2570:10
-    CT: read_cached_dir at dir.c:2447:0
-    CF: read_cached_dir at dir.c:2451:8
-    CT: readdir_skip_dot_and_dotdot at dir.c:57:0
-    CF: readdir_skip_dot_and_dotdot at dir.c:60:14
-    CT: precompose_utf8_readdir at precompose_utf8.c:127:0
-    CF: precompose_utf8_readdir at precompose_utf8.c:129:8
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: precompose_utf8_readdir at precompose_utf8.c:131:21
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: precompose_utf8_readdir at precompose_utf8.c:134:19
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: precompose_utf8_readdir at precompose_utf8.c:147:37
-    CT: has_non_ascii at precompose_utf8.c:18:0
-    RF: has_non_ascii at precompose_utf8.c:37:1
-    CF: precompose_utf8_readdir at precompose_utf8.c:175:4
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: precompose_utf8_readdir at precompose_utf8.c:178:3
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    RF: precompose_utf8_readdir at precompose_utf8.c:182:1
-    CF: readdir_skip_dot_and_dotdot at dir.c:61:8
-    CT: is_dot_or_dotdot at dir.h:456:0
-    RF: is_dot_or_dotdot at dir.h:457:2
-    RF: readdir_skip_dot_and_dotdot at dir.c:64:2
-    RF: read_cached_dir at dir.c:2478:1
-    CF: read_directory_recursive at dir.c:2572:11
-    CT: treat_path at dir.c:2282:0
-    CF: treat_path at dir.c:2288:6
-    CT: is_dot_or_dotdot at dir.h:456:0
-    RF: is_dot_or_dotdot at dir.h:457:2
-    CF: treat_path at dir.c:2288:41
-    CT: fspathcmp at dir.c:77:0
-    CF: fspathcmp at dir.c:78:23
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    RF: fspathcmp at dir.c:78:2
-    CF: treat_path at dir.c:2290:2
-    CT: strbuf_setlen at strbuf.h:161:0
-    RF: strbuf_setlen at strbuf.h:169:1
-    CF: treat_path at dir.c:2291:2
-    CT: strbuf_addstr at strbuf.h:304:0
-    CF: strbuf_addstr at strbuf.h:305:20
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: strbuf_addstr at strbuf.h:305:2
-    CT: strbuf_add at strbuf.c:297:0
-    CF: strbuf_add at strbuf.c:298:2
-    CT: strbuf_grow at strbuf.c:92:0
-    RF: strbuf_grow at strbuf.c:102:1
-    CF: strbuf_add at strbuf.c:299:2
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: strbuf_add at strbuf.c:300:2
-    CT: strbuf_setlen at strbuf.h:161:0
-    RF: strbuf_setlen at strbuf.h:169:1
-    RF: strbuf_add at strbuf.c:301:1
-    RF: strbuf_addstr at strbuf.h:306:1
-    CF: treat_path at dir.c:2292:6
-    CT: simplify_away at dir.c:2108:0
-    CF: simplify_away at dir.c:2129:8
-    CT: ps_strncmp at pathspec.h:135:0
-    CF: ps_strncmp at pathspec.h:139:10
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    RF: ps_strncmp at pathspec.h:140:1
-    RF: simplify_away at dir.c:2134:1
-    RF: treat_path at dir.c:2361:1
-    CF: read_directory_recursive at dir.c:2632:3
-    CT: add_path_to_appropriate_result_list at dir.c:2502:0
-    RF: add_path_to_appropriate_result_list at dir.c:2526:1
-    CF: read_directory_recursive at dir.c:2570:10
-    CT: read_cached_dir at dir.c:2447:0
-    CF: read_cached_dir at dir.c:2451:8
-    CT: readdir_skip_dot_and_dotdot at dir.c:57:0
-    CF: readdir_skip_dot_and_dotdot at dir.c:60:14
-    CT: precompose_utf8_readdir at precompose_utf8.c:127:0
-    CF: precompose_utf8_readdir at precompose_utf8.c:129:8
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: precompose_utf8_readdir at precompose_utf8.c:131:21
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: precompose_utf8_readdir at precompose_utf8.c:134:19
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: precompose_utf8_readdir at precompose_utf8.c:147:37
-    CT: has_non_ascii at precompose_utf8.c:18:0
-    RF: has_non_ascii at precompose_utf8.c:37:1
-    CF: precompose_utf8_readdir at precompose_utf8.c:175:4
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: precompose_utf8_readdir at precompose_utf8.c:178:3
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    RF: precompose_utf8_readdir at precompose_utf8.c:182:1
-    CF: readdir_skip_dot_and_dotdot at dir.c:61:8
-    CT: is_dot_or_dotdot at dir.h:456:0
-    RF: is_dot_or_dotdot at dir.h:457:2
-    RF: readdir_skip_dot_and_dotdot at dir.c:64:2
-    RF: read_cached_dir at dir.c:2478:1
-    CF: read_directory_recursive at dir.c:2572:11
-    CT: treat_path at dir.c:2282:0
-    CF: treat_path at dir.c:2288:6
-    CT: is_dot_or_dotdot at dir.h:456:0
-    RF: is_dot_or_dotdot at dir.h:457:2
-    CF: treat_path at dir.c:2288:41
-    CT: fspathcmp at dir.c:77:0
-    CF: fspathcmp at dir.c:78:23
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    RF: fspathcmp at dir.c:78:2
-    CF: treat_path at dir.c:2290:2
-    CT: strbuf_setlen at strbuf.h:161:0
-    RF: strbuf_setlen at strbuf.h:169:1
-    CF: treat_path at dir.c:2291:2
-    CT: strbuf_addstr at strbuf.h:304:0
-    CF: strbuf_addstr at strbuf.h:305:20
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: strbuf_addstr at strbuf.h:305:2
-    CT: strbuf_add at strbuf.c:297:0
-    CF: strbuf_add at strbuf.c:298:2
-    CT: strbuf_grow at strbuf.c:92:0
-    RF: strbuf_grow at strbuf.c:102:1
-    CF: strbuf_add at strbuf.c:299:2
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: strbuf_add at strbuf.c:300:2
-    CT: strbuf_setlen at strbuf.h:161:0
-    RF: strbuf_setlen at strbuf.h:169:1
-    RF: strbuf_add at strbuf.c:301:1
-    RF: strbuf_addstr at strbuf.h:306:1
-    CF: treat_path at dir.c:2292:6
-    CT: simplify_away at dir.c:2108:0
-    CF: simplify_away at dir.c:2129:8
-    CT: ps_strncmp at pathspec.h:135:0
-    CF: ps_strncmp at pathspec.h:139:10
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    RF: ps_strncmp at pathspec.h:140:1
-    RF: simplify_away at dir.c:2134:1
-    RF: treat_path at dir.c:2361:1
-    CF: read_directory_recursive at dir.c:2632:3
-    CT: add_path_to_appropriate_result_list at dir.c:2502:0
-    RF: add_path_to_appropriate_result_list at dir.c:2526:1
-    CF: read_directory_recursive at dir.c:2570:10
-    CT: read_cached_dir at dir.c:2447:0
-    CF: read_cached_dir at dir.c:2451:8
-    CT: readdir_skip_dot_and_dotdot at dir.c:57:0
-    CF: readdir_skip_dot_and_dotdot at dir.c:60:14
-    CT: precompose_utf8_readdir at precompose_utf8.c:127:0
-    CF: precompose_utf8_readdir at precompose_utf8.c:129:8
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: precompose_utf8_readdir at precompose_utf8.c:131:21
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: precompose_utf8_readdir at precompose_utf8.c:134:19
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: precompose_utf8_readdir at precompose_utf8.c:147:37
-    CT: has_non_ascii at precompose_utf8.c:18:0
-    RF: has_non_ascii at precompose_utf8.c:37:1
-    CF: precompose_utf8_readdir at precompose_utf8.c:175:4
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: precompose_utf8_readdir at precompose_utf8.c:178:3
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    RF: precompose_utf8_readdir at precompose_utf8.c:182:1
-    CF: readdir_skip_dot_and_dotdot at dir.c:61:8
-    CT: is_dot_or_dotdot at dir.h:456:0
-    RF: is_dot_or_dotdot at dir.h:457:2
-    RF: readdir_skip_dot_and_dotdot at dir.c:64:2
-    RF: read_cached_dir at dir.c:2478:1
-    CF: read_directory_recursive at dir.c:2572:11
-    CT: treat_path at dir.c:2282:0
-    CF: treat_path at dir.c:2288:6
-    CT: is_dot_or_dotdot at dir.h:456:0
-    RF: is_dot_or_dotdot at dir.h:457:2
-    CF: treat_path at dir.c:2288:41
-    CT: fspathcmp at dir.c:77:0
-    CF: fspathcmp at dir.c:78:23
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    RF: fspathcmp at dir.c:78:2
-  Occurrences: 1
-
-Unknown
+Uncategorised
   Events:
     RF: xrealloc at wrapper.c:140:1
-  Occurrences: 6
+  Occurrences: 3
 
-Unknown
+Uncategorised
   Events:
     RF: xrealloc at wrapper.c:140:1
     CF: sigchain_push at sigchain.c:25:17
     CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     RF: xrealloc at wrapper.c:140:1
     CF: start_command at run-command.c:824:8
     CT: Jump to external code
-  Occurrences: 2
+  Occurrences: 1
 
 ## Divergences with unique coordinates by type
 
@@ -4557,18 +4953,18 @@ CoordinatesRemoved
   Unique divergence coordinates: 90
 
 CoordinatesChanged
-  Unique divergence coordinates: 69
+  Unique divergence coordinates: 77
 
 LibraryCallRemoved
-  Unique divergence coordinates: 177
+  Unique divergence coordinates: 175
 
 ProgramCallRemoved
   Unique divergence coordinates: 35
 
-Unknown
-  Unique divergence coordinates: 118
+Uncategorised
+  Unique divergence coordinates: 141
 
 ## Summary
 
-489 unique divergence coordinates
-39894 divergence occurrences
+518 unique divergence coordinates
+40900 divergence occurrences

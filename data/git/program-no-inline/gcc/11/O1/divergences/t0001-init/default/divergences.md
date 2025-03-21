@@ -2330,24 +2330,8 @@ LibraryCallRemoved
     CT: Jump to external code
     CF: Jump to external code
     CT: External code
-  Occurrences: 183
-
-LibraryCallRemoved
-  Events:
-    CF: config_store_data_clear at config.c:2871:2
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
     RF: Jump to external code
-  Occurrences: 152
-
-LibraryCallRemoved
-  Events:
-    CF: get_oid_with_context_1 at object-name.c:1916:2
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-  Occurrences: 6
+  Occurrences: 335
 
 LibraryCallRemoved
   Events:
@@ -2356,7 +2340,7 @@ LibraryCallRemoved
     CF: Jump to external code
     CT: External code
     RF: Jump to external code
-  Occurrences: 16
+  Occurrences: 22
 
 LibraryCallRemoved
   Events:
@@ -2373,24 +2357,8 @@ LibraryCallRemoved
     CT: Jump to external code
     CF: Jump to external code
     CT: External code
-  Occurrences: 23
-
-LibraryCallRemoved
-  Events:
-    CF: git_hash_sha1_final_oid at object-file.c:107:2
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
     RF: Jump to external code
-  Occurrences: 20
-
-LibraryCallRemoved
-  Events:
-    CF: hashmap_clear_ at hashmap.c:209:2
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-  Occurrences: 73
+  Occurrences: 43
 
 LibraryCallRemoved
   Events:
@@ -2399,7 +2367,7 @@ LibraryCallRemoved
     CF: Jump to external code
     CT: External code
     RF: Jump to external code
-  Occurrences: 69
+  Occurrences: 142
 
 LibraryCallRemoved
   Events:
@@ -2524,6 +2492,7 @@ LibraryCallRemoved
     CT: Jump to external code
     CF: Jump to external code
     CT: External code
+    RF: Jump to external code
   Occurrences: 1
 
 LibraryCallRemoved
@@ -2828,25 +2797,25 @@ ProgramCallRemoved
     RF: obj_read_lock at object-store.h:384:1
   Occurrences: 24
 
-Unknown
+Uncategorised
   Events:
     CF: Jump to external code
   Occurrences: 4
 
-Unknown
+Uncategorised
   Events:
     CF: Jump to external code
     CT: External code
   Occurrences: 7
 
-Unknown
+Uncategorised
   Events:
     CF: Jump to external code
     CT: External code
     RF: Jump to external code
   Occurrences: 11
 
-Unknown
+Uncategorised
   Events:
     CF: Jump to external code
     CT: External code
@@ -2856,7 +2825,7 @@ Unknown
     CT: st_mult at git-compat-util.h:992:5
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     CF: Jump to external code
     CT: External code
@@ -2871,7 +2840,7 @@ Unknown
     RF: st_mult at git-compat-util.h:996:1
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     CF: Jump to external code
     CT: External code
@@ -2880,7 +2849,7 @@ Unknown
     CT: Jump to external code
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     CF: Jump to external code
     CT: External code
@@ -2914,7 +2883,7 @@ Unknown
     RF: check_signum at sigchain.c:15:5
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     CF: Jump to external code
     CT: External code
@@ -2923,7 +2892,7 @@ Unknown
     RF: check_signum at sigchain.c:15:5
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     CF: Jump to external code
     CT: External code
@@ -2931,7 +2900,7 @@ Unknown
     RF: xrealloc at wrapper.c:140:1
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     CF: cb_init at cbtree.h:45:2
     CT: Jump to external code
@@ -2940,7 +2909,7 @@ Unknown
     RF: Jump to external code
   Occurrences: 11
 
-Unknown
+Uncategorised
   Events:
     CF: clone_checkout_metadata at convert.c:2015:2
     CT: Jump to external code
@@ -2949,7 +2918,7 @@ Unknown
     RF: Jump to external code
   Occurrences: 2
 
-Unknown
+Uncategorised
   Events:
     CF: compute_diffstat at diff.c:6913:2
     CT: Jump to external code
@@ -2958,14 +2927,14 @@ Unknown
     RF: Jump to external code
   Occurrences: 4
 
-Unknown
+Uncategorised
   Events:
     CF: drop_all_attr_stacks at attr.c:538:2
     CT: vector_lock at attr.c:489:1
     RF: vector_lock at attr.c:491:1
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     CF: drop_all_attr_stacks at attr.c:538:2
     CT: vector_lock at attr.c:489:1
@@ -2975,7 +2944,7 @@ Unknown
     RF: vector_unlock at attr.c:496:1
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     CF: entry_clear at tree-walk.c:106:2
     CT: Jump to external code
@@ -2984,12 +2953,12 @@ Unknown
     RF: Jump to external code
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     CF: git_atexit at run-command.c:1098:2
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     CF: git_atexit at run-command.c:1098:2
     CT: st_mult at git-compat-util.h:991:1
@@ -2998,13 +2967,13 @@ Unknown
     CT: git_atexit at run-command.c:1097:1
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     CF: git_atexit at run-command.c:1098:2
     CT: st_mult at git-compat-util.h:992:5
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     CF: git_atexit at run-command.c:1098:2
     CT: xrealloc at wrapper.c:127:1
@@ -3021,14 +2990,14 @@ Unknown
     CT: Jump to external code
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     CF: git_attr_internal at attr.c:216:2
     CT: hashmap_lock at attr.c:42:1
     RF: hashmap_lock at attr.c:44:1
   Occurrences: 110
 
-Unknown
+Uncategorised
   Events:
     CF: init_object_disambiguation at object-name.c:327:2
     CT: Jump to external code
@@ -3037,7 +3006,7 @@ Unknown
     RF: Jump to external code
   Occurrences: 33
 
-Unknown
+Uncategorised
   Events:
     CF: list_objects_filter_init at list-objects-filter-options.c:421:2
     CT: Jump to external code
@@ -3046,7 +3015,7 @@ Unknown
     RF: Jump to external code
   Occurrences: 17
 
-Unknown
+Uncategorised
   Events:
     CF: mark_child_for_cleanup at run-command.c:98:3
     CT: git_atexit at run-command.c:1097:1
@@ -3063,7 +3032,7 @@ Unknown
     RF: xrealloc at wrapper.c:140:1
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     CF: mark_child_for_cleanup at run-command.c:98:3
     CT: git_atexit at run-command.c:1097:1
@@ -3071,7 +3040,7 @@ Unknown
     RF: xmalloc at wrapper.c:73:1
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     CF: mem_pool_init at mem-pool.c:60:2
     CT: Jump to external code
@@ -3080,7 +3049,7 @@ Unknown
     RF: Jump to external code
   Occurrences: 4
 
-Unknown
+Uncategorised
   Events:
     CF: oidcpy at hash.h:268:2
     CT: Jump to external code
@@ -3089,7 +3058,7 @@ Unknown
     RF: Jump to external code
   Occurrences: 86
 
-Unknown
+Uncategorised
   Events:
     CF: precompose_utf8_readdir at precompose_utf8.c:131:21
     CT: Jump to external code
@@ -3116,7 +3085,7 @@ Unknown
     RF: Jump to external code
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     CF: read_directory_recursive at dir.c:2572:11
     CT: treat_path at dir.c:2282:1
@@ -3373,14 +3342,14 @@ Unknown
     RF: read_cached_dir at dir.c:2478:1
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     CF: readdir_skip_dot_and_dotdot at dir.c:61:8
     CT: is_dot_or_dotdot at dir.h:457:25
     RF: is_dot_or_dotdot at dir.h:460:1
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     CF: refspec_init at refspec.c:185:2
     CT: Jump to external code
@@ -3389,26 +3358,26 @@ Unknown
     RF: Jump to external code
   Occurrences: 2
 
-Unknown
+Uncategorised
   Events:
     CF: set_cloexec at run-command.c:535:14
     CF: start_command at run-command.c:780:3
     CT: set_cloexec at run-command.c:534:1
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     CF: set_cloexec at run-command.c:535:14
     CT: Jump to external code
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     CF: set_cloexec at run-command.c:537:3
     CT: Jump to external code
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     CF: set_cloexec at run-command.c:537:3
     CT: Jump to external code
@@ -3417,35 +3386,35 @@ Unknown
     RF: Jump to external code
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     CF: sigchain_push at sigchain.c:22:2
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     CF: sigchain_push at sigchain.c:22:2
     CT: check_signum at sigchain.c:15:14
   Occurrences: 2
 
-Unknown
+Uncategorised
   Events:
     CF: sigchain_push at sigchain.c:22:2
     RF: check_signum at sigchain.c:15:5
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     CF: sigchain_push at sigchain.c:24:2
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     CF: sigchain_push at sigchain.c:24:2
     CT: st_mult at git-compat-util.h:991:1
   Occurrences: 3
 
-Unknown
+Uncategorised
   Events:
     CF: sigchain_push at sigchain.c:24:2
     CT: st_mult at git-compat-util.h:991:1
@@ -3454,19 +3423,19 @@ Unknown
     RF: Jump to external code
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     CF: sigchain_push at sigchain.c:24:2
     CT: st_mult at git-compat-util.h:992:5
   Occurrences: 5
 
-Unknown
+Uncategorised
   Events:
     CF: sigchain_push at sigchain.c:24:2
     CT: xrealloc at wrapper.c:127:1
   Occurrences: 7
 
-Unknown
+Uncategorised
   Events:
     CF: sigchain_push at sigchain.c:24:2
     CT: xrealloc at wrapper.c:127:1
@@ -3483,19 +3452,19 @@ Unknown
     CF: start_command at run-command.c:824:8
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     CF: sigchain_push at sigchain.c:25:17
     CT: Jump to external code
   Occurrences: 4
 
-Unknown
+Uncategorised
   Events:
     CF: sigchain_push_common at sigchain.c:48:2
     CT: sigchain_push at sigchain.c:20:1
   Occurrences: 2
 
-Unknown
+Uncategorised
   Events:
     CF: sigchain_push_common at sigchain.c:49:2
     CT: sigchain_push at sigchain.c:20:1
@@ -3504,7 +3473,7 @@ Unknown
     RF: check_signum at sigchain.c:15:5
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     CF: simplify_away at dir.c:2129:8
     CT: ps_strncmp at pathspec.h:135:1
@@ -3601,7 +3570,7 @@ Unknown
     CT: simplify_away at dir.c:2108:1
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     CF: simplify_away at dir.c:2129:8
     CT: ps_strncmp at pathspec.h:135:1
@@ -3884,24 +3853,24 @@ Unknown
     CT: simplify_away at dir.c:2108:1
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     CF: start_command at run-command.c:768:17
     CT: Jump to external code
   Occurrences: 8
 
-Unknown
+Uncategorised
   Events:
     CF: start_command at run-command.c:775:3
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     CF: start_command at run-command.c:775:3
     CT: set_die_routine at usage.c:123:1
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     CF: start_command at run-command.c:775:3
     CT: set_die_routine at usage.c:123:1
@@ -3909,82 +3878,82 @@ Unknown
     CT: Jump to external code
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     CF: start_command at run-command.c:775:3
     CT: set_die_routine at usage.c:124:14
   Occurrences: 3
 
-Unknown
+Uncategorised
   Events:
     CF: start_command at run-command.c:775:3
     CT: set_die_routine at usage.c:124:14
     RF: set_die_routine at usage.c:125:1
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     CF: start_command at run-command.c:776:3
     CT: set_error_routine at usage.c:133:1
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     CF: start_command at run-command.c:776:3
     CT: set_error_routine at usage.c:134:16
     CF: start_command at run-command.c:864:2
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     CF: start_command at run-command.c:776:3
     CT: set_error_routine at usage.c:134:16
     RF: set_error_routine at usage.c:135:1
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     CF: start_command at run-command.c:777:3
     CT: set_warn_routine at usage.c:143:1
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     CF: start_command at run-command.c:777:3
     CT: set_warn_routine at usage.c:144:15
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     CF: start_command at run-command.c:777:3
     CT: set_warn_routine at usage.c:144:15
     RF: set_warn_routine at usage.c:145:1
   Occurrences: 3
 
-Unknown
+Uncategorised
   Events:
     CF: start_command at run-command.c:779:3
     CT: Jump to external code
   Occurrences: 2
 
-Unknown
+Uncategorised
   Events:
     CF: start_command at run-command.c:780:3
     CT: set_cloexec at run-command.c:534:1
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     CF: start_command at run-command.c:824:8
   Occurrences: 2
 
-Unknown
+Uncategorised
   Events:
     CF: start_command at run-command.c:824:8
     CT: Jump to external code
   Occurrences: 2
 
-Unknown
+Uncategorised
   Events:
     CF: start_command at run-command.c:824:8
     CT: Jump to external code
@@ -3993,42 +3962,42 @@ Unknown
     RF: Jump to external code
   Occurrences: 5
 
-Unknown
+Uncategorised
   Events:
     CF: start_command at run-command.c:828:7
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     CF: start_command at run-command.c:828:7
     CT: Jump to external code
   Occurrences: 2
 
-Unknown
+Uncategorised
   Events:
     CF: start_command at run-command.c:837:3
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     CF: start_command at run-command.c:837:3
     CT: Jump to external code
   Occurrences: 3
 
-Unknown
+Uncategorised
   Events:
     CF: start_command at run-command.c:837:3
     RF: Jump to external code
     CT: Jump to external code
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     CF: start_command at run-command.c:855:3
     CT: mark_child_for_cleanup at run-command.c:90:1
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     CF: start_command at run-command.c:855:3
     CT: mark_child_for_cleanup at run-command.c:90:1
@@ -4048,19 +4017,19 @@ Unknown
     RF: xmalloc at wrapper.c:73:1
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     CF: start_command at run-command.c:864:2
     CT: Jump to external code
   Occurrences: 2
 
-Unknown
+Uncategorised
   Events:
     CF: start_command at run-command.c:864:2
     RF: atfork_parent at run-command.c:530:1
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     CF: start_command at run-command.c:865:6
     CT: xread at wrapper.c:225:1
@@ -4068,7 +4037,7 @@ Unknown
     CT: Jump to external code
   Occurrences: 2
 
-Unknown
+Uncategorised
   Events:
     CF: string_list_init_dup at string-list.c:13:2
     CT: Jump to external code
@@ -4077,7 +4046,7 @@ Unknown
     RF: Jump to external code
   Occurrences: 484
 
-Unknown
+Uncategorised
   Events:
     CF: string_list_init_nodup at string-list.c:7:2
     CT: Jump to external code
@@ -4086,7 +4055,7 @@ Unknown
     RF: Jump to external code
   Occurrences: 2
 
-Unknown
+Uncategorised
   Events:
     CF: strvec_init at strvec.c:10:2
     CT: Jump to external code
@@ -4095,7 +4064,7 @@ Unknown
     RF: Jump to external code
   Occurrences: 518
 
-Unknown
+Uncategorised
   Events:
     CF: treat_path at dir.c:2290:2
     CT: strbuf_setlen at strbuf.h:161:1
@@ -4135,18 +4104,18 @@ Unknown
     RF: simplify_away at dir.c:2134:1
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     CF: xread at wrapper.c:230:8
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     CF: xread at wrapper.c:230:8
     CT: Jump to external code
   Occurrences: 2
 
-Unknown
+Uncategorised
   Events:
     CF: xrealloc at wrapper.c:135:2
     CF: Jump to external code
@@ -4154,13 +4123,13 @@ Unknown
     RF: Jump to external code
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     CF: xrealloc at wrapper.c:135:2
     CT: memory_limit_check at wrapper.c:18:1
   Occurrences: 7
 
-Unknown
+Uncategorised
   Events:
     CF: xrealloc at wrapper.c:135:2
     CT: memory_limit_check at wrapper.c:18:1
@@ -4190,24 +4159,24 @@ Unknown
     RF: Jump to external code
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     CF: xrealloc at wrapper.c:136:8
   Occurrences: 2
 
-Unknown
+Uncategorised
   Events:
     CF: xrealloc at wrapper.c:136:8
     CT: Jump to external code
   Occurrences: 3
 
-Unknown
+Uncategorised
   Events:
     CT: External code
     RF: Jump to external code
   Occurrences: 2
 
-Unknown
+Uncategorised
   Events:
     CT: External code
     RF: Jump to external code
@@ -4223,7 +4192,7 @@ Unknown
     CT: memory_limit_check at wrapper.c:18:1
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     CT: External code
     RF: Jump to external code
@@ -4234,7 +4203,7 @@ Unknown
     RF: Jump to external code
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     CT: External code
     RF: Jump to external code
@@ -4245,12 +4214,12 @@ Unknown
     RF: sigchain_push at sigchain.c:30:1
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     CT: Jump to external code
   Occurrences: 9
 
-Unknown
+Uncategorised
   Events:
     CT: Jump to external code
     CF: Jump to external code
@@ -4259,7 +4228,7 @@ Unknown
     RF: mem_pool_init at mem-pool.c:65:1
   Occurrences: 16
 
-Unknown
+Uncategorised
   Events:
     CT: Jump to external code
     CF: Jump to external code
@@ -4268,22 +4237,22 @@ Unknown
     RF: sigchain_push at sigchain.c:30:1
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     CT: check_signum at sigchain.c:14:1
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     CT: check_signum at sigchain.c:15:14
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     CT: memory_limit_check at wrapper.c:18:1
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     CT: set_die_routine at usage.c:123:1
     RF: set_die_routine at usage.c:125:1
@@ -4291,12 +4260,12 @@ Unknown
     RF: set_error_routine at usage.c:135:1
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     CT: set_die_routine at usage.c:124:14
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     CT: set_error_routine at usage.c:133:1
     RF: set_error_routine at usage.c:135:1
@@ -4304,13 +4273,13 @@ Unknown
     RF: set_warn_routine at usage.c:145:1
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     CT: st_mult at git-compat-util.h:991:1
     CT: Jump to external code
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     CT: st_mult at git-compat-util.h:992:5
     RF: st_mult at git-compat-util.h:996:1
@@ -4319,7 +4288,7 @@ Unknown
     CF: git_atexit at run-command.c:1098:2
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     CT: xmalloc at wrapper.c:71:1
     CF: xmalloc at wrapper.c:72:9
@@ -4337,17 +4306,17 @@ Unknown
     CT: git_atexit at run-command.c:1097:1
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     CT: xrealloc at wrapper.c:127:1
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     RF: Jump to external code
   Occurrences: 6
 
-Unknown
+Uncategorised
   Events:
     RF: Jump to external code
     CF: sigchain_push at sigchain.c:24:2
@@ -4371,21 +4340,21 @@ Unknown
     RF: sigchain_push at sigchain.c:30:1
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     RF: Jump to external code
     CF: start_command at run-command.c:768:17
     CT: Jump to external code
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     RF: Jump to external code
     CF: start_command at run-command.c:824:8
     CT: Jump to external code
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     RF: Jump to external code
     CF: start_command at run-command.c:824:8
@@ -4395,14 +4364,14 @@ Unknown
     CT: st_mult at git-compat-util.h:992:5
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     RF: Jump to external code
     CF: start_command at run-command.c:865:6
     CT: xread at wrapper.c:225:1
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     RF: Jump to external code
     RF: sigchain_push at sigchain.c:30:1
@@ -4418,19 +4387,19 @@ Unknown
     RF: st_mult at git-compat-util.h:996:1
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     RF: atfork_parent at run-command.c:530:1
   Occurrences: 4
 
-Unknown
+Uncategorised
   Events:
     RF: atfork_parent at run-command.c:530:1
     CF: start_command at run-command.c:775:3
     CT: set_die_routine at usage.c:123:1
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     RF: atfork_parent at run-command.c:530:1
     CF: start_command at run-command.c:776:3
@@ -4438,14 +4407,14 @@ Unknown
     RF: set_error_routine at usage.c:135:1
   Occurrences: 2
 
-Unknown
+Uncategorised
   Events:
     RF: atfork_parent at run-command.c:530:1
     CF: start_command at run-command.c:864:2
     CT: Jump to external code
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     RF: atfork_parent at run-command.c:530:1
     CT: External code
@@ -4456,24 +4425,24 @@ Unknown
     CT: Jump to external code
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     RF: check_signum at sigchain.c:15:5
   Occurrences: 3
 
-Unknown
+Uncategorised
   Events:
     RF: check_signum at sigchain.c:17:1
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     RF: check_signum at sigchain.c:17:1
     CF: sigchain_push at sigchain.c:24:2
     CT: st_mult at git-compat-util.h:992:5
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     RF: check_signum at sigchain.c:17:1
     CF: start_command at run-command.c:824:8
@@ -4486,7 +4455,7 @@ Unknown
     CT: Jump to external code
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     RF: check_signum at sigchain.c:17:1
     CF: start_command at run-command.c:828:7
@@ -4494,14 +4463,14 @@ Unknown
     CT: Jump to external code
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     RF: check_signum at sigchain.c:17:1
     CT: Jump to external code
     RF: check_signum at sigchain.c:15:5
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     RF: check_signum at sigchain.c:17:1
     RF: Jump to external code
@@ -4519,32 +4488,32 @@ Unknown
     CF: start_command at run-command.c:824:8
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     RF: check_signum at sigchain.c:17:1
     RF: Jump to external code
     RF: check_signum at sigchain.c:15:5
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     RF: cmit_fmt_is_mail at pretty.h:67:1
     CF: show_log at log-tree.c:831:6
     CT: cmit_fmt_is_mail at pretty.h:65:1
   Occurrences: 3
 
-Unknown
+Uncategorised
   Events:
     RF: do_xmalloc at wrapper.c:68:1
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     RF: do_xmalloc at wrapper.c:68:1
     RF: xmalloc at wrapper.c:73:1
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     RF: do_xmalloc at wrapper.c:68:1
     RF: xmalloc at wrapper.c:73:1
@@ -4555,28 +4524,28 @@ Unknown
     CT: Jump to external code
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     RF: git_is_dir_sep at git-compat-util.h:449:1
     CF: get_next_component at abspath.c:43:29
     CT: git_is_dir_sep at git-compat-util.h:447:1
   Occurrences: 2028
 
-Unknown
+Uncategorised
   Events:
     RF: git_is_dir_sep at git-compat-util.h:449:1
     CF: is_dir_file at path.c:85:9
     CT: git_is_dir_sep at git-compat-util.h:447:1
   Occurrences: 11
 
-Unknown
+Uncategorised
   Events:
     RF: git_is_dir_sep at git-compat-util.h:449:1
     CF: normalize_path_copy_len at path.c:1177:7
     CT: git_is_dir_sep at git-compat-util.h:447:1
   Occurrences: 570
 
-Unknown
+Uncategorised
   Events:
     RF: git_is_dir_sep at git-compat-util.h:449:1
     CF: normalize_path_copy_len at path.c:1177:7
@@ -4586,14 +4555,14 @@ Unknown
     CT: git_is_dir_sep at git-compat-util.h:447:1
   Occurrences: 502
 
-Unknown
+Uncategorised
   Events:
     RF: git_is_dir_sep at git-compat-util.h:449:1
     CF: normalize_path_copy_len at path.c:1179:11
     CT: git_is_dir_sep at git-compat-util.h:447:1
   Occurrences: 513
 
-Unknown
+Uncategorised
   Events:
     RF: has_non_ascii at precompose_utf8.c:37:1
     CF: precompose_utf8_readdir at precompose_utf8.c:175:4
@@ -4654,42 +4623,42 @@ Unknown
     CT: has_non_ascii at precompose_utf8.c:23:5
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     RF: memory_limit_check at wrapper.c:35:1
   Occurrences: 4
 
-Unknown
+Uncategorised
   Events:
     RF: memory_limit_check at wrapper.c:35:1
     CF: xrealloc at wrapper.c:136:8
     CT: Jump to external code
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     RF: memory_limit_check at wrapper.c:35:1
     RF: sigchain_push at sigchain.c:30:1
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     RF: set_cloexec at run-command.c:538:1
   Occurrences: 2
 
-Unknown
+Uncategorised
   Events:
     RF: set_cloexec at run-command.c:538:1
     CF: xrealloc at wrapper.c:135:2
     CT: memory_limit_check at wrapper.c:18:1
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     RF: set_die_routine at usage.c:125:1
   Occurrences: 4
 
-Unknown
+Uncategorised
   Events:
     RF: set_die_routine at usage.c:125:1
     CF: start_command at run-command.c:776:3
@@ -4697,22 +4666,22 @@ Unknown
     RF: set_error_routine at usage.c:135:1
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     RF: set_error_routine at usage.c:135:1
   Occurrences: 4
 
-Unknown
+Uncategorised
   Events:
     RF: set_warn_routine at usage.c:145:1
   Occurrences: 2
 
-Unknown
+Uncategorised
   Events:
     RF: sigchain_push at sigchain.c:30:1
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     RF: sigchain_push at sigchain.c:30:1
     CF: sigchain_push_common at sigchain.c:48:2
@@ -4731,19 +4700,19 @@ Unknown
     CT: memory_limit_check at wrapper.c:18:1
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     RF: st_mult at git-compat-util.h:996:1
   Occurrences: 8
 
-Unknown
+Uncategorised
   Events:
     RF: st_mult at git-compat-util.h:996:1
     CF: Jump to external code
     CT: External code
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     RF: st_mult at git-compat-util.h:996:1
     CF: Jump to external code
@@ -4751,32 +4720,32 @@ Unknown
     RF: Jump to external code
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     RF: st_mult at git-compat-util.h:996:1
     RF: memory_limit_check at wrapper.c:35:1
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     RF: valid_remote at remote.c:29:1
     CF: remotes_remote_get_1 at remote.c:680:8
     CT: valid_remote at remote.c:27:1
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     RF: valid_remote at remote.c:29:1
     CF: remotes_remote_get_1 at remote.c:685:7
     CT: valid_remote at remote.c:27:1
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     RF: xmalloc at wrapper.c:73:1
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     RF: xrealloc at wrapper.c:140:1
   Occurrences: 6
@@ -4787,15 +4756,15 @@ CoordinatesChanged
   Unique divergence coordinates: 378
 
 LibraryCallRemoved
-  Unique divergence coordinates: 46
+  Unique divergence coordinates: 42
 
 ProgramCallRemoved
   Unique divergence coordinates: 24
 
-Unknown
+Uncategorised
   Unique divergence coordinates: 152
 
 ## Summary
 
-600 unique divergence coordinates
+596 unique divergence coordinates
 355038 divergence occurrences

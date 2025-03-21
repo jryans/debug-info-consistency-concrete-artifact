@@ -832,16 +832,8 @@ LibraryCallRemoved
     CT: Jump to external code
     CF: Jump to external code
     CT: External code
-  Occurrences: 20
-
-LibraryCallRemoved
-  Events:
-    CF: config_store_data_clear at config.c:2871:2
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
     RF: Jump to external code
-  Occurrences: 16
+  Occurrences: 36
 
 LibraryCallRemoved
   Events:
@@ -858,24 +850,8 @@ LibraryCallRemoved
     CT: Jump to external code
     CF: Jump to external code
     CT: External code
-  Occurrences: 4
-
-LibraryCallRemoved
-  Events:
-    CF: git_hash_sha1_final_oid at object-file.c:107:2
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
     RF: Jump to external code
-  Occurrences: 3
-
-LibraryCallRemoved
-  Events:
-    CF: hashmap_clear_ at hashmap.c:209:2
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-  Occurrences: 6
+  Occurrences: 7
 
 LibraryCallRemoved
   Events:
@@ -884,7 +860,7 @@ LibraryCallRemoved
     CF: Jump to external code
     CT: External code
     RF: Jump to external code
-  Occurrences: 6
+  Occurrences: 12
 
 LibraryCallRemoved
   Events:
@@ -1028,14 +1004,14 @@ ProgramCallRemoved
     RF: __sigbits at signal.h:0:0
   Occurrences: 26
 
-Unknown
+Uncategorised
   Events:
     CF: git_attr_internal at attr.c:216:2
     CT: hashmap_lock at attr.c:42:1
     RF: hashmap_lock at attr.c:44:1
   Occurrences: 10
 
-Unknown
+Uncategorised
   Events:
     CF: string_list_init_dup at string-list.c:13:2
     CT: Jump to external code
@@ -1044,7 +1020,7 @@ Unknown
     RF: Jump to external code
   Occurrences: 108
 
-Unknown
+Uncategorised
   Events:
     CF: strvec_init at strvec.c:10:2
     CT: Jump to external code
@@ -1053,28 +1029,28 @@ Unknown
     RF: Jump to external code
   Occurrences: 54
 
-Unknown
+Uncategorised
   Events:
     RF: git_is_dir_sep at git-compat-util.h:449:1
     CF: get_next_component at abspath.c:43:29
     CT: git_is_dir_sep at git-compat-util.h:447:1
   Occurrences: 285
 
-Unknown
+Uncategorised
   Events:
     RF: git_is_dir_sep at git-compat-util.h:449:1
     CF: is_dir_file at path.c:85:9
     CT: git_is_dir_sep at git-compat-util.h:447:1
   Occurrences: 1
 
-Unknown
+Uncategorised
   Events:
     RF: git_is_dir_sep at git-compat-util.h:449:1
     CF: normalize_path_copy_len at path.c:1177:7
     CT: git_is_dir_sep at git-compat-util.h:447:1
   Occurrences: 78
 
-Unknown
+Uncategorised
   Events:
     RF: git_is_dir_sep at git-compat-util.h:449:1
     CF: normalize_path_copy_len at path.c:1177:7
@@ -1084,7 +1060,7 @@ Unknown
     CT: git_is_dir_sep at git-compat-util.h:447:1
   Occurrences: 79
 
-Unknown
+Uncategorised
   Events:
     RF: git_is_dir_sep at git-compat-util.h:449:1
     CF: normalize_path_copy_len at path.c:1179:11
@@ -1097,15 +1073,15 @@ CoordinatesChanged
   Unique divergence coordinates: 137
 
 LibraryCallRemoved
-  Unique divergence coordinates: 15
+  Unique divergence coordinates: 12
 
 ProgramCallRemoved
   Unique divergence coordinates: 10
 
-Unknown
+Uncategorised
   Unique divergence coordinates: 8
 
 ## Summary
 
-170 unique divergence coordinates
+167 unique divergence coordinates
 50272 divergence occurrences

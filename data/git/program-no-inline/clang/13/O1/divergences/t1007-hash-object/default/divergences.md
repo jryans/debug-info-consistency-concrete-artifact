@@ -343,16 +343,8 @@ LibraryCallRemoved
     CT: Jump to external code
     CF: Jump to external code
     CT: External code
-  Occurrences: 22
-
-LibraryCallRemoved
-  Events:
-    CF: config_store_data_clear at config.c:2871:2
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
     RF: Jump to external code
-  Occurrences: 14
+  Occurrences: 36
 
 LibraryCallRemoved
   Events:
@@ -423,24 +415,8 @@ LibraryCallRemoved
     CT: Jump to external code
     CF: Jump to external code
     CT: External code
-  Occurrences: 5
-
-LibraryCallRemoved
-  Events:
-    CF: git_hash_sha1_final_oid at object-file.c:107:2
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
     RF: Jump to external code
-  Occurrences: 2
-
-LibraryCallRemoved
-  Events:
-    CF: hashmap_clear_ at hashmap.c:209:2
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-  Occurrences: 8
+  Occurrences: 7
 
 LibraryCallRemoved
   Events:
@@ -449,7 +425,7 @@ LibraryCallRemoved
     CF: Jump to external code
     CT: External code
     RF: Jump to external code
-  Occurrences: 4
+  Occurrences: 12
 
 LibraryCallRemoved
   Events:
@@ -601,16 +577,8 @@ LibraryCallRemoved
     CT: Jump to external code
     CF: Jump to external code
     CT: External code
-  Occurrences: 9
-
-LibraryCallRemoved
-  Events:
-    CF: setup_git_directory_gently_1 at setup.c:1240:21
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
     RF: Jump to external code
-  Occurrences: 9
+  Occurrences: 18
 
 LibraryCallRemoved
   Events:
@@ -678,7 +646,7 @@ ProgramCallRemoved
     CF: all_attrs_init at attr.c:155:3
     CT: container_of_or_null_offset at git-compat-util.h:1580:0
     RF: container_of_or_null_offset at git-compat-util.h:1581:2
-  Occurrences: 5
+  Occurrences: 10
 
 ProgramCallRemoved
   Events:
@@ -792,13 +760,6 @@ ProgramCallRemoved
     RF: system_prefix at exec-cmd.c:248:2
   Occurrences: 56
 
-Unknown
-  Events:
-    CT: container_of_or_null_offset at git-compat-util.h:1580:0
-    RF: container_of_or_null_offset at git-compat-util.h:1581:2
-    CF: all_attrs_init at attr.c:155:3
-  Occurrences: 5
-
 ## Divergences with unique coordinates by type
 
 CoordinatesRemoved
@@ -808,15 +769,12 @@ CoordinatesChanged
   Unique divergence coordinates: 20
 
 LibraryCallRemoved
-  Unique divergence coordinates: 44
+  Unique divergence coordinates: 40
 
 ProgramCallRemoved
   Unique divergence coordinates: 18
 
-Unknown
-  Unique divergence coordinates: 1
-
 ## Summary
 
-108 unique divergence coordinates
+103 unique divergence coordinates
 4105 divergence occurrences
