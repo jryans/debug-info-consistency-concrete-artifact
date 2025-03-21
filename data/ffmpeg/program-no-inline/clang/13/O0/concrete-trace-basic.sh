@@ -18,7 +18,7 @@ echo "## Collecting concrete trace of \`${TARGET_NAME}\` (Clang ${version}, ${le
 
 # Each execution of the target to analyse
 executions=(scale)
-scale_COMMAND="-i ${HOME}/Downloads/input.mp4 -vf scale=360:240 ${HOME}/Downloads/output.mp4"
+scale_COMMAND="-i ${HOME}/Downloads/input-100ms.mp4 -vf scale=360:240 ${HOME}/Downloads/output.mp4"
 
 # Different trace variants to collect
 # These map to different trace options in `vars.sh`
