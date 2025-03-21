@@ -6,147 +6,9 @@ Divergence analysis complete!
 
 TailCallWithoutInfo
   Events:
-    CT: __volatile_list_del at list.h:183:1
-    CT: __volatile_list_del at list.h:184:13 (TCWI)
-  Occurrences: 42
-
-TailCallWithoutInfo
-  Events:
-    CT: chdir_notify_register at chdir-notify.c:17:1
-    CT: chdir_notify_register at chdir-notify.c:17:1 (TCWI)
-  Occurrences: 18
-
-TailCallWithoutInfo
-  Events:
-    CT: check_and_freshen at object-file.c:995:1
-    CT: check_and_freshen at object-file.c:995:1 (TCWI)
-  Occurrences: 2
-
-TailCallWithoutInfo
-  Events:
-    CT: check_and_freshen_file at object-file.c:960:1
-    CT: check_and_freshen_file at object-file.c:960:1 (TCWI)
-  Occurrences: 2
-
-TailCallWithoutInfo
-  Events:
-    CT: check_and_freshen_odb at object-file.c:971:1
-    CT: check_and_freshen_odb at object-file.c:971:1 (TCWI)
-  Occurrences: 2
-
-TailCallWithoutInfo
-  Events:
-    CT: check_or_sanitize_refname at refs.c:247:1
-    CT: check_or_sanitize_refname at refs.c:247:1 (TCWI)
-  Occurrences: 24
-
-TailCallWithoutInfo
-  Events:
-    CT: configset_iter at config.c:2223:1
-    CT: configset_iter at config.c:2229:16 (TCWI)
-  Occurrences: 31
-
-TailCallWithoutInfo
-  Events:
     CT: const_error at git-compat-util.h:638:1
     CT: const_error at git-compat-util.h:640:1 (TCWI)
   Occurrences: 1
-
-TailCallWithoutInfo
-  Events:
-    CT: decode_tree_entry at tree-walk.c:27:1
-    CT: decode_tree_entry at tree-walk.c:27:1 (TCWI)
-  Occurrences: 3
-
-TailCallWithoutInfo
-  Events:
-    CT: delete_tempfile at tempfile.c:355:1
-    CT: delete_tempfile at tempfile.c:355:1 (TCWI)
-  Occurrences: 42
-
-TailCallWithoutInfo
-  Events:
-    CT: do_xmalloc at wrapper.c:46:1
-    CT: do_xmalloc at wrapper.c:46:1 (TCWI)
-  Occurrences: 442
-
-TailCallWithoutInfo
-  Events:
-    CT: do_xmallocz at wrapper.c:76:1
-    CT: do_xmallocz at wrapper.c:78:5 (TCWI)
-  Occurrences: 188
-
-TailCallWithoutInfo
-  Events:
-    CT: dummy_pthread_init at thread-utils.c:101:1
-    CT: dummy_pthread_init at thread-utils.c:112:1 (TCWI)
-  Occurrences: 26
-
-TailCallWithoutInfo
-  Events:
-    CT: empty_ref_iterator_abort at iterator.c:61:1
-    CT: empty_ref_iterator_abort at iterator.c:61:1 (TCWI)
-  Occurrences: 6
-
-TailCallWithoutInfo
-  Events:
-    CT: empty_ref_iterator_advance at iterator.c:50:1
-    CT: empty_ref_iterator_advance at iterator.c:51:9 (TCWI)
-  Occurrences: 6
-
-TailCallWithoutInfo
-  Events:
-    CT: empty_ref_iterator_begin at iterator.c:73:1
-    CT: empty_ref_iterator_begin at iterator.c:73:1 (TCWI)
-  Occurrences: 6
-
-TailCallWithoutInfo
-  Events:
-    CT: expand_base_dir at repository.c:36:1
-    CT: expand_base_dir at repository.c:36:1 (TCWI)
-  Occurrences: 24
-
-TailCallWithoutInfo
-  Events:
-    CT: fdopen_tempfile at tempfile.c:261:1
-    CT: fdopen_tempfile at tempfile.c:261:1 (TCWI)
-  Occurrences: 6
-
-TailCallWithoutInfo
-  Events:
-    CT: files_init_db at files-backend.c:3257:1
-    CT: files_init_db at files-backend.c:3257:1 (TCWI)
-  Occurrences: 6
-
-TailCallWithoutInfo
-  Events:
-    CT: files_ref_store_create at files-backend.c:84:1
-    CT: files_ref_store_create at files-backend.c:84:1 (TCWI)
-  Occurrences: 6
-
-TailCallWithoutInfo
-  Events:
-    CT: fill at attr.c:1021:1
-    CT: fill at attr.c:1018:12 (TCWI)
-  Occurrences: 4
-
-TailCallWithoutInfo
-  Events:
-    CT: format_object_header_literally at object-file.c:1060:1
-    CT: format_object_header_literally at object-file.c:1060:1 (TCWI)
-  Occurrences: 2
-
-TailCallWithoutInfo
-  Events:
-    CT: get_arg at parse-options.c:48:1
-    CT: get_arg at parse-options.c:48:1 (TCWI)
-  Occurrences: 13
-
-TailCallWithoutInfo
-  Events:
-    CT: get_common_dir_noenv at setup.c:306:1
-    CT: get_common_dir_noenv at setup.c:306:1 (TCWI)
-  Occurrences: 42
 
 TailCallWithoutInfo
   Events:
@@ -154,497 +16,11 @@ TailCallWithoutInfo
     CT: get_extended_base_var at config.c:918:32 (TCWI)
   Occurrences: 4
 
-TailCallWithoutInfo
-  Events:
-    CT: get_tempfile_fp at tempfile.c:286:1
-    CT: get_tempfile_fp at tempfile.c:286:1 (TCWI)
-  Occurrences: 6
-
-TailCallWithoutInfo
-  Events:
-    CT: get_tempfile_path at tempfile.c:272:1
-    CT: get_tempfile_path at tempfile.c:272:1 (TCWI)
-  Occurrences: 30
-
-TailCallWithoutInfo
-  Events:
-    CT: get_value at parse-options.c:106:1
-    CT: get_value at parse-options.c:106:1 (TCWI)
-  Occurrences: 39
-
-TailCallWithoutInfo
-  Events:
-    CT: git_SHA1_Update_Chunked at sha1-chunked.c:4:1
-    CT: git_SHA1_Update_Chunked at sha1-chunked.c:9:9 (TCWI)
-  Occurrences: 14
-
-TailCallWithoutInfo
-  Events:
-    CT: git_config_bool at config.c:1448:1
-    CT: git_config_bool at config.c:1448:1 (TCWI)
-  Occurrences: 83
-
-TailCallWithoutInfo
-  Events:
-    CT: git_config_from_file_with_options at config.c:1993:1
-    CT: git_config_from_file_with_options at config.c:1997:5 (TCWI)
-  Occurrences: 50
-
-TailCallWithoutInfo
-  Events:
-    CT: git_config_set_multivar_in_file at config.c:3452:1
-    CT: git_config_set_multivar_in_file at config.c:3452:1 (TCWI)
-  Occurrences: 36
-
-TailCallWithoutInfo
-  Events:
-    CT: git_configset_clear at config.c:2378:1
-    CT: git_configset_clear at config.c:2381:5 (TCWI)
-  Occurrences: 12
-
-TailCallWithoutInfo
-  Events:
-    CT: git_configset_get_bool at config.c:2476:1
-    CT: git_configset_get_bool at config.c:2476:1 (TCWI)
-  Occurrences: 18
-
-TailCallWithoutInfo
-  Events:
-    CT: git_configset_get_int at config.c:2456:1
-    CT: git_configset_get_int at config.c:2456:1 (TCWI)
-  Occurrences: 10
-
-TailCallWithoutInfo
-  Events:
-    CT: git_default_core_config at config.c:1493:1
-    CT: git_default_core_config at config.c:1492:12 (TCWI)
-  Occurrences: 108
-
-TailCallWithoutInfo
-  Events:
-    CT: git_hash_sha1_final_oid at object-file.c:105:1
-    CT: git_hash_sha1_final_oid at object-file.c:105:1 (TCWI)
-  Occurrences: 6
-
-TailCallWithoutInfo
-  Events:
-    CT: git_is_dir_sep at git-compat-util.h:447:1
-    CT: git_is_dir_sep at git-compat-util.h:448:11 (TCWI)
-  Occurrences: 152
-
-TailCallWithoutInfo
-  Events:
-    CT: git_mkstemp_mode at wrapper.c:503:1
-    CT: git_mkstemp_mode at wrapper.c:503:1 (TCWI)
-  Occurrences: 1
-
-TailCallWithoutInfo
-  Events:
-    CT: git_mkstemps_mode at wrapper.c:446:1
-    CT: git_mkstemps_mode at wrapper.c:446:1 (TCWI)
-  Occurrences: 2
-
-TailCallWithoutInfo
-  Events:
-    CT: git_open_with_retry at open.c:5:1
-    CT: git_open_with_retry at open.c:5:1 (TCWI)
-  Occurrences: 1
-
-TailCallWithoutInfo
-  Events:
-    CT: git_wcwidth at utf8.c:85:1
-    CT: git_wcwidth at utf8.c:93:10 (TCWI)
-  Occurrences: 84
-
-TailCallWithoutInfo
-  Events:
-    CT: hash_fd at hash-object.c:36:1
-    CT: hash_fd at hash-object.c:36:1 (TCWI)
-  Occurrences: 5
-
-TailCallWithoutInfo
-  Events:
-    CT: hash_object_file_literally at object-file.c:1877:1
-    CT: hash_object_file_literally at object-file.c:1877:1 (TCWI)
-  Occurrences: 2
-
-TailCallWithoutInfo
-  Events:
-    CT: hash_to_hex_algop at hex.c:150:1
-    CT: hash_to_hex_algop at hex.c:153:17 (TCWI)
-  Occurrences: 7
-
-TailCallWithoutInfo
-  Events:
-    CT: hash_to_hex_algop_r at hex.c:122:1
-    CT: hash_to_hex_algop_r at hex.c:131:5 (TCWI)
-  Occurrences: 7
-
-TailCallWithoutInfo
-  Events:
-    CT: hasheq_algop at hash.h:231:1
-    CT: hasheq_algop at hash.h:236:5 (TCWI)
-  Occurrences: 7
-
-TailCallWithoutInfo
-  Events:
-    CT: hashmap_add at hashmap.c:232:1
-    CT: hashmap_add at hashmap.c:232:1 (TCWI)
-  Occurrences: 3
-
-TailCallWithoutInfo
-  Events:
-    CT: hashmap_iter_next at hashmap.c:295:1
-    CT: hashmap_iter_next at hashmap.c:296:24 (TCWI)
-  Occurrences: 13
-
-TailCallWithoutInfo
-  Events:
-    CT: hold_lock_file_for_update_timeout at lockfile.h:178:1
-    CT: hold_lock_file_for_update_timeout at lockfile.h:179:9 (TCWI)
-  Occurrences: 36
-
-TailCallWithoutInfo
-  Events:
-    CT: hold_lock_file_for_update_timeout_mode at lockfile.c:176:1
-    CT: hold_lock_file_for_update_timeout_mode at lockfile.c:176:1 (TCWI)
-  Occurrences: 42
-
-TailCallWithoutInfo
-  Events:
-    CT: index_name_stage_pos at read-cache.c:577:1
-    CT: index_name_stage_pos at read-cache.c:577:1 (TCWI)
-  Occurrences: 1
-
-TailCallWithoutInfo
-  Events:
-    CT: init_buffer_slab_with_stride at commit.c:288:1
-    CT: init_buffer_slab_with_stride at commit.c:288:1 (TCWI)
-  Occurrences: 26
-
-TailCallWithoutInfo
-  Events:
-    CT: init_repository_format at setup.c:709:1
-    CT: init_repository_format at setup.c:709:1 (TCWI)
-  Occurrences: 72
-
-TailCallWithoutInfo
-  Events:
-    CT: is_tempfile_active at tempfile.h:222:1
-    CT: is_tempfile_active at tempfile.h:223:9 (TCWI)
-  Occurrences: 18
-
-TailCallWithoutInfo
-  Events:
-    CT: list_add_tail at list.h:65:1
-    CT: list_add_tail at list.h:66:6 (TCWI)
-  Occurrences: 18
-
-TailCallWithoutInfo
-  Events:
-    CT: lock_file at lockfile.c:75:1
-    CT: lock_file at lockfile.c:75:1 (TCWI)
-  Occurrences: 36
-
-TailCallWithoutInfo
-  Events:
-    CT: memintern at hashmap.c:331:1
-    CT: memintern at hashmap.c:331:1 (TCWI)
-  Occurrences: 108
-
-TailCallWithoutInfo
-  Events:
-    CT: noop_core_config at git-compat-util.h:419:1
-    CT: noop_core_config at git-compat-util.h:421:1 (TCWI)
-  Occurrences: 18
-
-TailCallWithoutInfo
-  Events:
-    CT: normalize_path_copy_len at path.c:1119:1
-    CT: normalize_path_copy_len at path.c:1119:1 (TCWI)
-  Occurrences: 56
-
-TailCallWithoutInfo
-  Events:
-    CT: odb_loose_path at object-file.c:437:1
-    CT: odb_loose_path at object-file.c:437:1 (TCWI)
-  Occurrences: 1
-
-TailCallWithoutInfo
-  Events:
-    CT: oideq at hash.h:247:1
-    CT: oideq at hash.h:249:11 (TCWI)
-  Occurrences: 6
-
-TailCallWithoutInfo
-  Events:
-    CT: parse_options_check at parse-options.c:458:1
-    CT: parse_options_check at parse-options.c:458:1 (TCWI)
-  Occurrences: 26
-
-TailCallWithoutInfo
-  Events:
-    CT: path_in_sparse_checkout_1 at dir.c:1456:1
-    CT: path_in_sparse_checkout_1 at dir.c:1456:1 (TCWI)
-  Occurrences: 1
-
-TailCallWithoutInfo
-  Events:
-    CT: precompose_string_if_needed at precompose_utf8.c:64:1
-    CT: precompose_string_if_needed at precompose_utf8.c:64:1 (TCWI)
-  Occurrences: 52
-
-TailCallWithoutInfo
-  Events:
-    CT: push_stack at attr.c:831:1
-    CT: push_stack at attr.c:832:5 (TCWI)
-  Occurrences: 1
-
-TailCallWithoutInfo
-  Events:
-    CT: read_very_early_config at config.c:2280:1
-    CT: read_very_early_config at config.c:2280:1 (TCWI)
-  Occurrences: 26
-
-TailCallWithoutInfo
-  Events:
-    CT: read_worktree_config at setup.c:514:1
-    CT: read_worktree_config at setup.c:514:1 (TCWI)
-  Occurrences: 108
-
-TailCallWithoutInfo
-  Events:
-    CT: ref_iterator_abort at iterator.c:23:1
-    CT: ref_iterator_abort at iterator.c:24:29 (TCWI)
-  Occurrences: 6
-
-TailCallWithoutInfo
-  Events:
-    CT: refs_create_symref at refs.c:2142:1
-    CT: refs_create_symref at refs.c:2142:1 (TCWI)
-  Occurrences: 6
-
-TailCallWithoutInfo
-  Events:
-    CT: rename_tempfile at tempfile.c:331:1
-    CT: rename_tempfile at tempfile.c:331:1 (TCWI)
-  Occurrences: 42
-
-TailCallWithoutInfo
-  Events:
-    CT: repo_config at config.c:2563:1
-    CT: repo_config at config.c:2563:1 (TCWI)
-  Occurrences: 31
-
-TailCallWithoutInfo
-  Events:
-    CT: repo_config_clear at config.c:2556:1
-    CT: repo_config_clear at config.c:2557:5 (TCWI)
-  Occurrences: 60
-
-TailCallWithoutInfo
-  Events:
-    CT: repo_config_get_int at config.c:2606:1
-    CT: repo_config_get_int at config.c:2606:1 (TCWI)
-  Occurrences: 6
-
-TailCallWithoutInfo
-  Events:
-    CT: repo_config_get_pathname at config.c:2641:1
-    CT: repo_config_get_pathname at config.c:2641:1 (TCWI)
-  Occurrences: 6
-
-TailCallWithoutInfo
-  Events:
-    CT: repo_config_get_value at config.c:2570:1
-    CT: repo_config_get_value at config.c:2570:1 (TCWI)
-  Occurrences: 13
-
-TailCallWithoutInfo
-  Events:
-    CT: repo_read_config at config.c:2519:1
-    CT: repo_read_config at config.c:2519:1 (TCWI)
-  Occurrences: 30
-
-TailCallWithoutInfo
-  Events:
-    CT: repo_set_hash_algo at repository.c:96:1
-    CT: repo_set_hash_algo at repository.c:97:20 (TCWI)
-  Occurrences: 26
-
-TailCallWithoutInfo
-  Events:
-    CT: repo_set_worktree at repository.c:133:1
-    CT: repo_set_worktree at repository.c:133:1 (TCWI)
-  Occurrences: 24
-
-TailCallWithoutInfo
-  Events:
-    CT: safe_create_leading_directories_1 at object-file.c:345:1
-    CT: safe_create_leading_directories_1 at object-file.c:345:1 (TCWI)
-  Occurrences: 6
-
-TailCallWithoutInfo
-  Events:
-    CT: setup_git_directory_gently at setup.c:1428:1
-    CT: setup_git_directory_gently at setup.c:1428:1 (TCWI)
-  Occurrences: 2
-
-TailCallWithoutInfo
-  Events:
-    CT: setup_git_env at environment.c:163:1
-    CT: setup_git_env at environment.c:163:1 (TCWI)
-  Occurrences: 6
-
-TailCallWithoutInfo
-  Events:
-    CT: sigchain_push at sigchain.c:20:1
-    CT: sigchain_push at sigchain.c:20:1 (TCWI)
-  Occurrences: 6
-
-TailCallWithoutInfo
-  Events:
-    CT: sort_packs at packfile.c:944:1
-    CT: sort_packs at packfile.c:944:1 (TCWI)
-  Occurrences: 2
-
-TailCallWithoutInfo
-  Events:
-    CT: strbuf_add at strbuf.c:297:1
-    CT: strbuf_add at strbuf.c:297:1 (TCWI)
-  Occurrences: 985
-
-TailCallWithoutInfo
-  Events:
-    CT: strbuf_addch at strbuf.h:229:1
-    CT: strbuf_addch at strbuf.h:228:20 (TCWI)
-  Occurrences: 26
-
-TailCallWithoutInfo
-  Events:
-    CT: strbuf_addch at strbuf.h:229:1
-    CT: strbuf_addch at strbuf.h:229:1 (TCWI)
-  Occurrences: 30
-
-TailCallWithoutInfo
-  Events:
-    CT: strbuf_addf at strbuf.c:333:1
-    CT: strbuf_addf at strbuf.c:333:1 (TCWI)
-  Occurrences: 2
-
-TailCallWithoutInfo
-  Events:
-    CT: strbuf_addstr at strbuf.h:304:1
-    CT: strbuf_addstr at strbuf.h:304:1 (TCWI)
-  Occurrences: 159
-
-TailCallWithoutInfo
-  Events:
-    CT: strbuf_cleanup_path at path.c:51:1
-    CT: strbuf_cleanup_path at path.c:51:1 (TCWI)
-  Occurrences: 91
-
-TailCallWithoutInfo
-  Events:
-    CT: strbuf_grow at strbuf.c:92:1
-    CT: strbuf_grow at strbuf.c:94:5 (TCWI)
-  Occurrences: 136
-
-TailCallWithoutInfo
-  Events:
-    CT: strbuf_init at strbuf.c:55:1
-    CT: strbuf_init at strbuf.c:56:16 (TCWI)
-  Occurrences: 709
-
-TailCallWithoutInfo
-  Events:
-    CT: strbuf_realpath_1 at abspath.c:79:1
-    CT: strbuf_realpath_1 at abspath.c:79:1 (TCWI)
-  Occurrences: 72
-
-TailCallWithoutInfo
-  Events:
-    CT: strbuf_remove at strbuf.c:292:1
-    CT: strbuf_remove at strbuf.c:293:2 (TCWI)
-  Occurrences: 377
-
-TailCallWithoutInfo
-  Events:
-    CT: strbuf_splice at strbuf.c:233:1
-    CT: strbuf_splice at strbuf.c:233:1 (TCWI)
-  Occurrences: 377
-
-TailCallWithoutInfo
-  Events:
-    CT: string_list_append_nodup at string-list.c:207:1
-    CT: string_list_append_nodup at string-list.c:207:1 (TCWI)
-  Occurrences: 30
-
-TailCallWithoutInfo
-  Events:
-    CT: strvec_init at strvec.c:8:1
-    CT: strvec_init at strvec.c:10:2 (TCWI)
-  Occurrences: 54
-
-TailCallWithoutInfo
-  Events:
-    CT: tr2tls_start_process_clock at tr2_tls.c:21:1
-    CT: tr2tls_start_process_clock at tr2_tls.c:22:5 (TCWI)
-  Occurrences: 26
-
-TailCallWithoutInfo
-  Events:
-    CT: trace2_cmd_set_config_fl at trace2.c:396:1
-    CT: trace2_cmd_set_config_fl at trace2.c:397:5 (TCWI)
-  Occurrences: 36
-
-TailCallWithoutInfo
-  Events:
-    CT: trace2_def_repo_fl at trace2.c:648:1
-    CT: trace2_def_repo_fl at trace2.c:652:5 (TCWI)
-  Occurrences: 24
-
-TailCallWithoutInfo
-  Events:
-    CT: utf8_fprintf at utf8.c:449:1
-    CT: utf8_fprintf at utf8.c:449:1 (TCWI)
-  Occurrences: 12
-
-TailCallWithoutInfo
-  Events:
-    CT: utf8_strnwidth at utf8.c:210:1
-    CT: utf8_strnwidth at utf8.c:210:1 (TCWI)
-  Occurrences: 12
-
-TailCallWithoutInfo
-  Events:
-    CT: vreportf at usage.c:10:1
-    CT: vreportf at usage.c:10:1 (TCWI)
-  Occurrences: 14
-
-TailCallWithoutInfo
-  Events:
-    CT: warn_if_unremovable at wrapper.c:610:1
-    CT: warn_if_unremovable at wrapper.c:612:5 (TCWI)
-  Occurrences: 1
-
-TailCallWithoutInfo
-  Events:
-    CT: write_object_file_flags at object-file.c:2230:1
-    CT: write_object_file_flags at object-file.c:2230:1 (TCWI)
-  Occurrences: 2
-
-TailCallWithoutInfo
-  Events:
-    CT: xcalloc at wrapper.c:143:1
-    CT: xcalloc at wrapper.c:143:1 (TCWI)
-  Occurrences: 131
-
-TailCallWithoutInfo
-  Events:
-    CT: xstrdup at wrapper.c:38:1
-    CT: xstrdup at wrapper.c:38:1 (TCWI)
-  Occurrences: 108
+CoordinatesRemoved
+  Events:
+    RF: _ at gettext.h:49:1
+    RF: _ at gettext.h:0:0
+  Occurrences: 111
 
 CoordinatesRemoved
   Events:
@@ -662,13 +38,19 @@ CoordinatesRemoved
   Events:
     RF: attr_hashmap_add at attr.c:113:1
     RF: attr_hashmap_add at attr.c:0:0
-  Occurrences: 3
+  Occurrences: 9
 
 CoordinatesRemoved
   Events:
     RF: attr_start at attr.c:1145:1
     RF: attr_start at attr.c:0:0
   Occurrences: 26
+
+CoordinatesRemoved
+  Events:
+    RF: base_ref_iterator_free at iterator.c:43:1
+    RF: base_ref_iterator_free at iterator.c:0:0
+  Occurrences: 6
 
 CoordinatesRemoved
   Events:
@@ -720,9 +102,27 @@ CoordinatesRemoved
 
 CoordinatesRemoved
   Events:
+    RF: config_file_fgetc at config.c:98:1
+    RF: config_file_fgetc at config.c:0:0
+  Occurrences: 346
+
+CoordinatesRemoved
+  Events:
+    RF: config_file_ftell at config.c:108:1
+    RF: config_file_ftell at config.c:0:0
+  Occurrences: 240
+
+CoordinatesRemoved
+  Events:
     RF: create_symref at refs.c:2158:1
     RF: create_symref at refs.c:0:0
   Occurrences: 6
+
+CoordinatesRemoved
+  Events:
+    RF: deactivate_tempfile at tempfile.c:128:1
+    RF: deactivate_tempfile at tempfile.c:0:0
+  Occurrences: 42
 
 CoordinatesRemoved
   Events:
@@ -852,6 +252,18 @@ CoordinatesRemoved
 
 CoordinatesRemoved
   Events:
+    RF: git_find_last_dir_sep at git-compat-util.h:539:1
+    RF: git_find_last_dir_sep at git-compat-util.h:0:0
+  Occurrences: 26
+
+CoordinatesRemoved
+  Events:
+    RF: git_hash_sha1_init at object-file.c:87:1
+    RF: git_hash_sha1_init at object-file.c:0:0
+  Occurrences: 7
+
+CoordinatesRemoved
+  Events:
     RF: git_hash_sha1_update at object-file.c:97:1
     RF: git_hash_sha1_update at object-file.c:0:0
   Occurrences: 14
@@ -867,6 +279,18 @@ CoordinatesRemoved
     RF: git_offset_1st_component at git-compat-util.h:458:1
     RF: git_offset_1st_component at git-compat-util.h:0:0
   Occurrences: 152
+
+CoordinatesRemoved
+  Events:
+    RF: git_set_exec_path at exec-cmd.c:281:1
+    RF: git_set_exec_path at exec-cmd.c:0:0
+  Occurrences: 26
+
+CoordinatesRemoved
+  Events:
+    RF: git_setup_gettext at gettext.c:123:1
+    RF: git_setup_gettext at gettext.c:0:0
+  Occurrences: 26
 
 CoordinatesRemoved
   Events:
@@ -1092,6 +516,12 @@ CoordinatesRemoved
 
 CoordinatesRemoved
   Events:
+    RF: sanitize_stdfds at setup.c:1677:1
+    RF: sanitize_stdfds at setup.c:0:0
+  Occurrences: 26
+
+CoordinatesRemoved
+  Events:
     RF: set_git_dir_1 at environment.c:335:1
     RF: set_git_dir_1 at environment.c:0:0
   Occurrences: 6
@@ -1170,6 +600,12 @@ CoordinatesRemoved
 
 CoordinatesRemoved
   Events:
+    RF: unlock_ref at files-backend.c:516:1
+    RF: unlock_ref at files-backend.c:0:0
+  Occurrences: 6
+
+CoordinatesRemoved
+  Events:
     RF: usage_argh at parse-options.c:1020:1
     RF: usage_argh at parse-options.c:0:0
   Occurrences: 12
@@ -1202,13 +638,19 @@ CoordinatesRemoved
   Events:
     RF: xmalloc at wrapper.c:73:1
     RF: xmalloc at wrapper.c:0:0
-  Occurrences: 442
+  Occurrences: 448
 
 CoordinatesRemoved
   Events:
     RF: xmallocz at wrapper.c:94:1
     RF: xmallocz at wrapper.c:0:0
-  Occurrences: 188
+  Occurrences: 201
+
+CoordinatesRemoved
+  Events:
+    RF: xmemdupz at wrapper.c:110:1
+    RF: xmemdupz at wrapper.c:0:0
+  Occurrences: 6
 
 CoordinatesRemoved
   Events:
@@ -1220,19 +662,25 @@ CoordinatesChanged
   Events:
     CF: decode_tree_entry at tree-walk.c:33:3
     CF: decode_tree_entry at tree-walk.c:43:3
-  Occurrences: 1
+  Occurrences: 2
 
 CoordinatesChanged
   Events:
     CF: decode_tree_entry at tree-walk.c:39:3
     CF: decode_tree_entry at tree-walk.c:43:3
-  Occurrences: 1
+  Occurrences: 2
 
 CoordinatesChanged
   Events:
     CF: get_extended_base_var at config.c:941:3
     CF: get_extended_base_var at config.c:928:2
   Occurrences: 44
+
+CoordinatesChanged
+  Events:
+    CF: git_setup_gettext at gettext.c:112:3
+    CF: git_setup_gettext at gettext.c:122:2
+  Occurrences: 26
 
 CoordinatesChanged
   Events:
@@ -1275,6 +723,12 @@ CoordinatesChanged
     CT: _ at gettext.h:45:1
     CT: _ at gettext.h:46:5
   Occurrences: 111
+
+CoordinatesChanged
+  Events:
+    CT: __volatile_list_del at list.h:183:1
+    CT: __volatile_list_del at list.h:184:13
+  Occurrences: 42
 
 CoordinatesChanged
   Events:
@@ -1364,7 +818,7 @@ CoordinatesChanged
   Events:
     CT: bucket at hashmap.c:106:1
     CT: bucket at hashmap.c:107:37
-  Occurrences: 387
+  Occurrences: 411
 
 CoordinatesChanged
   Events:
@@ -1394,7 +848,7 @@ CoordinatesChanged
   Events:
     CT: cleanup_path at path.c:41:1
     CT: cleanup_path at path.c:43:6
-  Occurrences: 115
+  Occurrences: 172
 
 CoordinatesChanged
   Events:
@@ -1428,9 +882,15 @@ CoordinatesChanged
 
 CoordinatesChanged
   Events:
+    CT: configset_iter at config.c:2223:1
+    CT: configset_iter at config.c:2229:16
+  Occurrences: 31
+
+CoordinatesChanged
+  Events:
     CT: container_of_or_null_offset at git-compat-util.h:1580:1
     CT: container_of_or_null_offset at git-compat-util.h:1579:21
-  Occurrences: 280
+  Occurrences: 299
 
 CoordinatesChanged
   Events:
@@ -1464,9 +924,21 @@ CoordinatesChanged
 
 CoordinatesChanged
   Events:
+    CT: do_xmallocz at wrapper.c:76:1
+    CT: do_xmallocz at wrapper.c:78:5
+  Occurrences: 201
+
+CoordinatesChanged
+  Events:
     CT: dummy_pthread_init at thread-utils.c:101:1
     CT: dummy_pthread_init at thread-utils.c:112:1
-  Occurrences: 52
+  Occurrences: 78
+
+CoordinatesChanged
+  Events:
+    CT: empty_ref_iterator_advance at iterator.c:50:1
+    CT: empty_ref_iterator_advance at iterator.c:51:9
+  Occurrences: 6
 
 CoordinatesChanged
   Events:
@@ -1491,6 +963,12 @@ CoordinatesChanged
     CT: files_assert_main_repository at files-backend.c:109:1
     CT: files_assert_main_repository at files-backend.c:110:5
   Occurrences: 6
+
+CoordinatesChanged
+  Events:
+    CT: fill at attr.c:1021:1
+    CT: fill at attr.c:1018:12
+  Occurrences: 4
 
 CoordinatesChanged
   Events:
@@ -1644,6 +1122,12 @@ CoordinatesChanged
 
 CoordinatesChanged
   Events:
+    CT: git_SHA1_Update_Chunked at sha1-chunked.c:4:1
+    CT: git_SHA1_Update_Chunked at sha1-chunked.c:9:9
+  Occurrences: 14
+
+CoordinatesChanged
+  Events:
     CT: git_attr_system at attr.c:823:1
     CT: git_attr_system at attr.c:824:10
   Occurrences: 1
@@ -1676,7 +1160,7 @@ CoordinatesChanged
   Events:
     CT: git_config_from_file_with_options at config.c:1993:1
     CT: git_config_from_file_with_options at config.c:1997:5
-  Occurrences: 30
+  Occurrences: 80
 
 CoordinatesChanged
   Events:
@@ -1706,13 +1190,19 @@ CoordinatesChanged
   Events:
     CT: git_configset_clear at config.c:2378:1
     CT: git_configset_clear at config.c:2381:5
-  Occurrences: 6
+  Occurrences: 18
 
 CoordinatesChanged
   Events:
     CT: git_default_branch_name at refs.c:689:1
     CT: git_default_branch_name at refs.c:692:6
   Occurrences: 6
+
+CoordinatesChanged
+  Events:
+    CT: git_default_core_config at config.c:1493:1
+    CT: git_default_core_config at config.c:1492:12
+  Occurrences: 108
 
 CoordinatesChanged
   Events:
@@ -1754,7 +1244,7 @@ CoordinatesChanged
   Events:
     CT: git_is_dir_sep at git-compat-util.h:447:1
     CT: git_is_dir_sep at git-compat-util.h:448:11
-  Occurrences: 5959
+  Occurrences: 6111
 
 CoordinatesChanged
   Events:
@@ -1800,6 +1290,12 @@ CoordinatesChanged
 
 CoordinatesChanged
   Events:
+    CT: git_wcwidth at utf8.c:85:1
+    CT: git_wcwidth at utf8.c:93:10
+  Occurrences: 84
+
+CoordinatesChanged
+  Events:
     CT: gitstrchrnul at git-compat-util.h:960:1
     CT: gitstrchrnul at git-compat-util.h:961:9
   Occurrences: 84
@@ -1830,6 +1326,24 @@ CoordinatesChanged
 
 CoordinatesChanged
   Events:
+    CT: hash_to_hex_algop at hex.c:150:1
+    CT: hash_to_hex_algop at hex.c:153:17
+  Occurrences: 7
+
+CoordinatesChanged
+  Events:
+    CT: hash_to_hex_algop_r at hex.c:122:1
+    CT: hash_to_hex_algop_r at hex.c:131:5
+  Occurrences: 7
+
+CoordinatesChanged
+  Events:
+    CT: hasheq_algop at hash.h:231:1
+    CT: hasheq_algop at hash.h:236:5
+  Occurrences: 7
+
+CoordinatesChanged
+  Events:
     CT: hashmap_clear_ at hashmap.c:203:1
     CT: hashmap_clear_ at hashmap.c:204:5
   Occurrences: 12
@@ -1838,13 +1352,13 @@ CoordinatesChanged
   Events:
     CT: hashmap_entry_init at hashmap.h:316:1
     CT: hashmap_entry_init at hashmap.h:317:10
-  Occurrences: 387
+  Occurrences: 412
 
 CoordinatesChanged
   Events:
     CT: hashmap_get at hashmap.c:215:1
     CT: hashmap_get at hashmap.c:216:10
-  Occurrences: 258
+  Occurrences: 277
 
 CoordinatesChanged
   Events:
@@ -1874,7 +1388,7 @@ CoordinatesChanged
   Events:
     CT: hashmap_iter_next at hashmap.c:295:1
     CT: hashmap_iter_next at hashmap.c:296:24
-  Occurrences: 21
+  Occurrences: 34
 
 CoordinatesChanged
   Events:
@@ -1886,7 +1400,7 @@ CoordinatesChanged
   Events:
     CT: hold_lock_file_for_update_timeout at lockfile.h:178:1
     CT: hold_lock_file_for_update_timeout at lockfile.h:179:9
-  Occurrences: 6
+  Occurrences: 42
 
 CoordinatesChanged
   Events:
@@ -1958,13 +1472,19 @@ CoordinatesChanged
   Events:
     CT: is_tempfile_active at tempfile.h:222:1
     CT: is_tempfile_active at tempfile.h:223:9
-  Occurrences: 216
+  Occurrences: 234
 
 CoordinatesChanged
   Events:
     CT: iskeychar at config.c:537:1
     CT: iskeychar at config.c:538:20
-  Occurrences: 8450
+  Occurrences: 8710
+
+CoordinatesChanged
+  Events:
+    CT: list_add_tail at list.h:65:1
+    CT: list_add_tail at list.h:66:6
+  Occurrences: 18
 
 CoordinatesChanged
   Events:
@@ -1982,13 +1502,19 @@ CoordinatesChanged
   Events:
     CT: memhash at hashmap.c:30:1
     CT: memhash at hashmap.c:33:9
-  Occurrences: 115
+  Occurrences: 127
 
 CoordinatesChanged
   Events:
     CT: move_array at git-compat-util.h:1105:1
     CT: move_array at git-compat-util.h:1106:5
   Occurrences: 26
+
+CoordinatesChanged
+  Events:
+    CT: noop_core_config at git-compat-util.h:419:1
+    CT: noop_core_config at git-compat-util.h:421:1
+  Occurrences: 18
 
 CoordinatesChanged
   Events:
@@ -2012,7 +1538,7 @@ CoordinatesChanged
   Events:
     CT: oideq at hash.h:247:1
     CT: oideq at hash.h:249:11
-  Occurrences: 1
+  Occurrences: 7
 
 CoordinatesChanged
   Events:
@@ -2078,7 +1604,7 @@ CoordinatesChanged
   Events:
     CT: push_stack at attr.c:831:1
     CT: push_stack at attr.c:832:5
-  Occurrences: 7
+  Occurrences: 8
 
 CoordinatesChanged
   Events:
@@ -2100,6 +1626,12 @@ CoordinatesChanged
 
 CoordinatesChanged
   Events:
+    CT: ref_iterator_abort at iterator.c:23:1
+    CT: ref_iterator_abort at iterator.c:24:29
+  Occurrences: 6
+
+CoordinatesChanged
+  Events:
     CT: refs_init_db at refs.c:1887:1
     CT: refs_init_db at refs.c:1888:27
   Occurrences: 6
@@ -2112,9 +1644,15 @@ CoordinatesChanged
 
 CoordinatesChanged
   Events:
+    CT: repo_config_clear at config.c:2556:1
+    CT: repo_config_clear at config.c:2557:5
+  Occurrences: 60
+
+CoordinatesChanged
+  Events:
     CT: repo_set_hash_algo at repository.c:96:1
     CT: repo_set_hash_algo at repository.c:97:20
-  Occurrences: 24
+  Occurrences: 50
 
 CoordinatesChanged
   Events:
@@ -2144,7 +1682,7 @@ CoordinatesChanged
   Events:
     CT: sane_case at git-compat-util.h:1235:1
     CT: sane_case at git-compat-util.h:1237:5
-  Occurrences: 8450
+  Occurrences: 8710
 
 CoordinatesChanged
   Events:
@@ -2192,7 +1730,7 @@ CoordinatesChanged
   Events:
     CT: skip_prefix at git-compat-util.h:676:1
     CT: skip_prefix at git-compat-util.h:678:8
-  Occurrences: 672
+  Occurrences: 729
 
 CoordinatesChanged
   Events:
@@ -2204,7 +1742,7 @@ CoordinatesChanged
   Events:
     CT: st_mult at git-compat-util.h:991:1
     CT: st_mult at git-compat-util.h:992:6
-  Occurrences: 1849
+  Occurrences: 1961
 
 CoordinatesChanged
   Events:
@@ -2228,13 +1766,13 @@ CoordinatesChanged
   Events:
     CT: strbuf_addch at strbuf.h:229:1
     CT: strbuf_addch at strbuf.h:228:20
-  Occurrences: 229
+  Occurrences: 255
 
 CoordinatesChanged
   Events:
     CT: strbuf_avail at strbuf.h:140:1
     CT: strbuf_avail at strbuf.h:141:11
-  Occurrences: 9602
+  Occurrences: 9771
 
 CoordinatesChanged
   Events:
@@ -2246,13 +1784,13 @@ CoordinatesChanged
   Events:
     CT: strbuf_grow at strbuf.c:92:1
     CT: strbuf_grow at strbuf.c:94:5
-  Occurrences: 2759
+  Occurrences: 3064
 
 CoordinatesChanged
   Events:
     CT: strbuf_init at strbuf.c:55:1
     CT: strbuf_init at strbuf.c:56:16
-  Occurrences: 595
+  Occurrences: 1361
 
 CoordinatesChanged
   Events:
@@ -2268,6 +1806,12 @@ CoordinatesChanged
 
 CoordinatesChanged
   Events:
+    CT: strbuf_remove at strbuf.c:292:1
+    CT: strbuf_remove at strbuf.c:293:2
+  Occurrences: 377
+
+CoordinatesChanged
+  Events:
     CT: strbuf_worktree_gitdir at path.c:420:1
     CT: strbuf_worktree_gitdir at path.c:421:5
   Occurrences: 91
@@ -2276,13 +1820,19 @@ CoordinatesChanged
   Events:
     CT: strhash at hashmap.c:11:1
     CT: strhash at hashmap.c:13:12
-  Occurrences: 254
+  Occurrences: 267
 
 CoordinatesChanged
   Events:
     CT: string_list_init_dup at string-list.c:11:1
     CT: string_list_init_dup at string-list.c:12:21
   Occurrences: 108
+
+CoordinatesChanged
+  Events:
+    CT: strvec_init at strvec.c:8:1
+    CT: strvec_init at strvec.c:10:2
+  Occurrences: 54
 
 CoordinatesChanged
   Events:
@@ -2304,6 +1854,12 @@ CoordinatesChanged
 
 CoordinatesChanged
   Events:
+    CT: tr2tls_start_process_clock at tr2_tls.c:21:1
+    CT: tr2tls_start_process_clock at tr2_tls.c:22:5
+  Occurrences: 26
+
+CoordinatesChanged
+  Events:
     CT: trace2_cmd_error_va_fl at trace2.c:292:1
     CT: trace2_cmd_error_va_fl at trace2.c:296:5
   Occurrences: 14
@@ -2316,6 +1872,12 @@ CoordinatesChanged
 
 CoordinatesChanged
   Events:
+    CT: trace2_cmd_set_config_fl at trace2.c:396:1
+    CT: trace2_cmd_set_config_fl at trace2.c:397:5
+  Occurrences: 36
+
+CoordinatesChanged
+  Events:
     CT: trace2_cmd_start_fl at trace2.c:248:1
     CT: trace2_cmd_start_fl at trace2.c:254:5
   Occurrences: 26
@@ -2325,6 +1887,12 @@ CoordinatesChanged
     CT: trace2_collect_process_info at procinfo.c:10:1
     CT: trace2_collect_process_info at procinfo.c:11:1
   Occurrences: 26
+
+CoordinatesChanged
+  Events:
+    CT: trace2_def_repo_fl at trace2.c:648:1
+    CT: trace2_def_repo_fl at trace2.c:652:5
+  Occurrences: 24
 
 CoordinatesChanged
   Events:
@@ -2364,6 +1932,12 @@ CoordinatesChanged
 
 CoordinatesChanged
   Events:
+    CT: warn_if_unremovable at wrapper.c:610:1
+    CT: warn_if_unremovable at wrapper.c:612:5
+  Occurrences: 1
+
+CoordinatesChanged
+  Events:
     CT: write_loose_object_common at object-file.c:2013:1
     CT: write_loose_object_common at object-file.c:2008:12
   Occurrences: 1
@@ -2384,13 +1958,13 @@ CoordinatesChanged
   Events:
     CT: xmalloc at wrapper.c:71:1
     CT: xmalloc at wrapper.c:72:9
-  Occurrences: 442
+  Occurrences: 448
 
 CoordinatesChanged
   Events:
     CT: xmallocz at wrapper.c:92:1
     CT: xmallocz at wrapper.c:93:9
-  Occurrences: 188
+  Occurrences: 201
 
 CoordinatesChanged
   Events:
@@ -2516,7 +2090,7 @@ CoordinatesChanged
   Events:
     RF: memhash at hashmap.c:38:1
     RF: memhash at hashmap.c:33:9
-  Occurrences: 115
+  Occurrences: 127
 
 CoordinatesChanged
   Events:
@@ -2582,7 +2156,7 @@ CoordinatesChanged
   Events:
     RF: strhash at hashmap.c:16:1
     RF: strhash at hashmap.c:13:9
-  Occurrences: 254
+  Occurrences: 267
 
 CoordinatesChanged
   Events:
@@ -2601,6 +2175,15 @@ CoordinatesChanged
     RF: type_name at object.c:36:1
     RF: type_name at object.c:35:28
   Occurrences: 4
+
+LibraryCallRemoved
+  Events:
+    CF: check_or_sanitize_refname at refs.c:250:7
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+  Occurrences: 24
 
 LibraryCallRemoved
   Events:
@@ -2640,15 +2223,6 @@ LibraryCallRemoved
 
 LibraryCallRemoved
   Events:
-    CF: deactivate_tempfile at tempfile.c:127:2
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-  Occurrences: 3
-
-LibraryCallRemoved
-  Events:
     CF: git_deflate_init at zlib.c:162:2
     CT: Jump to external code
     CF: Jump to external code
@@ -2682,6 +2256,15 @@ LibraryCallRemoved
     CT: External code
     RF: Jump to external code
   Occurrences: 12
+
+LibraryCallRemoved
+  Events:
+    CF: init_repository_format at setup.c:712:2
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+  Occurrences: 72
 
 LibraryCallRemoved
   Events:
@@ -2761,14 +2344,14 @@ ProgramCallRemoved
     CF: get_next_component at abspath.c:43:29
     CT: git_is_dir_sep at git-compat-util.h:447:1
     RF: git_is_dir_sep at git-compat-util.h:449:1
-  Occurrences: 24
+  Occurrences: 22
 
 ProgramCallRemoved
   Events:
     CF: normalize_path_copy_len at path.c:1179:11
     CT: git_is_dir_sep at git-compat-util.h:447:1
     RF: git_is_dir_sep at git-compat-util.h:449:1
-  Occurrences: 45
+  Occurrences: 40
 
 ProgramCallRemoved
   Events:
@@ -2777,47 +2360,11 @@ ProgramCallRemoved
     RF: __sigbits at signal.h:0:0
   Occurrences: 26
 
-Uncategorised
+ProgramCallRemoved
   Events:
-    CF: _ at gettext.h:48:9
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    RF: _ at gettext.h:49:1
-    CF: Jump to external code
-    CT: External code
-    RF: _ at gettext.h:0:0
-  Occurrences: 109
-
-Uncategorised
-  Events:
-    CF: _ at gettext.h:48:9
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    RF: _ at gettext.h:49:1
-    CF: decode_tree_entry at tree-walk.c:33:3
-    CF: Jump to external code
-    CT: External code
-    RF: _ at gettext.h:0:0
-    CF: decode_tree_entry at tree-walk.c:43:3
-  Occurrences: 1
-
-Uncategorised
-  Events:
-    CF: _ at gettext.h:48:9
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    RF: _ at gettext.h:49:1
-    CF: decode_tree_entry at tree-walk.c:39:3
-    CF: Jump to external code
-    CT: External code
-    RF: _ at gettext.h:0:0
-    CF: decode_tree_entry at tree-walk.c:43:3
+    CF: strip_last_component at abspath.c:24:25
+    CT: git_is_dir_sep at git-compat-util.h:447:1
+    RF: git_is_dir_sep at git-compat-util.h:449:1
   Occurrences: 1
 
 Uncategorised
@@ -2829,148 +2376,11 @@ Uncategorised
 
 Uncategorised
   Events:
-    CF: base_ref_iterator_free at iterator.c:42:2
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    RF: base_ref_iterator_free at iterator.c:43:1
-    CF: Jump to external code
-    CT: External code
-    RF: base_ref_iterator_free at iterator.c:0:0
-  Occurrences: 6
-
-Uncategorised
-  Events:
-    CF: check_or_sanitize_refname at refs.c:250:7
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-  Occurrences: 24
-
-Uncategorised
-  Events:
-    CF: config_file_fgetc at config.c:97:9
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    RF: config_file_fgetc at config.c:98:1
-    CF: Jump to external code
-    CT: External code
-    RF: config_file_fgetc at config.c:0:0
-  Occurrences: 346
-
-Uncategorised
-  Events:
-    CF: config_file_ftell at config.c:107:9
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    RF: config_file_ftell at config.c:108:1
-    CF: Jump to external code
-    CT: External code
-    RF: config_file_ftell at config.c:0:0
-  Occurrences: 240
-
-Uncategorised
-  Events:
-    CF: deactivate_tempfile at tempfile.c:127:2
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    RF: deactivate_tempfile at tempfile.c:128:1
-    CF: Jump to external code
-    CT: External code
-    RF: deactivate_tempfile at tempfile.c:0:0
-  Occurrences: 39
-
-Uncategorised
-  Events:
     CF: dir_inside_of at dir.c:3068:29
     CT: cmp_icase at dir.c:3049:1
     CF: No info for this address
     CT: cmp_icase at dir.c:3051:10
   Occurrences: 1098
-
-Uncategorised
-  Events:
-    CF: do_xmalloc at wrapper.c:51:8
-    CF: xcalloc at wrapper.c:150:8
-  Occurrences: 1
-
-Uncategorised
-  Events:
-    CF: git_attr at attr.c:236:9
-    CT: git_attr_internal at attr.c:210:1
-    CF: git_attr_internal at attr.c:213:7
-    CT: attr_name_valid at attr.c:176:1
-    RF: attr_name_valid at attr.c:192:1
-    CF: git_attr_internal at attr.c:216:2
-    CT: hashmap_lock at attr.c:42:1
-    RF: hashmap_lock at attr.c:44:1
-    CF: git_attr_internal at attr.c:218:6
-    CT: attr_hashmap_get at attr.c:87:1
-    CF: attr_hashmap_get at attr.c:91:2
-    CT: memhash at hashmap.c:30:1
-    RF: memhash at hashmap.c:38:1
-    CF: attr_hashmap_get at attr.c:91:2
-    CT: hashmap_entry_init at hashmap.h:316:1
-    RF: hashmap_entry_init at hashmap.h:319:1
-    CF: attr_hashmap_get at attr.c:94:6
-    CT: hashmap_get at hashmap.c:215:1
-    CF: hashmap_get at hashmap.c:218:10
-    CT: find_entry_ptr at hashmap.c:137:1
-    CF: find_entry_ptr at hashmap.c:139:41
-    CT: bucket at hashmap.c:106:1
-    RF: bucket at hashmap.c:108:1
-    RF: find_entry_ptr at hashmap.c:143:1
-    RF: hashmap_get at hashmap.c:219:1
-    CF: attr_hashmap_get at attr.c:94:6
-    CT: container_of_or_null_offset at git-compat-util.h:1580:1
-    RF: container_of_or_null_offset at git-compat-util.h:1582:1
-    RF: attr_hashmap_get at attr.c:97:1
-    CF: git_attr_internal at attr.c:221:3
-    [...53 more events...]
-  Occurrences: 5
-
-Uncategorised
-  Events:
-    CF: git_attr at attr.c:236:9
-    CT: git_attr_internal at attr.c:210:1
-    CF: git_attr_internal at attr.c:213:7
-    CT: attr_name_valid at attr.c:176:1
-    RF: attr_name_valid at attr.c:192:1
-    CF: git_attr_internal at attr.c:216:2
-    CT: hashmap_lock at attr.c:42:1
-    RF: hashmap_lock at attr.c:44:1
-    CF: git_attr_internal at attr.c:218:6
-    CT: attr_hashmap_get at attr.c:87:1
-    CF: attr_hashmap_get at attr.c:91:2
-    CT: memhash at hashmap.c:30:1
-    RF: memhash at hashmap.c:38:1
-    CF: attr_hashmap_get at attr.c:91:2
-    CT: hashmap_entry_init at hashmap.h:316:1
-    RF: hashmap_entry_init at hashmap.h:319:1
-    CF: attr_hashmap_get at attr.c:94:6
-    CT: hashmap_get at hashmap.c:215:1
-    RF: hashmap_get at hashmap.c:219:1
-    CF: attr_hashmap_get at attr.c:94:6
-    CT: container_of_or_null_offset at git-compat-util.h:1580:1
-    RF: container_of_or_null_offset at git-compat-util.h:1582:1
-    RF: attr_hashmap_get at attr.c:97:1
-    CF: git_attr_internal at attr.c:221:3
-    CT: st_add at git-compat-util.h:981:1
-    RF: st_add at git-compat-util.h:986:1
-    CF: git_attr_internal at attr.c:221:3
-    CT: st_add at git-compat-util.h:981:1
-    RF: st_add at git-compat-util.h:986:1
-    CF: git_attr_internal at attr.c:221:3
-    [...41 more events...]
-  Occurrences: 1
 
 Uncategorised
   Events:
@@ -2981,13 +2391,13 @@ Uncategorised
     CT: attr_hashmap_get at attr.c:87:1
     CF: No info for this address
     CT: attr_hashmap_get at attr.c:85:14
-  Occurrences: 4
+  Occurrences: 10
 
 Uncategorised
   Events:
     CF: git_attr_internal at attr.c:221:3
     CF: No info for this address
-  Occurrences: 6
+  Occurrences: 18
 
 Uncategorised
   Events:
@@ -2995,7 +2405,7 @@ Uncategorised
     CT: st_add at git-compat-util.h:981:1
     CF: No info for this address
     CT: st_add at git-compat-util.h:982:2
-  Occurrences: 6
+  Occurrences: 18
 
 Uncategorised
   Events:
@@ -3003,77 +2413,7 @@ Uncategorised
     CT: hashmap_get_size at hashmap.h:325:1
     CF: No info for this address
     CT: hashmap_get_size at hashmap.h:326:5
-  Occurrences: 3
-
-Uncategorised
-  Events:
-    CF: git_attr_internal at attr.c:222:16
-    CT: hashmap_get_size at hashmap.h:325:1
-    RF: hashmap_get_size at hashmap.h:331:1
-    CF: git_attr_internal at attr.c:224:3
-    CT: attr_hashmap_add at attr.c:103:1
-    CF: attr_hashmap_add at attr.c:106:6
-    CT: xmalloc at wrapper.c:71:1
-    CF: xmalloc at wrapper.c:72:9
-    CT: do_xmalloc at wrapper.c:46:1
-    CF: do_xmalloc at wrapper.c:49:6
-    CT: memory_limit_check at wrapper.c:18:1
-    RF: memory_limit_check at wrapper.c:35:1
-    CF: do_xmalloc at wrapper.c:51:8
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    RF: do_xmalloc at wrapper.c:68:1
-    RF: xmalloc at wrapper.c:73:1
-    CF: attr_hashmap_add at attr.c:107:2
-    CT: memhash at hashmap.c:30:1
-    RF: memhash at hashmap.c:38:1
-    CF: attr_hashmap_add at attr.c:107:2
-    CT: hashmap_entry_init at hashmap.h:316:1
-    RF: hashmap_entry_init at hashmap.h:319:1
-    CF: attr_hashmap_add at attr.c:112:2
-    CT: hashmap_add at hashmap.c:232:1
-    CF: hashmap_add at hashmap.c:238:6
-    CT: bucket at hashmap.c:106:1
-    RF: bucket at hashmap.c:108:1
-    [...52 more events...]
-  Occurrences: 5
-
-Uncategorised
-  Events:
-    CF: git_attr_internal at attr.c:222:16
-    CT: hashmap_get_size at hashmap.h:325:1
-    RF: hashmap_get_size at hashmap.h:331:1
-    CF: git_attr_internal at attr.c:224:3
-    CT: attr_hashmap_add at attr.c:103:1
-    CF: attr_hashmap_add at attr.c:106:6
-    CT: xmalloc at wrapper.c:71:1
-    CF: xmalloc at wrapper.c:72:9
-    CT: do_xmalloc at wrapper.c:46:1
-    CF: do_xmalloc at wrapper.c:49:6
-    RF: xcalloc at wrapper.c:156:1
-    CF: No info for this address
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: No info for this address
-    CT: hashmap_get_size at hashmap.h:326:5
-    RF: hashmap_get_size at hashmap.h:331:1
-    CF: No info for this address
-    CT: attr_hashmap_add at attr.c:100:13
-    CF: attr_hashmap_add at attr.c:106:6
-    CT: xmalloc at wrapper.c:72:9
-    CF: xmalloc at wrapper.c:72:9
-    CT: do_xmalloc at wrapper.c:46:1 (TCWI)
-    CF: do_xmalloc at wrapper.c:49:6
-    CT: memory_limit_check at wrapper.c:18:1
-    RF: memory_limit_check at wrapper.c:35:1
-    CF: do_xmalloc at wrapper.c:51:8
-    CT: Jump to external code
-    [...18 more events...]
-  Occurrences: 1
+  Occurrences: 9
 
 Uncategorised
   Events:
@@ -3081,7 +2421,7 @@ Uncategorised
     CT: attr_hashmap_add at attr.c:103:1
     CF: No info for this address
     CT: attr_hashmap_add at attr.c:100:13
-  Occurrences: 3
+  Occurrences: 9
 
 Uncategorised
   Events:
@@ -3089,7 +2429,7 @@ Uncategorised
     CT: hashmap_get_size at hashmap.h:325:1
     CF: No info for this address
     CT: hashmap_get_size at hashmap.h:326:5
-  Occurrences: 3
+  Occurrences: 9
 
 Uncategorised
   Events:
@@ -3102,55 +2442,14 @@ Uncategorised
 
 Uncategorised
   Events:
-    CF: git_find_last_dir_sep at git-compat-util.h:538:9
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    RF: git_find_last_dir_sep at git-compat-util.h:539:1
-    CF: Jump to external code
-    CT: External code
-    RF: git_find_last_dir_sep at git-compat-util.h:0:0
-  Occurrences: 26
-
-Uncategorised
-  Events:
-    CF: git_hash_sha1_init at object-file.c:86:2
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    RF: git_hash_sha1_init at object-file.c:87:1
-    CF: Jump to external code
-    CT: External code
-    RF: git_hash_sha1_init at object-file.c:0:0
-  Occurrences: 7
-
-Uncategorised
-  Events:
-    CF: git_set_exec_path at exec-cmd.c:280:2
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    RF: git_set_exec_path at exec-cmd.c:281:1
-    CF: Jump to external code
-    CT: External code
-    RF: git_set_exec_path at exec-cmd.c:0:0
-  Occurrences: 26
-
-Uncategorised
-  Events:
-    CF: git_setup_gettext at gettext.c:112:3
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    RF: git_setup_gettext at gettext.c:123:1
-    CF: Jump to external code
-    CT: External code
-    RF: git_setup_gettext at gettext.c:0:0
-  Occurrences: 26
+    CF: git_attr_internal at attr.c:229:2
+    CT: hashmap_unlock at attr.c:47:1
+    RF: hashmap_unlock at attr.c:49:1
+    RF: git_attr_internal at attr.c:232:1
+    RF: git_attr at attr.c:237:1
+    RF: No info for this address
+    RF: git_attr at attr.c:0:0
+  Occurrences: 6
 
 Uncategorised
   Events:
@@ -3169,15 +2468,6 @@ Uncategorised
     CT: External code
     RF: Jump to external code
   Occurrences: 126
-
-Uncategorised
-  Events:
-    CF: init_repository_format at setup.c:712:2
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-  Occurrences: 72
 
 Uncategorised
   Events:
@@ -3313,85 +2603,6 @@ Uncategorised
 
 Uncategorised
   Events:
-    CF: repo_config_get_value at config.c:2572:9
-    CT: git_configset_get_value at config.c:2410:1
-    CF: git_configset_get_value at config.c:2417:11
-    CT: git_configset_get_value_multi at config.c:2427:1
-    CF: git_configset_get_value_multi at config.c:2428:33
-    CT: configset_find_element at config.c:2293:1
-    CF: configset_find_element at config.c:2301:6
-    CT: git_config_parse_key at config.c:554:1
-    CF: git_config_parse_key at config.c:557:25
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: git_config_parse_key at config.c:581:15
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: git_config_parse_key at config.c:581:15
-    CT: xmallocz at wrapper.c:92:1
-    CF: xmallocz at wrapper.c:93:9
-    CT: do_xmallocz at wrapper.c:76:1
-    CF: do_xmallocz at wrapper.c:85:8
-    CT: do_xmalloc at wrapper.c:46:1
-    CF: do_xmalloc at wrapper.c:49:6
-    CT: memory_limit_check at wrapper.c:18:1
-    RF: memory_limit_check at wrapper.c:35:1
-    CF: do_xmalloc at wrapper.c:51:8
-    CT: Jump to external code
-    CF: Jump to external code
-    [...152 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Events:
-    CF: repo_config_get_value at config.c:2572:9
-    CT: git_configset_get_value at config.c:2410:1
-    CF: git_configset_get_value at config.c:2417:11
-    CT: git_configset_get_value_multi at config.c:2427:1
-    CF: git_configset_get_value_multi at config.c:2428:33
-    CT: configset_find_element at config.c:2293:1
-    CF: configset_find_element at config.c:2301:6
-    CT: git_config_parse_key at config.c:554:1
-    CF: git_config_parse_key at config.c:557:25
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: git_config_parse_key at config.c:581:15
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: git_config_parse_key at config.c:581:15
-    CT: xmallocz at wrapper.c:92:1
-    CF: xmallocz at wrapper.c:93:9
-    CT: do_xmallocz at wrapper.c:76:1
-    CF: do_xmallocz at wrapper.c:85:8
-    CT: do_xmalloc at wrapper.c:46:1
-    CF: do_xmalloc at wrapper.c:49:6
-    CT: memory_limit_check at wrapper.c:18:1
-    RF: memory_limit_check at wrapper.c:35:1
-    CF: do_xmalloc at wrapper.c:51:8
-    CT: Jump to external code
-    CF: Jump to external code
-    [...157 more events...]
-  Occurrences: 12
-
-Uncategorised
-  Events:
-    CF: resolve_symlink at lockfile.c:69:2
-    CT: strbuf_setlen at strbuf.h:161:1
-    RF: strbuf_setlen at strbuf.h:169:1
-    RF: resolve_symlink at lockfile.c:70:1
-    RF: No info for this address
-  Occurrences: 36
-
-Uncategorised
-  Events:
     CF: run_builtin at git.c:450:2
     CT: commit_pager_choice at git.c:112:1
     RF: commit_pager_choice at git.c:123:1
@@ -3496,19 +2707,6 @@ Uncategorised
 
 Uncategorised
   Events:
-    CF: sanitize_stdfds at setup.c:1676:3
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    RF: sanitize_stdfds at setup.c:1677:1
-    CF: Jump to external code
-    CT: External code
-    RF: sanitize_stdfds at setup.c:0:0
-  Occurrences: 26
-
-Uncategorised
-  Events:
     CF: setup_git_directory_gently_1 at setup.c:1242:37
     CT: git_offset_1st_component at git-compat-util.h:456:1
     CF: git_offset_1st_component at git-compat-util.h:457:9
@@ -3522,78 +2720,10 @@ Uncategorised
     CF: setup_git_directory_gently_1 at setup.c:1242:37
     CT: git_offset_1st_component at git-compat-util.h:457:9
     CF: git_offset_1st_component at git-compat-util.h:457:9
-    CT: git_is_dir_sep at git-compat-util.h:448:11 (TCWI)
+    CT: git_is_dir_sep at git-compat-util.h:448:11
     RF: git_is_dir_sep at git-compat-util.h:449:1
     RF: git_offset_1st_component at git-compat-util.h:0:0
   Occurrences: 18
-
-Uncategorised
-  Events:
-    CF: strbuf_add at strbuf.c:300:2
-    CT: strbuf_setlen at strbuf.h:161:1
-    RF: strbuf_setlen at strbuf.h:169:1
-    RF: strbuf_add at strbuf.c:301:1
-    RF: No info for this address
-  Occurrences: 385
-
-Uncategorised
-  Events:
-    CF: strbuf_add at strbuf.c:300:2
-    CT: strbuf_setlen at strbuf.h:161:1
-    RF: strbuf_setlen at strbuf.h:169:1
-    RF: strbuf_add at strbuf.c:301:1
-    RF: strbuf_addstr at strbuf.h:306:1
-    CF: refs_verify_refname_available at refs.c:2396:2
-    RF: No info for this address
-    RF: strbuf_addstr at strbuf.h:0:0
-    CF: No info for this address
-  Occurrences: 6
-
-Uncategorised
-  Events:
-    CF: strbuf_add at strbuf.c:300:2
-    CT: strbuf_setlen at strbuf.h:161:1
-    RF: strbuf_setlen at strbuf.h:169:1
-    RF: strbuf_add at strbuf.c:301:1
-    RF: strbuf_addstr at strbuf.h:306:1
-    RF: No info for this address
-    RF: strbuf_addstr at strbuf.h:0:0
-  Occurrences: 820
-
-Uncategorised
-  Events:
-    CF: strbuf_add at strbuf.c:300:2
-    CT: strbuf_setlen at strbuf.h:161:1
-    RF: strbuf_setlen at strbuf.h:169:1
-    RF: strbuf_add at strbuf.c:301:1
-    RF: strbuf_addstr at strbuf.h:306:1
-    RF: strbuf_add_absolute_path at strbuf.c:918:1
-    RF: No info for this address
-    RF: strbuf_addstr at strbuf.h:0:0
-    RF: strbuf_add_absolute_path at strbuf.c:0:0
-  Occurrences: 68
-
-Uncategorised
-  Events:
-    CF: strbuf_add at strbuf.c:300:2
-    CT: strbuf_setlen at strbuf.h:161:1
-    RF: strbuf_setlen at strbuf.h:169:1
-    RF: strbuf_add at strbuf.c:301:1
-    RF: strbuf_addstr at strbuf.h:306:1
-    RF: strbuf_worktree_gitdir at path.c:427:1
-    RF: No info for this address
-    RF: strbuf_addstr at strbuf.h:0:0
-    RF: strbuf_worktree_gitdir at path.c:0:0
-  Occurrences: 91
-
-Uncategorised
-  Events:
-    CF: strbuf_addbuf at strbuf.c:307:2
-    CT: strbuf_setlen at strbuf.h:161:1
-    RF: strbuf_setlen at strbuf.h:169:1
-    RF: strbuf_addbuf at strbuf.c:308:1
-    RF: No info for this address
-  Occurrences: 287
 
 Uncategorised
   Events:
@@ -3620,69 +2750,7 @@ Uncategorised
     CF: Jump to external code
     CT: External code
     RF: Jump to external code
-  Occurrences: 1304
-
-Uncategorised
-  Events:
-    CF: strbuf_splice at strbuf.c:247:2
-    CT: strbuf_setlen at strbuf.h:161:1
-    RF: strbuf_setlen at strbuf.h:169:1
-    RF: strbuf_splice at strbuf.c:248:1
-    RF: strbuf_remove at strbuf.c:294:1
-    RF: get_next_component at abspath.c:49:1
-    CF: strbuf_realpath_1 at abspath.c:113:32
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    RF: No info for this address
-    RF: strbuf_remove at strbuf.c:0:0
-    RF: get_next_component at abspath.c:0:0
-  Occurrences: 60
-
-Uncategorised
-  Events:
-    CF: strbuf_splice at strbuf.c:247:2
-    CT: strbuf_setlen at strbuf.h:161:1
-    RF: strbuf_setlen at strbuf.h:169:1
-    RF: strbuf_splice at strbuf.c:248:1
-    RF: strbuf_remove at strbuf.c:294:1
-    RF: get_next_component at abspath.c:49:1
-    CF: strbuf_realpath_1 at abspath.c:115:32
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    RF: No info for this address
-    RF: strbuf_remove at strbuf.c:0:0
-    RF: get_next_component at abspath.c:0:0
-  Occurrences: 18
-
-Uncategorised
-  Events:
-    CF: strbuf_splice at strbuf.c:247:2
-    CT: strbuf_setlen at strbuf.h:161:1
-    RF: strbuf_setlen at strbuf.h:169:1
-    RF: strbuf_splice at strbuf.c:248:1
-    RF: strbuf_remove at strbuf.c:294:1
-    RF: get_next_component at abspath.c:49:1
-    RF: No info for this address
-    RF: strbuf_remove at strbuf.c:0:0
-    RF: get_next_component at abspath.c:0:0
-  Occurrences: 227
-
-Uncategorised
-  Events:
-    CF: strbuf_splice at strbuf.c:247:2
-    CT: strbuf_setlen at strbuf.h:161:1
-    RF: strbuf_setlen at strbuf.h:169:1
-    RF: strbuf_splice at strbuf.c:248:1
-    RF: strbuf_remove at strbuf.c:294:1
-    RF: get_root_part at abspath.c:62:1
-    RF: No info for this address
-    RF: strbuf_remove at strbuf.c:0:0
-    RF: get_root_part at abspath.c:0:0
-  Occurrences: 72
+  Occurrences: 1361
 
 Uncategorised
   Events:
@@ -3695,27 +2763,6 @@ Uncategorised
 
 Uncategorised
   Events:
-    CF: strip_last_component at abspath.c:24:25
-    CT: git_is_dir_sep at git-compat-util.h:447:1
-    RF: git_is_dir_sep at git-compat-util.h:449:1
-    CF: strip_last_component at abspath.c:27:2
-    CT: strbuf_setlen at strbuf.h:161:1
-    RF: strbuf_setlen at strbuf.h:169:1
-    RF: strip_last_component at abspath.c:28:1
-    RF: No info for this address
-  Occurrences: 7
-
-Uncategorised
-  Events:
-    CF: strip_last_component at abspath.c:27:2
-    CT: strbuf_setlen at strbuf.h:161:1
-    RF: strbuf_setlen at strbuf.h:169:1
-    RF: strip_last_component at abspath.c:28:1
-    RF: No info for this address
-  Occurrences: 11
-
-Uncategorised
-  Events:
     CF: strvec_init at strvec.c:10:2
     CT: Jump to external code
     CF: Jump to external code
@@ -3725,134 +2772,17 @@ Uncategorised
 
 Uncategorised
   Events:
-    CF: unlock_ref at files-backend.c:515:2
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    RF: unlock_ref at files-backend.c:516:1
-    CF: Jump to external code
-    CT: External code
-    RF: unlock_ref at files-backend.c:0:0
-  Occurrences: 6
+    CF: xdg_config_home_for at path.c:1533:9
+    CF: No info for this address
+  Occurrences: 57
 
 Uncategorised
   Events:
-    CF: xdg_config_home at path.c:1542:9
-    CT: xdg_config_home_for at path.c:1524:1
-    CF: xdg_config_home_for at path.c:1529:16
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: xdg_config_home_for at path.c:1533:9
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
     CF: xdg_config_home_for at path.c:1535:10
     CT: mkpathdup at path.c:504:1
-    CF: mkpathdup at path.c:508:2
-    CT: strbuf_vaddf at strbuf.c:390:1
-    CF: strbuf_vaddf at strbuf.c:394:7
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CF: strbuf_vaddf at strbuf.c:395:3
-    CT: strbuf_grow at strbuf.c:92:1
-    CF: strbuf_grow at strbuf.c:99:2
-    CT: st_mult at git-compat-util.h:991:1
-    RF: st_mult at git-compat-util.h:996:1
-    CF: strbuf_grow at strbuf.c:99:2
-    CT: xrealloc at wrapper.c:127:1
-    CF: xrealloc at wrapper.c:135:2
-    CT: memory_limit_check at wrapper.c:18:1
-    RF: memory_limit_check at wrapper.c:35:1
-    CF: xrealloc at wrapper.c:136:8
-    [...88 more events...]
-  Occurrences: 14
-
-Uncategorised
-  Events:
-    CF: xdg_config_home at path.c:1542:9
-    CT: xdg_config_home_for at path.c:1524:1
-    CF: xdg_config_home_for at path.c:1529:16
-    CT: Jump to external code
     CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: xdg_config_home_for at path.c:1533:9
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: xdg_config_home_for at path.c:1535:10
-    CT: mkpathdup at path.c:504:1
-    CF: mkpathdup at path.c:508:2
-    CT: strbuf_vaddf at strbuf.c:390:1
-    CF: strbuf_vaddf at strbuf.c:394:7
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CF: strbuf_vaddf at strbuf.c:395:3
-    CT: strbuf_grow at strbuf.c:92:1
-    CF: strbuf_grow at strbuf.c:99:2
-    CT: st_mult at git-compat-util.h:991:1
-    RF: st_mult at git-compat-util.h:996:1
-    CF: strbuf_grow at strbuf.c:99:2
-    CT: xrealloc at wrapper.c:127:1
-    CF: xrealloc at wrapper.c:135:2
-    CT: memory_limit_check at wrapper.c:18:1
-    RF: memory_limit_check at wrapper.c:35:1
-    CF: xrealloc at wrapper.c:136:8
-    [...113 more events...]
-  Occurrences: 41
-
-Uncategorised
-  Events:
-    CF: xdg_config_home at path.c:1542:9
-    CT: xdg_config_home_for at path.c:1524:1
-    CF: xdg_config_home_for at path.c:1529:16
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: xdg_config_home_for at path.c:1533:9
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: xdg_config_home_for at path.c:1535:10
-    CT: mkpathdup at path.c:504:1
-    CF: mkpathdup at path.c:508:2
-    CT: strbuf_vaddf at strbuf.c:390:1
-    CF: strbuf_vaddf at strbuf.c:394:7
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CF: strbuf_vaddf at strbuf.c:395:3
-    CT: strbuf_grow at strbuf.c:92:1
-    CF: strbuf_grow at strbuf.c:99:2
-    CT: st_mult at git-compat-util.h:991:1
-    RF: st_mult at git-compat-util.h:996:1
-    CF: strbuf_grow at strbuf.c:99:2
-    CT: xrealloc at wrapper.c:127:1
-    CF: xrealloc at wrapper.c:135:2
-    CT: memory_limit_check at wrapper.c:18:1
-    RF: memory_limit_check at wrapper.c:35:1
-    CF: xrealloc at wrapper.c:136:8
-    [...63 more events...]
-  Occurrences: 2
-
-Uncategorised
-  Events:
-    CF: xmemdupz at wrapper.c:109:9
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    RF: xmemdupz at wrapper.c:110:1
-    CF: Jump to external code
-    CT: External code
-    RF: xmemdupz at wrapper.c:0:0
-  Occurrences: 6
+    CT: mkpathdup at path.c:504:1 (TCWI)
+  Occurrences: 57
 
 Uncategorised
   Events:
@@ -3872,7 +2802,7 @@ Uncategorised
     CT: No info for this address
     CF: No info for this address
     CT: attr_name_valid at attr.c:182:10
-  Occurrences: 4
+  Occurrences: 10
 
 Uncategorised
   Events:
@@ -3880,7 +2810,7 @@ Uncategorised
     CF: git_configset_get_value at config.c:2417:11
     CT: No info for this address
     CF: No info for this address
-  Occurrences: 38
+  Occurrences: 51
 
 Uncategorised
   Events:
@@ -3988,85 +2918,175 @@ Uncategorised
     RF: strbuf_setlen at strbuf.h:169:1
     CT: No info for this address
     RF: No info for this address
-  Occurrences: 2410
+  Occurrences: 2467
 
 Uncategorised
   Events:
-    RF: configset_find_element at config.c:2309:1
-    RF: git_configset_get_value_multi at config.c:2430:1
-    RF: git_configset_get_value at config.c:2424:1
-    RF: repo_config_get_value at config.c:2573:1
-    RF: git_config_get_value at config.c:2685:1
-    CF: git_config_parse_key at config.c:581:15
+    CT: strbuf_setlen at strbuf.h:161:1
+    RF: strbuf_setlen at strbuf.h:169:1
+    RF: resolve_symlink at lockfile.c:70:1
+    CT: No info for this address
+    RF: No info for this address
+    RF: resolve_symlink at lockfile.c:0:0
+  Occurrences: 36
+
+Uncategorised
+  Events:
+    CT: strbuf_setlen at strbuf.h:161:1
+    RF: strbuf_setlen at strbuf.h:169:1
+    RF: strbuf_add at strbuf.c:301:1
+    CT: No info for this address
+    RF: No info for this address
+    RF: strbuf_add at strbuf.c:0:0
+  Occurrences: 385
+
+Uncategorised
+  Events:
+    CT: strbuf_setlen at strbuf.h:161:1
+    RF: strbuf_setlen at strbuf.h:169:1
+    RF: strbuf_add at strbuf.c:301:1
+    RF: strbuf_addstr at strbuf.h:306:1
+    CF: refs_verify_refname_available at refs.c:2396:2
+    CT: No info for this address
+    RF: No info for this address
+    RF: strbuf_add at strbuf.c:0:0
+    RF: strbuf_addstr at strbuf.h:0:0
+    CF: No info for this address
+  Occurrences: 6
+
+Uncategorised
+  Events:
+    CT: strbuf_setlen at strbuf.h:161:1
+    RF: strbuf_setlen at strbuf.h:169:1
+    RF: strbuf_add at strbuf.c:301:1
+    RF: strbuf_addstr at strbuf.h:306:1
+    CT: No info for this address
+    RF: No info for this address
+    RF: strbuf_add at strbuf.c:0:0
+    RF: strbuf_addstr at strbuf.h:0:0
+  Occurrences: 820
+
+Uncategorised
+  Events:
+    CT: strbuf_setlen at strbuf.h:161:1
+    RF: strbuf_setlen at strbuf.h:169:1
+    RF: strbuf_add at strbuf.c:301:1
+    RF: strbuf_addstr at strbuf.h:306:1
+    RF: strbuf_add_absolute_path at strbuf.c:918:1
+    CT: No info for this address
+    RF: No info for this address
+    RF: strbuf_add at strbuf.c:0:0
+    RF: strbuf_addstr at strbuf.h:0:0
+    RF: strbuf_add_absolute_path at strbuf.c:0:0
+  Occurrences: 68
+
+Uncategorised
+  Events:
+    CT: strbuf_setlen at strbuf.h:161:1
+    RF: strbuf_setlen at strbuf.h:169:1
+    RF: strbuf_add at strbuf.c:301:1
+    RF: strbuf_addstr at strbuf.h:306:1
+    RF: strbuf_worktree_gitdir at path.c:427:1
+    CT: No info for this address
+    RF: No info for this address
+    RF: strbuf_add at strbuf.c:0:0
+    RF: strbuf_addstr at strbuf.h:0:0
+    RF: strbuf_worktree_gitdir at path.c:0:0
+  Occurrences: 91
+
+Uncategorised
+  Events:
+    CT: strbuf_setlen at strbuf.h:161:1
+    RF: strbuf_setlen at strbuf.h:169:1
+    RF: strbuf_addbuf at strbuf.c:308:1
+    CT: No info for this address
+    RF: No info for this address
+    RF: strbuf_addbuf at strbuf.c:0:0
+  Occurrences: 287
+
+Uncategorised
+  Events:
+    CT: strbuf_setlen at strbuf.h:161:1
+    RF: strbuf_setlen at strbuf.h:169:1
+    RF: strbuf_splice at strbuf.c:248:1
+    RF: strbuf_remove at strbuf.c:294:1
+    RF: get_next_component at abspath.c:49:1
+    CF: strbuf_realpath_1 at abspath.c:113:32
     CT: Jump to external code
     CF: Jump to external code
     CT: External code
     RF: Jump to external code
-    CF: git_config_parse_key at config.c:581:15
-    CT: xmallocz at wrapper.c:93:9
-    CF: xmallocz at wrapper.c:93:9
-    CT: do_xmallocz at wrapper.c:78:5 (TCWI)
-    CF: do_xmallocz at wrapper.c:85:8
-    CT: do_xmalloc at wrapper.c:46:1
-    CF: do_xmalloc at wrapper.c:49:6
-    CT: memory_limit_check at wrapper.c:18:1
-    RF: memory_limit_check at wrapper.c:35:1
-    CF: do_xmalloc at wrapper.c:51:8
+    CT: No info for this address
+    RF: No info for this address
+    RF: strbuf_splice at strbuf.c:0:0
+    RF: strbuf_remove at strbuf.c:0:0
+    RF: get_next_component at abspath.c:0:0
+  Occurrences: 60
+
+Uncategorised
+  Events:
+    CT: strbuf_setlen at strbuf.h:161:1
+    RF: strbuf_setlen at strbuf.h:169:1
+    RF: strbuf_splice at strbuf.c:248:1
+    RF: strbuf_remove at strbuf.c:294:1
+    RF: get_next_component at abspath.c:49:1
+    CF: strbuf_realpath_1 at abspath.c:115:32
     CT: Jump to external code
     CF: Jump to external code
     CT: External code
     RF: Jump to external code
-    RF: do_xmalloc at wrapper.c:68:1
-    RF: do_xmallocz at wrapper.c:89:1
-    RF: xmallocz at wrapper.c:0:0
-    CF: git_config_parse_key at config.c:590:9
-    CT: iskeychar at config.c:538:20
-    RF: iskeychar at config.c:539:1
-    [...145 more events...]
-  Occurrences: 1
+    CT: No info for this address
+    RF: No info for this address
+    RF: strbuf_splice at strbuf.c:0:0
+    RF: strbuf_remove at strbuf.c:0:0
+    RF: get_next_component at abspath.c:0:0
+  Occurrences: 18
 
 Uncategorised
   Events:
-    RF: configset_find_element at config.c:2309:1
-    RF: git_configset_get_value_multi at config.c:2430:1
-    RF: git_configset_get_value at config.c:2424:1
-    RF: repo_config_get_value at config.c:2573:1
-    RF: git_config_get_value at config.c:2685:1
-    CF: git_config_parse_key at config.c:581:15
-    CT: xmallocz at wrapper.c:93:9
-    CF: xmallocz at wrapper.c:93:9
-    CT: do_xmallocz at wrapper.c:78:5 (TCWI)
-    CF: do_xmallocz at wrapper.c:85:8
-    CT: do_xmalloc at wrapper.c:46:1
-    CF: do_xmalloc at wrapper.c:49:6
-    CT: memory_limit_check at wrapper.c:18:1
-    RF: memory_limit_check at wrapper.c:35:1
-    CF: do_xmalloc at wrapper.c:51:8
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    RF: do_xmalloc at wrapper.c:68:1
-    RF: do_xmallocz at wrapper.c:89:1
-    RF: xmallocz at wrapper.c:0:0
-    CF: git_config_parse_key at config.c:590:9
-    CT: iskeychar at config.c:538:20
-    RF: iskeychar at config.c:539:1
-    CF: git_config_parse_key at config.c:595:8
-    CT: sane_case at git-compat-util.h:1237:5
-    RF: sane_case at git-compat-util.h:1239:1
-    CF: git_config_parse_key at config.c:590:9
-    CT: iskeychar at config.c:538:20
-    [...140 more events...]
-  Occurrences: 12
+    CT: strbuf_setlen at strbuf.h:161:1
+    RF: strbuf_setlen at strbuf.h:169:1
+    RF: strbuf_splice at strbuf.c:248:1
+    RF: strbuf_remove at strbuf.c:294:1
+    RF: get_next_component at abspath.c:49:1
+    CT: No info for this address
+    RF: No info for this address
+    RF: strbuf_splice at strbuf.c:0:0
+    RF: strbuf_remove at strbuf.c:0:0
+    RF: get_next_component at abspath.c:0:0
+  Occurrences: 227
 
 Uncategorised
   Events:
-    RF: deactivate_tempfile at tempfile.c:128:1
-    CF: Jump to external code
-    CT: External code
-    RF: deactivate_tempfile at tempfile.c:0:0
-  Occurrences: 3
+    CT: strbuf_setlen at strbuf.h:161:1
+    RF: strbuf_setlen at strbuf.h:169:1
+    RF: strbuf_splice at strbuf.c:248:1
+    RF: strbuf_remove at strbuf.c:294:1
+    RF: get_root_part at abspath.c:62:1
+    CT: No info for this address
+    RF: No info for this address
+    RF: strbuf_splice at strbuf.c:0:0
+    RF: strbuf_remove at strbuf.c:0:0
+    RF: get_root_part at abspath.c:0:0
+  Occurrences: 72
+
+Uncategorised
+  Events:
+    CT: strbuf_setlen at strbuf.h:161:1
+    RF: strbuf_setlen at strbuf.h:169:1
+    RF: strip_last_component at abspath.c:28:1
+    CT: No info for this address
+    RF: No info for this address
+    RF: strip_last_component at abspath.c:0:0
+  Occurrences: 18
+
+Uncategorised
+  Events:
+    CT: xdg_config_home_for at path.c:1524:1
+    CF: xdg_config_home_for at path.c:1529:16
+    CT: No info for this address
+    CF: No info for this address
+  Occurrences: 57
 
 Uncategorised
   Events:
@@ -4076,58 +3096,33 @@ Uncategorised
 
 Uncategorised
   Events:
-    RF: do_xmalloc at wrapper.c:68:1
-    RF: xmalloc at wrapper.c:73:1
-    CF: attr_hashmap_add at attr.c:107:2
-    CT: memhash at hashmap.c:30:1
-    RF: memhash at hashmap.c:38:1
-    CF: attr_hashmap_add at attr.c:107:2
-    CT: hashmap_entry_init at hashmap.h:316:1
-    RF: hashmap_entry_init at hashmap.h:319:1
-    CF: attr_hashmap_add at attr.c:112:2
-    CT: hashmap_add at hashmap.c:232:1
-    CF: hashmap_add at hashmap.c:236:3
-    CT: alloc_table at hashmap.c:77:1
-    CF: alloc_table at hashmap.c:79:2
-    CT: xcalloc at wrapper.c:143:1
-    CF: xcalloc at wrapper.c:149:2
-    CT: memory_limit_check at wrapper.c:18:1
-    RF: memory_limit_check at wrapper.c:35:1
-    CF: xcalloc at wrapper.c:150:8
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    RF: xcalloc at wrapper.c:156:1
-    RF: alloc_table at hashmap.c:92:1
-    CF: hashmap_add at hashmap.c:238:6
-    CT: bucket at hashmap.c:106:1
-    RF: bucket at hashmap.c:108:1
-    RF: hashmap_add at hashmap.c:249:1
-    RF: attr_hashmap_add at attr.c:113:1
-    CF: git_attr_internal at attr.c:225:3
-    [...18 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Events:
     RF: git_configset_get_value at config.c:2424:1
     RF: No info for this address
   Occurrences: 38
 
 Uncategorised
   Events:
+    RF: git_configset_get_value at config.c:2424:1
+    RF: repo_config_get_value at config.c:2573:1
+    RF: git_config_get_value at config.c:2685:1
+    RF: No info for this address
+    RF: repo_config_get_value at config.c:0:0
+    RF: git_config_get_value at config.c:0:0
+  Occurrences: 13
+
+Uncategorised
+  Events:
     RF: git_is_dir_sep at git-compat-util.h:449:1
     CF: get_next_component at abspath.c:43:29
     CT: git_is_dir_sep at git-compat-util.h:447:1
-  Occurrences: 281
+  Occurrences: 283
 
 Uncategorised
   Events:
     RF: git_is_dir_sep at git-compat-util.h:449:1
     CF: normalize_path_copy_len at path.c:1177:7
     CT: git_is_dir_sep at git-compat-util.h:447:1
-  Occurrences: 43
+  Occurrences: 22
 
 Uncategorised
   Events:
@@ -4137,14 +3132,14 @@ Uncategorised
     RF: git_is_dir_sep at git-compat-util.h:449:1
     CF: normalize_path_copy_len at path.c:1179:11
     CT: git_is_dir_sep at git-compat-util.h:447:1
-  Occurrences: 72
+  Occurrences: 93
 
 Uncategorised
   Events:
     RF: git_is_dir_sep at git-compat-util.h:449:1
     CF: normalize_path_copy_len at path.c:1179:11
     CT: git_is_dir_sep at git-compat-util.h:447:1
-  Occurrences: 46
+  Occurrences: 26
 
 Uncategorised
   Events:
@@ -4154,14 +3149,14 @@ Uncategorised
     RF: git_is_dir_sep at git-compat-util.h:449:1
     CF: normalize_path_copy_len at path.c:1179:11
     CT: git_is_dir_sep at git-compat-util.h:447:1
-  Occurrences: 29
+  Occurrences: 31
 
 Uncategorised
   Events:
     RF: git_is_dir_sep at git-compat-util.h:449:1
     CF: strip_last_component at abspath.c:24:25
     CT: git_is_dir_sep at git-compat-util.h:447:1
-  Occurrences: 11
+  Occurrences: 17
 
 Uncategorised
   Events:
@@ -4201,130 +3196,33 @@ Uncategorised
 
 Uncategorised
   Events:
-    RF: strbuf_init at strbuf.c:60:1
-    RF: strbuf_detach at strbuf.c:79:1
-    RF: mkpathdup at path.c:512:1
     RF: xdg_config_home_for at path.c:1538:1
     RF: xdg_config_home at path.c:1543:1
-    RF: xrealloc at wrapper.c:140:1
-    RF: strbuf_grow at strbuf.c:102:1
-    CF: strbuf_vaddf at strbuf.c:397:8
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: strbuf_vaddf at strbuf.c:401:12
-    CT: strbuf_avail at strbuf.h:141:11
-    RF: strbuf_avail at strbuf.h:142:1
-    CF: strbuf_vaddf at strbuf.c:402:3
-    CT: strbuf_grow at strbuf.c:94:5
-    CF: strbuf_grow at strbuf.c:99:2
-    CT: st_mult at git-compat-util.h:992:6
-    RF: st_mult at git-compat-util.h:996:1
-    CF: strbuf_grow at strbuf.c:99:2
-    CT: xrealloc at wrapper.c:127:1
-    CF: xrealloc at wrapper.c:135:2
-    CT: memory_limit_check at wrapper.c:18:1
-    RF: memory_limit_check at wrapper.c:35:1
-    CF: xrealloc at wrapper.c:136:8
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    [...34 more events...]
-  Occurrences: 14
-
-Uncategorised
-  Events:
-    RF: strbuf_init at strbuf.c:60:1
-    RF: strbuf_detach at strbuf.c:79:1
-    RF: mkpathdup at path.c:512:1
-    RF: xdg_config_home_for at path.c:1538:1
-    RF: xdg_config_home at path.c:1543:1
-    RF: xrealloc at wrapper.c:140:1
-    RF: strbuf_grow at strbuf.c:102:1
-    CF: strbuf_vaddf at strbuf.c:397:8
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: strbuf_vaddf at strbuf.c:401:12
-    CT: strbuf_avail at strbuf.h:141:11
-    RF: strbuf_avail at strbuf.h:142:1
-    CF: strbuf_vaddf at strbuf.c:407:2
-    CT: No info for this address
     RF: No info for this address
-    RF: strbuf_vaddf at strbuf.c:408:1
-    CF: mkpathdup at path.c:510:2
-    CT: strbuf_cleanup_path at path.c:51:1
-    CF: strbuf_cleanup_path at path.c:52:21
-    CT: cleanup_path at path.c:43:6
-    CF: cleanup_path at path.c:43:6
-    CT: skip_prefix at git-compat-util.h:678:8
-    RF: skip_prefix at git-compat-util.h:684:1
-    RF: cleanup_path at path.c:48:1
-    RF: strbuf_cleanup_path at path.c:55:1
-    CF: mkpathdup at path.c:511:9
-    CT: strbuf_detach at strbuf.c:71:1
-    [...9 more events...]
-  Occurrences: 2
-
-Uncategorised
-  Events:
-    RF: strbuf_init at strbuf.c:60:1
-    RF: strbuf_detach at strbuf.c:79:1
-    RF: mkpathdup at path.c:512:1
-    RF: xdg_config_home_for at path.c:1538:1
-    RF: xdg_config_home at path.c:1543:1
-    RF: xrealloc at wrapper.c:140:1
-    RF: strbuf_grow at strbuf.c:102:1
-    CF: strbuf_vaddf at strbuf.c:403:9
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: strbuf_vaddf at strbuf.c:404:13
-    CT: strbuf_avail at strbuf.h:141:11
-    RF: strbuf_avail at strbuf.h:142:1
-    CF: strbuf_vaddf at strbuf.c:407:2
-    CT: No info for this address
-    RF: No info for this address
-    RF: strbuf_vaddf at strbuf.c:408:1
-    CF: mkpathdup at path.c:510:2
-    CT: strbuf_cleanup_path at path.c:51:1
-    CF: strbuf_cleanup_path at path.c:52:21
-    CT: cleanup_path at path.c:43:6
-    CF: cleanup_path at path.c:43:6
-    CT: skip_prefix at git-compat-util.h:678:8
-    RF: skip_prefix at git-compat-util.h:684:1
-    RF: cleanup_path at path.c:48:1
-    RF: strbuf_cleanup_path at path.c:55:1
-    CF: mkpathdup at path.c:511:9
-    CT: strbuf_detach at strbuf.c:71:1
-    [...9 more events...]
-  Occurrences: 41
+    RF: xdg_config_home at path.c:0:0
+  Occurrences: 57
 
 ## Divergences with unique coordinates by type
 
 TailCallWithoutInfo
-  Unique divergence coordinates: 107
+  Unique divergence coordinates: 2
 
 CoordinatesRemoved
-  Unique divergence coordinates: 95
+  Unique divergence coordinates: 107
 
 CoordinatesChanged
-  Unique divergence coordinates: 231
+  Unique divergence coordinates: 253
 
 LibraryCallRemoved
-  Unique divergence coordinates: 14
+  Unique divergence coordinates: 15
 
 ProgramCallRemoved
-  Unique divergence coordinates: 7
+  Unique divergence coordinates: 8
 
 Uncategorised
-  Unique divergence coordinates: 120
+  Unique divergence coordinates: 92
 
 ## Summary
 
-574 unique divergence coordinates
-91723 divergence occurrences
+477 unique divergence coordinates
+89693 divergence occurrences
