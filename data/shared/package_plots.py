@@ -59,9 +59,11 @@ def load_data():
 
   read_run("clang/13/O1", ("Clang", "13", "O1"))
   read_run("clang/13/O2", ("Clang", "13", "O2"))
+  read_run("clang/18/O1", ("Clang", "18", "O1"))
   read_run("gcc/11/O1", ("GCC", "11", "O1"))
   # Lots of "no info for this address", skipping for now
   # read_run("gcc/11/O2", ("GCC", "11", "O2"))
+  read_run("gcc/14/O1", ("GCC", "14", "O1"))
 
   def df_keys(df):
     keys = df.variant
@@ -85,39 +87,6 @@ def load_data():
 
 def normalise(df):
   df["Norm. Unique Events"] = df["Unique Events"] / df.groupby(["Variant"])["Unique Events"].transform("max")
-
-def divergences_by_compiler(df):
-  df = df.copy()
-  df = df[df["Divergence Type"] != "before"]
-  variants = df.index.get_level_values("Variant")
-  df = df[variants.str.contains("O1")]
-  families = df.index.get_level_values("Family")
-  versions = df.index.get_level_values("Version")
-  df["Compiler"] = families + " " + versions
-  g = sns.displot(
-    df,
-    x="Compiler",
-    weights="Norm. Unique Events",
-    hue="Divergence Type",
-    kind="hist",
-    multiple="stack",
-    height=3.5,
-  )
-  sns.move_legend(
-    g,
-    "center right",
-    bbox_to_anchor=(1, 0.525),
-    frameon=True,
-    shadow=True,
-    title=None,
-  )
-  ax = g.facet_axis(0, 0)
-  ax.grid(False, "major", "x")
-  g.set(
-    title=f"Divergent call tree trace events during {friendly_name} executions at O1",
-    xlabel="Compiler",
-    ylabel="Fraction of unique trace events",
-  )
 
 def divergences_by_optimisation_level(df):
   df = df.copy()
@@ -151,5 +120,40 @@ def divergences_by_optimisation_level(df):
   g.set(
     title=f"Divergent call tree trace events during {friendly_name} executions\nat various optimisation levels",
     xlabel="Compiler and optimisation level",
+    ylabel="Fraction of unique trace events",
+  )
+
+def divergences_by_version(df):
+  df = df.copy()
+  df = df[df["Divergence Type"] != "before"]
+  variants = df.index.get_level_values("Variant")
+  df = df[variants.str.contains("O1")]
+  families = df.index.get_level_values("Family")
+  versions = df.index.get_level_values("Version")
+  df["Compiler"] = families + " " + versions
+  g = sns.displot(
+    df,
+    x="Compiler",
+    weights="Norm. Unique Events",
+    hue="Divergence Type",
+    kind="hist",
+    multiple="stack",
+    height=3.5,
+  )
+  sns.move_legend(
+    g,
+    "center right",
+    bbox_to_anchor=(1, 0.525),
+    frameon=True,
+    shadow=True,
+    title=None,
+  )
+  ax = g.facet_axis(0, 0)
+  ax.grid(False, "major", "x")
+  # for tick in ax.xaxis.get_major_ticks()[1::2]:
+  #   tick.set_pad(12)
+  g.set(
+    title=f"Divergent call tree trace events during {friendly_name} executions\nacross compiler versions at O1",
+    xlabel="Compiler",
     ylabel="Fraction of unique trace events",
   )
