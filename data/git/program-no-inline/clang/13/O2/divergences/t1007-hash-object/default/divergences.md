@@ -802,247 +802,247 @@ CoordinatesRemoved
     RF: xstrdup_or_null at git-compat-util.h:0:0
   Occurrences: 108
 
-CoordinatesChanged
-  Events:
-    CF: decode_tree_entry at tree-walk.c:33:3
-    CF: decode_tree_entry at tree-walk.c:0:0
-  Occurrences: 1
-
-CoordinatesChanged
-  Events:
-    CF: decode_tree_entry at tree-walk.c:39:3
-    CF: decode_tree_entry at tree-walk.c:0:0
-  Occurrences: 1
-
-CoordinatesChanged
-  Events:
-    CF: decode_tree_entry at tree-walk.c:43:3
-    CF: decode_tree_entry at tree-walk.c:0:0
-  Occurrences: 1
-
-CoordinatesChanged
-  Events:
-    CF: for_each_file_in_pack_dir at packfile.c:840:2
-    CF: for_each_file_in_pack_dir at packfile.c:0:4
-  Occurrences: 2
-
-CoordinatesChanged
-  Events:
-    CF: init_db at init-db.c:467:4
-    CF: init_db at init-db.c:0:0
-  Occurrences: 6
-
-CoordinatesChanged
-  Events:
-    CF: setup_git_directory_gently at setup.c:1574:3
-    CF: setup_git_directory_gently at setup.c:0:12
-  Occurrences: 18
-
-CoordinatesChanged
-  Events:
-    CF: setup_path at exec-cmd.c:314:3
-    CF: setup_path at exec-cmd.c:0:0
-  Occurrences: 26
-
-CoordinatesChanged
-  Events:
-    CF: store_create_section at config.c:2990:3
-    CF: store_create_section at config.c:0:0
-  Occurrences: 6
-
-CoordinatesChanged
-  Events:
-    CF: string_list_split at string-list.c:296:4
-    CF: string_list_split at string-list.c:0:21
-  Occurrences: 30
-
-CoordinatesChanged
-  Events:
-    CF: usage_with_options_internal at parse-options.c:1096:5
-    CF: usage_with_options_internal at parse-options.c:0:3
-  Occurrences: 12
-
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     CT: free_chunkfile at chunk-format.c:34:0
     CT: free_chunkfile at chunk-format.c:35:7
   Occurrences: 2
 
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     CT: free_preprocessed_options at parse-options.c:759:0
     CT: free_preprocessed_options at parse-options.c:762:7
   Occurrences: 26
 
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     CT: move_array at git-compat-util.h:1105:0
     CT: move_array at git-compat-util.h:1106:6
   Occurrences: 26
 
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     CT: push_stack at attr.c:831:0
     CT: push_stack at attr.c:832:6
   Occurrences: 8
 
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     CT: type_name at object.c:32:0
     CT: type_name at object.c:33:11
   Occurrences: 4
 
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     CT: xsize_t at git-compat-util.h:1173:0
     CT: xsize_t at git-compat-util.h:1174:10
   Occurrences: 35
 
-CoordinatesChanged
-  Events:
-    RF: chdir_notify_reparent at chdir-notify.c:49:1
-    RF: chdir_notify_reparent at chdir-notify.c:0:0
-  Occurrences: 18
-
-CoordinatesChanged
-  Events:
-    RF: check_and_freshen_local at object-file.c:979:2
-    RF: check_and_freshen_local at object-file.c:0:0
-  Occurrences: 2
-
-CoordinatesChanged
-  Events:
-    RF: create_tmpfile at object-file.c:1953:1
-    RF: create_tmpfile at object-file.c:0:0
-  Occurrences: 1
-
-CoordinatesChanged
-  Events:
-    RF: empty_ref_iterator_advance at iterator.c:51:2
-    RF: empty_ref_iterator_advance at iterator.c:0:0
-  Occurrences: 6
-
-CoordinatesChanged
-  Events:
-    RF: git_config at config.c:2675:1
-    RF: git_config at config.c:0:0
-  Occurrences: 31
-
-CoordinatesChanged
-  Events:
-    RF: git_config_clear at config.c:2680:1
-    RF: git_config_clear at config.c:0:0
-  Occurrences: 12
-
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     RF: git_config_from_parameters at config.c:777:2
     RF: git_config_from_parameters at config.c:778:1
   Occurrences: 30
 
-CoordinatesChanged
-  Events:
-    RF: git_config_get_int at config.c:2704:2
-    RF: git_config_get_int at config.c:0:0
-  Occurrences: 6
-
-CoordinatesChanged
-  Events:
-    RF: git_config_get_value at config.c:2684:2
-    RF: git_config_get_value at config.c:0:0
-  Occurrences: 13
-
-CoordinatesChanged
-  Events:
-    RF: git_config_set_multivar_in_file_gently at config.c:3441:2
-    RF: git_config_set_multivar_in_file_gently at config.c:3447:1
-  Occurrences: 36
-
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     RF: git_deflate_init at zlib.c:167:3
     RF: git_deflate_init at zlib.c:170:1
   Occurrences: 1
 
-CoordinatesChanged
-  Events:
-    RF: hold_lock_file_for_update at lockfile.h:192:2
-    RF: hold_lock_file_for_update at lockfile.h:0:0
-  Occurrences: 36
-
-CoordinatesChanged
-  Events:
-    RF: is_null_oid at hash.h:258:2
-    RF: is_null_oid at hash.h:0:0
-  Occurrences: 6
-
-CoordinatesChanged
-  Events:
-    RF: oid_to_hex at hex.c:164:2
-    RF: oid_to_hex at hex.c:0:0
-  Occurrences: 7
-
-CoordinatesChanged
-  Events:
-    RF: parse_long_opt at parse-options.c:407:1
-    RF: parse_long_opt at parse-options.c:0:0
-  Occurrences: 4
-
-CoordinatesChanged
-  Events:
-    RF: parse_short_opt at parse-options.c:283:1
-    RF: parse_short_opt at parse-options.c:0:0
-  Occurrences: 9
-
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     RF: read_ref_internal at files-backend.c:460:2
     RF: read_ref_internal at files-backend.c:461:1
   Occurrences: 12
 
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     RF: refs_verify_refname_available at refs.c:2424:2
     RF: refs_verify_refname_available at refs.c:2425:1
   Occurrences: 6
 
-CoordinatesChanged
-  Events:
-    RF: set_git_work_tree at environment.c:270:1
-    RF: set_git_work_tree at environment.c:0:0
-  Occurrences: 24
-
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     RF: store_create_section at config.c:2993:2
     RF: store_create_section at config.c:2994:1
   Occurrences: 6
 
-CoordinatesChanged
-  Events:
-    RF: strbuf_addstr at strbuf.h:306:1
-    RF: strbuf_addstr at strbuf.h:0:0
-  Occurrences: 985
-
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     RF: strbuf_realpath_1 at abspath.c:199:2
     RF: strbuf_realpath_1 at abspath.c:200:1
   Occurrences: 72
 
-CoordinatesChanged
+CoordinatesChangedLarge
+  Events:
+    CF: decode_tree_entry at tree-walk.c:33:3
+    CF: decode_tree_entry at tree-walk.c:0:0
+  Occurrences: 1
+
+CoordinatesChangedLarge
+  Events:
+    CF: decode_tree_entry at tree-walk.c:39:3
+    CF: decode_tree_entry at tree-walk.c:0:0
+  Occurrences: 1
+
+CoordinatesChangedLarge
+  Events:
+    CF: decode_tree_entry at tree-walk.c:43:3
+    CF: decode_tree_entry at tree-walk.c:0:0
+  Occurrences: 1
+
+CoordinatesChangedLarge
+  Events:
+    CF: for_each_file_in_pack_dir at packfile.c:840:2
+    CF: for_each_file_in_pack_dir at packfile.c:0:4
+  Occurrences: 2
+
+CoordinatesChangedLarge
+  Events:
+    CF: init_db at init-db.c:467:4
+    CF: init_db at init-db.c:0:0
+  Occurrences: 6
+
+CoordinatesChangedLarge
+  Events:
+    CF: setup_git_directory_gently at setup.c:1574:3
+    CF: setup_git_directory_gently at setup.c:0:12
+  Occurrences: 18
+
+CoordinatesChangedLarge
+  Events:
+    CF: setup_path at exec-cmd.c:314:3
+    CF: setup_path at exec-cmd.c:0:0
+  Occurrences: 26
+
+CoordinatesChangedLarge
+  Events:
+    CF: store_create_section at config.c:2990:3
+    CF: store_create_section at config.c:0:0
+  Occurrences: 6
+
+CoordinatesChangedLarge
+  Events:
+    CF: string_list_split at string-list.c:296:4
+    CF: string_list_split at string-list.c:0:21
+  Occurrences: 30
+
+CoordinatesChangedLarge
+  Events:
+    CF: usage_with_options_internal at parse-options.c:1096:5
+    CF: usage_with_options_internal at parse-options.c:0:3
+  Occurrences: 12
+
+CoordinatesChangedLarge
+  Events:
+    RF: chdir_notify_reparent at chdir-notify.c:49:1
+    RF: chdir_notify_reparent at chdir-notify.c:0:0
+  Occurrences: 18
+
+CoordinatesChangedLarge
+  Events:
+    RF: check_and_freshen_local at object-file.c:979:2
+    RF: check_and_freshen_local at object-file.c:0:0
+  Occurrences: 2
+
+CoordinatesChangedLarge
+  Events:
+    RF: create_tmpfile at object-file.c:1953:1
+    RF: create_tmpfile at object-file.c:0:0
+  Occurrences: 1
+
+CoordinatesChangedLarge
+  Events:
+    RF: empty_ref_iterator_advance at iterator.c:51:2
+    RF: empty_ref_iterator_advance at iterator.c:0:0
+  Occurrences: 6
+
+CoordinatesChangedLarge
+  Events:
+    RF: git_config at config.c:2675:1
+    RF: git_config at config.c:0:0
+  Occurrences: 31
+
+CoordinatesChangedLarge
+  Events:
+    RF: git_config_clear at config.c:2680:1
+    RF: git_config_clear at config.c:0:0
+  Occurrences: 12
+
+CoordinatesChangedLarge
+  Events:
+    RF: git_config_get_int at config.c:2704:2
+    RF: git_config_get_int at config.c:0:0
+  Occurrences: 6
+
+CoordinatesChangedLarge
+  Events:
+    RF: git_config_get_value at config.c:2684:2
+    RF: git_config_get_value at config.c:0:0
+  Occurrences: 13
+
+CoordinatesChangedLarge
+  Events:
+    RF: git_config_set_multivar_in_file_gently at config.c:3441:2
+    RF: git_config_set_multivar_in_file_gently at config.c:3447:1
+  Occurrences: 36
+
+CoordinatesChangedLarge
+  Events:
+    RF: hold_lock_file_for_update at lockfile.h:192:2
+    RF: hold_lock_file_for_update at lockfile.h:0:0
+  Occurrences: 36
+
+CoordinatesChangedLarge
+  Events:
+    RF: is_null_oid at hash.h:258:2
+    RF: is_null_oid at hash.h:0:0
+  Occurrences: 6
+
+CoordinatesChangedLarge
+  Events:
+    RF: oid_to_hex at hex.c:164:2
+    RF: oid_to_hex at hex.c:0:0
+  Occurrences: 7
+
+CoordinatesChangedLarge
+  Events:
+    RF: parse_long_opt at parse-options.c:407:1
+    RF: parse_long_opt at parse-options.c:0:0
+  Occurrences: 4
+
+CoordinatesChangedLarge
+  Events:
+    RF: parse_short_opt at parse-options.c:283:1
+    RF: parse_short_opt at parse-options.c:0:0
+  Occurrences: 9
+
+CoordinatesChangedLarge
+  Events:
+    RF: set_git_work_tree at environment.c:270:1
+    RF: set_git_work_tree at environment.c:0:0
+  Occurrences: 24
+
+CoordinatesChangedLarge
+  Events:
+    RF: strbuf_addstr at strbuf.h:306:1
+    RF: strbuf_addstr at strbuf.h:0:0
+  Occurrences: 985
+
+CoordinatesChangedLarge
   Events:
     RF: strbuf_remove at strbuf.c:294:1
     RF: strbuf_remove at strbuf.c:0:0
   Occurrences: 377
 
-CoordinatesChanged
+CoordinatesChangedLarge
   Events:
     RF: xdg_config_home at path.c:1542:2
     RF: xdg_config_home at path.c:0:0
   Occurrences: 57
 
-CoordinatesChanged
+CoordinatesChangedLarge
   Events:
     RF: xopen at wrapper.c:186:4
     RF: xopen at wrapper.c:199:1
@@ -1661,8 +1661,11 @@ Uncategorised
 CoordinatesRemoved
   Unique divergence coordinates: 133
 
-CoordinatesChanged
-  Unique divergence coordinates: 41
+CoordinatesChangedSmall
+  Unique divergence coordinates: 12
+
+CoordinatesChangedLarge
+  Unique divergence coordinates: 29
 
 LibraryCallRemoved
   Unique divergence coordinates: 36

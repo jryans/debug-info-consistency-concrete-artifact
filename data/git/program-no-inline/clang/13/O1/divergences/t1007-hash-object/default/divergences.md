@@ -154,121 +154,121 @@ CoordinatesRemoved
     CF: xdg_config_home_for at path.c:0:0
   Occurrences: 57
 
-CoordinatesChanged
-  Events:
-    CF: for_each_file_in_pack_dir at packfile.c:840:2
-    CF: for_each_file_in_pack_dir at packfile.c:0:4
-  Occurrences: 2
-
-CoordinatesChanged
-  Events:
-    CF: setup_git_directory_gently at setup.c:1574:3
-    CF: setup_git_directory_gently at setup.c:0:12
-  Occurrences: 18
-
-CoordinatesChanged
-  Events:
-    CF: store_create_section at config.c:2990:3
-    CF: store_create_section at config.c:0:3
-  Occurrences: 6
-
-CoordinatesChanged
-  Events:
-    CF: string_list_split at string-list.c:296:4
-    CF: string_list_split at string-list.c:0:21
-  Occurrences: 30
-
-CoordinatesChanged
-  Events:
-    CF: usage_with_options_internal at parse-options.c:1096:5
-    CF: usage_with_options_internal at parse-options.c:0:3
-  Occurrences: 12
-
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     CT: free_chunkfile at chunk-format.c:34:0
     CT: free_chunkfile at chunk-format.c:35:7
   Occurrences: 2
 
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     CT: free_preprocessed_options at parse-options.c:759:0
     CT: free_preprocessed_options at parse-options.c:762:7
   Occurrences: 26
 
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     CT: move_array at git-compat-util.h:1105:0
     CT: move_array at git-compat-util.h:1106:6
   Occurrences: 26
 
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     CT: push_stack at attr.c:831:0
     CT: push_stack at attr.c:832:6
   Occurrences: 8
 
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     CT: type_name at object.c:32:0
     CT: type_name at object.c:33:11
   Occurrences: 4
 
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     CT: xsize_t at git-compat-util.h:1173:0
     CT: xsize_t at git-compat-util.h:1174:10
   Occurrences: 35
 
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     CT: xstrdup_or_null at git-compat-util.h:1168:0
     CT: xstrdup_or_null at git-compat-util.h:1169:9
   Occurrences: 288
 
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     RF: git_config_from_parameters at config.c:777:2
     RF: git_config_from_parameters at config.c:778:1
   Occurrences: 30
 
-CoordinatesChanged
-  Events:
-    RF: git_config_set_multivar_in_file_gently at config.c:3441:2
-    RF: git_config_set_multivar_in_file_gently at config.c:3447:1
-  Occurrences: 36
-
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     RF: git_deflate_init at zlib.c:167:3
     RF: git_deflate_init at zlib.c:170:1
   Occurrences: 1
 
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     RF: read_ref_internal at files-backend.c:460:2
     RF: read_ref_internal at files-backend.c:461:1
   Occurrences: 12
 
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     RF: refs_verify_refname_available at refs.c:2424:2
     RF: refs_verify_refname_available at refs.c:2425:1
   Occurrences: 6
 
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     RF: store_create_section at config.c:2993:2
     RF: store_create_section at config.c:2994:1
   Occurrences: 6
 
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     RF: strbuf_realpath_1 at abspath.c:199:2
     RF: strbuf_realpath_1 at abspath.c:200:1
   Occurrences: 72
 
-CoordinatesChanged
+CoordinatesChangedLarge
+  Events:
+    CF: for_each_file_in_pack_dir at packfile.c:840:2
+    CF: for_each_file_in_pack_dir at packfile.c:0:4
+  Occurrences: 2
+
+CoordinatesChangedLarge
+  Events:
+    CF: setup_git_directory_gently at setup.c:1574:3
+    CF: setup_git_directory_gently at setup.c:0:12
+  Occurrences: 18
+
+CoordinatesChangedLarge
+  Events:
+    CF: store_create_section at config.c:2990:3
+    CF: store_create_section at config.c:0:3
+  Occurrences: 6
+
+CoordinatesChangedLarge
+  Events:
+    CF: string_list_split at string-list.c:296:4
+    CF: string_list_split at string-list.c:0:21
+  Occurrences: 30
+
+CoordinatesChangedLarge
+  Events:
+    CF: usage_with_options_internal at parse-options.c:1096:5
+    CF: usage_with_options_internal at parse-options.c:0:3
+  Occurrences: 12
+
+CoordinatesChangedLarge
+  Events:
+    RF: git_config_set_multivar_in_file_gently at config.c:3441:2
+    RF: git_config_set_multivar_in_file_gently at config.c:3447:1
+  Occurrences: 36
+
+CoordinatesChangedLarge
   Events:
     RF: xopen at wrapper.c:186:4
     RF: xopen at wrapper.c:199:1
@@ -765,8 +765,11 @@ ProgramCallRemoved
 CoordinatesRemoved
   Unique divergence coordinates: 25
 
-CoordinatesChanged
-  Unique divergence coordinates: 20
+CoordinatesChangedSmall
+  Unique divergence coordinates: 13
+
+CoordinatesChangedLarge
+  Unique divergence coordinates: 7
 
 LibraryCallRemoved
   Unique divergence coordinates: 40

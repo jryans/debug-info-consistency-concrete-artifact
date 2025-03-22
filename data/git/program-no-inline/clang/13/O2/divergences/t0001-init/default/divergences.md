@@ -2188,847 +2188,847 @@ CoordinatesRemoved
     RF: xstrdup_or_null at git-compat-util.h:0:0
   Occurrences: 536
 
-CoordinatesChanged
-  Events:
-    CF: add_to_trie at path.c:228:11
-    CF: add_to_trie at path.c:203:11
-  Occurrences: 4
-
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     CF: add_to_trie at path.c:228:11
     CF: add_to_trie at path.c:230:12
   Occurrences: 14
 
-CoordinatesChanged
-  Events:
-    CF: apply_save_autostash at sequencer.c:4484:3
-    CF: apply_save_autostash at sequencer.c:0:2
-  Occurrences: 5
-
-CoordinatesChanged
-  Events:
-    CF: cmd_clone at clone.c:1031:4
-    CF: cmd_clone at clone.c:0:0
-  Occurrences: 1
-
-CoordinatesChanged
-  Events:
-    CF: cmd_init_db at init-db.c:563:3
-    CF: cmd_init_db at init-db.c:0:0
-  Occurrences: 1
-
-CoordinatesChanged
-  Events:
-    CF: cmd_init_db at init-db.c:594:6
-    CF: cmd_init_db at init-db.c:0:0
-  Occurrences: 2
-
-CoordinatesChanged
-  Events:
-    CF: cmd_init_db at init-db.c:599:6
-    CF: cmd_init_db at init-db.c:0:0
-  Occurrences: 1
-
-CoordinatesChanged
-  Events:
-    CF: cmd_init_db at init-db.c:630:3
-    CF: cmd_init_db at init-db.c:0:0
-  Occurrences: 3
-
-CoordinatesChanged
-  Events:
-    CF: create_branch at branch.c:611:9
-    CF: create_branch at branch.c:0:23
-  Occurrences: 1
-
-CoordinatesChanged
-  Events:
-    CF: die_initial_contact at connect.c:63:3
-    CF: die_initial_contact at connect.c:0:0
-  Occurrences: 1
-
-CoordinatesChanged
-  Events:
-    CF: for_each_file_in_pack_dir at packfile.c:840:2
-    CF: for_each_file_in_pack_dir at packfile.c:0:4
-  Occurrences: 19
-
-CoordinatesChanged
-  Events:
-    CF: format_commit_one at pretty.c:1467:3
-    CF: format_commit_one at pretty.c:0:21
-  Occurrences: 4
-
-CoordinatesChanged
-  Events:
-    CF: init_db at init-db.c:462:4
-    CF: init_db at init-db.c:0:0
-  Occurrences: 7
-
-CoordinatesChanged
-  Events:
-    CF: init_db at init-db.c:467:4
-    CF: init_db at init-db.c:0:0
-  Occurrences: 48
-
-CoordinatesChanged
-  Events:
-    CF: log_ref_setup at files-backend.c:1671:2
-    CF: log_ref_setup at files-backend.c:0:3
-  Occurrences: 16
-
-CoordinatesChanged
-  Events:
-    CF: lookup_fsmonitor_settings at fsmonitor-settings.c:141:3
-    CF: lookup_fsmonitor_settings at fsmonitor-settings.c:0:3
-  Occurrences: 9
-
-CoordinatesChanged
-  Events:
-    CF: msort_with_tmp at qsort_s.c:31:7
-    CF: msort_with_tmp at qsort_s.c:44:3
-  Occurrences: 29
-
-CoordinatesChanged
-  Events:
-    CF: msort_with_tmp at qsort_s.c:32:4
-    CF: msort_with_tmp at qsort_s.c:37:4
-  Occurrences: 286
-
-CoordinatesChanged
-  Events:
-    CF: msort_with_tmp at qsort_s.c:37:4
-    CF: msort_with_tmp at qsort_s.c:32:4
-  Occurrences: 212
-
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     CF: msort_with_tmp at qsort_s.c:45:2
     CF: msort_with_tmp at qsort_s.c:44:3
   Occurrences: 2
 
-CoordinatesChanged
-  Events:
-    CF: parse_refspec at refspec.c:119:13
-    CF: parse_refspec at refspec.c:0:0
-  Occurrences: 2
-
-CoordinatesChanged
-  Events:
-    CF: prep_childenv at run-command.c:455:4
-    CF: prep_childenv at run-command.c:0:0
-  Occurrences: 1565
-
-CoordinatesChanged
-  Events:
-    CF: print_preparing_worktree_line at worktree.c:557:3
-    CF: print_preparing_worktree_line at worktree.c:0:0
-  Occurrences: 1
-
-CoordinatesChanged
-  Events:
-    CF: repair_gitfile at worktree.c:566:12
-    CF: repair_gitfile at worktree.c:0:11
-  Occurrences: 2
-
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     CF: repo_init_revisions at revision.c:1901:18
     CF: repo_init_revisions at revision.c:1901:26
   Occurrences: 8
 
-CoordinatesChanged
-  Events:
-    CF: setup_explicit_git_dir at setup.c:975:2
-    CF: setup_explicit_git_dir at setup.c:0:30
-  Occurrences: 2
-
-CoordinatesChanged
-  Events:
-    CF: setup_explicit_git_dir at setup.c:976:2
-    CF: setup_explicit_git_dir at setup.c:0:30
-  Occurrences: 2
-
-CoordinatesChanged
-  Events:
-    CF: setup_git_directory_gently at setup.c:1571:3
-    CF: setup_git_directory_gently at setup.c:0:12
-  Occurrences: 3
-
-CoordinatesChanged
-  Events:
-    CF: setup_git_directory_gently at setup.c:1574:3
-    CF: setup_git_directory_gently at setup.c:0:12
-  Occurrences: 77
-
-CoordinatesChanged
-  Events:
-    CF: setup_path at exec-cmd.c:314:3
-    CF: setup_path at exec-cmd.c:0:0
-  Occurrences: 153
-
-CoordinatesChanged
-  Events:
-    CF: start_command at run-command.c:824:8
-    CF: start_command at run-command.c:828:7
-  Occurrences: 1
-
-CoordinatesChanged
-  Events:
-    CF: store_create_section at config.c:2990:3
-    CF: store_create_section at config.c:0:0
-  Occurrences: 62
-
-CoordinatesChanged
-  Events:
-    CF: string_list_split at string-list.c:296:4
-    CF: string_list_split at string-list.c:0:21
-  Occurrences: 87
-
-CoordinatesChanged
-  Events:
-    CF: xdl_diff at xdiffi.c:1086:2
-    CF: xdl_diff at xdiffi.c:0:7
-  Occurrences: 4
-
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     CF: xrealloc at wrapper.c:135:2
     CF: xrealloc at wrapper.c:136:8
   Occurrences: 1
 
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     CT: add_untracked at dir.c:2364:0
     CT: add_untracked at dir.c:2365:7
   Occurrences: 4
 
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     CT: close_commit_graph_one at commit-graph.c:708:0
     CT: close_commit_graph_one at commit-graph.c:709:7
   Occurrences: 4
 
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     CT: copy_array at git-compat-util.h:1097:0
     CT: copy_array at git-compat-util.h:1098:6
   Occurrences: 12
 
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     CT: diff_free_filespec_data at diff.c:4175:0
     CT: diff_free_filespec_data at diff.c:4176:7
   Occurrences: 16
 
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     CT: fill_filespec at diff.c:3898:0
     CT: fill_filespec at diff.c:3899:6
   Occurrences: 4
 
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     CT: free_chunkfile at chunk-format.c:34:0
     CT: free_chunkfile at chunk-format.c:35:7
   Occurrences: 19
 
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     CT: free_preprocessed_options at parse-options.c:759:0
     CT: free_preprocessed_options at parse-options.c:762:7
   Occurrences: 145
 
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     CT: get_oid_with_context at object-name.c:2065:0
     CT: get_oid_with_context at object-name.c:2066:38
   Occurrences: 22
 
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     CT: get_worktree_git_dir at worktree.c:150:0
     CT: get_worktree_git_dir at worktree.c:151:7
   Occurrences: 12
 
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     CT: invalidate_ce_path at unpack-trees.c:2255:0
     CT: invalidate_ce_path at unpack-trees.c:2256:7
   Occurrences: 1
 
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     CT: is_encoding_utf8 at utf8.c:423:0
     CT: is_encoding_utf8 at utf8.c:424:7
   Occurrences: 12
 
-CoordinatesChanged
-  Events:
-    CT: is_urlschemechar at url.c:5:0
-    CT: is_urlschemechar at url.c:14:20
-  Occurrences: 3
-
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     CT: list_objects_filter_release at list-objects-filter-options.c:326:0
     CT: list_objects_filter_release at list-objects-filter-options.c:329:7
   Occurrences: 8
 
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     CT: looks_like_command_line_option at path.c:1519:0
     CT: looks_like_command_line_option at path.c:1520:9
   Occurrences: 1
 
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     CT: message_is_empty at sequencer.c:1143:0
     CT: message_is_empty at sequencer.c:1144:19
   Occurrences: 4
 
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     CT: move_array at git-compat-util.h:1105:0
     CT: move_array at git-compat-util.h:1106:6
   Occurrences: 162
 
-CoordinatesChanged
-  Events:
-    CT: msort_with_tmp at qsort_s.c:12:0
-    CT: msort_with_tmp at qsort_s.c:17:8
-  Occurrences: 3122
-
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     CT: push_stack at attr.c:831:0
     CT: push_stack at attr.c:832:6
   Occurrences: 65
 
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     CT: reflog_walk_info_release at reflog-walk.c:127:0
     CT: reflog_walk_info_release at reflog-walk.c:130:7
   Occurrences: 8
 
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     CT: release_revisions_mailmap at revision.c:3036:0
     CT: release_revisions_mailmap at revision.c:3037:7
   Occurrences: 8
 
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     CT: release_revisions_topo_walk_info at revision.c:3574:0
     CT: release_revisions_topo_walk_info at revision.c:3575:7
   Occurrences: 8
 
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     CT: type_name at object.c:32:0
     CT: type_name at object.c:33:11
   Occurrences: 31
 
-CoordinatesChanged
-  Events:
-    CT: xdl_hash_record at xutils.c:297:0
-    CT: xdl_hash_record at xutils.c:301:12
-  Occurrences: 4
-
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     CT: xsize_t at git-compat-util.h:1173:0
     CT: xsize_t at git-compat-util.h:1174:10
   Occurrences: 347
 
-CoordinatesChanged
-  Events:
-    RF: add_config at add.c:409:1
-    RF: add_config at add.c:0:0
-  Occurrences: 24
-
-CoordinatesChanged
-  Events:
-    RF: add_name_hash at name-hash.c:633:1
-    RF: add_name_hash at name-hash.c:0:0
-  Occurrences: 4
-
-CoordinatesChanged
-  Events:
-    RF: cb_each at cbtree.c:135:1
-    RF: cb_each at cbtree.c:0:0
-  Occurrences: 11
-
-CoordinatesChanged
-  Events:
-    RF: chdir_notify_reparent at chdir-notify.c:49:1
-    RF: chdir_notify_reparent at chdir-notify.c:0:0
-  Occurrences: 270
-
-CoordinatesChanged
-  Events:
-    RF: check_and_freshen_local at object-file.c:979:2
-    RF: check_and_freshen_local at object-file.c:0:0
-  Occurrences: 12
-
-CoordinatesChanged
-  Events:
-    RF: child_process_clear at run-command.c:25:1
-    RF: child_process_clear at run-command.c:0:0
-  Occurrences: 19
-
-CoordinatesChanged
-  Events:
-    RF: cleanup_message at sequencer.c:1135:1
-    RF: cleanup_message at sequencer.c:0:0
-  Occurrences: 4
-
-CoordinatesChanged
-  Events:
-    RF: create_tmpfile at object-file.c:1953:1
-    RF: create_tmpfile at object-file.c:0:0
-  Occurrences: 12
-
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     RF: diffcore_rename_extended at diffcore-rename.c:1711:2
     RF: diffcore_rename_extended at diffcore-rename.c:1712:1
   Occurrences: 4
 
-CoordinatesChanged
-  Events:
-    RF: do_lookup_replace_object at replace-object.c:80:4
-    RF: do_lookup_replace_object at replace-object.c:84:1
-  Occurrences: 75
-
-CoordinatesChanged
-  Events:
-    RF: empty_ref_iterator_advance at iterator.c:51:2
-    RF: empty_ref_iterator_advance at iterator.c:0:0
-  Occurrences: 75
-
-CoordinatesChanged
-  Events:
-    RF: end_odb_transaction at bulk-checkin.c:381:1
-    RF: end_odb_transaction at bulk-checkin.c:0:0
-  Occurrences: 12
-
-CoordinatesChanged
-  Events:
-    RF: ensure_correct_sparsity at sparse-index.c:440:1
-    RF: ensure_correct_sparsity at sparse-index.c:0:0
-  Occurrences: 4
-
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     RF: files_transaction_prepare at files-backend.c:2835:2
     RF: files_transaction_prepare at files-backend.c:2836:1
   Occurrences: 11
 
-CoordinatesChanged
-  Events:
-    RF: for_each_replace_ref at refs.c:1641:2
-    RF: for_each_replace_ref at refs.c:0:0
-  Occurrences: 13
-
-CoordinatesChanged
-  Events:
-    RF: get_progress at unpack-trees.c:361:1
-    RF: get_progress at unpack-trees.c:0:0
-  Occurrences: 1
-
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     RF: get_value at config.c:403:2
     RF: get_value at config.c:404:1
   Occurrences: 25
 
-CoordinatesChanged
-  Events:
-    RF: git_clone_config at clone.c:784:2
-    RF: git_clone_config at clone.c:0:0
-  Occurrences: 5
-
-CoordinatesChanged
-  Events:
-    RF: git_color_default_config at color.c:434:1
-    RF: git_color_default_config at color.c:0:0
-  Occurrences: 42
-
-CoordinatesChanged
-  Events:
-    RF: git_commit_config at commit.c:1624:1
-    RF: git_commit_config at commit.c:0:0
-  Occurrences: 1
-
-CoordinatesChanged
-  Events:
-    RF: git_config at config.c:2675:1
-    RF: git_config at config.c:0:0
-  Occurrences: 165
-
-CoordinatesChanged
-  Events:
-    RF: git_config_clear at config.c:2680:1
-    RF: git_config_clear at config.c:0:0
-  Occurrences: 132
-
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     RF: git_config_copy_or_rename_section_in_file at config.c:3696:2
     RF: git_config_copy_or_rename_section_in_file at config.c:3697:1
   Occurrences: 2
 
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     RF: git_config_from_parameters at config.c:777:2
     RF: git_config_from_parameters at config.c:778:1
   Occurrences: 250
 
-CoordinatesChanged
-  Events:
-    RF: git_config_get_bool at config.c:2714:2
-    RF: git_config_get_bool at config.c:0:0
-  Occurrences: 37
-
-CoordinatesChanged
-  Events:
-    RF: git_config_get_bool_or_int at config.c:2719:2
-    RF: git_config_get_bool_or_int at config.c:0:0
-  Occurrences: 13
-
-CoordinatesChanged
-  Events:
-    RF: git_config_get_int at config.c:2704:2
-    RF: git_config_get_int at config.c:0:0
-  Occurrences: 72
-
-CoordinatesChanged
-  Events:
-    RF: git_config_get_maybe_bool at config.c:2724:2
-    RF: git_config_get_maybe_bool at config.c:0:0
-  Occurrences: 10
-
-CoordinatesChanged
-  Events:
-    RF: git_config_get_ulong at config.c:2709:2
-    RF: git_config_get_ulong at config.c:0:0
-  Occurrences: 4
-
-CoordinatesChanged
-  Events:
-    RF: git_config_get_value at config.c:2684:2
-    RF: git_config_get_value at config.c:0:0
-  Occurrences: 153
-
-CoordinatesChanged
-  Events:
-    RF: git_config_rename_section at config.c:3708:2
-    RF: git_config_rename_section at config.c:0:0
-  Occurrences: 2
-
-CoordinatesChanged
-  Events:
-    RF: git_config_set_multivar_in_file_gently at config.c:3441:2
-    RF: git_config_set_multivar_in_file_gently at config.c:3447:1
-  Occurrences: 333
-
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     RF: git_deflate_init at zlib.c:167:3
     RF: git_deflate_init at zlib.c:170:1
   Occurrences: 12
 
-CoordinatesChanged
-  Events:
-    RF: git_diff_basic_config at diff.c:485:1
-    RF: git_diff_basic_config at diff.c:0:0
-  Occurrences: 24
-
-CoordinatesChanged
-  Events:
-    RF: git_diff_ui_config at diff.c:430:1
-    RF: git_diff_ui_config at diff.c:0:0
-  Occurrences: 1
-
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     RF: git_inflate_init at zlib.c:75:3
     RF: git_inflate_init at zlib.c:78:1
   Occurrences: 47
 
-CoordinatesChanged
-  Events:
-    RF: git_reset_config at reset.c:311:1
-    RF: git_reset_config at reset.c:0:0
-  Occurrences: 6
-
-CoordinatesChanged
-  Events:
-    RF: git_status_config at commit.c:1483:1
-    RF: git_status_config at commit.c:0:0
-  Occurrences: 24
-
-CoordinatesChanged
-  Events:
-    RF: git_tag_config at tag.c:208:1
-    RF: git_tag_config at tag.c:0:0
-  Occurrences: 1
-
-CoordinatesChanged
-  Events:
-    RF: git_worktree_config at worktree.c:109:1
-    RF: git_worktree_config at worktree.c:0:0
-  Occurrences: 18
-
-CoordinatesChanged
-  Events:
-    RF: hold_lock_file_for_update at lockfile.h:192:2
-    RF: hold_lock_file_for_update at lockfile.h:0:0
-  Occurrences: 346
-
-CoordinatesChanged
-  Events:
-    RF: ie_match_stat at read-cache.c:449:1
-    CF: ie_match_stat at read-cache.c:445:15
-  Occurrences: 2
-
-CoordinatesChanged
-  Events:
-    RF: is_hfs_dotgit at utf8.c:762:2
-    RF: is_hfs_dotgit at utf8.c:0:0
-  Occurrences: 5
-
-CoordinatesChanged
-  Events:
-    RF: is_null_oid at hash.h:258:2
-    RF: is_null_oid at hash.h:0:0
-  Occurrences: 163
-
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     RF: lock_raw_ref at files-backend.c:744:2
     RF: lock_raw_ref at files-backend.c:745:1
   Occurrences: 16
 
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     RF: lock_ref_for_update at files-backend.c:2619:2
     RF: lock_ref_for_update at files-backend.c:2620:1
   Occurrences: 16
 
-CoordinatesChanged
-  Events:
-    RF: lookup_commit_reference at commit.c:47:2
-    RF: lookup_commit_reference at commit.c:0:0
-  Occurrences: 12
-
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     RF: msort_with_tmp at qsort_s.c:46:1
     CF: msort_with_tmp at qsort_s.c:44:3
   Occurrences: 1
 
-CoordinatesChanged
-  Events:
-    RF: oid_to_hex at hex.c:164:2
-    RF: oid_to_hex at hex.c:0:0
-  Occurrences: 47
-
-CoordinatesChanged
-  Events:
-    RF: open_output_fd at entry.c:110:1
-    RF: open_output_fd at entry.c:0:0
-  Occurrences: 1
-
-CoordinatesChanged
-  Events:
-    RF: parse_long_opt at parse-options.c:407:1
-    RF: parse_long_opt at parse-options.c:0:0
-  Occurrences: 19
-
-CoordinatesChanged
-  Events:
-    RF: parse_short_opt at parse-options.c:283:1
-    RF: parse_short_opt at parse-options.c:0:0
-  Occurrences: 2
-
-CoordinatesChanged
-  Events:
-    RF: post_read_index_from at read-cache.c:2059:1
-    RF: post_read_index_from at read-cache.c:0:0
-  Occurrences: 10
-
-CoordinatesChanged
-  Events:
-    RF: preload_index at preload-index.c:106:3
-    RF: preload_index at preload-index.c:164:1
-  Occurrences: 4
-
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     RF: prepare_index at commit.c:541:2
     RF: prepare_index at commit.c:542:1
   Occurrences: 4
 
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     RF: read_ref_internal at files-backend.c:460:2
     RF: read_ref_internal at files-backend.c:461:1
   Occurrences: 394
 
-CoordinatesChanged
-  Events:
-    RF: refs_resolve_refdup at refs.c:359:2
-    RF: refs_resolve_refdup at refs.c:0:0
-  Occurrences: 18
-
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     RF: refs_verify_refname_available at refs.c:2424:2
     RF: refs_verify_refname_available at refs.c:2425:1
   Occurrences: 62
 
-CoordinatesChanged
-  Events:
-    RF: remote_get at remote.c:703:2
-    RF: remote_get at remote.c:0:0
-  Occurrences: 1
-
-CoordinatesChanged
-  Events:
-    RF: remove_merge_branch_state at branch.c:811:1
-    RF: remove_merge_branch_state at branch.c:0:0
-  Occurrences: 1
-
-CoordinatesChanged
-  Events:
-    RF: replace_dir at path.c:100:1
-    RF: replace_dir at path.c:0:0
-  Occurrences: 2
-
-CoordinatesChanged
-  Events:
-    RF: repo_parse_commit at commit.h:103:2
-    RF: repo_parse_commit at commit.h:0:0
-  Occurrences: 13
-
-CoordinatesChanged
-  Events:
-    RF: run_hooks_opt_clear at hook.c:106:1
-    RF: run_hooks_opt_clear at hook.c:0:0
-  Occurrences: 28
-
-CoordinatesChanged
-  Events:
-    RF: set_git_work_tree at environment.c:270:1
-    RF: set_git_work_tree at environment.c:0:0
-  Occurrences: 107
-
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     RF: simple_length at dir.c:611:4
     RF: simple_length at dir.c:613:1
   Occurrences: 4
 
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     RF: store_create_section at config.c:2993:2
     RF: store_create_section at config.c:2994:1
   Occurrences: 63
 
-CoordinatesChanged
-  Events:
-    RF: strbuf_add_real_path at strbuf.c:929:1
-    RF: strbuf_add_real_path at strbuf.c:0:0
-  Occurrences: 36
-
-CoordinatesChanged
-  Events:
-    RF: strbuf_add_unique_abbrev at strbuf.c:1088:1
-    RF: strbuf_add_unique_abbrev at strbuf.c:0:0
-  Occurrences: 8
-
-CoordinatesChanged
-  Events:
-    RF: strbuf_addstr at strbuf.h:306:1
-    RF: strbuf_addstr at strbuf.h:0:0
-  Occurrences: 8574
-
-CoordinatesChanged
-  Events:
-    RF: strbuf_branchname at object-name.c:1674:1
-    RF: strbuf_branchname at object-name.c:0:0
-  Occurrences: 7
-
-CoordinatesChanged
-  Events:
-    RF: strbuf_check_branch_ref at object-name.c:1696:1
-    RF: strbuf_check_branch_ref at object-name.c:0:0
-  Occurrences: 7
-
-CoordinatesChanged
-  Events:
-    RF: strbuf_check_tag_ref at tag.c:422:1
-    RF: strbuf_check_tag_ref at tag.c:0:0
-  Occurrences: 4
-
-CoordinatesChanged
-  Events:
-    RF: strbuf_complete_line at strbuf.h:694:1
-    RF: strbuf_complete_line at strbuf.h:0:0
-  Occurrences: 26
-
-CoordinatesChanged
-  Events:
-    RF: strbuf_insert at strbuf.c:253:1
-    RF: strbuf_insert at strbuf.c:0:0
-  Occurrences: 10
-
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     RF: strbuf_realpath_1 at abspath.c:199:2
     RF: strbuf_realpath_1 at abspath.c:200:1
   Occurrences: 461
 
-CoordinatesChanged
+CoordinatesChangedLarge
+  Events:
+    CF: add_to_trie at path.c:228:11
+    CF: add_to_trie at path.c:203:11
+  Occurrences: 4
+
+CoordinatesChangedLarge
+  Events:
+    CF: apply_save_autostash at sequencer.c:4484:3
+    CF: apply_save_autostash at sequencer.c:0:2
+  Occurrences: 5
+
+CoordinatesChangedLarge
+  Events:
+    CF: cmd_clone at clone.c:1031:4
+    CF: cmd_clone at clone.c:0:0
+  Occurrences: 1
+
+CoordinatesChangedLarge
+  Events:
+    CF: cmd_init_db at init-db.c:563:3
+    CF: cmd_init_db at init-db.c:0:0
+  Occurrences: 1
+
+CoordinatesChangedLarge
+  Events:
+    CF: cmd_init_db at init-db.c:594:6
+    CF: cmd_init_db at init-db.c:0:0
+  Occurrences: 2
+
+CoordinatesChangedLarge
+  Events:
+    CF: cmd_init_db at init-db.c:599:6
+    CF: cmd_init_db at init-db.c:0:0
+  Occurrences: 1
+
+CoordinatesChangedLarge
+  Events:
+    CF: cmd_init_db at init-db.c:630:3
+    CF: cmd_init_db at init-db.c:0:0
+  Occurrences: 3
+
+CoordinatesChangedLarge
+  Events:
+    CF: create_branch at branch.c:611:9
+    CF: create_branch at branch.c:0:23
+  Occurrences: 1
+
+CoordinatesChangedLarge
+  Events:
+    CF: die_initial_contact at connect.c:63:3
+    CF: die_initial_contact at connect.c:0:0
+  Occurrences: 1
+
+CoordinatesChangedLarge
+  Events:
+    CF: for_each_file_in_pack_dir at packfile.c:840:2
+    CF: for_each_file_in_pack_dir at packfile.c:0:4
+  Occurrences: 19
+
+CoordinatesChangedLarge
+  Events:
+    CF: format_commit_one at pretty.c:1467:3
+    CF: format_commit_one at pretty.c:0:21
+  Occurrences: 4
+
+CoordinatesChangedLarge
+  Events:
+    CF: init_db at init-db.c:462:4
+    CF: init_db at init-db.c:0:0
+  Occurrences: 7
+
+CoordinatesChangedLarge
+  Events:
+    CF: init_db at init-db.c:467:4
+    CF: init_db at init-db.c:0:0
+  Occurrences: 48
+
+CoordinatesChangedLarge
+  Events:
+    CF: log_ref_setup at files-backend.c:1671:2
+    CF: log_ref_setup at files-backend.c:0:3
+  Occurrences: 16
+
+CoordinatesChangedLarge
+  Events:
+    CF: lookup_fsmonitor_settings at fsmonitor-settings.c:141:3
+    CF: lookup_fsmonitor_settings at fsmonitor-settings.c:0:3
+  Occurrences: 9
+
+CoordinatesChangedLarge
+  Events:
+    CF: msort_with_tmp at qsort_s.c:31:7
+    CF: msort_with_tmp at qsort_s.c:44:3
+  Occurrences: 29
+
+CoordinatesChangedLarge
+  Events:
+    CF: msort_with_tmp at qsort_s.c:32:4
+    CF: msort_with_tmp at qsort_s.c:37:4
+  Occurrences: 286
+
+CoordinatesChangedLarge
+  Events:
+    CF: msort_with_tmp at qsort_s.c:37:4
+    CF: msort_with_tmp at qsort_s.c:32:4
+  Occurrences: 212
+
+CoordinatesChangedLarge
+  Events:
+    CF: parse_refspec at refspec.c:119:13
+    CF: parse_refspec at refspec.c:0:0
+  Occurrences: 2
+
+CoordinatesChangedLarge
+  Events:
+    CF: prep_childenv at run-command.c:455:4
+    CF: prep_childenv at run-command.c:0:0
+  Occurrences: 1565
+
+CoordinatesChangedLarge
+  Events:
+    CF: print_preparing_worktree_line at worktree.c:557:3
+    CF: print_preparing_worktree_line at worktree.c:0:0
+  Occurrences: 1
+
+CoordinatesChangedLarge
+  Events:
+    CF: repair_gitfile at worktree.c:566:12
+    CF: repair_gitfile at worktree.c:0:11
+  Occurrences: 2
+
+CoordinatesChangedLarge
+  Events:
+    CF: setup_explicit_git_dir at setup.c:975:2
+    CF: setup_explicit_git_dir at setup.c:0:30
+  Occurrences: 2
+
+CoordinatesChangedLarge
+  Events:
+    CF: setup_explicit_git_dir at setup.c:976:2
+    CF: setup_explicit_git_dir at setup.c:0:30
+  Occurrences: 2
+
+CoordinatesChangedLarge
+  Events:
+    CF: setup_git_directory_gently at setup.c:1571:3
+    CF: setup_git_directory_gently at setup.c:0:12
+  Occurrences: 3
+
+CoordinatesChangedLarge
+  Events:
+    CF: setup_git_directory_gently at setup.c:1574:3
+    CF: setup_git_directory_gently at setup.c:0:12
+  Occurrences: 77
+
+CoordinatesChangedLarge
+  Events:
+    CF: setup_path at exec-cmd.c:314:3
+    CF: setup_path at exec-cmd.c:0:0
+  Occurrences: 153
+
+CoordinatesChangedLarge
+  Events:
+    CF: start_command at run-command.c:824:8
+    CF: start_command at run-command.c:828:7
+  Occurrences: 1
+
+CoordinatesChangedLarge
+  Events:
+    CF: store_create_section at config.c:2990:3
+    CF: store_create_section at config.c:0:0
+  Occurrences: 62
+
+CoordinatesChangedLarge
+  Events:
+    CF: string_list_split at string-list.c:296:4
+    CF: string_list_split at string-list.c:0:21
+  Occurrences: 87
+
+CoordinatesChangedLarge
+  Events:
+    CF: xdl_diff at xdiffi.c:1086:2
+    CF: xdl_diff at xdiffi.c:0:7
+  Occurrences: 4
+
+CoordinatesChangedLarge
+  Events:
+    CT: is_urlschemechar at url.c:5:0
+    CT: is_urlschemechar at url.c:14:20
+  Occurrences: 3
+
+CoordinatesChangedLarge
+  Events:
+    CT: msort_with_tmp at qsort_s.c:12:0
+    CT: msort_with_tmp at qsort_s.c:17:8
+  Occurrences: 3122
+
+CoordinatesChangedLarge
+  Events:
+    CT: xdl_hash_record at xutils.c:297:0
+    CT: xdl_hash_record at xutils.c:301:12
+  Occurrences: 4
+
+CoordinatesChangedLarge
+  Events:
+    RF: add_config at add.c:409:1
+    RF: add_config at add.c:0:0
+  Occurrences: 24
+
+CoordinatesChangedLarge
+  Events:
+    RF: add_name_hash at name-hash.c:633:1
+    RF: add_name_hash at name-hash.c:0:0
+  Occurrences: 4
+
+CoordinatesChangedLarge
+  Events:
+    RF: cb_each at cbtree.c:135:1
+    RF: cb_each at cbtree.c:0:0
+  Occurrences: 11
+
+CoordinatesChangedLarge
+  Events:
+    RF: chdir_notify_reparent at chdir-notify.c:49:1
+    RF: chdir_notify_reparent at chdir-notify.c:0:0
+  Occurrences: 270
+
+CoordinatesChangedLarge
+  Events:
+    RF: check_and_freshen_local at object-file.c:979:2
+    RF: check_and_freshen_local at object-file.c:0:0
+  Occurrences: 12
+
+CoordinatesChangedLarge
+  Events:
+    RF: child_process_clear at run-command.c:25:1
+    RF: child_process_clear at run-command.c:0:0
+  Occurrences: 19
+
+CoordinatesChangedLarge
+  Events:
+    RF: cleanup_message at sequencer.c:1135:1
+    RF: cleanup_message at sequencer.c:0:0
+  Occurrences: 4
+
+CoordinatesChangedLarge
+  Events:
+    RF: create_tmpfile at object-file.c:1953:1
+    RF: create_tmpfile at object-file.c:0:0
+  Occurrences: 12
+
+CoordinatesChangedLarge
+  Events:
+    RF: do_lookup_replace_object at replace-object.c:80:4
+    RF: do_lookup_replace_object at replace-object.c:84:1
+  Occurrences: 75
+
+CoordinatesChangedLarge
+  Events:
+    RF: empty_ref_iterator_advance at iterator.c:51:2
+    RF: empty_ref_iterator_advance at iterator.c:0:0
+  Occurrences: 75
+
+CoordinatesChangedLarge
+  Events:
+    RF: end_odb_transaction at bulk-checkin.c:381:1
+    RF: end_odb_transaction at bulk-checkin.c:0:0
+  Occurrences: 12
+
+CoordinatesChangedLarge
+  Events:
+    RF: ensure_correct_sparsity at sparse-index.c:440:1
+    RF: ensure_correct_sparsity at sparse-index.c:0:0
+  Occurrences: 4
+
+CoordinatesChangedLarge
+  Events:
+    RF: for_each_replace_ref at refs.c:1641:2
+    RF: for_each_replace_ref at refs.c:0:0
+  Occurrences: 13
+
+CoordinatesChangedLarge
+  Events:
+    RF: get_progress at unpack-trees.c:361:1
+    RF: get_progress at unpack-trees.c:0:0
+  Occurrences: 1
+
+CoordinatesChangedLarge
+  Events:
+    RF: git_clone_config at clone.c:784:2
+    RF: git_clone_config at clone.c:0:0
+  Occurrences: 5
+
+CoordinatesChangedLarge
+  Events:
+    RF: git_color_default_config at color.c:434:1
+    RF: git_color_default_config at color.c:0:0
+  Occurrences: 42
+
+CoordinatesChangedLarge
+  Events:
+    RF: git_commit_config at commit.c:1624:1
+    RF: git_commit_config at commit.c:0:0
+  Occurrences: 1
+
+CoordinatesChangedLarge
+  Events:
+    RF: git_config at config.c:2675:1
+    RF: git_config at config.c:0:0
+  Occurrences: 165
+
+CoordinatesChangedLarge
+  Events:
+    RF: git_config_clear at config.c:2680:1
+    RF: git_config_clear at config.c:0:0
+  Occurrences: 132
+
+CoordinatesChangedLarge
+  Events:
+    RF: git_config_get_bool at config.c:2714:2
+    RF: git_config_get_bool at config.c:0:0
+  Occurrences: 37
+
+CoordinatesChangedLarge
+  Events:
+    RF: git_config_get_bool_or_int at config.c:2719:2
+    RF: git_config_get_bool_or_int at config.c:0:0
+  Occurrences: 13
+
+CoordinatesChangedLarge
+  Events:
+    RF: git_config_get_int at config.c:2704:2
+    RF: git_config_get_int at config.c:0:0
+  Occurrences: 72
+
+CoordinatesChangedLarge
+  Events:
+    RF: git_config_get_maybe_bool at config.c:2724:2
+    RF: git_config_get_maybe_bool at config.c:0:0
+  Occurrences: 10
+
+CoordinatesChangedLarge
+  Events:
+    RF: git_config_get_ulong at config.c:2709:2
+    RF: git_config_get_ulong at config.c:0:0
+  Occurrences: 4
+
+CoordinatesChangedLarge
+  Events:
+    RF: git_config_get_value at config.c:2684:2
+    RF: git_config_get_value at config.c:0:0
+  Occurrences: 153
+
+CoordinatesChangedLarge
+  Events:
+    RF: git_config_rename_section at config.c:3708:2
+    RF: git_config_rename_section at config.c:0:0
+  Occurrences: 2
+
+CoordinatesChangedLarge
+  Events:
+    RF: git_config_set_multivar_in_file_gently at config.c:3441:2
+    RF: git_config_set_multivar_in_file_gently at config.c:3447:1
+  Occurrences: 333
+
+CoordinatesChangedLarge
+  Events:
+    RF: git_diff_basic_config at diff.c:485:1
+    RF: git_diff_basic_config at diff.c:0:0
+  Occurrences: 24
+
+CoordinatesChangedLarge
+  Events:
+    RF: git_diff_ui_config at diff.c:430:1
+    RF: git_diff_ui_config at diff.c:0:0
+  Occurrences: 1
+
+CoordinatesChangedLarge
+  Events:
+    RF: git_reset_config at reset.c:311:1
+    RF: git_reset_config at reset.c:0:0
+  Occurrences: 6
+
+CoordinatesChangedLarge
+  Events:
+    RF: git_status_config at commit.c:1483:1
+    RF: git_status_config at commit.c:0:0
+  Occurrences: 24
+
+CoordinatesChangedLarge
+  Events:
+    RF: git_tag_config at tag.c:208:1
+    RF: git_tag_config at tag.c:0:0
+  Occurrences: 1
+
+CoordinatesChangedLarge
+  Events:
+    RF: git_worktree_config at worktree.c:109:1
+    RF: git_worktree_config at worktree.c:0:0
+  Occurrences: 18
+
+CoordinatesChangedLarge
+  Events:
+    RF: hold_lock_file_for_update at lockfile.h:192:2
+    RF: hold_lock_file_for_update at lockfile.h:0:0
+  Occurrences: 346
+
+CoordinatesChangedLarge
+  Events:
+    RF: ie_match_stat at read-cache.c:449:1
+    CF: ie_match_stat at read-cache.c:445:15
+  Occurrences: 2
+
+CoordinatesChangedLarge
+  Events:
+    RF: is_hfs_dotgit at utf8.c:762:2
+    RF: is_hfs_dotgit at utf8.c:0:0
+  Occurrences: 5
+
+CoordinatesChangedLarge
+  Events:
+    RF: is_null_oid at hash.h:258:2
+    RF: is_null_oid at hash.h:0:0
+  Occurrences: 163
+
+CoordinatesChangedLarge
+  Events:
+    RF: lookup_commit_reference at commit.c:47:2
+    RF: lookup_commit_reference at commit.c:0:0
+  Occurrences: 12
+
+CoordinatesChangedLarge
+  Events:
+    RF: oid_to_hex at hex.c:164:2
+    RF: oid_to_hex at hex.c:0:0
+  Occurrences: 47
+
+CoordinatesChangedLarge
+  Events:
+    RF: open_output_fd at entry.c:110:1
+    RF: open_output_fd at entry.c:0:0
+  Occurrences: 1
+
+CoordinatesChangedLarge
+  Events:
+    RF: parse_long_opt at parse-options.c:407:1
+    RF: parse_long_opt at parse-options.c:0:0
+  Occurrences: 19
+
+CoordinatesChangedLarge
+  Events:
+    RF: parse_short_opt at parse-options.c:283:1
+    RF: parse_short_opt at parse-options.c:0:0
+  Occurrences: 2
+
+CoordinatesChangedLarge
+  Events:
+    RF: post_read_index_from at read-cache.c:2059:1
+    RF: post_read_index_from at read-cache.c:0:0
+  Occurrences: 10
+
+CoordinatesChangedLarge
+  Events:
+    RF: preload_index at preload-index.c:106:3
+    RF: preload_index at preload-index.c:164:1
+  Occurrences: 4
+
+CoordinatesChangedLarge
+  Events:
+    RF: refs_resolve_refdup at refs.c:359:2
+    RF: refs_resolve_refdup at refs.c:0:0
+  Occurrences: 18
+
+CoordinatesChangedLarge
+  Events:
+    RF: remote_get at remote.c:703:2
+    RF: remote_get at remote.c:0:0
+  Occurrences: 1
+
+CoordinatesChangedLarge
+  Events:
+    RF: remove_merge_branch_state at branch.c:811:1
+    RF: remove_merge_branch_state at branch.c:0:0
+  Occurrences: 1
+
+CoordinatesChangedLarge
+  Events:
+    RF: replace_dir at path.c:100:1
+    RF: replace_dir at path.c:0:0
+  Occurrences: 2
+
+CoordinatesChangedLarge
+  Events:
+    RF: repo_parse_commit at commit.h:103:2
+    RF: repo_parse_commit at commit.h:0:0
+  Occurrences: 13
+
+CoordinatesChangedLarge
+  Events:
+    RF: run_hooks_opt_clear at hook.c:106:1
+    RF: run_hooks_opt_clear at hook.c:0:0
+  Occurrences: 28
+
+CoordinatesChangedLarge
+  Events:
+    RF: set_git_work_tree at environment.c:270:1
+    RF: set_git_work_tree at environment.c:0:0
+  Occurrences: 107
+
+CoordinatesChangedLarge
+  Events:
+    RF: strbuf_add_real_path at strbuf.c:929:1
+    RF: strbuf_add_real_path at strbuf.c:0:0
+  Occurrences: 36
+
+CoordinatesChangedLarge
+  Events:
+    RF: strbuf_add_unique_abbrev at strbuf.c:1088:1
+    RF: strbuf_add_unique_abbrev at strbuf.c:0:0
+  Occurrences: 8
+
+CoordinatesChangedLarge
+  Events:
+    RF: strbuf_addstr at strbuf.h:306:1
+    RF: strbuf_addstr at strbuf.h:0:0
+  Occurrences: 8574
+
+CoordinatesChangedLarge
+  Events:
+    RF: strbuf_branchname at object-name.c:1674:1
+    RF: strbuf_branchname at object-name.c:0:0
+  Occurrences: 7
+
+CoordinatesChangedLarge
+  Events:
+    RF: strbuf_check_branch_ref at object-name.c:1696:1
+    RF: strbuf_check_branch_ref at object-name.c:0:0
+  Occurrences: 7
+
+CoordinatesChangedLarge
+  Events:
+    RF: strbuf_check_tag_ref at tag.c:422:1
+    RF: strbuf_check_tag_ref at tag.c:0:0
+  Occurrences: 4
+
+CoordinatesChangedLarge
+  Events:
+    RF: strbuf_complete_line at strbuf.h:694:1
+    RF: strbuf_complete_line at strbuf.h:0:0
+  Occurrences: 26
+
+CoordinatesChangedLarge
+  Events:
+    RF: strbuf_insert at strbuf.c:253:1
+    RF: strbuf_insert at strbuf.c:0:0
+  Occurrences: 10
+
+CoordinatesChangedLarge
   Events:
     RF: strbuf_remove at strbuf.c:294:1
     RF: strbuf_remove at strbuf.c:0:0
   Occurrences: 2781
 
-CoordinatesChanged
+CoordinatesChangedLarge
   Events:
     RF: unpack_trees at unpack-trees.c:2070:2
     RF: unpack_trees at unpack-trees.c:2080:1
   Occurrences: 1
 
-CoordinatesChanged
+CoordinatesChangedLarge
   Events:
     RF: validate_branchname at branch.c:370:2
     RF: validate_branchname at branch.c:0:0
   Occurrences: 3
 
-CoordinatesChanged
+CoordinatesChangedLarge
   Events:
     RF: verify_utf8 at commit.c:1513:4
     RF: verify_utf8 at commit.c:1525:1
   Occurrences: 4
 
-CoordinatesChanged
+CoordinatesChangedLarge
   Events:
     RF: xdg_config_home at path.c:1542:2
     RF: xdg_config_home at path.c:0:0
   Occurrences: 429
 
-CoordinatesChanged
+CoordinatesChangedLarge
   Events:
     RF: xdl_free_env at xprepare.c:300:1
     RF: xdl_free_env at xprepare.c:0:0
   Occurrences: 4
 
-CoordinatesChanged
+CoordinatesChangedLarge
   Events:
     RF: xopen at wrapper.c:186:4
     RF: xopen at wrapper.c:199:1
@@ -3038,7 +3038,7 @@ LibraryCallRemoved
   Events:
     CF: Jump to external code
     CT: External code
-  Occurrences: 33
+  Occurrences: 32
 
 LibraryCallRemoved
   Events:
@@ -3817,30 +3817,12 @@ LibraryCallRemoved
 
 LibraryCallRemoved
   Events:
-    CF: msort_with_tmp at qsort_s.c:32:4
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-  Occurrences: 1
-
-LibraryCallRemoved
-  Events:
-    CF: msort_with_tmp at qsort_s.c:37:4
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-  Occurrences: 4
-
-LibraryCallRemoved
-  Events:
     CF: msort_with_tmp at qsort_s.c:44:3
     CT: Jump to external code
     CF: Jump to external code
     CT: External code
     RF: Jump to external code
-  Occurrences: 18
+  Occurrences: 17
 
 LibraryCallRemoved
   Events:
@@ -4394,7 +4376,7 @@ LibraryCallRemoved
     CF: Jump to external code
     CT: External code
     RF: Jump to external code
-  Occurrences: 6
+  Occurrences: 7
 
 LibraryCallRemoved
   Events:
@@ -4412,7 +4394,7 @@ LibraryCallRemoved
   Events:
     CF: start_command at run-command.c:864:2
     CT: Jump to external code
-  Occurrences: 4
+  Occurrences: 3
 
 LibraryCallRemoved
   Events:
@@ -6119,45 +6101,12 @@ Uncategorised
     CF: cmp_items at string-list.c:238:9
     CT: External code
     RF: cmp_items at string-list.c:238:2
-  Occurrences: 5
-
-Uncategorised
-  Events:
-    CF: msort_with_tmp at qsort_s.c:31:7
-    CT: cmp_items at string-list.c:234:0
-    CF: cmp_items at string-list.c:238:9
-    CT: External code
-    RF: cmp_items at string-list.c:238:2
     CF: msort_with_tmp at qsort_s.c:37:4
     CT: Jump to external code
     CF: Jump to external code
     CT: External code
     RF: Jump to external code
   Occurrences: 6
-
-Uncategorised
-  Events:
-    CF: msort_with_tmp at qsort_s.c:31:7
-    CT: cmp_items at string-list.c:234:0
-    CF: cmp_items at string-list.c:238:9
-    CT: External code
-    RF: cmp_items at string-list.c:238:2
-    CF: msort_with_tmp at qsort_s.c:37:4
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: msort_with_tmp at qsort_s.c:31:7
-    CT: cmp_items at string-list.c:234:0
-    CF: cmp_items at string-list.c:238:9
-    CT: External code
-    RF: cmp_items at string-list.c:238:2
-    CF: msort_with_tmp at qsort_s.c:37:4
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-  Occurrences: 1
 
 Uncategorised
   Events:
@@ -6517,41 +6466,6 @@ Uncategorised
   Events:
     CF: sigchain_push_common at sigchain.c:50:2
     CT: sigchain_push at sigchain.c:20:0
-    CF: sigchain_push at sigchain.c:22:2
-    CT: check_signum at sigchain.c:14:0
-    RF: check_signum at sigchain.c:17:1
-    CF: sigchain_push at sigchain.c:24:2
-    CT: st_mult at git-compat-util.h:991:0
-    RF: st_mult at git-compat-util.h:995:2
-    CF: sigchain_push at sigchain.c:24:2
-    CT: xrealloc at wrapper.c:127:0
-    CF: xrealloc at wrapper.c:135:2
-    CT: memory_limit_check at wrapper.c:18:0
-    RF: memory_limit_check at wrapper.c:35:1
-    CF: xrealloc at wrapper.c:136:8
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    RF: xrealloc at wrapper.c:140:1
-    CF: sigchain_push at sigchain.c:25:17
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    RF: sigchain_push at sigchain.c:30:1
-    CF: sigchain_push_common at sigchain.c:51:2
-    CT: sigchain_push at sigchain.c:20:0
-    CF: sigchain_push at sigchain.c:22:2
-    CT: check_signum at sigchain.c:14:0
-    RF: check_signum at sigchain.c:17:1
-    [...22 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Events:
-    CF: sigchain_push_common at sigchain.c:50:2
-    CT: sigchain_push at sigchain.c:20:0
     CF: start_command at run-command.c:824:8
     CT: Jump to external code
     CF: sigchain_push at sigchain.c:22:2
@@ -6671,21 +6585,11 @@ Uncategorised
 Uncategorised
   Events:
     CF: start_command at run-command.c:824:8
-  Occurrences: 4
+  Occurrences: 5
 
 Uncategorised
   Events:
     CF: start_command at run-command.c:824:8
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-  Occurrences: 1
-
-Uncategorised
-  Events:
-    CF: start_command at run-command.c:824:8
-    CF: start_command at run-command.c:824:8
-    CT: Jump to external code
     CF: Jump to external code
     CT: External code
     RF: Jump to external code
@@ -7152,6 +7056,25 @@ Uncategorised
 Uncategorised
   Events:
     CT: External code
+    RF: cmp_items at string-list.c:238:2
+    CF: msort_with_tmp at qsort_s.c:37:4
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: msort_with_tmp at qsort_s.c:31:7
+    CT: cmp_items at string-list.c:234:0
+    CF: cmp_items at string-list.c:238:9
+    CT: External code
+    RF: cmp_items at string-list.c:238:2
+    CF: msort_with_tmp at qsort_s.c:37:4
+    CT: Jump to external code
+    CF: Jump to external code
+  Occurrences: 1
+
+Uncategorised
+  Events:
+    CT: External code
     RF: st_mult at git-compat-util.h:995:2
     RF: Jump to external code
     CF: sigchain_push at sigchain.c:24:2
@@ -7215,8 +7138,51 @@ Uncategorised
     CF: cmp_items at string-list.c:238:9
     CT: External code
     RF: cmp_items at string-list.c:238:2
+    CF: msort_with_tmp at qsort_s.c:32:4
+  Occurrences: 1
+
+Uncategorised
+  Events:
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: msort_with_tmp at qsort_s.c:31:7
+    CT: cmp_items at string-list.c:234:0
+    CF: cmp_items at string-list.c:238:9
+    CT: External code
+    RF: cmp_items at string-list.c:238:2
     CF: msort_with_tmp at qsort_s.c:37:4
-  Occurrences: 6
+  Occurrences: 10
+
+Uncategorised
+  Events:
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: msort_with_tmp at qsort_s.c:31:7
+    CT: cmp_items at string-list.c:234:0
+    CF: cmp_items at string-list.c:238:9
+    CT: External code
+    RF: cmp_items at string-list.c:238:2
+    CF: msort_with_tmp at qsort_s.c:37:4
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: msort_with_tmp at qsort_s.c:31:7
+    CT: cmp_items at string-list.c:234:0
+    CF: cmp_items at string-list.c:238:9
+    CT: External code
+    RF: cmp_items at string-list.c:238:2
+    CF: msort_with_tmp at qsort_s.c:37:4
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: msort_with_tmp at qsort_s.c:44:3
+  Occurrences: 1
 
 Uncategorised
   Events:
@@ -7316,6 +7282,41 @@ Uncategorised
     CT: Jump to external code
     CF: git_atexit at run-command.c:1098:2
     CT: xrealloc at wrapper.c:127:0
+  Occurrences: 1
+
+Uncategorised
+  Events:
+    CT: Jump to external code
+    CF: sigchain_push_common at sigchain.c:50:2
+    CT: sigchain_push at sigchain.c:20:0
+    CF: sigchain_push at sigchain.c:22:2
+    CT: check_signum at sigchain.c:14:0
+    RF: check_signum at sigchain.c:17:1
+    CF: sigchain_push at sigchain.c:24:2
+    CT: st_mult at git-compat-util.h:991:0
+    RF: st_mult at git-compat-util.h:995:2
+    CF: sigchain_push at sigchain.c:24:2
+    CT: xrealloc at wrapper.c:127:0
+    CF: xrealloc at wrapper.c:135:2
+    CT: memory_limit_check at wrapper.c:18:0
+    RF: memory_limit_check at wrapper.c:35:1
+    CF: xrealloc at wrapper.c:136:8
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    RF: xrealloc at wrapper.c:140:1
+    CF: sigchain_push at sigchain.c:25:17
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    RF: sigchain_push at sigchain.c:30:1
+    CF: sigchain_push_common at sigchain.c:51:2
+    CT: sigchain_push at sigchain.c:20:0
+    CF: sigchain_push at sigchain.c:22:2
+    CT: check_signum at sigchain.c:14:0
+    [...24 more events...]
   Occurrences: 1
 
 Uncategorised
@@ -7867,23 +7868,6 @@ Uncategorised
 
 Uncategorised
   Events:
-    RF: cmp_items at string-list.c:238:2
-    CF: msort_with_tmp at qsort_s.c:37:4
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: msort_with_tmp at qsort_s.c:31:7
-    CT: cmp_items at string-list.c:234:0
-    CF: cmp_items at string-list.c:238:9
-    CT: External code
-    RF: cmp_items at string-list.c:238:2
-    CF: msort_with_tmp at qsort_s.c:37:4
-    CT: Jump to external code
-  Occurrences: 1
-
-Uncategorised
-  Events:
     RF: deactivate_tempfile at tempfile.c:128:1
     CF: Jump to external code
     CT: External code
@@ -8432,19 +8416,22 @@ Uncategorised
 CoordinatesRemoved
   Unique divergence coordinates: 364
 
-CoordinatesChanged
-  Unique divergence coordinates: 141
+CoordinatesChangedSmall
+  Unique divergence coordinates: 41
+
+CoordinatesChangedLarge
+  Unique divergence coordinates: 100
 
 LibraryCallRemoved
-  Unique divergence coordinates: 174
+  Unique divergence coordinates: 172
 
 ProgramCallRemoved
   Unique divergence coordinates: 37
 
 Uncategorised
-  Unique divergence coordinates: 266
+  Unique divergence coordinates: 265
 
 ## Summary
 
-982 unique divergence coordinates
-123812 divergence occurrences
+979 unique divergence coordinates
+123805 divergence occurrences

@@ -544,463 +544,463 @@ CoordinatesRemoved
     CF: xdl_prepare_env at xprepare.c:0:0
   Occurrences: 4
 
-CoordinatesChanged
-  Events:
-    CF: apply_save_autostash at sequencer.c:4484:3
-    CF: apply_save_autostash at sequencer.c:0:2
-  Occurrences: 5
-
-CoordinatesChanged
-  Events:
-    CF: cmd_config at config.c:696:4
-    CF: cmd_config at config.c:0:7
-  Occurrences: 14
-
-CoordinatesChanged
-  Events:
-    CF: create_branch at branch.c:611:9
-    CF: create_branch at branch.c:0:23
-  Occurrences: 1
-
-CoordinatesChanged
-  Events:
-    CF: for_each_file_in_obj_subdir at object-file.c:2624:2
-    CF: for_each_file_in_obj_subdir at object-file.c:0:8
-  Occurrences: 11
-
-CoordinatesChanged
-  Events:
-    CF: for_each_file_in_pack_dir at packfile.c:840:2
-    CF: for_each_file_in_pack_dir at packfile.c:0:4
-  Occurrences: 19
-
-CoordinatesChanged
-  Events:
-    CF: format_commit_one at pretty.c:1467:3
-    CF: format_commit_one at pretty.c:0:21
-  Occurrences: 4
-
-CoordinatesChanged
-  Events:
-    CF: get_oid_basic at object-name.c:959:16
-    CF: get_oid_basic at object-name.c:0:6
-  Occurrences: 22
-
-CoordinatesChanged
-  Events:
-    CF: log_ref_setup at files-backend.c:1671:2
-    CF: log_ref_setup at files-backend.c:0:3
-  Occurrences: 16
-
-CoordinatesChanged
-  Events:
-    CF: lookup_fsmonitor_settings at fsmonitor-settings.c:141:3
-    CF: lookup_fsmonitor_settings at fsmonitor-settings.c:0:3
-  Occurrences: 9
-
-CoordinatesChanged
-  Events:
-    CF: map_loose_object_1 at object-file.c:1241:3
-    CF: map_loose_object_1 at object-file.c:0:5
-  Occurrences: 47
-
-CoordinatesChanged
-  Events:
-    CF: mark_child_for_cleanup at run-command.c:98:3
-    CF: mark_child_for_cleanup at run-command.c:91:29
-  Occurrences: 1
-
-CoordinatesChanged
-  Events:
-    CF: msort_with_tmp at qsort_s.c:31:7
-    CF: msort_with_tmp at qsort_s.c:44:3
-  Occurrences: 29
-
-CoordinatesChanged
-  Events:
-    CF: msort_with_tmp at qsort_s.c:32:4
-    CF: msort_with_tmp at qsort_s.c:37:4
-  Occurrences: 286
-
-CoordinatesChanged
-  Events:
-    CF: msort_with_tmp at qsort_s.c:37:4
-    CF: msort_with_tmp at qsort_s.c:32:4
-  Occurrences: 226
-
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     CF: msort_with_tmp at qsort_s.c:45:2
     CF: msort_with_tmp at qsort_s.c:44:3
   Occurrences: 2
 
-CoordinatesChanged
-  Events:
-    CF: read_istream_loose at streaming.c:202:4
-    CF: read_istream_loose at streaming.c:0:24
-  Occurrences: 1
-
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     CF: repo_init_revisions at revision.c:1901:18
     CF: repo_init_revisions at revision.c:1901:26
   Occurrences: 8
 
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     CF: set_cloexec at run-command.c:535:14
     CF: set_cloexec at run-command.c:537:3
   Occurrences: 1
 
-CoordinatesChanged
-  Events:
-    CF: setup_bare_git_dir at setup.c:1059:3
-    CF: setup_bare_git_dir at setup.c:0:20
-  Occurrences: 20
-
-CoordinatesChanged
-  Events:
-    CF: setup_explicit_git_dir at setup.c:975:2
-    CF: setup_explicit_git_dir at setup.c:0:30
-  Occurrences: 2
-
-CoordinatesChanged
-  Events:
-    CF: setup_explicit_git_dir at setup.c:976:2
-    CF: setup_explicit_git_dir at setup.c:0:30
-  Occurrences: 2
-
-CoordinatesChanged
-  Events:
-    CF: setup_git_directory_gently at setup.c:1571:3
-    CF: setup_git_directory_gently at setup.c:0:12
-  Occurrences: 3
-
-CoordinatesChanged
-  Events:
-    CF: setup_git_directory_gently at setup.c:1574:3
-    CF: setup_git_directory_gently at setup.c:0:12
-  Occurrences: 77
-
-CoordinatesChanged
-  Events:
-    CF: start_command at run-command.c:824:8
-    CF: start_command at run-command.c:837:3
-  Occurrences: 1
-
-CoordinatesChanged
-  Events:
-    CF: start_command at run-command.c:828:7
-    CF: start_command at run-command.c:824:8
-  Occurrences: 1
-
-CoordinatesChanged
-  Events:
-    CF: store_create_section at config.c:2986:3
-    CF: store_create_section at config.c:0:3
-  Occurrences: 1
-
-CoordinatesChanged
-  Events:
-    CF: store_create_section at config.c:2990:3
-    CF: store_create_section at config.c:0:3
-  Occurrences: 62
-
-CoordinatesChanged
-  Events:
-    CF: string_list_split at string-list.c:296:4
-    CF: string_list_split at string-list.c:0:21
-  Occurrences: 87
-
-CoordinatesChanged
-  Events:
-    CF: xdl_diff at xdiffi.c:1086:2
-    CF: xdl_diff at xdiffi.c:0:7
-  Occurrences: 4
-
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     CT: add_untracked at dir.c:2364:0
     CT: add_untracked at dir.c:2365:7
   Occurrences: 4
 
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     CT: check_signum at sigchain.c:14:0
     RF: check_signum at sigchain.c:17:1
   Occurrences: 1
 
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     CT: close_commit_graph_one at commit-graph.c:708:0
     CT: close_commit_graph_one at commit-graph.c:709:7
   Occurrences: 4
 
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     CT: copy_array at git-compat-util.h:1097:0
     CT: copy_array at git-compat-util.h:1098:6
   Occurrences: 12
 
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     CT: diff_free_filespec_data at diff.c:4175:0
     CT: diff_free_filespec_data at diff.c:4176:7
   Occurrences: 16
 
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     CT: display_progress at progress.c:247:0
     CT: display_progress at progress.c:248:6
   Occurrences: 5
 
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     CT: fill_filespec at diff.c:3898:0
     CT: fill_filespec at diff.c:3899:6
   Occurrences: 4
 
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     CT: free_chunkfile at chunk-format.c:34:0
     CT: free_chunkfile at chunk-format.c:35:7
   Occurrences: 19
 
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     CT: free_preprocessed_options at parse-options.c:759:0
     CT: free_preprocessed_options at parse-options.c:762:7
   Occurrences: 145
 
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     CT: invalidate_ce_path at unpack-trees.c:2255:0
     CT: invalidate_ce_path at unpack-trees.c:2256:7
   Occurrences: 1
 
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     CT: is_encoding_utf8 at utf8.c:423:0
     CT: is_encoding_utf8 at utf8.c:424:7
   Occurrences: 12
 
-CoordinatesChanged
-  Events:
-    CT: is_urlschemechar at url.c:5:0
-    CT: is_urlschemechar at url.c:14:20
-  Occurrences: 3
-
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     CT: list_objects_filter_release at list-objects-filter-options.c:326:0
     CT: list_objects_filter_release at list-objects-filter-options.c:329:7
   Occurrences: 8
 
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     CT: looks_like_command_line_option at path.c:1519:0
     CT: looks_like_command_line_option at path.c:1520:9
   Occurrences: 1
 
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     CT: move_array at git-compat-util.h:1105:0
     CT: move_array at git-compat-util.h:1106:6
   Occurrences: 162
 
-CoordinatesChanged
-  Events:
-    CT: msort_with_tmp at qsort_s.c:12:0
-    CT: msort_with_tmp at qsort_s.c:17:8
-  Occurrences: 3122
-
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     CT: push_stack at attr.c:831:0
     CT: push_stack at attr.c:832:6
   Occurrences: 73
 
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     CT: reflog_walk_info_release at reflog-walk.c:127:0
     CT: reflog_walk_info_release at reflog-walk.c:130:7
   Occurrences: 8
 
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     CT: release_revisions_mailmap at revision.c:3036:0
     CT: release_revisions_mailmap at revision.c:3037:7
   Occurrences: 8
 
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     CT: release_revisions_topo_walk_info at revision.c:3574:0
     CT: release_revisions_topo_walk_info at revision.c:3575:7
   Occurrences: 8
 
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     CT: sane_qsort at git-compat-util.h:1307:0
     CT: sane_qsort at git-compat-util.h:1308:12
   Occurrences: 34
 
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     CT: type_name at object.c:32:0
     CT: type_name at object.c:33:11
   Occurrences: 31
 
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     CT: xsize_t at git-compat-util.h:1173:0
     CT: xsize_t at git-compat-util.h:1174:10
   Occurrences: 347
 
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     CT: xstrdup_or_null at git-compat-util.h:1168:0
     CT: xstrdup_or_null at git-compat-util.h:1169:9
   Occurrences: 1865
 
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     RF: check_signum at sigchain.c:17:1
     CT: check_signum at sigchain.c:14:0
   Occurrences: 1
 
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     RF: diffcore_rename_extended at diffcore-rename.c:1711:2
     RF: diffcore_rename_extended at diffcore-rename.c:1712:1
   Occurrences: 4
 
-CoordinatesChanged
-  Events:
-    RF: do_lookup_replace_object at replace-object.c:80:4
-    RF: do_lookup_replace_object at replace-object.c:84:1
-  Occurrences: 75
-
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     RF: files_transaction_prepare at files-backend.c:2835:2
     RF: files_transaction_prepare at files-backend.c:2836:1
   Occurrences: 11
 
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     RF: get_value at config.c:403:2
     RF: get_value at config.c:404:1
   Occurrences: 25
 
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     RF: git_config_copy_or_rename_section_in_file at config.c:3696:2
     RF: git_config_copy_or_rename_section_in_file at config.c:3697:1
   Occurrences: 2
 
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     RF: git_config_from_parameters at config.c:777:2
     RF: git_config_from_parameters at config.c:778:1
   Occurrences: 250
 
-CoordinatesChanged
-  Events:
-    RF: git_config_set_multivar_in_file_gently at config.c:3441:2
-    RF: git_config_set_multivar_in_file_gently at config.c:3447:1
-  Occurrences: 333
-
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     RF: git_deflate_init at zlib.c:167:3
     RF: git_deflate_init at zlib.c:170:1
   Occurrences: 12
 
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     RF: git_inflate_init at zlib.c:75:3
     RF: git_inflate_init at zlib.c:78:1
   Occurrences: 47
 
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     RF: lock_raw_ref at files-backend.c:744:2
     RF: lock_raw_ref at files-backend.c:745:1
   Occurrences: 16
 
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     RF: lock_ref_for_update at files-backend.c:2619:2
     RF: lock_ref_for_update at files-backend.c:2620:1
   Occurrences: 16
 
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     RF: msort_with_tmp at qsort_s.c:46:1
     CF: msort_with_tmp at qsort_s.c:44:3
   Occurrences: 1
 
-CoordinatesChanged
-  Events:
-    RF: preload_index at preload-index.c:106:3
-    RF: preload_index at preload-index.c:164:1
-  Occurrences: 4
-
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     RF: prepare_index at commit.c:541:2
     RF: prepare_index at commit.c:542:1
   Occurrences: 4
 
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     RF: read_ref_internal at files-backend.c:460:2
     RF: read_ref_internal at files-backend.c:461:1
   Occurrences: 394
 
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     RF: refs_verify_refname_available at refs.c:2424:2
     RF: refs_verify_refname_available at refs.c:2425:1
   Occurrences: 62
 
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     RF: simple_length at dir.c:611:4
     RF: simple_length at dir.c:613:1
   Occurrences: 4
 
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     RF: store_create_section at config.c:2993:2
     RF: store_create_section at config.c:2994:1
   Occurrences: 63
 
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     RF: strbuf_grow at strbuf.c:102:1
     CF: strbuf_grow at strbuf.c:99:2
   Occurrences: 1
 
-CoordinatesChanged
+CoordinatesChangedSmall
   Events:
     RF: strbuf_realpath_1 at abspath.c:199:2
     RF: strbuf_realpath_1 at abspath.c:200:1
   Occurrences: 461
 
-CoordinatesChanged
+CoordinatesChangedLarge
+  Events:
+    CF: apply_save_autostash at sequencer.c:4484:3
+    CF: apply_save_autostash at sequencer.c:0:2
+  Occurrences: 5
+
+CoordinatesChangedLarge
+  Events:
+    CF: cmd_config at config.c:696:4
+    CF: cmd_config at config.c:0:7
+  Occurrences: 14
+
+CoordinatesChangedLarge
+  Events:
+    CF: create_branch at branch.c:611:9
+    CF: create_branch at branch.c:0:23
+  Occurrences: 1
+
+CoordinatesChangedLarge
+  Events:
+    CF: for_each_file_in_obj_subdir at object-file.c:2624:2
+    CF: for_each_file_in_obj_subdir at object-file.c:0:8
+  Occurrences: 11
+
+CoordinatesChangedLarge
+  Events:
+    CF: for_each_file_in_pack_dir at packfile.c:840:2
+    CF: for_each_file_in_pack_dir at packfile.c:0:4
+  Occurrences: 19
+
+CoordinatesChangedLarge
+  Events:
+    CF: format_commit_one at pretty.c:1467:3
+    CF: format_commit_one at pretty.c:0:21
+  Occurrences: 4
+
+CoordinatesChangedLarge
+  Events:
+    CF: get_oid_basic at object-name.c:959:16
+    CF: get_oid_basic at object-name.c:0:6
+  Occurrences: 22
+
+CoordinatesChangedLarge
+  Events:
+    CF: log_ref_setup at files-backend.c:1671:2
+    CF: log_ref_setup at files-backend.c:0:3
+  Occurrences: 16
+
+CoordinatesChangedLarge
+  Events:
+    CF: lookup_fsmonitor_settings at fsmonitor-settings.c:141:3
+    CF: lookup_fsmonitor_settings at fsmonitor-settings.c:0:3
+  Occurrences: 9
+
+CoordinatesChangedLarge
+  Events:
+    CF: map_loose_object_1 at object-file.c:1241:3
+    CF: map_loose_object_1 at object-file.c:0:5
+  Occurrences: 47
+
+CoordinatesChangedLarge
+  Events:
+    CF: mark_child_for_cleanup at run-command.c:98:3
+    CF: mark_child_for_cleanup at run-command.c:91:29
+  Occurrences: 1
+
+CoordinatesChangedLarge
+  Events:
+    CF: msort_with_tmp at qsort_s.c:31:7
+    CF: msort_with_tmp at qsort_s.c:44:3
+  Occurrences: 29
+
+CoordinatesChangedLarge
+  Events:
+    CF: msort_with_tmp at qsort_s.c:32:4
+    CF: msort_with_tmp at qsort_s.c:37:4
+  Occurrences: 286
+
+CoordinatesChangedLarge
+  Events:
+    CF: msort_with_tmp at qsort_s.c:37:4
+    CF: msort_with_tmp at qsort_s.c:32:4
+  Occurrences: 226
+
+CoordinatesChangedLarge
+  Events:
+    CF: read_istream_loose at streaming.c:202:4
+    CF: read_istream_loose at streaming.c:0:24
+  Occurrences: 1
+
+CoordinatesChangedLarge
+  Events:
+    CF: setup_bare_git_dir at setup.c:1059:3
+    CF: setup_bare_git_dir at setup.c:0:20
+  Occurrences: 20
+
+CoordinatesChangedLarge
+  Events:
+    CF: setup_explicit_git_dir at setup.c:975:2
+    CF: setup_explicit_git_dir at setup.c:0:30
+  Occurrences: 2
+
+CoordinatesChangedLarge
+  Events:
+    CF: setup_explicit_git_dir at setup.c:976:2
+    CF: setup_explicit_git_dir at setup.c:0:30
+  Occurrences: 2
+
+CoordinatesChangedLarge
+  Events:
+    CF: setup_git_directory_gently at setup.c:1571:3
+    CF: setup_git_directory_gently at setup.c:0:12
+  Occurrences: 3
+
+CoordinatesChangedLarge
+  Events:
+    CF: setup_git_directory_gently at setup.c:1574:3
+    CF: setup_git_directory_gently at setup.c:0:12
+  Occurrences: 77
+
+CoordinatesChangedLarge
+  Events:
+    CF: start_command at run-command.c:824:8
+    CF: start_command at run-command.c:837:3
+  Occurrences: 1
+
+CoordinatesChangedLarge
+  Events:
+    CF: start_command at run-command.c:828:7
+    CF: start_command at run-command.c:824:8
+  Occurrences: 1
+
+CoordinatesChangedLarge
+  Events:
+    CF: store_create_section at config.c:2986:3
+    CF: store_create_section at config.c:0:3
+  Occurrences: 1
+
+CoordinatesChangedLarge
+  Events:
+    CF: store_create_section at config.c:2990:3
+    CF: store_create_section at config.c:0:3
+  Occurrences: 62
+
+CoordinatesChangedLarge
+  Events:
+    CF: string_list_split at string-list.c:296:4
+    CF: string_list_split at string-list.c:0:21
+  Occurrences: 87
+
+CoordinatesChangedLarge
+  Events:
+    CF: xdl_diff at xdiffi.c:1086:2
+    CF: xdl_diff at xdiffi.c:0:7
+  Occurrences: 4
+
+CoordinatesChangedLarge
+  Events:
+    CT: is_urlschemechar at url.c:5:0
+    CT: is_urlschemechar at url.c:14:20
+  Occurrences: 3
+
+CoordinatesChangedLarge
+  Events:
+    CT: msort_with_tmp at qsort_s.c:12:0
+    CT: msort_with_tmp at qsort_s.c:17:8
+  Occurrences: 3122
+
+CoordinatesChangedLarge
+  Events:
+    RF: do_lookup_replace_object at replace-object.c:80:4
+    RF: do_lookup_replace_object at replace-object.c:84:1
+  Occurrences: 75
+
+CoordinatesChangedLarge
+  Events:
+    RF: git_config_set_multivar_in_file_gently at config.c:3441:2
+    RF: git_config_set_multivar_in_file_gently at config.c:3447:1
+  Occurrences: 333
+
+CoordinatesChangedLarge
+  Events:
+    RF: preload_index at preload-index.c:106:3
+    RF: preload_index at preload-index.c:164:1
+  Occurrences: 4
+
+CoordinatesChangedLarge
   Events:
     RF: unpack_trees at unpack-trees.c:2070:2
     RF: unpack_trees at unpack-trees.c:2080:1
   Occurrences: 1
 
-CoordinatesChanged
+CoordinatesChangedLarge
   Events:
     RF: verify_utf8 at commit.c:1513:4
     RF: verify_utf8 at commit.c:1525:1
   Occurrences: 4
 
-CoordinatesChanged
+CoordinatesChangedLarge
   Events:
     RF: xopen at wrapper.c:186:4
     RF: xopen at wrapper.c:199:1
@@ -1770,7 +1770,7 @@ LibraryCallRemoved
     CF: Jump to external code
     CT: External code
     RF: Jump to external code
-  Occurrences: 16
+  Occurrences: 4
 
 LibraryCallRemoved
   Events:
@@ -1779,7 +1779,7 @@ LibraryCallRemoved
     CF: Jump to external code
     CT: External code
     RF: Jump to external code
-  Occurrences: 54
+  Occurrences: 22
 
 LibraryCallRemoved
   Events:
@@ -2829,9 +2829,7 @@ Uncategorised
     RF: Jump to external code
     CF: start_command at run-command.c:824:8
     CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
+    [...3 more events...]
   Occurrences: 1
 
 Uncategorised
@@ -3001,7 +2999,7 @@ Uncategorised
     CF: cmp_items at string-list.c:238:9
     CT: External code
     RF: cmp_items at string-list.c:238:2
-  Occurrences: 69
+  Occurrences: 26
 
 Uncategorised
   Events:
@@ -3030,25 +3028,6 @@ Uncategorised
     CT: External code
     RF: Jump to external code
   Occurrences: 23
-
-Uncategorised
-  Events:
-    CF: msort_with_tmp at qsort_s.c:31:7
-    CT: cmp_items at string-list.c:234:0
-    CF: cmp_items at string-list.c:238:9
-    CT: External code
-    RF: cmp_items at string-list.c:238:2
-    CF: msort_with_tmp at qsort_s.c:37:4
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: msort_with_tmp at qsort_s.c:31:7
-    CT: cmp_items at string-list.c:234:0
-    CF: cmp_items at string-list.c:238:9
-    CT: External code
-    RF: cmp_items at string-list.c:238:2
-  Occurrences: 1
 
 Uncategorised
   Events:
@@ -3167,348 +3146,7 @@ Uncategorised
     RF: readdir_skip_dot_and_dotdot at dir.c:64:2
     RF: read_cached_dir at dir.c:2478:1
     CF: read_directory_recursive at dir.c:2572:11
-    CT: treat_path at dir.c:2282:0
-    CF: treat_path at dir.c:2288:6
-    CT: is_dot_or_dotdot at dir.h:456:0
-    RF: is_dot_or_dotdot at dir.h:457:2
-    CF: treat_path at dir.c:2288:41
-    CT: fspathcmp at dir.c:77:0
-    CF: fspathcmp at dir.c:78:23
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    RF: fspathcmp at dir.c:78:2
-    CF: treat_path at dir.c:2290:2
-    CT: strbuf_setlen at strbuf.h:161:0
-    RF: strbuf_setlen at strbuf.h:169:1
-    CF: treat_path at dir.c:2291:2
-    CT: strbuf_addstr at strbuf.h:304:0
-    CF: strbuf_addstr at strbuf.h:305:20
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: strbuf_addstr at strbuf.h:305:2
-    CT: strbuf_add at strbuf.c:297:0
-    CF: strbuf_add at strbuf.c:298:2
-    CT: strbuf_grow at strbuf.c:92:0
-    RF: strbuf_grow at strbuf.c:102:1
-    CF: strbuf_add at strbuf.c:299:2
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: strbuf_add at strbuf.c:300:2
-    CT: strbuf_setlen at strbuf.h:161:0
-    RF: strbuf_setlen at strbuf.h:169:1
-    RF: strbuf_add at strbuf.c:301:1
-    RF: strbuf_addstr at strbuf.h:306:1
-    CF: treat_path at dir.c:2292:6
-    CT: simplify_away at dir.c:2108:0
-    CF: simplify_away at dir.c:2129:8
-    CT: ps_strncmp at pathspec.h:135:0
-    CF: ps_strncmp at pathspec.h:139:10
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    RF: ps_strncmp at pathspec.h:140:1
-    RF: simplify_away at dir.c:2134:1
-    RF: treat_path at dir.c:2361:1
-    CF: read_directory_recursive at dir.c:2632:3
-    CT: add_path_to_appropriate_result_list at dir.c:2502:0
-    RF: add_path_to_appropriate_result_list at dir.c:2526:1
-    CF: read_directory_recursive at dir.c:2570:10
-    CT: read_cached_dir at dir.c:2447:0
-    CF: read_cached_dir at dir.c:2451:8
-    CT: readdir_skip_dot_and_dotdot at dir.c:57:0
-    CF: readdir_skip_dot_and_dotdot at dir.c:60:14
-    CT: precompose_utf8_readdir at precompose_utf8.c:127:0
-    CF: precompose_utf8_readdir at precompose_utf8.c:129:8
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: precompose_utf8_readdir at precompose_utf8.c:131:21
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: precompose_utf8_readdir at precompose_utf8.c:134:19
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: precompose_utf8_readdir at precompose_utf8.c:147:37
-    CT: has_non_ascii at precompose_utf8.c:18:0
-    RF: has_non_ascii at precompose_utf8.c:37:1
-    CF: precompose_utf8_readdir at precompose_utf8.c:175:4
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: precompose_utf8_readdir at precompose_utf8.c:178:3
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    RF: precompose_utf8_readdir at precompose_utf8.c:182:1
-    CF: readdir_skip_dot_and_dotdot at dir.c:61:8
-    CT: is_dot_or_dotdot at dir.h:456:0
-    RF: is_dot_or_dotdot at dir.h:457:2
-    RF: readdir_skip_dot_and_dotdot at dir.c:64:2
-    RF: read_cached_dir at dir.c:2478:1
-    CF: read_directory_recursive at dir.c:2572:11
-    CT: treat_path at dir.c:2282:0
-    CF: treat_path at dir.c:2288:6
-    CT: is_dot_or_dotdot at dir.h:456:0
-    RF: is_dot_or_dotdot at dir.h:457:2
-    CF: treat_path at dir.c:2288:41
-    CT: fspathcmp at dir.c:77:0
-    CF: fspathcmp at dir.c:78:23
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    RF: fspathcmp at dir.c:78:2
-    CF: treat_path at dir.c:2290:2
-    CT: strbuf_setlen at strbuf.h:161:0
-    RF: strbuf_setlen at strbuf.h:169:1
-    CF: treat_path at dir.c:2291:2
-    CT: strbuf_addstr at strbuf.h:304:0
-    CF: strbuf_addstr at strbuf.h:305:20
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: strbuf_addstr at strbuf.h:305:2
-    CT: strbuf_add at strbuf.c:297:0
-    CF: strbuf_add at strbuf.c:298:2
-    CT: strbuf_grow at strbuf.c:92:0
-    RF: strbuf_grow at strbuf.c:102:1
-    CF: strbuf_add at strbuf.c:299:2
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: strbuf_add at strbuf.c:300:2
-    CT: strbuf_setlen at strbuf.h:161:0
-    RF: strbuf_setlen at strbuf.h:169:1
-    RF: strbuf_add at strbuf.c:301:1
-    RF: strbuf_addstr at strbuf.h:306:1
-    CF: treat_path at dir.c:2292:6
-    CT: simplify_away at dir.c:2108:0
-    CF: simplify_away at dir.c:2129:8
-    CT: ps_strncmp at pathspec.h:135:0
-    CF: ps_strncmp at pathspec.h:139:10
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    RF: ps_strncmp at pathspec.h:140:1
-    RF: simplify_away at dir.c:2134:1
-    RF: treat_path at dir.c:2361:1
-    CF: read_directory_recursive at dir.c:2632:3
-    CT: add_path_to_appropriate_result_list at dir.c:2502:0
-    RF: add_path_to_appropriate_result_list at dir.c:2526:1
-    CF: read_directory_recursive at dir.c:2570:10
-    CT: read_cached_dir at dir.c:2447:0
-    CF: read_cached_dir at dir.c:2451:8
-    CT: readdir_skip_dot_and_dotdot at dir.c:57:0
-    CF: readdir_skip_dot_and_dotdot at dir.c:60:14
-    CT: precompose_utf8_readdir at precompose_utf8.c:127:0
-    CF: precompose_utf8_readdir at precompose_utf8.c:129:8
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: precompose_utf8_readdir at precompose_utf8.c:131:21
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: precompose_utf8_readdir at precompose_utf8.c:134:19
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: precompose_utf8_readdir at precompose_utf8.c:147:37
-    CT: has_non_ascii at precompose_utf8.c:18:0
-    RF: has_non_ascii at precompose_utf8.c:37:1
-    CF: precompose_utf8_readdir at precompose_utf8.c:175:4
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: precompose_utf8_readdir at precompose_utf8.c:178:3
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    RF: precompose_utf8_readdir at precompose_utf8.c:182:1
-    CF: readdir_skip_dot_and_dotdot at dir.c:61:8
-    CT: is_dot_or_dotdot at dir.h:456:0
-    RF: is_dot_or_dotdot at dir.h:457:2
-    RF: readdir_skip_dot_and_dotdot at dir.c:64:2
-    RF: read_cached_dir at dir.c:2478:1
-    CF: read_directory_recursive at dir.c:2572:11
-    CT: treat_path at dir.c:2282:0
-    CF: treat_path at dir.c:2288:6
-    CT: is_dot_or_dotdot at dir.h:456:0
-    RF: is_dot_or_dotdot at dir.h:457:2
-    CF: treat_path at dir.c:2288:41
-    CT: fspathcmp at dir.c:77:0
-    CF: fspathcmp at dir.c:78:23
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    RF: fspathcmp at dir.c:78:2
-    CF: treat_path at dir.c:2290:2
-    CT: strbuf_setlen at strbuf.h:161:0
-    RF: strbuf_setlen at strbuf.h:169:1
-    CF: treat_path at dir.c:2291:2
-    CT: strbuf_addstr at strbuf.h:304:0
-    CF: strbuf_addstr at strbuf.h:305:20
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: strbuf_addstr at strbuf.h:305:2
-    CT: strbuf_add at strbuf.c:297:0
-    CF: strbuf_add at strbuf.c:298:2
-    CT: strbuf_grow at strbuf.c:92:0
-    RF: strbuf_grow at strbuf.c:102:1
-    CF: strbuf_add at strbuf.c:299:2
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: strbuf_add at strbuf.c:300:2
-    CT: strbuf_setlen at strbuf.h:161:0
-    RF: strbuf_setlen at strbuf.h:169:1
-    RF: strbuf_add at strbuf.c:301:1
-    RF: strbuf_addstr at strbuf.h:306:1
-    CF: treat_path at dir.c:2292:6
-    CT: simplify_away at dir.c:2108:0
-    CF: simplify_away at dir.c:2129:8
-    CT: ps_strncmp at pathspec.h:135:0
-    CF: ps_strncmp at pathspec.h:139:10
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    RF: ps_strncmp at pathspec.h:140:1
-    RF: simplify_away at dir.c:2134:1
-    RF: treat_path at dir.c:2361:1
-    CF: read_directory_recursive at dir.c:2632:3
-    CT: add_path_to_appropriate_result_list at dir.c:2502:0
-    RF: add_path_to_appropriate_result_list at dir.c:2526:1
-    CF: read_directory_recursive at dir.c:2570:10
-    CT: read_cached_dir at dir.c:2447:0
-    CF: read_cached_dir at dir.c:2451:8
-    CT: readdir_skip_dot_and_dotdot at dir.c:57:0
-    CF: readdir_skip_dot_and_dotdot at dir.c:60:14
-    CT: precompose_utf8_readdir at precompose_utf8.c:127:0
-    CF: precompose_utf8_readdir at precompose_utf8.c:129:8
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: precompose_utf8_readdir at precompose_utf8.c:131:21
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: precompose_utf8_readdir at precompose_utf8.c:134:19
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: precompose_utf8_readdir at precompose_utf8.c:147:37
-    CT: has_non_ascii at precompose_utf8.c:18:0
-    RF: has_non_ascii at precompose_utf8.c:37:1
-    CF: precompose_utf8_readdir at precompose_utf8.c:175:4
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: precompose_utf8_readdir at precompose_utf8.c:178:3
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    RF: precompose_utf8_readdir at precompose_utf8.c:182:1
-    CF: readdir_skip_dot_and_dotdot at dir.c:61:8
-    CT: is_dot_or_dotdot at dir.h:456:0
-    RF: is_dot_or_dotdot at dir.h:457:2
-    RF: readdir_skip_dot_and_dotdot at dir.c:64:2
-    RF: read_cached_dir at dir.c:2478:1
-    CF: read_directory_recursive at dir.c:2572:11
-    CT: treat_path at dir.c:2282:0
-    CF: treat_path at dir.c:2288:6
-    CT: is_dot_or_dotdot at dir.h:456:0
-    RF: is_dot_or_dotdot at dir.h:457:2
-    CF: treat_path at dir.c:2288:41
-    CT: fspathcmp at dir.c:77:0
-    CF: fspathcmp at dir.c:78:23
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    RF: fspathcmp at dir.c:78:2
-    CF: treat_path at dir.c:2290:2
-    CT: strbuf_setlen at strbuf.h:161:0
-    RF: strbuf_setlen at strbuf.h:169:1
-    CF: treat_path at dir.c:2291:2
-    CT: strbuf_addstr at strbuf.h:304:0
-    CF: strbuf_addstr at strbuf.h:305:20
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: strbuf_addstr at strbuf.h:305:2
-    CT: strbuf_add at strbuf.c:297:0
-    CF: strbuf_add at strbuf.c:298:2
-    CT: strbuf_grow at strbuf.c:92:0
-    RF: strbuf_grow at strbuf.c:102:1
-    CF: strbuf_add at strbuf.c:299:2
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: strbuf_add at strbuf.c:300:2
-    CT: strbuf_setlen at strbuf.h:161:0
-    RF: strbuf_setlen at strbuf.h:169:1
-    RF: strbuf_add at strbuf.c:301:1
-    RF: strbuf_addstr at strbuf.h:306:1
-    CF: treat_path at dir.c:2292:6
-    CT: simplify_away at dir.c:2108:0
-    CF: simplify_away at dir.c:2129:8
-    CT: ps_strncmp at pathspec.h:135:0
-    CF: ps_strncmp at pathspec.h:139:10
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    RF: ps_strncmp at pathspec.h:140:1
-    RF: simplify_away at dir.c:2134:1
-    RF: treat_path at dir.c:2361:1
-    CF: read_directory_recursive at dir.c:2632:3
-    CT: add_path_to_appropriate_result_list at dir.c:2502:0
-    RF: add_path_to_appropriate_result_list at dir.c:2526:1
-    CF: read_directory_recursive at dir.c:2570:10
-    CT: read_cached_dir at dir.c:2447:0
-    CF: read_cached_dir at dir.c:2451:8
-    CT: readdir_skip_dot_and_dotdot at dir.c:57:0
-    CF: readdir_skip_dot_and_dotdot at dir.c:60:14
-    CT: precompose_utf8_readdir at precompose_utf8.c:127:0
-    CF: precompose_utf8_readdir at precompose_utf8.c:129:8
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
+    [...342 more events...]
   Occurrences: 1
 
 Uncategorised
@@ -3543,33 +3181,7 @@ Uncategorised
     RF: readdir_skip_dot_and_dotdot at dir.c:64:2
     RF: read_cached_dir at dir.c:2478:1
     CF: read_directory_recursive at dir.c:2572:11
-    CT: treat_path at dir.c:2282:0
-    CF: treat_path at dir.c:2288:6
-    CT: is_dot_or_dotdot at dir.h:456:0
-    RF: is_dot_or_dotdot at dir.h:457:2
-    CF: treat_path at dir.c:2288:41
-    CT: fspathcmp at dir.c:77:0
-    CF: fspathcmp at dir.c:78:23
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    RF: fspathcmp at dir.c:78:2
-    RF: treat_path at dir.c:2361:1
-    CF: read_directory_recursive at dir.c:2632:3
-    CT: add_path_to_appropriate_result_list at dir.c:2502:0
-    RF: add_path_to_appropriate_result_list at dir.c:2526:1
-    CF: read_directory_recursive at dir.c:2570:10
-    CT: read_cached_dir at dir.c:2447:0
-    CF: read_cached_dir at dir.c:2451:8
-    CT: readdir_skip_dot_and_dotdot at dir.c:57:0
-    CF: readdir_skip_dot_and_dotdot at dir.c:60:14
-    CT: precompose_utf8_readdir at precompose_utf8.c:127:0
-    CF: precompose_utf8_readdir at precompose_utf8.c:129:8
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
+    [...27 more events...]
   Occurrences: 1
 
 Uncategorised
@@ -3604,10 +3216,7 @@ Uncategorised
     CF: Jump to external code
     CT: External code
     RF: Jump to external code
-    RF: precompose_utf8_readdir at precompose_utf8.c:182:1
-    CF: readdir_skip_dot_and_dotdot at dir.c:61:8
-    CT: is_dot_or_dotdot at dir.h:456:0
-    RF: is_dot_or_dotdot at dir.h:457:2
+    [...4 more events...]
   Occurrences: 1
 
 Uncategorised
@@ -3952,360 +3561,7 @@ Uncategorised
     CF: read_cached_dir at dir.c:2451:8
     CT: readdir_skip_dot_and_dotdot at dir.c:57:0
     CF: readdir_skip_dot_and_dotdot at dir.c:60:14
-    CT: precompose_utf8_readdir at precompose_utf8.c:127:0
-    CF: precompose_utf8_readdir at precompose_utf8.c:129:8
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: precompose_utf8_readdir at precompose_utf8.c:131:21
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: precompose_utf8_readdir at precompose_utf8.c:134:19
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: precompose_utf8_readdir at precompose_utf8.c:147:37
-    CT: has_non_ascii at precompose_utf8.c:18:0
-    RF: has_non_ascii at precompose_utf8.c:37:1
-    CF: precompose_utf8_readdir at precompose_utf8.c:175:4
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: precompose_utf8_readdir at precompose_utf8.c:178:3
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    RF: precompose_utf8_readdir at precompose_utf8.c:182:1
-    CF: readdir_skip_dot_and_dotdot at dir.c:61:8
-    CT: is_dot_or_dotdot at dir.h:456:0
-    RF: is_dot_or_dotdot at dir.h:457:2
-    RF: readdir_skip_dot_and_dotdot at dir.c:64:2
-    RF: read_cached_dir at dir.c:2478:1
-    CF: read_directory_recursive at dir.c:2572:11
-    CT: treat_path at dir.c:2282:0
-    CF: treat_path at dir.c:2288:6
-    CT: is_dot_or_dotdot at dir.h:456:0
-    RF: is_dot_or_dotdot at dir.h:457:2
-    CF: treat_path at dir.c:2288:41
-    CT: fspathcmp at dir.c:77:0
-    CF: fspathcmp at dir.c:78:23
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    RF: fspathcmp at dir.c:78:2
-    CF: treat_path at dir.c:2290:2
-    CT: strbuf_setlen at strbuf.h:161:0
-    RF: strbuf_setlen at strbuf.h:169:1
-    CF: treat_path at dir.c:2291:2
-    CT: strbuf_addstr at strbuf.h:304:0
-    CF: strbuf_addstr at strbuf.h:305:20
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: strbuf_addstr at strbuf.h:305:2
-    CT: strbuf_add at strbuf.c:297:0
-    CF: strbuf_add at strbuf.c:298:2
-    CT: strbuf_grow at strbuf.c:92:0
-    RF: strbuf_grow at strbuf.c:102:1
-    CF: strbuf_add at strbuf.c:299:2
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: strbuf_add at strbuf.c:300:2
-    CT: strbuf_setlen at strbuf.h:161:0
-    RF: strbuf_setlen at strbuf.h:169:1
-    RF: strbuf_add at strbuf.c:301:1
-    RF: strbuf_addstr at strbuf.h:306:1
-    CF: treat_path at dir.c:2292:6
-    CT: simplify_away at dir.c:2108:0
-    CF: simplify_away at dir.c:2129:8
-    CT: ps_strncmp at pathspec.h:135:0
-    CF: ps_strncmp at pathspec.h:139:10
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    RF: ps_strncmp at pathspec.h:140:1
-    RF: simplify_away at dir.c:2134:1
-    RF: treat_path at dir.c:2361:1
-    CF: read_directory_recursive at dir.c:2632:3
-    CT: add_path_to_appropriate_result_list at dir.c:2502:0
-    RF: add_path_to_appropriate_result_list at dir.c:2526:1
-    CF: read_directory_recursive at dir.c:2570:10
-    CT: read_cached_dir at dir.c:2447:0
-    CF: read_cached_dir at dir.c:2451:8
-    CT: readdir_skip_dot_and_dotdot at dir.c:57:0
-    CF: readdir_skip_dot_and_dotdot at dir.c:60:14
-    CT: precompose_utf8_readdir at precompose_utf8.c:127:0
-    CF: precompose_utf8_readdir at precompose_utf8.c:129:8
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: precompose_utf8_readdir at precompose_utf8.c:131:21
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: precompose_utf8_readdir at precompose_utf8.c:134:19
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: precompose_utf8_readdir at precompose_utf8.c:147:37
-    CT: has_non_ascii at precompose_utf8.c:18:0
-    RF: has_non_ascii at precompose_utf8.c:37:1
-    CF: precompose_utf8_readdir at precompose_utf8.c:175:4
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: precompose_utf8_readdir at precompose_utf8.c:178:3
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    RF: precompose_utf8_readdir at precompose_utf8.c:182:1
-    CF: readdir_skip_dot_and_dotdot at dir.c:61:8
-    CT: is_dot_or_dotdot at dir.h:456:0
-    RF: is_dot_or_dotdot at dir.h:457:2
-    RF: readdir_skip_dot_and_dotdot at dir.c:64:2
-    RF: read_cached_dir at dir.c:2478:1
-    CF: read_directory_recursive at dir.c:2572:11
-    CT: treat_path at dir.c:2282:0
-    CF: treat_path at dir.c:2288:6
-    CT: is_dot_or_dotdot at dir.h:456:0
-    RF: is_dot_or_dotdot at dir.h:457:2
-    CF: treat_path at dir.c:2288:41
-    CT: fspathcmp at dir.c:77:0
-    CF: fspathcmp at dir.c:78:23
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    RF: fspathcmp at dir.c:78:2
-    CF: treat_path at dir.c:2290:2
-    CT: strbuf_setlen at strbuf.h:161:0
-    RF: strbuf_setlen at strbuf.h:169:1
-    CF: treat_path at dir.c:2291:2
-    CT: strbuf_addstr at strbuf.h:304:0
-    CF: strbuf_addstr at strbuf.h:305:20
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: strbuf_addstr at strbuf.h:305:2
-    CT: strbuf_add at strbuf.c:297:0
-    CF: strbuf_add at strbuf.c:298:2
-    CT: strbuf_grow at strbuf.c:92:0
-    RF: strbuf_grow at strbuf.c:102:1
-    CF: strbuf_add at strbuf.c:299:2
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: strbuf_add at strbuf.c:300:2
-    CT: strbuf_setlen at strbuf.h:161:0
-    RF: strbuf_setlen at strbuf.h:169:1
-    RF: strbuf_add at strbuf.c:301:1
-    RF: strbuf_addstr at strbuf.h:306:1
-    CF: treat_path at dir.c:2292:6
-    CT: simplify_away at dir.c:2108:0
-    CF: simplify_away at dir.c:2129:8
-    CT: ps_strncmp at pathspec.h:135:0
-    CF: ps_strncmp at pathspec.h:139:10
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    RF: ps_strncmp at pathspec.h:140:1
-    RF: simplify_away at dir.c:2134:1
-    RF: treat_path at dir.c:2361:1
-    CF: read_directory_recursive at dir.c:2632:3
-    CT: add_path_to_appropriate_result_list at dir.c:2502:0
-    RF: add_path_to_appropriate_result_list at dir.c:2526:1
-    CF: read_directory_recursive at dir.c:2570:10
-    CT: read_cached_dir at dir.c:2447:0
-    CF: read_cached_dir at dir.c:2451:8
-    CT: readdir_skip_dot_and_dotdot at dir.c:57:0
-    CF: readdir_skip_dot_and_dotdot at dir.c:60:14
-    CT: precompose_utf8_readdir at precompose_utf8.c:127:0
-    CF: precompose_utf8_readdir at precompose_utf8.c:129:8
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: precompose_utf8_readdir at precompose_utf8.c:131:21
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: precompose_utf8_readdir at precompose_utf8.c:134:19
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: precompose_utf8_readdir at precompose_utf8.c:147:37
-    CT: has_non_ascii at precompose_utf8.c:18:0
-    RF: has_non_ascii at precompose_utf8.c:37:1
-    CF: precompose_utf8_readdir at precompose_utf8.c:175:4
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: precompose_utf8_readdir at precompose_utf8.c:178:3
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    RF: precompose_utf8_readdir at precompose_utf8.c:182:1
-    CF: readdir_skip_dot_and_dotdot at dir.c:61:8
-    CT: is_dot_or_dotdot at dir.h:456:0
-    RF: is_dot_or_dotdot at dir.h:457:2
-    RF: readdir_skip_dot_and_dotdot at dir.c:64:2
-    RF: read_cached_dir at dir.c:2478:1
-    CF: read_directory_recursive at dir.c:2572:11
-    CT: treat_path at dir.c:2282:0
-    CF: treat_path at dir.c:2288:6
-    CT: is_dot_or_dotdot at dir.h:456:0
-    RF: is_dot_or_dotdot at dir.h:457:2
-    CF: treat_path at dir.c:2288:41
-    CT: fspathcmp at dir.c:77:0
-    CF: fspathcmp at dir.c:78:23
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    RF: fspathcmp at dir.c:78:2
-    CF: treat_path at dir.c:2290:2
-    CT: strbuf_setlen at strbuf.h:161:0
-    RF: strbuf_setlen at strbuf.h:169:1
-    CF: treat_path at dir.c:2291:2
-    CT: strbuf_addstr at strbuf.h:304:0
-    CF: strbuf_addstr at strbuf.h:305:20
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: strbuf_addstr at strbuf.h:305:2
-    CT: strbuf_add at strbuf.c:297:0
-    CF: strbuf_add at strbuf.c:298:2
-    CT: strbuf_grow at strbuf.c:92:0
-    RF: strbuf_grow at strbuf.c:102:1
-    CF: strbuf_add at strbuf.c:299:2
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: strbuf_add at strbuf.c:300:2
-    CT: strbuf_setlen at strbuf.h:161:0
-    RF: strbuf_setlen at strbuf.h:169:1
-    RF: strbuf_add at strbuf.c:301:1
-    RF: strbuf_addstr at strbuf.h:306:1
-    CF: treat_path at dir.c:2292:6
-    CT: simplify_away at dir.c:2108:0
-    CF: simplify_away at dir.c:2129:8
-    CT: ps_strncmp at pathspec.h:135:0
-    CF: ps_strncmp at pathspec.h:139:10
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    RF: ps_strncmp at pathspec.h:140:1
-    RF: simplify_away at dir.c:2134:1
-    RF: treat_path at dir.c:2361:1
-    CF: read_directory_recursive at dir.c:2632:3
-    CT: add_path_to_appropriate_result_list at dir.c:2502:0
-    RF: add_path_to_appropriate_result_list at dir.c:2526:1
-    CF: read_directory_recursive at dir.c:2570:10
-    CT: read_cached_dir at dir.c:2447:0
-    CF: read_cached_dir at dir.c:2451:8
-    CT: readdir_skip_dot_and_dotdot at dir.c:57:0
-    CF: readdir_skip_dot_and_dotdot at dir.c:60:14
-    CT: precompose_utf8_readdir at precompose_utf8.c:127:0
-    CF: precompose_utf8_readdir at precompose_utf8.c:129:8
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: precompose_utf8_readdir at precompose_utf8.c:131:21
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: precompose_utf8_readdir at precompose_utf8.c:134:19
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: precompose_utf8_readdir at precompose_utf8.c:147:37
-    CT: has_non_ascii at precompose_utf8.c:18:0
-    RF: has_non_ascii at precompose_utf8.c:37:1
-    CF: precompose_utf8_readdir at precompose_utf8.c:175:4
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: precompose_utf8_readdir at precompose_utf8.c:178:3
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    RF: precompose_utf8_readdir at precompose_utf8.c:182:1
-    CF: readdir_skip_dot_and_dotdot at dir.c:61:8
-    CT: is_dot_or_dotdot at dir.h:456:0
-    RF: is_dot_or_dotdot at dir.h:457:2
-    RF: readdir_skip_dot_and_dotdot at dir.c:64:2
-    RF: read_cached_dir at dir.c:2478:1
-    CF: read_directory_recursive at dir.c:2572:11
-    CT: treat_path at dir.c:2282:0
-    CF: treat_path at dir.c:2288:6
-    CT: is_dot_or_dotdot at dir.h:456:0
-    RF: is_dot_or_dotdot at dir.h:457:2
-    CF: treat_path at dir.c:2288:41
-    CT: fspathcmp at dir.c:77:0
-    CF: fspathcmp at dir.c:78:23
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    RF: fspathcmp at dir.c:78:2
-    CF: treat_path at dir.c:2290:2
-    CT: strbuf_setlen at strbuf.h:161:0
-    RF: strbuf_setlen at strbuf.h:169:1
-    CF: treat_path at dir.c:2291:2
-    CT: strbuf_addstr at strbuf.h:304:0
-    CF: strbuf_addstr at strbuf.h:305:20
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: strbuf_addstr at strbuf.h:305:2
-    CT: strbuf_add at strbuf.c:297:0
-    CF: strbuf_add at strbuf.c:298:2
-    CT: strbuf_grow at strbuf.c:92:0
-    CT: st_mult at git-compat-util.h:991:0
-    RF: st_mult at git-compat-util.h:995:2
-    CF: strbuf_grow at strbuf.c:99:2
-    CT: xrealloc at wrapper.c:127:0
-    CF: xrealloc at wrapper.c:135:2
-    CT: memory_limit_check at wrapper.c:18:0
-    RF: memory_limit_check at wrapper.c:35:1
-    CF: xrealloc at wrapper.c:136:8
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    RF: xrealloc at wrapper.c:140:1
+    [...354 more events...]
   Occurrences: 1
 
 Uncategorised
@@ -4355,12 +3611,7 @@ Uncategorised
     CF: simplify_away at dir.c:2129:8
     CT: ps_strncmp at pathspec.h:135:0
     CF: ps_strncmp at pathspec.h:139:10
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    RF: ps_strncmp at pathspec.h:140:1
-    RF: simplify_away at dir.c:2134:1
+    [...6 more events...]
   Occurrences: 1
 
 Uncategorised
@@ -4479,8 +3730,46 @@ Uncategorised
     CF: cmp_items at string-list.c:238:9
     CT: External code
     RF: cmp_items at string-list.c:238:2
-    CF: msort_with_tmp at qsort_s.c:37:4
+    CF: msort_with_tmp at qsort_s.c:32:4
   Occurrences: 12
+
+Uncategorised
+  Events:
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: msort_with_tmp at qsort_s.c:31:7
+    CT: cmp_items at string-list.c:234:0
+    CF: cmp_items at string-list.c:238:9
+    CT: External code
+    RF: cmp_items at string-list.c:238:2
+    CF: msort_with_tmp at qsort_s.c:37:4
+  Occurrences: 43
+
+Uncategorised
+  Events:
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: msort_with_tmp at qsort_s.c:31:7
+    CT: cmp_items at string-list.c:234:0
+    CF: cmp_items at string-list.c:238:9
+    CT: External code
+    RF: cmp_items at string-list.c:238:2
+    CF: msort_with_tmp at qsort_s.c:37:4
+    CT: Jump to external code
+    CF: Jump to external code
+    CT: External code
+    RF: Jump to external code
+    CF: msort_with_tmp at qsort_s.c:31:7
+    CT: cmp_items at string-list.c:234:0
+    CF: cmp_items at string-list.c:238:9
+    CT: External code
+    RF: cmp_items at string-list.c:238:2
+    CF: msort_with_tmp at qsort_s.c:37:4
+  Occurrences: 1
 
 Uncategorised
   Events:
@@ -4667,12 +3956,7 @@ Uncategorised
     CT: Jump to external code
     CF: Jump to external code
     CT: External code
-    RF: Jump to external code
-    CF: strbuf_add at strbuf.c:300:2
-    CT: strbuf_setlen at strbuf.h:161:0
-    RF: strbuf_setlen at strbuf.h:169:1
-    RF: strbuf_add at strbuf.c:301:1
-    CF: prep_childenv at run-command.c:455:4
+    [...6 more events...]
   Occurrences: 16
 
 Uncategorised
@@ -4854,35 +4138,7 @@ Uncategorised
     CF: strbuf_add at strbuf.c:298:2
     CT: strbuf_grow at strbuf.c:92:0
     RF: strbuf_grow at strbuf.c:102:1
-    CF: strbuf_add at strbuf.c:299:2
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    CF: strbuf_add at strbuf.c:300:2
-    CT: strbuf_setlen at strbuf.h:161:0
-    RF: strbuf_setlen at strbuf.h:169:1
-    RF: strbuf_add at strbuf.c:301:1
-    RF: strbuf_addstr at strbuf.h:306:1
-    CF: treat_path at dir.c:2292:6
-    CT: simplify_away at dir.c:2108:0
-    CF: simplify_away at dir.c:2129:8
-    CT: ps_strncmp at pathspec.h:135:0
-    CF: ps_strncmp at pathspec.h:139:10
-    CT: Jump to external code
-    CF: Jump to external code
-    CT: External code
-    RF: Jump to external code
-    RF: ps_strncmp at pathspec.h:140:1
-    RF: simplify_away at dir.c:2134:1
-    RF: treat_path at dir.c:2361:1
-    CF: read_directory_recursive at dir.c:2632:3
-    CT: add_path_to_appropriate_result_list at dir.c:2502:0
-    RF: add_path_to_appropriate_result_list at dir.c:2526:1
-    CF: read_directory_recursive at dir.c:2570:10
-    CT: read_cached_dir at dir.c:2447:0
-    CF: read_cached_dir at dir.c:2451:8
-    CT: readdir_skip_dot_and_dotdot at dir.c:57:0
+    [...29 more events...]
   Occurrences: 1
 
 Uncategorised
@@ -4952,8 +4208,11 @@ Uncategorised
 CoordinatesRemoved
   Unique divergence coordinates: 90
 
-CoordinatesChanged
-  Unique divergence coordinates: 77
+CoordinatesChangedSmall
+  Unique divergence coordinates: 43
+
+CoordinatesChangedLarge
+  Unique divergence coordinates: 34
 
 LibraryCallRemoved
   Unique divergence coordinates: 175
@@ -4962,9 +4221,9 @@ ProgramCallRemoved
   Unique divergence coordinates: 35
 
 Uncategorised
-  Unique divergence coordinates: 141
+  Unique divergence coordinates: 142
 
 ## Summary
 
-518 unique divergence coordinates
-40900 divergence occurrences
+519 unique divergence coordinates
+40856 divergence occurrences
