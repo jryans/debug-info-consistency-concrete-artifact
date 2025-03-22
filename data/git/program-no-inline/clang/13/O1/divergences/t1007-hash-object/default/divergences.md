@@ -66,6 +66,12 @@ CoordinatesRemoved
 
 CoordinatesRemoved
   Events:
+    CF: for_each_file_in_pack_dir at packfile.c:840:2
+    CF: for_each_file_in_pack_dir at packfile.c:0:4
+  Occurrences: 2
+
+CoordinatesRemoved
+  Events:
     CF: getnanotime at trace.c:397:18
     CF: getnanotime at trace.c:0:0
   Occurrences: 26
@@ -126,9 +132,21 @@ CoordinatesRemoved
 
 CoordinatesRemoved
   Events:
+    CF: setup_git_directory_gently at setup.c:1574:3
+    CF: setup_git_directory_gently at setup.c:0:12
+  Occurrences: 18
+
+CoordinatesRemoved
+  Events:
     CF: setup_path at exec-cmd.c:314:3
     CF: setup_path at exec-cmd.c:0:0
   Occurrences: 26
+
+CoordinatesRemoved
+  Events:
+    CF: store_create_section at config.c:2990:3
+    CF: store_create_section at config.c:0:3
+  Occurrences: 6
 
 CoordinatesRemoved
   Events:
@@ -138,8 +156,20 @@ CoordinatesRemoved
 
 CoordinatesRemoved
   Events:
+    CF: string_list_split at string-list.c:296:4
+    CF: string_list_split at string-list.c:0:21
+  Occurrences: 30
+
+CoordinatesRemoved
+  Events:
     CF: usage_argh at parse-options.c:1019:47
     CF: usage_argh at parse-options.c:0:0
+  Occurrences: 12
+
+CoordinatesRemoved
+  Events:
+    CF: usage_with_options_internal at parse-options.c:1096:5
+    CF: usage_with_options_internal at parse-options.c:0:3
   Occurrences: 12
 
 CoordinatesRemoved
@@ -231,36 +261,6 @@ CoordinatesChangedSmall
     RF: strbuf_realpath_1 at abspath.c:199:2
     RF: strbuf_realpath_1 at abspath.c:200:1
   Occurrences: 72
-
-CoordinatesChangedLarge
-  Events:
-    CF: for_each_file_in_pack_dir at packfile.c:840:2
-    CF: for_each_file_in_pack_dir at packfile.c:0:4
-  Occurrences: 2
-
-CoordinatesChangedLarge
-  Events:
-    CF: setup_git_directory_gently at setup.c:1574:3
-    CF: setup_git_directory_gently at setup.c:0:12
-  Occurrences: 18
-
-CoordinatesChangedLarge
-  Events:
-    CF: store_create_section at config.c:2990:3
-    CF: store_create_section at config.c:0:3
-  Occurrences: 6
-
-CoordinatesChangedLarge
-  Events:
-    CF: string_list_split at string-list.c:296:4
-    CF: string_list_split at string-list.c:0:21
-  Occurrences: 30
-
-CoordinatesChangedLarge
-  Events:
-    CF: usage_with_options_internal at parse-options.c:1096:5
-    CF: usage_with_options_internal at parse-options.c:0:3
-  Occurrences: 12
 
 CoordinatesChangedLarge
   Events:
@@ -763,13 +763,13 @@ ProgramCallRemoved
 ## Divergences with unique coordinates by type
 
 CoordinatesRemoved
-  Unique divergence coordinates: 25
+  Unique divergence coordinates: 30
 
 CoordinatesChangedSmall
   Unique divergence coordinates: 13
 
 CoordinatesChangedLarge
-  Unique divergence coordinates: 7
+  Unique divergence coordinates: 2
 
 LibraryCallRemoved
   Unique divergence coordinates: 40

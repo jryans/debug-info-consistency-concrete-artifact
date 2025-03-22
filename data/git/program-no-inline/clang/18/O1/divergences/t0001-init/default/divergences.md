@@ -12,6 +12,12 @@ CoordinatesRemoved
 
 CoordinatesRemoved
   Events:
+    CF: apply_save_autostash at sequencer.c:4484:3
+    CF: apply_save_autostash at sequencer.c:0:2
+  Occurrences: 5
+
+CoordinatesRemoved
+  Events:
     CF: calc_shared_perm at path.c:873:12
     CF: calc_shared_perm at path.c:0:0
   Occurrences: 105
@@ -51,6 +57,12 @@ CoordinatesRemoved
     CF: cmd_clone at clone.c:1031:20
     CF: cmd_clone at clone.c:0:0
   Occurrences: 1
+
+CoordinatesRemoved
+  Events:
+    CF: cmd_config at config.c:696:4
+    CF: cmd_config at config.c:0:7
+  Occurrences: 14
 
 CoordinatesRemoved
   Events:
@@ -120,6 +132,12 @@ CoordinatesRemoved
 
 CoordinatesRemoved
   Events:
+    CF: create_branch at branch.c:611:9
+    CF: create_branch at branch.c:0:23
+  Occurrences: 1
+
+CoordinatesRemoved
+  Events:
     CF: create_default_files at init-db.c:288:3
     CF: create_default_files at init-db.c:0:0
   Occurrences: 12
@@ -177,6 +195,18 @@ CoordinatesRemoved
     CF: files_reflog_path at files-backend.c:157:3
     CF: files_reflog_path at files-backend.c:0:0
   Occurrences: 9
+
+CoordinatesRemoved
+  Events:
+    CF: for_each_file_in_obj_subdir at object-file.c:2624:2
+    CF: for_each_file_in_obj_subdir at object-file.c:0:8
+  Occurrences: 11
+
+CoordinatesRemoved
+  Events:
+    CF: for_each_file_in_pack_dir at packfile.c:840:2
+    CF: for_each_file_in_pack_dir at packfile.c:0:4
+  Occurrences: 19
 
 CoordinatesRemoved
   Events:
@@ -354,6 +384,18 @@ CoordinatesRemoved
 
 CoordinatesRemoved
   Events:
+    CF: log_ref_setup at files-backend.c:1671:2
+    CF: log_ref_setup at files-backend.c:0:3
+  Occurrences: 16
+
+CoordinatesRemoved
+  Events:
+    CF: lookup_fsmonitor_settings at fsmonitor-settings.c:141:3
+    CF: lookup_fsmonitor_settings at fsmonitor-settings.c:0:3
+  Occurrences: 9
+
+CoordinatesRemoved
+  Events:
     CF: loose_fill_ref_dir at files-backend.c:265:4
     CF: loose_fill_ref_dir at files-backend.c:0:0
   Occurrences: 26
@@ -384,6 +426,12 @@ CoordinatesRemoved
 
 CoordinatesRemoved
   Events:
+    CF: print_path at rev-parse.c:650:3
+    CF: print_path at rev-parse.c:0:3
+  Occurrences: 4
+
+CoordinatesRemoved
+  Events:
     CF: print_preparing_worktree_line at worktree.c:557:22
     CF: print_preparing_worktree_line at worktree.c:0:0
   Occurrences: 1
@@ -405,6 +453,12 @@ CoordinatesRemoved
     CF: read_info_alternates at object-file.c:625:3
     CF: read_info_alternates at object-file.c:0:0
   Occurrences: 19
+
+CoordinatesRemoved
+  Events:
+    CF: read_istream_loose at streaming.c:202:4
+    CF: read_istream_loose at streaming.c:0:7
+  Occurrences: 1
 
 CoordinatesRemoved
   Events:
@@ -474,9 +528,21 @@ CoordinatesRemoved
 
 CoordinatesRemoved
   Events:
+    CF: store_create_section at config.c:2986:3
+    CF: store_create_section at config.c:0:3
+  Occurrences: 1
+
+CoordinatesRemoved
+  Events:
     CF: strbuf_add_absolute_path at strbuf.c:912:4
     CF: strbuf_add_absolute_path at strbuf.c:0:0
   Occurrences: 51
+
+CoordinatesRemoved
+  Events:
+    CF: string_list_split at string-list.c:296:4
+    CF: string_list_split at string-list.c:0:21
+  Occurrences: 87
 
 CoordinatesRemoved
   Events:
@@ -498,6 +564,12 @@ CoordinatesRemoved
 
 CoordinatesRemoved
   Events:
+    CF: write_locked_index at read-cache.c:3444:3
+    CF: write_locked_index at read-cache.c:0:3
+  Occurrences: 9
+
+CoordinatesRemoved
+  Events:
     CF: xdg_config_home_for at path.c:1535:10
     CF: xdg_config_home_for at path.c:0:0
   Occurrences: 430
@@ -512,6 +584,12 @@ CoordinatesRemoved
   Events:
     CF: xdl_diff at xdiffi.c:1084:3
     CF: xdl_diff at xdiffi.c:0:0
+  Occurrences: 4
+
+CoordinatesRemoved
+  Events:
+    CF: xdl_diff at xdiffi.c:1086:2
+    CF: xdl_diff at xdiffi.c:0:7
   Occurrences: 4
 
 CoordinatesRemoved
@@ -3228,21 +3306,9 @@ CoordinatesChangedLarge
 
 CoordinatesChangedLarge
   Events:
-    CF: apply_save_autostash at sequencer.c:4484:3
-    CF: apply_save_autostash at sequencer.c:0:2
-  Occurrences: 5
-
-CoordinatesChangedLarge
-  Events:
     CF: cmd_clone at clone.c:1031:4
     CF: cmd_clone at clone.c:0:0
   Occurrences: 1
-
-CoordinatesChangedLarge
-  Events:
-    CF: cmd_config at config.c:696:4
-    CF: cmd_config at config.c:0:7
-  Occurrences: 14
 
 CoordinatesChangedLarge
   Events:
@@ -3270,27 +3336,9 @@ CoordinatesChangedLarge
 
 CoordinatesChangedLarge
   Events:
-    CF: create_branch at branch.c:611:9
-    CF: create_branch at branch.c:0:23
-  Occurrences: 1
-
-CoordinatesChangedLarge
-  Events:
     CF: die_initial_contact at connect.c:63:3
     CF: die_initial_contact at connect.c:0:0
   Occurrences: 1
-
-CoordinatesChangedLarge
-  Events:
-    CF: for_each_file_in_obj_subdir at object-file.c:2624:2
-    CF: for_each_file_in_obj_subdir at object-file.c:0:8
-  Occurrences: 11
-
-CoordinatesChangedLarge
-  Events:
-    CF: for_each_file_in_pack_dir at packfile.c:840:2
-    CF: for_each_file_in_pack_dir at packfile.c:0:4
-  Occurrences: 19
 
 CoordinatesChangedLarge
   Events:
@@ -3312,38 +3360,14 @@ CoordinatesChangedLarge
 
 CoordinatesChangedLarge
   Events:
-    CF: log_ref_setup at files-backend.c:1671:2
-    CF: log_ref_setup at files-backend.c:0:3
-  Occurrences: 16
-
-CoordinatesChangedLarge
-  Events:
-    CF: lookup_fsmonitor_settings at fsmonitor-settings.c:141:3
-    CF: lookup_fsmonitor_settings at fsmonitor-settings.c:0:3
-  Occurrences: 9
-
-CoordinatesChangedLarge
-  Events:
     CF: prep_childenv at run-command.c:455:4
     CF: prep_childenv at run-command.c:0:0
   Occurrences: 1565
 
 CoordinatesChangedLarge
   Events:
-    CF: print_path at rev-parse.c:650:3
-    CF: print_path at rev-parse.c:0:3
-  Occurrences: 4
-
-CoordinatesChangedLarge
-  Events:
     CF: print_preparing_worktree_line at worktree.c:557:3
     CF: print_preparing_worktree_line at worktree.c:0:0
-  Occurrences: 1
-
-CoordinatesChangedLarge
-  Events:
-    CF: read_istream_loose at streaming.c:202:4
-    CF: read_istream_loose at streaming.c:0:7
   Occurrences: 1
 
 CoordinatesChangedLarge
@@ -3360,33 +3384,9 @@ CoordinatesChangedLarge
 
 CoordinatesChangedLarge
   Events:
-    CF: store_create_section at config.c:2986:3
-    CF: store_create_section at config.c:0:3
-  Occurrences: 1
-
-CoordinatesChangedLarge
-  Events:
     CF: store_create_section at config.c:2990:3
     CF: store_create_section at config.c:0:3
   Occurrences: 62
-
-CoordinatesChangedLarge
-  Events:
-    CF: string_list_split at string-list.c:296:4
-    CF: string_list_split at string-list.c:0:21
-  Occurrences: 87
-
-CoordinatesChangedLarge
-  Events:
-    CF: write_locked_index at read-cache.c:3444:3
-    CF: write_locked_index at read-cache.c:0:3
-  Occurrences: 9
-
-CoordinatesChangedLarge
-  Events:
-    CF: xdl_diff at xdiffi.c:1086:2
-    CF: xdl_diff at xdiffi.c:0:7
-  Occurrences: 4
 
 CoordinatesChangedLarge
   Events:
@@ -9173,13 +9173,13 @@ Uncategorised
 ## Divergences with unique coordinates by type
 
 CoordinatesRemoved
-  Unique divergence coordinates: 397
+  Unique divergence coordinates: 410
 
 CoordinatesChangedSmall
   Unique divergence coordinates: 139
 
 CoordinatesChangedLarge
-  Unique divergence coordinates: 126
+  Unique divergence coordinates: 113
 
 LibraryCallRemoved
   Unique divergence coordinates: 153

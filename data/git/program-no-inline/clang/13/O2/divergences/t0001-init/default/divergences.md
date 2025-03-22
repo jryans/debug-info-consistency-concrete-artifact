@@ -12,6 +12,12 @@ CoordinatesRemoved
 
 CoordinatesRemoved
   Events:
+    CF: apply_save_autostash at sequencer.c:4484:3
+    CF: apply_save_autostash at sequencer.c:0:2
+  Occurrences: 5
+
+CoordinatesRemoved
+  Events:
     CF: calc_shared_perm at path.c:873:12
     CF: calc_shared_perm at path.c:0:0
   Occurrences: 105
@@ -114,6 +120,12 @@ CoordinatesRemoved
 
 CoordinatesRemoved
   Events:
+    CF: create_branch at branch.c:611:9
+    CF: create_branch at branch.c:0:23
+  Occurrences: 1
+
+CoordinatesRemoved
+  Events:
     CF: create_default_files at init-db.c:288:3
     CF: create_default_files at init-db.c:0:0
   Occurrences: 12
@@ -180,8 +192,20 @@ CoordinatesRemoved
 
 CoordinatesRemoved
   Events:
+    CF: for_each_file_in_pack_dir at packfile.c:840:2
+    CF: for_each_file_in_pack_dir at packfile.c:0:4
+  Occurrences: 19
+
+CoordinatesRemoved
+  Events:
     CF: format_commit_one at pretty.c:1467:21
     CF: format_commit_one at pretty.c:0:0
+  Occurrences: 4
+
+CoordinatesRemoved
+  Events:
+    CF: format_commit_one at pretty.c:1467:3
+    CF: format_commit_one at pretty.c:0:21
   Occurrences: 4
 
 CoordinatesRemoved
@@ -342,6 +366,18 @@ CoordinatesRemoved
 
 CoordinatesRemoved
   Events:
+    CF: log_ref_setup at files-backend.c:1671:2
+    CF: log_ref_setup at files-backend.c:0:3
+  Occurrences: 16
+
+CoordinatesRemoved
+  Events:
+    CF: lookup_fsmonitor_settings at fsmonitor-settings.c:141:3
+    CF: lookup_fsmonitor_settings at fsmonitor-settings.c:0:3
+  Occurrences: 9
+
+CoordinatesRemoved
+  Events:
     CF: loose_fill_ref_dir at files-backend.c:265:4
     CF: loose_fill_ref_dir at files-backend.c:0:0
   Occurrences: 26
@@ -408,6 +444,12 @@ CoordinatesRemoved
 
 CoordinatesRemoved
   Events:
+    CF: repair_gitfile at worktree.c:566:12
+    CF: repair_gitfile at worktree.c:0:11
+  Occurrences: 2
+
+CoordinatesRemoved
+  Events:
     CF: repo_read_index_preload at preload-index.c:172:2
     RF: repo_read_index_preload at preload-index.c:0:0
   Occurrences: 8
@@ -450,6 +492,30 @@ CoordinatesRemoved
 
 CoordinatesRemoved
   Events:
+    CF: setup_explicit_git_dir at setup.c:975:2
+    CF: setup_explicit_git_dir at setup.c:0:30
+  Occurrences: 2
+
+CoordinatesRemoved
+  Events:
+    CF: setup_explicit_git_dir at setup.c:976:2
+    CF: setup_explicit_git_dir at setup.c:0:30
+  Occurrences: 2
+
+CoordinatesRemoved
+  Events:
+    CF: setup_git_directory_gently at setup.c:1571:3
+    CF: setup_git_directory_gently at setup.c:0:12
+  Occurrences: 3
+
+CoordinatesRemoved
+  Events:
+    CF: setup_git_directory_gently at setup.c:1574:3
+    CF: setup_git_directory_gently at setup.c:0:12
+  Occurrences: 77
+
+CoordinatesRemoved
+  Events:
     CF: start_command at run-command.c:953:3
     CF: start_command at run-command.c:0:0
   Occurrences: 4
@@ -489,6 +555,12 @@ CoordinatesRemoved
     CF: strbuf_read at strbuf.c:521:2
     CF: strbuf_read at strbuf.c:0:0
   Occurrences: 136
+
+CoordinatesRemoved
+  Events:
+    CF: string_list_split at string-list.c:296:4
+    CF: string_list_split at string-list.c:0:21
+  Occurrences: 87
 
 CoordinatesRemoved
   Events:
@@ -536,6 +608,12 @@ CoordinatesRemoved
   Events:
     CF: xdl_diff at xdiffi.c:1084:3
     CF: xdl_diff at xdiffi.c:0:0
+  Occurrences: 4
+
+CoordinatesRemoved
+  Events:
+    CF: xdl_diff at xdiffi.c:1086:2
+    CF: xdl_diff at xdiffi.c:0:7
   Occurrences: 4
 
 CoordinatesRemoved
@@ -2442,12 +2520,6 @@ CoordinatesChangedLarge
 
 CoordinatesChangedLarge
   Events:
-    CF: apply_save_autostash at sequencer.c:4484:3
-    CF: apply_save_autostash at sequencer.c:0:2
-  Occurrences: 5
-
-CoordinatesChangedLarge
-  Events:
     CF: cmd_clone at clone.c:1031:4
     CF: cmd_clone at clone.c:0:0
   Occurrences: 1
@@ -2478,27 +2550,9 @@ CoordinatesChangedLarge
 
 CoordinatesChangedLarge
   Events:
-    CF: create_branch at branch.c:611:9
-    CF: create_branch at branch.c:0:23
-  Occurrences: 1
-
-CoordinatesChangedLarge
-  Events:
     CF: die_initial_contact at connect.c:63:3
     CF: die_initial_contact at connect.c:0:0
   Occurrences: 1
-
-CoordinatesChangedLarge
-  Events:
-    CF: for_each_file_in_pack_dir at packfile.c:840:2
-    CF: for_each_file_in_pack_dir at packfile.c:0:4
-  Occurrences: 19
-
-CoordinatesChangedLarge
-  Events:
-    CF: format_commit_one at pretty.c:1467:3
-    CF: format_commit_one at pretty.c:0:21
-  Occurrences: 4
 
 CoordinatesChangedLarge
   Events:
@@ -2511,18 +2565,6 @@ CoordinatesChangedLarge
     CF: init_db at init-db.c:467:4
     CF: init_db at init-db.c:0:0
   Occurrences: 48
-
-CoordinatesChangedLarge
-  Events:
-    CF: log_ref_setup at files-backend.c:1671:2
-    CF: log_ref_setup at files-backend.c:0:3
-  Occurrences: 16
-
-CoordinatesChangedLarge
-  Events:
-    CF: lookup_fsmonitor_settings at fsmonitor-settings.c:141:3
-    CF: lookup_fsmonitor_settings at fsmonitor-settings.c:0:3
-  Occurrences: 9
 
 CoordinatesChangedLarge
   Events:
@@ -2562,36 +2604,6 @@ CoordinatesChangedLarge
 
 CoordinatesChangedLarge
   Events:
-    CF: repair_gitfile at worktree.c:566:12
-    CF: repair_gitfile at worktree.c:0:11
-  Occurrences: 2
-
-CoordinatesChangedLarge
-  Events:
-    CF: setup_explicit_git_dir at setup.c:975:2
-    CF: setup_explicit_git_dir at setup.c:0:30
-  Occurrences: 2
-
-CoordinatesChangedLarge
-  Events:
-    CF: setup_explicit_git_dir at setup.c:976:2
-    CF: setup_explicit_git_dir at setup.c:0:30
-  Occurrences: 2
-
-CoordinatesChangedLarge
-  Events:
-    CF: setup_git_directory_gently at setup.c:1571:3
-    CF: setup_git_directory_gently at setup.c:0:12
-  Occurrences: 3
-
-CoordinatesChangedLarge
-  Events:
-    CF: setup_git_directory_gently at setup.c:1574:3
-    CF: setup_git_directory_gently at setup.c:0:12
-  Occurrences: 77
-
-CoordinatesChangedLarge
-  Events:
     CF: setup_path at exec-cmd.c:314:3
     CF: setup_path at exec-cmd.c:0:0
   Occurrences: 153
@@ -2607,18 +2619,6 @@ CoordinatesChangedLarge
     CF: store_create_section at config.c:2990:3
     CF: store_create_section at config.c:0:0
   Occurrences: 62
-
-CoordinatesChangedLarge
-  Events:
-    CF: string_list_split at string-list.c:296:4
-    CF: string_list_split at string-list.c:0:21
-  Occurrences: 87
-
-CoordinatesChangedLarge
-  Events:
-    CF: xdl_diff at xdiffi.c:1086:2
-    CF: xdl_diff at xdiffi.c:0:7
-  Occurrences: 4
 
 CoordinatesChangedLarge
   Events:
@@ -8414,13 +8414,13 @@ Uncategorised
 ## Divergences with unique coordinates by type
 
 CoordinatesRemoved
-  Unique divergence coordinates: 364
+  Unique divergence coordinates: 377
 
 CoordinatesChangedSmall
   Unique divergence coordinates: 41
 
 CoordinatesChangedLarge
-  Unique divergence coordinates: 100
+  Unique divergence coordinates: 87
 
 LibraryCallRemoved
   Unique divergence coordinates: 172

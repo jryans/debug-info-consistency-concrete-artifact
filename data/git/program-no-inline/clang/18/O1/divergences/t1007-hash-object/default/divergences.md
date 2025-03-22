@@ -30,6 +30,12 @@ CoordinatesRemoved
 
 CoordinatesRemoved
   Events:
+    CF: for_each_file_in_pack_dir at packfile.c:840:2
+    CF: for_each_file_in_pack_dir at packfile.c:0:4
+  Occurrences: 2
+
+CoordinatesRemoved
+  Events:
     CF: getnanotime at trace.c:397:18
     CF: getnanotime at trace.c:0:0
   Occurrences: 26
@@ -93,6 +99,12 @@ CoordinatesRemoved
     CF: read_info_alternates at object-file.c:625:3
     CF: read_info_alternates at object-file.c:0:0
   Occurrences: 2
+
+CoordinatesRemoved
+  Events:
+    CF: string_list_split at string-list.c:296:4
+    CF: string_list_split at string-list.c:0:21
+  Occurrences: 30
 
 CoordinatesRemoved
   Events:
@@ -1092,12 +1104,6 @@ CoordinatesChangedLarge
 
 CoordinatesChangedLarge
   Events:
-    CF: for_each_file_in_pack_dir at packfile.c:840:2
-    CF: for_each_file_in_pack_dir at packfile.c:0:4
-  Occurrences: 2
-
-CoordinatesChangedLarge
-  Events:
     CF: init_db at init-db.c:467:4
     CF: init_db at init-db.c:0:0
   Occurrences: 6
@@ -1113,12 +1119,6 @@ CoordinatesChangedLarge
     CF: store_create_section at config.c:2990:3
     CF: store_create_section at config.c:0:3
   Occurrences: 6
-
-CoordinatesChangedLarge
-  Events:
-    CF: string_list_split at string-list.c:296:4
-    CF: string_list_split at string-list.c:0:21
-  Occurrences: 30
 
 CoordinatesChangedLarge
   Events:
@@ -1918,13 +1918,13 @@ Uncategorised
 ## Divergences with unique coordinates by type
 
 CoordinatesRemoved
-  Unique divergence coordinates: 135
+  Unique divergence coordinates: 137
 
 CoordinatesChangedSmall
   Unique divergence coordinates: 43
 
 CoordinatesChangedLarge
-  Unique divergence coordinates: 34
+  Unique divergence coordinates: 32
 
 LibraryCallRemoved
   Unique divergence coordinates: 35

@@ -48,6 +48,12 @@ CoordinatesRemoved
 
 CoordinatesRemoved
   Events:
+    CF: for_each_file_in_pack_dir at packfile.c:840:2
+    CF: for_each_file_in_pack_dir at packfile.c:0:4
+  Occurrences: 2
+
+CoordinatesRemoved
+  Events:
     CF: get_extended_base_var at config.c:928:2
     CF: get_extended_base_var at config.c:0:0
   Occurrences: 4
@@ -120,14 +126,32 @@ CoordinatesRemoved
 
 CoordinatesRemoved
   Events:
+    CF: setup_git_directory_gently at setup.c:1574:3
+    CF: setup_git_directory_gently at setup.c:0:12
+  Occurrences: 18
+
+CoordinatesRemoved
+  Events:
     CF: strbuf_read at strbuf.c:521:2
     CF: strbuf_read at strbuf.c:0:0
   Occurrences: 6
 
 CoordinatesRemoved
   Events:
+    CF: string_list_split at string-list.c:296:4
+    CF: string_list_split at string-list.c:0:21
+  Occurrences: 30
+
+CoordinatesRemoved
+  Events:
     CF: usage_argh at parse-options.c:1019:47
     CF: usage_argh at parse-options.c:0:0
+  Occurrences: 12
+
+CoordinatesRemoved
+  Events:
+    CF: usage_with_options_internal at parse-options.c:1096:5
+    CF: usage_with_options_internal at parse-options.c:0:3
   Occurrences: 12
 
 CoordinatesRemoved
@@ -894,21 +918,9 @@ CoordinatesChangedLarge
 
 CoordinatesChangedLarge
   Events:
-    CF: for_each_file_in_pack_dir at packfile.c:840:2
-    CF: for_each_file_in_pack_dir at packfile.c:0:4
-  Occurrences: 2
-
-CoordinatesChangedLarge
-  Events:
     CF: init_db at init-db.c:467:4
     CF: init_db at init-db.c:0:0
   Occurrences: 6
-
-CoordinatesChangedLarge
-  Events:
-    CF: setup_git_directory_gently at setup.c:1574:3
-    CF: setup_git_directory_gently at setup.c:0:12
-  Occurrences: 18
 
 CoordinatesChangedLarge
   Events:
@@ -921,18 +933,6 @@ CoordinatesChangedLarge
     CF: store_create_section at config.c:2990:3
     CF: store_create_section at config.c:0:0
   Occurrences: 6
-
-CoordinatesChangedLarge
-  Events:
-    CF: string_list_split at string-list.c:296:4
-    CF: string_list_split at string-list.c:0:21
-  Occurrences: 30
-
-CoordinatesChangedLarge
-  Events:
-    CF: usage_with_options_internal at parse-options.c:1096:5
-    CF: usage_with_options_internal at parse-options.c:0:3
-  Occurrences: 12
 
 CoordinatesChangedLarge
   Events:
@@ -1659,13 +1659,13 @@ Uncategorised
 ## Divergences with unique coordinates by type
 
 CoordinatesRemoved
-  Unique divergence coordinates: 133
+  Unique divergence coordinates: 137
 
 CoordinatesChangedSmall
   Unique divergence coordinates: 12
 
 CoordinatesChangedLarge
-  Unique divergence coordinates: 29
+  Unique divergence coordinates: 25
 
 LibraryCallRemoved
   Unique divergence coordinates: 36
