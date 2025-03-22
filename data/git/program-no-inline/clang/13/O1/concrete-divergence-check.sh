@@ -27,6 +27,7 @@ for test_path in concrete-trace/t*; do
   # Collect divergence report and events by type
   mkdir -p divergences/${test}/default
   mkdir -p divergences/${test}/default/events
+  rm -f divergences/${test}/default/events/*
   ${CON_COMPARE} \
     --events-by-type-dir divergences/${test}/default/events \
     ../O0/concrete-trace/${test}/default/trace \
@@ -35,6 +36,7 @@ for test_path in concrete-trace/t*; do
 
   # Count unique divergence lines by type
   mkdir -p divergences/${test}/default/counts
+  rm -f divergences/${test}/default/counts/*
   for divergence_type_path in divergences/${test}/default/events/*; do
     divergence_type=$(basename ${divergence_type_path})
     # These files do not include indentation
@@ -54,6 +56,7 @@ done
 
 # Aggregate unique line counts across all tests by type
 mkdir -p divergences/summary/default/counts
+rm -f divergences/summary/default/counts/*
 for divergence_type_path in divergences/t0001-init/default/events/*; do
   divergence_type=$(basename ${divergence_type_path})
   cat divergences/t*/default/events/${divergence_type} | \
