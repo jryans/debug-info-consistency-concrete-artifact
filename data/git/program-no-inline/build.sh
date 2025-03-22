@@ -18,8 +18,10 @@ TARGET_PATH="${TARGET_NAME}"
 
 # Clang
 
-  levels=(O0 O1 O2)
-versions=(13 13 13)
+#   levels=(O0 O1 O2 O0 O1)
+# versions=(13 13 13 18 18)
+  levels=(O0 O1)
+versions=(18 18)
 
 for i in ${!levels[*]}; do
   level=${levels[$i]}
@@ -112,8 +114,10 @@ done
 
 # GCC
 
-  levels=(O0 O1 O2)
-versions=(11 11 11)
+#   levels=(O0 O1 O2 O0 O1)
+# versions=(11 11 11 14 14)
+  levels=(O0 O1)
+versions=(14 14)
 
 for i in ${!levels[*]}; do
   version=${versions[$i]}
