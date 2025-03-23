@@ -829,109 +829,109 @@ CoordinatesChangedLarge
 LibraryCallRemoved
   Events:
     CF: config_store_data_clear at config.c:2871:2
-    CT: Jump to external code
-    CF: Jump to external code
+    CT: Jump to external code for ___memset_chk
+    CF: Jump to external code for ___memset_chk
     CT: External code
-    RF: Jump to external code
+    RF: Jump to external code for ___memset_chk
   Occurrences: 36
 
 LibraryCallRemoved
   Events:
     CF: git_deflate_init at zlib.c:162:2
-    CT: Jump to external code
-    CF: Jump to external code
+    CT: Jump to external code for ___memset_chk
+    CF: Jump to external code for ___memset_chk
     CT: External code
-    RF: Jump to external code
+    RF: Jump to external code for ___memset_chk
   Occurrences: 1
 
 LibraryCallRemoved
   Events:
     CF: git_hash_sha1_final_oid at object-file.c:107:2
-    CT: Jump to external code
-    CF: Jump to external code
+    CT: Jump to external code for ___memset_chk
+    CF: Jump to external code for ___memset_chk
     CT: External code
-    RF: Jump to external code
+    RF: Jump to external code for ___memset_chk
   Occurrences: 7
 
 LibraryCallRemoved
   Events:
     CF: hashmap_clear_ at hashmap.c:209:2
-    CT: Jump to external code
-    CF: Jump to external code
+    CT: Jump to external code for ___memset_chk
+    CF: Jump to external code for ___memset_chk
     CT: External code
-    RF: Jump to external code
+    RF: Jump to external code for ___memset_chk
   Occurrences: 12
 
 LibraryCallRemoved
   Events:
     CF: hashmap_init at hashmap.c:158:2
-    CT: Jump to external code
-    CF: Jump to external code
+    CT: Jump to external code for ___memset_chk
+    CF: Jump to external code for ___memset_chk
     CT: External code
-    RF: Jump to external code
+    RF: Jump to external code for ___memset_chk
   Occurrences: 126
 
 LibraryCallRemoved
   Events:
     CF: init_repository_format at setup.c:712:2
-    CT: Jump to external code
-    CF: Jump to external code
+    CT: Jump to external code for ___memcpy_chk
+    CF: Jump to external code for ___memcpy_chk
     CT: External code
-    RF: Jump to external code
+    RF: Jump to external code for ___memcpy_chk
   Occurrences: 72
 
 LibraryCallRemoved
   Events:
     CF: load_multi_pack_index at midx.c:180:2
-    CT: Jump to external code
-    CF: Jump to external code
+    CT: Jump to external code for _free
+    CF: Jump to external code for _free
     CT: External code
-    RF: Jump to external code
+    RF: Jump to external code for _free
   Occurrences: 2
 
 LibraryCallRemoved
   Events:
     CF: oidclr at hash.h:302:2
-    CT: Jump to external code
-    CF: Jump to external code
+    CT: Jump to external code for ___memset_chk
+    CF: Jump to external code for ___memset_chk
     CT: External code
-    RF: Jump to external code
+    RF: Jump to external code for ___memset_chk
   Occurrences: 6
 
 LibraryCallRemoved
   Events:
     CF: parsed_object_pool_new at object.c:503:2
-    CT: Jump to external code
-    CF: Jump to external code
+    CT: Jump to external code for ___memset_chk
+    CF: Jump to external code for ___memset_chk
     CT: External code
-    RF: Jump to external code
+    RF: Jump to external code for ___memset_chk
   Occurrences: 26
 
 LibraryCallRemoved
   Events:
     CF: raw_object_store_new at object.c:523:2
-    CT: Jump to external code
-    CF: Jump to external code
+    CT: Jump to external code for ___memset_chk
+    CF: Jump to external code for ___memset_chk
     CT: External code
-    RF: Jump to external code
+    RF: Jump to external code for ___memset_chk
   Occurrences: 26
 
 LibraryCallRemoved
   Events:
     CF: remote_state_new at remote.c:2746:2
-    CT: Jump to external code
-    CF: Jump to external code
+    CT: Jump to external code for ___memset_chk
+    CF: Jump to external code for ___memset_chk
     CT: External code
-    RF: Jump to external code
+    RF: Jump to external code for ___memset_chk
   Occurrences: 26
 
 LibraryCallRemoved
   Events:
     CF: strbuf_init at strbuf.c:57:2
-    CT: Jump to external code
-    CF: Jump to external code
+    CT: Jump to external code for ___memcpy_chk
+    CF: Jump to external code for ___memcpy_chk
     CT: External code
-    RF: Jump to external code
+    RF: Jump to external code for ___memcpy_chk
   Occurrences: 1361
 
 ProgramCallRemoved
@@ -974,7 +974,7 @@ ProgramCallRemoved
     CF: get_next_component at abspath.c:43:29
     CT: git_is_dir_sep at git-compat-util.h:447:1
     RF: git_is_dir_sep at git-compat-util.h:449:1
-  Occurrences: 20
+  Occurrences: 23
 
 ProgramCallRemoved
   Events:
@@ -988,14 +988,14 @@ ProgramCallRemoved
     CF: normalize_path_copy_len at path.c:1177:7
     CT: git_is_dir_sep at git-compat-util.h:447:1
     RF: git_is_dir_sep at git-compat-util.h:449:1
-  Occurrences: 11
+  Occurrences: 20
 
 ProgramCallRemoved
   Events:
     CF: normalize_path_copy_len at path.c:1179:11
     CT: git_is_dir_sep at git-compat-util.h:447:1
     RF: git_is_dir_sep at git-compat-util.h:449:1
-  Occurrences: 14
+  Occurrences: 29
 
 ProgramCallRemoved
   Events:
@@ -1014,27 +1014,69 @@ Uncategorised
 Uncategorised
   Events:
     CF: string_list_init_dup at string-list.c:13:2
-    CT: Jump to external code
-    CF: Jump to external code
+    CT: Jump to external code for ___memcpy_chk
+    CF: Jump to external code for ___memcpy_chk
     CT: External code
-    RF: Jump to external code
+    RF: Jump to external code for ___memcpy_chk
   Occurrences: 108
 
 Uncategorised
   Events:
     CF: strvec_init at strvec.c:10:2
-    CT: Jump to external code
-    CF: Jump to external code
+    CT: Jump to external code for ___memcpy_chk
+    CF: Jump to external code for ___memcpy_chk
     CT: External code
-    RF: Jump to external code
+    RF: Jump to external code for ___memcpy_chk
   Occurrences: 54
+
+Uncategorised
+  Events:
+    CT: Jump to external code for ___memcpy_chk
+    CF: Jump to external code for ___memcpy_chk
+    CT: Jump to external code for _memcpy
+    CF: Jump to external code for _memcpy
+  Occurrences: 2061
+
+Uncategorised
+  Events:
+    CT: Jump to external code for ___memmove_chk
+    CF: Jump to external code for ___memmove_chk
+    CT: Jump to external code for _memmove
+    CF: Jump to external code for _memmove
+  Occurrences: 377
+
+Uncategorised
+  Events:
+    CT: Jump to external code for ___vsnprintf_chk
+    CF: Jump to external code for ___vsnprintf_chk
+    CT: Jump to external code for _vsnprintf
+    CF: Jump to external code for _vsnprintf
+  Occurrences: 679
+
+Uncategorised
+  Events:
+    RF: Jump to external code for ___memcpy_chk
+    RF: Jump to external code for _memcpy
+  Occurrences: 2061
+
+Uncategorised
+  Events:
+    RF: Jump to external code for ___memmove_chk
+    RF: Jump to external code for _memmove
+  Occurrences: 377
+
+Uncategorised
+  Events:
+    RF: Jump to external code for ___vsnprintf_chk
+    RF: Jump to external code for _vsnprintf
+  Occurrences: 679
 
 Uncategorised
   Events:
     RF: git_is_dir_sep at git-compat-util.h:449:1
     CF: get_next_component at abspath.c:43:29
     CT: git_is_dir_sep at git-compat-util.h:447:1
-  Occurrences: 285
+  Occurrences: 282
 
 Uncategorised
   Events:
@@ -1048,7 +1090,7 @@ Uncategorised
     RF: git_is_dir_sep at git-compat-util.h:449:1
     CF: normalize_path_copy_len at path.c:1177:7
     CT: git_is_dir_sep at git-compat-util.h:447:1
-  Occurrences: 78
+  Occurrences: 86
 
 Uncategorised
   Events:
@@ -1058,14 +1100,14 @@ Uncategorised
     RF: git_is_dir_sep at git-compat-util.h:449:1
     CF: normalize_path_copy_len at path.c:1179:11
     CT: git_is_dir_sep at git-compat-util.h:447:1
-  Occurrences: 79
+  Occurrences: 62
 
 Uncategorised
   Events:
     RF: git_is_dir_sep at git-compat-util.h:449:1
     CF: normalize_path_copy_len at path.c:1179:11
     CT: git_is_dir_sep at git-compat-util.h:447:1
-  Occurrences: 75
+  Occurrences: 77
 
 ## Divergences with unique coordinates by type
 
@@ -1082,9 +1124,9 @@ ProgramCallRemoved
   Unique divergence coordinates: 10
 
 Uncategorised
-  Unique divergence coordinates: 8
+  Unique divergence coordinates: 14
 
 ## Summary
 
-167 unique divergence coordinates
-50272 divergence occurrences
+173 unique divergence coordinates
+56523 divergence occurrences
