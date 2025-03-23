@@ -963,6 +963,156 @@ CoordinatesChangedLarge
     RF: trace2_cmd_start_fl at trace2.c:254:5
   Occurrences: 26
 
+LibraryCallReplaced
+  Before events:
+    CF: git_attr_internal at attr.c:221:3
+    CT: Jump to external code for ___memcpy_chk
+    CF: Jump to external code for ___memcpy_chk
+    CT: External code
+    RF: Jump to external code for ___memcpy_chk
+  After events:
+    CF: git_attr_internal at attr.c:221:3
+    CT: Jump to external code for _memcpy
+    CF: Jump to external code for _memcpy
+    CT: External code
+    RF: Jump to external code for _memcpy
+  Occurrences: 9
+
+LibraryCallReplaced
+  Before events:
+    CF: memintern at hashmap.c:345:3
+    CT: Jump to external code for ___memcpy_chk
+    CF: Jump to external code for ___memcpy_chk
+    CT: External code
+    RF: Jump to external code for ___memcpy_chk
+  After events:
+    CF: memintern at hashmap.c:345:3
+    CT: Jump to external code for _memcpy
+    CF: Jump to external code for _memcpy
+    CT: External code
+    RF: Jump to external code for _memcpy
+  Occurrences: 18
+
+LibraryCallReplaced
+  Before events:
+    CF: strbuf_add at strbuf.c:299:2
+    CT: Jump to external code for ___memcpy_chk
+    CF: Jump to external code for ___memcpy_chk
+    CT: External code
+    RF: Jump to external code for ___memcpy_chk
+  After events:
+    CF: strbuf_add at strbuf.c:299:2
+    CT: Jump to external code for _memcpy
+    CF: Jump to external code for _memcpy
+    CT: External code
+    RF: Jump to external code for _memcpy
+  Occurrences: 1370
+
+LibraryCallReplaced
+  Before events:
+    CF: strbuf_addbuf at strbuf.c:306:2
+    CT: Jump to external code for ___memcpy_chk
+    CF: Jump to external code for ___memcpy_chk
+    CT: External code
+    RF: Jump to external code for ___memcpy_chk
+  After events:
+    CF: strbuf_addbuf at strbuf.c:306:2
+    CT: Jump to external code for _memcpy
+    CF: Jump to external code for _memcpy
+    CT: External code
+    RF: Jump to external code for _memcpy
+  Occurrences: 287
+
+LibraryCallReplaced
+  Before events:
+    CF: strbuf_splice at strbuf.c:243:2
+    CT: Jump to external code for ___memmove_chk
+    CF: Jump to external code for ___memmove_chk
+    CT: External code
+    RF: Jump to external code for ___memmove_chk
+  After events:
+    CF: strbuf_splice at strbuf.c:243:2
+    CT: Jump to external code for _memmove
+    CF: Jump to external code for _memmove
+    CT: External code
+    RF: Jump to external code for _memmove
+  Occurrences: 377
+
+LibraryCallReplaced
+  Before events:
+    CF: strbuf_splice at strbuf.c:246:2
+    CT: Jump to external code for ___memcpy_chk
+    CF: Jump to external code for ___memcpy_chk
+    CT: External code
+    RF: Jump to external code for ___memcpy_chk
+  After events:
+    CF: strbuf_splice at strbuf.c:246:2
+    CT: Jump to external code for _memcpy
+    CF: Jump to external code for _memcpy
+    CT: External code
+    RF: Jump to external code for _memcpy
+  Occurrences: 377
+
+LibraryCallReplaced
+  Before events:
+    CF: strbuf_vaddf at strbuf.c:397:8
+    CT: Jump to external code for ___vsnprintf_chk
+    CF: Jump to external code for ___vsnprintf_chk
+    CT: External code
+    RF: Jump to external code for ___vsnprintf_chk
+  After events:
+    CF: strbuf_vaddf at strbuf.c:397:8
+    CT: Jump to external code for _vsnprintf
+    CF: Jump to external code for _vsnprintf
+    CT: External code
+    RF: Jump to external code for _vsnprintf
+  Occurrences: 375
+
+LibraryCallReplaced
+  Before events:
+    CF: strbuf_vaddf at strbuf.c:403:9
+    CT: Jump to external code for ___vsnprintf_chk
+    CF: Jump to external code for ___vsnprintf_chk
+    CT: External code
+    RF: Jump to external code for ___vsnprintf_chk
+  After events:
+    CF: strbuf_vaddf at strbuf.c:403:9
+    CT: Jump to external code for _vsnprintf
+    CF: Jump to external code for _vsnprintf
+    CT: External code
+    RF: Jump to external code for _vsnprintf
+  Occurrences: 145
+
+LibraryCallReplaced
+  Before events:
+    CF: vreportf at usage.c:21:6
+    CT: Jump to external code for ___vsnprintf_chk
+    CF: Jump to external code for ___vsnprintf_chk
+    CT: External code
+    RF: Jump to external code for ___vsnprintf_chk
+  After events:
+    CF: vreportf at usage.c:21:6
+    CT: Jump to external code for _vsnprintf
+    CF: Jump to external code for _vsnprintf
+    CT: External code
+    RF: Jump to external code for _vsnprintf
+  Occurrences: 14
+
+LibraryCallReplaced
+  Before events:
+    CF: xsnprintf at wrapper.c:685:8
+    CT: Jump to external code for ___vsnprintf_chk
+    CF: Jump to external code for ___vsnprintf_chk
+    CT: External code
+    RF: Jump to external code for ___vsnprintf_chk
+  After events:
+    CF: xsnprintf at wrapper.c:685:8
+    CT: Jump to external code for _vsnprintf
+    CF: Jump to external code for _vsnprintf
+    CT: External code
+    RF: Jump to external code for _vsnprintf
+  Occurrences: 12
+
 LibraryCallRemoved
   Before events:
     CF: config_store_data_clear at config.c:2871:2
@@ -1154,30 +1304,12 @@ Uncategorised
 
 Uncategorised
   Before events:
-    CT: Jump to external code for ___memcpy_chk
-    CF: Jump to external code for ___memcpy_chk
-  After events:
-    CT: Jump to external code for _memcpy
-    CF: Jump to external code for _memcpy
-  Occurrences: 2061
-
-Uncategorised
-  Before events:
-    CT: Jump to external code for ___memmove_chk
-    CF: Jump to external code for ___memmove_chk
-  After events:
-    CT: Jump to external code for _memmove
-    CF: Jump to external code for _memmove
-  Occurrences: 377
-
-Uncategorised
-  Before events:
     CT: Jump to external code for ___vsnprintf_chk
     CF: Jump to external code for ___vsnprintf_chk
   After events:
     CT: Jump to external code for _vsnprintf
     CF: Jump to external code for _vsnprintf
-  Occurrences: 679
+  Occurrences: 133
 
 Uncategorised
   Before events:
@@ -1197,24 +1329,10 @@ Uncategorised
 
 Uncategorised
   Before events:
-    RF: Jump to external code for ___memcpy_chk
-  After events:
-    RF: Jump to external code for _memcpy
-  Occurrences: 2061
-
-Uncategorised
-  Before events:
-    RF: Jump to external code for ___memmove_chk
-  After events:
-    RF: Jump to external code for _memmove
-  Occurrences: 377
-
-Uncategorised
-  Before events:
     RF: Jump to external code for ___vsnprintf_chk
   After events:
     RF: Jump to external code for _vsnprintf
-  Occurrences: 679
+  Occurrences: 133
 
 Uncategorised
   Before events:
@@ -1231,6 +1349,9 @@ CoordinatesChangedSmall
 CoordinatesChangedLarge
   Unique divergence coordinates: 30
 
+LibraryCallReplaced
+  Unique divergence coordinates: 10
+
 LibraryCallRemoved
   Unique divergence coordinates: 12
 
@@ -1238,9 +1359,9 @@ ProgramCallRemoved
   Unique divergence coordinates: 8
 
 Uncategorised
-  Unique divergence coordinates: 12
+  Unique divergence coordinates: 8
 
 ## Summary
 
-169 unique divergence coordinates
-56526 divergence occurrences
+175 unique divergence coordinates
+53542 divergence occurrences

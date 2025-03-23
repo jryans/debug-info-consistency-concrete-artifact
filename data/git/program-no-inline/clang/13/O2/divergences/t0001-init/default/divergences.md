@@ -2916,6 +2916,591 @@ CoordinatesChangedLarge
     RF: xopen at wrapper.c:199:1
   Occurrences: 89
 
+LibraryCallReplaced
+  Before events:
+    CF: add_to_index at read-cache.c:790:2
+    CT: Jump to external code for ___memcpy_chk
+    CF: Jump to external code for ___memcpy_chk
+    CT: External code
+    RF: Jump to external code for ___memcpy_chk
+  After events:
+    CF: add_to_index at read-cache.c:790:2
+    CT: Jump to external code for _memcpy
+    CF: Jump to external code for _memcpy
+    CT: External code
+    RF: Jump to external code for _memcpy
+  Occurrences: 1
+
+LibraryCallReplaced
+  Before events:
+    CF: alloc_filespec at diff.c:3882:2
+    CT: Jump to external code for ___memcpy_chk
+    CF: Jump to external code for ___memcpy_chk
+    CT: External code
+    RF: Jump to external code for ___memcpy_chk
+  After events:
+    CF: alloc_filespec at diff.c:3882:2
+    CT: Jump to external code for _memcpy
+    CF: Jump to external code for _memcpy
+    CT: External code
+    RF: Jump to external code for _memcpy
+  Occurrences: 2
+
+LibraryCallReplaced
+  Before events:
+    CF: alloc_node at alloc.c:67:2
+    CT: Jump to external code for ___memset_chk
+    CF: Jump to external code for ___memset_chk
+    CT: External code
+    RF: Jump to external code for ___memset_chk
+  After events:
+    CF: alloc_node at alloc.c:67:2
+    CT: Jump to external code for ___bzero
+    CF: Jump to external code for ___bzero
+    CT: External code
+    RF: Jump to external code for ___bzero
+  Occurrences: 4
+
+LibraryCallReplaced
+  Before events:
+    CF: copy_array at git-compat-util.h:1099:3
+    CT: Jump to external code for ___memcpy_chk
+    CF: Jump to external code for ___memcpy_chk
+    CT: External code
+    RF: Jump to external code for ___memcpy_chk
+  After events:
+    CF: copy_array at git-compat-util.h:1099:3
+    CT: Jump to external code for _memcpy
+    CF: Jump to external code for _memcpy
+    CT: External code
+    RF: Jump to external code for _memcpy
+  Occurrences: 5
+
+LibraryCallReplaced
+  Before events:
+    CF: create_dir_entry at ref-cache.c:93:2
+    CT: Jump to external code for ___memcpy_chk
+    CF: Jump to external code for ___memcpy_chk
+    CT: External code
+    RF: Jump to external code for ___memcpy_chk
+  After events:
+    CF: create_dir_entry at ref-cache.c:93:2
+    CT: Jump to external code for _memcpy
+    CF: Jump to external code for _memcpy
+    CT: External code
+    RF: Jump to external code for _memcpy
+  Occurrences: 14
+
+LibraryCallReplaced
+  Before events:
+    CF: create_from_disk at read-cache.c:1982:3
+    CT: Jump to external code for ___memcpy_chk
+    CF: Jump to external code for ___memcpy_chk
+    CT: External code
+    RF: Jump to external code for ___memcpy_chk
+  After events:
+    CF: create_from_disk at read-cache.c:1982:3
+    CT: Jump to external code for _memcpy
+    CF: Jump to external code for _memcpy
+    CT: External code
+    RF: Jump to external code for _memcpy
+  Occurrences: 1
+
+LibraryCallReplaced
+  Before events:
+    CF: dir_clear at dir.c:3398:20
+    CT: Jump to external code for _memset
+    CF: Jump to external code for _memset
+    CT: External code
+    RF: Jump to external code for _memset
+  After events:
+    CF: dir_clear at dir.c:3398:20
+    CT: Jump to external code for ___bzero
+    CF: Jump to external code for ___bzero
+    CT: External code
+    RF: Jump to external code for ___bzero
+  Occurrences: 1
+
+LibraryCallReplaced
+  Before events:
+    CF: dir_clear at dir.c:3426:2
+    CT: Jump to external code for ___memcpy_chk
+    CF: Jump to external code for ___memcpy_chk
+    CT: External code
+    RF: Jump to external code for ___memcpy_chk
+  After events:
+    CF: dir_clear at dir.c:3426:2
+    CT: Jump to external code for _memcpy
+    CF: Jump to external code for _memcpy
+    CT: External code
+    RF: Jump to external code for _memcpy
+  Occurrences: 1
+
+LibraryCallReplaced
+  Before events:
+    CF: fmt_with_err at usage.c:205:2
+    CT: Jump to external code for ___snprintf_chk
+    CF: Jump to external code for ___snprintf_chk
+    CT: External code
+    RF: Jump to external code for ___snprintf_chk
+  After events:
+    CF: fmt_with_err at usage.c:205:2
+    CT: Jump to external code for _snprintf
+    CF: Jump to external code for _snprintf
+    CT: External code
+    RF: Jump to external code for _snprintf
+  Occurrences: 3
+
+LibraryCallReplaced
+  Before events:
+    CF: git_attr_internal at attr.c:221:3
+    CT: Jump to external code for ___memcpy_chk
+    CF: Jump to external code for ___memcpy_chk
+    CT: External code
+    RF: Jump to external code for ___memcpy_chk
+  After events:
+    CF: git_attr_internal at attr.c:221:3
+    CT: Jump to external code for _memcpy
+    CF: Jump to external code for _memcpy
+    CT: External code
+    RF: Jump to external code for _memcpy
+  Occurrences: 18
+
+LibraryCallReplaced
+  Before events:
+    CF: hashcpy at hash.h:263:2
+    CT: Jump to external code for ___memcpy_chk
+    CF: Jump to external code for ___memcpy_chk
+    CT: External code
+    RF: Jump to external code for ___memcpy_chk
+  After events:
+    CF: hashcpy at hash.h:263:2
+    CT: Jump to external code for _memcpy
+    CF: Jump to external code for _memcpy
+    CT: External code
+    RF: Jump to external code for _memcpy
+  Occurrences: 4
+
+LibraryCallReplaced
+  Before events:
+    CF: hashwrite at csum-file.c:118:4
+    CT: Jump to external code for ___memcpy_chk
+    CF: Jump to external code for ___memcpy_chk
+    CT: External code
+    RF: Jump to external code for ___memcpy_chk
+  After events:
+    CF: hashwrite at csum-file.c:118:4
+    CT: Jump to external code for _memcpy
+    CF: Jump to external code for _memcpy
+    CT: External code
+    RF: Jump to external code for _memcpy
+  Occurrences: 11
+
+LibraryCallReplaced
+  Before events:
+    CF: mem_pool_calloc at mem-pool.c:116:2
+    CT: Jump to external code for ___memset_chk
+    CF: Jump to external code for ___memset_chk
+    CT: External code
+    RF: Jump to external code for ___memset_chk
+  After events:
+    CF: mem_pool_calloc at mem-pool.c:116:2
+    CT: Jump to external code for ___bzero
+    CF: Jump to external code for ___bzero
+    CT: External code
+    RF: Jump to external code for ___bzero
+  Occurrences: 1
+
+LibraryCallReplaced
+  Before events:
+    CF: memintern at hashmap.c:345:3
+    CT: Jump to external code for ___memcpy_chk
+    CF: Jump to external code for ___memcpy_chk
+    CT: External code
+    RF: Jump to external code for ___memcpy_chk
+  After events:
+    CF: memintern at hashmap.c:345:3
+    CT: Jump to external code for _memcpy
+    CF: Jump to external code for _memcpy
+    CT: External code
+    RF: Jump to external code for _memcpy
+  Occurrences: 30
+
+LibraryCallReplaced
+  Before events:
+    CF: move_array at git-compat-util.h:1107:3
+    CT: Jump to external code for ___memmove_chk
+    CF: Jump to external code for ___memmove_chk
+    CT: External code
+    RF: Jump to external code for ___memmove_chk
+  After events:
+    CF: move_array at git-compat-util.h:1107:3
+    CT: Jump to external code for _memmove
+    CF: Jump to external code for _memmove
+    CT: External code
+    RF: Jump to external code for _memmove
+  Occurrences: 42
+
+LibraryCallReplaced
+  Before events:
+    CF: msort_with_tmp at qsort_s.c:32:4
+    CT: Jump to external code for ___memcpy_chk
+    CF: Jump to external code for ___memcpy_chk
+    CT: External code
+    RF: Jump to external code for ___memcpy_chk
+  After events:
+    CF: msort_with_tmp at qsort_s.c:32:4
+    CT: Jump to external code for _memcpy
+    CF: Jump to external code for _memcpy
+    CT: External code
+    RF: Jump to external code for _memcpy
+  Occurrences: 1562
+
+LibraryCallReplaced
+  Before events:
+    CF: msort_with_tmp at qsort_s.c:37:4
+    CT: Jump to external code for ___memcpy_chk
+    CF: Jump to external code for ___memcpy_chk
+    CT: External code
+    RF: Jump to external code for ___memcpy_chk
+  After events:
+    CF: msort_with_tmp at qsort_s.c:37:4
+    CT: Jump to external code for _memcpy
+    CF: Jump to external code for _memcpy
+    CT: External code
+    RF: Jump to external code for _memcpy
+  Occurrences: 1611
+
+LibraryCallReplaced
+  Before events:
+    CF: msort_with_tmp at qsort_s.c:44:3
+    CT: Jump to external code for ___memcpy_chk
+    CF: Jump to external code for ___memcpy_chk
+    CT: External code
+    RF: Jump to external code for ___memcpy_chk
+  After events:
+    CF: msort_with_tmp at qsort_s.c:44:3
+    CT: Jump to external code for _memcpy
+    CF: Jump to external code for _memcpy
+    CT: External code
+    RF: Jump to external code for _memcpy
+  Occurrences: 246
+
+LibraryCallReplaced
+  Before events:
+    CF: msort_with_tmp at qsort_s.c:45:2
+    CT: Jump to external code for ___memcpy_chk
+    CF: Jump to external code for ___memcpy_chk
+    CT: External code
+    RF: Jump to external code for ___memcpy_chk
+  After events:
+    CF: msort_with_tmp at qsort_s.c:45:2
+    CT: Jump to external code for _memcpy
+    CF: Jump to external code for _memcpy
+    CT: External code
+    RF: Jump to external code for _memcpy
+  Occurrences: 579
+
+LibraryCallReplaced
+  Before events:
+    CF: oidcpy_with_padding at hash.h:283:2
+    CT: Jump to external code for ___memcpy_chk
+    CF: Jump to external code for ___memcpy_chk
+    CT: External code
+    RF: Jump to external code for ___memcpy_chk
+  After events:
+    CF: oidcpy_with_padding at hash.h:283:2
+    CT: Jump to external code for _memcpy
+    CF: Jump to external code for _memcpy
+    CT: External code
+    RF: Jump to external code for _memcpy
+  Occurrences: 2
+
+LibraryCallReplaced
+  Before events:
+    CF: oidcpy_with_padding at hash.h:284:2
+    CT: Jump to external code for ___memset_chk
+    CF: Jump to external code for ___memset_chk
+    CT: External code
+    RF: Jump to external code for ___memset_chk
+  After events:
+    CF: oidcpy_with_padding at hash.h:284:2
+    CT: Jump to external code for ___bzero
+    CF: Jump to external code for ___bzero
+    CT: External code
+    RF: Jump to external code for ___bzero
+  Occurrences: 2
+
+LibraryCallReplaced
+  Before events:
+    CF: oidread at hash.h:308:2
+    CT: Jump to external code for ___memcpy_chk
+    CF: Jump to external code for ___memcpy_chk
+    CT: External code
+    RF: Jump to external code for ___memcpy_chk
+  After events:
+    CF: oidread at hash.h:308:2
+    CT: Jump to external code for _memcpy
+    CF: Jump to external code for _memcpy
+    CT: External code
+    RF: Jump to external code for _memcpy
+  Occurrences: 3
+
+LibraryCallReplaced
+  Before events:
+    CF: path_appendnew at tree-diff.c:162:2
+    CT: Jump to external code for ___memcpy_chk
+    CF: Jump to external code for ___memcpy_chk
+    CT: External code
+    RF: Jump to external code for ___memcpy_chk
+  After events:
+    CF: path_appendnew at tree-diff.c:162:2
+    CT: Jump to external code for _memcpy
+    CF: Jump to external code for _memcpy
+    CT: External code
+    RF: Jump to external code for _memcpy
+  Occurrences: 1
+
+LibraryCallReplaced
+  Before events:
+    CF: path_appendnew at tree-diff.c:163:2
+    CT: Jump to external code for ___memcpy_chk
+    CF: Jump to external code for ___memcpy_chk
+    CT: External code
+    RF: Jump to external code for ___memcpy_chk
+  After events:
+    CF: path_appendnew at tree-diff.c:163:2
+    CT: Jump to external code for _memcpy
+    CF: Jump to external code for _memcpy
+    CT: External code
+    RF: Jump to external code for _memcpy
+  Occurrences: 1
+
+LibraryCallReplaced
+  Before events:
+    CF: prep_parse_options at diff.c:5693:2
+    CT: Jump to external code for ___memcpy_chk
+    CF: Jump to external code for ___memcpy_chk
+    CT: External code
+    RF: Jump to external code for ___memcpy_chk
+  After events:
+    CF: prep_parse_options at diff.c:5693:2
+    CT: Jump to external code for _memcpy
+    CF: Jump to external code for _memcpy
+    CT: External code
+    RF: Jump to external code for _memcpy
+  Occurrences: 2
+
+LibraryCallReplaced
+  Before events:
+    CF: ref_transaction_add_update at refs.c:1176:2
+    CT: Jump to external code for ___memcpy_chk
+    CF: Jump to external code for ___memcpy_chk
+    CT: External code
+    RF: Jump to external code for ___memcpy_chk
+  After events:
+    CF: ref_transaction_add_update at refs.c:1176:2
+    CT: Jump to external code for _memcpy
+    CF: Jump to external code for _memcpy
+    CT: External code
+    RF: Jump to external code for _memcpy
+  Occurrences: 3
+
+LibraryCallReplaced
+  Before events:
+    CF: repo_diff_setup at diff.c:4622:2
+    CT: Jump to external code for ___memcpy_chk
+    CF: Jump to external code for ___memcpy_chk
+    CT: External code
+    RF: Jump to external code for ___memcpy_chk
+  After events:
+    CF: repo_diff_setup at diff.c:4622:2
+    CT: Jump to external code for _memcpy
+    CF: Jump to external code for _memcpy
+    CT: External code
+    RF: Jump to external code for _memcpy
+  Occurrences: 2
+
+LibraryCallReplaced
+  Before events:
+    CF: repo_init_revisions at revision.c:1902:2
+    CT: Jump to external code for ___memcpy_chk
+    CF: Jump to external code for ___memcpy_chk
+    CT: External code
+    RF: Jump to external code for ___memcpy_chk
+  After events:
+    CF: repo_init_revisions at revision.c:1902:2
+    CT: Jump to external code for _memcpy
+    CF: Jump to external code for _memcpy
+    CT: External code
+    RF: Jump to external code for _memcpy
+  Occurrences: 2
+
+LibraryCallReplaced
+  Before events:
+    CF: strbuf_add at strbuf.c:299:2
+    CT: Jump to external code for ___memcpy_chk
+    CF: Jump to external code for ___memcpy_chk
+    CT: External code
+    RF: Jump to external code for ___memcpy_chk
+  After events:
+    CF: strbuf_add at strbuf.c:299:2
+    CT: Jump to external code for _memcpy
+    CF: Jump to external code for _memcpy
+    CT: External code
+    RF: Jump to external code for _memcpy
+  Occurrences: 6897
+
+LibraryCallReplaced
+  Before events:
+    CF: strbuf_addbuf at strbuf.c:306:2
+    CT: Jump to external code for ___memcpy_chk
+    CF: Jump to external code for ___memcpy_chk
+    CT: External code
+    RF: Jump to external code for ___memcpy_chk
+  After events:
+    CF: strbuf_addbuf at strbuf.c:306:2
+    CT: Jump to external code for _memcpy
+    CF: Jump to external code for _memcpy
+    CT: External code
+    RF: Jump to external code for _memcpy
+  Occurrences: 1005
+
+LibraryCallReplaced
+  Before events:
+    CF: strbuf_splice at strbuf.c:243:2
+    CT: Jump to external code for ___memmove_chk
+    CF: Jump to external code for ___memmove_chk
+    CT: External code
+    RF: Jump to external code for ___memmove_chk
+  After events:
+    CF: strbuf_splice at strbuf.c:243:2
+    CT: Jump to external code for _memmove
+    CF: Jump to external code for _memmove
+    CT: External code
+    RF: Jump to external code for _memmove
+  Occurrences: 1266
+
+LibraryCallReplaced
+  Before events:
+    CF: strbuf_splice at strbuf.c:246:2
+    CT: Jump to external code for ___memcpy_chk
+    CF: Jump to external code for ___memcpy_chk
+    CT: External code
+    RF: Jump to external code for ___memcpy_chk
+  After events:
+    CF: strbuf_splice at strbuf.c:246:2
+    CT: Jump to external code for _memcpy
+    CF: Jump to external code for _memcpy
+    CT: External code
+    RF: Jump to external code for _memcpy
+  Occurrences: 1266
+
+LibraryCallReplaced
+  Before events:
+    CF: strbuf_stripspace at strbuf.c:1146:4
+    CT: Jump to external code for ___memmove_chk
+    CF: Jump to external code for ___memmove_chk
+    CT: External code
+    RF: Jump to external code for ___memmove_chk
+  After events:
+    CF: strbuf_stripspace at strbuf.c:1146:4
+    CT: Jump to external code for _memmove
+    CF: Jump to external code for _memmove
+    CT: External code
+    RF: Jump to external code for _memmove
+  Occurrences: 2
+
+LibraryCallReplaced
+  Before events:
+    CF: strbuf_vaddf at strbuf.c:397:8
+    CT: Jump to external code for ___vsnprintf_chk
+    CF: Jump to external code for ___vsnprintf_chk
+    CT: External code
+    RF: Jump to external code for ___vsnprintf_chk
+  After events:
+    CF: strbuf_vaddf at strbuf.c:397:8
+    CT: Jump to external code for _vsnprintf
+    CF: Jump to external code for _vsnprintf
+    CT: External code
+    RF: Jump to external code for _vsnprintf
+  Occurrences: 2376
+
+LibraryCallReplaced
+  Before events:
+    CF: strbuf_vaddf at strbuf.c:403:9
+    CT: Jump to external code for ___vsnprintf_chk
+    CF: Jump to external code for ___vsnprintf_chk
+    CT: External code
+    RF: Jump to external code for ___vsnprintf_chk
+  After events:
+    CF: strbuf_vaddf at strbuf.c:403:9
+    CT: Jump to external code for _vsnprintf
+    CF: Jump to external code for _vsnprintf
+    CT: External code
+    RF: Jump to external code for _vsnprintf
+  Occurrences: 745
+
+LibraryCallReplaced
+  Before events:
+    CF: vreportf at usage.c:21:6
+    CT: Jump to external code for ___vsnprintf_chk
+    CF: Jump to external code for ___vsnprintf_chk
+    CT: External code
+    RF: Jump to external code for ___vsnprintf_chk
+  After events:
+    CF: vreportf at usage.c:21:6
+    CT: Jump to external code for _vsnprintf
+    CF: Jump to external code for _vsnprintf
+    CT: External code
+    RF: Jump to external code for _vsnprintf
+  Occurrences: 10
+
+LibraryCallReplaced
+  Before events:
+    CF: wt_status_prepare at wt-status.c:127:2
+    CT: Jump to external code for ___memset_chk
+    CF: Jump to external code for ___memset_chk
+    CT: External code
+    RF: Jump to external code for ___memset_chk
+  After events:
+    CF: wt_status_prepare at wt-status.c:127:2
+    CT: Jump to external code for ___bzero
+    CF: Jump to external code for ___bzero
+    CT: External code
+    RF: Jump to external code for ___bzero
+  Occurrences: 1
+
+LibraryCallReplaced
+  Before events:
+    CF: wt_status_prepare at wt-status.c:129:2
+    CT: Jump to external code for ___memcpy_chk
+    CF: Jump to external code for ___memcpy_chk
+    CT: External code
+    RF: Jump to external code for ___memcpy_chk
+  After events:
+    CF: wt_status_prepare at wt-status.c:129:2
+    CT: Jump to external code for _memcpy
+    CF: Jump to external code for _memcpy
+    CT: External code
+    RF: Jump to external code for _memcpy
+  Occurrences: 1
+
+LibraryCallReplaced
+  Before events:
+    CF: xsnprintf at wrapper.c:685:8
+    CT: Jump to external code for ___vsnprintf_chk
+    CF: Jump to external code for ___vsnprintf_chk
+    CT: External code
+    RF: Jump to external code for ___vsnprintf_chk
+  After events:
+    CF: xsnprintf at wrapper.c:685:8
+    CT: Jump to external code for _vsnprintf
+    CF: Jump to external code for _vsnprintf
+    CT: External code
+    RF: Jump to external code for _vsnprintf
+  Occurrences: 40
+
 LibraryCallRemoved
   Before events:
     CF: Jump to external code for ___error
@@ -6359,34 +6944,7 @@ Uncategorised
   After events:
     CT: Jump to external code for _memcpy
     CF: Jump to external code for _memcpy
-  Occurrences: 13276
-
-Uncategorised
-  Before events:
-    CT: Jump to external code for ___memmove_chk
-    CF: Jump to external code for ___memmove_chk
-  After events:
-    CT: Jump to external code for _memmove
-    CF: Jump to external code for _memmove
-  Occurrences: 1310
-
-Uncategorised
-  Before events:
-    CT: Jump to external code for ___memset_chk
-    CF: Jump to external code for ___memset_chk
-  After events:
-    CT: Jump to external code for ___bzero
-    CF: Jump to external code for ___bzero
-  Occurrences: 8
-
-Uncategorised
-  Before events:
-    CT: Jump to external code for ___snprintf_chk
-    CF: Jump to external code for ___snprintf_chk
-  After events:
-    CT: Jump to external code for _snprintf
-    CF: Jump to external code for _snprintf
-  Occurrences: 3
+  Occurrences: 6
 
 Uncategorised
   Before events:
@@ -6395,7 +6953,7 @@ Uncategorised
   After events:
     CT: Jump to external code for _vsnprintf
     CF: Jump to external code for _vsnprintf
-  Occurrences: 3174
+  Occurrences: 3
 
 Uncategorised
   Before events:
@@ -6457,7 +7015,7 @@ Uncategorised
   After events:
     CT: Jump to external code for ___bzero
     CF: Jump to external code for ___bzero
-  Occurrences: 4
+  Occurrences: 3
 
 Uncategorised
   Before events:
@@ -6671,7 +7229,7 @@ Uncategorised
     RF: Jump to external code for ___memcpy_chk
   After events:
     RF: Jump to external code for _memcpy
-  Occurrences: 13272
+  Occurrences: 2
 
 Uncategorised
   Before events:
@@ -6685,20 +7243,6 @@ Uncategorised
 
 Uncategorised
   Before events:
-    RF: Jump to external code for ___memmove_chk
-  After events:
-    RF: Jump to external code for _memmove
-  Occurrences: 1310
-
-Uncategorised
-  Before events:
-    RF: Jump to external code for ___memset_chk
-  After events:
-    RF: Jump to external code for ___bzero
-  Occurrences: 8
-
-Uncategorised
-  Before events:
     RF: Jump to external code for ___memset_chk
   After events:
     RF: xmemdupz at wrapper.c:0:0
@@ -6706,17 +7250,10 @@ Uncategorised
 
 Uncategorised
   Before events:
-    RF: Jump to external code for ___snprintf_chk
-  After events:
-    RF: Jump to external code for _snprintf
-  Occurrences: 3
-
-Uncategorised
-  Before events:
     RF: Jump to external code for ___vsnprintf_chk
   After events:
     RF: Jump to external code for _vsnprintf
-  Occurrences: 3174
+  Occurrences: 3
 
 Uncategorised
   Before events:
@@ -6766,7 +7303,7 @@ Uncategorised
     RF: Jump to external code for _memset
   After events:
     RF: Jump to external code for ___bzero
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   Before events:
@@ -7007,6 +7544,9 @@ CoordinatesChangedSmall
 CoordinatesChangedLarge
   Unique divergence coordinates: 72
 
+LibraryCallReplaced
+  Unique divergence coordinates: 39
+
 LibraryCallRemoved
   Unique divergence coordinates: 139
 
@@ -7014,9 +7554,9 @@ ProgramCallRemoved
   Unique divergence coordinates: 34
 
 Uncategorised
-  Unique divergence coordinates: 216
+  Unique divergence coordinates: 210
 
 ## Summary
 
-805 unique divergence coordinates
-94018 divergence occurrences
+838 unique divergence coordinates
+76255 divergence occurrences
