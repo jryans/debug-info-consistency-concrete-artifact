@@ -2244,37 +2244,6 @@ Uncategorised
     RF: xstrdup at wrapper.c:42:2
     CF: string_list_append at string-list.c:219:9
     CT: string_list_append_nodup at string-list.c:207:0
-    CF: string_list_append_nodup at string-list.c:209:2
-    CT: st_mult at git-compat-util.h:991:0
-    RF: st_mult at git-compat-util.h:995:2
-    CF: string_list_append_nodup at string-list.c:209:2
-    CT: xrealloc at wrapper.c:127:0
-    CF: xrealloc at wrapper.c:135:2
-    CT: memory_limit_check at wrapper.c:18:0
-    RF: memory_limit_check at wrapper.c:35:1
-    CF: xrealloc at wrapper.c:136:8
-    CT: Jump to external code for _realloc
-    CF: Jump to external code for _realloc
-  After events:
-    CT: string_list_append at string-list.c:221:4
-    CF: string_list_append at string-list.c:221:27
-    CT: xstrdup at wrapper.c:38:0
-    CF: xstrdup at wrapper.c:39:14
-    CT: Jump to external code for _strdup
-    CF: Jump to external code for _strdup
-  Occurrences: 24
-
-Uncategorised
-  Before events:
-    CT: xstrdup at wrapper.c:38:0
-    CF: xstrdup at wrapper.c:39:14
-    CT: Jump to external code for _strdup
-    CF: Jump to external code for _strdup
-    CT: External code
-    RF: Jump to external code for _strdup
-    RF: xstrdup at wrapper.c:42:2
-    CF: string_list_append at string-list.c:219:9
-    CT: string_list_append_nodup at string-list.c:207:0
     RF: string_list_append_nodup at string-list.c:213:2
     RF: string_list_append at string-list.c:219:2
   After events:
@@ -2293,36 +2262,6 @@ Uncategorised
     RF: string_list_append at string-list.c:0:0
     RF: string_list_append at string-list.c:0:0
   Occurrences: 6
-
-Uncategorised
-  Before events:
-    RF: Jump to external code for _realloc
-    RF: xrealloc at wrapper.c:140:1
-    RF: string_list_append_nodup at string-list.c:213:2
-    RF: string_list_append at string-list.c:219:2
-  After events:
-    RF: Jump to external code for _strdup
-    RF: xstrdup at wrapper.c:42:2
-    CF: string_list_append at string-list.c:219:9
-    CT: string_list_append_nodup at string-list.c:207:0
-    CF: string_list_append_nodup at string-list.c:209:2
-    CT: st_mult at git-compat-util.h:991:0
-    RF: st_mult at git-compat-util.h:995:2
-    CF: string_list_append_nodup at string-list.c:209:2
-    CT: xrealloc at wrapper.c:127:0
-    CF: xrealloc at wrapper.c:135:2
-    CT: memory_limit_check at wrapper.c:18:0
-    RF: memory_limit_check at wrapper.c:35:1
-    CF: xrealloc at wrapper.c:136:8
-    CT: Jump to external code for _realloc
-    CF: Jump to external code for _realloc
-    CT: External code
-    RF: Jump to external code for _realloc
-    RF: xrealloc at wrapper.c:140:1
-    RF: string_list_append_nodup at string-list.c:213:2
-    RF: string_list_append at string-list.c:0:0
-    RF: string_list_append at string-list.c:0:0
-  Occurrences: 24
 
 ## Divergences with unique coordinates by type
 
@@ -2345,9 +2284,9 @@ ProgramCallRemoved
   Unique divergence coordinates: 15
 
 Uncategorised
-  Unique divergence coordinates: 14
+  Unique divergence coordinates: 12
 
 ## Summary
 
-288 unique divergence coordinates
-19939 divergence occurrences
+286 unique divergence coordinates
+19891 divergence occurrences

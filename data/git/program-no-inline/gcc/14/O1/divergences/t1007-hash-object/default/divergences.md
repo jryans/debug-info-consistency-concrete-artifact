@@ -1279,13 +1279,6 @@ ProgramCallRemoved
 
 Uncategorised
   Before events:
-    CF: git_attr_internal at attr.c:216:2
-    CT: hashmap_lock at attr.c:42:1
-    RF: hashmap_lock at attr.c:44:1
-  Occurrences: 10
-
-Uncategorised
-  Before events:
     CF: string_list_init_dup at string-list.c:13:2
     CT: Jump to external code for ___memcpy_chk
     CF: Jump to external code for ___memcpy_chk
@@ -1359,9 +1352,9 @@ ProgramCallRemoved
   Unique divergence coordinates: 8
 
 Uncategorised
-  Unique divergence coordinates: 8
+  Unique divergence coordinates: 7
 
 ## Summary
 
-175 unique divergence coordinates
-53542 divergence occurrences
+174 unique divergence coordinates
+53532 divergence occurrences
