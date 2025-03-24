@@ -16,9 +16,12 @@ level="O1"
 version="11"
 echo "## Collecting concrete trace of \`${TARGET_NAME}\` (GCC ${version}, ${level})"
 
+# Common options for all executions of this program
+common_command_opts="-hide_banner -loglevel error"
+
 # Each execution of the target to analyse
 executions=(scale)
-scale_COMMAND="-i ${HOME}/Downloads/input-100ms.mp4 -vf scale=360:240 ${HOME}/Downloads/output.mp4"
+scale_COMMAND="-i ${HOME}/Downloads/input-2f.mp4 -vf scale=360:240 ${HOME}/Downloads/output.mp4"
 
 # Different trace variants to collect
 # These map to different trace options in `vars.sh`
@@ -40,6 +43,7 @@ for execution in ${executions[*]}; do
         ${CON_COLLECT_INSTRUMENTATION} \
         "$@" \
         ../../../${TARGET_NAME} \
+        ${common_command_opts} \
         ${!execution_command} \
         > stdout;
       rm -f ${HOME}/Downloads/output.mp4;
