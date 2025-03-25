@@ -2755,6 +2755,33 @@ CoordinatesChangedLarge
     RF: xdl_bogosqrt at xutils.c:32:16
   Occurrences: 8
 
+LibraryCallAdded
+  After events:
+    CF: do_xmalloc at wrapper.c:51:8
+    CT: Jump to external code for _malloc
+    CF: Jump to external code for _malloc
+    CT: External code
+    RF: Jump to external code for _malloc
+  Occurrences: 1
+
+LibraryCallAdded
+  After events:
+    CF: start_command at run-command.c:779:3
+    CT: Jump to external code for _close
+    CF: Jump to external code for _close
+    CT: External code
+    RF: Jump to external code for _close
+  Occurrences: 1
+
+LibraryCallAdded
+  After events:
+    CF: start_command at run-command.c:824:8
+    CT: Jump to external code for _signal
+    CF: Jump to external code for _signal
+    CT: External code
+    RF: Jump to external code for _signal
+  Occurrences: 2
+
 LibraryCallReplaced
   Before events:
     CF: add_to_index at read-cache.c:790:2
@@ -4515,6 +4542,9 @@ CoordinatesChangedSmall
 CoordinatesChangedLarge
   Unique divergence coordinates: 93
 
+LibraryCallAdded
+  Unique divergence coordinates: 3
+
 LibraryCallReplaced
   Unique divergence coordinates: 45
 
@@ -4529,5 +4559,5 @@ Uncategorised
 
 ## Summary
 
-566 unique divergence coordinates
-395269 divergence occurrences
+569 unique divergence coordinates
+395273 divergence occurrences

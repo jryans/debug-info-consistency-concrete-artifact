@@ -4652,6 +4652,24 @@ CoordinatesChangedLarge
     RF: xopen at wrapper.c:199:1
   Occurrences: 175
 
+LibraryCallAdded
+  After events:
+    CF: start_command at run-command.c:824:8
+    CT: Jump to external code for _signal
+    CF: Jump to external code for _signal
+    CT: External code
+    RF: Jump to external code for _signal
+  Occurrences: 8
+
+LibraryCallAdded
+  After events:
+    CF: xrealloc at wrapper.c:136:8
+    CT: Jump to external code for _realloc
+    CF: Jump to external code for _realloc
+    CT: External code
+    RF: Jump to external code for _realloc
+  Occurrences: 1
+
 LibraryCallReplaced
   Before events:
     CF: add_to_index at read-cache.c:790:2
@@ -8272,6 +8290,9 @@ CoordinatesChangedSmall
 CoordinatesChangedLarge
   Unique divergence coordinates: 115
 
+LibraryCallAdded
+  Unique divergence coordinates: 2
+
 LibraryCallReplaced
   Unique divergence coordinates: 41
 
@@ -8286,5 +8307,5 @@ Uncategorised
 
 ## Summary
 
-988 unique divergence coordinates
-198855 divergence occurrences
+990 unique divergence coordinates
+198864 divergence occurrences

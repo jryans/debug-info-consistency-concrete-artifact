@@ -2664,6 +2664,16 @@ CoordinatesChangedLarge
     RF: xdl_bogosqrt at xutils.c:32:16
   Occurrences: 8
 
+LibraryCallAdded
+  After events:
+    CF: Jump to external code for _signal
+    CT: External code
+    RF: Jump to external code for _signal
+    CF: Jump to external code for _sigprocmask
+    CT: External code
+    RF: Jump to external code for _sigprocmask
+  Occurrences: 1
+
 LibraryCallReplaced
   Before events:
     CF: add_to_index at read-cache.c:790:2
@@ -4597,6 +4607,9 @@ CoordinatesChangedSmall
 CoordinatesChangedLarge
   Unique divergence coordinates: 92
 
+LibraryCallAdded
+  Unique divergence coordinates: 1
+
 LibraryCallReplaced
   Unique divergence coordinates: 45
 
@@ -4611,5 +4624,5 @@ Uncategorised
 
 ## Summary
 
-570 unique divergence coordinates
-394656 divergence occurrences
+571 unique divergence coordinates
+394657 divergence occurrences

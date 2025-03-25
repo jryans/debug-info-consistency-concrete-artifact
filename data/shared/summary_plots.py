@@ -24,6 +24,7 @@ def load_data(target_name, data_path_prefix):
       df_divergence_type = os.path.basename(count_file)
       df_segment["Divergence Type"] = df_divergence_type
       df = pd.concat([df, df_segment])
+    df = df.sort_values("Divergence Type", ignore_index=True)
     df.variant = variant
     dfs.append(df)
 

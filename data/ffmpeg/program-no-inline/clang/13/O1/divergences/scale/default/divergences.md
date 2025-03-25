@@ -809,6 +809,123 @@ CoordinatesChangedLarge
     CF: put_bits_no_assert at put_bits.h:228:13
   Occurrences: 1
 
+LibraryCallAdded
+  After events:
+    CF: avcodec_align_dimensions2 at utils.c:338:27
+    CT: Jump to external code for _memset_pattern16
+    CF: Jump to external code for _memset_pattern16
+    CT: External code
+    RF: Jump to external code for _memset_pattern16
+  Occurrences: 3
+
+LibraryCallAdded
+  After events:
+    CF: avformat_find_stream_info at demux.c:2444:14
+    CT: Jump to external code for _strcmp
+    CF: Jump to external code for _strcmp
+    CT: External code
+    RF: Jump to external code for _strcmp
+  Occurrences: 1
+
+LibraryCallAdded
+  After events:
+    CF: avformat_new_stream at options.c:305:28
+    CT: Jump to external code for _memset_pattern16
+    CF: Jump to external code for _memset_pattern16
+    CT: External code
+    RF: Jump to external code for _memset_pattern16
+  Occurrences: 4
+
+LibraryCallAdded
+  After events:
+    CF: decode_scalefactors at aacdec_template.c:1615:29
+    CT: Jump to external code for ___bzero
+    CF: Jump to external code for ___bzero
+    CT: External code
+    RF: Jump to external code for ___bzero
+  Occurrences: 6
+
+LibraryCallAdded
+  After events:
+    CF: ff_cbrt_tableinit at cbrt_tablegen.h:48:29
+    CT: Jump to external code for _memset_pattern16
+    CF: Jump to external code for _memset_pattern16
+    CT: External code
+    RF: Jump to external code for _memset_pattern16
+  Occurrences: 1
+
+LibraryCallAdded
+  After events:
+    CF: ff_h264_alloc_tables at h264dec.c:249:31
+    CT: Jump to external code for _memset_pattern16
+    CF: Jump to external code for _memset_pattern16
+    CT: External code
+    RF: Jump to external code for _memset_pattern16
+  Occurrences: 2
+
+LibraryCallAdded
+  After events:
+    CF: ff_mpv_init_context_frame at mpegvideo.c:646:31
+    CT: Jump to external code for _memset_pattern16
+    CF: Jump to external code for _memset_pattern16
+    CT: External code
+    RF: Jump to external code for _memset_pattern16
+  Occurrences: 1
+
+LibraryCallAdded
+  After events:
+    CF: fill_ones at slice.c:0:9
+    CT: Jump to external code for _memset_pattern16
+    CF: Jump to external code for _memset_pattern16
+    CT: External code
+    RF: Jump to external code for _memset_pattern16
+  Occurrences: 36
+
+LibraryCallAdded
+  After events:
+    CF: h264_init_context at h264dec.c:304:25
+    CT: Jump to external code for _memset_pattern16
+    CF: Jump to external code for _memset_pattern16
+    CT: External code
+    RF: Jump to external code for _memset_pattern16
+  Occurrences: 2
+
+LibraryCallAdded
+  After events:
+    CF: idr at h264dec.c:441:25
+    CT: Jump to external code for _memset_pattern16
+    CF: Jump to external code for _memset_pattern16
+    CT: External code
+    RF: Jump to external code for _memset_pattern16
+  Occurrences: 4
+
+LibraryCallAdded
+  After events:
+    CF: init_mv_penalty_and_fcode at ituh263enc.c:753:33
+    CT: Jump to external code for _memset
+    CF: Jump to external code for _memset
+    CT: External code
+    RF: Jump to external code for _memset
+  Occurrences: 7
+
+LibraryCallAdded
+  After events:
+    CF: init_mv_penalty_and_fcode at ituh263enc.c:758:26
+    CT: Jump to external code for _memset
+    CF: Jump to external code for _memset
+    CT: External code
+    RF: Jump to external code for _memset
+  Occurrences: 1
+
+LibraryCallAdded
+  After events:
+    CF: lame_window_init at aacpsy.c:275:42
+    CT: Jump to external code for _memset_pattern16
+    CF: Jump to external code for _memset_pattern16
+    CT: External code
+    RF: Jump to external code for _memset_pattern16
+  Occurrences: 2
+
 LibraryCallReplaced
   Before events:
     CF: aac_encode_frame at aacenc.c:711:17
@@ -5229,33 +5346,6 @@ ProgramCallRemoved
 
 Uncategorised
   After events:
-    CF: avcodec_align_dimensions2 at utils.c:338:27
-    CT: Jump to external code for _memset_pattern16
-    CF: Jump to external code for _memset_pattern16
-    CT: External code
-    RF: Jump to external code for _memset_pattern16
-  Occurrences: 3
-
-Uncategorised
-  After events:
-    CF: avformat_find_stream_info at demux.c:2444:14
-    CT: Jump to external code for _strcmp
-    CF: Jump to external code for _strcmp
-    CT: External code
-    RF: Jump to external code for _strcmp
-  Occurrences: 1
-
-Uncategorised
-  After events:
-    CF: avformat_new_stream at options.c:305:28
-    CT: Jump to external code for _memset_pattern16
-    CF: Jump to external code for _memset_pattern16
-    CT: External code
-    RF: Jump to external code for _memset_pattern16
-  Occurrences: 4
-
-Uncategorised
-  After events:
     CF: calc_bit_demand at aacpsy.c:508:18
     CT: av_clipf_c at common.h:388:0
     RF: av_clipf_c at common.h:0:0
@@ -5263,15 +5353,6 @@ Uncategorised
     CT: av_clipf_c at common.h:388:0
     RF: av_clipf_c at common.h:0:0
   Occurrences: 36
-
-Uncategorised
-  After events:
-    CF: decode_scalefactors at aacdec_template.c:1615:29
-    CT: Jump to external code for ___bzero
-    CF: Jump to external code for ___bzero
-    CT: External code
-    RF: Jump to external code for ___bzero
-  Occurrences: 6
 
 Uncategorised
   After events:
@@ -5660,15 +5741,6 @@ Uncategorised
 
 Uncategorised
   After events:
-    CF: ff_cbrt_tableinit at cbrt_tablegen.h:48:29
-    CT: Jump to external code for _memset_pattern16
-    CF: Jump to external code for _memset_pattern16
-    CT: External code
-    RF: Jump to external code for _memset_pattern16
-  Occurrences: 1
-
-Uncategorised
-  After events:
     CF: ff_dnxhd_check_header_prefix at dnxhddata.h:80:9
     CT: ff_dnxhd_check_header_prefix_hr at dnxhddata.h:66:0
     RF: ff_dnxhd_check_header_prefix_hr at dnxhddata.h:0:0
@@ -5707,15 +5779,6 @@ Uncategorised
 
 Uncategorised
   After events:
-    CF: ff_mpv_init_context_frame at mpegvideo.c:646:31
-    CT: Jump to external code for _memset_pattern16
-    CF: Jump to external code for _memset_pattern16
-    CT: External code
-    RF: Jump to external code for _memset_pattern16
-  Occurrences: 1
-
-Uncategorised
-  After events:
     CF: ff_sws_init_output_funcs at output.c:0:0
     CT: av_pix_fmt_desc_get at pixdesc.c:2663:0
     RF: av_pix_fmt_desc_get at pixdesc.c:2667:1
@@ -5723,103 +5786,6 @@ Uncategorised
     CT: is16BPS at swscale_internal.h:694:0
     RF: is16BPS at swscale_internal.h:0:0
   Occurrences: 3
-
-Uncategorised
-  After events:
-    CF: fill_ones at slice.c:0:9
-    CT: Jump to external code for _memset_pattern16
-    CF: Jump to external code for _memset_pattern16
-    CT: External code
-    RF: Jump to external code for _memset_pattern16
-    CF: fill_ones at slice.c:0:9
-    CT: Jump to external code for _memset_pattern16
-    CF: Jump to external code for _memset_pattern16
-    CT: External code
-    RF: Jump to external code for _memset_pattern16
-    CF: fill_ones at slice.c:0:9
-    CT: Jump to external code for _memset_pattern16
-    CF: Jump to external code for _memset_pattern16
-    CT: External code
-    RF: Jump to external code for _memset_pattern16
-    CF: fill_ones at slice.c:0:9
-    CT: Jump to external code for _memset_pattern16
-    CF: Jump to external code for _memset_pattern16
-    CT: External code
-    RF: Jump to external code for _memset_pattern16
-    CF: fill_ones at slice.c:0:9
-    CT: Jump to external code for _memset_pattern16
-    CF: Jump to external code for _memset_pattern16
-    CT: External code
-    RF: Jump to external code for _memset_pattern16
-    CF: fill_ones at slice.c:0:9
-    CT: Jump to external code for _memset_pattern16
-    CF: Jump to external code for _memset_pattern16
-    CT: External code
-    RF: Jump to external code for _memset_pattern16
-    [...150 more events...]
-  Occurrences: 1
-
-Uncategorised
-  After events:
-    CF: h264_init_context at h264dec.c:304:25
-    CT: Jump to external code for _memset_pattern16
-    CF: Jump to external code for _memset_pattern16
-    CT: External code
-    RF: Jump to external code for _memset_pattern16
-  Occurrences: 2
-
-Uncategorised
-  After events:
-    CF: idr at h264dec.c:441:25
-    CT: Jump to external code for _memset_pattern16
-    CF: Jump to external code for _memset_pattern16
-    CT: External code
-    RF: Jump to external code for _memset_pattern16
-  Occurrences: 4
-
-Uncategorised
-  After events:
-    CF: init_mv_penalty_and_fcode at ituh263enc.c:753:33
-    CT: Jump to external code for _memset
-    CF: Jump to external code for _memset
-    CT: External code
-    RF: Jump to external code for _memset
-    CF: init_mv_penalty_and_fcode at ituh263enc.c:753:33
-    CT: Jump to external code for _memset
-    CF: Jump to external code for _memset
-    CT: External code
-    RF: Jump to external code for _memset
-    CF: init_mv_penalty_and_fcode at ituh263enc.c:753:33
-    CT: Jump to external code for _memset
-    CF: Jump to external code for _memset
-    CT: External code
-    RF: Jump to external code for _memset
-    CF: init_mv_penalty_and_fcode at ituh263enc.c:753:33
-    CT: Jump to external code for _memset
-    CF: Jump to external code for _memset
-    CT: External code
-    RF: Jump to external code for _memset
-    CF: init_mv_penalty_and_fcode at ituh263enc.c:753:33
-    CT: Jump to external code for _memset
-    CF: Jump to external code for _memset
-    CT: External code
-    RF: Jump to external code for _memset
-    CF: init_mv_penalty_and_fcode at ituh263enc.c:753:33
-    CT: Jump to external code for _memset
-    CF: Jump to external code for _memset
-    CT: External code
-    RF: Jump to external code for _memset
-    [...10 more events...]
-  Occurrences: 1
-
-Uncategorised
-  After events:
-    CF: lame_window_init at aacpsy.c:275:42
-    CT: Jump to external code for _memset_pattern16
-    CF: Jump to external code for _memset_pattern16
-    CT: External code
-    RF: Jump to external code for _memset_pattern16
-  Occurrences: 2
 
 Uncategorised
   After events:
@@ -33390,6 +33356,9 @@ CoordinatesChangedSmall
 CoordinatesChangedLarge
   Unique divergence coordinates: 5
 
+LibraryCallAdded
+  Unique divergence coordinates: 13
+
 LibraryCallReplaced
   Unique divergence coordinates: 82
 
@@ -33400,9 +33369,9 @@ ProgramCallRemoved
   Unique divergence coordinates: 215
 
 Uncategorised
-  Unique divergence coordinates: 684
+  Unique divergence coordinates: 673
 
 ## Summary
 
-1283 unique divergence coordinates
-100295 divergence occurrences
+1285 unique divergence coordinates
+100339 divergence occurrences
