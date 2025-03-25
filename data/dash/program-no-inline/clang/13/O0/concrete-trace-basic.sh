@@ -40,7 +40,7 @@ for execution in ${executions[*]}; do
         ${CON_COLLECT_INSTRUMENTATION} \
         "$@" \
         ../../../${TARGET_NAME} \
-        ../../../../../../../../vars.sh \
+        -c 'echo bob' \
         > stdout;
       mv trace-* trace
     )
