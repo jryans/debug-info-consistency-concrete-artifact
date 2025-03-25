@@ -46,7 +46,8 @@ for execution in ${executions[*]}; do
         ../../../${TARGET_NAME} \
         -C ${REPO_PATH} \
         ${!execution_command} \
-        > stdout
+        > stdout;
+      mv trace-* trace
     )
 
     mkdir -p concrete-trace-with-source/${execution}/${trace_variant}
@@ -60,7 +61,8 @@ for execution in ${executions[*]}; do
         ../../../${TARGET_NAME} \
         -C ${REPO_PATH} \
         ${!execution_command} \
-        > stdout
+        > stdout;
+      mv trace-* trace
     )
   done
 
