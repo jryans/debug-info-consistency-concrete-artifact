@@ -9,21 +9,16 @@ if [ "${PWD}" != "${SCRIPT_DIR}" ]; then
   exit
 fi
 
-TARGET_NAME="tar"
+TARGET_NAME="dash"
 source "${SCRIPT_DIR}/../../../../../vars.sh"
-
-# Analyse `tar` in the context of specific archive to reduce trace noise
-# `simple.tar`: https://github.com/alexcrichton/tar-rs/blob/97d5033eb80bf90c746a8b76dd31ca8a39326991/tests/archives/simple.tar
-ARCHIVE_NAME="simple"
-ARCHIVE_PATH="${HOME}/Downloads/${ARCHIVE_NAME}.tar"
 
 level="O0"
 version="13"
 echo "## Collecting concrete trace of \`${TARGET_NAME}\` (Clang ${version}, ${level})"
 
 # Each execution of the target to analyse
-executions=(extract)
-extract_COMMAND="-xvf ${ARCHIVE_PATH}"
+executions=(echo)
+echo_COMMAND=""
 
 # Different trace variants to collect
 # These map to different trace options in `vars.sh`
@@ -40,16 +35,13 @@ for execution in ${executions[*]}; do
     mkdir -p concrete-trace/${execution}/${trace_variant}
     (
       cd concrete-trace/${execution}/${trace_variant};
-      mkdir -p ${ARCHIVE_NAME};
       env \
         ${!trace_variant_opts} \
         ${CON_COLLECT_INSTRUMENTATION} \
         "$@" \
         ../../../${TARGET_NAME} \
-        -C ${ARCHIVE_NAME} \
-        ${!execution_command} \
+        ../../../../../../../../vars.sh \
         > stdout;
-      rm -rf ${ARCHIVE_NAME};
       mv trace-* trace
     )
   done

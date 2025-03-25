@@ -27,7 +27,7 @@ extract_COMMAND="-xvf ${ARCHIVE_PATH}"
 
 # Different trace variants to collect
 # These map to different trace options in `vars.sh`
-trace_variants=(default rfld ld ld-eld ld-eld-ifd)
+trace_variants=(default)
 
 for execution in ${executions[*]}; do
   execution_command="${execution}_COMMAND"
@@ -49,7 +49,8 @@ for execution in ${executions[*]}; do
         -C ${ARCHIVE_NAME} \
         ${!execution_command} \
         > stdout;
-      rm -rf ${ARCHIVE_NAME}
+      rm -rf ${ARCHIVE_NAME};
+      mv trace-* trace
     )
   done
 done
