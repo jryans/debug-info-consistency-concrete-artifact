@@ -1,25 +1,34 @@
 {
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.11";
+    systems.url = "github:nix-systems/default";
   };
 
   outputs =
-    { self, nixpkgs, ... }:
+    { nixpkgs, systems, ... }:
     let
-      system = "x86_64-linux";
+      forEachSystem =
+        f:
+        nixpkgs.lib.genAttrs (import systems) (
+          system:
+          f {
+            pkgs = import nixpkgs {
+              inherit system;
+            };
+          }
+        );
     in
     {
-      devShells."${system}".default =
-        let
-          pkgs = import nixpkgs {
-            inherit system;
+      devShells = forEachSystem (
+        { pkgs }:
+        {
+          default = pkgs.mkShell {
+            packages = with pkgs; [
+              # TODO: Use a smaller scheme with list of additional packages
+              texlive.combined.scheme-full
+            ];
           };
-        in
-        pkgs.mkShell {
-          packages = with pkgs; [
-            # TODO: Use a smaller scheme with list of additional packages
-            texlive.combined.scheme-full
-          ];
-        };
+        }
+      );
     };
 }
