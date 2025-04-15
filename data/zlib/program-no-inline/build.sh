@@ -33,9 +33,10 @@ for i in ${!levels[*]}; do
 
   ## Build via bitcode collection wrapper
   cc_level_opts="CC_${level}_OPTS"
-  make \
-    CC=wllvm \
-    CFLAGS="${CC_COMMON_OPTS} ${CC_CLANG_OPTS} ${!cc_level_opts} -fno-inline"
+  CC=wllvm \
+    CFLAGS="${CC_COMMON_OPTS} ${CC_CLANG_OPTS} ${!cc_level_opts} -fno-inline" \
+    ./configure
+  make
 
   ## Extract bitcode
   extract-bc ${TARGET_PATH}
@@ -74,10 +75,11 @@ for i in ${!levels[*]}; do
 
   ## Build for binary with debug info
   cc_level_opts="CC_${level}_OPTS"
-  make \
-    CC="$(llvm release-clang-lldb-${version}.0.0 clang)" \
+  CC="$(llvm release-clang-lldb-${version}.0.0 clang)" \
     CFLAGS="${CC_COMMON_OPTS} ${CC_CLANG_OPTS} ${!cc_level_opts} -fno-inline -fsave-optimization-record" \
-    LDFLAGS="${LD_COMMON_OPTS}"
+    LDFLAGS="${LD_COMMON_OPTS}" \
+    ./configure
+  make
 
   mkdir -p "${SCRIPT_DIR}/clang/${version}/${level}"
 
@@ -115,10 +117,11 @@ done
 
 #   ## Build for binary with debug info
 #   cc_level_opts="CC_${level}_OPTS"
-#   make \
 #     CC="gcc-${version}" \
 #     CFLAGS="${CC_COMMON_OPTS} ${CC_GCC_OPTS} ${!cc_level_opts} -fno-inline" \
-#     LDFLAGS="${LD_COMMON_OPTS}"
+#     LDFLAGS="${LD_COMMON_OPTS}" \
+#     ./configure
+#   make
 
 #   mkdir -p "${SCRIPT_DIR}/gcc/${version}/${level}"
 
