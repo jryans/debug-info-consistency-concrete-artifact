@@ -24,8 +24,8 @@ CC_COMMON_OPTS="${CC_COMMON_OPTS} ${LD_COMMON_OPTS}"
 
 #   levels=(O0 O1 O2 O0 O1)
 # versions=(13 13 13 18 18)
-  levels=(O0)
-versions=(13)
+  levels=(O0 O1)
+versions=(13 13)
 
 for i in ${!levels[*]}; do
   level=${levels[$i]}
