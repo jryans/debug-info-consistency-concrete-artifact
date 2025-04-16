@@ -1,3 +1,11 @@
+UNAME=`uname`
+
+if [[ "$UNAME" == 'Darwin' ]]; then
+  OS="mac"
+else
+  OS="linux"
+fi
+
 llvm() {
   local build=${1}
   local program=${2:-}
@@ -19,7 +27,11 @@ klee() {
   echo "${HOME}/Projects/klee/build-${build}/bin/${program}"
 }
 
-CC_SYSROOT_OPTS="--sysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk"
+if [[ "$OS" == 'mac' ]]; then
+  CC_SYSROOT_OPTS="--sysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk"
+else
+  CC_SYSROOT_OPTS="-B/nix/store/maxa3xhmxggrc5v2vc0c3pjb79hjlkp9-glibc-2.40-66/lib/ -idirafter /nix/store/81awch8mhqanda1vy0c09bflgra4cxh0-glibc-2.40-66-dev/include -B/nix/store/yg4ahy7gahx91nq80achmzilrjyv0scj-gcc-13.3.0/lib/gcc/x86_64-unknown-linux-gnu/13.3.0 --gcc-toolchain=/nix/store/yg4ahy7gahx91nq80achmzilrjyv0scj-gcc-13.3.0 -B/nix/store/w9mcn0hi97xp5m9ds5nsc4cr99qspz9h-clang-18.1.8-lib/lib -resource-dir=/nix/store/c6mlpw8bb0n9rc38hihmy0zzc1w81ljr-clang-wrapper-18.1.8/resource-root"
+fi
 CC_COMMON_OPTS="${CC_SYSROOT_OPTS} -g"
 CC_CLANG_OPTS="-fno-discard-value-names -Xclang -disable-O0-optnone"
 CC_GCC_OPTS="-gdwarf-4 -gno-strict-dwarf"
@@ -30,7 +42,16 @@ CC_O3_OPTS="-O3"
 CC_Og_OPTS="-Og"
 CC_LV_OPTS="${CC_Og_OPTS} -gvariable-location-views"
 
-LD_COMMON_OPTS="-Wl,-no_pie"
+if [[ "$OS" == 'mac' ]]; then
+  LD_SYSROOT_OPTS=""
+else
+  LD_SYSROOT_OPTS="-L/nix/store/yg4ahy7gahx91nq80achmzilrjyv0scj-gcc-13.3.0/lib/gcc/x86_64-unknown-linux-gnu/13.3.0 -L/nix/store/mhd0rk497xm0xnip7262xdw9bylvzh99-gcc-13.3.0-lib/lib -L/nix/store/yg4ahy7gahx91nq80achmzilrjyv0scj-gcc-13.3.0/lib -L/nix/store/czlhi3r9b6ip4xyynwibfhm458ljwsir-gcc-13.3.0-libgcc/lib -L/nix/store/w9mcn0hi97xp5m9ds5nsc4cr99qspz9h-clang-18.1.8-lib/lib"
+fi
+if [[ "$OS" == 'mac' ]]; then
+  LD_COMMON_OPTS="${LD_SYSROOT_OPTS} -Wl,-no_pie"
+else
+  LD_COMMON_OPTS="${LD_SYSROOT_OPTS}"
+fi
 
 KLEE=$(klee release-debug klee)
 KLEE_COMMON_OPTS="--use-color=false --debug-execution-trace --disable-verify --output-source --search=random-path"

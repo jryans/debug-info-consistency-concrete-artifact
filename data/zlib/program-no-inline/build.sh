@@ -16,6 +16,10 @@ export LLVM_COMPILER_PATH="$(llvm release-clang-lldb-13.0.0)/bin"
 TARGET_NAME="example"
 TARGET_PATH="${TARGET_NAME}"
 
+# A bit awkward, but with this project's available flag options,
+# seems easiest to add linker flags into `CFLAGS` as well
+CC_COMMON_OPTS="${CC_COMMON_OPTS} ${LD_COMMON_OPTS}"
+
 # Clang
 
 #   levels=(O0 O1 O2 O0 O1)
@@ -79,7 +83,6 @@ for i in ${!levels[*]}; do
   cc_level_opts="CC_${level}_OPTS"
   CC="$(llvm release-clang-lldb-${version}.0.0 clang)" \
     CFLAGS="${CC_COMMON_OPTS} ${CC_CLANG_OPTS} ${!cc_level_opts} -fno-inline -fsave-optimization-record" \
-    LDFLAGS="${LD_COMMON_OPTS}" \
     ./configure
   make
 
@@ -122,7 +125,6 @@ done
 #   cc_level_opts="CC_${level}_OPTS"
 #     CC="gcc-${version}" \
 #     CFLAGS="${CC_COMMON_OPTS} ${CC_GCC_OPTS} ${!cc_level_opts} -fno-inline" \
-#     LDFLAGS="${LD_COMMON_OPTS}" \
 #     ./configure
 #   make
 
