@@ -45,7 +45,7 @@ CC_LV_OPTS="${CC_Og_OPTS} -gvariable-location-views"
 if [[ "$OS" == 'mac' ]]; then
   LD_SYSROOT_OPTS=""
 else
-  LD_SYSROOT_OPTS="-L/nix/store/yg4ahy7gahx91nq80achmzilrjyv0scj-gcc-13.3.0/lib/gcc/x86_64-unknown-linux-gnu/13.3.0 -L/nix/store/mhd0rk497xm0xnip7262xdw9bylvzh99-gcc-13.3.0-lib/lib -L/nix/store/yg4ahy7gahx91nq80achmzilrjyv0scj-gcc-13.3.0/lib -L/nix/store/czlhi3r9b6ip4xyynwibfhm458ljwsir-gcc-13.3.0-libgcc/lib -L/nix/store/w9mcn0hi97xp5m9ds5nsc4cr99qspz9h-clang-18.1.8-lib/lib"
+  LD_SYSROOT_OPTS="-Wl,-dynamic-linker=/nix/store/maxa3xhmxggrc5v2vc0c3pjb79hjlkp9-glibc-2.40-66/lib/ld-linux-x86-64.so.2 -L/nix/store/yg4ahy7gahx91nq80achmzilrjyv0scj-gcc-13.3.0/lib/gcc/x86_64-unknown-linux-gnu/13.3.0 -L/nix/store/mhd0rk497xm0xnip7262xdw9bylvzh99-gcc-13.3.0-lib/lib -L/nix/store/yg4ahy7gahx91nq80achmzilrjyv0scj-gcc-13.3.0/lib -L/nix/store/czlhi3r9b6ip4xyynwibfhm458ljwsir-gcc-13.3.0-libgcc/lib -L/nix/store/w9mcn0hi97xp5m9ds5nsc4cr99qspz9h-clang-18.1.8-lib/lib"
 fi
 if [[ "$OS" == 'mac' ]]; then
   LD_COMMON_OPTS="${LD_SYSROOT_OPTS} -Wl,-no_pie"
