@@ -63,8 +63,11 @@ LLDB_PYTHON_MODULES="$(llvm release-clang-lld-lldb-17.0.6)/lib/python3.12/site-p
 LLDB_PYTHON="python3.12"
 
 CON_COLLECT_DEBUGGER="${HOME}/Projects/debug-info-concrete-check/debugger/collect_trace.py"
-# TODO: Generalise this to support Linux as well as macOS
-CON_COLLECT_INSTRUMENTATION="DYLD_INSERT_LIBRARIES=${HOME}/Projects/debug-info-concrete-check/binary-instrumentation/build/libcollect-trace-preload.dylib"
+if [[ "$OS" == 'mac' ]]; then
+  CON_COLLECT_INSTRUMENTATION="DYLD_INSERT_LIBRARIES=${HOME}/Projects/debug-info-concrete-check/binary-instrumentation/build/libcollect-trace-preload.dylib"
+else
+  CON_COLLECT_INSTRUMENTATION="LD_PRELOAD=${HOME}/Projects/debug-info-concrete-check/binary-instrumentation/build/libcollect-trace-preload.so"
+fi
 
 CON_TRACE_default_OPTS=""
 CON_TRACE_rfld_OPTS="CON_TRACE_RF_LOCATION=0"
