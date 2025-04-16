@@ -96,10 +96,12 @@ for i in ${!levels[*]}; do
   )
 
   ## Gather debug info
-  dsymutil --flat "${TARGET_PATH}"
-  cp \
-    "${TARGET_PATH}.dwarf" \
-    "${SCRIPT_DIR}/clang/${version}/${level}/${TARGET_NAME}.dwarf"
+  if [[ "$OS" == 'mac' ]]; then
+    dsymutil --flat "${TARGET_PATH}"
+    cp \
+      "${TARGET_PATH}.dwarf" \
+      "${SCRIPT_DIR}/clang/${version}/${level}/${TARGET_NAME}.dwarf"
+  fi
 
   ## Store program binary
   cp \
@@ -139,10 +141,12 @@ done
 #   # )
 
 #   ## Gather debug info
-#   dsymutil --flat "${TARGET_PATH}"
-#   cp \
-#     "${TARGET_PATH}.dwarf" \
-#     "${SCRIPT_DIR}/gcc/${version}/${level}/${TARGET_NAME}.dwarf"
+#   if [[ "$OS" == 'mac' ]]; then
+#     dsymutil --flat "${TARGET_PATH}"
+#     cp \
+#       "${TARGET_PATH}.dwarf" \
+#       "${SCRIPT_DIR}/gcc/${version}/${level}/${TARGET_NAME}.dwarf"
+#   fi
 
 #   ## Store program binary
 #   cp \
