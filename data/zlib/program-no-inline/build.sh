@@ -33,8 +33,8 @@ for i in ${!levels[*]}; do
 
   # echo "## Building \`${TARGET_NAME}\` (Clang ${version}, ${level}) for bitcode"
 
-  # make clean
   # git clean -f
+  # find . -name '*.yaml' -delete
 
   # ## Build via bitcode collection wrapper
   # cc_level_opts="CC_${level}_OPTS"
@@ -72,8 +72,8 @@ for i in ${!levels[*]}; do
 
   echo "## Building \`${TARGET_NAME}\` (Clang ${version}, ${level}) for binary with debug info"
 
-  make clean
   git clean -f
+  find . -name '*.yaml' -delete
 
   # JRS: For some reason, even though the wrapped steps above do produce a
   # linked, native binary, it does _not_ contain debug info, at least on macOS.
@@ -120,8 +120,8 @@ done
 
 #   echo "## Building \`${TARGET_NAME}\` (GCC ${version}, ${level}) for binary with debug info"
 
-#   make clean
 #   git clean -f
+#   find . -name '*.yaml' -delete
 
 #   ## Build for binary with debug info
 #   cc_level_opts="CC_${level}_OPTS"
@@ -158,3 +158,4 @@ done
 echo "## Cleanup"
 make clean
 git clean -f
+find . -name '*.yaml' -delete
