@@ -1995,7 +1995,7 @@ ProgramCallRemoved
     CF: all_attrs_init at attr.c:155:3
     CT: container_of_or_null_offset at git-compat-util.h:1580:0
     RF: container_of_or_null_offset at git-compat-util.h:1581:2
-  Occurrences: 9
+  Occurrences: 6
 
 ProgramCallRemoved
   Before events:
@@ -2225,6 +2225,13 @@ Uncategorised
 
 Uncategorised
   Before events:
+    CT: container_of_or_null_offset at git-compat-util.h:1580:0
+    RF: container_of_or_null_offset at git-compat-util.h:1581:2
+    CF: all_attrs_init at attr.c:155:3
+  Occurrences: 3
+
+Uncategorised
+  Before events:
     CT: git_has_dos_drive_prefix at git-compat-util.h:432:0
     RF: git_has_dos_drive_prefix at git-compat-util.h:433:2
     RF: is_absolute_path at cache.h:1276:2
@@ -2284,9 +2291,9 @@ ProgramCallRemoved
   Unique divergence coordinates: 15
 
 Uncategorised
-  Unique divergence coordinates: 12
+  Unique divergence coordinates: 13
 
 ## Summary
 
-286 unique divergence coordinates
+287 unique divergence coordinates
 19891 divergence occurrences

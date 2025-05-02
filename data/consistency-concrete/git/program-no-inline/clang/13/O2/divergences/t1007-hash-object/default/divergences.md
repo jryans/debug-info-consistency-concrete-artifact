@@ -1479,15 +1479,6 @@ LibraryCallRemoved
 
 LibraryCallRemoved
   Before events:
-    CF: deactivate_tempfile at tempfile.c:127:2
-    CT: Jump to external code for _free
-    CF: Jump to external code for _free
-    CT: External code
-    RF: Jump to external code for _free
-  Occurrences: 5
-
-LibraryCallRemoved
-  Before events:
     CF: git_config_from_parameters at config.c:715:2
     CT: Jump to external code for _memset
     CF: Jump to external code for _memset
@@ -1711,15 +1702,6 @@ LibraryCallRemoved
     RF: Jump to external code for ___memcpy_chk
   Occurrences: 54
 
-LibraryCallRemoved
-  Before events:
-    CF: unlock_ref at files-backend.c:515:2
-    CT: Jump to external code for _free
-    CF: Jump to external code for _free
-    CT: External code
-    RF: Jump to external code for _free
-  Occurrences: 1
-
 ProgramCallRemoved
   Before events:
     CF: all_attrs_init at attr.c:136:2
@@ -1732,7 +1714,7 @@ ProgramCallRemoved
     CF: all_attrs_init at attr.c:155:3
     CT: container_of_or_null_offset at git-compat-util.h:1580:0
     RF: container_of_or_null_offset at git-compat-util.h:1581:2
-  Occurrences: 9
+  Occurrences: 6
 
 ProgramCallRemoved
   Before events:
@@ -1823,7 +1805,7 @@ ProgramCallRemoved
     CF: normalize_path_copy_len at path.c:1177:7
     CT: git_is_dir_sep at git-compat-util.h:447:0
     RF: git_is_dir_sep at git-compat-util.h:448:2
-  Occurrences: 168
+  Occurrences: 95
 
 ProgramCallRemoved
   Before events:
@@ -2005,6 +1987,38 @@ Uncategorised
 
 Uncategorised
   Before events:
+    CT: Jump to external code for _free
+    CF: Jump to external code for _free
+    CT: External code
+    RF: Jump to external code for _free
+    CF: deactivate_tempfile at tempfile.c:127:2
+  Occurrences: 5
+
+Uncategorised
+  Before events:
+    CT: Jump to external code for _free
+    CF: Jump to external code for _free
+    CT: External code
+    RF: Jump to external code for _free
+    CF: unlock_ref at files-backend.c:515:2
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CT: container_of_or_null_offset at git-compat-util.h:1580:0
+    RF: container_of_or_null_offset at git-compat-util.h:1581:2
+    CF: all_attrs_init at attr.c:155:3
+  Occurrences: 3
+
+Uncategorised
+  Before events:
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: normalize_path_copy_len at path.c:1177:7
+  Occurrences: 73
+
+Uncategorised
+  Before events:
     RF: deactivate_tempfile at tempfile.c:128:1
   After events:
     CF: Jump to external code for _free
@@ -2036,15 +2050,15 @@ LibraryCallReplaced
   Unique divergence coordinates: 11
 
 LibraryCallRemoved
-  Unique divergence coordinates: 37
+  Unique divergence coordinates: 35
 
 ProgramCallRemoved
   Unique divergence coordinates: 18
 
 Uncategorised
-  Unique divergence coordinates: 16
+  Unique divergence coordinates: 20
 
 ## Summary
 
-256 unique divergence coordinates
+258 unique divergence coordinates
 15861 divergence occurrences

@@ -3786,12 +3786,6 @@ LibraryCallRemoved
 
 LibraryCallRemoved
   Before events:
-    CF: start_command at run-command.c:779:3
-    CT: Jump to external code for _close
-  Occurrences: 1
-
-LibraryCallRemoved
-  Before events:
     CF: start_command at run-command.c:824:8
     CT: Jump to external code for _signal
   Occurrences: 3
@@ -3904,13 +3898,6 @@ ProgramCallRemoved
     CF: drop_all_attr_stacks at attr.c:544:2
     CT: vector_unlock at attr.c:494:1
     RF: vector_unlock at attr.c:496:1
-  Occurrences: 1
-
-ProgramCallRemoved
-  Before events:
-    CF: git_atexit at run-command.c:1098:2
-    CT: st_mult at git-compat-util.h:991:1
-    RF: st_mult at git-compat-util.h:996:1
   Occurrences: 1
 
 ProgramCallRemoved
@@ -4549,15 +4536,15 @@ LibraryCallReplaced
   Unique divergence coordinates: 45
 
 LibraryCallRemoved
-  Unique divergence coordinates: 47
+  Unique divergence coordinates: 46
 
 ProgramCallRemoved
-  Unique divergence coordinates: 26
+  Unique divergence coordinates: 25
 
 Uncategorised
   Unique divergence coordinates: 55
 
 ## Summary
 
-569 unique divergence coordinates
-395273 divergence occurrences
+567 unique divergence coordinates
+395271 divergence occurrences

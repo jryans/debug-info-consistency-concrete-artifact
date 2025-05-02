@@ -2487,7 +2487,7 @@ LibraryCallRemoved
     CF: Jump to external code for _memset
     CT: External code
     RF: Jump to external code for _memset
-  Occurrences: 4
+  Occurrences: 1
 
 LibraryCallRemoved
   Before events:
@@ -2676,7 +2676,7 @@ LibraryCallRemoved
     CF: Jump to external code for _memset
     CT: External code
     RF: Jump to external code for _memset
-  Occurrences: 2
+  Occurrences: 1
 
 LibraryCallRemoved
   Before events:
@@ -2685,7 +2685,7 @@ LibraryCallRemoved
     CF: Jump to external code for _memset
     CT: External code
     RF: Jump to external code for _memset
-  Occurrences: 2
+  Occurrences: 1
 
 LibraryCallRemoved
   Before events:
@@ -2901,15 +2901,6 @@ LibraryCallRemoved
     CF: Jump to external code for ___memset_chk
     CT: External code
     RF: Jump to external code for ___memset_chk
-  Occurrences: 2
-
-LibraryCallRemoved
-  Before events:
-    CF: ff_mov_read_stsd_entries at mov.c:2582:16
-    CT: Jump to external code for _memset
-    CF: Jump to external code for _memset
-    CT: External code
-    RF: Jump to external code for _memset
   Occurrences: 2
 
 LibraryCallRemoved
@@ -3256,25 +3247,7 @@ LibraryCallRemoved
 
 LibraryCallRemoved
   Before events:
-    CF: mov_parse_stsd_audio at mov.c:2203:45
-    CT: Jump to external code for _memset
-    CF: Jump to external code for _memset
-    CT: External code
-    RF: Jump to external code for _memset
-  Occurrences: 1
-
-LibraryCallRemoved
-  Before events:
     CF: mov_parse_stsd_video at mov.c:2137:13
-    CT: Jump to external code for _memset
-    CF: Jump to external code for _memset
-    CT: External code
-    RF: Jump to external code for _memset
-  Occurrences: 1
-
-LibraryCallRemoved
-  Before events:
-    CF: mov_parse_stsd_video at mov.c:2149:45
     CT: Jump to external code for _memset
     CF: Jump to external code for _memset
     CT: External code
@@ -3297,7 +3270,7 @@ LibraryCallRemoved
     CF: Jump to external code for _memset
     CT: External code
     RF: Jump to external code for _memset
-  Occurrences: 51
+  Occurrences: 28
 
 LibraryCallRemoved
   Before events:
@@ -3306,7 +3279,7 @@ LibraryCallRemoved
     CF: Jump to external code for _memset
     CT: External code
     RF: Jump to external code for _memset
-  Occurrences: 51
+  Occurrences: 23
 
 LibraryCallRemoved
   Before events:
@@ -3360,7 +3333,7 @@ LibraryCallRemoved
     CF: Jump to external code for _memset
     CT: External code
     RF: Jump to external code for _memset
-  Occurrences: 3
+  Occurrences: 1
 
 LibraryCallRemoved
   Before events:
@@ -3921,7 +3894,7 @@ ProgramCallRemoved
     CF: av_bsf_receive_packet at bsf.c:233:12
     CT: ff_bsf at bsf.c:37:0
     RF: ff_bsf at bsf.c:0:0
-  Occurrences: 10
+  Occurrences: 4
 
 ProgramCallRemoved
   Before events:
@@ -20684,6 +20657,42 @@ Uncategorised
     CF: Jump to external code for _memset
     CT: External code
     RF: Jump to external code for _memset
+    CF: avcodec_string at avcodec.c:552:20
+  Occurrences: 3
+
+Uncategorised
+  Before events:
+    CT: Jump to external code for _memset
+    CF: Jump to external code for _memset
+    CT: External code
+    RF: Jump to external code for _memset
+    CF: estimate_timings at demux.c:1912:20
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CT: Jump to external code for _memset
+    CF: Jump to external code for _memset
+    CT: External code
+    RF: Jump to external code for _memset
+    CF: estimate_timings at demux.c:1913:20
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CT: Jump to external code for _memset
+    CF: Jump to external code for _memset
+    CT: External code
+    RF: Jump to external code for _memset
+    CF: ff_mov_read_stsd_entries at mov.c:2582:16
+  Occurrences: 2
+
+Uncategorised
+  Before events:
+    CT: Jump to external code for _memset
+    CF: Jump to external code for _memset
+    CT: External code
+    RF: Jump to external code for _memset
     CF: h264_probe at h264dec.c:36:9
     CT: Jump to external code for _memset
     CF: Jump to external code for _memset
@@ -20691,6 +20700,51 @@ Uncategorised
     CT: Jump to external code for ___bzero
     CF: Jump to external code for ___bzero
   Occurrences: 1
+
+Uncategorised
+  Before events:
+    CT: Jump to external code for _memset
+    CF: Jump to external code for _memset
+    CT: External code
+    RF: Jump to external code for _memset
+    CF: mov_parse_stsd_audio at mov.c:2203:45
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CT: Jump to external code for _memset
+    CF: Jump to external code for _memset
+    CT: External code
+    RF: Jump to external code for _memset
+    CF: mov_parse_stsd_video at mov.c:2149:45
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CT: Jump to external code for _memset
+    CF: Jump to external code for _memset
+    CT: External code
+    RF: Jump to external code for _memset
+    CF: mov_read_default at mov.c:7737:16
+  Occurrences: 23
+
+Uncategorised
+  Before events:
+    CT: Jump to external code for _memset
+    CF: Jump to external code for _memset
+    CT: External code
+    RF: Jump to external code for _memset
+    CF: mov_read_default at mov.c:7737:39
+  Occurrences: 28
+
+Uncategorised
+  Before events:
+    CT: Jump to external code for _memset
+    CF: Jump to external code for _memset
+    CT: External code
+    RF: Jump to external code for _memset
+    CF: mov_read_hdlr at mov.c:744:47
+  Occurrences: 2
 
 Uncategorised
   Before events:
@@ -21007,6 +21061,13 @@ Uncategorised
     RF: dctcoef_get at h264_mb.c:0:0
     CF: hl_decode_mb_predict_luma at h264_mb.c:698:29
   Occurrences: 154
+
+Uncategorised
+  Before events:
+    CT: ff_bsf at bsf.c:37:0
+    RF: ff_bsf at bsf.c:0:0
+    CF: av_bsf_receive_packet at bsf.c:233:12
+  Occurrences: 6
 
 Uncategorised
   Before events:
@@ -33363,15 +33424,15 @@ LibraryCallReplaced
   Unique divergence coordinates: 82
 
 LibraryCallRemoved
-  Unique divergence coordinates: 187
+  Unique divergence coordinates: 184
 
 ProgramCallRemoved
   Unique divergence coordinates: 215
 
 Uncategorised
-  Unique divergence coordinates: 673
+  Unique divergence coordinates: 683
 
 ## Summary
 
-1285 unique divergence coordinates
+1292 unique divergence coordinates
 100339 divergence occurrences

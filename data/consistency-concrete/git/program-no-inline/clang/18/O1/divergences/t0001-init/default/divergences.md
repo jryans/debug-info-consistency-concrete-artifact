@@ -5328,12 +5328,6 @@ LibraryCallRemoved
 
 LibraryCallRemoved
   Before events:
-    CF: Jump to external code for _signal
-    CT: Jump to external code for _signal
-  Occurrences: 1
-
-LibraryCallRemoved
-  Before events:
     CF: Jump to external code for _sigprocmask
     CT: External code
   Occurrences: 1
@@ -6663,7 +6657,7 @@ ProgramCallRemoved
     CF: all_attrs_init at attr.c:155:3
     CT: container_of_or_null_offset at git-compat-util.h:1580:0
     RF: container_of_or_null_offset at git-compat-util.h:1581:2
-  Occurrences: 60
+  Occurrences: 26
 
 ProgramCallRemoved
   Before events:
@@ -7935,6 +7929,13 @@ Uncategorised
 
 Uncategorised
   Before events:
+    CT: container_of_or_null_offset at git-compat-util.h:1580:0
+    RF: container_of_or_null_offset at git-compat-util.h:1581:2
+    CF: all_attrs_init at attr.c:155:3
+  Occurrences: 34
+
+Uncategorised
+  Before events:
     CT: git_has_dos_drive_prefix at git-compat-util.h:432:0
     RF: git_has_dos_drive_prefix at git-compat-util.h:433:2
     RF: is_absolute_path at cache.h:1276:2
@@ -8297,15 +8298,15 @@ LibraryCallReplaced
   Unique divergence coordinates: 41
 
 LibraryCallRemoved
-  Unique divergence coordinates: 156
+  Unique divergence coordinates: 155
 
 ProgramCallRemoved
   Unique divergence coordinates: 33
 
 Uncategorised
-  Unique divergence coordinates: 94
+  Unique divergence coordinates: 95
 
 ## Summary
 
 990 unique divergence coordinates
-198864 divergence occurrences
+198863 divergence occurrences

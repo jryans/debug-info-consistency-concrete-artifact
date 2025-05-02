@@ -1959,12 +1959,6 @@ LibraryCallRemoved
 
 LibraryCallRemoved
   Before events:
-    CF: Jump to external code for _realloc
-    CT: Jump to external code for _realloc
-  Occurrences: 1
-
-LibraryCallRemoved
-  Before events:
     CF: Jump to external code for _signal
     CT: External code
   Occurrences: 1
@@ -1975,12 +1969,6 @@ LibraryCallRemoved
     CT: External code
     RF: Jump to external code for _signal
   Occurrences: 9
-
-LibraryCallRemoved
-  Before events:
-    CF: Jump to external code for _sigprocmask
-    CT: External code
-  Occurrences: 1
 
 LibraryCallRemoved
   Before events:
@@ -3242,6 +3230,13 @@ LibraryCallRemoved
     CF: start_command at run-command.c:824:8
     CT: Jump to external code for _signal
     CF: Jump to external code for _signal
+  Occurrences: 1
+
+LibraryCallRemoved
+  Before events:
+    CF: start_command at run-command.c:824:8
+    CT: Jump to external code for _signal
+    CF: Jump to external code for _signal
     CT: External code
     RF: Jump to external code for _signal
   Occurrences: 14
@@ -3453,7 +3448,7 @@ ProgramCallRemoved
     CF: all_attrs_init at attr.c:155:3
     CT: container_of_or_null_offset at git-compat-util.h:1580:0
     RF: container_of_or_null_offset at git-compat-util.h:1581:2
-  Occurrences: 100
+  Occurrences: 58
 
 ProgramCallRemoved
   Before events:
@@ -3897,6 +3892,13 @@ Uncategorised
 
 Uncategorised
   Before events:
+    CT: container_of_or_null_offset at git-compat-util.h:1580:0
+    RF: container_of_or_null_offset at git-compat-util.h:1581:2
+    CF: all_attrs_init at attr.c:155:3
+  Occurrences: 42
+
+Uncategorised
+  Before events:
     CT: set_error_routine at usage.c:133:0
     RF: set_error_routine at usage.c:135:1
   Occurrences: 1
@@ -3995,15 +3997,15 @@ LibraryCallReplaced
   Unique divergence coordinates: 52
 
 LibraryCallRemoved
-  Unique divergence coordinates: 169
+  Unique divergence coordinates: 168
 
 ProgramCallRemoved
   Unique divergence coordinates: 41
 
 Uncategorised
-  Unique divergence coordinates: 29
+  Unique divergence coordinates: 30
 
 ## Summary
 
 456 unique divergence coordinates
-78527 divergence occurrences
+78526 divergence occurrences

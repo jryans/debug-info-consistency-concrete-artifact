@@ -871,7 +871,7 @@ ProgramCallRemoved
     CF: all_attrs_init at attr.c:155:3
     CT: container_of_or_null_offset at git-compat-util.h:1580:0
     RF: container_of_or_null_offset at git-compat-util.h:1581:2
-  Occurrences: 10
+  Occurrences: 4
 
 ProgramCallRemoved
   Before events:
@@ -985,6 +985,13 @@ ProgramCallRemoved
     RF: system_prefix at exec-cmd.c:248:2
   Occurrences: 56
 
+Uncategorised
+  Before events:
+    CT: container_of_or_null_offset at git-compat-util.h:1580:0
+    RF: container_of_or_null_offset at git-compat-util.h:1581:2
+    CF: all_attrs_init at attr.c:155:3
+  Occurrences: 6
+
 ## Divergences with unique coordinates by type
 
 CoordinatesRemoved
@@ -1005,7 +1012,10 @@ LibraryCallRemoved
 ProgramCallRemoved
   Unique divergence coordinates: 18
 
+Uncategorised
+  Unique divergence coordinates: 1
+
 ## Summary
 
-115 unique divergence coordinates
+116 unique divergence coordinates
 7234 divergence occurrences
