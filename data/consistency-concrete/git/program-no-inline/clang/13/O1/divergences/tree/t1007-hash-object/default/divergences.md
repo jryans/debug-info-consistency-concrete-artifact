@@ -4,6 +4,293 @@ Divergence analysis complete!
 
 ## Divergences by source coordinates
 
+CoordinatesRemoved
+  Before events:
+    CF: close_tempfile_gently at tempfile.c:311:10
+  After events:
+    CF: close_tempfile_gently at tempfile.c:0:0
+  Occurrences: 6
+
+CoordinatesRemoved
+  Before events:
+    CF: cmd_init_db at init-db.c:680:4
+  After events:
+    CF: cmd_init_db at init-db.c:0:0
+  Occurrences: 6
+
+CoordinatesRemoved
+  Before events:
+    CF: decode_tree_entry at tree-walk.c:33:22
+  After events:
+    CF: decode_tree_entry at tree-walk.c:0:0
+  Occurrences: 1
+
+CoordinatesRemoved
+  Before events:
+    CF: decode_tree_entry at tree-walk.c:33:3
+  After events:
+    CF: decode_tree_entry at tree-walk.c:0:0
+  Occurrences: 1
+
+CoordinatesRemoved
+  Before events:
+    CF: decode_tree_entry at tree-walk.c:39:22
+  After events:
+    CF: decode_tree_entry at tree-walk.c:0:0
+  Occurrences: 1
+
+CoordinatesRemoved
+  Before events:
+    CF: decode_tree_entry at tree-walk.c:39:3
+  After events:
+    CF: decode_tree_entry at tree-walk.c:0:0
+  Occurrences: 1
+
+CoordinatesRemoved
+  Before events:
+    CF: decode_tree_entry at tree-walk.c:43:22
+  After events:
+    CF: decode_tree_entry at tree-walk.c:0:0
+  Occurrences: 1
+
+CoordinatesRemoved
+  Before events:
+    CF: decode_tree_entry at tree-walk.c:43:3
+  After events:
+    CF: decode_tree_entry at tree-walk.c:0:0
+  Occurrences: 1
+
+CoordinatesRemoved
+  Before events:
+    CF: files_ref_path at files-backend.c:179:3
+  After events:
+    CF: files_ref_path at files-backend.c:0:0
+  Occurrences: 12
+
+CoordinatesRemoved
+  Before events:
+    CF: files_ref_path at files-backend.c:187:3
+  After events:
+    CF: files_ref_path at files-backend.c:0:0
+  Occurrences: 18
+
+CoordinatesRemoved
+  Before events:
+    CF: for_each_file_in_pack_dir at packfile.c:840:2
+  After events:
+    CF: for_each_file_in_pack_dir at packfile.c:0:4
+  Occurrences: 2
+
+CoordinatesRemoved
+  Before events:
+    CF: getnanotime at trace.c:397:18
+  After events:
+    CF: getnanotime at trace.c:0:0
+  Occurrences: 26
+
+CoordinatesRemoved
+  Before events:
+    CF: git_setup_gettext at gettext.c:112:3
+  After events:
+    CF: git_setup_gettext at gettext.c:0:0
+  Occurrences: 26
+
+CoordinatesRemoved
+  Before events:
+    CF: hasheq_algop at hash.h:238:10
+  After events:
+    CF: hasheq_algop at hash.h:0:0
+  Occurrences: 7
+
+CoordinatesRemoved
+  Before events:
+    CF: init_db at init-db.c:391:27
+  After events:
+    CF: init_db at init-db.c:0:0
+  Occurrences: 2
+
+CoordinatesRemoved
+  Before events:
+    CF: init_db at init-db.c:459:13
+  After events:
+    CF: init_db at init-db.c:0:0
+  Occurrences: 2
+
+CoordinatesRemoved
+  Before events:
+    CF: init_db at init-db.c:467:11
+  After events:
+    CF: init_db at init-db.c:0:0
+  Occurrences: 6
+
+CoordinatesRemoved
+  Before events:
+    CF: init_db at init-db.c:467:4
+  After events:
+    CF: init_db at init-db.c:0:0
+  Occurrences: 1
+
+CoordinatesRemoved
+  Before events:
+    CF: init_db at init-db.c:469:13
+  After events:
+    CF: init_db at init-db.c:0:0
+  Occurrences: 6
+
+CoordinatesRemoved
+  Before events:
+    CF: init_db at init-db.c:473:2
+  After events:
+    CF: init_db at init-db.c:0:0
+  Occurrences: 1
+
+CoordinatesRemoved
+  Before events:
+    CF: is_git_directory at setup.c:370:7
+  After events:
+    CF: is_git_directory at setup.c:0:0
+  Occurrences: 18
+
+CoordinatesRemoved
+  Before events:
+    CF: parse_commit_buffer at commit.c:444:10
+  After events:
+    CF: parse_commit_buffer at commit.c:0:0
+  Occurrences: 1
+
+CoordinatesRemoved
+  Before events:
+    CF: read_attr at attr.c:797:11
+  After events:
+    CF: read_attr at attr.c:0:0
+  Occurrences: 1
+
+CoordinatesRemoved
+  Before events:
+    CF: read_info_alternates at object-file.c:625:3
+  After events:
+    CF: read_info_alternates at object-file.c:0:0
+  Occurrences: 2
+
+CoordinatesRemoved
+  Before events:
+    CF: setup_git_directory_gently at setup.c:1432:27
+  After events:
+    CF: setup_git_directory_gently at setup.c:0:12
+  Occurrences: 6
+
+CoordinatesRemoved
+  Before events:
+    CF: setup_git_directory_gently at setup.c:1548:25
+  After events:
+    CF: setup_git_directory_gently at setup.c:0:12
+  Occurrences: 7
+
+CoordinatesRemoved
+  Before events:
+    CF: setup_git_directory_gently at setup.c:1574:3
+  After events:
+    CF: setup_git_directory_gently at setup.c:0:12
+  Occurrences: 5
+
+CoordinatesRemoved
+  Before events:
+    CF: setup_path at exec-cmd.c:314:3
+  After events:
+    CF: setup_path at exec-cmd.c:0:0
+  Occurrences: 26
+
+CoordinatesRemoved
+  Before events:
+    CF: store_create_section at config.c:2990:3
+  After events:
+    CF: store_create_section at config.c:0:3
+  Occurrences: 6
+
+CoordinatesRemoved
+  Before events:
+    CF: strbuf_worktree_gitdir at path.c:422:3
+  After events:
+    CF: strbuf_worktree_gitdir at path.c:0:0
+  Occurrences: 91
+
+CoordinatesRemoved
+  Before events:
+    CF: string_list_split at string-list.c:296:4
+  After events:
+    CF: string_list_split at string-list.c:0:21
+  Occurrences: 30
+
+CoordinatesRemoved
+  Before events:
+    CF: usage_argh at parse-options.c:1019:47
+  After events:
+    CF: usage_argh at parse-options.c:0:0
+  Occurrences: 12
+
+CoordinatesRemoved
+  Before events:
+    CF: usage_with_options_internal at parse-options.c:1043:21
+  After events:
+    CF: usage_with_options_internal at parse-options.c:0:0
+  Occurrences: 1
+
+CoordinatesRemoved
+  Before events:
+    CF: usage_with_options_internal at parse-options.c:1081:22
+  After events:
+    CF: usage_with_options_internal at parse-options.c:0:0
+  Occurrences: 2
+
+CoordinatesRemoved
+  Before events:
+    CF: usage_with_options_internal at parse-options.c:1096:5
+  After events:
+    CF: usage_with_options_internal at parse-options.c:0:3
+  Occurrences: 12
+
+CoordinatesRemoved
+  Before events:
+    CF: usage_with_options_internal at parse-options.c:1125:4
+  After events:
+    CF: usage_with_options_internal at parse-options.c:0:0
+  Occurrences: 1
+
+CoordinatesRemoved
+  Before events:
+    CF: usage_with_options_internal at parse-options.c:1129:9
+  After events:
+    CF: usage_with_options_internal at parse-options.c:0:0
+  Occurrences: 3
+
+CoordinatesRemoved
+  Before events:
+    CF: usage_with_options_internal at parse-options.c:1139:11
+  After events:
+    CF: usage_with_options_internal at parse-options.c:0:0
+  Occurrences: 1
+
+CoordinatesRemoved
+  Before events:
+    CF: usage_with_options_internal at parse-options.c:1159:3
+  After events:
+    CF: usage_with_options_internal at parse-options.c:0:0
+  Occurrences: 3
+
+CoordinatesRemoved
+  Before events:
+    CF: usage_with_options_internal at parse-options.c:1161:2
+  After events:
+    CF: usage_with_options_internal at parse-options.c:0:0
+  Occurrences: 1
+
+CoordinatesRemoved
+  Before events:
+    CF: xdg_config_home_for at path.c:1535:10
+  After events:
+    CF: xdg_config_home_for at path.c:0:0
+  Occurrences: 57
+
 CoordinatesChangedSmall
   Before events:
     CF: cmd_init_db at init-db.c:627:28
@@ -279,15 +566,6 @@ CoordinatesChangedSmall
 
 LibraryCallAdded
   After events:
-    CF: _ at gettext.h:48:9
-    CT: Jump to external code for _libintl_gettext
-    CF: Jump to external code for _libintl_gettext
-    CT: External code
-    RF: Jump to external code for _libintl_gettext
-  Occurrences: 21
-
-LibraryCallAdded
-  After events:
     CF: cmd_init_db at init-db.c:576:7
     CT: Jump to external code for _chdir
     CF: Jump to external code for _chdir
@@ -330,33 +608,6 @@ LibraryCallAdded
     CT: External code
     RF: Jump to external code for _free
   Occurrences: 2
-
-LibraryCallAdded
-  After events:
-    CF: fprintf_ln at strbuf.c:948:8
-    CT: Jump to external code for _vfprintf
-    CF: Jump to external code for _vfprintf
-    CT: External code
-    RF: Jump to external code for _vfprintf
-  Occurrences: 12
-
-LibraryCallAdded
-  After events:
-    CF: fprintf_ln at strbuf.c:950:17
-    CT: Jump to external code for _putc
-    CF: Jump to external code for _putc
-    CT: External code
-    RF: Jump to external code for _putc
-  Occurrences: 12
-
-LibraryCallAdded
-  After events:
-    CF: gettimeofday_nanos at trace.c:378:2
-    CT: Jump to external code for _gettimeofday
-    CF: Jump to external code for _gettimeofday
-    CT: External code
-    RF: Jump to external code for _gettimeofday
-  Occurrences: 26
 
 LibraryCallAdded
   After events:
@@ -468,6 +719,15 @@ LibraryCallAdded
 
 LibraryCallAdded
   After events:
+    CF: init_db at init-db.c:0:0
+    CT: Jump to external code for _printf
+    CF: Jump to external code for _printf
+    CT: External code
+    RF: Jump to external code for _printf
+  Occurrences: 6
+
+LibraryCallAdded
+  After events:
     CF: init_db at init-db.c:459:13
     CT: Jump to external code for _strlen
     CF: Jump to external code for _strlen
@@ -519,6 +779,15 @@ LibraryCallAdded
     CT: External code
     RF: Jump to external code for _strcspn
   Occurrences: 32
+
+LibraryCallAdded
+  After events:
+    CF: setup_git_directory_gently at setup.c:0:12
+    CT: Jump to external code for _setenv
+    CF: Jump to external code for _setenv
+    CT: External code
+    RF: Jump to external code for _setenv
+  Occurrences: 18
 
 LibraryCallAdded
   After events:
@@ -621,30 +890,12 @@ LibraryCallAdded
 
 LibraryCallAdded
   After events:
-    CF: strbuf_addstr at strbuf.h:305:20
-    CT: Jump to external code for _strlen
-    CF: Jump to external code for _strlen
+    CF: usage_with_options_internal at parse-options.c:0:0
+    CT: Jump to external code for _fprintf
+    CF: Jump to external code for _fprintf
     CT: External code
-    RF: Jump to external code for _strlen
-  Occurrences: 126
-
-LibraryCallAdded
-  After events:
-    CF: strbuf_release at strbuf.c:65:3
-    CT: Jump to external code for _free
-    CF: Jump to external code for _free
-    CT: External code
-    RF: Jump to external code for _free
-  Occurrences: 2
-
-LibraryCallAdded
-  After events:
-    CF: usage_with_options_internal at parse-options.c:1043:21
-    CT: Jump to external code for _strlen
-    CF: Jump to external code for _strlen
-    CT: External code
-    RF: Jump to external code for _strlen
-  Occurrences: 1
+    RF: Jump to external code for _fprintf
+  Occurrences: 10
 
 LibraryCallAdded
   After events:
@@ -689,7 +940,7 @@ LibraryCallRemoved
   Before events:
     CF: Jump to external code for _access
     CT: External code
-  Occurrences: 23
+  Occurrences: 5
 
 LibraryCallRemoved
   Before events:
@@ -711,27 +962,21 @@ LibraryCallRemoved
 
 LibraryCallRemoved
   Before events:
-    CF: Jump to external code for _fclose
-    CT: External code
-  Occurrences: 6
-
-LibraryCallRemoved
-  Before events:
     CF: Jump to external code for _fprintf
     CT: External code
-  Occurrences: 91
+  Occurrences: 84
 
 LibraryCallRemoved
   Before events:
     CF: Jump to external code for _fputc
     CT: External code
-  Occurrences: 10
+  Occurrences: 8
 
 LibraryCallRemoved
   Before events:
     CF: Jump to external code for _free
     CT: External code
-  Occurrences: 123
+  Occurrences: 94
 
 LibraryCallRemoved
   Before events:
@@ -743,19 +988,13 @@ LibraryCallRemoved
   Before events:
     CF: Jump to external code for _getenv
     CT: External code
-  Occurrences: 142
-
-LibraryCallRemoved
-  Before events:
-    CF: Jump to external code for _memcmp
-    CT: External code
-  Occurrences: 7
+  Occurrences: 135
 
 LibraryCallRemoved
   Before events:
     CF: Jump to external code for _memset
     CT: External code
-  Occurrences: 204
+  Occurrences: 194
 
 LibraryCallRemoved
   Before events:
@@ -773,19 +1012,19 @@ LibraryCallRemoved
   Before events:
     CF: Jump to external code for _printf
     CT: External code
-  Occurrences: 4
+  Occurrences: 3
 
 LibraryCallRemoved
   Before events:
     CF: Jump to external code for _setenv
     CT: External code
-  Occurrences: 11
+  Occurrences: 6
 
 LibraryCallRemoved
   Before events:
     CF: Jump to external code for _strlen
     CT: External code
-  Occurrences: 9
+  Occurrences: 6
 
 LibraryCallRemoved
   Before events:
@@ -798,15 +1037,6 @@ LibraryCallRemoved
     CF: Jump to external code for _strrchr
     CT: External code
   Occurrences: 5
-
-LibraryCallRemoved
-  Before events:
-    CF: _ at gettext.h:48:9
-    CT: Jump to external code for _libintl_gettext
-    CF: Jump to external code for _libintl_gettext
-    CT: External code
-    RF: Jump to external code for _libintl_gettext
-  Occurrences: 21
 
 LibraryCallRemoved
   Before events:
@@ -861,33 +1091,6 @@ LibraryCallRemoved
     CT: External code
     RF: Jump to external code for _free
   Occurrences: 2
-
-LibraryCallRemoved
-  Before events:
-    CF: fprintf_ln at strbuf.c:948:8
-    CT: Jump to external code for _vfprintf
-    CF: Jump to external code for _vfprintf
-    CT: External code
-    RF: Jump to external code for _vfprintf
-  Occurrences: 12
-
-LibraryCallRemoved
-  Before events:
-    CF: fprintf_ln at strbuf.c:950:17
-    CT: Jump to external code for _putc
-    CF: Jump to external code for _putc
-    CT: External code
-    RF: Jump to external code for _putc
-  Occurrences: 12
-
-LibraryCallRemoved
-  Before events:
-    CF: gettimeofday_nanos at trace.c:378:2
-    CT: Jump to external code for _gettimeofday
-    CF: Jump to external code for _gettimeofday
-    CT: External code
-    RF: Jump to external code for _gettimeofday
-  Occurrences: 26
 
 LibraryCallRemoved
   Before events:
@@ -1008,11 +1211,29 @@ LibraryCallRemoved
 
 LibraryCallRemoved
   Before events:
+    CF: init_db at init-db.c:391:27
+    CT: Jump to external code for _memset
+    CF: Jump to external code for _memset
+    CT: External code
+    RF: Jump to external code for _memset
+  Occurrences: 2
+
+LibraryCallRemoved
+  Before events:
     CF: init_db at init-db.c:459:13
     CT: Jump to external code for _strlen
     CF: Jump to external code for _strlen
     CT: External code
     RF: Jump to external code for _strlen
+  Occurrences: 3
+
+LibraryCallRemoved
+  Before events:
+    CF: init_db at init-db.c:467:4
+    CT: Jump to external code for _printf
+    CF: Jump to external code for _printf
+    CT: External code
+    RF: Jump to external code for _printf
   Occurrences: 1
 
 LibraryCallRemoved
@@ -1022,7 +1243,7 @@ LibraryCallRemoved
     CF: Jump to external code for _free
     CT: External code
     RF: Jump to external code for _free
-  Occurrences: 1
+  Occurrences: 2
 
 LibraryCallRemoved
   Before events:
@@ -1071,11 +1292,29 @@ LibraryCallRemoved
 
 LibraryCallRemoved
   Before events:
+    CF: setup_git_directory_gently at setup.c:1432:27
+    CT: Jump to external code for _memset
+    CF: Jump to external code for _memset
+    CT: External code
+    RF: Jump to external code for _memset
+  Occurrences: 6
+
+LibraryCallRemoved
+  Before events:
     CF: setup_git_directory_gently at setup.c:1548:25
     CT: Jump to external code for _getenv
     CF: Jump to external code for _getenv
     CT: External code
     RF: Jump to external code for _getenv
+  Occurrences: 12
+
+LibraryCallRemoved
+  Before events:
+    CF: setup_git_directory_gently at setup.c:1574:3
+    CT: Jump to external code for _setenv
+    CF: Jump to external code for _setenv
+    CT: External code
+    RF: Jump to external code for _setenv
   Occurrences: 5
 
 LibraryCallRemoved
@@ -1179,24 +1418,6 @@ LibraryCallRemoved
 
 LibraryCallRemoved
   Before events:
-    CF: strbuf_addstr at strbuf.h:305:20
-    CT: Jump to external code for _strlen
-    CF: Jump to external code for _strlen
-    CT: External code
-    RF: Jump to external code for _strlen
-  Occurrences: 126
-
-LibraryCallRemoved
-  Before events:
-    CF: strbuf_release at strbuf.c:65:3
-    CT: Jump to external code for _free
-    CF: Jump to external code for _free
-    CT: External code
-    RF: Jump to external code for _free
-  Occurrences: 2
-
-LibraryCallRemoved
-  Before events:
     CF: usage_with_options_internal at parse-options.c:1043:21
     CT: Jump to external code for _strlen
     CF: Jump to external code for _strlen
@@ -1206,12 +1427,30 @@ LibraryCallRemoved
 
 LibraryCallRemoved
   Before events:
+    CF: usage_with_options_internal at parse-options.c:1081:22
+    CT: Jump to external code for _memset
+    CF: Jump to external code for _memset
+    CT: External code
+    RF: Jump to external code for _memset
+  Occurrences: 2
+
+LibraryCallRemoved
+  Before events:
     CF: usage_with_options_internal at parse-options.c:1129:9
     CT: Jump to external code for _fprintf
     CF: Jump to external code for _fprintf
     CT: External code
     RF: Jump to external code for _fprintf
-  Occurrences: 3
+  Occurrences: 6
+
+LibraryCallRemoved
+  Before events:
+    CF: usage_with_options_internal at parse-options.c:1139:11
+    CT: Jump to external code for _fprintf
+    CF: Jump to external code for _fprintf
+    CT: External code
+    RF: Jump to external code for _fprintf
+  Occurrences: 1
 
 LibraryCallRemoved
   Before events:
@@ -1220,7 +1459,7 @@ LibraryCallRemoved
     CF: Jump to external code for _fprintf
     CT: External code
     RF: Jump to external code for _fprintf
-  Occurrences: 5
+  Occurrences: 7
 
 LibraryCallRemoved
   Before events:
@@ -1229,7 +1468,7 @@ LibraryCallRemoved
     CF: Jump to external code for _fputc
     CT: External code
     RF: Jump to external code for _fputc
-  Occurrences: 1
+  Occurrences: 2
 
 ProgramCallRemoved
   Before events:
@@ -1237,13 +1476,6 @@ ProgramCallRemoved
     CT: xstrdup_or_null at git-compat-util.h:1168:0
     RF: xstrdup_or_null at git-compat-util.h:1169:2
   Occurrences: 1
-
-ProgramCallRemoved
-  Before events:
-    CF: string_list_append at string-list.c:219:9
-    CT: string_list_append_nodup at string-list.c:207:0
-    RF: string_list_append_nodup at string-list.c:213:2
-  Occurrences: 6
 
 Uncategorised
   After events:
@@ -1255,7 +1487,7 @@ Uncategorised
   After events:
     CF: Jump to external code for _access
     CT: External code
-  Occurrences: 24
+  Occurrences: 6
 
 Uncategorised
   After events:
@@ -1277,15 +1509,9 @@ Uncategorised
 
 Uncategorised
   After events:
-    CF: Jump to external code for _fclose
-    CT: External code
-  Occurrences: 6
-
-Uncategorised
-  After events:
     CF: Jump to external code for _fprintf
     CT: External code
-  Occurrences: 103
+  Occurrences: 91
 
 Uncategorised
   After events:
@@ -1297,19 +1523,13 @@ Uncategorised
   After events:
     CF: Jump to external code for _free
     CT: External code
-  Occurrences: 198
+  Occurrences: 170
 
 Uncategorised
   After events:
     CF: Jump to external code for _fstat$INODE64
     CT: External code
   Occurrences: 27
-
-Uncategorised
-  After events:
-    CF: Jump to external code for _memcmp
-    CT: External code
-  Occurrences: 7
 
 Uncategorised
   After events:
@@ -1322,12 +1542,6 @@ Uncategorised
     CF: Jump to external code for _munmap
     CT: External code
   Occurrences: 27
-
-Uncategorised
-  After events:
-    CF: Jump to external code for _printf
-    CT: External code
-  Occurrences: 6
 
 Uncategorised
   After events:
@@ -1351,16 +1565,6 @@ Uncategorised
   After events:
     CF: Jump to external code for _strrchr
     CT: External code
-  Occurrences: 6
-
-Uncategorised
-  After events:
-    CF: close_tempfile_gently at tempfile.c:0:0
-  Occurrences: 6
-
-Uncategorised
-  After events:
-    CF: cmd_init_db at init-db.c:0:0
   Occurrences: 6
 
 Uncategorised
@@ -1424,61 +1628,6 @@ Uncategorised
   After events:
     CF: copy_templates at init-db.c:150:2
   Occurrences: 4
-
-Uncategorised
-  After events:
-    CF: decode_tree_entry at tree-walk.c:0:0
-  Occurrences: 6
-
-Uncategorised
-  After events:
-    CF: error at usage.c:266:2
-    CT: error_builtin at usage.c:78:0
-    CF: error_builtin at usage.c:79:2
-    CT: trace2_cmd_error_va_fl at trace2.c:292:0
-    RF: trace2_cmd_error_va_fl at trace2.c:306:1
-    CF: error_builtin at usage.c:81:11
-    CT: _ at gettext.h:45:0
-    CF: _ at gettext.h:48:9
-    CT: Jump to external code for _libintl_gettext
-    CF: Jump to external code for _libintl_gettext
-    CT: External code
-    RF: Jump to external code for _libintl_gettext
-    RF: _ at gettext.h:49:1
-    CF: error_builtin at usage.c:81:2
-    CT: vreportf at usage.c:10:0
-    CF: vreportf at usage.c:13:22
-    CT: Jump to external code for _strlen
-    CF: Jump to external code for _strlen
-    CT: External code
-    RF: Jump to external code for _strlen
-    CF: vreportf at usage.c:19:2
-    CT: Jump to external code for ___memcpy_chk
-    CF: Jump to external code for ___memcpy_chk
-    CT: External code
-    RF: Jump to external code for ___memcpy_chk
-    CF: vreportf at usage.c:21:6
-    CT: Jump to external code for _vsnprintf
-    CF: Jump to external code for _vsnprintf
-    CT: External code
-    RF: Jump to external code for _vsnprintf
-    [...18 more events...]
-  Occurrences: 1
-
-Uncategorised
-  After events:
-    CF: files_ref_path at files-backend.c:0:0
-  Occurrences: 30
-
-Uncategorised
-  After events:
-    CF: for_each_file_in_pack_dir at packfile.c:0:4
-  Occurrences: 2
-
-Uncategorised
-  After events:
-    CF: getnanotime at trace.c:0:0
-  Occurrences: 26
 
 Uncategorised
   After events:
@@ -1572,16 +1721,6 @@ Uncategorised
 
 Uncategorised
   After events:
-    CF: git_setup_gettext at gettext.c:0:0
-  Occurrences: 26
-
-Uncategorised
-  After events:
-    CF: init_db at init-db.c:0:0
-  Occurrences: 18
-
-Uncategorised
-  After events:
     CF: init_db at init-db.c:459:13
   Occurrences: 5
 
@@ -1593,42 +1732,6 @@ Uncategorised
 Uncategorised
   After events:
     CF: is_dir_file at path.c:87:10
-  Occurrences: 1
-
-Uncategorised
-  After events:
-    CF: is_git_directory at setup.c:0:0
-  Occurrences: 18
-
-Uncategorised
-  After events:
-    CF: mkpathdup at path.c:510:2
-    CT: strbuf_cleanup_path at path.c:51:0
-    CF: strbuf_cleanup_path at path.c:52:21
-    CT: cleanup_path at path.c:41:0
-    CF: cleanup_path at path.c:43:6
-    CT: skip_prefix at git-compat-util.h:676:0
-    RF: skip_prefix at git-compat-util.h:684:1
-    RF: cleanup_path at path.c:47:2
-    RF: strbuf_cleanup_path at path.c:55:1
-  Occurrences: 57
-
-Uncategorised
-  After events:
-    CF: mkpathdup at path.c:511:9
-    CT: strbuf_detach at strbuf.c:71:0
-    CF: strbuf_detach at strbuf.c:73:2
-    CT: strbuf_grow at strbuf.c:92:0
-    RF: strbuf_grow at strbuf.c:102:1
-    CF: strbuf_detach at strbuf.c:77:2
-    CT: strbuf_init at strbuf.c:55:0
-    RF: strbuf_init at strbuf.c:60:1
-    RF: strbuf_detach at strbuf.c:78:2
-  Occurrences: 57
-
-Uncategorised
-  After events:
-    CF: parse_commit_buffer at commit.c:0:0
   Occurrences: 1
 
 Uncategorised
@@ -1680,52 +1783,6 @@ Uncategorised
 
 Uncategorised
   After events:
-    CF: read_attr at attr.c:0:0
-  Occurrences: 1
-
-Uncategorised
-  After events:
-    CF: read_attr_from_index at attr.c:754:7
-    CT: path_in_cone_mode_sparse_checkout at dir.c:1502:0
-    CF: path_in_cone_mode_sparse_checkout at dir.c:1503:9
-    CT: path_in_sparse_checkout_1 at dir.c:1456:0
-    CF: path_in_sparse_checkout_1 at dir.c:1466:6
-    CT: init_sparse_checkout_patterns at dir.c:1437:0
-    RF: init_sparse_checkout_patterns at dir.c:1451:1
-    RF: path_in_sparse_checkout_1 at dir.c:1492:1
-    RF: path_in_cone_mode_sparse_checkout at dir.c:1503:2
-  Occurrences: 1
-
-Uncategorised
-  After events:
-    CF: read_attr_from_index at attr.c:757:8
-    CT: read_blob_data_from_index at read-cache.c:3517:0
-    CF: read_blob_data_from_index at read-cache.c:3523:8
-    CT: Jump to external code for _strlen
-    CF: Jump to external code for _strlen
-    CT: External code
-    RF: Jump to external code for _strlen
-    CF: read_blob_data_from_index at read-cache.c:3524:8
-    CT: index_name_pos at read-cache.c:619:0
-    CF: index_name_pos at read-cache.c:620:9
-    CT: index_name_stage_pos at read-cache.c:577:0
-    RF: index_name_stage_pos at read-cache.c:616:1
-    RF: index_name_pos at read-cache.c:620:2
-    RF: read_blob_data_from_index at read-cache.c:3548:1
-  Occurrences: 1
-
-Uncategorised
-  After events:
-    CF: read_info_alternates at object-file.c:0:0
-  Occurrences: 2
-
-Uncategorised
-  After events:
-    CF: setup_git_directory_gently at setup.c:0:12
-  Occurrences: 18
-
-Uncategorised
-  After events:
     CF: setup_git_directory_gently at setup.c:1548:25
   Occurrences: 13
 
@@ -1751,165 +1808,12 @@ Uncategorised
 
 Uncategorised
   After events:
-    CF: setup_path at exec-cmd.c:0:0
-  Occurrences: 26
-
-Uncategorised
-  After events:
-    CF: store_create_section at config.c:0:3
-  Occurrences: 6
-
-Uncategorised
-  After events:
-    CF: strbuf_addf at strbuf.c:336:2
-    CT: strbuf_vaddf at strbuf.c:390:0
-    CF: strbuf_vaddf at strbuf.c:394:7
-    CT: strbuf_avail at strbuf.h:140:0
-    RF: strbuf_avail at strbuf.h:141:2
-    CF: strbuf_vaddf at strbuf.c:397:8
-    CT: Jump to external code for _vsnprintf
-    CF: Jump to external code for _vsnprintf
-    CT: External code
-    RF: Jump to external code for _vsnprintf
-    CF: strbuf_vaddf at strbuf.c:401:12
-    CT: strbuf_avail at strbuf.h:140:0
-    RF: strbuf_avail at strbuf.h:141:2
-    CF: strbuf_vaddf at strbuf.c:407:2
-    CT: strbuf_setlen at strbuf.h:161:0
-    RF: strbuf_setlen at strbuf.h:169:1
-    RF: strbuf_vaddf at strbuf.c:408:1
-  Occurrences: 6
-
-Uncategorised
-  After events:
-    CF: strbuf_addstr at strbuf.h:305:2
-    CT: strbuf_add at strbuf.c:297:0
-    CF: strbuf_add at strbuf.c:298:2
-    CT: strbuf_grow at strbuf.c:92:0
-    RF: strbuf_grow at strbuf.c:102:1
-    CF: strbuf_add at strbuf.c:299:2
-    CT: Jump to external code for _memcpy
-    CF: Jump to external code for _memcpy
-    CT: External code
-    RF: Jump to external code for _memcpy
-    CF: strbuf_add at strbuf.c:300:2
-    CT: strbuf_setlen at strbuf.h:161:0
-    RF: strbuf_setlen at strbuf.h:169:1
-    RF: strbuf_add at strbuf.c:301:1
-  Occurrences: 60
-
-Uncategorised
-  After events:
-    CF: strbuf_release at strbuf.c:66:3
-    CT: strbuf_init at strbuf.c:55:0
-    RF: strbuf_init at strbuf.c:60:1
+    CF: usage_with_options at parse-options.c:1172:2
   Occurrences: 2
 
 Uncategorised
   After events:
-    CF: strbuf_worktree_gitdir at path.c:0:0
-  Occurrences: 91
-
-Uncategorised
-  After events:
-    CF: string_list_append at string-list.c:219:9
-    CT: string_list_append_nodup at string-list.c:207:0
-    RF: string_list_append_nodup at string-list.c:213:2
-  Occurrences: 6
-
-Uncategorised
-  After events:
-    CF: string_list_append at string-list.c:221:27
-    CT: xstrdup at wrapper.c:38:0
-    CF: xstrdup at wrapper.c:39:14
-    CT: Jump to external code for _strdup
-    CF: Jump to external code for _strdup
-    CT: External code
-    RF: Jump to external code for _strdup
-    RF: xstrdup at wrapper.c:42:2
-  Occurrences: 30
-
-Uncategorised
-  After events:
-    CF: string_list_split at string-list.c:0:21
-  Occurrences: 30
-
-Uncategorised
-  After events:
-    CF: usage_argh at parse-options.c:0:0
-  Occurrences: 12
-
-Uncategorised
-  After events:
-    CF: usage_with_options at parse-options.c:1172:2
-  Occurrences: 4
-
-Uncategorised
-  After events:
-    CF: usage_with_options_internal at parse-options.c:0:0
-  Occurrences: 12
-
-Uncategorised
-  After events:
     CF: usage_with_options_internal at parse-options.c:0:3
-  Occurrences: 12
-
-Uncategorised
-  After events:
-    CF: usage_with_options_internal at parse-options.c:1033:29
-    CT: _ at gettext.h:45:0
-    CF: _ at gettext.h:48:9
-    CT: Jump to external code for _libintl_gettext
-    CF: Jump to external code for _libintl_gettext
-    CT: External code
-    RF: Jump to external code for _libintl_gettext
-    RF: _ at gettext.h:49:1
-  Occurrences: 4
-
-Uncategorised
-  After events:
-    CF: usage_with_options_internal at parse-options.c:1043:21
-  Occurrences: 5
-
-Uncategorised
-  After events:
-    CF: usage_with_options_internal at parse-options.c:1048:26
-    CT: _ at gettext.h:45:0
-    CF: _ at gettext.h:48:9
-    CT: Jump to external code for _libintl_gettext
-    CF: Jump to external code for _libintl_gettext
-    CT: External code
-    RF: Jump to external code for _libintl_gettext
-    RF: _ at gettext.h:49:1
-  Occurrences: 4
-
-Uncategorised
-  After events:
-    CF: usage_with_options_internal at parse-options.c:1069:32
-    CT: _ at gettext.h:45:0
-    CF: _ at gettext.h:48:9
-    CT: Jump to external code for _libintl_gettext
-    CF: Jump to external code for _libintl_gettext
-    CT: External code
-    RF: Jump to external code for _libintl_gettext
-    RF: _ at gettext.h:49:1
-  Occurrences: 4
-
-Uncategorised
-  After events:
-    CF: usage_with_options_internal at parse-options.c:1080:21
-    CT: _ at gettext.h:45:0
-    CF: _ at gettext.h:48:9
-    CT: Jump to external code for _libintl_gettext
-    CF: Jump to external code for _libintl_gettext
-    CT: External code
-    RF: Jump to external code for _libintl_gettext
-    RF: _ at gettext.h:49:1
-  Occurrences: 8
-
-Uncategorised
-  After events:
-    CF: usage_with_options_internal at parse-options.c:1098:5
     CT: fprintf_ln at strbuf.c:944:0
     CF: fprintf_ln at strbuf.c:948:8
     CT: Jump to external code for _vfprintf
@@ -1926,6 +1830,76 @@ Uncategorised
 
 Uncategorised
   After events:
+    CF: usage_with_options_internal at parse-options.c:1033:29
+    CT: _ at gettext.h:45:0
+    CF: _ at gettext.h:48:9
+    CT: Jump to external code for _libintl_gettext
+    CF: Jump to external code for _libintl_gettext
+    CT: External code
+    RF: Jump to external code for _libintl_gettext
+    RF: _ at gettext.h:49:1
+  Occurrences: 2
+
+Uncategorised
+  After events:
+    CF: usage_with_options_internal at parse-options.c:1043:21
+  Occurrences: 5
+
+Uncategorised
+  After events:
+    CF: usage_with_options_internal at parse-options.c:1048:26
+    CT: _ at gettext.h:45:0
+    CF: _ at gettext.h:48:9
+    CT: Jump to external code for _libintl_gettext
+    CF: Jump to external code for _libintl_gettext
+    CT: External code
+    RF: Jump to external code for _libintl_gettext
+    RF: _ at gettext.h:49:1
+  Occurrences: 2
+
+Uncategorised
+  After events:
+    CF: usage_with_options_internal at parse-options.c:1069:32
+    CT: _ at gettext.h:45:0
+    CF: _ at gettext.h:48:9
+    CT: Jump to external code for _libintl_gettext
+    CF: Jump to external code for _libintl_gettext
+    CT: External code
+    RF: Jump to external code for _libintl_gettext
+    RF: _ at gettext.h:49:1
+  Occurrences: 2
+
+Uncategorised
+  After events:
+    CF: usage_with_options_internal at parse-options.c:1080:21
+    CT: _ at gettext.h:45:0
+    CF: _ at gettext.h:48:9
+    CT: Jump to external code for _libintl_gettext
+    CF: Jump to external code for _libintl_gettext
+    CT: External code
+    RF: Jump to external code for _libintl_gettext
+    RF: _ at gettext.h:49:1
+  Occurrences: 4
+
+Uncategorised
+  After events:
+    CF: usage_with_options_internal at parse-options.c:1098:5
+    CT: fprintf_ln at strbuf.c:944:0
+    CF: fprintf_ln at strbuf.c:948:8
+    CT: Jump to external code for _vfprintf
+    CF: Jump to external code for _vfprintf
+    CT: External code
+    RF: Jump to external code for _vfprintf
+    CF: fprintf_ln at strbuf.c:950:17
+    CT: Jump to external code for _putc
+    CF: Jump to external code for _putc
+    CT: External code
+    RF: Jump to external code for _putc
+    RF: fprintf_ln at strbuf.c:953:1
+  Occurrences: 2
+
+Uncategorised
+  After events:
     CF: usage_with_options_internal at parse-options.c:1101:3
     CT: string_list_clear at string-list.c:170:0
     CF: string_list_clear at string-list.c:175:5
@@ -1944,7 +1918,7 @@ Uncategorised
     CT: External code
     RF: Jump to external code for _free
     RF: string_list_clear at string-list.c:185:1
-  Occurrences: 4
+  Occurrences: 2
 
 Uncategorised
   After events:
@@ -1961,7 +1935,7 @@ Uncategorised
     CT: External code
     RF: Jump to external code for _free
     RF: string_list_clear at string-list.c:185:1
-  Occurrences: 4
+  Occurrences: 2
 
 Uncategorised
   After events:
@@ -1993,17 +1967,12 @@ Uncategorised
     CT: External code
     RF: Jump to external code for _libintl_gettext
     RF: _ at gettext.h:49:1
-  Occurrences: 38
+  Occurrences: 24
 
 Uncategorised
   After events:
     CF: usage_with_options_internal at parse-options.c:1161:2
   Occurrences: 4
-
-Uncategorised
-  After events:
-    CF: xdg_config_home_for at path.c:0:0
-  Occurrences: 57
 
 Uncategorised
   After events:
@@ -2013,7 +1982,7 @@ Uncategorised
 Uncategorised
   After events:
     CT: Jump to external code for _access
-  Occurrences: 24
+  Occurrences: 6
 
 Uncategorised
   After events:
@@ -2032,13 +2001,8 @@ Uncategorised
 
 Uncategorised
   After events:
-    CT: Jump to external code for _fclose
-  Occurrences: 6
-
-Uncategorised
-  After events:
     CT: Jump to external code for _fprintf
-  Occurrences: 103
+  Occurrences: 91
 
 Uncategorised
   After events:
@@ -2048,17 +2012,12 @@ Uncategorised
 Uncategorised
   After events:
     CT: Jump to external code for _free
-  Occurrences: 198
+  Occurrences: 170
 
 Uncategorised
   After events:
     CT: Jump to external code for _fstat$INODE64
   Occurrences: 27
-
-Uncategorised
-  After events:
-    CT: Jump to external code for _memcmp
-  Occurrences: 7
 
 Uncategorised
   After events:
@@ -2069,11 +2028,6 @@ Uncategorised
   After events:
     CT: Jump to external code for _munmap
   Occurrences: 27
-
-Uncategorised
-  After events:
-    CT: Jump to external code for _printf
-  Occurrences: 6
 
 Uncategorised
   After events:
@@ -2097,33 +2051,8 @@ Uncategorised
 
 Uncategorised
   After events:
-    CT: _ at gettext.h:45:0
-  Occurrences: 21
-
-Uncategorised
-  After events:
     CT: config_store_data_clear at config.c:2862:0
   Occurrences: 30
-
-Uncategorised
-  After events:
-    CT: error at usage.c:262:0
-  Occurrences: 1
-
-Uncategorised
-  After events:
-    CT: fprintf_ln at strbuf.c:944:0
-  Occurrences: 12
-
-Uncategorised
-  After events:
-    CT: gettimeofday_nanos at trace.c:376:0
-  Occurrences: 26
-
-Uncategorised
-  After events:
-    CT: mkpathdup at path.c:504:0
-  Occurrences: 57
 
 Uncategorised
   After events:
@@ -2132,33 +2061,8 @@ Uncategorised
 
 Uncategorised
   After events:
-    CT: read_attr_from_index at attr.c:735:0
-  Occurrences: 1
-
-Uncategorised
-  After events:
-    CT: strbuf_addf at strbuf.c:333:0
-  Occurrences: 30
-
-Uncategorised
-  After events:
-    CT: strbuf_addstr at strbuf.h:304:0
-  Occurrences: 126
-
-Uncategorised
-  After events:
-    CT: strbuf_release at strbuf.c:63:0
-  Occurrences: 2
-
-Uncategorised
-  After events:
-    CT: string_list_append at string-list.c:218:0
-  Occurrences: 30
-
-Uncategorised
-  After events:
     CT: usage_with_options_internal at parse-options.c:1029:0
-  Occurrences: 4
+  Occurrences: 2
 
 Uncategorised
   After events:
@@ -2168,7 +2072,7 @@ Uncategorised
 Uncategorised
   After events:
     RF: Jump to external code for _access
-  Occurrences: 24
+  Occurrences: 6
 
 Uncategorised
   After events:
@@ -2187,13 +2091,8 @@ Uncategorised
 
 Uncategorised
   After events:
-    RF: Jump to external code for _fclose
-  Occurrences: 6
-
-Uncategorised
-  After events:
     RF: Jump to external code for _fprintf
-  Occurrences: 103
+  Occurrences: 91
 
 Uncategorised
   After events:
@@ -2203,17 +2102,12 @@ Uncategorised
 Uncategorised
   After events:
     RF: Jump to external code for _free
-  Occurrences: 198
+  Occurrences: 170
 
 Uncategorised
   After events:
     RF: Jump to external code for _fstat$INODE64
   Occurrences: 27
-
-Uncategorised
-  After events:
-    RF: Jump to external code for _memcmp
-  Occurrences: 7
 
 Uncategorised
   After events:
@@ -2224,11 +2118,6 @@ Uncategorised
   After events:
     RF: Jump to external code for _munmap
   Occurrences: 27
-
-Uncategorised
-  After events:
-    RF: Jump to external code for _printf
-  Occurrences: 6
 
 Uncategorised
   After events:
@@ -2252,28 +2141,8 @@ Uncategorised
 
 Uncategorised
   After events:
-    RF: _ at gettext.h:49:1
-  Occurrences: 21
-
-Uncategorised
-  After events:
     RF: config_store_data_clear at config.c:2872:1
   Occurrences: 30
-
-Uncategorised
-  After events:
-    RF: error at usage.c:268:2
-  Occurrences: 1
-
-Uncategorised
-  After events:
-    RF: fprintf_ln at strbuf.c:953:1
-  Occurrences: 12
-
-Uncategorised
-  After events:
-    RF: gettimeofday_nanos at trace.c:379:2
-  Occurrences: 26
 
 Uncategorised
   After events:
@@ -2282,43 +2151,13 @@ Uncategorised
 
 Uncategorised
   After events:
-    RF: mkpathdup at path.c:511:2
-  Occurrences: 57
-
-Uncategorised
-  After events:
     RF: parse_options_check at parse-options.c:524:1
   Occurrences: 17
 
 Uncategorised
   After events:
-    RF: read_attr_from_index at attr.c:774:1
-  Occurrences: 1
-
-Uncategorised
-  After events:
-    RF: strbuf_addf at strbuf.c:338:1
-  Occurrences: 30
-
-Uncategorised
-  After events:
-    RF: strbuf_addstr at strbuf.h:306:1
-  Occurrences: 126
-
-Uncategorised
-  After events:
-    RF: strbuf_release at strbuf.c:68:1
-  Occurrences: 2
-
-Uncategorised
-  After events:
-    RF: string_list_append at string-list.c:219:2
-  Occurrences: 30
-
-Uncategorised
-  After events:
     RF: usage_with_options_internal at parse-options.c:1167:1
-  Occurrences: 4
+  Occurrences: 2
 
 Uncategorised
   After events:
@@ -2963,11 +2802,6 @@ Uncategorised
 
 Uncategorised
   Before events:
-    CF: close_tempfile_gently at tempfile.c:311:10
-  Occurrences: 6
-
-Uncategorised
-  Before events:
     CF: cmd_init_db at init-db.c:541:42
   Occurrences: 6
 
@@ -2994,11 +2828,6 @@ Uncategorised
 Uncategorised
   Before events:
     CF: cmd_init_db at init-db.c:669:32
-  Occurrences: 6
-
-Uncategorised
-  Before events:
-    CF: cmd_init_db at init-db.c:680:4
   Occurrences: 6
 
 Uncategorised
@@ -3053,93 +2882,8 @@ Uncategorised
 
 Uncategorised
   Before events:
-    CF: decode_tree_entry at tree-walk.c:33:22
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: decode_tree_entry at tree-walk.c:33:3
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: decode_tree_entry at tree-walk.c:39:22
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: decode_tree_entry at tree-walk.c:39:3
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: decode_tree_entry at tree-walk.c:43:22
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: decode_tree_entry at tree-walk.c:43:3
-  Occurrences: 1
-
-Uncategorised
-  Before events:
     CF: die_builtin at usage.c:71:29
   Occurrences: 7
-
-Uncategorised
-  Before events:
-    CF: error at usage.c:266:2
-    CT: error_builtin at usage.c:78:0
-    CF: error_builtin at usage.c:79:2
-    CT: trace2_cmd_error_va_fl at trace2.c:292:0
-    RF: trace2_cmd_error_va_fl at trace2.c:306:1
-    CF: error_builtin at usage.c:81:11
-    CT: _ at gettext.h:45:0
-    CF: _ at gettext.h:48:9
-    CT: Jump to external code for _libintl_gettext
-    CF: Jump to external code for _libintl_gettext
-    CT: External code
-    RF: Jump to external code for _libintl_gettext
-    RF: _ at gettext.h:49:1
-    CF: error_builtin at usage.c:81:2
-    CT: vreportf at usage.c:10:0
-    CF: vreportf at usage.c:13:22
-    CT: Jump to external code for _strlen
-    CF: Jump to external code for _strlen
-    CT: External code
-    RF: Jump to external code for _strlen
-    CF: vreportf at usage.c:19:2
-    CT: Jump to external code for ___memcpy_chk
-    CF: Jump to external code for ___memcpy_chk
-    CT: External code
-    RF: Jump to external code for ___memcpy_chk
-    CF: vreportf at usage.c:21:6
-    CT: Jump to external code for ___vsnprintf_chk
-    CF: Jump to external code for ___vsnprintf_chk
-    CT: External code
-    RF: Jump to external code for ___vsnprintf_chk
-    [...18 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: files_ref_path at files-backend.c:179:3
-  Occurrences: 12
-
-Uncategorised
-  Before events:
-    CF: files_ref_path at files-backend.c:187:3
-  Occurrences: 18
-
-Uncategorised
-  Before events:
-    CF: for_each_file_in_pack_dir at packfile.c:840:2
-  Occurrences: 2
-
-Uncategorised
-  Before events:
-    CF: getnanotime at trace.c:397:18
-  Occurrences: 26
 
 Uncategorised
   Before events:
@@ -3278,38 +3022,23 @@ Uncategorised
 
 Uncategorised
   Before events:
-    CF: git_setup_gettext at gettext.c:112:3
-  Occurrences: 26
-
-Uncategorised
-  Before events:
     CF: init_db at init-db.c:391:27
-  Occurrences: 6
+  Occurrences: 4
 
 Uncategorised
   Before events:
     CF: init_db at init-db.c:459:13
-  Occurrences: 5
-
-Uncategorised
-  Before events:
-    CF: init_db at init-db.c:467:11
-  Occurrences: 6
+  Occurrences: 3
 
 Uncategorised
   Before events:
     CF: init_db at init-db.c:467:4
-  Occurrences: 6
-
-Uncategorised
-  Before events:
-    CF: init_db at init-db.c:469:13
-  Occurrences: 6
+  Occurrences: 5
 
 Uncategorised
   Before events:
     CF: init_db at init-db.c:473:2
-  Occurrences: 5
+  Occurrences: 4
 
 Uncategorised
   Before events:
@@ -3343,39 +3072,8 @@ Uncategorised
 
 Uncategorised
   Before events:
-    CF: is_git_directory at setup.c:370:7
-  Occurrences: 18
-
-Uncategorised
-  Before events:
-    CF: mkpathdup at path.c:510:2
-    CT: strbuf_cleanup_path at path.c:51:0
-    CF: strbuf_cleanup_path at path.c:52:21
-    CT: cleanup_path at path.c:41:0
-    CF: cleanup_path at path.c:43:6
-    CT: skip_prefix at git-compat-util.h:676:0
-    RF: skip_prefix at git-compat-util.h:684:1
-    RF: cleanup_path at path.c:47:2
-    RF: strbuf_cleanup_path at path.c:55:1
-  Occurrences: 57
-
-Uncategorised
-  Before events:
-    CF: mkpathdup at path.c:511:9
-    CT: strbuf_detach at strbuf.c:71:0
-    CF: strbuf_detach at strbuf.c:73:2
-    CT: strbuf_grow at strbuf.c:92:0
-    RF: strbuf_grow at strbuf.c:102:1
-    CF: strbuf_detach at strbuf.c:77:2
-    CT: strbuf_init at strbuf.c:55:0
-    CF: strbuf_init at strbuf.c:57:2
-    CT: Jump to external code for ___memcpy_chk
-  Occurrences: 57
-
-Uncategorised
-  Before events:
     CF: parse_commit_buffer at commit.c:444:10
-  Occurrences: 2
+  Occurrences: 1
 
 Uncategorised
   Before events:
@@ -3451,47 +3149,6 @@ Uncategorised
 
 Uncategorised
   Before events:
-    CF: read_attr at attr.c:797:11
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: read_attr_from_index at attr.c:754:7
-    CT: path_in_cone_mode_sparse_checkout at dir.c:1502:0
-    CF: path_in_cone_mode_sparse_checkout at dir.c:1503:9
-    CT: path_in_sparse_checkout_1 at dir.c:1456:0
-    CF: path_in_sparse_checkout_1 at dir.c:1466:6
-    CT: init_sparse_checkout_patterns at dir.c:1437:0
-    RF: init_sparse_checkout_patterns at dir.c:1451:1
-    RF: path_in_sparse_checkout_1 at dir.c:1492:1
-    RF: path_in_cone_mode_sparse_checkout at dir.c:1503:2
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: read_attr_from_index at attr.c:757:8
-    CT: read_blob_data_from_index at read-cache.c:3517:0
-    CF: read_blob_data_from_index at read-cache.c:3523:8
-    CT: Jump to external code for _strlen
-    CF: Jump to external code for _strlen
-    CT: External code
-    RF: Jump to external code for _strlen
-    CF: read_blob_data_from_index at read-cache.c:3524:8
-    CT: index_name_pos at read-cache.c:619:0
-    CF: index_name_pos at read-cache.c:620:9
-    CT: index_name_stage_pos at read-cache.c:577:0
-    RF: index_name_stage_pos at read-cache.c:616:1
-    RF: index_name_pos at read-cache.c:620:2
-    RF: read_blob_data_from_index at read-cache.c:3548:1
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: read_info_alternates at object-file.c:625:3
-  Occurrences: 2
-
-Uncategorised
-  Before events:
     CF: read_very_early_config at config.c:2281:24
   Occurrences: 26
 
@@ -3513,17 +3170,17 @@ Uncategorised
 Uncategorised
   Before events:
     CF: setup_git_directory_gently at setup.c:1432:27
-  Occurrences: 18
+  Occurrences: 12
 
 Uncategorised
   Before events:
     CF: setup_git_directory_gently at setup.c:1548:25
-  Occurrences: 13
+  Occurrences: 6
 
 Uncategorised
   Before events:
     CF: setup_git_directory_gently at setup.c:1574:3
-  Occurrences: 18
+  Occurrences: 13
 
 Uncategorised
   Before events:
@@ -3552,81 +3209,8 @@ Uncategorised
 
 Uncategorised
   Before events:
-    CF: setup_path at exec-cmd.c:314:3
-  Occurrences: 26
-
-Uncategorised
-  Before events:
-    CF: store_create_section at config.c:2990:3
-  Occurrences: 6
-
-Uncategorised
-  Before events:
-    CF: strbuf_addf at strbuf.c:336:2
-    CT: strbuf_vaddf at strbuf.c:390:0
-    CF: strbuf_vaddf at strbuf.c:394:7
-    CT: strbuf_avail at strbuf.h:140:0
-    RF: strbuf_avail at strbuf.h:141:2
-    CF: strbuf_vaddf at strbuf.c:397:8
-    CT: Jump to external code for ___vsnprintf_chk
-    CF: Jump to external code for ___vsnprintf_chk
-    CT: External code
-    RF: Jump to external code for ___vsnprintf_chk
-    CF: strbuf_vaddf at strbuf.c:401:12
-    CT: strbuf_avail at strbuf.h:140:0
-    RF: strbuf_avail at strbuf.h:141:2
-    CF: strbuf_vaddf at strbuf.c:407:2
-    CT: strbuf_setlen at strbuf.h:161:0
-    RF: strbuf_setlen at strbuf.h:169:1
-    RF: strbuf_vaddf at strbuf.c:408:1
-  Occurrences: 6
-
-Uncategorised
-  Before events:
-    CF: strbuf_addstr at strbuf.h:305:2
-    CT: strbuf_add at strbuf.c:297:0
-    CF: strbuf_add at strbuf.c:298:2
-    CT: strbuf_grow at strbuf.c:92:0
-    RF: strbuf_grow at strbuf.c:102:1
-    CF: strbuf_add at strbuf.c:299:2
-    CT: Jump to external code for ___memcpy_chk
-    CF: Jump to external code for ___memcpy_chk
-    CT: External code
-    RF: Jump to external code for ___memcpy_chk
-    CF: strbuf_add at strbuf.c:300:2
-    CT: strbuf_setlen at strbuf.h:161:0
-    RF: strbuf_setlen at strbuf.h:169:1
-    RF: strbuf_add at strbuf.c:301:1
-  Occurrences: 60
-
-Uncategorised
-  Before events:
     CF: strbuf_init at strbuf.c:57:2
   Occurrences: 1361
-
-Uncategorised
-  Before events:
-    CF: strbuf_release at strbuf.c:66:3
-    CT: strbuf_init at strbuf.c:55:0
-    CF: strbuf_init at strbuf.c:57:2
-  Occurrences: 2
-
-Uncategorised
-  Before events:
-    CF: strbuf_worktree_gitdir at path.c:422:3
-  Occurrences: 91
-
-Uncategorised
-  Before events:
-    CF: string_list_append at string-list.c:221:27
-    CT: xstrdup at wrapper.c:38:0
-    CF: xstrdup at wrapper.c:39:14
-    CT: Jump to external code for _strdup
-    CF: Jump to external code for _strdup
-    CT: External code
-    RF: Jump to external code for _strdup
-    RF: xstrdup at wrapper.c:42:2
-  Occurrences: 30
 
 Uncategorised
   Before events:
@@ -3640,11 +3224,6 @@ Uncategorised
 
 Uncategorised
   Before events:
-    CF: string_list_split at string-list.c:296:4
-  Occurrences: 30
-
-Uncategorised
-  Before events:
     CF: strvec_init at strvec.c:10:2
   Occurrences: 54
 
@@ -3655,13 +3234,8 @@ Uncategorised
 
 Uncategorised
   Before events:
-    CF: usage_argh at parse-options.c:1019:47
-  Occurrences: 12
-
-Uncategorised
-  Before events:
     CF: usage_with_options at parse-options.c:1172:2
-  Occurrences: 4
+  Occurrences: 2
 
 Uncategorised
   Before events:
@@ -3673,12 +3247,12 @@ Uncategorised
     CT: External code
     RF: Jump to external code for _libintl_gettext
     RF: _ at gettext.h:49:1
-  Occurrences: 4
+  Occurrences: 2
 
 Uncategorised
   Before events:
     CF: usage_with_options_internal at parse-options.c:1043:21
-  Occurrences: 5
+  Occurrences: 4
 
 Uncategorised
   Before events:
@@ -3690,7 +3264,7 @@ Uncategorised
     CT: External code
     RF: Jump to external code for _libintl_gettext
     RF: _ at gettext.h:49:1
-  Occurrences: 4
+  Occurrences: 2
 
 Uncategorised
   Before events:
@@ -3702,7 +3276,7 @@ Uncategorised
     CT: External code
     RF: Jump to external code for _libintl_gettext
     RF: _ at gettext.h:49:1
-  Occurrences: 4
+  Occurrences: 2
 
 Uncategorised
   Before events:
@@ -3714,21 +3288,16 @@ Uncategorised
     CT: External code
     RF: Jump to external code for _libintl_gettext
     RF: _ at gettext.h:49:1
-  Occurrences: 8
+  Occurrences: 4
 
 Uncategorised
   Before events:
     CF: usage_with_options_internal at parse-options.c:1081:22
-  Occurrences: 12
+  Occurrences: 10
 
 Uncategorised
   Before events:
     CF: usage_with_options_internal at parse-options.c:1096:5
-  Occurrences: 12
-
-Uncategorised
-  Before events:
-    CF: usage_with_options_internal at parse-options.c:1098:5
     CT: fprintf_ln at strbuf.c:944:0
     CF: fprintf_ln at strbuf.c:948:8
     CT: Jump to external code for _vfprintf
@@ -3745,6 +3314,23 @@ Uncategorised
 
 Uncategorised
   Before events:
+    CF: usage_with_options_internal at parse-options.c:1098:5
+    CT: fprintf_ln at strbuf.c:944:0
+    CF: fprintf_ln at strbuf.c:948:8
+    CT: Jump to external code for _vfprintf
+    CF: Jump to external code for _vfprintf
+    CT: External code
+    RF: Jump to external code for _vfprintf
+    CF: fprintf_ln at strbuf.c:950:17
+    CT: Jump to external code for _putc
+    CF: Jump to external code for _putc
+    CT: External code
+    RF: Jump to external code for _putc
+    RF: fprintf_ln at strbuf.c:953:1
+  Occurrences: 2
+
+Uncategorised
+  Before events:
     CF: usage_with_options_internal at parse-options.c:1101:3
     CT: string_list_clear at string-list.c:170:0
     CF: string_list_clear at string-list.c:175:5
@@ -3763,7 +3349,7 @@ Uncategorised
     CT: External code
     RF: Jump to external code for _free
     RF: string_list_clear at string-list.c:185:1
-  Occurrences: 4
+  Occurrences: 2
 
 Uncategorised
   Before events:
@@ -3780,17 +3366,17 @@ Uncategorised
     CT: External code
     RF: Jump to external code for _free
     RF: string_list_clear at string-list.c:185:1
-  Occurrences: 4
+  Occurrences: 2
 
 Uncategorised
   Before events:
     CF: usage_with_options_internal at parse-options.c:1125:4
-  Occurrences: 6
+  Occurrences: 5
 
 Uncategorised
   Before events:
     CF: usage_with_options_internal at parse-options.c:1129:9
-  Occurrences: 33
+  Occurrences: 30
 
 Uncategorised
   Before events:
@@ -3800,12 +3386,12 @@ Uncategorised
 Uncategorised
   Before events:
     CF: usage_with_options_internal at parse-options.c:1139:11
-  Occurrences: 26
+  Occurrences: 25
 
 Uncategorised
   Before events:
     CF: usage_with_options_internal at parse-options.c:1159:3
-  Occurrences: 31
+  Occurrences: 28
 
 Uncategorised
   Before events:
@@ -3817,17 +3403,12 @@ Uncategorised
     CT: External code
     RF: Jump to external code for _libintl_gettext
     RF: _ at gettext.h:49:1
-  Occurrences: 38
+  Occurrences: 24
 
 Uncategorised
   Before events:
     CF: usage_with_options_internal at parse-options.c:1161:2
-  Occurrences: 5
-
-Uncategorised
-  Before events:
-    CF: xdg_config_home_for at path.c:1535:10
-  Occurrences: 57
+  Occurrences: 4
 
 Uncategorised
   Before events:
@@ -3906,7 +3487,7 @@ Uncategorised
 Uncategorised
   Before events:
     CT: Jump to external code for _access
-  Occurrences: 24
+  Occurrences: 6
 
 Uncategorised
   Before events:
@@ -4021,13 +3602,8 @@ Uncategorised
 
 Uncategorised
   Before events:
-    CT: Jump to external code for _fclose
-  Occurrences: 6
-
-Uncategorised
-  Before events:
     CT: Jump to external code for _fprintf
-  Occurrences: 102
+  Occurrences: 95
 
 Uncategorised
   Before events:
@@ -4046,7 +3622,7 @@ Uncategorised
 Uncategorised
   Before events:
     CT: Jump to external code for _fputc
-  Occurrences: 11
+  Occurrences: 9
 
 Uncategorised
   Before events:
@@ -4058,7 +3634,7 @@ Uncategorised
 Uncategorised
   Before events:
     CT: Jump to external code for _free
-  Occurrences: 216
+  Occurrences: 187
 
 Uncategorised
   Before events:
@@ -4145,12 +3721,12 @@ Uncategorised
 Uncategorised
   Before events:
     CT: Jump to external code for _memcmp
-  Occurrences: 43
+  Occurrences: 36
 
 Uncategorised
   Before events:
     CT: Jump to external code for _memset
-  Occurrences: 619
+  Occurrences: 609
 
 Uncategorised
   Before events:
@@ -4312,7 +3888,7 @@ Uncategorised
 Uncategorised
   Before events:
     CT: Jump to external code for _printf
-  Occurrences: 6
+  Occurrences: 5
 
 Uncategorised
   Before events:
@@ -4355,7 +3931,7 @@ Uncategorised
 Uncategorised
   Before events:
     CT: Jump to external code for _strlen
-  Occurrences: 67
+  Occurrences: 64
 
 Uncategorised
   Before events:
@@ -4432,11 +4008,6 @@ Uncategorised
 
 Uncategorised
   Before events:
-    CT: _ at gettext.h:45:0
-  Occurrences: 21
-
-Uncategorised
-  Before events:
     CT: config_store_data_clear at config.c:2862:0
   Occurrences: 30
 
@@ -4452,33 +4023,13 @@ Uncategorised
 
 Uncategorised
   Before events:
-    CT: error at usage.c:262:0
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CT: fprintf_ln at strbuf.c:944:0
-  Occurrences: 12
-
-Uncategorised
-  Before events:
     CT: get_die_message_routine at usage.c:128:0
   Occurrences: 7
 
 Uncategorised
   Before events:
-    CT: gettimeofday_nanos at trace.c:376:0
-  Occurrences: 26
-
-Uncategorised
-  Before events:
     CT: git_has_dos_drive_prefix at git-compat-util.h:432:0
   Occurrences: 56
-
-Uncategorised
-  Before events:
-    CT: mkpathdup at path.c:504:0
-  Occurrences: 57
 
 Uncategorised
   Before events:
@@ -4492,38 +4043,13 @@ Uncategorised
 
 Uncategorised
   Before events:
-    CT: read_attr_from_index at attr.c:735:0
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CT: strbuf_addf at strbuf.c:333:0
-  Occurrences: 30
-
-Uncategorised
-  Before events:
-    CT: strbuf_addstr at strbuf.h:304:0
-  Occurrences: 126
-
-Uncategorised
-  Before events:
-    CT: strbuf_release at strbuf.c:63:0
-  Occurrences: 2
-
-Uncategorised
-  Before events:
-    CT: string_list_append at string-list.c:218:0
-  Occurrences: 30
-
-Uncategorised
-  Before events:
     CT: system_prefix at exec-cmd.c:247:0
   Occurrences: 56
 
 Uncategorised
   Before events:
     CT: usage_with_options_internal at parse-options.c:1029:0
-  Occurrences: 4
+  Occurrences: 2
 
 Uncategorised
   Before events:
@@ -4607,7 +4133,7 @@ Uncategorised
 Uncategorised
   Before events:
     RF: Jump to external code for _access
-  Occurrences: 24
+  Occurrences: 6
 
 Uncategorised
   Before events:
@@ -4722,13 +4248,8 @@ Uncategorised
 
 Uncategorised
   Before events:
-    RF: Jump to external code for _fclose
-  Occurrences: 6
-
-Uncategorised
-  Before events:
     RF: Jump to external code for _fprintf
-  Occurrences: 102
+  Occurrences: 95
 
 Uncategorised
   Before events:
@@ -4747,7 +4268,7 @@ Uncategorised
 Uncategorised
   Before events:
     RF: Jump to external code for _fputc
-  Occurrences: 11
+  Occurrences: 9
 
 Uncategorised
   Before events:
@@ -4759,7 +4280,7 @@ Uncategorised
 Uncategorised
   Before events:
     RF: Jump to external code for _free
-  Occurrences: 216
+  Occurrences: 187
 
 Uncategorised
   Before events:
@@ -4846,12 +4367,12 @@ Uncategorised
 Uncategorised
   Before events:
     RF: Jump to external code for _memcmp
-  Occurrences: 43
+  Occurrences: 36
 
 Uncategorised
   Before events:
     RF: Jump to external code for _memset
-  Occurrences: 619
+  Occurrences: 609
 
 Uncategorised
   Before events:
@@ -5013,7 +4534,7 @@ Uncategorised
 Uncategorised
   Before events:
     RF: Jump to external code for _printf
-  Occurrences: 6
+  Occurrences: 5
 
 Uncategorised
   Before events:
@@ -5056,7 +4577,7 @@ Uncategorised
 Uncategorised
   Before events:
     RF: Jump to external code for _strlen
-  Occurrences: 67
+  Occurrences: 64
 
 Uncategorised
   Before events:
@@ -5133,11 +4654,6 @@ Uncategorised
 
 Uncategorised
   Before events:
-    RF: _ at gettext.h:49:1
-  Occurrences: 21
-
-Uncategorised
-  Before events:
     RF: config_store_data_clear at config.c:2872:1
   Occurrences: 30
 
@@ -5153,23 +4669,8 @@ Uncategorised
 
 Uncategorised
   Before events:
-    RF: error at usage.c:268:2
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    RF: fprintf_ln at strbuf.c:953:1
-  Occurrences: 12
-
-Uncategorised
-  Before events:
     RF: get_die_message_routine at usage.c:129:2
   Occurrences: 7
-
-Uncategorised
-  Before events:
-    RF: gettimeofday_nanos at trace.c:379:2
-  Occurrences: 26
 
 Uncategorised
   Before events:
@@ -5183,11 +4684,6 @@ Uncategorised
 
 Uncategorised
   Before events:
-    RF: mkpathdup at path.c:511:2
-  Occurrences: 57
-
-Uncategorised
-  Before events:
     RF: noop_core_config at git-compat-util.h:420:2
   Occurrences: 18
 
@@ -5198,38 +4694,13 @@ Uncategorised
 
 Uncategorised
   Before events:
-    RF: read_attr_from_index at attr.c:774:1
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    RF: strbuf_addf at strbuf.c:338:1
-  Occurrences: 30
-
-Uncategorised
-  Before events:
-    RF: strbuf_addstr at strbuf.h:306:1
-  Occurrences: 126
-
-Uncategorised
-  Before events:
-    RF: strbuf_release at strbuf.c:68:1
-  Occurrences: 2
-
-Uncategorised
-  Before events:
-    RF: string_list_append at string-list.c:219:2
-  Occurrences: 30
-
-Uncategorised
-  Before events:
     RF: system_prefix at exec-cmd.c:248:2
   Occurrences: 56
 
 Uncategorised
   Before events:
     RF: usage_with_options_internal at parse-options.c:1167:1
-  Occurrences: 4
+  Occurrences: 2
 
 Uncategorised
   Before events:
@@ -5248,22 +4719,25 @@ Uncategorised
 
 ## Divergences with unique coordinates by type
 
+CoordinatesRemoved
+  Unique divergence coordinates: 41
+
 CoordinatesChangedSmall
   Unique divergence coordinates: 39
 
 LibraryCallAdded
-  Unique divergence coordinates: 44
+  Unique divergence coordinates: 40
 
 LibraryCallRemoved
-  Unique divergence coordinates: 69
+  Unique divergence coordinates: 67
 
 ProgramCallRemoved
-  Unique divergence coordinates: 2
+  Unique divergence coordinates: 1
 
 Uncategorised
-  Unique divergence coordinates: 623
+  Unique divergence coordinates: 509
 
 ## Summary
 
-777 unique divergence coordinates
-33852 divergence occurrences
+697 unique divergence coordinates
+30899 divergence occurrences
