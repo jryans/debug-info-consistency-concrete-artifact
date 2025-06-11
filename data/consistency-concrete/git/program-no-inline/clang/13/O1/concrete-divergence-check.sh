@@ -36,7 +36,8 @@ for strategy in "${strategies[@]}"; do
       --events-by-type-dir divergences/${strategy}/${test}/default/events \
       ../O0/concrete-trace/${test}/default/trace \
       concrete-trace/${test}/default/trace \
-      > divergences/${strategy}/${test}/default/divergences.md
+      > divergences/${strategy}/${test}/default/divergences.md \
+      || continue
 
     # Count unique divergence lines by type
     mkdir -p divergences/${strategy}/${test}/default/counts
@@ -61,7 +62,7 @@ for strategy in "${strategies[@]}"; do
   # Aggregate unique line counts across all tests by type
   mkdir -p divergences/${strategy}/summary/default/counts
   rm -f divergences/${strategy}/summary/default/counts/*
-  for divergence_type_path in divergences/${strategy}/t0001-init/default/events/*; do
+  for divergence_type_path in divergences/${strategy}/t1007-hash-object/default/events/*; do
     divergence_type=$(basename ${divergence_type_path})
     cat divergences/${strategy}/t*/default/events/${divergence_type} | \
       sort -u | \
