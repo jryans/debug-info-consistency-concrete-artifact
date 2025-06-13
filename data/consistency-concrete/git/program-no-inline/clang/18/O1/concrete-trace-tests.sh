@@ -73,7 +73,7 @@ for test in ${tests[*]}; do
       find . -name 'trace-*' -print0 | \
         xargs -I % -0 mv % traces;
       cd traces;
-      ls -tUr | \
+      ls -tr | \
         xargs cat \
         > ${SCRIPT_DIR}/concrete-trace/${test}/${trace_variant}/trace
     )
