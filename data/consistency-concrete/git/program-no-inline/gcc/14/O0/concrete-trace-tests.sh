@@ -71,7 +71,7 @@ for test in ${tests[*]}; do
     (
       mkdir traces;
       find . -name 'trace-*' -print0 | \
-        xargs -J % -0 mv % traces;
+        xargs -I % -0 mv % traces;
       cd traces;
       ls -tUr | \
         xargs cat \
