@@ -704,6 +704,13 @@ LibraryCallRemoved
 
 LibraryCallRemoved
   Before events:
+    CF: git_config_set_multivar_in_file_gently at config.c:3213:2
+    CT: Jump to external code for memset
+    RF: Jump to external code for memset
+  Occurrences: 24
+
+LibraryCallRemoved
+  Before events:
     CF: git_config_set_multivar_in_file_gently at config.c:3289:3
     CT: Jump to external code for memset
     RF: Jump to external code for memset
@@ -963,13 +970,6 @@ ProgramCallRemoved
 
 ProgramCallRemoved
   Before events:
-    CF: git_config_set_multivar_in_file_gently at config.c:3213:2
-    CT: Jump to external code for memset
-    RF: Jump to external code for memset
-  Occurrences: 24
-
-ProgramCallRemoved
-  Before events:
     CF: git_configset_clear at config.c:2384:2
     CT: container_of_or_null_offset at git-compat-util.h:1580:0
     RF: container_of_or_null_offset at git-compat-util.h:1581:2
@@ -1119,10 +1119,10 @@ LibraryCallReplaced
   Unique divergence coordinates: 3
 
 LibraryCallRemoved
-  Unique divergence coordinates: 37
+  Unique divergence coordinates: 38
 
 ProgramCallRemoved
-  Unique divergence coordinates: 22
+  Unique divergence coordinates: 21
 
 Uncategorised
   Unique divergence coordinates: 7

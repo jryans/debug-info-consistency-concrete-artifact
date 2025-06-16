@@ -2044,6 +2044,13 @@ LibraryCallRemoved
 
 LibraryCallRemoved
   Before events:
+    CF: add at worktree.c:633:2
+    CT: Jump to external code for memset
+    RF: Jump to external code for memset
+  Occurrences: 2
+
+LibraryCallRemoved
+  Before events:
     CF: add at worktree.c:690:24
     CT: Jump to external code for memset
     RF: Jump to external code for memset
@@ -2087,6 +2094,13 @@ LibraryCallRemoved
 LibraryCallRemoved
   Before events:
     CF: builtin_diffstat at diff.c:3768:3
+    CT: Jump to external code for memset
+    RF: Jump to external code for memset
+  Occurrences: 3
+
+LibraryCallRemoved
+  Before events:
+    CF: builtin_diffstat at diff.c:3769:3
     CT: Jump to external code for memset
     RF: Jump to external code for memset
   Occurrences: 3
@@ -2180,7 +2194,7 @@ LibraryCallRemoved
     CF: cmd_branch at branch.c:644:28
     CT: Jump to external code for memset
     RF: Jump to external code for memset
-  Occurrences: 3
+  Occurrences: 9
 
 LibraryCallRemoved
   Before events:
@@ -2243,11 +2257,18 @@ LibraryCallRemoved
     CF: cmd_tag at tag.c:446:28
     CT: Jump to external code for memset
     RF: Jump to external code for memset
-  Occurrences: 3
+  Occurrences: 9
 
 LibraryCallRemoved
   Before events:
     CF: cmd_tag at tag.c:495:2
+    CT: Jump to external code for memset
+    RF: Jump to external code for memset
+  Occurrences: 3
+
+LibraryCallRemoved
+  Before events:
+    CF: cmd_tag at tag.c:496:2
     CT: Jump to external code for memset
     RF: Jump to external code for memset
   Occurrences: 3
@@ -2373,6 +2394,13 @@ LibraryCallRemoved
 
 LibraryCallRemoved
   Before events:
+    CF: git_config_copy_or_rename_section_in_file at config.c:3560:2
+    CT: Jump to external code for memset
+    RF: Jump to external code for memset
+  Occurrences: 2
+
+LibraryCallRemoved
+  Before events:
     CF: git_config_from_parameters at config.c:715:2
     CT: Jump to external code for memset
     RF: Jump to external code for memset
@@ -2381,6 +2409,13 @@ LibraryCallRemoved
 LibraryCallRemoved
   Before events:
     CF: git_config_set_multivar_in_file_gently at config.c:3207:19
+    CT: Jump to external code for memset
+    RF: Jump to external code for memset
+  Occurrences: 228
+
+LibraryCallRemoved
+  Before events:
+    CF: git_config_set_multivar_in_file_gently at config.c:3213:2
     CT: Jump to external code for memset
     RF: Jump to external code for memset
   Occurrences: 228
@@ -2499,6 +2534,13 @@ LibraryCallRemoved
 
 LibraryCallRemoved
   Before events:
+    CF: maintenance_run at gc.c:1449:2
+    CT: Jump to external code for memset
+    RF: Jump to external code for memset
+  Occurrences: 2
+
+LibraryCallRemoved
+  Before events:
     CF: mem_pool_init at mem-pool.c:60:2
     CT: Jump to external code for memset
     RF: Jump to external code for memset
@@ -2556,6 +2598,13 @@ LibraryCallRemoved
 LibraryCallRemoved
   Before events:
     CF: parse_commit_buffer at commit.c:460:46
+    CT: Jump to external code for memcmp
+    RF: Jump to external code for memcmp
+  Occurrences: 10
+
+LibraryCallRemoved
+  Before events:
+    CF: parse_commit_date at commit.c:103:6
     CT: Jump to external code for memcmp
     RF: Jump to external code for memcmp
   Occurrences: 10
@@ -2628,7 +2677,7 @@ LibraryCallRemoved
     CF: prep_parse_options at diff.c:5424:30
     CT: Jump to external code for memset
     RF: Jump to external code for memset
-  Occurrences: 18
+  Occurrences: 30
 
 LibraryCallRemoved
   Before events:
@@ -2668,6 +2717,13 @@ LibraryCallRemoved
 LibraryCallRemoved
   Before events:
     CF: raceproof_create_file at files-backend.c:957:6
+    CT: Jump to external code for __errno_location
+    RF: Jump to external code for __errno_location
+  Occurrences: 4
+
+LibraryCallRemoved
+  Before events:
+    CF: raceproof_create_file at files-backend.c:967:13
     CT: Jump to external code for __errno_location
     RF: Jump to external code for __errno_location
   Occurrences: 4
@@ -2856,6 +2912,13 @@ LibraryCallRemoved
 
 LibraryCallRemoved
   Before events:
+    CF: setup_tracking at branch.c:250:32
+    CT: Jump to external code for memset
+    RF: Jump to external code for memset
+  Occurrences: 1
+
+LibraryCallRemoved
+  Before events:
     CF: setup_tracking at branch.c:258:2
     CT: Jump to external code for memset
     RF: Jump to external code for memset
@@ -2877,6 +2940,13 @@ LibraryCallRemoved
 
 LibraryCallRemoved
   Before events:
+    CF: show_date at date.c:287:12
+    CT: Jump to external code for memset
+    RF: Jump to external code for memset
+  Occurrences: 3
+
+LibraryCallRemoved
+  Before events:
     CF: show_log at log-tree.c:639:30
     CT: Jump to external code for memset
     RF: Jump to external code for memset
@@ -2885,6 +2955,13 @@ LibraryCallRemoved
 LibraryCallRemoved
   Before events:
     CF: skip_utf8_bom at utf8.c:789:12
+    CT: Jump to external code for strlen
+    RF: Jump to external code for strlen
+  Occurrences: 4
+
+LibraryCallRemoved
+  Before events:
+    CF: skip_utf8_bom at utf8.c:790:30
     CT: Jump to external code for strlen
     RF: Jump to external code for strlen
   Occurrences: 4
@@ -2908,7 +2985,7 @@ LibraryCallRemoved
     CF: start_command at run-command.c:824:8
     CT: Jump to external code for signal
     RF: Jump to external code for signal
-  Occurrences: 4
+  Occurrences: 6
 
 LibraryCallRemoved
   Before events:
@@ -2947,6 +3024,13 @@ LibraryCallRemoved
 
 LibraryCallRemoved
   Before events:
+    CF: xdi_diff_outf at xdiff-interface.c:143:2
+    CT: Jump to external code for memset
+    RF: Jump to external code for memset
+  Occurrences: 3
+
+LibraryCallRemoved
+  Before events:
     CF: xdl_emit_diff at xemit.c:172:19
     CT: Jump to external code for memset
     RF: Jump to external code for memset
@@ -2965,13 +3049,6 @@ LibraryCallRemoved
     CT: Jump to external code for realloc
     RF: Jump to external code for realloc
   Occurrences: 1
-
-ProgramCallRemoved
-  Before events:
-    CF: add at worktree.c:633:2
-    CT: Jump to external code for memset
-    RF: Jump to external code for memset
-  Occurrences: 2
 
 ProgramCallRemoved
   Before events:
@@ -3003,13 +3080,6 @@ ProgramCallRemoved
 
 ProgramCallRemoved
   Before events:
-    CF: builtin_diffstat at diff.c:3769:3
-    CT: Jump to external code for memset
-    RF: Jump to external code for memset
-  Occurrences: 3
-
-ProgramCallRemoved
-  Before events:
     CF: check_vector_add at attr.c:500:2
     CT: vector_lock at attr.c:489:0
     RF: vector_lock at attr.c:491:1
@@ -3021,27 +3091,6 @@ ProgramCallRemoved
     CT: vector_unlock at attr.c:494:0
     RF: vector_unlock at attr.c:496:1
   Occurrences: 10
-
-ProgramCallRemoved
-  Before events:
-    CF: cmd_branch at branch.c:644:28
-    CT: Jump to external code for memset
-    RF: Jump to external code for memset
-  Occurrences: 6
-
-ProgramCallRemoved
-  Before events:
-    CF: cmd_tag at tag.c:446:28
-    CT: Jump to external code for memset
-    RF: Jump to external code for memset
-  Occurrences: 6
-
-ProgramCallRemoved
-  Before events:
-    CF: cmd_tag at tag.c:496:2
-    CT: Jump to external code for memset
-    RF: Jump to external code for memset
-  Occurrences: 3
 
 ProgramCallRemoved
   Before events:
@@ -3115,20 +3164,6 @@ ProgramCallRemoved
 
 ProgramCallRemoved
   Before events:
-    CF: git_config_copy_or_rename_section_in_file at config.c:3560:2
-    CT: Jump to external code for memset
-    RF: Jump to external code for memset
-  Occurrences: 2
-
-ProgramCallRemoved
-  Before events:
-    CF: git_config_set_multivar_in_file_gently at config.c:3213:2
-    CT: Jump to external code for memset
-    RF: Jump to external code for memset
-  Occurrences: 228
-
-ProgramCallRemoved
-  Before events:
     CF: git_configset_clear at config.c:2384:2
     CT: container_of_or_null_offset at git-compat-util.h:1580:0
     RF: container_of_or_null_offset at git-compat-util.h:1581:2
@@ -3161,13 +3196,6 @@ ProgramCallRemoved
     CT: container_of_or_null_offset at git-compat-util.h:1580:0
     RF: container_of_or_null_offset at git-compat-util.h:1581:2
   Occurrences: 4
-
-ProgramCallRemoved
-  Before events:
-    CF: maintenance_run at gc.c:1449:2
-    CT: Jump to external code for memset
-    RF: Jump to external code for memset
-  Occurrences: 2
 
 ProgramCallRemoved
   Before events:
@@ -3206,13 +3234,6 @@ ProgramCallRemoved
 
 ProgramCallRemoved
   Before events:
-    CF: parse_commit_date at commit.c:103:6
-    CT: Jump to external code for memcmp
-    RF: Jump to external code for memcmp
-  Occurrences: 10
-
-ProgramCallRemoved
-  Before events:
     CF: parse_loose_header at object-file.c:1410:16
     CT: cast_size_t_to_ulong at git-compat-util.h:1015:0
     RF: cast_size_t_to_ulong at git-compat-util.h:1020:2
@@ -3224,20 +3245,6 @@ ProgramCallRemoved
     CT: precompose_argv_prefix at git-compat-util.h:320:0
     RF: precompose_argv_prefix at git-compat-util.h:321:2
   Occurrences: 138
-
-ProgramCallRemoved
-  Before events:
-    CF: prep_parse_options at diff.c:5424:30
-    CT: Jump to external code for memset
-    RF: Jump to external code for memset
-  Occurrences: 12
-
-ProgramCallRemoved
-  Before events:
-    CF: raceproof_create_file at files-backend.c:967:13
-    CT: Jump to external code for __errno_location
-    RF: Jump to external code for __errno_location
-  Occurrences: 4
 
 ProgramCallRemoved
   Before events:
@@ -3276,27 +3283,6 @@ ProgramCallRemoved
 
 ProgramCallRemoved
   Before events:
-    CF: setup_tracking at branch.c:250:32
-    CT: Jump to external code for memset
-    RF: Jump to external code for memset
-  Occurrences: 1
-
-ProgramCallRemoved
-  Before events:
-    CF: show_date at date.c:287:12
-    CT: Jump to external code for memset
-    RF: Jump to external code for memset
-  Occurrences: 3
-
-ProgramCallRemoved
-  Before events:
-    CF: skip_utf8_bom at utf8.c:790:30
-    CT: Jump to external code for strlen
-    RF: Jump to external code for strlen
-  Occurrences: 4
-
-ProgramCallRemoved
-  Before events:
     CF: start_command at run-command.c:775:3
     CT: set_die_routine at usage.c:123:0
     RF: set_die_routine at usage.c:125:1
@@ -3315,13 +3301,6 @@ ProgramCallRemoved
     CT: set_warn_routine at usage.c:143:0
     RF: set_warn_routine at usage.c:145:1
   Occurrences: 1
-
-ProgramCallRemoved
-  Before events:
-    CF: start_command at run-command.c:824:8
-    CT: Jump to external code for signal
-    RF: Jump to external code for signal
-  Occurrences: 2
 
 ProgramCallRemoved
   Before events:
@@ -3378,13 +3357,6 @@ ProgramCallRemoved
     CT: const_error at git-compat-util.h:638:0
     RF: const_error at git-compat-util.h:639:2
   Occurrences: 1
-
-ProgramCallRemoved
-  Before events:
-    CF: xdi_diff_outf at xdiff-interface.c:143:2
-    CT: Jump to external code for memset
-    RF: Jump to external code for memset
-  Occurrences: 3
 
 ProgramCallRemoved
   Before events:
@@ -4538,15 +4510,15 @@ LibraryCallReplaced
   Unique divergence coordinates: 9
 
 LibraryCallRemoved
-  Unique divergence coordinates: 133
+  Unique divergence coordinates: 145
 
 ProgramCallRemoved
-  Unique divergence coordinates: 61
+  Unique divergence coordinates: 45
 
 Uncategorised
   Unique divergence coordinates: 84
 
 ## Summary
 
-563 unique divergence coordinates
+559 unique divergence coordinates
 224961 divergence occurrences
