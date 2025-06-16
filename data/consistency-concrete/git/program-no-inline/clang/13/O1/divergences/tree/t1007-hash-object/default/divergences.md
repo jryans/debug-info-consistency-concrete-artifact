@@ -212,14 +212,14 @@ CoordinatesChangedSmall
     CF: git_parse_signed at config.c:1170:7
   After events:
     CF: git_parse_signed at config.c:1168:3
-  Occurrences: 33
+  Occurrences: 37
 
 CoordinatesChangedSmall
   Before events:
     CF: safe_create_leading_directories_const at object-file.c:417:2
   After events:
     CF: safe_create_leading_directories_const at object-file.c:415:15
-  Occurrences: 2
+  Occurrences: 3
 
 CoordinatesChangedSmall
   Before events:
@@ -562,7 +562,7 @@ LibraryCallAdded
     CF: copy_templates_1 at init-db.c:44:15
     CT: Jump to external code for readdir64
     RF: Jump to external code for readdir64
-  Occurrences: 70
+  Occurrences: 138
 
 LibraryCallAdded
   After events:
@@ -604,7 +604,7 @@ LibraryCallAdded
     CF: git_parse_signed at config.c:1168:3
     CT: Jump to external code for __errno_location
     RF: Jump to external code for __errno_location
-  Occurrences: 33
+  Occurrences: 68
 
 LibraryCallAdded
   After events:
@@ -618,7 +618,7 @@ LibraryCallAdded
     CF: safe_create_leading_directories_const at object-file.c:415:15
     CT: Jump to external code for __errno_location
     RF: Jump to external code for __errno_location
-  Occurrences: 2
+  Occurrences: 5
 
 LibraryCallRemoved
   Before events:
@@ -702,7 +702,7 @@ LibraryCallRemoved
     CF: copy_templates_1 at init-db.c:44:15
     CT: Jump to external code for readdir64
     RF: Jump to external code for readdir64
-  Occurrences: 70
+  Occurrences: 138
 
 LibraryCallRemoved
   Before events:
@@ -786,7 +786,7 @@ LibraryCallRemoved
     CF: git_parse_signed at config.c:1168:3
     CT: Jump to external code for __errno_location
     RF: Jump to external code for __errno_location
-  Occurrences: 33
+  Occurrences: 68
 
 LibraryCallRemoved
   Before events:
@@ -947,7 +947,7 @@ LibraryCallRemoved
     CF: safe_create_leading_directories_const at object-file.c:415:15
     CT: Jump to external code for __errno_location
     RF: Jump to external code for __errno_location
-  Occurrences: 2
+  Occurrences: 5
 
 LibraryCallRemoved
   Before events:
@@ -1435,4 +1435,4 @@ Uncategorised
 ## Summary
 
 198 unique divergence coordinates
-33355 divergence occurrences
+33572 divergence occurrences
