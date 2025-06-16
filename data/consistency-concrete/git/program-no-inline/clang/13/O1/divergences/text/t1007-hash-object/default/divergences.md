@@ -575,8 +575,6 @@ LibraryCallAdded
   After events:
     CF: copy_templates_1 at init-db.c:44:15
     CT: Jump to external code for readdir64
-    CF: Jump to external code for readdir64
-    CT: External code
     RF: Jump to external code for readdir64
   Occurrences: 8
 
@@ -584,14 +582,10 @@ LibraryCallReplaced
   Before events:
     CF: _ at gettext.h:48:9
     CT: Jump to external code for gettext
-    CF: Jump to external code for gettext
-    CT: External code
     RF: Jump to external code for gettext
   After events:
     CF: _ at gettext.h:48:9
     CT: Jump to external code for dcgettext
-    CF: Jump to external code for dcgettext
-    CT: External code
     RF: Jump to external code for dcgettext
   Occurrences: 90
 
@@ -599,14 +593,10 @@ LibraryCallReplaced
   Before events:
     CF: hash_fd at hash-object.c:48:2
     CT: Jump to external code for printf
-    CF: Jump to external code for printf
-    CT: External code
     RF: Jump to external code for printf
   After events:
     CF: hash_fd at hash-object.c:48:2
     CT: Jump to external code for puts
-    CF: Jump to external code for puts
-    CT: External code
     RF: Jump to external code for puts
   Occurrences: 6
 
@@ -614,14 +604,10 @@ LibraryCallReplaced
   Before events:
     CF: pool_entry_cmp at hashmap.c:327:32
     CT: Jump to external code for memcmp
-    CF: Jump to external code for memcmp
-    CT: External code
     RF: Jump to external code for memcmp
   After events:
     CF: pool_entry_cmp at hashmap.c:327:32
     CT: Jump to external code for bcmp
-    CF: Jump to external code for bcmp
-    CT: External code
     RF: Jump to external code for bcmp
   Occurrences: 54
 
@@ -629,8 +615,6 @@ LibraryCallRemoved
   Before events:
     CF: check_commit at object-file.c:2330:2
     CT: Jump to external code for memset
-    CF: Jump to external code for memset
-    CT: External code
     RF: Jump to external code for memset
   Occurrences: 1
 
@@ -638,8 +622,6 @@ LibraryCallRemoved
   Before events:
     CF: check_refname_component at refs.c:234:7
     CT: Jump to external code for memcmp
-    CF: Jump to external code for memcmp
-    CT: External code
     RF: Jump to external code for memcmp
   Occurrences: 36
 
@@ -647,8 +629,6 @@ LibraryCallRemoved
   Before events:
     CF: check_repository_format at setup.c:1640:27
     CT: Jump to external code for memset
-    CF: Jump to external code for memset
-    CT: External code
     RF: Jump to external code for memset
   Occurrences: 6
 
@@ -656,8 +636,6 @@ LibraryCallRemoved
   Before events:
     CF: check_tag at object-file.c:2338:2
     CT: Jump to external code for memset
-    CF: Jump to external code for memset
-    CT: External code
     RF: Jump to external code for memset
   Occurrences: 1
 
@@ -665,8 +643,6 @@ LibraryCallRemoved
   Before events:
     CF: cmd_env__helper at env--helper.c:41:25
     CT: Jump to external code for memset
-    CF: Jump to external code for memset
-    CT: External code
     RF: Jump to external code for memset
   Occurrences: 2
 
@@ -674,8 +650,6 @@ LibraryCallRemoved
   Before events:
     CF: cmd_hash_object at hash-object.c:97:46
     CT: Jump to external code for memset
-    CF: Jump to external code for memset
-    CT: External code
     RF: Jump to external code for memset
   Occurrences: 18
 
@@ -683,8 +657,6 @@ LibraryCallRemoved
   Before events:
     CF: cmd_init_db at init-db.c:541:42
     CT: Jump to external code for memset
-    CF: Jump to external code for memset
-    CT: External code
     RF: Jump to external code for memset
   Occurrences: 6
 
@@ -692,8 +664,6 @@ LibraryCallRemoved
   Before events:
     CF: config_store_data_clear at config.c:2871:2
     CT: Jump to external code for memset
-    CF: Jump to external code for memset
-    CT: External code
     RF: Jump to external code for memset
   Occurrences: 24
 
@@ -701,8 +671,6 @@ LibraryCallRemoved
   Before events:
     CF: config_with_options at config.c:2183:29
     CT: Jump to external code for memset
-    CF: Jump to external code for memset
-    CT: External code
     RF: Jump to external code for memset
   Occurrences: 56
 
@@ -710,8 +678,6 @@ LibraryCallRemoved
   Before events:
     CF: copy_templates at init-db.c:101:27
     CT: Jump to external code for memset
-    CF: Jump to external code for memset
-    CT: External code
     RF: Jump to external code for memset
   Occurrences: 6
 
@@ -719,17 +685,13 @@ LibraryCallRemoved
   Before events:
     CF: copy_templates_1 at init-db.c:44:15
     CT: Jump to external code for readdir64
-    CF: Jump to external code for readdir64
-    CT: External code
     RF: Jump to external code for readdir64
-  Occurrences: 10
+  Occurrences: 14
 
 LibraryCallRemoved
   Before events:
     CF: git_config_from_parameters at config.c:715:2
     CT: Jump to external code for memset
-    CF: Jump to external code for memset
-    CT: External code
     RF: Jump to external code for memset
   Occurrences: 30
 
@@ -737,17 +699,6 @@ LibraryCallRemoved
   Before events:
     CF: git_config_set_multivar_in_file_gently at config.c:3207:19
     CT: Jump to external code for memset
-    CF: Jump to external code for memset
-    CT: External code
-    RF: Jump to external code for memset
-  Occurrences: 24
-
-LibraryCallRemoved
-  Before events:
-    CF: git_config_set_multivar_in_file_gently at config.c:3213:2
-    CT: Jump to external code for memset
-    CF: Jump to external code for memset
-    CT: External code
     RF: Jump to external code for memset
   Occurrences: 24
 
@@ -755,8 +706,6 @@ LibraryCallRemoved
   Before events:
     CF: git_config_set_multivar_in_file_gently at config.c:3289:3
     CT: Jump to external code for memset
-    CF: Jump to external code for memset
-    CT: External code
     RF: Jump to external code for memset
   Occurrences: 18
 
@@ -764,8 +713,6 @@ LibraryCallRemoved
   Before events:
     CF: git_deflate_init at zlib.c:162:2
     CT: Jump to external code for memset
-    CF: Jump to external code for memset
-    CT: External code
     RF: Jump to external code for memset
   Occurrences: 1
 
@@ -773,8 +720,6 @@ LibraryCallRemoved
   Before events:
     CF: git_hash_sha1_final_oid at object-file.c:107:2
     CT: Jump to external code for memset
-    CF: Jump to external code for memset
-    CT: External code
     RF: Jump to external code for memset
   Occurrences: 7
 
@@ -782,8 +727,6 @@ LibraryCallRemoved
   Before events:
     CF: git_parse_signed at config.c:1170:7
     CT: Jump to external code for __errno_location
-    CF: Jump to external code for __errno_location
-    CT: External code
     RF: Jump to external code for __errno_location
   Occurrences: 75
 
@@ -791,8 +734,6 @@ LibraryCallRemoved
   Before events:
     CF: hashmap_clear_ at hashmap.c:209:2
     CT: Jump to external code for memset
-    CF: Jump to external code for memset
-    CT: External code
     RF: Jump to external code for memset
   Occurrences: 12
 
@@ -800,8 +741,6 @@ LibraryCallRemoved
   Before events:
     CF: hashmap_init at hashmap.c:158:2
     CT: Jump to external code for memset
-    CF: Jump to external code for memset
-    CT: External code
     RF: Jump to external code for memset
   Occurrences: 126
 
@@ -809,8 +748,6 @@ LibraryCallRemoved
   Before events:
     CF: init_db at init-db.c:391:27
     CT: Jump to external code for memset
-    CF: Jump to external code for memset
-    CT: External code
     RF: Jump to external code for memset
   Occurrences: 6
 
@@ -818,8 +755,6 @@ LibraryCallRemoved
   Before events:
     CF: is_dir_file at path.c:82:12
     CT: Jump to external code for strlen
-    CF: Jump to external code for strlen
-    CT: External code
     RF: Jump to external code for strlen
   Occurrences: 61
 
@@ -827,8 +762,6 @@ LibraryCallRemoved
   Before events:
     CF: oidclr at hash.h:302:2
     CT: Jump to external code for memset
-    CF: Jump to external code for memset
-    CT: External code
     RF: Jump to external code for memset
   Occurrences: 6
 
@@ -836,8 +769,6 @@ LibraryCallRemoved
   Before events:
     CF: parse_options at parse-options.c:968:2
     CT: Jump to external code for memset
-    CF: Jump to external code for memset
-    CT: External code
     RF: Jump to external code for memset
   Occurrences: 26
 
@@ -845,8 +776,6 @@ LibraryCallRemoved
   Before events:
     CF: parse_options_check at parse-options.c:462:2
     CT: Jump to external code for memset
-    CF: Jump to external code for memset
-    CT: External code
     RF: Jump to external code for memset
   Occurrences: 26
 
@@ -854,8 +783,6 @@ LibraryCallRemoved
   Before events:
     CF: parsed_object_pool_new at object.c:503:2
     CT: Jump to external code for memset
-    CF: Jump to external code for memset
-    CT: External code
     RF: Jump to external code for memset
   Occurrences: 26
 
@@ -863,8 +790,6 @@ LibraryCallRemoved
   Before events:
     CF: prepare_packed_git_one at packfile.c:896:21
     CT: Jump to external code for memset
-    CF: Jump to external code for memset
-    CT: External code
     RF: Jump to external code for memset
   Occurrences: 2
 
@@ -872,8 +797,6 @@ LibraryCallRemoved
   Before events:
     CF: raceproof_create_file at files-backend.c:988:2
     CT: Jump to external code for __errno_location
-    CF: Jump to external code for __errno_location
-    CT: External code
     RF: Jump to external code for __errno_location
   Occurrences: 6
 
@@ -881,8 +804,6 @@ LibraryCallRemoved
   Before events:
     CF: raw_object_store_new at object.c:523:2
     CT: Jump to external code for memset
-    CF: Jump to external code for memset
-    CT: External code
     RF: Jump to external code for memset
   Occurrences: 26
 
@@ -890,8 +811,6 @@ LibraryCallRemoved
   Before events:
     CF: read_very_early_config at config.c:2281:24
     CT: Jump to external code for memset
-    CF: Jump to external code for memset
-    CT: External code
     RF: Jump to external code for memset
   Occurrences: 26
 
@@ -899,8 +818,6 @@ LibraryCallRemoved
   Before events:
     CF: remote_state_new at remote.c:2746:2
     CT: Jump to external code for memset
-    CF: Jump to external code for memset
-    CT: External code
     RF: Jump to external code for memset
   Occurrences: 26
 
@@ -908,8 +825,6 @@ LibraryCallRemoved
   Before events:
     CF: repo_read_config at config.c:2520:24
     CT: Jump to external code for memset
-    CF: Jump to external code for memset
-    CT: External code
     RF: Jump to external code for memset
   Occurrences: 30
 
@@ -917,8 +832,6 @@ LibraryCallRemoved
   Before events:
     CF: run_argv at git.c:774:21
     CT: Jump to external code for memset
-    CF: Jump to external code for memset
-    CT: External code
     RF: Jump to external code for memset
   Occurrences: 26
 
@@ -926,8 +839,6 @@ LibraryCallRemoved
   Before events:
     CF: safe_create_leading_directories_const at object-file.c:417:2
     CT: Jump to external code for __errno_location
-    CF: Jump to external code for __errno_location
-    CT: External code
     RF: Jump to external code for __errno_location
   Occurrences: 6
 
@@ -935,8 +846,6 @@ LibraryCallRemoved
   Before events:
     CF: setup_git_directory_gently at setup.c:1432:27
     CT: Jump to external code for memset
-    CF: Jump to external code for memset
-    CT: External code
     RF: Jump to external code for memset
   Occurrences: 18
 
@@ -944,8 +853,6 @@ LibraryCallRemoved
   Before events:
     CF: setup_git_directory_gently_1 at setup.c:1240:21
     CT: Jump to external code for memset
-    CF: Jump to external code for memset
-    CT: External code
     RF: Jump to external code for memset
   Occurrences: 18
 
@@ -953,8 +860,6 @@ LibraryCallRemoved
   Before events:
     CF: setup_git_env at environment.c:167:25
     CT: Jump to external code for memset
-    CF: Jump to external code for memset
-    CT: External code
     RF: Jump to external code for memset
   Occurrences: 24
 
@@ -962,8 +867,6 @@ LibraryCallRemoved
   Before events:
     CF: usage_with_options_internal at parse-options.c:1081:22
     CT: Jump to external code for memset
-    CF: Jump to external code for memset
-    CT: External code
     RF: Jump to external code for memset
   Occurrences: 12
 
@@ -1028,14 +931,14 @@ ProgramCallRemoved
     CF: copy_templates_1 at init-db.c:48:3
     CT: strbuf_setlen at strbuf.h:161:0
     RF: strbuf_setlen at strbuf.h:169:1
-  Occurrences: 13
+  Occurrences: 11
 
 ProgramCallRemoved
   Before events:
     CF: copy_templates_1 at init-db.c:49:3
     CT: strbuf_setlen at strbuf.h:161:0
     RF: strbuf_setlen at strbuf.h:169:1
-  Occurrences: 14
+  Occurrences: 12
 
 ProgramCallRemoved
   Before events:
@@ -1057,6 +960,13 @@ ProgramCallRemoved
     CT: hashmap_unlock at attr.c:47:0
     RF: hashmap_unlock at attr.c:49:1
   Occurrences: 10
+
+ProgramCallRemoved
+  Before events:
+    CF: git_config_set_multivar_in_file_gently at config.c:3213:2
+    CT: Jump to external code for memset
+    RF: Jump to external code for memset
+  Occurrences: 24
 
 ProgramCallRemoved
   Before events:
@@ -1122,7 +1032,7 @@ Uncategorised
     CF: copy_templates_1 at init-db.c:49:3
     CT: strbuf_setlen at strbuf.h:161:0
     RF: strbuf_setlen at strbuf.h:169:1
-  Occurrences: 2
+  Occurrences: 5
 
 Uncategorised
   After events:
@@ -1134,8 +1044,6 @@ Uncategorised
     RF: strbuf_setlen at strbuf.h:169:1
     CF: copy_templates_1 at init-db.c:44:15
     CT: Jump to external code for readdir64
-    CF: Jump to external code for readdir64
-    CT: External code
     RF: Jump to external code for readdir64
     CF: copy_templates_1 at init-db.c:48:3
     CT: strbuf_setlen at strbuf.h:161:0
@@ -1143,19 +1051,15 @@ Uncategorised
     CF: copy_templates_1 at init-db.c:49:3
     CT: strbuf_setlen at strbuf.h:161:0
     RF: strbuf_setlen at strbuf.h:169:1
-  Occurrences: 6
+  Occurrences: 3
 
 Uncategorised
   Before events:
     CF: init_repository_format at setup.c:710:33
     CT: Jump to external code for memset
-    CF: Jump to external code for memset
-    CT: External code
     RF: Jump to external code for memset
     CF: init_repository_format at setup.c:712:2
     CT: Jump to external code for memcpy
-    CF: Jump to external code for memcpy
-    CT: External code
     RF: Jump to external code for memcpy
   Occurrences: 72
 
@@ -1163,32 +1067,28 @@ Uncategorised
   Before events:
     CF: string_list_init_dup at string-list.c:12:21
     CT: Jump to external code for memset
-    CF: Jump to external code for memset
-    CT: External code
     RF: Jump to external code for memset
     CF: string_list_init_dup at string-list.c:13:2
     CT: Jump to external code for memcpy
-    CF: Jump to external code for memcpy
-    CT: External code
     RF: Jump to external code for memcpy
   Occurrences: 72
 
 Uncategorised
   Before events:
     CT: Jump to external code for gettext
-    CF: Jump to external code for gettext
+    RF: Jump to external code for gettext
   After events:
     CT: Jump to external code for dcgettext
-    CF: Jump to external code for dcgettext
+    RF: Jump to external code for dcgettext
   Occurrences: 21
 
 Uncategorised
   Before events:
     CT: Jump to external code for memcmp
-    CF: Jump to external code for memcmp
+    RF: Jump to external code for memcmp
   After events:
     CT: Jump to external code for bcmp
-    CF: Jump to external code for bcmp
+    RF: Jump to external code for bcmp
   Occurrences: 7
 
 Uncategorised
@@ -1197,25 +1097,9 @@ Uncategorised
     RF: strbuf_setlen at strbuf.h:169:1
     CF: copy_templates_1 at init-db.c:44:15
     CT: Jump to external code for readdir64
-    CF: Jump to external code for readdir64
-    CT: External code
     RF: Jump to external code for readdir64
     CF: copy_templates_1 at init-db.c:48:3
   Occurrences: 1
-
-Uncategorised
-  Before events:
-    RF: Jump to external code for gettext
-  After events:
-    RF: Jump to external code for dcgettext
-  Occurrences: 21
-
-Uncategorised
-  Before events:
-    RF: Jump to external code for memcmp
-  After events:
-    RF: Jump to external code for bcmp
-  Occurrences: 7
 
 ## Divergences with unique coordinates by type
 
@@ -1235,15 +1119,15 @@ LibraryCallReplaced
   Unique divergence coordinates: 3
 
 LibraryCallRemoved
-  Unique divergence coordinates: 38
+  Unique divergence coordinates: 37
 
 ProgramCallRemoved
-  Unique divergence coordinates: 21
+  Unique divergence coordinates: 22
 
 Uncategorised
-  Unique divergence coordinates: 9
+  Unique divergence coordinates: 7
 
 ## Summary
 
-153 unique divergence coordinates
-31647 divergence occurrences
+151 unique divergence coordinates
+31619 divergence occurrences
