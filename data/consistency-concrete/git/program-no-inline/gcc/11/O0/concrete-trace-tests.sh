@@ -70,7 +70,7 @@ for test in ${tests[*]}; do
     # Sorted by file creation time from oldest to newest
     (
       mkdir traces;
-      find . -name 'trace-*' -print0 | \
+      find . -name 'trace-*' -not -path './traces/*' -print0 | \
         xargs -I % -0 mv % traces;
       cd traces;
       ls -tr | \
