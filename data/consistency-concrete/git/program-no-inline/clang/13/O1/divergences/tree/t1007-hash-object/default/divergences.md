@@ -97,6 +97,13 @@ CoordinatesRemoved
 
 CoordinatesRemoved
   Before events:
+    CF: hasheq_algop at hash.h:238:10
+  After events:
+    CF: hasheq_algop at hash.h:0:0
+  Occurrences: 7
+
+CoordinatesRemoved
+  Before events:
     CF: init_db at init-db.c:467:11
   After events:
     CF: init_db at init-db.c:0:0
@@ -206,20 +213,6 @@ CoordinatesRemoved
   After events:
     CT: hashmap_iter_next at hashmap.c:0:0
   Occurrences: 34
-
-CoordinatesChangedSmall
-  Before events:
-    CF: git_parse_signed at config.c:1170:7
-  After events:
-    CF: git_parse_signed at config.c:1168:3
-  Occurrences: 37
-
-CoordinatesChangedSmall
-  Before events:
-    CF: safe_create_leading_directories_const at object-file.c:417:2
-  After events:
-    CF: safe_create_leading_directories_const at object-file.c:415:15
-  Occurrences: 3
 
 CoordinatesChangedSmall
   Before events:
@@ -562,7 +555,7 @@ LibraryCallAdded
     CF: copy_templates_1 at init-db.c:44:15
     CT: Jump to external code for readdir64
     RF: Jump to external code for readdir64
-  Occurrences: 138
+  Occurrences: 57
 
 LibraryCallAdded
   After events:
@@ -598,34 +591,6 @@ LibraryCallAdded
     CT: Jump to external code for closedir
     RF: Jump to external code for closedir
   Occurrences: 6
-
-LibraryCallAdded
-  After events:
-    CF: git_parse_signed at config.c:1168:3
-    CT: Jump to external code for __errno_location
-    RF: Jump to external code for __errno_location
-  Occurrences: 68
-
-LibraryCallAdded
-  After events:
-    CF: raceproof_create_file at files-backend.c:953:15
-    CT: Jump to external code for __errno_location
-    RF: Jump to external code for __errno_location
-  Occurrences: 2
-
-LibraryCallAdded
-  After events:
-    CF: safe_create_leading_directories_const at object-file.c:415:15
-    CT: Jump to external code for __errno_location
-    RF: Jump to external code for __errno_location
-  Occurrences: 5
-
-LibraryCallRemoved
-  Before events:
-    CF: _ at gettext.h:48:9
-    CT: Jump to external code for gettext
-    RF: Jump to external code for gettext
-  Occurrences: 111
 
 LibraryCallRemoved
   Before events:
@@ -702,7 +667,7 @@ LibraryCallRemoved
     CF: copy_templates_1 at init-db.c:44:15
     CT: Jump to external code for readdir64
     RF: Jump to external code for readdir64
-  Occurrences: 138
+  Occurrences: 57
 
 LibraryCallRemoved
   Before events:
@@ -783,13 +748,6 @@ LibraryCallRemoved
 
 LibraryCallRemoved
   Before events:
-    CF: git_parse_signed at config.c:1168:3
-    CT: Jump to external code for __errno_location
-    RF: Jump to external code for __errno_location
-  Occurrences: 68
-
-LibraryCallRemoved
-  Before events:
     CF: git_parse_signed at config.c:1170:7
     CT: Jump to external code for __errno_location
     RF: Jump to external code for __errno_location
@@ -801,13 +759,6 @@ LibraryCallRemoved
     CT: Jump to external code for printf
     RF: Jump to external code for printf
   Occurrences: 6
-
-LibraryCallRemoved
-  Before events:
-    CF: hasheq_algop at hash.h:238:10
-    CT: Jump to external code for memcmp
-    RF: Jump to external code for memcmp
-  Occurrences: 7
 
 LibraryCallRemoved
   Before events:
@@ -881,13 +832,6 @@ LibraryCallRemoved
 
 LibraryCallRemoved
   Before events:
-    CF: pool_entry_cmp at hashmap.c:327:32
-    CT: Jump to external code for memcmp
-    RF: Jump to external code for memcmp
-  Occurrences: 54
-
-LibraryCallRemoved
-  Before events:
     CF: prepare_packed_git_one at packfile.c:896:21
     CT: Jump to external code for memset
     RF: Jump to external code for memset
@@ -895,17 +839,10 @@ LibraryCallRemoved
 
 LibraryCallRemoved
   Before events:
-    CF: raceproof_create_file at files-backend.c:953:15
-    CT: Jump to external code for __errno_location
-    RF: Jump to external code for __errno_location
-  Occurrences: 5
-
-LibraryCallRemoved
-  Before events:
     CF: raceproof_create_file at files-backend.c:988:2
     CT: Jump to external code for __errno_location
     RF: Jump to external code for __errno_location
-  Occurrences: 3
+  Occurrences: 6
 
 LibraryCallRemoved
   Before events:
@@ -941,13 +878,6 @@ LibraryCallRemoved
     CT: Jump to external code for memset
     RF: Jump to external code for memset
   Occurrences: 26
-
-LibraryCallRemoved
-  Before events:
-    CF: safe_create_leading_directories_const at object-file.c:415:15
-    CT: Jump to external code for __errno_location
-    RF: Jump to external code for __errno_location
-  Occurrences: 5
 
 LibraryCallRemoved
   Before events:
@@ -1059,14 +989,14 @@ ProgramCallRemoved
     CF: copy_templates_1 at init-db.c:48:3
     CT: strbuf_setlen at strbuf.h:161:0
     RF: strbuf_setlen at strbuf.h:169:1
-  Occurrences: 120
+  Occurrences: 38
 
 ProgramCallRemoved
   Before events:
     CF: copy_templates_1 at init-db.c:49:3
     CT: strbuf_setlen at strbuf.h:161:0
     RF: strbuf_setlen at strbuf.h:169:1
-  Occurrences: 120
+  Occurrences: 38
 
 ProgramCallRemoved
   Before events:
@@ -1147,22 +1077,17 @@ ProgramCallRemoved
 
 Uncategorised
   After events:
-    CF: _ at gettext.h:48:9
-  Occurrences: 111
-
-Uncategorised
-  After events:
     CF: copy_templates_1 at init-db.c:48:3
     CT: strbuf_setlen at strbuf.h:161:0
     RF: strbuf_setlen at strbuf.h:169:1
-  Occurrences: 120
+  Occurrences: 38
 
 Uncategorised
   After events:
     CF: copy_templates_1 at init-db.c:49:3
     CT: strbuf_setlen at strbuf.h:161:0
     RF: strbuf_setlen at strbuf.h:169:1
-  Occurrences: 120
+  Occurrences: 38
 
 Uncategorised
   After events:
@@ -1231,27 +1156,7 @@ Uncategorised
 Uncategorised
   After events:
     CF: copy_templates_1 at init-db.c:71:4
-  Occurrences: 12
-
-Uncategorised
-  After events:
-    CF: raceproof_create_file at files-backend.c:953:15
-  Occurrences: 3
-
-Uncategorised
-  After events:
-    CT: Jump to external code for __errno_location
-  Occurrences: 3
-
-Uncategorised
-  After events:
-    CT: Jump to external code for bcmp
-  Occurrences: 61
-
-Uncategorised
-  After events:
-    CT: Jump to external code for dcgettext
-  Occurrences: 111
+  Occurrences: 7
 
 Uncategorised
   After events:
@@ -1270,18 +1175,8 @@ Uncategorised
 
 Uncategorised
   After events:
-    RF: Jump to external code for __errno_location
-  Occurrences: 3
-
-Uncategorised
-  After events:
-    RF: Jump to external code for bcmp
-  Occurrences: 61
-
-Uncategorised
-  After events:
-    RF: Jump to external code for dcgettext
-  Occurrences: 111
+    CT: safe_create_dir at path.c:920:0
+  Occurrences: 15
 
 Uncategorised
   After events:
@@ -1297,6 +1192,11 @@ Uncategorised
   After events:
     RF: git_config_set_multivar_in_file_gently at config.c:3447:1
   Occurrences: 24
+
+Uncategorised
+  After events:
+    RF: safe_create_dir at path.c:929:1
+  Occurrences: 15
 
 Uncategorised
   After events:
@@ -1370,17 +1270,21 @@ Uncategorised
 Uncategorised
   Before events:
     CF: copy_templates_1 at init-db.c:71:4
-  Occurrences: 12
+  Occurrences: 7
 
 Uncategorised
   Before events:
-    CF: raceproof_create_file at files-backend.c:988:2
-  Occurrences: 3
+    CT: Jump to external code for gettext
+  After events:
+    CT: Jump to external code for dcgettext
+  Occurrences: 111
 
 Uncategorised
   Before events:
-    CT: Jump to external code for __errno_location
-  Occurrences: 3
+    CT: Jump to external code for memcmp
+  After events:
+    CT: Jump to external code for bcmp
+  Occurrences: 61
 
 Uncategorised
   Before events:
@@ -1394,8 +1298,22 @@ Uncategorised
 
 Uncategorised
   Before events:
-    RF: Jump to external code for __errno_location
-  Occurrences: 3
+    CT: safe_create_dir at path.c:920:0
+  Occurrences: 15
+
+Uncategorised
+  Before events:
+    RF: Jump to external code for gettext
+  After events:
+    RF: Jump to external code for dcgettext
+  Occurrences: 111
+
+Uncategorised
+  Before events:
+    RF: Jump to external code for memcmp
+  After events:
+    RF: Jump to external code for bcmp
+  Occurrences: 61
 
 Uncategorised
   Before events:
@@ -1409,30 +1327,35 @@ Uncategorised
 
 Uncategorised
   Before events:
+    RF: safe_create_dir at path.c:929:1
+  Occurrences: 15
+
+Uncategorised
+  Before events:
     RF: xopen at wrapper.c:186:4
   Occurrences: 31
 
 ## Divergences with unique coordinates by type
 
 CoordinatesRemoved
-  Unique divergence coordinates: 29
+  Unique divergence coordinates: 30
 
 CoordinatesChangedSmall
-  Unique divergence coordinates: 50
+  Unique divergence coordinates: 48
 
 LibraryCallAdded
-  Unique divergence coordinates: 9
+  Unique divergence coordinates: 6
 
 LibraryCallRemoved
-  Unique divergence coordinates: 54
+  Unique divergence coordinates: 48
 
 ProgramCallRemoved
   Unique divergence coordinates: 21
 
 Uncategorised
-  Unique divergence coordinates: 35
+  Unique divergence coordinates: 32
 
 ## Summary
 
-198 unique divergence coordinates
-33572 divergence occurrences
+185 unique divergence coordinates
+32648 divergence occurrences

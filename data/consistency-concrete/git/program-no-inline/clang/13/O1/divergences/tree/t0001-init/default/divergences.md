@@ -391,6 +391,13 @@ CoordinatesRemoved
 
 CoordinatesRemoved
   Before events:
+    CF: hasheq_algop at hash.h:238:10
+  After events:
+    CF: hasheq_algop at hash.h:0:0
+  Occurrences: 290
+
+CoordinatesRemoved
+  Before events:
     CF: init_db at init-db.c:447:4
   After events:
     CF: init_db at init-db.c:0:0
@@ -776,10 +783,17 @@ CoordinatesRemoved
 
 CoordinatesChangedSmall
   Before events:
-    CF: git_parse_signed at config.c:1170:7
+    CF: copy_templates_1 at init-db.c:48:3
   After events:
-    CF: git_parse_signed at config.c:1168:3
-  Occurrences: 247
+    CF: copy_templates_1 at init-db.c:49:3
+  Occurrences: 3
+
+CoordinatesChangedSmall
+  Before events:
+    CF: copy_templates_1 at init-db.c:49:3
+  After events:
+    CF: copy_templates_1 at init-db.c:48:3
+  Occurrences: 3
 
 CoordinatesChangedSmall
   Before events:
@@ -794,13 +808,6 @@ CoordinatesChangedSmall
   After events:
     CF: repo_init_revisions at revision.c:1902:2
   Occurrences: 8
-
-CoordinatesChangedSmall
-  Before events:
-    CF: safe_create_leading_directories_const at object-file.c:417:2
-  After events:
-    CF: safe_create_leading_directories_const at object-file.c:415:15
-  Occurrences: 24
 
 CoordinatesChangedSmall
   Before events:
@@ -1742,38 +1749,31 @@ CoordinatesChangedSmall
 
 LibraryCallAdded
   After events:
-    CF: cmd_add at add.c:497:20
-    CT: Jump to external code for memset
-    RF: Jump to external code for memset
-  Occurrences: 1
-
-LibraryCallAdded
-  After events:
     CF: copy_templates_1 at init-db.c:44:15
     CT: Jump to external code for readdir64
     RF: Jump to external code for readdir64
-  Occurrences: 1196
+  Occurrences: 391
 
 LibraryCallAdded
   After events:
     CF: copy_templates_1 at init-db.c:55:7
     CT: Jump to external code for lstat64
     RF: Jump to external code for lstat64
-  Occurrences: 104
+  Occurrences: 67
 
 LibraryCallAdded
   After events:
     CF: copy_templates_1 at init-db.c:56:8
     CT: Jump to external code for __errno_location
     RF: Jump to external code for __errno_location
-  Occurrences: 91
+  Occurrences: 60
 
 LibraryCallAdded
   After events:
     CF: copy_templates_1 at init-db.c:62:7
     CT: Jump to external code for lstat64
     RF: Jump to external code for lstat64
-  Occurrences: 104
+  Occurrences: 67
 
 LibraryCallAdded
   After events:
@@ -1791,10 +1791,10 @@ LibraryCallAdded
 
 LibraryCallAdded
   After events:
-    CF: git_parse_signed at config.c:1168:3
-    CT: Jump to external code for __errno_location
-    RF: Jump to external code for __errno_location
-  Occurrences: 475
+    CF: fspathcmp at dir.c:78:42
+    CT: Jump to external code for strcmp
+    RF: Jump to external code for strcmp
+  Occurrences: 4
 
 LibraryCallAdded
   After events:
@@ -1805,45 +1805,10 @@ LibraryCallAdded
 
 LibraryCallAdded
   After events:
-    CF: handle_alias at git.c:339:45
-    CT: Jump to external code for __errno_location
-    RF: Jump to external code for __errno_location
-  Occurrences: 1
-
-LibraryCallAdded
-  After events:
-    CF: raceproof_create_file at files-backend.c:953:15
-    CT: Jump to external code for __errno_location
-    RF: Jump to external code for __errno_location
-  Occurrences: 29
-
-LibraryCallAdded
-  After events:
-    CF: repo_init_revisions at revision.c:1902:2
-    CT: Jump to external code for memset
-    RF: Jump to external code for memset
-  Occurrences: 6
-
-LibraryCallAdded
-  After events:
-    CF: safe_create_leading_directories_const at object-file.c:415:15
-    CT: Jump to external code for __errno_location
-    RF: Jump to external code for __errno_location
-  Occurrences: 46
-
-LibraryCallRemoved
-  Before events:
-    CF: Q_ at gettext.h:54:9
-    CT: Jump to external code for ngettext
-    RF: Jump to external code for ngettext
-  Occurrences: 1
-
-LibraryCallRemoved
-  Before events:
-    CF: _ at gettext.h:48:9
-    CT: Jump to external code for gettext
-    RF: Jump to external code for gettext
-  Occurrences: 147
+    CF: is_dup_ref at ref-cache.c:209:6
+    CT: Jump to external code for strcmp
+    RF: Jump to external code for strcmp
+  Occurrences: 5
 
 LibraryCallRemoved
   Before events:
@@ -2001,24 +1966,17 @@ LibraryCallRemoved
 
 LibraryCallRemoved
   Before events:
-    CF: cmd_add at add.c:497:20
-    CT: Jump to external code for memset
-    RF: Jump to external code for memset
-  Occurrences: 3
-
-LibraryCallRemoved
-  Before events:
     CF: cmd_add at add.c:502:19
     CT: Jump to external code for memset
     RF: Jump to external code for memset
-  Occurrences: 3
+  Occurrences: 4
 
 LibraryCallRemoved
   Before events:
     CF: cmd_add at add.c:619:22
     CT: Jump to external code for memset
     RF: Jump to external code for memset
-  Occurrences: 3
+  Occurrences: 4
 
 LibraryCallRemoved
   Before events:
@@ -2165,28 +2123,28 @@ LibraryCallRemoved
     CF: copy_templates_1 at init-db.c:44:15
     CT: Jump to external code for readdir64
     RF: Jump to external code for readdir64
-  Occurrences: 1196
+  Occurrences: 391
 
 LibraryCallRemoved
   Before events:
     CF: copy_templates_1 at init-db.c:55:7
     CT: Jump to external code for lstat64
     RF: Jump to external code for lstat64
-  Occurrences: 104
+  Occurrences: 67
 
 LibraryCallRemoved
   Before events:
     CF: copy_templates_1 at init-db.c:56:8
     CT: Jump to external code for __errno_location
     RF: Jump to external code for __errno_location
-  Occurrences: 91
+  Occurrences: 60
 
 LibraryCallRemoved
   Before events:
     CF: copy_templates_1 at init-db.c:62:7
     CT: Jump to external code for lstat64
     RF: Jump to external code for lstat64
-  Occurrences: 104
+  Occurrences: 67
 
 LibraryCallRemoved
   Before events:
@@ -2211,10 +2169,17 @@ LibraryCallRemoved
 
 LibraryCallRemoved
   Before events:
+    CF: dir_clear at dir.c:3398:20
+    CT: Jump to external code for memset
+    RF: Jump to external code for memset
+  Occurrences: 3
+
+LibraryCallRemoved
+  Before events:
     CF: dir_clear at dir.c:3426:2
     CT: Jump to external code for memcpy
     RF: Jump to external code for memcpy
-  Occurrences: 5
+  Occurrences: 2
 
 LibraryCallRemoved
   Before events:
@@ -2250,6 +2215,13 @@ LibraryCallRemoved
     CT: Jump to external code for memset
     RF: Jump to external code for memset
   Occurrences: 11
+
+LibraryCallRemoved
+  Before events:
+    CF: fspathcmp at dir.c:78:42
+    CT: Jump to external code for strcmp
+    RF: Jump to external code for strcmp
+  Occurrences: 4
 
 LibraryCallRemoved
   Before events:
@@ -2323,13 +2295,6 @@ LibraryCallRemoved
 
 LibraryCallRemoved
   Before events:
-    CF: git_parse_signed at config.c:1168:3
-    CT: Jump to external code for __errno_location
-    RF: Jump to external code for __errno_location
-  Occurrences: 475
-
-LibraryCallRemoved
-  Before events:
     CF: git_parse_signed at config.c:1170:7
     CT: Jump to external code for __errno_location
     RF: Jump to external code for __errno_location
@@ -2354,7 +2319,7 @@ LibraryCallRemoved
     CF: handle_alias at git.c:339:45
     CT: Jump to external code for __errno_location
     RF: Jump to external code for __errno_location
-  Occurrences: 3
+  Occurrences: 2
 
 LibraryCallRemoved
   Before events:
@@ -2369,13 +2334,6 @@ LibraryCallRemoved
     CT: Jump to external code for __errno_location
     RF: Jump to external code for __errno_location
   Occurrences: 1
-
-LibraryCallRemoved
-  Before events:
-    CF: hasheq_algop at hash.h:238:10
-    CT: Jump to external code for memcmp
-    RF: Jump to external code for memcmp
-  Occurrences: 290
 
 LibraryCallRemoved
   Before events:
@@ -2452,7 +2410,21 @@ LibraryCallRemoved
     CF: is_dir_file at path.c:82:12
     CT: Jump to external code for strlen
     RF: Jump to external code for strlen
-  Occurrences: 669
+  Occurrences: 663
+
+LibraryCallRemoved
+  Before events:
+    CF: is_dir_file at path.c:87:10
+    CT: Jump to external code for strcmp
+    RF: Jump to external code for strcmp
+  Occurrences: 6
+
+LibraryCallRemoved
+  Before events:
+    CF: is_dup_ref at ref-cache.c:209:6
+    CT: Jump to external code for strcmp
+    RF: Jump to external code for strcmp
+  Occurrences: 5
 
 LibraryCallRemoved
   Before events:
@@ -2610,13 +2582,6 @@ LibraryCallRemoved
 
 LibraryCallRemoved
   Before events:
-    CF: parse_ref_filter_atom at ref-filter.c:702:27
-    CT: Jump to external code for memcmp
-    RF: Jump to external code for memcmp
-  Occurrences: 4
-
-LibraryCallRemoved
-  Before events:
     CF: parse_ref_filter_atom at ref-filter.c:738:2
     CT: Jump to external code for memset
     RF: Jump to external code for memset
@@ -2628,13 +2593,6 @@ LibraryCallRemoved
     CT: Jump to external code for memset
     RF: Jump to external code for memset
   Occurrences: 153
-
-LibraryCallRemoved
-  Before events:
-    CF: pool_entry_cmp at hashmap.c:327:32
-    CT: Jump to external code for memcmp
-    RF: Jump to external code for memcmp
-  Occurrences: 255
 
 LibraryCallRemoved
   Before events:
@@ -2680,31 +2638,24 @@ LibraryCallRemoved
 
 LibraryCallRemoved
   Before events:
-    CF: raceproof_create_file at files-backend.c:953:15
-    CT: Jump to external code for __errno_location
-    RF: Jump to external code for __errno_location
-  Occurrences: 64
-
-LibraryCallRemoved
-  Before events:
     CF: raceproof_create_file at files-backend.c:957:6
     CT: Jump to external code for __errno_location
     RF: Jump to external code for __errno_location
-  Occurrences: 5
+  Occurrences: 9
 
 LibraryCallRemoved
   Before events:
     CF: raceproof_create_file at files-backend.c:967:13
     CT: Jump to external code for __errno_location
     RF: Jump to external code for __errno_location
-  Occurrences: 6
+  Occurrences: 9
 
 LibraryCallRemoved
   Before events:
     CF: raceproof_create_file at files-backend.c:988:2
     CT: Jump to external code for __errno_location
     RF: Jump to external code for __errno_location
-  Occurrences: 35
+  Occurrences: 63
 
 LibraryCallRemoved
   Before events:
@@ -2726,13 +2677,6 @@ LibraryCallRemoved
     CT: Jump to external code for memset
     RF: Jump to external code for memset
   Occurrences: 24
-
-LibraryCallRemoved
-  Before events:
-    CF: read_object_with_reference at object-file.c:1777:7
-    CT: Jump to external code for memcmp
-    RF: Jump to external code for memcmp
-  Occurrences: 1
 
 LibraryCallRemoved
   Before events:
@@ -2775,20 +2719,6 @@ LibraryCallRemoved
     CT: Jump to external code for memset
     RF: Jump to external code for memset
   Occurrences: 12
-
-LibraryCallRemoved
-  Before events:
-    CF: repo_init_revisions at revision.c:1901:18
-    CT: Jump to external code for memset
-    RF: Jump to external code for memset
-  Occurrences: 6
-
-LibraryCallRemoved
-  Before events:
-    CF: repo_init_revisions at revision.c:1902:2
-    CT: Jump to external code for memcpy
-    RF: Jump to external code for memcpy
-  Occurrences: 8
 
 LibraryCallRemoved
   Before events:
@@ -2859,13 +2789,6 @@ LibraryCallRemoved
     CT: Jump to external code for __errno_location
     RF: Jump to external code for __errno_location
   Occurrences: 1
-
-LibraryCallRemoved
-  Before events:
-    CF: safe_create_leading_directories_const at object-file.c:415:15
-    CT: Jump to external code for __errno_location
-    RF: Jump to external code for __errno_location
-  Occurrences: 46
 
 LibraryCallRemoved
   Before events:
@@ -3044,20 +2967,6 @@ LibraryCallRemoved
 
 LibraryCallRemoved
   Before events:
-    CF: update_one at cache-tree.c:306:29
-    CT: Jump to external code for memcmp
-    RF: Jump to external code for memcmp
-  Occurrences: 4
-
-LibraryCallRemoved
-  Before events:
-    CF: update_one at cache-tree.c:360:29
-    CT: Jump to external code for memcmp
-    RF: Jump to external code for memcmp
-  Occurrences: 4
-
-LibraryCallRemoved
-  Before events:
     CF: xdi_diff_outf at xdiff-interface.c:139:2
     CT: Jump to external code for memset
     RF: Jump to external code for memset
@@ -3145,14 +3054,14 @@ ProgramCallRemoved
     CF: copy_templates_1 at init-db.c:48:3
     CT: strbuf_setlen at strbuf.h:161:0
     RF: strbuf_setlen at strbuf.h:169:1
-  Occurrences: 1040
+  Occurrences: 277
 
 ProgramCallRemoved
   Before events:
     CF: copy_templates_1 at init-db.c:49:3
     CT: strbuf_setlen at strbuf.h:161:0
     RF: strbuf_setlen at strbuf.h:169:1
-  Occurrences: 1040
+  Occurrences: 277
 
 ProgramCallRemoved
   Before events:
@@ -3164,13 +3073,6 @@ ProgramCallRemoved
 ProgramCallRemoved
   Before events:
     CF: do_write_index at read-cache.c:2981:11
-    CT: hashfile_total at csum-file.h:56:0
-    RF: hashfile_total at csum-file.h:57:2
-  Occurrences: 4
-
-ProgramCallRemoved
-  Before events:
-    CF: do_write_index at read-cache.c:3039:11
     CT: hashfile_total at csum-file.h:56:0
     RF: hashfile_total at csum-file.h:57:2
   Occurrences: 9
@@ -3348,14 +3250,14 @@ ProgramCallRemoved
     CF: treat_path at dir.c:2288:6
     CT: is_dot_or_dotdot at dir.h:456:0
     RF: is_dot_or_dotdot at dir.h:457:2
-  Occurrences: 2
+  Occurrences: 3
 
 ProgramCallRemoved
   Before events:
     CF: treat_path at dir.c:2290:2
     CT: strbuf_setlen at strbuf.h:161:0
     RF: strbuf_setlen at strbuf.h:169:1
-  Occurrences: 4
+  Occurrences: 1
 
 ProgramCallRemoved
   Before events:
@@ -3408,16 +3310,6 @@ ProgramCallRemoved
 
 Uncategorised
   After events:
-    CF: Q_ at gettext.h:54:9
-  Occurrences: 1
-
-Uncategorised
-  After events:
-    CF: _ at gettext.h:48:9
-  Occurrences: 147
-
-Uncategorised
-  After events:
     CF: add_path_to_appropriate_result_list at dir.c:2520:4
     CT: add_untracked at dir.c:2365:7
     RF: add_untracked at dir.c:2370:1
@@ -3427,11 +3319,6 @@ Uncategorised
   After events:
     CF: add_patterns_from_buffer at dir.c:1136:6
   Occurrences: 5
-
-Uncategorised
-  After events:
-    CF: cmd_add at add.c:497:20
-  Occurrences: 2
 
 Uncategorised
   After events:
@@ -3456,14 +3343,14 @@ Uncategorised
     CF: copy_templates_1 at init-db.c:48:3
     CT: strbuf_setlen at strbuf.h:161:0
     RF: strbuf_setlen at strbuf.h:169:1
-  Occurrences: 1040
+  Occurrences: 277
 
 Uncategorised
   After events:
     CF: copy_templates_1 at init-db.c:49:3
     CT: strbuf_setlen at strbuf.h:161:0
     RF: strbuf_setlen at strbuf.h:169:1
-  Occurrences: 1040
+  Occurrences: 277
 
 Uncategorised
   After events:
@@ -3485,7 +3372,7 @@ Uncategorised
     RF: strbuf_setlen at strbuf.h:169:1
     RF: strbuf_add at strbuf.c:301:1
     RF: strbuf_addstr at strbuf.h:306:1
-  Occurrences: 104
+  Occurrences: 536
 
 Uncategorised
   After events:
@@ -3507,7 +3394,7 @@ Uncategorised
     RF: strbuf_setlen at strbuf.h:169:1
     RF: strbuf_add at strbuf.c:301:1
     RF: strbuf_addstr at strbuf.h:306:1
-  Occurrences: 104
+  Occurrences: 536
 
 Uncategorised
   After events:
@@ -3532,7 +3419,7 @@ Uncategorised
 Uncategorised
   After events:
     CF: copy_templates_1 at init-db.c:71:4
-  Occurrences: 104
+  Occurrences: 89
 
 Uncategorised
   After events:
@@ -3572,12 +3459,7 @@ Uncategorised
 Uncategorised
   After events:
     CF: dir_clear at dir.c:3426:2
-  Occurrences: 5
-
-Uncategorised
-  After events:
-    CF: do_write_index at read-cache.c:3039:11
-  Occurrences: 5
+  Occurrences: 2
 
 Uncategorised
   After events:
@@ -3586,13 +3468,13 @@ Uncategorised
 
 Uncategorised
   After events:
-    CF: is_dup_ref at ref-cache.c:209:6
-  Occurrences: 5
+    CF: is_dir_file at path.c:87:10
+  Occurrences: 6
 
 Uncategorised
   After events:
-    CF: parse_ref_filter_atom at ref-filter.c:702:27
-  Occurrences: 4
+    CF: is_dup_ref at ref-cache.c:209:6
+  Occurrences: 5
 
 Uncategorised
   After events:
@@ -3603,18 +3485,43 @@ Uncategorised
 
 Uncategorised
   After events:
-    CF: raceproof_create_file at files-backend.c:953:15
-  Occurrences: 35
+    CF: read_directory_recursive at dir.c:2572:11
+  Occurrences: 2
 
 Uncategorised
   After events:
     CF: read_directory_recursive at dir.c:2572:11
-  Occurrences: 1
-
-Uncategorised
-  After events:
-    CF: read_object_with_reference at object-file.c:1777:7
-  Occurrences: 1
+    CT: treat_path at dir.c:2282:0
+    CF: treat_path at dir.c:2288:6
+    CT: is_dot_or_dotdot at dir.h:456:0
+    RF: is_dot_or_dotdot at dir.h:457:2
+    CF: treat_path at dir.c:2288:41
+    CT: fspathcmp at dir.c:77:0
+    CF: fspathcmp at dir.c:78:42
+    CT: Jump to external code for strcmp
+    RF: Jump to external code for strcmp
+    RF: fspathcmp at dir.c:78:2
+    CF: treat_path at dir.c:2290:2
+    CT: strbuf_setlen at strbuf.h:161:0
+    RF: strbuf_setlen at strbuf.h:169:1
+    CF: treat_path at dir.c:2291:2
+    CT: strbuf_addstr at strbuf.h:304:0
+    CF: strbuf_addstr at strbuf.h:305:20
+    CT: Jump to external code for strlen
+    RF: Jump to external code for strlen
+    CF: strbuf_addstr at strbuf.h:305:2
+    CT: strbuf_add at strbuf.c:297:0
+    CF: strbuf_add at strbuf.c:298:2
+    CT: strbuf_grow at strbuf.c:92:0
+    RF: strbuf_grow at strbuf.c:102:1
+    CF: strbuf_add at strbuf.c:299:2
+    CT: Jump to external code for memcpy
+    RF: Jump to external code for memcpy
+    CF: strbuf_add at strbuf.c:300:2
+    CT: strbuf_setlen at strbuf.h:161:0
+    RF: strbuf_setlen at strbuf.h:169:1
+    [...12 more events...]
+  Occurrences: 3
 
 Uncategorised
   After events:
@@ -3629,7 +3536,7 @@ Uncategorised
 Uncategorised
   After events:
     CF: repo_init_revisions at revision.c:1902:2
-  Occurrences: 24
+  Occurrences: 16
 
 Uncategorised
   After events:
@@ -3681,21 +3588,21 @@ Uncategorised
     CT: Jump to external code for strcmp
     RF: Jump to external code for strcmp
     RF: fspathcmp at dir.c:78:2
-  Occurrences: 2
+  Occurrences: 3
 
 Uncategorised
   After events:
     CF: treat_path at dir.c:2288:6
     CT: is_dot_or_dotdot at dir.h:456:0
     RF: is_dot_or_dotdot at dir.h:457:2
-  Occurrences: 2
+  Occurrences: 3
 
 Uncategorised
   After events:
     CF: treat_path at dir.c:2290:2
     CT: strbuf_setlen at strbuf.h:161:0
     RF: strbuf_setlen at strbuf.h:169:1
-  Occurrences: 4
+  Occurrences: 1
 
 Uncategorised
   After events:
@@ -3717,7 +3624,7 @@ Uncategorised
     RF: strbuf_setlen at strbuf.h:169:1
     RF: strbuf_add at strbuf.c:301:1
     RF: strbuf_addstr at strbuf.h:306:1
-  Occurrences: 4
+  Occurrences: 1
 
 Uncategorised
   After events:
@@ -3730,7 +3637,7 @@ Uncategorised
     RF: Jump to external code for strncmp
     RF: ps_strncmp at pathspec.h:140:1
     RF: simplify_away at dir.c:2134:1
-  Occurrences: 4
+  Occurrences: 1
 
 Uncategorised
   After events:
@@ -3763,38 +3670,13 @@ Uncategorised
 
 Uncategorised
   After events:
-    CF: update_one at cache-tree.c:306:29
-  Occurrences: 4
-
-Uncategorised
-  After events:
-    CF: update_one at cache-tree.c:360:29
-  Occurrences: 4
-
-Uncategorised
-  After events:
     CT: Jump to external code for __errno_location
-  Occurrences: 37
-
-Uncategorised
-  After events:
-    CT: Jump to external code for bcmp
-  Occurrences: 558
-
-Uncategorised
-  After events:
-    CT: Jump to external code for dcgettext
-  Occurrences: 147
-
-Uncategorised
-  After events:
-    CT: Jump to external code for dcngettext
-  Occurrences: 1
+  Occurrences: 2
 
 Uncategorised
   After events:
     CT: Jump to external code for memset
-  Occurrences: 31
+  Occurrences: 18
 
 Uncategorised
   After events:
@@ -3804,7 +3686,7 @@ Uncategorised
 Uncategorised
   After events:
     CT: Jump to external code for strcmp
-  Occurrences: 5
+  Occurrences: 11
 
 Uncategorised
   After events:
@@ -3818,8 +3700,13 @@ Uncategorised
 
 Uncategorised
   After events:
+    CT: copy_file at copy.c:32:0
+  Occurrences: 422
+
+Uncategorised
+  After events:
     CT: copy_templates_1 at init-db.c:31:0
-  Occurrences: 156
+  Occurrences: 155
 
 Uncategorised
   After events:
@@ -3868,6 +3755,11 @@ Uncategorised
 
 Uncategorised
   After events:
+    CT: safe_create_dir at path.c:920:0
+  Occurrences: 150
+
+Uncategorised
+  After events:
     CT: sane_qsort at git-compat-util.h:1308:12
   Occurrences: 5
 
@@ -3878,33 +3770,23 @@ Uncategorised
 
 Uncategorised
   After events:
+    CT: strbuf_addstr at strbuf.h:304:0
+  Occurrences: 1010
+
+Uncategorised
+  After events:
     CT: treat_path at dir.c:2282:0
-  Occurrences: 2
+  Occurrences: 6
 
 Uncategorised
   After events:
     RF: Jump to external code for __errno_location
-  Occurrences: 37
-
-Uncategorised
-  After events:
-    RF: Jump to external code for bcmp
-  Occurrences: 558
-
-Uncategorised
-  After events:
-    RF: Jump to external code for dcgettext
-  Occurrences: 147
-
-Uncategorised
-  After events:
-    RF: Jump to external code for dcngettext
-  Occurrences: 1
+  Occurrences: 2
 
 Uncategorised
   After events:
     RF: Jump to external code for memset
-  Occurrences: 31
+  Occurrences: 18
 
 Uncategorised
   After events:
@@ -3914,7 +3796,7 @@ Uncategorised
 Uncategorised
   After events:
     RF: Jump to external code for strcmp
-  Occurrences: 5
+  Occurrences: 11
 
 Uncategorised
   After events:
@@ -3923,8 +3805,13 @@ Uncategorised
 
 Uncategorised
   After events:
+    RF: copy_file at copy.c:59:1
+  Occurrences: 422
+
+Uncategorised
+  After events:
     RF: copy_templates_1 at init-db.c:94:1
-  Occurrences: 156
+  Occurrences: 155
 
 Uncategorised
   After events:
@@ -3953,6 +3840,11 @@ Uncategorised
 
 Uncategorised
   After events:
+    RF: safe_create_dir at path.c:929:1
+  Occurrences: 150
+
+Uncategorised
+  After events:
     RF: sane_qsort at git-compat-util.h:1310:1
   Occurrences: 5
 
@@ -3963,8 +3855,13 @@ Uncategorised
 
 Uncategorised
   After events:
+    RF: strbuf_addstr at strbuf.h:306:1
+  Occurrences: 1010
+
+Uncategorised
+  After events:
     RF: treat_path at dir.c:2361:1
-  Occurrences: 2
+  Occurrences: 6
 
 Uncategorised
   After events:
@@ -3994,16 +3891,6 @@ Uncategorised
     CF: skip_utf8_bom at utf8.c:790:6
     CT: Jump to external code for memcmp
   Occurrences: 5
-
-Uncategorised
-  Before events:
-    CF: cmd_add at add.c:502:19
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: cmd_add at add.c:619:22
-  Occurrences: 1
 
 Uncategorised
   Before events:
@@ -4038,7 +3925,7 @@ Uncategorised
     RF: strbuf_setlen at strbuf.h:169:1
     RF: strbuf_add at strbuf.c:301:1
     RF: strbuf_addstr at strbuf.h:306:1
-  Occurrences: 104
+  Occurrences: 536
 
 Uncategorised
   Before events:
@@ -4060,7 +3947,7 @@ Uncategorised
     RF: strbuf_setlen at strbuf.h:169:1
     RF: strbuf_add at strbuf.c:301:1
     RF: strbuf_addstr at strbuf.h:306:1
-  Occurrences: 104
+  Occurrences: 536
 
 Uncategorised
   Before events:
@@ -4085,7 +3972,7 @@ Uncategorised
 Uncategorised
   Before events:
     CF: copy_templates_1 at init-db.c:71:4
-  Occurrences: 104
+  Occurrences: 89
 
 Uncategorised
   Before events:
@@ -4124,13 +4011,43 @@ Uncategorised
 
 Uncategorised
   Before events:
-    CF: dir_clear at dir.c:3398:20
-  Occurrences: 5
+    CF: copy_templates_1 at init-db.c:71:4
+    CT: copy_templates_1 at init-db.c:31:0
+    CF: copy_templates_1 at init-db.c:43:2
+    CT: safe_create_dir at path.c:920:0
+    CF: safe_create_dir at path.c:921:6
+    CT: Jump to external code for mkdir
+    RF: Jump to external code for mkdir
+    CF: safe_create_dir at path.c:922:7
+    CT: Jump to external code for __errno_location
+    RF: Jump to external code for __errno_location
+    RF: safe_create_dir at path.c:929:1
+    CF: copy_templates_1 at init-db.c:44:15
+    CT: Jump to external code for readdir64
+    RF: Jump to external code for readdir64
+    CF: copy_templates_1 at init-db.c:48:3
+    CT: strbuf_setlen at strbuf.h:161:0
+    RF: strbuf_setlen at strbuf.h:169:1
+    CF: copy_templates_1 at init-db.c:49:3
+    CT: strbuf_setlen at strbuf.h:161:0
+    RF: strbuf_setlen at strbuf.h:169:1
+    CF: copy_templates_1 at init-db.c:44:15
+    CT: Jump to external code for readdir64
+    RF: Jump to external code for readdir64
+    CF: copy_templates_1 at init-db.c:48:3
+    CT: strbuf_setlen at strbuf.h:161:0
+    RF: strbuf_setlen at strbuf.h:169:1
+    CF: copy_templates_1 at init-db.c:49:3
+    CT: strbuf_setlen at strbuf.h:161:0
+    RF: strbuf_setlen at strbuf.h:169:1
+    CF: copy_templates_1 at init-db.c:44:15
+    [...6 more events...]
+  Occurrences: 1
 
 Uncategorised
   Before events:
-    CF: do_write_index at read-cache.c:2981:11
-  Occurrences: 5
+    CF: dir_clear at dir.c:3398:20
+  Occurrences: 2
 
 Uncategorised
   Before events:
@@ -4139,23 +4056,48 @@ Uncategorised
 
 Uncategorised
   Before events:
-    CF: raceproof_create_file at files-backend.c:957:6
-  Occurrences: 4
-
-Uncategorised
-  Before events:
-    CF: raceproof_create_file at files-backend.c:967:13
-  Occurrences: 3
-
-Uncategorised
-  Before events:
-    CF: raceproof_create_file at files-backend.c:988:2
-  Occurrences: 28
+    CF: is_dir_file at path.c:82:12
+  Occurrences: 6
 
 Uncategorised
   Before events:
     CF: read_directory_recursive at dir.c:2572:11
-  Occurrences: 1
+  Occurrences: 2
+
+Uncategorised
+  Before events:
+    CF: read_directory_recursive at dir.c:2572:11
+    CT: treat_path at dir.c:2282:0
+    CF: treat_path at dir.c:2288:6
+    CT: is_dot_or_dotdot at dir.h:456:0
+    RF: is_dot_or_dotdot at dir.h:457:2
+    CF: treat_path at dir.c:2288:41
+    CT: fspathcmp at dir.c:77:0
+    CF: fspathcmp at dir.c:78:42
+    CT: Jump to external code for strcmp
+    RF: Jump to external code for strcmp
+    RF: fspathcmp at dir.c:78:2
+    CF: treat_path at dir.c:2290:2
+    CT: strbuf_setlen at strbuf.h:161:0
+    RF: strbuf_setlen at strbuf.h:169:1
+    CF: treat_path at dir.c:2291:2
+    CT: strbuf_addstr at strbuf.h:304:0
+    CF: strbuf_addstr at strbuf.h:305:20
+    CT: Jump to external code for strlen
+    RF: Jump to external code for strlen
+    CF: strbuf_addstr at strbuf.h:305:2
+    CT: strbuf_add at strbuf.c:297:0
+    CF: strbuf_add at strbuf.c:298:2
+    CT: strbuf_grow at strbuf.c:92:0
+    RF: strbuf_grow at strbuf.c:102:1
+    CF: strbuf_add at strbuf.c:299:2
+    CT: Jump to external code for memcpy
+    RF: Jump to external code for memcpy
+    CF: strbuf_add at strbuf.c:300:2
+    CT: strbuf_setlen at strbuf.h:161:0
+    RF: strbuf_setlen at strbuf.h:169:1
+    [...12 more events...]
+  Occurrences: 3
 
 Uncategorised
   Before events:
@@ -4208,7 +4150,7 @@ Uncategorised
     CT: Jump to external code for strcmp
     RF: Jump to external code for strcmp
     RF: fspathcmp at dir.c:78:2
-  Occurrences: 2
+  Occurrences: 3
 
 Uncategorised
   Before events:
@@ -4230,7 +4172,7 @@ Uncategorised
     RF: strbuf_setlen at strbuf.h:169:1
     RF: strbuf_add at strbuf.c:301:1
     RF: strbuf_addstr at strbuf.h:306:1
-  Occurrences: 4
+  Occurrences: 1
 
 Uncategorised
   Before events:
@@ -4243,7 +4185,7 @@ Uncategorised
     RF: Jump to external code for strncmp
     RF: ps_strncmp at pathspec.h:140:1
     RF: simplify_away at dir.c:2134:1
-  Occurrences: 4
+  Occurrences: 1
 
 Uncategorised
   Before events:
@@ -4270,12 +4212,52 @@ Uncategorised
 Uncategorised
   Before events:
     CT: Jump to external code for __errno_location
-  Occurrences: 37
+  Occurrences: 2
+
+Uncategorised
+  Before events:
+    CT: Jump to external code for gettext
+  After events:
+    CT: Jump to external code for dcgettext
+  Occurrences: 147
+
+Uncategorised
+  Before events:
+    CT: Jump to external code for memcmp
+  After events:
+    CT: Jump to external code for bcmp
+  Occurrences: 558
+
+Uncategorised
+  Before events:
+    CT: Jump to external code for memcpy
+  After events:
+    CT: Jump to external code for memset
+  Occurrences: 11
 
 Uncategorised
   Before events:
     CT: Jump to external code for memset
-  Occurrences: 7
+  Occurrences: 2
+
+Uncategorised
+  Before events:
+    CT: Jump to external code for ngettext
+  After events:
+    CT: Jump to external code for dcngettext
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CT: Jump to external code for strlen
+  Occurrences: 6
+
+Uncategorised
+  Before events:
+    CT: Jump to external code for strlen
+  After events:
+    CT: Jump to external code for strcmp
+  Occurrences: 6
 
 Uncategorised
   Before events:
@@ -4284,8 +4266,13 @@ Uncategorised
 
 Uncategorised
   Before events:
+    CT: copy_file at copy.c:32:0
+  Occurrences: 422
+
+Uncategorised
+  Before events:
     CT: copy_templates_1 at init-db.c:31:0
-  Occurrences: 156
+  Occurrences: 155
 
 Uncategorised
   Before events:
@@ -4324,28 +4311,83 @@ Uncategorised
 
 Uncategorised
   Before events:
+    CT: safe_create_dir at path.c:920:0
+  Occurrences: 150
+
+Uncategorised
+  Before events:
     CT: skip_utf8_bom at utf8.c:788:0
   Occurrences: 5
 
 Uncategorised
   Before events:
+    CT: strbuf_addstr at strbuf.h:304:0
+  Occurrences: 1010
+
+Uncategorised
+  Before events:
     CT: treat_path at dir.c:2282:0
-  Occurrences: 2
+  Occurrences: 6
 
 Uncategorised
   Before events:
     RF: Jump to external code for __errno_location
-  Occurrences: 37
+  Occurrences: 2
+
+Uncategorised
+  Before events:
+    RF: Jump to external code for gettext
+  After events:
+    RF: Jump to external code for dcgettext
+  Occurrences: 147
+
+Uncategorised
+  Before events:
+    RF: Jump to external code for memcmp
+  After events:
+    RF: Jump to external code for bcmp
+  Occurrences: 558
+
+Uncategorised
+  Before events:
+    RF: Jump to external code for memcpy
+  After events:
+    RF: Jump to external code for memset
+  Occurrences: 11
 
 Uncategorised
   Before events:
     RF: Jump to external code for memset
-  Occurrences: 7
+  Occurrences: 2
+
+Uncategorised
+  Before events:
+    RF: Jump to external code for ngettext
+  After events:
+    RF: Jump to external code for dcngettext
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: Jump to external code for strlen
+  Occurrences: 6
+
+Uncategorised
+  Before events:
+    RF: Jump to external code for strlen
+  After events:
+    RF: Jump to external code for strcmp
+  Occurrences: 6
+
+Uncategorised
+  Before events:
+    RF: copy_file at copy.c:59:1
+  Occurrences: 422
 
 Uncategorised
   Before events:
     RF: copy_templates_1 at init-db.c:94:1
-  Occurrences: 156
+  Occurrences: 155
 
 Uncategorised
   Before events:
@@ -4364,13 +4406,23 @@ Uncategorised
 
 Uncategorised
   Before events:
+    RF: safe_create_dir at path.c:929:1
+  Occurrences: 150
+
+Uncategorised
+  Before events:
     RF: skip_utf8_bom at utf8.c:794:1
   Occurrences: 5
 
 Uncategorised
   Before events:
+    RF: strbuf_addstr at strbuf.h:306:1
+  Occurrences: 1010
+
+Uncategorised
+  Before events:
     RF: treat_path at dir.c:2361:1
-  Occurrences: 2
+  Occurrences: 6
 
 Uncategorised
   Before events:
@@ -4390,24 +4442,24 @@ Uncategorised
 ## Divergences with unique coordinates by type
 
 CoordinatesRemoved
-  Unique divergence coordinates: 110
+  Unique divergence coordinates: 111
 
 CoordinatesChangedSmall
   Unique divergence coordinates: 138
 
 LibraryCallAdded
-  Unique divergence coordinates: 13
+  Unique divergence coordinates: 9
 
 LibraryCallRemoved
-  Unique divergence coordinates: 179
+  Unique divergence coordinates: 169
 
 ProgramCallRemoved
-  Unique divergence coordinates: 46
+  Unique divergence coordinates: 45
 
 Uncategorised
-  Unique divergence coordinates: 132
+  Unique divergence coordinates: 140
 
 ## Summary
 
-618 unique divergence coordinates
-266217 divergence occurrences
+612 unique divergence coordinates
+267222 divergence occurrences
