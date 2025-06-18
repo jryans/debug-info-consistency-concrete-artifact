@@ -60,6 +60,7 @@ for test in ${tests[*]}; do
 
     # Remove temporary trace collection from past runs
     rm -rf traces
+    find . -name 'trace-*' -delete
 
     mkdir -p ${SCRIPT_DIR}/concrete-trace/${test}/${trace_variant}
     env \
