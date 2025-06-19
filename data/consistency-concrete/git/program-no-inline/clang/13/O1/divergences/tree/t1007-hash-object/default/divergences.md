@@ -592,6 +592,28 @@ LibraryCallAdded
     RF: Jump to external code for closedir
   Occurrences: 6
 
+LibraryCallReplaced
+  Before events:
+    CF: _ at gettext.h:48:9
+    CT: Jump to external code for gettext
+    RF: Jump to external code for gettext
+  After events:
+    CF: _ at gettext.h:48:9
+    CT: Jump to external code for dcgettext
+    RF: Jump to external code for dcgettext
+  Occurrences: 111
+
+LibraryCallReplaced
+  Before events:
+    CF: pool_entry_cmp at hashmap.c:327:32
+    CT: Jump to external code for memcmp
+    RF: Jump to external code for memcmp
+  After events:
+    CF: pool_entry_cmp at hashmap.c:327:32
+    CT: Jump to external code for bcmp
+    RF: Jump to external code for bcmp
+  Occurrences: 54
+
 LibraryCallRemoved
   Before events:
     CF: check_commit at object-file.c:2330:2
@@ -1274,17 +1296,12 @@ Uncategorised
 
 Uncategorised
   Before events:
-    CT: Jump to external code for gettext
-  After events:
-    CT: Jump to external code for dcgettext
-  Occurrences: 111
-
-Uncategorised
-  Before events:
     CT: Jump to external code for memcmp
+    RF: Jump to external code for memcmp
   After events:
     CT: Jump to external code for bcmp
-  Occurrences: 61
+    RF: Jump to external code for bcmp
+  Occurrences: 7
 
 Uncategorised
   Before events:
@@ -1300,20 +1317,6 @@ Uncategorised
   Before events:
     CT: safe_create_dir at path.c:920:0
   Occurrences: 15
-
-Uncategorised
-  Before events:
-    RF: Jump to external code for gettext
-  After events:
-    RF: Jump to external code for dcgettext
-  Occurrences: 111
-
-Uncategorised
-  Before events:
-    RF: Jump to external code for memcmp
-  After events:
-    RF: Jump to external code for bcmp
-  Occurrences: 61
 
 Uncategorised
   Before events:
@@ -1346,6 +1349,9 @@ CoordinatesChangedSmall
 LibraryCallAdded
   Unique divergence coordinates: 6
 
+LibraryCallReplaced
+  Unique divergence coordinates: 2
+
 LibraryCallRemoved
   Unique divergence coordinates: 48
 
@@ -1353,9 +1359,9 @@ ProgramCallRemoved
   Unique divergence coordinates: 21
 
 Uncategorised
-  Unique divergence coordinates: 32
+  Unique divergence coordinates: 29
 
 ## Summary
 
-185 unique divergence coordinates
-32648 divergence occurrences
+184 unique divergence coordinates
+32476 divergence occurrences

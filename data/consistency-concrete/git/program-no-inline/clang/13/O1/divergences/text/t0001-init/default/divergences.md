@@ -1865,7 +1865,7 @@ LibraryCallReplaced
     CF: _ at gettext.h:48:9
     CT: Jump to external code for dcgettext
     RF: Jump to external code for dcgettext
-  Occurrences: 85
+  Occurrences: 147
 
 LibraryCallReplaced
   Before events:
@@ -1943,6 +1943,17 @@ LibraryCallReplaced
     CT: Jump to external code for bcmp
     RF: Jump to external code for bcmp
   Occurrences: 4
+
+LibraryCallReplaced
+  Before events:
+    CT: hasheq_algop at hash.h:231:0
+    CT: Jump to external code for memcmp
+    RF: Jump to external code for memcmp
+  After events:
+    CT: hasheq_algop at hash.h:231:0
+    CT: Jump to external code for bcmp
+    RF: Jump to external code for bcmp
+  Occurrences: 290
 
 LibraryCallRemoved
   Before events:
@@ -3789,30 +3800,12 @@ Uncategorised
 
 Uncategorised
   Before events:
-    CT: Jump to external code for gettext
-    RF: Jump to external code for gettext
-  After events:
-    CT: Jump to external code for dcgettext
-    RF: Jump to external code for dcgettext
-  Occurrences: 62
-
-Uncategorised
-  Before events:
     CT: Jump to external code for htons
     RF: Jump to external code for htons
   After events:
     CT: __bswap_16 at byteswap.h:35:0
     RF: __bswap_16 at byteswap.h:39:3
   Occurrences: 9
-
-Uncategorised
-  Before events:
-    CT: Jump to external code for memcmp
-    RF: Jump to external code for memcmp
-  After events:
-    CT: Jump to external code for bcmp
-    RF: Jump to external code for bcmp
-  Occurrences: 290
 
 Uncategorised
   Before events:
@@ -4152,7 +4145,7 @@ LibraryCallAdded
   Unique divergence coordinates: 2
 
 LibraryCallReplaced
-  Unique divergence coordinates: 9
+  Unique divergence coordinates: 10
 
 LibraryCallRemoved
   Unique divergence coordinates: 142
@@ -4161,9 +4154,9 @@ ProgramCallRemoved
   Unique divergence coordinates: 39
 
 Uncategorised
-  Unique divergence coordinates: 48
+  Unique divergence coordinates: 46
 
 ## Summary
 
-501 unique divergence coordinates
+500 unique divergence coordinates
 246123 divergence occurrences

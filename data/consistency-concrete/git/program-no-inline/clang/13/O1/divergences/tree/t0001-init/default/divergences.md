@@ -1810,6 +1810,105 @@ LibraryCallAdded
     RF: Jump to external code for strcmp
   Occurrences: 5
 
+LibraryCallReplaced
+  Before events:
+    CF: Q_ at gettext.h:54:9
+    CT: Jump to external code for ngettext
+    RF: Jump to external code for ngettext
+  After events:
+    CF: Q_ at gettext.h:54:9
+    CT: Jump to external code for dcngettext
+    RF: Jump to external code for dcngettext
+  Occurrences: 1
+
+LibraryCallReplaced
+  Before events:
+    CF: _ at gettext.h:48:9
+    CT: Jump to external code for gettext
+    RF: Jump to external code for gettext
+  After events:
+    CF: _ at gettext.h:48:9
+    CT: Jump to external code for dcgettext
+    RF: Jump to external code for dcgettext
+  Occurrences: 147
+
+LibraryCallReplaced
+  Before events:
+    CF: dir_clear at dir.c:3426:2
+    CT: Jump to external code for memcpy
+    RF: Jump to external code for memcpy
+  After events:
+    CF: dir_clear at dir.c:3426:2
+    CT: Jump to external code for memset
+    RF: Jump to external code for memset
+  Occurrences: 3
+
+LibraryCallReplaced
+  Before events:
+    CF: parse_ref_filter_atom at ref-filter.c:702:27
+    CT: Jump to external code for memcmp
+    RF: Jump to external code for memcmp
+  After events:
+    CF: parse_ref_filter_atom at ref-filter.c:702:27
+    CT: Jump to external code for bcmp
+    RF: Jump to external code for bcmp
+  Occurrences: 4
+
+LibraryCallReplaced
+  Before events:
+    CF: pool_entry_cmp at hashmap.c:327:32
+    CT: Jump to external code for memcmp
+    RF: Jump to external code for memcmp
+  After events:
+    CF: pool_entry_cmp at hashmap.c:327:32
+    CT: Jump to external code for bcmp
+    RF: Jump to external code for bcmp
+  Occurrences: 255
+
+LibraryCallReplaced
+  Before events:
+    CF: read_object_with_reference at object-file.c:1777:7
+    CT: Jump to external code for memcmp
+    RF: Jump to external code for memcmp
+  After events:
+    CF: read_object_with_reference at object-file.c:1777:7
+    CT: Jump to external code for bcmp
+    RF: Jump to external code for bcmp
+  Occurrences: 1
+
+LibraryCallReplaced
+  Before events:
+    CF: repo_init_revisions at revision.c:1902:2
+    CT: Jump to external code for memcpy
+    RF: Jump to external code for memcpy
+  After events:
+    CF: repo_init_revisions at revision.c:1902:2
+    CT: Jump to external code for memset
+    RF: Jump to external code for memset
+  Occurrences: 8
+
+LibraryCallReplaced
+  Before events:
+    CF: update_one at cache-tree.c:306:29
+    CT: Jump to external code for memcmp
+    RF: Jump to external code for memcmp
+  After events:
+    CF: update_one at cache-tree.c:306:29
+    CT: Jump to external code for bcmp
+    RF: Jump to external code for bcmp
+  Occurrences: 4
+
+LibraryCallReplaced
+  Before events:
+    CF: update_one at cache-tree.c:360:29
+    CT: Jump to external code for memcmp
+    RF: Jump to external code for memcmp
+  After events:
+    CF: update_one at cache-tree.c:360:29
+    CT: Jump to external code for bcmp
+    RF: Jump to external code for bcmp
+  Occurrences: 4
+
 LibraryCallRemoved
   Before events:
     CF: add at worktree.c:611:28
@@ -4216,36 +4315,17 @@ Uncategorised
 
 Uncategorised
   Before events:
-    CT: Jump to external code for gettext
-  After events:
-    CT: Jump to external code for dcgettext
-  Occurrences: 147
-
-Uncategorised
-  Before events:
     CT: Jump to external code for memcmp
+    RF: Jump to external code for memcmp
   After events:
     CT: Jump to external code for bcmp
-  Occurrences: 558
-
-Uncategorised
-  Before events:
-    CT: Jump to external code for memcpy
-  After events:
-    CT: Jump to external code for memset
-  Occurrences: 11
+    RF: Jump to external code for bcmp
+  Occurrences: 290
 
 Uncategorised
   Before events:
     CT: Jump to external code for memset
   Occurrences: 2
-
-Uncategorised
-  Before events:
-    CT: Jump to external code for ngettext
-  After events:
-    CT: Jump to external code for dcngettext
-  Occurrences: 1
 
 Uncategorised
   Before events:
@@ -4336,36 +4416,8 @@ Uncategorised
 
 Uncategorised
   Before events:
-    RF: Jump to external code for gettext
-  After events:
-    RF: Jump to external code for dcgettext
-  Occurrences: 147
-
-Uncategorised
-  Before events:
-    RF: Jump to external code for memcmp
-  After events:
-    RF: Jump to external code for bcmp
-  Occurrences: 558
-
-Uncategorised
-  Before events:
-    RF: Jump to external code for memcpy
-  After events:
-    RF: Jump to external code for memset
-  Occurrences: 11
-
-Uncategorised
-  Before events:
     RF: Jump to external code for memset
   Occurrences: 2
-
-Uncategorised
-  Before events:
-    RF: Jump to external code for ngettext
-  After events:
-    RF: Jump to external code for dcngettext
-  Occurrences: 1
 
 Uncategorised
   Before events:
@@ -4450,6 +4502,9 @@ CoordinatesChangedSmall
 LibraryCallAdded
   Unique divergence coordinates: 9
 
+LibraryCallReplaced
+  Unique divergence coordinates: 9
+
 LibraryCallRemoved
   Unique divergence coordinates: 169
 
@@ -4457,9 +4512,9 @@ ProgramCallRemoved
   Unique divergence coordinates: 45
 
 Uncategorised
-  Unique divergence coordinates: 140
+  Unique divergence coordinates: 133
 
 ## Summary
 
-612 unique divergence coordinates
-267222 divergence occurrences
+614 unique divergence coordinates
+266505 divergence occurrences
