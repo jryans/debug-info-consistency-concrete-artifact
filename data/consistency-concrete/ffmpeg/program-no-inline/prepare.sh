@@ -36,8 +36,8 @@ echo "## Preparing \`ffmpeg\`"
   --disable-pthreads
 
 # Disable dependency tracking
-replace 'DEPFLAGS=.*$' 'DEPFLAGS=' ffbuild/config.mak
+sd 'DEPFLAGS=.*$' 'DEPFLAGS=' ffbuild/config.mak
 
 # Remove compiler-specific options
-replace '\-mstack-alignment=16 \-Qunused-arguments ' '' ffbuild/config.mak
-replace '\-Werror=partial-availability ' '' ffbuild/config.mak
+sd '\-mstack-alignment=16 \-Qunused-arguments ' '' ffbuild/config.mak
+sd '\-Werror=partial-availability ' '' ffbuild/config.mak
