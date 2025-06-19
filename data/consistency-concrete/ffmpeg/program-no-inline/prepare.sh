@@ -41,3 +41,4 @@ sd 'DEPFLAGS=.*$' 'DEPFLAGS=' ffbuild/config.mak
 # Remove compiler-specific options
 sd '\-mstack-alignment=16 \-Qunused-arguments ' '' ffbuild/config.mak
 sd '\-Werror=partial-availability ' '' ffbuild/config.mak
+sd ' -Wno-maybe-uninitialized' '' ffbuild/config.mak
