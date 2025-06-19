@@ -605,6 +605,17 @@ LibraryCallReplaced
 
 LibraryCallReplaced
   Before events:
+    CF: hasheq_algop at hash.h:238:10
+    CT: Jump to external code for memcmp
+    RF: Jump to external code for memcmp
+  After events:
+    CF: hasheq_algop at hash.h:0:0
+    CT: Jump to external code for bcmp
+    RF: Jump to external code for bcmp
+  Occurrences: 7
+
+LibraryCallReplaced
+  Before events:
     CF: pool_entry_cmp at hashmap.c:327:32
     CT: Jump to external code for memcmp
     RF: Jump to external code for memcmp
@@ -1296,15 +1307,6 @@ Uncategorised
 
 Uncategorised
   Before events:
-    CT: Jump to external code for memcmp
-    RF: Jump to external code for memcmp
-  After events:
-    CT: Jump to external code for bcmp
-    RF: Jump to external code for bcmp
-  Occurrences: 7
-
-Uncategorised
-  Before events:
     CT: copy_templates_1 at init-db.c:31:0
   Occurrences: 18
 
@@ -1350,7 +1352,7 @@ LibraryCallAdded
   Unique divergence coordinates: 6
 
 LibraryCallReplaced
-  Unique divergence coordinates: 2
+  Unique divergence coordinates: 3
 
 LibraryCallRemoved
   Unique divergence coordinates: 48
@@ -1359,7 +1361,7 @@ ProgramCallRemoved
   Unique divergence coordinates: 21
 
 Uncategorised
-  Unique divergence coordinates: 29
+  Unique divergence coordinates: 28
 
 ## Summary
 
