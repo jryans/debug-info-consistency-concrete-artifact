@@ -18,8 +18,8 @@ TARGET_PATH="${TARGET_NAME}"
 
 # Clang
 
-  levels=(O0 O1 O2)
-versions=(13 13 13)
+  levels=(O0 O1 O2 O0 O1)
+versions=(13 13 13 18 18)
 
 for i in ${!levels[*]}; do
   level=${levels[$i]}
@@ -34,7 +34,8 @@ for i in ${!levels[*]}; do
   cc_level_opts="CC_${level}_OPTS"
   make \
     CC=wllvm \
-    CFLAGS="${CC_COMMON_OPTS} ${CC_CLANG_OPTS} ${!cc_level_opts}"
+    CFLAGS="${CC_COMMON_OPTS} ${CC_CLANG_OPTS} ${!cc_level_opts}" \
+    NO_PTHREADS=1
 
   ## Extract bitcode
   extract-bc ${TARGET_PATH}
@@ -76,8 +77,18 @@ for i in ${!levels[*]}; do
   cc_level_opts="CC_${level}_OPTS"
   make \
     CC="$(llvm release-clang-lldb-${version}.0.0 clang)" \
-    CFLAGS="${CC_COMMON_OPTS} ${CC_CLANG_OPTS} ${!cc_level_opts}" \
-    LDFLAGS="${LD_COMMON_OPTS}"
+    CFLAGS="${CC_COMMON_OPTS} ${CC_CLANG_OPTS} ${!cc_level_opts} -fsave-optimization-record" \
+    LDFLAGS="${LD_COMMON_OPTS}" \
+    NO_PTHREADS=1
+
+  mkdir -p "${SCRIPT_DIR}/clang/${version}/${level}"
+
+  ## Collect optimisation remarks
+  ( \
+    find . -name '*.opt.yaml' | \
+    xargs cat \
+    > "${SCRIPT_DIR}/clang/${version}/${level}/${TARGET_NAME}.opt.yaml" \
+  )
 
   ## Gather debug info
   if [[ "$OS" == 'mac' ]]; then
@@ -87,47 +98,73 @@ for i in ${!levels[*]}; do
       "${SCRIPT_DIR}/clang/${version}/${level}/${TARGET_NAME}.dwarf"
   fi
 
-  # Store program binary
+  ## Store program binary
   cp \
     ${TARGET_PATH} \
     "${SCRIPT_DIR}/clang/${version}/${level}/${TARGET_NAME}"
+
+  ## Store test suite dependencies
+  cp -R \
+    bin-wrappers \
+    "${SCRIPT_DIR}/clang/${version}/${level}/test-deps/"
+  cp -R \
+    GIT-BUILD-OPTIONS templates/blt t/helper/test-tool \
+    "${SCRIPT_DIR}/clang/${version}/${level}/test-deps/"
 done
 
 # GCC
-# JRS: Disabled for now, macOS GCC conflicts with SDK over `FILE` type
 
-# versions=(11 11 11 11 11)
-#   levels=(O0 Og O1 O2 O3)
+  levels=(O0 O1 O2 O0 O1)
+versions=(11 11 11 14 14)
 
-# for i in ${!levels[*]}; do
-#   version=${versions[$i]}
-#   level=${levels[$i]}
+for i in ${!levels[*]}; do
+  version=${versions[$i]}
+  level=${levels[$i]}
 
-#   echo "## Building \`${TARGET_NAME}\` (GCC ${version}, ${level}) for binary with debug info"
+  echo "## Building \`${TARGET_NAME}\` (GCC ${version}, ${level}) for binary with debug info"
 
-#   make clean
-#   git clean -f
+  make clean
+  git clean -f
 
-#   ## Build for binary with debug info
-#   cc_level_opts="CC_${level}_OPTS"
-#   make \
-#     CC="gcc-${version}" \
-#     CFLAGS="${CC_COMMON_OPTS} ${CC_GCC_OPTS} ${!cc_level_opts}" \
-#     LDFLAGS="${LD_COMMON_OPTS}"
+  ## Build for binary with debug info
+  cc_level_opts="CC_${level}_OPTS"
+  make \
+    CC="gcc-${version}" \
+    CFLAGS="${CC_COMMON_OPTS} ${CC_GCC_OPTS} ${!cc_level_opts}" \
+    LDFLAGS="${LD_COMMON_OPTS}" \
+    NO_PTHREADS=1
 
-#   ## Gather debug info
-#   if [[ "$OS" == 'mac' ]]; then
-#     dsymutil --flat "${TARGET_PATH}"
-#     cp \
-#       "${TARGET_PATH}.dwarf" \
-#       "${SCRIPT_DIR}/gcc/${version}/${level}/${TARGET_NAME}.dwarf"
-#   fi
+  mkdir -p "${SCRIPT_DIR}/gcc/${version}/${level}"
 
-#   # Store program binary
-#   cp \
-#     ${TARGET_PATH} \
-#     "${SCRIPT_DIR}/gcc/${version}/${level}/${TARGET_NAME}"
-# done
+  # TODO: Try GCC's version of `-fsave-optimization-record`
+  # ## Collect optimisation remarks
+  # ( \
+  #   find . -name '*.opt-record.json.gz' | \
+  #   xargs cat \
+  #   > "${SCRIPT_DIR}/gcc/${version}/${level}/${TARGET_NAME}.opt-record.json.gz" \
+  # )
+
+  ## Gather debug info
+  if [[ "$OS" == 'mac' ]]; then
+    dsymutil --flat "${TARGET_PATH}"
+    cp \
+      "${TARGET_PATH}.dwarf" \
+      "${SCRIPT_DIR}/gcc/${version}/${level}/${TARGET_NAME}.dwarf"
+  fi
+
+  ## Store program binary
+  cp \
+    ${TARGET_PATH} \
+    "${SCRIPT_DIR}/gcc/${version}/${level}/${TARGET_NAME}"
+
+  ## Store test suite dependencies
+  cp -R \
+    bin-wrappers \
+    "${SCRIPT_DIR}/gcc/${version}/${level}/test-deps/"
+  cp -R \
+    GIT-BUILD-OPTIONS templates/blt t/helper/test-tool \
+    "${SCRIPT_DIR}/gcc/${version}/${level}/test-deps/"
+done
 
 # Cleanup
 echo "## Cleanup"
