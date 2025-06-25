@@ -15,7 +15,7 @@ source "${SCRIPT_DIR}/../../../../../vars.sh"
 # Analyse `git` in the context of separate repo to reduce trace noise
 REPO_PATH="${HOME}/Projects/ripgrep"
 
-level="O0"
+level="O1"
 version="13"
 echo "## Collecting concrete trace of \`${TARGET_NAME}\` (Clang ${version}, ${level})"
 
@@ -40,21 +40,6 @@ for execution in ${executions[*]}; do
     (
       cd concrete-trace/${execution}/${trace_variant};
       env \
-        ${!trace_variant_opts} \
-        ${CON_COLLECT_INSTRUMENTATION} \
-        "$@" \
-        ../../../${TARGET_NAME} \
-        -C ${REPO_PATH} \
-        ${!execution_command} \
-        > stdout;
-      mv trace-* trace
-    )
-
-    mkdir -p concrete-trace-with-source/${execution}/${trace_variant}
-    (
-      cd concrete-trace-with-source/${execution}/${trace_variant};
-      env \
-        CON_TRACE_SOURCE=1 \
         ${!trace_variant_opts} \
         ${CON_COLLECT_INSTRUMENTATION} \
         "$@" \

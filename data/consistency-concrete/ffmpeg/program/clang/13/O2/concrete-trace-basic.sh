@@ -9,24 +9,23 @@ if [ "${PWD}" != "${SCRIPT_DIR}" ]; then
   exit
 fi
 
-TARGET_NAME="git"
+TARGET_NAME="ffmpeg"
 source "${SCRIPT_DIR}/../../../../../vars.sh"
 
-# Analyse `git` in the context of separate repo to reduce trace noise
-REPO_PATH="${HOME}/Projects/ripgrep"
-
-level="O1"
+level="O2"
 version="13"
 echo "## Collecting concrete trace of \`${TARGET_NAME}\` (Clang ${version}, ${level})"
 
+# Common options for all executions of this program
+common_command_opts="-hide_banner -loglevel error"
+
 # Each execution of the target to analyse
-executions=(log show)
-log_COMMAND="log -n 10"
-show_COMMAND="show -p"
+executions=(scale)
+scale_COMMAND="-i ${HOME}/Downloads/input-2f.mp4 -vf scale=360:240 ${HOME}/Downloads/output.mp4"
 
 # Different trace variants to collect
 # These map to different trace options in `vars.sh`
-trace_variants=(default rfld ld ld-eld ld-eld-ifd)
+trace_variants=(default)
 
 for execution in ${executions[*]}; do
   execution_command="${execution}_COMMAND"
@@ -44,35 +43,11 @@ for execution in ${executions[*]}; do
         ${CON_COLLECT_INSTRUMENTATION} \
         "$@" \
         ../../../${TARGET_NAME} \
-        -C ${REPO_PATH} \
+        ${common_command_opts} \
         ${!execution_command} \
         > stdout;
-      mv trace-* trace
-    )
-
-    mkdir -p concrete-trace-with-source/${execution}/${trace_variant}
-    (
-      cd concrete-trace-with-source/${execution}/${trace_variant};
-      env \
-        CON_TRACE_SOURCE=1 \
-        ${!trace_variant_opts} \
-        ${CON_COLLECT_INSTRUMENTATION} \
-        "$@" \
-        ../../../${TARGET_NAME} \
-        -C ${REPO_PATH} \
-        ${!execution_command} \
-        > stdout;
+      rm -f ${HOME}/Downloads/output.mp4;
       mv trace-* trace
     )
   done
-
-  # Filter some variants using memory effect knowledge via function attributes
-  mkdir -p concrete-trace/${execution}/ld-eld-ormfd
-  (
-    cd concrete-trace/${execution}/ld-eld-ormfd;
-    ${CON_FILTER_TRACE_MEMORY_EFFECTS} \
-      ../ld-eld/trace \
-      ../../../../O0-function-attrs/${TARGET_NAME}.bc \
-      > trace
-  )
 done
