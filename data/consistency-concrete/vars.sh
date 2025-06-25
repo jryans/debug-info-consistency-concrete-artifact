@@ -69,7 +69,7 @@ else
   CON_COLLECT_INSTRUMENTATION="LD_PRELOAD=${HOME}/Projects/debug-info-concrete-check/binary-instrumentation/build/libcollect-trace-preload.so"
 fi
 
-CON_TRACE_default_OPTS=""
+CON_TRACE_default_OPTS="CON_TRACE_SOURCE=1"
 CON_TRACE_rfld_OPTS="CON_TRACE_RF_LOCATION=0"
 CON_TRACE_ld_OPTS="CON_TRACE_LOCATION=0"
 CON_TRACE_eld_OPTS="CON_TRACE_EXTERNAL_LIBRARY=0"
