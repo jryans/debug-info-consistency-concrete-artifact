@@ -90,7 +90,7 @@ CoordinatesRemoved
 
 CoordinatesRemoved
   Before events:
-    CF: git_setup_gettext at gettext.c:112:3
+    CF: git_setup_gettext at gettext.c:122:2
   After events:
     CF: git_setup_gettext at gettext.c:0:0
   Occurrences: 26

@@ -377,7 +377,7 @@ CoordinatesRemoved
 
 CoordinatesRemoved
   Before events:
-    CF: git_setup_gettext at gettext.c:112:3
+    CF: git_setup_gettext at gettext.c:122:2
   After events:
     CF: git_setup_gettext at gettext.c:0:0
   Occurrences: 153
@@ -394,7 +394,7 @@ CoordinatesRemoved
     CF: hasheq_algop at hash.h:238:10
   After events:
     CF: hasheq_algop at hash.h:0:0
-  Occurrences: 290
+  Occurrences: 289
 
 CoordinatesRemoved
   Before events:
@@ -513,7 +513,7 @@ CoordinatesRemoved
     CF: prep_childenv at run-command.c:455:4
   After events:
     CF: prep_childenv at run-command.c:0:0
-  Occurrences: 3101
+  Occurrences: 3117
 
 CoordinatesRemoved
   Before events:
@@ -548,7 +548,7 @@ CoordinatesRemoved
     CF: read_attr at attr.c:797:11
   After events:
     CF: read_attr at attr.c:0:0
-  Occurrences: 12
+  Occurrences: 8
 
 CoordinatesRemoved
   Before events:
@@ -695,7 +695,7 @@ CoordinatesRemoved
     CF: strbuf_worktree_gitdir at path.c:422:3
   After events:
     CF: strbuf_worktree_gitdir at path.c:0:0
-  Occurrences: 669
+  Occurrences: 665
 
 CoordinatesRemoved
   Before events:
@@ -737,7 +737,7 @@ CoordinatesRemoved
     CF: xdg_config_home_for at path.c:1535:10
   After events:
     CF: xdg_config_home_for at path.c:0:0
-  Occurrences: 431
+  Occurrences: 427
 
 CoordinatesRemoved
   Before events:
@@ -779,7 +779,14 @@ CoordinatesRemoved
     CT: hashmap_iter_next at hashmap.c:295:0
   After events:
     CT: hashmap_iter_next at hashmap.c:0:0
-  Occurrences: 647
+  Occurrences: 642
+
+CoordinatesChangedSmall
+  Before events:
+    CF: check_vector_add at attr.c:500:2
+  After events:
+    CF: check_vector_add at attr.c:502:2
+  Occurrences: 3
 
 CoordinatesChangedSmall
   Before events:
@@ -793,7 +800,7 @@ CoordinatesChangedSmall
     CT: SHA1DCInit at sha1.c:1768:0
   After events:
     CT: SHA1DCInit at sha1.c:1769:13
-  Occurrences: 53
+  Occurrences: 52
 
 CoordinatesChangedSmall
   Before events:
@@ -863,7 +870,7 @@ CoordinatesChangedSmall
     CT: bucket at hashmap.c:106:0
   After events:
     CT: bucket at hashmap.c:107:27
-  Occurrences: 2139
+  Occurrences: 2063
 
 CoordinatesChangedSmall
   Before events:
@@ -1045,14 +1052,14 @@ CoordinatesChangedSmall
     CT: git_is_dir_sep at git-compat-util.h:447:0
   After events:
     CT: git_is_dir_sep at git-compat-util.h:448:11
-  Occurrences: 48483
+  Occurrences: 48467
 
 CoordinatesChangedSmall
   Before events:
     CT: git_path_check_ident at convert.c:1290:0
   After events:
     CT: git_path_check_ident at convert.c:1293:11
-  Occurrences: 19
+  Occurrences: 17
 
 CoordinatesChangedSmall
   Before events:
@@ -1101,14 +1108,14 @@ CoordinatesChangedSmall
     CT: hashmap_entry_init at hashmap.h:316:0
   After events:
     CT: hashmap_entry_init at hashmap.h:317:10
-  Occurrences: 2134
+  Occurrences: 2058
 
 CoordinatesChangedSmall
   Before events:
     CT: hashmap_iter_init at hashmap.c:288:0
   After events:
     CT: hashmap_iter_init at hashmap.c:289:12
-  Occurrences: 287
+  Occurrences: 283
 
 CoordinatesChangedSmall
   Before events:
@@ -1353,7 +1360,7 @@ CoordinatesChangedSmall
     CT: push_stack at attr.c:831:0
   After events:
     CT: push_stack at attr.c:832:6
-  Occurrences: 75
+  Occurrences: 57
 
 CoordinatesChangedSmall
   Before events:
@@ -1472,21 +1479,21 @@ CoordinatesChangedSmall
     CT: skip_prefix at git-compat-util.h:676:0
   After events:
     CT: skip_prefix at git-compat-util.h:678:8
-  Occurrences: 5890
+  Occurrences: 5865
 
 CoordinatesChangedSmall
   Before events:
     CT: starts_with at strbuf.c:8:0
   After events:
     CT: starts_with at strbuf.c:10:8
-  Occurrences: 2848
+  Occurrences: 2844
 
 CoordinatesChangedSmall
   Before events:
     CT: strbuf_avail at strbuf.h:140:0
   After events:
     CT: strbuf_avail at strbuf.h:141:13
-  Occurrences: 48313
+  Occurrences: 48289
 
 CoordinatesChangedSmall
   Before events:
@@ -1563,7 +1570,7 @@ CoordinatesChangedSmall
     CT: type_name at object.c:32:0
   After events:
     CT: type_name at object.c:33:11
-  Occurrences: 32
+  Occurrences: 31
 
 CoordinatesChangedSmall
   Before events:
@@ -1605,7 +1612,7 @@ CoordinatesChangedSmall
     CT: xsize_t at git-compat-util.h:1173:0
   After events:
     CT: xsize_t at git-compat-util.h:1174:10
-  Occurrences: 250
+  Occurrences: 249
 
 CoordinatesChangedSmall
   Before events:
@@ -1728,6 +1735,20 @@ CoordinatesChangedSmall
 
 CoordinatesChangedLarge
   Before events:
+    CF: all_attrs_init at attr.c:162:2
+  After events:
+    CF: all_attrs_init at attr.c:152:3
+  Occurrences: 3
+
+CoordinatesChangedLarge
+  Before events:
+    CF: git_attr_internal at attr.c:229:2
+  After events:
+    CF: git_attr_internal at attr.c:221:3
+  Occurrences: 12
+
+CoordinatesChangedLarge
+  Before events:
     CT: ambiguous_path at object-name.c:830:0
   After events:
     CT: ambiguous_path at object-name.c:834:20
@@ -1773,7 +1794,7 @@ CoordinatesChangedLarge
     CT: msort_with_tmp at qsort_s.c:12:0
   After events:
     CT: msort_with_tmp at qsort_s.c:17:8
-  Occurrences: 6197
+  Occurrences: 6229
 
 CoordinatesChangedLarge
   Before events:
@@ -1920,7 +1941,7 @@ LibraryCallReplaced
     CF: repo_init_revisions at revision.c:1902:2
     CT: Jump to external code for memset
     RF: Jump to external code for memset
-  Occurrences: 3
+  Occurrences: 5
 
 LibraryCallReplaced
   Before events:
@@ -2229,7 +2250,7 @@ LibraryCallRemoved
     CF: copy_templates_1 at init-db.c:44:15
     CT: Jump to external code for readdir64
     RF: Jump to external code for readdir64
-  Occurrences: 103
+  Occurrences: 123
 
 LibraryCallRemoved
   Before events:
@@ -2341,14 +2362,14 @@ LibraryCallRemoved
     CF: git_hash_sha1_final_oid at object-file.c:107:2
     CT: Jump to external code for memset
     RF: Jump to external code for memset
-  Occurrences: 44
+  Occurrences: 43
 
 LibraryCallRemoved
   Before events:
     CF: git_parse_signed at config.c:1170:7
     CT: Jump to external code for __errno_location
     RF: Jump to external code for __errno_location
-  Occurrences: 514
+  Occurrences: 510
 
 LibraryCallRemoved
   Before events:
@@ -2411,7 +2432,7 @@ LibraryCallRemoved
     CF: is_dir_file at path.c:82:12
     CT: Jump to external code for strlen
     RF: Jump to external code for strlen
-  Occurrences: 669
+  Occurrences: 665
 
 LibraryCallRemoved
   Before events:
@@ -2621,7 +2642,7 @@ LibraryCallRemoved
     CF: raceproof_create_file at files-backend.c:957:6
     CT: Jump to external code for __errno_location
     RF: Jump to external code for __errno_location
-  Occurrences: 1
+  Occurrences: 2
 
 LibraryCallRemoved
   Before events:
@@ -2943,42 +2964,63 @@ ProgramCallRemoved
     CF: all_attrs_init at attr.c:136:2
     CT: hashmap_lock at attr.c:42:0
     RF: hashmap_lock at attr.c:44:1
-  Occurrences: 23
+  Occurrences: 21
+
+ProgramCallRemoved
+  Before events:
+    CF: all_attrs_init at attr.c:152:3
+    CT: st_mult at git-compat-util.h:991:0
+    RF: st_mult at git-compat-util.h:995:2
+  Occurrences: 1
 
 ProgramCallRemoved
   Before events:
     CF: all_attrs_init at attr.c:155:3
     CT: container_of_or_null_offset at git-compat-util.h:1580:0
     RF: container_of_or_null_offset at git-compat-util.h:1581:2
-  Occurrences: 33
+  Occurrences: 27
+
+ProgramCallRemoved
+  Before events:
+    CF: all_attrs_init at attr.c:155:3
+    CT: hashmap_iter_next at hashmap.c:295:0
+    RF: hashmap_iter_next at hashmap.c:308:1
+  Occurrences: 4
 
 ProgramCallRemoved
   Before events:
     CF: all_attrs_init at attr.c:162:2
     CT: hashmap_unlock at attr.c:47:0
     RF: hashmap_unlock at attr.c:49:1
-  Occurrences: 23
+  Occurrences: 16
 
 ProgramCallRemoved
   Before events:
     CF: attr_hashmap_get at attr.c:94:6
     CT: container_of_or_null_offset at git-compat-util.h:1580:0
     RF: container_of_or_null_offset at git-compat-util.h:1581:2
-  Occurrences: 110
+  Occurrences: 70
 
 ProgramCallRemoved
   Before events:
     CF: check_vector_add at attr.c:500:2
     CT: vector_lock at attr.c:489:0
     RF: vector_lock at attr.c:491:1
-  Occurrences: 13
+  Occurrences: 6
+
+ProgramCallRemoved
+  Before events:
+    CF: check_vector_add at attr.c:502:2
+    CT: st_mult at git-compat-util.h:991:0
+    RF: st_mult at git-compat-util.h:995:2
+  Occurrences: 1
 
 ProgramCallRemoved
   Before events:
     CF: check_vector_add at attr.c:507:2
     CT: vector_unlock at attr.c:494:0
     RF: vector_unlock at attr.c:496:1
-  Occurrences: 13
+  Occurrences: 5
 
 ProgramCallRemoved
   Before events:
@@ -2992,14 +3034,14 @@ ProgramCallRemoved
     CF: copy_templates_1 at init-db.c:48:3
     CT: strbuf_setlen at strbuf.h:161:0
     RF: strbuf_setlen at strbuf.h:169:1
-  Occurrences: 94
+  Occurrences: 110
 
 ProgramCallRemoved
   Before events:
     CF: copy_templates_1 at init-db.c:49:3
     CT: strbuf_setlen at strbuf.h:161:0
     RF: strbuf_setlen at strbuf.h:169:1
-  Occurrences: 96
+  Occurrences: 113
 
 ProgramCallRemoved
   Before events:
@@ -3034,14 +3076,21 @@ ProgramCallRemoved
     CF: git_attr_internal at attr.c:216:2
     CT: hashmap_lock at attr.c:42:0
     RF: hashmap_lock at attr.c:44:1
-  Occurrences: 110
+  Occurrences: 70
+
+ProgramCallRemoved
+  Before events:
+    CF: git_attr_internal at attr.c:221:3
+    CT: st_add at git-compat-util.h:981:0
+    RF: st_add at git-compat-util.h:985:2
+  Occurrences: 8
 
 ProgramCallRemoved
   Before events:
     CF: git_attr_internal at attr.c:229:2
     CT: hashmap_unlock at attr.c:47:0
     RF: hashmap_unlock at attr.c:49:1
-  Occurrences: 110
+  Occurrences: 54
 
 ProgramCallRemoved
   Before events:
@@ -3126,6 +3175,13 @@ ProgramCallRemoved
     CT: precompose_argv_prefix at git-compat-util.h:320:0
     RF: precompose_argv_prefix at git-compat-util.h:321:2
   Occurrences: 145
+
+ProgramCallRemoved
+  Before events:
+    CF: readdir_skip_dot_and_dotdot at dir.c:61:8
+    CT: is_dot_or_dotdot at dir.h:456:0
+    RF: is_dot_or_dotdot at dir.h:457:2
+  Occurrences: 1
 
 ProgramCallRemoved
   Before events:
@@ -3219,7 +3275,7 @@ Uncategorised
     CF: copy_templates_1 at init-db.c:49:3
     CT: strbuf_setlen at strbuf.h:161:0
     RF: strbuf_setlen at strbuf.h:169:1
-  Occurrences: 28
+  Occurrences: 27
 
 Uncategorised
   After events:
@@ -3238,40 +3294,69 @@ Uncategorised
     CF: copy_templates_1 at init-db.c:49:3
     CT: strbuf_setlen at strbuf.h:161:0
     RF: strbuf_setlen at strbuf.h:169:1
-  Occurrences: 35
+  Occurrences: 36
 
 Uncategorised
   After events:
-    CF: sort_ref_dir at ref-cache.c:241:2
-    CT: sane_qsort at git-compat-util.h:1308:12
-    CF: sane_qsort at git-compat-util.h:1309:3
-    CT: Jump to external code for qsort
-    RF: Jump to external code for qsort
-    RF: sane_qsort at git-compat-util.h:1310:1
-    CF: sort_ref_dir at ref-cache.c:246:15
-    CT: is_dup_ref at ref-cache.c:208:0
-    CF: is_dup_ref at ref-cache.c:209:6
+    CF: copy_templates_1 at init-db.c:70:4
+    CT: strbuf_addch at strbuf.h:229:0
+    CF: strbuf_addch at strbuf.h:230:7
+    CT: strbuf_avail at strbuf.h:141:13
+    RF: strbuf_avail at strbuf.h:141:2
+    RF: strbuf_addch at strbuf.h:234:1
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    CF: read_directory_recursive at dir.c:2572:11
+    CT: treat_path at dir.c:2282:0
+    CF: treat_path at dir.c:2288:6
+    CT: is_dot_or_dotdot at dir.h:456:0
+    RF: is_dot_or_dotdot at dir.h:457:2
+    CF: treat_path at dir.c:2288:41
+    CT: fspathcmp at dir.c:77:0
+    CF: fspathcmp at dir.c:78:42
     CT: Jump to external code for strcmp
     RF: Jump to external code for strcmp
-    RF: is_dup_ref at ref-cache.c:223:1
+    RF: fspathcmp at dir.c:78:2
+    RF: treat_path at dir.c:2361:1
+    CF: read_directory_recursive at dir.c:2632:3
+    CT: add_path_to_appropriate_result_list at dir.c:2502:0
+    RF: add_path_to_appropriate_result_list at dir.c:2526:1
+    CF: read_directory_recursive at dir.c:2570:10
+    CT: read_cached_dir at dir.c:2447:0
+    CF: read_cached_dir at dir.c:2451:8
+    CT: readdir_skip_dot_and_dotdot at dir.c:57:0
+    CF: readdir_skip_dot_and_dotdot at dir.c:60:14
+    CT: Jump to external code for readdir64
+    RF: Jump to external code for readdir64
+    RF: readdir_skip_dot_and_dotdot at dir.c:64:2
+    RF: read_cached_dir at dir.c:2478:1
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    CF: readdir_skip_dot_and_dotdot at dir.c:61:8
+    CT: is_dot_or_dotdot at dir.h:456:0
+    RF: is_dot_or_dotdot at dir.h:457:2
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    CT: Jump to external code for memset
+    RF: Jump to external code for memset
+    CF: repo_init_revisions at revision.c:1902:2
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    CT: Jump to external code for memset
+    RF: Jump to external code for memset
+    CF: repo_init_revisions at revision.c:1902:2
+    CT: Jump to external code for memset
+    RF: Jump to external code for memset
+    CF: repo_init_revisions at revision.c:1902:2
   Occurrences: 5
-
-Uncategorised
-  After events:
-    CT: Jump to external code for memset
-    RF: Jump to external code for memset
-    CF: repo_init_revisions at revision.c:1902:2
-  Occurrences: 3
-
-Uncategorised
-  After events:
-    CT: Jump to external code for memset
-    RF: Jump to external code for memset
-    CF: repo_init_revisions at revision.c:1902:2
-    CT: Jump to external code for memset
-    RF: Jump to external code for memset
-    CF: repo_init_revisions at revision.c:1902:2
-  Occurrences: 3
 
 Uncategorised
   After events:
@@ -3341,7 +3426,7 @@ Uncategorised
     RF: strbuf_setlen at strbuf.h:169:1
     RF: strbuf_add at strbuf.c:301:1
     [...114 more events...]
-  Occurrences: 2
+  Occurrences: 1
 
 Uncategorised
   After events:
@@ -3376,76 +3461,6 @@ Uncategorised
     RF: strbuf_setlen at strbuf.h:169:1
     RF: strbuf_add at strbuf.c:301:1
     [...123 more events...]
-  Occurrences: 3
-
-Uncategorised
-  After events:
-    RF: copy_templates_1 at init-db.c:94:1
-    CF: copy_templates_1 at init-db.c:72:4
-    CT: Jump to external code for closedir
-    RF: Jump to external code for closedir
-    CF: copy_templates_1 at init-db.c:44:15
-    CT: Jump to external code for readdir64
-    RF: Jump to external code for readdir64
-    CF: copy_templates_1 at init-db.c:48:3
-    CT: strbuf_setlen at strbuf.h:161:0
-    RF: strbuf_setlen at strbuf.h:169:1
-    CF: copy_templates_1 at init-db.c:49:3
-    CT: strbuf_setlen at strbuf.h:161:0
-    RF: strbuf_setlen at strbuf.h:169:1
-    CF: copy_templates_1 at init-db.c:53:3
-    CT: strbuf_addstr at strbuf.h:304:0
-    CF: strbuf_addstr at strbuf.h:305:20
-    CT: Jump to external code for strlen
-    RF: Jump to external code for strlen
-    CF: strbuf_addstr at strbuf.h:305:2
-    CT: strbuf_add at strbuf.c:297:0
-    CF: strbuf_add at strbuf.c:298:2
-    CT: strbuf_grow at strbuf.c:92:0
-    RF: strbuf_grow at strbuf.c:102:1
-    CF: strbuf_add at strbuf.c:299:2
-    CT: Jump to external code for memcpy
-    RF: Jump to external code for memcpy
-    CF: strbuf_add at strbuf.c:300:2
-    CT: strbuf_setlen at strbuf.h:161:0
-    RF: strbuf_setlen at strbuf.h:169:1
-    RF: strbuf_add at strbuf.c:301:1
-    [...54 more events...]
-  Occurrences: 3
-
-Uncategorised
-  After events:
-    RF: copy_templates_1 at init-db.c:94:1
-    CF: copy_templates_1 at init-db.c:72:4
-    CT: Jump to external code for closedir
-    RF: Jump to external code for closedir
-    CF: copy_templates_1 at init-db.c:44:15
-    CT: Jump to external code for readdir64
-    RF: Jump to external code for readdir64
-    CF: copy_templates_1 at init-db.c:48:3
-    CT: strbuf_setlen at strbuf.h:161:0
-    RF: strbuf_setlen at strbuf.h:169:1
-    CF: copy_templates_1 at init-db.c:49:3
-    CT: strbuf_setlen at strbuf.h:161:0
-    RF: strbuf_setlen at strbuf.h:169:1
-    CF: copy_templates_1 at init-db.c:53:3
-    CT: strbuf_addstr at strbuf.h:304:0
-    CF: strbuf_addstr at strbuf.h:305:20
-    CT: Jump to external code for strlen
-    RF: Jump to external code for strlen
-    CF: strbuf_addstr at strbuf.h:305:2
-    CT: strbuf_add at strbuf.c:297:0
-    CF: strbuf_add at strbuf.c:298:2
-    CT: strbuf_grow at strbuf.c:92:0
-    RF: strbuf_grow at strbuf.c:102:1
-    CF: strbuf_add at strbuf.c:299:2
-    CT: Jump to external code for memcpy
-    RF: Jump to external code for memcpy
-    CF: strbuf_add at strbuf.c:300:2
-    CT: strbuf_setlen at strbuf.h:161:0
-    RF: strbuf_setlen at strbuf.h:169:1
-    RF: strbuf_add at strbuf.c:301:1
-    [...63 more events...]
   Occurrences: 2
 
 Uncategorised
@@ -3480,7 +3495,42 @@ Uncategorised
     CT: strbuf_setlen at strbuf.h:161:0
     RF: strbuf_setlen at strbuf.h:169:1
     RF: strbuf_add at strbuf.c:301:1
-    [...72 more events...]
+    [...54 more events...]
+  Occurrences: 5
+
+Uncategorised
+  After events:
+    RF: copy_templates_1 at init-db.c:94:1
+    CF: copy_templates_1 at init-db.c:72:4
+    CT: Jump to external code for closedir
+    RF: Jump to external code for closedir
+    CF: copy_templates_1 at init-db.c:44:15
+    CT: Jump to external code for readdir64
+    RF: Jump to external code for readdir64
+    CF: copy_templates_1 at init-db.c:48:3
+    CT: strbuf_setlen at strbuf.h:161:0
+    RF: strbuf_setlen at strbuf.h:169:1
+    CF: copy_templates_1 at init-db.c:49:3
+    CT: strbuf_setlen at strbuf.h:161:0
+    RF: strbuf_setlen at strbuf.h:169:1
+    CF: copy_templates_1 at init-db.c:53:3
+    CT: strbuf_addstr at strbuf.h:304:0
+    CF: strbuf_addstr at strbuf.h:305:20
+    CT: Jump to external code for strlen
+    RF: Jump to external code for strlen
+    CF: strbuf_addstr at strbuf.h:305:2
+    CT: strbuf_add at strbuf.c:297:0
+    CF: strbuf_add at strbuf.c:298:2
+    CT: strbuf_grow at strbuf.c:92:0
+    RF: strbuf_grow at strbuf.c:102:1
+    CF: strbuf_add at strbuf.c:299:2
+    CT: Jump to external code for memcpy
+    RF: Jump to external code for memcpy
+    CF: strbuf_add at strbuf.c:300:2
+    CT: strbuf_setlen at strbuf.h:161:0
+    RF: strbuf_setlen at strbuf.h:169:1
+    RF: strbuf_add at strbuf.c:301:1
+    [...63 more events...]
   Occurrences: 1
 
 Uncategorised
@@ -3516,7 +3566,7 @@ Uncategorised
     CF: copy_templates_1 at init-db.c:44:15
     CT: Jump to external code for readdir64
     [...123 more events...]
-  Occurrences: 1
+  Occurrences: 3
 
 Uncategorised
   After events:
@@ -3547,7 +3597,11 @@ Uncategorised
     CT: Jump to external code for strcmp
     RF: Jump to external code for strcmp
     RF: fspathcmp at dir.c:78:2
-  Occurrences: 2
+    CF: treat_path at dir.c:2290:2
+    CT: strbuf_setlen at strbuf.h:161:0
+    RF: strbuf_setlen at strbuf.h:169:1
+    [...27 more events...]
+  Occurrences: 1
 
 Uncategorised
   Before events:
@@ -3721,9 +3775,60 @@ Uncategorised
 
 Uncategorised
   Before events:
+    CF: read_directory_recursive at dir.c:2572:11
+    CT: treat_path at dir.c:2282:0
+    CF: treat_path at dir.c:2288:6
+    CT: is_dot_or_dotdot at dir.h:456:0
+    RF: is_dot_or_dotdot at dir.h:457:2
+    CF: treat_path at dir.c:2288:41
+    CT: fspathcmp at dir.c:77:0
+    CF: fspathcmp at dir.c:78:42
+    CT: Jump to external code for strcmp
+    RF: Jump to external code for strcmp
+    RF: fspathcmp at dir.c:78:2
+    CF: treat_path at dir.c:2290:2
+    CT: strbuf_setlen at strbuf.h:161:0
+    RF: strbuf_setlen at strbuf.h:169:1
+    CF: treat_path at dir.c:2291:2
+    CT: strbuf_addstr at strbuf.h:304:0
+    CF: strbuf_addstr at strbuf.h:305:20
+    CT: Jump to external code for strlen
+    RF: Jump to external code for strlen
+    CF: strbuf_addstr at strbuf.h:305:2
+    CT: strbuf_add at strbuf.c:297:0
+    CF: strbuf_add at strbuf.c:298:2
+    CT: strbuf_grow at strbuf.c:92:0
+    RF: strbuf_grow at strbuf.c:102:1
+    CF: strbuf_add at strbuf.c:299:2
+    CT: Jump to external code for memcpy
+    RF: Jump to external code for memcpy
+    CF: strbuf_add at strbuf.c:300:2
+    CT: strbuf_setlen at strbuf.h:161:0
+    RF: strbuf_setlen at strbuf.h:169:1
+    [...24 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
     CF: refspec_init at refspec.c:185:2
     CT: Jump to external code for memset
     RF: Jump to external code for memset
+  Occurrences: 2
+
+Uncategorised
+  Before events:
+    CF: sort_ref_dir at ref-cache.c:241:2
+    CT: sane_qsort at git-compat-util.h:1307:0
+    CF: sane_qsort at git-compat-util.h:1309:3
+    CT: Jump to external code for qsort
+    RF: Jump to external code for qsort
+    RF: sane_qsort at git-compat-util.h:1310:1
+    CF: sort_ref_dir at ref-cache.c:246:15
+    CT: is_dup_ref at ref-cache.c:208:0
+    CF: is_dup_ref at ref-cache.c:209:6
+    CT: Jump to external code for strcmp
+    RF: Jump to external code for strcmp
+    RF: is_dup_ref at ref-cache.c:223:1
   Occurrences: 2
 
 Uncategorised
@@ -3775,7 +3880,7 @@ Uncategorised
     CT: Jump to external code for __errno_location
     RF: Jump to external code for __errno_location
     CF: raceproof_create_file at files-backend.c:957:6
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   Before events:
@@ -3803,7 +3908,7 @@ Uncategorised
   After events:
     CT: Jump to external code for bcmp
     RF: Jump to external code for bcmp
-  Occurrences: 290
+  Occurrences: 289
 
 Uncategorised
   Before events:
@@ -3815,7 +3920,7 @@ Uncategorised
     CF: repo_init_revisions at revision.c:1902:2
     CT: Jump to external code for memset
     RF: Jump to external code for memset
-  Occurrences: 3
+  Occurrences: 1
 
 Uncategorised
   Before events:
@@ -3854,38 +3959,7 @@ Uncategorised
     CT: Jump to external code for readdir64
     RF: Jump to external code for readdir64
     CF: copy_templates_1 at init-db.c:48:3
-  Occurrences: 2
-
-Uncategorised
-  Before events:
-    RF: add_path_to_appropriate_result_list at dir.c:2526:1
-    CF: read_directory_recursive at dir.c:2570:10
-    CT: read_cached_dir at dir.c:2447:0
-    CF: read_cached_dir at dir.c:2451:8
-    CT: readdir_skip_dot_and_dotdot at dir.c:57:0
-    CF: readdir_skip_dot_and_dotdot at dir.c:60:14
-    CT: Jump to external code for readdir64
-    RF: Jump to external code for readdir64
-    CF: readdir_skip_dot_and_dotdot at dir.c:61:8
-    CT: is_dot_or_dotdot at dir.h:456:0
-    RF: is_dot_or_dotdot at dir.h:457:2
-    RF: readdir_skip_dot_and_dotdot at dir.c:64:2
-    RF: read_cached_dir at dir.c:2478:1
-    CF: read_directory_recursive at dir.c:2572:11
-    CT: treat_path at dir.c:2282:0
-    CF: treat_path at dir.c:2288:6
-    CT: is_dot_or_dotdot at dir.h:456:0
-    RF: is_dot_or_dotdot at dir.h:457:2
-    CF: treat_path at dir.c:2288:41
-    CT: fspathcmp at dir.c:77:0
-    CF: fspathcmp at dir.c:78:42
-    CT: Jump to external code for strcmp
-    RF: Jump to external code for strcmp
-    RF: fspathcmp at dir.c:78:2
-    RF: treat_path at dir.c:2361:1
-    CF: read_directory_recursive at dir.c:2632:3
-    CT: add_path_to_appropriate_result_list at dir.c:2502:0
-  Occurrences: 1
+  Occurrences: 3
 
 Uncategorised
   Before events:
@@ -3920,42 +3994,7 @@ Uncategorised
     RF: strbuf_setlen at strbuf.h:169:1
     RF: strbuf_add at strbuf.c:301:1
     [...102 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    RF: copy_templates_1 at init-db.c:94:1
-    CF: copy_templates_1 at init-db.c:72:4
-    CT: Jump to external code for closedir
-    RF: Jump to external code for closedir
-    CF: copy_templates_1 at init-db.c:44:15
-    CT: Jump to external code for readdir64
-    RF: Jump to external code for readdir64
-    CF: copy_templates_1 at init-db.c:48:3
-    CT: strbuf_setlen at strbuf.h:161:0
-    RF: strbuf_setlen at strbuf.h:169:1
-    CF: copy_templates_1 at init-db.c:49:3
-    CT: strbuf_setlen at strbuf.h:161:0
-    RF: strbuf_setlen at strbuf.h:169:1
-    CF: copy_templates_1 at init-db.c:53:3
-    CT: strbuf_addstr at strbuf.h:304:0
-    CF: strbuf_addstr at strbuf.h:305:20
-    CT: Jump to external code for strlen
-    RF: Jump to external code for strlen
-    CF: strbuf_addstr at strbuf.h:305:2
-    CT: strbuf_add at strbuf.c:297:0
-    CF: strbuf_add at strbuf.c:298:2
-    CT: strbuf_grow at strbuf.c:92:0
-    RF: strbuf_grow at strbuf.c:102:1
-    CF: strbuf_add at strbuf.c:299:2
-    CT: Jump to external code for memcpy
-    RF: Jump to external code for memcpy
-    CF: strbuf_add at strbuf.c:300:2
-    CT: strbuf_setlen at strbuf.h:161:0
-    RF: strbuf_setlen at strbuf.h:169:1
-    RF: strbuf_add at strbuf.c:301:1
-    [...120 more events...]
-  Occurrences: 1
+  Occurrences: 2
 
 Uncategorised
   Before events:
@@ -3990,7 +4029,7 @@ Uncategorised
     RF: strbuf_setlen at strbuf.h:169:1
     RF: strbuf_add at strbuf.c:301:1
     [...54 more events...]
-  Occurrences: 2
+  Occurrences: 4
 
 Uncategorised
   Before events:
@@ -4095,7 +4134,7 @@ Uncategorised
     RF: strbuf_setlen at strbuf.h:169:1
     RF: strbuf_add at strbuf.c:301:1
     [...72 more events...]
-  Occurrences: 3
+  Occurrences: 1
 
 Uncategorised
   Before events:
@@ -4126,7 +4165,7 @@ Uncategorised
     CT: Jump to external code for strcmp
     RF: Jump to external code for strcmp
     RF: fspathcmp at dir.c:78:2
-  Occurrences: 1
+  Occurrences: 2
 
 ## Divergences with unique coordinates by type
 
@@ -4134,10 +4173,10 @@ CoordinatesRemoved
   Unique divergence coordinates: 111
 
 CoordinatesChangedSmall
-  Unique divergence coordinates: 135
+  Unique divergence coordinates: 136
 
 CoordinatesChangedLarge
-  Unique divergence coordinates: 15
+  Unique divergence coordinates: 17
 
 LibraryCallAdded
   Unique divergence coordinates: 2
@@ -4149,12 +4188,12 @@ LibraryCallRemoved
   Unique divergence coordinates: 142
 
 ProgramCallRemoved
-  Unique divergence coordinates: 39
+  Unique divergence coordinates: 44
 
 Uncategorised
-  Unique divergence coordinates: 47
+  Unique divergence coordinates: 48
 
 ## Summary
 
-500 unique divergence coordinates
-246123 divergence occurrences
+509 unique divergence coordinates
+245816 divergence occurrences
