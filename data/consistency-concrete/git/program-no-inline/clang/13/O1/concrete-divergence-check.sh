@@ -20,8 +20,9 @@ echo "## Checking concrete debug consistency of \`${TARGET_NAME}\` (Clang ${vers
 # Using `LC_ALL=C` gives ~10x performance boost
 export LC_ALL=C
 
-# Collect results for both diff strategies
-strategies=(text tree)
+# Only collect tree strategy for now
+# Text strategy still available if needed for comparison
+strategies=(tree)
 for strategy in "${strategies[@]}"; do
   # Collect divergence report, events, and counts for each test
   for test_path in concrete-trace/t*; do
