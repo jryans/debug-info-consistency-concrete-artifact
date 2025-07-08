@@ -550,6 +550,27 @@ CoordinatesChangedSmall
     RF: strbuf_realpath_1 at abspath.c:200:1
   Occurrences: 72
 
+CoordinatesChangedLarge
+  Before events:
+    CT: dummy_pthread_init at thread-utils.c:101:0
+  After events:
+    CT: dummy_pthread_init at thread-utils.c:111:2
+  Occurrences: 78
+
+CoordinatesChangedLarge
+  Before events:
+    RF: git_config_set_multivar_in_file_gently at config.c:3441:2
+  After events:
+    RF: git_config_set_multivar_in_file_gently at config.c:3447:1
+  Occurrences: 24
+
+CoordinatesChangedLarge
+  Before events:
+    RF: xopen at wrapper.c:186:4
+  After events:
+    RF: xopen at wrapper.c:199:1
+  Occurrences: 31
+
 LibraryCallAdded
   After events:
     CF: copy_templates_1 at init-db.c:44:15
@@ -1110,16 +1131,6 @@ ProgramCallRemoved
 
 Uncategorised
   After events:
-    CF: attr_start at attr.c:1143:2
-  Occurrences: 26
-
-Uncategorised
-  After events:
-    CF: attr_start at attr.c:1144:2
-  Occurrences: 26
-
-Uncategorised
-  After events:
     CF: copy_templates_1 at init-db.c:48:3
     CT: strbuf_setlen at strbuf.h:161:0
     RF: strbuf_setlen at strbuf.h:169:1
@@ -1203,11 +1214,6 @@ Uncategorised
 
 Uncategorised
   After events:
-    CF: raw_object_store_new at object.c:526:2
-  Occurrences: 26
-
-Uncategorised
-  After events:
     CT: Jump to external code for puts
   Occurrences: 6
 
@@ -1215,11 +1221,6 @@ Uncategorised
   After events:
     CT: copy_templates_1 at init-db.c:31:0
   Occurrences: 18
-
-Uncategorised
-  After events:
-    CT: dummy_pthread_init at thread-utils.c:111:2
-  Occurrences: 78
 
 Uncategorised
   After events:
@@ -1238,35 +1239,8 @@ Uncategorised
 
 Uncategorised
   After events:
-    RF: dummy_pthread_init at thread-utils.c:111:2
-  Occurrences: 78
-
-Uncategorised
-  After events:
-    RF: git_config_set_multivar_in_file_gently at config.c:3447:1
-  Occurrences: 24
-
-Uncategorised
-  After events:
     RF: safe_create_dir at path.c:929:1
   Occurrences: 15
-
-Uncategorised
-  After events:
-    RF: xopen at wrapper.c:199:1
-  Occurrences: 31
-
-Uncategorised
-  Before events:
-    CF: attr_start at attr.c:1143:2
-    CT: dummy_pthread_init at thread-utils.c:101:0
-  Occurrences: 26
-
-Uncategorised
-  Before events:
-    CF: attr_start at attr.c:1144:2
-    CT: dummy_pthread_init at thread-utils.c:101:0
-  Occurrences: 26
 
 Uncategorised
   Before events:
@@ -1339,12 +1313,6 @@ Uncategorised
 
 Uncategorised
   Before events:
-    CF: raw_object_store_new at object.c:526:2
-    CT: dummy_pthread_init at thread-utils.c:101:0
-  Occurrences: 26
-
-Uncategorised
-  Before events:
     CT: copy_templates_1 at init-db.c:31:0
   Occurrences: 18
 
@@ -1360,23 +1328,8 @@ Uncategorised
 
 Uncategorised
   Before events:
-    RF: dummy_pthread_init at thread-utils.c:111:2
-  Occurrences: 78
-
-Uncategorised
-  Before events:
-    RF: git_config_set_multivar_in_file_gently at config.c:3441:2
-  Occurrences: 24
-
-Uncategorised
-  Before events:
     RF: safe_create_dir at path.c:929:1
   Occurrences: 15
-
-Uncategorised
-  Before events:
-    RF: xopen at wrapper.c:186:4
-  Occurrences: 31
 
 ## Divergences with unique coordinates by type
 
@@ -1385,6 +1338,9 @@ CoordinatesRemoved
 
 CoordinatesChangedSmall
   Unique divergence coordinates: 48
+
+CoordinatesChangedLarge
+  Unique divergence coordinates: 3
 
 LibraryCallAdded
   Unique divergence coordinates: 6
@@ -1399,9 +1355,9 @@ ProgramCallRemoved
   Unique divergence coordinates: 21
 
 Uncategorised
-  Unique divergence coordinates: 35
+  Unique divergence coordinates: 22
 
 ## Summary
 
-191 unique divergence coordinates
-32710 divergence occurrences
+181 unique divergence coordinates
+32343 divergence occurrences

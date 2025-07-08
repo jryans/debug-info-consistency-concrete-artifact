@@ -1754,6 +1754,132 @@ CoordinatesChangedSmall
     RF: strbuf_realpath_1 at abspath.c:200:1
   Occurrences: 461
 
+CoordinatesChangedLarge
+  Before events:
+    CF: dir_clear at dir.c:3398:20
+  After events:
+    CF: dir_clear at dir.c:3426:2
+  Occurrences: 2
+
+CoordinatesChangedLarge
+  Before events:
+    CF: handle_alias at git.c:415:2
+  After events:
+    CF: handle_alias at git.c:339:45
+  Occurrences: 2
+
+CoordinatesChangedLarge
+  Before events:
+    CF: is_dir_file at path.c:82:12
+  After events:
+    CF: is_dir_file at path.c:87:10
+  Occurrences: 5
+
+CoordinatesChangedLarge
+  Before events:
+    CT: ambiguous_path at object-name.c:830:0
+  After events:
+    CT: ambiguous_path at object-name.c:834:20
+  Occurrences: 22
+
+CoordinatesChangedLarge
+  Before events:
+    CT: date_overflows at date.c:1364:0
+  After events:
+    CT: date_overflows at date.c:1368:6
+  Occurrences: 4
+
+CoordinatesChangedLarge
+  Before events:
+    CT: dummy_pthread_init at thread-utils.c:101:0
+  After events:
+    CT: dummy_pthread_init at thread-utils.c:111:2
+  Occurrences: 459
+
+CoordinatesChangedLarge
+  Before events:
+    CT: estimate_cache_size at read-cache.c:2067:0
+  After events:
+    CT: estimate_cache_size at read-cache.c:2074:23
+  Occurrences: 4
+
+CoordinatesChangedLarge
+  Before events:
+    CT: get_be32 at bswap.h:156:0
+  After events:
+    CT: get_be32 at bswap.h:160:24
+  Occurrences: 40
+
+CoordinatesChangedLarge
+  Before events:
+    CT: is_urlschemechar at url.c:5:0
+  After events:
+    CT: is_urlschemechar at url.c:14:20
+  Occurrences: 3
+
+CoordinatesChangedLarge
+  Before events:
+    CT: msort_with_tmp at qsort_s.c:12:0
+  After events:
+    CT: msort_with_tmp at qsort_s.c:17:8
+  Occurrences: 6229
+
+CoordinatesChangedLarge
+  Before events:
+    CT: oidhash at hashmap.h:132:0
+  After events:
+    CT: oidhash at hashmap.h:138:2
+  Occurrences: 130
+
+CoordinatesChangedLarge
+  Before events:
+    CT: preload_index at preload-index.c:99:0
+  After events:
+    CT: preload_index at preload-index.c:164:1
+  Occurrences: 4
+
+CoordinatesChangedLarge
+  Before events:
+    RF: do_lookup_replace_object at replace-object.c:80:4
+  After events:
+    RF: do_lookup_replace_object at replace-object.c:84:1
+  Occurrences: 75
+
+CoordinatesChangedLarge
+  Before events:
+    RF: git_config_set_multivar_in_file_gently at config.c:3441:2
+  After events:
+    RF: git_config_set_multivar_in_file_gently at config.c:3447:1
+  Occurrences: 235
+
+CoordinatesChangedLarge
+  Before events:
+    RF: preload_index at preload-index.c:106:3
+  After events:
+    RF: preload_index at preload-index.c:164:1
+  Occurrences: 4
+
+CoordinatesChangedLarge
+  Before events:
+    RF: unpack_trees at unpack-trees.c:2070:2
+  After events:
+    RF: unpack_trees at unpack-trees.c:2080:1
+  Occurrences: 1
+
+CoordinatesChangedLarge
+  Before events:
+    RF: verify_utf8 at commit.c:1513:4
+  After events:
+    RF: verify_utf8 at commit.c:1525:1
+  Occurrences: 4
+
+CoordinatesChangedLarge
+  Before events:
+    RF: xopen at wrapper.c:186:4
+  After events:
+    RF: xopen at wrapper.c:199:1
+  Occurrences: 175
+
 LibraryCallAdded
   After events:
     CF: copy_templates_1 at init-db.c:44:15
@@ -1798,10 +1924,10 @@ LibraryCallAdded
 
 LibraryCallAdded
   After events:
-    CF: create_from_disk at read-cache.c:1982:3
-    CT: Jump to external code for memcpy
-    RF: Jump to external code for memcpy
-  Occurrences: 4
+    CF: dir_clear at dir.c:3426:2
+    CT: Jump to external code for memset
+    RF: Jump to external code for memset
+  Occurrences: 2
 
 LibraryCallAdded
   After events:
@@ -1833,38 +1959,24 @@ LibraryCallAdded
 
 LibraryCallAdded
   After events:
+    CF: handle_alias at git.c:339:45
+    CT: Jump to external code for __errno_location
+    RF: Jump to external code for __errno_location
+  Occurrences: 2
+
+LibraryCallAdded
+  After events:
+    CF: is_dir_file at path.c:87:10
+    CT: Jump to external code for strcmp
+    RF: Jump to external code for strcmp
+  Occurrences: 5
+
+LibraryCallAdded
+  After events:
     CF: is_dup_ref at ref-cache.c:209:6
     CT: Jump to external code for strcmp
     RF: Jump to external code for strcmp
   Occurrences: 18
-
-LibraryCallAdded
-  After events:
-    CF: msort_with_tmp at qsort_s.c:32:4
-    CT: Jump to external code for memcpy
-    RF: Jump to external code for memcpy
-  Occurrences: 9719
-
-LibraryCallAdded
-  After events:
-    CF: msort_with_tmp at qsort_s.c:37:4
-    CT: Jump to external code for memcpy
-    RF: Jump to external code for memcpy
-  Occurrences: 10065
-
-LibraryCallAdded
-  After events:
-    CF: msort_with_tmp at qsort_s.c:44:3
-    CT: Jump to external code for memcpy
-    RF: Jump to external code for memcpy
-  Occurrences: 1389
-
-LibraryCallAdded
-  After events:
-    CF: msort_with_tmp at qsort_s.c:45:2
-    CT: Jump to external code for memcpy
-    RF: Jump to external code for memcpy
-  Occurrences: 3101
 
 LibraryCallAdded
   After events:
@@ -1916,6 +2028,17 @@ LibraryCallReplaced
     CT: Jump to external code for bcmp
     RF: Jump to external code for bcmp
   Occurrences: 290
+
+LibraryCallReplaced
+  Before events:
+    CF: is_dir_file at path.c:82:12
+    CT: Jump to external code for strlen
+    RF: Jump to external code for strlen
+  After events:
+    CF: is_dir_file at path.c:87:10
+    CT: Jump to external code for strcmp
+    RF: Jump to external code for strcmp
+  Occurrences: 5
 
 LibraryCallReplaced
   Before events:
@@ -2335,13 +2458,6 @@ LibraryCallRemoved
 
 LibraryCallRemoved
   Before events:
-    CF: create_from_disk at read-cache.c:1982:3
-    CT: Jump to external code for memcpy
-    RF: Jump to external code for memcpy
-  Occurrences: 4
-
-LibraryCallRemoved
-  Before events:
     CF: diffcore_rename_extended at diffcore-rename.c:1392:40
     CT: Jump to external code for memset
     RF: Jump to external code for memset
@@ -2352,7 +2468,7 @@ LibraryCallRemoved
     CF: dir_clear at dir.c:3398:20
     CT: Jump to external code for memset
     RF: Jump to external code for memset
-  Occurrences: 3
+  Occurrences: 5
 
 LibraryCallRemoved
   Before events:
@@ -2520,7 +2636,7 @@ LibraryCallRemoved
     CF: handle_alias at git.c:415:2
     CT: Jump to external code for __errno_location
     RF: Jump to external code for __errno_location
-  Occurrences: 1
+  Occurrences: 3
 
 LibraryCallRemoved
   Before events:
@@ -2597,7 +2713,7 @@ LibraryCallRemoved
     CF: is_dir_file at path.c:82:12
     CT: Jump to external code for strlen
     RF: Jump to external code for strlen
-  Occurrences: 662
+  Occurrences: 667
 
 LibraryCallRemoved
   Before events:
@@ -2661,34 +2777,6 @@ LibraryCallRemoved
     CT: Jump to external code for memset
     RF: Jump to external code for memset
   Occurrences: 20
-
-LibraryCallRemoved
-  Before events:
-    CF: msort_with_tmp at qsort_s.c:32:4
-    CT: Jump to external code for memcpy
-    RF: Jump to external code for memcpy
-  Occurrences: 9719
-
-LibraryCallRemoved
-  Before events:
-    CF: msort_with_tmp at qsort_s.c:37:4
-    CT: Jump to external code for memcpy
-    RF: Jump to external code for memcpy
-  Occurrences: 10065
-
-LibraryCallRemoved
-  Before events:
-    CF: msort_with_tmp at qsort_s.c:44:3
-    CT: Jump to external code for memcpy
-    RF: Jump to external code for memcpy
-  Occurrences: 1389
-
-LibraryCallRemoved
-  Before events:
-    CF: msort_with_tmp at qsort_s.c:45:2
-    CT: Jump to external code for memcpy
-    RF: Jump to external code for memcpy
-  Occurrences: 3101
 
 LibraryCallRemoved
   Before events:
@@ -3315,13 +3403,6 @@ ProgramCallRemoved
 
 ProgramCallRemoved
   Before events:
-    CF: create_from_disk at read-cache.c:1910:10
-    CT: get_be16 at bswap.h:149:0
-    RF: get_be16 at bswap.h:151:2
-  Occurrences: 4
-
-ProgramCallRemoved
-  Before events:
     CF: die_builtin at usage.c:71:29
     CT: get_die_message_routine at usage.c:128:0
     RF: get_die_message_routine at usage.c:129:2
@@ -3494,13 +3575,6 @@ ProgramCallRemoved
     CT: st_mult at git-compat-util.h:991:0
     RF: st_mult at git-compat-util.h:995:2
   Occurrences: 8
-
-ProgramCallRemoved
-  Before events:
-    CF: refresh_index at read-cache.c:1638:2
-    CT: preload_index at preload-index.c:99:0
-    RF: preload_index at preload-index.c:106:3
-  Occurrences: 4
 
 ProgramCallRemoved
   Before events:
@@ -3692,16 +3766,6 @@ Uncategorised
   After events:
     CF: attr_check_initl at attr.c:582:10
   Occurrences: 10
-
-Uncategorised
-  After events:
-    CF: attr_start at attr.c:1143:2
-  Occurrences: 153
-
-Uncategorised
-  After events:
-    CF: attr_start at attr.c:1144:2
-  Occurrences: 153
 
 Uncategorised
   After events:
@@ -3988,68 +4052,6 @@ Uncategorised
 
 Uncategorised
   After events:
-    CF: create_from_disk at read-cache.c:1910:10
-    CT: get_be16 at bswap.h:151:29
-    RF: get_be16 at bswap.h:151:2
-  Occurrences: 4
-
-Uncategorised
-  After events:
-    CF: create_from_disk at read-cache.c:1957:34
-  Occurrences: 4
-
-Uncategorised
-  After events:
-    CF: create_from_disk at read-cache.c:1959:34
-  Occurrences: 4
-
-Uncategorised
-  After events:
-    CF: create_from_disk at read-cache.c:1961:35
-  Occurrences: 4
-
-Uncategorised
-  After events:
-    CF: create_from_disk at read-cache.c:1963:35
-  Occurrences: 4
-
-Uncategorised
-  After events:
-    CF: create_from_disk at read-cache.c:1965:30
-  Occurrences: 4
-
-Uncategorised
-  After events:
-    CF: create_from_disk at read-cache.c:1966:30
-  Occurrences: 4
-
-Uncategorised
-  After events:
-    CF: create_from_disk at read-cache.c:1967:17
-  Occurrences: 4
-
-Uncategorised
-  After events:
-    CF: create_from_disk at read-cache.c:1968:30
-  Occurrences: 4
-
-Uncategorised
-  After events:
-    CF: create_from_disk at read-cache.c:1969:30
-  Occurrences: 4
-
-Uncategorised
-  After events:
-    CF: create_from_disk at read-cache.c:1970:30
-  Occurrences: 4
-
-Uncategorised
-  After events:
-    CF: dir_clear at dir.c:3426:2
-  Occurrences: 2
-
-Uncategorised
-  After events:
     CF: dir_prefix at path.c:74:12
   Occurrences: 2
 
@@ -4092,11 +4094,6 @@ Uncategorised
   After events:
     CF: get_home_gitattributes at attr.c:817:25
   Occurrences: 2
-
-Uncategorised
-  After events:
-    CF: get_oid_basic at object-name.c:938:13
-  Occurrences: 22
 
 Uncategorised
   After events:
@@ -4229,21 +4226,6 @@ Uncategorised
 
 Uncategorised
   After events:
-    CF: git_qsort_s at qsort_s.c:60:2
-  Occurrences: 27
-
-Uncategorised
-  After events:
-    CF: gm_time_t at date.c:58:6
-  Occurrences: 4
-
-Uncategorised
-  After events:
-    CF: handle_alias at git.c:339:45
-  Occurrences: 2
-
-Uncategorised
-  After events:
     CF: handle_attr_line at attr.c:660:6
   Occurrences: 2
 
@@ -4280,22 +4262,7 @@ Uncategorised
 Uncategorised
   After events:
     CF: is_dir_file at path.c:87:10
-  Occurrences: 6
-
-Uncategorised
-  After events:
-    CF: is_url at url.c:22:15
-  Occurrences: 2
-
-Uncategorised
-  After events:
-    CF: load_all_cache_entries at read-cache.c:2168:5
-  Occurrences: 4
-
-Uncategorised
-  After events:
-    CF: load_cache_entry_block at read-cache.c:2146:8
-  Occurrences: 4
+  Occurrences: 1
 
 Uncategorised
   After events:
@@ -4314,33 +4281,8 @@ Uncategorised
 
 Uncategorised
   After events:
-    CF: msort_with_tmp at qsort_s.c:25:2
-  Occurrences: 3101
-
-Uncategorised
-  After events:
-    CF: msort_with_tmp at qsort_s.c:26:2
-  Occurrences: 3101
-
-Uncategorised
-  After events:
-    CF: msort_with_tmp at qsort_s.c:31:7
-    CT: cmp_items at string-list.c:234:0
-    CF: cmp_items at string-list.c:238:9
-    CT: Jump to external code for strcmp
-    RF: Jump to external code for strcmp
-    RF: cmp_items at string-list.c:238:2
-  Occurrences: 19784
-
-Uncategorised
-  After events:
     CF: name_compare at read-cache.c:548:12
   Occurrences: 2
-
-Uncategorised
-  After events:
-    CF: oidmap_get at oidmap.c:38:42
-  Occurrences: 75
 
 Uncategorised
   After events:
@@ -4458,11 +4400,6 @@ Uncategorised
   After events:
     CF: prepare_attr_stack at attr.c:902:2
   Occurrences: 3
-
-Uncategorised
-  After events:
-    CF: raw_object_store_new at object.c:526:2
-  Occurrences: 153
 
 Uncategorised
   After events:
@@ -4594,11 +4531,6 @@ Uncategorised
     RF: fspathcmp at dir.c:78:2
     RF: treat_path at dir.c:2361:1
   Occurrences: 1
-
-Uncategorised
-  After events:
-    CF: refresh_index at read-cache.c:1638:2
-  Occurrences: 4
 
 Uncategorised
   After events:
@@ -4744,11 +4676,6 @@ Uncategorised
 
 Uncategorised
   After events:
-    CF: transport_get at transport.c:1086:10
-  Occurrences: 1
-
-Uncategorised
-  After events:
     CF: treat_path at dir.c:2288:41
     CT: fspathcmp at dir.c:77:0
     CF: fspathcmp at dir.c:78:42
@@ -4868,7 +4795,7 @@ Uncategorised
 Uncategorised
   After events:
     CT: Jump to external code for __errno_location
-  Occurrences: 9
+  Occurrences: 7
 
 Uncategorised
   After events:
@@ -4888,7 +4815,7 @@ Uncategorised
 Uncategorised
   After events:
     CT: Jump to external code for memset
-  Occurrences: 18
+  Occurrences: 16
 
 Uncategorised
   After events:
@@ -4908,7 +4835,7 @@ Uncategorised
 Uncategorised
   After events:
     CT: Jump to external code for strcmp
-  Occurrences: 10
+  Occurrences: 5
 
 Uncategorised
   After events:
@@ -4957,11 +4884,6 @@ Uncategorised
 
 Uncategorised
   After events:
-    CT: ambiguous_path at object-name.c:834:20
-  Occurrences: 22
-
-Uncategorised
-  After events:
     CT: attr_check_initl at attr.c:558:0
   Occurrences: 2
 
@@ -5007,16 +4929,6 @@ Uncategorised
 
 Uncategorised
   After events:
-    CT: create_from_disk at read-cache.c:1892:0
-  Occurrences: 4
-
-Uncategorised
-  After events:
-    CT: date_overflows at date.c:1368:6
-  Occurrences: 4
-
-Uncategorised
-  After events:
     CT: dir_prefix at path.c:73:0
   Occurrences: 2
 
@@ -5024,21 +4936,6 @@ Uncategorised
   After events:
     CT: do_git_path at path.c:432:0
   Occurrences: 2
-
-Uncategorised
-  After events:
-    CT: dummy_pthread_init at thread-utils.c:111:2
-  Occurrences: 459
-
-Uncategorised
-  After events:
-    CT: estimate_cache_size at read-cache.c:2074:23
-  Occurrences: 4
-
-Uncategorised
-  After events:
-    CT: get_be32 at bswap.h:160:24
-  Occurrences: 40
 
 Uncategorised
   After events:
@@ -5137,11 +5034,6 @@ Uncategorised
 
 Uncategorised
   After events:
-    CT: is_urlschemechar at url.c:14:20
-  Occurrences: 3
-
-Uncategorised
-  After events:
     CT: memory_limit_check at wrapper.c:18:0
   Occurrences: 62
 
@@ -5149,11 +5041,6 @@ Uncategorised
   After events:
     CT: mkpathdup at path.c:504:0
   Occurrences: 2
-
-Uncategorised
-  After events:
-    CT: msort_with_tmp at qsort_s.c:17:8
-  Occurrences: 6229
 
 Uncategorised
   After events:
@@ -5189,11 +5076,6 @@ Uncategorised
   After events:
     CT: path_in_sparse_checkout_1 at dir.c:1456:0
   Occurrences: 2
-
-Uncategorised
-  After events:
-    CT: preload_index at preload-index.c:164:1
-  Occurrences: 4
 
 Uncategorised
   After events:
@@ -5358,7 +5240,7 @@ Uncategorised
 Uncategorised
   After events:
     RF: Jump to external code for __errno_location
-  Occurrences: 9
+  Occurrences: 7
 
 Uncategorised
   After events:
@@ -5378,7 +5260,7 @@ Uncategorised
 Uncategorised
   After events:
     RF: Jump to external code for memset
-  Occurrences: 18
+  Occurrences: 16
 
 Uncategorised
   After events:
@@ -5398,7 +5280,7 @@ Uncategorised
 Uncategorised
   After events:
     RF: Jump to external code for strcmp
-  Occurrences: 10
+  Occurrences: 5
 
 Uncategorised
   After events:
@@ -5447,11 +5329,6 @@ Uncategorised
 
 Uncategorised
   After events:
-    RF: ambiguous_path at object-name.c:851:2
-  Occurrences: 22
-
-Uncategorised
-  After events:
     RF: attr_check_initl at attr.c:588:2
   Occurrences: 2
 
@@ -5497,16 +5374,6 @@ Uncategorised
 
 Uncategorised
   After events:
-    RF: create_from_disk at read-cache.c:1985:2
-  Occurrences: 4
-
-Uncategorised
-  After events:
-    RF: date_overflows at date.c:1378:1
-  Occurrences: 4
-
-Uncategorised
-  After events:
     RF: dir_prefix at path.c:75:2
   Occurrences: 2
 
@@ -5514,26 +5381,6 @@ Uncategorised
   After events:
     RF: do_git_path at path.c:442:1
   Occurrences: 2
-
-Uncategorised
-  After events:
-    RF: do_lookup_replace_object at replace-object.c:84:1
-  Occurrences: 75
-
-Uncategorised
-  After events:
-    RF: dummy_pthread_init at thread-utils.c:111:2
-  Occurrences: 459
-
-Uncategorised
-  After events:
-    RF: estimate_cache_size at read-cache.c:2074:2
-  Occurrences: 4
-
-Uncategorised
-  After events:
-    RF: get_be32 at bswap.h:158:2
-  Occurrences: 40
 
 Uncategorised
   After events:
@@ -5574,11 +5421,6 @@ Uncategorised
   After events:
     RF: git_config_check_init at config.c:2553:1
   Occurrences: 2
-
-Uncategorised
-  After events:
-    RF: git_config_set_multivar_in_file_gently at config.c:3447:1
-  Occurrences: 235
 
 Uncategorised
   After events:
@@ -5637,11 +5479,6 @@ Uncategorised
 
 Uncategorised
   After events:
-    RF: is_urlschemechar at url.c:16:2
-  Occurrences: 3
-
-Uncategorised
-  After events:
     RF: memory_limit_check at wrapper.c:35:1
   Occurrences: 62
 
@@ -5649,11 +5486,6 @@ Uncategorised
   After events:
     RF: mkpathdup at path.c:511:2
   Occurrences: 2
-
-Uncategorised
-  After events:
-    RF: msort_with_tmp at qsort_s.c:46:1
-  Occurrences: 6229
 
 Uncategorised
   After events:
@@ -5689,11 +5521,6 @@ Uncategorised
   After events:
     RF: path_in_sparse_checkout_1 at dir.c:1492:1
   Occurrences: 2
-
-Uncategorised
-  After events:
-    RF: preload_index at preload-index.c:164:1
-  Occurrences: 4
 
 Uncategorised
   After events:
@@ -5837,16 +5664,6 @@ Uncategorised
 
 Uncategorised
   After events:
-    RF: unpack_trees at unpack-trees.c:2080:1
-  Occurrences: 1
-
-Uncategorised
-  After events:
-    RF: verify_utf8 at commit.c:1525:1
-  Occurrences: 4
-
-Uncategorised
-  After events:
     RF: warn_on_fopen_errors at wrapper.c:405:1
   Occurrences: 6
 
@@ -5859,11 +5676,6 @@ Uncategorised
   After events:
     RF: xdg_config_home_for at path.c:1538:1
   Occurrences: 2
-
-Uncategorised
-  After events:
-    RF: xopen at wrapper.c:199:1
-  Occurrences: 175
 
 Uncategorised
   After events:
@@ -5904,8 +5716,30 @@ Uncategorised
     CT: git_is_dir_sep at git-compat-util.h:447:0
     RF: git_is_dir_sep at git-compat-util.h:448:2
     CF: is_dir_file at path.c:87:10
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: adjust_git_path at path.c:403:6
+    CT: is_dir_file at path.c:81:0
+    CF: is_dir_file at path.c:82:12
+    CT: Jump to external code for strlen
+    RF: Jump to external code for strlen
+    CF: is_dir_file at path.c:83:6
+    CT: Jump to external code for strncmp
+    RF: Jump to external code for strncmp
+    CF: is_dir_file at path.c:83:33
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: is_dir_file at path.c:85:9
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: is_dir_file at path.c:85:9
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: is_dir_file at path.c:87:10
     CT: Jump to external code for strcmp
-  Occurrences: 2
+  Occurrences: 1
 
 Uncategorised
   Before events:
@@ -5933,18 +5767,6 @@ Uncategorised
     CF: adjust_git_path at path.c:406:12
     CT: Jump to external code for strcmp
   Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: attr_start at attr.c:1143:2
-    CT: dummy_pthread_init at thread-utils.c:101:0
-  Occurrences: 153
-
-Uncategorised
-  Before events:
-    CF: attr_start at attr.c:1144:2
-    CT: dummy_pthread_init at thread-utils.c:101:0
-  Occurrences: 153
 
 Uncategorised
   Before events:
@@ -6148,139 +5970,8 @@ Uncategorised
 
 Uncategorised
   Before events:
-    CF: dir_clear at dir.c:3398:20
-  Occurrences: 2
-
-Uncategorised
-  Before events:
-    CF: get_oid_basic at object-name.c:938:13
-    CT: ambiguous_path at object-name.c:830:0
-  Occurrences: 22
-
-Uncategorised
-  Before events:
-    CF: git_qsort_s at qsort_s.c:60:2
-    CT: msort_with_tmp at qsort_s.c:12:0
-  Occurrences: 11
-
-Uncategorised
-  Before events:
-    CF: git_qsort_s at qsort_s.c:60:2
-    CT: msort_with_tmp at qsort_s.c:12:0
-    CF: msort_with_tmp at qsort_s.c:25:2
-    CT: msort_with_tmp at qsort_s.c:12:0
-    CF: msort_with_tmp at qsort_s.c:25:2
-    CT: msort_with_tmp at qsort_s.c:12:0
-    CF: msort_with_tmp at qsort_s.c:25:2
-    CT: msort_with_tmp at qsort_s.c:12:0
-    CF: msort_with_tmp at qsort_s.c:25:2
-    CT: msort_with_tmp at qsort_s.c:12:0
-    CF: msort_with_tmp at qsort_s.c:25:2
-    CT: msort_with_tmp at qsort_s.c:12:0
-    CF: msort_with_tmp at qsort_s.c:25:2
-    CT: msort_with_tmp at qsort_s.c:12:0
-    CF: msort_with_tmp at qsort_s.c:25:2
-    CT: msort_with_tmp at qsort_s.c:12:0
-    RF: msort_with_tmp at qsort_s.c:46:1
-    CF: msort_with_tmp at qsort_s.c:26:2
-    CT: msort_with_tmp at qsort_s.c:12:0
-    CF: msort_with_tmp at qsort_s.c:25:2
-    CT: msort_with_tmp at qsort_s.c:12:0
-    RF: msort_with_tmp at qsort_s.c:46:1
-    CF: msort_with_tmp at qsort_s.c:26:2
-    CT: msort_with_tmp at qsort_s.c:12:0
-    RF: msort_with_tmp at qsort_s.c:46:1
-    CF: msort_with_tmp at qsort_s.c:31:7
-    CT: cmp_items at string-list.c:234:0
-    CF: cmp_items at string-list.c:238:9
-    CT: Jump to external code for strcmp
-    RF: Jump to external code for strcmp
-    [...744 more events...]
-  Occurrences: 3
-
-Uncategorised
-  Before events:
-    CF: git_qsort_s at qsort_s.c:60:2
-    CT: msort_with_tmp at qsort_s.c:12:0
-    CF: msort_with_tmp at qsort_s.c:25:2
-    CT: msort_with_tmp at qsort_s.c:12:0
-    CF: msort_with_tmp at qsort_s.c:25:2
-    CT: msort_with_tmp at qsort_s.c:12:0
-    CF: msort_with_tmp at qsort_s.c:25:2
-    CT: msort_with_tmp at qsort_s.c:12:0
-    CF: msort_with_tmp at qsort_s.c:25:2
-    CT: msort_with_tmp at qsort_s.c:12:0
-    CF: msort_with_tmp at qsort_s.c:25:2
-    CT: msort_with_tmp at qsort_s.c:12:0
-    CF: msort_with_tmp at qsort_s.c:25:2
-    CT: msort_with_tmp at qsort_s.c:12:0
-    CF: msort_with_tmp at qsort_s.c:25:2
-    CT: msort_with_tmp at qsort_s.c:12:0
-    RF: msort_with_tmp at qsort_s.c:46:1
-    CF: msort_with_tmp at qsort_s.c:26:2
-    CT: msort_with_tmp at qsort_s.c:12:0
-    CF: msort_with_tmp at qsort_s.c:25:2
-    CT: msort_with_tmp at qsort_s.c:12:0
-    RF: msort_with_tmp at qsort_s.c:46:1
-    CF: msort_with_tmp at qsort_s.c:26:2
-    CT: msort_with_tmp at qsort_s.c:12:0
-    RF: msort_with_tmp at qsort_s.c:46:1
-    CF: msort_with_tmp at qsort_s.c:31:7
-    CT: cmp_items at string-list.c:234:0
-    CF: cmp_items at string-list.c:238:9
-    CT: Jump to external code for strcmp
-    RF: Jump to external code for strcmp
-    [...748 more events...]
-  Occurrences: 13
-
-Uncategorised
-  Before events:
-    CF: gm_time_t at date.c:58:6
-    CT: date_overflows at date.c:1364:0
-  Occurrences: 4
-
-Uncategorised
-  Before events:
-    CF: handle_alias at git.c:415:2
-  Occurrences: 2
-
-Uncategorised
-  Before events:
-    CF: is_dir_file at path.c:82:12
-  Occurrences: 5
-
-Uncategorised
-  Before events:
-    CF: is_url at url.c:22:15
-    CT: is_urlschemechar at url.c:5:0
-  Occurrences: 2
-
-Uncategorised
-  Before events:
-    CF: load_all_cache_entries at read-cache.c:2168:5
-    CT: estimate_cache_size at read-cache.c:2067:0
-  Occurrences: 4
-
-Uncategorised
-  Before events:
-    CF: msort_with_tmp at qsort_s.c:31:7
-    CT: cmp_items at string-list.c:234:0
-    CF: cmp_items at string-list.c:238:9
-    CT: Jump to external code for strcmp
-    RF: Jump to external code for strcmp
-    RF: cmp_items at string-list.c:238:2
-  Occurrences: 19784
-
-Uncategorised
-  Before events:
     CF: prepare_attr_stack at attr.c:902:2
   Occurrences: 3
-
-Uncategorised
-  Before events:
-    CF: raw_object_store_new at object.c:526:2
-    CT: dummy_pthread_init at thread-utils.c:101:0
-  Occurrences: 153
 
 Uncategorised
   Before events:
@@ -6432,12 +6123,6 @@ Uncategorised
 
 Uncategorised
   Before events:
-    CF: transport_get at transport.c:1086:10
-    CT: is_urlschemechar at url.c:5:0
-  Occurrences: 1
-
-Uncategorised
-  Before events:
     CF: treat_path at dir.c:2288:41
     CT: fspathcmp at dir.c:77:0
     CF: fspathcmp at dir.c:78:42
@@ -6505,28 +6190,6 @@ Uncategorised
 
 Uncategorised
   Before events:
-    CT: Jump to external code for __errno_location
-  Occurrences: 2
-
-Uncategorised
-  Before events:
-    CT: Jump to external code for memset
-  Occurrences: 2
-
-Uncategorised
-  Before events:
-    CT: Jump to external code for strlen
-  Occurrences: 5
-
-Uncategorised
-  Before events:
-    CT: Jump to external code for strlen
-  After events:
-    CT: Jump to external code for strcmp
-  Occurrences: 5
-
-Uncategorised
-  Before events:
     CT: all_attrs_init at attr.c:132:0
   Occurrences: 10
 
@@ -6549,11 +6212,6 @@ Uncategorised
   Before events:
     CT: copy_templates_1 at init-db.c:31:0
   Occurrences: 155
-
-Uncategorised
-  Before events:
-    CT: create_from_disk at read-cache.c:1892:0
-  Occurrences: 4
 
 Uncategorised
   Before events:
@@ -6592,35 +6250,8 @@ Uncategorised
 
 Uncategorised
   Before events:
-    RF: Jump to external code for __errno_location
-  Occurrences: 2
-
-Uncategorised
-  Before events:
-    RF: Jump to external code for memset
-  Occurrences: 2
-
-Uncategorised
-  Before events:
-    RF: Jump to external code for strlen
-  Occurrences: 5
-
-Uncategorised
-  Before events:
-    RF: Jump to external code for strlen
-  After events:
-    RF: Jump to external code for strcmp
-  Occurrences: 5
-
-Uncategorised
-  Before events:
     RF: all_attrs_init at attr.c:173:1
   Occurrences: 10
-
-Uncategorised
-  Before events:
-    RF: ambiguous_path at object-name.c:851:2
-  Occurrences: 22
 
 Uncategorised
   Before events:
@@ -6644,58 +6275,13 @@ Uncategorised
 
 Uncategorised
   Before events:
-    RF: create_from_disk at read-cache.c:1985:2
-  Occurrences: 4
-
-Uncategorised
-  Before events:
-    RF: date_overflows at date.c:1378:1
-  Occurrences: 4
-
-Uncategorised
-  Before events:
-    RF: do_lookup_replace_object at replace-object.c:80:4
-  Occurrences: 75
-
-Uncategorised
-  Before events:
-    RF: dummy_pthread_init at thread-utils.c:111:2
-  Occurrences: 459
-
-Uncategorised
-  Before events:
-    RF: estimate_cache_size at read-cache.c:2074:2
-  Occurrences: 4
-
-Uncategorised
-  Before events:
-    RF: get_be32 at bswap.h:158:2
-  Occurrences: 40
-
-Uncategorised
-  Before events:
     RF: git_attr_internal at attr.c:232:1
   Occurrences: 26
 
 Uncategorised
   Before events:
-    RF: git_config_set_multivar_in_file_gently at config.c:3441:2
-  Occurrences: 235
-
-Uncategorised
-  Before events:
     RF: is_dir_file at path.c:88:1
   Occurrences: 3
-
-Uncategorised
-  Before events:
-    RF: is_urlschemechar at url.c:16:2
-  Occurrences: 3
-
-Uncategorised
-  Before events:
-    RF: msort_with_tmp at qsort_s.c:46:1
-  Occurrences: 6229
 
 Uncategorised
   Before events:
@@ -6722,21 +6308,6 @@ Uncategorised
     RF: treat_path at dir.c:2361:1
   Occurrences: 57
 
-Uncategorised
-  Before events:
-    RF: unpack_trees at unpack-trees.c:2070:2
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    RF: verify_utf8 at commit.c:1513:4
-  Occurrences: 4
-
-Uncategorised
-  Before events:
-    RF: xopen at wrapper.c:186:4
-  Occurrences: 175
-
 ## Divergences with unique coordinates by type
 
 CoordinatesRemoved
@@ -6745,22 +6316,25 @@ CoordinatesRemoved
 CoordinatesChangedSmall
   Unique divergence coordinates: 139
 
+CoordinatesChangedLarge
+  Unique divergence coordinates: 18
+
 LibraryCallAdded
-  Unique divergence coordinates: 17
+  Unique divergence coordinates: 15
 
 LibraryCallReplaced
-  Unique divergence coordinates: 10
+  Unique divergence coordinates: 11
 
 LibraryCallRemoved
-  Unique divergence coordinates: 176
+  Unique divergence coordinates: 171
 
 ProgramCallRemoved
-  Unique divergence coordinates: 56
+  Unique divergence coordinates: 54
 
 Uncategorised
-  Unique divergence coordinates: 489
+  Unique divergence coordinates: 402
 
 ## Summary
 
-998 unique divergence coordinates
-370989 divergence occurrences
+921 unique divergence coordinates
+261560 divergence occurrences

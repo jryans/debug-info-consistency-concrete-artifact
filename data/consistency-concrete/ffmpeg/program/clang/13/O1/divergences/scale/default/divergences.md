@@ -69,6 +69,13 @@ CoordinatesRemoved
 
 CoordinatesRemoved
   Before events:
+    CF: decode_nal_units at h264dec.c:778:13
+  After events:
+    CF: decode_nal_units at h264dec.c:0:0
+  Occurrences: 2
+
+CoordinatesRemoved
+  Before events:
     CF: do_video_out at ffmpeg.c:1134:17
   After events:
     CF: do_video_out at ffmpeg.c:0:0
@@ -101,6 +108,13 @@ CoordinatesRemoved
   After events:
     CF: ff_default_get_video_buffer2 at video.c:0:0
   Occurrences: 1
+
+CoordinatesRemoved
+  Before events:
+    CF: ff_h264_decode_picture_parameter_set at h264_ps.c:824:25
+  After events:
+    CF: ff_h264_decode_picture_parameter_set at h264_ps.c:0:0
+  Occurrences: 3
 
 CoordinatesRemoved
   Before events:
@@ -143,6 +157,13 @@ CoordinatesRemoved
   After events:
     CF: hl_decode_mb_idct_luma at h264_mb.c:0:0
   Occurrences: 654
+
+CoordinatesRemoved
+  Before events:
+    CF: hl_decode_mb_predict_luma at h264_mb.c:696:29
+  After events:
+    CF: hl_decode_mb_predict_luma at h264_mb.c:0:0
+  Occurrences: 324
 
 CoordinatesRemoved
   Before events:
@@ -4370,13 +4391,6 @@ CoordinatesChangedSmall
     CF: do_video_out at ffmpeg.c:1103:20
   After events:
     CF: do_video_out at ffmpeg.c:1100:44
-  Occurrences: 3
-
-CoordinatesChangedSmall
-  Before events:
-    CF: ff_h264_decode_seq_parameter_set at h264_ps.c:381:5
-  After events:
-    CF: ff_h264_decode_seq_parameter_set at h264_ps.c:382:5
   Occurrences: 3
 
 CoordinatesChangedSmall
@@ -10546,37 +10560,849 @@ CoordinatesChangedSmall
     RF: psy_lame_window at aacpsy.c:1020:1
   Occurrences: 6
 
+CoordinatesChangedLarge
+  Before events:
+    CF: clear_context at mpegvideo.c:663:5
+  After events:
+    CF: clear_context at mpegvideo.c:668:5
+  Occurrences: 1
+
+CoordinatesChangedLarge
+  Before events:
+    CF: clear_context at mpegvideo.c:665:5
+  After events:
+    CF: clear_context at mpegvideo.c:692:25
+  Occurrences: 1
+
+CoordinatesChangedLarge
+  Before events:
+    CF: decode_residual at h264_cavlc.c:445:27
+  After events:
+    CF: decode_residual at h264_cavlc.c:566:30
+  Occurrences: 100
+
+CoordinatesChangedLarge
+  Before events:
+    CF: decode_residual at h264_cavlc.c:445:27
+  After events:
+    CF: decode_residual at h264_cavlc.c:572:25
+  Occurrences: 154
+
+CoordinatesChangedLarge
+  Before events:
+    CF: decode_residual at h264_cavlc.c:445:27
+  After events:
+    CF: decode_residual at h264_cavlc.c:613:9
+  Occurrences: 130
+
+CoordinatesChangedLarge
+  Before events:
+    CF: decode_residual at h264_cavlc.c:451:26
+  After events:
+    CF: decode_residual at h264_cavlc.c:455:26
+  Occurrences: 56
+
+CoordinatesChangedLarge
+  Before events:
+    CF: decode_residual at h264_cavlc.c:452:26
+  After events:
+    CF: decode_residual at h264_cavlc.c:572:25
+  Occurrences: 346
+
+CoordinatesChangedLarge
+  Before events:
+    CF: decode_residual at h264_cavlc.c:452:26
+  After events:
+    CF: decode_residual at h264_cavlc.c:613:9
+  Occurrences: 308
+
+CoordinatesChangedLarge
+  Before events:
+    CF: decode_residual at h264_cavlc.c:455:26
+  After events:
+    CF: decode_residual at h264_cavlc.c:451:26
+  Occurrences: 56
+
+CoordinatesChangedLarge
+  Before events:
+    CF: decode_residual at h264_cavlc.c:456:26
+  After events:
+    CF: decode_residual at h264_cavlc.c:445:27
+  Occurrences: 202
+
+CoordinatesChangedLarge
+  Before events:
+    CF: decode_residual at h264_cavlc.c:456:26
+  After events:
+    CF: decode_residual at h264_cavlc.c:566:30
+  Occurrences: 282
+
+CoordinatesChangedLarge
+  Before events:
+    CF: decode_residual at h264_cavlc.c:456:26
+  After events:
+    CF: decode_residual at h264_cavlc.c:572:25
+  Occurrences: 4032
+
+CoordinatesChangedLarge
+  Before events:
+    CF: decode_residual at h264_cavlc.c:456:26
+  After events:
+    CF: decode_residual at h264_cavlc.c:613:9
+  Occurrences: 4316
+
+CoordinatesChangedLarge
+  Before events:
+    CF: decode_residual at h264_cavlc.c:484:20
+  After events:
+    CF: decode_residual at h264_cavlc.c:475:9
+  Occurrences: 4580
+
+CoordinatesChangedLarge
+  Before events:
+    CF: decode_residual at h264_cavlc.c:487:9
+  After events:
+    CF: decode_residual at h264_cavlc.c:476:5
+  Occurrences: 4580
+
+CoordinatesChangedLarge
+  Before events:
+    CF: decode_residual at h264_cavlc.c:531:24
+  After events:
+    CF: decode_residual at h264_cavlc.c:484:20
+  Occurrences: 3542
+
+CoordinatesChangedLarge
+  Before events:
+    CF: decode_residual at h264_cavlc.c:534:13
+  After events:
+    CF: decode_residual at h264_cavlc.c:487:9
+  Occurrences: 1672
+
+CoordinatesChangedLarge
+  Before events:
+    CF: decode_residual at h264_cavlc.c:566:30
+  After events:
+    CF: decode_residual at h264_cavlc.c:445:27
+  Occurrences: 2
+
+CoordinatesChangedLarge
+  Before events:
+    CF: decode_residual at h264_cavlc.c:566:30
+  After events:
+    CF: decode_residual at h264_cavlc.c:572:25
+  Occurrences: 8
+
+CoordinatesChangedLarge
+  Before events:
+    CF: decode_residual at h264_cavlc.c:566:30
+  After events:
+    CF: decode_residual at h264_cavlc.c:613:9
+  Occurrences: 2
+
+CoordinatesChangedLarge
+  Before events:
+    CF: decode_residual at h264_cavlc.c:572:25
+  After events:
+    CF: decode_residual at h264_cavlc.c:445:27
+  Occurrences: 2
+
+CoordinatesChangedLarge
+  Before events:
+    CF: decode_residual at h264_cavlc.c:572:25
+  After events:
+    CF: decode_residual at h264_cavlc.c:566:30
+  Occurrences: 14
+
+CoordinatesChangedLarge
+  Before events:
+    CF: decode_residual at h264_cavlc.c:572:25
+  After events:
+    CF: decode_residual at h264_cavlc.c:613:9
+  Occurrences: 2
+
+CoordinatesChangedLarge
+  Before events:
+    CF: decode_residual at h264_cavlc.c:613:9
+  After events:
+    CF: decode_residual at h264_cavlc.c:566:30
+  Occurrences: 256
+
+CoordinatesChangedLarge
+  Before events:
+    CF: decode_residual at h264_cavlc.c:613:9
+  After events:
+    CF: decode_residual at h264_cavlc.c:572:25
+  Occurrences: 6308
+
+CoordinatesChangedLarge
+  Before events:
+    CF: ff_h2645_extract_rbsp at h2645_parse.c:137:5
+  After events:
+    CF: ff_h2645_extract_rbsp at h2645_parse.c:97:5
+  Occurrences: 2
+
+CoordinatesChangedLarge
+  Before events:
+    CF: ff_h264_decode_seq_parameter_set at h264_ps.c:488:28
+  After events:
+    CF: ff_h264_decode_seq_parameter_set at h264_ps.c:444:21
+  Occurrences: 3
+
+CoordinatesChangedLarge
+  Before events:
+    CF: ff_mdct15_init at mdct15.c:291:35
+  After events:
+    CF: ff_mdct15_init at mdct15.c:301:31
+  Occurrences: 14
+
+CoordinatesChangedLarge
+  Before events:
+    CF: ff_mdct15_init at mdct15.c:292:35
+  After events:
+    CF: ff_mdct15_init at mdct15.c:301:31
+  Occurrences: 16
+
+CoordinatesChangedLarge
+  Before events:
+    CF: ff_mdct15_init at mdct15.c:301:31
+  After events:
+    CF: ff_mdct15_init at mdct15.c:291:35
+  Occurrences: 38
+
+CoordinatesChangedLarge
+  Before events:
+    CF: ff_mdct15_init at mdct15.c:302:31
+  After events:
+    CF: ff_mdct15_init at mdct15.c:291:35
+  Occurrences: 36
+
+CoordinatesChangedLarge
+  Before events:
+    CF: ff_mdct15_init at mdct15.c:309:24
+  After events:
+    CF: ff_mdct15_init at mdct15.c:301:31
+  Occurrences: 4
+
+CoordinatesChangedLarge
+  Before events:
+    CF: ff_mdct15_init at mdct15.c:310:24
+  After events:
+    CF: ff_mdct15_init at mdct15.c:301:31
+  Occurrences: 4
+
+CoordinatesChangedLarge
+  Before events:
+    CF: ff_mdct15_init at mdct15.c:311:24
+  After events:
+    CF: ff_mdct15_init at mdct15.c:301:31
+  Occurrences: 4
+
+CoordinatesChangedLarge
+  Before events:
+    CF: ff_mdct15_init at mdct15.c:312:24
+  After events:
+    CF: ff_mdct15_init at mdct15.c:301:31
+  Occurrences: 2
+
+CoordinatesChangedLarge
+  Before events:
+    CF: ff_mpeg4_encode_picture_header at mpeg4videoenc.c:1101:5
+  After events:
+    CF: ff_mpeg4_encode_picture_header at mpeg4videoenc.c:1097:5
+  Occurrences: 1
+
+CoordinatesChangedLarge
+  Before events:
+    CF: ff_mpeg4_encode_picture_header at mpeg4videoenc.c:1108:5
+  After events:
+    CF: ff_mpeg4_encode_picture_header at mpeg4videoenc.c:1101:5
+  Occurrences: 1
+
+CoordinatesChangedLarge
+  Before events:
+    CF: mp3_read_probe at mp3dec.c:98:38
+  After events:
+    CF: mp3_read_probe at mp3dec.c:91:22
+  Occurrences: 1
+
+CoordinatesChangedLarge
+  Before events:
+    CF: mpeg4_encode_visual_object_header at mpeg4videoenc.c:950:5
+  After events:
+    CF: mpeg4_encode_visual_object_header at mpeg4videoenc.c:946:5
+  Occurrences: 1
+
+CoordinatesChangedLarge
+  Before events:
+    CF: mpeg4_encode_visual_object_header at mpeg4videoenc.c:952:5
+  After events:
+    CF: mpeg4_encode_visual_object_header at mpeg4videoenc.c:947:5
+  Occurrences: 1
+
+CoordinatesChangedLarge
+  Before events:
+    CF: mpeg4_encode_vol_header at mpeg4videoenc.c:1021:9
+  After events:
+    CF: mpeg4_encode_vol_header at mpeg4videoenc.c:1025:5
+  Occurrences: 1
+
+CoordinatesChangedLarge
+  Before events:
+    CF: mpeg4_encode_vol_header at mpeg4videoenc.c:1026:5
+  After events:
+    CF: mpeg4_encode_vol_header at mpeg4videoenc.c:1035:5
+  Occurrences: 1
+
+CoordinatesChangedLarge
+  Before events:
+    CF: mpeg4_encode_vol_header at mpeg4videoenc.c:1037:5
+  After events:
+    CF: mpeg4_encode_vol_header at mpeg4videoenc.c:1045:5
+  Occurrences: 1
+
+CoordinatesChangedLarge
+  Before events:
+    CF: output_configure at aacdec_template.c:540:13
+  After events:
+    CF: output_configure at aacdec_template.c:544:9
+  Occurrences: 2
+
+CoordinatesChangedLarge
+  Before events:
+    CF: ps_tableinit at aacps_tablegen.h:154:40
+  After events:
+    CF: ps_tableinit at aacps_tablegen.h:167:27
+  Occurrences: 105
+
+CoordinatesChangedLarge
+  Before events:
+    CF: ps_tableinit at aacps_tablegen.h:154:40
+  After events:
+    CF: ps_tableinit at aacps_tablegen.h:169:27
+  Occurrences: 105
+
+CoordinatesChangedLarge
+  Before events:
+    CF: ps_tableinit at aacps_tablegen.h:155:40
+  After events:
+    CF: ps_tableinit at aacps_tablegen.h:169:27
+  Occurrences: 105
+
+CoordinatesChangedLarge
+  Before events:
+    CF: ps_tableinit at aacps_tablegen.h:169:27
+  After events:
+    CF: ps_tableinit at aacps_tablegen.h:154:40
+  Occurrences: 52
+
+CoordinatesChangedLarge
+  Before events:
+    CF: ps_tableinit at aacps_tablegen.h:170:27
+  After events:
+    CF: ps_tableinit at aacps_tablegen.h:154:40
+  Occurrences: 53
+
+CoordinatesChangedLarge
+  Before events:
+    CF: ps_tableinit at aacps_tablegen.h:170:27
+  After events:
+    CF: ps_tableinit at aacps_tablegen.h:155:40
+  Occurrences: 52
+
+CoordinatesChangedLarge
+  Before events:
+    CF: ps_tableinit at aacps_tablegen.h:202:43
+  After events:
+    CF: ps_tableinit at aacps_tablegen.h:187:43
+  Occurrences: 45
+
+CoordinatesChangedLarge
+  Before events:
+    CF: ps_tableinit at aacps_tablegen.h:203:43
+  After events:
+    CF: ps_tableinit at aacps_tablegen.h:187:43
+  Occurrences: 30
+
+CoordinatesChangedLarge
+  Before events:
+    CF: ps_tableinit at aacps_tablegen.h:203:43
+  After events:
+    CF: ps_tableinit at aacps_tablegen.h:191:30
+  Occurrences: 15
+
+CoordinatesChangedLarge
+  Before events:
+    CF: ps_tableinit at aacps_tablegen.h:206:30
+  After events:
+    CF: ps_tableinit at aacps_tablegen.h:187:43
+  Occurrences: 15
+
+CoordinatesChangedLarge
+  Before events:
+    CF: ps_tableinit at aacps_tablegen.h:206:30
+  After events:
+    CF: ps_tableinit at aacps_tablegen.h:202:43
+  Occurrences: 25
+
+CoordinatesChangedLarge
+  Before events:
+    CF: ps_tableinit at aacps_tablegen.h:207:30
+  After events:
+    CF: ps_tableinit at aacps_tablegen.h:191:30
+  Occurrences: 15
+
+CoordinatesChangedLarge
+  Before events:
+    CF: psy_3gpp_init at aacpsy.c:332:14
+  After events:
+    CF: psy_3gpp_init at aacpsy.c:365:24
+  Occurrences: 1
+
+CoordinatesChangedLarge
+  Before events:
+    CF: put_audio_specific_config at aacenc.c:112:5
+  After events:
+    CF: put_audio_specific_config at aacenc.c:118:5
+  Occurrences: 1
+
+CoordinatesChangedLarge
+  Before events:
+    CF: put_audio_specific_config at aacenc.c:113:5
+  After events:
+    CF: put_audio_specific_config at aacenc.c:119:5
+  Occurrences: 1
+
+CoordinatesChangedLarge
+  Before events:
+    CF: put_bitstream_info at aacenc.c:519:5
+  After events:
+    CF: put_bitstream_info at aacenc.c:527:9
+  Occurrences: 5
+
+CoordinatesChangedLarge
+  Before events:
+    CF: put_bitstream_info at aacenc.c:520:5
+  After events:
+    CF: put_bitstream_info at aacenc.c:527:9
+  Occurrences: 5
+
+CoordinatesChangedLarge
+  Before events:
+    CF: put_bitstream_info at aacenc.c:522:9
+  After events:
+    CF: put_bitstream_info at aacenc.c:527:9
+  Occurrences: 5
+
+CoordinatesChangedLarge
+  Before events:
+    CF: put_bitstream_info at aacenc.c:523:5
+  After events:
+    CF: put_bitstream_info at aacenc.c:528:5
+  Occurrences: 5
+
+CoordinatesChangedLarge
+  Before events:
+    CF: redspark_probe at redspark.c:41:12
+  After events:
+    CF: redspark_probe at redspark.c:48:12
+  Occurrences: 1
+
+CoordinatesChangedLarge
+  Before events:
+    CF: search_for_pns at aaccoder.c:555:29
+  After events:
+    CF: search_for_pns at aaccoder.c:611:27
+  Occurrences: 24
+
+CoordinatesChangedLarge
+  Before events:
+    CF: sniff_channel_order at aacdec_template.c:288:9
+  After events:
+    CF: sniff_channel_order at aacdec_template.c:284:9
+  Occurrences: 2
+
+CoordinatesChangedLarge
+  Before events:
+    CF: sniff_channel_order at aacdec_template.c:292:9
+  After events:
+    CF: sniff_channel_order at aacdec_template.c:288:9
+  Occurrences: 2
+
+CoordinatesChangedLarge
+  Before events:
+    CF: sws_init_context at utils.c:1528:9
+  After events:
+    CF: sws_init_context at utils.c:1431:9
+  Occurrences: 1
+
+CoordinatesChangedLarge
+  Before events:
+    CF: sws_init_context at utils.c:1832:28
+  After events:
+    CF: sws_init_context at utils.c:1844:28
+  Occurrences: 1
+
+CoordinatesChangedLarge
+  Before events:
+    CF: sws_init_context at utils.c:1833:28
+  After events:
+    CF: sws_init_context at utils.c:1844:28
+  Occurrences: 1
+
+CoordinatesChangedLarge
+  Before events:
+    CF: sws_init_context at utils.c:1862:24
+  After events:
+    CF: sws_init_context at utils.c:1871:24
+  Occurrences: 1
+
+CoordinatesChangedLarge
+  Before events:
+    CF: sws_init_context at utils.c:1863:24
+  After events:
+    CF: sws_init_context at utils.c:1872:24
+  Occurrences: 1
+
+CoordinatesChangedLarge
+  Before events:
+    CT: adp_probe at adp.c:28:0
+  After events:
+    CT: adp_probe at adp.c:32:12
+  Occurrences: 1
+
+CoordinatesChangedLarge
+  Before events:
+    CT: adts_aac_probe at aacdec.c:35:0
+  After events:
+    CT: adts_aac_probe at aacdec.c:41:36
+  Occurrences: 1
+
+CoordinatesChangedLarge
+  Before events:
+    CT: alloc_frame_buffer at mpegpicture.c:122:0
+  After events:
+    CT: alloc_frame_buffer at mpegpicture.c:118:0
+  Occurrences: 1
+
+CoordinatesChangedLarge
+  Before events:
+    CT: amr_probe at amr.c:71:0
+  After events:
+    CT: amr_probe at amr.c:76:20
+  Occurrences: 1
+
+CoordinatesChangedLarge
+  Before events:
+    CT: apply_channel_coupling at aacdec_template.c:3006:0
+  After events:
+    CT: apply_channel_coupling at aacdec_template.c:3002:0
+  Occurrences: 9
+
+CoordinatesChangedLarge
+  Before events:
+    CT: argo_asf_probe at argo_asf.c:162:0
+  After events:
+    CT: argo_asf_probe at argo_asf.c:167:44
+  Occurrences: 1
+
+CoordinatesChangedLarge
+  Before events:
+    CT: av_cpu_max_align at cpu.c:255:0
+  After events:
+    CT: av_cpu_max_align at cpu.c:270:5
+  Occurrences: 1
+
+CoordinatesChangedLarge
+  Before events:
+    CT: avio_alloc_context at aviobuf.c:143:0
+  After events:
+    CT: avio_alloc_context at aviobuf.c:135:0
+  Occurrences: 2
+
+CoordinatesChangedLarge
+  Before events:
+    CT: brender_read_probe at img2_brender_pix.c:26:0
+  After events:
+    CT: brender_read_probe at img2_brender_pix.c:31:19
+  Occurrences: 1
+
+CoordinatesChangedLarge
+  Before events:
+    CT: decode_ga_specific_config at aacdec_template.c:928:0
+  After events:
+    CT: decode_ga_specific_config at aacdec_template.c:923:0
+  Occurrences: 2
+
+CoordinatesChangedLarge
+  Before events:
+    CT: decode_scalefactors at aacdec_template.c:1605:0
+  After events:
+    CT: decode_scalefactors at aacdec_template.c:1600:0
+  Occurrences: 6
+
+CoordinatesChangedLarge
+  Before events:
+    CT: decode_spectrum_and_dequant at aacdec_template.c:1775:0
+  After events:
+    CT: decode_spectrum_and_dequant at aacdec_template.c:1770:0
+  Occurrences: 6
+
+CoordinatesChangedLarge
+  Before events:
+    CT: ff_h264_chroma_dc_dequant_idct_8_c at h264idct_template.c:313:0
+  After events:
+    CT: ff_h264_chroma_dc_dequant_idct_8_c at h264idct_template.c:319:8
+  Occurrences: 738
+
+CoordinatesChangedLarge
+  Before events:
+    CT: ff_h264_idct_dc_add_8_c at h264idct_template.c:144:0
+  After events:
+    CT: ff_h264_idct_dc_add_8_c at h264idct_template.c:148:15
+  Occurrences: 324
+
+CoordinatesChangedLarge
+  Before events:
+    CT: ff_h264_set_erpic at h264_picture.c:197:0
+  After events:
+    CT: ff_h264_set_erpic at h264_picture.c:201:5
+  Occurrences: 10
+
+CoordinatesChangedLarge
+  Before events:
+    CT: ff_h264_slice_context_init at h264dec.c:259:0
+  After events:
+    CT: ff_h264_slice_context_init at h264dec.c:265:37
+  Occurrences: 2
+
+CoordinatesChangedLarge
+  Before events:
+    CT: ff_hpeldsp_init at hpeldsp.c:339:0
+  After events:
+    CT: ff_hpeldsp_init at hpeldsp.c:346:5
+  Occurrences: 1
+
+CoordinatesChangedLarge
+  Before events:
+    CT: ff_network_close at network.c:117:0
+  After events:
+    CT: ff_network_close at network.c:121:1
+  Occurrences: 1
+
+CoordinatesChangedLarge
+  Before events:
+    CT: ff_network_init at network.c:59:0
+  After events:
+    CT: ff_network_init at network.c:66:5
+  Occurrences: 1
+
+CoordinatesChangedLarge
+  Before events:
+    CT: ff_pixblockdsp_init at pixblockdsp.c:82:0
+  After events:
+    CT: ff_pixblockdsp_init at pixblockdsp.c:86:20
+  Occurrences: 1
+
+CoordinatesChangedLarge
+  Before events:
+    CT: ff_qpeldsp_init at qpeldsp.c:785:0
+  After events:
+    CT: ff_qpeldsp_init at qpeldsp.c:804:5
+  Occurrences: 1
+
+CoordinatesChangedLarge
+  Before events:
+    CT: ff_tls_deinit at network.c:47:0
+  After events:
+    CT: ff_tls_deinit at network.c:56:1
+  Occurrences: 1
+
+CoordinatesChangedLarge
+  Before events:
+    CT: ff_tls_init at network.c:32:0
+  After events:
+    CT: ff_tls_init at network.c:43:5
+  Occurrences: 1
+
+CoordinatesChangedLarge
+  Before events:
+    CT: ffio_init_context at aviobuf.c:89:0
+  After events:
+    CT: ffio_init_context at aviobuf.c:81:0
+  Occurrences: 5
+
+CoordinatesChangedLarge
+  Before events:
+    CT: ffio_open_whitelist at aviobuf.c:1232:0
+  After events:
+    CT: ffio_open_whitelist at aviobuf.c:1228:0
+  Occurrences: 1
+
+CoordinatesChangedLarge
+  Before events:
+    CT: get_edit_list_entry at mov.c:3303:0
+  After events:
+    CT: get_edit_list_entry at mov.c:3297:0
+  Occurrences: 4
+
+CoordinatesChangedLarge
+  Before events:
+    CT: get_frag_stream_info at mov.c:1189:0
+  After events:
+    CT: get_frag_stream_info at mov.c:1185:0
+  Occurrences: 3
+
+CoordinatesChangedLarge
+  Before events:
+    CT: get_pixels_8_c at pixblockdsp.c:42:0
+  After events:
+    CT: get_pixels_8_c at pixblockdsp.c:46:5
+  Occurrences: 2070
+
+CoordinatesChangedLarge
+  Before events:
+    CT: get_se_golomb at golomb.h:240:0
+  After events:
+    CT: get_se_golomb at golomb.h:265:5
+  Occurrences: 15
+
+CoordinatesChangedLarge
+  Before events:
+    CT: get_ue_golomb at golomb.h:54:0
+  After events:
+    CT: get_ue_golomb at golomb.h:77:5
+  Occurrences: 27
+
+CoordinatesChangedLarge
+  Before events:
+    CT: get_ue_golomb_31 at golomb.h:121:0
+  After events:
+    CT: get_ue_golomb_31 at golomb.h:131:5
+  Occurrences: 2
+
+CoordinatesChangedLarge
+  Before events:
+    CT: idcin_probe at idcin.c:96:0
+  After events:
+    CT: idcin_probe at idcin.c:114:12
+  Occurrences: 1
+
+CoordinatesChangedLarge
+  Before events:
+    CT: ifv_probe at ifv.c:43:0
+  After events:
+    CT: ifv_probe at ifv.c:47:20
+  Occurrences: 1
+
+CoordinatesChangedLarge
+  Before events:
+    CT: init_dynload at cmdutils.c:78:0
+  After events:
+    CT: init_dynload at cmdutils.c:84:1
+  Occurrences: 1
+
+CoordinatesChangedLarge
+  Before events:
+    CT: mtv_probe at mtv.c:55:0
+  After events:
+    CT: mtv_probe at mtv.c:59:12
+  Occurrences: 1
+
+CoordinatesChangedLarge
+  Before events:
+    CT: pix_sum_c at mpegvideoencdsp.c:61:0
+  After events:
+    CT: pix_sum_c at mpegvideoencdsp.c:76:13
+  Occurrences: 345
+
+CoordinatesChangedLarge
+  Before events:
+    CT: pred16x16_dc_8_c at h264pred_template.c:347:0
+  After events:
+    CT: pred16x16_dc_8_c at h264pred_template.c:353:5
+  Occurrences: 10
+
+CoordinatesChangedLarge
+  Before events:
+    CT: pred16x16_left_dc_8_c at h264pred_template.c:366:0
+  After events:
+    CT: pred16x16_left_dc_8_c at h264pred_template.c:372:5
+  Occurrences: 58
+
+CoordinatesChangedLarge
+  Before events:
+    CT: pred16x16_vertical_8_c at h264pred_template.c:304:0
+  After events:
+    CT: pred16x16_vertical_8_c at h264pred_template.c:308:22
+  Occurrences: 568
+
+CoordinatesChangedLarge
+  Before events:
+    CT: pred8x8_dc_8_c at h264pred_template.c:623:0
+  After events:
+    CT: pred8x8_dc_8_c at h264pred_template.c:631:5
+  Occurrences: 1384
+
+CoordinatesChangedLarge
+  Before events:
+    CT: pred8x8_left_dc_8_c at h264pred_template.c:543:0
+  After events:
+    CT: pred8x8_left_dc_8_c at h264pred_template.c:551:5
+  Occurrences: 116
+
+CoordinatesChangedLarge
+  Before events:
+    CT: pred8x8_top_dc_8_c at h264pred_template.c:575:0
+  After events:
+    CT: pred8x8_top_dc_8_c at h264pred_template.c:583:5
+  Occurrences: 64
+
+CoordinatesChangedLarge
+  Before events:
+    CT: pred8x8_vertical_8_c at h264pred_template.c:465:0
+  After events:
+    CT: pred8x8_vertical_8_c at h264pred_template.c:469:21
+  Occurrences: 188
+
+CoordinatesChangedLarge
+  Before events:
+    CT: redspark_probe at redspark.c:36:0
+  After events:
+    CT: redspark_probe at redspark.c:41:12
+  Occurrences: 1
+
+CoordinatesChangedLarge
+  Before events:
+    CT: retry_transfer_wrapper at avio.c:361:0
+  After events:
+    CT: retry_transfer_wrapper at avio.c:356:0
+  Occurrences: 5
+
+CoordinatesChangedLarge
+  Before events:
+    CT: set_default_channel_config at aacdec_template.c:633:0
+  After events:
+    CT: set_default_channel_config at aacdec_template.c:629:0
+  Occurrences: 2
+
+CoordinatesChangedLarge
+  Before events:
+    CT: vector_fmul_reverse_c at float_dsp.c:104:0
+  After events:
+    CT: vector_fmul_reverse_c at float_dsp.c:108:19
+  Occurrences: 6
+
+CoordinatesChangedLarge
+  Before events:
+    RF: avformat_find_stream_info at demux.c:2974:5
+  After events:
+    RF: avformat_find_stream_info at demux.c:2979:1
+  Occurrences: 1
+
 LibraryCallAdded
   After events:
     CF: analyze at mpegts.c:586:5
-    CT: Jump to external code for memset
-    RF: Jump to external code for memset
-  Occurrences: 1
-
-LibraryCallAdded
-  After events:
-    CF: ath at aacpsy.c:295:22
-    CT: Jump to external code for pow
-    RF: Jump to external code for pow
-  Occurrences: 1
-
-LibraryCallAdded
-  After events:
-    CF: ath at aacpsy.c:296:22
-    CT: Jump to external code for exp
-    RF: Jump to external code for exp
-  Occurrences: 1
-
-LibraryCallAdded
-  After events:
-    CF: ath at aacpsy.c:297:22
-    CT: Jump to external code for exp
-    RF: Jump to external code for exp
-  Occurrences: 1
-
-LibraryCallAdded
-  After events:
-    CF: clear_context at mpegvideo.c:664:5
     CT: Jump to external code for memset
     RF: Jump to external code for memset
   Occurrences: 1
@@ -10611,20 +11437,6 @@ LibraryCallAdded
 
 LibraryCallAdded
   After events:
-    CF: decode_spectrum_and_dequant at aacdec_template.c:1782:9
-    CT: Jump to external code for memset
-    RF: Jump to external code for memset
-  Occurrences: 6
-
-LibraryCallAdded
-  After events:
-    CF: decode_spectrum_and_dequant at aacdec_template.c:1796:21
-    CT: Jump to external code for memset
-    RF: Jump to external code for memset
-  Occurrences: 30
-
-LibraryCallAdded
-  After events:
     CF: ff_cbrt_tableinit at cbrt_tablegen.h:53:32
     CT: Jump to external code for cbrt
     RF: Jump to external code for cbrt
@@ -10639,24 +11451,10 @@ LibraryCallAdded
 
 LibraryCallAdded
   After events:
-    CF: ff_mdct15_init at mdct15.c:291:35
-    CT: Jump to external code for sincosf
-    RF: Jump to external code for sincosf
-  Occurrences: 1486
-
-LibraryCallAdded
-  After events:
-    CF: ff_mdct15_init at mdct15.c:301:31
-    CT: Jump to external code for sincosf
-    RF: Jump to external code for sincosf
-  Occurrences: 46
-
-LibraryCallAdded
-  After events:
-    CF: ffio_init_context at aviobuf.c:92:5
-    CT: Jump to external code for memset
-    RF: Jump to external code for memset
-  Occurrences: 5
+    CF: ff_h2645_extract_rbsp at h2645_parse.c:97:5
+    CT: Jump to external code for memcpy
+    RF: Jump to external code for memcpy
+  Occurrences: 2
 
 LibraryCallAdded
   After events:
@@ -10685,13 +11483,6 @@ LibraryCallAdded
     CT: Jump to external code for exp2
     RF: Jump to external code for exp2
   Occurrences: 13
-
-LibraryCallAdded
-  After events:
-    CF: set_default_channel_config at aacdec_template.c:642:5
-    CT: Jump to external code for memcpy
-    RF: Jump to external code for memcpy
-  Occurrences: 2
 
 LibraryCallAdded
   After events:
@@ -10735,6 +11526,17 @@ LibraryCallReplaced
 
 LibraryCallReplaced
   Before events:
+    CF: ff_h2645_extract_rbsp at h2645_parse.c:137:5
+    CT: Jump to external code for memset
+    RF: Jump to external code for memset
+  After events:
+    CF: ff_h2645_extract_rbsp at h2645_parse.c:97:5
+    CT: Jump to external code for memcpy
+    RF: Jump to external code for memcpy
+  Occurrences: 2
+
+LibraryCallReplaced
+  Before events:
     CF: ff_mdct15_init at mdct15.c:291:35
     CT: Jump to external code for cosf
     RF: Jump to external code for cosf
@@ -10746,6 +11548,17 @@ LibraryCallReplaced
 
 LibraryCallReplaced
   Before events:
+    CF: ff_mdct15_init at mdct15.c:291:35
+    CT: Jump to external code for cosf
+    RF: Jump to external code for cosf
+  After events:
+    CF: ff_mdct15_init at mdct15.c:301:31
+    CT: Jump to external code for sincosf
+    RF: Jump to external code for sincosf
+  Occurrences: 14
+
+LibraryCallReplaced
+  Before events:
     CF: ff_mdct15_init at mdct15.c:292:35
     CT: Jump to external code for sinf
     RF: Jump to external code for sinf
@@ -10754,6 +11567,28 @@ LibraryCallReplaced
     CT: Jump to external code for sincosf
     RF: Jump to external code for sincosf
   Occurrences: 744
+
+LibraryCallReplaced
+  Before events:
+    CF: ff_mdct15_init at mdct15.c:292:35
+    CT: Jump to external code for sinf
+    RF: Jump to external code for sinf
+  After events:
+    CF: ff_mdct15_init at mdct15.c:301:31
+    CT: Jump to external code for sincosf
+    RF: Jump to external code for sincosf
+  Occurrences: 16
+
+LibraryCallReplaced
+  Before events:
+    CF: ff_mdct15_init at mdct15.c:301:31
+    CT: Jump to external code for cosf
+    RF: Jump to external code for cosf
+  After events:
+    CF: ff_mdct15_init at mdct15.c:291:35
+    CT: Jump to external code for sincosf
+    RF: Jump to external code for sincosf
+  Occurrences: 38
 
 LibraryCallReplaced
   Before events:
@@ -10772,10 +11607,65 @@ LibraryCallReplaced
     CT: Jump to external code for sinf
     RF: Jump to external code for sinf
   After events:
+    CF: ff_mdct15_init at mdct15.c:291:35
+    CT: Jump to external code for sincosf
+    RF: Jump to external code for sincosf
+  Occurrences: 36
+
+LibraryCallReplaced
+  Before events:
+    CF: ff_mdct15_init at mdct15.c:302:31
+    CT: Jump to external code for sinf
+    RF: Jump to external code for sinf
+  After events:
     CF: ff_mdct15_init at mdct15.c:301:31
     CT: Jump to external code for sincosf
     RF: Jump to external code for sincosf
   Occurrences: 24
+
+LibraryCallReplaced
+  Before events:
+    CF: ff_mdct15_init at mdct15.c:309:24
+    CT: Jump to external code for cosf
+    RF: Jump to external code for cosf
+  After events:
+    CF: ff_mdct15_init at mdct15.c:301:31
+    CT: Jump to external code for sincosf
+    RF: Jump to external code for sincosf
+  Occurrences: 4
+
+LibraryCallReplaced
+  Before events:
+    CF: ff_mdct15_init at mdct15.c:310:24
+    CT: Jump to external code for sinf
+    RF: Jump to external code for sinf
+  After events:
+    CF: ff_mdct15_init at mdct15.c:301:31
+    CT: Jump to external code for sincosf
+    RF: Jump to external code for sincosf
+  Occurrences: 4
+
+LibraryCallReplaced
+  Before events:
+    CF: ff_mdct15_init at mdct15.c:311:24
+    CT: Jump to external code for cosf
+    RF: Jump to external code for cosf
+  After events:
+    CF: ff_mdct15_init at mdct15.c:301:31
+    CT: Jump to external code for sincosf
+    RF: Jump to external code for sincosf
+  Occurrences: 4
+
+LibraryCallReplaced
+  Before events:
+    CF: ff_mdct15_init at mdct15.c:312:24
+    CT: Jump to external code for sinf
+    RF: Jump to external code for sinf
+  After events:
+    CF: ff_mdct15_init at mdct15.c:301:31
+    CT: Jump to external code for sincosf
+    RF: Jump to external code for sincosf
+  Occurrences: 2
 
 LibraryCallReplaced
   Before events:
@@ -10834,6 +11724,17 @@ LibraryCallReplaced
 
 LibraryCallReplaced
   Before events:
+    CF: output_configure at aacdec_template.c:540:13
+    CT: Jump to external code for memset
+    RF: Jump to external code for memset
+  After events:
+    CF: output_configure at aacdec_template.c:544:9
+    CT: Jump to external code for memcpy
+    RF: Jump to external code for memcpy
+  Occurrences: 2
+
+LibraryCallReplaced
+  Before events:
     CF: ps_tableinit at aacps_tablegen.h:154:40
     CT: Jump to external code for cosf
     RF: Jump to external code for cosf
@@ -10853,6 +11754,28 @@ LibraryCallReplaced
     CT: Jump to external code for sincosf
     RF: Jump to external code for sincosf
   Occurrences: 53
+
+LibraryCallReplaced
+  Before events:
+    CF: ps_tableinit at aacps_tablegen.h:154:40
+    CT: Jump to external code for cosf
+    RF: Jump to external code for cosf
+  After events:
+    CF: ps_tableinit at aacps_tablegen.h:167:27
+    CT: Jump to external code for sincosf
+    RF: Jump to external code for sincosf
+  Occurrences: 105
+
+LibraryCallReplaced
+  Before events:
+    CF: ps_tableinit at aacps_tablegen.h:154:40
+    CT: Jump to external code for cosf
+    RF: Jump to external code for cosf
+  After events:
+    CF: ps_tableinit at aacps_tablegen.h:169:27
+    CT: Jump to external code for sincosf
+    RF: Jump to external code for sincosf
+  Occurrences: 105
 
 LibraryCallReplaced
   Before events:
@@ -10875,6 +11798,17 @@ LibraryCallReplaced
     CT: Jump to external code for sincosf
     RF: Jump to external code for sincosf
   Occurrences: 53
+
+LibraryCallReplaced
+  Before events:
+    CF: ps_tableinit at aacps_tablegen.h:155:40
+    CT: Jump to external code for cosf
+    RF: Jump to external code for cosf
+  After events:
+    CF: ps_tableinit at aacps_tablegen.h:169:27
+    CT: Jump to external code for sincosf
+    RF: Jump to external code for sincosf
+  Occurrences: 105
 
 LibraryCallReplaced
   Before events:
@@ -10948,6 +11882,17 @@ LibraryCallReplaced
     CT: Jump to external code for cosf
     RF: Jump to external code for cosf
   After events:
+    CF: ps_tableinit at aacps_tablegen.h:154:40
+    CT: Jump to external code for sincosf
+    RF: Jump to external code for sincosf
+  Occurrences: 52
+
+LibraryCallReplaced
+  Before events:
+    CF: ps_tableinit at aacps_tablegen.h:169:27
+    CT: Jump to external code for cosf
+    RF: Jump to external code for cosf
+  After events:
     CF: ps_tableinit at aacps_tablegen.h:167:27
     CT: Jump to external code for sincosf
     RF: Jump to external code for sincosf
@@ -10963,6 +11908,28 @@ LibraryCallReplaced
     CT: Jump to external code for sincosf
     RF: Jump to external code for sincosf
   Occurrences: 53
+
+LibraryCallReplaced
+  Before events:
+    CF: ps_tableinit at aacps_tablegen.h:170:27
+    CT: Jump to external code for sinf
+    RF: Jump to external code for sinf
+  After events:
+    CF: ps_tableinit at aacps_tablegen.h:154:40
+    CT: Jump to external code for sincosf
+    RF: Jump to external code for sincosf
+  Occurrences: 53
+
+LibraryCallReplaced
+  Before events:
+    CF: ps_tableinit at aacps_tablegen.h:170:27
+    CT: Jump to external code for sinf
+    RF: Jump to external code for sinf
+  After events:
+    CF: ps_tableinit at aacps_tablegen.h:155:40
+    CT: Jump to external code for sincosf
+    RF: Jump to external code for sincosf
+  Occurrences: 52
 
 LibraryCallReplaced
   Before events:
@@ -10992,10 +11959,43 @@ LibraryCallReplaced
     CT: Jump to external code for cos
     RF: Jump to external code for cos
   After events:
+    CF: ps_tableinit at aacps_tablegen.h:187:43
+    CT: Jump to external code for sincos
+    RF: Jump to external code for sincos
+  Occurrences: 45
+
+LibraryCallReplaced
+  Before events:
+    CF: ps_tableinit at aacps_tablegen.h:202:43
+    CT: Jump to external code for cos
+    RF: Jump to external code for cos
+  After events:
     CF: ps_tableinit at aacps_tablegen.h:202:43
     CT: Jump to external code for sincos
     RF: Jump to external code for sincos
   Occurrences: 75
+
+LibraryCallReplaced
+  Before events:
+    CF: ps_tableinit at aacps_tablegen.h:203:43
+    CT: Jump to external code for sin
+    RF: Jump to external code for sin
+  After events:
+    CF: ps_tableinit at aacps_tablegen.h:187:43
+    CT: Jump to external code for sincos
+    RF: Jump to external code for sincos
+  Occurrences: 30
+
+LibraryCallReplaced
+  Before events:
+    CF: ps_tableinit at aacps_tablegen.h:203:43
+    CT: Jump to external code for sin
+    RF: Jump to external code for sin
+  After events:
+    CF: ps_tableinit at aacps_tablegen.h:191:30
+    CT: Jump to external code for sincos
+    RF: Jump to external code for sincos
+  Occurrences: 15
 
 LibraryCallReplaced
   Before events:
@@ -11018,6 +12018,39 @@ LibraryCallReplaced
     CT: Jump to external code for sincos
     RF: Jump to external code for sincos
   Occurrences: 25
+
+LibraryCallReplaced
+  Before events:
+    CF: ps_tableinit at aacps_tablegen.h:206:30
+    CT: Jump to external code for cos
+    RF: Jump to external code for cos
+  After events:
+    CF: ps_tableinit at aacps_tablegen.h:187:43
+    CT: Jump to external code for sincos
+    RF: Jump to external code for sincos
+  Occurrences: 15
+
+LibraryCallReplaced
+  Before events:
+    CF: ps_tableinit at aacps_tablegen.h:206:30
+    CT: Jump to external code for cos
+    RF: Jump to external code for cos
+  After events:
+    CF: ps_tableinit at aacps_tablegen.h:202:43
+    CT: Jump to external code for sincos
+    RF: Jump to external code for sincos
+  Occurrences: 25
+
+LibraryCallReplaced
+  Before events:
+    CF: ps_tableinit at aacps_tablegen.h:207:30
+    CT: Jump to external code for sin
+    RF: Jump to external code for sin
+  After events:
+    CF: ps_tableinit at aacps_tablegen.h:191:30
+    CT: Jump to external code for sincos
+    RF: Jump to external code for sincos
+  Occurrences: 15
 
 LibraryCallReplaced
   Before events:
@@ -11099,6 +12132,13 @@ LibraryCallRemoved
 
 LibraryCallRemoved
   Before events:
+    CF: amr_probe at amr.c:76:10
+    CT: Jump to external code for memcmp
+    RF: Jump to external code for memcmp
+  Occurrences: 1
+
+LibraryCallRemoved
+  Before events:
     CF: analyze at mpegts.c:586:5
     CT: Jump to external code for memset
     RF: Jump to external code for memset
@@ -11116,27 +12156,6 @@ LibraryCallRemoved
     CF: ass_probe at assdec.c:46:10
     CT: Jump to external code for memcmp
     RF: Jump to external code for memcmp
-  Occurrences: 1
-
-LibraryCallRemoved
-  Before events:
-    CF: ath at aacpsy.c:295:22
-    CT: Jump to external code for pow
-    RF: Jump to external code for pow
-  Occurrences: 1
-
-LibraryCallRemoved
-  Before events:
-    CF: ath at aacpsy.c:296:22
-    CT: Jump to external code for exp
-    RF: Jump to external code for exp
-  Occurrences: 1
-
-LibraryCallRemoved
-  Before events:
-    CF: ath at aacpsy.c:297:22
-    CT: Jump to external code for exp
-    RF: Jump to external code for exp
   Occurrences: 1
 
 LibraryCallRemoved
@@ -11365,7 +12384,21 @@ LibraryCallRemoved
 
 LibraryCallRemoved
   Before events:
-    CF: clear_context at mpegvideo.c:664:5
+    CF: clear_context at mpegvideo.c:666:5
+    CT: Jump to external code for memset
+    RF: Jump to external code for memset
+  Occurrences: 1
+
+LibraryCallRemoved
+  Before events:
+    CF: clear_context at mpegvideo.c:668:5
+    CT: Jump to external code for memset
+    RF: Jump to external code for memset
+  Occurrences: 1
+
+LibraryCallRemoved
+  Before events:
+    CF: clear_context at mpegvideo.c:675:5
     CT: Jump to external code for memset
     RF: Jump to external code for memset
   Occurrences: 1
@@ -11439,20 +12472,6 @@ LibraryCallRemoved
     CT: Jump to external code for memset
     RF: Jump to external code for memset
   Occurrences: 6
-
-LibraryCallRemoved
-  Before events:
-    CF: decode_spectrum_and_dequant at aacdec_template.c:1782:9
-    CT: Jump to external code for memset
-    RF: Jump to external code for memset
-  Occurrences: 6
-
-LibraryCallRemoved
-  Before events:
-    CF: decode_spectrum_and_dequant at aacdec_template.c:1796:21
-    CT: Jump to external code for memset
-    RF: Jump to external code for memset
-  Occurrences: 30
 
 LibraryCallRemoved
   Before events:
@@ -11592,7 +12611,7 @@ LibraryCallRemoved
     CF: ff_h2645_extract_rbsp at h2645_parse.c:137:5
     CT: Jump to external code for memset
     RF: Jump to external code for memset
-  Occurrences: 5
+  Occurrences: 7
 
 LibraryCallRemoved
   Before events:
@@ -11617,7 +12636,7 @@ LibraryCallRemoved
 
 LibraryCallRemoved
   Before events:
-    CF: ff_h264_decode_seq_parameter_set at h264_ps.c:382:5
+    CF: ff_h264_decode_seq_parameter_set at h264_ps.c:381:5
     CT: Jump to external code for memset
     RF: Jump to external code for memset
   Occurrences: 3
@@ -11645,31 +12664,66 @@ LibraryCallRemoved
 
 LibraryCallRemoved
   Before events:
+    CF: ff_h264_set_erpic at h264_picture.c:201:5
+    CT: Jump to external code for memset
+    RF: Jump to external code for memset
+  Occurrences: 10
+
+LibraryCallRemoved
+  Before events:
     CF: ff_mdct15_init at mdct15.c:291:35
     CT: Jump to external code for cosf
     RF: Jump to external code for cosf
-  Occurrences: 742
+  Occurrences: 804
 
 LibraryCallRemoved
   Before events:
     CF: ff_mdct15_init at mdct15.c:292:35
     CT: Jump to external code for sinf
     RF: Jump to external code for sinf
-  Occurrences: 744
+  Occurrences: 800
 
 LibraryCallRemoved
   Before events:
     CF: ff_mdct15_init at mdct15.c:301:31
     CT: Jump to external code for cosf
     RF: Jump to external code for cosf
-  Occurrences: 22
+  Occurrences: 30
 
 LibraryCallRemoved
   Before events:
     CF: ff_mdct15_init at mdct15.c:302:31
     CT: Jump to external code for sinf
     RF: Jump to external code for sinf
-  Occurrences: 24
+  Occurrences: 30
+
+LibraryCallRemoved
+  Before events:
+    CF: ff_mdct15_init at mdct15.c:309:24
+    CT: Jump to external code for cosf
+    RF: Jump to external code for cosf
+  Occurrences: 2
+
+LibraryCallRemoved
+  Before events:
+    CF: ff_mdct15_init at mdct15.c:310:24
+    CT: Jump to external code for sinf
+    RF: Jump to external code for sinf
+  Occurrences: 2
+
+LibraryCallRemoved
+  Before events:
+    CF: ff_mdct15_init at mdct15.c:311:24
+    CT: Jump to external code for cosf
+    RF: Jump to external code for cosf
+  Occurrences: 2
+
+LibraryCallRemoved
+  Before events:
+    CF: ff_mdct15_init at mdct15.c:312:24
+    CT: Jump to external code for sinf
+    RF: Jump to external code for sinf
+  Occurrences: 4
 
 LibraryCallRemoved
   Before events:
@@ -11740,13 +12794,6 @@ LibraryCallRemoved
     CT: Jump to external code for memset
     RF: Jump to external code for memset
   Occurrences: 6
-
-LibraryCallRemoved
-  Before events:
-    CF: ffio_init_context at aviobuf.c:92:5
-    CT: Jump to external code for memset
-    RF: Jump to external code for memset
-  Occurrences: 5
 
 LibraryCallRemoved
   Before events:
@@ -11849,6 +12896,13 @@ LibraryCallRemoved
 LibraryCallRemoved
   Before events:
     CF: idf_probe at bintext.c:309:10
+    CT: Jump to external code for memcmp
+    RF: Jump to external code for memcmp
+  Occurrences: 1
+
+LibraryCallRemoved
+  Before events:
+    CF: ifv_probe at ifv.c:47:10
     CT: Jump to external code for memcmp
     RF: Jump to external code for memcmp
   Occurrences: 1
@@ -12408,13 +13462,6 @@ LibraryCallRemoved
 
 LibraryCallRemoved
   Before events:
-    CF: set_default_channel_config at aacdec_template.c:642:5
-    CT: Jump to external code for memcpy
-    RF: Jump to external code for memcpy
-  Occurrences: 2
-
-LibraryCallRemoved
-  Before events:
     CF: set_dispositions at ffmpeg_opt.c:2258:9
     CT: Jump to external code for memset
     RF: Jump to external code for memset
@@ -12608,6 +13655,13 @@ ProgramCallRemoved
     CT: av_bswap16 at bswap.h:58:0
     RF: av_bswap16 at bswap.h:0:0
   Occurrences: 6
+
+ProgramCallRemoved
+  Before events:
+    CF: argo_asf_probe at argo_asf.c:167:5
+    CT: ff_argo_asf_parse_file_header at argo_asf.c:52:0
+    RF: ff_argo_asf_parse_file_header at argo_asf.c:60:1
+  Occurrences: 1
 
 ProgramCallRemoved
   Before events:
@@ -13157,34 +14211,6 @@ ProgramCallRemoved
 
 ProgramCallRemoved
   Before events:
-    CF: decode_ga_specific_config at aacdec_template.c:940:32
-    CT: get_bits1 at get_bits.h:499:0
-    RF: get_bits1 at get_bits.h:529:5
-  Occurrences: 2
-
-ProgramCallRemoved
-  Before events:
-    CF: decode_ga_specific_config at aacdec_template.c:949:9
-    CT: get_bits1 at get_bits.h:499:0
-    RF: get_bits1 at get_bits.h:529:5
-  Occurrences: 2
-
-ProgramCallRemoved
-  Before events:
-    CF: decode_ga_specific_config at aacdec_template.c:951:22
-    CT: get_bits1 at get_bits.h:499:0
-    RF: get_bits1 at get_bits.h:529:5
-  Occurrences: 2
-
-ProgramCallRemoved
-  Before events:
-    CF: decode_ga_specific_config at aacdec_template.c:968:9
-    CT: count_channels at aacdec_template.c:106:0
-    RF: count_channels at aacdec_template.c:114:5
-  Occurrences: 2
-
-ProgramCallRemoved
-  Before events:
     CF: decode_nal_units at h264dec.c:594:34
     CT: av_bswap32 at bswap.h:66:0
     RF: av_bswap32 at bswap.h:0:0
@@ -13209,35 +14235,21 @@ ProgramCallRemoved
     CF: decode_residual at h264_cavlc.c:451:26
     CT: pred_non_zero_count at h264_cavlc.c:286:0
     RF: pred_non_zero_count at h264_cavlc.c:296:5
-  Occurrences: 434
+  Occurrences: 490
 
 ProgramCallRemoved
   Before events:
     CF: decode_residual at h264_cavlc.c:455:26
     CT: pred_non_zero_count at h264_cavlc.c:286:0
     RF: pred_non_zero_count at h264_cavlc.c:296:5
-  Occurrences: 2514
+  Occurrences: 1336
 
 ProgramCallRemoved
   Before events:
     CF: decode_residual at h264_cavlc.c:476:5
     CT: skip_bits at get_bits.h:468:0
     RF: skip_bits at get_bits.h:496:1
-  Occurrences: 1632
-
-ProgramCallRemoved
-  Before events:
-    CF: decode_residual at h264_cavlc.c:487:9
-    CT: skip_bits at get_bits.h:468:0
-    RF: skip_bits at get_bits.h:496:1
-  Occurrences: 10
-
-ProgramCallRemoved
-  Before events:
-    CF: decode_residual at h264_cavlc.c:534:13
-    CT: skip_bits at get_bits.h:468:0
-    RF: skip_bits at get_bits.h:496:1
-  Occurrences: 658
+  Occurrences: 58
 
 ProgramCallRemoved
   Before events:
@@ -13458,13 +14470,6 @@ ProgramCallRemoved
 
 ProgramCallRemoved
   Before events:
-    CF: ff_h264_idct_dc_add_8_c at h264idct_template.c:154:22
-    CT: av_clip_uint8_c at common.h:205:0
-    RF: av_clip_uint8_c at common.h:0:0
-  Occurrences: 5184
-
-ProgramCallRemoved
-  Before events:
     CF: ff_h264_sei_decode at h264_sei.c:492:56
     CT: get_bits_count at get_bits.h:220:0
     RF: get_bits_count at get_bits.h:224:5
@@ -13633,13 +14638,6 @@ ProgramCallRemoved
 
 ProgramCallRemoved
   Before events:
-    CF: ffio_init_context at aviobuf.c:102:5
-    CT: url_resetbuf at aviobuf.c:1167:0
-    RF: url_resetbuf at aviobuf.c:1177:5
-  Occurrences: 5
-
-ProgramCallRemoved
-  Before events:
     CF: fill_buffer at aviobuf.c:589:9
     CT: ffiocontext at avio_internal.h:82:0
     RF: ffiocontext at avio_internal.h:0:0
@@ -13801,34 +14799,6 @@ ProgramCallRemoved
 
 ProgramCallRemoved
   Before events:
-    CF: get_se_golomb at golomb.h:266:5
-    CT: av_bswap32 at bswap.h:66:0
-    RF: av_bswap32 at bswap.h:0:0
-  Occurrences: 15
-
-ProgramCallRemoved
-  Before events:
-    CF: get_se_golomb at golomb.h:276:19
-    CT: ff_log2_c at intmath.h:51:0
-    RF: ff_log2_c at intmath.h:0:0
-  Occurrences: 2
-
-ProgramCallRemoved
-  Before events:
-    CF: get_se_golomb at golomb.h:278:9
-    CT: av_bswap32 at bswap.h:66:0
-    RF: av_bswap32 at bswap.h:0:0
-  Occurrences: 2
-
-ProgramCallRemoved
-  Before events:
-    CF: get_ue_golomb at golomb.h:78:5
-    CT: av_bswap32 at bswap.h:66:0
-    RF: av_bswap32 at bswap.h:0:0
-  Occurrences: 27
-
-ProgramCallRemoved
-  Before events:
     CF: get_ue_golomb at golomb.h:88:23
     CT: ff_log2_c at intmath.h:51:0
     RF: ff_log2_c at intmath.h:0:0
@@ -13839,7 +14809,7 @@ ProgramCallRemoved
     CF: get_ue_golomb_31 at golomb.h:132:5
     CT: av_bswap32 at bswap.h:66:0
     RF: av_bswap32 at bswap.h:0:0
-  Occurrences: 5
+  Occurrences: 3
 
 ProgramCallRemoved
   Before events:
@@ -13853,14 +14823,14 @@ ProgramCallRemoved
     CF: get_vlc2 at get_bits.h:811:5
     CT: av_bswap32 at bswap.h:66:0
     RF: av_bswap32 at bswap.h:0:0
-  Occurrences: 29916
+  Occurrences: 34976
 
 ProgramCallRemoved
   Before events:
     CF: get_vlc2 at get_bits.h:813:5
     CT: av_bswap32 at bswap.h:66:0
     RF: av_bswap32 at bswap.h:0:0
-  Occurrences: 248
+  Occurrences: 358
 
 ProgramCallRemoved
   Before events:
@@ -13882,27 +14852,6 @@ ProgramCallRemoved
     CT: get_bits1 at get_bits.h:499:0
     RF: get_bits1 at get_bits.h:529:5
   Occurrences: 10
-
-ProgramCallRemoved
-  Before events:
-    CF: h264_slice_header_parse at h264_slice.c:1954:11
-    CT: ff_h264_parse_ref_count at h264_parse.c:224:0
-    RF: ff_h264_parse_ref_count at h264_parse.c:277:1
-  Occurrences: 2
-
-ProgramCallRemoved
-  Before events:
-    CF: h264_slice_header_parse at h264_slice.c:2006:24
-    CT: get_chroma_qp at h264dec.h:647:0
-    RF: get_chroma_qp at h264dec.h:0:0
-  Occurrences: 2
-
-ProgramCallRemoved
-  Before events:
-    CF: h264_slice_header_parse at h264_slice.c:2007:24
-    CT: get_chroma_qp at h264dec.h:647:0
-    RF: get_chroma_qp at h264dec.h:0:0
-  Occurrences: 2
 
 ProgramCallRemoved
   Before events:
@@ -14350,7 +15299,7 @@ ProgramCallRemoved
     CF: put_bits at put_bits.h:250:5
     CT: put_bits_no_assert at put_bits.h:198:0
     RF: put_bits_no_assert at put_bits.h:241:1
-  Occurrences: 220
+  Occurrences: 207
 
 ProgramCallRemoved
   Before events:
@@ -14417,6 +15366,13 @@ ProgramCallRemoved
 
 ProgramCallRemoved
   Before events:
+    CF: redspark_probe at redspark.c:41:12
+    CT: av_bswap32 at bswap.h:66:0
+    RF: av_bswap32 at bswap.h:0:0
+  Occurrences: 1
+
+ProgramCallRemoved
+  Before events:
     CF: rl2_probe at rl2.c:62:8
     CT: av_bswap32 at bswap.h:66:0
     RF: av_bswap32 at bswap.h:0:0
@@ -14455,7 +15411,7 @@ ProgramCallRemoved
     CF: search_for_pns at aaccoder.c:555:29
     CT: av_clipf_c at common.h:388:0
     RF: av_clipf_c at common.h:0:0
-  Occurrences: 12
+  Occurrences: 36
 
 ProgramCallRemoved
   Before events:
@@ -14523,6 +15479,20 @@ ProgramCallRemoved
 ProgramCallRemoved
   Before events:
     CF: sniff_channel_order at aacdec_template.c:284:9
+    CT: count_paired_channels at aacdec_template.c:241:0
+    RF: count_paired_channels at aacdec_template.c:269:1
+  Occurrences: 2
+
+ProgramCallRemoved
+  Before events:
+    CF: sniff_channel_order at aacdec_template.c:288:9
+    CT: count_paired_channels at aacdec_template.c:241:0
+    RF: count_paired_channels at aacdec_template.c:269:1
+  Occurrences: 2
+
+ProgramCallRemoved
+  Before events:
+    CF: sniff_channel_order at aacdec_template.c:292:9
     CT: count_paired_channels at aacdec_template.c:241:0
     RF: count_paired_channels at aacdec_template.c:269:1
   Occurrences: 2
@@ -14711,21 +15681,6 @@ ProgramCallRemoved
 
 Uncategorised
   After events:
-    CF: aac_decode_init at aacdec_template.c:1355:11
-  Occurrences: 2
-
-Uncategorised
-  After events:
-    CF: aac_decode_init at aacdec_template.c:1358:11
-  Occurrences: 2
-
-Uncategorised
-  After events:
-    CF: aac_decode_init at aacdec_template.c:1361:11
-  Occurrences: 2
-
-Uncategorised
-  After events:
     CF: aac_encode_frame at aacenc.c:580:5
   Occurrences: 10
 
@@ -14762,11 +15717,6 @@ Uncategorised
     CT: bytestream_get_be16 at bytestream.h:98:0
     RF: bytestream_get_be16 at bytestream.h:0:0
   Occurrences: 1
-
-Uncategorised
-  After events:
-    CF: apply_only_long_window at aacenc.c:148:5
-  Occurrences: 6
 
 Uncategorised
   After events:
@@ -14908,7 +15858,7 @@ Uncategorised
 Uncategorised
   After events:
     CF: av_probe_input_format3 at format.c:169:21
-  Occurrences: 17
+  Occurrences: 10
 
 Uncategorised
   After events:
@@ -15089,26 +16039,6 @@ Uncategorised
 
 Uncategorised
   After events:
-    CF: avformat_network_deinit at utils.c:572:5
-  Occurrences: 1
-
-Uncategorised
-  After events:
-    CF: avformat_network_deinit at utils.c:573:5
-  Occurrences: 1
-
-Uncategorised
-  After events:
-    CF: avformat_network_init at utils.c:561:16
-  Occurrences: 1
-
-Uncategorised
-  After events:
-    CF: avformat_network_init at utils.c:563:16
-  Occurrences: 1
-
-Uncategorised
-  After events:
     CF: avformat_open_input at demux.c:253:16
   Occurrences: 1
 
@@ -15116,11 +16046,6 @@ Uncategorised
   After events:
     CF: avio_flush at aviobuf.c:255:5
   Occurrences: 4
-
-Uncategorised
-  After events:
-    CF: avio_open2 at aviobuf.c:1252:12
-  Occurrences: 1
 
 Uncategorised
   After events:
@@ -15314,11 +16239,6 @@ Uncategorised
 
 Uncategorised
   After events:
-    CF: cenc_filter at mov.c:7090:24
-  Occurrences: 3
-
-Uncategorised
-  After events:
     CF: choose_decoder at ffmpeg_opt.c:859:16
   Occurrences: 4
 
@@ -15326,16 +16246,6 @@ Uncategorised
   After events:
     CF: choose_encoder at ffmpeg_opt.c:1496:24
   Occurrences: 2
-
-Uncategorised
-  After events:
-    CF: clear_context at mpegvideo.c:668:5
-  Occurrences: 1
-
-Uncategorised
-  After events:
-    CF: clear_context at mpegvideo.c:692:25
-  Occurrences: 1
 
 Uncategorised
   After events:
@@ -15416,17 +16326,7 @@ Uncategorised
 
 Uncategorised
   After events:
-    CF: dct_init at mpegvideo.c:286:5
-  Occurrences: 1
-
-Uncategorised
-  After events:
     CF: decode_audio at ffmpeg.c:2097:11
-  Occurrences: 2
-
-Uncategorised
-  After events:
-    CF: decode_audio_specific_config_gb at aacdec_template.c:1128:20
   Occurrences: 2
 
 Uncategorised
@@ -15436,76 +16336,18 @@ Uncategorised
 
 Uncategorised
   After events:
-    CF: decode_ga_specific_config at aacdec_template.c:940:32
-    CT: get_bits1 at get_bits.h:498:0
-    RF: get_bits1 at get_bits.h:0:0
-  Occurrences: 2
-
-Uncategorised
-  After events:
-    CF: decode_ga_specific_config at aacdec_template.c:949:9
-    CT: get_bits1 at get_bits.h:498:0
-    RF: get_bits1 at get_bits.h:0:0
-  Occurrences: 2
-
-Uncategorised
-  After events:
-    CF: decode_ga_specific_config at aacdec_template.c:951:22
-    CT: get_bits1 at get_bits.h:498:0
-    RF: get_bits1 at get_bits.h:0:0
-  Occurrences: 2
-
-Uncategorised
-  After events:
-    CF: decode_ga_specific_config at aacdec_template.c:963:20
-  Occurrences: 2
-
-Uncategorised
-  After events:
-    CF: decode_ga_specific_config at aacdec_template.c:968:9
-    CT: count_channels at aacdec_template.c:105:0
-    RF: count_channels at aacdec_template.c:0:0
-  Occurrences: 2
-
-Uncategorised
-  After events:
     CF: decode_ics at aacdec_template.c:2149:19
   Occurrences: 6
 
 Uncategorised
   After events:
     CF: decode_ics at aacdec_template.c:2160:16
-  Occurrences: 12
-
-Uncategorised
-  After events:
-    CF: decode_ics at aacdec_template.c:2202:11
   Occurrences: 6
 
 Uncategorised
   After events:
-    CF: decode_luma_residual at h264_cavlc.c:647:25
-  Occurrences: 48
-
-Uncategorised
-  After events:
-    CF: decode_luma_residual at h264_cavlc.c:679:29
-  Occurrences: 838
-
-Uncategorised
-  After events:
-    CF: decode_nal_units at h264dec.c:0:0
-  Occurrences: 2
-
-Uncategorised
-  After events:
-    CF: decode_nal_units at h264dec.c:767:9
-  Occurrences: 2
-
-Uncategorised
-  After events:
     CF: decode_residual at h264_cavlc.c:445:27
-  Occurrences: 384
+  Occurrences: 178
 
 Uncategorised
   After events:
@@ -15515,36 +16357,26 @@ Uncategorised
     CT: av_bswap32 at bswap.h:66:0
     RF: av_bswap32 at bswap.h:0:0
     RF: get_vlc2 at get_bits.h:0:0
-  Occurrences: 126
-
-Uncategorised
-  After events:
-    CF: decode_residual at h264_cavlc.c:451:26
-  Occurrences: 56
+  Occurrences: 214
 
 Uncategorised
   After events:
     CF: decode_residual at h264_cavlc.c:451:26
     CT: pred_non_zero_count at h264_cavlc.c:285:0
     RF: pred_non_zero_count at h264_cavlc.c:0:0
-  Occurrences: 434
-
-Uncategorised
-  After events:
-    CF: decode_residual at h264_cavlc.c:455:26
-  Occurrences: 56
+  Occurrences: 490
 
 Uncategorised
   After events:
     CF: decode_residual at h264_cavlc.c:455:26
     CT: pred_non_zero_count at h264_cavlc.c:285:0
     RF: pred_non_zero_count at h264_cavlc.c:0:0
-  Occurrences: 2514
+  Occurrences: 1336
 
 Uncategorised
   After events:
     CF: decode_residual at h264_cavlc.c:475:9
-  Occurrences: 7718
+  Occurrences: 3138
 
 Uncategorised
   After events:
@@ -15554,66 +16386,36 @@ Uncategorised
     CT: av_bswap32 at bswap.h:66:0
     RF: av_bswap32 at bswap.h:0:0
     RF: show_bits at get_bits.h:0:0
-  Occurrences: 78
+  Occurrences: 18
 
 Uncategorised
   After events:
     CF: decode_residual at h264_cavlc.c:475:9
     CT: show_bits at get_bits.h:446:0
     RF: show_bits at get_bits.h:0:0
-  Occurrences: 1554
+  Occurrences: 40
 
 Uncategorised
   After events:
     CF: decode_residual at h264_cavlc.c:476:5
-  Occurrences: 7718
+  Occurrences: 3138
 
 Uncategorised
   After events:
     CF: decode_residual at h264_cavlc.c:476:5
     CT: skip_bits at get_bits.h:467:0
     RF: skip_bits at get_bits.h:0:0
-  Occurrences: 1632
+  Occurrences: 58
 
 Uncategorised
   After events:
     CF: decode_residual at h264_cavlc.c:484:20
-  Occurrences: 9926
-
-Uncategorised
-  After events:
-    CF: decode_residual at h264_cavlc.c:484:20
-    CT: show_bits at get_bits.h:446:0
-    CF: show_bits at get_bits.h:461:5
-    CT: av_bswap32 at bswap.h:66:0
-    RF: av_bswap32 at bswap.h:0:0
-    RF: show_bits at get_bits.h:0:0
-  Occurrences: 10
+  Occurrences: 6384
 
 Uncategorised
   After events:
     CF: decode_residual at h264_cavlc.c:487:9
-  Occurrences: 4580
-
-Uncategorised
-  After events:
-    CF: decode_residual at h264_cavlc.c:487:9
-    CT: skip_bits at get_bits.h:467:0
-    RF: skip_bits at get_bits.h:0:0
-  Occurrences: 10
-
-Uncategorised
-  After events:
-    CF: decode_residual at h264_cavlc.c:491:27
-    CT: get_level_prefix at h264_cavlc.c:409:0
-    CF: get_level_prefix at h264_cavlc.c:414:5
-    CT: av_bswap32 at bswap.h:66:0
-    RF: av_bswap32 at bswap.h:0:0
-    CF: get_level_prefix at h264_cavlc.c:417:15
-    CT: ff_log2_c at intmath.h:51:0
-    RF: ff_log2_c at intmath.h:0:0
-    RF: get_level_prefix at h264_cavlc.c:0:0
-  Occurrences: 10
+  Occurrences: 2908
 
 Uncategorised
   After events:
@@ -15627,60 +16429,13 @@ Uncategorised
 
 Uncategorised
   After events:
-    CF: decode_residual at h264_cavlc.c:531:24
-    CT: show_bits at get_bits.h:446:0
-    CF: show_bits at get_bits.h:461:5
-    CT: av_bswap32 at bswap.h:66:0
-    RF: av_bswap32 at bswap.h:0:0
-    RF: show_bits at get_bits.h:0:0
-  Occurrences: 230
-
-Uncategorised
-  After events:
     CF: decode_residual at h264_cavlc.c:534:13
   Occurrences: 1672
 
 Uncategorised
   After events:
-    CF: decode_residual at h264_cavlc.c:534:13
-    CT: skip_bits at get_bits.h:467:0
-    RF: skip_bits at get_bits.h:0:0
-  Occurrences: 658
-
-Uncategorised
-  After events:
-    CF: decode_residual at h264_cavlc.c:538:31
-    CT: get_level_prefix at h264_cavlc.c:409:0
-    CF: get_level_prefix at h264_cavlc.c:414:5
-    CT: av_bswap32 at bswap.h:66:0
-    RF: av_bswap32 at bswap.h:0:0
-    CF: get_level_prefix at h264_cavlc.c:417:15
-    CT: ff_log2_c at intmath.h:51:0
-    RF: ff_log2_c at intmath.h:0:0
-    RF: get_level_prefix at h264_cavlc.c:0:0
-  Occurrences: 2
-
-Uncategorised
-  After events:
     CF: decode_residual at h264_cavlc.c:541:60
   Occurrences: 310
-
-Uncategorised
-  After events:
-    CF: decode_residual at h264_cavlc.c:541:60
-    CT: get_bits at get_bits.h:379:0
-    CF: get_bits at get_bits.h:403:5
-    CT: av_bswap32 at bswap.h:66:0
-    RF: av_bswap32 at bswap.h:0:0
-    RF: get_bits at get_bits.h:0:0
-  Occurrences: 6
-
-Uncategorised
-  After events:
-    CF: decode_residual at h264_cavlc.c:541:60
-    CT: get_bits at get_bits.h:379:0
-    RF: get_bits at get_bits.h:0:0
-  Occurrences: 6
 
 Uncategorised
   After events:
@@ -15690,7 +16445,7 @@ Uncategorised
 Uncategorised
   After events:
     CF: decode_residual at h264_cavlc.c:566:30
-  Occurrences: 908
+  Occurrences: 256
 
 Uncategorised
   After events:
@@ -15700,19 +16455,19 @@ Uncategorised
     CT: av_bswap32 at bswap.h:66:0
     RF: av_bswap32 at bswap.h:0:0
     RF: get_vlc2 at get_bits.h:0:0
-  Occurrences: 34
+  Occurrences: 138
 
 Uncategorised
   After events:
     CF: decode_residual at h264_cavlc.c:566:30
     CT: get_vlc2 at get_bits.h:787:0
     RF: get_vlc2 at get_bits.h:0:0
-  Occurrences: 190
+  Occurrences: 260
 
 Uncategorised
   After events:
     CF: decode_residual at h264_cavlc.c:572:25
-  Occurrences: 13806
+  Occurrences: 2958
 
 Uncategorised
   After events:
@@ -15722,19 +16477,19 @@ Uncategorised
     CT: av_bswap32 at bswap.h:66:0
     RF: av_bswap32 at bswap.h:0:0
     RF: get_vlc2 at get_bits.h:0:0
-  Occurrences: 264
+  Occurrences: 1724
 
 Uncategorised
   After events:
     CF: decode_residual at h264_cavlc.c:572:25
     CT: get_vlc2 at get_bits.h:787:0
     RF: get_vlc2 at get_bits.h:0:0
-  Occurrences: 1084
+  Occurrences: 2852
 
 Uncategorised
   After events:
     CF: decode_residual at h264_cavlc.c:613:9
-  Occurrences: 6564
+  Occurrences: 1806
 
 Uncategorised
   After events:
@@ -15744,7 +16499,7 @@ Uncategorised
     CT: av_bswap32 at bswap.h:66:0
     RF: av_bswap32 at bswap.h:0:0
     RF: get_vlc2 at get_bits.h:0:0
-  Occurrences: 624
+  Occurrences: 4758
 
 Uncategorised
   After events:
@@ -15835,7 +16590,7 @@ Uncategorised
 Uncategorised
   After events:
     CF: encode_mb at mpegvideo_enc.c:2412:9
-  Occurrences: 690
+  Occurrences: 345
 
 Uncategorised
   After events:
@@ -15936,49 +16691,6 @@ Uncategorised
 
 Uncategorised
   After events:
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-  Occurrences: 345
-
-Uncategorised
-  After events:
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-  Occurrences: 345
-
-Uncategorised
-  After events:
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-  Occurrences: 345
-
-Uncategorised
-  After events:
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-  Occurrences: 345
-
-Uncategorised
-  After events:
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-  Occurrences: 345
-
-Uncategorised
-  After events:
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-  Occurrences: 345
-
-Uncategorised
-  After events:
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    RF: ff_dct_quantize_c at mpegvideo_enc.c:4550:5
-  Occurrences: 2070
-
-Uncategorised
-  After events:
     CF: encode_ms_info at aacenc.c:247:5
   Occurrences: 18
 
@@ -16028,11 +16740,6 @@ Uncategorised
     CT: encode_simple_receive_packet at encode.c:264:0
     RF: encode_simple_receive_packet at encode.c:0:0
   Occurrences: 1
-
-Uncategorised
-  After events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-  Occurrences: 345
 
 Uncategorised
   After events:
@@ -16086,11 +16793,6 @@ Uncategorised
   After events:
     CF: ff_codec_get_id at utils.c:150:33
   Occurrences: 63
-
-Uncategorised
-  After events:
-    CF: ff_default_get_video_buffer at video.c:98:53
-  Occurrences: 1
 
 Uncategorised
   After events:
@@ -16237,11 +16939,6 @@ Uncategorised
 
 Uncategorised
   After events:
-    CF: ff_h2645_extract_rbsp at h2645_parse.c:97:5
-  Occurrences: 2
-
-Uncategorised
-  After events:
     CF: ff_h2645_packet_split at h2645_parse.c:0:0
   Occurrences: 10
 
@@ -16258,12 +16955,12 @@ Uncategorised
 Uncategorised
   After events:
     CF: ff_h264_decode_mb_cavlc at h264_cavlc.c:1145:25
-  Occurrences: 266
+  Occurrences: 14
 
 Uncategorised
   After events:
     CF: ff_h264_decode_mb_cavlc at h264_cavlc.c:1160:33
-  Occurrences: 480
+  Occurrences: 44
 
 Uncategorised
   After events:
@@ -16272,22 +16969,7 @@ Uncategorised
 
 Uncategorised
   After events:
-    CF: ff_h264_decode_picture_parameter_set at h264_ps.c:0:0
-  Occurrences: 3
-
-Uncategorised
-  After events:
     CF: ff_h264_decode_picture_parameter_set at h264_ps.c:786:19
-  Occurrences: 3
-
-Uncategorised
-  After events:
-    CF: ff_h264_decode_picture_parameter_set at h264_ps.c:817:30
-  Occurrences: 3
-
-Uncategorised
-  After events:
-    CF: ff_h264_decode_picture_parameter_set at h264_ps.c:825:25
   Occurrences: 3
 
 Uncategorised
@@ -16299,21 +16981,6 @@ Uncategorised
   After events:
     CF: ff_h264_decode_picture_parameter_set at h264_ps.c:835:49
   Occurrences: 6
-
-Uncategorised
-  After events:
-    CF: ff_h264_decode_picture_parameter_set at h264_ps.c:836:49
-  Occurrences: 3
-
-Uncategorised
-  After events:
-    CF: ff_h264_decode_picture_parameter_set at h264_ps.c:837:49
-  Occurrences: 3
-
-Uncategorised
-  After events:
-    CF: ff_h264_decode_picture_parameter_set at h264_ps.c:838:49
-  Occurrences: 3
 
 Uncategorised
   After events:
@@ -16352,42 +17019,7 @@ Uncategorised
 
 Uncategorised
   After events:
-    CF: ff_h264_decode_seq_parameter_set at h264_ps.c:444:21
-  Occurrences: 3
-
-Uncategorised
-  After events:
     CF: ff_h264_decode_seq_parameter_set at h264_ps.c:488:28
-  Occurrences: 3
-
-Uncategorised
-  After events:
-    CF: ff_h264_decode_seq_parameter_set at h264_ps.c:497:43
-  Occurrences: 3
-
-Uncategorised
-  After events:
-    CF: ff_h264_decode_seq_parameter_set at h264_ps.c:498:43
-  Occurrences: 3
-
-Uncategorised
-  After events:
-    CF: ff_h264_decode_seq_parameter_set at h264_ps.c:525:36
-  Occurrences: 3
-
-Uncategorised
-  After events:
-    CF: ff_h264_decode_seq_parameter_set at h264_ps.c:526:36
-  Occurrences: 3
-
-Uncategorised
-  After events:
-    CF: ff_h264_decode_seq_parameter_set at h264_ps.c:527:36
-  Occurrences: 3
-
-Uncategorised
-  After events:
-    CF: ff_h264_decode_seq_parameter_set at h264_ps.c:528:36
   Occurrences: 3
 
 Uncategorised
@@ -16407,15 +17039,8 @@ Uncategorised
 
 Uncategorised
   After events:
-    CF: ff_h264_idct_dc_add_8_c at h264idct_template.c:154:22
-    CT: av_clip_uint8_c at common.h:205:0
-    RF: av_clip_uint8_c at common.h:0:0
-  Occurrences: 5184
-
-Uncategorised
-  After events:
     CF: ff_h264_queue_decode_slice at h264_slice.c:2195:11
-  Occurrences: 6
+  Occurrences: 4
 
 Uncategorised
   After events:
@@ -16606,16 +17231,6 @@ Uncategorised
 
 Uncategorised
   After events:
-    CF: ff_mdct15_init at mdct15.c:291:35
-  Occurrences: 74
-
-Uncategorised
-  After events:
-    CF: ff_mdct15_init at mdct15.c:301:31
-  Occurrences: 44
-
-Uncategorised
-  After events:
     CF: ff_mov_read_stsd_entries at mov.c:2555:27
   Occurrences: 1
 
@@ -16661,16 +17276,6 @@ Uncategorised
 
 Uncategorised
   After events:
-    CF: ff_mpeg4_encode_picture_header at mpeg4videoenc.c:1097:5
-  Occurrences: 1
-
-Uncategorised
-  After events:
-    CF: ff_mpeg4_encode_picture_header at mpeg4videoenc.c:1101:5
-  Occurrences: 1
-
-Uncategorised
-  After events:
     CF: ff_mpeg4_encode_picture_header at mpeg4videoenc.c:1108:5
   Occurrences: 1
 
@@ -16688,21 +17293,6 @@ Uncategorised
   After events:
     CF: ff_mpeg4audio_get_config_gb at mpeg4audio.c:97:22
   Occurrences: 3
-
-Uncategorised
-  After events:
-    CF: ff_mpv_common_init at mpegvideo.c:745:5
-  Occurrences: 1
-
-Uncategorised
-  After events:
-    CF: ff_mpv_encode_init at mpegvideo_enc.c:812:5
-  Occurrences: 1
-
-Uncategorised
-  After events:
-    CF: ff_mpv_encode_init at mpegvideo_enc.c:813:5
-  Occurrences: 1
 
 Uncategorised
   After events:
@@ -16987,29 +17577,12 @@ Uncategorised
 Uncategorised
   After events:
     CF: ffio_fdopen at aviobuf.c:976:10
-  Occurrences: 4
-
-Uncategorised
-  After events:
-    CF: ffio_init_context at aviobuf.c:102:5
   Occurrences: 2
 
 Uncategorised
   After events:
     CF: ffio_init_context at aviobuf.c:102:5
-    CT: url_resetbuf at aviobuf.c:1166:0
-    RF: url_resetbuf at aviobuf.c:0:0
-  Occurrences: 5
-
-Uncategorised
-  After events:
-    CF: ffurl_read at avio.c:405:12
-  Occurrences: 1
-
-Uncategorised
-  After events:
-    CF: ffurl_write at avio.c:423:12
-  Occurrences: 4
+  Occurrences: 2
 
 Uncategorised
   After events:
@@ -17715,16 +18288,6 @@ Uncategorised
 
 Uncategorised
   After events:
-    CF: get_edit_list_entry at mov.c:3315:27
-    CT: av_rescale at mathematics.c:130:0
-    CF: av_rescale at mathematics.c:131:12
-    CT: av_rescale_rnd at mathematics.c:59:0
-    RF: av_rescale_rnd at mathematics.c:127:1
-    RF: av_rescale at mathematics.c:131:5
-  Occurrences: 2
-
-Uncategorised
-  After events:
     CF: get_fps at ratecontrol.c:60:18
   Occurrences: 2
 
@@ -17750,34 +18313,6 @@ Uncategorised
 
 Uncategorised
   After events:
-    CF: get_se_golomb at golomb.h:266:5
-    CT: av_bswap32 at bswap.h:66:0
-    RF: av_bswap32 at bswap.h:0:0
-  Occurrences: 15
-
-Uncategorised
-  After events:
-    CF: get_se_golomb at golomb.h:276:19
-    CT: ff_log2_c at intmath.h:51:0
-    RF: ff_log2_c at intmath.h:0:0
-  Occurrences: 2
-
-Uncategorised
-  After events:
-    CF: get_se_golomb at golomb.h:278:9
-    CT: av_bswap32 at bswap.h:66:0
-    RF: av_bswap32 at bswap.h:0:0
-  Occurrences: 2
-
-Uncategorised
-  After events:
-    CF: get_ue_golomb at golomb.h:78:5
-    CT: av_bswap32 at bswap.h:66:0
-    RF: av_bswap32 at bswap.h:0:0
-  Occurrences: 27
-
-Uncategorised
-  After events:
     CF: get_ue_golomb at golomb.h:88:23
     CT: ff_log2_c at intmath.h:51:0
     RF: ff_log2_c at intmath.h:0:0
@@ -17788,14 +18323,14 @@ Uncategorised
     CF: get_ue_golomb_31 at golomb.h:132:5
     CT: av_bswap32 at bswap.h:66:0
     RF: av_bswap32 at bswap.h:0:0
-  Occurrences: 5
+  Occurrences: 3
 
 Uncategorised
   After events:
     CF: get_vlc2 at get_bits.h:811:5
     CT: av_bswap32 at bswap.h:66:0
     RF: av_bswap32 at bswap.h:0:0
-  Occurrences: 25492
+  Occurrences: 25488
 
 Uncategorised
   After events:
@@ -17937,21 +18472,6 @@ Uncategorised
 
 Uncategorised
   After events:
-    CF: h264_frame_start at h264_slice.c:540:9
-  Occurrences: 2
-
-Uncategorised
-  After events:
-    CF: h264_frame_start at h264_slice.c:553:9
-  Occurrences: 2
-
-Uncategorised
-  After events:
-    CF: h264_frame_start at h264_slice.c:554:9
-  Occurrences: 2
-
-Uncategorised
-  After events:
     CF: h264_init_ps at h264_slice.c:1047:9
     CT: av_buffer_unref at buffer.c:140:0
     RF: av_buffer_unref at buffer.c:145:1
@@ -17961,11 +18481,6 @@ Uncategorised
   After events:
     CF: h264_parse at h264_parser.c:624:5
   Occurrences: 3
-
-Uncategorised
-  After events:
-    CF: h264_slice_header_init at h264_slice.c:1007:9
-  Occurrences: 2
 
 Uncategorised
   After events:
@@ -18016,148 +18531,6 @@ Uncategorised
     RF: av_bswap32 at bswap.h:0:0
     RF: get_ue_golomb_31 at golomb.h:0:0
   Occurrences: 2
-
-Uncategorised
-  After events:
-    CF: h264_slice_header_parse at h264_slice.c:1871:18
-    CT: get_ue_golomb at golomb.h:53:0
-    CF: get_ue_golomb at golomb.h:78:5
-    CT: av_bswap32 at bswap.h:66:0
-    RF: av_bswap32 at bswap.h:0:0
-    RF: get_ue_golomb at golomb.h:0:0
-  Occurrences: 2
-
-Uncategorised
-  After events:
-    CF: h264_slice_header_parse at h264_slice.c:1885:21
-    CT: get_bits at get_bits.h:379:0
-    CF: get_bits at get_bits.h:403:5
-    CT: av_bswap32 at bswap.h:66:0
-    RF: av_bswap32 at bswap.h:0:0
-    RF: get_bits at get_bits.h:0:0
-  Occurrences: 2
-
-Uncategorised
-  After events:
-    CF: h264_slice_header_parse at h264_slice.c:1923:31
-    CT: get_ue_golomb_long at golomb.h:104:0
-    CF: get_ue_golomb_long at golomb.h:108:11
-    CT: show_bits_long at get_bits.h:602:0
-    CF: show_bits_long at get_bits.h:608:16
-    CT: get_bits_long at get_bits.h:546:0
-    CF: get_bits_long at get_bits.h:562:24
-    CT: get_bits at get_bits.h:379:0
-    CF: get_bits at get_bits.h:403:5
-    CT: av_bswap32 at bswap.h:66:0
-    RF: av_bswap32 at bswap.h:0:0
-    RF: get_bits at get_bits.h:0:0
-    RF: get_bits_long at get_bits.h:0:0
-    CF: show_bits_long at get_bits.h:608:16
-    CT: get_bits_long at get_bits.h:546:0
-    CF: get_bits_long at get_bits.h:562:24
-    CT: get_bits at get_bits.h:379:0
-    RF: get_bits at get_bits.h:0:0
-    CF: get_bits_long at get_bits.h:563:22
-    CT: get_bits at get_bits.h:379:0
-    CF: get_bits at get_bits.h:403:5
-    CT: av_bswap32 at bswap.h:66:0
-    RF: av_bswap32 at bswap.h:0:0
-    RF: get_bits at get_bits.h:0:0
-    RF: get_bits_long at get_bits.h:0:0
-    RF: show_bits_long at get_bits.h:0:0
-    CF: get_ue_golomb_long at golomb.h:109:16
-    CT: ff_log2_c at intmath.h:51:0
-    RF: ff_log2_c at intmath.h:0:0
-    CF: get_ue_golomb_long at golomb.h:110:5
-    [...12 more events...]
-  Occurrences: 2
-
-Uncategorised
-  After events:
-    CF: h264_slice_header_parse at h264_slice.c:1954:11
-    CT: ff_h264_parse_ref_count at h264_parse.c:224:0
-    RF: ff_h264_parse_ref_count at h264_parse.c:277:1
-  Occurrences: 2
-
-Uncategorised
-  After events:
-    CF: h264_slice_header_parse at h264_slice.c:1985:15
-    CT: ff_h264_decode_ref_pic_marking at h264_refs.c:835:0
-    CF: ff_h264_decode_ref_pic_marking at h264_refs.c:841:9
-    CT: skip_bits1 at get_bits.h:538:0
-    CF: skip_bits1 at get_bits.h:540:5
-    CT: skip_bits at get_bits.h:467:0
-    RF: skip_bits at get_bits.h:0:0
-    RF: skip_bits1 at get_bits.h:0:0
-    CF: ff_h264_decode_ref_pic_marking at h264_refs.c:842:13
-    CT: get_bits1 at get_bits.h:498:0
-    RF: get_bits1 at get_bits.h:0:0
-    RF: ff_h264_decode_ref_pic_marking at h264_refs.c:893:1
-  Occurrences: 2
-
-Uncategorised
-  After events:
-    CF: h264_slice_header_parse at h264_slice.c:2000:36
-  Occurrences: 2
-
-Uncategorised
-  After events:
-    CF: h264_slice_header_parse at h264_slice.c:2006:24
-    CT: get_chroma_qp at h264dec.h:647:0
-    RF: get_chroma_qp at h264dec.h:0:0
-  Occurrences: 2
-
-Uncategorised
-  After events:
-    CF: h264_slice_header_parse at h264_slice.c:2007:24
-    CT: get_chroma_qp at h264dec.h:647:0
-    RF: get_chroma_qp at h264dec.h:0:0
-  Occurrences: 2
-
-Uncategorised
-  After events:
-    CF: h264_slice_header_parse at h264_slice.c:2019:15
-  Occurrences: 2
-
-Uncategorised
-  After events:
-    CF: h264_slice_header_parse at h264_slice.c:2030:46
-  Occurrences: 2
-
-Uncategorised
-  After events:
-    CF: h264_slice_header_parse at h264_slice.c:2031:46
-  Occurrences: 2
-
-Uncategorised
-  After events:
-    CF: hl_decode_mb_predict_luma at h264_mb.c:0:0
-  Occurrences: 324
-
-Uncategorised
-  After events:
-    CF: hl_decode_mb_predict_luma at h264_mb.c:704:9
-  Occurrences: 636
-
-Uncategorised
-  After events:
-    CF: hl_decode_mb_simple_8 at h264_mb_template.c:159:17
-  Occurrences: 876
-
-Uncategorised
-  After events:
-    CF: hl_decode_mb_simple_8 at h264_mb_template.c:160:17
-  Occurrences: 876
-
-Uncategorised
-  After events:
-    CF: hl_decode_mb_simple_8 at h264_mb_template.c:237:21
-  Occurrences: 372
-
-Uncategorised
-  After events:
-    CF: hl_decode_mb_simple_8 at h264_mb_template.c:240:21
-  Occurrences: 366
 
 Uncategorised
   After events:
@@ -18362,16 +18735,6 @@ Uncategorised
 
 Uncategorised
   After events:
-    CF: main at ffmpeg.c:4521:5
-  Occurrences: 1
-
-Uncategorised
-  After events:
-    CF: mb_var_thread at mpegvideo_enc.c:2646:23
-  Occurrences: 345
-
-Uncategorised
-  After events:
     CF: mlp_probe at mlpdec.c:95:12
   Occurrences: 2
 
@@ -18436,11 +18799,6 @@ Uncategorised
     CT: av_toupper at avstring.h:236:0
     [...21 more events...]
   Occurrences: 1
-
-Uncategorised
-  After events:
-    CF: mov_fix_index at mov.c:3701:12
-  Occurrences: 4
 
 Uncategorised
   After events:
@@ -19465,11 +19823,6 @@ Uncategorised
 
 Uncategorised
   After events:
-    CF: mp3_read_probe at mp3dec.c:91:22
-  Occurrences: 1
-
-Uncategorised
-  After events:
     CF: mpeg4_encode_block at mpeg4videoenc.c:302:9
   Occurrences: 2070
 
@@ -19510,16 +19863,6 @@ Uncategorised
 
 Uncategorised
   After events:
-    CF: mpeg4_encode_visual_object_header at mpeg4videoenc.c:946:5
-  Occurrences: 1
-
-Uncategorised
-  After events:
-    CF: mpeg4_encode_visual_object_header at mpeg4videoenc.c:947:5
-  Occurrences: 1
-
-Uncategorised
-  After events:
     CF: mpeg4_encode_visual_object_header at mpeg4videoenc.c:948:5
   Occurrences: 1
 
@@ -19531,21 +19874,6 @@ Uncategorised
 Uncategorised
   After events:
     CF: mpeg4_encode_visual_object_header at mpeg4videoenc.c:952:5
-  Occurrences: 1
-
-Uncategorised
-  After events:
-    CF: mpeg4_encode_vol_header at mpeg4videoenc.c:1025:5
-  Occurrences: 1
-
-Uncategorised
-  After events:
-    CF: mpeg4_encode_vol_header at mpeg4videoenc.c:1035:5
-  Occurrences: 1
-
-Uncategorised
-  After events:
-    CF: mpeg4_encode_vol_header at mpeg4videoenc.c:1045:5
   Occurrences: 1
 
 Uncategorised
@@ -19567,11 +19895,6 @@ Uncategorised
   After events:
     CF: open_output_file at ffmpeg_opt.c:2524:38
   Occurrences: 1
-
-Uncategorised
-  After events:
-    CF: output_configure at aacdec_template.c:544:9
-  Occurrences: 2
 
 Uncategorised
   After events:
@@ -19801,41 +20124,6 @@ Uncategorised
 
 Uncategorised
   After events:
-    CF: ps_tableinit at aacps_tablegen.h:154:40
-  Occurrences: 105
-
-Uncategorised
-  After events:
-    CF: ps_tableinit at aacps_tablegen.h:155:40
-  Occurrences: 52
-
-Uncategorised
-  After events:
-    CF: ps_tableinit at aacps_tablegen.h:167:27
-  Occurrences: 105
-
-Uncategorised
-  After events:
-    CF: ps_tableinit at aacps_tablegen.h:169:27
-  Occurrences: 210
-
-Uncategorised
-  After events:
-    CF: ps_tableinit at aacps_tablegen.h:187:43
-  Occurrences: 90
-
-Uncategorised
-  After events:
-    CF: ps_tableinit at aacps_tablegen.h:191:30
-  Occurrences: 30
-
-Uncategorised
-  After events:
-    CF: ps_tableinit at aacps_tablegen.h:202:43
-  Occurrences: 25
-
-Uncategorised
-  After events:
     CF: ps_tableinit at aacps_tablegen.h:211:5
   Occurrences: 1
 
@@ -19927,16 +20215,17 @@ Uncategorised
 Uncategorised
   After events:
     CF: psy_3gpp_init at aacpsy.c:365:24
-  Occurrences: 1
-
-Uncategorised
-  After events:
-    CF: put_audio_specific_config at aacenc.c:118:5
-  Occurrences: 1
-
-Uncategorised
-  After events:
-    CF: put_audio_specific_config at aacenc.c:119:5
+    CT: ath at aacpsy.c:293:0
+    CF: ath at aacpsy.c:295:22
+    CT: Jump to external code for pow
+    RF: Jump to external code for pow
+    CF: ath at aacpsy.c:296:22
+    CT: Jump to external code for exp
+    RF: Jump to external code for exp
+    CF: ath at aacpsy.c:297:22
+    CT: Jump to external code for exp
+    RF: Jump to external code for exp
+    RF: ath at aacpsy.c:295:5
   Occurrences: 1
 
 Uncategorised
@@ -19952,14 +20241,14 @@ Uncategorised
     CT: av_bswap32 at bswap.h:66:0
     RF: av_bswap32 at bswap.h:0:0
     RF: put_bits_no_assert at put_bits.h:0:0
-  Occurrences: 33
+  Occurrences: 31
 
 Uncategorised
   After events:
     CF: put_bits at put_bits.h:250:5
     CT: put_bits_no_assert at put_bits.h:197:0
     RF: put_bits_no_assert at put_bits.h:0:0
-  Occurrences: 224
+  Occurrences: 213
 
 Uncategorised
   After events:
@@ -19996,12 +20285,45 @@ Uncategorised
 Uncategorised
   After events:
     CF: put_bitstream_info at aacenc.c:527:9
-  Occurrences: 18
+  Occurrences: 3
+
+Uncategorised
+  After events:
+    CF: put_bitstream_info at aacenc.c:527:9
+    CT: put_bits at put_bits.h:247:0
+    CF: put_bits at put_bits.h:250:5
+    CT: put_bits_no_assert at put_bits.h:197:0
+    CF: put_bits_no_assert at put_bits.h:228:13
+    CT: av_bswap32 at bswap.h:66:0
+    RF: av_bswap32 at bswap.h:0:0
+    RF: put_bits_no_assert at put_bits.h:0:0
+    RF: put_bits at put_bits.h:0:0
+  Occurrences: 5
+
+Uncategorised
+  After events:
+    CF: put_bitstream_info at aacenc.c:527:9
+    CT: put_bits at put_bits.h:247:0
+    CF: put_bits at put_bits.h:250:5
+    CT: put_bits_no_assert at put_bits.h:197:0
+    RF: put_bits_no_assert at put_bits.h:0:0
+    RF: put_bits at put_bits.h:0:0
+  Occurrences: 10
 
 Uncategorised
   After events:
     CF: put_bitstream_info at aacenc.c:528:5
-  Occurrences: 6
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    CF: put_bitstream_info at aacenc.c:528:5
+    CT: put_bits at put_bits.h:247:0
+    CF: put_bits at put_bits.h:250:5
+    CT: put_bits_no_assert at put_bits.h:197:0
+    RF: put_bits_no_assert at put_bits.h:0:0
+    RF: put_bits at put_bits.h:0:0
+  Occurrences: 5
 
 Uncategorised
   After events:
@@ -20016,37 +20338,9 @@ Uncategorised
 Uncategorised
   After events:
     CF: redspark_probe at redspark.c:48:12
+    CT: av_bswap32 at bswap.h:66:0
+    RF: av_bswap32 at bswap.h:0:0
   Occurrences: 1
-
-Uncategorised
-  After events:
-    CF: retry_transfer_wrapper at avio.c:368:13
-    CT: ff_check_interrupt at avio.c:658:0
-    CF: ff_check_interrupt at avio.c:661:16
-    CT: decode_interrupt_cb at ffmpeg.c:509:12
-    RF: decode_interrupt_cb at ffmpeg.c:509:5
-    RF: ff_check_interrupt at avio.c:0:0
-  Occurrences: 5
-
-Uncategorised
-  After events:
-    CF: retry_transfer_wrapper at avio.c:370:15
-    CT: file_read at file.c:112:0
-    CF: file_read at file.c:116:11
-    CT: Jump to external code for read
-    RF: Jump to external code for read
-    RF: file_read at file.c:122:1
-  Occurrences: 1
-
-Uncategorised
-  After events:
-    CF: retry_transfer_wrapper at avio.c:370:15
-    CT: file_write at file.c:125:0
-    CF: file_write at file.c:129:11
-    CT: Jump to external code for write
-    RF: Jump to external code for write
-    RF: file_write at file.c:130:5
-  Occurrences: 4
 
 Uncategorised
   After events:
@@ -20063,6 +20357,8 @@ Uncategorised
 Uncategorised
   After events:
     CF: search_for_pns at aaccoder.c:611:27
+    CT: av_clipf_c at common.h:388:0
+    RF: av_clipf_c at common.h:0:0
   Occurrences: 24
 
 Uncategorised
@@ -20101,18 +20397,15 @@ Uncategorised
 Uncategorised
   After events:
     CF: sniff_channel_order at aacdec_template.c:284:9
-  Occurrences: 2
-
-Uncategorised
-  After events:
-    CF: sniff_channel_order at aacdec_template.c:284:9
     CT: count_paired_channels at aacdec_template.c:239:0
     RF: count_paired_channels at aacdec_template.c:0:0
-  Occurrences: 2
+  Occurrences: 4
 
 Uncategorised
   After events:
     CF: sniff_channel_order at aacdec_template.c:288:9
+    CT: count_paired_channels at aacdec_template.c:239:0
+    RF: count_paired_channels at aacdec_template.c:0:0
   Occurrences: 2
 
 Uncategorised
@@ -20122,27 +20415,7 @@ Uncategorised
 
 Uncategorised
   After events:
-    CF: spectral_to_sample at aacdec_template.c:3057:21
-  Occurrences: 3
-
-Uncategorised
-  After events:
-    CF: spectral_to_sample at aacdec_template.c:3071:21
-  Occurrences: 3
-
-Uncategorised
-  After events:
-    CF: spectral_to_sample at aacdec_template.c:3086:21
-  Occurrences: 3
-
-Uncategorised
-  After events:
     CF: sws_init_context at utils.c:1352:10
-  Occurrences: 1
-
-Uncategorised
-  After events:
-    CF: sws_init_context at utils.c:1431:9
   Occurrences: 1
 
 Uncategorised
@@ -20163,17 +20436,12 @@ Uncategorised
 Uncategorised
   After events:
     CF: sws_init_context at utils.c:1844:28
-  Occurrences: 3
-
-Uncategorised
-  After events:
-    CF: sws_init_context at utils.c:1871:24
   Occurrences: 1
 
 Uncategorised
   After events:
     CF: sws_init_context at utils.c:1872:24
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
@@ -20219,11 +20487,6 @@ Uncategorised
 
 Uncategorised
   After events:
-    CF: url_open_dyn_buf_internal at aviobuf.c:1475:5
-  Occurrences: 3
-
-Uncategorised
-  After events:
     CF: validate_codec_tag at movenc.c:1770:17
   Occurrences: 16
 
@@ -20245,27 +20508,17 @@ Uncategorised
 Uncategorised
   After events:
     CT: Jump to external code for memcpy
-  Occurrences: 7
+  Occurrences: 3
 
 Uncategorised
   After events:
     CT: Jump to external code for memset
-  Occurrences: 26
+  Occurrences: 24
 
 Uncategorised
   After events:
     CT: Jump to external code for posix_memalign
   Occurrences: 2
-
-Uncategorised
-  After events:
-    CT: Jump to external code for sincos
-  Occurrences: 145
-
-Uncategorised
-  After events:
-    CT: Jump to external code for sincosf
-  Occurrences: 590
 
 Uncategorised
   After events:
@@ -20284,11 +20537,6 @@ Uncategorised
 
 Uncategorised
   After events:
-    CT: adp_probe at adp.c:32:12
-  Occurrences: 1
-
-Uncategorised
-  After events:
     CT: adts_aac_probe at aacdec.c:41:36
   Occurrences: 1
 
@@ -20299,23 +20547,8 @@ Uncategorised
 
 Uncategorised
   After events:
-    CT: amr_probe at amr.c:76:20
-  Occurrences: 1
-
-Uncategorised
-  After events:
     CT: analyze at mpegts.c:578:0
   Occurrences: 2
-
-Uncategorised
-  After events:
-    CT: apply_channel_coupling at aacdec_template.c:3002:0
-  Occurrences: 9
-
-Uncategorised
-  After events:
-    CT: argo_asf_probe at argo_asf.c:167:44
-  Occurrences: 1
 
 Uncategorised
   After events:
@@ -20330,7 +20563,7 @@ Uncategorised
 Uncategorised
   After events:
     CT: av_bswap32 at bswap.h:66:0
-  Occurrences: 900
+  Occurrences: 898
 
 Uncategorised
   After events:
@@ -20355,12 +20588,7 @@ Uncategorised
 Uncategorised
   After events:
     CT: av_clipf_c at common.h:388:0
-  Occurrences: 60
-
-Uncategorised
-  After events:
-    CT: av_cpu_max_align at cpu.c:270:5
-  Occurrences: 1
+  Occurrences: 36
 
 Uncategorised
   After events:
@@ -20514,11 +20742,6 @@ Uncategorised
 
 Uncategorised
   After events:
-    CT: brender_read_probe at img2_brender_pix.c:31:19
-  Occurrences: 1
-
-Uncategorised
-  After events:
     CT: bsearch at stdlib-bsearch.h:20:0
   Occurrences: 124
 
@@ -20554,11 +20777,6 @@ Uncategorised
 
 Uncategorised
   After events:
-    CT: clear_context at mpegvideo.c:659:0
-  Occurrences: 1
-
-Uncategorised
-  After events:
     CT: configure_input_audio_filter at ffmpeg_filter.c:832:0
   Occurrences: 1
 
@@ -20580,7 +20798,7 @@ Uncategorised
 Uncategorised
   After events:
     CT: count_paired_channels at aacdec_template.c:239:0
-  Occurrences: 6
+  Occurrences: 2
 
 Uncategorised
   After events:
@@ -20589,22 +20807,12 @@ Uncategorised
 
 Uncategorised
   After events:
-    CT: decode_ga_specific_config at aacdec_template.c:923:0
-  Occurrences: 2
-
-Uncategorised
-  After events:
     CT: decode_residual at h264_cavlc.c:436:0
-  Occurrences: 1632
+  Occurrences: 62
 
 Uncategorised
   After events:
     CT: decode_scalefactors at aacdec_template.c:1600:0
-  Occurrences: 12
-
-Uncategorised
-  After events:
-    CT: decode_spectrum_and_dequant at aacdec_template.c:1770:0
   Occurrences: 6
 
 Uncategorised
@@ -20629,13 +20837,8 @@ Uncategorised
 
 Uncategorised
   After events:
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-  Occurrences: 345
-
-Uncategorised
-  After events:
     CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-  Occurrences: 690
+  Occurrences: 689
 
 Uncategorised
   After events:
@@ -20709,33 +20912,8 @@ Uncategorised
 
 Uncategorised
   After events:
-    CT: ff_h264_chroma_dc_dequant_idct_8_c at h264idct_template.c:319:8
-  Occurrences: 738
-
-Uncategorised
-  After events:
     CT: ff_h264_filter_mb at h264_loopfilter.c:720:0
   Occurrences: 12
-
-Uncategorised
-  After events:
-    CT: ff_h264_idct_dc_add_8_c at h264idct_template.c:148:15
-  Occurrences: 324
-
-Uncategorised
-  After events:
-    CT: ff_h264_set_erpic at h264_picture.c:201:5
-  Occurrences: 10
-
-Uncategorised
-  After events:
-    CT: ff_h264_slice_context_init at h264dec.c:265:37
-  Occurrences: 2
-
-Uncategorised
-  After events:
-    CT: ff_hpeldsp_init at hpeldsp.c:346:5
-  Occurrences: 1
 
 Uncategorised
   After events:
@@ -20759,11 +20937,6 @@ Uncategorised
 
 Uncategorised
   After events:
-    CT: ff_mdct15_init at mdct15.c:249:0
-  Occurrences: 6
-
-Uncategorised
-  After events:
     CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
   Occurrences: 345
 
@@ -20771,26 +20944,6 @@ Uncategorised
   After events:
     CT: ff_mpeg4_pred_dc at mpeg4video.h:94:0
   Occurrences: 2070
-
-Uncategorised
-  After events:
-    CT: ff_network_close at network.c:121:1
-  Occurrences: 1
-
-Uncategorised
-  After events:
-    CT: ff_network_init at network.c:66:5
-  Occurrences: 1
-
-Uncategorised
-  After events:
-    CT: ff_pixblockdsp_init at pixblockdsp.c:86:20
-  Occurrences: 1
-
-Uncategorised
-  After events:
-    CT: ff_qpeldsp_init at qpeldsp.c:804:5
-  Occurrences: 1
 
 Uncategorised
   After events:
@@ -20804,28 +20957,8 @@ Uncategorised
 
 Uncategorised
   After events:
-    CT: ff_tls_deinit at network.c:56:1
-  Occurrences: 1
-
-Uncategorised
-  After events:
-    CT: ff_tls_init at network.c:43:5
-  Occurrences: 1
-
-Uncategorised
-  After events:
     CT: ff_toupper4 at to_upper4.h:30:0
   Occurrences: 157
-
-Uncategorised
-  After events:
-    CT: ffio_init_context at aviobuf.c:81:0
-  Occurrences: 5
-
-Uncategorised
-  After events:
-    CT: ffio_open_whitelist at aviobuf.c:1228:0
-  Occurrences: 1
 
 Uncategorised
   After events:
@@ -20894,11 +21027,6 @@ Uncategorised
 
 Uncategorised
   After events:
-    CT: get_edit_list_entry at mov.c:3297:0
-  Occurrences: 4
-
-Uncategorised
-  After events:
     CT: get_flags at motion_est.c:100:0
   Occurrences: 4
 
@@ -20909,18 +21037,13 @@ Uncategorised
 
 Uncategorised
   After events:
-    CT: get_frag_stream_info at mov.c:1185:0
-  Occurrences: 3
-
-Uncategorised
-  After events:
     CT: get_frame_defaults at frame.c:55:0
   Occurrences: 6
 
 Uncategorised
   After events:
     CT: get_local_pos at utils.c:337:0
-  Occurrences: 8
+  Occurrences: 4
 
 Uncategorised
   After events:
@@ -20939,38 +21062,23 @@ Uncategorised
 
 Uncategorised
   After events:
-    CT: get_pixels_8_c at pixblockdsp.c:46:5
-  Occurrences: 2070
-
-Uncategorised
-  After events:
-    CT: get_se_golomb at golomb.h:265:5
-  Occurrences: 15
-
-Uncategorised
-  After events:
     CT: get_ue_golomb at golomb.h:53:0
   Occurrences: 18
 
 Uncategorised
   After events:
-    CT: get_ue_golomb at golomb.h:77:5
-  Occurrences: 27
-
-Uncategorised
-  After events:
     CT: get_ue_golomb_31 at golomb.h:120:0
-  Occurrences: 1026
+  Occurrences: 1023
 
 Uncategorised
   After events:
     CT: get_ue_golomb_31 at golomb.h:131:5
-  Occurrences: 5
+  Occurrences: 3
 
 Uncategorised
   After events:
     CT: get_vlc2 at get_bits.h:787:0
-  Occurrences: 21662
+  Occurrences: 5198
 
 Uncategorised
   After events:
@@ -21004,11 +21112,6 @@ Uncategorised
 
 Uncategorised
   After events:
-    CT: idcin_probe at idcin.c:114:12
-  Occurrences: 1
-
-Uncategorised
-  After events:
     CT: idctSparseColPut_int16_8bit at simple_idct_template.c:264:0
   Occurrences: 33120
 
@@ -21019,18 +21122,8 @@ Uncategorised
 
 Uncategorised
   After events:
-    CT: ifv_probe at ifv.c:47:20
-  Occurrences: 1
-
-Uncategorised
-  After events:
     CT: image_get_linesize at imgutils.c:54:0
   Occurrences: 40
-
-Uncategorised
-  After events:
-    CT: init_dynload at cmdutils.c:84:1
-  Occurrences: 1
 
 Uncategorised
   After events:
@@ -21090,7 +21183,7 @@ Uncategorised
 Uncategorised
   After events:
     CT: isAnyRGB at swscale_internal.h:823:0
-  Occurrences: 4
+  Occurrences: 3
 
 Uncategorised
   After events:
@@ -21189,11 +21282,6 @@ Uncategorised
 
 Uncategorised
   After events:
-    CT: mtv_probe at mtv.c:59:12
-  Occurrences: 1
-
-Uncategorised
-  After events:
     CT: nut_probe at nutdec.c:154:0
   Occurrences: 1
 
@@ -21209,51 +21297,6 @@ Uncategorised
 
 Uncategorised
   After events:
-    CT: pix_sum_c at mpegvideoencdsp.c:76:13
-  Occurrences: 345
-
-Uncategorised
-  After events:
-    CT: pred16x16_dc_8_c at h264pred_template.c:353:5
-  Occurrences: 10
-
-Uncategorised
-  After events:
-    CT: pred16x16_left_dc_8_c at h264pred_template.c:372:5
-  Occurrences: 58
-
-Uncategorised
-  After events:
-    CT: pred16x16_vertical_8_c at h264pred_template.c:308:22
-  Occurrences: 568
-
-Uncategorised
-  After events:
-    CT: pred8x8_dc_8_c at h264pred_template.c:631:5
-  Occurrences: 1384
-
-Uncategorised
-  After events:
-    CT: pred8x8_left_dc_8_c at h264pred_template.c:551:5
-  Occurrences: 116
-
-Uncategorised
-  After events:
-    CT: pred8x8_top_dc_8_c at h264pred_template.c:583:5
-  Occurrences: 64
-
-Uncategorised
-  After events:
-    CT: pred8x8_vertical_8_c at h264pred_template.c:469:21
-  Occurrences: 188
-
-Uncategorised
-  After events:
-    CT: pred_non_zero_count at h264_cavlc.c:285:0
-  Occurrences: 112
-
-Uncategorised
-  After events:
     CT: print_final_stats at ffmpeg.c:1390:0
   Occurrences: 2
 
@@ -21265,7 +21308,7 @@ Uncategorised
 Uncategorised
   After events:
     CT: put_bits at put_bits.h:247:0
-  Occurrences: 5622
+  Occurrences: 5593
 
 Uncategorised
   After events:
@@ -21284,18 +21327,8 @@ Uncategorised
 
 Uncategorised
   After events:
-    CT: retry_transfer_wrapper at avio.c:356:0
-  Occurrences: 5
-
-Uncategorised
-  After events:
     CT: samples_ready at avfilter.c:1047:0
   Occurrences: 9
-
-Uncategorised
-  After events:
-    CT: set_default_channel_config at aacdec_template.c:629:0
-  Occurrences: 2
 
 Uncategorised
   After events:
@@ -21305,12 +21338,12 @@ Uncategorised
 Uncategorised
   After events:
     CT: show_bits at get_bits.h:446:0
-  Occurrences: 21186
+  Occurrences: 13064
 
 Uncategorised
   After events:
     CT: skip_bits at get_bits.h:467:0
-  Occurrences: 13970
+  Occurrences: 7718
 
 Uncategorised
   After events:
@@ -21359,11 +21392,6 @@ Uncategorised
 
 Uncategorised
   After events:
-    CT: vector_fmul_reverse_c at float_dsp.c:108:19
-  Occurrences: 6
-
-Uncategorised
-  After events:
     CT: wipe_side_data at frame.c:87:0
   Occurrences: 3
 
@@ -21380,27 +21408,17 @@ Uncategorised
 Uncategorised
   After events:
     RF: Jump to external code for memcpy
-  Occurrences: 7
+  Occurrences: 3
 
 Uncategorised
   After events:
     RF: Jump to external code for memset
-  Occurrences: 26
+  Occurrences: 24
 
 Uncategorised
   After events:
     RF: Jump to external code for posix_memalign
   Occurrences: 2
-
-Uncategorised
-  After events:
-    RF: Jump to external code for sincos
-  Occurrences: 145
-
-Uncategorised
-  After events:
-    RF: Jump to external code for sincosf
-  Occurrences: 590
 
 Uncategorised
   After events:
@@ -21419,11 +21437,6 @@ Uncategorised
 
 Uncategorised
   After events:
-    RF: adp_probe at adp.c:46:1
-  Occurrences: 1
-
-Uncategorised
-  After events:
     RF: adts_aac_probe at aacdec.c:81:1
   Occurrences: 1
 
@@ -21434,23 +21447,8 @@ Uncategorised
 
 Uncategorised
   After events:
-    RF: amr_probe at amr.c:80:1
-  Occurrences: 1
-
-Uncategorised
-  After events:
     RF: analyze at mpegts.c:0:0
   Occurrences: 2
-
-Uncategorised
-  After events:
-    RF: apply_channel_coupling at aacdec_template.c:0:0
-  Occurrences: 9
-
-Uncategorised
-  After events:
-    RF: argo_asf_probe at argo_asf.c:176:1
-  Occurrences: 1
 
 Uncategorised
   After events:
@@ -21465,7 +21463,7 @@ Uncategorised
 Uncategorised
   After events:
     RF: av_bswap32 at bswap.h:0:0
-  Occurrences: 900
+  Occurrences: 898
 
 Uncategorised
   After events:
@@ -21490,12 +21488,7 @@ Uncategorised
 Uncategorised
   After events:
     RF: av_clipf_c at common.h:0:0
-  Occurrences: 60
-
-Uncategorised
-  After events:
-    RF: av_cpu_max_align at cpu.c:270:5
-  Occurrences: 1
+  Occurrences: 36
 
 Uncategorised
   After events:
@@ -21599,11 +21592,6 @@ Uncategorised
 
 Uncategorised
   After events:
-    RF: avformat_find_stream_info at demux.c:2979:1
-  Occurrences: 1
-
-Uncategorised
-  After events:
     RF: avio_rb16 at aviobuf.c:0:0
   Occurrences: 387
 
@@ -21654,11 +21642,6 @@ Uncategorised
 
 Uncategorised
   After events:
-    RF: brender_read_probe at img2_brender_pix.c:39:1
-  Occurrences: 1
-
-Uncategorised
-  After events:
     RF: bsearch at stdlib-bsearch.h:0:0
   Occurrences: 124
 
@@ -21694,11 +21677,6 @@ Uncategorised
 
 Uncategorised
   After events:
-    RF: clear_context at mpegvideo.c:0:0
-  Occurrences: 1
-
-Uncategorised
-  After events:
     RF: configure_input_audio_filter at ffmpeg_filter.c:0:0
   Occurrences: 1
 
@@ -21720,7 +21698,7 @@ Uncategorised
 Uncategorised
   After events:
     RF: count_paired_channels at aacdec_template.c:0:0
-  Occurrences: 6
+  Occurrences: 2
 
 Uncategorised
   After events:
@@ -21729,22 +21707,12 @@ Uncategorised
 
 Uncategorised
   After events:
-    RF: decode_ga_specific_config at aacdec_template.c:0:0
-  Occurrences: 2
-
-Uncategorised
-  After events:
     RF: decode_residual at h264_cavlc.c:622:1
-  Occurrences: 1632
+  Occurrences: 62
 
 Uncategorised
   After events:
     RF: decode_scalefactors at aacdec_template.c:0:0
-  Occurrences: 12
-
-Uncategorised
-  After events:
-    RF: decode_spectrum_and_dequant at aacdec_template.c:0:0
   Occurrences: 6
 
 Uncategorised
@@ -21769,13 +21737,8 @@ Uncategorised
 
 Uncategorised
   After events:
-    RF: encode_mb at mpegvideo_enc.c:0:0
-  Occurrences: 345
-
-Uncategorised
-  After events:
     RF: encode_mb_internal at mpegvideo_enc.c:0:0
-  Occurrences: 690
+  Occurrences: 689
 
 Uncategorised
   After events:
@@ -21849,33 +21812,8 @@ Uncategorised
 
 Uncategorised
   After events:
-    RF: ff_h264_chroma_dc_dequant_idct_8_c at h264idct_template.c:333:1
-  Occurrences: 738
-
-Uncategorised
-  After events:
     RF: ff_h264_filter_mb at h264_loopfilter.c:847:1
   Occurrences: 12
-
-Uncategorised
-  After events:
-    RF: ff_h264_idct_dc_add_8_c at h264idct_template.c:157:1
-  Occurrences: 324
-
-Uncategorised
-  After events:
-    RF: ff_h264_set_erpic at h264_picture.c:217:1
-  Occurrences: 10
-
-Uncategorised
-  After events:
-    RF: ff_h264_slice_context_init at h264dec.c:268:1
-  Occurrences: 2
-
-Uncategorised
-  After events:
-    RF: ff_hpeldsp_init at hpeldsp.c:373:1
-  Occurrences: 1
 
 Uncategorised
   After events:
@@ -21899,11 +21837,6 @@ Uncategorised
 
 Uncategorised
   After events:
-    RF: ff_mdct15_init at mdct15.c:331:1
-  Occurrences: 6
-
-Uncategorised
-  After events:
     RF: ff_mpeg4_encode_mb at mpeg4videoenc.c:858:1
   Occurrences: 345
 
@@ -21911,26 +21844,6 @@ Uncategorised
   After events:
     RF: ff_mpeg4_pred_dc at mpeg4video.h:0:0
   Occurrences: 2070
-
-Uncategorised
-  After events:
-    RF: ff_network_close at network.c:121:1
-  Occurrences: 1
-
-Uncategorised
-  After events:
-    RF: ff_network_init at network.c:66:5
-  Occurrences: 1
-
-Uncategorised
-  After events:
-    RF: ff_pixblockdsp_init at pixblockdsp.c:117:1
-  Occurrences: 1
-
-Uncategorised
-  After events:
-    RF: ff_qpeldsp_init at qpeldsp.c:818:1
-  Occurrences: 1
 
 Uncategorised
   After events:
@@ -21944,28 +21857,8 @@ Uncategorised
 
 Uncategorised
   After events:
-    RF: ff_tls_deinit at network.c:56:1
-  Occurrences: 1
-
-Uncategorised
-  After events:
-    RF: ff_tls_init at network.c:43:5
-  Occurrences: 1
-
-Uncategorised
-  After events:
     RF: ff_toupper4 at to_upper4.h:31:5
   Occurrences: 157
-
-Uncategorised
-  After events:
-    RF: ffio_init_context at aviobuf.c:0:0
-  Occurrences: 5
-
-Uncategorised
-  After events:
-    RF: ffio_open_whitelist at aviobuf.c:0:0
-  Occurrences: 1
 
 Uncategorised
   After events:
@@ -22034,11 +21927,6 @@ Uncategorised
 
 Uncategorised
   After events:
-    RF: get_edit_list_entry at mov.c:0:0
-  Occurrences: 4
-
-Uncategorised
-  After events:
     RF: get_flags at motion_est.c:0:0
   Occurrences: 4
 
@@ -22049,18 +21937,13 @@ Uncategorised
 
 Uncategorised
   After events:
-    RF: get_frag_stream_info at mov.c:0:0
-  Occurrences: 3
-
-Uncategorised
-  After events:
     RF: get_frame_defaults at frame.c:0:0
   Occurrences: 6
 
 Uncategorised
   After events:
     RF: get_local_pos at utils.c:0:0
-  Occurrences: 8
+  Occurrences: 4
 
 Uncategorised
   After events:
@@ -22079,38 +21962,23 @@ Uncategorised
 
 Uncategorised
   After events:
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-  Occurrences: 2070
-
-Uncategorised
-  After events:
-    RF: get_se_golomb at golomb.h:292:1
-  Occurrences: 15
-
-Uncategorised
-  After events:
     RF: get_ue_golomb at golomb.h:0:0
   Occurrences: 18
 
 Uncategorised
   After events:
-    RF: get_ue_golomb at golomb.h:99:1
-  Occurrences: 27
-
-Uncategorised
-  After events:
     RF: get_ue_golomb_31 at golomb.h:0:0
-  Occurrences: 1026
+  Occurrences: 1023
 
 Uncategorised
   After events:
     RF: get_ue_golomb_31 at golomb.h:140:5
-  Occurrences: 5
+  Occurrences: 3
 
 Uncategorised
   After events:
     RF: get_vlc2 at get_bits.h:0:0
-  Occurrences: 21662
+  Occurrences: 5198
 
 Uncategorised
   After events:
@@ -22144,11 +22012,6 @@ Uncategorised
 
 Uncategorised
   After events:
-    RF: idcin_probe at idcin.c:151:1
-  Occurrences: 1
-
-Uncategorised
-  After events:
     RF: idctSparseColPut_int16_8bit at simple_idct_template.c:0:0
   Occurrences: 33120
 
@@ -22159,18 +22022,8 @@ Uncategorised
 
 Uncategorised
   After events:
-    RF: ifv_probe at ifv.c:51:1
-  Occurrences: 1
-
-Uncategorised
-  After events:
     RF: image_get_linesize at imgutils.c:0:0
   Occurrences: 40
-
-Uncategorised
-  After events:
-    RF: init_dynload at cmdutils.c:84:1
-  Occurrences: 1
 
 Uncategorised
   After events:
@@ -22230,7 +22083,7 @@ Uncategorised
 Uncategorised
   After events:
     RF: isAnyRGB at swscale_internal.h:0:0
-  Occurrences: 4
+  Occurrences: 3
 
 Uncategorised
   After events:
@@ -22329,11 +22182,6 @@ Uncategorised
 
 Uncategorised
   After events:
-    RF: mtv_probe at mtv.c:99:1
-  Occurrences: 1
-
-Uncategorised
-  After events:
     RF: nut_probe at nutdec.c:164:1
   Occurrences: 1
 
@@ -22349,51 +22197,6 @@ Uncategorised
 
 Uncategorised
   After events:
-    RF: pix_sum_c at mpegvideoencdsp.c:78:5
-  Occurrences: 345
-
-Uncategorised
-  After events:
-    RF: pred16x16_dc_8_c at h264pred_template.c:363:1
-  Occurrences: 10
-
-Uncategorised
-  After events:
-    RF: pred16x16_left_dc_8_c at h264pred_template.c:378:1
-  Occurrences: 58
-
-Uncategorised
-  After events:
-    RF: pred16x16_vertical_8_c at h264pred_template.c:319:1
-  Occurrences: 568
-
-Uncategorised
-  After events:
-    RF: pred8x8_dc_8_c at h264pred_template.c:649:1
-  Occurrences: 1384
-
-Uncategorised
-  After events:
-    RF: pred8x8_left_dc_8_c at h264pred_template.c:566:1
-  Occurrences: 116
-
-Uncategorised
-  After events:
-    RF: pred8x8_top_dc_8_c at h264pred_template.c:598:1
-  Occurrences: 64
-
-Uncategorised
-  After events:
-    RF: pred8x8_vertical_8_c at h264pred_template.c:476:1
-  Occurrences: 188
-
-Uncategorised
-  After events:
-    RF: pred_non_zero_count at h264_cavlc.c:0:0
-  Occurrences: 112
-
-Uncategorised
-  After events:
     RF: print_final_stats at ffmpeg.c:0:0
   Occurrences: 2
 
@@ -22405,7 +22208,7 @@ Uncategorised
 Uncategorised
   After events:
     RF: put_bits at put_bits.h:0:0
-  Occurrences: 5622
+  Occurrences: 5593
 
 Uncategorised
   After events:
@@ -22424,18 +22227,8 @@ Uncategorised
 
 Uncategorised
   After events:
-    RF: retry_transfer_wrapper at avio.c:0:0
-  Occurrences: 5
-
-Uncategorised
-  After events:
     RF: samples_ready at avfilter.c:0:0
   Occurrences: 9
-
-Uncategorised
-  After events:
-    RF: set_default_channel_config at aacdec_template.c:0:0
-  Occurrences: 2
 
 Uncategorised
   After events:
@@ -22445,12 +22238,12 @@ Uncategorised
 Uncategorised
   After events:
     RF: show_bits at get_bits.h:0:0
-  Occurrences: 21186
+  Occurrences: 13064
 
 Uncategorised
   After events:
     RF: skip_bits at get_bits.h:0:0
-  Occurrences: 13970
+  Occurrences: 7718
 
 Uncategorised
   After events:
@@ -22496,11 +22289,6 @@ Uncategorised
   After events:
     RF: validate_codec_tag at movenc.c:0:0
   Occurrences: 1
-
-Uncategorised
-  After events:
-    RF: vector_fmul_reverse_c at float_dsp.c:110:1
-  Occurrences: 6
 
 Uncategorised
   After events:
@@ -22564,12 +22352,6 @@ Uncategorised
 
 Uncategorised
   Before events:
-    CF: apply_only_long_window at aacenc.c:148:5
-    CT: vector_fmul_reverse_c at float_dsp.c:104:0
-  Occurrences: 6
-
-Uncategorised
-  Before events:
     CF: audio_get_buffer at get_buffer.c:225:25
     CT: av_buffer_pool_get at buffer.c:388:0
     CF: av_buffer_pool_get at buffer.c:392:5
@@ -22587,12 +22369,6 @@ Uncategorised
     CF: av_buffer_pool_get at buffer.c:396:15
     CT: buffer_create at buffer.c:32:0
     CF: buffer_create at buffer.c:44:11
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: av_probe_input_format3 at format.c:169:21
-    CT: adp_probe at adp.c:28:0
   Occurrences: 1
 
 Uncategorised
@@ -22627,7 +22403,7 @@ Uncategorised
     CT: av_bswap16 at bswap.h:58:0
     RF: av_bswap16 at bswap.h:0:0
     CF: adts_aac_probe at aacdec.c:49:31
-    [...2501 more events...]
+    [...2500 more events...]
   Occurrences: 1
 
 Uncategorised
@@ -22657,30 +22433,6 @@ Uncategorised
     CF: bytestream_get_be16 at bytestream.h:98:1
     CT: av_bswap16 at bswap.h:58:0
     RF: av_bswap16 at bswap.h:0:0
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: av_probe_input_format3 at format.c:169:21
-    CT: amr_probe at amr.c:71:0
-    CF: amr_probe at amr.c:76:10
-    CT: Jump to external code for memcmp
-    RF: Jump to external code for memcmp
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: av_probe_input_format3 at format.c:169:21
-    CT: argo_asf_probe at argo_asf.c:162:0
-    CF: argo_asf_probe at argo_asf.c:167:5
-    CT: ff_argo_asf_parse_file_header at argo_asf.c:52:0
-    RF: ff_argo_asf_parse_file_header at argo_asf.c:60:1
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: av_probe_input_format3 at format.c:169:21
-    CT: brender_read_probe at img2_brender_pix.c:26:0
   Occurrences: 1
 
 Uncategorised
@@ -22730,21 +22482,6 @@ Uncategorised
     RF: av_bswap16 at bswap.h:0:0
     CF: flac_probe at flacdec.c:241:30
     CT: av_bswap16 at bswap.h:58:0
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: av_probe_input_format3 at format.c:169:21
-    CT: idcin_probe at idcin.c:96:0
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: av_probe_input_format3 at format.c:169:21
-    CT: ifv_probe at ifv.c:43:0
-    CF: ifv_probe at ifv.c:47:10
-    CT: Jump to external code for memcmp
-    RF: Jump to external code for memcmp
   Occurrences: 1
 
 Uncategorised
@@ -22851,12 +22588,6 @@ Uncategorised
 Uncategorised
   Before events:
     CF: av_probe_input_format3 at format.c:169:21
-    CT: mtv_probe at mtv.c:55:0
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: av_probe_input_format3 at format.c:169:21
     CT: nut_probe at nutdec.c:154:0
     CF: nut_probe at nutdec.c:158:13
     CT: av_bswap32 at bswap.h:66:0
@@ -22919,8 +22650,6 @@ Uncategorised
     CF: av_bswap64 at bswap.h:75:22
     CT: av_bswap32 at bswap.h:66:0
     RF: av_bswap32 at bswap.h:0:0
-    CF: av_bswap64 at bswap.h:75:44
-    CT: av_bswap32 at bswap.h:66:0
   Occurrences: 1
 
 Uncategorised
@@ -23054,36 +22783,6 @@ Uncategorised
 
 Uncategorised
   Before events:
-    CF: avformat_network_deinit at utils.c:572:5
-    CT: ff_network_close at network.c:117:0
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: avformat_network_deinit at utils.c:573:5
-    CT: ff_tls_deinit at network.c:47:0
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: avformat_network_init at utils.c:561:16
-    CT: ff_network_init at network.c:59:0
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: avformat_network_init at utils.c:563:16
-    CT: ff_tls_init at network.c:32:0
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: avio_open2 at aviobuf.c:1252:12
-    CT: ffio_open_whitelist at aviobuf.c:1232:0
-  Occurrences: 1
-
-Uncategorised
-  Before events:
     CF: avio_rb24 at aviobuf.c:786:11
     CT: avio_rb16 at aviobuf.c:776:0
     CF: avio_rb16 at aviobuf.c:778:11
@@ -23194,12 +22893,6 @@ Uncategorised
 
 Uncategorised
   Before events:
-    CF: cenc_filter at mov.c:7090:24
-    CT: get_frag_stream_info at mov.c:1189:0
-  Occurrences: 3
-
-Uncategorised
-  Before events:
     CF: choose_decoder at ffmpeg_opt.c:859:16
   Occurrences: 2
 
@@ -23289,12 +22982,6 @@ Uncategorised
 
 Uncategorised
   Before events:
-    CF: dct_init at mpegvideo.c:286:5
-    CT: ff_hpeldsp_init at hpeldsp.c:339:0
-  Occurrences: 1
-
-Uncategorised
-  Before events:
     CF: dds_probe at img2dec.c:709:12
     CT: av_bswap64 at bswap.h:74:0
     CF: av_bswap64 at bswap.h:75:22
@@ -23308,14 +22995,6 @@ Uncategorised
 
 Uncategorised
   Before events:
-    CF: decode_audio_specific_config_gb at aacdec_template.c:1128:20
-    CT: decode_ga_specific_config at aacdec_template.c:928:0
-    CF: decode_ga_specific_config at aacdec_template.c:940:32
-    CT: get_bits1 at get_bits.h:499:0
-  Occurrences: 2
-
-Uncategorised
-  Before events:
     CF: decode_band_types at aacdec_template.c:1570:21
     CT: get_bits_left at get_bits.h:840:0
     CF: get_bits_left at get_bits.h:841:31
@@ -23326,415 +23005,10 @@ Uncategorised
 
 Uncategorised
   Before events:
-    CF: decode_ics at aacdec_template.c:2160:16
-    CT: decode_scalefactors at aacdec_template.c:1605:0
-  Occurrences: 6
-
-Uncategorised
-  Before events:
-    CF: decode_ics at aacdec_template.c:2202:11
-    CT: decode_spectrum_and_dequant at aacdec_template.c:1775:0
-  Occurrences: 6
-
-Uncategorised
-  Before events:
-    CF: decode_luma_residual at h264_cavlc.c:647:25
-    CT: decode_residual at h264_cavlc.c:436:0
-    CF: decode_residual at h264_cavlc.c:455:26
-    CT: pred_non_zero_count at h264_cavlc.c:286:0
-  Occurrences: 6
-
-Uncategorised
-  Before events:
-    CF: decode_luma_residual at h264_cavlc.c:647:25
-    CT: decode_residual at h264_cavlc.c:436:0
-    CF: decode_residual at h264_cavlc.c:455:26
-    CT: pred_non_zero_count at h264_cavlc.c:286:0
-    RF: pred_non_zero_count at h264_cavlc.c:296:5
-  Occurrences: 2
-
-Uncategorised
-  Before events:
-    CF: decode_luma_residual at h264_cavlc.c:647:25
-    CT: decode_residual at h264_cavlc.c:436:0
-    CF: decode_residual at h264_cavlc.c:455:26
-    CT: pred_non_zero_count at h264_cavlc.c:286:0
-    RF: pred_non_zero_count at h264_cavlc.c:296:5
-    CF: decode_residual at h264_cavlc.c:456:26
-  Occurrences: 4
-
-Uncategorised
-  Before events:
-    CF: decode_luma_residual at h264_cavlc.c:647:25
-    CT: decode_residual at h264_cavlc.c:436:0
-    CF: decode_residual at h264_cavlc.c:455:26
-    CT: pred_non_zero_count at h264_cavlc.c:286:0
-    RF: pred_non_zero_count at h264_cavlc.c:296:5
-    CF: decode_residual at h264_cavlc.c:456:26
-    CT: get_vlc2 at get_bits.h:787:0
-  Occurrences: 8
-
-Uncategorised
-  Before events:
-    CF: decode_luma_residual at h264_cavlc.c:647:25
-    CT: decode_residual at h264_cavlc.c:436:0
-    CF: decode_residual at h264_cavlc.c:455:26
-    CT: pred_non_zero_count at h264_cavlc.c:286:0
-    RF: pred_non_zero_count at h264_cavlc.c:296:5
-    CF: decode_residual at h264_cavlc.c:456:26
-    CT: get_vlc2 at get_bits.h:787:0
-    CF: get_vlc2 at get_bits.h:811:5
-  Occurrences: 4
-
-Uncategorised
-  Before events:
-    CF: decode_luma_residual at h264_cavlc.c:647:25
-    CT: decode_residual at h264_cavlc.c:436:0
-    CF: decode_residual at h264_cavlc.c:455:26
-    CT: pred_non_zero_count at h264_cavlc.c:286:0
-    RF: pred_non_zero_count at h264_cavlc.c:296:5
-    CF: decode_residual at h264_cavlc.c:456:26
-    CT: get_vlc2 at get_bits.h:787:0
-    CF: get_vlc2 at get_bits.h:811:5
-    CT: av_bswap32 at bswap.h:66:0
-  Occurrences: 6
-
-Uncategorised
-  Before events:
-    CF: decode_luma_residual at h264_cavlc.c:647:25
-    CT: decode_residual at h264_cavlc.c:436:0
-    CF: decode_residual at h264_cavlc.c:455:26
-    CT: pred_non_zero_count at h264_cavlc.c:286:0
-    RF: pred_non_zero_count at h264_cavlc.c:296:5
-    CF: decode_residual at h264_cavlc.c:456:26
-    CT: get_vlc2 at get_bits.h:787:0
-    CF: get_vlc2 at get_bits.h:811:5
-    CT: av_bswap32 at bswap.h:66:0
-    RF: av_bswap32 at bswap.h:0:0
-    RF: get_vlc2 at get_bits.h:0:0
-  Occurrences: 4
-
-Uncategorised
-  Before events:
-    CF: decode_luma_residual at h264_cavlc.c:647:25
-    CT: decode_residual at h264_cavlc.c:436:0
-    CF: decode_residual at h264_cavlc.c:455:26
-    CT: pred_non_zero_count at h264_cavlc.c:286:0
-    RF: pred_non_zero_count at h264_cavlc.c:296:5
-    CF: decode_residual at h264_cavlc.c:456:26
-    CT: get_vlc2 at get_bits.h:787:0
-    CF: get_vlc2 at get_bits.h:811:5
-    CT: av_bswap32 at bswap.h:66:0
-    RF: av_bswap32 at bswap.h:0:0
-    RF: get_vlc2 at get_bits.h:0:0
-    CF: decode_residual at h264_cavlc.c:475:9
-  Occurrences: 2
-
-Uncategorised
-  Before events:
-    CF: decode_luma_residual at h264_cavlc.c:647:25
-    CT: decode_residual at h264_cavlc.c:436:0
-    CF: decode_residual at h264_cavlc.c:455:26
-    CT: pred_non_zero_count at h264_cavlc.c:286:0
-    RF: pred_non_zero_count at h264_cavlc.c:296:5
-    CF: decode_residual at h264_cavlc.c:456:26
-    CT: get_vlc2 at get_bits.h:787:0
-    CF: get_vlc2 at get_bits.h:811:5
-    CT: av_bswap32 at bswap.h:66:0
-    RF: av_bswap32 at bswap.h:0:0
-    RF: get_vlc2 at get_bits.h:0:0
-    CF: decode_residual at h264_cavlc.c:475:9
-    CT: show_bits at get_bits.h:447:0
-  Occurrences: 6
-
-Uncategorised
-  Before events:
-    CF: decode_luma_residual at h264_cavlc.c:647:25
-    CT: decode_residual at h264_cavlc.c:436:0
-    CF: decode_residual at h264_cavlc.c:455:26
-    CT: pred_non_zero_count at h264_cavlc.c:286:0
-    RF: pred_non_zero_count at h264_cavlc.c:296:5
-    CF: decode_residual at h264_cavlc.c:456:26
-    CT: get_vlc2 at get_bits.h:787:0
-    CF: get_vlc2 at get_bits.h:811:5
-    CT: av_bswap32 at bswap.h:66:0
-    RF: av_bswap32 at bswap.h:0:0
-    RF: get_vlc2 at get_bits.h:0:0
-    CF: decode_residual at h264_cavlc.c:475:9
-    CT: show_bits at get_bits.h:447:0
-    CF: show_bits at get_bits.h:461:5
-    CT: av_bswap32 at bswap.h:66:0
-  Occurrences: 2
-
-Uncategorised
-  Before events:
-    CF: decode_luma_residual at h264_cavlc.c:647:25
-    CT: decode_residual at h264_cavlc.c:436:0
-    CF: decode_residual at h264_cavlc.c:455:26
-    CT: pred_non_zero_count at h264_cavlc.c:286:0
-    RF: pred_non_zero_count at h264_cavlc.c:296:5
-    CF: decode_residual at h264_cavlc.c:456:26
-    CT: get_vlc2 at get_bits.h:787:0
-    CF: get_vlc2 at get_bits.h:811:5
-    CT: av_bswap32 at bswap.h:66:0
-    RF: av_bswap32 at bswap.h:0:0
-    RF: get_vlc2 at get_bits.h:0:0
-    CF: decode_residual at h264_cavlc.c:475:9
-    CT: show_bits at get_bits.h:447:0
-    CF: show_bits at get_bits.h:461:5
-    CT: av_bswap32 at bswap.h:66:0
-    RF: av_bswap32 at bswap.h:0:0
-  Occurrences: 2
-
-Uncategorised
-  Before events:
-    CF: decode_luma_residual at h264_cavlc.c:647:25
-    CT: decode_residual at h264_cavlc.c:436:0
-    CF: decode_residual at h264_cavlc.c:455:26
-    CT: pred_non_zero_count at h264_cavlc.c:286:0
-    RF: pred_non_zero_count at h264_cavlc.c:296:5
-    CF: decode_residual at h264_cavlc.c:456:26
-    CT: get_vlc2 at get_bits.h:787:0
-    CF: get_vlc2 at get_bits.h:811:5
-    CT: av_bswap32 at bswap.h:66:0
-    RF: av_bswap32 at bswap.h:0:0
-    RF: get_vlc2 at get_bits.h:0:0
-    CF: decode_residual at h264_cavlc.c:475:9
-    CT: show_bits at get_bits.h:447:0
-    CF: show_bits at get_bits.h:461:5
-    CT: av_bswap32 at bswap.h:66:0
-    RF: av_bswap32 at bswap.h:0:0
-    RF: show_bits at get_bits.h:464:5
-  Occurrences: 2
-
-Uncategorised
-  Before events:
-    CF: decode_luma_residual at h264_cavlc.c:679:29
-    CT: decode_residual at h264_cavlc.c:436:0
-    CF: decode_residual at h264_cavlc.c:455:26
-  Occurrences: 2
-
-Uncategorised
-  Before events:
-    CF: decode_luma_residual at h264_cavlc.c:679:29
-    CT: decode_residual at h264_cavlc.c:436:0
-    CF: decode_residual at h264_cavlc.c:455:26
-    CT: pred_non_zero_count at h264_cavlc.c:286:0
-  Occurrences: 88
-
-Uncategorised
-  Before events:
-    CF: decode_luma_residual at h264_cavlc.c:679:29
-    CT: decode_residual at h264_cavlc.c:436:0
-    CF: decode_residual at h264_cavlc.c:455:26
-    CT: pred_non_zero_count at h264_cavlc.c:286:0
-    RF: pred_non_zero_count at h264_cavlc.c:296:5
-  Occurrences: 72
-
-Uncategorised
-  Before events:
-    CF: decode_luma_residual at h264_cavlc.c:679:29
-    CT: decode_residual at h264_cavlc.c:436:0
-    CF: decode_residual at h264_cavlc.c:455:26
-    CT: pred_non_zero_count at h264_cavlc.c:286:0
-    RF: pred_non_zero_count at h264_cavlc.c:296:5
-    CF: decode_residual at h264_cavlc.c:456:26
-  Occurrences: 106
-
-Uncategorised
-  Before events:
-    CF: decode_luma_residual at h264_cavlc.c:679:29
-    CT: decode_residual at h264_cavlc.c:436:0
-    CF: decode_residual at h264_cavlc.c:455:26
-    CT: pred_non_zero_count at h264_cavlc.c:286:0
-    RF: pred_non_zero_count at h264_cavlc.c:296:5
-    CF: decode_residual at h264_cavlc.c:456:26
-    CT: get_vlc2 at get_bits.h:787:0
-  Occurrences: 280
-
-Uncategorised
-  Before events:
-    CF: decode_luma_residual at h264_cavlc.c:679:29
-    CT: decode_residual at h264_cavlc.c:436:0
-    CF: decode_residual at h264_cavlc.c:455:26
-    CT: pred_non_zero_count at h264_cavlc.c:286:0
-    RF: pred_non_zero_count at h264_cavlc.c:296:5
-    CF: decode_residual at h264_cavlc.c:456:26
-    CT: get_vlc2 at get_bits.h:787:0
-    CF: get_vlc2 at get_bits.h:811:5
-  Occurrences: 74
-
-Uncategorised
-  Before events:
-    CF: decode_luma_residual at h264_cavlc.c:679:29
-    CT: decode_residual at h264_cavlc.c:436:0
-    CF: decode_residual at h264_cavlc.c:455:26
-    CT: pred_non_zero_count at h264_cavlc.c:286:0
-    RF: pred_non_zero_count at h264_cavlc.c:296:5
-    CF: decode_residual at h264_cavlc.c:456:26
-    CT: get_vlc2 at get_bits.h:787:0
-    CF: get_vlc2 at get_bits.h:811:5
-    CT: av_bswap32 at bswap.h:66:0
-  Occurrences: 22
-
-Uncategorised
-  Before events:
-    CF: decode_luma_residual at h264_cavlc.c:679:29
-    CT: decode_residual at h264_cavlc.c:436:0
-    CF: decode_residual at h264_cavlc.c:455:26
-    CT: pred_non_zero_count at h264_cavlc.c:286:0
-    RF: pred_non_zero_count at h264_cavlc.c:296:5
-    CF: decode_residual at h264_cavlc.c:456:26
-    CT: get_vlc2 at get_bits.h:787:0
-    CF: get_vlc2 at get_bits.h:811:5
-    CT: av_bswap32 at bswap.h:66:0
-    RF: av_bswap32 at bswap.h:0:0
-    CF: get_vlc2 at get_bits.h:813:5
-    CT: av_bswap32 at bswap.h:66:0
-    RF: av_bswap32 at bswap.h:0:0
-    RF: get_vlc2 at get_bits.h:0:0
-    CF: decode_residual at h264_cavlc.c:475:9
-    CT: show_bits at get_bits.h:447:0
-  Occurrences: 2
-
-Uncategorised
-  Before events:
-    CF: decode_luma_residual at h264_cavlc.c:679:29
-    CT: decode_residual at h264_cavlc.c:436:0
-    CF: decode_residual at h264_cavlc.c:455:26
-    CT: pred_non_zero_count at h264_cavlc.c:286:0
-    RF: pred_non_zero_count at h264_cavlc.c:296:5
-    CF: decode_residual at h264_cavlc.c:456:26
-    CT: get_vlc2 at get_bits.h:787:0
-    CF: get_vlc2 at get_bits.h:811:5
-    CT: av_bswap32 at bswap.h:66:0
-    RF: av_bswap32 at bswap.h:0:0
-    RF: get_vlc2 at get_bits.h:0:0
-  Occurrences: 44
-
-Uncategorised
-  Before events:
-    CF: decode_luma_residual at h264_cavlc.c:679:29
-    CT: decode_residual at h264_cavlc.c:436:0
-    CF: decode_residual at h264_cavlc.c:455:26
-    CT: pred_non_zero_count at h264_cavlc.c:286:0
-    RF: pred_non_zero_count at h264_cavlc.c:296:5
-    CF: decode_residual at h264_cavlc.c:456:26
-    CT: get_vlc2 at get_bits.h:787:0
-    CF: get_vlc2 at get_bits.h:811:5
-    CT: av_bswap32 at bswap.h:66:0
-    RF: av_bswap32 at bswap.h:0:0
-    RF: get_vlc2 at get_bits.h:0:0
-    CF: decode_residual at h264_cavlc.c:475:9
-  Occurrences: 10
-
-Uncategorised
-  Before events:
-    CF: decode_luma_residual at h264_cavlc.c:679:29
-    CT: decode_residual at h264_cavlc.c:436:0
-    CF: decode_residual at h264_cavlc.c:455:26
-    CT: pred_non_zero_count at h264_cavlc.c:286:0
-    RF: pred_non_zero_count at h264_cavlc.c:296:5
-    CF: decode_residual at h264_cavlc.c:456:26
-    CT: get_vlc2 at get_bits.h:787:0
-    CF: get_vlc2 at get_bits.h:811:5
-    CT: av_bswap32 at bswap.h:66:0
-    RF: av_bswap32 at bswap.h:0:0
-    RF: get_vlc2 at get_bits.h:0:0
-    CF: decode_residual at h264_cavlc.c:475:9
-    CT: show_bits at get_bits.h:447:0
-  Occurrences: 30
-
-Uncategorised
-  Before events:
-    CF: decode_luma_residual at h264_cavlc.c:679:29
-    CT: decode_residual at h264_cavlc.c:436:0
-    CF: decode_residual at h264_cavlc.c:455:26
-    CT: pred_non_zero_count at h264_cavlc.c:286:0
-    RF: pred_non_zero_count at h264_cavlc.c:296:5
-    CF: decode_residual at h264_cavlc.c:456:26
-    CT: get_vlc2 at get_bits.h:787:0
-    CF: get_vlc2 at get_bits.h:811:5
-    CT: av_bswap32 at bswap.h:66:0
-    RF: av_bswap32 at bswap.h:0:0
-    RF: get_vlc2 at get_bits.h:0:0
-    CF: decode_residual at h264_cavlc.c:475:9
-    CT: show_bits at get_bits.h:447:0
-    CF: show_bits at get_bits.h:461:5
-    CT: av_bswap32 at bswap.h:66:0
-  Occurrences: 26
-
-Uncategorised
-  Before events:
-    CF: decode_luma_residual at h264_cavlc.c:679:29
-    CT: decode_residual at h264_cavlc.c:436:0
-    CF: decode_residual at h264_cavlc.c:455:26
-    CT: pred_non_zero_count at h264_cavlc.c:286:0
-    RF: pred_non_zero_count at h264_cavlc.c:296:5
-    CF: decode_residual at h264_cavlc.c:456:26
-    CT: get_vlc2 at get_bits.h:787:0
-    CF: get_vlc2 at get_bits.h:811:5
-    CT: av_bswap32 at bswap.h:66:0
-    RF: av_bswap32 at bswap.h:0:0
-    RF: get_vlc2 at get_bits.h:0:0
-    CF: decode_residual at h264_cavlc.c:475:9
-    CT: show_bits at get_bits.h:447:0
-    CF: show_bits at get_bits.h:461:5
-    CT: av_bswap32 at bswap.h:66:0
-    RF: av_bswap32 at bswap.h:0:0
-  Occurrences: 60
-
-Uncategorised
-  Before events:
-    CF: decode_luma_residual at h264_cavlc.c:679:29
-    CT: decode_residual at h264_cavlc.c:436:0
-    CF: decode_residual at h264_cavlc.c:455:26
-    CT: pred_non_zero_count at h264_cavlc.c:286:0
-    RF: pred_non_zero_count at h264_cavlc.c:296:5
-    CF: decode_residual at h264_cavlc.c:456:26
-    CT: get_vlc2 at get_bits.h:787:0
-    CF: get_vlc2 at get_bits.h:811:5
-    CT: av_bswap32 at bswap.h:66:0
-    RF: av_bswap32 at bswap.h:0:0
-    RF: get_vlc2 at get_bits.h:0:0
-    CF: decode_residual at h264_cavlc.c:475:9
-    CT: show_bits at get_bits.h:447:0
-    CF: show_bits at get_bits.h:461:5
-    CT: av_bswap32 at bswap.h:66:0
-    RF: av_bswap32 at bswap.h:0:0
-    RF: show_bits at get_bits.h:464:5
-  Occurrences: 22
-
-Uncategorised
-  Before events:
-    CF: decode_nal_units at h264dec.c:767:9
-    CT: ff_h264_set_erpic at h264_picture.c:197:0
-    CF: ff_h264_set_erpic at h264_picture.c:201:5
-    CT: Jump to external code for memset
-    RF: Jump to external code for memset
-  Occurrences: 2
-
-Uncategorised
-  Before events:
-    CF: decode_nal_units at h264dec.c:778:13
-    CT: ff_h264_set_erpic at h264_picture.c:197:0
-    CF: ff_h264_set_erpic at h264_picture.c:201:5
-    CT: Jump to external code for memset
-    RF: Jump to external code for memset
-  Occurrences: 2
-
-Uncategorised
-  Before events:
-    CF: decode_residual at h264_cavlc.c:445:27
-  Occurrences: 148
-
-Uncategorised
-  Before events:
     CF: decode_residual at h264_cavlc.c:445:27
     CT: get_vlc2 at get_bits.h:787:0
     CF: get_vlc2 at get_bits.h:811:5
-    CT: av_bswap32 at bswap.h:66:0
-  Occurrences: 94
+  Occurrences: 108
 
 Uncategorised
   Before events:
@@ -23744,7 +23018,7 @@ Uncategorised
     CT: av_bswap32 at bswap.h:66:0
     RF: av_bswap32 at bswap.h:0:0
     RF: get_vlc2 at get_bits.h:0:0
-  Occurrences: 78
+  Occurrences: 210
 
 Uncategorised
   Before events:
@@ -23757,7 +23031,7 @@ Uncategorised
     CF: decode_residual at h264_cavlc.c:475:9
     CT: show_bits at get_bits.h:447:0
     CF: show_bits at get_bits.h:461:5
-  Occurrences: 46
+  Occurrences: 68
 
 Uncategorised
   Before events:
@@ -23770,268 +23044,11 @@ Uncategorised
     RF: decode_residual at h264_cavlc.c:622:1
     CF: ff_h264_decode_mb_cavlc at h264_cavlc.c:1145:25
     CT: decode_residual at h264_cavlc.c:436:0
-  Occurrences: 2
-
-Uncategorised
-  Before events:
-    CF: decode_residual at h264_cavlc.c:451:26
-  Occurrences: 56
-
-Uncategorised
-  Before events:
-    CF: decode_residual at h264_cavlc.c:452:26
-  Occurrences: 384
-
-Uncategorised
-  Before events:
-    CF: decode_residual at h264_cavlc.c:452:26
-    CT: get_vlc2 at get_bits.h:787:0
-    CF: get_vlc2 at get_bits.h:811:5
-    CT: av_bswap32 at bswap.h:66:0
-  Occurrences: 260
-
-Uncategorised
-  Before events:
-    CF: decode_residual at h264_cavlc.c:452:26
-    CT: get_vlc2 at get_bits.h:787:0
-    CF: get_vlc2 at get_bits.h:811:5
-    CT: av_bswap32 at bswap.h:66:0
-    RF: av_bswap32 at bswap.h:0:0
-    CF: get_vlc2 at get_bits.h:813:5
-    CT: av_bswap32 at bswap.h:66:0
-  Occurrences: 10
-
-Uncategorised
-  Before events:
-    CF: decode_residual at h264_cavlc.c:455:26
-  Occurrences: 56
-
-Uncategorised
-  Before events:
-    CF: decode_residual at h264_cavlc.c:456:26
-  Occurrences: 4964
-
-Uncategorised
-  Before events:
-    CF: decode_residual at h264_cavlc.c:456:26
-    CT: get_vlc2 at get_bits.h:787:0
-    CF: get_vlc2 at get_bits.h:811:5
-    CT: av_bswap32 at bswap.h:66:0
-  Occurrences: 2402
-
-Uncategorised
-  Before events:
-    CF: decode_residual at h264_cavlc.c:456:26
-    CT: get_vlc2 at get_bits.h:787:0
-    CF: get_vlc2 at get_bits.h:811:5
-    CT: av_bswap32 at bswap.h:66:0
-    RF: av_bswap32 at bswap.h:0:0
-    CF: get_vlc2 at get_bits.h:813:5
-    CT: av_bswap32 at bswap.h:66:0
-  Occurrences: 100
-
-Uncategorised
-  Before events:
-    CF: decode_residual at h264_cavlc.c:475:9
-    CT: show_bits at get_bits.h:447:0
-    CF: show_bits at get_bits.h:461:5
-  Occurrences: 1554
-
-Uncategorised
-  Before events:
-    CF: decode_residual at h264_cavlc.c:475:9
-    CT: show_bits at get_bits.h:447:0
-    CF: show_bits at get_bits.h:461:5
-    CT: av_bswap32 at bswap.h:66:0
-    RF: av_bswap32 at bswap.h:0:0
-    RF: show_bits at get_bits.h:464:5
-  Occurrences: 78
-
-Uncategorised
-  Before events:
-    CF: decode_residual at h264_cavlc.c:484:20
-  Occurrences: 3078
-
-Uncategorised
-  Before events:
-    CF: decode_residual at h264_cavlc.c:484:20
-    CT: show_bits at get_bits.h:447:0
-    CF: show_bits at get_bits.h:461:5
-    CT: av_bswap32 at bswap.h:66:0
-    RF: av_bswap32 at bswap.h:0:0
-    RF: show_bits at get_bits.h:464:5
-  Occurrences: 10
-
-Uncategorised
-  Before events:
-    CF: decode_residual at h264_cavlc.c:487:9
-  Occurrences: 3078
-
-Uncategorised
-  Before events:
-    CF: decode_residual at h264_cavlc.c:491:27
-    CT: get_level_prefix at h264_cavlc.c:409:0
-    CF: get_level_prefix at h264_cavlc.c:414:5
-    CT: av_bswap32 at bswap.h:66:0
-    RF: av_bswap32 at bswap.h:0:0
-    CF: get_level_prefix at h264_cavlc.c:417:15
-    CT: ff_log2_c at intmath.h:51:0
-    RF: ff_log2_c at intmath.h:0:0
-    RF: get_level_prefix at h264_cavlc.c:422:5
-  Occurrences: 10
-
-Uncategorised
-  Before events:
-    CF: decode_residual at h264_cavlc.c:531:24
-  Occurrences: 2662
-
-Uncategorised
-  Before events:
-    CF: decode_residual at h264_cavlc.c:531:24
-    CT: show_bits at get_bits.h:447:0
-    CF: show_bits at get_bits.h:461:5
-    CT: av_bswap32 at bswap.h:66:0
-    RF: av_bswap32 at bswap.h:0:0
-    RF: show_bits at get_bits.h:464:5
-  Occurrences: 230
-
-Uncategorised
-  Before events:
-    CF: decode_residual at h264_cavlc.c:534:13
-  Occurrences: 1220
-
-Uncategorised
-  Before events:
-    CF: decode_residual at h264_cavlc.c:538:31
-    CT: get_level_prefix at h264_cavlc.c:409:0
-    CF: get_level_prefix at h264_cavlc.c:414:5
-    CT: av_bswap32 at bswap.h:66:0
-    RF: av_bswap32 at bswap.h:0:0
-    CF: get_level_prefix at h264_cavlc.c:417:15
-    CT: ff_log2_c at intmath.h:51:0
-    RF: ff_log2_c at intmath.h:0:0
-    RF: get_level_prefix at h264_cavlc.c:422:5
-  Occurrences: 2
-
-Uncategorised
-  Before events:
-    CF: decode_residual at h264_cavlc.c:541:60
-    CT: get_bits at get_bits.h:380:0
-    CF: get_bits at get_bits.h:403:5
-  Occurrences: 6
-
-Uncategorised
-  Before events:
-    CF: decode_residual at h264_cavlc.c:541:60
-    CT: get_bits at get_bits.h:380:0
-    CF: get_bits at get_bits.h:403:5
-    CT: av_bswap32 at bswap.h:66:0
-    RF: av_bswap32 at bswap.h:0:0
-    RF: get_bits at get_bits.h:409:5
-  Occurrences: 6
-
-Uncategorised
-  Before events:
-    CF: decode_residual at h264_cavlc.c:566:30
-    CT: get_vlc2 at get_bits.h:787:0
-    CF: get_vlc2 at get_bits.h:811:5
-  Occurrences: 132
-
-Uncategorised
-  Before events:
-    CF: decode_residual at h264_cavlc.c:566:30
-    CT: get_vlc2 at get_bits.h:787:0
-    CF: get_vlc2 at get_bits.h:811:5
-    CT: av_bswap32 at bswap.h:66:0
-    RF: av_bswap32 at bswap.h:0:0
-    RF: get_vlc2 at get_bits.h:0:0
-  Occurrences: 78
-
-Uncategorised
-  Before events:
-    CF: decode_residual at h264_cavlc.c:566:30
-    CT: get_vlc2 at get_bits.h:787:0
-    CF: get_vlc2 at get_bits.h:811:5
-    CT: av_bswap32 at bswap.h:66:0
-    RF: av_bswap32 at bswap.h:0:0
-    RF: get_vlc2 at get_bits.h:0:0
-    CF: decode_residual at h264_cavlc.c:613:9
-    CT: get_vlc2 at get_bits.h:787:0
-    CF: get_vlc2 at get_bits.h:811:5
-  Occurrences: 10
-
-Uncategorised
-  Before events:
-    CF: decode_residual at h264_cavlc.c:566:30
-    CT: get_vlc2 at get_bits.h:787:0
-    CF: get_vlc2 at get_bits.h:811:5
-    CT: av_bswap32 at bswap.h:66:0
-    RF: av_bswap32 at bswap.h:0:0
-    RF: get_vlc2 at get_bits.h:0:0
-    RF: decode_residual at h264_cavlc.c:622:1
-    CF: ff_h264_decode_mb_cavlc at h264_cavlc.c:1145:25
-    CT: decode_residual at h264_cavlc.c:436:0
   Occurrences: 4
 
 Uncategorised
   Before events:
-    CF: decode_residual at h264_cavlc.c:572:25
-    CT: get_vlc2 at get_bits.h:787:0
-    CF: get_vlc2 at get_bits.h:811:5
-  Occurrences: 686
-
-Uncategorised
-  Before events:
-    CF: decode_residual at h264_cavlc.c:572:25
-    CT: get_vlc2 at get_bits.h:787:0
-    CF: get_vlc2 at get_bits.h:811:5
-    CT: av_bswap32 at bswap.h:66:0
-    RF: av_bswap32 at bswap.h:0:0
-    RF: get_vlc2 at get_bits.h:0:0
-  Occurrences: 576
-
-Uncategorised
-  Before events:
-    CF: decode_residual at h264_cavlc.c:572:25
-    CT: get_vlc2 at get_bits.h:787:0
-    CF: get_vlc2 at get_bits.h:811:5
-    CT: av_bswap32 at bswap.h:66:0
-    RF: av_bswap32 at bswap.h:0:0
-    RF: get_vlc2 at get_bits.h:0:0
-    CF: decode_residual at h264_cavlc.c:613:9
-    CT: get_vlc2 at get_bits.h:787:0
-    CF: get_vlc2 at get_bits.h:811:5
-  Occurrences: 48
-
-Uncategorised
-  Before events:
-    CF: decode_residual at h264_cavlc.c:572:25
-    CT: get_vlc2 at get_bits.h:787:0
-    CF: get_vlc2 at get_bits.h:811:5
-    CT: av_bswap32 at bswap.h:66:0
-    RF: av_bswap32 at bswap.h:0:0
-    RF: get_vlc2 at get_bits.h:0:0
-    RF: decode_residual at h264_cavlc.c:622:1
-    CF: decode_luma_residual at h264_cavlc.c:647:25
-    CT: decode_residual at h264_cavlc.c:436:0
-  Occurrences: 4
-
-Uncategorised
-  Before events:
-    CF: decode_residual at h264_cavlc.c:572:25
-    CT: get_vlc2 at get_bits.h:787:0
-    CF: get_vlc2 at get_bits.h:811:5
-    CT: av_bswap32 at bswap.h:66:0
-    RF: av_bswap32 at bswap.h:0:0
-    RF: get_vlc2 at get_bits.h:0:0
-    RF: decode_residual at h264_cavlc.c:622:1
-    CF: decode_luma_residual at h264_cavlc.c:679:29
-    CT: decode_residual at h264_cavlc.c:436:0
-  Occurrences: 16
-
-Uncategorised
-  Before events:
-    CF: decode_residual at h264_cavlc.c:572:25
+    CF: decode_residual at h264_cavlc.c:445:27
     CT: get_vlc2 at get_bits.h:787:0
     CF: get_vlc2 at get_bits.h:811:5
     CT: av_bswap32 at bswap.h:66:0
@@ -24040,73 +23057,175 @@ Uncategorised
     RF: decode_residual at h264_cavlc.c:622:1
     CF: ff_h264_decode_mb_cavlc at h264_cavlc.c:1160:33
     CT: decode_residual at h264_cavlc.c:436:0
-  Occurrences: 12
-
-Uncategorised
-  Before events:
-    CF: decode_residual at h264_cavlc.c:572:25
-    CT: get_vlc2 at get_bits.h:787:0
-    CF: get_vlc2 at get_bits.h:811:5
-    CT: av_bswap32 at bswap.h:66:0
-    RF: av_bswap32 at bswap.h:0:0
-    RF: get_vlc2 at get_bits.h:0:0
-    RF: decode_residual at h264_cavlc.c:622:1
-    CF: ff_h264_decode_mb_cavlc at h264_cavlc.c:1177:5
-    CT: write_back_non_zero_count at h264dec.h:683:0
   Occurrences: 2
 
 Uncategorised
   Before events:
-    CF: decode_residual at h264_cavlc.c:572:25
+    CF: decode_residual at h264_cavlc.c:452:26
+    CT: get_vlc2 at get_bits.h:787:0
+    CF: get_vlc2 at get_bits.h:811:5
+  Occurrences: 116
+
+Uncategorised
+  Before events:
+    CF: decode_residual at h264_cavlc.c:452:26
+    CT: get_vlc2 at get_bits.h:787:0
+    CF: get_vlc2 at get_bits.h:811:5
+    CT: av_bswap32 at bswap.h:66:0
+    RF: av_bswap32 at bswap.h:0:0
+    CF: get_vlc2 at get_bits.h:813:5
+  Occurrences: 4
+
+Uncategorised
+  Before events:
+    CF: decode_residual at h264_cavlc.c:452:26
+    CT: get_vlc2 at get_bits.h:787:0
+    CF: get_vlc2 at get_bits.h:811:5
+    CT: av_bswap32 at bswap.h:66:0
+    RF: av_bswap32 at bswap.h:0:0
+    CF: get_vlc2 at get_bits.h:813:5
+    CT: av_bswap32 at bswap.h:66:0
+    RF: av_bswap32 at bswap.h:0:0
+    RF: get_vlc2 at get_bits.h:0:0
+  Occurrences: 2
+
+Uncategorised
+  Before events:
+    CF: decode_residual at h264_cavlc.c:452:26
+    CT: get_vlc2 at get_bits.h:787:0
+    CF: get_vlc2 at get_bits.h:811:5
+    CT: av_bswap32 at bswap.h:66:0
+    RF: av_bswap32 at bswap.h:0:0
+    CF: get_vlc2 at get_bits.h:813:5
+    CT: av_bswap32 at bswap.h:66:0
+    RF: av_bswap32 at bswap.h:0:0
+    RF: get_vlc2 at get_bits.h:0:0
+    CF: decode_residual at h264_cavlc.c:475:9
+    CT: show_bits at get_bits.h:447:0
+    CF: show_bits at get_bits.h:461:5
+  Occurrences: 8
+
+Uncategorised
+  Before events:
+    CF: decode_residual at h264_cavlc.c:452:26
+    CT: get_vlc2 at get_bits.h:787:0
+    CF: get_vlc2 at get_bits.h:811:5
+    CT: av_bswap32 at bswap.h:66:0
+    RF: av_bswap32 at bswap.h:0:0
+    RF: get_vlc2 at get_bits.h:0:0
+  Occurrences: 360
+
+Uncategorised
+  Before events:
+    CF: decode_residual at h264_cavlc.c:452:26
+    CT: get_vlc2 at get_bits.h:787:0
+    CF: get_vlc2 at get_bits.h:811:5
+    CT: av_bswap32 at bswap.h:66:0
+    RF: av_bswap32 at bswap.h:0:0
+    RF: get_vlc2 at get_bits.h:0:0
+    CF: decode_residual at h264_cavlc.c:475:9
+    CT: show_bits at get_bits.h:447:0
+    CF: show_bits at get_bits.h:461:5
+  Occurrences: 2
+
+Uncategorised
+  Before events:
+    CF: decode_residual at h264_cavlc.c:452:26
     CT: get_vlc2 at get_bits.h:787:0
     CF: get_vlc2 at get_bits.h:811:5
     CT: av_bswap32 at bswap.h:66:0
     RF: av_bswap32 at bswap.h:0:0
     RF: get_vlc2 at get_bits.h:0:0
     RF: decode_residual at h264_cavlc.c:622:1
-    RF: decode_luma_residual at h264_cavlc.c:0:0
-    CF: ff_h264_decode_mb_cavlc at h264_cavlc.c:1145:25
-  Occurrences: 4
+    CF: decode_luma_residual at h264_cavlc.c:647:25
+    CT: decode_residual at h264_cavlc.c:436:0
+  Occurrences: 2
 
 Uncategorised
   Before events:
-    CF: decode_residual at h264_cavlc.c:613:9
-  Occurrences: 3866
-
-Uncategorised
-  Before events:
-    CF: decode_residual at h264_cavlc.c:613:9
-    CT: get_vlc2 at get_bits.h:787:0
-    CF: get_vlc2 at get_bits.h:811:5
-    CT: av_bswap32 at bswap.h:66:0
-  Occurrences: 1154
-
-Uncategorised
-  Before events:
-    CF: decode_residual at h264_cavlc.c:613:9
+    CF: decode_residual at h264_cavlc.c:452:26
     CT: get_vlc2 at get_bits.h:787:0
     CF: get_vlc2 at get_bits.h:811:5
     CT: av_bswap32 at bswap.h:66:0
     RF: av_bswap32 at bswap.h:0:0
     RF: get_vlc2 at get_bits.h:0:0
-  Occurrences: 458
+    RF: decode_residual at h264_cavlc.c:622:1
+    CF: decode_luma_residual at h264_cavlc.c:655:13
+    CT: fill_rectangle at rectangle.h:41:0
+  Occurrences: 160
 
 Uncategorised
   Before events:
-    CF: decode_residual at h264_cavlc.c:613:9
+    CF: decode_residual at h264_cavlc.c:456:26
+    CT: get_vlc2 at get_bits.h:787:0
+    CF: get_vlc2 at get_bits.h:811:5
+  Occurrences: 1714
+
+Uncategorised
+  Before events:
+    CF: decode_residual at h264_cavlc.c:456:26
     CT: get_vlc2 at get_bits.h:787:0
     CF: get_vlc2 at get_bits.h:811:5
     CT: av_bswap32 at bswap.h:66:0
     RF: av_bswap32 at bswap.h:0:0
-    RF: get_vlc2 at get_bits.h:0:0
-    CF: decode_residual at h264_cavlc.c:613:9
+    CF: get_vlc2 at get_bits.h:813:5
+  Occurrences: 180
+
+Uncategorised
+  Before events:
+    CF: decode_residual at h264_cavlc.c:456:26
     CT: get_vlc2 at get_bits.h:787:0
     CF: get_vlc2 at get_bits.h:811:5
+    CT: av_bswap32 at bswap.h:66:0
+    RF: av_bswap32 at bswap.h:0:0
+    CF: get_vlc2 at get_bits.h:813:5
+    CT: av_bswap32 at bswap.h:66:0
+    RF: av_bswap32 at bswap.h:0:0
+    RF: get_vlc2 at get_bits.h:0:0
   Occurrences: 36
 
 Uncategorised
   Before events:
-    CF: decode_residual at h264_cavlc.c:613:9
+    CF: decode_residual at h264_cavlc.c:456:26
+    CT: get_vlc2 at get_bits.h:787:0
+    CF: get_vlc2 at get_bits.h:811:5
+    CT: av_bswap32 at bswap.h:66:0
+    RF: av_bswap32 at bswap.h:0:0
+    CF: get_vlc2 at get_bits.h:813:5
+    CT: av_bswap32 at bswap.h:66:0
+    RF: av_bswap32 at bswap.h:0:0
+    RF: get_vlc2 at get_bits.h:0:0
+    CF: decode_residual at h264_cavlc.c:475:9
+    CT: show_bits at get_bits.h:447:0
+    CF: show_bits at get_bits.h:461:5
+  Occurrences: 66
+
+Uncategorised
+  Before events:
+    CF: decode_residual at h264_cavlc.c:456:26
+    CT: get_vlc2 at get_bits.h:787:0
+    CF: get_vlc2 at get_bits.h:811:5
+    CT: av_bswap32 at bswap.h:66:0
+    RF: av_bswap32 at bswap.h:0:0
+    RF: get_vlc2 at get_bits.h:0:0
+  Occurrences: 4878
+
+Uncategorised
+  Before events:
+    CF: decode_residual at h264_cavlc.c:456:26
+    CT: get_vlc2 at get_bits.h:787:0
+    CF: get_vlc2 at get_bits.h:811:5
+    CT: av_bswap32 at bswap.h:66:0
+    RF: av_bswap32 at bswap.h:0:0
+    RF: get_vlc2 at get_bits.h:0:0
+    CF: decode_residual at h264_cavlc.c:475:9
+    CT: show_bits at get_bits.h:447:0
+    CF: show_bits at get_bits.h:461:5
+  Occurrences: 1354
+
+Uncategorised
+  Before events:
+    CF: decode_residual at h264_cavlc.c:456:26
     CT: get_vlc2 at get_bits.h:787:0
     CF: get_vlc2 at get_bits.h:811:5
     CT: av_bswap32 at bswap.h:66:0
@@ -24115,11 +23234,11 @@ Uncategorised
     RF: decode_residual at h264_cavlc.c:622:1
     CF: decode_luma_residual at h264_cavlc.c:647:25
     CT: decode_residual at h264_cavlc.c:436:0
-  Occurrences: 8
+  Occurrences: 60
 
 Uncategorised
   Before events:
-    CF: decode_residual at h264_cavlc.c:613:9
+    CF: decode_residual at h264_cavlc.c:456:26
     CT: get_vlc2 at get_bits.h:787:0
     CF: get_vlc2 at get_bits.h:811:5
     CT: av_bswap32 at bswap.h:66:0
@@ -24128,7 +23247,156 @@ Uncategorised
     RF: decode_residual at h264_cavlc.c:622:1
     CF: decode_luma_residual at h264_cavlc.c:679:29
     CT: decode_residual at h264_cavlc.c:436:0
-  Occurrences: 78
+  Occurrences: 218
+
+Uncategorised
+  Before events:
+    CF: decode_residual at h264_cavlc.c:456:26
+    CT: get_vlc2 at get_bits.h:787:0
+    CF: get_vlc2 at get_bits.h:811:5
+    CT: av_bswap32 at bswap.h:66:0
+    RF: av_bswap32 at bswap.h:0:0
+    RF: get_vlc2 at get_bits.h:0:0
+    RF: decode_residual at h264_cavlc.c:622:1
+    CF: ff_h264_decode_mb_cavlc at h264_cavlc.c:1160:33
+    CT: decode_residual at h264_cavlc.c:436:0
+  Occurrences: 246
+
+Uncategorised
+  Before events:
+    CF: decode_residual at h264_cavlc.c:456:26
+    CT: get_vlc2 at get_bits.h:787:0
+    CF: get_vlc2 at get_bits.h:811:5
+    CT: av_bswap32 at bswap.h:66:0
+    RF: av_bswap32 at bswap.h:0:0
+    RF: get_vlc2 at get_bits.h:0:0
+    RF: decode_residual at h264_cavlc.c:622:1
+    CF: ff_h264_decode_mb_cavlc at h264_cavlc.c:1177:5
+    CT: write_back_non_zero_count at h264dec.h:683:0
+  Occurrences: 46
+
+Uncategorised
+  Before events:
+    CF: decode_residual at h264_cavlc.c:456:26
+    CT: get_vlc2 at get_bits.h:787:0
+    CF: get_vlc2 at get_bits.h:811:5
+    CT: av_bswap32 at bswap.h:66:0
+    RF: av_bswap32 at bswap.h:0:0
+    RF: get_vlc2 at get_bits.h:0:0
+    RF: decode_residual at h264_cavlc.c:622:1
+    RF: decode_luma_residual at h264_cavlc.c:0:0
+    CF: ff_h264_decode_mb_cavlc at h264_cavlc.c:1145:25
+  Occurrences: 30
+
+Uncategorised
+  Before events:
+    CF: decode_residual at h264_cavlc.c:456:26
+    CT: get_vlc2 at get_bits.h:787:0
+    CF: get_vlc2 at get_bits.h:811:5
+    CT: av_bswap32 at bswap.h:66:0
+    RF: av_bswap32 at bswap.h:0:0
+    RF: get_vlc2 at get_bits.h:0:0
+    RF: decode_residual at h264_cavlc.c:622:1
+    RF: decode_luma_residual at h264_cavlc.c:0:0
+    CF: ff_h264_decode_mb_cavlc at h264_cavlc.c:1167:17
+  Occurrences: 4
+
+Uncategorised
+  Before events:
+    CF: decode_residual at h264_cavlc.c:475:9
+    CT: show_bits at get_bits.h:447:0
+    CF: show_bits at get_bits.h:461:5
+  Occurrences: 40
+
+Uncategorised
+  Before events:
+    CF: decode_residual at h264_cavlc.c:475:9
+    CT: show_bits at get_bits.h:447:0
+    CF: show_bits at get_bits.h:461:5
+    CT: av_bswap32 at bswap.h:66:0
+    RF: av_bswap32 at bswap.h:0:0
+    RF: show_bits at get_bits.h:464:5
+  Occurrences: 18
+
+Uncategorised
+  Before events:
+    CF: decode_residual at h264_cavlc.c:566:30
+    CT: get_vlc2 at get_bits.h:787:0
+    CF: get_vlc2 at get_bits.h:811:5
+  Occurrences: 6
+
+Uncategorised
+  Before events:
+    CF: decode_residual at h264_cavlc.c:566:30
+    CT: get_vlc2 at get_bits.h:787:0
+    CF: get_vlc2 at get_bits.h:811:5
+    CT: av_bswap32 at bswap.h:66:0
+    RF: av_bswap32 at bswap.h:0:0
+    RF: get_vlc2 at get_bits.h:0:0
+  Occurrences: 2
+
+Uncategorised
+  Before events:
+    CF: decode_residual at h264_cavlc.c:566:30
+    CT: get_vlc2 at get_bits.h:787:0
+    CF: get_vlc2 at get_bits.h:811:5
+    CT: av_bswap32 at bswap.h:66:0
+    RF: av_bswap32 at bswap.h:0:0
+    RF: get_vlc2 at get_bits.h:0:0
+    RF: decode_residual at h264_cavlc.c:622:1
+    CF: ff_h264_decode_mb_cavlc at h264_cavlc.c:1145:25
+    CT: decode_residual at h264_cavlc.c:436:0
+  Occurrences: 4
+
+Uncategorised
+  Before events:
+    CF: decode_residual at h264_cavlc.c:566:30
+    CT: get_vlc2 at get_bits.h:787:0
+    CF: get_vlc2 at get_bits.h:811:5
+    CT: av_bswap32 at bswap.h:66:0
+    RF: av_bswap32 at bswap.h:0:0
+    RF: get_vlc2 at get_bits.h:0:0
+    RF: decode_residual at h264_cavlc.c:622:1
+    CF: ff_h264_decode_mb_cavlc at h264_cavlc.c:1160:33
+    CT: decode_residual at h264_cavlc.c:436:0
+  Occurrences: 2
+
+Uncategorised
+  Before events:
+    CF: decode_residual at h264_cavlc.c:572:25
+    CT: get_vlc2 at get_bits.h:787:0
+    CF: get_vlc2 at get_bits.h:811:5
+  Occurrences: 14
+
+Uncategorised
+  Before events:
+    CF: decode_residual at h264_cavlc.c:572:25
+    CT: get_vlc2 at get_bits.h:787:0
+    CF: get_vlc2 at get_bits.h:811:5
+    CT: av_bswap32 at bswap.h:66:0
+    RF: av_bswap32 at bswap.h:0:0
+    RF: get_vlc2 at get_bits.h:0:0
+  Occurrences: 22
+
+Uncategorised
+  Before events:
+    CF: decode_residual at h264_cavlc.c:572:25
+    CT: get_vlc2 at get_bits.h:787:0
+    CF: get_vlc2 at get_bits.h:811:5
+    CT: av_bswap32 at bswap.h:66:0
+    RF: av_bswap32 at bswap.h:0:0
+    RF: get_vlc2 at get_bits.h:0:0
+    RF: decode_residual at h264_cavlc.c:622:1
+    CF: ff_h264_decode_mb_cavlc at h264_cavlc.c:1160:33
+    CT: decode_residual at h264_cavlc.c:436:0
+  Occurrences: 8
+
+Uncategorised
+  Before events:
+    CF: decode_residual at h264_cavlc.c:613:9
+    CT: get_vlc2 at get_bits.h:787:0
+    CF: get_vlc2 at get_bits.h:811:5
+  Occurrences: 4
 
 Uncategorised
   Before events:
@@ -24138,10 +23406,7 @@ Uncategorised
     CT: av_bswap32 at bswap.h:66:0
     RF: av_bswap32 at bswap.h:0:0
     RF: get_vlc2 at get_bits.h:0:0
-    RF: decode_residual at h264_cavlc.c:622:1
-    CF: ff_h264_decode_mb_cavlc at h264_cavlc.c:1145:25
-    CT: decode_residual at h264_cavlc.c:436:0
-  Occurrences: 10
+  Occurrences: 2
 
 Uncategorised
   Before events:
@@ -24154,33 +23419,7 @@ Uncategorised
     RF: decode_residual at h264_cavlc.c:622:1
     CF: ff_h264_decode_mb_cavlc at h264_cavlc.c:1160:33
     CT: decode_residual at h264_cavlc.c:436:0
-  Occurrences: 20
-
-Uncategorised
-  Before events:
-    CF: decode_residual at h264_cavlc.c:613:9
-    CT: get_vlc2 at get_bits.h:787:0
-    CF: get_vlc2 at get_bits.h:811:5
-    CT: av_bswap32 at bswap.h:66:0
-    RF: av_bswap32 at bswap.h:0:0
-    RF: get_vlc2 at get_bits.h:0:0
-    RF: decode_residual at h264_cavlc.c:622:1
-    CF: ff_h264_decode_mb_cavlc at h264_cavlc.c:1177:5
-    CT: write_back_non_zero_count at h264dec.h:683:0
-  Occurrences: 8
-
-Uncategorised
-  Before events:
-    CF: decode_residual at h264_cavlc.c:613:9
-    CT: get_vlc2 at get_bits.h:787:0
-    CF: get_vlc2 at get_bits.h:811:5
-    CT: av_bswap32 at bswap.h:66:0
-    RF: av_bswap32 at bswap.h:0:0
-    RF: get_vlc2 at get_bits.h:0:0
-    RF: decode_residual at h264_cavlc.c:622:1
-    RF: decode_luma_residual at h264_cavlc.c:0:0
-    CF: ff_h264_decode_mb_cavlc at h264_cavlc.c:1145:25
-  Occurrences: 6
+  Occurrences: 4
 
 Uncategorised
   Before events:
@@ -24353,16 +23592,4833 @@ Uncategorised
 
 Uncategorised
   Before events:
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    RF: ff_dct_quantize_c at mpegvideo_enc.c:4550:5
-  Occurrences: 2070
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...636 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...567 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...279 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...225 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...354 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...438 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...798 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...189 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...342 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...126 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...123 more events...]
+  Occurrences: 6
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...255 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...249 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...477 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...123 more events...]
+  Occurrences: 4
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...429 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...726 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...249 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...282 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...621 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...249 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...216 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...279 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...450 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...222 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...123 more events...]
+  Occurrences: 30
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...735 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...825 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...906 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...351 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...507 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...231 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...228 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...831 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...741 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...294 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...543 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...258 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...222 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...333 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...240 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...519 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...354 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...672 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...312 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...171 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...270 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...255 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...207 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...156 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...435 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...438 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...681 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...183 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...123 more events...]
+  Occurrences: 20
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...810 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...342 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...429 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...309 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...393 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...279 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...264 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...744 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...207 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...189 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...588 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...870 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...879 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...291 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...858 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...288 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...483 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...240 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...189 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...294 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...228 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...207 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...297 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...195 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...228 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...351 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...561 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...576 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...273 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...258 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...297 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...378 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...249 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...261 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...201 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...261 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...267 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...291 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...162 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...813 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...285 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...234 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...267 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...285 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...348 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...174 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...240 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...219 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...330 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...147 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...198 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...399 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...174 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...186 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...198 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...231 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...279 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...168 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...279 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...147 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...675 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...321 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...129 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...186 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...228 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...150 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...141 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...189 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...195 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...123 more events...]
+  Occurrences: 17
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...201 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...198 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...351 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...129 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...123 more events...]
+  Occurrences: 26
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...156 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...174 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...402 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...123 more events...]
+  Occurrences: 20
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...186 more events...]
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...123 more events...]
+  Occurrences: 13
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...123 more events...]
+  Occurrences: 12
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2370:13
+    CT: ff_mpeg4_encode_mb at mpeg4videoenc.c:485:0
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    CT: ff_mpeg4_pred_dc at mpeg4video.h:96:0
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:9
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    CF: ff_mpeg4_pred_dc at mpeg4video.h:131:22
+    CT: Jump to external code for abs
+    RF: Jump to external code for abs
+    RF: ff_mpeg4_pred_dc at mpeg4video.h:169:1
+    CF: ff_mpeg4_encode_mb at mpeg4videoenc.c:805:26
+    [...120 more events...]
+  Occurrences: 69
 
 Uncategorised
   Before events:
@@ -24389,4766 +28445,6 @@ Uncategorised
     CF: encode_receive_packet_internal at encode.c:303:15
     CT: encode_simple_receive_packet at encode.c:265:0
     CF: encode_simple_receive_packet at encode.c:269:15
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2087:9
-    CT: ff_emulated_edge_mc_8 at videodsp_template.c:32:0
-    CF: ff_emulated_edge_mc_8 at videodsp_template.c:78:9
-    CT: Jump to external code for memcpy
-    RF: Jump to external code for memcpy
-    CF: ff_emulated_edge_mc_8 at videodsp_template.c:78:9
-    CT: Jump to external code for memcpy
-    RF: Jump to external code for memcpy
-    CF: ff_emulated_edge_mc_8 at videodsp_template.c:78:9
-    CT: Jump to external code for memcpy
-    RF: Jump to external code for memcpy
-    CF: ff_emulated_edge_mc_8 at videodsp_template.c:78:9
-    CT: Jump to external code for memcpy
-    RF: Jump to external code for memcpy
-    CF: ff_emulated_edge_mc_8 at videodsp_template.c:78:9
-    CT: Jump to external code for memcpy
-    RF: Jump to external code for memcpy
-    CF: ff_emulated_edge_mc_8 at videodsp_template.c:78:9
-    CT: Jump to external code for memcpy
-    RF: Jump to external code for memcpy
-    CF: ff_emulated_edge_mc_8 at videodsp_template.c:78:9
-    CT: Jump to external code for memcpy
-    RF: Jump to external code for memcpy
-    CF: ff_emulated_edge_mc_8 at videodsp_template.c:78:9
-    CT: Jump to external code for memcpy
-    RF: Jump to external code for memcpy
-    [...134 more events...]
-  Occurrences: 4
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2087:9
-    CT: ff_emulated_edge_mc_8 at videodsp_template.c:32:0
-    CF: ff_emulated_edge_mc_8 at videodsp_template.c:78:9
-    CT: Jump to external code for memcpy
-    RF: Jump to external code for memcpy
-    CF: ff_emulated_edge_mc_8 at videodsp_template.c:78:9
-    CT: Jump to external code for memcpy
-    RF: Jump to external code for memcpy
-    CF: ff_emulated_edge_mc_8 at videodsp_template.c:78:9
-    CT: Jump to external code for memcpy
-    RF: Jump to external code for memcpy
-    CF: ff_emulated_edge_mc_8 at videodsp_template.c:78:9
-    CT: Jump to external code for memcpy
-    RF: Jump to external code for memcpy
-    CF: ff_emulated_edge_mc_8 at videodsp_template.c:78:9
-    CT: Jump to external code for memcpy
-    RF: Jump to external code for memcpy
-    CF: ff_emulated_edge_mc_8 at videodsp_template.c:78:9
-    CT: Jump to external code for memcpy
-    RF: Jump to external code for memcpy
-    CF: ff_emulated_edge_mc_8 at videodsp_template.c:78:9
-    CT: Jump to external code for memcpy
-    RF: Jump to external code for memcpy
-    CF: ff_emulated_edge_mc_8 at videodsp_template.c:78:9
-    CT: Jump to external code for memcpy
-    RF: Jump to external code for memcpy
-    [...137 more events...]
-  Occurrences: 11
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...650 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...581 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...293 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...239 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...368 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...137 more events...]
-  Occurrences: 6
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...140 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...452 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...812 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...203 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...356 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...269 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...263 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...491 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...137 more events...]
-  Occurrences: 4
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...443 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...740 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...263 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...296 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...635 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...263 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...230 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...293 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...137 more events...]
-  Occurrences: 27
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...464 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...236 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...749 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...839 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...920 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...365 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...521 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...245 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...242 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...845 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...755 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...308 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...557 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...272 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...236 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...347 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...254 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...533 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...368 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...686 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...326 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...185 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...284 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...269 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...221 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...170 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...137 more events...]
-  Occurrences: 19
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...449 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...452 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...695 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...197 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...824 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...356 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...443 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...323 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...407 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...293 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...278 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...758 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...221 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...203 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...602 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...884 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...893 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...305 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...872 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...302 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...497 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...254 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...203 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...308 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...242 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...221 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...311 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...209 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...242 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...365 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...575 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...590 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...287 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...272 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...311 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...392 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...263 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...275 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...215 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...275 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...281 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...305 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...176 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...827 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...299 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...248 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...281 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...299 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...362 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...188 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...254 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...233 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...161 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...344 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...212 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...413 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...188 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...200 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...212 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...245 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...293 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...182 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...161 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...293 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...689 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...143 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...335 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...200 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...242 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...164 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...155 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...134 more events...]
-  Occurrences: 65
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...137 more events...]
-  Occurrences: 81
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...203 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...209 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...143 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...215 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...212 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...365 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...170 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...188 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...416 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: encode_thread at mpegvideo_enc.c:3339:17
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-    CF: encode_mb at mpegvideo_enc.c:2412:9
-    CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-    CF: encode_mb_internal at mpegvideo_enc.c:2298:42
-    CT: ff_dct_quantize_c at mpegvideo_enc.c:4473:0
-    CF: ff_dct_quantize_c at mpegvideo_enc.c:4481:5
-    CT: ff_jpeg_fdct_islow_8 at jfdctint_template.c:261:0
-    CF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:268:3
-    CT: row_fdct_8 at jfdctint_template.c:182:0
-    RF: row_fdct_8 at jfdctint_template.c:0:0
-    RF: ff_jpeg_fdct_islow_8 at jfdctint_template.c:334:1
-    [...200 more events...]
   Occurrences: 1
 
 Uncategorised
@@ -29199,12 +28495,6 @@ Uncategorised
     RF: av_toupper at avstring.h:240:5
     CF: ff_toupper4 at to_upper4.h:33:12
   Occurrences: 2
-
-Uncategorised
-  Before events:
-    CF: ff_default_get_video_buffer at video.c:98:53
-    CT: av_cpu_max_align at cpu.c:255:0
-  Occurrences: 1
 
 Uncategorised
   Before events:
@@ -29343,396 +28633,13 @@ Uncategorised
 
 Uncategorised
   Before events:
-    CF: ff_h2645_extract_rbsp at h2645_parse.c:137:5
-  Occurrences: 2
-
-Uncategorised
-  Before events:
     CF: ff_h264_decode_mb_cavlc at h264_cavlc.c:1145:25
-  Occurrences: 2
-
-Uncategorised
-  Before events:
-    CF: ff_h264_decode_mb_cavlc at h264_cavlc.c:1145:25
-    CT: decode_residual at h264_cavlc.c:436:0
-    CF: decode_residual at h264_cavlc.c:445:27
-  Occurrences: 20
-
-Uncategorised
-  Before events:
-    CF: ff_h264_decode_mb_cavlc at h264_cavlc.c:1145:25
-    CT: decode_residual at h264_cavlc.c:436:0
-    CF: decode_residual at h264_cavlc.c:445:27
-    CT: get_vlc2 at get_bits.h:787:0
-  Occurrences: 42
-
-Uncategorised
-  Before events:
-    CF: ff_h264_decode_mb_cavlc at h264_cavlc.c:1145:25
-    CT: decode_residual at h264_cavlc.c:436:0
-    CF: decode_residual at h264_cavlc.c:445:27
-    CT: get_vlc2 at get_bits.h:787:0
-    CF: get_vlc2 at get_bits.h:811:5
-  Occurrences: 68
-
-Uncategorised
-  Before events:
-    CF: ff_h264_decode_mb_cavlc at h264_cavlc.c:1145:25
-    CT: decode_residual at h264_cavlc.c:436:0
-    CF: decode_residual at h264_cavlc.c:445:27
-    CT: get_vlc2 at get_bits.h:787:0
-    CF: get_vlc2 at get_bits.h:811:5
-    CT: av_bswap32 at bswap.h:66:0
-  Occurrences: 58
-
-Uncategorised
-  Before events:
-    CF: ff_h264_decode_mb_cavlc at h264_cavlc.c:1145:25
-    CT: decode_residual at h264_cavlc.c:436:0
-    CF: decode_residual at h264_cavlc.c:445:27
-    CT: get_vlc2 at get_bits.h:787:0
-    CF: get_vlc2 at get_bits.h:811:5
-    CT: av_bswap32 at bswap.h:66:0
-    RF: av_bswap32 at bswap.h:0:0
-  Occurrences: 28
-
-Uncategorised
-  Before events:
-    CF: ff_h264_decode_mb_cavlc at h264_cavlc.c:1145:25
-    CT: decode_residual at h264_cavlc.c:436:0
-    CF: decode_residual at h264_cavlc.c:445:27
-    CT: get_vlc2 at get_bits.h:787:0
-    CF: get_vlc2 at get_bits.h:811:5
-    CT: av_bswap32 at bswap.h:66:0
-    RF: av_bswap32 at bswap.h:0:0
-    RF: get_vlc2 at get_bits.h:0:0
-  Occurrences: 20
-
-Uncategorised
-  Before events:
-    CF: ff_h264_decode_mb_cavlc at h264_cavlc.c:1145:25
-    CT: decode_residual at h264_cavlc.c:436:0
-    CF: decode_residual at h264_cavlc.c:445:27
-    CT: get_vlc2 at get_bits.h:787:0
-    CF: get_vlc2 at get_bits.h:811:5
-    CT: av_bswap32 at bswap.h:66:0
-    RF: av_bswap32 at bswap.h:0:0
-    RF: get_vlc2 at get_bits.h:0:0
-    CF: decode_residual at h264_cavlc.c:475:9
-  Occurrences: 14
-
-Uncategorised
-  Before events:
-    CF: ff_h264_decode_mb_cavlc at h264_cavlc.c:1145:25
-    CT: decode_residual at h264_cavlc.c:436:0
-    CF: decode_residual at h264_cavlc.c:445:27
-    CT: get_vlc2 at get_bits.h:787:0
-    CF: get_vlc2 at get_bits.h:811:5
-    CT: av_bswap32 at bswap.h:66:0
-    RF: av_bswap32 at bswap.h:0:0
-    RF: get_vlc2 at get_bits.h:0:0
-    CF: decode_residual at h264_cavlc.c:475:9
-    CT: show_bits at get_bits.h:447:0
-    CF: show_bits at get_bits.h:461:5
-  Occurrences: 6
-
-Uncategorised
-  Before events:
-    CF: ff_h264_decode_mb_cavlc at h264_cavlc.c:1145:25
-    CT: decode_residual at h264_cavlc.c:436:0
-    CF: decode_residual at h264_cavlc.c:445:27
-    CT: get_vlc2 at get_bits.h:787:0
-    CF: get_vlc2 at get_bits.h:811:5
-    CT: av_bswap32 at bswap.h:66:0
-    RF: av_bswap32 at bswap.h:0:0
-    RF: get_vlc2 at get_bits.h:0:0
-    CF: decode_residual at h264_cavlc.c:475:9
-    CT: show_bits at get_bits.h:447:0
-    CF: show_bits at get_bits.h:461:5
-    CT: av_bswap32 at bswap.h:66:0
-    RF: av_bswap32 at bswap.h:0:0
-  Occurrences: 6
-
-Uncategorised
-  Before events:
-    CF: ff_h264_decode_mb_cavlc at h264_cavlc.c:1145:25
-    CT: decode_residual at h264_cavlc.c:436:0
-    CF: decode_residual at h264_cavlc.c:445:27
-    CT: get_vlc2 at get_bits.h:787:0
-    CF: get_vlc2 at get_bits.h:811:5
-    CT: av_bswap32 at bswap.h:66:0
-    RF: av_bswap32 at bswap.h:0:0
-    RF: get_vlc2 at get_bits.h:0:0
-    CF: decode_residual at h264_cavlc.c:475:9
-    CT: show_bits at get_bits.h:447:0
-    CF: show_bits at get_bits.h:461:5
-    CT: av_bswap32 at bswap.h:66:0
-    RF: av_bswap32 at bswap.h:0:0
-    RF: show_bits at get_bits.h:464:5
-    CF: decode_residual at h264_cavlc.c:476:5
-    CT: skip_bits at get_bits.h:468:0
-  Occurrences: 2
-
-Uncategorised
-  Before events:
-    CF: ff_h264_decode_mb_cavlc at h264_cavlc.c:1160:33
-    CT: decode_residual at h264_cavlc.c:436:0
-  Occurrences: 10
-
-Uncategorised
-  Before events:
-    CF: ff_h264_decode_mb_cavlc at h264_cavlc.c:1160:33
-    CT: decode_residual at h264_cavlc.c:436:0
-    CF: decode_residual at h264_cavlc.c:455:26
-  Occurrences: 24
-
-Uncategorised
-  Before events:
-    CF: ff_h264_decode_mb_cavlc at h264_cavlc.c:1160:33
-    CT: decode_residual at h264_cavlc.c:436:0
-    CF: decode_residual at h264_cavlc.c:455:26
-    CT: pred_non_zero_count at h264_cavlc.c:286:0
-  Occurrences: 66
-
-Uncategorised
-  Before events:
-    CF: ff_h264_decode_mb_cavlc at h264_cavlc.c:1160:33
-    CT: decode_residual at h264_cavlc.c:436:0
-    CF: decode_residual at h264_cavlc.c:455:26
-    CT: pred_non_zero_count at h264_cavlc.c:286:0
-    RF: pred_non_zero_count at h264_cavlc.c:296:5
-  Occurrences: 92
-
-Uncategorised
-  Before events:
-    CF: ff_h264_decode_mb_cavlc at h264_cavlc.c:1160:33
-    CT: decode_residual at h264_cavlc.c:436:0
-    CF: decode_residual at h264_cavlc.c:455:26
-    CT: pred_non_zero_count at h264_cavlc.c:286:0
-    RF: pred_non_zero_count at h264_cavlc.c:296:5
-    CF: decode_residual at h264_cavlc.c:456:26
-  Occurrences: 60
-
-Uncategorised
-  Before events:
-    CF: ff_h264_decode_mb_cavlc at h264_cavlc.c:1160:33
-    CT: decode_residual at h264_cavlc.c:436:0
-    CF: decode_residual at h264_cavlc.c:455:26
-    CT: pred_non_zero_count at h264_cavlc.c:286:0
-    RF: pred_non_zero_count at h264_cavlc.c:296:5
-    CF: decode_residual at h264_cavlc.c:456:26
-    CT: get_vlc2 at get_bits.h:787:0
-  Occurrences: 92
-
-Uncategorised
-  Before events:
-    CF: ff_h264_decode_mb_cavlc at h264_cavlc.c:1160:33
-    CT: decode_residual at h264_cavlc.c:436:0
-    CF: decode_residual at h264_cavlc.c:455:26
-    CT: pred_non_zero_count at h264_cavlc.c:286:0
-    RF: pred_non_zero_count at h264_cavlc.c:296:5
-    CF: decode_residual at h264_cavlc.c:456:26
-    CT: get_vlc2 at get_bits.h:787:0
-    CF: get_vlc2 at get_bits.h:811:5
   Occurrences: 14
 
 Uncategorised
   Before events:
     CF: ff_h264_decode_mb_cavlc at h264_cavlc.c:1160:33
-    CT: decode_residual at h264_cavlc.c:436:0
-    CF: decode_residual at h264_cavlc.c:455:26
-    CT: pred_non_zero_count at h264_cavlc.c:286:0
-    RF: pred_non_zero_count at h264_cavlc.c:296:5
-    CF: decode_residual at h264_cavlc.c:456:26
-    CT: get_vlc2 at get_bits.h:787:0
-    CF: get_vlc2 at get_bits.h:811:5
-    CT: av_bswap32 at bswap.h:66:0
-  Occurrences: 60
-
-Uncategorised
-  Before events:
-    CF: ff_h264_decode_mb_cavlc at h264_cavlc.c:1160:33
-    CT: decode_residual at h264_cavlc.c:436:0
-    CF: decode_residual at h264_cavlc.c:455:26
-    CT: pred_non_zero_count at h264_cavlc.c:286:0
-    RF: pred_non_zero_count at h264_cavlc.c:296:5
-    CF: decode_residual at h264_cavlc.c:456:26
-    CT: get_vlc2 at get_bits.h:787:0
-    CF: get_vlc2 at get_bits.h:811:5
-    CT: av_bswap32 at bswap.h:66:0
-    RF: av_bswap32 at bswap.h:0:0
-    RF: get_vlc2 at get_bits.h:0:0
-  Occurrences: 18
-
-Uncategorised
-  Before events:
-    CF: ff_h264_decode_mb_cavlc at h264_cavlc.c:1160:33
-    CT: decode_residual at h264_cavlc.c:436:0
-    CF: decode_residual at h264_cavlc.c:455:26
-    CT: pred_non_zero_count at h264_cavlc.c:286:0
-    RF: pred_non_zero_count at h264_cavlc.c:296:5
-    CF: decode_residual at h264_cavlc.c:456:26
-    CT: get_vlc2 at get_bits.h:787:0
-    CF: get_vlc2 at get_bits.h:811:5
-    CT: av_bswap32 at bswap.h:66:0
-    RF: av_bswap32 at bswap.h:0:0
-    RF: get_vlc2 at get_bits.h:0:0
-    CF: decode_residual at h264_cavlc.c:475:9
-  Occurrences: 10
-
-Uncategorised
-  Before events:
-    CF: ff_h264_decode_mb_cavlc at h264_cavlc.c:1160:33
-    CT: decode_residual at h264_cavlc.c:436:0
-    CF: decode_residual at h264_cavlc.c:455:26
-    CT: pred_non_zero_count at h264_cavlc.c:286:0
-    RF: pred_non_zero_count at h264_cavlc.c:296:5
-    CF: decode_residual at h264_cavlc.c:456:26
-    CT: get_vlc2 at get_bits.h:787:0
-    CF: get_vlc2 at get_bits.h:811:5
-    CT: av_bswap32 at bswap.h:66:0
-    RF: av_bswap32 at bswap.h:0:0
-    RF: get_vlc2 at get_bits.h:0:0
-    CF: decode_residual at h264_cavlc.c:475:9
-    CT: show_bits at get_bits.h:447:0
-  Occurrences: 8
-
-Uncategorised
-  Before events:
-    CF: ff_h264_decode_mb_cavlc at h264_cavlc.c:1160:33
-    CT: decode_residual at h264_cavlc.c:436:0
-    CF: decode_residual at h264_cavlc.c:455:26
-    CT: pred_non_zero_count at h264_cavlc.c:286:0
-    RF: pred_non_zero_count at h264_cavlc.c:296:5
-    CF: decode_residual at h264_cavlc.c:456:26
-    CT: get_vlc2 at get_bits.h:787:0
-    CF: get_vlc2 at get_bits.h:811:5
-    CT: av_bswap32 at bswap.h:66:0
-    RF: av_bswap32 at bswap.h:0:0
-    RF: get_vlc2 at get_bits.h:0:0
-    CF: decode_residual at h264_cavlc.c:475:9
-    CT: show_bits at get_bits.h:447:0
-    CF: show_bits at get_bits.h:461:5
-    CT: av_bswap32 at bswap.h:66:0
-  Occurrences: 4
-
-Uncategorised
-  Before events:
-    CF: ff_h264_decode_mb_cavlc at h264_cavlc.c:1160:33
-    CT: decode_residual at h264_cavlc.c:436:0
-    CF: decode_residual at h264_cavlc.c:455:26
-    CT: pred_non_zero_count at h264_cavlc.c:286:0
-    RF: pred_non_zero_count at h264_cavlc.c:296:5
-    CF: decode_residual at h264_cavlc.c:456:26
-    CT: get_vlc2 at get_bits.h:787:0
-    CF: get_vlc2 at get_bits.h:811:5
-    CT: av_bswap32 at bswap.h:66:0
-    RF: av_bswap32 at bswap.h:0:0
-    RF: get_vlc2 at get_bits.h:0:0
-    CF: decode_residual at h264_cavlc.c:475:9
-    CT: show_bits at get_bits.h:447:0
-    CF: show_bits at get_bits.h:461:5
-    CT: av_bswap32 at bswap.h:66:0
-    RF: av_bswap32 at bswap.h:0:0
-  Occurrences: 18
-
-Uncategorised
-  Before events:
-    CF: ff_h264_decode_mb_cavlc at h264_cavlc.c:1160:33
-    CT: decode_residual at h264_cavlc.c:436:0
-    CF: decode_residual at h264_cavlc.c:455:26
-    CT: pred_non_zero_count at h264_cavlc.c:286:0
-    RF: pred_non_zero_count at h264_cavlc.c:296:5
-    CF: decode_residual at h264_cavlc.c:456:26
-    CT: get_vlc2 at get_bits.h:787:0
-    CF: get_vlc2 at get_bits.h:811:5
-    CT: av_bswap32 at bswap.h:66:0
-    RF: av_bswap32 at bswap.h:0:0
-    RF: get_vlc2 at get_bits.h:0:0
-    CF: decode_residual at h264_cavlc.c:475:9
-    CT: show_bits at get_bits.h:447:0
-    CF: show_bits at get_bits.h:461:5
-    CT: av_bswap32 at bswap.h:66:0
-    RF: av_bswap32 at bswap.h:0:0
-    RF: show_bits at get_bits.h:464:5
-  Occurrences: 4
-
-Uncategorised
-  Before events:
-    CF: ff_h264_decode_picture_parameter_set at h264_ps.c:817:30
-    CT: get_ue_golomb at golomb.h:54:0
-  Occurrences: 3
-
-Uncategorised
-  Before events:
-    CF: ff_h264_decode_picture_parameter_set at h264_ps.c:824:25
-    CT: get_ue_golomb at golomb.h:54:0
-  Occurrences: 3
-
-Uncategorised
-  Before events:
-    CF: ff_h264_decode_picture_parameter_set at h264_ps.c:825:25
-    CT: get_ue_golomb at golomb.h:54:0
-  Occurrences: 3
-
-Uncategorised
-  Before events:
-    CF: ff_h264_decode_picture_parameter_set at h264_ps.c:836:49
-    CT: get_se_golomb at golomb.h:240:0
-  Occurrences: 3
-
-Uncategorised
-  Before events:
-    CF: ff_h264_decode_picture_parameter_set at h264_ps.c:837:49
-    CT: get_se_golomb at golomb.h:240:0
-  Occurrences: 3
-
-Uncategorised
-  Before events:
-    CF: ff_h264_decode_picture_parameter_set at h264_ps.c:838:49
-    CT: get_se_golomb at golomb.h:240:0
-  Occurrences: 3
-
-Uncategorised
-  Before events:
-    CF: ff_h264_decode_seq_parameter_set at h264_ps.c:488:28
-  Occurrences: 3
-
-Uncategorised
-  Before events:
-    CF: ff_h264_decode_seq_parameter_set at h264_ps.c:497:43
-    CT: get_ue_golomb at golomb.h:54:0
-  Occurrences: 3
-
-Uncategorised
-  Before events:
-    CF: ff_h264_decode_seq_parameter_set at h264_ps.c:498:43
-    CT: get_ue_golomb at golomb.h:54:0
-  Occurrences: 3
-
-Uncategorised
-  Before events:
-    CF: ff_h264_decode_seq_parameter_set at h264_ps.c:525:36
-    CT: get_ue_golomb at golomb.h:54:0
-  Occurrences: 3
-
-Uncategorised
-  Before events:
-    CF: ff_h264_decode_seq_parameter_set at h264_ps.c:526:36
-    CT: get_ue_golomb at golomb.h:54:0
-  Occurrences: 3
-
-Uncategorised
-  Before events:
-    CF: ff_h264_decode_seq_parameter_set at h264_ps.c:527:36
-    CT: get_ue_golomb at golomb.h:54:0
-  Occurrences: 3
-
-Uncategorised
-  Before events:
-    CF: ff_h264_decode_seq_parameter_set at h264_ps.c:528:36
-    CT: get_ue_golomb at golomb.h:54:0
-  Occurrences: 3
+  Occurrences: 44
 
 Uncategorised
   Before events:
@@ -29746,19 +28653,6 @@ Uncategorised
     CF: filter_mb_dir at h264_loopfilter.c:597:56
     CT: get_chroma_qp at h264dec.h:647:0
   Occurrences: 12
-
-Uncategorised
-  Before events:
-    CF: ff_h264_queue_decode_slice at h264_slice.c:2195:11
-    CT: h264_slice_header_parse at h264_slice.c:1834:0
-    CF: h264_slice_header_parse at h264_slice.c:1846:25
-    CT: get_ue_golomb_long at golomb.h:105:0
-    CF: get_ue_golomb_long at golomb.h:108:11
-    CT: show_bits_long at get_bits.h:603:0
-    CF: show_bits_long at get_bits.h:608:16
-    CT: get_bits_long at get_bits.h:547:0
-    CF: get_bits_long at get_bits.h:562:24
-  Occurrences: 2
 
 Uncategorised
   Before events:
@@ -29920,44 +28814,6 @@ Uncategorised
     CF: ff_toupper4 at to_upper4.h:32:12
     CT: av_toupper at avstring.h:237:0
     RF: av_toupper at avstring.h:240:5
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: ff_mpeg4_encode_picture_header at mpeg4videoenc.c:1101:5
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: ff_mpeg4_encode_picture_header at mpeg4videoenc.c:1108:5
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: ff_mpv_common_init at mpegvideo.c:745:5
-    CT: clear_context at mpegvideo.c:660:0
-    CF: clear_context at mpegvideo.c:663:5
-    CT: Jump to external code for memset
-    RF: Jump to external code for memset
-    CF: clear_context at mpegvideo.c:664:5
-    CT: Jump to external code for memset
-    RF: Jump to external code for memset
-    CF: clear_context at mpegvideo.c:665:5
-    CT: Jump to external code for memset
-    RF: Jump to external code for memset
-    CF: clear_context at mpegvideo.c:666:5
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: ff_mpv_encode_init at mpegvideo_enc.c:812:5
-    CT: ff_pixblockdsp_init at pixblockdsp.c:82:0
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: ff_mpv_encode_init at mpegvideo_enc.c:813:5
-    CT: ff_qpeldsp_init at qpeldsp.c:785:0
   Occurrences: 1
 
 Uncategorised
@@ -30133,18 +28989,6 @@ Uncategorised
     RF: avio_w8 at aviobuf.c:216:1
     RF: avio_wl32 at aviobuf.c:392:1
   Occurrences: 2
-
-Uncategorised
-  Before events:
-    CF: ffurl_read at avio.c:405:12
-    CT: retry_transfer_wrapper at avio.c:361:0
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: ffurl_write at avio.c:423:12
-    CT: retry_transfer_wrapper at avio.c:361:0
-  Occurrences: 4
 
 Uncategorised
   Before events:
@@ -30728,8 +29572,6 @@ Uncategorised
     RF: retry_transfer_wrapper at avio.c:399:1
     RF: ffurl_write at avio.c:426:1
     RF: writeout at aviobuf.c:192:1
-    RF: flush_buffer at aviobuf.c:208:1
-    RF: avio_flush at aviobuf.c:258:1
   Occurrences: 2
 
 Uncategorised
@@ -30768,16 +29610,6 @@ Uncategorised
     RF: av_bswap32 at bswap.h:0:0
     RF: get_bits at get_bits.h:409:5
   Occurrences: 3
-
-Uncategorised
-  Before events:
-    CF: get_edit_list_entry at mov.c:3315:27
-    CT: av_rescale at mathematics.c:130:0
-    CF: av_rescale at mathematics.c:131:12
-    CT: av_rescale_rnd at mathematics.c:59:0
-    RF: av_rescale_rnd at mathematics.c:127:1
-    RF: av_rescale at mathematics.c:131:5
-  Occurrences: 2
 
 Uncategorised
   Before events:
@@ -30942,33 +29774,6 @@ Uncategorised
 
 Uncategorised
   Before events:
-    CF: h264_frame_start at h264_slice.c:540:9
-    CT: ff_h264_set_erpic at h264_picture.c:197:0
-    CF: ff_h264_set_erpic at h264_picture.c:201:5
-    CT: Jump to external code for memset
-    RF: Jump to external code for memset
-  Occurrences: 2
-
-Uncategorised
-  Before events:
-    CF: h264_frame_start at h264_slice.c:553:9
-    CT: ff_h264_set_erpic at h264_picture.c:197:0
-    CF: ff_h264_set_erpic at h264_picture.c:201:5
-    CT: Jump to external code for memset
-    RF: Jump to external code for memset
-  Occurrences: 2
-
-Uncategorised
-  Before events:
-    CF: h264_frame_start at h264_slice.c:554:9
-    CT: ff_h264_set_erpic at h264_picture.c:197:0
-    CF: ff_h264_set_erpic at h264_picture.c:201:5
-    CT: Jump to external code for memset
-    RF: Jump to external code for memset
-  Occurrences: 2
-
-Uncategorised
-  Before events:
     CF: h264_parse at h264_parser.c:624:5
     CT: parse_nal_units at h264_parser.c:259:0
     CF: parse_nal_units at h264_parser.c:261:15
@@ -30990,12 +29795,6 @@ Uncategorised
     RF: av_vlog at log.c:435:1
     RF: av_log at log.c:415:1
   Occurrences: 10
-
-Uncategorised
-  Before events:
-    CF: h264_slice_header_init at h264_slice.c:1007:9
-    CT: ff_h264_slice_context_init at h264dec.c:259:0
-  Occurrences: 2
 
 Uncategorised
   Before events:
@@ -31058,161 +29857,6 @@ Uncategorised
     RF: av_bswap32 at bswap.h:0:0
     RF: get_ue_golomb_31 at golomb.h:140:5
   Occurrences: 2
-
-Uncategorised
-  Before events:
-    CF: h264_slice_header_parse at h264_slice.c:1871:18
-    CT: get_ue_golomb at golomb.h:54:0
-    CF: get_ue_golomb at golomb.h:78:5
-    CT: av_bswap32 at bswap.h:66:0
-    RF: av_bswap32 at bswap.h:0:0
-    RF: get_ue_golomb at golomb.h:99:1
-  Occurrences: 2
-
-Uncategorised
-  Before events:
-    CF: h264_slice_header_parse at h264_slice.c:1885:21
-    CT: get_bits at get_bits.h:380:0
-    CF: get_bits at get_bits.h:403:5
-    CT: av_bswap32 at bswap.h:66:0
-    RF: av_bswap32 at bswap.h:0:0
-    RF: get_bits at get_bits.h:409:5
-  Occurrences: 2
-
-Uncategorised
-  Before events:
-    CF: h264_slice_header_parse at h264_slice.c:1923:31
-    CT: get_ue_golomb_long at golomb.h:105:0
-    CF: get_ue_golomb_long at golomb.h:108:11
-    CT: show_bits_long at get_bits.h:603:0
-    CF: show_bits_long at get_bits.h:608:16
-    CT: get_bits_long at get_bits.h:547:0
-    CF: get_bits_long at get_bits.h:562:24
-    CT: get_bits at get_bits.h:380:0
-    CF: get_bits at get_bits.h:403:5
-    CT: av_bswap32 at bswap.h:66:0
-    RF: av_bswap32 at bswap.h:0:0
-    RF: get_bits at get_bits.h:409:5
-    CF: get_bits_long at get_bits.h:563:22
-    CT: get_bits at get_bits.h:380:0
-    CF: get_bits at get_bits.h:403:5
-    CT: av_bswap32 at bswap.h:66:0
-    RF: av_bswap32 at bswap.h:0:0
-    RF: get_bits at get_bits.h:409:5
-    RF: get_bits_long at get_bits.h:567:1
-    RF: show_bits_long at get_bits.h:610:1
-    CF: get_ue_golomb_long at golomb.h:109:16
-    CT: ff_log2_c at intmath.h:51:0
-    RF: ff_log2_c at intmath.h:0:0
-    CF: get_ue_golomb_long at golomb.h:110:5
-    CT: skip_bits_long at get_bits.h:292:0
-    CF: skip_bits_long at get_bits.h:299:17
-    CT: av_clip_c at common.h:173:0
-    RF: av_clip_c at common.h:0:0
-    RF: skip_bits_long at get_bits.h:302:1
-    CF: get_ue_golomb_long at golomb.h:112:12
-    [...15 more events...]
-  Occurrences: 2
-
-Uncategorised
-  Before events:
-    CF: h264_slice_header_parse at h264_slice.c:1985:15
-    CT: ff_h264_decode_ref_pic_marking at h264_refs.c:835:0
-    CF: ff_h264_decode_ref_pic_marking at h264_refs.c:841:9
-    CT: skip_bits1 at get_bits.h:539:0
-    CF: skip_bits1 at get_bits.h:540:5
-    CT: skip_bits at get_bits.h:468:0
-    RF: skip_bits at get_bits.h:496:1
-    RF: skip_bits1 at get_bits.h:541:1
-    CF: ff_h264_decode_ref_pic_marking at h264_refs.c:842:13
-    CT: get_bits1 at get_bits.h:499:0
-    RF: get_bits1 at get_bits.h:529:5
-    RF: ff_h264_decode_ref_pic_marking at h264_refs.c:893:1
-  Occurrences: 2
-
-Uncategorised
-  Before events:
-    CF: hl_decode_mb_predict_luma at h264_mb.c:696:29
-    CT: ff_h264_idct_dc_add_8_c at h264idct_template.c:144:0
-  Occurrences: 324
-
-Uncategorised
-  Before events:
-    CF: hl_decode_mb_predict_luma at h264_mb.c:704:9
-    CT: pred16x16_dc_8_c at h264pred_template.c:347:0
-  Occurrences: 10
-
-Uncategorised
-  Before events:
-    CF: hl_decode_mb_predict_luma at h264_mb.c:704:9
-    CT: pred16x16_left_dc_8_c at h264pred_template.c:366:0
-  Occurrences: 58
-
-Uncategorised
-  Before events:
-    CF: hl_decode_mb_predict_luma at h264_mb.c:704:9
-    CT: pred16x16_vertical_8_c at h264pred_template.c:304:0
-  Occurrences: 568
-
-Uncategorised
-  Before events:
-    CF: hl_decode_mb_simple_8 at h264_mb_template.c:159:17
-    CT: pred8x8_dc_8_c at h264pred_template.c:623:0
-  Occurrences: 692
-
-Uncategorised
-  Before events:
-    CF: hl_decode_mb_simple_8 at h264_mb_template.c:159:17
-    CT: pred8x8_left_dc_8_c at h264pred_template.c:543:0
-  Occurrences: 58
-
-Uncategorised
-  Before events:
-    CF: hl_decode_mb_simple_8 at h264_mb_template.c:159:17
-    CT: pred8x8_top_dc_8_c at h264pred_template.c:575:0
-  Occurrences: 32
-
-Uncategorised
-  Before events:
-    CF: hl_decode_mb_simple_8 at h264_mb_template.c:159:17
-    CT: pred8x8_vertical_8_c at h264pred_template.c:465:0
-  Occurrences: 94
-
-Uncategorised
-  Before events:
-    CF: hl_decode_mb_simple_8 at h264_mb_template.c:160:17
-    CT: pred8x8_dc_8_c at h264pred_template.c:623:0
-  Occurrences: 692
-
-Uncategorised
-  Before events:
-    CF: hl_decode_mb_simple_8 at h264_mb_template.c:160:17
-    CT: pred8x8_left_dc_8_c at h264pred_template.c:543:0
-  Occurrences: 58
-
-Uncategorised
-  Before events:
-    CF: hl_decode_mb_simple_8 at h264_mb_template.c:160:17
-    CT: pred8x8_top_dc_8_c at h264pred_template.c:575:0
-  Occurrences: 32
-
-Uncategorised
-  Before events:
-    CF: hl_decode_mb_simple_8 at h264_mb_template.c:160:17
-    CT: pred8x8_vertical_8_c at h264pred_template.c:465:0
-  Occurrences: 94
-
-Uncategorised
-  Before events:
-    CF: hl_decode_mb_simple_8 at h264_mb_template.c:237:21
-    CT: ff_h264_chroma_dc_dequant_idct_8_c at h264idct_template.c:313:0
-  Occurrences: 372
-
-Uncategorised
-  Before events:
-    CF: hl_decode_mb_simple_8 at h264_mb_template.c:240:21
-    CT: ff_h264_chroma_dc_dequant_idct_8_c at h264idct_template.c:313:0
-  Occurrences: 366
 
 Uncategorised
   Before events:
@@ -31380,18 +30024,6 @@ Uncategorised
 
 Uncategorised
   Before events:
-    CF: main at ffmpeg.c:4521:5
-    CT: init_dynload at cmdutils.c:78:0
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: mb_var_thread at mpegvideo_enc.c:2646:23
-    CT: pix_sum_c at mpegvideoencdsp.c:61:0
-  Occurrences: 345
-
-Uncategorised
-  Before events:
     CF: mlp_probe at mlpdec.c:95:12
     CT: mlp_thd_probe at mlpdec.c:34:0
     CF: mlp_thd_probe at mlpdec.c:41:13
@@ -31529,12 +30161,6 @@ Uncategorised
     CT: av_toupper at avstring.h:237:0
     [...22 more events...]
   Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: mov_fix_index at mov.c:3701:12
-    CT: get_edit_list_entry at mov.c:3303:0
-  Occurrences: 4
 
 Uncategorised
   Before events:
@@ -32445,11 +31071,6 @@ Uncategorised
 
 Uncategorised
   Before events:
-    CF: mp3_read_probe at mp3dec.c:98:38
-  Occurrences: 1
-
-Uncategorised
-  Before events:
     CF: mpeg4_encode_init_static at mpeg4videoenc.c:1270:5
     CT: init_uni_dc_tab at mpeg4videoenc.c:1119:0
     CF: init_uni_dc_tab at mpeg4videoenc.c:1126:16
@@ -32485,31 +31106,6 @@ Uncategorised
 
 Uncategorised
   Before events:
-    CF: mpeg4_encode_visual_object_header at mpeg4videoenc.c:950:5
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: mpeg4_encode_visual_object_header at mpeg4videoenc.c:952:5
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: mpeg4_encode_vol_header at mpeg4videoenc.c:1021:9
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: mpeg4_encode_vol_header at mpeg4videoenc.c:1026:5
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: mpeg4_encode_vol_header at mpeg4videoenc.c:1037:5
-  Occurrences: 1
-
-Uncategorised
-  Before events:
     CF: mpeg4_encode_vol_header at mpeg4videoenc.c:1045:5
     CT: put_bits at put_bits.h:248:0
     CF: put_bits at put_bits.h:250:5
@@ -32536,14 +31132,7 @@ Uncategorised
 
 Uncategorised
   Before events:
-    CF: output_configure at aacdec_template.c:540:13
-  Occurrences: 2
-
-Uncategorised
-  Before events:
     CF: output_configure at aacdec_template.c:566:18
-    CT: sniff_channel_order at aacdec_template.c:273:0
-    CF: sniff_channel_order at aacdec_template.c:275:28
   Occurrences: 2
 
 Uncategorised
@@ -32767,46 +31356,6 @@ Uncategorised
 
 Uncategorised
   Before events:
-    CF: ps_tableinit at aacps_tablegen.h:154:40
-  Occurrences: 210
-
-Uncategorised
-  Before events:
-    CF: ps_tableinit at aacps_tablegen.h:155:40
-  Occurrences: 105
-
-Uncategorised
-  Before events:
-    CF: ps_tableinit at aacps_tablegen.h:169:27
-  Occurrences: 52
-
-Uncategorised
-  Before events:
-    CF: ps_tableinit at aacps_tablegen.h:170:27
-  Occurrences: 105
-
-Uncategorised
-  Before events:
-    CF: ps_tableinit at aacps_tablegen.h:202:43
-  Occurrences: 45
-
-Uncategorised
-  Before events:
-    CF: ps_tableinit at aacps_tablegen.h:203:43
-  Occurrences: 45
-
-Uncategorised
-  Before events:
-    CF: ps_tableinit at aacps_tablegen.h:206:30
-  Occurrences: 40
-
-Uncategorised
-  Before events:
-    CF: ps_tableinit at aacps_tablegen.h:207:30
-  Occurrences: 15
-
-Uncategorised
-  Before events:
     CF: ps_tableinit at aacps_tablegen.h:211:5
     CT: make_filters_from_proto at aacps_tablegen.h:74:0
     CF: make_filters_from_proto at aacps_tablegen.h:79:43
@@ -32915,6 +31464,17 @@ Uncategorised
     CF: psy_3gpp_init at aacpsy.c:332:14
     CT: ath at aacpsy.c:293:0
     CF: ath at aacpsy.c:295:22
+    CT: Jump to external code for pow
+    RF: Jump to external code for pow
+    CF: ath at aacpsy.c:296:22
+    CT: Jump to external code for exp
+    RF: Jump to external code for exp
+    CF: ath at aacpsy.c:297:22
+    CT: Jump to external code for exp
+    RF: Jump to external code for exp
+    RF: ath at aacpsy.c:295:5
+    CF: psy_3gpp_init at aacpsy.c:348:20
+    CT: calc_bark at aacpsy.c:283:0
   Occurrences: 1
 
 Uncategorised
@@ -33032,16 +31592,6 @@ Uncategorised
 
 Uncategorised
   Before events:
-    CF: put_audio_specific_config at aacenc.c:112:5
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: put_audio_specific_config at aacenc.c:113:5
-  Occurrences: 1
-
-Uncategorised
-  Before events:
     CF: put_audio_specific_config at aacenc.c:119:5
     CT: put_bits at put_bits.h:248:0
     CF: put_bits at put_bits.h:250:5
@@ -33080,21 +31630,44 @@ Uncategorised
 Uncategorised
   Before events:
     CF: put_bitstream_info at aacenc.c:519:5
+    CT: put_bits at put_bits.h:248:0
+    CF: put_bits at put_bits.h:250:5
+    CT: put_bits_no_assert at put_bits.h:198:0
+    RF: put_bits_no_assert at put_bits.h:241:1
+    RF: put_bits at put_bits.h:251:1
   Occurrences: 5
 
 Uncategorised
   Before events:
     CF: put_bitstream_info at aacenc.c:520:5
+    CT: put_bits at put_bits.h:248:0
+    CF: put_bits at put_bits.h:250:5
+    CT: put_bits_no_assert at put_bits.h:198:0
+    RF: put_bits_no_assert at put_bits.h:241:1
+    RF: put_bits at put_bits.h:251:1
+    CF: put_bitstream_info at aacenc.c:522:9
+    CT: put_bits at put_bits.h:248:0
+    CF: put_bits at put_bits.h:250:5
   Occurrences: 5
 
 Uncategorised
   Before events:
     CF: put_bitstream_info at aacenc.c:522:9
+    CT: put_bits at put_bits.h:248:0
+    CF: put_bits at put_bits.h:250:5
+    CT: put_bits_no_assert at put_bits.h:198:0
+    RF: put_bits_no_assert at put_bits.h:241:1
+    RF: put_bits at put_bits.h:251:1
   Occurrences: 5
 
 Uncategorised
   Before events:
     CF: put_bitstream_info at aacenc.c:523:5
+    CT: put_bits at put_bits.h:248:0
+    CF: put_bits at put_bits.h:250:5
+    CT: put_bits_no_assert at put_bits.h:198:0
+    RF: put_bits_no_assert at put_bits.h:241:1
+    RF: put_bits at put_bits.h:251:1
   Occurrences: 5
 
 Uncategorised
@@ -33122,36 +31695,6 @@ Uncategorised
     RF: av_bswap32 at bswap.h:0:0
     RF: av_bswap64 at bswap.h:75:5
   Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: retry_transfer_wrapper at avio.c:368:13
-    CT: ff_check_interrupt at avio.c:659:0
-    CF: ff_check_interrupt at avio.c:661:16
-    CT: decode_interrupt_cb at ffmpeg.c:508:0
-    RF: decode_interrupt_cb at ffmpeg.c:509:5
-    RF: ff_check_interrupt at avio.c:663:1
-  Occurrences: 5
-
-Uncategorised
-  Before events:
-    CF: retry_transfer_wrapper at avio.c:370:15
-    CT: file_read at file.c:112:0
-    CF: file_read at file.c:116:11
-    CT: Jump to external code for read
-    RF: Jump to external code for read
-    RF: file_read at file.c:122:1
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: retry_transfer_wrapper at avio.c:370:15
-    CT: file_write at file.c:125:0
-    CF: file_write at file.c:129:11
-    CT: Jump to external code for write
-    RF: Jump to external code for write
-    RF: file_write at file.c:130:5
-  Occurrences: 4
 
 Uncategorised
   Before events:
@@ -33219,11 +31762,6 @@ Uncategorised
 
 Uncategorised
   Before events:
-    CF: search_for_pns at aaccoder.c:555:29
-  Occurrences: 24
-
-Uncategorised
-  Before events:
     CF: send_frame_to_filters at ffmpeg.c:2076:15
   Occurrences: 1
 
@@ -33247,49 +31785,6 @@ Uncategorised
     CF: get_bits at get_bits.h:403:5
     CT: av_bswap32 at bswap.h:66:0
   Occurrences: 2
-
-Uncategorised
-  Before events:
-    CF: spectral_to_sample at aacdec_template.c:3057:21
-    CT: apply_channel_coupling at aacdec_template.c:3006:0
-  Occurrences: 3
-
-Uncategorised
-  Before events:
-    CF: spectral_to_sample at aacdec_template.c:3071:21
-    CT: apply_channel_coupling at aacdec_template.c:3006:0
-  Occurrences: 3
-
-Uncategorised
-  Before events:
-    CF: spectral_to_sample at aacdec_template.c:3086:21
-    CT: apply_channel_coupling at aacdec_template.c:3006:0
-  Occurrences: 3
-
-Uncategorised
-  Before events:
-    CF: sws_init_context at utils.c:1528:9
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: sws_init_context at utils.c:1832:28
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: sws_init_context at utils.c:1833:28
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: sws_init_context at utils.c:1862:24
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: sws_init_context at utils.c:1863:24
-  Occurrences: 1
 
 Uncategorised
   Before events:
@@ -33425,12 +31920,6 @@ Uncategorised
 
 Uncategorised
   Before events:
-    CF: url_open_dyn_buf_internal at aviobuf.c:1475:5
-    CT: ffio_init_context at aviobuf.c:89:0
-  Occurrences: 3
-
-Uncategorised
-  Before events:
     CF: validate_codec_tag at movenc.c:1770:49
   Occurrences: 1
 
@@ -33449,63 +31938,8 @@ Uncategorised
 
 Uncategorised
   Before events:
-    CT: Jump to external code for cos
-  Occurrences: 85
-
-Uncategorised
-  Before events:
-    CT: Jump to external code for cos
-  After events:
-    CT: Jump to external code for sincos
-  Occurrences: 85
-
-Uncategorised
-  Before events:
-    CT: Jump to external code for cosf
-  Occurrences: 427
-
-Uncategorised
-  Before events:
-    CT: Jump to external code for cosf
-  After events:
-    CT: Jump to external code for sincosf
-  Occurrences: 427
-
-Uncategorised
-  Before events:
-    CT: Jump to external code for memset
-  Occurrences: 6
-
-Uncategorised
-  Before events:
-    CT: Jump to external code for memset
-  After events:
-    CT: Jump to external code for memcpy
-  Occurrences: 4
-
-Uncategorised
-  Before events:
-    CT: Jump to external code for sin
-  Occurrences: 60
-
-Uncategorised
-  Before events:
-    CT: Jump to external code for sin
-  After events:
-    CT: Jump to external code for sincos
-  Occurrences: 60
-
-Uncategorised
-  Before events:
-    CT: Jump to external code for sinf
-  Occurrences: 163
-
-Uncategorised
-  Before events:
-    CT: Jump to external code for sinf
-  After events:
-    CT: Jump to external code for sincosf
-  Occurrences: 163
+    CT: adts_aac_probe at aacdec.c:35:0
+  Occurrences: 1
 
 Uncategorised
   Before events:
@@ -33520,22 +31954,12 @@ Uncategorised
 Uncategorised
   Before events:
     CT: ath at aacpsy.c:293:0
-  Occurrences: 1279
-
-Uncategorised
-  Before events:
-    CT: av_bswap32 at bswap.h:66:0
-  Occurrences: 2
+  Occurrences: 1280
 
 Uncategorised
   Before events:
     CT: av_buffer_pool_get at buffer.c:388:0
   Occurrences: 1
-
-Uncategorised
-  Before events:
-    CT: av_clipf_c at common.h:388:0
-  Occurrences: 24
 
 Uncategorised
   Before events:
@@ -33574,11 +31998,6 @@ Uncategorised
 
 Uncategorised
   Before events:
-    CT: clear_context at mpegvideo.c:660:0
-  Occurrences: 1
-
-Uncategorised
-  Before events:
     CT: configure_input_video_filter at ffmpeg_filter.c:709:0
   Occurrences: 1
 
@@ -33589,13 +32008,8 @@ Uncategorised
 
 Uncategorised
   Before events:
-    CT: count_paired_channels at aacdec_template.c:241:0
-  Occurrences: 4
-
-Uncategorised
-  Before events:
     CT: decode_residual at h264_cavlc.c:436:0
-  Occurrences: 1632
+  Occurrences: 62
 
 Uncategorised
   Before events:
@@ -33614,13 +32028,8 @@ Uncategorised
 
 Uncategorised
   Before events:
-    CT: encode_mb at mpegvideo_enc.c:2409:0
-  Occurrences: 345
-
-Uncategorised
-  Before events:
     CT: encode_mb_internal at mpegvideo_enc.c:2017:0
-  Occurrences: 345
+  Occurrences: 344
 
 Uncategorised
   Before events:
@@ -33669,11 +32078,6 @@ Uncategorised
 
 Uncategorised
   Before events:
-    CT: ff_mdct15_init at mdct15.c:249:0
-  Occurrences: 6
-
-Uncategorised
-  Before events:
     CT: ff_thread_once at thread.h:180:0
   Occurrences: 1
 
@@ -33701,21 +32105,6 @@ Uncategorised
   Before events:
     CT: get_bits_long at get_bits.h:547:0
   Occurrences: 1
-
-Uncategorised
-  Before events:
-    CT: get_local_pos at utils.c:338:0
-  Occurrences: 4
-
-Uncategorised
-  Before events:
-    CT: get_ue_golomb_31 at golomb.h:121:0
-  Occurrences: 3
-
-Uncategorised
-  Before events:
-    CT: get_vlc2 at get_bits.h:787:0
-  Occurrences: 16464
 
 Uncategorised
   Before events:
@@ -33760,11 +32149,6 @@ Uncategorised
 Uncategorised
   Before events:
     CT: ipmovie_probe at ipmovie.c:594:0
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CT: isAnyRGB at swscale_internal.h:823:0
   Occurrences: 1
 
 Uncategorised
@@ -33834,11 +32218,6 @@ Uncategorised
 
 Uncategorised
   Before events:
-    CT: pred_non_zero_count at h264_cavlc.c:286:0
-  Occurrences: 112
-
-Uncategorised
-  Before events:
     CT: print_final_stats at ffmpeg.c:1391:0
   Occurrences: 1
 
@@ -33849,23 +32228,13 @@ Uncategorised
 
 Uncategorised
   Before events:
-    CT: put_bits at put_bits.h:248:0
-  Occurrences: 29
+    CT: redspark_probe at redspark.c:36:0
+  Occurrences: 1
 
 Uncategorised
   Before events:
     CT: samples_ready at avfilter.c:1048:0
   Occurrences: 3
-
-Uncategorised
-  Before events:
-    CT: show_bits at get_bits.h:447:0
-  Occurrences: 8122
-
-Uncategorised
-  Before events:
-    CT: skip_bits at get_bits.h:468:0
-  Occurrences: 6252
 
 Uncategorised
   Before events:
@@ -33884,71 +32253,6 @@ Uncategorised
 
 Uncategorised
   Before events:
-    RF: Jump to external code for cos
-  Occurrences: 85
-
-Uncategorised
-  Before events:
-    RF: Jump to external code for cos
-  After events:
-    RF: Jump to external code for sincos
-  Occurrences: 85
-
-Uncategorised
-  Before events:
-    RF: Jump to external code for cosf
-  Occurrences: 427
-
-Uncategorised
-  Before events:
-    RF: Jump to external code for cosf
-  After events:
-    RF: Jump to external code for sincosf
-  Occurrences: 427
-
-Uncategorised
-  Before events:
-    RF: Jump to external code for memset
-  Occurrences: 6
-
-Uncategorised
-  Before events:
-    RF: Jump to external code for memset
-  After events:
-    RF: Jump to external code for memcpy
-  Occurrences: 4
-
-Uncategorised
-  Before events:
-    RF: Jump to external code for sin
-  Occurrences: 60
-
-Uncategorised
-  Before events:
-    RF: Jump to external code for sin
-  After events:
-    RF: Jump to external code for sincos
-  Occurrences: 60
-
-Uncategorised
-  Before events:
-    RF: Jump to external code for sinf
-  Occurrences: 163
-
-Uncategorised
-  Before events:
-    RF: Jump to external code for sinf
-  After events:
-    RF: Jump to external code for sincosf
-  Occurrences: 163
-
-Uncategorised
-  Before events:
-    RF: adp_probe at adp.c:46:1
-  Occurrences: 1
-
-Uncategorised
-  Before events:
     RF: adts_aac_probe at aacdec.c:81:1
   Occurrences: 1
 
@@ -33959,47 +32263,17 @@ Uncategorised
 
 Uncategorised
   Before events:
-    RF: amr_probe at amr.c:80:1
-  Occurrences: 1
-
-Uncategorised
-  Before events:
     RF: analyze at mpegts.c:603:5
   Occurrences: 1
 
 Uncategorised
   Before events:
-    RF: apply_channel_coupling at aacdec_template.c:3030:1
-  Occurrences: 9
-
-Uncategorised
-  Before events:
-    RF: argo_asf_probe at argo_asf.c:176:1
-  Occurrences: 1
-
-Uncategorised
-  Before events:
     RF: ath at aacpsy.c:295:5
-  Occurrences: 1279
-
-Uncategorised
-  Before events:
-    RF: av_bswap32 at bswap.h:0:0
-  Occurrences: 2
+  Occurrences: 1280
 
 Uncategorised
   Before events:
     RF: av_buffer_pool_get at buffer.c:411:5
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    RF: av_clipf_c at common.h:0:0
-  Occurrences: 24
-
-Uncategorised
-  Before events:
-    RF: av_cpu_max_align at cpu.c:270:5
   Occurrences: 1
 
 Uncategorised
@@ -34019,11 +32293,6 @@ Uncategorised
 
 Uncategorised
   Before events:
-    RF: avformat_find_stream_info at demux.c:2974:5
-  Occurrences: 1
-
-Uncategorised
-  Before events:
     RF: avio_rb32 at aviobuf.c:795:5
   Occurrences: 152
 
@@ -34039,18 +32308,8 @@ Uncategorised
 
 Uncategorised
   Before events:
-    RF: brender_read_probe at img2_brender_pix.c:39:1
-  Occurrences: 1
-
-Uncategorised
-  Before events:
     RF: calc_bit_demand at aacpsy.c:532:5
   Occurrences: 36
-
-Uncategorised
-  Before events:
-    RF: clear_context at mpegvideo.c:732:1
-  Occurrences: 1
 
 Uncategorised
   Before events:
@@ -34064,28 +32323,8 @@ Uncategorised
 
 Uncategorised
   Before events:
-    RF: count_paired_channels at aacdec_template.c:269:1
-  Occurrences: 4
-
-Uncategorised
-  Before events:
-    RF: decode_ga_specific_config at aacdec_template.c:1010:1
-  Occurrences: 2
-
-Uncategorised
-  Before events:
     RF: decode_residual at h264_cavlc.c:622:1
-  Occurrences: 1632
-
-Uncategorised
-  Before events:
-    RF: decode_scalefactors at aacdec_template.c:1670:1
-  Occurrences: 6
-
-Uncategorised
-  Before events:
-    RF: decode_spectrum_and_dequant at aacdec_template.c:2060:1
-  Occurrences: 6
+  Occurrences: 62
 
 Uncategorised
   Before events:
@@ -34104,13 +32343,8 @@ Uncategorised
 
 Uncategorised
   Before events:
-    RF: encode_mb at mpegvideo_enc.c:0:0
-  Occurrences: 345
-
-Uncategorised
-  Before events:
     RF: encode_mb_internal at mpegvideo_enc.c:0:0
-  Occurrences: 345
+  Occurrences: 344
 
 Uncategorised
   Before events:
@@ -34139,33 +32373,8 @@ Uncategorised
 
 Uncategorised
   Before events:
-    RF: ff_h264_chroma_dc_dequant_idct_8_c at h264idct_template.c:333:1
-  Occurrences: 738
-
-Uncategorised
-  Before events:
     RF: ff_h264_filter_mb at h264_loopfilter.c:847:1
   Occurrences: 12
-
-Uncategorised
-  Before events:
-    RF: ff_h264_idct_dc_add_8_c at h264idct_template.c:157:1
-  Occurrences: 324
-
-Uncategorised
-  Before events:
-    RF: ff_h264_set_erpic at h264_picture.c:217:1
-  Occurrences: 10
-
-Uncategorised
-  Before events:
-    RF: ff_h264_slice_context_init at h264dec.c:268:1
-  Occurrences: 2
-
-Uncategorised
-  Before events:
-    RF: ff_hpeldsp_init at hpeldsp.c:373:1
-  Occurrences: 1
 
 Uncategorised
   Before events:
@@ -34184,58 +32393,13 @@ Uncategorised
 
 Uncategorised
   Before events:
-    RF: ff_mdct15_init at mdct15.c:331:1
-  Occurrences: 6
-
-Uncategorised
-  Before events:
-    RF: ff_network_close at network.c:121:1
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    RF: ff_network_init at network.c:66:5
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    RF: ff_pixblockdsp_init at pixblockdsp.c:117:1
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    RF: ff_qpeldsp_init at qpeldsp.c:818:1
-  Occurrences: 1
-
-Uncategorised
-  Before events:
     RF: ff_thread_once at thread.h:185:5
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    RF: ff_tls_deinit at network.c:56:1
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    RF: ff_tls_init at network.c:43:5
   Occurrences: 1
 
 Uncategorised
   Before events:
     RF: ff_toupper4 at to_upper4.h:31:5
   Occurrences: 157
-
-Uncategorised
-  Before events:
-    RF: ffio_init_context at aviobuf.c:133:1
-  Occurrences: 5
-
-Uncategorised
-  Before events:
-    RF: ffio_open_whitelist at aviobuf.c:1247:1
-  Occurrences: 1
 
 Uncategorised
   Before events:
@@ -34259,46 +32423,6 @@ Uncategorised
 
 Uncategorised
   Before events:
-    RF: get_edit_list_entry at mov.c:3318:1
-  Occurrences: 4
-
-Uncategorised
-  Before events:
-    RF: get_frag_stream_info at mov.c:1202:1
-  Occurrences: 3
-
-Uncategorised
-  Before events:
-    RF: get_local_pos at utils.c:343:5
-  Occurrences: 4
-
-Uncategorised
-  Before events:
-    RF: get_pixels_8_c at pixblockdsp.c:58:1
-  Occurrences: 2070
-
-Uncategorised
-  Before events:
-    RF: get_se_golomb at golomb.h:292:1
-  Occurrences: 15
-
-Uncategorised
-  Before events:
-    RF: get_ue_golomb at golomb.h:99:1
-  Occurrences: 27
-
-Uncategorised
-  Before events:
-    RF: get_ue_golomb_31 at golomb.h:140:5
-  Occurrences: 5
-
-Uncategorised
-  Before events:
-    RF: get_vlc2 at get_bits.h:0:0
-  Occurrences: 16464
-
-Uncategorised
-  Before events:
     RF: h264_init_ps at h264_slice.c:1158:1
   Occurrences: 2
 
@@ -34309,27 +32433,12 @@ Uncategorised
 
 Uncategorised
   Before events:
-    RF: idcin_probe at idcin.c:151:1
-  Occurrences: 1
-
-Uncategorised
-  Before events:
     RF: idctSparseColPut_int16_8bit at simple_idct_template.c:286:1
   Occurrences: 16560
 
 Uncategorised
   Before events:
     RF: ifilter_send_frame at ffmpeg.c:2015:1
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    RF: ifv_probe at ifv.c:51:1
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    RF: init_dynload at cmdutils.c:84:1
   Occurrences: 1
 
 Uncategorised
@@ -34355,11 +32464,6 @@ Uncategorised
 Uncategorised
   Before events:
     RF: ipmovie_probe at ipmovie.c:604:1
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    RF: isAnyRGB at swscale_internal.h:0:0
   Occurrences: 1
 
 Uncategorised
@@ -34414,11 +32518,6 @@ Uncategorised
 
 Uncategorised
   Before events:
-    RF: mtv_probe at mtv.c:99:1
-  Occurrences: 1
-
-Uncategorised
-  Before events:
     RF: nut_probe at nutdec.c:164:1
   Occurrences: 1
 
@@ -34434,51 +32533,6 @@ Uncategorised
 
 Uncategorised
   Before events:
-    RF: pix_sum_c at mpegvideoencdsp.c:78:5
-  Occurrences: 345
-
-Uncategorised
-  Before events:
-    RF: pred16x16_dc_8_c at h264pred_template.c:363:1
-  Occurrences: 10
-
-Uncategorised
-  Before events:
-    RF: pred16x16_left_dc_8_c at h264pred_template.c:378:1
-  Occurrences: 58
-
-Uncategorised
-  Before events:
-    RF: pred16x16_vertical_8_c at h264pred_template.c:319:1
-  Occurrences: 568
-
-Uncategorised
-  Before events:
-    RF: pred8x8_dc_8_c at h264pred_template.c:649:1
-  Occurrences: 1384
-
-Uncategorised
-  Before events:
-    RF: pred8x8_left_dc_8_c at h264pred_template.c:566:1
-  Occurrences: 116
-
-Uncategorised
-  Before events:
-    RF: pred8x8_top_dc_8_c at h264pred_template.c:598:1
-  Occurrences: 64
-
-Uncategorised
-  Before events:
-    RF: pred8x8_vertical_8_c at h264pred_template.c:476:1
-  Occurrences: 188
-
-Uncategorised
-  Before events:
-    RF: pred_non_zero_count at h264_cavlc.c:296:5
-  Occurrences: 112
-
-Uncategorised
-  Before events:
     RF: print_final_stats at ffmpeg.c:1505:1
   Occurrences: 1
 
@@ -34486,11 +32540,6 @@ Uncategorised
   Before events:
     RF: psy_3gpp_analyze_channel at aacpsy.c:846:1
   Occurrences: 36
-
-Uncategorised
-  Before events:
-    RF: put_bits at put_bits.h:251:1
-  Occurrences: 29
 
 Uncategorised
   Before events:
@@ -34523,21 +32572,7 @@ Uncategorised
 Uncategorised
   Before events:
     RF: put_bits at put_bits.h:251:1
-    CF: put_audio_specific_config at aacenc.c:118:5
-    CT: put_bits at put_bits.h:248:0
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    RF: put_bits at put_bits.h:251:1
     CF: put_bitstream_info at aacenc.c:520:5
-    CT: put_bits at put_bits.h:248:0
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    RF: put_bits at put_bits.h:251:1
-    CF: put_bitstream_info at aacenc.c:522:9
     CT: put_bits at put_bits.h:248:0
   Occurrences: 1
 
@@ -34576,28 +32611,8 @@ Uncategorised
 
 Uncategorised
   Before events:
-    RF: retry_transfer_wrapper at avio.c:399:1
-  Occurrences: 5
-
-Uncategorised
-  Before events:
     RF: samples_ready at avfilter.c:1049:5
   Occurrences: 3
-
-Uncategorised
-  Before events:
-    RF: set_default_channel_config at aacdec_template.c:667:1
-  Occurrences: 2
-
-Uncategorised
-  Before events:
-    RF: show_bits at get_bits.h:464:5
-  Occurrences: 8122
-
-Uncategorised
-  Before events:
-    RF: skip_bits at get_bits.h:496:1
-  Occurrences: 6252
 
 Uncategorised
   Before events:
@@ -34614,35 +32629,33 @@ Uncategorised
     RF: validate_codec_tag at movenc.c:1777:1
   Occurrences: 1
 
-Uncategorised
-  Before events:
-    RF: vector_fmul_reverse_c at float_dsp.c:110:1
-  Occurrences: 6
-
 ## Divergences with unique coordinates by type
 
 CoordinatesRemoved
-  Unique divergence coordinates: 613
+  Unique divergence coordinates: 616
 
 CoordinatesChangedSmall
-  Unique divergence coordinates: 893
+  Unique divergence coordinates: 892
+
+CoordinatesChangedLarge
+  Unique divergence coordinates: 120
 
 LibraryCallAdded
-  Unique divergence coordinates: 22
+  Unique divergence coordinates: 13
 
 LibraryCallReplaced
-  Unique divergence coordinates: 31
+  Unique divergence coordinates: 53
 
 LibraryCallRemoved
-  Unique divergence coordinates: 213
+  Unique divergence coordinates: 215
 
 ProgramCallRemoved
-  Unique divergence coordinates: 311
+  Unique divergence coordinates: 300
 
 Uncategorised
-  Unique divergence coordinates: 1948
+  Unique divergence coordinates: 1485
 
 ## Summary
 
-4031 unique divergence coordinates
-1351391 divergence occurrences
+3694 unique divergence coordinates
+1160270 divergence occurrences
