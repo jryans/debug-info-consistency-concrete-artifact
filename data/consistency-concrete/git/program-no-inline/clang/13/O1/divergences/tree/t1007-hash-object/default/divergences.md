@@ -1110,6 +1110,16 @@ ProgramCallRemoved
 
 Uncategorised
   After events:
+    CF: attr_start at attr.c:1143:2
+  Occurrences: 26
+
+Uncategorised
+  After events:
+    CF: attr_start at attr.c:1144:2
+  Occurrences: 26
+
+Uncategorised
+  After events:
     CF: copy_templates_1 at init-db.c:48:3
     CT: strbuf_setlen at strbuf.h:161:0
     RF: strbuf_setlen at strbuf.h:169:1
@@ -1193,6 +1203,11 @@ Uncategorised
 
 Uncategorised
   After events:
+    CF: raw_object_store_new at object.c:526:2
+  Occurrences: 26
+
+Uncategorised
+  After events:
     CT: Jump to external code for puts
   Occurrences: 6
 
@@ -1223,6 +1238,11 @@ Uncategorised
 
 Uncategorised
   After events:
+    RF: dummy_pthread_init at thread-utils.c:111:2
+  Occurrences: 78
+
+Uncategorised
+  After events:
     RF: git_config_set_multivar_in_file_gently at config.c:3447:1
   Occurrences: 24
 
@@ -1235,6 +1255,18 @@ Uncategorised
   After events:
     RF: xopen at wrapper.c:199:1
   Occurrences: 31
+
+Uncategorised
+  Before events:
+    CF: attr_start at attr.c:1143:2
+    CT: dummy_pthread_init at thread-utils.c:101:0
+  Occurrences: 26
+
+Uncategorised
+  Before events:
+    CF: attr_start at attr.c:1144:2
+    CT: dummy_pthread_init at thread-utils.c:101:0
+  Occurrences: 26
 
 Uncategorised
   Before events:
@@ -1307,13 +1339,14 @@ Uncategorised
 
 Uncategorised
   Before events:
-    CT: copy_templates_1 at init-db.c:31:0
-  Occurrences: 18
+    CF: raw_object_store_new at object.c:526:2
+    CT: dummy_pthread_init at thread-utils.c:101:0
+  Occurrences: 26
 
 Uncategorised
   Before events:
-    CT: dummy_pthread_init at thread-utils.c:101:0
-  Occurrences: 78
+    CT: copy_templates_1 at init-db.c:31:0
+  Occurrences: 18
 
 Uncategorised
   Before events:
@@ -1324,6 +1357,11 @@ Uncategorised
   Before events:
     RF: copy_templates_1 at init-db.c:94:1
   Occurrences: 18
+
+Uncategorised
+  Before events:
+    RF: dummy_pthread_init at thread-utils.c:111:2
+  Occurrences: 78
 
 Uncategorised
   Before events:
@@ -1361,9 +1399,9 @@ ProgramCallRemoved
   Unique divergence coordinates: 21
 
 Uncategorised
-  Unique divergence coordinates: 28
+  Unique divergence coordinates: 35
 
 ## Summary
 
-184 unique divergence coordinates
-32476 divergence occurrences
+191 unique divergence coordinates
+32710 divergence occurrences

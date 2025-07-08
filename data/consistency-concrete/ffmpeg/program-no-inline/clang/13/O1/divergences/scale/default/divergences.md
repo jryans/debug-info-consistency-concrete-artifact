@@ -90,20 +90,6 @@ CoordinatesRemoved
 
 CoordinatesRemoved
   Before events:
-    CF: compute_muxer_pkt_fields at mux.c:575:13
-  After events:
-    CF: compute_muxer_pkt_fields at mux.c:0:0
-  Occurrences: 3
-
-CoordinatesRemoved
-  Before events:
-    CF: compute_muxer_pkt_fields at mux.c:579:9
-  After events:
-    CF: compute_muxer_pkt_fields at mux.c:0:0
-  Occurrences: 1
-
-CoordinatesRemoved
-  Before events:
     CF: decode_extension_payload at aacdec_template.c:2597:9
   After events:
     CF: decode_extension_payload at aacdec_template.c:0:0
@@ -2790,6 +2776,13 @@ LibraryCallAdded
     RF: Jump to external code for exp2
   Occurrences: 13
 
+LibraryCallAdded
+  After events:
+    CF: search_for_pns at aaccoder.c:579:5
+    CT: Jump to external code for memcpy
+    RF: Jump to external code for memcpy
+  Occurrences: 36
+
 LibraryCallReplaced
   Before events:
     CF: av_fourcc_make_string at utils.c:84:37
@@ -3263,20 +3256,6 @@ LibraryCallRemoved
     CT: Jump to external code for memcpy
     RF: Jump to external code for memcpy
   Occurrences: 14
-
-LibraryCallRemoved
-  Before events:
-    CF: av_gcd at mathematics.c:47:9
-    CT: Jump to external code for llabs
-    RF: Jump to external code for llabs
-  Occurrences: 31
-
-LibraryCallRemoved
-  Before events:
-    CF: av_gcd at mathematics.c:48:9
-    CT: Jump to external code for llabs
-    RF: Jump to external code for llabs
-  Occurrences: 31
 
 LibraryCallRemoved
   Before events:
@@ -4414,6 +4393,13 @@ LibraryCallRemoved
 
 LibraryCallRemoved
   Before events:
+    CF: search_for_pns at aaccoder.c:579:5
+    CT: Jump to external code for memcpy
+    RF: Jump to external code for memcpy
+  Occurrences: 36
+
+LibraryCallRemoved
+  Before events:
     CF: search_for_quantizers_twoloop at aaccoder_twoloop.h:104:29
     CT: Jump to external code for log2f
     RF: Jump to external code for log2f
@@ -4792,10 +4778,10 @@ ProgramCallRemoved
 
 ProgramCallRemoved
   Before events:
-    CF: psy_3gpp_init at aacpsy.c:361:30
-    CT: av_clipf_c at common.h:389:0
-    RF: av_clipf_c at common.h:393:5
-  Occurrences: 13
+    CF: search_for_pns at aaccoder.c:580:5
+    CT: ff_init_nextband_map at aacenc_utils.h:200:0
+    RF: ff_init_nextband_map at aacenc_utils.h:215:1
+  Occurrences: 36
 
 ProgramCallRemoved
   Before events:
@@ -4862,6 +4848,16 @@ ProgramCallRemoved
 
 Uncategorised
   After events:
+    CF: aac_decode_frame at aacdec_template.c:3509:21
+  Occurrences: 3
+
+Uncategorised
+  After events:
+    CF: aac_decode_frame_int at aacdec_template.c:3275:25
+  Occurrences: 3
+
+Uncategorised
+  After events:
     CF: aac_decode_init at aacdec_template.c:1355:11
   Occurrences: 2
 
@@ -4877,8 +4873,53 @@ Uncategorised
 
 Uncategorised
   After events:
-    CF: av_probe_input_format3 at format.c:169:21
+    CF: aac_encode_frame at aacenc.c:754:21
+  Occurrences: 36
+
+Uncategorised
+  After events:
+    CF: aac_encode_frame at aacenc.c:859:25
+  Occurrences: 15
+
+Uncategorised
+  After events:
+    CF: adjust_frame_pts_to_encoder_tb at ffmpeg.c:779:26
   Occurrences: 3
+
+Uncategorised
+  After events:
+    CF: apply_only_long_window at aacenc.c:148:5
+  Occurrences: 6
+
+Uncategorised
+  After events:
+    CF: av_gcd at mathematics.c:44:10
+  Occurrences: 31
+
+Uncategorised
+  After events:
+    CF: av_gcd at mathematics.c:45:10
+  Occurrences: 31
+
+Uncategorised
+  After events:
+    CF: av_gcd at mathematics.c:53:15
+  Occurrences: 111
+
+Uncategorised
+  After events:
+    CF: av_log_default_callback at log.c:393:19
+  Occurrences: 2
+
+Uncategorised
+  After events:
+    CF: av_probe_input_format3 at format.c:169:21
+  Occurrences: 6
+
+Uncategorised
+  After events:
+    CF: av_reduce at rational.c:40:19
+  Occurrences: 30
 
 Uncategorised
   After events:
@@ -4886,6 +4927,116 @@ Uncategorised
     CT: cffstream at internal.h:413:0
     RF: cffstream at internal.h:414:5
   Occurrences: 20
+
+Uncategorised
+  After events:
+    CF: avformat_network_deinit at utils.c:572:5
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    CF: avformat_network_deinit at utils.c:573:5
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    CF: avformat_network_init at utils.c:561:16
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    CF: avformat_network_init at utils.c:563:16
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    CF: calc_bit_demand at aacpsy.c:506:24
+  Occurrences: 36
+
+Uncategorised
+  After events:
+    CF: calc_bit_demand at aacpsy.c:507:18
+  Occurrences: 36
+
+Uncategorised
+  After events:
+    CF: calc_bit_demand at aacpsy.c:508:18
+  Occurrences: 36
+
+Uncategorised
+  After events:
+    CF: cenc_filter at mov.c:7090:24
+  Occurrences: 3
+
+Uncategorised
+  After events:
+    CF: compute_muxer_pkt_fields at mux.c:0:0
+  Occurrences: 4
+
+Uncategorised
+  After events:
+    CF: dct_init at mpegvideo.c:286:5
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    CF: decode_audio_specific_config_gb at aacdec_template.c:1151:12
+  Occurrences: 2
+
+Uncategorised
+  After events:
+    CF: decode_cpe at aacdec_template.c:2312:35
+  Occurrences: 3
+
+Uncategorised
+  After events:
+    CF: decode_ga_specific_config at aacdec_template.c:940:32
+  Occurrences: 2
+
+Uncategorised
+  After events:
+    CF: decode_ga_specific_config at aacdec_template.c:949:9
+  Occurrences: 2
+
+Uncategorised
+  After events:
+    CF: decode_ga_specific_config at aacdec_template.c:951:22
+  Occurrences: 2
+
+Uncategorised
+  After events:
+    CF: decode_ics at aacdec_template.c:2166:45
+  Occurrences: 6
+
+Uncategorised
+  After events:
+    CF: decode_ics at aacdec_template.c:2180:24
+  Occurrences: 6
+
+Uncategorised
+  After events:
+    CF: decode_ics at aacdec_template.c:2186:28
+  Occurrences: 6
+
+Uncategorised
+  After events:
+    CF: decode_ics_info at aacdec_template.c:1434:13
+  Occurrences: 3
+
+Uncategorised
+  After events:
+    CF: decode_ics_info at aacdec_template.c:1450:35
+  Occurrences: 3
+
+Uncategorised
+  After events:
+    CF: decode_ics_info at aacdec_template.c:1503:42
+  Occurrences: 3
+
+Uncategorised
+  After events:
+    CF: decode_luma_residual at h264_cavlc.c:655:13
+  Occurrences: 628
 
 Uncategorised
   After events:
@@ -4899,13 +5050,253 @@ Uncategorised
 
 Uncategorised
   After events:
+    CF: decode_residual at h264_cavlc.c:476:5
+  Occurrences: 7718
+
+Uncategorised
+  After events:
+    CF: decode_residual at h264_cavlc.c:487:9
+  Occurrences: 5346
+
+Uncategorised
+  After events:
+    CF: decode_residual at h264_cavlc.c:496:47
+  Occurrences: 8
+
+Uncategorised
+  After events:
+    CF: decode_residual at h264_cavlc.c:534:13
+  Occurrences: 18298
+
+Uncategorised
+  After events:
     CF: decode_scalefactors at aacdec_template.c:1615:29
   Occurrences: 6
 
 Uncategorised
   After events:
+    CF: decode_vui_parameters at h264_ps.c:138:38
+  Occurrences: 3
+
+Uncategorised
+  After events:
+    CF: decode_vui_parameters at h264_ps.c:156:9
+  Occurrences: 3
+
+Uncategorised
+  After events:
+    CF: decode_vui_parameters at h264_ps.c:159:43
+  Occurrences: 3
+
+Uncategorised
+  After events:
+    CF: decode_vui_parameters at h264_ps.c:181:9
+  Occurrences: 3
+
+Uncategorised
+  After events:
+    CF: decode_vui_parameters at h264_ps.c:193:37
+  Occurrences: 3
+
+Uncategorised
+  After events:
+    CF: decode_vui_parameters at h264_ps.c:206:38
+  Occurrences: 3
+
+Uncategorised
+  After events:
+    CF: decode_vui_parameters at h264_ps.c:209:44
+  Occurrences: 3
+
+Uncategorised
+  After events:
+    CF: decode_vui_parameters at h264_ps.c:213:44
+  Occurrences: 3
+
+Uncategorised
+  After events:
+    CF: decode_vui_parameters at h264_ps.c:220:36
+  Occurrences: 3
+
+Uncategorised
+  After events:
+    CF: decode_vui_parameters at h264_ps.c:223:39
+  Occurrences: 3
+
+Uncategorised
+  After events:
+    CF: decode_vui_parameters at h264_ps.c:225:9
+  Occurrences: 3
+
+Uncategorised
+  After events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
+  Occurrences: 345
+
+Uncategorised
+  After events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
+  Occurrences: 345
+
+Uncategorised
+  After events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
+  Occurrences: 345
+
+Uncategorised
+  After events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
+  Occurrences: 345
+
+Uncategorised
+  After events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
+  Occurrences: 345
+
+Uncategorised
+  After events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
+  Occurrences: 345
+
+Uncategorised
+  After events:
+    CF: ff_aac_search_for_tns at aacenc_tns.c:169:27
+  Occurrences: 36
+
+Uncategorised
+  After events:
+    CF: ff_aac_search_for_tns at aacenc_tns.c:170:27
+  Occurrences: 36
+
+Uncategorised
+  After events:
+    CF: ff_default_get_video_buffer at video.c:98:53
+  Occurrences: 1
+
+Uncategorised
+  After events:
     CF: ff_h2645_extract_rbsp at h2645_parse.c:97:5
   Occurrences: 2
+
+Uncategorised
+  After events:
+    CF: ff_h264_decode_mb_cavlc at h264_cavlc.c:1167:17
+  Occurrences: 634
+
+Uncategorised
+  After events:
+    CF: ff_h264_decode_mb_cavlc at h264_cavlc.c:1168:17
+  Occurrences: 634
+
+Uncategorised
+  After events:
+    CF: ff_h264_decode_mb_cavlc at h264_cavlc.c:812:21
+  Occurrences: 5856
+
+Uncategorised
+  After events:
+    CF: ff_h264_decode_picture_parameter_set at h264_ps.c:815:30
+  Occurrences: 3
+
+Uncategorised
+  After events:
+    CF: ff_h264_decode_picture_parameter_set at h264_ps.c:816:30
+  Occurrences: 3
+
+Uncategorised
+  After events:
+    CF: ff_h264_decode_picture_parameter_set at h264_ps.c:834:49
+  Occurrences: 3
+
+Uncategorised
+  After events:
+    CF: ff_h264_decode_picture_parameter_set at h264_ps.c:844:49
+  Occurrences: 3
+
+Uncategorised
+  After events:
+    CF: ff_h264_decode_picture_parameter_set at h264_ps.c:845:49
+  Occurrences: 3
+
+Uncategorised
+  After events:
+    CF: ff_h264_decode_picture_parameter_set at h264_ps.c:846:49
+  Occurrences: 3
+
+Uncategorised
+  After events:
+    CF: ff_h264_decode_picture_parameter_set at h264_ps.c:854:30
+  Occurrences: 3
+
+Uncategorised
+  After events:
+    CF: ff_h264_decode_ref_pic_marking at h264_refs.c:842:13
+  Occurrences: 2
+
+Uncategorised
+  After events:
+    CF: ff_h264_decode_seq_parameter_set at h264_ps.c:359:29
+  Occurrences: 3
+
+Uncategorised
+  After events:
+    CF: ff_h264_decode_seq_parameter_set at h264_ps.c:360:29
+  Occurrences: 3
+
+Uncategorised
+  After events:
+    CF: ff_h264_decode_seq_parameter_set at h264_ps.c:361:29
+  Occurrences: 3
+
+Uncategorised
+  After events:
+    CF: ff_h264_decode_seq_parameter_set at h264_ps.c:362:29
+  Occurrences: 3
+
+Uncategorised
+  After events:
+    CF: ff_h264_decode_seq_parameter_set at h264_ps.c:363:29
+  Occurrences: 3
+
+Uncategorised
+  After events:
+    CF: ff_h264_decode_seq_parameter_set at h264_ps.c:364:29
+  Occurrences: 3
+
+Uncategorised
+  After events:
+    CF: ff_h264_decode_seq_parameter_set at h264_ps.c:365:5
+  Occurrences: 3
+
+Uncategorised
+  After events:
+    CF: ff_h264_decode_seq_parameter_set at h264_ps.c:496:43
+  Occurrences: 3
+
+Uncategorised
+  After events:
+    CF: ff_h264_decode_seq_parameter_set at h264_ps.c:500:32
+  Occurrences: 3
+
+Uncategorised
+  After events:
+    CF: ff_h264_decode_seq_parameter_set at h264_ps.c:521:38
+  Occurrences: 3
+
+Uncategorised
+  After events:
+    CF: ff_h264_decode_seq_parameter_set at h264_ps.c:523:17
+  Occurrences: 3
+
+Uncategorised
+  After events:
+    CF: ff_h264_decode_seq_parameter_set at h264_ps.c:572:40
+  Occurrences: 3
+
+Uncategorised
+  After events:
+    CF: ff_h264_sei_decode at h264_sei.c:492:56
+  Occurrences: 3
 
 Uncategorised
   After events:
@@ -4919,8 +5310,48 @@ Uncategorised
 
 Uncategorised
   After events:
+    CF: ff_mpeg4audio_get_config_gb at mpeg4audio.c:123:32
+  Occurrences: 3
+
+Uncategorised
+  After events:
+    CF: ff_mpeg4audio_get_config_gb at mpeg4audio.c:96:27
+  Occurrences: 3
+
+Uncategorised
+  After events:
     CF: ff_mpv_common_init at mpegvideo.c:745:5
   Occurrences: 1
+
+Uncategorised
+  After events:
+    CF: ff_mpv_encode_init at mpegvideo_enc.c:612:9
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    CF: ff_mpv_encode_init at mpegvideo_enc.c:812:5
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    CF: ff_mpv_encode_init at mpegvideo_enc.c:813:5
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    CF: get_bit_length at h2645_parse.c:282:32
+  Occurrences: 10
+
+Uncategorised
+  After events:
+    CF: get_bits_left at get_bits.h:841:31
+  Occurrences: 1080
+
+Uncategorised
+  After events:
+    CF: get_ue_golomb_long at golomb.h:110:5
+  Occurrences: 2
 
 Uncategorised
   After events:
@@ -4952,8 +5383,53 @@ Uncategorised
 
 Uncategorised
   After events:
+    CF: h264_parse_nal_header at h2645_parse.c:321:9
+  Occurrences: 10
+
+Uncategorised
+  After events:
+    CF: h264_slice_header_init at h264_slice.c:1007:9
+  Occurrences: 2
+
+Uncategorised
+  After events:
     CF: h264_slice_header_init at h264_slice.c:975:5
   Occurrences: 2
+
+Uncategorised
+  After events:
+    CF: hl_decode_mb_predict_luma at h264_mb.c:695:41
+  Occurrences: 478
+
+Uncategorised
+  After events:
+    CF: hl_decode_mb_predict_luma at h264_mb.c:704:9
+  Occurrences: 636
+
+Uncategorised
+  After events:
+    CF: hl_decode_mb_simple_8 at h264_mb_template.c:159:17
+  Occurrences: 876
+
+Uncategorised
+  After events:
+    CF: hl_decode_mb_simple_8 at h264_mb_template.c:160:17
+  Occurrences: 876
+
+Uncategorised
+  After events:
+    CF: hl_decode_mb_simple_8 at h264_mb_template.c:237:21
+  Occurrences: 372
+
+Uncategorised
+  After events:
+    CF: hl_decode_mb_simple_8 at h264_mb_template.c:240:21
+  Occurrences: 366
+
+Uncategorised
+  After events:
+    CF: init_get_bits at get_bits.h:655:12
+  Occurrences: 25
 
 Uncategorised
   After events:
@@ -4967,12 +5443,27 @@ Uncategorised
 
 Uncategorised
   After events:
+    CF: main at ffmpeg.c:4521:5
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    CF: mb_var_thread at mpegvideo_enc.c:2646:23
+  Occurrences: 345
+
+Uncategorised
+  After events:
     CF: mpeg4_encode_init_static at mpeg4videoenc.c:1270:5
   Occurrences: 1
 
 Uncategorised
   After events:
     CF: output_configure at aacdec_template.c:544:9
+  Occurrences: 2
+
+Uncategorised
+  After events:
+    CF: parse_nal_units at h264_parser.c:333:9
   Occurrences: 2
 
 Uncategorised
@@ -5027,6 +5518,16 @@ Uncategorised
 
 Uncategorised
   After events:
+    CF: psy_3gpp_analyze_channel at aacpsy.c:727:24
+  Occurrences: 36
+
+Uncategorised
+  After events:
+    CF: psy_3gpp_analyze_channel at aacpsy.c:735:27
+  Occurrences: 24
+
+Uncategorised
+  After events:
     CF: psy_3gpp_init at aacpsy.c:348:20
     CT: calc_bark at aacpsy.c:283:0
     CF: calc_bark at aacpsy.c:284:20
@@ -5043,9 +5544,6 @@ Uncategorised
     CF: psy_3gpp_init at aacpsy.c:355:36
     CT: ff_exp10 at ffmath.h:44:27
     RF: ff_exp10 at ffmath.h:0:0
-    CF: psy_3gpp_init at aacpsy.c:356:36
-    CT: ff_exp10 at ffmath.h:44:27
-    RF: ff_exp10 at ffmath.h:0:0
   Occurrences: 13
 
 Uncategorised
@@ -5053,17 +5551,11 @@ Uncategorised
     CF: psy_3gpp_init at aacpsy.c:356:36
     CT: ff_exp10 at ffmath.h:44:27
     RF: ff_exp10 at ffmath.h:0:0
-    CF: psy_3gpp_init at aacpsy.c:357:36
-    CT: ff_exp10 at ffmath.h:44:27
-    RF: ff_exp10 at ffmath.h:0:0
   Occurrences: 13
 
 Uncategorised
   After events:
     CF: psy_3gpp_init at aacpsy.c:357:36
-    CT: ff_exp10 at ffmath.h:44:27
-    RF: ff_exp10 at ffmath.h:0:0
-    CF: psy_3gpp_init at aacpsy.c:358:36
     CT: ff_exp10 at ffmath.h:44:27
     RF: ff_exp10 at ffmath.h:0:0
   Occurrences: 13
@@ -5073,31 +5565,79 @@ Uncategorised
     CF: psy_3gpp_init at aacpsy.c:358:36
     CT: ff_exp10 at ffmath.h:44:27
     RF: ff_exp10 at ffmath.h:0:0
-    CF: psy_3gpp_init at aacpsy.c:360:22
-    CT: Jump to external code for exp2
-    RF: Jump to external code for exp2
   Occurrences: 13
 
 Uncategorised
   After events:
     CF: psy_3gpp_init at aacpsy.c:361:30
-    CT: av_clipf_c at common.h:393:12
-    RF: av_clipf_c at common.h:393:5
-    CF: psy_3gpp_init at aacpsy.c:355:36
-  Occurrences: 12
+  Occurrences: 61
 
 Uncategorised
   After events:
-    CF: psy_3gpp_init at aacpsy.c:361:30
-    CT: av_clipf_c at common.h:393:12
-    RF: av_clipf_c at common.h:393:5
-    CF: psy_3gpp_init at aacpsy.c:365:24
+    CF: read_obu_with_size at av1dec.c:309:9
   Occurrences: 1
 
 Uncategorised
   After events:
+    CF: read_obu_with_size at av1dec.c:313:22
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    CF: read_obu_with_size at av1dec.c:314:10
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    CF: search_for_pns at aaccoder.c:555:29
+  Occurrences: 36
+
+Uncategorised
+  After events:
+    CF: search_for_pns at aaccoder.c:580:5
+    CT: ff_init_nextband_map at aacenc_utils.h:200:0
+    RF: ff_init_nextband_map at aacenc_utils.h:215:1
+  Occurrences: 36
+
+Uncategorised
+  After events:
+    CF: search_for_pns at aaccoder.c:611:27
+  Occurrences: 684
+
+Uncategorised
+  After events:
+    CF: search_for_quantizers_twoloop at aaccoder_twoloop.h:125:21
+  Occurrences: 34
+
+Uncategorised
+  After events:
     CF: search_for_quantizers_twoloop at aaccoder_twoloop.h:94:22
-  Occurrences: 27
+  Occurrences: 36
+
+Uncategorised
+  After events:
+    CF: sga_probe at sga.c:178:12
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    CF: skip_bits1 at get_bits.h:540:5
+  Occurrences: 2
+
+Uncategorised
+  After events:
+    CF: sniff_channel_order at aacdec_template.c:284:9
+  Occurrences: 2
+
+Uncategorised
+  After events:
+    CF: sniff_channel_order at aacdec_template.c:288:9
+  Occurrences: 2
+
+Uncategorised
+  After events:
+    CF: sniff_channel_order at aacdec_template.c:292:9
+  Occurrences: 2
 
 Uncategorised
   After events:
@@ -5148,6 +5688,16 @@ Uncategorised
   After events:
     CT: av_cpu_max_align at cpu.c:270:5
   Occurrences: 1
+
+Uncategorised
+  After events:
+    CT: av_gcd at mathematics.c:37:0
+  Occurrences: 31
+
+Uncategorised
+  After events:
+    CT: calc_bit_demand at aacpsy.c:496:0
+  Occurrences: 36
 
 Uncategorised
   After events:
@@ -5351,6 +5901,11 @@ Uncategorised
 
 Uncategorised
   After events:
+    CT: search_for_pns at aaccoder.c:543:0
+  Occurrences: 36
+
+Uncategorised
+  After events:
     CT: skip_bits at get_bits.h:492:5
   Occurrences: 5
 
@@ -5391,6 +5946,11 @@ Uncategorised
 
 Uncategorised
   After events:
+    RF: adp_probe at adp.c:46:1
+  Occurrences: 1
+
+Uncategorised
+  After events:
     RF: amr_probe at amr.c:80:1
   Occurrences: 1
 
@@ -5401,8 +5961,23 @@ Uncategorised
 
 Uncategorised
   After events:
+    RF: av_clip_c at common.h:181:1
+  Occurrences: 114
+
+Uncategorised
+  After events:
     RF: av_clipf_c at common.h:393:5
-  Occurrences: 27
+  Occurrences: 962
+
+Uncategorised
+  After events:
+    RF: av_cpu_max_align at cpu.c:270:5
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: av_gcd at mathematics.c:56:1
+  Occurrences: 31
 
 Uncategorised
   After events:
@@ -5411,8 +5986,38 @@ Uncategorised
 
 Uncategorised
   After events:
+    RF: calc_bit_demand at aacpsy.c:532:5
+  Occurrences: 36
+
+Uncategorised
+  After events:
     RF: clear_context at mpegvideo.c:732:1
   Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: count_paired_channels at aacdec_template.c:269:1
+  Occurrences: 6
+
+Uncategorised
+  After events:
+    RF: dctcoef_get at h264_mb.c:602:1
+  Occurrences: 478
+
+Uncategorised
+  After events:
+    RF: ff_ctz_c at intmath.h:121:5
+  Occurrences: 10
+
+Uncategorised
+  After events:
+    RF: ff_ctzll_c at intmath.h:137:5
+  Occurrences: 173
+
+Uncategorised
+  After events:
+    RF: ff_h264_chroma_dc_dequant_idct_8_c at h264idct_template.c:333:1
+  Occurrences: 738
 
 Uncategorised
   After events:
@@ -5421,13 +6026,98 @@ Uncategorised
 
 Uncategorised
   After events:
+    RF: ff_h264_slice_context_init at h264dec.c:268:1
+  Occurrences: 2
+
+Uncategorised
+  After events:
+    RF: ff_hpeldsp_init at hpeldsp.c:373:1
+  Occurrences: 1
+
+Uncategorised
+  After events:
     RF: ff_mdct15_init at mdct15.c:331:1
   Occurrences: 6
 
 Uncategorised
   After events:
+    RF: ff_network_close at network.c:121:1
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: ff_network_init at network.c:66:5
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: ff_pixblockdsp_init at pixblockdsp.c:117:1
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: ff_qpeldsp_init at qpeldsp.c:818:1
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: ff_tls_deinit at network.c:56:1
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: ff_tls_init at network.c:43:5
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: fill_rectangle at rectangle.h:122:1
+  Occurrences: 1896
+
+Uncategorised
+  After events:
+    RF: frac_add at mux.c:89:1
+  Occurrences: 4
+
+Uncategorised
+  After events:
+    RF: get_bits1 at get_bits.h:529:5
+  Occurrences: 6001
+
+Uncategorised
+  After events:
+    RF: get_bits_count at get_bits.h:224:5
+  Occurrences: 1100
+
+Uncategorised
+  After events:
+    RF: get_frag_stream_info at mov.c:1202:1
+  Occurrences: 3
+
+Uncategorised
+  After events:
+    RF: get_pixels_8_c at pixblockdsp.c:58:1
+  Occurrences: 2070
+
+Uncategorised
+  After events:
+    RF: idcin_probe at idcin.c:151:1
+  Occurrences: 1
+
+Uncategorised
+  After events:
     RF: ifv_probe at ifv.c:51:1
   Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: init_dynload at cmdutils.c:84:1
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: init_get_bits_xe at get_bits.h:638:5
+  Occurrences: 25
 
 Uncategorised
   After events:
@@ -5450,12 +6140,160 @@ Uncategorised
   Occurrences: 3
 
 Uncategorised
+  After events:
+    RF: mtv_probe at mtv.c:99:1
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: pix_sum_c at mpegvideoencdsp.c:78:5
+  Occurrences: 345
+
+Uncategorised
+  After events:
+    RF: pred16x16_dc_8_c at h264pred_template.c:363:1
+  Occurrences: 10
+
+Uncategorised
+  After events:
+    RF: pred16x16_left_dc_8_c at h264pred_template.c:378:1
+  Occurrences: 58
+
+Uncategorised
+  After events:
+    RF: pred16x16_vertical_8_c at h264pred_template.c:319:1
+  Occurrences: 568
+
+Uncategorised
+  After events:
+    RF: pred8x8_dc_8_c at h264pred_template.c:649:1
+  Occurrences: 1384
+
+Uncategorised
+  After events:
+    RF: pred8x8_left_dc_8_c at h264pred_template.c:566:1
+  Occurrences: 116
+
+Uncategorised
+  After events:
+    RF: pred8x8_top_dc_8_c at h264pred_template.c:598:1
+  Occurrences: 64
+
+Uncategorised
+  After events:
+    RF: pred8x8_vertical_8_c at h264pred_template.c:476:1
+  Occurrences: 188
+
+Uncategorised
+  After events:
+    RF: search_for_pns at aaccoder.c:682:1
+  Occurrences: 36
+
+Uncategorised
+  After events:
+    RF: skip_bits at get_bits.h:496:1
+  Occurrences: 31367
+
+Uncategorised
+  After events:
+    RF: skip_bits_long at get_bits.h:302:1
+  Occurrences: 2
+
+Uncategorised
+  After events:
+    RF: vector_fmul_reverse_c at float_dsp.c:110:1
+  Occurrences: 6
+
+Uncategorised
+  Before events:
+    CF: aac_decode_frame at aacdec_template.c:3509:21
+    CT: get_bits_count at get_bits.h:220:0
+  Occurrences: 3
+
+Uncategorised
+  Before events:
+    CF: aac_decode_frame_int at aacdec_template.c:3275:25
+    CT: get_bits_count at get_bits.h:220:0
+  Occurrences: 3
+
+Uncategorised
+  Before events:
+    CF: aac_encode_frame at aacenc.c:754:21
+    CT: search_for_pns at aaccoder.c:543:0
+    CF: search_for_pns at aaccoder.c:555:29
+    CT: av_clipf_c at common.h:389:0
+    RF: av_clipf_c at common.h:393:5
+    CF: search_for_pns at aaccoder.c:579:5
+    CT: Jump to external code for memcpy
+    RF: Jump to external code for memcpy
+    CF: search_for_pns at aaccoder.c:580:5
+    CT: ff_init_nextband_map at aacenc_utils.h:200:0
+    RF: ff_init_nextband_map at aacenc_utils.h:215:1
+    CF: search_for_pns at aaccoder.c:611:27
+    CT: av_clipf_c at common.h:389:0
+    RF: av_clipf_c at common.h:393:5
+    CF: search_for_pns at aaccoder.c:611:27
+    CT: av_clipf_c at common.h:389:0
+    RF: av_clipf_c at common.h:393:5
+    CF: search_for_pns at aaccoder.c:611:27
+    CT: av_clipf_c at common.h:389:0
+    RF: av_clipf_c at common.h:393:5
+    CF: search_for_pns at aaccoder.c:611:27
+    CT: av_clipf_c at common.h:389:0
+    RF: av_clipf_c at common.h:393:5
+    CF: search_for_pns at aaccoder.c:611:27
+    CT: av_clipf_c at common.h:389:0
+    RF: av_clipf_c at common.h:393:5
+    CF: search_for_pns at aaccoder.c:611:27
+    CT: av_clipf_c at common.h:389:0
+    RF: av_clipf_c at common.h:393:5
+    CF: search_for_pns at aaccoder.c:611:27
+    [...11 more events...]
+  Occurrences: 36
+
+Uncategorised
+  Before events:
+    CF: aac_encode_frame at aacenc.c:859:25
+    CT: av_clipf_c at common.h:389:0
+  Occurrences: 15
+
+Uncategorised
+  Before events:
+    CF: adjust_frame_pts_to_encoder_tb at ffmpeg.c:779:26
+    CT: av_clip_c at common.h:174:0
+  Occurrences: 3
+
+Uncategorised
+  Before events:
+    CF: apply_only_long_window at aacenc.c:148:5
+    CT: vector_fmul_reverse_c at float_dsp.c:104:0
+  Occurrences: 6
+
+Uncategorised
+  Before events:
+    CF: av_log_default_callback at log.c:393:19
+    CT: av_clip_c at common.h:174:0
+  Occurrences: 2
+
+Uncategorised
+  Before events:
+    CF: av_probe_input_format3 at format.c:169:21
+    CT: adp_probe at adp.c:28:0
+  Occurrences: 1
+
+Uncategorised
   Before events:
     CF: av_probe_input_format3 at format.c:169:21
     CT: amr_probe at amr.c:71:0
     CF: amr_probe at amr.c:76:10
     CT: Jump to external code for memcmp
     RF: Jump to external code for memcmp
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: av_probe_input_format3 at format.c:169:21
+    CT: idcin_probe at idcin.c:96:0
   Occurrences: 1
 
 Uncategorised
@@ -5486,6 +6324,243 @@ Uncategorised
 
 Uncategorised
   Before events:
+    CF: av_probe_input_format3 at format.c:169:21
+    CT: mtv_probe at mtv.c:55:0
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: av_reduce at rational.c:40:19
+    CT: av_gcd at mathematics.c:37:0
+    CF: av_gcd at mathematics.c:44:10
+    CT: ff_ctzll_c at intmath.h:130:0
+    RF: ff_ctzll_c at intmath.h:137:5
+    CF: av_gcd at mathematics.c:45:10
+    CT: ff_ctzll_c at intmath.h:130:0
+    RF: ff_ctzll_c at intmath.h:137:5
+    CF: av_gcd at mathematics.c:47:9
+    CT: Jump to external code for llabs
+    RF: Jump to external code for llabs
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: av_reduce at rational.c:40:19
+    CT: av_gcd at mathematics.c:37:0
+    CF: av_gcd at mathematics.c:44:10
+    CT: ff_ctzll_c at intmath.h:130:0
+    RF: ff_ctzll_c at intmath.h:137:5
+    CF: av_gcd at mathematics.c:45:10
+    CT: ff_ctzll_c at intmath.h:130:0
+    RF: ff_ctzll_c at intmath.h:137:5
+    CF: av_gcd at mathematics.c:47:9
+    CT: Jump to external code for llabs
+    RF: Jump to external code for llabs
+    CF: av_gcd at mathematics.c:48:9
+    CT: Jump to external code for llabs
+  Occurrences: 2
+
+Uncategorised
+  Before events:
+    CF: av_reduce at rational.c:40:19
+    CT: av_gcd at mathematics.c:37:0
+    CF: av_gcd at mathematics.c:44:10
+    CT: ff_ctzll_c at intmath.h:130:0
+    RF: ff_ctzll_c at intmath.h:137:5
+    CF: av_gcd at mathematics.c:45:10
+    CT: ff_ctzll_c at intmath.h:130:0
+    RF: ff_ctzll_c at intmath.h:137:5
+    CF: av_gcd at mathematics.c:47:9
+    CT: Jump to external code for llabs
+    RF: Jump to external code for llabs
+    CF: av_gcd at mathematics.c:48:9
+    CT: Jump to external code for llabs
+    RF: Jump to external code for llabs
+    CF: av_gcd at mathematics.c:53:15
+    CT: ff_ctzll_c at intmath.h:130:0
+    RF: ff_ctzll_c at intmath.h:137:5
+  Occurrences: 20
+
+Uncategorised
+  Before events:
+    CF: av_reduce at rational.c:40:19
+    CT: av_gcd at mathematics.c:37:0
+    CF: av_gcd at mathematics.c:44:10
+    CT: ff_ctzll_c at intmath.h:130:0
+    RF: ff_ctzll_c at intmath.h:137:5
+    CF: av_gcd at mathematics.c:45:10
+    CT: ff_ctzll_c at intmath.h:130:0
+    RF: ff_ctzll_c at intmath.h:137:5
+    CF: av_gcd at mathematics.c:47:9
+    CT: Jump to external code for llabs
+    RF: Jump to external code for llabs
+    CF: av_gcd at mathematics.c:48:9
+    CT: Jump to external code for llabs
+    RF: Jump to external code for llabs
+    CF: av_gcd at mathematics.c:53:15
+    CT: ff_ctzll_c at intmath.h:130:0
+    RF: ff_ctzll_c at intmath.h:137:5
+    CF: av_gcd at mathematics.c:53:15
+    CT: ff_ctzll_c at intmath.h:130:0
+    RF: ff_ctzll_c at intmath.h:137:5
+    CF: av_gcd at mathematics.c:53:15
+    CT: ff_ctzll_c at intmath.h:130:0
+    RF: ff_ctzll_c at intmath.h:137:5
+  Occurrences: 5
+
+Uncategorised
+  Before events:
+    CF: av_reduce at rational.c:40:19
+    CT: av_gcd at mathematics.c:37:0
+    CF: av_gcd at mathematics.c:44:10
+    CT: ff_ctzll_c at intmath.h:130:0
+    RF: ff_ctzll_c at intmath.h:137:5
+    CF: av_gcd at mathematics.c:45:10
+    CT: ff_ctzll_c at intmath.h:130:0
+    RF: ff_ctzll_c at intmath.h:137:5
+    CF: av_gcd at mathematics.c:47:9
+    CT: Jump to external code for llabs
+    RF: Jump to external code for llabs
+    CF: av_gcd at mathematics.c:48:9
+    CT: Jump to external code for llabs
+    RF: Jump to external code for llabs
+    CF: av_gcd at mathematics.c:53:15
+    CT: ff_ctzll_c at intmath.h:130:0
+    RF: ff_ctzll_c at intmath.h:137:5
+    CF: av_gcd at mathematics.c:53:15
+    CT: ff_ctzll_c at intmath.h:130:0
+    RF: ff_ctzll_c at intmath.h:137:5
+    CF: av_gcd at mathematics.c:53:15
+    CT: ff_ctzll_c at intmath.h:130:0
+    RF: ff_ctzll_c at intmath.h:137:5
+    CF: av_gcd at mathematics.c:53:15
+    CT: ff_ctzll_c at intmath.h:130:0
+    RF: ff_ctzll_c at intmath.h:137:5
+    CF: av_gcd at mathematics.c:53:15
+  Occurrences: 2
+
+Uncategorised
+  Before events:
+    CF: avformat_network_deinit at utils.c:572:5
+    CT: ff_network_close at network.c:117:0
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: avformat_network_deinit at utils.c:573:5
+    CT: ff_tls_deinit at network.c:47:0
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: avformat_network_init at utils.c:561:16
+    CT: ff_network_init at network.c:59:0
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: avformat_network_init at utils.c:563:16
+    CT: ff_tls_init at network.c:32:0
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: cenc_filter at mov.c:7090:24
+    CT: get_frag_stream_info at mov.c:1189:0
+  Occurrences: 3
+
+Uncategorised
+  Before events:
+    CF: compute_muxer_pkt_fields at mux.c:575:13
+    CT: frac_add at mux.c:72:0
+  Occurrences: 3
+
+Uncategorised
+  Before events:
+    CF: compute_muxer_pkt_fields at mux.c:579:9
+    CT: frac_add at mux.c:72:0
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: dct_init at mpegvideo.c:286:5
+    CT: ff_hpeldsp_init at hpeldsp.c:339:0
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: decode_audio_specific_config_gb at aacdec_template.c:1151:12
+    CT: get_bits_count at get_bits.h:220:0
+  Occurrences: 2
+
+Uncategorised
+  Before events:
+    CF: decode_cpe at aacdec_template.c:2312:35
+    CT: get_bits1 at get_bits.h:499:0
+  Occurrences: 3
+
+Uncategorised
+  Before events:
+    CF: decode_ga_specific_config at aacdec_template.c:940:32
+    CT: get_bits1 at get_bits.h:499:0
+  Occurrences: 2
+
+Uncategorised
+  Before events:
+    CF: decode_ga_specific_config at aacdec_template.c:949:9
+    CT: get_bits1 at get_bits.h:499:0
+  Occurrences: 2
+
+Uncategorised
+  Before events:
+    CF: decode_ga_specific_config at aacdec_template.c:951:22
+    CT: get_bits1 at get_bits.h:499:0
+  Occurrences: 2
+
+Uncategorised
+  Before events:
+    CF: decode_ics at aacdec_template.c:2166:45
+    CT: get_bits1 at get_bits.h:499:0
+  Occurrences: 6
+
+Uncategorised
+  Before events:
+    CF: decode_ics at aacdec_template.c:2180:24
+    CT: get_bits1 at get_bits.h:499:0
+  Occurrences: 6
+
+Uncategorised
+  Before events:
+    CF: decode_ics at aacdec_template.c:2186:28
+    CT: get_bits1 at get_bits.h:499:0
+  Occurrences: 6
+
+Uncategorised
+  Before events:
+    CF: decode_ics_info at aacdec_template.c:1434:13
+    CT: get_bits1 at get_bits.h:499:0
+  Occurrences: 3
+
+Uncategorised
+  Before events:
+    CF: decode_ics_info at aacdec_template.c:1450:35
+    CT: get_bits1 at get_bits.h:499:0
+  Occurrences: 3
+
+Uncategorised
+  Before events:
+    CF: decode_ics_info at aacdec_template.c:1503:42
+    CT: get_bits1 at get_bits.h:499:0
+  Occurrences: 3
+
+Uncategorised
+  Before events:
+    CF: decode_luma_residual at h264_cavlc.c:655:13
+    CT: fill_rectangle at rectangle.h:41:0
+  Occurrences: 628
+
+Uncategorised
+  Before events:
     CF: decode_nal_units at h264dec.c:767:9
     CT: ff_h264_set_erpic at h264_picture.c:197:0
     CF: ff_h264_set_erpic at h264_picture.c:201:5
@@ -5504,8 +6579,308 @@ Uncategorised
 
 Uncategorised
   Before events:
+    CF: decode_residual at h264_cavlc.c:476:5
+    CT: skip_bits at get_bits.h:468:0
+  Occurrences: 7718
+
+Uncategorised
+  Before events:
+    CF: decode_residual at h264_cavlc.c:487:9
+    CT: skip_bits at get_bits.h:468:0
+  Occurrences: 5346
+
+Uncategorised
+  Before events:
+    CF: decode_residual at h264_cavlc.c:496:47
+    CT: get_bits1 at get_bits.h:499:0
+  Occurrences: 8
+
+Uncategorised
+  Before events:
+    CF: decode_residual at h264_cavlc.c:534:13
+    CT: skip_bits at get_bits.h:468:0
+  Occurrences: 18298
+
+Uncategorised
+  Before events:
+    CF: decode_vui_parameters at h264_ps.c:138:38
+    CT: get_bits1 at get_bits.h:499:0
+  Occurrences: 3
+
+Uncategorised
+  Before events:
+    CF: decode_vui_parameters at h264_ps.c:156:9
+    CT: get_bits1 at get_bits.h:499:0
+  Occurrences: 3
+
+Uncategorised
+  Before events:
+    CF: decode_vui_parameters at h264_ps.c:159:43
+    CT: get_bits1 at get_bits.h:499:0
+  Occurrences: 3
+
+Uncategorised
+  Before events:
+    CF: decode_vui_parameters at h264_ps.c:181:9
+    CT: get_bits1 at get_bits.h:499:0
+  Occurrences: 3
+
+Uncategorised
+  Before events:
+    CF: decode_vui_parameters at h264_ps.c:193:37
+    CT: get_bits1 at get_bits.h:499:0
+  Occurrences: 3
+
+Uncategorised
+  Before events:
+    CF: decode_vui_parameters at h264_ps.c:206:38
+    CT: get_bits1 at get_bits.h:499:0
+  Occurrences: 3
+
+Uncategorised
+  Before events:
+    CF: decode_vui_parameters at h264_ps.c:209:44
+    CT: get_bits1 at get_bits.h:499:0
+  Occurrences: 3
+
+Uncategorised
+  Before events:
+    CF: decode_vui_parameters at h264_ps.c:213:44
+    CT: get_bits1 at get_bits.h:499:0
+  Occurrences: 3
+
+Uncategorised
+  Before events:
+    CF: decode_vui_parameters at h264_ps.c:220:36
+    CT: get_bits1 at get_bits.h:499:0
+  Occurrences: 3
+
+Uncategorised
+  Before events:
+    CF: decode_vui_parameters at h264_ps.c:223:39
+    CT: get_bits1 at get_bits.h:499:0
+  Occurrences: 3
+
+Uncategorised
+  Before events:
+    CF: decode_vui_parameters at h264_ps.c:225:9
+    CT: get_bits1 at get_bits.h:499:0
+  Occurrences: 3
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2133:9
+    CT: get_pixels_8_c at pixblockdsp.c:42:0
+  Occurrences: 345
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2134:9
+    CT: get_pixels_8_c at pixblockdsp.c:42:0
+  Occurrences: 345
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2135:9
+    CT: get_pixels_8_c at pixblockdsp.c:42:0
+  Occurrences: 345
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2136:9
+    CT: get_pixels_8_c at pixblockdsp.c:42:0
+  Occurrences: 345
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2142:13
+    CT: get_pixels_8_c at pixblockdsp.c:42:0
+  Occurrences: 345
+
+Uncategorised
+  Before events:
+    CF: encode_mb_internal at mpegvideo_enc.c:2143:13
+    CT: get_pixels_8_c at pixblockdsp.c:42:0
+  Occurrences: 345
+
+Uncategorised
+  Before events:
+    CF: ff_aac_search_for_tns at aacenc_tns.c:169:27
+    CT: av_clip_c at common.h:174:0
+  Occurrences: 36
+
+Uncategorised
+  Before events:
+    CF: ff_aac_search_for_tns at aacenc_tns.c:170:27
+    CT: av_clip_c at common.h:174:0
+  Occurrences: 36
+
+Uncategorised
+  Before events:
+    CF: ff_default_get_video_buffer at video.c:98:53
+    CT: av_cpu_max_align at cpu.c:255:0
+  Occurrences: 1
+
+Uncategorised
+  Before events:
     CF: ff_h2645_extract_rbsp at h2645_parse.c:137:5
   Occurrences: 2
+
+Uncategorised
+  Before events:
+    CF: ff_h264_decode_mb_cavlc at h264_cavlc.c:1167:17
+    CT: fill_rectangle at rectangle.h:41:0
+  Occurrences: 634
+
+Uncategorised
+  Before events:
+    CF: ff_h264_decode_mb_cavlc at h264_cavlc.c:1168:17
+    CT: fill_rectangle at rectangle.h:41:0
+  Occurrences: 634
+
+Uncategorised
+  Before events:
+    CF: ff_h264_decode_mb_cavlc at h264_cavlc.c:812:21
+    CT: get_bits1 at get_bits.h:499:0
+  Occurrences: 5856
+
+Uncategorised
+  Before events:
+    CF: ff_h264_decode_picture_parameter_set at h264_ps.c:815:30
+    CT: get_bits1 at get_bits.h:499:0
+  Occurrences: 3
+
+Uncategorised
+  Before events:
+    CF: ff_h264_decode_picture_parameter_set at h264_ps.c:816:30
+    CT: get_bits1 at get_bits.h:499:0
+  Occurrences: 3
+
+Uncategorised
+  Before events:
+    CF: ff_h264_decode_picture_parameter_set at h264_ps.c:834:49
+    CT: get_bits1 at get_bits.h:499:0
+  Occurrences: 3
+
+Uncategorised
+  Before events:
+    CF: ff_h264_decode_picture_parameter_set at h264_ps.c:844:49
+    CT: get_bits1 at get_bits.h:499:0
+  Occurrences: 3
+
+Uncategorised
+  Before events:
+    CF: ff_h264_decode_picture_parameter_set at h264_ps.c:845:49
+    CT: get_bits1 at get_bits.h:499:0
+  Occurrences: 3
+
+Uncategorised
+  Before events:
+    CF: ff_h264_decode_picture_parameter_set at h264_ps.c:846:49
+    CT: get_bits1 at get_bits.h:499:0
+  Occurrences: 3
+
+Uncategorised
+  Before events:
+    CF: ff_h264_decode_picture_parameter_set at h264_ps.c:854:30
+    CT: get_bits_count at get_bits.h:220:0
+  Occurrences: 3
+
+Uncategorised
+  Before events:
+    CF: ff_h264_decode_ref_pic_marking at h264_refs.c:842:13
+    CT: get_bits1 at get_bits.h:499:0
+  Occurrences: 2
+
+Uncategorised
+  Before events:
+    CF: ff_h264_decode_seq_parameter_set at h264_ps.c:359:29
+    CT: get_bits1 at get_bits.h:499:0
+  Occurrences: 3
+
+Uncategorised
+  Before events:
+    CF: ff_h264_decode_seq_parameter_set at h264_ps.c:360:29
+    CT: get_bits1 at get_bits.h:499:0
+  Occurrences: 3
+
+Uncategorised
+  Before events:
+    CF: ff_h264_decode_seq_parameter_set at h264_ps.c:361:29
+    CT: get_bits1 at get_bits.h:499:0
+  Occurrences: 3
+
+Uncategorised
+  Before events:
+    CF: ff_h264_decode_seq_parameter_set at h264_ps.c:362:29
+    CT: get_bits1 at get_bits.h:499:0
+  Occurrences: 3
+
+Uncategorised
+  Before events:
+    CF: ff_h264_decode_seq_parameter_set at h264_ps.c:363:29
+    CT: get_bits1 at get_bits.h:499:0
+  Occurrences: 3
+
+Uncategorised
+  Before events:
+    CF: ff_h264_decode_seq_parameter_set at h264_ps.c:364:29
+    CT: get_bits1 at get_bits.h:499:0
+  Occurrences: 3
+
+Uncategorised
+  Before events:
+    CF: ff_h264_decode_seq_parameter_set at h264_ps.c:365:5
+    CT: skip_bits at get_bits.h:468:0
+  Occurrences: 3
+
+Uncategorised
+  Before events:
+    CF: ff_h264_decode_seq_parameter_set at h264_ps.c:496:43
+    CT: get_bits1 at get_bits.h:499:0
+  Occurrences: 3
+
+Uncategorised
+  Before events:
+    CF: ff_h264_decode_seq_parameter_set at h264_ps.c:500:32
+    CT: get_bits1 at get_bits.h:499:0
+  Occurrences: 3
+
+Uncategorised
+  Before events:
+    CF: ff_h264_decode_seq_parameter_set at h264_ps.c:521:38
+    CT: get_bits1 at get_bits.h:499:0
+  Occurrences: 3
+
+Uncategorised
+  Before events:
+    CF: ff_h264_decode_seq_parameter_set at h264_ps.c:523:17
+    CT: get_bits1 at get_bits.h:499:0
+  Occurrences: 3
+
+Uncategorised
+  Before events:
+    CF: ff_h264_decode_seq_parameter_set at h264_ps.c:572:40
+    CT: get_bits1 at get_bits.h:499:0
+  Occurrences: 3
+
+Uncategorised
+  Before events:
+    CF: ff_h264_sei_decode at h264_sei.c:492:56
+    CT: get_bits_count at get_bits.h:220:0
+  Occurrences: 3
+
+Uncategorised
+  Before events:
+    CF: ff_mpeg4audio_get_config_gb at mpeg4audio.c:123:32
+    CT: get_bits_count at get_bits.h:220:0
+  Occurrences: 3
+
+Uncategorised
+  Before events:
+    CF: ff_mpeg4audio_get_config_gb at mpeg4audio.c:96:27
+    CT: get_bits_count at get_bits.h:220:0
+  Occurrences: 3
 
 Uncategorised
   Before events:
@@ -5526,6 +6901,57 @@ Uncategorised
     CF: clear_context at mpegvideo.c:668:5
     CT: Jump to external code for memset
   Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: ff_mpv_encode_init at mpegvideo_enc.c:612:9
+    CT: av_gcd at mathematics.c:37:0
+    CF: av_gcd at mathematics.c:44:10
+    CT: ff_ctzll_c at intmath.h:130:0
+    RF: ff_ctzll_c at intmath.h:137:5
+    CF: av_gcd at mathematics.c:45:10
+    CT: ff_ctzll_c at intmath.h:130:0
+    RF: ff_ctzll_c at intmath.h:137:5
+    CF: av_gcd at mathematics.c:47:9
+    CT: Jump to external code for llabs
+    RF: Jump to external code for llabs
+    CF: av_gcd at mathematics.c:48:9
+    CT: Jump to external code for llabs
+    RF: Jump to external code for llabs
+    CF: av_gcd at mathematics.c:53:15
+    CT: ff_ctzll_c at intmath.h:130:0
+    RF: ff_ctzll_c at intmath.h:137:5
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: ff_mpv_encode_init at mpegvideo_enc.c:812:5
+    CT: ff_pixblockdsp_init at pixblockdsp.c:82:0
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: ff_mpv_encode_init at mpegvideo_enc.c:813:5
+    CT: ff_qpeldsp_init at qpeldsp.c:785:0
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: get_bit_length at h2645_parse.c:282:32
+    CT: ff_ctz_c at intmath.h:116:0
+  Occurrences: 10
+
+Uncategorised
+  Before events:
+    CF: get_bits_left at get_bits.h:841:31
+    CT: get_bits_count at get_bits.h:220:0
+  Occurrences: 1080
+
+Uncategorised
+  Before events:
+    CF: get_ue_golomb_long at golomb.h:110:5
+    CT: skip_bits_long at get_bits.h:292:0
+  Occurrences: 2
 
 Uncategorised
   Before events:
@@ -5569,6 +6995,18 @@ Uncategorised
 
 Uncategorised
   Before events:
+    CF: h264_parse_nal_header at h2645_parse.c:321:9
+    CT: get_bits1 at get_bits.h:499:0
+  Occurrences: 10
+
+Uncategorised
+  Before events:
+    CF: h264_slice_header_init at h264_slice.c:1007:9
+    CT: ff_h264_slice_context_init at h264dec.c:259:0
+  Occurrences: 2
+
+Uncategorised
+  Before events:
     CF: h264_slice_header_init at h264_slice.c:975:5
     CT: init_scan_tables at h264_slice.c:757:0
     CF: init_scan_tables at h264_slice.c:782:9
@@ -5583,6 +7021,108 @@ Uncategorised
     CF: init_scan_tables at h264_slice.c:786:9
     CT: Jump to external code for memcpy
   Occurrences: 2
+
+Uncategorised
+  Before events:
+    CF: hl_decode_mb_predict_luma at h264_mb.c:695:41
+    CT: dctcoef_get at h264_mb.c:597:0
+  Occurrences: 478
+
+Uncategorised
+  Before events:
+    CF: hl_decode_mb_predict_luma at h264_mb.c:704:9
+    CT: pred16x16_dc_8_c at h264pred_template.c:347:0
+  Occurrences: 10
+
+Uncategorised
+  Before events:
+    CF: hl_decode_mb_predict_luma at h264_mb.c:704:9
+    CT: pred16x16_left_dc_8_c at h264pred_template.c:366:0
+  Occurrences: 58
+
+Uncategorised
+  Before events:
+    CF: hl_decode_mb_predict_luma at h264_mb.c:704:9
+    CT: pred16x16_vertical_8_c at h264pred_template.c:304:0
+  Occurrences: 568
+
+Uncategorised
+  Before events:
+    CF: hl_decode_mb_simple_8 at h264_mb_template.c:159:17
+    CT: pred8x8_dc_8_c at h264pred_template.c:623:0
+  Occurrences: 692
+
+Uncategorised
+  Before events:
+    CF: hl_decode_mb_simple_8 at h264_mb_template.c:159:17
+    CT: pred8x8_left_dc_8_c at h264pred_template.c:543:0
+  Occurrences: 58
+
+Uncategorised
+  Before events:
+    CF: hl_decode_mb_simple_8 at h264_mb_template.c:159:17
+    CT: pred8x8_top_dc_8_c at h264pred_template.c:575:0
+  Occurrences: 32
+
+Uncategorised
+  Before events:
+    CF: hl_decode_mb_simple_8 at h264_mb_template.c:159:17
+    CT: pred8x8_vertical_8_c at h264pred_template.c:465:0
+  Occurrences: 94
+
+Uncategorised
+  Before events:
+    CF: hl_decode_mb_simple_8 at h264_mb_template.c:160:17
+    CT: pred8x8_dc_8_c at h264pred_template.c:623:0
+  Occurrences: 692
+
+Uncategorised
+  Before events:
+    CF: hl_decode_mb_simple_8 at h264_mb_template.c:160:17
+    CT: pred8x8_left_dc_8_c at h264pred_template.c:543:0
+  Occurrences: 58
+
+Uncategorised
+  Before events:
+    CF: hl_decode_mb_simple_8 at h264_mb_template.c:160:17
+    CT: pred8x8_top_dc_8_c at h264pred_template.c:575:0
+  Occurrences: 32
+
+Uncategorised
+  Before events:
+    CF: hl_decode_mb_simple_8 at h264_mb_template.c:160:17
+    CT: pred8x8_vertical_8_c at h264pred_template.c:465:0
+  Occurrences: 94
+
+Uncategorised
+  Before events:
+    CF: hl_decode_mb_simple_8 at h264_mb_template.c:237:21
+    CT: ff_h264_chroma_dc_dequant_idct_8_c at h264idct_template.c:313:0
+  Occurrences: 372
+
+Uncategorised
+  Before events:
+    CF: hl_decode_mb_simple_8 at h264_mb_template.c:240:21
+    CT: ff_h264_chroma_dc_dequant_idct_8_c at h264idct_template.c:313:0
+  Occurrences: 366
+
+Uncategorised
+  Before events:
+    CF: init_get_bits at get_bits.h:655:12
+    CT: init_get_bits_xe at get_bits.h:614:0
+  Occurrences: 25
+
+Uncategorised
+  Before events:
+    CF: main at ffmpeg.c:4521:5
+    CT: init_dynload at cmdutils.c:78:0
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: mb_var_thread at mpegvideo_enc.c:2646:23
+    CT: pix_sum_c at mpegvideoencdsp.c:61:0
+  Occurrences: 345
 
 Uncategorised
   Before events:
@@ -5622,6 +7162,12 @@ Uncategorised
 Uncategorised
   Before events:
     CF: output_configure at aacdec_template.c:540:13
+  Occurrences: 2
+
+Uncategorised
+  Before events:
+    CF: parse_nal_units at h264_parser.c:333:9
+    CT: get_bits1 at get_bits.h:499:0
   Occurrences: 2
 
 Uncategorised
@@ -5771,6 +7317,23 @@ Uncategorised
 
 Uncategorised
   Before events:
+    CF: psy_3gpp_analyze_channel at aacpsy.c:727:24
+    CT: calc_bit_demand at aacpsy.c:496:0
+    CF: calc_bit_demand at aacpsy.c:506:24
+    CT: av_clip_c at common.h:174:0
+    RF: av_clip_c at common.h:181:1
+    CF: calc_bit_demand at aacpsy.c:507:18
+    CT: av_clipf_c at common.h:389:0
+  Occurrences: 36
+
+Uncategorised
+  Before events:
+    CF: psy_3gpp_analyze_channel at aacpsy.c:735:27
+    CT: av_clipf_c at common.h:389:0
+  Occurrences: 24
+
+Uncategorised
+  Before events:
     CF: psy_3gpp_init at aacpsy.c:348:20
     CT: calc_bark at aacpsy.c:283:0
     CF: calc_bark at aacpsy.c:284:20
@@ -5781,11 +7344,6 @@ Uncategorised
     RF: Jump to external code for atanf
     RF: calc_bark at aacpsy.c:284:5
   Occurrences: 14
-
-Uncategorised
-  Before events:
-    CF: psy_3gpp_init at aacpsy.c:355:36
-  Occurrences: 12
 
 Uncategorised
   Before events:
@@ -5829,8 +7387,9 @@ Uncategorised
 
 Uncategorised
   Before events:
-    CF: psy_3gpp_init at aacpsy.c:365:24
-  Occurrences: 1
+    CF: psy_3gpp_init at aacpsy.c:361:30
+    CT: av_clipf_c at common.h:389:0
+  Occurrences: 61
 
 Uncategorised
   Before events:
@@ -5894,9 +7453,69 @@ Uncategorised
 
 Uncategorised
   Before events:
+    CF: read_obu_with_size at av1dec.c:309:9
+    CT: get_bits1 at get_bits.h:499:0
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: read_obu_with_size at av1dec.c:313:22
+    CT: get_bits1 at get_bits.h:499:0
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: read_obu_with_size at av1dec.c:314:10
+    CT: get_bits1 at get_bits.h:499:0
+  Occurrences: 1
+
+Uncategorised
+  Before events:
     CF: search_for_quantizers_twoloop at aaccoder_twoloop.h:104:20
     CT: av_clipf_c at common.h:389:0
   Occurrences: 27
+
+Uncategorised
+  Before events:
+    CF: search_for_quantizers_twoloop at aaccoder_twoloop.h:125:21
+    CT: av_clipf_c at common.h:389:0
+  Occurrences: 34
+
+Uncategorised
+  Before events:
+    CF: search_for_quantizers_twoloop at aaccoder_twoloop.h:94:22
+    CT: av_clipf_c at common.h:389:0
+  Occurrences: 9
+
+Uncategorised
+  Before events:
+    CF: sga_probe at sga.c:178:12
+    CT: av_clip_c at common.h:174:0
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: skip_bits1 at get_bits.h:540:5
+    CT: skip_bits at get_bits.h:468:0
+  Occurrences: 2
+
+Uncategorised
+  Before events:
+    CF: sniff_channel_order at aacdec_template.c:284:9
+    CT: count_paired_channels at aacdec_template.c:241:0
+  Occurrences: 2
+
+Uncategorised
+  Before events:
+    CF: sniff_channel_order at aacdec_template.c:288:9
+    CT: count_paired_channels at aacdec_template.c:241:0
+  Occurrences: 2
+
+Uncategorised
+  Before events:
+    CF: sniff_channel_order at aacdec_template.c:292:9
+    CT: count_paired_channels at aacdec_template.c:241:0
+  Occurrences: 2
 
 Uncategorised
   Before events:
@@ -5960,28 +7579,18 @@ Uncategorised
 
 Uncategorised
   Before events:
-    CT: adp_probe at adp.c:28:0
-  Occurrences: 1
-
-Uncategorised
-  Before events:
     CT: ath at aacpsy.c:293:0
   Occurrences: 1280
 
 Uncategorised
   Before events:
-    CT: av_clip_c at common.h:174:0
-  Occurrences: 114
+    CT: av_gcd at mathematics.c:37:0
+  Occurrences: 31
 
 Uncategorised
   Before events:
-    CT: av_clipf_c at common.h:389:0
-  Occurrences: 935
-
-Uncategorised
-  Before events:
-    CT: av_cpu_max_align at cpu.c:255:0
-  Occurrences: 1
+    CT: calc_bit_demand at aacpsy.c:496:0
+  Occurrences: 36
 
 Uncategorised
   Before events:
@@ -5990,118 +7599,8 @@ Uncategorised
 
 Uncategorised
   Before events:
-    CT: count_paired_channels at aacdec_template.c:241:0
-  Occurrences: 6
-
-Uncategorised
-  Before events:
-    CT: dctcoef_get at h264_mb.c:597:0
-  Occurrences: 478
-
-Uncategorised
-  Before events:
-    CT: ff_ctz_c at intmath.h:116:0
-  Occurrences: 10
-
-Uncategorised
-  Before events:
-    CT: ff_ctzll_c at intmath.h:130:0
-  Occurrences: 173
-
-Uncategorised
-  Before events:
-    CT: ff_h264_chroma_dc_dequant_idct_8_c at h264idct_template.c:313:0
-  Occurrences: 738
-
-Uncategorised
-  Before events:
-    CT: ff_h264_slice_context_init at h264dec.c:259:0
-  Occurrences: 2
-
-Uncategorised
-  Before events:
-    CT: ff_hpeldsp_init at hpeldsp.c:339:0
-  Occurrences: 1
-
-Uncategorised
-  Before events:
     CT: ff_mdct15_init at mdct15.c:249:0
   Occurrences: 6
-
-Uncategorised
-  Before events:
-    CT: ff_network_close at network.c:117:0
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CT: ff_network_init at network.c:59:0
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CT: ff_pixblockdsp_init at pixblockdsp.c:82:0
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CT: ff_qpeldsp_init at qpeldsp.c:785:0
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CT: ff_tls_deinit at network.c:47:0
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CT: ff_tls_init at network.c:32:0
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CT: fill_rectangle at rectangle.h:41:0
-  Occurrences: 1896
-
-Uncategorised
-  Before events:
-    CT: frac_add at mux.c:72:0
-  Occurrences: 4
-
-Uncategorised
-  Before events:
-    CT: get_bits1 at get_bits.h:499:0
-  Occurrences: 6001
-
-Uncategorised
-  Before events:
-    CT: get_bits_count at get_bits.h:220:0
-  Occurrences: 1100
-
-Uncategorised
-  Before events:
-    CT: get_frag_stream_info at mov.c:1189:0
-  Occurrences: 3
-
-Uncategorised
-  Before events:
-    CT: get_pixels_8_c at pixblockdsp.c:42:0
-  Occurrences: 2070
-
-Uncategorised
-  Before events:
-    CT: idcin_probe at idcin.c:96:0
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CT: init_dynload at cmdutils.c:78:0
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CT: init_get_bits_xe at get_bits.h:614:0
-  Occurrences: 25
 
 Uncategorised
   Before events:
@@ -6125,63 +7624,8 @@ Uncategorised
 
 Uncategorised
   Before events:
-    CT: mtv_probe at mtv.c:55:0
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CT: pix_sum_c at mpegvideoencdsp.c:61:0
-  Occurrences: 345
-
-Uncategorised
-  Before events:
-    CT: pred16x16_dc_8_c at h264pred_template.c:347:0
-  Occurrences: 10
-
-Uncategorised
-  Before events:
-    CT: pred16x16_left_dc_8_c at h264pred_template.c:366:0
-  Occurrences: 58
-
-Uncategorised
-  Before events:
-    CT: pred16x16_vertical_8_c at h264pred_template.c:304:0
-  Occurrences: 568
-
-Uncategorised
-  Before events:
-    CT: pred8x8_dc_8_c at h264pred_template.c:623:0
-  Occurrences: 1384
-
-Uncategorised
-  Before events:
-    CT: pred8x8_left_dc_8_c at h264pred_template.c:543:0
-  Occurrences: 116
-
-Uncategorised
-  Before events:
-    CT: pred8x8_top_dc_8_c at h264pred_template.c:575:0
-  Occurrences: 64
-
-Uncategorised
-  Before events:
-    CT: pred8x8_vertical_8_c at h264pred_template.c:465:0
-  Occurrences: 188
-
-Uncategorised
-  Before events:
-    CT: skip_bits at get_bits.h:468:0
-  Occurrences: 31367
-
-Uncategorised
-  Before events:
-    CT: skip_bits_long at get_bits.h:292:0
-  Occurrences: 2
-
-Uncategorised
-  Before events:
-    CT: vector_fmul_reverse_c at float_dsp.c:104:0
-  Occurrences: 6
+    CT: search_for_pns at aaccoder.c:543:0
+  Occurrences: 36
 
 Uncategorised
   Before events:
@@ -6245,6 +7689,11 @@ Uncategorised
 
 Uncategorised
   Before events:
+    RF: adp_probe at adp.c:46:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
     RF: amr_probe at amr.c:80:1
   Occurrences: 1
 
@@ -6255,8 +7704,23 @@ Uncategorised
 
 Uncategorised
   Before events:
+    RF: av_clip_c at common.h:181:1
+  Occurrences: 114
+
+Uncategorised
+  Before events:
     RF: av_clipf_c at common.h:393:5
-  Occurrences: 27
+  Occurrences: 962
+
+Uncategorised
+  Before events:
+    RF: av_cpu_max_align at cpu.c:270:5
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: av_gcd at mathematics.c:56:1
+  Occurrences: 31
 
 Uncategorised
   Before events:
@@ -6265,8 +7729,38 @@ Uncategorised
 
 Uncategorised
   Before events:
+    RF: calc_bit_demand at aacpsy.c:532:5
+  Occurrences: 36
+
+Uncategorised
+  Before events:
     RF: clear_context at mpegvideo.c:732:1
   Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: count_paired_channels at aacdec_template.c:269:1
+  Occurrences: 6
+
+Uncategorised
+  Before events:
+    RF: dctcoef_get at h264_mb.c:602:1
+  Occurrences: 478
+
+Uncategorised
+  Before events:
+    RF: ff_ctz_c at intmath.h:121:5
+  Occurrences: 10
+
+Uncategorised
+  Before events:
+    RF: ff_ctzll_c at intmath.h:137:5
+  Occurrences: 173
+
+Uncategorised
+  Before events:
+    RF: ff_h264_chroma_dc_dequant_idct_8_c at h264idct_template.c:333:1
+  Occurrences: 738
 
 Uncategorised
   Before events:
@@ -6275,13 +7769,98 @@ Uncategorised
 
 Uncategorised
   Before events:
+    RF: ff_h264_slice_context_init at h264dec.c:268:1
+  Occurrences: 2
+
+Uncategorised
+  Before events:
+    RF: ff_hpeldsp_init at hpeldsp.c:373:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
     RF: ff_mdct15_init at mdct15.c:331:1
   Occurrences: 6
 
 Uncategorised
   Before events:
+    RF: ff_network_close at network.c:121:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: ff_network_init at network.c:66:5
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: ff_pixblockdsp_init at pixblockdsp.c:117:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: ff_qpeldsp_init at qpeldsp.c:818:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: ff_tls_deinit at network.c:56:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: ff_tls_init at network.c:43:5
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: fill_rectangle at rectangle.h:122:1
+  Occurrences: 1896
+
+Uncategorised
+  Before events:
+    RF: frac_add at mux.c:89:1
+  Occurrences: 4
+
+Uncategorised
+  Before events:
+    RF: get_bits1 at get_bits.h:529:5
+  Occurrences: 6001
+
+Uncategorised
+  Before events:
+    RF: get_bits_count at get_bits.h:224:5
+  Occurrences: 1100
+
+Uncategorised
+  Before events:
+    RF: get_frag_stream_info at mov.c:1202:1
+  Occurrences: 3
+
+Uncategorised
+  Before events:
+    RF: get_pixels_8_c at pixblockdsp.c:58:1
+  Occurrences: 2070
+
+Uncategorised
+  Before events:
+    RF: idcin_probe at idcin.c:151:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
     RF: ifv_probe at ifv.c:51:1
   Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: init_dynload at cmdutils.c:84:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: init_get_bits_xe at get_bits.h:638:5
+  Occurrences: 25
 
 Uncategorised
   Before events:
@@ -6303,30 +7882,95 @@ Uncategorised
     RF: make_filters_from_proto at aacps_tablegen.h:83:1
   Occurrences: 3
 
+Uncategorised
+  Before events:
+    RF: mtv_probe at mtv.c:99:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: pix_sum_c at mpegvideoencdsp.c:78:5
+  Occurrences: 345
+
+Uncategorised
+  Before events:
+    RF: pred16x16_dc_8_c at h264pred_template.c:363:1
+  Occurrences: 10
+
+Uncategorised
+  Before events:
+    RF: pred16x16_left_dc_8_c at h264pred_template.c:378:1
+  Occurrences: 58
+
+Uncategorised
+  Before events:
+    RF: pred16x16_vertical_8_c at h264pred_template.c:319:1
+  Occurrences: 568
+
+Uncategorised
+  Before events:
+    RF: pred8x8_dc_8_c at h264pred_template.c:649:1
+  Occurrences: 1384
+
+Uncategorised
+  Before events:
+    RF: pred8x8_left_dc_8_c at h264pred_template.c:566:1
+  Occurrences: 116
+
+Uncategorised
+  Before events:
+    RF: pred8x8_top_dc_8_c at h264pred_template.c:598:1
+  Occurrences: 64
+
+Uncategorised
+  Before events:
+    RF: pred8x8_vertical_8_c at h264pred_template.c:476:1
+  Occurrences: 188
+
+Uncategorised
+  Before events:
+    RF: search_for_pns at aaccoder.c:682:1
+  Occurrences: 36
+
+Uncategorised
+  Before events:
+    RF: skip_bits at get_bits.h:496:1
+  Occurrences: 31367
+
+Uncategorised
+  Before events:
+    RF: skip_bits_long at get_bits.h:302:1
+  Occurrences: 2
+
+Uncategorised
+  Before events:
+    RF: vector_fmul_reverse_c at float_dsp.c:110:1
+  Occurrences: 6
+
 ## Divergences with unique coordinates by type
 
 CoordinatesRemoved
-  Unique divergence coordinates: 92
+  Unique divergence coordinates: 90
 
 CoordinatesChangedSmall
   Unique divergence coordinates: 301
 
 LibraryCallAdded
-  Unique divergence coordinates: 5
+  Unique divergence coordinates: 6
 
 LibraryCallReplaced
   Unique divergence coordinates: 31
 
 LibraryCallRemoved
-  Unique divergence coordinates: 201
+  Unique divergence coordinates: 200
 
 ProgramCallRemoved
   Unique divergence coordinates: 46
 
 Uncategorised
-  Unique divergence coordinates: 223
+  Unique divergence coordinates: 507
 
 ## Summary
 
-899 unique divergence coordinates
-789310 divergence occurrences
+1181 unique divergence coordinates
+931991 divergence occurrences
