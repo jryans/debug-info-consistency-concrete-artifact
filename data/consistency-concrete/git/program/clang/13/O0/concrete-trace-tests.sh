@@ -17,7 +17,17 @@ version="13"
 echo "## Collecting concrete trace of \`${TARGET_NAME}\` (Clang ${version}, ${level})"
 
 # Tests from the target's test suite to analyse
-tests=(t0001-init t1007-hash-object)
+tests=(
+  t0001-init
+  t1007-hash-object
+  # t1410-reflog: trace collection abysmally slow for some reason
+  # t2402-worktree-list
+  # t3201-branch-contains
+  # t3206-range-diff
+  # t3301-notes
+  # t4002-diff-basic
+  # t5505-remote
+)
 
 # Different trace variants to collect
 # These map to different trace options in `vars.sh`
