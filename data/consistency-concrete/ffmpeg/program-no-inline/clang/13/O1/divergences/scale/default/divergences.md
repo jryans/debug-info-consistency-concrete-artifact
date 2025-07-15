@@ -3238,34 +3238,6 @@ CoordinatesChangedLarge
     RF: avformat_find_stream_info at demux.c:2979:1
   Occurrences: 1
 
-LibraryCallAdded
-  After events:
-    CF: clear_context at mpegvideo.c:664:5
-    CT: Jump to external code for memset
-    RF: Jump to external code for memset
-  Occurrences: 1
-
-LibraryCallAdded
-  After events:
-    CF: ff_h2645_extract_rbsp at h2645_parse.c:97:5
-    CT: Jump to external code for memcpy
-    RF: Jump to external code for memcpy
-  Occurrences: 2
-
-LibraryCallAdded
-  After events:
-    CF: make_filters_from_proto at aacps_tablegen.h:79:43
-    CT: Jump to external code for sincos
-    RF: Jump to external code for sincos
-  Occurrences: 168
-
-LibraryCallAdded
-  After events:
-    CF: psy_3gpp_init at aacpsy.c:360:22
-    CT: Jump to external code for exp2
-    RF: Jump to external code for exp2
-  Occurrences: 13
-
 LibraryCallReplaced
   Before events:
     CF: av_fourcc_make_string at utils.c:84:37
@@ -4152,13 +4124,6 @@ LibraryCallRemoved
 
 LibraryCallRemoved
   Before events:
-    CF: clear_context at mpegvideo.c:663:5
-    CT: Jump to external code for memset
-    RF: Jump to external code for memset
-  Occurrences: 1
-
-LibraryCallRemoved
-  Before events:
     CF: codec_parameters_reset at codec_par.c:36:5
     CT: Jump to external code for memset
     RF: Jump to external code for memset
@@ -4344,7 +4309,7 @@ LibraryCallRemoved
     CF: ff_h2645_extract_rbsp at h2645_parse.c:137:5
     CT: Jump to external code for memset
     RF: Jump to external code for memset
-  Occurrences: 7
+  Occurrences: 5
 
 LibraryCallRemoved
   Before events:
@@ -4688,20 +4653,6 @@ LibraryCallRemoved
     CT: Jump to external code for memcmp
     RF: Jump to external code for memcmp
   Occurrences: 1
-
-LibraryCallRemoved
-  Before events:
-    CF: make_filters_from_proto at aacps_tablegen.h:79:43
-    CT: Jump to external code for cos
-    RF: Jump to external code for cos
-  Occurrences: 84
-
-LibraryCallRemoved
-  Before events:
-    CF: make_filters_from_proto at aacps_tablegen.h:80:43
-    CT: Jump to external code for sin
-    RF: Jump to external code for sin
-  Occurrences: 84
 
 LibraryCallRemoved
   Before events:
@@ -5090,13 +5041,6 @@ LibraryCallRemoved
 
 LibraryCallRemoved
   Before events:
-    CF: psy_3gpp_init at aacpsy.c:360:22
-    CT: Jump to external code for exp2
-    RF: Jump to external code for exp2
-  Occurrences: 13
-
-LibraryCallRemoved
-  Before events:
     CF: psy_lame_window at aacpsy.c:891:9
     CT: Jump to external code for memset
     RF: Jump to external code for memset
@@ -5380,14 +5324,14 @@ ProgramCallRemoved
     CF: av_stream_get_end_pts at mux_utils.c:34:9
     CT: cffstream at internal.h:413:0
     RF: cffstream at internal.h:414:5
-  Occurrences: 20
+  Occurrences: 10
 
 ProgramCallRemoved
   Before events:
     CF: av_stream_get_end_pts at mux_utils.c:35:16
     CT: cffstream at internal.h:413:0
     RF: cffstream at internal.h:414:5
-  Occurrences: 21
+  Occurrences: 11
 
 ProgramCallRemoved
   Before events:
@@ -5559,13 +5503,6 @@ ProgramCallRemoved
 
 ProgramCallRemoved
   Before events:
-    CF: psy_3gpp_init at aacpsy.c:361:30
-    CT: av_clipf_c at common.h:389:0
-    RF: av_clipf_c at common.h:393:5
-  Occurrences: 13
-
-ProgramCallRemoved
-  Before events:
     CF: search_for_quantizers_twoloop at aaccoder_twoloop.h:104:20
     CT: av_clipf_c at common.h:389:0
     RF: av_clipf_c at common.h:393:5
@@ -5634,13 +5571,6 @@ Uncategorised
 
 Uncategorised
   After events:
-    CF: av_stream_get_end_pts at mux_utils.c:34:9
-    CT: cffstream at internal.h:413:0
-    RF: cffstream at internal.h:414:5
-  Occurrences: 20
-
-Uncategorised
-  After events:
     CF: decode_scalefactors at aacdec_template.c:1615:29
   Occurrences: 6
 
@@ -5648,19 +5578,6 @@ Uncategorised
   After events:
     CF: ff_mpv_common_init at mpegvideo.c:745:5
   Occurrences: 1
-
-Uncategorised
-  After events:
-    CF: guess_status_pts at avfilter.c:432:17
-    CT: av_rescale_q at mathematics.c:143:0
-    CF: av_rescale_q at mathematics.c:144:12
-    CT: av_rescale_q_rnd at mathematics.c:136:0
-    CF: av_rescale_q_rnd at mathematics.c:139:12
-    CT: av_rescale_rnd at mathematics.c:59:0
-    RF: av_rescale_rnd at mathematics.c:127:1
-    RF: av_rescale_q_rnd at mathematics.c:139:5
-    RF: av_rescale_q at mathematics.c:144:5
-  Occurrences: 3
 
 Uncategorised
   After events:
@@ -5699,121 +5616,13 @@ Uncategorised
 
 Uncategorised
   After events:
-    CF: psy_3gpp_init at aacpsy.c:348:20
-    CT: calc_bark at aacpsy.c:283:0
-    CF: calc_bark at aacpsy.c:284:20
-    CT: Jump to external code for atanf
-    RF: Jump to external code for atanf
-    CF: calc_bark at aacpsy.c:284:49
-    CT: Jump to external code for atanf
-    RF: Jump to external code for atanf
-    RF: calc_bark at aacpsy.c:284:5
-  Occurrences: 14
-
-Uncategorised
-  After events:
-    CF: psy_3gpp_init at aacpsy.c:355:36
-    CT: ff_exp10 at ffmath.h:44:27
-    RF: ff_exp10 at ffmath.h:0:0
-  Occurrences: 13
-
-Uncategorised
-  After events:
-    CF: psy_3gpp_init at aacpsy.c:356:36
-    CT: ff_exp10 at ffmath.h:44:27
-    RF: ff_exp10 at ffmath.h:0:0
-  Occurrences: 13
-
-Uncategorised
-  After events:
-    CF: psy_3gpp_init at aacpsy.c:357:36
-    CT: ff_exp10 at ffmath.h:44:27
-    RF: ff_exp10 at ffmath.h:0:0
-  Occurrences: 13
-
-Uncategorised
-  After events:
-    CF: psy_3gpp_init at aacpsy.c:358:36
-    CT: ff_exp10 at ffmath.h:44:27
-    RF: ff_exp10 at ffmath.h:0:0
-  Occurrences: 13
-
-Uncategorised
-  After events:
-    CF: psy_3gpp_init at aacpsy.c:361:30
-    CT: av_clipf_c at common.h:393:12
-    RF: av_clipf_c at common.h:393:5
-  Occurrences: 13
-
-Uncategorised
-  After events:
     CT: Jump to external code for memset
   Occurrences: 14
 
 Uncategorised
   After events:
-    CT: ath at aacpsy.c:293:0
-  Occurrences: 128
-
-Uncategorised
-  After events:
-    CT: clear_context at mpegvideo.c:660:0
-  Occurrences: 1
-
-Uncategorised
-  After events:
-    CT: init_scan_tables at h264_slice.c:757:0
-  Occurrences: 2
-
-Uncategorised
-  After events:
-    CT: init_uni_dc_tab at mpeg4videoenc.c:1119:0
-  Occurrences: 1
-
-Uncategorised
-  After events:
-    CT: ipmovie_probe at ipmovie.c:595:27
-  Occurrences: 1
-
-Uncategorised
-  After events:
-    CT: make_filters_from_proto at aacps_tablegen.h:74:0
-  Occurrences: 3
-
-Uncategorised
-  After events:
     RF: Jump to external code for memset
   Occurrences: 14
-
-Uncategorised
-  After events:
-    RF: ath at aacpsy.c:295:5
-  Occurrences: 128
-
-Uncategorised
-  After events:
-    RF: clear_context at mpegvideo.c:732:1
-  Occurrences: 1
-
-Uncategorised
-  After events:
-    RF: init_scan_tables at h264_slice.c:788:1
-  Occurrences: 2
-
-Uncategorised
-  After events:
-    RF: init_uni_dc_tab at mpeg4videoenc.c:1171:1
-  Occurrences: 1
-
-Uncategorised
-  After events:
-    RF: ipmovie_probe at ipmovie.c:604:1
-  Occurrences: 1
-
-Uncategorised
-  After events:
-    RF: make_filters_from_proto at aacps_tablegen.h:83:1
-  Occurrences: 3
 
 Uncategorised
   Before events:
@@ -5863,7 +5672,7 @@ Uncategorised
     RF: av_rescale_rnd at mathematics.c:127:1
     RF: av_rescale_q_rnd at mathematics.c:139:5
     RF: av_rescale_q at mathematics.c:144:5
-  Occurrences: 7
+  Occurrences: 4
 
 Uncategorised
   Before events:
@@ -6024,59 +5833,6 @@ Uncategorised
 
 Uncategorised
   Before events:
-    CF: psy_3gpp_init at aacpsy.c:348:20
-    CT: calc_bark at aacpsy.c:283:0
-    CF: calc_bark at aacpsy.c:284:20
-    CT: Jump to external code for atanf
-    RF: Jump to external code for atanf
-    CF: calc_bark at aacpsy.c:284:49
-    CT: Jump to external code for atanf
-    RF: Jump to external code for atanf
-    RF: calc_bark at aacpsy.c:284:5
-  Occurrences: 14
-
-Uncategorised
-  Before events:
-    CF: psy_3gpp_init at aacpsy.c:355:36
-    CT: ff_exp10 at ffmath.h:43:0
-    CF: ff_exp10 at ffmath.h:44:12
-    CT: Jump to external code for exp2
-    RF: Jump to external code for exp2
-    RF: ff_exp10 at ffmath.h:44:5
-  Occurrences: 13
-
-Uncategorised
-  Before events:
-    CF: psy_3gpp_init at aacpsy.c:356:36
-    CT: ff_exp10 at ffmath.h:43:0
-    CF: ff_exp10 at ffmath.h:44:12
-    CT: Jump to external code for exp2
-    RF: Jump to external code for exp2
-    RF: ff_exp10 at ffmath.h:44:5
-  Occurrences: 13
-
-Uncategorised
-  Before events:
-    CF: psy_3gpp_init at aacpsy.c:357:36
-    CT: ff_exp10 at ffmath.h:43:0
-    CF: ff_exp10 at ffmath.h:44:12
-    CT: Jump to external code for exp2
-    RF: Jump to external code for exp2
-    RF: ff_exp10 at ffmath.h:44:5
-  Occurrences: 13
-
-Uncategorised
-  Before events:
-    CF: psy_3gpp_init at aacpsy.c:358:36
-    CT: ff_exp10 at ffmath.h:43:0
-    CF: ff_exp10 at ffmath.h:44:12
-    CT: Jump to external code for exp2
-    RF: Jump to external code for exp2
-    RF: ff_exp10 at ffmath.h:44:5
-  Occurrences: 13
-
-Uncategorised
-  Before events:
     CF: psy_3gpp_init at aacpsy.c:365:24
     CT: ath at aacpsy.c:293:0
     CF: ath at aacpsy.c:295:22
@@ -6138,62 +5894,12 @@ Uncategorised
 Uncategorised
   Before events:
     CT: ath at aacpsy.c:293:0
-  Occurrences: 256
-
-Uncategorised
-  Before events:
-    CT: clear_context at mpegvideo.c:660:0
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CT: init_scan_tables at h264_slice.c:757:0
-  Occurrences: 2
-
-Uncategorised
-  Before events:
-    CT: init_uni_dc_tab at mpeg4videoenc.c:1119:0
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CT: ipmovie_probe at ipmovie.c:594:0
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CT: make_filters_from_proto at aacps_tablegen.h:74:0
-  Occurrences: 3
+  Occurrences: 128
 
 Uncategorised
   Before events:
     RF: ath at aacpsy.c:295:5
-  Occurrences: 256
-
-Uncategorised
-  Before events:
-    RF: clear_context at mpegvideo.c:732:1
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    RF: init_scan_tables at h264_slice.c:788:1
-  Occurrences: 2
-
-Uncategorised
-  Before events:
-    RF: init_uni_dc_tab at mpeg4videoenc.c:1171:1
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    RF: ipmovie_probe at ipmovie.c:604:1
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    RF: make_filters_from_proto at aacps_tablegen.h:83:1
-  Occurrences: 3
+  Occurrences: 128
 
 ## Divergences with unique coordinates by type
 
@@ -6206,22 +5912,19 @@ CoordinatesChangedSmall
 CoordinatesChangedLarge
   Unique divergence coordinates: 67
 
-LibraryCallAdded
-  Unique divergence coordinates: 4
-
 LibraryCallReplaced
   Unique divergence coordinates: 53
 
 LibraryCallRemoved
-  Unique divergence coordinates: 208
+  Unique divergence coordinates: 204
 
 ProgramCallRemoved
-  Unique divergence coordinates: 46
+  Unique divergence coordinates: 45
 
 Uncategorised
-  Unique divergence coordinates: 61
+  Unique divergence coordinates: 26
 
 ## Summary
 
-834 unique divergence coordinates
-731717 divergence occurrences
+790 unique divergence coordinates
+730601 divergence occurrences

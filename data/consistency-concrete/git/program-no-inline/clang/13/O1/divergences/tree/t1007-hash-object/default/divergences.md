@@ -571,48 +571,6 @@ CoordinatesChangedLarge
     RF: xopen at wrapper.c:199:1
   Occurrences: 31
 
-LibraryCallAdded
-  After events:
-    CF: copy_templates_1 at init-db.c:44:15
-    CT: Jump to external code for readdir64
-    RF: Jump to external code for readdir64
-  Occurrences: 57
-
-LibraryCallAdded
-  After events:
-    CF: copy_templates_1 at init-db.c:55:7
-    CT: Jump to external code for lstat64
-    RF: Jump to external code for lstat64
-  Occurrences: 12
-
-LibraryCallAdded
-  After events:
-    CF: copy_templates_1 at init-db.c:56:8
-    CT: Jump to external code for __errno_location
-    RF: Jump to external code for __errno_location
-  Occurrences: 12
-
-LibraryCallAdded
-  After events:
-    CF: copy_templates_1 at init-db.c:62:7
-    CT: Jump to external code for lstat64
-    RF: Jump to external code for lstat64
-  Occurrences: 12
-
-LibraryCallAdded
-  After events:
-    CF: copy_templates_1 at init-db.c:66:18
-    CT: Jump to external code for opendir
-    RF: Jump to external code for opendir
-  Occurrences: 6
-
-LibraryCallAdded
-  After events:
-    CF: copy_templates_1 at init-db.c:72:4
-    CT: Jump to external code for closedir
-    RF: Jump to external code for closedir
-  Occurrences: 6
-
 LibraryCallReplaced
   Before events:
     CF: _ at gettext.h:48:9
@@ -714,48 +672,6 @@ LibraryCallRemoved
     CF: copy_templates at init-db.c:101:27
     CT: Jump to external code for memset
     RF: Jump to external code for memset
-  Occurrences: 6
-
-LibraryCallRemoved
-  Before events:
-    CF: copy_templates_1 at init-db.c:44:15
-    CT: Jump to external code for readdir64
-    RF: Jump to external code for readdir64
-  Occurrences: 57
-
-LibraryCallRemoved
-  Before events:
-    CF: copy_templates_1 at init-db.c:55:7
-    CT: Jump to external code for lstat64
-    RF: Jump to external code for lstat64
-  Occurrences: 12
-
-LibraryCallRemoved
-  Before events:
-    CF: copy_templates_1 at init-db.c:56:8
-    CT: Jump to external code for __errno_location
-    RF: Jump to external code for __errno_location
-  Occurrences: 12
-
-LibraryCallRemoved
-  Before events:
-    CF: copy_templates_1 at init-db.c:62:7
-    CT: Jump to external code for lstat64
-    RF: Jump to external code for lstat64
-  Occurrences: 12
-
-LibraryCallRemoved
-  Before events:
-    CF: copy_templates_1 at init-db.c:66:18
-    CT: Jump to external code for opendir
-    RF: Jump to external code for opendir
-  Occurrences: 6
-
-LibraryCallRemoved
-  Before events:
-    CF: copy_templates_1 at init-db.c:72:4
-    CT: Jump to external code for closedir
-    RF: Jump to external code for closedir
   Occurrences: 6
 
 LibraryCallRemoved
@@ -1040,20 +956,6 @@ ProgramCallRemoved
 
 ProgramCallRemoved
   Before events:
-    CF: copy_templates_1 at init-db.c:48:3
-    CT: strbuf_setlen at strbuf.h:161:0
-    RF: strbuf_setlen at strbuf.h:169:1
-  Occurrences: 38
-
-ProgramCallRemoved
-  Before events:
-    CF: copy_templates_1 at init-db.c:49:3
-    CT: strbuf_setlen at strbuf.h:161:0
-    RF: strbuf_setlen at strbuf.h:169:1
-  Occurrences: 38
-
-ProgramCallRemoved
-  Before events:
     CF: die_builtin at usage.c:71:29
     CT: get_die_message_routine at usage.c:128:0
     RF: get_die_message_routine at usage.c:129:2
@@ -1131,84 +1033,6 @@ ProgramCallRemoved
 
 Uncategorised
   After events:
-    CF: copy_templates_1 at init-db.c:48:3
-    CT: strbuf_setlen at strbuf.h:161:0
-    RF: strbuf_setlen at strbuf.h:169:1
-  Occurrences: 38
-
-Uncategorised
-  After events:
-    CF: copy_templates_1 at init-db.c:49:3
-    CT: strbuf_setlen at strbuf.h:161:0
-    RF: strbuf_setlen at strbuf.h:169:1
-  Occurrences: 38
-
-Uncategorised
-  After events:
-    CF: copy_templates_1 at init-db.c:53:3
-    CT: strbuf_addstr at strbuf.h:304:0
-    CF: strbuf_addstr at strbuf.h:305:20
-    CT: Jump to external code for strlen
-    RF: Jump to external code for strlen
-    CF: strbuf_addstr at strbuf.h:305:2
-    CT: strbuf_add at strbuf.c:297:0
-    CF: strbuf_add at strbuf.c:298:2
-    CT: strbuf_grow at strbuf.c:92:0
-    RF: strbuf_grow at strbuf.c:102:1
-    CF: strbuf_add at strbuf.c:299:2
-    CT: Jump to external code for memcpy
-    RF: Jump to external code for memcpy
-    CF: strbuf_add at strbuf.c:300:2
-    CT: strbuf_setlen at strbuf.h:161:0
-    RF: strbuf_setlen at strbuf.h:169:1
-    RF: strbuf_add at strbuf.c:301:1
-    RF: strbuf_addstr at strbuf.h:306:1
-  Occurrences: 12
-
-Uncategorised
-  After events:
-    CF: copy_templates_1 at init-db.c:54:3
-    CT: strbuf_addstr at strbuf.h:304:0
-    CF: strbuf_addstr at strbuf.h:305:20
-    CT: Jump to external code for strlen
-    RF: Jump to external code for strlen
-    CF: strbuf_addstr at strbuf.h:305:2
-    CT: strbuf_add at strbuf.c:297:0
-    CF: strbuf_add at strbuf.c:298:2
-    CT: strbuf_grow at strbuf.c:92:0
-    RF: strbuf_grow at strbuf.c:102:1
-    CF: strbuf_add at strbuf.c:299:2
-    CT: Jump to external code for memcpy
-    RF: Jump to external code for memcpy
-    CF: strbuf_add at strbuf.c:300:2
-    CT: strbuf_setlen at strbuf.h:161:0
-    RF: strbuf_setlen at strbuf.h:169:1
-    RF: strbuf_add at strbuf.c:301:1
-    RF: strbuf_addstr at strbuf.h:306:1
-  Occurrences: 12
-
-Uncategorised
-  After events:
-    CF: copy_templates_1 at init-db.c:69:4
-    CT: strbuf_addch at strbuf.h:229:0
-    CF: strbuf_addch at strbuf.h:230:7
-    CT: strbuf_avail at strbuf.h:141:13
-    RF: strbuf_avail at strbuf.h:141:2
-    RF: strbuf_addch at strbuf.h:234:1
-  Occurrences: 6
-
-Uncategorised
-  After events:
-    CF: copy_templates_1 at init-db.c:70:4
-    CT: strbuf_addch at strbuf.h:229:0
-    CF: strbuf_addch at strbuf.h:230:7
-    CT: strbuf_avail at strbuf.h:141:13
-    RF: strbuf_avail at strbuf.h:141:2
-    RF: strbuf_addch at strbuf.h:234:1
-  Occurrences: 6
-
-Uncategorised
-  After events:
     CF: copy_templates_1 at init-db.c:71:4
   Occurrences: 7
 
@@ -1219,117 +1043,13 @@ Uncategorised
 
 Uncategorised
   After events:
-    CT: copy_templates_1 at init-db.c:31:0
-  Occurrences: 18
-
-Uncategorised
-  After events:
-    CT: safe_create_dir at path.c:920:0
-  Occurrences: 15
-
-Uncategorised
-  After events:
     RF: Jump to external code for puts
-  Occurrences: 6
-
-Uncategorised
-  After events:
-    RF: copy_templates_1 at init-db.c:94:1
-  Occurrences: 18
-
-Uncategorised
-  After events:
-    RF: safe_create_dir at path.c:929:1
-  Occurrences: 15
-
-Uncategorised
-  Before events:
-    CF: copy_templates_1 at init-db.c:53:3
-    CT: strbuf_addstr at strbuf.h:304:0
-    CF: strbuf_addstr at strbuf.h:305:20
-    CT: Jump to external code for strlen
-    RF: Jump to external code for strlen
-    CF: strbuf_addstr at strbuf.h:305:2
-    CT: strbuf_add at strbuf.c:297:0
-    CF: strbuf_add at strbuf.c:298:2
-    CT: strbuf_grow at strbuf.c:92:0
-    RF: strbuf_grow at strbuf.c:102:1
-    CF: strbuf_add at strbuf.c:299:2
-    CT: Jump to external code for memcpy
-    RF: Jump to external code for memcpy
-    CF: strbuf_add at strbuf.c:300:2
-    CT: strbuf_setlen at strbuf.h:161:0
-    RF: strbuf_setlen at strbuf.h:169:1
-    RF: strbuf_add at strbuf.c:301:1
-    RF: strbuf_addstr at strbuf.h:306:1
-  Occurrences: 12
-
-Uncategorised
-  Before events:
-    CF: copy_templates_1 at init-db.c:54:3
-    CT: strbuf_addstr at strbuf.h:304:0
-    CF: strbuf_addstr at strbuf.h:305:20
-    CT: Jump to external code for strlen
-    RF: Jump to external code for strlen
-    CF: strbuf_addstr at strbuf.h:305:2
-    CT: strbuf_add at strbuf.c:297:0
-    CF: strbuf_add at strbuf.c:298:2
-    CT: strbuf_grow at strbuf.c:92:0
-    RF: strbuf_grow at strbuf.c:102:1
-    CF: strbuf_add at strbuf.c:299:2
-    CT: Jump to external code for memcpy
-    RF: Jump to external code for memcpy
-    CF: strbuf_add at strbuf.c:300:2
-    CT: strbuf_setlen at strbuf.h:161:0
-    RF: strbuf_setlen at strbuf.h:169:1
-    RF: strbuf_add at strbuf.c:301:1
-    RF: strbuf_addstr at strbuf.h:306:1
-  Occurrences: 12
-
-Uncategorised
-  Before events:
-    CF: copy_templates_1 at init-db.c:69:4
-    CT: strbuf_addch at strbuf.h:229:0
-    CF: strbuf_addch at strbuf.h:230:7
-    CT: strbuf_avail at strbuf.h:140:0
-    RF: strbuf_avail at strbuf.h:141:2
-    RF: strbuf_addch at strbuf.h:234:1
-  Occurrences: 6
-
-Uncategorised
-  Before events:
-    CF: copy_templates_1 at init-db.c:70:4
-    CT: strbuf_addch at strbuf.h:229:0
-    CF: strbuf_addch at strbuf.h:230:7
-    CT: strbuf_avail at strbuf.h:140:0
-    RF: strbuf_avail at strbuf.h:141:2
-    RF: strbuf_addch at strbuf.h:234:1
   Occurrences: 6
 
 Uncategorised
   Before events:
     CF: copy_templates_1 at init-db.c:71:4
   Occurrences: 7
-
-Uncategorised
-  Before events:
-    CT: copy_templates_1 at init-db.c:31:0
-  Occurrences: 18
-
-Uncategorised
-  Before events:
-    CT: safe_create_dir at path.c:920:0
-  Occurrences: 15
-
-Uncategorised
-  Before events:
-    RF: copy_templates_1 at init-db.c:94:1
-  Occurrences: 18
-
-Uncategorised
-  Before events:
-    RF: safe_create_dir at path.c:929:1
-  Occurrences: 15
 
 ## Divergences with unique coordinates by type
 
@@ -1342,22 +1062,19 @@ CoordinatesChangedSmall
 CoordinatesChangedLarge
   Unique divergence coordinates: 3
 
-LibraryCallAdded
-  Unique divergence coordinates: 6
-
 LibraryCallReplaced
   Unique divergence coordinates: 3
 
 LibraryCallRemoved
-  Unique divergence coordinates: 48
+  Unique divergence coordinates: 42
 
 ProgramCallRemoved
-  Unique divergence coordinates: 21
+  Unique divergence coordinates: 19
 
 Uncategorised
-  Unique divergence coordinates: 22
+  Unique divergence coordinates: 4
 
 ## Summary
 
-181 unique divergence coordinates
-32343 divergence occurrences
+149 unique divergence coordinates
+31777 divergence occurrences

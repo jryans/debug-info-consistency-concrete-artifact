@@ -4274,118 +4274,6 @@ CoordinatesChangedLarge
     RF: xopen at wrapper.c:199:1
   Occurrences: 31
 
-LibraryCallAdded
-  After events:
-    CF: copy_templates_1 at init-db.c:44:15
-    CT: Jump to external code for readdir64
-    RF: Jump to external code for readdir64
-  Occurrences: 24
-
-LibraryCallAdded
-  After events:
-    CF: copy_templates_1 at init-db.c:55:7
-    CT: Jump to external code for lstat64
-    RF: Jump to external code for lstat64
-  Occurrences: 6
-
-LibraryCallAdded
-  After events:
-    CF: copy_templates_1 at init-db.c:56:8
-    CT: Jump to external code for __errno_location
-    RF: Jump to external code for __errno_location
-  Occurrences: 6
-
-LibraryCallAdded
-  After events:
-    CF: copy_templates_1 at init-db.c:62:7
-    CT: Jump to external code for lstat64
-    RF: Jump to external code for lstat64
-  Occurrences: 6
-
-LibraryCallAdded
-  After events:
-    CF: copy_templates_1 at init-db.c:66:18
-    CT: Jump to external code for opendir
-    RF: Jump to external code for opendir
-  Occurrences: 6
-
-LibraryCallAdded
-  After events:
-    CF: copy_templates_1 at init-db.c:72:4
-    CT: Jump to external code for closedir
-    RF: Jump to external code for closedir
-  Occurrences: 6
-
-LibraryCallAdded
-  After events:
-    CF: create_default_files at init-db.c:217:2
-    CT: Jump to external code for free
-    RF: Jump to external code for free
-  Occurrences: 6
-
-LibraryCallAdded
-  After events:
-    CF: create_default_files at init-db.c:253:13
-    CT: Jump to external code for access
-    RF: Jump to external code for access
-  Occurrences: 6
-
-LibraryCallAdded
-  After events:
-    CF: create_default_files at init-db.c:254:8
-    CT: Jump to external code for readlink
-    RF: Jump to external code for readlink
-  Occurrences: 6
-
-LibraryCallAdded
-  After events:
-    CF: get_builtin at git.c:640:8
-    CT: Jump to external code for strcmp
-    RF: Jump to external code for strcmp
-  Occurrences: 1424
-
-LibraryCallAdded
-  After events:
-    CF: handle_builtin at git.c:703:19
-    CT: Jump to external code for strcmp
-    RF: Jump to external code for strcmp
-  Occurrences: 26
-
-LibraryCallAdded
-  After events:
-    CF: parse_attr_line at attr.c:343:14
-    CT: Jump to external code for strspn
-    RF: Jump to external code for strspn
-  Occurrences: 1
-
-LibraryCallAdded
-  After events:
-    CF: parse_attr_line at attr.c:352:13
-    CT: Jump to external code for strcspn
-    RF: Jump to external code for strcspn
-  Occurrences: 1
-
-LibraryCallAdded
-  After events:
-    CF: parse_attr_line at attr.c:365:11
-    CT: Jump to external code for strspn
-    RF: Jump to external code for strspn
-  Occurrences: 1
-
-LibraryCallAdded
-  After events:
-    CF: parse_attr_line at attr.c:366:13
-    CT: Jump to external code for strcspn
-    RF: Jump to external code for strcspn
-  Occurrences: 1
-
-LibraryCallAdded
-  After events:
-    CF: safe_create_leading_directories_1 at object-file.c:367:8
-    CT: Jump to external code for stat64
-    RF: Jump to external code for stat64
-  Occurrences: 5
-
 LibraryCallReplaced
   Before events:
     CF: _ at gettext.h:48:9
@@ -4491,80 +4379,10 @@ LibraryCallRemoved
 
 LibraryCallRemoved
   Before events:
-    CF: copy_templates_1 at init-db.c:44:15
-    CT: Jump to external code for readdir64
-    RF: Jump to external code for readdir64
-  Occurrences: 24
-
-LibraryCallRemoved
-  Before events:
-    CF: copy_templates_1 at init-db.c:55:7
-    CT: Jump to external code for lstat64
-    RF: Jump to external code for lstat64
-  Occurrences: 6
-
-LibraryCallRemoved
-  Before events:
-    CF: copy_templates_1 at init-db.c:56:8
-    CT: Jump to external code for __errno_location
-    RF: Jump to external code for __errno_location
-  Occurrences: 6
-
-LibraryCallRemoved
-  Before events:
-    CF: copy_templates_1 at init-db.c:62:7
-    CT: Jump to external code for lstat64
-    RF: Jump to external code for lstat64
-  Occurrences: 6
-
-LibraryCallRemoved
-  Before events:
-    CF: copy_templates_1 at init-db.c:66:18
-    CT: Jump to external code for opendir
-    RF: Jump to external code for opendir
-  Occurrences: 6
-
-LibraryCallRemoved
-  Before events:
-    CF: copy_templates_1 at init-db.c:72:4
-    CT: Jump to external code for closedir
-    RF: Jump to external code for closedir
-  Occurrences: 6
-
-LibraryCallRemoved
-  Before events:
-    CF: create_default_files at init-db.c:217:2
-    CT: Jump to external code for free
-    RF: Jump to external code for free
-  Occurrences: 6
-
-LibraryCallRemoved
-  Before events:
-    CF: create_default_files at init-db.c:253:13
-    CT: Jump to external code for access
-    RF: Jump to external code for access
-  Occurrences: 6
-
-LibraryCallRemoved
-  Before events:
-    CF: create_default_files at init-db.c:254:8
-    CT: Jump to external code for readlink
-    RF: Jump to external code for readlink
-  Occurrences: 6
-
-LibraryCallRemoved
-  Before events:
     CF: dir_prefix at path.c:74:12
     CT: Jump to external code for strlen
     RF: Jump to external code for strlen
   Occurrences: 61
-
-LibraryCallRemoved
-  Before events:
-    CF: get_builtin at git.c:640:8
-    CT: Jump to external code for strcmp
-    RF: Jump to external code for strcmp
-  Occurrences: 1424
 
 LibraryCallRemoved
   Before events:
@@ -4614,13 +4432,6 @@ LibraryCallRemoved
     CT: Jump to external code for __errno_location
     RF: Jump to external code for __errno_location
   Occurrences: 75
-
-LibraryCallRemoved
-  Before events:
-    CF: handle_builtin at git.c:703:19
-    CT: Jump to external code for strcmp
-    RF: Jump to external code for strcmp
-  Occurrences: 26
 
 LibraryCallRemoved
   Before events:
@@ -4677,34 +4488,6 @@ LibraryCallRemoved
     CT: Jump to external code for memset
     RF: Jump to external code for memset
   Occurrences: 6
-
-LibraryCallRemoved
-  Before events:
-    CF: parse_attr_line at attr.c:343:14
-    CT: Jump to external code for strspn
-    RF: Jump to external code for strspn
-  Occurrences: 1
-
-LibraryCallRemoved
-  Before events:
-    CF: parse_attr_line at attr.c:352:13
-    CT: Jump to external code for strcspn
-    RF: Jump to external code for strcspn
-  Occurrences: 1
-
-LibraryCallRemoved
-  Before events:
-    CF: parse_attr_line at attr.c:365:11
-    CT: Jump to external code for strspn
-    RF: Jump to external code for strspn
-  Occurrences: 1
-
-LibraryCallRemoved
-  Before events:
-    CF: parse_attr_line at attr.c:366:13
-    CT: Jump to external code for strcspn
-    RF: Jump to external code for strcspn
-  Occurrences: 1
 
 LibraryCallRemoved
   Before events:
@@ -4768,13 +4551,6 @@ LibraryCallRemoved
     CT: Jump to external code for memset
     RF: Jump to external code for memset
   Occurrences: 30
-
-LibraryCallRemoved
-  Before events:
-    CF: safe_create_leading_directories_1 at object-file.c:367:8
-    CT: Jump to external code for stat64
-    RF: Jump to external code for stat64
-  Occurrences: 5
 
 LibraryCallRemoved
   Before events:
@@ -4876,13 +4652,6 @@ ProgramCallRemoved
 
 ProgramCallRemoved
   Before events:
-    CF: check_tag at object-file.c:2339:6
-    CT: parse_tag_buffer at tag.c:137:0
-    RF: parse_tag_buffer at tag.c:208:1
-  Occurrences: 1
-
-ProgramCallRemoved
-  Before events:
     CF: check_vector_add at attr.c:500:2
     CT: vector_lock at attr.c:489:0
     RF: vector_lock at attr.c:491:1
@@ -4911,34 +4680,6 @@ ProgramCallRemoved
 
 ProgramCallRemoved
   Before events:
-    CF: copy_templates_1 at init-db.c:48:3
-    CT: strbuf_setlen at strbuf.h:161:0
-    RF: strbuf_setlen at strbuf.h:169:1
-  Occurrences: 18
-
-ProgramCallRemoved
-  Before events:
-    CF: copy_templates_1 at init-db.c:49:3
-    CT: strbuf_setlen at strbuf.h:161:0
-    RF: strbuf_setlen at strbuf.h:169:1
-  Occurrences: 12
-
-ProgramCallRemoved
-  Before events:
-    CF: create_default_files at init-db.c:204:26
-    CT: get_git_work_tree at environment.c:273:0
-    RF: get_git_work_tree at environment.c:274:2
-  Occurrences: 6
-
-ProgramCallRemoved
-  Before events:
-    CF: create_default_files at init-db.c:219:2
-    CT: reset_shared_repository at environment.c:403:0
-    RF: reset_shared_repository at environment.c:405:1
-  Occurrences: 6
-
-ProgramCallRemoved
-  Before events:
     CF: die_builtin at usage.c:71:29
     CT: get_die_message_routine at usage.c:128:0
     RF: get_die_message_routine at usage.c:129:2
@@ -4953,38 +4694,17 @@ ProgramCallRemoved
 
 ProgramCallRemoved
   Before events:
-    CF: get_next_component at abspath.c:36:2
-    CT: strbuf_setlen at strbuf.h:161:0
-    RF: strbuf_setlen at strbuf.h:169:1
-  Occurrences: 84
-
-ProgramCallRemoved
-  Before events:
     CF: get_next_component at abspath.c:40:31
     CT: git_is_dir_sep at git-compat-util.h:447:0
     RF: git_is_dir_sep at git-compat-util.h:448:2
-  Occurrences: 274
+  Occurrences: 272
 
 ProgramCallRemoved
   Before events:
     CF: get_next_component at abspath.c:43:29
     CT: git_is_dir_sep at git-compat-util.h:447:0
     RF: git_is_dir_sep at git-compat-util.h:448:2
-  Occurrences: 772
-
-ProgramCallRemoved
-  Before events:
-    CF: get_value at config.c:888:8
-    CT: iskeychar at config.c:537:0
-    RF: iskeychar at config.c:538:2
-  Occurrences: 3126
-
-ProgramCallRemoved
-  Before events:
-    CF: get_value at config.c:890:22
-    CT: sane_case at git-compat-util.h:1235:0
-    RF: sane_case at git-compat-util.h:1238:2
-  Occurrences: 2844
+  Occurrences: 606
 
 ProgramCallRemoved
   Before events:
@@ -5023,76 +4743,6 @@ ProgramCallRemoved
 
 ProgramCallRemoved
   Before events:
-    CF: git_offset_1st_component at git-compat-util.h:457:9
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-  Occurrences: 88
-
-ProgramCallRemoved
-  Before events:
-    CF: git_parse_source at config.c:1045:9
-    CT: do_event at config.c:977:0
-    RF: do_event at config.c:1005:1
-  Occurrences: 36
-
-ProgramCallRemoved
-  Before events:
-    CF: git_parse_source at config.c:1049:8
-    CT: do_event at config.c:977:0
-    RF: do_event at config.c:1005:1
-  Occurrences: 36
-
-ProgramCallRemoved
-  Before events:
-    CF: git_parse_source at config.c:1057:8
-    CT: do_event at config.c:977:0
-    RF: do_event at config.c:1005:1
-  Occurrences: 162
-
-ProgramCallRemoved
-  Before events:
-    CF: git_parse_source at config.c:1068:8
-    CT: do_event at config.c:977:0
-    RF: do_event at config.c:1005:1
-  Occurrences: 36
-
-ProgramCallRemoved
-  Before events:
-    CF: git_parse_source at config.c:1072:4
-    CT: strbuf_setlen at strbuf.h:161:0
-    RF: strbuf_setlen at strbuf.h:169:1
-  Occurrences: 54
-
-ProgramCallRemoved
-  Before events:
-    CF: git_parse_source at config.c:1082:7
-    CT: do_event at config.c:977:0
-    RF: do_event at config.c:1005:1
-  Occurrences: 144
-
-ProgramCallRemoved
-  Before events:
-    CF: git_parse_source at config.c:1090:3
-    CT: strbuf_setlen at strbuf.h:161:0
-    RF: strbuf_setlen at strbuf.h:169:1
-  Occurrences: 180
-
-ProgramCallRemoved
-  Before events:
-    CF: git_parse_source at config.c:1091:21
-    CT: sane_case at git-compat-util.h:1235:0
-    RF: sane_case at git-compat-util.h:1238:2
-  Occurrences: 180
-
-ProgramCallRemoved
-  Before events:
-    CF: hash_to_hex_algop at hex.c:154:9
-    CT: hash_to_hex_algop_r at hex.c:122:0
-    RF: hash_to_hex_algop_r at hex.c:141:2
-  Occurrences: 4
-
-ProgramCallRemoved
-  Before events:
     CF: is_absolute_path at cache.h:1276:32
     CT: git_has_dos_drive_prefix at git-compat-util.h:432:0
     RF: git_has_dos_drive_prefix at git-compat-util.h:433:2
@@ -5107,55 +4757,6 @@ ProgramCallRemoved
 
 ProgramCallRemoved
   Before events:
-    CF: normalize_path_copy_len at path.c:1129:7
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-  Occurrences: 12
-
-ProgramCallRemoved
-  Before events:
-    CF: normalize_path_copy_len at path.c:1135:9
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-  Occurrences: 12
-
-ProgramCallRemoved
-  Before events:
-    CF: normalize_path_copy_len at path.c:1175:35
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-  Occurrences: 156
-
-ProgramCallRemoved
-  Before events:
-    CF: normalize_path_copy_len at path.c:1177:7
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-  Occurrences: 20
-
-ProgramCallRemoved
-  Before events:
-    CF: normalize_path_copy_len at path.c:1179:11
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-  Occurrences: 24
-
-ProgramCallRemoved
-  Before events:
-    CF: parse_attr_line at attr.c:357:6
-    CT: starts_with at strbuf.c:8:0
-    RF: starts_with at strbuf.c:14:1
-  Occurrences: 1
-
-ProgramCallRemoved
-  Before events:
-    CF: parse_attr_line at attr.c:367:8
-    CT: attr_name_valid at attr.c:176:0
-    RF: attr_name_valid at attr.c:192:1
-  Occurrences: 1
-
-ProgramCallRemoved
-  Before events:
     CF: parse_commit_buffer at commit.c:444:10
     CT: const_error at git-compat-util.h:638:0
     RF: const_error at git-compat-util.h:639:2
@@ -5163,31 +4764,10 @@ ProgramCallRemoved
 
 ProgramCallRemoved
   Before events:
-    CF: parse_long_opt at parse-options.c:333:8
-    CT: skip_prefix at git-compat-util.h:676:0
-    RF: skip_prefix at git-compat-util.h:684:1
-  Occurrences: 5
-
-ProgramCallRemoved
-  Before events:
-    CF: parse_long_opt at parse-options.c:387:10
-    CT: get_value at parse-options.c:106:0
-    RF: get_value at parse-options.c:245:1
-  Occurrences: 5
-
-ProgramCallRemoved
-  Before events:
     CF: parse_options at parse-options.c:1001:2
     CT: precompose_argv_prefix at git-compat-util.h:320:0
     RF: precompose_argv_prefix at git-compat-util.h:321:2
   Occurrences: 26
-
-ProgramCallRemoved
-  Before events:
-    CF: parse_value at config.c:820:2
-    CT: strbuf_setlen at strbuf.h:161:0
-    RF: strbuf_setlen at strbuf.h:169:1
-  Occurrences: 6
 
 ProgramCallRemoved
   Before events:
@@ -5202,13 +4782,6 @@ ProgramCallRemoved
     CT: check_signum at sigchain.c:14:0
     RF: check_signum at sigchain.c:17:1
   Occurrences: 30
-
-ProgramCallRemoved
-  Before events:
-    CF: strbuf_addch at strbuf.h:230:7
-    CT: strbuf_avail at strbuf.h:140:0
-    RF: strbuf_avail at strbuf.h:141:2
-  Occurrences: 121
 
 ProgramCallRemoved
   Before events:
@@ -5243,29 +4816,12 @@ Uncategorised
 
 Uncategorised
   After events:
-    CF: check_and_freshen_file at object-file.c:963:18
-    CT: freshen_file at object-file.c:947:0
-    CF: freshen_file at object-file.c:949:10
-    CT: Jump to external code for utime
-    RF: Jump to external code for utime
-    RF: freshen_file at object-file.c:0:0
-  Occurrences: 1
-
-Uncategorised
-  After events:
     CF: check_and_freshen_local at object-file.c:979:9
   Occurrences: 1
 
 Uncategorised
   After events:
     CF: check_and_freshen_odb at object-file.c:974:9
-  Occurrences: 1
-
-Uncategorised
-  After events:
-    CF: check_tag at object-file.c:2339:6
-    CT: parse_tag_buffer at tag.c:137:0
-    RF: parse_tag_buffer at tag.c:208:1
   Occurrences: 1
 
 Uncategorised
@@ -5310,96 +4866,8 @@ Uncategorised
 
 Uncategorised
   After events:
-    CF: copy_fd at copy.c:7:17
-    CT: xread at wrapper.c:225:0
-    CF: xread at wrapper.c:230:8
-    CT: Jump to external code for read
-    RF: Jump to external code for read
-    RF: xread at wrapper.c:237:3
-  Occurrences: 90
-
-Uncategorised
-  After events:
     CF: copy_file at copy.c:42:11
   Occurrences: 90
-
-Uncategorised
-  After events:
-    CF: copy_templates_1 at init-db.c:48:3
-    CT: strbuf_setlen at strbuf.h:160:0
-    RF: strbuf_setlen at strbuf.h:0:0
-  Occurrences: 14
-
-Uncategorised
-  After events:
-    CF: copy_templates_1 at init-db.c:49:3
-    CT: strbuf_setlen at strbuf.h:160:0
-    RF: strbuf_setlen at strbuf.h:0:0
-  Occurrences: 16
-
-Uncategorised
-  After events:
-    CF: copy_templates_1 at init-db.c:53:3
-    CT: strbuf_addstr at strbuf.h:303:0
-    CF: strbuf_addstr at strbuf.h:305:20
-    CT: Jump to external code for strlen
-    RF: Jump to external code for strlen
-    CF: strbuf_addstr at strbuf.h:305:2
-    CT: strbuf_add at strbuf.c:296:0
-    CF: strbuf_add at strbuf.c:298:2
-    CT: strbuf_grow at strbuf.c:91:0
-    RF: strbuf_grow at strbuf.c:0:0
-    CF: strbuf_add at strbuf.c:299:2
-    CT: Jump to external code for memcpy
-    RF: Jump to external code for memcpy
-    CF: strbuf_add at strbuf.c:300:2
-    CT: strbuf_setlen at strbuf.h:160:0
-    RF: strbuf_setlen at strbuf.h:0:0
-    RF: strbuf_add at strbuf.c:301:1
-    RF: strbuf_addstr at strbuf.h:0:0
-  Occurrences: 6
-
-Uncategorised
-  After events:
-    CF: copy_templates_1 at init-db.c:54:3
-    CT: strbuf_addstr at strbuf.h:303:0
-    CF: strbuf_addstr at strbuf.h:305:20
-    CT: Jump to external code for strlen
-    RF: Jump to external code for strlen
-    CF: strbuf_addstr at strbuf.h:305:2
-    CT: strbuf_add at strbuf.c:296:0
-    CF: strbuf_add at strbuf.c:298:2
-    CT: strbuf_grow at strbuf.c:91:0
-    RF: strbuf_grow at strbuf.c:0:0
-    CF: strbuf_add at strbuf.c:299:2
-    CT: Jump to external code for memcpy
-    RF: Jump to external code for memcpy
-    CF: strbuf_add at strbuf.c:300:2
-    CT: strbuf_setlen at strbuf.h:160:0
-    RF: strbuf_setlen at strbuf.h:0:0
-    RF: strbuf_add at strbuf.c:301:1
-    RF: strbuf_addstr at strbuf.h:0:0
-  Occurrences: 6
-
-Uncategorised
-  After events:
-    CF: copy_templates_1 at init-db.c:69:4
-    CT: strbuf_addch at strbuf.h:228:0
-    CF: strbuf_addch at strbuf.h:230:7
-    CT: strbuf_avail at strbuf.h:139:0
-    RF: strbuf_avail at strbuf.h:0:0
-    RF: strbuf_addch at strbuf.h:0:0
-  Occurrences: 6
-
-Uncategorised
-  After events:
-    CF: copy_templates_1 at init-db.c:70:4
-    CT: strbuf_addch at strbuf.h:228:0
-    CF: strbuf_addch at strbuf.h:230:7
-    CT: strbuf_avail at strbuf.h:139:0
-    RF: strbuf_avail at strbuf.h:0:0
-    RF: strbuf_addch at strbuf.h:0:0
-  Occurrences: 6
 
 Uncategorised
   After events:
@@ -5473,42 +4941,8 @@ Uncategorised
 
 Uncategorised
   After events:
-    CF: fill_loose_path at object-file.c:427:3
-    CT: strbuf_addch at strbuf.h:228:0
-    CF: strbuf_addch at strbuf.h:230:7
-    CT: strbuf_avail at strbuf.h:139:0
-    RF: strbuf_avail at strbuf.h:0:0
-    RF: strbuf_addch at strbuf.h:0:0
-  Occurrences: 11
-
-Uncategorised
-  After events:
-    CF: fill_loose_path at object-file.c:427:3
-    CT: strbuf_addch at strbuf.h:228:0
-    RF: strbuf_addch at strbuf.h:0:0
-  Occurrences: 10
-
-Uncategorised
-  After events:
     CF: fill_loose_path at object-file.c:428:3
   Occurrences: 60
-
-Uncategorised
-  After events:
-    CF: fill_loose_path at object-file.c:428:3
-    CT: strbuf_addch at strbuf.h:228:0
-    CF: strbuf_addch at strbuf.h:230:7
-    CT: strbuf_avail at strbuf.h:139:0
-    RF: strbuf_avail at strbuf.h:0:0
-    RF: strbuf_addch at strbuf.h:0:0
-  Occurrences: 10
-
-Uncategorised
-  After events:
-    CF: fill_loose_path at object-file.c:428:3
-    CT: strbuf_addch at strbuf.h:228:0
-    RF: strbuf_addch at strbuf.h:0:0
-  Occurrences: 10
 
 Uncategorised
   After events:
@@ -5517,1092 +4951,13 @@ Uncategorised
 
 Uncategorised
   After events:
-    CF: get_next_component at abspath.c:36:2
-    CT: strbuf_setlen at strbuf.h:160:0
-    RF: strbuf_setlen at strbuf.h:0:0
-  Occurrences: 84
-
-Uncategorised
-  After events:
-    CF: get_next_component at abspath.c:40:31
-    CT: git_is_dir_sep at git-compat-util.h:446:0
-    RF: git_is_dir_sep at git-compat-util.h:0:0
-  Occurrences: 168
-
-Uncategorised
-  After events:
-    CF: get_next_component at abspath.c:46:2
-    CT: strbuf_add at strbuf.c:296:0
-    CF: strbuf_add at strbuf.c:298:2
-    CT: strbuf_grow at strbuf.c:91:0
-    RF: strbuf_grow at strbuf.c:0:0
-    CF: strbuf_add at strbuf.c:299:2
-    CT: Jump to external code for memcpy
-    RF: Jump to external code for memcpy
-    CF: strbuf_add at strbuf.c:300:2
-    CT: strbuf_setlen at strbuf.h:160:0
-    RF: strbuf_setlen at strbuf.h:0:0
-    RF: strbuf_add at strbuf.c:301:1
-  Occurrences: 42
-
-Uncategorised
-  After events:
-    CF: get_next_component at abspath.c:48:2
-    CT: strbuf_remove at strbuf.c:292:0
-    CF: strbuf_remove at strbuf.c:293:2
-    CT: strbuf_splice at strbuf.c:233:0
-    CF: strbuf_splice at strbuf.c:243:2
-    CT: Jump to external code for memmove
-    RF: Jump to external code for memmove
-    CF: strbuf_splice at strbuf.c:246:2
-    CT: Jump to external code for memcpy
-    RF: Jump to external code for memcpy
-    CF: strbuf_splice at strbuf.c:247:2
-    CT: strbuf_setlen at strbuf.h:160:0
-    RF: strbuf_setlen at strbuf.h:0:0
-    RF: strbuf_splice at strbuf.c:248:1
-    RF: strbuf_remove at strbuf.c:294:1
-  Occurrences: 84
-
-Uncategorised
-  After events:
     CF: get_root_part at abspath.c:54:15
   Occurrences: 72
 
 Uncategorised
   After events:
-    CF: get_value at config.c:885:7
-    CT: get_next_char at config.c:780:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: getc_unlocked at stdio.h:66:0
-    RF: getc_unlocked at stdio.h:0:0
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:0:0
-  Occurrences: 3126
-
-Uncategorised
-  After events:
-    CF: get_value at config.c:888:8
-    CT: iskeychar at config.c:536:0
-    RF: iskeychar at config.c:0:0
-  Occurrences: 3126
-
-Uncategorised
-  After events:
-    CF: get_value at config.c:890:22
-    CT: sane_case at git-compat-util.h:1234:0
-    RF: sane_case at git-compat-util.h:0:0
-  Occurrences: 2844
-
-Uncategorised
-  After events:
-    CF: get_value at config.c:890:3
-    CT: strbuf_addch at strbuf.h:228:0
-    CF: strbuf_addch at strbuf.h:230:7
-    CT: strbuf_avail at strbuf.h:139:0
-    RF: strbuf_avail at strbuf.h:0:0
-    RF: strbuf_addch at strbuf.h:0:0
-  Occurrences: 2844
-
-Uncategorised
-  After events:
-    CF: get_value at config.c:894:7
-    CT: get_next_char at config.c:780:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: getc_unlocked at stdio.h:66:0
-    RF: getc_unlocked at stdio.h:0:0
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:0:0
-  Occurrences: 282
-
-Uncategorised
-  After events:
     CF: get_value at config.c:900:11
   Occurrences: 16
-
-Uncategorised
-  After events:
-    CF: get_value at config.c:900:11
-    CT: parse_value at config.c:816:0
-    CF: parse_value at config.c:820:2
-    CT: strbuf_setlen at strbuf.h:160:0
-    RF: strbuf_setlen at strbuf.h:0:0
-    CF: parse_value at config.c:822:11
-    CT: get_next_char at config.c:780:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: getc_unlocked at stdio.h:66:0
-    RF: getc_unlocked at stdio.h:0:0
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:0:0
-    CF: parse_value at config.c:822:11
-    CT: get_next_char at config.c:780:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: getc_unlocked at stdio.h:66:0
-    RF: getc_unlocked at stdio.h:0:0
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:0:0
-    CF: parse_value at config.c:873:3
-    CT: strbuf_addch at strbuf.h:228:0
-    CF: strbuf_addch at strbuf.h:230:7
-    CT: strbuf_avail at strbuf.h:139:0
-    RF: strbuf_avail at strbuf.h:0:0
-    RF: strbuf_addch at strbuf.h:0:0
-    CF: parse_value at config.c:822:11
-    [...234 more events...]
-  Occurrences: 2
-
-Uncategorised
-  After events:
-    CF: get_value at config.c:900:11
-    CT: parse_value at config.c:816:0
-    CF: parse_value at config.c:820:2
-    CT: strbuf_setlen at strbuf.h:160:0
-    RF: strbuf_setlen at strbuf.h:0:0
-    CF: parse_value at config.c:822:11
-    CT: get_next_char at config.c:780:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: getc_unlocked at stdio.h:66:0
-    RF: getc_unlocked at stdio.h:0:0
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:0:0
-    CF: parse_value at config.c:822:11
-    CT: get_next_char at config.c:780:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: getc_unlocked at stdio.h:66:0
-    RF: getc_unlocked at stdio.h:0:0
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:0:0
-    CF: parse_value at config.c:873:3
-    CT: strbuf_addch at strbuf.h:228:0
-    CF: strbuf_addch at strbuf.h:230:7
-    CT: strbuf_avail at strbuf.h:139:0
-    RF: strbuf_avail at strbuf.h:0:0
-    RF: strbuf_addch at strbuf.h:0:0
-    CF: parse_value at config.c:822:11
-    [...399 more events...]
-  Occurrences: 2
-
-Uncategorised
-  After events:
-    CF: get_value at config.c:900:11
-    CT: parse_value at config.c:816:0
-    CF: parse_value at config.c:820:2
-    CT: strbuf_setlen at strbuf.h:160:0
-    RF: strbuf_setlen at strbuf.h:0:0
-    CF: parse_value at config.c:822:11
-    CT: get_next_char at config.c:780:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: getc_unlocked at stdio.h:66:0
-    RF: getc_unlocked at stdio.h:0:0
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:0:0
-    CF: parse_value at config.c:822:11
-    CT: get_next_char at config.c:780:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: getc_unlocked at stdio.h:66:0
-    RF: getc_unlocked at stdio.h:0:0
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:0:0
-    CF: parse_value at config.c:873:3
-    CT: strbuf_addch at strbuf.h:228:0
-    CF: strbuf_addch at strbuf.h:230:7
-    CT: strbuf_avail at strbuf.h:139:0
-    RF: strbuf_avail at strbuf.h:0:0
-    RF: strbuf_addch at strbuf.h:0:0
-    CF: parse_value at config.c:822:11
-    [...189 more events...]
-  Occurrences: 2
-
-Uncategorised
-  After events:
-    CF: get_value at config.c:900:11
-    CT: parse_value at config.c:816:0
-    CF: parse_value at config.c:820:2
-    CT: strbuf_setlen at strbuf.h:160:0
-    RF: strbuf_setlen at strbuf.h:0:0
-    CF: parse_value at config.c:822:11
-    CT: get_next_char at config.c:780:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: getc_unlocked at stdio.h:66:0
-    RF: getc_unlocked at stdio.h:0:0
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:0:0
-    CF: parse_value at config.c:822:11
-    CT: get_next_char at config.c:780:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: getc_unlocked at stdio.h:66:0
-    RF: getc_unlocked at stdio.h:0:0
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:0:0
-    CF: parse_value at config.c:873:3
-    CT: strbuf_addch at strbuf.h:228:0
-    CF: strbuf_addch at strbuf.h:230:7
-    CT: strbuf_avail at strbuf.h:139:0
-    RF: strbuf_avail at strbuf.h:0:0
-    RF: strbuf_addch at strbuf.h:0:0
-    CF: parse_value at config.c:822:11
-    [...159 more events...]
-  Occurrences: 2
-
-Uncategorised
-  After events:
-    CF: get_value at config.c:900:11
-    CT: parse_value at config.c:816:0
-    CF: parse_value at config.c:820:2
-    CT: strbuf_setlen at strbuf.h:160:0
-    RF: strbuf_setlen at strbuf.h:0:0
-    CF: parse_value at config.c:822:11
-    CT: get_next_char at config.c:780:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: getc_unlocked at stdio.h:66:0
-    RF: getc_unlocked at stdio.h:0:0
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:0:0
-    CF: parse_value at config.c:822:11
-    CT: get_next_char at config.c:780:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: getc_unlocked at stdio.h:66:0
-    RF: getc_unlocked at stdio.h:0:0
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:0:0
-    CF: parse_value at config.c:873:3
-    CT: strbuf_addch at strbuf.h:228:0
-    CF: strbuf_addch at strbuf.h:230:7
-    CT: strbuf_avail at strbuf.h:139:0
-    RF: strbuf_avail at strbuf.h:0:0
-    RF: strbuf_addch at strbuf.h:0:0
-    CF: parse_value at config.c:822:11
-    [...84 more events...]
-  Occurrences: 2
-
-Uncategorised
-  After events:
-    CF: get_value at config.c:900:11
-    CT: parse_value at config.c:816:0
-    CF: parse_value at config.c:820:2
-    CT: strbuf_setlen at strbuf.h:160:0
-    RF: strbuf_setlen at strbuf.h:0:0
-    CF: parse_value at config.c:822:11
-    CT: get_next_char at config.c:780:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: getc_unlocked at stdio.h:66:0
-    RF: getc_unlocked at stdio.h:0:0
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:0:0
-    CF: parse_value at config.c:822:11
-    CT: get_next_char at config.c:780:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: getc_unlocked at stdio.h:66:0
-    RF: getc_unlocked at stdio.h:0:0
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:0:0
-    CF: parse_value at config.c:873:3
-    CT: strbuf_addch at strbuf.h:228:0
-    CF: strbuf_addch at strbuf.h:230:7
-    CT: strbuf_avail at strbuf.h:139:0
-    RF: strbuf_avail at strbuf.h:0:0
-    RF: strbuf_addch at strbuf.h:0:0
-    CF: parse_value at config.c:822:11
-    [...189 more events...]
-  Occurrences: 2
-
-Uncategorised
-  After events:
-    CF: get_value at config.c:900:11
-    CT: parse_value at config.c:816:0
-    CF: parse_value at config.c:820:2
-    CT: strbuf_setlen at strbuf.h:160:0
-    RF: strbuf_setlen at strbuf.h:0:0
-    CF: parse_value at config.c:822:11
-    CT: get_next_char at config.c:780:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: getc_unlocked at stdio.h:66:0
-    RF: getc_unlocked at stdio.h:0:0
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:0:0
-    CF: parse_value at config.c:822:11
-    CT: get_next_char at config.c:780:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: getc_unlocked at stdio.h:66:0
-    RF: getc_unlocked at stdio.h:0:0
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:0:0
-    CF: parse_value at config.c:873:3
-    CT: strbuf_addch at strbuf.h:228:0
-    CF: strbuf_addch at strbuf.h:230:7
-    CT: strbuf_avail at strbuf.h:139:0
-    RF: strbuf_avail at strbuf.h:0:0
-    RF: strbuf_addch at strbuf.h:0:0
-    CF: parse_value at config.c:822:11
-    [...354 more events...]
-  Occurrences: 2
-
-Uncategorised
-  After events:
-    CF: get_value at config.c:900:11
-    CT: parse_value at config.c:816:0
-    CF: parse_value at config.c:820:2
-    CT: strbuf_setlen at strbuf.h:160:0
-    RF: strbuf_setlen at strbuf.h:0:0
-    CF: parse_value at config.c:822:11
-    CT: get_next_char at config.c:780:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: getc_unlocked at stdio.h:66:0
-    RF: getc_unlocked at stdio.h:0:0
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:0:0
-    CF: parse_value at config.c:822:11
-    CT: get_next_char at config.c:780:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: getc_unlocked at stdio.h:66:0
-    RF: getc_unlocked at stdio.h:0:0
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:0:0
-    CF: parse_value at config.c:873:3
-    CT: strbuf_addch at strbuf.h:228:0
-    CF: strbuf_addch at strbuf.h:230:7
-    CT: strbuf_avail at strbuf.h:139:0
-    RF: strbuf_avail at strbuf.h:0:0
-    RF: strbuf_addch at strbuf.h:0:0
-    CF: parse_value at config.c:822:11
-    [...249 more events...]
-  Occurrences: 2
-
-Uncategorised
-  After events:
-    CF: get_value at config.c:900:11
-    CT: parse_value at config.c:816:0
-    CF: parse_value at config.c:820:2
-    CT: strbuf_setlen at strbuf.h:160:0
-    RF: strbuf_setlen at strbuf.h:0:0
-    CF: parse_value at config.c:822:11
-    CT: get_next_char at config.c:780:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: getc_unlocked at stdio.h:66:0
-    RF: getc_unlocked at stdio.h:0:0
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:0:0
-    CF: parse_value at config.c:822:11
-    CT: get_next_char at config.c:780:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: getc_unlocked at stdio.h:66:0
-    RF: getc_unlocked at stdio.h:0:0
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:0:0
-    CF: parse_value at config.c:873:3
-    CT: strbuf_addch at strbuf.h:228:0
-    CF: strbuf_addch at strbuf.h:230:7
-    CT: strbuf_avail at strbuf.h:139:0
-    RF: strbuf_avail at strbuf.h:0:0
-    RF: strbuf_addch at strbuf.h:0:0
-    CF: parse_value at config.c:822:11
-    [...204 more events...]
-  Occurrences: 2
-
-Uncategorised
-  After events:
-    CF: get_value at config.c:900:11
-    CT: parse_value at config.c:816:0
-    CF: parse_value at config.c:820:2
-    CT: strbuf_setlen at strbuf.h:160:0
-    RF: strbuf_setlen at strbuf.h:0:0
-    CF: parse_value at config.c:822:11
-    CT: get_next_char at config.c:780:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: getc_unlocked at stdio.h:66:0
-    RF: getc_unlocked at stdio.h:0:0
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:0:0
-    CF: parse_value at config.c:822:11
-    CT: get_next_char at config.c:780:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: getc_unlocked at stdio.h:66:0
-    RF: getc_unlocked at stdio.h:0:0
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:0:0
-    CF: parse_value at config.c:873:3
-    CT: strbuf_addch at strbuf.h:228:0
-    CF: strbuf_addch at strbuf.h:230:7
-    CT: strbuf_avail at strbuf.h:139:0
-    RF: strbuf_avail at strbuf.h:0:0
-    RF: strbuf_addch at strbuf.h:0:0
-    CF: parse_value at config.c:822:11
-    [...144 more events...]
-  Occurrences: 2
-
-Uncategorised
-  After events:
-    CF: get_value at config.c:900:11
-    CT: parse_value at config.c:816:0
-    CF: parse_value at config.c:820:2
-    CT: strbuf_setlen at strbuf.h:160:0
-    RF: strbuf_setlen at strbuf.h:0:0
-    CF: parse_value at config.c:822:11
-    CT: get_next_char at config.c:780:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: getc_unlocked at stdio.h:66:0
-    RF: getc_unlocked at stdio.h:0:0
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:0:0
-    CF: parse_value at config.c:822:11
-    CT: get_next_char at config.c:780:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: getc_unlocked at stdio.h:66:0
-    RF: getc_unlocked at stdio.h:0:0
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:0:0
-    CF: parse_value at config.c:873:3
-    CT: strbuf_addch at strbuf.h:228:0
-    CF: strbuf_addch at strbuf.h:230:7
-    CT: strbuf_avail at strbuf.h:139:0
-    RF: strbuf_avail at strbuf.h:0:0
-    RF: strbuf_addch at strbuf.h:0:0
-    CF: parse_value at config.c:822:11
-    [...819 more events...]
-  Occurrences: 2
-
-Uncategorised
-  After events:
-    CF: get_value at config.c:900:11
-    CT: parse_value at config.c:816:0
-    CF: parse_value at config.c:820:2
-    CT: strbuf_setlen at strbuf.h:160:0
-    RF: strbuf_setlen at strbuf.h:0:0
-    CF: parse_value at config.c:822:11
-    CT: get_next_char at config.c:780:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: getc_unlocked at stdio.h:66:0
-    RF: getc_unlocked at stdio.h:0:0
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:0:0
-    CF: parse_value at config.c:822:11
-    CT: get_next_char at config.c:780:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: getc_unlocked at stdio.h:66:0
-    RF: getc_unlocked at stdio.h:0:0
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:0:0
-    CF: parse_value at config.c:873:3
-    CT: strbuf_addch at strbuf.h:228:0
-    CF: strbuf_addch at strbuf.h:230:7
-    CT: strbuf_avail at strbuf.h:139:0
-    RF: strbuf_avail at strbuf.h:0:0
-    RF: strbuf_addch at strbuf.h:0:0
-    CF: parse_value at config.c:822:11
-    [...234 more events...]
-  Occurrences: 6
-
-Uncategorised
-  After events:
-    CF: get_value at config.c:900:11
-    CT: parse_value at config.c:816:0
-    CF: parse_value at config.c:820:2
-    CT: strbuf_setlen at strbuf.h:160:0
-    RF: strbuf_setlen at strbuf.h:0:0
-    CF: parse_value at config.c:822:11
-    CT: get_next_char at config.c:780:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: getc_unlocked at stdio.h:66:0
-    RF: getc_unlocked at stdio.h:0:0
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:0:0
-    CF: parse_value at config.c:822:11
-    CT: get_next_char at config.c:780:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: getc_unlocked at stdio.h:66:0
-    RF: getc_unlocked at stdio.h:0:0
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:0:0
-    CF: parse_value at config.c:873:3
-    CT: strbuf_addch at strbuf.h:228:0
-    CF: strbuf_addch at strbuf.h:230:7
-    CT: strbuf_avail at strbuf.h:139:0
-    RF: strbuf_avail at strbuf.h:0:0
-    RF: strbuf_addch at strbuf.h:0:0
-    CF: parse_value at config.c:822:11
-    [...204 more events...]
-  Occurrences: 2
-
-Uncategorised
-  After events:
-    CF: get_value at config.c:900:11
-    CT: parse_value at config.c:816:0
-    CF: parse_value at config.c:820:2
-    CT: strbuf_setlen at strbuf.h:160:0
-    RF: strbuf_setlen at strbuf.h:0:0
-    CF: parse_value at config.c:822:11
-    CT: get_next_char at config.c:780:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: getc_unlocked at stdio.h:66:0
-    RF: getc_unlocked at stdio.h:0:0
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:0:0
-    CF: parse_value at config.c:822:11
-    CT: get_next_char at config.c:780:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: getc_unlocked at stdio.h:66:0
-    RF: getc_unlocked at stdio.h:0:0
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:0:0
-    CF: parse_value at config.c:873:3
-    CT: strbuf_addch at strbuf.h:228:0
-    CF: strbuf_addch at strbuf.h:230:7
-    CT: strbuf_avail at strbuf.h:139:0
-    RF: strbuf_avail at strbuf.h:0:0
-    RF: strbuf_addch at strbuf.h:0:0
-    CF: parse_value at config.c:822:11
-    [...159 more events...]
-  Occurrences: 2
-
-Uncategorised
-  After events:
-    CF: get_value at config.c:900:11
-    CT: parse_value at config.c:816:0
-    CF: parse_value at config.c:820:2
-    CT: strbuf_setlen at strbuf.h:160:0
-    RF: strbuf_setlen at strbuf.h:0:0
-    CF: parse_value at config.c:822:11
-    CT: get_next_char at config.c:780:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: getc_unlocked at stdio.h:66:0
-    RF: getc_unlocked at stdio.h:0:0
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:0:0
-    CF: parse_value at config.c:822:11
-    CT: get_next_char at config.c:780:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: getc_unlocked at stdio.h:66:0
-    RF: getc_unlocked at stdio.h:0:0
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:0:0
-    CF: parse_value at config.c:873:3
-    CT: strbuf_addch at strbuf.h:228:0
-    CF: strbuf_addch at strbuf.h:230:7
-    CT: strbuf_avail at strbuf.h:139:0
-    RF: strbuf_avail at strbuf.h:0:0
-    RF: strbuf_addch at strbuf.h:0:0
-    CF: parse_value at config.c:822:11
-    [...144 more events...]
-  Occurrences: 2
-
-Uncategorised
-  After events:
-    CF: get_value at config.c:900:11
-    CT: parse_value at config.c:816:0
-    CF: parse_value at config.c:820:2
-    CT: strbuf_setlen at strbuf.h:160:0
-    RF: strbuf_setlen at strbuf.h:0:0
-    CF: parse_value at config.c:822:11
-    CT: get_next_char at config.c:780:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: getc_unlocked at stdio.h:66:0
-    RF: getc_unlocked at stdio.h:0:0
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:0:0
-    CF: parse_value at config.c:822:11
-    CT: get_next_char at config.c:780:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: getc_unlocked at stdio.h:66:0
-    RF: getc_unlocked at stdio.h:0:0
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:0:0
-    CF: parse_value at config.c:873:3
-    CT: strbuf_addch at strbuf.h:228:0
-    CF: strbuf_addch at strbuf.h:230:7
-    CT: strbuf_avail at strbuf.h:139:0
-    RF: strbuf_avail at strbuf.h:0:0
-    RF: strbuf_addch at strbuf.h:0:0
-    CF: parse_value at config.c:822:11
-    [...114 more events...]
-  Occurrences: 4
-
-Uncategorised
-  After events:
-    CF: get_value at config.c:900:11
-    CT: parse_value at config.c:816:0
-    CF: parse_value at config.c:820:2
-    CT: strbuf_setlen at strbuf.h:160:0
-    RF: strbuf_setlen at strbuf.h:0:0
-    CF: parse_value at config.c:822:11
-    CT: get_next_char at config.c:780:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: getc_unlocked at stdio.h:66:0
-    RF: getc_unlocked at stdio.h:0:0
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:0:0
-    CF: parse_value at config.c:822:11
-    CT: get_next_char at config.c:780:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: getc_unlocked at stdio.h:66:0
-    RF: getc_unlocked at stdio.h:0:0
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:0:0
-    CF: parse_value at config.c:873:3
-    CT: strbuf_addch at strbuf.h:228:0
-    CF: strbuf_addch at strbuf.h:230:7
-    CT: strbuf_avail at strbuf.h:139:0
-    RF: strbuf_avail at strbuf.h:0:0
-    RF: strbuf_addch at strbuf.h:0:0
-    CF: parse_value at config.c:822:11
-    [...99 more events...]
-  Occurrences: 8
-
-Uncategorised
-  After events:
-    CF: get_value at config.c:900:11
-    CT: parse_value at config.c:816:0
-    CF: parse_value at config.c:820:2
-    CT: strbuf_setlen at strbuf.h:160:0
-    RF: strbuf_setlen at strbuf.h:0:0
-    CF: parse_value at config.c:822:11
-    CT: get_next_char at config.c:780:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: getc_unlocked at stdio.h:66:0
-    RF: getc_unlocked at stdio.h:0:0
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:0:0
-    CF: parse_value at config.c:822:11
-    CT: get_next_char at config.c:780:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: getc_unlocked at stdio.h:66:0
-    RF: getc_unlocked at stdio.h:0:0
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:0:0
-    CF: parse_value at config.c:873:3
-    CT: strbuf_addch at strbuf.h:228:0
-    CF: strbuf_addch at strbuf.h:230:7
-    CT: strbuf_avail at strbuf.h:139:0
-    RF: strbuf_avail at strbuf.h:0:0
-    RF: strbuf_addch at strbuf.h:0:0
-    CF: parse_value at config.c:822:11
-    [...84 more events...]
-  Occurrences: 4
-
-Uncategorised
-  After events:
-    CF: get_value at config.c:900:11
-    CT: parse_value at config.c:816:0
-    CF: parse_value at config.c:820:2
-    CT: strbuf_setlen at strbuf.h:160:0
-    RF: strbuf_setlen at strbuf.h:0:0
-    CF: parse_value at config.c:822:11
-    CT: get_next_char at config.c:780:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: getc_unlocked at stdio.h:66:0
-    RF: getc_unlocked at stdio.h:0:0
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:0:0
-    CF: parse_value at config.c:822:11
-    CT: get_next_char at config.c:780:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: getc_unlocked at stdio.h:66:0
-    RF: getc_unlocked at stdio.h:0:0
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:0:0
-    CF: parse_value at config.c:873:3
-    CT: strbuf_addch at strbuf.h:228:0
-    CF: strbuf_addch at strbuf.h:230:7
-    CT: strbuf_avail at strbuf.h:139:0
-    RF: strbuf_avail at strbuf.h:0:0
-    RF: strbuf_addch at strbuf.h:0:0
-    CF: parse_value at config.c:822:11
-    [...69 more events...]
-  Occurrences: 52
-
-Uncategorised
-  After events:
-    CF: get_value at config.c:900:11
-    CT: parse_value at config.c:816:0
-    CF: parse_value at config.c:820:2
-    CT: strbuf_setlen at strbuf.h:160:0
-    RF: strbuf_setlen at strbuf.h:0:0
-    CF: parse_value at config.c:822:11
-    CT: get_next_char at config.c:780:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: getc_unlocked at stdio.h:66:0
-    RF: getc_unlocked at stdio.h:0:0
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:0:0
-    CF: parse_value at config.c:822:11
-    CT: get_next_char at config.c:780:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: getc_unlocked at stdio.h:66:0
-    RF: getc_unlocked at stdio.h:0:0
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:0:0
-    CF: parse_value at config.c:873:3
-    CT: strbuf_addch at strbuf.h:228:0
-    CF: strbuf_addch at strbuf.h:230:7
-    CT: strbuf_avail at strbuf.h:139:0
-    RF: strbuf_avail at strbuf.h:0:0
-    RF: strbuf_addch at strbuf.h:0:0
-    CF: parse_value at config.c:822:11
-    [...54 more events...]
-  Occurrences: 108
-
-Uncategorised
-  After events:
-    CF: get_value at config.c:900:11
-    CT: parse_value at config.c:816:0
-    CF: parse_value at config.c:820:2
-    CT: strbuf_setlen at strbuf.h:160:0
-    RF: strbuf_setlen at strbuf.h:0:0
-    CF: parse_value at config.c:822:11
-    CT: get_next_char at config.c:780:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: getc_unlocked at stdio.h:66:0
-    RF: getc_unlocked at stdio.h:0:0
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:0:0
-    CF: parse_value at config.c:822:11
-    CT: get_next_char at config.c:780:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: getc_unlocked at stdio.h:66:0
-    RF: getc_unlocked at stdio.h:0:0
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:0:0
-    CF: parse_value at config.c:873:3
-    CT: strbuf_addch at strbuf.h:228:0
-    CF: strbuf_addch at strbuf.h:230:7
-    CT: strbuf_avail at strbuf.h:139:0
-    RF: strbuf_avail at strbuf.h:0:0
-    RF: strbuf_addch at strbuf.h:0:0
-    CF: parse_value at config.c:822:11
-    [...39 more events...]
-  Occurrences: 6
-
-Uncategorised
-  After events:
-    CF: get_value at config.c:900:11
-    CT: parse_value at config.c:816:0
-    CF: parse_value at config.c:820:2
-    CT: strbuf_setlen at strbuf.h:160:0
-    RF: strbuf_setlen at strbuf.h:0:0
-    CF: parse_value at config.c:822:11
-    CT: get_next_char at config.c:780:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: getc_unlocked at stdio.h:66:0
-    RF: getc_unlocked at stdio.h:0:0
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:0:0
-    CF: parse_value at config.c:822:11
-    CT: get_next_char at config.c:780:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: getc_unlocked at stdio.h:66:0
-    RF: getc_unlocked at stdio.h:0:0
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:0:0
-    CF: parse_value at config.c:873:3
-    CT: strbuf_addch at strbuf.h:228:0
-    CF: strbuf_addch at strbuf.h:230:7
-    CT: strbuf_avail at strbuf.h:139:0
-    RF: strbuf_avail at strbuf.h:0:0
-    RF: strbuf_addch at strbuf.h:0:0
-    CF: parse_value at config.c:822:11
-    [...24 more events...]
-  Occurrences: 4
-
-Uncategorised
-  After events:
-    CF: get_value at config.c:900:11
-    CT: parse_value at config.c:816:0
-    CF: parse_value at config.c:820:2
-    CT: strbuf_setlen at strbuf.h:160:0
-    RF: strbuf_setlen at strbuf.h:0:0
-    CF: parse_value at config.c:822:11
-    CT: get_next_char at config.c:780:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: getc_unlocked at stdio.h:66:0
-    RF: getc_unlocked at stdio.h:0:0
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:0:0
-    CF: parse_value at config.c:822:11
-    CT: get_next_char at config.c:780:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: getc_unlocked at stdio.h:66:0
-    RF: getc_unlocked at stdio.h:0:0
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:0:0
-    CF: parse_value at config.c:873:3
-    CT: strbuf_addch at strbuf.h:228:0
-    CF: strbuf_addch at strbuf.h:230:7
-    CT: strbuf_avail at strbuf.h:139:0
-    RF: strbuf_avail at strbuf.h:0:0
-    RF: strbuf_addch at strbuf.h:0:0
-    CF: parse_value at config.c:822:11
-    [...9 more events...]
-  Occurrences: 56
-
-Uncategorised
-  After events:
-    CF: get_value at config.c:900:11
-    CT: parse_value at config.c:816:0
-    CF: parse_value at config.c:822:11
-    CT: get_next_char at config.c:780:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: getc_unlocked at stdio.h:66:0
-    RF: getc_unlocked at stdio.h:0:0
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:0:0
-    CF: parse_value at config.c:873:3
-    CT: strbuf_addch at strbuf.h:228:0
-    CF: strbuf_addch at strbuf.h:230:7
-    CT: strbuf_avail at strbuf.h:139:0
-    RF: strbuf_avail at strbuf.h:0:0
-    RF: strbuf_addch at strbuf.h:0:0
-    CF: parse_value at config.c:822:11
-    CT: get_next_char at config.c:780:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: getc_unlocked at stdio.h:66:0
-    RF: getc_unlocked at stdio.h:0:0
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:0:0
-    CF: parse_value at config.c:873:3
-    CT: strbuf_addch at strbuf.h:228:0
-    CF: strbuf_addch at strbuf.h:230:7
-    CT: strbuf_avail at strbuf.h:139:0
-    [...627 more events...]
-  Occurrences: 2
-
-Uncategorised
-  After events:
-    CF: get_value at config.c:900:11
-    CT: parse_value at config.c:816:0
-    CF: parse_value at config.c:822:11
-    CT: get_next_char at config.c:780:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: getc_unlocked at stdio.h:66:0
-    RF: getc_unlocked at stdio.h:0:0
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:0:0
-    CF: parse_value at config.c:873:3
-    CT: strbuf_addch at strbuf.h:228:0
-    CF: strbuf_addch at strbuf.h:230:7
-    CT: strbuf_avail at strbuf.h:139:0
-    RF: strbuf_avail at strbuf.h:0:0
-    RF: strbuf_addch at strbuf.h:0:0
-    CF: parse_value at config.c:822:11
-    CT: get_next_char at config.c:780:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: getc_unlocked at stdio.h:66:0
-    RF: getc_unlocked at stdio.h:0:0
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:0:0
-    CF: parse_value at config.c:873:3
-    CT: strbuf_addch at strbuf.h:228:0
-    CF: strbuf_addch at strbuf.h:230:7
-    CT: strbuf_avail at strbuf.h:139:0
-    [...1242 more events...]
-  Occurrences: 2
-
-Uncategorised
-  After events:
-    CF: get_value at config.c:900:11
-    CT: parse_value at config.c:816:0
-    CF: parse_value at config.c:822:11
-    CT: get_next_char at config.c:780:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: getc_unlocked at stdio.h:66:0
-    RF: getc_unlocked at stdio.h:0:0
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:0:0
-    CF: parse_value at config.c:873:3
-    CT: strbuf_addch at strbuf.h:228:0
-    CF: strbuf_addch at strbuf.h:230:7
-    CT: strbuf_avail at strbuf.h:139:0
-    RF: strbuf_avail at strbuf.h:0:0
-    RF: strbuf_addch at strbuf.h:0:0
-    CF: parse_value at config.c:822:11
-    CT: get_next_char at config.c:780:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: getc_unlocked at stdio.h:66:0
-    RF: getc_unlocked at stdio.h:0:0
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:0:0
-    CF: parse_value at config.c:873:3
-    CT: strbuf_addch at strbuf.h:228:0
-    CF: strbuf_addch at strbuf.h:230:7
-    CT: strbuf_avail at strbuf.h:139:0
-    [...1227 more events...]
-  Occurrences: 2
-
-Uncategorised
-  After events:
-    CF: get_value at config.c:910:8
-    CT: check_repo_format at setup.c:585:0
-    CF: check_repo_format at setup.c:589:6
-    CT: Jump to external code for strcmp
-    RF: Jump to external code for strcmp
-    CF: check_repo_format at setup.c:591:11
-    CT: skip_prefix at git-compat-util.h:674:0
-    RF: skip_prefix at git-compat-util.h:0:0
-    CF: check_repo_format at setup.c:613:9
-    CT: read_worktree_config at setup.c:514:0
-    CF: read_worktree_config at setup.c:517:6
-    CT: Jump to external code for strcmp
-    RF: Jump to external code for strcmp
-    CF: read_worktree_config at setup.c:518:19
-    CT: git_config_bool at config.c:1448:0
-    CF: git_config_bool at config.c:1449:10
-    CT: git_parse_maybe_bool at config.c:1426:0
-    CF: git_parse_maybe_bool at config.c:1428:10
-    CT: git_parse_maybe_bool_text at config.c:1336:0
-    CF: git_parse_maybe_bool_text at config.c:1341:7
-    CT: Jump to external code for strcasecmp
-    RF: Jump to external code for strcasecmp
-    CF: git_parse_maybe_bool_text at config.c:1342:10
-    CT: Jump to external code for strcasecmp
-    RF: Jump to external code for strcasecmp
-    CF: git_parse_maybe_bool_text at config.c:1343:10
-    CT: Jump to external code for strcasecmp
-    RF: Jump to external code for strcasecmp
-    CF: git_parse_maybe_bool_text at config.c:1345:7
-    CT: Jump to external code for strcasecmp
-    [...6 more events...]
-  Occurrences: 18
-
-Uncategorised
-  After events:
-    CF: get_value at config.c:910:8
-    CT: check_repo_format at setup.c:585:0
-    CF: check_repo_format at setup.c:589:6
-    CT: Jump to external code for strcmp
-    RF: Jump to external code for strcmp
-    CF: check_repo_format at setup.c:591:11
-    CT: skip_prefix at git-compat-util.h:674:0
-    RF: skip_prefix at git-compat-util.h:0:0
-    CF: check_repo_format at setup.c:613:9
-    CT: read_worktree_config at setup.c:514:0
-    CF: read_worktree_config at setup.c:517:6
-    CT: Jump to external code for strcmp
-    RF: Jump to external code for strcmp
-    CF: read_worktree_config at setup.c:519:13
-    CT: Jump to external code for strcmp
-    RF: Jump to external code for strcmp
-    RF: read_worktree_config at setup.c:526:1
-    RF: check_repo_format at setup.c:614:1
-  Occurrences: 36
-
-Uncategorised
-  After events:
-    CF: get_value at config.c:910:8
-    CT: store_aux at config.c:2930:0
-    CF: store_aux at config.c:2954:7
-    CT: matches at config.c:2874:0
-    CF: matches at config.c:2877:6
-    CT: Jump to external code for strcmp
-    RF: Jump to external code for strcmp
-    RF: matches at config.c:0:0
-    RF: store_aux at config.c:2960:2
-  Occurrences: 36
 
 Uncategorised
   After events:
@@ -6626,22 +4981,8 @@ Uncategorised
 
 Uncategorised
   After events:
-    CF: git_config_int at config.c:1306:7
-    CT: git_parse_int at config.c:1232:0
-    RF: git_parse_int at config.c:0:0
-  Occurrences: 9
-
-Uncategorised
-  After events:
     CF: git_offset_1st_component at git-compat-util.h:457:9
   Occurrences: 54
-
-Uncategorised
-  After events:
-    CF: git_offset_1st_component at git-compat-util.h:457:9
-    CT: git_is_dir_sep at git-compat-util.h:446:0
-    RF: git_is_dir_sep at git-compat-util.h:0:0
-  Occurrences: 88
 
 Uncategorised
   After events:
@@ -6650,237 +4991,8 @@ Uncategorised
 
 Uncategorised
   After events:
-    CF: git_parse_source at config.c:1027:7
-    CT: get_next_char at config.c:780:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: getc_unlocked at stdio.h:66:0
-    CF: getc_unlocked at stdio.h:68:10
-    CT: Jump to external code for __uflow
-    RF: Jump to external code for __uflow
-    RF: getc_unlocked at stdio.h:0:0
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:0:0
-  Occurrences: 108
-
-Uncategorised
-  After events:
-    CF: git_parse_source at config.c:1027:7
-    CT: get_next_char at config.c:780:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: getc_unlocked at stdio.h:66:0
-    RF: getc_unlocked at stdio.h:0:0
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:0:0
-  Occurrences: 414
-
-Uncategorised
-  After events:
-    CF: git_parse_source at config.c:1045:9
-    CT: do_event at config.c:976:0
-    CF: do_event at config.c:987:11
-    CT: config_file_ftell at config.c:106:0
-    CF: config_file_ftell at config.c:107:9
-    CT: Jump to external code for ftell
-    RF: Jump to external code for ftell
-    RF: config_file_ftell at config.c:107:2
-    CF: do_event at config.c:997:6
-    CT: store_aux_event at config.c:2892:0
-    RF: store_aux_event at config.c:2927:1
-    RF: do_event at config.c:0:0
-  Occurrences: 18
-
-Uncategorised
-  After events:
-    CF: git_parse_source at config.c:1045:9
-    CT: do_event at config.c:976:0
-    RF: do_event at config.c:0:0
-  Occurrences: 36
-
-Uncategorised
-  After events:
-    CF: git_parse_source at config.c:1049:8
-    CT: do_event at config.c:976:0
-    RF: do_event at config.c:0:0
-  Occurrences: 36
-
-Uncategorised
-  After events:
-    CF: git_parse_source at config.c:1057:8
-    CT: do_event at config.c:976:0
-    CF: do_event at config.c:987:11
-    CT: config_file_ftell at config.c:106:0
-    CF: config_file_ftell at config.c:107:9
-    CT: Jump to external code for ftell
-    RF: Jump to external code for ftell
-    RF: config_file_ftell at config.c:107:2
-    CF: do_event at config.c:997:6
-    CT: store_aux_event at config.c:2892:0
-    RF: store_aux_event at config.c:2927:1
-    RF: do_event at config.c:0:0
-  Occurrences: 18
-
-Uncategorised
-  After events:
-    CF: git_parse_source at config.c:1057:8
-    CT: do_event at config.c:976:0
-    RF: do_event at config.c:0:0
-  Occurrences: 162
-
-Uncategorised
-  After events:
-    CF: git_parse_source at config.c:1068:8
-    CT: do_event at config.c:976:0
-    CF: do_event at config.c:987:11
-    CT: config_file_ftell at config.c:106:0
-    CF: config_file_ftell at config.c:107:9
-    CT: Jump to external code for ftell
-    RF: Jump to external code for ftell
-    RF: config_file_ftell at config.c:107:2
-    RF: do_event at config.c:0:0
-  Occurrences: 18
-
-Uncategorised
-  After events:
-    CF: git_parse_source at config.c:1068:8
-    CT: do_event at config.c:976:0
-    RF: do_event at config.c:0:0
-  Occurrences: 36
-
-Uncategorised
-  After events:
-    CF: git_parse_source at config.c:1072:4
-    CT: strbuf_setlen at strbuf.h:160:0
-    RF: strbuf_setlen at strbuf.h:0:0
-  Occurrences: 54
-
-Uncategorised
-  After events:
-    CF: git_parse_source at config.c:1073:8
-    CT: get_base_var at config.c:953:0
-    CF: get_base_var at config.c:957:11
-    CT: get_next_char at config.c:780:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: getc_unlocked at stdio.h:66:0
-    RF: getc_unlocked at stdio.h:0:0
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:0:0
-    CF: get_base_var at config.c:964:8
-    CT: iskeychar at config.c:536:0
-    RF: iskeychar at config.c:0:0
-    CF: get_base_var at config.c:966:22
-    CT: sane_case at git-compat-util.h:1234:0
-    RF: sane_case at git-compat-util.h:0:0
-    CF: get_base_var at config.c:966:3
-    CT: strbuf_addch at strbuf.h:228:0
-    CF: strbuf_addch at strbuf.h:230:7
-    CT: strbuf_avail at strbuf.h:139:0
-    RF: strbuf_avail at strbuf.h:0:0
-    RF: strbuf_addch at strbuf.h:0:0
-    CF: get_base_var at config.c:957:11
-    CT: get_next_char at config.c:780:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: getc_unlocked at stdio.h:66:0
-    RF: getc_unlocked at stdio.h:0:0
-    [...66 more events...]
-  Occurrences: 54
-
-Uncategorised
-  After events:
-    CF: git_parse_source at config.c:1075:4
-    CT: strbuf_addch at strbuf.h:228:0
-    CF: strbuf_addch at strbuf.h:230:7
-    CT: strbuf_avail at strbuf.h:139:0
-    RF: strbuf_avail at strbuf.h:0:0
-    RF: strbuf_addch at strbuf.h:0:0
-  Occurrences: 54
-
-Uncategorised
-  After events:
-    CF: git_parse_source at config.c:1082:7
-    CT: do_event at config.c:976:0
-    CF: do_event at config.c:987:11
-    CT: config_file_ftell at config.c:106:0
-    CF: config_file_ftell at config.c:107:9
-    CT: Jump to external code for ftell
-    RF: Jump to external code for ftell
-    RF: config_file_ftell at config.c:107:2
-    CF: do_event at config.c:997:6
-    CT: store_aux_event at config.c:2892:0
-    RF: store_aux_event at config.c:2927:1
-    RF: do_event at config.c:0:0
-  Occurrences: 36
-
-Uncategorised
-  After events:
-    CF: git_parse_source at config.c:1082:7
-    CT: do_event at config.c:976:0
-    RF: do_event at config.c:0:0
-  Occurrences: 144
-
-Uncategorised
-  After events:
-    CF: git_parse_source at config.c:1090:3
-    CT: strbuf_setlen at strbuf.h:160:0
-    RF: strbuf_setlen at strbuf.h:0:0
-  Occurrences: 180
-
-Uncategorised
-  After events:
-    CF: git_parse_source at config.c:1091:21
-    CT: sane_case at git-compat-util.h:1234:0
-    RF: sane_case at git-compat-util.h:0:0
-  Occurrences: 180
-
-Uncategorised
-  After events:
-    CF: git_parse_source at config.c:1091:3
-    CT: strbuf_addch at strbuf.h:228:0
-    CF: strbuf_addch at strbuf.h:230:7
-    CT: strbuf_avail at strbuf.h:139:0
-    RF: strbuf_avail at strbuf.h:0:0
-    RF: strbuf_addch at strbuf.h:0:0
-  Occurrences: 180
-
-Uncategorised
-  After events:
     CF: git_parse_source at config.c:1092:7
   Occurrences: 3126
-
-Uncategorised
-  After events:
-    CF: git_system_config at config.c:2077:2
-    CT: normalize_path_copy at path.c:1205:0
-    CF: normalize_path_copy at path.c:1206:9
-    CT: normalize_path_copy_len at path.c:1118:0
-    CF: normalize_path_copy_len at path.c:1126:14
-    CT: git_offset_1st_component at git-compat-util.h:455:0
-    CF: git_offset_1st_component at git-compat-util.h:457:9
-    CT: git_is_dir_sep at git-compat-util.h:446:0
-    RF: git_is_dir_sep at git-compat-util.h:0:0
-    RF: git_offset_1st_component at git-compat-util.h:0:0
-    CF: normalize_path_copy_len at path.c:1135:9
-    CT: git_is_dir_sep at git-compat-util.h:446:0
-    RF: git_is_dir_sep at git-compat-util.h:0:0
-    CF: normalize_path_copy_len at path.c:1179:11
-    CT: git_is_dir_sep at git-compat-util.h:446:0
-    RF: git_is_dir_sep at git-compat-util.h:0:0
-    CF: normalize_path_copy_len at path.c:1179:11
-    CT: git_is_dir_sep at git-compat-util.h:446:0
-    RF: git_is_dir_sep at git-compat-util.h:0:0
-    CF: normalize_path_copy_len at path.c:1179:11
-    CT: git_is_dir_sep at git-compat-util.h:446:0
-    RF: git_is_dir_sep at git-compat-util.h:0:0
-    RF: normalize_path_copy_len at path.c:1202:1
-    RF: normalize_path_copy at path.c:1206:2
-  Occurrences: 56
 
 Uncategorised
   After events:
@@ -6891,25 +5003,6 @@ Uncategorised
   After events:
     CF: handle_builtin at git.c:719:12
   Occurrences: 1424
-
-Uncategorised
-  After events:
-    CF: handle_builtin at git.c:721:3
-    CT: Jump to external code for exit
-  Occurrences: 13
-
-Uncategorised
-  After events:
-    CF: handle_builtin at git.c:721:3
-    CT: common_exit at common-main.c:71:0
-    CF: common_exit at common-main.c:81:2
-    CT: check_bug_if_BUG at common-main.c:63:0
-    RF: check_bug_if_BUG at common-main.c:0:0
-    CF: common_exit at common-main.c:82:2
-    CT: trace2_cmd_exit_fl at trace2.c:267:0
-    RF: trace2_cmd_exit_fl at trace2.c:288:1
-    RF: common_exit at common-main.c:84:2
-  Occurrences: 13
 
 Uncategorised
   After events:
@@ -6938,19 +5031,6 @@ Uncategorised
 
 Uncategorised
   After events:
-    CF: index_pipe at object-file.c:2421:2
-    CT: strbuf_release at strbuf.c:63:0
-    CF: strbuf_release at strbuf.c:65:3
-    CT: Jump to external code for free
-    RF: Jump to external code for free
-    CF: strbuf_release at strbuf.c:66:3
-    CT: strbuf_init at strbuf.c:54:0
-    RF: strbuf_init at strbuf.c:0:0
-    RF: strbuf_release at strbuf.c:68:1
-  Occurrences: 2
-
-Uncategorised
-  After events:
     CF: init_db at init-db.c:0:0
   Occurrences: 6
 
@@ -6971,30 +5051,6 @@ Uncategorised
 
 Uncategorised
   After events:
-    CF: normalize_path_copy_len at path.c:1126:14
-    CT: git_offset_1st_component at git-compat-util.h:455:0
-    CF: git_offset_1st_component at git-compat-util.h:457:9
-    CT: git_is_dir_sep at git-compat-util.h:446:0
-    RF: git_is_dir_sep at git-compat-util.h:0:0
-    RF: git_offset_1st_component at git-compat-util.h:0:0
-  Occurrences: 56
-
-Uncategorised
-  After events:
-    CF: normalize_path_copy_len at path.c:1135:9
-    CT: git_is_dir_sep at git-compat-util.h:446:0
-    RF: git_is_dir_sep at git-compat-util.h:0:0
-  Occurrences: 56
-
-Uncategorised
-  After events:
-    CF: normalize_path_copy_len at path.c:1179:11
-    CT: git_is_dir_sep at git-compat-util.h:446:0
-    RF: git_is_dir_sep at git-compat-util.h:0:0
-  Occurrences: 168
-
-Uncategorised
-  After events:
     CF: odb_loose_path at object-file.c:441:2
   Occurrences: 1
 
@@ -7010,94 +5066,13 @@ Uncategorised
 
 Uncategorised
   After events:
-    CF: parse_attr_line at attr.c:357:6
-    CT: starts_with at strbuf.c:10:8
-    RF: starts_with at strbuf.c:14:1
-  Occurrences: 1
-
-Uncategorised
-  After events:
-    CF: parse_attr_line at attr.c:367:8
-    CT: attr_name_valid at attr.c:175:0
-    RF: attr_name_valid at attr.c:0:0
-  Occurrences: 1
-
-Uncategorised
-  After events:
     CF: parse_long_opt at parse-options.c:333:8
   Occurrences: 20
 
 Uncategorised
   After events:
-    CF: parse_long_opt at parse-options.c:333:8
-    CT: skip_prefix at git-compat-util.h:674:0
-    RF: skip_prefix at git-compat-util.h:0:0
-  Occurrences: 5
-
-Uncategorised
-  After events:
-    CF: parse_long_opt at parse-options.c:387:10
-    CT: get_value at parse-options.c:106:0
-    RF: get_value at parse-options.c:245:1
-  Occurrences: 5
-
-Uncategorised
-  After events:
     CF: parse_options_step at parse-options.c:905:11
   Occurrences: 5
-
-Uncategorised
-  After events:
-    CF: parse_value at config.c:820:2
-    CT: strbuf_setlen at strbuf.h:160:0
-    RF: strbuf_setlen at strbuf.h:0:0
-  Occurrences: 6
-
-Uncategorised
-  After events:
-    CF: parse_value at config.c:822:11
-    CT: get_next_char at config.c:780:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: getc_unlocked at stdio.h:66:0
-    RF: getc_unlocked at stdio.h:0:0
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:0:0
-  Occurrences: 88
-
-Uncategorised
-  After events:
-    CF: parse_value at config.c:846:8
-    CT: get_next_char at config.c:780:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: getc_unlocked at stdio.h:66:0
-    RF: getc_unlocked at stdio.h:0:0
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:0:0
-  Occurrences: 2
-
-Uncategorised
-  After events:
-    CF: parse_value at config.c:866:4
-    CT: strbuf_addch at strbuf.h:228:0
-    CF: strbuf_addch at strbuf.h:230:7
-    CT: strbuf_avail at strbuf.h:139:0
-    RF: strbuf_avail at strbuf.h:0:0
-    RF: strbuf_addch at strbuf.h:0:0
-  Occurrences: 2
-
-Uncategorised
-  After events:
-    CF: parse_value at config.c:873:3
-    CT: strbuf_addch at strbuf.h:228:0
-    CF: strbuf_addch at strbuf.h:230:7
-    CT: strbuf_avail at strbuf.h:139:0
-    RF: strbuf_avail at strbuf.h:0:0
-    RF: strbuf_addch at strbuf.h:0:0
-  Occurrences: 66
 
 Uncategorised
   After events:
@@ -7121,16 +5096,6 @@ Uncategorised
 
 Uncategorised
   After events:
-    CF: safe_create_leading_directories_1 at object-file.c:346:32
-    CT: git_offset_1st_component at git-compat-util.h:455:0
-    CF: git_offset_1st_component at git-compat-util.h:457:9
-    CT: git_is_dir_sep at git-compat-util.h:446:0
-    RF: git_is_dir_sep at git-compat-util.h:0:0
-    RF: git_offset_1st_component at git-compat-util.h:0:0
-  Occurrences: 6
-
-Uncategorised
-  After events:
     CF: setup_git_directory_gently_1 at setup.c:1242:37
   Occurrences: 54
 
@@ -7146,43 +5111,11 @@ Uncategorised
 
 Uncategorised
   After events:
-    CF: store_create_section at config.c:0:0
-    CT: strbuf_add at strbuf.c:296:0
-    CF: strbuf_add at strbuf.c:298:2
-    CT: strbuf_grow at strbuf.c:91:0
-    RF: strbuf_grow at strbuf.c:0:0
-    CF: strbuf_add at strbuf.c:299:2
-    CT: Jump to external code for memcpy
-    RF: Jump to external code for memcpy
-    CF: strbuf_add at strbuf.c:300:2
-    CT: strbuf_setlen at strbuf.h:160:0
-    RF: strbuf_setlen at strbuf.h:0:0
-    RF: strbuf_add at strbuf.c:301:1
-  Occurrences: 3
-
-Uncategorised
-  After events:
     CF: store_create_section at config.c:2989:3
   Occurrences: 3
 
 Uncategorised
   After events:
-    CF: store_create_section at config.c:2989:3
-    CT: strbuf_add at strbuf.c:296:0
-    CF: strbuf_add at strbuf.c:298:2
-    CT: strbuf_grow at strbuf.c:91:0
-    RF: strbuf_grow at strbuf.c:0:0
-    CF: strbuf_add at strbuf.c:299:2
-    CT: Jump to external code for memcpy
-    RF: Jump to external code for memcpy
-    CF: strbuf_add at strbuf.c:300:2
-    CT: strbuf_setlen at strbuf.h:160:0
-    RF: strbuf_setlen at strbuf.h:0:0
-    RF: strbuf_add at strbuf.c:301:1
-  Occurrences: 2
-
-Uncategorised
-  After events:
     CF: strbuf_add at strbuf.c:298:2
   Occurrences: 96
 
@@ -7195,13 +5128,6 @@ Uncategorised
   After events:
     CF: strbuf_add at strbuf.c:300:2
   Occurrences: 96
-
-Uncategorised
-  After events:
-    CF: strbuf_addch at strbuf.h:230:7
-    CT: strbuf_avail at strbuf.h:139:0
-    RF: strbuf_avail at strbuf.h:0:0
-  Occurrences: 121
 
 Uncategorised
   After events:
@@ -7385,18 +5311,8 @@ Uncategorised
 
 Uncategorised
   After events:
-    CT: check_commit at object-file.c:2327:0
-  Occurrences: 1
-
-Uncategorised
-  After events:
-    CT: check_tag at object-file.c:2335:0
-  Occurrences: 1
-
-Uncategorised
-  After events:
     CT: clear_repository_format at setup.c:724:0
-  Occurrences: 34
+  Occurrences: 24
 
 Uncategorised
   After events:
@@ -7410,13 +5326,8 @@ Uncategorised
 
 Uncategorised
   After events:
-    CT: copy_templates_1 at init-db.c:31:0
-  Occurrences: 2
-
-Uncategorised
-  After events:
     CT: create_default_files at init-db.c:190:0
-  Occurrences: 12
+  Occurrences: 6
 
 Uncategorised
   After events:
@@ -7440,23 +5351,13 @@ Uncategorised
 
 Uncategorised
   After events:
-    CT: fill_loose_path at object-file.c:421:0
-  Occurrences: 1
-
-Uncategorised
-  After events:
     CT: get_builtin at git.c:635:0
-  Occurrences: 1424
-
-Uncategorised
-  After events:
-    CT: get_next_component at abspath.c:31:0
-  Occurrences: 84
+  Occurrences: 1398
 
 Uncategorised
   After events:
     CT: get_value at config.c:877:0
-  Occurrences: 3126
+  Occurrences: 2868
 
 Uncategorised
   After events:
@@ -7480,23 +5381,8 @@ Uncategorised
 
 Uncategorised
   After events:
-    CT: git_parse_source at config.c:1007:0
-  Occurrences: 54
-
-Uncategorised
-  After events:
     CT: git_system_config at config.c:2072:0
   Occurrences: 56
-
-Uncategorised
-  After events:
-    CT: handle_builtin at git.c:694:0
-  Occurrences: 26
-
-Uncategorised
-  After events:
-    CT: index_mem at object-file.c:2347:0
-  Occurrences: 2
 
 Uncategorised
   After events:
@@ -7520,18 +5406,13 @@ Uncategorised
 
 Uncategorised
   After events:
-    CT: normalize_path_copy_len at path.c:1118:0
-  Occurrences: 56
-
-Uncategorised
-  After events:
     CT: packed_downcast at packed-backend.c:219:0
   Occurrences: 6
 
 Uncategorised
   After events:
     CT: parse_attr_line at attr.c:333:0
-  Occurrences: 2
+  Occurrences: 1
 
 Uncategorised
   After events:
@@ -7541,27 +5422,12 @@ Uncategorised
 Uncategorised
   After events:
     CT: parse_value at config.c:816:0
-  Occurrences: 22
+  Occurrences: 16
 
 Uncategorised
   After events:
     CT: repo_read_config at config.c:2518:0
-  Occurrences: 60
-
-Uncategorised
-  After events:
-    CT: run_argv at git.c:771:0
-  Occurrences: 26
-
-Uncategorised
-  After events:
-    CT: safe_create_dir at path.c:920:0
-  Occurrences: 4
-
-Uncategorised
-  After events:
-    CT: safe_create_leading_directories_1 at object-file.c:345:0
-  Occurrences: 6
+  Occurrences: 30
 
 Uncategorised
   After events:
@@ -7576,7 +5442,7 @@ Uncategorised
 Uncategorised
   After events:
     CT: strbuf_add at strbuf.c:296:0
-  Occurrences: 101
+  Occurrences: 96
 
 Uncategorised
   After events:
@@ -7726,7 +5592,7 @@ Uncategorised
 Uncategorised
   After events:
     RF: clear_repository_format at setup.c:0:0
-  Occurrences: 34
+  Occurrences: 24
 
 Uncategorised
   After events:
@@ -7740,13 +5606,8 @@ Uncategorised
 
 Uncategorised
   After events:
-    RF: copy_templates_1 at init-db.c:94:1
-  Occurrences: 2
-
-Uncategorised
-  After events:
     RF: create_default_files at init-db.c:0:0
-  Occurrences: 12
+  Occurrences: 6
 
 Uncategorised
   After events:
@@ -7760,23 +5621,13 @@ Uncategorised
 
 Uncategorised
   After events:
-    RF: fill_loose_path at object-file.c:0:0
-  Occurrences: 1
-
-Uncategorised
-  After events:
     RF: get_builtin at git.c:0:0
-  Occurrences: 1424
-
-Uncategorised
-  After events:
-    RF: get_next_component at abspath.c:0:0
-  Occurrences: 84
+  Occurrences: 1398
 
 Uncategorised
   After events:
     RF: get_value at config.c:0:0
-  Occurrences: 3126
+  Occurrences: 2868
 
 Uncategorised
   After events:
@@ -7797,11 +5648,6 @@ Uncategorised
   After events:
     RF: git_parse_int at config.c:0:0
   Occurrences: 75
-
-Uncategorised
-  After events:
-    RF: git_parse_source at config.c:0:0
-  Occurrences: 54
 
 Uncategorised
   After events:
@@ -7830,18 +5676,13 @@ Uncategorised
 
 Uncategorised
   After events:
-    RF: normalize_path_copy_len at path.c:1202:1
-  Occurrences: 56
-
-Uncategorised
-  After events:
     RF: packed_downcast at packed-backend.c:0:0
   Occurrences: 6
 
 Uncategorised
   After events:
     RF: parse_attr_line at attr.c:0:0
-  Occurrences: 2
+  Occurrences: 1
 
 Uncategorised
   After events:
@@ -7851,22 +5692,12 @@ Uncategorised
 Uncategorised
   After events:
     RF: parse_value at config.c:0:0
-  Occurrences: 22
+  Occurrences: 16
 
 Uncategorised
   After events:
     RF: repo_read_config at config.c:0:0
-  Occurrences: 60
-
-Uncategorised
-  After events:
-    RF: safe_create_dir at path.c:929:1
-  Occurrences: 4
-
-Uncategorised
-  After events:
-    RF: safe_create_leading_directories_1 at object-file.c:395:2
-  Occurrences: 6
+  Occurrences: 30
 
 Uncategorised
   After events:
@@ -7881,7 +5712,7 @@ Uncategorised
 Uncategorised
   After events:
     RF: strbuf_add at strbuf.c:301:1
-  Occurrences: 101
+  Occurrences: 96
 
 Uncategorised
   After events:
@@ -7950,16 +5781,6 @@ Uncategorised
 
 Uncategorised
   Before events:
-    CF: check_and_freshen_file at object-file.c:963:18
-    CT: freshen_file at object-file.c:948:0
-    CF: freshen_file at object-file.c:949:10
-    CT: Jump to external code for utime
-    RF: Jump to external code for utime
-    RF: freshen_file at object-file.c:949:2
-  Occurrences: 1
-
-Uncategorised
-  Before events:
     CF: clear_repository_format at setup.c:730:2
     CT: init_repository_format at setup.c:709:0
     CF: init_repository_format at setup.c:710:33
@@ -7980,80 +5801,6 @@ Uncategorised
     RF: Jump to external code for memset
     CF: run_argv at git.c:788:4
   Occurrences: 26
-
-Uncategorised
-  Before events:
-    CF: copy_fd at copy.c:7:17
-    CT: xread at wrapper.c:225:0
-    CF: xread at wrapper.c:230:8
-    CT: Jump to external code for read
-    RF: Jump to external code for read
-    RF: xread at wrapper.c:237:3
-  Occurrences: 90
-
-Uncategorised
-  Before events:
-    CF: copy_templates_1 at init-db.c:53:3
-    CT: strbuf_addstr at strbuf.h:304:0
-    CF: strbuf_addstr at strbuf.h:305:20
-    CT: Jump to external code for strlen
-    RF: Jump to external code for strlen
-    CF: strbuf_addstr at strbuf.h:305:2
-    CT: strbuf_add at strbuf.c:297:0
-    CF: strbuf_add at strbuf.c:298:2
-    CT: strbuf_grow at strbuf.c:92:0
-    RF: strbuf_grow at strbuf.c:102:1
-    CF: strbuf_add at strbuf.c:299:2
-    CT: Jump to external code for memcpy
-    RF: Jump to external code for memcpy
-    CF: strbuf_add at strbuf.c:300:2
-    CT: strbuf_setlen at strbuf.h:161:0
-    RF: strbuf_setlen at strbuf.h:169:1
-    RF: strbuf_add at strbuf.c:301:1
-    RF: strbuf_addstr at strbuf.h:306:1
-  Occurrences: 6
-
-Uncategorised
-  Before events:
-    CF: copy_templates_1 at init-db.c:54:3
-    CT: strbuf_addstr at strbuf.h:304:0
-    CF: strbuf_addstr at strbuf.h:305:20
-    CT: Jump to external code for strlen
-    RF: Jump to external code for strlen
-    CF: strbuf_addstr at strbuf.h:305:2
-    CT: strbuf_add at strbuf.c:297:0
-    CF: strbuf_add at strbuf.c:298:2
-    CT: strbuf_grow at strbuf.c:92:0
-    RF: strbuf_grow at strbuf.c:102:1
-    CF: strbuf_add at strbuf.c:299:2
-    CT: Jump to external code for memcpy
-    RF: Jump to external code for memcpy
-    CF: strbuf_add at strbuf.c:300:2
-    CT: strbuf_setlen at strbuf.h:161:0
-    RF: strbuf_setlen at strbuf.h:169:1
-    RF: strbuf_add at strbuf.c:301:1
-    RF: strbuf_addstr at strbuf.h:306:1
-  Occurrences: 6
-
-Uncategorised
-  Before events:
-    CF: copy_templates_1 at init-db.c:69:4
-    CT: strbuf_addch at strbuf.h:229:0
-    CF: strbuf_addch at strbuf.h:230:7
-    CT: strbuf_avail at strbuf.h:140:0
-    RF: strbuf_avail at strbuf.h:141:2
-    RF: strbuf_addch at strbuf.h:234:1
-  Occurrences: 6
-
-Uncategorised
-  Before events:
-    CF: copy_templates_1 at init-db.c:70:4
-    CT: strbuf_addch at strbuf.h:229:0
-    CF: strbuf_addch at strbuf.h:230:7
-    CT: strbuf_avail at strbuf.h:140:0
-    RF: strbuf_avail at strbuf.h:141:2
-    RF: strbuf_addch at strbuf.h:234:1
-  Occurrences: 6
 
 Uncategorised
   Before events:
@@ -8092,803 +5839,8 @@ Uncategorised
 
 Uncategorised
   Before events:
-    CF: fill_loose_path at object-file.c:427:3
-    CT: strbuf_addch at strbuf.h:229:0
-    CF: strbuf_addch at strbuf.h:230:7
-  Occurrences: 19
-
-Uncategorised
-  Before events:
-    CF: fill_loose_path at object-file.c:427:3
-    CT: strbuf_addch at strbuf.h:229:0
-    CF: strbuf_addch at strbuf.h:230:7
-    CT: strbuf_avail at strbuf.h:140:0
-    RF: strbuf_avail at strbuf.h:141:2
-    RF: strbuf_addch at strbuf.h:234:1
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: fill_loose_path at object-file.c:428:3
-    CT: strbuf_addch at strbuf.h:229:0
-    CF: strbuf_addch at strbuf.h:230:7
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: fill_loose_path at object-file.c:428:3
-    CT: strbuf_addch at strbuf.h:229:0
-    CF: strbuf_addch at strbuf.h:230:7
-    CT: strbuf_avail at strbuf.h:140:0
-    RF: strbuf_avail at strbuf.h:141:2
-    CF: strbuf_addch at strbuf.h:231:3
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: fill_loose_path at object-file.c:428:3
-    CT: strbuf_addch at strbuf.h:229:0
-    CF: strbuf_addch at strbuf.h:230:7
-    CT: strbuf_avail at strbuf.h:140:0
-    RF: strbuf_avail at strbuf.h:141:2
-    RF: strbuf_addch at strbuf.h:234:1
-  Occurrences: 18
-
-Uncategorised
-  Before events:
-    CF: fill_loose_path at object-file.c:430:4
-    CT: strbuf_addch at strbuf.h:229:0
-    CF: strbuf_addch at strbuf.h:230:7
-    CT: strbuf_avail at strbuf.h:140:0
-    RF: strbuf_avail at strbuf.h:141:2
-    RF: strbuf_addch at strbuf.h:234:1
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: get_next_component at abspath.c:46:2
-    CT: strbuf_add at strbuf.c:297:0
-    CF: strbuf_add at strbuf.c:298:2
-    CT: strbuf_grow at strbuf.c:92:0
-    RF: strbuf_grow at strbuf.c:102:1
-    CF: strbuf_add at strbuf.c:299:2
-    CT: Jump to external code for memcpy
-    RF: Jump to external code for memcpy
-    CF: strbuf_add at strbuf.c:300:2
-    CT: strbuf_setlen at strbuf.h:161:0
-    RF: strbuf_setlen at strbuf.h:169:1
-    RF: strbuf_add at strbuf.c:301:1
-  Occurrences: 42
-
-Uncategorised
-  Before events:
-    CF: get_next_component at abspath.c:48:2
-    CT: strbuf_remove at strbuf.c:292:0
-    CF: strbuf_remove at strbuf.c:293:2
-    CT: strbuf_splice at strbuf.c:233:0
-    CF: strbuf_splice at strbuf.c:243:2
-    CT: Jump to external code for memmove
-    RF: Jump to external code for memmove
-    CF: strbuf_splice at strbuf.c:246:2
-    CT: Jump to external code for memcpy
-    RF: Jump to external code for memcpy
-    CF: strbuf_splice at strbuf.c:247:2
-    CT: strbuf_setlen at strbuf.h:161:0
-    RF: strbuf_setlen at strbuf.h:169:1
-    RF: strbuf_splice at strbuf.c:248:1
-    RF: strbuf_remove at strbuf.c:294:1
-  Occurrences: 84
-
-Uncategorised
-  Before events:
-    CF: get_value at config.c:885:7
-    CT: get_next_char at config.c:781:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: Jump to external code for getc_unlocked
-    RF: Jump to external code for getc_unlocked
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:814:1
-    CF: get_value at config.c:888:8
-    CT: iskeychar at config.c:537:0
-    RF: iskeychar at config.c:538:2
-  Occurrences: 3126
-
-Uncategorised
-  Before events:
-    CF: get_value at config.c:890:3
-    CT: strbuf_addch at strbuf.h:229:0
-    CF: strbuf_addch at strbuf.h:230:7
-    CT: strbuf_avail at strbuf.h:140:0
-    RF: strbuf_avail at strbuf.h:141:2
-    RF: strbuf_addch at strbuf.h:234:1
-  Occurrences: 2844
-
-Uncategorised
-  Before events:
-    CF: get_value at config.c:894:7
-    CT: get_next_char at config.c:781:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: Jump to external code for getc_unlocked
-    RF: Jump to external code for getc_unlocked
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:814:1
-    CF: get_value at config.c:900:11
-    CT: parse_value at config.c:817:0
-    CF: parse_value at config.c:820:2
-  Occurrences: 282
-
-Uncategorised
-  Before events:
-    CF: get_value at config.c:900:11
-    CT: parse_value at config.c:817:0
-    CF: parse_value at config.c:820:2
-    CT: strbuf_setlen at strbuf.h:161:0
-    RF: strbuf_setlen at strbuf.h:169:1
-    CF: parse_value at config.c:822:11
-    CT: get_next_char at config.c:781:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: Jump to external code for getc_unlocked
-    RF: Jump to external code for getc_unlocked
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:814:1
-    CF: parse_value at config.c:822:11
-    CT: get_next_char at config.c:781:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: Jump to external code for getc_unlocked
-    RF: Jump to external code for getc_unlocked
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:814:1
-    CF: parse_value at config.c:822:11
-    CT: get_next_char at config.c:781:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: Jump to external code for getc_unlocked
-    RF: Jump to external code for getc_unlocked
-    [...759 more events...]
-  Occurrences: 2
-
-Uncategorised
-  Before events:
-    CF: get_value at config.c:900:11
-    CT: parse_value at config.c:817:0
-    CF: parse_value at config.c:820:2
-    CT: strbuf_setlen at strbuf.h:161:0
-    RF: strbuf_setlen at strbuf.h:169:1
-    CF: parse_value at config.c:822:11
-    CT: get_next_char at config.c:781:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: Jump to external code for getc_unlocked
-    RF: Jump to external code for getc_unlocked
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:814:1
-    CF: parse_value at config.c:822:11
-    CT: get_next_char at config.c:781:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: Jump to external code for getc_unlocked
-    RF: Jump to external code for getc_unlocked
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:814:1
-    CF: parse_value at config.c:873:3
-    CT: strbuf_addch at strbuf.h:229:0
-    CF: strbuf_addch at strbuf.h:230:7
-    CT: strbuf_avail at strbuf.h:140:0
-    RF: strbuf_avail at strbuf.h:141:2
-    RF: strbuf_addch at strbuf.h:234:1
-    CF: parse_value at config.c:822:11
-    [...90 more events...]
-  Occurrences: 18
-
-Uncategorised
-  Before events:
-    CF: get_value at config.c:900:11
-    CT: parse_value at config.c:817:0
-    CF: parse_value at config.c:820:2
-    CT: strbuf_setlen at strbuf.h:161:0
-    RF: strbuf_setlen at strbuf.h:169:1
-    CF: parse_value at config.c:822:11
-    CT: get_next_char at config.c:781:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: Jump to external code for getc_unlocked
-    RF: Jump to external code for getc_unlocked
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:814:1
-    CF: parse_value at config.c:822:11
-    CT: get_next_char at config.c:781:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: Jump to external code for getc_unlocked
-    RF: Jump to external code for getc_unlocked
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:814:1
-    CF: parse_value at config.c:873:3
-    CT: strbuf_addch at strbuf.h:229:0
-    CF: strbuf_addch at strbuf.h:230:7
-    CT: strbuf_avail at strbuf.h:140:0
-    RF: strbuf_avail at strbuf.h:141:2
-    RF: strbuf_addch at strbuf.h:234:1
-    CF: parse_value at config.c:822:11
-    [...90 more events...]
-  Occurrences: 6
-
-Uncategorised
-  Before events:
-    CF: get_value at config.c:900:11
-    CT: parse_value at config.c:817:0
-    CF: parse_value at config.c:820:2
-    CT: strbuf_setlen at strbuf.h:161:0
-    RF: strbuf_setlen at strbuf.h:169:1
-    CF: parse_value at config.c:822:11
-    CT: get_next_char at config.c:781:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: Jump to external code for getc_unlocked
-    RF: Jump to external code for getc_unlocked
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:814:1
-    CF: parse_value at config.c:822:11
-    CT: get_next_char at config.c:781:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: Jump to external code for getc_unlocked
-    RF: Jump to external code for getc_unlocked
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:814:1
-    CF: parse_value at config.c:873:3
-    CT: strbuf_addch at strbuf.h:229:0
-    CF: strbuf_addch at strbuf.h:230:7
-    CT: strbuf_avail at strbuf.h:140:0
-    RF: strbuf_avail at strbuf.h:141:2
-    RF: strbuf_addch at strbuf.h:234:1
-    CF: parse_value at config.c:822:11
-    [...72 more events...]
-  Occurrences: 36
-
-Uncategorised
-  Before events:
-    CF: get_value at config.c:900:11
-    CT: parse_value at config.c:817:0
-    CF: parse_value at config.c:820:2
-    CT: strbuf_setlen at strbuf.h:161:0
-    RF: strbuf_setlen at strbuf.h:169:1
-    CF: parse_value at config.c:822:11
-    CT: get_next_char at config.c:781:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: Jump to external code for getc_unlocked
-    RF: Jump to external code for getc_unlocked
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:814:1
-    CF: parse_value at config.c:822:11
-    CT: get_next_char at config.c:781:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: Jump to external code for getc_unlocked
-    RF: Jump to external code for getc_unlocked
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:814:1
-    CF: parse_value at config.c:873:3
-    CT: strbuf_addch at strbuf.h:229:0
-    CF: strbuf_addch at strbuf.h:230:7
-    CT: strbuf_avail at strbuf.h:140:0
-    RF: strbuf_avail at strbuf.h:141:2
-    RF: strbuf_addch at strbuf.h:234:1
-    CF: parse_value at config.c:822:11
-    [...72 more events...]
-  Occurrences: 12
-
-Uncategorised
-  Before events:
-    CF: get_value at config.c:900:11
-    CT: parse_value at config.c:817:0
-    CF: parse_value at config.c:820:2
-    CT: strbuf_setlen at strbuf.h:161:0
-    RF: strbuf_setlen at strbuf.h:169:1
-    CF: parse_value at config.c:822:11
-    CT: get_next_char at config.c:781:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: Jump to external code for getc_unlocked
-    RF: Jump to external code for getc_unlocked
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:814:1
-    CF: parse_value at config.c:822:11
-    CT: get_next_char at config.c:781:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: Jump to external code for getc_unlocked
-    RF: Jump to external code for getc_unlocked
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:814:1
-    CF: parse_value at config.c:873:3
-    CT: strbuf_addch at strbuf.h:229:0
-    CF: strbuf_addch at strbuf.h:230:7
-    CT: strbuf_avail at strbuf.h:140:0
-    RF: strbuf_avail at strbuf.h:141:2
-    RF: strbuf_addch at strbuf.h:234:1
-    CF: parse_value at config.c:822:11
-    [...18 more events...]
-  Occurrences: 18
-
-Uncategorised
-  Before events:
-    CF: get_value at config.c:900:11
-    CT: parse_value at config.c:817:0
-    CF: parse_value at config.c:820:2
-    CT: strbuf_setlen at strbuf.h:161:0
-    RF: strbuf_setlen at strbuf.h:169:1
-    CF: parse_value at config.c:822:11
-    CT: get_next_char at config.c:781:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: Jump to external code for getc_unlocked
-    RF: Jump to external code for getc_unlocked
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:814:1
-    CF: parse_value at config.c:822:11
-    CT: get_next_char at config.c:781:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: Jump to external code for getc_unlocked
-    RF: Jump to external code for getc_unlocked
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:814:1
-    CF: parse_value at config.c:873:3
-    CT: strbuf_addch at strbuf.h:229:0
-    CF: strbuf_addch at strbuf.h:230:7
-    CT: strbuf_avail at strbuf.h:140:0
-    RF: strbuf_avail at strbuf.h:141:2
-    RF: strbuf_addch at strbuf.h:234:1
-    CF: parse_value at config.c:822:11
-    [...18 more events...]
-  Occurrences: 18
-
-Uncategorised
-  Before events:
-    CF: get_value at config.c:910:8
-    CT: check_repo_format at setup.c:585:0
-    CF: check_repo_format at setup.c:589:6
-    CT: Jump to external code for strcmp
-    RF: Jump to external code for strcmp
-    CF: check_repo_format at setup.c:591:11
-    CT: skip_prefix at git-compat-util.h:676:0
-    RF: skip_prefix at git-compat-util.h:684:1
-    CF: check_repo_format at setup.c:613:9
-    CT: read_worktree_config at setup.c:514:0
-    CF: read_worktree_config at setup.c:517:6
-    CT: Jump to external code for strcmp
-    RF: Jump to external code for strcmp
-    CF: read_worktree_config at setup.c:518:19
-    CT: git_config_bool at config.c:1448:0
-    CF: git_config_bool at config.c:1449:10
-    CT: git_parse_maybe_bool at config.c:1427:0
-    CF: git_parse_maybe_bool at config.c:1428:10
-    CT: git_parse_maybe_bool_text at config.c:1336:0
-    CF: git_parse_maybe_bool_text at config.c:1341:7
-    CT: Jump to external code for strcasecmp
-    RF: Jump to external code for strcasecmp
-    CF: git_parse_maybe_bool_text at config.c:1342:10
-    CT: Jump to external code for strcasecmp
-    RF: Jump to external code for strcasecmp
-    CF: git_parse_maybe_bool_text at config.c:1343:10
-    CT: Jump to external code for strcasecmp
-    RF: Jump to external code for strcasecmp
-    CF: git_parse_maybe_bool_text at config.c:1345:7
-    CT: Jump to external code for strcasecmp
-    [...6 more events...]
-  Occurrences: 18
-
-Uncategorised
-  Before events:
-    CF: get_value at config.c:910:8
-    CT: check_repo_format at setup.c:585:0
-    CF: check_repo_format at setup.c:589:6
-    CT: Jump to external code for strcmp
-    RF: Jump to external code for strcmp
-    CF: check_repo_format at setup.c:591:11
-    CT: skip_prefix at git-compat-util.h:676:0
-    RF: skip_prefix at git-compat-util.h:684:1
-    CF: check_repo_format at setup.c:613:9
-    CT: read_worktree_config at setup.c:514:0
-    CF: read_worktree_config at setup.c:517:6
-    CT: Jump to external code for strcmp
-    RF: Jump to external code for strcmp
-    CF: read_worktree_config at setup.c:519:13
-    CT: Jump to external code for strcmp
-    RF: Jump to external code for strcmp
-    RF: read_worktree_config at setup.c:526:1
-    RF: check_repo_format at setup.c:614:1
-  Occurrences: 36
-
-Uncategorised
-  Before events:
-    CF: get_value at config.c:910:8
-    CT: store_aux at config.c:2930:0
-    CF: store_aux at config.c:2954:7
-    CT: matches at config.c:2876:0
-    CF: matches at config.c:2877:6
-    CT: Jump to external code for strcmp
-    RF: Jump to external code for strcmp
-    RF: matches at config.c:2888:1
-    RF: store_aux at config.c:2960:2
-  Occurrences: 36
-
-Uncategorised
-  Before events:
-    CF: git_config_int at config.c:1306:7
-    CT: git_parse_int at config.c:1233:0
-    CF: git_parse_int at config.c:1235:7
-  Occurrences: 9
-
-Uncategorised
-  Before events:
-    CF: git_parse_source at config.c:1027:7
-    CT: get_next_char at config.c:781:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: Jump to external code for getc_unlocked
-    RF: Jump to external code for getc_unlocked
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:814:1
-    CF: git_parse_source at config.c:1045:9
-    CT: do_event at config.c:977:0
-    CF: do_event at config.c:987:11
-    CT: config_file_ftell at config.c:106:0
-    CF: config_file_ftell at config.c:107:9
-    CT: Jump to external code for ftell
-  Occurrences: 18
-
-Uncategorised
-  Before events:
-    CF: git_parse_source at config.c:1027:7
-    CT: get_next_char at config.c:781:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: Jump to external code for getc_unlocked
-    RF: Jump to external code for getc_unlocked
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:814:1
-    CF: git_parse_source at config.c:1045:9
-    CT: do_event at config.c:977:0
-    RF: do_event at config.c:1005:1
-    RF: git_parse_source at config.c:1143:1
-    CF: do_config_from at config.c:1954:2
-    CT: strbuf_release at strbuf.c:63:0
-  Occurrences: 36
-
-Uncategorised
-  Before events:
-    CF: git_parse_source at config.c:1027:7
-    CT: get_next_char at config.c:781:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: Jump to external code for getc_unlocked
-    RF: Jump to external code for getc_unlocked
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:814:1
-    CF: git_parse_source at config.c:1049:8
-    CT: do_event at config.c:977:0
-    CF: do_event at config.c:987:11
-  Occurrences: 18
-
-Uncategorised
-  Before events:
-    CF: git_parse_source at config.c:1027:7
-    CT: get_next_char at config.c:781:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: Jump to external code for getc_unlocked
-    RF: Jump to external code for getc_unlocked
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:814:1
-    CF: git_parse_source at config.c:1049:8
-    CT: do_event at config.c:977:0
-    RF: do_event at config.c:1005:1
-  Occurrences: 36
-
-Uncategorised
-  Before events:
-    CF: git_parse_source at config.c:1027:7
-    CT: get_next_char at config.c:781:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: Jump to external code for getc_unlocked
-    RF: Jump to external code for getc_unlocked
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:814:1
-    CF: git_parse_source at config.c:1057:8
-    CT: do_event at config.c:977:0
-    CF: do_event at config.c:987:11
-  Occurrences: 18
-
-Uncategorised
-  Before events:
-    CF: git_parse_source at config.c:1027:7
-    CT: get_next_char at config.c:781:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: Jump to external code for getc_unlocked
-    RF: Jump to external code for getc_unlocked
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:814:1
-    CF: git_parse_source at config.c:1057:8
-    CT: do_event at config.c:977:0
-    RF: do_event at config.c:1005:1
-  Occurrences: 162
-
-Uncategorised
-  Before events:
-    CF: git_parse_source at config.c:1027:7
-    CT: get_next_char at config.c:781:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: Jump to external code for getc_unlocked
-    RF: Jump to external code for getc_unlocked
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:814:1
-    CF: git_parse_source at config.c:1068:8
-    CT: do_event at config.c:977:0
-    CF: do_event at config.c:987:11
-    CT: config_file_ftell at config.c:106:0
-    CF: config_file_ftell at config.c:107:9
-    CT: Jump to external code for ftell
-  Occurrences: 18
-
-Uncategorised
-  Before events:
-    CF: git_parse_source at config.c:1027:7
-    CT: get_next_char at config.c:781:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: Jump to external code for getc_unlocked
-    RF: Jump to external code for getc_unlocked
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:814:1
-    CF: git_parse_source at config.c:1068:8
-    CT: do_event at config.c:977:0
-    RF: do_event at config.c:1005:1
-    CF: git_parse_source at config.c:1072:4
-    CT: strbuf_setlen at strbuf.h:161:0
-    RF: strbuf_setlen at strbuf.h:169:1
-  Occurrences: 36
-
-Uncategorised
-  Before events:
-    CF: git_parse_source at config.c:1027:7
-    CT: get_next_char at config.c:781:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: Jump to external code for getc_unlocked
-    RF: Jump to external code for getc_unlocked
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:814:1
-    CF: git_parse_source at config.c:1082:7
-    CT: do_event at config.c:977:0
-    CF: do_event at config.c:987:11
-  Occurrences: 36
-
-Uncategorised
-  Before events:
-    CF: git_parse_source at config.c:1027:7
-    CT: get_next_char at config.c:781:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: Jump to external code for getc_unlocked
-    RF: Jump to external code for getc_unlocked
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:814:1
-    CF: git_parse_source at config.c:1082:7
-    CT: do_event at config.c:977:0
-    RF: do_event at config.c:1005:1
-  Occurrences: 144
-
-Uncategorised
-  Before events:
-    CF: git_parse_source at config.c:1045:9
-    CT: do_event at config.c:977:0
-    CF: do_event at config.c:987:11
-    CT: config_file_ftell at config.c:106:0
-    CF: config_file_ftell at config.c:107:9
-    CT: Jump to external code for ftell
-    RF: Jump to external code for ftell
-    RF: config_file_ftell at config.c:107:2
-    CF: do_event at config.c:997:6
-    CT: store_aux_event at config.c:2892:0
-    RF: store_aux_event at config.c:2927:1
-    RF: do_event at config.c:1005:1
-  Occurrences: 18
-
-Uncategorised
-  Before events:
-    CF: git_parse_source at config.c:1057:8
-    CT: do_event at config.c:977:0
-    CF: do_event at config.c:987:11
-    CT: config_file_ftell at config.c:106:0
-    CF: config_file_ftell at config.c:107:9
-    CT: Jump to external code for ftell
-    RF: Jump to external code for ftell
-    RF: config_file_ftell at config.c:107:2
-    CF: do_event at config.c:997:6
-    CT: store_aux_event at config.c:2892:0
-    RF: store_aux_event at config.c:2927:1
-    RF: do_event at config.c:1005:1
-  Occurrences: 18
-
-Uncategorised
-  Before events:
-    CF: git_parse_source at config.c:1068:8
-    CT: do_event at config.c:977:0
-    CF: do_event at config.c:987:11
-    CT: config_file_ftell at config.c:106:0
-    CF: config_file_ftell at config.c:107:9
-    CT: Jump to external code for ftell
-    RF: Jump to external code for ftell
-    RF: config_file_ftell at config.c:107:2
-    RF: do_event at config.c:1005:1
-  Occurrences: 18
-
-Uncategorised
-  Before events:
-    CF: git_parse_source at config.c:1073:8
-    CT: get_base_var at config.c:954:0
-    CF: get_base_var at config.c:957:11
-    CT: get_next_char at config.c:781:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: Jump to external code for getc_unlocked
-    RF: Jump to external code for getc_unlocked
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:814:1
-    CF: get_base_var at config.c:964:8
-    CT: iskeychar at config.c:537:0
-    RF: iskeychar at config.c:538:2
-    CF: get_base_var at config.c:966:22
-    CT: sane_case at git-compat-util.h:1235:0
-    RF: sane_case at git-compat-util.h:1238:2
-    CF: get_base_var at config.c:966:3
-    CT: strbuf_addch at strbuf.h:229:0
-    CF: strbuf_addch at strbuf.h:230:7
-    CT: strbuf_avail at strbuf.h:140:0
-    RF: strbuf_avail at strbuf.h:141:2
-    RF: strbuf_addch at strbuf.h:234:1
-    CF: get_base_var at config.c:957:11
-    CT: get_next_char at config.c:781:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: Jump to external code for getc_unlocked
-    RF: Jump to external code for getc_unlocked
-    [...81 more events...]
-  Occurrences: 54
-
-Uncategorised
-  Before events:
-    CF: git_parse_source at config.c:1075:4
-    CT: strbuf_addch at strbuf.h:229:0
-    CF: strbuf_addch at strbuf.h:230:7
-    CT: strbuf_avail at strbuf.h:140:0
-    RF: strbuf_avail at strbuf.h:141:2
-    RF: strbuf_addch at strbuf.h:234:1
-  Occurrences: 54
-
-Uncategorised
-  Before events:
-    CF: git_parse_source at config.c:1082:7
-    CT: do_event at config.c:977:0
-    CF: do_event at config.c:987:11
-    CT: config_file_ftell at config.c:106:0
-    CF: config_file_ftell at config.c:107:9
-    CT: Jump to external code for ftell
-    RF: Jump to external code for ftell
-    RF: config_file_ftell at config.c:107:2
-    CF: do_event at config.c:997:6
-    CT: store_aux_event at config.c:2892:0
-    RF: store_aux_event at config.c:2927:1
-    RF: do_event at config.c:1005:1
-  Occurrences: 36
-
-Uncategorised
-  Before events:
-    CF: git_parse_source at config.c:1091:3
-    CT: strbuf_addch at strbuf.h:229:0
-    CF: strbuf_addch at strbuf.h:230:7
-    CT: strbuf_avail at strbuf.h:140:0
-    RF: strbuf_avail at strbuf.h:141:2
-    RF: strbuf_addch at strbuf.h:234:1
-  Occurrences: 180
-
-Uncategorised
-  Before events:
     CF: git_parse_source at config.c:1092:7
   Occurrences: 78
-
-Uncategorised
-  Before events:
-    CF: git_system_config at config.c:2077:2
-    CT: normalize_path_copy at path.c:1205:0
-    CF: normalize_path_copy at path.c:1206:9
-    CT: normalize_path_copy_len at path.c:1119:0
-    CF: normalize_path_copy_len at path.c:1126:14
-    CT: git_offset_1st_component at git-compat-util.h:456:0
-    CF: git_offset_1st_component at git-compat-util.h:457:9
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    RF: git_offset_1st_component at git-compat-util.h:457:2
-    CF: normalize_path_copy_len at path.c:1129:7
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: normalize_path_copy_len at path.c:1135:9
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: normalize_path_copy_len at path.c:1175:35
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: normalize_path_copy_len at path.c:1175:35
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: normalize_path_copy_len at path.c:1175:35
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: normalize_path_copy_len at path.c:1175:35
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: normalize_path_copy_len at path.c:1175:35
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    [...94 more events...]
-  Occurrences: 56
-
-Uncategorised
-  Before events:
-    CF: handle_builtin at git.c:721:3
-    CT: Jump to external code for exit
-  Occurrences: 13
-
-Uncategorised
-  Before events:
-    CF: handle_builtin at git.c:721:3
-    CT: common_exit at common-main.c:72:0
-    CF: common_exit at common-main.c:81:2
-    CT: check_bug_if_BUG at common-main.c:64:0
-    RF: check_bug_if_BUG at common-main.c:66:3
-    CF: common_exit at common-main.c:82:2
-    CT: trace2_cmd_exit_fl at trace2.c:267:0
-    RF: trace2_cmd_exit_fl at trace2.c:288:1
-    RF: common_exit at common-main.c:84:2
-  Occurrences: 13
 
 Uncategorised
   Before events:
@@ -8924,19 +5876,6 @@ Uncategorised
     CT: trace2_cmd_error_va_fl at trace2.c:292:0
     [...38 more events...]
   Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: index_pipe at object-file.c:2421:2
-    CT: strbuf_release at strbuf.c:63:0
-    CF: strbuf_release at strbuf.c:65:3
-    CT: Jump to external code for free
-    RF: Jump to external code for free
-    CF: strbuf_release at strbuf.c:66:3
-    CT: strbuf_init at strbuf.c:55:0
-    RF: strbuf_init at strbuf.c:60:1
-    RF: strbuf_release at strbuf.c:68:1
-  Occurrences: 2
 
 Uncategorised
   Before events:
@@ -8985,118 +5924,8 @@ Uncategorised
 
 Uncategorised
   Before events:
-    CF: normalize_path_copy_len at path.c:1126:14
-    CT: git_offset_1st_component at git-compat-util.h:456:0
-    CF: git_offset_1st_component at git-compat-util.h:457:9
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    RF: git_offset_1st_component at git-compat-util.h:457:2
-  Occurrences: 56
-
-Uncategorised
-  Before events:
     CF: odb_loose_path at object-file.c:441:2
   Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: parse_value at config.c:822:11
-    CT: get_next_char at config.c:781:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: Jump to external code for getc_unlocked
-    RF: Jump to external code for getc_unlocked
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:814:1
-    CF: parse_value at config.c:822:11
-    CT: get_next_char at config.c:781:0
-    CF: get_next_char at config.c:782:10
-  Occurrences: 14
-
-Uncategorised
-  Before events:
-    CF: parse_value at config.c:822:11
-    CT: get_next_char at config.c:781:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: Jump to external code for getc_unlocked
-    RF: Jump to external code for getc_unlocked
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:814:1
-    CF: parse_value at config.c:846:8
-    CT: get_next_char at config.c:781:0
-    CF: get_next_char at config.c:782:10
-  Occurrences: 2
-
-Uncategorised
-  Before events:
-    CF: parse_value at config.c:822:11
-    CT: get_next_char at config.c:781:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: Jump to external code for getc_unlocked
-    RF: Jump to external code for getc_unlocked
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:814:1
-    CF: parse_value at config.c:873:3
-    CT: strbuf_addch at strbuf.h:229:0
-    CF: strbuf_addch at strbuf.h:230:7
-  Occurrences: 66
-
-Uncategorised
-  Before events:
-    CF: parse_value at config.c:822:11
-    CT: get_next_char at config.c:781:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: Jump to external code for getc_unlocked
-    RF: Jump to external code for getc_unlocked
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:814:1
-    RF: parse_value at config.c:875:1
-    CF: get_value at config.c:910:8
-    CT: git_config_include at config.c:429:0
-  Occurrences: 6
-
-Uncategorised
-  Before events:
-    CF: parse_value at config.c:846:8
-    CT: get_next_char at config.c:781:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: Jump to external code for getc_unlocked
-    RF: Jump to external code for getc_unlocked
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:814:1
-    CF: parse_value at config.c:866:4
-    CT: strbuf_addch at strbuf.h:229:0
-    CF: strbuf_addch at strbuf.h:230:7
-  Occurrences: 2
-
-Uncategorised
-  Before events:
-    CF: parse_value at config.c:866:4
-    CT: strbuf_addch at strbuf.h:229:0
-    CF: strbuf_addch at strbuf.h:230:7
-    CT: strbuf_avail at strbuf.h:140:0
-    RF: strbuf_avail at strbuf.h:141:2
-    RF: strbuf_addch at strbuf.h:234:1
-  Occurrences: 2
-
-Uncategorised
-  Before events:
-    CF: parse_value at config.c:873:3
-    CT: strbuf_addch at strbuf.h:229:0
-    CF: strbuf_addch at strbuf.h:230:7
-    CT: strbuf_avail at strbuf.h:140:0
-    RF: strbuf_avail at strbuf.h:141:2
-    RF: strbuf_addch at strbuf.h:234:1
-  Occurrences: 66
 
 Uncategorised
   Before events:
@@ -9149,32 +5978,6 @@ Uncategorised
     CF: safe_create_leading_directories_1 at object-file.c:353:21
     [...166 more events...]
   Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: safe_create_leading_directories_1 at object-file.c:346:32
-    CT: git_offset_1st_component at git-compat-util.h:456:0
-    CF: git_offset_1st_component at git-compat-util.h:457:9
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    RF: git_offset_1st_component at git-compat-util.h:457:2
-  Occurrences: 6
-
-Uncategorised
-  Before events:
-    CF: store_create_section at config.c:2989:3
-    CT: strbuf_add at strbuf.c:297:0
-    CF: strbuf_add at strbuf.c:298:2
-    CT: strbuf_grow at strbuf.c:92:0
-    RF: strbuf_grow at strbuf.c:102:1
-    CF: strbuf_add at strbuf.c:299:2
-    CT: Jump to external code for memcpy
-    RF: Jump to external code for memcpy
-    CF: strbuf_add at strbuf.c:300:2
-    CT: strbuf_setlen at strbuf.h:161:0
-    RF: strbuf_setlen at strbuf.h:169:1
-    RF: strbuf_add at strbuf.c:301:1
-  Occurrences: 5
 
 Uncategorised
   Before events:
@@ -9326,181 +6129,6 @@ Uncategorised
     RF: strbuf_addstr at strbuf.h:306:1
   Occurrences: 30
 
-Uncategorised
-  Before events:
-    CT: check_commit at object-file.c:2328:0
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CT: check_tag at object-file.c:2336:0
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CT: clear_repository_format at setup.c:725:0
-  Occurrences: 10
-
-Uncategorised
-  Before events:
-    CT: copy_templates_1 at init-db.c:31:0
-  Occurrences: 2
-
-Uncategorised
-  Before events:
-    CT: create_default_files at init-db.c:195:0
-  Occurrences: 6
-
-Uncategorised
-  Before events:
-    CT: fill_loose_path at object-file.c:422:0
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CT: get_builtin at git.c:636:0
-  Occurrences: 26
-
-Uncategorised
-  Before events:
-    CT: get_next_component at abspath.c:32:0
-  Occurrences: 84
-
-Uncategorised
-  Before events:
-    CT: get_value at config.c:878:0
-  Occurrences: 258
-
-Uncategorised
-  Before events:
-    CT: git_parse_source at config.c:1009:0
-  Occurrences: 54
-
-Uncategorised
-  Before events:
-    CT: handle_builtin at git.c:694:0
-  Occurrences: 26
-
-Uncategorised
-  Before events:
-    CT: index_mem at object-file.c:2347:0
-  Occurrences: 2
-
-Uncategorised
-  Before events:
-    CT: normalize_path_copy_len at path.c:1119:0
-  Occurrences: 56
-
-Uncategorised
-  Before events:
-    CT: parse_attr_line at attr.c:335:0
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CT: parse_value at config.c:817:0
-  Occurrences: 6
-
-Uncategorised
-  Before events:
-    CT: repo_read_config at config.c:2519:0
-  Occurrences: 30
-
-Uncategorised
-  Before events:
-    CT: run_argv at git.c:772:0
-  Occurrences: 26
-
-Uncategorised
-  Before events:
-    CT: safe_create_dir at path.c:920:0
-  Occurrences: 4
-
-Uncategorised
-  Before events:
-    CT: safe_create_leading_directories_1 at object-file.c:345:0
-  Occurrences: 6
-
-Uncategorised
-  Before events:
-    CT: strbuf_add at strbuf.c:297:0
-  Occurrences: 5
-
-Uncategorised
-  Before events:
-    RF: clear_repository_format at setup.c:731:1
-  Occurrences: 10
-
-Uncategorised
-  Before events:
-    RF: copy_templates_1 at init-db.c:94:1
-  Occurrences: 2
-
-Uncategorised
-  Before events:
-    RF: create_default_files at init-db.c:318:2
-  Occurrences: 6
-
-Uncategorised
-  Before events:
-    RF: fill_loose_path at object-file.c:432:1
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    RF: get_builtin at git.c:644:1
-  Occurrences: 26
-
-Uncategorised
-  Before events:
-    RF: get_next_component at abspath.c:49:1
-  Occurrences: 84
-
-Uncategorised
-  Before events:
-    RF: get_value at config.c:914:1
-  Occurrences: 258
-
-Uncategorised
-  Before events:
-    RF: git_parse_source at config.c:1143:1
-  Occurrences: 54
-
-Uncategorised
-  Before events:
-    RF: normalize_path_copy_len at path.c:1202:1
-  Occurrences: 56
-
-Uncategorised
-  Before events:
-    RF: parse_attr_line at attr.c:419:1
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    RF: parse_value at config.c:875:1
-  Occurrences: 6
-
-Uncategorised
-  Before events:
-    RF: repo_read_config at config.c:2546:1
-  Occurrences: 30
-
-Uncategorised
-  Before events:
-    RF: safe_create_dir at path.c:929:1
-  Occurrences: 4
-
-Uncategorised
-  Before events:
-    RF: safe_create_leading_directories_1 at object-file.c:395:2
-  Occurrences: 6
-
-Uncategorised
-  Before events:
-    RF: strbuf_add at strbuf.c:301:1
-  Occurrences: 5
-
 ## Divergences with unique coordinates by type
 
 CoordinatesRemoved
@@ -9512,22 +6140,19 @@ CoordinatesChangedSmall
 CoordinatesChangedLarge
   Unique divergence coordinates: 21
 
-LibraryCallAdded
-  Unique divergence coordinates: 16
-
 LibraryCallReplaced
   Unique divergence coordinates: 3
 
 LibraryCallRemoved
-  Unique divergence coordinates: 59
+  Unique divergence coordinates: 43
 
 ProgramCallRemoved
-  Unique divergence coordinates: 57
+  Unique divergence coordinates: 28
 
 Uncategorised
-  Unique divergence coordinates: 417
+  Unique divergence coordinates: 214
 
 ## Summary
 
-1162 unique divergence coordinates
-217303 divergence occurrences
+898 unique divergence coordinates
+180777 divergence occurrences
