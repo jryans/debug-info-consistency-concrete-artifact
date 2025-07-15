@@ -17,4 +17,4 @@ testcases
 *.tsv
 
 info
-divergences-verbose.md
+divergences-*.md
