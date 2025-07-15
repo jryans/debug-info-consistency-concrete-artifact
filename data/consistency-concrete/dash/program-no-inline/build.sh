@@ -34,7 +34,8 @@ for i in ${!levels[*]}; do
   # cc_level_opts="CC_${level}_OPTS"
   # make \
   #   CC=wllvm \
-  #   CFLAGS="${CC_COMMON_OPTS} ${CC_CLANG_OPTS} ${!cc_level_opts} -fno-inline"
+  #   CFLAGS="${CC_COMMON_OPTS} ${CC_CLANG_OPTS} ${!cc_level_opts} -fno-inline" \
+  #   LDFLAGS="${LD_COMMON_OPTS}"
 
   # ## Extract bitcode
   # extract-bc ${TARGET_PATH}

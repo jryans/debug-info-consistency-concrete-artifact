@@ -35,6 +35,7 @@ for i in ${!levels[*]}; do
   make \
     CC=wllvm \
     CFLAGS="${CC_COMMON_OPTS} ${CC_CLANG_OPTS} ${!cc_level_opts}" \
+    LDFLAGS="${LD_COMMON_OPTS}" \
     NO_PTHREADS=1
 
   ## Extract bitcode
