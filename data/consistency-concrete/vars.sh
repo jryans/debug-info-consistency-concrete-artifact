@@ -50,7 +50,7 @@ fi
 if [[ "$OS" == 'mac' ]]; then
   LD_COMMON_OPTS="${LD_SYSROOT_OPTS} -Wl,-no_pie"
 else
-  LD_COMMON_OPTS="${LD_SYSROOT_OPTS}"
+  LD_COMMON_OPTS="${LD_SYSROOT_OPTS} -Wl,-no-pie"
 fi
 
 KLEE=$(klee release-debug klee)
