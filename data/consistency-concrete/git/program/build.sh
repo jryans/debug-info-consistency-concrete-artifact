@@ -131,7 +131,7 @@ for i in ${!levels[*]}; do
   ## Build for binary with debug info
   cc_level_opts="CC_${level}_OPTS"
   make \
-    CC="gcc-${version}" \
+    CC="$(gcc release-${version} gcc)" \
     CFLAGS="${CC_COMMON_OPTS} ${CC_GCC_OPTS} ${!cc_level_opts}" \
     LDFLAGS="${LD_COMMON_OPTS}" \
     NO_PTHREADS=1

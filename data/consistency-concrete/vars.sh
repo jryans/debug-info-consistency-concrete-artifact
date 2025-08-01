@@ -6,6 +6,16 @@ else
   OS="linux"
 fi
 
+gcc() {
+  local build=${1}
+  local program=${2:-}
+  if [ -z "${program}" ]; then
+    echo "${HOME}/Projects/GNU/gcc/builds/${build}"
+    return
+  fi
+  echo "${HOME}/Projects/GNU/gcc/builds/${build}/bin/${program}"
+}
+
 llvm() {
   local build=${1}
   local program=${2:-}
@@ -30,11 +40,18 @@ klee() {
 if [[ "$OS" == 'mac' ]]; then
   CC_SYSROOT_OPTS="--sysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk"
 else
-  CC_SYSROOT_OPTS="-B/nix/store/maxa3xhmxggrc5v2vc0c3pjb79hjlkp9-glibc-2.40-66/lib/ -idirafter /nix/store/81awch8mhqanda1vy0c09bflgra4cxh0-glibc-2.40-66-dev/include -B/nix/store/yg4ahy7gahx91nq80achmzilrjyv0scj-gcc-13.3.0/lib/gcc/x86_64-unknown-linux-gnu/13.3.0 --gcc-toolchain=/nix/store/yg4ahy7gahx91nq80achmzilrjyv0scj-gcc-13.3.0 -B/nix/store/w9mcn0hi97xp5m9ds5nsc4cr99qspz9h-clang-18.1.8-lib/lib -resource-dir=/nix/store/c6mlpw8bb0n9rc38hihmy0zzc1w81ljr-clang-wrapper-18.1.8/resource-root ${NIX_CFLAGS_COMPILE}"
+  CC_SYSROOT_OPTS="-B/nix/store/maxa3xhmxggrc5v2vc0c3pjb79hjlkp9-glibc-2.40-66/lib/ -idirafter /nix/store/81awch8mhqanda1vy0c09bflgra4cxh0-glibc-2.40-66-dev/include -B/nix/store/yg4ahy7gahx91nq80achmzilrjyv0scj-gcc-13.3.0/lib/gcc/x86_64-unknown-linux-gnu/13.3.0 -B/nix/store/w9mcn0hi97xp5m9ds5nsc4cr99qspz9h-clang-18.1.8-lib/lib ${NIX_CFLAGS_COMPILE}"
 fi
 CC_COMMON_OPTS="${CC_SYSROOT_OPTS} -g"
 CC_CLANG_OPTS="-fno-discard-value-names -Xclang -disable-O0-optnone"
-CC_GCC_OPTS="-gdwarf-4 -gno-strict-dwarf"
+if [[ "$OS" == 'linux' ]]; then
+  CC_CLANG_OPTS="${CC_CLANG_OPTS} --gcc-toolchain=/nix/store/yg4ahy7gahx91nq80achmzilrjyv0scj-gcc-13.3.0 -resource-dir=/nix/store/c6mlpw8bb0n9rc38hihmy0zzc1w81ljr-clang-wrapper-18.1.8/resource-root"
+fi
+
+CC_GCC_OPTS=""
+if [[ "$OS" == 'mac' ]]; then
+  CC_GCC_OPTS="-gdwarf-4 -gno-strict-dwarf"
+fi
 CC_O0_OPTS=""
 CC_O1_OPTS="-O1"
 CC_O2_OPTS="-O2"
@@ -42,9 +59,8 @@ CC_O3_OPTS="-O3"
 CC_Og_OPTS="-Og"
 CC_LV_OPTS="${CC_Og_OPTS} -gvariable-location-views"
 
-if [[ "$OS" == 'mac' ]]; then
-  LD_SYSROOT_OPTS=""
-else
+LD_SYSROOT_OPTS=""
+if [[ "$OS" == 'linux' ]]; then
   LD_SYSROOT_OPTS="-Wl,-dynamic-linker=/nix/store/maxa3xhmxggrc5v2vc0c3pjb79hjlkp9-glibc-2.40-66/lib/ld-linux-x86-64.so.2 -L/nix/store/yg4ahy7gahx91nq80achmzilrjyv0scj-gcc-13.3.0/lib/gcc/x86_64-unknown-linux-gnu/13.3.0 -L/nix/store/mhd0rk497xm0xnip7262xdw9bylvzh99-gcc-13.3.0-lib/lib -L/nix/store/yg4ahy7gahx91nq80achmzilrjyv0scj-gcc-13.3.0/lib -L/nix/store/czlhi3r9b6ip4xyynwibfhm458ljwsir-gcc-13.3.0-libgcc/lib -L/nix/store/w9mcn0hi97xp5m9ds5nsc4cr99qspz9h-clang-18.1.8-lib/lib ${NIX_LDFLAGS/-rpath*\/out\/lib/}"
 fi
 if [[ "$OS" == 'mac' ]]; then
