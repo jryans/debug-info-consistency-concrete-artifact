@@ -13,7 +13,7 @@ source "${SCRIPT_DIR}/../../vars.sh"
 PIPELINE_UTILS_PATH="${SCRIPT_DIR}/../../shared/pipeline.py"
 
 export LLVM_COMPILER="clang"
-export LLVM_COMPILER_PATH="$(llvm release-clang-lldb-13.0.0)/bin"
+export LLVM_COMPILER_PATH="$(llvm release-clang-lldb-13)/bin"
 
 # Expected by SPEC build system
 export SPEC="${HOME}/Projects/Benchmarks/spec-cpu-2017"
@@ -43,18 +43,18 @@ cp \
   "${SCRIPT_DIR}/clang/${version}/${level}/${TARGET_NAME}.bc"
 
 ## Disassemble O0 bitcode for debugging
-$(llvm release-clang-lldb-${version}.0.0 llvm-dis) \
+$(llvm release-clang-lldb-${version} llvm-dis) \
   "${SCRIPT_DIR}/clang/${version}/${level}/${TARGET_NAME}.bc"
 
 ## Apply mem2reg only
 mkdir -p "${SCRIPT_DIR}/clang/${version}/${level}-mem2reg"
-$(llvm release-clang-lldb-${version}.0.0 opt) \
+$(llvm release-clang-lldb-${version} opt) \
   -o "${SCRIPT_DIR}/clang/${version}/${level}-mem2reg/${TARGET_NAME}.bc" \
   --mem2reg \
   "${SCRIPT_DIR}/clang/${version}/${level}/${TARGET_NAME}.bc"
 
 ## Disassemble O0 plus mem2reg bitcode for debugging
-$(llvm release-clang-lldb-${version}.0.0 llvm-dis) \
+$(llvm release-clang-lldb-${version} llvm-dis) \
   "${SCRIPT_DIR}/clang/${version}/${level}-mem2reg/${TARGET_NAME}.bc"
 
 # Clang O1+
@@ -84,7 +84,7 @@ for i in ${!levels[*]}; do
     "${SCRIPT_DIR}/clang/${version}/${level}/${TARGET_NAME}.bc"
 
   ## Disassemble bitcode for debugging
-  $(llvm release-clang-lldb-${version}.0.0 llvm-dis) \
+  $(llvm release-clang-lldb-${version} llvm-dis) \
     "${SCRIPT_DIR}/clang/${version}/${level}/${TARGET_NAME}.bc"
 done
 
@@ -95,7 +95,7 @@ version="13"
 echo "## Building \`${TARGET_NAME}\` (Clang ${version}, ${level} pipeline, pass by pass)"
 
 # `--print-pipeline-passes` first added in LLVM 14
-pipeline=$($(llvm release-clang-lldb-14.0.0 opt) \
+pipeline=$($(llvm release-clang-lldb-14 opt) \
            --passes="default<${level}>" \
            --print-pipeline-passes \
            < /dev/null)
@@ -109,13 +109,13 @@ for i in $(seq 0 8); do
 
   ## Apply only the portion of pipeline up to this pass
   mkdir -p "${SCRIPT_DIR}/clang/${version}/${level}-passes/${li}-${name}"
-  $(llvm release-clang-lldb-${version}.0.0 opt) \
+  $(llvm release-clang-lldb-${version} opt) \
     -o "${SCRIPT_DIR}/clang/${version}/${level}-passes/${li}-${name}/${TARGET_NAME}.bc" \
     --passes="${portion}" \
     "${SCRIPT_DIR}/clang/${version}/O0/${TARGET_NAME}.bc"
 
   ## Disassemble bitcode for debugging
-  $(llvm release-clang-lldb-${version}.0.0 llvm-dis) \
+  $(llvm release-clang-lldb-${version} llvm-dis) \
     "${SCRIPT_DIR}/clang/${version}/${level}-passes/${li}-${name}/${TARGET_NAME}.bc"
 done
 
