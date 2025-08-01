@@ -105,6 +105,7 @@ for i in ${!levels[*]}; do
     "${SCRIPT_DIR}/clang/${version}/${level}/${TARGET_NAME}"
 
   ## Store test suite dependencies
+  mkdir -p "${SCRIPT_DIR}/clang/${version}/${level}/test-deps/"
   cp -R \
     bin-wrappers \
     "${SCRIPT_DIR}/clang/${version}/${level}/test-deps/"
@@ -159,8 +160,7 @@ for i in ${!levels[*]}; do
     "${SCRIPT_DIR}/gcc/${version}/${level}/${TARGET_NAME}"
 
   ## Store test suite dependencies
-  ## JRS: This still isn't right, copying `bin-wrappers` somehow
-  ## brings the files it contains instead of the whole directory...
+  mkdir -p "${SCRIPT_DIR}/gcc/${version}/${level}/test-deps"
   cp -R \
     bin-wrappers \
     "${SCRIPT_DIR}/gcc/${version}/${level}/test-deps/"
