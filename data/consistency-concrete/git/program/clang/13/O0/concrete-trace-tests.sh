@@ -18,7 +18,7 @@ echo "## Collecting concrete trace of \`${TARGET_NAME}\` (Clang ${version}, ${le
 
 # Tests from the target's test suite to analyse
 tests=(
-  t0001-init
+  # t0001-init
   t1007-hash-object
   # t1410-reflog: trace collection abysmally slow for some reason
   # t2402-worktree-list
