@@ -41,7 +41,7 @@ CoordinatesRemoved
 
 CoordinatesRemoved
   Before events:
-    CF: git_setup_gettext at gettext.c:122:2
+    CF: git_setup_gettext at gettext.c:112:3
   After events:
     CF: git_setup_gettext at gettext.c:0:0
   Occurrences: 26
@@ -1171,13 +1171,6 @@ CoordinatesRemoved
     RF: init_buffer_slab_with_stride at commit.c:288:1
   After events:
     RF: init_buffer_slab_with_stride at commit.c:0:0
-  Occurrences: 26
-
-CoordinatesRemoved
-  Before events:
-    RF: init_gettext_charset at gettext.c:101:1
-  After events:
-    RF: init_gettext_charset at gettext.c:0:0
   Occurrences: 26
 
 CoordinatesRemoved
@@ -3160,13 +3153,6 @@ CoordinatesChangedSmall
   After events:
     CT: index_pipe at object-file.c:2410:0
   Occurrences: 4
-
-CoordinatesChangedSmall
-  Before events:
-    CT: init_gettext_charset at gettext.c:81:0
-  After events:
-    CT: init_gettext_charset at gettext.c:80:0
-  Occurrences: 26
 
 CoordinatesChangedSmall
   Before events:
@@ -6132,10 +6118,10 @@ Uncategorised
 ## Divergences with unique coordinates by type
 
 CoordinatesRemoved
-  Unique divergence coordinates: 287
+  Unique divergence coordinates: 286
 
 CoordinatesChangedSmall
-  Unique divergence coordinates: 302
+  Unique divergence coordinates: 301
 
 CoordinatesChangedLarge
   Unique divergence coordinates: 21
@@ -6154,5 +6140,5 @@ Uncategorised
 
 ## Summary
 
-898 unique divergence coordinates
-180777 divergence occurrences
+896 unique divergence coordinates
+180725 divergence occurrences
