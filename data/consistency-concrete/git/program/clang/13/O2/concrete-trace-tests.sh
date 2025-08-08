@@ -58,11 +58,13 @@ for test in ${tests[*]}; do
       "${SCRIPT_DIR}/test-deps/bin-wrappers/${trace_variant}/git" \
       "${SCRIPT_DIR}/test-deps/bin-wrappers/git"
 
-    # Remove temporary trace collection from past runs
-    rm -rf traces
-    find . -name 'trace-*' -delete
+    # Make trace directory used as temp storage during execution
+    CON_TRACE_DIR="${SCRIPT_DIR}/concrete-trace/${test}/${trace_variant}/traces"
+    export CON_TRACE_DIR
+    # Remove first, just in case something left over from aborted run
+    rm -rf ${CON_TRACE_DIR}
+    mkdir -p ${CON_TRACE_DIR}
 
-    mkdir -p ${SCRIPT_DIR}/concrete-trace/${test}/${trace_variant}
     env \
       "./${test}.sh" \
       --debug
@@ -70,14 +72,14 @@ for test in ${tests[*]}; do
     # Collect traces from all test processes
     # Sorted by file creation time from oldest to newest
     (
-      mkdir traces;
-      find . -name 'trace-*' -not -path './traces/*' -print0 | \
-        xargs -I % -0 mv % traces;
-      cd traces;
+      cd ${CON_TRACE_DIR};
       ls -tr | \
         xargs cat \
         > ${SCRIPT_DIR}/concrete-trace/${test}/${trace_variant}/trace
     )
+
+    # Remove temp trace storage
+    rm -rf ${CON_TRACE_DIR}
 
     # Remove link to this variant's binary wrapper
     rm -f "${SCRIPT_DIR}/test-deps/bin-wrappers/git"
