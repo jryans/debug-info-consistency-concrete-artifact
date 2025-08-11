@@ -69,8 +69,7 @@ for test in ${tests[*]}; do
     mkdir -p ${CON_TRACE_DIR}
 
     env \
-      "./${test}.sh" \
-      --debug
+      "./${test}.sh"
 
     # Collect traces from all test processes
     # Sorted by file creation time from oldest to newest
