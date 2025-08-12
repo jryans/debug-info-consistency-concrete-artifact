@@ -17,9 +17,9 @@ version="13"
 echo "## Collecting concrete trace of \`${TARGET_NAME}\` (Clang ${version}, ${level})"
 
 # Tests from the target's test suite to analyse
-# tests=(
+tests=(
 #   t0001-init
-#   t1007-hash-object
+  t1007-hash-object
 #   t1410-reflog
 #   t2402-worktree-list
 #   t3201-branch-contains
@@ -27,13 +27,13 @@ echo "## Collecting concrete trace of \`${TARGET_NAME}\` (Clang ${version}, ${le
 #   t3301-notes
 #   t4002-diff-basic
 #   t5505-remote
-# )
-tests=$(
-  find . -name 't[0-9]*.sh' |
-  sort |
-  cut -d '/' -f 2 |
-  cut -d '.' -f 1
 )
+# tests=$(
+#   find . -name 't[0-9]*.sh' |
+#   sort |
+#   cut -d '/' -f 2 |
+#   cut -d '.' -f 1
+# )
 
 # Different trace variants to collect
 # These map to different trace options in `vars.sh`
@@ -92,9 +92,12 @@ for test in ${tests[*]}; do
     # Sorted by file creation time from oldest to newest
     (
       cd ${CON_TRACE_DIR};
-      ls -tr | \
-        xargs cat \
-        > ${SCRIPT_DIR}/concrete-trace/${test}/${trace_variant}/trace
+      # Keep individual process files, re-number for matching across runs
+      i=0
+      for trace in $(ls -tr); do
+        mv ${trace} ../${i}
+        let i+=1
+      done
     )
 
     # Remove temp trace storage
