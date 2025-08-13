@@ -93,13 +93,9 @@ for test in ${tests[*]}; do
     (
       cd ${CON_TRACE_DIR};
       # Keep individual process files, re-number for matching across runs
-      # Also assemble concatenated trace as well
-      rm -f ../trace
-      touch ../trace
       i=0
       for trace in $(ls -tr); do
         mv ${trace} ../${i}
-        cat ../${i} >> ../trace
         let i+=1
       done
     )
