@@ -163,45 +163,10 @@ CoordinatesRemoved
 
 CoordinatesRemoved
   Before events:
-    RF: SHA1DCUpdate at sha1.c:1858:1
-  After events:
-    IRF: SHA1DCUpdate at sha1.c:0:0
-  Occurrences: 42
-
-CoordinatesRemoved
-  Before events:
     RF: _ at gettext.h:49:1
   After events:
-    IRF: _ at gettext.h:0:0
-  Occurrences: 110
-
-CoordinatesRemoved
-  Before events:
-    RF: __volatile_list_del at list.h:186:1
-  After events:
-    IRF: __volatile_list_del at list.h:0:0
-  Occurrences: 31
-
-CoordinatesRemoved
-  Before events:
-    RF: access_error_is_ok at wrapper.c:651:2
-  After events:
-    IRF: access_error_is_ok at wrapper.c:0:0
-  Occurrences: 270
-
-CoordinatesRemoved
-  Before events:
-    RF: acquire_snapshot at packed-backend.c:160:1
-  After events:
-    IRF: acquire_snapshot at packed-backend.c:0:0
-  Occurrences: 15
-
-CoordinatesRemoved
-  Before events:
-    RF: activate_tempfile at tempfile.c:120:1
-  After events:
-    IRF: activate_tempfile at tempfile.c:0:0
-  Occurrences: 31
+    IRF: _ at gettext.h:0:9
+  Occurrences: 14
 
 CoordinatesRemoved
   Before events:
@@ -212,31 +177,10 @@ CoordinatesRemoved
 
 CoordinatesRemoved
   Before events:
-    RF: add_per_worktree_entries_to_dir at files-backend.c:219:1
-  After events:
-    IRF: add_per_worktree_entries_to_dir at files-backend.c:0:0
-  Occurrences: 9
-
-CoordinatesRemoved
-  Before events:
-    RF: adjust_git_path at path.c:415:1
-  After events:
-    IRF: adjust_git_path at path.c:0:0
-  Occurrences: 79
-
-CoordinatesRemoved
-  Before events:
-    RF: all_attrs_init at attr.c:173:1
-  After events:
-    IRF: all_attrs_init at attr.c:0:0
-  Occurrences: 42
-
-CoordinatesRemoved
-  Before events:
     RF: alloc_table at hashmap.c:92:1
   After events:
     IRF: alloc_table at hashmap.c:0:0
-  Occurrences: 323
+  Occurrences: 253
 
 CoordinatesRemoved
   Before events:
@@ -247,73 +191,10 @@ CoordinatesRemoved
 
 CoordinatesRemoved
   Before events:
-    RF: attr_hashmap_add at attr.c:113:1
-  After events:
-    IRF: attr_hashmap_add at attr.c:0:0
-  Occurrences: 162
-
-CoordinatesRemoved
-  Before events:
-    RF: attr_hashmap_get at attr.c:96:2
-  After events:
-    IRF: attr_hashmap_get at attr.c:0:0
-  Occurrences: 208
-
-CoordinatesRemoved
-  Before events:
-    RF: attr_name_valid at attr.c:192:1
-  After events:
-    IRF: attr_name_valid at attr.c:0:0
-  Occurrences: 308
-
-CoordinatesRemoved
-  Before events:
-    RF: base_ref_iterator_free at iterator.c:43:1
-  After events:
-    IRF: base_ref_iterator_free at iterator.c:0:0
-  Occurrences: 33
-
-CoordinatesRemoved
-  Before events:
-    RF: base_ref_iterator_init at iterator.c:36:1
-  After events:
-    IRF: base_ref_iterator_init at iterator.c:0:0
-  Occurrences: 33
-
-CoordinatesRemoved
-  Before events:
-    RF: batch_fsync_enabled at cache.h:1782:2
-  After events:
-    IRF: batch_fsync_enabled at cache.h:0:0
-  Occurrences: 16
-
-CoordinatesRemoved
-  Before events:
-    RF: bisearch at utf8.c:50:1
-  After events:
-    IRF: bisearch at utf8.c:0:0
-  Occurrences: 168
-
-CoordinatesRemoved
-  Before events:
     RF: bootstrap_attr_stack at attr.c:878:1
   After events:
     IRF: bootstrap_attr_stack at attr.c:0:0
-  Occurrences: 42
-
-CoordinatesRemoved
-  Before events:
-    RF: bucket at hashmap.c:107:2
-  After events:
-    IRF: bucket at hashmap.c:0:0
-  Occurrences: 1333
-
-CoordinatesRemoved
-  Before events:
-    RF: cat_one_file at cat-file.c:241:1
-  After events:
-    IRF: cat_one_file at cat-file.c:0:0
-  Occurrences: 7
+  Occurrences: 18
 
 CoordinatesRemoved
   Before events:
@@ -324,24 +205,10 @@ CoordinatesRemoved
 
 CoordinatesRemoved
   Before events:
-    RF: check_and_freshen_file at object-file.c:966:1
-  After events:
-    IRF: check_and_freshen_file at object-file.c:0:0
-  Occurrences: 9
-
-CoordinatesRemoved
-  Before events:
     RF: check_and_freshen_local at object-file.c:979:2
   After events:
     IRF: check_and_freshen_local at object-file.c:0:0
   Occurrences: 9
-
-CoordinatesRemoved
-  Before events:
-    RF: check_and_freshen_nonlocal at object-file.c:992:1
-  After events:
-    IRF: check_and_freshen_nonlocal at object-file.c:0:0
-  Occurrences: 8
 
 CoordinatesRemoved
   Before events:
@@ -352,122 +219,10 @@ CoordinatesRemoved
 
 CoordinatesRemoved
   Before events:
-    RF: check_argc at config.c:179:3
-  After events:
-    IRF: check_argc at config.c:0:0
-  Occurrences: 1
-
-CoordinatesRemoved
-  Before events:
-    RF: check_bug_if_BUG at common-main.c:66:3
-  After events:
-    IRF: check_bug_if_BUG at common-main.c:0:0
-  Occurrences: 58
-
-CoordinatesRemoved
-  Before events:
-    RF: check_refname_component at refs.c:243:1
-  After events:
-    IRF: check_refname_component at refs.c:0:0
-  Occurrences: 204
-
-CoordinatesRemoved
-  Before events:
-    RF: check_refname_format at refs.c:291:2
-  After events:
-    IRF: check_refname_format at refs.c:0:0
-  Occurrences: 72
-
-CoordinatesRemoved
-  Before events:
-    RF: check_vector_add at attr.c:508:1
-  After events:
-    IRF: check_vector_add at attr.c:0:0
-  Occurrences: 18
-
-CoordinatesRemoved
-  Before events:
-    RF: cleanup_path at path.c:47:2
-  After events:
-    IRF: cleanup_path at path.c:0:0
-  Occurrences: 297
-
-CoordinatesRemoved
-  Before events:
     RF: clear_repository_format at setup.c:731:1
   After events:
     IRF: clear_repository_format at setup.c:0:0
-  Occurrences: 134
-
-CoordinatesRemoved
-  Before events:
-    RF: close_deflated_stream at streaming.c:72:1
-  After events:
-    IRF: close_deflated_stream at streaming.c:0:0
-  Occurrences: 7
-
-CoordinatesRemoved
-  Before events:
-    RF: close_istream at streaming.c:444:2
-  After events:
-    IRF: close_istream at streaming.c:0:0
-  Occurrences: 7
-
-CoordinatesRemoved
-  Before events:
-    RF: cmp_icase at dir.c:3055:1
-  After events:
-    IRF: cmp_icase at dir.c:0:0
-  Occurrences: 3342
-
-CoordinatesRemoved
-  Before events:
-    RF: commit_lock_file_to at lockfile.h:317:2
-  After events:
-    IRF: commit_lock_file_to at lockfile.h:0:0
-  Occurrences: 31
-
-CoordinatesRemoved
-  Before events:
-    RF: commit_pager_choice at git.c:123:1
-  After events:
-    IRF: commit_pager_choice at git.c:0:0
-  Occurrences: 60
-
-CoordinatesRemoved
-  Before events:
-    RF: config_store_data_clear at config.c:2872:1
-  After events:
-    IRF: config_store_data_clear at config.c:0:0
-  Occurrences: 25
-
-CoordinatesRemoved
-  Before events:
-    RF: configset_add_value at config.c:2352:2
-  After events:
-    IRF: configset_add_value at config.c:0:0
-  Occurrences: 221
-
-CoordinatesRemoved
-  Before events:
-    RF: configset_find_element at config.c:2309:1
-  After events:
-    IRF: configset_find_element at config.c:0:0
-  Occurrences: 460
-
-CoordinatesRemoved
-  Before events:
-    RF: configset_iter at config.c:2243:1
-  After events:
-    IRF: configset_iter at config.c:0:0
-  Occurrences: 83
-
-CoordinatesRemoved
-  Before events:
-    RF: copy_array at git-compat-util.h:1100:1
-  After events:
-    IRF: copy_array at git-compat-util.h:0:0
-  Occurrences: 9
+  Occurrences: 76
 
 CoordinatesRemoved
   Before events:
@@ -478,34 +233,6 @@ CoordinatesRemoved
 
 CoordinatesRemoved
   Before events:
-    RF: copy_templates at init-db.c:154:1
-  After events:
-    IRF: copy_templates at init-db.c:0:0
-  Occurrences: 6
-
-CoordinatesRemoved
-  Before events:
-    RF: create_default_files at init-db.c:318:2
-  After events:
-    IRF: create_default_files at init-db.c:0:0
-  Occurrences: 6
-
-CoordinatesRemoved
-  Before events:
-    RF: create_dir_entry at ref-cache.c:96:2
-  After events:
-    IRF: create_dir_entry at ref-cache.c:0:0
-  Occurrences: 9
-
-CoordinatesRemoved
-  Before events:
-    RF: create_object_directory at init-db.c:340:1
-  After events:
-    IRF: create_object_directory at init-db.c:0:0
-  Occurrences: 6
-
-CoordinatesRemoved
-  Before events:
     RF: create_snapshot at packed-backend.c:695:1
   After events:
     IRF: create_snapshot at packed-backend.c:0:0
@@ -513,86 +240,16 @@ CoordinatesRemoved
 
 CoordinatesRemoved
   Before events:
-    RF: create_symref_locked at files-backend.c:1921:1
-  After events:
-    IRF: create_symref_locked at files-backend.c:0:0
-  Occurrences: 6
-
-CoordinatesRemoved
-  Before events:
-    RF: create_tmpfile at object-file.c:1953:1
-  After events:
-    IRF: create_tmpfile at object-file.c:0:0
-  Occurrences: 8
-
-CoordinatesRemoved
-  Before events:
-    RF: deactivate_tempfile at tempfile.c:128:1
-  After events:
-    IRF: deactivate_tempfile at tempfile.c:0:0
-  Occurrences: 31
-
-CoordinatesRemoved
-  Before events:
-    RF: determine_macros at attr.c:1069:1
-  After events:
-    IRF: determine_macros at attr.c:0:0
-  Occurrences: 42
-
-CoordinatesRemoved
-  Before events:
-    RF: dir_prefix at path.c:75:2
-  After events:
-    IRF: dir_prefix at path.c:0:0
-  Occurrences: 79
-
-CoordinatesRemoved
-  Before events:
-    RF: directory_size at object-file.c:1917:1
-  After events:
-    IRF: directory_size at object-file.c:0:0
-  Occurrences: 8
-
-CoordinatesRemoved
-  Before events:
-    RF: do_config_from_file at config.c:1981:2
-  After events:
-    IRF: do_config_from_file at config.c:0:0
-  Occurrences: 134
-
-CoordinatesRemoved
-  Before events:
-    RF: do_event at config.c:1005:1
-  After events:
-    IRF: do_event at config.c:0:0
-  Occurrences: 1832
-
-CoordinatesRemoved
-  Before events:
     RF: do_for_each_repo_ref at refs.c:1571:1
   After events:
-    IRF: do_for_each_repo_ref at refs.c:0:0
+    IRF: do_for_each_repo_ref at refs.c:0:9
   Occurrences: 9
-
-CoordinatesRemoved
-  Before events:
-    RF: do_git_config_sequence at config.c:2176:2
-  After events:
-    IRF: do_git_config_sequence at config.c:0:0
-  Occurrences: 133
-
-CoordinatesRemoved
-  Before events:
-    RF: do_xmallocz at wrapper.c:89:1
-  After events:
-    IRF: do_xmallocz at wrapper.c:0:0
-  Occurrences: 491
 
 CoordinatesRemoved
   Before events:
     RF: end_loose_object_common at object-file.c:2043:1
   After events:
-    IRF: end_loose_object_common at object-file.c:0:0
+    IRF: end_loose_object_common at object-file.c:0:2
   Occurrences: 8
 
 CoordinatesRemoved
@@ -601,13 +258,6 @@ CoordinatesRemoved
   After events:
     IRF: ends_with at git-compat-util.h:0:0
   Occurrences: 18
-
-CoordinatesRemoved
-  Before events:
-    RF: entry_equals at hashmap.c:99:2
-  After events:
-    IRF: entry_equals at hashmap.c:0:0
-  Occurrences: 215
 
 CoordinatesRemoved
   Before events:
@@ -620,78 +270,8 @@ CoordinatesRemoved
   Before events:
     RF: expand_namespace at environment.c:149:1
   After events:
-    IRF: expand_namespace at environment.c:0:0
+    IRF: expand_namespace at environment.c:0:10
   Occurrences: 58
-
-CoordinatesRemoved
-  Before events:
-    RF: fdopen_lock_file at lockfile.h:235:2
-  After events:
-    IRF: fdopen_lock_file at lockfile.h:0:0
-  Occurrences: 6
-
-CoordinatesRemoved
-  Before events:
-    RF: files_assert_main_repository at files-backend.c:111:3
-  After events:
-    IRF: files_assert_main_repository at files-backend.c:0:0
-  Occurrences: 6
-
-CoordinatesRemoved
-  Before events:
-    RF: files_downcast at files-backend.c:138:2
-  After events:
-    IRF: files_downcast at files-backend.c:0:0
-  Occurrences: 96
-
-CoordinatesRemoved
-  Before events:
-    RF: fill at attr.c:1036:2
-  After events:
-    IRF: fill at attr.c:0:0
-  Occurrences: 42
-
-CoordinatesRemoved
-  Before events:
-    RF: fill_loose_path at object-file.c:432:1
-  After events:
-    IRF: fill_loose_path at object-file.c:0:0
-  Occurrences: 53
-
-CoordinatesRemoved
-  Before events:
-    RF: find_cached_object at object-file.c:301:1
-  After events:
-    IRF: find_cached_object at object-file.c:0:0
-  Occurrences: 27
-
-CoordinatesRemoved
-  Before events:
-    RF: find_descendant_ref at refs.c:1496:1
-  After events:
-    IRF: find_descendant_ref at refs.c:0:0
-  Occurrences: 6
-
-CoordinatesRemoved
-  Before events:
-    RF: find_entry_ptr at hashmap.c:142:2
-  After events:
-    IRF: find_entry_ptr at hashmap.c:0:0
-  Occurrences: 898
-
-CoordinatesRemoved
-  Before events:
-    RF: find_ref_storage_backend at refs.c:37:1
-  After events:
-    IRF: find_ref_storage_backend at refs.c:0:0
-  Occurrences: 15
-
-CoordinatesRemoved
-  Before events:
-    RF: find_reference_location at packed-backend.c:583:1
-  After events:
-    IRF: find_reference_location at packed-backend.c:0:0
-  Occurrences: 81
 
 CoordinatesRemoved
   Before events:
@@ -704,99 +284,29 @@ CoordinatesRemoved
   Before events:
     RF: format_object_header_literally at object-file.c:1061:2
   After events:
-    IRF: format_object_header_literally at object-file.c:0:0
+    IRF: format_object_header_literally at object-file.c:0:71
   Occurrences: 34
-
-CoordinatesRemoved
-  Before events:
-    RF: free_commit_list at commit.c:638:1
-  After events:
-    IRF: free_commit_list at commit.c:0:0
-  Occurrences: 1
-
-CoordinatesRemoved
-  Before events:
-    RF: free_individual_entries at hashmap.c:189:1
-  After events:
-    IRF: free_individual_entries at hashmap.c:0:0
-  Occurrences: 13
-
-CoordinatesRemoved
-  Before events:
-    RF: free_preprocessed_options at parse-options.c:770:1
-  After events:
-    IRF: free_preprocessed_options at parse-options.c:0:0
-  Occurrences: 60
-
-CoordinatesRemoved
-  Before events:
-    RF: freshen_file at object-file.c:949:2
-  After events:
-    IRF: freshen_file at object-file.c:0:0
-  Occurrences: 1
 
 CoordinatesRemoved
   Before events:
     RF: freshen_loose_object at object-file.c:2105:2
   After events:
-    IRF: freshen_loose_object at object-file.c:0:0
+    IRF: freshen_loose_object at object-file.c:0:9
   Occurrences: 9
-
-CoordinatesRemoved
-  Before events:
-    RF: freshen_packed_object at object-file.c:2121:1
-  After events:
-    IRF: freshen_packed_object at object-file.c:0:0
-  Occurrences: 9
-
-CoordinatesRemoved
-  Before events:
-    RF: fspathncmp at dir.c:88:2
-  After events:
-    IRF: fspathncmp at dir.c:0:0
-  Occurrences: 56
 
 CoordinatesRemoved
   Before events:
     RF: gather_stats at convert.c:78:1
   After events:
-    IRF: gather_stats at convert.c:0:0
+    IRF: gather_stats at convert.c:0:6
   Occurrences: 5
 
 CoordinatesRemoved
   Before events:
     RF: get_base_var at config.c:968:1
   After events:
-    IRF: get_base_var at config.c:0:0
+    IRF: get_base_var at config.c:0:32
   Occurrences: 174
-
-CoordinatesRemoved
-  Before events:
-    RF: get_builtin at git.c:644:1
-  After events:
-    IRF: get_builtin at git.c:0:0
-  Occurrences: 60
-
-CoordinatesRemoved
-  Before events:
-    RF: get_common_dir at setup.c:303:1
-  After events:
-    IRF: get_common_dir at setup.c:0:0
-  Occurrences: 110
-
-CoordinatesRemoved
-  Before events:
-    RF: get_conv_flags at object-file.c:312:1
-  After events:
-    IRF: get_conv_flags at object-file.c:0:0
-  Occurrences: 21
-
-CoordinatesRemoved
-  Before events:
-    RF: get_device_or_die at setup.c:1072:2
-  After events:
-    IRF: get_device_or_die at setup.c:0:0
-  Occurrences: 56
 
 CoordinatesRemoved
   Before events:
@@ -807,73 +317,24 @@ CoordinatesRemoved
 
 CoordinatesRemoved
   Before events:
-    RF: get_hash_hex_algop at hex.c:62:1
-  After events:
-    IRF: get_hash_hex_algop at hex.c:0:0
-  Occurrences: 9
-
-CoordinatesRemoved
-  Before events:
-    RF: get_home_gitattributes at attr.c:819:2
-  After events:
-    IRF: get_home_gitattributes at attr.c:0:0
-  Occurrences: 18
-
-CoordinatesRemoved
-  Before events:
     RF: get_lock_file_fp at lockfile.h:254:2
   After events:
-    IRF: get_lock_file_fp at lockfile.h:0:0
+    IRF: get_lock_file_fp at lockfile.h:0:9
   Occurrences: 6
 
 CoordinatesRemoved
   Before events:
     RF: get_lock_file_path at lockfile.h:244:2
   After events:
-    IRF: get_lock_file_path at lockfile.h:0:0
+    IRF: get_lock_file_path at lockfile.h:0:9
   Occurrences: 19
-
-CoordinatesRemoved
-  Before events:
-    RF: get_loose_ref_cache at files-backend.c:327:2
-  After events:
-    IRF: get_loose_ref_cache at files-backend.c:0:0
-  Occurrences: 9
-
-CoordinatesRemoved
-  Before events:
-    RF: get_midx_filename at midx.c:52:1
-  After events:
-    IRF: get_midx_filename at midx.c:0:0
-  Occurrences: 22
 
 CoordinatesRemoved
   Before events:
     RF: get_mode at tree-walk.c:24:1
   After events:
-    IRF: get_mode at tree-walk.c:0:0
-  Occurrences: 2
-
-CoordinatesRemoved
-  Before events:
-    RF: get_next_char at config.c:814:1
-  After events:
-    IRF: get_next_char at config.c:0:0
-  Occurrences: 15200
-
-CoordinatesRemoved
-  Before events:
-    RF: get_next_component at abspath.c:49:1
-  After events:
-    IRF: get_next_component at abspath.c:0:0
-  Occurrences: 819
-
-CoordinatesRemoved
-  Before events:
-    RF: get_oid_basic at object-name.c:1024:1
-  After events:
-    IRF: get_oid_basic at object-name.c:0:0
-  Occurrences: 9
+    IRF: get_mode at tree-walk.c:0:6
+  Occurrences: 1
 
 CoordinatesRemoved
   Before events:
@@ -886,71 +347,22 @@ CoordinatesRemoved
   Before events:
     RF: get_pathname at path.c:37:2
   After events:
-    IRF: get_pathname at path.c:0:0
+    IRF: get_pathname at path.c:0:23
   Occurrences: 36
-
-CoordinatesRemoved
-  Before events:
-    RF: get_ref_dir at ref-cache.c:31:2
-  After events:
-    IRF: get_ref_dir at ref-cache.c:0:0
-  Occurrences: 18
-
-CoordinatesRemoved
-  Before events:
-    RF: get_root_part at abspath.c:62:1
-  After events:
-    IRF: get_root_part at abspath.c:0:0
-  Occurrences: 174
-
-CoordinatesRemoved
-  Before events:
-    RF: get_unit_factor at config.c:1156:1
-  After events:
-    IRF: get_unit_factor at config.c:0:0
-  Occurrences: 203
 
 CoordinatesRemoved
   Before events:
     RF: get_value at config.c:914:1
   After events:
     IRF: get_value at config.c:0:0
-  Occurrences: 624
-
-CoordinatesRemoved
-  Before events:
-    RF: getenv_safe at environment.c:160:1
-  After events:
-    IRF: getenv_safe at environment.c:0:0
-  Occurrences: 290
+  Occurrences: 620
 
 CoordinatesRemoved
   Before events:
     RF: gettimeofday_nanos at trace.c:379:2
   After events:
-    IRF: gettimeofday_nanos at trace.c:0:0
+    IRF: gettimeofday_nanos at trace.c:0:43
   Occurrences: 60
-
-CoordinatesRemoved
-  Before events:
-    RF: git_attr at attr.c:236:2
-  After events:
-    IRF: git_attr at attr.c:0:0
-  Occurrences: 108
-
-CoordinatesRemoved
-  Before events:
-    RF: git_attr_system at attr.c:824:2
-  After events:
-    IRF: git_attr_system at attr.c:0:0
-  Occurrences: 18
-
-CoordinatesRemoved
-  Before events:
-    RF: git_config_bool at config.c:1452:2
-  After events:
-    IRF: git_config_bool at config.c:0:0
-  Occurrences: 262
 
 CoordinatesRemoved
   Before events:
@@ -970,7 +382,7 @@ CoordinatesRemoved
   Before events:
     RF: git_config_from_file_with_options at config.c:2005:2
   After events:
-    IRF: git_config_from_file_with_options at config.c:0:0
+    IRF: git_config_from_file_with_options at config.c:0:3
   Occurrences: 63
 
 CoordinatesRemoved
@@ -982,48 +394,6 @@ CoordinatesRemoved
 
 CoordinatesRemoved
   Before events:
-    RF: git_config_set_multivar_in_file at config.c:3455:3
-  After events:
-    IRF: git_config_set_multivar_in_file at config.c:0:0
-  Occurrences: 24
-
-CoordinatesRemoved
-  Before events:
-    RF: git_configset_get_int at config.c:2463:1
-  After events:
-    IRF: git_configset_get_int at config.c:0:0
-  Occurrences: 38
-
-CoordinatesRemoved
-  Before events:
-    RF: git_configset_get_string_tmp at config.c:2453:1
-  After events:
-    IRF: git_configset_get_string_tmp at config.c:0:0
-  Occurrences: 32
-
-CoordinatesRemoved
-  Before events:
-    RF: git_configset_get_value_multi at config.c:2429:2
-  After events:
-    IRF: git_configset_get_value_multi at config.c:0:0
-  Occurrences: 239
-
-CoordinatesRemoved
-  Before events:
-    RF: git_configset_init at config.c:2375:1
-  After events:
-    IRF: git_configset_init at config.c:0:0
-  Occurrences: 64
-
-CoordinatesRemoved
-  Before events:
-    RF: git_default_core_config at config.c:1778:1
-  After events:
-    IRF: git_default_core_config at config.c:0:0
-  Occurrences: 217
-
-CoordinatesRemoved
-  Before events:
     RF: git_env_bool at config.c:2102:2
   After events:
     IRF: git_env_bool at config.c:0:0
@@ -1031,108 +401,24 @@ CoordinatesRemoved
 
 CoordinatesRemoved
   Before events:
-    RF: git_exec_path at exec-cmd.c:293:2
-  After events:
-    IRF: git_exec_path at exec-cmd.c:0:0
-  Occurrences: 60
-
-CoordinatesRemoved
-  Before events:
     RF: git_find_last_dir_sep at git-compat-util.h:538:2
   After events:
-    IRF: git_find_last_dir_sep at git-compat-util.h:0:0
+    IRF: git_find_last_dir_sep at git-compat-util.h:0:9
   Occurrences: 60
-
-CoordinatesRemoved
-  Before events:
-    RF: git_global_config at config.c:2093:1
-  After events:
-    IRF: git_global_config at config.c:0:0
-  Occurrences: 133
-
-CoordinatesRemoved
-  Before events:
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-  After events:
-    IRF: git_is_dir_sep at git-compat-util.h:0:0
-  Occurrences: 5363
 
 CoordinatesRemoved
   Before events:
     RF: git_offset_1st_component at git-compat-util.h:457:2
   After events:
     IRF: git_offset_1st_component at git-compat-util.h:0:0
-  Occurrences: 421
-
-CoordinatesRemoved
-  Before events:
-    RF: git_parse_int at config.c:1239:1
-  After events:
-    IRF: git_parse_int at config.c:0:0
-  Occurrences: 203
-
-CoordinatesRemoved
-  Before events:
-    RF: git_parse_maybe_bool at config.c:1434:1
-  After events:
-    IRF: git_parse_maybe_bool at config.c:0:0
-  Occurrences: 429
+  Occurrences: 247
 
 CoordinatesRemoved
   Before events:
     RF: git_parse_source at config.c:1143:1
   After events:
-    IRF: git_parse_source at config.c:0:0
+    IRF: git_parse_source at config.c:0:13
   Occurrences: 134
-
-CoordinatesRemoved
-  Before events:
-    RF: git_path_check_convert at convert.c:1287:1
-  After events:
-    IRF: git_path_check_convert at convert.c:0:0
-  Occurrences: 42
-
-CoordinatesRemoved
-  Before events:
-    RF: git_path_check_crlf at convert.c:1261:1
-  After events:
-    IRF: git_path_check_crlf at convert.c:0:0
-  Occurrences: 84
-
-CoordinatesRemoved
-  Before events:
-    RF: git_path_check_encoding at convert.c:1244:1
-  After events:
-    IRF: git_path_check_encoding at convert.c:0:0
-  Occurrences: 42
-
-CoordinatesRemoved
-  Before events:
-    RF: git_path_check_eol at convert.c:1274:1
-  After events:
-    IRF: git_path_check_eol at convert.c:0:0
-  Occurrences: 32
-
-CoordinatesRemoved
-  Before events:
-    RF: git_path_check_ident at convert.c:1293:2
-  After events:
-    IRF: git_path_check_ident at convert.c:0:0
-  Occurrences: 42
-
-CoordinatesRemoved
-  Before events:
-    RF: git_path_info_attributes at attr.c:827:8
-  After events:
-    IRF: git_path_info_attributes at attr.c:0:0
-  Occurrences: 18
-
-CoordinatesRemoved
-  Before events:
-    RF: git_set_exec_path at exec-cmd.c:281:1
-  After events:
-    IRF: git_set_exec_path at exec-cmd.c:0:0
-  Occurrences: 60
 
 CoordinatesRemoved
   Before events:
@@ -1150,45 +436,17 @@ CoordinatesRemoved
 
 CoordinatesRemoved
   Before events:
-    RF: guess_repository_type at init-db.c:508:1
-  After events:
-    IRF: guess_repository_type at init-db.c:0:0
-  Occurrences: 6
-
-CoordinatesRemoved
-  Before events:
-    RF: has_subcommands at parse-options.c:532:1
-  After events:
-    IRF: has_subcommands at parse-options.c:0:0
-  Occurrences: 60
-
-CoordinatesRemoved
-  Before events:
-    RF: hash_algo_by_ptr at hash.h:197:2
-  After events:
-    IRF: hash_algo_by_ptr at hash.h:0:0
-  Occurrences: 15
-
-CoordinatesRemoved
-  Before events:
     RF: hash_literally at hash-object.c:31:2
   After events:
-    IRF: hash_literally at hash-object.c:0:0
+    IRF: hash_literally at hash-object.c:0:2
   Occurrences: 2
-
-CoordinatesRemoved
-  Before events:
-    RF: hash_object at hash-object.c:58:1
-  After events:
-    IRF: hash_object at hash-object.c:0:0
-  Occurrences: 21
 
 CoordinatesRemoved
   Before events:
     RF: hash_object_body at object-file.c:1797:1
   After events:
-    IRF: hash_object_body at object-file.c:0:0
-  Occurrences: 34
+    IRF: hash_object_body at object-file.c:0:2
+  Occurrences: 23
 
 CoordinatesRemoved
   Before events:
@@ -1206,101 +464,38 @@ CoordinatesRemoved
 
 CoordinatesRemoved
   Before events:
-    RF: hash_stdin_paths at hash-object.c:78:1
-  After events:
-    IRF: hash_stdin_paths at hash-object.c:0:0
-  Occurrences: 4
-
-CoordinatesRemoved
-  Before events:
     RF: hash_to_hex_algop at hex.c:154:2
   After events:
     IRF: hash_to_hex_algop at hex.c:0:0
-  Occurrences: 35
+  Occurrences: 3
 
 CoordinatesRemoved
   Before events:
     RF: hash_to_hex_algop_r at hex.c:141:2
   After events:
-    IRF: hash_to_hex_algop_r at hex.c:0:0
-  Occurrences: 35
+    IRF: hash_to_hex_algop_r at hex.c:0:6
+  Occurrences: 31
 
 CoordinatesRemoved
   Before events:
     RF: hasheq_algop at hash.h:239:1
   After events:
     IRF: hasheq_algop at hash.h:0:0
-  Occurrences: 68
+  Occurrences: 14
 
 CoordinatesRemoved
   Before events:
-    RF: hashmap_entry_init at hashmap.h:319:1
+    RF: hasheq_algop at hash.h:239:1
   After events:
-    IRF: hashmap_entry_init at hashmap.h:0:0
-  Occurrences: 1351
-
-CoordinatesRemoved
-  Before events:
-    RF: hashmap_get at hashmap.c:219:1
-  After events:
-    IRF: hashmap_get at hashmap.c:0:0
-  Occurrences: 221
-
-CoordinatesRemoved
-  Before events:
-    RF: hashmap_get_from_hash at hashmap.h:379:2
-  After events:
-    IRF: hashmap_get_from_hash at hashmap.h:0:0
-  Occurrences: 27
-
-CoordinatesRemoved
-  Before events:
-    RF: hashmap_get_size at hashmap.h:327:3
-  After events:
-    IRF: hashmap_get_size at hashmap.h:0:0
-  Occurrences: 366
-
-CoordinatesRemoved
-  Before events:
-    RF: hashmap_init at hashmap.c:175:1
-  After events:
-    IRF: hashmap_init at hashmap.c:0:0
-  Occurrences: 52
-
-CoordinatesRemoved
-  Before events:
-    RF: hashmap_iter_first at hashmap.h:479:2
-  After events:
-    IRF: hashmap_iter_first at hashmap.h:0:0
-  Occurrences: 31
+    IRF: hasheq_algop at hash.h:0:10
+  Occurrences: 54
 
 CoordinatesRemoved
   Before events:
     RF: hashmap_iter_next at hashmap.c:308:1
   After events:
-    IRF: hashmap_iter_next at hashmap.c:0:0
-  Occurrences: 17
-
-CoordinatesRemoved
-  Before events:
-    RF: hex2chr at cache.h:1412:2
-  After events:
-    IRF: hex2chr at cache.h:0:0
-  Occurrences: 180
-
-CoordinatesRemoved
-  Before events:
-    RF: hexval at cache.h:1402:2
-  After events:
-    IRF: hexval at cache.h:0:0
-  Occurrences: 360
-
-CoordinatesRemoved
-  Before events:
-    RF: highres_nanos at trace.c:333:1
-  After events:
-    IRF: highres_nanos at trace.c:0:0
-  Occurrences: 60
+    IRF: hashmap_iter_next at hashmap.c:0:26
+  Occurrences: 4
 
 CoordinatesRemoved
   Before events:
@@ -1311,30 +506,9 @@ CoordinatesRemoved
 
 CoordinatesRemoved
   Before events:
-    RF: hold_lock_file_for_update_timeout at lockfile.h:179:2
-  After events:
-    IRF: hold_lock_file_for_update_timeout at lockfile.h:0:0
-  Occurrences: 31
-
-CoordinatesRemoved
-  Before events:
-    RF: index_core at object-file.c:2453:2
-  After events:
-    IRF: index_core at object-file.c:0:0
-  Occurrences: 24
-
-CoordinatesRemoved
-  Before events:
-    RF: index_name_pos at read-cache.c:620:2
-  After events:
-    IRF: index_name_pos at read-cache.c:0:0
-  Occurrences: 12
-
-CoordinatesRemoved
-  Before events:
     RF: index_pipe at object-file.c:2422:2
   After events:
-    IRF: index_pipe at object-file.c:0:0
+    IRF: index_pipe at object-file.c:0:9
   Occurrences: 8
 
 CoordinatesRemoved
@@ -1343,34 +517,6 @@ CoordinatesRemoved
   After events:
     IRF: init_buffer_slab at commit.c:0:0
   Occurrences: 60
-
-CoordinatesRemoved
-  Before events:
-    RF: init_buffer_slab_with_stride at commit.c:288:1
-  After events:
-    IRF: init_buffer_slab_with_stride at commit.c:0:0
-  Occurrences: 60
-
-CoordinatesRemoved
-  Before events:
-    RF: init_repository_format at setup.c:713:1
-  After events:
-    IRF: init_repository_format at setup.c:0:0
-  Occurrences: 82
-
-CoordinatesRemoved
-  Before events:
-    RF: init_tree_desc_internal at tree-walk.c:67:1
-  After events:
-    IRF: init_tree_desc_internal at tree-walk.c:0:0
-  Occurrences: 3
-
-CoordinatesRemoved
-  Before events:
-    RF: initialize_repository_version at init-db.c:188:1
-  After events:
-    IRF: initialize_repository_version at init-db.c:0:0
-  Occurrences: 6
 
 CoordinatesRemoved
   Before events:
@@ -1388,34 +534,6 @@ CoordinatesRemoved
 
 CoordinatesRemoved
   Before events:
-    RF: is_dir_file at path.c:88:1
-  After events:
-    IRF: is_dir_file at path.c:0:0
-  Occurrences: 79
-
-CoordinatesRemoved
-  Before events:
-    RF: is_dot_or_dotdot at dir.h:457:2
-  After events:
-    IRF: is_dot_or_dotdot at dir.h:0:0
-  Occurrences: 44
-
-CoordinatesRemoved
-  Before events:
-    RF: is_dup_ref at ref-cache.c:223:1
-  After events:
-    IRF: is_dup_ref at ref-cache.c:0:0
-  Occurrences: 58
-
-CoordinatesRemoved
-  Before events:
-    RF: is_empty_ref_iterator at iterator.c:83:2
-  After events:
-    IRF: is_empty_ref_iterator at iterator.c:0:0
-  Occurrences: 9
-
-CoordinatesRemoved
-  Before events:
     RF: is_lock_file_locked at lockfile.h:207:2
   After events:
     IRF: is_lock_file_locked at lockfile.h:0:0
@@ -1430,346 +548,73 @@ CoordinatesRemoved
 
 CoordinatesRemoved
   Before events:
-    RF: is_per_worktree_ref at refs.c:816:2
-  After events:
-    IRF: is_per_worktree_ref at refs.c:0:0
-  Occurrences: 81
-
-CoordinatesRemoved
-  Before events:
-    RF: is_pseudoref_syntax at refs.c:835:1
-  After events:
-    IRF: is_pseudoref_syntax at refs.c:0:0
-  Occurrences: 93
-
-CoordinatesRemoved
-  Before events:
-    RF: is_tempfile_active at tempfile.h:223:2
-  After events:
-    IRF: is_tempfile_active at tempfile.h:0:0
-  Occurrences: 242
-
-CoordinatesRemoved
-  Before events:
-    RF: iskeychar at config.c:538:2
-  After events:
-    IRF: iskeychar at config.c:0:0
-  Occurrences: 16606
-
-CoordinatesRemoved
-  Before events:
     RF: istream_source at streaming.c:434:1
   After events:
-    IRF: istream_source at streaming.c:0:0
+    IRF: istream_source at streaming.c:0:22
   Occurrences: 7
-
-CoordinatesRemoved
-  Before events:
-    RF: list_add_tail at list.h:70:1
-  After events:
-    IRF: list_add_tail at list.h:0:0
-  Occurrences: 45
-
-CoordinatesRemoved
-  Before events:
-    RF: load_contents at packed-backend.c:522:1
-  After events:
-    IRF: load_contents at packed-backend.c:0:0
-  Occurrences: 15
 
 CoordinatesRemoved
   Before events:
     RF: lock_file_timeout at lockfile.c:147:1
   After events:
-    IRF: lock_file_timeout at lockfile.c:0:0
-  Occurrences: 31
-
-CoordinatesRemoved
-  Before events:
-    RF: lookup_replace_object at replace-object.h:41:1
-  After events:
-    IRF: lookup_replace_object at replace-object.h:0:0
-  Occurrences: 27
-
-CoordinatesRemoved
-  Before events:
-    RF: loose_object_info at object-file.c:1510:1
-  After events:
-    IRF: loose_object_info at object-file.c:0:0
-  Occurrences: 27
-
-CoordinatesRemoved
-  Before events:
-    RF: loose_object_path at object-file.c:448:2
-  After events:
-    IRF: loose_object_path at object-file.c:0:0
-  Occurrences: 8
-
-CoordinatesRemoved
-  Before events:
-    RF: macroexpand_one at attr.c:1047:1
-  After events:
-    IRF: macroexpand_one at attr.c:0:0
-  Occurrences: 20
-
-CoordinatesRemoved
-  Before events:
-    RF: map_loose_object at object-file.c:1250:2
-  After events:
-    IRF: map_loose_object at object-file.c:0:0
-  Occurrences: 27
-
-CoordinatesRemoved
-  Before events:
-    RF: matches at config.c:2888:1
-  After events:
-    IRF: matches at config.c:0:0
-  Occurrences: 40
-
-CoordinatesRemoved
-  Before events:
-    RF: memhash at hashmap.c:37:2
-  After events:
-    IRF: memhash at hashmap.c:0:0
-  Occurrences: 221
-
-CoordinatesRemoved
-  Before events:
-    RF: memory_limit_check at wrapper.c:35:1
-  After events:
-    IRF: memory_limit_check at wrapper.c:0:0
-  Occurrences: 6993
-
-CoordinatesRemoved
-  Before events:
-    RF: mmap_limit_check at object-file.c:1021:1
-  After events:
-    IRF: mmap_limit_check at object-file.c:0:0
-  Occurrences: 47
-
-CoordinatesRemoved
-  Before events:
-    RF: move_array at git-compat-util.h:1108:1
-  After events:
-    IRF: move_array at git-compat-util.h:0:0
-  Occurrences: 60
-
-CoordinatesRemoved
-  Before events:
-    RF: needs_work_tree_config at init-db.c:168:1
-  After events:
-    IRF: needs_work_tree_config at init-db.c:0:0
+    IRF: lock_file_timeout at lockfile.c:0:6
   Occurrences: 6
-
-CoordinatesRemoved
-  Before events:
-    RF: new_tempfile at tempfile.c:105:2
-  After events:
-    IRF: new_tempfile at tempfile.c:0:0
-  Occurrences: 31
-
-CoordinatesRemoved
-  Before events:
-    RF: null_oid at object-file.c:223:2
-  After events:
-    IRF: null_oid at object-file.c:0:0
-  Occurrences: 27
 
 CoordinatesRemoved
   Before events:
     RF: oid_object_info_extended at object-file.c:1642:2
   After events:
-    IRF: oid_object_info_extended at object-file.c:0:0
-  Occurrences: 20
-
-CoordinatesRemoved
-  Before events:
-    RF: oid_set_algo at hash.h:335:1
-  After events:
-    IRF: oid_set_algo at hash.h:0:0
-  Occurrences: 9
-
-CoordinatesRemoved
-  Before events:
-    RF: oidclr at hash.h:304:1
-  After events:
-    IRF: oidclr at hash.h:0:0
-  Occurrences: 6
+    IRF: oid_object_info_extended at object-file.c:0:8
+  Occurrences: 18
 
 CoordinatesRemoved
   Before events:
     RF: oidcpy at hash.h:270:1
   After events:
-    IRF: oidcpy at hash.h:0:0
-  Occurrences: 11
+    IRF: oidcpy at hash.h:0:12
+  Occurrences: 2
 
 CoordinatesRemoved
   Before events:
     RF: oideq at hash.h:253:2
   After events:
     IRF: oideq at hash.h:0:0
-  Occurrences: 68
-
-CoordinatesRemoved
-  Before events:
-    RF: oidhash at hashmap.h:139:2
-  After events:
-    IRF: oidhash at hashmap.h:0:0
-  Occurrences: 27
-
-CoordinatesRemoved
-  Before events:
-    RF: open_loose_object at object-file.c:1198:1
-  After events:
-    IRF: open_loose_object at object-file.c:0:0
-  Occurrences: 34
-
-CoordinatesRemoved
-  Before events:
-    RF: packed_downcast at packed-backend.c:235:2
-  After events:
-    IRF: packed_downcast at packed-backend.c:0:0
-  Occurrences: 81
+  Occurrences: 62
 
 CoordinatesRemoved
   Before events:
     RF: parse_attr_line at attr.c:419:1
   After events:
     IRF: parse_attr_line at attr.c:0:0
-  Occurrences: 46
-
-CoordinatesRemoved
-  Before events:
-    RF: parse_config_key at config.c:3767:1
-  After events:
-    IRF: parse_config_key at config.c:0:0
-  Occurrences: 363
+  Occurrences: 18
 
 CoordinatesRemoved
   Before events:
     RF: parse_long_opt at parse-options.c:407:1
   After events:
-    IRF: parse_long_opt at parse-options.c:0:0
-  Occurrences: 48
-
-CoordinatesRemoved
-  Before events:
-    RF: parse_nodash_opt at parse-options.c:422:1
-  After events:
-    IRF: parse_nodash_opt at parse-options.c:0:0
-  Occurrences: 45
-
-CoordinatesRemoved
-  Before events:
-    RF: parse_options_check at parse-options.c:524:1
-  After events:
-    IRF: parse_options_check at parse-options.c:0:0
-  Occurrences: 60
-
-CoordinatesRemoved
-  Before events:
-    RF: parse_options_end at parse-options.c:954:1
-  After events:
-    IRF: parse_options_end at parse-options.c:0:0
-  Occurrences: 60
+    IRF: parse_long_opt at parse-options.c:0:10
+  Occurrences: 40
 
 CoordinatesRemoved
   Before events:
     RF: parse_value at config.c:875:1
   After events:
-    IRF: parse_value at config.c:0:0
-  Occurrences: 624
+    IRF: parse_value at config.c:0:13
+  Occurrences: 6
 
 CoordinatesRemoved
   Before events:
-    RF: path_in_sparse_checkout_1 at dir.c:1492:1
+    RF: parse_value at config.c:875:1
   After events:
-    IRF: path_in_sparse_checkout_1 at dir.c:0:0
-  Occurrences: 12
-
-CoordinatesRemoved
-  Before events:
-    RF: path_matches at attr.c:995:1
-  After events:
-    IRF: path_matches at attr.c:0:0
-  Occurrences: 56
-
-CoordinatesRemoved
-  Before events:
-    RF: peel_onion at object-name.c:1201:1
-  After events:
-    IRF: peel_onion at object-name.c:0:0
-  Occurrences: 9
-
-CoordinatesRemoved
-  Before events:
-    RF: prepare_alt_odb at object-file.c:944:1
-  After events:
-    IRF: prepare_alt_odb at object-file.c:0:0
-  Occurrences: 44
-
-CoordinatesRemoved
-  Before events:
-    RF: prepare_attr_stack at attr.c:972:1
-  After events:
-    IRF: prepare_attr_stack at attr.c:0:0
-  Occurrences: 42
-
-CoordinatesRemoved
-  Before events:
-    RF: prepare_packed_git_mru at packfile.c:985:1
-  After events:
-    IRF: prepare_packed_git_mru at packfile.c:0:0
-  Occurrences: 22
-
-CoordinatesRemoved
-  Before events:
-    RF: prepare_packed_git_one at packfile.c:912:1
-  After events:
-    IRF: prepare_packed_git_one at packfile.c:0:0
-  Occurrences: 22
-
-CoordinatesRemoved
-  Before events:
-    RF: prepare_replace_object at replace-object.c:55:1
-  After events:
-    IRF: prepare_replace_object at replace-object.c:0:0
-  Occurrences: 27
-
-CoordinatesRemoved
-  Before events:
-    RF: preprocess_options at parse-options.c:756:1
-  After events:
-    IRF: preprocess_options at parse-options.c:0:0
-  Occurrences: 60
-
-CoordinatesRemoved
-  Before events:
-    RF: push_stack at attr.c:839:1
-  After events:
-    IRF: push_stack at attr.c:0:0
-  Occurrences: 122
-
-CoordinatesRemoved
-  Before events:
-    RF: read_attr_from_array at attr.c:677:2
-  After events:
-    IRF: read_attr_from_array at attr.c:0:0
-  Occurrences: 18
+    IRF: parse_value at config.c:0:21
+  Occurrences: 618
 
 CoordinatesRemoved
   Before events:
     RF: read_istream at streaming.c:449:2
   After events:
-    IRF: read_istream at streaming.c:0:0
+    IRF: read_istream at streaming.c:0:9
   Occurrences: 14
-
-CoordinatesRemoved
-  Before events:
-    RF: read_object at object-file.c:1675:1
-  After events:
-    IRF: read_object at object-file.c:0:0
-  Occurrences: 2
 
 CoordinatesRemoved
   Before events:
@@ -1782,50 +627,8 @@ CoordinatesRemoved
   Before events:
     RF: ref_iterator_abort at iterator.c:24:2
   After events:
-    IRF: ref_iterator_abort at iterator.c:0:0
-  Occurrences: 33
-
-CoordinatesRemoved
-  Before events:
-    RF: ref_iterator_advance at iterator.c:13:2
-  After events:
-    IRF: ref_iterator_advance at iterator.c:0:0
-  Occurrences: 18
-
-CoordinatesRemoved
-  Before events:
-    RF: ref_store_init at refs.c:1995:2
-  After events:
-    IRF: ref_store_init at refs.c:0:0
-  Occurrences: 15
-
-CoordinatesRemoved
-  Before events:
-    RF: refs_create_symref at refs.c:2150:2
-  After events:
-    IRF: refs_create_symref at refs.c:0:0
-  Occurrences: 6
-
-CoordinatesRemoved
-  Before events:
-    RF: refs_ref_iterator_begin at refs.c:1546:2
-  After events:
-    IRF: refs_ref_iterator_begin at refs.c:0:0
-  Occurrences: 15
-
-CoordinatesRemoved
-  Before events:
-    RF: repo_cfg_bool at repo-settings.c:12:1
-  After events:
-    IRF: repo_cfg_bool at repo-settings.c:0:0
-  Occurrences: 144
-
-CoordinatesRemoved
-  Before events:
-    RF: repo_cfg_int at repo-settings.c:19:1
-  After events:
-    IRF: repo_cfg_int at repo-settings.c:0:0
-  Occurrences: 16
+    IRF: ref_iterator_abort at iterator.c:0:9
+  Occurrences: 9
 
 CoordinatesRemoved
   Before events:
@@ -1838,8 +641,8 @@ CoordinatesRemoved
   Before events:
     RF: repo_config_clear at config.c:2560:1
   After events:
-    IRF: repo_config_clear at config.c:0:0
-  Occurrences: 83
+    IRF: repo_config_clear at config.c:0:2
+  Occurrences: 7
 
 CoordinatesRemoved
   Before events:
@@ -1850,59 +653,10 @@ CoordinatesRemoved
 
 CoordinatesRemoved
   Before events:
-    RF: repo_config_get_pathname at config.c:2647:2
-  After events:
-    IRF: repo_config_get_pathname at config.c:0:0
-  Occurrences: 6
-
-CoordinatesRemoved
-  Before events:
-    RF: repo_config_get_value at config.c:2572:2
-  After events:
-    IRF: repo_config_get_value at config.c:0:0
-  Occurrences: 19
-
-CoordinatesRemoved
-  Before events:
-    RF: repo_promisor_remote_find at promisor-remote.c:195:1
-  After events:
-    IRF: repo_promisor_remote_find at promisor-remote.c:0:0
-  Occurrences: 6
-
-CoordinatesRemoved
-  Before events:
-    RF: repo_read_config at config.c:2546:1
-  After events:
-    IRF: repo_read_config at config.c:0:0
-  Occurrences: 64
-
-CoordinatesRemoved
-  Before events:
-    RF: repo_read_object_file at object-store.h:253:2
-  After events:
-    IRF: repo_read_object_file at object-store.h:0:0
-  Occurrences: 2
-
-CoordinatesRemoved
-  Before events:
     RF: repo_set_commondir at repository.c:59:1
   After events:
     IRF: repo_set_commondir at repository.c:0:0
   Occurrences: 58
-
-CoordinatesRemoved
-  Before events:
-    RF: repo_set_hash_algo at repository.c:98:1
-  After events:
-    IRF: repo_set_hash_algo at repository.c:0:0
-  Occurrences: 60
-
-CoordinatesRemoved
-  Before events:
-    RF: report_pack_garbage at packfile.c:809:1
-  After events:
-    IRF: report_pack_garbage at packfile.c:0:0
-  Occurrences: 22
 
 CoordinatesRemoved
   Before events:
@@ -1913,157 +667,38 @@ CoordinatesRemoved
 
 CoordinatesRemoved
   Before events:
-    RF: restore_sigpipe_to_default at common-main.c:24:1
-  After events:
-    IRF: restore_sigpipe_to_default at common-main.c:0:0
-  Occurrences: 60
-
-CoordinatesRemoved
-  Before events:
-    RF: rollback_lock_file at lockfile.h:329:1
-  After events:
-    IRF: rollback_lock_file at lockfile.h:0:0
-  Occurrences: 31
-
-CoordinatesRemoved
-  Before events:
-    RF: safe_create_leading_directories at object-file.c:400:2
-  After events:
-    IRF: safe_create_leading_directories at object-file.c:0:0
-  Occurrences: 6
-
-CoordinatesRemoved
-  Before events:
     RF: sane_case at git-compat-util.h:1238:2
   After events:
-    IRF: sane_case at git-compat-util.h:0:0
-  Occurrences: 16606
-
-CoordinatesRemoved
-  Before events:
-    RF: sane_iscase at git-compat-util.h:1250:1
-  After events:
-    IRF: sane_iscase at git-compat-util.h:0:0
-  Occurrences: 129
-
-CoordinatesRemoved
-  Before events:
-    RF: sane_qsort at git-compat-util.h:1310:1
-  After events:
-    IRF: sane_qsort at git-compat-util.h:0:0
-  Occurrences: 22
+    IRF: sane_case at git-compat-util.h:0:6
+  Occurrences: 8088
 
 CoordinatesRemoved
   Before events:
     RF: search_for_subdir at ref-cache.c:160:1
   After events:
     IRF: search_for_subdir at ref-cache.c:0:0
-  Occurrences: 18
-
-CoordinatesRemoved
-  Before events:
-    RF: search_ref_dir at ref-cache.c:141:1
-  After events:
-    IRF: search_ref_dir at ref-cache.c:0:0
-  Occurrences: 18
-
-CoordinatesRemoved
-  Before events:
-    RF: set_git_dir_1 at environment.c:335:1
-  After events:
-    IRF: set_git_dir_1 at environment.c:0:0
-  Occurrences: 6
-
-CoordinatesRemoved
-  Before events:
-    RF: setup_discovered_git_dir at setup.c:1025:1
-  After events:
-    IRF: setup_discovered_git_dir at setup.c:0:0
-  Occurrences: 52
-
-CoordinatesRemoved
-  Before events:
-    RF: setup_original_cwd at setup.c:511:1
-  After events:
-    IRF: setup_original_cwd at setup.c:0:0
-  Occurrences: 52
+  Occurrences: 9
 
 CoordinatesRemoved
   Before events:
     RF: should_validate_cache_entries at read-cache.c:3622:2
   After events:
     IRF: should_validate_cache_entries at read-cache.c:0:0
-  Occurrences: 105
-
-CoordinatesRemoved
-  Before events:
-    RF: sigchain_push at sigchain.c:30:1
-  After events:
-    IRF: sigchain_push at sigchain.c:0:0
-  Occurrences: 35
-
-CoordinatesRemoved
-  Before events:
-    RF: simple_length at dir.c:611:4
-  After events:
-    IRF: simple_length at dir.c:0:0
-  Occurrences: 28
-
-CoordinatesRemoved
-  Before events:
-    RF: skip_prefix at git-compat-util.h:684:1
-  After events:
-    IRF: skip_prefix at git-compat-util.h:0:0
-  Occurrences: 1600
-
-CoordinatesRemoved
-  Before events:
-    RF: sort_packs at packfile.c:944:1
-  After events:
-    IRF: sort_packs at packfile.c:0:0
-  Occurrences: 22
-
-CoordinatesRemoved
-  Before events:
-    RF: st_add at git-compat-util.h:985:2
-  After events:
-    IRF: st_add at git-compat-util.h:0:0
-  Occurrences: 564
-
-CoordinatesRemoved
-  Before events:
-    RF: st_mult at git-compat-util.h:995:2
-  After events:
-    IRF: st_mult at git-compat-util.h:0:0
-  Occurrences: 522
+  Occurrences: 60
 
 CoordinatesRemoved
   Before events:
     RF: strbuf_addch at strbuf.h:234:1
   After events:
-    IRF: strbuf_addch at strbuf.h:0:0
-  Occurrences: 14702
+    IRF: strbuf_addch at strbuf.h:0:19
+  Occurrences: 3130
 
 CoordinatesRemoved
   Before events:
     RF: strbuf_addstr at strbuf.h:306:1
   After events:
-    IRF: strbuf_addstr at strbuf.h:0:0
-  Occurrences: 1641
-
-CoordinatesRemoved
-  Before events:
-    RF: strbuf_avail at strbuf.h:141:2
-  After events:
-    IRF: strbuf_avail at strbuf.h:0:0
-  Occurrences: 17193
-
-CoordinatesRemoved
-  Before events:
-    RF: strbuf_cleanup_path at path.c:55:1
-  After events:
-    IRF: strbuf_cleanup_path at path.c:0:0
-  Occurrences: 297
+    IRF: strbuf_addstr at strbuf.h:0:2
+  Occurrences: 277
 
 CoordinatesRemoved
   Before events:
@@ -2074,34 +709,6 @@ CoordinatesRemoved
 
 CoordinatesRemoved
   Before events:
-    RF: strbuf_detach at strbuf.c:78:2
-  After events:
-    IRF: strbuf_detach at strbuf.c:0:0
-  Occurrences: 202
-
-CoordinatesRemoved
-  Before events:
-    RF: strbuf_grow at strbuf.c:102:1
-  After events:
-    IRF: strbuf_grow at strbuf.c:0:0
-  Occurrences: 6320
-
-CoordinatesRemoved
-  Before events:
-    RF: strbuf_init at strbuf.c:60:1
-  After events:
-    IRF: strbuf_init at strbuf.c:0:0
-  Occurrences: 2347
-
-CoordinatesRemoved
-  Before events:
-    RF: strbuf_realpath at abspath.c:217:2
-  After events:
-    IRF: strbuf_realpath at abspath.c:0:0
-  Occurrences: 116
-
-CoordinatesRemoved
-  Before events:
     RF: strbuf_release at strbuf.c:68:1
   After events:
     IRF: strbuf_release at strbuf.c:0:0
@@ -2109,45 +716,10 @@ CoordinatesRemoved
 
 CoordinatesRemoved
   Before events:
-    RF: strbuf_setlen at strbuf.h:169:1
-  After events:
-    IRF: strbuf_setlen at strbuf.h:0:0
-  Occurrences: 9115
-
-CoordinatesRemoved
-  Before events:
-    RF: strbuf_worktree_gitdir at path.c:427:1
-  After events:
-    IRF: strbuf_worktree_gitdir at path.c:0:0
-  Occurrences: 79
-
-CoordinatesRemoved
-  Before events:
-    RF: stream_blob at cat-file.c:86:2
-  After events:
-    IRF: stream_blob at cat-file.c:0:0
-  Occurrences: 7
-
-CoordinatesRemoved
-  Before events:
     RF: string_list_append at string-list.c:219:2
   After events:
     IRF: string_list_append at string-list.c:0:0
   Occurrences: 64
-
-CoordinatesRemoved
-  Before events:
-    RF: string_list_append_nodup at string-list.c:213:2
-  After events:
-    IRF: string_list_append_nodup at string-list.c:0:0
-  Occurrences: 70
-
-CoordinatesRemoved
-  Before events:
-    RF: strintern at hashmap.h:595:2
-  After events:
-    IRF: strintern at hashmap.h:0:0
-  Occurrences: 221
 
 CoordinatesRemoved
   Before events:
@@ -2165,87 +737,10 @@ CoordinatesRemoved
 
 CoordinatesRemoved
   Before events:
-    RF: strip_suffix_mem at git-compat-util.h:738:1
-  After events:
-    IRF: strip_suffix_mem at git-compat-util.h:0:0
-  Occurrences: 18
-
-CoordinatesRemoved
-  Before events:
-    RF: strvec_init at strvec.c:11:1
-  After events:
-    IRF: strvec_init at strvec.c:0:0
-  Occurrences: 131
-
-CoordinatesRemoved
-  Before events:
-    RF: substitute_branch_name at refs.c:721:1
-  After events:
-    IRF: substitute_branch_name at refs.c:0:0
-  Occurrences: 9
-
-CoordinatesRemoved
-  Before events:
     RF: text_eol_is_crlf at convert.c:162:1
   After events:
-    IRF: text_eol_is_crlf at convert.c:0:0
+    IRF: text_eol_is_crlf at convert.c:0:6
   Occurrences: 10
-
-CoordinatesRemoved
-  Before events:
-    RF: tr2_tgt_want_builtins at trace2.c:71:2
-  After events:
-    IRF: tr2_tgt_want_builtins at trace2.c:0:0
-  Occurrences: 60
-
-CoordinatesRemoved
-  Before events:
-    RF: trace_argv_vprintf_fl at trace.c:169:1
-  After events:
-    IRF: trace_argv_vprintf_fl at trace.c:0:0
-  Occurrences: 60
-
-CoordinatesRemoved
-  Before events:
-    RF: trace_pass_fl at trace.h:275:2
-  After events:
-    IRF: trace_pass_fl at trace.h:0:0
-  Occurrences: 60
-
-CoordinatesRemoved
-  Before events:
-    RF: trace_want at trace.c:322:2
-  After events:
-    IRF: trace_want at trace.c:0:0
-  Occurrences: 130
-
-CoordinatesRemoved
-  Before events:
-    RF: unlock_ref at files-backend.c:516:1
-  After events:
-    IRF: unlock_ref at files-backend.c:0:0
-  Occurrences: 6
-
-CoordinatesRemoved
-  Before events:
-    RF: update_symref_reflog at files-backend.c:1898:1
-  After events:
-    IRF: update_symref_reflog at files-backend.c:0:0
-  Occurrences: 6
-
-CoordinatesRemoved
-  Before events:
-    RF: usage_argh at parse-options.c:1019:2
-  After events:
-    IRF: usage_argh at parse-options.c:0:0
-  Occurrences: 12
-
-CoordinatesRemoved
-  Before events:
-    RF: utf8_strwidth at utf8.c:228:2
-  After events:
-    IRF: utf8_strwidth at utf8.c:0:0
-  Occurrences: 12
 
 CoordinatesRemoved
   Before events:
@@ -2263,52 +758,10 @@ CoordinatesRemoved
 
 CoordinatesRemoved
   Before events:
-    RF: validate_snapshot at packed-backend.c:706:1
-  After events:
-    IRF: validate_snapshot at packed-backend.c:0:0
-  Occurrences: 81
-
-CoordinatesRemoved
-  Before events:
-    RF: volatile_list_add at list.h:205:1
-  After events:
-    IRF: volatile_list_add at list.h:0:0
-  Occurrences: 31
-
-CoordinatesRemoved
-  Before events:
     RF: volatile_list_del at list.h:191:1
   After events:
     IRF: volatile_list_del at list.h:0:0
   Occurrences: 31
-
-CoordinatesRemoved
-  Before events:
-    RF: warn_if_unremovable at wrapper.c:618:1
-  After events:
-    IRF: warn_if_unremovable at wrapper.c:0:0
-  Occurrences: 8
-
-CoordinatesRemoved
-  Before events:
-    RF: warn_on_fopen_errors at wrapper.c:405:1
-  After events:
-    IRF: warn_on_fopen_errors at wrapper.c:0:0
-  Occurrences: 12
-
-CoordinatesRemoved
-  Before events:
-    RF: write_buffer at object-file.c:1872:1
-  After events:
-    IRF: write_buffer at object-file.c:0:0
-  Occurrences: 8
-
-CoordinatesRemoved
-  Before events:
-    RF: write_object_file at object-store.h:272:2
-  After events:
-    IRF: write_object_file at object-store.h:0:0
-  Occurrences: 9
 
 CoordinatesRemoved
   Before events:
@@ -2326,45 +779,10 @@ CoordinatesRemoved
 
 CoordinatesRemoved
   Before events:
-    RF: write_section at config.c:3005:2
-  After events:
-    IRF: write_section at config.c:0:0
-  Occurrences: 6
-
-CoordinatesRemoved
-  Before events:
     RF: xmallocz at wrapper.c:93:2
   After events:
     IRF: xmallocz at wrapper.c:0:0
   Occurrences: 6
-
-CoordinatesRemoved
-  Before events:
-    RF: xmmap_gently at object-file.c:1032:2
-  After events:
-    IRF: xmmap_gently at object-file.c:0:0
-  Occurrences: 28
-
-CoordinatesRemoved
-  Before events:
-    RF: xread at wrapper.c:237:3
-  After events:
-    IRF: xread at wrapper.c:0:0
-  Occurrences: 169
-
-CoordinatesRemoved
-  Before events:
-    RF: xsize_t at git-compat-util.h:1176:2
-  After events:
-    IRF: xsize_t at git-compat-util.h:0:0
-  Occurrences: 74
-
-CoordinatesRemoved
-  Before events:
-    RF: xstrdup_or_null at git-compat-util.h:1169:2
-  After events:
-    IRF: xstrdup_or_null at git-compat-util.h:0:0
-  Occurrences: 624
 
 CoordinatesRemoved
   Before events:
@@ -2373,47 +791,19 @@ CoordinatesRemoved
     IRF: xstrvfmt at strbuf.c:0:0
   Occurrences: 202
 
-CoordinatesRemoved
-  Before events:
-    RF: xwrite at wrapper.c:260:3
-  After events:
-    IRF: xwrite at wrapper.c:0:0
-  Occurrences: 169
-
-CoordinatesRemoved
-  Before events:
-    RF: zlib_buf_cap at zlib.c:34:2
-  After events:
-    IRF: zlib_buf_cap at zlib.c:0:0
-  Occurrences: 262
-
-CoordinatesRemoved
-  Before events:
-    RF: zlib_post_call at zlib.c:65:1
-  After events:
-    IRF: zlib_post_call at zlib.c:0:0
-  Occurrences: 131
-
-CoordinatesRemoved
-  Before events:
-    RF: zlib_pre_call at zlib.c:45:1
-  After events:
-    IRF: zlib_pre_call at zlib.c:0:0
-  Occurrences: 131
-
 CoordinatesChangedSmall
   Before events:
     CF: fill_loose_path at object-file.c:427:3
   After events:
     ICF: fill_loose_path at object-file.c:428:3
-  Occurrences: 530
+  Occurrences: 519
 
 CoordinatesChangedSmall
   Before events:
     CF: fill_loose_path at object-file.c:428:3
   After events:
     ICF: fill_loose_path at object-file.c:427:3
-  Occurrences: 543
+  Occurrences: 530
 
 CoordinatesChangedSmall
   Before events:
@@ -2426,8 +816,15 @@ CoordinatesChangedSmall
   Before events:
     CF: fill_loose_path at object-file.c:430:4
   After events:
+    ICF: fill_loose_path at object-file.c:427:3
+  Occurrences: 13
+
+CoordinatesChangedSmall
+  Before events:
+    CF: fill_loose_path at object-file.c:430:4
+  After events:
     ICF: fill_loose_path at object-file.c:428:3
-  Occurrences: 53
+  Occurrences: 40
 
 CoordinatesChangedSmall
   Before events:
@@ -3736,7 +2133,7 @@ CoordinatesChangedSmall
     CT: is_dup_ref at ref-cache.c:208:0
   After events:
     ICT: is_dup_ref at ref-cache.c:207:0
-  Occurrences: 58
+  Occurrences: 54
 
 CoordinatesChangedSmall
   Before events:
@@ -4317,7 +2714,7 @@ CoordinatesChangedSmall
     CT: sane_qsort at git-compat-util.h:1307:0
   After events:
     ICT: sane_qsort at git-compat-util.h:1305:0
-  Occurrences: 22
+  Occurrences: 19
 
 CoordinatesChangedSmall
   Before events:
@@ -4811,10 +3208,311 @@ CoordinatesChangedSmall
 
 CoordinatesChangedSmall
   Before events:
+    RF: _ at gettext.h:49:1
+  After events:
+    IRF: _ at gettext.h:46:6
+  Occurrences: 12
+
+CoordinatesChangedSmall
+  Before events:
+    RF: _ at gettext.h:49:1
+  After events:
+    IRF: _ at gettext.h:48:9
+  Occurrences: 49
+
+CoordinatesChangedSmall
+  Before events:
+    RF: __volatile_list_del at list.h:186:1
+  After events:
+    IRF: __volatile_list_del at list.h:185:13
+  Occurrences: 31
+
+CoordinatesChangedSmall
+  Before events:
+    RF: access_error_is_ok at wrapper.c:651:2
+  After events:
+    IRF: access_error_is_ok at wrapper.c:651:37
+  Occurrences: 270
+
+CoordinatesChangedSmall
+  Before events:
+    RF: acquire_snapshot at packed-backend.c:160:1
+  After events:
+    IRF: acquire_snapshot at packed-backend.c:159:21
+  Occurrences: 15
+
+CoordinatesChangedSmall
+  Before events:
+    RF: activate_tempfile at tempfile.c:120:1
+  After events:
+    IRF: activate_tempfile at tempfile.c:119:18
+  Occurrences: 31
+
+CoordinatesChangedSmall
+  Before events:
+    RF: adjust_git_path at path.c:415:1
+  After events:
+    IRF: adjust_git_path at path.c:413:11
+  Occurrences: 79
+
+CoordinatesChangedSmall
+  Before events:
+    RF: attr_hashmap_get at attr.c:96:2
+  After events:
+    IRF: attr_hashmap_get at attr.c:96:16
+  Occurrences: 46
+
+CoordinatesChangedSmall
+  Before events:
+    RF: attr_hashmap_get at attr.c:96:2
+  After events:
+    IRF: attr_hashmap_get at attr.c:96:9
+  Occurrences: 162
+
+CoordinatesChangedSmall
+  Before events:
+    RF: base_ref_iterator_init at iterator.c:36:1
+  After events:
+    IRF: base_ref_iterator_init at iterator.c:34:12
+  Occurrences: 33
+
+CoordinatesChangedSmall
+  Before events:
+    RF: batch_fsync_enabled at cache.h:1782:2
+  After events:
+    IRF: batch_fsync_enabled at cache.h:1782:27
+  Occurrences: 16
+
+CoordinatesChangedSmall
+  Before events:
+    RF: bucket at hashmap.c:107:2
+  After events:
+    IRF: bucket at hashmap.c:107:19
+  Occurrences: 1333
+
+CoordinatesChangedSmall
+  Before events:
+    RF: check_argc at config.c:179:3
+  After events:
+    IRF: check_argc at config.c:178:18
+  Occurrences: 1
+
+CoordinatesChangedSmall
+  Before events:
+    RF: check_bug_if_BUG at common-main.c:66:3
+  After events:
+    IRF: check_bug_if_BUG at common-main.c:65:6
+  Occurrences: 58
+
+CoordinatesChangedSmall
+  Before events:
+    RF: check_vector_add at attr.c:508:1
+  After events:
+    IRF: check_vector_add at attr.c:505:41
+  Occurrences: 18
+
+CoordinatesChangedSmall
+  Before events:
+    RF: close_deflated_stream at streaming.c:72:1
+  After events:
+    IRF: close_deflated_stream at streaming.c:70:6
+  Occurrences: 7
+
+CoordinatesChangedSmall
+  Before events:
+    RF: config_store_data_clear at config.c:2872:1
+  After events:
+    IRF: config_store_data_clear at config.c:2871:2
+  Occurrences: 25
+
+CoordinatesChangedSmall
+  Before events:
+    RF: configset_add_value at config.c:2352:2
+  After events:
+    IRF: configset_add_value at config.c:2350:11
+  Occurrences: 221
+
+CoordinatesChangedSmall
+  Before events:
+    RF: create_dir_entry at ref-cache.c:96:2
+  After events:
+    IRF: create_dir_entry at ref-cache.c:95:17
+  Occurrences: 9
+
+CoordinatesChangedSmall
+  Before events:
+    RF: create_tmpfile at object-file.c:1953:1
+  After events:
+    IRF: create_tmpfile at object-file.c:1950:8
+  Occurrences: 8
+
+CoordinatesChangedSmall
+  Before events:
+    RF: dir_prefix at path.c:75:2
+  After events:
+    IRF: dir_prefix at path.c:75:33
+  Occurrences: 79
+
+CoordinatesChangedSmall
+  Before events:
+    RF: directory_size at object-file.c:1917:1
+  After events:
+    IRF: directory_size at object-file.c:1914:6
+  Occurrences: 8
+
+CoordinatesChangedSmall
+  Before events:
+    RF: do_xmallocz at wrapper.c:89:1
+  After events:
+    IRF: do_xmallocz at wrapper.c:87:22
+  Occurrences: 491
+
+CoordinatesChangedSmall
+  Before events:
+    RF: entry_equals at hashmap.c:99:2
+  After events:
+    IRF: entry_equals at hashmap.c:101:3
+  Occurrences: 215
+
+CoordinatesChangedSmall
+  Before events:
+    RF: files_assert_main_repository at files-backend.c:111:3
+  After events:
+    IRF: files_assert_main_repository at files-backend.c:110:6
+  Occurrences: 6
+
+CoordinatesChangedSmall
+  Before events:
+    RF: find_entry_ptr at hashmap.c:142:2
+  After events:
+    IRF: find_entry_ptr at hashmap.c:140:12
+  Occurrences: 683
+
+CoordinatesChangedSmall
+  Before events:
+    RF: find_entry_ptr at hashmap.c:142:2
+  After events:
+    IRF: find_entry_ptr at hashmap.c:140:2
+  Occurrences: 215
+
+CoordinatesChangedSmall
+  Before events:
+    RF: find_ref_storage_backend at refs.c:37:1
+  After events:
+    IRF: find_ref_storage_backend at refs.c:34:7
+  Occurrences: 15
+
+CoordinatesChangedSmall
+  Before events:
+    RF: free_commit_list at commit.c:638:1
+  After events:
+    IRF: free_commit_list at commit.c:636:2
+  Occurrences: 1
+
+CoordinatesChangedSmall
+  Before events:
+    RF: freshen_file at object-file.c:949:2
+  After events:
+    IRF: freshen_file at object-file.c:949:9
+  Occurrences: 1
+
+CoordinatesChangedSmall
+  Before events:
+    RF: fspathncmp at dir.c:88:2
+  After events:
+    IRF: fspathncmp at dir.c:88:9
+  Occurrences: 56
+
+CoordinatesChangedSmall
+  Before events:
+    RF: get_common_dir at setup.c:303:1
+  After events:
+    IRF: get_common_dir at setup.c:301:10
+  Occurrences: 58
+
+CoordinatesChangedSmall
+  Before events:
+    RF: get_conv_flags at object-file.c:312:1
+  After events:
+    IRF: get_conv_flags at object-file.c:309:32
+  Occurrences: 5
+
+CoordinatesChangedSmall
+  Before events:
+    RF: get_device_or_die at setup.c:1072:2
+  After events:
+    IRF: get_device_or_die at setup.c:1072:13
+  Occurrences: 52
+
+CoordinatesChangedSmall
+  Before events:
+    RF: get_home_gitattributes at attr.c:819:2
+  After events:
+    IRF: get_home_gitattributes at attr.c:819:9
+  Occurrences: 18
+
+CoordinatesChangedSmall
+  Before events:
+    RF: get_loose_ref_cache at files-backend.c:327:2
+  After events:
+    IRF: get_loose_ref_cache at files-backend.c:327:15
+  Occurrences: 9
+
+CoordinatesChangedSmall
+  Before events:
+    RF: get_ref_dir at ref-cache.c:31:2
+  After events:
+    IRF: get_ref_dir at ref-cache.c:29:15
+  Occurrences: 9
+
+CoordinatesChangedSmall
+  Before events:
+    RF: get_value at config.c:914:1
+  After events:
+    IRF: get_value at config.c:912:13
+  Occurrences: 4
+
+CoordinatesChangedSmall
+  Before events:
+    RF: git_attr_system at attr.c:824:2
+  After events:
+    IRF: git_attr_system at attr.c:824:9
+  Occurrences: 18
+
+CoordinatesChangedSmall
+  Before events:
+    RF: git_config_bool at config.c:1452:2
+  After events:
+    IRF: git_config_bool at config.c:1450:6
+  Occurrences: 262
+
+CoordinatesChangedSmall
+  Before events:
     RF: git_config_from_parameters at config.c:777:2
   After events:
     RF: git_config_from_parameters at config.c:778:1
   Occurrences: 73
+
+CoordinatesChangedSmall
+  Before events:
+    RF: git_config_set_multivar_in_file at config.c:3455:3
+  After events:
+    IRF: git_config_set_multivar_in_file at config.c:3453:6
+  Occurrences: 24
+
+CoordinatesChangedSmall
+  Before events:
+    RF: git_configset_get_value_multi at config.c:2429:2
+  After events:
+    IRF: git_configset_get_value_multi at config.c:2429:9
+  Occurrences: 239
+
+CoordinatesChangedSmall
+  Before events:
+    RF: git_configset_init at config.c:2375:1
+  After events:
+    IRF: git_configset_init at config.c:2374:17
+  Occurrences: 64
 
 CoordinatesChangedSmall
   Before events:
@@ -4825,10 +3523,325 @@ CoordinatesChangedSmall
 
 CoordinatesChangedSmall
   Before events:
+    RF: git_exec_path at exec-cmd.c:293:2
+  After events:
+    IRF: git_exec_path at exec-cmd.c:293:9
+  Occurrences: 60
+
+CoordinatesChangedSmall
+  Before events:
     RF: git_inflate_init at zlib.c:75:3
   After events:
     RF: git_inflate_init at zlib.c:78:1
   Occurrences: 28
+
+CoordinatesChangedSmall
+  Before events:
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+  After events:
+    IRF: git_is_dir_sep at git-compat-util.h:448:11
+  Occurrences: 5363
+
+CoordinatesChangedSmall
+  Before events:
+    RF: git_offset_1st_component at git-compat-util.h:457:2
+  After events:
+    IRF: git_offset_1st_component at git-compat-util.h:457:20
+  Occurrences: 174
+
+CoordinatesChangedSmall
+  Before events:
+    RF: git_parse_maybe_bool at config.c:1434:1
+  After events:
+    IRF: git_parse_maybe_bool at config.c:1432:11
+  Occurrences: 151
+
+CoordinatesChangedSmall
+  Before events:
+    RF: git_path_check_ident at convert.c:1293:2
+  After events:
+    IRF: git_path_check_ident at convert.c:1293:11
+  Occurrences: 42
+
+CoordinatesChangedSmall
+  Before events:
+    RF: hash_algo_by_ptr at hash.h:197:2
+  After events:
+    IRF: hash_algo_by_ptr at hash.h:197:11
+  Occurrences: 15
+
+CoordinatesChangedSmall
+  Before events:
+    RF: hash_to_hex_algop at hex.c:154:2
+  After events:
+    IRF: hash_to_hex_algop at hex.c:153:8
+  Occurrences: 32
+
+CoordinatesChangedSmall
+  Before events:
+    RF: hash_to_hex_algop_r at hex.c:141:2
+  After events:
+    IRF: hash_to_hex_algop_r at hex.c:139:7
+  Occurrences: 3
+
+CoordinatesChangedSmall
+  Before events:
+    RF: hashmap_entry_init at hashmap.h:319:1
+  After events:
+    IRF: hashmap_entry_init at hashmap.h:318:10
+  Occurrences: 1351
+
+CoordinatesChangedSmall
+  Before events:
+    RF: hashmap_get at hashmap.c:219:1
+  After events:
+    IRF: hashmap_get at hashmap.c:218:9
+  Occurrences: 221
+
+CoordinatesChangedSmall
+  Before events:
+    RF: hashmap_get_size at hashmap.h:327:3
+  After events:
+    IRF: hashmap_get_size at hashmap.h:327:15
+  Occurrences: 366
+
+CoordinatesChangedSmall
+  Before events:
+    RF: hashmap_init at hashmap.c:175:1
+  After events:
+    IRF: hashmap_init at hashmap.c:174:22
+  Occurrences: 52
+
+CoordinatesChangedSmall
+  Before events:
+    RF: hex2chr at cache.h:1412:2
+  After events:
+    IRF: hex2chr at cache.h:1412:41
+  Occurrences: 180
+
+CoordinatesChangedSmall
+  Before events:
+    RF: hexval at cache.h:1402:2
+  After events:
+    IRF: hexval at cache.h:1402:9
+  Occurrences: 360
+
+CoordinatesChangedSmall
+  Before events:
+    RF: highres_nanos at trace.c:333:1
+  After events:
+    IRF: highres_nanos at trace.c:330:6
+  Occurrences: 60
+
+CoordinatesChangedSmall
+  Before events:
+    RF: index_name_pos at read-cache.c:620:2
+  After events:
+    IRF: index_name_pos at read-cache.c:620:9
+  Occurrences: 12
+
+CoordinatesChangedSmall
+  Before events:
+    RF: init_repository_format at setup.c:713:1
+  After events:
+    IRF: init_repository_format at setup.c:712:2
+  Occurrences: 82
+
+CoordinatesChangedSmall
+  Before events:
+    RF: init_tree_desc_internal at tree-walk.c:67:1
+  After events:
+    IRF: init_tree_desc_internal at tree-walk.c:65:3
+  Occurrences: 3
+
+CoordinatesChangedSmall
+  Before events:
+    RF: is_dir_file at path.c:88:1
+  After events:
+    IRF: is_dir_file at path.c:87:9
+  Occurrences: 18
+
+CoordinatesChangedSmall
+  Before events:
+    RF: is_dot_or_dotdot at dir.h:457:2
+  After events:
+    IRF: is_dot_or_dotdot at dir.h:458:20
+  Occurrences: 22
+
+CoordinatesChangedSmall
+  Before events:
+    RF: is_dot_or_dotdot at dir.h:457:2
+  After events:
+    IRF: is_dot_or_dotdot at dir.h:459:31
+  Occurrences: 22
+
+CoordinatesChangedSmall
+  Before events:
+    RF: is_empty_ref_iterator at iterator.c:83:2
+  After events:
+    IRF: is_empty_ref_iterator at iterator.c:83:30
+  Occurrences: 9
+
+CoordinatesChangedSmall
+  Before events:
+    RF: is_per_worktree_ref at refs.c:816:2
+  After events:
+    IRF: is_per_worktree_ref at refs.c:817:46
+  Occurrences: 81
+
+CoordinatesChangedSmall
+  Before events:
+    RF: is_tempfile_active at tempfile.h:223:2
+  After events:
+    IRF: is_tempfile_active at tempfile.h:223:10
+  Occurrences: 242
+
+CoordinatesChangedSmall
+  Before events:
+    RF: iskeychar at config.c:538:2
+  After events:
+    IRF: iskeychar at config.c:538:9
+  Occurrences: 16606
+
+CoordinatesChangedSmall
+  Before events:
+    RF: list_add_tail at list.h:70:1
+  After events:
+    IRF: list_add_tail at list.h:69:13
+  Occurrences: 45
+
+CoordinatesChangedSmall
+  Before events:
+    RF: lookup_replace_object at replace-object.h:41:1
+  After events:
+    IRF: lookup_replace_object at replace-object.h:40:9
+  Occurrences: 27
+
+CoordinatesChangedSmall
+  Before events:
+    RF: loose_object_info at object-file.c:1510:1
+  After events:
+    IRF: loose_object_info at object-file.c:1508:13
+  Occurrences: 21
+
+CoordinatesChangedSmall
+  Before events:
+    RF: mmap_limit_check at object-file.c:1021:1
+  After events:
+    IRF: mmap_limit_check at object-file.c:1018:6
+  Occurrences: 47
+
+CoordinatesChangedSmall
+  Before events:
+    RF: move_array at git-compat-util.h:1108:1
+  After events:
+    IRF: move_array at git-compat-util.h:1106:6
+  Occurrences: 59
+
+CoordinatesChangedSmall
+  Before events:
+    RF: new_tempfile at tempfile.c:105:2
+  After events:
+    IRF: new_tempfile at tempfile.c:104:22
+  Occurrences: 31
+
+CoordinatesChangedSmall
+  Before events:
+    RF: null_oid at object-file.c:223:2
+  After events:
+    IRF: null_oid at object-file.c:223:24
+  Occurrences: 27
+
+CoordinatesChangedSmall
+  Before events:
+    RF: oid_set_algo at hash.h:335:1
+  After events:
+    IRF: oid_set_algo at hash.h:334:12
+  Occurrences: 9
+
+CoordinatesChangedSmall
+  Before events:
+    RF: oidclr at hash.h:304:1
+  After events:
+    IRF: oidclr at hash.h:303:12
+  Occurrences: 6
+
+CoordinatesChangedSmall
+  Before events:
+    RF: oidcpy at hash.h:270:1
+  After events:
+    IRF: oidcpy at hash.h:269:12
+  Occurrences: 9
+
+CoordinatesChangedSmall
+  Before events:
+    RF: oideq at hash.h:253:2
+  After events:
+    IRF: oideq at hash.h:250:11
+  Occurrences: 6
+
+CoordinatesChangedSmall
+  Before events:
+    RF: oidhash at hashmap.h:139:2
+  After events:
+    IRF: oidhash at hashmap.h:138:2
+  Occurrences: 27
+
+CoordinatesChangedSmall
+  Before events:
+    RF: open_loose_object at object-file.c:1198:1
+  After events:
+    IRF: open_loose_object at object-file.c:1196:8
+  Occurrences: 6
+
+CoordinatesChangedSmall
+  Before events:
+    RF: parse_options_check at parse-options.c:524:1
+  After events:
+    IRF: parse_options_check at parse-options.c:523:2
+  Occurrences: 60
+
+CoordinatesChangedSmall
+  Before events:
+    RF: parse_options_end at parse-options.c:954:1
+  After events:
+    IRF: parse_options_end at parse-options.c:952:35
+  Occurrences: 60
+
+CoordinatesChangedSmall
+  Before events:
+    RF: prepare_packed_git_mru at packfile.c:985:1
+  After events:
+    IRF: prepare_packed_git_mru at packfile.c:983:2
+  Occurrences: 22
+
+CoordinatesChangedSmall
+  Before events:
+    RF: prepare_replace_object at replace-object.c:55:1
+  After events:
+    IRF: prepare_replace_object at replace-object.c:52:38
+  Occurrences: 9
+
+CoordinatesChangedSmall
+  Before events:
+    RF: push_stack at attr.c:839:1
+  After events:
+    IRF: push_stack at attr.c:837:17
+  Occurrences: 104
+
+CoordinatesChangedSmall
+  Before events:
+    RF: read_attr_from_array at attr.c:677:2
+  After events:
+    IRF: read_attr_from_array at attr.c:674:2
+  Occurrences: 18
+
+CoordinatesChangedSmall
+  Before events:
+    RF: read_object at object-file.c:1675:1
+  After events:
+    IRF: read_object at object-file.c:1672:6
+  Occurrences: 2
 
 CoordinatesChangedSmall
   Before events:
@@ -4839,10 +3852,164 @@ CoordinatesChangedSmall
 
 CoordinatesChangedSmall
   Before events:
+    RF: ref_iterator_advance at iterator.c:13:2
+  After events:
+    IRF: ref_iterator_advance at iterator.c:13:9
+  Occurrences: 9
+
+CoordinatesChangedSmall
+  Before events:
+    RF: refs_ref_iterator_begin at refs.c:1546:2
+  After events:
+    IRF: refs_ref_iterator_begin at refs.c:1543:6
+  Occurrences: 15
+
+CoordinatesChangedSmall
+  Before events:
     RF: refs_verify_refname_available at refs.c:2424:2
   After events:
     RF: refs_verify_refname_available at refs.c:2425:1
   Occurrences: 6
+
+CoordinatesChangedSmall
+  Before events:
+    RF: repo_cfg_bool at repo-settings.c:12:1
+  After events:
+    IRF: repo_cfg_bool at repo-settings.c:11:9
+  Occurrences: 144
+
+CoordinatesChangedSmall
+  Before events:
+    RF: repo_cfg_int at repo-settings.c:19:1
+  After events:
+    IRF: repo_cfg_int at repo-settings.c:18:9
+  Occurrences: 16
+
+CoordinatesChangedSmall
+  Before events:
+    RF: repo_config_clear at config.c:2560:1
+  After events:
+    IRF: repo_config_clear at config.c:2557:20
+  Occurrences: 52
+
+CoordinatesChangedSmall
+  Before events:
+    RF: repo_config_clear at config.c:2560:1
+  After events:
+    IRF: repo_config_clear at config.c:2557:6
+  Occurrences: 18
+
+CoordinatesChangedSmall
+  Before events:
+    RF: repo_config_get_pathname at config.c:2647:2
+  After events:
+    IRF: repo_config_get_pathname at config.c:2645:6
+  Occurrences: 6
+
+CoordinatesChangedSmall
+  Before events:
+    RF: repo_promisor_remote_find at promisor-remote.c:195:1
+  After events:
+    IRF: repo_promisor_remote_find at promisor-remote.c:192:13
+  Occurrences: 6
+
+CoordinatesChangedSmall
+  Before events:
+    RF: repo_set_hash_algo at repository.c:98:1
+  After events:
+    IRF: repo_set_hash_algo at repository.c:97:18
+  Occurrences: 60
+
+CoordinatesChangedSmall
+  Before events:
+    RF: safe_create_leading_directories at object-file.c:400:2
+  After events:
+    IRF: safe_create_leading_directories at object-file.c:400:9
+  Occurrences: 6
+
+CoordinatesChangedSmall
+  Before events:
+    RF: sane_case at git-compat-util.h:1238:2
+  After events:
+    IRF: sane_case at git-compat-util.h:1236:6
+  Occurrences: 8518
+
+CoordinatesChangedSmall
+  Before events:
+    RF: sane_qsort at git-compat-util.h:1310:1
+  After events:
+    IRF: sane_qsort at git-compat-util.h:1308:6
+  Occurrences: 18
+
+CoordinatesChangedSmall
+  Before events:
+    RF: search_ref_dir at ref-cache.c:141:1
+  After events:
+    IRF: search_ref_dir at ref-cache.c:140:11
+  Occurrences: 9
+
+CoordinatesChangedSmall
+  Before events:
+    RF: setup_discovered_git_dir at setup.c:1025:1
+  After events:
+    IRF: setup_discovered_git_dir at setup.c:1024:18
+  Occurrences: 4
+
+CoordinatesChangedSmall
+  Before events:
+    RF: setup_original_cwd at setup.c:511:1
+  After events:
+    IRF: setup_original_cwd at setup.c:510:29
+  Occurrences: 48
+
+CoordinatesChangedSmall
+  Before events:
+    RF: sigchain_push at sigchain.c:30:1
+  After events:
+    IRF: sigchain_push at sigchain.c:28:6
+  Occurrences: 35
+
+CoordinatesChangedSmall
+  Before events:
+    RF: simple_length at dir.c:611:4
+  After events:
+    IRF: simple_length at dir.c:610:17
+  Occurrences: 28
+
+CoordinatesChangedSmall
+  Before events:
+    RF: skip_prefix at git-compat-util.h:684:1
+  After events:
+    IRF: skip_prefix at git-compat-util.h:682:2
+  Occurrences: 122
+
+CoordinatesChangedSmall
+  Before events:
+    RF: st_add at git-compat-util.h:985:2
+  After events:
+    IRF: st_add at git-compat-util.h:982:6
+  Occurrences: 296
+
+CoordinatesChangedSmall
+  Before events:
+    RF: st_add at git-compat-util.h:985:2
+  After events:
+    IRF: st_add at git-compat-util.h:985:11
+  Occurrences: 268
+
+CoordinatesChangedSmall
+  Before events:
+    RF: st_mult at git-compat-util.h:995:2
+  After events:
+    IRF: st_mult at git-compat-util.h:992:6
+  Occurrences: 363
+
+CoordinatesChangedSmall
+  Before events:
+    RF: st_mult at git-compat-util.h:995:2
+  After events:
+    IRF: st_mult at git-compat-util.h:995:11
+  Occurrences: 159
 
 CoordinatesChangedSmall
   Before events:
@@ -4853,10 +4020,213 @@ CoordinatesChangedSmall
 
 CoordinatesChangedSmall
   Before events:
+    RF: strbuf_addch at strbuf.h:234:1
+  After events:
+    IRF: strbuf_addch at strbuf.h:232:21
+  Occurrences: 7340
+
+CoordinatesChangedSmall
+  Before events:
+    RF: strbuf_addch at strbuf.h:234:1
+  After events:
+    IRF: strbuf_addch at strbuf.h:233:19
+  Occurrences: 3172
+
+CoordinatesChangedSmall
+  Before events:
+    RF: strbuf_addstr at strbuf.h:306:1
+  After events:
+    IRF: strbuf_addstr at strbuf.h:305:2
+  Occurrences: 67
+
+CoordinatesChangedSmall
+  Before events:
+    RF: strbuf_avail at strbuf.h:141:2
+  After events:
+    IRF: strbuf_avail at strbuf.h:141:41
+  Occurrences: 1518
+
+CoordinatesChangedSmall
+  Before events:
+    RF: strbuf_avail at strbuf.h:141:2
+  After events:
+    IRF: strbuf_avail at strbuf.h:141:9
+  Occurrences: 15675
+
+CoordinatesChangedSmall
+  Before events:
+    RF: strbuf_cleanup_path at path.c:55:1
+  After events:
+    IRF: strbuf_cleanup_path at path.c:53:6
+  Occurrences: 297
+
+CoordinatesChangedSmall
+  Before events:
+    RF: strbuf_grow at strbuf.c:102:1
+  After events:
+    IRF: strbuf_grow at strbuf.c:100:6
+  Occurrences: 3392
+
+CoordinatesChangedSmall
+  Before events:
+    RF: strbuf_grow at strbuf.c:102:1
+  After events:
+    IRF: strbuf_grow at strbuf.c:101:14
+  Occurrences: 1534
+
+CoordinatesChangedSmall
+  Before events:
+    RF: strbuf_init at strbuf.c:60:1
+  After events:
+    IRF: strbuf_init at strbuf.c:57:2
+  Occurrences: 2347
+
+CoordinatesChangedSmall
+  Before events:
     RF: strbuf_realpath_1 at abspath.c:199:2
   After events:
     RF: strbuf_realpath_1 at abspath.c:200:1
   Occurrences: 174
+
+CoordinatesChangedSmall
+  Before events:
+    RF: strbuf_setlen at strbuf.h:169:1
+  After events:
+    IRF: strbuf_setlen at strbuf.h:166:16
+  Occurrences: 8598
+
+CoordinatesChangedSmall
+  Before events:
+    RF: strbuf_setlen at strbuf.h:169:1
+  After events:
+    IRF: strbuf_setlen at strbuf.h:168:3
+  Occurrences: 512
+
+CoordinatesChangedSmall
+  Before events:
+    RF: stream_blob at cat-file.c:86:2
+  After events:
+    IRF: stream_blob at cat-file.c:84:6
+  Occurrences: 7
+
+CoordinatesChangedSmall
+  Before events:
+    RF: string_list_append_nodup at string-list.c:213:2
+  After events:
+    IRF: string_list_append_nodup at string-list.c:211:10
+  Occurrences: 6
+
+CoordinatesChangedSmall
+  Before events:
+    RF: string_list_append_nodup at string-list.c:213:2
+  After events:
+    IRF: string_list_append_nodup at string-list.c:212:10
+  Occurrences: 64
+
+CoordinatesChangedSmall
+  Before events:
+    RF: strvec_init at strvec.c:11:1
+  After events:
+    IRF: strvec_init at strvec.c:10:2
+  Occurrences: 131
+
+CoordinatesChangedSmall
+  Before events:
+    RF: trace_pass_fl at trace.h:275:2
+  After events:
+    IRF: trace_pass_fl at trace.h:275:9
+  Occurrences: 60
+
+CoordinatesChangedSmall
+  Before events:
+    RF: trace_want at trace.c:322:2
+  After events:
+    IRF: trace_want at trace.c:322:10
+  Occurrences: 130
+
+CoordinatesChangedSmall
+  Before events:
+    RF: validate_snapshot at packed-backend.c:706:1
+  After events:
+    IRF: validate_snapshot at packed-backend.c:703:21
+  Occurrences: 15
+
+CoordinatesChangedSmall
+  Before events:
+    RF: validate_snapshot at packed-backend.c:706:1
+  After events:
+    IRF: validate_snapshot at packed-backend.c:703:6
+  Occurrences: 66
+
+CoordinatesChangedSmall
+  Before events:
+    RF: volatile_list_add at list.h:205:1
+  After events:
+    IRF: volatile_list_add at list.h:204:13
+  Occurrences: 31
+
+CoordinatesChangedSmall
+  Before events:
+    RF: write_buffer at object-file.c:1872:1
+  After events:
+    IRF: write_buffer at object-file.c:1869:6
+  Occurrences: 8
+
+CoordinatesChangedSmall
+  Before events:
+    RF: write_object_file at object-store.h:272:2
+  After events:
+    IRF: write_object_file at object-store.h:272:9
+  Occurrences: 9
+
+CoordinatesChangedSmall
+  Before events:
+    RF: xmmap_gently at object-file.c:1032:2
+  After events:
+    IRF: xmmap_gently at object-file.c:1030:24
+  Occurrences: 28
+
+CoordinatesChangedSmall
+  Before events:
+    RF: xsize_t at git-compat-util.h:1176:2
+  After events:
+    IRF: xsize_t at git-compat-util.h:1174:14
+  Occurrences: 74
+
+CoordinatesChangedSmall
+  Before events:
+    RF: xstrdup_or_null at git-compat-util.h:1169:2
+  After events:
+    IRF: xstrdup_or_null at git-compat-util.h:1169:15
+  Occurrences: 221
+
+CoordinatesChangedSmall
+  Before events:
+    RF: xstrdup_or_null at git-compat-util.h:1169:2
+  After events:
+    IRF: xstrdup_or_null at git-compat-util.h:1169:9
+  Occurrences: 403
+
+CoordinatesChangedSmall
+  Before events:
+    RF: zlib_buf_cap at zlib.c:34:2
+  After events:
+    IRF: zlib_buf_cap at zlib.c:34:9
+  Occurrences: 262
+
+CoordinatesChangedSmall
+  Before events:
+    RF: zlib_post_call at zlib.c:65:1
+  After events:
+    IRF: zlib_post_call at zlib.c:64:15
+  Occurrences: 131
+
+CoordinatesChangedSmall
+  Before events:
+    RF: zlib_pre_call at zlib.c:45:1
+  After events:
+    IRF: zlib_pre_call at zlib.c:44:17
+  Occurrences: 131
 
 CoordinatesChangedLarge
   Before events:
@@ -5000,10 +4370,318 @@ CoordinatesChangedLarge
 
 CoordinatesChangedLarge
   Before events:
+    RF: add_per_worktree_entries_to_dir at files-backend.c:219:1
+  After events:
+    IRF: add_per_worktree_entries_to_dir at files-backend.c:207:2
+  Occurrences: 9
+
+CoordinatesChangedLarge
+  Before events:
+    RF: all_attrs_init at attr.c:173:1
+  After events:
+    IRF: all_attrs_init at attr.c:169:2
+  Occurrences: 42
+
+CoordinatesChangedLarge
+  Before events:
+    RF: alloc_table at hashmap.c:92:1
+  After events:
+    IRF: alloc_table at hashmap.c:82:15
+  Occurrences: 70
+
+CoordinatesChangedLarge
+  Before events:
+    RF: attr_name_valid at attr.c:192:1
+  After events:
+    IRF: attr_name_valid at attr.c:181:6
+  Occurrences: 208
+
+CoordinatesChangedLarge
+  Before events:
+    RF: attr_name_valid at attr.c:192:1
+  After events:
+    IRF: attr_name_valid at attr.c:183:2
+  Occurrences: 100
+
+CoordinatesChangedLarge
+  Before events:
+    RF: bisearch at utf8.c:50:1
+  After events:
+    IRF: bisearch at utf8.c:37:27
+  Occurrences: 168
+
+CoordinatesChangedLarge
+  Before events:
+    RF: bootstrap_attr_stack at attr.c:878:1
+  After events:
+    IRF: bootstrap_attr_stack at attr.c:847:6
+  Occurrences: 24
+
+CoordinatesChangedLarge
+  Before events:
+    RF: cat_one_file at cat-file.c:241:1
+  After events:
+    IRF: cat_one_file at cat-file.c:110:6
+  Occurrences: 7
+
+CoordinatesChangedLarge
+  Before events:
+    RF: check_and_freshen_file at object-file.c:966:1
+  After events:
+    IRF: check_and_freshen_file at object-file.c:961:6
+  Occurrences: 9
+
+CoordinatesChangedLarge
+  Before events:
+    RF: check_and_freshen_nonlocal at object-file.c:992:1
+  After events:
+    IRF: check_and_freshen_nonlocal at object-file.c:987:2
+  Occurrences: 8
+
+CoordinatesChangedLarge
+  Before events:
+    RF: check_refname_component at refs.c:243:1
+  After events:
+    IRF: check_refname_component at refs.c:233:38
+  Occurrences: 87
+
+CoordinatesChangedLarge
+  Before events:
+    RF: check_refname_component at refs.c:243:1
+  After events:
+    IRF: check_refname_component at refs.c:233:6
+  Occurrences: 117
+
+CoordinatesChangedLarge
+  Before events:
+    RF: cleanup_path at path.c:47:2
+  After events:
+    IRF: cleanup_path at path.c:43:6
+  Occurrences: 297
+
+CoordinatesChangedLarge
+  Before events:
+    RF: cmp_icase at dir.c:3055:1
+  After events:
+    IRF: cmp_icase at dir.c:3050:6
+  Occurrences: 3342
+
+CoordinatesChangedLarge
+  Before events:
+    RF: commit_pager_choice at git.c:123:1
+  After events:
+    IRF: commit_pager_choice at git.c:113:2
+  Occurrences: 60
+
+CoordinatesChangedLarge
+  Before events:
+    RF: configset_iter at config.c:2243:1
+  After events:
+    IRF: configset_iter at config.c:2229:2
+  Occurrences: 83
+
+CoordinatesChangedLarge
+  Before events:
+    RF: create_default_files at init-db.c:318:2
+  After events:
+    IRF: create_default_files at init-db.c:254:45
+  Occurrences: 6
+
+CoordinatesChangedLarge
+  Before events:
+    RF: create_symref_locked at files-backend.c:1921:1
+  After events:
+    IRF: create_symref_locked at files-backend.c:1917:6
+  Occurrences: 6
+
+CoordinatesChangedLarge
+  Before events:
+    RF: determine_macros at attr.c:1069:1
+  After events:
+    IRF: determine_macros at attr.c:1057:2
+  Occurrences: 42
+
+CoordinatesChangedLarge
+  Before events:
+    RF: do_event at config.c:1005:1
+  After events:
+    IRF: do_event at config.c:980:18
+  Occurrences: 1695
+
+CoordinatesChangedLarge
+  Before events:
+    RF: do_event at config.c:1005:1
+  After events:
+    IRF: do_event at config.c:980:6
+  Occurrences: 19
+
+CoordinatesChangedLarge
+  Before events:
+    RF: do_event at config.c:1005:1
+  After events:
+    IRF: do_event at config.c:996:46
+  Occurrences: 19
+
+CoordinatesChangedLarge
+  Before events:
+    RF: do_event at config.c:1005:1
+  After events:
+    IRF: do_event at config.c:996:6
+  Occurrences: 99
+
+CoordinatesChangedLarge
+  Before events:
     RF: do_lookup_replace_object at replace-object.c:80:4
   After events:
     RF: do_lookup_replace_object at replace-object.c:84:1
   Occurrences: 27
+
+CoordinatesChangedLarge
+  Before events:
+    RF: files_downcast at files-backend.c:138:2
+  After events:
+    IRF: files_downcast at files-backend.c:128:6
+  Occurrences: 9
+
+CoordinatesChangedLarge
+  Before events:
+    RF: files_downcast at files-backend.c:138:2
+  After events:
+    IRF: files_downcast at files-backend.c:134:6
+  Occurrences: 87
+
+CoordinatesChangedLarge
+  Before events:
+    RF: fill at attr.c:1036:2
+  After events:
+    IRF: fill at attr.c:1022:2
+  Occurrences: 42
+
+CoordinatesChangedLarge
+  Before events:
+    RF: fill_loose_path at object-file.c:432:1
+  After events:
+    IRF: fill_loose_path at object-file.c:424:2
+  Occurrences: 53
+
+CoordinatesChangedLarge
+  Before events:
+    RF: find_cached_object at object-file.c:301:1
+  After events:
+    IRF: find_cached_object at object-file.c:294:2
+  Occurrences: 27
+
+CoordinatesChangedLarge
+  Before events:
+    RF: find_descendant_ref at refs.c:1496:1
+  After events:
+    IRF: find_descendant_ref at refs.c:1476:6
+  Occurrences: 6
+
+CoordinatesChangedLarge
+  Before events:
+    RF: find_reference_location at packed-backend.c:583:1
+  After events:
+    IRF: find_reference_location at packed-backend.c:563:2
+  Occurrences: 81
+
+CoordinatesChangedLarge
+  Before events:
+    RF: free_individual_entries at hashmap.c:189:1
+  After events:
+    IRF: free_individual_entries at hashmap.c:183:2
+  Occurrences: 13
+
+CoordinatesChangedLarge
+  Before events:
+    RF: free_preprocessed_options at parse-options.c:770:1
+  After events:
+    IRF: free_preprocessed_options at parse-options.c:762:6
+  Occurrences: 51
+
+CoordinatesChangedLarge
+  Before events:
+    RF: freshen_packed_object at object-file.c:2121:1
+  After events:
+    IRF: freshen_packed_object at object-file.c:2111:6
+  Occurrences: 9
+
+CoordinatesChangedLarge
+  Before events:
+    RF: get_builtin at git.c:644:1
+  After events:
+    IRF: get_builtin at git.c:638:2
+  Occurrences: 60
+
+CoordinatesChangedLarge
+  Before events:
+    RF: get_conv_flags at object-file.c:312:1
+  After events:
+    IRF: get_conv_flags at object-file.c:308:11
+  Occurrences: 16
+
+CoordinatesChangedLarge
+  Before events:
+    RF: get_device_or_die at setup.c:1072:2
+  After events:
+    IRF: get_device_or_die at setup.c:1066:6
+  Occurrences: 4
+
+CoordinatesChangedLarge
+  Before events:
+    RF: get_hash_hex_algop at hex.c:62:1
+  After events:
+    IRF: get_hash_hex_algop at hex.c:54:2
+  Occurrences: 9
+
+CoordinatesChangedLarge
+  Before events:
+    RF: get_mode at tree-walk.c:24:1
+  After events:
+    IRF: get_mode at tree-walk.c:17:2
+  Occurrences: 1
+
+CoordinatesChangedLarge
+  Before events:
+    RF: get_next_char at config.c:814:1
+  After events:
+    IRF: get_next_char at config.c:806:6
+  Occurrences: 14268
+
+CoordinatesChangedLarge
+  Before events:
+    RF: get_next_char at config.c:814:1
+  After events:
+    IRF: get_next_char at config.c:807:13
+  Occurrences: 798
+
+CoordinatesChangedLarge
+  Before events:
+    RF: get_next_char at config.c:814:1
+  After events:
+    IRF: get_next_char at config.c:810:13
+  Occurrences: 134
+
+CoordinatesChangedLarge
+  Before events:
+    RF: get_ref_dir at ref-cache.c:31:2
+  After events:
+    IRF: get_ref_dir at ref-cache.c:24:6
+  Occurrences: 9
+
+CoordinatesChangedLarge
+  Before events:
+    RF: get_unit_factor at config.c:1156:1
+  After events:
+    IRF: get_unit_factor at config.c:1147:6
+  Occurrences: 203
+
+CoordinatesChangedLarge
+  Before events:
+    RF: getenv_safe at environment.c:160:1
+  After events:
+    IRF: getenv_safe at environment.c:155:6
+  Occurrences: 290
 
 CoordinatesChangedLarge
   Before events:
@@ -5014,10 +4692,521 @@ CoordinatesChangedLarge
 
 CoordinatesChangedLarge
   Before events:
+    RF: git_configset_get_int at config.c:2463:1
+  After events:
+    IRF: git_configset_get_int at config.c:2458:6
+  Occurrences: 38
+
+CoordinatesChangedLarge
+  Before events:
+    RF: git_configset_get_string_tmp at config.c:2453:1
+  After events:
+    IRF: git_configset_get_string_tmp at config.c:2445:6
+  Occurrences: 32
+
+CoordinatesChangedLarge
+  Before events:
+    RF: git_default_core_config at config.c:1778:1
+  After events:
+    IRF: git_default_core_config at config.c:1496:24
+  Occurrences: 51
+
+CoordinatesChangedLarge
+  Before events:
+    RF: git_default_core_config at config.c:1778:1
+  After events:
+    IRF: git_default_core_config at config.c:1532:26
+  Occurrences: 51
+
+CoordinatesChangedLarge
+  Before events:
+    RF: git_default_core_config at config.c:1778:1
+  After events:
+    IRF: git_default_core_config at config.c:1550:24
+  Occurrences: 51
+
+CoordinatesChangedLarge
+  Before events:
+    RF: git_default_core_config at config.c:1778:1
+  After events:
+    IRF: git_default_core_config at config.c:1636:13
+  Occurrences: 13
+
+CoordinatesChangedLarge
+  Before events:
+    RF: git_default_core_config at config.c:1778:1
+  After events:
+    IRF: git_default_core_config at config.c:1771:6
+  Occurrences: 51
+
+CoordinatesChangedLarge
+  Before events:
+    RF: git_global_config at config.c:2093:1
+  After events:
+    IRF: git_global_config at config.c:2088:16
+  Occurrences: 133
+
+CoordinatesChangedLarge
+  Before events:
+    RF: git_parse_int at config.c:1239:1
+  After events:
+    IRF: git_parse_int at config.c:1235:7
+  Occurrences: 203
+
+CoordinatesChangedLarge
+  Before events:
+    RF: git_parse_maybe_bool at config.c:1434:1
+  After events:
+    IRF: git_parse_maybe_bool at config.c:1429:6
+  Occurrences: 278
+
+CoordinatesChangedLarge
+  Before events:
+    RF: git_path_check_convert at convert.c:1287:1
+  After events:
+    IRF: git_path_check_convert at convert.c:1281:23
+  Occurrences: 42
+
+CoordinatesChangedLarge
+  Before events:
+    RF: git_path_check_crlf at convert.c:1261:1
+  After events:
+    IRF: git_path_check_crlf at convert.c:1250:6
+  Occurrences: 10
+
+CoordinatesChangedLarge
+  Before events:
+    RF: git_path_check_crlf at convert.c:1261:1
+  After events:
+    IRF: git_path_check_crlf at convert.c:1252:11
+  Occurrences: 10
+
+CoordinatesChangedLarge
+  Before events:
+    RF: git_path_check_crlf at convert.c:1261:1
+  After events:
+    IRF: git_path_check_crlf at convert.c:1254:11
+  Occurrences: 64
+
+CoordinatesChangedLarge
+  Before events:
+    RF: git_path_check_encoding at convert.c:1244:1
+  After events:
+    IRF: git_path_check_encoding at convert.c:1232:24
+  Occurrences: 42
+
+CoordinatesChangedLarge
+  Before events:
+    RF: git_path_check_eol at convert.c:1274:1
+  After events:
+    IRF: git_path_check_eol at convert.c:1267:6
+  Occurrences: 32
+
+CoordinatesChangedLarge
+  Before events:
+    RF: guess_repository_type at init-db.c:508:1
+  After events:
+    IRF: guess_repository_type at init-db.c:497:6
+  Occurrences: 6
+
+CoordinatesChangedLarge
+  Before events:
+    RF: has_subcommands at parse-options.c:532:1
+  After events:
+    IRF: has_subcommands at parse-options.c:528:2
+  Occurrences: 60
+
+CoordinatesChangedLarge
+  Before events:
+    RF: hash_to_hex_algop_r at hex.c:141:2
+  After events:
+    IRF: hash_to_hex_algop_r at hex.c:132:11
+  Occurrences: 1
+
+CoordinatesChangedLarge
+  Before events:
+    RF: hashmap_iter_next at hashmap.c:308:1
+  After events:
+    IRF: hashmap_iter_next at hashmap.c:303:7
+  Occurrences: 13
+
+CoordinatesChangedLarge
+  Before events:
+    RF: initialize_repository_version at init-db.c:188:1
+  After events:
+    IRF: initialize_repository_version at init-db.c:183:6
+  Occurrences: 6
+
+CoordinatesChangedLarge
+  Before events:
+    RF: is_dir_file at path.c:88:1
+  After events:
+    IRF: is_dir_file at path.c:83:29
+  Occurrences: 61
+
+CoordinatesChangedLarge
+  Before events:
+    RF: is_dup_ref at ref-cache.c:223:1
+  After events:
+    IRF: is_dup_ref at ref-cache.c:209:6
+  Occurrences: 54
+
+CoordinatesChangedLarge
+  Before events:
+    RF: is_pseudoref_syntax at refs.c:835:1
+  After events:
+    IRF: is_pseudoref_syntax at refs.c:825:2
+  Occurrences: 12
+
+CoordinatesChangedLarge
+  Before events:
+    RF: is_pseudoref_syntax at refs.c:835:1
+  After events:
+    IRF: is_pseudoref_syntax at refs.c:826:33
+  Occurrences: 81
+
+CoordinatesChangedLarge
+  Before events:
+    RF: load_contents at packed-backend.c:522:1
+  After events:
+    IRF: load_contents at packed-backend.c:483:7
+  Occurrences: 15
+
+CoordinatesChangedLarge
+  Before events:
+    RF: lock_file_timeout at lockfile.c:147:1
+  After events:
+    IRF: lock_file_timeout at lockfile.c:111:10
+  Occurrences: 25
+
+CoordinatesChangedLarge
+  Before events:
+    RF: loose_object_info at object-file.c:1510:1
+  After events:
+    IRF: loose_object_info at object-file.c:1463:6
+  Occurrences: 6
+
+CoordinatesChangedLarge
+  Before events:
+    RF: macroexpand_one at attr.c:1047:1
+  After events:
+    IRF: macroexpand_one at attr.c:1043:18
+  Occurrences: 20
+
+CoordinatesChangedLarge
+  Before events:
+    RF: matches at config.c:2888:1
+  After events:
+    IRF: matches at config.c:2877:6
+  Occurrences: 40
+
+CoordinatesChangedLarge
+  Before events:
+    RF: memhash at hashmap.c:37:2
+  After events:
+    IRF: memhash at hashmap.c:33:2
+  Occurrences: 221
+
+CoordinatesChangedLarge
+  Before events:
+    RF: memory_limit_check at wrapper.c:35:1
+  After events:
+    IRF: memory_limit_check at wrapper.c:25:6
+  Occurrences: 6993
+
+CoordinatesChangedLarge
+  Before events:
+    RF: needs_work_tree_config at init-db.c:168:1
+  After events:
+    IRF: needs_work_tree_config at init-db.c:164:6
+  Occurrences: 6
+
+CoordinatesChangedLarge
+  Before events:
+    RF: open_loose_object at object-file.c:1198:1
+  After events:
+    IRF: open_loose_object at object-file.c:1190:7
+  Occurrences: 28
+
+CoordinatesChangedLarge
+  Before events:
+    RF: packed_downcast at packed-backend.c:235:2
+  After events:
+    IRF: packed_downcast at packed-backend.c:225:6
+  Occurrences: 15
+
+CoordinatesChangedLarge
+  Before events:
+    RF: packed_downcast at packed-backend.c:235:2
+  After events:
+    IRF: packed_downcast at packed-backend.c:231:6
+  Occurrences: 66
+
+CoordinatesChangedLarge
+  Before events:
+    RF: parse_config_key at config.c:3767:1
+  After events:
+    IRF: parse_config_key at config.c:3741:39
+  Occurrences: 363
+
+CoordinatesChangedLarge
+  Before events:
+    RF: parse_long_opt at parse-options.c:407:1
+  After events:
+    IRF: parse_long_opt at parse-options.c:382:7
+  Occurrences: 8
+
+CoordinatesChangedLarge
+  Before events:
+    RF: parse_nodash_opt at parse-options.c:422:1
+  After events:
+    IRF: parse_nodash_opt at parse-options.c:415:2
+  Occurrences: 45
+
+CoordinatesChangedLarge
+  Before events:
+    RF: path_in_sparse_checkout_1 at dir.c:1492:1
+  After events:
+    IRF: path_in_sparse_checkout_1 at dir.c:1466:44
+  Occurrences: 12
+
+CoordinatesChangedLarge
+  Before events:
+    RF: path_matches at attr.c:995:1
+  After events:
+    IRF: path_matches at attr.c:981:48
+  Occurrences: 56
+
+CoordinatesChangedLarge
+  Before events:
+    RF: peel_onion at object-name.c:1201:1
+  After events:
+    IRF: peel_onion at object-name.c:1122:6
+  Occurrences: 9
+
+CoordinatesChangedLarge
+  Before events:
+    RF: prepare_alt_odb at object-file.c:944:1
+  After events:
+    IRF: prepare_alt_odb at object-file.c:937:6
+  Occurrences: 44
+
+CoordinatesChangedLarge
+  Before events:
+    RF: prepare_replace_object at replace-object.c:55:1
+  After events:
+    IRF: prepare_replace_object at replace-object.c:38:6
+  Occurrences: 18
+
+CoordinatesChangedLarge
+  Before events:
+    RF: preprocess_options at parse-options.c:756:1
+  After events:
+    IRF: preprocess_options at parse-options.c:702:6
+  Occurrences: 51
+
+CoordinatesChangedLarge
+  Before events:
+    RF: preprocess_options at parse-options.c:756:1
+  After events:
+    IRF: preprocess_options at parse-options.c:711:2
+  Occurrences: 9
+
+CoordinatesChangedLarge
+  Before events:
+    RF: push_stack at attr.c:839:1
+  After events:
+    IRF: push_stack at attr.c:832:6
+  Occurrences: 18
+
+CoordinatesChangedLarge
+  Before events:
+    RF: repo_read_config at config.c:2546:1
+  After events:
+    IRF: repo_read_config at config.c:2524:15
+  Occurrences: 64
+
+CoordinatesChangedLarge
+  Before events:
+    RF: report_pack_garbage at packfile.c:809:1
+  After events:
+    IRF: report_pack_garbage at packfile.c:781:6
+  Occurrences: 22
+
+CoordinatesChangedLarge
+  Before events:
+    RF: sane_iscase at git-compat-util.h:1250:1
+  After events:
+    IRF: sane_iscase at git-compat-util.h:1243:7
+  Occurrences: 129
+
+CoordinatesChangedLarge
+  Before events:
+    RF: search_for_subdir at ref-cache.c:160:1
+  After events:
+    IRF: search_for_subdir at ref-cache.c:155:6
+  Occurrences: 9
+
+CoordinatesChangedLarge
+  Before events:
+    RF: search_ref_dir at ref-cache.c:141:1
+  After events:
+    IRF: search_ref_dir at ref-cache.c:137:6
+  Occurrences: 9
+
+CoordinatesChangedLarge
+  Before events:
+    RF: setup_discovered_git_dir at setup.c:1025:1
+  After events:
+    IRF: setup_discovered_git_dir at setup.c:1016:6
+  Occurrences: 48
+
+CoordinatesChangedLarge
+  Before events:
+    RF: setup_original_cwd at setup.c:511:1
+  After events:
+    IRF: setup_original_cwd at setup.c:502:30
+  Occurrences: 4
+
+CoordinatesChangedLarge
+  Before events:
+    RF: should_validate_cache_entries at read-cache.c:3622:2
+  After events:
+    IRF: should_validate_cache_entries at read-cache.c:3615:6
+  Occurrences: 45
+
+CoordinatesChangedLarge
+  Before events:
+    RF: skip_prefix at git-compat-util.h:684:1
+  After events:
+    IRF: skip_prefix at git-compat-util.h:678:7
+  Occurrences: 106
+
+CoordinatesChangedLarge
+  Before events:
+    RF: skip_prefix at git-compat-util.h:684:1
+  After events:
+    IRF: skip_prefix at git-compat-util.h:678:8
+  Occurrences: 1372
+
+CoordinatesChangedLarge
+  Before events:
+    RF: strbuf_addch at strbuf.h:234:1
+  After events:
+    IRF: strbuf_addch at strbuf.h:230:6
+  Occurrences: 1060
+
+CoordinatesChangedLarge
+  Before events:
+    RF: strbuf_detach at strbuf.c:78:2
+  After events:
+    IRF: strbuf_detach at strbuf.c:74:12
+  Occurrences: 202
+
+CoordinatesChangedLarge
+  Before events:
+    RF: strbuf_grow at strbuf.c:102:1
+  After events:
+    IRF: strbuf_grow at strbuf.c:94:39
+  Occurrences: 12
+
+CoordinatesChangedLarge
+  Before events:
+    RF: strbuf_grow at strbuf.c:102:1
+  After events:
+    IRF: strbuf_grow at strbuf.c:94:6
+  Occurrences: 1382
+
+CoordinatesChangedLarge
+  Before events:
+    RF: strbuf_setlen at strbuf.h:169:1
+  After events:
+    IRF: strbuf_setlen at strbuf.h:162:17
+  Occurrences: 5
+
+CoordinatesChangedLarge
+  Before events:
+    RF: strbuf_worktree_gitdir at path.c:427:1
+  After events:
+    IRF: strbuf_worktree_gitdir at path.c:421:7
+  Occurrences: 79
+
+CoordinatesChangedLarge
+  Before events:
+    RF: strip_suffix_mem at git-compat-util.h:738:1
+  After events:
+    IRF: strip_suffix_mem at git-compat-util.h:734:20
+  Occurrences: 9
+
+CoordinatesChangedLarge
+  Before events:
+    RF: strip_suffix_mem at git-compat-util.h:738:1
+  After events:
+    IRF: strip_suffix_mem at git-compat-util.h:734:23
+  Occurrences: 9
+
+CoordinatesChangedLarge
+  Before events:
+    RF: substitute_branch_name at refs.c:721:1
+  After events:
+    IRF: substitute_branch_name at refs.c:713:6
+  Occurrences: 9
+
+CoordinatesChangedLarge
+  Before events:
+    RF: tr2_tgt_want_builtins at trace2.c:71:2
+  After events:
+    IRF: tr2_tgt_want_builtins at trace2.c:67:2
+  Occurrences: 60
+
+CoordinatesChangedLarge
+  Before events:
+    RF: trace_argv_vprintf_fl at trace.c:169:1
+  After events:
+    IRF: trace_argv_vprintf_fl at trace.c:161:6
+  Occurrences: 60
+
+CoordinatesChangedLarge
+  Before events:
+    RF: update_symref_reflog at files-backend.c:1898:1
+  After events:
+    IRF: update_symref_reflog at files-backend.c:1892:46
+  Occurrences: 6
+
+CoordinatesChangedLarge
+  Before events:
+    RF: warn_if_unremovable at wrapper.c:618:1
+  After events:
+    IRF: warn_if_unremovable at wrapper.c:612:10
+  Occurrences: 8
+
+CoordinatesChangedLarge
+  Before events:
+    RF: warn_on_fopen_errors at wrapper.c:405:1
+  After events:
+    IRF: warn_on_fopen_errors at wrapper.c:399:22
+  Occurrences: 12
+
+CoordinatesChangedLarge
+  Before events:
     RF: xopen at wrapper.c:186:4
   After events:
     RF: xopen at wrapper.c:199:1
   Occurrences: 84
+
+CoordinatesChangedLarge
+  Before events:
+    RF: xread at wrapper.c:237:3
+  After events:
+    IRF: xread at wrapper.c:231:7
+  Occurrences: 169
+
+CoordinatesChangedLarge
+  Before events:
+    RF: xwrite at wrapper.c:260:3
+  After events:
+    IRF: xwrite at wrapper.c:253:7
+  Occurrences: 169
 
 LibraryCallReplaced
   Before events:
@@ -5272,6 +5461,13 @@ LibraryCallRemoved
     CT: Jump to external code for strlen
     RF: Jump to external code for strlen
   Occurrences: 79
+
+LibraryCallRemoved
+  Before events:
+    CF: is_dup_ref at ref-cache.c:209:6
+    CT: Jump to external code for strcmp
+    RF: Jump to external code for strcmp
+  Occurrences: 1
 
 LibraryCallRemoved
   Before events:
@@ -5600,14 +5796,14 @@ ProgramCallRemoved
     CF: get_next_component at abspath.c:40:31
     CT: git_is_dir_sep at git-compat-util.h:447:0
     RF: git_is_dir_sep at git-compat-util.h:448:2
-  Occurrences: 779
+  Occurrences: 551
 
 ProgramCallRemoved
   Before events:
     CF: get_next_component at abspath.c:43:29
     CT: git_is_dir_sep at git-compat-util.h:447:0
     RF: git_is_dir_sep at git-compat-util.h:448:2
-  Occurrences: 1589
+  Occurrences: 473
 
 ProgramCallRemoved
   Before events:
@@ -5663,14 +5859,14 @@ ProgramCallRemoved
     CF: oid_object_info_extended at object-file.c:1639:2
     CT: obj_read_lock at object-store.h:381:0
     RF: obj_read_lock at object-store.h:384:1
-  Occurrences: 27
+  Occurrences: 25
 
 ProgramCallRemoved
   Before events:
     CF: oid_object_info_extended at object-file.c:1641:2
     CT: obj_read_unlock at object-store.h:387:0
     RF: obj_read_unlock at object-store.h:390:1
-  Occurrences: 27
+  Occurrences: 25
 
 ProgramCallRemoved
   Before events:
@@ -5786,32 +5982,42 @@ ProgramCallRemoved
 
 UnexpectedReturnAdded
   After events:
-    IRF: _ at gettext.h:0:0
-  Occurrences: 2
+    IRF: No info for this address
+  Occurrences: 1413
 
 UnexpectedReturnAdded
   After events:
-    IRF: all_attrs_init at attr.c:0:0
-  Occurrences: 42
-
-UnexpectedReturnAdded
-  After events:
-    IRF: attr_name_valid at attr.c:0:0
-  Occurrences: 208
-
-UnexpectedReturnAdded
-  After events:
-    IRF: bsearch at stdlib-bsearch.h:0:0
-  Occurrences: 45
-
-UnexpectedReturnAdded
-  After events:
-    IRF: cat_one_file at cat-file.c:0:0
+    IRF: add_entry_to_dir at ref-cache.c:17:1
   Occurrences: 9
 
 UnexpectedReturnAdded
   After events:
-    IRF: check_and_freshen_file at object-file.c:0:0
+    IRF: all_attrs_init at attr.c:169:16
+  Occurrences: 42
+
+UnexpectedReturnAdded
+  After events:
+    IRF: attr_name_valid at attr.c:183:2
+  Occurrences: 208
+
+UnexpectedReturnAdded
+  After events:
+    IRF: bsearch at stdlib-bsearch.h:29:3
+  Occurrences: 36
+
+UnexpectedReturnAdded
+  After events:
+    IRF: bsearch at stdlib-bsearch.h:36:16
+  Occurrences: 9
+
+UnexpectedReturnAdded
+  After events:
+    IRF: cat_one_file at cat-file.c:110:6
+  Occurrences: 2
+
+UnexpectedReturnAdded
+  After events:
+    IRF: check_and_freshen_file at object-file.c:963:6
   Occurrences: 1
 
 UnexpectedReturnAdded
@@ -5826,17 +6032,22 @@ UnexpectedReturnAdded
 
 UnexpectedReturnAdded
   After events:
-    IRF: check_bug_if_BUG at common-main.c:0:0
+    IRF: check_bug_if_BUG at common-main.c:65:6
   Occurrences: 2
 
 UnexpectedReturnAdded
   After events:
-    IRF: check_commit at object-file.c:0:0
+    IRF: check_commit at object-file.c:2332:7
   Occurrences: 1
 
 UnexpectedReturnAdded
   After events:
-    IRF: check_tag at object-file.c:0:0
+    IRF: check_or_sanitize_refname at refs.c:287:1
+  Occurrences: 72
+
+UnexpectedReturnAdded
+  After events:
+    IRF: check_tag at object-file.c:2340:7
   Occurrences: 1
 
 UnexpectedReturnAdded
@@ -5846,52 +6057,122 @@ UnexpectedReturnAdded
 
 UnexpectedReturnAdded
   After events:
-    IRF: copy_fd at copy.c:0:0
-  Occurrences: 90
-
-UnexpectedReturnAdded
-  After events:
-    IRF: create_default_files at init-db.c:0:0
+    IRF: clear_repository_format at setup.c:731:1
   Occurrences: 6
 
 UnexpectedReturnAdded
   After events:
-    IRF: files_downcast at files-backend.c:0:0
+    IRF: copy_fd at copy.c:8:7
+  Occurrences: 90
+
+UnexpectedReturnAdded
+  After events:
+    IRF: create_default_files at init-db.c:0:2
+  Occurrences: 6
+
+UnexpectedReturnAdded
+  After events:
+    IRF: delete_tempfile at tempfile.c:366:1
+  Occurrences: 31
+
+UnexpectedReturnAdded
+  After events:
+    IRF: do_oid_object_info_extended at object-file.c:1633:1
+  Occurrences: 2
+
+UnexpectedReturnAdded
+  After events:
+    IRF: empty_ref_iterator_abort at iterator.c:63:2
+  Occurrences: 15
+
+UnexpectedReturnAdded
+  After events:
+    IRF: fdopen_tempfile at tempfile.c:268:2
+  Occurrences: 6
+
+UnexpectedReturnAdded
+  After events:
+    IRF: files_downcast at files-backend.c:134:6
   Occurrences: 9
 
 UnexpectedReturnAdded
   After events:
-    IRF: find_cached_object at object-file.c:0:0
+    IRF: files_ref_iterator_advance at files-backend.c:790:1
+  Occurrences: 9
+
+UnexpectedReturnAdded
+  After events:
+    IRF: files_ref_store_create at files-backend.c:100:2
+  Occurrences: 15
+
+UnexpectedReturnAdded
+  After events:
+    IRF: find_cached_object at hash.h:0:10
   Occurrences: 27
 
 UnexpectedReturnAdded
   After events:
     IRF: get_builtin at git.c:0:0
-  Occurrences: 2810
+  Occurrences: 60
 
 UnexpectedReturnAdded
   After events:
-    IRF: get_hash_hex_algop at hex.c:0:0
-  Occurrences: 9
+    IRF: get_builtin at git.c:638:2
+  Occurrences: 2750
 
 UnexpectedReturnAdded
   After events:
-    IRF: get_loose_ref_cache at files-backend.c:0:0
+    IRF: get_common_dir_noenv at setup.c:331:2
+  Occurrences: 52
+
+UnexpectedReturnAdded
+  After events:
+    IRF: get_hash_hex_algop at hex.c:56:11
   Occurrences: 9
 
 UnexpectedReturnAdded
   After events:
     IRF: get_value at config.c:0:0
-  Occurrences: 6716
+  Occurrences: 6096
 
 UnexpectedReturnAdded
   After events:
-    IRF: getc_unlocked at stdio.h:0:0
-  Occurrences: 15200
+    IRF: get_value at config.c:912:13
+  Occurrences: 620
 
 UnexpectedReturnAdded
   After events:
-    IRF: git_is_dir_sep at git-compat-util.h:0:0
+    IRF: getc_unlocked at stdio.h:68:10
+  Occurrences: 14932
+
+UnexpectedReturnAdded
+  After events:
+    IRF: git_attr_internal at attr.c:232:1
+  Occurrences: 108
+
+UnexpectedReturnAdded
+  After events:
+    IRF: git_config_set at config.c:3173:1
+  Occurrences: 6
+
+UnexpectedReturnAdded
+  After events:
+    IRF: git_configset_clear at config.c:2395:1
+  Occurrences: 6
+
+UnexpectedReturnAdded
+  After events:
+    IRF: git_configset_get_value at config.c:2424:1
+  Occurrences: 19
+
+UnexpectedReturnAdded
+  After events:
+    IRF: git_hash_sha1_final_oid at object-file.c:109:1
+  Occurrences: 11
+
+UnexpectedReturnAdded
+  After events:
+    IRF: git_is_dir_sep at git-compat-util.h:448:11
   Occurrences: 156
 
 UnexpectedReturnAdded
@@ -5901,43 +6182,68 @@ UnexpectedReturnAdded
 
 UnexpectedReturnAdded
   After events:
-    IRF: git_parse_int at config.c:0:0
+    IRF: git_parse_int at config.c:1235:6
   Occurrences: 203
 
 UnexpectedReturnAdded
   After events:
-    IRF: git_system_config at config.c:0:0
-  Occurrences: 133
+    IRF: hash_fd at hash-object.c:50:1
+  Occurrences: 21
 
 UnexpectedReturnAdded
   After events:
     IRF: hash_to_hex_algop at hex.c:0:0
-  Occurrences: 35
+  Occurrences: 32
 
 UnexpectedReturnAdded
   After events:
-    IRF: hash_to_hex_algop_r at hex.c:0:0
-  Occurrences: 35
+    IRF: hash_to_hex_algop at hex.c:153:8
+  Occurrences: 3
 
 UnexpectedReturnAdded
   After events:
-    IRF: index_pipe at object-file.c:0:0
+    IRF: hash_to_hex_algop_r at hex.c:0:6
+  Occurrences: 3
+
+UnexpectedReturnAdded
+  After events:
+    IRF: hash_to_hex_algop_r at hex.c:139:7
+  Occurrences: 32
+
+UnexpectedReturnAdded
+  After events:
+    IRF: hashmap_add at hashmap.c:249:1
+  Occurrences: 162
+
+UnexpectedReturnAdded
+  After events:
+    IRF: hashmap_get at hashmap.c:219:1
+  Occurrences: 27
+
+UnexpectedReturnAdded
+  After events:
+    IRF: hashmap_iter_next at hashmap.c:308:1
+  Occurrences: 31
+
+UnexpectedReturnAdded
+  After events:
+    IRF: hold_lock_file_for_update_timeout_mode at lockfile.c:188:2
+  Occurrences: 31
+
+UnexpectedReturnAdded
+  After events:
+    IRF: index_pipe at object-file.c:0:2
   Occurrences: 8
 
 UnexpectedReturnAdded
   After events:
-    IRF: init_repository_format at setup.c:0:0
+    IRF: init_repository_format at setup.c:712:2
   Occurrences: 24
 
 UnexpectedReturnAdded
   After events:
-    IRF: initialize_repository_version at init-db.c:0:0
-  Occurrences: 6
-
-UnexpectedReturnAdded
-  After events:
-    IRF: is_dup_ref at ref-cache.c:0:0
-  Occurrences: 5
+    IRF: is_dup_ref at ref-cache.c:209:6
+  Occurrences: 1
 
 UnexpectedReturnAdded
   After events:
@@ -5946,102 +6252,232 @@ UnexpectedReturnAdded
 
 UnexpectedReturnAdded
   After events:
-    IRF: memory_limit_check at wrapper.c:0:0
+    IRF: map_loose_object_1 at object-file.c:1244:1
+  Occurrences: 27
+
+UnexpectedReturnAdded
+  After events:
+    IRF: match_basename at dir.c:1241:1
+  Occurrences: 56
+
+UnexpectedReturnAdded
+  After events:
+    IRF: memintern at hashmap.c:350:2
+  Occurrences: 221
+
+UnexpectedReturnAdded
+  After events:
+    IRF: memory_limit_check at wrapper.c:25:6
   Occurrences: 113
 
 UnexpectedReturnAdded
   After events:
-    IRF: oideq at hash.h:0:0
-  Occurrences: 33
+    IRF: normalize_path_copy at path.c:1206:2
+  Occurrences: 133
 
 UnexpectedReturnAdded
   After events:
-    IRF: packed_downcast at packed-backend.c:0:0
+    IRF: odb_loose_path at object-file.c:442:2
+  Occurrences: 8
+
+UnexpectedReturnAdded
+  After events:
+    IRF: oideq at hash.h:0:0
+  Occurrences: 6
+
+UnexpectedReturnAdded
+  After events:
+    IRF: oideq at hash.h:249:7
+  Occurrences: 27
+
+UnexpectedReturnAdded
+  After events:
+    IRF: packed_downcast at packed-backend.c:231:6
   Occurrences: 15
 
 UnexpectedReturnAdded
   After events:
-    IRF: parse_attr_line at attr.c:0:0
-  Occurrences: 18
-
-UnexpectedReturnAdded
-  After events:
-    IRF: parse_long_opt at parse-options.c:0:0
+    IRF: parse_long_opt at parse-options.c:0:10
   Occurrences: 8
 
 UnexpectedReturnAdded
   After events:
     IRF: parse_value at config.c:0:0
-  Occurrences: 16
+  Occurrences: 4
 
 UnexpectedReturnAdded
   After events:
-    IRF: path_matches at attr.c:0:0
-  Occurrences: 56
-
-UnexpectedReturnAdded
-  After events:
-    IRF: ref_entry_cmp_sslice at ref-cache.c:0:0
-  Occurrences: 81
-
-UnexpectedReturnAdded
-  After events:
-    IRF: repo_read_config at config.c:0:0
-  Occurrences: 64
-
-UnexpectedReturnAdded
-  After events:
-    IRF: sane_qsort at git-compat-util.h:0:0
-  Occurrences: 32
-
-UnexpectedReturnAdded
-  After events:
-    IRF: simple_length at dir.c:0:0
-  Occurrences: 28
-
-UnexpectedReturnAdded
-  After events:
-    IRF: skip_prefix at git-compat-util.h:0:0
-  Occurrences: 110
-
-UnexpectedReturnAdded
-  After events:
-    IRF: st_mult at git-compat-util.h:0:0
-  Occurrences: 363
-
-UnexpectedReturnAdded
-  After events:
-    IRF: strbuf_addch at strbuf.h:0:0
-  Occurrences: 2120
-
-UnexpectedReturnAdded
-  After events:
-    IRF: strbuf_avail at strbuf.h:0:0
-  Occurrences: 2386
-
-UnexpectedReturnAdded
-  After events:
-    IRF: strbuf_grow at strbuf.c:0:0
-  Occurrences: 2748
-
-UnexpectedReturnAdded
-  After events:
-    IRF: strbuf_setlen at strbuf.h:0:0
-  Occurrences: 154
-
-UnexpectedReturnAdded
-  After events:
-    IRF: strbuf_worktree_gitdir at path.c:0:0
-  Occurrences: 79
-
-UnexpectedReturnAdded
-  After events:
-    IRF: string_list_append_nodup at string-list.c:0:0
+    IRF: parse_value at config.c:0:13
   Occurrences: 6
 
 UnexpectedReturnAdded
   After events:
-    IRF: xwrite at wrapper.c:0:0
+    IRF: parse_value at config.c:0:21
+  Occurrences: 6
+
+UnexpectedReturnAdded
+  After events:
+    IRF: prefix_ref_iterator_abort at iterator.c:377:2
+  Occurrences: 9
+
+UnexpectedReturnAdded
+  After events:
+    IRF: read_object_file_extended at object-file.c:1738:1
+  Occurrences: 2
+
+UnexpectedReturnAdded
+  After events:
+    IRF: ref_entry_cmp_sslice at ref-cache.c:118:6
+  Occurrences: 72
+
+UnexpectedReturnAdded
+  After events:
+    IRF: ref_entry_cmp_sslice at ref-cache.c:120:14
+  Occurrences: 9
+
+UnexpectedReturnAdded
+  After events:
+    IRF: rename_tempfile at tempfile.c:352:1
+  Occurrences: 31
+
+UnexpectedReturnAdded
+  After events:
+    IRF: repo_read_config at config.c:2533:6
+  Occurrences: 64
+
+UnexpectedReturnAdded
+  After events:
+    IRF: sane_qsort at git-compat-util.h:1308:6
+  Occurrences: 1
+
+UnexpectedReturnAdded
+  After events:
+    IRF: setup_git_env at environment.c:194:1
+  Occurrences: 6
+
+UnexpectedReturnAdded
+  After events:
+    IRF: simple_length at dir.c:0:7
+  Occurrences: 28
+
+UnexpectedReturnAdded
+  After events:
+    IRF: skip_prefix at git-compat-util.h:678:7
+  Occurrences: 12
+
+UnexpectedReturnAdded
+  After events:
+    IRF: skip_prefix at git-compat-util.h:678:8
+  Occurrences: 60
+
+UnexpectedReturnAdded
+  After events:
+    IRF: skip_prefix at git-compat-util.h:682:2
+  Occurrences: 38
+
+UnexpectedReturnAdded
+  After events:
+    IRF: st_mult at git-compat-util.h:995:11
+  Occurrences: 363
+
+UnexpectedReturnAdded
+  After events:
+    IRF: strbuf_add at strbuf.c:301:1
+  Occurrences: 1376
+
+UnexpectedReturnAdded
+  After events:
+    IRF: strbuf_addch at strbuf.h:230:6
+  Occurrences: 1036
+
+UnexpectedReturnAdded
+  After events:
+    IRF: strbuf_addch at strbuf.h:233:19
+  Occurrences: 1060
+
+UnexpectedReturnAdded
+  After events:
+    IRF: strbuf_addf at strbuf.c:338:1
+  Occurrences: 22
+
+UnexpectedReturnAdded
+  After events:
+    IRF: strbuf_avail at strbuf.h:141:9
+  Occurrences: 2386
+
+UnexpectedReturnAdded
+  After events:
+    IRF: strbuf_grow at strbuf.c:100:6
+  Occurrences: 438
+
+UnexpectedReturnAdded
+  After events:
+    IRF: strbuf_grow at strbuf.c:101:14
+  Occurrences: 1105
+
+UnexpectedReturnAdded
+  After events:
+    IRF: strbuf_grow at strbuf.c:102:1
+  Occurrences: 24
+
+UnexpectedReturnAdded
+  After events:
+    IRF: strbuf_grow at strbuf.c:94:6
+  Occurrences: 12
+
+UnexpectedReturnAdded
+  After events:
+    IRF: strbuf_grow at strbuf.c:99:2
+  Occurrences: 1193
+
+UnexpectedReturnAdded
+  After events:
+    IRF: strbuf_realpath_1 at abspath.c:200:1
+  Occurrences: 116
+
+UnexpectedReturnAdded
+  After events:
+    IRF: strbuf_release at strbuf.c:68:1
+  Occurrences: 104
+
+UnexpectedReturnAdded
+  After events:
+    IRF: strbuf_remove at strbuf.c:294:1
+  Occurrences: 993
+
+UnexpectedReturnAdded
+  After events:
+    IRF: strbuf_setlen at strbuf.h:0:16
+  Occurrences: 5
+
+UnexpectedReturnAdded
+  After events:
+    IRF: strbuf_setlen at strbuf.h:166:16
+  Occurrences: 149
+
+UnexpectedReturnAdded
+  After events:
+    IRF: string_list_append_nodup at string-list.c:0:15
+  Occurrences: 6
+
+UnexpectedReturnAdded
+  After events:
+    IRF: string_list_clear at string-list.c:185:1
+  Occurrences: 22
+
+UnexpectedReturnAdded
+  After events:
+    IRF: utf8_fprintf at utf8.c:462:2
+  Occurrences: 12
+
+UnexpectedReturnAdded
+  After events:
+    IRF: utf8_strnwidth at utf8.c:223:2
+  Occurrences: 12
+
+UnexpectedReturnAdded
+  After events:
+    IRF: xwrite at wrapper.c:253:7
   Occurrences: 2
 
 Uncategorised
@@ -6187,7 +6623,7 @@ Uncategorised
 Uncategorised
   After events:
     ICF: do_git_path at path.c:434:2
-  Occurrences: 79
+  Occurrences: 158
 
 Uncategorised
   After events:
@@ -6212,17 +6648,17 @@ Uncategorised
 Uncategorised
   After events:
     ICF: fill at attr.c:1030:8
-  Occurrences: 56
+  Occurrences: 74
 
 Uncategorised
   After events:
     ICF: fill_loose_path at object-file.c:427:3
-  Occurrences: 1047
+  Occurrences: 1060
 
 Uncategorised
   After events:
     ICF: fill_loose_path at object-file.c:428:3
-  Occurrences: 1060
+  Occurrences: 1071
 
 Uncategorised
   After events:
@@ -6327,7 +6763,7 @@ Uncategorised
 Uncategorised
   After events:
     CF: is_dup_ref at ref-cache.c:209:6
-  Occurrences: 5
+  Occurrences: 1
 
 Uncategorised
   After events:
@@ -6381,6 +6817,11 @@ Uncategorised
 
 Uncategorised
   After events:
+    ICF: read_object at object-file.c:1672:6
+  Occurrences: 2
+
+Uncategorised
+  After events:
     ICF: read_repository_format at setup.c:717:2
   Occurrences: 12
 
@@ -6412,12 +6853,12 @@ Uncategorised
 Uncategorised
   After events:
     CF: sane_qsort at git-compat-util.h:1309:3
-  Occurrences: 5
+  Occurrences: 1
 
 Uncategorised
   After events:
     CF: search_ref_dir at ref-cache.c:131:2
-  Occurrences: 5
+  Occurrences: 1
 
 Uncategorised
   After events:
@@ -6437,12 +6878,12 @@ Uncategorised
 Uncategorised
   After events:
     ICF: sort_ref_dir at ref-cache.c:241:2
-  Occurrences: 32
+  Occurrences: 20
 
 Uncategorised
   After events:
     ICF: sort_ref_dir at ref-cache.c:246:15
-  Occurrences: 5
+  Occurrences: 1
 
 Uncategorised
   After events:
@@ -6497,7 +6938,7 @@ Uncategorised
 Uncategorised
   After events:
     ICF: strbuf_realpath_1 at abspath.c:109:3
-  Occurrences: 220
+  Occurrences: 444
 
 Uncategorised
   After events:
@@ -6607,12 +7048,12 @@ Uncategorised
 Uncategorised
   After events:
     CT: Jump to external code for qsort
-  Occurrences: 5
+  Occurrences: 1
 
 Uncategorised
   After events:
     CT: Jump to external code for strcmp
-  Occurrences: 5
+  Occurrences: 1
 
 Uncategorised
   After events:
@@ -6792,7 +7233,7 @@ Uncategorised
 Uncategorised
   After events:
     ICT: is_dup_ref at ref-cache.c:207:0
-  Occurrences: 5
+  Occurrences: 1
 
 Uncategorised
   After events:
@@ -6837,7 +7278,7 @@ Uncategorised
 Uncategorised
   After events:
     ICT: sane_qsort at git-compat-util.h:1305:0
-  Occurrences: 32
+  Occurrences: 19
 
 Uncategorised
   After events:
@@ -6942,12 +7383,12 @@ Uncategorised
 Uncategorised
   After events:
     RF: Jump to external code for qsort
-  Occurrences: 5
+  Occurrences: 1
 
 Uncategorised
   After events:
     RF: Jump to external code for strcmp
-  Occurrences: 5
+  Occurrences: 1
 
 Uncategorised
   After events:
@@ -7089,6 +7530,39 @@ Uncategorised
 
 Uncategorised
   Before events:
+    CF: do_git_path at path.c:434:2
+    CT: strbuf_worktree_gitdir at path.c:420:0
+    CF: strbuf_worktree_gitdir at path.c:422:3
+    CT: strbuf_addstr at strbuf.h:304:0
+    CF: strbuf_addstr at strbuf.h:305:20
+    CT: Jump to external code for strlen
+    RF: Jump to external code for strlen
+    CF: strbuf_addstr at strbuf.h:305:2
+    CT: strbuf_add at strbuf.c:297:0
+    CF: strbuf_add at strbuf.c:298:2
+    CT: strbuf_grow at strbuf.c:92:0
+    RF: strbuf_grow at strbuf.c:102:1
+    CF: strbuf_add at strbuf.c:299:2
+    CT: Jump to external code for memcpy
+    RF: Jump to external code for memcpy
+    CF: strbuf_add at strbuf.c:300:2
+    CT: strbuf_setlen at strbuf.h:161:0
+    RF: strbuf_setlen at strbuf.h:169:1
+    RF: strbuf_add at strbuf.c:301:1
+  Occurrences: 30
+
+Uncategorised
+  Before events:
+    CF: fill at attr.c:1030:8
+  Occurrences: 18
+
+Uncategorised
+  Before events:
+    CF: fill_loose_path at object-file.c:427:3
+  Occurrences: 11
+
+Uncategorised
+  Before events:
     CF: git_parse_source at config.c:1092:7
   Occurrences: 78
 
@@ -7175,6 +7649,7 @@ Uncategorised
 Uncategorised
   Before events:
     CF: odb_loose_path at object-file.c:441:2
+    CT: fill_loose_path at object-file.c:422:0
   Occurrences: 13
 
 Uncategorised
@@ -7190,6 +7665,18 @@ Uncategorised
     CF: skip_utf8_bom at utf8.c:790:6
     CT: Jump to external code for memcmp
   Occurrences: 14
+
+Uncategorised
+  Before events:
+    CF: read_object at object-file.c:1672:6
+    CT: oid_object_info_extended at object-file.c:1637:0
+    CF: oid_object_info_extended at object-file.c:1639:2
+    CT: obj_read_lock at object-store.h:381:0
+    RF: obj_read_lock at object-store.h:384:1
+    CF: oid_object_info_extended at object-file.c:1640:8
+    CT: do_oid_object_info_extended at object-file.c:1538:0
+    CF: do_oid_object_info_extended at object-file.c:1550:6
+  Occurrences: 2
 
 Uncategorised
   Before events:
@@ -7278,7 +7765,23 @@ Uncategorised
 Uncategorised
   Before events:
     CF: search_ref_dir at ref-cache.c:131:2
-  Occurrences: 5
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: sort_ref_dir at ref-cache.c:241:2
+    CT: sane_qsort at git-compat-util.h:1307:0
+    CF: sane_qsort at git-compat-util.h:1309:3
+    CT: Jump to external code for qsort
+    RF: Jump to external code for qsort
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: sort_ref_dir at ref-cache.c:246:15
+    CT: is_dup_ref at ref-cache.c:208:0
+    CF: is_dup_ref at ref-cache.c:209:6
+  Occurrences: 1
 
 Uncategorised
   Before events:
@@ -7355,6 +7858,24 @@ Uncategorised
     CF: get_next_component at abspath.c:43:29
     CT: git_is_dir_sep at git-compat-util.h:447:0
     RF: git_is_dir_sep at git-compat-util.h:448:2
+  Occurrences: 4
+
+Uncategorised
+  Before events:
+    CF: strbuf_realpath_1 at abspath.c:109:3
+    CT: get_next_component at abspath.c:32:0
+    CF: get_next_component at abspath.c:36:2
+    CT: strbuf_setlen at strbuf.h:161:0
+    RF: strbuf_setlen at strbuf.h:169:1
+    CF: get_next_component at abspath.c:40:31
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:40:31
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
     CF: get_next_component at abspath.c:43:29
     CT: git_is_dir_sep at git-compat-util.h:447:0
     RF: git_is_dir_sep at git-compat-util.h:448:2
@@ -7363,6 +7884,40 @@ Uncategorised
     RF: git_is_dir_sep at git-compat-util.h:448:2
     CF: get_next_component at abspath.c:43:29
     CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+  Occurrences: 110
+
+Uncategorised
+  Before events:
+    CF: strbuf_realpath_1 at abspath.c:109:3
+    CT: get_next_component at abspath.c:32:0
+    CF: get_next_component at abspath.c:36:2
+    CT: strbuf_setlen at strbuf.h:161:0
+    RF: strbuf_setlen at strbuf.h:169:1
+    CF: get_next_component at abspath.c:40:31
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:40:31
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
   Occurrences: 110
 
 Uncategorised
@@ -7397,7 +7952,7 @@ Uncategorised
     CT: git_is_dir_sep at git-compat-util.h:447:0
     RF: git_is_dir_sep at git-compat-util.h:448:2
     CF: get_next_component at abspath.c:43:29
-    [...70 more events...]
+    [...71 more events...]
   Occurrences: 19
 
 Uncategorised
@@ -7432,30 +7987,29 @@ Uncategorised
     CT: git_is_dir_sep at git-compat-util.h:447:0
     RF: git_is_dir_sep at git-compat-util.h:448:2
     CF: get_next_component at abspath.c:43:29
-    [...73 more events...]
+    [...74 more events...]
   Occurrences: 91
 
 Uncategorised
   Before events:
-    CF: strbuf_worktree_gitdir at path.c:422:3
-    CT: strbuf_addstr at strbuf.h:304:0
-    CF: strbuf_addstr at strbuf.h:305:20
-    CT: Jump to external code for strlen
-    RF: Jump to external code for strlen
-    CF: strbuf_addstr at strbuf.h:305:2
-    CT: strbuf_add at strbuf.c:297:0
-    CF: strbuf_add at strbuf.c:298:2
-    CT: strbuf_grow at strbuf.c:92:0
-    RF: strbuf_grow at strbuf.c:102:1
-    CF: strbuf_add at strbuf.c:299:2
-    CT: Jump to external code for memcpy
-    RF: Jump to external code for memcpy
-    CF: strbuf_add at strbuf.c:300:2
+    CF: strbuf_realpath_1 at abspath.c:109:3
+    CT: get_next_component at abspath.c:32:0
+    CF: get_next_component at abspath.c:36:2
     CT: strbuf_setlen at strbuf.h:161:0
     RF: strbuf_setlen at strbuf.h:169:1
-    RF: strbuf_add at strbuf.c:301:1
-    RF: strbuf_addstr at strbuf.h:306:1
-  Occurrences: 30
+    CF: get_next_component at abspath.c:40:31
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+  Occurrences: 110
 
 Uncategorised
   Before events:
@@ -7464,36 +8018,261 @@ Uncategorised
 
 Uncategorised
   Before events:
+    RF: SHA1DCUpdate at sha1.c:1858:1
+  Occurrences: 42
+
+Uncategorised
+  Before events:
+    RF: _ at gettext.h:49:1
+  Occurrences: 35
+
+Uncategorised
+  Before events:
+    RF: base_ref_iterator_free at iterator.c:43:1
+  Occurrences: 33
+
+Uncategorised
+  Before events:
+    RF: check_refname_format at refs.c:291:2
+  Occurrences: 72
+
+Uncategorised
+  Before events:
+    RF: clear_repository_format at setup.c:731:1
+  Occurrences: 58
+
+Uncategorised
+  Before events:
+    RF: close_istream at streaming.c:444:2
+  Occurrences: 7
+
+Uncategorised
+  Before events:
+    RF: commit_lock_file_to at lockfile.h:317:2
+  Occurrences: 31
+
+Uncategorised
+  Before events:
+    RF: configset_find_element at config.c:2309:1
+  Occurrences: 460
+
+Uncategorised
+  Before events:
+    RF: copy_array at git-compat-util.h:1100:1
+  Occurrences: 9
+
+Uncategorised
+  Before events:
+    RF: copy_templates at init-db.c:154:1
+  Occurrences: 6
+
+Uncategorised
+  Before events:
+    RF: create_object_directory at init-db.c:340:1
+  Occurrences: 6
+
+Uncategorised
+  Before events:
+    RF: deactivate_tempfile at tempfile.c:128:1
+  Occurrences: 31
+
+Uncategorised
+  Before events:
+    RF: do_config_from_file at config.c:1981:2
+  Occurrences: 134
+
+Uncategorised
+  Before events:
+    RF: do_git_config_sequence at config.c:2176:2
+  Occurrences: 133
+
+Uncategorised
+  Before events:
+    RF: fdopen_lock_file at lockfile.h:235:2
+  Occurrences: 6
+
+Uncategorised
+  Before events:
+    RF: free_preprocessed_options at parse-options.c:770:1
+  Occurrences: 9
+
+Uncategorised
+  Before events:
+    RF: get_common_dir at setup.c:303:1
+  Occurrences: 52
+
+Uncategorised
+  Before events:
+    RF: get_midx_filename at midx.c:52:1
+  Occurrences: 22
+
+Uncategorised
+  Before events:
+    RF: get_next_component at abspath.c:49:1
+  Occurrences: 375
+
+Uncategorised
+  Before events:
+    RF: get_oid_basic at object-name.c:1024:1
+  Occurrences: 9
+
+Uncategorised
+  Before events:
+    RF: get_root_part at abspath.c:62:1
+  Occurrences: 174
+
+Uncategorised
+  Before events:
+    RF: git_attr at attr.c:236:2
+  Occurrences: 108
+
+Uncategorised
+  Before events:
+    RF: git_set_exec_path at exec-cmd.c:281:1
+  Occurrences: 60
+
+Uncategorised
+  Before events:
+    RF: hold_lock_file_for_update_timeout at lockfile.h:179:2
+  Occurrences: 31
+
+Uncategorised
+  Before events:
+    RF: index_core at object-file.c:2453:2
+  Occurrences: 24
+
+Uncategorised
+  Before events:
+    RF: loose_object_path at object-file.c:448:2
+  Occurrences: 8
+
+Uncategorised
+  Before events:
+    RF: map_loose_object at object-file.c:1250:2
+  Occurrences: 27
+
+Uncategorised
+  Before events:
+    RF: move_array at git-compat-util.h:1108:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: parse_attr_line at attr.c:419:1
+  Occurrences: 28
+
+Uncategorised
+  Before events:
+    RF: prepare_attr_stack at attr.c:972:1
+  Occurrences: 42
+
+Uncategorised
+  Before events:
+    RF: prepare_packed_git_one at packfile.c:912:1
+  Occurrences: 22
+
+Uncategorised
+  Before events:
+    RF: ref_iterator_abort at iterator.c:24:2
+  Occurrences: 24
+
+Uncategorised
+  Before events:
+    RF: ref_iterator_advance at iterator.c:13:2
+  Occurrences: 9
+
+Uncategorised
+  Before events:
+    RF: ref_store_init at refs.c:1995:2
+  Occurrences: 15
+
+Uncategorised
+  Before events:
+    RF: refs_create_symref at refs.c:2150:2
+  Occurrences: 6
+
+Uncategorised
+  Before events:
+    RF: repo_config_clear at config.c:2560:1
+  Occurrences: 6
+
+Uncategorised
+  Before events:
+    RF: repo_config_get_value at config.c:2572:2
+  Occurrences: 19
+
+Uncategorised
+  Before events:
+    RF: repo_read_object_file at object-store.h:253:2
+  Occurrences: 2
+
+Uncategorised
+  Before events:
+    RF: rollback_lock_file at lockfile.h:329:1
+  Occurrences: 31
+
+Uncategorised
+  Before events:
     RF: strbuf_add at strbuf.c:301:1
   Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: strbuf_addstr at strbuf.h:306:1
+  Occurrences: 1297
+
+Uncategorised
+  Before events:
+    RF: strbuf_realpath at abspath.c:217:2
+  Occurrences: 116
+
+Uncategorised
+  Before events:
+    RF: unlock_ref at files-backend.c:516:1
+  Occurrences: 6
+
+Uncategorised
+  Before events:
+    RF: usage_argh at parse-options.c:1019:2
+  Occurrences: 12
+
+Uncategorised
+  Before events:
+    RF: utf8_strwidth at utf8.c:228:2
+  Occurrences: 12
+
+Uncategorised
+  Before events:
+    RF: write_section at config.c:3005:2
+  Occurrences: 6
 
 ## Divergences with unique coordinates by type
 
 CoordinatesRemoved
-  Unique divergence coordinates: 343
+  Unique divergence coordinates: 113
 
 CoordinatesChangedSmall
-  Unique divergence coordinates: 351
+  Unique divergence coordinates: 491
 
 CoordinatesChangedLarge
-  Unique divergence coordinates: 23
+  Unique divergence coordinates: 140
 
 LibraryCallReplaced
   Unique divergence coordinates: 4
 
 LibraryCallRemoved
-  Unique divergence coordinates: 62
+  Unique divergence coordinates: 63
 
 ProgramCallRemoved
   Unique divergence coordinates: 41
 
 UnexpectedReturnAdded
-  Unique divergence coordinates: 52
+  Unique divergence coordinates: 100
 
 Uncategorised
-  Unique divergence coordinates: 222
+  Unique divergence coordinates: 276
 
 ## Summary
 
-1098 unique divergence coordinates
-439470 divergence occurrences
+1228 unique divergence coordinates
+442123 divergence occurrences
