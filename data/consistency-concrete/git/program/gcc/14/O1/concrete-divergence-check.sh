@@ -30,8 +30,8 @@ for test_path in concrete-trace/t*; do
   rm -f divergences/${test}/default/events/*
   ${CON_COMPARE} \
     --events-by-type-dir divergences/${test}/default/events \
-    ../O0/concrete-trace/${test}/default/trace \
-    concrete-trace/${test}/default/trace \
+    ../O0/concrete-trace/${test}/default \
+    concrete-trace/${test}/default \
     > divergences/${test}/default/divergences.md
 
   # Count unique divergence lines by type
@@ -47,7 +47,7 @@ for test_path in concrete-trace/t*; do
   done
 
   # Count unique lines in before trace overall
-  awk '{$1=$1};1' ../O0/concrete-trace/${test}/default/trace | \
+  awk '{$1=$1};1' ../O0/concrete-trace/${test}/default/* | \
     sort -u | \
     wc -l | \
     awk '{print $1}' \
@@ -67,7 +67,7 @@ for divergence_type_path in divergences/t0001-init/default/events/*; do
 done
 
 # Aggregate unique lines in before trace across all tests
-cat ../O0/concrete-trace/t*/default/trace | \
+cat ../O0/concrete-trace/t*/default/* | \
   awk '{$1=$1};1' | \
   sort -u | \
   wc -l | \

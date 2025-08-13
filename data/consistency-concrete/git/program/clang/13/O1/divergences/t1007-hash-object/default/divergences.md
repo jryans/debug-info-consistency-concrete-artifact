@@ -1,7 +1,3 @@
-Analysing divergences…
-
-Divergence analysis complete!
-
 ## Divergences by source coordinates
 
 CoordinatesRemoved
@@ -136,13 +132,6 @@ CoordinatesRemoved
   After events:
     CF: read_istream_loose at streaming.c:0:24
   Occurrences: 7
-
-CoordinatesRemoved
-  Before events:
-    CF: store_create_section at config.c:2989:3
-  After events:
-    CF: store_create_section at config.c:0:0
-  Occurrences: 3
 
 CoordinatesRemoved
   Before events:
@@ -828,7 +817,7 @@ CoordinatesRemoved
     RF: get_home_gitattributes at attr.c:819:2
   After events:
     IRF: get_home_gitattributes at attr.c:0:0
-  Occurrences: 8
+  Occurrences: 18
 
 CoordinatesRemoved
   Before events:
@@ -1416,7 +1405,7 @@ CoordinatesRemoved
     RF: is_dup_ref at ref-cache.c:223:1
   After events:
     IRF: is_dup_ref at ref-cache.c:0:0
-  Occurrences: 55
+  Occurrences: 58
 
 CoordinatesRemoved
   Before events:
@@ -1962,7 +1951,7 @@ CoordinatesRemoved
     RF: sane_qsort at git-compat-util.h:1310:1
   After events:
     IRF: sane_qsort at git-compat-util.h:0:0
-  Occurrences: 19
+  Occurrences: 22
 
 CoordinatesRemoved
   Before events:
@@ -2414,80 +2403,38 @@ CoordinatesRemoved
 
 CoordinatesChangedSmall
   Before events:
-    CF: bootstrap_attr_stack at attr.c:862:27
-  After events:
-    ICF: bootstrap_attr_stack at attr.c:861:6
-  Occurrences: 10
-
-CoordinatesChangedSmall
-  Before events:
-    CF: copy_templates_1 at init-db.c:48:3
-  After events:
-    ICF: copy_templates_1 at init-db.c:49:3
-  Occurrences: 4
-
-CoordinatesChangedSmall
-  Before events:
-    CF: copy_templates_1 at init-db.c:49:3
-  After events:
-    ICF: copy_templates_1 at init-db.c:48:3
-  Occurrences: 4
-
-CoordinatesChangedSmall
-  Before events:
     CF: fill_loose_path at object-file.c:427:3
   After events:
     ICF: fill_loose_path at object-file.c:428:3
-  Occurrences: 520
-
-CoordinatesChangedSmall
-  Before events:
-    CF: fill_loose_path at object-file.c:427:3
-  After events:
-    ICF: fill_loose_path at object-file.c:430:4
-  Occurrences: 8
+  Occurrences: 530
 
 CoordinatesChangedSmall
   Before events:
     CF: fill_loose_path at object-file.c:428:3
   After events:
     ICF: fill_loose_path at object-file.c:427:3
-  Occurrences: 533
+  Occurrences: 543
 
 CoordinatesChangedSmall
   Before events:
     CF: fill_loose_path at object-file.c:428:3
   After events:
     ICF: fill_loose_path at object-file.c:430:4
-  Occurrences: 19
-
-CoordinatesChangedSmall
-  Before events:
-    CF: fill_loose_path at object-file.c:430:4
-  After events:
-    ICF: fill_loose_path at object-file.c:427:3
-  Occurrences: 12
+  Occurrences: 40
 
 CoordinatesChangedSmall
   Before events:
     CF: fill_loose_path at object-file.c:430:4
   After events:
     ICF: fill_loose_path at object-file.c:428:3
-  Occurrences: 38
+  Occurrences: 53
 
 CoordinatesChangedSmall
   Before events:
     CF: get_next_component at abspath.c:43:29
   After events:
     ICF: get_next_component at abspath.c:40:31
-  Occurrences: 1052
-
-CoordinatesChangedSmall
-  Before events:
-    CF: normalize_path_copy_len at path.c:1177:7
-  After events:
-    ICF: normalize_path_copy_len at path.c:1179:11
-  Occurrences: 40
+  Occurrences: 1219
 
 CoordinatesChangedSmall
   Before events:
@@ -3789,7 +3736,7 @@ CoordinatesChangedSmall
     CT: is_dup_ref at ref-cache.c:208:0
   After events:
     ICT: is_dup_ref at ref-cache.c:207:0
-  Occurrences: 55
+  Occurrences: 58
 
 CoordinatesChangedSmall
   Before events:
@@ -4370,7 +4317,7 @@ CoordinatesChangedSmall
     CT: sane_qsort at git-compat-util.h:1307:0
   After events:
     ICT: sane_qsort at git-compat-util.h:1305:0
-  Occurrences: 19
+  Occurrences: 22
 
 CoordinatesChangedSmall
   Before events:
@@ -4864,13 +4811,6 @@ CoordinatesChangedSmall
 
 CoordinatesChangedSmall
   Before events:
-    RF: get_home_gitattributes at attr.c:819:2
-  After events:
-    CF: get_home_gitattributes at attr.c:817:25
-  Occurrences: 10
-
-CoordinatesChangedSmall
-  Before events:
     RF: git_config_from_parameters at config.c:777:2
   After events:
     RF: git_config_from_parameters at config.c:778:1
@@ -4920,45 +4860,24 @@ CoordinatesChangedSmall
 
 CoordinatesChangedLarge
   Before events:
-    CF: is_dir_file at path.c:82:12
-  After events:
-    CF: is_dir_file at path.c:87:10
-  Occurrences: 10
-
-CoordinatesChangedLarge
-  Before events:
     CF: normalize_path_copy_len at path.c:1129:7
   After events:
     ICF: normalize_path_copy_len at path.c:1135:9
-  Occurrences: 19
+  Occurrences: 133
 
 CoordinatesChangedLarge
   Before events:
     CF: normalize_path_copy_len at path.c:1135:9
   After events:
     ICF: normalize_path_copy_len at path.c:1179:11
-  Occurrences: 19
-
-CoordinatesChangedLarge
-  Before events:
-    CF: normalize_path_copy_len at path.c:1175:35
-  After events:
-    ICF: normalize_path_copy_len at path.c:1135:9
-  Occurrences: 82
+  Occurrences: 133
 
 CoordinatesChangedLarge
   Before events:
     CF: normalize_path_copy_len at path.c:1175:35
   After events:
     ICF: normalize_path_copy_len at path.c:1179:11
-  Occurrences: 308
-
-CoordinatesChangedLarge
-  Before events:
-    CF: normalize_path_copy_len at path.c:1179:11
-  After events:
-    ICF: normalize_path_copy_len at path.c:1135:9
-  Occurrences: 22
+  Occurrences: 266
 
 CoordinatesChangedLarge
   Before events:
@@ -4966,13 +4885,6 @@ CoordinatesChangedLarge
   After events:
     ICF: parse_long_opt at parse-options.c:367:9
   Occurrences: 50
-
-CoordinatesChangedLarge
-  Before events:
-    CF: unpack_loose_header at object-file.c:1263:2
-  After events:
-    CF: unpack_loose_header at object-file.c:1279:6
-  Occurrences: 12
 
 CoordinatesChangedLarge
   Before events:
@@ -5142,17 +5054,6 @@ LibraryCallReplaced
 
 LibraryCallReplaced
   Before events:
-    CF: is_dir_file at path.c:82:12
-    CT: Jump to external code for strlen
-    RF: Jump to external code for strlen
-  After events:
-    CF: is_dir_file at path.c:87:10
-    CT: Jump to external code for strcmp
-    RF: Jump to external code for strcmp
-  Occurrences: 10
-
-LibraryCallReplaced
-  Before events:
     CF: pool_entry_cmp at hashmap.c:327:32
     CT: Jump to external code for memcmp
     RF: Jump to external code for memcmp
@@ -5161,17 +5062,6 @@ LibraryCallReplaced
     CT: Jump to external code for bcmp
     RF: Jump to external code for bcmp
   Occurrences: 169
-
-LibraryCallReplaced
-  Before events:
-    CF: unpack_loose_header at object-file.c:1263:2
-    CT: Jump to external code for memset
-    RF: Jump to external code for memset
-  After events:
-    CF: unpack_loose_header at object-file.c:1279:6
-    CT: Jump to external code for memchr
-    RF: Jump to external code for memchr
-  Occurrences: 12
 
 LibraryCallRemoved
   Before events:
@@ -5381,14 +5271,7 @@ LibraryCallRemoved
     CF: is_dir_file at path.c:82:12
     CT: Jump to external code for strlen
     RF: Jump to external code for strlen
-  Occurrences: 69
-
-LibraryCallRemoved
-  Before events:
-    CF: is_dir_file at path.c:87:10
-    CT: Jump to external code for strcmp
-    RF: Jump to external code for strcmp
-  Occurrences: 10
+  Occurrences: 79
 
 LibraryCallRemoved
   Before events:
@@ -5605,14 +5488,7 @@ LibraryCallRemoved
     CF: unpack_loose_header at object-file.c:1263:2
     CT: Jump to external code for memset
     RF: Jump to external code for memset
-  Occurrences: 16
-
-LibraryCallRemoved
-  Before events:
-    CF: unpack_loose_header at object-file.c:1279:6
-    CT: Jump to external code for memchr
-    RF: Jump to external code for memchr
-  Occurrences: 12
+  Occurrences: 28
 
 LibraryCallRemoved
   Before events:
@@ -5661,7 +5537,7 @@ ProgramCallRemoved
     CF: bootstrap_attr_stack at attr.c:862:27
     CT: get_home_gitattributes at attr.c:815:0
     RF: get_home_gitattributes at attr.c:819:2
-  Occurrences: 8
+  Occurrences: 18
 
 ProgramCallRemoved
   Before events:
@@ -5724,14 +5600,14 @@ ProgramCallRemoved
     CF: get_next_component at abspath.c:40:31
     CT: git_is_dir_sep at git-compat-util.h:447:0
     RF: git_is_dir_sep at git-compat-util.h:448:2
-  Occurrences: 673
+  Occurrences: 779
 
 ProgramCallRemoved
   Before events:
     CF: get_next_component at abspath.c:43:29
     CT: git_is_dir_sep at git-compat-util.h:447:0
     RF: git_is_dir_sep at git-compat-util.h:448:2
-  Occurrences: 1695
+  Occurrences: 1589
 
 ProgramCallRemoved
   Before events:
@@ -6061,7 +5937,7 @@ UnexpectedReturnAdded
 UnexpectedReturnAdded
   After events:
     IRF: is_dup_ref at ref-cache.c:0:0
-  Occurrences: 2
+  Occurrences: 5
 
 UnexpectedReturnAdded
   After events:
@@ -6116,7 +5992,7 @@ UnexpectedReturnAdded
 UnexpectedReturnAdded
   After events:
     IRF: sane_qsort at git-compat-util.h:0:0
-  Occurrences: 23
+  Occurrences: 32
 
 UnexpectedReturnAdded
   After events:
@@ -6250,11 +6126,6 @@ Uncategorised
 
 Uncategorised
   After events:
-    CF: copy_templates_1 at init-db.c:71:4
-  Occurrences: 2
-
-Uncategorised
-  After events:
     ICF: create_default_files at init-db.c:271:2
   Occurrences: 6
 
@@ -6346,17 +6217,17 @@ Uncategorised
 Uncategorised
   After events:
     ICF: fill_loose_path at object-file.c:427:3
-  Occurrences: 1043
+  Occurrences: 1047
 
 Uncategorised
   After events:
     ICF: fill_loose_path at object-file.c:428:3
-  Occurrences: 1054
+  Occurrences: 1060
 
 Uncategorised
   After events:
     ICF: fill_loose_path at object-file.c:430:4
-  Occurrences: 23
+  Occurrences: 13
 
 Uncategorised
   After events:
@@ -6456,7 +6327,7 @@ Uncategorised
 Uncategorised
   After events:
     CF: is_dup_ref at ref-cache.c:209:6
-  Occurrences: 2
+  Occurrences: 5
 
 Uncategorised
   After events:
@@ -6476,7 +6347,7 @@ Uncategorised
 Uncategorised
   After events:
     ICF: odb_loose_path at object-file.c:441:2
-  Occurrences: 40
+  Occurrences: 13
 
 Uncategorised
   After events:
@@ -6541,12 +6412,12 @@ Uncategorised
 Uncategorised
   After events:
     CF: sane_qsort at git-compat-util.h:1309:3
-  Occurrences: 2
+  Occurrences: 5
 
 Uncategorised
   After events:
     CF: search_ref_dir at ref-cache.c:131:2
-  Occurrences: 2
+  Occurrences: 5
 
 Uncategorised
   After events:
@@ -6566,22 +6437,17 @@ Uncategorised
 Uncategorised
   After events:
     ICF: sort_ref_dir at ref-cache.c:241:2
-  Occurrences: 23
+  Occurrences: 32
 
 Uncategorised
   After events:
     ICF: sort_ref_dir at ref-cache.c:246:15
-  Occurrences: 2
+  Occurrences: 5
 
 Uncategorised
   After events:
     CF: store_create_section at config.c:0:0
-  Occurrences: 3
-
-Uncategorised
-  After events:
-    CF: store_create_section at config.c:2989:3
-  Occurrences: 3
+  Occurrences: 6
 
 Uncategorised
   After events:
@@ -6741,12 +6607,12 @@ Uncategorised
 Uncategorised
   After events:
     CT: Jump to external code for qsort
-  Occurrences: 2
+  Occurrences: 5
 
 Uncategorised
   After events:
     CT: Jump to external code for strcmp
-  Occurrences: 2
+  Occurrences: 5
 
 Uncategorised
   After events:
@@ -6926,7 +6792,7 @@ Uncategorised
 Uncategorised
   After events:
     ICT: is_dup_ref at ref-cache.c:207:0
-  Occurrences: 2
+  Occurrences: 5
 
 Uncategorised
   After events:
@@ -6971,7 +6837,7 @@ Uncategorised
 Uncategorised
   After events:
     ICT: sane_qsort at git-compat-util.h:1305:0
-  Occurrences: 23
+  Occurrences: 32
 
 Uncategorised
   After events:
@@ -7076,12 +6942,12 @@ Uncategorised
 Uncategorised
   After events:
     RF: Jump to external code for qsort
-  Occurrences: 2
+  Occurrences: 5
 
 Uncategorised
   After events:
     RF: Jump to external code for strcmp
-  Occurrences: 2
+  Occurrences: 5
 
 Uncategorised
   After events:
@@ -7150,13 +7016,6 @@ Uncategorised
 
 Uncategorised
   Before events:
-    CF: bootstrap_attr_stack at attr.c:861:6
-    CT: get_home_gitattributes at attr.c:815:0
-    CF: get_home_gitattributes at attr.c:817:25
-  Occurrences: 10
-
-Uncategorised
-  Before events:
     CF: canonicalize_ceiling_entry at setup.c:1091:14
     CT: is_absolute_path at cache.h:1275:0
     CF: is_absolute_path at cache.h:1276:9
@@ -7187,11 +7046,6 @@ Uncategorised
     RF: Jump to external code for memset
     CF: run_argv at git.c:788:4
   Occurrences: 60
-
-Uncategorised
-  Before events:
-    CF: copy_templates_1 at init-db.c:71:4
-  Occurrences: 2
 
 Uncategorised
   Before events:
@@ -7321,7 +7175,7 @@ Uncategorised
 Uncategorised
   Before events:
     CF: odb_loose_path at object-file.c:441:2
-  Occurrences: 40
+  Occurrences: 13
 
 Uncategorised
   Before events:
@@ -7424,7 +7278,7 @@ Uncategorised
 Uncategorised
   Before events:
     CF: search_ref_dir at ref-cache.c:131:2
-  Occurrences: 2
+  Occurrences: 5
 
 Uncategorised
   Before events:
@@ -7616,19 +7470,19 @@ Uncategorised
 ## Divergences with unique coordinates by type
 
 CoordinatesRemoved
-  Unique divergence coordinates: 344
+  Unique divergence coordinates: 343
 
 CoordinatesChangedSmall
-  Unique divergence coordinates: 358
+  Unique divergence coordinates: 351
 
 CoordinatesChangedLarge
-  Unique divergence coordinates: 27
+  Unique divergence coordinates: 23
 
 LibraryCallReplaced
-  Unique divergence coordinates: 6
+  Unique divergence coordinates: 4
 
 LibraryCallRemoved
-  Unique divergence coordinates: 64
+  Unique divergence coordinates: 62
 
 ProgramCallRemoved
   Unique divergence coordinates: 41
@@ -7637,9 +7491,9 @@ UnexpectedReturnAdded
   Unique divergence coordinates: 52
 
 Uncategorised
-  Unique divergence coordinates: 226
+  Unique divergence coordinates: 222
 
 ## Summary
 
-1118 unique divergence coordinates
-439276 divergence occurrences
+1098 unique divergence coordinates
+439470 divergence occurrences
