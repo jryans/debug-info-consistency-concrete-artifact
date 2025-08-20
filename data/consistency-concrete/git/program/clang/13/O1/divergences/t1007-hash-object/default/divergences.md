@@ -2070,7 +2070,7 @@ CoordinatesChangedSmall
     CT: is_dup_ref at ref-cache.c:208:0
   After events:
     ICT: is_dup_ref at ref-cache.c:207:0
-  Occurrences: 55
+  Occurrences: 56
 
 CoordinatesChangedSmall
   Before events:
@@ -2651,7 +2651,7 @@ CoordinatesChangedSmall
     CT: sane_qsort at git-compat-util.h:1307:0
   After events:
     ICT: sane_qsort at git-compat-util.h:1305:0
-  Occurrences: 19
+  Occurrences: 26
 
 CoordinatesChangedSmall
   Before events:
@@ -3988,7 +3988,14 @@ CoordinatesChangedSmall
     RF: sane_qsort at git-compat-util.h:1310:1
   After events:
     IRF: sane_qsort at git-compat-util.h:1308:12
-  Occurrences: 19
+  Occurrences: 20
+
+CoordinatesChangedSmall
+  Before events:
+    RF: sane_qsort at git-compat-util.h:1310:1
+  After events:
+    IRF: sane_qsort at git-compat-util.h:1309:3
+  Occurrences: 6
 
 CoordinatesChangedSmall
   Before events:
@@ -4870,7 +4877,7 @@ CoordinatesChangedLarge
     RF: is_dup_ref at ref-cache.c:223:1
   After events:
     IRF: is_dup_ref at ref-cache.c:209:6
-  Occurrences: 55
+  Occurrences: 56
 
 CoordinatesChangedLarge
   Before events:
@@ -5468,6 +5475,13 @@ LibraryCallRemoved
     CT: Jump to external code for strlen
     RF: Jump to external code for strlen
   Occurrences: 79
+
+LibraryCallRemoved
+  Before events:
+    CF: is_dup_ref at ref-cache.c:209:6
+    CT: Jump to external code for strcmp
+    RF: Jump to external code for strcmp
+  Occurrences: 6
 
 LibraryCallRemoved
   Before events:
@@ -6267,11 +6281,6 @@ UnexpectedReturnAdded
 
 UnexpectedReturnAdded
   After events:
-    IRF: is_dup_ref at ref-cache.c:209:6
-  Occurrences: 7
-
-UnexpectedReturnAdded
-  After events:
     IRF: is_null_oid at hash.h:0:0
   Occurrences: 33
 
@@ -6372,13 +6381,8 @@ UnexpectedReturnAdded
 
 UnexpectedReturnAdded
   After events:
-    IRF: sane_qsort at git-compat-util.h:1308:12
-  Occurrences: 7
-
-UnexpectedReturnAdded
-  After events:
     IRF: sane_qsort at git-compat-util.h:1309:3
-  Occurrences: 26
+  Occurrences: 14
 
 UnexpectedReturnAdded
   After events:
@@ -6622,11 +6626,6 @@ Uncategorised
 
 Uncategorised
   After events:
-    CF: is_dup_ref at ref-cache.c:209:6
-  Occurrences: 7
-
-Uncategorised
-  After events:
     CF: match_basename at dir.c:0:0
   Occurrences: 56
 
@@ -6672,11 +6671,6 @@ Uncategorised
 
 Uncategorised
   After events:
-    CF: sane_qsort at git-compat-util.h:1309:3
-  Occurrences: 7
-
-Uncategorised
-  After events:
     ICF: search_ref_dir at ref-cache.c:134:6
   Occurrences: 36
 
@@ -6689,16 +6683,6 @@ Uncategorised
   After events:
     CF: setup_path at exec-cmd.c:0:0
   Occurrences: 60
-
-Uncategorised
-  After events:
-    ICF: sort_ref_dir at ref-cache.c:241:2
-  Occurrences: 7
-
-Uncategorised
-  After events:
-    ICF: sort_ref_dir at ref-cache.c:246:15
-  Occurrences: 7
 
 Uncategorised
   After events:
@@ -6844,16 +6828,6 @@ Uncategorised
   After events:
     CT: Jump to external code for puts
   Occurrences: 34
-
-Uncategorised
-  After events:
-    CT: Jump to external code for qsort
-  Occurrences: 7
-
-Uncategorised
-  After events:
-    CT: Jump to external code for strcmp
-  Occurrences: 7
 
 Uncategorised
   After events:
@@ -7032,11 +7006,6 @@ Uncategorised
 
 Uncategorised
   After events:
-    ICT: is_dup_ref at ref-cache.c:207:0
-  Occurrences: 7
-
-Uncategorised
-  After events:
     ICT: memory_limit_check at wrapper.c:17:0
   Occurrences: 113
 
@@ -7078,7 +7047,7 @@ Uncategorised
 Uncategorised
   After events:
     ICT: sane_qsort at git-compat-util.h:1305:0
-  Occurrences: 33
+  Occurrences: 14
 
 Uncategorised
   After events:
@@ -7179,16 +7148,6 @@ Uncategorised
   After events:
     RF: Jump to external code for puts
   Occurrences: 34
-
-Uncategorised
-  After events:
-    RF: Jump to external code for qsort
-  Occurrences: 7
-
-Uncategorised
-  After events:
-    RF: Jump to external code for strcmp
-  Occurrences: 7
 
 Uncategorised
   After events:
@@ -7521,6 +7480,21 @@ Uncategorised
 
 Uncategorised
   Before events:
+    CF: sort_ref_dir at ref-cache.c:241:2
+    CT: sane_qsort at git-compat-util.h:1307:0
+    CF: sane_qsort at git-compat-util.h:1309:3
+    CT: Jump to external code for qsort
+  Occurrences: 6
+
+Uncategorised
+  Before events:
+    CF: sort_ref_dir at ref-cache.c:246:15
+    CT: is_dup_ref at ref-cache.c:208:0
+    CF: is_dup_ref at ref-cache.c:209:6
+  Occurrences: 6
+
+Uncategorised
+  Before events:
     CF: strbuf_add_absolute_path at strbuf.c:899:7
     CT: is_absolute_path at cache.h:1275:0
     CF: is_absolute_path at cache.h:1276:9
@@ -7816,7 +7790,7 @@ CoordinatesRemoved
   Unique divergence coordinates: 110
 
 CoordinatesChangedSmall
-  Unique divergence coordinates: 502
+  Unique divergence coordinates: 503
 
 CoordinatesChangedLarge
   Unique divergence coordinates: 133
@@ -7825,18 +7799,18 @@ LibraryCallReplaced
   Unique divergence coordinates: 4
 
 LibraryCallRemoved
-  Unique divergence coordinates: 63
+  Unique divergence coordinates: 64
 
 ProgramCallRemoved
   Unique divergence coordinates: 40
 
 UnexpectedReturnAdded
-  Unique divergence coordinates: 103
+  Unique divergence coordinates: 101
 
 Uncategorised
-  Unique divergence coordinates: 217
+  Unique divergence coordinates: 210
 
 ## Summary
 
-1172 unique divergence coordinates
-423287 divergence occurrences
+1165 unique divergence coordinates
+423213 divergence occurrences

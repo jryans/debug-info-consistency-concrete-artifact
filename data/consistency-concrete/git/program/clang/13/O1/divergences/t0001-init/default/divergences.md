@@ -306,7 +306,7 @@ CoordinatesRemoved
     CF: hasheq_algop at hash.h:238:10
   After events:
     CF: hasheq_algop at hash.h:0:0
-  Occurrences: 206
+  Occurrences: 207
 
 CoordinatesRemoved
   Before events:
@@ -432,7 +432,7 @@ CoordinatesRemoved
     CF: read_attr at attr.c:797:11
   After events:
     CF: read_attr at attr.c:0:0
-  Occurrences: 9
+  Occurrences: 10
 
 CoordinatesRemoved
   Before events:
@@ -537,7 +537,7 @@ CoordinatesRemoved
     CF: xdg_config_home_for at path.c:1535:10
   After events:
     CF: xdg_config_home_for at path.c:0:0
-  Occurrences: 462
+  Occurrences: 463
 
 CoordinatesRemoved
   Before events:
@@ -551,7 +551,7 @@ CoordinatesRemoved
     CT: hashmap_iter_next at hashmap.c:295:0
   After events:
     CT: hashmap_iter_next at hashmap.c:0:0
-  Occurrences: 426
+  Occurrences: 441
 
 CoordinatesRemoved
   Before events:
@@ -586,14 +586,14 @@ CoordinatesRemoved
     RF: attr_check_alloc at attr.c:554:2
   After events:
     IRF: attr_check_alloc at attr.c:0:0
-  Occurrences: 12
+  Occurrences: 13
 
 CoordinatesRemoved
   Before events:
     RF: bootstrap_attr_stack at attr.c:878:1
   After events:
     IRF: bootstrap_attr_stack at attr.c:0:0
-  Occurrences: 12
+  Occurrences: 14
 
 CoordinatesRemoved
   Before events:
@@ -622,6 +622,13 @@ CoordinatesRemoved
   After events:
     IRF: call_unpack_fn at unpack-trees.c:0:6
   Occurrences: 3
+
+CoordinatesRemoved
+  Before events:
+    RF: ce_compare_data at read-cache.c:252:2
+  After events:
+    IRF: ce_compare_data at read-cache.c:0:0
+  Occurrences: 1
 
 CoordinatesRemoved
   Before events:
@@ -775,7 +782,7 @@ CoordinatesRemoved
     RF: format_object_header_literally at object-file.c:1061:2
   After events:
     IRF: format_object_header_literally at object-file.c:0:71
-  Occurrences: 39
+  Occurrences: 40
 
 CoordinatesRemoved
   Before events:
@@ -964,7 +971,7 @@ CoordinatesRemoved
     RF: git_path_check_convert at convert.c:1287:1
   After events:
     IRF: git_path_check_convert at convert.c:0:29
-  Occurrences: 19
+  Occurrences: 21
 
 CoordinatesRemoved
   Before events:
@@ -1006,21 +1013,21 @@ CoordinatesRemoved
     RF: hash_object_body at object-file.c:1797:1
   After events:
     IRF: hash_object_body at object-file.c:0:2
-  Occurrences: 20
+  Occurrences: 21
 
 CoordinatesRemoved
   Before events:
     RF: hash_object_file at object-file.c:1889:1
   After events:
     IRF: hash_object_file at object-file.c:0:0
-  Occurrences: 20
+  Occurrences: 21
 
 CoordinatesRemoved
   Before events:
     RF: hash_object_file_literally at object-file.c:1882:1
   After events:
     IRF: hash_object_file_literally at object-file.c:0:0
-  Occurrences: 27
+  Occurrences: 28
 
 CoordinatesRemoved
   Before events:
@@ -1041,7 +1048,7 @@ CoordinatesRemoved
     RF: hasheq_algop at hash.h:239:1
   After events:
     IRF: hasheq_algop at hash.h:0:0
-  Occurrences: 206
+  Occurrences: 207
 
 CoordinatesRemoved
   Before events:
@@ -1244,7 +1251,7 @@ CoordinatesRemoved
     RF: oideq at hash.h:253:2
   After events:
     IRF: oideq at hash.h:0:0
-  Occurrences: 299
+  Occurrences: 300
 
 CoordinatesRemoved
   Before events:
@@ -1258,7 +1265,7 @@ CoordinatesRemoved
     RF: parse_attr_line at attr.c:419:1
   After events:
     IRF: parse_attr_line at attr.c:0:0
-  Occurrences: 12
+  Occurrences: 13
 
 CoordinatesRemoved
   Before events:
@@ -1377,7 +1384,7 @@ CoordinatesRemoved
     RF: repo_config at config.c:2566:1
   After events:
     IRF: repo_config at config.c:0:0
-  Occurrences: 180
+  Occurrences: 181
 
 CoordinatesRemoved
   Before events:
@@ -1510,7 +1517,7 @@ CoordinatesRemoved
     RF: strbuf_addstr at strbuf.h:306:1
   After events:
     IRF: strbuf_addstr at strbuf.h:0:2
-  Occurrences: 125
+  Occurrences: 127
 
 CoordinatesRemoved
   Before events:
@@ -1643,7 +1650,7 @@ CoordinatesRemoved
     RF: write_object_file_prepare_literally at object-file.c:1822:1
   After events:
     IRF: write_object_file_prepare_literally at object-file.c:0:0
-  Occurrences: 27
+  Occurrences: 28
 
 CoordinatesRemoved
   Before events:
@@ -1741,14 +1748,14 @@ CoordinatesChangedSmall
     CT: SHA1DCInit at sha1.c:1768:0
   After events:
     CT: SHA1DCInit at sha1.c:1769:13
-  Occurrences: 62
+  Occurrences: 63
 
 CoordinatesChangedSmall
   Before events:
     CT: SHA1DCUpdate at sha1.c:1822:0
   After events:
     ICT: SHA1DCUpdate at sha1.c:1821:0
-  Occurrences: 62
+  Occurrences: 63
 
 CoordinatesChangedSmall
   Before events:
@@ -1888,7 +1895,7 @@ CoordinatesChangedSmall
     CT: adjust_git_path at path.c:401:0
   After events:
     ICT: adjust_git_path at path.c:399:0
-  Occurrences: 739
+  Occurrences: 740
 
 CoordinatesChangedSmall
   Before events:
@@ -1916,7 +1923,7 @@ CoordinatesChangedSmall
     CT: all_attrs_init at attr.c:132:0
   After events:
     ICT: all_attrs_init at attr.c:131:0
-  Occurrences: 23
+  Occurrences: 25
 
 CoordinatesChangedSmall
   Before events:
@@ -1951,7 +1958,7 @@ CoordinatesChangedSmall
     CT: alloc_table at hashmap.c:77:0
   After events:
     ICT: alloc_table at hashmap.c:76:0
-  Occurrences: 839
+  Occurrences: 840
 
 CoordinatesChangedSmall
   Before events:
@@ -2000,28 +2007,28 @@ CoordinatesChangedSmall
     CT: attr_check_alloc at attr.c:548:0
   After events:
     ICT: attr_check_alloc at attr.c:547:0
-  Occurrences: 12
+  Occurrences: 13
 
 CoordinatesChangedSmall
   Before events:
     CT: attr_hashmap_add at attr.c:103:0
   After events:
     ICT: attr_hashmap_add at attr.c:100:0
-  Occurrences: 72
+  Occurrences: 81
 
 CoordinatesChangedSmall
   Before events:
     CT: attr_hashmap_get at attr.c:87:0
   After events:
     ICT: attr_hashmap_get at attr.c:85:0
-  Occurrences: 100
+  Occurrences: 110
 
 CoordinatesChangedSmall
   Before events:
     CT: attr_name_valid at attr.c:176:0
   After events:
     ICT: attr_name_valid at attr.c:175:0
-  Occurrences: 148
+  Occurrences: 162
 
 CoordinatesChangedSmall
   Before events:
@@ -2077,21 +2084,21 @@ CoordinatesChangedSmall
     CT: bootstrap_attr_stack at attr.c:843:0
   After events:
     ICT: bootstrap_attr_stack at attr.c:841:0
-  Occurrences: 23
+  Occurrences: 25
 
 CoordinatesChangedSmall
   Before events:
     CT: bucket at hashmap.c:106:0
   After events:
     ICT: bucket at hashmap.c:104:0
-  Occurrences: 2445
+  Occurrences: 2464
 
 CoordinatesChangedSmall
   Before events:
     CT: cache_name_stage_compare at read-cache.c:559:0
   After events:
     ICT: cache_name_stage_compare at read-cache.c:558:0
-  Occurrences: 12
+  Occurrences: 13
 
 CoordinatesChangedSmall
   Before events:
@@ -2134,6 +2141,13 @@ CoordinatesChangedSmall
   After events:
     ICT: cb_init at cbtree.h:42:0
   Occurrences: 13
+
+CoordinatesChangedSmall
+  Before events:
+    CT: ce_compare_data at read-cache.c:242:0
+  After events:
+    ICT: ce_compare_data at read-cache.c:239:0
+  Occurrences: 1
 
 CoordinatesChangedSmall
   Before events:
@@ -2266,7 +2280,7 @@ CoordinatesChangedSmall
     CT: check_vector_add at attr.c:499:0
   After events:
     ICT: check_vector_add at attr.c:498:0
-  Occurrences: 12
+  Occurrences: 13
 
 CoordinatesChangedSmall
   Before events:
@@ -2322,7 +2336,7 @@ CoordinatesChangedSmall
     CT: cleanup_path at path.c:41:0
   After events:
     ICT: cleanup_path at path.c:40:0
-  Occurrences: 1408
+  Occurrences: 1410
 
 CoordinatesChangedSmall
   Before events:
@@ -2511,7 +2525,7 @@ CoordinatesChangedSmall
     CT: configset_iter at config.c:2223:0
   After events:
     ICT: configset_iter at config.c:2222:0
-  Occurrences: 217
+  Occurrences: 218
 
 CoordinatesChangedSmall
   Before events:
@@ -2672,7 +2686,7 @@ CoordinatesChangedSmall
     CT: determine_macros at attr.c:1056:0
   After events:
     ICT: determine_macros at attr.c:1054:0
-  Occurrences: 23
+  Occurrences: 25
 
 CoordinatesChangedSmall
   Before events:
@@ -2798,7 +2812,7 @@ CoordinatesChangedSmall
     CT: dir_prefix at path.c:73:0
   After events:
     ICT: dir_prefix at path.c:72:0
-  Occurrences: 739
+  Occurrences: 740
 
 CoordinatesChangedSmall
   Before events:
@@ -3057,7 +3071,7 @@ CoordinatesChangedSmall
     CT: fill at attr.c:1021:0
   After events:
     ICT: fill at attr.c:1018:0
-  Occurrences: 23
+  Occurrences: 25
 
 CoordinatesChangedSmall
   Before events:
@@ -3127,7 +3141,7 @@ CoordinatesChangedSmall
     CT: find_entry_ptr at hashmap.c:137:0
   After events:
     ICT: find_entry_ptr at hashmap.c:135:0
-  Occurrences: 1884
+  Occurrences: 1894
 
 CoordinatesChangedSmall
   Before events:
@@ -3225,7 +3239,7 @@ CoordinatesChangedSmall
     CT: format_object_header_literally at object-file.c:1060:0
   After events:
     ICT: format_object_header_literally at object-file.c:1058:0
-  Occurrences: 39
+  Occurrences: 40
 
 CoordinatesChangedSmall
   Before events:
@@ -3400,7 +3414,7 @@ CoordinatesChangedSmall
     CT: get_conv_flags at object-file.c:305:0
   After events:
     ICT: get_conv_flags at object-file.c:304:0
-  Occurrences: 4
+  Occurrences: 5
 
 CoordinatesChangedSmall
   Before events:
@@ -3491,7 +3505,7 @@ CoordinatesChangedSmall
     CT: get_home_gitattributes at attr.c:815:0
   After events:
     ICT: get_home_gitattributes at attr.c:814:0
-  Occurrences: 12
+  Occurrences: 13
 
 CoordinatesChangedSmall
   Before events:
@@ -3687,7 +3701,7 @@ CoordinatesChangedSmall
     CT: get_unit_factor at config.c:1146:0
   After events:
     ICT: get_unit_factor at config.c:1145:0
-  Occurrences: 549
+  Occurrences: 550
 
 CoordinatesChangedSmall
   Before events:
@@ -3729,28 +3743,28 @@ CoordinatesChangedSmall
     CT: git_attr at attr.c:235:0
   After events:
     ICT: git_attr at attr.c:234:0
-  Occurrences: 52
+  Occurrences: 58
 
 CoordinatesChangedSmall
   Before events:
     CT: git_attr_internal at attr.c:210:0
   After events:
     ICT: git_attr_internal at attr.c:209:0
-  Occurrences: 100
+  Occurrences: 110
 
 CoordinatesChangedSmall
   Before events:
     CT: git_attr_system at attr.c:823:0
   After events:
     ICT: git_attr_system at attr.c:822:0
-  Occurrences: 12
+  Occurrences: 13
 
 CoordinatesChangedSmall
   Before events:
     CT: git_config_bool at config.c:1448:0
   After events:
     ICT: git_config_bool at config.c:1447:0
-  Occurrences: 672
+  Occurrences: 673
 
 CoordinatesChangedSmall
   Before events:
@@ -3953,7 +3967,7 @@ CoordinatesChangedSmall
     CT: git_is_dir_sep at git-compat-util.h:447:0
   After events:
     ICT: git_is_dir_sep at git-compat-util.h:446:0
-  Occurrences: 15715
+  Occurrences: 15719
 
 CoordinatesChangedSmall
   Before events:
@@ -3967,14 +3981,14 @@ CoordinatesChangedSmall
     CT: git_parse_int at config.c:1233:0
   After events:
     ICT: git_parse_int at config.c:1232:0
-  Occurrences: 549
+  Occurrences: 550
 
 CoordinatesChangedSmall
   Before events:
     CT: git_parse_maybe_bool at config.c:1427:0
   After events:
     ICT: git_parse_maybe_bool at config.c:1426:0
-  Occurrences: 901
+  Occurrences: 902
 
 CoordinatesChangedSmall
   Before events:
@@ -3988,35 +4002,35 @@ CoordinatesChangedSmall
     CT: git_path_check_convert at convert.c:1277:0
   After events:
     ICT: git_path_check_convert at convert.c:1276:0
-  Occurrences: 19
+  Occurrences: 21
 
 CoordinatesChangedSmall
   Before events:
     CT: git_path_check_crlf at convert.c:1247:0
   After events:
     ICT: git_path_check_crlf at convert.c:1246:0
-  Occurrences: 38
+  Occurrences: 42
 
 CoordinatesChangedSmall
   Before events:
     CT: git_path_check_encoding at convert.c:1229:0
   After events:
     ICT: git_path_check_encoding at convert.c:1228:0
-  Occurrences: 19
+  Occurrences: 21
 
 CoordinatesChangedSmall
   Before events:
     CT: git_path_check_eol at convert.c:1264:0
   After events:
     ICT: git_path_check_eol at convert.c:1263:0
-  Occurrences: 19
+  Occurrences: 21
 
 CoordinatesChangedSmall
   Before events:
     CT: git_path_check_ident at convert.c:1290:0
   After events:
     ICT: git_path_check_ident at convert.c:1289:0
-  Occurrences: 19
+  Occurrences: 21
 
 CoordinatesChangedSmall
   Before events:
@@ -4191,14 +4205,14 @@ CoordinatesChangedSmall
     CT: hash_object_file at object-file.c:1887:0
   After events:
     ICT: hash_object_file at object-file.c:1884:0
-  Occurrences: 20
+  Occurrences: 21
 
 CoordinatesChangedSmall
   Before events:
     CT: hash_object_file_literally at object-file.c:1877:0
   After events:
     ICT: hash_object_file_literally at object-file.c:1874:0
-  Occurrences: 27
+  Occurrences: 28
 
 CoordinatesChangedSmall
   Before events:
@@ -4226,7 +4240,7 @@ CoordinatesChangedSmall
     CT: hasheq_algop at hash.h:231:0
   After events:
     ICT: hasheq_algop at hash.h:230:0
-  Occurrences: 365
+  Occurrences: 366
 
 CoordinatesChangedSmall
   Before events:
@@ -4254,7 +4268,7 @@ CoordinatesChangedSmall
     CT: hashmap_entry_init at hashmap.h:316:0
   After events:
     ICT: hashmap_entry_init at hashmap.h:314:0
-  Occurrences: 2441
+  Occurrences: 2460
 
 CoordinatesChangedSmall
   Before events:
@@ -4268,7 +4282,7 @@ CoordinatesChangedSmall
     CT: hashmap_get_size at hashmap.h:325:0
   After events:
     ICT: hashmap_get_size at hashmap.h:324:0
-  Occurrences: 184
+  Occurrences: 204
 
 CoordinatesChangedSmall
   Before events:
@@ -4282,14 +4296,14 @@ CoordinatesChangedSmall
     CT: hashmap_iter_first at hashmap.h:477:0
   After events:
     ICT: hashmap_iter_first at hashmap.h:475:0
-  Occurrences: 152
+  Occurrences: 153
 
 CoordinatesChangedSmall
   Before events:
     CT: hashmap_iter_init at hashmap.c:288:0
   After events:
     CT: hashmap_iter_init at hashmap.c:289:12
-  Occurrences: 152
+  Occurrences: 153
 
 CoordinatesChangedSmall
   Before events:
@@ -4373,7 +4387,7 @@ CoordinatesChangedSmall
     CT: index_name_pos at read-cache.c:619:0
   After events:
     ICT: index_name_pos at read-cache.c:618:0
-  Occurrences: 12
+  Occurrences: 13
 
 CoordinatesChangedSmall
   Before events:
@@ -4485,7 +4499,7 @@ CoordinatesChangedSmall
     CT: is_bare_repository at environment.c:197:0
   After events:
     CT: is_bare_repository at environment.c:199:9
-  Occurrences: 154
+  Occurrences: 155
 
 CoordinatesChangedSmall
   Before events:
@@ -4506,7 +4520,7 @@ CoordinatesChangedSmall
     CT: is_dir_file at path.c:81:0
   After events:
     ICT: is_dir_file at path.c:80:0
-  Occurrences: 739
+  Occurrences: 740
 
 CoordinatesChangedSmall
   Before events:
@@ -4520,7 +4534,7 @@ CoordinatesChangedSmall
     CT: is_dup_ref at ref-cache.c:208:0
   After events:
     ICT: is_dup_ref at ref-cache.c:207:0
-  Occurrences: 104
+  Occurrences: 112
 
 CoordinatesChangedSmall
   Before events:
@@ -4982,7 +4996,7 @@ CoordinatesChangedSmall
     CT: memory_limit_check at wrapper.c:18:0
   After events:
     ICT: memory_limit_check at wrapper.c:17:0
-  Occurrences: 24495
+  Occurrences: 24528
 
 CoordinatesChangedSmall
   Before events:
@@ -5024,7 +5038,7 @@ CoordinatesChangedSmall
     CT: name_compare at read-cache.c:546:0
   After events:
     ICT: name_compare at read-cache.c:545:0
-  Occurrences: 12
+  Occurrences: 13
 
 CoordinatesChangedSmall
   Before events:
@@ -5150,7 +5164,7 @@ CoordinatesChangedSmall
     CT: oideq at hash.h:247:0
   After events:
     ICT: oideq at hash.h:246:0
-  Occurrences: 365
+  Occurrences: 366
 
 CoordinatesChangedSmall
   Before events:
@@ -5227,7 +5241,7 @@ CoordinatesChangedSmall
     CT: parse_attr_line at attr.c:335:0
   After events:
     ICT: parse_attr_line at attr.c:333:0
-  Occurrences: 12
+  Occurrences: 13
 
 CoordinatesChangedSmall
   Before events:
@@ -5353,7 +5367,7 @@ CoordinatesChangedSmall
     CT: path_in_cone_mode_sparse_checkout at dir.c:1502:0
   After events:
     ICT: path_in_cone_mode_sparse_checkout at dir.c:1500:0
-  Occurrences: 12
+  Occurrences: 13
 
 CoordinatesChangedSmall
   Before events:
@@ -5367,7 +5381,7 @@ CoordinatesChangedSmall
     CT: path_in_sparse_checkout_1 at dir.c:1456:0
   After events:
     ICT: path_in_sparse_checkout_1 at dir.c:1453:0
-  Occurrences: 20
+  Occurrences: 21
 
 CoordinatesChangedSmall
   Before events:
@@ -5416,7 +5430,7 @@ CoordinatesChangedSmall
     CT: prepare_attr_stack at attr.c:883:0
   After events:
     ICT: prepare_attr_stack at attr.c:880:0
-  Occurrences: 23
+  Occurrences: 25
 
 CoordinatesChangedSmall
   Before events:
@@ -5500,14 +5514,14 @@ CoordinatesChangedSmall
     CT: push_stack at attr.c:831:0
   After events:
     ICT: push_stack at attr.c:829:0
-  Occurrences: 71
+  Occurrences: 77
 
 CoordinatesChangedSmall
   Before events:
     CT: read_attr_from_array at attr.c:668:0
   After events:
     ICT: read_attr_from_array at attr.c:667:0
-  Occurrences: 12
+  Occurrences: 13
 
 CoordinatesChangedSmall
   Before events:
@@ -5766,7 +5780,7 @@ CoordinatesChangedSmall
     CT: repo_config at config.c:2563:0
   After events:
     ICT: repo_config at config.c:2562:0
-  Occurrences: 180
+  Occurrences: 181
 
 CoordinatesChangedSmall
   Before events:
@@ -6025,7 +6039,7 @@ CoordinatesChangedSmall
     CT: sane_qsort at git-compat-util.h:1307:0
   After events:
     ICT: sane_qsort at git-compat-util.h:1305:0
-  Occurrences: 44
+  Occurrences: 57
 
 CoordinatesChangedSmall
   Before events:
@@ -6207,28 +6221,28 @@ CoordinatesChangedSmall
     CT: skip_prefix at git-compat-util.h:676:0
   After events:
     ICT: skip_prefix at git-compat-util.h:674:0
-  Occurrences: 6792
+  Occurrences: 6798
 
 CoordinatesChangedSmall
   Before events:
     CT: st_add at git-compat-util.h:981:0
   After events:
     ICT: st_add at git-compat-util.h:980:0
-  Occurrences: 774
+  Occurrences: 792
 
 CoordinatesChangedSmall
   Before events:
     CT: st_mult at git-compat-util.h:991:0
   After events:
     ICT: st_mult at git-compat-util.h:990:0
-  Occurrences: 2070
+  Occurrences: 2073
 
 CoordinatesChangedSmall
   Before events:
     CT: starts_with at strbuf.c:8:0
   After events:
     CT: starts_with at strbuf.c:10:8
-  Occurrences: 3224
+  Occurrences: 3225
 
 CoordinatesChangedSmall
   Before events:
@@ -6242,28 +6256,28 @@ CoordinatesChangedSmall
     CT: strbuf_add at strbuf.c:297:0
   After events:
     ICT: strbuf_add at strbuf.c:296:0
-  Occurrences: 14603
+  Occurrences: 14605
 
 CoordinatesChangedSmall
   Before events:
     CT: strbuf_addch at strbuf.h:229:0
   After events:
     ICT: strbuf_addch at strbuf.h:228:0
-  Occurrences: 41983
+  Occurrences: 41984
 
 CoordinatesChangedSmall
   Before events:
     CT: strbuf_addstr at strbuf.h:304:0
   After events:
     ICT: strbuf_addstr at strbuf.h:303:0
-  Occurrences: 7385
+  Occurrences: 7387
 
 CoordinatesChangedSmall
   Before events:
     CT: strbuf_avail at strbuf.h:140:0
   After events:
     ICT: strbuf_avail at strbuf.h:139:0
-  Occurrences: 53313
+  Occurrences: 53319
 
 CoordinatesChangedSmall
   Before events:
@@ -6284,7 +6298,7 @@ CoordinatesChangedSmall
     CT: strbuf_cleanup_path at path.c:51:0
   After events:
     ICT: strbuf_cleanup_path at path.c:50:0
-  Occurrences: 1407
+  Occurrences: 1409
 
 CoordinatesChangedSmall
   Before events:
@@ -6305,7 +6319,7 @@ CoordinatesChangedSmall
     CT: strbuf_detach at strbuf.c:71:0
   After events:
     ICT: strbuf_detach at strbuf.c:70:0
-  Occurrences: 3848
+  Occurrences: 3850
 
 CoordinatesChangedSmall
   Before events:
@@ -6319,14 +6333,14 @@ CoordinatesChangedSmall
     CT: strbuf_grow at strbuf.c:92:0
   After events:
     ICT: strbuf_grow at strbuf.c:91:0
-  Occurrences: 28929
+  Occurrences: 28935
 
 CoordinatesChangedSmall
   Before events:
     CT: strbuf_init at strbuf.c:55:0
   After events:
     ICT: strbuf_init at strbuf.c:54:0
-  Occurrences: 9720
+  Occurrences: 9724
 
 CoordinatesChangedSmall
   Before events:
@@ -6361,7 +6375,7 @@ CoordinatesChangedSmall
     CT: strbuf_setlen at strbuf.h:161:0
   After events:
     ICT: strbuf_setlen at strbuf.h:160:0
-  Occurrences: 43118
+  Occurrences: 43122
 
 CoordinatesChangedSmall
   Before events:
@@ -6382,7 +6396,7 @@ CoordinatesChangedSmall
     CT: strbuf_worktree_gitdir at path.c:420:0
   After events:
     ICT: strbuf_worktree_gitdir at path.c:417:0
-  Occurrences: 739
+  Occurrences: 740
 
 CoordinatesChangedSmall
   Before events:
@@ -6585,7 +6599,7 @@ CoordinatesChangedSmall
     CT: type_name at object.c:32:0
   After events:
     CT: type_name at object.c:33:11
-  Occurrences: 39
+  Occurrences: 40
 
 CoordinatesChangedSmall
   Before events:
@@ -6872,14 +6886,14 @@ CoordinatesChangedSmall
     CT: xread at wrapper.c:225:0
   After events:
     ICT: xread at wrapper.c:224:0
-  Occurrences: 611
+  Occurrences: 612
 
 CoordinatesChangedSmall
   Before events:
     CT: xsize_t at git-compat-util.h:1173:0
   After events:
     ICT: xsize_t at git-compat-util.h:1172:0
-  Occurrences: 282
+  Occurrences: 283
 
 CoordinatesChangedSmall
   Before events:
@@ -6935,7 +6949,7 @@ CoordinatesChangedSmall
     RF: SHA1DCUpdate at sha1.c:1858:1
   After events:
     IRF: SHA1DCUpdate at sha1.c:1856:3
-  Occurrences: 62
+  Occurrences: 63
 
 CoordinatesChangedSmall
   Before events:
@@ -7040,7 +7054,7 @@ CoordinatesChangedSmall
     RF: adjust_git_path at path.c:415:1
   After events:
     IRF: adjust_git_path at path.c:413:11
-  Occurrences: 677
+  Occurrences: 678
 
 CoordinatesChangedSmall
   Before events:
@@ -7096,14 +7110,14 @@ CoordinatesChangedSmall
     RF: attr_hashmap_get at attr.c:96:2
   After events:
     IRF: attr_hashmap_get at attr.c:96:16
-  Occurrences: 28
+  Occurrences: 25
 
 CoordinatesChangedSmall
   Before events:
     RF: attr_hashmap_get at attr.c:96:2
   After events:
     IRF: attr_hashmap_get at attr.c:96:9
-  Occurrences: 72
+  Occurrences: 85
 
 CoordinatesChangedSmall
   Before events:
@@ -7138,7 +7152,7 @@ CoordinatesChangedSmall
     RF: bucket at hashmap.c:107:2
   After events:
     IRF: bucket at hashmap.c:107:19
-  Occurrences: 2445
+  Occurrences: 2464
 
 CoordinatesChangedSmall
   Before events:
@@ -7187,7 +7201,7 @@ CoordinatesChangedSmall
     RF: check_vector_add at attr.c:508:1
   After events:
     IRF: check_vector_add at attr.c:505:41
-  Occurrences: 12
+  Occurrences: 13
 
 CoordinatesChangedSmall
   Before events:
@@ -7474,7 +7488,7 @@ CoordinatesChangedSmall
     RF: dir_prefix at path.c:75:2
   After events:
     IRF: dir_prefix at path.c:75:10
-  Occurrences: 735
+  Occurrences: 736
 
 CoordinatesChangedSmall
   Before events:
@@ -7551,7 +7565,7 @@ CoordinatesChangedSmall
     RF: entry_equals at hashmap.c:99:2
   After events:
     IRF: entry_equals at hashmap.c:101:3
-  Occurrences: 318
+  Occurrences: 323
 
 CoordinatesChangedSmall
   Before events:
@@ -7614,14 +7628,14 @@ CoordinatesChangedSmall
     RF: find_entry_ptr at hashmap.c:142:2
   After events:
     IRF: find_entry_ptr at hashmap.c:140:15
-  Occurrences: 327
+  Occurrences: 326
 
 CoordinatesChangedSmall
   Before events:
     RF: find_entry_ptr at hashmap.c:142:2
   After events:
     IRF: find_entry_ptr at hashmap.c:140:9
-  Occurrences: 1557
+  Occurrences: 1568
 
 CoordinatesChangedSmall
   Before events:
@@ -7789,7 +7803,7 @@ CoordinatesChangedSmall
     RF: get_home_gitattributes at attr.c:819:2
   After events:
     IRF: get_home_gitattributes at attr.c:819:9
-  Occurrences: 12
+  Occurrences: 13
 
 CoordinatesChangedSmall
   Before events:
@@ -7873,14 +7887,14 @@ CoordinatesChangedSmall
     RF: git_attr_system at attr.c:824:2
   After events:
     IRF: git_attr_system at attr.c:824:9
-  Occurrences: 12
+  Occurrences: 13
 
 CoordinatesChangedSmall
   Before events:
     RF: git_config_bool at config.c:1452:2
   After events:
     IRF: git_config_bool at config.c:1450:8
-  Occurrences: 672
+  Occurrences: 673
 
 CoordinatesChangedSmall
   Before events:
@@ -7985,7 +7999,7 @@ CoordinatesChangedSmall
     RF: git_is_dir_sep at git-compat-util.h:448:2
   After events:
     IRF: git_is_dir_sep at git-compat-util.h:448:11
-  Occurrences: 15715
+  Occurrences: 15719
 
 CoordinatesChangedSmall
   Before events:
@@ -7999,14 +8013,14 @@ CoordinatesChangedSmall
     RF: git_parse_maybe_bool at config.c:1434:1
   After events:
     IRF: git_parse_maybe_bool at config.c:1432:11
-  Occurrences: 445
+  Occurrences: 446
 
 CoordinatesChangedSmall
   Before events:
     RF: git_path_check_ident at convert.c:1293:2
   After events:
     IRF: git_path_check_ident at convert.c:1293:11
-  Occurrences: 19
+  Occurrences: 21
 
 CoordinatesChangedSmall
   Before events:
@@ -8104,7 +8118,7 @@ CoordinatesChangedSmall
     RF: hashmap_entry_init at hashmap.h:319:1
   After events:
     IRF: hashmap_entry_init at hashmap.h:318:10
-  Occurrences: 2441
+  Occurrences: 2460
 
 CoordinatesChangedSmall
   Before events:
@@ -8125,7 +8139,7 @@ CoordinatesChangedSmall
     RF: hashmap_get_size at hashmap.h:327:3
   After events:
     IRF: hashmap_get_size at hashmap.h:327:15
-  Occurrences: 167
+  Occurrences: 187
 
 CoordinatesChangedSmall
   Before events:
@@ -8167,7 +8181,7 @@ CoordinatesChangedSmall
     RF: index_name_pos at read-cache.c:620:2
   After events:
     IRF: index_name_pos at read-cache.c:620:9
-  Occurrences: 12
+  Occurrences: 13
 
 CoordinatesChangedSmall
   Before events:
@@ -8230,7 +8244,7 @@ CoordinatesChangedSmall
     RF: is_dir_file at path.c:88:1
   After events:
     IRF: is_dir_file at path.c:87:9
-  Occurrences: 15
+  Occurrences: 16
 
 CoordinatesChangedSmall
   Before events:
@@ -8657,14 +8671,14 @@ CoordinatesChangedSmall
     RF: push_stack at attr.c:839:1
   After events:
     IRF: push_stack at attr.c:837:17
-  Occurrences: 59
+  Occurrences: 64
 
 CoordinatesChangedSmall
   Before events:
     RF: read_attr_from_array at attr.c:677:2
   After events:
     IRF: read_attr_from_array at attr.c:674:28
-  Occurrences: 12
+  Occurrences: 13
 
 CoordinatesChangedSmall
   Before events:
@@ -8888,7 +8902,14 @@ CoordinatesChangedSmall
     RF: sane_qsort at git-compat-util.h:1310:1
   After events:
     IRF: sane_qsort at git-compat-util.h:1308:12
-  Occurrences: 36
+  Occurrences: 44
+
+CoordinatesChangedSmall
+  Before events:
+    RF: sane_qsort at git-compat-util.h:1310:1
+  After events:
+    IRF: sane_qsort at git-compat-util.h:1309:3
+  Occurrences: 5
 
 CoordinatesChangedSmall
   Before events:
@@ -8958,28 +8979,28 @@ CoordinatesChangedSmall
     RF: st_add at git-compat-util.h:985:2
   After events:
     IRF: st_add at git-compat-util.h:982:6
-  Occurrences: 459
+  Occurrences: 468
 
 CoordinatesChangedSmall
   Before events:
     RF: st_add at git-compat-util.h:985:2
   After events:
     IRF: st_add at git-compat-util.h:985:11
-  Occurrences: 315
+  Occurrences: 324
 
 CoordinatesChangedSmall
   Before events:
     RF: st_mult at git-compat-util.h:995:2
   After events:
     IRF: st_mult at git-compat-util.h:992:6
-  Occurrences: 1526
+  Occurrences: 1527
 
 CoordinatesChangedSmall
   Before events:
     RF: st_mult at git-compat-util.h:995:2
   After events:
     IRF: st_mult at git-compat-util.h:995:11
-  Occurrences: 544
+  Occurrences: 546
 
 CoordinatesChangedSmall
   Before events:
@@ -9000,7 +9021,7 @@ CoordinatesChangedSmall
     RF: strbuf_addch at strbuf.h:234:1
   After events:
     IRF: strbuf_addch at strbuf.h:233:19
-  Occurrences: 13723
+  Occurrences: 13724
 
 CoordinatesChangedSmall
   Before events:
@@ -9021,14 +9042,14 @@ CoordinatesChangedSmall
     RF: strbuf_avail at strbuf.h:141:2
   After events:
     IRF: strbuf_avail at strbuf.h:141:41
-  Occurrences: 7847
+  Occurrences: 7851
 
 CoordinatesChangedSmall
   Before events:
     RF: strbuf_avail at strbuf.h:141:2
   After events:
     IRF: strbuf_avail at strbuf.h:141:9
-  Occurrences: 45466
+  Occurrences: 45468
 
 CoordinatesChangedSmall
   Before events:
@@ -9042,7 +9063,7 @@ CoordinatesChangedSmall
     RF: strbuf_cleanup_path at path.c:55:1
   After events:
     IRF: strbuf_cleanup_path at path.c:53:11
-  Occurrences: 1387
+  Occurrences: 1389
 
 CoordinatesChangedSmall
   Before events:
@@ -9056,7 +9077,7 @@ CoordinatesChangedSmall
     RF: strbuf_grow at strbuf.c:102:1
   After events:
     IRF: strbuf_grow at strbuf.c:101:14
-  Occurrences: 9293
+  Occurrences: 9296
 
 CoordinatesChangedSmall
   Before events:
@@ -9070,7 +9091,7 @@ CoordinatesChangedSmall
     RF: strbuf_init at strbuf.c:60:1
   After events:
     IRF: strbuf_init at strbuf.c:57:2
-  Occurrences: 9720
+  Occurrences: 9724
 
 CoordinatesChangedSmall
   Before events:
@@ -9084,7 +9105,7 @@ CoordinatesChangedSmall
     RF: strbuf_setlen at strbuf.h:169:1
   After events:
     IRF: strbuf_setlen at strbuf.h:166:16
-  Occurrences: 40672
+  Occurrences: 40676
 
 CoordinatesChangedSmall
   Before events:
@@ -9308,7 +9329,7 @@ CoordinatesChangedSmall
     RF: xsize_t at git-compat-util.h:1176:2
   After events:
     IRF: xsize_t at git-compat-util.h:1174:10
-  Occurrences: 282
+  Occurrences: 283
 
 CoordinatesChangedSmall
   Before events:
@@ -9420,7 +9441,7 @@ CoordinatesChangedLarge
     CT: entry_equals at hashmap.c:98:0
   After events:
     ICT: entry_equals at hashmap.c:94:0
-  Occurrences: 322
+  Occurrences: 327
 
 CoordinatesChangedLarge
   Before events:
@@ -9462,7 +9483,7 @@ CoordinatesChangedLarge
     CT: hash_object_body at object-file.c:1792:0
   After events:
     ICT: hash_object_body at object-file.c:1788:0
-  Occurrences: 39
+  Occurrences: 40
 
 CoordinatesChangedLarge
   Before events:
@@ -9476,7 +9497,7 @@ CoordinatesChangedLarge
     CT: index_core at object-file.c:2431:0
   After events:
     ICT: index_core at object-file.c:2427:0
-  Occurrences: 4
+  Occurrences: 5
 
 CoordinatesChangedLarge
   Before events:
@@ -9707,7 +9728,7 @@ CoordinatesChangedLarge
     CT: write_object_file_prepare_literally at object-file.c:1817:0
   After events:
     ICT: write_object_file_prepare_literally at object-file.c:1813:0
-  Occurrences: 27
+  Occurrences: 28
 
 CoordinatesChangedLarge
   Before events:
@@ -9749,14 +9770,14 @@ CoordinatesChangedLarge
     RF: all_attrs_init at attr.c:173:1
   After events:
     IRF: all_attrs_init at attr.c:169:16
-  Occurrences: 23
+  Occurrences: 25
 
 CoordinatesChangedLarge
   Before events:
     RF: alloc_table at hashmap.c:92:1
   After events:
     IRF: alloc_table at hashmap.c:82:15
-  Occurrences: 89
+  Occurrences: 90
 
 CoordinatesChangedLarge
   Before events:
@@ -9784,14 +9805,14 @@ CoordinatesChangedLarge
     RF: attr_name_valid at attr.c:192:1
   After events:
     IRF: attr_name_valid at attr.c:181:28
-  Occurrences: 100
+  Occurrences: 109
 
 CoordinatesChangedLarge
   Before events:
     RF: attr_name_valid at attr.c:192:1
   After events:
     IRF: attr_name_valid at attr.c:183:2
-  Occurrences: 48
+  Occurrences: 53
 
 CoordinatesChangedLarge
   Before events:
@@ -9812,7 +9833,7 @@ CoordinatesChangedLarge
     RF: cache_name_stage_compare at read-cache.c:571:1
   After events:
     IRF: cache_name_stage_compare at read-cache.c:563:6
-  Occurrences: 8
+  Occurrences: 9
 
 CoordinatesChangedLarge
   Before events:
@@ -9994,7 +10015,7 @@ CoordinatesChangedLarge
     RF: configset_iter at config.c:2243:1
   After events:
     IRF: configset_iter at config.c:2229:16
-  Occurrences: 217
+  Occurrences: 218
 
 CoordinatesChangedLarge
   Before events:
@@ -10050,7 +10071,7 @@ CoordinatesChangedLarge
     RF: determine_macros at attr.c:1069:1
   After events:
     IRF: determine_macros at attr.c:1057:2
-  Occurrences: 23
+  Occurrences: 25
 
 CoordinatesChangedLarge
   Before events:
@@ -10218,7 +10239,7 @@ CoordinatesChangedLarge
     RF: fill at attr.c:1036:2
   After events:
     IRF: fill at attr.c:1022:2
-  Occurrences: 23
+  Occurrences: 25
 
 CoordinatesChangedLarge
   Before events:
@@ -10376,6 +10397,13 @@ CoordinatesChangedLarge
 
 CoordinatesChangedLarge
   Before events:
+    RF: get_conv_flags at object-file.c:312:1
+  After events:
+    IRF: get_conv_flags at object-file.c:308:17
+  Occurrences: 1
+
+CoordinatesChangedLarge
+  Before events:
     RF: get_describe_name at object-name.c:1225:1
   After events:
     IRF: get_describe_name at object-name.c:1212:8
@@ -10477,7 +10505,7 @@ CoordinatesChangedLarge
     RF: get_unit_factor at config.c:1156:1
   After events:
     IRF: get_unit_factor at config.c:1147:7
-  Occurrences: 549
+  Occurrences: 550
 
 CoordinatesChangedLarge
   Before events:
@@ -10568,7 +10596,7 @@ CoordinatesChangedLarge
     RF: git_parse_int at config.c:1239:1
   After events:
     IRF: git_parse_int at config.c:1235:7
-  Occurrences: 549
+  Occurrences: 550
 
 CoordinatesChangedLarge
   Before events:
@@ -10582,21 +10610,21 @@ CoordinatesChangedLarge
     RF: git_path_check_crlf at convert.c:1261:1
   After events:
     IRF: git_path_check_crlf at convert.c:1254:11
-  Occurrences: 38
+  Occurrences: 42
 
 CoordinatesChangedLarge
   Before events:
     RF: git_path_check_encoding at convert.c:1244:1
   After events:
     IRF: git_path_check_encoding at convert.c:1232:6
-  Occurrences: 19
+  Occurrences: 21
 
 CoordinatesChangedLarge
   Before events:
     RF: git_path_check_eol at convert.c:1274:1
   After events:
     IRF: git_path_check_eol at convert.c:1267:6
-  Occurrences: 19
+  Occurrences: 21
 
 CoordinatesChangedLarge
   Before events:
@@ -10722,7 +10750,7 @@ CoordinatesChangedLarge
     RF: index_core at object-file.c:2453:2
   After events:
     IRF: index_core at object-file.c:2447:3
-  Occurrences: 4
+  Occurrences: 5
 
 CoordinatesChangedLarge
   Before events:
@@ -10750,7 +10778,7 @@ CoordinatesChangedLarge
     RF: is_dup_ref at ref-cache.c:223:1
   After events:
     IRF: is_dup_ref at ref-cache.c:209:6
-  Occurrences: 104
+  Occurrences: 112
 
 CoordinatesChangedLarge
   Before events:
@@ -10932,14 +10960,14 @@ CoordinatesChangedLarge
     RF: memory_limit_check at wrapper.c:35:1
   After events:
     IRF: memory_limit_check at wrapper.c:25:11
-  Occurrences: 24495
+  Occurrences: 24528
 
 CoordinatesChangedLarge
   Before events:
     RF: name_compare at read-cache.c:556:1
   After events:
     IRF: name_compare at read-cache.c:549:6
-  Occurrences: 12
+  Occurrences: 13
 
 CoordinatesChangedLarge
   Before events:
@@ -11044,7 +11072,7 @@ CoordinatesChangedLarge
     RF: path_in_sparse_checkout_1 at dir.c:1492:1
   After events:
     IRF: path_in_sparse_checkout_1 at dir.c:1466:6
-  Occurrences: 20
+  Occurrences: 21
 
 CoordinatesChangedLarge
   Before events:
@@ -11135,7 +11163,7 @@ CoordinatesChangedLarge
     RF: push_stack at attr.c:839:1
   After events:
     IRF: push_stack at attr.c:832:6
-  Occurrences: 12
+  Occurrences: 13
 
 CoordinatesChangedLarge
   Before events:
@@ -11352,7 +11380,7 @@ CoordinatesChangedLarge
     RF: simplify_away at dir.c:2134:1
   After events:
     IRF: simplify_away at dir.c:2111:7
-  Occurrences: 3
+  Occurrences: 4
 
 CoordinatesChangedLarge
   Before events:
@@ -11360,13 +11388,6 @@ CoordinatesChangedLarge
   After events:
     IRF: simplify_away at dir.c:2123:16
   Occurrences: 36
-
-CoordinatesChangedLarge
-  Before events:
-    RF: simplify_away at dir.c:2134:1
-  After events:
-    IRF: simplify_away at dir.c:2129:8
-  Occurrences: 1
 
 CoordinatesChangedLarge
   Before events:
@@ -11394,7 +11415,7 @@ CoordinatesChangedLarge
     RF: skip_prefix at git-compat-util.h:684:1
   After events:
     IRF: skip_prefix at git-compat-util.h:678:8
-  Occurrences: 5752
+  Occurrences: 5758
 
 CoordinatesChangedLarge
   Before events:
@@ -11436,7 +11457,7 @@ CoordinatesChangedLarge
     RF: strbuf_grow at strbuf.c:102:1
   After events:
     IRF: strbuf_grow at strbuf.c:93:16
-  Occurrences: 16896
+  Occurrences: 16898
 
 CoordinatesChangedLarge
   Before events:
@@ -11450,7 +11471,7 @@ CoordinatesChangedLarge
     RF: strbuf_grow at strbuf.c:102:1
   After events:
     IRF: strbuf_grow at strbuf.c:95:6
-  Occurrences: 2319
+  Occurrences: 2320
 
 CoordinatesChangedLarge
   Before events:
@@ -11464,7 +11485,7 @@ CoordinatesChangedLarge
     RF: strbuf_worktree_gitdir at path.c:427:1
   After events:
     IRF: strbuf_worktree_gitdir at path.c:421:7
-  Occurrences: 739
+  Occurrences: 740
 
 CoordinatesChangedLarge
   Before events:
@@ -11702,7 +11723,7 @@ CoordinatesChangedLarge
     RF: xread at wrapper.c:237:3
   After events:
     IRF: xread at wrapper.c:231:10
-  Occurrences: 611
+  Occurrences: 612
 
 CoordinatesChangedLarge
   Before events:
@@ -11753,7 +11774,7 @@ LibraryCallReplaced
     CF: hasheq_algop at hash.h:0:0
     CT: Jump to external code for bcmp
     RF: Jump to external code for bcmp
-  Occurrences: 206
+  Occurrences: 207
 
 LibraryCallReplaced
   Before events:
@@ -12187,7 +12208,7 @@ LibraryCallRemoved
     CF: dir_prefix at path.c:74:12
     CT: Jump to external code for strlen
     RF: Jump to external code for strlen
-  Occurrences: 739
+  Occurrences: 740
 
 LibraryCallRemoved
   Before events:
@@ -12292,14 +12313,14 @@ LibraryCallRemoved
     CF: git_hash_sha1_final_oid at object-file.c:107:2
     CT: Jump to external code for memset
     RF: Jump to external code for memset
-  Occurrences: 51
+  Occurrences: 52
 
 LibraryCallRemoved
   Before events:
     CF: git_parse_signed at config.c:1170:7
     CT: Jump to external code for __errno_location
     RF: Jump to external code for __errno_location
-  Occurrences: 549
+  Occurrences: 550
 
 LibraryCallRemoved
   Before events:
@@ -12404,7 +12425,14 @@ LibraryCallRemoved
     CF: is_dir_file at path.c:82:12
     CT: Jump to external code for strlen
     RF: Jump to external code for strlen
-  Occurrences: 739
+  Occurrences: 740
+
+LibraryCallRemoved
+  Before events:
+    CF: is_dup_ref at ref-cache.c:209:6
+    CT: Jump to external code for strcmp
+    RF: Jump to external code for strcmp
+  Occurrences: 5
 
 LibraryCallRemoved
   Before events:
@@ -13020,35 +13048,35 @@ ProgramCallRemoved
     CF: all_attrs_init at attr.c:136:2
     CT: hashmap_lock at attr.c:42:0
     RF: hashmap_lock at attr.c:44:1
-  Occurrences: 20
+  Occurrences: 22
 
 ProgramCallRemoved
   Before events:
     CF: all_attrs_init at attr.c:155:3
     CT: container_of_or_null_offset at git-compat-util.h:1580:0
     RF: container_of_or_null_offset at git-compat-util.h:1581:2
-  Occurrences: 100
+  Occurrences: 110
 
 ProgramCallRemoved
   Before events:
     CF: all_attrs_init at attr.c:162:2
     CT: hashmap_unlock at attr.c:47:0
     RF: hashmap_unlock at attr.c:49:1
-  Occurrences: 20
+  Occurrences: 22
 
 ProgramCallRemoved
   Before events:
     CF: attr_hashmap_get at attr.c:94:6
     CT: container_of_or_null_offset at git-compat-util.h:1580:0
     RF: container_of_or_null_offset at git-compat-util.h:1581:2
-  Occurrences: 100
+  Occurrences: 110
 
 ProgramCallRemoved
   Before events:
     CF: bootstrap_attr_stack at attr.c:862:27
     CT: get_home_gitattributes at attr.c:815:0
     RF: get_home_gitattributes at attr.c:819:2
-  Occurrences: 12
+  Occurrences: 13
 
 ProgramCallRemoved
   Before events:
@@ -13062,14 +13090,14 @@ ProgramCallRemoved
     CF: check_vector_add at attr.c:500:2
     CT: vector_lock at attr.c:489:0
     RF: vector_lock at attr.c:491:1
-  Occurrences: 9
+  Occurrences: 12
 
 ProgramCallRemoved
   Before events:
     CF: check_vector_add at attr.c:507:2
     CT: vector_unlock at attr.c:494:0
     RF: vector_unlock at attr.c:496:1
-  Occurrences: 9
+  Occurrences: 12
 
 ProgramCallRemoved
   Before events:
@@ -13230,14 +13258,14 @@ ProgramCallRemoved
     CF: git_attr_internal at attr.c:216:2
     CT: hashmap_lock at attr.c:42:0
     RF: hashmap_lock at attr.c:44:1
-  Occurrences: 88
+  Occurrences: 102
 
 ProgramCallRemoved
   Before events:
     CF: git_attr_internal at attr.c:229:2
     CT: hashmap_unlock at attr.c:47:0
     RF: hashmap_unlock at attr.c:49:1
-  Occurrences: 88
+  Occurrences: 102
 
 ProgramCallRemoved
   Before events:
@@ -13454,7 +13482,7 @@ ProgramCallRemoved
     CF: strbuf_grow at strbuf.c:99:2
     CT: st_mult at git-compat-util.h:991:0
     RF: st_mult at git-compat-util.h:995:2
-  Occurrences: 9730
+  Occurrences: 9732
 
 ProgramCallRemoved
   Before events:
@@ -13529,7 +13557,7 @@ ProgramCallRemoved
 UnexpectedReturnAdded
   After events:
     IRF: SHA1DCUpdate at sha1.c:1856:3
-  Occurrences: 3
+  Occurrences: 1
 
 UnexpectedReturnAdded
   After events:
@@ -13559,52 +13587,52 @@ UnexpectedReturnAdded
 UnexpectedReturnAdded
   After events:
     IRF: adjust_git_path at path.c:413:11
-  Occurrences: 3
+  Occurrences: 2
 
 UnexpectedReturnAdded
   After events:
     IRF: all_attrs_init at attr.c:169:16
-  Occurrences: 35
+  Occurrences: 29
 
 UnexpectedReturnAdded
   After events:
     IRF: alloc_table at hashmap.c:82:15
-  Occurrences: 3
+  Occurrences: 2
 
 UnexpectedReturnAdded
   After events:
     IRF: attr_check_alloc at attr.c:0:0
-  Occurrences: 3
+  Occurrences: 2
 
 UnexpectedReturnAdded
   After events:
     IRF: attr_hashmap_get at attr.c:96:16
-  Occurrences: 3
+  Occurrences: 6
 
 UnexpectedReturnAdded
   After events:
     IRF: attr_hashmap_get at attr.c:96:9
-  Occurrences: 27
+  Occurrences: 14
 
 UnexpectedReturnAdded
   After events:
     IRF: attr_name_valid at attr.c:181:28
-  Occurrences: 30
+  Occurrences: 21
 
 UnexpectedReturnAdded
   After events:
     IRF: attr_name_valid at attr.c:183:2
-  Occurrences: 142
+  Occurrences: 137
 
 UnexpectedReturnAdded
   After events:
     IRF: bootstrap_attr_stack at attr.c:0:0
-  Occurrences: 3
+  Occurrences: 1
 
 UnexpectedReturnAdded
   After events:
     IRF: bootstrap_attr_stack at attr.c:847:6
-  Occurrences: 3
+  Occurrences: 1
 
 UnexpectedReturnAdded
   After events:
@@ -13619,7 +13647,7 @@ UnexpectedReturnAdded
 UnexpectedReturnAdded
   After events:
     IRF: bucket at hashmap.c:107:19
-  Occurrences: 57
+  Occurrences: 38
 
 UnexpectedReturnAdded
   After events:
@@ -13629,7 +13657,7 @@ UnexpectedReturnAdded
 UnexpectedReturnAdded
   After events:
     IRF: cache_name_stage_compare at read-cache.c:563:6
-  Occurrences: 3
+  Occurrences: 2
 
 UnexpectedReturnAdded
   After events:
@@ -13639,7 +13667,7 @@ UnexpectedReturnAdded
 UnexpectedReturnAdded
   After events:
     IRF: ce_compare_data at read-cache.c:0:0
-  Occurrences: 3
+  Occurrences: 1
 
 UnexpectedReturnAdded
   After events:
@@ -13684,7 +13712,7 @@ UnexpectedReturnAdded
 UnexpectedReturnAdded
   After events:
     IRF: check_vector_add at attr.c:505:41
-  Occurrences: 3
+  Occurrences: 2
 
 UnexpectedReturnAdded
   After events:
@@ -13724,7 +13752,7 @@ UnexpectedReturnAdded
 UnexpectedReturnAdded
   After events:
     IRF: configset_iter at config.c:2229:16
-  Occurrences: 3
+  Occurrences: 2
 
 UnexpectedReturnAdded
   After events:
@@ -13794,7 +13822,7 @@ UnexpectedReturnAdded
 UnexpectedReturnAdded
   After events:
     IRF: determine_macros at attr.c:1057:2
-  Occurrences: 6
+  Occurrences: 2
 
 UnexpectedReturnAdded
   After events:
@@ -13819,7 +13847,7 @@ UnexpectedReturnAdded
 UnexpectedReturnAdded
   After events:
     IRF: dir_prefix at path.c:75:10
-  Occurrences: 3
+  Occurrences: 2
 
 UnexpectedReturnAdded
   After events:
@@ -13859,7 +13887,7 @@ UnexpectedReturnAdded
 UnexpectedReturnAdded
   After events:
     IRF: entry_equals at hashmap.c:101:3
-  Occurrences: 15
+  Occurrences: 10
 
 UnexpectedReturnAdded
   After events:
@@ -13904,7 +13932,7 @@ UnexpectedReturnAdded
 UnexpectedReturnAdded
   After events:
     IRF: fill at attr.c:1022:2
-  Occurrences: 6
+  Occurrences: 2
 
 UnexpectedReturnAdded
   After events:
@@ -13929,12 +13957,12 @@ UnexpectedReturnAdded
 UnexpectedReturnAdded
   After events:
     IRF: find_entry_ptr at hashmap.c:140:15
-  Occurrences: 6
+  Occurrences: 7
 
 UnexpectedReturnAdded
   After events:
     IRF: find_entry_ptr at hashmap.c:140:9
-  Occurrences: 24
+  Occurrences: 13
 
 UnexpectedReturnAdded
   After events:
@@ -13974,7 +14002,7 @@ UnexpectedReturnAdded
 UnexpectedReturnAdded
   After events:
     IRF: format_object_header_literally at object-file.c:0:71
-  Occurrences: 3
+  Occurrences: 1
 
 UnexpectedReturnAdded
   After events:
@@ -14019,7 +14047,7 @@ UnexpectedReturnAdded
 UnexpectedReturnAdded
   After events:
     IRF: get_conv_flags at object-file.c:308:17
-  Occurrences: 3
+  Occurrences: 1
 
 UnexpectedReturnAdded
   After events:
@@ -14069,7 +14097,7 @@ UnexpectedReturnAdded
 UnexpectedReturnAdded
   After events:
     IRF: get_home_gitattributes at attr.c:819:9
-  Occurrences: 3
+  Occurrences: 2
 
 UnexpectedReturnAdded
   After events:
@@ -14114,7 +14142,7 @@ UnexpectedReturnAdded
 UnexpectedReturnAdded
   After events:
     IRF: get_unit_factor at config.c:1147:7
-  Occurrences: 5
+  Occurrences: 4
 
 UnexpectedReturnAdded
   After events:
@@ -14144,7 +14172,7 @@ UnexpectedReturnAdded
 UnexpectedReturnAdded
   After events:
     IRF: git_attr_system at attr.c:824:9
-  Occurrences: 3
+  Occurrences: 2
 
 UnexpectedReturnAdded
   After events:
@@ -14154,7 +14182,7 @@ UnexpectedReturnAdded
 UnexpectedReturnAdded
   After events:
     IRF: git_config_bool at config.c:1450:8
-  Occurrences: 3
+  Occurrences: 2
 
 UnexpectedReturnAdded
   After events:
@@ -14194,7 +14222,7 @@ UnexpectedReturnAdded
 UnexpectedReturnAdded
   After events:
     IRF: git_is_dir_sep at git-compat-util.h:448:11
-  Occurrences: 437
+  Occurrences: 433
 
 UnexpectedReturnAdded
   After events:
@@ -14214,7 +14242,7 @@ UnexpectedReturnAdded
 UnexpectedReturnAdded
   After events:
     IRF: git_parse_int at config.c:1235:7
-  Occurrences: 5
+  Occurrences: 4
 
 UnexpectedReturnAdded
   After events:
@@ -14224,7 +14252,7 @@ UnexpectedReturnAdded
 UnexpectedReturnAdded
   After events:
     IRF: git_parse_maybe_bool at config.c:1432:11
-  Occurrences: 3
+  Occurrences: 2
 
 UnexpectedReturnAdded
   After events:
@@ -14249,32 +14277,32 @@ UnexpectedReturnAdded
 UnexpectedReturnAdded
   After events:
     IRF: git_path_check_convert at convert.c:0:29
-  Occurrences: 6
+  Occurrences: 2
 
 UnexpectedReturnAdded
   After events:
     IRF: git_path_check_crlf at convert.c:1254:11
-  Occurrences: 12
+  Occurrences: 4
 
 UnexpectedReturnAdded
   After events:
     IRF: git_path_check_encoding at convert.c:1232:6
-  Occurrences: 6
+  Occurrences: 2
 
 UnexpectedReturnAdded
   After events:
     IRF: git_path_check_eol at convert.c:1267:6
-  Occurrences: 6
+  Occurrences: 2
 
 UnexpectedReturnAdded
   After events:
     IRF: git_path_check_ident at convert.c:1293:11
-  Occurrences: 6
+  Occurrences: 2
 
 UnexpectedReturnAdded
   After events:
     IRF: git_path_info_attributes at attr.c:827:8
-  Occurrences: 3
+  Occurrences: 2
 
 UnexpectedReturnAdded
   After events:
@@ -14294,17 +14322,17 @@ UnexpectedReturnAdded
 UnexpectedReturnAdded
   After events:
     IRF: hash_object_body at object-file.c:0:2
-  Occurrences: 3
+  Occurrences: 1
 
 UnexpectedReturnAdded
   After events:
     IRF: hash_object_file at object-file.c:0:0
-  Occurrences: 3
+  Occurrences: 1
 
 UnexpectedReturnAdded
   After events:
     IRF: hash_object_file_literally at object-file.c:0:0
-  Occurrences: 3
+  Occurrences: 1
 
 UnexpectedReturnAdded
   After events:
@@ -14334,7 +14362,7 @@ UnexpectedReturnAdded
 UnexpectedReturnAdded
   After events:
     IRF: hasheq_algop at hash.h:0:0
-  Occurrences: 7
+  Occurrences: 5
 
 UnexpectedReturnAdded
   After events:
@@ -14344,7 +14372,7 @@ UnexpectedReturnAdded
 UnexpectedReturnAdded
   After events:
     IRF: hashmap_entry_init at hashmap.h:318:10
-  Occurrences: 57
+  Occurrences: 38
 
 UnexpectedReturnAdded
   After events:
@@ -14354,12 +14382,12 @@ UnexpectedReturnAdded
 UnexpectedReturnAdded
   After events:
     IRF: hashmap_get_size at hashmap.h:327:15
-  Occurrences: 60
+  Occurrences: 38
 
 UnexpectedReturnAdded
   After events:
     IRF: hashmap_iter_next at hashmap.c:308:1
-  Occurrences: 155
+  Occurrences: 154
 
 UnexpectedReturnAdded
   After events:
@@ -14374,12 +14402,12 @@ UnexpectedReturnAdded
 UnexpectedReturnAdded
   After events:
     IRF: index_core at object-file.c:2447:3
-  Occurrences: 3
+  Occurrences: 1
 
 UnexpectedReturnAdded
   After events:
     IRF: index_name_pos at read-cache.c:620:9
-  Occurrences: 3
+  Occurrences: 2
 
 UnexpectedReturnAdded
   After events:
@@ -14414,7 +14442,7 @@ UnexpectedReturnAdded
 UnexpectedReturnAdded
   After events:
     IRF: is_dir_file at path.c:87:9
-  Occurrences: 3
+  Occurrences: 2
 
 UnexpectedReturnAdded
   After events:
@@ -14499,7 +14527,7 @@ UnexpectedReturnAdded
 UnexpectedReturnAdded
   After events:
     IRF: memory_limit_check at wrapper.c:25:11
-  Occurrences: 939
+  Occurrences: 903
 
 UnexpectedReturnAdded
   After events:
@@ -14514,7 +14542,7 @@ UnexpectedReturnAdded
 UnexpectedReturnAdded
   After events:
     IRF: name_compare at read-cache.c:549:6
-  Occurrences: 3
+  Occurrences: 2
 
 UnexpectedReturnAdded
   After events:
@@ -14539,7 +14567,7 @@ UnexpectedReturnAdded
 UnexpectedReturnAdded
   After events:
     IRF: oideq at hash.h:0:0
-  Occurrences: 73
+  Occurrences: 71
 
 UnexpectedReturnAdded
   After events:
@@ -14569,7 +14597,7 @@ UnexpectedReturnAdded
 UnexpectedReturnAdded
   After events:
     IRF: parse_attr_line at attr.c:0:0
-  Occurrences: 3
+  Occurrences: 2
 
 UnexpectedReturnAdded
   After events:
@@ -14609,7 +14637,7 @@ UnexpectedReturnAdded
 UnexpectedReturnAdded
   After events:
     IRF: path_in_sparse_checkout_1 at dir.c:1466:6
-  Occurrences: 3
+  Occurrences: 2
 
 UnexpectedReturnAdded
   After events:
@@ -14634,12 +14662,12 @@ UnexpectedReturnAdded
 UnexpectedReturnAdded
   After events:
     IRF: push_stack at attr.c:832:6
-  Occurrences: 3
+  Occurrences: 2
 
 UnexpectedReturnAdded
   After events:
     IRF: push_stack at attr.c:837:17
-  Occurrences: 15
+  Occurrences: 8
 
 UnexpectedReturnAdded
   After events:
@@ -14649,7 +14677,7 @@ UnexpectedReturnAdded
 UnexpectedReturnAdded
   After events:
     IRF: read_attr_from_array at attr.c:674:28
-  Occurrences: 3
+  Occurrences: 2
 
 UnexpectedReturnAdded
   After events:
@@ -14714,7 +14742,7 @@ UnexpectedReturnAdded
 UnexpectedReturnAdded
   After events:
     IRF: repo_config at config.c:0:0
-  Occurrences: 3
+  Occurrences: 2
 
 UnexpectedReturnAdded
   After events:
@@ -14784,7 +14812,7 @@ UnexpectedReturnAdded
 UnexpectedReturnAdded
   After events:
     IRF: sane_qsort at git-compat-util.h:1309:3
-  Occurrences: 36
+  Occurrences: 39
 
 UnexpectedReturnAdded
   After events:
@@ -14803,7 +14831,7 @@ UnexpectedReturnAdded
 
 UnexpectedReturnAdded
   After events:
-    IRF: sha1recompress_fast_65 at sha1.c:1240:1
+    IRF: sha1recompress_fast_58 at sha1.c:1212:1
   Occurrences: 2
 
 UnexpectedReturnAdded
@@ -14813,13 +14841,8 @@ UnexpectedReturnAdded
 
 UnexpectedReturnAdded
   After events:
-    IRF: simplify_away at dir.c:2111:7
-  Occurrences: 1
-
-UnexpectedReturnAdded
-  After events:
     IRF: simplify_away at dir.c:2129:8
-  Occurrences: 3
+  Occurrences: 4
 
 UnexpectedReturnAdded
   After events:
@@ -14839,7 +14862,7 @@ UnexpectedReturnAdded
 UnexpectedReturnAdded
   After events:
     IRF: skip_prefix at git-compat-util.h:678:8
-  Occurrences: 2686
+  Occurrences: 2680
 
 UnexpectedReturnAdded
   After events:
@@ -14849,22 +14872,22 @@ UnexpectedReturnAdded
 UnexpectedReturnAdded
   After events:
     IRF: st_add at git-compat-util.h:982:6
-  Occurrences: 27
+  Occurrences: 18
 
 UnexpectedReturnAdded
   After events:
     IRF: st_add at git-compat-util.h:985:11
-  Occurrences: 27
+  Occurrences: 18
 
 UnexpectedReturnAdded
   After events:
     IRF: st_mult at git-compat-util.h:992:6
-  Occurrences: 3
+  Occurrences: 2
 
 UnexpectedReturnAdded
   After events:
     IRF: st_mult at git-compat-util.h:995:11
-  Occurrences: 1502
+  Occurrences: 1500
 
 UnexpectedReturnAdded
   After events:
@@ -14894,7 +14917,7 @@ UnexpectedReturnAdded
 UnexpectedReturnAdded
   After events:
     IRF: strbuf_addch at strbuf.h:233:19
-  Occurrences: 45
+  Occurrences: 44
 
 UnexpectedReturnAdded
   After events:
@@ -14904,22 +14927,22 @@ UnexpectedReturnAdded
 UnexpectedReturnAdded
   After events:
     IRF: strbuf_addstr at strbuf.h:0:2
-  Occurrences: 6
+  Occurrences: 2
 
 UnexpectedReturnAdded
   After events:
     IRF: strbuf_avail at strbuf.h:141:41
-  Occurrences: 74
+  Occurrences: 70
 
 UnexpectedReturnAdded
   After events:
     IRF: strbuf_avail at strbuf.h:141:9
-  Occurrences: 16179
+  Occurrences: 16177
 
 UnexpectedReturnAdded
   After events:
     IRF: strbuf_cleanup_path at path.c:53:11
-  Occurrences: 6
+  Occurrences: 4
 
 UnexpectedReturnAdded
   After events:
@@ -14934,7 +14957,7 @@ UnexpectedReturnAdded
 UnexpectedReturnAdded
   After events:
     IRF: strbuf_grow at strbuf.c:101:14
-  Occurrences: 1434
+  Occurrences: 1429
 
 UnexpectedReturnAdded
   After events:
@@ -14944,7 +14967,7 @@ UnexpectedReturnAdded
 UnexpectedReturnAdded
   After events:
     IRF: strbuf_grow at strbuf.c:93:16
-  Occurrences: 865
+  Occurrences: 863
 
 UnexpectedReturnAdded
   After events:
@@ -14954,7 +14977,7 @@ UnexpectedReturnAdded
 UnexpectedReturnAdded
   After events:
     IRF: strbuf_grow at strbuf.c:95:6
-  Occurrences: 3625
+  Occurrences: 3624
 
 UnexpectedReturnAdded
   After events:
@@ -14964,7 +14987,7 @@ UnexpectedReturnAdded
 UnexpectedReturnAdded
   After events:
     IRF: strbuf_init at strbuf.c:57:2
-  Occurrences: 82
+  Occurrences: 76
 
 UnexpectedReturnAdded
   After events:
@@ -14974,7 +14997,7 @@ UnexpectedReturnAdded
 UnexpectedReturnAdded
   After events:
     IRF: strbuf_release at strbuf.c:68:1
-  Occurrences: 266
+  Occurrences: 264
 
 UnexpectedReturnAdded
   After events:
@@ -14994,7 +15017,7 @@ UnexpectedReturnAdded
 UnexpectedReturnAdded
   After events:
     IRF: strbuf_setlen at strbuf.h:166:16
-  Occurrences: 1314
+  Occurrences: 1308
 
 UnexpectedReturnAdded
   After events:
@@ -15009,7 +15032,7 @@ UnexpectedReturnAdded
 UnexpectedReturnAdded
   After events:
     IRF: strbuf_worktree_gitdir at path.c:421:7
-  Occurrences: 3
+  Occurrences: 2
 
 UnexpectedReturnAdded
   After events:
@@ -15104,7 +15127,7 @@ UnexpectedReturnAdded
 UnexpectedReturnAdded
   After events:
     IRF: write_object_file_prepare_literally at object-file.c:0:0
-  Occurrences: 3
+  Occurrences: 1
 
 UnexpectedReturnAdded
   After events:
@@ -15134,12 +15157,12 @@ UnexpectedReturnAdded
 UnexpectedReturnAdded
   After events:
     IRF: xread at wrapper.c:231:10
-  Occurrences: 11
+  Occurrences: 9
 
 UnexpectedReturnAdded
   After events:
     IRF: xsize_t at git-compat-util.h:1174:10
-  Occurrences: 3
+  Occurrences: 1
 
 UnexpectedReturnAdded
   After events:
@@ -15159,17 +15182,17 @@ UnexpectedReturnAdded
 Uncategorised
   After events:
     ICF: SHA1DCFinal at sha1.c:1873:2
-  Occurrences: 3
+  Occurrences: 1
 
 Uncategorised
   After events:
     CF: SHA1DCFinal at sha1.c:1885:2
-  Occurrences: 3
+  Occurrences: 1
 
 Uncategorised
   After events:
     CF: SHA1DCUpdate at sha1.c:1856:3
-  Occurrences: 9
+  Occurrences: 3
 
 Uncategorised
   After events:
@@ -15189,52 +15212,52 @@ Uncategorised
 Uncategorised
   After events:
     ICF: adjust_git_path at path.c:403:6
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
     CF: adjust_git_path at path.c:406:12
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
     ICF: adjust_git_path at path.c:409:11
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
     ICF: all_attrs_init at attr.c:138:9
-  Occurrences: 6
+  Occurrences: 2
 
 Uncategorised
   After events:
     ICF: all_attrs_init at attr.c:152:3
-  Occurrences: 6
+  Occurrences: 4
 
 Uncategorised
   After events:
     ICF: all_attrs_init at attr.c:155:3
-  Occurrences: 45
+  Occurrences: 25
 
 Uncategorised
   After events:
     ICF: attr_check_initl at attr.c:569:10
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
     CF: attr_check_initl at attr.c:572:2
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
     ICF: attr_check_initl at attr.c:574:25
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
     ICF: attr_check_initl at attr.c:582:10
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
@@ -15244,67 +15267,67 @@ Uncategorised
 Uncategorised
   After events:
     ICF: bootstrap_attr_stack at attr.c:851:6
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
     ICF: bootstrap_attr_stack at attr.c:852:2
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
     ICF: bootstrap_attr_stack at attr.c:855:6
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
     ICF: bootstrap_attr_stack at attr.c:861:6
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
     CF: bootstrap_attr_stack at attr.c:862:7
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
     ICF: bootstrap_attr_stack at attr.c:863:3
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
     CF: bootstrap_attr_stack at attr.c:867:6
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
     ICF: bootstrap_attr_stack at attr.c:868:2
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
     CF: bootstrap_attr_stack at attr.c:868:23
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
     ICF: bootstrap_attr_stack at attr.c:872:27
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
     CF: bootstrap_attr_stack at attr.c:872:7
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
     CF: bootstrap_attr_stack at attr.c:876:3
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
     ICF: bootstrap_attr_stack at attr.c:877:2
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
@@ -15314,27 +15337,27 @@ Uncategorised
 Uncategorised
   After events:
     ICF: cache_name_stage_compare at read-cache.c:562:8
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
     CF: ce_compare_data at read-cache.c:244:11
-  Occurrences: 3
+  Occurrences: 1
 
 Uncategorised
   After events:
     CF: ce_compare_data at read-cache.c:248:8
-  Occurrences: 3
+  Occurrences: 1
 
 Uncategorised
   After events:
     ICF: ce_compare_data at read-cache.c:249:13
-  Occurrences: 3
+  Occurrences: 1
 
 Uncategorised
   After events:
     ICF: ce_modified_check_fs at read-cache.c:299:7
-  Occurrences: 3
+  Occurrences: 1
 
 Uncategorised
   After events:
@@ -15424,12 +15447,12 @@ Uncategorised
 Uncategorised
   After events:
     ICF: check_vector_add at attr.c:502:2
-  Occurrences: 6
+  Occurrences: 4
 
 Uncategorised
   After events:
     ICF: cleanup_path at path.c:43:6
-  Occurrences: 6
+  Occurrences: 4
 
 Uncategorised
   After events:
@@ -15469,22 +15492,22 @@ Uncategorised
 Uncategorised
   After events:
     ICF: collect_some_attrs at attr.c:1097:2
-  Occurrences: 6
+  Occurrences: 2
 
 Uncategorised
   After events:
     ICF: collect_some_attrs at attr.c:1098:2
-  Occurrences: 9
+  Occurrences: 5
 
 Uncategorised
   After events:
     ICF: collect_some_attrs at attr.c:1099:2
-  Occurrences: 6
+  Occurrences: 2
 
 Uncategorised
   After events:
     ICF: collect_some_attrs at attr.c:1102:2
-  Occurrences: 6
+  Occurrences: 2
 
 Uncategorised
   After events:
@@ -15509,77 +15532,77 @@ Uncategorised
 Uncategorised
   After events:
     CF: configset_iter at config.c:2236:7
-  Occurrences: 12
+  Occurrences: 8
 
 Uncategorised
   After events:
     CF: convert_attrs at convert.c:1304:11
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
     CF: convert_attrs at convert.c:1308:3
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
     CF: convert_attrs at convert.c:1311:2
-  Occurrences: 6
+  Occurrences: 2
 
 Uncategorised
   After events:
     ICF: convert_attrs at convert.c:1313:20
-  Occurrences: 6
+  Occurrences: 2
 
 Uncategorised
   After events:
     ICF: convert_attrs at convert.c:1315:21
-  Occurrences: 6
+  Occurrences: 2
 
 Uncategorised
   After events:
     ICF: convert_attrs at convert.c:1316:14
-  Occurrences: 6
+  Occurrences: 2
 
 Uncategorised
   After events:
     ICF: convert_attrs at convert.c:1317:12
-  Occurrences: 6
+  Occurrences: 2
 
 Uncategorised
   After events:
     ICF: convert_attrs at convert.c:1319:23
-  Occurrences: 6
+  Occurrences: 2
 
 Uncategorised
   After events:
     ICF: convert_attrs at convert.c:1329:30
-  Occurrences: 6
+  Occurrences: 2
 
 Uncategorised
   After events:
     CF: convert_to_git at convert.c:1412:2
-  Occurrences: 3
+  Occurrences: 1
 
 Uncategorised
   After events:
     CF: convert_to_git at convert.c:1414:9
-  Occurrences: 3
+  Occurrences: 1
 
 Uncategorised
   After events:
     CF: convert_to_git at convert.c:1423:9
-  Occurrences: 3
+  Occurrences: 1
 
 Uncategorised
   After events:
     CF: convert_to_git at convert.c:1430:10
-  Occurrences: 3
+  Occurrences: 1
 
 Uncategorised
   After events:
     CF: convert_to_git at convert.c:1436:15
-  Occurrences: 3
+  Occurrences: 1
 
 Uncategorised
   After events:
@@ -15619,7 +15642,7 @@ Uncategorised
 Uncategorised
   After events:
     CF: dir_prefix at path.c:75:10
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
@@ -15669,27 +15692,27 @@ Uncategorised
 Uncategorised
   After events:
     ICF: do_git_path at path.c:435:19
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
     ICF: do_git_path at path.c:436:3
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
     CF: do_git_path at path.c:438:2
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
     ICF: do_git_path at path.c:440:3
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
     ICF: do_git_path at path.c:441:2
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
@@ -15809,7 +15832,7 @@ Uncategorised
 Uncategorised
   After events:
     CF: format_object_header_literally at object-file.c:1061:9
-  Occurrences: 3
+  Occurrences: 1
 
 Uncategorised
   After events:
@@ -15849,7 +15872,7 @@ Uncategorised
 Uncategorised
   After events:
     CF: get_home_gitattributes at attr.c:817:25
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
@@ -15949,72 +15972,72 @@ Uncategorised
 Uncategorised
   After events:
     CF: git_SHA1DCFinal at sha1dc_git.c:19:7
-  Occurrences: 3
+  Occurrences: 1
 
 Uncategorised
   After events:
     CF: git_SHA1DCUpdate at sha1dc_git.c:37:2
-  Occurrences: 6
+  Occurrences: 2
 
 Uncategorised
   After events:
     CF: git_attr at attr.c:236:33
-  Occurrences: 18
+  Occurrences: 12
 
 Uncategorised
   After events:
     CF: git_attr at attr.c:236:9
-  Occurrences: 21
+  Occurrences: 14
 
 Uncategorised
   After events:
     ICF: git_attr_internal at attr.c:213:7
-  Occurrences: 30
+  Occurrences: 20
 
 Uncategorised
   After events:
     ICF: git_attr_internal at attr.c:218:6
-  Occurrences: 30
+  Occurrences: 20
 
 Uncategorised
   After events:
     ICF: git_attr_internal at attr.c:221:3
-  Occurrences: 81
+  Occurrences: 54
 
 Uncategorised
   After events:
     ICF: git_attr_internal at attr.c:222:16
-  Occurrences: 27
+  Occurrences: 18
 
 Uncategorised
   After events:
     ICF: git_attr_internal at attr.c:224:3
-  Occurrences: 27
+  Occurrences: 18
 
 Uncategorised
   After events:
     ICF: git_attr_internal at attr.c:225:3
-  Occurrences: 27
+  Occurrences: 18
 
 Uncategorised
   After events:
     CF: git_attr_system at attr.c:824:10
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
     CF: git_check_attr at attr.c:1111:2
-  Occurrences: 6
+  Occurrences: 2
 
 Uncategorised
   After events:
     ICF: git_config at config.c:2674:2
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
     ICF: git_config_bool at config.c:1449:10
-  Occurrences: 5
+  Occurrences: 4
 
 Uncategorised
   After events:
@@ -16084,52 +16107,52 @@ Uncategorised
 Uncategorised
   After events:
     CF: git_open_cloexec at object-file.c:1128:7
-  Occurrences: 3
+  Occurrences: 1
 
 Uncategorised
   After events:
     CF: git_parse_int at config.c:1235:7
-  Occurrences: 5
+  Occurrences: 4
 
 Uncategorised
   After events:
     CF: git_parse_maybe_bool at config.c:1428:10
-  Occurrences: 5
+  Occurrences: 4
 
 Uncategorised
   After events:
     ICF: git_parse_maybe_bool at config.c:1431:6
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
     CF: git_parse_maybe_bool_text at config.c:1341:7
-  Occurrences: 5
+  Occurrences: 4
 
 Uncategorised
   After events:
     CF: git_parse_maybe_bool_text at config.c:1342:10
-  Occurrences: 5
+  Occurrences: 4
 
 Uncategorised
   After events:
     CF: git_parse_maybe_bool_text at config.c:1343:10
-  Occurrences: 5
+  Occurrences: 4
 
 Uncategorised
   After events:
     CF: git_parse_maybe_bool_text at config.c:1345:7
-  Occurrences: 5
+  Occurrences: 4
 
 Uncategorised
   After events:
     CF: git_parse_maybe_bool_text at config.c:1346:10
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
     CF: git_parse_maybe_bool_text at config.c:1347:10
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
@@ -16199,17 +16222,17 @@ Uncategorised
 Uncategorised
   After events:
     CF: git_path_info_attributes at attr.c:827:8
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
     CF: git_pathdup at path.c:498:2
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
     CF: git_pathdup at path.c:500:9
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
@@ -16219,12 +16242,12 @@ Uncategorised
 Uncategorised
   After events:
     ICF: handle_attr_line at attr.c:660:6
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
     ICF: handle_attr_line at attr.c:663:2
-  Occurrences: 6
+  Occurrences: 4
 
 Uncategorised
   After events:
@@ -16234,72 +16257,72 @@ Uncategorised
 Uncategorised
   After events:
     CF: ie_match_stat at read-cache.c:445:15
-  Occurrences: 3
+  Occurrences: 1
 
 Uncategorised
   After events:
     CF: index_core at object-file.c:2437:15
-  Occurrences: 3
+  Occurrences: 1
 
 Uncategorised
   After events:
     CF: index_core at object-file.c:2438:25
-  Occurrences: 3
+  Occurrences: 1
 
 Uncategorised
   After events:
     CF: index_core at object-file.c:2446:10
-  Occurrences: 3
+  Occurrences: 1
 
 Uncategorised
   After events:
     CF: index_core at object-file.c:2447:3
-  Occurrences: 3
+  Occurrences: 1
 
 Uncategorised
   After events:
     CF: index_fd at object-file.c:2488:34
-  Occurrences: 3
+  Occurrences: 1
 
 Uncategorised
   After events:
     ICF: index_fd at object-file.c:2494:37
-  Occurrences: 3
+  Occurrences: 1
 
 Uncategorised
   After events:
     ICF: index_fd at object-file.c:2494:9
-  Occurrences: 3
+  Occurrences: 1
 
 Uncategorised
   After events:
     CF: index_fd at object-file.c:2499:2
-  Occurrences: 3
+  Occurrences: 1
 
 Uncategorised
   After events:
     CF: index_mem at object-file.c:2360:7
-  Occurrences: 3
+  Occurrences: 1
 
 Uncategorised
   After events:
     ICF: index_mem at object-file.c:2361:8
-  Occurrences: 3
+  Occurrences: 1
 
 Uncategorised
   After events:
     ICF: index_mem at object-file.c:2378:3
-  Occurrences: 3
+  Occurrences: 1
 
 Uncategorised
   After events:
     CF: index_name_pos at read-cache.c:620:9
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
     ICF: index_name_stage_pos at read-cache.c:585:13
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
@@ -16319,22 +16342,22 @@ Uncategorised
 Uncategorised
   After events:
     ICF: is_dir_file at path.c:83:33
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
     CF: is_dir_file at path.c:83:6
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
     ICF: is_dir_file at path.c:85:9
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
     CF: is_dir_file at path.c:87:10
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
@@ -16419,22 +16442,22 @@ Uncategorised
 Uncategorised
   After events:
     CF: mkpathdup at path.c:508:2
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
     ICF: mkpathdup at path.c:510:2
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
     CF: mkpathdup at path.c:511:9
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
     CF: name_compare at read-cache.c:548:12
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
@@ -16459,7 +16482,7 @@ Uncategorised
 Uncategorised
   After events:
     CF: open_nofollow at wrapper.c:753:9
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
@@ -16489,87 +16512,87 @@ Uncategorised
 Uncategorised
   After events:
     CF: parse_attr at attr.c:294:12
-  Occurrences: 18
+  Occurrences: 12
 
 Uncategorised
   After events:
     CF: parse_attr at attr.c:295:11
-  Occurrences: 18
+  Occurrences: 12
 
 Uncategorised
   After events:
     ICF: parse_attr at attr.c:307:8
-  Occurrences: 9
-
-Uncategorised
-  After events:
-    CF: parse_attr at attr.c:328:13
-  Occurrences: 15
-
-Uncategorised
-  After events:
-    CF: parse_attr at attr.c:330:14
-  Occurrences: 18
-
-Uncategorised
-  After events:
-    CF: parse_attr_line at attr.c:343:14
-  Occurrences: 3
-
-Uncategorised
-  After events:
-    CF: parse_attr_line at attr.c:352:13
-  Occurrences: 3
-
-Uncategorised
-  After events:
-    CF: parse_attr_line at attr.c:357:6
-  Occurrences: 3
-
-Uncategorised
-  After events:
-    CF: parse_attr_line at attr.c:365:11
-  Occurrences: 3
-
-Uncategorised
-  After events:
-    CF: parse_attr_line at attr.c:366:13
-  Occurrences: 3
-
-Uncategorised
-  After events:
-    ICF: parse_attr_line at attr.c:367:8
-  Occurrences: 3
-
-Uncategorised
-  After events:
-    CF: parse_attr_line at attr.c:375:12
-  Occurrences: 3
-
-Uncategorised
-  After events:
-    CF: parse_attr_line at attr.c:379:8
-  Occurrences: 9
-
-Uncategorised
-  After events:
-    CF: parse_attr_line at attr.c:384:8
-  Occurrences: 3
-
-Uncategorised
-  After events:
-    CF: parse_attr_line at attr.c:389:17
   Occurrences: 6
 
 Uncategorised
   After events:
+    CF: parse_attr at attr.c:328:13
+  Occurrences: 10
+
+Uncategorised
+  After events:
+    CF: parse_attr at attr.c:330:14
+  Occurrences: 12
+
+Uncategorised
+  After events:
+    CF: parse_attr_line at attr.c:343:14
+  Occurrences: 2
+
+Uncategorised
+  After events:
+    CF: parse_attr_line at attr.c:352:13
+  Occurrences: 2
+
+Uncategorised
+  After events:
+    CF: parse_attr_line at attr.c:357:6
+  Occurrences: 2
+
+Uncategorised
+  After events:
+    CF: parse_attr_line at attr.c:365:11
+  Occurrences: 2
+
+Uncategorised
+  After events:
+    CF: parse_attr_line at attr.c:366:13
+  Occurrences: 2
+
+Uncategorised
+  After events:
+    ICF: parse_attr_line at attr.c:367:8
+  Occurrences: 2
+
+Uncategorised
+  After events:
+    CF: parse_attr_line at attr.c:375:12
+  Occurrences: 2
+
+Uncategorised
+  After events:
+    CF: parse_attr_line at attr.c:379:8
+  Occurrences: 6
+
+Uncategorised
+  After events:
+    CF: parse_attr_line at attr.c:384:8
+  Occurrences: 2
+
+Uncategorised
+  After events:
+    CF: parse_attr_line at attr.c:389:17
+  Occurrences: 4
+
+Uncategorised
+  After events:
     CF: parse_attr_line at attr.c:409:8
-  Occurrences: 9
+  Occurrences: 6
 
 Uncategorised
   After events:
     CF: parse_attr_line at attr.c:412:2
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
@@ -16579,7 +16602,7 @@ Uncategorised
 Uncategorised
   After events:
     ICF: parse_config_key at config.c:3741:7
-  Occurrences: 12
+  Occurrences: 8
 
 Uncategorised
   After events:
@@ -16604,12 +16627,12 @@ Uncategorised
 Uncategorised
   After events:
     ICF: path_in_cone_mode_sparse_checkout at dir.c:1503:9
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
     CF: path_in_sparse_checkout_1 at dir.c:1466:6
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
@@ -16629,27 +16652,27 @@ Uncategorised
 Uncategorised
   After events:
     ICF: prepare_attr_stack at attr.c:902:2
-  Occurrences: 9
+  Occurrences: 4
 
 Uncategorised
   After events:
     CF: prepare_attr_stack at attr.c:922:8
-  Occurrences: 6
+  Occurrences: 2
 
 Uncategorised
   After events:
     ICF: prepare_attr_stack at attr.c:938:2
-  Occurrences: 6
+  Occurrences: 2
 
 Uncategorised
   After events:
     ICF: prepare_attr_stack at attr.c:969:2
-  Occurrences: 6
+  Occurrences: 2
 
 Uncategorised
   After events:
     CF: prepare_attr_stack at attr.c:971:2
-  Occurrences: 6
+  Occurrences: 2
 
 Uncategorised
   After events:
@@ -16669,77 +16692,77 @@ Uncategorised
 Uncategorised
   After events:
     CF: read_attr at attr.c:0:0
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
     CF: read_attr at attr.c:783:14
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
     CF: read_attr at attr.c:789:10
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
     CF: read_attr at attr.c:802:3
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
     CF: read_attr_from_array at attr.c:673:2
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
     CF: read_attr_from_array at attr.c:675:3
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
     CF: read_attr_from_file at attr.c:711:8
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
     CF: read_attr_from_file at attr.c:713:8
-  Occurrences: 6
+  Occurrences: 4
 
 Uncategorised
   After events:
     CF: read_attr_from_file at attr.c:716:3
-  Occurrences: 9
+  Occurrences: 6
 
 Uncategorised
   After events:
     CF: read_attr_from_index at attr.c:754:7
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
     CF: read_attr_from_index at attr.c:757:8
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
     CF: read_blob_data_from_index at read-cache.c:3523:8
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
     ICF: read_blob_data_from_index at read-cache.c:3524:8
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
     CF: read_blob_data_from_index at read-cache.c:3533:10
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
     CF: read_convert_config at convert.c:1021:6
-  Occurrences: 12
+  Occurrences: 8
 
 Uncategorised
   After events:
@@ -16749,7 +16772,7 @@ Uncategorised
 Uncategorised
   After events:
     CF: read_directory_recursive at dir.c:2572:11
-  Occurrences: 1
+  Occurrences: 4
 
 Uncategorised
   After events:
@@ -16769,7 +16792,7 @@ Uncategorised
 Uncategorised
   After events:
     ICF: read_in_full at wrapper.c:288:20
-  Occurrences: 7
+  Occurrences: 5
 
 Uncategorised
   After events:
@@ -16839,12 +16862,12 @@ Uncategorised
 Uncategorised
   After events:
     CF: repo_config at config.c:2564:2
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
     ICF: repo_config at config.c:2565:2
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
@@ -17054,12 +17077,12 @@ Uncategorised
 Uncategorised
   After events:
     CF: sha1_process at sha1.c:1727:2
-  Occurrences: 3
+  Occurrences: 1
 
 Uncategorised
   After events:
     CF: sha1_process at sha1.c:1733:4
-  Occurrences: 3
+  Occurrences: 1
 
 Uncategorised
   After events:
@@ -17068,7 +17091,7 @@ Uncategorised
 
 Uncategorised
   After events:
-    ICF: sha1_recompression_step at sha1.c:1634:3
+    ICF: sha1_recompression_step at sha1.c:1599:3
   Occurrences: 2
 
 Uncategorised
@@ -17089,17 +17112,17 @@ Uncategorised
 Uncategorised
   After events:
     ICF: strbuf_add at strbuf.c:298:2
-  Occurrences: 1130
+  Occurrences: 1126
 
 Uncategorised
   After events:
     CF: strbuf_add at strbuf.c:299:2
-  Occurrences: 1130
+  Occurrences: 1126
 
 Uncategorised
   After events:
     ICF: strbuf_add at strbuf.c:300:2
-  Occurrences: 1130
+  Occurrences: 1126
 
 Uncategorised
   After events:
@@ -17129,7 +17152,7 @@ Uncategorised
 Uncategorised
   After events:
     ICF: strbuf_addch at strbuf.h:230:7
-  Occurrences: 73
+  Occurrences: 72
 
 Uncategorised
   After events:
@@ -17144,12 +17167,12 @@ Uncategorised
 Uncategorised
   After events:
     CF: strbuf_addstr at strbuf.h:305:2
-  Occurrences: 38
+  Occurrences: 34
 
 Uncategorised
   After events:
     CF: strbuf_addstr at strbuf.h:305:20
-  Occurrences: 30
+  Occurrences: 26
 
 Uncategorised
   After events:
@@ -17159,7 +17182,7 @@ Uncategorised
 Uncategorised
   After events:
     ICF: strbuf_cleanup_path at path.c:52:21
-  Occurrences: 6
+  Occurrences: 4
 
 Uncategorised
   After events:
@@ -17169,12 +17192,12 @@ Uncategorised
 Uncategorised
   After events:
     ICF: strbuf_detach at strbuf.c:73:2
-  Occurrences: 40
+  Occurrences: 38
 
 Uncategorised
   After events:
     ICF: strbuf_detach at strbuf.c:77:2
-  Occurrences: 34
+  Occurrences: 32
 
 Uncategorised
   After events:
@@ -17199,7 +17222,7 @@ Uncategorised
 Uncategorised
   After events:
     CF: strbuf_grow at strbuf.c:99:2
-  Occurrences: 779
+  Occurrences: 773
 
 Uncategorised
   After events:
@@ -17314,12 +17337,12 @@ Uncategorised
 Uncategorised
   After events:
     CF: strbuf_release at strbuf.c:65:3
-  Occurrences: 48
+  Occurrences: 44
 
 Uncategorised
   After events:
     ICF: strbuf_release at strbuf.c:66:3
-  Occurrences: 48
+  Occurrences: 44
 
 Uncategorised
   After events:
@@ -17354,7 +17377,7 @@ Uncategorised
 Uncategorised
   After events:
     ICF: strbuf_vaddf at strbuf.c:394:7
-  Occurrences: 3431
+  Occurrences: 3430
 
 Uncategorised
   After events:
@@ -17364,12 +17387,12 @@ Uncategorised
 Uncategorised
   After events:
     CF: strbuf_vaddf at strbuf.c:397:8
-  Occurrences: 44
+  Occurrences: 42
 
 Uncategorised
   After events:
     ICF: strbuf_vaddf at strbuf.c:401:12
-  Occurrences: 1679
+  Occurrences: 1678
 
 Uncategorised
   After events:
@@ -17379,17 +17402,17 @@ Uncategorised
 Uncategorised
   After events:
     CF: strbuf_vaddf at strbuf.c:403:9
-  Occurrences: 25
+  Occurrences: 24
 
 Uncategorised
   After events:
     ICF: strbuf_vaddf at strbuf.c:404:13
-  Occurrences: 25
+  Occurrences: 24
 
 Uncategorised
   After events:
     ICF: strbuf_vaddf at strbuf.c:407:2
-  Occurrences: 44
+  Occurrences: 42
 
 Uncategorised
   After events:
@@ -17504,12 +17527,12 @@ Uncategorised
 Uncategorised
   After events:
     CF: warn_on_fopen_errors at wrapper.c:399:6
-  Occurrences: 9
+  Occurrences: 6
 
 Uncategorised
   After events:
     CF: would_convert_to_git_filter_fd at convert.c:1364:2
-  Occurrences: 3
+  Occurrences: 1
 
 Uncategorised
   After events:
@@ -17519,32 +17542,32 @@ Uncategorised
 Uncategorised
   After events:
     ICF: write_object_file_prepare_literally at object-file.c:1820:12
-  Occurrences: 3
+  Occurrences: 1
 
 Uncategorised
   After events:
     ICF: write_object_file_prepare_literally at object-file.c:1821:2
-  Occurrences: 3
+  Occurrences: 1
 
 Uncategorised
   After events:
     CF: xdg_config_home at path.c:1542:9
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
     CF: xdg_config_home_for at path.c:0:0
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
     CF: xdg_config_home_for at path.c:1529:16
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
     CF: xdg_config_home_for at path.c:1533:9
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
@@ -17554,17 +17577,17 @@ Uncategorised
 Uncategorised
   After events:
     CF: xread at wrapper.c:230:8
-  Occurrences: 11
+  Occurrences: 9
 
 Uncategorised
   After events:
     CF: xsnprintf at wrapper.c:685:8
-  Occurrences: 3
+  Occurrences: 1
 
 Uncategorised
   After events:
     CF: xstrdup at wrapper.c:39:14
-  Occurrences: 39
+  Occurrences: 38
 
 Uncategorised
   After events:
@@ -17584,12 +17607,12 @@ Uncategorised
 Uncategorised
   After events:
     CT: Jump to external code for __errno_location
-  Occurrences: 16
+  Occurrences: 12
 
 Uncategorised
   After events:
     CT: Jump to external code for __isoc23_strtoimax
-  Occurrences: 5
+  Occurrences: 4
 
 Uncategorised
   After events:
@@ -17604,7 +17627,7 @@ Uncategorised
 Uncategorised
   After events:
     CT: Jump to external code for bcmp
-  Occurrences: 3
+  Occurrences: 1
 
 Uncategorised
   After events:
@@ -17614,7 +17637,7 @@ Uncategorised
 Uncategorised
   After events:
     CT: Jump to external code for close
-  Occurrences: 7
+  Occurrences: 5
 
 Uncategorised
   After events:
@@ -17659,7 +17682,7 @@ Uncategorised
 Uncategorised
   After events:
     CT: Jump to external code for free
-  Occurrences: 102
+  Occurrences: 96
 
 Uncategorised
   After events:
@@ -17689,12 +17712,12 @@ Uncategorised
 Uncategorised
   After events:
     CT: Jump to external code for memcmp
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
     CT: Jump to external code for memcpy
-  Occurrences: 1240
+  Occurrences: 1221
 
 Uncategorised
   After events:
@@ -17709,7 +17732,7 @@ Uncategorised
 Uncategorised
   After events:
     CT: Jump to external code for open64
-  Occurrences: 16
+  Occurrences: 11
 
 Uncategorised
   After events:
@@ -17719,7 +17742,7 @@ Uncategorised
 Uncategorised
   After events:
     CT: Jump to external code for read
-  Occurrences: 11
+  Occurrences: 9
 
 Uncategorised
   After events:
@@ -17729,67 +17752,67 @@ Uncategorised
 Uncategorised
   After events:
     CT: Jump to external code for strcasecmp
-  Occurrences: 26
+  Occurrences: 20
 
 Uncategorised
   After events:
     CT: Jump to external code for strchr
-  Occurrences: 18
+  Occurrences: 12
 
 Uncategorised
   After events:
     CT: Jump to external code for strcmp
-  Occurrences: 49
+  Occurrences: 46
 
 Uncategorised
   After events:
     CT: Jump to external code for strcspn
-  Occurrences: 24
+  Occurrences: 16
 
 Uncategorised
   After events:
     CT: Jump to external code for strdup
-  Occurrences: 39
+  Occurrences: 38
 
 Uncategorised
   After events:
     CT: Jump to external code for strlen
-  Occurrences: 811
+  Occurrences: 800
 
 Uncategorised
   After events:
     CT: Jump to external code for strncmp
-  Occurrences: 180
+  Occurrences: 169
 
 Uncategorised
   After events:
     CT: Jump to external code for strspn
-  Occurrences: 27
+  Occurrences: 18
 
 Uncategorised
   After events:
     CT: Jump to external code for vsnprintf
-  Occurrences: 72
+  Occurrences: 67
 
 Uncategorised
   After events:
     CT: SHA1DCFinal at sha1.c:1869:0
-  Occurrences: 3
+  Occurrences: 1
 
 Uncategorised
   After events:
     CT: SHA1DCInit at sha1.c:1769:13
-  Occurrences: 3
+  Occurrences: 1
 
 Uncategorised
   After events:
     ICT: SHA1DCUpdate at sha1.c:1821:0
-  Occurrences: 3
+  Occurrences: 1
 
 Uncategorised
   After events:
     CT: SHA1DCUpdate at sha1.c:1822:0
-  Occurrences: 6
+  Occurrences: 2
 
 Uncategorised
   After events:
@@ -17804,27 +17827,27 @@ Uncategorised
 Uncategorised
   After events:
     ICT: adjust_git_path at path.c:399:0
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
     ICT: all_attrs_init at attr.c:131:0
-  Occurrences: 35
+  Occurrences: 29
 
 Uncategorised
   After events:
     CT: apply_filter at convert.c:988:0
-  Occurrences: 3
+  Occurrences: 1
 
 Uncategorised
   After events:
     CT: attr_check_initl at attr.c:558:0
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
     ICT: attr_name_valid at attr.c:175:0
-  Occurrences: 172
+  Occurrences: 158
 
 Uncategorised
   After events:
@@ -17834,7 +17857,7 @@ Uncategorised
 Uncategorised
   After events:
     ICT: bootstrap_attr_stack at attr.c:841:0
-  Occurrences: 6
+  Occurrences: 2
 
 Uncategorised
   After events:
@@ -17844,17 +17867,17 @@ Uncategorised
 Uncategorised
   After events:
     ICT: cache_name_stage_compare at read-cache.c:558:0
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
     ICT: ce_compare_data at read-cache.c:239:0
-  Occurrences: 3
+  Occurrences: 1
 
 Uncategorised
   After events:
     CT: ce_modified_check_fs at read-cache.c:296:0
-  Occurrences: 3
+  Occurrences: 1
 
 Uncategorised
   After events:
@@ -17904,7 +17927,7 @@ Uncategorised
 Uncategorised
   After events:
     ICT: check_vector_add at attr.c:498:0
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
@@ -17914,7 +17937,7 @@ Uncategorised
 Uncategorised
   After events:
     ICT: cleanup_path at path.c:40:0
-  Occurrences: 6
+  Occurrences: 4
 
 Uncategorised
   After events:
@@ -17934,7 +17957,7 @@ Uncategorised
 Uncategorised
   After events:
     CT: collect_some_attrs at attr.c:1079:0
-  Occurrences: 6
+  Occurrences: 2
 
 Uncategorised
   After events:
@@ -17949,7 +17972,7 @@ Uncategorised
 Uncategorised
   After events:
     ICT: configset_iter at config.c:2222:0
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
@@ -17959,12 +17982,12 @@ Uncategorised
 Uncategorised
   After events:
     CT: convert_attrs at convert.c:1300:0
-  Occurrences: 6
+  Occurrences: 2
 
 Uncategorised
   After events:
     CT: convert_to_git at convert.c:1408:0
-  Occurrences: 3
+  Occurrences: 1
 
 Uncategorised
   After events:
@@ -17994,7 +18017,7 @@ Uncategorised
 Uncategorised
   After events:
     CT: crlf_to_git at convert.c:492:0
-  Occurrences: 3
+  Occurrences: 1
 
 Uncategorised
   After events:
@@ -18009,7 +18032,7 @@ Uncategorised
 Uncategorised
   After events:
     ICT: determine_macros at attr.c:1054:0
-  Occurrences: 6
+  Occurrences: 2
 
 Uncategorised
   After events:
@@ -18039,7 +18062,7 @@ Uncategorised
 Uncategorised
   After events:
     ICT: dir_prefix at path.c:72:0
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
@@ -18059,7 +18082,7 @@ Uncategorised
 Uncategorised
   After events:
     CT: do_git_path at path.c:432:0
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
@@ -18074,7 +18097,7 @@ Uncategorised
 Uncategorised
   After events:
     CT: encode_to_git at convert.c:374:0
-  Occurrences: 3
+  Occurrences: 1
 
 Uncategorised
   After events:
@@ -18119,7 +18142,7 @@ Uncategorised
 Uncategorised
   After events:
     ICT: fill at attr.c:1018:0
-  Occurrences: 6
+  Occurrences: 2
 
 Uncategorised
   After events:
@@ -18174,7 +18197,7 @@ Uncategorised
 Uncategorised
   After events:
     ICT: format_object_header_literally at object-file.c:1058:0
-  Occurrences: 3
+  Occurrences: 1
 
 Uncategorised
   After events:
@@ -18199,7 +18222,7 @@ Uncategorised
 Uncategorised
   After events:
     ICT: get_conv_flags at object-file.c:304:0
-  Occurrences: 3
+  Occurrences: 1
 
 Uncategorised
   After events:
@@ -18219,7 +18242,7 @@ Uncategorised
 Uncategorised
   After events:
     ICT: get_home_gitattributes at attr.c:814:0
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
@@ -18249,7 +18272,7 @@ Uncategorised
 Uncategorised
   After events:
     ICT: get_unit_factor at config.c:1145:0
-  Occurrences: 5
+  Occurrences: 4
 
 Uncategorised
   After events:
@@ -18264,42 +18287,42 @@ Uncategorised
 Uncategorised
   After events:
     CT: git_SHA1DCFinal at sha1dc_git.c:18:0
-  Occurrences: 3
+  Occurrences: 1
 
 Uncategorised
   After events:
     CT: git_SHA1DCUpdate at sha1dc_git.c:29:0
-  Occurrences: 6
+  Occurrences: 2
 
 Uncategorised
   After events:
     ICT: git_attr at attr.c:234:0
-  Occurrences: 18
+  Occurrences: 12
 
 Uncategorised
   After events:
     ICT: git_attr_internal at attr.c:209:0
-  Occurrences: 30
+  Occurrences: 20
 
 Uncategorised
   After events:
     ICT: git_attr_system at attr.c:822:0
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
     CT: git_check_attr at attr.c:1108:0
-  Occurrences: 6
+  Occurrences: 2
 
 Uncategorised
   After events:
     CT: git_config at config.c:2673:0
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
     ICT: git_config_bool at config.c:1447:0
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
@@ -18309,7 +18332,7 @@ Uncategorised
 Uncategorised
   After events:
     CT: git_config_check_init at config.c:2549:0
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
@@ -18334,7 +18357,7 @@ Uncategorised
 Uncategorised
   After events:
     ICT: git_is_dir_sep at git-compat-util.h:446:0
-  Occurrences: 437
+  Occurrences: 433
 
 Uncategorised
   After events:
@@ -18344,22 +18367,22 @@ Uncategorised
 Uncategorised
   After events:
     CT: git_open_cloexec at object-file.c:1124:0
-  Occurrences: 3
+  Occurrences: 1
 
 Uncategorised
   After events:
     ICT: git_parse_int at config.c:1232:0
-  Occurrences: 559
+  Occurrences: 558
 
 Uncategorised
   After events:
     ICT: git_parse_maybe_bool at config.c:1426:0
-  Occurrences: 5
+  Occurrences: 4
 
 Uncategorised
   After events:
     CT: git_parse_maybe_bool_text at config.c:1336:0
-  Occurrences: 5
+  Occurrences: 4
 
 Uncategorised
   After events:
@@ -18369,37 +18392,37 @@ Uncategorised
 Uncategorised
   After events:
     ICT: git_path_check_convert at convert.c:1276:0
-  Occurrences: 6
+  Occurrences: 2
 
 Uncategorised
   After events:
     ICT: git_path_check_crlf at convert.c:1246:0
-  Occurrences: 12
+  Occurrences: 4
 
 Uncategorised
   After events:
     ICT: git_path_check_encoding at convert.c:1228:0
-  Occurrences: 6
+  Occurrences: 2
 
 Uncategorised
   After events:
     ICT: git_path_check_eol at convert.c:1263:0
-  Occurrences: 6
+  Occurrences: 2
 
 Uncategorised
   After events:
     ICT: git_path_check_ident at convert.c:1289:0
-  Occurrences: 6
+  Occurrences: 2
 
 Uncategorised
   After events:
     ICT: git_path_info_attributes at attr.c:827:0
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
     CT: git_pathdup at path.c:494:0
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
@@ -18414,37 +18437,37 @@ Uncategorised
 Uncategorised
   After events:
     CT: handle_attr_line at attr.c:657:0
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
     CT: ident_to_git at convert.c:1103:0
-  Occurrences: 3
+  Occurrences: 1
 
 Uncategorised
   After events:
     ICT: index_core at object-file.c:2427:0
-  Occurrences: 3
+  Occurrences: 1
 
 Uncategorised
   After events:
     CT: index_fd at object-file.c:2481:0
-  Occurrences: 3
+  Occurrences: 1
 
 Uncategorised
   After events:
     CT: index_mem at object-file.c:2347:0
-  Occurrences: 3
+  Occurrences: 1
 
 Uncategorised
   After events:
     ICT: index_name_pos at read-cache.c:618:0
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
     CT: index_name_stage_pos at read-cache.c:577:0
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
@@ -18454,7 +18477,7 @@ Uncategorised
 Uncategorised
   After events:
     CT: init_sparse_checkout_patterns at dir.c:1437:0
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
@@ -18479,7 +18502,7 @@ Uncategorised
 Uncategorised
   After events:
     ICT: is_dir_file at path.c:80:0
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
@@ -18539,12 +18562,12 @@ Uncategorised
 Uncategorised
   After events:
     ICT: memory_limit_check at wrapper.c:17:0
-  Occurrences: 939
+  Occurrences: 903
 
 Uncategorised
   After events:
     CT: mkpathdup at path.c:504:0
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
@@ -18554,7 +18577,7 @@ Uncategorised
 Uncategorised
   After events:
     ICT: name_compare at read-cache.c:545:0
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
@@ -18569,7 +18592,7 @@ Uncategorised
 Uncategorised
   After events:
     CT: open_nofollow at wrapper.c:751:0
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
@@ -18584,17 +18607,17 @@ Uncategorised
 Uncategorised
   After events:
     CT: parse_attr at attr.c:290:0
-  Occurrences: 18
+  Occurrences: 12
 
 Uncategorised
   After events:
     ICT: parse_attr_line at attr.c:333:0
-  Occurrences: 18
+  Occurrences: 17
 
 Uncategorised
   After events:
     CT: parse_config_key at config.c:3737:0
-  Occurrences: 12
+  Occurrences: 8
 
 Uncategorised
   After events:
@@ -18619,12 +18642,12 @@ Uncategorised
 Uncategorised
   After events:
     ICT: path_in_cone_mode_sparse_checkout at dir.c:1500:0
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
     ICT: path_in_sparse_checkout_1 at dir.c:1453:0
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
@@ -18634,7 +18657,7 @@ Uncategorised
 Uncategorised
   After events:
     ICT: prepare_attr_stack at attr.c:880:0
-  Occurrences: 6
+  Occurrences: 2
 
 Uncategorised
   After events:
@@ -18644,7 +18667,7 @@ Uncategorised
 Uncategorised
   After events:
     ICT: push_stack at attr.c:829:0
-  Occurrences: 18
+  Occurrences: 10
 
 Uncategorised
   After events:
@@ -18654,32 +18677,32 @@ Uncategorised
 Uncategorised
   After events:
     CT: read_attr at attr.c:778:0
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
     ICT: read_attr_from_array at attr.c:667:0
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
     CT: read_attr_from_file at attr.c:703:0
-  Occurrences: 9
+  Occurrences: 6
 
 Uncategorised
   After events:
     CT: read_attr_from_index at attr.c:735:0
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
     CT: read_blob_data_from_index at read-cache.c:3517:0
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
     CT: read_convert_config at convert.c:1012:0
-  Occurrences: 12
+  Occurrences: 8
 
 Uncategorised
   After events:
@@ -18694,7 +18717,7 @@ Uncategorised
 Uncategorised
   After events:
     CT: read_in_full at wrapper.c:283:0
-  Occurrences: 7
+  Occurrences: 5
 
 Uncategorised
   After events:
@@ -18729,7 +18752,7 @@ Uncategorised
 Uncategorised
   After events:
     ICT: repo_config at config.c:2562:0
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
@@ -18769,7 +18792,7 @@ Uncategorised
 Uncategorised
   After events:
     ICT: sane_qsort at git-compat-util.h:1305:0
-  Occurrences: 36
+  Occurrences: 39
 
 Uncategorised
   After events:
@@ -18779,12 +18802,12 @@ Uncategorised
 Uncategorised
   After events:
     CT: sha1_compression_states at sha1.c:386:0
-  Occurrences: 3
+  Occurrences: 1
 
 Uncategorised
   After events:
     CT: sha1_process at sha1.c:1716:0
-  Occurrences: 3
+  Occurrences: 1
 
 Uncategorised
   After events:
@@ -18793,7 +18816,7 @@ Uncategorised
 
 Uncategorised
   After events:
-    ICT: sha1recompress_fast_65 at sha1.c:1240:0
+    ICT: sha1recompress_fast_58 at sha1.c:1212:0
   Occurrences: 2
 
 Uncategorised
@@ -18814,27 +18837,27 @@ Uncategorised
 Uncategorised
   After events:
     ICT: skip_prefix at git-compat-util.h:674:0
-  Occurrences: 707
+  Occurrences: 701
 
 Uncategorised
   After events:
     ICT: st_add at git-compat-util.h:980:0
-  Occurrences: 54
+  Occurrences: 36
 
 Uncategorised
   After events:
     ICT: st_mult at git-compat-util.h:990:0
-  Occurrences: 1513
+  Occurrences: 1510
 
 Uncategorised
   After events:
     CT: starts_with at strbuf.c:10:8
-  Occurrences: 5
+  Occurrences: 4
 
 Uncategorised
   After events:
     ICT: strbuf_add at strbuf.c:296:0
-  Occurrences: 1130
+  Occurrences: 1126
 
 Uncategorised
   After events:
@@ -18849,7 +18872,7 @@ Uncategorised
 Uncategorised
   After events:
     ICT: strbuf_addch at strbuf.h:228:0
-  Occurrences: 4177
+  Occurrences: 4176
 
 Uncategorised
   After events:
@@ -18859,17 +18882,17 @@ Uncategorised
 Uncategorised
   After events:
     ICT: strbuf_addstr at strbuf.h:303:0
-  Occurrences: 38
+  Occurrences: 34
 
 Uncategorised
   After events:
     ICT: strbuf_avail at strbuf.h:139:0
-  Occurrences: 10690
+  Occurrences: 10684
 
 Uncategorised
   After events:
     ICT: strbuf_cleanup_path at path.c:50:0
-  Occurrences: 6
+  Occurrences: 4
 
 Uncategorised
   After events:
@@ -18879,7 +18902,7 @@ Uncategorised
 Uncategorised
   After events:
     ICT: strbuf_detach at strbuf.c:70:0
-  Occurrences: 40
+  Occurrences: 38
 
 Uncategorised
   After events:
@@ -18889,12 +18912,12 @@ Uncategorised
 Uncategorised
   After events:
     ICT: strbuf_grow at strbuf.c:91:0
-  Occurrences: 12535
+  Occurrences: 12527
 
 Uncategorised
   After events:
     ICT: strbuf_init at strbuf.c:54:0
-  Occurrences: 82
+  Occurrences: 76
 
 Uncategorised
   After events:
@@ -18929,7 +18952,7 @@ Uncategorised
 Uncategorised
   After events:
     CT: strbuf_release at strbuf.c:63:0
-  Occurrences: 75
+  Occurrences: 70
 
 Uncategorised
   After events:
@@ -18939,7 +18962,7 @@ Uncategorised
 Uncategorised
   After events:
     ICT: strbuf_setlen at strbuf.h:160:0
-  Occurrences: 1337
+  Occurrences: 1331
 
 Uncategorised
   After events:
@@ -18954,12 +18977,12 @@ Uncategorised
 Uncategorised
   After events:
     CT: strbuf_vaddf at strbuf.c:390:0
-  Occurrences: 44
+  Occurrences: 42
 
 Uncategorised
   After events:
     ICT: strbuf_worktree_gitdir at path.c:417:0
-  Occurrences: 745
+  Occurrences: 744
 
 Uncategorised
   After events:
@@ -19019,12 +19042,12 @@ Uncategorised
 Uncategorised
   After events:
     CT: type_name at object.c:33:11
-  Occurrences: 3
+  Occurrences: 1
 
 Uncategorised
   After events:
     CT: ubc_check at ubc_check.c:105:0
-  Occurrences: 3
+  Occurrences: 1
 
 Uncategorised
   After events:
@@ -19059,27 +19082,27 @@ Uncategorised
 Uncategorised
   After events:
     CT: warn_on_fopen_errors at wrapper.c:398:0
-  Occurrences: 9
+  Occurrences: 6
 
 Uncategorised
   After events:
     CT: would_convert_to_git_filter_fd at convert.c:1361:0
-  Occurrences: 3
+  Occurrences: 1
 
 Uncategorised
   After events:
     ICT: write_object_file_prepare_literally at object-file.c:1813:0
-  Occurrences: 3
+  Occurrences: 1
 
 Uncategorised
   After events:
     CT: xdg_config_home at path.c:1541:0
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
     CT: xdg_config_home_for at path.c:1524:0
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
@@ -19104,22 +19127,22 @@ Uncategorised
 Uncategorised
   After events:
     ICT: xread at wrapper.c:224:0
-  Occurrences: 11
+  Occurrences: 9
 
 Uncategorised
   After events:
     ICT: xsize_t at git-compat-util.h:1172:0
-  Occurrences: 3
+  Occurrences: 1
 
 Uncategorised
   After events:
     CT: xsnprintf at wrapper.c:680:0
-  Occurrences: 3
+  Occurrences: 1
 
 Uncategorised
   After events:
     CT: xstrdup at wrapper.c:38:0
-  Occurrences: 39
+  Occurrences: 38
 
 Uncategorised
   After events:
@@ -19139,12 +19162,12 @@ Uncategorised
 Uncategorised
   After events:
     RF: Jump to external code for __errno_location
-  Occurrences: 16
+  Occurrences: 12
 
 Uncategorised
   After events:
     RF: Jump to external code for __isoc23_strtoimax
-  Occurrences: 5
+  Occurrences: 4
 
 Uncategorised
   After events:
@@ -19159,7 +19182,7 @@ Uncategorised
 Uncategorised
   After events:
     RF: Jump to external code for bcmp
-  Occurrences: 3
+  Occurrences: 1
 
 Uncategorised
   After events:
@@ -19169,7 +19192,7 @@ Uncategorised
 Uncategorised
   After events:
     RF: Jump to external code for close
-  Occurrences: 7
+  Occurrences: 5
 
 Uncategorised
   After events:
@@ -19209,7 +19232,7 @@ Uncategorised
 Uncategorised
   After events:
     RF: Jump to external code for free
-  Occurrences: 102
+  Occurrences: 96
 
 Uncategorised
   After events:
@@ -19239,12 +19262,12 @@ Uncategorised
 Uncategorised
   After events:
     RF: Jump to external code for memcmp
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
     RF: Jump to external code for memcpy
-  Occurrences: 1240
+  Occurrences: 1221
 
 Uncategorised
   After events:
@@ -19259,7 +19282,7 @@ Uncategorised
 Uncategorised
   After events:
     RF: Jump to external code for open64
-  Occurrences: 16
+  Occurrences: 11
 
 Uncategorised
   After events:
@@ -19269,7 +19292,7 @@ Uncategorised
 Uncategorised
   After events:
     RF: Jump to external code for read
-  Occurrences: 11
+  Occurrences: 9
 
 Uncategorised
   After events:
@@ -19279,72 +19302,72 @@ Uncategorised
 Uncategorised
   After events:
     RF: Jump to external code for strcasecmp
-  Occurrences: 26
+  Occurrences: 20
 
 Uncategorised
   After events:
     RF: Jump to external code for strchr
-  Occurrences: 18
+  Occurrences: 12
 
 Uncategorised
   After events:
     RF: Jump to external code for strcmp
-  Occurrences: 49
+  Occurrences: 46
 
 Uncategorised
   After events:
     RF: Jump to external code for strcspn
-  Occurrences: 24
+  Occurrences: 16
 
 Uncategorised
   After events:
     RF: Jump to external code for strdup
-  Occurrences: 39
+  Occurrences: 38
 
 Uncategorised
   After events:
     RF: Jump to external code for strlen
-  Occurrences: 811
+  Occurrences: 800
 
 Uncategorised
   After events:
     RF: Jump to external code for strncmp
-  Occurrences: 180
+  Occurrences: 169
 
 Uncategorised
   After events:
     RF: Jump to external code for strspn
-  Occurrences: 27
+  Occurrences: 18
 
 Uncategorised
   After events:
     RF: Jump to external code for vsnprintf
-  Occurrences: 72
+  Occurrences: 67
 
 Uncategorised
   After events:
     RF: SHA1DCFinal at sha1.c:1906:2
-  Occurrences: 3
+  Occurrences: 1
 
 Uncategorised
   After events:
     RF: SHA1DCInit at sha1.c:1781:1
-  Occurrences: 3
+  Occurrences: 1
 
 Uncategorised
   After events:
     RF: SHA1DCUpdate at sha1.c:1858:1
-  Occurrences: 6
+  Occurrences: 2
 
 Uncategorised
   After events:
     RF: apply_filter at convert.c:1009:1
-  Occurrences: 3
+  Occurrences: 1
 
 Uncategorised
   After events:
     RF: attr_check_initl at attr.c:588:2
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
@@ -19354,7 +19377,7 @@ Uncategorised
 Uncategorised
   After events:
     RF: ce_modified_check_fs at read-cache.c:314:1
-  Occurrences: 3
+  Occurrences: 1
 
 Uncategorised
   After events:
@@ -19374,7 +19397,7 @@ Uncategorised
 Uncategorised
   After events:
     RF: collect_some_attrs at attr.c:1103:1
-  Occurrences: 6
+  Occurrences: 2
 
 Uncategorised
   After events:
@@ -19389,17 +19412,17 @@ Uncategorised
 Uncategorised
   After events:
     RF: convert_attrs at convert.c:1341:1
-  Occurrences: 6
+  Occurrences: 2
 
 Uncategorised
   After events:
     RF: convert_to_git at convert.c:1436:2
-  Occurrences: 3
+  Occurrences: 1
 
 Uncategorised
   After events:
     RF: crlf_to_git at convert.c:575:1
-  Occurrences: 3
+  Occurrences: 1
 
 Uncategorised
   After events:
@@ -19419,7 +19442,7 @@ Uncategorised
 Uncategorised
   After events:
     RF: do_git_path at path.c:442:1
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
@@ -19429,7 +19452,7 @@ Uncategorised
 Uncategorised
   After events:
     RF: encode_to_git at convert.c:461:1
-  Occurrences: 3
+  Occurrences: 1
 
 Uncategorised
   After events:
@@ -19449,27 +19472,27 @@ Uncategorised
 Uncategorised
   After events:
     RF: git_SHA1DCFinal at sha1dc_git.c:20:3
-  Occurrences: 3
+  Occurrences: 1
 
 Uncategorised
   After events:
     RF: git_SHA1DCUpdate at sha1dc_git.c:38:1
-  Occurrences: 6
+  Occurrences: 2
 
 Uncategorised
   After events:
     RF: git_attr_internal at attr.c:232:1
-  Occurrences: 30
+  Occurrences: 20
 
 Uncategorised
   After events:
     RF: git_check_attr at attr.c:1120:1
-  Occurrences: 6
+  Occurrences: 2
 
 Uncategorised
   After events:
     RF: git_config at config.c:2675:1
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
@@ -19479,7 +19502,7 @@ Uncategorised
 Uncategorised
   After events:
     RF: git_config_check_init at config.c:2553:1
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
@@ -19504,47 +19527,47 @@ Uncategorised
 Uncategorised
   After events:
     RF: git_open_cloexec at object-file.c:1147:2
-  Occurrences: 3
+  Occurrences: 1
 
 Uncategorised
   After events:
     RF: git_parse_maybe_bool_text at config.c:1350:1
-  Occurrences: 5
+  Occurrences: 4
 
 Uncategorised
   After events:
     RF: git_pathdup at path.c:500:2
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
     RF: handle_attr_line at attr.c:665:1
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
     RF: ident_to_git at convert.c:1143:1
-  Occurrences: 3
+  Occurrences: 1
 
 Uncategorised
   After events:
     RF: index_fd at object-file.c:2500:2
-  Occurrences: 3
+  Occurrences: 1
 
 Uncategorised
   After events:
     RF: index_mem at object-file.c:2381:2
-  Occurrences: 3
+  Occurrences: 1
 
 Uncategorised
   After events:
     RF: index_name_stage_pos at read-cache.c:616:1
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
     RF: init_sparse_checkout_patterns at dir.c:1451:1
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
@@ -19554,12 +19577,12 @@ Uncategorised
 Uncategorised
   After events:
     RF: mkpathdup at path.c:511:2
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
     RF: open_nofollow at wrapper.c:753:2
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
@@ -19569,42 +19592,42 @@ Uncategorised
 Uncategorised
   After events:
     RF: parse_attr at attr.c:331:1
-  Occurrences: 18
+  Occurrences: 12
 
 Uncategorised
   After events:
     RF: parse_config_key at config.c:3767:1
-  Occurrences: 12
+  Occurrences: 8
 
 Uncategorised
   After events:
     RF: path_in_cone_mode_sparse_checkout at dir.c:1503:2
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
     RF: read_attr at attr.c:803:2
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
     RF: read_attr_from_file at attr.c:730:1
-  Occurrences: 9
+  Occurrences: 6
 
 Uncategorised
   After events:
     RF: read_attr_from_index at attr.c:774:1
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
     RF: read_blob_data_from_index at read-cache.c:3548:1
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
     RF: read_convert_config at convert.c:1057:1
-  Occurrences: 12
+  Occurrences: 8
 
 Uncategorised
   After events:
@@ -19619,7 +19642,7 @@ Uncategorised
 Uncategorised
   After events:
     RF: read_in_full at wrapper.c:299:1
-  Occurrences: 7
+  Occurrences: 5
 
 Uncategorised
   After events:
@@ -19654,22 +19677,22 @@ Uncategorised
 Uncategorised
   After events:
     RF: sha1_compression_states at sha1.c:800:1
-  Occurrences: 3
+  Occurrences: 1
 
 Uncategorised
   After events:
     RF: sha1_process at sha1.c:1765:1
-  Occurrences: 3
+  Occurrences: 1
 
 Uncategorised
   After events:
     RF: starts_with at strbuf.c:14:1
-  Occurrences: 5
+  Occurrences: 4
 
 Uncategorised
   After events:
     RF: strbuf_add at strbuf.c:301:1
-  Occurrences: 1130
+  Occurrences: 1126
 
 Uncategorised
   After events:
@@ -19689,7 +19712,7 @@ Uncategorised
 Uncategorised
   After events:
     RF: strbuf_detach at strbuf.c:78:2
-  Occurrences: 34
+  Occurrences: 32
 
 Uncategorised
   After events:
@@ -19724,7 +19747,7 @@ Uncategorised
 Uncategorised
   After events:
     RF: strbuf_release at strbuf.c:68:1
-  Occurrences: 75
+  Occurrences: 70
 
 Uncategorised
   After events:
@@ -19739,7 +19762,7 @@ Uncategorised
 Uncategorised
   After events:
     RF: strbuf_vaddf at strbuf.c:408:1
-  Occurrences: 44
+  Occurrences: 42
 
 Uncategorised
   After events:
@@ -19774,12 +19797,12 @@ Uncategorised
 Uncategorised
   After events:
     RF: type_name at object.c:36:1
-  Occurrences: 3
+  Occurrences: 1
 
 Uncategorised
   After events:
     RF: ubc_check at ubc_check.c:368:1
-  Occurrences: 3
+  Occurrences: 1
 
 Uncategorised
   After events:
@@ -19799,22 +19822,22 @@ Uncategorised
 Uncategorised
   After events:
     RF: warn_on_fopen_errors at wrapper.c:405:1
-  Occurrences: 9
+  Occurrences: 6
 
 Uncategorised
   After events:
     RF: would_convert_to_git_filter_fd at convert.c:1377:1
-  Occurrences: 3
+  Occurrences: 1
 
 Uncategorised
   After events:
     RF: xdg_config_home at path.c:1542:2
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
     RF: xdg_config_home_for at path.c:1538:1
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
@@ -19824,12 +19847,12 @@ Uncategorised
 Uncategorised
   After events:
     RF: xsnprintf at wrapper.c:692:2
-  Occurrences: 3
+  Occurrences: 1
 
 Uncategorised
   After events:
     RF: xstrdup at wrapper.c:42:2
-  Occurrences: 39
+  Occurrences: 38
 
 Uncategorised
   After events:
@@ -19969,7 +19992,7 @@ Uncategorised
     CT: read_convert_config at convert.c:1012:0
     CF: read_convert_config at convert.c:1021:6
     [...18 more events...]
-  Occurrences: 3
+  Occurrences: 1
 
 Uncategorised
   Before events:
@@ -20246,6 +20269,11 @@ Uncategorised
 
 Uncategorised
   Before events:
+    CF: prepare_attr_stack at attr.c:902:2
+  Occurrences: 1
+
+Uncategorised
+  Before events:
     CF: quote_c_style_counted at quote.c:287:9
   Occurrences: 4
 
@@ -20261,7 +20289,7 @@ Uncategorised
 Uncategorised
   Before events:
     CF: read_directory_recursive at dir.c:2572:11
-  Occurrences: 1
+  Occurrences: 4
 
 Uncategorised
   Before events:
@@ -21463,6 +21491,21 @@ Uncategorised
 
 Uncategorised
   Before events:
+    CF: sort_ref_dir at ref-cache.c:241:2
+    CT: sane_qsort at git-compat-util.h:1307:0
+    CF: sane_qsort at git-compat-util.h:1309:3
+    CT: Jump to external code for qsort
+  Occurrences: 5
+
+Uncategorised
+  Before events:
+    CF: sort_ref_dir at ref-cache.c:246:15
+    CT: is_dup_ref at ref-cache.c:208:0
+    CF: is_dup_ref at ref-cache.c:209:6
+  Occurrences: 5
+
+Uncategorised
+  Before events:
     CF: strbuf_add_absolute_path at strbuf.c:899:7
     CT: is_absolute_path at cache.h:1275:0
     CF: is_absolute_path at cache.h:1276:9
@@ -21669,7 +21712,7 @@ Uncategorised
 Uncategorised
   Before events:
     CF: strbuf_vaddf at strbuf.c:394:7
-  Occurrences: 3387
+  Occurrences: 3388
 
 Uncategorised
   Before events:
@@ -21677,12 +21720,12 @@ Uncategorised
     CT: strbuf_grow at strbuf.c:92:0
     CF: strbuf_grow at strbuf.c:99:2
     CT: st_mult at git-compat-util.h:991:0
-  Occurrences: 3387
+  Occurrences: 3388
 
 Uncategorised
   Before events:
     CF: strbuf_vaddf at strbuf.c:401:12
-  Occurrences: 1635
+  Occurrences: 1636
 
 Uncategorised
   Before events:
@@ -21690,7 +21733,7 @@ Uncategorised
     CT: strbuf_grow at strbuf.c:92:0
     CF: strbuf_grow at strbuf.c:99:2
     CT: st_mult at git-compat-util.h:991:0
-  Occurrences: 1635
+  Occurrences: 1636
 
 Uncategorised
   Before events:
@@ -21775,7 +21818,7 @@ Uncategorised
 Uncategorised
   Before events:
     RF: cleanup_path at path.c:47:2
-  Occurrences: 1388
+  Occurrences: 1390
 
 Uncategorised
   Before events:
@@ -21935,7 +21978,7 @@ Uncategorised
 Uncategorised
   Before events:
     RF: git_attr at attr.c:236:2
-  Occurrences: 52
+  Occurrences: 58
 
 Uncategorised
   Before events:
@@ -22035,7 +22078,7 @@ Uncategorised
 Uncategorised
   Before events:
     RF: prepare_attr_stack at attr.c:972:1
-  Occurrences: 23
+  Occurrences: 25
 
 Uncategorised
   Before events:
@@ -22246,10 +22289,10 @@ Uncategorised
 ## Divergences with unique coordinates by type
 
 CoordinatesRemoved
-  Unique divergence coordinates: 238
+  Unique divergence coordinates: 239
 
 CoordinatesChangedSmall
-  Unique divergence coordinates: 1097
+  Unique divergence coordinates: 1099
 
 CoordinatesChangedLarge
   Unique divergence coordinates: 338
@@ -22258,18 +22301,18 @@ LibraryCallReplaced
   Unique divergence coordinates: 11
 
 LibraryCallRemoved
-  Unique divergence coordinates: 168
+  Unique divergence coordinates: 169
 
 ProgramCallRemoved
   Unique divergence coordinates: 74
 
 UnexpectedReturnAdded
-  Unique divergence coordinates: 326
+  Unique divergence coordinates: 325
 
 Uncategorised
-  Unique divergence coordinates: 1135
+  Unique divergence coordinates: 1138
 
 ## Summary
 
-3387 unique divergence coordinates
-1422461 divergence occurrences
+3393 unique divergence coordinates
+1421747 divergence occurrences
