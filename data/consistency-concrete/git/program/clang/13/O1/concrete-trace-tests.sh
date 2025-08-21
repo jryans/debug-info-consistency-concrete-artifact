@@ -67,6 +67,9 @@ trace_variant="default"
 trace_variant_opts="CON_TRACE_${trace_variant//-/_}_OPTS"
 echo "### Collecting trace variant \`${trace_variant}\`: ${!trace_variant_opts}"
 
+# Remove link to binary wrapper from past runs
+rm -f "${SCRIPT_DIR}/test-deps/bin-wrappers/git"
+
 # Setup `git` binary wrapper for this variant
 ln -s \
   "${SCRIPT_DIR}/test-deps/bin-wrappers/${trace_variant}/git" \
