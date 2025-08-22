@@ -4197,187 +4197,187 @@ ProgramCallRemoved
     RF: obj_read_lock at object-store.h:384:1
   Occurrences: 28
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: _ at gettext.h:0:0
   Occurrences: 6
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: base_ref_iterator_free at :0:0
   Occurrences: 33
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: bsearch at stdlib-bsearch.h:0:0
   Occurrences: 45
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: check_refname_component at refs.c:166:9
   Occurrences: 72
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: check_refname_component at refs.c:242:12
   Occurrences: 132
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: cmp_icase at dir.c:0:0
   Occurrences: 52
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: container_of_or_null_offset at :0:0
   Occurrences: 221
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: entry_equals at :0:0
   Occurrences: 215
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: find_entry_ptr at :0:0
   Occurrences: 898
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: get_next_component at abspath.c:0:0
   Occurrences: 174
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: getc_unlocked at stdio.h:0:0
   Occurrences: 536
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: getc_unlocked at stdio.h:68:10
   Occurrences: 14932
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: git_offset_1st_component at git-compat-util.h:0:0
   Occurrences: 52
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: handle_alias at git.c:0:0
   Occurrences: 60
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: hashmap_iter_init at hashmap.c:0:0
   Occurrences: 13
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: hex2chr at :0:0
   Occurrences: 180
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: interpret_empty_at at object-name.c:0:0
   Occurrences: 9
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: is_dup_ref at ref-cache.c:0:0
   Occurrences: 7
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: is_pseudoref_syntax at refs.c:0:0
   Occurrences: 12
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: move_array at git-compat-util.h:0:0
   Occurrences: 1
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: oidcpy at hash.h:0:0
   Occurrences: 2
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: parse_long_opt at parse-options.c:0:0
   Occurrences: 60
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: path_matches at attr.c:0:0
   Occurrences: 112
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: ref_entry_cmp_sslice at ref-cache.c:0:0
   Occurrences: 81
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: repo_config_clear at config.c:0:0
   Occurrences: 13
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: repo_read_object_file at object-store.h:253:9
   Occurrences: 2
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: sane_qsort at git-compat-util.h:0:0
   Occurrences: 7
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: st_add at :0:0
   Occurrences: 52
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: st_mult at git-compat-util.h:992:6
   Occurrences: 60
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: st_mult at git-compat-util.h:995:11
   Occurrences: 28
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: strbuf_addch at :0:0
   Occurrences: 745
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: strbuf_addstr at strbuf.h:0:0
   Occurrences: 255
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: strbuf_addstr at strbuf.h:305:2
   Occurrences: 22
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: strbuf_setlen at :0:0
   Occurrences: 44
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: strbuf_setlen at strbuf.h:168:3
   Occurrences: 183
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: tr2_tgt_want_builtins at trace2.c:0:0
   Occurrences: 60
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: xstrdup_or_null at git-compat-util.h:1169:28
   Occurrences: 6
@@ -6018,7 +6018,7 @@ LibraryCallRemoved
 ProgramCallRemoved
   Unique divergence coordinates: 66
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   Unique divergence coordinates: 37
 
 Uncategorised

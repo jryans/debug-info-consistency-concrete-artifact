@@ -13792,1172 +13792,1172 @@ ProgramCallRemoved
     RF: xdl_mmfile_size at xutils.c:70:2
   Occurrences: 4
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: SHA1DCUpdate at sha1.c:0:0
   Occurrences: 2
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: add_index_entry_with_check at read-cache.c:1414:13
   Occurrences: 7
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: add_pattern_list at dir.c:1190:10
   Occurrences: 4
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: adjust_git_path at path.c:0:0
   Occurrences: 3
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: all_attrs_init at attr.c:0:0
   Occurrences: 4
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: all_attrs_init at attr.c:169:16
   Occurrences: 29
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: alloc_table at hashmap.c:82:15
   Occurrences: 3
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: attr_check_alloc at attr.c:0:0
   Occurrences: 3
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: attr_hashmap_add at attr.c:0:0
   Occurrences: 27
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: attr_hashmap_get at attr.c:0:0
   Occurrences: 23
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: attr_hashmap_get at attr.c:96:16
   Occurrences: 7
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: attr_name_valid at attr.c:0:0
   Occurrences: 172
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: bootstrap_attr_stack at attr.c:0:0
   Occurrences: 4
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: bsearch at stdlib-bsearch.h:0:0
   Occurrences: 85
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: bucket at hashmap.c:107:19
   Occurrences: 57
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: cache_name_stage_compare at read-cache.c:0:0
   Occurrences: 3
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: ce_compare_data at read-cache.c:0:0
   Occurrences: 2
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: ce_write_entry at read-cache.c:0:0
   Occurrences: 11
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: chdir_notify_register at chdir-notify.c:0:0
   Occurrences: 36
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: check_bug_if_BUG at common-main.c:0:0
   Occurrences: 4
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: check_common at path.c:0:0
   Occurrences: 6
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: check_embedded_repo at add.c:0:0
   Occurrences: 4
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: check_symref at symbolic-ref.c:0:0
   Occurrences: 6
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: check_vector_add at attr.c:505:41
   Occurrences: 3
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: cleanup at strbuf.c:0:0
   Occurrences: 8
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: cleanup_path at path.c:0:0
   Occurrences: 6
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: clear_repository_format at setup.c:0:0
   Occurrences: 224
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: close_cached_dir at dir.c:0:0
   Occurrences: 4
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: cmp_icase at dir.c:0:0
   Occurrences: 108
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: configset_iter at config.c:0:0
   Occurrences: 3
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: consume_one at xdiff-interface.c:0:0
   Occurrences: 4
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: copy_array at git-compat-util.h:0:0
   Occurrences: 3
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: copy_fd at copy.c:0:0
   Occurrences: 709
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: cq_must_quote at quote.c:233:56
   Occurrences: 16
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: cq_must_quote at quote.c:233:9
   Occurrences: 16
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: create_default_files at init-db.c:0:0
   Occurrences: 1
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: create_default_files at init-db.c:0:2
   Occurrences: 60
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: create_file at entry.c:0:0
   Occurrences: 3
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: date_string at date.c:0:0
   Occurrences: 25
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: determine_macros at attr.c:0:0
   Occurrences: 4
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: determine_whence at commit.c:206:13
   Occurrences: 4
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: diff_filespec_load_driver at diff.c:2177:15
   Occurrences: 4
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: diff_line_prefix at diff.c:0:0
   Occurrences: 8
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: diff_resolve_rename_copy at diff.c:0:0
   Occurrences: 4
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: dir_prefix at path.c:0:0
   Occurrences: 3
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: do_config_from_file at config.c:0:0
   Occurrences: 2
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: do_event at config.c:0:0
   Occurrences: 26
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: emit_diff_symbol at diff.c:0:0
   Occurrences: 4
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: ensure_full_index at sparse-index.c:0:0
   Occurrences: 4
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: ensure_valid_ownership at setup.c:0:0
   Occurrences: 24
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: entry_equals at hashmap.c:0:0
   Occurrences: 15
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: expand_base_dir at repository.c:0:0
   Occurrences: 6
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: expand_namespace at environment.c:0:0
   Occurrences: 2
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: extended_entry_extract at tree-walk.c:0:0
   Occurrences: 3
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: external_diff at diff.c:515:17
   Occurrences: 8
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: files_downcast at files-backend.c:0:0
   Occurrences: 17
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: fill at attr.c:0:0
   Occurrences: 4
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: fill_mmfile at diff.c:0:0
   Occurrences: 4
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: find_cached_object at hash.h:0:10
   Occurrences: 70
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: find_commit_pos_in_graph at commit-graph.c:0:0
   Occurrences: 17
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: find_descendant_ref at refs.c:0:0
   Occurrences: 12
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: find_entry_ptr at hashmap.c:0:0
   Occurrences: 30
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: find_header_mem at commit.c:0:0
   Occurrences: 15
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: find_invalid_utf8 at commit.c:0:0
   Occurrences: 680
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: find_mem_pool at read-cache.c:0:0
   Occurrences: 3
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: find_mem_pool at read-cache.c:107:9
   Occurrences: 7
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: for_each_userdiff_driver at userdiff.c:0:0
   Occurrences: 200
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: for_each_userdiff_driver_list at userdiff.c:0:0
   Occurrences: 200
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: format_object_header_literally at object-file.c:0:71
   Occurrences: 2
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: format_subject at pretty.c:0:0
   Occurrences: 4
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: get_base_var at config.c:0:0
   Occurrences: 2
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: get_builtin at git.c:0:0
   Occurrences: 10257
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: get_common_dir at setup.c:0:0
   Occurrences: 8
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: get_common_dir at setup.c:301:10
   Occurrences: 2
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: get_conv_flags at object-file.c:0:0
   Occurrences: 2
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: get_describe_name at object-name.c:0:0
   Occurrences: 37
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: get_entry_index at string-list.c:0:0
   Occurrences: 69
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: get_entry_index at string-list.c:24:18
   Occurrences: 12
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: get_format_by_name at gpg-interface.c:0:0
   Occurrences: 34
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: get_hash_hex_algop at hex.c:56:11
   Occurrences: 87
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: get_home_gitattributes at attr.c:819:9
   Occurrences: 3
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: get_loose_ref_cache at files-backend.c:0:0
   Occurrences: 17
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: get_next_char at config.c:0:0
   Occurrences: 308
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: get_next_char at config.c:807:13
   Occurrences: 10
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: get_next_char at config.c:810:13
   Occurrences: 2
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: get_next_component at abspath.c:0:0
   Occurrences: 36
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: get_one_line at pretty.c:0:0
   Occurrences: 587
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: get_root_part at abspath.c:0:0
   Occurrences: 6
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: get_unit_factor at config.c:0:0
   Occurrences: 5
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: get_value at config.c:0:0
   Occurrences: 19126
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: getc_unlocked at stdio.h:0:0
   Occurrences: 1241
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: getc_unlocked at stdio.h:68:10
   Occurrences: 41156
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: getenv_safe at environment.c:0:0
   Occurrences: 10
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: git_attr at attr.c:0:0
   Occurrences: 18
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: git_attr_system at attr.c:824:9
   Occurrences: 3
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: git_config_bool at config.c:0:0
   Occurrences: 3
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: git_is_dir_sep at git-compat-util.h:448:11
   Occurrences: 437
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: git_offset_1st_component at git-compat-util.h:0:0
   Occurrences: 785
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: git_offset_1st_component at git-compat-util.h:457:20
   Occurrences: 6
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: git_parse_int at config.c:1235:6
   Occurrences: 554
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: git_parse_int at config.c:1235:7
   Occurrences: 5
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: git_parse_maybe_bool at config.c:0:0
   Occurrences: 2
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: git_parse_maybe_bool at config.c:1432:11
   Occurrences: 3
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: git_parse_source at config.c:0:0
   Occurrences: 2
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: git_path_check_convert at convert.c:0:0
   Occurrences: 4
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: git_path_check_crlf at convert.c:0:0
   Occurrences: 8
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: git_path_check_encoding at convert.c:0:0
   Occurrences: 4
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: git_path_check_eol at convert.c:0:0
   Occurrences: 4
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: git_path_check_ident at convert.c:1293:11
   Occurrences: 4
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: git_path_info_attributes at attr.c:827:8
   Occurrences: 3
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: git_system_config at config.c:0:0
   Occurrences: 433
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: handle_alias at git.c:374:5
   Occurrences: 1
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: handle_alias at git.c:415:8
   Occurrences: 3
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: hash_object_body at object-file.c:0:2
   Occurrences: 2
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: hash_object_file at object-file.c:0:0
   Occurrences: 2
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: hash_object_file_literally at object-file.c:0:0
   Occurrences: 2
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: hash_to_hex_algop at hex.c:0:0
   Occurrences: 37
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: hash_to_hex_algop at hex.c:153:8
   Occurrences: 18
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: hash_to_hex_algop_r at hex.c:0:0
   Occurrences: 14
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: hash_to_hex_algop_r at hex.c:132:11
   Occurrences: 4
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: hash_to_hex_algop_r at hex.c:139:7
   Occurrences: 37
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: hasheq_algop at hash.h:0:0
   Occurrences: 6
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: hashmap_entry_init at hashmap.h:318:10
   Occurrences: 57
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: hashmap_get_size at hashmap.h:327:15
   Occurrences: 58
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: hashmap_iter_first at hashmap.h:0:0
   Occurrences: 3
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: index_core at object-file.c:0:0
   Occurrences: 2
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: index_name_pos at read-cache.c:620:9
   Occurrences: 3
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: init_repository_format at setup.c:712:2
   Occurrences: 224
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: initialize_repository_version at init-db.c:0:0
   Occurrences: 60
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: is_absolute_path at cache.h:0:0
   Occurrences: 6
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: is_blank_line at pretty.c:0:0
   Occurrences: 7
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: is_builtin at git.c:0:0
   Occurrences: 556
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: is_builtin at git.c:648:10
   Occurrences: 4
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: is_dir_file at path.c:87:9
   Occurrences: 3
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: is_dup_ref at ref-cache.c:0:0
   Occurrences: 12
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: is_null_oid at hash.h:0:0
   Occurrences: 132
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: is_tempfile_active at tempfile.h:223:10
   Occurrences: 11
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: iskeychar at config.c:538:9
   Occurrences: 126
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: last_matching_pattern_from_lists at dir.c:0:0
   Occurrences: 8
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: list_add_tail at list.h:69:13
   Occurrences: 36
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: lock_raw_ref at files-backend.c:0:0
   Occurrences: 44
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: lock_ref_for_update at files-backend.c:0:0
   Occurrences: 22
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: log_tree_diff at log-tree.c:0:0
   Occurrences: 4
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: longest_path_match at symlinks.c:0:0
   Occurrences: 4
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: make_empty_cache_entry at read-cache.c:0:0
   Occurrences: 10
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: match_pathspec_item at dir.c:0:0
   Occurrences: 8
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: memory_limit_check at wrapper.c:0:0
   Occurrences: 936
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: move_array at git-compat-util.h:0:0
   Occurrences: 14
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: name_compare at read-cache.c:549:6
   Occurrences: 3
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: next_quote_pos at quote.c:0:0
   Occurrences: 4
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: next_quote_pos at quote.c:242:13
   Occurrences: 4
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: oideq at hash.h:0:0
   Occurrences: 80
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: oideq at hash.h:249:7
   Occurrences: 70
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: open_cached_dir at dir.c:0:0
   Occurrences: 8
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: packed_downcast at packed-backend.c:0:0
   Occurrences: 83
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: parse_attr_line at attr.c:0:0
   Occurrences: 18
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: parse_long_opt at parse-options.c:0:0
   Occurrences: 8
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: parse_sorting_atom at ref-filter.c:0:0
   Occurrences: 4
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: parse_value at config.c:0:0
   Occurrences: 26
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: path_exists at clone.c:0:0
   Occurrences: 1
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: path_in_sparse_checkout_1 at dir.c:0:0
   Occurrences: 3
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: pp_header at pretty.c:0:0
   Occurrences: 6
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: pp_header at pretty.c:0:4
   Occurrences: 3
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: prepare_attr_stack at attr.c:0:0
   Occurrences: 4
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: prepare_cmd at run-command.c:0:0
   Occurrences: 4
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: print_preparing_worktree_line at worktree.c:0:0
   Occurrences: 2
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: push_stack at attr.c:0:0
   Occurrences: 3
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: push_stack at attr.c:837:17
   Occurrences: 13
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: putchar at stdio.h:0:10
   Occurrences: 3
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: read_attr_from_array at attr.c:0:0
   Occurrences: 3
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: readdir_skip_dot_and_dotdot at dir.c:0:0
   Occurrences: 4
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: ref_entry_cmp_sslice at ref-cache.c:0:0
   Occurrences: 136
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: ref_entry_cmp_sslice at ref-cache.c:120:14
   Occurrences: 17
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: ref_store_transaction_begin at refs.c:1127:16
   Occurrences: 9
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: repo_config at config.c:0:0
   Occurrences: 3
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: repo_read_config at config.c:0:0
   Occurrences: 188
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: repo_read_config at config.c:2524:15
   Occurrences: 1
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: repo_set_commondir at repository.c:0:0
   Occurrences: 2
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: reset_lstat_cache at symlinks.c:0:0
   Occurrences: 3
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: run_argv at git.c:0:0
   Occurrences: 4
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: same_utf_encoding at utf8.c:0:0
   Occurrences: 24
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: same_utf_encoding at utf8.c:417:10
   Occurrences: 8
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: sane_case at git-compat-util.h:0:6
   Occurrences: 126
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: sane_qsort at git-compat-util.h:0:0
   Occurrences: 58
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: set_git_dir_1 at environment.c:0:0
   Occurrences: 2
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: simplify_away at dir.c:2111:7
   Occurrences: 4
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: skip_blank_lines at pretty.c:0:0
   Occurrences: 4
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: skip_iprefix at git-compat-util.h:0:0
   Occurrences: 16
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: skip_iprefix at git-compat-util.h:1261:8
   Occurrences: 16
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: skip_prefix at git-compat-util.h:0:0
   Occurrences: 230
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: skip_prefix at git-compat-util.h:678:8
   Occurrences: 478
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: st_add at git-compat-util.h:0:0
   Occurrences: 27
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: st_add at git-compat-util.h:985:11
   Occurrences: 27
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: st_mult at git-compat-util.h:0:0
   Occurrences: 3
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: st_mult at git-compat-util.h:995:11
   Occurrences: 1510
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: strbuf_addch at strbuf.h:0:0
   Occurrences: 1998
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: strbuf_addch at strbuf.h:232:21
   Occurrences: 108
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: strbuf_addch at strbuf.h:233:19
   Occurrences: 2071
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: strbuf_addstr at strbuf.h:0:0
   Occurrences: 32
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: strbuf_addstr at strbuf.h:0:2
   Occurrences: 4
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: strbuf_avail at strbuf.h:0:0
   Occurrences: 72
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: strbuf_avail at strbuf.h:141:41
   Occurrences: 74
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: strbuf_avail at strbuf.h:141:9
   Occurrences: 10544
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: strbuf_cleanup_path at path.c:0:0
   Occurrences: 6
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: strbuf_complete at strbuf.h:0:0
   Occurrences: 2
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: strbuf_detach at strbuf.c:74:12
   Occurrences: 6
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: strbuf_grow at strbuf.c:0:0
   Occurrences: 6705
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: strbuf_grow at strbuf.c:101:14
   Occurrences: 721
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: strbuf_grow at strbuf.c:99:2
   Occurrences: 5107
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: strbuf_init at strbuf.c:57:2
   Occurrences: 80
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: strbuf_realpath at abspath.c:0:0
   Occurrences: 2
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: strbuf_setlen at strbuf.h:0:0
   Occurrences: 1331
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: strbuf_setlen at strbuf.h:166:16
   Occurrences: 4
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: strbuf_strip_suffix at strbuf.h:0:0
   Occurrences: 58
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: strbuf_worktree_gitdir at path.c:0:0
   Occurrences: 3
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: strbuf_worktree_gitdir at path.c:421:7
   Occurrences: 742
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: strip_last_component at abspath.c:0:0
   Occurrences: 4
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: strip_suffix_mem at git-compat-util.h:0:0
   Occurrences: 54
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: strip_suffix_mem at git-compat-util.h:734:6
   Occurrences: 9
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: strip_suffix_mem at git-compat-util.h:736:7
   Occurrences: 11
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: strvec_init at strvec.c:10:2
   Occurrences: 2
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: strvec_push_nodup at strvec.c:20:22
   Occurrences: 2
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: traverse_trees_recursive at unpack-trees.c:0:0
   Occurrences: 3
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: userdiff_find_by_namelen at userdiff.c:0:0
   Occurrences: 200
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: valid_cached_dir at dir.c:2380:7
   Occurrences: 8
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: verify_utf8 at commit.c:0:0
   Occurrences: 4
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: write_object_file_prepare_literally at object-file.c:0:0
   Occurrences: 2
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: xdl_init_classifier at xprepare.c:95:12
   Occurrences: 4
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: xdl_optimize_ctxs at xprepare.c:0:0
   Occurrences: 4
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: xdl_trim_ends at xprepare.c:446:13
   Occurrences: 4
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: xread at wrapper.c:0:0
   Occurrences: 10
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: xsize_t at git-compat-util.h:0:0
   Occurrences: 2
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: xstrdup_or_null at git-compat-util.h:0:0
   Occurrences: 2
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   After events:
     IRF: xstrvfmt at strbuf.c:0:0
   Occurrences: 6
@@ -21601,7 +21601,7 @@ LibraryCallRemoved
 ProgramCallRemoved
   Unique divergence coordinates: 74
 
-UnexpectedReturnAdded
+InlinedReturnAdded
   Unique divergence coordinates: 234
 
 Uncategorised
