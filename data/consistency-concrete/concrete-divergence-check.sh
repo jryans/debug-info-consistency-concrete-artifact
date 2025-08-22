@@ -10,10 +10,9 @@ if [ "${PWD}" != "${SCRIPT_DIR}" ]; then
 fi
 
 variants=(
-  ffmpeg/program-no-inline/clang/13/O1
-  ffmpeg/program/clang/13/O1
-  git/program-no-inline/clang/13/O1
   git/program/clang/13/O1
+  git/program/clang/18/O1
+  git/program/gcc/14/O1
 )
 for variant in ${variants[*]}; do
   (cd $variant; time ./concrete-divergence-check.sh &)
