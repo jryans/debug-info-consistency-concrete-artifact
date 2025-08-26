@@ -57,7 +57,8 @@ done
 # Aggregate unique line counts across all tests by type
 mkdir -p divergences/summary/default/counts
 rm -f divergences/summary/default/counts/*
-for divergence_type_path in divergences/t0001-init/default/events/*; do
+# Use the last test we happened to run as an example of available events
+for divergence_type_path in divergences/${test}/default/events/*; do
   divergence_type=$(basename ${divergence_type_path})
   cat divergences/t*/default/events/${divergence_type} | \
     sort -u | \
