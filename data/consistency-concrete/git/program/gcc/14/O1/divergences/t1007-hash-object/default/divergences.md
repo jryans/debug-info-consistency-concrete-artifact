@@ -4237,6 +4237,126 @@ InlinedReentryAdded
     ICT: strbuf_setlen at :160:0
   Occurrences: 9
 
+InlinedNoiseAdded
+  After events:
+    ICT: check_refname_component at refs.c:161:0
+    IRF: check_refname_component at refs.c:166:9
+  Occurrences: 32
+
+InlinedNoiseAdded
+  After events:
+    ICT: check_refname_component at refs.c:161:0
+    IRF: check_refname_component at refs.c:242:12
+  Occurrences: 19
+
+InlinedNoiseAdded
+  After events:
+    ICT: cmp_icase at dir.c:3048:0
+    IRF: cmp_icase at dir.c:0:0
+  Occurrences: 46
+
+InlinedNoiseAdded
+  After events:
+    ICT: container_of_or_null_offset at :1579:0
+    IRF: container_of_or_null_offset at :0:0
+  Occurrences: 59
+
+InlinedNoiseAdded
+  After events:
+    ICT: getc_unlocked at stdio.h:66:0
+    IRF: getc_unlocked at stdio.h:0:0
+  Occurrences: 21
+
+InlinedNoiseAdded
+  After events:
+    ICT: getc_unlocked at stdio.h:66:0
+    IRF: getc_unlocked at stdio.h:68:10
+  Occurrences: 1965
+
+InlinedNoiseAdded
+  After events:
+    ICT: hashmap_iter_init at hashmap.c:287:0
+    IRF: hashmap_iter_init at hashmap.c:0:0
+  Occurrences: 13
+
+InlinedNoiseAdded
+  After events:
+    ICT: hex2chr at :1409:0
+    IRF: hex2chr at :0:0
+  Occurrences: 32
+
+InlinedNoiseAdded
+  After events:
+    ICT: is_pseudoref_syntax at refs.c:821:0
+    IRF: is_pseudoref_syntax at refs.c:0:0
+  Occurrences: 12
+
+InlinedNoiseAdded
+  After events:
+    ICT: path_matches at attr.c:974:0
+    IRF: path_matches at attr.c:0:0
+  Occurrences: 22
+
+InlinedNoiseAdded
+  After events:
+    ICT: repo_read_object_file at object-store.h:248:0
+    IRF: repo_read_object_file at object-store.h:253:9
+  Occurrences: 2
+
+InlinedNoiseAdded
+  After events:
+    ICT: st_add at :980:0
+    IRF: st_add at :0:0
+  Occurrences: 4
+
+InlinedNoiseAdded
+  After events:
+    ICT: st_mult at git-compat-util.h:990:0
+    IRF: st_mult at git-compat-util.h:992:6
+  Occurrences: 42
+
+InlinedNoiseAdded
+  After events:
+    ICT: st_mult at git-compat-util.h:990:0
+    IRF: st_mult at git-compat-util.h:995:11
+  Occurrences: 28
+
+InlinedNoiseAdded
+  After events:
+    ICT: strbuf_addch at :228:0
+    IRF: strbuf_addch at :0:0
+  Occurrences: 122
+
+InlinedNoiseAdded
+  After events:
+    ICT: strbuf_addstr at strbuf.h:303:0
+    IRF: strbuf_addstr at strbuf.h:0:0
+  Occurrences: 89
+
+InlinedNoiseAdded
+  After events:
+    ICT: strbuf_addstr at strbuf.h:303:0
+    IRF: strbuf_addstr at strbuf.h:305:2
+  Occurrences: 2
+
+InlinedNoiseAdded
+  After events:
+    ICT: strbuf_setlen at :160:0
+    IRF: strbuf_setlen at :0:0
+  Occurrences: 1
+
+InlinedNoiseAdded
+  After events:
+    ICT: strbuf_setlen at :160:0
+    IRF: strbuf_setlen at strbuf.h:168:3
+  Occurrences: 13
+
+InlinedNoiseAdded
+  After events:
+    ICT: xstrdup_or_null at git-compat-util.h:1167:0
+    IRF: xstrdup_or_null at git-compat-util.h:1169:28
+  Occurrences: 6
+
 InlinedReturnAdded
   After events:
     IRF: _ at gettext.h:0:0
@@ -5042,37 +5162,13 @@ Uncategorised
 
 Uncategorised
   After events:
-    ICT: check_refname_component at refs.c:161:0
-    IRF: check_refname_component at refs.c:166:9
-  Occurrences: 32
-
-Uncategorised
-  After events:
-    ICT: check_refname_component at refs.c:161:0
-    IRF: check_refname_component at refs.c:242:12
-  Occurrences: 19
-
-Uncategorised
-  After events:
     ICT: cmp_icase at dir.c:3048:0
   Occurrences: 6
 
 Uncategorised
   After events:
-    ICT: cmp_icase at dir.c:3048:0
-    IRF: cmp_icase at dir.c:0:0
-  Occurrences: 46
-
-Uncategorised
-  After events:
     ICT: container_of_or_null_offset at :1579:0
   Occurrences: 68
-
-Uncategorised
-  After events:
-    ICT: container_of_or_null_offset at :1579:0
-    IRF: container_of_or_null_offset at :0:0
-  Occurrences: 59
 
 Uncategorised
   After events:
@@ -5102,18 +5198,6 @@ Uncategorised
 
 Uncategorised
   After events:
-    ICT: getc_unlocked at stdio.h:66:0
-    IRF: getc_unlocked at stdio.h:0:0
-  Occurrences: 21
-
-Uncategorised
-  After events:
-    ICT: getc_unlocked at stdio.h:66:0
-    IRF: getc_unlocked at stdio.h:68:10
-  Occurrences: 1965
-
-Uncategorised
-  After events:
     ICT: git_config_clear at :2677:0
   Occurrences: 14
 
@@ -5140,12 +5224,6 @@ Uncategorised
 
 Uncategorised
   After events:
-    ICT: hex2chr at :1409:0
-    IRF: hex2chr at :0:0
-  Occurrences: 32
-
-Uncategorised
-  After events:
     ICT: hexval at :1400:0
   Occurrences: 346
 
@@ -5161,12 +5239,6 @@ Uncategorised
 
 Uncategorised
   After events:
-    ICT: is_pseudoref_syntax at refs.c:821:0
-    IRF: is_pseudoref_syntax at refs.c:0:0
-  Occurrences: 12
-
-Uncategorised
-  After events:
     ICT: move_array at git-compat-util.h:1104:0
   Occurrences: 1
 
@@ -5179,12 +5251,6 @@ Uncategorised
   After events:
     ICT: path_matches at attr.c:974:0
   Occurrences: 35
-
-Uncategorised
-  After events:
-    ICT: path_matches at attr.c:974:0
-    IRF: path_matches at attr.c:0:0
-  Occurrences: 22
 
 Uncategorised
   After events:
@@ -5204,12 +5270,6 @@ Uncategorised
 
 Uncategorised
   After events:
-    ICT: repo_read_object_file at object-store.h:248:0
-    IRF: repo_read_object_file at object-store.h:253:9
-  Occurrences: 2
-
-Uncategorised
-  After events:
     ICT: sane_qsort at git-compat-util.h:1305:0
   Occurrences: 7
 
@@ -5220,32 +5280,8 @@ Uncategorised
 
 Uncategorised
   After events:
-    ICT: st_add at :980:0
-    IRF: st_add at :0:0
-  Occurrences: 4
-
-Uncategorised
-  After events:
-    ICT: st_mult at git-compat-util.h:990:0
-    IRF: st_mult at git-compat-util.h:992:6
-  Occurrences: 42
-
-Uncategorised
-  After events:
-    ICT: st_mult at git-compat-util.h:990:0
-    IRF: st_mult at git-compat-util.h:995:11
-  Occurrences: 28
-
-Uncategorised
-  After events:
     ICT: strbuf_addch at :228:0
   Occurrences: 10724
-
-Uncategorised
-  After events:
-    ICT: strbuf_addch at :228:0
-    IRF: strbuf_addch at :0:0
-  Occurrences: 122
 
 Uncategorised
   After events:
@@ -5254,43 +5290,13 @@ Uncategorised
 
 Uncategorised
   After events:
-    ICT: strbuf_addstr at strbuf.h:303:0
-    IRF: strbuf_addstr at strbuf.h:0:0
-  Occurrences: 89
-
-Uncategorised
-  After events:
-    ICT: strbuf_addstr at strbuf.h:303:0
-    IRF: strbuf_addstr at strbuf.h:305:2
-  Occurrences: 2
-
-Uncategorised
-  After events:
     ICT: strbuf_setlen at :160:0
   Occurrences: 2334
 
 Uncategorised
   After events:
-    ICT: strbuf_setlen at :160:0
-    IRF: strbuf_setlen at :0:0
-  Occurrences: 1
-
-Uncategorised
-  After events:
-    ICT: strbuf_setlen at :160:0
-    IRF: strbuf_setlen at strbuf.h:168:3
-  Occurrences: 13
-
-Uncategorised
-  After events:
     ICT: tr2_tgt_want_builtins at trace2.c:61:0
   Occurrences: 60
-
-Uncategorised
-  After events:
-    ICT: xstrdup_or_null at git-compat-util.h:1167:0
-    IRF: xstrdup_or_null at git-compat-util.h:1169:28
-  Occurrences: 6
 
 Uncategorised
   After events:
@@ -6389,13 +6395,16 @@ ProgramCallRemoved
 InlinedReentryAdded
   Unique divergence coordinates: 9
 
+InlinedNoiseAdded
+  Unique divergence coordinates: 20
+
 InlinedReturnAdded
   Unique divergence coordinates: 32
 
 Uncategorised
-  Unique divergence coordinates: 250
+  Unique divergence coordinates: 231
 
 ## Summary
 
-888 unique divergence coordinates
-297125 divergence occurrences
+889 unique divergence coordinates
+297138 divergence occurrences
