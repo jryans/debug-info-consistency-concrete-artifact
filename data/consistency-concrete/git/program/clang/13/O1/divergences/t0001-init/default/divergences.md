@@ -565,7 +565,7 @@ CoordinatesRemoved
     RF: _ at gettext.h:49:1
   After events:
     IRF: _ at gettext.h:0:0
-  Occurrences: 56
+  Occurrences: 57
 
 CoordinatesRemoved
   Before events:
@@ -2378,14 +2378,14 @@ CoordinatesRemoved
     RF: hasheq_algop at hash.h:239:1
   After events:
     IRF: hasheq_algop at hash.h:0:0
-  Occurrences: 187
+  Occurrences: 207
 
 CoordinatesRemoved
   Before events:
     RF: hasheq_algop at hash.h:239:1
   After events:
     IRF: hasheq_algop at hash.h:0:10
-  Occurrences: 153
+  Occurrences: 159
 
 CoordinatesRemoved
   Before events:
@@ -11965,124 +11965,67 @@ CoordinatesChangedLarge
 
 LibraryCallReplaced
   Before events:
-    CF: Q_ at gettext.h:54:9
-    CT: Jump to external code for ngettext
-    RF: Jump to external code for ngettext
+    CT: Jump to external code for gettext
   After events:
-    CF: Q_ at gettext.h:54:9
-    CT: Jump to external code for dcngettext
-    RF: Jump to external code for dcngettext
+    CT: Jump to external code for dcgettext
   Occurrences: 1
 
 LibraryCallReplaced
   Before events:
-    CF: _ at gettext.h:48:9
     CT: Jump to external code for gettext
     RF: Jump to external code for gettext
   After events:
-    CF: _ at gettext.h:48:9
     CT: Jump to external code for dcgettext
     RF: Jump to external code for dcgettext
   Occurrences: 97
 
 LibraryCallReplaced
   Before events:
-    CF: dir_clear at dir.c:3426:2
+    CT: Jump to external code for memcmp
+  After events:
+    CT: Jump to external code for bcmp
+  Occurrences: 56
+
+LibraryCallReplaced
+  Before events:
+    CT: Jump to external code for memcmp
+    RF: Jump to external code for memcmp
+  After events:
+    CT: Jump to external code for bcmp
+    RF: Jump to external code for bcmp
+  Occurrences: 612
+
+LibraryCallReplaced
+  Before events:
     CT: Jump to external code for memcpy
     RF: Jump to external code for memcpy
   After events:
-    CF: dir_clear at dir.c:3426:2
     CT: Jump to external code for memset
     RF: Jump to external code for memset
-  Occurrences: 7
+  Occurrences: 15
 
 LibraryCallReplaced
   Before events:
-    CF: hasheq_algop at hash.h:238:10
-    CT: Jump to external code for memcmp
+    CT: Jump to external code for ngettext
+    RF: Jump to external code for ngettext
+  After events:
+    CT: Jump to external code for dcngettext
+    RF: Jump to external code for dcngettext
+  Occurrences: 1
+
+LibraryCallReplaced
+  Before events:
+    RF: Jump to external code for gettext
+  After events:
+    RF: Jump to external code for dcgettext
+  Occurrences: 1
+
+LibraryCallReplaced
+  Before events:
     RF: Jump to external code for memcmp
   After events:
-    CF: hasheq_algop at hash.h:0:0
-    CT: Jump to external code for bcmp
     RF: Jump to external code for bcmp
-  Occurrences: 181
-
-LibraryCallReplaced
-  Before events:
-    CF: hasheq_algop at hash.h:238:10
-    CT: Jump to external code for memcmp
-    RF: Jump to external code for memcmp
-  After events:
-    CF: hasheq_algop at hash.h:0:10
-    CT: Jump to external code for bcmp
-    RF: Jump to external code for bcmp
-  Occurrences: 139
-
-LibraryCallReplaced
-  Before events:
-    CF: parse_ref_filter_atom at ref-filter.c:702:27
-    CT: Jump to external code for memcmp
-    RF: Jump to external code for memcmp
-  After events:
-    CF: parse_ref_filter_atom at ref-filter.c:702:27
-    CT: Jump to external code for bcmp
-    RF: Jump to external code for bcmp
-  Occurrences: 3
-
-LibraryCallReplaced
-  Before events:
-    CF: pool_entry_cmp at hashmap.c:327:32
-    CT: Jump to external code for memcmp
-    RF: Jump to external code for memcmp
-  After events:
-    CF: pool_entry_cmp at hashmap.c:327:32
-    CT: Jump to external code for bcmp
-    RF: Jump to external code for bcmp
-  Occurrences: 279
-
-LibraryCallReplaced
-  Before events:
-    CF: read_object_with_reference at object-file.c:1777:7
-    CT: Jump to external code for memcmp
-    RF: Jump to external code for memcmp
-  After events:
-    CF: read_object_with_reference at object-file.c:1777:7
-    CT: Jump to external code for bcmp
-    RF: Jump to external code for bcmp
-  Occurrences: 3
-
-LibraryCallReplaced
-  Before events:
-    CF: repo_init_revisions at revision.c:1902:2
-    CT: Jump to external code for memcpy
-    RF: Jump to external code for memcpy
-  After events:
-    CF: repo_init_revisions at revision.c:1902:2
-    CT: Jump to external code for memset
-    RF: Jump to external code for memset
-  Occurrences: 8
-
-LibraryCallReplaced
-  Before events:
-    CF: update_one at cache-tree.c:306:29
-    CT: Jump to external code for memcmp
-    RF: Jump to external code for memcmp
-  After events:
-    CF: update_one at cache-tree.c:306:29
-    CT: Jump to external code for bcmp
-    RF: Jump to external code for bcmp
-  Occurrences: 3
-
-LibraryCallReplaced
-  Before events:
-    CF: update_one at cache-tree.c:360:29
-    CT: Jump to external code for memcmp
-    RF: Jump to external code for memcmp
-  After events:
-    CF: update_one at cache-tree.c:360:29
-    CT: Jump to external code for bcmp
-    RF: Jump to external code for bcmp
-  Occurrences: 4
+  Occurrences: 56
 
 LibraryCallInlined
   Before events:
@@ -25073,20 +25016,6 @@ Uncategorised
 
 Uncategorised
   Before events:
-    CT: Jump to external code for gettext
-  After events:
-    CT: Jump to external code for dcgettext
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CT: Jump to external code for memcmp
-  After events:
-    CT: Jump to external code for bcmp
-  Occurrences: 56
-
-Uncategorised
-  Before events:
     CT: st_add at git-compat-util.h:981:0
     RF: st_add at git-compat-util.h:985:2
   Occurrences: 17
@@ -25095,22 +25024,6 @@ Uncategorised
   Before events:
     CT: strbuf_add at strbuf.c:297:0
   Occurrences: 49
-
-Uncategorised
-  Before events:
-    RF: Jump to external code for gettext
-    RF: _ at gettext.h:49:1
-  After events:
-    RF: Jump to external code for dcgettext
-    IRF: _ at gettext.h:0:0
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    RF: Jump to external code for memcmp
-  After events:
-    RF: Jump to external code for bcmp
-  Occurrences: 30
 
 Uncategorised
   Before events:
@@ -25129,7 +25042,7 @@ CoordinatesChangedLarge
   Unique divergence coordinates: 96
 
 LibraryCallReplaced
-  Unique divergence coordinates: 11
+  Unique divergence coordinates: 8
 
 LibraryCallInlined
   Unique divergence coordinates: 10
@@ -25150,9 +25063,9 @@ InlinedReturnAdded
   Unique divergence coordinates: 218
 
 Uncategorised
-  Unique divergence coordinates: 1386
+  Unique divergence coordinates: 1382
 
 ## Summary
 
-3748 unique divergence coordinates
-1224426 divergence occurrences
+3741 unique divergence coordinates
+1224479 divergence occurrences

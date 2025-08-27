@@ -3446,11 +3446,9 @@ CoordinatesChangedLarge
 
 LibraryCallReplaced
   Before events:
-    CF: _ at gettext.h:48:9
     CT: Jump to external code for gettext
     RF: Jump to external code for gettext
   After events:
-    CF: _ at gettext.h:48:9
     CT: Jump to external code for dcgettext
     RF: Jump to external code for dcgettext
   Occurrences: 122
