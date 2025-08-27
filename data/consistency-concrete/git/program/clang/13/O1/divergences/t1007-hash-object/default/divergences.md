@@ -5850,6 +5850,16 @@ ProgramCallRemoved
 
 ProgramCallRemoved
   Before events:
+    CF: canonicalize_ceiling_entry at setup.c:1091:14
+    CT: is_absolute_path at cache.h:1275:0
+    CF: is_absolute_path at cache.h:1276:9
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    RF: is_absolute_path at cache.h:1276:2
+  Occurrences: 52
+
+ProgramCallRemoved
+  Before events:
     CF: check_vector_add at attr.c:500:2
     CT: vector_lock at attr.c:489:0
     RF: vector_lock at attr.c:491:1
@@ -5861,6 +5871,19 @@ ProgramCallRemoved
     CT: vector_unlock at attr.c:494:0
     RF: vector_unlock at attr.c:496:1
   Occurrences: 18
+
+ProgramCallRemoved
+  Before events:
+    CF: clear_repository_format at setup.c:730:2
+    CT: init_repository_format at setup.c:709:0
+    CF: init_repository_format at setup.c:710:33
+    CT: Jump to external code for memset
+    RF: Jump to external code for memset
+    CF: init_repository_format at setup.c:712:2
+    CT: Jump to external code for memcpy
+    RF: Jump to external code for memcpy
+    RF: init_repository_format at setup.c:713:1
+  Occurrences: 58
 
 ProgramCallRemoved
   Before events:
@@ -5888,7 +5911,111 @@ ProgramCallRemoved
     CF: create_dir_entry at ref-cache.c:93:2
     CT: st_add at git-compat-util.h:981:0
     RF: st_add at git-compat-util.h:985:2
+    CT: st_add at git-compat-util.h:981:0
+    RF: st_add at git-compat-util.h:985:2
   Occurrences: 9
+
+ProgramCallRemoved
+  Before events:
+    CF: decode_tree_entry at tree-walk.c:33:3
+    CT: strbuf_addstr at strbuf.h:304:0
+    CF: strbuf_addstr at strbuf.h:305:20
+    CT: Jump to external code for strlen
+    RF: Jump to external code for strlen
+    CF: strbuf_addstr at strbuf.h:305:2
+    CT: strbuf_add at strbuf.c:297:0
+    CF: strbuf_add at strbuf.c:298:2
+    CT: strbuf_grow at strbuf.c:92:0
+    CF: strbuf_grow at strbuf.c:99:2
+    CT: st_mult at git-compat-util.h:991:0
+    RF: st_mult at git-compat-util.h:995:2
+    CF: strbuf_grow at strbuf.c:99:2
+    CT: xrealloc at wrapper.c:127:0
+    CF: xrealloc at wrapper.c:135:2
+    CT: memory_limit_check at wrapper.c:18:0
+    RF: memory_limit_check at wrapper.c:35:1
+    CF: xrealloc at wrapper.c:136:8
+    CT: Jump to external code for realloc
+    RF: Jump to external code for realloc
+    RF: xrealloc at wrapper.c:140:1
+    RF: strbuf_grow at strbuf.c:102:1
+    CF: strbuf_add at strbuf.c:299:2
+    CT: Jump to external code for memcpy
+    RF: Jump to external code for memcpy
+    CF: strbuf_add at strbuf.c:300:2
+    CT: strbuf_setlen at strbuf.h:161:0
+    RF: strbuf_setlen at strbuf.h:169:1
+    RF: strbuf_add at strbuf.c:301:1
+    RF: strbuf_addstr at strbuf.h:306:1
+  Occurrences: 1
+
+ProgramCallRemoved
+  Before events:
+    CF: decode_tree_entry at tree-walk.c:39:3
+    CT: strbuf_addstr at strbuf.h:304:0
+    CF: strbuf_addstr at strbuf.h:305:20
+    CT: Jump to external code for strlen
+    RF: Jump to external code for strlen
+    CF: strbuf_addstr at strbuf.h:305:2
+    CT: strbuf_add at strbuf.c:297:0
+    CF: strbuf_add at strbuf.c:298:2
+    CT: strbuf_grow at strbuf.c:92:0
+    CF: strbuf_grow at strbuf.c:99:2
+    CT: st_mult at git-compat-util.h:991:0
+    RF: st_mult at git-compat-util.h:995:2
+    CF: strbuf_grow at strbuf.c:99:2
+    CT: xrealloc at wrapper.c:127:0
+    CF: xrealloc at wrapper.c:135:2
+    CT: memory_limit_check at wrapper.c:18:0
+    RF: memory_limit_check at wrapper.c:35:1
+    CF: xrealloc at wrapper.c:136:8
+    CT: Jump to external code for realloc
+    RF: Jump to external code for realloc
+    RF: xrealloc at wrapper.c:140:1
+    RF: strbuf_grow at strbuf.c:102:1
+    CF: strbuf_add at strbuf.c:299:2
+    CT: Jump to external code for memcpy
+    RF: Jump to external code for memcpy
+    CF: strbuf_add at strbuf.c:300:2
+    CT: strbuf_setlen at strbuf.h:161:0
+    RF: strbuf_setlen at strbuf.h:169:1
+    RF: strbuf_add at strbuf.c:301:1
+    RF: strbuf_addstr at strbuf.h:306:1
+  Occurrences: 1
+
+ProgramCallRemoved
+  Before events:
+    CF: decode_tree_entry at tree-walk.c:43:3
+    CT: strbuf_addstr at strbuf.h:304:0
+    CF: strbuf_addstr at strbuf.h:305:20
+    CT: Jump to external code for strlen
+    RF: Jump to external code for strlen
+    CF: strbuf_addstr at strbuf.h:305:2
+    CT: strbuf_add at strbuf.c:297:0
+    CF: strbuf_add at strbuf.c:298:2
+    CT: strbuf_grow at strbuf.c:92:0
+    CF: strbuf_grow at strbuf.c:99:2
+    CT: st_mult at git-compat-util.h:991:0
+    RF: st_mult at git-compat-util.h:995:2
+    CF: strbuf_grow at strbuf.c:99:2
+    CT: xrealloc at wrapper.c:127:0
+    CF: xrealloc at wrapper.c:135:2
+    CT: memory_limit_check at wrapper.c:18:0
+    RF: memory_limit_check at wrapper.c:35:1
+    CF: xrealloc at wrapper.c:136:8
+    CT: Jump to external code for realloc
+    RF: Jump to external code for realloc
+    RF: xrealloc at wrapper.c:140:1
+    RF: strbuf_grow at strbuf.c:102:1
+    CF: strbuf_add at strbuf.c:299:2
+    CT: Jump to external code for memcpy
+    RF: Jump to external code for memcpy
+    CF: strbuf_add at strbuf.c:300:2
+    CT: strbuf_setlen at strbuf.h:161:0
+    RF: strbuf_setlen at strbuf.h:169:1
+    RF: strbuf_add at strbuf.c:301:1
+    RF: strbuf_addstr at strbuf.h:306:1
+  Occurrences: 1
 
 ProgramCallRemoved
   Before events:
@@ -5909,7 +6036,17 @@ ProgramCallRemoved
     CF: get_next_component at abspath.c:43:29
     CT: git_is_dir_sep at git-compat-util.h:447:0
     RF: git_is_dir_sep at git-compat-util.h:448:2
-  Occurrences: 100
+  Occurrences: 74
+
+ProgramCallRemoved
+  Before events:
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+  Occurrences: 13
 
 ProgramCallRemoved
   Before events:
@@ -5945,6 +6082,16 @@ ProgramCallRemoved
     CT: noop_core_config at git-compat-util.h:419:0
     RF: noop_core_config at git-compat-util.h:420:2
   Occurrences: 51
+
+ProgramCallRemoved
+  Before events:
+    CF: init_db at init-db.c:469:13
+    CT: _ at gettext.h:45:0
+    CF: _ at gettext.h:48:9
+    CT: Jump to external code for gettext
+    RF: Jump to external code for gettext
+    RF: _ at gettext.h:49:1
+  Occurrences: 6
 
 ProgramCallRemoved
   Before events:
@@ -6053,6 +6200,73 @@ ProgramCallRemoved
 
 ProgramCallRemoved
   Before events:
+    CF: strbuf_add_absolute_path at strbuf.c:899:7
+    CT: is_absolute_path at cache.h:1275:0
+    CF: is_absolute_path at cache.h:1276:9
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: is_absolute_path at cache.h:1276:32
+    CT: git_has_dos_drive_prefix at git-compat-util.h:432:0
+    RF: git_has_dos_drive_prefix at git-compat-util.h:433:2
+    RF: is_absolute_path at cache.h:1276:2
+  Occurrences: 1
+
+ProgramCallRemoved
+  Before events:
+    CF: strbuf_add_absolute_path at strbuf.c:899:7
+    CT: is_absolute_path at cache.h:1275:0
+    CF: is_absolute_path at cache.h:1276:9
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    RF: is_absolute_path at cache.h:1276:2
+  Occurrences: 90
+
+ProgramCallRemoved
+  Before events:
+    CF: strbuf_addstr at strbuf.h:305:2
+    CT: strbuf_add at strbuf.c:297:0
+    CF: strbuf_add at strbuf.c:298:2
+    CT: strbuf_grow at strbuf.c:92:0
+    CF: strbuf_grow at strbuf.c:99:2
+    CT: st_mult at git-compat-util.h:991:0
+    RF: st_mult at git-compat-util.h:995:2
+    CF: strbuf_grow at strbuf.c:99:2
+    CT: xrealloc at wrapper.c:127:0
+    CF: xrealloc at wrapper.c:135:2
+    CT: memory_limit_check at wrapper.c:18:0
+    RF: memory_limit_check at wrapper.c:35:1
+    CF: xrealloc at wrapper.c:136:8
+    CT: Jump to external code for realloc
+    RF: Jump to external code for realloc
+    RF: xrealloc at wrapper.c:140:1
+    RF: strbuf_grow at strbuf.c:102:1
+    CF: strbuf_add at strbuf.c:299:2
+    CT: Jump to external code for memcpy
+    RF: Jump to external code for memcpy
+    CF: strbuf_add at strbuf.c:300:2
+    CT: strbuf_setlen at strbuf.h:161:0
+    RF: strbuf_setlen at strbuf.h:169:1
+    RF: strbuf_add at strbuf.c:301:1
+  Occurrences: 60
+
+ProgramCallRemoved
+  Before events:
+    CF: strbuf_addstr at strbuf.h:305:2
+    CT: strbuf_add at strbuf.c:297:0
+    CF: strbuf_add at strbuf.c:298:2
+    CT: strbuf_grow at strbuf.c:92:0
+    RF: strbuf_grow at strbuf.c:102:1
+    CF: strbuf_add at strbuf.c:299:2
+    CT: Jump to external code for memcpy
+    RF: Jump to external code for memcpy
+    CF: strbuf_add at strbuf.c:300:2
+    CT: strbuf_setlen at strbuf.h:161:0
+    RF: strbuf_setlen at strbuf.h:169:1
+    RF: strbuf_add at strbuf.c:301:1
+  Occurrences: 6
+
+ProgramCallRemoved
+  Before events:
     CF: strbuf_detach at strbuf.c:77:2
     CT: strbuf_init at strbuf.c:55:0
     RF: strbuf_init at strbuf.c:60:1
@@ -6064,6 +6278,124 @@ ProgramCallRemoved
     CT: st_mult at git-compat-util.h:991:0
     RF: st_mult at git-compat-util.h:995:2
   Occurrences: 2488
+
+ProgramCallRemoved
+  Before events:
+    CF: strbuf_grow at strbuf.c:99:2
+    CT: xrealloc at wrapper.c:127:0
+    CF: xrealloc at wrapper.c:135:2
+    CT: memory_limit_check at wrapper.c:18:0
+    RF: memory_limit_check at wrapper.c:35:1
+    CF: xrealloc at wrapper.c:136:8
+    CT: Jump to external code for realloc
+    RF: Jump to external code for realloc
+    RF: xrealloc at wrapper.c:140:1
+  Occurrences: 1
+
+ProgramCallRemoved
+  Before events:
+    CF: strbuf_realpath_1 at abspath.c:109:3
+    CT: get_next_component at abspath.c:32:0
+    CF: get_next_component at abspath.c:36:2
+    CT: strbuf_setlen at strbuf.h:161:0
+    RF: strbuf_setlen at strbuf.h:169:1
+    CT: strbuf_setlen at strbuf.h:161:0
+    RF: strbuf_setlen at strbuf.h:169:1
+    CT: strbuf_setlen at strbuf.h:161:0
+    RF: strbuf_setlen at strbuf.h:169:1
+    CT: strbuf_setlen at strbuf.h:161:0
+    RF: strbuf_setlen at strbuf.h:169:1
+    CT: strbuf_setlen at strbuf.h:161:0
+    RF: strbuf_setlen at strbuf.h:169:1
+    CT: strbuf_setlen at strbuf.h:161:0
+    RF: strbuf_setlen at strbuf.h:169:1
+    CF: get_next_component at abspath.c:40:31
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    [...113 more events...]
+  Occurrences: 19
+
+ProgramCallRemoved
+  Before events:
+    CF: strbuf_realpath_1 at abspath.c:109:3
+    CT: get_next_component at abspath.c:32:0
+    CF: get_next_component at abspath.c:36:2
+    CT: strbuf_setlen at strbuf.h:161:0
+    RF: strbuf_setlen at strbuf.h:169:1
+    CT: strbuf_setlen at strbuf.h:161:0
+    RF: strbuf_setlen at strbuf.h:169:1
+    CT: strbuf_setlen at strbuf.h:161:0
+    RF: strbuf_setlen at strbuf.h:169:1
+    CT: strbuf_setlen at strbuf.h:161:0
+    RF: strbuf_setlen at strbuf.h:169:1
+    CT: strbuf_setlen at strbuf.h:161:0
+    RF: strbuf_setlen at strbuf.h:169:1
+    CT: strbuf_setlen at strbuf.h:161:0
+    RF: strbuf_setlen at strbuf.h:169:1
+    CT: strbuf_setlen at strbuf.h:161:0
+    RF: strbuf_setlen at strbuf.h:169:1
+    CF: get_next_component at abspath.c:40:31
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    [...119 more events...]
+  Occurrences: 87
+
+ProgramCallRemoved
+  Before events:
+    CF: strbuf_realpath_1 at abspath.c:109:3
+    CT: get_next_component at abspath.c:32:0
+    CF: get_next_component at abspath.c:36:2
+    CT: strbuf_setlen at strbuf.h:161:0
+    RF: strbuf_setlen at strbuf.h:169:1
+    CT: strbuf_setlen at strbuf.h:161:0
+    RF: strbuf_setlen at strbuf.h:169:1
+    CT: strbuf_setlen at strbuf.h:161:0
+    RF: strbuf_setlen at strbuf.h:169:1
+    CT: strbuf_setlen at strbuf.h:161:0
+    RF: strbuf_setlen at strbuf.h:169:1
+    CT: strbuf_setlen at strbuf.h:161:0
+    RF: strbuf_setlen at strbuf.h:169:1
+    CT: strbuf_setlen at strbuf.h:161:0
+    RF: strbuf_setlen at strbuf.h:169:1
+    CT: strbuf_setlen at strbuf.h:161:0
+    RF: strbuf_setlen at strbuf.h:169:1
+    CT: strbuf_setlen at strbuf.h:161:0
+    RF: strbuf_setlen at strbuf.h:169:1
+    CF: get_next_component at abspath.c:40:31
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    [...181 more events...]
+  Occurrences: 4
 
 ProgramCallRemoved
   Before events:
@@ -7615,29 +7947,6 @@ Uncategorised
 
 Uncategorised
   Before events:
-    CF: canonicalize_ceiling_entry at setup.c:1091:14
-    CT: is_absolute_path at cache.h:1275:0
-    CF: is_absolute_path at cache.h:1276:9
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    RF: is_absolute_path at cache.h:1276:2
-  Occurrences: 52
-
-Uncategorised
-  Before events:
-    CF: clear_repository_format at setup.c:730:2
-    CT: init_repository_format at setup.c:709:0
-    CF: init_repository_format at setup.c:710:33
-    CT: Jump to external code for memset
-    RF: Jump to external code for memset
-    CF: init_repository_format at setup.c:712:2
-    CT: Jump to external code for memcpy
-    RF: Jump to external code for memcpy
-    RF: init_repository_format at setup.c:713:1
-  Occurrences: 58
-
-Uncategorised
-  Before events:
     CF: copy_templates_1 at init-db.c:71:4
     CT: copy_templates_1 at init-db.c:31:0
   Occurrences: 6
@@ -7719,16 +8028,6 @@ Uncategorised
     CT: trace2_cmd_error_va_fl at trace2.c:292:0
     [...38 more events...]
   Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: init_db at init-db.c:469:13
-    CT: _ at gettext.h:45:0
-    CF: _ at gettext.h:48:9
-    CT: Jump to external code for gettext
-    RF: Jump to external code for gettext
-    RF: _ at gettext.h:49:1
-  Occurrences: 6
 
 Uncategorised
   Before events:
@@ -7894,29 +8193,6 @@ Uncategorised
 
 Uncategorised
   Before events:
-    CF: strbuf_add_absolute_path at strbuf.c:899:7
-    CT: is_absolute_path at cache.h:1275:0
-    CF: is_absolute_path at cache.h:1276:9
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: is_absolute_path at cache.h:1276:32
-    CT: git_has_dos_drive_prefix at git-compat-util.h:432:0
-    RF: git_has_dos_drive_prefix at git-compat-util.h:433:2
-    RF: is_absolute_path at cache.h:1276:2
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: strbuf_add_absolute_path at strbuf.c:899:7
-    CT: is_absolute_path at cache.h:1275:0
-    CF: is_absolute_path at cache.h:1276:9
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    RF: is_absolute_path at cache.h:1276:2
-  Occurrences: 90
-
-Uncategorised
-  Before events:
     CF: strbuf_addch at strbuf.h:230:7
   Occurrences: 1
 
@@ -7941,22 +8217,6 @@ Uncategorised
     CF: strbuf_add at strbuf.c:300:2
     CT: strbuf_setlen at strbuf.h:161:0
   Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: strbuf_addstr at strbuf.h:305:2
-    CT: strbuf_add at strbuf.c:297:0
-    CF: strbuf_add at strbuf.c:298:2
-    CT: strbuf_grow at strbuf.c:92:0
-    RF: strbuf_grow at strbuf.c:102:1
-    CF: strbuf_add at strbuf.c:299:2
-    CT: Jump to external code for memcpy
-    RF: Jump to external code for memcpy
-    CF: strbuf_add at strbuf.c:300:2
-    CT: strbuf_setlen at strbuf.h:161:0
-    RF: strbuf_setlen at strbuf.h:169:1
-    RF: strbuf_add at strbuf.c:301:1
-  Occurrences: 6
 
 Uncategorised
   Before events:
@@ -7994,9 +8254,118 @@ Uncategorised
 
 Uncategorised
   Before events:
-    CT: st_add at git-compat-util.h:981:0
-    RF: st_add at git-compat-util.h:985:2
-  Occurrences: 9
+    CT: get_next_component at abspath.c:32:0
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+  Occurrences: 4
+
+Uncategorised
+  Before events:
+    CT: get_next_component at abspath.c:32:0
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:46:2
+    CT: strbuf_add at strbuf.c:297:0
+    [...8 more events...]
+  Occurrences: 19
+
+Uncategorised
+  Before events:
+    CT: get_next_component at abspath.c:32:0
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:46:2
+    CT: strbuf_add at strbuf.c:297:0
+    [...11 more events...]
+  Occurrences: 52
+
+Uncategorised
+  Before events:
+    CT: get_next_component at abspath.c:32:0
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:46:2
+    CT: strbuf_add at strbuf.c:297:0
+    [...17 more events...]
+  Occurrences: 35
 
 Uncategorised
   Before events:
@@ -8029,7 +8398,7 @@ LibraryCallRemoved
   Unique divergence coordinates: 61
 
 ProgramCallRemoved
-  Unique divergence coordinates: 40
+  Unique divergence coordinates: 55
 
 InlinedReentryAdded
   Unique divergence coordinates: 17
@@ -8041,9 +8410,9 @@ InlinedReturnAdded
   Unique divergence coordinates: 51
 
 Uncategorised
-  Unique divergence coordinates: 211
+  Unique divergence coordinates: 208
 
 ## Summary
 
-1182 unique divergence coordinates
-360291 divergence occurrences
+1194 unique divergence coordinates
+360553 divergence occurrences

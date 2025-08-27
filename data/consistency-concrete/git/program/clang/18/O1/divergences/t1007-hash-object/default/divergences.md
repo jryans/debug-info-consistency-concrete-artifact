@@ -6567,6 +6567,16 @@ ProgramCallRemoved
 
 ProgramCallRemoved
   Before events:
+    CF: canonicalize_ceiling_entry at setup.c:1091:14
+    CT: is_absolute_path at cache.h:1275:0
+    CF: is_absolute_path at cache.h:1276:9
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    RF: is_absolute_path at cache.h:1276:2
+  Occurrences: 52
+
+ProgramCallRemoved
+  Before events:
     CF: check_vector_add at attr.c:500:2
     CT: vector_lock at attr.c:489:0
     RF: vector_lock at attr.c:491:1
@@ -6578,6 +6588,19 @@ ProgramCallRemoved
     CT: vector_unlock at attr.c:494:0
     RF: vector_unlock at attr.c:496:1
   Occurrences: 18
+
+ProgramCallRemoved
+  Before events:
+    CF: clear_repository_format at setup.c:730:2
+    CT: init_repository_format at setup.c:709:0
+    CF: init_repository_format at setup.c:710:33
+    CT: Jump to external code for memset
+    RF: Jump to external code for memset
+    CF: init_repository_format at setup.c:712:2
+    CT: Jump to external code for memcpy
+    RF: Jump to external code for memcpy
+    RF: init_repository_format at setup.c:713:1
+  Occurrences: 58
 
 ProgramCallRemoved
   Before events:
@@ -6605,6 +6628,8 @@ ProgramCallRemoved
     CF: create_dir_entry at refs/ref-cache.c:93:2
     CT: st_add at git-compat-util.h:981:0
     RF: st_add at git-compat-util.h:985:2
+    CT: st_add at git-compat-util.h:981:0
+    RF: st_add at git-compat-util.h:985:2
   Occurrences: 9
 
 ProgramCallRemoved
@@ -6626,7 +6651,17 @@ ProgramCallRemoved
     CF: get_next_component at abspath.c:43:29
     CT: git_is_dir_sep at git-compat-util.h:447:0
     RF: git_is_dir_sep at git-compat-util.h:448:2
-  Occurrences: 100
+  Occurrences: 94
+
+ProgramCallRemoved
+  Before events:
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+  Occurrences: 3
 
 ProgramCallRemoved
   Before events:
@@ -6668,7 +6703,17 @@ ProgramCallRemoved
     CF: git_parse_source at config.c:1091:21
     CT: sane_case at git-compat-util.h:1235:0
     RF: sane_case at git-compat-util.h:1238:2
-  Occurrences: 518
+  Occurrences: 228
+
+ProgramCallRemoved
+  Before events:
+    CF: git_parse_source at config.c:1091:21
+    CT: sane_case at git-compat-util.h:1235:0
+    RF: sane_case at git-compat-util.h:1238:2
+    CF: git_parse_source at config.c:1091:21
+    CT: sane_case at git-compat-util.h:1235:0
+    RF: sane_case at git-compat-util.h:1238:2
+  Occurrences: 145
 
 ProgramCallRemoved
   Before events:
@@ -6777,6 +6822,29 @@ ProgramCallRemoved
 
 ProgramCallRemoved
   Before events:
+    CF: strbuf_add_absolute_path at strbuf.c:899:7
+    CT: is_absolute_path at cache.h:1275:0
+    CF: is_absolute_path at cache.h:1276:9
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: is_absolute_path at cache.h:1276:32
+    CT: git_has_dos_drive_prefix at git-compat-util.h:432:0
+    RF: git_has_dos_drive_prefix at git-compat-util.h:433:2
+    RF: is_absolute_path at cache.h:1276:2
+  Occurrences: 1
+
+ProgramCallRemoved
+  Before events:
+    CF: strbuf_add_absolute_path at strbuf.c:899:7
+    CT: is_absolute_path at cache.h:1275:0
+    CF: is_absolute_path at cache.h:1276:9
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    RF: is_absolute_path at cache.h:1276:2
+  Occurrences: 90
+
+ProgramCallRemoved
+  Before events:
     CF: strbuf_addch at strbuf.h:230:7
     CT: strbuf_avail at strbuf.h:140:0
     RF: strbuf_avail at strbuf.h:141:2
@@ -6795,6 +6863,111 @@ ProgramCallRemoved
     CT: st_mult at git-compat-util.h:991:0
     RF: st_mult at git-compat-util.h:995:2
   Occurrences: 2612
+
+ProgramCallRemoved
+  Before events:
+    CF: strbuf_realpath_1 at abspath.c:109:3
+    CT: get_next_component at abspath.c:32:0
+    CF: get_next_component at abspath.c:36:2
+    CT: strbuf_setlen at strbuf.h:161:0
+    RF: strbuf_setlen at strbuf.h:169:1
+    CT: strbuf_setlen at strbuf.h:161:0
+    RF: strbuf_setlen at strbuf.h:169:1
+    CT: strbuf_setlen at strbuf.h:161:0
+    RF: strbuf_setlen at strbuf.h:169:1
+    CT: strbuf_setlen at strbuf.h:161:0
+    RF: strbuf_setlen at strbuf.h:169:1
+    CT: strbuf_setlen at strbuf.h:161:0
+    RF: strbuf_setlen at strbuf.h:169:1
+    CT: strbuf_setlen at strbuf.h:161:0
+    RF: strbuf_setlen at strbuf.h:169:1
+    CF: get_next_component at abspath.c:40:31
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    [...113 more events...]
+  Occurrences: 19
+
+ProgramCallRemoved
+  Before events:
+    CF: strbuf_realpath_1 at abspath.c:109:3
+    CT: get_next_component at abspath.c:32:0
+    CF: get_next_component at abspath.c:36:2
+    CT: strbuf_setlen at strbuf.h:161:0
+    RF: strbuf_setlen at strbuf.h:169:1
+    CT: strbuf_setlen at strbuf.h:161:0
+    RF: strbuf_setlen at strbuf.h:169:1
+    CT: strbuf_setlen at strbuf.h:161:0
+    RF: strbuf_setlen at strbuf.h:169:1
+    CT: strbuf_setlen at strbuf.h:161:0
+    RF: strbuf_setlen at strbuf.h:169:1
+    CT: strbuf_setlen at strbuf.h:161:0
+    RF: strbuf_setlen at strbuf.h:169:1
+    CT: strbuf_setlen at strbuf.h:161:0
+    RF: strbuf_setlen at strbuf.h:169:1
+    CT: strbuf_setlen at strbuf.h:161:0
+    RF: strbuf_setlen at strbuf.h:169:1
+    CF: get_next_component at abspath.c:40:31
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    [...119 more events...]
+  Occurrences: 87
+
+ProgramCallRemoved
+  Before events:
+    CF: strbuf_realpath_1 at abspath.c:109:3
+    CT: get_next_component at abspath.c:32:0
+    CF: get_next_component at abspath.c:36:2
+    CT: strbuf_setlen at strbuf.h:161:0
+    RF: strbuf_setlen at strbuf.h:169:1
+    CT: strbuf_setlen at strbuf.h:161:0
+    RF: strbuf_setlen at strbuf.h:169:1
+    CT: strbuf_setlen at strbuf.h:161:0
+    RF: strbuf_setlen at strbuf.h:169:1
+    CT: strbuf_setlen at strbuf.h:161:0
+    RF: strbuf_setlen at strbuf.h:169:1
+    CT: strbuf_setlen at strbuf.h:161:0
+    RF: strbuf_setlen at strbuf.h:169:1
+    CT: strbuf_setlen at strbuf.h:161:0
+    RF: strbuf_setlen at strbuf.h:169:1
+    CT: strbuf_setlen at strbuf.h:161:0
+    RF: strbuf_setlen at strbuf.h:169:1
+    CT: strbuf_setlen at strbuf.h:161:0
+    RF: strbuf_setlen at strbuf.h:169:1
+    CF: get_next_component at abspath.c:40:31
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    [...181 more events...]
+  Occurrences: 4
 
 ProgramCallRemoved
   Before events:
@@ -8174,29 +8347,6 @@ Uncategorised
 
 Uncategorised
   Before events:
-    CF: canonicalize_ceiling_entry at setup.c:1091:14
-    CT: is_absolute_path at cache.h:1275:0
-    CF: is_absolute_path at cache.h:1276:9
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    RF: is_absolute_path at cache.h:1276:2
-  Occurrences: 52
-
-Uncategorised
-  Before events:
-    CF: clear_repository_format at setup.c:730:2
-    CT: init_repository_format at setup.c:709:0
-    CF: init_repository_format at setup.c:710:33
-    CT: Jump to external code for memset
-    RF: Jump to external code for memset
-    CF: init_repository_format at setup.c:712:2
-    CT: Jump to external code for memcpy
-    RF: Jump to external code for memcpy
-    RF: init_repository_format at setup.c:713:1
-  Occurrences: 58
-
-Uncategorised
-  Before events:
     CF: copy_templates_1 at builtin/init-db.c:48:3
   Occurrences: 6
 
@@ -8632,29 +8782,6 @@ Uncategorised
 
 Uncategorised
   Before events:
-    CF: strbuf_add_absolute_path at strbuf.c:899:7
-    CT: is_absolute_path at cache.h:1275:0
-    CF: is_absolute_path at cache.h:1276:9
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: is_absolute_path at cache.h:1276:32
-    CT: git_has_dos_drive_prefix at git-compat-util.h:432:0
-    RF: git_has_dos_drive_prefix at git-compat-util.h:433:2
-    RF: is_absolute_path at cache.h:1276:2
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: strbuf_add_absolute_path at strbuf.c:899:7
-    CT: is_absolute_path at cache.h:1275:0
-    CF: is_absolute_path at cache.h:1276:9
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    RF: is_absolute_path at cache.h:1276:2
-  Occurrences: 90
-
-Uncategorised
-  Before events:
     CF: strbuf_addch at strbuf.h:230:7
   Occurrences: 1
 
@@ -8694,9 +8821,118 @@ Uncategorised
 
 Uncategorised
   Before events:
-    CT: st_add at git-compat-util.h:981:0
-    RF: st_add at git-compat-util.h:985:2
-  Occurrences: 9
+    CT: get_next_component at abspath.c:32:0
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+  Occurrences: 4
+
+Uncategorised
+  Before events:
+    CT: get_next_component at abspath.c:32:0
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:46:2
+    CT: strbuf_add at strbuf.c:297:0
+    [...8 more events...]
+  Occurrences: 19
+
+Uncategorised
+  Before events:
+    CT: get_next_component at abspath.c:32:0
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:46:2
+    CT: strbuf_add at strbuf.c:297:0
+    [...11 more events...]
+  Occurrences: 52
+
+Uncategorised
+  Before events:
+    CT: get_next_component at abspath.c:32:0
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:46:2
+    CT: strbuf_add at strbuf.c:297:0
+    [...17 more events...]
+  Occurrences: 35
 
 ## Divergences with unique coordinates by type
 
@@ -8719,7 +8955,7 @@ LibraryCallRemoved
   Unique divergence coordinates: 63
 
 ProgramCallRemoved
-  Unique divergence coordinates: 42
+  Unique divergence coordinates: 51
 
 InlinedReentryAdded
   Unique divergence coordinates: 19
@@ -8731,9 +8967,9 @@ InlinedReturnAdded
   Unique divergence coordinates: 47
 
 Uncategorised
-  Unique divergence coordinates: 185
+  Unique divergence coordinates: 184
 
 ## Summary
 
-1248 unique divergence coordinates
-384111 divergence occurrences
+1256 unique divergence coordinates
+384174 divergence occurrences
