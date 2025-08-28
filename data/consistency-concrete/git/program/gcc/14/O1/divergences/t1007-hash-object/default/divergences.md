@@ -3739,6 +3739,20 @@ LibraryCallRemoved
 
 LibraryCallRemoved
   Before events:
+    CF: strbuf_splice at strbuf.c:243:2
+    CT: Jump to external code for memmove
+    RF: Jump to external code for memmove
+  Occurrences: 35
+
+LibraryCallRemoved
+  Before events:
+    CF: strbuf_splice at strbuf.c:246:2
+    CT: Jump to external code for memcpy
+    RF: Jump to external code for memcpy
+  Occurrences: 35
+
+LibraryCallRemoved
+  Before events:
     CF: string_list_init_dup at string-list.c:13:2
     CT: Jump to external code for memcpy
     RF: Jump to external code for memcpy
@@ -3917,6 +3931,44 @@ ProgramCallRemoved
     CF: get_next_component at abspath.c:40:31
     CT: git_is_dir_sep at git-compat-util.h:447:1
     RF: git_is_dir_sep at git-compat-util.h:449:1
+    CF: get_next_component at abspath.c:40:31
+    CT: git_is_dir_sep at git-compat-util.h:447:1
+    RF: git_is_dir_sep at git-compat-util.h:449:1
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:1
+    RF: git_is_dir_sep at git-compat-util.h:449:1
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:1
+    RF: git_is_dir_sep at git-compat-util.h:449:1
+  Occurrences: 4
+
+ProgramCallRemoved
+  Before events:
+    CF: get_next_component at abspath.c:40:31
+    CT: git_is_dir_sep at git-compat-util.h:447:1
+    RF: git_is_dir_sep at git-compat-util.h:449:1
+    CF: get_next_component at abspath.c:40:31
+    CT: git_is_dir_sep at git-compat-util.h:447:1
+    RF: git_is_dir_sep at git-compat-util.h:449:1
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:1
+    RF: git_is_dir_sep at git-compat-util.h:449:1
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:1
+    RF: git_is_dir_sep at git-compat-util.h:449:1
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:1
+    RF: git_is_dir_sep at git-compat-util.h:449:1
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:1
+    RF: git_is_dir_sep at git-compat-util.h:449:1
+  Occurrences: 106
+
+ProgramCallRemoved
+  Before events:
+    CF: get_next_component at abspath.c:40:31
+    CT: git_is_dir_sep at git-compat-util.h:447:1
+    RF: git_is_dir_sep at git-compat-util.h:449:1
     CF: get_next_component at abspath.c:43:29
     CT: git_is_dir_sep at git-compat-util.h:447:1
     RF: git_is_dir_sep at git-compat-util.h:449:1
@@ -3938,6 +3990,22 @@ ProgramCallRemoved
     CT: git_is_dir_sep at git-compat-util.h:447:1
     RF: git_is_dir_sep at git-compat-util.h:449:1
   Occurrences: 11
+
+ProgramCallRemoved
+  Before events:
+    CF: get_next_component at abspath.c:46:2
+    CT: strbuf_add at strbuf.c:297:1
+    CF: strbuf_add at strbuf.c:298:2
+    CT: strbuf_grow at strbuf.c:92:1
+    RF: strbuf_grow at strbuf.c:102:1
+    CF: strbuf_add at strbuf.c:299:2
+    CT: Jump to external code for memcpy
+    RF: Jump to external code for memcpy
+    CF: strbuf_add at strbuf.c:300:2
+    CT: strbuf_setlen at strbuf.h:161:1
+    RF: strbuf_setlen at strbuf.h:169:1
+    RF: strbuf_add at strbuf.c:301:1
+  Occurrences: 87
 
 ProgramCallRemoved
   Before events:
@@ -4135,6 +4203,51 @@ ProgramCallRemoved
 
 ProgramCallRemoved
   Before events:
+    CF: normalize_path_copy_len at path.c:1126:14
+    CT: git_offset_1st_component at git-compat-util.h:456:1
+    CF: git_offset_1st_component at git-compat-util.h:457:9
+    CT: git_is_dir_sep at git-compat-util.h:447:1
+    RF: git_is_dir_sep at git-compat-util.h:449:1
+    RF: git_offset_1st_component at git-compat-util.h:458:1
+  Occurrences: 133
+
+ProgramCallRemoved
+  Before events:
+    CF: normalize_path_copy_len at path.c:1129:7
+    CT: git_is_dir_sep at git-compat-util.h:447:1
+    RF: git_is_dir_sep at git-compat-util.h:449:1
+    CF: normalize_path_copy_len at path.c:1135:9
+    CT: git_is_dir_sep at git-compat-util.h:447:1
+    RF: git_is_dir_sep at git-compat-util.h:449:1
+    CF: normalize_path_copy_len at path.c:1175:35
+    CT: git_is_dir_sep at git-compat-util.h:447:1
+    RF: git_is_dir_sep at git-compat-util.h:449:1
+    CF: normalize_path_copy_len at path.c:1175:35
+    CT: git_is_dir_sep at git-compat-util.h:447:1
+    RF: git_is_dir_sep at git-compat-util.h:449:1
+    CF: normalize_path_copy_len at path.c:1175:35
+    CT: git_is_dir_sep at git-compat-util.h:447:1
+    RF: git_is_dir_sep at git-compat-util.h:449:1
+    CF: normalize_path_copy_len at path.c:1175:35
+    CT: git_is_dir_sep at git-compat-util.h:447:1
+    RF: git_is_dir_sep at git-compat-util.h:449:1
+    CF: normalize_path_copy_len at path.c:1175:35
+    CT: git_is_dir_sep at git-compat-util.h:447:1
+    RF: git_is_dir_sep at git-compat-util.h:449:1
+    CF: normalize_path_copy_len at path.c:1177:7
+    CT: git_is_dir_sep at git-compat-util.h:447:1
+    RF: git_is_dir_sep at git-compat-util.h:449:1
+    CF: normalize_path_copy_len at path.c:1179:11
+    CT: git_is_dir_sep at git-compat-util.h:447:1
+    RF: git_is_dir_sep at git-compat-util.h:449:1
+    CF: normalize_path_copy_len at path.c:1179:11
+    CT: git_is_dir_sep at git-compat-util.h:447:1
+    RF: git_is_dir_sep at git-compat-util.h:449:1
+    [...72 more events...]
+  Occurrences: 133
+
+ProgramCallRemoved
+  Before events:
     CF: oid_object_info_extended at object-file.c:1639:2
     CT: obj_read_lock at object-store.h:381:1
     RF: obj_read_lock at object-store.h:384:1
@@ -4311,6 +4424,58 @@ ProgramCallRemoved
 
 ProgramCallRemoved
   Before events:
+    CF: safe_create_leading_directories_1 at object-file.c:346:32
+    CT: git_offset_1st_component at git-compat-util.h:456:1
+    CF: git_offset_1st_component at git-compat-util.h:457:9
+    CT: git_is_dir_sep at git-compat-util.h:447:1
+    RF: git_is_dir_sep at git-compat-util.h:449:1
+    RF: git_offset_1st_component at git-compat-util.h:458:1
+  Occurrences: 6
+
+ProgramCallRemoved
+  Before events:
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:1
+    RF: git_is_dir_sep at git-compat-util.h:449:1
+  Occurrences: 5
+
+ProgramCallRemoved
+  Before events:
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:1
+    RF: git_is_dir_sep at git-compat-util.h:449:1
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:1
+    RF: git_is_dir_sep at git-compat-util.h:449:1
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:1
+    RF: git_is_dir_sep at git-compat-util.h:449:1
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:1
+    RF: git_is_dir_sep at git-compat-util.h:449:1
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:1
+    RF: git_is_dir_sep at git-compat-util.h:449:1
+    CF: safe_create_leading_directories_1 at object-file.c:360:10
+    CT: git_is_dir_sep at git-compat-util.h:447:1
+    RF: git_is_dir_sep at git-compat-util.h:449:1
+    CF: safe_create_leading_directories_1 at object-file.c:367:8
+    CT: Jump to external code for stat64
+    RF: Jump to external code for stat64
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:1
+    RF: git_is_dir_sep at git-compat-util.h:449:1
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:1
+    RF: git_is_dir_sep at git-compat-util.h:449:1
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:1
+    RF: git_is_dir_sep at git-compat-util.h:449:1
+    [...156 more events...]
+  Occurrences: 1
+
+ProgramCallRemoved
+  Before events:
     CF: setup_git_directory_gently at setup.c:1569:12
     CT: precompose_string_if_needed at git-compat-util.h:324:1
     RF: precompose_string_if_needed at git-compat-util.h:326:1
@@ -4349,10 +4514,419 @@ ProgramCallRemoved
 
 ProgramCallRemoved
   Before events:
+    CF: strbuf_add at strbuf.c:298:2
+    CT: strbuf_grow at strbuf.c:92:1
+    RF: strbuf_grow at strbuf.c:102:1
+  Occurrences: 4
+
+ProgramCallRemoved
+  Before events:
     CF: strbuf_add_absolute_path at strbuf.c:913:30
     CT: git_is_dir_sep at git-compat-util.h:447:1
     RF: git_is_dir_sep at git-compat-util.h:449:1
   Occurrences: 1
+
+ProgramCallRemoved
+  Before events:
+    CF: strbuf_addch at strbuf.h:230:7
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+  Occurrences: 175
+
+ProgramCallRemoved
+  Before events:
+    CF: strbuf_addch at strbuf.h:230:7
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+  Occurrences: 6
+
+ProgramCallRemoved
+  Before events:
+    CF: strbuf_addch at strbuf.h:230:7
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+  Occurrences: 88
+
+ProgramCallRemoved
+  Before events:
+    CF: strbuf_addch at strbuf.h:230:7
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+  Occurrences: 32
+
+ProgramCallRemoved
+  Before events:
+    CF: strbuf_addch at strbuf.h:230:7
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+  Occurrences: 90
+
+ProgramCallRemoved
+  Before events:
+    CF: strbuf_addch at strbuf.h:230:7
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+  Occurrences: 26
+
+ProgramCallRemoved
+  Before events:
+    CF: strbuf_addch at strbuf.h:230:7
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+  Occurrences: 2
+
+ProgramCallRemoved
+  Before events:
+    CF: strbuf_addch at strbuf.h:230:7
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+  Occurrences: 8
+
+ProgramCallRemoved
+  Before events:
+    CF: strbuf_addch at strbuf.h:230:7
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+  Occurrences: 6
+
+ProgramCallRemoved
+  Before events:
+    CF: strbuf_addch at strbuf.h:230:7
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    [...1 more events...]
+  Occurrences: 6
+
+ProgramCallRemoved
+  Before events:
+    CF: strbuf_addch at strbuf.h:230:7
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    [...15 more events...]
+  Occurrences: 88
+
+ProgramCallRemoved
+  Before events:
+    CF: strbuf_addch at strbuf.h:230:7
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    [...23 more events...]
+  Occurrences: 26
+
+ProgramCallRemoved
+  Before events:
+    CF: strbuf_addch at strbuf.h:230:7
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    [...75 more events...]
+  Occurrences: 2
+
+ProgramCallRemoved
+  Before events:
+    CF: strbuf_addch at strbuf.h:230:7
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    [...79 more events...]
+  Occurrences: 2
+
+ProgramCallRemoved
+  Before events:
+    CF: strbuf_addch at strbuf.h:230:7
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    [...307 more events...]
+  Occurrences: 2
+
+ProgramCallRemoved
+  Before events:
+    CF: strbuf_addch at strbuf.h:230:7
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    RF: strbuf_avail at strbuf.h:142:1
+    CT: strbuf_avail at strbuf.h:140:1
+    [...635 more events...]
+  Occurrences: 2
 
 ProgramCallRemoved
   Before events:
@@ -4479,6 +5053,51 @@ ProgramCallRemoved
     CT: git_is_dir_sep at git-compat-util.h:447:1
     RF: git_is_dir_sep at git-compat-util.h:449:1
   Occurrences: 715
+
+ProgramCallRemoved
+  Before events:
+    CF: strip_last_component at abspath.c:17:18
+    CT: git_offset_1st_component at git-compat-util.h:456:1
+    CF: git_offset_1st_component at git-compat-util.h:457:9
+    CT: git_is_dir_sep at git-compat-util.h:447:1
+    RF: git_is_dir_sep at git-compat-util.h:449:1
+    RF: git_offset_1st_component at git-compat-util.h:458:1
+  Occurrences: 52
+
+ProgramCallRemoved
+  Before events:
+    CF: strip_last_component at abspath.c:21:26
+    CT: git_is_dir_sep at git-compat-util.h:447:1
+    RF: git_is_dir_sep at git-compat-util.h:449:1
+    CF: strip_last_component at abspath.c:21:26
+    CT: git_is_dir_sep at git-compat-util.h:447:1
+    RF: git_is_dir_sep at git-compat-util.h:449:1
+    CF: strip_last_component at abspath.c:21:26
+    CT: git_is_dir_sep at git-compat-util.h:447:1
+    RF: git_is_dir_sep at git-compat-util.h:449:1
+    CF: strip_last_component at abspath.c:21:26
+    CT: git_is_dir_sep at git-compat-util.h:447:1
+    RF: git_is_dir_sep at git-compat-util.h:449:1
+    CF: strip_last_component at abspath.c:21:26
+    CT: git_is_dir_sep at git-compat-util.h:447:1
+    RF: git_is_dir_sep at git-compat-util.h:449:1
+    CF: strip_last_component at abspath.c:21:26
+    CT: git_is_dir_sep at git-compat-util.h:447:1
+    RF: git_is_dir_sep at git-compat-util.h:449:1
+    CF: strip_last_component at abspath.c:21:26
+    CT: git_is_dir_sep at git-compat-util.h:447:1
+    RF: git_is_dir_sep at git-compat-util.h:449:1
+    CF: strip_last_component at abspath.c:21:26
+    CT: git_is_dir_sep at git-compat-util.h:447:1
+    RF: git_is_dir_sep at git-compat-util.h:449:1
+    CF: strip_last_component at abspath.c:21:26
+    CT: git_is_dir_sep at git-compat-util.h:447:1
+    RF: git_is_dir_sep at git-compat-util.h:449:1
+    CF: strip_last_component at abspath.c:21:26
+    CT: git_is_dir_sep at git-compat-util.h:447:1
+    RF: git_is_dir_sep at git-compat-util.h:449:1
+    [...69 more events...]
+  Occurrences: 52
 
 ProgramCallRemoved
   Before events:
@@ -4717,7 +5336,7 @@ InlinedReturnAdded
 InlinedReturnAdded
   After events:
     IRF: getc_unlocked at stdio.h:0:0
-  Occurrences: 109
+  Occurrences: 159
 
 InlinedReturnAdded
   After events:
@@ -4772,7 +5391,7 @@ InlinedReturnAdded
 InlinedReturnAdded
   After events:
     IRF: ref_entry_cmp_sslice at ref-cache.c:0:0
-  Occurrences: 29
+  Occurrences: 70
 
 InlinedReturnAdded
   After events:
@@ -4787,7 +5406,7 @@ InlinedReturnAdded
 InlinedReturnAdded
   After events:
     IRF: sane_qsort at git-compat-util.h:0:0
-  Occurrences: 5
+  Occurrences: 7
 
 InlinedReturnAdded
   After events:
@@ -5653,18 +6272,11 @@ Uncategorised
 Uncategorised
   After events:
     RF: Jump to external code for __uflow
-  Occurrences: 186
-
-Uncategorised
-  After events:
-    RF: Jump to external code for __uflow
-    IRF: getc_unlocked at stdio.h:0:0
-  Occurrences: 50
+  Occurrences: 236
 
 Uncategorised
   After events:
     RF: Jump to external code for qsort
-    IRF: sane_qsort at git-compat-util.h:0:0
   Occurrences: 2
 
 Uncategorised
@@ -5675,13 +6287,7 @@ Uncategorised
 Uncategorised
   After events:
     RF: Jump to external code for strncmp
-  Occurrences: 11
-
-Uncategorised
-  After events:
-    RF: Jump to external code for strncmp
-    IRF: ref_entry_cmp_sslice at ref-cache.c:0:0
-  Occurrences: 41
+  Occurrences: 52
 
 Uncategorised
   After events:
@@ -5745,80 +6351,18 @@ Uncategorised
   Before events:
     CF: get_base_var at config.c:966:3
     CT: strbuf_addch at strbuf.h:229:1
-    CF: strbuf_addch at strbuf.h:230:7
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-  Occurrences: 132
-
-Uncategorised
-  Before events:
-    CF: get_base_var at config.c:966:3
-    CT: strbuf_addch at strbuf.h:229:1
-    CF: strbuf_addch at strbuf.h:230:7
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    [...81 more events...]
-  Occurrences: 2
+  Occurrences: 134
 
 Uncategorised
   Before events:
     CF: get_extended_base_var at config.c:928:2
     CT: strbuf_addch at strbuf.h:229:1
-    CF: strbuf_addch at strbuf.h:230:7
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
   Occurrences: 2
 
 Uncategorised
   Before events:
     CF: get_extended_base_var at config.c:941:3
     CT: strbuf_addch at strbuf.h:229:1
-    CF: strbuf_addch at strbuf.h:230:7
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
   Occurrences: 2
 
 Uncategorised
@@ -5831,202 +6375,14 @@ Uncategorised
   Before events:
     CF: get_value at config.c:890:3
     CT: strbuf_addch at strbuf.h:229:1
-    CF: strbuf_addch at strbuf.h:230:7
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-  Occurrences: 6
+  Occurrences: 38
 
 Uncategorised
   Before events:
     CF: get_value at config.c:890:3
     CT: strbuf_addch at strbuf.h:229:1
-    CF: strbuf_addch at strbuf.h:230:7
     CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-  Occurrences: 6
-
-Uncategorised
-  Before events:
-    CF: get_value at config.c:890:3
-    CT: strbuf_addch at strbuf.h:229:1
-    CF: strbuf_addch at strbuf.h:230:7
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    [...3 more events...]
-  Occurrences: 6
-
-Uncategorised
-  Before events:
-    CF: get_value at config.c:890:3
-    CT: strbuf_addch at strbuf.h:229:1
-    CF: strbuf_addch at strbuf.h:230:7
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    [...18 more events...]
-  Occurrences: 88
-
-Uncategorised
-  Before events:
-    CF: get_value at config.c:890:3
-    CT: strbuf_addch at strbuf.h:229:1
-    CF: strbuf_addch at strbuf.h:230:7
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    [...25 more events...]
-  Occurrences: 26
-
-Uncategorised
-  Before events:
-    CF: get_value at config.c:890:3
-    CT: strbuf_addch at strbuf.h:229:1
-    CF: strbuf_addch at strbuf.h:230:7
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    [...310 more events...]
-  Occurrences: 2
+  Occurrences: 96
 
 Uncategorised
   Before events:
@@ -6057,25 +6413,6 @@ Uncategorised
   Before events:
     CF: git_parse_source at config.c:1075:4
     CT: strbuf_addch at strbuf.h:229:1
-    CF: strbuf_addch at strbuf.h:230:7
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
     CT: strbuf_avail at strbuf.h:140:1
   Occurrences: 2
 
@@ -6089,91 +6426,14 @@ Uncategorised
   Before events:
     CF: git_parse_source at config.c:1091:3
     CT: strbuf_addch at strbuf.h:229:1
+  Occurrences: 128
+
+Uncategorised
+  Before events:
+    CF: git_parse_source at config.c:1091:3
+    CT: strbuf_addch at strbuf.h:229:1
     CF: strbuf_addch at strbuf.h:230:7
   Occurrences: 6
-
-Uncategorised
-  Before events:
-    CF: git_parse_source at config.c:1091:3
-    CT: strbuf_addch at strbuf.h:229:1
-    CF: strbuf_addch at strbuf.h:230:7
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-  Occurrences: 6
-
-Uncategorised
-  Before events:
-    CF: git_parse_source at config.c:1091:3
-    CT: strbuf_addch at strbuf.h:229:1
-    CF: strbuf_addch at strbuf.h:230:7
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-  Occurrences: 6
-
-Uncategorised
-  Before events:
-    CF: git_parse_source at config.c:1091:3
-    CT: strbuf_addch at strbuf.h:229:1
-    CF: strbuf_addch at strbuf.h:230:7
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-  Occurrences: 88
-
-Uncategorised
-  Before events:
-    CF: git_parse_source at config.c:1091:3
-    CT: strbuf_addch at strbuf.h:229:1
-    CF: strbuf_addch at strbuf.h:230:7
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-  Occurrences: 26
-
-Uncategorised
-  Before events:
-    CF: git_parse_source at config.c:1091:3
-    CT: strbuf_addch at strbuf.h:229:1
-    CF: strbuf_addch at strbuf.h:230:7
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    [...77 more events...]
-  Occurrences: 2
 
 Uncategorised
   Before events:
@@ -6203,35 +6463,8 @@ Uncategorised
   Before events:
     CF: normalize_path_copy at path.c:1206:9
     CT: normalize_path_copy_len at path.c:1119:1
-    CF: normalize_path_copy_len at path.c:1126:14
-    CT: git_offset_1st_component at git-compat-util.h:456:1
-    CF: git_offset_1st_component at git-compat-util.h:457:9
-    CT: git_is_dir_sep at git-compat-util.h:447:1
-    RF: git_is_dir_sep at git-compat-util.h:449:1
-    RF: git_offset_1st_component at git-compat-util.h:458:1
-    CF: normalize_path_copy_len at path.c:1129:7
-    CT: git_is_dir_sep at git-compat-util.h:447:1
-    RF: git_is_dir_sep at git-compat-util.h:449:1
-    CF: normalize_path_copy_len at path.c:1135:9
-    CT: git_is_dir_sep at git-compat-util.h:447:1
-    RF: git_is_dir_sep at git-compat-util.h:449:1
     CF: normalize_path_copy_len at path.c:1175:35
     CT: git_is_dir_sep at git-compat-util.h:447:1
-    RF: git_is_dir_sep at git-compat-util.h:449:1
-    CF: normalize_path_copy_len at path.c:1175:35
-    CT: git_is_dir_sep at git-compat-util.h:447:1
-    RF: git_is_dir_sep at git-compat-util.h:449:1
-    CF: normalize_path_copy_len at path.c:1175:35
-    CT: git_is_dir_sep at git-compat-util.h:447:1
-    RF: git_is_dir_sep at git-compat-util.h:449:1
-    CF: normalize_path_copy_len at path.c:1175:35
-    CT: git_is_dir_sep at git-compat-util.h:447:1
-    RF: git_is_dir_sep at git-compat-util.h:449:1
-    CF: normalize_path_copy_len at path.c:1175:35
-    CT: git_is_dir_sep at git-compat-util.h:447:1
-    RF: git_is_dir_sep at git-compat-util.h:449:1
-    CF: normalize_path_copy_len at path.c:1177:7
-    [...82 more events...]
   Occurrences: 133
 
 Uncategorised
@@ -6244,19 +6477,6 @@ Uncategorised
   Before events:
     CF: parse_value at config.c:844:4
     CT: strbuf_addch at strbuf.h:229:1
-    CF: strbuf_addch at strbuf.h:230:7
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
   Occurrences: 2
 
 Uncategorised
@@ -6270,109 +6490,14 @@ Uncategorised
   Before events:
     CF: parse_value at config.c:873:3
     CT: strbuf_addch at strbuf.h:229:1
-  Occurrences: 6
+  Occurrences: 126
 
 Uncategorised
   Before events:
     CF: parse_value at config.c:873:3
     CT: strbuf_addch at strbuf.h:229:1
-    CF: strbuf_addch at strbuf.h:230:7
     CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-  Occurrences: 6
-
-Uncategorised
-  Before events:
-    CF: parse_value at config.c:873:3
-    CT: strbuf_addch at strbuf.h:229:1
-    CF: strbuf_addch at strbuf.h:230:7
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-  Occurrences: 6
-
-Uncategorised
-  Before events:
-    CF: parse_value at config.c:873:3
-    CT: strbuf_addch at strbuf.h:229:1
-    CF: strbuf_addch at strbuf.h:230:7
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-  Occurrences: 88
-
-Uncategorised
-  Before events:
-    CF: parse_value at config.c:873:3
-    CT: strbuf_addch at strbuf.h:229:1
-    CF: strbuf_addch at strbuf.h:230:7
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-  Occurrences: 26
-
-Uncategorised
-  Before events:
-    CF: parse_value at config.c:873:3
-    CT: strbuf_addch at strbuf.h:229:1
-    CF: strbuf_addch at strbuf.h:230:7
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-    CT: strbuf_avail at strbuf.h:140:1
-    [...638 more events...]
-  Occurrences: 2
+  Occurrences: 8
 
 Uncategorised
   Before events:
@@ -6410,53 +6535,9 @@ Uncategorised
   Before events:
     CF: safe_create_leading_directories at object-file.c:400:9
     CT: safe_create_leading_directories_1 at object-file.c:345:1
-    CF: safe_create_leading_directories_1 at object-file.c:346:32
-    CT: git_offset_1st_component at git-compat-util.h:456:1
-    CF: git_offset_1st_component at git-compat-util.h:457:9
-    CT: git_is_dir_sep at git-compat-util.h:447:1
-    RF: git_is_dir_sep at git-compat-util.h:449:1
-    RF: git_offset_1st_component at git-compat-util.h:458:1
     CF: safe_create_leading_directories_1 at object-file.c:353:21
     CT: git_is_dir_sep at git-compat-util.h:447:1
-    RF: git_is_dir_sep at git-compat-util.h:449:1
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:1
-  Occurrences: 5
-
-Uncategorised
-  Before events:
-    CF: safe_create_leading_directories at object-file.c:400:9
-    CT: safe_create_leading_directories_1 at object-file.c:345:1
-    CF: safe_create_leading_directories_1 at object-file.c:346:32
-    CT: git_offset_1st_component at git-compat-util.h:456:1
-    CF: git_offset_1st_component at git-compat-util.h:457:9
-    CT: git_is_dir_sep at git-compat-util.h:447:1
-    RF: git_is_dir_sep at git-compat-util.h:449:1
-    RF: git_offset_1st_component at git-compat-util.h:458:1
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:1
-    RF: git_is_dir_sep at git-compat-util.h:449:1
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:1
-    RF: git_is_dir_sep at git-compat-util.h:449:1
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:1
-    RF: git_is_dir_sep at git-compat-util.h:449:1
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:1
-    RF: git_is_dir_sep at git-compat-util.h:449:1
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:1
-    RF: git_is_dir_sep at git-compat-util.h:449:1
-    CF: safe_create_leading_directories_1 at object-file.c:360:10
-    CT: git_is_dir_sep at git-compat-util.h:447:1
-    RF: git_is_dir_sep at git-compat-util.h:449:1
-    CF: safe_create_leading_directories_1 at object-file.c:367:8
-    CT: Jump to external code for stat64
-    RF: Jump to external code for stat64
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    [...166 more events...]
-  Occurrences: 1
+  Occurrences: 6
 
 Uncategorised
   Before events:
@@ -6475,17 +6556,14 @@ Uncategorised
   Before events:
     CF: setup_git_directory_gently_1 at setup.c:1296:4
     CT: strbuf_addch at strbuf.h:229:1
-    CF: strbuf_addch at strbuf.h:230:7
-  Occurrences: 48
+  Occurrences: 4
 
 Uncategorised
   Before events:
     CF: setup_git_directory_gently_1 at setup.c:1296:4
     CT: strbuf_addch at strbuf.h:229:1
     CF: strbuf_addch at strbuf.h:230:7
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-  Occurrences: 4
+  Occurrences: 48
 
 Uncategorised
   Before events:
@@ -6503,9 +6581,6 @@ Uncategorised
   Before events:
     CF: store_create_section at config.c:2988:3
     CT: strbuf_addch at strbuf.h:229:1
-    CF: strbuf_addch at strbuf.h:230:7
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
   Occurrences: 6
 
 Uncategorised
@@ -6562,35 +6637,8 @@ Uncategorised
   Before events:
     CF: strbuf_realpath_1 at abspath.c:117:4
     CT: strip_last_component at abspath.c:16:1
-    CF: strip_last_component at abspath.c:17:18
-    CT: git_offset_1st_component at git-compat-util.h:456:1
-    CF: git_offset_1st_component at git-compat-util.h:457:9
-    CT: git_is_dir_sep at git-compat-util.h:447:1
-    RF: git_is_dir_sep at git-compat-util.h:449:1
-    RF: git_offset_1st_component at git-compat-util.h:458:1
     CF: strip_last_component at abspath.c:21:26
     CT: git_is_dir_sep at git-compat-util.h:447:1
-    RF: git_is_dir_sep at git-compat-util.h:449:1
-    CF: strip_last_component at abspath.c:21:26
-    CT: git_is_dir_sep at git-compat-util.h:447:1
-    RF: git_is_dir_sep at git-compat-util.h:449:1
-    CF: strip_last_component at abspath.c:21:26
-    CT: git_is_dir_sep at git-compat-util.h:447:1
-    RF: git_is_dir_sep at git-compat-util.h:449:1
-    CF: strip_last_component at abspath.c:21:26
-    CT: git_is_dir_sep at git-compat-util.h:447:1
-    RF: git_is_dir_sep at git-compat-util.h:449:1
-    CF: strip_last_component at abspath.c:21:26
-    CT: git_is_dir_sep at git-compat-util.h:447:1
-    RF: git_is_dir_sep at git-compat-util.h:449:1
-    CF: strip_last_component at abspath.c:21:26
-    CT: git_is_dir_sep at git-compat-util.h:447:1
-    RF: git_is_dir_sep at git-compat-util.h:449:1
-    CF: strip_last_component at abspath.c:21:26
-    CT: git_is_dir_sep at git-compat-util.h:447:1
-    RF: git_is_dir_sep at git-compat-util.h:449:1
-    CF: strip_last_component at abspath.c:21:26
-    [...79 more events...]
   Occurrences: 52
 
 Uncategorised
@@ -6609,48 +6657,18 @@ Uncategorised
   Before events:
     CF: write_pair at config.c:3046:4
     CT: strbuf_addch at strbuf.h:229:1
-  Occurrences: 6
+  Occurrences: 19
 
 Uncategorised
   Before events:
     CF: write_pair at config.c:3046:4
     CT: strbuf_addch at strbuf.h:229:1
-    CF: strbuf_addch at strbuf.h:230:7
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
-  Occurrences: 13
-
-Uncategorised
-  Before events:
-    CF: write_pair at config.c:3046:4
-    CT: strbuf_addch at strbuf.h:229:1
-    CF: strbuf_addch at strbuf.h:230:7
-    CT: strbuf_avail at strbuf.h:140:1
-    RF: strbuf_avail at strbuf.h:142:1
     CT: strbuf_avail at strbuf.h:140:1
   Occurrences: 6
 
 Uncategorised
   Before events:
     CT: get_next_component at abspath.c:32:1
-    CF: get_next_component at abspath.c:40:31
-    CT: git_is_dir_sep at git-compat-util.h:447:1
-    RF: git_is_dir_sep at git-compat-util.h:449:1
-    CF: get_next_component at abspath.c:40:31
-    CT: git_is_dir_sep at git-compat-util.h:447:1
-    RF: git_is_dir_sep at git-compat-util.h:449:1
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:1
-    RF: git_is_dir_sep at git-compat-util.h:449:1
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:1
-    RF: git_is_dir_sep at git-compat-util.h:449:1
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:1
-    RF: git_is_dir_sep at git-compat-util.h:449:1
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:1
-    RF: git_is_dir_sep at git-compat-util.h:449:1
     CF: get_next_component at abspath.c:46:2
     CT: strbuf_add at strbuf.c:297:1
     CF: strbuf_add at strbuf.c:298:2
@@ -6660,96 +6678,31 @@ Uncategorised
 Uncategorised
   Before events:
     CT: get_next_component at abspath.c:32:1
-    CF: get_next_component at abspath.c:40:31
-    CT: git_is_dir_sep at git-compat-util.h:447:1
-    RF: git_is_dir_sep at git-compat-util.h:449:1
-    CF: get_next_component at abspath.c:40:31
-    CT: git_is_dir_sep at git-compat-util.h:447:1
-    RF: git_is_dir_sep at git-compat-util.h:449:1
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:1
-    RF: git_is_dir_sep at git-compat-util.h:449:1
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:1
-    RF: git_is_dir_sep at git-compat-util.h:449:1
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:1
-    RF: git_is_dir_sep at git-compat-util.h:449:1
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:1
-    RF: git_is_dir_sep at git-compat-util.h:449:1
     CF: get_next_component at abspath.c:46:2
     CT: strbuf_add at strbuf.c:297:1
-    CF: strbuf_add at strbuf.c:298:2
-    CT: strbuf_grow at strbuf.c:92:1
-    RF: strbuf_grow at strbuf.c:102:1
     CF: strbuf_add at strbuf.c:299:2
     CT: Jump to external code for memcpy
-    RF: Jump to external code for memcpy
-    CF: strbuf_add at strbuf.c:300:2
-    CT: strbuf_setlen at strbuf.h:161:1
-    RF: strbuf_setlen at strbuf.h:169:1
-    [...6 more events...]
+  Occurrences: 4
+
+Uncategorised
+  Before events:
+    CT: get_next_component at abspath.c:32:1
+    CF: get_next_component at abspath.c:48:2
+    CT: strbuf_remove at strbuf.c:292:1
+    CF: strbuf_remove at strbuf.c:293:2
+    CT: strbuf_splice at strbuf.c:233:1
+    CF: strbuf_splice at strbuf.c:243:2
   Occurrences: 52
 
 Uncategorised
   Before events:
     CT: get_next_component at abspath.c:32:1
-    CF: get_next_component at abspath.c:40:31
-    CT: git_is_dir_sep at git-compat-util.h:447:1
-    RF: git_is_dir_sep at git-compat-util.h:449:1
-    CF: get_next_component at abspath.c:40:31
-    CT: git_is_dir_sep at git-compat-util.h:447:1
-    RF: git_is_dir_sep at git-compat-util.h:449:1
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:1
-    RF: git_is_dir_sep at git-compat-util.h:449:1
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:1
-    RF: git_is_dir_sep at git-compat-util.h:449:1
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:1
-    RF: git_is_dir_sep at git-compat-util.h:449:1
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:1
-    RF: git_is_dir_sep at git-compat-util.h:449:1
-    CF: get_next_component at abspath.c:46:2
-    CT: strbuf_add at strbuf.c:297:1
-    CF: strbuf_add at strbuf.c:298:2
-    CT: strbuf_grow at strbuf.c:92:1
-    RF: strbuf_grow at strbuf.c:102:1
-    CF: strbuf_add at strbuf.c:299:2
-    CT: Jump to external code for memcpy
-    RF: Jump to external code for memcpy
-    CF: strbuf_add at strbuf.c:300:2
-    CT: strbuf_setlen at strbuf.h:161:1
-    RF: strbuf_setlen at strbuf.h:169:1
-    [...12 more events...]
+    CF: get_next_component at abspath.c:48:2
+    CT: strbuf_remove at strbuf.c:292:1
+    CF: strbuf_remove at strbuf.c:293:2
+    CT: strbuf_splice at strbuf.c:233:1
+    CF: strbuf_splice at strbuf.c:247:2
   Occurrences: 35
-
-Uncategorised
-  Before events:
-    CT: get_next_component at abspath.c:32:1
-    CF: get_next_component at abspath.c:40:31
-    CT: git_is_dir_sep at git-compat-util.h:447:1
-    RF: git_is_dir_sep at git-compat-util.h:449:1
-    CF: get_next_component at abspath.c:40:31
-    CT: git_is_dir_sep at git-compat-util.h:447:1
-    RF: git_is_dir_sep at git-compat-util.h:449:1
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:1
-    RF: git_is_dir_sep at git-compat-util.h:449:1
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:1
-    RF: git_is_dir_sep at git-compat-util.h:449:1
-    CF: get_next_component at abspath.c:46:2
-    CT: strbuf_add at strbuf.c:297:1
-    CF: strbuf_add at strbuf.c:298:2
-    CT: strbuf_grow at strbuf.c:92:1
-    RF: strbuf_grow at strbuf.c:102:1
-    CF: strbuf_add at strbuf.c:299:2
-    CT: Jump to external code for memcpy
-  Occurrences: 4
 
 Uncategorised
   Before events:
@@ -6784,10 +6737,10 @@ LibraryCallInlined
   Unique divergence coordinates: 7
 
 LibraryCallRemoved
-  Unique divergence coordinates: 37
+  Unique divergence coordinates: 39
 
 ProgramCallRemoved
-  Unique divergence coordinates: 78
+  Unique divergence coordinates: 105
 
 InlinedReentryAdded
   Unique divergence coordinates: 9
@@ -6799,9 +6752,9 @@ InlinedReturnAdded
   Unique divergence coordinates: 34
 
 Uncategorised
-  Unique divergence coordinates: 237
+  Unique divergence coordinates: 220
 
 ## Summary
 
-914 unique divergence coordinates
-265719 divergence occurrences
+926 unique divergence coordinates
+267026 divergence occurrences

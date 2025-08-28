@@ -6112,6 +6112,34 @@ LibraryCallRemoved
 
 LibraryCallRemoved
   Before events:
+    CF: check_tag at object-file.c:2338:2
+    CT: Jump to external code for memset
+    RF: Jump to external code for memset
+  Occurrences: 1
+
+LibraryCallRemoved
+  Before events:
+    CF: cmd_cat_file at builtin/cat-file.c:887:23
+    CT: Jump to external code for memset
+    RF: Jump to external code for memset
+  Occurrences: 9
+
+LibraryCallRemoved
+  Before events:
+    CF: cmd_cat_file at builtin/cat-file.c:890:21
+    CT: Jump to external code for memcpy
+    RF: Jump to external code for memcpy
+  Occurrences: 9
+
+LibraryCallRemoved
+  Before events:
+    CF: cmd_cat_file at builtin/cat-file.c:901:34
+    CT: Jump to external code for memset
+    RF: Jump to external code for memset
+  Occurrences: 54
+
+LibraryCallRemoved
+  Before events:
     CF: cmd_env__helper at builtin/env--helper.c:41:25
     CT: Jump to external code for memset
     RF: Jump to external code for memset
@@ -6130,6 +6158,13 @@ LibraryCallRemoved
     CT: Jump to external code for memset
     RF: Jump to external code for memset
   Occurrences: 6
+
+LibraryCallRemoved
+  Before events:
+    CF: config_file_fgetc at config.c:97:9
+    CT: Jump to external code for getc_unlocked
+    RF: Jump to external code for getc_unlocked
+  Occurrences: 138
 
 LibraryCallRemoved
   Before events:
@@ -6462,6 +6497,13 @@ LibraryCallRemoved
 
 LibraryCallRemoved
   Before events:
+    CF: strbuf_add at strbuf.c:299:2
+    CT: Jump to external code for memcpy
+    RF: Jump to external code for memcpy
+  Occurrences: 19
+
+LibraryCallRemoved
+  Before events:
     CF: strbuf_addstr at strbuf.h:305:20
     CT: Jump to external code for strlen
     RF: Jump to external code for strlen
@@ -6473,6 +6515,13 @@ LibraryCallRemoved
     CT: Jump to external code for __errno_location
     RF: Jump to external code for __errno_location
   Occurrences: 1
+
+LibraryCallRemoved
+  Before events:
+    CF: strbuf_splice at strbuf.c:243:2
+    CT: Jump to external code for memmove
+    RF: Jump to external code for memmove
+  Occurrences: 35
 
 LibraryCallRemoved
   Before events:
@@ -6577,6 +6626,44 @@ ProgramCallRemoved
 
 ProgramCallRemoved
   Before events:
+    CF: check_tag at object-file.c:2339:6
+    CT: parse_tag_buffer at tag.c:137:0
+    RF: parse_tag_buffer at tag.c:208:1
+  Occurrences: 1
+
+ProgramCallRemoved
+  Before events:
+    CF: check_tag at object-file.c:2340:7
+    CT: _ at gettext.h:45:0
+    CF: _ at gettext.h:48:9
+    CT: Jump to external code for gettext
+    RF: Jump to external code for gettext
+    RF: _ at gettext.h:49:1
+    CF: check_tag at object-file.c:2340:3
+    CT: die at usage.c:172:0
+    CF: die at usage.c:175:6
+    CT: die_is_recursing_builtin at usage.c:92:0
+    RF: die_is_recursing_builtin at usage.c:111:1
+    CF: die at usage.c:181:2
+    CT: die_builtin at usage.c:70:0
+    CF: die_builtin at usage.c:71:29
+    CT: get_die_message_routine at usage.c:128:0
+    RF: get_die_message_routine at usage.c:129:2
+    CF: die_builtin at usage.c:73:2
+    CT: die_message_builtin at usage.c:59:0
+    CF: die_message_builtin at usage.c:60:2
+    CT: trace2_cmd_error_va_fl at trace2.c:292:0
+    RF: trace2_cmd_error_va_fl at trace2.c:306:1
+    CF: die_message_builtin at usage.c:61:11
+    CT: _ at gettext.h:45:0
+    CF: _ at gettext.h:48:9
+    CT: Jump to external code for gettext
+    RF: Jump to external code for gettext
+    RF: _ at gettext.h:49:1
+  Occurrences: 1
+
+ProgramCallRemoved
+  Before events:
     CF: check_vector_add at attr.c:500:2
     CT: vector_lock at attr.c:489:0
     RF: vector_lock at attr.c:491:1
@@ -6611,6 +6698,13 @@ ProgramCallRemoved
 
 ProgramCallRemoved
   Before events:
+    CF: common_exit at common-main.c:81:2
+    CT: check_bug_if_BUG at common-main.c:64:0
+    RF: check_bug_if_BUG at common-main.c:66:3
+  Occurrences: 1
+
+ProgramCallRemoved
+  Before events:
     CF: configset_find_element at config.c:2306:16
     CT: container_of_or_null_offset at git-compat-util.h:1580:0
     RF: container_of_or_null_offset at git-compat-util.h:1581:2
@@ -6641,6 +6735,34 @@ ProgramCallRemoved
 
 ProgramCallRemoved
   Before events:
+    CF: die_message_builtin at usage.c:61:2
+    CT: vreportf at usage.c:10:0
+    CF: vreportf at usage.c:13:22
+    CT: Jump to external code for strlen
+    RF: Jump to external code for strlen
+    CF: vreportf at usage.c:19:2
+    CT: Jump to external code for memcpy
+    RF: Jump to external code for memcpy
+    CF: vreportf at usage.c:21:6
+    CT: Jump to external code for vsnprintf
+    RF: Jump to external code for vsnprintf
+    CF: vreportf at usage.c:30:2
+    CT: Jump to external code for fflush
+    RF: Jump to external code for fflush
+    CF: vreportf at usage.c:31:2
+    CT: write_in_full at wrapper.c:302:0
+    CF: write_in_full at wrapper.c:307:21
+    CT: xwrite at wrapper.c:247:0
+    CF: xwrite at wrapper.c:252:8
+    CT: Jump to external code for write
+    RF: Jump to external code for write
+    RF: xwrite at wrapper.c:260:3
+    RF: write_in_full at wrapper.c:320:1
+    RF: vreportf at usage.c:32:1
+  Occurrences: 1
+
+ProgramCallRemoved
+  Before events:
     CF: free_individual_entries at hashmap.c:182:2
     CT: hashmap_iter_init at hashmap.c:288:0
     RF: hashmap_iter_init at hashmap.c:292:1
@@ -6648,10 +6770,31 @@ ProgramCallRemoved
 
 ProgramCallRemoved
   Before events:
+    CF: get_base_var at config.c:957:11
+    CT: get_next_char at config.c:781:0
+    CF: get_next_char at config.c:782:10
+    CT: config_file_fgetc at config.c:96:0
+    CF: config_file_fgetc at config.c:97:9
+    CT: Jump to external code for getc_unlocked
+    RF: Jump to external code for getc_unlocked
+    RF: config_file_fgetc at config.c:97:2
+    RF: get_next_char at config.c:814:1
+    CT: get_next_char at config.c:781:0
+    CF: get_next_char at config.c:782:10
+    CT: config_file_fgetc at config.c:96:0
+    CF: config_file_fgetc at config.c:97:9
+    CT: Jump to external code for getc_unlocked
+    RF: Jump to external code for getc_unlocked
+    RF: config_file_fgetc at config.c:97:2
+    RF: get_next_char at config.c:814:1
+  Occurrences: 132
+
+ProgramCallRemoved
+  Before events:
     CF: get_next_component at abspath.c:43:29
     CT: git_is_dir_sep at git-compat-util.h:447:0
     RF: git_is_dir_sep at git-compat-util.h:448:2
-  Occurrences: 94
+  Occurrences: 98
 
 ProgramCallRemoved
   Before events:
@@ -6662,6 +6805,228 @@ ProgramCallRemoved
     CT: git_is_dir_sep at git-compat-util.h:447:0
     RF: git_is_dir_sep at git-compat-util.h:448:2
   Occurrences: 3
+
+ProgramCallRemoved
+  Before events:
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+  Occurrences: 106
+
+ProgramCallRemoved
+  Before events:
+    CF: get_next_component at abspath.c:46:2
+    CT: strbuf_add at strbuf.c:297:0
+    CF: strbuf_add at strbuf.c:298:2
+    CT: strbuf_grow at strbuf.c:92:0
+    RF: strbuf_grow at strbuf.c:102:1
+    CF: strbuf_add at strbuf.c:299:2
+    CT: Jump to external code for memcpy
+    RF: Jump to external code for memcpy
+    CF: strbuf_add at strbuf.c:300:2
+    CT: strbuf_setlen at strbuf.h:161:0
+    RF: strbuf_setlen at strbuf.h:169:1
+    RF: strbuf_add at strbuf.c:301:1
+  Occurrences: 87
+
+ProgramCallRemoved
+  Before events:
+    CF: get_value at config.c:885:7
+    CT: get_next_char at config.c:781:0
+    CF: get_next_char at config.c:782:10
+    CT: config_file_fgetc at config.c:96:0
+    CF: config_file_fgetc at config.c:97:9
+    CT: Jump to external code for getc_unlocked
+    RF: Jump to external code for getc_unlocked
+    RF: config_file_fgetc at config.c:97:2
+    RF: get_next_char at config.c:814:1
+    CT: get_next_char at config.c:781:0
+    CF: get_next_char at config.c:782:10
+    CT: config_file_fgetc at config.c:96:0
+    CF: config_file_fgetc at config.c:97:9
+    CT: Jump to external code for getc_unlocked
+    RF: Jump to external code for getc_unlocked
+    RF: config_file_fgetc at config.c:97:2
+    RF: get_next_char at config.c:814:1
+    CT: get_next_char at config.c:781:0
+    CF: get_next_char at config.c:782:10
+    CT: config_file_fgetc at config.c:96:0
+    CF: config_file_fgetc at config.c:97:9
+    CT: Jump to external code for getc_unlocked
+    RF: Jump to external code for getc_unlocked
+    RF: config_file_fgetc at config.c:97:2
+    RF: get_next_char at config.c:814:1
+    CT: get_next_char at config.c:781:0
+    CF: get_next_char at config.c:782:10
+    CT: config_file_fgetc at config.c:96:0
+    CF: config_file_fgetc at config.c:97:9
+    CT: Jump to external code for getc_unlocked
+    [...35 more events...]
+  Occurrences: 6
+
+ProgramCallRemoved
+  Before events:
+    CF: get_value at config.c:885:7
+    CT: get_next_char at config.c:781:0
+    CF: get_next_char at config.c:782:10
+    CT: config_file_fgetc at config.c:96:0
+    CF: config_file_fgetc at config.c:97:9
+    CT: Jump to external code for getc_unlocked
+    RF: Jump to external code for getc_unlocked
+    RF: config_file_fgetc at config.c:97:2
+    RF: get_next_char at config.c:814:1
+    CT: get_next_char at config.c:781:0
+    CF: get_next_char at config.c:782:10
+    CT: config_file_fgetc at config.c:96:0
+    CF: config_file_fgetc at config.c:97:9
+    CT: Jump to external code for getc_unlocked
+    RF: Jump to external code for getc_unlocked
+    RF: config_file_fgetc at config.c:97:2
+    RF: get_next_char at config.c:814:1
+    CT: get_next_char at config.c:781:0
+    CF: get_next_char at config.c:782:10
+    CT: config_file_fgetc at config.c:96:0
+    CF: config_file_fgetc at config.c:97:9
+    CT: Jump to external code for getc_unlocked
+    RF: Jump to external code for getc_unlocked
+    RF: config_file_fgetc at config.c:97:2
+    RF: get_next_char at config.c:814:1
+    CT: get_next_char at config.c:781:0
+    CF: get_next_char at config.c:782:10
+    CT: config_file_fgetc at config.c:96:0
+    CF: config_file_fgetc at config.c:97:9
+    CT: Jump to external code for getc_unlocked
+    [...51 more events...]
+  Occurrences: 6
+
+ProgramCallRemoved
+  Before events:
+    CF: get_value at config.c:885:7
+    CT: get_next_char at config.c:781:0
+    CF: get_next_char at config.c:782:10
+    CT: config_file_fgetc at config.c:96:0
+    CF: config_file_fgetc at config.c:97:9
+    CT: Jump to external code for getc_unlocked
+    RF: Jump to external code for getc_unlocked
+    RF: config_file_fgetc at config.c:97:2
+    RF: get_next_char at config.c:814:1
+    CT: get_next_char at config.c:781:0
+    CF: get_next_char at config.c:782:10
+    CT: config_file_fgetc at config.c:96:0
+    CF: config_file_fgetc at config.c:97:9
+    CT: Jump to external code for getc_unlocked
+    RF: Jump to external code for getc_unlocked
+    RF: config_file_fgetc at config.c:97:2
+    RF: get_next_char at config.c:814:1
+    CT: get_next_char at config.c:781:0
+    CF: get_next_char at config.c:782:10
+    CT: config_file_fgetc at config.c:96:0
+    CF: config_file_fgetc at config.c:97:9
+    CT: Jump to external code for getc_unlocked
+    RF: Jump to external code for getc_unlocked
+    RF: config_file_fgetc at config.c:97:2
+    RF: get_next_char at config.c:814:1
+    CT: get_next_char at config.c:781:0
+    CF: get_next_char at config.c:782:10
+    CT: config_file_fgetc at config.c:96:0
+    CF: config_file_fgetc at config.c:97:9
+    CT: Jump to external code for getc_unlocked
+    [...59 more events...]
+  Occurrences: 6
+
+ProgramCallRemoved
+  Before events:
+    CF: get_value at config.c:885:7
+    CT: get_next_char at config.c:781:0
+    CF: get_next_char at config.c:782:10
+    CT: config_file_fgetc at config.c:96:0
+    CF: config_file_fgetc at config.c:97:9
+    CT: Jump to external code for getc_unlocked
+    RF: Jump to external code for getc_unlocked
+    RF: config_file_fgetc at config.c:97:2
+    RF: get_next_char at config.c:814:1
+    CT: get_next_char at config.c:781:0
+    CF: get_next_char at config.c:782:10
+    CT: config_file_fgetc at config.c:96:0
+    CF: config_file_fgetc at config.c:97:9
+    CT: Jump to external code for getc_unlocked
+    RF: Jump to external code for getc_unlocked
+    RF: config_file_fgetc at config.c:97:2
+    RF: get_next_char at config.c:814:1
+    CT: get_next_char at config.c:781:0
+    CF: get_next_char at config.c:782:10
+    CT: config_file_fgetc at config.c:96:0
+    CF: config_file_fgetc at config.c:97:9
+    CT: Jump to external code for getc_unlocked
+    RF: Jump to external code for getc_unlocked
+    RF: config_file_fgetc at config.c:97:2
+    RF: get_next_char at config.c:814:1
+    CT: get_next_char at config.c:781:0
+    CF: get_next_char at config.c:782:10
+    CT: config_file_fgetc at config.c:96:0
+    CF: config_file_fgetc at config.c:97:9
+    CT: Jump to external code for getc_unlocked
+    [...107 more events...]
+  Occurrences: 88
+
+ProgramCallRemoved
+  Before events:
+    CF: get_value at config.c:885:7
+    CT: get_next_char at config.c:781:0
+    CF: get_next_char at config.c:782:10
+    CT: config_file_fgetc at config.c:96:0
+    CF: config_file_fgetc at config.c:97:9
+    CT: Jump to external code for getc_unlocked
+    RF: Jump to external code for getc_unlocked
+    RF: config_file_fgetc at config.c:97:2
+    RF: get_next_char at config.c:814:1
+    CT: get_next_char at config.c:781:0
+    CF: get_next_char at config.c:782:10
+    CT: config_file_fgetc at config.c:96:0
+    CF: config_file_fgetc at config.c:97:9
+    CT: Jump to external code for getc_unlocked
+    RF: Jump to external code for getc_unlocked
+    RF: config_file_fgetc at config.c:97:2
+    RF: get_next_char at config.c:814:1
+    CT: get_next_char at config.c:781:0
+    CF: get_next_char at config.c:782:10
+    CT: config_file_fgetc at config.c:96:0
+    CF: config_file_fgetc at config.c:97:9
+    CT: Jump to external code for getc_unlocked
+    RF: Jump to external code for getc_unlocked
+    RF: config_file_fgetc at config.c:97:2
+    RF: get_next_char at config.c:814:1
+    CT: get_next_char at config.c:781:0
+    CF: get_next_char at config.c:782:10
+    CT: config_file_fgetc at config.c:96:0
+    CF: config_file_fgetc at config.c:97:9
+    CT: Jump to external code for getc_unlocked
+    [...131 more events...]
+  Occurrences: 26
 
 ProgramCallRemoved
   Before events:
@@ -6700,6 +7065,41 @@ ProgramCallRemoved
 
 ProgramCallRemoved
   Before events:
+    CF: git_parse_source at config.c:1027:7
+    CT: get_next_char at config.c:781:0
+    CF: get_next_char at config.c:782:10
+    CT: config_file_fgetc at config.c:96:0
+    CF: config_file_fgetc at config.c:97:9
+    CT: Jump to external code for getc_unlocked
+    RF: Jump to external code for getc_unlocked
+    RF: config_file_fgetc at config.c:97:2
+    RF: get_next_char at config.c:814:1
+    CT: get_next_char at config.c:781:0
+    CF: get_next_char at config.c:782:10
+    CT: config_file_fgetc at config.c:96:0
+    CF: config_file_fgetc at config.c:97:9
+    CT: Jump to external code for getc_unlocked
+    RF: Jump to external code for getc_unlocked
+    RF: config_file_fgetc at config.c:97:2
+    RF: get_next_char at config.c:814:1
+    CT: get_next_char at config.c:781:0
+    CF: get_next_char at config.c:782:10
+    CT: config_file_fgetc at config.c:96:0
+    CF: config_file_fgetc at config.c:97:9
+    CT: Jump to external code for getc_unlocked
+    RF: Jump to external code for getc_unlocked
+    RF: config_file_fgetc at config.c:97:2
+    RF: get_next_char at config.c:814:1
+    CT: get_next_char at config.c:781:0
+    CF: get_next_char at config.c:782:10
+    CT: config_file_fgetc at config.c:96:0
+    CF: config_file_fgetc at config.c:97:9
+    CT: Jump to external code for getc_unlocked
+    [...1804 more events...]
+  Occurrences: 2
+
+ProgramCallRemoved
+  Before events:
     CF: git_parse_source at config.c:1091:21
     CT: sane_case at git-compat-util.h:1235:0
     RF: sane_case at git-compat-util.h:1238:2
@@ -6728,6 +7128,51 @@ ProgramCallRemoved
     CT: container_of_or_null_offset at git-compat-util.h:1580:0
     RF: container_of_or_null_offset at git-compat-util.h:1581:2
   Occurrences: 221
+
+ProgramCallRemoved
+  Before events:
+    CF: normalize_path_copy_len at path.c:1126:14
+    CT: git_offset_1st_component at git-compat-util.h:456:0
+    CF: git_offset_1st_component at git-compat-util.h:457:9
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    RF: git_offset_1st_component at git-compat-util.h:457:2
+  Occurrences: 133
+
+ProgramCallRemoved
+  Before events:
+    CF: normalize_path_copy_len at path.c:1129:7
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: normalize_path_copy_len at path.c:1135:9
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: normalize_path_copy_len at path.c:1175:35
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: normalize_path_copy_len at path.c:1175:35
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: normalize_path_copy_len at path.c:1175:35
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: normalize_path_copy_len at path.c:1175:35
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: normalize_path_copy_len at path.c:1175:35
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: normalize_path_copy_len at path.c:1177:7
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: normalize_path_copy_len at path.c:1179:11
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    [...58 more events...]
+  Occurrences: 133
 
 ProgramCallRemoved
   Before events:
@@ -6801,6 +7246,58 @@ ProgramCallRemoved
 
 ProgramCallRemoved
   Before events:
+    CF: safe_create_leading_directories_1 at object-file.c:346:32
+    CT: git_offset_1st_component at git-compat-util.h:456:0
+    CF: git_offset_1st_component at git-compat-util.h:457:9
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    RF: git_offset_1st_component at git-compat-util.h:457:2
+  Occurrences: 6
+
+ProgramCallRemoved
+  Before events:
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+  Occurrences: 5
+
+ProgramCallRemoved
+  Before events:
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:360:10
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:367:8
+    CT: Jump to external code for stat64
+    RF: Jump to external code for stat64
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    [...156 more events...]
+  Occurrences: 1
+
+ProgramCallRemoved
+  Before events:
     CF: setup_git_directory_gently at setup.c:1569:12
     CT: precompose_string_if_needed at git-compat-util.h:324:0
     RF: precompose_string_if_needed at git-compat-util.h:325:2
@@ -6819,6 +7316,13 @@ ProgramCallRemoved
     CT: check_signum at sigchain.c:14:0
     RF: check_signum at sigchain.c:17:1
   Occurrences: 35
+
+ProgramCallRemoved
+  Before events:
+    CF: strbuf_add at strbuf.c:298:2
+    CT: strbuf_grow at strbuf.c:92:0
+    RF: strbuf_grow at strbuf.c:102:1
+  Occurrences: 19
 
 ProgramCallRemoved
   Before events:
@@ -7432,7 +7936,12 @@ InlinedReturnAdded
 InlinedReturnAdded
   After events:
     IRF: ref_entry_cmp_sslice at refs/ref-cache.c:0:0
-  Occurrences: 33
+  Occurrences: 64
+
+InlinedReturnAdded
+  After events:
+    IRF: ref_entry_cmp_sslice at refs/ref-cache.c:120:14
+  Occurrences: 6
 
 InlinedReturnAdded
   After events:
@@ -7517,7 +8026,7 @@ InlinedReturnAdded
 InlinedReturnAdded
   After events:
     IRF: xwrite at wrapper.c:0:0
-  Occurrences: 1
+  Occurrences: 2
 
 Uncategorised
   After events:
@@ -8259,19 +8768,7 @@ Uncategorised
 Uncategorised
   After events:
     RF: Jump to external code for strncmp
-  Occurrences: 22
-
-Uncategorised
-  After events:
-    RF: Jump to external code for strncmp
-    IRF: ref_entry_cmp_sslice at refs/ref-cache.c:0:0
-  Occurrences: 31
-
-Uncategorised
-  After events:
-    RF: Jump to external code for strncmp
-    IRF: ref_entry_cmp_sslice at refs/ref-cache.c:120:14
-  Occurrences: 6
+  Occurrences: 59
 
 Uncategorised
   After events:
@@ -8287,7 +8784,6 @@ Uncategorised
 Uncategorised
   After events:
     RF: Jump to external code for write
-    IRF: xwrite at wrapper.c:0:0
   Occurrences: 1
 
 Uncategorised
@@ -8365,240 +8861,45 @@ Uncategorised
   Before events:
     CF: do_config_from at config.c:1951:8
     CT: git_parse_source at config.c:1009:0
-    CF: git_parse_source at config.c:1027:7
     CT: get_next_char at config.c:781:0
     CF: get_next_char at config.c:782:10
     CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: Jump to external code for getc_unlocked
-    RF: Jump to external code for getc_unlocked
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:814:1
-    CT: get_next_char at config.c:781:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: Jump to external code for getc_unlocked
-    RF: Jump to external code for getc_unlocked
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:814:1
-    CT: get_next_char at config.c:781:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: Jump to external code for getc_unlocked
-    RF: Jump to external code for getc_unlocked
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:814:1
-    CT: get_next_char at config.c:781:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    [...1809 more events...]
   Occurrences: 2
 
 Uncategorised
   Before events:
     CF: git_parse_source at config.c:1073:8
     CT: get_base_var at config.c:954:0
-    CF: get_base_var at config.c:957:11
     CT: get_next_char at config.c:781:0
     CF: get_next_char at config.c:782:10
     CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: Jump to external code for getc_unlocked
-    RF: Jump to external code for getc_unlocked
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:814:1
-    CT: get_next_char at config.c:781:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: Jump to external code for getc_unlocked
-    RF: Jump to external code for getc_unlocked
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:814:1
-    CT: get_next_char at config.c:781:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: Jump to external code for getc_unlocked
-    RF: Jump to external code for getc_unlocked
   Occurrences: 132
 
 Uncategorised
   Before events:
     CF: git_parse_source at config.c:1092:7
     CT: get_value at config.c:878:0
-    CF: get_value at config.c:885:7
+  Occurrences: 32
+
+Uncategorised
+  Before events:
+    CF: git_parse_source at config.c:1092:7
+    CT: get_value at config.c:878:0
+    CT: get_next_char at config.c:781:0
+    CF: get_next_char at config.c:782:10
+    CT: config_file_fgetc at config.c:96:0
+  Occurrences: 94
+
+Uncategorised
+  Before events:
+    CF: git_parse_source at config.c:1092:7
+    CT: get_value at config.c:878:0
     CT: get_next_char at config.c:781:0
     CF: get_next_char at config.c:782:10
     CT: config_file_fgetc at config.c:96:0
     CF: config_file_fgetc at config.c:97:9
     CT: Jump to external code for getc_unlocked
-    RF: Jump to external code for getc_unlocked
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:814:1
-    CT: get_next_char at config.c:781:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: Jump to external code for getc_unlocked
-    RF: Jump to external code for getc_unlocked
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:814:1
-    CT: get_next_char at config.c:781:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: Jump to external code for getc_unlocked
-    RF: Jump to external code for getc_unlocked
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:814:1
-    CT: get_next_char at config.c:781:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    [...37 more events...]
   Occurrences: 6
-
-Uncategorised
-  Before events:
-    CF: git_parse_source at config.c:1092:7
-    CT: get_value at config.c:878:0
-    CF: get_value at config.c:885:7
-    CT: get_next_char at config.c:781:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: Jump to external code for getc_unlocked
-    RF: Jump to external code for getc_unlocked
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:814:1
-    CT: get_next_char at config.c:781:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: Jump to external code for getc_unlocked
-    RF: Jump to external code for getc_unlocked
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:814:1
-    CT: get_next_char at config.c:781:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: Jump to external code for getc_unlocked
-    RF: Jump to external code for getc_unlocked
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:814:1
-    CT: get_next_char at config.c:781:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    [...58 more events...]
-  Occurrences: 6
-
-Uncategorised
-  Before events:
-    CF: git_parse_source at config.c:1092:7
-    CT: get_value at config.c:878:0
-    CF: get_value at config.c:885:7
-    CT: get_next_char at config.c:781:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: Jump to external code for getc_unlocked
-    RF: Jump to external code for getc_unlocked
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:814:1
-    CT: get_next_char at config.c:781:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: Jump to external code for getc_unlocked
-    RF: Jump to external code for getc_unlocked
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:814:1
-    CT: get_next_char at config.c:781:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: Jump to external code for getc_unlocked
-    RF: Jump to external code for getc_unlocked
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:814:1
-    CT: get_next_char at config.c:781:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    [...67 more events...]
-  Occurrences: 6
-
-Uncategorised
-  Before events:
-    CF: git_parse_source at config.c:1092:7
-    CT: get_value at config.c:878:0
-    CF: get_value at config.c:885:7
-    CT: get_next_char at config.c:781:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: Jump to external code for getc_unlocked
-    RF: Jump to external code for getc_unlocked
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:814:1
-    CT: get_next_char at config.c:781:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: Jump to external code for getc_unlocked
-    RF: Jump to external code for getc_unlocked
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:814:1
-    CT: get_next_char at config.c:781:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: Jump to external code for getc_unlocked
-    RF: Jump to external code for getc_unlocked
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:814:1
-    CT: get_next_char at config.c:781:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    [...112 more events...]
-  Occurrences: 88
-
-Uncategorised
-  Before events:
-    CF: git_parse_source at config.c:1092:7
-    CT: get_value at config.c:878:0
-    CF: get_value at config.c:885:7
-    CT: get_next_char at config.c:781:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: Jump to external code for getc_unlocked
-    RF: Jump to external code for getc_unlocked
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:814:1
-    CT: get_next_char at config.c:781:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: Jump to external code for getc_unlocked
-    RF: Jump to external code for getc_unlocked
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:814:1
-    CT: get_next_char at config.c:781:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    CF: config_file_fgetc at config.c:97:9
-    CT: Jump to external code for getc_unlocked
-    RF: Jump to external code for getc_unlocked
-    RF: config_file_fgetc at config.c:97:2
-    RF: get_next_char at config.c:814:1
-    CT: get_next_char at config.c:781:0
-    CF: get_next_char at config.c:782:10
-    CT: config_file_fgetc at config.c:96:0
-    [...133 more events...]
-  Occurrences: 26
 
 Uncategorised
   Before events:
@@ -8611,98 +8912,24 @@ Uncategorised
     CT: index_mem at object-file.c:2347:0
     CF: index_mem at object-file.c:2372:4
     CT: check_tag at object-file.c:2336:0
-    CF: check_tag at object-file.c:2338:2
-    CT: Jump to external code for memset
-    RF: Jump to external code for memset
-    CF: check_tag at object-file.c:2339:6
-    CT: parse_tag_buffer at tag.c:137:0
-    RF: parse_tag_buffer at tag.c:208:1
-    CF: check_tag at object-file.c:2340:7
-    CT: _ at gettext.h:45:0
-    CF: _ at gettext.h:48:9
-    CT: Jump to external code for gettext
-    RF: Jump to external code for gettext
-    RF: _ at gettext.h:49:1
-    CF: check_tag at object-file.c:2340:3
-    CT: die at usage.c:172:0
-    CF: die at usage.c:175:6
-    CT: die_is_recursing_builtin at usage.c:92:0
-    RF: die_is_recursing_builtin at usage.c:111:1
-    CF: die at usage.c:181:2
-    CT: die_builtin at usage.c:70:0
-    CF: die_builtin at usage.c:71:29
-    CT: get_die_message_routine at usage.c:128:0
-    RF: get_die_message_routine at usage.c:129:2
-    CF: die_builtin at usage.c:73:2
-    CT: die_message_builtin at usage.c:59:0
-    CF: die_message_builtin at usage.c:60:2
-    CT: trace2_cmd_error_va_fl at trace2.c:292:0
-    [...38 more events...]
+    RF: die_message_builtin at usage.c:62:1
+    CF: die_builtin at usage.c:74:2
+    CT: common_exit at common-main.c:72:0
+    CF: common_exit at common-main.c:82:2
   Occurrences: 1
 
 Uncategorised
   Before events:
     CF: normalize_path_copy at path.c:1206:9
     CT: normalize_path_copy_len at path.c:1119:0
-    CF: normalize_path_copy_len at path.c:1126:14
-    CT: git_offset_1st_component at git-compat-util.h:456:0
-    CF: git_offset_1st_component at git-compat-util.h:457:9
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    RF: git_offset_1st_component at git-compat-util.h:457:2
-    CF: normalize_path_copy_len at path.c:1129:7
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: normalize_path_copy_len at path.c:1135:9
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
     CF: normalize_path_copy_len at path.c:1175:35
     CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: normalize_path_copy_len at path.c:1175:35
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: normalize_path_copy_len at path.c:1175:35
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: normalize_path_copy_len at path.c:1175:35
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: normalize_path_copy_len at path.c:1175:35
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: normalize_path_copy_len at path.c:1177:7
-    [...68 more events...]
   Occurrences: 133
 
 Uncategorised
   Before events:
     CF: run_builtin at git.c:466:11
     CT: cmd_cat_file at builtin/cat-file.c:882:0
-    CF: cmd_cat_file at builtin/cat-file.c:887:23
-    CT: Jump to external code for memset
-    RF: Jump to external code for memset
-    CF: cmd_cat_file at builtin/cat-file.c:890:21
-    CT: Jump to external code for memcpy
-    RF: Jump to external code for memcpy
-    CF: cmd_cat_file at builtin/cat-file.c:901:34
-    CT: Jump to external code for memset
-    RF: Jump to external code for memset
-    CF: cmd_cat_file at builtin/cat-file.c:901:34
-    CT: Jump to external code for memset
-    RF: Jump to external code for memset
-    CF: cmd_cat_file at builtin/cat-file.c:901:34
-    CT: Jump to external code for memset
-    RF: Jump to external code for memset
-    CF: cmd_cat_file at builtin/cat-file.c:901:34
-    CT: Jump to external code for memset
-    RF: Jump to external code for memset
-    CF: cmd_cat_file at builtin/cat-file.c:901:34
-    CT: Jump to external code for memset
-    RF: Jump to external code for memset
-    CF: cmd_cat_file at builtin/cat-file.c:901:34
-    CT: Jump to external code for memset
-    RF: Jump to external code for memset
     CF: cmd_cat_file at builtin/cat-file.c:901:34
     CT: Jump to external code for memset
   Occurrences: 9
@@ -8711,53 +8938,9 @@ Uncategorised
   Before events:
     CF: safe_create_leading_directories at object-file.c:400:9
     CT: safe_create_leading_directories_1 at object-file.c:345:0
-    CF: safe_create_leading_directories_1 at object-file.c:346:32
-    CT: git_offset_1st_component at git-compat-util.h:456:0
-    CF: git_offset_1st_component at git-compat-util.h:457:9
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    RF: git_offset_1st_component at git-compat-util.h:457:2
     CF: safe_create_leading_directories_1 at object-file.c:353:21
     CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-  Occurrences: 5
-
-Uncategorised
-  Before events:
-    CF: safe_create_leading_directories at object-file.c:400:9
-    CT: safe_create_leading_directories_1 at object-file.c:345:0
-    CF: safe_create_leading_directories_1 at object-file.c:346:32
-    CT: git_offset_1st_component at git-compat-util.h:456:0
-    CF: git_offset_1st_component at git-compat-util.h:457:9
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    RF: git_offset_1st_component at git-compat-util.h:457:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:360:10
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:367:8
-    CT: Jump to external code for stat64
-    RF: Jump to external code for stat64
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    [...166 more events...]
-  Occurrences: 1
+  Occurrences: 6
 
 Uncategorised
   Before events:
@@ -8824,114 +9007,30 @@ Uncategorised
     CT: get_next_component at abspath.c:32:0
     CF: get_next_component at abspath.c:43:29
     CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
   Occurrences: 4
 
 Uncategorised
   Before events:
     CT: get_next_component at abspath.c:32:0
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
     CF: get_next_component at abspath.c:46:2
     CT: strbuf_add at strbuf.c:297:0
-    [...8 more events...]
+    CF: strbuf_add at strbuf.c:300:2
+    CT: strbuf_setlen at strbuf.h:161:0
   Occurrences: 19
 
 Uncategorised
   Before events:
     CT: get_next_component at abspath.c:32:0
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:46:2
-    CT: strbuf_add at strbuf.c:297:0
-    [...11 more events...]
+    CF: get_next_component at abspath.c:48:2
   Occurrences: 52
 
 Uncategorised
   Before events:
     CT: get_next_component at abspath.c:32:0
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:46:2
-    CT: strbuf_add at strbuf.c:297:0
-    [...17 more events...]
+    CF: get_next_component at abspath.c:48:2
+    CT: strbuf_remove at strbuf.c:292:0
+    CF: strbuf_remove at strbuf.c:293:2
+    CT: strbuf_splice at strbuf.c:233:0
   Occurrences: 35
 
 ## Divergences with unique coordinates by type
@@ -8952,10 +9051,10 @@ LibraryCallInlined
   Unique divergence coordinates: 7
 
 LibraryCallRemoved
-  Unique divergence coordinates: 63
+  Unique divergence coordinates: 70
 
 ProgramCallRemoved
-  Unique divergence coordinates: 51
+  Unique divergence coordinates: 70
 
 InlinedReentryAdded
   Unique divergence coordinates: 19
@@ -8964,12 +9063,12 @@ InlinedNoiseAdded
   Unique divergence coordinates: 30
 
 InlinedReturnAdded
-  Unique divergence coordinates: 47
+  Unique divergence coordinates: 48
 
 Uncategorised
-  Unique divergence coordinates: 184
+  Unique divergence coordinates: 179
 
 ## Summary
 
-1256 unique divergence coordinates
-384174 divergence occurrences
+1278 unique divergence coordinates
+385241 divergence occurrences

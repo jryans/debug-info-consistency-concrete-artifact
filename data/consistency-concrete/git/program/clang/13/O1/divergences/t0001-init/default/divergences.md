@@ -12749,6 +12749,13 @@ LibraryCallRemoved
 
 LibraryCallRemoved
   Before events:
+    CF: open_cached_dir at dir.c:2429:2
+    CT: Jump to external code for memset
+    RF: Jump to external code for memset
+  Occurrences: 4
+
+LibraryCallRemoved
+  Before events:
     CF: open_istream_loose at streaming.c:226:21
     CT: Jump to external code for memset
     RF: Jump to external code for memset
@@ -13029,6 +13036,20 @@ LibraryCallRemoved
 
 LibraryCallRemoved
   Before events:
+    CF: safe_create_leading_directories_1 at object-file.c:367:8
+    CT: Jump to external code for stat64
+    RF: Jump to external code for stat64
+  Occurrences: 15
+
+LibraryCallRemoved
+  Before events:
+    CF: safe_create_leading_directories_1 at object-file.c:373:14
+    CT: Jump to external code for mkdir
+    RF: Jump to external code for mkdir
+  Occurrences: 2
+
+LibraryCallRemoved
+  Before events:
     CF: safe_create_leading_directories_const at object-file.c:417:2
     CT: Jump to external code for __errno_location
     RF: Jump to external code for __errno_location
@@ -13120,6 +13141,20 @@ LibraryCallRemoved
 
 LibraryCallRemoved
   Before events:
+    CF: skip_utf8_bom at utf8.c:789:12
+    CT: Jump to external code for strlen
+    RF: Jump to external code for strlen
+  Occurrences: 7
+
+LibraryCallRemoved
+  Before events:
+    CF: skip_utf8_bom at utf8.c:790:30
+    CT: Jump to external code for strlen
+    RF: Jump to external code for strlen
+  Occurrences: 7
+
+LibraryCallRemoved
+  Before events:
     CF: split_ident_line at ident.c:279:2
     CT: Jump to external code for memset
     RF: Jump to external code for memset
@@ -13127,10 +13162,17 @@ LibraryCallRemoved
 
 LibraryCallRemoved
   Before events:
+    CF: strbuf_add at strbuf.c:299:2
+    CT: Jump to external code for memcpy
+    RF: Jump to external code for memcpy
+  Occurrences: 68
+
+LibraryCallRemoved
+  Before events:
     CF: strbuf_addstr at strbuf.h:305:20
     CT: Jump to external code for strlen
     RF: Jump to external code for strlen
-  Occurrences: 1338
+  Occurrences: 1659
 
 LibraryCallRemoved
   Before events:
@@ -13145,6 +13187,20 @@ LibraryCallRemoved
     CT: Jump to external code for __errno_location
     RF: Jump to external code for __errno_location
   Occurrences: 10
+
+LibraryCallRemoved
+  Before events:
+    CF: strbuf_splice at strbuf.c:243:2
+    CT: Jump to external code for memmove
+    RF: Jump to external code for memmove
+  Occurrences: 34
+
+LibraryCallRemoved
+  Before events:
+    CF: strbuf_splice at strbuf.c:246:2
+    CT: Jump to external code for memcpy
+    RF: Jump to external code for memcpy
+  Occurrences: 25
 
 LibraryCallRemoved
   Before events:
@@ -13179,7 +13235,7 @@ LibraryCallRemoved
     CF: strip_suffix_mem at git-compat-util.h:733:18
     CT: Jump to external code for strlen
     RF: Jump to external code for strlen
-  Occurrences: 103
+  Occurrences: 112
 
 LibraryCallRemoved
   Before events:
@@ -13801,7 +13857,226 @@ ProgramCallRemoved
 
 ProgramCallRemoved
   Before events:
+    CF: get_next_component at abspath.c:36:2
+    CT: strbuf_setlen at strbuf.h:161:0
+    RF: strbuf_setlen at strbuf.h:169:1
+  Occurrences: 8
+
+ProgramCallRemoved
+  Before events:
     CF: get_next_component at abspath.c:40:31
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+  Occurrences: 3
+
+ProgramCallRemoved
+  Before events:
+    CF: get_next_component at abspath.c:40:31
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+  Occurrences: 3
+
+ProgramCallRemoved
+  Before events:
+    CF: get_next_component at abspath.c:40:31
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+  Occurrences: 1
+
+ProgramCallRemoved
+  Before events:
+    CF: get_next_component at abspath.c:40:31
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    [...12 more events...]
+  Occurrences: 4
+
+ProgramCallRemoved
+  Before events:
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+  Occurrences: 178
+
+ProgramCallRemoved
+  Before events:
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+  Occurrences: 215
+
+ProgramCallRemoved
+  Before events:
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+  Occurrences: 50
+
+ProgramCallRemoved
+  Before events:
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+  Occurrences: 53
+
+ProgramCallRemoved
+  Before events:
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+  Occurrences: 87
+
+ProgramCallRemoved
+  Before events:
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+  Occurrences: 1
+
+ProgramCallRemoved
+  Before events:
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
     CT: git_is_dir_sep at git-compat-util.h:447:0
     RF: git_is_dir_sep at git-compat-util.h:448:2
     CF: get_next_component at abspath.c:43:29
@@ -13814,7 +14089,31 @@ ProgramCallRemoved
     CF: get_next_component at abspath.c:43:29
     CT: git_is_dir_sep at git-compat-util.h:447:0
     RF: git_is_dir_sep at git-compat-util.h:448:2
-  Occurrences: 172
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+  Occurrences: 82
 
 ProgramCallRemoved
   Before events:
@@ -13824,7 +14123,67 @@ ProgramCallRemoved
     CF: get_next_component at abspath.c:43:29
     CT: git_is_dir_sep at git-compat-util.h:447:0
     RF: git_is_dir_sep at git-compat-util.h:448:2
-  Occurrences: 201
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:43:29
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    [...6 more events...]
+  Occurrences: 2
+
+ProgramCallRemoved
+  Before events:
+    CF: get_next_component at abspath.c:46:2
+    CT: strbuf_add at strbuf.c:297:0
+    CF: strbuf_add at strbuf.c:298:2
+    CT: strbuf_grow at strbuf.c:92:0
+    RF: strbuf_grow at strbuf.c:102:1
+    CF: strbuf_add at strbuf.c:299:2
+    CT: Jump to external code for memcpy
+    RF: Jump to external code for memcpy
+    CF: strbuf_add at strbuf.c:300:2
+    CT: strbuf_setlen at strbuf.h:161:0
+    RF: strbuf_setlen at strbuf.h:169:1
+    RF: strbuf_add at strbuf.c:301:1
+  Occurrences: 70
+
+ProgramCallRemoved
+  Before events:
+    CF: get_next_component at abspath.c:48:2
+    CT: strbuf_remove at strbuf.c:292:0
+    CF: strbuf_remove at strbuf.c:293:2
+    CT: strbuf_splice at strbuf.c:233:0
+    CF: strbuf_splice at strbuf.c:243:2
+    CT: Jump to external code for memmove
+    RF: Jump to external code for memmove
+    CF: strbuf_splice at strbuf.c:246:2
+    CT: Jump to external code for memcpy
+    RF: Jump to external code for memcpy
+    CF: strbuf_splice at strbuf.c:247:2
+    CT: strbuf_setlen at strbuf.h:161:0
+    RF: strbuf_setlen at strbuf.h:169:1
+    RF: strbuf_splice at strbuf.c:248:1
+    RF: strbuf_remove at strbuf.c:294:1
+  Occurrences: 2
 
 ProgramCallRemoved
   Before events:
@@ -14114,6 +14473,70 @@ ProgramCallRemoved
 
 ProgramCallRemoved
   Before events:
+    CF: normalize_path_copy_len at path.c:1126:14
+    CT: git_offset_1st_component at git-compat-util.h:456:0
+    CF: git_offset_1st_component at git-compat-util.h:457:9
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    RF: git_offset_1st_component at git-compat-util.h:457:2
+  Occurrences: 437
+
+ProgramCallRemoved
+  Before events:
+    CF: normalize_path_copy_len at path.c:1129:7
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: normalize_path_copy_len at path.c:1135:9
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: normalize_path_copy_len at path.c:1175:35
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: normalize_path_copy_len at path.c:1175:35
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: normalize_path_copy_len at path.c:1175:35
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: normalize_path_copy_len at path.c:1175:35
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: normalize_path_copy_len at path.c:1175:35
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: normalize_path_copy_len at path.c:1177:7
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: normalize_path_copy_len at path.c:1179:11
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    [...58 more events...]
+  Occurrences: 433
+
+ProgramCallRemoved
+  Before events:
+    CF: normalize_path_copy_len at path.c:1135:9
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: normalize_path_copy_len at path.c:1175:35
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: normalize_path_copy_len at path.c:1175:35
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: normalize_path_copy_len at path.c:1175:35
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: normalize_path_copy_len at path.c:1175:35
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+  Occurrences: 4
+
+ProgramCallRemoved
+  Before events:
     CF: odb_loose_cache at object-file.c:2709:3
     CT: st_mult at git-compat-util.h:991:0
     RF: st_mult at git-compat-util.h:995:2
@@ -14321,6 +14744,1048 @@ ProgramCallRemoved
 
 ProgramCallRemoved
   Before events:
+    CF: safe_create_leading_directories_1 at object-file.c:346:32
+    CT: git_offset_1st_component at git-compat-util.h:456:0
+    CF: git_offset_1st_component at git-compat-util.h:457:9
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    RF: git_offset_1st_component at git-compat-util.h:457:2
+  Occurrences: 78
+
+ProgramCallRemoved
+  Before events:
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+  Occurrences: 2
+
+ProgramCallRemoved
+  Before events:
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+  Occurrences: 1
+
+ProgramCallRemoved
+  Before events:
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+  Occurrences: 14
+
+ProgramCallRemoved
+  Before events:
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+  Occurrences: 1
+
+ProgramCallRemoved
+  Before events:
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+  Occurrences: 1
+
+ProgramCallRemoved
+  Before events:
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+  Occurrences: 1
+
+ProgramCallRemoved
+  Before events:
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+  Occurrences: 3
+
+ProgramCallRemoved
+  Before events:
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    [...3 more events...]
+  Occurrences: 3
+
+ProgramCallRemoved
+  Before events:
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    [...6 more events...]
+  Occurrences: 4
+
+ProgramCallRemoved
+  Before events:
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    [...12 more events...]
+  Occurrences: 1
+
+ProgramCallRemoved
+  Before events:
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    [...18 more events...]
+  Occurrences: 1
+
+ProgramCallRemoved
+  Before events:
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    [...24 more events...]
+  Occurrences: 3
+
+ProgramCallRemoved
+  Before events:
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    [...27 more events...]
+  Occurrences: 2
+
+ProgramCallRemoved
+  Before events:
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    [...36 more events...]
+  Occurrences: 2
+
+ProgramCallRemoved
+  Before events:
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    [...57 more events...]
+  Occurrences: 1
+
+ProgramCallRemoved
+  Before events:
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:360:10
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+  Occurrences: 2
+
+ProgramCallRemoved
+  Before events:
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:360:10
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:367:8
+    CT: Jump to external code for stat64
+    RF: Jump to external code for stat64
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    [...6 more events...]
+  Occurrences: 1
+
+ProgramCallRemoved
+  Before events:
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:360:10
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+  Occurrences: 4
+
+ProgramCallRemoved
+  Before events:
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:360:10
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:367:8
+    CT: Jump to external code for stat64
+    RF: Jump to external code for stat64
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    [...24 more events...]
+  Occurrences: 2
+
+ProgramCallRemoved
+  Before events:
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:360:10
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:367:8
+    CT: Jump to external code for stat64
+    RF: Jump to external code for stat64
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    [...135 more events...]
+  Occurrences: 1
+
+ProgramCallRemoved
+  Before events:
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:360:10
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:367:8
+    CT: Jump to external code for stat64
+    RF: Jump to external code for stat64
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    [...300 more events...]
+  Occurrences: 1
+
+ProgramCallRemoved
+  Before events:
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:360:10
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:367:8
+    CT: Jump to external code for stat64
+    RF: Jump to external code for stat64
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    [...315 more events...]
+  Occurrences: 1
+
+ProgramCallRemoved
+  Before events:
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:360:10
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:367:8
+    CT: Jump to external code for stat64
+    RF: Jump to external code for stat64
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    [...318 more events...]
+  Occurrences: 1
+
+ProgramCallRemoved
+  Before events:
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:360:10
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:367:8
+    CT: Jump to external code for stat64
+    RF: Jump to external code for stat64
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    [...288 more events...]
+  Occurrences: 1
+
+ProgramCallRemoved
+  Before events:
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:360:10
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:367:8
+    CT: Jump to external code for stat64
+    RF: Jump to external code for stat64
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    [...249 more events...]
+  Occurrences: 4
+
+ProgramCallRemoved
+  Before events:
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:360:10
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:367:8
+    CT: Jump to external code for stat64
+    RF: Jump to external code for stat64
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    [...267 more events...]
+  Occurrences: 2
+
+ProgramCallRemoved
+  Before events:
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:360:10
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:367:8
+    CT: Jump to external code for stat64
+    RF: Jump to external code for stat64
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    [...270 more events...]
+  Occurrences: 2
+
+ProgramCallRemoved
+  Before events:
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:360:10
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:367:8
+    CT: Jump to external code for stat64
+    RF: Jump to external code for stat64
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    [...9 more events...]
+  Occurrences: 4
+
+ProgramCallRemoved
+  Before events:
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:360:10
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:367:8
+    CT: Jump to external code for stat64
+    RF: Jump to external code for stat64
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    [...33 more events...]
+  Occurrences: 4
+
+ProgramCallRemoved
+  Before events:
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:360:10
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:367:8
+    CT: Jump to external code for stat64
+    RF: Jump to external code for stat64
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    [...63 more events...]
+  Occurrences: 1
+
+ProgramCallRemoved
+  Before events:
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:360:10
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:367:8
+    CT: Jump to external code for stat64
+    RF: Jump to external code for stat64
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    [...30 more events...]
+  Occurrences: 4
+
+ProgramCallRemoved
+  Before events:
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:360:10
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:367:8
+    CT: Jump to external code for stat64
+    RF: Jump to external code for stat64
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    [...36 more events...]
+  Occurrences: 1
+
+ProgramCallRemoved
+  Before events:
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:360:10
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:367:8
+    CT: Jump to external code for stat64
+    RF: Jump to external code for stat64
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: safe_create_leading_directories_1 at object-file.c:353:21
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    [...9 more events...]
+  Occurrences: 2
+
+ProgramCallRemoved
+  Before events:
     CF: setup_bare_git_dir at setup.c:1046:10
     CT: setup_explicit_git_dir at setup.c:885:0
     CF: setup_explicit_git_dir at setup.c:886:30
@@ -14391,6 +15856,20 @@ ProgramCallRemoved
 
 ProgramCallRemoved
   Before events:
+    CF: strbuf_add at strbuf.c:298:2
+    CT: strbuf_grow at strbuf.c:92:0
+    RF: strbuf_grow at strbuf.c:102:1
+  Occurrences: 79
+
+ProgramCallRemoved
+  Before events:
+    CF: strbuf_add at strbuf.c:300:2
+    CT: strbuf_setlen at strbuf.h:161:0
+    RF: strbuf_setlen at strbuf.h:169:1
+  Occurrences: 13
+
+ProgramCallRemoved
+  Before events:
     CF: strbuf_add_absolute_path at strbuf.c:899:7
     CT: is_absolute_path at cache.h:1275:0
     CF: is_absolute_path at cache.h:1276:9
@@ -14454,7 +15933,7 @@ ProgramCallRemoved
     CT: strbuf_setlen at strbuf.h:161:0
     RF: strbuf_setlen at strbuf.h:169:1
     RF: strbuf_add at strbuf.c:301:1
-  Occurrences: 65
+  Occurrences: 386
 
 ProgramCallRemoved
   Before events:
@@ -15108,6 +16587,13 @@ ProgramCallRemoved
 
 ProgramCallRemoved
   Before events:
+    CF: strbuf_splice at strbuf.c:247:2
+    CT: strbuf_setlen at strbuf.h:161:0
+    RF: strbuf_setlen at strbuf.h:169:1
+  Occurrences: 18
+
+ProgramCallRemoved
+  Before events:
     CF: system_path at exec-cmd.c:268:27
     CT: system_prefix at exec-cmd.c:247:0
     RF: system_prefix at exec-cmd.c:248:2
@@ -15157,6 +16643,39 @@ ProgramCallRemoved
     CT: git_bswap32 at bswap.h:42:0
     RF: git_bswap32 at bswap.h:48:2
   Occurrences: 4
+
+ProgramCallRemoved
+  Before events:
+    CF: verify_path_internal at read-cache.c:1046:6
+    CT: git_has_dos_drive_prefix at git-compat-util.h:432:0
+    RF: git_has_dos_drive_prefix at git-compat-util.h:433:2
+  Occurrences: 7
+
+ProgramCallRemoved
+  Before events:
+    CF: verify_path_internal at read-cache.c:1072:9
+    CT: is_ntfs_dotgit at path.c:1394:0
+    RF: is_ntfs_dotgit at path.c:1427:1
+  Occurrences: 7
+
+ProgramCallRemoved
+  Before events:
+    CF: verify_path_internal at read-cache.c:1082:8
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: verify_path_internal at read-cache.c:1056:7
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: verify_path_internal at read-cache.c:1056:7
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: verify_path_internal at read-cache.c:1056:7
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: verify_path_internal at read-cache.c:1056:7
+    CT: git_is_dir_sep at git-compat-util.h:447:0
+    RF: git_is_dir_sep at git-compat-util.h:448:2
+  Occurrences: 7
 
 ProgramCallRemoved
   Before events:
@@ -16257,7 +17776,7 @@ InlinedNoiseAdded
 InlinedReturnAdded
   After events:
     IRF: SHA1DCUpdate at sha1.c:0:0
-  Occurrences: 1
+  Occurrences: 2
 
 InlinedReturnAdded
   After events:
@@ -16392,7 +17911,7 @@ InlinedReturnAdded
 InlinedReturnAdded
   After events:
     IRF: configset_iter at config.c:0:0
-  Occurrences: 2
+  Occurrences: 3
 
 InlinedReturnAdded
   After events:
@@ -16452,12 +17971,12 @@ InlinedReturnAdded
 InlinedReturnAdded
   After events:
     IRF: dir_prefix at path.c:0:0
-  Occurrences: 1
+  Occurrences: 3
 
 InlinedReturnAdded
   After events:
     IRF: do_config_from_file at config.c:0:0
-  Occurrences: 1
+  Occurrences: 2
 
 InlinedReturnAdded
   After events:
@@ -16487,7 +18006,7 @@ InlinedReturnAdded
 InlinedReturnAdded
   After events:
     IRF: expand_base_dir at repository.c:0:0
-  Occurrences: 3
+  Occurrences: 6
 
 InlinedReturnAdded
   After events:
@@ -16572,7 +18091,7 @@ InlinedReturnAdded
 InlinedReturnAdded
   After events:
     IRF: format_object_header_literally at object-file.c:0:71
-  Occurrences: 1
+  Occurrences: 2
 
 InlinedReturnAdded
   After events:
@@ -16632,7 +18151,7 @@ InlinedReturnAdded
 InlinedReturnAdded
   After events:
     IRF: get_home_gitattributes at attr.c:819:9
-  Occurrences: 2
+  Occurrences: 3
 
 InlinedReturnAdded
   After events:
@@ -16642,22 +18161,22 @@ InlinedReturnAdded
 InlinedReturnAdded
   After events:
     IRF: get_next_char at config.c:0:0
-  Occurrences: 3
+  Occurrences: 157
 
 InlinedReturnAdded
   After events:
     IRF: get_next_char at config.c:807:13
-  Occurrences: 1
+  Occurrences: 6
 
 InlinedReturnAdded
   After events:
     IRF: get_next_char at config.c:810:13
-  Occurrences: 1
+  Occurrences: 2
 
 InlinedReturnAdded
   After events:
     IRF: get_next_component at abspath.c:0:0
-  Occurrences: 5
+  Occurrences: 23
 
 InlinedReturnAdded
   After events:
@@ -16667,7 +18186,7 @@ InlinedReturnAdded
 InlinedReturnAdded
   After events:
     IRF: get_root_part at abspath.c:0:0
-  Occurrences: 4
+  Occurrences: 6
 
 InlinedReturnAdded
   After events:
@@ -16677,12 +18196,12 @@ InlinedReturnAdded
 InlinedReturnAdded
   After events:
     IRF: get_value at config.c:0:0
-  Occurrences: 7513
+  Occurrences: 7518
 
 InlinedReturnAdded
   After events:
     IRF: getc_unlocked at stdio.h:0:0
-  Occurrences: 2
+  Occurrences: 4
 
 InlinedReturnAdded
   After events:
@@ -16697,7 +18216,7 @@ InlinedReturnAdded
 InlinedReturnAdded
   After events:
     IRF: git_attr at attr.c:0:0
-  Occurrences: 5
+  Occurrences: 15
 
 InlinedReturnAdded
   After events:
@@ -16737,7 +18256,7 @@ InlinedReturnAdded
 InlinedReturnAdded
   After events:
     IRF: git_parse_maybe_bool at config.c:0:0
-  Occurrences: 1
+  Occurrences: 2
 
 InlinedReturnAdded
   After events:
@@ -16777,7 +18296,7 @@ InlinedReturnAdded
 InlinedReturnAdded
   After events:
     IRF: git_path_info_attributes at attr.c:827:8
-  Occurrences: 2
+  Occurrences: 3
 
 InlinedReturnAdded
   After events:
@@ -16857,7 +18376,12 @@ InlinedReturnAdded
 InlinedReturnAdded
   After events:
     IRF: index_core at object-file.c:0:0
-  Occurrences: 1
+  Occurrences: 2
+
+InlinedReturnAdded
+  After events:
+    IRF: index_name_pos at read-cache.c:620:9
+  Occurrences: 3
 
 InlinedReturnAdded
   After events:
@@ -16892,7 +18416,7 @@ InlinedReturnAdded
 InlinedReturnAdded
   After events:
     IRF: is_dir_file at path.c:87:9
-  Occurrences: 2
+  Occurrences: 3
 
 InlinedReturnAdded
   After events:
@@ -16997,7 +18521,7 @@ InlinedReturnAdded
 InlinedReturnAdded
   After events:
     IRF: parse_attr_line at attr.c:0:0
-  Occurrences: 15
+  Occurrences: 16
 
 InlinedReturnAdded
   After events:
@@ -17027,7 +18551,7 @@ InlinedReturnAdded
 InlinedReturnAdded
   After events:
     IRF: prepare_attr_stack at attr.c:0:0
-  Occurrences: 3
+  Occurrences: 4
 
 InlinedReturnAdded
   After events:
@@ -17052,7 +18576,7 @@ InlinedReturnAdded
 InlinedReturnAdded
   After events:
     IRF: read_attr_from_array at attr.c:0:0
-  Occurrences: 1
+  Occurrences: 3
 
 InlinedReturnAdded
   After events:
@@ -17062,12 +18586,12 @@ InlinedReturnAdded
 InlinedReturnAdded
   After events:
     IRF: ref_entry_cmp_sslice at ref-cache.c:0:0
-  Occurrences: 49
+  Occurrences: 111
 
 InlinedReturnAdded
   After events:
     IRF: ref_entry_cmp_sslice at ref-cache.c:120:14
-  Occurrences: 2
+  Occurrences: 13
 
 InlinedReturnAdded
   After events:
@@ -17087,7 +18611,7 @@ InlinedReturnAdded
 InlinedReturnAdded
   After events:
     IRF: repo_set_commondir at repository.c:0:0
-  Occurrences: 1
+  Occurrences: 2
 
 InlinedReturnAdded
   After events:
@@ -17112,7 +18636,7 @@ InlinedReturnAdded
 InlinedReturnAdded
   After events:
     IRF: sane_qsort at git-compat-util.h:0:0
-  Occurrences: 44
+  Occurrences: 50
 
 InlinedReturnAdded
   After events:
@@ -17182,7 +18706,12 @@ InlinedReturnAdded
 InlinedReturnAdded
   After events:
     IRF: strbuf_addstr at strbuf.h:0:0
-  Occurrences: 18
+  Occurrences: 32
+
+InlinedReturnAdded
+  After events:
+    IRF: strbuf_addstr at strbuf.h:0:2
+  Occurrences: 4
 
 InlinedReturnAdded
   After events:
@@ -17237,7 +18766,7 @@ InlinedReturnAdded
 InlinedReturnAdded
   After events:
     IRF: strbuf_realpath at abspath.c:0:0
-  Occurrences: 1
+  Occurrences: 2
 
 InlinedReturnAdded
   After events:
@@ -17257,7 +18786,7 @@ InlinedReturnAdded
 InlinedReturnAdded
   After events:
     IRF: strbuf_worktree_gitdir at path.c:0:0
-  Occurrences: 1
+  Occurrences: 3
 
 InlinedReturnAdded
   After events:
@@ -17327,7 +18856,7 @@ InlinedReturnAdded
 InlinedReturnAdded
   After events:
     IRF: xread at wrapper.c:0:0
-  Occurrences: 3
+  Occurrences: 7
 
 InlinedReturnAdded
   After events:
@@ -22901,13 +24430,7 @@ Uncategorised
 Uncategorised
   After events:
     RF: Jump to external code for __uflow
-  Occurrences: 986
-
-Uncategorised
-  After events:
-    RF: Jump to external code for __uflow
-    IRF: getc_unlocked at stdio.h:0:0
-  Occurrences: 2
+  Occurrences: 988
 
 Uncategorised
   After events:
@@ -22999,7 +24522,7 @@ Uncategorised
 Uncategorised
   After events:
     RF: Jump to external code for free
-  Occurrences: 16
+  Occurrences: 17
 
 Uncategorised
   After events:
@@ -23058,12 +24581,6 @@ Uncategorised
 Uncategorised
   After events:
     RF: Jump to external code for free
-    IRF: index_core at object-file.c:0:0
-  Occurrences: 1
-
-Uncategorised
-  After events:
-    RF: Jump to external code for free
     RF: read_gitfile_gently at setup.c:878:2
   Occurrences: 1
 
@@ -23088,7 +24605,6 @@ Uncategorised
 Uncategorised
   After events:
     RF: Jump to external code for funlockfile
-    IRF: do_config_from_file at config.c:0:0
   Occurrences: 1
 
 Uncategorised
@@ -23141,7 +24657,7 @@ Uncategorised
 Uncategorised
   After events:
     RF: Jump to external code for memcpy
-  Occurrences: 287
+  Occurrences: 288
 
 Uncategorised
   After events:
@@ -23166,12 +24682,6 @@ Uncategorised
     RF: Jump to external code for memcpy
     ICF: strbuf_splice at strbuf.c:247:2
   Occurrences: 17
-
-Uncategorised
-  After events:
-    RF: Jump to external code for memcpy
-    IRF: SHA1DCUpdate at sha1.c:0:0
-  Occurrences: 1
 
 Uncategorised
   After events:
@@ -23238,24 +24748,12 @@ Uncategorised
 Uncategorised
   After events:
     RF: Jump to external code for qsort
-  Occurrences: 3
-
-Uncategorised
-  After events:
-    RF: Jump to external code for qsort
-    IRF: sane_qsort at git-compat-util.h:0:0
-  Occurrences: 6
+  Occurrences: 9
 
 Uncategorised
   After events:
     RF: Jump to external code for read
-  Occurrences: 3
-
-Uncategorised
-  After events:
-    RF: Jump to external code for read
-    IRF: xread at wrapper.c:0:0
-  Occurrences: 4
+  Occurrences: 7
 
 Uncategorised
   After events:
@@ -23318,7 +24816,7 @@ Uncategorised
 Uncategorised
   After events:
     RF: Jump to external code for strcmp
-  Occurrences: 13
+  Occurrences: 14
 
 Uncategorised
   After events:
@@ -23378,12 +24876,6 @@ Uncategorised
   After events:
     RF: Jump to external code for strcmp
     CF: strbuf_realpath_1 at abspath.c:192:2
-  Occurrences: 1
-
-Uncategorised
-  After events:
-    RF: Jump to external code for strcmp
-    IRF: is_dir_file at path.c:87:9
   Occurrences: 1
 
 Uncategorised
@@ -23477,7 +24969,7 @@ Uncategorised
 Uncategorised
   After events:
     RF: Jump to external code for strncmp
-  Occurrences: 26
+  Occurrences: 101
 
 Uncategorised
   After events:
@@ -23490,24 +24982,6 @@ Uncategorised
     RF: Jump to external code for strncmp
     ICF: prepare_attr_stack at attr.c:938:2
   Occurrences: 2
-
-Uncategorised
-  After events:
-    RF: Jump to external code for strncmp
-    IRF: dir_prefix at path.c:0:0
-  Occurrences: 2
-
-Uncategorised
-  After events:
-    RF: Jump to external code for strncmp
-    IRF: ref_entry_cmp_sslice at ref-cache.c:0:0
-  Occurrences: 62
-
-Uncategorised
-  After events:
-    RF: Jump to external code for strncmp
-    IRF: ref_entry_cmp_sslice at ref-cache.c:120:14
-  Occurrences: 11
 
 Uncategorised
   After events:
@@ -23628,7 +25102,6 @@ Uncategorised
 Uncategorised
   After events:
     RF: check_repo_format at setup.c:614:1
-    IRF: get_value at config.c:0:0
   Occurrences: 5
 
 Uncategorised
@@ -23657,25 +25130,7 @@ Uncategorised
 Uncategorised
   After events:
     RF: config_file_fgetc at config.c:97:2
-  Occurrences: 160
-
-Uncategorised
-  After events:
-    RF: config_file_fgetc at config.c:97:2
-    IRF: get_next_char at config.c:0:0
-  Occurrences: 154
-
-Uncategorised
-  After events:
-    RF: config_file_fgetc at config.c:97:2
-    IRF: get_next_char at config.c:807:13
-  Occurrences: 5
-
-Uncategorised
-  After events:
-    RF: config_file_fgetc at config.c:97:2
-    IRF: get_next_char at config.c:810:13
-  Occurrences: 1
+  Occurrences: 320
 
 Uncategorised
   After events:
@@ -23764,7 +25219,7 @@ Uncategorised
 Uncategorised
   After events:
     RF: git_attr_internal at attr.c:232:1
-  Occurrences: 15
+  Occurrences: 25
 
 Uncategorised
   After events:
@@ -23777,12 +25232,6 @@ Uncategorised
     RF: git_attr_internal at attr.c:232:1
     CF: parse_attr_line at attr.c:409:8
   Occurrences: 1
-
-Uncategorised
-  After events:
-    RF: git_attr_internal at attr.c:232:1
-    IRF: git_attr at attr.c:0:0
-  Occurrences: 10
 
 Uncategorised
   After events:
@@ -23856,24 +25305,16 @@ Uncategorised
 Uncategorised
   After events:
     RF: git_parse_maybe_bool_text at config.c:1350:1
-    IRF: git_parse_maybe_bool at config.c:0:0
   Occurrences: 1
 
 Uncategorised
   After events:
     RF: git_pathdup at path.c:500:2
-  Occurrences: 1
-
-Uncategorised
-  After events:
-    RF: git_pathdup at path.c:500:2
-    IRF: git_path_info_attributes at attr.c:827:8
-  Occurrences: 1
+  Occurrences: 2
 
 Uncategorised
   After events:
     RF: handle_attr_line at attr.c:665:1
-    IRF: read_attr_from_array at attr.c:0:0
   Occurrences: 2
 
 Uncategorised
@@ -23902,7 +25343,6 @@ Uncategorised
 Uncategorised
   After events:
     RF: index_name_stage_pos at read-cache.c:616:1
-    IRF: index_name_pos at read-cache.c:620:9
   Occurrences: 3
 
 Uncategorised
@@ -24011,14 +25451,13 @@ Uncategorised
 Uncategorised
   After events:
     RF: read_convert_config at convert.c:1057:1
-    CF: configset_iter at config.c:2236:7
-  Occurrences: 5
+  Occurrences: 1
 
 Uncategorised
   After events:
     RF: read_convert_config at convert.c:1057:1
-    IRF: configset_iter at config.c:0:0
-  Occurrences: 1
+    CF: configset_iter at config.c:2236:7
+  Occurrences: 5
 
 Uncategorised
   After events:
@@ -24126,7 +25565,7 @@ Uncategorised
 Uncategorised
   After events:
     RF: strbuf_add at strbuf.c:301:1
-  Occurrences: 1090
+  Occurrences: 1110
 
 Uncategorised
   After events:
@@ -24139,24 +25578,6 @@ Uncategorised
     RF: strbuf_add at strbuf.c:301:1
     CF: get_root_part at abspath.c:61:2
   Occurrences: 3
-
-Uncategorised
-  After events:
-    RF: strbuf_add at strbuf.c:301:1
-    IRF: strbuf_addstr at strbuf.h:0:0
-  Occurrences: 14
-
-Uncategorised
-  After events:
-    RF: strbuf_add at strbuf.c:301:1
-    IRF: strbuf_addstr at strbuf.h:0:2
-  Occurrences: 4
-
-Uncategorised
-  After events:
-    RF: strbuf_add at strbuf.c:301:1
-    IRF: strbuf_worktree_gitdir at path.c:0:0
-  Occurrences: 2
 
 Uncategorised
   After events:
@@ -24183,7 +25604,7 @@ Uncategorised
 Uncategorised
   After events:
     RF: strbuf_detach at strbuf.c:78:2
-  Occurrences: 17
+  Occurrences: 18
 
 Uncategorised
   After events:
@@ -24213,12 +25634,6 @@ Uncategorised
   After events:
     RF: strbuf_detach at strbuf.c:78:2
     RF: mkpathdup at path.c:511:2
-  Occurrences: 1
-
-Uncategorised
-  After events:
-    RF: strbuf_detach at strbuf.c:78:2
-    IRF: repo_set_commondir at repository.c:0:0
   Occurrences: 1
 
 Uncategorised
@@ -24263,7 +25678,6 @@ Uncategorised
 Uncategorised
   After events:
     RF: strbuf_realpath_1 at abspath.c:200:1
-    IRF: strbuf_realpath at abspath.c:0:0
   Occurrences: 1
 
 Uncategorised
@@ -24275,7 +25689,7 @@ Uncategorised
 Uncategorised
   After events:
     RF: strbuf_release at strbuf.c:68:1
-  Occurrences: 29
+  Occurrences: 31
 
 Uncategorised
   After events:
@@ -24316,18 +25730,6 @@ Uncategorised
 Uncategorised
   After events:
     RF: strbuf_release at strbuf.c:68:1
-    IRF: parse_attr_line at attr.c:0:0
-  Occurrences: 1
-
-Uncategorised
-  After events:
-    RF: strbuf_release at strbuf.c:68:1
-    IRF: prepare_attr_stack at attr.c:0:0
-  Occurrences: 1
-
-Uncategorised
-  After events:
-    RF: strbuf_release at strbuf.c:68:1
     RF: real_pathdup at abspath.c:243:2
   Occurrences: 1
 
@@ -24340,19 +25742,7 @@ Uncategorised
 Uncategorised
   After events:
     RF: strbuf_remove at strbuf.c:294:1
-  Occurrences: 3
-
-Uncategorised
-  After events:
-    RF: strbuf_remove at strbuf.c:294:1
-    IRF: get_next_component at abspath.c:0:0
-  Occurrences: 18
-
-Uncategorised
-  After events:
-    RF: strbuf_remove at strbuf.c:294:1
-    IRF: get_root_part at abspath.c:0:0
-  Occurrences: 2
+  Occurrences: 23
 
 Uncategorised
   After events:
@@ -24478,13 +25868,7 @@ Uncategorised
 Uncategorised
   After events:
     RF: xdg_config_home at path.c:1542:2
-  Occurrences: 1
-
-Uncategorised
-  After events:
-    RF: xdg_config_home at path.c:1542:2
-    IRF: get_home_gitattributes at attr.c:819:9
-  Occurrences: 1
+  Occurrences: 2
 
 Uncategorised
   After events:
@@ -24500,7 +25884,6 @@ Uncategorised
 Uncategorised
   After events:
     RF: xsnprintf at wrapper.c:692:2
-    IRF: format_object_header_literally at object-file.c:0:71
   Occurrences: 1
 
 Uncategorised
@@ -24541,13 +25924,7 @@ Uncategorised
 Uncategorised
   After events:
     RF: xstrfmt at strbuf.c:995:2
-  Occurrences: 3
-
-Uncategorised
-  After events:
-    RF: xstrfmt at strbuf.c:995:2
-    IRF: expand_base_dir at repository.c:0:0
-  Occurrences: 3
+  Occurrences: 6
 
 Uncategorised
   Before events:
@@ -24558,27 +25935,6 @@ Uncategorised
   Before events:
     CF: add_index_entry_with_check at read-cache.c:1403:6
     CT: verify_path_internal at read-cache.c:1043:0
-    CF: verify_path_internal at read-cache.c:1046:6
-    CT: git_has_dos_drive_prefix at git-compat-util.h:432:0
-    RF: git_has_dos_drive_prefix at git-compat-util.h:433:2
-    CF: verify_path_internal at read-cache.c:1072:9
-    CT: is_ntfs_dotgit at path.c:1394:0
-    RF: is_ntfs_dotgit at path.c:1427:1
-    CF: verify_path_internal at read-cache.c:1082:8
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: verify_path_internal at read-cache.c:1056:7
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: verify_path_internal at read-cache.c:1056:7
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: verify_path_internal at read-cache.c:1056:7
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: verify_path_internal at read-cache.c:1056:7
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
     CF: verify_path_internal at read-cache.c:1056:7
     CT: git_is_dir_sep at git-compat-util.h:447:0
   Occurrences: 7
@@ -24587,12 +25943,6 @@ Uncategorised
   Before events:
     CF: add_patterns_from_buffer at dir.c:1136:6
     CT: skip_utf8_bom at utf8.c:788:0
-    CF: skip_utf8_bom at utf8.c:789:12
-    CT: Jump to external code for strlen
-    RF: Jump to external code for strlen
-    CF: skip_utf8_bom at utf8.c:790:30
-    CT: Jump to external code for strlen
-    RF: Jump to external code for strlen
     CF: skip_utf8_bom at utf8.c:790:6
     CT: Jump to external code for memcmp
   Occurrences: 7
@@ -24620,21 +25970,6 @@ Uncategorised
     CT: strbuf_worktree_gitdir at path.c:420:0
     CF: strbuf_worktree_gitdir at path.c:422:3
     CT: strbuf_addstr at strbuf.h:304:0
-    CF: strbuf_addstr at strbuf.h:305:20
-    CT: Jump to external code for strlen
-    RF: Jump to external code for strlen
-    CF: strbuf_addstr at strbuf.h:305:2
-    CT: strbuf_add at strbuf.c:297:0
-    CF: strbuf_add at strbuf.c:298:2
-    CT: strbuf_grow at strbuf.c:92:0
-    RF: strbuf_grow at strbuf.c:102:1
-    CF: strbuf_add at strbuf.c:299:2
-    CT: Jump to external code for memcpy
-    RF: Jump to external code for memcpy
-    CF: strbuf_add at strbuf.c:300:2
-    CT: strbuf_setlen at strbuf.h:161:0
-    RF: strbuf_setlen at strbuf.h:169:1
-    RF: strbuf_add at strbuf.c:301:1
   Occurrences: 321
 
 Uncategorised
@@ -24707,35 +26042,8 @@ Uncategorised
   Before events:
     CF: normalize_path_copy at path.c:1206:9
     CT: normalize_path_copy_len at path.c:1119:0
-    CF: normalize_path_copy_len at path.c:1126:14
-    CT: git_offset_1st_component at git-compat-util.h:456:0
-    CF: git_offset_1st_component at git-compat-util.h:457:9
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    RF: git_offset_1st_component at git-compat-util.h:457:2
-    CF: normalize_path_copy_len at path.c:1129:7
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: normalize_path_copy_len at path.c:1135:9
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
     CF: normalize_path_copy_len at path.c:1175:35
     CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: normalize_path_copy_len at path.c:1175:35
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: normalize_path_copy_len at path.c:1175:35
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: normalize_path_copy_len at path.c:1175:35
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: normalize_path_copy_len at path.c:1175:35
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: normalize_path_copy_len at path.c:1177:7
-    [...68 more events...]
   Occurrences: 433
 
 Uncategorised
@@ -24760,27 +26068,6 @@ Uncategorised
   Before events:
     CF: prefix_path_gently at setup.c:124:7
     CT: normalize_path_copy_len at path.c:1119:0
-    CF: normalize_path_copy_len at path.c:1126:14
-    CT: git_offset_1st_component at git-compat-util.h:456:0
-    CF: git_offset_1st_component at git-compat-util.h:457:9
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    RF: git_offset_1st_component at git-compat-util.h:457:2
-    CF: normalize_path_copy_len at path.c:1135:9
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: normalize_path_copy_len at path.c:1175:35
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: normalize_path_copy_len at path.c:1175:35
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: normalize_path_copy_len at path.c:1175:35
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: normalize_path_copy_len at path.c:1175:35
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
     CF: normalize_path_copy_len at path.c:1175:35
     CT: git_is_dir_sep at git-compat-util.h:447:0
   Occurrences: 4
@@ -24799,9 +26086,6 @@ Uncategorised
   Before events:
     CF: read_directory_recursive at dir.c:2563:6
     CT: open_cached_dir at dir.c:2426:0
-    CF: open_cached_dir at dir.c:2429:2
-    CT: Jump to external code for memset
-    RF: Jump to external code for memset
   Occurrences: 4
 
 Uncategorised
@@ -24824,1139 +26108,24 @@ Uncategorised
   Before events:
     CF: safe_create_leading_directories at object-file.c:400:9
     CT: safe_create_leading_directories_1 at object-file.c:345:0
-    CF: safe_create_leading_directories_1 at object-file.c:346:32
-    CT: git_offset_1st_component at git-compat-util.h:456:0
-    CF: git_offset_1st_component at git-compat-util.h:457:9
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    RF: git_offset_1st_component at git-compat-util.h:457:2
     CF: safe_create_leading_directories_1 at object-file.c:353:21
     CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-  Occurrences: 2
+  Occurrences: 63
 
 Uncategorised
   Before events:
     CF: safe_create_leading_directories at object-file.c:400:9
     CT: safe_create_leading_directories_1 at object-file.c:345:0
-    CF: safe_create_leading_directories_1 at object-file.c:346:32
-    CT: git_offset_1st_component at git-compat-util.h:456:0
-    CF: git_offset_1st_component at git-compat-util.h:457:9
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    RF: git_offset_1st_component at git-compat-util.h:457:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: safe_create_leading_directories at object-file.c:400:9
-    CT: safe_create_leading_directories_1 at object-file.c:345:0
-    CF: safe_create_leading_directories_1 at object-file.c:346:32
-    CT: git_offset_1st_component at git-compat-util.h:456:0
-    CF: git_offset_1st_component at git-compat-util.h:457:9
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    RF: git_offset_1st_component at git-compat-util.h:457:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-  Occurrences: 14
-
-Uncategorised
-  Before events:
-    CF: safe_create_leading_directories at object-file.c:400:9
-    CT: safe_create_leading_directories_1 at object-file.c:345:0
-    CF: safe_create_leading_directories_1 at object-file.c:346:32
-    CT: git_offset_1st_component at git-compat-util.h:456:0
-    CF: git_offset_1st_component at git-compat-util.h:457:9
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    RF: git_offset_1st_component at git-compat-util.h:457:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: safe_create_leading_directories at object-file.c:400:9
-    CT: safe_create_leading_directories_1 at object-file.c:345:0
-    CF: safe_create_leading_directories_1 at object-file.c:346:32
-    CT: git_offset_1st_component at git-compat-util.h:456:0
-    CF: git_offset_1st_component at git-compat-util.h:457:9
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    RF: git_offset_1st_component at git-compat-util.h:457:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    [...4 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: safe_create_leading_directories at object-file.c:400:9
-    CT: safe_create_leading_directories_1 at object-file.c:345:0
-    CF: safe_create_leading_directories_1 at object-file.c:346:32
-    CT: git_offset_1st_component at git-compat-util.h:456:0
-    CF: git_offset_1st_component at git-compat-util.h:457:9
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    RF: git_offset_1st_component at git-compat-util.h:457:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    [...7 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: safe_create_leading_directories at object-file.c:400:9
-    CT: safe_create_leading_directories_1 at object-file.c:345:0
-    CF: safe_create_leading_directories_1 at object-file.c:346:32
-    CT: git_offset_1st_component at git-compat-util.h:456:0
-    CF: git_offset_1st_component at git-compat-util.h:457:9
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    RF: git_offset_1st_component at git-compat-util.h:457:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    [...10 more events...]
-  Occurrences: 3
-
-Uncategorised
-  Before events:
-    CF: safe_create_leading_directories at object-file.c:400:9
-    CT: safe_create_leading_directories_1 at object-file.c:345:0
-    CF: safe_create_leading_directories_1 at object-file.c:346:32
-    CT: git_offset_1st_component at git-compat-util.h:456:0
-    CF: git_offset_1st_component at git-compat-util.h:457:9
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    RF: git_offset_1st_component at git-compat-util.h:457:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    [...13 more events...]
-  Occurrences: 3
-
-Uncategorised
-  Before events:
-    CF: safe_create_leading_directories at object-file.c:400:9
-    CT: safe_create_leading_directories_1 at object-file.c:345:0
-    CF: safe_create_leading_directories_1 at object-file.c:346:32
-    CT: git_offset_1st_component at git-compat-util.h:456:0
-    CF: git_offset_1st_component at git-compat-util.h:457:9
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    RF: git_offset_1st_component at git-compat-util.h:457:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    [...16 more events...]
-  Occurrences: 4
-
-Uncategorised
-  Before events:
-    CF: safe_create_leading_directories at object-file.c:400:9
-    CT: safe_create_leading_directories_1 at object-file.c:345:0
-    CF: safe_create_leading_directories_1 at object-file.c:346:32
-    CT: git_offset_1st_component at git-compat-util.h:456:0
-    CF: git_offset_1st_component at git-compat-util.h:457:9
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    RF: git_offset_1st_component at git-compat-util.h:457:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    [...22 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: safe_create_leading_directories at object-file.c:400:9
-    CT: safe_create_leading_directories_1 at object-file.c:345:0
-    CF: safe_create_leading_directories_1 at object-file.c:346:32
-    CT: git_offset_1st_component at git-compat-util.h:456:0
-    CF: git_offset_1st_component at git-compat-util.h:457:9
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    RF: git_offset_1st_component at git-compat-util.h:457:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    [...28 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: safe_create_leading_directories at object-file.c:400:9
-    CT: safe_create_leading_directories_1 at object-file.c:345:0
-    CF: safe_create_leading_directories_1 at object-file.c:346:32
-    CT: git_offset_1st_component at git-compat-util.h:456:0
-    CF: git_offset_1st_component at git-compat-util.h:457:9
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    RF: git_offset_1st_component at git-compat-util.h:457:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    [...34 more events...]
-  Occurrences: 3
-
-Uncategorised
-  Before events:
-    CF: safe_create_leading_directories at object-file.c:400:9
-    CT: safe_create_leading_directories_1 at object-file.c:345:0
-    CF: safe_create_leading_directories_1 at object-file.c:346:32
-    CT: git_offset_1st_component at git-compat-util.h:456:0
-    CF: git_offset_1st_component at git-compat-util.h:457:9
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    RF: git_offset_1st_component at git-compat-util.h:457:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    [...37 more events...]
-  Occurrences: 2
-
-Uncategorised
-  Before events:
-    CF: safe_create_leading_directories at object-file.c:400:9
-    CT: safe_create_leading_directories_1 at object-file.c:345:0
-    CF: safe_create_leading_directories_1 at object-file.c:346:32
-    CT: git_offset_1st_component at git-compat-util.h:456:0
-    CF: git_offset_1st_component at git-compat-util.h:457:9
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    RF: git_offset_1st_component at git-compat-util.h:457:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    [...46 more events...]
-  Occurrences: 2
-
-Uncategorised
-  Before events:
-    CF: safe_create_leading_directories at object-file.c:400:9
-    CT: safe_create_leading_directories_1 at object-file.c:345:0
-    CF: safe_create_leading_directories_1 at object-file.c:346:32
-    CT: git_offset_1st_component at git-compat-util.h:456:0
-    CF: git_offset_1st_component at git-compat-util.h:457:9
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    RF: git_offset_1st_component at git-compat-util.h:457:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    [...67 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: safe_create_leading_directories at object-file.c:400:9
-    CT: safe_create_leading_directories_1 at object-file.c:345:0
-    CF: safe_create_leading_directories_1 at object-file.c:346:32
-    CT: git_offset_1st_component at git-compat-util.h:456:0
-    CF: git_offset_1st_component at git-compat-util.h:457:9
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    RF: git_offset_1st_component at git-compat-util.h:457:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:360:10
-    [...4 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: safe_create_leading_directories at object-file.c:400:9
-    CT: safe_create_leading_directories_1 at object-file.c:345:0
-    CF: safe_create_leading_directories_1 at object-file.c:346:32
-    CT: git_offset_1st_component at git-compat-util.h:456:0
-    CF: git_offset_1st_component at git-compat-util.h:457:9
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    RF: git_offset_1st_component at git-compat-util.h:457:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:360:10
-    [...7 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: safe_create_leading_directories at object-file.c:400:9
-    CT: safe_create_leading_directories_1 at object-file.c:345:0
-    CF: safe_create_leading_directories_1 at object-file.c:346:32
-    CT: git_offset_1st_component at git-compat-util.h:456:0
-    CF: git_offset_1st_component at git-compat-util.h:457:9
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    RF: git_offset_1st_component at git-compat-util.h:457:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:360:10
-    [...16 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: safe_create_leading_directories at object-file.c:400:9
-    CT: safe_create_leading_directories_1 at object-file.c:345:0
-    CF: safe_create_leading_directories_1 at object-file.c:346:32
-    CT: git_offset_1st_component at git-compat-util.h:456:0
-    CF: git_offset_1st_component at git-compat-util.h:457:9
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    RF: git_offset_1st_component at git-compat-util.h:457:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:360:10
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
     CF: safe_create_leading_directories_1 at object-file.c:367:8
     CT: Jump to external code for stat64
-    RF: Jump to external code for stat64
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    [...1 more events...]
-  Occurrences: 4
+  Occurrences: 13
 
 Uncategorised
   Before events:
     CF: safe_create_leading_directories at object-file.c:400:9
     CT: safe_create_leading_directories_1 at object-file.c:345:0
-    CF: safe_create_leading_directories_1 at object-file.c:346:32
-    CT: git_offset_1st_component at git-compat-util.h:456:0
-    CF: git_offset_1st_component at git-compat-util.h:457:9
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    RF: git_offset_1st_component at git-compat-util.h:457:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:360:10
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:367:8
-    CT: Jump to external code for stat64
-    RF: Jump to external code for stat64
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    [...40 more events...]
-  Occurrences: 2
-
-Uncategorised
-  Before events:
-    CF: safe_create_leading_directories at object-file.c:400:9
-    CT: safe_create_leading_directories_1 at object-file.c:345:0
-    CF: safe_create_leading_directories_1 at object-file.c:346:32
-    CT: git_offset_1st_component at git-compat-util.h:456:0
-    CF: git_offset_1st_component at git-compat-util.h:457:9
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    RF: git_offset_1st_component at git-compat-util.h:457:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:360:10
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:367:8
-    CT: Jump to external code for stat64
-    RF: Jump to external code for stat64
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    [...145 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: safe_create_leading_directories at object-file.c:400:9
-    CT: safe_create_leading_directories_1 at object-file.c:345:0
-    CF: safe_create_leading_directories_1 at object-file.c:346:32
-    CT: git_offset_1st_component at git-compat-util.h:456:0
-    CF: git_offset_1st_component at git-compat-util.h:457:9
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    RF: git_offset_1st_component at git-compat-util.h:457:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:360:10
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:367:8
-    CT: Jump to external code for stat64
-    RF: Jump to external code for stat64
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    [...310 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: safe_create_leading_directories at object-file.c:400:9
-    CT: safe_create_leading_directories_1 at object-file.c:345:0
-    CF: safe_create_leading_directories_1 at object-file.c:346:32
-    CT: git_offset_1st_component at git-compat-util.h:456:0
-    CF: git_offset_1st_component at git-compat-util.h:457:9
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    RF: git_offset_1st_component at git-compat-util.h:457:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:360:10
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:367:8
-    CT: Jump to external code for stat64
-    RF: Jump to external code for stat64
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    [...325 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: safe_create_leading_directories at object-file.c:400:9
-    CT: safe_create_leading_directories_1 at object-file.c:345:0
-    CF: safe_create_leading_directories_1 at object-file.c:346:32
-    CT: git_offset_1st_component at git-compat-util.h:456:0
-    CF: git_offset_1st_component at git-compat-util.h:457:9
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    RF: git_offset_1st_component at git-compat-util.h:457:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:360:10
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:367:8
-    CT: Jump to external code for stat64
-    RF: Jump to external code for stat64
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    [...328 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: safe_create_leading_directories at object-file.c:400:9
-    CT: safe_create_leading_directories_1 at object-file.c:345:0
-    CF: safe_create_leading_directories_1 at object-file.c:346:32
-    CT: git_offset_1st_component at git-compat-util.h:456:0
-    CF: git_offset_1st_component at git-compat-util.h:457:9
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    RF: git_offset_1st_component at git-compat-util.h:457:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:360:10
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:367:8
-    CT: Jump to external code for stat64
-    RF: Jump to external code for stat64
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    [...298 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: safe_create_leading_directories at object-file.c:400:9
-    CT: safe_create_leading_directories_1 at object-file.c:345:0
-    CF: safe_create_leading_directories_1 at object-file.c:346:32
-    CT: git_offset_1st_component at git-compat-util.h:456:0
-    CF: git_offset_1st_component at git-compat-util.h:457:9
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    RF: git_offset_1st_component at git-compat-util.h:457:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:360:10
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:367:8
-    CT: Jump to external code for stat64
-    RF: Jump to external code for stat64
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    [...262 more events...]
-  Occurrences: 4
-
-Uncategorised
-  Before events:
-    CF: safe_create_leading_directories at object-file.c:400:9
-    CT: safe_create_leading_directories_1 at object-file.c:345:0
-    CF: safe_create_leading_directories_1 at object-file.c:346:32
-    CT: git_offset_1st_component at git-compat-util.h:456:0
-    CF: git_offset_1st_component at git-compat-util.h:457:9
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    RF: git_offset_1st_component at git-compat-util.h:457:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:360:10
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:367:8
-    CT: Jump to external code for stat64
-    RF: Jump to external code for stat64
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    [...277 more events...]
-  Occurrences: 2
-
-Uncategorised
-  Before events:
-    CF: safe_create_leading_directories at object-file.c:400:9
-    CT: safe_create_leading_directories_1 at object-file.c:345:0
-    CF: safe_create_leading_directories_1 at object-file.c:346:32
-    CT: git_offset_1st_component at git-compat-util.h:456:0
-    CF: git_offset_1st_component at git-compat-util.h:457:9
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    RF: git_offset_1st_component at git-compat-util.h:457:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:360:10
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:367:8
-    CT: Jump to external code for stat64
-    RF: Jump to external code for stat64
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    [...280 more events...]
-  Occurrences: 2
-
-Uncategorised
-  Before events:
-    CF: safe_create_leading_directories at object-file.c:400:9
-    CT: safe_create_leading_directories_1 at object-file.c:345:0
-    CF: safe_create_leading_directories_1 at object-file.c:346:32
-    CT: git_offset_1st_component at git-compat-util.h:456:0
-    CF: git_offset_1st_component at git-compat-util.h:457:9
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    RF: git_offset_1st_component at git-compat-util.h:457:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:360:10
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:367:8
-    CT: Jump to external code for stat64
-    RF: Jump to external code for stat64
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    [...19 more events...]
-  Occurrences: 4
-
-Uncategorised
-  Before events:
-    CF: safe_create_leading_directories at object-file.c:400:9
-    CT: safe_create_leading_directories_1 at object-file.c:345:0
-    CF: safe_create_leading_directories_1 at object-file.c:346:32
-    CT: git_offset_1st_component at git-compat-util.h:456:0
-    CF: git_offset_1st_component at git-compat-util.h:457:9
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    RF: git_offset_1st_component at git-compat-util.h:457:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:360:10
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:367:8
-    CT: Jump to external code for stat64
-    RF: Jump to external code for stat64
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    [...46 more events...]
-  Occurrences: 4
-
-Uncategorised
-  Before events:
-    CF: safe_create_leading_directories at object-file.c:400:9
-    CT: safe_create_leading_directories_1 at object-file.c:345:0
-    CF: safe_create_leading_directories_1 at object-file.c:346:32
-    CT: git_offset_1st_component at git-compat-util.h:456:0
-    CF: git_offset_1st_component at git-compat-util.h:457:9
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    RF: git_offset_1st_component at git-compat-util.h:457:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:360:10
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:367:8
-    CT: Jump to external code for stat64
-    RF: Jump to external code for stat64
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    [...73 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: safe_create_leading_directories at object-file.c:400:9
-    CT: safe_create_leading_directories_1 at object-file.c:345:0
-    CF: safe_create_leading_directories_1 at object-file.c:346:32
-    CT: git_offset_1st_component at git-compat-util.h:456:0
-    CF: git_offset_1st_component at git-compat-util.h:457:9
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    RF: git_offset_1st_component at git-compat-util.h:457:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:360:10
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:367:8
-    CT: Jump to external code for stat64
-    RF: Jump to external code for stat64
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    [...40 more events...]
-  Occurrences: 4
-
-Uncategorised
-  Before events:
-    CF: safe_create_leading_directories at object-file.c:400:9
-    CT: safe_create_leading_directories_1 at object-file.c:345:0
-    CF: safe_create_leading_directories_1 at object-file.c:346:32
-    CT: git_offset_1st_component at git-compat-util.h:456:0
-    CF: git_offset_1st_component at git-compat-util.h:457:9
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    RF: git_offset_1st_component at git-compat-util.h:457:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:360:10
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:367:8
-    CT: Jump to external code for stat64
-    RF: Jump to external code for stat64
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    [...46 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: safe_create_leading_directories at object-file.c:400:9
-    CT: safe_create_leading_directories_1 at object-file.c:345:0
-    CF: safe_create_leading_directories_1 at object-file.c:346:32
-    CT: git_offset_1st_component at git-compat-util.h:456:0
-    CF: git_offset_1st_component at git-compat-util.h:457:9
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    RF: git_offset_1st_component at git-compat-util.h:457:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:360:10
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:367:8
-    CT: Jump to external code for stat64
-    RF: Jump to external code for stat64
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: safe_create_leading_directories_1 at object-file.c:353:21
-    [...19 more events...]
+    CF: safe_create_leading_directories_1 at object-file.c:390:23
+    CT: adjust_shared_perm at path.c:892:0
   Occurrences: 2
 
 Uncategorised
@@ -25987,12 +26156,6 @@ Uncategorised
   Before events:
     CF: strbuf_addstr at strbuf.h:305:2
     CT: strbuf_add at strbuf.c:297:0
-    CF: strbuf_add at strbuf.c:298:2
-    CT: strbuf_grow at strbuf.c:92:0
-    RF: strbuf_grow at strbuf.c:102:1
-    CF: strbuf_add at strbuf.c:299:2
-    CT: Jump to external code for memcpy
-    RF: Jump to external code for memcpy
     CF: strbuf_add at strbuf.c:300:2
     CT: strbuf_setlen at strbuf.h:161:0
   Occurrences: 47
@@ -26009,100 +26172,9 @@ Uncategorised
   Before events:
     CF: strbuf_realpath_1 at abspath.c:109:3
     CT: get_next_component at abspath.c:32:0
-    CF: get_next_component at abspath.c:36:2
-    CT: strbuf_setlen at strbuf.h:161:0
-    RF: strbuf_setlen at strbuf.h:169:1
-    CF: get_next_component at abspath.c:40:31
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
     CF: get_next_component at abspath.c:43:29
     CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-  Occurrences: 3
-
-Uncategorised
-  Before events:
-    CF: strbuf_realpath_1 at abspath.c:109:3
-    CT: get_next_component at abspath.c:32:0
-    CF: get_next_component at abspath.c:36:2
-    CT: strbuf_setlen at strbuf.h:161:0
-    RF: strbuf_setlen at strbuf.h:169:1
-    CF: get_next_component at abspath.c:40:31
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    [...1 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: strbuf_realpath_1 at abspath.c:109:3
-    CT: get_next_component at abspath.c:32:0
-    CF: get_next_component at abspath.c:36:2
-    CT: strbuf_setlen at strbuf.h:161:0
-    RF: strbuf_setlen at strbuf.h:169:1
-    CF: get_next_component at abspath.c:40:31
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    [...19 more events...]
-  Occurrences: 4
+  Occurrences: 8
 
 Uncategorised
   Before events:
@@ -26141,9 +26213,6 @@ Uncategorised
     CT: strbuf_strip_suffix at strbuf.h:566:0
     CF: strbuf_strip_suffix at strbuf.h:567:6
     CT: strip_suffix_mem at git-compat-util.h:732:0
-    CF: strip_suffix_mem at git-compat-util.h:733:18
-    CT: Jump to external code for strlen
-    RF: Jump to external code for strlen
     CF: strip_suffix_mem at git-compat-util.h:734:23
   Occurrences: 9
 
@@ -26165,615 +26234,103 @@ Uncategorised
 Uncategorised
   Before events:
     CT: get_next_component at abspath.c:32:0
-  Occurrences: 2
-
-Uncategorised
-  Before events:
-    CT: get_next_component at abspath.c:32:0
-    CF: get_next_component at abspath.c:43:29
-  Occurrences: 14
-
-Uncategorised
-  Before events:
-    CT: get_next_component at abspath.c:32:0
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-  Occurrences: 5
-
-Uncategorised
-  Before events:
-    CT: get_next_component at abspath.c:32:0
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
   Occurrences: 6
 
 Uncategorised
   Before events:
     CT: get_next_component at abspath.c:32:0
     CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-  Occurrences: 2
+  Occurrences: 158
 
 Uncategorised
   Before events:
     CT: get_next_component at abspath.c:32:0
     CF: get_next_component at abspath.c:43:29
     CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-  Occurrences: 53
-
-Uncategorised
-  Before events:
-    CT: get_next_component at abspath.c:32:0
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-  Occurrences: 87
-
-Uncategorised
-  Before events:
-    CT: get_next_component at abspath.c:32:0
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CT: get_next_component at abspath.c:32:0
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-  Occurrences: 3
-
-Uncategorised
-  Before events:
-    CT: get_next_component at abspath.c:32:0
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    [...7 more events...]
-  Occurrences: 2
-
-Uncategorised
-  Before events:
-    CT: get_next_component at abspath.c:32:0
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:46:2
-  Occurrences: 3
-
-Uncategorised
-  Before events:
-    CT: get_next_component at abspath.c:32:0
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:46:2
-    CT: strbuf_add at strbuf.c:297:0
-    [...2 more events...]
-  Occurrences: 36
-
-Uncategorised
-  Before events:
-    CT: get_next_component at abspath.c:32:0
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:46:2
-    CT: strbuf_add at strbuf.c:297:0
-    [...5 more events...]
-  Occurrences: 6
-
-Uncategorised
-  Before events:
-    CT: get_next_component at abspath.c:32:0
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:46:2
-    CT: strbuf_add at strbuf.c:297:0
-    [...8 more events...]
-  Occurrences: 3
-
-Uncategorised
-  Before events:
-    CT: get_next_component at abspath.c:32:0
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:46:2
-    CT: strbuf_add at strbuf.c:297:0
-    [...11 more events...]
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CT: get_next_component at abspath.c:32:0
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:46:2
-    CT: strbuf_add at strbuf.c:297:0
-    [...14 more events...]
-  Occurrences: 8
-
-Uncategorised
-  Before events:
-    CT: get_next_component at abspath.c:32:0
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:46:2
-    CT: strbuf_add at strbuf.c:297:0
-    [...17 more events...]
-  Occurrences: 3
-
-Uncategorised
-  Before events:
-    CT: get_next_component at abspath.c:32:0
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:46:2
-    CT: strbuf_add at strbuf.c:297:0
-    [...20 more events...]
-  Occurrences: 4
-
-Uncategorised
-  Before events:
-    CT: get_next_component at abspath.c:32:0
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:46:2
-    CT: strbuf_add at strbuf.c:297:0
-    [...23 more events...]
-  Occurrences: 18
-
-Uncategorised
-  Before events:
-    CT: get_next_component at abspath.c:32:0
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:46:2
-    CT: strbuf_add at strbuf.c:297:0
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CT: get_next_component at abspath.c:32:0
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:46:2
-    CT: strbuf_add at strbuf.c:297:0
-    CF: strbuf_add at strbuf.c:298:2
-    CT: strbuf_grow at strbuf.c:92:0
-    RF: strbuf_grow at strbuf.c:102:1
-  Occurrences: 4
-
-Uncategorised
-  Before events:
-    CT: get_next_component at abspath.c:32:0
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:46:2
-    CT: strbuf_add at strbuf.c:297:0
-    CF: strbuf_add at strbuf.c:298:2
-    CT: strbuf_grow at strbuf.c:92:0
-    RF: strbuf_grow at strbuf.c:102:1
-    CF: strbuf_add at strbuf.c:299:2
-    CT: Jump to external code for memcpy
-    RF: Jump to external code for memcpy
-  Occurrences: 4
-
-Uncategorised
-  Before events:
-    CT: get_next_component at abspath.c:32:0
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:46:2
-    CT: strbuf_add at strbuf.c:297:0
-    CF: strbuf_add at strbuf.c:298:2
-    CT: strbuf_grow at strbuf.c:92:0
-    RF: strbuf_grow at strbuf.c:102:1
-    CF: strbuf_add at strbuf.c:299:2
-    CT: Jump to external code for memcpy
-    RF: Jump to external code for memcpy
-    CF: strbuf_add at strbuf.c:300:2
-    CT: strbuf_setlen at strbuf.h:161:0
-    RF: strbuf_setlen at strbuf.h:169:1
   Occurrences: 13
 
 Uncategorised
   Before events:
     CT: get_next_component at abspath.c:32:0
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
+    CF: get_next_component at abspath.c:46:2
+  Occurrences: 3
+
+Uncategorised
+  Before events:
+    CT: get_next_component at abspath.c:32:0
+    CF: get_next_component at abspath.c:46:2
+    CT: strbuf_add at strbuf.c:297:0
+  Occurrences: 22
+
+Uncategorised
+  Before events:
+    CT: get_next_component at abspath.c:32:0
+    CF: get_next_component at abspath.c:46:2
+    CT: strbuf_add at strbuf.c:297:0
+    CF: strbuf_add at strbuf.c:298:2
+  Occurrences: 2
+
+Uncategorised
+  Before events:
+    CT: get_next_component at abspath.c:32:0
     CF: get_next_component at abspath.c:46:2
     CT: strbuf_add at strbuf.c:297:0
     CF: strbuf_add at strbuf.c:298:2
     CT: strbuf_grow at strbuf.c:92:0
-    RF: strbuf_grow at strbuf.c:102:1
+  Occurrences: 36
+
+Uncategorised
+  Before events:
+    CT: get_next_component at abspath.c:32:0
+    CF: get_next_component at abspath.c:46:2
+    CT: strbuf_add at strbuf.c:297:0
+    CF: strbuf_add at strbuf.c:299:2
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CT: get_next_component at abspath.c:32:0
+    CF: get_next_component at abspath.c:46:2
+    CT: strbuf_add at strbuf.c:297:0
     CF: strbuf_add at strbuf.c:299:2
     CT: Jump to external code for memcpy
-    RF: Jump to external code for memcpy
+  Occurrences: 6
+
+Uncategorised
+  Before events:
+    CT: get_next_component at abspath.c:32:0
+    CF: get_next_component at abspath.c:46:2
+    CT: strbuf_add at strbuf.c:297:0
+    CF: strbuf_add at strbuf.c:300:2
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CT: get_next_component at abspath.c:32:0
+    CF: get_next_component at abspath.c:46:2
+    CT: strbuf_add at strbuf.c:297:0
     CF: strbuf_add at strbuf.c:300:2
     CT: strbuf_setlen at strbuf.h:161:0
-    RF: strbuf_setlen at strbuf.h:169:1
-    RF: strbuf_add at strbuf.c:301:1
+  Occurrences: 3
+
+Uncategorised
+  Before events:
+    CT: get_next_component at abspath.c:32:0
+    CF: get_next_component at abspath.c:48:2
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CT: get_next_component at abspath.c:32:0
+    CF: get_next_component at abspath.c:48:2
+    CT: strbuf_remove at strbuf.c:292:0
+    CF: strbuf_remove at strbuf.c:293:2
+    CT: strbuf_splice at strbuf.c:233:0
+  Occurrences: 33
+
+Uncategorised
+  Before events:
+    CT: get_next_component at abspath.c:32:0
     CF: get_next_component at abspath.c:48:2
     CT: strbuf_remove at strbuf.c:292:0
     CF: strbuf_remove at strbuf.c:293:2
@@ -26784,187 +26341,34 @@ Uncategorised
 Uncategorised
   Before events:
     CT: get_next_component at abspath.c:32:0
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:46:2
-    CT: strbuf_add at strbuf.c:297:0
-    CF: strbuf_add at strbuf.c:298:2
-    CT: strbuf_grow at strbuf.c:92:0
-    RF: strbuf_grow at strbuf.c:102:1
-    CF: strbuf_add at strbuf.c:299:2
-    CT: Jump to external code for memcpy
-    RF: Jump to external code for memcpy
-    CF: strbuf_add at strbuf.c:300:2
-    CT: strbuf_setlen at strbuf.h:161:0
-    RF: strbuf_setlen at strbuf.h:169:1
-    RF: strbuf_add at strbuf.c:301:1
     CF: get_next_component at abspath.c:48:2
     CT: strbuf_remove at strbuf.c:292:0
     CF: strbuf_remove at strbuf.c:293:2
     CT: strbuf_splice at strbuf.c:233:0
     CF: strbuf_splice at strbuf.c:243:2
-    [...3 more events...]
+    CT: Jump to external code for memmove
+  Occurrences: 3
+
+Uncategorised
+  Before events:
+    CT: get_next_component at abspath.c:32:0
+    CF: get_next_component at abspath.c:48:2
+    CT: strbuf_remove at strbuf.c:292:0
+    CF: strbuf_remove at strbuf.c:293:2
+    CT: strbuf_splice at strbuf.c:233:0
+    CF: strbuf_splice at strbuf.c:246:2
   Occurrences: 6
 
 Uncategorised
   Before events:
     CT: get_next_component at abspath.c:32:0
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:46:2
-    CT: strbuf_add at strbuf.c:297:0
-    CF: strbuf_add at strbuf.c:298:2
-  Occurrences: 2
-
-Uncategorised
-  Before events:
-    CT: get_next_component at abspath.c:32:0
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:46:2
-    CT: strbuf_add at strbuf.c:297:0
-    CF: strbuf_add at strbuf.c:298:2
-    CT: strbuf_grow at strbuf.c:92:0
-    RF: strbuf_grow at strbuf.c:102:1
-    CF: strbuf_add at strbuf.c:299:2
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CT: get_next_component at abspath.c:32:0
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:46:2
-    CT: strbuf_add at strbuf.c:297:0
-    CF: strbuf_add at strbuf.c:298:2
-    CT: strbuf_grow at strbuf.c:92:0
-    RF: strbuf_grow at strbuf.c:102:1
-    CF: strbuf_add at strbuf.c:299:2
-    CT: Jump to external code for memcpy
-    RF: Jump to external code for memcpy
-    CF: strbuf_add at strbuf.c:300:2
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CT: get_next_component at abspath.c:32:0
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:46:2
-    CT: strbuf_add at strbuf.c:297:0
-    CF: strbuf_add at strbuf.c:298:2
-    CT: strbuf_grow at strbuf.c:92:0
-    RF: strbuf_grow at strbuf.c:102:1
-    CF: strbuf_add at strbuf.c:299:2
-    CT: Jump to external code for memcpy
-    RF: Jump to external code for memcpy
-    CF: strbuf_add at strbuf.c:300:2
-    CT: strbuf_setlen at strbuf.h:161:0
-    RF: strbuf_setlen at strbuf.h:169:1
-    RF: strbuf_add at strbuf.c:301:1
     CF: get_next_component at abspath.c:48:2
     CT: strbuf_remove at strbuf.c:292:0
     CF: strbuf_remove at strbuf.c:293:2
     CT: strbuf_splice at strbuf.c:233:0
-    CF: strbuf_splice at strbuf.c:243:2
-    CT: Jump to external code for memmove
-  Occurrences: 3
-
-Uncategorised
-  Before events:
-    CT: get_next_component at abspath.c:32:0
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:46:2
-    CT: strbuf_add at strbuf.c:297:0
-    CF: strbuf_add at strbuf.c:298:2
-    CT: strbuf_grow at strbuf.c:92:0
-    RF: strbuf_grow at strbuf.c:102:1
-    CF: strbuf_add at strbuf.c:299:2
-    CT: Jump to external code for memcpy
-    RF: Jump to external code for memcpy
-    CF: strbuf_add at strbuf.c:300:2
-    CT: strbuf_setlen at strbuf.h:161:0
-    RF: strbuf_setlen at strbuf.h:169:1
-    RF: strbuf_add at strbuf.c:301:1
-    CF: get_next_component at abspath.c:48:2
-    CT: strbuf_remove at strbuf.c:292:0
-    CF: strbuf_remove at strbuf.c:293:2
-    CT: strbuf_splice at strbuf.c:233:0
-    CF: strbuf_splice at strbuf.c:243:2
-    CT: Jump to external code for memmove
-    RF: Jump to external code for memmove
-    CF: strbuf_splice at strbuf.c:246:2
-    CT: Jump to external code for memcpy
-    RF: Jump to external code for memcpy
     CF: strbuf_splice at strbuf.c:247:2
-    [...1 more events...]
-  Occurrences: 3
-
-Uncategorised
-  Before events:
-    CT: get_next_component at abspath.c:32:0
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:43:29
-    CT: git_is_dir_sep at git-compat-util.h:447:0
-    RF: git_is_dir_sep at git-compat-util.h:448:2
-    CF: get_next_component at abspath.c:46:2
-    CT: strbuf_add at strbuf.c:297:0
-    CF: strbuf_add at strbuf.c:298:2
-    CT: strbuf_grow at strbuf.c:92:0
-    RF: strbuf_grow at strbuf.c:102:1
-    CF: strbuf_add at strbuf.c:299:2
-    CT: Jump to external code for memcpy
-    RF: Jump to external code for memcpy
-    CF: strbuf_add at strbuf.c:300:2
     CT: strbuf_setlen at strbuf.h:161:0
-    RF: strbuf_setlen at strbuf.h:169:1
-    RF: strbuf_add at strbuf.c:301:1
-    CF: get_next_component at abspath.c:48:2
-    CT: strbuf_remove at strbuf.c:292:0
-    CF: strbuf_remove at strbuf.c:293:2
-    CT: strbuf_splice at strbuf.c:233:0
-    CF: strbuf_splice at strbuf.c:243:2
-    CT: Jump to external code for memmove
-    RF: Jump to external code for memmove
-    CF: strbuf_splice at strbuf.c:246:2
-    CT: Jump to external code for memcpy
-    RF: Jump to external code for memcpy
-    CF: strbuf_splice at strbuf.c:247:2
-    [...4 more events...]
-  Occurrences: 2
+  Occurrences: 3
 
 Uncategorised
   Before events:
@@ -26994,10 +26398,10 @@ LibraryCallInlined
   Unique divergence coordinates: 10
 
 LibraryCallRemoved
-  Unique divergence coordinates: 165
+  Unique divergence coordinates: 173
 
 ProgramCallRemoved
-  Unique divergence coordinates: 129
+  Unique divergence coordinates: 185
 
 InlinedReentryAdded
   Unique divergence coordinates: 60
@@ -27006,12 +26410,12 @@ InlinedNoiseAdded
   Unique divergence coordinates: 115
 
 InlinedReturnAdded
-  Unique divergence coordinates: 218
+  Unique divergence coordinates: 220
 
 Uncategorised
-  Unique divergence coordinates: 1395
+  Unique divergence coordinates: 1324
 
 ## Summary
 
-3809 unique divergence coordinates
-1225165 divergence occurrences
+3804 unique divergence coordinates
+1227848 divergence occurrences
