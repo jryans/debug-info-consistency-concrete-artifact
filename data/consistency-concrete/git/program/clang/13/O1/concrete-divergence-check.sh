@@ -33,13 +33,20 @@ for test_path in concrete-trace/t*; do
     ../O0/concrete-trace/${test}/default \
     concrete-trace/${test}/default \
     > divergences/${test}/default/divergences.md
-  ${CON_COMPARE} \
-    --events-by-type-dir divergences/${test}/default/events \
-    --save-after-inlining-transform \
-    ../O0/concrete-trace/${test}/default \
-    concrete-trace/${test}/default \
-    -vv \
-    > divergences/${test}/default/divergences-verbose.md
+  # ${CON_COMPARE} \
+  #   --inlining-transform clustered \
+  #   --save-after-inlining-transform \
+  #   ../O0/concrete-trace/${test}/default \
+  #   concrete-trace/${test}/default \
+  #   -vv \
+  #   > divergences/${test}/default/divergences-clustered.md
+  # ${CON_COMPARE} \
+  #   --inlining-transform deduplicated \
+  #   --save-after-inlining-transform \
+  #   ../O0/concrete-trace/${test}/default \
+  #   concrete-trace/${test}/default \
+  #   -vv \
+  #   > divergences/${test}/default/divergences-deduplicated.md
 
   # Count unique divergence lines by type
   mkdir -p divergences/${test}/default/counts
