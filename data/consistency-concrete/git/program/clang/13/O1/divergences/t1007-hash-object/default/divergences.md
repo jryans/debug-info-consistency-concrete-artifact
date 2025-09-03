@@ -6868,18 +6868,6 @@ Inlined noise added
 
 Inlined noise added
   After events:
-    ICT: hash_to_hex_algop at hex.c:149:0
-    IRF: hash_to_hex_algop at hex.c:153:8
-  Occurrences: 2
-
-Inlined noise added
-  After events:
-    ICT: hash_to_hex_algop_r at hex.c:120:0
-    IRF: hash_to_hex_algop_r at hex.c:0:0
-  Occurrences: 2
-
-Inlined noise added
-  After events:
     ICT: hash_to_hex_algop_r at hex.c:120:0
     IRF: hash_to_hex_algop_r at hex.c:139:7
   Occurrences: 25
@@ -6901,12 +6889,6 @@ Inlined noise added
     ICT: is_null_oid at hash.h:256:0
     IRF: is_null_oid at hash.h:0:0
   Occurrences: 21
-
-Inlined noise added
-  After events:
-    ICT: memory_limit_check at wrapper.c:17:0
-    IRF: memory_limit_check at wrapper.c:0:0
-  Occurrences: 59
 
 Inlined noise added
   After events:
@@ -6978,7 +6960,7 @@ Inlined noise added
   After events:
     ICT: strbuf_grow at strbuf.c:91:0
     IRF: strbuf_grow at strbuf.c:0:0
-  Occurrences: 276
+  Occurrences: 9
 
 Inlined noise added
   After events:
@@ -6990,7 +6972,7 @@ Inlined noise added
   After events:
     ICT: strbuf_setlen at strbuf.h:160:0
     IRF: strbuf_setlen at strbuf.h:0:0
-  Occurrences: 75
+  Occurrences: 5
 
 Inlined noise added
   After events:
@@ -7563,6 +7545,12 @@ Uncategorised
 
 Uncategorised
   After events:
+    ICT: memory_limit_check at wrapper.c:17:0
+    IRF: memory_limit_check at wrapper.c:0:0
+  Occurrences: 59
+
+Uncategorised
+  After events:
     ICT: packed_downcast at packed-backend.c:219:0
   Occurrences: 5
 
@@ -7656,8 +7644,20 @@ Uncategorised
 
 Uncategorised
   After events:
+    ICT: strbuf_grow at strbuf.c:91:0
+    IRF: strbuf_grow at strbuf.c:0:0
+  Occurrences: 267
+
+Uncategorised
+  After events:
     ICT: strbuf_setlen at strbuf.h:160:0
   Occurrences: 20
+
+Uncategorised
+  After events:
+    ICT: strbuf_setlen at strbuf.h:160:0
+    IRF: strbuf_setlen at strbuf.h:0:0
+  Occurrences: 70
 
 Uncategorised
   After events:
@@ -8215,18 +8215,18 @@ Inlined reentry added
   Divergence countable events: 34
 
 Inlined noise added
-  Unique divergence coordinates: 34
-  Divergence countable events: 68
+  Unique divergence coordinates: 31
+  Divergence countable events: 62
 
 Inlined return added
   Unique divergence coordinates: 2
   Divergence countable events: 122
 
 Uncategorised
-  Unique divergence coordinates: 201
-  Divergence countable events: 302
+  Unique divergence coordinates: 204
+  Divergence countable events: 308
 
 ## Summary
 
 1157 unique divergence coordinates
-360601 divergence occurrences
+360597 divergence occurrences

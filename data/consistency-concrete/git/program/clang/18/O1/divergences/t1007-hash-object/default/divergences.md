@@ -7658,12 +7658,6 @@ Inlined noise added
 
 Inlined noise added
   After events:
-    ICT: hash_to_hex_algop at hex.c:149:0
-    IRF: hash_to_hex_algop at hex.c:153:8
-  Occurrences: 1
-
-Inlined noise added
-  After events:
     ICT: hash_to_hex_algop_r at hex.c:120:0
     IRF: hash_to_hex_algop_r at hex.c:139:7
   Occurrences: 21
@@ -7712,12 +7706,6 @@ Inlined noise added
 
 Inlined noise added
   After events:
-    ICT: sane_qsort at git-compat-util.h:1305:0
-    IRF: sane_qsort at git-compat-util.h:0:0
-  Occurrences: 1
-
-Inlined noise added
-  After events:
     ICT: simple_length at dir.c:603:0
     IRF: simple_length at dir.c:0:0
   Occurrences: 17
@@ -7749,12 +7737,6 @@ Inlined noise added
 Inlined noise added
   After events:
     ICT: strbuf_grow at strbuf.c:91:0
-    IRF: strbuf_grow at strbuf.c:0:0
-  Occurrences: 367
-
-Inlined noise added
-  After events:
-    ICT: strbuf_grow at strbuf.c:91:0
     IRF: strbuf_grow at strbuf.c:101:14
   Occurrences: 13
 
@@ -7762,7 +7744,7 @@ Inlined noise added
   After events:
     ICT: strbuf_setlen at strbuf.h:160:0
     IRF: strbuf_setlen at strbuf.h:0:0
-  Occurrences: 1035
+  Occurrences: 1014
 
 Inlined noise added
   After events:
@@ -7775,12 +7757,6 @@ Inlined noise added
     ICT: string_list_append_nodup at string-list.c:205:0
     IRF: string_list_append_nodup at string-list.c:0:15
   Occurrences: 3
-
-Inlined noise added
-  After events:
-    ICT: string_list_append_nodup at string-list.c:205:0
-    IRF: string_list_append_nodup at string-list.c:212:15
-  Occurrences: 18
 
 Inlined return added
   After events:
@@ -8317,6 +8293,12 @@ Uncategorised
 
 Uncategorised
   After events:
+    ICT: sane_qsort at git-compat-util.h:1305:0
+    IRF: sane_qsort at git-compat-util.h:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
     ICT: simple_length at dir.c:603:0
   Occurrences: 11
 
@@ -8347,8 +8329,20 @@ Uncategorised
 
 Uncategorised
   After events:
+    ICT: strbuf_grow at strbuf.c:91:0
+    IRF: strbuf_grow at strbuf.c:0:0
+  Occurrences: 367
+
+Uncategorised
+  After events:
     ICT: strbuf_setlen at strbuf.h:160:0
   Occurrences: 608
+
+Uncategorised
+  After events:
+    ICT: strbuf_setlen at strbuf.h:160:0
+    IRF: strbuf_setlen at strbuf.h:0:0
+  Occurrences: 21
 
 Uncategorised
   After events:
@@ -8365,6 +8359,12 @@ Uncategorised
   After events:
     ICT: string_list_append_nodup at string-list.c:205:0
   Occurrences: 5
+
+Uncategorised
+  After events:
+    ICT: string_list_append_nodup at string-list.c:205:0
+    IRF: string_list_append_nodup at string-list.c:212:15
+  Occurrences: 18
 
 Uncategorised
   After events:
@@ -8857,18 +8857,18 @@ Inlined reentry added
   Divergence countable events: 38
 
 Inlined noise added
-  Unique divergence coordinates: 29
-  Divergence countable events: 58
+  Unique divergence coordinates: 25
+  Divergence countable events: 50
 
 Inlined return added
   Unique divergence coordinates: 3
   Divergence countable events: 151
 
 Uncategorised
-  Unique divergence coordinates: 169
-  Divergence countable events: 261
+  Unique divergence coordinates: 173
+  Divergence countable events: 269
 
 ## Summary
 
 1222 unique divergence coordinates
-384531 divergence occurrences
+384530 divergence occurrences

@@ -5194,24 +5194,6 @@ Inlined noise added
 
 Inlined noise added
   After events:
-    ICT: container_of_or_null_offset at :1579:0
-    IRF: container_of_or_null_offset at :0:0
-  Occurrences: 32
-
-Inlined noise added
-  After events:
-    ICT: getc_unlocked at stdio.h:66:0
-    IRF: getc_unlocked at stdio.h:0:0
-  Occurrences: 16
-
-Inlined noise added
-  After events:
-    ICT: getc_unlocked at stdio.h:66:0
-    IRF: getc_unlocked at stdio.h:68:10
-  Occurrences: 1
-
-Inlined noise added
-  After events:
     ICT: hashmap_iter_init at hashmap.c:287:0
     IRF: hashmap_iter_init at hashmap.c:0:0
   Occurrences: 12
@@ -5238,19 +5220,7 @@ Inlined noise added
   After events:
     ICT: path_matches at attr.c:974:0
     IRF: path_matches at attr.c:0:0
-  Occurrences: 16
-
-Inlined noise added
-  After events:
-    ICT: st_add at :980:0
-    IRF: st_add at :0:0
-  Occurrences: 11
-
-Inlined noise added
-  After events:
-    ICT: st_mult at git-compat-util.h:990:0
-    IRF: st_mult at git-compat-util.h:992:6
-  Occurrences: 44
+  Occurrences: 13
 
 Inlined noise added
   After events:
@@ -5268,19 +5238,7 @@ Inlined noise added
   After events:
     ICT: strbuf_addstr at strbuf.h:303:0
     IRF: strbuf_addstr at strbuf.h:0:0
-  Occurrences: 93
-
-Inlined noise added
-  After events:
-    ICT: strbuf_setlen at :160:0
-    IRF: strbuf_setlen at :0:0
-  Occurrences: 2
-
-Inlined noise added
-  After events:
-    ICT: strbuf_setlen at :160:0
-    IRF: strbuf_setlen at strbuf.h:168:3
-  Occurrences: 9
+  Occurrences: 87
 
 Inlined noise added
   After events:
@@ -5942,6 +5900,12 @@ Uncategorised
 
 Uncategorised
   After events:
+    ICT: container_of_or_null_offset at :1579:0
+    IRF: container_of_or_null_offset at :0:0
+  Occurrences: 32
+
+Uncategorised
+  After events:
     ICT: entry_equals at :94:0
   Occurrences: 91
 
@@ -5965,6 +5929,18 @@ Uncategorised
     ICT: getc_unlocked at stdio.h:66:0
     CF: getc_unlocked at stdio.h:68:10
   Occurrences: 20
+
+Uncategorised
+  After events:
+    ICT: getc_unlocked at stdio.h:66:0
+    IRF: getc_unlocked at stdio.h:0:0
+  Occurrences: 16
+
+Uncategorised
+  After events:
+    ICT: getc_unlocked at stdio.h:66:0
+    IRF: getc_unlocked at stdio.h:68:10
+  Occurrences: 1
 
 Uncategorised
   After events:
@@ -6030,6 +6006,12 @@ Uncategorised
 
 Uncategorised
   After events:
+    ICT: path_matches at attr.c:974:0
+    IRF: path_matches at attr.c:0:0
+  Occurrences: 3
+
+Uncategorised
+  After events:
     ICT: ref_entry_cmp_sslice at ref-cache.c:113:0
   Occurrences: 9
 
@@ -6061,8 +6043,20 @@ Uncategorised
 
 Uncategorised
   After events:
+    ICT: st_add at :980:0
+    IRF: st_add at :0:0
+  Occurrences: 11
+
+Uncategorised
+  After events:
     ICT: st_mult at git-compat-util.h:990:0
   Occurrences: 4
+
+Uncategorised
+  After events:
+    ICT: st_mult at git-compat-util.h:990:0
+    IRF: st_mult at git-compat-util.h:992:6
+  Occurrences: 44
 
 Uncategorised
   After events:
@@ -6076,8 +6070,26 @@ Uncategorised
 
 Uncategorised
   After events:
+    ICT: strbuf_addstr at strbuf.h:303:0
+    IRF: strbuf_addstr at strbuf.h:0:0
+  Occurrences: 6
+
+Uncategorised
+  After events:
     ICT: strbuf_setlen at :160:0
   Occurrences: 2358
+
+Uncategorised
+  After events:
+    ICT: strbuf_setlen at :160:0
+    IRF: strbuf_setlen at :0:0
+  Occurrences: 2
+
+Uncategorised
+  After events:
+    ICT: strbuf_setlen at :160:0
+    IRF: strbuf_setlen at strbuf.h:168:3
+  Occurrences: 9
 
 Uncategorised
   After events:
@@ -6766,14 +6778,14 @@ Inlined reentry added
   Divergence countable events: 18
 
 Inlined noise added
-  Unique divergence coordinates: 19
-  Divergence countable events: 38
+  Unique divergence coordinates: 12
+  Divergence countable events: 24
 
 Uncategorised
-  Unique divergence coordinates: 255
-  Divergence countable events: 423
+  Unique divergence coordinates: 264
+  Divergence countable events: 441
 
 ## Summary
 
-927 unique divergence coordinates
+929 unique divergence coordinates
 266744 divergence occurrences

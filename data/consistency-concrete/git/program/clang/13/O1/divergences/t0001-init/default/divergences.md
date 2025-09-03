@@ -17093,31 +17093,7 @@ Inlined noise added
   After events:
     ICT: attr_name_valid at attr.c:175:0
     IRF: attr_name_valid at attr.c:0:0
-  Occurrences: 106
-
-Inlined noise added
-  After events:
-    ICT: bootstrap_attr_stack at attr.c:841:0
-    IRF: bootstrap_attr_stack at attr.c:0:0
-  Occurrences: 1
-
-Inlined noise added
-  After events:
-    ICT: bucket at hashmap.c:104:0
-    IRF: bucket at hashmap.c:107:19
-  Occurrences: 17
-
-Inlined noise added
-  After events:
-    ICT: check_common at path.c:350:0
-    IRF: check_common at path.c:0:0
-  Occurrences: 3
-
-Inlined noise added
-  After events:
-    ICT: check_vector_add at attr.c:498:0
-    IRF: check_vector_add at attr.c:505:41
-  Occurrences: 1
+  Occurrences: 85
 
 Inlined noise added
   After events:
@@ -17157,21 +17133,9 @@ Inlined noise added
 
 Inlined noise added
   After events:
-    ICT: determine_macros at attr.c:1054:0
-    IRF: determine_macros at attr.c:0:0
-  Occurrences: 3
-
-Inlined noise added
-  After events:
     ICT: determine_whence at commit.c:199:0
     IRF: determine_whence at commit.c:206:13
   Occurrences: 4
-
-Inlined noise added
-  After events:
-    ICT: diff_line_prefix at diff.c:2258:0
-    IRF: diff_line_prefix at diff.c:0:0
-  Occurrences: 1
 
 Inlined noise added
   After events:
@@ -17183,7 +17147,7 @@ Inlined noise added
   After events:
     ICT: do_event at config.c:976:0
     IRF: do_event at config.c:0:0
-  Occurrences: 13
+  Occurrences: 8
 
 Inlined noise added
   After events:
@@ -17196,18 +17160,6 @@ Inlined noise added
     ICT: files_downcast at files-backend.c:122:0
     IRF: files_downcast at files-backend.c:0:0
   Occurrences: 12
-
-Inlined noise added
-  After events:
-    ICT: fill at attr.c:1018:0
-    IRF: fill at attr.c:0:0
-  Occurrences: 1
-
-Inlined noise added
-  After events:
-    ICT: find_commit_pos_in_graph at commit-graph.c:880:0
-    IRF: find_commit_pos_in_graph at commit-graph.c:0:0
-  Occurrences: 5
 
 Inlined noise added
   After events:
@@ -17237,13 +17189,7 @@ Inlined noise added
   After events:
     ICT: for_each_userdiff_driver_list at userdiff.c:445:0
     IRF: for_each_userdiff_driver_list at userdiff.c:0:0
-  Occurrences: 78
-
-Inlined noise added
-  After events:
-    ICT: get_conv_flags at object-file.c:304:0
-    IRF: get_conv_flags at object-file.c:0:0
-  Occurrences: 1
+  Occurrences: 76
 
 Inlined noise added
   After events:
@@ -17265,12 +17211,6 @@ Inlined noise added
 
 Inlined noise added
   After events:
-    ICT: get_format_by_name at gpg-interface.c:107:0
-    IRF: get_format_by_name at gpg-interface.c:0:0
-  Occurrences: 3
-
-Inlined noise added
-  After events:
     ICT: get_hash_hex_algop at hex.c:50:0
     IRF: get_hash_hex_algop at hex.c:56:11
   Occurrences: 49
@@ -17283,27 +17223,15 @@ Inlined noise added
 
 Inlined noise added
   After events:
-    ICT: get_unit_factor at config.c:1145:0
-    IRF: get_unit_factor at config.c:0:0
-  Occurrences: 1
-
-Inlined noise added
-  After events:
     ICT: get_value at config.c:877:0
     IRF: get_value at config.c:0:0
   Occurrences: 5391
 
 Inlined noise added
   After events:
-    ICT: getc_unlocked at stdio.h:66:0
-    IRF: getc_unlocked at stdio.h:68:10
-  Occurrences: 158
-
-Inlined noise added
-  After events:
     ICT: git_is_dir_sep at git-compat-util.h:446:0
     IRF: git_is_dir_sep at git-compat-util.h:448:11
-  Occurrences: 284
+  Occurrences: 274
 
 Inlined noise added
   After events:
@@ -17319,48 +17247,6 @@ Inlined noise added
 
 Inlined noise added
   After events:
-    ICT: git_path_check_convert at convert.c:1276:0
-    IRF: git_path_check_convert at convert.c:0:0
-  Occurrences: 2
-
-Inlined noise added
-  After events:
-    ICT: git_path_check_crlf at convert.c:1246:0
-    IRF: git_path_check_crlf at convert.c:0:0
-  Occurrences: 5
-
-Inlined noise added
-  After events:
-    ICT: git_path_check_encoding at convert.c:1228:0
-    IRF: git_path_check_encoding at convert.c:0:0
-  Occurrences: 2
-
-Inlined noise added
-  After events:
-    ICT: git_path_check_eol at convert.c:1263:0
-    IRF: git_path_check_eol at convert.c:0:0
-  Occurrences: 2
-
-Inlined noise added
-  After events:
-    ICT: git_path_check_ident at convert.c:1289:0
-    IRF: git_path_check_ident at convert.c:1293:11
-  Occurrences: 2
-
-Inlined noise added
-  After events:
-    ICT: hash_to_hex_algop at hex.c:149:0
-    IRF: hash_to_hex_algop at hex.c:153:8
-  Occurrences: 1
-
-Inlined noise added
-  After events:
-    ICT: hash_to_hex_algop_r at hex.c:120:0
-    IRF: hash_to_hex_algop_r at hex.c:0:0
-  Occurrences: 2
-
-Inlined noise added
-  After events:
     ICT: hash_to_hex_algop_r at hex.c:120:0
     IRF: hash_to_hex_algop_r at hex.c:139:7
   Occurrences: 17
@@ -17373,33 +17259,15 @@ Inlined noise added
 
 Inlined noise added
   After events:
-    ICT: hashmap_entry_init at hashmap.h:314:0
-    IRF: hashmap_entry_init at hashmap.h:318:10
-  Occurrences: 37
-
-Inlined noise added
-  After events:
-    ICT: hashmap_get_size at hashmap.h:324:0
-    IRF: hashmap_get_size at hashmap.h:327:15
-  Occurrences: 26
-
-Inlined noise added
-  After events:
     ICT: init_repository_format at setup.c:708:0
     IRF: init_repository_format at setup.c:712:2
-  Occurrences: 164
+  Occurrences: 163
 
 Inlined noise added
   After events:
     ICT: initialize_repository_version at init-db.c:170:0
     IRF: initialize_repository_version at init-db.c:0:0
   Occurrences: 30
-
-Inlined noise added
-  After events:
-    ICT: is_blank_line at pretty.c:598:0
-    IRF: is_blank_line at pretty.c:0:0
-  Occurrences: 5
 
 Inlined noise added
   After events:
@@ -17421,21 +17289,9 @@ Inlined noise added
 
 Inlined noise added
   After events:
-    ICT: is_tempfile_active at tempfile.h:221:0
-    IRF: is_tempfile_active at tempfile.h:223:10
-  Occurrences: 4
-
-Inlined noise added
-  After events:
     ICT: iskeychar at config.c:536:0
     IRF: iskeychar at config.c:538:9
-  Occurrences: 63
-
-Inlined noise added
-  After events:
-    ICT: list_add_tail at list.h:64:0
-    IRF: list_add_tail at list.h:69:13
-  Occurrences: 16
+  Occurrences: 61
 
 Inlined noise added
   After events:
@@ -17454,12 +17310,6 @@ Inlined noise added
     ICT: make_empty_cache_entry at read-cache.c:871:0
     IRF: make_empty_cache_entry at read-cache.c:0:0
   Occurrences: 3
-
-Inlined noise added
-  After events:
-    ICT: memory_limit_check at wrapper.c:17:0
-    IRF: memory_limit_check at wrapper.c:0:0
-  Occurrences: 380
 
 Inlined noise added
   After events:
@@ -17505,18 +17355,6 @@ Inlined noise added
 
 Inlined noise added
   After events:
-    ICT: push_stack at attr.c:829:0
-    IRF: push_stack at attr.c:0:0
-  Occurrences: 1
-
-Inlined noise added
-  After events:
-    ICT: push_stack at attr.c:829:0
-    IRF: push_stack at attr.c:837:17
-  Occurrences: 4
-
-Inlined noise added
-  After events:
     ICT: reset_lstat_cache at symlinks.c:41:0
     IRF: reset_lstat_cache at symlinks.c:0:0
   Occurrences: 1
@@ -17531,13 +17369,7 @@ Inlined noise added
   After events:
     ICT: sane_case at git-compat-util.h:1234:0
     IRF: sane_case at git-compat-util.h:0:6
-  Occurrences: 63
-
-Inlined noise added
-  After events:
-    ICT: sane_qsort at git-compat-util.h:1305:0
-    IRF: sane_qsort at git-compat-util.h:0:0
-  Occurrences: 2
+  Occurrences: 60
 
 Inlined noise added
   After events:
@@ -17567,19 +17399,13 @@ Inlined noise added
   After events:
     ICT: skip_prefix at git-compat-util.h:674:0
     IRF: skip_prefix at git-compat-util.h:0:0
-  Occurrences: 109
+  Occurrences: 107
 
 Inlined noise added
   After events:
     ICT: skip_prefix at git-compat-util.h:674:0
     IRF: skip_prefix at git-compat-util.h:678:8
-  Occurrences: 313
-
-Inlined noise added
-  After events:
-    ICT: st_add at git-compat-util.h:980:0
-    IRF: st_add at git-compat-util.h:0:0
-  Occurrences: 4
+  Occurrences: 298
 
 Inlined noise added
   After events:
@@ -17590,14 +17416,8 @@ Inlined noise added
 Inlined noise added
   After events:
     ICT: st_mult at git-compat-util.h:990:0
-    IRF: st_mult at git-compat-util.h:0:0
-  Occurrences: 1
-
-Inlined noise added
-  After events:
-    ICT: st_mult at git-compat-util.h:990:0
     IRF: st_mult at git-compat-util.h:995:11
-  Occurrences: 998
+  Occurrences: 996
 
 Inlined noise added
   After events:
@@ -17621,25 +17441,19 @@ Inlined noise added
   After events:
     ICT: strbuf_avail at strbuf.h:139:0
     IRF: strbuf_avail at strbuf.h:0:0
-  Occurrences: 24
-
-Inlined noise added
-  After events:
-    ICT: strbuf_avail at strbuf.h:139:0
-    IRF: strbuf_avail at strbuf.h:141:41
-  Occurrences: 21
+  Occurrences: 7
 
 Inlined noise added
   After events:
     ICT: strbuf_avail at strbuf.h:139:0
     IRF: strbuf_avail at strbuf.h:141:9
-  Occurrences: 6563
+  Occurrences: 6558
 
 Inlined noise added
   After events:
     ICT: strbuf_grow at strbuf.c:91:0
     IRF: strbuf_grow at strbuf.c:0:0
-  Occurrences: 1564
+  Occurrences: 165
 
 Inlined noise added
   After events:
@@ -17649,21 +17463,15 @@ Inlined noise added
 
 Inlined noise added
   After events:
-    ICT: strbuf_init at strbuf.c:54:0
-    IRF: strbuf_init at strbuf.c:57:2
-  Occurrences: 25
-
-Inlined noise added
-  After events:
     ICT: strbuf_setlen at strbuf.h:160:0
     IRF: strbuf_setlen at strbuf.h:0:0
-  Occurrences: 489
+  Occurrences: 14
 
 Inlined noise added
   After events:
     ICT: strbuf_setlen at strbuf.h:160:0
     IRF: strbuf_setlen at strbuf.h:166:16
-  Occurrences: 2
+  Occurrences: 1
 
 Inlined noise added
   After events:
@@ -17688,12 +17496,6 @@ Inlined noise added
     ICT: strip_suffix_mem at git-compat-util.h:730:0
     IRF: strip_suffix_mem at git-compat-util.h:0:0
   Occurrences: 34
-
-Inlined noise added
-  After events:
-    ICT: strip_suffix_mem at git-compat-util.h:730:0
-    IRF: strip_suffix_mem at git-compat-util.h:734:6
-  Occurrences: 1
 
 Inlined noise added
   After events:
@@ -17730,12 +17532,6 @@ Inlined noise added
     ICT: xdl_trim_ends at xprepare.c:426:0
     IRF: xdl_trim_ends at xprepare.c:446:13
   Occurrences: 4
-
-Inlined noise added
-  After events:
-    ICT: xsize_t at git-compat-util.h:1172:0
-    IRF: xsize_t at git-compat-util.h:0:0
-  Occurrences: 1
 
 Inlined return added
   After events:
@@ -21100,6 +20896,12 @@ Uncategorised
 
 Uncategorised
   After events:
+    ICT: attr_name_valid at attr.c:175:0
+    IRF: attr_name_valid at attr.c:0:0
+  Occurrences: 21
+
+Uncategorised
+  After events:
     CT: base_ref_store_init at refs.c:2116:0
   Occurrences: 5
 
@@ -21113,6 +20915,12 @@ Uncategorised
   After events:
     ICT: bootstrap_attr_stack at attr.c:841:0
     ICF: bootstrap_attr_stack at attr.c:851:6
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    ICT: bootstrap_attr_stack at attr.c:841:0
+    IRF: bootstrap_attr_stack at attr.c:0:0
   Occurrences: 1
 
 Uncategorised
@@ -21151,6 +20959,12 @@ Uncategorised
 
 Uncategorised
   After events:
+    ICT: check_common at path.c:350:0
+    IRF: check_common at path.c:0:0
+  Occurrences: 3
+
+Uncategorised
+  After events:
     ICT: check_embedded_repo at add.c:427:0
   Occurrences: 4
 
@@ -21175,6 +20989,12 @@ Uncategorised
   After events:
     ICT: check_vector_add at attr.c:498:0
     ICF: check_vector_add at attr.c:502:2
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    ICT: check_vector_add at attr.c:498:0
+    IRF: check_vector_add at attr.c:505:41
   Occurrences: 1
 
 Uncategorised
@@ -21284,8 +21104,20 @@ Uncategorised
 
 Uncategorised
   After events:
+    ICT: determine_macros at attr.c:1054:0
+    IRF: determine_macros at attr.c:0:0
+  Occurrences: 3
+
+Uncategorised
+  After events:
     ICT: diff_filespec_load_driver at diff.c:2165:0
   Occurrences: 4
+
+Uncategorised
+  After events:
+    ICT: diff_line_prefix at diff.c:2258:0
+    IRF: diff_line_prefix at diff.c:0:0
+  Occurrences: 1
 
 Uncategorised
   After events:
@@ -21304,6 +21136,12 @@ Uncategorised
     ICT: do_config_from_file at config.c:1961:0
     CF: do_config_from_file at config.c:1978:2
   Occurrences: 1
+
+Uncategorised
+  After events:
+    ICT: do_event at config.c:976:0
+    IRF: do_event at config.c:0:0
+  Occurrences: 5
 
 Uncategorised
   After events:
@@ -21371,6 +21209,12 @@ Uncategorised
 
 Uncategorised
   After events:
+    ICT: fill at attr.c:1018:0
+    IRF: fill at attr.c:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
     ICT: fill_mmfile at diff.c:577:0
   Occurrences: 4
 
@@ -21378,6 +21222,12 @@ Uncategorised
   After events:
     ICT: find_cached_object at object-file.c:289:0
   Occurrences: 70
+
+Uncategorised
+  After events:
+    ICT: find_commit_pos_in_graph at commit-graph.c:880:0
+    IRF: find_commit_pos_in_graph at commit-graph.c:0:0
+  Occurrences: 5
 
 Uncategorised
   After events:
@@ -21423,6 +21273,12 @@ Uncategorised
 
 Uncategorised
   After events:
+    ICT: for_each_userdiff_driver_list at userdiff.c:445:0
+    IRF: for_each_userdiff_driver_list at userdiff.c:0:0
+  Occurrences: 2
+
+Uncategorised
+  After events:
     ICT: format_object_header_literally at object-file.c:1058:0
     CF: format_object_header_literally at object-file.c:1061:9
   Occurrences: 1
@@ -21457,6 +21313,12 @@ Uncategorised
 
 Uncategorised
   After events:
+    ICT: get_conv_flags at object-file.c:304:0
+    IRF: get_conv_flags at object-file.c:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
     ICT: get_describe_name at object-name.c:1203:0
   Occurrences: 4
 
@@ -21469,6 +21331,12 @@ Uncategorised
   After events:
     ICT: get_format_by_name at gpg-interface.c:107:0
   Occurrences: 2
+
+Uncategorised
+  After events:
+    ICT: get_format_by_name at gpg-interface.c:107:0
+    IRF: get_format_by_name at gpg-interface.c:0:0
+  Occurrences: 3
 
 Uncategorised
   After events:
@@ -21516,6 +21384,12 @@ Uncategorised
 
 Uncategorised
   After events:
+    ICT: get_unit_factor at config.c:1145:0
+    IRF: get_unit_factor at config.c:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
     ICT: get_value at config.c:877:0
   Occurrences: 7511
 
@@ -21542,6 +21416,12 @@ Uncategorised
     ICT: getc_unlocked at stdio.h:66:0
     CF: getc_unlocked at stdio.h:68:10
   Occurrences: 2
+
+Uncategorised
+  After events:
+    ICT: getc_unlocked at stdio.h:66:0
+    IRF: getc_unlocked at stdio.h:68:10
+  Occurrences: 158
 
 Uncategorised
   After events:
@@ -21654,6 +21534,12 @@ Uncategorised
 
 Uncategorised
   After events:
+    ICT: git_is_dir_sep at git-compat-util.h:446:0
+    IRF: git_is_dir_sep at git-compat-util.h:448:11
+  Occurrences: 10
+
+Uncategorised
+  After events:
     ICT: git_offset_1st_component at git-compat-util.h:455:0
   Occurrences: 529
 
@@ -21696,6 +21582,36 @@ Uncategorised
     ICT: git_parse_source at config.c:1007:0
     ICF: git_parse_source at config.c:1027:7
   Occurrences: 1
+
+Uncategorised
+  After events:
+    ICT: git_path_check_convert at convert.c:1276:0
+    IRF: git_path_check_convert at convert.c:0:0
+  Occurrences: 2
+
+Uncategorised
+  After events:
+    ICT: git_path_check_crlf at convert.c:1246:0
+    IRF: git_path_check_crlf at convert.c:0:0
+  Occurrences: 5
+
+Uncategorised
+  After events:
+    ICT: git_path_check_encoding at convert.c:1228:0
+    IRF: git_path_check_encoding at convert.c:0:0
+  Occurrences: 2
+
+Uncategorised
+  After events:
+    ICT: git_path_check_eol at convert.c:1263:0
+    IRF: git_path_check_eol at convert.c:0:0
+  Occurrences: 2
+
+Uncategorised
+  After events:
+    ICT: git_path_check_ident at convert.c:1289:0
+    IRF: git_path_check_ident at convert.c:1293:11
+  Occurrences: 2
 
 Uncategorised
   After events:
@@ -21768,6 +21684,12 @@ Uncategorised
 
 Uncategorised
   After events:
+    ICT: init_repository_format at setup.c:708:0
+    IRF: init_repository_format at setup.c:712:2
+  Occurrences: 1
+
+Uncategorised
+  After events:
     CT: init_sparse_checkout_patterns at dir.c:1437:0
     RF: init_sparse_checkout_patterns at dir.c:1451:1
   Occurrences: 2
@@ -21787,6 +21709,12 @@ Uncategorised
   After events:
     ICT: is_blank_line at pretty.c:598:0
   Occurrences: 2
+
+Uncategorised
+  After events:
+    ICT: is_blank_line at pretty.c:598:0
+    IRF: is_blank_line at pretty.c:0:0
+  Occurrences: 5
 
 Uncategorised
   After events:
@@ -21817,6 +21745,18 @@ Uncategorised
 
 Uncategorised
   After events:
+    ICT: is_tempfile_active at tempfile.h:221:0
+    IRF: is_tempfile_active at tempfile.h:223:10
+  Occurrences: 4
+
+Uncategorised
+  After events:
+    ICT: iskeychar at config.c:536:0
+    IRF: iskeychar at config.c:538:9
+  Occurrences: 2
+
+Uncategorised
+  After events:
     ICT: last_matching_pattern_from_lists at dir.c:1506:0
   Occurrences: 5
 
@@ -21824,6 +21764,12 @@ Uncategorised
   After events:
     ICT: list_add_tail at list.h:64:0
   Occurrences: 4
+
+Uncategorised
+  After events:
+    ICT: list_add_tail at list.h:64:0
+    IRF: list_add_tail at list.h:69:13
+  Occurrences: 16
 
 Uncategorised
   After events:
@@ -21854,6 +21800,12 @@ Uncategorised
   After events:
     ICT: memory_limit_check at wrapper.c:17:0
   Occurrences: 160
+
+Uncategorised
+  After events:
+    ICT: memory_limit_check at wrapper.c:17:0
+    IRF: memory_limit_check at wrapper.c:0:0
+  Occurrences: 380
 
 Uncategorised
   After events:
@@ -22000,6 +21952,18 @@ Uncategorised
 
 Uncategorised
   After events:
+    ICT: push_stack at attr.c:829:0
+    IRF: push_stack at attr.c:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    ICT: push_stack at attr.c:829:0
+    IRF: push_stack at attr.c:837:17
+  Occurrences: 4
+
+Uncategorised
+  After events:
     CT: read_attr at attr.c:778:0
     CF: read_attr at attr.c:783:14
   Occurrences: 3
@@ -22106,6 +22070,12 @@ Uncategorised
 
 Uncategorised
   After events:
+    ICT: sane_case at git-compat-util.h:1234:0
+    IRF: sane_case at git-compat-util.h:0:6
+  Occurrences: 3
+
+Uncategorised
+  After events:
     ICT: sane_qsort at git-compat-util.h:1305:0
   Occurrences: 36
 
@@ -22114,6 +22084,12 @@ Uncategorised
     ICT: sane_qsort at git-compat-util.h:1305:0
     CF: sane_qsort at git-compat-util.h:1309:3
   Occurrences: 4
+
+Uncategorised
+  After events:
+    ICT: sane_qsort at git-compat-util.h:1305:0
+    IRF: sane_qsort at git-compat-util.h:0:0
+  Occurrences: 2
 
 Uncategorised
   After events:
@@ -22149,13 +22125,43 @@ Uncategorised
 
 Uncategorised
   After events:
+    ICT: skip_prefix at git-compat-util.h:674:0
+    IRF: skip_prefix at git-compat-util.h:0:0
+  Occurrences: 2
+
+Uncategorised
+  After events:
+    ICT: skip_prefix at git-compat-util.h:674:0
+    IRF: skip_prefix at git-compat-util.h:678:8
+  Occurrences: 15
+
+Uncategorised
+  After events:
     ICT: st_add at git-compat-util.h:980:0
   Occurrences: 10
 
 Uncategorised
   After events:
+    ICT: st_add at git-compat-util.h:980:0
+    IRF: st_add at git-compat-util.h:0:0
+  Occurrences: 4
+
+Uncategorised
+  After events:
     ICT: st_mult at git-compat-util.h:990:0
   Occurrences: 507
+
+Uncategorised
+  After events:
+    ICT: st_mult at git-compat-util.h:990:0
+    IRF: st_mult at git-compat-util.h:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    ICT: st_mult at git-compat-util.h:990:0
+    IRF: st_mult at git-compat-util.h:995:11
+  Occurrences: 2
 
 Uncategorised
   After events:
@@ -22231,6 +22237,24 @@ Uncategorised
 
 Uncategorised
   After events:
+    ICT: strbuf_avail at strbuf.h:139:0
+    IRF: strbuf_avail at strbuf.h:0:0
+  Occurrences: 17
+
+Uncategorised
+  After events:
+    ICT: strbuf_avail at strbuf.h:139:0
+    IRF: strbuf_avail at strbuf.h:141:41
+  Occurrences: 21
+
+Uncategorised
+  After events:
+    ICT: strbuf_avail at strbuf.h:139:0
+    IRF: strbuf_avail at strbuf.h:141:9
+  Occurrences: 5
+
+Uncategorised
+  After events:
     ICT: strbuf_cleanup_path at path.c:50:0
     ICF: strbuf_cleanup_path at path.c:52:21
   Occurrences: 3
@@ -22264,8 +22288,20 @@ Uncategorised
 
 Uncategorised
   After events:
+    ICT: strbuf_grow at strbuf.c:91:0
+    IRF: strbuf_grow at strbuf.c:0:0
+  Occurrences: 1399
+
+Uncategorised
+  After events:
     ICT: strbuf_init at strbuf.c:54:0
   Occurrences: 4
+
+Uncategorised
+  After events:
+    ICT: strbuf_init at strbuf.c:54:0
+    IRF: strbuf_init at strbuf.c:57:2
+  Occurrences: 25
 
 Uncategorised
   After events:
@@ -22335,6 +22371,18 @@ Uncategorised
 
 Uncategorised
   After events:
+    ICT: strbuf_setlen at strbuf.h:160:0
+    IRF: strbuf_setlen at strbuf.h:0:0
+  Occurrences: 475
+
+Uncategorised
+  After events:
+    ICT: strbuf_setlen at strbuf.h:160:0
+    IRF: strbuf_setlen at strbuf.h:166:16
+  Occurrences: 1
+
+Uncategorised
+  After events:
     CT: strbuf_splice at strbuf.c:233:0
   Occurrences: 2
 
@@ -22387,6 +22435,12 @@ Uncategorised
   After events:
     ICT: strip_suffix_mem at git-compat-util.h:730:0
   Occurrences: 20
+
+Uncategorised
+  After events:
+    ICT: strip_suffix_mem at git-compat-util.h:730:0
+    IRF: strip_suffix_mem at git-compat-util.h:734:6
+  Occurrences: 1
 
 Uncategorised
   After events:
@@ -22476,6 +22530,12 @@ Uncategorised
     ICT: xread at wrapper.c:224:0
     CF: xread at wrapper.c:230:8
   Occurrences: 3
+
+Uncategorised
+  After events:
+    ICT: xsize_t at git-compat-util.h:1172:0
+    IRF: xsize_t at git-compat-util.h:0:0
+  Occurrences: 1
 
 Uncategorised
   After events:
@@ -25848,18 +25908,18 @@ Inlined reentry added
   Divergence countable events: 118
 
 Inlined noise added
-  Unique divergence coordinates: 110
-  Divergence countable events: 220
+  Unique divergence coordinates: 76
+  Divergence countable events: 152
 
 Inlined return added
   Unique divergence coordinates: 3
   Divergence countable events: 1344
 
 Uncategorised
-  Unique divergence coordinates: 1410
-  Divergence countable events: 2367
+  Unique divergence coordinates: 1454
+  Divergence countable events: 2455
 
 ## Summary
 
-3667 unique divergence coordinates
-1222492 divergence occurrences
+3677 unique divergence coordinates
+1222409 divergence occurrences
