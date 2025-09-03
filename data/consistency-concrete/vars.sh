@@ -42,7 +42,7 @@ if [[ "$OS" == 'mac' ]]; then
 else
   CC_SYSROOT_OPTS="-B/nix/store/maxa3xhmxggrc5v2vc0c3pjb79hjlkp9-glibc-2.40-66/lib/ -idirafter /nix/store/81awch8mhqanda1vy0c09bflgra4cxh0-glibc-2.40-66-dev/include -B/nix/store/yg4ahy7gahx91nq80achmzilrjyv0scj-gcc-13.3.0/lib/gcc/x86_64-unknown-linux-gnu/13.3.0 -B/nix/store/w9mcn0hi97xp5m9ds5nsc4cr99qspz9h-clang-18.1.8-lib/lib ${NIX_CFLAGS_COMPILE}"
 fi
-CC_COMMON_OPTS="${CC_SYSROOT_OPTS} -g"
+CC_COMMON_OPTS="${CC_SYSROOT_OPTS} -g -fno-pie"
 CC_CLANG_OPTS="-fno-discard-value-names -Xclang -disable-O0-optnone"
 if [[ "$OS" == 'linux' ]]; then
   CC_CLANG_OPTS="${CC_CLANG_OPTS} --gcc-toolchain=/nix/store/yg4ahy7gahx91nq80achmzilrjyv0scj-gcc-13.3.0 -resource-dir=/nix/store/c6mlpw8bb0n9rc38hihmy0zzc1w81ljr-clang-wrapper-18.1.8/resource-root"
