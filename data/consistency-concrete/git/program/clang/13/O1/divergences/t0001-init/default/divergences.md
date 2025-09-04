@@ -17569,6 +17569,18 @@ Inlined return added
   Occurrences: 2
 
 Inlined return added
+  Before events:
+    CF: handle_alias at git.c:374:5
+    CT: common_exit at common-main.c:72:0
+    CF: common_exit at common-main.c:81:2
+    CT: check_bug_if_BUG at common-main.c:64:0
+    RF: check_bug_if_BUG at common-main.c:66:3
+    CF: common_exit at common-main.c:82:2
+    CT: trace2_cmd_exit_fl at trace2.c:267:0
+    RF: trace2_cmd_exit_fl at trace2.c:288:1
+    RF: common_exit at common-main.c:84:2
+    CF: handle_alias at git.c:374:5
+    CT: Jump to external code for exit
   After events:
     IRF: run_argv at git.c:0:0
     CF: cmd_main at git.c:0:0
@@ -17582,9 +17594,51 @@ Inlined return added
     RF: common_exit at common-main.c:84:2
     CF: cmd_main at git.c:0:0
     CT: Jump to external code for exit
-  Occurrences: 4
+  Occurrences: 1
 
 Inlined return added
+  Before events:
+    CF: run_argv at git.c:823:5
+    CT: common_exit at common-main.c:72:0
+    CF: common_exit at common-main.c:81:2
+    CT: check_bug_if_BUG at common-main.c:64:0
+    RF: check_bug_if_BUG at common-main.c:66:3
+    CF: common_exit at common-main.c:82:2
+    CT: trace2_cmd_exit_fl at trace2.c:267:0
+    RF: trace2_cmd_exit_fl at trace2.c:288:1
+    RF: common_exit at common-main.c:84:2
+    CF: run_argv at git.c:823:5
+    CT: Jump to external code for exit
+  After events:
+    IRF: run_argv at git.c:0:0
+    CF: cmd_main at git.c:0:0
+    ICT: common_exit at common-main.c:71:0
+    ICF: common_exit at common-main.c:81:2
+    ICT: check_bug_if_BUG at common-main.c:63:0
+    IRF: check_bug_if_BUG at common-main.c:0:0
+    CF: common_exit at common-main.c:82:2
+    CT: trace2_cmd_exit_fl at trace2.c:267:0
+    RF: trace2_cmd_exit_fl at trace2.c:288:1
+    RF: common_exit at common-main.c:84:2
+    CF: cmd_main at git.c:0:0
+    CT: Jump to external code for exit
+  Occurrences: 3
+
+Inlined return added
+  Before events:
+    RF: Jump to external code for calloc
+    RF: xcalloc at wrapper.c:155:2
+    CF: xdl_cleanup_records at xprepare.c:377:14
+    CT: xdl_bogosqrt at xutils.c:26:0
+    RF: xdl_bogosqrt at xutils.c:35:2
+    CF: xdl_cleanup_records at xprepare.c:385:14
+    CT: xdl_bogosqrt at xutils.c:26:0
+    RF: xdl_bogosqrt at xutils.c:35:2
+    CF: xdl_cleanup_records at xprepare.c:417:2
+    CT: Jump to external code for free
+    RF: Jump to external code for free
+    RF: xdl_cleanup_records at xprepare.c:420:1
+    RF: xdl_optimize_ctxs at xprepare.c:461:1
   After events:
     IRF: xdl_optimize_ctxs at xprepare.c:0:0
     CF: xdl_prepare_env at xprepare.c:0:2
@@ -25912,8 +25966,8 @@ Inlined noise added
   Divergence countable events: 152
 
 Inlined return added
-  Unique divergence coordinates: 3
-  Divergence countable events: 1344
+  Unique divergence coordinates: 4
+  Divergence countable events: 1353
 
 Uncategorised
   Unique divergence coordinates: 1454
@@ -25921,5 +25975,5 @@ Uncategorised
 
 ## Summary
 
-3677 unique divergence coordinates
+3678 unique divergence coordinates
 1222409 divergence occurrences
