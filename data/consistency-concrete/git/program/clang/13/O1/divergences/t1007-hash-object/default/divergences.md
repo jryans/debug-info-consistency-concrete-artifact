@@ -5923,37 +5923,6 @@ Program call removed
 
 Program call removed
   Before events:
-    CF: check_tag at object-file.c:2340:7
-    CT: _ at gettext.h:45:0
-    CF: _ at gettext.h:48:9
-    CT: Jump to external code for gettext
-    RF: Jump to external code for gettext
-    RF: _ at gettext.h:49:1
-    CF: check_tag at object-file.c:2340:3
-    CT: die at usage.c:172:0
-    CF: die at usage.c:175:6
-    CT: die_is_recursing_builtin at usage.c:92:0
-    RF: die_is_recursing_builtin at usage.c:111:1
-    CF: die at usage.c:181:2
-    CT: die_builtin at usage.c:70:0
-    CF: die_builtin at usage.c:71:29
-    CT: get_die_message_routine at usage.c:128:0
-    RF: get_die_message_routine at usage.c:129:2
-    CF: die_builtin at usage.c:73:2
-    CT: die_message_builtin at usage.c:59:0
-    CF: die_message_builtin at usage.c:60:2
-    CT: trace2_cmd_error_va_fl at trace2.c:292:0
-    RF: trace2_cmd_error_va_fl at trace2.c:306:1
-    CF: die_message_builtin at usage.c:61:11
-    CT: _ at gettext.h:45:0
-    CF: _ at gettext.h:48:9
-    CT: Jump to external code for gettext
-    RF: Jump to external code for gettext
-    RF: _ at gettext.h:49:1
-  Occurrences: 1
-
-Program call removed
-  Before events:
     CF: check_vector_add at attr.c:500:2
     CT: vector_lock at attr.c:489:0
     RF: vector_lock at attr.c:491:1
@@ -5985,13 +5954,6 @@ Program call removed
     CT: const_error at git-compat-util.h:638:0
     RF: const_error at git-compat-util.h:639:2
   Occurrences: 6
-
-Program call removed
-  Before events:
-    CF: common_exit at common-main.c:81:2
-    CT: check_bug_if_BUG at common-main.c:64:0
-    RF: check_bug_if_BUG at common-main.c:66:3
-  Occurrences: 1
 
 Program call removed
   Before events:
@@ -6124,34 +6086,6 @@ Program call removed
     CT: get_die_message_routine at usage.c:128:0
     RF: get_die_message_routine at usage.c:129:2
   Occurrences: 7
-
-Program call removed
-  Before events:
-    CF: die_message_builtin at usage.c:61:2
-    CT: vreportf at usage.c:10:0
-    CF: vreportf at usage.c:13:22
-    CT: Jump to external code for strlen
-    RF: Jump to external code for strlen
-    CF: vreportf at usage.c:19:2
-    CT: Jump to external code for memcpy
-    RF: Jump to external code for memcpy
-    CF: vreportf at usage.c:21:6
-    CT: Jump to external code for vsnprintf
-    RF: Jump to external code for vsnprintf
-    CF: vreportf at usage.c:30:2
-    CT: Jump to external code for fflush
-    RF: Jump to external code for fflush
-    CF: vreportf at usage.c:31:2
-    CT: write_in_full at wrapper.c:302:0
-    CF: write_in_full at wrapper.c:307:21
-    CT: xwrite at wrapper.c:247:0
-    CF: xwrite at wrapper.c:252:8
-    CT: Jump to external code for write
-    RF: Jump to external code for write
-    RF: xwrite at wrapper.c:260:3
-    RF: write_in_full at wrapper.c:320:1
-    RF: vreportf at usage.c:32:1
-  Occurrences: 1
 
 Program call removed
   Before events:
@@ -6987,6 +6921,38 @@ Inlined noise added
   Occurrences: 4
 
 Inlined return added
+  Before events:
+    CT: Jump to external code for gettext
+    RF: Jump to external code for gettext
+    RF: _ at gettext.h:49:1
+    CF: check_commit at object-file.c:2332:3
+    CT: die at usage.c:172:0
+    CF: die at usage.c:175:6
+    CT: die_is_recursing_builtin at usage.c:92:0
+    RF: die_is_recursing_builtin at usage.c:111:1
+    CF: die at usage.c:181:2
+    CT: die_builtin at usage.c:70:0
+    CF: die_builtin at usage.c:71:29
+    CT: get_die_message_routine at usage.c:128:0
+    RF: get_die_message_routine at usage.c:129:2
+    CF: die_builtin at usage.c:73:2
+    CT: die_message_builtin at usage.c:59:0
+    CF: die_message_builtin at usage.c:60:2
+    CT: trace2_cmd_error_va_fl at trace2.c:292:0
+    RF: trace2_cmd_error_va_fl at trace2.c:306:1
+    CF: die_message_builtin at usage.c:61:11
+    CT: _ at gettext.h:45:0
+    CF: _ at gettext.h:48:9
+    CT: Jump to external code for gettext
+    RF: Jump to external code for gettext
+    RF: _ at gettext.h:49:1
+    CF: die_message_builtin at usage.c:61:2
+    CT: vreportf at usage.c:10:0
+    CF: vreportf at usage.c:13:22
+    CT: Jump to external code for strlen
+    RF: Jump to external code for strlen
+    CF: vreportf at usage.c:19:2
+    [...30 more events...]
   After events:
     IRF: check_commit at object-file.c:2332:7
     CF: index_mem at object-file.c:0:0
@@ -7022,6 +6988,38 @@ Inlined return added
   Occurrences: 1
 
 Inlined return added
+  Before events:
+    CT: Jump to external code for gettext
+    RF: Jump to external code for gettext
+    RF: _ at gettext.h:49:1
+    CF: check_tag at object-file.c:2340:3
+    CT: die at usage.c:172:0
+    CF: die at usage.c:175:6
+    CT: die_is_recursing_builtin at usage.c:92:0
+    RF: die_is_recursing_builtin at usage.c:111:1
+    CF: die at usage.c:181:2
+    CT: die_builtin at usage.c:70:0
+    CF: die_builtin at usage.c:71:29
+    CT: get_die_message_routine at usage.c:128:0
+    RF: get_die_message_routine at usage.c:129:2
+    CF: die_builtin at usage.c:73:2
+    CT: die_message_builtin at usage.c:59:0
+    CF: die_message_builtin at usage.c:60:2
+    CT: trace2_cmd_error_va_fl at trace2.c:292:0
+    RF: trace2_cmd_error_va_fl at trace2.c:306:1
+    CF: die_message_builtin at usage.c:61:11
+    CT: _ at gettext.h:45:0
+    CF: _ at gettext.h:48:9
+    CT: Jump to external code for gettext
+    RF: Jump to external code for gettext
+    RF: _ at gettext.h:49:1
+    CF: die_message_builtin at usage.c:61:2
+    CT: vreportf at usage.c:10:0
+    CF: vreportf at usage.c:13:22
+    CT: Jump to external code for strlen
+    RF: Jump to external code for strlen
+    CF: vreportf at usage.c:19:2
+    [...30 more events...]
   After events:
     IRF: check_tag at object-file.c:0:0
     CF: index_mem at object-file.c:0:0
@@ -8017,10 +8015,9 @@ Uncategorised
     CT: index_mem at object-file.c:2347:0
     CF: index_mem at object-file.c:2372:4
     CT: check_tag at object-file.c:2336:0
-    RF: die_message_builtin at usage.c:62:1
-    CF: die_builtin at usage.c:74:2
-    CT: common_exit at common-main.c:72:0
-    CF: common_exit at common-main.c:82:2
+    CF: check_tag at object-file.c:2340:7
+    CT: _ at gettext.h:45:0
+    CF: _ at gettext.h:48:9
   Occurrences: 1
 
 Uncategorised
@@ -8207,8 +8204,8 @@ Library call removed
   Divergence countable events: 207
 
 Program call removed
-  Unique divergence coordinates: 67
-  Divergence countable events: 1190
+  Unique divergence coordinates: 64
+  Divergence countable events: 1136
 
 Inlined reentry added
   Unique divergence coordinates: 17
@@ -8220,13 +8217,13 @@ Inlined noise added
 
 Inlined return added
   Unique divergence coordinates: 2
-  Divergence countable events: 122
+  Divergence countable events: 120
 
 Uncategorised
   Unique divergence coordinates: 204
-  Divergence countable events: 308
+  Divergence countable events: 307
 
 ## Summary
 
-1157 unique divergence coordinates
-360597 divergence occurrences
+1154 unique divergence coordinates
+360594 divergence occurrences
