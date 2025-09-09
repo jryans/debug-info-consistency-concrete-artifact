@@ -33,7 +33,8 @@ echo "## Preparing \`ffmpeg\`"
   --disable-debug \
   --disable-optimizations \
   --disable-stripping \
-  --disable-pthreads
+  --disable-pthreads \
+  --samples=tests/fate/samples
 
 # Disable dependency tracking
 sd 'DEPFLAGS=.*$' 'DEPFLAGS=' ffbuild/config.mak
@@ -42,3 +43,6 @@ sd 'DEPFLAGS=.*$' 'DEPFLAGS=' ffbuild/config.mak
 sd '\-mstack-alignment=16 \-Qunused-arguments ' '' ffbuild/config.mak
 sd '\-Werror=partial-availability ' '' ffbuild/config.mak
 sd ' -Wno-maybe-uninitialized' '' ffbuild/config.mak
+
+# Download FATE test suite samples
+make fate-rsync
