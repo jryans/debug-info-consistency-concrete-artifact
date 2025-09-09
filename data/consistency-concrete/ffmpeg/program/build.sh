@@ -18,8 +18,8 @@ TARGET_PATH="${TARGET_NAME}"
 
 # Clang
 
-  levels=(O0 O1 O2)
-versions=(13 13 13)
+  levels=(O0 O1)
+versions=(18 18)
 
 for i in ${!levels[*]}; do
   level=${levels[$i]}
