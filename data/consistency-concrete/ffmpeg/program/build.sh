@@ -25,47 +25,48 @@ for i in ${!levels[*]}; do
   level=${levels[$i]}
   version=${versions[$i]}
 
-  echo "## Building \`${TARGET_NAME}\` (Clang ${version}, ${level}) for bitcode"
+  # JRS: Disable bitcode entirely for now
+  # echo "## Building \`${TARGET_NAME}\` (Clang ${version}, ${level}) for bitcode"
 
-  make clean
-  git clean -f
-  find . -name '*.o.*' -delete
+  # make clean
+  # git clean -f
+  # find . -name '*.o.*' -delete
 
-  ## Build via bitcode collection wrapper
-  cc_level_opts="CC_${level}_OPTS"
-  make \
-    CC=wllvm \
-    ECFLAGS="${CC_COMMON_OPTS} ${CC_CLANG_OPTS} ${!cc_level_opts}" \
-    LDFLAGS="${LD_COMMON_OPTS} -L./libavdevice -L./libavfilter -L./libavformat -L./libavcodec -L./libswresample -L./libswscale -L./libavutil"
+  # ## Build via bitcode collection wrapper
+  # cc_level_opts="CC_${level}_OPTS"
+  # make \
+  #   CC=wllvm \
+  #   ECFLAGS="${CC_COMMON_OPTS} ${CC_CLANG_OPTS} ${!cc_level_opts}" \
+  #   LDFLAGS="${LD_COMMON_OPTS} -L./libavdevice -L./libavfilter -L./libavformat -L./libavcodec -L./libswresample -L./libswscale -L./libavutil"
 
-  ## Extract bitcode
-  extract-bc ${TARGET_PATH}
-  mkdir -p "${SCRIPT_DIR}/clang/${version}/${level}"
-  cp \
-    ${TARGET_PATH}.bc \
-    "${SCRIPT_DIR}/clang/${version}/${level}/${TARGET_NAME}.bc"
-
-  ## Disassemble bitcode for debugging
-  # JRS: Bitcode for `ffmpeg` is already quite large, skipping disassembly
-  # $(llvm release-clang-lldb-${version} llvm-dis) \
+  # ## Extract bitcode
+  # extract-bc ${TARGET_PATH}
+  # mkdir -p "${SCRIPT_DIR}/clang/${version}/${level}"
+  # cp \
+  #   ${TARGET_PATH}.bc \
   #   "${SCRIPT_DIR}/clang/${version}/${level}/${TARGET_NAME}.bc"
 
-  # Collect function attributes when building O0
-  if [ "${level}" = "O0" ]; then
-    echo "## Analysing \`${TARGET_NAME}\` (Clang ${version}, ${level}) function attributes"
+  # ## Disassemble bitcode for debugging
+  # # JRS: Bitcode for `ffmpeg` is already quite large, skipping disassembly
+  # # $(llvm release-clang-lldb-${version} llvm-dis) \
+  # #   "${SCRIPT_DIR}/clang/${version}/${level}/${TARGET_NAME}.bc"
 
-    mkdir -p "${SCRIPT_DIR}/clang/${version}/${level}-function-attrs"
+  # # Collect function attributes when building O0
+  # if [ "${level}" = "O0" ]; then
+  #   echo "## Analysing \`${TARGET_NAME}\` (Clang ${version}, ${level}) function attributes"
 
-    $(llvm release-clang-lldb-${version} opt) \
-      -o "${SCRIPT_DIR}/clang/${version}/${level}-function-attrs/${TARGET_NAME}.bc" \
-      -passes=function-attrs \
-      "${SCRIPT_DIR}/clang/${version}/${level}/${TARGET_NAME}.bc"
+  #   mkdir -p "${SCRIPT_DIR}/clang/${version}/${level}-function-attrs"
 
-    ## Disassemble bitcode for debugging
-    # JRS: Bitcode for `ffmpeg` is already quite large, skipping disassembly
-    # $(llvm release-clang-lldb-${version} llvm-dis) \
-    #   "${SCRIPT_DIR}/clang/${version}/${level}-function-attrs/${TARGET_NAME}.bc"
-  fi
+  #   $(llvm release-clang-lldb-${version} opt) \
+  #     -o "${SCRIPT_DIR}/clang/${version}/${level}-function-attrs/${TARGET_NAME}.bc" \
+  #     -passes=function-attrs \
+  #     "${SCRIPT_DIR}/clang/${version}/${level}/${TARGET_NAME}.bc"
+
+  #   ## Disassemble bitcode for debugging
+  #   # JRS: Bitcode for `ffmpeg` is already quite large, skipping disassembly
+  #   # $(llvm release-clang-lldb-${version} llvm-dis) \
+  #   #   "${SCRIPT_DIR}/clang/${version}/${level}-function-attrs/${TARGET_NAME}.bc"
+  # fi
 
   echo "## Building \`${TARGET_NAME}\` (Clang ${version}, ${level}) for binary with debug info"
 
