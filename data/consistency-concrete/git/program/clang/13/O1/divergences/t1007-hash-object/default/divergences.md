@@ -5262,7 +5262,7 @@ Library call replaced
     CT: Jump to external code for gettext
   After events:
     CT: Jump to external code for dcgettext
-  Occurrences: 1
+  Occurrences: 4
 
 Library call replaced
   Before events:
@@ -5271,7 +5271,7 @@ Library call replaced
   After events:
     CT: Jump to external code for dcgettext
     RF: Jump to external code for dcgettext
-  Occurrences: 96
+  Occurrences: 93
 
 Library call replaced
   Before events:
@@ -5310,7 +5310,7 @@ Library call replaced
     RF: Jump to external code for gettext
   After events:
     RF: Jump to external code for dcgettext
-  Occurrences: 1
+  Occurrences: 4
 
 Library call replaced
   Before events:
@@ -5338,7 +5338,7 @@ Library call inlined
     CT: Jump to external code for getc_unlocked
   After events:
     ICT: getc_unlocked at stdio.h:66:0
-  Occurrences: 1030
+  Occurrences: 1033
 
 Library call inlined
   Before events:
@@ -5347,7 +5347,7 @@ Library call inlined
   After events:
     ICT: getc_unlocked at stdio.h:66:0
     IRF: getc_unlocked at stdio.h:68:10
-  Occurrences: 14170
+  Occurrences: 14167
 
 Library call inlined
   Before events:
@@ -5377,7 +5377,7 @@ Library call inlined
     RF: Jump to external code for getc_unlocked
   After events:
     IRF: getc_unlocked at stdio.h:68:10
-  Occurrences: 762
+  Occurrences: 765
 
 Library call removed
   Before events:
@@ -6690,7 +6690,7 @@ Inlined reentry added
   After events:
     IRF: sane_qsort at git-compat-util.h:0:0
     ICT: sane_qsort at git-compat-util.h:1305:0
-  Occurrences: 1
+  Occurrences: 4
 
 Inlined reentry added
   After events:
@@ -6708,25 +6708,25 @@ Inlined reentry added
   After events:
     IRF: strbuf_addch at strbuf.h:0:0
     ICT: strbuf_addch at strbuf.h:228:0
-  Occurrences: 324
+  Occurrences: 315
 
 Inlined reentry added
   After events:
     IRF: strbuf_addch at strbuf.h:233:19
     ICT: strbuf_addch at strbuf.h:228:0
-  Occurrences: 288
+  Occurrences: 294
 
 Inlined reentry added
   After events:
     IRF: strbuf_avail at strbuf.h:141:9
     ICT: strbuf_avail at strbuf.h:139:0
-  Occurrences: 230
+  Occurrences: 227
 
 Inlined reentry added
   After events:
     IRF: strbuf_grow at strbuf.c:0:0
     ICT: strbuf_grow at strbuf.c:91:0
-  Occurrences: 521
+  Occurrences: 515
 
 Inlined reentry added
   After events:
@@ -6780,13 +6780,13 @@ Inlined noise added
   After events:
     ICT: get_value at config.c:877:0
     IRF: get_value at config.c:0:0
-  Occurrences: 1734
+  Occurrences: 1725
 
 Inlined noise added
   After events:
     ICT: git_is_dir_sep at git-compat-util.h:446:0
     IRF: git_is_dir_sep at git-compat-util.h:448:11
-  Occurrences: 90
+  Occurrences: 87
 
 Inlined noise added
   After events:
@@ -6798,7 +6798,7 @@ Inlined noise added
   After events:
     ICT: git_parse_int at config.c:1232:0
     IRF: git_parse_int at config.c:1235:6
-  Occurrences: 148
+  Occurrences: 151
 
 Inlined noise added
   After events:
@@ -6822,7 +6822,7 @@ Inlined noise added
   After events:
     ICT: is_null_oid at hash.h:256:0
     IRF: is_null_oid at hash.h:0:0
-  Occurrences: 21
+  Occurrences: 18
 
 Inlined noise added
   After events:
@@ -6870,25 +6870,25 @@ Inlined noise added
   After events:
     ICT: st_mult at git-compat-util.h:990:0
     IRF: st_mult at git-compat-util.h:995:11
-  Occurrences: 232
+  Occurrences: 229
 
 Inlined noise added
   After events:
     ICT: strbuf_addch at strbuf.h:228:0
     IRF: strbuf_addch at strbuf.h:0:0
-  Occurrences: 297
+  Occurrences: 303
 
 Inlined noise added
   After events:
     ICT: strbuf_addch at strbuf.h:228:0
     IRF: strbuf_addch at strbuf.h:233:19
-  Occurrences: 306
+  Occurrences: 324
 
 Inlined noise added
   After events:
     ICT: strbuf_avail at strbuf.h:139:0
     IRF: strbuf_avail at strbuf.h:141:9
-  Occurrences: 1448
+  Occurrences: 1442
 
 Inlined noise added
   After events:
@@ -6900,7 +6900,7 @@ Inlined noise added
   After events:
     ICT: strbuf_grow at strbuf.c:91:0
     IRF: strbuf_grow at strbuf.c:101:14
-  Occurrences: 12
+  Occurrences: 9
 
 Inlined noise added
   After events:
@@ -7057,13 +7057,13 @@ Inlined return added
 Uncategorised
   After events:
     ICF: bsearch at stdlib-bsearch.h:33:22
-  Occurrences: 8
+  Occurrences: 5
 
 Uncategorised
   After events:
     ICF: bsearch at stdlib-bsearch.h:33:22
     ICT: ref_entry_cmp_sslice at ref-cache.c:113:0
-  Occurrences: 28
+  Occurrences: 31
 
 Uncategorised
   After events:
@@ -7105,7 +7105,7 @@ Uncategorised
 Uncategorised
   After events:
     ICF: fill_loose_path at object-file.c:428:3
-  Occurrences: 46
+  Occurrences: 43
 
 Uncategorised
   After events:
@@ -7122,7 +7122,7 @@ Uncategorised
   After events:
     ICF: fill_loose_path at object-file.c:430:4
     ICT: strbuf_addch at strbuf.h:228:0
-  Occurrences: 16
+  Occurrences: 19
 
 Uncategorised
   After events:
@@ -7174,7 +7174,7 @@ Uncategorised
   After events:
     CF: is_dup_ref at ref-cache.c:209:6
     CT: Jump to external code for strcmp
-  Occurrences: 1
+  Occurrences: 4
 
 Uncategorised
   After events:
@@ -7215,13 +7215,13 @@ Uncategorised
 Uncategorised
   After events:
     CF: ref_entry_cmp_sslice at ref-cache.c:117:12
-  Occurrences: 1
+  Occurrences: 4
 
 Uncategorised
   After events:
     CF: ref_entry_cmp_sslice at ref-cache.c:117:12
     CT: Jump to external code for strncmp
-  Occurrences: 46
+  Occurrences: 43
 
 Uncategorised
   After events:
@@ -7236,7 +7236,7 @@ Uncategorised
 Uncategorised
   After events:
     CF: sane_qsort at git-compat-util.h:1309:3
-  Occurrences: 1
+  Occurrences: 4
 
 Uncategorised
   After events:
@@ -7246,19 +7246,19 @@ Uncategorised
 Uncategorised
   After events:
     CF: setup_path at exec-cmd.c:0:0
-  Occurrences: 38
+  Occurrences: 41
 
 Uncategorised
   After events:
     CF: setup_path at exec-cmd.c:0:0
     ICT: strbuf_add at strbuf.c:296:0
-  Occurrences: 22
+  Occurrences: 19
 
 Uncategorised
   After events:
     ICF: sort_ref_dir at ref-cache.c:241:2
     ICT: sane_qsort at git-compat-util.h:1305:0
-  Occurrences: 1
+  Occurrences: 4
 
 Uncategorised
   After events:
@@ -7275,7 +7275,7 @@ Uncategorised
   After events:
     ICF: strbuf_add at strbuf.c:298:2
     ICT: strbuf_grow at strbuf.c:91:0
-  Occurrences: 88
+  Occurrences: 85
 
 Uncategorised
   After events:
@@ -7338,13 +7338,13 @@ Uncategorised
 Uncategorised
   After events:
     ICF: strbuf_vaddf at strbuf.c:395:3
-  Occurrences: 250
+  Occurrences: 238
 
 Uncategorised
   After events:
     ICF: strbuf_vaddf at strbuf.c:395:3
     ICT: strbuf_grow at strbuf.c:91:0
-  Occurrences: 424
+  Occurrences: 433
 
 Uncategorised
   After events:
@@ -7354,7 +7354,7 @@ Uncategorised
 Uncategorised
   After events:
     ICF: strbuf_vaddf at strbuf.c:402:3
-  Occurrences: 43
+  Occurrences: 46
 
 Uncategorised
   After events:
@@ -7388,13 +7388,13 @@ Uncategorised
 Uncategorised
   After events:
     CT: Jump to external code for __uflow
-  Occurrences: 26
+  Occurrences: 23
 
 Uncategorised
   After events:
     CT: Jump to external code for __uflow
     RF: Jump to external code for __uflow
-  Occurrences: 26
+  Occurrences: 29
 
 Uncategorised
   After events:
@@ -7422,7 +7422,7 @@ Uncategorised
   After events:
     CT: Jump to external code for qsort
     RF: Jump to external code for qsort
-  Occurrences: 1
+  Occurrences: 4
 
 Uncategorised
   After events:
@@ -7438,7 +7438,7 @@ Uncategorised
 Uncategorised
   After events:
     CT: Jump to external code for strncmp
-  Occurrences: 5
+  Occurrences: 8
 
 Uncategorised
   After events:
@@ -7499,12 +7499,12 @@ Uncategorised
 Uncategorised
   After events:
     ICT: get_value at config.c:877:0
-  Occurrences: 2583
+  Occurrences: 2592
 
 Uncategorised
   After events:
     ICT: git_is_dir_sep at git-compat-util.h:446:0
-  Occurrences: 42
+  Occurrences: 45
 
 Uncategorised
   After events:
@@ -7514,7 +7514,7 @@ Uncategorised
 Uncategorised
   After events:
     ICT: git_parse_int at config.c:1232:0
-  Occurrences: 55
+  Occurrences: 52
 
 Uncategorised
   After events:
@@ -7534,7 +7534,7 @@ Uncategorised
 Uncategorised
   After events:
     ICT: is_dup_ref at ref-cache.c:207:0
-  Occurrences: 1
+  Occurrences: 4
 
 Uncategorised
   After events:
@@ -7545,7 +7545,7 @@ Uncategorised
   After events:
     ICT: memory_limit_check at wrapper.c:17:0
     IRF: memory_limit_check at wrapper.c:0:0
-  Occurrences: 59
+  Occurrences: 56
 
 Uncategorised
   After events:
@@ -7575,7 +7575,7 @@ Uncategorised
 Uncategorised
   After events:
     ICT: ref_entry_cmp_sslice at ref-cache.c:113:0
-  Occurrences: 12
+  Occurrences: 9
 
 Uncategorised
   After events:
@@ -7606,7 +7606,7 @@ Uncategorised
 Uncategorised
   After events:
     ICT: st_mult at git-compat-util.h:990:0
-  Occurrences: 131
+  Occurrences: 134
 
 Uncategorised
   After events:
@@ -7617,34 +7617,34 @@ Uncategorised
   After events:
     ICT: strbuf_add at strbuf.c:296:0
     ICF: strbuf_add at strbuf.c:298:2
-  Occurrences: 33
+  Occurrences: 36
 
 Uncategorised
   After events:
     ICT: strbuf_addch at strbuf.h:228:0
-  Occurrences: 887
+  Occurrences: 863
 
 Uncategorised
   After events:
     ICT: strbuf_avail at strbuf.h:139:0
-  Occurrences: 708
+  Occurrences: 717
 
 Uncategorised
   After events:
     ICT: strbuf_grow at strbuf.c:91:0
-  Occurrences: 1185
+  Occurrences: 1179
 
 Uncategorised
   After events:
     ICT: strbuf_grow at strbuf.c:91:0
     CF: strbuf_grow at strbuf.c:99:2
-  Occurrences: 32
+  Occurrences: 35
 
 Uncategorised
   After events:
     ICT: strbuf_grow at strbuf.c:91:0
     IRF: strbuf_grow at strbuf.c:0:0
-  Occurrences: 267
+  Occurrences: 273
 
 Uncategorised
   After events:
@@ -7670,7 +7670,7 @@ Uncategorised
 Uncategorised
   After events:
     RF: Jump to external code for __uflow
-  Occurrences: 242
+  Occurrences: 239
 
 Uncategorised
   After events:
@@ -7697,7 +7697,7 @@ Uncategorised
 Uncategorised
   After events:
     RF: Jump to external code for strcmp
-  Occurrences: 1
+  Occurrences: 4
 
 Uncategorised
   After events:
@@ -7719,13 +7719,13 @@ Uncategorised
 Uncategorised
   After events:
     RF: Jump to external code for strncmp
-  Occurrences: 52
+  Occurrences: 55
 
 Uncategorised
   After events:
     RF: Jump to external code for strncmp
     IRF: ref_entry_cmp_sslice at ref-cache.c:0:0
-  Occurrences: 35
+  Occurrences: 32
 
 Uncategorised
   After events:
@@ -7781,12 +7781,12 @@ Uncategorised
 Uncategorised
   After events:
     IRF: get_value at config.c:0:0
-  Occurrences: 2583
+  Occurrences: 2592
 
 Uncategorised
   After events:
     IRF: git_is_dir_sep at git-compat-util.h:448:11
-  Occurrences: 42
+  Occurrences: 45
 
 Uncategorised
   After events:
@@ -7796,7 +7796,7 @@ Uncategorised
 Uncategorised
   After events:
     IRF: git_parse_int at config.c:1235:6
-  Occurrences: 55
+  Occurrences: 52
 
 Uncategorised
   After events:
@@ -7816,7 +7816,7 @@ Uncategorised
 Uncategorised
   After events:
     IRF: is_dup_ref at ref-cache.c:0:0
-  Occurrences: 1
+  Occurrences: 4
 
 Uncategorised
   After events:
@@ -7851,7 +7851,7 @@ Uncategorised
 Uncategorised
   After events:
     IRF: ref_entry_cmp_sslice at ref-cache.c:0:0
-  Occurrences: 30
+  Occurrences: 33
 
 Uncategorised
   After events:
@@ -7867,7 +7867,7 @@ Uncategorised
   After events:
     IRF: sane_qsort at git-compat-util.h:0:0
     ICF: sort_ref_dir at ref-cache.c:246:15
-  Occurrences: 1
+  Occurrences: 4
 
 Uncategorised
   After events:
@@ -7887,7 +7887,7 @@ Uncategorised
 Uncategorised
   After events:
     IRF: st_mult at git-compat-util.h:995:11
-  Occurrences: 131
+  Occurrences: 134
 
 Uncategorised
   After events:
@@ -7897,46 +7897,46 @@ Uncategorised
 Uncategorised
   After events:
     IRF: strbuf_addch at strbuf.h:0:0
-  Occurrences: 399
+  Occurrences: 402
 
 Uncategorised
   After events:
     IRF: strbuf_addch at strbuf.h:233:19
-  Occurrences: 484
+  Occurrences: 460
 
 Uncategorised
   After events:
     IRF: strbuf_addch at strbuf.h:233:19
     ICF: fill_loose_path at object-file.c:428:3
-  Occurrences: 5
+  Occurrences: 8
 
 Uncategorised
   After events:
     IRF: strbuf_addch at strbuf.h:233:19
     ICF: fill_loose_path at object-file.c:430:4
-  Occurrences: 17
+  Occurrences: 14
 
 Uncategorised
   After events:
     IRF: strbuf_avail at strbuf.h:141:9
-  Occurrences: 371
+  Occurrences: 380
 
 Uncategorised
   After events:
     IRF: strbuf_avail at strbuf.h:141:9
     ICF: strbuf_vaddf at strbuf.c:395:3
-  Occurrences: 241
+  Occurrences: 244
 
 Uncategorised
   After events:
     IRF: strbuf_avail at strbuf.h:141:9
     ICF: strbuf_vaddf at strbuf.c:402:3
-  Occurrences: 96
+  Occurrences: 93
 
 Uncategorised
   After events:
     IRF: strbuf_grow at strbuf.c:0:0
-  Occurrences: 456
+  Occurrences: 453
 
 Uncategorised
   After events:
@@ -7947,7 +7947,7 @@ Uncategorised
 Uncategorised
   After events:
     IRF: strbuf_grow at strbuf.c:101:14
-  Occurrences: 195
+  Occurrences: 198
 
 Uncategorised
   After events:
@@ -8226,4 +8226,4 @@ Uncategorised
 ## Summary
 
 1154 unique divergence coordinates
-360594 divergence occurrences
+360612 divergence occurrences
