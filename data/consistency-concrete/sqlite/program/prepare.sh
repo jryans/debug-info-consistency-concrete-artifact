@@ -13,5 +13,7 @@ echo "## Preparing \`sqlite\`"
 
 # Configure
 # Disable threads
+# Disable amalgamation
 ./configure \
   --disable-threadsafe \
+  --disable-amalgamation
