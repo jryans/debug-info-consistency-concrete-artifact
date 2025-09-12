@@ -8,7 +8,8 @@ source "${SCRIPT_DIR}/../../../../../vars.sh"
 
 # Make trace directory used as temp storage during execution
 # `JOB_NAME` defined by test harness run script which loads this file
-CON_TRACE_DIR="${SCRIPT_DIR}/concrete-trace/${JOB_NAME}/${TRACE_VARIANT}/traces"
+# Remove `test` extension from job name
+CON_TRACE_DIR="${SCRIPT_DIR}/concrete-trace/${JOB_NAME%.*}/${TRACE_VARIANT}/traces"
 export CON_TRACE_DIR
 # Remove first, just in case something left over from aborted run
 rm -rf ${CON_TRACE_DIR}
