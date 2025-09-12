@@ -17,9 +17,7 @@ source "${SCRIPT_DIR}/../../../../../vars.sh"
 ARCHIVE_NAME="simple"
 ARCHIVE_PATH="${HOME}/Downloads/${ARCHIVE_NAME}.tar"
 
-level="O0"
-version="13"
-echo "## Collecting concrete trace of \`${TARGET_NAME}\` (Clang ${version}, ${level})"
+echo "## Collecting concrete trace of \`${TARGET_NAME}\`"
 
 # Each execution of the target to analyse
 executions=(extract)

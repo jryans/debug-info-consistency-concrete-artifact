@@ -12,10 +12,7 @@ fi
 TARGET_NAME="git"
 source "${SCRIPT_DIR}/../../../../../vars.sh"
 
-# GCC O2 checked against O0
-level="O2"
-version="11"
-echo "## Checking concrete debug consistency of \`${TARGET_NAME}\` (GCC ${version}, ${level})"
+echo "## Checking concrete debug consistency of \`${TARGET_NAME}\`"
 
 # Using `LC_ALL=C` gives ~10x performance boost
 export LC_ALL=C

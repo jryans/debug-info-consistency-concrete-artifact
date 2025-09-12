@@ -12,9 +12,7 @@ source "${SCRIPT_DIR}/../../../../../vars.sh"
 
 TARGET_NAME="git"
 
-level="O1"
-version="18"
-echo "## Collecting concrete trace of \`${TARGET_NAME}\` (Clang ${version}, ${level})"
+echo "## Collecting concrete trace of \`${TARGET_NAME}\`"
 
 # Tests from the target's test suite to analyse
 tests=(t0001-init t1007-hash-object)

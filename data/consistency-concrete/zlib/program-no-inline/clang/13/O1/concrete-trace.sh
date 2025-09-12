@@ -12,9 +12,7 @@ fi
 TARGET_NAME="example"
 source "${SCRIPT_DIR}/../../../../../vars.sh"
 
-level="O1"
-version="13"
-echo "## Collecting concrete trace of \`${TARGET_NAME}\` (Clang ${version}, ${level})"
+echo "## Collecting concrete trace of \`${TARGET_NAME}\`"
 
 # Each execution of the target to analyse
 executions=(example)

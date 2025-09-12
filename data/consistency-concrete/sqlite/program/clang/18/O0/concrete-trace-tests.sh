@@ -12,9 +12,7 @@ source "${SCRIPT_DIR}/../../../../../vars.sh"
 
 TARGET_NAME="testfixture"
 
-level="O0"
-version="18"
-echo "## Collecting concrete trace of SQLite (Clang ${version}, ${level})"
+echo "## Collecting concrete trace of SQLite"
 
 # Tests from the target's test suite to analyse
 tests=(

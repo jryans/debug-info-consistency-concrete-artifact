@@ -12,10 +12,7 @@ fi
 TARGET_NAME="git"
 source "${SCRIPT_DIR}/../../../../../vars.sh"
 
-# GCC O1 checked against O0
-level="O1"
-version="14"
-echo "## Checking concrete debug consistency of \`${TARGET_NAME}\` (GCC ${version}, ${level})"
+echo "## Checking concrete debug consistency of \`${TARGET_NAME}\`"
 
 mkdir -p diff
 git diff --no-index --diff-algorithm=myers -- \

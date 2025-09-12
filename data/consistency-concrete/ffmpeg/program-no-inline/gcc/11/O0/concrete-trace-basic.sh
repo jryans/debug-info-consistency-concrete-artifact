@@ -12,9 +12,7 @@ fi
 TARGET_NAME="ffmpeg"
 source "${SCRIPT_DIR}/../../../../../vars.sh"
 
-level="O0"
-version="11"
-echo "## Collecting concrete trace of \`${TARGET_NAME}\` (GCC ${version}, ${level})"
+echo "## Collecting concrete trace of \`${TARGET_NAME}\`"
 
 # Common options for all executions of this program
 common_command_opts="-hide_banner -loglevel error"

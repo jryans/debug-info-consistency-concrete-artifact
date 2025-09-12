@@ -12,9 +12,7 @@ fi
 TARGET_NAME="ffmpeg"
 source "${SCRIPT_DIR}/../../../../../vars.sh"
 
-level="O1"
-version="13"
-echo "## Collecting concrete trace of \`${TARGET_NAME}\` (Clang ${version}, ${level})"
+echo "## Collecting concrete trace of \`${TARGET_NAME}\`"
 
 # Common options for all executions of this program
 common_command_opts="-hide_banner -loglevel error"

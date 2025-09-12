@@ -15,9 +15,7 @@ source "${SCRIPT_DIR}/../../../../../vars.sh"
 # Analyse `git` in the context of separate repo to reduce trace noise
 REPO_PATH="${HOME}/Projects/ripgrep"
 
-level="O0"
-version="13"
-echo "## Collecting concrete trace of \`${TARGET_NAME}\` (Clang ${version}, ${level})"
+echo "## Collecting concrete trace of \`${TARGET_NAME}\`"
 
 # Each execution of the target to analyse
 executions=(log show)
