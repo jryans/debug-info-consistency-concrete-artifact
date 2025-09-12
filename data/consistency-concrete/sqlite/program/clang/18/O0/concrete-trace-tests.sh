@@ -14,11 +14,6 @@ TARGET_NAME="testfixture"
 
 echo "## Collecting concrete trace of SQLite"
 
-# Tests from the target's test suite to analyse
-tests=(
-  wherelimit
-)
-
 # We only collect a single trace variant at the moment
 TRACE_VARIANT="default"
 export TRACE_VARIANT
@@ -31,5 +26,4 @@ ${SCRIPT_DIR}/testfixture \
   ./test/testrunner.tcl \
   --jobs ${JOBS} \
   --before-script "${SCRIPT_DIR}/concrete-trace-before.sh" \
-  --after-script "${SCRIPT_DIR}/concrete-trace-after.sh" \
-  wherelimit
+  --after-script "${SCRIPT_DIR}/concrete-trace-after.sh"
