@@ -9,10 +9,9 @@ if [ "${PWD}" != "${SCRIPT_DIR}" ]; then
   exit
 fi
 
-TARGET_NAME="tar"
 source "${SCRIPT_DIR}/../../../../../vars.sh"
 
-echo "## Checking concrete debug consistency of \`${TARGET_NAME}\`"
+echo "## Checking concrete debug consistency"
 
 # Using `LC_ALL=C` gives ~10x performance boost
 export LC_ALL=C
