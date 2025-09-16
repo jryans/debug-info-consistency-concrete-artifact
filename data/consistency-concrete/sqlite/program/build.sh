@@ -81,8 +81,9 @@ for i in ${!levels[*]}; do
   ## Build for binary with debug info
   cc_level_opts="CC_${level}_OPTS"
   make \
-    CC="$(llvm release-clang-lldb-${version} clang)" \
-    CFLAGS="${CC_COMMON_OPTS} ${CC_CLANG_OPTS} ${!cc_level_opts} -fsave-optimization-record ${LD_COMMON_OPTS}" \
+    CC="$(gcc release-${version} gcc)" \
+    CFLAGS="${CC_COMMON_OPTS} ${CC_GCC_OPTS} ${!cc_level_opts}" \
+    LDFLAGS="${LD_COMMON_OPTS}" \
     testfixture
 
   mkdir -p "${SCRIPT_DIR}/gcc/${version}/${level}"
