@@ -16,7 +16,17 @@ echo "## Collecting concrete trace of \`${TARGET_NAME}\`"
 
 # Tests from the target's test suite to analyse
 tests=(
-  shortest
+  ac3-2.0
+  acodec-adpcm-adx
+  adpcm-creative
+  alac-16-level-0
+  mpeg4-als-conformance-03
+  amrnb-4k75
+  amrwb-6k60
+  atrac1-1
+  binkaudio-dct
+  bmp-1bit
+  caf-demux
 )
 
 # Different trace variants to collect
