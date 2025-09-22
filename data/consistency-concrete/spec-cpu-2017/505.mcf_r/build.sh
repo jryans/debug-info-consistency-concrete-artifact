@@ -71,48 +71,48 @@ done
 
 # GCC
 
-  levels=(O0 O1 O2)
-versions=(11 11 11)
+#   levels=(O0 O1 O2)
+# versions=(11 11 11)
 
-for i in ${!levels[*]}; do
-  version=${versions[$i]}
-  level=${levels[$i]}
+# for i in ${!levels[*]}; do
+#   version=${versions[$i]}
+#   level=${levels[$i]}
 
-  echo "## Building \`${TARGET_NAME}\` (GCC ${version}, ${level}) for binary with debug info"
+#   echo "## Building \`${TARGET_NAME}\` (GCC ${version}, ${level}) for binary with debug info"
 
-  make clean
+#   make clean
 
-  ## Build for binary with debug info
-  cc_level_opts="CC_${level}_OPTS"
-  make \
-    CC="$(gcc release-${version} gcc)" \
-    OPTIMIZE="" \
-    CFLAGS="${CC_COMMON_OPTS} ${CC_GCC_OPTS} ${!cc_level_opts}" \
-    LDFLAGS="${CC_COMMON_OPTS} ${CC_GCC_OPTS} ${LD_COMMON_OPTS}"
+#   ## Build for binary with debug info
+#   cc_level_opts="CC_${level}_OPTS"
+#   make \
+#     CC="$(gcc release-${version} gcc)" \
+#     OPTIMIZE="" \
+#     CFLAGS="${CC_COMMON_OPTS} ${CC_GCC_OPTS} ${!cc_level_opts}" \
+#     LDFLAGS="${CC_COMMON_OPTS} ${CC_GCC_OPTS} ${LD_COMMON_OPTS}"
 
-  mkdir -p "${SCRIPT_DIR}/gcc/${version}/${level}"
+#   mkdir -p "${SCRIPT_DIR}/gcc/${version}/${level}"
 
-  # TODO: Try GCC's version of `-fsave-optimization-record`
-  # ## Collect optimisation remarks
-  # ( \
-  #   find . -name '*.opt-record.json.gz' | \
-  #   xargs cat \
-  #   > "${SCRIPT_DIR}/gcc/${version}/${level}/${TARGET_NAME}.opt-record.json.gz" \
-  # )
+#   # TODO: Try GCC's version of `-fsave-optimization-record`
+#   # ## Collect optimisation remarks
+#   # ( \
+#   #   find . -name '*.opt-record.json.gz' | \
+#   #   xargs cat \
+#   #   > "${SCRIPT_DIR}/gcc/${version}/${level}/${TARGET_NAME}.opt-record.json.gz" \
+#   # )
 
-  ## Gather debug info
-  if [[ "$OS" == 'mac' ]]; then
-    dsymutil --flat "${TARGET_PATH}"
-    cp \
-      "${TARGET_PATH}.dwarf" \
-      "${SCRIPT_DIR}/gcc/${version}/${level}/${TARGET_NAME}.dwarf"
-  fi
+#   ## Gather debug info
+#   if [[ "$OS" == 'mac' ]]; then
+#     dsymutil --flat "${TARGET_PATH}"
+#     cp \
+#       "${TARGET_PATH}.dwarf" \
+#       "${SCRIPT_DIR}/gcc/${version}/${level}/${TARGET_NAME}.dwarf"
+#   fi
 
-  ## Store program binary
-  cp \
-    ${TARGET_PATH} \
-    "${SCRIPT_DIR}/gcc/${version}/${level}/${TARGET_NAME}"
-done
+#   ## Store program binary
+#   cp \
+#     ${TARGET_PATH} \
+#     "${SCRIPT_DIR}/gcc/${version}/${level}/${TARGET_NAME}"
+# done
 
 # Cleanup
 echo "## Cleanup"
