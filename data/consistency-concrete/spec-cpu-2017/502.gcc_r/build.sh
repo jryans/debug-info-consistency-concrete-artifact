@@ -42,8 +42,8 @@ for i in ${!levels[*]}; do
   cc_level_opts="CC_${level}_OPTS"
   make \
     CC="$(llvm release-clang-lldb-${version} clang)" \
-    OPTIMIZE="-fgnu89-inline -fcommon" \
-    EXTRA_CFLAGS="${CC_COMMON_OPTS} ${CC_CLANG_OPTS} ${!cc_level_opts} -fsave-optimization-record" \
+    OPTIMIZE="" \
+    EXTRA_CFLAGS="${CC_COMMON_OPTS} ${CC_CLANG_OPTS} ${!cc_level_opts} -fsave-optimization-record -fgnu89-inline -fcommon" \
     EXTRA_LDFLAGS="${CC_COMMON_OPTS} ${CC_CLANG_OPTS} ${LD_COMMON_OPTS}"
 
   mkdir -p "${SCRIPT_DIR}/clang/${version}/${level}"
