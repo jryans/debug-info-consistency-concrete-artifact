@@ -13,7 +13,7 @@ source "${SCRIPT_DIR}/../../../../../vars.sh"
 
 TARGET_NAME="gcc_r"
 TARGET_OPTS="-O3"
-TARGET_INPUT="${SCRIPT_DIR}/../../../data/input.c"
+TARGET_INPUT="${SCRIPT_DIR}/../../../data/hello.c"
 
 echo "## Collecting concrete trace of SPEC CPU test"
 
