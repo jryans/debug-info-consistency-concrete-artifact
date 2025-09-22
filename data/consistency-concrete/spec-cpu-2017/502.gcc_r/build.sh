@@ -19,7 +19,7 @@ export LLVM_COMPILER_PATH="$(llvm release-clang-lldb-13)/bin"
 export SPEC="${HOME}/Projects/Benchmarks/spec-cpu-2017"
 
 TARGET_NAME="gcc_r"
-TARGET_PATH="${TARGET_NAME}"
+TARGET_PATH="cpu${TARGET_NAME}"
 
 # Clang
 
@@ -65,7 +65,7 @@ for i in ${!levels[*]}; do
 
   ## Store program binary
   cp \
-    cpu${TARGET_PATH} \
+    ${TARGET_PATH} \
     "${SCRIPT_DIR}/clang/${version}/${level}/${TARGET_NAME}"
 done
 
