@@ -11,7 +11,7 @@ fi
 
 source "${SCRIPT_DIR}/../../../../../vars.sh"
 
-TARGET_NAME="mcf_r"
+TARGET_NAME="mcf"
 INPUT="${SCRIPT_DIR}/../../../data/input"
 
 echo "## Collecting concrete trace of SPEC CPU test"

@@ -18,8 +18,8 @@ export LLVM_COMPILER_PATH="$(llvm release-clang-lldb-13)/bin"
 # Expected by SPEC build system
 export SPEC="${HOME}/Projects/Benchmarks/spec-cpu-2017"
 
-TARGET_NAME="omnetpp_r"
-TARGET_PATH="${TARGET_NAME}"
+TARGET_NAME="omnetpp"
+TARGET_PATH="omnetpp_r"
 
 # Clang
 

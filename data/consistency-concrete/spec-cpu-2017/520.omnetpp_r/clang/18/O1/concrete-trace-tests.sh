@@ -11,7 +11,7 @@ fi
 
 source "${SCRIPT_DIR}/../../../../../vars.sh"
 
-TARGET_NAME="omnetpp_r"
+TARGET_NAME="omnetpp"
 TARGET_OPTS="-c General -r 0"
 TARGET_INPUT="${SCRIPT_DIR}/../../../data/omnetpp.ini"
 

@@ -1,5 +1,5 @@
-perlbench_r
-gcc_r
-mcf_r
-omnetpp_r
-xalanc_r
+perl
+gcc
+mcf
+omnetpp
+xalanc

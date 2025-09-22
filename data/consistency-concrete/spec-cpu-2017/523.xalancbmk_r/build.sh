@@ -18,7 +18,7 @@ export LLVM_COMPILER_PATH="$(llvm release-clang-lldb-13)/bin"
 # Expected by SPEC build system
 export SPEC="${HOME}/Projects/Benchmarks/spec-cpu-2017"
 
-TARGET_NAME="xalanc_r"
+TARGET_NAME="xalanc"
 TARGET_PATH="cpuxalan_r"
 
 # Clang

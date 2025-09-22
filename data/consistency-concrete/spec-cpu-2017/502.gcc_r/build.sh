@@ -18,7 +18,7 @@ export LLVM_COMPILER_PATH="$(llvm release-clang-lldb-13)/bin"
 # Expected by SPEC build system
 export SPEC="${HOME}/Projects/Benchmarks/spec-cpu-2017"
 
-TARGET_NAME="gcc_r"
+TARGET_NAME="gcc"
 TARGET_PATH="cpu${TARGET_NAME}"
 
 # Clang

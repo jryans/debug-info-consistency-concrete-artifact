@@ -11,7 +11,7 @@ fi
 
 source "${SCRIPT_DIR}/../../../../../vars.sh"
 
-TARGET_NAME="gcc_r"
+TARGET_NAME="gcc"
 TARGET_OPTS="-O3"
 TARGET_INPUT="${SCRIPT_DIR}/../../../data/hello.c"
 
