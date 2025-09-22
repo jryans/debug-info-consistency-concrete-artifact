@@ -87,8 +87,8 @@ done
 #   make \
 #     CC="$(gcc release-${version} gcc)" \
 #     OPTIMIZE="" \
-#     CFLAGS="${CC_COMMON_OPTS} ${CC_GCC_OPTS} ${!cc_level_opts}" \
-#     LDFLAGS="${CC_COMMON_OPTS} ${CC_GCC_OPTS} ${LD_COMMON_OPTS}"
+#     EXTRA_CFLAGS="${CC_COMMON_OPTS} ${CC_GCC_OPTS} ${!cc_level_opts}" \
+#     EXTRA_LDFLAGS="${CC_COMMON_OPTS} ${CC_GCC_OPTS} ${LD_COMMON_OPTS}"
 
 #   mkdir -p "${SCRIPT_DIR}/gcc/${version}/${level}"
 
