@@ -27,6 +27,55 @@ tests=(
   binkaudio-dct
   bmp-1bit
   caf-demux
+  canopus-hq_hqa-hq
+  cdxl-bitline-ham6
+  cover-art-flac
+  dca-core
+  bink-demux
+  dfa1
+  dnxhr-prefix1
+  dpcm-sierra
+  bsf-dv-error-marker
+  ea-cdata
+  mapchan-silent-mono
+  filter-adelay
+  fitsdec-bitpix-32
+  gif-gray
+  hap1
+  hevc-bsf-mp4toannexb
+  hls-init-time
+  aliaspix-gray
+  indeo2-delta
+  lavf-ogg
+  lavf-gray.pam
+  lavf-gray.fits
+  lossless-shorten
+  loco-rgb
+  matroska-remux
+  mp3-float-conf-compl
+  mpc7-demux
+  mpeg4-packed
+  mpegps-remuxed-pcm-demux
+  mxf-essencegroup-demux
+  oma-demux
+  iff-pcm
+  pixlet-rgb
+  prores-gray
+  quickdraw
+  qtrle-1bit
+  fraps-v1
+  segment-mp4-to-ts
+  speedhq-422
+  sub-jacosub
+  truehd-core-bsf
+  magicyuv-y400i
+  g722dec-1
+  vorbis-10
+  theora-offset
+  vqf-demux
+  wavpack-lossless-float
+  webm-dash-manifest
+  wmapro-2ch
 )
 
 # Different trace variants to collect
