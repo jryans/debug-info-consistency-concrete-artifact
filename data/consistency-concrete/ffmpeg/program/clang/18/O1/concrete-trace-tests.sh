@@ -16,6 +16,7 @@ echo "## Collecting concrete trace of \`${TARGET_NAME}\`"
 
 # Tests from the target's test suite to analyse
 tests=(
+  aac-fixed-al04_44
   ac3-2.0
   acodec-adpcm-adx
   adpcm-creative
