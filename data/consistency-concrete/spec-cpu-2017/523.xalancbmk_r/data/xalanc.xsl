@@ -92,9 +92,6 @@
 
       <b><xsl:text>Note: </xsl:text></b><br/>
       <xsl:apply-templates select="spec:text"/>
-      <xsl:call-template name="FormatText">
-         <xsl:with-param name="givenText" select="spec:text"/>
-      </xsl:call-template>
    </p>
    </xsl:for-each>
 </xsl:template>      
@@ -115,23 +112,9 @@
    <xsl:for-each select="spec:listitem">
       <xsl:number format="(I) " value="(floor(position() div 12)*50)+(position() mod 12-1)" />
       <xsl:apply-templates select="spec:text"/>
-      <xsl:call-template name="FormatText">
-         <xsl:with-param name="givenText" select="spec:text"/>
-      </xsl:call-template>
       <br/>
       <br/>
    </xsl:for-each>            
-</xsl:template>
-
-<xsl:template name="FormatText">
-   <xsl:param name="givenText"/>
-   <p>Encrypted Version</p>
-   <xsl:variable name="RevText">	
-      <xsl:call-template name="encryptText">
-         <xsl:with-param name="normalVerse" select="$givenText"/>
-      </xsl:call-template>
-   </xsl:variable>
-   <xsl:value-of select="$RevText"/>
 </xsl:template>
 
 <xsl:template match="spec:text">
@@ -323,18 +306,12 @@
    <xsl:when test="spec:text">
       <xsl:number format="(I) " value="(floor(position() div 12)*50)+(position() mod 12)" />
       <xsl:apply-templates select="spec:text"/>
-      <xsl:call-template name="FormatText">
-         <xsl:with-param name="givenText" select="spec:text"/>
-      </xsl:call-template>
       <br/>
    </xsl:when>
    <xsl:otherwise>
       <xsl:for-each select="spec:parlist/spec:listitem">
          <xsl:number format="(I) " value="(floor(position() div 12)*50)+(position() mod 12-1)" />
          <xsl:apply-templates select="spec:text"/>
-         <xsl:call-template name="FormatText">
-            <xsl:with-param name="givenText" select="spec:text"/>
-         </xsl:call-template>
          <br/>
          <br/>
       </xsl:for-each>            
@@ -403,22 +380,6 @@
 
 <xsl:template match="spec:price">
    <xsl:value-of select="number()"/>
-</xsl:template>
-
-<xsl:template name="encryptText">
-   <xsl:param name="normalVerse"/>
-   <xsl:param name="backwardsText" select="Empty"/>
-   <xsl:choose>
-      <xsl:when test="string-length($normalVerse) = 0">
-         <xsl:value-of select="$backwardsText"/>
-      </xsl:when>
-      <xsl:otherwise>
-         <xsl:call-template name="encryptText">
-            <xsl:with-param name="normalVerse" select="substring($normalVerse,2,string-length($normalVerse)-1)"/>
-            <xsl:with-param name="backwardsText" select="concat(substring($normalVerse,1,1),$backwardsText)"/>
-         </xsl:call-template>
-      </xsl:otherwise>
-   </xsl:choose>
 </xsl:template>
 
 </xsl:stylesheet>

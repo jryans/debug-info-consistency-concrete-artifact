@@ -41,10 +41,6 @@
   <sequence>
     <element name="regions" type="big:regionsType"/>
     <element name="categories" type="big:categoriesType"/>
-    <element name="catgraph" type="big:catgraphType"/>
-    <element name="people" type="big:peopleType"/>
-    <element name="open_auctions" type="big:open_auctionsType"/>
-    <element name="closed_auctions" type="big:closed_auctionsType"/>
   </sequence>
 </complexType>
   <key name="itemKey">
@@ -115,12 +111,7 @@
 
 <complexType name="regionsType">
   <all>
-    <element ref="big:africa"/>
-    <element ref="big:asia"/>
-    <element ref="big:australia"/>
-    <element ref="big:europe"/>
     <element ref="big:namerica"/>
-    <element ref="big:samerica"/>
   </all>
 </complexType>
 
