@@ -82,8 +82,7 @@ done
 #   cc_level_opts="CC_${level}_OPTS"
 #   make \
 #     CC="$(gcc release-${version} gcc)" \
-#     CFLAGS="${CC_COMMON_OPTS} ${CC_GCC_OPTS} ${!cc_level_opts}" \
-#     LDFLAGS="${LD_COMMON_OPTS}" \
+#     CFLAGS="${CC_COMMON_OPTS} ${CC_GCC_OPTS} ${!cc_level_opts}" ${LD_COMMON_OPTS}" \
 #     testfixture
 
 #   mkdir -p "${SCRIPT_DIR}/gcc/${version}/${level}"
