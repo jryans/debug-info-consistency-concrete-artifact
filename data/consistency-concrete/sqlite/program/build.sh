@@ -35,10 +35,13 @@ for i in ${!levels[*]}; do
   # For now, work around this by building again normally.
 
   ## Build for binary with debug info
+  # JRS: Need to statically link TCL with debug info enabled,
+  # which is what the additional library path below achieves on my machine.
+  # Expose variable to configure this path and try to script more steps.
   cc_level_opts="CC_${level}_OPTS"
   make \
     CC="$(llvm release-clang-lldb-${version} clang)" \
-    CFLAGS="${CC_COMMON_OPTS} ${CC_CLANG_OPTS} ${!cc_level_opts} -fsave-optimization-record ${LD_COMMON_OPTS}" \
+    CFLAGS="${CC_COMMON_OPTS} ${CC_CLANG_OPTS} ${!cc_level_opts} -fsave-optimization-record -L/nix/store/jmxm0x5w0p5a1v849a0cpklsckjwj5nz-tcl-8.6.15/lib ${LD_COMMON_OPTS}" \
     testfixture
 
   mkdir -p "${SCRIPT_DIR}/clang/${version}/${level}"
@@ -82,7 +85,7 @@ done
 #   cc_level_opts="CC_${level}_OPTS"
 #   make \
 #     CC="$(gcc release-${version} gcc)" \
-#     CFLAGS="${CC_COMMON_OPTS} ${CC_GCC_OPTS} ${!cc_level_opts}" ${LD_COMMON_OPTS}" \
+#     CFLAGS="${CC_COMMON_OPTS} ${CC_GCC_OPTS} ${!cc_level_opts}" -L/nix/store/jmxm0x5w0p5a1v849a0cpklsckjwj5nz-tcl-8.6.15/lib ${LD_COMMON_OPTS}" \
 #     testfixture
 
 #   mkdir -p "${SCRIPT_DIR}/gcc/${version}/${level}"
