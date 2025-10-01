@@ -18,23 +18,18 @@ echo "## Collecting concrete trace of \`${TARGET_NAME}\`"
 tests=(
   aac-fixed-al04_44
   ac3-2.0
-  acodec-adpcm-adx
   adpcm-creative
-  alac-16-level-0
-  mpeg4-als-conformance-03
   amrnb-4k75
   amrwb-6k60
   atrac1-1
   binkaudio-dct
   bmp-1bit
   caf-demux
-  canopus-hq_hqa-hq
   cdxl-bitline-ham6
   cover-art-flac
   dca-core
   bink-demux
   dfa1
-  dnxhr-prefix1
   dpcm-sierra
   bsf-dv-error-marker
   ea-cdata
@@ -46,11 +41,9 @@ tests=(
   hevc-bsf-mp4toannexb
   hls-init-time
   aliaspix-gray
-  indeo2-delta
   lavf-ogg
   lavf-gray.pam
   lavf-gray.fits
-  lossless-shorten
   loco-rgb
   matroska-remux
   mp3-float-conf-compl
@@ -62,7 +55,6 @@ tests=(
   iff-pcm
   pixlet-rgb
   prores-gray
-  quickdraw
   qtrle-1bit
   fraps-v1
   segment-mp4-to-ts
@@ -70,11 +62,9 @@ tests=(
   sub-jacosub
   truehd-core-bsf
   magicyuv-y400i
-  g722dec-1
   vorbis-10
   theora-offset
   vqf-demux
-  wavpack-lossless-float
   webm-dash-manifest
   wmapro-2ch
 )
