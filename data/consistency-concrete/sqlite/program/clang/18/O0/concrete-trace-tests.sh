@@ -26,4 +26,5 @@ ${SCRIPT_DIR}/testfixture \
   ./test/testrunner.tcl \
   --jobs ${JOBS} \
   --before-script "${SCRIPT_DIR}/concrete-trace-before.sh" \
-  --after-script "${SCRIPT_DIR}/concrete-trace-after.sh"
+  --after-script "${SCRIPT_DIR}/concrete-trace-after.sh" \
+  debug-info-consistency
