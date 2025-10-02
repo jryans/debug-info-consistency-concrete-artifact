@@ -40,7 +40,6 @@
 <complexType>
   <sequence>
     <element name="regions" type="big:regionsType"/>
-    <element name="categories" type="big:categoriesType"/>
   </sequence>
 </complexType>
   <key name="itemKey">
@@ -138,7 +137,6 @@
     <element ref="big:payment"/>
     <element ref="big:description"/>
     <element ref="big:shipping"/>
-    <element ref="big:incategory" maxOccurs="unbounded"/>
     <element ref="big:mailbox"/>
   </sequence>
   <attribute name="id" type="big:itemID" use="required"/>
