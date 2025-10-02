@@ -22,13 +22,7 @@ export LC_ALL=C
 mkdir -p divergences/default
 mkdir -p divergences/default/events
 rm -f divergences/default/events/*
-systemd-run \
-  --scope \
-  -p MemoryMax=16G \
-  --user \
-  env \
-  RAYON_NUM_THREADS=1 \
-  ${CON_COMPARE} \
+${CON_COMPARE} \
   --events-by-type-dir divergences/default/events \
   ../O0/concrete-trace \
   concrete-trace \
