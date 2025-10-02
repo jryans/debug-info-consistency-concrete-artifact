@@ -1,0 +1,100 @@
+diff -urN -x '*.deps' -x '*.spec' -x '*.opt.yaml' ../../src/FastBoard.cpp ./FastBoard.cpp
+--- ../../src/FastBoard.cpp	2016-04-06 22:22:34.000000000 +0100
++++ ./FastBoard.cpp	2025-10-02 15:41:12.951657756 +0100
+@@ -1382,7 +1382,7 @@
+     lib[2] = fast_in_atari(sq + 1);    
+     lib[3] = fast_in_atari(sq + size + 2);
+     
+-    res |= (lib[0] << 19 | lib[1] << 18 | lib[2] << 17 | lib[3] << 16);
++    res |= (lib[0] << 19 | lib[1] << 18 | lib[2] << 17 | lib[3] << 16) % 256;
+     
+     return res;
+ }
+diff -urN -x '*.deps' -x '*.spec' -x '*.opt.yaml' ../../src/Leela.cpp ./Leela.cpp
+--- ../../src/Leela.cpp	2016-05-10 19:04:32.000000000 +0100
++++ ./Leela.cpp	2025-10-02 15:10:06.232063497 +0100
+@@ -53,22 +53,22 @@
+     int counter = 0;
+      
+     try {
+-        for (;;) {
++        // for (;;) {
+             std::auto_ptr<SGFTree> sgftree(new SGFTree);
+ 
+             sgftree->load_from_file(filename, counter++);                
+             *maingame = sgftree->get_mainline();
+ 
+ 	    int move;
+-            do {
++            // do {
+                 std::auto_ptr<UCTSearch> search(new UCTSearch(*maingame));
+ 
+                 move = search->think(maingame->get_to_move(), UCTSearch::NORMAL);
+ 
+                 maingame->play_move(move);  
+                 maingame->display_state();                              
+-            } while (maingame->get_passes() < 2 && move != FastBoard::RESIGN);
+-        }
++            // } while (maingame->get_passes() < 2 && move != FastBoard::RESIGN);
++        // }
+     } catch (std::exception & e) {
+     };
+ 
+diff -urN -x '*.deps' -x '*.spec' -x '*.opt.yaml' ../../src/Matcher.cpp ./Matcher.cpp
+--- ../../src/Matcher.cpp	2016-04-06 22:22:34.000000000 +0100
++++ ./Matcher.cpp	2025-10-02 15:45:25.941800095 +0100
+@@ -28,7 +28,7 @@
+ 
+ // initialize matcher data
+ Matcher::Matcher() { 
+-    const int max = 1 << ((8 * 2) + 4);
++    const int max = 256;
+ 
+     m_patterns[FastBoard::BLACK].resize(max);    
+     m_patterns[FastBoard::WHITE].resize(max);    
+diff -urN -x '*.deps' -x '*.spec' -x '*.opt.yaml' ../../src/Playout.cpp ./Playout.cpp
+--- ../../src/Playout.cpp	2011-10-17 17:38:35.000000000 +0100
++++ ./Playout.cpp	2025-10-02 15:22:24.904039622 +0100
+@@ -44,7 +44,7 @@
+     int counter = 0; 
+     
+     // do the main loop        
+-    do {                                    
++    // do {
+         int vtx = state.play_random_move();
+ 
+         if (counter < 30 && vtx != FastBoard::PASS) {
+@@ -56,9 +56,9 @@
+         }           
+         
+         counter++;                 
+-    } while (state.get_passes() < 2 
+-             && state.get_movenum() < playoutlen
+-             && (!resigning || abs(state.estimate_mc_score()) < resign));     
++    // } while (state.get_passes() < 2
++    //          && state.get_movenum() < playoutlen
++    //          && (!resigning || abs(state.estimate_mc_score()) < resign));
+              
+     float score = state.calculate_mc_score();                                  
+              
+diff -urN -x '*.deps' -x '*.spec' -x '*.opt.yaml' ../../src/UCTSearch.cpp ./UCTSearch.cpp
+--- ../../src/UCTSearch.cpp	2015-09-25 04:39:53.000000000 +0100
++++ ./UCTSearch.cpp	2025-10-02 14:47:25.623780654 +0100
+@@ -377,7 +377,7 @@
+     
+     bool keeprunning = true;   
+     int iterations = 0; 
+-    do {
++    // do {
+         KoState currstate = m_rootstate;
+                 
+         play_simulation(currstate, &m_root);                   
+@@ -405,7 +405,7 @@
+         if (iterations++ > max_iterations) {
+             keeprunning = false;
+         }     
+-    } while(keeprunning);
++    // } while(keeprunning);
+     
+     // stop the search
+     m_run = false;
