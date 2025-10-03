@@ -15,7 +15,7 @@ TARGET_NAME="git"
 echo "## Collecting concrete trace of \`${TARGET_NAME}\`"
 
 # Tests from the target's test suite to analyse
-tests=(
+# tests=(
 # #   t0001-init
 #   t1007-hash-object
 # #   t1410-reflog
