@@ -24,9 +24,22 @@
         {
           default = pkgs.mkShell {
             packages = with pkgs; [
+              # Data analysis notebook
+              python3.pkgs.python
+              python3.pkgs.venvShellHook
+
+              python3.pkgs.ipykernel
+              python3.pkgs.notebook
+
+              python3.pkgs.pandas
+              python3.pkgs.matplotlib
+              python3.pkgs.numpy
+              python3.pkgs.seaborn
+
               # TODO: Use a smaller scheme with list of additional packages
               texlive.combined.scheme-full
             ];
+            venvDir = "./venv";
           };
         }
       );
