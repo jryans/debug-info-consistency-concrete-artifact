@@ -19,7 +19,7 @@ def load_data(target_name, data_path_prefix):
 
   def read_run(dir, variant):
     df = None
-    for count_file in glob.iglob(f"{data_path_prefix}/program-no-inline/{dir}/divergences/summary/default/counts/*"):
+    for count_file in glob.iglob(f"{data_path_prefix}/program/{dir}/divergences/default/counts/*"):
       df_segment = read_file(count_file)
       df_divergence_type = os.path.basename(count_file)
       df_segment["Divergence Type"] = df_divergence_type
@@ -28,9 +28,9 @@ def load_data(target_name, data_path_prefix):
     df.variant = variant
     dfs.append(df)
 
-  read_run("clang/13/O1", ("Clang", "13", "O1"))
+  # read_run("clang/13/O1", ("Clang", "13", "O1"))
   # read_run("clang/13/O2", ("Clang", "13", "O2"))
-  # read_run("clang/18/O1", ("Clang", "18", "O1"))
+  read_run("clang/18/O1", ("Clang", "18", "O1"))
   # read_run("gcc/11/O1", ("GCC", "11", "O1"))
   # # Lots of "no info for this address", skipping for now
   # # read_run("gcc/11/O2", ("GCC", "11", "O2"))
@@ -84,7 +84,7 @@ def divergences_by_package(df):
   # for tick in ax.xaxis.get_major_ticks()[1::2]:
   #   tick.set_pad(12)
   g.set(
-    title="Divergent call tree trace events with Clang 13, O1\nfrom various package executions",
+    title="Divergent call tree trace events with Clang 18, O1\nfrom various package executions",
     xlabel="Package",
     ylabel="Fraction of unique trace events",
   )
