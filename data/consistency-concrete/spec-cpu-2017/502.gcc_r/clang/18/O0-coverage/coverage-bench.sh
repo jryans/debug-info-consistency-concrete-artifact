@@ -16,15 +16,15 @@ TARGET_NAME="gcc"
 echo "## Collecting coverage using benchmark inputs for SPEC CPU test"
 
 PROFILE_BASE_DIR="${SCRIPT_DIR}/coverage/bench"
-# rm -rf ${PROFILE_BASE_DIR}
+rm -rf ${PROFILE_BASE_DIR}
 PROFILE_DIR="${PROFILE_BASE_DIR}/profiles"
 mkdir -p ${PROFILE_DIR}
 LLVM_PROFILE_FILE="${PROFILE_DIR}/%p.profdata"
 export LLVM_PROFILE_FILE
 
-# ${SCRIPT_DIR}/${TARGET_NAME} \
-#   -O3 -finline-limit=0 -fif-conversion -fif-conversion2 \
-#   ../../data/refrate/input/gcc-pp.c
+${SCRIPT_DIR}/${TARGET_NAME} \
+  -O3 -finline-limit=0 -fif-conversion -fif-conversion2 \
+  ../../data/refrate/input/gcc-pp.c
 
 ${SCRIPT_DIR}/${TARGET_NAME} \
   -O2 -finline-limit=36000 -fpic \
