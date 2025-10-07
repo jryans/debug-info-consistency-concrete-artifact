@@ -1,5 +1,47 @@
 ## Divergences by source coordinates
 
+Tail call without info
+  Before events:
+    CT: is_attribute_with_length_p at tree.c:5034:0
+  After events:
+    CT: is_attribute_with_length_p at tree.c:5034:0 (TCWI)
+  Occurrences: 1810
+
+Tail call without info
+  Before events:
+    CT: mark_jump_label_1 at jump.c:1041:0
+  After events:
+    CT: mark_jump_label_1 at jump.c:1041:0 (TCWI)
+  Occurrences: 26
+
+Tail call without info
+  Before events:
+    CT: output_289 at insn-output.c:1885:0
+  After events:
+    CT: output_289 at insn-output.c:1885:0 (TCWI)
+  Occurrences: 1
+
+Tail call without info
+  Before events:
+    CT: output_44 at insn-output.c:166:0
+  After events:
+    CT: output_44 at insn-output.c:166:0 (TCWI)
+  Occurrences: 2
+
+Tail call without info
+  Before events:
+    CT: output_693 at insn-output.c:2929:0
+  After events:
+    CT: output_693 at insn-output.c:2929:0 (TCWI)
+  Occurrences: 1
+
+Tail call without info
+  Before events:
+    CT: output_698 at insn-output.c:2991:0
+  After events:
+    CT: output_698 at insn-output.c:2994:7 (TCWI)
+  Occurrences: 1
+
 Coordinates removed
   Before events:
     CF: _cpp_lex_direct at cpp_lex.c:1447:2
@@ -1209,7 +1251,7 @@ Coordinates removed
     CF: make_edges at cfgbuild.c:374:6
   After events:
     CF: make_edges at cfgbuild.c:0:0
-  Occurrences: 2
+  Occurrences: 1
 
 Coordinates removed
   Before events:
@@ -1420,13 +1462,6 @@ Coordinates removed
   After events:
     ICF: purge_dead_edges at cfgrtl.c:0:0
   Occurrences: 1
-
-Coordinates removed
-  Before events:
-    CF: record_dead_and_set_regs at combine.c:11897:7
-  After events:
-    CF: record_dead_and_set_regs at combine.c:0:0
-  Occurrences: 2
 
 Coordinates removed
   Before events:
@@ -3148,7 +3183,7 @@ Coordinates removed
     RF: VEC_varinfo_t_base_length at tree-ssa-structalias.c:273:1
   After events:
     IRF: VEC_varinfo_t_base_length at tree-ssa-structalias.c:0:0
-  Occurrences: 159
+  Occurrences: 161
 
 Coordinates removed
   Before events:
@@ -3294,8 +3329,8 @@ Coordinates removed
   Before events:
     RF: _cpp_do_file_change at cpp_directives.c:1044:1
   After events:
-    RF: _cpp_do_file_change at cpp_directives.c:0:0
-  Occurrences: 3
+    IRF: _cpp_do_file_change at cpp_directives.c:0:0
+  Occurrences: 1
 
 Coordinates removed
   Before events:
@@ -3303,20 +3338,6 @@ Coordinates removed
   After events:
     IRF: _cpp_get_fresh_line at cpp_lex.c:0:0
   Occurrences: 388
-
-Coordinates removed
-  Before events:
-    RF: _cpp_init_files at cpp_files.c:1199:1
-  After events:
-    RF: _cpp_init_files at cpp_files.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
-    RF: _cpp_pop_buffer at cpp_directives.c:2495:1
-  After events:
-    RF: _cpp_pop_buffer at cpp_directives.c:0:0
-  Occurrences: 1
 
 Coordinates removed
   Before events:
@@ -3453,41 +3474,6 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: alloc_EXPR_LIST at lists.c:146:3
-  After events:
-    RF: alloc_EXPR_LIST at lists.c:0:0
-  Occurrences: 12
-
-Coordinates removed
-  Before events:
-    RF: alloc_INSN_LIST at lists.c:124:3
-  After events:
-    RF: alloc_INSN_LIST at lists.c:0:0
-  Occurrences: 63
-
-Coordinates removed
-  Before events:
-    RF: alloc_aux_for_block at cfg.c:744:1
-  After events:
-    RF: alloc_aux_for_block at cfg.c:0:0
-  Occurrences: 3
-
-Coordinates removed
-  Before events:
-    RF: alloc_aux_for_edge at cfg.c:807:1
-  After events:
-    RF: alloc_aux_for_edge at cfg.c:0:0
-  Occurrences: 2
-
-Coordinates removed
-  Before events:
-    RF: alloc_block at cfg.c:143:3
-  After events:
-    RF: alloc_block at cfg.c:0:0
-  Occurrences: 5
-
-Coordinates removed
-  Before events:
     RF: alloc_def at tree-ssa-operands.c:352:3
   After events:
     IRF: alloc_def at tree-ssa-operands.c:0:0
@@ -3527,13 +3513,6 @@ Coordinates removed
   After events:
     IRF: allocate_struct_function at function.c:0:0
   Occurrences: 2
-
-Coordinates removed
-  Before events:
-    RF: analyze_function at ipa-inline.c:1956:1
-  After events:
-    RF: analyze_function at ipa-inline.c:0:0
-  Occurrences: 1
 
 Coordinates removed
   Before events:
@@ -3614,13 +3593,6 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: array_to_pointer_conversion at c-typeck.c:1751:1
-  After events:
-    RF: array_to_pointer_conversion at c-typeck.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
     RF: assemble_constant_contents at varasm.c:3385:1
   After events:
     IRF: assemble_constant_contents at varasm.c:0:0
@@ -3632,13 +3604,6 @@ Coordinates removed
   After events:
     IRF: assemble_external_real at varasm.c:0:0
   Occurrences: 1
-
-Coordinates removed
-  Before events:
-    RF: assemble_name at varasm.c:2521:1
-  After events:
-    RF: assemble_name at varasm.c:0:0
-  Occurrences: 8
 
 Coordinates removed
   Before events:
@@ -3680,13 +3645,6 @@ Coordinates removed
     RF: backend_init at toplev.c:2225:1
   After events:
     IRF: backend_init at toplev.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
-    RF: backend_init_target at toplev.c:2208:1
-  After events:
-    RF: backend_init_target at toplev.c:0:0
   Occurrences: 1
 
 Coordinates removed
@@ -3782,27 +3740,6 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: bitmap_ior_and_compl at bitmap.c:1927:1
-  After events:
-    RF: bitmap_ior_and_compl at bitmap.c:0:0
-  Occurrences: 27
-
-Coordinates removed
-  Before events:
-    RF: bitmap_obstack_initialize at bitmap.c:324:1
-  After events:
-    RF: bitmap_obstack_initialize at bitmap.c:0:0
-  Occurrences: 43
-
-Coordinates removed
-  Before events:
-    RF: bitmap_obstack_release at bitmap.c:345:1
-  After events:
-    RF: bitmap_obstack_release at bitmap.c:0:0
-  Occurrences: 41
-
-Coordinates removed
-  Before events:
     RF: bitmap_set_copy at tree-ssa-pre.c:703:1
   After events:
     IRF: bitmap_set_copy at tree-ssa-pre.c:0:0
@@ -3873,13 +3810,6 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: build_complex_type at tree.c:7514:3
-  After events:
-    RF: build_complex_type at tree.c:0:0
-  Occurrences: 5
-
-Coordinates removed
-  Before events:
     RF: build_conflict_bit_table at ira-conflicts.c:161:1
   After events:
     IRF: build_conflict_bit_table at ira-conflicts.c:0:3
@@ -3894,24 +3824,10 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: build_fold_addr_expr_loc at fold-const.c:8338:3
-  After events:
-    RF: build_fold_addr_expr_loc at fold-const.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
     RF: build_gimple_cfg at tree-cfg.c:231:1
   After events:
     IRF: build_gimple_cfg at tree-cfg.c:0:0
   Occurrences: 1
-
-Coordinates removed
-  Before events:
-    RF: build_index_type at tree.c:6889:1
-  After events:
-    RF: build_index_type at tree.c:0:0
-  Occurrences: 2
 
 Coordinates removed
   Before events:
@@ -3924,22 +3840,15 @@ Coordinates removed
   Before events:
     RF: build_int_cst at tree.c:1040:3
   After events:
-    RF: build_int_cst at tree.c:0:0
-  Occurrences: 733
-
-Coordinates removed
-  Before events:
-    RF: build_nonstandard_integer_type at tree.c:6911:1
-  After events:
-    RF: build_nonstandard_integer_type at tree.c:0:0
-  Occurrences: 2
+    IRF: build_int_cst at tree.c:0:0
+  Occurrences: 7
 
 Coordinates removed
   Before events:
     RF: build_pointer_type at tree.c:6762:3
   After events:
     IRF: build_pointer_type at tree.c:0:0
-  Occurrences: 53
+  Occurrences: 10
 
 Coordinates removed
   Before events:
@@ -3947,13 +3856,6 @@ Coordinates removed
   After events:
     IRF: build_pred_graph at tree-ssa-structalias.c:0:0
   Occurrences: 3
-
-Coordinates removed
-  Before events:
-    RF: build_reference_type at tree.c:6829:3
-  After events:
-    RF: build_reference_type at tree.c:0:0
-  Occurrences: 1
 
 Coordinates removed
   Before events:
@@ -3975,27 +3877,6 @@ Coordinates removed
   After events:
     IRF: build_succ_graph at tree-ssa-structalias.c:0:0
   Occurrences: 3
-
-Coordinates removed
-  Before events:
-    RF: build_type_attribute_variant at tree.c:4167:3
-  After events:
-    RF: build_type_attribute_variant at tree.c:0:0
-  Occurrences: 240
-
-Coordinates removed
-  Before events:
-    RF: build_type_no_quals at tree.c:6854:1
-  After events:
-    RF: build_type_no_quals at tree.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
-    RF: build_void_list_node at c-decl.c:8316:3
-  After events:
-    RF: build_void_list_node at c-decl.c:0:0
-  Occurrences: 1
 
 Coordinates removed
   Before events:
@@ -4041,20 +3922,6 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: c_common_no_more_pch at c-pch.c:452:1
-  After events:
-    RF: c_common_no_more_pch at c-pch.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
-    RF: c_common_nodes_and_builtins at c-common.c:5101:1
-  After events:
-    RF: c_common_nodes_and_builtins at c-common.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
     RF: c_common_signed_type at c-common.c:3117:3
   After events:
     IRF: c_common_signed_type at c-common.c:0:0
@@ -4065,20 +3932,6 @@ Coordinates removed
     RF: c_common_unsigned_type at c-common.c:3109:3
   After events:
     IRF: c_common_unsigned_type at c-common.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
-    RF: c_finish_expr_stmt at c-typeck.c:8816:1
-  After events:
-    RF: c_finish_expr_stmt at c-typeck.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
-    RF: c_finish_return at c-typeck.c:8419:1
-  After events:
-    RF: c_finish_return at c-typeck.c:0:0
   Occurrences: 1
 
 Coordinates removed
@@ -4097,51 +3950,9 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: c_init_decl_processing at c-decl.c:3467:1
-  After events:
-    RF: c_init_decl_processing at c-decl.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
-    RF: c_initialize_diagnostics at c-objc-common.c:186:1
-  After events:
-    RF: c_initialize_diagnostics at c-objc-common.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
-    RF: c_parser_compound_statement at c-parser.c:3415:1
-  After events:
-    RF: c_parser_compound_statement at c-parser.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
-    RF: c_parser_compound_statement_nostart at c-parser.c:3585:1
-  After events:
-    RF: c_parser_compound_statement_nostart at c-parser.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
-    RF: c_parser_declarator at c-parser.c:2283:1
-  After events:
-    RF: c_parser_declarator at c-parser.c:0:0
-  Occurrences: 2
-
-Coordinates removed
-  Before events:
     RF: c_parser_direct_declarator at c-parser.c:2403:1
   After events:
     IRF: c_parser_direct_declarator at c-parser.c:0:0
-  Occurrences: 2
-
-Coordinates removed
-  Before events:
-    RF: c_parser_external_declaration at c-parser.c:1107:1
-  After events:
-    RF: c_parser_external_declaration at c-parser.c:0:0
   Occurrences: 2
 
 Coordinates removed
@@ -4195,13 +4006,6 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: c_register_pragma_1 at c-pragma.c:1236:1
-  After events:
-    RF: c_register_pragma_1 at c-pragma.c:0:0
-  Occurrences: 13
-
-Coordinates removed
-  Before events:
     RF: c_register_pragma_with_expansion at c-pragma.c:1249:1
   After events:
     IRF: c_register_pragma_with_expansion at c-pragma.c:0:0
@@ -4209,52 +4013,10 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: c_stddef_cpp_builtins at c-common.c:5785:1
-  After events:
-    RF: c_stddef_cpp_builtins at c-common.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
-    RF: c_vla_unspec_p at c-objc-common.c:199:3
-  After events:
-    RF: c_vla_unspec_p at c-objc-common.c:0:0
-  Occurrences: 4
-
-Coordinates removed
-  Before events:
     RF: c_write_global_declarations_2 at c-decl.c:9479:1
   After events:
     IRF: c_write_global_declarations_2 at c-decl.c:0:0
   Occurrences: 2
-
-Coordinates removed
-  Before events:
-    RF: cached_make_edge at cfg.c:323:1
-  After events:
-    RF: cached_make_edge at cfg.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
-    RF: cached_nonzero_bits at rtlanal.c:3686:1
-  After events:
-    RF: cached_nonzero_bits at rtlanal.c:0:0
-  Occurrences: 2
-
-Coordinates removed
-  Before events:
-    RF: cached_num_sign_bit_copies at rtlanal.c:4211:1
-  After events:
-    RF: cached_num_sign_bit_copies at rtlanal.c:0:0
-  Occurrences: 2
-
-Coordinates removed
-  Before events:
-    RF: calc_dfs_tree_nonrec at dominance.c:326:1
-  After events:
-    RF: calc_dfs_tree_nonrec at dominance.c:0:0
-  Occurrences: 24
 
 Coordinates removed
   Before events:
@@ -4268,7 +4030,7 @@ Coordinates removed
     RF: calculate_allocation at vec.c:217:1
   After events:
     IRF: calculate_allocation at vec.c:0:17
-  Occurrences: 215
+  Occurrences: 198
 
 Coordinates removed
   Before events:
@@ -4293,13 +4055,6 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: can_merge_blocks_p at cfghooks.c:654:3
-  After events:
-    RF: can_merge_blocks_p at cfghooks.c:0:0
-  Occurrences: 20
-
-Coordinates removed
-  Before events:
     RF: canon_hash at cse.c:2581:3
   After events:
     IRF: canon_hash at cse.c:0:0
@@ -4307,17 +4062,10 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: canon_rtx at alias.c:1325:1
-  After events:
-    RF: canon_rtx at alias.c:0:0
-  Occurrences: 27
-
-Coordinates removed
-  Before events:
     RF: cb_file_change at c-opts.c:1599:1
   After events:
     IRF: cb_file_change at c-opts.c:0:0
-  Occurrences: 3
+  Occurrences: 2
 
 Coordinates removed
   Before events:
@@ -4325,13 +4073,6 @@ Coordinates removed
   After events:
     IRF: ccp_initialize at tree-ssa-ccp.c:0:0
   Occurrences: 3
-
-Coordinates removed
-  Before events:
-    RF: ccp_visit_stmt at tree-ssa-ccp.c:1732:1
-  After events:
-    RF: ccp_visit_stmt at tree-ssa-ccp.c:0:0
-  Occurrences: 1
 
 Coordinates removed
   Before events:
@@ -4346,27 +4087,6 @@ Coordinates removed
   After events:
     IRF: cfg_blocks_get at tree-ssa-propagate.c:0:0
   Occurrences: 9
-
-Coordinates removed
-  Before events:
-    RF: cfg_layout_finalize at cfglayout.c:1334:1
-  After events:
-    RF: cfg_layout_finalize at cfglayout.c:0:0
-  Occurrences: 2
-
-Coordinates removed
-  Before events:
-    RF: cfg_layout_initialize at cfglayout.c:1278:1
-  After events:
-    RF: cfg_layout_initialize at cfglayout.c:0:0
-  Occurrences: 2
-
-Coordinates removed
-  Before events:
-    RF: cgraph_analyze_functions at cgraphunit.c:1070:1
-  After events:
-    RF: cgraph_analyze_functions at cgraphunit.c:0:0
-  Occurrences: 2
 
 Coordinates removed
   Before events:
@@ -4405,24 +4125,10 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: cgraph_expand_all_functions at cgraphunit.c:1648:1
-  After events:
-    RF: cgraph_expand_all_functions at cgraphunit.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
     RF: cgraph_externally_visible_p at ipa.c:348:1
   After events:
     IRF: cgraph_externally_visible_p at ipa.c:0:0
   Occurrences: 4
-
-Coordinates removed
-  Before events:
-    RF: cgraph_finalize_function at cgraphunit.c:556:1
-  After events:
-    RF: cgraph_finalize_function at cgraphunit.c:0:0
-  Occurrences: 1
 
 Coordinates removed
   Before events:
@@ -4440,52 +4146,10 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: cgraph_materialize_all_clones at cgraphunit.c:2397:1
-  After events:
-    RF: cgraph_materialize_all_clones at cgraphunit.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
     RF: cgraph_only_called_directly_p at cgraph.h:717:3
   After events:
     IRF: cgraph_only_called_directly_p at cgraph.h:0:0
   Occurrences: 13
-
-Coordinates removed
-  Before events:
-    RF: cgraph_remove_edge_duplication_hook at cgraph.c:344:1
-  After events:
-    RF: cgraph_remove_edge_duplication_hook at cgraph.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
-    RF: cgraph_remove_edge_removal_hook at cgraph.c:221:1
-  After events:
-    RF: cgraph_remove_edge_removal_hook at cgraph.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
-    RF: cgraph_remove_function_insertion_hook at cgraph.c:303:1
-  After events:
-    RF: cgraph_remove_function_insertion_hook at cgraph.c:0:0
-  Occurrences: 3
-
-Coordinates removed
-  Before events:
-    RF: cgraph_remove_node_duplication_hook at cgraph.c:386:1
-  After events:
-    RF: cgraph_remove_node_duplication_hook at cgraph.c:0:0
-  Occurrences: 2
-
-Coordinates removed
-  Before events:
-    RF: cgraph_remove_node_removal_hook at cgraph.c:262:1
-  After events:
-    RF: cgraph_remove_node_removal_hook at cgraph.c:0:0
-  Occurrences: 2
 
 Coordinates removed
   Before events:
@@ -4535,13 +4199,6 @@ Coordinates removed
   After events:
     IRF: check_format_string at c-format.c:0:0
   Occurrences: 58
-
-Coordinates removed
-  Before events:
-    RF: check_mem_read_use at dse.c:2308:1
-  After events:
-    RF: check_mem_read_use at dse.c:0:0
-  Occurrences: 20
 
 Coordinates removed
   Before events:
@@ -4699,24 +4356,10 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: clear_secondary_mem at reload.c:651:1
-  After events:
-    RF: clear_secondary_mem at reload.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
     RF: clear_significand_below at real.c:433:1
   After events:
     IRF: clear_significand_below at real.c:0:0
   Occurrences: 18
-
-Coordinates removed
-  Before events:
-    RF: clobber_return_register at function.c:4605:1
-  After events:
-    RF: clobber_return_register at function.c:0:0
-  Occurrences: 1
 
 Coordinates removed
   Before events:
@@ -4731,13 +4374,6 @@ Coordinates removed
   After events:
     IRF: cmp_significands at real.c:0:0
   Occurrences: 8875
-
-Coordinates removed
-  Before events:
-    RF: coalesce_allocnos at ira-color.c:1707:1
-  After events:
-    RF: coalesce_allocnos at ira-color.c:0:0
-  Occurrences: 1
 
 Coordinates removed
   Before events:
@@ -4800,13 +4436,6 @@ Coordinates removed
     RF: combine_stack_adjustments_for_block at combine-stack-adj.c:543:1
   After events:
     IRF: combine_stack_adjustments_for_block at combine-stack-adj.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
-    RF: commit_edge_insertions at cfgrtl.c:1599:1
-  After events:
-    RF: commit_edge_insertions at cfgrtl.c:0:0
   Occurrences: 1
 
 Coordinates removed
@@ -4944,13 +4573,6 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: connect_infinite_loops_to_exit at cfganal.c:647:3
-  After events:
-    RF: connect_infinite_loops_to_exit at cfganal.c:0:0
-  Occurrences: 4
-
-Coordinates removed
-  Before events:
     RF: connect_src at cfg.c:218:1
   After events:
     IRF: connect_src at cfg.c:0:0
@@ -4962,13 +4584,6 @@ Coordinates removed
   After events:
     IRF: const0_operand at insn-preds.c:0:0
   Occurrences: 10
-
-Coordinates removed
-  Before events:
-    RF: const_binop at fold-const.c:2146:1
-  After events:
-    RF: const_binop at fold-const.c:0:0
-  Occurrences: 6
 
 Coordinates removed
   Before events:
@@ -4997,13 +4612,6 @@ Coordinates removed
   After events:
     IRF: constant_address_p at i386.c:0:0
   Occurrences: 1
-
-Coordinates removed
-  Before events:
-    RF: constrain_operands_cached at recog.c:2032:1
-  After events:
-    RF: constrain_operands_cached at recog.c:0:0
-  Occurrences: 9
 
 Coordinates removed
   Before events:
@@ -5063,20 +4671,6 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: control_flow_insn_p at cfgbuild.c:132:1
-  After events:
-    RF: control_flow_insn_p at cfgbuild.c:0:0
-  Occurrences: 3
-
-Coordinates removed
-  Before events:
-    RF: convert at c-convert.c:158:1
-  After events:
-    RF: convert at c-convert.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
     RF: convert_arguments at c-typeck.c:3055:1
   After events:
     IRF: convert_arguments at c-typeck.c:0:13
@@ -5098,23 +4692,9 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: convert_to_pointer at convert.c:92:1
-  After events:
-    RF: convert_to_pointer at convert.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
     RF: converter_for_type at cpp_charset.c:1367:1
   After events:
     IRF: converter_for_type at cpp_charset.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
-    RF: copy_constant at varasm.c:3189:1
-  After events:
-    RF: copy_constant at varasm.c:0:0
   Occurrences: 1
 
 Coordinates removed
@@ -5154,20 +4734,6 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: cpp_assert at cpp_directives.c:2377:1
-  After events:
-    RF: cpp_assert at cpp_directives.c:0:0
-  Occurrences: 5
-
-Coordinates removed
-  Before events:
-    RF: cpp_change_file at cpp_files.c:1257:1
-  After events:
-    RF: cpp_change_file at cpp_files.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
     RF: cpp_init_special_builtins at cpp_init.c:440:1
   After events:
     IRF: cpp_init_special_builtins at cpp_init.c:0:0
@@ -5177,8 +4743,8 @@ Coordinates removed
   Before events:
     RF: cpp_lookup at cpp_identifiers.c:96:3
   After events:
-    RF: cpp_lookup at cpp_identifiers.c:0:0
-  Occurrences: 69
+    IRF: cpp_lookup at cpp_identifiers.c:0:0
+  Occurrences: 4
 
 Coordinates removed
   Before events:
@@ -5268,15 +4834,8 @@ Coordinates removed
   Before events:
     RF: cselib_clear_table at cselib.c:298:1
   After events:
-    RF: cselib_clear_table at cselib.c:0:0
-  Occurrences: 6
-
-Coordinates removed
-  Before events:
-    RF: cselib_invalidate_rtx_note_stores at cselib.c:1961:1
-  After events:
-    RF: cselib_invalidate_rtx_note_stores at cselib.c:0:0
-  Occurrences: 22
+    IRF: cselib_clear_table at cselib.c:0:0
+  Occurrences: 4
 
 Coordinates removed
   Before events:
@@ -5290,7 +4849,7 @@ Coordinates removed
     RF: cselib_record_set at cselib.c:2008:1
   After events:
     IRF: cselib_record_set at cselib.c:0:0
-  Occurrences: 15
+  Occurrences: 11
 
 Coordinates removed
   Before events:
@@ -5315,20 +4874,6 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: def_blocks_free at tree-into-ssa.c:1706:1
-  After events:
-    RF: def_blocks_free at tree-into-ssa.c:0:0
-  Occurrences: 2
-
-Coordinates removed
-  Before events:
-    RF: def_blocks_hash at tree-into-ssa.c:1684:3
-  After events:
-    RF: def_blocks_hash at tree-into-ssa.c:0:0
-  Occurrences: 7
-
-Coordinates removed
-  Before events:
     RF: def_builtin at i386.c:21411:3
   After events:
     IRF: def_builtin at i386.c:0:0
@@ -5350,13 +4895,6 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: default_addr_space_legitimate_address_p at targhooks.c:908:3
-  After events:
-    RF: default_addr_space_legitimate_address_p at targhooks.c:0:0
-  Occurrences: 2688
-
-Coordinates removed
-  Before events:
     RF: default_binds_local_p_1 at varasm.c:6710:3
   After events:
     IRF: default_binds_local_p_1 at varasm.c:0:0
@@ -5364,51 +4902,9 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: default_diagnostic_finalizer at diagnostic.c:298:1
-  After events:
-    RF: default_diagnostic_finalizer at diagnostic.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
-    RF: default_eh_return_filter_mode at targhooks.c:205:3
-  After events:
-    RF: default_eh_return_filter_mode at targhooks.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
     RF: default_elf_asm_output_external at varasm.c:7162:1
   After events:
     IRF: default_elf_asm_output_external at varasm.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
-    RF: default_elf_select_section at varasm.c:6405:1
-  After events:
-    RF: default_elf_select_section at varasm.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
-    RF: default_file_start at varasm.c:6776:1
-  After events:
-    RF: default_file_start at varasm.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
-    RF: default_globalize_decl_name at varasm.c:6732:1
-  After events:
-    RF: default_globalize_decl_name at varasm.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
-    RF: default_globalize_label at varasm.c:6723:1
-  After events:
-    RF: default_globalize_label at varasm.c:0:0
   Occurrences: 1
 
 Coordinates removed
@@ -5431,13 +4927,6 @@ Coordinates removed
   After events:
     IRF: deletable_insn_p_1 at dce.c:0:0
   Occurrences: 25
-
-Coordinates removed
-  Before events:
-    RF: delete_basic_block at cfghooks.c:533:1
-  After events:
-    RF: delete_basic_block at cfghooks.c:0:0
-  Occurrences: 1
 
 Coordinates removed
   Before events:
@@ -5483,20 +4972,6 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: delete_points_to_sets at tree-ssa-structalias.c:5583:1
-  After events:
-    RF: delete_points_to_sets at tree-ssa-structalias.c:0:0
-  Occurrences: 3
-
-Coordinates removed
-  Before events:
-    RF: delete_var_map at tree-ssa-live.c:163:1
-  After events:
-    RF: delete_var_map at tree-ssa-live.c:0:0
-  Occurrences: 5
-
-Coordinates removed
-  Before events:
     RF: delink_imm_use at tree-flow-inline.h:198:1
   After events:
     IRF: delink_imm_use at tree-flow-inline.h:0:0
@@ -5515,13 +4990,6 @@ Coordinates removed
   After events:
     IRF: dep_cost at haifa-sched.c:0:0
   Occurrences: 28
-
-Coordinates removed
-  Before events:
-    RF: dep_list_size at haifa-sched.c:1000:1
-  After events:
-    RF: dep_list_size at haifa-sched.c:0:0
-  Occurrences: 12
 
 Coordinates removed
   Before events:
@@ -5560,24 +5028,10 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: df_bb_refs_collect at df-scan.c:3706:1
-  After events:
-    RF: df_bb_refs_collect at df-scan.c:0:0
-  Occurrences: 2
-
-Coordinates removed
-  Before events:
     RF: df_chain_create_bb at df-problems.c:2157:1
   After events:
     IRF: df_chain_create_bb at df-problems.c:0:0
   Occurrences: 3
-
-Coordinates removed
-  Before events:
-    RF: df_chain_fully_remove_problem at df-problems.c:2033:1
-  After events:
-    RF: df_chain_fully_remove_problem at df-problems.c:0:0
-  Occurrences: 1
 
 Coordinates removed
   Before events:
@@ -5595,27 +5049,6 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: df_defs_record at df-scan.c:3120:1
-  After events:
-    RF: df_defs_record at df-scan.c:0:0
-  Occurrences: 27
-
-Coordinates removed
-  Before events:
-    RF: df_entry_block_defs_collect at df-scan.c:3993:1
-  After events:
-    RF: df_entry_block_defs_collect at df-scan.c:0:0
-  Occurrences: 3
-
-Coordinates removed
-  Before events:
-    RF: df_exit_block_uses_collect at df-scan.c:4164:1
-  After events:
-    RF: df_exit_block_uses_collect at df-scan.c:0:0
-  Occurrences: 2
-
-Coordinates removed
-  Before events:
     RF: df_free_ref at df-scan.c:871:1
   After events:
     IRF: df_free_ref at df-scan.c:0:0
@@ -5625,7 +5058,7 @@ Coordinates removed
   Before events:
     RF: df_get_call_refs at df-scan.c:3545:3
   After events:
-    IRF: df_get_call_refs at df-scan.c:0:0
+    IRF: df_get_call_refs at df-scan.c:0:3
   Occurrences: 7
 
 Coordinates removed
@@ -5633,27 +5066,6 @@ Coordinates removed
     RF: df_get_eh_block_artificial_uses at df-scan.c:3859:1
   After events:
     IRF: df_get_eh_block_artificial_uses at df-scan.c:0:0
-  Occurrences: 2
-
-Coordinates removed
-  Before events:
-    RF: df_get_entry_block_def_set at df-scan.c:3970:1
-  After events:
-    RF: df_get_entry_block_def_set at df-scan.c:0:0
-  Occurrences: 7
-
-Coordinates removed
-  Before events:
-    RF: df_get_exit_block_use_set at df-scan.c:4136:1
-  After events:
-    RF: df_get_exit_block_use_set at df-scan.c:0:0
-  Occurrences: 8
-
-Coordinates removed
-  Before events:
-    RF: df_get_regular_block_artificial_uses at df-scan.c:3831:1
-  After events:
-    RF: df_get_regular_block_artificial_uses at df-scan.c:0:0
   Occurrences: 2
 
 Coordinates removed
@@ -5672,13 +5084,6 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: df_insn_refs_collect at df-scan.c:3613:1
-  After events:
-    RF: df_insn_refs_collect at df-scan.c:0:0
-  Occurrences: 23
-
-Coordinates removed
-  Before events:
     RF: df_install_mws at df-scan.c:2737:1
   After events:
     IRF: df_install_mws at df-scan.c:0:0
@@ -5693,52 +5098,10 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: df_live_confluence_n at df-problems.c:1562:1
-  After events:
-    RF: df_live_confluence_n at df-problems.c:0:0
-  Occurrences: 18
-
-Coordinates removed
-  Before events:
-    RF: df_live_free at df-problems.c:1646:1
-  After events:
-    RF: df_live_free at df-problems.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
     RF: df_live_get_bb_info at df.h:1076:1
   After events:
     IRF: df_live_get_bb_info at df.h:0:0
   Occurrences: 95
-
-Coordinates removed
-  Before events:
-    RF: df_live_local_compute at df-problems.c:1527:1
-  After events:
-    RF: df_live_local_compute at df-problems.c:0:0
-  Occurrences: 6
-
-Coordinates removed
-  Before events:
-    RF: df_live_transfer_function at df-problems.c:1585:3
-  After events:
-    RF: df_live_transfer_function at df-problems.c:0:0
-  Occurrences: 24
-
-Coordinates removed
-  Before events:
-    RF: df_lr_confluence_n at df-problems.c:1018:1
-  After events:
-    RF: df_lr_confluence_n at df-problems.c:0:0
-  Occurrences: 15
-
-Coordinates removed
-  Before events:
-    RF: df_lr_free at df-problems.c:1097:1
-  After events:
-    RF: df_lr_free at df-problems.c:0:0
-  Occurrences: 1
 
 Coordinates removed
   Before events:
@@ -5749,38 +5112,10 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: df_lr_local_compute at df-problems.c:969:1
-  After events:
-    RF: df_lr_local_compute at df-problems.c:0:0
-  Occurrences: 6
-
-Coordinates removed
-  Before events:
-    RF: df_lr_transfer_function at df-problems.c:1032:3
-  After events:
-    RF: df_lr_transfer_function at df-problems.c:0:0
-  Occurrences: 21
-
-Coordinates removed
-  Before events:
-    RF: df_mark_reg at df-scan.c:3886:1
-  After events:
-    RF: df_mark_reg at df-scan.c:0:0
-  Occurrences: 8
-
-Coordinates removed
-  Before events:
     RF: df_mark_solutions_dirty at df-core.c:1322:1
   After events:
     IRF: df_mark_solutions_dirty at df-core.c:0:0
   Occurrences: 22
-
-Coordinates removed
-  Before events:
-    RF: df_md_add_problem at df-problems.c:4429:1
-  After events:
-    RF: df_md_add_problem at df-problems.c:0:0
-  Occurrences: 2
 
 Coordinates removed
   Before events:
@@ -5791,45 +5126,10 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: df_md_confluence_0 at df-problems.c:4317:1
-  After events:
-    RF: df_md_confluence_0 at df-problems.c:0:0
-  Occurrences: 2
-
-Coordinates removed
-  Before events:
-    RF: df_md_confluence_n at df-problems.c:4334:1
-  After events:
-    RF: df_md_confluence_n at df-problems.c:0:0
-  Occurrences: 4
-
-Coordinates removed
-  Before events:
-    RF: df_md_free at df-problems.c:4361:1
-  After events:
-    RF: df_md_free at df-problems.c:0:0
-  Occurrences: 2
-
-Coordinates removed
-  Before events:
     RF: df_md_get_bb_info at df.h:1067:1
   After events:
     IRF: df_md_get_bb_info at df.h:0:0
   Occurrences: 10
-
-Coordinates removed
-  Before events:
-    RF: df_md_local_compute at df-problems.c:4253:1
-  After events:
-    RF: df_md_local_compute at df-problems.c:0:0
-  Occurrences: 2
-
-Coordinates removed
-  Before events:
-    RF: df_md_transfer_function at df-problems.c:4292:3
-  After events:
-    RF: df_md_transfer_function at df-problems.c:0:0
-  Occurrences: 12
 
 Coordinates removed
   Before events:
@@ -5847,13 +5147,6 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: df_note_add_problem at df-problems.c:3714:1
-  After events:
-    RF: df_note_add_problem at df-problems.c:0:0
-  Occurrences: 9
-
-Coordinates removed
-  Before events:
     RF: df_note_bb_compute at df-problems.c:3639:1
   After events:
     IRF: df_note_bb_compute at df-problems.c:0:0
@@ -5861,38 +5154,10 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: df_note_compute at df-problems.c:3665:1
-  After events:
-    RF: df_note_compute at df-problems.c:0:0
-  Occurrences: 10
-
-Coordinates removed
-  Before events:
-    RF: df_note_free at df-problems.c:3674:1
-  After events:
-    RF: df_note_free at df-problems.c:0:0
-  Occurrences: 9
-
-Coordinates removed
-  Before events:
     RF: df_rd_bb_local_compute at df-problems.c:453:1
   After events:
     IRF: df_rd_bb_local_compute at df-problems.c:0:0
   Occurrences: 3
-
-Coordinates removed
-  Before events:
-    RF: df_rd_confluence_n at df-problems.c:547:1
-  After events:
-    RF: df_rd_confluence_n at df-problems.c:0:0
-  Occurrences: 3
-
-Coordinates removed
-  Before events:
-    RF: df_rd_free at df-problems.c:617:1
-  After events:
-    RF: df_rd_free at df-problems.c:0:0
-  Occurrences: 1
 
 Coordinates removed
   Before events:
@@ -5917,17 +5182,10 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: df_rd_transfer_function at df-problems.c:596:1
-  After events:
-    RF: df_rd_transfer_function at df-problems.c:0:0
-  Occurrences: 4
-
-Coordinates removed
-  Before events:
     RF: df_record_entry_block_defs at df-scan.c:4010:1
   After events:
     IRF: df_record_entry_block_defs at df-scan.c:0:0
-  Occurrences: 3
+  Occurrences: 1
 
 Coordinates removed
   Before events:
@@ -5952,52 +5210,10 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: df_ref_change_reg_with_loc at df-scan.c:2115:1
-  After events:
-    RF: df_ref_change_reg_with_loc at df-scan.c:0:0
-  Occurrences: 1882
-
-Coordinates removed
-  Before events:
-    RF: df_ref_record at df-scan.c:2975:1
-  After events:
-    RF: df_ref_record at df-scan.c:0:0
-  Occurrences: 2
-
-Coordinates removed
-  Before events:
-    RF: df_reg_chain_unlink at df-scan.c:954:1
-  After events:
-    RF: df_reg_chain_unlink at df-scan.c:0:0
-  Occurrences: 11
-
-Coordinates removed
-  Before events:
     RF: df_reorganize_refs_by_reg_by_reg at df-scan.c:1607:1
   After events:
     IRF: df_reorganize_refs_by_reg_by_reg at df-scan.c:0:0
   Occurrences: 1
-
-Coordinates removed
-  Before events:
-    RF: df_scan_add_problem at df-scan.c:554:1
-  After events:
-    RF: df_scan_add_problem at df-scan.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
-    RF: df_scan_free at df-scan.c:421:1
-  After events:
-    RF: df_scan_free at df-scan.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
-    RF: df_scan_free_internal at df-scan.c:279:1
-  After events:
-    RF: df_scan_free_internal at df-scan.c:0:0
-  Occurrences: 2
 
 Coordinates removed
   Before events:
@@ -6043,20 +5259,6 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: df_simulate_one_insn_backwards at df-problems.c:3860:1
-  After events:
-    RF: df_simulate_one_insn_backwards at df-problems.c:0:0
-  Occurrences: 11
-
-Coordinates removed
-  Before events:
-    RF: df_simulate_one_insn_forwards at df-problems.c:3969:1
-  After events:
-    RF: df_simulate_one_insn_forwards at df-problems.c:0:0
-  Occurrences: 23
-
-Coordinates removed
-  Before events:
     RF: df_simulate_uses at df-problems.c:3794:1
   After events:
     IRF: df_simulate_uses at df-problems.c:0:0
@@ -6082,13 +5284,6 @@ Coordinates removed
   After events:
     IRF: df_update_entry_exit_and_calls at df-scan.c:0:0
   Occurrences: 4
-
-Coordinates removed
-  Before events:
-    RF: df_worklist_dataflow at df-core.c:1052:1
-  After events:
-    RF: df_worklist_dataflow at df-core.c:0:0
-  Occurrences: 15
 
 Coordinates removed
   Before events:
@@ -6120,24 +5315,10 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: dfa_finish at insn-automata.c:14966:1
-  After events:
-    RF: dfa_finish at insn-automata.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
     RF: dfa_insn_code at insn-automata.c:11379:3
   After events:
     IRF: dfa_insn_code at insn-automata.c:0:0
   Occurrences: 3
-
-Coordinates removed
-  Before events:
-    RF: dfa_start at insn-automata.c:14960:1
-  After events:
-    RF: dfa_start at insn-automata.c:0:0
-  Occurrences: 1
 
 Coordinates removed
   Before events:
@@ -6179,7 +5360,7 @@ Coordinates removed
     RF: diddle_return_value at function.c:4582:1
   After events:
     IRF: diddle_return_value at function.c:0:0
-  Occurrences: 10
+  Occurrences: 2
 
 Coordinates removed
   Before events:
@@ -6276,15 +5457,8 @@ Coordinates removed
   Before events:
     RF: do_per_function at passes.c:1112:1
   After events:
-    RF: do_per_function at passes.c:0:0
-  Occurrences: 704
-
-Coordinates removed
-  Before events:
-    RF: do_pre at tree-ssa-pre.c:4813:3
-  After events:
-    RF: do_pre at tree-ssa-pre.c:0:0
-  Occurrences: 1
+    IRF: do_per_function at passes.c:0:0
+  Occurrences: 354
 
 Coordinates removed
   Before events:
@@ -6386,13 +5560,6 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: early_intra_sra at tree-sra.c:2832:3
-  After events:
-    RF: early_intra_sra at tree-sra.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
     RF: earlyclobber_operand_p at reload.c:2096:1
   After events:
     IRF: earlyclobber_operand_p at reload.c:0:0
@@ -6470,13 +5637,6 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: eliminate_regs_1 at reload1.c:2939:1
-  After events:
-    RF: eliminate_regs_1 at reload1.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
     RF: eliminate_unnecessary_stmts at tree-ssa-dce.c:1224:3
   After events:
     IRF: eliminate_unnecessary_stmts at tree-ssa-dce.c:0:0
@@ -6488,41 +5648,6 @@ Coordinates removed
   After events:
     IRF: eliminate_useless_phis at tree-outof-ssa.c:0:0
   Occurrences: 1
-
-Coordinates removed
-  Before events:
-    RF: emit at emit-rtl.c:5233:1
-  After events:
-    RF: emit at emit-rtl.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
-    RF: emit_call_insn at emit-rtl.c:4975:3
-  After events:
-    RF: emit_call_insn at emit-rtl.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
-    RF: emit_clobber at emit-rtl.c:5053:1
-  After events:
-    RF: emit_clobber at emit-rtl.c:0:0
-  Occurrences: 2
-
-Coordinates removed
-  Before events:
-    RF: emit_insn_after at emit-rtl.c:4554:1
-  After events:
-    RF: emit_insn_after at emit-rtl.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
-    RF: emit_insn_after_noloc at emit-rtl.c:4361:1
-  After events:
-    RF: emit_insn_after_noloc at emit-rtl.c:0:0
-  Occurrences: 4
 
 Coordinates removed
   Before events:
@@ -6547,23 +5672,9 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: emit_move_insn_1 at expr.c:3438:1
-  After events:
-    RF: emit_move_insn_1 at expr.c:0:0
-  Occurrences: 10
-
-Coordinates removed
-  Before events:
     RF: emit_numeric_escape at cpp_charset.c:1164:1
   After events:
     IRF: emit_numeric_escape at cpp_charset.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
-    RF: emit_use at emit-rtl.c:5081:1
-  After events:
-    RF: emit_use at emit-rtl.c:0:0
   Occurrences: 1
 
 Coordinates removed
@@ -6617,27 +5728,6 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: et_free_pools at et-forest.c:520:1
-  After events:
-    RF: et_free_pools at et-forest.c:0:0
-  Occurrences: 24
-
-Coordinates removed
-  Before events:
-    RF: et_free_tree at et-forest.c:500:1
-  After events:
-    RF: et_free_tree at et-forest.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
-    RF: et_free_tree_force at et-forest.c:511:1
-  After events:
-    RF: et_free_tree_force at et-forest.c:0:0
-  Occurrences: 73
-
-Coordinates removed
-  Before events:
     RF: et_recomp_min at et-forest.c:135:1
   After events:
     IRF: et_recomp_min at et-forest.c:0:0
@@ -6652,27 +5742,6 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: execute_fre at tree-ssa-pre.c:4849:3
-  After events:
-    RF: execute_fre at tree-ssa-pre.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
-    RF: execute_on_growing_pred at cfghooks.c:1026:1
-  After events:
-    RF: execute_on_growing_pred at cfghooks.c:0:0
-  Occurrences: 3
-
-Coordinates removed
-  Before events:
-    RF: execute_on_shrinking_pred at cfghooks.c:1036:1
-  After events:
-    RF: execute_on_shrinking_pred at cfghooks.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
     RF: execute_one_ipa_transform_pass at passes.c:1482:1
   After events:
     IRF: execute_one_ipa_transform_pass at passes.c:0:0
@@ -6684,27 +5753,6 @@ Coordinates removed
   After events:
     IRF: execute_sink_code at tree-ssa-sink.c:0:0
   Occurrences: 1
-
-Coordinates removed
-  Before events:
-    RF: execute_tail_calls at tree-tailcall.c:1043:3
-  After events:
-    RF: execute_tail_calls at tree-tailcall.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
-    RF: execute_tail_recursion at tree-tailcall.c:1031:3
-  After events:
-    RF: execute_tail_recursion at tree-tailcall.c:0:0
-  Occurrences: 2
-
-Coordinates removed
-  Before events:
-    RF: execute_todo at passes.c:1315:1
-  After events:
-    RF: execute_todo at passes.c:0:0
-  Occurrences: 28
 
 Coordinates removed
   Before events:
@@ -6729,20 +5777,6 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: expand_expr_real at expr.c:7225:1
-  After events:
-    RF: expand_expr_real at expr.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
-    RF: expand_expr_real_1 at expr.c:9678:1
-  After events:
-    RF: expand_expr_real_1 at expr.c:0:0
-  Occurrences: 3
-
-Coordinates removed
-  Before events:
     RF: expand_gimple_basic_block at cfgexpand.c:3439:1
   After events:
     IRF: expand_gimple_basic_block at cfgexpand.c:0:0
@@ -6760,13 +5794,6 @@ Coordinates removed
     RF: expand_null_return_1 at stmt.c:1618:1
   After events:
     IRF: expand_null_return_1 at stmt.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
-    RF: expand_return at stmt.c:1796:1
-  After events:
-    RF: expand_return at stmt.c:0:0
   Occurrences: 1
 
 Coordinates removed
@@ -6834,37 +5861,9 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: fibheap_delete at fibheap.c:280:1
-  After events:
-    RF: fibheap_delete at fibheap.c:0:0
-  Occurrences: 2
-
-Coordinates removed
-  Before events:
-    RF: fibheap_new at fibheap.c:59:3
-  After events:
-    RF: fibheap_new at fibheap.c:0:0
-  Occurrences: 2
-
-Coordinates removed
-  Before events:
-    RF: file_end_indicate_exec_stack at varasm.c:6793:1
-  After events:
-    RF: file_end_indicate_exec_stack at varasm.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
     RF: final at final.c:1724:1
   After events:
     IRF: final at final.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
-    RF: final_start_function at final.c:1591:1
-  After events:
-    RF: final_start_function at final.c:0:0
   Occurrences: 1
 
 Coordinates removed
@@ -7065,13 +6064,6 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: find_unreachable_blocks at cfganal.c:325:1
-  After events:
-    RF: find_unreachable_blocks at cfganal.c:0:0
-  Occurrences: 20
-
-Coordinates removed
-  Before events:
     RF: find_var_candidates at tree-sra.c:1548:3
   After events:
     IRF: find_var_candidates at tree-sra.c:0:0
@@ -7156,13 +6148,6 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: finish_options at c-opts.c:1557:1
-  After events:
-    RF: finish_options at c-opts.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
     RF: first_call_expr_arg at tree.h:5422:3
   After events:
     IRF: first_call_expr_arg at tree.h:0:0
@@ -7229,7 +6214,7 @@ Coordinates removed
     RF: fixup_unsigned_type at stor-layout.c:2428:1
   After events:
     IRF: fixup_unsigned_type at stor-layout.c:0:0
-  Occurrences: 3
+  Occurrences: 1
 
 Coordinates removed
   Before events:
@@ -7282,13 +6267,6 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: fold_convert_const at fold-const.c:2571:1
-  After events:
-    RF: fold_convert_const at fold-const.c:0:0
-  Occurrences: 10
-
-Coordinates removed
-  Before events:
     RF: fold_convert_const_int_from_int at fold-const.c:2285:3
   After events:
     IRF: fold_convert_const_int_from_int at fold-const.c:0:0
@@ -7303,38 +6281,10 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: fold_stmt at tree-ssa-ccp.c:3162:3
-  After events:
-    RF: fold_stmt at tree-ssa-ccp.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
     RF: foll_in_subgraph at graphds.c:159:1
   After events:
     IRF: foll_in_subgraph at graphds.c:0:0
   Occurrences: 120
-
-Coordinates removed
-  Before events:
-    RF: fopen_unlocked at fopen_unlocked.c:109:3
-  After events:
-    RF: fopen_unlocked at fopen_unlocked.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
-    RF: for_each_rtx at rtlanal.c:2871:1
-  After events:
-    RF: for_each_rtx at rtlanal.c:0:0
-  Occurrences: 37
-
-Coordinates removed
-  Before events:
-    RF: force_fit_type_double at fold-const.c:311:1
-  After events:
-    RF: force_fit_type_double at fold-const.c:0:0
-  Occurrences: 24
 
 Coordinates removed
   Before events:
@@ -7359,17 +6309,10 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: forward_propagate_into at fwprop.c:1374:1
-  After events:
-    RF: forward_propagate_into at fwprop.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
     RF: free_after_compilation at function.c:225:1
   After events:
     IRF: free_after_compilation at function.c:0:0
-  Occurrences: 3
+  Occurrences: 2
 
 Coordinates removed
   Before events:
@@ -7383,7 +6326,7 @@ Coordinates removed
     RF: free_alloc_pool at alloc-pool.c:236:1
   After events:
     IRF: free_alloc_pool at alloc-pool.c:0:0
-  Occurrences: 115
+  Occurrences: 30
 
 Coordinates removed
   Before events:
@@ -7429,20 +6372,6 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: free_edge_list at cfganal.c:386:1
-  After events:
-    RF: free_edge_list at cfganal.c:0:0
-  Occurrences: 2
-
-Coordinates removed
-  Before events:
-    RF: free_graph at graphds.c:344:1
-  After events:
-    RF: free_graph at graphds.c:0:0
-  Occurrences: 12
-
-Coordinates removed
-  Before events:
     RF: free_mem at postreload-gcse.c:277:1
   After events:
     IRF: free_mem at postreload-gcse.c:0:0
@@ -7471,27 +6400,6 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: free_scc_info at tree-ssa-structalias.c:1801:1
-  After events:
-    RF: free_scc_info at tree-ssa-structalias.c:0:0
-  Occurrences: 6
-
-Coordinates removed
-  Before events:
-    RF: free_scc_vn at tree-ssa-sccvn.c:3143:1
-  After events:
-    RF: free_scc_vn at tree-ssa-sccvn.c:0:0
-  Occurrences: 2
-
-Coordinates removed
-  Before events:
-    RF: free_stmt_vec_info at tree-vect-stmts.c:4406:1
-  After events:
-    RF: free_stmt_vec_info at tree-vect-stmts.c:0:0
-  Occurrences: 2
-
-Coordinates removed
-  Before events:
     RF: free_temp_expr_table at tree-ssa-ter.c:247:3
   After events:
     IRF: free_temp_expr_table at tree-ssa-ter.c:0:0
@@ -7510,13 +6418,6 @@ Coordinates removed
   After events:
     IRF: free_var_substitution_info at tree-ssa-structalias.c:0:0
   Occurrences: 3
-
-Coordinates removed
-  Before events:
-    RF: free_vn_table at tree-ssa-sccvn.c:3054:1
-  After events:
-    RF: free_vn_table at tree-ssa-sccvn.c:0:0
-  Occurrences: 4
 
 Coordinates removed
   Before events:
@@ -7583,44 +6484,9 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: gen_jump at insn-emit.c:831:3
-  After events:
-    RF: gen_jump at insn-emit.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
-    RF: gen_leave at insn-emit.c:969:3
-  After events:
-    RF: gen_leave at insn-emit.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
-    RF: gen_lowpart_common at emit-rtl.c:1237:1
-  After events:
-    RF: gen_lowpart_common at emit-rtl.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
-    RF: gen_pro_epilogue_adjust_stack_1 at insn-emit.c:2267:3
-  After events:
-    RF: gen_pro_epilogue_adjust_stack_1 at insn-emit.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
     RF: gen_push at i386.c:7806:3
   After events:
     IRF: gen_push at i386.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
-    RF: gen_return_internal at insn-emit.c:861:3
-  After events:
-    RF: gen_return_internal at insn-emit.c:0:0
   Occurrences: 1
 
 Coordinates removed
@@ -7653,34 +6519,6 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: get_attr_length at final.c:448:3
-  After events:
-    RF: get_attr_length at final.c:0:0
-  Occurrences: 8
-
-Coordinates removed
-  Before events:
-    RF: get_attr_length_1 at final.c:441:1
-  After events:
-    RF: get_attr_length_1 at final.c:0:0
-  Occurrences: 8
-
-Coordinates removed
-  Before events:
-    RF: get_attr_length_address at insn-attrtab.c:117412:1
-  After events:
-    RF: get_attr_length_address at insn-attrtab.c:0:0
-  Occurrences: 14
-
-Coordinates removed
-  Before events:
-    RF: get_attr_length_immediate at insn-attrtab.c:118957:1
-  After events:
-    RF: get_attr_length_immediate at insn-attrtab.c:0:0
-  Occurrences: 10
-
-Coordinates removed
-  Before events:
     RF: get_back_and_forw_lists at sched-deps.c:1216:1
   After events:
     IRF: get_back_and_forw_lists at sched-deps.c:0:0
@@ -7698,13 +6536,6 @@ Coordinates removed
     RF: get_constant_alignment at varasm.c:3202:3
   After events:
     IRF: get_constant_alignment at varasm.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
-    RF: get_constant_section at varasm.c:3216:1
-  After events:
-    RF: get_constant_section at varasm.c:0:0
   Occurrences: 1
 
 Coordinates removed
@@ -7772,13 +6603,6 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: get_deref_alias_set at alias.c:617:3
-  After events:
-    RF: get_deref_alias_set at alias.c:0:0
-  Occurrences: 4
-
-Coordinates removed
-  Before events:
     RF: get_deref_alias_set_1 at alias.c:599:1
   After events:
     IRF: get_deref_alias_set_1 at alias.c:0:0
@@ -7790,13 +6614,6 @@ Coordinates removed
   After events:
     IRF: get_eh_landing_pad_from_rtx at except.c:0:0
   Occurrences: 8
-
-Coordinates removed
-  Before events:
-    RF: get_expr_operands at tree-ssa-operands.c:1027:1
-  After events:
-    RF: get_expr_operands at tree-ssa-operands.c:0:0
-  Occurrences: 2
 
 Coordinates removed
   Before events:
@@ -7818,13 +6635,6 @@ Coordinates removed
   After events:
     IRF: get_gimple_rhs_num_ops at gimple.c:0:0
   Occurrences: 1
-
-Coordinates removed
-  Before events:
-    RF: get_insn_template at final.c:1745:1
-  After events:
-    RF: get_insn_template at final.c:0:0
-  Occurrences: 5
 
 Coordinates removed
   Before events:
@@ -7894,13 +6704,6 @@ Coordinates removed
     RF: ggc_alloc_cleared_stat at ggc-common.c:200:3
   After events:
     IRF: ggc_alloc_cleared_stat at ggc-common.c:0:0
-  Occurrences: 205
-
-Coordinates removed
-  Before events:
-    RF: ggc_calloc at ggc-common.c:253:3
-  After events:
-    RF: ggc_calloc at ggc-common.c:0:0
   Occurrences: 80
 
 Coordinates removed
@@ -7912,24 +6715,10 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: ggc_realloc_stat at ggc-common.c:247:1
-  After events:
-    RF: ggc_realloc_stat at ggc-common.c:0:0
-  Occurrences: 70
-
-Coordinates removed
-  Before events:
     RF: ggc_rlimit_bound at ggc-common.c:776:3
   After events:
     IRF: ggc_rlimit_bound at ggc-common.c:0:0
   Occurrences: 3
-
-Coordinates removed
-  Before events:
-    RF: ggc_splay_alloc at ggc-common.c:261:3
-  After events:
-    RF: ggc_splay_alloc at ggc-common.c:0:0
-  Occurrences: 1
 
 Coordinates removed
   Before events:
@@ -7944,13 +6733,6 @@ Coordinates removed
   After events:
     IRF: gimple_assign_cast_p at gimple.h:0:0
   Occurrences: 3
-
-Coordinates removed
-  Before events:
-    RF: gimple_assign_copy_p at gimple.c:1745:3
-  After events:
-    RF: gimple_assign_copy_p at gimple.c:0:0
-  Occurrences: 1
 
 Coordinates removed
   Before events:
@@ -8024,13 +6806,6 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: gimple_build_assign_stat at gimple.c:334:3
-  After events:
-    RF: gimple_build_assign_stat at gimple.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
     RF: gimple_build_call_1 at gimple.c:212:3
   After events:
     IRF: gimple_build_call_1 at gimple.c:0:0
@@ -8070,13 +6845,6 @@ Coordinates removed
   After events:
     IRF: gimple_call_chain_ptr at gimple.h:0:0
   Occurrences: 1
-
-Coordinates removed
-  Before events:
-    RF: gimple_call_flags at gimple.c:1736:3
-  After events:
-    RF: gimple_call_flags at gimple.c:0:0
-  Occurrences: 45
 
 Coordinates removed
   Before events:
@@ -8290,13 +7058,6 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: gimple_ior_addresses_taken at gimple.c:4555:3
-  After events:
-    RF: gimple_ior_addresses_taken at gimple.c:0:0
-  Occurrences: 10
-
-Coordinates removed
-  Before events:
     RF: gimple_label_label at gimple.h:2447:3
   After events:
     IRF: gimple_label_label at gimple.h:0:0
@@ -8395,13 +7156,6 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: gimple_seq_alloc at gimple.c:1067:3
-  After events:
-    RF: gimple_seq_alloc at gimple.c:0:0
-  Occurrences: 3
-
-Coordinates removed
-  Before events:
     RF: gimple_seq_empty_p at gimple.h:217:3
   After events:
     IRF: gimple_seq_empty_p at gimple.h:0:0
@@ -8440,7 +7194,7 @@ Coordinates removed
     RF: gimple_seq_may_fallthru at gimple-low.c:737:3
   After events:
     IRF: gimple_seq_may_fallthru at gimple-low.c:0:0
-  Occurrences: 2
+  Occurrences: 1
 
 Coordinates removed
   Before events:
@@ -8454,7 +7208,7 @@ Coordinates removed
     RF: gimple_set_op at gimple.h:1672:1
   After events:
     IRF: gimple_set_op at gimple.h:0:0
-  Occurrences: 2
+  Occurrences: 1
 
 Coordinates removed
   Before events:
@@ -8598,13 +7352,6 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: globalize_decl at varasm.c:5516:1
-  After events:
-    RF: globalize_decl at varasm.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
     RF: grokparms at c-decl.c:6150:1
   After events:
     IRF: grokparms at c-decl.c:0:0
@@ -8626,44 +7373,16 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: gsi_insert_after at gimple-iterator.c:460:1
-  After events:
-    RF: gsi_insert_after at gimple-iterator.c:0:0
-  Occurrences: 4
-
-Coordinates removed
-  Before events:
     RF: gsi_insert_after_without_update at gimple-iterator.c:446:1
   After events:
-    RF: gsi_insert_after_without_update at gimple-iterator.c:0:0
-  Occurrences: 8
-
-Coordinates removed
-  Before events:
-    RF: gsi_insert_before at gimple-iterator.c:424:1
-  After events:
-    RF: gsi_insert_before at gimple-iterator.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
-    RF: gsi_insert_seq_after at gimple-iterator.c:293:1
-  After events:
-    RF: gsi_insert_seq_after at gimple-iterator.c:0:0
-  Occurrences: 1
+    IRF: gsi_insert_after_without_update at gimple-iterator.c:0:0
+  Occurrences: 4
 
 Coordinates removed
   Before events:
     RF: gsi_insert_seq_after_without_update at gimple-iterator.c:280:1
   After events:
     IRF: gsi_insert_seq_after_without_update at gimple-iterator.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
-    RF: gsi_insert_seq_before at gimple-iterator.c:183:1
-  After events:
-    RF: gsi_insert_seq_before at gimple-iterator.c:0:0
   Occurrences: 1
 
 Coordinates removed
@@ -8738,34 +7457,6 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: haifa_note_reg_clobber at sched-deps.c:1642:1
-  After events:
-    RF: haifa_note_reg_clobber at sched-deps.c:0:0
-  Occurrences: 4
-
-Coordinates removed
-  Before events:
-    RF: haifa_note_reg_set at sched-deps.c:1636:1
-  After events:
-    RF: haifa_note_reg_set at sched-deps.c:0:0
-  Occurrences: 7
-
-Coordinates removed
-  Before events:
-    RF: haifa_note_reg_use at sched-deps.c:1648:1
-  After events:
-    RF: haifa_note_reg_use at sched-deps.c:0:0
-  Occurrences: 9
-
-Coordinates removed
-  Before events:
-    RF: haifa_sched_finish at haifa-sched.c:3543:1
-  After events:
-    RF: haifa_sched_finish at haifa-sched.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
     RF: handle_deferred_opts at c-opts.c:1402:1
   After events:
     IRF: handle_deferred_opts at c-opts.c:0:0
@@ -8817,8 +7508,8 @@ Coordinates removed
   Before events:
     RF: hash_rtx at cse.c:2569:3
   After events:
-    RF: hash_rtx at cse.c:0:0
-  Occurrences: 16
+    IRF: hash_rtx at cse.c:0:0
+  Occurrences: 12
 
 Coordinates removed
   Before events:
@@ -8850,13 +7541,6 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: ht_lookup at cpp_symtab.c:98:3
-  After events:
-    RF: ht_lookup at cpp_symtab.c:0:0
-  Occurrences: 1974
-
-Coordinates removed
-  Before events:
     RF: htab_create_alloc at hashtab.c:322:1
   After events:
     IRF: htab_create_alloc at hashtab.c:0:0
@@ -8864,17 +7548,10 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: htab_delete at hashtab.c:415:1
+    RF: htab_find_with_hash at hashtab.c:595:1
   After events:
-    RF: htab_delete at hashtab.c:0:0
-  Occurrences: 70
-
-Coordinates removed
-  Before events:
-    RF: htab_find_slot at hashtab.c:685:3
-  After events:
-    RF: htab_find_slot at hashtab.c:0:0
-  Occurrences: 153
+    IRF: htab_find_with_hash at hashtab.c:0:0
+  Occurrences: 3
 
 Coordinates removed
   Before events:
@@ -8917,13 +7594,6 @@ Coordinates removed
   After events:
     IRF: init_alias_heapvars at tree-ssa-structalias.c:0:0
   Occurrences: 2
-
-Coordinates removed
-  Before events:
-    RF: init_alias_vars at tree-ssa-structalias.c:5357:1
-  After events:
-    RF: init_alias_vars at tree-ssa-structalias.c:0:0
-  Occurrences: 3
 
 Coordinates removed
   Before events:
@@ -8971,8 +7641,8 @@ Coordinates removed
   Before events:
     RF: init_dce at dce.c:684:1
   After events:
-    RF: init_dce at dce.c:0:0
-  Occurrences: 5
+    IRF: init_dce at dce.c:0:0
+  Occurrences: 1
 
 Coordinates removed
   Before events:
@@ -8994,13 +7664,6 @@ Coordinates removed
   After events:
     IRF: init_dont_simulate_again at tree-complex.c:0:0
   Occurrences: 1
-
-Coordinates removed
-  Before events:
-    RF: init_dummy_function_start at function.c:4218:1
-  After events:
-    RF: init_dummy_function_start at function.c:0:0
-  Occurrences: 2
 
 Coordinates removed
   Before events:
@@ -9060,20 +7723,6 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: init_optimization_passes at passes.c:1081:1
-  After events:
-    RF: init_optimization_passes at passes.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
-    RF: init_pragma at c-pragma.c:1315:1
-  After events:
-    RF: init_pragma at c-pragma.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
     RF: init_reg_last at combine.c:1333:1
   After events:
     IRF: init_reg_last at combine.c:0:0
@@ -9088,13 +7737,6 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: init_set_costs at cfgloopanal.c:378:1
-  After events:
-    RF: init_set_costs at cfgloopanal.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
     RF: init_ssa_renamer at tree-into-ssa.c:2316:1
   After events:
     IRF: init_ssa_renamer at tree-into-ssa.c:0:0
@@ -9105,21 +7747,7 @@ Coordinates removed
     RF: init_temp_slots at function.c:1238:1
   After events:
     IRF: init_temp_slots at function.c:0:0
-  Occurrences: 3
-
-Coordinates removed
-  Before events:
-    RF: init_tree_ssa at tree-ssa.c:1129:1
-  After events:
-    RF: init_tree_ssa at tree-ssa.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
-    RF: init_ttree at tree.c:561:1
-  After events:
-    RF: init_ttree at tree.c:0:0
-  Occurrences: 1
+  Occurrences: 2
 
 Coordinates removed
   Before events:
@@ -9200,13 +7828,6 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: insert_insn_on_edge at cfgrtl.c:1435:1
-  After events:
-    RF: insert_insn_on_edge at cfgrtl.c:0:0
-  Occurrences: 2
-
-Coordinates removed
-  Before events:
     RF: insert_phi_nodes at tree-into-ssa.c:1196:1
   After events:
     IRF: insert_phi_nodes at tree-into-ssa.c:0:0
@@ -9218,13 +7839,6 @@ Coordinates removed
   After events:
     IRF: insert_range_assertions at tree-vrp.c:0:3
   Occurrences: 2
-
-Coordinates removed
-  Before events:
-    RF: insert_regs at cse.c:1221:1
-  After events:
-    RF: insert_regs at cse.c:0:0
-  Occurrences: 3
 
 Coordinates removed
   Before events:
@@ -9291,31 +7905,10 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: int_const_binop at fold-const.c:1814:1
-  After events:
-    RF: int_const_binop at fold-const.c:0:0
-  Occurrences: 24
-
-Coordinates removed
-  Before events:
     RF: internal_min_issue_delay at insn-automata.c:10096:3
   After events:
     IRF: internal_min_issue_delay at insn-automata.c:0:0
   Occurrences: 2
-
-Coordinates removed
-  Before events:
-    RF: internal_state_transition at insn-automata.c:11346:1
-  After events:
-    RF: internal_state_transition at insn-automata.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
-    RF: invalidate at cse.c:1994:1
-  After events:
-    RF: invalidate at cse.c:0:0
-  Occurrences: 1
 
 Coordinates removed
   Before events:
@@ -9385,13 +7978,6 @@ Coordinates removed
     RF: ipa_free_node_params_substructures at ipa-prop.c:1218:1
   After events:
     IRF: ipa_free_node_params_substructures at ipa-prop.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
-    RF: ipa_passes at cgraphunit.c:1814:1
-  After events:
-    RF: ipa_passes at cgraphunit.c:0:0
   Occurrences: 1
 
 Coordinates removed
@@ -9497,14 +8083,7 @@ Coordinates removed
     RF: ira_allocate at ira.c:573:3
   After events:
     IRF: ira_allocate at ira.c:0:0
-  Occurrences: 34
-
-Coordinates removed
-  Before events:
-    RF: ira_allocate_bitmap at ira.c:606:3
-  After events:
-    RF: ira_allocate_bitmap at ira.c:0:0
-  Occurrences: 11
+  Occurrences: 3
 
 Coordinates removed
   Before events:
@@ -9522,66 +8101,17 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: ira_costs at ira-costs.c:1701:1
-  After events:
-    RF: ira_costs at ira-costs.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
-    RF: ira_create_allocno_live_ranges at ira-lives.c:1346:1
-  After events:
-    RF: ira_create_allocno_live_ranges at ira-lives.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
-    RF: ira_destroy at ira-build.c:2867:1
-  After events:
-    RF: ira_destroy at ira-build.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
-    RF: ira_finish_allocno_live_ranges at ira-lives.c:1367:1
-  After events:
-    RF: ira_finish_allocno_live_ranges at ira-lives.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
     RF: ira_finish_assign at ira-color.c:3280:1
   After events:
     IRF: ira_finish_assign at ira-color.c:0:0
-  Occurrences: 2
-
-Coordinates removed
-  Before events:
-    RF: ira_finish_costs_once at ira-costs.c:1657:1
-  After events:
-    RF: ira_finish_costs_once at ira-costs.c:0:0
   Occurrences: 1
 
 Coordinates removed
   Before events:
     RF: ira_free at ira.c:599:1
   After events:
-    RF: ira_free at ira.c:0:0
-  Occurrences: 34
-
-Coordinates removed
-  Before events:
-    RF: ira_init at ira.c:1311:1
-  After events:
-    RF: ira_init at ira.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
-    RF: ira_init_once at ira.c:1276:1
-  After events:
-    RF: ira_init_once at ira.c:0:0
-  Occurrences: 1
+    IRF: ira_free at ira.c:0:0
+  Occurrences: 3
 
 Coordinates removed
   Before events:
@@ -9589,27 +8119,6 @@ Coordinates removed
   After events:
     IRF: ira_rebuild_start_finish_chains at ira-lives.c:0:0
   Occurrences: 1
-
-Coordinates removed
-  Before events:
-    RF: ira_sort_regnos_for_alter_reg at ira-color.c:2754:1
-  After events:
-    RF: ira_sort_regnos_for_alter_reg at ira-color.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
-    RF: ira_traverse_loop_tree at ira-build.c:1410:1
-  After events:
-    RF: ira_traverse_loop_tree at ira-build.c:0:0
-  Occurrences: 3
-
-Coordinates removed
-  Before events:
-    RF: is_attribute_p at tree.c:5078:3
-  After events:
-    RF: is_attribute_p at tree.c:0:0
-  Occurrences: 1810
 
 Coordinates removed
   Before events:
@@ -9662,13 +8171,6 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: is_gimple_call_addr at gimple.c:2827:3
-  After events:
-    RF: is_gimple_call_addr at gimple.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
     RF: is_gimple_constant at gimple.c:2509:1
   After events:
     IRF: is_gimple_constant at gimple.c:0:0
@@ -9693,7 +8195,7 @@ Coordinates removed
     RF: is_gimple_min_invariant at gimple.c:2622:1
   After events:
     IRF: is_gimple_min_invariant at gimple.c:0:0
-  Occurrences: 12
+  Occurrences: 4
 
 Coordinates removed
   Before events:
@@ -9701,13 +8203,6 @@ Coordinates removed
   After events:
     IRF: is_gimple_reg at gimple.c:0:0
   Occurrences: 1
-
-Coordinates removed
-  Before events:
-    RF: is_gimple_val at gimple.c:2790:1
-  After events:
-    RF: is_gimple_val at gimple.c:0:0
-  Occurrences: 2
 
 Coordinates removed
   Before events:
@@ -9746,23 +8241,9 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: ix86_attr_length_address_default at i386.c:19619:1
-  After events:
-    RF: ix86_attr_length_address_default at i386.c:0:0
-  Occurrences: 4
-
-Coordinates removed
-  Before events:
     RF: ix86_avoid_jump_mispredicts at i386.c:26573:1
   After events:
     IRF: ix86_avoid_jump_mispredicts at i386.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
-    RF: ix86_build_builtin_va_list at i386.c:6733:3
-  After events:
-    RF: ix86_build_builtin_va_list at i386.c:0:0
   Occurrences: 1
 
 Coordinates removed
@@ -9781,20 +8262,6 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: ix86_expand_move at i386.c:13069:1
-  After events:
-    RF: ix86_expand_move at i386.c:0:0
-  Occurrences: 10
-
-Coordinates removed
-  Before events:
-    RF: ix86_find_base_term at i386.c:11080:3
-  After events:
-    RF: ix86_find_base_term at i386.c:0:0
-  Occurrences: 36
-
-Coordinates removed
-  Before events:
     RF: ix86_function_ms_hook_prologue at i386.c:4843:1
   After events:
     IRF: ix86_function_ms_hook_prologue at i386.c:0:0
@@ -9809,20 +8276,6 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: ix86_function_value at i386.c:6458:3
-  After events:
-    RF: ix86_function_value at i386.c:0:0
-  Occurrences: 12
-
-Coordinates removed
-  Before events:
-    RF: ix86_function_value_1 at i386.c:6447:5
-  After events:
-    RF: ix86_function_value_1 at i386.c:0:0
-  Occurrences: 12
-
-Coordinates removed
-  Before events:
     RF: ix86_get_builtin_func_type at i386.c:20407:1
   After events:
     IRF: ix86_get_builtin_func_type at i386.c:0:0
@@ -9834,13 +8287,6 @@ Coordinates removed
   After events:
     IRF: ix86_init_mmx_sse_builtins at i386.c:0:0
   Occurrences: 1
-
-Coordinates removed
-  Before events:
-    RF: ix86_memory_move_cost at i386.c:25332:3
-  After events:
-    RF: ix86_memory_move_cost at i386.c:0:0
-  Occurrences: 4524
 
 Coordinates removed
   Before events:
@@ -9869,27 +8315,6 @@ Coordinates removed
   After events:
     IRF: ix86_pad_returns at i386.c:0:0
   Occurrences: 1
-
-Coordinates removed
-  Before events:
-    RF: ix86_scalar_mode_supported_p at i386.c:28001:1
-  After events:
-    RF: ix86_scalar_mode_supported_p at i386.c:0:0
-  Occurrences: 5
-
-Coordinates removed
-  Before events:
-    RF: ix86_target_macros at i386-c.c:349:1
-  After events:
-    RF: ix86_target_macros at i386-c.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
-    RF: kill_clobbered_value at regcprop.c:255:1
-  After events:
-    RF: kill_clobbered_value at regcprop.c:0:0
-  Occurrences: 3
 
 Coordinates removed
   Before events:
@@ -9928,31 +8353,10 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: lang_dependent_init_target at toplev.c:2290:1
-  After events:
-    RF: lang_dependent_init_target at toplev.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
     RF: last_stmt at tree-cfg.c:2373:3
   After events:
     IRF: last_stmt at tree-cfg.c:0:0
   Occurrences: 38
-
-Coordinates removed
-  Before events:
-    RF: late_intra_sra at tree-sra.c:2840:3
-  After events:
-    RF: late_intra_sra at tree-sra.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
-    RF: lex_string at cpp_lex.c:1040:1
-  After events:
-    RF: lex_string at cpp_lex.c:0:0
-  Occurrences: 2
 
 Coordinates removed
   Before events:
@@ -10001,13 +8405,6 @@ Coordinates removed
     RF: local_define_builtin at tree.c:8986:1
   After events:
     IRF: local_define_builtin at tree.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
-    RF: local_pure_const at ipa-pure-const.c:1207:1
-  After events:
-    RF: local_pure_const at ipa-pure-const.c:0:0
   Occurrences: 1
 
 Coordinates removed
@@ -10110,13 +8507,6 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: loop_optimizer_init at loop-init.c:97:1
-  After events:
-    RF: loop_optimizer_init at loop-init.c:0:0
-  Occurrences: 20
-
-Coordinates removed
-  Before events:
     RF: loop_outer at cfgloop.h:442:1
   After events:
     IRF: loop_outer at cfgloop.h:0:0
@@ -10128,13 +8518,6 @@ Coordinates removed
   After events:
     IRF: lower_eh_constructs_2 at tree-eh.c:0:0
   Occurrences: 5
-
-Coordinates removed
-  Before events:
-    RF: lower_gimple_return at gimple-low.c:773:1
-  After events:
-    RF: lower_gimple_return at gimple-low.c:0:0
-  Occurrences: 1
 
 Coordinates removed
   Before events:
@@ -10156,20 +8539,6 @@ Coordinates removed
   After events:
     IRF: lshift_significand_1 at real.c:0:0
   Occurrences: 5473
-
-Coordinates removed
-  Before events:
-    RF: luids_extend_insn at haifa-sched.c:5364:1
-  After events:
-    RF: luids_extend_insn at haifa-sched.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
-    RF: main at main.c:35:3
-  After events:
-    RF: main at main.c:0:0
-  Occurrences: 1
 
 Coordinates removed
   Before events:
@@ -10203,8 +8572,8 @@ Coordinates removed
   Before events:
     RF: make_edge at cfg.c:341:1
   After events:
-    RF: make_edge at cfg.c:0:0
-  Occurrences: 10
+    IRF: make_edge at cfg.c:0:0
+  Occurrences: 5
 
 Coordinates removed
   Before events:
@@ -10278,13 +8647,6 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: make_tree_vector at c-common.c:9319:1
-  After events:
-    RF: make_tree_vector at c-common.c:0:0
-  Occurrences: 2
-
-Coordinates removed
-  Before events:
     RF: mark_all_labels at jump.c:281:1
   After events:
     IRF: mark_all_labels at jump.c:0:0
@@ -10348,13 +8710,6 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: mark_jump_label at jump.c:1031:1
-  After events:
-    RF: mark_jump_label at jump.c:0:0
-  Occurrences: 26
-
-Coordinates removed
-  Before events:
     RF: mark_loops_for_removal at ira-build.c:1756:1
   After events:
     IRF: mark_loops_for_removal at ira-build.c:0:0
@@ -10366,20 +8721,6 @@ Coordinates removed
   After events:
     IRF: mark_nonreg_stores at dce.c:0:0
   Occurrences: 21
-
-Coordinates removed
-  Before events:
-    RF: mark_nonreg_stores_1 at dce.c:195:1
-  After events:
-    RF: mark_nonreg_stores_1 at dce.c:0:0
-  Occurrences: 6
-
-Coordinates removed
-  Before events:
-    RF: mark_nonreg_stores_2 at dce.c:206:1
-  After events:
-    RF: mark_nonreg_stores_2 at dce.c:0:0
-  Occurrences: 1
 
 Coordinates removed
   Before events:
@@ -10411,27 +8752,6 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: mark_sym_for_renaming at tree-into-ssa.c:2893:1
-  After events:
-    RF: mark_sym_for_renaming at tree-into-ssa.c:0:0
-  Occurrences: 2
-
-Coordinates removed
-  Before events:
-    RF: may_trap_p at rtlanal.c:2366:3
-  After events:
-    RF: may_trap_p at rtlanal.c:0:0
-  Occurrences: 10
-
-Coordinates removed
-  Before events:
-    RF: may_trap_p_1 at rtlanal.c:2359:1
-  After events:
-    RF: may_trap_p_1 at rtlanal.c:0:0
-  Occurrences: 6
-
-Coordinates removed
-  Before events:
     RF: maybe_add_call_vops at tree-ssa-operands.c:770:1
   After events:
     IRF: maybe_add_call_vops at tree-ssa-operands.c:0:0
@@ -10453,13 +8773,6 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: maybe_clean_eh_stmt at tree-eh.c:2597:3
-  After events:
-    RF: maybe_clean_eh_stmt at tree-eh.c:0:0
-  Occurrences: 7
-
-Coordinates removed
-  Before events:
     RF: maybe_dump_rtl_for_gimple_stmt at cfgexpand.c:1497:1
   After events:
     IRF: maybe_dump_rtl_for_gimple_stmt at cfgexpand.c:0:0
@@ -10477,13 +8790,6 @@ Coordinates removed
     RF: maybe_fix_stack_asms at reload1.c:1587:1
   After events:
     IRF: maybe_fix_stack_asms at reload1.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
-    RF: maybe_fold_offset_to_address at tree-ssa-ccp.c:2157:1
-  After events:
-    RF: maybe_fold_offset_to_address at tree-ssa-ccp.c:0:0
   Occurrences: 1
 
 Coordinates removed
@@ -10537,24 +8843,10 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: memory_operand at recog.c:1316:1
-  After events:
-    RF: memory_operand at recog.c:0:0
-  Occurrences: 339
-
-Coordinates removed
-  Before events:
     RF: merge_assigned_reloads at reload1.c:6828:1
   After events:
     IRF: merge_assigned_reloads at reload1.c:0:0
   Occurrences: 1
-
-Coordinates removed
-  Before events:
-    RF: merge_blocks at cfghooks.c:721:1
-  After events:
-    RF: merge_blocks at cfghooks.c:0:0
-  Occurrences: 3
 
 Coordinates removed
   Before events:
@@ -10575,13 +8867,6 @@ Coordinates removed
     RF: more_one_region_p at ira-build.c:179:1
   After events:
     IRF: more_one_region_p at ira-build.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
-    RF: move_block_after at cfghooks.c:490:3
-  After events:
-    RF: move_block_after at cfghooks.c:0:0
   Occurrences: 1
 
 Coordinates removed
@@ -10691,13 +8976,6 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: nonzero_bits at rtlanal.c:3635:3
-  After events:
-    RF: nonzero_bits at rtlanal.c:0:0
-  Occurrences: 2
-
-Coordinates removed
-  Before events:
     RF: normalize at sreal.c:265:1
   After events:
     IRF: normalize at sreal.c:0:0
@@ -10740,20 +9018,6 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: note_stores at rtlanal.c:1467:1
-  After events:
-    RF: note_stores at rtlanal.c:0:0
-  Occurrences: 168
-
-Coordinates removed
-  Before events:
-    RF: note_uses at rtlanal.c:1556:1
-  After events:
-    RF: note_uses at rtlanal.c:0:0
-  Occurrences: 10
-
-Coordinates removed
-  Before events:
     RF: notice_stack_pointer_modification at stack-ptr-mod.c:81:1
   After events:
     IRF: notice_stack_pointer_modification at stack-ptr-mod.c:0:0
@@ -10771,13 +9035,6 @@ Coordinates removed
     RF: null_pointer_constant_p at c-typeck.c:122:3
   After events:
     IRF: null_pointer_constant_p at c-typeck.c:0:0
-  Occurrences: 2
-
-Coordinates removed
-  Before events:
-    RF: num_sign_bit_copies at rtlanal.c:3641:3
-  After events:
-    RF: num_sign_bit_copies at rtlanal.c:0:0
   Occurrences: 2
 
 Coordinates removed
@@ -10901,13 +9158,6 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: output_addr_const at final.c:3650:1
-  After events:
-    RF: output_addr_const at final.c:0:0
-  Occurrences: 2
-
-Coordinates removed
-  Before events:
     RF: output_constant_pool at varasm.c:4014:1
   After events:
     IRF: output_constant_pool at varasm.c:0:0
@@ -10919,41 +9169,6 @@ Coordinates removed
   After events:
     IRF: output_constant_pool_contents at varasm.c:0:0
   Occurrences: 2
-
-Coordinates removed
-  Before events:
-    RF: output_dependence at alias.c:2545:3
-  After events:
-    RF: output_dependence at alias.c:0:0
-  Occurrences: 3
-
-Coordinates removed
-  Before events:
-    RF: output_file_directive at toplev.c:736:1
-  After events:
-    RF: output_file_directive at toplev.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
-    RF: output_object_blocks at varasm.c:7046:1
-  After events:
-    RF: output_object_blocks at varasm.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
-    RF: output_quoted_string at toplev.c:703:1
-  After events:
-    RF: output_quoted_string at toplev.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
-    RF: output_section_asm_op at varasm.c:6802:1
-  After events:
-    RF: output_section_asm_op at varasm.c:0:0
-  Occurrences: 1
 
 Coordinates removed
   Before events:
@@ -10978,38 +9193,10 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: partition_delete at partition.c:67:1
-  After events:
-    RF: partition_delete at partition.c:0:0
-  Occurrences: 5
-
-Coordinates removed
-  Before events:
     RF: partition_to_var at tree-ssa-live.h:118:3
   After events:
     IRF: partition_to_var at tree-ssa-live.h:0:0
   Occurrences: 12
-
-Coordinates removed
-  Before events:
-    RF: partition_view_bitmap at tree-ssa-live.c:341:1
-  After events:
-    RF: partition_view_bitmap at tree-ssa-live.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
-    RF: partition_view_fini at tree-ssa-live.c:294:1
-  After events:
-    RF: partition_view_fini at tree-ssa-live.c:0:0
-  Occurrences: 2
-
-Coordinates removed
-  Before events:
-    RF: pass_by_reference at function.c:2023:1
-  After events:
-    RF: pass_by_reference at function.c:0:0
-  Occurrences: 1
 
 Coordinates removed
   Before events:
@@ -11069,31 +9256,10 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: phi_translate_set at tree-ssa-pre.c:1887:1
-  After events:
-    RF: phi_translate_set at tree-ssa-pre.c:0:0
-  Occurrences: 2
-
-Coordinates removed
-  Before events:
     RF: pic_32bit_operand_1 at insn-preds.c:461:1
   After events:
     IRF: pic_32bit_operand_1 at insn-preds.c:0:0
   Occurrences: 20
-
-Coordinates removed
-  Before events:
-    RF: pointer_map_destroy at pointer-set.c:222:1
-  After events:
-    RF: pointer_map_destroy at pointer-set.c:0:0
-  Occurrences: 28
-
-Coordinates removed
-  Before events:
-    RF: pointer_set_destroy at pointer-set.c:90:1
-  After events:
-    RF: pointer_set_destroy at pointer-set.c:0:0
-  Occurrences: 9
 
 Coordinates removed
   Before events:
@@ -11107,14 +9273,7 @@ Coordinates removed
     RF: pop_cfun at function.c:4095:1
   After events:
     IRF: pop_cfun at function.c:0:0
-  Occurrences: 40
-
-Coordinates removed
-  Before events:
-    RF: pop_file_scope at c-decl.c:1328:1
-  After events:
-    RF: pop_file_scope at c-decl.c:0:0
-  Occurrences: 1
+  Occurrences: 2
 
 Coordinates removed
   Before events:
@@ -11160,27 +9319,6 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: print_operand at i386.c:12033:1
-  After events:
-    RF: print_operand at i386.c:0:0
-  Occurrences: 12
-
-Coordinates removed
-  Before events:
-    RF: print_operand_address at i386.c:12174:1
-  After events:
-    RF: print_operand_address at i386.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
-    RF: process_bb_node_for_costs at ira-costs.c:1161:1
-  After events:
-    RF: process_bb_node_for_costs at ira-costs.c:0:0
-  Occurrences: 2
-
-Coordinates removed
-  Before events:
     RF: process_options at toplev.c:2166:1
   After events:
     IRF: process_options at toplev.c:0:0
@@ -11206,13 +9344,6 @@ Coordinates removed
   After events:
     IRF: promote_debug_loc at cselib.c:0:0
   Occurrences: 7
-
-Coordinates removed
-  Before events:
-    RF: promote_function_mode at explow.c:781:1
-  After events:
-    RF: promote_function_mode at explow.c:0:0
-  Occurrences: 2
 
 Coordinates removed
   Before events:
@@ -11244,13 +9375,6 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: propagate_value at tree-ssa-copy.c:190:1
-  After events:
-    RF: propagate_value at tree-ssa-copy.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
     RF: push_allocnos_to_stack at ira-color.c:1318:1
   After events:
     IRF: push_allocnos_to_stack at ira-color.c:0:0
@@ -11262,13 +9386,6 @@ Coordinates removed
   After events:
     IRF: push_by_depth at ggc-page.c:0:0
   Occurrences: 290
-
-Coordinates removed
-  Before events:
-    RF: push_cfun at function.c:4086:1
-  After events:
-    RF: push_cfun at function.c:0:0
-  Occurrences: 38
 
 Coordinates removed
   Before events:
@@ -11337,22 +9454,8 @@ Coordinates removed
   Before events:
     RF: real_from_integer at real.c:2187:1
   After events:
-    RF: real_from_integer at real.c:0:0
-  Occurrences: 8
-
-Coordinates removed
-  Before events:
-    RF: realloc_for_line_map at toplev.c:1675:3
-  After events:
-    RF: realloc_for_line_map at toplev.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
-    RF: recog at insn-recog.c:93673:1
-  After events:
-    RF: recog at insn-recog.c:0:0
-  Occurrences: 3759
+    IRF: real_from_integer at real.c:0:0
+  Occurrences: 6
 
 Coordinates removed
   Before events:
@@ -11398,31 +9501,10 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: record_builtin_type at c-decl.c:8309:1
-  After events:
-    RF: record_builtin_type at c-decl.c:0:0
-  Occurrences: 18
-
-Coordinates removed
-  Before events:
     RF: record_cdtor_fn at cgraphunit.c:185:1
   After events:
     IRF: record_cdtor_fn at cgraphunit.c:0:0
   Occurrences: 1
-
-Coordinates removed
-  Before events:
-    RF: record_dead_and_set_regs at combine.c:11901:1
-  After events:
-    RF: record_dead_and_set_regs at combine.c:0:0
-  Occurrences: 8
-
-Coordinates removed
-  Before events:
-    RF: record_dead_and_set_regs_1 at combine.c:11835:1
-  After events:
-    RF: record_dead_and_set_regs_1 at combine.c:0:0
-  Occurrences: 4
 
 Coordinates removed
   Before events:
@@ -11496,13 +9578,6 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: record_truncated_values at combine.c:12030:1
-  After events:
-    RF: record_truncated_values at combine.c:0:0
-  Occurrences: 5
-
-Coordinates removed
-  Before events:
     RF: record_vars at gimple-low.c:934:1
   After events:
     IRF: record_vars at gimple-low.c:0:0
@@ -11514,13 +9589,6 @@ Coordinates removed
   After events:
     IRF: record_vars_into at gimple-low.c:0:0
   Occurrences: 1
-
-Coordinates removed
-  Before events:
-    RF: redirect_edge_succ at cfg.c:388:1
-  After events:
-    RF: redirect_edge_succ at cfg.c:0:0
-  Occurrences: 2
 
 Coordinates removed
   Before events:
@@ -11570,20 +9638,6 @@ Coordinates removed
   After events:
     IRF: register_dump_files at passes.c:0:0
   Occurrences: 5
-
-Coordinates removed
-  Before events:
-    RF: register_include_chains at incpath.c:458:1
-  After events:
-    RF: register_include_chains at incpath.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
-    RF: register_new_def at tree-into-ssa.c:1240:1
-  After events:
-    RF: register_new_def at tree-into-ssa.c:0:0
-  Occurrences: 1
 
 Coordinates removed
   Before events:
@@ -11650,13 +9704,6 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: relink_block_chain at cfglayout.c:700:1
-  After events:
-    RF: relink_block_chain at cfglayout.c:0:0
-  Occurrences: 2
-
-Coordinates removed
-  Before events:
     RF: reload_combine at postreload.c:985:1
   After events:
     IRF: reload_combine at postreload.c:0:0
@@ -11675,13 +9722,6 @@ Coordinates removed
   After events:
     IRF: reload_cse_noop_set_p at postreload.c:0:0
   Occurrences: 6
-
-Coordinates removed
-  Before events:
-    RF: reload_cse_regs_1 at postreload.c:215:1
-  After events:
-    RF: reload_cse_regs_1 at postreload.c:0:0
-  Occurrences: 2
 
 Coordinates removed
   Before events:
@@ -11709,14 +9749,7 @@ Coordinates removed
     RF: remove_edge at cfghooks.c:384:1
   After events:
     IRF: remove_edge at cfghooks.c:0:0
-  Occurrences: 6
-
-Coordinates removed
-  Before events:
-    RF: remove_edge_raw at cfg.c:371:1
-  After events:
-    RF: remove_edge_raw at cfg.c:0:0
-  Occurrences: 6
+  Occurrences: 4
 
 Coordinates removed
   Before events:
@@ -11787,20 +9820,6 @@ Coordinates removed
   After events:
     IRF: reorder_insns_nobb at emit-rtl.c:0:0
   Occurrences: 1
-
-Coordinates removed
-  Before events:
-    RF: replace_equiv_address at emit-rtl.c:2115:3
-  After events:
-    RF: replace_equiv_address at emit-rtl.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
-    RF: replace_equiv_address_nv at emit-rtl.c:2123:3
-  After events:
-    RF: replace_equiv_address_nv at emit-rtl.c:0:0
-  Occurrences: 30
 
 Coordinates removed
   Before events:
@@ -11881,13 +9900,6 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: returnjump_p at jump.c:915:1
-  After events:
-    RF: returnjump_p at jump.c:0:0
-  Occurrences: 8
-
-Coordinates removed
-  Before events:
     RF: rewrite_add_phi_arguments at tree-into-ssa.c:1375:1
   After events:
     IRF: rewrite_add_phi_arguments at tree-into-ssa.c:0:0
@@ -11958,20 +9970,6 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: run_directive at cpp_directives.c:525:1
-  After events:
-    RF: run_directive at cpp_directives.c:0:0
-  Occurrences: 194
-
-Coordinates removed
-  Before events:
-    RF: run_fast_df_dce at dce.c:1102:1
-  After events:
-    RF: run_fast_df_dce at dce.c:0:0
-  Occurrences: 3
-
-Coordinates removed
-  Before events:
     RF: safe_hash at cse.c:2591:3
   After events:
     IRF: safe_hash at cse.c:0:0
@@ -12004,13 +10002,6 @@ Coordinates removed
   After events:
     IRF: satisfies_constraint_C at tm-constrs.h:0:0
   Occurrences: 184
-
-Coordinates removed
-  Before events:
-    RF: save_register_info at reginfo.c:381:1
-  After events:
-    RF: save_register_info at reginfo.c:0:0
-  Occurrences: 1
 
 Coordinates removed
   Before events:
@@ -12063,17 +10054,10 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: sched_finish at haifa-sched.c:3575:1
-  After events:
-    RF: sched_finish at haifa-sched.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
     RF: sched_has_condition_p at sched-deps.c:528:3
   After events:
     IRF: sched_has_condition_p at sched-deps.c:0:0
-  Occurrences: 11
+  Occurrences: 9
 
 Coordinates removed
   Before events:
@@ -12119,13 +10103,6 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: sd_find_dep_between at sched-deps.c:831:1
-  After events:
-    RF: sd_find_dep_between at sched-deps.c:0:0
-  Occurrences: 4
-
-Coordinates removed
-  Before events:
     RF: sd_lists_size at sched-deps.c:682:3
   After events:
     IRF: sd_lists_size at sched-deps.c:0:0
@@ -12137,13 +10114,6 @@ Coordinates removed
   After events:
     IRF: sd_next_list at sched-deps.c:0:0
   Occurrences: 112
-
-Coordinates removed
-  Before events:
-    RF: sd_resolve_dep at sched-deps.c:1282:1
-  After events:
-    RF: sd_resolve_dep at sched-deps.c:0:0
-  Occurrences: 25
 
 Coordinates removed
   Before events:
@@ -12171,7 +10141,7 @@ Coordinates removed
     RF: set_cfun at function.c:4073:1
   After events:
     IRF: set_cfun at function.c:0:0
-  Occurrences: 95
+  Occurrences: 93
 
 Coordinates removed
   Before events:
@@ -12179,13 +10149,6 @@ Coordinates removed
   After events:
     IRF: set_copy_of_val at tree-ssa-copy.c:0:0
   Occurrences: 4
-
-Coordinates removed
-  Before events:
-    RF: set_decl_rtl at emit-rtl.c:1082:1
-  After events:
-    RF: set_decl_rtl at emit-rtl.c:0:0
-  Occurrences: 19
 
 Coordinates removed
   Before events:
@@ -12228,13 +10191,6 @@ Coordinates removed
   After events:
     IRF: set_live_p at cse.c:0:0
   Occurrences: 16
-
-Coordinates removed
-  Before events:
-    RF: set_mem_attributes at emit-rtl.c:1819:1
-  After events:
-    RF: set_mem_attributes at emit-rtl.c:0:0
-  Occurrences: 3
 
 Coordinates removed
   Before events:
@@ -12430,7 +10386,7 @@ Coordinates removed
     RF: shallow_copy_rtx_stat at rtl.c:342:3
   After events:
     IRF: shallow_copy_rtx_stat at rtl.c:0:0
-  Occurrences: 7
+  Occurrences: 3
 
 Coordinates removed
   Before events:
@@ -12438,13 +10394,6 @@ Coordinates removed
   After events:
     IRF: shared_bitmap_lookup at tree-ssa-structalias.c:0:0
   Occurrences: 3
-
-Coordinates removed
-  Before events:
-    RF: shorten_branches at final.c:1393:1
-  After events:
-    RF: shorten_branches at final.c:0:0
-  Occurrences: 1
 
 Coordinates removed
   Before events:
@@ -12458,13 +10407,6 @@ Coordinates removed
     RF: signed_or_unsigned_type_for at tree.c:9718:1
   After events:
     IRF: signed_or_unsigned_type_for at tree.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
-    RF: signed_type_for at tree.c:9733:3
-  After events:
-    RF: signed_type_for at tree.c:0:0
   Occurrences: 1
 
 Coordinates removed
@@ -12494,13 +10436,6 @@ Coordinates removed
   After events:
     IRF: simulate_block at tree-ssa-propagate.c:0:0
   Occurrences: 9
-
-Coordinates removed
-  Before events:
-    RF: single_def_use_enter_block at fwprop.c:245:1
-  After events:
-    RF: single_def_use_enter_block at fwprop.c:0:0
-  Occurrences: 4
 
 Coordinates removed
   Before events:
@@ -12571,20 +10506,6 @@ Coordinates removed
   After events:
     IRF: single_succ_p at basic-block.h:0:0
   Occurrences: 2
-
-Coordinates removed
-  Before events:
-    RF: size_binop_loc at fold-const.c:2200:1
-  After events:
-    RF: size_binop_loc at fold-const.c:0:0
-  Occurrences: 18
-
-Coordinates removed
-  Before events:
-    RF: size_int_kind at fold-const.c:2154:3
-  After events:
-    RF: size_int_kind at fold-const.c:0:0
-  Occurrences: 702
 
 Coordinates removed
   Before events:
@@ -12665,13 +10586,6 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: splay_tree_delete at splay-tree.c:288:1
-  After events:
-    RF: splay_tree_delete at splay-tree.c:0:0
-  Occurrences: 4
-
-Coordinates removed
-  Before events:
     RF: splay_tree_delete_helper at splay-tree.c:107:1
   After events:
     IRF: splay_tree_delete_helper at splay-tree.c:0:0
@@ -12682,35 +10596,7 @@ Coordinates removed
     RF: splay_tree_xmalloc_allocate at splay-tree.c:230:3
   After events:
     IRF: splay_tree_xmalloc_allocate at splay-tree.c:0:0
-  Occurrences: 10
-
-Coordinates removed
-  Before events:
-    RF: splay_tree_xmalloc_deallocate at splay-tree.c:237:1
-  After events:
-    RF: splay_tree_xmalloc_deallocate at splay-tree.c:0:0
-  Occurrences: 8
-
-Coordinates removed
-  Before events:
-    RF: split_all_insns at recog.c:2865:1
-  After events:
-    RF: split_all_insns at recog.c:0:0
-  Occurrences: 3
-
-Coordinates removed
-  Before events:
-    RF: split_insns at insn-recog.c:109855:1
-  After events:
-    RF: split_insns at insn-recog.c:0:0
-  Occurrences: 9
-
-Coordinates removed
-  Before events:
-    RF: sra_deinitialize at tree-sra.c:601:1
-  After events:
-    RF: sra_deinitialize at tree-sra.c:0:0
-  Occurrences: 2
+  Occurrences: 5
 
 Coordinates removed
   Before events:
@@ -12756,20 +10642,6 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: state_transition at insn-automata.c:11397:1
-  After events:
-    RF: state_transition at insn-automata.c:0:0
-  Occurrences: 19
-
-Coordinates removed
-  Before events:
-    RF: statistics_fini_pass at statistics.c:195:1
-  After events:
-    RF: statistics_fini_pass at statistics.c:0:0
-  Occurrences: 287
-
-Coordinates removed
-  Before events:
     RF: stmt_ends_bb_p at tree-cfg.c:2321:3
   After events:
     IRF: stmt_ends_bb_p at tree-cfg.c:0:0
@@ -12788,13 +10660,6 @@ Coordinates removed
   After events:
     IRF: store_parm_decls_oldstyle at c-decl.c:0:0
   Occurrences: 1
-
-Coordinates removed
-  Before events:
-    RF: stringpool_ggc_alloc at stringpool.c:56:3
-  After events:
-    RF: stringpool_ggc_alloc at stringpool.c:0:0
-  Occurrences: 2010
 
 Coordinates removed
   Before events:
@@ -12952,13 +10817,6 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: tree_lowering_passes at tree-optimize.c:373:1
-  After events:
-    RF: tree_lowering_passes at tree-optimize.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
     RF: tree_nop_conversion at tree.c:10673:1
   After events:
     IRF: tree_nop_conversion at tree.c:0:0
@@ -12982,43 +10840,15 @@ Coordinates removed
   Before events:
     RF: tree_size at tree.c:774:1
   After events:
-    RF: tree_size at tree.c:0:0
-  Occurrences: 4
-
-Coordinates removed
-  Before events:
-    RF: tree_ssa_cd_dce at tree-ssa-dce.c:1410:3
-  After events:
-    RF: tree_ssa_cd_dce at tree-ssa-dce.c:0:0
-  Occurrences: 2
-
-Coordinates removed
-  Before events:
-    RF: tree_ssa_cs_elim at tree-ssa-phiopt.c:173:3
-  After events:
-    RF: tree_ssa_cs_elim at tree-ssa-phiopt.c:0:0
+    IRF: tree_size at tree.c:0:0
   Occurrences: 1
-
-Coordinates removed
-  Before events:
-    RF: tree_ssa_dce at tree-ssa-dce.c:1391:3
-  After events:
-    RF: tree_ssa_dce at tree-ssa-dce.c:0:0
-  Occurrences: 2
-
-Coordinates removed
-  Before events:
-    RF: tree_ssa_phiopt at tree-ssa-phiopt.c:144:3
-  After events:
-    RF: tree_ssa_phiopt at tree-ssa-phiopt.c:0:0
-  Occurrences: 3
 
 Coordinates removed
   Before events:
     RF: tree_ssa_useless_type_conversion at tree-ssa.c:1484:1
   After events:
     IRF: tree_ssa_useless_type_conversion at tree-ssa.c:0:0
-  Occurrences: 15
+  Occurrences: 14
 
 Coordinates removed
   Before events:
@@ -13211,13 +11041,6 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: useless_type_conversion_p at tree-ssa.c:1453:1
-  After events:
-    RF: useless_type_conversion_p at tree-ssa.c:0:0
-  Occurrences: 2
-
-Coordinates removed
-  Before events:
     RF: ustrcmp at internal.h:689:3
   After events:
     IRF: ustrcmp at internal.h:0:0
@@ -13236,20 +11059,6 @@ Coordinates removed
   After events:
     IRF: validate_canon_reg at cse.c:0:0
   Occurrences: 8
-
-Coordinates removed
-  Before events:
-    RF: validate_change at recog.c:255:3
-  After events:
-    RF: validate_change at recog.c:0:0
-  Occurrences: 18
-
-Coordinates removed
-  Before events:
-    RF: validate_unshare_change at recog.c:264:3
-  After events:
-    RF: validate_unshare_change at recog.c:0:0
-  Occurrences: 5
 
 Coordinates removed
   Before events:
@@ -13274,13 +11083,6 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: varpool_remove_unreferenced_decls at varpool.c:449:1
-  After events:
-    RF: varpool_remove_unreferenced_decls at varpool.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
     RF: vconcat_length at concat.c:78:3
   After events:
     IRF: vconcat_length at concat.c:0:0
@@ -13295,20 +11097,6 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: vec_gc_p_reserve at vec.c:255:3
-  After events:
-    RF: vec_gc_p_reserve at vec.c:0:0
-  Occurrences: 20
-
-Coordinates removed
-  Before events:
-    RF: vec_heap_o_reserve at vec.c:361:3
-  After events:
-    RF: vec_heap_o_reserve at vec.c:0:0
-  Occurrences: 39
-
-Coordinates removed
-  Before events:
     RF: vec_heap_o_reserve_1 at vec.c:331:1
   After events:
     IRF: vec_heap_o_reserve_1 at vec.c:0:0
@@ -13318,8 +11106,8 @@ Coordinates removed
   Before events:
     RF: vec_heap_p_reserve at vec.c:338:3
   After events:
-    RF: vec_heap_p_reserve at vec.c:0:0
-  Occurrences: 34
+    IRF: vec_heap_p_reserve at vec.c:0:0
+  Occurrences: 1
 
 Coordinates removed
   Before events:
@@ -13344,13 +11132,6 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: visit_use at tree-ssa-sccvn.c:2697:3
-  After events:
-    RF: visit_use at tree-ssa-sccvn.c:0:0
-  Occurrences: 2
-
-Coordinates removed
-  Before events:
     RF: vrp_initialize at tree-vrp.c:5353:1
   After events:
     IRF: vrp_initialize at tree-vrp.c:0:0
@@ -13372,20 +11153,6 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: walk_dominator_tree at domwalk.c:221:1
-  After events:
-    RF: walk_dominator_tree at domwalk.c:0:0
-  Occurrences: 11
-
-Coordinates removed
-  Before events:
-    RF: walk_stmt_load_store_ops at gimple.c:4527:3
-  After events:
-    RF: walk_stmt_load_store_ops at gimple.c:0:0
-  Occurrences: 6
-
-Coordinates removed
-  Before events:
     RF: wrap_constant at cselib.c:783:1
   After events:
     IRF: wrap_constant at cselib.c:0:0
@@ -13397,13 +11164,6 @@ Coordinates removed
   After events:
     IRF: xrecalloc at haifa-sched.c:0:0
   Occurrences: 1
-
-Coordinates removed
-  Before events:
-    RF: xstrdup at xstrdup.c:35:3
-  After events:
-    RF: xstrdup at xstrdup.c:0:0
-  Occurrences: 3
 
 Coordinates removed
   Before events:
@@ -13568,7 +11328,7 @@ Coordinates changed (small)
 
 Coordinates changed (small)
   Before events:
-    CF: finalize_ssa_defs at tree-ssa-operands.c:455:10
+    CF: finalize_ssa_defs at tree-ssa-operands.c:456:28
   After events:
     ICF: finalize_ssa_defs at tree-ssa-operands.c:454:7
   Occurrences: 1
@@ -13603,6 +11363,20 @@ Coordinates changed (small)
 
 Coordinates changed (small)
   Before events:
+    CF: init_ssa_operands at tree-ssa-operands.c:234:3
+  After events:
+    ICF: init_ssa_operands at tree-ssa-operands.c:231:3
+  Occurrences: 1
+
+Coordinates changed (small)
+  Before events:
+    CF: init_ssa_operands at tree-ssa-operands.c:236:3
+  After events:
+    ICF: init_ssa_operands at tree-ssa-operands.c:233:8
+  Occurrences: 1
+
+Coordinates changed (small)
+  Before events:
     CF: insert_with_costs at cse.c:1594:61
   After events:
     ICF: insert_with_costs at cse.c:1593:20
@@ -13613,7 +11387,7 @@ Coordinates changed (small)
     CF: invalidate at cse.c:1883:22
   After events:
     ICF: invalidate at cse.c:1882:23
-  Occurrences: 3
+  Occurrences: 5
 
 Coordinates changed (small)
   Before events:
@@ -13687,10 +11461,24 @@ Coordinates changed (small)
 
 Coordinates changed (small)
   Before events:
+    CF: record_value_for_reg at combine.c:11686:27
+  After events:
+    ICF: record_value_for_reg at combine.c:11685:24
+  Occurrences: 2
+
+Coordinates changed (small)
+  Before events:
     CF: register_operand at recog.c:1063:11
   After events:
     ICF: register_operand at recog.c:1062:8
   Occurrences: 2415
+
+Coordinates changed (small)
+  Before events:
+    CF: reload at reload1.c:754:3
+  After events:
+    CF: reload at reload1.c:753:3
+  Occurrences: 1
 
 Coordinates changed (small)
   Before events:
@@ -24600,13 +22388,6 @@ Coordinates changed (small)
 
 Coordinates changed (small)
   Before events:
-    CT: output_698 at insn-output.c:2991:0
-  After events:
-    CT: output_698 at insn-output.c:2994:7 (TCWI)
-  Occurrences: 1
-
-Coordinates changed (small)
-  Before events:
     CT: output_constant_pool at varasm.c:3997:0
   After events:
     ICT: output_constant_pool at varasm.c:3995:0
@@ -29755,7 +27536,7 @@ Coordinates changed (small)
     RF: gimple_set_op at gimple.h:1672:1
   After events:
     IRF: gimple_set_op at gimple.h:1671:22
-  Occurrences: 15
+  Occurrences: 16
 
 Coordinates changed (small)
   Before events:
@@ -30802,6 +28583,13 @@ Coordinates changed (small)
 
 Coordinates changed (small)
   Before events:
+    RF: sched_has_condition_p at sched-deps.c:528:3
+  After events:
+    IRF: sched_has_condition_p at sched-deps.c:528:11
+  Occurrences: 2
+
+Coordinates changed (small)
+  Before events:
     RF: sd_iterator_next at sched-int.h:1483:1
   After events:
     IRF: sd_iterator_next at sched-int.h:1482:17
@@ -31379,6 +29167,13 @@ Coordinates changed (large)
     CF: create_insn_allocnos at ira-build.c:1448:7
   After events:
     CF: create_insn_allocnos at ira-build.c:1473:2
+  Occurrences: 1
+
+Coordinates changed (large)
+  Before events:
+    CF: cselib_expand_value_rtx_1 at cselib.c:1261:20
+  After events:
+    ICF: cselib_expand_value_rtx_1 at cselib.c:1253:23
   Occurrences: 1
 
 Coordinates changed (large)
@@ -32499,14 +30294,14 @@ Coordinates changed (large)
     RF: calculate_allocation at vec.c:217:1
   After events:
     IRF: calculate_allocation at vec.c:184:7
-  Occurrences: 1
+  Occurrences: 20
 
 Coordinates changed (large)
   Before events:
     RF: calculate_allocation at vec.c:217:1
   After events:
     IRF: calculate_allocation at vec.c:213:11
-  Occurrences: 93
+  Occurrences: 91
 
 Coordinates changed (large)
   Before events:
@@ -32566,6 +30361,13 @@ Coordinates changed (large)
 
 Coordinates changed (large)
   Before events:
+    RF: cselib_record_set at cselib.c:2008:1
+  After events:
+    IRF: cselib_record_set at cselib.c:1999:21
+  Occurrences: 4
+
+Coordinates changed (large)
+  Before events:
     RF: def_builtin at i386.c:21411:3
   After events:
     IRF: def_builtin at i386.c:21399:54
@@ -32591,6 +30393,13 @@ Coordinates changed (large)
   After events:
     IRF: df_lr_get_bb_info at df.h:1054:15
   Occurrences: 3
+
+Coordinates changed (large)
+  Before events:
+    RF: df_record_entry_block_defs at df-scan.c:4010:1
+  After events:
+    IRF: df_record_entry_block_defs at df-scan.c:4003:3
+  Occurrences: 2
 
 Coordinates changed (large)
   Before events:
@@ -32779,7 +30588,7 @@ Coordinates changed (large)
     RF: htab_find_with_hash at hashtab.c:595:1
   After events:
     IRF: htab_find_with_hash at hashtab.c:573:17
-  Occurrences: 80
+  Occurrences: 77
 
 Coordinates changed (large)
   Before events:
@@ -33117,14 +30926,14 @@ Library call replaced
   After events:
     CT: Jump to external code for fwrite
     RF: Jump to external code for fwrite
-  Occurrences: 3
+  Occurrences: 2
 
 Library call replaced
   Before events:
     CT: Jump to external code for memcmp
   After events:
     CT: Jump to external code for bcmp
-  Occurrences: 20
+  Occurrences: 34
 
 Library call replaced
   Before events:
@@ -33133,7 +30942,7 @@ Library call replaced
   After events:
     CT: Jump to external code for bcmp
     RF: Jump to external code for bcmp
-  Occurrences: 659
+  Occurrences: 645
 
 Library call replaced
   Before events:
@@ -33172,7 +30981,7 @@ Library call replaced
     RF: Jump to external code for memcmp
   After events:
     RF: Jump to external code for bcmp
-  Occurrences: 20
+  Occurrences: 34
 
 Library call replaced
   Before events:
@@ -33229,20 +31038,6 @@ Library call removed
     CT: Jump to external code for memset
     RF: Jump to external code for memset
   Occurrences: 314
-
-Library call removed
-  Before events:
-    CF: alloc_aux_for_block at cfg.c:743:3
-    CT: Jump to external code for memset
-    RF: Jump to external code for memset
-  Occurrences: 3
-
-Library call removed
-  Before events:
-    CF: alloc_aux_for_edge at cfg.c:806:3
-    CT: Jump to external code for memset
-    RF: Jump to external code for memset
-  Occurrences: 2
 
 Library call removed
   Before events:
@@ -33431,14 +31226,7 @@ Library call removed
     CF: create_loop_tree_nodes at ira-build.c:114:7
     CT: Jump to external code for memset
     RF: Jump to external code for memset
-  Occurrences: 3
-
-Library call removed
-  Before events:
-    CF: create_loop_tree_nodes at ira-build.c:155:7
-    CT: Jump to external code for memset
-    RF: Jump to external code for memset
-  Occurrences: 1
+  Occurrences: 2
 
 Library call removed
   Before events:
@@ -33918,7 +31706,7 @@ Library call removed
 
 Library call removed
   Before events:
-    CF: reload at reload1.c:754:3
+    CF: reload at reload1.c:753:3
     CT: Jump to external code for memset
     RF: Jump to external code for memset
   Occurrences: 1
@@ -33989,6 +31777,13 @@ Library call removed
 Library call removed
   Before events:
     CF: save_register_info at reginfo.c:368:3
+    CT: Jump to external code for memcpy
+    RF: Jump to external code for memcpy
+  Occurrences: 1
+
+Library call removed
+  Before events:
+    CF: save_register_info at reginfo.c:380:3
     CT: Jump to external code for memcpy
     RF: Jump to external code for memcpy
   Occurrences: 1
@@ -34477,24 +32272,10 @@ Program call removed
     CF: build_cgraph_edges at cgraphbuild.c:170:10
     CT: gimple_code at gimple.h:1053:0
     RF: gimple_code at gimple.h:1054:3
-  Occurrences: 1
-
-Program call removed
-  Before events:
-    CF: build_cgraph_edges at cgraphbuild.c:170:10
-    CT: gimple_code at gimple.h:1053:0
-    RF: gimple_code at gimple.h:1054:3
     CF: build_cgraph_edges at cgraphbuild.c:176:10
     CT: gimple_code at gimple.h:1053:0
     RF: gimple_code at gimple.h:1054:3
-  Occurrences: 1
-
-Program call removed
-  Before events:
-    CF: build_cgraph_edges at cgraphbuild.c:176:10
-    CT: gimple_code at gimple.h:1053:0
-    RF: gimple_code at gimple.h:1054:3
-  Occurrences: 1
+  Occurrences: 2
 
 Program call removed
   Before events:
@@ -34533,13 +32314,6 @@ Program call removed
     CT: Jump to external code for memset
     RF: Jump to external code for memset
     RF: tree_cons_stat at tree.c:2115:3
-  Occurrences: 1
-
-Program call removed
-  Before events:
-    CF: build_conflict_bit_table at ira-conflicts.c:104:3
-    CT: ira_allocno_iter_init at ira-int.h:940:0
-    RF: ira_allocno_iter_init at ira-int.h:942:1
   Occurrences: 1
 
 Program call removed
@@ -34783,24 +32557,14 @@ Program call removed
     CF: check_stmt at ipa-pure-const.c:422:7
     CT: gimple_code at gimple.h:1053:0
     RF: gimple_code at gimple.h:1054:3
-  Occurrences: 4
-
-Program call removed
-  Before events:
-    CF: check_stmt at ipa-pure-const.c:422:7
-    CT: gimple_code at gimple.h:1053:0
-    RF: gimple_code at gimple.h:1054:3
-    CF: check_stmt at ipa-pure-const.c:438:11
-    CT: gimple_code at gimple.h:1053:0
-    RF: gimple_code at gimple.h:1054:3
-  Occurrences: 2
+  Occurrences: 6
 
 Program call removed
   Before events:
     CF: check_stmt at ipa-pure-const.c:438:11
     CT: gimple_code at gimple.h:1053:0
     RF: gimple_code at gimple.h:1054:3
-  Occurrences: 4
+  Occurrences: 6
 
 Program call removed
   Before events:
@@ -34824,6 +32588,9 @@ Program call removed
     CF: cleanup_control_flow_bb at tree-cfgcleanup.c:206:10
     CT: gimple_code at gimple.h:1053:0
     RF: gimple_code at gimple.h:1054:3
+    CF: cleanup_control_flow_bb at tree-cfgcleanup.c:208:12
+    CT: gimple_code at gimple.h:1053:0
+    RF: gimple_code at gimple.h:1054:3
   Occurrences: 1
 
 Program call removed
@@ -34831,14 +32598,14 @@ Program call removed
     CF: cleanup_control_flow_bb at tree-cfgcleanup.c:208:12
     CT: gimple_code at gimple.h:1053:0
     RF: gimple_code at gimple.h:1054:3
-  Occurrences: 18
+  Occurrences: 17
 
 Program call removed
   Before events:
     CF: cleanup_dead_labels at tree-cfg.c:1151:8
     CT: gimple_code at gimple.h:1053:0
     RF: gimple_code at gimple.h:1054:3
-  Occurrences: 3
+  Occurrences: 5
 
 Program call removed
   Before events:
@@ -34848,7 +32615,7 @@ Program call removed
     CF: cleanup_dead_labels at tree-cfg.c:1151:8
     CT: gimple_code at gimple.h:1053:0
     RF: gimple_code at gimple.h:1054:3
-  Occurrences: 2
+  Occurrences: 1
 
 Program call removed
   Before events:
@@ -34970,10 +32737,24 @@ Program call removed
     CF: compute_inline_parameters at ipa-inline.c:1881:23
     CT: inline_summary at ipa-inline.c:179:0
     RF: inline_summary at ipa-inline.c:180:3
+  Occurrences: 1
+
+Program call removed
+  Before events:
+    CF: compute_inline_parameters at ipa-inline.c:1881:23
+    CT: inline_summary at ipa-inline.c:179:0
+    RF: inline_summary at ipa-inline.c:180:3
     CF: compute_inline_parameters at ipa-inline.c:1882:23
     CT: inline_summary at ipa-inline.c:179:0
     RF: inline_summary at ipa-inline.c:180:3
-  Occurrences: 3
+  Occurrences: 2
+
+Program call removed
+  Before events:
+    CF: compute_inline_parameters at ipa-inline.c:1882:23
+    CT: inline_summary at ipa-inline.c:179:0
+    RF: inline_summary at ipa-inline.c:180:3
+  Occurrences: 1
 
 Program call removed
   Before events:
@@ -35263,7 +33044,18 @@ Program call removed
     CF: cse_insn at cse.c:5641:29
     CT: rhs_regno at rtl.h:1052:0
     RF: rhs_regno at rtl.h:1053:3
+  Occurrences: 1
+
+Program call removed
+  Before events:
     CF: cse_insn at cse.c:5642:32
+    CT: rhs_regno at rtl.h:1052:0
+    RF: rhs_regno at rtl.h:1053:3
+  Occurrences: 1
+
+Program call removed
+  Before events:
+    CF: cselib_expand_value_rtx_1 at cselib.c:1253:23
     CT: rhs_regno at rtl.h:1052:0
     RF: rhs_regno at rtl.h:1053:3
   Occurrences: 1
@@ -35273,7 +33065,7 @@ Program call removed
     CF: cselib_expand_value_rtx_1 at cselib.c:1261:20
     CT: rhs_regno at rtl.h:1052:0
     RF: rhs_regno at rtl.h:1053:3
-  Occurrences: 2
+  Occurrences: 1
 
 Program call removed
   Before events:
@@ -35544,18 +33336,6 @@ Program call removed
 
 Program call removed
   Before events:
-    CF: df_ref_record at df-scan.c:2920:11
-    CT: rhs_regno at rtl.h:1052:0
-    RF: rhs_regno at rtl.h:1053:3
-    CF: df_ref_record at df-scan.c:2972:7
-    CT: df_ref_create_structure at df-scan.c:2817:0
-    CF: df_ref_create_structure at df-scan.c:2819:15
-    CT: rhs_regno at rtl.h:1052:0
-    RF: rhs_regno at rtl.h:1053:3
-  Occurrences: 1
-
-Program call removed
-  Before events:
     CF: df_ref_record at df-scan.c:2937:13
     CT: end_hard_regno at regs.h:291:0
     RF: end_hard_regno at regs.h:292:3
@@ -35761,7 +33541,7 @@ Program call removed
     RF: ei_container at basic-block.h:688:3
     CT: ei_container at basic-block.h:686:0
     RF: ei_container at basic-block.h:688:3
-  Occurrences: 524
+  Occurrences: 523
 
 Program call removed
   Before events:
@@ -35932,6 +33712,10 @@ Program call removed
     CT: elimination_effects at reload1.c:2953:0
     RF: elimination_effects at reload1.c:3150:1
     RF: elimination_effects at reload1.c:3150:1
+  Occurrences: 1
+
+Program call removed
+  Before events:
     CF: elimination_effects at reload1.c:3145:2
     CT: elimination_effects at reload1.c:2953:0
     RF: elimination_effects at reload1.c:3150:1
@@ -35966,10 +33750,6 @@ Program call removed
     CF: estimate_function_body_sizes at ipa-inline.c:1850:3
     CT: inline_summary at ipa-inline.c:179:0
     RF: inline_summary at ipa-inline.c:180:3
-  Occurrences: 1
-
-Program call removed
-  Before events:
     CF: estimate_function_body_sizes at ipa-inline.c:1855:3
     CT: inline_summary at ipa-inline.c:179:0
     RF: inline_summary at ipa-inline.c:180:3
@@ -36192,7 +33972,7 @@ Program call removed
     CF: extract_insn at recog.c:2137:42
     CT: get_attr_enabled at recog.c:67:0
     RF: get_attr_enabled at recog.c:68:3
-  Occurrences: 39
+  Occurrences: 43
 
 Program call removed
   Before events:
@@ -36202,7 +33982,7 @@ Program call removed
     CF: extract_insn at recog.c:2137:42
     CT: get_attr_enabled at recog.c:67:0
     RF: get_attr_enabled at recog.c:68:3
-  Occurrences: 97
+  Occurrences: 95
 
 Program call removed
   Before events:
@@ -36650,14 +34430,24 @@ Program call removed
     CF: find_replaceable_in_bb at tree-ssa-ter.c:594:7
     CT: op_iter_done at tree-flow-inline.h:653:0
     RF: op_iter_done at tree-flow-inline.h:654:3
-  Occurrences: 2
+  Occurrences: 1
+
+Program call removed
+  Before events:
+    CF: find_replaceable_in_bb at tree-ssa-ter.c:594:7
+    CT: op_iter_done at tree-flow-inline.h:653:0
+    RF: op_iter_done at tree-flow-inline.h:654:3
+    CF: find_replaceable_in_bb at tree-ssa-ter.c:629:7
+    CT: op_iter_done at tree-flow-inline.h:653:0
+    RF: op_iter_done at tree-flow-inline.h:654:3
+  Occurrences: 1
 
 Program call removed
   Before events:
     CF: find_replaceable_in_bb at tree-ssa-ter.c:629:7
     CT: op_iter_done at tree-flow-inline.h:653:0
     RF: op_iter_done at tree-flow-inline.h:654:3
-  Occurrences: 2
+  Occurrences: 1
 
 Program call removed
   Before events:
@@ -36749,6 +34539,41 @@ Program call removed
     CT: VEC_gimple_heap_free at gimple.h:34:0
     RF: VEC_gimple_heap_free at gimple.h:34:1
   Occurrences: 2
+
+Program call removed
+  Before events:
+    CF: fini_pre at tree-ssa-pre.c:4723:5
+    CT: loop_optimizer_finalize at loop-init.c:103:0
+    CF: loop_optimizer_finalize at loop-init.c:110:3
+    CT: fel_init at cfgloop.h:536:0
+    CF: fel_init at cfgloop.h:549:18
+    CT: number_of_loops at cfgloop.h:460:0
+    CF: number_of_loops at cfgloop.h:464:10
+    CT: VEC_loop_p_base_length at cfgloop.h:85:0
+    RF: VEC_loop_p_base_length at cfgloop.h:85:1
+    RF: number_of_loops at cfgloop.h:465:1
+    CF: fel_init at cfgloop.h:549:18
+    CT: VEC_int_heap_alloc at vecprim.h:32:0
+    CF: VEC_int_heap_alloc at vecprim.h:32:1
+    CT: vec_heap_o_reserve_exact at vec.c:370:0
+    CF: vec_heap_o_reserve_exact at vec.c:371:10
+    CT: vec_heap_o_reserve_1 at vec.c:304:0
+    CF: vec_heap_o_reserve_1 at vec.c:306:20
+    CT: calculate_allocation at vec.c:178:0
+    RF: calculate_allocation at vec.c:217:1
+    CF: vec_heap_o_reserve_1 at vec.c:320:9
+    CT: xrealloc at xmalloc.c:171:0
+    CF: xrealloc at xmalloc.c:177:14
+    CT: Jump to external code for malloc
+    RF: Jump to external code for malloc
+    RF: xrealloc at xmalloc.c:183:3
+    RF: vec_heap_o_reserve_1 at vec.c:331:1
+    RF: vec_heap_o_reserve_exact at vec.c:371:3
+    RF: VEC_int_heap_alloc at vecprim.h:32:1
+    CF: fel_init at cfgloop.h:600:11
+    CT: loop_outer at cfgloop.h:435:0
+    [...62 more events...]
+  Occurrences: 1
 
 Program call removed
   Before events:
@@ -36970,7 +34795,7 @@ Program call removed
     CF: flow_dfs_compute_reverse_execute at cfganal.c:1125:7
     CT: ei_start_1 at basic-block.h:697:0
     RF: ei_start_1 at basic-block.h:703:3
-  Occurrences: 6
+  Occurrences: 4
 
 Program call removed
   Before events:
@@ -36980,7 +34805,7 @@ Program call removed
     CF: flow_dfs_compute_reverse_execute at cfganal.c:1125:7
     CT: ei_start_1 at basic-block.h:697:0
     RF: ei_start_1 at basic-block.h:703:3
-  Occurrences: 3
+  Occurrences: 4
 
 Program call removed
   Before events:
@@ -37126,7 +34951,7 @@ Program call removed
     CF: general_operand at recog.c:978:13
     CT: rhs_regno at rtl.h:1052:0
     RF: rhs_regno at rtl.h:1053:3
-  Occurrences: 682
+  Occurrences: 789
 
 Program call removed
   Before events:
@@ -37136,14 +34961,14 @@ Program call removed
     CF: general_operand at recog.c:979:9
     CT: rhs_regno at rtl.h:1052:0
     RF: rhs_regno at rtl.h:1053:3
-  Occurrences: 1273
+  Occurrences: 1166
 
 Program call removed
   Before events:
     CF: general_operand at recog.c:979:9
     CT: rhs_regno at rtl.h:1052:0
     RF: rhs_regno at rtl.h:1053:3
-  Occurrences: 690
+  Occurrences: 797
 
 Program call removed
   Before events:
@@ -37315,7 +35140,7 @@ Program call removed
     CF: gimple_expand_cfg at cfgexpand.c:3867:17
     CT: ei_start_1 at basic-block.h:697:0
     RF: ei_start_1 at basic-block.h:703:3
-  Occurrences: 2
+  Occurrences: 1
 
 Program call removed
   Before events:
@@ -37329,6 +35154,9 @@ Program call removed
 
 Program call removed
   Before events:
+    CF: gimple_expand_cfg at cfgexpand.c:3867:17
+    CT: ei_start_1 at basic-block.h:697:0
+    RF: ei_start_1 at basic-block.h:703:3
     CF: gimple_expand_cfg at cfgexpand.c:3883:17
     CT: ei_start_1 at basic-block.h:697:0
     RF: ei_start_1 at basic-block.h:703:3
@@ -37403,10 +35231,17 @@ Program call removed
     CF: gimple_has_mem_ops at gimple.h:1285:10
     CT: gimple_code at gimple.h:1053:0
     RF: gimple_code at gimple.h:1054:3
+  Occurrences: 1
+
+Program call removed
+  Before events:
+    CF: gimple_has_mem_ops at gimple.h:1285:10
+    CT: gimple_code at gimple.h:1053:0
+    RF: gimple_code at gimple.h:1054:3
     CF: gimple_has_mem_ops at gimple.h:1285:46
     CT: gimple_code at gimple.h:1053:0
     RF: gimple_code at gimple.h:1054:3
-  Occurrences: 15
+  Occurrences: 14
 
 Program call removed
   Before events:
@@ -37425,14 +35260,14 @@ Program call removed
     CF: gimple_has_mem_ops at gimple.h:1285:46
     CT: gimple_code at gimple.h:1053:0
     RF: gimple_code at gimple.h:1054:3
-  Occurrences: 53
+  Occurrences: 54
 
 Program call removed
   Before events:
     CF: gimple_has_ops at gimple.h:1276:10
     CT: gimple_code at gimple.h:1053:0
     RF: gimple_code at gimple.h:1054:3
-  Occurrences: 25
+  Occurrences: 28
 
 Program call removed
   Before events:
@@ -37442,25 +35277,11 @@ Program call removed
     CF: gimple_has_ops at gimple.h:1276:44
     CT: gimple_code at gimple.h:1053:0
     RF: gimple_code at gimple.h:1054:3
-  Occurrences: 193
+  Occurrences: 190
 
 Program call removed
   Before events:
     CF: gimple_has_ops at gimple.h:1276:10
-    CT: gimple_code at gimple.h:1053:0
-    RF: gimple_code at gimple.h:1054:3
-    CT: gimple_code at gimple.h:1053:0
-    RF: gimple_code at gimple.h:1054:3
-    CF: gimple_has_ops at gimple.h:1276:44
-    CT: gimple_code at gimple.h:1053:0
-    RF: gimple_code at gimple.h:1054:3
-  Occurrences: 11
-
-Program call removed
-  Before events:
-    CF: gimple_has_ops at gimple.h:1276:10
-    CT: gimple_code at gimple.h:1053:0
-    RF: gimple_code at gimple.h:1054:3
     CT: gimple_code at gimple.h:1053:0
     RF: gimple_code at gimple.h:1054:3
     CT: gimple_code at gimple.h:1053:0
@@ -37474,33 +35295,14 @@ Program call removed
     RF: gimple_code at gimple.h:1054:3
     CT: gimple_code at gimple.h:1053:0
     RF: gimple_code at gimple.h:1054:3
-    CT: gimple_code at gimple.h:1053:0
-    RF: gimple_code at gimple.h:1054:3
     CF: gimple_has_ops at gimple.h:1276:44
     CT: gimple_code at gimple.h:1053:0
     RF: gimple_code at gimple.h:1054:3
-  Occurrences: 1
+  Occurrences: 10
 
 Program call removed
   Before events:
     CF: gimple_has_ops at gimple.h:1276:10
-    CT: gimple_code at gimple.h:1053:0
-    RF: gimple_code at gimple.h:1054:3
-    CT: gimple_code at gimple.h:1053:0
-    RF: gimple_code at gimple.h:1054:3
-    CT: gimple_code at gimple.h:1053:0
-    RF: gimple_code at gimple.h:1054:3
-    CT: gimple_code at gimple.h:1053:0
-    RF: gimple_code at gimple.h:1054:3
-  Occurrences: 1
-
-Program call removed
-  Before events:
-    CF: gimple_has_ops at gimple.h:1276:10
-    CT: gimple_code at gimple.h:1053:0
-    RF: gimple_code at gimple.h:1054:3
-    CT: gimple_code at gimple.h:1053:0
-    RF: gimple_code at gimple.h:1054:3
     CT: gimple_code at gimple.h:1053:0
     RF: gimple_code at gimple.h:1054:3
     CT: gimple_code at gimple.h:1053:0
@@ -37523,6 +35325,30 @@ Program call removed
     RF: gimple_code at gimple.h:1054:3
     CT: gimple_code at gimple.h:1053:0
     RF: gimple_code at gimple.h:1054:3
+  Occurrences: 1
+
+Program call removed
+  Before events:
+    CF: gimple_has_ops at gimple.h:1276:10
+    CT: gimple_code at gimple.h:1053:0
+    RF: gimple_code at gimple.h:1054:3
+    CT: gimple_code at gimple.h:1053:0
+    RF: gimple_code at gimple.h:1054:3
+    CT: gimple_code at gimple.h:1053:0
+    RF: gimple_code at gimple.h:1054:3
+    CT: gimple_code at gimple.h:1053:0
+    RF: gimple_code at gimple.h:1054:3
+    CT: gimple_code at gimple.h:1053:0
+    RF: gimple_code at gimple.h:1054:3
+  Occurrences: 1
+
+Program call removed
+  Before events:
+    CF: gimple_has_ops at gimple.h:1276:10
+    CT: gimple_code at gimple.h:1053:0
+    RF: gimple_code at gimple.h:1054:3
+    CT: gimple_code at gimple.h:1053:0
+    RF: gimple_code at gimple.h:1054:3
     CT: gimple_code at gimple.h:1053:0
     RF: gimple_code at gimple.h:1054:3
     CT: gimple_code at gimple.h:1053:0
@@ -37536,10 +35362,29 @@ Program call removed
 
 Program call removed
   Before events:
+    CF: gimple_has_ops at gimple.h:1276:10
+    CT: gimple_code at gimple.h:1053:0
+    RF: gimple_code at gimple.h:1054:3
+    CT: gimple_code at gimple.h:1053:0
+    RF: gimple_code at gimple.h:1054:3
+    CT: gimple_code at gimple.h:1053:0
+    RF: gimple_code at gimple.h:1054:3
+    CT: gimple_code at gimple.h:1053:0
+    RF: gimple_code at gimple.h:1054:3
+    CT: gimple_code at gimple.h:1053:0
+    RF: gimple_code at gimple.h:1054:3
+    CT: gimple_code at gimple.h:1053:0
+    RF: gimple_code at gimple.h:1054:3
+    CT: gimple_code at gimple.h:1053:0
+    RF: gimple_code at gimple.h:1054:3
+  Occurrences: 1
+
+Program call removed
+  Before events:
     CF: gimple_has_ops at gimple.h:1276:44
     CT: gimple_code at gimple.h:1053:0
     RF: gimple_code at gimple.h:1054:3
-  Occurrences: 155
+  Occurrences: 160
 
 Program call removed
   Before events:
@@ -37861,7 +35706,7 @@ Program call removed
     CF: gimplify_stmt at gimplify.c:5268:10
     CT: gimple_seq_last at gimple.h:179:0
     RF: gimple_seq_last at gimple.h:180:3
-  Occurrences: 5
+  Occurrences: 3
 
 Program call removed
   Before events:
@@ -38003,27 +35848,6 @@ Program call removed
 
 Program call removed
   Before events:
-    CF: htab_find_slot_with_hash at hashtab.c:641:12
-    CT: int_cst_hash_eq at tree.c:1103:0
-    RF: int_cst_hash_eq at tree.c:1107:3
-  Occurrences: 1
-
-Program call removed
-  Before events:
-    CF: htab_find_slot_with_hash at hashtab.c:660:16
-    CT: int_cst_hash_eq at tree.c:1103:0
-    RF: int_cst_hash_eq at tree.c:1107:3
-  Occurrences: 1
-
-Program call removed
-  Before events:
-    CF: htab_mod_m2 at hashtab.c:286:14
-    CT: htab_mod_1 at hashtab.c:247:0
-    RF: htab_mod_1 at hashtab.c:268:3
-  Occurrences: 1
-
-Program call removed
-  Before events:
     CF: init_alias_analysis at alias.c:2717:26
     CT: rhs_regno at rtl.h:1052:0
     RF: rhs_regno at rtl.h:1053:3
@@ -38034,7 +35858,7 @@ Program call removed
     CF: init_alias_analysis at alias.c:2767:5
     CT: VEC_rtx_base_index at rtl.h:200:0
     RF: VEC_rtx_base_index at rtl.h:200:1
-  Occurrences: 53
+  Occurrences: 46
 
 Program call removed
   Before events:
@@ -38086,10 +35910,19 @@ Program call removed
 
 Program call removed
   Before events:
+    CF: init_emit_once at emit-rtl.c:5820:43
+    CT: gen_rtx_CONST_INT at emit-rtl.c:436:0
+    RF: gen_rtx_CONST_INT at emit-rtl.c:454:1
+    CT: gen_rtx_CONST_INT at emit-rtl.c:436:0
+    RF: gen_rtx_CONST_INT at emit-rtl.c:454:1
+  Occurrences: 1
+
+Program call removed
+  Before events:
     CF: init_emit_once at emit-rtl.c:5825:34
     CT: gen_rtx_CONST_INT at emit-rtl.c:436:0
     RF: gen_rtx_CONST_INT at emit-rtl.c:454:1
-  Occurrences: 11
+  Occurrences: 9
 
 Program call removed
   Before events:
@@ -38168,17 +36001,17 @@ Program call removed
 
 Program call removed
   Before events:
-    CF: init_ssa_operands at tree-ssa-operands.c:232:3
-    CT: gimple_ssa_operands at tree-flow-inline.h:1212:0
-    RF: gimple_ssa_operands at tree-flow-inline.h:1213:3
-    CF: init_ssa_operands at tree-ssa-operands.c:234:3
+    CF: init_ssa_operands at tree-ssa-operands.c:231:3
     CT: gimple_ssa_operands at tree-flow-inline.h:1212:0
     RF: gimple_ssa_operands at tree-flow-inline.h:1213:3
   Occurrences: 1
 
 Program call removed
   Before events:
-    CF: init_ssa_operands at tree-ssa-operands.c:236:3
+    CF: init_ssa_operands at tree-ssa-operands.c:233:8
+    CT: gimple_ssa_operands at tree-flow-inline.h:1212:0
+    RF: gimple_ssa_operands at tree-flow-inline.h:1213:3
+    CF: init_ssa_operands at tree-ssa-operands.c:232:3
     CT: gimple_ssa_operands at tree-flow-inline.h:1212:0
     RF: gimple_ssa_operands at tree-flow-inline.h:1213:3
   Occurrences: 1
@@ -38269,14 +36102,17 @@ Program call removed
     CF: invalidate at cse.c:1882:23
     CT: rhs_regno at rtl.h:1052:0
     RF: rhs_regno at rtl.h:1053:3
-  Occurrences: 3
+  Occurrences: 4
 
 Program call removed
   Before events:
+    CF: invalidate at cse.c:1882:23
+    CT: rhs_regno at rtl.h:1052:0
+    RF: rhs_regno at rtl.h:1053:3
     CF: invalidate at cse.c:1883:22
     CT: rhs_regno at rtl.h:1052:0
     RF: rhs_regno at rtl.h:1053:3
-  Occurrences: 3
+  Occurrences: 1
 
 Program call removed
   Before events:
@@ -38556,7 +36392,7 @@ Program call removed
     CF: ix86_decompose_address at i386.c:9467:12
     CT: rhs_regno at rtl.h:1052:0
     RF: rhs_regno at rtl.h:1053:3
-  Occurrences: 39
+  Occurrences: 137
 
 Program call removed
   Before events:
@@ -38566,14 +36402,14 @@ Program call removed
     CF: ix86_decompose_address at i386.c:9468:8
     CT: rhs_regno at rtl.h:1052:0
     RF: rhs_regno at rtl.h:1053:3
-  Occurrences: 620
+  Occurrences: 522
 
 Program call removed
   Before events:
     CF: ix86_decompose_address at i386.c:9468:8
     CT: rhs_regno at rtl.h:1052:0
     RF: rhs_regno at rtl.h:1053:3
-  Occurrences: 68
+  Occurrences: 166
 
 Program call removed
   Before events:
@@ -38593,7 +36429,7 @@ Program call removed
     CF: ix86_legitimate_address_p at i386.c:9886:22
     CT: rhs_regno at rtl.h:1052:0
     RF: rhs_regno at rtl.h:1053:3
-  Occurrences: 1438
+  Occurrences: 1588
 
 Program call removed
   Before events:
@@ -38603,7 +36439,7 @@ Program call removed
     CF: ix86_legitimate_address_p at i386.c:9886:22
     CT: rhs_regno at rtl.h:1052:0
     RF: rhs_regno at rtl.h:1053:3
-  Occurrences: 1236
+  Occurrences: 1161
 
 Program call removed
   Before events:
@@ -38781,7 +36617,7 @@ Program call removed
     CF: mark_def_sites at tree-into-ssa.c:757:3
     CT: op_iter_done at tree-flow-inline.h:653:0
     RF: op_iter_done at tree-flow-inline.h:654:3
-  Occurrences: 3
+  Occurrences: 2
 
 Program call removed
   Before events:
@@ -38791,14 +36627,14 @@ Program call removed
     CF: mark_def_sites at tree-into-ssa.c:768:3
     CT: op_iter_done at tree-flow-inline.h:653:0
     RF: op_iter_done at tree-flow-inline.h:654:3
-  Occurrences: 1
+  Occurrences: 2
 
 Program call removed
   Before events:
     CF: mark_def_sites at tree-into-ssa.c:768:3
     CT: op_iter_done at tree-flow-inline.h:653:0
     RF: op_iter_done at tree-flow-inline.h:654:3
-  Occurrences: 3
+  Occurrences: 2
 
 Program call removed
   Before events:
@@ -38840,7 +36676,7 @@ Program call removed
     CT: VEC_edge_base_index at basic-block.h:150:0
     RF: VEC_edge_base_index at basic-block.h:150:1
     RF: ei_edge at basic-block.h:754:3
-  Occurrences: 5
+  Occurrences: 7
 
 Program call removed
   Before events:
@@ -38866,7 +36702,7 @@ Program call removed
     CT: VEC_edge_base_index at basic-block.h:150:0
     RF: VEC_edge_base_index at basic-block.h:150:1
     RF: ei_edge at basic-block.h:754:3
-  Occurrences: 6
+  Occurrences: 4
 
 Program call removed
   Before events:
@@ -38881,7 +36717,7 @@ Program call removed
     CT: VEC_edge_base_index at basic-block.h:150:0
     RF: VEC_edge_base_index at basic-block.h:150:1
     RF: ei_edge at basic-block.h:754:3
-  Occurrences: 8
+  Occurrences: 10
 
 Program call removed
   Before events:
@@ -38957,6 +36793,19 @@ Program call removed
     CF: move2add_note_store at postreload.c:1464:12
     CT: rhs_regno at rtl.h:1052:0
     RF: rhs_regno at rtl.h:1053:3
+  Occurrences: 2
+
+Program call removed
+  Before events:
+    CF: move_dep_link at sched-deps.c:296:3
+    CT: remove_from_deps_list at sched-deps.c:284:0
+    CF: remove_from_deps_list at sched-deps.c:285:3
+    CT: detach_dep_link at sched-deps.c:268:0
+    RF: detach_dep_link at sched-deps.c:279:1
+    CF: remove_from_deps_list at sched-deps.c:288:8
+    CT: depl_on_debug_p at sched-deps.c:220:0
+    RF: depl_on_debug_p at sched-deps.c:221:3
+    RF: remove_from_deps_list at sched-deps.c:290:1
   Occurrences: 2
 
 Program call removed
@@ -39520,7 +37369,7 @@ Program call removed
     CF: record_dead_and_set_regs at combine.c:11880:12
     CT: VEC_reg_stat_type_base_index at combine.c:255:0
     RF: VEC_reg_stat_type_base_index at combine.c:255:1
-    [...105 more events...]
+    [...108 more events...]
   Occurrences: 2
 
 Program call removed
@@ -39593,6 +37442,13 @@ Program call removed
     CF: record_value_for_reg at combine.c:11685:24
     CT: rhs_regno at rtl.h:1052:0
     RF: rhs_regno at rtl.h:1053:3
+  Occurrences: 2
+
+Program call removed
+  Before events:
+    CF: record_value_for_reg at combine.c:11685:24
+    CT: rhs_regno at rtl.h:1052:0
+    RF: rhs_regno at rtl.h:1053:3
     CF: record_value_for_reg at combine.c:11686:27
     CT: rhs_regno at rtl.h:1052:0
     RF: rhs_regno at rtl.h:1053:3
@@ -39613,9 +37469,6 @@ Program call removed
     CF: record_value_for_reg at combine.c:11686:27
     CT: rhs_regno at rtl.h:1052:0
     RF: rhs_regno at rtl.h:1053:3
-    CF: record_value_for_reg at combine.c:11686:27
-    CT: rhs_regno at rtl.h:1052:0
-    RF: rhs_regno at rtl.h:1053:3
   Occurrences: 2
 
 Program call removed
@@ -39630,10 +37483,24 @@ Program call removed
     CF: record_value_for_reg at combine.c:11755:13
     CT: VEC_reg_stat_type_base_index at combine.c:255:0
     RF: VEC_reg_stat_type_base_index at combine.c:255:1
+  Occurrences: 1
+
+Program call removed
+  Before events:
+    CF: record_value_for_reg at combine.c:11755:13
+    CT: VEC_reg_stat_type_base_index at combine.c:255:0
+    RF: VEC_reg_stat_type_base_index at combine.c:255:1
     CF: record_value_for_reg at combine.c:11767:9
     CT: VEC_reg_stat_type_base_index at combine.c:255:0
     RF: VEC_reg_stat_type_base_index at combine.c:255:1
-  Occurrences: 2
+  Occurrences: 1
+
+Program call removed
+  Before events:
+    CF: record_value_for_reg at combine.c:11767:9
+    CT: VEC_reg_stat_type_base_index at combine.c:255:0
+    RF: VEC_reg_stat_type_base_index at combine.c:255:1
+  Occurrences: 1
 
 Program call removed
   Before events:
@@ -39665,19 +37532,10 @@ Program call removed
 
 Program call removed
   Before events:
-    CF: register_defs_p at tree-into-ssa.c:269:10
-    CT: gimple_plf at gimple.h:1248:0
-    RF: gimple_plf at gimple.h:1249:3
-    CT: gimple_plf at gimple.h:1248:0
-    RF: gimple_plf at gimple.h:1249:3
-  Occurrences: 1
-
-Program call removed
-  Before events:
     CF: register_operand at recog.c:1062:8
     CT: rhs_regno at rtl.h:1052:0
     RF: rhs_regno at rtl.h:1053:3
-  Occurrences: 294
+  Occurrences: 512
 
 Program call removed
   Before events:
@@ -39687,14 +37545,14 @@ Program call removed
     CF: register_operand at recog.c:1063:11
     CT: rhs_regno at rtl.h:1052:0
     RF: rhs_regno at rtl.h:1053:3
-  Occurrences: 2121
+  Occurrences: 1903
 
 Program call removed
   Before events:
     CF: register_operand at recog.c:1063:11
     CT: rhs_regno at rtl.h:1052:0
     RF: rhs_regno at rtl.h:1053:3
-  Occurrences: 307
+  Occurrences: 525
 
 Program call removed
   Before events:
@@ -39716,13 +37574,6 @@ Program call removed
     CT: ei_start_1 at basic-block.h:697:0
     RF: ei_start_1 at basic-block.h:703:3
   Occurrences: 5
-
-Program call removed
-  Before events:
-    CF: remove_some_program_points_and_update_live_ranges at ira-lives.c:1245:3
-    CT: ira_allocno_iter_init at ira-int.h:940:0
-    RF: ira_allocno_iter_init at ira-int.h:942:1
-  Occurrences: 1
 
 Program call removed
   Before events:
@@ -39830,6 +37681,8 @@ Program call removed
     CT: gimple_visited_p at gimple.h:1227:0
     RF: gimple_visited_p at gimple.h:1228:3
     RF: rewrite_uses_p at tree-into-ssa.c:245:3
+    CT: rewrite_uses_p at tree-into-ssa.c:244:0
+    RF: rewrite_uses_p at tree-into-ssa.c:245:3
   Occurrences: 1
 
 Program call removed
@@ -39838,6 +37691,18 @@ Program call removed
     CT: op_iter_done at tree-flow-inline.h:653:0
     RF: op_iter_done at tree-flow-inline.h:654:3
   Occurrences: 2
+
+Program call removed
+  Before events:
+    CF: rewrite_stmt at tree-into-ssa.c:1327:7
+    CT: register_defs_p at tree-into-ssa.c:268:0
+    CF: register_defs_p at tree-into-ssa.c:269:10
+    CT: gimple_plf at gimple.h:1248:0
+    RF: gimple_plf at gimple.h:1249:3
+    CT: gimple_plf at gimple.h:1248:0
+    RF: gimple_plf at gimple.h:1249:3
+    RF: register_defs_p at tree-into-ssa.c:269:3
+  Occurrences: 1
 
 Program call removed
   Before events:
@@ -39997,44 +37862,112 @@ Program call removed
 
 Program call removed
   Before events:
+    CF: schedule_insn at haifa-sched.c:1699:3
+    CT: sd_lists_empty_p at sched-deps.c:689:0
+    CF: sd_lists_empty_p at sched-deps.c:695:7
+    CT: sd_next_list at sched-deps.c:625:0
+    CF: sd_next_list at sched-deps.c:630:19
+    CT: VEC_int_base_index at vecprim.h:31:0
+    RF: VEC_int_base_index at vecprim.h:31:1
+    CF: sd_next_list at sched-deps.c:630:19
+    CT: VEC_haifa_deps_insn_data_def_base_index at sched-int.h:846:0
+    RF: VEC_haifa_deps_insn_data_def_base_index at sched-int.h:846:1
+    RF: sd_next_list at sched-deps.c:664:1
+    CT: sd_next_list at sched-deps.c:625:0
+    CF: sd_next_list at sched-deps.c:636:19
+    CT: VEC_int_base_index at vecprim.h:31:0
+    RF: VEC_int_base_index at vecprim.h:31:1
+    CF: sd_next_list at sched-deps.c:636:19
+    CT: VEC_haifa_deps_insn_data_def_base_index at sched-int.h:846:0
+    RF: VEC_haifa_deps_insn_data_def_base_index at sched-int.h:846:1
+    RF: sd_next_list at sched-deps.c:664:1
+    CF: sd_lists_empty_p at sched-deps.c:696:12
+    CT: deps_list_empty_p at sched-deps.c:357:0
+    RF: deps_list_empty_p at sched-deps.c:358:3
+    CT: deps_list_empty_p at sched-deps.c:357:0
+    RF: deps_list_empty_p at sched-deps.c:358:3
+    RF: sd_lists_empty_p at sched-deps.c:701:1
+  Occurrences: 9
+
+Program call removed
+  Before events:
     CF: schedule_insn at haifa-sched.c:1734:3
     CT: VEC_haifa_insn_data_def_base_index at sched-int.h:825:0
     RF: VEC_haifa_insn_data_def_base_index at sched-int.h:825:1
     CF: schedule_insn at haifa-sched.c:1735:3
     CT: VEC_haifa_insn_data_def_base_index at sched-int.h:825:0
     RF: VEC_haifa_insn_data_def_base_index at sched-int.h:825:1
-  Occurrences: 9
-
-Program call removed
-  Before events:
     CF: schedule_insn at haifa-sched.c:1737:3
     CT: VEC_haifa_insn_data_def_base_index at sched-int.h:825:0
     RF: VEC_haifa_insn_data_def_base_index at sched-int.h:825:1
     CF: schedule_insn at haifa-sched.c:1738:7
     CT: VEC_haifa_insn_data_def_base_index at sched-int.h:825:0
     RF: VEC_haifa_insn_data_def_base_index at sched-int.h:825:1
-  Occurrences: 9
-
-Program call removed
-  Before events:
     CF: schedule_insn at haifa-sched.c:1745:3
     CT: VEC_haifa_insn_data_def_base_index at sched-int.h:825:0
     RF: VEC_haifa_insn_data_def_base_index at sched-int.h:825:1
-  Occurrences: 9
+  Occurrences: 8
+
+Program call removed
+  Before events:
+    CF: schedule_insn at haifa-sched.c:1734:3
+    CT: VEC_haifa_insn_data_def_base_index at sched-int.h:825:0
+    RF: VEC_haifa_insn_data_def_base_index at sched-int.h:825:1
+    CF: schedule_insn at haifa-sched.c:1735:3
+    CT: VEC_haifa_insn_data_def_base_index at sched-int.h:825:0
+    RF: VEC_haifa_insn_data_def_base_index at sched-int.h:825:1
+    CF: schedule_insn at haifa-sched.c:1737:3
+    CT: VEC_haifa_insn_data_def_base_index at sched-int.h:825:0
+    RF: VEC_haifa_insn_data_def_base_index at sched-int.h:825:1
+    CF: schedule_insn at haifa-sched.c:1738:7
+    CT: VEC_haifa_insn_data_def_base_index at sched-int.h:825:0
+    RF: VEC_haifa_insn_data_def_base_index at sched-int.h:825:1
+    CF: schedule_insn at haifa-sched.c:1745:3
+    CT: VEC_haifa_insn_data_def_base_index at sched-int.h:825:0
+    RF: VEC_haifa_insn_data_def_base_index at sched-int.h:825:1
+    CF: schedule_insn at haifa-sched.c:1748:16
+    CT: sd_iterator_start at sched-int.h:1428:0
+    RF: sd_iterator_start at sched-int.h:1441:3
+    CF: schedule_insn at haifa-sched.c:1749:8
+    CT: sd_iterator_cond at sched-int.h:1447:0
+    CF: sd_iterator_cond at sched-int.h:1464:4
+    CT: sd_next_list at sched-deps.c:625:0
+    CF: sd_next_list at sched-deps.c:642:19
+    CT: VEC_int_base_index at vecprim.h:31:0
+    RF: VEC_int_base_index at vecprim.h:31:1
+    CF: sd_next_list at sched-deps.c:642:19
+    CT: VEC_haifa_deps_insn_data_def_base_index at sched-int.h:846:0
+    RF: VEC_haifa_deps_insn_data_def_base_index at sched-int.h:846:1
+    RF: sd_next_list at sched-deps.c:664:1
+    CF: sd_iterator_cond at sched-int.h:1470:13
+    [...75 more events...]
+  Occurrences: 1
 
 Program call removed
   Before events:
     CF: schedule_insn at haifa-sched.c:1748:16
     CT: sd_iterator_start at sched-int.h:1428:0
     RF: sd_iterator_start at sched-int.h:1441:3
-  Occurrences: 9
+  Occurrences: 6
 
 Program call removed
   Before events:
-    CF: schedule_insn at haifa-sched.c:1764:12
-    CT: VEC_haifa_insn_data_def_base_index at sched-int.h:825:0
-    RF: VEC_haifa_insn_data_def_base_index at sched-int.h:825:1
-  Occurrences: 25
+    CF: schedule_insn at haifa-sched.c:1749:8
+    CT: sd_iterator_cond at sched-int.h:1447:0
+    CF: sd_iterator_cond at sched-int.h:1464:4
+    CT: sd_next_list at sched-deps.c:625:0
+    CF: sd_next_list at sched-deps.c:642:19
+    CT: VEC_int_base_index at vecprim.h:31:0
+    RF: VEC_int_base_index at vecprim.h:31:1
+    CF: sd_next_list at sched-deps.c:642:19
+    CT: VEC_haifa_deps_insn_data_def_base_index at sched-int.h:846:0
+    RF: VEC_haifa_deps_insn_data_def_base_index at sched-int.h:846:1
+    RF: sd_next_list at sched-deps.c:664:1
+    CF: sd_iterator_cond at sched-int.h:1470:13
+    CT: sd_iterator_cond at sched-int.h:1447:0
+    RF: sd_iterator_cond at sched-int.h:1476:1
+    RF: sd_iterator_cond at sched-int.h:1476:1
+  Occurrences: 6
 
 Program call removed
   Before events:
@@ -40227,58 +38160,71 @@ Program call removed
 Program call removed
   Before events:
     CF: sd_resolve_dep at sched-deps.c:1277:42
-    CT: VEC_haifa_deps_insn_data_def_base_index at sched-int.h:846:0
-    RF: VEC_haifa_deps_insn_data_def_base_index at sched-int.h:846:1
-  Occurrences: 25
+    CT: VEC_int_base_index at vecprim.h:31:0
+    RF: VEC_int_base_index at vecprim.h:31:1
+  Occurrences: 2
 
 Program call removed
   Before events:
     CF: sd_resolve_dep at sched-deps.c:1277:42
     CT: VEC_int_base_index at vecprim.h:31:0
     RF: VEC_int_base_index at vecprim.h:31:1
-  Occurrences: 10
+    CF: sd_resolve_dep at sched-deps.c:1277:42
+    CT: VEC_haifa_deps_insn_data_def_base_index at sched-int.h:846:0
+    RF: VEC_haifa_deps_insn_data_def_base_index at sched-int.h:846:1
+    CF: sd_resolve_dep at sched-deps.c:1278:6
+    CT: VEC_int_base_index at vecprim.h:31:0
+    RF: VEC_int_base_index at vecprim.h:31:1
+  Occurrences: 2
+
+Program call removed
+  Before events:
+    CF: sd_resolve_dep at sched-deps.c:1277:42
+    CT: VEC_int_base_index at vecprim.h:31:0
+    RF: VEC_int_base_index at vecprim.h:31:1
+    CF: sd_resolve_dep at sched-deps.c:1277:42
+    CT: VEC_haifa_deps_insn_data_def_base_index at sched-int.h:846:0
+    RF: VEC_haifa_deps_insn_data_def_base_index at sched-int.h:846:1
+    CF: sd_resolve_dep at sched-deps.c:1278:6
+    CT: VEC_int_base_index at vecprim.h:31:0
+    RF: VEC_int_base_index at vecprim.h:31:1
+    CF: sd_resolve_dep at sched-deps.c:1278:6
+    CT: VEC_haifa_deps_insn_data_def_base_index at sched-int.h:846:0
+    RF: VEC_haifa_deps_insn_data_def_base_index at sched-int.h:846:1
+    CF: sd_resolve_dep at sched-deps.c:1277:5
+    CT: move_dep_link at sched-deps.c:295:0
+    CF: move_dep_link at sched-deps.c:296:3
+    CT: remove_from_deps_list at sched-deps.c:284:0
+    CF: remove_from_deps_list at sched-deps.c:285:3
+    CT: detach_dep_link at sched-deps.c:268:0
+    RF: detach_dep_link at sched-deps.c:279:1
+    CF: remove_from_deps_list at sched-deps.c:288:8
+    CT: depl_on_debug_p at sched-deps.c:220:0
+    RF: depl_on_debug_p at sched-deps.c:221:3
+    RF: remove_from_deps_list at sched-deps.c:290:1
+    CF: move_dep_link at sched-deps.c:297:3
+    CT: add_to_deps_list at sched-deps.c:257:0
+    CF: add_to_deps_list at sched-deps.c:258:3
+    CT: attach_dep_link at sched-deps.c:232:0
+    RF: attach_dep_link at sched-deps.c:252:1
+    CF: add_to_deps_list at sched-deps.c:261:8
+    CT: depl_on_debug_p at sched-deps.c:220:0
+    [...12 more events...]
+  Occurrences: 2
 
 Program call removed
   Before events:
     CF: sd_resolve_dep at sched-deps.c:1278:6
     CT: VEC_haifa_deps_insn_data_def_base_index at sched-int.h:846:0
     RF: VEC_haifa_deps_insn_data_def_base_index at sched-int.h:846:1
-  Occurrences: 25
-
-Program call removed
-  Before events:
-    CF: sd_resolve_dep at sched-deps.c:1278:6
-    CT: VEC_int_base_index at vecprim.h:31:0
-    RF: VEC_int_base_index at vecprim.h:31:1
-  Occurrences: 15
-
-Program call removed
-  Before events:
-    CF: sd_resolve_dep at sched-deps.c:1280:40
-    CT: VEC_haifa_deps_insn_data_def_base_index at sched-int.h:846:0
-    RF: VEC_haifa_deps_insn_data_def_base_index at sched-int.h:846:1
-  Occurrences: 25
-
-Program call removed
-  Before events:
-    CF: sd_resolve_dep at sched-deps.c:1280:40
-    CT: VEC_int_base_index at vecprim.h:31:0
-    RF: VEC_int_base_index at vecprim.h:31:1
-  Occurrences: 10
+  Occurrences: 2
 
 Program call removed
   Before events:
     CF: sd_resolve_dep at sched-deps.c:1281:4
     CT: VEC_haifa_deps_insn_data_def_base_index at sched-int.h:846:0
     RF: VEC_haifa_deps_insn_data_def_base_index at sched-int.h:846:1
-  Occurrences: 25
-
-Program call removed
-  Before events:
-    CF: sd_resolve_dep at sched-deps.c:1281:4
-    CT: VEC_int_base_index at vecprim.h:31:0
-    RF: VEC_int_base_index at vecprim.h:31:1
-  Occurrences: 15
+  Occurrences: 2
 
 Program call removed
   Before events:
@@ -40330,7 +38276,7 @@ Program call removed
     CT: Jump to external code for calloc
     RF: Jump to external code for calloc
     RF: xcalloc at xmalloc.c:166:3
-  Occurrences: 1
+  Occurrences: 3
 
 Program call removed
   Before events:
@@ -40527,24 +38473,10 @@ Program call removed
     CF: simplify_stmt_using_ranges at tree-vrp.c:7002:12
     CT: gimple_code at gimple.h:1053:0
     RF: gimple_code at gimple.h:1054:3
-  Occurrences: 1
-
-Program call removed
-  Before events:
-    CF: simplify_stmt_using_ranges at tree-vrp.c:7002:12
-    CT: gimple_code at gimple.h:1053:0
-    RF: gimple_code at gimple.h:1054:3
     CF: simplify_stmt_using_ranges at tree-vrp.c:7004:12
     CT: gimple_code at gimple.h:1053:0
     RF: gimple_code at gimple.h:1054:3
-  Occurrences: 3
-
-Program call removed
-  Before events:
-    CF: simplify_stmt_using_ranges at tree-vrp.c:7004:12
-    CT: gimple_code at gimple.h:1053:0
-    RF: gimple_code at gimple.h:1054:3
-  Occurrences: 1
+  Occurrences: 4
 
 Program call removed
   Before events:
@@ -40684,7 +38616,7 @@ Program call removed
     CF: ssa_prop_init at tree-ssa-propagate.c:519:7
     CT: ei_start_1 at basic-block.h:697:0
     RF: ei_start_1 at basic-block.h:703:3
-  Occurrences: 19
+  Occurrences: 20
 
 Program call removed
   Before events:
@@ -40694,14 +38626,14 @@ Program call removed
     CF: ssa_prop_init at tree-ssa-propagate.c:525:3
     CT: ei_start_1 at basic-block.h:697:0
     RF: ei_start_1 at basic-block.h:703:3
-  Occurrences: 8
+  Occurrences: 7
 
 Program call removed
   Before events:
     CF: ssa_prop_init at tree-ssa-propagate.c:525:3
     CT: ei_start_1 at basic-block.h:697:0
     RF: ei_start_1 at basic-block.h:703:3
-  Occurrences: 1
+  Occurrences: 2
 
 Program call removed
   Before events:
@@ -40977,7 +38909,7 @@ Program call removed
     CF: vec_stack_free at vec.c:504:11
     CT: VEC_void_p_base_index at vec.c:386:0
     RF: VEC_void_p_base_index at vec.c:386:1
-  Occurrences: 37
+  Occurrences: 41
 
 Program call removed
   Before events:
@@ -40987,7 +38919,7 @@ Program call removed
     CF: vec_stack_free at vec.c:504:11
     CT: VEC_void_p_base_index at vec.c:386:0
     RF: VEC_void_p_base_index at vec.c:386:1
-  Occurrences: 48
+  Occurrences: 46
 
 Program call removed
   Before events:
@@ -41062,10 +38994,24 @@ Program call removed
     CF: walk_stmt_load_store_addr_ops at gimple.c:4434:12
     CT: gimple_code at gimple.h:1053:0
     RF: gimple_code at gimple.h:1054:3
+  Occurrences: 1
+
+Program call removed
+  Before events:
+    CF: walk_stmt_load_store_addr_ops at gimple.c:4434:12
+    CT: gimple_code at gimple.h:1053:0
+    RF: gimple_code at gimple.h:1054:3
     CF: walk_stmt_load_store_addr_ops at gimple.c:4489:12
     CT: gimple_code at gimple.h:1053:0
     RF: gimple_code at gimple.h:1054:3
-  Occurrences: 9
+  Occurrences: 8
+
+Program call removed
+  Before events:
+    CF: walk_stmt_load_store_addr_ops at gimple.c:4489:12
+    CT: gimple_code at gimple.h:1053:0
+    RF: gimple_code at gimple.h:1054:3
+  Occurrences: 1
 
 Program call removed
   Before events:
@@ -41083,15 +39029,9 @@ Program call removed
 
 Inlined reentry added
   After events:
-    IRF: SET_BIT at sbitmap.h:0:0
-    ICT: SET_BIT at sbitmap.h:63:0
-  Occurrences: 1
-
-Inlined reentry added
-  After events:
     IRF: VEC_constraint_t_base_length at tree-ssa-structalias.c:189:1
     ICT: VEC_constraint_t_base_length at tree-ssa-structalias.c:189:0
-  Occurrences: 5
+  Occurrences: 7
 
 Inlined reentry added
   After events:
@@ -41103,7 +39043,7 @@ Inlined reentry added
   After events:
     IRF: VEC_int_base_address at vecprim.h:31:1
     ICT: VEC_int_base_address at vecprim.h:31:0
-  Occurrences: 1
+  Occurrences: 8
 
 Inlined reentry added
   After events:
@@ -41119,20 +39059,14 @@ Inlined reentry added
 
 Inlined reentry added
   After events:
-    IRF: VEC_ipa_edge_args_t_base_length at ipa-prop.h:316:1
-    ICT: VEC_ipa_edge_args_t_base_length at ipa-prop.h:316:0
-  Occurrences: 2
-
-Inlined reentry added
-  After events:
-    IRF: VEC_ipa_edge_args_t_gc_safe_grow_cleared at ipa-prop.h:0:0
-    ICT: VEC_ipa_edge_args_t_gc_safe_grow_cleared at ipa-prop.h:317:0
+    IRF: VEC_ipa_reference_vars_info_t_heap_safe_grow_cleared at ipa-reference.c:0:0
+    ICT: VEC_ipa_reference_vars_info_t_heap_safe_grow_cleared at ipa-reference.c:174:0
   Occurrences: 1
 
 Inlined reentry added
   After events:
-    IRF: VEC_ipa_reference_vars_info_t_heap_safe_grow_cleared at ipa-reference.c:0:0
-    ICT: VEC_ipa_reference_vars_info_t_heap_safe_grow_cleared at ipa-reference.c:174:0
+    IRF: VEC_loop_p_base_iterate at cfgloop.h:85:1
+    ICT: VEC_loop_p_base_iterate at cfgloop.h:85:0
   Occurrences: 1
 
 Inlined reentry added
@@ -41145,7 +39079,7 @@ Inlined reentry added
   After events:
     IRF: VEC_tree_base_length at tree.h:182:1
     ICT: VEC_tree_base_length at tree.h:182:0
-  Occurrences: 4
+  Occurrences: 1
 
 Inlined reentry added
   After events:
@@ -41157,19 +39091,25 @@ Inlined reentry added
   After events:
     IRF: VEC_varinfo_t_base_length at tree-ssa-structalias.c:0:0
     ICT: VEC_varinfo_t_base_length at tree-ssa-structalias.c:273:0
-  Occurrences: 8
+  Occurrences: 7
 
 Inlined reentry added
   After events:
     IRF: VEC_varinfo_t_base_length at tree-ssa-structalias.c:273:1
     ICT: VEC_varinfo_t_base_length at tree-ssa-structalias.c:273:0
-  Occurrences: 28
+  Occurrences: 34
+
+Inlined reentry added
+  After events:
+    IRF: _cpp_get_fresh_line at cpp_lex.c:0:0
+    ICT: _cpp_get_fresh_line at cpp_lex.c:1310:0
+  Occurrences: 1
 
 Inlined reentry added
   After events:
     IRF: add_graph_edge at tree-ssa-structalias.c:0:0
     ICT: add_graph_edge at tree-ssa-structalias.c:1066:0
-  Occurrences: 2
+  Occurrences: 5
 
 Inlined reentry added
   After events:
@@ -41181,25 +39121,31 @@ Inlined reentry added
   After events:
     IRF: add_line_note at cpp_lex.c:91:21
     ICT: add_line_note at cpp_lex.c:86:0
-  Occurrences: 37
+  Occurrences: 31
 
 Inlined reentry added
   After events:
     IRF: add_pred_graph_edge at tree-ssa-structalias.c:1057:22
     ICT: add_pred_graph_edge at tree-ssa-structalias.c:1053:0
-  Occurrences: 1
+  Occurrences: 2
+
+Inlined reentry added
+  After events:
+    IRF: bitmap_elt_clear_from at bitmap.c:249:39
+    ICT: bitmap_elt_clear_from at bitmap.c:246:0
+  Occurrences: 5
 
 Inlined reentry added
   After events:
     IRF: bmp_iter_set at bitmap.h:0:0
     ICT: bmp_iter_set at bitmap.h:393:0
-  Occurrences: 4
+  Occurrences: 9
 
 Inlined reentry added
   After events:
-    IRF: c_parser_next_token_is at c-parser.c:335:45
-    ICT: c_parser_next_token_is at c-parser.c:333:0
-  Occurrences: 2
+    IRF: c_parser_peek_token at c-parser.c:0:0
+    ICT: c_parser_peek_token at c-parser.c:319:0
+  Occurrences: 1
 
 Inlined reentry added
   After events:
@@ -41209,9 +39155,15 @@ Inlined reentry added
 
 Inlined reentry added
   After events:
+    IRF: calculate_allocation at vec.c:0:17
+    ICT: calculate_allocation at vec.c:177:0
+  Occurrences: 1
+
+Inlined reentry added
+  After events:
     IRF: cmp_significands at real.c:0:0
     ICT: cmp_significands at real.c:360:0
-  Occurrences: 3
+  Occurrences: 5
 
 Inlined reentry added
   After events:
@@ -41227,15 +39179,9 @@ Inlined reentry added
 
 Inlined reentry added
   After events:
-    IRF: constraint_expr_less at tree-ssa-structalias.c:0:0
-    ICT: constraint_expr_less at tree-ssa-structalias.c:748:0
-  Occurrences: 1
-
-Inlined reentry added
-  After events:
     IRF: cselib_record_set at cselib.c:0:0
     ICT: cselib_record_set at cselib.c:1968:0
-  Occurrences: 3
+  Occurrences: 6
 
 Inlined reentry added
   After events:
@@ -41247,61 +39193,55 @@ Inlined reentry added
   After events:
     IRF: def_builtin_1 at c-common.c:0:0
     ICT: def_builtin_1 at c-common.c:5178:0
-  Occurrences: 9
+  Occurrences: 11
 
 Inlined reentry added
   After events:
     IRF: def_builtin_const at i386.c:0:0
     ICT: def_builtin_const at i386.c:21417:0
-  Occurrences: 143
+  Occurrences: 149
 
 Inlined reentry added
   After events:
     IRF: def_builtin_const at i386.c:21424:43
     ICT: def_builtin_const at i386.c:21417:0
-  Occurrences: 147
+  Occurrences: 149
 
 Inlined reentry added
   After events:
     IRF: default_binds_local_p_1 at varasm.c:0:0
     ICT: default_binds_local_p_1 at varasm.c:6664:0
-  Occurrences: 14
-
-Inlined reentry added
-  After events:
-    IRF: defer_or_phi_translate_block at tree-ssa-pre.c:0:0
-    ICT: defer_or_phi_translate_block at tree-ssa-pre.c:2207:0
-  Occurrences: 1
+  Occurrences: 20
 
 Inlined reentry added
   After events:
     IRF: deletable_insn_p_1 at dce.c:0:0
     ICT: deletable_insn_p_1 at dce.c:66:0
-  Occurrences: 1
+  Occurrences: 3
 
 Inlined reentry added
   After events:
     IRF: deletable_insn_p_1 at dce.c:82:14
     ICT: deletable_insn_p_1 at dce.c:66:0
-  Occurrences: 2
+  Occurrences: 3
 
 Inlined reentry added
   After events:
     IRF: dfs_fst_edge at graphds.c:0:0
     ICT: dfs_fst_edge at graphds.c:165:0
-  Occurrences: 12
+  Occurrences: 19
 
 Inlined reentry added
   After events:
     IRF: dfs_fst_edge at graphds.c:169:8
     ICT: dfs_fst_edge at graphds.c:165:0
-  Occurrences: 30
+  Occurrences: 35
 
 Inlined reentry added
   After events:
     IRF: dom_convert_dir_to_idx at dominance.c:193:3
     ICT: dom_convert_dir_to_idx at dominance.c:191:0
-  Occurrences: 3
+  Occurrences: 8
 
 Inlined reentry added
   After events:
@@ -41313,19 +39253,19 @@ Inlined reentry added
   After events:
     IRF: ei_end_p at basic-block.h:0:0
     ICT: ei_end_p at basic-block.h:721:0
-  Occurrences: 10
+  Occurrences: 16
 
 Inlined reentry added
   After events:
     IRF: ei_end_p at basic-block.h:723:19
     ICT: ei_end_p at basic-block.h:721:0
-  Occurrences: 95
+  Occurrences: 102
 
 Inlined reentry added
   After events:
     IRF: find_reg_class_closure at ira.c:0:0
     ICT: find_reg_class_closure at ira.c:1124:0
-  Occurrences: 6
+  Occurrences: 16
 
 Inlined reentry added
   After events:
@@ -41337,13 +39277,13 @@ Inlined reentry added
   After events:
     IRF: free_topo_info at tree-ssa-structalias.c:0:0
     ICT: free_topo_info at tree-ssa-structalias.c:1491:0
-  Occurrences: 2
+  Occurrences: 3
 
 Inlined reentry added
   After events:
     IRF: gen_const_vector at emit-rtl.c:0:0
     ICT: gen_const_vector at emit-rtl.c:5616:0
-  Occurrences: 59
+  Occurrences: 57
 
 Inlined reentry added
   After events:
@@ -41355,7 +39295,7 @@ Inlined reentry added
   After events:
     IRF: gen_const_vector at emit-rtl.c:5626:3
     ICT: gen_const_vector at emit-rtl.c:5616:0
-  Occurrences: 7
+  Occurrences: 5
 
 Inlined reentry added
   After events:
@@ -41367,19 +39307,19 @@ Inlined reentry added
   After events:
     IRF: get_zero at real.c:0:0
     ICT: get_zero at real.c:127:0
-  Occurrences: 1332
+  Occurrences: 1423
 
 Inlined reentry added
   After events:
     IRF: get_zero at real.c:130:11
     ICT: get_zero at real.c:127:0
-  Occurrences: 34
+  Occurrences: 36
 
 Inlined reentry added
   After events:
     IRF: gimple_body at gimple.c:0:0
     ICT: gimple_body at gimple.c:1700:0
-  Occurrences: 8
+  Occurrences: 5
 
 Inlined reentry added
   After events:
@@ -41395,45 +39335,39 @@ Inlined reentry added
 
 Inlined reentry added
   After events:
-    IRF: gimplify_modify_expr at gimplify.c:0:0
-    ICT: gimplify_modify_expr at gimplify.c:4401:0
-  Occurrences: 2
+    IRF: gimple_op at gimple.h:0:0
+    ICT: gimple_op at gimple.h:1631:0
+  Occurrences: 1
 
 Inlined reentry added
   After events:
     IRF: higher_prime_index at hashtab.c:0:0
     ICT: higher_prime_index at hashtab.c:177:0
-  Occurrences: 169
+  Occurrences: 203
 
 Inlined reentry added
   After events:
     IRF: htab_create_alloc at hashtab.c:0:0
     ICT: htab_create_alloc at hashtab.c:295:0
-  Occurrences: 275
+  Occurrences: 263
 
 Inlined reentry added
   After events:
     IRF: htab_traverse_noresize at hashtab.c:0:0
     ICT: htab_traverse_noresize at hashtab.c:744:0
-  Occurrences: 11
+  Occurrences: 14
 
 Inlined reentry added
   After events:
     IRF: in_hard_reg_set_p at regs.h:0:0
     ICT: in_hard_reg_set_p at regs.h:335:0
-  Occurrences: 1150
+  Occurrences: 1147
 
 Inlined reentry added
   After events:
     IRF: init_insn_codes at optabs.c:0:0
     ICT: init_insn_codes at optabs.c:5463:0
-  Occurrences: 67
-
-Inlined reentry added
-  After events:
-    IRF: initialize_argument_information at calls.c:0:0
-    ICT: initialize_argument_information at calls.c:932:0
-  Occurrences: 1
+  Occurrences: 79
 
 Inlined reentry added
   After events:
@@ -41443,39 +39377,21 @@ Inlined reentry added
 
 Inlined reentry added
   After events:
-    IRF: ipa_free_all_node_params at ipa-prop.c:0:0
-    ICT: ipa_free_all_node_params at ipa-prop.c:1223:0
-  Occurrences: 1
-
-Inlined reentry added
-  After events:
-    IRF: ipa_free_node_params_substructures at ipa-prop.c:0:0
-    ICT: ipa_free_node_params_substructures at ipa-prop.c:1205:0
-  Occurrences: 1
-
-Inlined reentry added
-  After events:
-    IRF: ix86_function_sseregparm at i386.c:0:0
-    ICT: ix86_function_sseregparm at i386.c:4614:0
-  Occurrences: 2
-
-Inlined reentry added
-  After events:
     IRF: lookup_attribute at tree.c:0:0
     ICT: lookup_attribute at tree.c:5088:0
-  Occurrences: 13
+  Occurrences: 8
 
 Inlined reentry added
   After events:
     IRF: lshift_significand_1 at real.c:0:0
     ICT: lshift_significand_1 at real.c:261:0
-  Occurrences: 1695
+  Occurrences: 1725
 
 Inlined reentry added
   After events:
     IRF: lshift_significand_1 at real.c:267:13
     ICT: lshift_significand_1 at real.c:261:0
-  Occurrences: 1617
+  Occurrences: 1704
 
 Inlined reentry added
   After events:
@@ -41493,13 +39409,7 @@ Inlined reentry added
   After events:
     IRF: marked_insn_p at dce.c:160:10
     ICT: marked_insn_p at dce.c:155:0
-  Occurrences: 9
-
-Inlined reentry added
-  After events:
-    IRF: new_elt_loc_list at cselib.c:0:0
-    ICT: new_elt_loc_list at cselib.c:222:0
-  Occurrences: 1
+  Occurrences: 19
 
 Inlined reentry added
   After events:
@@ -41511,25 +39421,31 @@ Inlined reentry added
   After events:
     IRF: op_iter_init_use at tree-flow-inline.h:0:0
     ICT: op_iter_init_use at tree-flow-inline.h:768:0
-  Occurrences: 4
+  Occurrences: 5
 
 Inlined reentry added
   After events:
     IRF: op_iter_next_tree at tree-flow-inline.h:0:0
     ICT: op_iter_next_tree at tree-flow-inline.h:699:0
-  Occurrences: 2
+  Occurrences: 3
 
 Inlined reentry added
   After events:
     IRF: op_iter_next_use at tree-flow-inline.h:0:0
     ICT: op_iter_next_use at tree-flow-inline.h:659:0
-  Occurrences: 2
+  Occurrences: 1
+
+Inlined reentry added
+  After events:
+    IRF: op_iter_next_use at tree-flow-inline.h:665:7
+    ICT: op_iter_next_use at tree-flow-inline.h:659:0
+  Occurrences: 1
 
 Inlined reentry added
   After events:
     IRF: reg_fits_class_p at recog.c:0:0
     ICT: reg_fits_class_p at recog.c:2728:0
-  Occurrences: 1090
+  Occurrences: 1052
 
 Inlined reentry added
   After events:
@@ -41539,15 +39455,39 @@ Inlined reentry added
 
 Inlined reentry added
   After events:
+    IRF: sched_init_luids at haifa-sched.c:0:0
+    ICT: sched_init_luids at haifa-sched.c:5388:0
+  Occurrences: 1
+
+Inlined reentry added
+  After events:
+    IRF: sched_scan at haifa-sched.c:0:0
+    ICT: sched_scan at haifa-sched.c:5307:0
+  Occurrences: 1
+
+Inlined reentry added
+  After events:
     IRF: setup_class_hard_regs at ira.c:0:0
     ICT: setup_class_hard_regs at ira.c:428:0
-  Occurrences: 554
+  Occurrences: 567
 
 Inlined reentry added
   After events:
     IRF: setup_reg_subclasses at ira.c:0:0
     ICT: setup_reg_subclasses at ira.c:667:0
-  Occurrences: 4
+  Occurrences: 6
+
+Inlined reentry added
+  After events:
+    IRF: simplify_immed_subreg at simplify-rtx.c:0:0
+    ICT: simplify_immed_subreg at simplify-rtx.c:4829:0
+  Occurrences: 1
+
+Inlined reentry added
+  After events:
+    IRF: single_succ_p at basic-block.h:628:10
+    ICT: single_succ_p at basic-block.h:626:0
+  Occurrences: 2
 
 Inlined reentry added
   After events:
@@ -41557,45 +39497,45 @@ Inlined reentry added
 
 Inlined reentry added
   After events:
-    IRF: stmt_ends_bb_p at tree-cfg.c:0:0
-    ICT: stmt_ends_bb_p at tree-cfg.c:2319:0
-  Occurrences: 2
+    IRF: strip_invariant_refs at gimple.c:0:0
+    ICT: strip_invariant_refs at gimple.c:2554:0
+  Occurrences: 1
 
 Inlined reentry added
   After events:
     IRF: suitable_for_tail_opt_p at tree-tailcall.c:0:0
     ICT: suitable_for_tail_opt_p at tree-tailcall.c:131:0
-  Occurrences: 1
+  Occurrences: 2
 
 Inlined reentry added
   After events:
     IRF: tree_cons_stat at tree.c:0:0
     ICT: tree_cons_stat at tree.c:2098:0
-  Occurrences: 8
+  Occurrences: 6
 
 Inlined reentry added
   After events:
     IRF: tree_cons_stat at tree.c:2102:17
     ICT: tree_cons_stat at tree.c:2098:0
-  Occurrences: 3
+  Occurrences: 4
 
 Inlined reentry added
   After events:
     IRF: tree_cons_stat at tree.c:2104:3
     ICT: tree_cons_stat at tree.c:2098:0
-  Occurrences: 19
+  Occurrences: 9
 
 Inlined reentry added
   After events:
     IRF: tree_cons_stat at tree.c:2114:21
     ICT: tree_cons_stat at tree.c:2098:0
-  Occurrences: 6
+  Occurrences: 5
 
 Inlined reentry added
   After events:
     IRF: validate_canon_reg at cse.c:0:0
     ICT: validate_canon_reg at cse.c:2862:0
-  Occurrences: 3
+  Occurrences: 2
 
 Inlined noise added
   After events:
@@ -41607,49 +39547,49 @@ Inlined noise added
   After events:
     ICT: SET_BIT at sbitmap.h:63:0
     IRF: SET_BIT at sbitmap.h:73:5
-  Occurrences: 17
+  Occurrences: 18
 
 Inlined noise added
   After events:
-    ICT: VEC_alias_pair_base_iterate at tree.h:197:0
-    IRF: VEC_alias_pair_base_iterate at tree.h:197:1
+    ICT: VEC_basic_block_base_quick_push at basic-block.h:281:0
+    IRF: VEC_basic_block_base_quick_push at basic-block.h:281:1
   Occurrences: 1
 
 Inlined noise added
   After events:
     ICT: VEC_ce_s_base_iterate at tree-ssa-structalias.c:406:0
     IRF: VEC_ce_s_base_iterate at tree-ssa-structalias.c:406:1
-  Occurrences: 3
+  Occurrences: 1
 
 Inlined noise added
   After events:
     ICT: VEC_constraint_t_base_length at tree-ssa-structalias.c:189:0
     IRF: VEC_constraint_t_base_length at tree-ssa-structalias.c:189:1
-  Occurrences: 14
+  Occurrences: 10
 
 Inlined noise added
   After events:
     ICT: VEC_constraint_t_base_lower_bound at tree-ssa-structalias.c:189:0
     IRF: VEC_constraint_t_base_lower_bound at tree-ssa-structalias.c:0:0
-  Occurrences: 10
+  Occurrences: 12
 
 Inlined noise added
   After events:
     ICT: VEC_df_ref_base_address at df-scan.c:49:0
     IRF: VEC_df_ref_base_address at df-scan.c:49:1
-  Occurrences: 7
+  Occurrences: 4
 
 Inlined noise added
   After events:
     ICT: VEC_df_ref_base_length at df-scan.c:49:0
     IRF: VEC_df_ref_base_length at df-scan.c:49:1
-  Occurrences: 88
+  Occurrences: 86
 
 Inlined noise added
   After events:
     ICT: VEC_edge_base_length at basic-block.h:150:0
     IRF: VEC_edge_base_length at basic-block.h:150:1
-  Occurrences: 30
+  Occurrences: 28
 
 Inlined noise added
   After events:
@@ -41661,7 +39601,7 @@ Inlined noise added
   After events:
     ICT: VEC_haifa_deps_insn_data_def_base_length at sched-int.h:846:0
     IRF: VEC_haifa_deps_insn_data_def_base_length at sched-int.h:846:1
-  Occurrences: 2
+  Occurrences: 3
 
 Inlined noise added
   After events:
@@ -41671,21 +39611,9 @@ Inlined noise added
 
 Inlined noise added
   After events:
-    ICT: VEC_haifa_insn_data_def_base_length at sched-int.h:825:0
-    IRF: VEC_haifa_insn_data_def_base_length at sched-int.h:825:1
-  Occurrences: 1
-
-Inlined noise added
-  After events:
     ICT: VEC_int_base_address at vecprim.h:31:0
     IRF: VEC_int_base_address at vecprim.h:31:1
-  Occurrences: 12
-
-Inlined noise added
-  After events:
-    ICT: VEC_int_base_length at vecprim.h:31:0
-    IRF: VEC_int_base_length at vecprim.h:0:0
-  Occurrences: 1
+  Occurrences: 7
 
 Inlined noise added
   After events:
@@ -41695,9 +39623,21 @@ Inlined noise added
 
 Inlined noise added
   After events:
+    ICT: VEC_ipa_edge_args_t_base_iterate at ipa-prop.h:316:0
+    IRF: VEC_ipa_edge_args_t_base_iterate at ipa-prop.h:316:1
+  Occurrences: 1
+
+Inlined noise added
+  After events:
+    ICT: VEC_ipa_edge_args_t_base_length at ipa-prop.h:316:0
+    IRF: VEC_ipa_edge_args_t_base_length at ipa-prop.h:316:1
+  Occurrences: 3
+
+Inlined noise added
+  After events:
     ICT: VEC_ipa_node_params_t_base_length at ipa-prop.h:314:0
     IRF: VEC_ipa_node_params_t_base_length at ipa-prop.h:314:1
-  Occurrences: 3
+  Occurrences: 2
 
 Inlined noise added
   After events:
@@ -41709,12 +39649,6 @@ Inlined noise added
   After events:
     ICT: VEC_pre_expr_heap_alloc at tree-ssa-pre.c:242:0
     IRF: VEC_pre_expr_heap_alloc at tree-ssa-pre.c:242:1
-  Occurrences: 2
-
-Inlined noise added
-  After events:
-    ICT: VEC_rtx_base_length at rtl.h:200:0
-    IRF: VEC_rtx_base_length at rtl.h:200:1
   Occurrences: 1
 
 Inlined noise added
@@ -41725,57 +39659,45 @@ Inlined noise added
 
 Inlined noise added
   After events:
-    ICT: VEC_tree_base_iterate at tree.h:182:0
-    IRF: VEC_tree_base_iterate at tree.h:182:1
-  Occurrences: 1
-
-Inlined noise added
-  After events:
     ICT: VEC_tree_base_length at tree.h:182:0
     IRF: VEC_tree_base_length at tree.h:182:1
-  Occurrences: 1
+  Occurrences: 4
 
 Inlined noise added
   After events:
     ICT: VEC_varinfo_t_base_length at tree-ssa-structalias.c:273:0
     IRF: VEC_varinfo_t_base_length at tree-ssa-structalias.c:0:0
-  Occurrences: 9
+  Occurrences: 8
 
 Inlined noise added
   After events:
     ICT: VEC_varinfo_t_base_length at tree-ssa-structalias.c:273:0
     IRF: VEC_varinfo_t_base_length at tree-ssa-structalias.c:273:1
-  Occurrences: 44
-
-Inlined noise added
-  After events:
-    ICT: _cpp_get_fresh_line at cpp_lex.c:1310:0
-    IRF: _cpp_get_fresh_line at cpp_lex.c:0:0
-  Occurrences: 1
+  Occurrences: 36
 
 Inlined noise added
   After events:
     ICT: add_graph_edge at tree-ssa-structalias.c:1066:0
     IRF: add_graph_edge at tree-ssa-structalias.c:0:0
-  Occurrences: 4
+  Occurrences: 2
 
 Inlined noise added
   After events:
     ICT: add_line_note at cpp_lex.c:86:0
     IRF: add_line_note at cpp_lex.c:97:21
-  Occurrences: 18
+  Occurrences: 22
 
 Inlined noise added
   After events:
     ICT: alloc_expansion_token at cpp_macro.c:1612:0
     IRF: alloc_expansion_token at cpp_macro.c:1617:66
-  Occurrences: 106
+  Occurrences: 99
 
 Inlined noise added
   After events:
     ICT: attach_dep_link at sched-deps.c:231:0
     IRF: attach_dep_link at sched-deps.c:251:15
-  Occurrences: 20
+  Occurrences: 15
 
 Inlined noise added
   After events:
@@ -41787,19 +39709,19 @@ Inlined noise added
   After events:
     ICT: bb_seq at gimple.h:237:0
     IRF: bb_seq at gimple.h:239:68
-  Occurrences: 1
+  Occurrences: 2
 
 Inlined noise added
   After events:
     ICT: bitmap_elt_clear_from at bitmap.c:246:0
     IRF: bitmap_elt_clear_from at bitmap.c:0:0
-  Occurrences: 8
+  Occurrences: 3
 
 Inlined noise added
   After events:
     ICT: bmp_iter_set at bitmap.h:393:0
     IRF: bmp_iter_set at bitmap.h:0:0
-  Occurrences: 14
+  Occurrences: 8
 
 Inlined noise added
   After events:
@@ -41815,51 +39737,27 @@ Inlined noise added
 
 Inlined noise added
   After events:
-    ICT: c_parser_peek_token at c-parser.c:319:0
-    IRF: c_parser_peek_token at c-parser.c:0:0
-  Occurrences: 1
+    ICT: c_parser_next_token_is at c-parser.c:333:0
+    IRF: c_parser_next_token_is at c-parser.c:335:45
+  Occurrences: 2
 
 Inlined noise added
   After events:
     ICT: calculate_allocation at vec.c:177:0
     IRF: calculate_allocation at vec.c:184:7
-  Occurrences: 216
-
-Inlined noise added
-  After events:
-    ICT: check_call at ipa-pure-const.c:259:0
-    IRF: check_call at ipa-pure-const.c:0:0
-  Occurrences: 2
+  Occurrences: 200
 
 Inlined noise added
   After events:
     ICT: check_format_string at c-format.c:126:0
     IRF: check_format_string at c-format.c:0:0
-  Occurrences: 1
+  Occurrences: 2
 
 Inlined noise added
   After events:
     ICT: cmp_significands at real.c:360:0
     IRF: cmp_significands at real.c:0:0
-  Occurrences: 31
-
-Inlined noise added
-  After events:
-    ICT: component_uses_parent_alias_set at alias.c:539:0
-    IRF: component_uses_parent_alias_set at alias.c:0:0
-  Occurrences: 1
-
-Inlined noise added
-  After events:
-    ICT: compute_inverse at ggc-page.c:1497:0
-    IRF: compute_inverse at ggc-page.c:0:0
-  Occurrences: 1
-
-Inlined noise added
-  After events:
-    ICT: compute_inverse at ggc-page.c:1497:0
-    IRF: compute_inverse at ggc-page.c:1515:21
-  Occurrences: 1
+  Occurrences: 26
 
 Inlined noise added
   After events:
@@ -41877,91 +39775,91 @@ Inlined noise added
   After events:
     ICT: cselib_record_set at cselib.c:1968:0
     IRF: cselib_record_set at cselib.c:0:0
-  Occurrences: 9
+  Occurrences: 4
 
 Inlined noise added
   After events:
     ICT: def_builtin at i386.c:21380:0
     IRF: def_builtin at i386.c:0:0
-  Occurrences: 322
+  Occurrences: 320
 
 Inlined noise added
   After events:
     ICT: def_builtin_const at i386.c:21417:0
     IRF: def_builtin_const at i386.c:0:0
-  Occurrences: 178
+  Occurrences: 167
 
 Inlined noise added
   After events:
     ICT: def_builtin_const at i386.c:21417:0
     IRF: def_builtin_const at i386.c:21424:43
-  Occurrences: 169
+  Occurrences: 161
 
 Inlined noise added
   After events:
     ICT: default_binds_local_p_1 at varasm.c:6664:0
     IRF: default_binds_local_p_1 at varasm.c:0:0
-  Occurrences: 10
+  Occurrences: 4
+
+Inlined noise added
+  After events:
+    ICT: defer_or_phi_translate_block at tree-ssa-pre.c:2207:0
+    IRF: defer_or_phi_translate_block at tree-ssa-pre.c:0:0
+  Occurrences: 1
 
 Inlined noise added
   After events:
     ICT: deletable_insn_p_1 at dce.c:66:0
     IRF: deletable_insn_p_1 at dce.c:0:0
-  Occurrences: 5
+  Occurrences: 4
 
 Inlined noise added
   After events:
     ICT: df_lr_get_bb_info at df.h:1052:0
     IRF: df_lr_get_bb_info at df.h:1055:37
-  Occurrences: 1
-
-Inlined noise added
-  After events:
-    ICT: df_record_entry_block_defs at df-scan.c:4000:0
-    IRF: df_record_entry_block_defs at df-scan.c:4003:3
-  Occurrences: 1
+  Occurrences: 3
 
 Inlined noise added
   After events:
     ICT: dfs_edge_dest at graphds.c:133:0
     IRF: dfs_edge_dest at graphds.c:135:10
-  Occurrences: 8
+  Occurrences: 11
 
 Inlined noise added
   After events:
     ICT: dfs_fst_edge at graphds.c:165:0
     IRF: dfs_fst_edge at graphds.c:0:0
-  Occurrences: 41
+  Occurrences: 33
 
 Inlined noise added
   After events:
     ICT: dfs_fst_edge at graphds.c:165:0
     IRF: dfs_fst_edge at graphds.c:169:8
-  Occurrences: 68
+  Occurrences: 64
 
 Inlined noise added
   After events:
     ICT: dom_convert_dir_to_idx at dominance.c:191:0
     IRF: dom_convert_dir_to_idx at dominance.c:193:3
-  Occurrences: 33
+  Occurrences: 24
 
 Inlined noise added
   After events:
     ICT: ei_cond at basic-block.h:771:0
     IRF: ei_cond at basic-block.h:0:0
-  Occurrences: 55
+  Occurrences: 56
 
 Inlined noise added
   After events:
     ICT: ei_end_p at basic-block.h:721:0
     IRF: ei_end_p at basic-block.h:0:0
-  Occurrences: 189
+  Occurrences: 170
 
 Inlined noise added
   After events:
     ICT: ei_end_p at basic-block.h:721:0
     IRF: ei_end_p at basic-block.h:723:19
-  Occurrences: 301
+  Occurrences: 284
 
 Inlined noise added
   After events:
@@ -41979,37 +39877,31 @@ Inlined noise added
   After events:
     ICT: et_new_occ at et-forest.c:444:0
     IRF: et_new_occ at et-forest.c:459:11
-  Occurrences: 58
+  Occurrences: 59
 
 Inlined noise added
   After events:
     ICT: find_reg_class_closure at ira.c:1124:0
     IRF: find_reg_class_closure at ira.c:0:0
-  Occurrences: 14
+  Occurrences: 5
 
 Inlined noise added
   After events:
     ICT: fini_pre at tree-ssa-pre.c:4691:0
     IRF: fini_pre at tree-ssa-pre.c:0:0
-  Occurrences: 1
+  Occurrences: 2
 
 Inlined noise added
   After events:
     ICT: fit_double_type at fold-const.c:204:0
     IRF: fit_double_type at fold-const.c:0:0
-  Occurrences: 24
+  Occurrences: 21
 
 Inlined noise added
   After events:
     ICT: forms_identifier_p at cpp_lex.c:475:0
     IRF: forms_identifier_p at cpp_lex.c:0:0
-  Occurrences: 94
-
-Inlined noise added
-  After events:
-    ICT: function_arg_32 at i386.c:5914:0
-    IRF: function_arg_32 at i386.c:0:0
-  Occurrences: 1
+  Occurrences: 101
 
 Inlined noise added
   After events:
@@ -42021,25 +39913,25 @@ Inlined noise added
   After events:
     ICT: gen_const_vector at emit-rtl.c:5616:0
     IRF: gen_const_vector at emit-rtl.c:0:0
-  Occurrences: 3
+  Occurrences: 6
 
 Inlined noise added
   After events:
     ICT: gen_const_vector at emit-rtl.c:5616:0
     IRF: gen_const_vector at emit-rtl.c:5626:3
-  Occurrences: 3
+  Occurrences: 4
 
 Inlined noise added
   After events:
     ICT: get_back_and_forw_lists at sched-deps.c:1195:0
     IRF: get_back_and_forw_lists at sched-deps.c:0:0
-  Occurrences: 30
+  Occurrences: 25
 
 Inlined noise added
   After events:
     ICT: get_zero at real.c:127:0
     IRF: get_zero at real.c:0:0
-  Occurrences: 2488
+  Occurrences: 2393
 
 Inlined noise added
   After events:
@@ -42057,7 +39949,7 @@ Inlined noise added
   After events:
     ICT: gimple_body at gimple.c:1700:0
     IRF: gimple_body at gimple.c:1703:10
-  Occurrences: 7
+  Occurrences: 9
 
 Inlined noise added
   After events:
@@ -42069,43 +39961,25 @@ Inlined noise added
   After events:
     ICT: gimple_code at gimple.h:1052:0
     IRF: gimple_code at gimple.h:1054:20
-  Occurrences: 9
-
-Inlined noise added
-  After events:
-    ICT: gimple_def_ops at gimple.h:1292:0
-    IRF: gimple_def_ops at gimple.h:1296:26
-  Occurrences: 1
+  Occurrences: 8
 
 Inlined noise added
   After events:
     ICT: gimple_has_mem_ops at gimple.h:1283:0
     IRF: gimple_has_mem_ops at gimple.h:1285:43
-  Occurrences: 3
-
-Inlined noise added
-  After events:
-    ICT: gimple_has_ops at gimple.h:1274:0
-    IRF: gimple_has_ops at gimple.h:1276:41
   Occurrences: 1
-
-Inlined noise added
-  After events:
-    ICT: gimple_has_volatile_ops at gimple.h:1477:0
-    IRF: gimple_has_volatile_ops at gimple.h:0:0
-  Occurrences: 2
 
 Inlined noise added
   After events:
     ICT: gimple_op at gimple.h:1631:0
     IRF: gimple_op at gimple.h:1638:14
-  Occurrences: 3
+  Occurrences: 5
 
 Inlined noise added
   After events:
     ICT: gimple_ops at gimple.h:1614:0
     IRF: gimple_ops at gimple.h:1624:32
-  Occurrences: 11
+  Occurrences: 13
 
 Inlined noise added
   After events:
@@ -42117,7 +39991,13 @@ Inlined noise added
   After events:
     ICT: gimple_seq_last at gimple.h:178:0
     IRF: gimple_seq_last at gimple.h:180:10
-  Occurrences: 2
+  Occurrences: 1
+
+Inlined noise added
+  After events:
+    ICT: gimplify_modify_expr at gimplify.c:4401:0
+    IRF: gimplify_modify_expr at gimplify.c:0:0
+  Occurrences: 1
 
 Inlined noise added
   After events:
@@ -42147,7 +40027,7 @@ Inlined noise added
   After events:
     ICT: gsi_last at gimple.h:4435:0
     IRF: gsi_last at gimple.h:0:0
-  Occurrences: 1
+  Occurrences: 2
 
 Inlined noise added
   After events:
@@ -42159,7 +40039,13 @@ Inlined noise added
   After events:
     ICT: gsi_last_bb at gimple.h:4450:0
     IRF: gsi_last_bb at gimple.h:0:0
-  Occurrences: 2
+  Occurrences: 1
+
+Inlined noise added
+  After events:
+    ICT: gsi_start at gimple.h:4403:0
+    IRF: gsi_start at gimple.h:4409:11
+  Occurrences: 1
 
 Inlined noise added
   After events:
@@ -42177,31 +40063,31 @@ Inlined noise added
   After events:
     ICT: higher_prime_index at hashtab.c:177:0
     IRF: higher_prime_index at hashtab.c:0:0
-  Occurrences: 610
+  Occurrences: 546
 
 Inlined noise added
   After events:
     ICT: htab_create_alloc at hashtab.c:295:0
     IRF: htab_create_alloc at hashtab.c:0:0
-  Occurrences: 184
+  Occurrences: 215
 
 Inlined noise added
   After events:
     ICT: htab_traverse_noresize at hashtab.c:744:0
     IRF: htab_traverse_noresize at hashtab.c:0:0
-  Occurrences: 13
+  Occurrences: 8
 
 Inlined noise added
   After events:
     ICT: in_hard_reg_set_p at regs.h:335:0
     IRF: in_hard_reg_set_p at regs.h:0:0
-  Occurrences: 1142
+  Occurrences: 1118
 
 Inlined noise added
   After events:
     ICT: init_insn_codes at optabs.c:5463:0
     IRF: init_insn_codes at optabs.c:0:0
-  Occurrences: 73
+  Occurrences: 62
 
 Inlined noise added
   After events:
@@ -42211,20 +40097,32 @@ Inlined noise added
 
 Inlined noise added
   After events:
+    ICT: initialize_argument_information at calls.c:932:0
+    IRF: initialize_argument_information at calls.c:0:27
+  Occurrences: 1
+
+Inlined noise added
+  After events:
+    ICT: initialize_argument_information at calls.c:932:0
+    IRF: initialize_argument_information at calls.c:1003:27
+  Occurrences: 1
+
+Inlined noise added
+  After events:
+    ICT: instantiate_new_reg at function.c:1294:0
+    IRF: instantiate_new_reg at function.c:0:0
+  Occurrences: 1
+
+Inlined noise added
+  After events:
     ICT: ipa_free_all_node_params at ipa-prop.c:1223:0
     IRF: ipa_free_all_node_params at ipa-prop.c:0:0
-  Occurrences: 1
+  Occurrences: 2
 
 Inlined noise added
   After events:
     ICT: ipa_free_node_params_substructures at ipa-prop.c:1205:0
-    IRF: ipa_free_node_params_substructures at ipa-prop.c:0:0
-  Occurrences: 1
-
-Inlined noise added
-  After events:
-    ICT: ipcp_compute_node_scale at ipa-cp.c:590:0
-    IRF: ipcp_compute_node_scale at ipa-cp.c:0:0
+    IRF: ipa_free_node_params_substructures at ipa-prop.c:1217:3
   Occurrences: 1
 
 Inlined noise added
@@ -42243,7 +40141,7 @@ Inlined noise added
   After events:
     ICT: is_gimple_variable at gimple.c:2691:0
     IRF: is_gimple_variable at gimple.c:2696:21
-  Occurrences: 4
+  Occurrences: 3
 
 Inlined noise added
   After events:
@@ -42265,33 +40163,39 @@ Inlined noise added
 
 Inlined noise added
   After events:
-    ICT: last_stmt at tree-cfg.c:2363:0
-    IRF: last_stmt at tree-cfg.c:0:0
+    ICT: ix86_function_sseregparm at i386.c:4614:0
+    IRF: ix86_function_sseregparm at i386.c:0:0
+  Occurrences: 1
+
+Inlined noise added
+  After events:
+    ICT: likely_eliminated_by_inlining_p at ipa-inline.c:1713:0
+    IRF: likely_eliminated_by_inlining_p at ipa-inline.c:0:0
   Occurrences: 1
 
 Inlined noise added
   After events:
     ICT: link_roots at dominance.c:452:0
     IRF: link_roots at dominance.c:0:0
-  Occurrences: 17
+  Occurrences: 18
 
 Inlined noise added
   After events:
     ICT: loop_outer at cfgloop.h:434:0
     IRF: loop_outer at cfgloop.h:0:0
-  Occurrences: 17
+  Occurrences: 16
 
 Inlined noise added
   After events:
     ICT: lshift_significand_1 at real.c:261:0
     IRF: lshift_significand_1 at real.c:0:0
-  Occurrences: 1832
+  Occurrences: 1738
 
 Inlined noise added
   After events:
     ICT: lshift_significand_1 at real.c:261:0
     IRF: lshift_significand_1 at real.c:267:13
-  Occurrences: 1952
+  Occurrences: 1825
 
 Inlined noise added
   After events:
@@ -42303,13 +40207,13 @@ Inlined noise added
   After events:
     ICT: mark_nonreg_stores at dce.c:212:0
     IRF: mark_nonreg_stores at dce.c:0:0
-  Occurrences: 1
+  Occurrences: 2
 
 Inlined noise added
   After events:
     ICT: marked_insn_p at dce.c:155:0
     IRF: marked_insn_p at dce.c:160:10
-  Occurrences: 57
+  Occurrences: 39
 
 Inlined noise added
   After events:
@@ -42327,19 +40231,19 @@ Inlined noise added
   After events:
     ICT: new_elt_loc_list at cselib.c:222:0
     IRF: new_elt_loc_list at cselib.c:0:0
-  Occurrences: 9
+  Occurrences: 11
 
 Inlined noise added
   After events:
     ICT: next_htab_element at tree-flow-inline.h:90:0
     IRF: next_htab_element at tree-flow-inline.h:92:24
-  Occurrences: 1
+  Occurrences: 2
 
 Inlined noise added
   After events:
     ICT: next_referenced_var at tree-flow-inline.h:124:0
     IRF: next_referenced_var at tree-flow-inline.h:0:0
-  Occurrences: 1
+  Occurrences: 3
 
 Inlined noise added
   After events:
@@ -42349,51 +40253,57 @@ Inlined noise added
 
 Inlined noise added
   After events:
+    ICT: op_iter_init at tree-flow-inline.h:742:0
+    IRF: op_iter_init at tree-flow-inline.h:0:0
+  Occurrences: 1
+
+Inlined noise added
+  After events:
     ICT: op_iter_init_tree at tree-flow-inline.h:792:0
     IRF: op_iter_init_tree at tree-flow-inline.h:0:0
-  Occurrences: 17
+  Occurrences: 14
 
 Inlined noise added
   After events:
     ICT: op_iter_init_use at tree-flow-inline.h:768:0
     IRF: op_iter_init_use at tree-flow-inline.h:0:0
-  Occurrences: 5
+  Occurrences: 6
 
 Inlined noise added
   After events:
     ICT: op_iter_next_tree at tree-flow-inline.h:699:0
     IRF: op_iter_next_tree at tree-flow-inline.h:0:0
-  Occurrences: 10
+  Occurrences: 8
 
 Inlined noise added
   After events:
     ICT: op_iter_next_tree at tree-flow-inline.h:699:0
     IRF: op_iter_next_tree at tree-flow-inline.h:705:7
-  Occurrences: 4
+  Occurrences: 6
 
 Inlined noise added
   After events:
     ICT: op_iter_next_tree at tree-flow-inline.h:699:0
     IRF: op_iter_next_tree at tree-flow-inline.h:711:7
-  Occurrences: 4
+  Occurrences: 5
 
 Inlined noise added
   After events:
     ICT: op_iter_next_use at tree-flow-inline.h:659:0
     IRF: op_iter_next_use at tree-flow-inline.h:0:0
-  Occurrences: 3
+  Occurrences: 5
 
 Inlined noise added
   After events:
     ICT: op_iter_next_use at tree-flow-inline.h:659:0
     IRF: op_iter_next_use at tree-flow-inline.h:665:7
-  Occurrences: 3
+  Occurrences: 4
 
 Inlined noise added
   After events:
     ICT: optimize_function_for_size_p at predict.c:202:0
     IRF: optimize_function_for_size_p at predict.c:206:9
-  Occurrences: 21
+  Occurrences: 17
 
 Inlined noise added
   After events:
@@ -42417,37 +40327,25 @@ Inlined noise added
   After events:
     ICT: reg_fits_class_p at recog.c:2728:0
     IRF: reg_fits_class_p at recog.c:0:0
-  Occurrences: 1144
+  Occurrences: 1189
 
 Inlined noise added
   After events:
     ICT: remove_fake_predecessors at cfganal.c:562:0
     IRF: remove_fake_predecessors at cfganal.c:0:0
-  Occurrences: 4
+  Occurrences: 3
 
 Inlined noise added
   After events:
     ICT: replace_uses_in at tree-ssa-propagate.c:869:0
     IRF: replace_uses_in at tree-ssa-propagate.c:0:0
-  Occurrences: 6
-
-Inlined noise added
-  After events:
-    ICT: sched_has_condition_p at sched-deps.c:526:0
-    IRF: sched_has_condition_p at sched-deps.c:0:0
-  Occurrences: 1
+  Occurrences: 8
 
 Inlined noise added
   After events:
     ICT: sched_has_condition_p at sched-deps.c:526:0
     IRF: sched_has_condition_p at sched-deps.c:528:11
-  Occurrences: 8
-
-Inlined noise added
-  After events:
-    ICT: sched_init_luids at haifa-sched.c:5388:0
-    IRF: sched_init_luids at haifa-sched.c:0:0
-  Occurrences: 1
+  Occurrences: 6
 
 Inlined noise added
   After events:
@@ -42459,7 +40357,7 @@ Inlined noise added
   After events:
     ICT: set_depth at et-forest.c:64:0
     IRF: set_depth at et-forest.c:70:14
-  Occurrences: 1
+  Occurrences: 2
 
 Inlined noise added
   After events:
@@ -42469,21 +40367,15 @@ Inlined noise added
 
 Inlined noise added
   After events:
-    ICT: set_next at et-forest.c:102:0
-    IRF: set_next at et-forest.c:109:7
-  Occurrences: 1
-
-Inlined noise added
-  After events:
     ICT: set_prev at et-forest.c:88:0
     IRF: set_prev at et-forest.c:95:7
-  Occurrences: 15
+  Occurrences: 13
 
 Inlined noise added
   After events:
     ICT: setup_class_hard_regs at ira.c:428:0
     IRF: setup_class_hard_regs at ira.c:0:0
-  Occurrences: 577
+  Occurrences: 572
 
 Inlined noise added
   After events:
@@ -42495,73 +40387,73 @@ Inlined noise added
   After events:
     ICT: setup_reg_subclasses at ira.c:667:0
     IRF: setup_reg_subclasses at ira.c:0:0
-  Occurrences: 17
-
-Inlined noise added
-  After events:
-    ICT: simplify_immed_subreg at simplify-rtx.c:4829:0
-    IRF: simplify_immed_subreg at simplify-rtx.c:0:0
-  Occurrences: 1
+  Occurrences: 14
 
 Inlined noise added
   After events:
     ICT: single_pred_p at basic-block.h:634:0
     IRF: single_pred_p at basic-block.h:636:10
-  Occurrences: 22
+  Occurrences: 19
 
 Inlined noise added
   After events:
     ICT: single_pred_p at basic-block.h:634:0
     IRF: single_pred_p at basic-block.h:636:33
-  Occurrences: 2
+  Occurrences: 1
 
 Inlined noise added
   After events:
     ICT: single_succ_p at basic-block.h:626:0
     IRF: single_succ_p at basic-block.h:628:10
-  Occurrences: 45
+  Occurrences: 47
 
 Inlined noise added
   After events:
     ICT: single_succ_p at basic-block.h:626:0
     IRF: single_succ_p at basic-block.h:628:33
-  Occurrences: 3
+  Occurrences: 1
 
 Inlined noise added
   After events:
     ICT: smallest_mode_for_size at stor-layout.c:419:0
     IRF: smallest_mode_for_size at stor-layout.c:0:0
-  Occurrences: 18
+  Occurrences: 17
+
+Inlined noise added
+  After events:
+    ICT: stmt_ends_bb_p at tree-cfg.c:2319:0
+    IRF: stmt_ends_bb_p at tree-cfg.c:0:0
+  Occurrences: 3
 
 Inlined noise added
   After events:
     ICT: strip_invariant_refs at gimple.c:2554:0
     IRF: strip_invariant_refs at gimple.c:0:0
-  Occurrences: 6
+  Occurrences: 5
 
 Inlined noise added
   After events:
     ICT: swap_sort at haifa-sched.c:1323:0
     IRF: swap_sort at haifa-sched.c:1333:12
-  Occurrences: 1
+  Occurrences: 2
 
 Inlined noise added
   After events:
     ICT: tree_cons_stat at tree.c:2098:0
     IRF: tree_cons_stat at tree.c:2104:3
-  Occurrences: 6
+  Occurrences: 13
 
 Inlined noise added
   After events:
     ICT: tree_cons_stat at tree.c:2098:0
     IRF: tree_cons_stat at tree.c:2114:21
-  Occurrences: 8
+  Occurrences: 6
 
 Inlined noise added
   After events:
     ICT: vconcat_length at concat.c:70:0
     IRF: vconcat_length at concat.c:75:3
-  Occurrences: 635
+  Occurrences: 633
 
 Inlined noise added
   After events:
@@ -42860,7 +40752,7 @@ Inlined return added
     CF: ggc_alloc_cleared_stat at ggc-common.c:198:15
     CT: ggc_alloc_stat at ggc-page.c:1090:0
     RF: ggc_alloc_stat at ggc-page.c:1276:3
-    RF: ggc_alloc_cleared_stat at ggc-common.c:0:0
+    RF: ggc_alloc_cleared_stat at <invalid>:0:0
     ICF: unchecked_make_edge at cfg.c:287:3
     ICT: connect_src at cfg.c:214:0
     ICF: connect_src at cfg.c:216:3
@@ -43082,31 +40974,31 @@ Inlined return added
     CT: build_int_cst at tree.c:1037:8
     CF: build_int_cst at tree.c:1040:10
     CT: build_int_cst_wide at tree.c:1118:0
-    CF: build_int_cst_wide at tree.c:1191:8
-    CT: make_node_stat at tree.c:785:0
-    CF: make_node_stat at tree.c:788:19
-    CT: tree_code_size at tree.c:656:0
-    RF: tree_code_size at tree.c:741:1
-    CF: make_node_stat at tree.c:0:0
+    ICF: build_int_cst_wide at tree.c:1177:32
+    ICT: make_tree_vec_stat at tree.c:1574:0
+    CF: make_tree_vec_stat at tree.c:1584:14
     CT: ggc_alloc_stat at ggc-page.c:1090:0
-    RF: ggc_alloc_stat at ggc-page.c:1276:3
-    CF: make_node_stat at tree.c:867:3
-    CT: Jump to external code for memset
-    RF: Jump to external code for memset
-    RF: make_node_stat at tree.c:942:3
-    RF: build_int_cst_wide at tree.c:1221:3
-    RF: build_int_cst at tree.c:0:0
-    RF: size_int_kind at fold-const.c:0:0
-    CF: layout_type at stor-layout.c:0:0
-    CT: size_int_kind at fold-const.c:2153:0
-    CF: size_int_kind at fold-const.c:2154:10
-    CT: build_int_cst at tree.c:1037:8
-    CF: build_int_cst at tree.c:1040:10
-    CT: build_int_cst_wide at tree.c:1118:0
-    CF: build_int_cst_wide at tree.c:1191:8
-    CT: make_node_stat at tree.c:785:0
-    [...26 more events...]
-  Occurrences: 2
+    ICF: ggc_alloc_stat at ggc-page.c:1116:19
+    ICT: alloc_page at ggc-page.c:734:0
+    CF: alloc_page at ggc-page.c:778:2
+    CT: Jump to external code for free
+    RF: Jump to external code for free
+    CF: alloc_page at ggc-page.c:880:13
+    CT: xcalloc at xmalloc.c:156:0
+    CF: xcalloc at xmalloc.c:162:12
+    CT: Jump to external code for calloc
+    RF: Jump to external code for calloc
+    RF: xcalloc at xmalloc.c:166:3
+    ICF: alloc_page at ggc-page.c:893:3
+    ICT: set_page_group_in_use at ggc-page.c:717:0
+    ICF: set_page_group_in_use at ggc-page.c:719:25
+    ICT: page_group_index at ggc-page.c:709:0
+    IRF: page_group_index at ggc-page.c:711:39
+    IRF: set_page_group_in_use at ggc-page.c:719:17
+    ICF: alloc_page at ggc-page.c:901:3
+    ICT: set_page_table_entry at ggc-page.c:619:0
+    [...59 more events...]
+  Occurrences: 1
 
 Inlined return added
   Before events:
@@ -43134,8 +41026,47 @@ Inlined return added
     RF: Jump to external code for memset
     RF: make_node_stat at tree.c:942:3
     RF: build_int_cst_wide at tree.c:1221:3
-    RF: build_int_cst at tree.c:0:0
-    RF: size_int_kind at fold-const.c:0:0
+    RF: build_int_cst at <invalid>:0:0
+    RF: size_int_kind at <invalid>:0:0
+    CF: layout_type at stor-layout.c:0:0
+    CT: size_int_kind at fold-const.c:2153:0
+    CF: size_int_kind at fold-const.c:2154:10
+    CT: build_int_cst at tree.c:1037:8
+    CF: build_int_cst at tree.c:1040:10
+    CT: build_int_cst_wide at tree.c:1118:0
+    CF: build_int_cst_wide at tree.c:1191:8
+    CT: make_node_stat at tree.c:785:0
+    [...26 more events...]
+  Occurrences: 1
+
+Inlined return added
+  Before events:
+    CF: layout_type at stor-layout.c:1820:7
+    CT: smallest_mode_for_size at stor-layout.c:420:0
+    RF: smallest_mode_for_size at stor-layout.c:434:1
+  After events:
+    IRF: smallest_mode_for_size at stor-layout.c:0:0
+    CF: layout_type at stor-layout.c:0:0
+    CT: size_int_kind at fold-const.c:2153:0
+    CF: size_int_kind at fold-const.c:2154:10
+    CT: build_int_cst at tree.c:1037:8
+    CF: build_int_cst at tree.c:1040:10
+    CT: build_int_cst_wide at tree.c:1118:0
+    CF: build_int_cst_wide at tree.c:1191:8
+    CT: make_node_stat at tree.c:785:0
+    CF: make_node_stat at tree.c:788:19
+    CT: tree_code_size at tree.c:656:0
+    RF: tree_code_size at tree.c:741:1
+    CF: make_node_stat at tree.c:0:0
+    CT: ggc_alloc_stat at ggc-page.c:1090:0
+    RF: ggc_alloc_stat at ggc-page.c:1276:3
+    CF: make_node_stat at tree.c:867:3
+    CT: Jump to external code for memset
+    RF: Jump to external code for memset
+    RF: make_node_stat at tree.c:942:3
+    RF: build_int_cst_wide at tree.c:1221:3
+    RF: build_int_cst at <invalid>:0:0
+    RF: size_int_kind at <invalid>:0:0
     CF: layout_type at stor-layout.c:0:0
     CT: size_int_kind at fold-const.c:2153:0
     CF: size_int_kind at fold-const.c:2154:10
@@ -43143,7 +41074,7 @@ Inlined return added
     CF: build_int_cst at tree.c:1040:10
     CT: build_int_cst_wide at tree.c:1118:0
     RF: build_int_cst_wide at tree.c:1221:3
-    RF: build_int_cst at tree.c:0:0
+    RF: build_int_cst at <invalid>:0:0
     [...14 more events...]
   Occurrences: 1
 
@@ -43161,8 +41092,8 @@ Inlined return added
     CF: build_int_cst at tree.c:1040:10
     CT: build_int_cst_wide at tree.c:1118:0
     RF: build_int_cst_wide at tree.c:1221:3
-    RF: build_int_cst at tree.c:0:0
-    RF: size_int_kind at fold-const.c:0:0
+    RF: build_int_cst at <invalid>:0:0
+    RF: size_int_kind at <invalid>:0:0
     CF: layout_type at stor-layout.c:0:0
     CT: size_int_kind at fold-const.c:2153:0
     CF: size_int_kind at fold-const.c:2154:10
@@ -43170,8 +41101,8 @@ Inlined return added
     CF: build_int_cst at tree.c:1040:10
     CT: build_int_cst_wide at tree.c:1118:0
     RF: build_int_cst_wide at tree.c:1221:3
-    RF: build_int_cst at tree.c:0:0
-    RF: size_int_kind at fold-const.c:0:0
+    RF: build_int_cst at <invalid>:0:0
+    RF: size_int_kind at <invalid>:0:0
     CF: layout_type at stor-layout.c:2093:5
     CT: finalize_type_size at stor-layout.c:1621:0
     ICF: finalize_type_size at stor-layout.c:1633:29
@@ -43184,7 +41115,7 @@ Inlined return added
     CT: round_up_loc at fold-const.c:16261:0
     RF: round_up_loc at fold-const.c:16325:1
     [...2 more events...]
-  Occurrences: 1
+  Occurrences: 2
 
 Inlined return added
   Before events:
@@ -43259,30 +41190,30 @@ Inlined return added
     ICF: sched_analyze_insn at sched-deps.c:2895:4
     ICT: bmp_iter_set at bitmap.h:393:0
     IRF: bmp_iter_set at bitmap.h:0:0
-    ICT: bmp_iter_set at bitmap.h:393:0
-    IRF: bmp_iter_set at bitmap.h:0:0
-    ICF: sched_analyze_insn at sched-deps.c:2920:5
-    ICT: add_dependence_list at sched-deps.c:1392:0
-    IRF: add_dependence_list at sched-deps.c:0:0
-    ICF: sched_analyze_insn at sched-deps.c:2921:5
-    ICT: add_dependence_list at sched-deps.c:1392:0
-    IRF: add_dependence_list at sched-deps.c:0:0
-    ICF: sched_analyze_insn at sched-deps.c:2923:5
-    ICT: add_dependence_list at sched-deps.c:1392:0
-    IRF: add_dependence_list at sched-deps.c:0:0
-    CF: sched_analyze_insn at sched-deps.c:2930:9
-    CT: alloc_INSN_LIST at lists.c:108:0
-    RF: alloc_INSN_LIST at lists.c:124:3
-    ICF: sched_analyze_insn at sched-deps.c:2895:4
-    ICT: bmp_iter_next at bitmap.h:382:0
-    IRF: bmp_iter_next at bitmap.h:0:11
     ICF: sched_analyze_insn at sched-deps.c:2933:4
     ICT: bmp_iter_set_init at bitmap.h:224:0
     IRF: bmp_iter_set_init at bitmap.h:0:0
     ICF: sched_analyze_insn at sched-deps.c:2933:4
     ICT: bmp_iter_set at bitmap.h:393:0
     IRF: bmp_iter_set at bitmap.h:0:0
-    [...170 more events...]
+    ICT: bmp_iter_set at bitmap.h:393:0
+    IRF: bmp_iter_set at bitmap.h:0:0
+    ICT: bmp_iter_set at bitmap.h:393:0
+    IRF: bmp_iter_set at bitmap.h:0:0
+    CF: sched_analyze_insn at sched-deps.c:2937:8
+    CT: add_dependence_list_and_free at sched-deps.c:1407:0
+    CF: add_dependence_list_and_free at sched-deps.c:1419:23
+    CT: sched_insns_conditions_mutex_p at sched-deps.c:553:0
+    CF: sched_insns_conditions_mutex_p at sched-deps.c:561:15
+    CT: sched_get_condition_with_rev at sched-deps.c:489:13
+    CF: sched_get_condition_with_rev at sched-deps.c:501:8
+    CT: any_condjump_p at jump.c:846:0
+    ICF: any_condjump_p at jump.c:847:17
+    ICT: pc_set at jump.c:804:0
+    IRF: pc_set at jump.c:0:0
+    RF: any_condjump_p at jump.c:860:1
+    RF: sched_get_condition_with_rev at sched-deps.c:522:1
+    [...616 more events...]
   Occurrences: 1
 
 Inlined return added
@@ -43309,134 +41240,136 @@ Inlined return added
     IRF: bmp_iter_set at bitmap.h:0:0
     ICT: bmp_iter_set at bitmap.h:393:0
     IRF: bmp_iter_set at bitmap.h:0:0
-    ICT: bmp_iter_set at bitmap.h:393:0
-    IRF: bmp_iter_set at bitmap.h:0:0
-    ICT: bmp_iter_set at bitmap.h:393:0
-    IRF: bmp_iter_set at bitmap.h:0:0
-    ICT: bmp_iter_set at bitmap.h:393:0
-    IRF: bmp_iter_set at bitmap.h:0:0
-    ICT: bmp_iter_set at bitmap.h:393:0
-    IRF: bmp_iter_set at bitmap.h:0:0
-    ICT: bmp_iter_set at bitmap.h:393:0
-    IRF: bmp_iter_set at bitmap.h:0:0
-    ICT: bmp_iter_set at bitmap.h:393:0
-    IRF: bmp_iter_set at bitmap.h:0:0
-    ICT: bmp_iter_set at bitmap.h:393:0
-    IRF: bmp_iter_set at bitmap.h:0:0
-    ICT: bmp_iter_set at bitmap.h:393:0
-    IRF: bmp_iter_set at bitmap.h:0:0
-    ICT: bmp_iter_set at bitmap.h:393:0
-    IRF: bmp_iter_set at bitmap.h:0:0
-    ICT: bmp_iter_set at bitmap.h:393:0
-    IRF: bmp_iter_set at bitmap.h:0:0
-    ICT: bmp_iter_set at bitmap.h:393:0
-    [...1107 more events...]
+    ICF: sched_analyze_insn at sched-deps.c:2920:5
+    ICT: add_dependence_list at sched-deps.c:1392:0
+    IRF: add_dependence_list at sched-deps.c:0:0
+    ICF: sched_analyze_insn at sched-deps.c:2921:5
+    ICT: add_dependence_list at sched-deps.c:1392:0
+    IRF: add_dependence_list at sched-deps.c:0:0
+    ICF: sched_analyze_insn at sched-deps.c:2923:5
+    ICT: add_dependence_list at sched-deps.c:1392:0
+    IRF: add_dependence_list at sched-deps.c:0:0
+    CF: sched_analyze_insn at sched-deps.c:2930:9
+    CT: alloc_INSN_LIST at lists.c:108:0
+    CF: alloc_INSN_LIST at lists.c:122:9
+    CT: gen_rtx_fmt_ue_stat at genrtl.c:42:0
+    CF: gen_rtx_fmt_ue_stat at genrtl.c:44:8
+    CT: rtx_alloc_stat at rtl.c:196:0
+    CF: rtx_alloc_stat at rtl.c:199:14
+    CT: ggc_alloc_stat at ggc-page.c:1090:0
+    RF: ggc_alloc_stat at ggc-page.c:1276:3
+    RF: rtx_alloc_stat at rtl.c:213:3
+    RF: gen_rtx_fmt_ue_stat at genrtl.c:50:3
+    RF: alloc_INSN_LIST at <invalid>:0:0
+    [...422 more events...]
   Occurrences: 1
 
 Inlined return added
   Before events:
-    CT: loop_optimizer_finalize at loop-init.c:103:0
-    CF: loop_optimizer_finalize at loop-init.c:110:3
-    CT: fel_init at cfgloop.h:536:0
-    CF: fel_init at cfgloop.h:549:18
-    CT: number_of_loops at cfgloop.h:460:0
-    CF: number_of_loops at cfgloop.h:464:10
-    CT: VEC_loop_p_base_length at cfgloop.h:85:0
-    RF: VEC_loop_p_base_length at cfgloop.h:85:1
-    RF: number_of_loops at cfgloop.h:465:1
-    CF: fel_init at cfgloop.h:549:18
-    CT: VEC_int_heap_alloc at vecprim.h:32:0
-    CF: VEC_int_heap_alloc at vecprim.h:32:1
-    CT: vec_heap_o_reserve_exact at vec.c:370:0
-    CF: vec_heap_o_reserve_exact at vec.c:371:10
-    CT: vec_heap_o_reserve_1 at vec.c:304:0
-    CF: vec_heap_o_reserve_1 at vec.c:306:20
-    CT: calculate_allocation at vec.c:178:0
-    RF: calculate_allocation at vec.c:217:1
-    CF: vec_heap_o_reserve_1 at vec.c:320:9
-    CT: xrealloc at xmalloc.c:171:0
-    CF: xrealloc at xmalloc.c:177:14
-    CT: Jump to external code for malloc
-    RF: Jump to external code for malloc
-    RF: xrealloc at xmalloc.c:183:3
-    RF: vec_heap_o_reserve_1 at vec.c:331:1
-    RF: vec_heap_o_reserve_exact at vec.c:371:3
-    RF: VEC_int_heap_alloc at vecprim.h:32:1
-    CF: fel_init at cfgloop.h:600:11
-    CT: loop_outer at cfgloop.h:435:0
-    CF: loop_outer at cfgloop.h:436:16
-    [...62 more events...]
+    CF: sched_analyze_insn at sched-deps.c:2996:11
+    CT: sched_has_condition_p at sched-deps.c:527:0
+    CF: sched_has_condition_p at sched-deps.c:528:13
+    CT: sched_get_condition_with_rev at sched-deps.c:488:0
+    CF: sched_get_condition_with_rev at sched-deps.c:501:8
+    CT: any_condjump_p at jump.c:846:0
+    CF: any_condjump_p at jump.c:847:17
+    CT: pc_set at jump.c:805:0
+    RF: pc_set at jump.c:819:1
+    RF: any_condjump_p at jump.c:860:1
+    RF: sched_get_condition_with_rev at sched-deps.c:522:1
+    RF: sched_has_condition_p at sched-deps.c:528:3
   After events:
-    IRF: fini_pre at tree-ssa-pre.c:0:0
-    CF: execute_pre at tree-ssa-pre.c:0:0
-    CT: loop_optimizer_finalize at loop-init.c:103:0
-    ICF: loop_optimizer_finalize at loop-init.c:110:3
-    ICT: fel_init at cfgloop.h:535:0
-    ICF: fel_init at cfgloop.h:549:18
-    ICT: number_of_loops at cfgloop.h:459:0
-    ICF: number_of_loops at cfgloop.h:464:10
-    ICT: VEC_loop_p_base_length at cfgloop.h:85:0
-    IRF: VEC_loop_p_base_length at cfgloop.h:0:0
-    IRF: number_of_loops at cfgloop.h:0:0
-    ICF: fel_init at cfgloop.h:549:18
-    ICT: VEC_int_heap_alloc at vecprim.h:32:0
-    CF: VEC_int_heap_alloc at vecprim.h:32:1
-    CT: vec_heap_o_reserve_exact at vec.c:370:0
-    ICF: vec_heap_o_reserve_exact at vec.c:371:10
-    ICT: vec_heap_o_reserve_1 at vec.c:302:0
-    ICF: vec_heap_o_reserve_1 at vec.c:306:20
-    ICT: calculate_allocation at vec.c:177:0
-    IRF: calculate_allocation at vec.c:0:17
-    ICT: calculate_allocation at vec.c:177:0
-    IRF: calculate_allocation at vec.c:184:7
-    CF: vec_heap_o_reserve_1 at vec.c:320:9
-    CT: xrealloc at xmalloc.c:171:0
-    CF: xrealloc at xmalloc.c:177:14
-    CT: Jump to external code for malloc
-    RF: Jump to external code for malloc
-    RF: xrealloc at xmalloc.c:183:3
-    IRF: vec_heap_o_reserve_1 at vec.c:0:0
-    RF: vec_heap_o_reserve_exact at vec.c:371:3
-    [...63 more events...]
+    IRF: sched_has_condition_p at sched-deps.c:0:0
+    ICF: sched_analyze_insn at sched-deps.c:0:0
+    ICT: bmp_iter_set_init at bitmap.h:224:0
+    IRF: bmp_iter_set_init at bitmap.h:0:13
+    ICF: sched_analyze_insn at sched-deps.c:3014:4
+    ICT: bmp_iter_set at bitmap.h:393:0
+    IRF: bmp_iter_set at bitmap.h:0:0
+    ICT: bmp_iter_set at bitmap.h:393:0
+    IRF: bmp_iter_set at bitmap.h:0:0
+    ICT: bmp_iter_set at bitmap.h:393:0
+    IRF: bmp_iter_set at bitmap.h:0:0
+    ICT: bmp_iter_set at bitmap.h:393:0
+    IRF: bmp_iter_set at bitmap.h:0:0
+    ICT: bmp_iter_set at bitmap.h:393:0
+    IRF: bmp_iter_set at bitmap.h:0:0
+    ICT: bmp_iter_set at bitmap.h:393:0
+    IRF: bmp_iter_set at bitmap.h:0:0
+    ICT: bmp_iter_set at bitmap.h:393:0
+    IRF: bmp_iter_set at bitmap.h:0:0
+    ICT: bmp_iter_set at bitmap.h:393:0
+    IRF: bmp_iter_set at bitmap.h:0:0
+    ICT: bmp_iter_set at bitmap.h:393:0
+    IRF: bmp_iter_set at bitmap.h:0:0
+    ICT: bmp_iter_set at bitmap.h:393:0
+    IRF: bmp_iter_set at bitmap.h:0:0
+    ICT: bmp_iter_set at bitmap.h:393:0
+    IRF: bmp_iter_set at bitmap.h:0:0
+    ICT: bmp_iter_set at bitmap.h:393:0
+    IRF: bmp_iter_set at bitmap.h:0:0
+    ICT: bmp_iter_set at bitmap.h:393:0
+    [...5766 more events...]
   Occurrences: 1
 
-Uncategorised
+Inlined return added
+  Before events:
+    CT: ei_edge at basic-block.h:753:0
+    CF: ei_edge at basic-block.h:754:10
+    CT: ei_container at basic-block.h:686:0
+    RF: ei_container at basic-block.h:688:3
+    CT: ei_container at basic-block.h:686:0
+    RF: ei_container at basic-block.h:688:3
+    CF: ei_edge at basic-block.h:754:10
+    CT: VEC_edge_base_index at basic-block.h:150:0
+    RF: VEC_edge_base_index at basic-block.h:150:1
+    RF: ei_edge at basic-block.h:754:3
+    RF: ei_safe_edge at basic-block.h:763:3
+    CT: ei_safe_edge at basic-block.h:762:0
+    RF: ei_safe_edge at basic-block.h:763:3
   After events:
-    ICF: VEC_ce_s_heap_safe_push at tree-ssa-structalias.c:407:1
+    IRF: ei_safe_edge at basic-block.h:0:0
+    ICF: purge_dead_edges at cfgrtl.c:0:0
+    ICT: ei_next at basic-block.h:736:0
+    ICF: ei_next at basic-block.h:738:3
+    ICT: ei_container at basic-block.h:685:0
+    IRF: ei_container at basic-block.h:688:10
+    ICF: ei_next at basic-block.h:738:3
+    ICT: VEC_edge_base_length at basic-block.h:150:0
+    IRF: VEC_edge_base_length at basic-block.h:150:1
+    IRF: ei_next at basic-block.h:739:11
+    ICF: purge_dead_edges at cfgrtl.c:2349:11
+    ICT: VEC_edge_base_length at basic-block.h:150:0
+    IRF: VEC_edge_base_length at basic-block.h:0:0
+    RF: purge_dead_edges at cfgrtl.c:2433:1
   Occurrences: 1
 
 Uncategorised
   After events:
     ICF: VEC_ce_s_heap_safe_push at tree-ssa-structalias.c:407:1
     ICT: VEC_ce_s_base_quick_push at tree-ssa-structalias.c:406:0
-  Occurrences: 1
+  Occurrences: 2
 
 Uncategorised
   After events:
     ICF: VEC_constraint_t_base_lower_bound at tree-ssa-structalias.c:189:1
-  Occurrences: 11
+  Occurrences: 10
 
 Uncategorised
   After events:
     ICF: VEC_constraint_t_base_lower_bound at tree-ssa-structalias.c:189:1
     ICT: VEC_constraint_t_base_length at tree-ssa-structalias.c:189:0
-  Occurrences: 5
+  Occurrences: 6
 
 Uncategorised
   After events:
     ICF: VEC_df_ref_heap_safe_push at fwprop.c:121:1
-  Occurrences: 19
-
-Uncategorised
-  After events:
-    ICF: VEC_df_ref_stack_reserve at df-scan.c:50:1
-    ICT: VEC_df_ref_base_space at df-scan.c:49:0
-  Occurrences: 1
+  Occurrences: 18
 
 Uncategorised
   After events:
     ICF: VEC_df_ref_stack_safe_push at df-scan.c:50:1
-  Occurrences: 68
+  Occurrences: 70
 
 Uncategorised
   After events:
@@ -43448,13 +41381,18 @@ Uncategorised
   After events:
     ICF: VEC_df_ref_stack_safe_push at df-scan.c:50:1
     ICT: VEC_df_ref_stack_reserve at df-scan.c:50:0
-  Occurrences: 240
+  Occurrences: 257
 
 Uncategorised
   After events:
     ICF: VEC_edge_gc_reserve at basic-block.h:151:1
     ICT: VEC_edge_base_space at basic-block.h:150:0
-  Occurrences: 1
+  Occurrences: 2
+
+Uncategorised
+  After events:
+    ICF: VEC_edge_gc_safe_push at basic-block.h:151:1
+  Occurrences: 2
 
 Uncategorised
   After events:
@@ -43464,26 +41402,48 @@ Uncategorised
 
 Uncategorised
   After events:
+    ICF: VEC_edge_gc_safe_push at basic-block.h:151:1
+    ICT: VEC_edge_gc_reserve at basic-block.h:151:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    ICF: VEC_tree_heap_reserve at tree.h:184:1
+  Occurrences: 1
+
+Uncategorised
+  After events:
     ICF: VEC_tree_heap_reserve at tree.h:184:1
     ICT: VEC_tree_base_space at tree.h:182:0
-  Occurrences: 2
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    ICF: VEC_tree_heap_safe_push at tree.h:184:1
+  Occurrences: 1
 
 Uncategorised
   After events:
     ICF: VEC_tree_heap_safe_push at tree.h:184:1
     ICT: VEC_tree_heap_reserve at tree.h:184:0
-  Occurrences: 2
+  Occurrences: 1
 
 Uncategorised
   After events:
     ICF: _cpp_clean_line at cpp_lex.c:232:3
-  Occurrences: 145
+  Occurrences: 138
 
 Uncategorised
   After events:
     ICF: _cpp_clean_line at cpp_lex.c:232:3
     ICT: add_line_note at cpp_lex.c:86:0
-  Occurrences: 29
+  Occurrences: 36
+
+Uncategorised
+  After events:
+    ICF: _cpp_lex_direct at cpp_lex.c:1433:7
+    ICT: skip_whitespace at cpp_lex.c:403:0
+  Occurrences: 1
 
 Uncategorised
   After events:
@@ -43511,13 +41471,13 @@ Uncategorised
 Uncategorised
   After events:
     CF: assemble_constant_contents at varasm.c:3380:3
+    CT: Jump to external code for fwrite
   Occurrences: 1
 
 Uncategorised
   After events:
     CF: assemble_end_function at varasm.c:1844:3
-    CT: Jump to external code for fwrite
-  Occurrences: 2
+  Occurrences: 1
 
 Uncategorised
   After events:
@@ -43528,7 +41488,7 @@ Uncategorised
   After events:
     CF: assemble_start_function at varasm.c:1827:3
     CT: Jump to external code for fwrite
-  Occurrences: 2
+  Occurrences: 1
 
 Uncategorised
   After events:
@@ -43539,13 +41499,13 @@ Uncategorised
 Uncategorised
   After events:
     ICF: attribute_list_contained at tree.c:6055:19
-  Occurrences: 46
+  Occurrences: 49
 
 Uncategorised
   After events:
     ICF: attribute_list_contained at tree.c:6055:19
     ICT: lookup_attribute at tree.c:5088:0
-  Occurrences: 37
+  Occurrences: 34
 
 Uncategorised
   After events:
@@ -43560,25 +41520,24 @@ Uncategorised
 Uncategorised
   After events:
     ICF: bitmap_and at bitmap.c:916:3
-  Occurrences: 2
-
-Uncategorised
-  After events:
-    ICF: bitmap_and at bitmap.c:916:3
     ICT: bitmap_elt_clear_from at bitmap.c:246:0
-  Occurrences: 4
+  Occurrences: 6
 
 Uncategorised
   After events:
     ICF: bitmap_clear at bitmap.c:298:5
-    ICT: bitmap_elt_clear_from at bitmap.c:246:0
-  Occurrences: 4
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    ICF: bitmap_obstack_free at bitmap.c:393:7
+  Occurrences: 3
 
 Uncategorised
   After events:
     ICF: bitmap_obstack_free at bitmap.c:393:7
     ICT: bitmap_clear at bitmap.c:295:0
-  Occurrences: 4
+  Occurrences: 1
 
 Uncategorised
   After events:
@@ -43589,11 +41548,6 @@ Uncategorised
   After events:
     ICF: build_common_builtin_nodes at tree.c:9043:9
     ICT: tree_cons_stat at tree.c:2098:0
-  Occurrences: 1
-
-Uncategorised
-  After events:
-    ICF: build_common_builtin_nodes at tree.c:9044:9
   Occurrences: 1
 
 Uncategorised
@@ -43644,48 +41598,42 @@ Uncategorised
 
 Uncategorised
   After events:
-    ICF: build_int_cst_wide at tree.c:1177:32
-    ICT: make_tree_vec_stat at tree.c:1574:0
-  Occurrences: 1
-
-Uncategorised
-  After events:
-    CF: build_int_cst_wide at tree.c:1191:8
-  Occurrences: 1
-
-Uncategorised
-  After events:
     CF: build_int_cst_wide at tree.c:1191:8
     CT: make_node_stat at tree.c:785:0
   Occurrences: 2
 
 Uncategorised
   After events:
-    ICF: c_define_builtins at builtins.def:278:1
+    ICF: c_define_builtins at builtins.def:266:1
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    ICF: c_define_builtins at builtins.def:275:1
     ICT: def_builtin_1 at c-common.c:5178:0
   Occurrences: 1
 
 Uncategorised
   After events:
-    ICF: c_define_builtins at builtins.def:290:1
+    ICF: c_define_builtins at builtins.def:277:1
     ICT: def_builtin_1 at c-common.c:5178:0
   Occurrences: 1
 
 Uncategorised
   After events:
-    ICF: c_define_builtins at builtins.def:292:1
-    ICT: def_builtin_1 at c-common.c:5178:0
-  Occurrences: 1
-
-Uncategorised
-  After events:
-    ICF: c_define_builtins at builtins.def:296:1
+    ICF: c_define_builtins at builtins.def:298:1
     ICT: def_builtin_1 at c-common.c:5178:0
   Occurrences: 1
 
 Uncategorised
   After events:
     ICF: c_define_builtins at builtins.def:305:1
+    ICT: def_builtin_1 at c-common.c:5178:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    ICF: c_define_builtins at builtins.def:349:1
     ICT: def_builtin_1 at c-common.c:5178:0
   Occurrences: 1
 
@@ -44804,12 +42752,12 @@ Uncategorised
   After events:
     CF: c_lex_one_token at c-parser.c:207:17
     CT: c_lex_with_flags at c-lex.c:298:0
-  Occurrences: 1
+  Occurrences: 2
 
 Uncategorised
   After events:
     CF: c_lex_with_flags at c-lex.c:306:9
-  Occurrences: 1
+  Occurrences: 2
 
 Uncategorised
   After events:
@@ -44836,12 +42784,11 @@ Uncategorised
   After events:
     ICF: c_parser_next_token_is at c-parser.c:335:10
     ICT: c_parser_peek_token at c-parser.c:319:0
-  Occurrences: 1
+  Occurrences: 2
 
 Uncategorised
   After events:
     CF: c_parser_peek_token at c-parser.c:323:7
-    CT: c_lex_one_token at c-parser.c:204:0
   Occurrences: 1
 
 Uncategorised
@@ -44864,13 +42811,13 @@ Uncategorised
 Uncategorised
   After events:
     ICF: calc_dfs_tree_nonrec at dominance.c:323:7
-  Occurrences: 8
+  Occurrences: 9
 
 Uncategorised
   After events:
     ICF: calc_dfs_tree_nonrec at dominance.c:323:7
     ICT: ei_next at basic-block.h:736:0
-  Occurrences: 15
+  Occurrences: 14
 
 Uncategorised
   After events:
@@ -44885,29 +42832,34 @@ Uncategorised
 Uncategorised
   After events:
     CF: change_queue_index at haifa-sched.c:3905:5
-  Occurrences: 2
+  Occurrences: 4
 
 Uncategorised
   After events:
     CF: change_queue_index at haifa-sched.c:3905:5
     CT: ready_add at haifa-sched.c:1388:0
-  Occurrences: 3
+  Occurrences: 2
+
+Uncategorised
+  After events:
+    CF: change_queue_index at haifa-sched.c:3907:5
+  Occurrences: 1
 
 Uncategorised
   After events:
     CF: change_queue_index at haifa-sched.c:3907:5
     CT: queue_insn at haifa-sched.c:1342:0
-  Occurrences: 3
-
-Uncategorised
-  After events:
-    CF: choose_reload_regs_init at reload1.c:5933:7
-    CT: Jump to external code for memset
   Occurrences: 1
 
 Uncategorised
   After events:
-    CF: choose_reload_regs_init at reload1.c:5935:7
+    CF: choose_reload_regs_init at reload1.c:5933:7
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    CF: choose_reload_regs_init at reload1.c:5934:7
+    CT: Jump to external code for memset
   Occurrences: 1
 
 Uncategorised
@@ -44959,6 +42911,12 @@ Uncategorised
 
 Uncategorised
   After events:
+    ICF: connect_dest at cfg.c:226:3
+    ICT: VEC_edge_gc_safe_push at basic-block.h:151:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
     ICF: connect_dest at cfg.c:227:17
     ICT: VEC_edge_base_length at basic-block.h:150:0
   Occurrences: 1
@@ -44966,51 +42924,62 @@ Uncategorised
 Uncategorised
   After events:
     ICF: connect_infinite_loops_to_exit at cfganal.c:0:0
-  Occurrences: 2
+  Occurrences: 1
 
 Uncategorised
   After events:
     ICF: connect_infinite_loops_to_exit at cfganal.c:0:0
     ICT: flow_dfs_compute_reverse_add_bb at cfganal.c:1101:0
-  Occurrences: 2
+  Occurrences: 3
+
+Uncategorised
+  After events:
+    ICF: connect_src at cfg.c:216:3
+    ICT: VEC_edge_gc_safe_push at basic-block.h:151:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    CF: connect_src at cfg.c:217:3
+    CT: df_mark_solutions_dirty at df-core.c:1316:7
+  Occurrences: 1
 
 Uncategorised
   After events:
     CF: constrain_operands at recog.c:2336:22
-  Occurrences: 56
+  Occurrences: 51
 
 Uncategorised
   After events:
     CF: constrain_operands at recog.c:2336:22
     CT: Jump to external code for memcpy
-  Occurrences: 104
+  Occurrences: 80
 
 Uncategorised
   After events:
     CF: constrain_operands at recog.c:2337:28
-  Occurrences: 112
+  Occurrences: 117
 
 Uncategorised
   After events:
     CF: constrain_operands at recog.c:2337:28
     CT: Jump to external code for memset
-  Occurrences: 206
+  Occurrences: 201
 
 Uncategorised
   After events:
     ICF: constrain_operands at recog.c:2497:7
-  Occurrences: 85
+  Occurrences: 80
 
 Uncategorised
   After events:
     ICF: constrain_operands at recog.c:2497:7
     ICT: reg_fits_class_p at recog.c:2728:0
-  Occurrences: 111
+  Occurrences: 136
 
 Uncategorised
   After events:
     ICF: constraint_less at tree-ssa-structalias.c:767:7
-    ICT: constraint_expr_less at tree-ssa-structalias.c:748:0
   Occurrences: 1
 
 Uncategorised
@@ -45028,13 +42997,13 @@ Uncategorised
 Uncategorised
   After events:
     CF: convert_format_name_to_system_name at c-format.c:0:0
-  Occurrences: 24
+  Occurrences: 20
 
 Uncategorised
   After events:
     CF: convert_format_name_to_system_name at c-format.c:0:0
     CT: Jump to external code for strlen
-  Occurrences: 80
+  Occurrences: 84
 
 Uncategorised
   After events:
@@ -45050,18 +43019,13 @@ Uncategorised
 Uncategorised
   After events:
     CF: copyprop_hardreg_forward_1 at regcprop.c:765:7
-  Occurrences: 2
-
-Uncategorised
-  After events:
-    ICF: count_reg_usage at cse.c:6594:9
   Occurrences: 1
 
 Uncategorised
   After events:
     ICF: count_reg_usage at cse.c:6594:9
     ICT: rhs_regno at rtl.h:1051:0
-  Occurrences: 1
+  Occurrences: 2
 
 Uncategorised
   After events:
@@ -45071,31 +43035,25 @@ Uncategorised
 
 Uncategorised
   After events:
-    CF: cpp_get_token_with_location at cpp_macro.c:1351:12
-    CT: cpp_get_token at cpp_macro.c:1227:0
-  Occurrences: 1
-
-Uncategorised
-  After events:
     CF: create_preheaders at cfgloopmanip.c:1425:3
-  Occurrences: 2
+  Occurrences: 4
 
 Uncategorised
   After events:
     CF: create_preheaders at cfgloopmanip.c:1425:3
     CT: Jump to external code for free
-  Occurrences: 9
+  Occurrences: 7
 
 Uncategorised
   After events:
     ICF: cse_insn at cse.c:4805:18
-  Occurrences: 3
+  Occurrences: 1
 
 Uncategorised
   After events:
     ICF: cse_insn at cse.c:4805:18
     ICT: try_const_anchors at cse.c:1360:0
-  Occurrences: 2
+  Occurrences: 4
 
 Uncategorised
   After events:
@@ -45105,18 +43063,7 @@ Uncategorised
 Uncategorised
   After events:
     ICF: cselib_invalidate_rtx at cselib.c:1942:30
-  Occurrences: 1
-
-Uncategorised
-  After events:
-    CF: cselib_invalidate_rtx at cselib.c:1942:5
-    CT: cselib_invalidate_regno at cselib.c:1740:0
-  Occurrences: 1
-
-Uncategorised
-  After events:
-    CF: cselib_invalidate_rtx at cselib.c:1950:7
-    CT: push_operand at recog.c:1219:8
+    ICT: rhs_regno at rtl.h:1051:0
   Occurrences: 1
 
 Uncategorised
@@ -45127,18 +43074,23 @@ Uncategorised
 Uncategorised
   After events:
     ICF: cselib_lookup_1 at cselib.c:1669:55
-  Occurrences: 2
+  Occurrences: 3
 
 Uncategorised
   After events:
     ICF: cselib_lookup_1 at cselib.c:1669:55
     ICT: wrap_constant at cselib.c:776:0
-  Occurrences: 8
+  Occurrences: 7
 
 Uncategorised
   After events:
     ICF: cselib_record_set at cselib.c:1999:23
   Occurrences: 8
+
+Uncategorised
+  After events:
+    CF: cselib_record_sets at cselib.c:2104:3
+  Occurrences: 1
 
 Uncategorised
   After events:
@@ -45148,28 +43100,29 @@ Uncategorised
 Uncategorised
   After events:
     ICF: def_builtin_const at i386.c:21420:15
-  Occurrences: 5
+  Occurrences: 7
 
 Uncategorised
   After events:
     ICF: def_builtin_const at i386.c:21420:15
     ICT: def_builtin at i386.c:21380:0
-  Occurrences: 22
+  Occurrences: 20
 
 Uncategorised
   After events:
     ICF: default_binds_local_p at varasm.c:6660:10
-  Occurrences: 32
+  Occurrences: 29
 
 Uncategorised
   After events:
     ICF: default_binds_local_p at varasm.c:6660:10
     ICT: default_binds_local_p_1 at varasm.c:6664:0
-  Occurrences: 6
+  Occurrences: 9
 
 Uncategorised
   After events:
     CF: default_globalize_label at varasm.c:6720:3
+    CT: Jump to external code for fwrite
   Occurrences: 1
 
 Uncategorised
@@ -45180,13 +43133,13 @@ Uncategorised
 Uncategorised
   After events:
     ICF: df_analyze at df-core.c:0:0
-  Occurrences: 14
+  Occurrences: 15
 
 Uncategorised
   After events:
     ICF: df_analyze at df-core.c:0:0
     ICT: df_analyze_problem at df-core.c:1080:0
-  Occurrences: 8
+  Occurrences: 7
 
 Uncategorised
   After events:
@@ -45201,58 +43154,57 @@ Uncategorised
 Uncategorised
   After events:
     ICF: df_ref_create_structure at df-scan.c:0:0
-  Occurrences: 115
+  Occurrences: 87
 
 Uncategorised
   After events:
     ICF: df_ref_create_structure at df-scan.c:0:0
     ICT: VEC_df_ref_stack_safe_push at df-scan.c:50:0
-  Occurrences: 270
+  Occurrences: 298
+
+Uncategorised
+  After events:
+    ICF: df_ref_create_structure at df-scan.c:2819:15
+  Occurrences: 1
 
 Uncategorised
   After events:
     ICF: df_ref_create_structure at df-scan.c:2819:15
     ICT: rhs_regno at rtl.h:1051:0
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
-    ICF: df_ref_create_structure at df-scan.c:2891:2
+    ICF: df_ref_create_structure at df-scan.c:2887:2
     ICT: VEC_df_ref_stack_safe_push at df-scan.c:50:0
-  Occurrences: 4
+  Occurrences: 1
 
 Uncategorised
   After events:
     ICF: df_ref_record at df-scan.c:2920:11
-  Occurrences: 2
+  Occurrences: 1
 
 Uncategorised
   After events:
     ICF: df_ref_record at df-scan.c:2920:11
     ICT: rhs_regno at rtl.h:1051:0
-  Occurrences: 3
+  Occurrences: 4
 
 Uncategorised
   After events:
     ICF: df_ref_record at df-scan.c:2937:13
-  Occurrences: 1
+  Occurrences: 2
 
 Uncategorised
   After events:
     ICF: df_ref_record at df-scan.c:2937:13
     ICT: end_hard_regno at regs.h:290:0
-  Occurrences: 1
-
-Uncategorised
-  After events:
-    ICF: df_ref_record at df-scan.c:2937:13
-    ICT: rhs_regno at rtl.h:1051:0
-  Occurrences: 2
+  Occurrences: 3
 
 Uncategorised
   After events:
     CF: df_ref_record at df-scan.c:2963:10
-  Occurrences: 1
+  Occurrences: 2
 
 Uncategorised
   After events:
@@ -45273,7 +43225,7 @@ Uncategorised
 Uncategorised
   After events:
     CF: df_uses_record at df-scan.c:3194:7
-  Occurrences: 2
+  Occurrences: 3
 
 Uncategorised
   After events:
@@ -45289,25 +43241,30 @@ Uncategorised
 
 Uncategorised
   After events:
+    CF: df_worklist_propagate_forward at df-core.c:878:11
+  Occurrences: 2
+
+Uncategorised
+  After events:
     CF: disambiguate_loops_with_multiple_latches at cfgloop.c:764:3
-  Occurrences: 4
+  Occurrences: 3
 
 Uncategorised
   After events:
     CF: disambiguate_loops_with_multiple_latches at cfgloop.c:764:3
     CT: Jump to external code for free
-  Occurrences: 11
+  Occurrences: 12
 
 Uncategorised
   After events:
     ICF: do_add at real.c:539:7
-  Occurrences: 40
+  Occurrences: 39
 
 Uncategorised
   After events:
     ICF: do_add at real.c:539:7
     ICT: get_zero at real.c:127:0
-  Occurrences: 43
+  Occurrences: 44
 
 Uncategorised
   After events:
@@ -45323,7 +43280,7 @@ Uncategorised
   After events:
     ICF: ei_cond at basic-block.h:773:8
     ICT: ei_end_p at basic-block.h:721:0
-  Occurrences: 3
+  Occurrences: 4
 
 Uncategorised
   After events:
@@ -45333,13 +43290,7 @@ Uncategorised
 Uncategorised
   After events:
     ICF: ei_end_p at basic-block.h:723:22
-  Occurrences: 1
-
-Uncategorised
-  After events:
-    ICF: ei_end_p at basic-block.h:723:22
-    ICT: VEC_edge_base_length at basic-block.h:150:0
-  Occurrences: 1
+  Occurrences: 2
 
 Uncategorised
   After events:
@@ -45354,34 +43305,36 @@ Uncategorised
 Uncategorised
   After events:
     ICF: emit_move_insn at expr.c:3461:20
-  Occurrences: 3
+  Occurrences: 4
 
 Uncategorised
   After events:
     ICF: emit_move_insn at expr.c:3461:20
     ICT: compress_float_constant at expr.c:3511:0
-  Occurrences: 5
+  Occurrences: 4
 
 Uncategorised
   After events:
-    CF: emit_reload_insns at reload1.c:7793:7
+    CF: emit_reload_insns at reload1.c:7792:27
     CT: Jump to external code for memset
   Occurrences: 1
 
 Uncategorised
   After events:
-    CF: emit_reload_insns at reload1.c:7794:32
+    CF: emit_reload_insns at reload1.c:7794:7
+    CT: Jump to external code for memset
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    CF: emit_reload_insns at reload1.c:7795:7
     CT: Jump to external code for memset
   Occurrences: 1
 
 Uncategorised
   After events:
     CF: emit_reload_insns at reload1.c:7796:38
-  Occurrences: 1
-
-Uncategorised
-  After events:
-    CF: emit_reload_insns at reload1.c:7796:7
+    CT: Jump to external code for memset
   Occurrences: 1
 
 Uncategorised
@@ -45391,14 +43344,19 @@ Uncategorised
 
 Uncategorised
   After events:
+    CF: execute_pre at tree-ssa-pre.c:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
     CF: extract_insn at recog.c:2137:40
-  Occurrences: 111
+  Occurrences: 127
 
 Uncategorised
   After events:
     CF: extract_insn at recog.c:2137:40
     CT: Jump to external code for memset
-  Occurrences: 233
+  Occurrences: 217
 
 Uncategorised
   After events:
@@ -45418,9 +43376,24 @@ Uncategorised
 
 Uncategorised
   After events:
+    ICF: fel_init at cfgloop.h:549:18
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    ICF: fel_init at cfgloop.h:608:3
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    ICF: fel_next at cfgloop.h:522:10
+    ICT: VEC_int_base_iterate at vecprim.h:31:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
     CF: find_base_term at alias.c:1476:7
-    CT: ix86_find_base_term at i386.c:11080:10
-  Occurrences: 2
+  Occurrences: 1
 
 Uncategorised
   After events:
@@ -45430,25 +43403,31 @@ Uncategorised
 Uncategorised
   After events:
     ICF: find_base_term at alias.c:1482:14
-    ICT: VEC_rtx_base_index at rtl.h:200:0
+    ICT: VEC_rtx_base_length at rtl.h:200:0
   Occurrences: 1
 
 Uncategorised
   After events:
-    ICF: find_edge at cfganal.c:489:35
+    ICF: find_edge at cfganal.c:489:7
     ICT: VEC_edge_base_length at basic-block.h:150:0
   Occurrences: 1
 
 Uncategorised
   After events:
+    ICF: find_edge at cfganal.c:491:7
+    ICT: ei_cond at basic-block.h:771:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
     ICF: find_func_aliases at tree-ssa-structalias.c:0:0
-  Occurrences: 2
+  Occurrences: 3
 
 Uncategorised
   After events:
     ICF: find_func_aliases at tree-ssa-structalias.c:0:0
     ICT: VEC_ce_s_heap_free at tree-ssa-structalias.c:407:0
-  Occurrences: 4
+  Occurrences: 3
 
 Uncategorised
   After events:
@@ -45458,18 +43437,8 @@ Uncategorised
 Uncategorised
   After events:
     CF: find_obviously_necessary_stmts at tree-ssa-dce.c:466:7
-  Occurrences: 1
-
-Uncategorised
-  After events:
-    CF: find_obviously_necessary_stmts at tree-ssa-dce.c:466:7
     CT: Jump to external code for free
-  Occurrences: 1
-
-Uncategorised
-  After events:
-    ICF: find_oldest_value_reg at regcprop.c:436:24
-  Occurrences: 1
+  Occurrences: 2
 
 Uncategorised
   After events:
@@ -45479,6 +43448,12 @@ Uncategorised
 Uncategorised
   After events:
     ICF: find_reg_class_closure at ira.c:1126:3
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    ICF: find_reg_class_closure at ira.c:1127:3
+    ICT: setup_cover_and_important_classes at ira.c:729:0
   Occurrences: 1
 
 Uncategorised
@@ -45495,7 +43470,7 @@ Uncategorised
   After events:
     CF: find_reloads at reload.c:0:7
     CT: Jump to external code for memcpy
-  Occurrences: 7
+  Occurrences: 5
 
 Uncategorised
   After events:
@@ -45505,7 +43480,7 @@ Uncategorised
 Uncategorised
   After events:
     CF: find_reloads at reload.c:3688:32
-  Occurrences: 2
+  Occurrences: 1
 
 Uncategorised
   After events:
@@ -45520,23 +43495,32 @@ Uncategorised
 
 Uncategorised
   After events:
+    CF: find_reloads at reload.c:3689:38
+    CT: Jump to external code for memcpy
+  Occurrences: 1
+
+Uncategorised
+  After events:
     CF: find_reloads at reload.c:3690:28
+    CT: Jump to external code for memcpy
   Occurrences: 2
 
 Uncategorised
   After events:
     CF: find_reloads at reload.c:3737:25
-  Occurrences: 2
+  Occurrences: 1
 
 Uncategorised
   After events:
-    CF: find_reloads at reload.c:3738:29
-  Occurrences: 2
+    CF: find_reloads at reload.c:3737:25
+    CT: Jump to external code for memcpy
+  Occurrences: 1
 
 Uncategorised
   After events:
     CF: find_reloads at reload.c:3740:7
-  Occurrences: 2
+    CT: Jump to external code for memcpy
+  Occurrences: 1
 
 Uncategorised
   After events:
@@ -45551,24 +43535,34 @@ Uncategorised
 
 Uncategorised
   After events:
+    CF: flow_loop_free at cfgloop.c:197:3
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    ICF: flow_loops_free at cfgloop.c:217:4
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    ICF: flow_loops_free at cfgloop.c:220:7
+  Occurrences: 1
+
+Uncategorised
+  After events:
     CF: fold_convert_const at fold-const.c:0:0
-  Occurrences: 4
+  Occurrences: 5
 
 Uncategorised
   After events:
     CF: fold_convert_const at fold-const.c:0:0
     CT: force_fit_type_double at fold-const.c:282:0
-  Occurrences: 6
+  Occurrences: 5
 
 Uncategorised
   After events:
     CF: for_each_rtx at rtlanal.c:2854:12
   Occurrences: 1
-
-Uncategorised
-  After events:
-    ICF: force_fit_type_double at fold-const.c:291:14
-  Occurrences: 2
 
 Uncategorised
   After events:
@@ -45579,24 +43573,19 @@ Uncategorised
 Uncategorised
   After events:
     CF: force_fit_type_double at fold-const.c:310:10
-  Occurrences: 1
-
-Uncategorised
-  After events:
-    CF: force_fit_type_double at fold-const.c:310:10
     CT: build_int_cst_wide at tree.c:1118:0
-  Occurrences: 6
+  Occurrences: 4
 
 Uncategorised
   After events:
     CF: force_single_succ_latches at cfgloopmanip.c:1439:3
-  Occurrences: 3
+  Occurrences: 7
 
 Uncategorised
   After events:
     CF: force_single_succ_latches at cfgloopmanip.c:1439:3
     CT: Jump to external code for free
-  Occurrences: 9
+  Occurrences: 5
 
 Uncategorised
   After events:
@@ -45616,11 +43605,6 @@ Uncategorised
 
 Uncategorised
   After events:
-    CF: general_init at toplev.c:1742:3
-  Occurrences: 1
-
-Uncategorised
-  After events:
     ICF: get_constraint_for_1 at tree-ssa-structalias.c:0:0
     ICT: VEC_ce_s_heap_safe_push at tree-ssa-structalias.c:407:0
   Occurrences: 1
@@ -45628,7 +43612,6 @@ Uncategorised
 Uncategorised
   After events:
     ICF: get_constraint_for_1 at tree-ssa-structalias.c:3156:7
-    ICT: VEC_ce_s_heap_safe_push at tree-ssa-structalias.c:407:0
   Occurrences: 1
 
 Uncategorised
@@ -45639,17 +43622,18 @@ Uncategorised
 Uncategorised
   After events:
     CF: get_max_float at real.c:5159:10
-  Occurrences: 1
+  Occurrences: 2
 
 Uncategorised
   After events:
     CF: get_max_float at real.c:5159:10
     CT: Jump to external code for memset
-  Occurrences: 2
+  Occurrences: 1
 
 Uncategorised
   After events:
     ICF: get_qualified_type at tree.c:5469:9
+    ICT: check_qualified_type at tree.c:5443:0
   Occurrences: 1
 
 Uncategorised
@@ -45659,14 +43643,19 @@ Uncategorised
 
 Uncategorised
   After events:
+    ICF: ggc_free at ggc-page.c:1405:20
+  Occurrences: 1
+
+Uncategorised
+  After events:
     ICF: gimple_call_arg at gimple.h:2028:10
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
     ICF: gimple_call_arg at gimple.h:2028:10
     ICT: gimple_op at gimple.h:1631:0
-  Occurrences: 1
+  Occurrences: 2
 
 Uncategorised
   After events:
@@ -45687,13 +43676,13 @@ Uncategorised
 Uncategorised
   After events:
     ICF: gimple_get_lhs at gimple.c:1914:12
-  Occurrences: 4
+  Occurrences: 2
 
 Uncategorised
   After events:
     ICF: gimple_get_lhs at gimple.c:1914:12
     ICT: gimple_call_lhs at gimple.h:1878:0
-  Occurrences: 5
+  Occurrences: 7
 
 Uncategorised
   After events:
@@ -45703,13 +43692,13 @@ Uncategorised
 Uncategorised
   After events:
     ICF: gimple_has_body_p at gimple.c:1712:11
-  Occurrences: 4
+  Occurrences: 6
 
 Uncategorised
   After events:
     ICF: gimple_has_body_p at gimple.c:1712:11
     ICT: gimple_body at gimple.c:1700:0
-  Occurrences: 12
+  Occurrences: 10
 
 Uncategorised
   After events:
@@ -45719,18 +43708,17 @@ Uncategorised
 Uncategorised
   After events:
     ICF: gimple_modified_p at gimple.h:1427:11
-  Occurrences: 1
+  Occurrences: 2
 
 Uncategorised
   After events:
     ICF: gimple_modified_p at gimple.h:1427:11
     ICT: gimple_has_ops at gimple.h:1274:0
-  Occurrences: 2
+  Occurrences: 1
 
 Uncategorised
   After events:
     ICF: gimple_vuse at gimple.h:1367:8
-    ICT: gimple_has_mem_ops at gimple.h:1283:0
   Occurrences: 1
 
 Uncategorised
@@ -45740,14 +43728,19 @@ Uncategorised
 
 Uncategorised
   After events:
+    ICF: gimplify_compound_lval at gimplify.c:1939:12
+  Occurrences: 1
+
+Uncategorised
+  After events:
     ICF: gimplify_expr at gimplify.c:6515:19
-  Occurrences: 2
+  Occurrences: 1
 
 Uncategorised
   After events:
     ICF: gimplify_expr at gimplify.c:6515:19
     ICT: gsi_last at gimple.h:4435:0
-  Occurrences: 3
+  Occurrences: 4
 
 Uncategorised
   After events:
@@ -45757,6 +43750,11 @@ Uncategorised
 Uncategorised
   After events:
     ICF: grokdeclarator at c-decl.c:5478:18
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    ICF: haifa_sched_init at haifa-sched.c:3483:5
   Occurrences: 1
 
 Uncategorised
@@ -45772,8 +43770,13 @@ Uncategorised
 Uncategorised
   After events:
     ICF: init_copy_prop at tree-ssa-copy.c:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    ICF: init_copy_prop at tree-ssa-copy.c:0:0
     ICT: prop_set_simulate_again at tree-ssa-propagate.h:28:0
-  Occurrences: 4
+  Occurrences: 3
 
 Uncategorised
   After events:
@@ -45787,7 +43790,18 @@ Uncategorised
 
 Uncategorised
   After events:
+    ICF: init_emit_once at emit-rtl.c:5820:43
+  Occurrences: 1
+
+Uncategorised
+  After events:
     ICF: init_emit_once at emit-rtl.c:5854:39
+    ICT: gen_const_vector at emit-rtl.c:5616:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    ICF: init_emit_once at emit-rtl.c:5861:39
     ICT: gen_const_vector at emit-rtl.c:5616:0
   Occurrences: 1
 
@@ -45815,8 +43829,13 @@ Uncategorised
 Uncategorised
   After events:
     ICF: insert_with_costs at cse.c:1625:11
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    ICF: insert_with_costs at cse.c:1625:11
     ICT: preferable at cse.c:722:0
-  Occurrences: 5
+  Occurrences: 4
 
 Uncategorised
   After events:
@@ -45874,30 +43893,13 @@ Uncategorised
 Uncategorised
   After events:
     ICF: is_gimple_val at gimple.c:2789:11
-  Occurrences: 1
-
-Uncategorised
-  After events:
-    ICF: is_gimple_val at gimple.c:2789:11
     ICT: is_gimple_variable at gimple.c:2691:0
-  Occurrences: 1
-
-Uncategorised
-  After events:
-    CF: ix86_delegitimize_address at i386.c:10962:16
-    CT: delegitimize_mem_from_attrs at simplify-rtx.c:211:0
   Occurrences: 2
 
 Uncategorised
   After events:
     ICF: ix86_expand_epilogue at i386.c:8967:3
   Occurrences: 1
-
-Uncategorised
-  After events:
-    CF: ix86_find_base_term at i386.c:11080:10
-    CT: ix86_delegitimize_address at i386.c:10961:0
-  Occurrences: 2
 
 Uncategorised
   After events:
@@ -45934,11 +43936,28 @@ Uncategorised
   After events:
     CF: loop_optimizer_finalize at loop-init.c:110:3
     CT: Jump to external code for free
-  Occurrences: 13
+  Occurrences: 15
+
+Uncategorised
+  After events:
+    CF: loop_optimizer_finalize at loop-init.c:118:3
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    ICF: loop_outer at cfgloop.h:436:16
+    ICT: VEC_loop_p_base_length at cfgloop.h:85:0
+  Occurrences: 1
 
 Uncategorised
   After events:
     CF: make_edge at cfg.c:331:12
+    CT: find_edge at cfganal.c:485:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    CF: make_edges at cfgbuild.c:0:0
   Occurrences: 1
 
 Uncategorised
@@ -45950,25 +43969,19 @@ Uncategorised
 Uncategorised
   After events:
     CF: make_node_stat at tree.c:788:19
-  Occurrences: 1
-
-Uncategorised
-  After events:
-    CF: make_node_stat at tree.c:788:19
     CT: tree_code_size at tree.c:656:0
-  Occurrences: 1
+  Occurrences: 2
 
 Uncategorised
   After events:
     CF: make_node_stat at tree.c:867:3
     CT: Jump to external code for memset
-  Occurrences: 1
+  Occurrences: 2
 
 Uncategorised
   After events:
-    CF: make_tree_vec_stat at tree.c:1586:3
-    CT: Jump to external code for memset
-  Occurrences: 1
+    CF: note_stores at rtlanal.c:1461:2
+  Occurrences: 3
 
 Uncategorised
   After events:
@@ -46008,28 +44021,28 @@ Uncategorised
 Uncategorised
   After events:
     ICF: process_defs at fwprop.c:0:0
-  Occurrences: 6
+  Occurrences: 7
 
 Uncategorised
   After events:
     ICF: process_defs at fwprop.c:0:0
     ICT: VEC_df_ref_heap_safe_push at fwprop.c:121:0
-  Occurrences: 17
-
-Uncategorised
-  After events:
-    ICF: prop_set_simulate_again at tree-ssa-propagate.h:30:3
-  Occurrences: 1
+  Occurrences: 16
 
 Uncategorised
   After events:
     ICF: prop_set_simulate_again at tree-ssa-propagate.h:30:3
     ICT: gimple_set_visited at gimple.h:1217:0
-  Occurrences: 4
+  Occurrences: 5
 
 Uncategorised
   After events:
     ICF: propagate_necessity at tree-ssa-dce.c:750:24
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    CF: queue_insn at haifa-sched.c:1344:14
   Occurrences: 1
 
 Uncategorised
@@ -46039,57 +44052,56 @@ Uncategorised
 
 Uncategorised
   After events:
+    CF: record_dead_and_set_regs at combine.c:0:0
+  Occurrences: 2
+
+Uncategorised
+  After events:
     CF: record_dead_and_set_regs_1 at combine.c:0:0
   Occurrences: 2
 
 Uncategorised
   After events:
     CF: record_operand_costs at ira-costs.c:942:16
-  Occurrences: 1
-
-Uncategorised
-  After events:
-    CF: record_operand_costs at ira-costs.c:942:16
-    CT: Jump to external code for memcpy
-  Occurrences: 1
-
-Uncategorised
-  After events:
-    CF: record_operand_costs at ira-costs.c:952:7
-  Occurrences: 7
-
-Uncategorised
-  After events:
-    CF: record_operand_costs at ira-costs.c:952:7
-    CT: Jump to external code for memcpy
   Occurrences: 2
 
 Uncategorised
   After events:
-    CF: record_reg_classes at ira-costs.c:215:24
+    CF: record_operand_costs at ira-costs.c:952:7
   Occurrences: 5
+
+Uncategorised
+  After events:
+    CF: record_operand_costs at ira-costs.c:952:7
+    CT: Jump to external code for memcpy
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    CF: record_reg_classes at ira-costs.c:215:24
+  Occurrences: 3
 
 Uncategorised
   After events:
     CF: record_reg_classes at ira-costs.c:215:24
     CT: Jump to external code for memset
-  Occurrences: 1
+  Occurrences: 3
 
 Uncategorised
   After events:
     ICF: reg_fits_class_p at recog.c:2731:15
-  Occurrences: 5
+  Occurrences: 6
 
 Uncategorised
   After events:
     ICF: reg_fits_class_p at recog.c:2737:7
-  Occurrences: 84
+  Occurrences: 98
 
 Uncategorised
   After events:
     ICF: reg_fits_class_p at recog.c:2737:7
     ICT: in_hard_reg_set_p at regs.h:335:0
-  Occurrences: 110
+  Occurrences: 123
 
 Uncategorised
   After events:
@@ -46104,7 +44116,11 @@ Uncategorised
 Uncategorised
   After events:
     CF: regmove_optimize at regmove.c:1235:24
-    CT: Jump to external code for memset
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    CF: reload at reload1.c:749:3
   Occurrences: 1
 
 Uncategorised
@@ -46120,35 +44136,29 @@ Uncategorised
 Uncategorised
   After events:
     CF: reload_cse_simplify_operands at postreload.c:491:21
-  Occurrences: 3
+  Occurrences: 1
 
 Uncategorised
   After events:
     CF: reload_cse_simplify_operands at postreload.c:491:21
     CT: Jump to external code for memset
-  Occurrences: 5
+  Occurrences: 7
 
 Uncategorised
   After events:
     ICF: remove_preds_and_fake_succs at tree-ssa-structalias.c:5372:39
     ICT: VEC_varinfo_t_base_length at tree-ssa-structalias.c:273:0
-  Occurrences: 2
+  Occurrences: 1
 
 Uncategorised
   After events:
     ICF: remove_preds_and_fake_succs at tree-ssa-structalias.c:5373:8
-    ICT: VEC_varinfo_t_base_length at tree-ssa-structalias.c:273:0
   Occurrences: 1
 
 Uncategorised
   After events:
     ICF: replace_exp_1 at tree-ssa-copy.c:0:0
-  Occurrences: 1
-
-Uncategorised
-  After events:
-    CF: replace_oldest_value_addr at regcprop.c:642:14
-    CT: replace_oldest_value_reg at regcprop.c:481:0
+    ICT: set_ssa_use_from_ptr at tree-flow-inline.h:233:0
   Occurrences: 1
 
 Uncategorised
@@ -46159,12 +44169,23 @@ Uncategorised
 Uncategorised
   After events:
     ICF: replace_uses_in at tree-ssa-propagate.c:875:3
-  Occurrences: 2
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    ICF: replace_uses_in at tree-ssa-propagate.c:875:3
+    ICT: op_iter_init_use at tree-flow-inline.h:768:0
+  Occurrences: 1
 
 Uncategorised
   After events:
     CF: resize_reg_info at reginfo.c:0:0
     CT: Jump to external code for memset
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    ICF: rewrite_stmt at tree-into-ssa.c:1327:7
   Occurrences: 1
 
 Uncategorised
@@ -46175,17 +44196,44 @@ Uncategorised
 Uncategorised
   After events:
     CF: scev_initialize at tree-scalar-evolution.c:3030:3
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    CF: scev_initialize at tree-scalar-evolution.c:3030:3
     CT: Jump to external code for free
-  Occurrences: 5
+  Occurrences: 4
 
 Uncategorised
   After events:
     CF: schedule_block at haifa-sched.c:3152:14
+  Occurrences: 10
+
+Uncategorised
+  After events:
+    CF: schedule_insn at haifa-sched.c:1756:7
+  Occurrences: 25
+
+Uncategorised
+  After events:
+    ICF: set_page_group_in_use at ggc-page.c:719:25
+    ICT: page_group_index at ggc-page.c:709:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    CF: set_page_table_entry at ggc-page.c:647:16
   Occurrences: 1
 
 Uncategorised
   After events:
     CF: set_priorities at haifa-sched.c:3320:14
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    ICF: set_ssa_use_from_ptr at tree-flow-inline.h:237:3
+    ICT: link_imm_use at tree-flow-inline.h:214:0
   Occurrences: 1
 
 Uncategorised
@@ -46196,7 +44244,7 @@ Uncategorised
 Uncategorised
   After events:
     CF: setup_prohibited_mode_move_regs at ira.c:1360:4
-  Occurrences: 220
+  Occurrences: 81
 
 Uncategorised
   After events:
@@ -46221,17 +44269,18 @@ Uncategorised
 Uncategorised
   After events:
     ICF: ssa_propagate at tree-ssa-propagate.c:804:6
-  Occurrences: 6
+  Occurrences: 2
 
 Uncategorised
   After events:
     ICF: ssa_propagate at tree-ssa-propagate.c:804:6
     ICT: VEC_gimple_base_length at gimple.h:33:0
-  Occurrences: 3
+  Occurrences: 7
 
 Uncategorised
   After events:
     CF: store_one_arg at calls.c:4328:26
+    CT: Jump to external code for memset
   Occurrences: 1
 
 Uncategorised
@@ -46268,15 +44317,43 @@ Uncategorised
 
 Uncategorised
   After events:
+    ICF: unchecked_make_edge at cfg.c:287:3
+    ICT: connect_src at cfg.c:214:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    ICF: unchecked_make_edge at cfg.c:288:3
+    ICT: connect_dest at cfg.c:223:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    CF: unchecked_make_edge at cfg.c:290:3
+    CT: execute_on_growing_pred at cfghooks.c:1024:7
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    ICF: uncprop_enter_block at tree-ssa-uncprop.c:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
     ICF: uncprop_enter_block at tree-ssa-uncprop.c:0:0
     ICT: VEC_tree_heap_safe_push at tree.h:184:0
-  Occurrences: 2
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    ICF: vec_heap_o_reserve_1 at vec.c:306:20
+  Occurrences: 1
 
 Uncategorised
   After events:
     ICF: vrp_initialize at tree-vrp.c:5347:8
     ICT: prop_set_simulate_again at tree-ssa-propagate.h:28:0
-  Occurrences: 2
+  Occurrences: 1
 
 Uncategorised
   After events:
@@ -46295,59 +44372,53 @@ Uncategorised
 
 Uncategorised
   After events:
-    CT: Jump to external code for fprintf
-    RF: Jump to external code for fprintf
-  Occurrences: 1
-
-Uncategorised
-  After events:
     CT: Jump to external code for free
-  Occurrences: 5
+  Occurrences: 10
 
 Uncategorised
   After events:
     CT: Jump to external code for free
     RF: Jump to external code for free
-  Occurrences: 12
+  Occurrences: 11
 
 Uncategorised
   After events:
     CT: Jump to external code for fwrite
     RF: Jump to external code for fwrite
-  Occurrences: 2
+  Occurrences: 4
 
 Uncategorised
   After events:
     CT: Jump to external code for memcpy
-  Occurrences: 103
+  Occurrences: 104
 
 Uncategorised
   After events:
     CT: Jump to external code for memcpy
     RF: Jump to external code for memcpy
-  Occurrences: 143
+  Occurrences: 165
 
 Uncategorised
   After events:
     CT: Jump to external code for memset
-  Occurrences: 105
+  Occurrences: 127
 
 Uncategorised
   After events:
     CT: Jump to external code for memset
     RF: Jump to external code for memset
-  Occurrences: 142
+  Occurrences: 137
 
 Uncategorised
   After events:
     CT: Jump to external code for strlen
-  Occurrences: 3
+  Occurrences: 4
 
 Uncategorised
   After events:
     CT: Jump to external code for strlen
     RF: Jump to external code for strlen
-  Occurrences: 21
+  Occurrences: 16
 
 Uncategorised
   After events:
@@ -46356,7 +44427,7 @@ Uncategorised
 
 Uncategorised
   After events:
-    ICT: VEC_basic_block_base_quick_push at basic-block.h:281:0
+    ICT: VEC_alias_pair_base_iterate at tree.h:197:0
   Occurrences: 1
 
 Uncategorised
@@ -46376,7 +44447,12 @@ Uncategorised
 
 Uncategorised
   After events:
-    ICT: VEC_ce_s_base_quick_push at tree-ssa-structalias.c:406:0
+    ICT: VEC_ce_s_base_iterate at tree-ssa-structalias.c:406:0
+  Occurrences: 2
+
+Uncategorised
+  After events:
+    ICT: VEC_ce_s_heap_free at tree-ssa-structalias.c:407:0
   Occurrences: 1
 
 Uncategorised
@@ -46387,23 +44463,39 @@ Uncategorised
 
 Uncategorised
   After events:
+    ICT: VEC_ce_s_heap_safe_push at tree-ssa-structalias.c:407:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
     ICT: VEC_constraint_t_base_length at tree-ssa-structalias.c:189:0
-  Occurrences: 6
+  Occurrences: 7
 
 Uncategorised
   After events:
     ICT: VEC_constraint_t_base_lower_bound at tree-ssa-structalias.c:189:0
-  Occurrences: 5
+  Occurrences: 3
+
+Uncategorised
+  After events:
+    ICT: VEC_df_ref_base_address at df-scan.c:49:0
+  Occurrences: 3
 
 Uncategorised
   After events:
     ICT: VEC_df_ref_base_length at df-scan.c:49:0
-  Occurrences: 34
+  Occurrences: 36
 
 Uncategorised
   After events:
     ICT: VEC_df_ref_base_quick_push at df-scan.c:49:0
     IRF: VEC_df_ref_base_quick_push at df-scan.c:49:1
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    ICT: VEC_df_ref_base_space at df-scan.c:49:0
+    IRF: VEC_df_ref_base_space at df-scan.c:49:1
   Occurrences: 1
 
 Uncategorised
@@ -46425,34 +44517,40 @@ Uncategorised
   After events:
     ICT: VEC_df_ref_heap_safe_push at fwprop.c:121:0
     ICF: VEC_df_ref_heap_safe_push at fwprop.c:121:1
+  Occurrences: 2
+
+Uncategorised
+  After events:
+    ICT: VEC_df_ref_stack_reserve at df-scan.c:50:0
+  Occurrences: 129
+
+Uncategorised
+  After events:
+    ICT: VEC_df_ref_stack_reserve at df-scan.c:50:0
+    ICF: VEC_df_ref_stack_reserve at df-scan.c:50:1
   Occurrences: 1
 
 Uncategorised
   After events:
     ICT: VEC_df_ref_stack_reserve at df-scan.c:50:0
-  Occurrences: 148
-
-Uncategorised
-  After events:
-    ICT: VEC_df_ref_stack_reserve at df-scan.c:50:0
     IRF: VEC_df_ref_stack_reserve at df-scan.c:50:1
-  Occurrences: 2
+  Occurrences: 3
 
 Uncategorised
   After events:
     ICT: VEC_df_ref_stack_safe_push at df-scan.c:50:0
-  Occurrences: 34
+  Occurrences: 28
 
 Uncategorised
   After events:
     ICT: VEC_df_ref_stack_safe_push at df-scan.c:50:0
     ICF: VEC_df_ref_stack_safe_push at df-scan.c:50:1
-  Occurrences: 82
+  Occurrences: 63
 
 Uncategorised
   After events:
     ICT: VEC_edge_base_length at basic-block.h:150:0
-  Occurrences: 10
+  Occurrences: 13
 
 Uncategorised
   After events:
@@ -46463,31 +44561,12 @@ Uncategorised
 Uncategorised
   After events:
     ICT: VEC_edge_base_quick_push at basic-block.h:150:0
-    IRF: VEC_edge_base_quick_push at basic-block.h:150:1
-  Occurrences: 1
-
-Uncategorised
-  After events:
-    ICT: VEC_edge_base_space at basic-block.h:150:0
-    IRF: VEC_edge_base_space at basic-block.h:150:1
   Occurrences: 1
 
 Uncategorised
   After events:
     ICT: VEC_edge_gc_reserve at basic-block.h:151:0
   Occurrences: 1
-
-Uncategorised
-  After events:
-    ICT: VEC_edge_gc_reserve at basic-block.h:151:0
-    ICF: VEC_edge_gc_reserve at basic-block.h:151:1
-  Occurrences: 1
-
-Uncategorised
-  After events:
-    ICT: VEC_edge_gc_safe_push at basic-block.h:151:0
-    ICF: VEC_edge_gc_safe_push at basic-block.h:151:1
-  Occurrences: 2
 
 Uncategorised
   After events:
@@ -46508,12 +44587,12 @@ Uncategorised
   After events:
     ICT: VEC_gimple_base_length at gimple.h:33:0
     IRF: VEC_gimple_base_length at gimple.h:33:1
-  Occurrences: 5
+  Occurrences: 1
 
 Uncategorised
   After events:
     ICT: VEC_haifa_deps_insn_data_def_base_length at sched-int.h:846:0
-  Occurrences: 2
+  Occurrences: 1
 
 Uncategorised
   After events:
@@ -46524,6 +44603,11 @@ Uncategorised
   After events:
     ICT: VEC_haifa_deps_insn_data_def_heap_safe_grow_cleared at sched-int.h:847:0
   Occurrences: 2
+
+Uncategorised
+  After events:
+    ICT: VEC_haifa_insn_data_def_base_length at sched-int.h:825:0
+  Occurrences: 1
 
 Uncategorised
   After events:
@@ -46538,12 +44622,12 @@ Uncategorised
 Uncategorised
   After events:
     ICT: VEC_int_base_address at vecprim.h:31:0
-  Occurrences: 4
+  Occurrences: 2
 
 Uncategorised
   After events:
     ICT: VEC_int_base_length at vecprim.h:31:0
-  Occurrences: 6
+  Occurrences: 7
 
 Uncategorised
   After events:
@@ -46557,27 +44641,22 @@ Uncategorised
 
 Uncategorised
   After events:
-    ICT: VEC_ipa_edge_args_t_base_iterate at ipa-prop.h:316:0
-  Occurrences: 1
-
-Uncategorised
-  After events:
-    ICT: VEC_ipa_edge_args_t_base_length at ipa-prop.h:316:0
-  Occurrences: 1
-
-Uncategorised
-  After events:
     ICT: VEC_ipa_edge_args_t_gc_safe_grow at ipa-prop.h:317:0
   Occurrences: 1
 
 Uncategorised
   After events:
     ICT: VEC_ipa_edge_args_t_gc_safe_grow_cleared at ipa-prop.h:317:0
-  Occurrences: 1
+  Occurrences: 2
 
 Uncategorised
   After events:
     ICT: VEC_ipa_node_params_t_base_iterate at ipa-prop.h:314:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    ICT: VEC_ipa_node_params_t_base_length at ipa-prop.h:314:0
   Occurrences: 1
 
 Uncategorised
@@ -46602,6 +44681,27 @@ Uncategorised
 
 Uncategorised
   After events:
+    ICT: VEC_loop_p_base_iterate at cfgloop.h:85:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    ICT: VEC_loop_p_base_length at cfgloop.h:85:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    ICT: VEC_loop_p_gc_free at cfgloop.h:87:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    ICT: VEC_loop_p_gc_free at cfgloop.h:87:0
+    CF: VEC_loop_p_gc_free at cfgloop.h:87:1
+  Occurrences: 1
+
+Uncategorised
+  After events:
     ICT: VEC_reg_stat_type_heap_safe_grow at combine.c:256:0
   Occurrences: 1
 
@@ -46609,7 +44709,7 @@ Uncategorised
   After events:
     ICT: VEC_rtx_base_index at rtl.h:200:0
     IRF: VEC_rtx_base_index at rtl.h:0:0
-  Occurrences: 1
+  Occurrences: 2
 
 Uncategorised
   After events:
@@ -46629,6 +44729,12 @@ Uncategorised
 Uncategorised
   After events:
     ICT: VEC_tree_base_address at tree.h:182:0
+    IRF: VEC_tree_base_address at tree.h:182:1
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    ICT: VEC_tree_base_iterate at tree.h:182:0
   Occurrences: 1
 
 Uncategorised
@@ -46644,14 +44750,35 @@ Uncategorised
 
 Uncategorised
   After events:
+    ICT: VEC_tree_base_space at tree.h:182:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    ICT: VEC_tree_heap_reserve at tree.h:184:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    ICT: VEC_tree_heap_safe_push at tree.h:184:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
     ICT: VEC_varinfo_t_base_length at tree-ssa-structalias.c:273:0
-  Occurrences: 22
+  Occurrences: 25
 
 Uncategorised
   After events:
     ICT: VEC_varinfo_t_base_length at tree-ssa-structalias.c:273:0
     IRF: VEC_varinfo_t_base_length at tree-ssa-structalias.c:0:0
-  Occurrences: 1
+  Occurrences: 2
+
+Uncategorised
+  After events:
+    ICT: VEC_varinfo_t_base_length at tree-ssa-structalias.c:273:0
+    IRF: VEC_varinfo_t_base_length at tree-ssa-structalias.c:273:1
+  Occurrences: 2
 
 Uncategorised
   After events:
@@ -46666,7 +44793,7 @@ Uncategorised
 Uncategorised
   After events:
     CT: _cpp_lex_direct at cpp_lex.c:1373:0
-    ICF: _cpp_lex_direct at cpp_lex.c:1433:7
+    RF: _cpp_lex_direct at cpp_lex.c:1734:1
   Occurrences: 1
 
 Uncategorised
@@ -46678,28 +44805,22 @@ Uncategorised
 Uncategorised
   After events:
     ICT: add_graph_edge at tree-ssa-structalias.c:1066:0
-  Occurrences: 18
+  Occurrences: 17
 
 Uncategorised
   After events:
     ICT: add_line_note at cpp_lex.c:86:0
-  Occurrences: 114
-
-Uncategorised
-  After events:
-    ICT: add_line_note at cpp_lex.c:86:0
-    IRF: add_line_note at cpp_lex.c:0:0
-  Occurrences: 1
+  Occurrences: 110
 
 Uncategorised
   After events:
     ICT: add_pred_graph_edge at tree-ssa-structalias.c:1053:0
-  Occurrences: 5
+  Occurrences: 4
 
 Uncategorised
   After events:
     ICT: add_to_deps_list at sched-deps.c:256:0
-  Occurrences: 24
+  Occurrences: 16
 
 Uncategorised
   After events:
@@ -46710,12 +44831,13 @@ Uncategorised
 Uncategorised
   After events:
     ICT: attach_dep_link at sched-deps.c:231:0
-  Occurrences: 4
+  Occurrences: 1
 
 Uncategorised
   After events:
-    ICT: bb_seq at gimple.h:237:0
-  Occurrences: 1
+    ICT: bitmap_clear at bitmap.c:295:0
+    ICF: bitmap_clear at bitmap.c:298:5
+  Occurrences: 3
 
 Uncategorised
   After events:
@@ -46725,8 +44847,8 @@ Uncategorised
 Uncategorised
   After events:
     ICT: bitmap_elt_clear_from at bitmap.c:246:0
-    IRF: bitmap_elt_clear_from at bitmap.c:249:39
-  Occurrences: 2
+    IRF: bitmap_elt_clear_from at bitmap.c:0:7
+  Occurrences: 4
 
 Uncategorised
   After events:
@@ -46736,58 +44858,55 @@ Uncategorised
 Uncategorised
   After events:
     ICT: bmp_iter_set at bitmap.h:393:0
-  Occurrences: 5
+  Occurrences: 6
 
 Uncategorised
   After events:
     ICT: bmp_iter_set_init at bitmap.h:224:0
-  Occurrences: 3
+  Occurrences: 2
+
+Uncategorised
+  After events:
+    ICT: bmp_iter_set_init at bitmap.h:224:0
+    IRF: bmp_iter_set_init at bitmap.h:233:11
+  Occurrences: 1
 
 Uncategorised
   After events:
     CT: build_int_cst_wide at tree.c:1118:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    CT: build_int_cst_wide at tree.c:1118:0
+    ICF: build_int_cst_wide at tree.c:1177:32
   Occurrences: 1
 
 Uncategorised
   After events:
     CT: build_int_cst_wide at tree.c:1118:0
     RF: build_int_cst_wide at tree.c:1221:3
-  Occurrences: 3
+  Occurrences: 4
 
 Uncategorised
   After events:
     CT: c_lex_one_token at c-parser.c:204:0
-    CF: c_lex_one_token at c-parser.c:207:17
-  Occurrences: 1
-
-Uncategorised
-  After events:
-    CT: c_lex_with_flags at c-lex.c:298:0
-    CF: c_lex_with_flags at c-lex.c:306:9
-  Occurrences: 1
+  Occurrences: 2
 
 Uncategorised
   After events:
     ICT: c_parser_initializer at c-parser.c:3065:0
-    IRF: c_parser_initializer at c-parser.c:0:0
   Occurrences: 1
 
 Uncategorised
   After events:
     ICT: c_parser_next_token_is at c-parser.c:333:0
-    ICF: c_parser_next_token_is at c-parser.c:335:10
   Occurrences: 1
 
 Uncategorised
   After events:
     ICT: c_parser_peek_token at c-parser.c:319:0
     CF: c_parser_peek_token at c-parser.c:323:7
-  Occurrences: 1
-
-Uncategorised
-  After events:
-    ICT: c_parser_peek_token at c-parser.c:319:0
-    IRF: c_parser_peek_token at c-parser.c:0:0
   Occurrences: 1
 
 Uncategorised
@@ -46804,27 +44923,33 @@ Uncategorised
   After events:
     CT: change_queue_index at haifa-sched.c:3885:0
     CF: change_queue_index at haifa-sched.c:3905:5
-  Occurrences: 2
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    CT: change_queue_index at haifa-sched.c:3885:0
+    CF: change_queue_index at haifa-sched.c:3907:5
+  Occurrences: 1
 
 Uncategorised
   After events:
     ICT: check_call at ipa-pure-const.c:259:0
-  Occurrences: 1
-
-Uncategorised
-  After events:
-    ICT: check_format_string at c-format.c:126:0
-  Occurrences: 1
-
-Uncategorised
-  After events:
-    ICT: check_qualified_type at tree.c:5443:0
-  Occurrences: 1
+  Occurrences: 3
 
 Uncategorised
   After events:
     ICT: check_stmt at ipa-pure-const.c:405:0
   Occurrences: 3
+
+Uncategorised
+  After events:
+    ICT: component_uses_parent_alias_set at alias.c:539:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    ICT: compress_float_constant at expr.c:3511:0
+  Occurrences: 1
 
 Uncategorised
   After events:
@@ -46856,7 +44981,7 @@ Uncategorised
 Uncategorised
   After events:
     ICT: compute_inverse at ggc-page.c:1497:0
-  Occurrences: 5
+  Occurrences: 7
 
 Uncategorised
   After events:
@@ -46865,25 +44990,19 @@ Uncategorised
 
 Uncategorised
   After events:
-    ICT: connect_dest at cfg.c:223:0
-    ICF: connect_dest at cfg.c:226:3
-  Occurrences: 1
-
-Uncategorised
-  After events:
-    ICT: connect_src at cfg.c:214:0
-    ICF: connect_src at cfg.c:216:3
-  Occurrences: 1
-
-Uncategorised
-  After events:
     ICT: constraint_expr_less at tree-ssa-structalias.c:748:0
-  Occurrences: 1
+  Occurrences: 2
 
 Uncategorised
   After events:
     ICT: constraint_expr_less at tree-ssa-structalias.c:748:0
     IRF: constraint_expr_less at tree-ssa-structalias.c:0:18
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    ICT: constraint_expr_less at tree-ssa-structalias.c:748:0
+    IRF: constraint_expr_less at tree-ssa-structalias.c:753:18
   Occurrences: 1
 
 Uncategorised
@@ -46899,19 +45018,19 @@ Uncategorised
 Uncategorised
   After events:
     CT: cpp_get_token at cpp_macro.c:1227:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    CT: cpp_get_token at cpp_macro.c:1227:0
     CF: cpp_get_token at cpp_macro.c:1239:11
   Occurrences: 1
 
 Uncategorised
   After events:
     CT: cpp_get_token_with_location at cpp_macro.c:1347:0
-  Occurrences: 1
-
-Uncategorised
-  After events:
-    CT: cpp_get_token_with_location at cpp_macro.c:1347:0
     CF: cpp_get_token_with_location at cpp_macro.c:1351:12
-  Occurrences: 1
+  Occurrences: 2
 
 Uncategorised
   After events:
@@ -46925,30 +45044,41 @@ Uncategorised
 
 Uncategorised
   After events:
+    CT: cselib_invalidate_regno at cselib.c:1740:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
     ICT: cselib_record_set at cselib.c:1968:0
   Occurrences: 13
 
 Uncategorised
   After events:
+    ICT: cselib_record_set at cselib.c:1968:0
+    IRF: cselib_record_set at cselib.c:0:0
+  Occurrences: 2
+
+Uncategorised
+  After events:
     ICT: def_builtin at i386.c:21380:0
-  Occurrences: 81
+  Occurrences: 84
 
 Uncategorised
   After events:
     ICT: def_builtin at i386.c:21380:0
     IRF: def_builtin at i386.c:0:0
-  Occurrences: 5
+  Occurrences: 6
 
 Uncategorised
   After events:
     ICT: def_builtin_1 at c-common.c:5178:0
-  Occurrences: 26
+  Occurrences: 27
 
 Uncategorised
   After events:
     ICT: def_builtin_1 at c-common.c:5178:0
     IRF: def_builtin_1 at c-common.c:0:0
-  Occurrences: 19
+  Occurrences: 16
 
 Uncategorised
   After events:
@@ -46958,18 +45088,18 @@ Uncategorised
 Uncategorised
   After events:
     ICT: def_builtin_const at i386.c:21417:0
-  Occurrences: 68
+  Occurrences: 79
 
 Uncategorised
   After events:
     ICT: default_binds_local_p_1 at varasm.c:6664:0
-  Occurrences: 44
+  Occurrences: 42
 
 Uncategorised
   After events:
     ICT: default_binds_local_p_1 at varasm.c:6664:0
     IRF: default_binds_local_p_1 at varasm.c:0:0
-  Occurrences: 2
+  Occurrences: 1
 
 Uncategorised
   After events:
@@ -46978,13 +45108,18 @@ Uncategorised
 
 Uncategorised
   After events:
+    CT: delegitimize_mem_from_attrs at simplify-rtx.c:211:0
+  Occurrences: 2
+
+Uncategorised
+  After events:
     ICT: deletable_insn_p_1 at dce.c:66:0
-  Occurrences: 12
+  Occurrences: 10
 
 Uncategorised
   After events:
     ICT: df_analyze_problem at df-core.c:1080:0
-  Occurrences: 7
+  Occurrences: 8
 
 Uncategorised
   After events:
@@ -46999,24 +45134,13 @@ Uncategorised
 
 Uncategorised
   After events:
-    ICT: df_lr_get_bb_info at df.h:1052:0
-  Occurrences: 2
-
-Uncategorised
-  After events:
     CT: df_mark_solutions_dirty at df-core.c:1316:7
-  Occurrences: 1
-
-Uncategorised
-  After events:
-    CT: df_mark_solutions_dirty at df-core.c:1316:7
-    RF: df_mark_solutions_dirty at df-core.c:1322:1
   Occurrences: 1
 
 Uncategorised
   After events:
     ICT: df_record_entry_block_defs at df-scan.c:4000:0
-  Occurrences: 1
+  Occurrences: 2
 
 Uncategorised
   After events:
@@ -47042,12 +45166,18 @@ Uncategorised
 Uncategorised
   After events:
     ICT: df_worklist_propagate_forward at df-core.c:863:0
-  Occurrences: 3
+  Occurrences: 2
+
+Uncategorised
+  After events:
+    ICT: df_worklist_propagate_forward at df-core.c:863:0
+    CF: df_worklist_propagate_forward at df-core.c:878:11
+  Occurrences: 1
 
 Uncategorised
   After events:
     ICT: dfs_edge_dest at graphds.c:133:0
-  Occurrences: 7
+  Occurrences: 4
 
 Uncategorised
   After events:
@@ -47063,18 +45193,18 @@ Uncategorised
 Uncategorised
   After events:
     ICT: dfs_next_edge at graphds.c:177:0
-  Occurrences: 17
+  Occurrences: 16
 
 Uncategorised
   After events:
     ICT: dfs_next_edge at graphds.c:177:0
     IRF: dfs_next_edge at graphds.c:179:28
-  Occurrences: 7
+  Occurrences: 8
 
 Uncategorised
   After events:
     ICT: dom_convert_dir_to_idx at dominance.c:191:0
-  Occurrences: 12
+  Occurrences: 16
 
 Uncategorised
   After events:
@@ -47084,23 +45214,17 @@ Uncategorised
 Uncategorised
   After events:
     ICT: ei_cond at basic-block.h:771:0
-  Occurrences: 26
-
-Uncategorised
-  After events:
-    ICT: ei_cond at basic-block.h:771:0
-    ICF: ei_cond at basic-block.h:773:8
-  Occurrences: 1
+  Occurrences: 25
 
 Uncategorised
   After events:
     ICT: ei_end_p at basic-block.h:721:0
-  Occurrences: 205
+  Occurrences: 227
 
 Uncategorised
   After events:
     ICT: ei_next at basic-block.h:736:0
-  Occurrences: 8
+  Occurrences: 9
 
 Uncategorised
   After events:
@@ -47110,13 +45234,8 @@ Uncategorised
 Uncategorised
   After events:
     ICT: end_hard_regno at regs.h:290:0
-  Occurrences: 1
-
-Uncategorised
-  After events:
-    ICT: end_hard_regno at regs.h:290:0
     IRF: end_hard_regno at regs.h:0:16
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
@@ -47127,7 +45246,7 @@ Uncategorised
 Uncategorised
   After events:
     ICT: et_new_occ at et-forest.c:444:0
-  Occurrences: 16
+  Occurrences: 15
 
 Uncategorised
   After events:
@@ -47137,18 +45256,19 @@ Uncategorised
 
 Uncategorised
   After events:
-    CT: execute_on_growing_pred at cfghooks.c:1024:7
-  Occurrences: 1
-
-Uncategorised
-  After events:
     ICT: fel_init at cfgloop.h:535:0
   Occurrences: 1
 
 Uncategorised
   After events:
-    ICT: fel_next at cfgloop.h:518:0
+    ICT: fel_init at cfgloop.h:535:0
+    ICF: fel_init at cfgloop.h:549:18
   Occurrences: 1
+
+Uncategorised
+  After events:
+    ICT: fel_next at cfgloop.h:518:0
+  Occurrences: 2
 
 Uncategorised
   After events:
@@ -47157,13 +45277,8 @@ Uncategorised
 
 Uncategorised
   After events:
-    CT: find_edge at cfganal.c:485:0
-    ICF: find_edge at cfganal.c:489:7
-  Occurrences: 1
-
-Uncategorised
-  After events:
     CT: find_oldest_value_reg at regcprop.c:435:0
+    ICF: find_oldest_value_reg at regcprop.c:436:24
   Occurrences: 1
 
 Uncategorised
@@ -47173,18 +45288,7 @@ Uncategorised
 
 Uncategorised
   After events:
-    ICT: find_reg_class_closure at ira.c:1124:0
-    ICF: find_reg_class_closure at ira.c:1127:3
-  Occurrences: 1
-
-Uncategorised
-  After events:
     ICT: find_reload_regs at reload1.c:2035:0
-  Occurrences: 1
-
-Uncategorised
-  After events:
-    ICT: fini_pre at tree-ssa-pre.c:4691:0
   Occurrences: 1
 
 Uncategorised
@@ -47195,13 +45299,13 @@ Uncategorised
 Uncategorised
   After events:
     ICT: fit_double_type at fold-const.c:204:0
-  Occurrences: 8
+  Occurrences: 9
 
 Uncategorised
   After events:
     ICT: fit_double_type at fold-const.c:204:0
     IRF: fit_double_type at fold-const.c:209:23
-  Occurrences: 3
+  Occurrences: 5
 
 Uncategorised
   After events:
@@ -47211,49 +45315,72 @@ Uncategorised
 Uncategorised
   After events:
     ICT: flow_dfs_compute_reverse_add_bb at cfganal.c:1101:0
-  Occurrences: 2
+  Occurrences: 1
 
 Uncategorised
   After events:
-    CT: force_fit_type_double at fold-const.c:282:0
+    ICT: flow_loop_free at cfgloop.c:180:0
+    ICF: flow_loop_free at cfgloop.c:184:3
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    CT: flow_loops_free at cfgloop.c:206:7
+    ICF: flow_loops_free at cfgloop.c:212:19
   Occurrences: 1
 
 Uncategorised
   After events:
     CT: force_fit_type_double at fold-const.c:282:0
     ICF: force_fit_type_double at fold-const.c:291:14
-  Occurrences: 3
+  Occurrences: 5
 
 Uncategorised
   After events:
     ICT: forms_identifier_p at cpp_lex.c:475:0
-  Occurrences: 220
+  Occurrences: 213
 
 Uncategorised
   After events:
     ICT: free_topo_info at tree-ssa-structalias.c:1491:0
-  Occurrences: 4
+  Occurrences: 3
+
+Uncategorised
+  After events:
+    ICT: function_arg_32 at i386.c:5914:0
+  Occurrences: 1
 
 Uncategorised
   After events:
     ICT: gen_const_vector at emit-rtl.c:5616:0
-  Occurrences: 15
+  Occurrences: 14
 
 Uncategorised
   After events:
     ICT: get_back_and_forw_lists at sched-deps.c:1195:0
-  Occurrences: 7
+  Occurrences: 4
 
 Uncategorised
   After events:
     ICT: get_zero at real.c:127:0
-  Occurrences: 2273
+  Occurrences: 2277
 
 Uncategorised
   After events:
     ICT: get_zero at real.c:127:0
     IRF: get_zero at real.c:130:11
-  Occurrences: 18
+  Occurrences: 15
+
+Uncategorised
+  After events:
+    CT: ggc_free at ggc-page.c:1404:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    CT: ggc_free at ggc-page.c:1404:0
+    ICF: ggc_free at ggc-page.c:1405:20
+  Occurrences: 3
 
 Uncategorised
   After events:
@@ -47264,32 +45391,48 @@ Uncategorised
   After events:
     ICT: gimple_body at gimple.c:1700:0
     IRF: gimple_body at gimple.c:0:0
-  Occurrences: 2
+  Occurrences: 5
 
 Uncategorised
   After events:
     ICT: gimple_call_lhs at gimple.h:1878:0
-  Occurrences: 4
-
-Uncategorised
-  After events:
-    ICT: gimple_code at gimple.h:1052:0
   Occurrences: 2
 
 Uncategorised
   After events:
-    ICT: gimple_has_mem_ops at gimple.h:1283:0
+    ICT: gimple_code at gimple.h:1052:0
+  Occurrences: 3
+
+Uncategorised
+  After events:
+    ICT: gimple_def_ops at gimple.h:1292:0
   Occurrences: 1
+
+Uncategorised
+  After events:
+    ICT: gimple_has_mem_ops at gimple.h:1283:0
+  Occurrences: 4
 
 Uncategorised
   After events:
     ICT: gimple_has_ops at gimple.h:1274:0
-  Occurrences: 1
+  Occurrences: 3
+
+Uncategorised
+  After events:
+    ICT: gimple_has_volatile_ops at gimple.h:1477:0
+  Occurrences: 2
 
 Uncategorised
   After events:
     ICT: gimple_op at gimple.h:1631:0
-  Occurrences: 11
+  Occurrences: 6
+
+Uncategorised
+  After events:
+    ICT: gimple_op at gimple.h:1631:0
+    IRF: gimple_op at gimple.h:0:0
+  Occurrences: 1
 
 Uncategorised
   After events:
@@ -47299,16 +45442,16 @@ Uncategorised
 Uncategorised
   After events:
     ICT: gimple_ops at gimple.h:1614:0
-  Occurrences: 8
+  Occurrences: 6
 
 Uncategorised
   After events:
-    ICT: gimple_set_op at gimple.h:1663:0
+    ICT: gimple_seq_last at gimple.h:178:0
   Occurrences: 1
 
 Uncategorised
   After events:
-    ICT: gimple_set_visited at gimple.h:1217:0
+    ICT: gimple_set_op at gimple.h:1663:0
   Occurrences: 1
 
 Uncategorised
@@ -47324,7 +45467,7 @@ Uncategorised
 Uncategorised
   After events:
     ICT: gimplify_modify_expr at gimplify.c:4401:0
-  Occurrences: 1
+  Occurrences: 2
 
 Uncategorised
   After events:
@@ -47339,17 +45482,12 @@ Uncategorised
 Uncategorised
   After events:
     ICT: gsi_last at gimple.h:4435:0
-  Occurrences: 3
+  Occurrences: 1
 
 Uncategorised
   After events:
     ICT: gsi_last_bb at gimple.h:4450:0
-  Occurrences: 2
-
-Uncategorised
-  After events:
-    ICT: gsi_start at gimple.h:4403:0
-  Occurrences: 1
+  Occurrences: 3
 
 Uncategorised
   After events:
@@ -47364,28 +45502,23 @@ Uncategorised
 Uncategorised
   After events:
     ICT: in_hard_reg_set_p at regs.h:335:0
-  Occurrences: 864
+  Occurrences: 881
 
 Uncategorised
   After events:
     ICT: in_hard_reg_set_p at regs.h:335:0
     IRF: in_hard_reg_set_p at regs.h:0:0
-  Occurrences: 105
+  Occurrences: 102
 
 Uncategorised
   After events:
     ICT: init_insn_codes at optabs.c:5463:0
-  Occurrences: 18
+  Occurrences: 17
 
 Uncategorised
   After events:
     ICT: initialize_argument_information at calls.c:932:0
-  Occurrences: 3
-
-Uncategorised
-  After events:
-    ICT: instantiate_new_reg at function.c:1294:0
-  Occurrences: 1
+  Occurrences: 2
 
 Uncategorised
   After events:
@@ -47400,12 +45533,12 @@ Uncategorised
 Uncategorised
   After events:
     ICT: ipa_free_node_params_substructures at ipa-prop.c:1205:0
-  Occurrences: 1
+  Occurrences: 2
 
 Uncategorised
   After events:
     ICT: ipcp_compute_node_scale at ipa-cp.c:590:0
-  Occurrences: 1
+  Occurrences: 2
 
 Uncategorised
   After events:
@@ -47419,8 +45552,20 @@ Uncategorised
 
 Uncategorised
   After events:
+    CT: ix86_delegitimize_address at i386.c:10961:0
+    CF: ix86_delegitimize_address at i386.c:10962:16
+  Occurrences: 2
+
+Uncategorised
+  After events:
+    CT: ix86_find_base_term at i386.c:11080:10
+    CF: ix86_find_base_term at i386.c:11080:10
+  Occurrences: 2
+
+Uncategorised
+  After events:
     ICT: ix86_function_sseregparm at i386.c:4614:0
-  Occurrences: 4
+  Occurrences: 5
 
 Uncategorised
   After events:
@@ -47429,18 +45574,13 @@ Uncategorised
 
 Uncategorised
   After events:
-    ICT: likely_eliminated_by_inlining_p at ipa-inline.c:1713:0
-  Occurrences: 1
-
-Uncategorised
-  After events:
-    ICT: link_imm_use at tree-flow-inline.h:214:0
+    ICT: last_stmt at tree-cfg.c:2363:0
   Occurrences: 1
 
 Uncategorised
   After events:
     ICT: link_roots at dominance.c:452:0
-  Occurrences: 8
+  Occurrences: 7
 
 Uncategorised
   After events:
@@ -47450,18 +45590,40 @@ Uncategorised
 Uncategorised
   After events:
     ICT: lookup_attribute at tree.c:5088:0
-  Occurrences: 36
+  Occurrences: 43
 
 Uncategorised
   After events:
     ICT: lookup_attribute at tree.c:5088:0
     IRF: lookup_attribute at tree.c:0:0
-  Occurrences: 5
+  Occurrences: 6
+
+Uncategorised
+  After events:
+    ICT: lookup_page_table_entry at ggc-page.c:594:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    ICT: lookup_page_table_entry at ggc-page.c:594:0
+    IRF: lookup_page_table_entry at ggc-page.c:613:10
+  Occurrences: 3
+
+Uncategorised
+  After events:
+    CT: loop_optimizer_finalize at loop-init.c:103:0
+  Occurrences: 1
 
 Uncategorised
   After events:
     ICT: loop_outer at cfgloop.h:434:0
-  Occurrences: 3
+  Occurrences: 5
+
+Uncategorised
+  After events:
+    ICT: loops_state_satisfies_p at cfgloop.h:471:0
+    IRF: loops_state_satisfies_p at cfgloop.h:473:11
+  Occurrences: 1
 
 Uncategorised
   After events:
@@ -47486,13 +45648,19 @@ Uncategorised
 
 Uncategorised
   After events:
+    ICT: make_tree_vec_stat at tree.c:1574:0
+    CF: make_tree_vec_stat at tree.c:1584:14
+  Occurrences: 1
+
+Uncategorised
+  After events:
     ICT: mark_nonreg_stores at dce.c:212:0
-  Occurrences: 2
+  Occurrences: 1
 
 Uncategorised
   After events:
     ICT: marked_insn_p at dce.c:155:0
-  Occurrences: 32
+  Occurrences: 40
 
 Uncategorised
   After events:
@@ -47507,17 +45675,12 @@ Uncategorised
 Uncategorised
   After events:
     ICT: new_elt_loc_list at cselib.c:222:0
-  Occurrences: 6
+  Occurrences: 5
 
 Uncategorised
   After events:
     ICT: next_htab_element at tree-flow-inline.h:90:0
-  Occurrences: 2
-
-Uncategorised
-  After events:
-    ICT: next_referenced_var at tree-flow-inline.h:124:0
-  Occurrences: 2
+  Occurrences: 1
 
 Uncategorised
   After events:
@@ -47526,8 +45689,14 @@ Uncategorised
 
 Uncategorised
   After events:
+    ICT: number_of_loops at cfgloop.h:459:0
+    ICF: number_of_loops at cfgloop.h:464:10
+  Occurrences: 1
+
+Uncategorised
+  After events:
     ICT: op_iter_init at tree-flow-inline.h:742:0
-  Occurrences: 2
+  Occurrences: 1
 
 Uncategorised
   After events:
@@ -47537,33 +45706,27 @@ Uncategorised
 Uncategorised
   After events:
     ICT: op_iter_init_tree at tree-flow-inline.h:792:0
-  Occurrences: 9
+  Occurrences: 12
 
 Uncategorised
   After events:
     ICT: op_iter_init_use at tree-flow-inline.h:768:0
-  Occurrences: 6
+  Occurrences: 3
 
 Uncategorised
   After events:
     ICT: op_iter_next_tree at tree-flow-inline.h:699:0
-  Occurrences: 8
-
-Uncategorised
-  After events:
-    ICT: op_iter_next_tree at tree-flow-inline.h:699:0
-    IRF: op_iter_next_tree at tree-flow-inline.h:0:0
-  Occurrences: 1
-
-Uncategorised
-  After events:
-    ICT: op_iter_next_use at tree-flow-inline.h:659:0
   Occurrences: 7
 
 Uncategorised
   After events:
+    ICT: op_iter_next_use at tree-flow-inline.h:659:0
+  Occurrences: 4
+
+Uncategorised
+  After events:
     ICT: optimize_function_for_size_p at predict.c:202:0
-  Occurrences: 1
+  Occurrences: 5
 
 Uncategorised
   After events:
@@ -47572,8 +45735,7 @@ Uncategorised
 
 Uncategorised
   After events:
-    ICT: page_group_index at ggc-page.c:709:0
-    IRF: page_group_index at ggc-page.c:711:39
+    ICT: preferable at cse.c:722:0
   Occurrences: 1
 
 Uncategorised
@@ -47583,14 +45745,36 @@ Uncategorised
 
 Uncategorised
   After events:
-    CT: ready_add at haifa-sched.c:1388:0
-  Occurrences: 3
+    ICT: prop_set_simulate_again at tree-ssa-propagate.h:28:0
+  Occurrences: 2
+
+Uncategorised
+  After events:
+    ICT: push_by_depth at ggc-page.c:535:0
+    IRF: push_by_depth at ggc-page.c:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    CT: push_operand at recog.c:1219:8
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    CT: queue_insn at haifa-sched.c:1342:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    CT: queue_insn at haifa-sched.c:1342:0
+    CF: queue_insn at haifa-sched.c:1344:14
+  Occurrences: 1
 
 Uncategorised
   After events:
     CT: ready_add at haifa-sched.c:1388:0
     RF: ready_add at haifa-sched.c:1420:1
-  Occurrences: 1
+  Occurrences: 5
 
 Uncategorised
   After events:
@@ -47600,34 +45784,40 @@ Uncategorised
 Uncategorised
   After events:
     ICT: reg_fits_class_p at recog.c:2728:0
-  Occurrences: 897
+  Occurrences: 893
 
 Uncategorised
   After events:
     ICT: reg_fits_class_p at recog.c:2728:0
     ICF: reg_fits_class_p at recog.c:2731:15
-  Occurrences: 4
+  Occurrences: 3
 
 Uncategorised
   After events:
     ICT: reg_fits_class_p at recog.c:2728:0
     ICF: reg_fits_class_p at recog.c:2737:7
-  Occurrences: 125
+  Occurrences: 98
 
 Uncategorised
   After events:
     ICT: remove_fake_predecessors at cfganal.c:562:0
-  Occurrences: 1
+  Occurrences: 2
 
 Uncategorised
   After events:
     CT: replace_oldest_value_addr at regcprop.c:521:0
+    CF: replace_oldest_value_addr at regcprop.c:642:14
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    CT: replace_oldest_value_reg at regcprop.c:481:0
   Occurrences: 1
 
 Uncategorised
   After events:
     ICT: replace_uses_in at tree-ssa-propagate.c:869:0
-  Occurrences: 5
+  Occurrences: 3
 
 Uncategorised
   After events:
@@ -47637,13 +45827,13 @@ Uncategorised
 Uncategorised
   After events:
     ICT: rhs_regno at rtl.h:1051:0
-  Occurrences: 3
+  Occurrences: 4
 
 Uncategorised
   After events:
     ICT: rhs_regno at rtl.h:1051:0
     IRF: rhs_regno at rtl.h:1053:10
-  Occurrences: 9
+  Occurrences: 8
 
 Uncategorised
   After events:
@@ -47653,7 +45843,7 @@ Uncategorised
 Uncategorised
   After events:
     ICT: sched_has_condition_p at sched-deps.c:526:0
-  Occurrences: 2
+  Occurrences: 5
 
 Uncategorised
   After events:
@@ -47663,7 +45853,7 @@ Uncategorised
 Uncategorised
   After events:
     ICT: sched_scan at haifa-sched.c:5307:0
-  Occurrences: 2
+  Occurrences: 1
 
 Uncategorised
   After events:
@@ -47672,50 +45862,34 @@ Uncategorised
 
 Uncategorised
   After events:
-    ICT: set_depth at et-forest.c:64:0
-  Occurrences: 1
-
-Uncategorised
-  After events:
     ICT: set_min_and_max_values_for_integral_type at stor-layout.c:2337:0
   Occurrences: 2
 
 Uncategorised
   After events:
-    ICT: set_page_group_in_use at ggc-page.c:717:0
-    ICF: set_page_group_in_use at ggc-page.c:719:25
+    ICT: set_next at et-forest.c:102:0
   Occurrences: 1
 
 Uncategorised
   After events:
     ICT: set_page_table_entry at ggc-page.c:619:0
+    IRF: set_page_table_entry at ggc-page.c:649:16
   Occurrences: 1
 
 Uncategorised
   After events:
     ICT: set_prev at et-forest.c:88:0
-  Occurrences: 10
-
-Uncategorised
-  After events:
-    ICT: set_ssa_use_from_ptr at tree-flow-inline.h:233:0
-    ICF: set_ssa_use_from_ptr at tree-flow-inline.h:237:3
-  Occurrences: 1
+  Occurrences: 12
 
 Uncategorised
   After events:
     ICT: setup_class_hard_regs at ira.c:428:0
-  Occurrences: 197
-
-Uncategorised
-  After events:
-    ICT: setup_cover_and_important_classes at ira.c:729:0
-  Occurrences: 1
+  Occurrences: 189
 
 Uncategorised
   After events:
     ICT: setup_reg_subclasses at ira.c:667:0
-  Occurrences: 5
+  Occurrences: 6
 
 Uncategorised
   After events:
@@ -47730,27 +45904,22 @@ Uncategorised
 Uncategorised
   After events:
     ICT: single_pred_p at basic-block.h:634:0
-  Occurrences: 9
+  Occurrences: 13
 
 Uncategorised
   After events:
     ICT: single_succ_p at basic-block.h:626:0
-  Occurrences: 30
-
-Uncategorised
-  After events:
-    ICT: skip_whitespace at cpp_lex.c:403:0
-  Occurrences: 1
+  Occurrences: 28
 
 Uncategorised
   After events:
     ICT: smallest_mode_for_size at stor-layout.c:419:0
-  Occurrences: 4
+  Occurrences: 5
 
 Uncategorised
   After events:
     ICT: stmt_ends_bb_p at tree-cfg.c:2319:0
-  Occurrences: 2
+  Occurrences: 1
 
 Uncategorised
   After events:
@@ -47760,12 +45929,7 @@ Uncategorised
 Uncategorised
   After events:
     ICT: suitable_for_tail_opt_p at tree-tailcall.c:131:0
-  Occurrences: 5
-
-Uncategorised
-  After events:
-    ICT: swap_sort at haifa-sched.c:1323:0
-  Occurrences: 1
+  Occurrences: 4
 
 Uncategorised
   After events:
@@ -47775,13 +45939,12 @@ Uncategorised
 Uncategorised
   After events:
     CT: tree_code_size at tree.c:656:0
-    RF: tree_code_size at tree.c:741:1
-  Occurrences: 2
+  Occurrences: 1
 
 Uncategorised
   After events:
     ICT: tree_cons_stat at tree.c:2098:0
-  Occurrences: 4
+  Occurrences: 11
 
 Uncategorised
   After events:
@@ -47790,25 +45953,30 @@ Uncategorised
 
 Uncategorised
   After events:
-    ICT: try_const_anchors at cse.c:1360:0
-    IRF: try_const_anchors at cse.c:0:0
-  Occurrences: 2
-
-Uncategorised
-  After events:
     ICT: validate_canon_reg at cse.c:2862:0
-  Occurrences: 5
+  Occurrences: 6
 
 Uncategorised
   After events:
     ICT: vconcat_length at concat.c:70:0
-  Occurrences: 9
+  Occurrences: 11
+
+Uncategorised
+  After events:
+    ICT: vec_heap_o_reserve_1 at vec.c:302:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    CT: vec_heap_o_reserve_exact at vec.c:370:0
+    ICF: vec_heap_o_reserve_exact at vec.c:371:10
+  Occurrences: 1
 
 Uncategorised
   After events:
     ICT: wrap_constant at cselib.c:776:0
     IRF: wrap_constant at cselib.c:0:0
-  Occurrences: 2
+  Occurrences: 3
 
 Uncategorised
   After events:
@@ -47818,40 +45986,64 @@ Uncategorised
 Uncategorised
   After events:
     RF: Jump to external code for free
-  Occurrences: 54
+  Occurrences: 55
+
+Uncategorised
+  After events:
+    RF: Jump to external code for free
+    ICF: loop_optimizer_finalize at loop-init.c:116:7
+  Occurrences: 1
 
 Uncategorised
   After events:
     RF: Jump to external code for fwrite
-  Occurrences: 4
+  Occurrences: 3
 
 Uncategorised
   After events:
     RF: Jump to external code for memcpy
-  Occurrences: 87
+  Occurrences: 77
 
 Uncategorised
   After events:
     RF: Jump to external code for memcpy
     ICF: constrain_operands at recog.c:2497:7
-  Occurrences: 122
+  Occurrences: 102
 
 Uncategorised
   After events:
     RF: Jump to external code for memcpy
     CF: find_reloads at reload.c:0:7
-  Occurrences: 4
+  Occurrences: 6
+
+Uncategorised
+  After events:
+    RF: Jump to external code for memcpy
+    CF: find_reloads at reload.c:3688:32
+  Occurrences: 1
 
 Uncategorised
   After events:
     RF: Jump to external code for memcpy
     CF: find_reloads at reload.c:3689:38
-  Occurrences: 2
+  Occurrences: 1
 
 Uncategorised
   After events:
     RF: Jump to external code for memcpy
     CF: find_reloads at reload.c:3690:28
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: Jump to external code for memcpy
+    CF: find_reloads at reload.c:3738:29
+  Occurrences: 2
+
+Uncategorised
+  After events:
+    RF: Jump to external code for memcpy
+    CF: find_reloads at reload.c:3740:7
   Occurrences: 1
 
 Uncategorised
@@ -47864,41 +46056,41 @@ Uncategorised
   After events:
     RF: Jump to external code for memcpy
     CF: record_operand_costs at ira-costs.c:952:7
-  Occurrences: 1
+  Occurrences: 4
 
 Uncategorised
   After events:
     RF: Jump to external code for memset
-  Occurrences: 401
+  Occurrences: 377
 
 Uncategorised
   After events:
     RF: Jump to external code for memset
-    CF: choose_reload_regs_init at reload1.c:5934:7
+    CF: choose_reload_regs_init at reload1.c:5935:7
   Occurrences: 1
 
 Uncategorised
   After events:
     RF: Jump to external code for memset
     CF: constrain_operands at recog.c:2336:22
-  Occurrences: 158
+  Occurrences: 187
 
 Uncategorised
   After events:
     RF: Jump to external code for memset
-    CF: emit_reload_insns at reload1.c:7792:27
+    CF: emit_reload_insns at reload1.c:7793:7
   Occurrences: 1
 
 Uncategorised
   After events:
     RF: Jump to external code for memset
-    CF: emit_reload_insns at reload1.c:7794:7
+    CF: emit_reload_insns at reload1.c:7794:32
   Occurrences: 1
 
 Uncategorised
   After events:
     RF: Jump to external code for memset
-    CF: emit_reload_insns at reload1.c:7795:7
+    CF: emit_reload_insns at reload1.c:7796:7
   Occurrences: 1
 
 Uncategorised
@@ -47911,28 +46103,26 @@ Uncategorised
   After events:
     RF: Jump to external code for memset
     RF: make_node_stat at tree.c:942:3
-  Occurrences: 1
-
-Uncategorised
-  After events:
-    RF: Jump to external code for memset
-    IRF: make_tree_vec_stat at tree.c:1589:23
-  Occurrences: 1
+  Occurrences: 2
 
 Uncategorised
   After events:
     RF: Jump to external code for strlen
-  Occurrences: 83
+  Occurrences: 88
+
+Uncategorised
+  After events:
+    IRF: SET_BIT at sbitmap.h:0:0
+  Occurrences: 1
 
 Uncategorised
   After events:
     IRF: SET_BIT at sbitmap.h:73:5
-  Occurrences: 12
+  Occurrences: 11
 
 Uncategorised
   After events:
-    IRF: VEC_basic_block_base_quick_push at basic-block.h:281:1
-    ICF: haifa_sched_init at haifa-sched.c:3483:5
+    IRF: VEC_alias_pair_base_iterate at tree.h:197:1
   Occurrences: 1
 
 Uncategorised
@@ -47948,6 +46138,11 @@ Uncategorised
 Uncategorised
   After events:
     IRF: VEC_bitmap_set_t_heap_safe_grow_cleared at tree-ssa-pre.c:0:0
+  Occurrences: 2
+
+Uncategorised
+  After events:
+    IRF: VEC_ce_s_base_iterate at tree-ssa-structalias.c:406:1
   Occurrences: 2
 
 Uncategorised
@@ -47968,28 +46163,32 @@ Uncategorised
 Uncategorised
   After events:
     IRF: VEC_constraint_t_base_length at tree-ssa-structalias.c:189:1
-  Occurrences: 11
+  Occurrences: 13
 
 Uncategorised
   After events:
     IRF: VEC_constraint_t_base_lower_bound at tree-ssa-structalias.c:0:0
-  Occurrences: 5
+  Occurrences: 3
+
+Uncategorised
+  After events:
+    IRF: VEC_df_ref_base_address at df-scan.c:49:1
+  Occurrences: 3
 
 Uncategorised
   After events:
     IRF: VEC_df_ref_base_length at df-scan.c:49:1
-  Occurrences: 34
+  Occurrences: 36
+
+Uncategorised
+  After events:
+    IRF: VEC_df_ref_base_quick_push at df-scan.c:49:1
+  Occurrences: 1
 
 Uncategorised
   After events:
     IRF: VEC_df_ref_base_quick_push at df-scan.c:49:1
     IRF: VEC_df_ref_stack_safe_push at df-scan.c:0:0
-  Occurrences: 2
-
-Uncategorised
-  After events:
-    IRF: VEC_df_ref_base_space at df-scan.c:49:1
-    IRF: VEC_df_ref_stack_reserve at df-scan.c:0:0
   Occurrences: 1
 
 Uncategorised
@@ -48010,7 +46209,7 @@ Uncategorised
 Uncategorised
   After events:
     IRF: VEC_df_ref_stack_reserve at df-scan.c:0:0
-  Occurrences: 383
+  Occurrences: 384
 
 Uncategorised
   After events:
@@ -48021,7 +46220,7 @@ Uncategorised
 Uncategorised
   After events:
     IRF: VEC_df_ref_stack_reserve at df-scan.c:50:1
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
@@ -48030,8 +46229,14 @@ Uncategorised
 
 Uncategorised
   After events:
+    IRF: VEC_df_ref_stack_safe_push at df-scan.c:0:0
+    RF: df_ref_create_structure at df-scan.c:2894:3
+  Occurrences: 1
+
+Uncategorised
+  After events:
     IRF: VEC_edge_base_length at basic-block.h:150:1
-  Occurrences: 11
+  Occurrences: 13
 
 Uncategorised
   After events:
@@ -48042,57 +46247,40 @@ Uncategorised
 Uncategorised
   After events:
     IRF: VEC_edge_base_length at basic-block.h:150:1
-    ICF: find_edge at cfganal.c:491:7
+    ICF: find_edge at cfganal.c:489:35
   Occurrences: 1
 
 Uncategorised
   After events:
     IRF: VEC_edge_base_quick_push at basic-block.h:150:1
-  Occurrences: 1
+    IRF: VEC_edge_gc_safe_push at basic-block.h:0:0
+  Occurrences: 2
 
 Uncategorised
   After events:
     IRF: VEC_edge_base_space at basic-block.h:150:1
     IRF: VEC_edge_gc_reserve at basic-block.h:0:0
-  Occurrences: 1
-
-Uncategorised
-  After events:
-    IRF: VEC_edge_gc_reserve at basic-block.h:0:0
-    ICF: VEC_edge_gc_safe_push at basic-block.h:151:1
-  Occurrences: 1
-
-Uncategorised
-  After events:
-    IRF: VEC_edge_gc_safe_push at basic-block.h:0:0
-  Occurrences: 1
-
-Uncategorised
-  After events:
-    IRF: VEC_edge_gc_safe_push at basic-block.h:0:0
-    CF: connect_src at cfg.c:217:3
-  Occurrences: 1
+  Occurrences: 2
 
 Uncategorised
   After events:
     IRF: VEC_funct_state_heap_safe_grow at ipa-pure-const.c:101:1
-    IRF: VEC_funct_state_heap_safe_grow_cleared at ipa-pure-const.c:0:0
   Occurrences: 1
 
 Uncategorised
   After events:
     IRF: VEC_funct_state_heap_safe_grow_cleared at ipa-pure-const.c:0:0
-  Occurrences: 1
+  Occurrences: 2
 
 Uncategorised
   After events:
     IRF: VEC_gimple_base_length at gimple.h:33:1
-  Occurrences: 4
+  Occurrences: 8
 
 Uncategorised
   After events:
     IRF: VEC_haifa_deps_insn_data_def_base_length at sched-int.h:846:1
-  Occurrences: 2
+  Occurrences: 1
 
 Uncategorised
   After events:
@@ -48103,6 +46291,11 @@ Uncategorised
 Uncategorised
   After events:
     IRF: VEC_haifa_deps_insn_data_def_heap_safe_grow_cleared at sched-int.h:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    IRF: VEC_haifa_insn_data_def_base_length at sched-int.h:825:1
   Occurrences: 1
 
 Uncategorised
@@ -48118,12 +46311,18 @@ Uncategorised
 Uncategorised
   After events:
     IRF: VEC_int_base_address at vecprim.h:31:1
-  Occurrences: 4
+  Occurrences: 2
+
+Uncategorised
+  After events:
+    IRF: VEC_int_base_iterate at vecprim.h:0:0
+    IRF: fel_next at cfgloop.h:0:0
+  Occurrences: 1
 
 Uncategorised
   After events:
     IRF: VEC_int_base_length at vecprim.h:0:0
-  Occurrences: 3
+  Occurrences: 4
 
 Uncategorised
   After events:
@@ -48138,17 +46337,12 @@ Uncategorised
 
 Uncategorised
   After events:
-    IRF: VEC_ipa_edge_args_t_base_iterate at ipa-prop.h:316:1
-  Occurrences: 1
-
-Uncategorised
-  After events:
-    IRF: VEC_ipa_edge_args_t_base_length at ipa-prop.h:316:1
-  Occurrences: 1
-
-Uncategorised
-  After events:
     IRF: VEC_ipa_edge_args_t_gc_safe_grow at ipa-prop.h:317:1
+    IRF: VEC_ipa_edge_args_t_gc_safe_grow_cleared at ipa-prop.h:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
     IRF: VEC_ipa_edge_args_t_gc_safe_grow_cleared at ipa-prop.h:0:0
   Occurrences: 1
 
@@ -48159,14 +46353,18 @@ Uncategorised
 
 Uncategorised
   After events:
+    IRF: VEC_ipa_node_params_t_base_length at ipa-prop.h:314:1
+  Occurrences: 1
+
+Uncategorised
+  After events:
     IRF: VEC_ipa_node_params_t_heap_safe_grow at ipa-prop.h:315:1
-    IRF: VEC_ipa_node_params_t_heap_safe_grow_cleared at ipa-prop.h:0:0
   Occurrences: 1
 
 Uncategorised
   After events:
     IRF: VEC_ipa_node_params_t_heap_safe_grow_cleared at ipa-prop.h:0:0
-  Occurrences: 1
+  Occurrences: 2
 
 Uncategorised
   After events:
@@ -48180,12 +46378,29 @@ Uncategorised
 
 Uncategorised
   After events:
-    IRF: VEC_reg_stat_type_heap_safe_grow at combine.c:256:1
+    IRF: VEC_loop_p_base_iterate at cfgloop.h:0:0
   Occurrences: 1
 
 Uncategorised
   After events:
-    IRF: VEC_rtx_base_index at rtl.h:0:0
+    IRF: VEC_loop_p_base_length at cfgloop.h:0:0
+    IRF: loop_outer at cfgloop.h:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    IRF: VEC_loop_p_base_length at cfgloop.h:0:0
+    IRF: number_of_loops at cfgloop.h:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    IRF: VEC_loop_p_gc_free at cfgloop.h:87:1
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    IRF: VEC_reg_stat_type_heap_safe_grow at combine.c:256:1
   Occurrences: 1
 
 Uncategorised
@@ -48197,43 +46412,39 @@ Uncategorised
   After events:
     IRF: VEC_rtx_base_length at rtl.h:200:1
     ICF: find_base_term at alias.c:1482:14
-  Occurrences: 1
+  Occurrences: 2
 
 Uncategorised
   After events:
     IRF: VEC_temp_slot_p_gc_safe_grow at function.h:172:1
-  Occurrences: 1
-
-Uncategorised
-  After events:
     IRF: VEC_temp_slot_p_gc_safe_grow_cleared at function.h:0:0
   Occurrences: 1
 
 Uncategorised
   After events:
-    IRF: VEC_tree_base_address at tree.h:182:1
+    IRF: VEC_tree_base_iterate at tree.h:182:1
   Occurrences: 1
 
 Uncategorised
   After events:
     IRF: VEC_tree_base_length at tree.h:182:1
-  Occurrences: 1
+  Occurrences: 2
 
 Uncategorised
   After events:
-    IRF: VEC_tree_base_length at tree.h:182:1
-    ICF: gimplify_compound_lval at gimplify.c:1939:12
+    IRF: VEC_tree_base_space at tree.h:182:1
   Occurrences: 1
 
 Uncategorised
   After events:
     IRF: VEC_tree_base_space at tree.h:182:1
-  Occurrences: 2
+    IRF: VEC_tree_heap_reserve at tree.h:0:0
+  Occurrences: 1
 
 Uncategorised
   After events:
     IRF: VEC_tree_heap_reserve at tree.h:0:0
-  Occurrences: 2
+  Occurrences: 1
 
 Uncategorised
   After events:
@@ -48243,12 +46454,12 @@ Uncategorised
 Uncategorised
   After events:
     IRF: VEC_varinfo_t_base_length at tree-ssa-structalias.c:0:0
-  Occurrences: 9
+  Occurrences: 8
 
 Uncategorised
   After events:
     IRF: VEC_varinfo_t_base_length at tree-ssa-structalias.c:273:1
-  Occurrences: 20
+  Occurrences: 22
 
 Uncategorised
   After events:
@@ -48260,13 +46471,13 @@ Uncategorised
   After events:
     IRF: VEC_varinfo_t_base_length at tree-ssa-structalias.c:273:1
     ICF: remove_preds_and_fake_succs at tree-ssa-structalias.c:5373:8
-  Occurrences: 2
+  Occurrences: 1
 
 Uncategorised
   After events:
     IRF: VEC_varinfo_t_base_length at tree-ssa-structalias.c:273:1
     IRF: add_graph_edge at tree-ssa-structalias.c:1083:21
-  Occurrences: 1
+  Occurrences: 2
 
 Uncategorised
   After events:
@@ -48275,12 +46486,23 @@ Uncategorised
 
 Uncategorised
   After events:
+    RF: _cpp_do_file_change at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: _cpp_do_file_change at <invalid>:0:0
+    RF: cpp_change_file at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
     IRF: _cpp_get_fresh_line at cpp_lex.c:0:0
   Occurrences: 6
 
 Uncategorised
   After events:
-    RF: _cpp_lex_direct at cpp_lex.c:1734:1
+    RF: _cpp_init_files at <invalid>:0:0
   Occurrences: 1
 
 Uncategorised
@@ -48296,48 +46518,91 @@ Uncategorised
 
 Uncategorised
   After events:
+    RF: _cpp_pop_buffer at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
     IRF: add_graph_edge at tree-ssa-structalias.c:0:0
-  Occurrences: 15
+  Occurrences: 14
 
 Uncategorised
   After events:
     IRF: add_graph_edge at tree-ssa-structalias.c:1083:21
-  Occurrences: 2
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    IRF: add_line_note at cpp_lex.c:0:0
+  Occurrences: 1
 
 Uncategorised
   After events:
     IRF: add_line_note at cpp_lex.c:91:21
-  Occurrences: 54
+  Occurrences: 60
 
 Uncategorised
   After events:
     IRF: add_line_note at cpp_lex.c:97:21
-  Occurrences: 89
+  Occurrences: 85
 
 Uncategorised
   After events:
     IRF: add_pred_graph_edge at tree-ssa-structalias.c:1057:22
-  Occurrences: 2
+  Occurrences: 1
 
 Uncategorised
   After events:
     IRF: add_to_deps_list at sched-deps.c:262:5
-  Occurrences: 24
+  Occurrences: 16
+
+Uncategorised
+  After events:
+    RF: analyze_function at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: array_to_pointer_conversion at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: assemble_name at <invalid>:0:0
+  Occurrences: 5
+
+Uncategorised
+  After events:
+    RF: assemble_name at <invalid>:0:0
+    CF: assemble_end_function at varasm.c:1844:3
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: assemble_name at <invalid>:0:0
+    CF: assemble_start_function at varasm.c:1827:3
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: assemble_name at <invalid>:0:0
+    RF: output_addr_const at <invalid>:0:0
+  Occurrences: 1
 
 Uncategorised
   After events:
     IRF: attach_dep_link at sched-deps.c:251:15
-  Occurrences: 4
+  Occurrences: 1
 
 Uncategorised
   After events:
-    IRF: bb_seq at gimple.h:239:68
+    RF: backend_init_target at <invalid>:0:0
   Occurrences: 1
 
 Uncategorised
   After events:
     IRF: bitmap_clear at bitmap.c:0:0
-  Occurrences: 2
+  Occurrences: 4
 
 Uncategorised
   After events:
@@ -48346,19 +46611,36 @@ Uncategorised
 
 Uncategorised
   After events:
-    IRF: bitmap_elt_clear_from at bitmap.c:0:7
-  Occurrences: 2
-
-Uncategorised
-  After events:
-    IRF: bitmap_elt_clear_from at bitmap.c:0:7
-    IRF: bitmap_clear at bitmap.c:0:0
-  Occurrences: 2
+    IRF: bitmap_elt_clear_from at bitmap.c:0:0
+  Occurrences: 5
 
 Uncategorised
   After events:
     IRF: bitmap_elt_clear_from at bitmap.c:249:39
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: bitmap_ior_and_compl at <invalid>:0:0
   Occurrences: 4
+
+Uncategorised
+  After events:
+    RF: bitmap_ior_and_compl at <invalid>:0:0
+    RF: df_live_transfer_function at <invalid>:0:0
+  Occurrences: 4
+
+Uncategorised
+  After events:
+    RF: bitmap_ior_and_compl at <invalid>:0:0
+    RF: df_lr_transfer_function at <invalid>:0:0
+  Occurrences: 7
+
+Uncategorised
+  After events:
+    RF: bitmap_ior_and_compl at <invalid>:0:0
+    RF: df_rd_transfer_function at <invalid>:0:0
+  Occurrences: 1
 
 Uncategorised
   After events:
@@ -48367,8 +46649,24 @@ Uncategorised
 
 Uncategorised
   After events:
+    RF: bitmap_obstack_initialize at <invalid>:0:0
+  Occurrences: 43
+
+Uncategorised
+  After events:
+    RF: bitmap_obstack_release at <invalid>:0:0
+  Occurrences: 40
+
+Uncategorised
+  After events:
+    RF: bitmap_obstack_release at <invalid>:0:0
+    RF: ipa_passes at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
     IRF: bmp_iter_set at bitmap.h:0:0
-  Occurrences: 5
+  Occurrences: 6
 
 Uncategorised
   After events:
@@ -48378,34 +46676,203 @@ Uncategorised
 Uncategorised
   After events:
     IRF: bmp_iter_set_init at bitmap.h:233:11
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: build_complex_type at <invalid>:0:0
+  Occurrences: 5
+
+Uncategorised
+  After events:
+    RF: build_fold_addr_expr_loc at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: build_index_type at <invalid>:0:0
   Occurrences: 2
 
 Uncategorised
   After events:
-    RF: build_int_cst_wide at tree.c:1221:3
-  Occurrences: 2
+    RF: build_int_cst at <invalid>:0:0
+  Occurrences: 220
+
+Uncategorised
+  After events:
+    RF: build_int_cst at <invalid>:0:0
+    RF: size_int_kind at <invalid>:0:0
+  Occurrences: 496
 
 Uncategorised
   After events:
     RF: build_int_cst_wide at tree.c:1221:3
-    RF: force_fit_type_double at fold-const.c:0:0
-  Occurrences: 4
+    RF: force_fit_type_double at <invalid>:0:0
+  Occurrences: 5
+
+Uncategorised
+  After events:
+    RF: build_nonstandard_integer_type at <invalid>:0:0
+  Occurrences: 2
+
+Uncategorised
+  After events:
+    RF: build_pointer_type at <invalid>:0:0
+  Occurrences: 43
+
+Uncategorised
+  After events:
+    RF: build_reference_type at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: build_type_attribute_variant at <invalid>:0:0
+  Occurrences: 240
+
+Uncategorised
+  After events:
+    RF: build_type_no_quals at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: build_void_list_node at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: c_common_no_more_pch at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: c_common_nodes_and_builtins at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: c_finish_expr_stmt at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: c_finish_return at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: c_init_decl_processing at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: c_initialize_diagnostics at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: c_lex_one_token at c-parser.c:313:1
+    IRF: c_parser_peek_token at c-parser.c:324:28
+  Occurrences: 1
 
 Uncategorised
   After events:
     RF: c_lex_with_flags at c-lex.c:463:3
     RF: c_lex_one_token at c-parser.c:313:1
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: c_parser_compound_statement at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: c_parser_compound_statement_nostart at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: c_parser_declarator at <invalid>:0:0
   Occurrences: 2
+
+Uncategorised
+  After events:
+    RF: c_parser_external_declaration at <invalid>:0:0
+  Occurrences: 2
+
+Uncategorised
+  After events:
+    IRF: c_parser_initializer at c-parser.c:0:0
+  Occurrences: 1
 
 Uncategorised
   After events:
     IRF: c_parser_next_token_is at c-parser.c:335:45
-  Occurrences: 2
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    IRF: c_parser_peek_token at c-parser.c:0:0
+    IRF: c_parser_next_token_is at c-parser.c:335:45
+  Occurrences: 1
 
 Uncategorised
   After events:
     IRF: c_parser_peek_token at c-parser.c:324:28
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: c_register_pragma_1 at <invalid>:0:0
+  Occurrences: 13
+
+Uncategorised
+  After events:
+    RF: c_stddef_cpp_builtins at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: c_vla_unspec_p at <invalid>:0:0
+  Occurrences: 4
+
+Uncategorised
+  After events:
+    RF: cached_make_edge at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: cached_nonzero_bits at <invalid>:0:0
+    RF: nonzero_bits at <invalid>:0:0
   Occurrences: 2
+
+Uncategorised
+  After events:
+    RF: calc_dfs_tree_nonrec at <invalid>:0:0
+  Occurrences: 24
+
+Uncategorised
+  After events:
+    RF: can_merge_blocks_p at <invalid>:0:0
+  Occurrences: 20
+
+Uncategorised
+  After events:
+    RF: canon_rtx at <invalid>:0:0
+  Occurrences: 7
+
+Uncategorised
+  After events:
+    RF: cb_file_change at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: ccp_visit_stmt at <invalid>:0:0
+  Occurrences: 1
 
 Uncategorised
   After events:
@@ -48414,18 +46881,79 @@ Uncategorised
 
 Uncategorised
   After events:
+    RF: cfg_layout_finalize at <invalid>:0:0
+  Occurrences: 2
+
+Uncategorised
+  After events:
+    RF: cfg_layout_initialize at <invalid>:0:0
+  Occurrences: 2
+
+Uncategorised
+  After events:
+    RF: cgraph_analyze_functions at <invalid>:0:0
+  Occurrences: 2
+
+Uncategorised
+  After events:
+    RF: cgraph_expand_all_functions at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: cgraph_finalize_function at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: cgraph_materialize_all_clones at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: cgraph_remove_edge_duplication_hook at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: cgraph_remove_edge_removal_hook at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: cgraph_remove_function_insertion_hook at <invalid>:0:0
+  Occurrences: 3
+
+Uncategorised
+  After events:
+    RF: cgraph_remove_node_duplication_hook at <invalid>:0:0
+  Occurrences: 2
+
+Uncategorised
+  After events:
+    RF: cgraph_remove_node_removal_hook at <invalid>:0:0
+  Occurrences: 2
+
+Uncategorised
+  After events:
     RF: change_queue_index at haifa-sched.c:3921:1
-  Occurrences: 4
+  Occurrences: 8
 
 Uncategorised
   After events:
     IRF: check_call at ipa-pure-const.c:0:0
-  Occurrences: 1
+  Occurrences: 3
 
 Uncategorised
   After events:
-    IRF: check_format_string at c-format.c:0:0
-  Occurrences: 1
+    RF: check_mem_read_use at <invalid>:0:0
+  Occurrences: 9
+
+Uncategorised
+  After events:
+    RF: check_mem_read_use at <invalid>:0:0
+    RF: note_uses at <invalid>:0:0
+  Occurrences: 6
 
 Uncategorised
   After events:
@@ -48436,6 +46964,26 @@ Uncategorised
   After events:
     IRF: check_stmt at ipa-pure-const.c:0:0
   Occurrences: 3
+
+Uncategorised
+  After events:
+    RF: clear_secondary_mem at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: clobber_return_register at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: commit_edge_insertions at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    IRF: component_uses_parent_alias_set at alias.c:0:0
+  Occurrences: 1
 
 Uncategorised
   After events:
@@ -48460,12 +47008,12 @@ Uncategorised
 Uncategorised
   After events:
     IRF: compute_inverse at ggc-page.c:0:0
-  Occurrences: 3
+  Occurrences: 4
 
 Uncategorised
   After events:
     IRF: compute_inverse at ggc-page.c:1515:21
-  Occurrences: 2
+  Occurrences: 3
 
 Uncategorised
   After events:
@@ -48475,13 +47023,26 @@ Uncategorised
 Uncategorised
   After events:
     IRF: connect_dest at cfg.c:0:0
-    CF: unchecked_make_edge at cfg.c:290:3
   Occurrences: 1
 
 Uncategorised
   After events:
-    IRF: connect_src at cfg.c:0:0
-    ICF: unchecked_make_edge at cfg.c:288:3
+    RF: connect_infinite_loops_to_exit at <invalid>:0:0
+  Occurrences: 4
+
+Uncategorised
+  After events:
+    RF: const_binop at <invalid>:0:0
+  Occurrences: 5
+
+Uncategorised
+  After events:
+    RF: constrain_operands_cached at <invalid>:0:0
+  Occurrences: 9
+
+Uncategorised
+  After events:
+    IRF: constraint_expr_less at tree-ssa-structalias.c:0:0
   Occurrences: 1
 
 Uncategorised
@@ -48498,12 +47059,17 @@ Uncategorised
 Uncategorised
   After events:
     IRF: constraint_expr_less at tree-ssa-structalias.c:753:18
+    ICF: constraint_less at tree-ssa-structalias.c:772:12
   Occurrences: 1
 
 Uncategorised
   After events:
-    IRF: constraint_expr_less at tree-ssa-structalias.c:753:18
-    ICF: constraint_less at tree-ssa-structalias.c:772:12
+    RF: control_flow_insn_p at <invalid>:0:0
+  Occurrences: 3
+
+Uncategorised
+  After events:
+    RF: convert at <invalid>:0:0
   Occurrences: 1
 
 Uncategorised
@@ -48523,6 +47089,21 @@ Uncategorised
 
 Uncategorised
   After events:
+    RF: convert_to_pointer at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: copy_constant at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: cpp_assert at <invalid>:0:0
+  Occurrences: 5
+
+Uncategorised
+  After events:
     RF: cpp_get_token at cpp_macro.c:1337:1
     RF: cpp_get_token_with_location at cpp_macro.c:1357:3
   Occurrences: 1
@@ -48530,7 +47111,13 @@ Uncategorised
 Uncategorised
   After events:
     RF: cpp_get_token_with_location at cpp_macro.c:1357:3
+    RF: c_lex_with_flags at c-lex.c:463:3
   Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: cpp_lookup at <invalid>:0:0
+  Occurrences: 15
 
 Uncategorised
   After events:
@@ -48544,23 +47131,45 @@ Uncategorised
 
 Uncategorised
   After events:
+    RF: cselib_clear_table at <invalid>:0:0
+  Occurrences: 2
+
+Uncategorised
+  After events:
     RF: cselib_invalidate_regno at cselib.c:1831:1
+    CF: cselib_invalidate_rtx at cselib.c:1950:7
   Occurrences: 1
 
 Uncategorised
   After events:
-    IRF: cselib_record_set at cselib.c:0:0
-  Occurrences: 5
-
-Uncategorised
-  After events:
-    IRF: cselib_record_set at cselib.c:1999:21
+    RF: cselib_invalidate_rtx_note_stores at <invalid>:0:0
   Occurrences: 6
 
 Uncategorised
   After events:
+    RF: cselib_invalidate_rtx_note_stores at <invalid>:0:0
+    RF: note_stores at <invalid>:0:0
+  Occurrences: 16
+
+Uncategorised
+  After events:
+    IRF: cselib_record_set at cselib.c:0:0
+  Occurrences: 9
+
+Uncategorised
+  After events:
+    IRF: cselib_record_set at cselib.c:1999:21
+  Occurrences: 3
+
+Uncategorised
+  After events:
+    RF: def_blocks_free at <invalid>:0:0
+  Occurrences: 2
+
+Uncategorised
+  After events:
     IRF: def_builtin at i386.c:0:0
-  Occurrences: 102
+  Occurrences: 103
 
 Uncategorised
   After events:
@@ -48571,12 +47180,12 @@ Uncategorised
 Uncategorised
   After events:
     IRF: def_builtin_1 at c-common.c:0:0
-  Occurrences: 2
+  Occurrences: 3
 
 Uncategorised
   After events:
     IRF: def_builtin_1 at c-common.c:5207:43
-  Occurrences: 10
+  Occurrences: 11
 
 Uncategorised
   After events:
@@ -48599,7 +47208,7 @@ Uncategorised
 Uncategorised
   After events:
     IRF: def_builtin_1 at c-common.c:5207:43
-    ICF: c_define_builtins at builtins.def:277:1
+    ICF: c_define_builtins at builtins.def:278:1
   Occurrences: 1
 
 Uncategorised
@@ -48623,13 +47232,13 @@ Uncategorised
 Uncategorised
   After events:
     IRF: def_builtin_1 at c-common.c:5207:43
-    ICF: c_define_builtins at builtins.def:297:1
+    ICF: c_define_builtins at builtins.def:292:1
   Occurrences: 1
 
 Uncategorised
   After events:
     IRF: def_builtin_1 at c-common.c:5207:43
-    ICF: c_define_builtins at builtins.def:298:1
+    ICF: c_define_builtins at builtins.def:297:1
   Occurrences: 1
 
 Uncategorised
@@ -48689,12 +47298,6 @@ Uncategorised
 Uncategorised
   After events:
     IRF: def_builtin_1 at c-common.c:5207:43
-    ICF: c_define_builtins at builtins.def:349:1
-  Occurrences: 1
-
-Uncategorised
-  After events:
-    IRF: def_builtin_1 at c-common.c:5207:43
     ICF: c_define_builtins at builtins.def:365:1
   Occurrences: 1
 
@@ -48706,13 +47309,13 @@ Uncategorised
 Uncategorised
   After events:
     RF: def_builtin_1 at c-common.c:5208:1
-    ICF: c_define_builtins at builtins.def:266:1
+    ICF: c_define_builtins at builtins.def:290:1
   Occurrences: 1
 
 Uncategorised
   After events:
     RF: def_builtin_1 at c-common.c:5208:1
-    ICF: c_define_builtins at builtins.def:275:1
+    ICF: c_define_builtins at builtins.def:296:1
   Occurrences: 1
 
 Uncategorised
@@ -48730,21 +47333,43 @@ Uncategorised
 Uncategorised
   After events:
     IRF: def_builtin_const at i386.c:0:0
-  Occurrences: 34
+  Occurrences: 39
 
 Uncategorised
   After events:
     IRF: def_builtin_const at i386.c:21424:43
-  Occurrences: 34
+  Occurrences: 40
+
+Uncategorised
+  After events:
+    RF: default_addr_space_legitimate_address_p at <invalid>:0:0
+  Occurrences: 2688
 
 Uncategorised
   After events:
     IRF: default_binds_local_p_1 at varasm.c:0:0
-  Occurrences: 50
+  Occurrences: 51
 
 Uncategorised
   After events:
-    IRF: defer_or_phi_translate_block at tree-ssa-pre.c:0:0
+    RF: default_diagnostic_finalizer at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: default_eh_return_filter_mode at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: default_elf_select_section at <invalid>:0:0
+    RF: get_constant_section at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: default_globalize_label at <invalid>:0:0
+    RF: default_globalize_decl_name at <invalid>:0:0
   Occurrences: 1
 
 Uncategorised
@@ -48755,22 +47380,77 @@ Uncategorised
 Uncategorised
   After events:
     IRF: deletable_insn_p_1 at dce.c:0:0
-  Occurrences: 2
+  Occurrences: 1
 
 Uncategorised
   After events:
     IRF: deletable_insn_p_1 at dce.c:82:14
-  Occurrences: 10
+  Occurrences: 9
+
+Uncategorised
+  After events:
+    RF: delete_basic_block at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: delete_points_to_sets at <invalid>:0:0
+  Occurrences: 2
+
+Uncategorised
+  After events:
+    RF: delete_var_map at <invalid>:0:0
+  Occurrences: 5
+
+Uncategorised
+  After events:
+    RF: dep_list_size at <invalid>:0:0
+  Occurrences: 12
 
 Uncategorised
   After events:
     IRF: df_analyze_problem at df-core.c:1115:19
+  Occurrences: 2
+
+Uncategorised
+  After events:
+    RF: df_bb_refs_collect at <invalid>:0:0
+  Occurrences: 2
+
+Uncategorised
+  After events:
+    RF: df_chain_fully_remove_problem at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: df_defs_record at <invalid>:0:0
+  Occurrences: 27
+
+Uncategorised
+  After events:
+    RF: df_entry_block_defs_collect at <invalid>:0:0
+  Occurrences: 3
+
+Uncategorised
+  After events:
+    RF: df_exit_block_uses_collect at <invalid>:0:0
+  Occurrences: 2
+
+Uncategorised
+  After events:
+    IRF: df_get_call_refs at df-scan.c:0:0
   Occurrences: 7
 
 Uncategorised
   After events:
-    IRF: df_get_call_refs at df-scan.c:0:3
+    RF: df_get_entry_block_def_set at <invalid>:0:0
   Occurrences: 7
+
+Uncategorised
+  After events:
+    RF: df_get_exit_block_use_set at <invalid>:0:0
+  Occurrences: 5
 
 Uncategorised
   After events:
@@ -48779,8 +47459,64 @@ Uncategorised
 
 Uncategorised
   After events:
-    IRF: df_lr_get_bb_info at df.h:1055:37
+    RF: df_get_regular_block_artificial_uses at <invalid>:0:0
   Occurrences: 2
+
+Uncategorised
+  After events:
+    RF: df_insn_refs_collect at <invalid>:0:0
+  Occurrences: 23
+
+Uncategorised
+  After events:
+    RF: df_live_confluence_n at <invalid>:0:0
+  Occurrences: 6
+
+Uncategorised
+  After events:
+    RF: df_live_free at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: df_live_local_compute at <invalid>:0:0
+  Occurrences: 2
+
+Uncategorised
+  After events:
+    RF: df_live_transfer_function at <invalid>:0:0
+  Occurrences: 4
+
+Uncategorised
+  After events:
+    RF: df_lr_confluence_n at <invalid>:0:0
+  Occurrences: 15
+
+Uncategorised
+  After events:
+    RF: df_lr_free at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: df_lr_local_compute at <invalid>:0:0
+  Occurrences: 6
+
+Uncategorised
+  After events:
+    RF: df_lr_transfer_function at <invalid>:0:0
+  Occurrences: 14
+
+Uncategorised
+  After events:
+    RF: df_mark_reg at <invalid>:0:0
+  Occurrences: 4
+
+Uncategorised
+  After events:
+    RF: df_mark_reg at <invalid>:0:0
+    RF: diddle_return_value at <invalid>:0:0
+  Occurrences: 4
 
 Uncategorised
   After events:
@@ -48789,18 +47525,122 @@ Uncategorised
 
 Uncategorised
   After events:
-    IRF: df_record_entry_block_defs at df-scan.c:4003:3
+    RF: df_mark_solutions_dirty at df-core.c:1322:1
+    IRF: connect_src at cfg.c:0:0
   Occurrences: 1
 
 Uncategorised
   After events:
-    RF: df_ref_create_structure at df-scan.c:2894:3
+    RF: df_md_add_problem at <invalid>:0:0
+  Occurrences: 2
+
+Uncategorised
+  After events:
+    RF: df_md_free at <invalid>:0:0
+  Occurrences: 2
+
+Uncategorised
+  After events:
+    RF: df_note_add_problem at <invalid>:0:0
+  Occurrences: 9
+
+Uncategorised
+  After events:
+    RF: df_note_compute at <invalid>:0:0
+  Occurrences: 3
+
+Uncategorised
+  After events:
+    RF: df_note_compute at <invalid>:0:0
+    IRF: df_analyze_problem at df-core.c:1115:19
+  Occurrences: 5
+
+Uncategorised
+  After events:
+    RF: df_note_free at <invalid>:0:0
+  Occurrences: 9
+
+Uncategorised
+  After events:
+    RF: df_rd_confluence_n at <invalid>:0:0
+  Occurrences: 3
+
+Uncategorised
+  After events:
+    RF: df_rd_free at <invalid>:0:0
   Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: df_rd_transfer_function at <invalid>:0:0
+  Occurrences: 2
+
+Uncategorised
+  After events:
+    RF: df_rd_transfer_function at <invalid>:0:0
+    IRF: df_worklist_propagate_forward at df-core.c:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    IRF: df_record_entry_block_defs at df-scan.c:0:0
+  Occurrences: 2
+
+Uncategorised
+  After events:
+    RF: df_ref_change_reg_with_loc at <invalid>:0:0
+  Occurrences: 1743
+
+Uncategorised
+  After events:
+    RF: df_ref_change_reg_with_loc at <invalid>:0:0
+    CF: setup_prohibited_mode_move_regs at ira.c:1360:4
+  Occurrences: 139
+
+Uncategorised
+  After events:
+    RF: df_ref_record at <invalid>:0:0
+  Occurrences: 2
 
 Uncategorised
   After events:
     RF: df_ref_record at df-scan.c:2975:1
   Occurrences: 5
+
+Uncategorised
+  After events:
+    RF: df_reg_chain_unlink at <invalid>:0:0
+  Occurrences: 11
+
+Uncategorised
+  After events:
+    RF: df_scan_add_problem at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: df_scan_free at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: df_scan_free_internal at <invalid>:0:0
+  Occurrences: 2
+
+Uncategorised
+  After events:
+    RF: df_simulate_one_insn_backwards at <invalid>:0:0
+  Occurrences: 11
+
+Uncategorised
+  After events:
+    RF: df_simulate_one_insn_forwards at <invalid>:0:0
+  Occurrences: 23
+
+Uncategorised
+  After events:
+    RF: df_worklist_dataflow at <invalid>:0:0
+  Occurrences: 9
 
 Uncategorised
   After events:
@@ -48810,22 +47650,33 @@ Uncategorised
 Uncategorised
   After events:
     IRF: df_worklist_propagate_forward at df-core.c:0:0
-  Occurrences: 3
+  Occurrences: 2
+
+Uncategorised
+  After events:
+    RF: dfa_finish at <invalid>:0:0
+    RF: sched_finish at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: dfa_start at <invalid>:0:0
+  Occurrences: 1
 
 Uncategorised
   After events:
     IRF: dfs_edge_dest at graphds.c:135:10
-  Occurrences: 7
+  Occurrences: 4
 
 Uncategorised
   After events:
     IRF: dfs_fst_edge at graphds.c:0:0
-  Occurrences: 19
+  Occurrences: 20
 
 Uncategorised
   After events:
     IRF: dfs_fst_edge at graphds.c:169:8
-  Occurrences: 22
+  Occurrences: 21
 
 Uncategorised
   After events:
@@ -48835,32 +47686,53 @@ Uncategorised
 Uncategorised
   After events:
     IRF: dfs_next_edge at graphds.c:179:28
-  Occurrences: 5
+  Occurrences: 4
+
+Uncategorised
+  After events:
+    RF: diddle_return_value at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: diddle_return_value at <invalid>:0:0
+    RF: df_get_exit_block_use_set at <invalid>:0:0
+  Occurrences: 3
+
+Uncategorised
+  After events:
+    RF: do_per_function at <invalid>:0:0
+  Occurrences: 350
+
+Uncategorised
+  After events:
+    RF: do_pre at <invalid>:0:0
+  Occurrences: 1
 
 Uncategorised
   After events:
     IRF: dom_convert_dir_to_idx at dominance.c:193:3
-  Occurrences: 12
+  Occurrences: 16
 
 Uncategorised
   After events:
-    IRF: dse_step7 at dse.c:0:0
-  Occurrences: 2
+    RF: early_intra_sra at <invalid>:0:0
+  Occurrences: 1
 
 Uncategorised
   After events:
     IRF: ei_cond at basic-block.h:0:0
-  Occurrences: 27
+  Occurrences: 26
 
 Uncategorised
   After events:
     IRF: ei_end_p at basic-block.h:0:0
-  Occurrences: 111
+  Occurrences: 124
 
 Uncategorised
   After events:
     IRF: ei_end_p at basic-block.h:723:19
-  Occurrences: 97
+  Occurrences: 107
 
 Uncategorised
   After events:
@@ -48869,19 +47741,79 @@ Uncategorised
 
 Uncategorised
   After events:
-    IRF: ei_safe_edge at basic-block.h:0:0
+    RF: emit at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: emit_call_insn at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: emit_clobber at <invalid>:0:0
+  Occurrences: 2
+
+Uncategorised
+  After events:
+    RF: emit_insn_after at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: emit_insn_after_noloc at <invalid>:0:0
+  Occurrences: 4
+
+Uncategorised
+  After events:
+    RF: emit_move_insn_1 at <invalid>:0:0
+  Occurrences: 10
+
+Uncategorised
+  After events:
+    RF: emit_use at <invalid>:0:0
   Occurrences: 1
 
 Uncategorised
   After events:
     IRF: end_hard_regno at regs.h:0:16
-    CF: df_ref_record at df-scan.c:2963:10
   Occurrences: 2
 
 Uncategorised
   After events:
+    IRF: end_hard_regno at regs.h:0:16
+    CF: df_ref_record at df-scan.c:2963:10
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: et_free_pools at <invalid>:0:0
+  Occurrences: 24
+
+Uncategorised
+  After events:
+    RF: et_free_tree at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: et_free_tree_force at <invalid>:0:0
+  Occurrences: 73
+
+Uncategorised
+  After events:
     IRF: et_new_occ at et-forest.c:459:11
-  Occurrences: 16
+  Occurrences: 15
+
+Uncategorised
+  After events:
+    RF: execute_fre at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: execute_on_growing_pred at <invalid>:0:0
+  Occurrences: 3
 
 Uncategorised
   After events:
@@ -48890,12 +47822,68 @@ Uncategorised
 
 Uncategorised
   After events:
-    IRF: fel_init at cfgloop.h:0:0
+    RF: execute_on_shrinking_pred at <invalid>:0:0
   Occurrences: 1
 
 Uncategorised
   After events:
+    RF: execute_tail_calls at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: execute_tail_recursion at <invalid>:0:0
+  Occurrences: 2
+
+Uncategorised
+  After events:
+    RF: execute_todo at <invalid>:0:0
+  Occurrences: 28
+
+Uncategorised
+  After events:
+    RF: expand_expr_real_1 at <invalid>:0:0
+  Occurrences: 2
+
+Uncategorised
+  After events:
+    RF: expand_expr_real_1 at <invalid>:0:0
+    RF: expand_expr_real at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: expand_return at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    IRF: fel_init at cfgloop.h:0:0
+  Occurrences: 2
+
+Uncategorised
+  After events:
     IRF: fel_next at cfgloop.h:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: fibheap_delete at <invalid>:0:0
+  Occurrences: 2
+
+Uncategorised
+  After events:
+    RF: fibheap_new at <invalid>:0:0
+  Occurrences: 2
+
+Uncategorised
+  After events:
+    RF: file_end_indicate_exec_stack at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: final_start_function at <invalid>:0:0
   Occurrences: 1
 
 Uncategorised
@@ -48916,7 +47904,7 @@ Uncategorised
 Uncategorised
   After events:
     IRF: find_reg_class_closure at ira.c:0:0
-  Occurrences: 6
+  Occurrences: 5
 
 Uncategorised
   After events:
@@ -48925,14 +47913,24 @@ Uncategorised
 
 Uncategorised
   After events:
-    IRF: first_referenced_var at tree-flow-inline.h:0:0
+    RF: find_unreachable_blocks at <invalid>:0:0
+  Occurrences: 20
+
+Uncategorised
+  After events:
+    RF: finish_options at <invalid>:0:0
   Occurrences: 1
 
 Uncategorised
   After events:
     IRF: first_referenced_var at tree-flow-inline.h:0:0
-    IRF: suitable_for_tail_opt_p at tree-tailcall.c:0:0
   Occurrences: 2
+
+Uncategorised
+  After events:
+    IRF: first_referenced_var at tree-flow-inline.h:0:0
+    IRF: suitable_for_tail_opt_p at tree-tailcall.c:0:0
+  Occurrences: 1
 
 Uncategorised
   After events:
@@ -48943,12 +47941,12 @@ Uncategorised
   After events:
     IRF: fit_double_type at fold-const.c:0:0
     CF: force_fit_type_double at fold-const.c:310:10
-  Occurrences: 3
+  Occurrences: 6
 
 Uncategorised
   After events:
     IRF: fit_double_type at fold-const.c:209:23
-  Occurrences: 3
+  Occurrences: 1
 
 Uncategorised
   After events:
@@ -48962,29 +47960,118 @@ Uncategorised
 
 Uncategorised
   After events:
-    RF: force_fit_type_double at fold-const.c:0:0
-  Occurrences: 6
+    RF: flow_loops_free at cfgloop.c:222:1
+    CF: loop_optimizer_finalize at loop-init.c:119:3
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: fold_convert_const at <invalid>:0:0
+  Occurrences: 5
+
+Uncategorised
+  After events:
+    RF: fold_stmt at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: fopen_unlocked at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: for_each_rtx at <invalid>:0:0
+  Occurrences: 31
+
+Uncategorised
+  After events:
+    RF: for_each_rtx at <invalid>:0:0
+    RF: check_mem_read_use at <invalid>:0:0
+  Occurrences: 5
+
+Uncategorised
+  After events:
+    RF: for_each_rtx at <invalid>:0:0
+    RF: returnjump_p at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: force_fit_type_double at <invalid>:0:0
+  Occurrences: 7
+
+Uncategorised
+  After events:
+    RF: force_fit_type_double at <invalid>:0:0
+    RF: fold_convert_const at <invalid>:0:0
+  Occurrences: 5
+
+Uncategorised
+  After events:
+    RF: force_fit_type_double at <invalid>:0:0
+    RF: int_const_binop at <invalid>:0:0
+  Occurrences: 17
 
 Uncategorised
   After events:
     IRF: forms_identifier_p at cpp_lex.c:0:0
-  Occurrences: 220
+  Occurrences: 213
+
+Uncategorised
+  After events:
+    RF: forward_propagate_into at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: free_after_compilation at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: free_edge_list at <invalid>:0:0
+  Occurrences: 2
+
+Uncategorised
+  After events:
+    RF: free_graph at <invalid>:0:0
+  Occurrences: 12
+
+Uncategorised
+  After events:
+    RF: free_scc_info at <invalid>:0:0
+  Occurrences: 6
+
+Uncategorised
+  After events:
+    RF: free_scc_vn at <invalid>:0:0
+  Occurrences: 2
+
+Uncategorised
+  After events:
+    RF: free_stmt_vec_info at <invalid>:0:0
+  Occurrences: 2
 
 Uncategorised
   After events:
     IRF: free_topo_info at tree-ssa-structalias.c:0:0
-  Occurrences: 4
+  Occurrences: 3
+
+Uncategorised
+  After events:
+    RF: free_vn_table at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    IRF: function_arg_32 at i386.c:0:0
+  Occurrences: 1
 
 Uncategorised
   After events:
     IRF: gen_const_vector at emit-rtl.c:0:0
   Occurrences: 12
-
-Uncategorised
-  After events:
-    IRF: gen_const_vector at emit-rtl.c:0:0
-    ICF: init_emit_once at emit-rtl.c:5861:39
-  Occurrences: 1
 
 Uncategorised
   After events:
@@ -48994,22 +48081,112 @@ Uncategorised
 Uncategorised
   After events:
     IRF: gen_const_vector at emit-rtl.c:5626:3
+  Occurrences: 2
+
+Uncategorised
+  After events:
+    RF: gen_jump at <invalid>:0:0
   Occurrences: 1
 
 Uncategorised
   After events:
+    RF: gen_leave at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: gen_lowpart_common at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: gen_pro_epilogue_adjust_stack_1 at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: gen_return_internal at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: get_attr_length at <invalid>:0:0
+  Occurrences: 4
+
+Uncategorised
+  After events:
+    RF: get_attr_length_1 at <invalid>:0:0
+  Occurrences: 4
+
+Uncategorised
+  After events:
+    RF: get_attr_length_1 at <invalid>:0:0
+    RF: get_attr_length at <invalid>:0:0
+  Occurrences: 4
+
+Uncategorised
+  After events:
+    RF: get_attr_length_address at <invalid>:0:0
+  Occurrences: 11
+
+Uncategorised
+  After events:
+    RF: get_attr_length_immediate at <invalid>:0:0
+  Occurrences: 10
+
+Uncategorised
+  After events:
     IRF: get_back_and_forw_lists at sched-deps.c:0:0
-  Occurrences: 7
+  Occurrences: 4
+
+Uncategorised
+  After events:
+    RF: get_deref_alias_set at <invalid>:0:0
+  Occurrences: 4
+
+Uncategorised
+  After events:
+    RF: get_expr_operands at <invalid>:0:0
+  Occurrences: 2
+
+Uncategorised
+  After events:
+    RF: get_insn_template at <invalid>:0:0
+  Occurrences: 5
 
 Uncategorised
   After events:
     IRF: get_zero at real.c:0:0
-  Occurrences: 2285
+  Occurrences: 2289
 
 Uncategorised
   After events:
     IRF: get_zero at real.c:130:11
-  Occurrences: 31
+  Occurrences: 32
+
+Uncategorised
+  After events:
+    RF: ggc_free at ggc-page.c:1486:1
+    CF: flow_loop_free at cfgloop.c:198:3
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: ggc_free at ggc-page.c:1486:1
+    IRF: VEC_loop_p_gc_free at cfgloop.h:0:1
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: ggc_free at ggc-page.c:1486:1
+    IRF: flow_loop_free at cfgloop.c:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: ggc_free at ggc-page.c:1486:1
+    RF: loop_optimizer_finalize at loop-init.c:134:1
+  Occurrences: 1
 
 Uncategorised
   After events:
@@ -49019,43 +48196,63 @@ Uncategorised
 Uncategorised
   After events:
     IRF: gimple_body at gimple.c:1703:10
-  Occurrences: 13
+  Occurrences: 11
+
+Uncategorised
+  After events:
+    RF: gimple_call_flags at <invalid>:0:0
+  Occurrences: 45
 
 Uncategorised
   After events:
     IRF: gimple_call_lhs at gimple.h:0:0
-  Occurrences: 6
+  Occurrences: 7
 
 Uncategorised
   After events:
     IRF: gimple_code at gimple.h:1054:20
-  Occurrences: 2
-
-Uncategorised
-  After events:
-    IRF: gimple_has_mem_ops at gimple.h:1285:43
-  Occurrences: 2
-
-Uncategorised
-  After events:
-    IRF: gimple_has_ops at gimple.h:1276:41
   Occurrences: 3
 
 Uncategorised
   After events:
+    IRF: gimple_def_ops at gimple.h:1296:26
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    IRF: gimple_has_mem_ops at gimple.h:1285:43
+  Occurrences: 4
+
+Uncategorised
+  After events:
+    IRF: gimple_has_ops at gimple.h:1276:41
+  Occurrences: 4
+
+Uncategorised
+  After events:
+    IRF: gimple_has_volatile_ops at gimple.h:0:0
+  Occurrences: 2
+
+Uncategorised
+  After events:
+    RF: gimple_ior_addresses_taken at <invalid>:0:0
+  Occurrences: 10
+
+Uncategorised
+  After events:
     IRF: gimple_op at gimple.h:0:0
-  Occurrences: 8
+  Occurrences: 7
 
 Uncategorised
   After events:
     IRF: gimple_op at gimple.h:0:0
     IRF: gimple_call_lhs at gimple.h:0:0
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
     IRF: gimple_op at gimple.h:1638:14
-  Occurrences: 6
+  Occurrences: 4
 
 Uncategorised
   After events:
@@ -49065,7 +48262,7 @@ Uncategorised
 Uncategorised
   After events:
     IRF: gimple_ops at gimple.h:1624:32
-  Occurrences: 7
+  Occurrences: 5
 
 Uncategorised
   After events:
@@ -49075,7 +48272,17 @@ Uncategorised
 
 Uncategorised
   After events:
-    IRF: gimple_set_op at gimple.h:1671:22
+    IRF: gimple_seq_last at gimple.h:180:10
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: gimple_seq_may_fallthru at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    IRF: gimple_set_op at gimple.h:0:0
   Occurrences: 1
 
 Uncategorised
@@ -49086,13 +48293,7 @@ Uncategorised
 Uncategorised
   After events:
     IRF: gimple_set_visited at gimple.h:1219:24
-  Occurrences: 3
-
-Uncategorised
-  After events:
-    IRF: gimple_set_visited at gimple.h:1219:24
-    IRF: prop_set_simulate_again at tree-ssa-propagate.h:0:0
-  Occurrences: 1
+  Occurrences: 4
 
 Uncategorised
   After events:
@@ -49112,7 +48313,7 @@ Uncategorised
 Uncategorised
   After events:
     IRF: gimplify_modify_expr at gimplify.c:0:0
-  Occurrences: 1
+  Occurrences: 2
 
 Uncategorised
   After events:
@@ -49126,18 +48327,43 @@ Uncategorised
 
 Uncategorised
   After events:
+    RF: globalize_decl at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: gsi_insert_after at <invalid>:0:0
+  Occurrences: 4
+
+Uncategorised
+  After events:
+    RF: gsi_insert_after_without_update at <invalid>:0:0
+  Occurrences: 4
+
+Uncategorised
+  After events:
+    RF: gsi_insert_before at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: gsi_insert_seq_after at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: gsi_insert_seq_before at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
     IRF: gsi_last at gimple.h:0:0
-  Occurrences: 6
+  Occurrences: 5
 
 Uncategorised
   After events:
     IRF: gsi_last_bb at gimple.h:0:0
-  Occurrences: 2
-
-Uncategorised
-  After events:
-    IRF: gsi_start at gimple.h:4409:11
-  Occurrences: 1
+  Occurrences: 3
 
 Uncategorised
   After events:
@@ -49146,38 +48372,157 @@ Uncategorised
 
 Uncategorised
   After events:
+    RF: haifa_note_reg_clobber at <invalid>:0:0
+  Occurrences: 4
+
+Uncategorised
+  After events:
+    RF: haifa_note_reg_set at <invalid>:0:0
+  Occurrences: 7
+
+Uncategorised
+  After events:
+    RF: haifa_note_reg_use at <invalid>:0:0
+  Occurrences: 8
+
+Uncategorised
+  After events:
+    RF: haifa_sched_finish at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
     IRF: handle_option at opts.c:0:0
   Occurrences: 1
 
 Uncategorised
   After events:
+    RF: ht_lookup at <invalid>:0:0
+  Occurrences: 1924
+
+Uncategorised
+  After events:
+    RF: ht_lookup at <invalid>:0:0
+    RF: cpp_lookup at <invalid>:0:0
+  Occurrences: 50
+
+Uncategorised
+  After events:
+    RF: htab_delete at <invalid>:0:0
+  Occurrences: 70
+
+Uncategorised
+  After events:
+    RF: htab_find_slot at <invalid>:0:0
+  Occurrences: 153
+
+Uncategorised
+  After events:
     IRF: in_hard_reg_set_p at regs.h:0:0
-  Occurrences: 840
+  Occurrences: 887
 
 Uncategorised
   After events:
     IRF: in_hard_reg_set_p at regs.h:0:0
     IRF: reg_fits_class_p at recog.c:0:0
-  Occurrences: 134
+  Occurrences: 117
+
+Uncategorised
+  After events:
+    RF: init_alias_vars at <invalid>:0:0
+  Occurrences: 3
+
+Uncategorised
+  After events:
+    RF: init_dce at <invalid>:0:0
+  Occurrences: 4
+
+Uncategorised
+  After events:
+    RF: init_dummy_function_start at <invalid>:0:0
+  Occurrences: 2
 
 Uncategorised
   After events:
     IRF: init_insn_codes at optabs.c:0:0
-  Occurrences: 18
+  Occurrences: 17
 
 Uncategorised
   After events:
-    IRF: initialize_argument_information at calls.c:0:27
+    RF: init_optimization_passes at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: init_pragma at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: init_set_costs at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: init_temp_slots at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: init_tree_ssa at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: init_ttree at <invalid>:0:0
+    CF: general_init at toplev.c:1742:3
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    IRF: initialize_argument_information at calls.c:0:0
   Occurrences: 1
 
 Uncategorised
   After events:
     IRF: initialize_argument_information at calls.c:1003:27
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: insert_insn_on_edge at <invalid>:0:0
   Occurrences: 2
 
 Uncategorised
   After events:
-    IRF: instantiate_new_reg at function.c:0:0
+    RF: insert_regs at <invalid>:0:0
+  Occurrences: 3
+
+Uncategorised
+  After events:
+    RF: int_const_binop at <invalid>:0:0
+  Occurrences: 2
+
+Uncategorised
+  After events:
+    RF: int_const_binop at <invalid>:0:0
+    RF: const_binop at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: int_const_binop at <invalid>:0:0
+    RF: size_binop_loc at <invalid>:0:0
+  Occurrences: 4
+
+Uncategorised
+  After events:
+    RF: internal_state_transition at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: invalidate at <invalid>:0:0
   Occurrences: 1
 
 Uncategorised
@@ -49192,17 +48537,79 @@ Uncategorised
 
 Uncategorised
   After events:
-    IRF: ipa_free_node_params_substructures at ipa-prop.c:1217:3
-  Occurrences: 1
+    IRF: ipa_free_node_params_substructures at ipa-prop.c:0:0
+  Occurrences: 2
 
 Uncategorised
   After events:
     IRF: ipcp_compute_node_scale at ipa-cp.c:0:0
+  Occurrences: 2
+
+Uncategorised
+  After events:
+    RF: ira_destroy at <invalid>:0:0
   Occurrences: 1
 
 Uncategorised
   After events:
+    RF: ira_finish_costs_once at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: ira_free at <invalid>:0:0
+  Occurrences: 28
+
+Uncategorised
+  After events:
+    RF: ira_free at <invalid>:0:0
+    RF: ira_costs at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: ira_init at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: ira_init_once at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: ira_sort_regnos_for_alter_reg at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: ira_traverse_loop_tree at <invalid>:0:0
+  Occurrences: 3
+
+Uncategorised
+  After events:
+    RF: is_attribute_p at <invalid>:0:0
+  Occurrences: 1810
+
+Uncategorised
+  After events:
     IRF: is_gimple_id at gimple.c:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: is_gimple_min_invariant at <invalid>:0:0
+  Occurrences: 8
+
+Uncategorised
+  After events:
+    RF: is_gimple_val at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: is_gimple_val at <invalid>:0:0
+    RF: is_gimple_call_addr at <invalid>:0:0
   Occurrences: 1
 
 Uncategorised
@@ -49213,29 +48620,71 @@ Uncategorised
 Uncategorised
   After events:
     IRF: is_gimple_variable at gimple.c:2696:21
+  Occurrences: 4
+
+Uncategorised
+  After events:
+    RF: ix86_attr_length_address_default at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: ix86_attr_length_address_default at <invalid>:0:0
+    RF: get_attr_length_address at <invalid>:0:0
   Occurrences: 3
 
 Uncategorised
   After events:
-    RF: ix86_delegitimize_address at i386.c:11053:1
+    RF: ix86_build_builtin_va_list at <invalid>:0:0
   Occurrences: 1
 
 Uncategorised
   After events:
     RF: ix86_delegitimize_address at i386.c:11053:1
-    RF: ix86_find_base_term at i386.c:0:0
-  Occurrences: 1
+    RF: ix86_find_base_term at <invalid>:0:0
+  Occurrences: 2
 
 Uncategorised
   After events:
-    RF: ix86_find_base_term at i386.c:0:0
-    ICF: find_base_term at alias.c:1482:14
+    RF: ix86_expand_move at <invalid>:0:0
+  Occurrences: 10
+
+Uncategorised
+  After events:
+    RF: ix86_find_base_term at <invalid>:0:0
+  Occurrences: 35
+
+Uncategorised
+  After events:
+    RF: ix86_find_base_term at <invalid>:0:0
+    CF: find_base_term at alias.c:1476:7
   Occurrences: 1
 
 Uncategorised
   After events:
     IRF: ix86_function_sseregparm at i386.c:0:0
-  Occurrences: 4
+  Occurrences: 5
+
+Uncategorised
+  After events:
+    RF: ix86_function_value at <invalid>:0:0
+  Occurrences: 5
+
+Uncategorised
+  After events:
+    RF: ix86_function_value_1 at <invalid>:0:0
+  Occurrences: 5
+
+Uncategorised
+  After events:
+    RF: ix86_function_value_1 at <invalid>:0:0
+    RF: ix86_function_value at <invalid>:0:0
+  Occurrences: 7
+
+Uncategorised
+  After events:
+    RF: ix86_memory_move_cost at <invalid>:0:0
+  Occurrences: 4524
 
 Uncategorised
   After events:
@@ -49244,8 +48693,39 @@ Uncategorised
 
 Uncategorised
   After events:
-    IRF: likely_eliminated_by_inlining_p at ipa-inline.c:0:0
+    RF: ix86_scalar_mode_supported_p at <invalid>:0:0
+  Occurrences: 5
+
+Uncategorised
+  After events:
+    RF: ix86_target_macros at <invalid>:0:0
   Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: kill_clobbered_value at <invalid>:0:0
+    RF: note_stores at <invalid>:0:0
+  Occurrences: 3
+
+Uncategorised
+  After events:
+    RF: lang_dependent_init_target at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    IRF: last_stmt at tree-cfg.c:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: late_intra_sra at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: lex_string at <invalid>:0:0
+  Occurrences: 2
 
 Uncategorised
   After events:
@@ -49256,7 +48736,7 @@ Uncategorised
 Uncategorised
   After events:
     IRF: link_roots at dominance.c:0:0
-  Occurrences: 8
+  Occurrences: 7
 
 Uncategorised
   After events:
@@ -49265,13 +48745,48 @@ Uncategorised
 
 Uncategorised
   After events:
+    RF: local_pure_const at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
     IRF: lookup_attribute at tree.c:0:0
-  Occurrences: 73
+  Occurrences: 77
+
+Uncategorised
+  After events:
+    IRF: lookup_page_table_entry at ggc-page.c:613:10
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: loop_optimizer_init at <invalid>:0:0
+  Occurrences: 20
 
 Uncategorised
   After events:
     IRF: loop_outer at cfgloop.h:0:0
-  Occurrences: 3
+  Occurrences: 4
+
+Uncategorised
+  After events:
+    RF: lower_gimple_return at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: luids_extend_insn at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: main at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: make_edge at <invalid>:0:0
+  Occurrences: 5
 
 Uncategorised
   After events:
@@ -49282,11 +48797,6 @@ Uncategorised
   After events:
     IRF: make_new_qty at cse.c:0:0
   Occurrences: 3
-
-Uncategorised
-  After events:
-    RF: make_node_stat at tree.c:942:3
-  Occurrences: 1
 
 Uncategorised
   After events:
@@ -49306,17 +48816,89 @@ Uncategorised
 
 Uncategorised
   After events:
+    IRF: make_tree_vec_stat at tree.c:1589:23
+    CF: build_int_cst_wide at tree.c:1191:8
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: make_tree_vector at <invalid>:0:0
+  Occurrences: 2
+
+Uncategorised
+  After events:
+    RF: mark_jump_label at <invalid>:0:0
+  Occurrences: 26
+
+Uncategorised
+  After events:
     IRF: mark_nonreg_stores at dce.c:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: mark_nonreg_stores_1 at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: mark_nonreg_stores_1 at <invalid>:0:0
+    RF: note_stores at <invalid>:0:0
+  Occurrences: 5
+
+Uncategorised
+  After events:
+    RF: mark_nonreg_stores_2 at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: mark_sym_for_renaming at <invalid>:0:0
   Occurrences: 2
 
 Uncategorised
   After events:
     IRF: marked_insn_p at dce.c:160:10
-  Occurrences: 32
+  Occurrences: 40
+
+Uncategorised
+  After events:
+    RF: may_trap_p at <invalid>:0:0
+  Occurrences: 10
+
+Uncategorised
+  After events:
+    RF: may_trap_p_1 at <invalid>:0:0
+  Occurrences: 6
+
+Uncategorised
+  After events:
+    RF: maybe_clean_eh_stmt at <invalid>:0:0
+  Occurrences: 7
+
+Uncategorised
+  After events:
+    RF: maybe_fold_offset_to_address at <invalid>:0:0
+  Occurrences: 1
 
 Uncategorised
   After events:
     IRF: med3 at spec_qsort/spec_qsort.c:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: memory_operand at <invalid>:0:0
+  Occurrences: 339
+
+Uncategorised
+  After events:
+    RF: merge_blocks at <invalid>:0:0
+  Occurrences: 3
+
+Uncategorised
+  After events:
+    RF: move_block_after at <invalid>:0:0
   Occurrences: 1
 
 Uncategorised
@@ -49333,17 +48915,12 @@ Uncategorised
   After events:
     IRF: new_elt_loc_list at cselib.c:0:0
     IRF: cselib_record_set at cselib.c:1999:21
-  Occurrences: 2
+  Occurrences: 1
 
 Uncategorised
   After events:
     IRF: next_htab_element at tree-flow-inline.h:92:24
-  Occurrences: 2
-
-Uncategorised
-  After events:
-    IRF: next_referenced_var at tree-flow-inline.h:0:0
-  Occurrences: 2
+  Occurrences: 1
 
 Uncategorised
   After events:
@@ -49352,8 +48929,30 @@ Uncategorised
 
 Uncategorised
   After events:
-    IRF: op_iter_init at tree-flow-inline.h:0:0
+    RF: note_stores at <invalid>:0:0
+  Occurrences: 137
+
+Uncategorised
+  After events:
+    RF: note_stores at <invalid>:0:0
+    CF: copyprop_hardreg_forward_1 at regcprop.c:765:7
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: note_stores at <invalid>:0:0
+    RF: record_dead_and_set_regs at <invalid>:0:0
+  Occurrences: 3
+
+Uncategorised
+  After events:
+    RF: note_uses at <invalid>:0:0
   Occurrences: 2
+
+Uncategorised
+  After events:
+    IRF: op_iter_init at tree-flow-inline.h:0:0
+  Occurrences: 1
 
 Uncategorised
   After events:
@@ -49363,36 +48962,74 @@ Uncategorised
 Uncategorised
   After events:
     IRF: op_iter_init_tree at tree-flow-inline.h:0:0
-  Occurrences: 9
+  Occurrences: 10
+
+Uncategorised
+  After events:
+    IRF: op_iter_init_tree at tree-flow-inline.h:0:0
+    ICF: vrp_initialize at tree-vrp.c:5347:8
+  Occurrences: 1
 
 Uncategorised
   After events:
     IRF: op_iter_init_use at tree-flow-inline.h:0:0
-  Occurrences: 6
+  Occurrences: 4
 
 Uncategorised
   After events:
-    IRF: op_iter_next_tree at tree-flow-inline.h:705:7
-  Occurrences: 6
-
-Uncategorised
-  After events:
-    IRF: op_iter_next_tree at tree-flow-inline.h:711:7
+    IRF: op_iter_next_tree at tree-flow-inline.h:0:0
   Occurrences: 2
 
 Uncategorised
   After events:
-    IRF: op_iter_next_use at tree-flow-inline.h:0:0
+    IRF: op_iter_next_tree at tree-flow-inline.h:705:7
+  Occurrences: 4
+
+Uncategorised
+  After events:
+    IRF: op_iter_next_tree at tree-flow-inline.h:711:7
+    IRF: op_iter_init_tree at tree-flow-inline.h:0:0
   Occurrences: 1
 
 Uncategorised
   After events:
     IRF: op_iter_next_use at tree-flow-inline.h:665:7
-  Occurrences: 6
+  Occurrences: 4
 
 Uncategorised
   After events:
     IRF: optimize_function_for_size_p at predict.c:206:9
+  Occurrences: 5
+
+Uncategorised
+  After events:
+    RF: output_addr_const at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: output_dependence at <invalid>:0:0
+  Occurrences: 3
+
+Uncategorised
+  After events:
+    RF: output_file_directive at <invalid>:0:0
+    RF: default_file_start at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: output_object_blocks at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: output_quoted_string at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: output_section_asm_op at <invalid>:0:0
   Occurrences: 1
 
 Uncategorised
@@ -49402,8 +49039,86 @@ Uncategorised
 
 Uncategorised
   After events:
+    IRF: page_group_index at ggc-page.c:711:39
+    IRF: set_page_group_in_use at ggc-page.c:719:17
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: partition_delete at <invalid>:0:0
+  Occurrences: 5
+
+Uncategorised
+  After events:
+    RF: partition_view_bitmap at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: partition_view_fini at <invalid>:0:0
+  Occurrences: 2
+
+Uncategorised
+  After events:
+    RF: pass_by_reference at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: phi_translate_set at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: phi_translate_set at <invalid>:0:0
+    IRF: defer_or_phi_translate_block at tree-ssa-pre.c:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: pointer_map_destroy at <invalid>:0:0
+  Occurrences: 27
+
+Uncategorised
+  After events:
+    RF: pointer_map_destroy at <invalid>:0:0
+    RF: sra_deinitialize at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: pointer_set_destroy at <invalid>:0:0
+  Occurrences: 9
+
+Uncategorised
+  After events:
+    RF: pop_cfun at <invalid>:0:0
+  Occurrences: 8
+
+Uncategorised
+  After events:
+    RF: pop_file_scope at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
     IRF: preferable at cse.c:0:0
   Occurrences: 5
+
+Uncategorised
+  After events:
+    RF: print_operand at <invalid>:0:0
+  Occurrences: 12
+
+Uncategorised
+  After events:
+    RF: print_operand_address at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: process_bb_node_for_costs at <invalid>:0:0
+  Occurrences: 2
 
 Uncategorised
   After events:
@@ -49412,8 +49127,23 @@ Uncategorised
 
 Uncategorised
   After events:
+    RF: promote_function_mode at <invalid>:0:0
+  Occurrences: 2
+
+Uncategorised
+  After events:
     IRF: prop_set_simulate_again at tree-ssa-propagate.h:0:0
-  Occurrences: 3
+  Occurrences: 4
+
+Uncategorised
+  After events:
+    RF: propagate_value at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: push_cfun at <invalid>:0:0
+  Occurrences: 38
 
 Uncategorised
   After events:
@@ -49423,19 +49153,44 @@ Uncategorised
 Uncategorised
   After events:
     RF: queue_insn at haifa-sched.c:1361:1
-    RF: change_queue_index at haifa-sched.c:3921:1
-  Occurrences: 2
-
-Uncategorised
-  After events:
-    RF: ready_add at haifa-sched.c:1420:1
   Occurrences: 2
 
 Uncategorised
   After events:
     RF: ready_add at haifa-sched.c:1420:1
     RF: change_queue_index at haifa-sched.c:3921:1
-  Occurrences: 4
+  Occurrences: 2
+
+Uncategorised
+  After events:
+    RF: real_from_integer at <invalid>:0:0
+  Occurrences: 2
+
+Uncategorised
+  After events:
+    RF: recog at <invalid>:0:0
+  Occurrences: 3759
+
+Uncategorised
+  After events:
+    RF: record_builtin_type at <invalid>:0:0
+  Occurrences: 18
+
+Uncategorised
+  After events:
+    RF: record_dead_and_set_regs at <invalid>:0:0
+  Occurrences: 5
+
+Uncategorised
+  After events:
+    RF: record_dead_and_set_regs_1 at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: record_dead_and_set_regs_1 at <invalid>:0:0
+    RF: note_stores at <invalid>:0:0
+  Occurrences: 3
 
 Uncategorised
   After events:
@@ -49444,28 +49199,103 @@ Uncategorised
 
 Uncategorised
   After events:
+    RF: record_truncated_values at <invalid>:0:0
+  Occurrences: 3
+
+Uncategorised
+  After events:
+    RF: record_truncated_values at <invalid>:0:0
+    RF: note_uses at <invalid>:0:0
+  Occurrences: 2
+
+Uncategorised
+  After events:
+    RF: redirect_edge_succ at <invalid>:0:0
+  Occurrences: 2
+
+Uncategorised
+  After events:
     IRF: reg_fits_class_p at recog.c:0:0
-  Occurrences: 1003
+  Occurrences: 1013
+
+Uncategorised
+  After events:
+    RF: register_include_chains at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: register_new_def at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: relink_block_chain at <invalid>:0:0
+  Occurrences: 2
+
+Uncategorised
+  After events:
+    RF: reload_cse_regs_1 at <invalid>:0:0
+  Occurrences: 2
+
+Uncategorised
+  After events:
+    RF: remove_edge at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: remove_edge_raw at <invalid>:0:0
+  Occurrences: 5
+
+Uncategorised
+  After events:
+    RF: remove_edge_raw at <invalid>:0:0
+    RF: remove_edge at <invalid>:0:0
+  Occurrences: 1
 
 Uncategorised
   After events:
     IRF: remove_fake_predecessors at cfganal.c:0:0
+  Occurrences: 2
+
+Uncategorised
+  After events:
+    RF: replace_equiv_address at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: replace_equiv_address_nv at <invalid>:0:0
+  Occurrences: 9
+
+Uncategorised
+  After events:
+    RF: replace_equiv_address_nv at <invalid>:0:0
+    RF: canon_rtx at <invalid>:0:0
+  Occurrences: 19
+
+Uncategorised
+  After events:
+    RF: replace_equiv_address_nv at <invalid>:0:0
+    RF: eliminate_regs_1 at <invalid>:0:0
   Occurrences: 1
 
 Uncategorised
   After events:
     RF: replace_oldest_value_addr at regcprop.c:661:1
-  Occurrences: 2
+  Occurrences: 1
 
 Uncategorised
   After events:
     RF: replace_oldest_value_reg at regcprop.c:511:1
+    RF: replace_oldest_value_addr at regcprop.c:661:1
   Occurrences: 1
 
 Uncategorised
   After events:
     IRF: replace_uses_in at tree-ssa-propagate.c:0:0
-  Occurrences: 5
+  Occurrences: 3
 
 Uncategorised
   After events:
@@ -49474,25 +49304,51 @@ Uncategorised
 
 Uncategorised
   After events:
-    IRF: rhs_regno at rtl.h:1053:10
-  Occurrences: 3
+    RF: returnjump_p at <invalid>:0:0
+  Occurrences: 7
 
 Uncategorised
   After events:
     IRF: rhs_regno at rtl.h:1053:10
-    CF: df_ref_create_structure at df-scan.c:2837:27
-  Occurrences: 3
+  Occurrences: 7
+
+Uncategorised
+  After events:
+    IRF: rhs_regno at rtl.h:1053:10
+    CF: cselib_invalidate_rtx at cselib.c:1942:5
+  Occurrences: 1
 
 Uncategorised
   After events:
     IRF: rhs_regno at rtl.h:1053:10
     ICF: df_ref_record at df-scan.c:2937:13
-  Occurrences: 6
+  Occurrences: 5
+
+Uncategorised
+  After events:
+    RF: run_directive at <invalid>:0:0
+  Occurrences: 194
+
+Uncategorised
+  After events:
+    RF: run_fast_df_dce at <invalid>:0:0
+  Occurrences: 3
 
 Uncategorised
   After events:
     IRF: same_line_p at tree-cfg.c:0:0
   Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: save_register_info at <invalid>:0:0
+    CF: backend_init at toplev.c:2223:3
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    IRF: sched_has_condition_p at sched-deps.c:0:0
+  Occurrences: 2
 
 Uncategorised
   After events:
@@ -49502,17 +49358,43 @@ Uncategorised
 Uncategorised
   After events:
     IRF: sched_scan at haifa-sched.c:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: sd_find_dep_between at <invalid>:0:0
+  Occurrences: 4
+
+Uncategorised
+  After events:
+    RF: sd_resolve_dep at <invalid>:0:0
+  Occurrences: 25
+
+Uncategorised
+  After events:
+    RF: set_cfun at <invalid>:0:0
   Occurrences: 2
 
 Uncategorised
   After events:
     IRF: set_cfun at function.c:0:0
-  Occurrences: 38
+  Occurrences: 8
 
 Uncategorised
   After events:
-    IRF: set_depth at et-forest.c:70:14
-  Occurrences: 1
+    IRF: set_cfun at function.c:0:0
+    RF: pop_cfun at <invalid>:0:0
+  Occurrences: 30
+
+Uncategorised
+  After events:
+    RF: set_decl_rtl at <invalid>:0:0
+  Occurrences: 19
+
+Uncategorised
+  After events:
+    RF: set_mem_attributes at <invalid>:0:0
+  Occurrences: 3
 
 Uncategorised
   After events:
@@ -49521,13 +49403,18 @@ Uncategorised
 
 Uncategorised
   After events:
+    IRF: set_next at et-forest.c:109:7
+  Occurrences: 1
+
+Uncategorised
+  After events:
     IRF: set_prev at et-forest.c:95:7
-  Occurrences: 10
+  Occurrences: 12
 
 Uncategorised
   After events:
     IRF: setup_class_hard_regs at ira.c:0:0
-  Occurrences: 197
+  Occurrences: 189
 
 Uncategorised
   After events:
@@ -49537,7 +49424,17 @@ Uncategorised
 Uncategorised
   After events:
     IRF: setup_reg_subclasses at ira.c:0:0
-  Occurrences: 5
+  Occurrences: 6
+
+Uncategorised
+  After events:
+    RF: shallow_copy_rtx_stat at <invalid>:0:0
+  Occurrences: 4
+
+Uncategorised
+  After events:
+    RF: shorten_branches at <invalid>:0:0
+  Occurrences: 1
 
 Uncategorised
   After events:
@@ -49551,13 +49448,38 @@ Uncategorised
 
 Uncategorised
   After events:
+    RF: single_def_use_enter_block at <invalid>:0:0
+  Occurrences: 4
+
+Uncategorised
+  After events:
     IRF: single_pred_p at basic-block.h:636:10
-  Occurrences: 9
+  Occurrences: 12
+
+Uncategorised
+  After events:
+    IRF: single_pred_p at basic-block.h:636:33
+  Occurrences: 1
 
 Uncategorised
   After events:
     IRF: single_succ_p at basic-block.h:628:10
-  Occurrences: 30
+  Occurrences: 26
+
+Uncategorised
+  After events:
+    IRF: single_succ_p at basic-block.h:628:33
+  Occurrences: 2
+
+Uncategorised
+  After events:
+    RF: size_binop_loc at <invalid>:0:0
+  Occurrences: 14
+
+Uncategorised
+  After events:
+    RF: size_int_kind at <invalid>:0:0
+  Occurrences: 196
 
 Uncategorised
   After events:
@@ -49567,8 +49489,33 @@ Uncategorised
 
 Uncategorised
   After events:
-    IRF: stmt_ends_bb_p at tree-cfg.c:0:0
+    RF: splay_tree_delete at <invalid>:0:0
   Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: split_all_insns at <invalid>:0:0
+  Occurrences: 3
+
+Uncategorised
+  After events:
+    RF: split_insns at <invalid>:0:0
+  Occurrences: 9
+
+Uncategorised
+  After events:
+    RF: sra_deinitialize at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: state_transition at <invalid>:0:0
+  Occurrences: 19
+
+Uncategorised
+  After events:
+    RF: statistics_fini_pass at <invalid>:0:0
+  Occurrences: 287
 
 Uncategorised
   After events:
@@ -49587,60 +49534,177 @@ Uncategorised
 
 Uncategorised
   After events:
-    IRF: swap_sort at haifa-sched.c:1333:12
-  Occurrences: 1
-
-Uncategorised
-  After events:
     IRF: temp_slots_at_level at function.c:0:0
   Occurrences: 1
 
 Uncategorised
   After events:
     RF: tree_code_size at tree.c:741:1
-    CF: make_node_stat at tree.c:0:0
   Occurrences: 1
 
 Uncategorised
   After events:
-    IRF: tree_cons_stat at tree.c:2102:17
+    RF: tree_code_size at tree.c:741:1
+    CF: make_node_stat at tree.c:0:0
   Occurrences: 2
 
 Uncategorised
   After events:
+    IRF: tree_cons_stat at tree.c:0:0
+  Occurrences: 2
+
+Uncategorised
+  After events:
+    IRF: tree_cons_stat at tree.c:2102:17
+  Occurrences: 1
+
+Uncategorised
+  After events:
     IRF: tree_cons_stat at tree.c:2104:3
-  Occurrences: 3
+  Occurrences: 6
 
 Uncategorised
   After events:
     IRF: tree_cons_stat at tree.c:2114:21
-  Occurrences: 5
+  Occurrences: 7
 
 Uncategorised
   After events:
-    IRF: try_const_anchors at cse.c:0:0
+    IRF: tree_cons_stat at tree.c:2114:21
+    ICF: build_common_builtin_nodes at tree.c:9044:9
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: tree_lowering_passes at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: tree_size at <invalid>:0:0
   Occurrences: 3
 
 Uncategorised
   After events:
+    RF: tree_ssa_cd_dce at <invalid>:0:0
+  Occurrences: 2
+
+Uncategorised
+  After events:
+    RF: tree_ssa_cs_elim at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: tree_ssa_dce at <invalid>:0:0
+  Occurrences: 2
+
+Uncategorised
+  After events:
+    RF: tree_ssa_phiopt at <invalid>:0:0
+  Occurrences: 3
+
+Uncategorised
+  After events:
+    IRF: try_const_anchors at cse.c:0:0
+  Occurrences: 5
+
+Uncategorised
+  After events:
     RF: unchecked_make_edge at cfg.c:291:3
-    RF: cached_make_edge at cfg.c:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: useless_type_conversion_p at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: useless_type_conversion_p at <invalid>:0:0
+    RF: tree_ssa_useless_type_conversion at <invalid>:0:0
   Occurrences: 1
 
 Uncategorised
   After events:
     IRF: validate_canon_reg at cse.c:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: validate_change at <invalid>:0:0
+  Occurrences: 13
+
+Uncategorised
+  After events:
+    RF: validate_change at <invalid>:0:0
+    IRF: validate_canon_reg at cse.c:0:0
   Occurrences: 5
 
 Uncategorised
   After events:
+    RF: validate_unshare_change at <invalid>:0:0
+  Occurrences: 5
+
+Uncategorised
+  After events:
+    RF: varpool_remove_unreferenced_decls at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
     IRF: vconcat_length at concat.c:75:3
-  Occurrences: 9
+  Occurrences: 11
+
+Uncategorised
+  After events:
+    RF: vec_gc_p_reserve at <invalid>:0:0
+  Occurrences: 20
+
+Uncategorised
+  After events:
+    RF: vec_heap_o_reserve at <invalid>:0:0
+  Occurrences: 39
+
+Uncategorised
+  After events:
+    IRF: vec_heap_o_reserve_1 at vec.c:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: vec_heap_o_reserve_exact at vec.c:371:3
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: vec_heap_p_reserve at <invalid>:0:0
+  Occurrences: 33
+
+Uncategorised
+  After events:
+    RF: visit_use at <invalid>:0:0
+  Occurrences: 2
+
+Uncategorised
+  After events:
+    RF: walk_dominator_tree at <invalid>:0:0
+  Occurrences: 11
+
+Uncategorised
+  After events:
+    RF: walk_stmt_load_store_ops at <invalid>:0:0
+  Occurrences: 6
 
 Uncategorised
   After events:
     IRF: wrap_constant at cselib.c:0:0
-  Occurrences: 8
+  Occurrences: 7
+
+Uncategorised
+  After events:
+    RF: xstrdup at <invalid>:0:0
+  Occurrences: 3
 
 Uncategorised
   Before events:
@@ -49684,8 +49748,12 @@ Uncategorised
   Before events:
     CF: backend_init at toplev.c:2220:3
     CT: save_register_info at reginfo.c:362:0
-    CF: save_register_info at reginfo.c:380:3
-    CT: Jump to external code for memcpy
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: backend_init at toplev.c:2223:3
+    CT: ira_init_once at ira.c:1266:0
   Occurrences: 1
 
 Uncategorised
@@ -51173,14 +51241,6 @@ Uncategorised
 
 Uncategorised
   Before events:
-    CF: combine_instructions at combine.c:1094:6
-    CT: record_dead_and_set_regs at combine.c:11849:0
-    CF: record_dead_and_set_regs at combine.c:11880:12
-    CT: VEC_reg_stat_type_base_index at combine.c:255:0
-  Occurrences: 1
-
-Uncategorised
-  Before events:
     CF: combine_instructions at combine.c:1117:3
     CT: init_reg_last at combine.c:1327:0
     CF: init_reg_last at combine.c:1332:5
@@ -51191,7 +51251,13 @@ Uncategorised
   Before events:
     CF: combine_instructions at combine.c:1280:3
     CT: record_dead_and_set_regs at combine.c:11849:0
-    CF: record_dead_and_set_regs at combine.c:11880:12
+    CF: record_dead_and_set_regs at combine.c:11897:7
+    CT: note_stores at rtlanal.c:1435:0
+    CF: note_stores at rtlanal.c:1461:2
+    CT: record_dead_and_set_regs_1 at combine.c:11800:0
+    CF: record_dead_and_set_regs_1 at combine.c:11809:2
+    CT: record_value_for_reg at combine.c:11684:0
+    CF: record_value_for_reg at combine.c:11729:13
     CT: VEC_reg_stat_type_base_index at combine.c:255:0
   Occurrences: 1
 
@@ -51258,20 +51324,6 @@ Uncategorised
   Before events:
     CF: copyprop_hardreg_forward_1 at regcprop.c:765:7
     CT: extract_insn at recog.c:2038:0
-    CF: extract_insn at recog.c:2101:15
-    CT: recog_memoized at recog.h:151:0
-    CF: recog_memoized at recog.h:153:24
-    CT: recog at insn-recog.c:92506:0
-    CF: recog at insn-recog.c:92545:10
-    CT: recog_32 at insn-recog.c:42771:0
-    CF: recog_32 at insn-recog.c:43050:9
-    CT: recog_2 at insn-recog.c:1745:0
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: copyprop_hardreg_forward_1 at regcprop.c:765:7
-    CT: extract_insn at recog.c:2038:0
     CF: extract_insn at recog.c:2137:42
     CT: get_attr_enabled at recog.c:67:0
   Occurrences: 1
@@ -51285,13 +51337,17 @@ Uncategorised
 
 Uncategorised
   Before events:
-    CF: cselib_invalidate_rtx_note_stores at cselib.c:1960:3
-  Occurrences: 1
+    CF: cselib_record_set at cselib.c:1999:23
+  Occurrences: 5
 
 Uncategorised
   Before events:
-    CF: cselib_record_set at cselib.c:1999:23
-  Occurrences: 5
+    CF: cselib_record_sets at cselib.c:2104:3
+    CT: note_stores at rtlanal.c:1435:0
+    CF: note_stores at rtlanal.c:1461:2
+    CT: cselib_invalidate_rtx_note_stores at cselib.c:1959:0
+    CF: cselib_invalidate_rtx_note_stores at cselib.c:1960:3
+  Occurrences: 1
 
 Uncategorised
   Before events:
@@ -51348,6 +51404,18 @@ Uncategorised
     CF: df_ref_record at df-scan.c:2963:10
     CT: df_ref_create_structure at df-scan.c:2817:0
   Occurrences: 1
+
+Uncategorised
+  Before events:
+    CF: df_worklist_propagate_forward at df-core.c:878:11
+    CT: df_md_confluence_n at df-problems.c:4323:0
+  Occurrences: 4
+
+Uncategorised
+  Before events:
+    CF: df_worklist_propagate_forward at df-core.c:878:11
+    CT: df_rd_confluence_n at df-problems.c:516:0
+  Occurrences: 3
 
 Uncategorised
   Before events:
@@ -51421,7 +51489,7 @@ Uncategorised
 
 Uncategorised
   Before events:
-    CF: finalize_ssa_defs at tree-ssa-operands.c:456:28
+    CF: finalize_ssa_defs at tree-ssa-operands.c:455:10
     CT: gimple_vdef at gimple.h:1376:0
     CF: gimple_vdef at gimple.h:1377:8
   Occurrences: 1
@@ -51449,11 +51517,6 @@ Uncategorised
 
 Uncategorised
   Before events:
-    CF: fini_pre at tree-ssa-pre.c:4723:5
-  Occurrences: 1
-
-Uncategorised
-  Before events:
     CF: for_each_rtx at rtlanal.c:2854:12
     CT: record_truncated_value at combine.c:11983:0
     CF: record_truncated_value at combine.c:12009:9
@@ -51471,14 +51534,6 @@ Uncategorised
     CT: unlock_std_streams at fopen_unlocked.c:98:0
     CF: unlock_std_streams at fopen_unlocked.c:101:3
     CT: unlock_1 at fopen_unlocked.c:83:0
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CF: general_init at toplev.c:1742:3
-    CT: init_reg_sets at reginfo.c:233:0
-    CF: init_reg_sets at reginfo.c:257:3
-    CT: Jump to external code for memset
   Occurrences: 1
 
 Uncategorised
@@ -51600,7 +51655,7 @@ Uncategorised
 Uncategorised
   Before events:
     CF: init_alias_analysis at alias.c:2767:5
-  Occurrences: 1
+  Occurrences: 8
 
 Uncategorised
   Before events:
@@ -51615,7 +51670,7 @@ Uncategorised
 Uncategorised
   Before events:
     CF: init_emit_once at emit-rtl.c:5825:34
-  Occurrences: 3
+  Occurrences: 5
 
 Uncategorised
   Before events:
@@ -51814,6 +51869,12 @@ Uncategorised
 
 Uncategorised
   Before events:
+    CF: make_edges at cfgbuild.c:374:6
+    CT: cached_make_edge at cfg.c:299:0
+  Occurrences: 1
+
+Uncategorised
+  Before events:
     CF: mark_dfs_back_edges at cfganal.c:197:14
     CT: ei_edge at basic-block.h:753:0
   Occurrences: 2
@@ -51918,14 +51979,6 @@ Uncategorised
 
 Uncategorised
   Before events:
-    CF: record_dead_and_set_regs_1 at combine.c:11809:2
-    CT: record_value_for_reg at combine.c:11684:0
-    CF: record_value_for_reg at combine.c:11729:13
-    CT: VEC_reg_stat_type_base_index at combine.c:255:0
-  Occurrences: 2
-
-Uncategorised
-  Before events:
     CF: reg_fits_class_p at recog.c:2737:7
   Occurrences: 10
 
@@ -51947,6 +52000,12 @@ Uncategorised
 
 Uncategorised
   Before events:
+    CF: reload at reload1.c:749:3
+    CT: clear_secondary_mem at reload.c:649:0
+  Occurrences: 1
+
+Uncategorised
+  Before events:
     CF: reload_as_needed at reload1.c:4265:8
     CT: find_reloads at reload.c:2557:0
     CF: find_reloads at reload.c:2657:3
@@ -51965,18 +52024,17 @@ Uncategorised
 Uncategorised
   Before events:
     CF: remove_preds_and_fake_succs at tree-ssa-structalias.c:5372:39
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   Before events:
     CF: remove_preds_and_fake_succs at tree-ssa-structalias.c:5373:8
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   Before events:
     CF: rewrite_stmt at tree-into-ssa.c:1307:34
     CT: register_defs_p at tree-into-ssa.c:268:0
-    CF: register_defs_p at tree-into-ssa.c:269:10
   Occurrences: 1
 
 Uncategorised
@@ -51984,15 +52042,12 @@ Uncategorised
     CF: rewrite_stmt at tree-into-ssa.c:1307:34
     CT: register_defs_p at tree-into-ssa.c:268:0
     CF: register_defs_p at tree-into-ssa.c:269:10
-    CT: gimple_plf at gimple.h:1248:0
   Occurrences: 1
 
 Uncategorised
   Before events:
     CF: rewrite_stmt at tree-into-ssa.c:1307:8
     CT: rewrite_uses_p at tree-into-ssa.c:244:0
-    CF: rewrite_uses_p at tree-into-ssa.c:245:10
-    CT: gimple_visited_p at gimple.h:1227:0
   Occurrences: 1
 
 Uncategorised
@@ -52007,6 +52062,12 @@ Uncategorised
   Before events:
     CF: schedule_block at haifa-sched.c:3152:14
     CT: schedule_insn at haifa-sched.c:1663:0
+  Occurrences: 2
+
+Uncategorised
+  Before events:
+    CF: schedule_block at haifa-sched.c:3152:14
+    CT: schedule_insn at haifa-sched.c:1663:0
     CF: schedule_insn at haifa-sched.c:1699:3
     CT: sd_lists_empty_p at sched-deps.c:689:0
     CT: sd_next_list at sched-deps.c:625:0
@@ -52016,11 +52077,52 @@ Uncategorised
 
 Uncategorised
   Before events:
+    CF: schedule_block at haifa-sched.c:3152:14
+    CT: schedule_insn at haifa-sched.c:1663:0
+    CF: schedule_insn at haifa-sched.c:1756:7
+    CT: sd_resolve_dep at sched-deps.c:1266:0
+  Occurrences: 2
+
+Uncategorised
+  Before events:
+    CF: schedule_block at haifa-sched.c:3152:14
+    CT: schedule_insn at haifa-sched.c:1663:0
+    CF: schedule_insn at haifa-sched.c:1756:7
+    CT: sd_resolve_dep at sched-deps.c:1266:0
+    CF: sd_resolve_dep at sched-deps.c:1277:5
+    CT: move_dep_link at sched-deps.c:295:0
+    CF: move_dep_link at sched-deps.c:297:3
+    CT: add_to_deps_list at sched-deps.c:257:0
+    CF: add_to_deps_list at sched-deps.c:258:3
+  Occurrences: 2
+
+Uncategorised
+  Before events:
+    CF: schedule_block at haifa-sched.c:3152:14
+    CT: schedule_insn at haifa-sched.c:1663:0
+    CF: schedule_insn at haifa-sched.c:1756:7
+    CT: sd_resolve_dep at sched-deps.c:1266:0
+    CF: sd_resolve_dep at sched-deps.c:1280:3
+    CT: move_dep_link at sched-deps.c:295:0
+    CF: move_dep_link at sched-deps.c:296:3
+    CT: remove_from_deps_list at sched-deps.c:284:0
+  Occurrences: 2
+
+Uncategorised
+  Before events:
+    CF: schedule_block at haifa-sched.c:3152:14
+    CT: schedule_insn at haifa-sched.c:1663:0
+    CF: schedule_insn at haifa-sched.c:1768:21
+    CT: try_ready at haifa-sched.c:3661:0
+  Occurrences: 1
+
+Uncategorised
+  Before events:
     CF: setup_prohibited_mode_move_regs at ira.c:1360:4
     CT: extract_insn at recog.c:2038:0
     CF: extract_insn at recog.c:2137:42
     CT: get_attr_enabled at recog.c:67:0
-  Occurrences: 220
+  Occurrences: 17
 
 Uncategorised
   Before events:
@@ -52121,7 +52223,7 @@ Uncategorised
   Before events:
     CT: VEC_rtx_base_index at rtl.h:200:0
     RF: VEC_rtx_base_index at rtl.h:200:1
-  Occurrences: 1
+  Occurrences: 8
 
 Uncategorised
   Before events:
@@ -52147,13 +52249,13 @@ Uncategorised
 Uncategorised
   Before events:
     CT: ei_container at basic-block.h:686:0
-  Occurrences: 61
+  Occurrences: 88
 
 Uncategorised
   Before events:
     CT: ei_container at basic-block.h:686:0
     RF: ei_container at basic-block.h:688:3
-  Occurrences: 1673
+  Occurrences: 1639
 
 Uncategorised
   Before events:
@@ -52176,13 +52278,13 @@ Uncategorised
 Uncategorised
   Before events:
     CT: gimple_call_num_args at gimple.h:2014:0
-  Occurrences: 1
+  Occurrences: 2
 
 Uncategorised
   Before events:
     CT: gimple_call_num_args at gimple.h:2014:0
     RF: gimple_call_num_args at gimple.h:2018:3
-  Occurrences: 11
+  Occurrences: 10
 
 Uncategorised
   Before events:
@@ -52204,7 +52306,7 @@ Uncategorised
   Before events:
     CT: gimple_num_ops at gimple.h:1597:0
     RF: gimple_num_ops at gimple.h:1598:3
-  Occurrences: 20
+  Occurrences: 19
 
 Uncategorised
   Before events:
@@ -52214,49 +52316,447 @@ Uncategorised
 
 Uncategorised
   Before events:
-    CT: is_attribute_with_length_p at tree.c:5034:0
-  After events:
-    CT: is_attribute_with_length_p at tree.c:5034:0 (TCWI)
-  Occurrences: 1810
-
-Uncategorised
-  Before events:
-    CT: mark_jump_label_1 at jump.c:1041:0
-  After events:
-    CT: mark_jump_label_1 at jump.c:1041:0 (TCWI)
-  Occurrences: 26
-
-Uncategorised
-  Before events:
-    CT: output_289 at insn-output.c:1885:0
-  After events:
-    CT: output_289 at insn-output.c:1885:0 (TCWI)
-  Occurrences: 1
-
-Uncategorised
-  Before events:
-    CT: output_44 at insn-output.c:166:0
-  After events:
-    CT: output_44 at insn-output.c:166:0 (TCWI)
-  Occurrences: 2
-
-Uncategorised
-  Before events:
-    CT: output_693 at insn-output.c:2929:0
-  After events:
-    CT: output_693 at insn-output.c:2929:0 (TCWI)
-  Occurrences: 1
-
-Uncategorised
-  Before events:
     CT: rhs_regno at rtl.h:1052:0
     RF: rhs_regno at rtl.h:1053:3
   Occurrences: 7
 
 Uncategorised
   Before events:
+    RF: _cpp_do_file_change at cpp_directives.c:1044:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: _cpp_do_file_change at cpp_directives.c:1044:1
+    RF: cpp_change_file at cpp_files.c:1257:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: _cpp_init_files at cpp_files.c:1199:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: _cpp_pop_buffer at cpp_directives.c:2495:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: assemble_name at varasm.c:2521:1
+  Occurrences: 6
+
+Uncategorised
+  Before events:
+    RF: assemble_name at varasm.c:2521:1
+    RF: output_addr_const at final.c:3650:1
+  Occurrences: 2
+
+Uncategorised
+  Before events:
+    RF: backend_init_target at toplev.c:2208:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: bitmap_ior_and_compl at bitmap.c:1927:1
+    RF: df_live_transfer_function at df-problems.c:1585:3
+  Occurrences: 14
+
+Uncategorised
+  Before events:
+    RF: bitmap_ior_and_compl at bitmap.c:1927:1
+    RF: df_lr_transfer_function at df-problems.c:1032:3
+  Occurrences: 9
+
+Uncategorised
+  Before events:
+    RF: bitmap_ior_and_compl at bitmap.c:1927:1
+    RF: df_rd_transfer_function at df-problems.c:596:1
+  Occurrences: 2
+
+Uncategorised
+  Before events:
+    RF: bitmap_obstack_initialize at bitmap.c:324:1
+  Occurrences: 43
+
+Uncategorised
+  Before events:
+    RF: bitmap_obstack_release at bitmap.c:345:1
+  Occurrences: 40
+
+Uncategorised
+  Before events:
+    RF: bitmap_obstack_release at bitmap.c:345:1
+    RF: ipa_passes at cgraphunit.c:1814:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
     RF: bitmap_set_bit at bitmap.c:651:1
   Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: build_complex_type at tree.c:7514:3
+  Occurrences: 5
+
+Uncategorised
+  Before events:
+    RF: build_fold_addr_expr_loc at fold-const.c:8338:3
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: build_index_type at tree.c:6889:1
+  Occurrences: 2
+
+Uncategorised
+  Before events:
+    RF: build_int_cst at tree.c:1040:3
+  Occurrences: 62
+
+Uncategorised
+  Before events:
+    RF: build_int_cst at tree.c:1040:3
+    RF: size_int_kind at fold-const.c:2154:3
+  Occurrences: 664
+
+Uncategorised
+  Before events:
+    RF: build_nonstandard_integer_type at tree.c:6911:1
+  Occurrences: 2
+
+Uncategorised
+  Before events:
+    RF: build_pointer_type at tree.c:6762:3
+  Occurrences: 43
+
+Uncategorised
+  Before events:
+    RF: build_reference_type at tree.c:6829:3
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: build_type_attribute_variant at tree.c:4167:3
+  Occurrences: 240
+
+Uncategorised
+  Before events:
+    RF: build_type_no_quals at tree.c:6854:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: build_void_list_node at c-decl.c:8316:3
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: c_common_no_more_pch at c-pch.c:452:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: c_common_nodes_and_builtins at c-common.c:5101:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: c_finish_expr_stmt at c-typeck.c:8816:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: c_finish_return at c-typeck.c:8419:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: c_init_decl_processing at c-decl.c:3467:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: c_initialize_diagnostics at c-objc-common.c:186:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: c_parser_compound_statement at c-parser.c:3415:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: c_parser_compound_statement_nostart at c-parser.c:3585:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: c_parser_declarator at c-parser.c:2283:1
+  Occurrences: 2
+
+Uncategorised
+  Before events:
+    RF: c_parser_external_declaration at c-parser.c:1107:1
+  Occurrences: 2
+
+Uncategorised
+  Before events:
+    RF: c_register_pragma_1 at c-pragma.c:1236:1
+  Occurrences: 13
+
+Uncategorised
+  Before events:
+    RF: c_stddef_cpp_builtins at c-common.c:5785:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: c_vla_unspec_p at c-objc-common.c:199:3
+  Occurrences: 4
+
+Uncategorised
+  Before events:
+    RF: cached_nonzero_bits at rtlanal.c:3686:1
+    RF: nonzero_bits at rtlanal.c:3635:3
+  Occurrences: 2
+
+Uncategorised
+  Before events:
+    RF: calc_dfs_tree_nonrec at dominance.c:326:1
+  Occurrences: 24
+
+Uncategorised
+  Before events:
+    RF: can_merge_blocks_p at cfghooks.c:654:3
+  Occurrences: 20
+
+Uncategorised
+  Before events:
+    RF: cb_file_change at c-opts.c:1599:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: ccp_visit_stmt at tree-ssa-ccp.c:1732:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: cfg_layout_finalize at cfglayout.c:1334:1
+  Occurrences: 2
+
+Uncategorised
+  Before events:
+    RF: cfg_layout_initialize at cfglayout.c:1278:1
+  Occurrences: 2
+
+Uncategorised
+  Before events:
+    RF: cgraph_analyze_functions at cgraphunit.c:1070:1
+  Occurrences: 2
+
+Uncategorised
+  Before events:
+    RF: cgraph_expand_all_functions at cgraphunit.c:1648:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: cgraph_finalize_function at cgraphunit.c:556:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: cgraph_materialize_all_clones at cgraphunit.c:2397:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: cgraph_remove_edge_duplication_hook at cgraph.c:344:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: cgraph_remove_edge_removal_hook at cgraph.c:221:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: cgraph_remove_function_insertion_hook at cgraph.c:303:1
+  Occurrences: 3
+
+Uncategorised
+  Before events:
+    RF: cgraph_remove_node_duplication_hook at cgraph.c:386:1
+  Occurrences: 2
+
+Uncategorised
+  Before events:
+    RF: cgraph_remove_node_removal_hook at cgraph.c:262:1
+  Occurrences: 2
+
+Uncategorised
+  Before events:
+    RF: check_mem_read_use at dse.c:2308:1
+  Occurrences: 6
+
+Uncategorised
+  Before events:
+    RF: check_mem_read_use at dse.c:2308:1
+    RF: note_uses at rtlanal.c:1556:1
+  Occurrences: 7
+
+Uncategorised
+  Before events:
+    RF: clobber_return_register at function.c:4605:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: commit_edge_insertions at cfgrtl.c:1599:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: connect_infinite_loops_to_exit at cfganal.c:647:3
+  Occurrences: 4
+
+Uncategorised
+  Before events:
+    RF: const_binop at fold-const.c:2146:1
+  Occurrences: 6
+
+Uncategorised
+  Before events:
+    RF: constrain_operands_cached at recog.c:2032:1
+  Occurrences: 9
+
+Uncategorised
+  Before events:
+    RF: control_flow_insn_p at cfgbuild.c:132:1
+  Occurrences: 3
+
+Uncategorised
+  Before events:
+    RF: convert at c-convert.c:158:1
+    RF: array_to_pointer_conversion at c-typeck.c:1751:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: convert_to_pointer at convert.c:92:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: copy_constant at varasm.c:3189:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: cpp_assert at cpp_directives.c:2377:1
+  Occurrences: 5
+
+Uncategorised
+  Before events:
+    RF: cpp_lookup at cpp_identifiers.c:96:3
+  Occurrences: 9
+
+Uncategorised
+  Before events:
+    RF: cselib_clear_table at cselib.c:298:1
+  Occurrences: 2
+
+Uncategorised
+  Before events:
+    RF: cselib_invalidate_rtx_note_stores at cselib.c:1961:1
+    RF: note_stores at rtlanal.c:1467:1
+  Occurrences: 21
+
+Uncategorised
+  Before events:
+    RF: def_blocks_free at tree-into-ssa.c:1706:1
+  Occurrences: 2
+
+Uncategorised
+  Before events:
+    RF: default_addr_space_legitimate_address_p at targhooks.c:908:3
+  Occurrences: 2688
+
+Uncategorised
+  Before events:
+    RF: default_diagnostic_finalizer at diagnostic.c:298:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: default_eh_return_filter_mode at targhooks.c:205:3
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: default_elf_select_section at varasm.c:6405:1
+    RF: get_constant_section at varasm.c:3216:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: default_globalize_label at varasm.c:6723:1
+    RF: default_globalize_decl_name at varasm.c:6732:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: delete_basic_block at cfghooks.c:533:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: delete_var_map at tree-ssa-live.c:163:1
+  Occurrences: 5
+
+Uncategorised
+  Before events:
+    RF: dep_list_size at haifa-sched.c:1000:1
+  Occurrences: 12
+
+Uncategorised
+  Before events:
+    RF: df_bb_refs_collect at df-scan.c:3706:1
+  Occurrences: 2
+
+Uncategorised
+  Before events:
+    RF: df_chain_fully_remove_problem at df-problems.c:2033:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: df_defs_record at df-scan.c:3120:1
+  Occurrences: 27
+
+Uncategorised
+  Before events:
+    RF: df_entry_block_defs_collect at df-scan.c:3993:1
+  Occurrences: 3
+
+Uncategorised
+  Before events:
+    RF: df_exit_block_uses_collect at df-scan.c:4164:1
+  Occurrences: 2
+
+Uncategorised
+  Before events:
+    RF: df_get_entry_block_def_set at df-scan.c:3970:1
+  Occurrences: 7
+
+Uncategorised
+  Before events:
+    RF: df_get_exit_block_use_set at df-scan.c:4136:1
+  Occurrences: 6
 
 Uncategorised
   Before events:
@@ -52270,8 +52770,163 @@ Uncategorised
 
 Uncategorised
   Before events:
+    RF: df_get_regular_block_artificial_uses at df-scan.c:3831:1
+  Occurrences: 2
+
+Uncategorised
+  Before events:
+    RF: df_insn_refs_collect at df-scan.c:3613:1
+  Occurrences: 23
+
+Uncategorised
+  Before events:
+    RF: df_live_confluence_n at df-problems.c:1562:1
+  Occurrences: 15
+
+Uncategorised
+  Before events:
+    RF: df_live_free at df-problems.c:1646:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: df_live_local_compute at df-problems.c:1527:1
+  Occurrences: 5
+
+Uncategorised
+  Before events:
+    RF: df_live_transfer_function at df-problems.c:1585:3
+  Occurrences: 6
+
+Uncategorised
+  Before events:
+    RF: df_lr_confluence_n at df-problems.c:1018:1
+  Occurrences: 15
+
+Uncategorised
+  Before events:
+    RF: df_lr_free at df-problems.c:1097:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: df_lr_local_compute at df-problems.c:969:1
+  Occurrences: 6
+
+Uncategorised
+  Before events:
+    RF: df_lr_transfer_function at df-problems.c:1032:3
+  Occurrences: 12
+
+Uncategorised
+  Before events:
+    RF: df_mark_reg at df-scan.c:3886:1
+    RF: diddle_return_value at function.c:4582:1
+  Occurrences: 8
+
+Uncategorised
+  Before events:
+    RF: df_md_add_problem at df-problems.c:4429:1
+  Occurrences: 2
+
+Uncategorised
+  Before events:
+    RF: df_md_confluence_0 at df-problems.c:4317:1
+  Occurrences: 2
+
+Uncategorised
+  Before events:
+    RF: df_md_free at df-problems.c:4361:1
+  Occurrences: 2
+
+Uncategorised
+  Before events:
+    RF: df_md_local_compute at df-problems.c:4253:1
+  Occurrences: 2
+
+Uncategorised
+  Before events:
+    RF: df_md_transfer_function at df-problems.c:4292:3
+  Occurrences: 12
+
+Uncategorised
+  Before events:
+    RF: df_note_add_problem at df-problems.c:3714:1
+  Occurrences: 9
+
+Uncategorised
+  Before events:
+    RF: df_note_compute at df-problems.c:3665:1
+  Occurrences: 10
+
+Uncategorised
+  Before events:
+    RF: df_note_free at df-problems.c:3674:1
+  Occurrences: 9
+
+Uncategorised
+  Before events:
+    RF: df_rd_free at df-problems.c:617:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: df_rd_transfer_function at df-problems.c:596:1
+  Occurrences: 2
+
+Uncategorised
+  Before events:
+    RF: df_ref_change_reg_with_loc at df-scan.c:2115:1
+  Occurrences: 1679
+
+Uncategorised
+  Before events:
+    RF: df_ref_change_reg_with_loc at df-scan.c:2115:1
+    CF: setup_prohibited_mode_move_regs at ira.c:1360:4
+    CT: extract_insn at recog.c:2038:0
+    CF: extract_insn at recog.c:2137:42
+    CT: get_attr_enabled at recog.c:67:0
+  Occurrences: 203
+
+Uncategorised
+  Before events:
     RF: df_ref_create_structure at df-scan.c:2894:3
   Occurrences: 2
+
+Uncategorised
+  Before events:
+    RF: df_ref_record at df-scan.c:2975:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: df_reg_chain_unlink at df-scan.c:954:1
+  Occurrences: 11
+
+Uncategorised
+  Before events:
+    RF: df_scan_add_problem at df-scan.c:554:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: df_scan_free at df-scan.c:421:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: df_scan_free_internal at df-scan.c:279:1
+  Occurrences: 2
+
+Uncategorised
+  Before events:
+    RF: df_simulate_one_insn_backwards at df-problems.c:3860:1
+  Occurrences: 11
+
+Uncategorised
+  Before events:
+    RF: df_simulate_one_insn_forwards at df-problems.c:3969:1
+  Occurrences: 23
 
 Uncategorised
   Before events:
@@ -52280,14 +52935,312 @@ Uncategorised
 
 Uncategorised
   Before events:
+    RF: df_worklist_dataflow at df-core.c:1052:1
+  Occurrences: 14
+
+Uncategorised
+  Before events:
+    RF: dfa_finish at insn-automata.c:14966:1
+    RF: sched_finish at haifa-sched.c:3575:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: dfa_start at insn-automata.c:14960:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: do_per_function at passes.c:1112:1
+  Occurrences: 350
+
+Uncategorised
+  Before events:
+    RF: do_pre at tree-ssa-pre.c:4813:3
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: early_intra_sra at tree-sra.c:2832:3
+  Occurrences: 1
+
+Uncategorised
+  Before events:
     RF: ei_container at basic-block.h:688:3
-  Occurrences: 61
+  Occurrences: 88
 
 Uncategorised
   Before events:
     RF: ei_container at basic-block.h:688:3
     CT: ei_container at basic-block.h:686:0
-  Occurrences: 33
+  Occurrences: 40
+
+Uncategorised
+  Before events:
+    RF: emit at emit-rtl.c:5233:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: emit_call_insn at emit-rtl.c:4975:3
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: emit_clobber at emit-rtl.c:5053:1
+  Occurrences: 2
+
+Uncategorised
+  Before events:
+    RF: emit_insn_after_noloc at emit-rtl.c:4361:1
+  Occurrences: 3
+
+Uncategorised
+  Before events:
+    RF: emit_insn_after_noloc at emit-rtl.c:4361:1
+    RF: emit_insn_after at emit-rtl.c:4554:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: emit_move_insn_1 at expr.c:3438:1
+  Occurrences: 10
+
+Uncategorised
+  Before events:
+    RF: emit_use at emit-rtl.c:5081:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: et_free_pools at et-forest.c:520:1
+  Occurrences: 24
+
+Uncategorised
+  Before events:
+    RF: et_free_tree at et-forest.c:500:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: et_free_tree_force at et-forest.c:511:1
+  Occurrences: 73
+
+Uncategorised
+  Before events:
+    RF: execute_fre at tree-ssa-pre.c:4849:3
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: execute_on_growing_pred at cfghooks.c:1026:1
+  Occurrences: 3
+
+Uncategorised
+  Before events:
+    RF: execute_on_shrinking_pred at cfghooks.c:1036:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: execute_tail_calls at tree-tailcall.c:1043:3
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: execute_tail_recursion at tree-tailcall.c:1031:3
+  Occurrences: 2
+
+Uncategorised
+  Before events:
+    RF: execute_todo at passes.c:1315:1
+  Occurrences: 28
+
+Uncategorised
+  Before events:
+    RF: expand_expr_real_1 at expr.c:9678:1
+  Occurrences: 2
+
+Uncategorised
+  Before events:
+    RF: expand_expr_real_1 at expr.c:9678:1
+    RF: expand_expr_real at expr.c:7225:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: expand_return at stmt.c:1796:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: fibheap_delete at fibheap.c:280:1
+  Occurrences: 2
+
+Uncategorised
+  Before events:
+    RF: fibheap_new at fibheap.c:59:3
+  Occurrences: 2
+
+Uncategorised
+  Before events:
+    RF: file_end_indicate_exec_stack at varasm.c:6793:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: final_start_function at final.c:1591:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: find_unreachable_blocks at cfganal.c:325:1
+  Occurrences: 20
+
+Uncategorised
+  Before events:
+    RF: finish_options at c-opts.c:1557:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: fold_convert_const at fold-const.c:2571:1
+  Occurrences: 10
+
+Uncategorised
+  Before events:
+    RF: fold_stmt at tree-ssa-ccp.c:3162:3
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: fopen_unlocked at fopen_unlocked.c:109:3
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: for_each_rtx at rtlanal.c:2871:1
+  Occurrences: 27
+
+Uncategorised
+  Before events:
+    RF: for_each_rtx at rtlanal.c:2871:1
+    RF: check_mem_read_use at dse.c:2308:1
+  Occurrences: 7
+
+Uncategorised
+  Before events:
+    RF: for_each_rtx at rtlanal.c:2871:1
+    RF: record_truncated_values at combine.c:12030:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: for_each_rtx at rtlanal.c:2871:1
+    RF: returnjump_p at jump.c:915:1
+  Occurrences: 2
+
+Uncategorised
+  Before events:
+    RF: force_fit_type_double at fold-const.c:311:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: force_fit_type_double at fold-const.c:311:1
+    RF: int_const_binop at fold-const.c:1814:1
+  Occurrences: 23
+
+Uncategorised
+  Before events:
+    RF: forward_propagate_into at fwprop.c:1374:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: free_after_compilation at function.c:225:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: free_edge_list at cfganal.c:386:1
+  Occurrences: 2
+
+Uncategorised
+  Before events:
+    RF: free_graph at graphds.c:344:1
+  Occurrences: 12
+
+Uncategorised
+  Before events:
+    RF: free_scc_info at tree-ssa-structalias.c:1801:1
+  Occurrences: 6
+
+Uncategorised
+  Before events:
+    RF: free_scc_vn at tree-ssa-sccvn.c:3143:1
+  Occurrences: 2
+
+Uncategorised
+  Before events:
+    RF: free_stmt_vec_info at tree-vect-stmts.c:4406:1
+  Occurrences: 2
+
+Uncategorised
+  Before events:
+    RF: gen_jump at insn-emit.c:831:3
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: gen_leave at insn-emit.c:969:3
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: gen_lowpart_common at emit-rtl.c:1237:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: gen_pro_epilogue_adjust_stack_1 at insn-emit.c:2267:3
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: gen_return_internal at insn-emit.c:861:3
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: get_attr_length_1 at final.c:441:1
+    RF: get_attr_length at final.c:448:3
+  Occurrences: 8
+
+Uncategorised
+  Before events:
+    RF: get_attr_length_address at insn-attrtab.c:117412:1
+  Occurrences: 10
+
+Uncategorised
+  Before events:
+    RF: get_attr_length_immediate at insn-attrtab.c:118957:1
+  Occurrences: 10
+
+Uncategorised
+  Before events:
+    RF: get_deref_alias_set at alias.c:617:3
+  Occurrences: 4
+
+Uncategorised
+  Before events:
+    RF: get_expr_operands at tree-ssa-operands.c:1027:1
+  Occurrences: 2
+
+Uncategorised
+  Before events:
+    RF: get_insn_template at final.c:1745:1
+  Occurrences: 5
 
 Uncategorised
   Before events:
@@ -52296,13 +53249,553 @@ Uncategorised
 
 Uncategorised
   Before events:
+    RF: gimple_call_flags at gimple.c:1736:3
+  Occurrences: 45
+
+Uncategorised
+  Before events:
     RF: gimple_call_num_args at gimple.h:2018:3
-  Occurrences: 1
+  Occurrences: 2
+
+Uncategorised
+  Before events:
+    RF: gimple_ior_addresses_taken at gimple.c:4555:3
+  Occurrences: 10
 
 Uncategorised
   Before events:
     RF: gimple_num_ops at gimple.h:1598:3
   Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: gimple_num_ops at gimple.h:1598:3
+    CT: gimple_num_ops at gimple.h:1597:0
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: gimple_seq_may_fallthru at gimple-low.c:737:3
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: globalize_decl at varasm.c:5516:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: gsi_insert_after at gimple-iterator.c:460:1
+  Occurrences: 4
+
+Uncategorised
+  Before events:
+    RF: gsi_insert_after_without_update at gimple-iterator.c:446:1
+  Occurrences: 4
+
+Uncategorised
+  Before events:
+    RF: gsi_insert_before at gimple-iterator.c:424:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: gsi_insert_seq_after at gimple-iterator.c:293:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: gsi_insert_seq_before at gimple-iterator.c:183:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: haifa_note_reg_clobber at sched-deps.c:1642:1
+  Occurrences: 4
+
+Uncategorised
+  Before events:
+    RF: haifa_note_reg_set at sched-deps.c:1636:1
+  Occurrences: 7
+
+Uncategorised
+  Before events:
+    RF: haifa_note_reg_use at sched-deps.c:1648:1
+  Occurrences: 9
+
+Uncategorised
+  Before events:
+    RF: haifa_sched_finish at haifa-sched.c:3543:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: ht_lookup at cpp_symtab.c:98:3
+  Occurrences: 1918
+
+Uncategorised
+  Before events:
+    RF: ht_lookup at cpp_symtab.c:98:3
+    RF: cpp_lookup at cpp_identifiers.c:96:3
+  Occurrences: 56
+
+Uncategorised
+  Before events:
+    RF: init_alias_vars at tree-ssa-structalias.c:5357:1
+  Occurrences: 3
+
+Uncategorised
+  Before events:
+    RF: init_dce at dce.c:684:1
+  Occurrences: 4
+
+Uncategorised
+  Before events:
+    RF: init_dummy_function_start at function.c:4218:1
+  Occurrences: 2
+
+Uncategorised
+  Before events:
+    RF: init_optimization_passes at passes.c:1081:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: init_pragma at c-pragma.c:1315:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: init_set_costs at cfgloopanal.c:378:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: init_temp_slots at function.c:1238:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: init_tree_ssa at tree-ssa.c:1129:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: init_ttree at tree.c:561:1
+    CF: general_init at toplev.c:1742:3
+    CT: init_reg_sets at reginfo.c:233:0
+    CF: init_reg_sets at reginfo.c:257:3
+    CT: Jump to external code for memset
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: insert_insn_on_edge at cfgrtl.c:1435:1
+  Occurrences: 2
+
+Uncategorised
+  Before events:
+    RF: insert_regs at cse.c:1221:1
+  Occurrences: 3
+
+Uncategorised
+  Before events:
+    RF: int_const_binop at fold-const.c:1814:1
+    RF: size_binop_loc at fold-const.c:2200:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: internal_state_transition at insn-automata.c:11346:1
+    RF: state_transition at insn-automata.c:11397:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: invalidate at cse.c:1994:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: ira_destroy at ira-build.c:2867:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: ira_finish_costs_once at ira-costs.c:1657:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: ira_free at ira.c:599:1
+  Occurrences: 26
+
+Uncategorised
+  Before events:
+    RF: ira_free at ira.c:599:1
+    RF: ira_costs at ira-costs.c:1701:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: ira_free at ira.c:599:1
+    RF: ira_sort_regnos_for_alter_reg at ira-color.c:2754:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: ira_init at ira.c:1311:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: ira_traverse_loop_tree at ira-build.c:1410:1
+  Occurrences: 3
+
+Uncategorised
+  Before events:
+    RF: is_attribute_p at tree.c:5078:3
+  Occurrences: 1810
+
+Uncategorised
+  Before events:
+    RF: is_gimple_min_invariant at gimple.c:2622:1
+  Occurrences: 8
+
+Uncategorised
+  Before events:
+    RF: is_gimple_val at gimple.c:2790:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: is_gimple_val at gimple.c:2790:1
+    RF: is_gimple_call_addr at gimple.c:2827:3
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: ix86_attr_length_address_default at i386.c:19619:1
+    RF: get_attr_length_address at insn-attrtab.c:117412:1
+  Occurrences: 4
+
+Uncategorised
+  Before events:
+    RF: ix86_build_builtin_va_list at i386.c:6733:3
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: ix86_expand_move at i386.c:13069:1
+  Occurrences: 10
+
+Uncategorised
+  Before events:
+    RF: ix86_find_base_term at i386.c:11080:3
+  Occurrences: 36
+
+Uncategorised
+  Before events:
+    RF: ix86_function_value at i386.c:6458:3
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: ix86_function_value_1 at i386.c:6447:5
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: ix86_function_value_1 at i386.c:6447:5
+    RF: ix86_function_value at i386.c:6458:3
+  Occurrences: 11
+
+Uncategorised
+  Before events:
+    RF: ix86_memory_move_cost at i386.c:25332:3
+  Occurrences: 4524
+
+Uncategorised
+  Before events:
+    RF: ix86_scalar_mode_supported_p at i386.c:28001:1
+  Occurrences: 5
+
+Uncategorised
+  Before events:
+    RF: ix86_target_macros at i386-c.c:349:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: kill_clobbered_value at regcprop.c:255:1
+    RF: note_stores at rtlanal.c:1467:1
+  Occurrences: 3
+
+Uncategorised
+  Before events:
+    RF: lang_dependent_init_target at toplev.c:2290:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: late_intra_sra at tree-sra.c:2840:3
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: lex_string at cpp_lex.c:1040:1
+  Occurrences: 2
+
+Uncategorised
+  Before events:
+    RF: local_pure_const at ipa-pure-const.c:1207:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: loop_optimizer_init at loop-init.c:97:1
+  Occurrences: 20
+
+Uncategorised
+  Before events:
+    RF: lower_gimple_return at gimple-low.c:773:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: luids_extend_insn at haifa-sched.c:5364:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: main at main.c:35:3
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: make_edge at cfg.c:341:1
+  Occurrences: 5
+
+Uncategorised
+  Before events:
+    RF: make_tree_vector at c-common.c:9319:1
+  Occurrences: 2
+
+Uncategorised
+  Before events:
+    RF: mark_jump_label at jump.c:1031:1
+  Occurrences: 26
+
+Uncategorised
+  Before events:
+    RF: mark_nonreg_stores_1 at dce.c:195:1
+    RF: note_stores at rtlanal.c:1467:1
+  Occurrences: 6
+
+Uncategorised
+  Before events:
+    RF: mark_nonreg_stores_2 at dce.c:206:1
+    RF: note_stores at rtlanal.c:1467:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: mark_sym_for_renaming at tree-into-ssa.c:2893:1
+  Occurrences: 2
+
+Uncategorised
+  Before events:
+    RF: may_trap_p at rtlanal.c:2366:3
+  Occurrences: 10
+
+Uncategorised
+  Before events:
+    RF: may_trap_p_1 at rtlanal.c:2359:1
+  Occurrences: 6
+
+Uncategorised
+  Before events:
+    RF: maybe_clean_eh_stmt at tree-eh.c:2597:3
+  Occurrences: 7
+
+Uncategorised
+  Before events:
+    RF: maybe_fold_offset_to_address at tree-ssa-ccp.c:2157:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: memory_operand at recog.c:1316:1
+  Occurrences: 339
+
+Uncategorised
+  Before events:
+    RF: merge_blocks at cfghooks.c:721:1
+  Occurrences: 3
+
+Uncategorised
+  Before events:
+    RF: move_block_after at cfghooks.c:490:3
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: note_stores at rtlanal.c:1467:1
+  Occurrences: 128
+
+Uncategorised
+  Before events:
+    RF: note_stores at rtlanal.c:1467:1
+    CF: combine_instructions at combine.c:1094:6
+    CT: record_dead_and_set_regs at combine.c:11849:0
+    CF: record_dead_and_set_regs at combine.c:11897:7
+    CT: note_stores at rtlanal.c:1435:0
+    CF: note_stores at rtlanal.c:1461:2
+    CT: record_dead_and_set_regs_1 at combine.c:11800:0
+    CF: record_dead_and_set_regs_1 at combine.c:11809:2
+    CT: record_value_for_reg at combine.c:11684:0
+    CF: record_value_for_reg at combine.c:11729:13
+    CT: VEC_reg_stat_type_base_index at combine.c:255:0
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: note_stores at rtlanal.c:1467:1
+    CF: copyprop_hardreg_forward_1 at regcprop.c:765:7
+    CT: extract_insn at recog.c:2038:0
+    CF: extract_insn at recog.c:2101:15
+    CT: recog_memoized at recog.h:151:0
+    CF: recog_memoized at recog.h:153:24
+    CT: recog at insn-recog.c:92506:0
+    CF: recog at insn-recog.c:92545:10
+    CT: recog_32 at insn-recog.c:42771:0
+    CF: recog_32 at insn-recog.c:43050:9
+    CT: recog_2 at insn-recog.c:1745:0
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: note_stores at rtlanal.c:1467:1
+    RF: record_dead_and_set_regs at combine.c:11901:1
+  Occurrences: 2
+
+Uncategorised
+  Before events:
+    RF: note_uses at rtlanal.c:1556:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: output_dependence at alias.c:2545:3
+  Occurrences: 3
+
+Uncategorised
+  Before events:
+    RF: output_file_directive at toplev.c:736:1
+    RF: default_file_start at varasm.c:6776:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: output_object_blocks at varasm.c:7046:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: output_quoted_string at toplev.c:703:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: output_section_asm_op at varasm.c:6802:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: partition_delete at partition.c:67:1
+  Occurrences: 5
+
+Uncategorised
+  Before events:
+    RF: partition_view_bitmap at tree-ssa-live.c:341:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: partition_view_fini at tree-ssa-live.c:294:1
+  Occurrences: 2
+
+Uncategorised
+  Before events:
+    RF: pass_by_reference at function.c:2023:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: phi_translate_set at tree-ssa-pre.c:1887:1
+  Occurrences: 2
+
+Uncategorised
+  Before events:
+    RF: pointer_map_destroy at pointer-set.c:222:1
+  Occurrences: 27
+
+Uncategorised
+  Before events:
+    RF: pointer_map_destroy at pointer-set.c:222:1
+    RF: sra_deinitialize at tree-sra.c:601:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: pointer_set_destroy at pointer-set.c:90:1
+  Occurrences: 9
+
+Uncategorised
+  Before events:
+    RF: pop_cfun at function.c:4095:1
+  Occurrences: 37
+
+Uncategorised
+  Before events:
+    RF: pop_cfun at function.c:4095:1
+    RF: analyze_function at ipa-inline.c:1956:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: pop_file_scope at c-decl.c:1328:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: print_operand at i386.c:12033:1
+  Occurrences: 12
+
+Uncategorised
+  Before events:
+    RF: print_operand_address at i386.c:12174:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: process_bb_node_for_costs at ira-costs.c:1161:1
+  Occurrences: 2
+
+Uncategorised
+  Before events:
+    RF: promote_function_mode at explow.c:781:1
+  Occurrences: 2
+
+Uncategorised
+  Before events:
+    RF: propagate_value at tree-ssa-copy.c:190:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: push_cfun at function.c:4086:1
+  Occurrences: 38
 
 Uncategorised
   Before events:
@@ -52316,19 +53809,294 @@ Uncategorised
     RF: change_queue_index at haifa-sched.c:3921:1
   Occurrences: 4
 
+Uncategorised
+  Before events:
+    RF: real_from_integer at real.c:2187:1
+  Occurrences: 2
+
+Uncategorised
+  Before events:
+    RF: recog at insn-recog.c:93673:1
+  Occurrences: 3759
+
+Uncategorised
+  Before events:
+    RF: record_builtin_type at c-decl.c:8309:1
+  Occurrences: 18
+
+Uncategorised
+  Before events:
+    RF: record_dead_and_set_regs at combine.c:11901:1
+  Occurrences: 4
+
+Uncategorised
+  Before events:
+    RF: record_dead_and_set_regs_1 at combine.c:11835:1
+    RF: note_stores at rtlanal.c:1467:1
+  Occurrences: 2
+
+Uncategorised
+  Before events:
+    RF: record_truncated_values at combine.c:12030:1
+  Occurrences: 2
+
+Uncategorised
+  Before events:
+    RF: record_truncated_values at combine.c:12030:1
+    RF: note_uses at rtlanal.c:1556:1
+  Occurrences: 2
+
+Uncategorised
+  Before events:
+    RF: redirect_edge_succ at cfg.c:388:1
+  Occurrences: 2
+
+Uncategorised
+  Before events:
+    RF: register_include_chains at incpath.c:458:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: register_new_def at tree-into-ssa.c:1240:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: relink_block_chain at cfglayout.c:700:1
+  Occurrences: 2
+
+Uncategorised
+  Before events:
+    RF: reload_cse_regs_1 at postreload.c:215:1
+  Occurrences: 2
+
+Uncategorised
+  Before events:
+    RF: remove_edge_raw at cfg.c:371:1
+  Occurrences: 4
+
+Uncategorised
+  Before events:
+    RF: remove_edge_raw at cfg.c:371:1
+    RF: remove_edge at cfghooks.c:384:1
+  Occurrences: 2
+
+Uncategorised
+  Before events:
+    RF: replace_equiv_address at emit-rtl.c:2115:3
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: replace_equiv_address_nv at emit-rtl.c:2123:3
+  Occurrences: 2
+
+Uncategorised
+  Before events:
+    RF: replace_equiv_address_nv at emit-rtl.c:2123:3
+    RF: canon_rtx at alias.c:1325:1
+  Occurrences: 27
+
+Uncategorised
+  Before events:
+    RF: replace_equiv_address_nv at emit-rtl.c:2123:3
+    RF: eliminate_regs_1 at reload1.c:2939:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: returnjump_p at jump.c:915:1
+  Occurrences: 6
+
+Uncategorised
+  Before events:
+    RF: run_directive at cpp_directives.c:525:1
+  Occurrences: 194
+
+Uncategorised
+  Before events:
+    RF: run_fast_df_dce at dce.c:1102:1
+  Occurrences: 3
+
+Uncategorised
+  Before events:
+    RF: sd_find_dep_between at sched-deps.c:831:1
+  Occurrences: 4
+
+Uncategorised
+  Before events:
+    RF: set_cfun at function.c:4073:1
+  Occurrences: 2
+
+Uncategorised
+  Before events:
+    RF: set_decl_rtl at emit-rtl.c:1082:1
+  Occurrences: 19
+
+Uncategorised
+  Before events:
+    RF: set_mem_attributes at emit-rtl.c:1819:1
+  Occurrences: 3
+
+Uncategorised
+  Before events:
+    RF: shallow_copy_rtx_stat at rtl.c:342:3
+  Occurrences: 4
+
+Uncategorised
+  Before events:
+    RF: shorten_branches at final.c:1393:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: single_def_use_enter_block at fwprop.c:245:1
+  Occurrences: 4
+
+Uncategorised
+  Before events:
+    RF: size_binop_loc at fold-const.c:2200:1
+  Occurrences: 17
+
+Uncategorised
+  Before events:
+    RF: size_int_kind at fold-const.c:2154:3
+  Occurrences: 38
+
+Uncategorised
+  Before events:
+    RF: split_all_insns at recog.c:2865:1
+  Occurrences: 3
+
+Uncategorised
+  Before events:
+    RF: split_insns at insn-recog.c:109855:1
+  Occurrences: 9
+
+Uncategorised
+  Before events:
+    RF: sra_deinitialize at tree-sra.c:601:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: state_transition at insn-automata.c:11397:1
+  Occurrences: 18
+
+Uncategorised
+  Before events:
+    RF: statistics_fini_pass at statistics.c:195:1
+  Occurrences: 287
+
+Uncategorised
+  Before events:
+    RF: tree_lowering_passes at tree-optimize.c:373:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: tree_size at tree.c:774:1
+  Occurrences: 3
+
+Uncategorised
+  Before events:
+    RF: tree_ssa_cd_dce at tree-ssa-dce.c:1410:3
+  Occurrences: 2
+
+Uncategorised
+  Before events:
+    RF: tree_ssa_cs_elim at tree-ssa-phiopt.c:173:3
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: tree_ssa_dce at tree-ssa-dce.c:1391:3
+  Occurrences: 2
+
+Uncategorised
+  Before events:
+    RF: tree_ssa_phiopt at tree-ssa-phiopt.c:144:3
+  Occurrences: 3
+
+Uncategorised
+  Before events:
+    RF: useless_type_conversion_p at tree-ssa.c:1453:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: useless_type_conversion_p at tree-ssa.c:1453:1
+    RF: tree_ssa_useless_type_conversion at tree-ssa.c:1484:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: validate_change at recog.c:255:3
+  Occurrences: 18
+
+Uncategorised
+  Before events:
+    RF: validate_unshare_change at recog.c:264:3
+  Occurrences: 5
+
+Uncategorised
+  Before events:
+    RF: varpool_remove_unreferenced_decls at varpool.c:449:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: vec_gc_p_reserve at vec.c:255:3
+  Occurrences: 20
+
+Uncategorised
+  Before events:
+    RF: vec_heap_o_reserve at vec.c:361:3
+  Occurrences: 39
+
+Uncategorised
+  Before events:
+    RF: vec_heap_p_reserve at vec.c:338:3
+  Occurrences: 33
+
+Uncategorised
+  Before events:
+    RF: visit_use at tree-ssa-sccvn.c:2697:3
+  Occurrences: 2
+
+Uncategorised
+  Before events:
+    RF: walk_dominator_tree at domwalk.c:221:1
+  Occurrences: 11
+
+Uncategorised
+  Before events:
+    RF: walk_stmt_load_store_ops at gimple.c:4527:3
+  Occurrences: 6
+
+Uncategorised
+  Before events:
+    RF: xstrdup at xstrdup.c:35:3
+  Occurrences: 3
+
 ## Divergences with unique coordinates by type
 
+Tail call without info
+  Unique divergence coordinates: 6
+  Divergence countable events: 6
+
 Coordinates removed
-  Unique divergence coordinates: 1916
-  Divergence countable events: 1916
+  Unique divergence coordinates: 1590
+  Divergence countable events: 1590
 
 Coordinates changed (small)
-  Unique divergence coordinates: 2554
-  Divergence countable events: 2554
+  Unique divergence coordinates: 2558
+  Divergence countable events: 2558
 
 Coordinates changed (large)
-  Unique divergence coordinates: 260
-  Divergence countable events: 260
+  Unique divergence coordinates: 263
+  Divergence countable events: 263
 
 Library call replaced
   Unique divergence coordinates: 10
@@ -52339,30 +54107,30 @@ Library call inlined
   Divergence countable events: 2
 
 Library call removed
-  Unique divergence coordinates: 124
-  Divergence countable events: 372
+  Unique divergence coordinates: 122
+  Divergence countable events: 366
 
 Program call removed
-  Unique divergence coordinates: 771
-  Divergence countable events: 6960
+  Unique divergence coordinates: 772
+  Divergence countable events: 7256
 
 Inlined reentry added
-  Unique divergence coordinates: 86
-  Divergence countable events: 172
+  Unique divergence coordinates: 85
+  Divergence countable events: 170
 
 Inlined noise added
-  Unique divergence coordinates: 163
-  Divergence countable events: 326
+  Unique divergence coordinates: 155
+  Divergence countable events: 310
 
 Inlined return added
-  Unique divergence coordinates: 21
-  Divergence countable events: 10693
+  Unique divergence coordinates: 23
+  Divergence countable events: 10629
 
 Uncategorised
-  Unique divergence coordinates: 1630
-  Divergence countable events: 2386
+  Unique divergence coordinates: 2364
+  Divergence countable events: 3280
 
 ## Summary
 
-7537 unique divergence coordinates
-682091 divergence occurrences
+7950 unique divergence coordinates
+699473 divergence occurrences

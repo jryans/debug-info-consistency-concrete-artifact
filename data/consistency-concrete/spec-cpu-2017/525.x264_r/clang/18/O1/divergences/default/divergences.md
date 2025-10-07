@@ -289,13 +289,6 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: close_file at x264_src/output/raw.c:63:1
-  After events:
-    RF: close_file at x264_src/output/raw.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
     RF: copy_column8 at x264_src/common/macroblock.c:492:1
   After events:
     IRF: copy_column8 at x264_src/common/macroblock.c:0:0
@@ -380,13 +373,6 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: memzero_aligned at x264_src/common/mc.c:320:1
-  After events:
-    RF: memzero_aligned at x264_src/common/mc.c:0:0
-  Occurrences: 16
-
-Coordinates removed
-  Before events:
     RF: pack8to16 at macroblock.h:329:4
   After events:
     IRF: pack8to16 at macroblock.h:0:13
@@ -443,17 +429,10 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: sub16x16_dct at x264_src/common/dct.c:160:1
-  After events:
-    RF: sub16x16_dct at x264_src/common/dct.c:0:0
-  Occurrences: 32
-
-Coordinates removed
-  Before events:
     RF: sub8x8_dct at x264_src/common/dct.c:152:1
   After events:
     IRF: sub8x8_dct at x264_src/common/dct.c:0:0
-  Occurrences: 226
+  Occurrences: 128
 
 Coordinates removed
   Before events:
@@ -461,13 +440,6 @@ Coordinates removed
   After events:
     IRF: update_vbv at x264_src/encoder/ratecontrol.c:0:0
   Occurrences: 1
-
-Coordinates removed
-  Before events:
-    RF: x264_analyse_update_cache at x264_src/encoder/analyse.c:3477:1
-  After events:
-    RF: x264_analyse_update_cache at x264_src/encoder/analyse.c:0:0
-  Occurrences: 49
 
 Coordinates removed
   Before events:
@@ -562,13 +534,6 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: x264_cabac_mb_type_intra at x264_src/encoder/cabac.c:68:1
-  After events:
-    RF: x264_cabac_mb_type_intra at x264_src/encoder/cabac.c:0:0
-  Occurrences: 16
-
-Coordinates removed
-  Before events:
     RF: x264_cabac_pos at cabac.h:78:5
   After events:
     IRF: x264_cabac_pos at cabac.h:0:12
@@ -625,13 +590,6 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: x264_encoder_parameters at x264_src/encoder/encoder.c:1234:1
-  After events:
-    RF: x264_encoder_parameters at x264_src/encoder/encoder.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
     RF: x264_exp2fix8 at common.h:269:1
   After events:
     IRF: x264_exp2fix8 at common.h:0:0
@@ -639,37 +597,16 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: x264_frame_delete at x264_src/common/frame.c:217:1
-  After events:
-    RF: x264_frame_delete at x264_src/common/frame.c:0:0
-  Occurrences: 2
-
-Coordinates removed
-  Before events:
     RF: x264_frame_delete_list at x264_src/common/frame.c:515:1
   After events:
     IRF: x264_frame_delete_list at x264_src/common/frame.c:0:0
-  Occurrences: 7
+  Occurrences: 3
 
 Coordinates removed
   Before events:
     RF: x264_free at x264_src/common/common.c:1138:1
   After events:
-    RF: x264_free at x264_src/common/common.c:0:0
-  Occurrences: 196
-
-Coordinates removed
-  Before events:
-    RF: x264_log_default at x264_src/common/common.c:1010:1
-  After events:
-    RF: x264_log_default at x264_src/common/common.c:0:0
-  Occurrences: 9
-
-Coordinates removed
-  Before events:
-    RF: x264_lookahead_delete at x264_src/encoder/lookahead.c:185:1
-  After events:
-    RF: x264_lookahead_delete at x264_src/encoder/lookahead.c:0:0
+    IRF: x264_free at x264_src/common/common.c:0:0
   Occurrences: 1
 
 Coordinates removed
@@ -681,23 +618,9 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: x264_lookahead_put_frame at x264_src/encoder/lookahead.c:193:1
-  After events:
-    RF: x264_lookahead_put_frame at x264_src/encoder/lookahead.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
     RF: x264_lookahead_shift at x264_src/encoder/lookahead.c:55:1
   After events:
     IRF: x264_lookahead_shift at x264_src/encoder/lookahead.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
-    RF: x264_macroblock_cache_free at x264_src/common/macroblock.c:322:1
-  After events:
-    RF: x264_macroblock_cache_free at x264_src/common/macroblock.c:0:0
   Occurrences: 1
 
 Coordinates removed
@@ -727,13 +650,6 @@ Coordinates removed
   After events:
     IRF: x264_macroblock_store_pic at x264_src/common/macroblock.c:0:0
   Occurrences: 32
-
-Coordinates removed
-  Before events:
-    RF: x264_macroblock_thread_free at x264_src/common/macroblock.c:369:1
-  After events:
-    RF: x264_macroblock_thread_free at x264_src/common/macroblock.c:0:0
-  Occurrences: 1
 
 Coordinates removed
   Before events:
@@ -796,7 +712,7 @@ Coordinates removed
     RF: x264_prefetch_fenc at x264_src/common/macroblock.c:485:1
   After events:
     IRF: x264_prefetch_fenc at x264_src/common/macroblock.c:0:0
-  Occurrences: 48
+  Occurrences: 32
 
 Coordinates removed
   Before events:
@@ -818,13 +734,6 @@ Coordinates removed
   After events:
     IRF: x264_quant_8x8 at x264_src/encoder/macroblock.c:0:0
   Occurrences: 64
-
-Coordinates removed
-  Before events:
-    RF: x264_ratecontrol_delete at x264_src/encoder/ratecontrol.c:1057:1
-  After events:
-    RF: x264_ratecontrol_delete at x264_src/encoder/ratecontrol.c:0:0
-  Occurrences: 1
 
 Coordinates removed
   Before events:
@@ -867,13 +776,6 @@ Coordinates removed
   After events:
     IRF: x264_slice_write at x264_src/encoder/encoder.c:0:0
   Occurrences: 1
-
-Coordinates removed
-  Before events:
-    RF: x264_synch_frame_list_delete at x264_src/common/frame.c:539:1
-  After events:
-    RF: x264_synch_frame_list_delete at x264_src/common/frame.c:0:0
-  Occurrences: 3
 
 Coordinates removed
   Before events:
@@ -993,13 +895,6 @@ Coordinates changed (small)
   After events:
     ICF: x264_cabac_mb_type_intra at cabac.c:54:9
   Occurrences: 8
-
-Coordinates changed (small)
-  Before events:
-    CF: x264_encoder_close at x264_src/encoder/encoder.c:3037:17
-  After events:
-    CF: x264_encoder_close at x264_src/encoder/encoder.c:3036:17
-  Occurrences: 1
 
 Coordinates changed (small)
   Before events:
@@ -1621,7 +1516,7 @@ Coordinates changed (small)
   Before events:
     CT: x264_cabac_encode_init at x264_src/common/cabac.c:780:0
   After events:
-    ICT: x264_cabac_encode_init at x264_src/common/cabac.c:779:0
+    CT: x264_cabac_encode_init at x264_src/common/cabac.c:779:0
   Occurrences: 1
 
 Coordinates changed (small)
@@ -1642,7 +1537,7 @@ Coordinates changed (small)
   Before events:
     CT: x264_cabac_encode_terminal_c at x264_src/common/cabac.c:872:0
   After events:
-    ICT: x264_cabac_encode_terminal_c at x264_src/common/cabac.c:871:0
+    CT: x264_cabac_encode_terminal_c at x264_src/common/cabac.c:871:0
   Occurrences: 31
 
 Coordinates changed (small)
@@ -1803,7 +1698,7 @@ Coordinates changed (small)
   Before events:
     CT: x264_coeff_last4 at x264_src/common/quant.c:229:0
   After events:
-    ICT: x264_coeff_last4 at x264_src/common/quant.c:228:0
+    CT: x264_coeff_last4 at x264_src/common/quant.c:228:0
   Occurrences: 16
 
 Coordinates changed (small)
@@ -2272,7 +2167,7 @@ Coordinates changed (small)
   Before events:
     CT: x264_sps_write at x264_src/encoder/set.c:242:0
   After events:
-    ICT: x264_sps_write at x264_src/encoder/set.c:241:0
+    CT: x264_sps_write at x264_src/encoder/set.c:241:0
   Occurrences: 1
 
 Coordinates changed (small)
@@ -3104,10 +2999,8 @@ Coordinates changed (large)
 Library call replaced
   Before events:
     CT: Jump to external code for fprintf
-    RF: Jump to external code for fprintf
   After events:
     CT: Jump to external code for fwrite
-    RF: Jump to external code for fwrite
   Occurrences: 1
 
 Library call replaced
@@ -3134,6 +3027,13 @@ Library call replaced
     CT: Jump to external code for memcpy
     RF: Jump to external code for memcpy
   Occurrences: 93
+
+Library call replaced
+  Before events:
+    RF: Jump to external code for fprintf
+  After events:
+    RF: Jump to external code for fwrite
+  Occurrences: 1
 
 Library call replaced
   Before events:
@@ -3221,13 +3121,6 @@ Library call removed
 
 Library call removed
   Before events:
-    CF: memzero_aligned at x264_src/common/mc.c:319:5
-    CT: Jump to external code for memset
-    RF: Jump to external code for memset
-  Occurrences: 16
-
-Library call removed
-  Before events:
     CF: plane_expand_border at x264_src/common/frame.c:264:9
     CT: Jump to external code for memset
     RF: Jump to external code for memset
@@ -3291,7 +3184,7 @@ Library call removed
 
 Library call removed
   Before events:
-    CF: x264_encoder_close at x264_src/encoder/encoder.c:3036:17
+    CF: x264_encoder_close at x264_src/encoder/encoder.c:3037:17
     CT: Jump to external code for memset
     RF: Jump to external code for memset
   Occurrences: 1
@@ -3399,7 +3292,7 @@ Program call removed
     CF: endian_fix64 at osdep.h:277:12
     CT: endian_fix32 at osdep.h:263:0
     RF: endian_fix32 at osdep.h:264:5
-  Occurrences: 6
+  Occurrences: 7
 
 Program call removed
   Before events:
@@ -3409,14 +3302,14 @@ Program call removed
     CF: endian_fix64 at osdep.h:277:45
     CT: endian_fix32 at osdep.h:263:0
     RF: endian_fix32 at osdep.h:264:5
-  Occurrences: 157
+  Occurrences: 156
 
 Program call removed
   Before events:
     CF: endian_fix64 at osdep.h:277:45
     CT: endian_fix32 at osdep.h:263:0
     RF: endian_fix32 at osdep.h:264:5
-  Occurrences: 6
+  Occurrences: 7
 
 Program call removed
   Before events:
@@ -3635,33 +3528,21 @@ Program call removed
 
 Inlined reentry added
   After events:
-    IRF: ac_energy_plane at x264_src/encoder/ratecontrol.c:213:13
-    ICT: ac_energy_plane at x264_src/encoder/ratecontrol.c:206:0
-  Occurrences: 1
-
-Inlined reentry added
-  After events:
-    IRF: ac_energy_plane at x264_src/encoder/ratecontrol.c:215:12
-    ICT: ac_energy_plane at x264_src/encoder/ratecontrol.c:206:0
-  Occurrences: 1
-
-Inlined reentry added
-  After events:
     IRF: ac_energy_plane at x264_src/encoder/ratecontrol.c:216:20
     ICT: ac_energy_plane at x264_src/encoder/ratecontrol.c:206:0
-  Occurrences: 22
+  Occurrences: 21
 
 Inlined reentry added
   After events:
     IRF: ac_energy_plane at x264_src/encoder/ratecontrol.c:219:16
     ICT: ac_energy_plane at x264_src/encoder/ratecontrol.c:206:0
-  Occurrences: 9
+  Occurrences: 10
 
 Inlined reentry added
   After events:
     IRF: ac_energy_plane at x264_src/encoder/ratecontrol.c:219:23
     ICT: ac_energy_plane at x264_src/encoder/ratecontrol.c:206:0
-  Occurrences: 11
+  Occurrences: 10
 
 Inlined reentry added
   After events:
@@ -3671,15 +3552,15 @@ Inlined reentry added
 
 Inlined reentry added
   After events:
-    IRF: bs_pos at bs.h:90:11
-    ICT: bs_pos at bs.h:88:0
+    IRF: bs_size_ue_big at bs.h:0:0
+    ICT: bs_size_ue_big at bs.h:270:0
   Occurrences: 1
 
 Inlined reentry added
   After events:
     IRF: idct_dequant_2x2_dconly at x264_src/encoder/macroblock.c:0:18
     ICT: idct_dequant_2x2_dconly at x264_src/encoder/macroblock.c:56:0
-  Occurrences: 4
+  Occurrences: 1
 
 Inlined reentry added
   After events:
@@ -3689,39 +3570,45 @@ Inlined reentry added
 
 Inlined reentry added
   After events:
+    IRF: idct_dequant_round_2x2_dc at x264_src/encoder/macroblock.c:0:0
+    ICT: idct_dequant_round_2x2_dc at x264_src/encoder/macroblock.c:265:0
+  Occurrences: 2
+
+Inlined reentry added
+  After events:
     IRF: pixel_sub_wxh at x264_src/common/dct.c:0:0
     ICT: pixel_sub_wxh at x264_src/common/dct.c:100:0
-  Occurrences: 578
+  Occurrences: 559
 
 Inlined reentry added
   After events:
     IRF: plane_expand_border at x264_src/common/frame.c:0:0
     ICT: plane_expand_border at x264_src/common/frame.c:258:0
-  Occurrences: 3
+  Occurrences: 4
+
+Inlined reentry added
+  After events:
+    IRF: ssd_plane at rdo.c:150:12
+    ICT: ssd_plane at rdo.c:126:0
+  Occurrences: 2
 
 Inlined reentry added
   After events:
     IRF: x264_cabac_encode_renorm at x264_src/common/cabac.c:823:17
     ICT: x264_cabac_encode_renorm at x264_src/common/cabac.c:819:0
-  Occurrences: 2
-
-Inlined reentry added
-  After events:
-    IRF: x264_cabac_putbyte at x264_src/common/cabac.c:0:0
-    ICT: x264_cabac_putbyte at x264_src/common/cabac.c:787:0
-  Occurrences: 1
+  Occurrences: 3
 
 Inlined reentry added
   After events:
     IRF: x264_cabac_putbyte at x264_src/common/cabac.c:789:21
     ICT: x264_cabac_putbyte at x264_src/common/cabac.c:787:0
-  Occurrences: 32
+  Occurrences: 35
 
 Inlined reentry added
   After events:
     IRF: x264_cabac_size_decision at cabac.h:0:0
     ICT: x264_cabac_size_decision at cabac.h:83:0
-  Occurrences: 9
+  Occurrences: 13
 
 Inlined reentry added
   After events:
@@ -3731,45 +3618,57 @@ Inlined reentry added
 
 Inlined reentry added
   After events:
-    IRF: x264_cabac_size_decision at cabac.h:87:25
-    ICT: x264_cabac_size_decision at cabac.h:83:0
-  Occurrences: 1
-
-Inlined reentry added
-  After events:
-    IRF: x264_cabac_size_decision2 at cabac.h:94:12
-    ICT: x264_cabac_size_decision2 at cabac.h:90:0
-  Occurrences: 1
-
-Inlined reentry added
-  After events:
     IRF: x264_cabac_size_decision_noup at cabac.h:100:54
     ICT: x264_cabac_size_decision_noup at cabac.h:97:0
-  Occurrences: 2
+  Occurrences: 3
 
 Inlined reentry added
   After events:
     IRF: x264_mb_analyse_init_qp at x264_src/encoder/analyse.c:336:54
     ICT: x264_mb_analyse_init_qp at x264_src/encoder/analyse.c:327:0
-  Occurrences: 1
+  Occurrences: 2
 
 Inlined reentry added
   After events:
     IRF: x264_mb_predict_intra4x4_mode at macroblock.h:0:9
     ICT: x264_mb_predict_intra4x4_mode at macroblock.h:366:0
-  Occurrences: 2
+  Occurrences: 3
+
+Inlined reentry added
+  After events:
+    IRF: x264_mb_predict_intra4x4_mode at macroblock.h:370:20
+    ICT: x264_mb_predict_intra4x4_mode at macroblock.h:366:0
+  Occurrences: 1
 
 Inlined noise added
   After events:
     ICT: ac_energy_plane at x264_src/encoder/ratecontrol.c:206:0
     IRF: ac_energy_plane at x264_src/encoder/ratecontrol.c:215:12
-  Occurrences: 11
+  Occurrences: 12
 
 Inlined noise added
   After events:
     ICT: ac_energy_plane at x264_src/encoder/ratecontrol.c:206:0
     IRF: ac_energy_plane at x264_src/encoder/ratecontrol.c:219:16
+  Occurrences: 1
+
+Inlined noise added
+  After events:
+    ICT: ac_energy_plane at x264_src/encoder/ratecontrol.c:206:0
+    IRF: ac_energy_plane at x264_src/encoder/ratecontrol.c:219:29
   Occurrences: 2
+
+Inlined noise added
+  After events:
+    ICT: bs_size_ue_big at bs.h:270:0
+    IRF: bs_size_ue_big at bs.h:275:45
+  Occurrences: 1
+
+Inlined noise added
+  After events:
+    ICT: bs_write at bs.h:113:0
+    IRF: bs_write at bs.h:0:0
+  Occurrences: 1
 
 Inlined noise added
   After events:
@@ -3791,9 +3690,15 @@ Inlined noise added
 
 Inlined noise added
   After events:
+    ICT: idct_dequant_2x2_dconly at x264_src/encoder/macroblock.c:56:0
+    IRF: idct_dequant_2x2_dconly at x264_src/encoder/macroblock.c:59:24
+  Occurrences: 2
+
+Inlined noise added
+  After events:
     ICT: idct_dequant_round_2x2_dc at x264_src/encoder/macroblock.c:265:0
     IRF: idct_dequant_round_2x2_dc at x264_src/encoder/macroblock.c:0:0
-  Occurrences: 5
+  Occurrences: 3
 
 Inlined noise added
   After events:
@@ -3805,43 +3710,37 @@ Inlined noise added
   After events:
     ICT: pixel_sub_wxh at x264_src/common/dct.c:100:0
     IRF: pixel_sub_wxh at x264_src/common/dct.c:0:0
-  Occurrences: 509
-
-Inlined noise added
-  After events:
-    ICT: plane_expand_border at x264_src/common/frame.c:258:0
-    IRF: plane_expand_border at x264_src/common/frame.c:0:0
-  Occurrences: 2
+  Occurrences: 534
 
 Inlined noise added
   After events:
     ICT: ssd_mb at rdo.c:153:0
     IRF: ssd_mb at rdo.c:157:47
-  Occurrences: 13
+  Occurrences: 12
 
 Inlined noise added
   After events:
     ICT: ssd_plane at rdo.c:126:0
     IRF: ssd_plane at rdo.c:150:68
-  Occurrences: 4
+  Occurrences: 1
 
 Inlined noise added
   After events:
     ICT: x264_cabac_mb_cbp_luma at cabac.c:216:0
     IRF: x264_cabac_mb_cbp_luma at cabac.c:0:0
-  Occurrences: 7
+  Occurrences: 8
 
 Inlined noise added
   After events:
     ICT: x264_cabac_pos at cabac.h:76:0
     IRF: x264_cabac_pos at cabac.h:78:12
-  Occurrences: 7
+  Occurrences: 10
 
 Inlined noise added
   After events:
     ICT: x264_cabac_putbyte at x264_src/common/cabac.c:787:0
     IRF: x264_cabac_putbyte at x264_src/common/cabac.c:0:0
-  Occurrences: 31
+  Occurrences: 28
 
 Inlined noise added
   After events:
@@ -3853,19 +3752,25 @@ Inlined noise added
   After events:
     ICT: x264_cabac_putbyte at x264_src/common/cabac.c:787:0
     IRF: x264_cabac_putbyte at x264_src/common/cabac.c:814:37
-  Occurrences: 1
+  Occurrences: 2
 
 Inlined noise added
   After events:
     ICT: x264_cabac_size_decision at cabac.h:83:0
     IRF: x264_cabac_size_decision at cabac.h:0:0
-  Occurrences: 9
+  Occurrences: 6
 
 Inlined noise added
   After events:
     ICT: x264_cabac_size_decision at cabac.h:83:0
     IRF: x264_cabac_size_decision at cabac.h:87:25
-  Occurrences: 10
+  Occurrences: 17
+
+Inlined noise added
+  After events:
+    ICT: x264_cabac_size_decision2 at cabac.h:90:0
+    IRF: x264_cabac_size_decision2 at cabac.h:93:12
+  Occurrences: 1
 
 Inlined noise added
   After events:
@@ -3883,13 +3788,13 @@ Inlined noise added
   After events:
     ICT: x264_mb_analyse_init_qp at x264_src/encoder/analyse.c:327:0
     IRF: x264_mb_analyse_init_qp at x264_src/encoder/analyse.c:346:35
-  Occurrences: 2
+  Occurrences: 1
 
 Inlined noise added
   After events:
     ICT: x264_mb_init_fenc_cache at x264_src/encoder/analyse.c:565:0
     IRF: x264_mb_init_fenc_cache at x264_src/encoder/analyse.c:0:0
-  Occurrences: 8
+  Occurrences: 4
 
 Inlined noise added
   After events:
@@ -3930,7 +3835,7 @@ Inlined return added
     ICT: x264_cabac_size_decision at cabac.h:83:0
     IRF: x264_cabac_size_decision at cabac.h:87:25
     IRF: x264_cabac_mb_intra4x4_pred_mode at cabac.c:0:0
-  Occurrences: 7
+  Occurrences: 9
 
 Inlined return added
   After events:
@@ -3950,7 +3855,7 @@ Inlined return added
     ICT: x264_cabac_size_decision_noup at cabac.h:97:0
     IRF: x264_cabac_size_decision_noup at cabac.h:0:0
     IRF: x264_cabac_mb_type_intra at cabac.c:0:0
-  Occurrences: 5
+  Occurrences: 7
 
 Inlined return added
   After events:
@@ -4014,7 +3919,12 @@ Inlined return added
     ICT: x264_cabac_size_decision_noup at cabac.h:97:0
     IRF: x264_cabac_size_decision_noup at cabac.h:0:0
     IRF: x264_cabac_mb_type_intra at cabac.c:0:0
-  Occurrences: 5
+  Occurrences: 4
+
+Uncategorised
+  After events:
+    CF: Encode at x264_src/x264.c:1445:5
+  Occurrences: 1
 
 Uncategorised
   After events:
@@ -4052,13 +3962,7 @@ Uncategorised
 Uncategorised
   After events:
     ICF: ac_energy_mb at x264_src/encoder/ratecontrol.c:231:20
-  Occurrences: 5
-
-Uncategorised
-  After events:
-    ICF: ac_energy_mb at x264_src/encoder/ratecontrol.c:231:20
-    ICT: ac_energy_plane at x264_src/encoder/ratecontrol.c:206:0
-  Occurrences: 1
+  Occurrences: 6
 
 Uncategorised
   After events:
@@ -4080,13 +3984,13 @@ Uncategorised
 Uncategorised
   After events:
     ICF: idct_dequant_round_2x2_dc at x264_src/encoder/macroblock.c:268:5
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
     ICF: idct_dequant_round_2x2_dc at x264_src/encoder/macroblock.c:268:5
     ICT: idct_dequant_2x2_dconly at x264_src/encoder/macroblock.c:56:0
-  Occurrences: 1
+  Occurrences: 2
 
 Uncategorised
   After events:
@@ -4101,35 +4005,35 @@ Uncategorised
 Uncategorised
   After events:
     ICF: predict_8x8_hd at x264_src/common/predict.c:646:15
-  Occurrences: 11
+  Occurrences: 13
 
 Uncategorised
   After events:
     ICF: predict_8x8_hd at x264_src/common/predict.c:646:15
     ICT: pack8to16 at macroblock.h:324:0
-  Occurrences: 5
+  Occurrences: 3
 
 Uncategorised
   After events:
     ICF: predict_8x8_hd at x264_src/common/predict.c:647:15
-  Occurrences: 6
+  Occurrences: 10
 
 Uncategorised
   After events:
     ICF: predict_8x8_hd at x264_src/common/predict.c:647:15
     ICT: pack8to16 at macroblock.h:324:0
-  Occurrences: 4
+  Occurrences: 3
 
 Uncategorised
   After events:
     ICF: predict_8x8_hu at x264_src/common/predict.c:702:28
-  Occurrences: 13
+  Occurrences: 12
 
 Uncategorised
   After events:
     ICF: predict_8x8_hu at x264_src/common/predict.c:702:28
     ICT: pack16to32 at macroblock.h:316:0
-  Occurrences: 3
+  Occurrences: 4
 
 Uncategorised
   After events:
@@ -4145,6 +4049,7 @@ Uncategorised
 Uncategorised
   After events:
     CF: spec_strdup at x264_src/common/common.c:39:15
+    CT: Jump to external code for memcpy
   Occurrences: 2
 
 Uncategorised
@@ -4167,40 +4072,40 @@ Uncategorised
   After events:
     ICF: ssd_mb at rdo.c:155:56
     ICT: ssd_plane at rdo.c:126:0
-  Occurrences: 1
+  Occurrences: 3
 
 Uncategorised
   After events:
     ICF: ssd_mb at rdo.c:157:12
-  Occurrences: 28
+  Occurrences: 25
 
 Uncategorised
   After events:
     ICF: ssd_mb at rdo.c:157:12
     ICT: ssd_plane at rdo.c:126:0
-  Occurrences: 1
+  Occurrences: 2
 
 Uncategorised
   After events:
     ICF: sub4x4_dct at x264_src/common/dct.c:117:5
-  Occurrences: 712
+  Occurrences: 722
 
 Uncategorised
   After events:
     ICF: sub4x4_dct at x264_src/common/dct.c:117:5
     ICT: pixel_sub_wxh at x264_src/common/dct.c:100:0
-  Occurrences: 208
+  Occurrences: 198
 
 Uncategorised
   After events:
     ICF: sub8x8_dct8 at x264_src/common/dct.c:284:5
-  Occurrences: 45
+  Occurrences: 47
 
 Uncategorised
   After events:
     ICF: sub8x8_dct8 at x264_src/common/dct.c:284:5
     ICT: pixel_sub_wxh at x264_src/common/dct.c:100:0
-  Occurrences: 19
+  Occurrences: 17
 
 Uncategorised
   After events:
@@ -4215,96 +4120,101 @@ Uncategorised
 Uncategorised
   After events:
     ICF: x264_cabac_encode_renorm at x264_src/common/cabac.c:825:5
-  Occurrences: 69
+  Occurrences: 73
 
 Uncategorised
   After events:
     ICF: x264_cabac_encode_renorm at x264_src/common/cabac.c:825:5
     ICT: x264_cabac_putbyte at x264_src/common/cabac.c:787:0
-  Occurrences: 48
+  Occurrences: 42
 
 Uncategorised
   After events:
     ICF: x264_cabac_encode_terminal_c at x264_src/common/cabac.c:874:5
-  Occurrences: 14
+  Occurrences: 12
 
 Uncategorised
   After events:
     ICF: x264_cabac_encode_terminal_c at x264_src/common/cabac.c:874:5
     ICT: x264_cabac_encode_renorm at x264_src/common/cabac.c:819:0
-  Occurrences: 1
+  Occurrences: 3
 
 Uncategorised
   After events:
     ICF: x264_cabac_encode_ue_bypass at x264_src/common/cabac.c:866:9
-    ICT: x264_cabac_putbyte at x264_src/common/cabac.c:787:0
   Occurrences: 1
 
 Uncategorised
   After events:
     ICF: x264_cabac_mb_cbp_chroma at cabac.c:0:0
-  Occurrences: 6
+  Occurrences: 5
 
 Uncategorised
   After events:
     ICF: x264_cabac_mb_cbp_chroma at cabac.c:0:0
     ICT: x264_cabac_size_decision_noup at cabac.h:97:0
-  Occurrences: 4
-
-Uncategorised
-  After events:
-    ICF: x264_cabac_mb_intra4x4_pred_mode at cabac.c:0:0
-  Occurrences: 45
-
-Uncategorised
-  After events:
-    ICF: x264_cabac_mb_intra4x4_pred_mode at cabac.c:0:0
-    ICT: x264_cabac_size_decision at cabac.h:83:0
-  Occurrences: 6
-
-Uncategorised
-  After events:
-    ICF: x264_cabac_mb_intra4x4_pred_mode at cabac.c:184:9
-  Occurrences: 6
-
-Uncategorised
-  After events:
-    ICF: x264_cabac_mb_intra4x4_pred_mode at cabac.c:184:9
-    ICT: x264_cabac_size_decision at cabac.h:83:0
-  Occurrences: 4
-
-Uncategorised
-  After events:
-    ICF: x264_cabac_mb_type_intra at cabac.c:0:0
-  Occurrences: 4
-
-Uncategorised
-  After events:
-    ICF: x264_cabac_mb_type_intra at cabac.c:0:0
-    ICT: x264_cabac_size_decision_noup at cabac.h:97:0
-  Occurrences: 2
-
-Uncategorised
-  After events:
-    ICF: x264_cabac_mb_type_intra at cabac.c:41:9
   Occurrences: 5
 
 Uncategorised
   After events:
-    ICF: x264_cabac_mb_type_intra at cabac.c:41:9
-    ICT: x264_cabac_size_decision_noup at cabac.h:97:0
-  Occurrences: 2
+    ICF: x264_cabac_mb_intra4x4_pred_mode at cabac.c:0:0
+  Occurrences: 39
 
 Uncategorised
   After events:
-    ICF: x264_cabac_mb_type_intra at cabac.c:57:9
+    ICF: x264_cabac_mb_intra4x4_pred_mode at cabac.c:0:0
+    ICT: x264_cabac_size_decision at cabac.h:83:0
+  Occurrences: 3
+
+Uncategorised
+  After events:
+    ICF: x264_cabac_mb_intra4x4_pred_mode at cabac.c:184:9
   Occurrences: 6
 
 Uncategorised
   After events:
-    ICF: x264_cabac_mb_type_intra at cabac.c:57:9
+    ICF: x264_cabac_mb_intra4x4_pred_mode at cabac.c:184:9
+    ICT: x264_cabac_size_decision at cabac.h:83:0
+  Occurrences: 4
+
+Uncategorised
+  After events:
+    ICF: x264_cabac_mb_type_intra at cabac.c:0:0
+  Occurrences: 2
+
+Uncategorised
+  After events:
+    ICF: x264_cabac_mb_type_intra at cabac.c:0:0
     ICT: x264_cabac_size_decision_noup at cabac.h:97:0
   Occurrences: 3
+
+Uncategorised
+  After events:
+    ICF: x264_cabac_mb_type_intra at cabac.c:41:9
+  Occurrences: 4
+
+Uncategorised
+  After events:
+    ICF: x264_cabac_mb_type_intra at cabac.c:41:9
+    ICT: x264_cabac_size_decision_noup at cabac.h:97:0
+  Occurrences: 3
+
+Uncategorised
+  After events:
+    ICF: x264_cabac_mb_type_intra at cabac.c:57:9
+  Occurrences: 8
+
+Uncategorised
+  After events:
+    ICF: x264_cabac_mb_type_intra at cabac.c:57:9
+    ICT: x264_cabac_size_decision_noup at cabac.h:97:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    ICF: x264_cabac_mb_type_intra at cabac.c:66:9
+    ICT: x264_cabac_size_decision_noup at cabac.h:97:0
+  Occurrences: 1
 
 Uncategorised
   After events:
@@ -4323,25 +4233,30 @@ Uncategorised
 
 Uncategorised
   After events:
+    ICF: x264_macroblock_analyse at x264_src/encoder/analyse.c:2587:13
+  Occurrences: 16
+
+Uncategorised
+  After events:
     ICF: x264_macroblock_cache_save at x264_src/common/macroblock.c:1046:5
-  Occurrences: 9
+  Occurrences: 12
 
 Uncategorised
   After events:
     ICF: x264_macroblock_cache_save at x264_src/common/macroblock.c:1046:5
     ICT: x264_macroblock_store_pic at x264_src/common/macroblock.c:1018:0
-  Occurrences: 7
+  Occurrences: 4
 
 Uncategorised
   After events:
     ICF: x264_macroblock_size_cabac at cabac.c:927:9
-  Occurrences: 13
+  Occurrences: 8
 
 Uncategorised
   After events:
     ICF: x264_macroblock_size_cabac at cabac.c:927:9
     ICT: x264_cabac_mb_cbp_chroma at cabac.c:227:0
-  Occurrences: 2
+  Occurrences: 5
 
 Uncategorised
   After events:
@@ -4353,6 +4268,11 @@ Uncategorised
     ICF: x264_mb_analyse_init at x264_src/encoder/analyse.c:358:5
     ICT: x264_mb_analyse_init_qp at x264_src/encoder/analyse.c:327:0
   Occurrences: 2
+
+Uncategorised
+  After events:
+    CF: x264_mb_init_fenc_cache at x264_src/encoder/analyse.c:572:5
+  Occurrences: 16
 
 Uncategorised
   After events:
@@ -4394,49 +4314,51 @@ Uncategorised
 Uncategorised
   After events:
     ICF: x264_validate_parameters at x264_src/encoder/encoder.c:708:42
+    ICT: x264_clip3 at common.h:200:0
   Occurrences: 1
 
 Uncategorised
   After events:
     CT: Jump to external code for exp2
-  Occurrences: 2
+  Occurrences: 1
 
 Uncategorised
   After events:
-    CT: Jump to external code for memcpy
-  Occurrences: 2
+    CT: Jump to external code for exp2
+    RF: Jump to external code for exp2
+  Occurrences: 1
 
 Uncategorised
   After events:
     ICT: ac_energy_plane at x264_src/encoder/ratecontrol.c:206:0
-  Occurrences: 23
+  Occurrences: 24
 
 Uncategorised
   After events:
     ICT: ac_energy_plane at x264_src/encoder/ratecontrol.c:206:0
     IRF: ac_energy_plane at x264_src/encoder/ratecontrol.c:213:13
-  Occurrences: 10
+  Occurrences: 11
 
 Uncategorised
   After events:
     ICT: bs_pos at bs.h:88:0
-  Occurrences: 3
-
-Uncategorised
-  After events:
-    ICT: bs_size_ue_big at bs.h:270:0
   Occurrences: 4
 
 Uncategorised
   After events:
     ICT: bs_size_ue_big at bs.h:270:0
+  Occurrences: 3
+
+Uncategorised
+  After events:
+    ICT: bs_size_ue_big at bs.h:270:0
     IRF: bs_size_ue_big at bs.h:0:0
-  Occurrences: 2
+  Occurrences: 1
 
 Uncategorised
   After events:
     ICT: bs_write at bs.h:113:0
-  Occurrences: 2
+  Occurrences: 1
 
 Uncategorised
   After events:
@@ -4446,7 +4368,13 @@ Uncategorised
 Uncategorised
   After events:
     ICT: idct_dequant_2x2_dconly at x264_src/encoder/macroblock.c:56:0
-  Occurrences: 8
+  Occurrences: 7
+
+Uncategorised
+  After events:
+    ICT: idct_dequant_2x2_dconly at x264_src/encoder/macroblock.c:56:0
+    IRF: idct_dequant_2x2_dconly at x264_src/encoder/macroblock.c:0:18
+  Occurrences: 1
 
 Uncategorised
   After events:
@@ -4462,7 +4390,7 @@ Uncategorised
   After events:
     ICT: pack16to32 at macroblock.h:316:0
     IRF: pack16to32 at macroblock.h:321:13
-  Occurrences: 4
+  Occurrences: 3
 
 Uncategorised
   After events:
@@ -4473,29 +4401,23 @@ Uncategorised
   After events:
     ICT: pack8to16 at macroblock.h:324:0
     IRF: pack8to16 at macroblock.h:329:13
-  Occurrences: 7
+  Occurrences: 10
 
 Uncategorised
   After events:
     ICT: pixel_sub_wxh at x264_src/common/dct.c:100:0
-  Occurrences: 1782
+  Occurrences: 1772
 
 Uncategorised
   After events:
     ICT: pixel_sub_wxh at x264_src/common/dct.c:100:0
     IRF: pixel_sub_wxh at x264_src/common/dct.c:0:0
-  Occurrences: 112
+  Occurrences: 128
 
 Uncategorised
   After events:
     ICT: plane_expand_border at x264_src/common/frame.c:258:0
-  Occurrences: 18
-
-Uncategorised
-  After events:
-    ICT: plane_expand_border at x264_src/common/frame.c:258:0
-    IRF: plane_expand_border at x264_src/common/frame.c:0:0
-  Occurrences: 1
+  Occurrences: 20
 
 Uncategorised
   After events:
@@ -4510,12 +4432,12 @@ Uncategorised
 Uncategorised
   After events:
     ICT: ssd_mb at rdo.c:153:0
-  Occurrences: 20
+  Occurrences: 21
 
 Uncategorised
   After events:
     ICT: ssd_plane at rdo.c:126:0
-  Occurrences: 24
+  Occurrences: 22
 
 Uncategorised
   After events:
@@ -4525,24 +4447,24 @@ Uncategorised
 Uncategorised
   After events:
     ICT: x264_cabac_encode_renorm at x264_src/common/cabac.c:819:0
-  Occurrences: 25
+  Occurrences: 19
 
 Uncategorised
   After events:
     ICT: x264_cabac_encode_renorm at x264_src/common/cabac.c:819:0
     ICF: x264_cabac_encode_renorm at x264_src/common/cabac.c:825:5
-  Occurrences: 2
+  Occurrences: 4
 
 Uncategorised
   After events:
     ICT: x264_cabac_encode_renorm at x264_src/common/cabac.c:819:0
     IRF: x264_cabac_encode_renorm at x264_src/common/cabac.c:823:17
-  Occurrences: 1
+  Occurrences: 2
 
 Uncategorised
   After events:
     ICT: x264_cabac_mb_cbp_chroma at cabac.c:227:0
-  Occurrences: 12
+  Occurrences: 9
 
 Uncategorised
   After events:
@@ -4553,18 +4475,18 @@ Uncategorised
 Uncategorised
   After events:
     ICT: x264_cabac_mb_cbp_luma at cabac.c:216:0
-  Occurrences: 10
+  Occurrences: 9
 
 Uncategorised
   After events:
     ICT: x264_cabac_mb_intra4x4_pred_mode at cabac.c:181:0
-  Occurrences: 3
+  Occurrences: 2
 
 Uncategorised
   After events:
     ICT: x264_cabac_mb_intra4x4_pred_mode at cabac.c:181:0
     ICF: x264_cabac_mb_intra4x4_pred_mode at cabac.c:0:0
-  Occurrences: 6
+  Occurrences: 5
 
 Uncategorised
   After events:
@@ -4574,46 +4496,40 @@ Uncategorised
 Uncategorised
   After events:
     ICT: x264_cabac_mb_type at cabac.c:70:0
-  Occurrences: 31
+  Occurrences: 30
 
 Uncategorised
   After events:
     ICT: x264_cabac_mb_type at cabac.c:70:0
     IRF: x264_cabac_mb_type at cabac.c:0:0
-  Occurrences: 2
+  Occurrences: 3
 
 Uncategorised
   After events:
     ICT: x264_cabac_pos at cabac.h:76:0
-  Occurrences: 9
+  Occurrences: 6
 
 Uncategorised
   After events:
     ICT: x264_cabac_putbyte at x264_src/common/cabac.c:787:0
-  Occurrences: 113
+  Occurrences: 121
 
 Uncategorised
   After events:
     ICT: x264_cabac_putbyte at x264_src/common/cabac.c:787:0
     IRF: x264_cabac_putbyte at x264_src/common/cabac.c:789:21
-  Occurrences: 21
+  Occurrences: 20
 
 Uncategorised
   After events:
     ICT: x264_cabac_size_decision at cabac.h:83:0
-  Occurrences: 58
-
-Uncategorised
-  After events:
-    ICT: x264_cabac_size_decision at cabac.h:83:0
-    IRF: x264_cabac_size_decision at cabac.h:0:0
-  Occurrences: 1
+  Occurrences: 44
 
 Uncategorised
   After events:
     ICT: x264_cabac_size_decision at cabac.h:83:0
     IRF: x264_cabac_size_decision at cabac.h:87:25
-  Occurrences: 5
+  Occurrences: 4
 
 Uncategorised
   After events:
@@ -4629,30 +4545,19 @@ Uncategorised
 Uncategorised
   After events:
     ICT: x264_cabac_size_decision_noup at cabac.h:97:0
-  Occurrences: 34
+  Occurrences: 27
 
 Uncategorised
   After events:
     ICT: x264_cabac_size_decision_noup at cabac.h:97:0
     IRF: x264_cabac_size_decision_noup at cabac.h:0:0
-  Occurrences: 1
-
-Uncategorised
-  After events:
-    ICT: x264_cabac_size_decision_noup at cabac.h:97:0
-    IRF: x264_cabac_size_decision_noup at cabac.h:100:28
-  Occurrences: 2
+  Occurrences: 3
 
 Uncategorised
   After events:
     ICT: x264_cabac_size_decision_noup at cabac.h:97:0
     IRF: x264_cabac_size_decision_noup at cabac.h:100:54
-  Occurrences: 1
-
-Uncategorised
-  After events:
-    ICT: x264_clip3 at common.h:200:0
-  Occurrences: 1
+  Occurrences: 5
 
 Uncategorised
   After events:
@@ -4662,33 +4567,27 @@ Uncategorised
 Uncategorised
   After events:
     ICT: x264_macroblock_store_pic at x264_src/common/macroblock.c:1018:0
-  Occurrences: 9
+  Occurrences: 12
 
 Uncategorised
   After events:
     ICT: x264_mb_analyse_init_qp at x264_src/encoder/analyse.c:327:0
-  Occurrences: 8
-
-Uncategorised
-  After events:
-    ICT: x264_mb_analyse_init_qp at x264_src/encoder/analyse.c:327:0
-    IRF: x264_mb_analyse_init_qp at x264_src/encoder/analyse.c:336:54
-  Occurrences: 3
+  Occurrences: 11
 
 Uncategorised
   After events:
     ICT: x264_mb_init_fenc_cache at x264_src/encoder/analyse.c:565:0
-  Occurrences: 8
+  Occurrences: 12
 
 Uncategorised
   After events:
     ICT: x264_mb_predict_intra4x4_mode at macroblock.h:366:0
-  Occurrences: 16
+  Occurrences: 14
 
 Uncategorised
   After events:
     RF: Jump to external code for exp2
-  Occurrences: 19
+  Occurrences: 18
 
 Uncategorised
   After events:
@@ -4707,6 +4606,11 @@ Uncategorised
 
 Uncategorised
   After events:
+    IRF: ac_energy_plane at x264_src/encoder/ratecontrol.c:216:20
+  Occurrences: 1
+
+Uncategorised
+  After events:
     IRF: ac_energy_plane at x264_src/encoder/ratecontrol.c:219:16
   Occurrences: 1
 
@@ -4718,8 +4622,13 @@ Uncategorised
 
 Uncategorised
   After events:
+    IRF: ac_energy_plane at x264_src/encoder/ratecontrol.c:219:23
+  Occurrences: 1
+
+Uncategorised
+  After events:
     IRF: ac_energy_plane at x264_src/encoder/ratecontrol.c:219:29
-  Occurrences: 14
+  Occurrences: 12
 
 Uncategorised
   After events:
@@ -4730,7 +4639,7 @@ Uncategorised
 Uncategorised
   After events:
     IRF: bs_pos at bs.h:90:11
-  Occurrences: 3
+  Occurrences: 4
 
 Uncategorised
   After events:
@@ -4740,16 +4649,16 @@ Uncategorised
 Uncategorised
   After events:
     IRF: bs_size_ue_big at bs.h:275:45
-  Occurrences: 3
-
-Uncategorised
-  After events:
-    IRF: bs_write at bs.h:0:0
-  Occurrences: 1
+  Occurrences: 2
 
 Uncategorised
   After events:
     IRF: bs_write at bs.h:127:18
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: close_file at <invalid>:0:0
   Occurrences: 1
 
 Uncategorised
@@ -4760,12 +4669,12 @@ Uncategorised
 Uncategorised
   After events:
     IRF: idct_dequant_2x2_dconly at x264_src/encoder/macroblock.c:0:18
-  Occurrences: 3
+  Occurrences: 5
 
 Uncategorised
   After events:
     IRF: idct_dequant_2x2_dconly at x264_src/encoder/macroblock.c:59:24
-  Occurrences: 6
+  Occurrences: 4
 
 Uncategorised
   After events:
@@ -4779,8 +4688,13 @@ Uncategorised
 
 Uncategorised
   After events:
+    RF: memzero_aligned at <invalid>:0:0
+  Occurrences: 16
+
+Uncategorised
+  After events:
     IRF: pack16to32 at macroblock.h:321:13
-  Occurrences: 12
+  Occurrences: 13
 
 Uncategorised
   After events:
@@ -4791,17 +4705,17 @@ Uncategorised
   After events:
     IRF: pack8to16 at macroblock.h:329:13
     ICF: predict_8x8_hd at x264_src/common/predict.c:647:15
-  Occurrences: 6
+  Occurrences: 3
 
 Uncategorised
   After events:
     IRF: pixel_sub_wxh at x264_src/common/dct.c:0:0
-  Occurrences: 2009
+  Occurrences: 1987
 
 Uncategorised
   After events:
     IRF: plane_expand_border at x264_src/common/frame.c:0:0
-  Occurrences: 18
+  Occurrences: 20
 
 Uncategorised
   After events:
@@ -4816,7 +4730,7 @@ Uncategorised
 Uncategorised
   After events:
     IRF: ssd_mb at rdo.c:157:47
-  Occurrences: 20
+  Occurrences: 21
 
 Uncategorised
   After events:
@@ -4827,23 +4741,33 @@ Uncategorised
   After events:
     IRF: ssd_plane at rdo.c:0:12
     ICF: ssd_mb at rdo.c:155:56
-  Occurrences: 6
+  Occurrences: 4
 
 Uncategorised
   After events:
     IRF: ssd_plane at rdo.c:0:12
     ICF: ssd_mb at rdo.c:157:12
-  Occurrences: 3
+  Occurrences: 5
 
 Uncategorised
   After events:
     IRF: ssd_plane at rdo.c:150:12
-  Occurrences: 8
+  Occurrences: 6
 
 Uncategorised
   After events:
     IRF: ssd_plane at rdo.c:150:68
-  Occurrences: 5
+  Occurrences: 8
+
+Uncategorised
+  After events:
+    RF: sub16x16_dct at <invalid>:0:0
+  Occurrences: 32
+
+Uncategorised
+  After events:
+    RF: sub8x8_dct at <invalid>:0:0
+  Occurrences: 98
 
 Uncategorised
   After events:
@@ -4852,13 +4776,18 @@ Uncategorised
 
 Uncategorised
   After events:
+    RF: x264_analyse_update_cache at <invalid>:0:0
+  Occurrences: 49
+
+Uncategorised
+  After events:
     IRF: x264_cabac_encode_renorm at x264_src/common/cabac.c:0:0
-  Occurrences: 12
+  Occurrences: 10
 
 Uncategorised
   After events:
     IRF: x264_cabac_encode_renorm at x264_src/common/cabac.c:823:17
-  Occurrences: 12
+  Occurrences: 10
 
 Uncategorised
   After events:
@@ -4868,18 +4797,18 @@ Uncategorised
 Uncategorised
   After events:
     IRF: x264_cabac_mb_cbp_luma at cabac.c:0:0
-  Occurrences: 9
+  Occurrences: 6
 
 Uncategorised
   After events:
     IRF: x264_cabac_mb_cbp_luma at cabac.c:0:0
     ICF: x264_macroblock_size_cabac at cabac.c:927:9
-  Occurrences: 1
+  Occurrences: 3
 
 Uncategorised
   After events:
     IRF: x264_cabac_mb_intra4x4_pred_mode at cabac.c:0:0
-  Occurrences: 9
+  Occurrences: 7
 
 Uncategorised
   After events:
@@ -4889,38 +4818,43 @@ Uncategorised
 Uncategorised
   After events:
     IRF: x264_cabac_mb_type at cabac.c:0:0
-  Occurrences: 31
+  Occurrences: 30
+
+Uncategorised
+  After events:
+    RF: x264_cabac_mb_type_intra at <invalid>:0:0
+  Occurrences: 16
 
 Uncategorised
   After events:
     IRF: x264_cabac_pos at cabac.h:78:12
-  Occurrences: 9
+  Occurrences: 6
 
 Uncategorised
   After events:
     IRF: x264_cabac_putbyte at x264_src/common/cabac.c:0:0
-  Occurrences: 82
+  Occurrences: 84
 
 Uncategorised
   After events:
     IRF: x264_cabac_putbyte at x264_src/common/cabac.c:0:0
     IRF: x264_cabac_encode_renorm at x264_src/common/cabac.c:0:0
-  Occurrences: 4
+  Occurrences: 6
 
 Uncategorised
   After events:
     IRF: x264_cabac_putbyte at x264_src/common/cabac.c:789:21
-  Occurrences: 69
+  Occurrences: 67
 
 Uncategorised
   After events:
     IRF: x264_cabac_putbyte at x264_src/common/cabac.c:814:37
-  Occurrences: 7
+  Occurrences: 6
 
 Uncategorised
   After events:
     IRF: x264_cabac_size_decision at cabac.h:0:0
-  Occurrences: 15
+  Occurrences: 13
 
 Uncategorised
   After events:
@@ -4930,32 +4864,32 @@ Uncategorised
 Uncategorised
   After events:
     IRF: x264_cabac_size_decision at cabac.h:87:25
-  Occurrences: 37
+  Occurrences: 23
 
 Uncategorised
   After events:
     IRF: x264_cabac_size_decision at cabac.h:87:28
-  Occurrences: 3
-
-Uncategorised
-  After events:
-    IRF: x264_cabac_size_decision2 at cabac.h:93:12
-  Occurrences: 3
-
-Uncategorised
-  After events:
-    IRF: x264_cabac_size_decision2 at cabac.h:94:12
   Occurrences: 1
 
 Uncategorised
   After events:
+    IRF: x264_cabac_size_decision2 at cabac.h:93:12
+  Occurrences: 2
+
+Uncategorised
+  After events:
+    IRF: x264_cabac_size_decision2 at cabac.h:94:12
+  Occurrences: 2
+
+Uncategorised
+  After events:
     IRF: x264_cabac_size_decision_noup at cabac.h:0:0
-  Occurrences: 7
+  Occurrences: 6
 
 Uncategorised
   After events:
     IRF: x264_cabac_size_decision_noup at cabac.h:100:25
-  Occurrences: 15
+  Occurrences: 14
 
 Uncategorised
   After events:
@@ -4971,11 +4905,60 @@ Uncategorised
 Uncategorised
   After events:
     IRF: x264_cabac_size_decision_noup at cabac.h:100:54
-  Occurrences: 6
+  Occurrences: 1
 
 Uncategorised
   After events:
     IRF: x264_clip3 at common.h:202:14
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: x264_encoder_parameters at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: x264_free at <invalid>:0:0
+  Occurrences: 187
+
+Uncategorised
+  After events:
+    RF: x264_free at <invalid>:0:0
+    RF: x264_frame_delete at <invalid>:0:0
+  Occurrences: 2
+
+Uncategorised
+  After events:
+    RF: x264_free at <invalid>:0:0
+    RF: x264_frame_delete_list at <invalid>:0:0
+  Occurrences: 4
+
+Uncategorised
+  After events:
+    RF: x264_free at <invalid>:0:0
+    RF: x264_macroblock_cache_free at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: x264_free at <invalid>:0:0
+    RF: x264_macroblock_thread_free at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: x264_log_default at <invalid>:0:0
+  Occurrences: 9
+
+Uncategorised
+  After events:
+    RF: x264_lookahead_delete at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: x264_lookahead_put_frame at <invalid>:0:0
   Occurrences: 1
 
 Uncategorised
@@ -4991,31 +4974,52 @@ Uncategorised
 Uncategorised
   After events:
     IRF: x264_mb_analyse_init_qp at x264_src/encoder/analyse.c:336:54
-  Occurrences: 4
-
-Uncategorised
-  After events:
-    IRF: x264_mb_analyse_init_qp at x264_src/encoder/analyse.c:346:35
   Occurrences: 6
 
 Uncategorised
   After events:
-    IRF: x264_mb_init_fenc_cache at x264_src/encoder/analyse.c:0:0
-  Occurrences: 8
+    IRF: x264_mb_analyse_init_qp at x264_src/encoder/analyse.c:346:35
+  Occurrences: 7
 
 Uncategorised
   After events:
-    IRF: x264_mb_predict_intra4x4_mode at macroblock.h:0:9
+    IRF: x264_mb_init_fenc_cache at x264_src/encoder/analyse.c:0:0
   Occurrences: 12
 
 Uncategorised
   After events:
+    IRF: x264_mb_predict_intra4x4_mode at macroblock.h:0:9
+  Occurrences: 11
+
+Uncategorised
+  After events:
     IRF: x264_mb_predict_intra4x4_mode at macroblock.h:370:20
-  Occurrences: 4
+  Occurrences: 3
 
 Uncategorised
   After events:
     IRF: x264_param_apply_tune at x264_src/common/common.c:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: x264_prefetch_fenc at <invalid>:0:0
+  Occurrences: 16
+
+Uncategorised
+  After events:
+    RF: x264_ratecontrol_delete at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
+    RF: x264_synch_frame_list_delete at <invalid>:0:0
+  Occurrences: 3
+
+Uncategorised
+  Before events:
+    CF: Encode at x264_src/x264.c:1445:5
+    CT: x264_encoder_parameters at x264_src/encoder/encoder.c:1232:0
   Occurrences: 1
 
 Uncategorised
@@ -5135,6 +5139,16 @@ Uncategorised
 
 Uncategorised
   Before events:
+    CF: x264_macroblock_analyse at x264_src/encoder/analyse.c:2587:13
+    CT: x264_mb_init_fenc_cache at x264_src/encoder/analyse.c:566:0
+    CF: x264_mb_init_fenc_cache at x264_src/encoder/analyse.c:572:5
+    CT: memzero_aligned at x264_src/common/mc.c:318:0
+    CF: memzero_aligned at x264_src/common/mc.c:319:5
+    CT: Jump to external code for memset
+  Occurrences: 16
+
+Uncategorised
+  Before events:
     CF: x264_macroblock_cache_save at x264_src/common/macroblock.c:1045:5
   Occurrences: 16
 
@@ -5232,22 +5246,108 @@ Uncategorised
     CF: plane_expand_border at x264_src/common/frame.c:275:13
   Occurrences: 1
 
+Uncategorised
+  Before events:
+    RF: close_file at x264_src/output/raw.c:63:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: sub16x16_dct at x264_src/common/dct.c:160:1
+  Occurrences: 32
+
+Uncategorised
+  Before events:
+    RF: sub8x8_dct at x264_src/common/dct.c:152:1
+  Occurrences: 98
+
+Uncategorised
+  Before events:
+    RF: x264_analyse_update_cache at x264_src/encoder/analyse.c:3477:1
+  Occurrences: 49
+
+Uncategorised
+  Before events:
+    RF: x264_cabac_mb_type_intra at x264_src/encoder/cabac.c:68:1
+  Occurrences: 16
+
+Uncategorised
+  Before events:
+    RF: x264_free at x264_src/common/common.c:1138:1
+  Occurrences: 185
+
+Uncategorised
+  Before events:
+    RF: x264_free at x264_src/common/common.c:1138:1
+    RF: x264_frame_delete at x264_src/common/frame.c:217:1
+  Occurrences: 2
+
+Uncategorised
+  Before events:
+    RF: x264_free at x264_src/common/common.c:1138:1
+    RF: x264_frame_delete_list at x264_src/common/frame.c:515:1
+  Occurrences: 4
+
+Uncategorised
+  Before events:
+    RF: x264_free at x264_src/common/common.c:1138:1
+    RF: x264_lookahead_delete at x264_src/encoder/lookahead.c:185:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: x264_free at x264_src/common/common.c:1138:1
+    RF: x264_macroblock_cache_free at x264_src/common/macroblock.c:322:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: x264_free at x264_src/common/common.c:1138:1
+    RF: x264_macroblock_thread_free at x264_src/common/macroblock.c:369:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: x264_free at x264_src/common/common.c:1138:1
+    RF: x264_ratecontrol_delete at x264_src/encoder/ratecontrol.c:1057:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: x264_log_default at x264_src/common/common.c:1010:1
+  Occurrences: 9
+
+Uncategorised
+  Before events:
+    RF: x264_lookahead_put_frame at x264_src/encoder/lookahead.c:193:1
+  Occurrences: 1
+
+Uncategorised
+  Before events:
+    RF: x264_prefetch_fenc at x264_src/common/macroblock.c:485:1
+  Occurrences: 16
+
+Uncategorised
+  Before events:
+    RF: x264_synch_frame_list_delete at x264_src/common/frame.c:539:1
+  Occurrences: 3
+
 ## Divergences with unique coordinates by type
 
 Coordinates removed
-  Unique divergence coordinates: 127
-  Divergence countable events: 127
+  Unique divergence coordinates: 113
+  Divergence countable events: 113
 
 Coordinates changed (small)
-  Unique divergence coordinates: 267
-  Divergence countable events: 267
+  Unique divergence coordinates: 266
+  Divergence countable events: 266
 
 Coordinates changed (large)
   Unique divergence coordinates: 49
   Divergence countable events: 49
 
 Library call replaced
-  Unique divergence coordinates: 5
+  Unique divergence coordinates: 6
   Divergence countable events: 8
 
 Library call inlined
@@ -5255,30 +5355,30 @@ Library call inlined
   Divergence countable events: 2
 
 Library call removed
-  Unique divergence coordinates: 34
-  Divergence countable events: 102
+  Unique divergence coordinates: 33
+  Divergence countable events: 99
 
 Program call removed
   Unique divergence coordinates: 17
   Divergence countable events: 841
 
 Inlined reentry added
-  Unique divergence coordinates: 21
-  Divergence countable events: 42
+  Unique divergence coordinates: 19
+  Divergence countable events: 38
 
 Inlined noise added
-  Unique divergence coordinates: 24
-  Divergence countable events: 48
+  Unique divergence coordinates: 28
+  Divergence countable events: 56
 
 Inlined return added
   Unique divergence coordinates: 5
   Divergence countable events: 58
 
 Uncategorised
-  Unique divergence coordinates: 225
-  Divergence countable events: 316
+  Unique divergence coordinates: 261
+  Divergence countable events: 367
 
 ## Summary
 
-776 unique divergence coordinates
-170148 divergence occurrences
+799 unique divergence coordinates
+170536 divergence occurrences

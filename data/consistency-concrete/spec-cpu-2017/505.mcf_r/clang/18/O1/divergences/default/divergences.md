@@ -65,13 +65,6 @@ Coordinates removed
 
 Coordinates removed
   Before events:
-    RF: marc_arcs at implicit.c:201:1
-  After events:
-    RF: marc_arcs at implicit.c:0:0
-  Occurrences: 1
-
-Coordinates removed
-  Before events:
     RF: markBaskets at psimplex.c:70:1
   After events:
     IRF: markBaskets at psimplex.c:0:0
@@ -296,14 +289,24 @@ Uncategorised
 
 Uncategorised
   After events:
+    RF: marc_arcs at <invalid>:0:0
+  Occurrences: 1
+
+Uncategorised
+  After events:
     IRF: med3 at spec_qsort/spec_qsort.c:0:0
   Occurrences: 16
+
+Uncategorised
+  Before events:
+    RF: marc_arcs at implicit.c:201:1
+  Occurrences: 1
 
 ## Divergences with unique coordinates by type
 
 Coordinates removed
-  Unique divergence coordinates: 15
-  Divergence countable events: 15
+  Unique divergence coordinates: 14
+  Divergence countable events: 14
 
 Coordinates changed (small)
   Unique divergence coordinates: 6
@@ -326,10 +329,10 @@ Inlined reentry added
   Divergence countable events: 2
 
 Uncategorised
-  Unique divergence coordinates: 6
-  Divergence countable events: 8
+  Unique divergence coordinates: 8
+  Divergence countable events: 10
 
 ## Summary
 
-44 unique divergence coordinates
-1517 divergence occurrences
+45 unique divergence coordinates
+1518 divergence occurrences
