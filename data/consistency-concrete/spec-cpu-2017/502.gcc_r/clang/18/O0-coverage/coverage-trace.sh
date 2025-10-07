@@ -11,8 +11,9 @@ fi
 
 source "${SCRIPT_DIR}/../../../../../vars.sh"
 
-TARGET_NAME="mcf"
-INPUT="${SCRIPT_DIR}/../../../data/input"
+TARGET_NAME="gcc"
+TARGET_OPTS="-O3"
+TARGET_INPUT="${SCRIPT_DIR}/../../../data/hello.c"
 
 echo "## Collecting coverage using trace inputs for SPEC CPU test"
 
@@ -24,7 +25,8 @@ LLVM_PROFILE_FILE="${PROFILE_DIR}/%p.profdata"
 export LLVM_PROFILE_FILE
 
 ${SCRIPT_DIR}/${TARGET_NAME} \
-  ${INPUT}
+  ${TARGET_OPTS} \
+  ${TARGET_INPUT}
 
 echo "## Merging raw profiles into indexed profile"
 

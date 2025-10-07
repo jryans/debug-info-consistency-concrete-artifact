@@ -11,20 +11,36 @@ fi
 
 source "${SCRIPT_DIR}/../../../../../vars.sh"
 
-TARGET_NAME="mcf"
-INPUT="${SCRIPT_DIR}/../../../data/input"
+TARGET_NAME="gcc"
 
-echo "## Collecting coverage using trace inputs for SPEC CPU test"
+echo "## Collecting coverage using benchmark inputs for SPEC CPU test"
 
-PROFILE_BASE_DIR="${SCRIPT_DIR}/coverage/trace"
-rm -rf ${PROFILE_BASE_DIR}
+PROFILE_BASE_DIR="${SCRIPT_DIR}/coverage/bench"
+# rm -rf ${PROFILE_BASE_DIR}
 PROFILE_DIR="${PROFILE_BASE_DIR}/profiles"
 mkdir -p ${PROFILE_DIR}
 LLVM_PROFILE_FILE="${PROFILE_DIR}/%p.profdata"
 export LLVM_PROFILE_FILE
 
+# ${SCRIPT_DIR}/${TARGET_NAME} \
+#   -O3 -finline-limit=0 -fif-conversion -fif-conversion2 \
+#   ../../data/refrate/input/gcc-pp.c
+
 ${SCRIPT_DIR}/${TARGET_NAME} \
-  ${INPUT}
+  -O2 -finline-limit=36000 -fpic \
+  ../../data/refrate/input/gcc-pp.c
+
+${SCRIPT_DIR}/${TARGET_NAME} \
+  -O3 -fipa-pta \
+  ../../data/refrate/input/gcc-smaller.c
+
+${SCRIPT_DIR}/${TARGET_NAME} \
+  -O5 \
+  ../../data/refrate/input/ref32.c
+
+${SCRIPT_DIR}/${TARGET_NAME} \
+  -O3 -fselective-scheduling -fselective-scheduling2 \
+  ../../data/refrate/input/ref32.c
 
 echo "## Merging raw profiles into indexed profile"
 
