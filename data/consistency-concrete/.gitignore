@@ -13,6 +13,7 @@ testcases
 *.ll
 *.o
 *.opt.yaml
+*.profdata
 *.s
 *.tsv
 
