@@ -1,0 +1,37 @@
+# Tests with different numbers of files
+- **/t3400-rebase/
+- **/t4150-am/
+
+# Traces where only one side is empty
+- **/t5000-tar-tree/
+- **/t5003-archive-zip/
+
+# Traces above 1 GiB
+- **/t5004-archive-corner-cases/
+- **/t7006-pager/
+
+# Tests with broken output
+- **/t0005-signals/
+- **/t0012-help/
+- **/t0021-conversion/
+- **/t1051-large-conversion/
+- **/t1800-hook/
+- **/t2003-checkout-cache-mkdir/
+- **/t2082-parallel-checkout-attributes/
+- **/t3301-notes/
+- **/t3306-notes-prune/
+- **/t3307-notes-man/
+- **/t3310-notes-merge-manual-resolve/
+- **/t3404-rebase-interactive/
+- **/t4058-diff-duplicates/
+- **/t5509-fetch-push-namespaces/
+- **/t5570-git-daemon/
+- **/t5700-protocol-v1/
+- **/t5702-protocol-v2/
+- **/t5802-connect-helper/
+- **/t5814-proto-disable-ext/
+- **/t6500-gc/
+- **/t7501-commit-basic-functionality/
+- **/t7506-status-submodule/
+- **/t7519-status-fsmonitor/
+- **/t9300-fast-import/
