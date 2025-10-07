@@ -36,6 +36,7 @@
 - **/t5700-protocol-v1/
 - **/t5702-protocol-v2/
 - **/t5802-connect-helper/
+- **/t5811-proto-disable-git/
 - **/t5814-proto-disable-ext/
 - **/t6500-gc/
 - **/t7501-commit-basic-functionality/
