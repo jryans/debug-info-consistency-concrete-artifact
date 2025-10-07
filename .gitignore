@@ -1,5 +1,7 @@
 venv
 
+/diff.*
+
 ~*
 *.aux
 *.bbl
