@@ -57,7 +57,8 @@ for divergence_type_path in divergences/default/events/*; do
 done
 
 # Count unique lines in before trace overall
-awk '{$1=$1};1' ../O0/concrete-trace/*/default/* | \
+find ../O0/concrete-trace -type f -path '*/default/*' | \
+  xargs awk '{$1=$1};1' | \
   sort -u | \
   wc -l | \
   awk '{print $1}' \
