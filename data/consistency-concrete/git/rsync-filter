@@ -1,6 +1,12 @@
 # Tests with different numbers of files
 - **/t3400-rebase/
 - **/t4150-am/
+- **/t4216-log-bloom/
+- **/t5318-commit-graph/
+- **/t5324-split-commit-graph/
+- **/t5328-commit-graph-64bit-time/
+- **/t7900-maintenance/
+- **/t9302-fast-import-unpack-limit/
 
 # Traces where only one side is empty
 - **/t5000-tar-tree/
