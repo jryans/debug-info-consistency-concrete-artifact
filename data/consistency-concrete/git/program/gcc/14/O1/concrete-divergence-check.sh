@@ -46,7 +46,7 @@ ${CON_COMPARE} \
 
 # Count unique divergence lines by type
 mkdir -p divergences/default/counts
-rm -f divergences/default/counts/*
+# rm -f divergences/default/counts/*
 for divergence_type_path in divergences/default/events/*; do
   divergence_type=$(basename ${divergence_type_path})
   # These files do not include indentation
@@ -55,11 +55,3 @@ for divergence_type_path in divergences/default/events/*; do
     awk '{print $1}' \
     > divergences/default/counts/${divergence_type}
 done
-
-# Count unique lines in before trace overall
-find ../O0/concrete-trace -type f -path '*/default/*' | \
-  xargs awk '{$1=$1};1' | \
-  sort -u | \
-  wc -l | \
-  awk '{print $1}' \
-  > divergences/default/counts/before
