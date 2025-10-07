@@ -19,7 +19,7 @@ def load_data(target_name, data_path_prefix):
 
   def read_run(dir, variant):
     df = None
-    for count_file in glob.iglob(f"{data_path_prefix}/program/{dir}/divergences/default/counts/*"):
+    for count_file in glob.iglob(f"{data_path_prefix}/{dir}/divergences/default/counts/*"):
       df_segment = read_file(count_file)
       df_divergence_type = os.path.basename(count_file)
       df_segment["Divergence Type"] = df_divergence_type
@@ -83,6 +83,7 @@ def divergences_by_package(df):
   ax.grid(False, "major", "x")
   # for tick in ax.xaxis.get_major_ticks()[1::2]:
   #   tick.set_pad(12)
+  ax.tick_params(axis="x", rotation=90)
   g.set(
     title="Divergent call tree trace events with Clang 18, O1\nfrom various package executions",
     xlabel="Package",
