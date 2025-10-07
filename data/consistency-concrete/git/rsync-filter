@@ -30,6 +30,7 @@
 - **/t3310-notes-merge-manual-resolve/
 - **/t3404-rebase-interactive/
 - **/t4058-diff-duplicates/
+- **/t5302-pack-index/
 - **/t5509-fetch-push-namespaces/
 - **/t5570-git-daemon/
 - **/t5700-protocol-v1/
