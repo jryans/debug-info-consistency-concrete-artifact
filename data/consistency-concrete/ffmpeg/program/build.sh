@@ -82,8 +82,9 @@ for i in ${!levels[*]}; do
   cc_level_opts="CC_${level}_OPTS"
   make \
     CC="$(llvm release-clang-lldb-${version} clang)" \
+    LD="$(llvm release-clang-lldb-${version} clang)" \
     ECFLAGS="${CC_COMMON_OPTS} ${CC_CLANG_OPTS} ${!cc_level_opts} -fsave-optimization-record" \
-    LDFLAGS="${LD_COMMON_OPTS} -L./libavdevice -L./libavfilter -L./libavformat -L./libavcodec -L./libswresample -L./libswscale -L./libavutil"
+    LDFLAGS="${CC_COMMON_OPTS} ${CC_CLANG_OPTS} ${LD_COMMON_OPTS} -L./libavdevice -L./libavfilter -L./libavformat -L./libavcodec -L./libswresample -L./libswscale -L./libavutil"
 
   mkdir -p "${SCRIPT_DIR}/clang/${version}/${level}"
 
@@ -108,6 +109,29 @@ for i in ${!levels[*]}; do
     "${SCRIPT_DIR}/clang/${version}/${level}/${TARGET_NAME}"
 done
 
+# Clang source-based code coverage
+
+level="O0"
+version="18"
+echo "## Building \`${TARGET_NAME}\` (Clang ${version}, ${level}) for code coverage"
+
+make clean
+
+## Build for code coverage
+cc_level_opts="CC_${level}_OPTS"
+make \
+  CC="$(llvm release-clang-lldb-${version} clang)" \
+  LD="$(llvm release-clang-lldb-${version} clang)" \
+  ECFLAGS="${CC_COMMON_OPTS} ${CC_CLANG_OPTS} ${!cc_level_opts} -fprofile-instr-generate -fcoverage-mapping" \
+  LDFLAGS="${CC_COMMON_OPTS} ${CC_CLANG_OPTS} ${LD_COMMON_OPTS} -L./libavdevice -L./libavfilter -L./libavformat -L./libavcodec -L./libswresample -L./libswscale -L./libavutil -fprofile-instr-generate"
+
+mkdir -p "${SCRIPT_DIR}/clang/${version}/${level}-coverage"
+
+## Store program binary
+cp \
+  ${TARGET_PATH} \
+  "${SCRIPT_DIR}/clang/${version}/${level}-coverage/${TARGET_NAME}"
+
 # GCC
 
   levels=(O0 O1 O2)
@@ -127,8 +151,9 @@ for i in ${!levels[*]}; do
   cc_level_opts="CC_${level}_OPTS"
   make \
     CC="$(gcc release-${version} gcc)" \
+    LD="$(gcc release-${version} gcc)" \
     ECFLAGS="${CC_COMMON_OPTS} ${CC_GCC_OPTS} ${!cc_level_opts}" \
-    LDFLAGS="${LD_COMMON_OPTS} -L./libavdevice -L./libavfilter -L./libavformat -L./libavcodec -L./libswresample -L./libswscale -L./libavutil"
+    LDFLAGS="${CC_COMMON_OPTS} ${CC_GCC_OPTS} ${LD_COMMON_OPTS} -L./libavdevice -L./libavfilter -L./libavformat -L./libavcodec -L./libswresample -L./libswscale -L./libavutil"
 
   mkdir -p "${SCRIPT_DIR}/gcc/${version}/${level}"
 
