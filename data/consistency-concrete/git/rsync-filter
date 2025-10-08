@@ -29,6 +29,7 @@
 - **/t3307-notes-man/
 - **/t3310-notes-merge-manual-resolve/
 - **/t3404-rebase-interactive/
+- **/t3600-rm/
 - **/t4058-diff-duplicates/
 - **/t5302-pack-index/
 - **/t5509-fetch-push-namespaces/
