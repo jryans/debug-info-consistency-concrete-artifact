@@ -114,6 +114,29 @@ for i in ${!levels[*]}; do
     "${SCRIPT_DIR}/clang/${version}/${level}/test-deps/"
 done
 
+# Clang source-based code coverage
+
+level="O0"
+version="18"
+echo "## Building \`${TARGET_NAME}\` (Clang ${version}, ${level}) for code coverage"
+
+make clean
+
+## Build for code coverage
+cc_level_opts="CC_${level}_OPTS"
+make \
+  CC="$(llvm release-clang-lldb-${version} clang)" \
+  CFLAGS="${CC_COMMON_OPTS} ${CC_CLANG_OPTS} ${!cc_level_opts} -fprofile-instr-generate -fcoverage-mapping" \
+  LDFLAGS="${LD_COMMON_OPTS} -fprofile-instr-generate" \
+  NO_PTHREADS=1
+
+mkdir -p "${SCRIPT_DIR}/clang/${version}/${level}-coverage"
+
+## Store program binary
+cp \
+  ${TARGET_PATH} \
+  "${SCRIPT_DIR}/clang/${version}/${level}-coverage/${TARGET_NAME}"
+
 # GCC
 
   levels=(O0 O1 O2 O0 O1)
