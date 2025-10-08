@@ -71,6 +71,31 @@ for i in ${!levels[*]}; do
     "${SCRIPT_DIR}/clang/${version}/${level}/${TARGET_NAME}"
 done
 
+# Clang source-based code coverage
+
+level="O0"
+version="18"
+echo "## Building \`${TARGET_NAME}\` (Clang ${version}, ${level}) for code coverage"
+
+make clean
+
+## Build for code coverage
+cc_level_opts="CC_${level}_OPTS"
+make \
+  CC="$(llvm release-clang-lldb-${version} clang)" \
+  CXX="$(llvm release-clang-lldb-${version} clang++)" \
+  OPTIMIZE="" \
+  EXTRA_CFLAGS="${CC_COMMON_OPTS} ${CC_CLANG_OPTS} ${!cc_level_opts} -fprofile-instr-generate -fcoverage-mapping" \
+  EXTRA_CXXFLAGS="${CC_COMMON_OPTS} ${CC_CLANG_OPTS} ${!cc_level_opts} -fprofile-instr-generate -fcoverage-mapping -std=c++03 -fcommon" \
+  EXTRA_LDFLAGS="${CC_COMMON_OPTS} ${CC_CLANG_OPTS} ${LD_COMMON_OPTS} -fprofile-instr-generate"
+
+mkdir -p "${SCRIPT_DIR}/clang/${version}/${level}-coverage"
+
+## Store program binary
+cp \
+  ${TARGET_PATH} \
+  "${SCRIPT_DIR}/clang/${version}/${level}-coverage/${TARGET_NAME}"
+
 # GCC
 
 #   levels=(O0 O1 O2)
