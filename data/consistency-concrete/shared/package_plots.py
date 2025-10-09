@@ -89,6 +89,36 @@ def load_data():
 def normalise(df):
   df["Norm. Unique Events"] = df["Unique Events"] / df.groupby(["Variant"])["Unique Events"].transform("max")
 
+def divergences_by_compiler_and_optimisation_level(df):
+  df = df.copy()
+  df = df[df["Divergence Type"] != "before"]
+  g = sns.displot(
+    df,
+    x="Variant",
+    weights="Norm. Unique Events",
+    hue="Divergence Type",
+    kind="hist",
+    multiple="stack",
+    height=3.5,
+  )
+  sns.move_legend(
+    g,
+    "center right",
+    bbox_to_anchor=(1, 0.525),
+    frameon=True,
+    shadow=True,
+    title=None,
+  )
+  ax = g.facet_axis(0, 0)
+  ax.grid(False, "major", "x")
+  # for tick in ax.xaxis.get_major_ticks()[1::2]:
+  #   tick.set_pad(12)
+  g.set(
+    title=f"Divergent call tree trace events during {friendly_name} executions\nacross compilers and optimisation levels",
+    xlabel="Compiler and optimisation level",
+    ylabel="Fraction of unique trace events",
+  )
+
 def divergences_by_optimisation_level(df):
   df = df.copy()
   df = df[df["Divergence Type"] != "before"]
