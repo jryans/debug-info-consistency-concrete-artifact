@@ -61,7 +61,7 @@ def load_data():
   read_run("clang/13/O1", ("Clang", "13", "O1"))
   read_run("clang/13/O2", ("Clang", "13", "O2"))
   read_run("clang/18/O1", ("Clang", "18", "O1"))
-  # read_run("gcc/11/O1", ("GCC", "11", "O1"))
+  read_run("gcc/11/O1", ("GCC", "11", "O1"))
   # Lots of "no info for this address", skipping for now
   # read_run("gcc/11/O2", ("GCC", "11", "O2"))
   read_run("gcc/14/O1", ("GCC", "14", "O1"))
