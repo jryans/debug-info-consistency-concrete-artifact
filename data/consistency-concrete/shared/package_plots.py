@@ -64,7 +64,7 @@ def load_data():
   # read_run("gcc/11/O1", ("GCC", "11", "O1"))
   # Lots of "no info for this address", skipping for now
   # read_run("gcc/11/O2", ("GCC", "11", "O2"))
-  # read_run("gcc/14/O1", ("GCC", "14", "O1"))
+  read_run("gcc/14/O1", ("GCC", "14", "O1"))
 
   def df_keys(df):
     keys = df.variant
@@ -111,8 +111,8 @@ def divergences_by_compiler_and_optimisation_level(df):
   )
   ax = g.facet_axis(0, 0)
   ax.grid(False, "major", "x")
-  # for tick in ax.xaxis.get_major_ticks()[1::2]:
-  #   tick.set_pad(12)
+  for tick in ax.xaxis.get_major_ticks()[1::2]:
+    tick.set_pad(14)
   g.set(
     title=f"Divergent call tree trace events during {friendly_name} executions\nacross compilers and optimisation levels",
     xlabel="Compiler and optimisation level",
