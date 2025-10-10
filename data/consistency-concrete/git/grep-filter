@@ -10,6 +10,9 @@ t5000-tar-tree
 t5003-archive-zip
 t5004-archive-corner-cases
 t7006-pager
+t6120-describe
+t7004-tag
+t9304-fast-import-marks
 t0005-signals
 t0012-help
 t0021-conversion

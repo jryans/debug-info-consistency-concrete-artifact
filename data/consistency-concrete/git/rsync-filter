@@ -16,6 +16,11 @@
 - **/t5004-archive-corner-cases/
 - **/t7006-pager/
 
+# Traces above 0.25 GiB
+- **/t6120-describe/
+- **/t7004-tag/
+- **/t9304-fast-import-marks/
+
 # Tests with broken output
 - **/t0005-signals/
 - **/t0012-help/
