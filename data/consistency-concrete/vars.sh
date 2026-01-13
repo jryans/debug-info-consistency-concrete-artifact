@@ -1,3 +1,5 @@
+SCRIPT_DIR=$(dirname "${BASH_SOURCE[0]}")
+
 UNAME=`uname`
 
 if [[ "$UNAME" == 'Darwin' ]]; then
@@ -10,6 +12,10 @@ gcc() {
   local build=${1}
   local version=${2}
   local program=${3:-}
+  if [ -n "${BUNDLED}" ]; then
+    echo "${SCRIPT_DIR}/../../compilers/gcc/${version}/bin/${program}"
+    return
+  fi
   if [ -z "${program}" ]; then
     echo "${HOME}/Projects/GNU/gcc/builds/${build}-${version}"
     return
@@ -21,6 +27,10 @@ llvm() {
   local build=${1}
   local version=${2}
   local program=${3:-}
+  if [ -n "${BUNDLED}" ]; then
+    echo "${SCRIPT_DIR}/../../compilers/clang/${version}/bin/${program}"
+    return
+  fi
   if [ -z "${program}" ]; then
     echo "${HOME}/Projects/LLVM/llvm/builds/${build}-${version}"
     return

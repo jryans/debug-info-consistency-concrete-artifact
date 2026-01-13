@@ -7,6 +7,8 @@ RUN \
   nixpkgs.gcc \
   nixpkgs.zlib
 
+ENV BUNDLED=1
+
 WORKDIR /artifact
 
 COPY Research/Papers/debug-info-consistency-concrete-artifact .
