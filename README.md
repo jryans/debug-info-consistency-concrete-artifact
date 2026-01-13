@@ -37,13 +37,14 @@ values as needed.
 ## Requirements
 
 Source code for each project under analysis will be needed. For the paper, the
-following projects and commits were used:
+following projects and commits / versions were used:
 
-| Project | Commit |
-| ------- | ------ |
-| FFmpeg  | c06d3d24047206f9c11bfc5849544b960e5d68eb |
-| Git     | bd5df96b7916c1e8a9300ab477aec047b3901cd4 |
-| SQLite  | 8ed5e7365e6f12f427910188bbf6b254daad2ef6 |
+| Project       | Commit / Version |
+| ------------- | ---------------- |
+| FFmpeg        | c06d3d24047206f9c11bfc5849544b960e5d68eb |
+| Git           | bd5df96b7916c1e8a9300ab477aec047b3901cd4 |
+| SQLite        | 8ed5e7365e6f12f427910188bbf6b254daad2ef6 |
+| SPEC CPU 2017 | 1.0.2                                    |
 
 Some of these projects were patched in various ways
 to integrate their test suites with our experiments.
