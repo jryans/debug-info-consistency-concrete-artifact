@@ -13,7 +13,7 @@ source "${SCRIPT_DIR}/../../vars.sh"
 PIPELINE_UTILS_PATH="${SCRIPT_DIR}/../../shared/pipeline.py"
 
 export LLVM_COMPILER="clang"
-export LLVM_COMPILER_PATH="$(llvm release-clang-lldb-13)/bin"
+export LLVM_COMPILER_PATH="$(llvm release-clang-lldb 13)/bin"
 
 # Expected by SPEC build system
 export SPEC="${HOME}/Projects/Benchmarks/spec-cpu-2017"
@@ -41,7 +41,7 @@ for i in ${!levels[*]}; do
   ## Build for binary with debug info
   cc_level_opts="CC_${level}_OPTS"
   make \
-    CC="$(llvm release-clang-lldb-${version} clang)" \
+    CC="$(llvm release-clang-lldb ${version} clang)" \
     OPTIMIZE="" \
     EXTRA_CFLAGS="${CC_COMMON_OPTS} ${CC_CLANG_OPTS} ${!cc_level_opts} -fsave-optimization-record" \
     EXTRA_LDFLAGS="${CC_COMMON_OPTS} ${CC_CLANG_OPTS} ${LD_COMMON_OPTS}"
@@ -80,7 +80,7 @@ make clean
 ## Build for code coverage
 cc_level_opts="CC_${level}_OPTS"
 make \
-  CC="$(llvm release-clang-lldb-${version} clang)" \
+  CC="$(llvm release-clang-lldb ${version} clang)" \
   OPTIMIZE="" \
   EXTRA_CFLAGS="${CC_COMMON_OPTS} ${CC_CLANG_OPTS} ${!cc_level_opts} -fprofile-instr-generate -fcoverage-mapping" \
   EXTRA_LDFLAGS="${CC_COMMON_OPTS} ${CC_CLANG_OPTS} ${LD_COMMON_OPTS} -fprofile-instr-generate"
@@ -98,7 +98,7 @@ cd ../build_base_mytest-m64.0000-bench
 make clean
 
 make \
-  CC="$(llvm release-clang-lldb-${version} clang)" \
+  CC="$(llvm release-clang-lldb ${version} clang)" \
   OPTIMIZE="" \
   EXTRA_CFLAGS="${CC_COMMON_OPTS} ${CC_CLANG_OPTS} ${!cc_level_opts} -fprofile-instr-generate -fcoverage-mapping" \
   EXTRA_LDFLAGS="${CC_COMMON_OPTS} ${CC_CLANG_OPTS} ${LD_COMMON_OPTS} -fprofile-instr-generate"
@@ -126,7 +126,7 @@ cd ../build_base_mytest-m64.0000
 #   ## Build for binary with debug info
 #   cc_level_opts="CC_${level}_OPTS"
 #   make \
-#     CC="$(gcc release-${version} gcc)" \
+#     CC="$(gcc release ${version} gcc)" \
 #     OPTIMIZE="" \
 #     EXTRA_CFLAGS="${CC_COMMON_OPTS} ${CC_GCC_OPTS} ${!cc_level_opts}" \
 #     EXTRA_LDFLAGS="${CC_COMMON_OPTS} ${CC_GCC_OPTS} ${LD_COMMON_OPTS}"

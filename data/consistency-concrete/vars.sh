@@ -8,22 +8,24 @@ fi
 
 gcc() {
   local build=${1}
-  local program=${2:-}
+  local version=${2}
+  local program=${3:-}
   if [ -z "${program}" ]; then
-    echo "${HOME}/Projects/GNU/gcc/builds/${build}"
+    echo "${HOME}/Projects/GNU/gcc/builds/${build}-${version}"
     return
   fi
-  echo "${HOME}/Projects/GNU/gcc/builds/${build}/bin/${program}"
+  echo "${HOME}/Projects/GNU/gcc/builds/${build}-${version}/bin/${program}"
 }
 
 llvm() {
   local build=${1}
-  local program=${2:-}
+  local version=${2}
+  local program=${3:-}
   if [ -z "${program}" ]; then
-    echo "${HOME}/Projects/LLVM/llvm/builds/${build}"
+    echo "${HOME}/Projects/LLVM/llvm/builds/${build}-${version}"
     return
   fi
-  echo "${HOME}/Projects/LLVM/llvm/builds/${build}/bin/${program}"
+  echo "${HOME}/Projects/LLVM/llvm/builds/${build}-${version}/bin/${program}"
 }
 
 if [[ "$OS" == 'mac' ]]; then
@@ -58,7 +60,7 @@ else
   LD_COMMON_OPTS="${LD_SYSROOT_OPTS} -Wl,-no-pie"
 fi
 
-LLDB_PYTHON_MODULES="$(llvm release-clang-lld-lldb-17.0.6)/lib/python3.12/site-packages"
+LLDB_PYTHON_MODULES="$(llvm release-clang-lld-lldb 17.0.6)/lib/python3.12/site-packages"
 LLDB_PYTHON="python3.12"
 
 CON_COLLECT_DEBUGGER="${HOME}/Projects/debug-info-concrete-check/debugger/collect_trace.py"

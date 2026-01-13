@@ -11,7 +11,7 @@ SCRIPT_DIR=$(dirname "${BASH_SOURCE[0]}")
 source "${SCRIPT_DIR}/../../vars.sh"
 
 export LLVM_COMPILER="clang"
-export LLVM_COMPILER_PATH="$(llvm release-clang-lldb-13)/bin"
+export LLVM_COMPILER_PATH="$(llvm release-clang-lldb 13)/bin"
 
 TARGET_NAME="example"
 TARGET_PATH="${TARGET_NAME}"
@@ -51,7 +51,7 @@ for i in ${!levels[*]}; do
   #   "${SCRIPT_DIR}/clang/${version}/${level}/${TARGET_NAME}.bc"
 
   # ## Disassemble bitcode for debugging
-  # $(llvm release-clang-lldb-${version} llvm-dis) \
+  # $(llvm release-clang-lldb ${version} llvm-dis) \
   #   "${SCRIPT_DIR}/clang/${version}/${level}/${TARGET_NAME}.bc"
 
   # # Collect function attributes when building O0
@@ -60,13 +60,13 @@ for i in ${!levels[*]}; do
 
   #   mkdir -p "${SCRIPT_DIR}/clang/${version}/${level}-function-attrs"
 
-  #   $(llvm release-clang-lldb-${version} opt) \
+  #   $(llvm release-clang-lldb ${version} opt) \
   #     -o "${SCRIPT_DIR}/clang/${version}/${level}-function-attrs/${TARGET_NAME}.bc" \
   #     -passes=function-attrs \
   #     "${SCRIPT_DIR}/clang/${version}/${level}/${TARGET_NAME}.bc"
 
   #   ## Disassemble bitcode for debugging
-  #   $(llvm release-clang-lldb-${version} llvm-dis) \
+  #   $(llvm release-clang-lldb ${version} llvm-dis) \
   #     "${SCRIPT_DIR}/clang/${version}/${level}-function-attrs/${TARGET_NAME}.bc"
   # fi
 
@@ -81,7 +81,7 @@ for i in ${!levels[*]}; do
 
   ## Build for binary with debug info
   cc_level_opts="CC_${level}_OPTS"
-  CC="$(llvm release-clang-lldb-${version} clang)" \
+  CC="$(llvm release-clang-lldb ${version} clang)" \
     CFLAGS="${CC_COMMON_OPTS} ${CC_CLANG_OPTS} ${!cc_level_opts} -fno-inline -fsave-optimization-record" \
     ./configure
   make
@@ -125,7 +125,7 @@ done
 
 #   ## Build for binary with debug info
 #   cc_level_opts="CC_${level}_OPTS"
-#     CC="$(gcc release-${version} gcc)" \
+#     CC="$(gcc release ${version} gcc)" \
 #     CFLAGS="${CC_COMMON_OPTS} ${CC_GCC_OPTS} ${!cc_level_opts} -fno-inline" \
 #     ./configure
 #   make

@@ -11,7 +11,7 @@ SCRIPT_DIR=$(dirname "${BASH_SOURCE[0]}")
 source "${SCRIPT_DIR}/../../vars.sh"
 
 export LLVM_COMPILER="clang"
-export LLVM_COMPILER_PATH="$(llvm release-clang-lldb-13)/bin"
+export LLVM_COMPILER_PATH="$(llvm release-clang-lldb 13)/bin"
 
 TARGET_NAME="testfixture"
 TARGET_PATH="${TARGET_NAME}"
@@ -40,7 +40,7 @@ for i in ${!levels[*]}; do
   # Expose variable to configure this path and try to script more steps.
   cc_level_opts="CC_${level}_OPTS"
   make \
-    CC="$(llvm release-clang-lldb-${version} clang)" \
+    CC="$(llvm release-clang-lldb ${version} clang)" \
     CFLAGS="${CC_COMMON_OPTS} ${CC_CLANG_OPTS} ${!cc_level_opts} -fsave-optimization-record -L/nix/store/jmxm0x5w0p5a1v849a0cpklsckjwj5nz-tcl-8.6.15/lib ${LD_COMMON_OPTS}" \
     testfixture
 
@@ -78,7 +78,7 @@ make clean
 ## Build for code coverage
 cc_level_opts="CC_${level}_OPTS"
 make \
-  CC="$(llvm release-clang-lldb-${version} clang)" \
+  CC="$(llvm release-clang-lldb ${version} clang)" \
   CFLAGS="${CC_COMMON_OPTS} ${CC_CLANG_OPTS} ${!cc_level_opts} -fprofile-instr-generate -fcoverage-mapping -L/nix/store/jmxm0x5w0p5a1v849a0cpklsckjwj5nz-tcl-8.6.15/lib ${LD_COMMON_OPTS}" \
   testfixture
 
@@ -106,7 +106,7 @@ cp \
 #   ## Build for binary with debug info
 #   cc_level_opts="CC_${level}_OPTS"
 #   make \
-#     CC="$(gcc release-${version} gcc)" \
+#     CC="$(gcc release ${version} gcc)" \
 #     CFLAGS="${CC_COMMON_OPTS} ${CC_GCC_OPTS} ${!cc_level_opts}" -L/nix/store/jmxm0x5w0p5a1v849a0cpklsckjwj5nz-tcl-8.6.15/lib ${LD_COMMON_OPTS}" \
 #     testfixture
 

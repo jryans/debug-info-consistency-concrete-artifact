@@ -11,7 +11,7 @@ SCRIPT_DIR=$(dirname "${BASH_SOURCE[0]}")
 source "${SCRIPT_DIR}/../../vars.sh"
 
 export LLVM_COMPILER="clang"
-export LLVM_COMPILER_PATH="$(llvm release-clang-lldb-13)/bin"
+export LLVM_COMPILER_PATH="$(llvm release-clang-lldb 13)/bin"
 
 TARGET_NAME="git.o"
 TARGET_PATH="${TARGET_NAME}"
@@ -38,18 +38,18 @@ cp \
   "${SCRIPT_DIR}/clang/${version}/${level}/${TARGET_NAME}.bc"
 
 ## Disassemble O0 bitcode for debugging
-$(llvm release-clang-lldb-${version} llvm-dis) \
+$(llvm release-clang-lldb ${version} llvm-dis) \
   "${SCRIPT_DIR}/clang/${version}/${level}/${TARGET_NAME}.bc"
 
 ## Apply mem2reg only
 mkdir -p "${SCRIPT_DIR}/clang/${version}/${level}-mem2reg"
-$(llvm release-clang-lldb-${version} opt) \
+$(llvm release-clang-lldb ${version} opt) \
   -o "${SCRIPT_DIR}/clang/${version}/${level}-mem2reg/${TARGET_NAME}.bc" \
   --mem2reg \
   "${SCRIPT_DIR}/clang/${version}/${level}/${TARGET_NAME}.bc"
 
 ## Disassemble O0 plus mem2reg bitcode for debugging
-$(llvm release-clang-lldb-${version} llvm-dis) \
+$(llvm release-clang-lldb ${version} llvm-dis) \
   "${SCRIPT_DIR}/clang/${version}/${level}-mem2reg/${TARGET_NAME}.bc"
 
 # Clang O1+
@@ -79,7 +79,7 @@ for i in ${!levels[*]}; do
     "${SCRIPT_DIR}/clang/${version}/${level}/${TARGET_NAME}.bc"
 
   ## Disassemble bitcode for debugging
-  $(llvm release-clang-lldb-${version} llvm-dis) \
+  $(llvm release-clang-lldb ${version} llvm-dis) \
     "${SCRIPT_DIR}/clang/${version}/${level}/${TARGET_NAME}.bc"
 done
 

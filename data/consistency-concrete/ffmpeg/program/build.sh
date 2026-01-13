@@ -11,7 +11,7 @@ SCRIPT_DIR=$(dirname "${BASH_SOURCE[0]}")
 source "${SCRIPT_DIR}/../../vars.sh"
 
 export LLVM_COMPILER="clang"
-export LLVM_COMPILER_PATH="$(llvm release-clang-lldb-13)/bin"
+export LLVM_COMPILER_PATH="$(llvm release-clang-lldb 13)/bin"
 
 TARGET_NAME="ffmpeg"
 TARGET_PATH="${TARGET_NAME}"
@@ -48,7 +48,7 @@ for i in ${!levels[*]}; do
 
   # ## Disassemble bitcode for debugging
   # # JRS: Bitcode for `ffmpeg` is already quite large, skipping disassembly
-  # # $(llvm release-clang-lldb-${version} llvm-dis) \
+  # # $(llvm release-clang-lldb ${version} llvm-dis) \
   # #   "${SCRIPT_DIR}/clang/${version}/${level}/${TARGET_NAME}.bc"
 
   # # Collect function attributes when building O0
@@ -57,14 +57,14 @@ for i in ${!levels[*]}; do
 
   #   mkdir -p "${SCRIPT_DIR}/clang/${version}/${level}-function-attrs"
 
-  #   $(llvm release-clang-lldb-${version} opt) \
+  #   $(llvm release-clang-lldb ${version} opt) \
   #     -o "${SCRIPT_DIR}/clang/${version}/${level}-function-attrs/${TARGET_NAME}.bc" \
   #     -passes=function-attrs \
   #     "${SCRIPT_DIR}/clang/${version}/${level}/${TARGET_NAME}.bc"
 
   #   ## Disassemble bitcode for debugging
   #   # JRS: Bitcode for `ffmpeg` is already quite large, skipping disassembly
-  #   # $(llvm release-clang-lldb-${version} llvm-dis) \
+  #   # $(llvm release-clang-lldb ${version} llvm-dis) \
   #   #   "${SCRIPT_DIR}/clang/${version}/${level}-function-attrs/${TARGET_NAME}.bc"
   # fi
 
@@ -81,8 +81,8 @@ for i in ${!levels[*]}; do
   ## Build for binary with debug info
   cc_level_opts="CC_${level}_OPTS"
   make \
-    CC="$(llvm release-clang-lldb-${version} clang)" \
-    LD="$(llvm release-clang-lldb-${version} clang)" \
+    CC="$(llvm release-clang-lldb ${version} clang)" \
+    LD="$(llvm release-clang-lldb ${version} clang)" \
     ECFLAGS="${CC_COMMON_OPTS} ${CC_CLANG_OPTS} ${!cc_level_opts} -fsave-optimization-record" \
     LDFLAGS="${CC_COMMON_OPTS} ${CC_CLANG_OPTS} ${LD_COMMON_OPTS} -L./libavdevice -L./libavfilter -L./libavformat -L./libavcodec -L./libswresample -L./libswscale -L./libavutil"
 
@@ -120,8 +120,8 @@ make clean
 ## Build for code coverage
 cc_level_opts="CC_${level}_OPTS"
 make \
-  CC="$(llvm release-clang-lldb-${version} clang)" \
-  LD="$(llvm release-clang-lldb-${version} clang)" \
+  CC="$(llvm release-clang-lldb ${version} clang)" \
+  LD="$(llvm release-clang-lldb ${version} clang)" \
   ECFLAGS="${CC_COMMON_OPTS} ${CC_CLANG_OPTS} ${!cc_level_opts} -fprofile-instr-generate -fcoverage-mapping" \
   LDFLAGS="${CC_COMMON_OPTS} ${CC_CLANG_OPTS} ${LD_COMMON_OPTS} -L./libavdevice -L./libavfilter -L./libavformat -L./libavcodec -L./libswresample -L./libswscale -L./libavutil -fprofile-instr-generate"
 
@@ -150,8 +150,8 @@ for i in ${!levels[*]}; do
   ## Build for binary with debug info
   cc_level_opts="CC_${level}_OPTS"
   make \
-    CC="$(gcc release-${version} gcc)" \
-    LD="$(gcc release-${version} gcc)" \
+    CC="$(gcc release ${version} gcc)" \
+    LD="$(gcc release ${version} gcc)" \
     ECFLAGS="${CC_COMMON_OPTS} ${CC_GCC_OPTS} ${!cc_level_opts}" \
     LDFLAGS="${CC_COMMON_OPTS} ${CC_GCC_OPTS} ${LD_COMMON_OPTS} -L./libavdevice -L./libavfilter -L./libavformat -L./libavcodec -L./libswresample -L./libswscale -L./libavutil"
 

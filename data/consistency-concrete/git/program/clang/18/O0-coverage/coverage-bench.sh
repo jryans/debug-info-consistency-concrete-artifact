@@ -73,7 +73,7 @@ rm -f "../t/helper/test-tool"
 echo "## Merging raw profiles into indexed profile"
 
 find ${PROFILE_BASE_DIR} -type f -name '*.profdata' | \
-  $(llvm release-clang-lldb-18 llvm-profdata) \
+  $(llvm release-clang-lldb 18 llvm-profdata) \
     merge \
     -f - \
     -o "${PROFILE_BASE_DIR}/merged.profdata"
@@ -83,7 +83,7 @@ rm -rf ${PROFILE_DIR}
 
 echo "## Reporting coverage"
 
-$(llvm release-clang-lldb-18 llvm-cov) \
+$(llvm release-clang-lldb 18 llvm-cov) \
   report \
   -instr-profile "${PROFILE_BASE_DIR}/merged.profdata" \
   ${SCRIPT_DIR}/${TARGET_NAME} > \
