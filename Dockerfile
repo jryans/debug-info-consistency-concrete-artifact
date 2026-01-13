@@ -1,7 +1,9 @@
 FROM nixos/nix:2.28.4
 
 RUN \
-  nix-channel --update && nix-env -iA \
+  nix-channel --add https://nixos.org/channels/nixos-24.11 nixpkgs && \
+  nix-channel --update && \
+  nix-env -iA \
   nixpkgs.glibc \
   nixpkgs.patchelf \
   nixpkgs.gcc \
@@ -20,8 +22,8 @@ RUN \
   compilers/clang/13/bin/clang \
   && \
   ln -s \
-  /nix/store/xc0ga87wdclrx54qjaryahkkmkmqi9qz-gcc-15.2.0-lib/lib/libstdc++.so.6 \
-  /nix/store/c2qsgf2832zi4n29gfkqgkjpvmbmxam6-zlib-1.3.1/lib/libz.so.1 \
+  /nix/store/hh698a2nnpqr47lh52n26wi8fiah3hid-gcc-13.3.0-lib/lib/libstdc++.so.6 \
+  /nix/store/b6mjyiadysqlh7nps52faznnqmp32604-zlib-1.3.1/lib/libz.so.1 \
   compilers/clang/13/lib
 
 COPY Projects/LLVM/llvm/builds/release-clang-lldb-18 compilers/clang/18
@@ -31,8 +33,8 @@ RUN \
   compilers/clang/18/bin/clang \
   && \
   ln -s \
-  /nix/store/xc0ga87wdclrx54qjaryahkkmkmqi9qz-gcc-15.2.0-lib/lib/libstdc++.so.6 \
-  /nix/store/c2qsgf2832zi4n29gfkqgkjpvmbmxam6-zlib-1.3.1/lib/libz.so.1 \
+  /nix/store/hh698a2nnpqr47lh52n26wi8fiah3hid-gcc-13.3.0-lib/lib/libstdc++.so.6 \
+  /nix/store/b6mjyiadysqlh7nps52faznnqmp32604-zlib-1.3.1/lib/libz.so.1 \
   compilers/clang/18/lib
 
 COPY Projects/GNU/gcc/builds/release-11 compilers/gcc/11
