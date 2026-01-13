@@ -26,17 +26,6 @@ llvm() {
   echo "${HOME}/Projects/LLVM/llvm/builds/${build}/bin/${program}"
 }
 
-klee() {
-  local build=$1
-  local program=$2
-  local program=${2:-}
-  if [ -z "${program}" ]; then
-    echo "${HOME}/Projects/klee/build-${build}"
-    return
-  fi
-  echo "${HOME}/Projects/klee/build-${build}/bin/${program}"
-}
-
 if [[ "$OS" == 'mac' ]]; then
   CC_SYSROOT_OPTS="--sysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk"
 else
@@ -68,12 +57,6 @@ if [[ "$OS" == 'mac' ]]; then
 else
   LD_COMMON_OPTS="${LD_SYSROOT_OPTS} -Wl,-no-pie"
 fi
-
-KLEE=$(klee release-debug klee)
-KLEE_COMMON_OPTS="--use-color=false --debug-execution-trace --disable-verify --output-source --search=random-path"
-
-SYM_CHECK=$(klee release-debug check-debug-info)
-SYM_CHECK_OPTS="--debug-only=check-debug-info,values-collector,variable --debug-execution-trace --disable-verify --output-stats=false --max-forks=32 --max-solver-time=5s --max-time=5s --search=random-path --tsv"
 
 LLDB_PYTHON_MODULES="$(llvm release-clang-lld-lldb-17.0.6)/lib/python3.12/site-packages"
 LLDB_PYTHON="python3.12"
