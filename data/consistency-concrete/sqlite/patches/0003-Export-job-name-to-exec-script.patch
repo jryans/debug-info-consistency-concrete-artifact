@@ -1,0 +1,34 @@
+From 1951f5aa1ed206ad0e8a0f20c06c90a5f76b7a00 Mon Sep 17 00:00:00 2001
+From: "J. Ryan Stinnett" <jryans@gmail.com>
+Date: Fri, 12 Sep 2025 14:43:49 +0100
+Subject: [PATCH 3/7] Export job name to exec script
+
+---
+ test/testrunner.tcl | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/test/testrunner.tcl b/test/testrunner.tcl
+index 161f6222e1..77ecd4026d 100755
+--- a/test/testrunner.tcl
++++ b/test/testrunner.tcl
+@@ -1529,16 +1529,17 @@ proc launch_another_job {iJob} {
+     } else {
+       puts $TRG(log) "$job(cmd)"
+     }
+ 
+   } else {
+     set pwd [pwd]
+     cd $dir
+     set fd [open $TRG(run) w]
++    puts $fd "JOB_NAME=\$(basename $job(displayname))"
+     if {$TRG(execScript)!=""} {
+       puts $fd ". $TRG(execScript)"
+     }
+     puts $fd $set_tmp_dir
+     puts $fd $job(cmd)
+     close $fd
+     set fd [open "|$TRG(runcmd) 2>@1" r]
+     cd $pwd
+-- 
+2.49.0
+

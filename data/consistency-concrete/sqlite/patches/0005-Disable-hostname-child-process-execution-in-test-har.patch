@@ -1,0 +1,42 @@
+From f6081c76a207a114072972e135f7e6a478625d6a Mon Sep 17 00:00:00 2001
+From: "J. Ryan Stinnett" <jryans@gmail.com>
+Date: Tue, 30 Sep 2025 15:18:32 +0100
+Subject: [PATCH 5/7] Disable `hostname` child process execution in test
+ harness
+
+---
+ test/tester.tcl | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+
+diff --git a/test/tester.tcl b/test/tester.tcl
+index 3fad396687..c0aa5dcf19 100644
+--- a/test/tester.tcl
++++ b/test/tester.tcl
+@@ -1283,20 +1283,20 @@ proc finalize_testing {} {
+       if {[info exists known_error($x)]} {incr nKnown}
+     }
+   }
+   if {$nKnown>0} {
+     output2 "[expr {$nErr-$nKnown}] new errors and $nKnown known errors\
+          out of $nTest tests"
+   } else {
+     set cpuinfo {}
+-    if {[catch {exec hostname} hname]==0} {
+-      regsub {\.local$} $hname {} hname
+-      set cpuinfo [string trim $hname]
+-    }
++    # if {[catch {exec hostname} hname]==0} {
++    #   regsub {\.local$} $hname {} hname
++    #   set cpuinfo [string trim $hname]
++    # }
+     append cpuinfo " $::tcl_platform(os)"
+     append cpuinfo " [expr {$::tcl_platform(pointerSize)*8}]-bit"
+     if {[string match big* $::tcl_platform(byteOrder)]} {
+       append cpuinfo " [string map {E -e} $::tcl_platform(byteOrder)]"
+     }
+     output2 "SQLite [sqlite3 -sourceid]"
+     output2 "$nErr errors out of $nTest tests on $cpuinfo"
+   }
+-- 
+2.49.0
+

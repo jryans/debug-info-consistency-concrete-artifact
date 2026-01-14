@@ -1,0 +1,37 @@
+From dee1982b60963711030990110799e162f6bcfdb2 Mon Sep 17 00:00:00 2001
+From: "J. Ryan Stinnett" <jryans@gmail.com>
+Date: Tue, 15 Jul 2025 15:34:41 +0100
+Subject: [PATCH 4/5] Add Python to Nix flake for wllvm
+
+---
+ flake.nix | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+diff --git a/flake.nix b/flake.nix
+index 617bdcb625..b482a75d42 100644
+--- a/flake.nix
++++ b/flake.nix
+@@ -28,16 +28,20 @@
+         {
+           default = pkgs.mkShell {
+             packages = with pkgs; [
+               curl
+               expat
+               gettext
+               openssl
+               perl
++              # For `wllvm`, installed into local virtualenv
++              python3.pkgs.python
++              python3.pkgs.venvShellHook
+               zlib
+             ];
++            venvDir = "./venv";
+             hardeningDisable = [ "fortify" ];
+           };
+         }
+       );
+     };
+ }
+-- 
+2.49.0
+

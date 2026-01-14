@@ -1,0 +1,109 @@
+From 0827090a560ffc829ebce5976995a87eccebc011 Mon Sep 17 00:00:00 2001
+From: "J. Ryan Stinnett" <jryans@gmail.com>
+Date: Thu, 11 Sep 2025 11:37:02 +0100
+Subject: [PATCH 1/7] Add Nix flake
+
+---
+ flake.lock | 43 +++++++++++++++++++++++++++++++++++++++++++
+ flake.nix  | 39 +++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 82 insertions(+)
+ create mode 100644 flake.lock
+ create mode 100644 flake.nix
+
+diff --git a/flake.lock b/flake.lock
+new file mode 100644
+index 0000000000..5be9df9140
+--- /dev/null
++++ b/flake.lock
+@@ -0,0 +1,43 @@
++{
++  "nodes": {
++    "nixpkgs": {
++      "locked": {
++        "lastModified": 1743975612,
++        "narHash": "sha256-o4FjFOUmjSRMK7dn0TFdAT0RRWUWD+WsspPHa+qEQT8=",
++        "owner": "NixOS",
++        "repo": "nixpkgs",
++        "rev": "a880f49904d68b5e53338d1e8c7bf80f59903928",
++        "type": "github"
++      },
++      "original": {
++        "owner": "NixOS",
++        "ref": "nixos-24.11",
++        "repo": "nixpkgs",
++        "type": "github"
++      }
++    },
++    "root": {
++      "inputs": {
++        "nixpkgs": "nixpkgs",
++        "systems": "systems"
++      }
++    },
++    "systems": {
++      "locked": {
++        "lastModified": 1681028828,
++        "narHash": "sha256-Vy1rq5AaRuLzOxct8nz4T6wlgyUR7zLU309k9mBC768=",
++        "owner": "nix-systems",
++        "repo": "default",
++        "rev": "da67096a3b9bf56a91d16901293e51ba5b49a27e",
++        "type": "github"
++      },
++      "original": {
++        "owner": "nix-systems",
++        "repo": "default",
++        "type": "github"
++      }
++    }
++  },
++  "root": "root",
++  "version": 7
++}
+diff --git a/flake.nix b/flake.nix
+new file mode 100644
+index 0000000000..64afffa5b3
+--- /dev/null
++++ b/flake.nix
+@@ -0,0 +1,39 @@
++{
++  inputs = {
++    nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.11";
++    systems.url = "github:nix-systems/default";
++  };
++
++  outputs =
++    {
++      nixpkgs,
++      systems,
++      ...
++    }:
++    let
++      forEachSystem =
++        f:
++        nixpkgs.lib.genAttrs (import systems) (
++          system:
++          f {
++            pkgs = import nixpkgs {
++              inherit system;
++            };
++          }
++        );
++    in
++    {
++      devShells = forEachSystem (
++        { pkgs }:
++        {
++          default = pkgs.mkShell {
++            packages = with pkgs; [
++              tcl
++              zlib
++            ];
++            hardeningDisable = [ "fortify" ];
++          };
++        }
++      );
++    };
++}
+-- 
+2.49.0
+

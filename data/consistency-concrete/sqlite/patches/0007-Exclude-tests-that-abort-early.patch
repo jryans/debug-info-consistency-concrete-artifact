@@ -1,0 +1,45 @@
+From b7ea370c2b916dba5073f5c259163eb5075a3be7 Mon Sep 17 00:00:00 2001
+From: "J. Ryan Stinnett" <jryans@gmail.com>
+Date: Thu, 2 Oct 2025 11:56:58 +0100
+Subject: [PATCH 7/7] Exclude tests that abort early
+
+---
+ test/permutations.test | 3 +++
+ 1 file changed, 3 insertions(+)
+
+diff --git a/test/permutations.test b/test/permutations.test
+index a717531860..91467853c9 100644
+--- a/test/permutations.test
++++ b/test/permutations.test
+@@ -213,25 +213,28 @@ test_suite "extraquick" -prefix "" -description {
+      wal3.test fts4merge* sort2.test mmap1.test walcrash* \
+      percentile.test where8m.test walcksum.test savepoint3.test \
+      fuzzer1.test fuzzer3.test fts3expr3.test
+ ]
+ 
+ test_suite "debug-info-consistency" -prefix "" -description {
+   Run one test per feature group.
+   Slower tests are excluded.
++  Tests that abort early are also excluded.
+ } -files [
+   test_set $allquicktests -exclude *malloc* *ioerr* *fault* *bigfile* *_err* \
+       *fts5corrupt* *fts5big* *fts5aj* *rbucrash* \
+       altercol* alterdropcol* auth* big* bitvec* capi* changes* *corrupt* \
+       count* createtab* date* dbstatus* *delete* diskfull* e_* expr* func* \
+       interrupt* like* manydb* memdb* multiplex* oserror* ovfl* pcache* \
+       percentile* pragma* printf* quota* readonly* recover* rowhash* \
+       savepoint* schema* shared* shm* sort* speed* swarm* table* tkt* *trans* \
+       update* *vacuum* varint* wal64k* walsetlk* zeroblob* \
++      exists* external_reader* rowallock* symlink* syscall* unixexcl* \
++      wal.test walro.test \
+       *1.* *2.* *3.* *4.* *5.* *6.* *7.* *8.* *8.* *9.* \
+       *A.* *B.* *C.* *D.* *E.* *F.* *G.* *H.* *I.* *J.* *K.* *L.* *M.* \
+       *N.* *O.* *P.* *Q.* *R.* *S.* *T.* *U.* *V.* *W.* *X.* *Y.* *Z.*
+ ]
+ 
+ test_suite "mmap" -prefix "mm-" -description {
+   Similar to veryquick. Except with memory mapping enabled.
+ } -presql {
+-- 
+2.49.0
+

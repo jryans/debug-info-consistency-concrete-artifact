@@ -1,0 +1,37 @@
+From 3f5edc977211ea172dc71a5c2652d63568d4ec42 Mon Sep 17 00:00:00 2001
+From: "J. Ryan Stinnett" <jryans@gmail.com>
+Date: Thu, 8 May 2025 17:18:05 +0100
+Subject: [PATCH 2/5] Add dependencies to Nix flake
+
+---
+ flake.nix | 5 +++++
+ 1 file changed, 5 insertions(+)
+
+diff --git a/flake.nix b/flake.nix
+index 2f7d4edca3..34affe757d 100644
+--- a/flake.nix
++++ b/flake.nix
+@@ -23,15 +23,20 @@
+         );
+     in
+     {
+       devShells = forEachSystem (
+         { pkgs }:
+         {
+           default = pkgs.mkShell {
+             packages = with pkgs; [
++              curl
++              expat
++              gettext
++              openssl
++              zlib
+             ];
+             hardeningDisable = [ "fortify" ];
+           };
+         }
+       );
+     };
+ }
+-- 
+2.49.0
+

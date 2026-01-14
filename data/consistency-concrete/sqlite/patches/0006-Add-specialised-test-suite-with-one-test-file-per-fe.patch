@@ -1,0 +1,75 @@
+From e1dbeb28bea8984366f4640051d8ec60361772b8 Mon Sep 17 00:00:00 2001
+From: "J. Ryan Stinnett" <jryans@gmail.com>
+Date: Tue, 30 Sep 2025 16:45:33 +0100
+Subject: [PATCH 6/7] Add specialised test suite with one test file per feature
+ group
+
+---
+ test/permutations.test | 17 +++++++++++++++++
+ test/testrunner.tcl    |  2 +-
+ 2 files changed, 18 insertions(+), 1 deletion(-)
+
+diff --git a/test/permutations.test b/test/permutations.test
+index 87a14ef661..a717531860 100644
+--- a/test/permutations.test
++++ b/test/permutations.test
+@@ -210,16 +210,33 @@ test_suite "extraquick" -prefix "" -description {
+   slower tests are omitted.
+ } -files [
+   test_set $allquicktests -exclude *malloc* *ioerr* *fault* *bigfile* *_err* \
+      wal3.test fts4merge* sort2.test mmap1.test walcrash* \
+      percentile.test where8m.test walcksum.test savepoint3.test \
+      fuzzer1.test fuzzer3.test fts3expr3.test
+ ]
+ 
++test_suite "debug-info-consistency" -prefix "" -description {
++  Run one test per feature group.
++  Slower tests are excluded.
++} -files [
++  test_set $allquicktests -exclude *malloc* *ioerr* *fault* *bigfile* *_err* \
++      *fts5corrupt* *fts5big* *fts5aj* *rbucrash* \
++      altercol* alterdropcol* auth* big* bitvec* capi* changes* *corrupt* \
++      count* createtab* date* dbstatus* *delete* diskfull* e_* expr* func* \
++      interrupt* like* manydb* memdb* multiplex* oserror* ovfl* pcache* \
++      percentile* pragma* printf* quota* readonly* recover* rowhash* \
++      savepoint* schema* shared* shm* sort* speed* swarm* table* tkt* *trans* \
++      update* *vacuum* varint* wal64k* walsetlk* zeroblob* \
++      *1.* *2.* *3.* *4.* *5.* *6.* *7.* *8.* *8.* *9.* \
++      *A.* *B.* *C.* *D.* *E.* *F.* *G.* *H.* *I.* *J.* *K.* *L.* *M.* \
++      *N.* *O.* *P.* *Q.* *R.* *S.* *T.* *U.* *V.* *W.* *X.* *Y.* *Z.*
++]
++
+ test_suite "mmap" -prefix "mm-" -description {
+   Similar to veryquick. Except with memory mapping enabled.
+ } -presql {
+   pragma mmap_size = 268435456;
+ } -files [
+   test_set $allquicktests -exclude *malloc* *ioerr* *fault* -include malloc.test
+ ]
+ 
+diff --git a/test/testrunner.tcl b/test/testrunner.tcl
+index d766d8fd69..f90a3012d5 100755
+--- a/test/testrunner.tcl
++++ b/test/testrunner.tcl
+@@ -1081,17 +1081,17 @@ proc add_tcl_jobs {build config patternlist {shelldepid ""}} {
+     if {![job_matches_any_pattern $patternlist "$config [file tail $f]"]} {
+       continue
+     }
+ 
+     if {[file pathtype $f]!="absolute"} { set f [file join $::testdir $f] }
+     set f [file normalize $f]
+ 
+     set displayname [string map [list $topdir/ {}] $f]
+-    if {$config=="full" || $config=="veryquick"} {
++    if {$config=="full" || $config=="veryquick" || $config=="debug-info-consistency"} {
+       set cmd "$testfixture $f"
+     } else {
+       set cmd "$testfixture $testrunner_tcl $config $f"
+       set displayname "config=$config $displayname"
+     }
+     if {$build!=""} {
+       set displayname "[lindex $build 2] $displayname"
+     }
+-- 
+2.49.0
+

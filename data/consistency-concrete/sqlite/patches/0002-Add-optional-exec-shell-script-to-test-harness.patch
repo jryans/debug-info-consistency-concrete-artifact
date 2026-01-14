@@ -1,0 +1,93 @@
+From 2e4d66376302d194e6e6e5431d45349569e441bf Mon Sep 17 00:00:00 2001
+From: "J. Ryan Stinnett" <jryans@gmail.com>
+Date: Thu, 11 Sep 2025 17:22:12 +0100
+Subject: [PATCH 2/7] Add optional exec shell script to test harness
+
+---
+ test/testrunner.tcl | 9 +++++++++
+ 1 file changed, 9 insertions(+)
+
+diff --git a/test/testrunner.tcl b/test/testrunner.tcl
+index 0c6982f426..161f6222e1 100755
+--- a/test/testrunner.tcl
++++ b/test/testrunner.tcl
+@@ -100,16 +100,17 @@ Usage:
+     --explain                Write summary to stdout
+     --fuzzdb FILENAME        Additional external fuzzcheck database
+     --jobs NUM               Run tests using NUM separate processes
+     --omit CONFIGS           Omit configs on comma-separated list CONFIGS
+     --status                 Show the full "status" report while running
+     --stop-on-coredump       Stop running if any test segfaults
+     --stop-on-error          Stop running after any reported error
+     --zipvfs ZIPVFSDIR       ZIPVFS source directory
++    --exec-script FILENAME   Additional shell script prepended to each job
+ 
+ Special values for PERMUTATION that work with plain tclsh:
+ 
+     list      - show all allowed PERMUTATION arguments.
+     mdevtest  - tests recommended prior to normal development check-ins.
+     release   - full release test with various builds.
+     sdevtest  - like mdevtest but using ASAN and UBSAN.
+ 
+@@ -206,16 +207,17 @@ proc default_njob {} {
+ 
+ #-------------------------------------------------------------------------
+ # Setup various default values in the global TRG() array.
+ # 
+ set TRG(dbname) [file normalize testrunner.db]
+ set TRG(logname) [file normalize testrunner.log]
+ set TRG(build.logname) [file normalize testrunner_build.log]
+ set TRG(info_script) [file normalize [info script]]
++set TRG(execScript) ""
+ set TRG(timeout) 10000              ;# Default busy-timeout for testrunner.db 
+ set TRG(nJob)    [default_njob]     ;# Default number of helper processes
+ set TRG(patternlist) [list]
+ set TRG(cmdline) $argv
+ set TRG(reporttime) 2000
+ set TRG(fuzztest) 0                 ;# is the fuzztest option present.
+ set TRG(zipvfs) ""                  ;# -zipvfs option, if any
+ set TRG(buildonly) 0                ;# True if --buildonly option 
+@@ -795,16 +797,20 @@ for {set ii 0} {$ii < [llength $argv]} {incr ii} {
+     if {($n>2 && [string match "$a*" --jobs]) || $a=="-j"} {
+       incr ii
+       set TRG(nJob) [lindex $argv $ii]
+       if {$isLast} { usage }
+     } elseif {($n>2 && [string match "$a*" --zipvfs]) || $a=="-z"} {
+       incr ii
+       set TRG(zipvfs) [file normalize [lindex $argv $ii]]
+       if {$isLast} { usage }
++    } elseif {($n>2 && [string match "$a*" --exec-script])} {
++      incr ii
++      set TRG(execScript) [file normalize [lindex $argv $ii]]
++      if {$isLast} { usage }
+     } elseif {($n>2 && [string match "$a*" --buildonly]) || $a=="-b"} {
+       set TRG(buildonly) 1
+     } elseif {($n>2 && [string match "$a*" --config]) || $a=="-c"} {
+       incr ii
+       set TRG(config) [lindex $argv $ii]
+     } elseif {($n>2 && [string match "$a*" --dryrun]) || $a=="-d"} {
+       set TRG(dryrun) 1
+     } elseif {($n>2 && [string match "$a*" --explain]) || $a=="-e"} {
+@@ -1523,16 +1529,19 @@ proc launch_another_job {iJob} {
+     } else {
+       puts $TRG(log) "$job(cmd)"
+     }
+ 
+   } else {
+     set pwd [pwd]
+     cd $dir
+     set fd [open $TRG(run) w]
++    if {$TRG(execScript)!=""} {
++      puts $fd ". $TRG(execScript)"
++    }
+     puts $fd $set_tmp_dir
+     puts $fd $job(cmd)
+     close $fd
+     set fd [open "|$TRG(runcmd) 2>@1" r]
+     cd $pwd
+ 
+     fconfigure $fd -blocking false -translation binary
+     fileevent $fd readable [list script_input_ready $fd $iJob $job(jobid)]
+-- 
+2.49.0
+
