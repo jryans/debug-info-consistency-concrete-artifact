@@ -40,17 +40,18 @@ for i in ${!levels[*]}; do
   make \
     CC="$(llvm release-clang-lldb ${version} clang)" \
     LD="$(llvm release-clang-lldb ${version} clang)" \
-    ECFLAGS="${CC_COMMON_OPTS} ${CC_CLANG_OPTS} ${!cc_level_opts} -fsave-optimization-record" \
+    ECFLAGS="${CC_COMMON_OPTS} ${CC_CLANG_OPTS} ${!cc_level_opts}" \
     LDFLAGS="${CC_COMMON_OPTS} ${CC_CLANG_OPTS} ${LD_COMMON_OPTS} -L./libavdevice -L./libavfilter -L./libavformat -L./libavcodec -L./libswresample -L./libswscale -L./libavutil"
 
   mkdir -p "${SCRIPT_DIR}/clang/${version}/${level}"
 
-  ## Collect optimisation remarks
-  ( \
-    find . -name '*.opt.yaml' | \
-    xargs cat \
-    > "${SCRIPT_DIR}/clang/${version}/${level}/${TARGET_NAME}.opt.yaml" \
-  )
+  ## TODO: Experiment with optimisation remarks from `-fsave-optimization-record`
+  # ## Collect optimisation remarks
+  # ( \
+  #   find . -name '*.opt.yaml' | \
+  #   xargs cat \
+  #   > "${SCRIPT_DIR}/clang/${version}/${level}/${TARGET_NAME}.opt.yaml" \
+  # )
 
   ## Gather debug info
   if [[ "$OS" == 'mac' ]]; then

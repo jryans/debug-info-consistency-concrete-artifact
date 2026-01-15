@@ -43,18 +43,19 @@ for i in ${!levels[*]}; do
   make \
     CC="$(llvm release-clang-lldb ${version} clang)" \
     OPTIMIZE="" \
-    EXTRA_CFLAGS="${CC_COMMON_OPTS} ${CC_CLANG_OPTS} ${!cc_level_opts} -fsave-optimization-record" \
+    EXTRA_CFLAGS="${CC_COMMON_OPTS} ${CC_CLANG_OPTS} ${!cc_level_opts}" \
     EXTRA_LDFLAGS="${CC_COMMON_OPTS} ${CC_CLANG_OPTS} ${LD_COMMON_OPTS}" \
     TARGET="x264_r"
 
   mkdir -p "${SCRIPT_DIR}/clang/${version}/${level}"
 
-  ## Collect optimisation remarks
-  ( \
-    find . -name '*.opt.yaml' | \
-    xargs cat \
-    > "${SCRIPT_DIR}/clang/${version}/${level}/${TARGET_NAME}.opt.yaml" \
-  )
+  ## TODO: Experiment with optimisation remarks from `-fsave-optimization-record`
+  # ## Collect optimisation remarks
+  # ( \
+  #   find . -name '*.opt.yaml' | \
+  #   xargs cat \
+  #   > "${SCRIPT_DIR}/clang/${version}/${level}/${TARGET_NAME}.opt.yaml" \
+  # )
 
   ## Gather debug info
   if [[ "$OS" == 'mac' ]]; then

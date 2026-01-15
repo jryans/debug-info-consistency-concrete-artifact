@@ -44,18 +44,19 @@ for i in ${!levels[*]}; do
     CC="$(llvm release-clang-lldb ${version} clang)" \
     CXX="$(llvm release-clang-lldb ${version} clang++)" \
     OPTIMIZE="" \
-    EXTRA_CFLAGS="${CC_COMMON_OPTS} ${CC_CLANG_OPTS} ${!cc_level_opts} -fsave-optimization-record" \
-    EXTRA_CXXFLAGS="${CC_COMMON_OPTS} ${CC_CLANG_OPTS} ${!cc_level_opts} -fsave-optimization-record -std=c++03 -fcommon" \
+    EXTRA_CFLAGS="${CC_COMMON_OPTS} ${CC_CLANG_OPTS} ${!cc_level_opts}" \
+    EXTRA_CXXFLAGS="${CC_COMMON_OPTS} ${CC_CLANG_OPTS} ${!cc_level_opts} -std=c++03 -fcommon" \
     EXTRA_LDFLAGS="${CC_COMMON_OPTS} ${CC_CLANG_OPTS} ${LD_COMMON_OPTS}"
 
   mkdir -p "${SCRIPT_DIR}/clang/${version}/${level}"
 
-  ## Collect optimisation remarks
-  ( \
-    find . -name '*.opt.yaml' | \
-    xargs cat \
-    > "${SCRIPT_DIR}/clang/${version}/${level}/${TARGET_NAME}.opt.yaml" \
-  )
+  ## TODO: Experiment with optimisation remarks from `-fsave-optimization-record`
+  # ## Collect optimisation remarks
+  # ( \
+  #   find . -name '*.opt.yaml' | \
+  #   xargs cat \
+  #   > "${SCRIPT_DIR}/clang/${version}/${level}/${TARGET_NAME}.opt.yaml" \
+  # )
 
   ## Gather debug info
   if [[ "$OS" == 'mac' ]]; then
