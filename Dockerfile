@@ -7,6 +7,7 @@ RUN \
     nixpkgs.gcc \
     nixpkgs.glibc \
     nixpkgs.patchelf \
+    nixpkgs.sd \
     nixpkgs.zlib \
     nixpkgs.zstd
 
