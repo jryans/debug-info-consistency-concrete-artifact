@@ -6,6 +6,10 @@ if [ "${PWD##*/}" != "build" ]; then
   echo "Does not appear to be the expected directory, abort!"
   exit
 fi
+if [ ! -f "../flake.nix" ]; then
+  echo "Does not appear to be the expected directory, abort!"
+  exit
+fi
 
 SCRIPT_DIR=$(dirname "${BASH_SOURCE[0]}")
 source "${SCRIPT_DIR}/../vars.sh"
