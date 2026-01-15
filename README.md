@@ -49,7 +49,7 @@ following projects and commits / versions were used:
 Some of these projects were patched in various ways
 to integrate their test suites with our experiments.
 Those patches are included in this artifact.
-Each project has a `checkout.sh` script
+Each project has a `prepare.sh` script
 which will retrieve the project sources,
 checkout out the expected commit above,
 and then apply additional patches.

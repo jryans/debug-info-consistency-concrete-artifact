@@ -1,15 +1,22 @@
 #!/usr/bin/env bash
 set -eux
 
-if [ "${PWD##*/}" != "ffmpeg" ]; then
+SCRIPT_DIR=$(cd "$(dirname "${BASH_SOURCE[0]}")" &> /dev/null && pwd)
+
+# Expects to run from this script's directory
+if [ "${PWD}" != "${SCRIPT_DIR}" ]; then
   echo "Does not appear to be the expected directory, abort!"
   exit
 fi
 
-SCRIPT_DIR=$(dirname "${BASH_SOURCE[0]}")
-source "${SCRIPT_DIR}/../vars.sh"
-
 echo "## Preparing \`ffmpeg\`"
+
+git clone https://git.ffmpeg.org/ffmpeg.git ../../../ffmpeg
+
+pushd ../../../ffmpeg
+
+git checkout e0723b7e4e22492275d476fcd30d759e1198bc5b
+git am ${SCRIPT_DIR}/patches/*.patch
 
 # Configure
 # Focus on `ffmpeg` binary, disable other programs
@@ -46,3 +53,5 @@ sd ' -Wno-maybe-uninitialized' '' ffbuild/config.mak
 
 # Download FATE test suite samples
 make fate-rsync
+
+popd

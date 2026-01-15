@@ -1,15 +1,25 @@
 #!/usr/bin/env bash
 set -eux
 
-if [ "${PWD##*/}" != "build" ]; then
+SCRIPT_DIR=$(cd "$(dirname "${BASH_SOURCE[0]}")" &> /dev/null && pwd)
+
+# Expects to run from this script's directory
+if [ "${PWD}" != "${SCRIPT_DIR}" ]; then
   echo "Does not appear to be the expected directory, abort!"
   exit
 fi
 
-SCRIPT_DIR=$(dirname "${BASH_SOURCE[0]}")
-source "${SCRIPT_DIR}/../vars.sh"
-
 echo "## Preparing \`sqlite\`"
+
+git clone https://github.com/sqlite/sqlite ../../../sqlite
+
+pushd ../../../sqlite
+
+git checkout 8ed5e7365e6f12f427910188bbf6b254daad2ef6
+git am ${SCRIPT_DIR}/patches/*.patch
+
+mkdir build
+cd build
 
 # Configure
 # Disable threads
@@ -17,3 +27,5 @@ echo "## Preparing \`sqlite\`"
 ../configure \
   --disable-threadsafe \
   --disable-amalgamation
+
+popd
