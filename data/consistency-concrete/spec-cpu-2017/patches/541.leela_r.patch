@@ -1,0 +1,165 @@
+diff --git a/541.leela_r/build/build_base_mytest-m64.0000-bench/FastBoard.cpp b/541.leela_r/build/build_base_mytest-m64.0000/FastBoard.cpp
+index 9f8cdde..62c78b0 100644
+--- a/541.leela_r/build/build_base_mytest-m64.0000-bench/FastBoard.cpp
++++ b/541.leela_r/build/build_base_mytest-m64.0000/FastBoard.cpp
+@@ -1377,17 +1377,17 @@ int FastBoard::get_pattern_fast_augment(const int sq) {
+          | (sqs[6] <<  2)
+          | (sqs[7] <<  0);            
+     
+     lib[0] = fast_in_atari(sq - size - 2);    
+     lib[1] = fast_in_atari(sq - 1);    
+     lib[2] = fast_in_atari(sq + 1);    
+     lib[3] = fast_in_atari(sq + size + 2);
+     
+-    res |= (lib[0] << 19 | lib[1] << 18 | lib[2] << 17 | lib[3] << 16);
++    res |= (lib[0] << 19 | lib[1] << 18 | lib[2] << 17 | lib[3] << 16) % 256;
+     
+     return res;
+ }
+ 
+ int FastBoard::get_pattern3(const int sq, bool invert) {
+     std::tr1::array<square_t, 8> sqs;
+     const int size = m_boardsize;
+     
+diff --git a/541.leela_r/build/build_base_mytest-m64.0000-bench/Leela.cpp b/541.leela_r/build/build_base_mytest-m64.0000/Leela.cpp
+index 5d8d1f2..165d417 100644
+--- a/541.leela_r/build/build_base_mytest-m64.0000-bench/Leela.cpp
++++ b/541.leela_r/build/build_base_mytest-m64.0000/Leela.cpp
+@@ -48,29 +48,29 @@ int main (int argc, char *argv[]) {
+ 
+     Matcher::get_Matcher();
+     
+     std::auto_ptr<GameState> maingame(new GameState);                
+ 
+     int counter = 0;
+      
+     try {
+-        for (;;) {
++        // for (;;) {
+             std::auto_ptr<SGFTree> sgftree(new SGFTree);
+ 
+             sgftree->load_from_file(filename, counter++);                
+             *maingame = sgftree->get_mainline();
+ 
+ 	    int move;
+-            do {
++            // do {
+                 std::auto_ptr<UCTSearch> search(new UCTSearch(*maingame));
+ 
+                 move = search->think(maingame->get_to_move(), UCTSearch::NORMAL);
+ 
+                 maingame->play_move(move);  
+                 maingame->display_state();                              
+-            } while (maingame->get_passes() < 2 && move != FastBoard::RESIGN);
+-        }
++            // } while (maingame->get_passes() < 2 && move != FastBoard::RESIGN);
++        // }
+     } catch (std::exception & e) {
+     };
+ 
+     return 0;
+ }
+diff --git a/541.leela_r/build/build_base_mytest-m64.0000-bench/Matcher.cpp b/541.leela_r/build/build_base_mytest-m64.0000/Matcher.cpp
+index 704e8bf..7eebba4 100644
+--- a/541.leela_r/build/build_base_mytest-m64.0000-bench/Matcher.cpp
++++ b/541.leela_r/build/build_base_mytest-m64.0000/Matcher.cpp
+@@ -23,17 +23,17 @@ void Matcher::set_Matcher(Matcher * m) {
+         delete s_matcher;
+     }
+     
+     s_matcher = m;
+ }
+ 
+ // initialize matcher data
+ Matcher::Matcher() { 
+-    const int max = 1 << ((8 * 2) + 4);
++    const int max = 256;
+ 
+     m_patterns[FastBoard::BLACK].resize(max);    
+     m_patterns[FastBoard::WHITE].resize(max);    
+    
+     // minimal board we need is 3x3
+     FastBoard board;
+     board.reset_board(3);        
+      
+diff --git a/541.leela_r/build/build_base_mytest-m64.0000-bench/Playout.cpp b/541.leela_r/build/build_base_mytest-m64.0000/Playout.cpp
+index 9e6eaf8..7e3484b 100644
+--- a/541.leela_r/build/build_base_mytest-m64.0000-bench/Playout.cpp
++++ b/541.leela_r/build/build_base_mytest-m64.0000/Playout.cpp
+@@ -39,31 +39,31 @@ void Playout::run(FastState & state, bool resigning) {
+     const int boardsize = state.board.get_boardsize();
+         
+     const int resign = (boardsize * boardsize) / 3;
+     const int playoutlen = (boardsize * boardsize) * 2;        
+     
+     int counter = 0; 
+     
+     // do the main loop        
+-    do {                                    
++    // do {
+         int vtx = state.play_random_move();
+ 
+         if (counter < 30 && vtx != FastBoard::PASS) {
+             int color = !state.get_to_move();
+                         
+             if (!m_sq[!color][vtx]) {
+                 m_sq[color][vtx] = true;
+             }                
+         }           
+         
+         counter++;                 
+-    } while (state.get_passes() < 2 
+-             && state.get_movenum() < playoutlen
+-             && (!resigning || abs(state.estimate_mc_score()) < resign));     
++    // } while (state.get_passes() < 2
++    //          && state.get_movenum() < playoutlen
++    //          && (!resigning || abs(state.estimate_mc_score()) < resign));
+              
+     float score = state.calculate_mc_score();                                  
+              
+     // get ownership info             
+     bitboard_t blackowns;     
+     
+     for (int i = 0; i < boardsize; i++) {
+         for (int j = 0; j < boardsize; j++) {
+diff --git a/541.leela_r/build/build_base_mytest-m64.0000-bench/UCTSearch.cpp b/541.leela_r/build/build_base_mytest-m64.0000/UCTSearch.cpp
+index a2fe8ec..b7f9d03 100644
+--- a/541.leela_r/build/build_base_mytest-m64.0000-bench/UCTSearch.cpp
++++ b/541.leela_r/build/build_base_mytest-m64.0000/UCTSearch.cpp
+@@ -372,17 +372,17 @@ int UCTSearch::think(int color, passflag_t passflag) {
+     m_root.kill_superkos(m_rootstate);        
+     
+     m_run = true;            
+     //int cpus = SMP::get_num_cpus();        
+     int cpus = 1;
+     
+     bool keeprunning = true;   
+     int iterations = 0; 
+-    do {
++    // do {
+         KoState currstate = m_rootstate;
+                 
+         play_simulation(currstate, &m_root);                   
+ 
+         /*Time elapsed;
+         centiseconds_elapsed = Time::timediff(start, elapsed);*/
+ 
+         // output some stats every second
+@@ -400,17 +400,17 @@ int UCTSearch::think(int color, passflag_t passflag) {
+                 /*last_update = centiseconds_elapsed;*/
+                 dump_analysis();                        
+             }  
+             keeprunning = (!m_hasrunflag || (*m_runflag));
+         }   
+         if (iterations++ > max_iterations) {
+             keeprunning = false;
+         }     
+-    } while(keeprunning);
++    // } while(keeprunning);
+     
+     // stop the search
+     m_run = false;
+     
+     if (!m_root.has_children()) {
+         return FastBoard::PASS;
+     }

@@ -8,5 +8,6 @@ set -eux
 #    (https://www.spec.org/cpu2017/Docs/quick-start.html)
 # 3. Build the `intrate` benchmarks:
 #    runcpu --config=gcc-linux-x86.cfg --action=buildsetup intrate
-# 4. Run the `build.sh` in each benchmark's generated
+# 4. Apply patches to several modified projects from `patches` directory
+# 5. Run the `build.sh` in each benchmark's generated
 #    `build_base_mytest-m64.0000` directory

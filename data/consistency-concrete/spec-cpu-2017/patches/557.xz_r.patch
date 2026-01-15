@@ -1,0 +1,134 @@
+diff --git a/557.xz_r/build/build_base_mytest-m64.0000-bench/spec.c b/557.xz_r/build/build_base_mytest-m64.0000/spec.c
+index cbe3e49..a7312d9 100644
+--- a/557.xz_r/build/build_base_mytest-m64.0000-bench/spec.c
++++ b/557.xz_r/build/build_base_mytest-m64.0000/spec.c
+@@ -161,27 +161,27 @@ int main (int argc, char *argv[]) {
+             char buf[256];
+             sprintf(buf, "out.uncompress.%d%s", level, extreme ? "e" : "");
+             fd = open (buf, O_WRONLY|O_CREAT|O_TRUNC, 0644);
+             write(fd, spec_fd[0].buf, spec_fd[0].len);
+             close(fd);
+         }
+ #endif
+ 
+-        spec_sum(0, check_sha, SHASIZE);
+-        if (compare_sum(input_sha, check_sha, SHASIZE)) {
+-            printf("Computed SHA-%d sum for decompression step did not match expected\n", SHASIZE);
+-            printf("  Generated: ");
+-            print_sum(stdout, check_sha, SHASIZE);
+-            printf("\n");
+-            printf("   Expected: ");
+-            print_sum(stdout, input_sha, SHASIZE);
+-            printf("\n");
+-            exit (0);
+-        }
++        // spec_sum(0, check_sha, SHASIZE);
++        // if (compare_sum(input_sha, check_sha, SHASIZE)) {
++        //     printf("Computed SHA-%d sum for decompression step did not match expected\n", SHASIZE);
++        //     printf("  Generated: ");
++        //     print_sum(stdout, check_sha, SHASIZE);
++        //     printf("\n");
++        //     printf("   Expected: ");
++        //     print_sum(stdout, input_sha, SHASIZE);
++        //     printf("\n");
++        //     exit (0);
++        // }
+         debug_time();
+         printf("Uncompressed data compared correctly\n");
+         spec_reset(1);
+         spec_rewind(0);
+         printf("Tested %" PRId64 " MiB buffer: OK!\n", input_size);
+         fflush(stdout);
+     }
+ 
+diff --git a/557.xz_r/build/build_base_mytest-m64.0000-bench/spec_mem_io/spec_mem_io.c b/557.xz_r/build/build_base_mytest-m64.0000/spec_mem_io/spec_mem_io.c
+index 4a74e4a..a696e0f 100644
+--- a/557.xz_r/build/build_base_mytest-m64.0000-bench/spec_mem_io/spec_mem_io.c
++++ b/557.xz_r/build/build_base_mytest-m64.0000/spec_mem_io/spec_mem_io.c
+@@ -181,27 +181,27 @@ unsigned char *spec_mem_load (spec_fd_t *fds, unsigned fd_limit, int num, char *
+     close(fd);
+ 
+     /* Now do the decompression */
+     fds[num].pos = fds[num].len = 0;
+     spec_uncompress(tmpfd, num);
+     debug(1, "Compressed size: %" PRId64 "; Uncompressed size: %" PRId64 "\n", fds[tmpfd].len, fds[num].len);
+     fds[tmpfd].pos = fds[tmpfd].len = 0;
+ 
+-    spec_mem_sum(fds + num, gen_sum, bits);
+-    if (compare_sum(sum, gen_sum, bits)) {
+-        fprintf(stderr, "Computed SHA-%d sum for decompressed input did not match expected\n", bits);
+-        fprintf(stderr, "  Generated: ");
+-        print_sum(stderr, gen_sum, bits);
+-        fprintf(stderr, "\n   Expected: ");
+-        print_sum(stderr, sum, bits);
+-        fprintf(stderr, "\n");
+-        exit (1);
+-    }
+-    debug(1, "SHA-%d of decompressed data compared successfully!\n", bits);
++    // spec_mem_sum(fds + num, gen_sum, bits);
++    // if (compare_sum(sum, gen_sum, bits)) {
++    //     fprintf(stderr, "Computed SHA-%d sum for decompressed input did not match expected\n", bits);
++    //     fprintf(stderr, "  Generated: ");
++    //     print_sum(stderr, gen_sum, bits);
++    //     fprintf(stderr, "\n   Expected: ");
++    //     print_sum(stderr, sum, bits);
++    //     fprintf(stderr, "\n");
++    //     exit (1);
++    // }
++    // debug(1, "SHA-%d of decompressed data compared successfully!\n", bits);
+ 
+     if (fds[num].len > size)
+     {
+         debug(1, "Decompressed data too large; truncating to requested size %" PRId64 "\n", size);
+         fds[num].len = size;
+     }
+     fds[num].pos = 0;
+ 
+@@ -209,20 +209,20 @@ unsigned char *spec_mem_load (spec_fd_t *fds, unsigned fd_limit, int num, char *
+ 	int64_t tmp = size - fds[num].len;
+ 	if (tmp > fds[num].len) tmp = fds[num].len;
+ 	debug(3, "Duplicating %" PRId64 " bytes\n", tmp);
+ 	memcpy(fds[num].buf+fds[num].len, fds[num].buf, tmp);
+ 	fds[num].len += tmp;
+     }
+ 
+     /* Compute the SHA-2 sum of the full input */
+-    spec_mem_sum(fds + num, gen_sum, bits);
+-    printf("SHA-%d of input file: ", bits);
+-    print_sum(stdout, gen_sum, bits);
+-    printf("\n");
++    // spec_mem_sum(fds + num, gen_sum, bits);
++    // printf("SHA-%d of input file: ", bits);
++    // print_sum(stdout, gen_sum, bits);
++    // printf("\n");
+ 
+     return gen_sum;
+ }
+ 
+ int64_t spec_mem_read (spec_fd_t *fds, unsigned fd_limit, int fd, unsigned char *buf, int64_t size) {
+     int rc = 0;
+     debug(5, "spec_mem_read: %d@%p, %p, %" PRId64 " = ", fd, (void *)fds, (void *)buf, size);
+     if (fd < 0 || (unsigned)fd >= fd_limit) {
+diff --git a/557.xz_r/build/build_base_mytest-m64.0000-bench/spec_mem_io/spec_mem_io.h b/557.xz_r/build/build_base_mytest-m64.0000/spec_mem_io/spec_mem_io.h
+index c1f94d2..cc9772e 100644
+--- a/557.xz_r/build/build_base_mytest-m64.0000-bench/spec_mem_io/spec_mem_io.h
++++ b/557.xz_r/build/build_base_mytest-m64.0000/spec_mem_io/spec_mem_io.h
+@@ -86,17 +86,17 @@ unsigned char *spec_mem_sum (spec_fd_t *fd, unsigned char *sum, int bits);
+ # if !defined(SPEC_WINDOWS)
+ #  include <unistd.h>
+ # endif
+ 
+ #ifndef O_BINARY
+ #define O_BINARY 0
+ #endif
+ #define MiB (1024 * 1024)
+-#define FILE_CHUNK (254 * MiB)
++#define FILE_CHUNK (1 * MiB)
+ 
+ #if defined(DEBUG)
+ #define debug(level, ...)           { if (level<dbglvl) { printf(__VA_ARGS__); fflush(stdout); } }
+ #else
+ #define debug(level, ...)
+ #endif
+ 
+ #if defined(SPEC_MEMOP_PAUSE)
