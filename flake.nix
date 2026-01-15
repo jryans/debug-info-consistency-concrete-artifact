@@ -35,9 +35,6 @@
               python3.pkgs.matplotlib
               python3.pkgs.numpy
               python3.pkgs.seaborn
-
-              # TODO: Use a smaller scheme with list of additional packages
-              texlive.combined.scheme-full
             ];
             venvDir = "./venv";
           };
