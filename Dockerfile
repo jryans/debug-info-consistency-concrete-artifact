@@ -12,6 +12,9 @@ RUN \
     nixpkgs.sd \
     nixpkgs.zlib \
     nixpkgs.zstd && \
+  nix-env --set-flag priority 0 gcc-wrapper-13.3.0 && \
+  nix-env -iA \
+    nixpkgs.clang && \
   git config --global user.email "artifact.user@bundled.container" && \
   git config --global user.name "Artifact User"
 
