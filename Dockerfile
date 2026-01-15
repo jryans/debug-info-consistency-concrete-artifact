@@ -1,6 +1,8 @@
 FROM nixos/nix:2.28.4
 
 RUN \
+  mkdir -p ~/.config/nix && \
+  echo "experimental-features = flakes nix-command" >> ~/.config/nix/nix.conf && \
   nix-channel --add https://nixos.org/channels/nixos-24.11 nixpkgs && \
   nix-channel --update && \
   nix-env -iA \
