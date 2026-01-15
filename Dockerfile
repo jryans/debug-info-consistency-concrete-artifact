@@ -9,7 +9,9 @@ RUN \
     nixpkgs.patchelf \
     nixpkgs.sd \
     nixpkgs.zlib \
-    nixpkgs.zstd
+    nixpkgs.zstd && \
+  git config --global user.email "artifact.user@bundled.container" && \
+  git config --global user.name "Artifact User"
 
 ENV BUNDLED=1
 
