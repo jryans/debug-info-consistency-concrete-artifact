@@ -25,46 +25,6 @@ for i in ${!levels[*]}; do
   level=${levels[$i]}
   version=${versions[$i]}
 
-  echo "## Building \`${TARGET_NAME}\` (Clang ${version}, ${level}) for bitcode"
-
-  make clean
-  git clean -f
-
-  ## Build via bitcode collection wrapper
-  cc_level_opts="CC_${level}_OPTS"
-  make \
-    CC=wllvm \
-    CFLAGS="${CC_COMMON_OPTS} ${CC_CLANG_OPTS} ${!cc_level_opts}" \
-    LDFLAGS="${LD_COMMON_OPTS}" \
-    NO_PTHREADS=1
-
-  ## Extract bitcode
-  extract-bc ${TARGET_PATH}
-  mkdir -p "${SCRIPT_DIR}/clang/${version}/${level}"
-  cp \
-    ${TARGET_PATH}.bc \
-    "${SCRIPT_DIR}/clang/${version}/${level}/${TARGET_NAME}.bc"
-
-  ## Disassemble bitcode for debugging
-  $(llvm release-clang-lldb ${version} llvm-dis) \
-    "${SCRIPT_DIR}/clang/${version}/${level}/${TARGET_NAME}.bc"
-
-  # Collect function attributes when building O0
-  if [ "${level}" = "O0" ]; then
-    echo "## Analysing \`${TARGET_NAME}\` (Clang ${version}, ${level}) function attributes"
-
-    mkdir -p "${SCRIPT_DIR}/clang/${version}/${level}-function-attrs"
-
-    $(llvm release-clang-lldb ${version} opt) \
-      -o "${SCRIPT_DIR}/clang/${version}/${level}-function-attrs/${TARGET_NAME}.bc" \
-      -passes=function-attrs \
-      "${SCRIPT_DIR}/clang/${version}/${level}/${TARGET_NAME}.bc"
-
-    ## Disassemble bitcode for debugging
-    $(llvm release-clang-lldb ${version} llvm-dis) \
-      "${SCRIPT_DIR}/clang/${version}/${level}-function-attrs/${TARGET_NAME}.bc"
-  fi
-
   echo "## Building \`${TARGET_NAME}\` (Clang ${version}, ${level}) for binary with debug info"
 
   make clean
