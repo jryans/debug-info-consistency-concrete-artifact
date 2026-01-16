@@ -11,6 +11,11 @@ if [ ! -f "../flake.nix" ]; then
   exit
 fi
 
+if [ -n "${BUNDLED:-}" -a -z "${IN_NIX_SHELL:-}" ]; then
+  nix develop --command bash "${BASH_SOURCE[0]}"
+  exit
+fi
+
 SCRIPT_DIR=$(dirname "${BASH_SOURCE[0]}")
 source "${SCRIPT_DIR}/../vars.sh"
 
@@ -143,3 +148,7 @@ cp \
 echo "## Cleanup"
 make clean
 git clean -f
+
+if [ -n "${BUNDLED:-}" ]; then
+  exit
+fi
