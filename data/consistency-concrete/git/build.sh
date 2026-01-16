@@ -86,6 +86,12 @@ for i in ${!levels[*]}; do
   cp -R \
     GIT-BUILD-OPTIONS templates/blt t/helper/test-tool \
     "${SCRIPT_DIR}/clang/${version}/${level}/test-deps/"
+
+  ## Replace wrapper with customised version
+  mkdir -p "${SCRIPT_DIR}/clang/${version}/${level}/test-deps/bin-wrappers/default/"
+  cp \
+    "${SCRIPT_DIR}/bin-wrappers/git" \
+    "${SCRIPT_DIR}/clang/${version}/${level}/test-deps/bin-wrappers/default/git"
 done
 
 # Clang source-based code coverage
@@ -164,6 +170,12 @@ for i in ${!levels[*]}; do
   cp -R \
     GIT-BUILD-OPTIONS templates/blt t/helper/test-tool \
     "${SCRIPT_DIR}/gcc/${version}/${level}/test-deps/"
+
+  ## Replace wrapper with customised version
+  mkdir -p "${SCRIPT_DIR}/gcc/${version}/${level}/test-deps/bin-wrappers/default/"
+  cp \
+    "${SCRIPT_DIR}/bin-wrappers/git" \
+    "${SCRIPT_DIR}/gcc/${version}/${level}/test-deps/bin-wrappers/default/git"
 done
 
 # Cleanup
