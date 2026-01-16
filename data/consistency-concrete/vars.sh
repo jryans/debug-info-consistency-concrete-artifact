@@ -1,4 +1,4 @@
-SCRIPT_DIR=$(dirname "${BASH_SOURCE[0]}")
+VARS_DIR=$(dirname "${BASH_SOURCE[0]}")
 
 UNAME=`uname`
 
@@ -13,7 +13,7 @@ gcc() {
   local version=${2}
   local program=${3:-}
   if [ -n "${BUNDLED:-}" ]; then
-    echo "${SCRIPT_DIR}/../../compilers/gcc/${version}/bin/${program}"
+    echo "${VARS_DIR}/../../compilers/gcc/${version}/bin/${program}"
     return
   fi
   if [ -z "${program}" ]; then
@@ -28,7 +28,7 @@ llvm() {
   local version=${2}
   local program=${3:-}
   if [ -n "${BUNDLED:-}" ]; then
-    echo "${SCRIPT_DIR}/../../compilers/clang/${version}/bin/${program}"
+    echo "${VARS_DIR}/../../compilers/clang/${version}/bin/${program}"
     return
   fi
   if [ -z "${program}" ]; then
