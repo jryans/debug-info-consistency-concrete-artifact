@@ -1,6 +1,16 @@
 #!/usr/bin/env bash
 set -eux
 
+SCRIPT_DIR=$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")
+
+# In bundled mode, jump to expected directory and invoke Nix shell
+if [ -n "${BUNDLED:-}" -a -z "${IN_NIX_SHELL:-}" ]; then
+  pushd /artifact/ffmpeg
+  nix develop --command bash "${SCRIPT_DIR}/${BASH_SOURCE[0]}"
+  popd
+  exit
+fi
+
 # Expects to run from program source directory
 if [ "${PWD##*/}" != "ffmpeg" ]; then
   echo "Does not appear to be the expected directory, abort!"
@@ -11,12 +21,6 @@ if [ ! -f "flake.nix" ]; then
   exit
 fi
 
-if [ -n "${BUNDLED:-}" -a -z "${IN_NIX_SHELL:-}" ]; then
-  nix develop --command bash "${BASH_SOURCE[0]}"
-  exit
-fi
-
-SCRIPT_DIR=$(dirname "${BASH_SOURCE[0]}")
 source "${SCRIPT_DIR}/../vars.sh"
 
 export LLVM_COMPILER="clang"
