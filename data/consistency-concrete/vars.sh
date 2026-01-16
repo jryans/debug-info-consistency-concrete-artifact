@@ -87,6 +87,9 @@ if [[ "$OS" == 'mac' ]]; then
   CON_COLLECT_INSTRUMENTATION="DYLD_INSERT_LIBRARIES=${HOME}/Projects/debug-info-concrete-check/binary-instrumentation/build/libcollect-trace-preload.dylib"
 else
   CON_COLLECT_INSTRUMENTATION="LD_PRELOAD=${HOME}/Projects/debug-info-concrete-check/binary-instrumentation/build/libcollect-trace-preload.so"
+  if [ -n "${BUNDLED:-}" ]; then
+    CON_COLLECT_INSTRUMENTATION="LD_PRELOAD=/artifact/tools/binary-instrumentation/build/libcollect-trace-preload.so"
+  fi
 fi
 
 CON_TRACE_default_OPTS="CON_TRACE_SOURCE=1"
@@ -99,3 +102,6 @@ CON_TRACE_ld_eld_ifd_OPTS="CON_TRACE_LOCATION=0 CON_TRACE_EXTERNAL_LIBRARY=0 CON
 CON_FILTER_TRACE_MEMORY_EFFECTS="${HOME}/Projects/debug-info-concrete-check/filter-trace/build/filter-trace-memory-effects"
 
 CON_COMPARE="${HOME}/Projects/debug-info-concrete-check/compare-traces/target/release/debug-info-concrete-compare-traces"
+if [ -n "${BUNDLED:-}" ]; then
+  CON_COMPARE="/artifact/tools/compare-traces/target/release/debug-info-concrete-compare-traces"
+fi
