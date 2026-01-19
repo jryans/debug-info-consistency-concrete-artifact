@@ -1,7 +1,7 @@
 From e1dbeb28bea8984366f4640051d8ec60361772b8 Mon Sep 17 00:00:00 2001
 From: "J. Ryan Stinnett" <jryans@gmail.com>
 Date: Tue, 30 Sep 2025 16:45:33 +0100
-Subject: [PATCH 6/7] Add specialised test suite with one test file per feature
+Subject: [PATCH 6/8] Add specialised test suite with one test file per feature
  group
 
 ---

@@ -1,7 +1,7 @@
 From 0827090a560ffc829ebce5976995a87eccebc011 Mon Sep 17 00:00:00 2001
 From: "J. Ryan Stinnett" <jryans@gmail.com>
 Date: Thu, 11 Sep 2025 11:37:02 +0100
-Subject: [PATCH 1/7] Add Nix flake
+Subject: [PATCH 1/8] Add Nix flake
 
 ---
  flake.lock | 43 +++++++++++++++++++++++++++++++++++++++++++

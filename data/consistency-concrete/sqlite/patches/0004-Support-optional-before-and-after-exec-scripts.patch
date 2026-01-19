@@ -1,7 +1,7 @@
 From 6f811547740d8a538860214df5ef46472c0baf19 Mon Sep 17 00:00:00 2001
 From: "J. Ryan Stinnett" <jryans@gmail.com>
 Date: Fri, 12 Sep 2025 14:56:00 +0100
-Subject: [PATCH 4/7] Support optional before and after exec scripts
+Subject: [PATCH 4/8] Support optional before and after exec scripts
 
 ---
  test/testrunner.tcl | 21 +++++++++++++++------

@@ -1,7 +1,7 @@
 From 1951f5aa1ed206ad0e8a0f20c06c90a5f76b7a00 Mon Sep 17 00:00:00 2001
 From: "J. Ryan Stinnett" <jryans@gmail.com>
 Date: Fri, 12 Sep 2025 14:43:49 +0100
-Subject: [PATCH 3/7] Export job name to exec script
+Subject: [PATCH 3/8] Export job name to exec script
 
 ---
  test/testrunner.tcl | 1 +

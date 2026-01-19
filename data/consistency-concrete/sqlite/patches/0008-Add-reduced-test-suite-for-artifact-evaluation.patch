@@ -1,0 +1,63 @@
+From 3d42a92db7a56e00935f62a8139a365316cfce89 Mon Sep 17 00:00:00 2001
+From: "J. Ryan Stinnett" <jryans@gmail.com>
+Date: Mon, 19 Jan 2026 17:54:52 +0000
+Subject: [PATCH 8/8] Add reduced test suite for artifact evaluation
+
+---
+ test/permutations.test | 6 ++++++
+ test/testrunner.tcl    | 2 +-
+ 2 files changed, 7 insertions(+), 1 deletion(-)
+
+diff --git a/test/permutations.test b/test/permutations.test
+index 91467853c9..06970200b4 100644
+--- a/test/permutations.test
++++ b/test/permutations.test
+@@ -230,16 +230,22 @@ test_suite "debug-info-consistency" -prefix "" -description {
+       update* *vacuum* varint* wal64k* walsetlk* zeroblob* \
+       exists* external_reader* rowallock* symlink* syscall* unixexcl* \
+       wal.test walro.test \
+       *1.* *2.* *3.* *4.* *5.* *6.* *7.* *8.* *8.* *9.* \
+       *A.* *B.* *C.* *D.* *E.* *F.* *G.* *H.* *I.* *J.* *K.* *L.* *M.* \
+       *N.* *O.* *P.* *Q.* *R.* *S.* *T.* *U.* *V.* *W.* *X.* *Y.* *Z.*
+ ]
+ 
++test_suite "debug-info-consistency-reduced" -prefix "" -description {
++  Subset of debug-info-consistency for artifact evaluation.
++} -files {
++  limit.test minmax.test
++}
++
+ test_suite "mmap" -prefix "mm-" -description {
+   Similar to veryquick. Except with memory mapping enabled.
+ } -presql {
+   pragma mmap_size = 268435456;
+ } -files [
+   test_set $allquicktests -exclude *malloc* *ioerr* *fault* -include malloc.test
+ ]
+ 
+diff --git a/test/testrunner.tcl b/test/testrunner.tcl
+index f90a3012d5..724a6f3bba 100755
+--- a/test/testrunner.tcl
++++ b/test/testrunner.tcl
+@@ -1081,17 +1081,17 @@ proc add_tcl_jobs {build config patternlist {shelldepid ""}} {
+     if {![job_matches_any_pattern $patternlist "$config [file tail $f]"]} {
+       continue
+     }
+ 
+     if {[file pathtype $f]!="absolute"} { set f [file join $::testdir $f] }
+     set f [file normalize $f]
+ 
+     set displayname [string map [list $topdir/ {}] $f]
+-    if {$config=="full" || $config=="veryquick" || $config=="debug-info-consistency"} {
++    if {$config=="full" || $config=="veryquick" || $config=="debug-info-consistency" || $config=="debug-info-consistency-reduced"} {
+       set cmd "$testfixture $f"
+     } else {
+       set cmd "$testfixture $testrunner_tcl $config $f"
+       set displayname "config=$config $displayname"
+     }
+     if {$build!=""} {
+       set displayname "[lindex $build 2] $displayname"
+     }
+-- 
+2.49.0
+

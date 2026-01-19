@@ -1,7 +1,7 @@
 From f6081c76a207a114072972e135f7e6a478625d6a Mon Sep 17 00:00:00 2001
 From: "J. Ryan Stinnett" <jryans@gmail.com>
 Date: Tue, 30 Sep 2025 15:18:32 +0100
-Subject: [PATCH 5/7] Disable `hostname` child process execution in test
+Subject: [PATCH 5/8] Disable `hostname` child process execution in test
  harness
 
 ---

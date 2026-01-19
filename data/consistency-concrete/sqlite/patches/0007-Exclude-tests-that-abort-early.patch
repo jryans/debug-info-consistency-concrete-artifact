@@ -1,7 +1,7 @@
 From b7ea370c2b916dba5073f5c259163eb5075a3be7 Mon Sep 17 00:00:00 2001
 From: "J. Ryan Stinnett" <jryans@gmail.com>
 Date: Thu, 2 Oct 2025 11:56:58 +0100
-Subject: [PATCH 7/7] Exclude tests that abort early
+Subject: [PATCH 7/8] Exclude tests that abort early
 
 ---
  test/permutations.test | 3 +++

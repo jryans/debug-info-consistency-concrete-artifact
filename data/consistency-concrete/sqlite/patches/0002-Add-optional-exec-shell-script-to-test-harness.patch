@@ -1,7 +1,7 @@
 From 2e4d66376302d194e6e6e5431d45349569e441bf Mon Sep 17 00:00:00 2001
 From: "J. Ryan Stinnett" <jryans@gmail.com>
 Date: Thu, 11 Sep 2025 17:22:12 +0100
-Subject: [PATCH 2/7] Add optional exec shell script to test harness
+Subject: [PATCH 2/8] Add optional exec shell script to test harness
 
 ---
  test/testrunner.tcl | 9 +++++++++
