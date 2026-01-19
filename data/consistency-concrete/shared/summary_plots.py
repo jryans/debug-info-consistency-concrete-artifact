@@ -89,3 +89,4 @@ def divergences_by_package(df):
     xlabel="Package",
     ylabel="Fraction of unique trace events",
   )
+  return g

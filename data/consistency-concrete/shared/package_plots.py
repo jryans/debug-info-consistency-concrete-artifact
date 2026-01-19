@@ -118,6 +118,7 @@ def divergences_by_compiler_and_optimisation_level(df):
     xlabel="Compiler and optimisation level",
     ylabel="Fraction of unique trace events",
   )
+  return g
 
 def divergences_by_optimisation_level(df):
   df = df.copy()
@@ -153,6 +154,7 @@ def divergences_by_optimisation_level(df):
     xlabel="Compiler and optimisation level",
     ylabel="Fraction of unique trace events",
   )
+  return g
 
 def divergences_by_version(df):
   df = df.copy()
@@ -188,3 +190,4 @@ def divergences_by_version(df):
     xlabel="Compiler",
     ylabel="Fraction of unique trace events",
   )
+  return g
