@@ -6,6 +6,7 @@ RUN \
   nix-channel --add https://nixos.org/channels/nixos-24.11 nixpkgs && \
   nix-channel --update && \
   nix-env -iA \
+    nixpkgs.bc \
     nixpkgs.gcc \
     nixpkgs.glibc \
     nixpkgs.patchelf \
