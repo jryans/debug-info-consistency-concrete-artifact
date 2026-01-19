@@ -155,7 +155,3 @@ echo "## Cleanup"
 make clean
 git clean -f
 find . -name '*.o.*' -delete
-
-if [ -n "${BUNDLED:-}" ]; then
-  exit
-fi

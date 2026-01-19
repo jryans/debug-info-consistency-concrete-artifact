@@ -152,7 +152,3 @@ cp \
 echo "## Cleanup"
 make clean
 git clean -f
-
-if [ -n "${BUNDLED:-}" ]; then
-  exit
-fi
