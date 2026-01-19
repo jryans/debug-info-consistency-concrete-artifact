@@ -10,6 +10,7 @@ RUN \
     nixpkgs.glibc \
     nixpkgs.patchelf \
     nixpkgs.sd \
+    nixpkgs.vim \
     nixpkgs.zlib \
     nixpkgs.zstd && \
   nix-env --set-flag priority 0 gcc-wrapper-13.3.0 && \
