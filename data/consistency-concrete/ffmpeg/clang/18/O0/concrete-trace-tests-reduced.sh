@@ -1,0 +1,82 @@
+#!/usr/bin/env bash
+set -ux
+
+SCRIPT_PATH=$(readlink -f "${BASH_SOURCE[0]}")
+SCRIPT_DIR=$(dirname "${SCRIPT_PATH}")
+
+# In bundled mode, jump to expected directory and invoke Nix shell
+if [ -n "${BUNDLED:-}" -a -z "${IN_NIX_SHELL:-}" ]; then
+  pushd /artifact/ffmpeg
+  nix develop --command bash "${SCRIPT_PATH}"
+  popd
+  exit
+fi
+
+# Expects to run from program source directory
+if [ "${PWD##*/}" != "ffmpeg" ]; then
+  echo "Does not appear to be the expected directory, abort!"
+  exit
+fi
+
+source "${SCRIPT_DIR}/../../../../vars.sh"
+
+TARGET_NAME="ffmpeg"
+
+echo "## Collecting concrete trace of \`${TARGET_NAME}\`"
+
+# Tests from the target's test suite to analyse
+tests=(
+  aac-fixed-al04_44
+  ac3-2.0
+)
+
+# Different trace variants to collect
+# These map to different trace options in `vars.sh`
+trace_variants=(default)
+
+# We only collect a single trace variant at the moment
+trace_variant="default"
+trace_variant_opts="CON_TRACE_${trace_variant//-/_}_OPTS"
+echo "### Collecting trace variant \`${trace_variant}\`: ${!trace_variant_opts}"
+
+JOBS="$(echo "$(nproc) - 4" | bc)"
+
+for test in ${tests[*]}; do
+  (
+    echo "### Analysing execution of \`${TARGET_NAME}\` test \`${test}\`"
+
+    # Make trace directory used as temp storage during execution
+    CON_TRACE_DIR="${SCRIPT_DIR}/concrete-trace/${test}/${trace_variant}/traces"
+    export CON_TRACE_DIR
+    # Remove first, just in case something left over from aborted run
+    rm -rf ${CON_TRACE_DIR}
+    mkdir -p ${CON_TRACE_DIR}
+
+    make \
+      fate-${test} \
+      TARGET_EXEC="${SCRIPT_DIR}/concrete-trace-exec.sh"
+
+    # Collect traces from all test processes
+    # Sorted by file creation time from oldest to newest
+    (
+      cd ${CON_TRACE_DIR};
+      # Keep individual process files, re-number for matching across runs
+      i=0
+      for trace in $(ls -tr); do
+        mv ${trace} ../${i}
+        let i+=1
+      done
+    )
+
+    # Remove temp trace storage
+    rm -rf ${CON_TRACE_DIR}
+  ) &
+
+  # Only a fixed number of jobs allowed in parallel
+  if [[ $(jobs -r -p | wc -l) -ge ${JOBS} ]]; then
+    wait -n
+  fi
+done
+
+# Ensure all tasks have completed
+wait
