@@ -87,10 +87,13 @@ for i in ${!levels[*]}; do
     GIT-BUILD-OPTIONS templates/blt t/helper/test-tool \
     "${SCRIPT_DIR}/clang/${version}/${level}/test-deps/"
 
-  ## Replace wrapper with customised version
+  ## Replace test suite dependencies with customised copies
   mkdir -p "${SCRIPT_DIR}/clang/${version}/${level}/test-deps/bin-wrappers/default/"
   cp \
-    "${SCRIPT_DIR}/bin-wrappers/git" \
+    "${SCRIPT_DIR}/test-deps/GIT-BUILD-OPTIONS" \
+    "${SCRIPT_DIR}/clang/${version}/${level}/test-deps/GIT-BUILD-OPTIONS"
+  cp \
+    "${SCRIPT_DIR}/test-deps/bin-wrappers/git" \
     "${SCRIPT_DIR}/clang/${version}/${level}/test-deps/bin-wrappers/default/git"
 done
 
@@ -171,10 +174,13 @@ for i in ${!levels[*]}; do
     GIT-BUILD-OPTIONS templates/blt t/helper/test-tool \
     "${SCRIPT_DIR}/gcc/${version}/${level}/test-deps/"
 
-  ## Replace wrapper with customised version
+  ## Replace test suite dependencies with customised copies
   mkdir -p "${SCRIPT_DIR}/gcc/${version}/${level}/test-deps/bin-wrappers/default/"
   cp \
-    "${SCRIPT_DIR}/bin-wrappers/git" \
+    "${SCRIPT_DIR}/test-deps/GIT-BUILD-OPTIONS" \
+    "${SCRIPT_DIR}/gcc/${version}/${level}/test-deps/GIT-BUILD-OPTIONS"
+  cp \
+    "${SCRIPT_DIR}/test-deps/bin-wrappers/git" \
     "${SCRIPT_DIR}/gcc/${version}/${level}/test-deps/bin-wrappers/default/git"
 done
 
