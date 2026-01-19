@@ -15,11 +15,9 @@ TARGET_NAME="git"
 echo "## Collecting concrete trace of \`${TARGET_NAME}\`"
 
 # Tests from the target's test suite to analyse
-tests=$(
-  find . -name 't[0-9]*.sh' |
-  sort |
-  cut -d '/' -f 2 |
-  cut -d '.' -f 1
+tests=(
+  t0001-init
+  t1007-hash-object
 )
 
 # Different trace variants to collect
