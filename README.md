@@ -54,6 +54,15 @@ which will retrieve the project sources,
 checkout out the expected commit above,
 and then apply additional patches.
 
+The SPEC CPU 2017 benchmark is not publicly available.
+If you have access to the SPEC CPU 2017 1.0.2 installation media
+and would like to exercise this part of the artifact,
+we recommend mapping this into the artifact Docker container:
+
+```sh
+$ docker run -it --rm --mount type=bind,src=<SPEC ISO dir>,dst=/artifact/spec/iso,readonly <...>
+```
+
 In addition, some other tools are invoked by scripts here:
 
 | Tools    | Commit |
