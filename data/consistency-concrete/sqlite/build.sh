@@ -30,6 +30,10 @@ export LLVM_COMPILER_PATH="$(llvm release-clang-lldb 13)/bin"
 TARGET_NAME="testfixture"
 TARGET_PATH="${TARGET_NAME}"
 
+# Build and statically link TCL with debug info enabled
+# so we can trace into this dependency
+TCL_DEBUG=$(nix-build -E 'with import <nixpkgs> {}; enableDebugging (tcl.overrideAttrs (final: prev: { configureFlags = prev.configureFlags ++ ["--disable-shared"]; }))' --no-out-link)
+
 # Clang
 
   levels=(O0 O1)
@@ -55,7 +59,7 @@ for i in ${!levels[*]}; do
   cc_level_opts="CC_${level}_OPTS"
   make \
     CC="$(llvm release-clang-lldb ${version} clang)" \
-    CFLAGS="${CC_COMMON_OPTS} ${CC_CLANG_OPTS} ${!cc_level_opts} -L/nix/store/jmxm0x5w0p5a1v849a0cpklsckjwj5nz-tcl-8.6.15/lib ${LD_COMMON_OPTS}" \
+    CFLAGS="${CC_COMMON_OPTS} ${CC_CLANG_OPTS} ${!cc_level_opts} -L${TCL_DEBUG}/lib ${LD_COMMON_OPTS}" \
     testfixture
 
   mkdir -p "${SCRIPT_DIR}/clang/${version}/${level}"
@@ -94,7 +98,7 @@ make clean
 cc_level_opts="CC_${level}_OPTS"
 make \
   CC="$(llvm release-clang-lldb ${version} clang)" \
-  CFLAGS="${CC_COMMON_OPTS} ${CC_CLANG_OPTS} ${!cc_level_opts} -fprofile-instr-generate -fcoverage-mapping -L/nix/store/jmxm0x5w0p5a1v849a0cpklsckjwj5nz-tcl-8.6.15/lib ${LD_COMMON_OPTS}" \
+  CFLAGS="${CC_COMMON_OPTS} ${CC_CLANG_OPTS} ${!cc_level_opts} -fprofile-instr-generate -fcoverage-mapping -L${TCL_DEBUG}/lib ${LD_COMMON_OPTS}" \
   testfixture
 
 mkdir -p "${SCRIPT_DIR}/clang/${version}/${level}-coverage"
@@ -122,7 +126,7 @@ cp \
 #   cc_level_opts="CC_${level}_OPTS"
 #   make \
 #     CC="$(gcc release ${version} gcc)" \
-#     CFLAGS="${CC_COMMON_OPTS} ${CC_GCC_OPTS} ${!cc_level_opts}" -L/nix/store/jmxm0x5w0p5a1v849a0cpklsckjwj5nz-tcl-8.6.15/lib ${LD_COMMON_OPTS}" \
+#     CFLAGS="${CC_COMMON_OPTS} ${CC_GCC_OPTS} ${!cc_level_opts}" -L${TCL_DEBUG}/lib ${LD_COMMON_OPTS}" \
 #     testfixture
 
 #   mkdir -p "${SCRIPT_DIR}/gcc/${version}/${level}"
