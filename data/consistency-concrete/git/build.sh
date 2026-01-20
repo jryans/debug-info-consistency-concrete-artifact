@@ -1,12 +1,13 @@
 #!/usr/bin/env bash
 set -eux
 
-SCRIPT_DIR=$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")
+SCRIPT_PATH=$(readlink -f "${BASH_SOURCE[0]}")
+SCRIPT_DIR=$(dirname "${SCRIPT_PATH}")
 
 # In bundled mode, jump to expected directory and invoke Nix shell
 if [ -n "${BUNDLED:-}" -a -z "${IN_NIX_SHELL:-}" ]; then
   pushd /artifact/git
-  nix develop --command bash "${SCRIPT_DIR}/${BASH_SOURCE[0]}"
+  nix develop --command bash "${SCRIPT_PATH}"
   popd
   exit
 fi
