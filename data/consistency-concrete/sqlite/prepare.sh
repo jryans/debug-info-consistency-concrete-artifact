@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 set -eux
 
-SCRIPT_DIR=$(cd "$(dirname "${BASH_SOURCE[0]}")" &> /dev/null && pwd)
+SCRIPT_PATH=$(readlink -f "${BASH_SOURCE[0]}")
+SCRIPT_DIR=$(dirname "${SCRIPT_PATH}")
 
 # Expects to run from this script's directory
 if [ "${PWD}" != "${SCRIPT_DIR}" ]; then
@@ -21,11 +22,6 @@ git am ${SCRIPT_DIR}/patches/*.patch
 mkdir build
 cd build
 
-# Configure
-# Disable threads
-# Disable amalgamation
-../configure \
-  --disable-threadsafe \
-  --disable-amalgamation
+${SCRIPT_DIR}/configure.sh
 
 popd

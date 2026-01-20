@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 set -eux
 
-SCRIPT_DIR=$(cd "$(dirname "${BASH_SOURCE[0]}")" &> /dev/null && pwd)
+SCRIPT_PATH=$(readlink -f "${BASH_SOURCE[0]}")
+SCRIPT_DIR=$(dirname "${SCRIPT_PATH}")
 
 # Expects to run from this script's directory
 if [ "${PWD}" != "${SCRIPT_DIR}" ]; then
