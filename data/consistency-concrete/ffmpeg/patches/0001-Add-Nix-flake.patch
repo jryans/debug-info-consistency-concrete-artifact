@@ -1,12 +1,12 @@
-From b574d6b1b4e22da2771160b84dcf21cec0539ebf Mon Sep 17 00:00:00 2001
+From 5648824daf17e043f806bfc087d3d8868dd2f7bc Mon Sep 17 00:00:00 2001
 From: "J. Ryan Stinnett" <jryans@gmail.com>
 Date: Thu, 19 Jun 2025 15:44:53 +0100
 Subject: [PATCH] Add Nix flake
 
 ---
  flake.lock | 43 +++++++++++++++++++++++++++++++++++++++++++
- flake.nix  | 37 +++++++++++++++++++++++++++++++++++++
- 2 files changed, 80 insertions(+)
+ flake.nix  | 38 ++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 81 insertions(+)
  create mode 100644 flake.lock
  create mode 100644 flake.nix
 
@@ -61,10 +61,10 @@ index 0000000000..5be9df9140
 +}
 diff --git a/flake.nix b/flake.nix
 new file mode 100644
-index 0000000000..2f7d4edca3
+index 0000000000..1002327a3a
 --- /dev/null
 +++ b/flake.nix
-@@ -0,0 +1,37 @@
+@@ -0,0 +1,38 @@
 +{
 +  inputs = {
 +    nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.11";
@@ -95,6 +95,7 @@ index 0000000000..2f7d4edca3
 +        {
 +          default = pkgs.mkShell {
 +            packages = with pkgs; [
++              rsync
 +            ];
 +            hardeningDisable = [ "fortify" ];
 +          };
