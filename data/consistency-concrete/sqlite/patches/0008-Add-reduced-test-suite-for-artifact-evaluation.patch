@@ -1,4 +1,4 @@
-From 3d42a92db7a56e00935f62a8139a365316cfce89 Mon Sep 17 00:00:00 2001
+From e856630b8d25de785f2e66009f9761016df442ff Mon Sep 17 00:00:00 2001
 From: "J. Ryan Stinnett" <jryans@gmail.com>
 Date: Mon, 19 Jan 2026 17:54:52 +0000
 Subject: [PATCH 8/8] Add reduced test suite for artifact evaluation
@@ -9,7 +9,7 @@ Subject: [PATCH 8/8] Add reduced test suite for artifact evaluation
  2 files changed, 7 insertions(+), 1 deletion(-)
 
 diff --git a/test/permutations.test b/test/permutations.test
-index 91467853c9..06970200b4 100644
+index 91467853c9..7ce8f3cd05 100644
 --- a/test/permutations.test
 +++ b/test/permutations.test
 @@ -230,16 +230,22 @@ test_suite "debug-info-consistency" -prefix "" -description {
@@ -24,7 +24,7 @@ index 91467853c9..06970200b4 100644
 +test_suite "debug-info-consistency-reduced" -prefix "" -description {
 +  Subset of debug-info-consistency for artifact evaluation.
 +} -files {
-+  limit.test minmax.test
++  coalesce.test normalize.test
 +}
 +
  test_suite "mmap" -prefix "mm-" -description {
