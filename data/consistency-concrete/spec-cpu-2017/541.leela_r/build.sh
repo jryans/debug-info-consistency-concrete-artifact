@@ -1,13 +1,24 @@
 #!/usr/bin/env bash
 set -eux
 
+SCRIPT_PATH=$(readlink -f "${BASH_SOURCE[0]}")
+SCRIPT_DIR=$(dirname "${SCRIPT_PATH}")
+BENCHMARK_NAME=$(basename "${SCRIPT_DIR}")
+
+# In bundled mode, jump to expected directory and invoke Nix shell
+if [ -n "${BUNDLED:-}" -a -z "${IN_NIX_SHELL:-}" ]; then
+  pushd /artifact/spec/benchspec/CPU/${BENCHMARK_NAME}/build/build_base_mytest-m64.0000
+  nix develop --command bash "${SCRIPT_PATH}"
+  popd
+  exit
+fi
+
 # Expects to run from program build directory
 if [ "${PWD##*/}" != "build_base_mytest-m64.0000" ]; then
   echo "Does not appear to be the expected directory, abort!"
   exit
 fi
 
-SCRIPT_DIR=$(dirname "${BASH_SOURCE[0]}")
 source "${SCRIPT_DIR}/../../vars.sh"
 
 PIPELINE_UTILS_PATH="${SCRIPT_DIR}/../../shared/pipeline.py"
@@ -15,8 +26,8 @@ PIPELINE_UTILS_PATH="${SCRIPT_DIR}/../../shared/pipeline.py"
 export LLVM_COMPILER="clang"
 export LLVM_COMPILER_PATH="$(llvm release-clang-lldb 13)/bin"
 
-# Expected by SPEC build system
-export SPEC="${HOME}/Projects/Benchmarks/spec-cpu-2017"
+# Define `SPEC` variable used by SPEC build system
+source ../../../../../shrc
 
 TARGET_NAME="leela"
 TARGET_PATH="leela_r"
