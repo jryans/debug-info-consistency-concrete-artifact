@@ -9,6 +9,7 @@ RUN \
     nixpkgs.bc \
     nixpkgs.gcc \
     nixpkgs.glibc \
+    nixpkgs.patch \
     nixpkgs.patchelf \
     nixpkgs.sd \
     nixpkgs.vim \
@@ -64,7 +65,7 @@ RUN \
     tools/binary-instrumentation/build
 
 COPY Projects/debug-info-concrete-check/compare-traces tools/compare-traces
-RUN \
-  patchelf --set-interpreter \
-    /nix/store/g8zyryr9cr6540xsyg4avqkwgxpnwj2a-glibc-2.40-66/lib/ld-linux-x86-64.so.2 \
-    tools/compare-traces/target/release/debug-info-concrete-compare-traces
+
+# Redistributable binaries only, customised for NixOS
+# Installation media must be mounted as well to make use of benchmark
+COPY Projects/Benchmarks/spec-cpu-2017/bin spec/bin
