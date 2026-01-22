@@ -26,11 +26,15 @@ WORKDIR /artifact
 
 COPY Research/Papers/debug-info-consistency-concrete-artifact .
 
+# Arrange ELF interpreter location expected by copied in binaries
+RUN \
+  mkdir -p /nix/store/maxa3xhmxggrc5v2vc0c3pjb79hjlkp9-glibc-2.40-66/lib && \
+  ln -s \
+    $(patchelf --print-interpreter $(which bash)) \
+    /nix/store/maxa3xhmxggrc5v2vc0c3pjb79hjlkp9-glibc-2.40-66/lib/ld-linux-x86-64.so.2
+
 COPY Projects/LLVM/llvm/builds/release-clang-lldb-13 compilers/clang/13
 RUN \
-  patchelf --set-interpreter \
-    /nix/store/g8zyryr9cr6540xsyg4avqkwgxpnwj2a-glibc-2.40-66/lib/ld-linux-x86-64.so.2 \
-    compilers/clang/13/bin/clang && \
   ln -s \
     /nix/store/hh698a2nnpqr47lh52n26wi8fiah3hid-gcc-13.3.0-lib/lib/libstdc++.so.6 \
     /nix/store/b6mjyiadysqlh7nps52faznnqmp32604-zlib-1.3.1/lib/libz.so.1 \
@@ -38,25 +42,14 @@ RUN \
 
 COPY Projects/LLVM/llvm/builds/release-clang-lldb-18 compilers/clang/18
 RUN \
-  patchelf --set-interpreter \
-    /nix/store/g8zyryr9cr6540xsyg4avqkwgxpnwj2a-glibc-2.40-66/lib/ld-linux-x86-64.so.2 \
-    compilers/clang/18/bin/clang && \
   ln -s \
     /nix/store/hh698a2nnpqr47lh52n26wi8fiah3hid-gcc-13.3.0-lib/lib/libstdc++.so.6 \
     /nix/store/b6mjyiadysqlh7nps52faznnqmp32604-zlib-1.3.1/lib/libz.so.1 \
     compilers/clang/18/lib
 
 COPY Projects/GNU/gcc/builds/release-11 compilers/gcc/11
-RUN \
-  patchelf --set-interpreter \
-    /nix/store/g8zyryr9cr6540xsyg4avqkwgxpnwj2a-glibc-2.40-66/lib/ld-linux-x86-64.so.2 \
-    compilers/gcc/11/bin/gcc
 
 COPY Projects/GNU/gcc/builds/release-14 compilers/gcc/14
-RUN \
-  patchelf --set-interpreter \
-    /nix/store/g8zyryr9cr6540xsyg4avqkwgxpnwj2a-glibc-2.40-66/lib/ld-linux-x86-64.so.2 \
-    compilers/gcc/14/bin/gcc
 
 COPY Projects/debug-info-concrete-check/binary-instrumentation tools/binary-instrumentation
 COPY Projects/QBDI/QBDI tools/binary-instrumentation/build/QBDI
