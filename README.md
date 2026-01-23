@@ -10,7 +10,7 @@ TODO: Add DOI badge
 
 <!-- [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10568392.svg)](https://doi.org/10.5281/zenodo.10568392) -->
 
-## Usage
+## Setup
 
 We highly recommend using this artifact via the prepared Docker image
 available from Zenodo. Along with the scripts in this repo, the Docker image
@@ -44,6 +44,8 @@ figures included in the paper.
 The `figures` directory contains the figures as shown in the published paper.
 They've been archived in a `figures/paper` directory for potential comparison
 during your own execution of the artifact.
+
+## Evaluation
 
 If you prefer a hands-off, automated approach to exercising this artifact,
 you can:
