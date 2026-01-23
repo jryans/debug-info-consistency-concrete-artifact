@@ -1,12 +1,10 @@
 ## Artifact
 
-This is the artifact for the [OOPSLA 2026 paper][paper]:
+This is the artifact for the OOPSLA 2026 paper:
 
 Debugging Debugging Information Using Dynamic Call Trees
 
 by J. Ryan Stinnett and Stephen Kell.
-
-TODO: Add DOI badge
 
 <!-- [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10568392.svg)](https://doi.org/10.5281/zenodo.10568392) -->
 
