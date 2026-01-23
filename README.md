@@ -63,6 +63,20 @@ you can:
 The image `git/divergences-compilers-levels.png` matches Figure 12 in the paper.
 The image `divergences-packages.png` matches Figure 13 in the paper.
 
+Please note that the steps above run a much smaller set of tests
+than we used for the paper because of resource constraints.
+The `run-pkgs.sh` script replicates what we actually used for the paper,
+but it consumes 2-3 TB of disk space for all the traces
+and requires 128 GB of memory to check for divergences,
+so this is not feasible to run on your average local machine.
+
+The SPEC portion does replicate our paper's experiments exactly,
+as those parts have much smaller resource needs.
+
+Since the recommended steps above run far fewer tests,
+the generated figures during evaluation will differ from
+the figures shown in the paper.
+
 If you prefer to run each step manually,
 we recommend perusing the run scripts above
 and running the scripts they execute as you like.
