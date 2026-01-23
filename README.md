@@ -60,6 +60,9 @@ you can:
 4. Run `plot.sh` to save new figures to the `figures` directory using the
    collected divergence data.
 
+The image `git/divergences-compilers-levels.png` matches Figure 12 in the paper.
+The image `divergences-packages.png` matches Figure 13 in the paper.
+
 If you prefer to run each step manually,
 we recommend perusing the run scripts above
 and running the scripts they execute as you like.
