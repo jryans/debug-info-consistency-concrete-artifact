@@ -9,6 +9,9 @@ RUN \
     nixpkgs.bc \
     nixpkgs.gcc \
     nixpkgs.glibc \
+    nixpkgs.gmp \
+    nixpkgs.libmpc \
+    nixpkgs.mpfr \
     nixpkgs.patch \
     nixpkgs.patchelf \
     nixpkgs.sd \
@@ -49,8 +52,46 @@ RUN \
     compilers/clang/18/lib
 
 COPY Projects/GNU/gcc/builds/release-11 compilers/gcc/11
+RUN \
+  patchelf \
+    --add-rpath /nix/store/zpwp6k2kldm84ql88sj1q0i8iyivi7ms-gmp-with-cxx-6.3.0/lib \
+    compilers/gcc/11/libexec/gcc/x86_64-pc-linux-gnu/11.1.0/cc1 && \
+  patchelf \
+    --add-rpath /nix/store/sqib6gfcgyxhv6cqwgb57prila41c575-libmpc-1.3.1/lib \
+    compilers/gcc/11/libexec/gcc/x86_64-pc-linux-gnu/11.1.0/cc1 && \
+  patchelf \
+    --add-rpath /nix/store/sxh73xj9wphjldm8axwm2s0hijylp6wx-mpfr-4.2.1/lib \
+    compilers/gcc/11/libexec/gcc/x86_64-pc-linux-gnu/11.1.0/cc1 && \
+  patchelf \
+    --add-rpath /nix/store/zpwp6k2kldm84ql88sj1q0i8iyivi7ms-gmp-with-cxx-6.3.0/lib \
+    compilers/gcc/11/libexec/gcc/x86_64-pc-linux-gnu/11.1.0/cc1plus && \
+  patchelf \
+    --add-rpath /nix/store/sqib6gfcgyxhv6cqwgb57prila41c575-libmpc-1.3.1/lib \
+    compilers/gcc/11/libexec/gcc/x86_64-pc-linux-gnu/11.1.0/cc1plus && \
+  patchelf \
+    --add-rpath /nix/store/sxh73xj9wphjldm8axwm2s0hijylp6wx-mpfr-4.2.1/lib \
+    compilers/gcc/11/libexec/gcc/x86_64-pc-linux-gnu/11.1.0/cc1plus
 
 COPY Projects/GNU/gcc/builds/release-14 compilers/gcc/14
+RUN \
+  patchelf \
+    --add-rpath /nix/store/zpwp6k2kldm84ql88sj1q0i8iyivi7ms-gmp-with-cxx-6.3.0/lib \
+    compilers/gcc/14/libexec/gcc/x86_64-pc-linux-gnu/14.1.0/cc1 && \
+  patchelf \
+    --add-rpath /nix/store/sqib6gfcgyxhv6cqwgb57prila41c575-libmpc-1.3.1/lib \
+    compilers/gcc/14/libexec/gcc/x86_64-pc-linux-gnu/14.1.0/cc1 && \
+  patchelf \
+    --add-rpath /nix/store/sxh73xj9wphjldm8axwm2s0hijylp6wx-mpfr-4.2.1/lib \
+    compilers/gcc/14/libexec/gcc/x86_64-pc-linux-gnu/14.1.0/cc1 && \
+  patchelf \
+    --add-rpath /nix/store/zpwp6k2kldm84ql88sj1q0i8iyivi7ms-gmp-with-cxx-6.3.0/lib \
+    compilers/gcc/14/libexec/gcc/x86_64-pc-linux-gnu/14.1.0/cc1plus && \
+  patchelf \
+    --add-rpath /nix/store/sqib6gfcgyxhv6cqwgb57prila41c575-libmpc-1.3.1/lib \
+    compilers/gcc/14/libexec/gcc/x86_64-pc-linux-gnu/14.1.0/cc1plus && \
+  patchelf \
+    --add-rpath /nix/store/sxh73xj9wphjldm8axwm2s0hijylp6wx-mpfr-4.2.1/lib \
+    compilers/gcc/14/libexec/gcc/x86_64-pc-linux-gnu/14.1.0/cc1plus
 
 COPY Projects/debug-info-concrete-check/binary-instrumentation tools/binary-instrumentation
 COPY Projects/QBDI/QBDI tools/binary-instrumentation/build/QBDI
