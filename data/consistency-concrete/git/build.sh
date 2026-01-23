@@ -123,8 +123,8 @@ cp \
 
 # GCC
 
-  levels=(O0 O1 O2 O0 O1)
-versions=(11 11 11 14 14)
+  levels=(O0 O1 O0 O1)
+versions=(11 11 14 14)
 
 for i in ${!levels[*]}; do
   version=${versions[$i]}
