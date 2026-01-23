@@ -12,27 +12,65 @@ TODO: Add DOI badge
 
 ## Usage
 
-TODO: Recommend Docker image
+We highly recommend using this artifact via the prepared Docker image
+available from Zenodo. Along with the scripts in this repo, the Docker image
+also includes pre-compiled toolchains and tools, which significantly simplifies
+the setup process.
+
+```sh
+$ docker image load < <image.tar.zstd>
+```
+
+Portions of this artifact make use of the SPEC CPU 2017 benchmark,
+which is not publicly available.
+If you have access to the SPEC CPU 2017 1.0.2 installation media
+and would like to exercise this part of the artifact,
+we recommend mapping this into the artifact Docker container.
+
+```sh
+$ docker run -it --rm --mount type=bind,src=<SPEC ISO dir>,dst=/artifact/spec/iso,readonly <image>
+```
+
+If you don't have access to SPEC CPU 2017,
+you can run the Docker image without this.
+
+```sh
+$ docker run -it --rm <image>
+```
 
 The `data` directory includes various scripts and notebooks used to produce the
 figures included in the paper.
 
 The `figures` directory contains the figures as shown in the published paper.
+They've been archived in a `figures/paper` directory for potential comparison
+during your own execution of the artifact.
 
-The basic pipeline to reproduce a figure for a given program under analysis
-(e.g. Git which is used in most figures) is:
+If you prefer a hands-off, automated approach to exercising this artifact,
+you can:
 
-1. Check out project source at commit in the table below
-2. Run `prepare.sh` in the project source directory
-3. Run `build.sh` in the project source directory
+1. Change into `data/consistency-concrete`, as some scripts expect to run from
+   there.
+2. Run `run-pkgs-reduced.sh` to prepare, build, trace, and check FFmpeg, Git,
+   and SQLite.
+   This will take approx. XXX hours.
+3. Run `run-spec.sh` to prepare, build, trace, and check SPEC CPU 2017
+   benchmarks.
+   This will take approx. XXX hours.
+   (This requires the SPEC installation media.)
+4. Run `plot.sh` to save new figures to the `figures` directory using the
+   collected divergence data.
 
-TODO: 4. Run `???.sh` in the `data/[project]` directory of this repo
-
-5. Use the notebook in `data/[project]`
+If you prefer to run each step manually,
+we recommend perusing the run scripts above
+and running the scripts they execute as you like.
+The prepare and build steps are one-time setup operations,
+so you may wish to do those separately first.
+The trace and check steps can be re-run multiple times if desired.
 
 Some scripts currently use system-specific paths to locate compilers and other
-tools, so some modifications may be needed. Review `vars.sh` and adjust path
-values as needed.
+tools, so some modifications may be needed if you are running this artifact
+directly without using the Docker image.
+Review `vars.sh` and adjust path values as needed.
 
 ## Requirements
 
@@ -53,15 +91,6 @@ Each project has a `prepare.sh` script
 which will retrieve the project sources,
 checkout out the expected commit above,
 and then apply additional patches.
-
-The SPEC CPU 2017 benchmark is not publicly available.
-If you have access to the SPEC CPU 2017 1.0.2 installation media
-and would like to exercise this part of the artifact,
-we recommend mapping this into the artifact Docker container:
-
-```sh
-$ docker run -it --rm --mount type=bind,src=<SPEC ISO dir>,dst=/artifact/spec/iso,readonly <...>
-```
 
 In addition, some other tools are invoked by scripts here:
 
