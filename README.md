@@ -16,7 +16,7 @@ also includes pre-compiled toolchains and tools, which significantly simplifies
 the setup process.
 
 ```sh
-$ docker image load < <image.tar.zstd>
+$ docker load < <image.tar.zstd>
 ```
 
 Portions of this artifact make use of the SPEC CPU 2017 benchmark,
@@ -59,6 +59,13 @@ you can:
    (This requires the SPEC installation media.)
 4. Run `plot.sh` to save new figures to the `figures` directory using the
    collected divergence data.
+
+When using the Docker image, you may need to copy the generated figures
+out of the container for viewing.
+
+```sh
+$ docker cp $(docker ps -lq):/artifact/figures ~/Downloads/
+```
 
 The image `git/divergences-compilers-levels.png` matches Figure 12 in the paper.
 The image `divergences-packages.png` matches Figure 13 in the paper.
