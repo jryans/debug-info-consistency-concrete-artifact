@@ -152,7 +152,9 @@ cp \
 # done
 
 # Cleanup
-echo "## Cleanup"
-make clean
-git clean -f
-find . -name '*.o.*' -delete
+# JRS: For FFmpeg, leave last build in place,
+# as test execution wants to see a finished build
+# echo "## Cleanup"
+# make clean
+# git clean -f
+# find . -name '*.o.*' -delete
