@@ -47,6 +47,12 @@ pushd git
 ./gcc/11/O1/concrete-divergence-check.sh
 ./gcc/14/O1/concrete-divergence-check.sh
 
+./clang/13/O1/concrete-divergence-before.sh
+./clang/13/O2/concrete-divergence-before.sh
+./clang/18/O1/concrete-divergence-before.sh
+./gcc/11/O1/concrete-divergence-before.sh
+./gcc/14/O1/concrete-divergence-before.sh
+
 popd
 
 # SQLite
