@@ -39,10 +39,6 @@ $ docker run -it --rm <image>
 The `data` directory includes various scripts and notebooks used to produce the
 figures included in the paper.
 
-The `figures` directory contains the figures as shown in the published paper.
-They've been archived in a `figures/paper` directory for potential comparison
-during your own execution of the artifact.
-
 ## Evaluation
 
 If you prefer a hands-off, automated approach to exercising this artifact,
@@ -50,12 +46,12 @@ you can:
 
 1. Change into `data/consistency-concrete`, as some scripts expect to run from
    there.
-2. Run `run-pkgs-reduced.sh` to prepare, build, trace, and check FFmpeg, Git,
-   and SQLite.
-   This will take approx. XXX hours.
-3. Run `run-spec.sh` to prepare, build, trace, and check SPEC CPU 2017
-   benchmarks.
-   This will take approx. XXX hours.
+2. Run `run-pkgs-reduced.sh` to prepare, build, trace, and check
+   FFmpeg, Git, and SQLite.
+   This will take approx. 1 hour.
+3. Run `run-spec.sh` to prepare, build, trace, and check
+   SPEC CPU 2017 benchmarks.
+   This will take approx. 2 hours.
    (This requires the SPEC installation media.)
 4. Run `plot.sh` to save new figures to the `figures` directory using the
    collected divergence data.
@@ -66,6 +62,16 @@ out of the container for viewing.
 ```sh
 $ docker cp $(docker ps -lq):/artifact/figures ~/Downloads/
 ```
+
+The `figures/paper` directory contains the figures shown in the published paper
+for potential comparison during your own execution of the artifact.
+The `figures/pkgs-reduced` directory contains
+expected figures after running only the reduced set of package tests
+(step 2 above).
+The `figures/pkgs-reduced-spec` directory contains
+expected figures after running both the reduced set of package tests
+and the SPEC CPU 2017 benchmarks
+(steps 2 and 3 above).
 
 The image `git/divergences-compilers-levels.png` matches Figure 12 in the paper.
 The image `divergences-packages.png` matches Figure 13 in the paper.
