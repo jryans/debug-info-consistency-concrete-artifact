@@ -6,7 +6,7 @@ Debugging Debugging Information Using Dynamic Call Trees
 
 by J. Ryan Stinnett and Stephen Kell.
 
-<!-- [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10568392.svg)](https://doi.org/10.5281/zenodo.10568392) -->
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18392053.svg)](https://doi.org/10.5281/zenodo.18392053)
 
 ## Setup
 
