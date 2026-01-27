@@ -124,9 +124,9 @@ and then apply additional patches.
 
 In addition, some other tools are invoked by scripts here:
 
-| Tools    | Commit |
+| Tools    | Version |
 | -------- | ------ |
-| [debug-info-concrete-check] | 0f349afdceb00b2f71d87e841295c8376ec3ccd6 |
+| [debug-info-concrete-check] | 1.0.0 |
 
 The following compiler versions are used:
 
