@@ -12,7 +12,7 @@ fi
 
 echo "## Preparing \`ffmpeg\`"
 
-git clone https://git.ffmpeg.org/ffmpeg.git ../../../ffmpeg
+git clone https://github.com/FFmpeg/FFmpeg ../../../ffmpeg
 
 pushd ../../../ffmpeg
 
