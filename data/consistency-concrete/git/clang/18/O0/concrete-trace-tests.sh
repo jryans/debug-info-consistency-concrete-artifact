@@ -29,7 +29,8 @@ tests=$(
   find . -name 't[0-9]*.sh' |
   sort |
   cut -d '/' -f 2 |
-  cut -d '.' -f 1
+  cut -d '.' -f 1 |
+  grep -v -f "${SCRIPT_DIR}/../../../grep-filter"
 )
 
 # Different trace variants to collect

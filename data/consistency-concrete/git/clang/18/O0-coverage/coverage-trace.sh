@@ -28,7 +28,7 @@ tests=$(
   sort |
   cut -d '/' -f 2 |
   cut -d '.' -f 1 |
-  grep -v -f "${SCRIPT_DIR}/../../../../grep-filter"
+  grep -v -f "${SCRIPT_DIR}/../../../grep-filter"
 )
 
 # Remove dependencies from past runs
