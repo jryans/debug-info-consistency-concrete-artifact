@@ -2,7 +2,7 @@
 
 This is the artifact for the OOPSLA 2026 paper:
 
-Debugging Debugging Information Using Dynamic Call Trees
+Debugging Debugging Information using Dynamic Call Trees
 
 by J. Ryan Stinnett and Stephen Kell.
 
