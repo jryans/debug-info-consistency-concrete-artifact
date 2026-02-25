@@ -1,6 +1,6 @@
 ## Artifact
 
-This is the artifact for the OOPSLA 2026 paper:
+This is the artifact for the [OOPSLA 2026 paper][paper]:
 
 Debugging Debugging Information using Dynamic Call Trees
 
@@ -140,6 +140,6 @@ Other platforms may give different results, as some compilers may enable
 different debug info features by default for each target platform.
 
 [paper]:
-  TODO
+  https://doi.org/10.1145/3798213
 [debug-info-concrete-check]:
   https://github.com/jryans/debug-info-concrete-check
